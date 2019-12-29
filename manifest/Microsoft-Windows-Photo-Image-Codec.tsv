@@ -1,0 +1,15 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Photo-Image-Codec	0	0	WMPHOTO_Decoder_DecoderFrameCopyPixelsCoreStart()	Start		WMPHOTO_Decoder_DecoderFrameCopyPixelsCore	Informational		
+Microsoft-Windows-Photo-Image-Codec	1	0	WMPHOTO_Decoder_DecoderFrameCopyPixelsCoreStop()	Stop		WMPHOTO_Decoder_DecoderFrameCopyPixelsCore	Informational		
+Microsoft-Windows-Photo-Image-Codec	2	0	WMPHOTO_Decoder_DecoderFrameDecodeImageStart()	Start		WMPHOTO_Decoder_DecoderFrameDecodeImage	Informational		
+Microsoft-Windows-Photo-Image-Codec	3	0	WMPHOTO_Decoder_DecoderFrameDecodeImageStop()	Stop		WMPHOTO_Decoder_DecoderFrameDecodeImage	Informational		
+Microsoft-Windows-Photo-Image-Codec	4	0	WMPHOTO_Encoder_EncoderFrameEncodeFrameStart()	Start		WMPHOTO_Encoder_EncoderFrameEncodeFrame	Informational		
+Microsoft-Windows-Photo-Image-Codec	5	0	WMPHOTO_Encoder_EncoderFrameEncodeFrameStop()	Stop		WMPHOTO_Encoder_EncoderFrameEncodeFrame	Informational		
+Microsoft-Windows-Photo-Image-Codec	6	0	WMPHOTO_Encoder_EncoderFrameEncodeStreamStart()	Start		WMPHOTO_Encoder_EncoderFrameEncodeStream	Informational		
+Microsoft-Windows-Photo-Image-Codec	7	0	WMPHOTO_Encoder_EncoderFrameEncodeStreamStop()	Stop		WMPHOTO_Encoder_EncoderFrameEncodeStream	Informational		
+Microsoft-Windows-Photo-Image-Codec	8	0	WMPHOTO_Decoder_ReducedResolution_Info(UInt32 Ratio)			WMPHOTO_Decoder_ReducedResolution_Info	Verbose		
+Microsoft-Windows-Photo-Image-Codec	9	0	WMPHOTO_Encoder_EncodeThumbnail_Info()			WMPHOTO_Encoder_EncodeThumbnail_Info	Verbose		
+Microsoft-Windows-Photo-Image-Codec	10	0	WMPHOTO_Decoder_FrameParamsSource_Info(UInt32 Width, UInt32 Height, UInt8 Orientation)			WMPHOTO_Decoder_FrameParamsSource_Info	Verbose		
+Microsoft-Windows-Photo-Image-Codec	11	0	WMPHOTO_Decoder_FrameParamsTransform_Info(Int32 ROIWidth, Int32 ROIHeight, Int32 ROIX, Int32 ROIY, UInt32 OutWidth, UInt32 OutHeight, UInt8 Orientation)			WMPHOTO_Decoder_FrameParamsTransform_Info	Verbose		
+Microsoft-Windows-Photo-Image-Codec	12	0	WMPHOTO_Encoder_FrameParams_Info(UInt32 Width, UInt32 Height, UInt8 Subband, UInt8 BitStreamFormat, UInt8 Orientation, UInt8 IgnoreOverlap, UInt8 DiscardAlpha)			WMPHOTO_Encoder_FrameParams_Info	Verbose		
+Microsoft-Windows-Photo-Image-Codec	13	0	WMPHOTO_Transcoder_TranscodeParams_Info(Int32 ROIWidth, Int32 ROIHeight, Int32 ROIX, Int32 ROIY, UInt8 Subband, UInt8 BitStreamFormat, UInt8 Orientation, UInt8 IgnoreOverlap, UInt8 DiscardAlpha)			WMPHOTO_Transcoder_TranscodeParams_Info	Verbose		

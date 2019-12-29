@@ -1,0 +1,16 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-UIAnimation	1	0	ScheduleEnter(Double secondsNow)		Default	ScheduleEnter	Informational		
+Microsoft-Windows-UIAnimation	2	0	ScheduleLeave()		Default	ScheduleLeave	Informational		
+Microsoft-Windows-UIAnimation	3	0	UpdateEnter(Double secondsNow)		Default	UpdateEnter	Informational		
+Microsoft-Windows-UIAnimation	4	0	UpdateLeave()		Default	UpdateLeave	Informational		
+Microsoft-Windows-UIAnimation	5	0	OnTimerTickEnter()		Default	OnTimerTickEnter	Informational		
+Microsoft-Windows-UIAnimation	6	0	OnTimerTickLeave()		Default	OnTimerTickLeave	Informational		
+Microsoft-Windows-UIAnimation	7	0	OnVariableUpdate(Double secondsNow, UInt32 tag, Double value0, Double value1, Double value2, Double value3)		Default	OnVariableUpdate	Informational		
+Microsoft-Windows-UIAnimation	8	0	OnVariableAnimatingStart(Double secondsNow, UInt32 tag, Double value0, Double value1, Double value2, Double value3)	Start	Default	OnVariableAnimating	Informational		
+Microsoft-Windows-UIAnimation	9	0	OnVariableAnimatingStop(Double secondsNow, UInt32 tag, Double value0, Double value1, Double value2, Double value3)	Stop	Default	OnVariableAnimating	Informational		
+Microsoft-Windows-UIAnimation	10	0	OnNewtonRaphsonMaxIteration(UInt32 numIterations)		Default	OnNewtonRaphsonMaxIteration	Informational		
+Microsoft-Windows-UIAnimation	11	0	NewtonRaphsonIterationReport(UInt32 numIterations, UInt32 numComputations)		Default	NewtonRaphsonIterationReport	Informational		
+Microsoft-Windows-UIAnimation	12	0	GetVectorCurveStart()	Start	Default	GetVectorCurve	Informational		
+Microsoft-Windows-UIAnimation	13	0	GetVectorCurveStop()	Stop	Default	GetVectorCurve	Informational		
+Microsoft-Windows-UIAnimation	14	0	CurveBuilderExportStart()	Start	Default	CurveBuilderExport	Informational		
+Microsoft-Windows-UIAnimation	15	0	CurveBuilderExportStop()	Stop	Default	CurveBuilderExport	Informational		

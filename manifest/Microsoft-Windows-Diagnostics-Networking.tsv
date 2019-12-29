@@ -1,0 +1,45 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Diagnostics-Networking	1000	0	Start(UnicodeString HelperClassName, UInt32 NumberOfAttributes, UnicodeString HelperClassAttributes)	Start	ndf:NDFCoreEvents keyword_400000000000	Start	Informational		
+Microsoft-Windows-Diagnostics-Networking	2000	0	Stop(UInt32 ResultHR)	Stop	ndf:NDFCoreEvents keyword_400000000000	Stop	Informational		
+Microsoft-Windows-Diagnostics-Networking	2100	0	Stop2100(UInt32 ResultHR)	Stop	ndf:NDFCoreEvents keyword_400000000000	Stop	Informational		
+Microsoft-Windows-Diagnostics-Networking	2200	0	Stop2200(UInt32 ResultHR)	Stop	ndf:NDFCoreEvents keyword_400000000000	Stop	Informational		
+Microsoft-Windows-Diagnostics-Networking	2300	0	Stop2300(UInt32 ResultHR)	Stop	ndf:NDFCoreEvents keyword_400000000000	Stop	Informational		
+Microsoft-Windows-Diagnostics-Networking	2400	0	Stop2400(UInt32 ResultHR)	Stop	ndf:NDFCoreEvents keyword_400000000000	Stop	Informational		
+Microsoft-Windows-Diagnostics-Networking	2500	0	Stop2500(UInt32 ResultHR)	Stop	ndf:NDFCoreEvents keyword_400000000000	Stop	Informational		
+Microsoft-Windows-Diagnostics-Networking	3000	0	FailThefailureoccurredintheFrameworkcode.(UInt32 ResultHR)	ThefailureoccurredintheFrameworkcode.	ndf:NDFCoreEvents keyword_400000000000	Fail	Error		
+Microsoft-Windows-Diagnostics-Networking	3100	0	FailThefailureoccurredintheHelperclasscode.(UInt32 ResultHR)	ThefailureoccurredintheHelperclasscode.	ndf:NDFCoreEvents keyword_400000000000	Fail	Error		
+Microsoft-Windows-Diagnostics-Networking	4000	0	DiagnosisSuccess(UnicodeString RepairOption, GUID RepairGUID, UInt32 SecondsRequired, UInt32 SIDTypeRequired)		ndf:NDFCoreEvents	DiagnosisSuccess	Informational		
+Microsoft-Windows-Diagnostics-Networking	4000	1	DiagnosisSuccess_V1(UnicodeString RootCause, GUID RootCauseGUID, UnicodeString RepairOption, GUID RepairGUID, UInt32 SecondsRequired, UInt32 SIDTypeRequired, UnicodeString HelperClassName, UnicodeString InterfaceDesc, GUID InterfaceGUID)		ndf:NDFCoreEvents keyword_400000000000	DiagnosisSuccess	Informational		
+Microsoft-Windows-Diagnostics-Networking	4100	0	DiagnosisSuccess4100()		ndf:NDFCoreEvents keyword_400000000000	DiagnosisSuccess	Informational		
+Microsoft-Windows-Diagnostics-Networking	4200	0	DiagnosisFailure(UInt32 ResultHR)		ndf:NDFCoreEvents keyword_400000000000	DiagnosisFailure	Error		
+Microsoft-Windows-Diagnostics-Networking	5000	0	ValidationSuccess(UnicodeString RepairOption, GUID RepairGUID, UInt32 SecondsRequired, UInt32 SIDTypeRequired, UnicodeString HelperClassName)		ndf:NDFCoreEvents	ValidationSuccess	Informational		
+Microsoft-Windows-Diagnostics-Networking	5000	1	ValidationSuccess_V1(UnicodeString RootCause, GUID RootCauseGUID, UnicodeString RepairOption, GUID RepairGUID, UInt32 SecondsRequired, UInt32 SIDTypeRequired, UnicodeString HelperClassName, UnicodeString InterfaceDesc, GUID InterfaceGUID)		ndf:NDFCoreEvents keyword_400000000000	ValidationSuccess	Informational		
+Microsoft-Windows-Diagnostics-Networking	5100	0	ValidationFailure(UnicodeString RepairOption, GUID RepairGUID, UInt32 SecondsRequired, UInt32 SIDTypeRequired, UnicodeString HelperClassName)		ndf:NDFCoreEvents	ValidationFailure	Informational		
+Microsoft-Windows-Diagnostics-Networking	5100	1	ValidationFailure_V1(UnicodeString RootCause, GUID RootCauseGUID, UnicodeString RepairOption, GUID RepairGUID, UInt32 SecondsRequired, UInt32 SIDTypeRequired, UnicodeString HelperClassName, UnicodeString InterfaceDesc, GUID InterfaceGUID)		ndf:NDFCoreEvents keyword_400000000000	ValidationFailure	Informational		
+Microsoft-Windows-Diagnostics-Networking	5200	0	RepairOptionFailure(UnicodeString RepairOption, GUID RepairGUID, UInt32 SecondsRequired, UInt32 SIDTypeRequired)		ndf:NDFCoreEvents	RepairOptionFailure	Informational		
+Microsoft-Windows-Diagnostics-Networking	5200	1	RepairOptionFailure_V1(UnicodeString RootCause, GUID RootCauseGUID, UnicodeString RepairOption, GUID RepairGUID, UInt32 SecondsRequired, UInt32 SIDTypeRequired, UnicodeString HelperClassName, UnicodeString InterfaceDesc, GUID InterfaceGUID)		ndf:NDFCoreEvents keyword_400000000000	RepairOptionFailure	Informational		
+Microsoft-Windows-Diagnostics-Networking	5300	0	RepairFailure(UInt32 ResultHR)		ndf:NDFCoreEvents keyword_400000000000	RepairFailure	Error		
+Microsoft-Windows-Diagnostics-Networking	6000	0	HelperClassInfo(UnicodeString HelperClassName, UnicodeString EventDescription, UInt16 EventVerbosity)		ndf:NDFHelperClassEvents keyword_400000000000	HelperClassInfo	Informational		
+Microsoft-Windows-Diagnostics-Networking	6100	0	HelperClassInfo6100(UnicodeString HelperClassName, UnicodeString EventDescription, UInt16 EventVerbosity)		ndf:NDFHelperClassEvents keyword_400000000000	HelperClassInfo	Informational		
+Microsoft-Windows-Diagnostics-Networking	6200	0	HelperClassInfo6200(UnicodeString HelperClassName, UnicodeString EventDescription, UInt16 EventVerbosity)		ndf:NDFHelperClassEvents keyword_400000000000	HelperClassInfo	Informational		
+Microsoft-Windows-Diagnostics-Networking	7000	0	Debug(UnicodeString DebugMessage)		ndf:NDFCoreEvents keyword_400000000000	Debug	Informational		
+Microsoft-Windows-Diagnostics-Networking	7010	0	Debug7010(UnicodeString DebugMessage)		ndf:NDFCoreEvents keyword_400000000000	Debug	Informational		
+Microsoft-Windows-Diagnostics-Networking	7020	0	Debug7020(UnicodeString DebugMessage)		ndf:NDFCoreEvents keyword_400000000000	Debug	Informational		
+Microsoft-Windows-Diagnostics-Networking	7030	0	Debug7030(UnicodeString DebugMessage)		ndf:NDFCoreEvents keyword_400000000000	Debug	Informational		
+Microsoft-Windows-Diagnostics-Networking	7040	0	Debug7040(UnicodeString DebugMessage)		ndf:NDFCoreEvents keyword_400000000000	Debug	Informational		
+Microsoft-Windows-Diagnostics-Networking	7050	0	Debug7050(UnicodeString DebugMessage)		ndf:NDFCoreEvents keyword_400000000000	Debug	Informational		
+Microsoft-Windows-Diagnostics-Networking	7100	0	Debug7100(UnicodeString DebugMessage)		ndf:NDFCoreEvents keyword_400000000000	Debug	Informational		
+Microsoft-Windows-Diagnostics-Networking	8001	0	Start8001()	Start	ndf:Performance	Start	Informational		
+Microsoft-Windows-Diagnostics-Networking	8002	0	Stop8002()	Stop	ndf:Performance	Stop	Informational		
+Microsoft-Windows-Diagnostics-Networking	8003	0	Start8003()	Start	ndf:Performance	Start	Informational		
+Microsoft-Windows-Diagnostics-Networking	8004	0	Stop8004()	Stop	ndf:Performance	Stop	Informational		
+Microsoft-Windows-Diagnostics-Networking	8005	0	Start8005()	Start	ndf:Performance	Start	Informational		
+Microsoft-Windows-Diagnostics-Networking	8006	0	Stop8006()	Stop	ndf:Performance	Stop	Informational		
+Microsoft-Windows-Diagnostics-Networking	8007	0	Start8007()	Start	ndf:Performance	Start	Informational		
+Microsoft-Windows-Diagnostics-Networking	8008	0	Stop8008()	Stop	ndf:Performance	Stop	Informational		
+Microsoft-Windows-Diagnostics-Networking	8009	0	Start8009()	Start	ndf:Performance	Start	Informational		
+Microsoft-Windows-Diagnostics-Networking	8010	0	Stop8010()	Stop	ndf:Performance	Stop	Informational		
+Microsoft-Windows-Diagnostics-Networking	8103	0	Start8103(UnicodeString HelperClassName)	Start	ndf:Performance	Start	Informational		
+Microsoft-Windows-Diagnostics-Networking	8104	0	Stop8104(UnicodeString HelperClassName)	Stop	ndf:Performance	Stop	Informational		
+Microsoft-Windows-Diagnostics-Networking	8107	0	Start8107(UnicodeString HelperClassName)	Start	ndf:Performance	Start	Informational		
+Microsoft-Windows-Diagnostics-Networking	8108	0	Stop8108(UnicodeString HelperClassName)	Stop	ndf:Performance	Stop	Informational		

@@ -1,0 +1,10 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Serial-ClassExtension	1000	1	Startupoftheserialclassextension_V1(UnicodeString ControlDeviceName, UInt32 Status)			Startupoftheserialclassextension	Informational		
+Microsoft-Windows-Serial-ClassExtension	1001	1	Startupoftheserialclassextension1001_V1(UnicodeString ControlDeviceName, UInt32 Status)			Startupoftheserialclassextension	Error		
+Microsoft-Windows-Serial-ClassExtension	1002	1	IOControlreceivedbytheserialclassextensionStart_V1(Pointer Request, UnicodeString IoControlCodeString)	Start		IOControlreceivedbytheserialclassextension	Informational		
+Microsoft-Windows-Serial-ClassExtension	1003	1	IOControlreceivedbytheserialclassextensionStop_V1(Pointer Request, UnicodeString IoControlCodeString)	Stop		IOControlreceivedbytheserialclassextension	Informational		
+Microsoft-Windows-Serial-ClassExtension	1004	1	RequestreceivedbytheserialclassextensionStart_V1(Pointer Request, UInt32 Length)	Start		Requestreceivedbytheserialclassextension	Informational		
+Microsoft-Windows-Serial-ClassExtension	1005	1	RequestreceivedbytheserialclassextensionStart1005_V1(Pointer Request, UInt32 Length)	Start		Requestreceivedbytheserialclassextension	Informational		
+Microsoft-Windows-Serial-ClassExtension	1006	1	RequestreceivedbytheserialclassextensionStop_V1(Pointer Request, UInt32 Length, UInt32 Status)	Stop		Requestreceivedbytheserialclassextension	Informational		
+Microsoft-Windows-Serial-ClassExtension	1007	1	Requestreceivedbytheserialclassextension_V1(UInt8 Data)			Requestreceivedbytheserialclassextension	Verbose		
+Microsoft-Windows-Serial-ClassExtension	1008	1	Requestreceivedbytheserialclassextension1008_V1(Pointer Request, Pointer Queue)			Requestreceivedbytheserialclassextension	Informational		

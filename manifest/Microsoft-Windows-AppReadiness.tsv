@@ -1,0 +1,141 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-AppReadiness	10	0	AppReadiness_Error(UnicodeString User, UnicodeString Operation, UnicodeString PackageId, Int32 Result, UnicodeString Error)		Error	AppReadiness_Error	Error		
+Microsoft-Windows-AppReadiness	11	0	AppReadiness_Error11(Int32 Error, AnsiString Expression, AnsiString Function, AnsiString File, Int32 Line)		Error	AppReadiness_Error	Warning		
+Microsoft-Windows-AppReadiness	12	0	AppReadiness_Error12(UnicodeString User, UnicodeString Error, Int32 Result)		Error	AppReadiness_Error	Error		
+Microsoft-Windows-AppReadiness	100	0	AppReadiness_Service_LifetimeStart()	Start	Service keyword_400000000000	AppReadiness_Service_Lifetime	Informational		
+Microsoft-Windows-AppReadiness	101	0	AppReadiness_Service_LifetimeStop()	Stop	Service keyword_400000000000	AppReadiness_Service_Lifetime	Informational		
+Microsoft-Windows-AppReadiness	102	0	AppReadiness_Service_ThreadStart()	Start	Service	AppReadiness_Service_Thread	Informational		
+Microsoft-Windows-AppReadiness	103	0	AppReadiness_Service_ThreadStop()	Stop	Service	AppReadiness_Service_Thread	Informational		
+Microsoft-Windows-AppReadiness	104	0	AppReadiness_Service(UInt32 Status, UInt32 ExitCode)		Service	AppReadiness_Service	Informational		
+Microsoft-Windows-AppReadiness	105	0	AppReadiness_Service105(Boolean IsIdle, UnicodeString Reason)		Service	AppReadiness_Service	Informational		
+Microsoft-Windows-AppReadiness	106	0	AppReadiness_Service106(UnicodeString User)		Service	AppReadiness_Service	Informational		
+Microsoft-Windows-AppReadiness	107	0	AppReadiness_Service107(UnicodeString User)		Service	AppReadiness_Service	Informational		
+Microsoft-Windows-AppReadiness	108	0	AppReadiness_PackageChangeStart(UInt32 Source)	Start	Service	AppReadiness_PackageChange	Informational		
+Microsoft-Windows-AppReadiness	109	0	AppReadiness_PackageChangeStop(UInt32 Source, Int32 Result)	Stop	Service	AppReadiness_PackageChange	Informational		
+Microsoft-Windows-AppReadiness	200	0	AppReadiness_User_ProcessTasksStart(UnicodeString User)	Start	User	AppReadiness_User_ProcessTasks	Informational		
+Microsoft-Windows-AppReadiness	201	0	AppReadiness_User_ProcessTasksStop(UnicodeString User)	Stop	User	AppReadiness_User_ProcessTasks	Informational		
+Microsoft-Windows-AppReadiness	205	0	AppReadiness_User_ProcessTasks(UnicodeString User, UInt32 NumPackages, UnicodeString PackageInfo)		User	AppReadiness_User_ProcessTasks	Informational		
+Microsoft-Windows-AppReadiness	206	0	AppReadiness_User_ProcessTasksStart206(UnicodeString User, UnicodeString TaskId, UInt32 Priority)	Start	User	AppReadiness_User_ProcessTasks	Informational		
+Microsoft-Windows-AppReadiness	207	0	AppReadiness_User_ProcessTasksStop207(UnicodeString User, UnicodeString TaskId, Int32 Result)	Stop	User	AppReadiness_User_ProcessTasks	Informational		
+Microsoft-Windows-AppReadiness	209	0	AppReadiness_User_ProcessTasks209(UnicodeString User, UInt32 From, UInt32 To)		User	AppReadiness_User_ProcessTasks	Informational		
+Microsoft-Windows-AppReadiness	210	0	AppReadiness_User_ProcessTasks210(UnicodeString User)		User	AppReadiness_User_ProcessTasks	Informational		
+Microsoft-Windows-AppReadiness	211	0	AppReadiness_User_ProcessTasks211(UnicodeString User)		User	AppReadiness_User_ProcessTasks	Informational		
+Microsoft-Windows-AppReadiness	212	0	AppReadiness_User_ProcessTasks212(UnicodeString SID, UInt32 NumPackages, UnicodeString PackageFamilyName)		User	AppReadiness_User_ProcessTasks	Informational		
+Microsoft-Windows-AppReadiness	213	0	AppReadiness_User_ProcessTasks213(UnicodeString Username, UnicodeString Package, UInt32 Operation, Double Elapsed)		User	AppReadiness_User_ProcessTasks	Informational		
+Microsoft-Windows-AppReadiness	214	0	AppReadiness_User_ProcessTasks214(UnicodeString User, UnicodeString Package, UInt32 Operation, Int32 Error, Double Elapsed)		User	AppReadiness_User_ProcessTasks	Error		
+Microsoft-Windows-AppReadiness	215	0	AppReadiness_User_ProcessTasks215(UnicodeString Username, UnicodeString Task, Int32 Error, Double Elapsed)		User	AppReadiness_User_ProcessTasks	Error		
+Microsoft-Windows-AppReadiness	216	0	AppReadiness_User_ProcessTasks216(UnicodeString User, FILETIME ResumeAt)		User	AppReadiness_User_ProcessTasks	Informational		
+Microsoft-Windows-AppReadiness	217	0	AppReadiness_User_ProcessTasks217(UnicodeString User)		User	AppReadiness_User_ProcessTasks	Informational		
+Microsoft-Windows-AppReadiness	218	0	AppReadiness_User_ProcessTasks218(UnicodeString User, UnicodeString Package, UInt32 Operation, Int32 Error, FILETIME AttemptAfter)		User	AppReadiness_User_ProcessTasks	Informational		
+Microsoft-Windows-AppReadiness	219	0	AppReadiness_User_ProcessTasks219(UnicodeString SID, UInt32 NumPackages, UnicodeString PackageFamilyName)		User	AppReadiness_User_ProcessTasks	Informational		
+Microsoft-Windows-AppReadiness	220	0	AppReadiness_User_ProcessTasks220(UnicodeString Username, UnicodeString Task, Double Elapsed)		User	AppReadiness_User_ProcessTasks	Informational		
+Microsoft-Windows-AppReadiness	221	0	AppReadiness_User_ProcessTasks221(UnicodeString Username, UnicodeString Task)		User	AppReadiness_User_ProcessTasks	Informational		
+Microsoft-Windows-AppReadiness	222	0	AppReadiness_User_ProcessTasks222(UnicodeString User, UnicodeString TaskId, UInt32 OpposingOperation, Boolean TaskCanceled)		User	AppReadiness_User_ProcessTasks	Informational		
+Microsoft-Windows-AppReadiness	223	0	AppReadiness_User_ShutdownStart(UnicodeString User)	Start	User	AppReadiness_User_Shutdown	Informational		
+Microsoft-Windows-AppReadiness	224	0	AppReadiness_User_ShutdownStop(UnicodeString User)	Stop	User	AppReadiness_User_Shutdown	Informational		
+Microsoft-Windows-AppReadiness	225	0	AppReadiness_User_Shutdown(UnicodeString Username, UnicodeString Task)		User	AppReadiness_User_Shutdown	Warning		
+Microsoft-Windows-AppReadiness	226	0	AppReadiness_User_Shutdown226(UnicodeString User)		User	AppReadiness_User_Shutdown	Informational		
+Microsoft-Windows-AppReadiness	227	0	AppReadiness_User_ProcessTasks227(UnicodeString User, UnicodeString TaskId, UInt32 Priority)		User	AppReadiness_User_ProcessTasks	Informational		
+Microsoft-Windows-AppReadiness	228	0	AppReadiness_User_ProcessTasks228(UnicodeString Task, Double Elapsed)		User keyword_400000000000	AppReadiness_User_ProcessTasks	Informational		
+Microsoft-Windows-AppReadiness	229	0	AppReadiness_User_ProcessTasks229(UnicodeString TaskId, UInt32 Priority)		User keyword_400000000000	AppReadiness_User_ProcessTasks	Informational		
+Microsoft-Windows-AppReadiness	230	0	AppReadiness_User_ProcessTasks230()		User keyword_400000000000	AppReadiness_User_ProcessTasks	Informational		
+Microsoft-Windows-AppReadiness	300	0	AppReadiness_ExecuteTaskStart(UnicodeString User, UnicodeString TaskId)	Start	Tasks	AppReadiness_ExecuteTask	Informational		
+Microsoft-Windows-AppReadiness	301	0	AppReadiness_ExecuteTaskStop(UnicodeString User, UnicodeString TaskId, Int32 Result, Double Duration)	Stop	Tasks	AppReadiness_ExecuteTask	Informational		
+Microsoft-Windows-AppReadiness	302	0	AppReadiness_ExecuteTaskStart302(UnicodeString User, UnicodeString GroupId)	Start	Tasks	AppReadiness_ExecuteTask	Informational		
+Microsoft-Windows-AppReadiness	303	0	AppReadiness_ExecuteTaskStop303(UnicodeString User, UnicodeString GroupId, Int32 Result, Double Duration)	Stop	Tasks	AppReadiness_ExecuteTask	Informational		
+Microsoft-Windows-AppReadiness	304	0	AppReadiness_ExecuteTask(UnicodeString User, UnicodeString GroupId, UnicodeString TaskId, Int32 Result)		Tasks	AppReadiness_ExecuteTask	Warning		
+Microsoft-Windows-AppReadiness	305	0	AppReadiness_ExecuteTask305(UnicodeString User, UnicodeString PackageFamilyName, UnicodeString Reason)		Tasks	AppReadiness_ExecuteTask	Informational		
+Microsoft-Windows-AppReadiness	306	0	AppReadiness_ExecuteTask306(UnicodeString User, UnicodeString TaskId)		Tasks	AppReadiness_ExecuteTask	Informational		
+Microsoft-Windows-AppReadiness	307	0	AppReadiness_ExecuteTask307(UnicodeString User, UnicodeString PackageFamilyName, UnicodeString Reason)		Tasks	AppReadiness_ExecuteTask	Informational		
+Microsoft-Windows-AppReadiness	308	0	AppReadiness_ExecuteTask308(UnicodeString User, UnicodeString PackageFamilyName, UInt32 Source, Int32 Result)		Tasks	AppReadiness_ExecuteTask	Warning		
+Microsoft-Windows-AppReadiness	309	0	AppReadiness_ExecuteTaskStart309(UnicodeString User)	Start	Tasks	AppReadiness_ExecuteTask	Informational		
+Microsoft-Windows-AppReadiness	310	0	AppReadiness_ExecuteTaskStop310(UnicodeString User)	Stop	Tasks	AppReadiness_ExecuteTask	Informational		
+Microsoft-Windows-AppReadiness	311	0	AppReadiness_ExecuteTask311(UnicodeString User, UnicodeString Key, UInt32 Result)		Tasks	AppReadiness_ExecuteTask	Error		
+Microsoft-Windows-AppReadiness	312	0	AppReadiness_ExecuteTask312(UnicodeString User, UInt32 Source, UInt32 NumPackages, UnicodeString PackageFamilyName)		Tasks	AppReadiness_ExecuteTask	Informational		
+Microsoft-Windows-AppReadiness	313	0	AppReadiness_ExecuteTask313(UnicodeString User, UnicodeString Group, UnicodeString Task)		Tasks	AppReadiness_ExecuteTask	Warning		
+Microsoft-Windows-AppReadiness	314	0	AppReadiness_ExecuteTask314(UnicodeString User, UnicodeString Group, UnicodeString Task)		Tasks	AppReadiness_ExecuteTask	Informational		
+Microsoft-Windows-AppReadiness	315	0	AppReadiness_ExecuteTask315(UnicodeString User, UnicodeString PackageFamilyName, UnicodeString Reason)		Tasks	AppReadiness_ExecuteTask	Informational		
+Microsoft-Windows-AppReadiness	316	0	AppReadiness_ExecuteTask316(UnicodeString User, UnicodeString PackageFamilyName)		Tasks	AppReadiness_ExecuteTask	Warning		
+Microsoft-Windows-AppReadiness	317	0	AppReadiness_PreRegister_PackageStart(UnicodeString PackageId)	Start	Tasks	AppReadiness_PreRegister_Package	Informational		
+Microsoft-Windows-AppReadiness	318	0	AppReadiness_PreRegister_PackageStop(UnicodeString PackageId)	Stop	Tasks	AppReadiness_PreRegister_Package	Informational		
+Microsoft-Windows-AppReadiness	319	0	AppReadiness_PreRegister_Package(UnicodeString PackageId, Int32 Result)		Tasks	AppReadiness_PreRegister_Package	Error		
+Microsoft-Windows-AppReadiness	320	0	AppReadiness_ExecuteTask320(UnicodeString Key, UInt32 Result)		Tasks keyword_400000000000	AppReadiness_ExecuteTask	Error		
+Microsoft-Windows-AppReadiness	1001	0	AppReadiness_Api_InstallStart(UnicodeString User, UInt32 ProcessId)	Start	Api	AppReadiness_Api_Install	Informational		
+Microsoft-Windows-AppReadiness	1002	0	AppReadiness_Api_InstallStop(UnicodeString User, UInt32 ProcessId, Int32 Result)	Stop	Api	AppReadiness_Api_Install	Informational		
+Microsoft-Windows-AppReadiness	1003	0	AppReadiness_Api_RemoveStart(UnicodeString User, UInt32 ProcessId)	Start	Api	AppReadiness_Api_Remove	Informational		
+Microsoft-Windows-AppReadiness	1004	0	AppReadiness_Api_RemoveStop(UnicodeString User, UInt32 ProcessId, Int32 Result)	Stop	Api	AppReadiness_Api_Remove	Informational		
+Microsoft-Windows-AppReadiness	1005	0	AppReadiness_Api_GetTaskStart(UnicodeString User, UInt32 ProcessId)	Start	Api	AppReadiness_Api_GetTask	Informational		
+Microsoft-Windows-AppReadiness	1006	0	AppReadiness_Api_GetTaskStop(UnicodeString User, UInt32 ProcessId, Int32 Result)	Stop	Api	AppReadiness_Api_GetTask	Informational		
+Microsoft-Windows-AppReadiness	1009	0	AppReadiness_Api_ProcessTasksStart(UnicodeString User, UInt32 ProcessId)	Start	Api	AppReadiness_Api_ProcessTasks	Informational		
+Microsoft-Windows-AppReadiness	1010	0	AppReadiness_Api_ProcessTasksStop(UnicodeString User, UInt32 ProcessId, Int32 Result)	Stop	Api	AppReadiness_Api_ProcessTasks	Informational		
+Microsoft-Windows-AppReadiness	1013	0	AppReadiness_Api_HandlePackageChangeStart(UnicodeString User, UInt32 ProcessId)	Start	Api	AppReadiness_Api_HandlePackageChange	Informational		
+Microsoft-Windows-AppReadiness	1014	0	AppReadiness_Api_HandlePackageChangeStop(UnicodeString User, UInt32 ProcessId, Int32 Result)	Stop	Api	AppReadiness_Api_HandlePackageChange	Informational		
+Microsoft-Windows-AppReadiness	1015	0	AppReadiness_Api_CreateTaskStart(UnicodeString User, UInt32 ProcessId)	Start	Api	AppReadiness_Api_CreateTask	Informational		
+Microsoft-Windows-AppReadiness	1016	0	AppReadiness_Api_CreateTaskStop(UnicodeString User, UInt32 ProcessId, Int32 Result)	Stop	Api	AppReadiness_Api_CreateTask	Informational		
+Microsoft-Windows-AppReadiness	1017	0	AppReadiness_Api_EnterLogonPhaseStart(UnicodeString User, UInt32 ProcessId)	Start	Api	AppReadiness_Api_EnterLogonPhase	Informational		
+Microsoft-Windows-AppReadiness	1018	0	AppReadiness_Api_EnterLogonPhaseStop(UnicodeString User, UInt32 ProcessId, Int32 Result)	Stop	Api	AppReadiness_Api_EnterLogonPhase	Informational		
+Microsoft-Windows-AppReadiness	1019	0	AppReadiness_Api_ResolveStoreCategoriesStart(UnicodeString User, UInt32 ProcessId)	Start	Api	AppReadiness_Api_ResolveStoreCategories	Informational		
+Microsoft-Windows-AppReadiness	1020	0	AppReadiness_Api_ResolveStoreCategoriesStop(UnicodeString User, UInt32 ProcessId, Int32 Result)	Stop	Api	AppReadiness_Api_ResolveStoreCategories	Informational		
+Microsoft-Windows-AppReadiness	1021	0	AppReadiness_Api_DisableInAuditMode(Boolean IsAuditMode)		Api	AppReadiness_Api_DisableInAuditMode	Informational		
+Microsoft-Windows-AppReadiness	2000	0	AppReadiness_ScorePackageStart(UnicodeString User, UnicodeString PackageFamilyName)	Start	Scoring	AppReadiness_ScorePackage	Informational		
+Microsoft-Windows-AppReadiness	2001	0	AppReadiness_ScorePackageStop(UnicodeString User, UnicodeString PackageFamilyName, UInt32 Score)	Stop	Scoring	AppReadiness_ScorePackage	Informational		
+Microsoft-Windows-AppReadiness	2002	0	AppReadiness_ScorePackage(UnicodeString User, UnicodeString PackageFamilyName, UInt32 Score)		Scoring	AppReadiness_ScorePackage	Informational		
+Microsoft-Windows-AppReadiness	2003	0	AppReadiness_ScorePackage2003(UnicodeString User, UnicodeString PackageFamilyName, UInt32 Score)		Scoring	AppReadiness_ScorePackage	Informational		
+Microsoft-Windows-AppReadiness	2005	0	AppReadiness_ScorePackage2005(UnicodeString User, UnicodeString PackageFamilyName, UInt32 Score)		Scoring	AppReadiness_ScorePackage	Informational		
+Microsoft-Windows-AppReadiness	2006	0	AppReadiness_ScorePackage2006(UnicodeString User, UnicodeString PackageFamilyName, UInt32 Score)		Scoring	AppReadiness_ScorePackage	Informational		
+Microsoft-Windows-AppReadiness	2007	0	AppReadiness_ScorePackage2007(UnicodeString User, UnicodeString PackageFamilyName, UInt32 Score)		Scoring	AppReadiness_ScorePackage	Informational		
+Microsoft-Windows-AppReadiness	2008	0	AppReadiness_ScorePackage2008(UnicodeString User, UnicodeString PackageFamilyName, UInt32 Score)		Scoring	AppReadiness_ScorePackage	Informational		
+Microsoft-Windows-AppReadiness	2009	0	AppReadiness_ScorePackage2009(UnicodeString User, UnicodeString PackageFamilyName, UInt32 Score)		Scoring	AppReadiness_ScorePackage	Informational		
+Microsoft-Windows-AppReadiness	2500	0	AppReadiness_BrokerSessionStart(UnicodeString User)	Start	BrokerSession	AppReadiness_BrokerSession	Informational		
+Microsoft-Windows-AppReadiness	2501	0	AppReadiness_BrokerSessionStop(UnicodeString User, UInt32 Result)	Stop	BrokerSession	AppReadiness_BrokerSession	Informational		
+Microsoft-Windows-AppReadiness	2502	0	AppReadiness_BrokerSession(UnicodeString User, UnicodeString Package, UInt32 Result)		BrokerSession	AppReadiness_BrokerSession	Informational		
+Microsoft-Windows-AppReadiness	2503	0	AppReadiness_BrokerSession2503(UnicodeString User, UnicodeString Package, UInt32 Result)		BrokerSession	AppReadiness_BrokerSession	Informational		
+Microsoft-Windows-AppReadiness	2504	0	AppReadiness_BrokerSession2504(UnicodeString User, UInt32 Result)		BrokerSession	AppReadiness_BrokerSession	Informational		
+Microsoft-Windows-AppReadiness	3000	0	AppReadiness_PerfTrackStart(UnicodeString TaskId)	Start	Tasks keyword_400000000000	AppReadiness_PerfTrack	Informational		
+Microsoft-Windows-AppReadiness	3001	0	AppReadiness_PerfTrackStop(UnicodeString TaskId)	Stop	Tasks keyword_400000000000	AppReadiness_PerfTrack	Informational		
+Microsoft-Windows-AppReadiness	4000	0	AppReadiness_TriggerTask_Run(UnicodeString User, Int32 Result)		Triggers	AppReadiness_TriggerTask_Run	Informational		
+Microsoft-Windows-AppReadiness	4001	0	AppReadiness_MaintenanceTask_Run(UnicodeString User, Int32 Result)		Triggers	AppReadiness_MaintenanceTask_Run	Informational		
+Microsoft-Windows-AppReadiness	5000	0	AppReadiness_TimelineStart(UnicodeString UserId, UnicodeString PackageFamilyName, UnicodeString ActivityId)	Start	Timeline	AppReadiness_Timeline	Informational		
+Microsoft-Windows-AppReadiness	5001	0	AppReadiness_TimelineStop(UnicodeString UserId, UnicodeString PackageFamilyName, UnicodeString ActivityId)	Stop	Timeline	AppReadiness_Timeline	Informational		
+Microsoft-Windows-AppReadiness	5002	0	AppReadiness_TimelineStart5002(UnicodeString UserId, UnicodeString PackageFamilyName, UnicodeString ActivityId)	Start	Timeline	AppReadiness_Timeline	Informational		
+Microsoft-Windows-AppReadiness	5003	0	AppReadiness_TimelineStop5003(UnicodeString UserId, UnicodeString PackageFamilyName, UnicodeString ActivityId)	Stop	Timeline	AppReadiness_Timeline	Informational		
+Microsoft-Windows-AppReadiness	5004	0	AppReadiness_TimelineStart5004(UnicodeString UserId, UnicodeString PackageFamilyName, UnicodeString ActivityId)	Start	Timeline	AppReadiness_Timeline	Informational		
+Microsoft-Windows-AppReadiness	5005	0	AppReadiness_TimelineStop5005(UnicodeString UserId, UnicodeString PackageFamilyName, UnicodeString ActivityId)	Stop	Timeline	AppReadiness_Timeline	Informational		
+Microsoft-Windows-AppReadiness	5006	0	AppReadiness_TimelineStart5006(UnicodeString UserId, UnicodeString PackageFamilyName, UnicodeString ActivityId)	Start	Timeline	AppReadiness_Timeline	Informational		
+Microsoft-Windows-AppReadiness	5007	0	AppReadiness_TimelineStop5007(UnicodeString UserId, UnicodeString PackageFamilyName, UnicodeString ActivityId)	Stop	Timeline	AppReadiness_Timeline	Informational		
+Microsoft-Windows-AppReadiness	5008	0	AppReadiness_TimelineStart5008(UnicodeString UserId, UnicodeString PackageFamilyName, UnicodeString ActivityId)	Start	Timeline	AppReadiness_Timeline	Informational		
+Microsoft-Windows-AppReadiness	5009	0	AppReadiness_TimelineStop5009(UnicodeString UserId, UnicodeString PackageFamilyName, UnicodeString ActivityId)	Stop	Timeline	AppReadiness_Timeline	Informational		
+Microsoft-Windows-AppReadiness	5010	0	AppReadiness_TimelineStart5010(UnicodeString UserId, UnicodeString PackageFamilyName, UnicodeString ActivityId)	Start	Timeline	AppReadiness_Timeline	Informational		
+Microsoft-Windows-AppReadiness	5011	0	AppReadiness_TimelineStop5011(UnicodeString UserId, UnicodeString PackageFamilyName, UnicodeString ActivityId)	Stop	Timeline	AppReadiness_Timeline	Informational		
+Microsoft-Windows-AppReadiness	5012	0	AppReadiness_TimelineStart5012(UnicodeString UserId, UnicodeString PackageFamilyName, UnicodeString ActivityId)	Start	Timeline	AppReadiness_Timeline	Informational		
+Microsoft-Windows-AppReadiness	5013	0	AppReadiness_TimelineStop5013(UnicodeString UserId, UnicodeString PackageFamilyName, UnicodeString ActivityId)	Stop	Timeline	AppReadiness_Timeline	Informational		
+Microsoft-Windows-AppReadiness	5014	0	AppReadiness_TimelineStart5014(UnicodeString UserId, UnicodeString PackageFamilyName, UnicodeString ActivityId)	Start	Timeline	AppReadiness_Timeline	Informational		
+Microsoft-Windows-AppReadiness	5015	0	AppReadiness_TimelineStop5015(UnicodeString UserId, UnicodeString PackageFamilyName, UnicodeString ActivityId)	Stop	Timeline	AppReadiness_Timeline	Informational		
+Microsoft-Windows-AppReadiness	5016	0	AppReadiness_TimelineStart5016(UnicodeString UserId, UnicodeString PackageFamilyName, UnicodeString ActivityId)	Start	Timeline	AppReadiness_Timeline	Informational		
+Microsoft-Windows-AppReadiness	5017	0	AppReadiness_TimelineStop5017(UnicodeString UserId, UnicodeString PackageFamilyName, UnicodeString ActivityId)	Stop	Timeline	AppReadiness_Timeline	Informational		
+Microsoft-Windows-AppReadiness	5018	0	AppReadiness_TimelineStart5018(UnicodeString UserId, UnicodeString PackageFamilyName, UnicodeString ActivityId)	Start	Timeline	AppReadiness_Timeline	Informational		
+Microsoft-Windows-AppReadiness	5019	0	AppReadiness_TimelineStop5019(UnicodeString UserId, UnicodeString PackageFamilyName, UnicodeString ActivityId)	Stop	Timeline	AppReadiness_Timeline	Informational		
+Microsoft-Windows-AppReadiness	5020	0	AppReadiness_TimelineStart5020(UnicodeString UserId, UnicodeString PackageFamilyName, UnicodeString ActivityId)	Start	Timeline	AppReadiness_Timeline	Informational		
+Microsoft-Windows-AppReadiness	5021	0	AppReadiness_TimelineStop5021(UnicodeString UserId, UnicodeString PackageFamilyName, UnicodeString ActivityId)	Stop	Timeline	AppReadiness_Timeline	Informational		
+Microsoft-Windows-AppReadiness	5022	0	AppReadiness_TimelineStart5022(UnicodeString UserId, UnicodeString PackageFamilyName, UnicodeString ActivityId)	Start	Timeline	AppReadiness_Timeline	Informational		
+Microsoft-Windows-AppReadiness	5023	0	AppReadiness_TimelineStop5023(UnicodeString UserId, UnicodeString PackageFamilyName, UnicodeString ActivityId)	Stop	Timeline	AppReadiness_Timeline	Informational		
+Microsoft-Windows-AppReadiness	5024	0	AppReadiness_TimelineStart5024(UnicodeString UserId, UnicodeString PackageFamilyName, UnicodeString ActivityId)	Start	Timeline	AppReadiness_Timeline	Informational		
+Microsoft-Windows-AppReadiness	5025	0	AppReadiness_TimelineStop5025(UnicodeString UserId, UnicodeString PackageFamilyName, UnicodeString ActivityId)	Stop	Timeline	AppReadiness_Timeline	Informational		
+Microsoft-Windows-AppReadiness	5026	0	AppReadiness_TimelineStart5026(UnicodeString UserId, UnicodeString PackageFamilyName, UnicodeString ActivityId)	Start	Timeline	AppReadiness_Timeline	Informational		
+Microsoft-Windows-AppReadiness	5027	0	AppReadiness_TimelineStop5027(UnicodeString UserId, UnicodeString PackageFamilyName, UnicodeString ActivityId)	Stop	Timeline	AppReadiness_Timeline	Informational		
+Microsoft-Windows-AppReadiness	5028	0	AppReadiness_TimelineStart5028(UnicodeString UserId, UnicodeString PackageFamilyName, UnicodeString ActivityId)	Start	Timeline	AppReadiness_Timeline	Informational		
+Microsoft-Windows-AppReadiness	5029	0	AppReadiness_TimelineStop5029(UnicodeString UserId, UnicodeString PackageFamilyName, UnicodeString ActivityId)	Stop	Timeline	AppReadiness_Timeline	Informational		
+Microsoft-Windows-AppReadiness	5030	0	AppReadiness_TimelineStart5030(UnicodeString UserId, UnicodeString PackageFamilyName, UnicodeString ActivityId)	Start	Timeline	AppReadiness_Timeline	Informational		
+Microsoft-Windows-AppReadiness	5031	0	AppReadiness_TimelineStop5031(UnicodeString UserId, UnicodeString PackageFamilyName, UnicodeString ActivityId)	Stop	Timeline	AppReadiness_Timeline	Informational		
+Microsoft-Windows-AppReadiness	5032	0	AppReadiness_TimelineStart5032(UnicodeString UserId, UnicodeString PackageFamilyName, UnicodeString ActivityId)	Start	Timeline	AppReadiness_Timeline	Informational		
+Microsoft-Windows-AppReadiness	5033	0	AppReadiness_TimelineStop5033(UnicodeString UserId, UnicodeString PackageFamilyName, UnicodeString ActivityId)	Stop	Timeline	AppReadiness_Timeline	Informational		
+Microsoft-Windows-AppReadiness	5034	0	AppReadiness_TimelineStart5034(UnicodeString UserId, UnicodeString PackageFamilyName, UnicodeString ActivityId)	Start	Timeline	AppReadiness_Timeline	Informational		
+Microsoft-Windows-AppReadiness	5035	0	AppReadiness_TimelineStop5035(UnicodeString UserId, UnicodeString PackageFamilyName, UnicodeString ActivityId)	Stop	Timeline	AppReadiness_Timeline	Informational		
+Microsoft-Windows-AppReadiness	5036	0	AppReadiness_TimelineStart5036(UnicodeString UserId, UnicodeString PackageFamilyName, UnicodeString ActivityId)	Start	Timeline	AppReadiness_Timeline	Informational		
+Microsoft-Windows-AppReadiness	5037	0	AppReadiness_TimelineStop5037(UnicodeString UserId, UnicodeString PackageFamilyName, UnicodeString ActivityId)	Stop	Timeline	AppReadiness_Timeline	Informational		
+Microsoft-Windows-AppReadiness	5038	0	AppReadiness_TimelineStart5038(UnicodeString UserId, UnicodeString PackageFamilyName, UnicodeString ActivityId)	Start	Timeline	AppReadiness_Timeline	Informational		
+Microsoft-Windows-AppReadiness	5039	0	AppReadiness_TimelineStop5039(UnicodeString UserId, UnicodeString PackageFamilyName, UnicodeString ActivityId)	Stop	Timeline	AppReadiness_Timeline	Informational		
+Microsoft-Windows-AppReadiness	5040	0	AppReadiness_TimelineStart5040(UnicodeString UserId, UnicodeString PackageFamilyName, UnicodeString ActivityId)	Start	Timeline	AppReadiness_Timeline	Informational		
+Microsoft-Windows-AppReadiness	5041	0	AppReadiness_TimelineStop5041(UnicodeString UserId, UnicodeString PackageFamilyName, UnicodeString ActivityId)	Stop	Timeline	AppReadiness_Timeline	Informational		
+Microsoft-Windows-AppReadiness	5042	0	AppReadiness_TimelineStart5042(UnicodeString UserId, UnicodeString PackageFamilyName, UnicodeString ActivityId)	Start	Timeline	AppReadiness_Timeline	Informational		
+Microsoft-Windows-AppReadiness	5043	0	AppReadiness_TimelineStop5043(UnicodeString UserId, UnicodeString PackageFamilyName, UnicodeString ActivityId)	Stop	Timeline	AppReadiness_Timeline	Informational		

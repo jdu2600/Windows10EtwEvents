@@ -1,0 +1,135 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5016	0	task_0(AnsiString FileName, UInt32 Line, Pointer Address, Pointer Size)		memory	task_0	Always		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5017	0	task_05017(AnsiString FileName, UInt32 Line, Pointer Address)		memory	task_0	Always		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5018	0	task_05018(AnsiString FileName, UInt32 Line, Pointer Address, Pointer Size, Pointer OrigAddress)		memory	task_0	Always		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5100	0	ListUpdate(UInt32 TableId, UInt32 ItemPos, UInt32 ItemState, UnicodeString ItemContent)	Update	list	ListUpdate	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5101	0	ListUpdateInsert(UInt32 TableId, UInt32 ItemPos, UInt32 ItemState, UnicodeString ItemContent)	Insert	list	ListUpdate	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5102	0	ListUpdateDelete(UInt32 TableId, UInt32 ItemPos, UInt32 ItemState, UnicodeString ItemContent)	Delete	list	ListUpdate	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5103	0	task_05103(AnsiString FileName, AnsiString Function, UInt32 Line, UnicodeString ErrorText)		error	task_0	Error		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5200	0	PerfTrack_TM8_LaunchStart()	Start		PerfTrack_TM8_Launch	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5201	0	PerfTrack_TM8_LaunchStop()	Stop		PerfTrack_TM8_Launch	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5202	0	PerfTrack_TM8_TabSwitchStart(UInt32 TabId)	Start		PerfTrack_TM8_TabSwitch	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5203	0	PerfTrack_TM8_TabSwitchStop(UInt32 TabId)	Stop		PerfTrack_TM8_TabSwitch	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5204	0	PerfTrack_TM8_KillProcessStart(UnicodeString ProcessOrPackageName)	Start		PerfTrack_TM8_KillProcess	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5205	0	PerfTrack_TM8_KillProcessStop(UnicodeString ProcessOrPackageName)	Stop		PerfTrack_TM8_KillProcess	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5301	0	TM8_Window_LaunchStart()	Start	ui	TM8_Window_Launch	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5302	0	TM8_Window_LaunchStop()	Stop	ui	TM8_Window_Launch	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5303	0	Monitor_SetupStart()	Start	ui	Monitor_Setup	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5304	0	Monitor_SetupStop()	Stop	ui	Monitor_Setup	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5351	0	Dashboard_SetupStart()	Start	dashboard	Dashboard_Setup	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5352	0	Dashboard_SetupStop()	Stop	dashboard	Dashboard_Setup	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5353	0	Dashboard_Sidebar_InitStart()	Start	dashboard	Dashboard_Sidebar_Init	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5354	0	Dashboard_Sidebar_InitStop()	Stop	dashboard	Dashboard_Sidebar_Init	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5355	0	Dashboard_Sidebar_CPU_InitStart()	Start	dashboard	Dashboard_Sidebar_CPU_Init	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5356	0	Dashboard_Sidebar_CPU_InitStop()	Stop	dashboard	Dashboard_Sidebar_CPU_Init	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5357	0	Dashboard_Sidebar_Memory_InitStart()	Start	dashboard	Dashboard_Sidebar_Memory_Init	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5358	0	Dashboard_Sidebar_Memory_InitStop()	Stop	dashboard	Dashboard_Sidebar_Memory_Init	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5359	0	Dashboard_Sidebar_Disk_InitStart()	Start	dashboard	Dashboard_Sidebar_Disk_Init	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5360	0	Dashboard_Sidebar_Disk_InitStop()	Stop	dashboard	Dashboard_Sidebar_Disk_Init	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5361	0	Dashboard_Sidebar_Network_InitStart()	Start	dashboard	Dashboard_Sidebar_Network_Init	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5362	0	Dashboard_Sidebar_Network_InitStop()	Stop	dashboard	Dashboard_Sidebar_Network_Init	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5363	0	Dashboard_LoadPageTemplateStart(UInt32 PageId)	Start	dashboard	Dashboard_LoadPageTemplate	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5364	0	Dashboard_LoadPageTemplateStop(UInt32 PageId)	Stop	dashboard	Dashboard_LoadPageTemplate	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5365	0	Dashboard_CPUView_InitStart()	Start	dashboard	Dashboard_CPUView_Init	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5366	0	Dashboard_CPUView_InitStop(UnicodeString ResourceName, UInt32 ProcessorCoreCount, UInt32 LogicalProcessorCount, UInt32 NumaNodeCount, UnicodeString MaxCPUSpeed, UnicodeString CurrentCPUSpeed, UnicodeString Virtualization)	Stop	dashboard	Dashboard_CPUView_Init	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5367	0	Dashboard_MemoryView_InitStart()	Start	dashboard	Dashboard_MemoryView_Init	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5368	0	Dashboard_MemoryView_InitStop(UnicodeString ResourceName, UnicodeString MemorySpeed, UnicodeString SlotsUsed, UnicodeString AvailableMemory, UnicodeString CachedMemory, UnicodeString CommittedMemory)	Stop	dashboard	Dashboard_MemoryView_Init	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5369	0	Dashboard_DiskView_InitStart()	Start	dashboard	Dashboard_DiskView_Init	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5370	0	Dashboard_DiskView_InitStop()	Stop	dashboard	Dashboard_DiskView_Init	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5371	0	Dashboard_NetworkView_InitStart()	Start	dashboard	Dashboard_NetworkView_Init	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5372	0	Dashboard_NetworkView_InitStop()	Stop	dashboard	Dashboard_NetworkView_Init	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5373	0	Dashboard_RenderStart(UInt32 PageId)	Start	dashboard	Dashboard_Render	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5374	0	Dashboard_RenderStop(UInt32 PageId)	Stop	dashboard	Dashboard_Render	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5375	0	Dashboard_SwitchResourceStart()	Start	dashboard	Dashboard_SwitchResource	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5376	0	Dashboard_SwitchResourceStop(UInt32 OldPageId, UInt32 NewPageId)	Stop	dashboard	Dashboard_SwitchResource	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5379	0	Dashboard_Disk_EnumerateDisksStart()	Start	dashboard	Dashboard_Disk_EnumerateDisks	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5380	0	Dashboard_Disk_EnumerateDisksStop(UInt32 DiskCount)	Stop	dashboard	Dashboard_Disk_EnumerateDisks	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5381	0	Dashboard_Network_Adapter_EnumerateAdaptersStart()	Start	dashboard	Dashboard_Network_Adapter_EnumerateAdapters	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5382	0	Dashboard_Network_Adapter_EnumerateAdaptersStop(UInt32 AdapterCount)	Stop	dashboard	Dashboard_Network_Adapter_EnumerateAdapters	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5383	0	Dashboard_Network_Adapter_RefreshAdaptersStart()	Start	dashboard	Dashboard_Network_Adapter_RefreshAdapters	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5384	0	Dashboard_Network_Adapter_RefreshAdaptersStop(UInt32 AdapterCount)	Stop	dashboard	Dashboard_Network_Adapter_RefreshAdapters	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5385	0	Dashboard_Network_Adapter_WifiSetPropertiesStart()	Start	dashboard	Dashboard_Network_Adapter_WifiSetProperties	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5386	0	Dashboard_Network_Adapter_WifiSetPropertiesStop(UnicodeString SSID, UnicodeString PhysicalNetworkType, UInt32 SignalQuality)	Stop	dashboard	Dashboard_Network_Adapter_WifiSetProperties	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5387	0	Dashboard_Network_Adapter_WWanSetPropertiesStart()	Start	dashboard	Dashboard_Network_Adapter_WWanSetProperties	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5388	0	Dashboard_Network_Adapter_WWanSetPropertiesStop(UnicodeString ServiceProvider, UnicodeString PhysicalNetworkType, UInt32 SignalQuality)	Stop	dashboard	Dashboard_Network_Adapter_WWanSetProperties	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5389	0	Dashboard_ChangeSummaryViewStart(UInt32 Snap, UInt32 CurrentView)	Start	dashboard	Dashboard_ChangeSummaryView	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5390	0	Dashboard_ChangeSummaryViewStop()	Stop	dashboard	Dashboard_ChangeSummaryView	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5391	0	Dashboard_TurnChartsOnOffStart(UInt32 ChartsOn, UInt32 CurrentView)	Start	dashboard	Dashboard_TurnChartsOnOff	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5392	0	Dashboard_TurnChartsOnOffStop()	Stop	dashboard	Dashboard_TurnChartsOnOff	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5393	0	Dashboard_AddDiskStart(UInt32 OldCount, UInt32 NewCount)	Start	dashboard	Dashboard_AddDisk	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5394	0	Dashboard_AddDiskStop()	Stop	dashboard	Dashboard_AddDisk	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5395	0	Dashboard_RemoveDiskStart(UInt32 OldCount, UInt32 NewCount)	Start	dashboard	Dashboard_RemoveDisk	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5396	0	Dashboard_RemoveDiskStop()	Stop	dashboard	Dashboard_RemoveDisk	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5397	0	Dashboard_AddAdapterStart(UInt32 OldCount, UInt32 NewCount)	Start	dashboard	Dashboard_AddAdapter	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5398	0	Dashboard_AddAdapterStop()	Stop	dashboard	Dashboard_AddAdapter	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5399	0	Dashboard_RemoveAdapterStart(UInt32 OldCount, UInt32 NewCount)	Start	dashboard	Dashboard_RemoveAdapter	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5400	0	Dashboard_RemoveAdapterStop()	Stop	dashboard	Dashboard_RemoveAdapter	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5401	0	Dashboard_DiskPerfIOCTLStart(UInt32 DiskNumber)	Start	dashboard	Dashboard_DiskPerfIOCTL	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5402	0	Dashboard_DiskPerfIOCTLStop(UInt32 Hresult, UInt32 QueryByteReturned)	Stop	dashboard	Dashboard_DiskPerfIOCTL	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5403	0	Dashboard_ChartScaleChangedUpdate(UnicodeString ChartId, UInt32 FromScaleIndex, UnicodeString FromScaleString, UInt32 ToScaleIndex, UnicodeString ToScaleString)	Update	dashboard	Dashboard_ChartScaleChanged	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5404	0	Dashboard_DiskLengthIOCTLStart(UInt32 DiskNumber)	Start	dashboard	Dashboard_DiskLengthIOCTL	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5405	0	Dashboard_DiskLengthIOCTLStop(UInt32 Hresult, UInt32 QueryByteReturned, UInt64 LengthInByte)	Stop	dashboard	Dashboard_DiskLengthIOCTL	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5501	0	UI_RenderStart(UInt32 TabId)	Start	ui	UI_Render	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5502	0	UI_RenderStop(UInt32 TabId)	Stop	ui	UI_Render	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5503	0	UI_DataSortStart()	Start	ui	UI_DataSort	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5504	0	UI_DataSortStop(UInt32 PageId)	Stop	ui	UI_DataSort	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5505	0	UI_ClickExpandoStart()	Start	ui	UI_ClickExpando	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5506	0	UI_ClickExpandoStop()	Stop	ui	UI_ClickExpando	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5651	0	DataMonitor_AppInfo_UpdateStart()	Start	datamonitor	DataMonitor_AppInfo_Update	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5652	0	DataMonitor_AppInfo_UpdateStop(UInt32 NewItems, UInt32 UpdatedItems)	Stop	datamonitor	DataMonitor_AppInfo_Update	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5653	0	DataMonitor_WindowInfo_UpdateStart()	Start	datamonitor	DataMonitor_WindowInfo_Update	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5654	0	DataMonitor_WindowInfo_UpdateStop(UInt32 NewItems, UInt32 UpdatedItems)	Stop	datamonitor	DataMonitor_WindowInfo_Update	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5655	0	DataMonitor_AppServiceInfo_UpdateStart()	Start	datamonitor	DataMonitor_AppServiceInfo_Update	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5656	0	DataMonitor_AppServiceInfo_UpdateStop(UInt32 NewItems, UInt32 UpdatedItems)	Stop	datamonitor	DataMonitor_AppServiceInfo_Update	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5657	0	DataMonitor_TrayIconInfo_UpdateStart()	Start	datamonitor	DataMonitor_TrayIconInfo_Update	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5658	0	DataMonitor_TrayIconInfo_UpdateStop(UInt32 NewItems, UInt32 UpdatedItems)	Stop	datamonitor	DataMonitor_TrayIconInfo_Update	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5659	0	DataMonitor_UserInfo_UpdateStart()	Start	datamonitor	DataMonitor_UserInfo_Update	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5660	0	DataMonitor_UserInfo_UpdateStop(UInt32 NewItems, UInt32 UpdatedItems)	Stop	datamonitor	DataMonitor_UserInfo_Update	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	6001	0	Actions_InvokeMenuStart()	Start	ui	Actions_InvokeMenu	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	6002	0	Actions_InvokeMenuStop(UInt32 ItemType, UInt32 MenuId)	Stop	ui	Actions_InvokeMenu	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	6003	0	Actions_RightClickPopupStart()	Start	ui	Actions_RightClickPopup	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	6004	0	Actions_RightClickPopupStop(UInt32 ItemType)	Stop	ui	Actions_RightClickPopup	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	6005	0	Actions_EndTask_ProcessStart(UInt32 ProcessId)	Start	ui	Actions_EndTask_Process	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	6006	0	Actions_EndTask_ProcessStop(UInt32 ProcessId)	Stop	ui	Actions_EndTask_Process	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	6007	0	Actions_EndTask_WindowStart(UInt32 WindowHandle)	Start	ui	Actions_EndTask_Window	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	6008	0	Actions_EndTask_WindowStop(UInt32 WindowHandle)	Stop	ui	Actions_EndTask_Window	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	6009	0	Actions_EndTask_ServiceStart(UnicodeString ServiceName)	Start	ui	Actions_EndTask_Service	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	6010	0	Actions_EndTask_ServiceStop(UnicodeString ServiceName)	Stop	ui	Actions_EndTask_Service	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	6011	0	Actions_SortbyStart()	Start	ui	Actions_Sortby	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	6012	0	Actions_SortbyStop()	Stop	ui	Actions_Sortby	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	6013	0	Actions_SortDUITreeStart()	Start	ui	Actions_SortDUITree	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	6014	0	Actions_SortDUITreeStop()	Stop	ui	Actions_SortDUITree	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	6015	0	Actions_ColSwapStart()	Start	ui	Actions_ColSwap	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	6016	0	Actions_ColSwapStop()	Stop	ui	Actions_ColSwap	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	6017	0	Actions_ColResizeStart()	Start	ui	Actions_ColResize	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	6018	0	Actions_ColResizeStop()	Stop	ui	Actions_ColResize	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	6019	0	Actions_ChangeViewStart(UInt32 FromTab, UInt32 ToTab)	Start	ui	Actions_ChangeView	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	6020	0	Actions_ChangeViewStop()	Stop	ui	Actions_ChangeView	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	6021	0	Monitor_ChangeViewStart(UInt32 FromTab, UInt32 ToTab)	Start	ui	Monitor_ChangeView	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	6022	0	Monitor_ChangeViewStop()	Stop	ui	Monitor_ChangeView	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	6023	0	Actions_ConfirmCommandStart(UInt32 CommandId)	Start	ui	Actions_ConfirmCommand	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	6024	0	Actions_ConfirmCommandStop()	Stop	ui	Actions_ConfirmCommand	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	6025	0	Actions_SwitchUser()		ui	Actions_SwitchUser	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	6026	0	Actions_SendMessage()		ui	Actions_SendMessage	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	6027	0	Actions_LogoffUser()		ui	Actions_LogoffUser	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	6028	0	Actions_DisconnectUser()		ui keyword_200000000000	Actions_DisconnectUser	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	7000	0	Startup_ImpactFile_ParseStart()	Start	datamonitor	Startup_ImpactFile_Parse	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	7001	0	Startup_ImpactFile_ParseStop(UInt32 CountOfItemsInStartupXML)	Stop	datamonitor	Startup_ImpactFile_Parse	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	7002	0	Startup_EnumerationStart()	Start	datamonitor	Startup_Enumeration	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	7003	0	Startup_EnumerationStop()	Stop	datamonitor	Startup_Enumeration	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	7004	0	Startup_LoadItemsStart()	Start	datamonitor	Startup_LoadItems	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	7005	0	Startup_LoadItemsStop()	Stop	datamonitor	Startup_LoadItems	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	7100	0	AppHistory_EnumerateInstalledAppsStart()	Start	datamonitor	AppHistory_EnumerateInstalledApps	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	7101	0	AppHistory_EnumerateInstalledAppsStop()	Stop	datamonitor	AppHistory_EnumerateInstalledApps	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	7102	0	AppHistory_RegisterAndProcessStatsStart(UInt32 SrumProvider)	Start	datamonitor	AppHistory_RegisterAndProcessStats	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	7103	0	AppHistory_RegisterAndProcessStatsStop(UInt32 SrumProvider)	Stop	datamonitor	AppHistory_RegisterAndProcessStats	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	7104	0	AppHistory_GetInterfaceCostStart(UInt64 InterfaceLUID, UInt32 ProfileIndex)	Start	datamonitor	AppHistory_GetInterfaceCost	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	7105	0	AppHistory_GetInterfaceCostStop(UInt64 InterfaceLUID, UInt32 ProfileIndex)	Stop	datamonitor	AppHistory_GetInterfaceCost	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	7106	0	AppHistory_ParsePackageIconStart(UnicodeString PackageInstallPath)	Start	datamonitor	AppHistory_ParsePackageIcon	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	7107	0	AppHistory_ParsePackageIconStop(UnicodeString PackageInstallPath)	Stop	datamonitor	AppHistory_ParsePackageIcon	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	7108	0	AppHistory_AddImmersiveApplicationStart()	Start	datamonitor	AppHistory_AddImmersiveApplication	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	7109	0	AppHistory_AddImmersiveApplicationStop(UnicodeString PackageName, UnicodeString LongDisplayName)	Stop	datamonitor	AppHistory_AddImmersiveApplication	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	7110	0	AppHistory_AddDesktopApplicationStart()	Start	datamonitor	AppHistory_AddDesktopApplication	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	7111	0	AppHistory_AddDesktopApplicationStop(UnicodeString ExePath)	Stop	datamonitor	AppHistory_AddDesktopApplication	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	7112	0	AppHistory_ProcessSrumRecordSetStart(UInt32 SrumProvider, UInt64 SrumRecordSetCount)	Start	datamonitor	AppHistory_ProcessSrumRecordSet	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	7113	0	AppHistory_ProcessSrumRecordSetStop()	Stop	datamonitor	AppHistory_ProcessSrumRecordSet	Informational		

@@ -1,0 +1,19 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-SPB-ClassExtension	1000	1	StartupoftheSPBclassextension_V1(UnicodeString ControlDeviceName, UInt32 Status)			StartupoftheSPBclassextension	Informational		
+Microsoft-Windows-SPB-ClassExtension	1001	1	StartupoftheSPBclassextension1001_V1(UnicodeString ControlDeviceName, UInt32 Status)			StartupoftheSPBclassextension	Error		
+Microsoft-Windows-SPB-ClassExtension	1002	1	UnloadoftheSPBclassextension_V1()			UnloadoftheSPBclassextension	Informational		
+Microsoft-Windows-SPB-ClassExtension	1010	1	I/OoperationflowthroughSPBCxStart_V1(Pointer Controller, UnicodeString TargetName, UnicodeString ScopeTag, Pointer File, Pointer Request, Int8 RequestType, UInt32 Length)	Start		I/OoperationflowthroughSPBCx	Informational		
+Microsoft-Windows-SPB-ClassExtension	1011	1	I/OoperationflowthroughSPBCxIoDispatchToTarget_V1()	IoDispatchToTarget		I/OoperationflowthroughSPBCx	Informational		
+Microsoft-Windows-SPB-ClassExtension	1012	1	I/OoperationflowthroughSPBCxIoForwardToControllerQueue_V1()	IoForwardToControllerQueue		I/OoperationflowthroughSPBCx	Informational		
+Microsoft-Windows-SPB-ClassExtension	1013	1	I/OoperationflowthroughSPBCxIoDispatchToController_V1()	IoDispatchToController		I/OoperationflowthroughSPBCx	Informational		
+Microsoft-Windows-SPB-ClassExtension	1014	1	I/OoperationflowthroughSPBCxIoPresentToDriver_V1()	IoPresentToDriver		I/OoperationflowthroughSPBCx	Informational		
+Microsoft-Windows-SPB-ClassExtension	1015	1	I/OoperationflowthroughSPBCxIoComplete_V1(Pointer Request, UInt32 CompletionStatus, UInt64 Information)	IoComplete		I/OoperationflowthroughSPBCx	Informational		
+Microsoft-Windows-SPB-ClassExtension	1016	1	I/OoperationflowthroughSPBCxStop_V1()	Stop		I/OoperationflowthroughSPBCx	Informational		
+Microsoft-Windows-SPB-ClassExtension	1018	1	I/OoperationflowthroughSPBCxIoSpbDirection_V1(UInt8 Data)	IoSpbDirection		I/OoperationflowthroughSPBCx	Verbose		
+Microsoft-Windows-SPB-ClassExtension	1019	1	I/OoperationflowthroughSPBCxIoLockWatchdogTimeout_V1(Pointer Controller, UnicodeString TargetName, UnicodeString ScopeTag, Pointer File)	IoLockWatchdogTimeout		I/OoperationflowthroughSPBCx	Warning		
+Microsoft-Windows-SPB-ClassExtension	1020	1	D_statetransitionforSPBcontrollerdriverDIrpPreprocess_V1(Pointer Controller, HexInt32 DeviceState)	DIrpPreprocess		D_statetransitionforSPBcontrollerdriver	Informational		
+Microsoft-Windows-SPB-ClassExtension	1021	1	I/OoperationflowthroughSPBCxIoSpbPayloadStart_V1(UInt64 IoTotalByteCount, UInt32 TransferCount)	IoSpbPayloadStart		I/OoperationflowthroughSPBCx	Verbose		
+Microsoft-Windows-SPB-ClassExtension	1022	1	I/OoperationflowthroughSPBCxIoSpbPayloadTdStart_V1(UInt32 TransferIndex, UInt32 TransferDirection, UInt64 TransferTotalByteCount)	IoSpbPayloadTdStart		I/OoperationflowthroughSPBCx	Verbose		
+Microsoft-Windows-SPB-ClassExtension	1023	1	I/OoperationflowthroughSPBCxIoSpbPayloadTdBuffer_V1(UInt32 BufferIndex, UInt32 ByteCount, Binary Buffer)	IoSpbPayloadTdBuffer		I/OoperationflowthroughSPBCx	Verbose		
+Microsoft-Windows-SPB-ClassExtension	1024	1	I/OoperationflowthroughSPBCxIoSpbPayloadTdStop_V1()	IoSpbPayloadTdStop		I/OoperationflowthroughSPBCx	Verbose		
+Microsoft-Windows-SPB-ClassExtension	1025	1	I/OoperationflowthroughSPBCxIoSpbPayloadStop_V1()	IoSpbPayloadStop		I/OoperationflowthroughSPBCx	Verbose		

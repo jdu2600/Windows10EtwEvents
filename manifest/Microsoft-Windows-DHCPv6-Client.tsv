@@ -1,0 +1,91 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-DHCPv6-Client	1000	0	AddressConfigurationStateEventLostIpAddress(UnicodeString InterfaceGUID, UInt32 HWLength, Binary HWAddress)	LostIpAddress		AddressConfigurationStateEvent	Error		
+Microsoft-Windows-DHCPv6-Client	1003	0	AddressConfigurationStateEventLeaseRenewalFailed(UInt32 HWLength, Binary HWAddress, UInt32 StatusCode)	LeaseRenewalFailed	DHCPV6_AOAC	AddressConfigurationStateEvent	Error		
+Microsoft-Windows-DHCPv6-Client	1004	0	ServiceStateEventErrorServiceStop(UInt32 StatusCode, UInt32 DwordVal)	ErrorServiceStop		ServiceStateEvent	Error		
+Microsoft-Windows-DHCPv6-Client	1005	0	AddressConfigurationStateEventIPConflict(UnicodeString InterfaceGUID, UInt32 HWLength, Binary HWAddress)	IPConflict		AddressConfigurationStateEvent	Warning		
+Microsoft-Windows-DHCPv6-Client	1006	0	MediaStateEventRAChanged(UInt32 InterfaceId, Boolean Flag1, Boolean Flag2)	RAChanged		MediaStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	1008	0	AddressConfigurationStateEventInitNetworkInterfaceFailed(UInt32 StatusCode)	InitNetworkInterfaceFailed		AddressConfigurationStateEvent	Error		
+Microsoft-Windows-DHCPv6-Client	1009	0	ServiceStateEventDHCPv6DUIDValidationFailed(UInt32 HWLength, Binary HWAddress, UInt32 DUIDLength, Binary DUID, UInt32 NewHWLength, Binary NewHWAddress, UInt32 NewDUIDLength, Binary NewDUID)	DHCPv6DUIDValidationFailed		ServiceStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	1010	0	AddressConfigurationStateEventDHCPv6NetworkHintMatch(UnicodeString NetworkHintString, UnicodeString NetworkHint, UInt32 HWLength, Binary HWAddress)	DHCPv6NetworkHintMatch		AddressConfigurationStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	1011	0	AddressConfigurationStateEventDHCPv6NetworkHintStatefullConfig(Binary Address1, UnicodeString NetworkHintString, UnicodeString NetworkHint, UInt32 HWLength, Binary HWAddress)	DHCPv6NetworkHintStatefullConfig		AddressConfigurationStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	1012	0	AddressConfigurationStateEventDHCPv6NetworkHintStatelessConfig(UnicodeString NetworkHintString, UnicodeString NetworkHint, UInt32 HWLength, Binary HWAddress)	DHCPv6NetworkHintStatelessConfig		AddressConfigurationStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	1013	0	AddressConfigurationStateEventDHCPv6NetworkHintConfigExpired(UnicodeString NetworkHintString, UnicodeString NetworkHint, UInt32 HWLength, Binary HWAddress)	DHCPv6NetworkHintConfigExpired		AddressConfigurationStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	50057	0	ProtocolStateEventNetworkError(UInt32 StatusCode)	NetworkError		ProtocolStateEvent	Error		
+Microsoft-Windows-DHCPv6-Client	50071	0	MediaStateEventAcquireNICReference(UInt32 InterfaceId, UInt32 StatusCode)	AcquireNICReference		MediaStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	50072	0	MediaStateEventReleaseNICReference(UInt32 InterfaceId, UInt32 StatusCode)	ReleaseNICReference		MediaStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51001	0	MediaStateEventMediaConnect(UInt32 InterfaceId)	MediaConnect		MediaStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51002	0	MediaStateEventMediaDisconnect(UInt32 InterfaceId)	MediaDisconnect		MediaStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51004	0	ProtocolStateEventInitConfirmReply(UInt32 InterfaceId)	InitConfirmReply	DHCPV6_AOAC	ProtocolStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51005	0	ProtocolStateEventInitSARR(UInt32 InterfaceId, UInt32 DwordVal1, UInt32 DwordVal2)	InitSARR	DHCPV6_AOAC	ProtocolStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51006	0	ProtocolStateEventSolicitSent(UInt32 InterfaceId, UInt32 StatusCode)	SolicitSent		ProtocolStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51007	0	ProtocolStateEventAdvertiseReceived(UInt32 InterfaceId, UInt32 StatusCode, Binary Address)	AdvertiseReceived		ProtocolStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51008	0	ProtocolStateEventAdvertiseDiscarded(UInt32 InterfaceId, UInt32 StatusCode)	AdvertiseDiscarded		ProtocolStateEvent	Error		
+Microsoft-Windows-DHCPv6-Client	51009	0	ProtocolStateEventRequestSent(UInt32 InterfaceId, UInt32 StatusCode)	RequestSent		ProtocolStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51010	0	ProtocolStateEventReplyForRequestReceived(UInt32 InterfaceId, UInt32 StatusCode, Binary Address)	ReplyForRequestReceived		ProtocolStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51011	0	ProtocolStateEventInvalidReplyForRequestReceived(UInt32 InterfaceId, UInt32 StatusCode)	InvalidReplyForRequestReceived		ProtocolStateEvent	Error		
+Microsoft-Windows-DHCPv6-Client	51012	0	ProtocolStateEventRenewSent(UInt32 InterfaceId, UInt32 StatusCode)	RenewSent		ProtocolStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51013	0	ProtocolStateEventReplyForRenewReceived(UInt32 InterfaceId, UInt32 StatusCode)	ReplyForRenewReceived		ProtocolStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51014	0	ProtocolStateEventInvalidReplyForRenewReceived(UInt32 InterfaceId, UInt32 StatusCode)	InvalidReplyForRenewReceived		ProtocolStateEvent	Error		
+Microsoft-Windows-DHCPv6-Client	51015	0	ProtocolStateEventRebindSent(UInt32 InterfaceId, UInt32 StatusCode)	RebindSent		ProtocolStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51016	0	ProtocolStateEventReplyForRebindReceived(UInt32 InterfaceId, UInt32 StatusCode)	ReplyForRebindReceived		ProtocolStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51017	0	ProtocolStateEventInvalidReplyForRebindReceived(UInt32 InterfaceId, UInt32 StatusCode)	InvalidReplyForRebindReceived		ProtocolStateEvent	Error		
+Microsoft-Windows-DHCPv6-Client	51018	0	ProtocolStateEventReleaseSent(UInt32 InterfaceId, UInt32 StatusCode)	ReleaseSent		ProtocolStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51019	0	ProtocolStateEventDeclineSent(UInt32 InterfaceId, UInt32 StatusCode)	DeclineSent		ProtocolStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51020	0	ProtocolStateEventReplyForDeclineReceived(UInt32 InterfaceId, UInt32 StatusCode)	ReplyForDeclineReceived		ProtocolStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51021	0	ProtocolStateEventInvalidReplyForDeclineReceived(UInt32 InterfaceId, UInt32 StatusCode)	InvalidReplyForDeclineReceived		ProtocolStateEvent	Error		
+Microsoft-Windows-DHCPv6-Client	51022	0	ProtocolStateEventConfirmSent(UInt32 InterfaceId, UInt32 StatusCode)	ConfirmSent		ProtocolStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51023	0	ProtocolStateEventReplyForConfirmReceived(UInt32 InterfaceId, UInt32 StatusCode)	ReplyForConfirmReceived		ProtocolStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51024	0	ProtocolStateEventInvalidReplyForConfirmReceived(UInt32 InterfaceId, UInt32 StatusCode)	InvalidReplyForConfirmReceived		ProtocolStateEvent	Error		
+Microsoft-Windows-DHCPv6-Client	51025	0	ProtocolStateEventInfoRequestSent(UInt32 InterfaceId, UInt32 StatusCode)	InfoRequestSent		ProtocolStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51026	0	ProtocolStateEventReplyForInfoRequestReceived(UInt32 InterfaceId, UInt32 StatusCode)	ReplyForInfoRequestReceived		ProtocolStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51027	0	ProtocolStateEventInvalidReplyForInfoRequestReceived(UInt32 InterfaceId, UInt32 StatusCode)	InvalidReplyForInfoRequestReceived		ProtocolStateEvent	Error		
+Microsoft-Windows-DHCPv6-Client	51029	0	ProtocolStateEventErrorCreatingPacket(UInt32 InterfaceId, UInt32 StatusCode)	ErrorCreatingPacket		ProtocolStateEvent	Error		
+Microsoft-Windows-DHCPv6-Client	51030	0	ProtocolStateEventErrorExtractingOptions(UInt32 InterfaceId, UInt32 StatusCode)	ErrorExtractingOptions		ProtocolStateEvent	Error		
+Microsoft-Windows-DHCPv6-Client	51031	0	AddressConfigurationStateEventStatefulToStateless(UInt32 InterfaceId, UInt32 StatusCode, UInt32 Dword1, UInt32 Dword2)	StatefulToStateless		AddressConfigurationStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51032	0	AddressConfigurationStateEventStatelessToStateful(UInt32 InterfaceId, UInt32 StatusCode)	StatelessToStateful		AddressConfigurationStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51033	0	AddressConfigurationStateEventNonDhcpToStateful(UInt32 InterfaceId, UInt32 StatusCode)	NonDhcpToStateful		AddressConfigurationStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51034	0	AddressConfigurationStateEventNonDhcpToStateless(UInt32 InterfaceId, UInt32 StatusCode, UInt32 Dword1, UInt32 Dword2)	NonDhcpToStateless		AddressConfigurationStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51035	0	AddressConfigurationStateEventStaticMode(UInt32 InterfaceId, UInt32 StatusCode)	StaticMode		AddressConfigurationStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51036	0	ProtocolStateEventErrorInParsing(UInt32 InterfaceId, UInt32 StatusCode)	ErrorInParsing		ProtocolStateEvent	Error		
+Microsoft-Windows-DHCPv6-Client	51037	0	ProtocolStateEventInformationRefreshTimeOptionReceived(UInt32 InterfaceId, UInt32 RefreshTime)	InformationRefreshTimeOptionReceived		ProtocolStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51038	0	ProtocolStateEventInformationRefreshTimeExpired(UInt32 InterfaceId)	InformationRefreshTimeExpired		ProtocolStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51039	0	AddressConfigurationStateEventAddressPlumbed(Binary Address, UInt32 InterfaceId, UInt32 StatusCode)	AddressPlumbed	DHCPV6_AOAC	AddressConfigurationStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51040	0	AddressConfigurationStateEventAddressUnplumbed(Binary Address, UInt32 InterfaceId, UInt32 StatusCode)	AddressUnplumbed	DHCPV6_AOAC	AddressConfigurationStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51043	0	MediaStateEventInterfaceAdded(UInt32 InterfaceId, UInt32 StatusCode)	InterfaceAdded		MediaStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51044	0	AddressConfigurationStateEventErrorInitializingInterface(UInt32 InterfaceId, UInt32 StatusCode)	ErrorInitializingInterface		AddressConfigurationStateEvent	Error		
+Microsoft-Windows-DHCPv6-Client	51045	0	AddressConfigurationStateEventErrorPlumbingParameters(UInt32 StatusCode)	ErrorPlumbingParameters		AddressConfigurationStateEvent	Error		
+Microsoft-Windows-DHCPv6-Client	51046	0	ServiceStateEventServiceStart()	ServiceStart		ServiceStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51047	0	ServiceStateEventServiceStop(UInt32 DwordVal)	ServiceStop		ServiceStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51048	0	WinsockStateEventErrorOpeningSocket(UInt32 InterfaceId, UInt32 StatusCode)	ErrorOpeningSocket		WinsockStateEvent	Error		
+Microsoft-Windows-DHCPv6-Client	51049	0	WinsockStateEventErrorClosingSocket(UInt32 InterfaceId, UInt32 StatusCode)	ErrorClosingSocket		WinsockStateEvent	Error		
+Microsoft-Windows-DHCPv6-Client	51050	0	DNSStateEventDnsRegistrationDone(UInt32 InterfaceId, UInt32 StatusCode, UInt32 Dword)	DnsRegistrationDone		DNSStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51051	0	DNSStateEventNSDEREGISTRATIONDONEnsDeregistrationDone(UInt32 InterfaceId, UInt32 StatusCode)	dnsDeregistrationDone		DNSStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51058	0	AddressConfigurationStateEventStatefulToStateful(UInt32 InterfaceId, UInt32 StatusCode)	StatefulToStateful		AddressConfigurationStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51059	0	ProtocolStateEventInvalidMessageDiscarded()	InvalidMessageDiscarded		ProtocolStateEvent	Error		
+Microsoft-Windows-DHCPv6-Client	51060	0	AddressConfigurationStateEventSetClassID(UnicodeString InterfaceGUID, UInt32 HWLength, Binary HWAddress)	SetClassID		AddressConfigurationStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51061	0	AddressConfigurationStateEventAddressAlreadyExists(Binary Address, UInt32 InterfaceId)	AddressAlreadyExists		AddressConfigurationStateEvent	Error		
+Microsoft-Windows-DHCPv6-Client	51062	0	AddressConfigurationStateEventFailedToObtainLease(UInt32 HWLength, Binary HWAddress, UInt32 StatusCode)	FailedToObtainLease	DHCPV6_AOAC	AddressConfigurationStateEvent	Error		
+Microsoft-Windows-DHCPv6-Client	51063	0	ProtocolStateEventFirewallPortExempted(UInt32 DwordVal, UInt32 InterfaceId, UInt32 DwordVal1)	FirewallPortExempted		ProtocolStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51064	0	ProtocolStateEventFirewallPortClosed(UInt32 DwordVal, UInt32 InterfaceId, UInt32 DwordVal1)	FirewallPortClosed		ProtocolStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51065	0	AddressConfigurationStateEventModeChanging(UInt32 InterfaceId, UInt32 NewMode)	ModeChanging		AddressConfigurationStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51066	0	ProtocolStateEventAggressiveRetryOn(UInt32 InterfaceId)	AggressiveRetryOn		ProtocolStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51067	0	ProtocolStateEventAbandonSolicitInCSSinceDhcp(UInt32 DwordVal1, UInt32 InterfaceId, UInt32 Address1, UInt32 DwordVal2, UInt32 DwordVal3)	AbandonSolicitInCSSinceDhcp		ProtocolStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51068	0	ProtocolStateEventAbandonSolicitInCSSinceStatic(UInt32 DwordVal1, UInt32 InterfaceId, UInt32 Address1, UInt32 DwordVal2, UInt32 DwordVal3)	AbandonSolicitInCSSinceStatic		ProtocolStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51069	0	ProtocolStateEventDontStartSolicitInCSSinceV4Plumbed(UInt32 InterfaceId, UInt32 Address1, UInt32 DwordVal1, UInt32 DwordVal2)	DontStartSolicitInCSSinceV4Plumbed		ProtocolStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51070	0	ProtocolStateEventStartSolicitInCSSinceV4Unplumbed(UInt32 InterfaceId, UInt32 DwordVal1, UInt32 DwordVal2)	StartSolicitInCSSinceV4Unplumbed		ProtocolStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51073	0	ProtocolStateEventFirewallPortExemptionTriggered(UInt32 InterfaceId, UInt32 DwordVal1)	FirewallPortExemptionTriggered		ProtocolStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51074	0	ProtocolStateEventFirewallPortCloseTriggered(UInt32 InterfaceId, UInt32 DwordVal1)	FirewallPortCloseTriggered		ProtocolStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51075	0	NetworkParameterStateEventNotifyCSEntry()	NotifyCSEntry		NetworkParameterStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51076	0	NetworkParameterStateEventNotifyCSExit()	NotifyCSExit		NetworkParameterStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51077	0	ProtocolStateEventStartSolicitInCSAtCompulsoryTime(UInt32 InterfaceId, UInt32 DwordVal1, UInt32 DwordVal2)	StartSolicitInCSAtCompulsoryTime		ProtocolStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51078	0	ProtocolStateEventEnableDhcpV6(UInt32 InterfaceId, UInt32 DwordVal1)	EnableDhcpV6		ProtocolStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51079	0	ProtocolStateEventDisableDhcpV6(UInt32 InterfaceId, UInt32 DwordVal1)	DisableDhcpV6		ProtocolStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51080	0	ProtocolStateEventNoProcessingSinceDhcpV6Disabled(UInt32 InterfaceId)	NoProcessingSinceDhcpV6Disabled		ProtocolStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51081	0	ProtocolStateEventAbandonSolicitInCSSinceV6Static(UInt32 DwordVal1, UInt32 InterfaceId, Binary Address, UInt32 DwordVal2, UInt32 DwordVal3)	AbandonSolicitInCSSinceV6Static		ProtocolStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51082	0	ProtocolStateEventAbandonSolicitInCSSinceV6Stateless(UInt32 DwordVal1, UInt32 InterfaceId, Binary Address, UInt32 DwordVal2, UInt32 DwordVal3)	AbandonSolicitInCSSinceV6Stateless		ProtocolStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51083	0	ProtocolStateEventAbandonSolicitSinceNonMulticast(UInt32 InterfaceId)	AbandonSolicitSinceNonMulticast		ProtocolStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	51084	0	ProtocolStateEventNoteFlagValues(UInt32 InterfaceId, UInt32 DwordVal1, UInt32 DwordVal2)	NoteFlagValues		ProtocolStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	60000	0	ProtocolStateEventPerfTrackSARR(GUID InterfaceGuid, UInt32 InterfaceId, Binary Address1)	PerfTrackSARR		ProtocolStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	60001	0	ProtocolStateEventPerfTrackInfoRequest(GUID InterfaceGuid, UInt32 InterfaceId)	PerfTrackInfoRequest		ProtocolStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	60002	0	MediaStateEventPerfTrackMediaConnect(GUID InterfaceGuid, UInt32 InterfaceId)	PerfTrackMediaConnect		MediaStateEvent	Informational		
+Microsoft-Windows-DHCPv6-Client	60003	0	MediaStateEventPerfTrackMediaConnectEnd(GUID InterfaceGuid, UInt32 InterfaceId)	PerfTrackMediaConnectEnd		MediaStateEvent	Informational		

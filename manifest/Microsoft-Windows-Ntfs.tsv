@@ -1,0 +1,38 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Ntfs	1	0	RundownStart()	Start	Rundown	Rundown	Informational		
+Microsoft-Windows-Ntfs	2	0	RundownStop()	Stop	Rundown	Rundown	Informational		
+Microsoft-Windows-Ntfs	3	0	Rundown(Pointer Vcb, UInt16 DeviceNameLength, UnicodeString DeviceName)		Rundown	Rundown	Informational		
+Microsoft-Windows-Ntfs	4	0	VolumeMount(Pointer Vcb, UInt16 DeviceNameLength, UnicodeString DeviceName, GUID VolumeGuid, UInt16 VolumeNameLength, UnicodeString VolumeName, UInt16 VolumeLabelLength, UnicodeString VolumeLabel)		VolumeMountDismount	VolumeMount	Informational		
+Microsoft-Windows-Ntfs	98	0	task_0(UnicodeString DriveName, UnicodeString DeviceName, UInt32 CorruptionActionState)		VolumeCorruptionActionStateChange	task_0	Informational		
+Microsoft-Windows-Ntfs	100	0	task_0100(UInt32 hc_stateid)		GlobalCorruptionActionStateChange	task_0	Informational		
+Microsoft-Windows-Ntfs	139	0	task_0139(UnicodeString DriveName, UnicodeString DeviceName, UInt16 FragmentationLevel)		SdsCompaction	task_0	Warning		
+Microsoft-Windows-Ntfs	140	0	task_0140(UnicodeString VolumeId, UnicodeString DeviceName, HexInt32 Error)		LogFlushFailed	task_0	Informational		
+Microsoft-Windows-Ntfs	141	0	task_0141(GUID VolumeGuid, UInt32 VolumeNameLength, UnicodeString VolumeName, UInt32 ProcessNameLength, UnicodeString ProcessName, Boolean IsBootVolume, UInt64 FreeSpaceInBytes)		Statistics	task_0	Warning		
+Microsoft-Windows-Ntfs	142	0	task_0142(GUID VolumeGuid, UInt32 VolumeNameLength, UnicodeString VolumeName, UInt64 LowestFreeSpaceInBytes, UInt64 HighestFreeSpaceInBytes, Boolean IsBootVolume)		Statistics	task_0	Informational		
+Microsoft-Windows-Ntfs	201	0	LogFileFull(Pointer Vcb, UInt16 LogFileFullReason)		LogFileFull	LogFileFull	Informational		
+Microsoft-Windows-Ntfs	202	0	CheckpointStart(Pointer Vcb, UInt16 LogFileFullReason, UInt16 LogFileUsePercentage)	Start	Checkpoint PeriodicCheckpoint	Checkpoint	Informational		
+Microsoft-Windows-Ntfs	203	0	CheckpointStop(Pointer Vcb, UInt32 DirtyMetaDataPages)	Stop	Checkpoint PeriodicCheckpoint	Checkpoint	Informational		
+Microsoft-Windows-Ntfs	204	0	CheckpointStart204(Pointer Vcb, UInt16 LogFileFullReason, UInt16 LogFileUsePercentage)	Start	Checkpoint CleanCheckpoint	Checkpoint	Informational		
+Microsoft-Windows-Ntfs	205	0	CheckpointStop205(Pointer Vcb, UInt32 DirtyMetaDataPages)	Stop	Checkpoint CleanCheckpoint	Checkpoint	Informational		
+Microsoft-Windows-Ntfs	206	0	MftRecordRead(Pointer Vcb, HexInt32 BaseFileId, HexInt32 FileId, Boolean CacheHit)		MftRecordRead	MftRecordRead	Informational		
+Microsoft-Windows-Ntfs	208	0	MftRecordWrite(Pointer Vcb, HexInt32 BaseFileId, HexInt32 FileId)		MftRecordWrite	MftRecordWrite	Informational		
+Microsoft-Windows-Ntfs	210	0	TPMapBitNotSet(UnicodeString VolumeId, UnicodeString DeviceName, HexInt64 StartingLCN, HexInt64 EndingLCN)		TPMapBitNotSet	TPMapBitNotSet	Warning		
+Microsoft-Windows-Ntfs	211	0	TPMapBitNotSet211(UnicodeString VolumeId, UnicodeString DeviceName, HexInt64 StartingLCN, HexInt64 EndingLCN)		TPMapBitNotSet	TPMapBitNotSet	Error		
+Microsoft-Windows-Ntfs	230	0	WorkItem(Pointer WorkItem, UInt32 Reason)		WorkItem	WorkItem	Informational		
+Microsoft-Windows-Ntfs	231	0	WorkItem231(Pointer WorkItem, UInt32 Reason, HexInt32 Error)		WorkItem	WorkItem	Error		
+Microsoft-Windows-Ntfs	232	0	WorkItemStart(Pointer WorkItem, UInt32 Reason)	Start	WorkItem	WorkItem	Informational		
+Microsoft-Windows-Ntfs	233	0	WorkItemStop(Pointer WorkItem, UInt32 Reason)	Stop	WorkItem	WorkItem	Informational		
+Microsoft-Windows-Ntfs	240	0	FileMetadataOptimizationStart(GUID VolumeGuid, UInt32 VolumeNameLength, UnicodeString VolumeName, UInt64 FileReference)	Start	FileMetadataOptimization	FileMetadataOptimization	Informational		
+Microsoft-Windows-Ntfs	241	0	FileMetadataOptimizationStop(GUID VolumeGuid, UInt32 VolumeNameLength, UnicodeString VolumeName, UInt64 FileReference)	Stop	FileMetadataOptimization	FileMetadataOptimization	Informational		
+Microsoft-Windows-Ntfs	300	0	VolumeDismountStart(Pointer Vcb, UInt16 DeviceNameLength, UnicodeString DeviceName, GUID VolumeGuid, UInt16 VolumeNameLength, UnicodeString VolumeName, UInt16 VolumeLabelLength, UnicodeString VolumeLabel)	Start	VolumeMountDismount	VolumeDismount	Informational		
+Microsoft-Windows-Ntfs	301	0	VolumeDismountSuspend()	Suspend	VolumeMountDismount	VolumeDismount	Informational		
+Microsoft-Windows-Ntfs	302	0	VolumeDismountResume()	Resume	VolumeMountDismount	VolumeDismount	Informational		
+Microsoft-Windows-Ntfs	303	0	VolumeDismountStop(Pointer Vcb, UInt16 DeviceNameLength, UnicodeString DeviceName, GUID VolumeGuid, UInt16 VolumeNameLength, UnicodeString VolumeName, UInt16 VolumeLabelLength, UnicodeString VolumeLabel)	Stop	VolumeMountDismount	VolumeDismount	Informational		
+Microsoft-Windows-Ntfs	304	0	VolumeDismountStop304(HexInt32 Status)	Stop	VolumeMountDismount	VolumeDismount	Error		
+Microsoft-Windows-Ntfs	305	0	VolumeMountStop(HexInt32 Error, GUID VolumeGuid, UInt16 VolumeNameLength, UnicodeString VolumeName)	Stop	VolumeMountDismount	VolumeMount	Error		
+Microsoft-Windows-Ntfs	401	0	EfsTest(Int64 VolumeSerialNumber, UInt64 FileReference, UInt32 FileNameLength, UnicodeString FileName)		EfsTest	EfsTest	Informational		
+Microsoft-Windows-Ntfs	402	0	EfsTest402(Int64 VolumeSerialNumber, UInt64 FileReference, UInt32 FileNameLength, UnicodeString FileName)		EfsTest	EfsTest	Informational		
+Microsoft-Windows-Ntfs	403	0	EfsTest403(Int64 VolumeSerialNumber, UInt64 FileReference, UInt32 FileNameLength, UnicodeString FileName)		EfsTest	EfsTest	Informational		
+Microsoft-Windows-Ntfs	404	0	EfsTest404(Int64 VolumeSerialNumber, UInt64 FileReference, UInt32 FileNameLength, UnicodeString FileName)		EfsTest	EfsTest	Informational		
+Microsoft-Windows-Ntfs	405	0	EfsTest405(Int64 VolumeSerialNumber, UInt64 FileReference, UInt32 FileNameLength, UnicodeString FileName)		EfsTest	EfsTest	Informational		
+Microsoft-Windows-Ntfs	406	0	EfsTest406(Int64 VolumeSerialNumber, UInt64 FileReference, UInt32 FileNameLength, UnicodeString FileName)		EfsTest	EfsTest	Informational		

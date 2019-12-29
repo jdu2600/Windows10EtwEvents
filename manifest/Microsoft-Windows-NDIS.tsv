@@ -1,0 +1,150 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-NDIS	10000	0	Request(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, Pointer Request, GUID LowerIf)		Request	Request	Informational		
+Microsoft-Windows-NDIS	10001	0	Request10001(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, Pointer Request, GUID LowerIf)		Request	Request	Informational		
+Microsoft-Windows-NDIS	10002	0	PnP(UnicodeString DeviceName)		PnP ut:Global	PnP	Informational		
+Microsoft-Windows-NDIS	10003	0	PnP10003(UInt32 ErrorCode, UInt32 Location, UInt32 Context)		PnP LwtDiagnostic ut:Global	PnP	Error		
+Microsoft-Windows-NDIS	10004	0	PnP10004(UnicodeString DeviceName)		PnP	PnP	Informational		
+Microsoft-Windows-NDIS	10005	0	Init(UInt32 ErrorCode, UInt32 Location, UInt32 Context)		Init	Init	Error		
+Microsoft-Windows-NDIS	10006	0	Bind(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, UnicodeString ProtocolName, HexInt32 Status)		Bind	Bind	Informational		
+Microsoft-Windows-NDIS	10007	0	Init10007(GUID IfGuid, UInt32 IfIndex, UInt64 IfLuid, UInt32 ReferenceContext)		Init LwtDiagnostic	Init	Warning		
+Microsoft-Windows-NDIS	10008	0	Request10008(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, Pointer Request, HexInt32 Status, UInt32 Location)		Request	Request	Informational		
+Microsoft-Windows-NDIS	10009	0	Power(GUID IfGuid, UInt32 IfIndex, UInt64 IfLuid, UInt32 ReferenceContext)		Power	Power	Informational		
+Microsoft-Windows-NDIS	10010	0	Request10010(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, Pointer Request, HexInt32 Status, UInt32 Location)		Request	Request	Informational		
+Microsoft-Windows-NDIS	10011	0	WMI(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, UInt32 Error, UInt32 Location, UInt32 Context)		WMI	WMI	Error		
+Microsoft-Windows-NDIS	10012	0	Interface(UInt32 CompartmentId)		Interface	Interface	Informational		
+Microsoft-Windows-NDIS	10013	0	Interface10013(UInt32 IfType, UInt64 NetLuid, UInt32 StructType, UInt32 ParameterLen, UInt32 ParameterOffset)		Interface	Interface	Informational		
+Microsoft-Windows-NDIS	10014	0	Interface10014(UInt32 IfType, UInt64 NetLuid)		Interface	Interface	Informational		
+Microsoft-Windows-NDIS	10015	0	Interface10015(GUID NetworkId)		Interface	Interface	Informational		
+Microsoft-Windows-NDIS	10016	0	Request10016(GUID IfGuid, UInt32 IfIndex, UInt64 IfLuid, UInt32 ReferenceContext)		Request	Request	Verbose		
+Microsoft-Windows-NDIS	10017	0	Bind10017(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, UnicodeString ProtocolName)		Bind	Bind	Informational		
+Microsoft-Windows-NDIS	10018	0	Request10018(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, Pointer Request, HexInt32 Status, UInt32 Location)		Request	Request	Verbose		
+Microsoft-Windows-NDIS	10019	0	Power10019(GUID IfGuid, UInt32 IfIndex, UInt64 IfLuid, UInt32 ReferenceContext)		Power	Power	Informational		
+Microsoft-Windows-NDIS	10020	0	Port(GUID IfGuid, UInt32 IfIndex, UInt64 IfLuid, UInt32 ReferenceContext)		Port	Port	Informational		
+Microsoft-Windows-NDIS	10021	0	Port10021(GUID IfGuid, UInt32 IfIndex, UInt64 IfLuid, UInt32 ReferenceContext)		Port	Port	Informational		
+Microsoft-Windows-NDIS	10022	0	Interface10022(UInt32 ErrorCode, UInt32 Location, UInt32 Context)		Interface	Interface	Error		
+Microsoft-Windows-NDIS	10023	0	Power10023(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, HexInt32 Type, HexInt32 State)		Power	Power	Informational		
+Microsoft-Windows-NDIS	10024	0	PnP10024(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, UInt32 IrpMinorFunction)		PnP	PnP	Informational		
+Microsoft-Windows-NDIS	10025	0	WMI10025(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, UInt32 IrpMinorFunction)		WMI	WMI	Informational		
+Microsoft-Windows-NDIS	10026	0	WMI10026(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, UInt32 Error, UInt32 Location, UInt32 Context)		WMI	WMI	Error		
+Microsoft-Windows-NDIS	10027	0	Init10027(UInt32 ErrorCode, UInt32 Location, UInt32 Context)		Init	Init	Error		
+Microsoft-Windows-NDIS	10028	0	PnP10028(GUID MiniportIfGuid, UInt32 MiniportIfIndex, UInt64 MiniportNetLuid, GUID FilterIfGuid, UInt32 FilterIfIndex, UInt64 FilterNetLuid, HexInt32 OriginalMediaType, HexInt32 NewMediaType)		PnP	PnP	Informational		
+Microsoft-Windows-NDIS	10029	0	Init10029(UnicodeString FilterName, UInt32 Reason)		Init ut:Global	Init	Error		
+Microsoft-Windows-NDIS	10030	0	Init10030(UInt32 ErrorCode, UInt32 Location, UInt32 Context)		Init	Init	Error		
+Microsoft-Windows-NDIS	10031	0	WMI10031(GUID IfGuid, UInt32 IfIndex, UInt64 IfLuid, UInt32 ReferenceContext)		WMI	WMI	Error		
+Microsoft-Windows-NDIS	10032	0	Init10032(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, UInt32 Reason, HexInt32 State)		Init LwtDiagnostic	Init	Informational		
+Microsoft-Windows-NDIS	10033	0	Init10033(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, UInt32 Reason, HexInt32 State)		Init LwtDiagnostic	Init	Error		
+Microsoft-Windows-NDIS	10034	0	PnP10034(UInt32 ErrorCode, UInt32 Location, UInt32 Context, UnicodeString DeviceName)		PnP	PnP	Error		
+Microsoft-Windows-NDIS	10035	0	Power10035(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, HexInt32 Type, HexInt32 State)		Power	Power	Error		
+Microsoft-Windows-NDIS	10037	0	Bind10037(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, UInt32 Error, UInt32 Location, UInt32 Context)		Bind	Bind	Error		
+Microsoft-Windows-NDIS	10038	0	WMI10038(UInt32 ErrorCode, UInt32 Location, UInt32 Context)		WMI	WMI	Error		
+Microsoft-Windows-NDIS	10039	0	Power10039(UInt32 ErrorCode, UInt32 Location, UInt32 Context)		Power	Power	Error		
+Microsoft-Windows-NDIS	10040	0	PnP10040(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, HexInt32 StateFlags)		PnP	PnP	Informational		
+Microsoft-Windows-NDIS	10041	0	PnP10041(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, HexInt32 StateFlags)		PnP	PnP	Informational		
+Microsoft-Windows-NDIS	10042	0	Bind10042(UInt32 ErrorCode, UInt32 Location, UInt32 Context)		Bind	Bind	Error		
+Microsoft-Windows-NDIS	10043	0	WorkItem(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, UInt32 Action)		WorkItem	WorkItem	Informational		
+Microsoft-Windows-NDIS	10044	0	Power10044(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, UInt32 Error, UInt32 Location, UInt32 Context)		Power LwtDiagnostic	Power	Error		
+Microsoft-Windows-NDIS	10045	0	PnP10045(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, Binary MacAddress)		PnP	PnP	Informational		
+Microsoft-Windows-NDIS	10046	0	Power10046(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, HexInt32 Type, HexInt32 State)		Power	Power	Informational		
+Microsoft-Windows-NDIS	10047	0	Power10047(GUID IfGuid, UInt32 IfIndex, UInt64 IfLuid, UInt32 ReferenceContext)		Power	Power	Informational		
+Microsoft-Windows-NDIS	10048	0	Power10048(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, HexInt32 SystemState, HexInt32 DeviceState)		Power LwtDiagnostic	Power	Informational		
+Microsoft-Windows-NDIS	10049	0	Power10049(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, HexInt32 Type, HexInt32 State)		Power LwtDiagnostic	Power	Informational		
+Microsoft-Windows-NDIS	10050	0	Init10050(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, UInt32 Error, UInt32 Location, UInt32 Context)		Init	Init	Error		
+Microsoft-Windows-NDIS	10052	0	PnP10052(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, UInt32 Oid, UInt32 Status, UInt32 Location)		PnP	PnP	Warning		
+Microsoft-Windows-NDIS	10053	0	Bind10053(GUID IfGuid, UInt32 IfIndex, UInt64 IfLuid, UInt32 ReferenceContext)		Bind	Bind	Informational		
+Microsoft-Windows-NDIS	10054	0	Port10054(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, UInt32 Reason, UInt32 Port)		Port LwtDiagnostic	Port	Error		
+Microsoft-Windows-NDIS	10055	0	Power10055(GUID IfGuid, UInt32 IfIndex, UInt64 IfLuid, UInt32 ReferenceContext)		Power	Power	Informational		
+Microsoft-Windows-NDIS	10056	0	Power10056(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, UInt32 Error, UInt32 Location, UInt32 Context)		Power	Power	Error		
+Microsoft-Windows-NDIS	10057	0	Power10057(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, UInt32 Error, UInt32 Location, UInt32 Context)		Power	Power	Error		
+Microsoft-Windows-NDIS	10058	0	Power10058(GUID IfGuid, UInt32 IfIndex, UInt64 IfLuid, UInt32 ReferenceContext)		Power LwtDiagnostic	Power	Informational		
+Microsoft-Windows-NDIS	10059	0	Power10059(GUID IfGuid, UInt32 IfIndex, UInt64 IfLuid, UInt32 ReferenceContext)		Power	Power	Informational		
+Microsoft-Windows-NDIS	10060	0	Power10060(UInt32 Context, UInt32 State)		Power	Power	Informational		
+Microsoft-Windows-NDIS	10061	0	Power10061(GUID IfGuid, UInt32 IfIndex, UInt64 IfLuid, UInt32 ReferenceContext)		Power	Power	Informational		
+Microsoft-Windows-NDIS	10062	0	Power10062(GUID IfGuid, UInt32 IfIndex, UInt64 IfLuid, UInt32 ReferenceContext)		Power	Power	Informational		
+Microsoft-Windows-NDIS	10063	0	Power10063(GUID IfGuid, UInt32 IfIndex, UInt64 IfLuid, UInt32 ReferenceContext)		Power	Power	Informational		
+Microsoft-Windows-NDIS	10064	0	Power10064(GUID IfGuid, UInt32 IfIndex, UInt64 IfLuid, UInt32 ReferenceContext)		Power	Power	Informational		
+Microsoft-Windows-NDIS	10065	0	Power10065(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, HexInt32 SystemState, HexInt32 DeviceState)		Power	Power	Informational		
+Microsoft-Windows-NDIS	10066	0	Power10066(GUID IfGuid, UInt32 IfIndex, UInt64 IfLuid, UInt32 ReferenceContext)		Power	Power	Informational		
+Microsoft-Windows-NDIS	10067	0	Power10067(GUID IfGuid, UInt32 IfIndex, UInt64 IfLuid, UInt32 ReferenceContext)		Power	Power	Informational		
+Microsoft-Windows-NDIS	10068	0	Power10068(GUID IfGuid, UInt32 IfIndex, UInt64 IfLuid, UInt32 ReferenceContext)		Power	Power	Informational		
+Microsoft-Windows-NDIS	10069	0	Bind10069(UInt32 Layer, UnicodeString ProtocolName, UnicodeString DeviceName)		Bind ut:Global	Bind	Informational		
+Microsoft-Windows-NDIS	10070	0	Bind10070(UInt32 Layer, UnicodeString ProtocolName, UnicodeString DeviceName)		Bind ut:Global	Bind	Informational		
+Microsoft-Windows-NDIS	10071	0	PnP10071(GUID IfGuid, UInt32 IfIndex, UInt64 IfLuid, UInt32 ReferenceContext)		PnP	PnP	Error		
+Microsoft-Windows-NDIS	10072	0	Power10072(GUID IfGuid, UInt32 IfIndex, UInt64 IfLuid, UInt32 ReferenceContext)		Power	Power	Informational		
+Microsoft-Windows-NDIS	10073	0	Power10073(GUID IfGuid, UInt32 IfIndex, UInt64 IfLuid, UInt32 ReferenceContext)		Power	Power	Informational		
+Microsoft-Windows-NDIS	10074	0	Power10074(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, UInt32 Error, UInt32 Oid, Boolean Set)		Power	Power	Informational		
+Microsoft-Windows-NDIS	10075	0	Bind10075(UInt32 ErrorCode, UInt32 Location, UInt32 Context)		Bind	Bind	Error		
+Microsoft-Windows-NDIS	10076	0	Init10076(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, UInt32 Error, UInt32 Location, UInt32 Context)		Init	Init	Error		
+Microsoft-Windows-NDIS	10077	0	Init10077(UInt32 ErrorCode, UInt32 Location, UInt32 Context)		Init	Init	Error		
+Microsoft-Windows-NDIS	10078	0	SendM(Pointer OpenRef, Pointer Packet)		SendM	SendM	Verbose		
+Microsoft-Windows-NDIS	10079	0	Request10079(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, Boolean CompletedAtOpen, Pointer Open, Pointer Request)		Request	Request	Informational		
+Microsoft-Windows-NDIS	10080	0	Request10080(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, UInt32 Error, UInt32 Location, UInt32 Context)		Request	Request	Error		
+Microsoft-Windows-NDIS	10081	0	Request10081(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, UInt32 Error, UInt32 Location, UInt32 Context)		Request	Request	Error		
+Microsoft-Windows-NDIS	10082	0	Request10082(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, UInt32 Error, UInt32 Location, UInt32 Context)		Request	Request	Error		
+Microsoft-Windows-NDIS	10083	0	Request10083(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, UInt32 Error, UInt32 Location, UInt32 Context)		Request	Request	Error		
+Microsoft-Windows-NDIS	10084	0	Request10084(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, Pointer Open, HexInt32 OriginalMediaType, HexInt32 ExpectedMediaType)		Request	Request	Error		
+Microsoft-Windows-NDIS	10085	0	Request10085(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, Pointer Open, HexInt32 OriginalMediaType, HexInt32 ExpectedMediaType)		Request	Request	Error		
+Microsoft-Windows-NDIS	10086	0	Request10086(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, UInt32 Error, UInt32 Location, UInt32 Context)		Request	Request	Error		
+Microsoft-Windows-NDIS	10087	0	Power10087(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, HexInt32 Type, HexInt32 State)		Power	Power	Informational		
+Microsoft-Windows-NDIS	10088	0	PnP10088(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, UnicodeString Transport, HexInt32 PnPEvent, HexInt32 Status)		PnP	PnP	Error		
+Microsoft-Windows-NDIS	10089	0	PnP10089(GUID IfGuid, UInt32 IfIndex, UInt64 IfLuid, UInt32 ReferenceContext)		PnP	PnP	Warning		
+Microsoft-Windows-NDIS	10090	0	Protocol(UnicodeString ProtocolName, UInt32 Reason)		Protocol	Protocol	Error		
+Microsoft-Windows-NDIS	10091	0	Power10091(GUID IfGuid, UInt32 IfIndex, UInt64 IfLuid, UInt32 ReferenceContext)		Power	Power	Informational		
+Microsoft-Windows-NDIS	10092	0	Power10092(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, UInt32 Error, UInt32 Location, UInt32 Context)		Power	Power	Error		
+Microsoft-Windows-NDIS	10093	0	Power10093(GUID IfGuid, UInt32 IfIndex, UInt64 IfLuid, UInt32 ReferenceContext)		Power	Power	Informational		
+Microsoft-Windows-NDIS	10094	0	Log(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, UnicodeString AdapterName, UInt32 Error, UInt32 ErrorValueCount, UInt32 ErrorValues)		Log	Log	Error		
+Microsoft-Windows-NDIS	10095	0	Request10095(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, Pointer Request)		Request	Request	Informational		
+Microsoft-Windows-NDIS	10096	0	Port10096(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, UInt32 Reason, UInt32 Port)		Port	Port	Error		
+Microsoft-Windows-NDIS	10097	0	Power10097(GUID IfGuid, UInt32 IfIndex, UInt64 IfLuid, UInt32 ReferenceContext)		Power	Power	Informational		
+Microsoft-Windows-NDIS	10098	0	Power10098(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, UInt32 Error, UInt32 Location, UInt32 Context)		Power	Power	Informational		
+Microsoft-Windows-NDIS	10099	0	Power10099(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, UInt32 Error, UInt32 Location, UInt32 Context)		Power LwtDiagnostic	Power	Error		
+Microsoft-Windows-NDIS	10100	0	Power10100(GUID IfGuid, UInt32 IfIndex, UInt64 IfLuid, UInt32 ReferenceContext)		Power	Power	Error		
+Microsoft-Windows-NDIS	10101	0	Request10101(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, Pointer Request, Boolean CompleteRequest, HexInt32 Status, UInt32 Oid)		Request	Request	Verbose		
+Microsoft-Windows-NDIS	10102	0	Request10102(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, Pointer Request, HexInt32 Status, UInt32 Location)		Request	Request	Verbose		
+Microsoft-Windows-NDIS	10103	0	WorkItem10103(GUID IfGuid, UInt8 State, UInt32 Location)		WorkItem	WorkItem	Informational		
+Microsoft-Windows-NDIS	10104	0	Indication(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, HexInt32 Flags, HexInt32 PnPFlags, UInt32 DevicePowerState)		Indication LwtDiagnostic	Indication	Informational		
+Microsoft-Windows-NDIS	10105	0	Indication10105(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, HexInt32 Flags, HexInt32 PnPFlags, UInt32 DevicePowerState)		Indication LwtDiagnostic	Indication	Informational		
+Microsoft-Windows-NDIS	10106	0	Indication10106(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, UInt32 OperationalStatus, UInt32 OperationalStatusFlags)		Indication	Indication	Informational		
+Microsoft-Windows-NDIS	10107	0	Indication10107(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, UInt32 OperationalStatus, UInt32 OperationalStatusFlags)		Indication	Indication	Informational		
+Microsoft-Windows-NDIS	10108	0	Indication10108(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, UInt32 ChangeType)		Indication	Indication	Informational		
+Microsoft-Windows-NDIS	10109	0	Request10109(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, UInt32 RequestType, HexInt32 Status, UInt32 Location)		Request	Request	Informational		
+Microsoft-Windows-NDIS	10110	0	Request10110(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, UInt32 RequestType, HexInt32 Status, UInt32 Location)		Request	Request	Informational		
+Microsoft-Windows-NDIS	10111	0	Request10111(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, UInt32 RequestType, HexInt32 Status, UInt32 Location)		Request	Request	Verbose		
+Microsoft-Windows-NDIS	10112	0	Request10112(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, UInt32 RequestType, HexInt32 Status, UInt32 Location)		Request	Request	Verbose		
+Microsoft-Windows-NDIS	10113	0	Request10113(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, UInt32 RequestType)		Request	Request	Informational		
+Microsoft-Windows-NDIS	10114	0	Request10114(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, UInt32 RequestType, GUID LowerIf)		Request	Request	Informational		
+Microsoft-Windows-NDIS	10115	0	Request10115(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid, UInt32 RequestType, GUID LowerIf)		Request	Request	Informational		
+Microsoft-Windows-NDIS	10200	0	ReceiveThrottling(UInt32 NetLuidIndex, UInt32 FunctionType)		ReceiveThrottling	ReceiveThrottling	Informational		
+Microsoft-Windows-NDIS	10201	0	ReceiveThrottling10201(UInt32 NetLuidIndex, UInt32 FunctionType, UInt64 Duration)		ReceiveThrottling	ReceiveThrottling	Informational		
+Microsoft-Windows-NDIS	10202	0	ReceiveThrottling10202(UInt32 NetLuidIndex)		ReceiveThrottling	ReceiveThrottling	Informational		
+Microsoft-Windows-NDIS	10203	0	ReceiveThrottling10203(UInt32 NetLuidIndex, UInt64 Duration, UInt32 NumberOfNbls)		ReceiveThrottling	ReceiveThrottling	Informational		
+Microsoft-Windows-NDIS	10204	0	ReceiveThrottling10204(UInt32 NetLuidIndex, UInt32 CurrentProcessorIndex, UInt32 NumberOfNetBufferLists, UInt32 ProcessingDurationMilliseconds, UInt32 PreviousLimit, UInt32 NewLimit, UInt32 IndividualMeasurement, UInt32 CummulativeMeasurement)		ReceiveThrottling	ReceiveThrottling	Informational		
+Microsoft-Windows-NDIS	10300	0	Power10300(UInt32 NetLuidIndex)		Power	Power	Informational		
+Microsoft-Windows-NDIS	10301	0	Power10301(UInt32 NetLuidIndex, UInt32 NdisStatusCode)		Power	Power	Informational		
+Microsoft-Windows-NDIS	10302	0	Power10302(UInt32 NetLuidIndex, UInt32 ResumeReason)		Power	Power	Informational		
+Microsoft-Windows-NDIS	10303	0	Power10303(UInt64 InterfaceLuid, UInt32 ComponentId, UInt32 ComponentRefCount, UInt32 InterfaceRefCount)		Power LwtDiagnostic	Power	Informational		
+Microsoft-Windows-NDIS	10304	0	Power10304(UInt64 InterfaceLuid, UInt32 ComponentId, UInt32 ComponentRefCount, UInt32 InterfaceRefCount)		Power LwtDiagnostic	Power	Informational		
+Microsoft-Windows-NDIS	10305	0	Power10305(UInt64 IfLuid, UInt32 WakeReason)		Power LwtDiagnostic	Power	Informational		
+Microsoft-Windows-NDIS	10306	0	Power10306(GUID IfGuid, UInt32 IfIndex, UInt64 IfLuid)		Power	Power	Informational		
+Microsoft-Windows-NDIS	10307	0	Power10307(GUID IfGuid, UInt32 IfIndex, UInt64 IfLuid, UInt32 Status)		Power LwtDiagnostic	Power	Informational		
+Microsoft-Windows-NDIS	10308	0	Power10308(GUID IfGuid, UInt32 IfIndex, UInt64 IfLuid)		Power	Power	Informational		
+Microsoft-Windows-NDIS	10309	0	Power10309(GUID IfGuid, UInt32 IfIndex, UInt64 IfLuid, UInt32 Status)		Power LwtDiagnostic	Power	Informational		
+Microsoft-Windows-NDIS	10310	0	Power10310(GUID IfGuid, UInt32 IfIndex, UInt64 IfLuid)		Power LwtDiagnostic	Power	Informational		
+Microsoft-Windows-NDIS	10311	0	PnP10311(GUID IfGuid, UInt32 IfIndex, UInt64 IfLuid, UnicodeString AdapterName, UInt32 MiniportEventEnum)		PnP Init Power LwtDiagnostic	PnP	Informational		
+Microsoft-Windows-NDIS	10312	0	WorkItem10312(GUID IfGuid, UInt8 State, UInt32 Location, GUID MiniportIfGuid, UnicodeString MiniportAdapterName, UnicodeString FilterInstanceName, UnicodeString FilterFriendlyName)		WorkItem	WorkItem	Informational		
+Microsoft-Windows-NDIS	10313	0	Power10313()		Power LwtDiagnostic	Power	Informational		
+Microsoft-Windows-NDIS	10314	0	Power10314(UInt64 Duration)		Power LwtDiagnostic	Power	Informational		
+Microsoft-Windows-NDIS	10315	0	Power10315(UInt32 IfIndex, UInt64 IfLuid, UInt64 ActiveTime, UInt32 PowerTransitionCount)		Power LwtDiagnostic	Power	Informational		
+Microsoft-Windows-NDIS	10316	0	Power10316(UInt64 InterfaceLuid, UInt32 ComponentId, UInt64 ActiveTime)		Power LwtDiagnostic	Power	Informational		
+Microsoft-Windows-NDIS	10317	0	PnP10317(GUID IfGuid, UInt32 IfIndex, UInt64 IfLuid, UnicodeString AdapterName, UInt32 MiniportEventEnum)		PnP Init Power LwtDiagnostic	PnP	Error		
+Microsoft-Windows-NDIS	10320	0	RefcountrundownStart(GUID IfGuid, UInt32 IfIndex, UInt64 NetLuid)	Start	Power LwtDiagnostic	Refcountrundown	Informational		
+Microsoft-Windows-NDIS	10321	0	Refcountrundown(UInt64 NetLuid, UInt32 ComponentId, UInt32 RefcountValue)		Power LwtDiagnostic	Refcountrundown	Informational		
+Microsoft-Windows-NDIS	10322	0	RefcountrundownStop(UInt64 NetLuid, UInt32 StopFlags)	Stop	Power LwtDiagnostic	Refcountrundown	Informational		
+Microsoft-Windows-NDIS	10323	0	Power10323(UInt32 IfIndex, UInt64 IfLuid, UnicodeString PowerStateFrom, UnicodeString PowerStateTo, UInt64 IfInUnicastPackets, UInt64 IfOutUnicastPackets, UInt64 IfInMulticastPackets, UInt64 IfOutMulticastPackets, UInt64 IfInBroadcastPackets, UInt64 IfOutBroadcastPackets)		Power LwtDiagnostic	Power	Informational		
+Microsoft-Windows-NDIS	10400	0	task_0(GUID IfGuid, UInt32 IfIndex, UInt64 IfLuid, UnicodeString AdapterName, UInt32 ResetReason, UInt32 ResetCount)			task_0	Warning		
+Microsoft-Windows-NDIS	60001	0	task_060001(UInt32 ErrorCode, UInt32 Location, UInt32 Context)			task_0	Error		
+Microsoft-Windows-NDIS	60002	0	task_060002(UInt32 WarningCode, UInt32 Location, UInt32 Context)			task_0	Warning		
+Microsoft-Windows-NDIS	60003	0	task_060003(UInt8 NextState, UInt32 Context)		keyword_200000000000	task_0	Informational		
+Microsoft-Windows-NDIS	60004	0	task_060004(UInt32 Context, UInt32 UpdateReasonCode)			task_0	Informational		
+Microsoft-Windows-NDIS	60101	0	task_060101(UInt32 SourceAddress, UInt32 SourcePort, UInt32 DestinationAddress, UInt32 DestinationPort, UInt32 Protocol, UInt32 ReferenceContext)			task_0	Informational		
+Microsoft-Windows-NDIS	60102	0	task_060102(Binary SourceAddress, UInt32 SourcePort, Binary DestinationAddress, UInt32 DestinationPort, UInt32 Protocol, UInt32 ReferenceContext)			task_0	Informational		
+Microsoft-Windows-NDIS	60103	0	task_060103(GUID IfGuid, UInt32 IfIndex, UInt64 IfLuid, UInt32 ReferenceContext)			task_0	Informational		

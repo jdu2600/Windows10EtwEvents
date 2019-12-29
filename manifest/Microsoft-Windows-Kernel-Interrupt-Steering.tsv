@@ -1,0 +1,9 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Kernel-Interrupt-Steering	1	0	InterruptSteeringMaskRundown(UInt32 LoadPercent, UInt32 GsivCount, UInt32 MaskCount, UInt16 GroupCount, Pointer Mask)		IntSteer	InterruptSteeringMaskRundown	Informational		
+Microsoft-Windows-Kernel-Interrupt-Steering	2	0	InterruptSteeringMaskChange(UInt32 LoadPercent, UInt32 GsivCount, UInt32 MaskCount, UInt16 GroupCount, Pointer Mask)		IntSteer	InterruptSteeringMaskChange	Informational		
+Microsoft-Windows-Kernel-Interrupt-Steering	3	0	InterruptSteeringStateRundown(UInt32 Gsiv, UInt32 NewTarget, UInt32 OldTarget, UInt32 Vector, Pointer ServiceRoutine, UInt32 IsrLoad, UInt32 DpcLoad)		IntSteer	InterruptSteeringStateRundown	Informational		
+Microsoft-Windows-Kernel-Interrupt-Steering	4	0	InterruptSteeringStateConnect(UInt32 Gsiv, UInt32 NewTarget, UInt32 OldTarget, UInt32 Vector, Pointer ServiceRoutine, UInt32 IsrLoad, UInt32 DpcLoad)		IntSteer	InterruptSteeringStateConnect	Informational		
+Microsoft-Windows-Kernel-Interrupt-Steering	5	0	InterruptSteeringStateDisconnect(UInt32 Gsiv, UInt32 NewTarget, UInt32 OldTarget, UInt32 Vector, Pointer ServiceRoutine, UInt32 IsrLoad, UInt32 DpcLoad)		IntSteer	InterruptSteeringStateDisconnect	Informational		
+Microsoft-Windows-Kernel-Interrupt-Steering	6	0	InterruptSteeringStateRetarget(UInt32 Gsiv, UInt32 NewTarget, UInt32 OldTarget, UInt32 Vector, Pointer ServiceRoutine, UInt32 IsrLoad, UInt32 DpcLoad)		IntSteer	InterruptSteeringStateRetarget	Informational		
+Microsoft-Windows-Kernel-Interrupt-Steering	7	0	InterruptSteeringProcRundown(UInt32 ProcIndex, UInt32 DeviceInterrupts)		IntSteer	InterruptSteeringProcRundown	Informational		
+Microsoft-Windows-Kernel-Interrupt-Steering	8	0	InterruptSteeringProcChange(UInt32 ProcIndex, UInt32 DeviceInterrupts)		IntSteer	InterruptSteeringProcChange	Informational		

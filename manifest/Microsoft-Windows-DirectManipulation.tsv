@@ -1,0 +1,58 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-DirectManipulation	26	0	Manipulation_SetInputStart(UInt32 PointerId, UInt32 ContactId)	Start		Manipulation_SetInput	Informational		
+Microsoft-Windows-DirectManipulation	27	0	Manipulation_SetInputStop(UInt32 PointerId, UInt32 ContactId)	Stop		Manipulation_SetInput	Informational		
+Microsoft-Windows-DirectManipulation	28	0	Manipulation_SetContactStart(UInt32 PointerId, Pointer RegionPointer)	Start		Manipulation_SetContact	Informational		
+Microsoft-Windows-DirectManipulation	29	0	Manipulation_SetContactStop(UInt32 PointerId, Pointer RegionPointer)	Stop		Manipulation_SetContact	Informational		
+Microsoft-Windows-DirectManipulation	30	0	Manipulation_EnumTargetsStart(UInt32 PointerId, UInt32 ContactId)	Start		Manipulation_EnumTargets	Informational		
+Microsoft-Windows-DirectManipulation	31	0	Manipulation_EnumTargetsStop(UInt32 PointerId, UInt32 ContactId)	Stop		Manipulation_EnumTargets	Informational		
+Microsoft-Windows-DirectManipulation	32	0	Manipulation_ProcessInput_RegionUpdateStart(UInt32 PointerId, Pointer RegionPointer)	Start		Manipulation_ProcessInput_RegionUpdate	Informational		
+Microsoft-Windows-DirectManipulation	33	0	Manipulation_ProcessInput_RegionUpdateStop()	Stop		Manipulation_ProcessInput_RegionUpdate	Informational		
+Microsoft-Windows-DirectManipulation	34	0	Manipulation_ProcessInput_MotionUpdate(Pointer MotionPointer, Pointer RegionPointer, Pointer LayerPointer)			Manipulation_ProcessInput_MotionUpdate	Informational		
+Microsoft-Windows-DirectManipulation	36	0	Manipulation_ProcessInputInteractionStart(UInt32 PointerId, UInt32 ContactId)	Start		Manipulation_ProcessInputInteraction	Informational		
+Microsoft-Windows-DirectManipulation	37	0	Manipulation_ProcessInputInteractionStop()	Stop		Manipulation_ProcessInputInteraction	Informational		
+Microsoft-Windows-DirectManipulation	38	0	Manipulation_LayerCommit(Pointer LayerPointer)			Manipulation_LayerCommit	Informational		
+Microsoft-Windows-DirectManipulation	39	0	Manipulation_RunningStart(Pointer ViewportPointer)	Start		Manipulation_Running	Informational		
+Microsoft-Windows-DirectManipulation	40	0	Manipulation_RunningStop(Pointer ViewportPointer)	Stop		Manipulation_Running	Informational		
+Microsoft-Windows-DirectManipulation	41	0	Manipulation_InertiaStart(Pointer ViewportPointer)	Start		Manipulation_Inertia	Informational		
+Microsoft-Windows-DirectManipulation	42	0	Manipulation_InertiaStop(Pointer ViewportPointer)	Stop		Manipulation_Inertia	Informational		
+Microsoft-Windows-DirectManipulation	43	0	Manipulation_DManipTrigger(UInt32 DManipLatency, UnicodeString ProcessName)			Manipulation_DManipTrigger	Informational		
+Microsoft-Windows-DirectManipulation	44	0	Manipulation_UpdateTransform(Pointer ContentPointer, Int32 TransformType, Float xPosition, Float yPosition, Float zPosition, UInt64 PredictedTimeGap)			Manipulation_UpdateTransform	Informational		
+Microsoft-Windows-DirectManipulation	45	0	Manipulation_ViewportAbandonStart(Pointer ViewportPointer)	Start		Manipulation_ViewportAbandon	Informational		
+Microsoft-Windows-DirectManipulation	46	0	Manipulation_ViewportAbandonStop(Pointer ViewportPointer)	Stop		Manipulation_ViewportAbandon	Informational		
+Microsoft-Windows-DirectManipulation	47	0	Manipulation_DCompCompositorOnViewportStatusChangedStart(Pointer CompositorPointer, Pointer ViewportPointer)	Start		Manipulation_DCompCompositorOnViewportStatusChanged	Informational		
+Microsoft-Windows-DirectManipulation	48	0	Manipulation_DCompCompositorOnViewportStatusChangedStop(Pointer CompositorPointer, Pointer ViewportPointer)	Stop		Manipulation_DCompCompositorOnViewportStatusChanged	Informational		
+Microsoft-Windows-DirectManipulation	49	0	Manipulation_DCompCompositorOnViewportUpdatedStart(Pointer CompositorPointer, Pointer ViewportPointer)	Start		Manipulation_DCompCompositorOnViewportUpdated	Informational		
+Microsoft-Windows-DirectManipulation	50	0	Manipulation_DCompCompositorOnViewportUpdatedStop(Pointer CompositorPointer, Pointer ViewportPointer)	Stop		Manipulation_DCompCompositorOnViewportUpdated	Informational		
+Microsoft-Windows-DirectManipulation	51	0	Manipulation_DCompCompositorOnContentUpdatedStart(Pointer CompositorPointer, Pointer ContentPointer)	Start		Manipulation_DCompCompositorOnContentUpdated	Informational		
+Microsoft-Windows-DirectManipulation	52	0	Manipulation_DCompCompositorOnContentUpdatedStop(Pointer CompositorPointer, Pointer ContentPointer)	Stop		Manipulation_DCompCompositorOnContentUpdated	Informational		
+Microsoft-Windows-DirectManipulation	53	0	Manipulation_DCompCompositorUpdateStart(Pointer CompositorPointer)	Start		Manipulation_DCompCompositorUpdate	Informational		
+Microsoft-Windows-DirectManipulation	54	0	Manipulation_DCompCompositorUpdateStop(Pointer CompositorPointer)	Stop		Manipulation_DCompCompositorUpdate	Informational		
+Microsoft-Windows-DirectManipulation	55	0	Manipulation_ManagerActivateStart(Pointer ManagerPointer, Pointer hWnd)	Start		Manipulation_ManagerActivate	Informational		
+Microsoft-Windows-DirectManipulation	56	0	Manipulation_ManagerActivateStop(Pointer ManagerPointer, Pointer hWnd)	Stop		Manipulation_ManagerActivate	Informational		
+Microsoft-Windows-DirectManipulation	57	0	Manipulation_ManagerDeactivateStart(Pointer ManagerPointer, Pointer hWnd)	Start		Manipulation_ManagerDeactivate	Informational		
+Microsoft-Windows-DirectManipulation	58	0	Manipulation_ManagerDeactivateStop(Pointer ManagerPointer, Pointer hWnd)	Stop		Manipulation_ManagerDeactivate	Informational		
+Microsoft-Windows-DirectManipulation	59	0	Manipulation_ManagerCreateViewportStart(Pointer ManagerPointer, Pointer FrameInfo, Pointer hWnd, Pointer ViewportPointer, Pointer primaryContentPointer)	Start		Manipulation_ManagerCreateViewport	Informational		
+Microsoft-Windows-DirectManipulation	60	0	Manipulation_ManagerCreateViewportStop(Pointer ManagerPointer, Pointer FrameInfo, Pointer hWnd, Pointer ViewportPointer, Pointer primaryContentPointer)	Stop		Manipulation_ManagerCreateViewport	Informational		
+Microsoft-Windows-DirectManipulation	61	0	Manipulation_ImplicitHitTestStart(UInt32 ContactId)	Start		Manipulation_ImplicitHitTest	Informational		
+Microsoft-Windows-DirectManipulation	62	0	Manipulation_ImplicitHitTestStop(UInt32 ContactId)	Stop		Manipulation_ImplicitHitTest	Informational		
+Microsoft-Windows-DirectManipulation	63	0	Manipulation_ProcessBufferedQueueStart(Int32 MessagesQueuedOrProcessed)	Start		Manipulation_ProcessBufferedQueue	Informational		
+Microsoft-Windows-DirectManipulation	64	0	Manipulation_ProcessBufferedQueueStop(Int32 MessagesQueuedOrProcessed)	Stop		Manipulation_ProcessBufferedQueue	Informational		
+Microsoft-Windows-DirectManipulation	65	0	Manipulation_ProcessAutoInputStart(UInt32 PointerId, UInt32 FrameId, UInt32 Message)	Start		Manipulation_ProcessAutoInput	Informational		
+Microsoft-Windows-DirectManipulation	66	0	Manipulation_ProcessAutoInputStop(UInt32 PointerId, UInt32 FrameId, UInt32 Message)	Stop		Manipulation_ProcessAutoInput	Informational		
+Microsoft-Windows-DirectManipulation	67	0	Manipulation_Behaviors(Pointer content, Int32 dimension, Float inertiaStartValue, Float originalRestPoint, Float outputRestPoint, Int32 outputRestPointPriority, Int32 outputRestPointCurveId)			Manipulation_Behaviors	Informational		
+Microsoft-Windows-DirectManipulation	68	0	Manipulation_Behaviors68(Pointer content, Int32 motionType, UInt32 index, Int32 bIsNewSnapValues, Float newSnapPointValue)			Manipulation_Behaviors	Informational		
+Microsoft-Windows-DirectManipulation	69	0	Manipulation_Behaviors69(Pointer content, Int32 motionType, Float interval, Float offset)			Manipulation_Behaviors	Informational		
+Microsoft-Windows-DirectManipulation	70	0	Manipulation_Behaviors70(Pointer content, Float restPointX, Float restPointY, Float restPointZ, Int32 curveIdX, Int32 curveIdY, Int32 curveIdZ)			Manipulation_Behaviors	Informational		
+Microsoft-Windows-DirectManipulation	71	0	Manipulation_Prediction(UInt64 time, UInt64 processTime, UInt64 compositionTime, UInt64 predictedTimeGap, Float predictionX, Float predictionY)			Manipulation_Prediction	Informational		
+Microsoft-Windows-DirectManipulation	72	0	Manipulation_Inertia(UInt64 inertiaStartTime, UInt64 time, UInt64 processTime, UInt64 compositionTime, Double timerElapsedTime, Double timerOffset, Double animationTime)			Manipulation_Inertia	Informational		
+Microsoft-Windows-DirectManipulation	73	0	Manipulation_ParametricMotionStart(Pointer content, UInt32 targetMotionType, UInt32 sourceMotionType, UInt32 curveCount)	Start		Manipulation_ParametricMotion	Informational		
+Microsoft-Windows-DirectManipulation	74	0	Manipulation_ParametricMotionStop(Pointer content)	Stop		Manipulation_ParametricMotion	Informational		
+Microsoft-Windows-DirectManipulation	75	0	Manipulation_ParametricMotionStart75(Pointer content, Float inputScaleX, Float inputScaleY, Float inputTranslateX, Float inputTranslateY)	Start		Manipulation_ParametricMotion	Informational		
+Microsoft-Windows-DirectManipulation	76	0	Manipulation_ParametricMotionStop76(Pointer content, Float outputScaleX, Float outputScaleY, Float outputTranslateX, Float outputTranslateY, UInt32 computedMotionTypes)	Stop		Manipulation_ParametricMotion	Informational		
+Microsoft-Windows-DirectManipulation	77	0	Manipulation_Inertia77(Double pNewValue, Double pOldValue, Double timeDeltaInMS)			Manipulation_Inertia	Informational		
+Microsoft-Windows-DirectManipulation	78	0	Manipulation_ViewportEnable(Pointer ViewportPointer)			Manipulation_ViewportEnable	Informational		
+Microsoft-Windows-DirectManipulation	79	0	Manipulation_ViewportDisable(Pointer ViewportPointer)			Manipulation_ViewportDisable	Informational		
+Microsoft-Windows-DirectManipulation	80	0	Manipulation_ZoomToRect(Pointer viewport, Boolean animate)			Manipulation_ZoomToRect	Informational		
+Microsoft-Windows-DirectManipulation	81	0	Manipulation_Storyboard(Pointer storyboard, Pointer content, UInt32 status)			Manipulation_Storyboard	Informational		
+Microsoft-Windows-DirectManipulation	82	0	Manipulation_PointerAssociation(UInt32 PointerId, UInt32 ContactId)			Manipulation_PointerAssociation	Informational		
+Microsoft-Windows-DirectManipulation	83	0	Manipulation_InputHandled(UInt32 PointerId, UInt32 FrameId, UInt32 Message)			Manipulation_InputHandled	Informational		

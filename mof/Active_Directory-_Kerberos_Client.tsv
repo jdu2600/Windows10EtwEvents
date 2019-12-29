@@ -1,0 +1,11 @@
+provider	category	event_id	version	event(fields)	event_type	description
+Active Directory: Kerberos Client	{52e82f1a-7cd4-47ed-b5e5-fde7bf64cea6}	1	0	KerbInitSecurityContext_Start()	Start	Kerberos Initialize Security Context Handler
+Active Directory: Kerberos Client	{52e82f1a-7cd4-47ed-b5e5-fde7bf64cea6}	2	0	KerbInitSecurityContext_End(UInt32 Status, String CredSource, String DomainName, String UserName, String Target, UInt32 ExtError, UInt32 klininfo)	End	Kerberos Initialize Security Context Handler
+Active Directory: Kerberos Client	{8a3b8d86-db1e-47a9-9264-146e097b3c64}	1	0	KerbLogonUser_Start()	Start	Kerberos Logon User Handler
+Active Directory: Kerberos Client	{8a3b8d86-db1e-47a9-9264-146e097b3c64}	2	0	KerbLogonUser_End(UInt32 Status, String LogonType, String UserName, String LogonDomain)	End	Kerberos Logon User Handler
+Active Directory: Kerberos Client	{94acefe3-9e56-49e3-9895-7240a231c371}	1	0	KerbAcceptSecurityContext_Start()	Start	Kerberos Accept Security Context Handler
+Active Directory: Kerberos Client	{94acefe3-9e56-49e3-9895-7240a231c371}	2	0	KerbAcceptSecurityContext_End(UInt32 Status, String CredSource, String DomainName, String UserName, String Target)	End	Kerberos Accept Security Context Handler
+Active Directory: Kerberos Client	{94c79108-b23b-4418-9b7f-e6d75a3a0ab2}	1	0	KerbSetPassword_Start()	Start	Kerberos Set Password
+Active Directory: Kerberos Client	{94c79108-b23b-4418-9b7f-e6d75a3a0ab2}	2	0	KerbSetPassword_End(UInt32 Status, String AccountName, String AccountRealm, String ClientName, String ClientRealm, String KdcAddress)	End	Kerberos Set Password
+Active Directory: Kerberos Client	{c55e606b-334a-488b-b907-384abaa97b04}	1	0	KerbChangePassword_Start()	Start	Kerberos Change Password
+Active Directory: Kerberos Client	{c55e606b-334a-488b-b907-384abaa97b04}	2	0	KerbChangePassword_End(UInt32 Status, String AccountName, String DomainName)	End	Kerberos Change Password

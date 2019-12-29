@@ -1,0 +1,17 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-RPC	1	1	RpcClientCallStop_V1(UnicodeString ImageName, UnicodeString ComputerName, UInt32 ProcessID, SYSTEMTIME TimeStamp, UInt32 GeneratingComponent, HexInt32 Status, UInt16 DetectionLocation, UInt16 Flags, UInt16 NumberOfParameters, UInt64 Params)	Stop		RpcClientCall	Error		
+Microsoft-Windows-RPC	2	1	RpcServerCall_V1(UnicodeString ImangeName, GUID InterfaceUuid, GUID FilterKey)			RpcServerCall	Informational		
+Microsoft-Windows-RPC	3	1	task_0_V1(UnicodeString ImageName, UInt16 DetectionLocation, UInt32 Status, HexInt32 AdditionalData1, HexInt32 AdditionalData2)			task_0	Error		
+Microsoft-Windows-RPC	4	1	Debug_V1(UInt8 Subject, UInt8 Verb, UInt64 SubjectPointer, UInt64 ObjectPointer, UInt64 DataPointer)			Debug	Verbose		
+Microsoft-Windows-RPC	5	1	RpcClientCallStart_V1(GUID InterfaceUuid, UInt32 ProcNum, UInt32 Protocol, UnicodeString NetworkAddress, UnicodeString Endpoint, UnicodeString Options, UInt32 AuthenticationLevel, UInt32 AuthenticationService, UInt32 ImpersonationLevel)	Start		RpcClientCall	Informational		
+Microsoft-Windows-RPC	6	1	RpcServerCallStart_V1(GUID InterfaceUuid, UInt32 ProcNum, UInt32 Protocol, UnicodeString NetworkAddress, UnicodeString Endpoint, UnicodeString Options, UInt32 AuthenticationLevel, UInt32 AuthenticationService, UInt32 ImpersonationLevel)	Start		RpcServerCall	Informational		
+Microsoft-Windows-RPC	7	1	RpcClientCallStop7_V1(UInt32 Status)	Stop		RpcClientCall	Informational		
+Microsoft-Windows-RPC	8	1	RpcServerCallStop_V1(UInt32 Status)	Stop		RpcServerCall	Informational		
+Microsoft-Windows-RPC	9	1	task_09_V1(UInt32 Status)			task_0	Verbose		
+Microsoft-Windows-RPC	10	1	Debug10_V1(UInt64 SubjectPointer, UInt32 FragmentSize, Binary Fragment)			Debug	Verbose		
+Microsoft-Windows-RPC	11	1	Debug11_V1(UInt64 SubjectPointer, UInt32 FragmentSize, Binary Fragment)			Debug	Verbose		
+Microsoft-Windows-RPC	12	1	DebugStart_V1(UInt32 ObjectType, UInt32 Operation, UInt64 Address, UInt64 Data)	Start		Debug	Verbose		
+Microsoft-Windows-RPC	13	1	DebugStop_V1(UInt32 ObjectType, UInt32 Operation, UInt64 Address, UInt64 Data)	Stop		Debug	Verbose		
+Microsoft-Windows-RPC	14	1	FunctionTraceStart_V1(GUID InterfaceUuid, GUID TypeMgrUuid, UInt32 Flags, UInt32 MaxCalls, UInt32 SDSize, Binary SD)	Start		FunctionTrace	Informational		
+Microsoft-Windows-RPC	15	1	FunctionTraceStop_V1(GUID InterfaceUuid, GUID TypeMgrUuid, UInt32 Flags, UInt32 MaxCalls)	Stop		FunctionTrace	Informational		
+Microsoft-Windows-RPC	16	1	FunctionTraceStart16_V1(UnicodeString Protocol, UnicodeString Endpoint, UnicodeString NetworkAddress, UInt32 PendingQueueSize, UInt32 EndpointFlags, UInt32 NicFlags)	Start		FunctionTrace	Informational		

@@ -1,0 +1,11 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Forwarding	100	0	task_0(UnicodeString Id, UnicodeString Query)			task_0	Informational		
+Microsoft-Windows-Forwarding	101	0	task_0101(UnicodeString Id, UnicodeString Query, UnicodeString Status)			task_0	Warning		
+Microsoft-Windows-Forwarding	102	0	task_0102(UnicodeString Query, UInt32 ErrorCode)			task_0	Error		
+Microsoft-Windows-Forwarding	102	1	task_0102_V1(UnicodeString Id, UnicodeString Query, UInt32 ErrorCode)			task_0	Error		
+Microsoft-Windows-Forwarding	103	0	task_0103(UnicodeString Id)			task_0	Informational		
+Microsoft-Windows-Forwarding	104	0	task_0104(UnicodeString Id, UInt32 ErrorCode)			task_0	Warning		
+Microsoft-Windows-Forwarding	104	1	task_0104_V1(UnicodeString SubscriptionManagerAddress, UInt32 ErrorCode, UnicodeString ErrorMessage)			task_0	Informational		
+Microsoft-Windows-Forwarding	105	0	task_0105(UnicodeString SubscriptionManagerAddress, UInt32 ErrorCode, UnicodeString ErrorMessage)			task_0	Error		
+Microsoft-Windows-Forwarding	106	0	task_0106()			task_0	Informational		
+Microsoft-Windows-Forwarding	107	0	task_0107(UnicodeString PolicyDescription)			task_0	Error		

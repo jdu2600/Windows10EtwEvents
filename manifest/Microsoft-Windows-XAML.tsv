@@ -1,0 +1,416 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-XAML	1	0	ParseXamlStart(UnicodeString URI)	Start	Parser	ParseXaml	Informational		
+Microsoft-Windows-XAML	2	0	ParseXamlStop(UnicodeString URI)	Stop	Parser	ParseXaml	Informational		
+Microsoft-Windows-XAML	3	0	GetBuiltInStyleStart()	Start	Parser	GetBuiltInStyle	Informational		
+Microsoft-Windows-XAML	4	0	GetBuiltInStyleStop(UnicodeString ClassName)	Stop	Parser	GetBuiltInStyle	Informational		
+Microsoft-Windows-XAML	5	0	ApplyTemplateStart(UInt64 ElementId, UnicodeString ClassName)	Start	Layout	ApplyTemplate	Informational		
+Microsoft-Windows-XAML	6	0	ApplyTemplateStop()	Stop	Layout	ApplyTemplate	Informational		
+Microsoft-Windows-XAML	7	0	ClrStartupStart()	Start	Managed	ClrStartup	Informational		
+Microsoft-Windows-XAML	8	0	ClrStartupStop()	Stop	Managed	ClrStartup	Informational		
+Microsoft-Windows-XAML	9	0	ClrShutdownStart()	Start	Managed	ClrShutdown	Informational		
+Microsoft-Windows-XAML	10	0	ClrShutdownStop()	Stop	Managed	ClrShutdown	Informational		
+Microsoft-Windows-XAML	11	0	PutRootVisualStart()	Start	Core	PutRootVisual	Informational		
+Microsoft-Windows-XAML	12	0	PutRootVisualStop()	Stop	Core	PutRootVisual	Informational		
+Microsoft-Windows-XAML	13	0	PutSourceStart()	Start	Core	PutSource	Informational		
+Microsoft-Windows-XAML	14	0	PutSourceStop()	Stop	Core	PutSource	Informational		
+Microsoft-Windows-XAML	15	0	EventCallbackStart(UnicodeString CallbackName)	Start	Core	EventCallback	Informational		
+Microsoft-Windows-XAML	16	0	EventCallbackStop()	Stop	Core	EventCallback	Informational		
+Microsoft-Windows-XAML	17	0	ApplicationStartup()		Appmodel	ApplicationStartup	Informational		
+Microsoft-Windows-XAML	18	0	ApplicationStarting()		Appmodel	ApplicationStarting	Informational		
+Microsoft-Windows-XAML	19	0	ApplicationStarted()		Appmodel	ApplicationStarted	Informational		
+Microsoft-Windows-XAML	20	0	ApplicationLoadComponentStart(UnicodeString ComponentName)	Start	Appmodel	ApplicationLoadComponent	Informational		
+Microsoft-Windows-XAML	21	0	ApplicationLoadComponentStop()	Stop	Appmodel	ApplicationLoadComponent	Informational		
+Microsoft-Windows-XAML	22	0	CoreServicesCreateStart()	Start	Core	CoreServicesCreate	Informational		
+Microsoft-Windows-XAML	23	0	CoreServicesCreateStop()	Stop	Core	CoreServicesCreate	Informational		
+Microsoft-Windows-XAML	24	0	CoreServicesResetStart()	Start	Core	CoreServicesReset	Informational		
+Microsoft-Windows-XAML	25	0	CoreServicesResetStop()	Stop	Core	CoreServicesReset	Informational		
+Microsoft-Windows-XAML	26	0	Tick(UInt32 IsHighPriority)		Core	Tick	Informational		
+Microsoft-Windows-XAML	27	0	ShowWindowStart()	Start	Appmodel	ShowWindow	Informational		
+Microsoft-Windows-XAML	28	0	ShowWindowStop()	Stop	Appmodel	ShowWindow	Informational		
+Microsoft-Windows-XAML	29	0	CreateWindowStart()	Start	Appmodel	CreateWindow	Informational		
+Microsoft-Windows-XAML	30	0	CreateWindowStop()	Stop	Appmodel	CreateWindow	Informational		
+Microsoft-Windows-XAML	31	0	InitializeCoreStart()	Start	Core	InitializeCore	Informational		
+Microsoft-Windows-XAML	32	0	InitializeCoreStop()	Stop	Core	InitializeCore	Informational		
+Microsoft-Windows-XAML	33	0	InitializeMetadataStoreStart()	Start	Core	InitializeMetadataStore	Informational		
+Microsoft-Windows-XAML	34	0	InitializeMetadataStoreStop()	Stop	Core	InitializeMetadataStore	Informational		
+Microsoft-Windows-XAML	35	0	VideoCaptureFrame()		Media	VideoCaptureFrame	Informational		
+Microsoft-Windows-XAML	36	0	HardwareDecodeFrameStart()	Start	Media	HardwareDecodeFrame	Informational		
+Microsoft-Windows-XAML	37	0	HardwareDecodeFrameStop()	Stop	Media	HardwareDecodeFrame	Informational		
+Microsoft-Windows-XAML	38	0	GraphicsDriverSupportedForVideoDecode(UnicodeString GraphicsDriverSupportType)		Media	GraphicsDriverSupportedForVideoDecode	Informational		
+Microsoft-Windows-XAML	39	0	MediaFullScreenState(UInt64 MediaElementID, UInt32 InFullScreen)		Media	MediaFullScreenState	Informational		
+Microsoft-Windows-XAML	40	0	MediaOverlapState(UInt64 MediaElementID, UInt32 HasOverlap)		Media	MediaOverlapState	Informational		
+Microsoft-Windows-XAML	41	0	LayoutStart()	Start	Layout	Layout	Informational		
+Microsoft-Windows-XAML	42	0	LayoutStop()	Stop	Layout	Layout	Informational		
+Microsoft-Windows-XAML	43	0	MeasureStart()	Start	Layout	Measure	Informational		
+Microsoft-Windows-XAML	44	0	MeasureStop()	Stop	Layout	Measure	Informational		
+Microsoft-Windows-XAML	45	0	ArrangeStart()	Start	Layout	Arrange	Informational		
+Microsoft-Windows-XAML	46	0	ArrangeStop()	Stop	Layout	Arrange	Informational		
+Microsoft-Windows-XAML	47	0	MeasureElementStart(UInt64 ElementId, Float Width, Float Height)	Start	Detailed	MeasureElement	Verbose		
+Microsoft-Windows-XAML	48	0	MeasureElementStop(UInt64 ElementId, Float DesiredWidth, Float DesiredHeight)	Stop	Detailed	MeasureElement	Verbose		
+Microsoft-Windows-XAML	49	0	ArrangeElementStart(UInt64 ElementId, Float Left, Float Top, Float Width, Float Height)	Start	Detailed	ArrangeElement	Verbose		
+Microsoft-Windows-XAML	50	0	ArrangeElementStop(UInt64 ElementId, Float VisualOffsetX, Float VisualOffsetY, Float RenderWidth, Float RenderHeight)	Stop	Detailed	ArrangeElement	Verbose		
+Microsoft-Windows-XAML	51	0	FireLayoutUpdatedStart()	Start	Layout	FireLayoutUpdated	Informational		
+Microsoft-Windows-XAML	52	0	FireLayoutUpdatedStop()	Stop	Layout	FireLayoutUpdated	Informational		
+Microsoft-Windows-XAML	53	0	FireSizeChangedStart()	Start	Layout	FireSizeChanged	Informational		
+Microsoft-Windows-XAML	54	0	FireSizeChangedStop()	Stop	Layout	FireSizeChanged	Informational		
+Microsoft-Windows-XAML	55	0	DynamicTimelineStart()	Start	Animation	DynamicTimeline	Informational		
+Microsoft-Windows-XAML	56	0	DynamicTimelineStop()	Stop	Animation	DynamicTimeline	Informational		
+Microsoft-Windows-XAML	57	0	ProcessLayoutForTransitionStart()	Start	Animation	ProcessLayoutForTransition	Verbose		
+Microsoft-Windows-XAML	58	0	ProcessLayoutForTransitionStop()	Stop	Animation	ProcessLayoutForTransition	Verbose		
+Microsoft-Windows-XAML	59	0	RealizeTransitionStart()	Start	Animation	RealizeTransition	Informational		
+Microsoft-Windows-XAML	60	0	RealizeTransitionStop()	Stop	Animation	RealizeTransition	Informational		
+Microsoft-Windows-XAML	61	0	ElementCreated(UInt64 ElementId)		Detailed	ElementCreated	Verbose		
+Microsoft-Windows-XAML	62	0	ElementDestroyed(UInt64 ElementId)		Detailed	ElementDestroyed	Verbose		
+Microsoft-Windows-XAML	63	0	FrameStart()	Start	Layout	Frame	Informational		
+Microsoft-Windows-XAML	64	0	Frame(UInt32 X, UInt32 Y, UInt32 Width, UInt32 Height)		Layout	Frame	Verbose		
+Microsoft-Windows-XAML	65	0	FrameStop()	Stop	Layout	Frame	Informational		
+Microsoft-Windows-XAML	66	0	PerFrameCallbackStart()	Start	Layout	PerFrameCallback	Informational		
+Microsoft-Windows-XAML	67	0	PerFrameCallbackStop()	Stop	Layout	PerFrameCallback	Informational		
+Microsoft-Windows-XAML	68	0	RenderThreadPresentStart()	Start	Rendering	RenderThreadPresent	Informational		
+Microsoft-Windows-XAML	69	0	RenderThreadPresentStop()	Stop	Rendering	RenderThreadPresent	Informational		
+Microsoft-Windows-XAML	70	0	CreatingHardwareCompositorStart()	Start	Rendering	CreatingHardwareCompositor	Informational		
+Microsoft-Windows-XAML	71	0	CreatingHardwareCompositorStop()	Stop	Rendering	CreatingHardwareCompositor	Informational		
+Microsoft-Windows-XAML	72	0	CreatingMetaSurfaceStart()	Start	Rendering	CreatingMetaSurface	Informational		
+Microsoft-Windows-XAML	73	0	CreatingMetaSurfaceStop()	Stop	Rendering	CreatingMetaSurface	Informational		
+Microsoft-Windows-XAML	74	0	ResettingMetaSurfacesStart()	Start	Rendering	ResettingMetaSurfaces	Informational		
+Microsoft-Windows-XAML	75	0	ResettingMetaSurfacesStop()	Stop	Rendering	ResettingMetaSurfaces	Informational		
+Microsoft-Windows-XAML	76	0	CreateGraphicsDeviceStart()	Start	Rendering	CreateGraphicsDevice	Informational		
+Microsoft-Windows-XAML	77	0	CreateGraphicsDeviceStop()	Stop	Rendering	CreateGraphicsDevice	Informational		
+Microsoft-Windows-XAML	78	0	CreateAcceleratedGraphicsStart()	Start	Rendering	CreateAcceleratedGraphics	Informational		
+Microsoft-Windows-XAML	79	0	CreateAcceleratedGraphicsStop()	Stop	Rendering	CreateAcceleratedGraphics	Informational		
+Microsoft-Windows-XAML	80	0	HitTestStart()	Start	Input	HitTest	Informational		
+Microsoft-Windows-XAML	81	0	HitTestStop()	Stop	Input	HitTest	Informational		
+Microsoft-Windows-XAML	82	0	RefreshTemplateBindingsStart()	Start	Detailed	RefreshTemplateBindings	Verbose		
+Microsoft-Windows-XAML	83	0	RefreshTemplateBindingsStop()	Stop	Detailed	RefreshTemplateBindings	Verbose		
+Microsoft-Windows-XAML	84	0	BeginStoryboard(UInt64 ElementId, UInt64 TargetElementId)		Animation	BeginStoryboard	Informational		
+Microsoft-Windows-XAML	85	0	PauseStoryboard(UInt64 ElementId)		Animation	PauseStoryboard	Informational		
+Microsoft-Windows-XAML	86	0	ResumeStoryboard(UInt64 ElementId)		Animation	ResumeStoryboard	Informational		
+Microsoft-Windows-XAML	87	0	StopStoryboard(UInt64 ElementId)		Animation	StopStoryboard	Informational		
+Microsoft-Windows-XAML	88	0	EndStoryboard(UInt64 ElementId)		Animation	EndStoryboard	Informational		
+Microsoft-Windows-XAML	89	0	Animation(UInt64 ElementId, UnicodeString PropertyName)		Animation	Animation	Informational		
+Microsoft-Windows-XAML	90	0	BitmapCacheCreated(UInt64 CacheId)		CachedComposition	BitmapCacheCreated	Verbose		
+Microsoft-Windows-XAML	91	0	BitmapCacheDestroyed(UInt64 CacheId)		CachedComposition	BitmapCacheDestroyed	Verbose		
+Microsoft-Windows-XAML	92	0	BitmapCacheUpdated(UInt64 CacheId, UInt32 X, UInt32 Y, UInt32 UpdateWidth, UInt32 UpdateHeight, UInt32 SurfaceWidth, UInt32 SurfaceHeight)		CachedComposition	BitmapCacheUpdated	Verbose		
+Microsoft-Windows-XAML	93	0	RenderWalkStart()	Start	Rendering	RenderWalk	Informational		
+Microsoft-Windows-XAML	94	0	RenderWalkStop()	Stop	Rendering	RenderWalk	Informational		
+Microsoft-Windows-XAML	95	0	CaptureDrawFrame(UnicodeString ElementName)		Rendering	CaptureDrawFrame	Informational		
+Microsoft-Windows-XAML	96	0	FindBackgroundPrimitiveStart()	Start	Rendering	FindBackgroundPrimitive	Informational		
+Microsoft-Windows-XAML	97	0	FindBackgroundPrimitiveStop()	Stop	Rendering	FindBackgroundPrimitive	Informational		
+Microsoft-Windows-XAML	98	0	DrawFrameRateCounterStart()	Start	Rendering	DrawFrameRateCounter	Informational		
+Microsoft-Windows-XAML	99	0	DrawFrameRateCounterStop()	Stop	Rendering	DrawFrameRateCounter	Informational		
+Microsoft-Windows-XAML	100	0	SubmitFrameStart()	Start	Rendering	SubmitFrame	Informational		
+Microsoft-Windows-XAML	101	0	SubmitFrame(UInt64 FrameId)		Rendering	SubmitFrame	Informational		
+Microsoft-Windows-XAML	102	0	SubmitFrameStop()	Stop	Rendering	SubmitFrame	Informational		
+Microsoft-Windows-XAML	103	0	DownloadRequestStart()	Start	Detailed	DownloadRequest	Verbose		
+Microsoft-Windows-XAML	104	0	DownloadRequestStop()	Stop	Detailed	DownloadRequest	Verbose		
+Microsoft-Windows-XAML	105	0	SetMaximumFrameLatency(UInt32 FrameCount)		Rendering	SetMaximumFrameLatency	Informational		
+Microsoft-Windows-XAML	106	0	PrimitiveCompositionUpdatePrimitivesStart()	Start	Rendering	PrimitiveCompositionUpdatePrimitives	Informational		
+Microsoft-Windows-XAML	107	0	PrimitiveCompositionUpdatePrimitivesStop(UInt32 UpdatedPrimitives, UInt32 UpdatedInvisiblePrimitives, UInt32 UpdatedGeometryGeneratedPrimitives, UInt32 UpdatedRegularPrimitives, UInt32 UpdatedGeometryGeneratedVertexCount)	Stop	Rendering	PrimitiveCompositionUpdatePrimitives	Informational		
+Microsoft-Windows-XAML	108	0	PrimitiveCompositionDrawStart()	Start	Rendering	PrimitiveCompositionDraw	Informational		
+Microsoft-Windows-XAML	109	0	PrimitiveCompositionDrawStop(UInt32 BatchCount, UInt32 PrimitivesDrawn, UInt32 GeometryGeneratedPrimitivesDrawn, UInt32 GeometryGeneratedVerticesDrawn)	Stop	Rendering	PrimitiveCompositionDraw	Informational		
+Microsoft-Windows-XAML	110	0	PrimitiveCompositionUpdateSurfacesStart()	Start	Rendering	PrimitiveCompositionUpdateSurfaces	Informational		
+Microsoft-Windows-XAML	111	0	PrimitiveCompositionUpdateSurfacesStop()	Stop	Rendering	PrimitiveCompositionUpdateSurfaces	Informational		
+Microsoft-Windows-XAML	112	0	RenderThreadRenderStart()	Start	Rendering	RenderThreadRender	Informational		
+Microsoft-Windows-XAML	113	0	RenderThreadRender(UInt64 FrameId)		Rendering	RenderThreadRender	Informational		
+Microsoft-Windows-XAML	114	0	RenderThreadRenderStop()	Stop	Rendering	RenderThreadRender	Informational		
+Microsoft-Windows-XAML	115	0	RenderThreadFrameStart()	Start	Rendering	RenderThreadFrame	Informational		
+Microsoft-Windows-XAML	116	0	RenderThreadFrameStop()	Stop	Rendering	RenderThreadFrame	Informational		
+Microsoft-Windows-XAML	117	0	RenderThreadDoNotWait()		Rendering	RenderThreadDoNotWait	Informational		
+Microsoft-Windows-XAML	118	0	RenderThreadWaitForVBlankStart()	Start	Rendering	RenderThreadWaitForVBlank	Informational		
+Microsoft-Windows-XAML	119	0	RenderThreadWaitForVBlankStop()	Stop	Rendering	RenderThreadWaitForVBlank	Informational		
+Microsoft-Windows-XAML	120	0	RenderThreadWaitForWorkStart()	Start	Rendering	RenderThreadWaitForWork	Informational		
+Microsoft-Windows-XAML	121	0	RenderThreadWaitForWorkStop()	Stop	Rendering	RenderThreadWaitForWork	Informational		
+Microsoft-Windows-XAML	122	0	RenderThreadTickStart()	Start	Rendering	RenderThreadTick	Informational		
+Microsoft-Windows-XAML	123	0	RenderThreadTickStop()	Stop	Rendering	RenderThreadTick	Informational		
+Microsoft-Windows-XAML	124	0	PrimitiveCompositionTreeWalkStart()	Start	Rendering	PrimitiveCompositionTreeWalk	Informational		
+Microsoft-Windows-XAML	125	0	PrimitiveCompositionTreeWalkStop()	Stop	Rendering	PrimitiveCompositionTreeWalk	Informational		
+Microsoft-Windows-XAML	126	0	PrimitiveCompositionEnsureHardwareResourcesStart()	Start	Rendering	PrimitiveCompositionEnsureHardwareResources	Informational		
+Microsoft-Windows-XAML	127	0	PrimitiveCompositionEnsureHardwareResourcesStop()	Stop	Rendering	PrimitiveCompositionEnsureHardwareResources	Informational		
+Microsoft-Windows-XAML	128	0	PrimitiveCompositionGenerateInstancesStart()	Start	Rendering	PrimitiveCompositionGenerateInstances	Informational		
+Microsoft-Windows-XAML	129	0	PrimitiveCompositionGenerateInstancesStop()	Stop	Rendering	PrimitiveCompositionGenerateInstances	Informational		
+Microsoft-Windows-XAML	130	0	SubmitRetargetStart()	Start	Rendering	SubmitRetarget	Informational		
+Microsoft-Windows-XAML	131	0	SubmitRetargetStop()	Stop	Rendering	SubmitRetarget	Informational		
+Microsoft-Windows-XAML	132	0	ProcessRetargetStart()	Start	Rendering	ProcessRetarget	Informational		
+Microsoft-Windows-XAML	133	0	ProcessRetargetStop()	Stop	Rendering	ProcessRetarget	Informational		
+Microsoft-Windows-XAML	134	0	SubmitAlphaModeUpdateStart(UInt32 Transparent)	Start	Rendering	SubmitAlphaModeUpdate	Informational		
+Microsoft-Windows-XAML	135	0	SubmitAlphaModeUpdateStop(UInt32 Transparent)	Stop	Rendering	SubmitAlphaModeUpdate	Informational		
+Microsoft-Windows-XAML	136	0	ProcessAlphaModeUpdateStart(UInt32 Transparent)	Start	Rendering	ProcessAlphaModeUpdate	Informational		
+Microsoft-Windows-XAML	137	0	ProcessAlphaModeUpdateStop(UInt32 Transparent)	Stop	Rendering	ProcessAlphaModeUpdate	Informational		
+Microsoft-Windows-XAML	138	0	TextureAtlasAllocate(UInt64 Id, UInt32 Width, UInt32 Height, UInt32 BitDepth)		Rendering	TextureAtlasAllocate	Informational		
+Microsoft-Windows-XAML	139	0	TextureAtlasFree(UInt64 Id)		Rendering	TextureAtlasFree	Informational		
+Microsoft-Windows-XAML	140	0	TextureAtlasEntryAllocate(UInt64 AtlasId, UInt32 X, UInt32 Y, UInt32 Width, UInt32 Height)		Rendering	TextureAtlasEntryAllocate	Verbose		
+Microsoft-Windows-XAML	141	0	TextureAtlasEntryFree(UInt64 AtlasId, UInt32 X, UInt32 Y, UInt32 Width, UInt32 Height)		Rendering	TextureAtlasEntryFree	Verbose		
+Microsoft-Windows-XAML	142	0	TextureAtlasUtilization(UInt64 Id, UInt32 Width, UInt32 Height, UInt32 BitDepth, Float PercentUsed)		Rendering	TextureAtlasUtilization	Informational		
+Microsoft-Windows-XAML	143	0	ImageCacheDownloadStart(UnicodeString URI)	Start	Images	ImageCacheDownload	Informational		
+Microsoft-Windows-XAML	144	0	ImageCacheDownloadStop(UnicodeString URI)	Stop	Images	ImageCacheDownload	Informational		
+Microsoft-Windows-XAML	145	0	ImageCacheDecodeStart(UnicodeString URI)	Start	Images	ImageCacheDecode	Informational		
+Microsoft-Windows-XAML	146	0	ImageCacheDecodeStop(UnicodeString URI)	Stop	Images	ImageCacheDecode	Informational		
+Microsoft-Windows-XAML	147	0	DecodeToSurfaceStart()	Start	Images	DecodeToSurface	Informational		
+Microsoft-Windows-XAML	148	0	DecodeToSurfaceStop()	Stop	Images	DecodeToSurface	Informational		
+Microsoft-Windows-XAML	149	0	PointerDownStart()	Start	Input	PointerDown	Informational		
+Microsoft-Windows-XAML	150	0	PointerDownStop()	Stop	Input	PointerDown	Informational		
+Microsoft-Windows-XAML	151	0	PointerUpdateStart()	Start	Input	PointerUpdate	Informational		
+Microsoft-Windows-XAML	152	0	PointerUpdateStop()	Stop	Input	PointerUpdate	Informational		
+Microsoft-Windows-XAML	153	0	PointerUpStart()	Start	Input	PointerUp	Informational		
+Microsoft-Windows-XAML	154	0	PointerUpStop()	Stop	Input	PointerUp	Informational		
+Microsoft-Windows-XAML	155	0	PointerEnterStart()	Start	Input	PointerEnter	Informational		
+Microsoft-Windows-XAML	156	0	PointerEnterStop()	Stop	Input	PointerEnter	Informational		
+Microsoft-Windows-XAML	157	0	PointerLeaveStart()	Start	Input	PointerLeave	Informational		
+Microsoft-Windows-XAML	158	0	PointerLeaveStop()	Stop	Input	PointerLeave	Informational		
+Microsoft-Windows-XAML	159	0	PointerWheelStart()	Start	Input	PointerWheel	Informational		
+Microsoft-Windows-XAML	160	0	PointerWheelStop()	Stop	Input	PointerWheel	Informational		
+Microsoft-Windows-XAML	161	0	PointerHWheelStart()	Start	Input	PointerHWheel	Informational		
+Microsoft-Windows-XAML	162	0	PointerHWheelStop()	Stop	Input	PointerHWheel	Informational		
+Microsoft-Windows-XAML	163	0	PointerCaptureChangedStart()	Start	Input	PointerCaptureChanged	Informational		
+Microsoft-Windows-XAML	164	0	PointerCaptureChangedStop()	Stop	Input	PointerCaptureChanged	Informational		
+Microsoft-Windows-XAML	165	0	ProcessPointerInputStart(UInt32 PointerId, UInt32 MsgId, Float X, Float Y)	Start	Input	ProcessPointerInput	Verbose		
+Microsoft-Windows-XAML	166	0	ProcessPointerInputStop()	Stop	Input	ProcessPointerInput	Verbose		
+Microsoft-Windows-XAML	167	0	DmSetContact(UInt64 ViewportId)		Input	DmSetContact	Informational		
+Microsoft-Windows-XAML	168	0	DmViewportStatus(UInt64 ViewportId, UInt32 OldStatus, UInt32 NewStatus)		Input	DmViewportStatus	Informational		
+Microsoft-Windows-XAML	169	0	DmViewportStatusUpdateStart(UInt64 ViewportId, UInt32 OldStatus, UInt32 NewStatus)	Start	Input	DmViewportStatusUpdate	Informational		
+Microsoft-Windows-XAML	170	0	DmViewportStatusUpdateStop(UInt64 ViewportId)	Stop	Input	DmViewportStatusUpdate	Informational		
+Microsoft-Windows-XAML	171	0	DmViewportValuesUpdateStart(UInt64 ViewportId)	Start	Input	DmViewportValuesUpdate	Informational		
+Microsoft-Windows-XAML	172	0	DmViewportValuesUpdateStop(UInt64 ViewportId, Float TranslationX, Float TranslationY, Float ZoomFactor, Float ZoomFactorX, Float ZoomFactorY)	Stop	Input	DmViewportValuesUpdate	Informational		
+Microsoft-Windows-XAML	173	0	DmCompositorViewportValuesUpdateStart(UInt64 ViewportId)	Start	Input	DmCompositorViewportValuesUpdate	Informational		
+Microsoft-Windows-XAML	174	0	DmCompositorViewportValuesUpdateStop(UInt64 ViewportId, Float TranslationX, Float TranslationY, Float ZoomFactor, Float ZoomFactorX, Float ZoomFactorY)	Stop	Input	DmCompositorViewportValuesUpdate	Informational		
+Microsoft-Windows-XAML	175	0	DmCompositorViewportAdded(UInt64 ViewportId, UInt64 CompositorViewportId, UInt64 ContainerId)		Input	DmCompositorViewportAdded	Informational		
+Microsoft-Windows-XAML	176	0	DmCompositorViewportRemoved(UInt64 ViewportId, UInt64 CompositorViewportId, UInt64 ContainerId)		Input	DmCompositorViewportRemoved	Informational		
+Microsoft-Windows-XAML	177	0	DmInitializeStart()	Start	Input	DmInitialize	Informational		
+Microsoft-Windows-XAML	178	0	DmInitializeStop()	Stop	Input	DmInitialize	Informational		
+Microsoft-Windows-XAML	179	0	DmSetCrossSlideContainerStart()	Start	Input	DmSetCrossSlideContainer	Informational		
+Microsoft-Windows-XAML	180	0	DmSetCrossSlideContainerStop()	Stop	Input	DmSetCrossSlideContainer	Informational		
+Microsoft-Windows-XAML	181	0	DmStartCrossSlideContainersStart()	Start	Input	DmStartCrossSlideContainers	Informational		
+Microsoft-Windows-XAML	182	0	DmStartCrossSlideContainersStop()	Stop	Input	DmStartCrossSlideContainers	Informational		
+Microsoft-Windows-XAML	183	0	DmCrossSlideContainerCompletedStart()	Start	Input	DmCrossSlideContainerCompleted	Informational		
+Microsoft-Windows-XAML	184	0	DmCrossSlideContainerCompletedStop()	Stop	Input	DmCrossSlideContainerCompleted	Informational		
+Microsoft-Windows-XAML	185	0	RegisterInputPaneHandlerStart()	Start	Input	RegisterInputPaneHandler	Informational		
+Microsoft-Windows-XAML	186	0	RegisterInputPaneHandlerStop()	Stop	Input	RegisterInputPaneHandler	Informational		
+Microsoft-Windows-XAML	187	0	TouchHitTestingStart()	Start	Input	TouchHitTesting	Verbose		
+Microsoft-Windows-XAML	188	0	TouchHitTestingStop(Float X, Float Y, Float Width, Float Height)	Stop	Input	TouchHitTesting	Verbose		
+Microsoft-Windows-XAML	189	0	CreateSwipeRecognizerStart()	Start	Input	CreateSwipeRecognizer	Informational		
+Microsoft-Windows-XAML	190	0	CreateSwipeRecognizerStop()	Stop	Input	CreateSwipeRecognizer	Informational		
+Microsoft-Windows-XAML	191	0	DestroySwipeRecognizerStart()	Start	Input	DestroySwipeRecognizer	Informational		
+Microsoft-Windows-XAML	192	0	DestroySwipeRecognizerStop()	Stop	Input	DestroySwipeRecognizer	Informational		
+Microsoft-Windows-XAML	193	0	FeedSwipeRecognizerStart()	Start	Input	FeedSwipeRecognizer	Informational		
+Microsoft-Windows-XAML	194	0	FeedSwipeRecognizerStop()	Stop	Input	FeedSwipeRecognizer	Informational		
+Microsoft-Windows-XAML	195	0	FeedSwipeRecognizer(UInt32 PointerId, UInt32 MsgId, Float X, Float Y)		Input	FeedSwipeRecognizer	Verbose		
+Microsoft-Windows-XAML	196	0	SwipeUnrecognized()		Input	SwipeUnrecognized	Informational		
+Microsoft-Windows-XAML	197	0	SwipingStart()	Start	Input	Swiping	Informational		
+Microsoft-Windows-XAML	198	0	SwipingStop()	Stop	Input	Swiping	Informational		
+Microsoft-Windows-XAML	199	0	VirtualizationMeasureStart()	Start	Layout	VirtualizationMeasure	Informational		
+Microsoft-Windows-XAML	200	0	VirtualizationMeasureStop()	Stop	Layout	VirtualizationMeasure	Informational		
+Microsoft-Windows-XAML	201	0	VirtualizationCleanupStart()	Start	Layout	VirtualizationCleanup	Informational		
+Microsoft-Windows-XAML	202	0	VirtualizationCleanupStop()	Stop	Layout	VirtualizationCleanup	Informational		
+Microsoft-Windows-XAML	203	0	VirtualizationAddStart()	Start	Layout	VirtualizationAdd	Informational		
+Microsoft-Windows-XAML	204	0	VirtualizationAddStop()	Stop	Layout	VirtualizationAdd	Informational		
+Microsoft-Windows-XAML	205	0	GenerateContainerStart()	Start	Layout	GenerateContainer	Informational		
+Microsoft-Windows-XAML	206	0	GenerateContainerStop()	Stop	Layout	GenerateContainer	Informational		
+Microsoft-Windows-XAML	207	0	MeasureChildStart()	Start	Layout	MeasureChild	Informational		
+Microsoft-Windows-XAML	208	0	MeasureChildStop()	Stop	Layout	MeasureChild	Informational		
+Microsoft-Windows-XAML	209	0	PrepareContainerStart()	Start	Layout	PrepareContainer	Informational		
+Microsoft-Windows-XAML	210	0	PrepareContainerStop()	Stop	Layout	PrepareContainer	Informational		
+Microsoft-Windows-XAML	211	0	UpdateLogicalScrollDataStart()	Start	Layout	UpdateLogicalScrollData	Informational		
+Microsoft-Windows-XAML	212	0	UpdateLogicalScrollDataStop()	Stop	Layout	UpdateLogicalScrollData	Informational		
+Microsoft-Windows-XAML	213	0	ElementSetName(UInt64 ElementId, UnicodeString Name)		Detailed	ElementSetName	Verbose		
+Microsoft-Windows-XAML	214	0	ApplicationSuspendStart()	Start	Appmodel	ApplicationSuspend	Verbose		
+Microsoft-Windows-XAML	215	0	ApplicationSuspendStop()	Stop	Appmodel	ApplicationSuspend	Verbose		
+Microsoft-Windows-XAML	216	0	ApplicationResumeStart()	Start	Appmodel	ApplicationResume	Verbose		
+Microsoft-Windows-XAML	217	0	ApplicationResumeStop()	Stop	Appmodel	ApplicationResume	Verbose		
+Microsoft-Windows-XAML	218	0	PresentControllerGetFrameStatistics(UInt64 ControllerId, UInt32 PresentId, UInt32 VBlankId, UInt32 SyncRefreshCount, UInt64 SyncQPCTime, UInt32 QueuedPresentCount)		Rendering	PresentControllerGetFrameStatistics	Verbose		
+Microsoft-Windows-XAML	219	0	PresentControllerFrameOnScreenMissed(UInt64 ControllerId, UInt32 PresentId)		Rendering	PresentControllerFrameOnScreenMissed	Verbose		
+Microsoft-Windows-XAML	220	0	PresentControllerFrameOnScreen(UInt64 ControllerId, UInt32 PresentId, UInt64 StartQPCTicks, UInt64 EndQPCTicks, UInt64 LatencyInQPCTicks, Float QPCTicksPerVBlank, UInt32 LatencyInVBlanks)		Rendering	PresentControllerFrameOnScreen	Verbose		
+Microsoft-Windows-XAML	221	0	PresentControllerPresent(UInt64 ControllerId, UInt32 PresentId, UInt64 BeginPresentQPCTicks, UInt32 QueuedPresentCount, UInt32 FramesToQueue)		Rendering	PresentControllerPresent	Verbose		
+Microsoft-Windows-XAML	222	0	PresentControllerShouldProduceFrame(UInt64 ControllerId, UInt32 ShouldPresent, UInt32 VBlanksToSkip, UInt32 FramesToQueue)		Rendering	PresentControllerShouldProduceFrame	Verbose		
+Microsoft-Windows-XAML	223	0	PresentControllerSkippedFrame(UInt64 ControllerId)		Rendering	PresentControllerSkippedFrame	Informational		
+Microsoft-Windows-XAML	224	0	PresentControllerSetLatency(UInt64 ControllerId, UInt32 LatencyInVBlanks)		Rendering	PresentControllerSetLatency	Informational		
+Microsoft-Windows-XAML	225	0	PresentControllerStateChange(UInt64 ControllerId, Int32 NewState, UInt32 VBlanksToDrop, UInt32 FramesToQueue)		Rendering	PresentControllerStateChange	Informational		
+Microsoft-Windows-XAML	226	0	PresentControllerGetFrameStatisticsDisjoint(UInt64 ControllerId)		Rendering	PresentControllerGetFrameStatisticsDisjoint	Verbose		
+Microsoft-Windows-XAML	227	0	PresentControllerPresentBlocked(UInt64 ControllerId, UInt32 PresentId, UInt64 PresentQPCTicks, UInt64 PostPresentQPCTicks, UInt64 PresentTimeInQPCTicks, Float QPCTicksPerVBlank, Float PresentTimeInVBlanks)		Rendering	PresentControllerPresentBlocked	Informational		
+Microsoft-Windows-XAML	228	0	PresentControllerShouldProduceMultipleFramesPerVBlank(UInt64 ControllerId)		Rendering	PresentControllerShouldProduceMultipleFramesPerVBlank	Verbose		
+Microsoft-Windows-XAML	229	0	PresentControllerReset(UInt64 ControllerId)		Rendering	PresentControllerReset	Informational		
+Microsoft-Windows-XAML	230	0	CreateSwapChain(UInt64 Id, UInt32 Width, UInt32 Height, UInt32 AlphaMode)		Rendering	CreateSwapChain	Informational		
+Microsoft-Windows-XAML	231	0	ReleaseSwapChain(UInt64 Id, UInt32 Width, UInt32 Height, UInt32 AlphaMode)		Rendering	ReleaseSwapChain	Informational		
+Microsoft-Windows-XAML	232	0	ResizeSwapChain(UInt64 Id, UInt32 Width, UInt32 Height, UInt32 AlphaMode)		Rendering	ResizeSwapChain	Informational		
+Microsoft-Windows-XAML	233	0	SetAlphaModeSwapChain(UInt64 Id, UInt32 Width, UInt32 Height, UInt32 AlphaMode)		Rendering	SetAlphaModeSwapChain	Informational		
+Microsoft-Windows-XAML	234	0	SystemMemorySurfaceAllocate(UInt64 SurfaceId, UInt32 Width, UInt32 Height, UInt32 PixelSize, UInt32 IsDriverVisible)		Rendering	SystemMemorySurfaceAllocate	Informational		
+Microsoft-Windows-XAML	235	0	SystemMemorySurfaceFree(UInt64 SurfaceId)		Rendering	SystemMemorySurfaceFree	Informational		
+Microsoft-Windows-XAML	236	0	PresentControllerConvertQpcToVBlankNoFrameStats(UInt64 ControllerId, UInt64 QPCTicks, UInt64 VBlank0InQPCTicks, Float QPCTicksPerVBlank, UInt32 VBlankCount)		Rendering	PresentControllerConvertQpcToVBlankNoFrameStats	Verbose		
+Microsoft-Windows-XAML	237	0	PresentControllerConvertQpcToVBlankWithFrameStats(UInt64 ControllerId, UInt64 QPCTicks, UInt32 PreviousRefreshVBlankCount, UInt64 PreviousRefreshQPCTicks, Float QPCTicksPerVBlank, UInt32 VBlankOffset, UInt32 VBlankCount)		Rendering	PresentControllerConvertQpcToVBlankWithFrameStats	Verbose		
+Microsoft-Windows-XAML	238	0	ComputeVsisBounds(UInt64 Vsis, Int32 VisibleLeft, Int32 VisibleTop, Int32 VisibleRight, Int32 VisibleBottom, Int32 DesiredLeft, Int32 DesiredTop, Int32 DesiredRight, Int32 DesiredBottom, Int32 HighPriorityDesiredLeft, Int32 HighPriorityDesiredTop, Int32 HighPriorityDesiredRight, Int32 HighPriorityDesiredBottom, UInt32 MotionFlags)		Rendering	ComputeVsisBounds	Informational		
+Microsoft-Windows-XAML	239	0	SurfaceImageSourceBeginDraw(UInt64 SurfaceImageSource, Int32 Left, Int32 Top, Int32 Right, Int32 Bottom)		Rendering	SurfaceImageSourceBeginDraw	Informational		
+Microsoft-Windows-XAML	240	0	SurfaceImageSourceEndDraw(UInt64 SurfaceImageSource)		Rendering	SurfaceImageSourceEndDraw	Informational		
+Microsoft-Windows-XAML	241	0	QueueDCompCommand(UInt32 CommandId)		Rendering	QueueDCompCommand	Informational		
+Microsoft-Windows-XAML	242	0	CommitDCompCommand(UInt32 CommandBatchId, UInt32 CommandId, UInt32 CommandVBlankNumber)		Rendering	CommitDCompCommand	Informational		
+Microsoft-Windows-XAML	243	0	RenderThreadLogTimeToNextWork(UInt32 TimeToNextWorkInMilliseconds)		Rendering	RenderThreadLogTimeToNextWork	Informational		
+Microsoft-Windows-XAML	244	0	DCompCreateVisual(UInt64 VisualId)		Rendering	DCompCreateVisual	Informational		
+Microsoft-Windows-XAML	244	1	DCompCreateVisual_V1(UInt64 CompNode, UInt32 VisualIndex, UInt64 Visual)		DComp	DCompCreateVisual	Verbose		
+Microsoft-Windows-XAML	245	0	DCompAddToTree(UInt64 VisualId, UInt32 ZOrder)		Rendering	DCompAddToTree	Informational		
+Microsoft-Windows-XAML	246	0	DCompRemoveFromTree(UInt64 VisualId)		Rendering	DCompRemoveFromTree	Informational		
+Microsoft-Windows-XAML	247	0	DCompSet2DTransform(UInt64 VisualId, Float M11, Float M12, Float M21, Float M22, Float M31, Float M32)		Rendering	DCompSet2DTransform	Informational		
+Microsoft-Windows-XAML	247	1	DCompSet2DTransform_V1(UInt64 Visual, UInt64 Transform, UInt32 IsAnimated)		DComp	DCompSet2DTransform	Verbose		
+Microsoft-Windows-XAML	248	0	DCompRemove2DTransform(UInt64 VisualId)		Rendering	DCompRemove2DTransform	Informational		
+Microsoft-Windows-XAML	249	0	DCompSetSwapChain(UInt64 VisualId, UInt32 Width, UInt32 Height)		Rendering	DCompSetSwapChain	Informational		
+Microsoft-Windows-XAML	250	0	DCompSetMediaEngineSwapchainHandle(UInt64 VisualId, UInt32 Width, UInt32 Height)		Rendering	DCompSetMediaEngineSwapchainHandle	Informational		
+Microsoft-Windows-XAML	251	0	DCompSet3DTransform(UInt64 VisualId)		Rendering	DCompSet3DTransform	Informational		
+Microsoft-Windows-XAML	252	0	DCompRemove3DTransform(UInt64 VisualId)		Rendering	DCompRemove3DTransform	Informational		
+Microsoft-Windows-XAML	253	0	DCompSetClip(UInt64 VisualId)		Rendering	DCompSetClip	Informational		
+Microsoft-Windows-XAML	253	1	DCompSetClip_V1(UInt64 Visual, Float Left, Float Top, Float Right, Float Bottom)		DComp	DCompSetClip	Verbose		
+Microsoft-Windows-XAML	254	0	DCompUpdateContentSize(UInt64 VisualId, UInt32 Width, UInt32 Height)		Rendering	DCompUpdateContentSize	Informational		
+Microsoft-Windows-XAML	255	0	PresentControllerFrameStatisticsInconsistentVBlank(UInt64 ControllerId, UInt64 PreviousQPC, UInt32 PreviousVBlank, UInt64 ReportedQPC, Float QPCTicksPerVBlank, UInt32 CalculatedVBlank, UInt32 ReportedVBlank)		Rendering	PresentControllerFrameStatisticsInconsistentVBlank	Verbose		
+Microsoft-Windows-XAML	256	0	OfferSystemMemorySurface(UnicodeString State)		Rendering	OfferSystemMemorySurface	Informational		
+Microsoft-Windows-XAML	257	0	ReclaimSystemMemorySurface(UnicodeString State)		Rendering	ReclaimSystemMemorySurface	Informational		
+Microsoft-Windows-XAML	258	0	VirtualSurfaceImageSourceUpdatePriority(UInt32 HighPriority)		Rendering	VirtualSurfaceImageSourceUpdatePriority	Verbose		
+Microsoft-Windows-XAML	259	0	CoreWindowResizeFired(UInt32 ApplicationViewState)		Rendering	CoreWindowResizeFired	Verbose		
+Microsoft-Windows-XAML	260	0	SubmitNotifyWindowResized(UInt32 ApplicationViewState)		Rendering	SubmitNotifyWindowResized	Verbose		
+Microsoft-Windows-XAML	261	0	SubmitNotifyWindowLayoutCompleted(UInt32 ApplicationViewState)		Rendering	SubmitNotifyWindowLayoutCompleted	Verbose		
+Microsoft-Windows-XAML	261	1	SubmitNotifyWindowLayoutCompleted_V1(UInt64 Window)		Rendering	SubmitNotifyWindowLayoutCompleted	Verbose		
+Microsoft-Windows-XAML	262	0	ProcessNotifyWindowLayoutCompleted(UInt32 ApplicationViewState)		Rendering	ProcessNotifyWindowLayoutCompleted	Verbose		
+Microsoft-Windows-XAML	262	1	ProcessNotifyWindowLayoutCompleted_V1(UInt64 Window)		Rendering	ProcessNotifyWindowLayoutCompleted	Verbose		
+Microsoft-Windows-XAML	263	0	RenderThreadSkipFrameNotDirty()		Rendering	RenderThreadSkipFrameNotDirty	Informational		
+Microsoft-Windows-XAML	264	0	RenderThreadTimeManagerTickStart()	Start	Rendering	RenderThreadTimeManagerTick	Informational		
+Microsoft-Windows-XAML	265	0	RenderThreadTimeManagerTickStop()	Stop	Rendering	RenderThreadTimeManagerTick	Informational		
+Microsoft-Windows-XAML	266	0	PrimitiveCompositionTextureUpdateStart(UInt64 SourceSurface, UInt64 DestinationSurface, UInt32 UpdateType, UInt32 SourceX, UInt32 SourceY, UInt32 SourceWidth, UInt32 SourceHeight, UInt32 TargetOffsetX, UInt32 TargetOffsetY, UInt64 Pixels, UInt32 BitDepth)	Start	Rendering	PrimitiveCompositionTextureUpdate	Verbose		
+Microsoft-Windows-XAML	267	0	PrimitiveCompositionTextureUpdateStop()	Stop	Rendering	PrimitiveCompositionTextureUpdate	Verbose		
+Microsoft-Windows-XAML	268	0	UIThreadSoftwareRasterizeWaitStart()	Start	Rendering	UIThreadSoftwareRasterizeWait	Verbose		
+Microsoft-Windows-XAML	269	0	UIThreadSoftwareRasterizeWaitStop()	Stop	Rendering	UIThreadSoftwareRasterizeWait	Verbose		
+Microsoft-Windows-XAML	270	0	UIThreadTextRasterizeWaitStart()	Start	Rendering	UIThreadTextRasterizeWait	Verbose		
+Microsoft-Windows-XAML	271	0	UIThreadTextRasterizeWaitStop()	Stop	Rendering	UIThreadTextRasterizeWait	Verbose		
+Microsoft-Windows-XAML	272	0	UIThreadWaitGPUWorkStart()	Start	Rendering	UIThreadWaitGPUWork	Verbose		
+Microsoft-Windows-XAML	273	0	UIThreadWaitGPUWorkStop()	Stop	Rendering	UIThreadWaitGPUWork	Verbose		
+Microsoft-Windows-XAML	274	0	DmTickStart()	Start	Input	DmTick	Informational		
+Microsoft-Windows-XAML	275	0	DmTickStop()	Stop	Input	DmTick	Informational		
+Microsoft-Windows-XAML	276	0	PrimitiveCompositionTexture8BitExpandStart()	Start	DComp	PrimitiveCompositionTexture8BitExpand	Verbose		
+Microsoft-Windows-XAML	277	0	PrimitiveCompositionTexture8BitExpandStop(UInt64 SourceSurface, UInt64 DestinationSurface, UInt32 UpdateType, UInt32 SourceX, UInt32 SourceY, UInt32 SourceWidth, UInt32 SourceHeight, UInt32 TargetOffsetX, UInt32 TargetOffsetY, UInt64 Pixels, UInt32 BitDepth)	Stop	DComp	PrimitiveCompositionTexture8BitExpand	Verbose		
+Microsoft-Windows-XAML	278	0	DCompInsertChild(UInt64 ParentDCompVisual, UInt64 ChildDCompVisual, UInt64 PreviousSiblingDCompVisual)		DComp	DCompInsertChild	Verbose		
+Microsoft-Windows-XAML	279	0	DCompRemoveChild(UInt64 ParentDCompVisual, UInt64 ChildDCompVisual)		DComp	DCompRemoveChild	Verbose		
+Microsoft-Windows-XAML	280	0	DCompSetPrimitiveGroup(UInt64 DCompVisual, UInt64 PrimitiveGroup)		DComp	DCompSetPrimitiveGroup	Verbose		
+Microsoft-Windows-XAML	281	0	DCompInsertPrimitiveAtHead(UInt64 Primitive, UInt64 PrimitiveGroup)		DComp	DCompInsertPrimitiveAtHead	Verbose		
+Microsoft-Windows-XAML	282	0	DCompRemovePrimitive(UInt64 Primitive)		DComp	DCompRemovePrimitive	Verbose		
+Microsoft-Windows-XAML	283	0	DCompSplitPrimitiveGroup(UInt64 SplitAfter, UInt64 NewPrimitiveGroup)		DComp	DCompSplitPrimitiveGroup	Verbose		
+Microsoft-Windows-XAML	284	0	DCompMergePrimitiveGroup(UInt64 From, UInt64 To)		DComp	DCompMergePrimitiveGroup	Verbose		
+Microsoft-Windows-XAML	285	0	CompTreeCreateTreeNode(UInt64 CompNode, UInt32 IsEmulated, UInt32 IsPlaceholder)		DComp	CompTreeCreateTreeNode	Verbose		
+Microsoft-Windows-XAML	286	0	CompTreeCreateRenderDataNode(UInt64 CompNode, UInt64 PrimitiveGroup, UInt32 IsEmulated)		DComp	CompTreeCreateRenderDataNode	Verbose		
+Microsoft-Windows-XAML	287	0	CompTreeCreateRedirectedNode(UInt64 CompNode, UInt32 IsEmulated)		DComp	CompTreeCreateRedirectedNode	Verbose		
+Microsoft-Windows-XAML	288	0	CompTreeInsertChild(UInt64 Parent, UInt64 Child, UInt64 ReferenceNode, UInt32 InsertAtBeginning)		DComp	CompTreeInsertChild	Verbose		
+Microsoft-Windows-XAML	289	0	CompTreeRemoveChild(UInt64 Parent, UInt64 Child)		DComp	CompTreeRemoveChild	Verbose		
+Microsoft-Windows-XAML	290	0	CompTreeRemoveFromParentStart(UInt64 Parent, UInt64 Child, UInt32 RemoveForReparenting, UInt32 MergePrimitiveGroups)	Start	DComp	CompTreeRemoveFromParent	Verbose		
+Microsoft-Windows-XAML	291	0	CompTreeRemoveFromParentStop(UInt64 Parent, UInt64 Child, UInt32 RemoveForReparenting, UInt32 MergePrimitiveGroups)	Stop	DComp	CompTreeRemoveFromParent	Verbose		
+Microsoft-Windows-XAML	292	0	CompTreeSetRedirectionTarget(UInt64 RedirectionNode, UInt64 RedirectionTargetAncestor)		DComp	CompTreeSetRedirectionTarget	Verbose		
+Microsoft-Windows-XAML	293	0	CompTreeSetPrimitiveGroup(UInt64 RenderDataNode, UInt64 PrimitiveGroup)		DComp	CompTreeSetPrimitiveGroup	Verbose		
+Microsoft-Windows-XAML	294	0	CompTreeCleanupVisual(UInt64 Node, UInt32 VisualIndex)		DComp	CompTreeCleanupVisual	Verbose		
+Microsoft-Windows-XAML	295	0	CompTreeSetCompositionPeer(UInt64 Element, UInt64 CompNode)		DComp	CompTreeSetCompositionPeer	Verbose		
+Microsoft-Windows-XAML	296	0	CompTreeRemoveCompositionPeer(UInt64 Element, UInt64 CompNode)		DComp	CompTreeRemoveCompositionPeer	Verbose		
+Microsoft-Windows-XAML	297	0	ResourceDictionaryAdd(UInt64 ResourceDictionaryId, UInt64 ResourceId, UnicodeString Key, Boolean KeyIsType)		Core	ResourceDictionaryAdd	Verbose		
+Microsoft-Windows-XAML	298	0	ResourceDictionaryRemove(UInt64 ResourceDictionaryId, UnicodeString Key, Boolean KeyIsType)		Core	ResourceDictionaryRemove	Verbose		
+Microsoft-Windows-XAML	299	0	ResourceDictionaryClear(UInt64 ResourceDictionaryId)		Core	ResourceDictionaryClear	Verbose		
+Microsoft-Windows-XAML	300	0	LoadTemplateContentStart(UInt64 TemplateId)	Start	Templates	LoadTemplateContent	Verbose		
+Microsoft-Windows-XAML	301	0	LoadTemplateContentStop(UInt64 TemplateId, UInt64 ElementId)	Stop	Templates	LoadTemplateContent	Verbose		
+Microsoft-Windows-XAML	302	0	SetTemplateOwner(UInt64 TemplateId, UInt64 OwnerId, Boolean OwnerIsStyle)		Templates	SetTemplateOwner	Verbose		
+Microsoft-Windows-XAML	303	0	ElementStyleChanged(UInt64 ElementId, UInt64 StyleId)		Core	ElementStyleChanged	Verbose		
+Microsoft-Windows-XAML	304	0	TouchSelectionGripperShowBegin(UInt32 IsSelectionStartGripper, UInt32 CenterX, UInt32 CenterY)		Input	TouchSelectionGripperShowBegin	Informational		
+Microsoft-Windows-XAML	305	0	TouchSelectionGripperShowEnd(UInt32 IsSelectionStartGripper, UInt32 CenterX, UInt32 CenterY)		Input	TouchSelectionGripperShowEnd	Informational		
+Microsoft-Windows-XAML	306	0	TouchSelectionGripperHideBegin(UInt32 IsSelectionStartGripper, UInt32 CenterX, UInt32 CenterY)		Input	TouchSelectionGripperHideBegin	Informational		
+Microsoft-Windows-XAML	307	0	TouchSelectionGripperHideEnd(UInt32 IsSelectionStartGripper, UInt32 CenterX, UInt32 CenterY)		Input	TouchSelectionGripperHideEnd	Informational		
+Microsoft-Windows-XAML	308	0	TouchSelectionGripperTetherBegin()		Input	TouchSelectionGripperTetherBegin	Informational		
+Microsoft-Windows-XAML	309	0	TouchSelectionGripperTetherEnd()		Input	TouchSelectionGripperTetherEnd	Informational		
+Microsoft-Windows-XAML	310	0	TouchSelectionGripperReposition(UInt32 IsSelectionStartGripper, UInt32 CenterX, UInt32 CenterY)		Input	TouchSelectionGripperReposition	Informational		
+Microsoft-Windows-XAML	311	0	NotifyGripperPositionChangedStart()	Start	Input	NotifyGripperPositionChanged	Informational		
+Microsoft-Windows-XAML	312	0	NotifyGripperPositionChangedStop()	Stop	Input	NotifyGripperPositionChanged	Informational		
+Microsoft-Windows-XAML	313	0	ChangeSelectionStart()	Start	Input	ChangeSelection	Informational		
+Microsoft-Windows-XAML	314	0	ChangeSelectionStop()	Stop	Input	ChangeSelection	Informational		
+Microsoft-Windows-XAML	315	0	ComputeSnappingModeStart()	Start	Input	ComputeSnappingMode	Informational		
+Microsoft-Windows-XAML	316	0	ComputeSnappingModeStop()	Stop	Input	ComputeSnappingMode	Informational		
+Microsoft-Windows-XAML	317	0	ExtendSelectionRangeStart()	Start	Input	ExtendSelectionRange	Informational		
+Microsoft-Windows-XAML	318	0	ExtendSelectionRangeStop()	Stop	Input	ExtendSelectionRange	Informational		
+Microsoft-Windows-XAML	319	0	ExtendToBlockBoundariesStart()	Start	Input	ExtendToBlockBoundaries	Informational		
+Microsoft-Windows-XAML	320	0	ExtendToBlockBoundariesStop()	Stop	Input	ExtendToBlockBoundaries	Informational		
+Microsoft-Windows-XAML	321	0	DmPointerHitTestStart()	Start	Input	DmPointerHitTest	Informational		
+Microsoft-Windows-XAML	322	0	DmPointerHitTestStop()	Stop	Input	DmPointerHitTest	Informational		
+Microsoft-Windows-XAML	323	0	VirtualizedCollectionUpdated(UInt64 ScrollViewerId, Float Left, Float Top, Float Width, Float Height, Float ViewportWidth, Float ViewportHeight, Float ExtentWidth, Float ExtentHeight, Boolean HasPlaceholders)		Input	VirtualizedCollectionUpdated	Informational		
+Microsoft-Windows-XAML	324	0	ImmersiveColorsStart()	Start	Core	ImmersiveColors	Informational		
+Microsoft-Windows-XAML	325	0	ImmersiveColorsStop()	Stop	Core	ImmersiveColors	Informational		
+Microsoft-Windows-XAML	326	0	SearchBoxQueryTextChanged()		Controls	SearchBoxQueryTextChanged	Informational		
+Microsoft-Windows-XAML	327	0	CompositorLockStart()	Start	Rendering	CompositorLock	Informational		
+Microsoft-Windows-XAML	328	0	CompositorLockStop()	Stop	Rendering	CompositorLock	Informational		
+Microsoft-Windows-XAML	329	0	CommitMainDeviceStart()	Start	Rendering	CommitMainDevice	Informational		
+Microsoft-Windows-XAML	330	0	CommitMainDeviceStop()	Stop	Rendering	CommitMainDevice	Informational		
+Microsoft-Windows-XAML	331	0	CommitSecondaryDeviceStart()	Start	Rendering	CommitSecondaryDevice	Informational		
+Microsoft-Windows-XAML	332	0	CommitSecondaryDeviceStop()	Stop	Rendering	CommitSecondaryDevice	Informational		
+Microsoft-Windows-XAML	333	0	OfferResourcesStart()	Start	Rendering	OfferResources	Informational		
+Microsoft-Windows-XAML	334	0	OfferResourcesStop(Boolean IsSurfaceBeingRendered)	Stop	Rendering	OfferResources	Informational		
+Microsoft-Windows-XAML	335	0	ReclaimResourcesStart()	Start	Rendering	ReclaimResources	Informational		
+Microsoft-Windows-XAML	336	0	ReclaimResourcesStop(Boolean WasDiscarded)	Stop	Rendering	ReclaimResources	Informational		
+Microsoft-Windows-XAML	337	0	PerfTrackDetection(UInt32 DummyMetric)			PerfTrackDetection	Informational		
+Microsoft-Windows-XAML	338	0	BlockOnGPUStart(UInt64 Device)	Start	Rendering	BlockOnGPU	Verbose		
+Microsoft-Windows-XAML	339	0	BlockOnGPUStop(UInt64 Device)	Stop	Rendering	BlockOnGPU	Verbose		
+Microsoft-Windows-XAML	340	0	DCompCreatePrimitive(UInt64 Primitive, Float Left, Float Top, Float Right, Float Bottom, UInt32 Color, Float Opacity)		DComp	DCompCreatePrimitive	Verbose		
+Microsoft-Windows-XAML	341	0	DCompAddPrimitiveToRenderDataList(UInt64 Primitive, UInt64 PCRenderDataList)		DComp	DCompAddPrimitiveToRenderDataList	Verbose		
+Microsoft-Windows-XAML	342	0	DCompLinkPrimitive(UInt64 Primitive, UInt64 InsertAfter)		DComp	DCompLinkPrimitive	Verbose		
+Microsoft-Windows-XAML	343	0	CompTreeCreateMediaNode(UInt64 CompNode)		DComp	CompTreeCreateMediaNode	Verbose		
+Microsoft-Windows-XAML	344	0	CompTreeCreateSwapChainNode(UInt64 CompNode)		DComp	CompTreeCreateSwapChainNode	Verbose		
+Microsoft-Windows-XAML	345	0	DCompSetOpacity(UInt64 Visual, Float Opacity, UInt32 IsAnimated)		DComp	DCompSetOpacity	Verbose		
+Microsoft-Windows-XAML	346	0	DCompCreateTransform(UInt64 TransformMainDevice, UInt64 TransformSecondaryDevice)		DComp	DCompCreateTransform	Verbose		
+Microsoft-Windows-XAML	347	0	DCompCreateTransformGroup(UInt64 TransformGroup)		DComp	DCompCreateTransformGroup	Verbose		
+Microsoft-Windows-XAML	348	0	DCompSetTransformValue(UInt64 Transform, Float M11, Float M12, Float M21, Float M22, Float M31, Float M32)		DComp	DCompSetTransformValue	Verbose		
+Microsoft-Windows-XAML	349	0	DCompAddTransformToGroup(UInt64 TransformGroup, UInt64 Transform, UInt32 Index)		DComp	DCompAddTransformToGroup	Verbose		
+Microsoft-Windows-XAML	350	0	RenderThreadSimulateVBlankStart()	Start	Rendering	RenderThreadSimulateVBlank	Informational		
+Microsoft-Windows-XAML	351	0	RenderThreadSimulateVBlankStop()	Stop	Rendering	RenderThreadSimulateVBlank	Informational		
+Microsoft-Windows-XAML	352	0	VirtualizedCollectionBounds(UInt64 ScrollViewerId, Float Left, Float Top, Float Width, Float Height)		Input	VirtualizedCollectionBounds	Informational		
+Microsoft-Windows-XAML	353	0	VirtualizedItemAdded(UInt64 ElementId, UInt64 ScrollViewerId, Int32 ItemIndex, Boolean IsPlaceholder)		Input	VirtualizedItemAdded	Verbose		
+Microsoft-Windows-XAML	354	0	VirtualizedItemUpdated(UInt64 ElementId, UInt32 Phase)		Input	VirtualizedItemUpdated	Verbose		
+Microsoft-Windows-XAML	355	0	VirtualizedItemRemoved(UInt64 ElementId)		Input	VirtualizedItemRemoved	Verbose		
+Microsoft-Windows-XAML	356	0	DecodeToRenderSize(UInt64 ImageId, UInt32 RenderWidth, UInt32 RenderHeight, UInt32 PreviousDecodeWidth, UInt32 PreviousDecodeHeight, UInt32 DecodeWidth, UInt32 DecodeHeight, UInt32 NativeWidth, UInt32 NativeHeight, UInt32 LayoutWidth, UInt32 LayoutHeight)		Images	DecodeToRenderSize	Informational		
+Microsoft-Windows-XAML	357	0	DecodeGreaterThanRenderSize(UInt64 ImageId, UInt32 RenderWidth, UInt32 RenderHeight, UInt32 PreviousDecodeWidth, UInt32 PreviousDecodeHeight, UInt32 DecodeWidth, UInt32 DecodeHeight, UInt32 NativeWidth, UInt32 NativeHeight, UInt32 LayoutWidth, UInt32 LayoutHeight)		Images	DecodeGreaterThanRenderSize	Informational		
+Microsoft-Windows-XAML	358	0	DecodeSizeQueryStart()	Start	Images	DecodeSizeQuery	Verbose		
+Microsoft-Windows-XAML	359	0	DecodeSizeQueryStop()	Stop	Images	DecodeSizeQuery	Verbose		
+Microsoft-Windows-XAML	360	0	DecodeToRenderSizeStart(UInt64 ImageId, UnicodeString URI)	Start	Images	DecodeToRenderSize	Verbose		
+Microsoft-Windows-XAML	361	0	DecodeToRenderSizeStop(UInt64 ImageId, UnicodeString URI)	Stop	Images	DecodeToRenderSize	Verbose		
+Microsoft-Windows-XAML	362	0	ImageRequestDecodeStart(UInt64 ImageId, UnicodeString URI)	Start	Images	ImageRequestDecode	Verbose		
+Microsoft-Windows-XAML	363	0	ImageRequestDecodeStop(UInt64 ImageId, UnicodeString URI)	Stop	Images	ImageRequestDecode	Verbose		
+Microsoft-Windows-XAML	364	0	ImageEnsureAndUpdateHardwareResourcesStart(UInt64 ImageId, UnicodeString URI)	Start	Images	ImageEnsureAndUpdateHardwareResources	Verbose		
+Microsoft-Windows-XAML	365	0	ImageEnsureAndUpdateHardwareResourcesStop(UInt64 ImageId, UnicodeString URI)	Stop	Images	ImageEnsureAndUpdateHardwareResources	Verbose		
+Microsoft-Windows-XAML	366	0	ImageCopyToVideoMemoryStart(UInt64 Id)	Start	Images	ImageCopyToVideoMemory	Verbose		
+Microsoft-Windows-XAML	367	0	ImageCopyToVideoMemoryStop(UInt64 Id)	Stop	Images	ImageCopyToVideoMemory	Verbose		
+Microsoft-Windows-XAML	368	0	ImageDownloadAvailableStart(UInt64 ImageId, UnicodeString URI)	Start	Images	ImageDownloadAvailable	Verbose		
+Microsoft-Windows-XAML	369	0	ImageDownloadAvailableStop(UInt64 ImageId, UnicodeString URI)	Stop	Images	ImageDownloadAvailable	Verbose		
+Microsoft-Windows-XAML	370	0	ImageSetSourceStart(UInt64 Id)	Start	Images	ImageSetSource	Verbose		
+Microsoft-Windows-XAML	371	0	ImageSetSourceStop(UInt64 Id)	Stop	Images	ImageSetSource	Verbose		
+Microsoft-Windows-XAML	372	0	ImageSetSourceFromUriStart(UInt64 ImageId, UnicodeString URI)	Start	Images	ImageSetSourceFromUri	Verbose		
+Microsoft-Windows-XAML	373	0	ImageSetSourceFromUriStop(UInt64 ImageId, UnicodeString URI)	Stop	Images	ImageSetSourceFromUri	Verbose		
+Microsoft-Windows-XAML	374	0	ImageResetForSourceChangeStart(UInt64 ImageId, UnicodeString URI)	Start	Images	ImageResetForSourceChange	Verbose		
+Microsoft-Windows-XAML	375	0	ImageResetForSourceChangeStop(UInt64 ImageId, UnicodeString URI)	Stop	Images	ImageResetForSourceChange	Verbose		
+Microsoft-Windows-XAML	376	0	ImageUsesColorTransform()		Images	ImageUsesColorTransform	Informational		
+Microsoft-Windows-XAML	377	0	VirtualizationIsEnabledByModernPanelUsage(Boolean IsEnabled)		Controls	VirtualizationIsEnabledByModernPanelUsage	Informational		
+Microsoft-Windows-XAML	378	0	VirtualizationIsEnabledByLayout(Boolean IsEnabled)		Controls	VirtualizationIsEnabledByLayout	Informational		
+Microsoft-Windows-XAML	379	0	HubSectionCount(UInt32 CurrentSectionCount)		Controls	HubSectionCount	Informational		
+Microsoft-Windows-XAML	380	0	RenderToSurfaceStart()	Start	Rendering	RenderToSurface	Informational		
+Microsoft-Windows-XAML	381	0	RenderToSurfaceStop()	Stop	Rendering	RenderToSurface	Informational		
+Microsoft-Windows-XAML	382	0	DecodeToRenderSizeDisabled(UInt64 ImageId, UnicodeString Reason)		Images	DecodeToRenderSizeDisabled	Informational		
+Microsoft-Windows-XAML	383	0	DmContentValuesUpdateStart(UInt64 ViewportId, UInt64 ContentId)	Start	Input	DmContentValuesUpdate	Informational		
+Microsoft-Windows-XAML	384	0	DmContentValuesUpdateStop(UInt64 ViewportId, UInt64 ContentId, UInt32 ContentType, Float TranslationX, Float TranslationY, Float ZoomFactor, Float ZoomFactorX, Float ZoomFactorY)	Stop	Input	DmContentValuesUpdate	Informational		
+Microsoft-Windows-XAML	385	0	DmCompositorContentValuesUpdateStart(UInt64 ViewportId, UInt64 ContentId)	Start	Input	DmCompositorContentValuesUpdate	Informational		
+Microsoft-Windows-XAML	386	0	DmCompositorContentValuesUpdateStop(UInt64 ViewportId, UInt64 ContentId, UInt32 ContentType, Float TranslationX, Float TranslationY, Float ZoomFactor, Float ZoomFactorX, Float ZoomFactorY)	Stop	Input	DmCompositorContentValuesUpdate	Informational		
+Microsoft-Windows-XAML	387	0	FrameNavigating(UnicodeString PageDescriptor, UInt8 NavigationMode)		Appmodel	FrameNavigating	Informational		
+Microsoft-Windows-XAML	388	0	FrameNavigated(UnicodeString PageDescriptor, UInt8 NavigationMode)		Appmodel	FrameNavigated	Informational		
+Microsoft-Windows-XAML	389	0	NavigationCacheGetContent(UnicodeString PageDescriptor, Boolean InCache)		Appmodel	NavigationCacheGetContent	Informational		
+Microsoft-Windows-XAML	390	0	CreateDManipSharedTransform()		DComp	CreateDManipSharedTransform	Informational		
+Microsoft-Windows-XAML	391	0	ReleaseDManipSharedTransform()		DComp	ReleaseDManipSharedTransform	Informational		
+Microsoft-Windows-XAML	392	0	UpdateDependencyPropertiesForSCR()		DComp	UpdateDependencyPropertiesForSCR	Informational		
+Microsoft-Windows-XAML	393	0	VideoStreamSize(UInt64 Id, UInt32 Width, UInt32 Height)		Media	VideoStreamSize	Informational		
+Microsoft-Windows-XAML	394	0	ExportHeapHandle(UInt64 Handle)			ExportHeapHandle	Informational		
+Microsoft-Windows-XAML	395	0	ExternalAtlasSizeOverride(UInt64 Id, UInt32 Width, UInt32 Height)			ExternalAtlasSizeOverride	Informational		
+Microsoft-Windows-XAML	396	0	InitializeMediaEffect(UInt64 Id, UnicodeString EffectId, UInt32 EffectType, UInt32 EffectOptional)		Media	InitializeMediaEffect	Informational		
+Microsoft-Windows-XAML	397	0	RealizeDeferredElementStart(UInt64 DeferredElementId)	Start	Templates	RealizeDeferredElement	Verbose		
+Microsoft-Windows-XAML	398	0	RealizeDeferredElementStop(UInt64 DeferredElementId, UInt64 RealizedElementId)	Stop	Templates	RealizeDeferredElement	Verbose		
+Microsoft-Windows-XAML	399	0	UpdateInputScope(UInt32 InputScopeValue)			UpdateInputScope	Informational		
+Microsoft-Windows-XAML	400	0	UpdateInputScope400(UInt32 IKSkinValue)			UpdateInputScope	Informational		
+Microsoft-Windows-XAML	401	0	ImageUpdateHardwareResourcesStart(UInt64 Id)	Start	Images	ImageUpdateHardwareResources	Verbose		
+Microsoft-Windows-XAML	402	0	ImageUpdateHardwareResourcesStop(UInt64 Id)	Stop	Images	ImageUpdateHardwareResources	Verbose		
+Microsoft-Windows-XAML	403	0	CurveSegment(UInt32 Axis, UInt32 Curve, UInt32 Segment, Float Offset, Float Constant, Float Linear)		Input	CurveSegment	Verbose		
+Microsoft-Windows-XAML	404	0	ContentOffsets(Int32 ContentType, Float OffsetX, Float OffseY)		Input	ContentOffsets	Verbose		
+Microsoft-Windows-XAML	405	0	ManipulationTransformCreated(UInt64 address)		Input	ManipulationTransformCreated	Verbose		
+Microsoft-Windows-XAML	406	0	ManipulationTransformUpdate(UInt64 address, Float TranslateX, Float TranslateY)		Input	ManipulationTransformUpdate	Verbose		
+Microsoft-Windows-XAML	407	0	CompNodeOffset(Float translateX, Float translateY)		Input	CompNodeOffset	Verbose		
+Microsoft-Windows-XAML	408	0	ManipulationTransformDestroyed(UInt64 address)		Input	ManipulationTransformDestroyed	Verbose		
+Microsoft-Windows-XAML	409	0	FaultInBehaviorStart(UnicodeString FaultInType)	Start	Parser	FaultInBehavior	Verbose		
+Microsoft-Windows-XAML	410	0	FaultInBehaviorStop()	Stop	Parser	FaultInBehavior	Verbose		

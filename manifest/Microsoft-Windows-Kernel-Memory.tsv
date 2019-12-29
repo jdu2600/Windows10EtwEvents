@@ -1,0 +1,17 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Kernel-Memory	1	1	MemInfo_V1(UInt8 PriorityLevels, Pointer ZeroPageCount, Pointer FreePageCount, Pointer ModifiedPageCount, Pointer ModifiedNoWritePageCount, Pointer BadPageCount, Pointer StandbyPageCounts, Pointer RepurposedPageCounts, Pointer ModifiedPageCountPageFile, Pointer PagedPoolPageCount, Pointer NonPagedPoolPageCount, Pointer MdlPageCount, Pointer CommitPageCount)		KERNEL_MEM_KEYWORD_MEMINFO	MemInfo	Informational		
+Microsoft-Windows-Kernel-Memory	2	0	MemInfoWS(UInt32 Count, AnsiString WSCommitInfo)		KERNEL_MEM_KEYWORD_MEMINFO_EX	MemInfoWS	Informational		
+Microsoft-Windows-Kernel-Memory	2	1	MemInfoWS_V1(UInt32 Count, AnsiString WSCommitInfo)		KERNEL_MEM_KEYWORD_MEMINFO_EX	MemInfoWS	Informational		
+Microsoft-Windows-Kernel-Memory	2	2	MemInfoWS_V2(UInt32 Count, AnsiString WSCommitInfo)		KERNEL_MEM_KEYWORD_MEMINFO_EX	MemInfoWS	Informational		
+Microsoft-Windows-Kernel-Memory	3	0	MemInfoSessionWS(UInt32 Count, AnsiString SessionWSCommitInfo)		KERNEL_MEM_KEYWORD_MEMINFO_EX	MemInfoSessionWS	Informational		
+Microsoft-Windows-Kernel-Memory	3	1	MemInfoSessionWS_V1(UInt32 Count, AnsiString SessionWSCommitInfo)		KERNEL_MEM_KEYWORD_MEMINFO_EX	MemInfoSessionWS	Informational		
+Microsoft-Windows-Kernel-Memory	3	2	MemInfoSessionWS_V2(UInt32 Count, AnsiString SessionWSCommitInfo)		KERNEL_MEM_KEYWORD_MEMINFO_EX	MemInfoSessionWS	Informational		
+Microsoft-Windows-Kernel-Memory	4	0	WorkingSetOutSwapStart(UInt32 ProcessId)	Start	KERNEL_MEM_KEYWORD_WS_SWAP	WorkingSetOutSwap	Informational		
+Microsoft-Windows-Kernel-Memory	4	1	WorkingSetOutSwapStart_V1(UInt32 ProcessId, HexInt32 Flags)	Start	KERNEL_MEM_KEYWORD_WS_SWAP	WorkingSetOutSwap	Informational		
+Microsoft-Windows-Kernel-Memory	5	0	WorkingSetOutSwapStop(UInt32 ProcessId, HexInt32 Status, UInt32 PagesProcessed)	Stop	KERNEL_MEM_KEYWORD_WS_SWAP	WorkingSetOutSwap	Informational		
+Microsoft-Windows-Kernel-Memory	5	1	WorkingSetOutSwapStop_V1(UInt32 ProcessId, HexInt32 Status, Pointer PagesProcessed, Pointer WriteCombinePagesProcessed, Pointer UncachedPagesProcessed, Pointer CleanPagesProcessed)	Stop	KERNEL_MEM_KEYWORD_WS_SWAP	WorkingSetOutSwap	Informational		
+Microsoft-Windows-Kernel-Memory	6	0	WorkingSetInSwapStart(UInt32 ProcessId)	Start	KERNEL_MEM_KEYWORD_WS_SWAP	WorkingSetInSwap	Informational		
+Microsoft-Windows-Kernel-Memory	6	1	WorkingSetInSwapStart_V1(UInt32 ProcessId, HexInt32 Flags)	Start	KERNEL_MEM_KEYWORD_WS_SWAP	WorkingSetInSwap	Informational		
+Microsoft-Windows-Kernel-Memory	7	0	WorkingSetInSwapStop(UInt32 ProcessId, HexInt32 Status)	Stop	KERNEL_MEM_KEYWORD_WS_SWAP	WorkingSetInSwap	Informational		
+Microsoft-Windows-Kernel-Memory	8	0	Acg(UInt32 AcgFlag)		KERNEL_MEM_KEYWORD_ACG	Acg	Informational		
+Microsoft-Windows-Kernel-Memory	9	0	WorkingSetInSwap(UInt32 ProcessId, HexInt32 Status)		KERNEL_MEM_KEYWORD_WS_SWAP	WorkingSetInSwap	Informational		

@@ -1,0 +1,80 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-WindowsUpdateClient	16	0	AutomaticUpdatesCheckforUpdates()	CheckforUpdates	connection	AutomaticUpdates	Warning		
+Microsoft-Windows-WindowsUpdateClient	17	0	AutomaticUpdatesDownload(UnicodeString updatelist)	Download	download success	AutomaticUpdates	Informational		
+Microsoft-Windows-WindowsUpdateClient	18	0	AutomaticUpdatesDownload18(UnicodeString schedinstalldate, UnicodeString schedinstalltime, UnicodeString updatelist)	Download	download success	AutomaticUpdates	Informational		
+Microsoft-Windows-WindowsUpdateClient	19	0	WindowsUpdateAgentInstallation(UnicodeString updateTitle, GUID updateGuid, UInt32 updateRevisionNumber)	Installation	install success	WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	19	1	WindowsUpdateAgentInstallation_V1(UnicodeString updateTitle, GUID updateGuid, UInt32 updateRevisionNumber, GUID serviceGuid)	Installation	install success	WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	20	0	WindowsUpdateAgentInstallation20(HexInt32 errorCode, UnicodeString updateTitle, GUID updateGuid, UInt32 updateRevisionNumber)	Installation	install failure	WindowsUpdateAgent	Error		
+Microsoft-Windows-WindowsUpdateClient	20	1	WindowsUpdateAgentInstallation20_V1(HexInt32 errorCode, UnicodeString updateTitle, GUID updateGuid, UInt32 updateRevisionNumber, GUID serviceGuid)	Installation	install failure	WindowsUpdateAgent	Error		
+Microsoft-Windows-WindowsUpdateClient	21	0	AutomaticUpdatesReboot(UnicodeString updatelist)	Reboot	reboot	AutomaticUpdates	Informational		
+Microsoft-Windows-WindowsUpdateClient	22	0	AutomaticUpdatesReboot22(UnicodeString restarttime, UnicodeString updatelist)	Reboot	reboot	AutomaticUpdates	Informational		
+Microsoft-Windows-WindowsUpdateClient	23	0	WindowsUpdateAgentUninstallation(UnicodeString updateTitle, GUID updateGuid, UInt32 updateRevisionNumber)	Uninstallation	install success	WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	23	1	WindowsUpdateAgentUninstallation_V1(UnicodeString updateTitle, GUID updateGuid, UInt32 updateRevisionNumber, GUID serviceGuid)	Uninstallation	install success	WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	24	0	WindowsUpdateAgentUninstallation24(HexInt32 errorCode, UnicodeString updatelist, GUID updateGuid, UInt32 updateRevisionNumber)	Uninstallation	install failure	WindowsUpdateAgent	Error		
+Microsoft-Windows-WindowsUpdateClient	24	1	WindowsUpdateAgentUninstallation24_V1(HexInt32 errorCode, UnicodeString updatelist, GUID updateGuid, UInt32 updateRevisionNumber, GUID serviceGuid)	Uninstallation	install failure	WindowsUpdateAgent	Error		
+Microsoft-Windows-WindowsUpdateClient	25	0	WindowsUpdateAgentCheckforUpdates(HexInt32 errorCode)	CheckforUpdates	detect failure	WindowsUpdateAgent	Error		
+Microsoft-Windows-WindowsUpdateClient	25	1	WindowsUpdateAgentCheckforUpdates_V1(HexInt32 errorCode, GUID serviceGuid)	CheckforUpdates	detect failure	WindowsUpdateAgent	Error		
+Microsoft-Windows-WindowsUpdateClient	26	0	WindowsUpdateAgentCheckforUpdates26(UInt32 updateCount)	CheckforUpdates	detect success	WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	26	1	WindowsUpdateAgentCheckforUpdates26_V1(UInt32 updateCount, GUID serviceGuid)	CheckforUpdates	detect success	WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	27	0	WindowsUpdateAgentStateChange()	StateChange	state	WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	28	0	WindowsUpdateAgentStateChange28()	StateChange	state	WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	29	0	WindowsUpdateAgentStateChange_1_17()	StateChange_1_17	connection	WindowsUpdateAgent	Warning		
+Microsoft-Windows-WindowsUpdateClient	30	0	WindowsUpdateAgentStateChange_1_1730()	StateChange_1_17	connection	WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	31	0	WindowsUpdateAgentDownload(HexInt32 errorCode, GUID updateGuid, UInt32 updateRevisionNumber)	Download	download failure	WindowsUpdateAgent	Error		
+Microsoft-Windows-WindowsUpdateClient	31	1	WindowsUpdateAgentDownload_V1(UnicodeString updateTitle, HexInt32 errorCode, GUID updateGuid, UInt32 updateRevisionNumber)	Download	download failure	WindowsUpdateAgent	Error		
+Microsoft-Windows-WindowsUpdateClient	32	0	WindowsUpdateAgentStateChange_1_1732(UnicodeString serverName)	StateChange_1_17	connection	WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	33	0	WindowsUpdateAgentStateChange_1_1733(UnicodeString serverName)	StateChange_1_17	connection	WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	34	0	WindowsUpdateAgentSelfUpdate(HexInt32 errorCode)	SelfUpdate	failure selfupdate	WindowsUpdateAgent	Warning		
+Microsoft-Windows-WindowsUpdateClient	35	0	WindowsUpdateAgentSelfUpdate35(HexInt32 errorCode)	SelfUpdate	failure selfupdate	WindowsUpdateAgent	Warning		
+Microsoft-Windows-WindowsUpdateClient	36	0	WindowsUpdateAgentSelfUpdate36(UnicodeString version1, UnicodeString version2)	SelfUpdate	success selfupdate	WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	37	0	WindowsUpdateAgentSelfUpdate37(UnicodeString version1, UnicodeString version2)	SelfUpdate	success selfupdate	WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	38	0	WindowsUpdateAgentStateChange_1_1738()	StateChange_1_17	state service	WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	39	0	WindowsUpdateAgentStateChange_1_1739()	StateChange_1_17	state service	WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	40	0	WindowsUpdateAgentStateChange_1_1740(GUID updateGuid, UInt32 updateRevisionNumber)	StateChange_1_17	detect	WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	40	1	WindowsUpdateAgentStateChange_1_1740_V1(GUID updateGuid, UInt32 updateRevisionNumber, GUID serviceGuid)	StateChange_1_17	detect	WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	41	0	WindowsUpdateAgentDownload41(GUID updateGuid, UInt32 updateRevisionNumber)	Download	download success	WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	41	1	WindowsUpdateAgentDownload41_V1(UnicodeString updateTitle, GUID updateGuid, UInt32 updateRevisionNumber)	Download	download success	WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	42	0	AutomaticUpdatesOther(UInt32 hc_stateid, UnicodeString restartDate, UnicodeString restartTime)	Other	state health	AutomaticUpdates	Informational		
+Microsoft-Windows-WindowsUpdateClient	43	0	WindowsUpdateAgentInstallation43(UnicodeString updateTitle, GUID updateGuid, UInt32 updateRevisionNumber)	Installation	install started	WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	43	1	WindowsUpdateAgentInstallation43_V1(UnicodeString updateTitle, GUID updateGuid, UInt32 updateRevisionNumber)	Installation	install started	WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	44	0	WindowsUpdateAgentDownload44(GUID updateGuid, UInt32 updateRevisionNumber)	Download	download started	WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	44	1	WindowsUpdateAgentDownload44_V1(UnicodeString updateTitle, GUID updateGuid, UInt32 updateRevisionNumber)	Download	download started	WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	200	0	WindowsUpdateAgentStart(UInt32 pdcActivationId, UnicodeString callerAppName, UnicodeString searchCriteria, UInt8 searchScope, UInt8 scanType, Boolean isAppCatScan, Boolean isCallerAU, Boolean isInteractive, Boolean isScanOnline)	Start		WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	201	0	WindowsUpdateAgent(UInt32 pdcActivationId, UnicodeString callerAppName, UnicodeString searchCriteria, UInt8 searchScope, UInt8 scanType, Boolean isAppCatScan, Boolean isCallerAU, Boolean isInteractive, Boolean isScanOnline)			WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	202	0	WindowsUpdateAgentStop(UInt32 pdcActivationId, UnicodeString callerAppName, UnicodeString searchCriteria, UInt8 searchScope, UInt8 scanType, Boolean isAppCatScan, Boolean isCallerAU, Boolean isInteractive, Boolean isScanOnline, Boolean fullSyncPerformed, Boolean catScanPerformed, Int32 resultCode)	Stop		WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	203	0	WindowsUpdateAgentStart203(UInt32 pdcActivationId, GUID updateGuid, UInt32 updateRevisionNumber, UInt8 priority, Boolean allowDownloadOnBattery, Boolean isInteractive, Boolean isRegulated)	Start		WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	204	0	WindowsUpdateAgent204(UInt32 pdcActivationId, GUID updateGuid, UInt32 updateRevisionNumber, UInt8 priority, Boolean allowDownloadOnBattery, Boolean isInteractive, Boolean isRegulated)			WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	205	0	WindowsUpdateAgentStop205(UInt32 pdcActivationId, GUID updateGuid, UInt32 updateRevisionNumber, UInt8 priority, Boolean allowDownloadOnBattery, Boolean isInteractive, Boolean isRegulated, UInt32 bytesTransferred, Int32 resultCode)	Stop		WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	206	0	WindowsUpdateAgentStart206(UInt32 pdcActivationId, UnicodeString callerAppName, Boolean isInteractive, Boolean isCallerAU, GUID updateGuid, UnicodeString updateTitle, UInt32 updateRevisionNumber, Boolean hasADriver, Boolean isPerUser)	Start		WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	207	0	WindowsUpdateAgent207(UInt32 pdcActivationId, UnicodeString callerAppName, Boolean isInteractive, Boolean isCallerAU, GUID updateGuid, UnicodeString updateTitle, UInt32 updateRevisionNumber, Boolean hasADriver, Boolean isPerUser)			WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	208	0	WindowsUpdateAgentStop208(UInt32 pdcActivationId, UnicodeString callerAppName, Boolean isInteractive, Boolean isCallerAU, GUID updateGuid, UnicodeString updateTitle, UInt32 updateRevisionNumber, Boolean hasADriver, Boolean isPerUser, Int32 resultCode)	Stop		WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	209	0	WindowsUpdateAgentStart209(UInt32 pdcActivationId, UnicodeString description, UInt8 accessType, Boolean isInteractiveOrAPIDriven, Boolean stopIdleTimer, UInt32 networkRefCount, UInt32 systemRefCount)	Start		WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	210	0	WindowsUpdateAgent210(UInt32 pdcActivationId, UnicodeString description, UInt8 accessType, Boolean isInteractiveOrAPIDriven, Boolean stopIdleTimer, UInt32 networkRefCount, UInt32 systemRefCount)			WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	211	0	WindowsUpdateAgentStop211(UInt32 pdcActivationId, UnicodeString description, UInt8 accessType, Boolean isInteractiveOrAPIDriven, Boolean stopIdleTimer, UInt32 networkRefCount, UInt32 systemRefCount)	Stop		WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	212	0	WindowsUpdateAgentStart212(UInt32 pdcActivationId, GUID updateGuid, UInt32 updateRevisionNumber)	Start		WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	213	0	WindowsUpdateAgent213(UInt32 pdcActivationId, GUID updateGuid, UInt32 updateRevisionNumber)			WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	214	0	WindowsUpdateAgentStop214(UInt32 pdcActivationId, GUID updateGuid, UInt32 updateRevisionNumber, Int32 resultCode)	Stop		WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	215	0	WindowsUpdateAgentStart215(UInt32 pdcActivationId, GUID serviceGuid, Boolean forceExpire)	Start		WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	216	0	WindowsUpdateAgent216(UInt32 pdcActivationId, GUID serviceGuid, Boolean forceExpire)			WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	217	0	WindowsUpdateAgentStop217(UInt32 pdcActivationId, GUID serviceGuid, Boolean forceExpire, Int32 resultCode)	Stop		WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	218	0	WindowsUpdateAgentStart218(UInt32 pdcActivationId)	Start		WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	219	0	WindowsUpdateAgent219(UInt32 pdcActivationId)			WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	220	0	WindowsUpdateAgentStop220(UInt32 pdcActivationId, Int32 resultCode)	Stop		WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	221	0	WindowsUpdateAgentStart221(UInt32 pdcActivationId, GUID serviceGuid)	Start		WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	222	0	WindowsUpdateAgent222(UInt32 pdcActivationId, GUID serviceGuid)			WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	223	0	WindowsUpdateAgentStop223(UInt32 pdcActivationId, GUID serviceGuid, Int32 resultCode)	Stop		WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	224	0	WindowsUpdateAgentStart224(UInt32 pdcActivationId, GUID ruleId, UnicodeString ruleVersion)	Start		WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	225	0	WindowsUpdateAgent225(UInt32 pdcActivationId, GUID ruleId, UnicodeString ruleVersion)			WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	226	0	WindowsUpdateAgentStop226(UInt32 pdcActivationId, GUID ruleId, UnicodeString ruleVersion, Int32 resultCode)	Stop		WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	227	0	WindowsUpdateAgentStart227(UInt32 pdcActivationId)	Start		WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	228	0	WindowsUpdateAgent228(UInt32 pdcActivationId)			WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	229	0	WindowsUpdateAgentStop229(UInt32 pdcActivationId, Int32 resultCode)	Stop		WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	230	0	WindowsUpdateAgentStart230(UInt32 pdcActivationId)	Start		WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	231	0	WindowsUpdateAgent231(UInt32 pdcActivationId)			WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	232	0	WindowsUpdateAgentStop232(UInt32 pdcActivationId, Int32 resultCode)	Stop		WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	233	0	WindowsUpdateAgentStart233(UInt32 pdcActivationId)	Start		WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	234	0	WindowsUpdateAgent234(UInt32 pdcActivationId)			WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	235	0	WindowsUpdateAgentStop235(UInt32 pdcActivationId, Int32 resultCode)	Stop		WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	236	0	WindowsUpdateAgentStart236(UInt32 pdcActivationId, UnicodeString webServiceMethodName)	Start		WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	237	0	WindowsUpdateAgent237(UInt32 pdcActivationId, UnicodeString webServiceMethodName)			WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	238	0	WindowsUpdateAgentStop238(UInt32 pdcActivationId, UnicodeString webServiceMethodName, Int32 resultCode)	Stop		WindowsUpdateAgent	Informational		

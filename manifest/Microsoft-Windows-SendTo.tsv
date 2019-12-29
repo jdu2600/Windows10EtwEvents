@@ -1,0 +1,8 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-SendTo	1	0	SendTo_DllLoaded()			SendTo_DllLoaded	Informational		
+Microsoft-Windows-SendTo	2	0	SendTo_DllUnloaded()			SendTo_DllUnloaded	Informational		
+Microsoft-Windows-SendTo	3	0	SendTo_EmailStart()	Start		SendTo_Email	Informational		
+Microsoft-Windows-SendTo	4	0	SendTo_EmailStop()	Stop		SendTo_Email	Informational		
+Microsoft-Windows-SendTo	5	0	SendTo_EmailCancelStart()	Start		SendTo_EmailCancel	Informational		
+Microsoft-Windows-SendTo	6	0	SendTo_EmailCancelStop()	Stop		SendTo_EmailCancel	Informational		
+Microsoft-Windows-SendTo	7	0	SendTo_PagesInitialized()			SendTo_PagesInitialized	Informational		

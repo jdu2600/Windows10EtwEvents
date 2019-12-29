@@ -1,0 +1,12 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Workplace Join	100	0	task_0(UnicodeString ActivityId, UnicodeString JWT)			task_0	Informational		
+Microsoft-Windows-Workplace Join	101	0	task_0101(UnicodeString ServiceUri)			task_0	Informational		
+Microsoft-Windows-Workplace Join	102	0	task_0102(HexInt32 ExitCode, UnicodeString ErrorMessage, UnicodeString ServiceUri)			task_0	Error		
+Microsoft-Windows-Workplace Join	103	0	task_0103(Int32 HttpStatus, UnicodeString ServiceUri, UnicodeString TraceId)			task_0	Error		
+Microsoft-Windows-Workplace Join	104	0	task_0104(HexInt32 ExitCode, UnicodeString ZoneUriIsAddedTo, UnicodeString ZoneUriExistsIn, UnicodeString Uri)			task_0	Warning		
+Microsoft-Windows-Workplace Join	200	0	task_0200(HexInt32 ExitCode, UnicodeString ActivityId, UnicodeString SoapResponse, UnicodeString ErrorMessage, UnicodeString RegistrationServiceUri)			task_0	Error		
+Microsoft-Windows-Workplace Join	201	0	task_0201(UnicodeString ActivityId, UnicodeString SoapResponse, UnicodeString RegistrationServiceUri)			task_0	Informational		
+Microsoft-Windows-Workplace Join	300	0	task_0300(HexInt32 ExitCode, UnicodeString ErrorMessage)			task_0	Error		
+Microsoft-Windows-Workplace Join	301	0	task_0301()			task_0	Informational		
+Microsoft-Windows-Workplace Join	400	0	task_0400(HexInt32 ExitCode, UnicodeString ErrorCodeText, UnicodeString ErrorMessage, UnicodeString ErrorData)			task_0	Error		
+Microsoft-Windows-Workplace Join	401	0	task_0401(UnicodeString Message, UnicodeString Data)			task_0	Informational		

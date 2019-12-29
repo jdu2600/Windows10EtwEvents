@@ -1,0 +1,11 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-User-Loader	1	0	task_0(UnicodeString FileName)		USER_LOADER_KEYWORD_DEPRECATED_DLL	task_0	Informational		
+Microsoft-Windows-User-Loader	2	0	task_02(UInt16 ProcessFileNamePathLength, UnicodeString ProcessFileNamePath)		USER_LOADER_FATAL_CALLBACK_EXCEPTION	task_0	Informational		
+Microsoft-Windows-User-Loader	3	0	task_03(UInt32 FailureReason, UnicodeString ImportDllName, UnicodeString ProcessImagePath)		USER_LOADER_KEYWORD_LOAD_FAILURE	task_0	Informational		
+Microsoft-Windows-User-Loader	4	0	task_04(UnicodeString FileName)		USER_LOADER_LAUNCH_16BIT_APP	task_0	Informational		
+Microsoft-Windows-User-Loader	5	0	task_05(UInt32 ProcessId, UInt32 SuspendProcessRequest, UnicodeString DLLName)		USER_LOADER_KEYWORD_COMPONENT_ON_DEMAND	task_0	Informational		
+Microsoft-Windows-User-Loader	6	0	task_06(UnicodeString FileName)		USER_LOADER_KEYWORD_LOAD_FATAL_ERROR	task_0	Warning		
+Microsoft-Windows-User-Loader	7	0	task_07(UnicodeString FileName)		USER_LOADER_KEYWORD_LOAD_FATAL_ERROR	task_0	Warning		
+Microsoft-Windows-User-Loader	8	0	task_08(UInt32 FailureReason, UnicodeString ImportDllName, UnicodeString ExportModule)			task_0	Informational		
+Microsoft-Windows-User-Loader	9	0	task_09(UnicodeString FileName)		USER_LOADER_KEYWORD_LOAD_FATAL_ERROR	task_0	Critical		
+Microsoft-Windows-User-Loader	10	0	task_010(UInt32 FailureReason, UnicodeString ImportDllName, UnicodeString ProcessImagePath)			task_0	Informational		

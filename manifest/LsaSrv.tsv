@@ -1,0 +1,49 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+LsaSrv	100	0	task_0(UnicodeString PackageName, UnicodeString UserName, UnicodeString DomainName, UnicodeString ServerName, UInt32 ProtectedUser, HexInt32 ErrorCode)			task_0	Error		
+LsaSrv	200	0	task_0200(UnicodeString UserName, UnicodeString DomainName, HexInt64 LogonId, SYSTEMTIME LogoffTime, UInt32 PID, UnicodeString Program, UnicodeString PrincipalName, UnicodeString ServerName, UnicodeString PackageName, UnicodeString CallType, HexInt32 ErrorCode)			task_0	Warning		
+LsaSrv	300	0	task_0300(SID TargetUserSid, UnicodeString TargetUserName, UnicodeString TargetDomainName, HexInt64 TargetLogonId, GUID TargetLogonGuid, UInt32 EventOrginal, UInt32 EventCountTotal, UnicodeString SidList)			task_0	Informational		
+LsaSrv	301	0	task_0301(SID TargetUserSid, UnicodeString TargetUserName, UnicodeString TargetDomainName, HexInt64 TargetLogonId, GUID TargetLogonGuid, UInt32 LogonType, UInt32 EventIdx, UInt32 EventCountTotal, UnicodeString UserClaims, UnicodeString DeviceClaims)			task_0	Informational		
+LsaSrv	302	0	task_0302(SID UserSid, HexInt64 LogonId, UnicodeString AuthorityName, UnicodeString AccountName, UInt32 Elapse)			task_0	Informational		
+LsaSrv	303	0	task_0303(UnicodeString PackageName, UnicodeString UserName, UnicodeString DomainName, UInt32 ProtectedUser)			task_0	Informational		
+LsaSrv	320	0	task_0320(UnicodeString UserName, UnicodeString DomainName)			task_0	Informational		
+LsaSrv	321	0	task_0321(UnicodeString Error)			task_0	Informational		
+LsaSrv	322	0	task_0322()			task_0	Informational		
+LsaSrv	5000	0	task_05000(UnicodeString Package, UInt32 __binLength, Binary Exception)			task_0	Error		
+LsaSrv	6027	0	task_06027(UnicodeString Secret, UInt32 __binLength, Binary status)			task_0	Error		
+LsaSrv	6033	0	task_06033(UnicodeString Client)			task_0	Error		
+LsaSrv	6035	0	task_06035(SID SID)			task_0	Warning		
+LsaSrv	6036	0	task_06036(UnicodeString PID, UnicodeString Program)			task_0	Warning		
+LsaSrv	6037	0	task_06037(UnicodeString PID, UnicodeString Program, UnicodeString TargetName)			task_0	Warning		
+LsaSrv	6038	0	task_06038()			task_0	Warning		
+LsaSrv	6039	0	task_06039()			task_0	Informational		
+LsaSrv	6040	0	task_06040(UnicodeString Package, UnicodeString TargetName)			task_0	Warning		
+LsaSrv	6144	0	task_06144()			task_0	Informational		
+LsaSrv	6145	0	task_06145(UnicodeString MissingCAPDNs)			task_0	Critical		
+LsaSrv	6146	0	task_06146(UnicodeString Error, UnicodeString CAPEName, UnicodeString CAPEDesc)			task_0	Error		
+LsaSrv	6182	0	task_06182(HexInt64 TargetLogonId, UnicodeString AccountName, UnicodeString DomainName)			task_0	Warning		
+LsaSrv	6225	0	LSALogonStart()	Start		LSALogon	Informational		
+LsaSrv	6226	0	LSALogonStop()	Stop		LSALogon	Informational		
+LsaSrv	6227	0	LSASID_NameLookupStart()	Start		LSASID_NameLookup	Informational		
+LsaSrv	6228	0	LSASID_NameLookupStop()	Stop		LSASID_NameLookup	Informational		
+LsaSrv	6229	0	LSASID_NameLookupStart6229()	Start		LSASID_NameLookup	Informational		
+LsaSrv	6230	0	LSASID_NameLookupStop6230()	Stop		LSASID_NameLookup	Informational		
+LsaSrv	6231	0	SecurityPackageManagerStart()	Start		SecurityPackageManager	Informational		
+LsaSrv	6232	0	SecurityPackageManagerStop()	Stop		SecurityPackageManager	Informational		
+LsaSrv	32773	0	task_032773(UnicodeString Domain, UnicodeString TargetDomain, UInt32 __binLength, Binary status)			task_0	Warning		
+LsaSrv	32774	0	task_032774(UnicodeString Domain, UnicodeString TargetDomain, UInt32 __binLength, Binary status)			task_0	Warning		
+LsaSrv	32775	0	task_032775(UnicodeString Domain, UnicodeString TargetDomain, UInt32 __binLength, Binary status)			task_0	Warning		
+LsaSrv	32777	0	task_032777()			task_0	Warning		
+LsaSrv	32779	0	task_032779(GUID SubCategoryGuid)		WPDBusEnumStartTrigger	task_0	Informational		
+LsaSrv	32780	0	task_032780(HexInt32 Status)			task_0	Warning		
+LsaSrv	40960	0	task_040960(UnicodeString Target, UnicodeString Protocol, UnicodeString Error)			task_0	Warning		
+LsaSrv	40961	0	task_040961(UnicodeString Target)			task_0	Warning		
+LsaSrv	40962	0	task_040962(UnicodeString Target, UnicodeString Protocol)			task_0	Warning		
+LsaSrv	40964	0	task_040964()			task_0	Warning		
+LsaSrv	40965	0	task_040965(UnicodeString Target, UnicodeString Protocol)			task_0	Informational		
+LsaSrv	40966	0	task_040966(UnicodeString Protocol)			task_0	Informational		
+LsaSrv	40967	0	task_040967(UnicodeString Protocol)			task_0	Informational		
+LsaSrv	40968	0	task_040968()			task_0	Warning		
+LsaSrv	40969	0	task_040969(UnicodeString Protocol)			task_0	Informational		
+LsaSrv	45056	0	task_045056()			task_0	Warning		
+LsaSrv	45057	0	task_045057(UnicodeString Username, UnicodeString Package, UnicodeString Error)			task_0	Informational		
+LsaSrv	45058	0	task_045058(UnicodeString UserName, SYSTEMTIME TimeStamp)			task_0	Informational		

@@ -1,0 +1,33 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-DirectShow-Core	1	0	task_0(UnicodeString ApplicationName, UnicodeString FileName, UnicodeString ContentType)			task_0	Warning		
+Microsoft-Windows-DirectShow-Core	2	0	PluginManagerStart(UInt32 PreferredCount, UInt32 DontUseCount)	Start		PluginManager	Informational		
+Microsoft-Windows-DirectShow-Core	3	0	PluginManager(GUID clsid)			PluginManager	Warning		
+Microsoft-Windows-DirectShow-Core	4	0	PluginManager4(GUID clsid, Boolean Disabled)			PluginManager	Informational		
+Microsoft-Windows-DirectShow-Core	5	0	PluginManager5(GUID clsid, GUID Subtype)			PluginManager	Informational		
+Microsoft-Windows-DirectShow-Core	6	0	PluginManager6(GUID clsid, GUID Subtype)			PluginManager	Informational		
+Microsoft-Windows-DirectShow-Core	7	0	PluginManager7(UnicodeString FourCC, UnicodeString dllName)			PluginManager	Warning		
+Microsoft-Windows-DirectShow-Core	8	0	PluginManager8(GUID clsid, GUID Subtype)			PluginManager	Verbose		
+Microsoft-Windows-DirectShow-Core	9	0	PluginManager9(GUID Subtype)			PluginManager	Verbose		
+Microsoft-Windows-DirectShow-Core	10	0	PluginManager10(GUID clsid, Boolean Disabled)			PluginManager	Verbose		
+Microsoft-Windows-DirectShow-Core	100	0	DirectShowFilterGraphRenderFileStart(Pointer context, UnicodeString url)	Start		DirectShowFilterGraphRenderFile	Informational		
+Microsoft-Windows-DirectShow-Core	101	0	DirectShowFilterGraphRenderFileStop(Pointer context, HexInt32 hr)	Stop		DirectShowFilterGraphRenderFile	Informational		
+Microsoft-Windows-DirectShow-Core	102	0	DirectShowFilterGraphConnectStart(Pointer context, Pointer pinOutput, UnicodeString pinOutputName, Pointer pinInput, UnicodeString pinInputName)	Start		DirectShowFilterGraphConnect	Informational		
+Microsoft-Windows-DirectShow-Core	103	0	DirectShowFilterGraphConnectStop(Pointer context, HexInt32 hr, GUID type, GUID subtype)	Stop		DirectShowFilterGraphConnect	Informational		
+Microsoft-Windows-DirectShow-Core	104	0	DirectShowFilterGraphRenderPinStart(Pointer context, Pointer pinOutput, UnicodeString pinOutputName)	Start		DirectShowFilterGraphRenderPin	Informational		
+Microsoft-Windows-DirectShow-Core	105	0	DirectShowFilterGraphRenderPinStop(Pointer context, HexInt32 hr)	Stop		DirectShowFilterGraphRenderPin	Informational		
+Microsoft-Windows-DirectShow-Core	106	0	DirectShowFilterGraphAddFilter(Pointer context, Pointer filter, UnicodeString filterName, UnicodeString name, HexInt32 hr)			DirectShowFilterGraphAddFilter	Informational		
+Microsoft-Windows-DirectShow-Core	107	0	DirectShowFilterGraphAddSourceFilterStart(Pointer context, UnicodeString url)	Start		DirectShowFilterGraphAddSourceFilter	Informational		
+Microsoft-Windows-DirectShow-Core	108	0	DirectShowFilterGraphAddSourceFilterStop(Pointer context, Pointer filter, UnicodeString filterName, HexInt32 hr)	Stop		DirectShowFilterGraphAddSourceFilter	Informational		
+Microsoft-Windows-DirectShow-Core	109	0	DirectShowFilterGraphNotifyEvent(Pointer context, Int32 eventCode, Pointer param1, Pointer param2)			DirectShowFilterGraphNotifyEvent	Informational		
+Microsoft-Windows-DirectShow-Core	110	0	DirectShowFilterGraphPauseStart(Pointer context)	Start		DirectShowFilterGraphPause	Informational		
+Microsoft-Windows-DirectShow-Core	111	0	DirectShowFilterGraphPauseStop(Pointer context, Pointer failingFilter, UnicodeString failingFilterName, HexInt32 hr)	Stop		DirectShowFilterGraphPause	Informational		
+Microsoft-Windows-DirectShow-Core	112	0	DirectShowFilterGraphStopStart(Pointer context)	Start		DirectShowFilterGraphStop	Informational		
+Microsoft-Windows-DirectShow-Core	113	0	DirectShowFilterGraphStop(Pointer context, Pointer failingFilter, UnicodeString failingFilterName, HexInt32 hr)	Stop		DirectShowFilterGraphStop	Informational		
+Microsoft-Windows-DirectShow-Core	114	0	DirectShowFilterGraphRunStart(Pointer context, Int64 tStart)	Start		DirectShowFilterGraphRun	Informational		
+Microsoft-Windows-DirectShow-Core	115	0	DirectShowFilterGraphRunStop(Pointer context, Pointer failingFilter, UnicodeString failingFilterName, HexInt32 hr)	Stop		DirectShowFilterGraphRun	Informational		
+Microsoft-Windows-DirectShow-Core	116	0	DirectShowFilterGraphConnectDirectStart(Pointer context, Pointer pinOutput, UnicodeString pinOutputName, Pointer pinInput, UnicodeString pinInputName)	Start		DirectShowFilterGraphConnectDirect	Informational		
+Microsoft-Windows-DirectShow-Core	117	0	DirectShowFilterGraphConnectDirectStop(Pointer context, HexInt32 hr)	Stop		DirectShowFilterGraphConnectDirect	Informational		
+Microsoft-Windows-DirectShow-Core	118	0	DirectShowFilterGraphDisconnect(Pointer context, Pointer pin, UnicodeString pinName, HexInt32 hr)			DirectShowFilterGraphDisconnect	Informational		
+Microsoft-Windows-DirectShow-Core	119	0	DirectShowFilterGraphGetStateStart(Pointer context, UInt32 timeout)	Start		DirectShowFilterGraphGetState	Informational		
+Microsoft-Windows-DirectShow-Core	120	0	DirectShowFilterGraphGetStateStop(Pointer context, UInt32 state, Pointer failingFilter, UnicodeString failingFilterName, HexInt32 hr)	Stop		DirectShowFilterGraphGetState	Informational		
+Microsoft-Windows-DirectShow-Core	121	0	DirectShowFilterGraphRemoveFilter(Pointer context, Pointer filter, UnicodeString filterName, HexInt32 hr)			DirectShowFilterGraphRemoveFilter	Informational		

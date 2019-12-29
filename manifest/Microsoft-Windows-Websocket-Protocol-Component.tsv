@@ -1,0 +1,5 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Websocket-Protocol-Component	1	0	Parser(UnicodeString TraceMessage, HexInt32 Error)		keywords.KW_ALL	Parser	Error		
+Microsoft-Windows-Websocket-Protocol-Component	2	0	ActionqueueStart(UInt32 Id, UInt32 OperationType)	Start	keywords.KW_ALL	Actionqueue	Informational		
+Microsoft-Windows-Websocket-Protocol-Component	3	0	Actionqueue(UInt32 Id, UInt32 ActionType)		keywords.KW_ALL	Actionqueue	Informational		
+Microsoft-Windows-Websocket-Protocol-Component	4	0	ActionqueueStop(UInt32 Id)	Stop	keywords.KW_ALL	Actionqueue	Informational		

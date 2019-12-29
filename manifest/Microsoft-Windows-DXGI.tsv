@@ -1,0 +1,204 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-DXGI	1	0	FactoryStart(Pointer pIDXGIFactory, UInt32 Mode, UInt32 BlockedAdapters, UnicodeString PnPID, UnicodeString DriverVersion)	Start	Objects	Factory	Always		
+Microsoft-Windows-DXGI	2	0	FactoryStop(Pointer pIDXGIFactory, UInt32 Mode, UInt32 BlockedAdapters, UnicodeString PnPID, UnicodeString DriverVersion)	Stop	Objects	Factory	Always		
+Microsoft-Windows-DXGI	3	0	FactoryDCStart(Pointer pIDXGIFactory, UInt32 Mode, UInt32 BlockedAdapters, UnicodeString PnPID, UnicodeString DriverVersion)	DC_Start	Objects	Factory	Always		
+Microsoft-Windows-DXGI	4	0	AdapterStart(Pointer pIDXGIAdapter, Pointer pIDXGIFactory, UInt32 KMTAdapterHandle, Pointer ThunkDLLHandle, Boolean SharedResources)	Start	Objects	Adapter	Always		
+Microsoft-Windows-DXGI	5	0	AdapterStop(Pointer pIDXGIAdapter, Pointer pIDXGIFactory, UInt32 KMTAdapterHandle, Pointer ThunkDLLHandle, Boolean SharedResources)	Stop	Objects	Adapter	Always		
+Microsoft-Windows-DXGI	6	0	AdapterDCStart(Pointer pIDXGIAdapter, Pointer pIDXGIFactory, UInt32 KMTAdapterHandle, Pointer ThunkDLLHandle, Boolean SharedResources)	DC_Start	Objects	Adapter	Always		
+Microsoft-Windows-DXGI	7	0	OutputStart(Pointer pIDXGIOutput, Pointer pIDXGIAdapter, UInt32 VidPnSourceID, UnicodeString GDIDeviceName)	Start	Objects	Output	Always		
+Microsoft-Windows-DXGI	8	0	OutputStop(Pointer pIDXGIOutput, Pointer pIDXGIAdapter, UInt32 VidPnSourceID, UnicodeString GDIDeviceName)	Stop	Objects	Output	Always		
+Microsoft-Windows-DXGI	9	0	OutputDCStart(Pointer pIDXGIOutput, Pointer pIDXGIAdapter, UInt32 VidPnSourceID, UnicodeString GDIDeviceName)	DC_Start	Objects	Output	Always		
+Microsoft-Windows-DXGI	10	0	SwapChainStart(Pointer pIDXGISwapChain, Pointer pIDXGIFactory, Pointer pIDXGIDevice, Pointer pIDXGIOutput, UInt8 UserBackbufferCount, UInt8 BackbufferCount, Pointer ppBackBuffers, Pointer pPrimary, Pointer pProxyPrimary, UInt32 Width, UInt32 Height, UInt32 RefreshNumerator, UInt32 RefreshDenominator, UInt32 Format, UInt32 ScanlineOrdering, UInt32 Scaling, UInt32 SampleCount, UInt32 SampleQuality, UInt32 Usage, Pointer OutputWindow, Boolean Windowed, UInt32 SwapEffect, UInt32 Flags, Boolean Redirected, UInt64 LogicalSurfaceHandle, UInt64 BindId, Pointer BackbufferHandles, Pointer BackbufferEventHandles, Pointer FenceHandle, UInt64 FenceValue, UInt8 ActualBufferCount, UInt32 ActualSwapEffect)	Start	Objects	SwapChain	Always		
+Microsoft-Windows-DXGI	11	0	SwapChainStop(Pointer pIDXGISwapChain, Pointer pIDXGIFactory, Pointer pIDXGIDevice, Pointer pIDXGIOutput, UInt8 UserBackbufferCount, UInt8 BackbufferCount, Pointer ppBackBuffers, Pointer pPrimary, Pointer pProxyPrimary, UInt32 Width, UInt32 Height, UInt32 RefreshNumerator, UInt32 RefreshDenominator, UInt32 Format, UInt32 ScanlineOrdering, UInt32 Scaling, UInt32 SampleCount, UInt32 SampleQuality, UInt32 Usage, Pointer OutputWindow, Boolean Windowed, UInt32 SwapEffect, UInt32 Flags, Boolean Redirected, UInt64 LogicalSurfaceHandle, UInt64 BindId, Pointer BackbufferHandles, Pointer BackbufferEventHandles, Pointer FenceHandle, UInt64 FenceValue, UInt8 ActualBufferCount, UInt32 ActualSwapEffect)	Stop	Objects	SwapChain	Always		
+Microsoft-Windows-DXGI	12	0	SwapChainDCStart(Pointer pIDXGISwapChain, Pointer pIDXGIFactory, Pointer pIDXGIDevice, Pointer pIDXGIOutput, UInt8 UserBackbufferCount, UInt8 BackbufferCount, Pointer ppBackBuffers, Pointer pPrimary, Pointer pProxyPrimary, UInt32 Width, UInt32 Height, UInt32 RefreshNumerator, UInt32 RefreshDenominator, UInt32 Format, UInt32 ScanlineOrdering, UInt32 Scaling, UInt32 SampleCount, UInt32 SampleQuality, UInt32 Usage, Pointer OutputWindow, Boolean Windowed, UInt32 SwapEffect, UInt32 Flags, Boolean Redirected, UInt64 LogicalSurfaceHandle, UInt64 BindId, Pointer BackbufferHandles, Pointer BackbufferEventHandles, Pointer FenceHandle, UInt64 FenceValue, UInt8 ActualBufferCount, UInt32 ActualSwapEffect)	DC_Start	Objects	SwapChain	Always		
+Microsoft-Windows-DXGI	40	0	ProfileStart(UInt32 Event)	Start	Events	Profile	Always		
+Microsoft-Windows-DXGI	41	0	ProfileStop(UInt32 Event)	Stop	Events	Profile	Always		
+Microsoft-Windows-DXGI	42	0	PresentStart(Pointer pIDXGISwapChain, UInt32 Flags, UInt32 SyncInterval, UInt32 DirtyRects, UInt32 ScrollRects)	Start	Events	Present	Always		
+Microsoft-Windows-DXGI	43	0	PresentStop(UInt32 Result)	Stop	Events	Present	Always		
+Microsoft-Windows-DXGI	44	0	GetFrameStatistics(UInt32 ReturnValue, UInt32 PresentCount, UInt32 PresentRefreshCount, UInt32 SyncRefreshCount, UInt64 SyncQPCTime)		Events	GetFrameStatistics	Always		
+Microsoft-Windows-DXGI	45	0	ResizeBuffersStart(Pointer pIDXGISwapchain, UInt8 OldUserBackbufferCount, UInt8 OldBackbufferCount, Pointer ppOldBackBuffers, Pointer pOldPrimary, Pointer pOldProxyPrimary, UInt32 OldWidth, UInt32 OldHeight, UInt32 OldFormat, UInt32 OldFlags, Boolean OldRedirected, UInt64 OldLogicalSurfaceHandle, Pointer OldBackbufferHandles, Pointer OldBackbufferEventHandles, Pointer OldFenceHandle, UInt64 OldFenceValue, UInt8 OldActualbufferCount)	Start	Events	ResizeBuffers	Always		
+Microsoft-Windows-DXGI	46	0	ResizeBuffersStop(Pointer pIDXGISwapChain, UInt32 ReturnValue, UInt8 NewUserBackbufferCount, UInt8 NewBackbufferCount, Pointer ppNewBackBuffers, Pointer pNewPrimary, Pointer pNewProxyPrimary, UInt32 NewWidth, UInt32 NewHeight, UInt32 NewFormat, UInt32 NewFlags, Boolean NewRedirected, UInt64 NewLogicalSurfaceHandle, Pointer NewBackbufferHandles, Pointer NewBackbufferEventHandles, Pointer NewFenceHandle, UInt64 NewFenceValue, UInt8 NewActualbufferCount)	Stop	Events	ResizeBuffers	Always		
+Microsoft-Windows-DXGI	47	0	ResizeTargetStart(Pointer pDXGISwapChain, UInt32 Width, UInt32 Height, UInt32 RefreshNumerator, UInt32 RefreshDenominator, UInt32 Format, UInt32 ScanlineOrdering, UInt32 Scaling, Boolean Windowed, Pointer pOldPrimary, Pointer pOldProxyPrimary)	Start	Events	ResizeTarget	Always		
+Microsoft-Windows-DXGI	48	0	ResizeTargetStop(Pointer pIDXGISwapChain, UInt32 ReturnValue, Pointer pNewPrimary, Pointer pNewProxyPrimary)	Stop	Events	ResizeTarget	Always		
+Microsoft-Windows-DXGI	49	0	SetFullscreenStateStart(Pointer pIDXGISwapChain, Boolean OldWindowed, Pointer pOldOutput, Pointer pOldPrimary, Pointer pOldProxyPrimary)	Start	Events	SetFullscreenState	Always		
+Microsoft-Windows-DXGI	50	0	SetFullscreenStateStop(Pointer pIDXGISwapChain, UInt32 ReturnValue, Boolean NewWindowed, Pointer pNewOutput, Pointer pNewPrimary, Pointer pNewProxyPrimary)	Stop	Events	SetFullscreenState	Always		
+Microsoft-Windows-DXGI	51	0	FindClosestMatchingModeStart(Pointer pIDXGIOutput, UInt32 WidthToMatch, UInt32 HeightToMatch, UInt32 RefreshNumeratorToMatch, UInt32 RefreshDenominatorToMatch, UInt32 FormatToMatch, UInt32 ScanlineOrderingToMatch, UInt32 ScalingToMatch)	Start	Events	FindClosestMatchingMode	Always		
+Microsoft-Windows-DXGI	52	0	FindClosestMatchingModeStop(Pointer pIDXGIOutput, UInt32 ReturnValue, UInt32 WidthResult, UInt32 HeightResult, UInt32 RefreshNumeratorResult, UInt32 RefreshDenominatorResult, UInt32 FormatResult, UInt32 ScanlineOrderingResult, UInt32 ScalingResult)	Stop	Events	FindClosestMatchingMode	Always		
+Microsoft-Windows-DXGI	53	0	DWMRedirection(Pointer pIDXGISwapChain, Boolean NewRedirected)		Events	DWMRedirection	Always		
+Microsoft-Windows-DXGI	54	0	FlipCPUSyncTimeout(Pointer pIDXGISwapChain, UInt32 BackBufferNumber, Pointer BackBufferHandle, Pointer BackBufferEventHandle)		Events	FlipCPUSyncTimeout	Always		
+Microsoft-Windows-DXGI	55	0	PresentMultiplaneOverlayStart(Pointer pIDXGISwapChain, UInt32 Flags, UInt32 SyncInterval, UInt32 NumPlanes, UInt32 LayerMask)	Start	Events	PresentMultiplaneOverlay	Always		
+Microsoft-Windows-DXGI	56	0	PresentMultiplaneOverlayStop(UInt32 Result)	Stop	Events	PresentMultiplaneOverlay	Always		
+Microsoft-Windows-DXGI	57	0	CheckMultiplaneOverlaySupportStart(Pointer pIDXGISwapChain, UInt32 NumPlanes)	Start	Events	CheckMultiplaneOverlaySupport	Always		
+Microsoft-Windows-DXGI	58	0	CheckMultiplaneOverlaySupportStop(UInt32 Result)	Stop	Events	CheckMultiplaneOverlaySupport	Always		
+Microsoft-Windows-DXGI	59	0	GetMultiplaneOverlayCaps(Pointer pIDXGISwapChain, UInt32 MaxPlanes, UInt32 OverlayMaxRGBPlanes, UInt32 OverlayMaxYUVPlanes, UInt32 OverlayCaps, UInt32 PanelFitterMaxRGBPlanes, UInt32 PanelFitterCaps)		Events	GetMultiplaneOverlayCaps	Always		
+Microsoft-Windows-DXGI	60	0	PresentMultiplaneOverlayChange(Pointer pIDXGISwapChain, UInt32 LayerIndex, Boolean Enabled)		Events	PresentMultiplaneOverlayChange	Always		
+Microsoft-Windows-DXGI	61	0	CheckMultiplaneOverlaySupportFail(Pointer pIDXGISwapChain, Boolean KernelSupport, Boolean DriverFailed, Boolean InvalidParam, UInt32 NumPlanes)		Events	CheckMultiplaneOverlaySupportFail	Always		
+Microsoft-Windows-DXGI	62	0	CheckMultiplaneOverlaySupportFail62(Pointer pIDXGISwapChain, Pointer hResource, UInt32 SubResourceIndex, UInt32 Flags, UInt32 SrcRectleft, UInt32 SrcRectright, UInt32 SrcRecttop, UInt32 SrcRectbottom, UInt32 DstRectleft, UInt32 DstRectright, UInt32 DstRecttop, UInt32 DstRectbottom, UInt32 ClipRectleft, UInt32 ClipRectright, UInt32 ClipRecttop, UInt32 ClipRectbottom, UInt32 Blend, UInt32 ColorSpace, UInt32 StretchQuality)		Events	CheckMultiplaneOverlaySupportFail	Always		
+Microsoft-Windows-DXGI	63	0	CreateDirectFlipResource(Pointer pIDXGISwapChain, UInt32 Width, UInt32 Height, UInt32 DXGIFormat)		Events	CreateDirectFlipResource	Always		
+Microsoft-Windows-DXGI	64	0	SetHardwareProtection(Pointer pIDXGISwapChain, Boolean Enabled)		Events	SetHardwareProtection	Always		
+Microsoft-Windows-DXGI	65	0	SetHardwareProtectionOnSwapChainBuffer(Pointer pIDXGISwapChain, Boolean Enabled)		Events	SetHardwareProtectionOnSwapChainBuffer	Always		
+Microsoft-Windows-DXGI	66	0	ReCreateSwapChainBufferForHardwareProtection(Pointer pIDXGISwapChain, Boolean Enabled)		Events	ReCreateSwapChainBufferForHardwareProtection	Always		
+Microsoft-Windows-DXGI	67	0	SetHardwareProtectionFailure(Pointer pIDXGISwapchain, UInt32 Result)		Events	SetHardwareProtectionFailure	Always		
+Microsoft-Windows-DXGI	68	0	CheckOverlayColorSpaceSupport(Pointer pIDXGIOutput, UInt32 Format, UInt32 ColorSpace, UInt32 OutputFlags, UInt32 Result)		Events	CheckOverlayColorSpaceSupport	Always		
+Microsoft-Windows-DXGI	80	0	CreateDXGIFactoryStart(GUID riid, Pointer ppFactory)	Start		CreateDXGIFactory	Always		
+Microsoft-Windows-DXGI	81	0	CreateDXGIFactoryStop(UInt32 m_Ret)	Stop		CreateDXGIFactory	Always		
+Microsoft-Windows-DXGI	104	0	IDXGIAdapter_QueryInterfaceStart(Pointer pThis, GUID riid, Pointer ppvObject)	Start		IDXGIAdapter_QueryInterface	Always		
+Microsoft-Windows-DXGI	105	0	IDXGIAdapter_QueryInterfaceStop(UInt32 m_Ret, Pointer ppvObject)	Stop		IDXGIAdapter_QueryInterface	Always		
+Microsoft-Windows-DXGI	106	0	IDXGIAdapter_AddRefStart(Pointer pThis)	Start		IDXGIAdapter_AddRef	Always		
+Microsoft-Windows-DXGI	107	0	IDXGIAdapter_AddRefStop(UInt32 m_Ret)	Stop		IDXGIAdapter_AddRef	Always		
+Microsoft-Windows-DXGI	108	0	IDXGIAdapter_ReleaseStart(Pointer pThis)	Start		IDXGIAdapter_Release	Always		
+Microsoft-Windows-DXGI	109	0	IDXGIAdapter_ReleaseStop(UInt32 m_Ret)	Stop		IDXGIAdapter_Release	Always		
+Microsoft-Windows-DXGI	110	0	IDXGIAdapter_SetPrivateDataStart(Pointer pThis, Binary Name, UInt32 uiDataSize, Pointer pData)	Start		IDXGIAdapter_SetPrivateData	Always		
+Microsoft-Windows-DXGI	111	0	IDXGIAdapter_SetPrivateDataStop(UInt32 m_Ret)	Stop		IDXGIAdapter_SetPrivateData	Always		
+Microsoft-Windows-DXGI	112	0	IDXGIAdapter_SetPrivateDataInterfaceStart(Pointer pThis, Binary Name, Pointer pInterface)	Start		IDXGIAdapter_SetPrivateDataInterface	Always		
+Microsoft-Windows-DXGI	113	0	IDXGIAdapter_SetPrivateDataInterfaceStop(UInt32 m_Ret)	Stop		IDXGIAdapter_SetPrivateDataInterface	Always		
+Microsoft-Windows-DXGI	114	0	IDXGIAdapter_GetPrivateDataStart(Pointer pThis, Binary Name, UInt32 pDataSize, Pointer pData)	Start		IDXGIAdapter_GetPrivateData	Always		
+Microsoft-Windows-DXGI	115	0	IDXGIAdapter_GetPrivateDataStop(UInt32 m_Ret, UInt32 pDataSize, Pointer pData)	Stop		IDXGIAdapter_GetPrivateData	Always		
+Microsoft-Windows-DXGI	116	0	IDXGIAdapter_GetParentStart(Pointer pThis, GUID riid, Pointer ppvObject)	Start		IDXGIAdapter_GetParent	Always		
+Microsoft-Windows-DXGI	117	0	IDXGIAdapter_GetParentStop(UInt32 m_Ret, Pointer ppvObject)	Stop		IDXGIAdapter_GetParent	Always		
+Microsoft-Windows-DXGI	118	0	IDXGIAdapter_EnumOutputsStart(Pointer pThis, UInt32 iOutput, Pointer ppOutput)	Start		IDXGIAdapter_EnumOutputs	Always		
+Microsoft-Windows-DXGI	119	0	IDXGIAdapter_EnumOutputsStop(UInt32 m_Ret)	Stop		IDXGIAdapter_EnumOutputs	Always		
+Microsoft-Windows-DXGI	120	0	IDXGIAdapter_GetDescStart(Pointer pThis, Binary pDesc)	Start		IDXGIAdapter_GetDesc	Always		
+Microsoft-Windows-DXGI	121	0	IDXGIAdapter_GetDescStop(UInt32 m_Ret)	Stop		IDXGIAdapter_GetDesc	Always		
+Microsoft-Windows-DXGI	122	0	IDXGIAdapter_CheckInterfaceSupportStart(Pointer pThis, Binary InterfaceName, UInt64 pUMDVersion)	Start		IDXGIAdapter_CheckInterfaceSupport	Always		
+Microsoft-Windows-DXGI	123	0	IDXGIAdapter_CheckInterfaceSupportStop(UInt32 m_Ret)	Stop		IDXGIAdapter_CheckInterfaceSupport	Always		
+Microsoft-Windows-DXGI	124	0	IDXGIOutput_QueryInterfaceStart(Pointer pThis, GUID riid, Pointer ppvObject)	Start		IDXGIOutput_QueryInterface	Always		
+Microsoft-Windows-DXGI	125	0	IDXGIOutput_QueryInterfaceStop(UInt32 m_Ret, Pointer ppvObject)	Stop		IDXGIOutput_QueryInterface	Always		
+Microsoft-Windows-DXGI	126	0	IDXGIOutput_AddRefStart(Pointer pThis)	Start		IDXGIOutput_AddRef	Always		
+Microsoft-Windows-DXGI	127	0	IDXGIOutput_AddRefStop(UInt32 m_Ret)	Stop		IDXGIOutput_AddRef	Always		
+Microsoft-Windows-DXGI	128	0	IDXGIOutput_ReleaseStart(Pointer pThis)	Start		IDXGIOutput_Release	Always		
+Microsoft-Windows-DXGI	129	0	IDXGIOutput_ReleaseStop(UInt32 m_Ret)	Stop		IDXGIOutput_Release	Always		
+Microsoft-Windows-DXGI	130	0	IDXGIOutput_SetPrivateDataStart(Pointer pThis, Binary Name, UInt32 uiDataSize, Pointer pData)	Start		IDXGIOutput_SetPrivateData	Always		
+Microsoft-Windows-DXGI	131	0	IDXGIOutput_SetPrivateDataStop(UInt32 m_Ret)	Stop		IDXGIOutput_SetPrivateData	Always		
+Microsoft-Windows-DXGI	132	0	IDXGIOutput_SetPrivateDataInterfaceStart(Pointer pThis, Binary Name, Pointer pInterface)	Start		IDXGIOutput_SetPrivateDataInterface	Always		
+Microsoft-Windows-DXGI	133	0	IDXGIOutput_SetPrivateDataInterfaceStop(UInt32 m_Ret)	Stop		IDXGIOutput_SetPrivateDataInterface	Always		
+Microsoft-Windows-DXGI	134	0	IDXGIOutput_GetPrivateDataStart(Pointer pThis, Binary Name, UInt32 pDataSize, Pointer pData)	Start		IDXGIOutput_GetPrivateData	Always		
+Microsoft-Windows-DXGI	135	0	IDXGIOutput_GetPrivateDataStop(UInt32 m_Ret, UInt32 pDataSize, Pointer pData)	Stop		IDXGIOutput_GetPrivateData	Always		
+Microsoft-Windows-DXGI	136	0	IDXGIOutput_GetParentStart(Pointer pThis, GUID riid, Pointer ppvObject)	Start		IDXGIOutput_GetParent	Always		
+Microsoft-Windows-DXGI	137	0	IDXGIOutput_GetParentStop(UInt32 m_Ret, Pointer ppvObject)	Stop		IDXGIOutput_GetParent	Always		
+Microsoft-Windows-DXGI	138	0	IDXGIOutput_GetDescStart(Pointer pThis, Binary pDesc)	Start		IDXGIOutput_GetDesc	Always		
+Microsoft-Windows-DXGI	139	0	IDXGIOutput_GetDescStop(UInt32 m_Ret)	Stop		IDXGIOutput_GetDesc	Always		
+Microsoft-Windows-DXGI	140	0	IDXGIOutput_GetDisplayModeListStart(Pointer pThis, UInt32 EnumFormat, UInt32 dwFlags, UInt32 pNumModes, Binary pDesc)	Start		IDXGIOutput_GetDisplayModeList	Always		
+Microsoft-Windows-DXGI	141	0	IDXGIOutput_GetDisplayModeListStop(UInt32 m_Ret)	Stop		IDXGIOutput_GetDisplayModeList	Always		
+Microsoft-Windows-DXGI	142	0	IDXGIOutput_FindClosestMatchingModeStart(Pointer pThis, Binary pModeToMatch, Binary pClosestMatch, Pointer pConcernedDevice)	Start		IDXGIOutput_FindClosestMatchingMode	Always		
+Microsoft-Windows-DXGI	143	0	IDXGIOutput_FindClosestMatchingModeStop(UInt32 m_Ret)	Stop		IDXGIOutput_FindClosestMatchingMode	Always		
+Microsoft-Windows-DXGI	144	0	IDXGIOutput_WaitForVBlankStart(Pointer pThis)	Start		IDXGIOutput_WaitForVBlank	Always		
+Microsoft-Windows-DXGI	145	0	IDXGIOutput_WaitForVBlankStop(UInt32 m_Ret)	Stop		IDXGIOutput_WaitForVBlank	Always		
+Microsoft-Windows-DXGI	146	0	IDXGIOutput_TakeOwnershipStart(Pointer pThis, Pointer pDevice, UInt32 bExclusive)	Start		IDXGIOutput_TakeOwnership	Always		
+Microsoft-Windows-DXGI	147	0	IDXGIOutput_TakeOwnershipStop(UInt32 m_Ret)	Stop		IDXGIOutput_TakeOwnership	Always		
+Microsoft-Windows-DXGI	148	0	IDXGIOutput_ReleaseOwnershipStart(Pointer pThis)	Start		IDXGIOutput_ReleaseOwnership	Always		
+Microsoft-Windows-DXGI	149	0	IDXGIOutput_ReleaseOwnershipStop()	Stop		IDXGIOutput_ReleaseOwnership	Always		
+Microsoft-Windows-DXGI	150	0	IDXGIOutput_GetGammaControlCapabilitiesStart(Pointer pThis, Pointer pGammaCaps)	Start		IDXGIOutput_GetGammaControlCapabilities	Always		
+Microsoft-Windows-DXGI	151	0	IDXGIOutput_GetGammaControlCapabilitiesStop(UInt32 m_Ret)	Stop		IDXGIOutput_GetGammaControlCapabilities	Always		
+Microsoft-Windows-DXGI	152	0	IDXGIOutput_SetGammaControlStart(Pointer pThis, Binary pArray)	Start		IDXGIOutput_SetGammaControl	Always		
+Microsoft-Windows-DXGI	153	0	IDXGIOutput_SetGammaControlStop(UInt32 m_Ret)	Stop		IDXGIOutput_SetGammaControl	Always		
+Microsoft-Windows-DXGI	154	0	IDXGIOutput_GetGammaControlStart(Pointer pThis, Binary pArray)	Start		IDXGIOutput_GetGammaControl	Always		
+Microsoft-Windows-DXGI	155	0	IDXGIOutput_GetGammaControlStop(UInt32 m_Ret)	Stop		IDXGIOutput_GetGammaControl	Always		
+Microsoft-Windows-DXGI	156	0	IDXGIOutput_SetDisplaySurfaceStart(Pointer pThis, Pointer pScanoutSurface)	Start		IDXGIOutput_SetDisplaySurface	Always		
+Microsoft-Windows-DXGI	157	0	IDXGIOutput_SetDisplaySurfaceStop(UInt32 m_Ret)	Stop		IDXGIOutput_SetDisplaySurface	Always		
+Microsoft-Windows-DXGI	158	0	IDXGIOutput_GetDisplaySurfaceDataStart(Pointer pThis, Pointer pScanoutSurface)	Start		IDXGIOutput_GetDisplaySurfaceData	Always		
+Microsoft-Windows-DXGI	159	0	IDXGIOutput_GetDisplaySurfaceDataStop(UInt32 m_Ret)	Stop		IDXGIOutput_GetDisplaySurfaceData	Always		
+Microsoft-Windows-DXGI	160	0	IDXGIOutput_GetFrameStatisticsStart(Pointer pThis, Binary pStats)	Start		IDXGIOutput_GetFrameStatistics	Always		
+Microsoft-Windows-DXGI	161	0	IDXGIOutput_GetFrameStatisticsStop(UInt32 m_Ret)	Stop		IDXGIOutput_GetFrameStatistics	Always		
+Microsoft-Windows-DXGI	162	0	IDXGISwapChain_QueryInterfaceStart(Pointer pThis, GUID riid, Pointer ppvObject)	Start		IDXGISwapChain_QueryInterface	Always		
+Microsoft-Windows-DXGI	163	0	IDXGISwapChain_QueryInterfaceStop(UInt32 m_Ret, Pointer ppvObject)	Stop		IDXGISwapChain_QueryInterface	Always		
+Microsoft-Windows-DXGI	164	0	IDXGISwapChain_AddRefStart(Pointer pThis)	Start		IDXGISwapChain_AddRef	Always		
+Microsoft-Windows-DXGI	165	0	IDXGISwapChain_AddRefStop(UInt32 m_Ret)	Stop		IDXGISwapChain_AddRef	Always		
+Microsoft-Windows-DXGI	166	0	IDXGISwapChain_ReleaseStart(Pointer pThis)	Start		IDXGISwapChain_Release	Always		
+Microsoft-Windows-DXGI	167	0	IDXGISwapChain_ReleaseStop(UInt32 m_Ret)	Stop		IDXGISwapChain_Release	Always		
+Microsoft-Windows-DXGI	168	0	IDXGISwapChain_SetPrivateDataStart(Pointer pThis, Binary Name, UInt32 uiDataSize, Pointer pData)	Start		IDXGISwapChain_SetPrivateData	Always		
+Microsoft-Windows-DXGI	169	0	IDXGISwapChain_SetPrivateDataStop(UInt32 m_Ret)	Stop		IDXGISwapChain_SetPrivateData	Always		
+Microsoft-Windows-DXGI	170	0	IDXGISwapChain_SetPrivateDataInterfaceStart(Pointer pThis, Binary Name, Pointer pInterface)	Start		IDXGISwapChain_SetPrivateDataInterface	Always		
+Microsoft-Windows-DXGI	171	0	IDXGISwapChain_SetPrivateDataInterfaceStop(UInt32 m_Ret)	Stop		IDXGISwapChain_SetPrivateDataInterface	Always		
+Microsoft-Windows-DXGI	172	0	IDXGISwapChain_GetPrivateDataStart(Pointer pThis, Binary Name, UInt32 pDataSize, Pointer pData)	Start		IDXGISwapChain_GetPrivateData	Always		
+Microsoft-Windows-DXGI	173	0	IDXGISwapChain_GetPrivateDataStop(UInt32 m_Ret, UInt32 pDataSize, Pointer pData)	Stop		IDXGISwapChain_GetPrivateData	Always		
+Microsoft-Windows-DXGI	174	0	IDXGISwapChain_GetParentStart(Pointer pThis, GUID riid, Pointer ppvObject)	Start		IDXGISwapChain_GetParent	Always		
+Microsoft-Windows-DXGI	175	0	IDXGISwapChain_GetParentStop(UInt32 m_Ret, Pointer ppvObject)	Stop		IDXGISwapChain_GetParent	Always		
+Microsoft-Windows-DXGI	176	0	IDXGISwapChain_GetDeviceStart(Pointer pThis, GUID riid, Pointer ppvObject)	Start		IDXGISwapChain_GetDevice	Always		
+Microsoft-Windows-DXGI	177	0	IDXGISwapChain_GetDeviceStop(UInt32 m_Ret, Pointer ppvObject)	Stop		IDXGISwapChain_GetDevice	Always		
+Microsoft-Windows-DXGI	178	0	IDXGISwapChain_PresentStart(Pointer pThis, UInt32 SyncInterval, UInt32 dwFlags)	Start		IDXGISwapChain_Present	Always		
+Microsoft-Windows-DXGI	179	0	IDXGISwapChain_PresentStop(UInt32 m_Ret)	Stop		IDXGISwapChain_Present	Always		
+Microsoft-Windows-DXGI	180	0	IDXGISwapChain_GetBufferStart(Pointer pThis, UInt32 iBuffer, GUID Interface, Pointer ppSurface)	Start		IDXGISwapChain_GetBuffer	Always		
+Microsoft-Windows-DXGI	181	0	IDXGISwapChain_GetBufferStop(UInt32 m_Ret)	Stop		IDXGISwapChain_GetBuffer	Always		
+Microsoft-Windows-DXGI	182	0	IDXGISwapChain_SetFullscreenStateStart(Pointer pThis, UInt32 bFullscreen, Pointer pTarget)	Start		IDXGISwapChain_SetFullscreenState	Always		
+Microsoft-Windows-DXGI	183	0	IDXGISwapChain_SetFullscreenStateStop(UInt32 m_Ret)	Stop		IDXGISwapChain_SetFullscreenState	Always		
+Microsoft-Windows-DXGI	184	0	IDXGISwapChain_GetFullscreenStateStart(Pointer pThis, UInt32 pbFullscreen, Pointer ppTarget)	Start		IDXGISwapChain_GetFullscreenState	Always		
+Microsoft-Windows-DXGI	185	0	IDXGISwapChain_GetFullscreenStateStop(UInt32 m_Ret)	Stop		IDXGISwapChain_GetFullscreenState	Always		
+Microsoft-Windows-DXGI	186	0	IDXGISwapChain_GetDescStart(Pointer pThis, Binary pDesc)	Start		IDXGISwapChain_GetDesc	Always		
+Microsoft-Windows-DXGI	187	0	IDXGISwapChain_GetDescStop(UInt32 m_Ret)	Stop		IDXGISwapChain_GetDesc	Always		
+Microsoft-Windows-DXGI	188	0	IDXGISwapChain_ResizeBuffersStart(Pointer pThis, UInt32 BufferCount, UInt32 Width, UInt32 Height, UInt32 NewFormat, UInt32 SwapChainFalgs)	Start		IDXGISwapChain_ResizeBuffers	Always		
+Microsoft-Windows-DXGI	189	0	IDXGISwapChain_ResizeBuffersStop(UInt32 m_Ret)	Stop		IDXGISwapChain_ResizeBuffers	Always		
+Microsoft-Windows-DXGI	190	0	IDXGISwapChain_ResizeTargetStart(Pointer pThis, Binary pNewTargetParameters)	Start		IDXGISwapChain_ResizeTarget	Always		
+Microsoft-Windows-DXGI	191	0	IDXGISwapChain_ResizeTargetStop(UInt32 m_Ret)	Stop		IDXGISwapChain_ResizeTarget	Always		
+Microsoft-Windows-DXGI	192	0	IDXGISwapChain_GetContainingOutputStart(Pointer pThis, Pointer ppOutput)	Start		IDXGISwapChain_GetContainingOutput	Always		
+Microsoft-Windows-DXGI	193	0	IDXGISwapChain_GetContainingOutputStop(UInt32 m_Ret)	Stop		IDXGISwapChain_GetContainingOutput	Always		
+Microsoft-Windows-DXGI	194	0	IDXGISwapChain_GetFrameStatisticsStart(Pointer pThis, Binary pStats)	Start		IDXGISwapChain_GetFrameStatistics	Always		
+Microsoft-Windows-DXGI	195	0	IDXGISwapChain_GetFrameStatisticsStop(UInt32 m_Ret)	Stop		IDXGISwapChain_GetFrameStatistics	Always		
+Microsoft-Windows-DXGI	196	0	IDXGISwapChain_GetLastPresentCountStart(Pointer pThis, Pointer pLastPresentCount)	Start		IDXGISwapChain_GetLastPresentCount	Always		
+Microsoft-Windows-DXGI	197	0	IDXGISwapChain_GetLastPresentCountStop(UInt32 m_Ret)	Stop		IDXGISwapChain_GetLastPresentCount	Always		
+Microsoft-Windows-DXGI	198	0	IDXGIFactory_QueryInterfaceStart(Pointer pThis, GUID riid, Pointer ppvObject)	Start		IDXGIFactory_QueryInterface	Always		
+Microsoft-Windows-DXGI	199	0	IDXGIFactory_QueryInterfaceStop(UInt32 m_Ret, Pointer ppvObject)	Stop		IDXGIFactory_QueryInterface	Always		
+Microsoft-Windows-DXGI	200	0	IDXGIFactory_AddRefStart(Pointer pThis)	Start		IDXGIFactory_AddRef	Always		
+Microsoft-Windows-DXGI	201	0	IDXGIFactory_AddRefStop(UInt32 m_Ret)	Stop		IDXGIFactory_AddRef	Always		
+Microsoft-Windows-DXGI	202	0	IDXGIFactory_ReleaseStart(Pointer pThis)	Start		IDXGIFactory_Release	Always		
+Microsoft-Windows-DXGI	203	0	IDXGIFactory_ReleaseStop(UInt32 m_Ret)	Stop		IDXGIFactory_Release	Always		
+Microsoft-Windows-DXGI	204	0	IDXGIFactory_SetPrivateDataStart(Pointer pThis, Binary Name, UInt32 uiDataSize, Pointer pData)	Start		IDXGIFactory_SetPrivateData	Always		
+Microsoft-Windows-DXGI	205	0	IDXGIFactory_SetPrivateDataStop(UInt32 m_Ret)	Stop		IDXGIFactory_SetPrivateData	Always		
+Microsoft-Windows-DXGI	206	0	IDXGIFactory_SetPrivateDataInterfaceStart(Pointer pThis, Binary Name, Pointer pInterface)	Start		IDXGIFactory_SetPrivateDataInterface	Always		
+Microsoft-Windows-DXGI	207	0	IDXGIFactory_SetPrivateDataInterfaceStop(UInt32 m_Ret)	Stop		IDXGIFactory_SetPrivateDataInterface	Always		
+Microsoft-Windows-DXGI	208	0	IDXGIFactory_GetPrivateDataStart(Pointer pThis, Binary Name, UInt32 pDataSize, Pointer pData)	Start		IDXGIFactory_GetPrivateData	Always		
+Microsoft-Windows-DXGI	209	0	IDXGIFactory_GetPrivateDataStop(UInt32 m_Ret, UInt32 pDataSize, Pointer pData)	Stop		IDXGIFactory_GetPrivateData	Always		
+Microsoft-Windows-DXGI	210	0	IDXGIFactory_GetParentStart(Pointer pThis, GUID riid, Pointer ppvObject)	Start		IDXGIFactory_GetParent	Always		
+Microsoft-Windows-DXGI	211	0	IDXGIFactory_GetParentStop(UInt32 m_Ret, Pointer ppvObject)	Stop		IDXGIFactory_GetParent	Always		
+Microsoft-Windows-DXGI	212	0	IDXGIFactory_EnumAdaptersStart(Pointer pThis, UInt32 iAdapter, Pointer ppAdapterInterface)	Start		IDXGIFactory_EnumAdapters	Always		
+Microsoft-Windows-DXGI	213	0	IDXGIFactory_EnumAdaptersStop(UInt32 m_Ret)	Stop		IDXGIFactory_EnumAdapters	Always		
+Microsoft-Windows-DXGI	214	0	IDXGIFactory_MakeWindowAssociationStart(Pointer pThis, UInt64 hWnd, UInt32 Flags)	Start		IDXGIFactory_MakeWindowAssociation	Always		
+Microsoft-Windows-DXGI	215	0	IDXGIFactory_MakeWindowAssociationStop(UInt32 m_Ret)	Stop		IDXGIFactory_MakeWindowAssociation	Always		
+Microsoft-Windows-DXGI	216	0	IDXGIFactory_GetWindowAssociationStart(Pointer pThis, UInt64 phWnd)	Start		IDXGIFactory_GetWindowAssociation	Always		
+Microsoft-Windows-DXGI	217	0	IDXGIFactory_GetWindowAssociationStop(UInt32 m_Ret)	Stop		IDXGIFactory_GetWindowAssociation	Always		
+Microsoft-Windows-DXGI	218	0	IDXGIFactory_CreateSwapChainStart(Pointer pThis, Pointer pDevice, Binary pDesc, Pointer ppSwapChain)	Start		IDXGIFactory_CreateSwapChain	Always		
+Microsoft-Windows-DXGI	219	0	IDXGIFactory_CreateSwapChainStop(UInt32 m_Ret)	Stop		IDXGIFactory_CreateSwapChain	Always		
+Microsoft-Windows-DXGI	220	0	IDXGIFactory_CreateSoftwareAdapterStart(Pointer pThis, UInt64 hModule, Pointer ppAdapter)	Start		IDXGIFactory_CreateSoftwareAdapter	Always		
+Microsoft-Windows-DXGI	221	0	IDXGIFactory_CreateSoftwareAdapterStop(UInt32 m_Ret)	Stop		IDXGIFactory_CreateSoftwareAdapter	Always		
+Microsoft-Windows-DXGI	848	0	CreateDXGIFactory1Start(GUID riid, Pointer ppFactory)	Start		CreateDXGIFactory1	Always		
+Microsoft-Windows-DXGI	849	0	CreateDXGIFactory1Stop(UInt32 m_Ret)	Stop		CreateDXGIFactory1	Always		
+Microsoft-Windows-DXGI	850	0	IDXGISwapChain_SetSourceSizeStart(Pointer pThis, UInt32 Width, UInt32 Height)	Start		IDXGISwapChain_SetSourceSize	Always		
+Microsoft-Windows-DXGI	851	0	IDXGISwapChain_SetSourceSizeStop(UInt32 m_Ret)	Stop		IDXGISwapChain_SetSourceSize	Always		
+Microsoft-Windows-DXGI	852	0	IDXGISwapChain_GetSourceSizeStart(Pointer pThis, Pointer pWidth, Pointer pHeight)	Start		IDXGISwapChain_GetSourceSize	Always		
+Microsoft-Windows-DXGI	853	0	IDXGISwapChain_GetSourceSizeStop(UInt32 m_Ret)	Stop		IDXGISwapChain_GetSourceSize	Always		
+Microsoft-Windows-DXGI	854	0	IDXGISwapChainPartner_PresentBufferStart(Pointer pThis, UInt32 BufferToPresent, UInt32 SyncInterval, UInt32 Flags)	Start		IDXGISwapChainPartner_PresentBuffer	Always		
+Microsoft-Windows-DXGI	855	0	IDXGISwapChainPartner_PresentBufferStop(UInt32 m_Ret)	Stop		IDXGISwapChainPartner_PresentBuffer	Always		
+Microsoft-Windows-DXGI	856	0	IDXGISwapChain_SetMaximumFrameLatencyStart(Pointer pThis, UInt32 MaxLatency)	Start		IDXGISwapChain_SetMaximumFrameLatency	Always		
+Microsoft-Windows-DXGI	857	0	IDXGISwapChain_SetMaximumFrameLatencyStop(UInt32 m_Ret)	Stop		IDXGISwapChain_SetMaximumFrameLatency	Always		
+Microsoft-Windows-DXGI	858	0	IDXGISwapChain_GetMaximumFrameLatencyStart(Pointer pThis, Pointer pMaxLatency)	Start		IDXGISwapChain_GetMaximumFrameLatency	Always		
+Microsoft-Windows-DXGI	859	0	IDXGISwapChain_GetMaximumFrameLatencyStop(UInt32 m_Ret)	Stop		IDXGISwapChain_GetMaximumFrameLatency	Always		
+Microsoft-Windows-DXGI	860	0	IDXGISwapChain_GetFrameLatencyWaitableObjectStart(Pointer pThis)	Start		IDXGISwapChain_GetFrameLatencyWaitableObject	Always		
+Microsoft-Windows-DXGI	861	0	IDXGISwapChain_GetFrameLatencyWaitableObjectStop(Pointer m_Ret)	Stop		IDXGISwapChain_GetFrameLatencyWaitableObject	Always		
+Microsoft-Windows-DXGI	862	0	IDXGISwapChainPartner_SetSourceRectStart(Pointer pThis, Pointer pRect, Int32 Rect)	Start		IDXGISwapChainPartner_SetSourceRect	Always		
+Microsoft-Windows-DXGI	863	0	IDXGISwapChainPartner_SetSourceRectStop(UInt32 m_Ret)	Stop		IDXGISwapChainPartner_SetSourceRect	Always		
+Microsoft-Windows-DXGI	864	0	IDXGISwapChainPartner_SetTargetRectStart(Pointer pThis, Pointer pRect, Int32 Rect)	Start		IDXGISwapChainPartner_SetTargetRect	Always		
+Microsoft-Windows-DXGI	865	0	IDXGISwapChainPartner_SetTargetRectStop(UInt32 m_Ret)	Stop		IDXGISwapChainPartner_SetTargetRect	Always		
+Microsoft-Windows-DXGI	866	0	IDXGISwapChainPartner_SetDestSizeStart(Pointer pThis, UInt32 Width, UInt32 Height)	Start		IDXGISwapChainPartner_SetDestSize	Always		
+Microsoft-Windows-DXGI	867	0	IDXGISwapChainPartner_SetDestSizeStop(UInt32 m_Ret)	Stop		IDXGISwapChainPartner_SetDestSize	Always		
+Microsoft-Windows-DXGI	868	0	IDXGISwapChainPartner_GetSourceRectStart(Pointer pThis, Pointer pRect)	Start		IDXGISwapChainPartner_GetSourceRect	Always		
+Microsoft-Windows-DXGI	869	0	IDXGISwapChainPartner_GetSourceRectStop(UInt32 m_Ret)	Stop		IDXGISwapChainPartner_GetSourceRect	Always		
+Microsoft-Windows-DXGI	870	0	IDXGISwapChainPartner_GetTargetRectStart(Pointer pThis, Pointer pRect)	Start		IDXGISwapChainPartner_GetTargetRect	Always		
+Microsoft-Windows-DXGI	871	0	IDXGISwapChainPartner_GetTargetRectStop(UInt32 m_Ret)	Stop		IDXGISwapChainPartner_GetTargetRect	Always		
+Microsoft-Windows-DXGI	872	0	IDXGISwapChainPartner_GetDestSizeStart(Pointer pThis, Pointer pWidth, Pointer pHeight)	Start		IDXGISwapChainPartner_GetDestSize	Always		
+Microsoft-Windows-DXGI	873	0	IDXGISwapChainPartner_GetDestSizeStop(UInt32 m_Ret)	Stop		IDXGISwapChainPartner_GetDestSize	Always		
+Microsoft-Windows-DXGI	874	0	IDXGISwapChainPartner_SetColorSpaceStart(Pointer pThis, UInt32 YCbCrFlags)	Start		IDXGISwapChainPartner_SetColorSpace	Always		
+Microsoft-Windows-DXGI	875	0	IDXGISwapChainPartner_SetColorSpaceStop(UInt32 m_Ret)	Stop		IDXGISwapChainPartner_SetColorSpace	Always		
+Microsoft-Windows-DXGI	876	0	IDXGISwapChainPartner_GetColorSpaceStart(Pointer pThis)	Start		IDXGISwapChainPartner_GetColorSpace	Always		
+Microsoft-Windows-DXGI	877	0	IDXGISwapChainPartner_GetColorSpaceStop(UInt32 YCbCrFlags)	Stop		IDXGISwapChainPartner_GetColorSpace	Always		
+Microsoft-Windows-DXGI	878	0	IDXGISwapChain_SetMatrixTransformStart(Pointer pThis, Pointer pMatrix, Float Matrix)	Start		IDXGISwapChain_SetMatrixTransform	Always		
+Microsoft-Windows-DXGI	879	0	IDXGISwapChain_SetMatrixTransformStop(UInt32 m_Ret)	Stop		IDXGISwapChain_SetMatrixTransform	Always		
+Microsoft-Windows-DXGI	880	0	IDXGISwapChain_GetMatrixTransformStart(Pointer pThis, Pointer pMatrix)	Start		IDXGISwapChain_GetMatrixTransform	Always		
+Microsoft-Windows-DXGI	881	0	IDXGISwapChain_GetMatrixTransformStop(UInt32 m_Ret)	Stop		IDXGISwapChain_GetMatrixTransform	Always		
+Microsoft-Windows-DXGI	882	0	IDXGISwapChainPartner_PresentExStart(Pointer pThis, UInt32 SyncInterval, UInt32 Flags, UInt32 PartnerFlags)	Start		IDXGISwapChainPartner_PresentEx	Always		
+Microsoft-Windows-DXGI	883	0	IDXGISwapChainPartner_PresentExStop(UInt32 m_Ret)	Stop		IDXGISwapChainPartner_PresentEx	Always		
+Microsoft-Windows-DXGI	884	0	IDXGISwapChainPartner_SetPresentDurationStart(Pointer pThis, UInt32 Duration)	Start		IDXGISwapChainPartner_SetPresentDuration	Always		
+Microsoft-Windows-DXGI	885	0	IDXGISwapChainPartner_SetPresentDurationStop(UInt32 m_Ret)	Stop		IDXGISwapChainPartner_SetPresentDuration	Always		
+Microsoft-Windows-DXGI	886	0	IDXGISwapChainPartner_CheckPresentDurationSupportStart(Pointer pThis, UInt32 DesiredPresentDuration, Pointer pClosestSmallerPresentDuration, Pointer pClosestLargerPresentDuration)	Start		IDXGISwapChainPartner_CheckPresentDurationSupport	Always		
+Microsoft-Windows-DXGI	887	0	IDXGISwapChainPartner_CheckPresentDurationSupportStop(UInt32 m_Ret)	Stop		IDXGISwapChainPartner_CheckPresentDurationSupport	Always		
+Microsoft-Windows-DXGI	888	0	IDXGIAdapter_EnumOutputs2Start(Pointer pThis, UInt32 iOutput, UInt32 iOutputType, Pointer ppOutput)	Start		IDXGIAdapter_EnumOutputs2	Always		
+Microsoft-Windows-DXGI	889	0	IDXGIAdapter_EnumOutputs2Stop(UInt32 m_Ret)	Stop		IDXGIAdapter_EnumOutputs2	Always		

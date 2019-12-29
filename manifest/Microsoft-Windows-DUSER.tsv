@@ -1,0 +1,73 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-DUSER	1	0	DUser_PaintStart()	Start	Default	DUser_Paint	Informational		
+Microsoft-Windows-DUSER	2	0	DUser_PaintStop()	Stop	Default	DUser_Paint	Informational		
+Microsoft-Windows-DUSER	3	0	DUser_SyncAdaptorsStart()	Start	Default	DUser_SyncAdaptors	Informational		
+Microsoft-Windows-DUSER	4	0	DUser_SyncAdaptorsStop(Int32 cAdaptors)	Stop	Default	DUser_SyncAdaptors	Informational		
+Microsoft-Windows-DUSER	5	0	DUser_ResetInvalidStart()	Start	Default	DUser_ResetInvalid	Informational		
+Microsoft-Windows-DUSER	6	0	DUser_ResetInvalidStop()	Stop	Default	DUser_ResetInvalid	Informational		
+Microsoft-Windows-DUSER	7	0	DUser_EndDrawBitBltStart()	Start	Default	DUser_EndDrawBitBlt	Informational		
+Microsoft-Windows-DUSER	8	0	DUser_EndDrawBitBltStop()	Stop	Default	DUser_EndDrawBitBlt	Informational		
+Microsoft-Windows-DUSER	9	0	DUser_InputStart()	Start	Default	DUser_Input	Informational		
+Microsoft-Windows-DUSER	10	0	DUser_InputStop()	Stop	Default	DUser_Input	Informational		
+Microsoft-Windows-DUSER	11	0	DUser_InputStart11()	Start	Default	DUser_Input	Informational		
+Microsoft-Windows-DUSER	12	0	DUser_LayeredCreateVisualsStart(UInt32 hGadget, Pointer pVisual, Boolean fRoot)	Start	Default	DUser_LayeredCreateVisuals	Informational		
+Microsoft-Windows-DUSER	13	0	DUser_LayeredRemoveVisualsStart(UInt32 hGadget, Pointer pVisual, Boolean fRoot, Int32 nWidth, Int32 nHeight, Boolean fIsCopy)	Start	Default	DUser_LayeredRemoveVisuals	Informational		
+Microsoft-Windows-DUSER	14	0	DUser_LayeredDestructVisualsStart(UInt32 hGadget, Pointer pVisual, Boolean fRoot)	Start	Default	DUser_LayeredDestructVisuals	Informational		
+Microsoft-Windows-DUSER	15	0	DUser_DestroyPendingDCVisualsStart(Int32 nNumberOfPendingDeletions)	Start	Default	DUser_DestroyPendingDCVisuals	Informational		
+Microsoft-Windows-DUSER	16	0	DUser_DestroyPendingDCVisualsStop(Int32 nNumberOfPendingDeletions)	Stop	Default	DUser_DestroyPendingDCVisuals	Informational		
+Microsoft-Windows-DUSER	17	0	DUser_ForceDestroyDCVisualStart(UInt32 hGadget, Pointer pVisual, Boolean fRoot)	Start	Default	DUser_ForceDestroyDCVisual	Informational		
+Microsoft-Windows-DUSER	18	0	DUser_RemoveAndDestroyDCVisualStart(UInt32 hGadget, Pointer pVisual, Boolean fRoot)	Start	Default	DUser_RemoveAndDestroyDCVisual	Informational		
+Microsoft-Windows-DUSER	19	0	DUser_DrawLayeredGadgetStart(UInt32 hGadget, Pointer pVisual, Boolean fRoot, Int32 nWidth, Int32 nHeight, Boolean fIsCopy)	Start	Default	DUser_DrawLayeredGadget	Informational		
+Microsoft-Windows-DUSER	20	0	DUser_DrawLayeredGadgetStart20(UInt32 hGadget, Pointer pVisual, Boolean fRoot, Int32 nWidth, Int32 nHeight, Boolean fIsCopy)	Start	Default	DUser_DrawLayeredGadget	Informational		
+Microsoft-Windows-DUSER	21	0	DUser_LayeredGetBitmapStart(UInt32 hGadget, Pointer pVisual, Boolean fRoot, Int32 nWidth, Int32 nHeight, Boolean fIsCopy)	Start	Default	DUser_LayeredGetBitmap	Informational		
+Microsoft-Windows-DUSER	22	0	DUser_LayeredSetContentStart(UInt32 hGadget, Pointer pVisual, Boolean fRoot, Int32 nWidth, Int32 nHeight, Boolean fIsCopy)	Start	Default	DUser_LayeredSetContent	Informational		
+Microsoft-Windows-DUSER	24	0	DUser_LayerGadgetStart(UInt32 hGadget)	Start	Default	DUser_LayerGadget	Informational		
+Microsoft-Windows-DUSER	25	0	DUser_LayerGadgetStop(UInt32 hGadget, Boolean fNewLayered, Int32 nVisualsCount)	Stop	Default	DUser_LayerGadget	Informational		
+Microsoft-Windows-DUSER	26	0	DUser_LayerGadgetLoopStart(UInt32 cTrans, UInt32 dwTicket)	Start	Default	DUser_LayerGadgetLoop	Informational		
+Microsoft-Windows-DUSER	27	0	DUser_LayerGadgetLoopStop(UInt32 cTrans, UInt32 dwTicket)	Stop	Default	DUser_LayerGadgetLoop	Informational		
+Microsoft-Windows-DUSER	28	0	DUser_CreateCompatibleBitmapStart(UInt32 hGadget, Pointer pVisual, Int32 nWidth, Int32 nHeight)	Start	Default	DUser_CreateCompatibleBitmap	Informational		
+Microsoft-Windows-DUSER	29	0	DUser_CreateCompatibleBitmapStop(UInt32 hGadget, Pointer pVisual, Int32 nWidth, Int32 nHeight)	Stop	Default	DUser_CreateCompatibleBitmap	Informational		
+Microsoft-Windows-DUSER	30	0	DUser_InitPropertiesStart(UInt32 hGadget, Pointer pVisual, Pointer pDCompVisual)	Start	Default	DUser_InitProperties	Informational		
+Microsoft-Windows-DUSER	31	0	DUser_InitPropertiesStop(UInt32 hGadget, Pointer pVisual, Pointer pDCompVisual)	Stop	Default	DUser_InitProperties	Informational		
+Microsoft-Windows-DUSER	32	0	DUser_AddChildVisualStart(UInt32 hGadget, Pointer pVisual, Pointer pDCompVisual)	Start	Default	DUser_AddChildVisual	Informational		
+Microsoft-Windows-DUSER	33	0	DUser_AddChildVisualStop(UInt32 hGadget, Pointer pChildVisual, Boolean fDescendantVisualOfNewVisual, Pointer pDCompVisual)	Stop	Default	DUser_AddChildVisual	Informational		
+Microsoft-Windows-DUSER	34	0	DUser_MoveChildrenToParent(UInt32 hGadget, Pointer pVisual, Pointer m_pParent)		Default	DUser_MoveChildrenToParent	Informational		
+Microsoft-Windows-DUSER	35	0	DUser_MoveChildrenToParentStart(UInt32 hGadget, Pointer pVisual, Pointer pDCompVisual)	Start	Default	DUser_MoveChildrenToParent	Informational		
+Microsoft-Windows-DUSER	36	0	DUser_MoveChildrenToParentStop(UInt32 hGadget, Pointer pVisual, Pointer pDCompVisual)	Stop	Default	DUser_MoveChildrenToParent	Informational		
+Microsoft-Windows-DUSER	37	0	DUser_Reparent(UInt32 hGadget, Pointer pVisual, Pointer pDCompVisual)		Default	DUser_Reparent	Informational		
+Microsoft-Windows-DUSER	38	0	DUser_ReparentStart(UInt32 hGadget, Pointer pVisual, Pointer pNewChild)	Start	Default	DUser_Reparent	Informational		
+Microsoft-Windows-DUSER	39	0	DUser_ReparentStop(UInt32 hGadget, Pointer pVisual, Pointer pNewChild)	Stop	Default	DUser_Reparent	Informational		
+Microsoft-Windows-DUSER	40	0	DUser_AddWAMTransitionsStart(UInt32 cTrans, UInt32 dwTicket)	Start	Default	DUser_AddWAMTransitions	Informational		
+Microsoft-Windows-DUSER	41	0	DUser_AddWAMTransitionsStop(UInt32 cTrans, UInt32 dwTicket)	Stop	Default	DUser_AddWAMTransitions	Informational		
+Microsoft-Windows-DUSER	42	0	DUser_CreateCubicBezierLinearVectorTransition(UInt32 hGadget, Pointer pVisual, Int32 nAnimType)		Default	DUser_CreateCubicBezierLinearVectorTransition	Informational		
+Microsoft-Windows-DUSER	43	0	DUser_ScheduleWAMStoryboardStart(UInt32 cTrans, Pointer psbUIA, UInt32 dwTicket)	Start	Default	DUser_ScheduleWAMStoryboard	Informational		
+Microsoft-Windows-DUSER	44	0	DUser_ScheduleWAMStoryboardStop(UInt32 cTrans, Pointer psbUIA, UInt32 dwTicket)	Stop	Default	DUser_ScheduleWAMStoryboard	Informational		
+Microsoft-Windows-DUSER	45	0	DUser_GetCurve(UInt32 hGadget, Pointer pVisual, Int32 nVar)		Default	DUser_GetCurve	Informational		
+Microsoft-Windows-DUSER	46	0	DUser_DCompCommitStart(Int32 nSize)	Start	Default	DUser_DCompCommit	Informational		
+Microsoft-Windows-DUSER	47	0	DUser_DCompCommitStop(Int32 nSize)	Stop	Default	DUser_DCompCommit	Informational		
+Microsoft-Windows-DUSER	48	0	DUser_DCompCommit(Int32 nSize)		Default	DUser_DCompCommit	Informational		
+Microsoft-Windows-DUSER	49	0	DUser_DrawDirtyLayers(UInt32 hGadget, Pointer m_pVisual, Int32 nVisuals)		Default	DUser_DrawDirtyLayers	Informational		
+Microsoft-Windows-DUSER	50	0	DUser_CommitFromWMPaint(UInt32 hGadget, Pointer m_pVisual, Int32 nVisuals)		Default	DUser_CommitFromWMPaint	Informational		
+Microsoft-Windows-DUSER	51	0	DUser_ScheduleTransitionsStart(UInt32 dwTicket)	Start	Default	DUser_ScheduleTransitions	Informational		
+Microsoft-Windows-DUSER	52	0	DUser_ScheduleTransitionsStop(UInt32 dwTicket)	Stop	Default	DUser_ScheduleTransitions	Informational		
+Microsoft-Windows-DUSER	53	0	DUser_WAMDelayStart(UInt32 cTrans, Pointer psbUIA, UInt32 dwTicket)	Start	Default	DUser_WAMDelay	Informational		
+Microsoft-Windows-DUSER	54	0	DUser_WAMDelayStop(Int32 nVisuals)	Stop	Default	DUser_WAMDelay	Informational		
+Microsoft-Windows-DUSER	55	0	DUser_Input(UInt32 PointerID)		Default	DUser_Input	Informational		
+Microsoft-Windows-DUSER	56	0	DUser_TransitionComplete(UInt32 hGadget, UInt32 nCode, Boolean fCopy, Boolean fRemainLayered)		Default	DUser_TransitionComplete	Informational		
+Microsoft-Windows-DUSER	65	0	DUser_IntervalAcquireRegionStart()	Start	Default	DUser_IntervalAcquireRegion	Informational		
+Microsoft-Windows-DUSER	66	0	DUser_IntervalAcquireRegionStop()	Stop	Default	DUser_IntervalAcquireRegion	Informational		
+Microsoft-Windows-DUSER	67	0	DUser_IntervalReleaseRegionStart()	Start	Default	DUser_IntervalReleaseRegion	Informational		
+Microsoft-Windows-DUSER	68	0	DUser_IntervalReleaseRegionStop()	Stop	Default	DUser_IntervalReleaseRegion	Informational		
+Microsoft-Windows-DUSER	71	0	DUser_CreateSurface(Pointer surfaceId, Int32 surfaceX, Int32 surfaceY, Int32 surfaceWidth, Int32 surfaceHeight, Pointer containerId, Int32 containerWidth, Int32 containerHeight, Pointer pRegionSurface, Pointer pSurface)		DUserSurface	DUser_CreateSurface	Informational		
+Microsoft-Windows-DUSER	72	0	DUser_DestroySurface(Pointer pRegionSurface, Pointer pSurface)		DUserSurface	DUser_DestroySurface	Informational		
+Microsoft-Windows-DUSER	75	0	DUser_ProcessPendingStoryboards(Float flProcessingDelay, Int32 nNumberOfStoryboards, Int32 nNumberOfVisuals)		Default	DUser_ProcessPendingStoryboards	Informational		
+Microsoft-Windows-DUSER	76	0	DUser_TransitionScheduled(UInt32 cTrans, UInt32 uTransIndex, UInt32 dwTicket, UInt32 hGadget, UInt32 nProperty, Pointer pTransitionVisual, Pointer pDCompVisual)		Default	DUser_TransitionScheduled	Informational		
+Microsoft-Windows-DUSER	77	0	DUser_InitializeDCompTransforms(Int32 nHResult, UInt32 hGadget, Boolean fIsCopy, Pointer pTransitionVisual, Pointer pDCompVisual, Pointer pEffectGroup)		Default	DUser_InitializeDCompTransforms	Informational		
+Microsoft-Windows-DUSER	78	0	DUser_ModifyDCompTransform(Pointer pTransitionVisual, Pointer pDCompVisual, Int32 nTransformType, Pointer pTransform, Boolean fAnimation)		Default	DUser_ModifyDCompTransform	Informational		
+Microsoft-Windows-DUSER	79	0	DUser_RunDUIPVLAnimationStart(Pointer pStoryboard, Int32 nAnimationId, Int32 nStoryboardId, Int32 nCode, Float flProcessingDelay)	Start	Default	DUser_RunDUIPVLAnimation	Informational		
+Microsoft-Windows-DUSER	80	0	DUser_RunDUIPVLAnimationStop(Pointer pStoryboard, Int32 nAnimationId, Int32 nStoryboardId, Int32 nCode, Float flProcessingDelay)	Stop	Default	DUser_RunDUIPVLAnimation	Informational		
+Microsoft-Windows-DUSER	81	0	DUser_AllocateStagingBuffer(Pointer surfaceId, Int32 surfaceX, Int32 surfaceY)		DUserSurface	DUser_AllocateStagingBuffer	Informational		
+Microsoft-Windows-DUSER	82	0	DUser_ReleaseStagingBuffer(Pointer surfaceId)		DUserSurface	DUser_ReleaseStagingBuffer	Informational		
+Microsoft-Windows-DUSER	83	0	DUser_LeafNodeOpacity_PossibleLayerPush(Pointer hGadget, Int32 nWidth, Int32 nHeight, Pointer hAncestorGadget, Int32 nAncestorWidth, Int32 nAncestorHeight)		Default	DUser_LeafNodeOpacity_PossibleLayerPush	Informational		
+Microsoft-Windows-DUSER	84	0	DUser_StagingBufferCopy(Pointer surfaceId, Int32 surfaceX, Int32 surfaceY, Int32 surfaceWidth, Int32 surfaceHeight)		DUserSurface	DUser_StagingBufferCopy	Informational		
+Microsoft-Windows-DUSER	85	0	DUser_Input85(UInt32 PointerHitTestID)		Default	DUser_Input	Informational		

@@ -1,0 +1,7 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-OneCore-OnlineSetup	1001	0	RunSetupSpecializationStart(UnicodeString CommandLine)	Start	keyPerformance	RunSetupSpecialization	Informational		
+Microsoft-OneCore-OnlineSetup	1002	0	RunSetupSpecializationStop(UInt32 ErrorCode)	Stop	keyPerformance	RunSetupSpecialization	Informational		
+Microsoft-OneCore-OnlineSetup	2001	0	SetupProcessUnattendStart(UnicodeString Pass)	Start	keyPerformance	SetupProcessUnattend	Informational		
+Microsoft-OneCore-OnlineSetup	2002	0	SetupProcessUnattendStop(UInt32 ErrorCode)	Stop	keyPerformance	SetupProcessUnattend	Informational		
+Microsoft-OneCore-OnlineSetup	2003	0	SetupProcessUnattendStop2003(UInt32 ErrorCode)	Stop	keyPerformance	SetupProcessUnattend	Informational		
+Microsoft-OneCore-OnlineSetup	2004	0	SetupProcessUnattend(UnicodeString Pass, UnicodeString FilePath)		keyDiagnostic	SetupProcessUnattend	Informational		

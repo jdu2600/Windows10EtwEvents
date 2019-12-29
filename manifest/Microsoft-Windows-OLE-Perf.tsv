@@ -1,0 +1,30 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-OLE-Perf	1	0	OLE_Clipboard_GetClipboardStart()	Start		OLE_Clipboard_GetClipboard	Informational		
+Microsoft-Windows-OLE-Perf	2	0	OLE_Clipboard_GetClipboardStop()	Stop		OLE_Clipboard_GetClipboard	Informational		
+Microsoft-Windows-OLE-Perf	3	0	OLE_Clipboard_SetClipboardStart()	Start		OLE_Clipboard_SetClipboard	Informational		
+Microsoft-Windows-OLE-Perf	4	0	OLE_Clipboard_SetClipboardStop()	Stop		OLE_Clipboard_SetClipboard	Informational		
+Microsoft-Windows-OLE-Perf	5	0	OLE_Clipboard_FlushStart()	Start		OLE_Clipboard_Flush	Informational		
+Microsoft-Windows-OLE-Perf	6	0	OLE_Clipboard_FlushStop()	Stop		OLE_Clipboard_Flush	Informational		
+Microsoft-Windows-OLE-Perf	7	0	OLE_Clipboard_IsCurrentClipboardStart()	Start		OLE_Clipboard_IsCurrentClipboard	Informational		
+Microsoft-Windows-OLE-Perf	8	0	OLE_Clipboard_IsCurrentClipboardStop()	Stop		OLE_Clipboard_IsCurrentClipboard	Informational		
+Microsoft-Windows-OLE-Perf	9	0	OLE_DragDrop_DoDragDropStart()	Start		OLE_DragDrop_DoDragDrop	Informational		
+Microsoft-Windows-OLE-Perf	10	0	OLE_DragDrop_DoDragDropStop(Int32 HResult)	Stop		OLE_DragDrop_DoDragDrop	Informational		
+Microsoft-Windows-OLE-Perf	11	0	OLE_DragDrop_RegisterStart()	Start		OLE_DragDrop_Register	Informational		
+Microsoft-Windows-OLE-Perf	12	0	OLE_DragDrop_RegisterStop(Int32 HResult)	Stop		OLE_DragDrop_Register	Informational		
+Microsoft-Windows-OLE-Perf	13	0	OLE_DragDrop_UnregisterStart()	Start		OLE_DragDrop_Unregister	Informational		
+Microsoft-Windows-OLE-Perf	14	0	OLE_DragDrop_UnregisterStop(Int32 HResult)	Stop		OLE_DragDrop_Unregister	Informational		
+Microsoft-Windows-OLE-Perf	15	0	OLE_DragDrop_RegisterInternalStart()	Start		OLE_DragDrop_RegisterInternal	Informational		
+Microsoft-Windows-OLE-Perf	16	0	OLE_DragDrop_RegisterInternalStop(Int32 HResult)	Stop		OLE_DragDrop_RegisterInternal	Informational		
+Microsoft-Windows-OLE-Perf	17	0	OLE_DragDrop_UnregisterInternalStart()	Start		OLE_DragDrop_UnregisterInternal	Informational		
+Microsoft-Windows-OLE-Perf	18	0	OLE_DragDrop_UnregisterInternalStop(Int32 HResult)	Stop		OLE_DragDrop_UnregisterInternal	Informational		
+Microsoft-Windows-OLE-Perf	19	0	OLE_DragDrop_CreateDragOperationInternalStart()	Start		OLE_DragDrop_CreateDragOperationInternal	Informational		
+Microsoft-Windows-OLE-Perf	20	0	OLE_DragDrop_CreateDragOperationInternalStop(Int32 HResult)	Stop		OLE_DragDrop_CreateDragOperationInternal	Informational		
+Microsoft-Windows-OLE-Perf	21	0	OLE_DragDrop_DragOperation_UpdatePositionStart()	Start		OLE_DragDrop_DragOperation_UpdatePosition	Informational		
+Microsoft-Windows-OLE-Perf	22	0	OLE_DragDrop_DragOperation_UpdatePositionStop(Int32 HResult)	Stop		OLE_DragDrop_DragOperation_UpdatePosition	Informational		
+Microsoft-Windows-OLE-Perf	23	0	OLE_DragDrop_DragOperation_SetDataObjectStart()	Start		OLE_DragDrop_DragOperation_SetDataObject	Informational		
+Microsoft-Windows-OLE-Perf	24	0	OLE_DragDrop_DragOperation_SetDataObjectStop(Int32 HResult)	Stop		OLE_DragDrop_DragOperation_SetDataObject	Informational		
+Microsoft-Windows-OLE-Perf	25	0	OLE_DragDrop_DragOperation_DoDropStart()	Start		OLE_DragDrop_DragOperation_DoDrop	Informational		
+Microsoft-Windows-OLE-Perf	26	0	OLE_DragDrop_DragOperation_DoDropStop(Int32 HResult)	Stop		OLE_DragDrop_DragOperation_DoDrop	Informational		
+Microsoft-Windows-OLE-Perf	27	0	OLE_DragDrop_DragOperation_CancelStart()	Start		OLE_DragDrop_DragOperation_Cancel	Informational		
+Microsoft-Windows-OLE-Perf	28	0	OLE_DragDrop_DragOperation_CancelStop(Int32 HResult)	Stop		OLE_DragDrop_DragOperation_Cancel	Informational		
+Microsoft-Windows-OLE-Perf	29	0	OLE_Clipboard_MethodDiagnostics(UnicodeString MethodType, Int32 HResult, UnicodeString MethodName, UInt32 InputPameterCount, UInt32 OutputPameterCount, Pointer Parameter1, Pointer Parameter2, Pointer Parameter3, Pointer Parameter4)		keyword_400000000000	OLE_Clipboard_MethodDiagnostics	Informational		

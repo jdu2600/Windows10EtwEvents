@@ -1,0 +1,81 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Sensors	1001	0	SensPerf_Task_DeviceStartupStart(UInt32 DeviceID)	Start	SensPerf	SensPerf_Task_DeviceStartup	Informational		
+Microsoft-Windows-Sensors	1002	0	SensPerf_Task_DeviceStartupStop(UInt32 DeviceID)	Stop	SensPerf	SensPerf_Task_DeviceStartup	Informational		
+Microsoft-Windows-Sensors	1003	0	SensPerf_Task_EventLatencyStart(UInt32 SensorType)	Start	SensPerf	SensPerf_Task_EventLatency	Informational		
+Microsoft-Windows-Sensors	1004	0	SensPerf_Task_EventLatencyStop(UInt32 SensorType)	Stop	SensPerf	SensPerf_Task_EventLatency	Informational		
+Microsoft-Windows-Sensors	1005	0	SensPerf_Task_SetPropertiesStart(UnicodeString SensorObjectId)	Start	SensPerf	SensPerf_Task_SetProperties	Informational		
+Microsoft-Windows-Sensors	1006	0	SensPerf_Task_SetPropertiesStop(UnicodeString SensorObjectId)	Stop	SensPerf	SensPerf_Task_SetProperties	Informational		
+Microsoft-Windows-Sensors	1007	0	SensPerf_Task_GetPropertyValuesStart(UnicodeString SensorObjectId)	Start	SensPerf	SensPerf_Task_GetPropertyValues	Informational		
+Microsoft-Windows-Sensors	1008	0	SensPerf_Task_GetPropertyValuesStop(UnicodeString SensorObjectId)	Stop	SensPerf	SensPerf_Task_GetPropertyValues	Informational		
+Microsoft-Windows-Sensors	1009	0	SensPerf_Task_GetDataFieldsStart(UnicodeString SensorObjectId)	Start	SensPerf	SensPerf_Task_GetDataFields	Informational		
+Microsoft-Windows-Sensors	1010	0	SensPerf_Task_GetDataFieldsStop(UnicodeString SensorObjectId)	Stop	SensPerf	SensPerf_Task_GetDataFields	Informational		
+Microsoft-Windows-Sensors	1011	0	SensPerf_Task_PostDataEventStart(UnicodeString SensorObjectId)	Start	SensPerf	SensPerf_Task_PostDataEvent	Informational		
+Microsoft-Windows-Sensors	1012	0	SensPerf_Task_PostDataEventStop(UnicodeString SensorObjectId)	Stop	SensPerf	SensPerf_Task_PostDataEvent	Informational		
+Microsoft-Windows-Sensors	1013	0	SensPerf_Task_PreAsyncReadStart(UnicodeString SensorObjectId)	Start	SensPerf	SensPerf_Task_PreAsyncRead	Informational		
+Microsoft-Windows-Sensors	1014	0	SensPerf_Task_PreAsyncReadStop(UnicodeString SensorObjectId)	Stop	SensPerf	SensPerf_Task_PreAsyncRead	Informational		
+Microsoft-Windows-Sensors	1015	0	SensPerf_Task_RaiseDataEvent(UnicodeString SensorObjectId, SYSTEMTIME Timestamp, UInt32 NumSubscribers)		SensPerf	SensPerf_Task_RaiseDataEvent	Informational		
+Microsoft-Windows-Sensors	1016	0	SensPerf_Task_SetStateStart(UnicodeString SensorObjectId, UInt32 SensorState)	Start	SensPerf	SensPerf_Task_SetState	Informational		
+Microsoft-Windows-Sensors	1017	0	SensPerf_Task_SetStateStop(UnicodeString SensorObjectId, UInt32 SensorState)	Stop	SensPerf	SensPerf_Task_SetState	Informational		
+Microsoft-Windows-Sensors	1018	0	Deviceisbeingpoweredup()		SensPerf	Deviceisbeingpoweredup	Informational		
+Microsoft-Windows-Sensors	1019	0	Deviceisbeingpowereddown()		SensPerf	Deviceisbeingpowereddown	Informational		
+Microsoft-Windows-Sensors	1100	0	SensorServicedataupdatedeventStart(GUID SENSOR_ID, SYSTEMTIME Timestamp)	Start	SensPerf	SensorServicedataupdatedevent	Informational		
+Microsoft-Windows-Sensors	1101	0	SensorServicedataupdatedeventStop(GUID SENSOR_ID, SYSTEMTIME Timestamp)	Stop	SensPerf	SensorServicedataupdatedevent	Informational		
+Microsoft-Windows-Sensors	1102	0	SensorServiceperiodicreportonmemoryusage(UInt32 WorkingSet)		SensPerf	SensorServiceperiodicreportonmemoryusage	Informational		
+Microsoft-Windows-Sensors	1103	0	SensorServiceperiodicreportoncpuusage(Float CPUUsage)		SensPerf	SensorServiceperiodicreportoncpuusage	Informational		
+Microsoft-Windows-Sensors	1104	0	SensorServiceresultsfromqueryingasensor(GUID SENSOR_ID, SYSTEMTIME Timestamp, UInt32 HRESULT, Pointer ReportPointer, UInt32 SensorStateThisSensor, UInt32 SensorStateAccumulated)		SensPerf	SensorServiceresultsfromqueryingasensor	Informational		
+Microsoft-Windows-Sensors	1105	0	SensorServicetimerqueuecallbackfororientation,abouttowritequadrantangletoaggregatedsensor(Float QuadrantAngle)		SensPerf	SensorServicetimerqueuecallbackfororientation,abouttowritequadrantangletoaggregatedsensor	Informational		
+Microsoft-Windows-Sensors	1106	0	SensorServiceprocessingsensordatafororientation,sensorstateusedinprocessingdata(UInt32 SensorState)		SensPerf	SensorServiceprocessingsensordatafororientation,sensorstateusedinprocessingdata	Informational		
+Microsoft-Windows-Sensors	1107	0	SensorServiceprocessingsensordatafororientation,readingsensordatasuccessful(Float AccelerationX, Float AccelerationY, Float AccelerationZ, Float PitchCalibration)		SensPerf	SensorServiceprocessingsensordatafororientation,readingsensordatasuccessful	Informational		
+Microsoft-Windows-Sensors	1108	0	SensorServiceprocessingsensordatafororientation,pitchangletestresult(UInt32 IsPitchGreaterThanThreshold, Float PitchAngle, Float PitchThreshold, Float PitchCalibration)		SensPerf	SensorServiceprocessingsensordatafororientation,pitchangletestresult	Informational		
+Microsoft-Windows-Sensors	1109	0	SensorServiceprocessingsensordatafororientation,screenorientationresult(Float Theta, Float AngularCalibration)		SensPerf	SensorServiceprocessingsensordatafororientation,screenorientationresult	Informational		
+Microsoft-Windows-Sensors	1110	0	SensorServiceprocessingsensordatafororientation,thetanegativesoadded360(Float Theta)		SensPerf	SensorServiceprocessingsensordatafororientation,thetanegativesoadded360	Informational		
+Microsoft-Windows-Sensors	1111	0	SensorServiceprocessingsensordatafororientation,testingiftherewasaquadrantchange(UInt32 GoodAngle, UInt32 Quadrant, UInt32 LastQuadrant)		SensPerf	SensorServiceprocessingsensordatafororientation,testingiftherewasaquadrantchange	Informational		
+Microsoft-Windows-Sensors	1112	0	SensorServiceprocessingsensordatafororientation,statusandactiontakenontimerqueue(UInt32 TimerQueueStatus, UInt32 TimerQueueAction)		SensPerf	SensorServiceprocessingsensordatafororientation,statusandactiontakenontimerqueue	Informational		
+Microsoft-Windows-Sensors	1113	0	SensorServicetimerqueuecallbackfororientation,testingiftherewasaquadrantchange(UInt32 GoodAngle, UInt32 Quadrant, UInt32 LastQuadrant, Float Theta)		SensPerf	SensorServicetimerqueuecallbackfororientation,testingiftherewasaquadrantchange	Informational		
+Microsoft-Windows-Sensors	1114	0	SensorServicetimerqueuecallbackfororientation,testingifthescreenrotatedpastangularthresholdintonextquadrant(UInt32 GoodAngle, UInt32 Quadrant, Float AngularThreshold, Float Theta)		SensPerf	SensorServicetimerqueuecallbackfororientation,testingifthescreenrotatedpastangularthresholdintonextquadrant	Informational		
+Microsoft-Windows-Sensors	1119	0	SensorServicesettingquadrantangleinaggregatedsensorStart(Float QuadrantAngle)	Start	SensPerf	SensorServicesettingquadrantangleinaggregatedsensor	Informational		
+Microsoft-Windows-Sensors	1120	0	SensorServicesettingquadrantangleinaggregatedsensorStop(Float QuadrantAngle)	Stop	SensPerf	SensorServicesettingquadrantangleinaggregatedsensor	Informational		
+Microsoft-Windows-Sensors	1121	0	SensorServicestatechangedeventStart(GUID SENSOR_ID, UInt32 SensorState)	Start	SensPerf	SensorServicestatechangedevent	Informational		
+Microsoft-Windows-Sensors	1122	0	SensorServicestatechangedeventStop(GUID SENSOR_ID, UInt32 SensorState)	Stop	SensPerf	SensorServicestatechangedevent	Informational		
+Microsoft-Windows-Sensors	1123	0	SensorServicesettingsensorstateinaggregatedsensorStart(UInt32 SensorState)	Start	SensPerf	SensorServicesettingsensorstateinaggregatedsensor	Informational		
+Microsoft-Windows-Sensors	1124	0	SensorServicesettingsensorstateinaggregatedsensorStop(UInt32 SensorState)	Stop	SensPerf	SensorServicesettingsensorstateinaggregatedsensor	Informational		
+Microsoft-Windows-Sensors	1201	0	SensorClassExtensionInitializationStart()	Start	SensPerf	SensorClassExtensionInitialization	Informational		
+Microsoft-Windows-Sensors	1202	0	SensorClassExtensionInitializationStop()	Stop	SensPerf	SensorClassExtensionInitialization	Informational		
+Microsoft-Windows-Sensors	1203	0	SensorClassExtensionUninitializationStart()	Start	SensPerf	SensorClassExtensionUninitialization	Informational		
+Microsoft-Windows-Sensors	1204	0	SensorClassExtensionUninitializationStop()	Stop	SensPerf	SensorClassExtensionUninitialization	Informational		
+Microsoft-Windows-Sensors	1205	0	SensorClassExtensionProcessIoControlHandlerStart()	Start	SensPerf	SensorClassExtensionProcessIoControlHandler	Informational		
+Microsoft-Windows-Sensors	1206	0	SensorClassExtensionProcessIoControlHandlerStop()	Stop	SensPerf	SensorClassExtensionProcessIoControlHandler	Informational		
+Microsoft-Windows-Sensors	1207	0	SensorClassExtensionPostEventHandlerStart(UnicodeString SensorObjectId)	Start	SensPerf	SensorClassExtensionPostEventHandler	Informational		
+Microsoft-Windows-Sensors	1208	0	SensorClassExtensionPostEventHandlerStop(UnicodeString SensorObjectId)	Stop	SensPerf	SensorClassExtensionPostEventHandler	Informational		
+Microsoft-Windows-Sensors	1209	0	SensorClassExtensionClientInformationevent(UInt32 EventNumber, UInt32 EventCount, GUID SENSOR_ID, UInt32 ConnectedClients, UInt32 SubscribedClients, UInt32 SilentClients, UInt32 PID, UInt32 ClientBitfield)		SensPerf	SensorClassExtensionClientInformationevent	Informational		
+Microsoft-Windows-Sensors	1301	0	SensorAPIcalltofireISensorEvents::OnDataUpdatedeventStart(UnicodeString SensorObjectId, GUID SENSOR_ID, SYSTEMTIME Timestamp)	Start	SensPerf	SensorAPIcalltofireISensorEvents::OnDataUpdatedevent	Informational		
+Microsoft-Windows-Sensors	1302	0	SensorAPIcalltofireISensorEvents::OnDataUpdatedeventStop(UnicodeString SensorObjectId, GUID SENSOR_ID, SYSTEMTIME Timestamp)	Stop	SensPerf	SensorAPIcalltofireISensorEvents::OnDataUpdatedevent	Informational		
+Microsoft-Windows-Sensors	1303	0	SensorAPIcalltogetsensordatareportStart(GUID SENSOR_ID)	Start	SensPerf	SensorAPIcalltogetsensordatareport	Informational		
+Microsoft-Windows-Sensors	1304	0	SensorAPIcalltogetsensordatareportStop(GUID SENSOR_ID)	Stop	SensPerf	SensorAPIcalltogetsensordatareport	Informational		
+Microsoft-Windows-Sensors	1305	0	SensorAPIcalltogetasensorpropertyvalueStart(GUID SENSOR_ID)	Start	SensPerf	SensorAPIcalltogetasensorpropertyvalue	Informational		
+Microsoft-Windows-Sensors	1306	0	SensorAPIcalltogetasensorpropertyvalueStop(GUID SENSOR_ID)	Stop	SensPerf	SensorAPIcalltogetasensorpropertyvalue	Informational		
+Microsoft-Windows-Sensors	1307	0	SensorAPIcalltogetsensorpropertyvaluesStart(GUID SENSOR_ID)	Start	SensPerf	SensorAPIcalltogetsensorpropertyvalues	Informational		
+Microsoft-Windows-Sensors	1308	0	SensorAPIcalltogetsensorpropertyvaluesStop(GUID SENSOR_ID)	Stop	SensPerf	SensorAPIcalltogetsensorpropertyvalues	Informational		
+Microsoft-Windows-Sensors	1309	0	SensorAPIcalltosetsensorpropertyvaluesStart(GUID SENSOR_ID)	Start	SensPerf	SensorAPIcalltosetsensorpropertyvalues	Informational		
+Microsoft-Windows-Sensors	1310	0	SensorAPIcalltosetsensorpropertyvaluesStop(GUID SENSOR_ID)	Stop	SensPerf	SensorAPIcalltosetsensorpropertyvalues	Informational		
+Microsoft-Windows-Sensors	1311	0	SensorAPIcalltofireISensorEvents::OnStateChangedeventStart(UnicodeString SensorObjectId, GUID SENSOR_ID, UInt32 SensorState)	Start	SensPerf	SensorAPIcalltofireISensorEvents::OnStateChangedevent	Informational		
+Microsoft-Windows-Sensors	1312	0	SensorAPIcalltofireISensorEvents::OnStateChangedeventStop(UnicodeString SensorObjectId, GUID SENSOR_ID, UInt32 SensorState)	Stop	SensPerf	SensorAPIcalltofireISensorEvents::OnStateChangedevent	Informational		
+Microsoft-Windows-Sensors	1501	0	ValidationfailureinHIDsensorreportdescriptor(UnicodeString SensorObjectId, GUID SENSOR_ID)		SensPerf	ValidationfailureinHIDsensorreportdescriptor	Error		
+Microsoft-Windows-Sensors	1502	0	ValidationfailureinHIDsensorreportdescriptor1502(UnicodeString SensorObjectId, GUID SENSOR_ID)		SensPerf	ValidationfailureinHIDsensorreportdescriptor	Error		
+Microsoft-Windows-Sensors	1503	0	ValidationfailureinHIDsensorreportdescriptor1503(UnicodeString SensorObjectId, GUID SENSOR_ID)		SensPerf	ValidationfailureinHIDsensorreportdescriptor	Error		
+Microsoft-Windows-Sensors	1504	0	ValidationfailureinHIDsensorreportdescriptor1504(UnicodeString SensorObjectId, GUID SENSOR_ID)		SensPerf	ValidationfailureinHIDsensorreportdescriptor	Error		
+Microsoft-Windows-Sensors	1505	0	ValidationfailureinHIDsensorreportdescriptor1505(UnicodeString SensorObjectId, GUID SENSOR_ID)		SensPerf	ValidationfailureinHIDsensorreportdescriptor	Error		
+Microsoft-Windows-Sensors	1506	0	ValidationfailureinHIDsensorreportdescriptor1506(UnicodeString SensorObjectId, GUID SENSOR_ID)		SensPerf	ValidationfailureinHIDsensorreportdescriptor	Error		
+Microsoft-Windows-Sensors	1507	0	ValidationfailureinHIDsensorreportdescriptor1507(UnicodeString SensorObjectId, GUID SENSOR_ID)		SensPerf	ValidationfailureinHIDsensorreportdescriptor	Error		
+Microsoft-Windows-Sensors	1508	0	ValidationfailureinHIDsensorreportdescriptor1508(UnicodeString SensorObjectId, GUID SENSOR_ID)		SensPerf	ValidationfailureinHIDsensorreportdescriptor	Error		
+Microsoft-Windows-Sensors	1509	0	HIDsensorfeaturereportfailure(UnicodeString SensorObjectId, GUID SENSOR_ID, UInt32 HRESULT)		SensPerf	HIDsensorfeaturereportfailure	Error		
+Microsoft-Windows-Sensors	1510	0	HIDsensorinputreportfailure(UnicodeString SensorObjectId, GUID SENSOR_ID, UInt32 HRESULT)		SensPerf	HIDsensorinputreportfailure	Error		
+Microsoft-Windows-Sensors	1511	0	HIDsensorinputreportfailure1511(UnicodeString SensorObjectId, GUID SENSOR_ID, UInt32 HRESULT)		SensPerf	HIDsensorinputreportfailure	Error		
+Microsoft-Windows-Sensors	1512	0	SensPerf_Task_SensorsHIDClassDriver_DeviceReconnect(UnicodeString SensorObjectId, GUID SENSOR_ID, UInt32 HRESULT)		SensPerf	SensPerf_Task_SensorsHIDClassDriver_DeviceReconnect	Error		
+Microsoft-Windows-Sensors	2001	0	PerfMarkersfortimebetweenstartingLocationAPIandconsentpromptappearsStart()	Start	SensPerf	PerfMarkersfortimebetweenstartingLocationAPIandconsentpromptappears	Informational		
+Microsoft-Windows-Sensors	2002	0	PerfMarkersfortimebetweenstartingLocationAPIandconsentpromptappearsStop()	Stop	SensPerf	PerfMarkersfortimebetweenstartingLocationAPIandconsentpromptappears	Informational		
+Microsoft-Windows-Sensors	3001	0	InformationalPerfMarkerforuseinoutputtingagenericmessage(UnicodeString GenericMessage)		SensPerf	InformationalPerfMarkerforuseinoutputtingagenericmessage	Informational		
+Microsoft-Windows-Sensors	3002	0	SensorPlatformDataEvent(GUID SENSOR_ID, UInt32 MethodId)		SensPerf	SensorPlatformDataEvent	Informational		
+Microsoft-Windows-Sensors	10001	0	PerfTrackmeasurementofauto_rotationStart(UInt32 EventId)	Start	SensPerf	PerfTrackmeasurementofauto_rotation	Informational		
+Microsoft-Windows-Sensors	10002	0	PerfTrackmeasurementofauto_rotationStop(UInt32 EventId)	Stop	SensPerf	PerfTrackmeasurementofauto_rotation	Informational		
+Microsoft-Windows-Sensors	10003	0	PerfTrackmeasurementofauto_rotation_10002(UInt32 EventId, UInt32 QuadrantChangeInterval, UInt32 Angle)		SensPerf	PerfTrackmeasurementofauto_rotation_10002	Informational		

@@ -1,0 +1,5 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Kernel-XDV	1	0	task_0Start()	Start	keyword_200000000000	task_0	Informational		
+Microsoft-Windows-Kernel-XDV	2	0	task_0Stop()	Stop		task_0	Informational		
+Microsoft-Windows-Kernel-XDV	3	0	task_0Start3(Pointer IRP_Address, UInt32 IRP_Stack_Loc_Code, UInt32 IRP_Parameters, UnicodeString Module, UInt32 UInt32_Event_Number, Pointer Address_Stack)	Start		task_0	Informational		
+Microsoft-Windows-Kernel-XDV	4	0	task_0Start4(HexInt32 RuleId, AnsiString ErrorMessage, UnicodeString Module, UInt8 Irql)	Start	keyword_200000000000	task_0	Error		

@@ -1,0 +1,6 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Partition	1001	0	task_0(UInt32 DiskNumber, UInt32 ControlCode)			task_0	Informational		
+Microsoft-Windows-Partition	1002	0	task_01002(UInt32 DiskNumber, UInt32 ControlCode, UInt32 Status)			task_0	Informational		
+Microsoft-Windows-Partition	1003	0	task_01003(Pointer Process, UInt64 IncrementEnergy, UInt64 SrvTime, UInt64 EndByteOffset, UInt32 IoSize, UInt8 LastIdleState, UInt8 IsRandom)		power	task_0	Informational		
+Microsoft-Windows-Partition	1004	0	task_01004(Pointer Process, UInt64 IncrementEnergy, UInt64 IdleTime, UInt8 LastIdleState)		power	task_0	Informational		
+Microsoft-Windows-Partition	1005	0	task_01005(UInt64 LocalLastCompTime, UInt64 SharedLastCompTime, UInt64 CompTime)		power	task_0	Informational		

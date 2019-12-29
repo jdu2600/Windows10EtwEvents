@@ -1,0 +1,54 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-COM-Perf	1	0	Windows_Runtime_ActivateInstance_InProcStart()	Start		Windows_Runtime_ActivateInstance_InProc	Informational		
+Microsoft-Windows-COM-Perf	2	0	Windows_Runtime_ActivateInstance_InProcStop()	Stop		Windows_Runtime_ActivateInstance_InProc	Informational		
+Microsoft-Windows-COM-Perf	3	0	Windows_Runtime_ActivateInstance_OutOfProcStart()	Start		Windows_Runtime_ActivateInstance_OutOfProc	Informational		
+Microsoft-Windows-COM-Perf	4	0	Windows_Runtime_ActivateInstance_OutOfProcStop()	Stop		Windows_Runtime_ActivateInstance_OutOfProc	Informational		
+Microsoft-Windows-COM-Perf	5	0	COM_CreateInstanceStart()	Start		COM_CreateInstance	Informational		
+Microsoft-Windows-COM-Perf	6	0	COM_CreateInstanceStop()	Stop		COM_CreateInstance	Informational		
+Microsoft-Windows-COM-Perf	7	0	Windows_Runtime_GetActivationFactory_InProcStart()	Start		Windows_Runtime_GetActivationFactory_InProc	Informational		
+Microsoft-Windows-COM-Perf	8	0	Windows_Runtime_GetActivationFactory_InProcStop()	Stop		Windows_Runtime_GetActivationFactory_InProc	Informational		
+Microsoft-Windows-COM-Perf	9	0	Windows_Runtime_GetActivationFactory_OutOfProcStart()	Start		Windows_Runtime_GetActivationFactory_OutOfProc	Informational		
+Microsoft-Windows-COM-Perf	10	0	Windows_Runtime_GetActivationFactory_OutOfProcStop()	Stop		Windows_Runtime_GetActivationFactory_OutOfProc	Informational		
+Microsoft-Windows-COM-Perf	11	0	COM_GetClassObjectStart()	Start		COM_GetClassObject	Informational		
+Microsoft-Windows-COM-Perf	12	0	COM_GetClassObjectStop()	Stop		COM_GetClassObject	Informational		
+Microsoft-Windows-COM-Perf	13	0	ExtensionCatalog_RoGetExtensionRegistrationStart(UnicodeString ContractId, UnicodeString PackageId, UnicodeString ActivatableClassId)	Start		ExtensionCatalog_RoGetExtensionRegistration	Informational		
+Microsoft-Windows-COM-Perf	14	0	ExtensionCatalog_RoGetExtensionRegistrationStop(Int32 HRESULT, UnicodeString ContractId, UnicodeString PackageId, UnicodeString ActivatableClassId, Boolean InboxAppsRegistrationScope)	Stop		ExtensionCatalog_RoGetExtensionRegistration	Informational		
+Microsoft-Windows-COM-Perf	15	0	ExtensionCatalog_RoGetExtensionRegistrationByExtensionIdStart(UnicodeString ContractId, UnicodeString ExtensionId)	Start		ExtensionCatalog_RoGetExtensionRegistrationByExtensionId	Informational		
+Microsoft-Windows-COM-Perf	16	0	ExtensionCatalog_RoGetExtensionRegistrationByExtensionIdStop(Int32 HRESULT, UnicodeString ContractId, UnicodeString ExtensionId, Boolean InboxAppsRegistrationScope)	Stop		ExtensionCatalog_RoGetExtensionRegistrationByExtensionId	Informational		
+Microsoft-Windows-COM-Perf	17	0	ExtensionCatalog_QueryCatalogStart(UnicodeString ContractId)	Start		ExtensionCatalog_QueryCatalog	Informational		
+Microsoft-Windows-COM-Perf	18	0	ExtensionCatalog_QueryCatalogStop(Int32 HRESULT, UnicodeString ContractId)	Stop		ExtensionCatalog_QueryCatalog	Informational		
+Microsoft-Windows-COM-Perf	19	0	ExtensionCatalog_QueryCatalogByPackageFamilyStart(UnicodeString ContractId, UnicodeString PackageFamilyName)	Start		ExtensionCatalog_QueryCatalogByPackageFamily	Informational		
+Microsoft-Windows-COM-Perf	20	0	ExtensionCatalog_QueryCatalogByPackageFamilyStop(Int32 HRESULT, UnicodeString ContractId, UnicodeString PackageFamilyName)	Stop		ExtensionCatalog_QueryCatalogByPackageFamily	Informational		
+Microsoft-Windows-COM-Perf	21	0	ExtensionCatalog_CustomPropertyLookupStart(UnicodeString CustomPropertyKey)	Start		ExtensionCatalog_CustomPropertyLookup	Informational		
+Microsoft-Windows-COM-Perf	22	0	ExtensionCatalog_CustomPropertyLookupStop(Int32 HRESULT, UnicodeString CustomPropertyKey)	Stop		ExtensionCatalog_CustomPropertyLookup	Informational		
+Microsoft-Windows-COM-Perf	23	0	ExtensionCatalog_MoveNextStart(UnicodeString ContractId)	Start		ExtensionCatalog_MoveNext	Informational		
+Microsoft-Windows-COM-Perf	24	0	ExtensionCatalog_MoveNextStop(Int32 HRESULT, UnicodeString ContractId, UnicodeString PackageId, UnicodeString ActivatableClassId, Boolean InboxAppsRegistrationScope)	Stop		ExtensionCatalog_MoveNext	Informational		
+Microsoft-Windows-COM-Perf	25	0	COM_CreateInstance_AppStart()	Start		COM_CreateInstance_App	Informational		
+Microsoft-Windows-COM-Perf	26	0	COM_CreateInstance_AppStop()	Stop		COM_CreateInstance_App	Informational		
+Microsoft-Windows-COM-Perf	27	0	Windows_Runtime_BrokeredActivateInstanceStart()	Start		Windows_Runtime_BrokeredActivateInstance	Informational		
+Microsoft-Windows-COM-Perf	28	0	Windows_Runtime_BrokeredActivateInstanceStop()	Stop		Windows_Runtime_BrokeredActivateInstance	Informational		
+Microsoft-Windows-COM-Perf	29	0	Windows_Runtime_BrokeredGetActivationFactoryStart()	Start		Windows_Runtime_BrokeredGetActivationFactory	Informational		
+Microsoft-Windows-COM-Perf	30	0	Windows_Runtime_BrokeredGetActivationFactoryStop()	Stop		Windows_Runtime_BrokeredGetActivationFactory	Informational		
+Microsoft-Windows-COM-Perf	31	0	Windows_Runtime_GetActivationFactory_InprocServerImplStart()	Start		Windows_Runtime_GetActivationFactory_InprocServerImpl	Informational		
+Microsoft-Windows-COM-Perf	32	0	Windows_Runtime_GetActivationFactory_InprocServerImplStop()	Stop		Windows_Runtime_GetActivationFactory_InprocServerImpl	Informational		
+Microsoft-Windows-COM-Perf	33	0	Windows_Runtime_ActivateInstance_InprocServerImplStart()	Start		Windows_Runtime_ActivateInstance_InprocServerImpl	Informational		
+Microsoft-Windows-COM-Perf	34	0	Windows_Runtime_ActivateInstance_InprocServerImplStop()	Stop		Windows_Runtime_ActivateInstance_InprocServerImpl	Informational		
+Microsoft-Windows-COM-Perf	35	0	COM_GetClassFactory_InprocServerImplStart()	Start		COM_GetClassFactory_InprocServerImpl	Informational		
+Microsoft-Windows-COM-Perf	36	0	COM_GetClassFactory_InprocServerImplStop()	Stop		COM_GetClassFactory_InprocServerImpl	Informational		
+Microsoft-Windows-COM-Perf	37	0	COM_CreateInstance_InprocServerImplStart()	Start		COM_CreateInstance_InprocServerImpl	Informational		
+Microsoft-Windows-COM-Perf	38	0	COM_CreateInstance_InprocServerImplStop()	Stop		COM_CreateInstance_InprocServerImpl	Informational		
+Microsoft-Windows-COM-Perf	39	1	COM_ClientSyncCallStart_V1(UInt32 CallTraceId, UInt32 TargetProcessId, UInt32 TargetThreadId, GUID CausalityId, UInt32 TargetMethod, GUID TargetInterface, Pointer ProxyInterfacePointer, Pointer ProxyManagerIUnknown, GUID IPID, UInt64 OID, GUID CallerLogicalThreadId, Pointer CallerReturnAddress, UInt32 WinrtAsyncPatternMethodIndicator, Boolean FakeSync)	Start		COM_ClientSyncCall	Informational		
+Microsoft-Windows-COM-Perf	40	0	COM_ClientSyncCallStop(UInt32 CallTraceId, Int32 HRESULT, UInt32 SourceOfHRESULT)	Stop		COM_ClientSyncCall	Informational		
+Microsoft-Windows-COM-Perf	41	1	COM_ClientAsyncCallStart_V1(UInt32 CallTraceId, UInt32 TargetProcessId, UInt32 TargetThreadId, GUID CausalityId, UInt32 TargetMethod, GUID TargetInterface, GUID TargetInterfaceAsyncUuid, Pointer ProxyInterfacePointer, Pointer ProxyManagerIUnknown, GUID IPID, UInt64 OID, GUID CallerLogicalThreadId, Pointer CallerReturnAddress)	Start		COM_ClientAsyncCall	Informational		
+Microsoft-Windows-COM-Perf	42	0	COM_ClientAsyncCallStop(UInt32 CallTraceId, Int32 HRESULT, UInt32 SourceOfHRESULT)	Stop		COM_ClientAsyncCall	Informational		
+Microsoft-Windows-COM-Perf	43	2	COM_ServerSyncCallStart_V2(UInt32 CallTraceId, UInt32 SourceProcessId, UInt32 SourceThreadId, GUID CausalityId, UInt32 TargetMethod, GUID TargetInterface, Pointer InterfacePointer, Pointer MethodAddress, Pointer ServerIUnknown, GUID IPID, UInt64 OID, UInt32 WinrtAsyncPatternMethodIndicator)	Start		COM_ServerSyncCall	Informational		
+Microsoft-Windows-COM-Perf	44	0	COM_ServerSyncCallStop(UInt32 CallTraceId, Int32 HRESULT, UInt32 ServerException)	Stop		COM_ServerSyncCall	Informational		
+Microsoft-Windows-COM-Perf	45	1	COM_ServerAsyncCallStart_V1(UInt32 CallTraceId, UInt32 SourceProcessId, UInt32 SourceThreadId, GUID CausalityId, UInt32 TargetMethod, GUID TargetInterface, GUID TargetInterfaceAsyncUuid, Pointer InterfacePointer, Pointer MethodAddress, Pointer ServerIUnknown, GUID IPID, UInt64 OID)	Start		COM_ServerAsyncCall	Informational		
+Microsoft-Windows-COM-Perf	46	0	COM_ServerAsyncCallStop(UInt32 CallTraceId, Int32 HRESULT, UInt32 ServerException)	Stop		COM_ServerAsyncCall	Informational		
+Microsoft-Windows-COM-Perf	47	0	COM_FreeUnusedLibrary(UInt64 ApartmentId64, UInt32 AptId, UInt8 AptKind, UInt32 UnloadDelay)			COM_FreeUnusedLibrary	Informational		
+Microsoft-Windows-COM-Perf	48	0	COM_ApartmentUninitialize(UInt64 ApartmentId64, UInt32 AptId, UInt8 AptKind)			COM_ApartmentUninitialize	Informational		
+Microsoft-Windows-COM-Perf	49	0	COM_ApartmentInitialize(UInt64 ApartmentId64, UInt32 AptId, UInt8 AptKind)			COM_ApartmentInitialize	Informational		
+Microsoft-Windows-COM-Perf	50	0	Windows_Runtime_DesktopBrokeredActivateInstanceStart()	Start		Windows_Runtime_DesktopBrokeredActivateInstance	Informational		
+Microsoft-Windows-COM-Perf	51	0	Windows_Runtime_DesktopBrokeredActivateInstanceStop()	Stop		Windows_Runtime_DesktopBrokeredActivateInstance	Informational		
+Microsoft-Windows-COM-Perf	52	0	Windows_Runtime_DesktopBrokeredGetActivationFactoryStart()	Start		Windows_Runtime_DesktopBrokeredGetActivationFactory	Informational		
+Microsoft-Windows-COM-Perf	53	0	Windows_Runtime_DesktopBrokeredGetActivationFactoryStop()	Stop		Windows_Runtime_DesktopBrokeredGetActivationFactory	Informational		

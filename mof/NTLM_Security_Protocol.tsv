@@ -1,0 +1,10 @@
+provider	category	event_id	version	event(fields)	event_type	description
+NTLM Security Protocol	{19196b33-a302-4c12-9d5a-eac149e93c46}	1	0	NtlmLogonUser_Start()	Start	NTLM Logon User
+NTLM Security Protocol	{19196b33-a302-4c12-9d5a-eac149e93c46}	2	0	NtlmLogonUser_End(UInt32 Status, UInt32 LogonType, String UserName, String DomainName)	End	NTLM Logon User
+NTLM Security Protocol	{34d84181-c28a-41d8-bb9e-995190df83df}	1	0	NtlmValidateUser_Start()	Start	NTLM Validate Credentials
+NTLM Security Protocol	{34d84181-c28a-41d8-bb9e-995190df83df}	2	0	NtlmValidateUser_End(UInt32 Success, String LogonServer, String LogonDomain, String UserName, String Workstation)	End	NTLM Validate Credentials
+NTLM Security Protocol	{6df28b22-73be-45cc-ba80-8b332b35a21d}	1	0	NtlmClientInitialize_Start(UInt32 StageHint, UInt32 InContext)	Start	NTLM Client Initialize
+NTLM Security Protocol	{6df28b22-73be-45cc-ba80-8b332b35a21d}	2	0	NtlmClientInitialize_End(UInt32 StageHint, UInt32 InContext, UInt32 OutContext, UInt32 Status)	End	NTLM Client Initialize
+NTLM Security Protocol	{94d4c9eb-0d01-41ae-99e8-15b26b593a83}	0	0	NtlmServerAccept_Info(UInt32 StageHint, UInt32 InContext, UInt32 OutContext, UInt32 Flags, String UserName, String DomainName, String Workstation)	Info	NTLM Server Accept
+NTLM Security Protocol	{94d4c9eb-0d01-41ae-99e8-15b26b593a83}	1	0	NtlmServerAccept_Start(UInt32 StageHint, UInt32 InContext)	Start	NTLM Server Accept
+NTLM Security Protocol	{94d4c9eb-0d01-41ae-99e8-15b26b593a83}	2	0	NtlmServerAccept_End(UInt32 StageHint, UInt32 InContext, UInt32 OutContext, UInt32 Status)	End	NTLM Server Accept

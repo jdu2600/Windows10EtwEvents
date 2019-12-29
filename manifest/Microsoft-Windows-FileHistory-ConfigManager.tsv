@@ -1,0 +1,16 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-FileHistory-ConfigManager	1	0	ValidateTargetStart(UnicodeString TargetUrl)	Start		ValidateTarget	Always		
+Microsoft-Windows-FileHistory-ConfigManager	2	0	ValidateTargetStop(UnicodeString TargetUrl)	Stop		ValidateTarget	Always		
+Microsoft-Windows-FileHistory-ConfigManager	3	0	ProvisionAndSetTargetStart(UnicodeString TargetUrl)	Start		ProvisionAndSetTarget	Always		
+Microsoft-Windows-FileHistory-ConfigManager	4	0	ProvisionAndSetTargetStop(UnicodeString TargetUrl)	Stop		ProvisionAndSetTarget	Always		
+Microsoft-Windows-FileHistory-ConfigManager	5	0	ReassociationStart(UnicodeString TargetUrl)	Start		Reassociation	Always		
+Microsoft-Windows-FileHistory-ConfigManager	6	0	ReassociationStop(UnicodeString TargetUrl)	Stop		Reassociation	Always		
+Microsoft-Windows-FileHistory-ConfigManager	7	0	ReassociationStart7(Boolean OverwriteIfExists)	Start		Reassociation	Always		
+Microsoft-Windows-FileHistory-ConfigManager	8	0	ReassociationStop8()	Stop		Reassociation	Always		
+Microsoft-Windows-FileHistory-ConfigManager	9	0	MigrationStart(UnicodeString TargetUrl)	Start		Migration	Always		
+Microsoft-Windows-FileHistory-ConfigManager	10	0	MigrationStop()	Stop		Migration	Always		
+Microsoft-Windows-FileHistory-ConfigManager	11	0	MigrationStart11(UnicodeString TargetUrl)	Start		Migration	Always		
+Microsoft-Windows-FileHistory-ConfigManager	12	0	MigrationStop12()	Stop		Migration	Always		
+Microsoft-Windows-FileHistory-ConfigManager	13	0	MigrationStart13(UnicodeString TargetUrl)	Start		Migration	Always		
+Microsoft-Windows-FileHistory-ConfigManager	14	0	MigrationStop14()	Stop		Migration	Always		
+Microsoft-Windows-FileHistory-ConfigManager	15	0	SettingChangeNotification()			SettingChangeNotification	Always		

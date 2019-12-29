@@ -1,0 +1,4 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-RPCSS	1	1	task_0_V1(UInt16 DetectionLocation, HexInt32 Status, HexInt32 AdditionalData1, HexInt32 AdditionalData2)		EpmapDebug	task_0	Error		
+Microsoft-Windows-RPCSS	2	1	task_02_V1(GUID InterfaceUUID, GUID ObjectUUID, AnsiString Protocol, AnsiString EndPoint)		EpmapInterfaceRegister	task_0	Informational		
+Microsoft-Windows-RPCSS	3	1	task_03_V1(GUID InterfaceUUID, GUID ObjectUUID, AnsiString Protocol, AnsiString EndPoint)		EpmapInterfaceUnregister	task_0	Informational		

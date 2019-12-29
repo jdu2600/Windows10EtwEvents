@@ -1,0 +1,9 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-MFH264Enc	1	0	MFH264Enc_EncodeSessionStart(Pointer EncoderInstance, Int32 Complexity, Int32 RateCtrlMode, Int32 ContentType, Int32 BufferSize, Int32 AverageBitRate, Int32 PeakBitRate, Int32 EntropyMode, Int32 MultithreadEncodingMode, Int32 NumberOfWorkerThreads)	Start		MFH264Enc_EncodeSession	Informational		
+Microsoft-Windows-MFH264Enc	2	0	MFH264Enc_EncodeSessionStop(Pointer EncoderInstance)	Stop		MFH264Enc_EncodeSession	Informational		
+Microsoft-Windows-MFH264Enc	3	0	MFH264Enc_TrackSampleStart(Pointer EncoderInstance, Int64 SampleTime)	Start		MFH264Enc_TrackSample	Informational		
+Microsoft-Windows-MFH264Enc	4	0	MFH264Enc_TrackSampleStop(Pointer EncoderInstance, Int64 SampleTime)	Stop		MFH264Enc_TrackSample	Informational		
+Microsoft-Windows-MFH264Enc	5	0	MFH264Enc_WorkItemStart(Pointer EncoderInstance, Int64 TimeStamp, Int32 Type)	Start		MFH264Enc_WorkItem	Informational		
+Microsoft-Windows-MFH264Enc	6	0	MFH264Enc_WorkItemStop(Pointer EncoderInstance, Int64 TimeStamp, Int32 Type)	Stop		MFH264Enc_WorkItem	Informational		
+Microsoft-Windows-MFH264Enc	7	0	MFH264Enc_RateControl(Pointer EncoderInstance, Int64 TimeStamp, Int32 GOPNumber, Int32 FrameNumber, Double FrameRate)			MFH264Enc_RateControl	Informational		
+Microsoft-Windows-MFH264Enc	8	0	MFH264Enc_RateControl8(Pointer EncoderInstance, Int64 TimeStamp, Int32 GOPNumber, Int32 FrameNumber, Int32 BitRate)			MFH264Enc_RateControl	Informational		

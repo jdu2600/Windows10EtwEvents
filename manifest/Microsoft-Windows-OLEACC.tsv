@@ -1,0 +1,4 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-OLEACC	1	0	OLEACC_IAccessibleErrors(UnicodeString Method, UInt32 Hresult, UnicodeString Details, UnicodeString SourceHwnd, UnicodeString Provider)			OLEACC_IAccessibleErrors	Informational		
+Microsoft-Windows-OLEACC	2	0	OLEACC_ClientApiCallStart(UInt32 MethodIndex, Pointer Object, Int32 Parameter)	Start		OLEACC_ClientApiCall	Verbose		
+Microsoft-Windows-OLEACC	3	0	OLEACC_ClientApiCallStop(UInt32 MethodIndex, Pointer Object, Int32 Parameter)	Stop		OLEACC_ClientApiCall	Verbose		

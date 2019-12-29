@@ -1,0 +1,128 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-WWAN-SVC-EVENTS	1001	0	task_0(GUID InterfaceGuid, UInt32 ErrorCode, UInt32 Location, UInt32 Context)			task_0	Error		
+Microsoft-Windows-WWAN-SVC-EVENTS	1002	0	task_01002(GUID InterfaceGuid, UInt32 WarningCode, UInt32 Location, UInt32 Context)			task_0	Warning		
+Microsoft-Windows-WWAN-SVC-EVENTS	1003	0	task_01003(UnicodeString FunctionCall, UnicodeString Method, UInt32 ErrorCode)			task_0	Error		
+Microsoft-Windows-WWAN-SVC-EVENTS	2001	0	task_02001()			task_0	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	2002	0	task_02002()			task_0	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	2003	0	task_02003(GUID InterfaceGuid)		LwtDiagnostic ut:L2ConnectPath	task_0	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	2004	0	task_02004(GUID InterfaceGuid)		ut:ClosePath	task_0	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	2005	0	task_02005(GUID InterfaceGuid)		LwtDiagnostic ut:L2ConnectPath	task_0	Error		
+Microsoft-Windows-WWAN-SVC-EVENTS	2006	0	task_02006(GUID InterfaceGuid, UInt32 dwMajorVersion, UInt32 dwMinorVersion, UInt32 dwDriverCaps, UInt32 WwanCellularClass, UInt32 WwanDataClass, UInt32 WwanGSMBandClass, UInt32 WwanCDMABandClass, UInt32 ReadyState, UInt32 HwRadioState, UInt32 SwRadioState, UInt8 InformationAvailability, UInt32 NoOfProviders, UInt32 RegisterState, UInt32 RegisterMode, UInt32 PacketAttachState, UInt32 CurrentNetworkCaps, UInt32 NwError, UInt32 ConnectionId, UInt32 ActivationState, UInt32 VoiceCallState)		ut:Configuration	task_0	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	2007	0	task_02007(UInt32 APIName, GUID InterfaceGuid, UInt32 Location, UInt32 Context)		ut:L2ConnectPath ut:Configuration	task_0	Verbose		
+Microsoft-Windows-WWAN-SVC-EVENTS	2008	0	task_02008(UInt32 WwanApiName, GUID InterfaceGuid)			task_0	Verbose		
+Microsoft-Windows-WWAN-SVC-EVENTS	3001	0	task_03001(GUID InterfaceGuid, UInt32 EventCode, UInt32 RequestID)		LwtDiagnostic ut:L2ConnectPath	task_0	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	3002	0	task_03002(GUID InterfaceGuid, UInt32 EventCode, UInt32 ErrorCode, UInt32 NetworkErrorCode, UInt32 RequestID)		LwtDiagnostic ut:L2ConnectPath	task_0	Error		
+Microsoft-Windows-WWAN-SVC-EVENTS	3003	0	task_03003(GUID InterfaceGuid, UInt32 EventCode, UInt32 RequestID)		ut:ClosePath	task_0	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	3004	0	task_03004(GUID InterfaceGuid, UInt32 EventCode, UInt32 RequestID)		ut:L2ConnectPath	task_0	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	3006	0	task_03006(GUID InterfaceGuid, UInt32 EventCode, UInt32 RequestID)		ut:ClosePath	task_0	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	3008	0	task_03008(GUID InterfaceGuid, UInt32 EventCode, UInt32 RequestID)		ut:L2ConnectPath	task_0	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	3010	0	task_03010(GUID InterfaceGuid, UInt32 EventCode, UInt32 RequestID)		ut:ClosePath	task_0	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	3012	0	task_03012(GUID InterfaceGuid, UInt32 EventCode, UInt32 RequestID)		LwtDiagnostic ut:L2ConnectPath	task_0	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	3013	0	task_03013(GUID InterfaceGuid, UInt32 EventCode, UInt32 ErrorCode, UInt32 NetworkErrorCode, UInt32 RequestID)		LwtDiagnostic ut:L2ConnectPath	task_0	Error		
+Microsoft-Windows-WWAN-SVC-EVENTS	3014	0	task_03014(GUID InterfaceGuid, UInt32 EventCode, UInt32 RequestID)		ut:ClosePath	task_0	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	3015	0	task_03015(GUID InterfaceGuid, UInt32 EventCode, UInt32 ErrorCode, UInt32 NetworkErrorCode, UInt32 RequestID)		ut:ClosePath	task_0	Error		
+Microsoft-Windows-WWAN-SVC-EVENTS	4001	0	task_04001(GUID InterfaceGuid, UInt32 Rssi, UInt32 ErrorRate, UInt32 RssiInterval, UInt32 RssiThreshold)		ut:Configuration	task_0	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	4002	0	task_04002(UInt32 HWRadio, UInt32 SWRadio)		ut:Configuration	task_0	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	4003	0	task_04003(UInt32 ProfileUpdateType, UnicodeString ProfileName, UnicodeString oldProfileName)		ut:Configuration	task_0	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	4004	0	task_04004(GUID InterfaceGuid)		ut:Configuration	task_0	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	4005	0	task_04005(GUID InterfaceGuid, UInt32 RegisteredType)		ut:Configuration	task_0	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	5001	0	task_05001(UInt32 PinType, UInt32 PinState, UInt32 AttemptsRemaining)		ut:Configuration	task_0	Always		
+Microsoft-Windows-WWAN-SVC-EVENTS	5002	0	task_05002()		ut:Configuration	task_0	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	5003	0	task_05003(UInt32 PinType, UInt32 PinOperation)		ut:Configuration	task_0	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	6001	0	ConnectionCost(UInt32 CostSource, UInt32 CostValue, GUID InterfaceGuid, UnicodeString ProfileName)		ut:Configuration	ConnectionCost	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	6002	0	ConnectionCost6002(UInt32 CostSource, GUID InterfaceGuid, UnicodeString ProfileName)		ut:Configuration	ConnectionCost	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	6003	0	ConnectionCost6003(UInt32 CostValue)		ut:Configuration	ConnectionCost	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	6004	0	ConnectionCost6004()		ut:Configuration	ConnectionCost	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	6100	0	MeasureWwanResumeReconnecttaskStart(GUID InterfaceGuid)	Start	keyword_200000000000	MeasureWwanResumeReconnecttask	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	6101	0	MeasureWwanResumeReconnecttaskStop(GUID InterfaceGuid)	Stop	keyword_200000000000	MeasureWwanResumeReconnecttask	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	6102	0	task_0Start(GUID InterfaceGuid)	Start		task_0	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	6103	0	task_0Stop(GUID InterfaceGuid, UInt32 ConnectInformationFlags, UInt32 APIErrorCode, UInt32 NetworkErrorCode, UnicodeString HardwareId)	Stop		task_0	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	6104	0	task_0Stop6104(GUID InterfaceGuid)	Stop		task_0	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	7000	0	AccountManagement(UInt32 error, Int32 hresult)			AccountManagement	Critical		
+Microsoft-Windows-WWAN-SVC-EVENTS	7001	0	AccountManagement7001(UnicodeString mbnInterface, UnicodeString propname, UInt32 error, Int32 hresult)			AccountManagement	Error		
+Microsoft-Windows-WWAN-SVC-EVENTS	7002	0	AccountManagement7002(UnicodeString mbnInterface, Int32 cellularClass)			AccountManagement	Warning		
+Microsoft-Windows-WWAN-SVC-EVENTS	7003	0	AccountManagement7003()			AccountManagement	Error		
+Microsoft-Windows-WWAN-SVC-EVENTS	7004	0	AccountManagement7004()			AccountManagement	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	7005	0	AccountManagement7005()			AccountManagement	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	7006	0	AccountManagement7006(UInt32 error, Int32 hresult)			AccountManagement	Error		
+Microsoft-Windows-WWAN-SVC-EVENTS	7007	0	AccountManagement7007(UInt32 error, Int32 hresult)			AccountManagement	Error		
+Microsoft-Windows-WWAN-SVC-EVENTS	7008	0	AccountManagement7008(UInt32 error, Int32 hresult)			AccountManagement	Error		
+Microsoft-Windows-WWAN-SVC-EVENTS	7009	0	AccountManagement7009(UnicodeString mbnInterface, UnicodeString info)			AccountManagement	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	7010	0	AccountManagement7010(UnicodeString mbnInterface, UnicodeString info)			AccountManagement	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	7011	0	AccountManagement7011(UnicodeString mbnInterface, UnicodeString info)			AccountManagement	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	7012	0	AccountManagement7012(UnicodeString mbnInterface, UnicodeString info)			AccountManagement	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	7013	0	AccountManagement7013(UnicodeString mbnInterface)			AccountManagement	Warning		
+Microsoft-Windows-WWAN-SVC-EVENTS	7014	0	AccountManagement7014(UnicodeString mbnInterface)			AccountManagement	Warning		
+Microsoft-Windows-WWAN-SVC-EVENTS	7015	0	AccountManagement7015(UnicodeString mbnInterface)			AccountManagement	Error		
+Microsoft-Windows-WWAN-SVC-EVENTS	7016	0	AccountManagement7016(UnicodeString mbnInterface)			AccountManagement	Error		
+Microsoft-Windows-WWAN-SVC-EVENTS	7017	0	AccountManagement7017(UnicodeString mbnInterface)			AccountManagement	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	7018	0	AccountManagement7018(UnicodeString mbnInterface, UInt32 error, Int32 hresult)			AccountManagement	Error		
+Microsoft-Windows-WWAN-SVC-EVENTS	7900	0	AccountManagementStart(GUID interfaceGuid)	Start	MbaeUpdater	AccountManagement	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	7901	0	AccountManagementStop(GUID interfaceGuid)	Stop	MbaeUpdater	AccountManagement	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	7902	0	AccountManagementStart7902()	Start	MbaeUpdater	AccountManagement	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	7903	0	AccountManagementStop7903()	Stop	MbaeUpdater	AccountManagement	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	7904	0	AccountManagementStart7904()	Start	MbaeUpdater	AccountManagement	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	7905	0	AccountManagementStop7905()	Stop	MbaeUpdater	AccountManagement	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	8001	0	USSD(GUID InterfaceGuid, UInt32 RequestType, UInt8 DataCodingScheme, UInt8 StringLength)			USSD	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	8002	0	USSD8002(GUID InterfaceGuid, UInt32 EventType, UInt32 SessionState, UInt8 DataCodingScheme, UInt8 StringLength)			USSD	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	8003	0	USSD8003(GUID InterfaceGuid, UInt32 EventCode)			USSD	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	10001	0	WWANServiceStartupStart(UInt8 CurrentOrNextState, UInt32 Location, UInt32 Context, GUID InterfaceGuid)	Start	keyword_200000000000	WWANServiceStartup	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	10002	0	WWANServiceStartupStop(UInt8 CurrentOrNextState, UInt32 Location, UInt32 Context, GUID InterfaceGuid)	Stop	keyword_200000000000	WWANServiceStartup	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	10011	0	WWANServiceShutdownStart(UInt8 CurrentOrNextState, UInt32 Location, UInt32 Context, GUID InterfaceGuid)	Start	keyword_200000000000	WWANServiceShutdown	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	10012	0	WWANServiceShutdownStop(UInt8 CurrentOrNextState, UInt32 Location, UInt32 Context, GUID InterfaceGuid)	Stop	keyword_200000000000	WWANServiceShutdown	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	10021	0	InterfaceInitializationTaskStart(UInt8 CurrentOrNextState, UInt32 Location, UInt32 Context, GUID InterfaceGuid)	Start	keyword_200000000000	InterfaceInitializationTask	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	10022	0	InterfaceInitializationTaskStop(UInt8 CurrentOrNextState, UInt32 Location, UInt32 Context, GUID InterfaceGuid)	Stop	keyword_200000000000	InterfaceInitializationTask	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	10031	0	RegisterTaskStart(UInt8 CurrentOrNextState, UInt32 Location, UInt32 Context, GUID InterfaceGuid)	Start	ut:L2ConnectPath keyword_200000000000	RegisterTask	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	10032	0	RegisterTaskStop(UInt8 CurrentOrNextState, UInt32 Location, UInt32 Context, GUID InterfaceGuid)	Stop	ut:L2ConnectPath keyword_200000000000	RegisterTask	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	10061	0	ConnectTaskStart(UInt8 CurrentOrNextState, UInt32 Location, UInt32 Context, GUID InterfaceGuid)	Start	ut:L2ConnectPath keyword_200000000000	ConnectTask	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	10062	0	ConnectTaskStop(UInt8 CurrentOrNextState, UInt32 Location, UInt32 Context, GUID InterfaceGuid)	Stop	ut:L2ConnectPath keyword_200000000000	ConnectTask	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	10071	0	ScanTaskStart(UInt8 CurrentOrNextState, UInt32 Location, UInt32 Context, GUID InterfaceGuid)	Start	keyword_200000000000	ScanTask	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	10072	0	ScanTaskStop(UInt8 CurrentOrNextState, UInt32 Location, UInt32 Context, GUID InterfaceGuid)	Stop	keyword_200000000000	ScanTask	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	10081	0	WWANServiceStartup_9Start(UInt8 CurrentOrNextState, UInt32 Location, UInt32 Context, GUID InterfaceGuid)	Start	keyword_200000000000	WWANServiceStartup_9	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	10082	0	WWANServiceStartup_9Stop(UInt8 CurrentOrNextState, UInt32 Location, UInt32 Context, GUID InterfaceGuid)	Stop	keyword_200000000000	WWANServiceStartup_9	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	10091	0	WWANServiceSuspendStart(UInt8 CurrentOrNextState, UInt32 Location, UInt32 Context, GUID InterfaceGuid)	Start	keyword_200000000000	WWANServiceSuspend	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	10092	0	WWANServiceSuspendStop(UInt8 CurrentOrNextState, UInt32 Location, UInt32 Context, GUID InterfaceGuid)	Stop	keyword_200000000000	WWANServiceSuspend	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	11001	1	task_0OID_Handling_V1(GUID InterfaceGuid, UInt32 RequestId, UInt32 WwanStatus, UInt32 DeviceType, UInt32 CellularClass, UInt32 VoiceClass, UInt32 SimClass, UInt32 DataClass, UnicodeString CustomDataClass, UInt32 BandClass, UnicodeString CustomBandClass, UInt32 SmsCaps, UInt32 ControlCaps, UnicodeString DeviceId, UnicodeString Manufacturer, UnicodeString Model, UnicodeString FirmwareInfo, UInt32 MaxActivatedContexts, UInt32 AuthAlgoCaps)	OID_Handling	LwtDiagnostic WwanOid keyword_400000000000	task_0	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	11002	1	task_0OID_Handling11002_V1(GUID InterfaceGuid, UInt32 RequestId, UInt32 ReadyState, UInt32 EmergencyMode, UnicodeString SubscriberId, UnicodeString SimIccId)	OID_Handling	LwtDiagnostic WwanOid keyword_400000000000	task_0	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	11003	1	task_0OID_Handling11003_V1(GUID InterfaceGuid, UInt32 RequestId, UInt32 WwanStatus, UInt32 HwRadioState, UInt32 SwRadioState)	OID_Handling	LwtDiagnostic WwanOid keyword_400000000000	task_0	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	11004	2	task_0OID_Handling11004_V2(GUID InterfaceGuid, UInt32 RequestId, UInt32 SwRadioAction, UInt32 ErrorCode)	OID_Handling	LwtDiagnostic WwanOid keyword_400000000000	task_0	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	11005	1	task_0OID_Handling11005_V1(GUID InterfaceGuid, UInt32 RequestId, UInt32 WwanStatus, UInt32 NetworkErrorCode, UInt32 RegisterState, UInt32 RegisterMode, UnicodeString ProviderId, UnicodeString ProviderName, UnicodeString RoamingText, UInt32 RegistrationFlags)	OID_Handling	LwtDiagnostic WwanOid keyword_400000000000	task_0	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	11006	2	task_0OID_Handling11006_V2(GUID InterfaceGuid, UInt32 RequestId, UnicodeString ProviderId, UInt32 RegisterAction, UInt32 ErrorCode)	OID_Handling	LwtDiagnostic WwanOid keyword_400000000000	task_0	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	11007	1	task_0OID_Handling11007_V1(GUID InterfaceGuid, UInt32 RequestId, UInt32 WwanStatus, UInt32 NetworkErrorCode, UInt32 PacketServiceState)	OID_Handling	LwtDiagnostic WwanOid keyword_400000000000	task_0	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	11008	2	task_0OID_Handling11008_V2(GUID InterfaceGuid, UInt32 RequestId, UInt32 PacketServiceAction, UInt32 ErrorCode)	OID_Handling	LwtDiagnostic WwanOid keyword_400000000000	task_0	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	11009	1	task_0OID_Handling11009_V1(GUID InterfaceGuid, UInt32 RequestId, UInt32 WwanStatus, UInt32 NetworkErrorCode, UInt32 ConnectionId, UInt32 ActivationState, UInt32 VoiceCallState, UInt32 IPType)	OID_Handling	LwtDiagnostic WwanOid keyword_400000000000	task_0	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	11010	2	task_0OID_Handling11010_V2(GUID InterfaceGuid, UInt32 RequestId, UInt32 ConnectionId, UInt32 ActivationCommand, UnicodeString AccessString, UInt32 Compression, UInt32 AuthProtocol, UInt32 IPType, UInt32 ErrorCode)	OID_Handling	LwtDiagnostic WwanOid keyword_400000000000	task_0	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	11011	1	task_0OID_Handling11011_V1(GUID InterfaceGuid, UInt32 RequestId, UInt32 WwanStatus, UInt32 PinType, UInt32 PinState, UInt32 AttemptsRemaining)	OID_Handling	LwtDiagnostic WwanOid keyword_400000000000	task_0	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	11012	2	task_0OID_Handling11012_V2(GUID InterfaceGuid, UInt32 RequestId, UInt32 PinType, UInt32 PinOperation, UInt32 ErrorCode)	OID_Handling	LwtDiagnostic WwanOid keyword_400000000000	task_0	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	11013	1	task_0OID_Handling11013_V1(GUID InterfaceGuid, UInt32 RequestId, UInt32 WwanStatus, UnicodeString ProviderId, UInt32 ProviderState, UnicodeString ProviderName)	OID_Handling	LwtDiagnostic WwanOid keyword_400000000000	task_0	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	11014	2	task_0OID_Handling11014_V2(GUID InterfaceGuid, UInt32 RequestId, UnicodeString ProviderId, UInt32 ErrorCode)	OID_Handling	LwtDiagnostic WwanOid keyword_400000000000	task_0	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	11015	1	task_0OID_Handling11015_V1(GUID InterfaceGuid, UInt32 RequestId, GUID DeviceServiceGuid, UInt32 WwanDeviceServiceCommands)	OID_Handling	LwtDiagnostic WwanOid keyword_400000000000	task_0	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	11016	1	task_0OID_Handling11016_V1(GUID InterfaceGuid, UInt32 RequestId, GUID DeviceServiceGuid, UInt32 WwanDeviceServiceEvents)	OID_Handling	LwtDiagnostic WwanOid keyword_400000000000	task_0	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	11017	1	task_0OID_Handling11017_V1(GUID InterfaceGuid, UInt32 RequestId, GUID DeviceServiceGuid, UInt32 WwanDeviceServiceResponse)	OID_Handling	LwtDiagnostic WwanOid keyword_400000000000	task_0	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	11018	1	task_0OID_Handling11018_V1(GUID InterfaceGuid, UInt32 RequestId, GUID DeviceServiceGuid, UInt32 WwanDeviceServiceResponse, UInt32 ModemNumber, UInt32 ExecutorID)	OID_Handling	LwtDiagnostic WwanOid keyword_400000000000	task_0	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	11019	1	task_0OID_Handling11019_V1(GUID InterfaceGuid, UInt32 RequestId, GUID DeviceServiceGuid, UInt32 WwanDeviceServiceResponse, UInt32 MaxContextCount)	OID_Handling	LwtDiagnostic WwanOid keyword_400000000000	task_0	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	11020	1	task_0OID_Handling11020_V1(GUID InterfaceGuid, UInt32 RequestId, GUID DeviceServiceGuid, UInt32 WwanDeviceServiceResponse, UInt32 Executors, UInt32 ActiveExecutors, UInt32 ActiveDataExecutors)	OID_Handling	LwtDiagnostic WwanOid keyword_400000000000	task_0	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	11101	1	task_0OID_Handling11101_V1(GUID InterfaceGuid, UInt32 RequestId, UInt32 OID, UInt32 cbPayload, Binary Payload, UInt32 ErrorCode)	OID_Handling	LwtDiagnostic WwanOid keyword_400000000000	task_0	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	11102	1	task_0OID_Handling11102_V1(GUID InterfaceGuid, UInt32 RequestId, UInt32 OID, UInt32 cbPayload, Binary Payload, UInt32 ErrorCode)	OID_Handling	LwtDiagnostic WwanOid keyword_400000000000	task_0	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	11103	1	task_0OID_Handling11103_V1(GUID InterfaceGuid, UInt32 RequestId, UInt32 NdisStatusId, UInt32 cbPayload, Binary Payload)	OID_Handling	LwtDiagnostic WwanOid keyword_400000000000	task_0	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	12000	0	InitializationInitialize(GUID ObjectGUID, UInt32 ObjectType)	Initialize	keyword_400000000000	Initialization	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	12001	0	ShutdownCleanup(GUID ObjectGUID, UInt32 ObjectType)	Cleanup	keyword_400000000000	Shutdown	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	12100	0	WWANCellularStateRegistrationState(GUID InterfaceGuid, UInt32 RegisteredType)	RegistrationState	keyword_400000000000	WWANCellularState	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	12101	0	WWANCellularStateUiccPresence(GUID InterfaceGuid)	UiccPresence	keyword_400000000000	WWANCellularState	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	12102	0	WWANCellularStatePacketServiceState(GUID InterfaceGuid, UInt32 PacketServiceState)	PacketServiceState	keyword_400000000000	WWANCellularState	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	12103	0	WWANCellularStateIWLANAvailabilityState(GUID InterfaceGuid, UInt32 IWLANAvailabilityState)	IWLANAvailabilityState	keyword_400000000000	WWANCellularState	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	12200	0	WWANConnectionAutoConnect(GUID InterfaceGuid, UnicodeString State)	AutoConnect	keyword_400000000000	WWANConnection	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	12201	0	WWANConnectionConnectionPolicy(GUID InterfaceGuid, UnicodeString PolicyType, UnicodeString PolicyState)	ConnectionPolicy	keyword_400000000000	WWANConnection	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	12211	0	WWANConnectionConnectionProfile(GUID InterfaceGuid, UInt32 execIdx, UnicodeString profileName)	ConnectionProfile	keyword_400000000000	WWANConnection	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	12212	0	WWANConnectionConnectionProfile12212(GUID InterfaceGuid, UInt32 execIdx, UnicodeString profileName)	ConnectionProfile	keyword_400000000000	WWANConnection	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	12213	0	WWANConnectionConnectionProfile12213(GUID InterfaceGuid, UInt32 execIdx, UnicodeString profileName, UnicodeString IccID)	ConnectionProfile	keyword_400000000000	WWANConnection	Error		
+Microsoft-Windows-WWAN-SVC-EVENTS	12214	0	WWANConnectionConnectionProfile12214(GUID InterfaceGuid, UInt32 execIdx, UnicodeString profileName, UnicodeString IccID, UInt32 connMode)	ConnectionProfile	keyword_400000000000	WWANConnection	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	12215	0	WWANConnectionConnectionProfile12215(GUID InterfaceGuid, UInt32 execIdx, UnicodeString profileName, UnicodeString IccID, UInt32 connMode)	ConnectionProfile	keyword_400000000000	WWANConnection	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	12216	0	WWANConnectionConnectionProfile12216(GUID InterfaceGuid, UInt32 execIdx, UnicodeString profileName, UnicodeString IccID, UInt32 connMode)	ConnectionProfile	keyword_400000000000	WWANConnection	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	12231	0	AUTH(GUID InterfaceGuid, UInt32 authMethod, UInt32 size)		keyword_400000000000	AUTH	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	12232	0	WWANConnectionConnectionPolicy12232(GUID InterfaceGuid, UInt32 EnablementPolicy)	ConnectionPolicy	keyword_400000000000	WWANConnection	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	12233	0	WWANConnectionConnectionPolicy12233(GUID InterfaceGuid, UInt32 PolicyType, UInt32 RoamingPolicy)	ConnectionPolicy	keyword_400000000000	WWANConnection	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	12240	0	WWANConnection(GUID InterfaceGuid, UInt32 error)		keyword_400000000000	WWANConnection	Error		
+Microsoft-Windows-WWAN-SVC-EVENTS	12241	0	WWANConnection12241(GUID InterfaceGuid, UInt32 error)		keyword_400000000000	WWANConnection	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	12242	0	WWANConnection12242(GUID InterfaceGuid, UInt32 error)		keyword_400000000000	WWANConnection	Error		
+Microsoft-Windows-WWAN-SVC-EVENTS	12243	0	WWANConnection12243(GUID InterfaceGuid, UInt32 error)		keyword_400000000000	WWANConnection	Informational		

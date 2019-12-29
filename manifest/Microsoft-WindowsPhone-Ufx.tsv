@@ -1,0 +1,21 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-WindowsPhone-Ufx	100	0	Error(AnsiString Str, UInt32 Int)		Error	Error	Error		
+Microsoft-WindowsPhone-Ufx	101	0	FailedCall(AnsiString File, UInt32 Line, UInt32 Status)		Error	FailedCall	Error		
+Microsoft-WindowsPhone-Ufx	102	0	FunctionEntry(AnsiString Function)		Function	FunctionEntry	Verbose		
+Microsoft-WindowsPhone-Ufx	103	0	FunctionExit(AnsiString Function)		Function	FunctionExit	Verbose		
+Microsoft-WindowsPhone-Ufx	104	0	FailedCall104(AnsiString Function, AnsiString Message, UInt32 IntParam)		Error	FailedCall	Error		
+Microsoft-WindowsPhone-Ufx	105	0	IoctlRequest(UInt32 Index, UInt32 IOCTL)		UfxBus	IoctlRequest	Verbose		
+Microsoft-WindowsPhone-Ufx	106	0	Debug(AnsiString Function, AnsiString Message)		Debug	Debug	Informational		
+Microsoft-WindowsPhone-Ufx	107	0	Setup(AnsiString Description, UInt32 Direction, UInt32 Type, UInt32 Recipient, UInt32 Request, UInt32 wValue, UInt32 wIndex, UInt32 wLength)		Setup	Setup	Informational		
+Microsoft-WindowsPhone-Ufx	108	0	StateMachine(AnsiString Machine)		StateMachine	StateMachine	Informational		
+Microsoft-WindowsPhone-Ufx	109	0	StateMachine109(AnsiString Machine, AnsiString Type, AnsiString State)		StateMachine	StateMachine	Informational		
+Microsoft-WindowsPhone-Ufx	110	0	StateMachine110(AnsiString Machine, AnsiString Type, AnsiString Event, UInt32 Payload)		StateMachine	StateMachine	Informational		
+Microsoft-WindowsPhone-Ufx	111	0	StateMachine111(AnsiString Machine, AnsiString Event, UInt32 Payload)		StateMachine	StateMachine	Informational		
+Microsoft-WindowsPhone-Ufx	112	0	StateMachine112(AnsiString Machine, AnsiString ActionName)		StateMachine	StateMachine	Informational		
+Microsoft-WindowsPhone-Ufx	113	0	StateMachine113(AnsiString Machine, AnsiString Event, AnsiString ToState)		StateMachine	StateMachine	Informational		
+Microsoft-WindowsPhone-Ufx	114	0	StateMachine114(AnsiString Machine, UInt32 Exception)		StateMachine	StateMachine	Informational		
+Microsoft-WindowsPhone-Ufx	115	0	StateMachine115(AnsiString Machine, UInt32 NewQueueSize)		StateMachine	StateMachine	Informational		
+Microsoft-WindowsPhone-Ufx	116	0	StateMachine116(AnsiString Machine, AnsiString FromState)		StateMachine	StateMachine	Informational		
+Microsoft-WindowsPhone-Ufx	117	0	Debug117(AnsiString Function, AnsiString Message, UInt32 IntParam)		Debug	Debug	Informational		
+Microsoft-WindowsPhone-Ufx	118	0	Notification(AnsiString Str)		Notification	Notification	Informational		
+Microsoft-WindowsPhone-Ufx	119	0	Notification119(AnsiString Str, UInt32 Int)		Notification	Notification	Informational		

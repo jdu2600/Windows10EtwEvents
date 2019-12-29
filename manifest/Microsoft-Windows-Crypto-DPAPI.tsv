@@ -1,0 +1,11 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Crypto-DPAPI	1	0	MasterKeyOperation(GUID MasterKeyGUID, UnicodeString UserStorage)		ETW_TASK_MASTERKEY_OPERATION	MasterKeyOperation	Informational		
+Microsoft-Windows-Crypto-DPAPI	2	0	MasterKeyOperation2(UnicodeString MasterKeyGUID, UnicodeString UserStorage)		ETW_TASK_MASTERKEY_OPERATION	MasterKeyOperation	Informational		
+Microsoft-Windows-Crypto-DPAPI	4097	0	BackUpServiceOperation()		ETW_TASK_BACKUPSERVICE_OPERATION	BackUpServiceOperation	Informational		
+Microsoft-Windows-Crypto-DPAPI	4098	0	BackUpServiceOperation4098()		ETW_TASK_BACKUPSERVICE_OPERATION	BackUpServiceOperation	Informational		
+Microsoft-Windows-Crypto-DPAPI	8193	0	MasterKeyOperation8193(HexInt32 Status)		ETW_TASK_MASTERKEY_OPERATION	MasterKeyOperation	Error		
+Microsoft-Windows-Crypto-DPAPI	8194	0	MasterKeyOperation8194(UnicodeString FileName, HexInt32 Access)		ETW_TASK_MASTERKEY_OPERATION	MasterKeyOperation	Error		
+Microsoft-Windows-Crypto-DPAPI	8195	0	MasterKeyOperation8195()		ETW_TASK_MASTERKEY_OPERATION	MasterKeyOperation	Error		
+Microsoft-Windows-Crypto-DPAPI	8196	0	MasterKeyOperation8196()		ETW_TASK_MASTERKEY_OPERATION	MasterKeyOperation	Error		
+Microsoft-Windows-Crypto-DPAPI	8197	0	DataProtectionOperation(HexInt32 Status, UInt32 ReasonForFailure)		ETW_TASK_DATAPROTECTION_OPERATION	DataProtectionOperation	Error		
+Microsoft-Windows-Crypto-DPAPI	8198	0	DataProtectionOperation8198(HexInt32 Status, UInt32 ReasonForFailure)		ETW_TASK_DATAPROTECTION_OPERATION	DataProtectionOperation	Error		

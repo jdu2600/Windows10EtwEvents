@@ -1,0 +1,59 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-NCSI	2001	0	WaitforCorporateConnectivity(UInt8 CorpCheckDisabledReason)		LwtDiagnostic ut:L3ConnectPath	WaitforCorporateConnectivity	Warning		
+Microsoft-Windows-NCSI	2002	0	WaitforCorporateConnectivity2002()		LwtDiagnostic ut:L3ConnectPath	WaitforCorporateConnectivity	Informational		
+Microsoft-Windows-NCSI	2003	0	CheckCorporateInside/outsideLocation(UInt8 CorpCheckDisabledReason)		LwtDiagnostic ut:L3ConnectPath	CheckCorporateInside/outsideLocation	Warning		
+Microsoft-Windows-NCSI	2004	0	CheckCorporateInside/outsideLocation2004()		LwtDiagnostic ut:L3ConnectPath	CheckCorporateInside/outsideLocation	Informational		
+Microsoft-Windows-NCSI	4001	0	WaitforNetReady(GUID InterfaceGuid, UInt8 CurrentOrNextState, UInt64 IfLuid)		keyword_200000000000	WaitforNetReady	Informational		
+Microsoft-Windows-NCSI	4002	0	WaitforNetReady4002(GUID InterfaceGuid, UInt8 CurrentOrNextState, UInt64 IfLuid)		keyword_200000000000	WaitforNetReady	Informational		
+Microsoft-Windows-NCSI	4003	0	WaitforLocalConnectivity(GUID InterfaceGuid, UInt8 CurrentOrNextState, UInt64 IfLuid)		keyword_200000000000	WaitforLocalConnectivity	Informational		
+Microsoft-Windows-NCSI	4004	0	WaitforLocalConnectivity4004(GUID InterfaceGuid, UInt8 CurrentOrNextState, UInt64 IfLuid)		keyword_200000000000	WaitforLocalConnectivity	Informational		
+Microsoft-Windows-NCSI	4005	0	WaitforInternetConnectivity(GUID InterfaceGuid, UInt8 CurrentOrNextState, UInt64 IfLuid)		keyword_200000000000	WaitforInternetConnectivity	Informational		
+Microsoft-Windows-NCSI	4006	0	WaitforInternetConnectivity4006(GUID InterfaceGuid, UInt8 CurrentOrNextState, UInt64 IfLuid)		keyword_200000000000	WaitforInternetConnectivity	Informational		
+Microsoft-Windows-NCSI	4007	0	WaitforCorporateConnectivity4007(GUID InterfaceGuid, UInt8 CurrentOrNextState, UInt64 IfLuid)		keyword_200000000000	WaitforCorporateConnectivity	Informational		
+Microsoft-Windows-NCSI	4008	0	WaitforCorporateConnectivity4008(GUID InterfaceGuid, UInt8 CurrentOrNextState, UInt64 IfLuid)		keyword_200000000000	WaitforCorporateConnectivity	Informational		
+Microsoft-Windows-NCSI	4009	0	CheckCorporateInside/outsideLocation4009(GUID InterfaceGuid, UInt8 CurrentOrNextState, UInt64 IfLuid)		LwtDiagnostic keyword_200000000000	CheckCorporateInside/outsideLocation	Informational		
+Microsoft-Windows-NCSI	4010	0	CheckCorporateInside/outsideLocation4010(GUID InterfaceGuid, UInt8 CurrentOrNextState, UInt64 IfLuid, UInt8 CorporateLocation, UInt32 CorporateLocationMetadata)		LwtDiagnostic keyword_200000000000	CheckCorporateInside/outsideLocation	Informational		
+Microsoft-Windows-NCSI	4011	0	CheckCorporateInside/outsideLocation4011()		ut:L3ConnectPath	CheckCorporateInside/outsideLocation	Informational		
+Microsoft-Windows-NCSI	4012	0	CheckCorporateInside/outsideLocation4012(UInt64 IfLuid, GUID InterfaceGuid, UnicodeString ProbeHost, UnicodeString ProbePath, UInt32 ErrorCode, UnicodeString ErrorString, UInt32 RetryInterval)		LwtDiagnostic ut:L3ConnectPath	CheckCorporateInside/outsideLocation	Warning		
+Microsoft-Windows-NCSI	4013	0	InternetConnectivityDetectionStart(GUID InterfaceGuid, Boolean ForceWeb, Boolean UseProxyCache)	Start	LwtDiagnostic keyword_200000000000	InternetConnectivityDetection	Informational		
+Microsoft-Windows-NCSI	4014	0	InternetConnectivityDetectionStop(GUID InterfaceGuid, Boolean Succeeded, Boolean UsedDnsProbe, Boolean UsedProxy, Boolean ContentComparison, Boolean WebCompleted, Boolean WebRedirected, Boolean LocalErrorOccured)	Stop	LwtDiagnostic keyword_200000000000	InternetConnectivityDetection	Informational		
+Microsoft-Windows-NCSI	4015	0	InternetConnectivityDetectionStart4015(GUID InterfaceGuid, UInt32 Family)	Start	LwtDiagnostic keyword_200000000000	InternetConnectivityDetection	Informational		
+Microsoft-Windows-NCSI	4016	0	InternetConnectivityDetectionStop4016(GUID InterfaceGuid, UInt32 Family)	Stop	LwtDiagnostic keyword_200000000000	InternetConnectivityDetection	Informational		
+Microsoft-Windows-NCSI	4017	0	InternetConnectivityDetectionStart4017(GUID InterfaceGuid, UInt32 Family)	Start	LwtDiagnostic keyword_200000000000	InternetConnectivityDetection	Informational		
+Microsoft-Windows-NCSI	4018	0	InternetConnectivityDetectionStop4018(GUID InterfaceGuid, UInt32 Family)	Stop	LwtDiagnostic keyword_200000000000	InternetConnectivityDetection	Informational		
+Microsoft-Windows-NCSI	4019	0	CorporateConnectivityDetectionStart(GUID InterfaceGuid)	Start	keyword_200000000000	CorporateConnectivityDetection	Informational		
+Microsoft-Windows-NCSI	4020	0	CorporateConnectivityDetectionStop(GUID InterfaceGuid, Boolean Succeeded, Boolean LocalErrorOccured)	Stop	keyword_200000000000	CorporateConnectivityDetection	Informational		
+Microsoft-Windows-NCSI	4021	0	CorporateConnectivityDetectionStart4021(GUID InterfaceGuid)	Start	LwtDiagnostic keyword_200000000000	CorporateConnectivityDetection	Informational		
+Microsoft-Windows-NCSI	4022	0	CorporateConnectivityDetectionStop4022(GUID InterfaceGuid)	Stop	LwtDiagnostic keyword_200000000000	CorporateConnectivityDetection	Informational		
+Microsoft-Windows-NCSI	4023	0	CorporateConnectivityDetectionStart4023(GUID InterfaceGuid)	Start	LwtDiagnostic keyword_200000000000	CorporateConnectivityDetection	Informational		
+Microsoft-Windows-NCSI	4024	0	CorporateConnectivityDetectionStop4024(GUID InterfaceGuid)	Stop	LwtDiagnostic keyword_200000000000	CorporateConnectivityDetection	Informational		
+Microsoft-Windows-NCSI	4025	0	ProxyDetectionStart()	Start	LwtDiagnostic keyword_200000000000	ProxyDetection	Informational		
+Microsoft-Windows-NCSI	4026	0	ProxyDetectionStop(UInt32 ErrorCode, UInt8 Source)	Stop	LwtDiagnostic keyword_200000000000	ProxyDetection	Informational		
+Microsoft-Windows-NCSI	4027	0	InternetConnectivityDetection(GUID InterfaceGuid, UInt32 Family)		ut:L3ConnectPath	InternetConnectivityDetection	Informational		
+Microsoft-Windows-NCSI	4028	0	Inside/Outsidedetectionverification()		NlaDiagnostics	Inside/Outsidedetectionverification	Warning		
+Microsoft-Windows-NCSI	4029	0	Suspectstate(GUID InterfaceGuid, UInt64 IfLuid, UInt32 Family, UInt8 SuspectStateReason)		keyword_200000000000	Suspectstate	Informational		
+Microsoft-Windows-NCSI	4030	0	Suspectstate4030(GUID InterfaceGuid, UInt64 IfLuid, UInt32 Family)		keyword_200000000000	Suspectstate	Informational		
+Microsoft-Windows-NCSI	4031	0	Suspectstate4031(GUID InterfaceGuid, UInt64 IfLuid, UInt32 Family)		keyword_200000000000	Suspectstate	Informational		
+Microsoft-Windows-NCSI	4032	0	CorporateSuspectstate(GUID InterfaceGuid, UInt64 IfLuid)		keyword_200000000000	CorporateSuspectstate	Informational		
+Microsoft-Windows-NCSI	4033	0	CorporateSuspectstate4033(GUID InterfaceGuid, UInt64 IfLuid)		keyword_200000000000	CorporateSuspectstate	Informational		
+Microsoft-Windows-NCSI	4034	0	CorporateSuspectstate4034(GUID InterfaceGuid, UInt64 IfLuid)		keyword_200000000000	CorporateSuspectstate	Informational		
+Microsoft-Windows-NCSI	4035	0	InternetConnectivityDetection4035(GUID InterfaceGuid)		keyword_200000000000	InternetConnectivityDetection	Informational		
+Microsoft-Windows-NCSI	4036	0	CheckCorporateInside/outsideLocation4036(GUID InterfaceGuid)			CheckCorporateInside/outsideLocation	Informational		
+Microsoft-Windows-NCSI	4037	0	InternetConnectivityDetection4037(UInt64 IfLuid, UInt32 Family)			InternetConnectivityDetection	Informational		
+Microsoft-Windows-NCSI	4038	0	InternetConnectivityDetection4038(UInt64 IfLuid, UInt32 Family)			InternetConnectivityDetection	Informational		
+Microsoft-Windows-NCSI	4039	0	InternetConnectivityDetection4039(UInt64 IfLuid, UInt32 Family)			InternetConnectivityDetection	Informational		
+Microsoft-Windows-NCSI	4040	0	task_0(GUID ConnectedInterfaceGuid, UInt64 IfLuid)		LwtDiagnostic ut:L3ConnectPath	task_0	Informational		
+Microsoft-Windows-NCSI	4041	0	task_04041(GUID DisconnectedInterfaceGuid, UInt64 IfLuid)		LwtDiagnostic ut:L3ConnectPath	task_0	Informational		
+Microsoft-Windows-NCSI	4042	0	task_04042(GUID InterfaceGuid, UInt64 IfLuid, UInt32 Family, UInt32 Capability, UInt32 CapabilityChangeReason, UInt32 PreviousCapability)		LwtDiagnostic	task_0	Informational		
+Microsoft-Windows-NCSI	4043	0	task_04043(GUID InterfaceGuid, UInt64 IfLuid, UInt32 Family, UInt32 ProxiedCapability)		LwtDiagnostic	task_0	Informational		
+Microsoft-Windows-NCSI	4044	0	task_04044(Boolean ShouldPassivePollRun, Boolean WasPassivePollRunning, Boolean IsPassivePollAllowed, Boolean ClientPresent, Boolean UserPresent, Boolean NetworkQuietMode, UInt32 DeadUserPollCount, UInt32 DeadNetPollCountV4, UInt32 DeadNetPollCountV6)		LwtDiagnostic	task_0	Informational		
+Microsoft-Windows-NCSI	4045	0	task_04045(GUID InterfaceGuid, UInt64 IfLuid, UInt32 Family, Boolean NetReady)		LwtDiagnostic	task_0	Informational		
+Microsoft-Windows-NCSI	4046	0	task_04046(GUID InterfaceGuid, UInt64 IfLuid, UInt32 Family, Boolean HasCorporateConnectivity)		LwtDiagnostic	task_0	Informational		
+Microsoft-Windows-NCSI	4047	0	task_04047(GUID InterfaceGuid, UInt64 IfLuid, UInt32 Family, UInt32 IpAddressLength, Binary IpAddress, UInt32 MacAddressLength, Binary MacAddress, Boolean KnownProxyless, Boolean KnownHotspot, Boolean KnownOppInternet, Boolean KnownProxiedOppInternet)		LwtDiagnostic	task_0	Informational		
+Microsoft-Windows-NCSI	4048	0	task_04048(GUID InterfaceGuid, UInt64 IfLuid, UInt32 Family, Boolean HasNextHopToInternet, UInt32 NextHopAddressLength, Binary NextHopAddress)		LwtDiagnostic	task_0	Informational		
+Microsoft-Windows-NCSI	4049	0	task_04049(GUID InterfaceGuid, UInt64 IfLuid, UInt32 Family, Boolean HasPreferredAddress, UInt32 AddressSuffixOrigins)		LwtDiagnostic	task_0	Informational		
+Microsoft-Windows-NCSI	4050	0	task_04050(GUID InterfaceGuid, UInt64 IfLuid, UInt32 Family, Boolean HasPreferredGlobalAddress, UInt32 AddressSuffixOrigins)		LwtDiagnostic	task_0	Informational		
+Microsoft-Windows-NCSI	4051	0	task_04051(GUID InterfaceGuid, UInt64 IfLuid, UInt32 Family, UInt32 ActiveProbeResultCode)		LwtDiagnostic	task_0	Warning		
+Microsoft-Windows-NCSI	4052	0	task_04052(GUID InterfaceGuid, UInt64 IfLuid, Boolean HasPreferredGlobalAddressIPv4, Boolean HasPreferredGlobalAddressIPv6, UInt8 InternetCapabilityIPv4, UInt8 InternetCapabilityIPv6, UInt8 InternetTestIPv4, UInt8 InternetTestIPv6)		LwtDiagnostic	task_0	Informational		
+Microsoft-Windows-NCSI	4053	0	task_04053(GUID InterfaceGuid, UInt32 Family)		LwtDiagnostic	task_0	Informational		
+Microsoft-Windows-NCSI	4054	0	task_04054(GUID InterfaceGuid, UInt32 Family)		LwtDiagnostic	task_0	Informational		

@@ -1,0 +1,8 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-AIT	1	0	AitFeature(GUID FeatureGuid, Binary ApplicationImageHeaderHash)			AitFeature	Informational		
+Microsoft-Windows-AIT	2	0	AitParentAitFeature(UInt16 cchParentImagePathIncludingNull, GUID FeatureGuid, Binary ParentProcessImageHeaderHash, UnicodeString ParentImagePath)			AitParentAitFeature	Informational		
+Microsoft-Windows-AIT	3	0	AitAppInfo(UInt16 cchAppPathIncludingNull, Binary ApplicationImageHeaderHash, UnicodeString AppPath)			AitAppInfo	Informational		
+Microsoft-Windows-AIT	4	0	AitSystemUsageByDll(Binary Flags, UInt16 cchIdStringIncludingNull, UInt16 cchDllPathIncludingNull, UInt32 Category, UInt32 ManifestVersion, Binary DllHeaderHash, Binary ApplicationImageHeaderHash, AnsiString IdString, UnicodeString DllPath)			AitSystemUsageByDll	Informational		
+Microsoft-Windows-AIT	5	0	AitSystemUsageByExe(Binary Flags, UInt16 cchIdStringIncludingNull, UInt32 Category, UInt32 ManifestVersion, Binary ApplicationImageHeaderHash, AnsiString IdString)			AitSystemUsageByExe	Informational		
+Microsoft-Windows-AIT	6	0	AitProcessEnd()			AitProcessEnd	Informational		
+Microsoft-Windows-AIT	7	0	KitFeature(GUID FeatureGuid, UInt32 CallerIdType, UInt16 cchImagePath, UnicodeString ImagePath)			KitFeature	Informational		

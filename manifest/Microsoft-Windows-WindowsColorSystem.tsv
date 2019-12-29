@@ -1,0 +1,57 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-WindowsColorSystem	1	0	ProfileManagement(UnicodeString Profile)			ProfileManagement	Informational		
+Microsoft-Windows-WindowsColorSystem	2	0	ProfileManagement2(UnicodeString Profile)			ProfileManagement	Informational		
+Microsoft-Windows-WindowsColorSystem	3	0	ProfileManagement3(UnicodeString Profile, UnicodeString Device, UInt32 Scope)			ProfileManagement	Informational		
+Microsoft-Windows-WindowsColorSystem	4	0	ProfileManagement4(UnicodeString Profile, UnicodeString Device, UInt32 Scope)			ProfileManagement	Informational		
+Microsoft-Windows-WindowsColorSystem	5	0	ProfileManagement5(UnicodeString Profile, UnicodeString Device, UInt32 Scope)			ProfileManagement	Informational		
+Microsoft-Windows-WindowsColorSystem	6	0	ProfileManagement6(UnicodeString Device, Boolean Setting)			ProfileManagement	Informational		
+Microsoft-Windows-WindowsColorSystem	8	0	ProfileManagement8(UInt32 Intent, UInt32 Scope)			ProfileManagement	Informational		
+Microsoft-Windows-WindowsColorSystem	9	0	ProfileManagement9(UInt32 Scope)			ProfileManagement	Informational		
+Microsoft-Windows-WindowsColorSystem	10	0	ProfileManagement10(UInt32 Intent, UnicodeString Profile, UInt32 Scope)			ProfileManagement	Informational		
+Microsoft-Windows-WindowsColorSystem	11	0	ProfileManagement11(UInt32 Intent, UInt32 Scope)			ProfileManagement	Informational		
+Microsoft-Windows-WindowsColorSystem	12	0	ProfileManagement12(UnicodeString WorkingSpace, UnicodeString Profile, UInt32 Scope)			ProfileManagement	Informational		
+Microsoft-Windows-WindowsColorSystem	13	0	ProfileManagement13(UnicodeString WorkingSpace, UInt32 Scope)			ProfileManagement	Informational		
+Microsoft-Windows-WindowsColorSystem	14	0	ProfileManagement14(UnicodeString Profile, UInt32 Scope)			ProfileManagement	Informational		
+Microsoft-Windows-WindowsColorSystem	15	0	ProfileManagement15(UInt32 Scope)			ProfileManagement	Informational		
+Microsoft-Windows-WindowsColorSystem	16	0	TransformCreation(UnicodeString Profile, UnicodeString Reason)			TransformCreation	Error		
+Microsoft-Windows-WindowsColorSystem	17	0	TransformCreation17(UInt32 Type, GUID PlugIn)			TransformCreation	Informational		
+Microsoft-Windows-WindowsColorSystem	18	0	TransformCreation18(UInt32 Type, GUID PlugIn, HexInt32 ErrorCode, UInt32 FallbackUsed)			TransformCreation	Error		
+Microsoft-Windows-WindowsColorSystem	19	0	TransformCreation19(UnicodeString Tag, UInt32 BCurves, UInt32 Matrix, UInt32 MCurves, UInt32 CLut, UInt32 ACurves)		wcse:Lino	TransformCreation	Informational		
+Microsoft-Windows-WindowsColorSystem	20	0	TransformCreation20()		wcse:Lino	TransformCreation	Informational		
+Microsoft-Windows-WindowsColorSystem	21	0	TransformCreation21()		wcse:Lino	TransformCreation	Informational		
+Microsoft-Windows-WindowsColorSystem	22	0	TransformCreation22()		wcse:Lino	TransformCreation	Informational		
+Microsoft-Windows-WindowsColorSystem	23	0	TransformCreation23()		wcse:Lino	TransformCreation	Informational		
+Microsoft-Windows-WindowsColorSystem	24	0	TransformCreation24()		wcse:Lino	TransformCreation	Informational		
+Microsoft-Windows-WindowsColorSystem	25	0	TransformCreation25()		wcse:Lino	TransformCreation	Informational		
+Microsoft-Windows-WindowsColorSystem	26	0	TransformCreation26(Float RMin, Float RMax, Float GMin, Float GMax, Float BMin, Float BMax)		wcse:Cite	TransformCreation	Informational		
+Microsoft-Windows-WindowsColorSystem	27	0	TransformCreation27(Float Min, Float Max)		wcse:Cite	TransformCreation	Informational		
+Microsoft-Windows-WindowsColorSystem	28	0	TransformCreation28(UInt32 Intent)		wcse:Cite	TransformCreation	Informational		
+Microsoft-Windows-WindowsColorSystem	29	0	TransformCreation29(UInt32 Intent)		wcse:Cite	TransformCreation	Informational		
+Microsoft-Windows-WindowsColorSystem	31	0	TransformCreation31(HexInt32 ErrorCode)		wcse:Cite	TransformCreation	Error		
+Microsoft-Windows-WindowsColorSystem	32	0	TransformCreation32(UInt32 CdmType, UnicodeString CdmFileName, UInt32 CamType, UnicodeString CamFileName, UInt32 GmmType, UnicodeString GmmFileName, UInt32 Access, UInt32 Share, UInt32 Creation)			TransformCreation	Informational		
+Microsoft-Windows-WindowsColorSystem	33	0	TransformCreation33()			TransformCreation	Informational		
+Microsoft-Windows-WindowsColorSystem	34	0	TransformCreation34(HexInt32 ErrorCode)			TransformCreation	Error		
+Microsoft-Windows-WindowsColorSystem	35	0	TransformCreation35(UInt32 Size, HexInt32 Version, UnicodeString DeviceClass, UnicodeString ColorSpace, UnicodeString Pcs)			TransformCreation	Informational		
+Microsoft-Windows-WindowsColorSystem	36	0	TransformCreation36()			TransformCreation	Informational		
+Microsoft-Windows-WindowsColorSystem	37	0	TransformCreation37(UInt32 Optimization)			TransformCreation	Informational		
+Microsoft-Windows-WindowsColorSystem	38	0	TransformCreation38(UInt32 LutType)		wcse:Cite	TransformCreation	Informational		
+Microsoft-Windows-WindowsColorSystem	39	0	TransformCreation39(UnicodeString Tag, UInt32 LutType, UnicodeString Class, UInt32 Intent)		wcse:Lino	TransformCreation	Informational		
+Microsoft-Windows-WindowsColorSystem	40	0	TransformCreation40(UInt32 LcsCSType, UInt32 LcsIntent, UnicodeString SourceProfileName, UInt32 DestProfileType, UnicodeString DestProfileName, UInt32 TargetProfileType, UnicodeString TargetProfileName, HexInt32 Flags)			TransformCreation	Informational		
+Microsoft-Windows-WindowsColorSystem	41	0	TransformCreation41(UInt32 NumProfiles, UInt32 NumIntents, HexInt32 Flags)			TransformCreation	Informational		
+Microsoft-Windows-WindowsColorSystem	42	0	TransformCreation42(HexInt32 HXform)			TransformCreation	Informational		
+Microsoft-Windows-WindowsColorSystem	43	0	TransformCreation43(HexInt32 ErrorCode)			TransformCreation	Error		
+Microsoft-Windows-WindowsColorSystem	44	0	ColorTranslation(HexInt32 HXform, UInt32 NumColors, UInt32 InColorType, UInt32 OutColorType)			ColorTranslation	Informational		
+Microsoft-Windows-WindowsColorSystem	45	0	ColorTranslation45(HexInt32 HXform, UInt32 NumColors, UInt32 NumInChannels, UInt32 InDataType, UInt32 NumInBytes, UInt32 NumOutChannels, UInt32 OutDataType, UInt32 NumOutBytes)			ColorTranslation	Informational		
+Microsoft-Windows-WindowsColorSystem	46	0	ColorTranslation46(HexInt32 HXform, HexInt32 InBitmapFormat, UInt32 Width, UInt32 Height, UInt32 InStride, HexInt32 OutBitmapFormat, UInt32 OutStride)			ColorTranslation	Informational		
+Microsoft-Windows-WindowsColorSystem	47	0	ColorTranslation47()			ColorTranslation	Informational		
+Microsoft-Windows-WindowsColorSystem	48	0	ColorTranslation48(HexInt32 ErrorCode)			ColorTranslation	Error		
+Microsoft-Windows-WindowsColorSystem	49	0	ColorCalibration(Boolean CalibrationManagementEnabled)			ColorCalibration	Informational		
+Microsoft-Windows-WindowsColorSystem	50	0	ColorCalibration50(UnicodeString DeviceName, Boolean ColorProfileExistsAndContainsCalibrationData)			ColorCalibration	Informational		
+Microsoft-Windows-WindowsColorSystem	51	0	ColorCalibration51(HexInt32 ReturnCode)			ColorCalibration	Informational		
+Microsoft-Windows-WindowsColorSystem	52	0	ColorCalibration52(Boolean AdapterGammaAdjustments, Boolean MonitorAdjustments)			ColorCalibration	Informational		
+Microsoft-Windows-WindowsColorSystem	53	0	ColorCalibration53(Boolean NewValue)			ColorCalibration	Informational		
+Microsoft-Windows-WindowsColorSystem	54	0	ColorCalibration54()			ColorCalibration	Informational		
+Microsoft-Windows-WindowsColorSystem	55	0	ColorCalibration55()			ColorCalibration	Informational		
+Microsoft-Windows-WindowsColorSystem	56	0	ColorCalibration56()			ColorCalibration	Error		
+Microsoft-Windows-WindowsColorSystem	57	0	ColorCalibration57(UnicodeString ProfileName, HexInt32 ReturnCode)			ColorCalibration	Error		
+Microsoft-Windows-WindowsColorSystem	58	0	ColorCalibration58(HexInt32 ReturnCode)			ColorCalibration	Error		

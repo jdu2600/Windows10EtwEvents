@@ -1,0 +1,81 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	1000	0	task_0(UnicodeString UILanguage, UInt64 ResultSize)			task_0	Informational		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	1001	0	task_01001()			task_0	Warning		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	1002	0	task_01002()			task_0	Warning		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	1003	0	task_01003(UInt32 Error)			task_0	Warning		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	1004	0	task_01004(UnicodeString UILanguage)			task_0	Warning		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	1010	0	task_01010()			task_0	Informational		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	1011	0	task_01011(UInt32 Error)			task_0	Warning		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	1012	0	task_01012(UInt32 Error)			task_0	Warning		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	1013	0	task_01013(UInt32 Error)			task_0	Warning		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	1015	0	task_01015()			task_0	Informational		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	1016	0	task_01016()			task_0	Informational		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	1017	0	task_01017(Boolean QueryRemoteServer)			task_0	Informational		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	1018	0	task_01018()			task_0	Informational		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	2000	0	task_02000(UnicodeString IndexPath)			task_0	Informational		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	2001	0	task_02001(UInt32 Error, UnicodeString IndexPath)			task_0	Warning		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	2002	0	task_02002(UInt32 Error, UnicodeString Resource, Int32 ResourceId)			task_0	Warning		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	3000	0	task_03000(UnicodeString Hostname, UnicodeString Url, AnsiString RequestBody)			task_0	Informational		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	3001	0	task_03001(UnicodeString Hostname, UnicodeString Url)			task_0	Error		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	3002	0	task_03002(UnicodeString Hostname, UnicodeString Url, UInt32 Error)			task_0	Error		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	3003	0	task_03003(UnicodeString Hostname, UnicodeString Url)			task_0	Warning		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	3004	0	task_03004(UnicodeString Hostname, UnicodeString Url)			task_0	Warning		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	3005	0	task_03005(UnicodeString Hostname, UnicodeString Url, UInt32 ResponseCode)			task_0	Error		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	3006	0	task_03006(UnicodeString Hostname, UnicodeString Url)			task_0	Informational		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	3007	0	task_03007(UnicodeString Hostname, UnicodeString Url)			task_0	Informational		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	3008	0	task_03008(UnicodeString Hostname, UnicodeString Url, UnicodeString Reason)			task_0	Error		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	3009	0	task_03009(UnicodeString Hostname, UnicodeString Url)			task_0	Error		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	3010	0	task_03010(Int32 AccessType, UnicodeString Proxy, UnicodeString ProxyBypass)			task_0	Informational		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	3011	0	task_03011(UInt32 Error, Int32 AccessType, UnicodeString Proxy, UnicodeString ProxyBypass)			task_0	Warning		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	3012	0	task_03012(UInt32 Error)			task_0	Error		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	3013	0	task_03013(UInt32 Error)			task_0	Error		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	3014	0	task_03014(Int32 OSMajorVersion, Int32 OSMinorVersion, Int16 ServicePackMajor, Int16 ServicePackMinor, Int32 BuildNumber, Int32 ProductType, Int16 ProcessorArchitecture, UnicodeString Culture, Int8 SystemType, UnicodeString OEM, UnicodeString Model, Boolean IsMobilePc, Boolean IsInternal, Int32 GeoId, UnicodeString Family, UnicodeString OEMSKU, UnicodeString Version, UnicodeString BaseBoardOEM, UnicodeString BaseBoardModel, UnicodeString BaseBoardVersion, UnicodeString BIOSVendor, UnicodeString BIOSVersion, UnicodeString BIOSReleaseDate, UInt8 BIOSMajorRelease, UInt8 BIOSMinorRelease, UInt8 ECFirmwareMajorRelease, UInt8 ECFirmwareMinorRelease)			task_0	Informational		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	4000	0	task_0Start(UnicodeString IndexPath)	Start	search	task_0	Informational		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	4001	0	task_0Stop(UnicodeString IndexPath)	Stop	search	task_0	Informational		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	4006	0	task_0Start4006()	Start	search	task_0	Informational		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	4007	0	task_0Stop4007(UInt32 Error)	Stop	search	task_0	Informational		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	4008	0	task_0Start4008()	Start	cancel	task_0	Informational		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	4009	0	task_0Stop4009(UInt32 Error)	Stop	cancel	task_0	Informational		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	4010	0	task_0Start4010()	Start	cancel	task_0	Informational		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	4011	0	task_0Stop4011(UInt32 Error)	Stop	cancel	task_0	Informational		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	4012	0	task_0Start4012()	Start	cancel	task_0	Informational		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	4013	0	task_0Stop4013(UInt32 Error)	Stop	cancel	task_0	Informational		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	4014	0	task_0Start4014()	Start	search	task_0	Informational		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	4015	0	task_0Stop4015(UInt32 Error)	Stop	search	task_0	Informational		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	4016	0	task_0Start4016(UnicodeString Hostname, UnicodeString Url)	Start	search	task_0	Informational		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	4017	0	task_0Stop4017(UnicodeString Hostname, UnicodeString Url, UInt32 Error)	Stop	search	task_0	Informational		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	4018	0	task_0Start4018(UnicodeString Hostname, UnicodeString Url, AnsiString RequestBody)	Start	search	task_0	Informational		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	4019	0	task_0Stop4019(UInt32 HttpError, UInt32 Error)	Stop	search	task_0	Informational		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	4020	0	task_0Start4020(UnicodeString Hostname, UnicodeString Url, AnsiString RequestBody)	Start	search	task_0	Informational		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	4021	0	task_0Stop4021(UnicodeString Hostname, UnicodeString Url, AnsiString RequestBody, UInt32 Error)	Stop	search	task_0	Informational		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	4022	0	task_0Start4022(AnsiString Method)	Start	search	task_0	Verbose		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	4023	0	task_0Stop4023(AnsiString Method)	Stop	search	task_0	Verbose		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	4024	0	task_0Start4024()	Start	search	task_0	Verbose		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	4025	0	task_0Stop4025(UInt32 Error)	Stop	search	task_0	Verbose		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	4026	0	task_0Start4026(UnicodeString Resource)	Start	search	task_0	Verbose		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	4027	0	task_0Stop4027(UnicodeString Resource)	Stop	search	task_0	Verbose		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	5000	0	task_05000(AnsiString Method)		errors	task_0	Informational		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	5001	0	task_05001(AnsiString Method, UnicodeString Value)		errors	task_0	Informational		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	5002	0	task_05002(AnsiString Method, Boolean Value)		errors	task_0	Informational		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	5004	0	task_05004(AnsiString Method, Int32 Value)		errors	task_0	Informational		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	5005	0	task_05005(AnsiString Method, UnicodeString Value)		errors	task_0	Informational		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	5006	0	task_05006(AnsiString Method, Boolean Value)		errors	task_0	Informational		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	5008	0	task_05008(AnsiString Method, Int32 Value)		errors	task_0	Informational		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	5009	0	task_05009(AnsiString Method, UInt64 Value)		errors	task_0	Informational		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	5010	0	task_05010(AnsiString Method)		errors	task_0	Warning		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	5011	0	task_05011(AnsiString Method, UInt32 Error, AnsiString Parameter)		errors	task_0	Warning		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	5012	0	task_05012(AnsiString Method, UInt32 Error)		errors	task_0	Warning		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	5013	0	task_05013(AnsiString Method, UInt64 Value)		errors	task_0	Informational		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	5014	0	task_05014(AnsiString Method, UInt32 Error, UInt64 Index)		errors	task_0	Warning		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	5015	0	task_05015(AnsiString Method, UInt64 Index, UInt64 Count)		errors	task_0	Informational		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	5016	0	task_05016(AnsiString Method, UInt32 Error, Int32 Type, UnicodeString Value)		errors	task_0	Warning		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	5017	0	task_05017(AnsiString Method, UInt64 ItemsAdded, UInt64 Count)		errors	task_0	Informational		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	5018	0	task_05018(AnsiString Method, UInt32 Error, UnicodeString Id, UnicodeString Publisher, UnicodeString Version)		errors	task_0	Informational		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	5019	0	task_05019(UInt32 Parameter, UnicodeString Value)		search	task_0	Informational		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	5020	0	task_05020(UnicodeString Id, UnicodeString Publisher, UnicodeString Version, UnicodeString Url)		search	task_0	Verbose		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	5021	0	task_05021(UInt32 Error, UnicodeString IndexPath)		search	task_0	Warning		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	5022	0	task_05022(AnsiString Name, Pointer Address)		object	task_0	Verbose		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	5023	0	task_05023(AnsiString Name, Pointer Address)		object	task_0	Verbose		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	5024	0	task_05024(AnsiString Name, Pointer Address, UInt32 RefCount)		object	task_0	Verbose		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	5025	0	task_05025(AnsiString Name, Pointer Address, UInt32 RefCount)		object	task_0	Verbose		
+Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider	5026	0	task_05026(UInt32 Error, UnicodeString IndexPath)		search	task_0	Warning		

@@ -1,0 +1,81 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Dism-Api	1	0	DismInitializeStart()	Start	DismApiEvent	DismInitialize	Informational		
+Microsoft-Windows-Dism-Api	2	0	DismInitializeStop()	Stop	DismApiEvent	DismInitialize	Informational		
+Microsoft-Windows-Dism-Api	3	0	DismShutdownStart()	Start	DismApiEvent	DismShutdown	Informational		
+Microsoft-Windows-Dism-Api	4	0	DismShutdownStop()	Stop	DismApiEvent	DismShutdown	Informational		
+Microsoft-Windows-Dism-Api	5	0	DismOpenSessionStart(UnicodeString String)	Start	DismApiEvent	DismOpenSession	Informational		
+Microsoft-Windows-Dism-Api	6	0	DismOpenSessionStop(UInt32 SessionId, UnicodeString String)	Stop	DismApiEvent	DismOpenSession	Informational		
+Microsoft-Windows-Dism-Api	7	0	DismCloseSessionStart(UInt32 SessionId)	Start	DismApiEvent	DismCloseSession	Informational		
+Microsoft-Windows-Dism-Api	8	0	DismCloseSessionStop(UInt32 SessionId)	Stop	DismApiEvent	DismCloseSession	Informational		
+Microsoft-Windows-Dism-Api	9	0	DismMountImageStart(UnicodeString String)	Start	DismApiEvent	DismMountImage	Informational		
+Microsoft-Windows-Dism-Api	10	0	DismMountImageStop(UnicodeString String)	Stop	DismApiEvent	DismMountImage	Informational		
+Microsoft-Windows-Dism-Api	11	0	DismUnmountImageStart(UnicodeString String)	Start	DismApiEvent	DismUnmountImage	Informational		
+Microsoft-Windows-Dism-Api	12	0	DismUnmountImageStop(UnicodeString String)	Stop	DismApiEvent	DismUnmountImage	Informational		
+Microsoft-Windows-Dism-Api	13	0	EnqueueCommandObjectStart(UInt32 SessionId)	Start	DismApiCommandThreadEvent DismApiCommandQueueEvent DismApiSessionTableEvent	EnqueueCommandObject	Informational		
+Microsoft-Windows-Dism-Api	14	0	EnqueueCommandObjectStop(UInt32 SessionId)	Stop	DismApiCommandThreadEvent DismApiCommandQueueEvent DismApiSessionTableEvent	EnqueueCommandObject	Informational		
+Microsoft-Windows-Dism-Api	15	0	DequeueCommandObjectStart(UInt32 SessionId)	Start	DismApiCommandThreadEvent DismApiCommandQueueEvent DismApiSessionTableEvent	DequeueCommandObject	Informational		
+Microsoft-Windows-Dism-Api	16	0	DequeueCommandObjectStop(UInt32 SessionId)	Stop	DismApiCommandThreadEvent DismApiCommandQueueEvent DismApiSessionTableEvent	DequeueCommandObject	Informational		
+Microsoft-Windows-Dism-Api	23	0	DismSetFirstBootCommandLineStart(UInt32 SessionId)	Start	DismApiEvent	DismSetFirstBootCommandLine	Informational		
+Microsoft-Windows-Dism-Api	24	0	DismSetFirstBootCommandLineStop(UInt32 SessionId)	Stop	DismApiEvent	DismSetFirstBootCommandLine	Informational		
+Microsoft-Windows-Dism-Api	25	0	DismRemountImageStart(UnicodeString String)	Start	DismApiEvent	DismRemountImage	Informational		
+Microsoft-Windows-Dism-Api	26	0	DismRemountImageStop(UnicodeString String)	Stop	DismApiEvent	DismRemountImage	Informational		
+Microsoft-Windows-Dism-Api	27	0	DismCommitImageStart(UInt32 SessionId)	Start	DismApiEvent	DismCommitImage	Informational		
+Microsoft-Windows-Dism-Api	28	0	DismCommitImageStop(UInt32 SessionId)	Stop	DismApiEvent	DismCommitImage	Informational		
+Microsoft-Windows-Dism-Api	29	0	DismGetImageInfoStart(UnicodeString String)	Start	DismApiEvent	DismGetImageInfo	Informational		
+Microsoft-Windows-Dism-Api	30	0	DismGetImageInfoStop(UnicodeString String)	Stop	DismApiEvent	DismGetImageInfo	Informational		
+Microsoft-Windows-Dism-Api	31	0	DismGetMountedImageInfoStart()	Start	DismApiEvent	DismGetMountedImageInfo	Informational		
+Microsoft-Windows-Dism-Api	32	0	DismGetMountedImageInfoStop()	Stop	DismApiEvent	DismGetMountedImageInfo	Informational		
+Microsoft-Windows-Dism-Api	33	0	DismCleanupMountpointsStart()	Start	DismApiEvent	DismCleanupMountpoints	Informational		
+Microsoft-Windows-Dism-Api	34	0	DismCleanupMountpointsStop()	Stop	DismApiEvent	DismCleanupMountpoints	Informational		
+Microsoft-Windows-Dism-Api	35	0	DismAddPackageStart(UInt32 SessionId, UnicodeString String)	Start	DismApiEvent	DismAddPackage	Informational		
+Microsoft-Windows-Dism-Api	36	0	DismAddPackageStop(UInt32 SessionId, UnicodeString String)	Stop	DismApiEvent	DismAddPackage	Informational		
+Microsoft-Windows-Dism-Api	37	0	DismRemovePackageStart(UInt32 SessionId, UnicodeString String)	Start	DismApiEvent	DismRemovePackage	Informational		
+Microsoft-Windows-Dism-Api	38	0	DismRemovePackageStop(UInt32 SessionId, UnicodeString String)	Stop	DismApiEvent	DismRemovePackage	Informational		
+Microsoft-Windows-Dism-Api	39	0	DismEnableFeatureStart(UInt32 SessionId, UnicodeString String)	Start	DismApiEvent	DismEnableFeature	Informational		
+Microsoft-Windows-Dism-Api	40	0	DismEnableFeatureStop(UInt32 SessionId, UnicodeString String)	Stop	DismApiEvent	DismEnableFeature	Informational		
+Microsoft-Windows-Dism-Api	41	0	DismDisableFeatureStart(UInt32 SessionId, UnicodeString String)	Start	DismApiEvent	DismDisableFeature	Informational		
+Microsoft-Windows-Dism-Api	42	0	DismDisableFeatureStop(UInt32 SessionId, UnicodeString String)	Stop	DismApiEvent	DismDisableFeature	Informational		
+Microsoft-Windows-Dism-Api	43	0	DismGetPackagesStart(UInt32 SessionId)	Start	DismApiEvent	DismGetPackages	Informational		
+Microsoft-Windows-Dism-Api	44	0	DismGetPackagesStop(UInt32 SessionId)	Stop	DismApiEvent	DismGetPackages	Informational		
+Microsoft-Windows-Dism-Api	45	0	DismGetPackageInfoStart(UInt32 SessionId, UnicodeString String)	Start	DismApiEvent	DismGetPackageInfo	Informational		
+Microsoft-Windows-Dism-Api	46	0	DismGetPackageInfoStop(UInt32 SessionId, UnicodeString String)	Stop	DismApiEvent	DismGetPackageInfo	Informational		
+Microsoft-Windows-Dism-Api	47	0	DismGetFeaturesStart(UInt32 SessionId)	Start	DismApiEvent	DismGetFeatures	Informational		
+Microsoft-Windows-Dism-Api	48	0	DismGetFeaturesStop(UInt32 SessionId)	Stop	DismApiEvent	DismGetFeatures	Informational		
+Microsoft-Windows-Dism-Api	49	0	DismGetFeatureInfoStart(UInt32 SessionId, UnicodeString String)	Start	DismApiEvent	DismGetFeatureInfo	Informational		
+Microsoft-Windows-Dism-Api	50	0	DismGetFeatureInfoStop(UInt32 SessionId, UnicodeString String)	Stop	DismApiEvent	DismGetFeatureInfo	Informational		
+Microsoft-Windows-Dism-Api	51	0	DismGetFeatureParentStart(UInt32 SessionId, UnicodeString String)	Start	DismApiEvent	DismGetFeatureParent	Informational		
+Microsoft-Windows-Dism-Api	52	0	DismGetFeatureParentStop(UInt32 SessionId, UnicodeString String)	Stop	DismApiEvent	DismGetFeatureParent	Informational		
+Microsoft-Windows-Dism-Api	53	0	DismApplyUnattendStart(UInt32 SessionId, UnicodeString String)	Start	DismApiEvent	DismApplyUnattend	Informational		
+Microsoft-Windows-Dism-Api	54	0	DismApplyUnattendStop(UInt32 SessionId, UnicodeString String)	Stop	DismApiEvent	DismApplyUnattend	Informational		
+Microsoft-Windows-Dism-Api	55	0	DismAddDriverStart(UInt32 SessionId, UnicodeString String)	Start	DismApiEvent	DismAddDriver	Informational		
+Microsoft-Windows-Dism-Api	56	0	DismAddDriverStop(UInt32 SessionId, UnicodeString String)	Stop	DismApiEvent	DismAddDriver	Informational		
+Microsoft-Windows-Dism-Api	57	0	DismRemoveDriverStart(UInt32 SessionId, UnicodeString String)	Start	DismApiEvent	DismRemoveDriver	Informational		
+Microsoft-Windows-Dism-Api	58	0	DismRemoveDriverStop(UInt32 SessionId, UnicodeString String)	Stop	DismApiEvent	DismRemoveDriver	Informational		
+Microsoft-Windows-Dism-Api	59	0	DismGetDriversStart(UInt32 SessionId)	Start	DismApiEvent	DismGetDrivers	Informational		
+Microsoft-Windows-Dism-Api	60	0	DismGetDriversStop(UInt32 SessionId)	Stop	DismApiEvent	DismGetDrivers	Informational		
+Microsoft-Windows-Dism-Api	61	0	DismGetDriverInfoStart(UInt32 SessionId, UnicodeString String)	Start	DismApiEvent	DismGetDriverInfo	Informational		
+Microsoft-Windows-Dism-Api	62	0	DismGetDriverInfoStop(UInt32 SessionId, UnicodeString String)	Stop	DismApiEvent	DismGetDriverInfo	Informational		
+Microsoft-Windows-Dism-Api	63	0	DismCheckImageHealthStart(UInt32 SessionId)	Start	DismApiEvent	DismCheckImageHealth	Informational		
+Microsoft-Windows-Dism-Api	64	0	DismCheckImageHealthStop(UInt32 SessionId)	Stop	DismApiEvent	DismCheckImageHealth	Informational		
+Microsoft-Windows-Dism-Api	65	0	DismRestoreImageHealthStart(UInt32 SessionId)	Start	DismApiEvent	DismRestoreImageHealth	Informational		
+Microsoft-Windows-Dism-Api	66	0	DismRestoreImageHealthStop(UInt32 SessionId)	Stop	DismApiEvent	DismRestoreImageHealth	Informational		
+Microsoft-Windows-Dism-Api	67	0	DismSetEditionStart(UInt32 SessionId)	Start	DismApiEvent	DismSetEdition	Informational		
+Microsoft-Windows-Dism-Api	68	0	DismSetEditionStop(UInt32 SessionId)	Stop	DismApiEvent	DismSetEdition	Informational		
+Microsoft-Windows-Dism-Api	69	0	DismSetProductKeyStart(UInt32 SessionId)	Start	DismApiEvent	DismSetProductKey	Informational		
+Microsoft-Windows-Dism-Api	70	0	DismSetProductKeyStop(UInt32 SessionId)	Stop	DismApiEvent	DismSetProductKey	Informational		
+Microsoft-Windows-Dism-Api	71	0	DismGetCurrentEditionStart(UInt32 SessionId)	Start	DismApiEvent	DismGetCurrentEdition	Informational		
+Microsoft-Windows-Dism-Api	72	0	DismGetCurrentEditionStop(UInt32 SessionId)	Stop	DismApiEvent	DismGetCurrentEdition	Informational		
+Microsoft-Windows-Dism-Api	73	0	DismGetTargetEditionsStart(UInt32 SessionId)	Start	DismApiEvent	DismGetTargetEditions	Informational		
+Microsoft-Windows-Dism-Api	74	0	DismGetTargetEditionsStop(UInt32 SessionId)	Stop	DismApiEvent	DismGetTargetEditions	Informational		
+Microsoft-Windows-Dism-Api	75	0	DismGetFeaturesExStart(UInt32 SessionId)	Start	DismApiEvent	DismGetFeaturesEx	Informational		
+Microsoft-Windows-Dism-Api	76	0	DismGetFeaturesExStop(UInt32 SessionId)	Stop	DismApiEvent	DismGetFeaturesEx	Informational		
+Microsoft-Windows-Dism-Api	77	0	DismAddProvisionedAppxPackageStart(UInt32 SessionId, UnicodeString String)	Start	DismApiEvent	DismAddProvisionedAppxPackage	Informational		
+Microsoft-Windows-Dism-Api	78	0	DismAddProvisionedAppxPackageStop(UInt32 SessionId, UnicodeString String)	Stop	DismApiEvent	DismAddProvisionedAppxPackage	Informational		
+Microsoft-Windows-Dism-Api	79	0	DismRemoveProvisionedAppxPackageStart(UInt32 SessionId, UnicodeString String)	Start	DismApiEvent	DismRemoveProvisionedAppxPackage	Informational		
+Microsoft-Windows-Dism-Api	80	0	DismRemoveProvisionedAppxPackageStop(UInt32 SessionId, UnicodeString String)	Stop	DismApiEvent	DismRemoveProvisionedAppxPackage	Informational		
+Microsoft-Windows-Dism-Api	81	0	DismGetProvisionedAppxPackagesStart(UInt32 SessionId)	Start	DismApiEvent	DismGetProvisionedAppxPackages	Informational		
+Microsoft-Windows-Dism-Api	82	0	DismGetProvisionedAppxPackagesStop(UInt32 SessionId)	Stop	DismApiEvent	DismGetProvisionedAppxPackages	Informational		
+Microsoft-Windows-Dism-Api	83	0	DismExportDriverStart(UInt32 SessionId)	Start	DismApiEvent	DismExportDriver	Informational		
+Microsoft-Windows-Dism-Api	84	0	DismExportDriverStop(UInt32 SessionId)	Stop	DismApiEvent	DismExportDriver	Informational		
+Microsoft-Windows-Dism-Api	85	0	DismOptimizeImageStart(UInt32 SessionId)	Start	DismApiEvent	DismOptimizeImage	Informational		
+Microsoft-Windows-Dism-Api	86	0	DismOptimizeImageStop(UInt32 SessionId)	Stop	DismApiEvent	DismOptimizeImage	Informational		

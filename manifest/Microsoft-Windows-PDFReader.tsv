@@ -1,0 +1,229 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-PDFReader	1	0	task_0(UnicodeString FileName, UInt32 WindowID)		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	2	0	task_02(UInt32 HResult)		Reader	task_0	Error		
+Microsoft-Windows-PDFReader	3	0	LoadFileStart()	Start	Reader	LoadFile	Informational		
+Microsoft-Windows-PDFReader	4	0	LoadFileStop()	Stop	Reader	LoadFile	Informational		
+Microsoft-Windows-PDFReader	15	0	LoadImageStart()	Start	Reader	LoadImage	Informational		
+Microsoft-Windows-PDFReader	16	0	LoadImageStop()	Stop	Reader	LoadImage	Informational		
+Microsoft-Windows-PDFReader	17	0	EmbededColorProfileStart()	Start	Reader	EmbededColorProfile	Informational		
+Microsoft-Windows-PDFReader	18	0	EmbededColorProfileStop()	Stop	Reader	EmbededColorProfile	Informational		
+Microsoft-Windows-PDFReader	19	0	ApplyDecodeArrayStart()	Start	Reader	ApplyDecodeArray	Informational		
+Microsoft-Windows-PDFReader	20	0	ApplyDecodeArrayStop()	Stop	Reader	ApplyDecodeArray	Informational		
+Microsoft-Windows-PDFReader	21	0	ApplyDctDecodeArrayStart()	Start	Reader	ApplyDctDecodeArray	Informational		
+Microsoft-Windows-PDFReader	22	0	ApplyDctDecodeArrayStop()	Stop	Reader	ApplyDctDecodeArray	Informational		
+Microsoft-Windows-PDFReader	31	0	SetImagePixelsStart()	Start	Reader	SetImagePixels	Informational		
+Microsoft-Windows-PDFReader	32	0	SetImagePixelsStop()	Stop	Reader	SetImagePixels	Informational		
+Microsoft-Windows-PDFReader	33	0	CreateMaskArrayStart()	Start	Reader	CreateMaskArray	Informational		
+Microsoft-Windows-PDFReader	34	0	CreateMaskArrayStop()	Stop	Reader	CreateMaskArray	Informational		
+Microsoft-Windows-PDFReader	35	0	task_035(AnsiString StringParam, UInt32 HResultParam)		Reader	task_0	Error		
+Microsoft-Windows-PDFReader	44	0	PageBuildStart(UInt32 UInt32Param)	Start	Reader	PageBuild	Informational		
+Microsoft-Windows-PDFReader	45	0	PageBuildStop(UInt32 UInt32Param)	Stop	Reader	PageBuild	Informational		
+Microsoft-Windows-PDFReader	46	0	FontResourceLoadStart()	Start	Reader	FontResourceLoad	Informational		
+Microsoft-Windows-PDFReader	47	0	FontResourceLoadStop()	Stop	Reader	FontResourceLoad	Informational		
+Microsoft-Windows-PDFReader	58	0	TriggerChangeLayoutStart(UInt32 UInt32Param)	Start	Reader	TriggerChangeLayout	Informational		
+Microsoft-Windows-PDFReader	59	0	TriggerChangeLayoutStop()	Stop	Reader	TriggerChangeLayout	Informational		
+Microsoft-Windows-PDFReader	60	0	ChangeLayoutStart(UInt32 UInt32Param)	Start	Reader	ChangeLayout	Informational		
+Microsoft-Windows-PDFReader	61	0	ChangeLayoutStop()	Stop	Reader	ChangeLayout	Informational		
+Microsoft-Windows-PDFReader	62	0	StepZoomStart(UInt32 UInt32Param)	Start	Reader	StepZoom	Informational		
+Microsoft-Windows-PDFReader	63	0	StepZoomStop()	Stop	Reader	StepZoom	Informational		
+Microsoft-Windows-PDFReader	64	0	SmoothZoomStart(Double DoubleParam)	Start	Reader	SmoothZoom	Informational		
+Microsoft-Windows-PDFReader	65	0	SmoothZoomStop()	Stop	Reader	SmoothZoom	Informational		
+Microsoft-Windows-PDFReader	66	0	ResizeStart()	Start	Reader	Resize	Informational		
+Microsoft-Windows-PDFReader	67	0	ResizeStop()	Stop	Reader	Resize	Informational		
+Microsoft-Windows-PDFReader	68	0	TileRenderStart(UInt32 PageId, Float RectLeft, Float RectTop, Float RectRight, Float RectBottom)	Start	Reader	TileRender	Informational		
+Microsoft-Windows-PDFReader	69	0	TileRenderStop()	Stop	Reader	TileRender	Informational		
+Microsoft-Windows-PDFReader	70	0	CommandBarShowStart(UInt32 UInt32Param)	Start	Reader	CommandBarShow	Informational		
+Microsoft-Windows-PDFReader	71	0	CommandBarShowStop(UInt32 UInt32Param)	Stop	Reader	CommandBarShow	Informational		
+Microsoft-Windows-PDFReader	72	0	CommandBarHideStart(UInt32 UInt32Param)	Start	Reader	CommandBarHide	Informational		
+Microsoft-Windows-PDFReader	73	0	CommandBarHideStop(UInt32 UInt32Param)	Stop	Reader	CommandBarHide	Informational		
+Microsoft-Windows-PDFReader	74	0	RotatePages(Double DoubleParam)		Reader	RotatePages	Verbose		
+Microsoft-Windows-PDFReader	75	0	RotatePages75(Double DoubleParam)		Reader	RotatePages	Verbose		
+Microsoft-Windows-PDFReader	76	0	task_076()		Reader	task_0	Verbose		
+Microsoft-Windows-PDFReader	77	0	task_077()		Reader	task_0	Verbose		
+Microsoft-Windows-PDFReader	78	0	Find.ActionStart()	Start	Reader	Find.Action	Informational		
+Microsoft-Windows-PDFReader	79	0	Find.ActionStop()	Stop	Reader	Find.Action	Informational		
+Microsoft-Windows-PDFReader	87	0	task_087(Float FloatParam)		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	88	0	task_088(Float RangeMin, Float RangeMax)		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	89	0	ScrollStart()	Start	Reader	Scroll	Informational		
+Microsoft-Windows-PDFReader	90	0	ScrollStop()	Stop	Reader	Scroll	Informational		
+Microsoft-Windows-PDFReader	91	0	task_091(UnicodeString Description)		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	92	0	task_092(UnicodeString Description)		Reader	task_0	Error		
+Microsoft-Windows-PDFReader	93	0	task_093(UnicodeString Description)		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	94	0	task_094(UnicodeString Description)		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	95	0	task_095(UnicodeString ControlId, UInt32 RectLeft, UInt32 RectTop, UInt32 RectRight, UInt32 RectBottom, UnicodeString ControlName, UnicodeString ControlToolTip)		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	96	0	task_096(UnicodeString Description)		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	97	0	task_097(UInt32 UInt32Param)		Reader	task_0	Verbose		
+Microsoft-Windows-PDFReader	98	0	task_098(UInt32 UInt32Param)		Reader	task_0	Verbose		
+Microsoft-Windows-PDFReader	99	0	PageRenderStart(Int32 Aspect, UInt32 PageIndex)	Start	Reader	PageRender	Informational		
+Microsoft-Windows-PDFReader	100	0	PageRenderStop(Int32 Aspect, UInt32 PageIndex, Boolean IsCancelled)	Stop	Reader	PageRender	Informational		
+Microsoft-Windows-PDFReader	101	0	LaunchURI(UnicodeString StringParam, UInt32 HResultParam)		Reader	LaunchURI	Informational		
+Microsoft-Windows-PDFReader	102	0	task_0102(UnicodeString Description)		Reader	task_0	Verbose		
+Microsoft-Windows-PDFReader	103	0	task_0103(UnicodeString Description)		Reader	task_0	Verbose		
+Microsoft-Windows-PDFReader	104	0	task_0104(UnicodeString Description)		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	105	0	task_0105()		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	106	0	PopulateSummaryPane(UInt32 UInt32Param)		Reader	PopulateSummaryPane	Informational		
+Microsoft-Windows-PDFReader	107	0	PageAsyncPrintStart(UInt32 UInt32Param)	Start	Reader	PageAsyncPrint	Informational		
+Microsoft-Windows-PDFReader	108	0	PageAsyncPrintStop()	Stop	Reader	PageAsyncPrint	Informational		
+Microsoft-Windows-PDFReader	109	0	SaveStart(Boolean BooleanParam)	Start	Reader	Save	Informational		
+Microsoft-Windows-PDFReader	110	0	SaveStop(Boolean BooleanParam)	Stop	Reader	Save	Informational		
+Microsoft-Windows-PDFReader	111	0	HighlightCreate(UInt32 UInt32Param)		Reader	HighlightCreate	Informational		
+Microsoft-Windows-PDFReader	112	0	HighlightDelete()		Reader	HighlightDelete	Informational		
+Microsoft-Windows-PDFReader	113	0	ManipulateView(Float Zoom, Float Rotation)		Reader	ManipulateView	Verbose		
+Microsoft-Windows-PDFReader	114	0	ManipulateView114(Float Zoom, Float Rotation)		Reader	ManipulateView	Verbose		
+Microsoft-Windows-PDFReader	115	0	Flyout(UInt32 UInt32Param)		Reader	Flyout	Verbose		
+Microsoft-Windows-PDFReader	116	0	Flyout116(UInt32 UInt32Param)		Reader	Flyout	Verbose		
+Microsoft-Windows-PDFReader	117	0	task_0117(UnicodeString Description)		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	118	0	LoadFormFieldsStart()	Start	Reader	LoadFormFields	Informational		
+Microsoft-Windows-PDFReader	119	0	LoadFormFieldsStop()	Stop	Reader	LoadFormFields	Informational		
+Microsoft-Windows-PDFReader	120	0	task_0120(AnsiString StringParam, UInt32 HResultParam)		Reader	task_0	Error		
+Microsoft-Windows-PDFReader	121	0	LaunchURI121()		Reader	LaunchURI	Informational		
+Microsoft-Windows-PDFReader	124	0	ApplicationLaunchStart()	Start	Reader	ApplicationLaunch	Informational		
+Microsoft-Windows-PDFReader	125	0	ApplicationLaunchStop()	Stop	Reader	ApplicationLaunch	Informational		
+Microsoft-Windows-PDFReader	126	0	ApplicationRehydrateStart()	Start	Reader	ApplicationRehydrate	Informational		
+Microsoft-Windows-PDFReader	127	0	ApplicationRehydrateStop()	Stop	Reader	ApplicationRehydrate	Informational		
+Microsoft-Windows-PDFReader	128	0	SelectionRenderingStart()	Start	Reader	SelectionRendering	Informational		
+Microsoft-Windows-PDFReader	129	0	SelectionRenderingStop()	Stop	Reader	SelectionRendering	Informational		
+Microsoft-Windows-PDFReader	130	0	WordSelectionStart(Boolean BooleanParam)	Start	Reader	WordSelection	Informational		
+Microsoft-Windows-PDFReader	131	0	WordSelectionStop(Boolean BooleanParam)	Stop	Reader	WordSelection	Informational		
+Microsoft-Windows-PDFReader	133	0	task_0133()		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	134	0	task_0134(UnicodeString Description)		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	135	0	task_0135(UnicodeString Description)		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	136	0	task_0136(UnicodeString Description)		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	137	0	PageAsyncPrintPreviewStart(UInt32 UInt32Param)	Start	Reader	PageAsyncPrintPreview	Informational		
+Microsoft-Windows-PDFReader	138	0	PageAsyncPrintPreviewStop()	Stop	Reader	PageAsyncPrintPreview	Informational		
+Microsoft-Windows-PDFReader	139	0	task_0139(UnicodeString Description)		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	140	0	ScrollToDestinationStart()	Start	Reader	ScrollToDestination	Informational		
+Microsoft-Windows-PDFReader	141	0	ScrollToDestinationStop()	Stop	Reader	ScrollToDestination	Informational		
+Microsoft-Windows-PDFReader	142	0	HighlightCreate142(UInt32 UInt32Param)		Reader	HighlightCreate	Informational		
+Microsoft-Windows-PDFReader	143	0	HighlightDelete143()		Reader	HighlightDelete	Informational		
+Microsoft-Windows-PDFReader	144	0	HighlightRender()		Reader	HighlightRender	Informational		
+Microsoft-Windows-PDFReader	145	0	HighlightRender145()		Reader	HighlightRender	Informational		
+Microsoft-Windows-PDFReader	146	0	WindowsSearch.ShowStart()	Start	Reader	WindowsSearch.Show	Informational		
+Microsoft-Windows-PDFReader	147	0	WindowsSearch.ShowStop()	Stop	Reader	WindowsSearch.Show	Informational		
+Microsoft-Windows-PDFReader	148	0	ThumbnailHandler.ShowStart()	Start	Reader	ThumbnailHandler.Show	Informational		
+Microsoft-Windows-PDFReader	149	0	ThumbnailHandler.ShowStop()	Stop	Reader	ThumbnailHandler.Show	Informational		
+Microsoft-Windows-PDFReader	150	0	DocSummary()		Reader	DocSummary	Informational		
+Microsoft-Windows-PDFReader	151	0	DocSummaryStop()	Stop	Reader	DocSummary	Informational		
+Microsoft-Windows-PDFReader	152	0	task_0152()		Reader	task_0	Verbose		
+Microsoft-Windows-PDFReader	153	0	task_0153(UnicodeString Description)		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	154	0	task_0154(UnicodeString Description)		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	155	0	DocumentPrintJobStart()	Start	Reader	DocumentPrintJob	Informational		
+Microsoft-Windows-PDFReader	156	0	DocumentPrintJobStop()	Stop	Reader	DocumentPrintJob	Informational		
+Microsoft-Windows-PDFReader	157	0	task_0157(Float RectLeft, Float RectTop, Float RectRight, Float RectBottom)		Reader	task_0	Verbose		
+Microsoft-Windows-PDFReader	158	0	task_0158(UnicodeString Description)		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	159	0	PreviewHandlerStart()	Start	Reader	PreviewHandler	Informational		
+Microsoft-Windows-PDFReader	160	0	PreviewHandlerStop()	Stop	Reader	PreviewHandler	Informational		
+Microsoft-Windows-PDFReader	161	0	RenderViewStart()	Start	Reader	RenderView	Informational		
+Microsoft-Windows-PDFReader	162	0	RenderViewStop()	Stop	Reader	RenderView	Informational		
+Microsoft-Windows-PDFReader	163	0	task_0163(UInt32 PageNumber, Int32 PageRectLeft, Int32 PageRectTop, Int32 PageRectRight, Int32 PageRectBottom)		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	164	0	SemanticZoomStart()	Start	Reader	SemanticZoom	Informational		
+Microsoft-Windows-PDFReader	165	0	SemanticZoomStop()	Stop	Reader	SemanticZoom	Informational		
+Microsoft-Windows-PDFReader	166	0	PageResourceUpdateStart(UInt32 PageId, Float RectLeft, Float RectTop, Float RectRight, Float RectBottom)	Start	Reader	PageResourceUpdate	Informational		
+Microsoft-Windows-PDFReader	167	0	PageResourceUpdateStop(UInt32 PageId, Float RectLeft, Float RectTop, Float RectRight, Float RectBottom)	Stop	Reader	PageResourceUpdate	Informational		
+Microsoft-Windows-PDFReader	170	0	DocumentViewCopyStart()	Start	Reader	DocumentViewCopy	Informational		
+Microsoft-Windows-PDFReader	171	0	DocumentViewCopyStop(UnicodeString Description)	Stop	Reader	DocumentViewCopy	Informational		
+Microsoft-Windows-PDFReader	172	0	ManipulationDelta(Float NewZoom, Float TranslationDeltaX, Float TranslationDeltaY, Boolean TranslationDeltaIsInertial, Float TranslationDeltaAnchorPointX, Float TranslationDeltaAnchorPointY)		Reader	ManipulationDelta	Verbose		
+Microsoft-Windows-PDFReader	177	0	task_0177()		Reader	task_0	Verbose		
+Microsoft-Windows-PDFReader	178	0	task_0178()		Reader	task_0	Verbose		
+Microsoft-Windows-PDFReader	179	0	task_0179(UInt32 UInt32Param)		Reader	task_0	Verbose		
+Microsoft-Windows-PDFReader	180	0	task_0180(UInt32 UInt32Param)		Reader	task_0	Verbose		
+Microsoft-Windows-PDFReader	181	0	task_0181(Float X, Float Y)		Reader	task_0	Verbose		
+Microsoft-Windows-PDFReader	182	0	task_0182(Float X, Float Y)		Reader	task_0	Verbose		
+Microsoft-Windows-PDFReader	183	0	task_0183(Float X, Float Y)		Reader	task_0	Verbose		
+Microsoft-Windows-PDFReader	184	0	InkRenderingStart()	Start	Reader	InkRendering	Informational		
+Microsoft-Windows-PDFReader	185	0	InkRenderingStop()	Stop	Reader	InkRendering	Informational		
+Microsoft-Windows-PDFReader	186	0	InkUpdateStart()	Start	Reader	InkUpdate	Informational		
+Microsoft-Windows-PDFReader	187	0	InkUpdateStop()	Stop	Reader	InkUpdate	Informational		
+Microsoft-Windows-PDFReader	188	0	UpdateViewStateStart()	Start	Reader	UpdateViewState	Informational		
+Microsoft-Windows-PDFReader	189	0	UpdateViewStateStop()	Stop	Reader	UpdateViewState	Informational		
+Microsoft-Windows-PDFReader	190	0	AsyncRenderViewRequest()		Reader	AsyncRenderViewRequest	Verbose		
+Microsoft-Windows-PDFReader	191	0	AsyncRenderViewRequest191()		Reader	AsyncRenderViewRequest	Verbose		
+Microsoft-Windows-PDFReader	192	0	DrawingsurfaceDrawEventStart()	Start	Reader	DrawingsurfaceDrawEvent	Informational		
+Microsoft-Windows-PDFReader	193	0	DrawingsurfaceDrawEventStop()	Stop	Reader	DrawingsurfaceDrawEvent	Informational		
+Microsoft-Windows-PDFReader	194	0	DocViewAnimation()		Reader	DocViewAnimation	Informational		
+Microsoft-Windows-PDFReader	195	0	DocViewAnimation195()		Reader	DocViewAnimation	Informational		
+Microsoft-Windows-PDFReader	196	0	FileAccessedStart()	Start	Reader	FileAccessed	Informational		
+Microsoft-Windows-PDFReader	197	0	IncrementalRender()		Reader	IncrementalRender	Informational		
+Microsoft-Windows-PDFReader	198	0	DocSummaryStart()	Start	Reader	DocSummary	Informational		
+Microsoft-Windows-PDFReader	199	0	task_0199(UnicodeString StringParam, UInt32 HResultParam)		Reader	task_0	Error		
+Microsoft-Windows-PDFReader	200	0	PageView(Int32 Aspect, UInt32 PageIndex)		Reader	PageView	Informational		
+Microsoft-Windows-PDFReader	201	0	SemanticZoomViewChangingStart(Boolean BooleanParam)	Start	Reader	SemanticZoomViewChanging	Informational		
+Microsoft-Windows-PDFReader	202	0	SemanticZoomViewChangingStop(Boolean BooleanParam)	Stop	Reader	SemanticZoomViewChanging	Informational		
+Microsoft-Windows-PDFReader	203	0	PickerFileSelected()		Reader	PickerFileSelected	Informational		
+Microsoft-Windows-PDFReader	204	0	PickerFileSelected204()		Reader	PickerFileSelected	Informational		
+Microsoft-Windows-PDFReader	206	0	InteractiveControl()		Reader	InteractiveControl	Informational		
+Microsoft-Windows-PDFReader	207	0	PrintPreviewStart()	Start	Reader	PrintPreview	Informational		
+Microsoft-Windows-PDFReader	208	0	PrintPreviewStop()	Stop	Reader	PrintPreview	Informational		
+Microsoft-Windows-PDFReader	209	0	JumpToDestination()		Reader	JumpToDestination	Informational		
+Microsoft-Windows-PDFReader	210	0	task_0210(Float Zoom, UInt32 PageSetId)		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	211	0	TextCopyStart()	Start	Reader	TextCopy	Informational		
+Microsoft-Windows-PDFReader	212	0	TextCopyStop()	Stop	Reader	TextCopy	Informational		
+Microsoft-Windows-PDFReader	213	0	task_0213()		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	214	0	task_0214()		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	215	0	task_0215()		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	216	0	InteractiveControlRenderStart(UInt32 PageId, Float RectLeft, Float RectTop, Float RectRight, Float RectBottom)	Start	Reader	InteractiveControlRender	Informational		
+Microsoft-Windows-PDFReader	217	0	InteractiveControlRenderStop()	Stop	Reader	InteractiveControlRender	Informational		
+Microsoft-Windows-PDFReader	218	0	task_0218(UInt32 PageId, Float RectLeft, Float RectTop, Float RectRight, Float RectBottom)		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	219	0	task_0219(UInt32 UInt32Param)		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	220	0	task_0220(UInt32 UInt32Param)		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	221	0	task_0221(UInt32 UInt32Param)		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	222	0	task_0222(UInt32 UInt32Param)		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	223	0	task_0223()		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	224	0	task_0224()		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	225	0	task_0225(UInt32 PageId, Float RectLeft, Float RectTop, Float RectRight, Float RectBottom)		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	226	0	task_0226(UnicodeString Description)		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	227	0	task_0227(UnicodeString Description)		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	228	0	task_0228(UnicodeString Description)		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	229	0	task_0229(UnicodeString Description)		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	230	0	task_0230(UnicodeString Description)		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	231	0	task_0231(UnicodeString Description)		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	232	0	task_0232(UnicodeString Description)		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	233	0	task_0233(UnicodeString Description)		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	234	0	task_0234(UnicodeString Description)		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	235	0	task_0235(UnicodeString Description)		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	236	0	task_0236(UnicodeString Description)		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	237	0	task_0237(UnicodeString Description)		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	238	0	task_0238(UInt32 UInt32Param)		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	239	0	task_0239(UInt32 UInt32Param)		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	240	0	task_0240(UInt32 PageId, Float RectLeft, Float RectTop, Float RectRight, Float RectBottom)		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	241	0	task_0241(UInt32 PageId, Float RectLeft, Float RectTop, Float RectRight, Float RectBottom)		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	242	0	task_0242()		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	245	0	task_0245()		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	246	0	task_0246()		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	247	0	task_0247(UnicodeString Description)		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	248	0	TileRenderStart248(UInt32 PageId, Float RectLeft, Float RectTop, Float RectRight, Float RectBottom)	Start	Reader	TileRender	Informational		
+Microsoft-Windows-PDFReader	249	0	TileRenderStop249()	Stop	Reader	TileRender	Informational		
+Microsoft-Windows-PDFReader	250	0	SwitchTo(UInt32 UInt32Param, UnicodeString StringParam, Boolean BooleanParam)		Reader	SwitchTo	Informational		
+Microsoft-Windows-PDFReader	251	0	SwitchToStart(Boolean SameWindow)	Start	Reader	SwitchTo	Informational		
+Microsoft-Windows-PDFReader	252	0	SwitchToStop()	Stop	Reader	SwitchTo	Informational		
+Microsoft-Windows-PDFReader	253	0	TileRender(UInt32 PageId, Float RectLeft, Float RectTop, Float RectRight, Float RectBottom)		Reader	TileRender	Informational		
+Microsoft-Windows-PDFReader	254	0	task_0254(UInt32 PageId, Float RectLeft, Float RectTop, Float RectRight, Float RectBottom)		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	255	0	task_0255()		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	256	0	ExecuteJavascriptStart(UInt32 ScriptUniqueIdentifier, UnicodeString ScriptMetadata)	Start	Reader	ExecuteJavascript	Informational		
+Microsoft-Windows-PDFReader	257	0	ExecuteJavascriptStop(UInt32 ScriptUniqueIdentifier, UnicodeString ScriptMetadata, Boolean ScriptCompletedSuccessfully)	Stop	Reader	ExecuteJavascript	Informational		
+Microsoft-Windows-PDFReader	258	0	VerifySignatureStart(UInt32 UInt32Param)	Start	Reader	VerifySignature	Informational		
+Microsoft-Windows-PDFReader	259	0	VerifySignatureStop(UInt32 UInt32Param)	Stop	Reader	VerifySignature	Informational		
+Microsoft-Windows-PDFReader	260	0	VerifyCertificateStart(UInt32 UInt32Param)	Start	Reader	VerifyCertificate	Informational		
+Microsoft-Windows-PDFReader	261	0	VerifyCertificateStop(UInt32 UInt32Param)	Stop	Reader	VerifyCertificate	Informational		
+Microsoft-Windows-PDFReader	262	0	task_0262()		Reader	task_0	Verbose		
+Microsoft-Windows-PDFReader	263	0	task_0263()		Reader	task_0	Verbose		
+Microsoft-Windows-PDFReader	264	0	task_0264(UnicodeString MailtoProtocolString)		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	265	0	task_0265()		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	266	0	DocumentNavBarShowStart()	Start	Reader	DocumentNavBarShow	Informational		
+Microsoft-Windows-PDFReader	267	0	DocumentNavBarShowStop()	Stop	Reader	DocumentNavBarShow	Informational		
+Microsoft-Windows-PDFReader	268	0	DocumentNavBarHideStart()	Start	Reader	DocumentNavBarHide	Informational		
+Microsoft-Windows-PDFReader	269	0	DocumentNavBarHideStop()	Stop	Reader	DocumentNavBarHide	Informational		
+Microsoft-Windows-PDFReader	270	0	task_0270()		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	272	0	task_0272(UInt32 PageId, UInt32 ModelType)		Reader	task_0	Informational		
+Microsoft-Windows-PDFReader	273	0	CreateWindowStart()	Start	Reader	CreateWindow	Informational		
+Microsoft-Windows-PDFReader	274	0	CreateWindowStop(UInt32 WindowID)	Stop	Reader	CreateWindow	Informational		
+Microsoft-Windows-PDFReader	275	0	CreateWindow()		Reader	CreateWindow	Informational		
+Microsoft-Windows-PDFReader	276	0	CloseDocumentStart()	Start	Reader	CloseDocument	Informational		
+Microsoft-Windows-PDFReader	277	0	CloseDocumentStop()	Stop	Reader	CloseDocument	Informational		
+Microsoft-Windows-PDFReader	278	0	CloseWindowStart(UInt32 WindowID)	Start	Reader	CloseWindow	Informational		
+Microsoft-Windows-PDFReader	279	0	CloseWindowStop(UInt32 WindowID)	Stop	Reader	CloseWindow	Informational		
+Microsoft-Windows-PDFReader	280	0	ContextMenuShowStop(UInt32 UInt32Param)	Stop	Reader	ContextMenuShow	Informational		
+Microsoft-Windows-PDFReader	281	0	ContextMenuHideStop(UInt32 UInt32Param)	Stop	Reader	ContextMenuHide	Informational		
+Microsoft-Windows-PDFReader	282	0	MRU(UInt32 UInt32Param)		Reader	MRU	Verbose		
+Microsoft-Windows-PDFReader	283	0	MRU283(UInt32 UInt32Param)		Reader	MRU	Verbose		
+Microsoft-Windows-PDFReader	284	0	task_0284()		Reader	task_0	Informational		

@@ -1,0 +1,11 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-FileHistory-Service	1	0	ConfigurationLoadStart()	Start		ConfigurationLoad	Always		
+Microsoft-Windows-FileHistory-Service	2	0	ConfigurationLoadStop(Int32 Result, UnicodeString ConfigFilePath)	Stop		ConfigurationLoad	Always		
+Microsoft-Windows-FileHistory-Service	3	0	CatalogLoadStart(UnicodeString CatalogPath1, UnicodeString CatalogPath2)	Start		CatalogLoad	Always		
+Microsoft-Windows-FileHistory-Service	4	0	CatalogLoadStop(Int32 Result, UnicodeString CatalogPath1, UnicodeString CatalogPath2)	Stop		CatalogLoad	Always		
+Microsoft-Windows-FileHistory-Service	5	0	ConfigurationSaveStart(UnicodeString ConfigFilePath)	Start		ConfigurationSave	Always		
+Microsoft-Windows-FileHistory-Service	6	0	ConfigurationSaveStop(UnicodeString ConfigFilePath)	Stop		ConfigurationSave	Always		
+Microsoft-Windows-FileHistory-Service	7	0	BackupCycleStart(UnicodeString ConfigFilePath, UInt32 BackupType)	Start		BackupCycle	Always		
+Microsoft-Windows-FileHistory-Service	8	0	BackupCycleStop(UnicodeString ConfigFilePath)	Stop		BackupCycle	Always		
+Microsoft-Windows-FileHistory-Service	9	0	BackupStopStart(UnicodeString ConfigFilePath, Boolean StopSync)	Start		BackupStop	Always		
+Microsoft-Windows-FileHistory-Service	10	0	BackupStop(UnicodeString ConfigFilePath, Boolean StopSync)	Stop		BackupStop	Always		

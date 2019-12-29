@@ -1,0 +1,12 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-SPB-HIDI2C	1000	1	EnumerationoftheHIDI2Cdriver_V1(Pointer DeviceObject, UInt32 Status)			EnumerationoftheHIDI2Cdriver	Informational		
+Microsoft-Windows-SPB-HIDI2C	1001	1	EnumerationoftheHIDI2Cdriver1001_V1(Pointer DeviceObject, UInt32 Status)			EnumerationoftheHIDI2Cdriver	Error		
+Microsoft-Windows-SPB-HIDI2C	1002	1	EnumerationoftheHIDI2Cdriver1002_V1(Pointer DeviceObject, UInt32 Status)			EnumerationoftheHIDI2Cdriver	Error		
+Microsoft-Windows-SPB-HIDI2C	1003	1	EnumerationoftheHIDI2Cdriver1003_V1(Pointer DeviceObject, UInt32 Status)			EnumerationoftheHIDI2Cdriver	Error		
+Microsoft-Windows-SPB-HIDI2C	1010	1	IOrequestflowviatheHIDI2CdriverStart_V1()	Start		IOrequestflowviatheHIDI2Cdriver	Informational		
+Microsoft-Windows-SPB-HIDI2C	1011	1	IOrequestflowviatheHIDI2CdriverIoSpbReadDispatch_V1(Pointer SpbIoTarget, Pointer SpbRequest)	IoSpbReadDispatch		IOrequestflowviatheHIDI2Cdriver	Informational		
+Microsoft-Windows-SPB-HIDI2C	1012	1	IOrequestflowviatheHIDI2CdriverIoSpbReadComplete_V1(Pointer SpbIoTarget, Pointer SpbRequest)	IoSpbReadComplete		IOrequestflowviatheHIDI2Cdriver	Informational		
+Microsoft-Windows-SPB-HIDI2C	1013	1	IOrequestflowviatheHIDI2CdriverIoForwardToCompletionQueue_V1(Pointer HidReadRequest)	IoForwardToCompletionQueue		IOrequestflowviatheHIDI2Cdriver	Informational		
+Microsoft-Windows-SPB-HIDI2C	1014	1	IOrequestflowviatheHIDI2CdriverStop_V1(Pointer HidReadRequest)	Stop		IOrequestflowviatheHIDI2Cdriver	Informational		
+Microsoft-Windows-SPB-HIDI2C	1020	1	CommandrequestsintheHIDI2Cdriver_V1(Pointer SpbIoTarget, UInt16 Opcode, UInt32 Status)			CommandrequestsintheHIDI2Cdriver	Informational		
+Microsoft-Windows-SPB-HIDI2C	1021	1	CommandrequestsintheHIDI2Cdriver1021_V1(Pointer SpbIoTarget, UInt16 Opcode, UInt32 Status)			CommandrequestsintheHIDI2Cdriver	Informational		

@@ -1,0 +1,47 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-BitLocker-Driver-Performance	1	0	fve:ReadRequestStart(Pointer DevObjPtr, Pointer IrpPtr)	Start	fve:Performance	fve:ReadRequest	Informational		
+Microsoft-Windows-BitLocker-Driver-Performance	2	0	fve:ReadRequestStop(Pointer DevObjPtr, Pointer IrpPtr)	Stop	fve:Performance	fve:ReadRequest	Informational		
+Microsoft-Windows-BitLocker-Driver-Performance	3	0	fve:WriteRequestStart(Pointer DevObjPtr, Pointer IrpPtr)	Start	fve:Performance	fve:WriteRequest	Informational		
+Microsoft-Windows-BitLocker-Driver-Performance	4	0	fve:WriteRequestStop(Pointer DevObjPtr, Pointer IrpPtr)	Stop	fve:Performance	fve:WriteRequest	Informational		
+Microsoft-Windows-BitLocker-Driver-Performance	5	0	fve:ReadSubRequest(Pointer DevObjPtr, Pointer IrpPtr, Pointer SubIrpPtr)		fve:Performance	fve:ReadSubRequest	Informational		
+Microsoft-Windows-BitLocker-Driver-Performance	6	0	fve:WriteSubRequest(Pointer DevObjPtr, Pointer IrpPtr, Pointer SubIrpPtr)		fve:Performance	fve:WriteSubRequest	Informational		
+Microsoft-Windows-BitLocker-Driver-Performance	7	0	fve:ReadSubRequestStart(Pointer DevObjPtr, Pointer IrpPtr)	Start	fve:Performance	fve:ReadSubRequest	Informational		
+Microsoft-Windows-BitLocker-Driver-Performance	8	0	fve:ReadSubRequestStop(Pointer DevObjPtr, Pointer IrpPtr)	Stop	fve:Performance	fve:ReadSubRequest	Informational		
+Microsoft-Windows-BitLocker-Driver-Performance	9	0	fve:WriteSubRequestStart(Pointer DevObjPtr, Pointer IrpPtr)	Start	fve:Performance	fve:WriteSubRequest	Informational		
+Microsoft-Windows-BitLocker-Driver-Performance	10	0	fve:WriteSubRequestStop(Pointer DevObjPtr, Pointer IrpPtr)	Stop	fve:Performance	fve:WriteSubRequest	Informational		
+Microsoft-Windows-BitLocker-Driver-Performance	11	0	fve:VolumeStackCreate(Pointer DevObjPtr, Pointer PdoPtr)		fve:Performance	fve:VolumeStackCreate	Informational		
+Microsoft-Windows-BitLocker-Driver-Performance	12	0	fve:VolumeStackDelete(Pointer DevObjPtr, Pointer PdoPtr)		fve:Performance	fve:VolumeStackDelete	Informational		
+Microsoft-Windows-BitLocker-Driver-Performance	13	0	fve:VolumeDiscoveryStart(Pointer DevObjPtr)	Start	fve:Performance	fve:VolumeDiscovery	Informational		
+Microsoft-Windows-BitLocker-Driver-Performance	14	0	fve:VolumeDiscoveryStop(Pointer DevObjPtr)	Stop	fve:Performance	fve:VolumeDiscovery	Informational		
+Microsoft-Windows-BitLocker-Driver-Performance	15	0	fve:MetadataWriteStart(Pointer DevObjPtr, UInt32 Index, UInt64 Offset)	Start	fve:Performance	fve:MetadataWrite	Informational		
+Microsoft-Windows-BitLocker-Driver-Performance	16	0	fve:MetadataWriteStop(Pointer DevObjPtr, UInt32 Index, UInt64 Offset)	Stop	fve:Performance	fve:MetadataWrite	Informational		
+Microsoft-Windows-BitLocker-Driver-Performance	17	0	fve:FveIoctlStart(Pointer DevObjPtr, UInt32 Command)	Start	fve:Performance	fve:FveIoctl	Informational		
+Microsoft-Windows-BitLocker-Driver-Performance	18	0	fve:FveIoctlStop(Pointer DevObjPtr, UInt32 Command)	Stop	fve:Performance	fve:FveIoctl	Informational		
+Microsoft-Windows-BitLocker-Driver-Performance	19	0	fve:FveActionStart(Pointer DevObjPtr, UInt32 Command)	Start	fve:Performance	fve:FveAction	Informational		
+Microsoft-Windows-BitLocker-Driver-Performance	20	0	fve:FveActionStop(Pointer DevObjPtr, UInt32 Command)	Stop	fve:Performance	fve:FveAction	Informational		
+Microsoft-Windows-BitLocker-Driver-Performance	21	0	fve:ConversionStart(Pointer DevObjPtr, UInt32 Command)	Start	fve:Performance	fve:Conversion	Informational		
+Microsoft-Windows-BitLocker-Driver-Performance	22	0	fve:ConversionStop(Pointer DevObjPtr, UInt32 Command)	Stop	fve:Performance	fve:Conversion	Informational		
+Microsoft-Windows-BitLocker-Driver-Performance	23	0	fve:ConversionStepStart(Pointer DevObjPtr, UInt64 Offset, UInt32 Size, UInt32 Command)	Start	fve:Performance	fve:ConversionStep	Informational		
+Microsoft-Windows-BitLocker-Driver-Performance	24	0	fve:ConversionStepStop(Pointer DevObjPtr, UInt64 Offset, UInt32 Size, UInt32 Command)	Stop	fve:Performance	fve:ConversionStep	Informational		
+Microsoft-Windows-BitLocker-Driver-Performance	25	0	fve:SliderMoveStart(Pointer DevObjPtr, UInt64 PrevOffset, UInt64 NextOffset, UInt64 Size)	Start	fve:Performance	fve:SliderMove	Informational		
+Microsoft-Windows-BitLocker-Driver-Performance	26	0	fve:SliderMoveStop(Pointer DevObjPtr, UInt64 PrevOffset, UInt64 NextOffset, UInt64 Size)	Stop	fve:Performance	fve:SliderMove	Informational		
+Microsoft-Windows-BitLocker-Driver-Performance	27	0	fve:IoDecryptRequestStart(Pointer DevObjPtr, Pointer SubIrpPtr, UInt64 Offset, UInt32 Size)	Start	fve:CryptoPerformance	fve:IoDecryptRequest	Informational		
+Microsoft-Windows-BitLocker-Driver-Performance	28	0	fve:IoDecryptRequestStop(Pointer DevObjPtr, Pointer SubIrpPtr, UInt64 Offset, UInt32 Size)	Stop	fve:CryptoPerformance	fve:IoDecryptRequest	Informational		
+Microsoft-Windows-BitLocker-Driver-Performance	29	0	fve:IoEncryptRequestStart(Pointer DevObjPtr, Pointer SubIrpPtr, UInt64 Offset, UInt32 Size)	Start	fve:CryptoPerformance	fve:IoEncryptRequest	Informational		
+Microsoft-Windows-BitLocker-Driver-Performance	30	0	fve:IoEncryptRequestStop(Pointer DevObjPtr, Pointer SubIrpPtr, UInt64 Offset, UInt32 Size)	Stop	fve:CryptoPerformance	fve:IoEncryptRequest	Informational		
+Microsoft-Windows-BitLocker-Driver-Performance	31	0	fve:BCryptEncryptRequestStart(Pointer BufferPtr, UInt32 Size)	Start	fve:CryptoPerformance	fve:BCryptEncryptRequest	Informational		
+Microsoft-Windows-BitLocker-Driver-Performance	32	0	fve:BCryptEncryptRequestStop(Pointer BufferPtr, UInt32 Size)	Stop	fve:CryptoPerformance	fve:BCryptEncryptRequest	Informational		
+Microsoft-Windows-BitLocker-Driver-Performance	33	0	fve:BCryptDecryptRequestStart(Pointer BufferPtr, UInt32 Size)	Start	fve:CryptoPerformance	fve:BCryptDecryptRequest	Informational		
+Microsoft-Windows-BitLocker-Driver-Performance	34	0	fve:BCryptDecryptRequestStop(Pointer BufferPtr, UInt32 Size)	Stop	fve:CryptoPerformance	fve:BCryptDecryptRequest	Informational		
+Microsoft-Windows-BitLocker-Driver-Performance	35	0	fve:BCryptEncryptRequestStart35(Pointer BufferPtr, UInt32 Size)	Start	fve:CryptoPerformance	fve:BCryptEncryptRequest	Informational		
+Microsoft-Windows-BitLocker-Driver-Performance	36	0	fve:BCryptEncryptRequestStop36(Pointer BufferPtr, UInt32 Size)	Stop	fve:CryptoPerformance	fve:BCryptEncryptRequest	Informational		
+Microsoft-Windows-BitLocker-Driver-Performance	37	0	fve:BCryptEncryptRequestStart37(Pointer BufferPtr, UInt32 Size)	Start	fve:CryptoPerformance	fve:BCryptEncryptRequest	Informational		
+Microsoft-Windows-BitLocker-Driver-Performance	38	0	fve:BCryptEncryptRequestStop38(Pointer BufferPtr, UInt32 Size)	Stop	fve:CryptoPerformance	fve:BCryptEncryptRequest	Informational		
+Microsoft-Windows-BitLocker-Driver-Performance	39	0	fve:BCryptDecryptRequestStart39(Pointer BufferPtr, UInt32 Size)	Start	fve:CryptoPerformance	fve:BCryptDecryptRequest	Informational		
+Microsoft-Windows-BitLocker-Driver-Performance	40	0	fve:BCryptDecryptRequestStop40(Pointer BufferPtr, UInt32 Size)	Stop	fve:CryptoPerformance	fve:BCryptDecryptRequest	Informational		
+Microsoft-Windows-BitLocker-Driver-Performance	41	0	fve:BCryptDecryptRequestStart41(Pointer BufferPtr, UInt32 Size)	Start	fve:CryptoPerformance	fve:BCryptDecryptRequest	Informational		
+Microsoft-Windows-BitLocker-Driver-Performance	42	0	fve:BCryptDecryptRequestStop42(Pointer BufferPtr, UInt32 Size)	Stop	fve:CryptoPerformance	fve:BCryptDecryptRequest	Informational		
+Microsoft-Windows-BitLocker-Driver-Performance	43	0	fve:BCryptEncryptRequestStart43(Pointer BufferPtr, UInt32 Size)	Start	fve:CryptoPerformance	fve:BCryptEncryptRequest	Informational		
+Microsoft-Windows-BitLocker-Driver-Performance	44	0	fve:BCryptEncryptRequestStop44(Pointer BufferPtr, UInt32 Size)	Stop	fve:CryptoPerformance	fve:BCryptEncryptRequest	Informational		
+Microsoft-Windows-BitLocker-Driver-Performance	45	0	fve:BCryptDecryptRequestStart45(Pointer BufferPtr, UInt32 Size)	Start	fve:CryptoPerformance	fve:BCryptDecryptRequest	Informational		
+Microsoft-Windows-BitLocker-Driver-Performance	46	0	fve:BCryptDecryptRequestStop46(Pointer BufferPtr, UInt32 Size)	Stop	fve:CryptoPerformance	fve:BCryptDecryptRequest	Informational		

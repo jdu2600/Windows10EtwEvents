@@ -1,0 +1,20 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Kernel-StoreMgr	1	2	StoreAdd_V2(UInt32 DataKey, Pointer DataMgr, UInt32 StoreOffset, UInt16 CompressedSize, UInt16 Flags)		StoreOps	StoreAdd	Informational		
+Microsoft-Windows-Kernel-StoreMgr	2	1	StoreRemove_V1(UInt32 DataKey, Pointer DataMgr, UInt32 StoreOffset)		StoreOps	StoreRemove	Informational		
+Microsoft-Windows-Kernel-StoreMgr	3	3	StoreCreate_V3(Pointer StoreKey, Pointer StoreFileKey, Pointer UserDataMgr, Pointer MetadataMgr, UInt32 RegionSize, UInt32 RegionCount, UInt32 BlockSize, UInt32 SectorSize, UInt32 EncryptionStrength, UInt16 StoreType, UInt16 StoreId, UInt32 BlocksStored, UInt32 RegionsInUse, UInt32 TotalSpaceUsed, UInt32 Flags, UInt32 MetaRegionCount, UInt32 MetaRegionsInUse, UInt32 MetaRegionsSpaceUsed, UInt32 StoreTime)		StoreOps	StoreCreate	Informational		
+Microsoft-Windows-Kernel-StoreMgr	4	1	StoreDelete_V1(Pointer StoreKey)		StoreOps	StoreDelete	Informational		
+Microsoft-Windows-Kernel-StoreMgr	5	3	StoreRundown_V3(Pointer StoreKey, Pointer StoreFileKey, Pointer UserDataMgr, Pointer MetadataMgr, UInt32 RegionSize, UInt32 RegionCount, UInt32 BlockSize, UInt32 SectorSize, UInt32 EncryptionStrength, UInt16 StoreType, UInt16 StoreId, UInt32 BlocksStored, UInt32 RegionsInUse, UInt32 TotalSpaceUsed, UInt32 Flags, UInt32 MetaRegionCount, UInt32 MetaRegionsInUse, UInt32 MetaRegionsSpaceUsed, UInt32 StoreTime)		StoreOps	StoreRundown	Informational		
+Microsoft-Windows-Kernel-StoreMgr	6	1	StoreCorruption_V1(Pointer DataMgr, Pointer VirtualAddress, UInt64 PhysicalAddress, UInt16 Size, UInt8 FileBacked, UInt8 CorruptionType, UInt32 Flags)		StoreOps StoreDiag	StoreCorruption	Informational		
+Microsoft-Windows-Kernel-StoreMgr	7	1	StorePageRundown_V1(UInt32 DataKey, Pointer DataMgr, UInt32 StoreOffset, UInt16 CompressedSize, UInt16 Flags)		StoreContentsRundown	StorePageRundown	Informational		
+Microsoft-Windows-Kernel-StoreMgr	8	2	RegionEvict_V2(Pointer DataMgr, UInt32 RegionIndex, UInt32 Status, UInt16 SpaceUsed, UInt16 LastAccessTime)		StoreOps	RegionEvict	Informational		
+Microsoft-Windows-Kernel-StoreMgr	9	2	RegionWrite_V2(Pointer DataMgr, UInt32 RegionIndex, UInt32 Status, UInt16 SpaceUsed, UInt16 LastAccessTime)		StoreOps	RegionWrite	Informational		
+Microsoft-Windows-Kernel-StoreMgr	10	1	UnpersistFailure_V1(UInt32 FailReason, HexInt32 FailStatus, UInt16 ObjectPathLength, UnicodeString ObjectPath)		StoreOps StoreDiag	UnpersistFailure	Informational		
+Microsoft-Windows-Kernel-StoreMgr	11	1	StoreIoStats_V1(Pointer StoreKey, UInt32 Size, Binary Data)		StoreOps	StoreIoStats	Informational		
+Microsoft-Windows-Kernel-StoreMgr	12	1	GlobalStats_V1(UInt32 Size, Binary Data)		StoreOps	GlobalStats	Informational		
+Microsoft-Windows-Kernel-StoreMgr	13	1	StoreEmpty_V1(Pointer StoreKey, Pointer Param)		StoreOps	StoreEmpty	Informational		
+Microsoft-Windows-Kernel-StoreMgr	14	1	RegionRelease_V1(Pointer DataMgr, UInt32 RegionIndex, UInt32 Status, UInt16 SpaceUsed, UInt16 LastAccessTime)		StoreOps	RegionRelease	Informational		
+Microsoft-Windows-Kernel-StoreMgr	15	1	RegionCompactStart_V1(Pointer DataMgr, UInt32 RegionIndex, UInt32 Status, UInt16 SpaceUsed, UInt16 LastAccessTime)	Start	StoreOps	RegionCompact	Informational		
+Microsoft-Windows-Kernel-StoreMgr	16	1	RegionCompactStop_V1(Pointer DataMgr, UInt32 RegionIndex, UInt32 Status, UInt16 SpaceUsed, UInt16 LastAccessTime)	Stop	StoreOps	RegionCompact	Informational		
+Microsoft-Windows-Kernel-StoreMgr	17	1	RegionRundown_V1(Pointer DataMgr, UInt32 RegionIndex, UInt32 Status, UInt16 SpaceUsed, UInt16 LastAccessTime)		StoreContentsRundown	RegionRundown	Informational		
+Microsoft-Windows-Kernel-StoreMgr	18	1	CacheTermination_V1(UInt8 Reason, HexInt32 FailStatus, UInt16 DeviceDescLength, UnicodeString DeviceDescription, UInt16 ObjectPathLength, UnicodeString ObjectPath)		StoreOps StoreDiag	CacheTermination	Informational		
+Microsoft-Windows-Kernel-StoreMgr	19	0	task_0(UInt32 SqmType, GUID SqmSessionGuid, UInt32 SqmID, UInt32 SqmStreamRowLength, Int16 SqmStreamRow)			task_0	Informational		

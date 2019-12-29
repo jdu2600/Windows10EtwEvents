@@ -1,0 +1,19 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Winsrv	10001	0	task_0(UnicodeString AppName, UInt32 ResponseTime)			task_0	Informational		
+Microsoft-Windows-Winsrv	10002	0	task_010002(UnicodeString AppName)			task_0	Informational		
+Microsoft-Windows-Winsrv	12001	0	ThreadShutdownStart(UInt32 ThreadId, UInt32 Flags)	Start	Perf	ThreadShutdown	Informational		
+Microsoft-Windows-Winsrv	12001	1	ThreadShutdownStart_V1(UInt32 ThreadId, UInt32 Flags, UInt32 ProcessId)	Start	Perf	ThreadShutdown	Informational		
+Microsoft-Windows-Winsrv	12002	0	ThreadShutdownStop(UInt32 Command)	Stop	Perf	ThreadShutdown	Informational		
+Microsoft-Windows-Winsrv	12002	1	ThreadShutdownStop_V1(UInt32 Command, UInt32 ThreadId)	Stop	Perf	ThreadShutdown	Informational		
+Microsoft-Windows-Winsrv	12003	0	ThreadShutdown_SentMessage(UInt32 MessageId, UInt32 Flags)		Perf	ThreadShutdown_SentMessage	Informational		
+Microsoft-Windows-Winsrv	12003	1	ThreadShutdown_SentMessage_V1(UInt32 MessageId, UInt32 Flags, UInt32 ThreadId)		Perf	ThreadShutdown_SentMessage	Informational		
+Microsoft-Windows-Winsrv	12005	0	TerminateProcessStart()	Start	Perf	TerminateProcess	Informational		
+Microsoft-Windows-Winsrv	12005	1	TerminateProcessStart_V1(UInt32 ProcessId)	Start	Perf	TerminateProcess	Informational		
+Microsoft-Windows-Winsrv	12006	0	TerminateProcessStop()	Stop	Perf	TerminateProcess	Informational		
+Microsoft-Windows-Winsrv	12006	1	TerminateProcessStop_V1(UInt32 ProcessId, UInt32 TerminateStatus)	Stop	Perf	TerminateProcess	Informational		
+Microsoft-Windows-Winsrv	12007	0	WaitForProcessStart()	Start	Perf	WaitForProcess	Informational		
+Microsoft-Windows-Winsrv	12007	1	WaitForProcessStart_V1(UInt32 ProcessId)	Start	Perf	WaitForProcess	Informational		
+Microsoft-Windows-Winsrv	12008	0	WaitForProcessStop(UInt32 WaitStatus)	Stop	Perf	WaitForProcess	Informational		
+Microsoft-Windows-Winsrv	12008	1	WaitForProcessStop_V1(UInt32 WaitStatus, UInt32 ProcessId)	Stop	Perf	WaitForProcess	Informational		
+Microsoft-Windows-Winsrv	12009	1	ShutdownProcessStart_V1(UInt32 ProcessId, UInt32 Flags)	Start	Perf	ShutdownProcess	Informational		
+Microsoft-Windows-Winsrv	12010	1	ShutdownProcessStop_V1(UInt32 ProcessId, UInt32 Status)	Stop	Perf	ShutdownProcess	Informational		

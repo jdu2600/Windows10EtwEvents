@@ -1,0 +1,35 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-NetworkProvisioning	1000	0	CreateDocumentStart(UInt64 SizeOfXMLInBytes)	Start	XmlValidation ut:Configuration	CreateDocument	Informational		
+Microsoft-Windows-NetworkProvisioning	1001	0	CreateDocumentStop(Int32 ErrorCode)	Stop	XmlValidation ut:Configuration	CreateDocument	Informational		
+Microsoft-Windows-NetworkProvisioning	1002	0	CreateDocument(Int32 Result)		XmlValidation ut:Configuration	CreateDocument	Informational		
+Microsoft-Windows-NetworkProvisioning	1003	0	CreateDocument1003(Int32 Result)		XmlValidation ut:Configuration	CreateDocument	Informational		
+Microsoft-Windows-NetworkProvisioning	1004	0	CreateDocument1004(Int32 ErrorCode, UnicodeString CarrierId, UnicodeString SubscriberId, UnicodeString DeviceId, UnicodeString Signer, UnicodeString CertificateIssuer, UnicodeString CertificateSubject)		XmlValidation ut:Configuration	CreateDocument	Informational		
+Microsoft-Windows-NetworkProvisioning	1005	0	CreateDocument1005(UInt64 StreamSize, UInt64 StreamSizeLimit)		XmlValidation ut:Configuration	CreateDocument	Error		
+Microsoft-Windows-NetworkProvisioning	1006	0	CreateDocument1006(UInt32 ErrorCode, UnicodeString ErrorMessage, UnicodeString Description)		XmlValidation ut:Configuration	CreateDocument	Error		
+Microsoft-Windows-NetworkProvisioning	1007	0	CreateDocument1007(UInt32 ErrorCode, Int32 Line, Int32 LinePos, UnicodeString Reason)		XmlValidation ut:Configuration	CreateDocument	Error		
+Microsoft-Windows-NetworkProvisioning	1008	0	CreateDocument1008(Int32 Result)		XmlValidation ut:Configuration	CreateDocument	Error		
+Microsoft-Windows-NetworkProvisioning	2000	0	ProvisioningDocumentStart()	Start	XmlProcessing ut:Configuration	ProvisioningDocument	Informational		
+Microsoft-Windows-NetworkProvisioning	2001	0	ProvisioningDocumentStop(Int32 ErrorCode, Boolean ErrorOccurred)	Stop	XmlProcessing ut:Configuration	ProvisioningDocument	Informational		
+Microsoft-Windows-NetworkProvisioning	2002	0	ProvisioningDocument(Boolean BoolResult)		XmlProcessing ut:Configuration	ProvisioningDocument	Informational		
+Microsoft-Windows-NetworkProvisioning	4001	0	RefreshTask(Int32 Result)		XmlProcessing ut:Configuration	RefreshTask	Informational		
+Microsoft-Windows-NetworkProvisioning	5000	0	ActivationTask(UInt32 ActivationMethod, UnicodeString CarrierId, UnicodeString SubscriberId, UnicodeString Params)		ActivationTask ut:Configuration	ActivationTask	Informational		
+Microsoft-Windows-NetworkProvisioning	5001	0	ActivationTask5001(UInt32 ActivationMethod, UnicodeString CarrierId, UnicodeString SubscriberId, UnicodeString Params, Int32 ErrorCode)		ActivationTask ut:Configuration	ActivationTask	Informational		
+Microsoft-Windows-NetworkProvisioning	5002	0	ActivationTask5002(GUID InterfaceGuid)		ActivationTask ut:Configuration	ActivationTask	Warning		
+Microsoft-Windows-NetworkProvisioning	5003	0	ActivationTask5003(GUID InterfaceGuid, UInt32 RadioState, Int32 ErrorCode)		ActivationTask ut:Configuration	ActivationTask	Error		
+Microsoft-Windows-NetworkProvisioning	5004	0	ActivationTask5004(GUID InterfaceGuid, UInt32 RegisterState)		ActivationTask ut:Configuration	ActivationTask	Error		
+Microsoft-Windows-NetworkProvisioning	5005	0	ActivationTask5005(GUID InterfaceGuid, UInt32 ProfileType, Int32 ErrorCode)		ActivationTask ut:Configuration	ActivationTask	Error		
+Microsoft-Windows-NetworkProvisioning	5006	0	ActivationTask5006(GUID InterfaceGuid, UnicodeString ProfileName, Int32 ErrorCode)		ActivationTask ut:Configuration	ActivationTask	Error		
+Microsoft-Windows-NetworkProvisioning	5007	0	ActivationTask5007(GUID InterfaceGuid, Int32 ErrorCode)		ActivationTask ut:Configuration	ActivationTask	Error		
+Microsoft-Windows-NetworkProvisioning	6000	0	PurgeTask()		PurgeTask ut:Configuration	PurgeTask	Informational		
+Microsoft-Windows-NetworkProvisioning	6001	0	PurgeTask6001(Int32 ErrorCode)		PurgeTask ut:Configuration	PurgeTask	Informational		
+Microsoft-Windows-NetworkProvisioning	6002	0	PurgeTask6002(UnicodeString CarrierId, UnicodeString SubscriberId, UnicodeString AppId)		PurgeTask ut:Configuration	PurgeTask	Informational		
+Microsoft-Windows-NetworkProvisioning	9000	0	InvokeHandlersStart(UnicodeString HandlerName)	Start	XmlProcessing ut:Configuration	InvokeHandlers	Informational		
+Microsoft-Windows-NetworkProvisioning	9001	0	InvokeHandlersStop(UnicodeString HandlerName, Int32 ErrorCode, Boolean HasResults)	Stop	XmlProcessing ut:Configuration	InvokeHandlers	Informational		
+Microsoft-Windows-NetworkProvisioning	9100	0	InvokeHandlersStart9100(UnicodeString HandlerName)	Start	Purge ut:Configuration	InvokeHandlers	Informational		
+Microsoft-Windows-NetworkProvisioning	9101	0	InvokeHandlersStop9101(UnicodeString HandlerName)	Stop	Purge ut:Configuration	InvokeHandlers	Informational		
+Microsoft-Windows-NetworkProvisioning	10000	0	ApplyProfiles(UInt32 ServiceName, Int32 ErrorCode)		Diagnostics Service ut:Configuration	ApplyProfiles	Warning		
+Microsoft-Windows-NetworkProvisioning	10001	0	ApplyProfiles10001(GUID InterfaceGuid, UnicodeString ProfileName, Int32 ErrorCode, UInt32 ReasonCode)		ut:Configuration	ApplyProfiles	Warning		
+Microsoft-Windows-NetworkProvisioning	10002	0	ApplyProfiles10002(GUID InterfaceGuid, UnicodeString ProfileName, Int32 ErrorCode, UInt32 ReasonCode)		Diagnostics Profile ut:Configuration	ApplyProfiles	Warning		
+Microsoft-Windows-NetworkProvisioning	10003	0	ApplyProfiles10003(GUID InterfaceGuid, UnicodeString ProfileName, Int32 ErrorCode, UInt32 Parameter)		Diagnostics Profile Metadata ut:Configuration	ApplyProfiles	Warning		
+Microsoft-Windows-NetworkProvisioning	11000	0	Notifications(UInt64 Position, UnicodeString RulesXml, UnicodeString Reason)		Diagnostics Notifications ut:Configuration	Notifications	Warning		
+Microsoft-Windows-NetworkProvisioning	20000	0	ProvisioningAgent(UnicodeString CallerAppId, Int32 ErrorCode)		Diagnostics ProvisioningAgent ut:Configuration	ProvisioningAgent	Informational		

@@ -1,0 +1,21 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Diagnosis-PCW	1	0	task_0(UInt32 Error, GUID ProviderGuid)		errors	task_0	Always		
+Microsoft-Windows-Diagnosis-PCW	2	0	task_02(UInt32 Error, GUID ProviderGuid, GUID CounterSetGuid)		errors	task_0	Always		
+Microsoft-Windows-Diagnosis-PCW	3	0	task_03(UInt32 Error, GUID CounterSetGuid, UnicodeString InstanceName, UInt32 InstanceId)		errors	task_0	Always		
+Microsoft-Windows-Diagnosis-PCW	4	0	task_04(GUID ProviderGuid, UInt32 CallbackReason, UnicodeString MachineName, UInt32 MachineNameSize)		callouts	task_0	Always		
+Microsoft-Windows-Diagnosis-PCW	5	0	task_05(UInt32 Status)		callouts	task_0	Always		
+Microsoft-Windows-Diagnosis-PCW	6	0	task_06(GUID ProviderGuid, UInt32 Size)		notifications	task_0	Always		
+Microsoft-Windows-Diagnosis-PCW	7	0	task_07(GUID ProviderGuid, UInt32 RequestCode)		notifications	task_0	Always		
+Microsoft-Windows-Diagnosis-PCW	8	0	task_08(GUID ProviderGuid, UInt32 Status, UInt32 Size)		notifications	task_0	Always		
+Microsoft-Windows-Diagnosis-PCW	9	0	task_09(UInt32 Status)		notifications	task_0	Always		
+Microsoft-Windows-Diagnosis-PCW	13	0	task_013(GUID ProviderGuid, UInt64 Id)		queries	task_0	Always		
+Microsoft-Windows-Diagnosis-PCW	16	0	task_016(UInt32 Error, GUID CounterSetGuid, UnicodeString InstanceName, UInt32 InstanceId, UInt32 CounterId)		errors	task_0	Always		
+Microsoft-Windows-Diagnosis-PCW	17	0	task_017(UInt32 Error, GUID ProviderGuid)		errors	task_0	Always		
+Microsoft-Windows-Diagnosis-PCW	18	0	task_018(UInt32 Error, GUID CounterSetGuid, UnicodeString InstanceName, UInt32 InstanceId)		errors	task_0	Always		
+Microsoft-Windows-Diagnosis-PCW	19	0	task_019(UInt32 Error, GUID CounterSetGuid, UnicodeString InstanceName, UInt32 InstanceId)		errors	task_0	Always		
+Microsoft-Windows-Diagnosis-PCW	20	0	task_020(UInt32 ErrorCode, UInt32 Phase)		errors	task_0	Always		
+Microsoft-Windows-Diagnosis-PCW	21	0	task_021(UInt32 ErrorCode, UInt16 CounterSetNameLength, UnicodeString CounterSetName)		errors	task_0	Always		
+Microsoft-Windows-Diagnosis-PCW	22	0	task_022(UInt32 ErrorCode, UInt16 CounterSetNameLength, UnicodeString CounterSetName, UInt16 InstanceNameLength, UnicodeString InstanceName)		errors	task_0	Always		
+Microsoft-Windows-Diagnosis-PCW	23	0	task_023(UInt32 ErrorCode, UInt16 CounterSetNameLength, UnicodeString CounterSetName, UInt16 InstanceNameLength, UnicodeString InstanceName)		errors	task_0	Always		
+Microsoft-Windows-Diagnosis-PCW	24	0	task_024(UInt32 ErrorCode, UInt32 FunctionIndex)		errors	task_0	Always		
+Microsoft-Windows-Diagnosis-PCW	25	0	task_025(GUID ProviderGuid, GUID CounterSetGuid)		errors	task_0	Always		

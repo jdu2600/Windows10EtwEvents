@@ -1,0 +1,119 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Bits-Client	0	0	task_0Start()	Start		task_0	Informational		
+Microsoft-Windows-Bits-Client	1	0	task_0Resume(GUID JobGuid, UnicodeString Title)	Resume		task_0	Informational		
+Microsoft-Windows-Bits-Client	2	0	task_0Suspend(GUID JobGuid, UnicodeString Title)	Suspend		task_0	Informational		
+Microsoft-Windows-Bits-Client	3	0	task_0(UnicodeString string, UnicodeString string2, UnicodeString string3)			task_0	Informational		
+Microsoft-Windows-Bits-Client	3	1	task_0_V1(UnicodeString jobTitle, GUID jobId, UnicodeString jobOwner)			task_0	Informational		
+Microsoft-Windows-Bits-Client	4	0	task_04(UnicodeString User, UnicodeString jobTitle, GUID jobId, UnicodeString jobOwner, UInt64 fileCount)			task_0	Informational		
+Microsoft-Windows-Bits-Client	4	1	task_04_V1(UnicodeString User, UnicodeString jobTitle, GUID jobId, UnicodeString jobOwner, UInt64 fileCount, UInt64 bytesTransferred, UInt64 bytesTransferredFromPeer)			task_0	Informational		
+Microsoft-Windows-Bits-Client	5	0	task_05(UnicodeString User, UnicodeString jobTitle, GUID jobId, UnicodeString jobOwner, UInt64 fileCount)			task_0	Informational		
+Microsoft-Windows-Bits-Client	10	0	peerneighborlist(server)_listeningforclientsStart()	Start		peerneighborlist(server)_listeningforclients	Informational		
+Microsoft-Windows-Bits-Client	11	0	peerneighborlist(server)_listeningforclientsStop(UInt32 ErrorCode)	Stop		peerneighborlist(server)_listeningforclients	Error		
+Microsoft-Windows-Bits-Client	12	0	peerneighborlist(server)_listeningforclientsStop12()	Stop		peerneighborlist(server)_listeningforclients	Informational		
+Microsoft-Windows-Bits-Client	13	0	listenviaWS_DiscoveryforserverannouncementsStart()	Start		listenviaWS_Discoveryforserverannouncements	Informational		
+Microsoft-Windows-Bits-Client	14	0	listenviaWS_DiscoveryforserverannouncementsStop(UInt32 ErrorCode)	Stop		listenviaWS_Discoveryforserverannouncements	Error		
+Microsoft-Windows-Bits-Client	15	0	listenviaWS_DiscoveryforserverannouncementsStop15()	Stop		listenviaWS_Discoveryforserverannouncements	Informational		
+Microsoft-Windows-Bits-Client	16	0	listenviaWS_Discoveryforserverannouncements()			listenviaWS_Discoveryforserverannouncements	Informational		
+Microsoft-Windows-Bits-Client	17	0	task_017(Boolean peerCacheEnabled, Boolean peerClientEnabled, Boolean peerServerEnabled, UInt32 maxPeers, UInt32 maxClients, UInt32 maxContentAge, UInt32 maxCacheSize, UInt32 minCacheDiskSize, UnicodeString cacheDenyUrls, UInt8 denyUrlCount, UnicodeString denyUrls)			task_0	Informational		
+Microsoft-Windows-Bits-Client	18	0	listenviaWS_DiscoveryforserverannouncementsENYINGORIGNORINGANINCOMINGPACKETenyingorignoringanincomingpacket(UnicodeString packet, UInt32 hr, UnicodeString fqdn, Binary sourceAddress, UInt8 addressCount, UnicodeString addresses)	denyingorignoringanincomingpacket		listenviaWS_Discoveryforserverannouncements	Warning		
+Microsoft-Windows-Bits-Client	19	0	listenviaWS_DiscoveryforserverannouncementsEPLYINGTOANINCOMINGREQUESTeplyingtoanincomingrequest(UnicodeString fqdn, Boolean authenticated, Boolean online, UInt8 addressCount, UInt16 addressLength)	replyingtoanincomingrequest		listenviaWS_Discoveryforserverannouncements	Informational		
+Microsoft-Windows-Bits-Client	20	0	listenviaWS_DiscoveryforserverannouncementsEPLYINGTOANINCOMINGREQUESTeplyingtoanincomingrequest20(UnicodeString fqdn, Boolean authenticated, Boolean online, UInt8 addressCount, UInt16 addressLength)	replyingtoanincomingrequest		listenviaWS_Discoveryforserverannouncements	Informational		
+Microsoft-Windows-Bits-Client	21	0	listenviaWS_Discoveryforserverannouncements21(UnicodeString fqdn, Boolean authenticated, Boolean online, UInt8 addressCount, UInt16 addressLength)			listenviaWS_Discoveryforserverannouncements	Informational		
+Microsoft-Windows-Bits-Client	22	0	listenviaWS_Discoveryforserverannouncements22(UnicodeString fqdn, Boolean authenticated, Boolean online, UInt8 addressCount, UInt16 addressLength)			listenviaWS_Discoveryforserverannouncements	Informational		
+Microsoft-Windows-Bits-Client	23	0	listenviaWS_Discoveryforserverannouncements23(SID user)			listenviaWS_Discoveryforserverannouncements	Informational		
+Microsoft-Windows-Bits-Client	24	0	peerneighborlist(server)_listeningforclientsEPLYINGTOANINCOMINGREQUESTeplyingtoanincomingrequest(Binary sourceAddress)	replyingtoanincomingrequest		peerneighborlist(server)_listeningforclients	Informational		
+Microsoft-Windows-Bits-Client	25	0	peerneighborlist(server)_listeningforclientsENYINGORIGNORINGANINCOMINGPACKETenyingorignoringanincomingpacket(Binary sourceAddress, UnicodeString packet, UInt32 hr)	denyingorignoringanincomingpacket		peerneighborlist(server)_listeningforclients	Warning		
+Microsoft-Windows-Bits-Client	27	0	apeersearchforaparticularURLStart(GUID searchId, GUID jobId, UnicodeString url, FILETIME timestamp)	Start		apeersearchforaparticularURL	Verbose		
+Microsoft-Windows-Bits-Client	28	0	apeersearchforaparticularURLStop(GUID searchId, GUID jobId)	Stop		apeersearchforaparticularURL	Informational		
+Microsoft-Windows-Bits-Client	29	0	aparticularrequestwithinapeersearchStart(GUID requestId, GUID searchId, UnicodeString peer)	Start		aparticularrequestwithinapeersearch	Verbose		
+Microsoft-Windows-Bits-Client	30	0	aparticularrequestwithinapeersearchStop(GUID requestId, GUID SearchId, UInt32 hr)	Stop		aparticularrequestwithinapeersearch	Informational		
+Microsoft-Windows-Bits-Client	31	0	aparticularrequestwithinapeersearchStop31(GUID requestId, GUID SearchId, UInt32 hr)	Stop		aparticularrequestwithinapeersearch	Error		
+Microsoft-Windows-Bits-Client	32	0	aparticularrequestwithinapeersearch(GUID requestId, GUID id, UnicodeString url, UInt16 rangecount, Int16 Range)			aparticularrequestwithinapeersearch	Informational		
+Microsoft-Windows-Bits-Client	33	0	peerneighborlist(server)_listeningforclients(UInt8 count, UnicodeString addresses)			peerneighborlist(server)_listeningforclients	Informational		
+Microsoft-Windows-Bits-Client	34	0	task_034(UnicodeString jobName, GUID jobId, UInt64 FileCount, UInt32 jobTransferPolicy, UInt32 globalTransferPolicy)			task_0	Warning		
+Microsoft-Windows-Bits-Client	37	0	task_037(UInt32 nlmCost, UInt32 usage, UInt32 cap, UInt32 isThrottled, UInt32 isOvercap, UInt32 isRoaming, UInt32 globalTransferPolicy)			task_0	Warning		
+Microsoft-Windows-Bits-Client	59	0	task_0Start59(GUID transferId, UnicodeString name, GUID Id, UnicodeString url, UnicodeString peer, FILETIME fileTime, UInt64 fileLength, UInt64 bytesTotal, UInt64 bytesTransferred)	Start		task_0	Informational		
+Microsoft-Windows-Bits-Client	59	1	task_0Start59_V1(GUID transferId, UnicodeString name, GUID Id, UnicodeString url, UnicodeString peer, FILETIME fileTime, UInt64 fileLength, UInt64 bytesTotal, UInt64 bytesTransferred, UInt64 bytesTransferredFromPeer)	Start		task_0	Informational		
+Microsoft-Windows-Bits-Client	60	0	task_0Stop(GUID transferId, UnicodeString name, GUID Id, UnicodeString url, UnicodeString peer, UInt32 hr, FILETIME fileTime, UInt64 fileLength, UInt64 bytesTotal, UInt64 bytesTransferred, UnicodeString proxy)	Stop		task_0	Informational		
+Microsoft-Windows-Bits-Client	60	1	task_0Stop_V1(GUID transferId, UnicodeString name, GUID Id, UnicodeString url, UnicodeString peer, UInt32 hr, FILETIME fileTime, UInt64 fileLength, UInt64 bytesTotal, UInt64 bytesTransferred, UnicodeString proxy, UInt64 peerProtocolFlags, UInt64 bytesTransferredFromPeer, UInt32 AdditionalInfoHr, UInt32 PeerContextInfo, UInt64 bandwidthLimit, Boolean ignoreBandwidthLimitsOnLan)	Stop		task_0	Informational		
+Microsoft-Windows-Bits-Client	61	0	task_0Stop61(GUID transferId, UnicodeString name, GUID Id, UnicodeString url, UnicodeString peer, UInt32 hr, FILETIME fileTime, UInt64 fileLength, UInt64 bytesTotal, UInt64 bytesTransferred, UnicodeString proxy)	Stop		task_0	Warning		
+Microsoft-Windows-Bits-Client	61	1	task_0Stop61_V1(GUID transferId, UnicodeString name, GUID Id, UnicodeString url, UnicodeString peer, UInt32 hr, FILETIME fileTime, UInt64 fileLength, UInt64 bytesTotal, UInt64 bytesTransferred, UnicodeString proxy, UInt64 peerProtocolFlags, UInt64 bytesTransferredFromPeer, UInt32 AdditionalInfoHr, UInt32 PeerContextInfo, UInt64 bandwidthLimit, Boolean ignoreBandwidthLimitsOnLan)	Stop		task_0	Warning		
+Microsoft-Windows-Bits-Client	62	0	task_062(UnicodeString Title, UnicodeString Owner, UnicodeString Url, GUID Id)			task_0	Warning		
+Microsoft-Windows-Bits-Client	63	0	task_063(UnicodeString Job, UnicodeString Url, UnicodeString Pgm, UInt32 hr)			task_0	Warning		
+Microsoft-Windows-Bits-Client	64	0	task_064(UnicodeString Job, UnicodeString Url, UnicodeString Pgm, UInt32 hr)			task_0	Warning		
+Microsoft-Windows-Bits-Client	70	0	task_0Start70(Binary clientAddress)	Start		task_0	Informational		
+Microsoft-Windows-Bits-Client	71	0	task_071(UnicodeString url, FILETIME timestamp)			task_0	Informational		
+Microsoft-Windows-Bits-Client	72	0	task_072(GUID id, UnicodeString url, UInt16 rangecount, UInt8 Range)			task_0	Informational		
+Microsoft-Windows-Bits-Client	73	0	task_073(UInt32 ErrorCode)			task_0	Error		
+Microsoft-Windows-Bits-Client	74	0	task_074(UInt16 status)			task_0	Error		
+Microsoft-Windows-Bits-Client	75	0	task_0Stop75()	Stop		task_0	Informational		
+Microsoft-Windows-Bits-Client	76	0	task_0Send()	Send		task_0	Informational		
+Microsoft-Windows-Bits-Client	77	0	task_0Start77()	Start		task_0	Informational		
+Microsoft-Windows-Bits-Client	78	0	task_078(UInt32 ErrorCode)			task_0	Error		
+Microsoft-Windows-Bits-Client	79	0	task_079()			task_0	Informational		
+Microsoft-Windows-Bits-Client	80	0	task_080()			task_0	Informational		
+Microsoft-Windows-Bits-Client	81	0	task_081(UInt32 ErrorCode)			task_0	Error		
+Microsoft-Windows-Bits-Client	82	0	task_082(UnicodeString Title, UInt32 PolicyValue)			task_0	Informational		
+Microsoft-Windows-Bits-Client	83	0	task_083(UnicodeString Title, UInt32 PolicyValue)			task_0	Informational		
+Microsoft-Windows-Bits-Client	101	0	aparticularrequestwithinapeersearchStop101(GUID requestId, UnicodeString responseXml)	Stop		aparticularrequestwithinapeersearch	Warning		
+Microsoft-Windows-Bits-Client	102	0	task_0102(GUID xferId, UInt8 count, Int8 ranges)			task_0	Verbose		
+Microsoft-Windows-Bits-Client	200	0	task_0200(UnicodeString url, UInt32 hr, UnicodeString proxy, UnicodeString job, UnicodeString owner, GUID jobId, GUID xferId, UnicodeString proxyServerList)			task_0	Warning		
+Microsoft-Windows-Bits-Client	201	0	task_0201(UnicodeString job, GUID jobId, UnicodeString jobOwner, UnicodeString url, GUID transferId, UnicodeString proxyServerList, UnicodeString proxyBypassList, UInt32 error)			task_0	Warning		
+Microsoft-Windows-Bits-Client	202	0	task_0202(UnicodeString jobName, UnicodeString jobOwner, GUID jobId, UnicodeString url, GUID xferId, UnicodeString proxy, UInt32 hr, UInt64 fileLength, UnicodeString HTTPVersion, UnicodeString URLRange)			task_0	Error		
+Microsoft-Windows-Bits-Client	203	0	task_0203(UnicodeString string, UnicodeString string2, UnicodeString string3)			task_0	Informational		
+Microsoft-Windows-Bits-Client	203	1	task_0203_V1(UnicodeString server, UnicodeString job, UnicodeString url, UnicodeString scheme, UnicodeString user)			task_0	Informational		
+Microsoft-Windows-Bits-Client	204	0	task_0204(UnicodeString string, UnicodeString string2, UnicodeString string3)			task_0	Error		
+Microsoft-Windows-Bits-Client	204	1	task_0204_V1(UnicodeString server, UnicodeString job, UnicodeString url, UnicodeString scheme, UnicodeString user)			task_0	Error		
+Microsoft-Windows-Bits-Client	205	0	task_0205(UInt8 profileType, FILETIME currSlotStartTime, UInt64 currSlotBandwidthLimit, FILETIME nextSlotStartTime, UInt64 nextSlotBandwidthLimit)			task_0	Verbose		
+Microsoft-Windows-Bits-Client	206	0	task_0206(UnicodeString jobName, UnicodeString url)			task_0	Warning		
+Microsoft-Windows-Bits-Client	207	0	task_0207(UnicodeString jobName, UnicodeString url)			task_0	Warning		
+Microsoft-Windows-Bits-Client	208	0	task_0208(UnicodeString jobName, UnicodeString url)			task_0	Informational		
+Microsoft-Windows-Bits-Client	209	0	task_0209(UnicodeString jobName, GUID jobId, UInt32 isRoaming)			task_0	Informational		
+Microsoft-Windows-Bits-Client	210	0	task_0210(UnicodeString jobName, UnicodeString url)			task_0	Warning		
+Microsoft-Windows-Bits-Client	211	0	task_0211(GUID JobGuid, UnicodeString Title, UInt32 ErrorCode, UInt32 Message)			task_0	Error		
+Microsoft-Windows-Bits-Client	212	0	task_0212(UInt32 SystemEvent)			task_0	Verbose		
+Microsoft-Windows-Bits-Client	213	0	task_0213(UnicodeString jobName, GUID jobId, UInt64 FileCount, UInt32 BlockReasonErrorCode)			task_0	Warning		
+Microsoft-Windows-Bits-Client	281	0	task_0281()			task_0	Verbose		
+Microsoft-Windows-Bits-Client	282	0	task_0282()			task_0	Verbose		
+Microsoft-Windows-Bits-Client	283	0	task_0283()			task_0	Verbose		
+Microsoft-Windows-Bits-Client	284	0	task_0284()			task_0	Verbose		
+Microsoft-Windows-Bits-Client	285	0	task_0285()			task_0	Verbose		
+Microsoft-Windows-Bits-Client	286	0	task_0286()			task_0	Verbose		
+Microsoft-Windows-Bits-Client	287	0	task_0287()			task_0	Verbose		
+Microsoft-Windows-Bits-Client	288	0	task_0288()			task_0	Verbose		
+Microsoft-Windows-Bits-Client	289	0	task_0289()			task_0	Verbose		
+Microsoft-Windows-Bits-Client	290	0	task_0290()			task_0	Verbose		
+Microsoft-Windows-Bits-Client	291	0	task_0291()			task_0	Verbose		
+Microsoft-Windows-Bits-Client	301	0	task_0301()			task_0	Verbose		
+Microsoft-Windows-Bits-Client	302	0	task_0302()			task_0	Warning		
+Microsoft-Windows-Bits-Client	303	0	task_0303()			task_0	Verbose		
+Microsoft-Windows-Bits-Client	304	0	task_0304()			task_0	Verbose		
+Microsoft-Windows-Bits-Client	305	0	task_0305()			task_0	Verbose		
+Microsoft-Windows-Bits-Client	306	0	task_0306()			task_0	Verbose		
+Microsoft-Windows-Bits-Client	307	0	task_0307(Double number)			task_0	Warning		
+Microsoft-Windows-Bits-Client	308	0	task_0308(Double number)			task_0	Warning		
+Microsoft-Windows-Bits-Client	309	0	task_0309()			task_0	Warning		
+Microsoft-Windows-Bits-Client	310	0	task_0310(UInt32 ErrorCode)			task_0	Warning		
+Microsoft-Windows-Bits-Client	311	0	task_0311(GUID JobId, UnicodeString JobName, UnicodeString url, UInt32 ErrorCode, UInt8 ErrorContext, UInt64 bytesTransferredFromPeer, UInt64 PeerProtocolFlags)			task_0	Warning		
+Microsoft-Windows-Bits-Client	312	0	task_0312(UInt32 ErrorCode)			task_0	Warning		
+Microsoft-Windows-Bits-Client	16384	0	task_016384(GUID Id, UnicodeString Title, UnicodeString Owner, UnicodeString User)			task_0	Informational		
+Microsoft-Windows-Bits-Client	16385	0	task_016385(GUID Id, UnicodeString Title, UnicodeString FileList)			task_0	Warning		
+Microsoft-Windows-Bits-Client	16386	0	task_016386(GUID Id, UnicodeString Title, UnicodeString FileList)			task_0	Warning		
+Microsoft-Windows-Bits-Client	16387	0	task_016387(GUID Id, UnicodeString Title, UnicodeString Owner, UnicodeString PropertyName)			task_0	Informational		
+Microsoft-Windows-Bits-Client	16388	0	task_016388(GUID Id, UnicodeString Title, UnicodeString Owner, UnicodeString User)			task_0	Informational		
+Microsoft-Windows-Bits-Client	16389	0	task_016389(GUID Id, UnicodeString Title, UnicodeString Owner, UInt32 DayCount)			task_0	Informational		
+Microsoft-Windows-Bits-Client	16390	0	task_016390(GUID Id, UnicodeString Title, UnicodeString Owner, UInt32 RetryWaitTime)			task_0	Warning		
+Microsoft-Windows-Bits-Client	16391	0	task_016391()			task_0	Error		
+Microsoft-Windows-Bits-Client	16392	0	task_016392(UInt32 ErrorCode)			task_0	Error		
+Microsoft-Windows-Bits-Client	16393	0	task_016393(UInt32 ErrorCode)			task_0	Warning		
+Microsoft-Windows-Bits-Client	16394	0	task_016394()			task_0	Informational		
+Microsoft-Windows-Bits-Client	16395	0	task_016395()			task_0	Error		
+Microsoft-Windows-Bits-Client	16396	0	task_016396(UnicodeString rule, Boolean enabled, UInt32 status)			task_0	Error		
+Microsoft-Windows-Bits-Client	16397	0	task_016397(UnicodeString entityName, UInt32 currentSize, UInt32 currentLimit)			task_0	Warning		
+Microsoft-Windows-Bits-Client	16398	0	task_016398(UnicodeString entityName, UInt32 currentSize, UInt32 currentLimit)			task_0	Error		
+Microsoft-Windows-Bits-Client	16400	0	task_016400(UnicodeString entityName, UInt32 currentSize, UInt32 currentLimit)			task_0	Error		
+Microsoft-Windows-Bits-Client	16401	0	task_016401(UnicodeString entityName, UInt32 currentSize, UInt32 currentLimit)			task_0	Error		
+Microsoft-Windows-Bits-Client	16402	0	task_016402(UnicodeString entityName, UInt32 currentSize, UInt32 currentLimit)			task_0	Error		
+Microsoft-Windows-Bits-Client	16404	0	task_016404(UnicodeString function, UInt32 line, UInt32 hr)			task_0	Error		
+Microsoft-Windows-Bits-Client	16405	0	task_016405(UnicodeString Key, UnicodeString SubKeyOrValueName)			task_0	Error		
+Microsoft-Windows-Bits-Client	17005	0	task_017005(UnicodeString string, UnicodeString string2, UnicodeString string3)			task_0	Error		

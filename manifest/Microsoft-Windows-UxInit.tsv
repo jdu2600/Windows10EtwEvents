@@ -1,0 +1,12 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-UxInit	1	0	CVSCache_Initializing(UnicodeString CacheFileName)			CVSCache_Initializing	Informational		
+Microsoft-Windows-UxInit	2	0	LoadFromCacheStart()	Start		LoadFromCache	Informational		
+Microsoft-Windows-UxInit	3	0	LoadFromCacheStop(Int32 hr)	Stop		LoadFromCache	Informational		
+Microsoft-Windows-UxInit	4	0	WriteToCacheStart()	Start		WriteToCache	Informational		
+Microsoft-Windows-UxInit	5	0	WriteToCacheStop(Int32 hr)	Stop		WriteToCache	Informational		
+Microsoft-Windows-UxInit	6	0	InitializeUserThemeStart(Int32 monitorConfig, Boolean fPolicyCheckOnly)	Start		InitializeUserTheme	Informational		
+Microsoft-Windows-UxInit	7	0	InitializeUserThemeStart7(Int32 monitorConfig, Boolean fPolicyCheckOnly)	Start		InitializeUserTheme	Informational		
+Microsoft-Windows-UxInit	8	0	ReuseExistingThemeData(Int32 monitorConfig, Int32 systemDpi, Boolean IsHighContrastMode, Int32 hr)			ReuseExistingThemeData	Informational		
+Microsoft-Windows-UxInit	9	0	ApplyNewThemeData(Int32 monitorConfig, Int32 systemDpi, Boolean IsHighContrastMode, Int32 hr)			ApplyNewThemeData	Informational		
+Microsoft-Windows-UxInit	10	0	LoadThemeAsSystem(Int32 monitorConfig, Int32 systemDpi, Boolean IsHighContrastMode, Int32 hr)			LoadThemeAsSystem	Informational		
+Microsoft-Windows-UxInit	11	0	ThemeServiceStart()			ThemeServiceStart	Informational		

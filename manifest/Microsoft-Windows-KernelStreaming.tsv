@@ -1,0 +1,16 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-KernelStreaming	200	0	KS_PnpAddDeviceStart()	Start		KS_PnpAddDevice	Informational		
+Microsoft-Windows-KernelStreaming	201	0	KS_PnpAddDeviceStop()	Stop		KS_PnpAddDevice	Informational		
+Microsoft-Windows-KernelStreaming	202	0	KS_StreamingRequestStart(Pointer pIrp)	Start		KS_StreamingRequest	Informational		
+Microsoft-Windows-KernelStreaming	203	0	KS_StreamingRequestStop(Pointer pIrp)	Stop		KS_StreamingRequest	Informational		
+Microsoft-Windows-KernelStreaming	204	0	KS_CameraGrabStart(Pointer ProcessId, UInt32 PinId, Pointer FilterAddress)	Start		KS_CameraGrab	Informational		
+Microsoft-Windows-KernelStreaming	205	0	KS_CameraGrabStop(HexInt32 Status)	Stop		KS_CameraGrab	Informational		
+Microsoft-Windows-KernelStreaming	206	0	KS_WNF()			KS_WNF	Informational		
+Microsoft-Windows-KernelStreaming	207	0	KS_WNF207()			KS_WNF	Informational		
+Microsoft-Windows-KernelStreaming	208	0	KS_WNFPinState(Pointer FilterExt, UInt32 PinState)			KS_WNFPinState	Informational		
+Microsoft-Windows-KernelStreaming	209	0	KS_WNFNotification(UInt32 EntryCount)			KS_WNFNotification	Informational		
+Microsoft-Windows-KernelStreaming	210	0	KS_DisplayOff()			KS_DisplayOff	Informational		
+Microsoft-Windows-KernelStreaming	211	0	KS_IoProbeandLockStart(HexInt32 PinId, UInt32 BufSize)	Start		KS_IoProbeandLock	Informational		
+Microsoft-Windows-KernelStreaming	212	0	KS_IoProbeandLockStop(HexInt32 PinId, UInt32 BufSize)	Stop		KS_IoProbeandLock	Informational		
+Microsoft-Windows-KernelStreaming	213	0	KS_QueryInterfaceStart(Pointer pKsDevice, Pointer pIrp, GUID InterfaceGuid, UInt32 Status)	Start		KS_QueryInterface	Informational		
+Microsoft-Windows-KernelStreaming	214	0	KS_QueryInterfaceStop(Pointer pKsDevice, Pointer pIrp, GUID InterfaceGuid, UInt32 Status)	Stop		KS_QueryInterface	Informational		

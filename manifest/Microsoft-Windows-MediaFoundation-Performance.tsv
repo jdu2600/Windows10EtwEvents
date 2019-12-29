@@ -1,0 +1,496 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-MediaFoundation-Performance	3062	0	OptimizationFlags(UInt32 dwType, UInt32 dwConfig)			OptimizationFlags	Informational		
+Microsoft-Windows-MediaFoundation-Performance	3063	0	CascadedScaling(UInt32 dwScaleX, UInt32 dwScaleY, UInt32 dwWindowX, UInt32 dwWindowY)			CascadedScaling	Informational		
+Microsoft-Windows-MediaFoundation-Performance	3067	0	PerfTrack:AudioCaptureStartRequest(Pointer object)			PerfTrack:AudioCaptureStartRequest	Informational		
+Microsoft-Windows-MediaFoundation-Performance	3068	0	PerfTrack:VideoCaptureStartRequest(Pointer object)			PerfTrack:VideoCaptureStartRequest	Informational		
+Microsoft-Windows-MediaFoundation-Performance	3069	0	PerfTrack:AudioCaptureFirstSampleReceived(Pointer object)			PerfTrack:AudioCaptureFirstSampleReceived	Informational		
+Microsoft-Windows-MediaFoundation-Performance	3070	0	PerfTrack:VideoCaptureFirstSampleReceived(Pointer object)			PerfTrack:VideoCaptureFirstSampleReceived	Informational		
+Microsoft-Windows-MediaFoundation-Performance	3071	0	MediaProc:DynamicTopologyChangeStart(GUID subtype)	Start		MediaProc:DynamicTopologyChange	Informational		
+Microsoft-Windows-MediaFoundation-Performance	3072	0	MediaProc:DynamicTopologyChangeStop(UInt32 result)	Stop		MediaProc:DynamicTopologyChange	Informational		
+Microsoft-Windows-MediaFoundation-Performance	3073	0	MediaProc:DynamicTransformRemovalStart(Pointer object)	Start		MediaProc:DynamicTransformRemoval	Informational		
+Microsoft-Windows-MediaFoundation-Performance	3074	0	MediaProc:DynamicTransformRemovalStop(Pointer object)	Stop		MediaProc:DynamicTransformRemoval	Informational		
+Microsoft-Windows-MediaFoundation-Performance	3075	0	MediaProc:DynamicTransformInsertion(Pointer object)			MediaProc:DynamicTransformInsertion	Informational		
+Microsoft-Windows-MediaFoundation-Performance	3076	0	MediaProc:Sink_triggeredformatchange(Pointer object)			MediaProc:Sink_triggeredformatchange	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4000	0	ObjectStart(AnsiString tag, Pointer object, UInt8 objectType)	Start		Object	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4001	0	ObjectStop(AnsiString tag, Pointer object, UInt8 objectType)	Stop		Object	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4002	0	AudioStarvation(AnsiString tag, Pointer object, UInt64 byteCount)			AudioStarvation	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4003	0	VideoFrameGlitch(AnsiString tag, Pointer object, Pointer sample, Int64 timestamp, Int64 targetTime, Int64 offset)			VideoFrameGlitch	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4004	0	EvrQueue(AnsiString tag, Pointer object, Pointer sample, Int64 targetQPC, Int64 submittedQPC)			EvrQueue	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4005	0	EvrDWMDequeue(AnsiString tag, Pointer object, Pointer sample, Int64 originalTargetQPC, Int64 targetQPC, Int64 submittedQPC, Int64 now, Int64 presentTime, UInt64 dwmFramesPresented, Int64 dwmRefreshStartCount, UInt32 buffersEmpty, Int64 refreshFrameCount)			EvrDWMDequeue	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4006	0	EvrPresent(AnsiString tag, Pointer object, UInt32 cPresentCount, HexInt32 dwFlags, UInt32 hrResult, UInt64 llPresentTime)			EvrPresent	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4007	0	EvrMonitorEstimate(AnsiString tag, Pointer object, UInt32 screenHeight, Int32 frameHeightx1000, Int32 frameRatex1000)			EvrMonitorEstimate	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4008	0	EvrSleep(AnsiString tag, Pointer object, Pointer hThread, UInt8 sleepType, Int32 width, Int32 height, HexInt32 format, UInt32 retryCount)			EvrSleep	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4009	0	DataDrop(AnsiString tag, Pointer object, UInt8 dataType, Int64 sampleTime, UInt32 bytesDropped, HexInt32 dropReasons)			DataDrop	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4010	0	Clock(AnsiString tag, Pointer object, Int64 time)			Clock	Verbose		
+Microsoft-Windows-MediaFoundation-Performance	4011	0	PredictedVideoSampleTime(AnsiString tag, Pointer object, Int64 time)			PredictedVideoSampleTime	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4012	0	NewStream(AnsiString tag, Pointer object, UInt8 streamType)			NewStream	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4013	0	MediaTypeChange(AnsiString tag, Pointer object, Pointer stream, UInt32 byteCount, Binary type)			MediaTypeChange	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4014	0	TransformCreate(AnsiString tag, Pointer object, GUID clsid, Pointer transform, Boolean userTransform)			TransformCreate	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4015	0	BufferInput(AnsiString tag, Pointer object, UInt8 objectCategory, Pointer stream, Int64 timestamp, Pointer clock, Pointer sample, UInt32 bufferSize, UInt32 sampleSize, Int64 duration)	Input		Buffer	Verbose		
+Microsoft-Windows-MediaFoundation-Performance	4016	0	BufferOutput(AnsiString tag, Pointer object, UInt8 objectCategory, Pointer stream, Int64 timestamp, Pointer clock, Pointer sample, UInt32 bufferSize, UInt32 sampleSize, Int64 duration)	Output		Buffer	Verbose		
+Microsoft-Windows-MediaFoundation-Performance	4017	0	BufferQueued(AnsiString tag, Pointer object, UInt8 objectCategory, Pointer stream, Int64 timestamp, Pointer clock, Pointer sample, UInt32 bufferSize, UInt32 sampleSize, Int64 duration)	Queued		Buffer	Verbose		
+Microsoft-Windows-MediaFoundation-Performance	4018	0	BufferDropped(AnsiString tag, Pointer object, UInt8 objectCategory, Pointer stream, Int64 timestamp, Pointer clock, Pointer sample, UInt32 bufferSize, UInt32 sampleSize, Int64 duration)	Dropped		Buffer	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4019	0	ProcessInput(AnsiString tag, Pointer object, UInt8 objectCategory, Pointer sample, UInt32 byteCount, Int64 sampleTime, Int64 processTime)	Input		Process	Verbose		
+Microsoft-Windows-MediaFoundation-Performance	4020	0	ProcessOutput(AnsiString tag, Pointer object, UInt8 objectCategory, Pointer sample, UInt32 byteCount, Int64 sampleTime, Int64 processTime)	Output		Process	Verbose		
+Microsoft-Windows-MediaFoundation-Performance	4021	0	APOProcess(AnsiString tag, Pointer object, UInt8 objectCategory, Pointer sample, UInt32 byteCount, Int64 sampleTime, Int64 processTime)			APOProcess	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4022	0	UnusualStreamingEvent(AnsiString tag, Pointer object, Int8 processingType, UInt32 event)			UnusualStreamingEvent	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4023	0	FileOpen(AnsiString tag, Pointer object, Pointer handle, UnicodeString fileName)			FileOpen	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4024	0	IOReadRequestStart(AnsiString tag, Pointer object, Pointer handle, UInt64 offset, UInt32 byteCount)	Start		IOReadRequest	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4025	0	IOWriteRequestStart(AnsiString tag, Pointer object, Pointer handle, UInt64 offset, UInt32 byteCount)	Start		IOWriteRequest	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4026	0	IOReadRequestStop(AnsiString tag, Pointer object, Pointer handle)	Stop		IOReadRequest	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4027	0	IOWriteRequestStop(AnsiString tag, Pointer object, Pointer handle)	Stop		IOWriteRequest	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4028	0	RenderSampleAllocateSample(AnsiString tag, Pointer object, Pointer sample, Int64 sampleTime, Int64 sampleDuration, Int64 clock)			RenderSampleAllocateSample	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4029	0	RenderSampleReceiveSample(AnsiString tag, Pointer object, Pointer sample, Int64 sampleTime, Int64 sampleDuration, Int64 clock)			RenderSampleReceiveSample	Verbose		
+Microsoft-Windows-MediaFoundation-Performance	4030	0	RenderSampleRenderStart(AnsiString tag, Pointer object, Pointer sample, Int64 sampleTime, Int64 sampleDuration, Int64 clock)	Start		RenderSampleRender	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4031	0	RenderSampleRenderStop(AnsiString tag, Pointer object, Pointer sample, Int64 sampleTime, Int64 sampleDuration, Int64 clock)	Stop		RenderSampleRender	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4032	0	RenderSampleStartMixStart(AnsiString tag, Pointer object, Pointer sample, Int64 sampleTime, Int64 sampleDuration, Int64 clock)	Start		RenderSampleStartMix	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4033	0	RenderSampleMixStop(AnsiString tag, Pointer object, Pointer sample, Int64 sampleTime, Int64 sampleDuration, Int64 clock)	Stop		RenderSampleMix	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4034	0	RenderSampleDecodeStart(AnsiString tag, Pointer object, Pointer sample, Int64 sampleTime, Int64 sampleDuration, Int64 clock)	Start		RenderSampleDecode	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4035	0	RenderSampleDecodeStop(AnsiString tag, Pointer object, Pointer sample, Int64 sampleTime, Int64 sampleDuration, Int64 clock)	Stop		RenderSampleDecode	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4036	0	RenderSampleDeinterlaceStart(AnsiString tag, Pointer object, Pointer sample, Int64 sampleTime, Int64 sampleDuration, Int64 clock)	Start		RenderSampleDeinterlace	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4037	0	RenderSampleDeinterlaceStop(AnsiString tag, Pointer object, Pointer sample, Int64 sampleTime, Int64 sampleDuration, Int64 clock)	Stop		RenderSampleDeinterlace	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4038	0	RenderSampleProcampStart(AnsiString tag, Pointer object, Pointer sample, Int64 sampleTime, Int64 sampleDuration, Int64 clock)	Start		RenderSampleProcamp	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4039	0	RenderSampleProcampStop(AnsiString tag, Pointer object, Pointer sample, Int64 sampleTime, Int64 sampleDuration, Int64 clock)	Stop		RenderSampleProcamp	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4040	0	RenderSampleFRCStart(AnsiString tag, Pointer object, Pointer sample, Int64 sampleTime, Int64 sampleDuration, Int64 clock)	Start		RenderSampleFRC	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4041	0	RenderSampleFRCStop(AnsiString tag, Pointer object, Pointer sample, Int64 sampleTime, Int64 sampleDuration, Int64 clock)	Stop		RenderSampleFRC	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4042	0	RenderSampleMIDRender(AnsiString tag, Pointer object, Pointer sample, Int64 sampleTime, Int64 sampleDuration, Int64 clock)			RenderSampleMIDRender	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4043	0	RenderSampleMAPRender(AnsiString tag, Pointer object, Pointer sample, Int64 sampleTime, Int64 sampleDuration, Int64 clock)			RenderSampleMAPRender	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4044	0	RenderSampleActualRender(AnsiString tag, Pointer object, Pointer sample, Int64 sampleTime, Int64 sampleDuration, Int64 clock)			RenderSampleActualRender	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4045	0	AudioRendererBufferFullness(AnsiString tag, Pointer object, UInt32 fullness)			AudioRendererBufferFullness	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4046	0	StateChangeStart_334_14(AnsiString tag, Pointer object)	Start_334_14		StateChange	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4047	0	StateChangeStop_334_15(AnsiString tag, Pointer object)	Stop_334_15		StateChange	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4048	0	StateChangePause(AnsiString tag, Pointer object)	Pause		StateChange	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4049	0	TopoLoaderLoadStart(AnsiString tag, Pointer object)	Start		TopoLoaderLoad	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4050	0	TopoLoaderLoadStop(AnsiString tag, Pointer object)	Stop		TopoLoaderLoad	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4051	0	TopoLoaderCreateMFTStart(AnsiString tag, Pointer object)	Start		TopoLoaderCreateMFT	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4052	0	TopoLoaderCreateMFTStop(AnsiString tag, Pointer object)	Stop		TopoLoaderCreateMFT	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4053	0	PacketSinkLostPacket(AnsiString tag, Pointer object, UInt32 rtpSeq, UInt32 packetNumber)			PacketSinkLostPacket	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4054	0	PacketRecoverRTX(AnsiString tag, Pointer object, UInt32 rtpSeq, UInt32 packetNumber)			PacketRecoverRTX	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4055	0	PacketRecoverFEC(AnsiString tag, Pointer object, UInt32 rtpSeq, UInt32 packetNumber)			PacketRecoverFEC	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4056	0	MediaCacheReadSampleStart(AnsiString tag, Pointer object, UInt32 segmentID, UInt32 numberPending, Int64 time, Pointer sample)	Start		MediaCacheReadSample	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4057	0	MediaCacheReadSampleStop(AnsiString tag, Pointer object, UInt32 segmentID, UInt32 numberPending, Int64 time, Pointer sample)	Stop		MediaCacheReadSample	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4058	0	MediaCacheWriteSampleStart(AnsiString tag, Pointer object, UInt32 segmentID, UInt32 numberPending, Int64 time, Pointer sample)	Start		MediaCacheWriteSample	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4059	0	MediaCacheWriteSampleStop(AnsiString tag, Pointer object, UInt32 segmentID, UInt32 numberPending, Int64 time, Pointer sample)	Stop		MediaCacheWriteSample	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4060	0	MediaCacheSeekStart(AnsiString tag, Pointer object, UInt32 segmentID, UInt32 numberPending, Int64 time, Pointer sample)	Start		MediaCacheSeek	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4061	0	MediaCacheSeekStop(AnsiString tag, Pointer object, UInt32 segmentID, UInt32 numberPending, Int64 time, Pointer sample)	Stop		MediaCacheSeek	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4062	0	MediaCacheTrimStart(AnsiString tag, Pointer object, UInt32 segmentID, UInt32 numberPending, Int64 time, Pointer sample)	Start		MediaCacheTrim	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4063	0	MediaCacheTrimStop(AnsiString tag, Pointer object, UInt32 segmentID, UInt32 numberPending, Int64 time, Pointer sample)	Stop		MediaCacheTrim	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4064	0	NetworkPlatformGetHostByNameStart(AnsiString tag, HexInt32 hr)	Start		NetworkPlatformGetHostByName	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4065	0	NetworkPlatformGetHostByNameStop(AnsiString tag, HexInt32 hr)	Stop		NetworkPlatformGetHostByName	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4066	0	NetworkChannelSendRequestStart(AnsiString tag, Pointer object, UInt32 bytes, HexInt32 hr)	Start		NetworkChannelSendRequest	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4067	0	NetworkChannelSendRequestStop(AnsiString tag, Pointer object, UInt32 bytes, HexInt32 hr)	Stop		NetworkChannelSendRequest	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4068	0	NetworkChannelSendResponseStart(AnsiString tag, Pointer object, UInt32 bytes, HexInt32 hr)	Start		NetworkChannelSendResponse	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4069	0	NetworkChannelSendResponseStop(AnsiString tag, Pointer object, UInt32 bytes, HexInt32 hr)	Stop		NetworkChannelSendResponse	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4070	0	NetworkChannelReceiveRequestStart(AnsiString tag, Pointer object, UInt32 bytes, HexInt32 hr)	Start		NetworkChannelReceiveRequest	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4071	0	NetworkChannelReceiveRequestStop(AnsiString tag, Pointer object, UInt32 bytes, HexInt32 hr)	Stop		NetworkChannelReceiveRequest	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4072	0	NetworkChannelReceiveRequest(AnsiString tag, Pointer object, UInt32 bytes, HexInt32 hr)			NetworkChannelReceiveRequest	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4073	0	NetworkChannelOpenStart(AnsiString tag, Pointer object, UInt32 bytes, HexInt32 hr)	Start		NetworkChannelOpen	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4074	0	NetworkChannelOpenStop(AnsiString tag, Pointer object, UInt32 bytes, HexInt32 hr)	Stop		NetworkChannelOpen	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4075	0	NetworkChannelConnectStart(AnsiString tag, Pointer object, UInt32 bytes, HexInt32 hr)	Start		NetworkChannelConnect	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4076	0	NetworkChannelConnectStop(AnsiString tag, Pointer object, UInt32 bytes, HexInt32 hr)	Stop		NetworkChannelConnect	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4077	0	NetworkChannelReadStart(AnsiString tag, Pointer object, UInt32 bytes, HexInt32 hr)	Start		NetworkChannelRead	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4078	0	NetworkChannelReadStop(AnsiString tag, Pointer object, UInt32 bytes, HexInt32 hr)	Stop		NetworkChannelRead	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4079	0	NetworkChannelWriteStart(AnsiString tag, Pointer object, UInt32 bytes, HexInt32 hr)	Start		NetworkChannelWrite	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4080	0	NetworkChannelWriteStop(AnsiString tag, Pointer object, UInt32 bytes, HexInt32 hr)	Stop		NetworkChannelWrite	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4081	0	NetworkSessionSendRequestStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		NetworkSessionSendRequest	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4082	0	NetworkSessionSendRequestStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		NetworkSessionSendRequest	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4083	0	NetworkSessionSendResponseStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		NetworkSessionSendResponse	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4084	0	NetworkSessionSendResponseStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		NetworkSessionSendResponse	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4085	0	NetworkSessionReceiveRequestStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		NetworkSessionReceiveRequest	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4086	0	NetworkSessionReceiveRequestStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		NetworkSessionReceiveRequest	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4087	0	NetworkSessionOpenStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		NetworkSessionOpen	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4088	0	NetworkSessionOpenStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		NetworkSessionOpen	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4089	0	NetworkSessionConnectStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		NetworkSessionConnect	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4090	0	NetworkSessionConnectStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		NetworkSessionConnect	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4091	0	NetworkClientOpenStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		NetworkClientOpen	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4092	0	NetworkClientOpenStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		NetworkClientOpen	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4093	0	NetworkClientDescribeStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		NetworkClientDescribe	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4094	0	NetworkClientDescribeStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		NetworkClientDescribe	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4095	0	NetworkClientSelectStreamsStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		NetworkClientSelectStreams	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4096	0	NetworkClientSelectStreamsStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		NetworkClientSelectStreams	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4097	0	NetworkClientPlayStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		NetworkClientPlay	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4098	0	NetworkClientPlayStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		NetworkClientPlay	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4099	0	NetworkClientPauseStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		NetworkClientPause	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4100	0	NetworkClientPauseStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		NetworkClientPause	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4101	0	NetworkClientStopStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		NetworkClientStop	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4102	0	NetworkClientStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		NetworkClientStop	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4103	0	NetworkClientSendLogStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		NetworkClientSendLog	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4104	0	NetworkClientSendLogStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		NetworkClientSendLog	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4105	0	NetworkClientSendKeepAlive(AnsiString tag, Pointer object, HexInt32 hr)			NetworkClientSendKeepAlive	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4106	0	NetworkClientReceivedAnnounce(AnsiString tag, Pointer object, HexInt32 hr)			NetworkClientReceivedAnnounce	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4107	0	NetworkClientPacketPairStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		NetworkClientPacketPair	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4108	0	NetworkClientPacketPairStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		NetworkClientPacketPair	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4109	0	NetworkClientTearDownStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		NetworkClientTearDown	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4110	0	NetworkClientTearDownStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		NetworkClientTearDown	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4111	0	NetworkClientReceivedEOS(AnsiString tag, Pointer object, HexInt32 hr)			NetworkClientReceivedEOS	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4112	0	NetworkClientBeginCloseStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		NetworkClientBeginClose	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4113	0	NetworkClientEndCloseStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		NetworkClientEndClose	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4114	0	NetworkClientGUID(AnsiString tag, Pointer object, GUID guid)			NetworkClientGUID	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4115	0	NetworkSourceDisconnect(AnsiString tag, Pointer object, HexInt32 arg1, HexInt32 arg2)			NetworkSourceDisconnect	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4116	0	NetworkSourceBeginReconnectStart(AnsiString tag, Pointer object, HexInt32 arg1, HexInt32 arg2)	Start		NetworkSourceBeginReconnect	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4117	0	NetworkSourceEndReconnectStop(AnsiString tag, Pointer object, HexInt32 arg1, HexInt32 arg2)	Stop		NetworkSourceEndReconnect	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4118	0	NetworkSourceAnnounce(AnsiString tag, Pointer object, HexInt32 arg1, HexInt32 arg2)			NetworkSourceAnnounce	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4119	0	NetworkSourceEOS(AnsiString tag, Pointer object, HexInt32 arg1, HexInt32 arg2)			NetworkSourceEOS	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4120	0	NetworkSourceStreamSwitchStart(AnsiString tag, Pointer object, HexInt32 arg1, HexInt32 arg2)	Start		NetworkSourceStreamSwitch	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4121	0	NetworkSourceStreamSwitchStop(AnsiString tag, Pointer object, HexInt32 arg1, HexInt32 arg2)	Stop		NetworkSourceStreamSwitch	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4122	0	NetworkSourceBufferingStart(AnsiString tag, Pointer object, HexInt32 arg1, HexInt32 arg2)			NetworkSourceBufferingStart	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4123	0	NetworkSourceBufferingStop(AnsiString tag, Pointer object, HexInt32 arg1, HexInt32 arg2)			NetworkSourceBufferingStop	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4124	0	NetworkSourceConnectStart(AnsiString tag, Pointer object, HexInt32 arg1, HexInt32 arg2)	Start		NetworkSourceConnect	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4125	0	NetworkSourceConnectStop(AnsiString tag, Pointer object, HexInt32 arg1, HexInt32 arg2)	Stop		NetworkSourceConnect	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4126	0	NetworkSourceOpenStart(AnsiString tag, Pointer object, HexInt32 arg1, HexInt32 arg2)	Start		NetworkSourceOpen	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4127	0	NetworkSourceOpenStop(AnsiString tag, Pointer object, HexInt32 arg1, HexInt32 arg2)	Stop		NetworkSourceOpen	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4128	0	NetworkSourceMCastJoinDone(AnsiString tag, Pointer object, HexInt32 arg1, HexInt32 arg2)			NetworkSourceMCastJoinDone	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4129	0	HttpByteStreamCreate(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)			HttpByteStreamCreate	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4130	0	HttpByteStreamDelete(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)			HttpByteStreamDelete	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4131	0	HttpByteStreamBeginOpenStart(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Start		HttpByteStreamBeginOpen	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4132	0	HttpByteStreamBeginOpenStop(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Stop		HttpByteStreamBeginOpen	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4133	0	HttpByteStreamEndOpenStart(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Start		HttpByteStreamEndOpen	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4134	0	HttpByteStreamEndOpenStop(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Stop		HttpByteStreamEndOpen	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4135	0	HttpByteStreamTimeSeekStart(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Start		HttpByteStreamTimeSeek	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4136	0	HttpByteStreamTimeSeekStop(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Stop		HttpByteStreamTimeSeek	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4137	0	HttpByteStreamBeginDrmSetLicenseStart(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Start		HttpByteStreamBeginDrmSetLicense	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4138	0	HttpByteStreamBeginDrmSetLicenseStop(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Stop		HttpByteStreamBeginDrmSetLicense	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4139	0	HttpByteStreamEndDrmSetLicenseStart(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Start		HttpByteStreamEndDrmSetLicense	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4140	0	HttpByteStreamEndDrmSetLicenseStop(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Stop		HttpByteStreamEndDrmSetLicense	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4141	0	HttpByteStreamBeginThrottleStart(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Start		HttpByteStreamBeginThrottle	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4142	0	HttpByteStreamBeginThrottleStop(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Stop		HttpByteStreamBeginThrottle	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4143	0	HttpByteStreamEndThrottleStart(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Start		HttpByteStreamEndThrottle	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4144	0	HttpByteStreamEndThrottleStop(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Stop		HttpByteStreamEndThrottle	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4145	0	BaseRemoteByteStreamCreate(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)			BaseRemoteByteStreamCreate	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4146	0	BaseRemoteByteStreamDelete(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)			BaseRemoteByteStreamDelete	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4147	0	BaseRemoteByteStreamReadStart(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Start		BaseRemoteByteStreamRead	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4148	0	BaseRemoteByteStreamReadStop(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Stop		BaseRemoteByteStreamRead	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4149	0	BaseRemoteByteStreamBeginReadStart(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Start		BaseRemoteByteStreamBeginRead	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4150	0	BaseRemoteByteStreamBeginReadStop(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Stop		BaseRemoteByteStreamBeginRead	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4151	0	BaseRemoteByteStreamEndReadStart(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Start		BaseRemoteByteStreamEndRead	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4152	0	BaseRemoteByteStreamEndReadStop(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Stop		BaseRemoteByteStreamEndRead	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4153	0	BaseRemoteByteStreamSeek(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)			BaseRemoteByteStreamSeek	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4154	0	BaseRemoteByteStreamCloseStart(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Start		BaseRemoteByteStreamClose	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4155	0	BaseRemoteByteStreamCloseStop(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Stop		BaseRemoteByteStreamClose	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4156	0	BaseRemoteByteStreamConfigureBuffering(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)			BaseRemoteByteStreamConfigureBuffering	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4157	0	BaseRemoteByteStreamEnableBuffering(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)			BaseRemoteByteStreamEnableBuffering	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4158	0	BaseRemoteByteStreamBeginSaveStart(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Start		BaseRemoteByteStreamBeginSave	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4159	0	BaseRemoteByteStreamBeginSaveStop(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Stop		BaseRemoteByteStreamBeginSave	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4160	0	BaseRemoteByteStreamEndSaveStart(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Start		BaseRemoteByteStreamEndSave	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4161	0	BaseRemoteByteStreamEndSaveStop(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Stop		BaseRemoteByteStreamEndSave	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4162	0	BaseRemoteByteStreamCancelSave(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)			BaseRemoteByteStreamCancelSave	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4163	0	BaseRemoteByteStreamFireStartBuffering(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)			BaseRemoteByteStreamFireStartBuffering	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4164	0	BaseRemoteByteStreamFireStopBuffering(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)			BaseRemoteByteStreamFireStopBuffering	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4165	0	UrlmonByteStreamCreate(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)			UrlmonByteStreamCreate	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4166	0	UrlmonByteStreamDelete(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)			UrlmonByteStreamDelete	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4167	0	UrlmonByteStreamReadStart(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Start		UrlmonByteStreamRead	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4168	0	UrlmonByteStreamReadStop(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Stop		UrlmonByteStreamRead	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4169	0	UrlmonByteStreamBeginReadStart(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Start		UrlmonByteStreamBeginRead	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4170	0	UrlmonByteStreamBeginReadStop(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Stop		UrlmonByteStreamBeginRead	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4171	0	UrlmonByteStreamEndReadStart(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Start		UrlmonByteStreamEndRead	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4172	0	UrlmonByteStreamEndReadStop(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Stop		UrlmonByteStreamEndRead	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4173	0	UrlmonByteStreamSeek(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)			UrlmonByteStreamSeek	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4174	0	UrlmonByteStreamCloseStart(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Start		UrlmonByteStreamClose	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4175	0	UrlmonByteStreamCloseStop(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Stop		UrlmonByteStreamClose	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4176	0	UrlmonByteStreamConfigureBuffering(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)			UrlmonByteStreamConfigureBuffering	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4177	0	UrlmonByteStreamEnableBuffering(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)			UrlmonByteStreamEnableBuffering	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4178	0	UrlmonByteStreamBeginSaveStart(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Start		UrlmonByteStreamBeginSave	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4179	0	UrlmonByteStreamBeginSaveStop(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Stop		UrlmonByteStreamBeginSave	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4180	0	UrlmonByteStreamEndSaveStart(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Start		UrlmonByteStreamEndSave	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4181	0	UrlmonByteStreamEndSaveStop(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Stop		UrlmonByteStreamEndSave	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4182	0	UrlmonByteStreamFireStartBuffering(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)			UrlmonByteStreamFireStartBuffering	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4183	0	UrlmonByteStreamFireStopBuffering(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)			UrlmonByteStreamFireStopBuffering	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4184	0	HttpWebRequestBeginSendRequestStart(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Start		HttpWebRequestBeginSendRequest	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4185	0	HttpWebRequestBeginSendRequestStop(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Stop		HttpWebRequestBeginSendRequest	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4186	0	HttpWebRequestEndSendRequestStart(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Start		HttpWebRequestEndSendRequest	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4187	0	HttpWebRequestEndSendRequestStop(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Stop		HttpWebRequestEndSendRequest	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4188	0	HttpWebRequestBeginReceiveResponseStart(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Start		HttpWebRequestBeginReceiveResponse	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4189	0	HttpWebRequestBeginReceiveResponseStop(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Stop		HttpWebRequestBeginReceiveResponse	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4190	0	HttpWebRequestEndReceiveResponseStart(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Start		HttpWebRequestEndReceiveResponse	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4191	0	HttpWebRequestEndReceiveResponseStop(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Stop		HttpWebRequestEndReceiveResponse	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4192	0	HttpWebRequestBeginReadPayloadStart(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Start		HttpWebRequestBeginReadPayload	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4193	0	HttpWebRequestBeginReadPayloadStop(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Stop		HttpWebRequestBeginReadPayload	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4194	0	HttpWebRequestEndReadPayloadStart(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Start		HttpWebRequestEndReadPayload	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4195	0	HttpWebRequestEndReadPayloadStop(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Stop		HttpWebRequestEndReadPayload	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4196	0	HttpWebRequestClose(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)			HttpWebRequestClose	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4197	0	HttpWebRequestStatusCallbackStart(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Start		HttpWebRequestStatusCallback	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4198	0	HttpWebRequestStatusCallbackStop(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Stop		HttpWebRequestStatusCallback	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4199	0	HttpWebRequestCreateCacheEntryStart(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Start		HttpWebRequestCreateCacheEntry	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4200	0	HttpWebRequestCreateCacheEntryStop(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Stop		HttpWebRequestCreateCacheEntry	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4201	0	HttpWebRequestLoadCacheEntryStart(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Start		HttpWebRequestLoadCacheEntry	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4202	0	HttpWebRequestLoadCacheEntryStop(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Stop		HttpWebRequestLoadCacheEntry	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4203	0	HttpWebRequestDeleteCacheEntryStart(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Start		HttpWebRequestDeleteCacheEntry	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4204	0	HttpWebRequestDeleteCacheEntryStop(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Stop		HttpWebRequestDeleteCacheEntry	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4205	0	HttpWebRequestSaveCacheEntryStart(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Start		HttpWebRequestSaveCacheEntry	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4206	0	HttpWebRequestSaveCacheEntryStop(AnsiString tag, Pointer object, HexInt32 hr, HexInt64 arg)	Stop		HttpWebRequestSaveCacheEntry	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4207	0	SourceResolutionBeginCreateStart(AnsiString tag, Pointer object, UnicodeString url, Pointer objectCreated, HexInt32 hr)	Start		SourceResolutionBeginCreate	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4208	0	SourceResolutionEndCreateStop(AnsiString tag, Pointer object, UnicodeString url, Pointer objectCreated, HexInt32 hr)	Stop		SourceResolutionEndCreate	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4209	0	SourceResolutionBeginCreateObjectFromURLStart(AnsiString tag, Pointer object, UnicodeString url, Pointer objectCreated, HexInt32 hr)	Start		SourceResolutionBeginCreateObjectFromURL	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4210	0	SourceResolutionBeginCreateObjectFromURLStop(AnsiString tag, Pointer object, UnicodeString url, Pointer objectCreated, HexInt32 hr)	Stop		SourceResolutionBeginCreateObjectFromURL	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4211	0	SourceResolutionEndCreateObjectFromURLStart(AnsiString tag, Pointer object, UnicodeString url, Pointer objectCreated, HexInt32 hr)	Start		SourceResolutionEndCreateObjectFromURL	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4212	0	SourceResolutionEndCreateObjectFromURLStop(AnsiString tag, Pointer object, UnicodeString url, Pointer objectCreated, HexInt32 hr)	Stop		SourceResolutionEndCreateObjectFromURL	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4213	0	SourceResolutionBeginCreateObjectFromByteStreamStart(AnsiString tag, Pointer object, UnicodeString url, Pointer objectCreated, HexInt32 hr)	Start		SourceResolutionBeginCreateObjectFromByteStream	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4214	0	SourceResolutionBeginCreateObjectFromByteStreamStop(AnsiString tag, Pointer object, UnicodeString url, Pointer objectCreated, HexInt32 hr)	Stop		SourceResolutionBeginCreateObjectFromByteStream	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4215	0	SourceResolutionEndCreateObjectFromByteStreamStart(AnsiString tag, Pointer object, UnicodeString url, Pointer objectCreated, HexInt32 hr)	Start		SourceResolutionEndCreateObjectFromByteStream	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4216	0	SourceResolutionEndCreateObjectFromByteStreamStop(AnsiString tag, Pointer object, UnicodeString url, Pointer objectCreated, HexInt32 hr)	Stop		SourceResolutionEndCreateObjectFromByteStream	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4217	0	SourceResolutionLookupSchemeHandlerStart(AnsiString tag, Pointer object, UnicodeString url, Pointer objectCreated, HexInt32 hr)	Start		SourceResolutionLookupSchemeHandler	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4218	0	SourceResolutionLookupSchemeHandlerStop(AnsiString tag, Pointer object, UnicodeString url, Pointer objectCreated, HexInt32 hr)	Stop		SourceResolutionLookupSchemeHandler	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4219	0	SourceResolutionLookupByteStreamHandlerStart(AnsiString tag, Pointer object, UnicodeString url, Pointer objectCreated, HexInt32 hr)	Start		SourceResolutionLookupByteStreamHandler	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4220	0	SourceResolutionLookupByteStreamHandlerStop(AnsiString tag, Pointer object, UnicodeString url, Pointer objectCreated, HexInt32 hr)	Stop		SourceResolutionLookupByteStreamHandler	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4221	0	SourceResolutionSchemeHandlerBeginCreateObjectStart(AnsiString tag, Pointer object, UnicodeString url, Pointer objectCreated, HexInt32 hr)	Start		SourceResolutionSchemeHandlerBeginCreateObject	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4222	0	SourceResolutionSchemeHandlerBeginCreateObjectStop(AnsiString tag, Pointer object, UnicodeString url, Pointer objectCreated, HexInt32 hr)	Stop		SourceResolutionSchemeHandlerBeginCreateObject	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4223	0	SourceResolutionSchemeHandlerEndCreateObjectStart(AnsiString tag, Pointer object, UnicodeString url, Pointer objectCreated, HexInt32 hr)	Start		SourceResolutionSchemeHandlerEndCreateObject	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4224	0	SourceResolutionEndSchemeHandlerEndCreateObjectStop(AnsiString tag, Pointer object, UnicodeString url, Pointer objectCreated, HexInt32 hr)	Stop		SourceResolutionEndSchemeHandlerEndCreateObject	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4225	0	SourceResolutionByteStreamCreated(AnsiString tag, Pointer object, UnicodeString url, Pointer objectCreated, HexInt32 hr)			SourceResolutionByteStreamCreated	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4226	0	SourceResolutionByteStreamHandlerBeginCreateObjectStart(AnsiString tag, Pointer object, UnicodeString url, Pointer objectCreated, HexInt32 hr)	Start		SourceResolutionByteStreamHandlerBeginCreateObject	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4227	0	SourceResolutionByteStreamHandlerBeginCreateObjectStop(AnsiString tag, Pointer object, UnicodeString url, Pointer objectCreated, HexInt32 hr)	Stop		SourceResolutionByteStreamHandlerBeginCreateObject	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4228	0	SourceResolutionByteStreamHandlerEndCreateObjectStart(AnsiString tag, Pointer object, UnicodeString url, Pointer objectCreated, HexInt32 hr)	Start		SourceResolutionByteStreamHandlerEndCreateObject	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4229	0	SourceResolutionByteStreamHandlerEndCreateObjectStop(AnsiString tag, Pointer object, UnicodeString url, Pointer objectCreated, HexInt32 hr)	Stop		SourceResolutionByteStreamHandlerEndCreateObject	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4230	0	SourceResolutionMediaSourceCreated(AnsiString tag, Pointer object, UnicodeString url, Pointer objectCreated, HexInt32 hr)			SourceResolutionMediaSourceCreated	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4231	0	SessionBitpumpStartAsyncCallStart(AnsiString tag, Pointer object, UInt32 state, HexInt32 context, HexInt32 hr)	Start		SessionBitpumpStartAsyncCall	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4232	0	SessionBitpumpEndAsyncCallStop(AnsiString tag, Pointer object, UInt32 state, HexInt32 context, HexInt32 hr)	Stop		SessionBitpumpEndAsyncCall	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4233	0	SessionBitpumpReceiveEvent(AnsiString tag, Pointer object, UInt32 state, HexInt32 context, HexInt32 hr)			SessionBitpumpReceiveEvent	Verbose		
+Microsoft-Windows-MediaFoundation-Performance	4234	0	SessionBitpumpError(AnsiString tag, Pointer object, UInt32 state, HexInt32 context, HexInt32 hr)			SessionBitpumpError	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4235	0	SessionBitpumpCriticalError(AnsiString tag, Pointer object, UInt32 state, HexInt32 context, HexInt32 hr)			SessionBitpumpCriticalError	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4236	0	SessionBitpumpStartSyncCallStart(AnsiString tag, Pointer object, UInt32 state, HexInt32 context, HexInt32 hr)	Start		SessionBitpumpStartSyncCall	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4237	0	SessionBitpumpEndSyncCallStop(AnsiString tag, Pointer object, UInt32 state, HexInt32 context, HexInt32 hr)	Stop		SessionBitpumpEndSyncCall	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4238	0	SessionBitpumpWaitForSample(AnsiString tag, Pointer object, UInt32 state, HexInt32 context, HexInt32 hr)			SessionBitpumpWaitForSample	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4239	0	SessionBitpumpDetails(AnsiString tag, Pointer object, UInt32 state, HexInt32 context, HexInt32 hr)			SessionBitpumpDetails	Verbose		
+Microsoft-Windows-MediaFoundation-Performance	4240	0	SessionSetTopologyStart(AnsiString tag, Pointer object, Pointer parameter)	Start		SessionSetTopology	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4241	0	SessionSetTopologyStop(AnsiString tag, Pointer object, Pointer parameter)	Stop		SessionSetTopology	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4242	0	SessionStart(AnsiString tag, Pointer object, Pointer parameter)	Start		SessionStart	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4243	0	SessionStartStop(AnsiString tag, Pointer object, Pointer parameter)	Stop		SessionStart	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4244	0	SessionStopStart(AnsiString tag, Pointer object, Pointer parameter)	Start		SessionStop	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4245	0	SessionStop(AnsiString tag, Pointer object, Pointer parameter)	Stop		SessionStop	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4246	0	SessionPauseStart(AnsiString tag, Pointer object, Pointer parameter)	Start		SessionPause	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4247	0	SessionPauseStop(AnsiString tag, Pointer object, Pointer parameter)	Stop		SessionPause	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4248	0	SessionCloseStart(AnsiString tag, Pointer object, Pointer parameter)	Start		SessionClose	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4249	0	SessionCloseStop(AnsiString tag, Pointer object, Pointer parameter)	Stop		SessionClose	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4250	0	SessionShutdownStart(AnsiString tag, Pointer object, Pointer parameter)	Start		SessionShutdown	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4251	0	SessionShutdownStop(AnsiString tag, Pointer object, Pointer parameter)	Stop		SessionShutdown	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4252	0	SessionPresentationSwitchStart(AnsiString tag, Pointer object, Pointer parameter)	Start		SessionPresentationSwitch	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4253	0	SessionPresentationSwitchStop(AnsiString tag, Pointer object, Pointer parameter)	Stop		SessionPresentationSwitch	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4254	0	SequencerSourceStart(AnsiString tag, Pointer object, UInt32 eventType, Int64 time, Pointer parameter, UnicodeString url)			SequencerSourceStart	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4255	0	SequencerSourceStop(AnsiString tag, Pointer object, UInt32 eventType, Int64 time, Pointer parameter, UnicodeString url)			SequencerSourceStop	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4256	0	SequencerSourceOnContextEvent(AnsiString tag, Pointer object, UInt32 eventType, Int64 time, Pointer parameter, UnicodeString url)			SequencerSourceOnContextEvent	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4257	0	SequencerSourceProcessSample(AnsiString tag, Pointer object, UInt32 eventType, Int64 time, Pointer parameter, UnicodeString url)			SequencerSourceProcessSample	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4258	0	SequencerSourceOnStreamEvent(AnsiString tag, Pointer object, UInt32 eventType, Int64 time, Pointer parameter, UnicodeString url)			SequencerSourceOnStreamEvent	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4259	0	SequencerSourceCreateObjectFromNodeStart(AnsiString tag, Pointer object, UInt32 eventType, Int64 time, Pointer parameter, UnicodeString url)	Start		SequencerSourceCreateObjectFromNode	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4260	0	SequencerSourceCreateObjectFromNodeStop(AnsiString tag, Pointer object, UInt32 eventType, Int64 time, Pointer parameter, UnicodeString url)	Stop		SequencerSourceCreateObjectFromNode	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4261	0	QualityManagerSetQualityLevel(AnsiString tag, Pointer object, UInt32 knobID, UInt32 previousLevel, UInt32 newLevel, Int64 dropTime)			QualityManagerSetQualityLevel	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4262	0	QualityManagerSetDropMode(AnsiString tag, Pointer object, UInt32 knobID, UInt32 previousLevel, UInt32 newLevel, Int64 dropTime)			QualityManagerSetDropMode	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4263	0	QualityManagerSetDropTime(AnsiString tag, Pointer object, UInt32 knobID, UInt32 previousLevel, UInt32 newLevel, Int64 dropTime)			QualityManagerSetDropTime	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4264	0	MediaProcessorSourceStart(AnsiString tag, Pointer object, UInt32 eventType, Int64 time, Pointer parameter, UnicodeString url)			MediaProcessorSourceStart	Verbose		
+Microsoft-Windows-MediaFoundation-Performance	4265	0	MediaProcessorSourceCreateTopology(AnsiString tag, Pointer object, UInt32 eventType, Int64 time, Pointer parameter, UnicodeString url)			MediaProcessorSourceCreateTopology	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4266	0	MediaProcessorSourceOpen(AnsiString tag, Pointer object, UInt32 eventType, Int64 time, Pointer parameter, UnicodeString url)			MediaProcessorSourceOpen	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4267	0	MediaProcessorSourceProcessSample(AnsiString tag, Pointer object, UInt32 eventType, Int64 time, Pointer parameter, UnicodeString url)			MediaProcessorSourceProcessSample	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4268	0	MediaProcessorSourceSendEvent(AnsiString tag, Pointer object, UInt32 eventType, Int64 time, Pointer parameter, UnicodeString url)			MediaProcessorSourceSendEvent	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4269	0	FrameGrabberOpenSource(AnsiString tag, Pointer object, UInt32 eventType, Int64 time, Pointer parameter, UnicodeString url)			FrameGrabberOpenSource	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4270	0	FrameGrabberGetFrame(AnsiString tag, Pointer object, UInt32 eventType, Int64 time, Pointer parameter, UnicodeString url)			FrameGrabberGetFrame	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4271	0	FrameGrabberInvoke(AnsiString tag, Pointer object, UInt32 eventType, Int64 time, Pointer parameter, UnicodeString url)			FrameGrabberInvoke	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4272	0	BufferAdjustSampleTimeOneShot(AnsiString tag, Pointer object, Int64 originalTime, Int64 adjustment)			BufferAdjustSampleTimeOneShot	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4273	0	BufferAdjustSampleTimeRepeat(AnsiString tag, Pointer object, Int64 originalTime, Int64 adjustment)			BufferAdjustSampleTimeRepeat	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4274	0	VideoRender(AnsiString tag, Pointer object, Pointer sample, Int64 sampleTime, Int64 sampleDuration, Int64 clockTime, Pointer hwnd, UInt32 refreshRate, UInt32 width, UInt32 height, UInt32 left, UInt32 top, UInt32 right, UInt32 bottom, UInt32 left1, UInt32 top1, UInt32 right1, UInt32 bottom1)			VideoRender	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4275	0	AudioRender(AnsiString tag, Pointer object, Pointer sample, Int64 sampleTime, Int64 sampleDuration, Int64 masterTime, Int64 deviceTime)			AudioRender	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4276	0	MetadataCreated(AnsiString tag, Pointer object, HexInt32 hr, Pointer propertyKey, Pointer propvariant)			MetadataCreated	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4277	0	MetadataLoaded(AnsiString tag, Pointer object, HexInt32 hr, Pointer propertyKey, Pointer propvariant)			MetadataLoaded	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4278	0	MetadataGetCount(AnsiString tag, Pointer object, HexInt32 hr, Pointer propertyKey, Pointer propvariant)			MetadataGetCount	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4279	0	MetadataGetAt(AnsiString tag, Pointer object, HexInt32 hr, Pointer propertyKey, Pointer propvariant)			MetadataGetAt	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4280	0	MetadataGetValue(AnsiString tag, Pointer object, HexInt32 hr, Pointer propertyKey, Pointer propvariant)			MetadataGetValue	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4281	0	MetadataSetValue(AnsiString tag, Pointer object, HexInt32 hr, Pointer propertyKey, Pointer propvariant)			MetadataSetValue	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4282	0	MetadataFlush(AnsiString tag, Pointer object, HexInt32 hr, Pointer propertyKey, Pointer propvariant)			MetadataFlush	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4283	0	MetadataOnGetCount(AnsiString tag, Pointer object, HexInt32 hr, Pointer propertyKey, Pointer propvariant)			MetadataOnGetCount	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4284	0	MetadataOnGetAt(AnsiString tag, Pointer object, HexInt32 hr, Pointer propertyKey, Pointer propvariant)			MetadataOnGetAt	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4285	0	MetadataOnGetValue(AnsiString tag, Pointer object, HexInt32 hr, Pointer propertyKey, Pointer propvariant)			MetadataOnGetValue	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4286	0	MetadataOnSetValue(AnsiString tag, Pointer object, HexInt32 hr, Pointer propertyKey, Pointer propvariant)			MetadataOnSetValue	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4287	0	MetadataOnFlush(AnsiString tag, Pointer object, HexInt32 hr, Pointer propertyKey, Pointer propvariant)			MetadataOnFlush	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4288	0	MuxerProcessSample(AnsiString tag, Pointer object, UInt32 streamNumber, Int64 sampleTime, UInt32 sampleByteCount, Int64 packetNumber, Int64 packetSendTime, UInt32 packetByteCount)			MuxerProcessSample	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4289	0	MuxerAddPayload(AnsiString tag, Pointer object, UInt32 streamNumber, Int64 sampleTime, UInt32 sampleByteCount, Int64 packetNumber, Int64 packetSendTime, UInt32 packetByteCount)			MuxerAddPayload	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4290	0	MuxerOnCompletedPacket(AnsiString tag, Pointer object, UInt32 streamNumber, Int64 sampleTime, UInt32 sampleByteCount, Int64 packetNumber, Int64 packetSendTime, UInt32 packetByteCount)			MuxerOnCompletedPacket	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4291	0	TimerLate(AnsiString tag, Pointer object, Int64 eventTime, Int64 lateBy, Pointer callback)			TimerLate	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4292	0	MFGraphPlayStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		MFGraphPlay	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4293	0	MFGraphPlayStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		MFGraphPlay	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4294	0	MFGraphStopStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		MFGraphStop	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4295	0	MFGraphStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		MFGraphStop	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4296	0	MFGraphPauseStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		MFGraphPause	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4297	0	MFGraphPauseStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		MFGraphPause	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4298	0	MFGraphRenderStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		MFGraphRender	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4299	0	MFGraphRenderStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		MFGraphRender	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4300	0	MFGraphFindInterfaceOnFilterStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		MFGraphFindInterfaceOnFilter	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4301	0	MFGraphFindInterfaceOnFilterStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		MFGraphFindInterfaceOnFilter	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4302	0	MFGraphScanStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		MFGraphScan	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4303	0	MFGraphScanStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		MFGraphScan	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4304	0	MFGraphSetRateStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		MFGraphSetRate	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4305	0	MFGraphSetRateStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		MFGraphSetRate	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4306	0	MFGraphInsertNodeStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		MFGraphInsertNode	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4307	0	MFGraphInsertNodeStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		MFGraphInsertNode	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4308	0	MFGraphBatchInsertStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		MFGraphBatchInsert	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4309	0	MFGraphBatchInsertStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		MFGraphBatchInsert	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4310	0	MFGraphBatchInsertStart4310(AnsiString tag, Pointer object, HexInt32 hr)	Start		MFGraphBatchInsert	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4311	0	MFGraphBatchInsertStop4311(AnsiString tag, Pointer object, HexInt32 hr)	Stop		MFGraphBatchInsert	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4312	0	MFGraphCloseStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		MFGraphClose	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4313	0	MFGraphCloseStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		MFGraphClose	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4314	0	MFGraphSetVolumeStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		MFGraphSetVolume	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4315	0	MFGraphSetVolumeStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		MFGraphSetVolume	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4316	0	MFGraphSetStopPositionStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		MFGraphSetStopPosition	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4317	0	MFGraphSetStopPositionStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		MFGraphSetStopPosition	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4318	0	MFGraphSetCurrentPositionStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		MFGraphSetCurrentPosition	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4319	0	MFGraphSetCurrentPositionStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		MFGraphSetCurrentPosition	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4320	0	MFGraphSetContextStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		MFGraphSetContext	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4321	0	MFGraphSetContextStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		MFGraphSetContext	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4322	0	MFGraphQueueStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		MFGraphQueue	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4323	0	MFGraphQueueStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		MFGraphQueue	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4324	0	MFGraphInitStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		MFGraphInit	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4325	0	MFGraphInitStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		MFGraphInit	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4326	0	MFGraphInitExStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		MFGraphInitEx	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4327	0	MFGraphInitExStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		MFGraphInitEx	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4328	0	MFGraphGetTypeStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		MFGraphGetType	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4329	0	MFGraphGetTypeStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		MFGraphGetType	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4330	0	MFGraphIsReusedStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		MFGraphIsReused	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4331	0	MFGraphIsReusedStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		MFGraphIsReused	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4332	0	MFGraphGetURLStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		MFGraphGetURL	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4333	0	MFGraphGetURLStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		MFGraphGetURL	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4334	0	MFGraphGetContextStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		MFGraphGetContext	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4335	0	MFGraphGetContextStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		MFGraphGetContext	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4336	0	MFGraphGetCookieStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		MFGraphGetCookie	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4337	0	MFGraphGetCookieStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		MFGraphGetCookie	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4338	0	MFGraphSetCookieStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		MFGraphSetCookie	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4339	0	MFGraphSetCookieStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		MFGraphSetCookie	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4340	0	MFGraphGetOpenStateStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		MFGraphGetOpenState	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4341	0	MFGraphGetOpenStateStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		MFGraphGetOpenState	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4342	0	MFGraphGetRateStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		MFGraphGetRate	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4343	0	MFGraphGetRateStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		MFGraphGetRate	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4344	0	MFGraphGetCurrentPositionStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		MFGraphGetCurrentPosition	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4345	0	MFGraphGetCurrentPositionStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		MFGraphGetCurrentPosition	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4346	0	MFGraphGetStopPositionStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		MFGraphGetStopPosition	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4347	0	MFGraphGetStopPositionStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		MFGraphGetStopPosition	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4348	0	MFGraphGetVolumeStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		MFGraphGetVolume	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4349	0	MFGraphGetVolumeStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		MFGraphGetVolume	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4350	0	MFGraphGetMediaCapsStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		MFGraphGetMediaCaps	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4351	0	MFGraphGetMediaCapsStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		MFGraphGetMediaCaps	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4352	0	MFGraphGetControlCapsStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		MFGraphGetControlCaps	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4353	0	MFGraphGetControlCapsStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		MFGraphGetControlCaps	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4354	0	MFGraphGetSeekCapsStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		MFGraphGetSeekCaps	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4355	0	MFGraphGetSeekCapsStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		MFGraphGetSeekCaps	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4356	0	MFGraphGetJumpCapsStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		MFGraphGetJumpCaps	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4357	0	MFGraphGetJumpCapsStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		MFGraphGetJumpCaps	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4358	0	MFGraphSetAutoRewindStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		MFGraphSetAutoRewind	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4359	0	MFGraphSetAutoRewindStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		MFGraphSetAutoRewind	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4360	0	MFGraphFindPluginStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		MFGraphFindPlugin	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4361	0	MFGraphFindPluginStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		MFGraphFindPlugin	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4362	0	MFGraphHandlePresentationSwitchStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		MFGraphHandlePresentationSwitch	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4363	0	MFGraphHandlePresentationSwitchStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		MFGraphHandlePresentationSwitch	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4364	0	MFGraphNotifyStateChangeStart(AnsiString tag, Pointer object, UInt32 parameter, UnicodeString bstr)	Start		MFGraphNotifyStateChange	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4365	0	MFGraphNotifyStateChangeStop(AnsiString tag, Pointer object, UInt32 parameter, UnicodeString bstr)	Stop		MFGraphNotifyStateChange	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4366	0	MFGraphNotifyPlaybackStart(AnsiString tag, Pointer object, UInt32 parameter, UnicodeString bstr)	Start		MFGraphNotifyPlayback	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4367	0	MFGraphNotifyPlaybackStop(AnsiString tag, Pointer object, UInt32 parameter, UnicodeString bstr)	Stop		MFGraphNotifyPlayback	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4368	0	MFGraphNotifyRateChangeStart(AnsiString tag, Pointer object, UInt32 parameter, UnicodeString bstr)	Start		MFGraphNotifyRateChange	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4369	0	MFGraphNotifyRateChangeStop(AnsiString tag, Pointer object, UInt32 parameter, UnicodeString bstr)	Stop		MFGraphNotifyRateChange	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4370	0	MFGraphNotifyErrorStart(AnsiString tag, Pointer object, UInt32 parameter, UnicodeString bstr)	Start		MFGraphNotifyError	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4371	0	MFGraphNotifyErrorStop(AnsiString tag, Pointer object, UInt32 parameter, UnicodeString bstr)	Stop		MFGraphNotifyError	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4372	0	MFGraphNotifyLicenseStart(AnsiString tag, Pointer object, UInt32 parameter, UnicodeString bstr)	Start		MFGraphNotifyLicense	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4373	0	MFGraphNotifyLicenseStop(AnsiString tag, Pointer object, UInt32 parameter, UnicodeString bstr)	Stop		MFGraphNotifyLicense	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4374	0	MFGraphNotifyCredStart(AnsiString tag, Pointer object, UInt32 parameter, UnicodeString bstr)	Start		MFGraphNotifyCred	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4375	0	MFGraphNotifyCredStop(AnsiString tag, Pointer object, UInt32 parameter, UnicodeString bstr)	Stop		MFGraphNotifyCred	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4376	0	MFGraphNotifyIndividualizationStart(AnsiString tag, Pointer object, UInt32 parameter, UnicodeString bstr)	Start		MFGraphNotifyIndividualization	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4377	0	MFGraphNotifyIndividualizationStop(AnsiString tag, Pointer object, UInt32 parameter, UnicodeString bstr)	Stop		MFGraphNotifyIndividualization	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4378	0	MFGraphNotifyRevocationStart(AnsiString tag, Pointer object, UInt32 parameter, UnicodeString bstr)	Start		MFGraphNotifyRevocation	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4379	0	MFGraphNotifyRevocationStop(AnsiString tag, Pointer object, UInt32 parameter, UnicodeString bstr)	Stop		MFGraphNotifyRevocation	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4380	0	MFGraphNotifyFullscreenStart(AnsiString tag, Pointer object, UInt32 parameter, UnicodeString bstr)	Start		MFGraphNotifyFullscreen	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4381	0	MFGraphNotifyFullscreenStop(AnsiString tag, Pointer object, UInt32 parameter, UnicodeString bstr)	Stop		MFGraphNotifyFullscreen	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4382	0	MFGraphNotifyCustomLicenseStart(AnsiString tag, Pointer object, UInt32 parameter, UnicodeString bstr)	Start		MFGraphNotifyCustomLicense	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4383	0	MFGraphNotifyCustomLicenseStop(AnsiString tag, Pointer object, UInt32 parameter, UnicodeString bstr)	Stop		MFGraphNotifyCustomLicense	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4384	0	MFGraphNotifyUserEventStart(AnsiString tag, Pointer object, UInt32 parameter, UnicodeString bstr)	Start		MFGraphNotifyUserEvent	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4385	0	MFGraphNotifyUserEventStop(AnsiString tag, Pointer object, UInt32 parameter, UnicodeString bstr)	Stop		MFGraphNotifyUserEvent	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4386	0	WMPPlaybackOpen(UnicodeString fileName, UInt8 graphType, HexInt32 lastHr)			WMPPlaybackOpen	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4387	0	WMPPlaybackQueue(UnicodeString fileName, UInt8 graphType, HexInt32 lastHr)			WMPPlaybackQueue	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4388	0	WMPPlaybackStart(UnicodeString fileName, UInt8 graphType, HexInt32 lastHr)			WMPPlaybackStart	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4389	0	WMPPlaybackErrorOpen(UnicodeString fileName, UInt8 graphType, HexInt32 lastHr)			WMPPlaybackErrorOpen	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4390	0	WMPPlaybackErrorQueue(UnicodeString fileName, UInt8 graphType, HexInt32 lastHr)			WMPPlaybackErrorQueue	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4391	0	PEAuthCommAcquireSessionKeyStart(AnsiString tag, Pointer object)	Start		PEAuthCommAcquireSessionKey	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4392	0	PEAuthCommAcquireSessionKeyStop(AnsiString tag, Pointer object)	Stop		PEAuthCommAcquireSessionKey	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4393	0	PEAuthCommKernelStateInquiryStart(AnsiString tag, Pointer object)	Start		PEAuthCommKernelStateInquiry	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4394	0	PEAuthCommKernelStateInquiryStop(AnsiString tag, Pointer object)	Stop		PEAuthCommKernelStateInquiry	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4395	0	PEAuthCommReloadGRLStart(AnsiString tag, Pointer object)	Start		PEAuthCommReloadGRL	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4396	0	PEAuthCommReloadGRLStop(AnsiString tag, Pointer object)	Stop		PEAuthCommReloadGRL	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4397	0	PEAuthCommRenewSessionKeyStart(AnsiString tag, Pointer object)	Start		PEAuthCommRenewSessionKey	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4398	0	PEAuthCommRenewSessionKeyStop(AnsiString tag, Pointer object)	Stop		PEAuthCommRenewSessionKey	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4399	0	PEAuthCommGetCompListStart(AnsiString tag, Pointer object)	Start		PEAuthCommGetCompList	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4400	0	PEAuthCommGetCompListStop(AnsiString tag, Pointer object)	Stop		PEAuthCommGetCompList	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4401	0	CacheReader(AnsiString tag, Pointer object, Int64 initialOffset, Int64 finalOffset, UInt32 bytesInCache, UInt32 cacheSize, UInt32 sectorSize)			CacheReader	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4402	0	CodecDXVACPUDecodeStart(AnsiString tag, Pointer object, UInt32 frameIndex, Int64 sampleTime)	Start		CodecDXVACPUDecode	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4403	0	CodecDXVACPUDecodeStop(AnsiString tag, Pointer object, UInt32 frameIndex, Int64 sampleTime)	Stop		CodecDXVACPUDecode	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4404	0	CodecDXVAGPUDecodeStart(AnsiString tag, Pointer object, UInt32 frameIndex, Int64 sampleTime)	Start		CodecDXVAGPUDecode	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4405	0	CodecDXVAGPUDecodeStop(AnsiString tag, Pointer object, UInt32 frameIndex, Int64 sampleTime)	Stop		CodecDXVAGPUDecode	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4406	0	CodecDXVADisplayStart(AnsiString tag, Pointer object, UInt32 frameIndex, Int64 sampleTime)	Start		CodecDXVADisplay	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4407	0	CodecDXVADisplayStop(AnsiString tag, Pointer object, UInt32 frameIndex, Int64 sampleTime)	Stop		CodecDXVADisplay	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4408	0	ASFSourceStart(AnsiString tag, Pointer object, Int64 parameter)	Start		ASFSourceStart	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4409	0	ASFSourceStartStop(AnsiString tag, Pointer object, Int64 parameter)	Stop		ASFSourceStart	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4410	0	OpQueueOperationStart(AnsiString tag, Pointer object, Int32 operation, HexInt32 hr)	Start		OpQueueOperation	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4411	0	OpQueueOperationStop(AnsiString tag, Pointer object, Int32 operation, HexInt32 hr)	Stop		OpQueueOperation	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4412	0	PropertyHandlerInitStart(AnsiString tag, Pointer object, UInt32 contentType)	Start		PropertyHandlerInit	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4413	0	PropertyHandlerInitStop(AnsiString tag, Pointer object, UInt32 contentType)	Stop		PropertyHandlerInit	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4414	0	PropertyHandlerGetValueStart(AnsiString tag, Pointer object, UInt32 contentType)	Start		PropertyHandlerGetValue	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4415	0	PropertyHandlerGetValueStop(AnsiString tag, Pointer object, UInt32 contentType)	Stop		PropertyHandlerGetValue	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4416	0	PropertyHandlerSetValueStart(AnsiString tag, Pointer object, UInt32 contentType)	Start		PropertyHandlerSetValue	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4417	0	PropertyHandlerSetValueStop(AnsiString tag, Pointer object, UInt32 contentType)	Stop		PropertyHandlerSetValue	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4418	0	PropertyHandlerCommitStart(AnsiString tag, Pointer object, UInt32 contentType)	Start		PropertyHandlerCommit	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4419	0	PropertyHandlerCommitStop(AnsiString tag, Pointer object, UInt32 contentType)	Stop		PropertyHandlerCommit	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4420	0	PropertyHandlerWithKeyInitStart(AnsiString tag, Pointer object, UInt32 contentType, GUID propertyKeyGuid, UInt32 propertyKeyFmtId)	Start		PropertyHandlerWithKeyInit	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4421	0	PropertyHandlerWithKeyInitStop(AnsiString tag, Pointer object, UInt32 contentType, GUID propertyKeyGuid, UInt32 propertyKeyFmtId)	Stop		PropertyHandlerWithKeyInit	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4422	0	PropertyHandlerWithKeyGetValueStart(AnsiString tag, Pointer object, UInt32 contentType, GUID propertyKeyGuid, UInt32 propertyKeyFmtId)	Start		PropertyHandlerWithKeyGetValue	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4423	0	PropertyHandlerWithKeyGetValueStop(AnsiString tag, Pointer object, UInt32 contentType, GUID propertyKeyGuid, UInt32 propertyKeyFmtId)	Stop		PropertyHandlerWithKeyGetValue	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4424	0	PropertyHandlerWithKeySetValueStart(AnsiString tag, Pointer object, UInt32 contentType, GUID propertyKeyGuid, UInt32 propertyKeyFmtId)	Start		PropertyHandlerWithKeySetValue	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4425	0	PropertyHandlerWithKeySetValueStop(AnsiString tag, Pointer object, UInt32 contentType, GUID propertyKeyGuid, UInt32 propertyKeyFmtId)	Stop		PropertyHandlerWithKeySetValue	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4426	0	PropertyHandlerWithKeyCommitStart(AnsiString tag, Pointer object, UInt32 contentType, GUID propertyKeyGuid, UInt32 propertyKeyFmtId)	Start		PropertyHandlerWithKeyCommit	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4427	0	PropertyHandlerWithKeyCommitStop(AnsiString tag, Pointer object, UInt32 contentType, GUID propertyKeyGuid, UInt32 propertyKeyFmtId)	Stop		PropertyHandlerWithKeyCommit	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4428	0	TranscodeCreateTranscodeTopologyStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		TranscodeCreateTranscodeTopology	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4429	0	TranscodeCreateTranscodeTopologyStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		TranscodeCreateTranscodeTopology	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4430	0	FieldOfUseValidateStart(AnsiString tag, Pointer object, HexInt32 hr)	Start		FieldOfUseValidate	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4431	0	FieldOfUseValidateStop(AnsiString tag, Pointer object, HexInt32 hr)	Stop		FieldOfUseValidate	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4432	0	CaptureSourceStart(AnsiString tag, Pointer object, HexInt64 duration)			CaptureSourceStart	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4433	0	CaptureSourceReadyQueueEmpty(AnsiString tag, Pointer object, HexInt64 duration)			CaptureSourceReadyQueueEmpty	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4434	0	CaptureSourceReadyQueueFull(AnsiString tag, Pointer object, HexInt64 duration)			CaptureSourceReadyQueueFull	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4441	0	2D:CreateStart(Pointer Pointer, Int32 Length, Int32 Type, Int32 Max)	Start		2D:Create	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4442	0	2D:CreateStop(Pointer Pointer, Int32 Length, Int32 Type, Int32 Max)	Stop		2D:Create	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4443	0	2D:AllocatebufferStart(Pointer Pointer, Pointer ParentQueuePointer, Int32 Free, Int32 Allocated)	Start		2D:Allocatebuffer	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4444	0	2D:AllocatebufferStop(Pointer Pointer, Pointer ParentQueuePointer, Int32 Free, Int32 Allocated)	Stop		2D:Allocatebuffer	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4445	0	2D:CopyStart(Pointer Pointer, Int32 Direction, Int32 Width, Int32 Height, Int32 Format, Int32 Length)	Start		2D:Copy	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4446	0	2D:CopyStop(Pointer Pointer, Int32 Direction, Int32 Width, Int32 Height, Int32 Format, Int32 Length)	Stop		2D:Copy	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4447	0	PropertyHandlerThumbnailGenerationStart(Pointer object, UInt32 contentType)	Start		PropertyHandlerThumbnailGeneration	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4448	0	PropertyHandlerThumbnailGenerationStop(Pointer object, UInt32 contentType)	Stop		PropertyHandlerThumbnailGeneration	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4449	0	PropertyHandlerThumbnailGenerationBestFrame(Pointer object, UInt32 contentType, UInt32 bestFrameIndex, UInt32 totalFrameDecoded, UInt64 timeoutin100NS, Boolean isTimeout)			PropertyHandlerThumbnailGenerationBestFrame	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4450	0	MFMediaSourcesamplereceived(Pointer Sample, UInt32 StreamIndex, UInt64 SampleTimestamp, UInt64 AdjustedTimestamp)			MFMediaSourcesamplereceived	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4451	0	MFMediaSourcesamplereceived4451(Pointer Sample, UInt32 StreamIndex, UInt64 SampleTimestamp, UInt64 AdjustedTimestamp)			MFMediaSourcesamplereceived	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4452	0	AudioRender4452(AnsiString tag, Pointer object)			AudioRender	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4453	0	AudioRender4453(AnsiString tag, Pointer object)			AudioRender	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4456	0	AudioLowLatency(AnsiString tag, Pointer object, Boolean isLowLatency)			AudioLowLatency	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4457	0	MFMediaSourcesamplereceived4457(Pointer object, UInt32 StreamIndex, UInt64 SampleTimestamp)			MFMediaSourcesamplereceived	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4458	0	AudioStarvation4458(AnsiString tag, Pointer object, UInt64 byteCount, UInt64 totalByteCount)			AudioStarvation	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4459	0	AudioRender4459(AnsiString tag, Pointer object, Boolean isRetryWorkItem)			AudioRender	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4460	0	DXGIMapSurfaceStart(Pointer surface)	Start		DXGIMapSurface	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4461	0	DXGIMapSurfaceStop(Pointer surface)	Stop		DXGIMapSurface	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4462	0	AudioRender4462(Boolean isLosigHardwareResource)			AudioRender	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4463	0	AudioRender4463(Boolean IsGoingOn)			AudioRender	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4464	0	AudioRender4464(UInt32 SoundLevel)			AudioRender	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4465	0	AudioRender4465(Boolean status)			AudioRender	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4466	0	AudioRender4466(AnsiString tag, Pointer object, UInt64 BufferDuration)			AudioRender	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4467	0	MFCopyImageStart(Pointer SrcPtr, Pointer DstPtr, Int32 Width, Int32 Height)	Start		MFCopyImage	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4468	0	MFCopyImageStop(Pointer SrcPtr, Pointer DstPtr, UInt32 ReturnCode)	Stop		MFCopyImage	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4469	0	MFMediaDeviceSourceStartTaskStart(Pointer object)	Start		MFMediaDeviceSourceStartTask	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4470	0	MFMediaDeviceSourceStartTaskStop(Pointer object)	Stop		MFMediaDeviceSourceStartTask	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4471	0	MFMediaDeviceStreamSendSinglePhotoTriggerToKSTask(Pointer object, UInt32 dwStreamID, UInt32 uiPinID)			MFMediaDeviceStreamSendSinglePhotoTriggerToKSTask	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4472	0	2D:Create_602(Pointer Object, Pointer Sample, Int32 Free, Int32 Allocated, Int32 MinSampleCount)			2D:Create_602	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4500	0	NetworkRIO_PendingSends(Pointer Object, Int32 PendingCount, UInt32 BytesSent)			NetworkRIO_PendingSends	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4501	0	NetworkRIO_PendingSendsStart(Pointer Object, Int32 PendingCount, UInt32 BytesSent)	Start		NetworkRIO_PendingSends	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4502	0	NetworkRIO_PendingSendsStop(Pointer Object, Int32 PendingCount, UInt32 BytesSent)	Stop		NetworkRIO_PendingSends	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4600	0	MFContentProtectionDeviceCreateStarttaskStart(GUID system)	Start		MFContentProtectionDeviceCreateStarttask	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4601	0	MFContentProtectionDeviceCreateStarttaskStop(Pointer object, UInt32 hrResult)	Stop		MFContentProtectionDeviceCreateStarttask	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4602	0	MFIsContentProtectionDeviceSupportedStarttaskStart(GUID system)	Start		MFIsContentProtectionDeviceSupportedStarttask	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4603	0	MFIsContentProtectionDeviceSupportedStarttaskStop(Boolean available, UInt32 hrResult)	Stop		MFIsContentProtectionDeviceSupportedStarttask	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4604	0	MFContentProtectionDeviceCalltaskStart(Pointer object)	Start		MFContentProtectionDeviceCalltask	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4605	0	MFContentProtectionDeviceCalltaskStop(Pointer object, UInt32 functionID, UInt32 inputbytes, UInt32 outputbytes, UInt32 msTransportTime, UInt32 msExecutionTime, UInt32 msTotal, UInt32 hrResult)	Stop		MFContentProtectionDeviceCalltask	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4606	0	MFContentDecryptorContextCreatetaskStart(GUID system, Pointer manager)	Start		MFContentDecryptorContextCreatetask	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4607	0	MFContentDecryptorContextCreatetaskStop(Pointer object, UInt32 hrResult)	Stop		MFContentDecryptorContextCreatetask	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4608	0	MFContentDecryptorContextInitializeKeytask(Pointer object, UInt32 hrResult)			MFContentDecryptorContextInitializeKeytask	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4609	0	EnsureTrustStart()	Start		EnsureTrust	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4610	0	EnsureTrustStop()	Stop		EnsureTrust	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4611	0	AddDecryptorStart()	Start		AddDecryptor	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4612	0	AddDecryptorStop(HexInt32 hr)	Stop		AddDecryptor	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4613	0	PreparePresentationStart()	Start		PreparePresentation	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4614	0	PreparePresentationStop(HexInt32 hr)	Stop		PreparePresentation	Informational		

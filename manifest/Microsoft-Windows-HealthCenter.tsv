@@ -1,0 +1,48 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-HealthCenter	1	0	HealthCenter_ProviderDisabled(UnicodeString CLSID, UInt32 HRESULT)			HealthCenter_ProviderDisabled	Informational		
+Microsoft-Windows-HealthCenter	2	0	HealthCenter_IconMessage(UnicodeString Message)			HealthCenter_IconMessage	Verbose		
+Microsoft-Windows-HealthCenter	3	0	HealthCenter_IconNotificationCaching(UnicodeString CannonicalName)			HealthCenter_IconNotificationCaching	Warning		
+Microsoft-Windows-HealthCenter	4	0	HealthCenter_UnknownCheck(UInt32 EventID, UInt8 EventVeresion, UnicodeString ChannelName)			HealthCenter_UnknownCheck	Informational		
+Microsoft-Windows-HealthCenter	5	0	HealthCenter_SetState(UInt32 StateID, UnicodeString CanonicalName)			HealthCenter_SetState	Warning		
+Microsoft-Windows-HealthCenter	6	0	HealthCenter_SetState6(UInt32 StateID, UnicodeString CanonicalName, UInt32 HRESULT)			HealthCenter_SetState	Error		
+Microsoft-Windows-HealthCenter	7	0	HealthCenter_SSOInitialization(UInt32 HRESULT)			HealthCenter_SSOInitialization	Error		
+Microsoft-Windows-HealthCenter	8	0	HealthCenter_IconNotificationCaching8(UInt32 HRESULT)			HealthCenter_IconNotificationCaching	Warning		
+Microsoft-Windows-HealthCenter	9	0	HealthCenter_IconNotificationCaching9(UInt32 HRESULT)			HealthCenter_IconNotificationCaching	Warning		
+Microsoft-Windows-HealthCenter	10	0	HealthCenter_IconNotificationCaching10(UInt32 HRESULT)			HealthCenter_IconNotificationCaching	Warning		
+Microsoft-Windows-HealthCenter	11	0	HealthCenter_LoadFromCache(UnicodeString CanonicalName, UInt32 HRESULT)			HealthCenter_LoadFromCache	Informational		
+Microsoft-Windows-HealthCenter	12	0	HealthCenter_SaveToCache(UnicodeString CanonicalName, UInt32 HRESULT)			HealthCenter_SaveToCache	Informational		
+Microsoft-Windows-HealthCenter	13	0	HealthCenter_CrimsonProcessing(UnicodeString ChannelName, UInt32 HRESULT)			HealthCenter_CrimsonProcessing	Error		
+Microsoft-Windows-HealthCenter	14	0	HealthCenter_CrimsonProcessing14(UnicodeString ChannelName, UInt32 HRESULT)			HealthCenter_CrimsonProcessing	Error		
+Microsoft-Windows-HealthCenter	15	0	HealthCenter_CrimsonProcessing15(UnicodeString ChannelName)			HealthCenter_CrimsonProcessing	Error		
+Microsoft-Windows-HealthCenter	16	0	HealthCenter_CrimsonProcessing16(UnicodeString ChannelName, UInt32 HRESULT)			HealthCenter_CrimsonProcessing	Error		
+Microsoft-Windows-HealthCenter	17	0	HealthCenter_CrimsonProcessing17(UnicodeString ChannelName, UInt32 HRESULT)			HealthCenter_CrimsonProcessing	Error		
+Microsoft-Windows-HealthCenter	18	0	HealthCenter_CrimsonProcessing18(UnicodeString InputString, UInt32 HRESULT)			HealthCenter_CrimsonProcessing	Error		
+Microsoft-Windows-HealthCenter	19	0	HealthCenter_LoadSettings(UnicodeString CanonicalName, UInt32 HRESULT)			HealthCenter_LoadSettings	Error		
+Microsoft-Windows-HealthCenter	20	0	HealthCenter_NotificationProcessing(UnicodeString CanonicalName)			HealthCenter_NotificationProcessing	Informational		
+Microsoft-Windows-HealthCenter	21	0	HealthCenter_NotificationProcessing21(UnicodeString CanonicalName)			HealthCenter_NotificationProcessing	Informational		
+Microsoft-Windows-HealthCenter	100	0	HealthCenter_StringExpansionStart()	Start		HealthCenter_StringExpansion	Informational		
+Microsoft-Windows-HealthCenter	101	0	HealthCenter_StringExpansionStop()	Stop		HealthCenter_StringExpansion	Informational		
+Microsoft-Windows-HealthCenter	102	0	HealthCenter_StateChangeStart()	Start		HealthCenter_StateChange	Informational		
+Microsoft-Windows-HealthCenter	103	0	HealthCenter_StateChangeStop()	Stop		HealthCenter_StateChange	Informational		
+Microsoft-Windows-HealthCenter	104	0	HealthCenter_LoadFromCacheStart()	Start		HealthCenter_LoadFromCache	Informational		
+Microsoft-Windows-HealthCenter	105	0	HealthCenter_LoadFromCacheStop()	Stop		HealthCenter_LoadFromCache	Informational		
+Microsoft-Windows-HealthCenter	106	0	HealthCenter_SaveToCacheStart()	Start		HealthCenter_SaveToCache	Informational		
+Microsoft-Windows-HealthCenter	107	0	HealthCenter_SaveToCacheStop()	Stop		HealthCenter_SaveToCache	Informational		
+Microsoft-Windows-HealthCenter	108	0	HealthCenter_StartupStart()	Start		HealthCenter_Startup	Informational		
+Microsoft-Windows-HealthCenter	109	0	HealthCenter_StartupStop()	Stop		HealthCenter_Startup	Informational		
+Microsoft-Windows-HealthCenter	110	0	HealthCenter_ShutdownStart()	Start		HealthCenter_Shutdown	Informational		
+Microsoft-Windows-HealthCenter	111	0	HealthCenter_ShutdownStop()	Stop		HealthCenter_Shutdown	Informational		
+Microsoft-Windows-HealthCenter	112	0	HealthCenter_IconBalloonStart()	Start		HealthCenter_IconBalloon	Informational		
+Microsoft-Windows-HealthCenter	113	0	HealthCenter_IconBalloonStop()	Stop		HealthCenter_IconBalloon	Informational		
+Microsoft-Windows-HealthCenter	114	0	HealthCenter_IconToolTipStart()	Start		HealthCenter_IconToolTip	Informational		
+Microsoft-Windows-HealthCenter	115	0	HealthCenter_IconToolTipStop()	Stop		HealthCenter_IconToolTip	Informational		
+Microsoft-Windows-HealthCenter	116	0	HealthCenter_IconFlyoutStart()	Start		HealthCenter_IconFlyout	Informational		
+Microsoft-Windows-HealthCenter	117	0	HealthCenter_IconFlyoutStop()	Stop		HealthCenter_IconFlyout	Informational		
+Microsoft-Windows-HealthCenter	120	0	HealthCenter_IconProcessNotificationStart()	Start		HealthCenter_IconProcessNotification	Informational		
+Microsoft-Windows-HealthCenter	121	0	HealthCenter_IconProcessNotificationStop()	Stop		HealthCenter_IconProcessNotification	Informational		
+Microsoft-Windows-HealthCenter	122	0	HealthCenter_ProviderInitializedStart(UnicodeString CLSID)	Start		HealthCenter_ProviderInitialized	Informational		
+Microsoft-Windows-HealthCenter	123	0	HealthCenter_ProviderInitializedStop(UnicodeString CLSID)	Stop		HealthCenter_ProviderInitialized	Informational		
+Microsoft-Windows-HealthCenter	124	0	HealthCenter_CPLLaunch()			HealthCenter_CPLLaunch	Informational		
+Microsoft-Windows-HealthCenter	1000	0	Perftrack_HealthCenter_IconInitializedStart()	Start	WHC	Perftrack_HealthCenter_IconInitialized	Informational		
+Microsoft-Windows-HealthCenter	1001	0	Perftrack_HealthCenter_IconInitializedStop()	Stop	WHC	Perftrack_HealthCenter_IconInitialized	Informational		
+Microsoft-Windows-HealthCenter	1002	0	Perftrack_HealthCenter_OpenUsingIconFlyoutStop()	Stop	WHC	Perftrack_HealthCenter_OpenUsingIconFlyout	Informational		

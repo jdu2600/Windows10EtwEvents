@@ -1,0 +1,279 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-IE-F12-Provider	101	0	Timeline_ZoomStart(UnicodeString TraceDescription)	Start		Timeline_Zoom	Informational		
+Microsoft-Windows-IE-F12-Provider	102	0	Timeline_ZoomStop(UnicodeString TraceDescription)	Stop		Timeline_Zoom	Informational		
+Microsoft-Windows-IE-F12-Provider	103	0	Timeline_Grid_SortStart(UnicodeString TraceDescription)	Start		Timeline_Grid_Sort	Informational		
+Microsoft-Windows-IE-F12-Provider	104	0	Timeline_Grid_SortStop(UnicodeString TraceDescription)	Stop		Timeline_Grid_Sort	Informational		
+Microsoft-Windows-IE-F12-Provider	105	0	Timeline_LoadGraphsStart(UnicodeString TraceDescription)	Start		Timeline_LoadGraphs	Informational		
+Microsoft-Windows-IE-F12-Provider	106	0	Timeline_LoadGraphsStop(UnicodeString TraceDescription)	Stop		Timeline_LoadGraphs	Informational		
+Microsoft-Windows-IE-F12-Provider	107	0	Timeline_Grid_ScrolledStart(UnicodeString TraceDescription)	Start		Timeline_Grid_Scrolled	Informational		
+Microsoft-Windows-IE-F12-Provider	108	0	Timeline_Grid_FilteredStop(UnicodeString TraceDescription)	Stop		Timeline_Grid_Filtered	Informational		
+Microsoft-Windows-IE-F12-Provider	109	0	Timeline_Selection_UpdatedStart(UnicodeString TraceDescription)	Start		Timeline_Selection_Updated	Informational		
+Microsoft-Windows-IE-F12-Provider	110	0	Timeline_Selection_UpdatedStop(UnicodeString TraceDescription)	Stop		Timeline_Selection_Updated	Informational		
+Microsoft-Windows-IE-F12-Provider	111	0	Timeline_GridUpdatedForFilterBackgroundStart(UnicodeString TraceDescription)	Start		Timeline_GridUpdatedForFilterBackground	Informational		
+Microsoft-Windows-IE-F12-Provider	112	0	Timeline_GridUpdatedForFilterBackgroundStop(UnicodeString TraceDescription)	Stop		Timeline_GridUpdatedForFilterBackground	Informational		
+Microsoft-Windows-IE-F12-Provider	113	0	Timeline_GridUpdatedForFilterNetworkStart(UnicodeString TraceDescription)	Start		Timeline_GridUpdatedForFilterNetwork	Informational		
+Microsoft-Windows-IE-F12-Provider	114	0	Timeline_GridUpdatedForFilterNetworkStop(UnicodeString TraceDescription)	Stop		Timeline_GridUpdatedForFilterNetwork	Informational		
+Microsoft-Windows-IE-F12-Provider	115	0	Timeline_GridUpdatedForFilterMeasureStart(UnicodeString TraceDescription)	Start		Timeline_GridUpdatedForFilterMeasure	Informational		
+Microsoft-Windows-IE-F12-Provider	116	0	Timeline_GridUpdatedForFilterMeasureStop(UnicodeString TraceDescription)	Stop		Timeline_GridUpdatedForFilterMeasure	Informational		
+Microsoft-Windows-IE-F12-Provider	117	0	Timeline_GridUpdatedForFilterFramesStart(UnicodeString TraceDescription)	Start		Timeline_GridUpdatedForFilterFrames	Informational		
+Microsoft-Windows-IE-F12-Provider	118	0	Timeline_GridUpdatedForFilterFramesStop(UnicodeString TraceDescription)	Stop		Timeline_GridUpdatedForFilterFrames	Informational		
+Microsoft-Windows-IE-F12-Provider	119	0	Timeline_GridUpdatedForFilterNameStart(UnicodeString TraceDescription)	Start		Timeline_GridUpdatedForFilterName	Informational		
+Microsoft-Windows-IE-F12-Provider	120	0	Timeline_GridUpdatedForFilterNameStop(UnicodeString TraceDescription)	Stop		Timeline_GridUpdatedForFilterName	Informational		
+Microsoft-Windows-IE-F12-Provider	201	0	Memory_TakeSnapshotStart(UnicodeString TraceDescription)	Start		Memory_TakeSnapshot	Informational		
+Microsoft-Windows-IE-F12-Provider	202	0	Memory_TakeSnapshotStop(UnicodeString TraceDescription)	Stop		Memory_TakeSnapshot	Informational		
+Microsoft-Windows-IE-F12-Provider	203	1	Memory_CompareSnapshotStart_V1(UInt32 Key, UnicodeString TraceDescription)	Start		Memory_CompareSnapshot	Informational		
+Microsoft-Windows-IE-F12-Provider	204	1	Memory_CompareSnapshotStop_V1(UInt32 Key, UnicodeString TraceDescription)	Stop		Memory_CompareSnapshot	Informational		
+Microsoft-Windows-IE-F12-Provider	205	1	Memory_ViewSnapshotStart_V1(UInt32 Key, UnicodeString TraceDescription)	Start		Memory_ViewSnapshot	Informational		
+Microsoft-Windows-IE-F12-Provider	206	1	Memory_ViewSnapshotStop_V1(UInt32 Key, UnicodeString TraceDescription)	Stop		Memory_ViewSnapshot	Informational		
+Microsoft-Windows-IE-F12-Provider	207	0	Memory_Grid_SortStart(UnicodeString TraceDescription)	Start		Memory_Grid_Sort	Informational		
+Microsoft-Windows-IE-F12-Provider	208	0	Memory_Grid_SortStop(UnicodeString TraceDescription)	Stop		Memory_Grid_Sort	Informational		
+Microsoft-Windows-IE-F12-Provider	209	0	Memory_DisplayFirstLevelSnapshotDataStart(UnicodeString TraceDescription)	Start		Memory_DisplayFirstLevelSnapshotData	Informational		
+Microsoft-Windows-IE-F12-Provider	210	0	Memory_DisplayFirstLevelSnapshotDataStop(UnicodeString TraceDescription)	Stop		Memory_DisplayFirstLevelSnapshotData	Informational		
+Microsoft-Windows-IE-F12-Provider	211	0	Memory_ToolReadyStart(UnicodeString TraceDescription)	Start		Memory_ToolReady	Informational		
+Microsoft-Windows-IE-F12-Provider	212	0	Memory_ToolReadyStop(UnicodeString TraceDescription)	Stop		Memory_ToolReady	Informational		
+Microsoft-Windows-IE-F12-Provider	213	0	Memory_GridFilterUIResponseStart(UnicodeString TraceDescription)	Start		Memory_GridFilterUIResponse	Informational		
+Microsoft-Windows-IE-F12-Provider	214	0	Memory_GridFilterUIResponseStop(UnicodeString TraceDescription)	Stop		Memory_GridFilterUIResponse	Informational		
+Microsoft-Windows-IE-F12-Provider	215	0	Memory_UpdateObjectReferenceGraphStart(UnicodeString TraceDescription)	Start		Memory_UpdateObjectReferenceGraph	Informational		
+Microsoft-Windows-IE-F12-Provider	216	0	Memory_UpdateObjectReferenceGraphStop(UnicodeString TraceDescription)	Stop		Memory_UpdateObjectReferenceGraph	Informational		
+Microsoft-Windows-IE-F12-Provider	217	0	Memory_ProcessingSnapshotStart(UInt32 Key, UnicodeString TraceDescription)	Start		Memory_ProcessingSnapshot	Informational		
+Microsoft-Windows-IE-F12-Provider	218	0	Memory_ProcessingSnapshotStop(UInt32 Key, UnicodeString TraceDescription)	Stop		Memory_ProcessingSnapshot	Informational		
+Microsoft-Windows-IE-F12-Provider	219	0	Memory_ProcessingDiffSnapshotStart(UInt32 Key, UnicodeString TraceDescription)	Start		Memory_ProcessingDiffSnapshot	Informational		
+Microsoft-Windows-IE-F12-Provider	220	0	Memory_ProcessingDiffSnapshotStop(UInt32 Key, UnicodeString TraceDescription)	Stop		Memory_ProcessingDiffSnapshot	Informational		
+Microsoft-Windows-IE-F12-Provider	301	0	Debugger_StepOverStart(UnicodeString TraceDescription)	Start		Debugger_StepOver	Informational		
+Microsoft-Windows-IE-F12-Provider	302	0	Debugger_StepIntoStart(UnicodeString TraceDescription)	Start		Debugger_StepInto	Informational		
+Microsoft-Windows-IE-F12-Provider	303	0	Debugger_StepOutStart(UnicodeString TraceDescription)	Start		Debugger_StepOut	Informational		
+Microsoft-Windows-IE-F12-Provider	304	0	Debugger_OnBreakStart(UnicodeString TraceDescription)	Start		Debugger_OnBreak	Informational		
+Microsoft-Windows-IE-F12-Provider	305	0	Debugger_OnBreakStop(UnicodeString TraceDescription)	Stop		Debugger_OnBreak	Informational		
+Microsoft-Windows-IE-F12-Provider	306	0	Debugger_PrettyPrintStart(UnicodeString TraceDescription)	Start		Debugger_PrettyPrint	Informational		
+Microsoft-Windows-IE-F12-Provider	307	0	Debugger_PrettyPrintStop(UnicodeString TraceDescription)	Stop		Debugger_PrettyPrint	Informational		
+Microsoft-Windows-IE-F12-Provider	308	0	Debugger_OpenDocumentStart(UInt32 Key, UnicodeString TraceDescription)	Start		Debugger_OpenDocument	Informational		
+Microsoft-Windows-IE-F12-Provider	309	0	Debugger_OpenDocumentStop(UInt32 Key, UnicodeString TraceDescription)	Stop		Debugger_OpenDocument	Informational		
+Microsoft-Windows-IE-F12-Provider	310	0	Debugger_CloseDocumentStart(UnicodeString TraceDescription)	Start		Debugger_CloseDocument	Informational		
+Microsoft-Windows-IE-F12-Provider	311	0	Debugger_CloseDocumentStop(UnicodeString TraceDescription)	Stop		Debugger_CloseDocument	Informational		
+Microsoft-Windows-IE-F12-Provider	312	0	Debugger_SwitchDocumentStart(UInt32 Key, UnicodeString TraceDescription)	Start		Debugger_SwitchDocument	Informational		
+Microsoft-Windows-IE-F12-Provider	313	0	Debugger_SwitchDocumentStop(UInt32 Key, UnicodeString TraceDescription)	Stop		Debugger_SwitchDocument	Informational		
+Microsoft-Windows-IE-F12-Provider	314	0	Debugger_RevealRangeStart(UnicodeString TraceDescription)	Start		Debugger_RevealRange	Informational		
+Microsoft-Windows-IE-F12-Provider	315	0	Debugger_RevealRangeStop(UnicodeString TraceDescription)	Stop		Debugger_RevealRange	Informational		
+Microsoft-Windows-IE-F12-Provider	316	0	Debugger_CallstackController_GoToStart(UnicodeString TraceDescription)	Start		Debugger_CallstackController_GoTo	Informational		
+Microsoft-Windows-IE-F12-Provider	317	0	Debugger_CallstackController_GoToStop(UnicodeString TraceDescription)	Stop		Debugger_CallstackController_GoTo	Informational		
+Microsoft-Windows-IE-F12-Provider	318	0	Debugger_BreakpointController_SetAllEnabledStatesStart(UnicodeString TraceDescription)	Start		Debugger_BreakpointController_SetAllEnabledStates	Informational		
+Microsoft-Windows-IE-F12-Provider	319	0	Debugger_BreakpointController_SetAllEnabledStatesStop(UnicodeString TraceDescription)	Stop		Debugger_BreakpointController_SetAllEnabledStates	Informational		
+Microsoft-Windows-IE-F12-Provider	320	0	Debugger_EditorWindow_NavigateToStart(UnicodeString TraceDescription)	Start		Debugger_EditorWindow_NavigateTo	Informational		
+Microsoft-Windows-IE-F12-Provider	321	0	Debugger_EditorWindow_NavigateToStop(UnicodeString TraceDescription)	Stop		Debugger_EditorWindow_NavigateTo	Informational		
+Microsoft-Windows-IE-F12-Provider	322	0	Debugger_Editor_SetModelStart(UnicodeString TraceDescription)	Start		Debugger_Editor_SetModel	Informational		
+Microsoft-Windows-IE-F12-Provider	323	0	Debugger_Editor_SetModelStop(UnicodeString TraceDescription)	Stop		Debugger_Editor_SetModel	Informational		
+Microsoft-Windows-IE-F12-Provider	324	0	Debugger_Editor_CreateModelStart(UnicodeString TraceDescription)	Start		Debugger_Editor_CreateModel	Informational		
+Microsoft-Windows-IE-F12-Provider	325	0	Debugger_Editor_CreateModelStop(UnicodeString TraceDescription)	Stop		Debugger_Editor_CreateModel	Informational		
+Microsoft-Windows-IE-F12-Provider	326	0	Debugger_Editor_CreateStart(UnicodeString TraceDescription)	Start		Debugger_Editor_Create	Informational		
+Microsoft-Windows-IE-F12-Provider	327	0	Debugger_Editor_CreateStop(UnicodeString TraceDescription)	Stop		Debugger_Editor_Create	Informational		
+Microsoft-Windows-IE-F12-Provider	328	0	Debugger_Editor_LayoutStart(UnicodeString TraceDescription)	Start		Debugger_Editor_Layout	Informational		
+Microsoft-Windows-IE-F12-Provider	329	0	Debugger_Editor_LayoutStop(UnicodeString TraceDescription)	Stop		Debugger_Editor_Layout	Informational		
+Microsoft-Windows-IE-F12-Provider	330	0	Debugger_Editor_ChangeViewZonesStart(UnicodeString TraceDescription)	Start		Debugger_Editor_ChangeViewZones	Informational		
+Microsoft-Windows-IE-F12-Provider	331	0	Debugger_Editor_ChangeViewZonesStop(UnicodeString TraceDescription)	Stop		Debugger_Editor_ChangeViewZones	Informational		
+Microsoft-Windows-IE-F12-Provider	332	0	Debugger_Editor_RevealPositionStart(UnicodeString TraceDescription)	Start		Debugger_Editor_RevealPosition	Informational		
+Microsoft-Windows-IE-F12-Provider	333	0	Debugger_Editor_RevealPositionStop(UnicodeString TraceDescription)	Stop		Debugger_Editor_RevealPosition	Informational		
+Microsoft-Windows-IE-F12-Provider	334	0	Debugger_Editor_SaveViewStateStart(UnicodeString TraceDescription)	Start		Debugger_Editor_SaveViewState	Informational		
+Microsoft-Windows-IE-F12-Provider	335	0	Debugger_Editor_SaveViewStateStop(UnicodeString TraceDescription)	Stop		Debugger_Editor_SaveViewState	Informational		
+Microsoft-Windows-IE-F12-Provider	336	0	Debugger_Editor_RestoreViewStateStart(UnicodeString TraceDescription)	Start		Debugger_Editor_RestoreViewState	Informational		
+Microsoft-Windows-IE-F12-Provider	337	0	Debugger_Editor_RestoreViewStateStop(UnicodeString TraceDescription)	Stop		Debugger_Editor_RestoreViewState	Informational		
+Microsoft-Windows-IE-F12-Provider	338	0	Debugger_EditorWindow_CreateDataTipFromPositionStart(UnicodeString TraceDescription)	Start		Debugger_EditorWindow_CreateDataTipFromPosition	Informational		
+Microsoft-Windows-IE-F12-Provider	339	0	Debugger_EditorWindow_CreateDataTipFromPositionStop(UnicodeString TraceDescription)	Stop		Debugger_EditorWindow_CreateDataTipFromPosition	Informational		
+Microsoft-Windows-IE-F12-Provider	340	0	Debugger_BreakpointController_SetEnabledStateStart(UnicodeString TraceDescription)	Start		Debugger_BreakpointController_SetEnabledState	Informational		
+Microsoft-Windows-IE-F12-Provider	341	0	Debugger_BreakpointController_SetEnabledStateStop(UnicodeString TraceDescription)	Stop		Debugger_BreakpointController_SetEnabledState	Informational		
+Microsoft-Windows-IE-F12-Provider	342	0	Debugger_BreakpointController_BreakpointChangedStart(UnicodeString TraceDescription)	Start		Debugger_BreakpointController_BreakpointChanged	Informational		
+Microsoft-Windows-IE-F12-Provider	343	0	Debugger_BreakpointController_BreakpointChangedStop(UnicodeString TraceDescription)	Stop		Debugger_BreakpointController_BreakpointChanged	Informational		
+Microsoft-Windows-IE-F12-Provider	344	0	Debugger_BreakpointWindow_BreakpointChangedStart(UnicodeString TraceDescription)	Start		Debugger_BreakpointWindow_BreakpointChanged	Informational		
+Microsoft-Windows-IE-F12-Provider	345	0	Debugger_BreakpointWindow_BreakpointChangedStop(UnicodeString TraceDescription)	Stop		Debugger_BreakpointWindow_BreakpointChanged	Informational		
+Microsoft-Windows-IE-F12-Provider	346	0	Debugger_WatchWindowView_RefreshViewStart(UnicodeString TraceDescription)	Start		Debugger_WatchWindowView_RefreshView	Informational		
+Microsoft-Windows-IE-F12-Provider	347	0	Debugger_WatchWindowView_RefreshViewStop(UnicodeString TraceDescription)	Stop		Debugger_WatchWindowView_RefreshView	Informational		
+Microsoft-Windows-IE-F12-Provider	348	0	Debugger_StepDocumentStart(UnicodeString TraceDescription)	Start		Debugger_StepDocument	Informational		
+Microsoft-Windows-IE-F12-Provider	349	0	Debugger_ToggleJMCStart(UnicodeString TraceDescription)	Start		Debugger_ToggleJMC	Informational		
+Microsoft-Windows-IE-F12-Provider	350	0	Debugger_ToggleJMCStop(UnicodeString TraceDescription)	Stop		Debugger_ToggleJMC	Informational		
+Microsoft-Windows-IE-F12-Provider	351	0	Debugger_ToggleCallstackLibraryFramesStart(UnicodeString TraceDescription)	Start		Debugger_ToggleCallstackLibraryFrames	Informational		
+Microsoft-Windows-IE-F12-Provider	352	0	Debugger_ToggleCallstackLibraryFramesStop(UnicodeString TraceDescription)	Stop		Debugger_ToggleCallstackLibraryFrames	Informational		
+Microsoft-Windows-IE-F12-Provider	353	0	Debugger_SpecifyUrlAsJMCTypeStart(UnicodeString TraceDescription)	Start		Debugger_SpecifyUrlAsJMCType	Informational		
+Microsoft-Windows-IE-F12-Provider	354	0	Debugger_SpecifyUrlAsJMCTypeStop(UnicodeString TraceDescription)	Stop		Debugger_SpecifyUrlAsJMCType	Informational		
+Microsoft-Windows-IE-F12-Provider	355	0	Debugger_Persistence_DataLoadStart(UnicodeString TraceDescription)	Start		Debugger_Persistence_DataLoad	Informational		
+Microsoft-Windows-IE-F12-Provider	356	0	Debugger_Persistence_DataLoadStop(UnicodeString TraceDescription)	Stop		Debugger_Persistence_DataLoad	Informational		
+Microsoft-Windows-IE-F12-Provider	357	0	Debugger_Persistence_AddBreakpointsStart(UnicodeString TraceDescription)	Start		Debugger_Persistence_AddBreakpoints	Informational		
+Microsoft-Windows-IE-F12-Provider	358	0	Debugger_Persistence_AddBreakpointsStop(UnicodeString TraceDescription)	Stop		Debugger_Persistence_AddBreakpoints	Informational		
+Microsoft-Windows-IE-F12-Provider	359	0	Debugger_Persistence_AddWatchesStart(UnicodeString TraceDescription)	Start		Debugger_Persistence_AddWatches	Informational		
+Microsoft-Windows-IE-F12-Provider	360	0	Debugger_Persistence_AddWatchesStop(UnicodeString TraceDescription)	Stop		Debugger_Persistence_AddWatches	Informational		
+Microsoft-Windows-IE-F12-Provider	361	0	Debugger_Persistence_TabOpenStart(UnicodeString TraceDescription)	Start		Debugger_Persistence_TabOpen	Informational		
+Microsoft-Windows-IE-F12-Provider	362	0	Debugger_Persistence_TabOpenStop(UnicodeString TraceDescription)	Stop		Debugger_Persistence_TabOpen	Informational		
+Microsoft-Windows-IE-F12-Provider	363	0	Debugger_Persistence_SaveStateStart(UnicodeString TraceDescription)	Start		Debugger_Persistence_SaveState	Informational		
+Microsoft-Windows-IE-F12-Provider	364	0	Debugger_Persistence_SaveStateStop(UnicodeString TraceDescription)	Stop		Debugger_Persistence_SaveState	Informational		
+Microsoft-Windows-IE-F12-Provider	365	0	Debugger_SourceMap_ToggleSourceMapStart(UnicodeString TraceDescription)	Start		Debugger_SourceMap_ToggleSourceMap	Informational		
+Microsoft-Windows-IE-F12-Provider	366	0	Debugger_SourceMap_ToggleSourceMapStop(UnicodeString TraceDescription)	Stop		Debugger_SourceMap_ToggleSourceMap	Informational		
+Microsoft-Windows-IE-F12-Provider	367	0	Debugger_SourceMap_ParseSourceMapAsyncStart(UnicodeString TraceDescription)	Start		Debugger_SourceMap_ParseSourceMapAsync	Informational		
+Microsoft-Windows-IE-F12-Provider	368	0	Debugger_SourceMap_ParseSourceMapAsyncStop(UnicodeString TraceDescription)	Stop		Debugger_SourceMap_ParseSourceMapAsync	Informational		
+Microsoft-Windows-IE-F12-Provider	369	0	Debugger_Editor_GetOrCreateModeStart(UnicodeString TraceDescription)	Start		Debugger_Editor_GetOrCreateMode	Informational		
+Microsoft-Windows-IE-F12-Provider	370	0	Debugger_Editor_GetOrCreateModeStop(UnicodeString TraceDescription)	Stop		Debugger_Editor_GetOrCreateMode	Informational		
+Microsoft-Windows-IE-F12-Provider	371	0	Debugger_OnAddDocuments(UnicodeString TraceDescription)			Debugger_OnAddDocuments	Informational		
+Microsoft-Windows-IE-F12-Provider	372	1	Debugger_Intellisense_ListBox_BuildStart_V1(UInt32 Key, UnicodeString TraceDescription)	Start		Debugger_Intellisense_ListBox_Build	Informational		
+Microsoft-Windows-IE-F12-Provider	373	1	Debugger_Intellisense_ListBox_BuildStop_V1(UInt32 Key, UnicodeString TraceDescription)	Stop		Debugger_Intellisense_ListBox_Build	Informational		
+Microsoft-Windows-IE-F12-Provider	374	1	Debugger_Intellisense_ListBox_ResetStart_V1(UInt32 Key, UnicodeString TraceDescription)	Start		Debugger_Intellisense_ListBox_Reset	Informational		
+Microsoft-Windows-IE-F12-Provider	375	1	Debugger_Intellisense_ListBox_ResetStop_V1(UInt32 Key, UnicodeString TraceDescription)	Stop		Debugger_Intellisense_ListBox_Reset	Informational		
+Microsoft-Windows-IE-F12-Provider	376	1	Debugger_Intellisense_Menu_FilterStart_V1(UInt32 Key, UnicodeString TraceDescription)	Start		Debugger_Intellisense_Menu_Filter	Informational		
+Microsoft-Windows-IE-F12-Provider	377	1	Debugger_Intellisense_Menu_FilterStop_V1(UInt32 Key, UnicodeString TraceDescription)	Stop		Debugger_Intellisense_Menu_Filter	Informational		
+Microsoft-Windows-IE-F12-Provider	378	1	Debugger_Intellisense_Menu_LayoutStart_V1(UInt32 Key, UnicodeString TraceDescription)	Start		Debugger_Intellisense_Menu_Layout	Informational		
+Microsoft-Windows-IE-F12-Provider	379	1	Debugger_Intellisense_Menu_LayoutStop_V1(UInt32 Key, UnicodeString TraceDescription)	Stop		Debugger_Intellisense_Menu_Layout	Informational		
+Microsoft-Windows-IE-F12-Provider	380	1	Debugger_Intellisense_Provider_Get_ExpressionStart_V1(UInt32 Key, UnicodeString TraceDescription)	Start		Debugger_Intellisense_Provider_Get_Expression	Informational		
+Microsoft-Windows-IE-F12-Provider	381	1	Debugger_Intellisense_Provider_Get_ExpressionStop_V1(UInt32 Key, UnicodeString TraceDescription)	Stop		Debugger_Intellisense_Provider_Get_Expression	Informational		
+Microsoft-Windows-IE-F12-Provider	382	0	Debugger_Intellisense_Provider_UpdateStart(UnicodeString TraceDescription)	Start		Debugger_Intellisense_Provider_Update	Informational		
+Microsoft-Windows-IE-F12-Provider	383	0	Debugger_Intellisense_Provider_UpdateStop(UnicodeString TraceDescription)	Stop		Debugger_Intellisense_Provider_Update	Informational		
+Microsoft-Windows-IE-F12-Provider	384	0	Debugger_Intellisense_Provider_Get_ItemsStart(UnicodeString TraceDescription)	Start		Debugger_Intellisense_Provider_Get_Items	Informational		
+Microsoft-Windows-IE-F12-Provider	385	0	Debugger_Intellisense_Provider_Get_ItemsStop(UnicodeString TraceDescription)	Stop		Debugger_Intellisense_Provider_Get_Items	Informational		
+Microsoft-Windows-IE-F12-Provider	386	0	Debugger_AsyncStackProvider_GetFramesStart(UnicodeString TraceDescription)	Start		Debugger_AsyncStackProvider_GetFrames	Informational		
+Microsoft-Windows-IE-F12-Provider	387	0	Debugger_AsyncStackProvider_GetFramesStop(UnicodeString TraceDescription)	Stop		Debugger_AsyncStackProvider_GetFrames	Informational		
+Microsoft-Windows-IE-F12-Provider	388	0	Debugger_AsyncStackProvider_GetFramesStop388(UnicodeString TraceDescription)	Stop		Debugger_AsyncStackProvider_GetFrames	Informational		
+Microsoft-Windows-IE-F12-Provider	401	0	Console_Window_CreateStart(UnicodeString TraceDescription)	Start		Console_Window_Create	Informational		
+Microsoft-Windows-IE-F12-Provider	402	0	Console_Window_CreateStop(UnicodeString TraceDescription)	Stop		Console_Window_Create	Informational		
+Microsoft-Windows-IE-F12-Provider	403	0	Console_AttachStart(UnicodeString TraceDescription)	Start		Console_Attach	Informational		
+Microsoft-Windows-IE-F12-Provider	404	0	Console_AttachStop(UnicodeString TraceDescription)	Stop		Console_Attach	Informational		
+Microsoft-Windows-IE-F12-Provider	405	0	Console_MessageStart(UnicodeString TraceDescription)	Start		Console_Message	Informational		
+Microsoft-Windows-IE-F12-Provider	406	0	Console_MessageStop(UnicodeString TraceDescription)	Stop		Console_Message	Informational		
+Microsoft-Windows-IE-F12-Provider	407	0	Console_InputStart(UnicodeString TraceDescription)	Start		Console_Input	Informational		
+Microsoft-Windows-IE-F12-Provider	408	0	Console_InputStop(UnicodeString TraceDescription)	Stop		Console_Input	Informational		
+Microsoft-Windows-IE-F12-Provider	409	0	Console_OutputStart(UnicodeString TraceDescription)	Start		Console_Output	Informational		
+Microsoft-Windows-IE-F12-Provider	410	0	Console_OutputStop(UnicodeString TraceDescription)	Stop		Console_Output	Informational		
+Microsoft-Windows-IE-F12-Provider	411	0	Console_Output_RenderStart(UnicodeString TraceDescription)	Start		Console_Output_Render	Informational		
+Microsoft-Windows-IE-F12-Provider	412	0	Console_Output_RenderStop(UnicodeString TraceDescription)	Stop		Console_Output_Render	Informational		
+Microsoft-Windows-IE-F12-Provider	413	0	Console_Item_ToggleStart(UnicodeString TraceDescription)	Start		Console_Item_Toggle	Informational		
+Microsoft-Windows-IE-F12-Provider	414	0	Console_Item_ToggleStop(UnicodeString TraceDescription)	Stop		Console_Item_Toggle	Informational		
+Microsoft-Windows-IE-F12-Provider	415	0	Console_HtmlLines_ExpandStart(UnicodeString TraceDescription)	Start		Console_HtmlLines_Expand	Informational		
+Microsoft-Windows-IE-F12-Provider	416	0	Console_HtmlLines_ExpandStop(UnicodeString TraceDescription)	Stop		Console_HtmlLines_Expand	Informational		
+Microsoft-Windows-IE-F12-Provider	417	0	Console_Context_Menu_LoadingStart(UnicodeString TraceDescription)	Start		Console_Context_Menu_Loading	Informational		
+Microsoft-Windows-IE-F12-Provider	418	0	Console_Context_Menu_LoadingStop(UnicodeString TraceDescription)	Stop		Console_Context_Menu_Loading	Informational		
+Microsoft-Windows-IE-F12-Provider	419	0	Console_ScrollStart(UnicodeString TraceDescription)	Start		Console_Scroll	Informational		
+Microsoft-Windows-IE-F12-Provider	420	0	Console_ScrollStop(UnicodeString TraceDescription)	Stop		Console_Scroll	Informational		
+Microsoft-Windows-IE-F12-Provider	421	1	Console_Intellisense_ListBox_BuildStart_V1(UInt32 Key, UnicodeString TraceDescription)	Start		Console_Intellisense_ListBox_Build	Informational		
+Microsoft-Windows-IE-F12-Provider	422	1	Console_Intellisense_ListBox_BuildStop_V1(UInt32 Key, UnicodeString TraceDescription)	Stop		Console_Intellisense_ListBox_Build	Informational		
+Microsoft-Windows-IE-F12-Provider	423	1	Console_Intellisense_ListBox_ResetStart_V1(UInt32 Key, UnicodeString TraceDescription)	Start		Console_Intellisense_ListBox_Reset	Informational		
+Microsoft-Windows-IE-F12-Provider	424	1	Console_Intellisense_ListBox_ResetStop_V1(UInt32 Key, UnicodeString TraceDescription)	Stop		Console_Intellisense_ListBox_Reset	Informational		
+Microsoft-Windows-IE-F12-Provider	425	1	Console_Intellisense_Menu_FilterStart_V1(UInt32 Key, UnicodeString TraceDescription)	Start		Console_Intellisense_Menu_Filter	Informational		
+Microsoft-Windows-IE-F12-Provider	426	1	Console_Intellisense_Menu_FilterStop_V1(UInt32 Key, UnicodeString TraceDescription)	Stop		Console_Intellisense_Menu_Filter	Informational		
+Microsoft-Windows-IE-F12-Provider	427	1	Console_Intellisense_Menu_LayoutStart_V1(UInt32 Key, UnicodeString TraceDescription)	Start		Console_Intellisense_Menu_Layout	Informational		
+Microsoft-Windows-IE-F12-Provider	428	1	Console_Intellisense_Menu_LayoutStop_V1(UInt32 Key, UnicodeString TraceDescription)	Stop		Console_Intellisense_Menu_Layout	Informational		
+Microsoft-Windows-IE-F12-Provider	429	1	Console_Intellisense_Provider_Get_ExpressionStart_V1(UInt32 Key, UnicodeString TraceDescription)	Start		Console_Intellisense_Provider_Get_Expression	Informational		
+Microsoft-Windows-IE-F12-Provider	430	1	Console_Intellisense_Provider_Get_ExpressionStop_V1(UInt32 Key, UnicodeString TraceDescription)	Stop		Console_Intellisense_Provider_Get_Expression	Informational		
+Microsoft-Windows-IE-F12-Provider	431	0	Console_Intellisense_Provider_UpdateStart(UnicodeString TraceDescription)	Start		Console_Intellisense_Provider_Update	Informational		
+Microsoft-Windows-IE-F12-Provider	432	0	Console_Intellisense_Provider_UpdateStop(UnicodeString TraceDescription)	Stop		Console_Intellisense_Provider_Update	Informational		
+Microsoft-Windows-IE-F12-Provider	433	0	Console_Intellisense_Provider_Get_ItemsStart(UnicodeString TraceDescription)	Start		Console_Intellisense_Provider_Get_Items	Informational		
+Microsoft-Windows-IE-F12-Provider	434	0	Console_Intellisense_Provider_Get_ItemsStop(UnicodeString TraceDescription)	Stop		Console_Intellisense_Provider_Get_Items	Informational		
+Microsoft-Windows-IE-F12-Provider	501	0	Dom_Window_CreateStart(UnicodeString TraceDescription)	Start		Dom_Window_Create	Informational		
+Microsoft-Windows-IE-F12-Provider	502	0	Dom_Window_CreateStop(UnicodeString TraceDescription)	Stop		Dom_Window_Create	Informational		
+Microsoft-Windows-IE-F12-Provider	503	0	Dom_ExpandNodeStart(UnicodeString TraceDescription)	Start		Dom_ExpandNode	Informational		
+Microsoft-Windows-IE-F12-Provider	504	0	Dom_ExpandNodeStop(UnicodeString TraceDescription)	Stop		Dom_ExpandNode	Informational		
+Microsoft-Windows-IE-F12-Provider	505	0	Dom_UndoRedoStart(UnicodeString TraceDescription)	Start		Dom_UndoRedo	Informational		
+Microsoft-Windows-IE-F12-Provider	506	0	Dom_UndoRedoStop(UnicodeString TraceDescription)	Stop		Dom_UndoRedo	Informational		
+Microsoft-Windows-IE-F12-Provider	507	0	Dom_DragDropStart(UnicodeString TraceDescription)	Start		Dom_DragDrop	Informational		
+Microsoft-Windows-IE-F12-Provider	508	0	Dom_DragDropStop(UnicodeString TraceDescription)	Stop		Dom_DragDrop	Informational		
+Microsoft-Windows-IE-F12-Provider	509	0	Dom_AddAttributeStart(UnicodeString TraceDescription)	Start		Dom_AddAttribute	Informational		
+Microsoft-Windows-IE-F12-Provider	510	0	Dom_AddAttributeStop(UnicodeString TraceDescription)	Stop		Dom_AddAttribute	Informational		
+Microsoft-Windows-IE-F12-Provider	511	0	Dom_IntellisenseStart(UnicodeString TraceDescription)	Start		Dom_Intellisense	Informational		
+Microsoft-Windows-IE-F12-Provider	512	0	Dom_IntellisenseStop(UnicodeString TraceDescription)	Stop		Dom_Intellisense	Informational		
+Microsoft-Windows-IE-F12-Provider	513	0	Dom_SelectElementStart(UnicodeString TraceDescription)	Start		Dom_SelectElement	Informational		
+Microsoft-Windows-IE-F12-Provider	514	0	Dom_SelectElementStop(UnicodeString TraceDescription)	Stop		Dom_SelectElement	Informational		
+Microsoft-Windows-IE-F12-Provider	515	0	Dom_CutElementStart(UnicodeString TraceDescription)	Start		Dom_CutElement	Informational		
+Microsoft-Windows-IE-F12-Provider	516	0	Dom_CutElementStop(UnicodeString TraceDescription)	Stop		Dom_CutElement	Informational		
+Microsoft-Windows-IE-F12-Provider	517	0	Dom_PasteElementStart(UnicodeString TraceDescription)	Start		Dom_PasteElement	Informational		
+Microsoft-Windows-IE-F12-Provider	518	0	Dom_PasteElementStop(UnicodeString TraceDescription)	Stop		Dom_PasteElement	Informational		
+Microsoft-Windows-IE-F12-Provider	519	0	Dom_CollapseElementStart(UnicodeString TraceDescription)	Start		Dom_CollapseElement	Informational		
+Microsoft-Windows-IE-F12-Provider	520	0	Dom_CollapseElementStop(UnicodeString TraceDescription)	Stop		Dom_CollapseElement	Informational		
+Microsoft-Windows-IE-F12-Provider	521	0	Dom_StylesTabLoadStart(UnicodeString TraceDescription)	Start		Dom_StylesTabLoad	Informational		
+Microsoft-Windows-IE-F12-Provider	522	0	Dom_StylesTabLoadStop(UnicodeString TraceDescription)	Stop		Dom_StylesTabLoad	Informational		
+Microsoft-Windows-IE-F12-Provider	523	0	Dom_StylesTab_IntellisenseStart(UnicodeString TraceDescription)	Start		Dom_StylesTab_Intellisense	Informational		
+Microsoft-Windows-IE-F12-Provider	524	0	Dom_StylesTab_IntellisenseStop(UnicodeString TraceDescription)	Stop		Dom_StylesTab_Intellisense	Informational		
+Microsoft-Windows-IE-F12-Provider	525	0	Dom_TreeItemExpandStart(UnicodeString TraceDescription)	Start		Dom_TreeItemExpand	Informational		
+Microsoft-Windows-IE-F12-Provider	526	0	Dom_TreeItemExpandStop(UnicodeString TraceDescription)	Stop		Dom_TreeItemExpand	Informational		
+Microsoft-Windows-IE-F12-Provider	527	0	Dom_ComputedTabLoadStart(UnicodeString TraceDescription)	Start		Dom_ComputedTabLoad	Informational		
+Microsoft-Windows-IE-F12-Provider	528	0	Dom_ComputedTabLoadStop(UnicodeString TraceDescription)	Stop		Dom_ComputedTabLoad	Informational		
+Microsoft-Windows-IE-F12-Provider	529	0	Dom_ChangesTabLoadStart(UnicodeString TraceDescription)	Start		Dom_ChangesTabLoad	Informational		
+Microsoft-Windows-IE-F12-Provider	530	0	Dom_ChangesTabLoadStop(UnicodeString TraceDescription)	Stop		Dom_ChangesTabLoad	Informational		
+Microsoft-Windows-IE-F12-Provider	531	0	Dom_LayoutTabLoadStart(UnicodeString TraceDescription)	Start		Dom_LayoutTabLoad	Informational		
+Microsoft-Windows-IE-F12-Provider	532	0	Dom_LayoutTabLoadStop(UnicodeString TraceDescription)	Stop		Dom_LayoutTabLoad	Informational		
+Microsoft-Windows-IE-F12-Provider	533	0	Dom_EventsTabLoadStart(UnicodeString TraceDescription)	Start		Dom_EventsTabLoad	Informational		
+Microsoft-Windows-IE-F12-Provider	534	0	Dom_EventsTabLoadStop(UnicodeString TraceDescription)	Stop		Dom_EventsTabLoad	Informational		
+Microsoft-Windows-IE-F12-Provider	535	0	Dom_TreeItemCollapseStart(UnicodeString TraceDescription)	Start		Dom_TreeItemCollapse	Informational		
+Microsoft-Windows-IE-F12-Provider	536	0	Dom_TreeItemCollapseStop(UnicodeString TraceDescription)	Stop		Dom_TreeItemCollapse	Informational		
+Microsoft-Windows-IE-F12-Provider	537	0	Dom_SearchStart(UnicodeString TraceDescription)	Start		Dom_Search	Informational		
+Microsoft-Windows-IE-F12-Provider	538	0	Dom_SearchStop(UnicodeString TraceDescription)	Stop		Dom_Search	Informational		
+Microsoft-Windows-IE-F12-Provider	539	0	Dom_RemoteInjectionStart(UnicodeString TraceDescription)	Start		Dom_RemoteInjection	Informational		
+Microsoft-Windows-IE-F12-Provider	540	0	Dom_RemoteInjectionStop(UnicodeString TraceDescription)	Stop		Dom_RemoteInjection	Informational		
+Microsoft-Windows-IE-F12-Provider	541	0	Dom_EnterEditAsHtmlStart(UnicodeString TraceDescription)	Start		Dom_EnterEditAsHtml	Informational		
+Microsoft-Windows-IE-F12-Provider	542	0	Dom_EnterEditAsHtmlStop(UnicodeString TraceDescription)	Stop		Dom_EnterEditAsHtml	Informational		
+Microsoft-Windows-IE-F12-Provider	543	0	Dom_CommitEditAsHtmlStart(UnicodeString TraceDescription)	Start		Dom_CommitEditAsHtml	Informational		
+Microsoft-Windows-IE-F12-Provider	544	0	Dom_CommitEditAsHtmlStop(UnicodeString TraceDescription)	Stop		Dom_CommitEditAsHtml	Informational		
+Microsoft-Windows-IE-F12-Provider	545	0	Dom_CommitEditAttributeStart(UnicodeString TraceDescription)	Start		Dom_CommitEditAttribute	Informational		
+Microsoft-Windows-IE-F12-Provider	546	0	Dom_CommitEditAttributeStop(UnicodeString TraceDescription)	Stop		Dom_CommitEditAttribute	Informational		
+Microsoft-Windows-IE-F12-Provider	547	0	Dom_ShowColorPickerStart(UnicodeString TraceDescription)	Start		Dom_ShowColorPicker	Informational		
+Microsoft-Windows-IE-F12-Provider	548	0	Dom_ShowColorPickerStop(UnicodeString TraceDescription)	Stop		Dom_ShowColorPicker	Informational		
+Microsoft-Windows-IE-F12-Provider	549	0	Dom_HideColorPickerStart(UnicodeString TraceDescription)	Start		Dom_HideColorPicker	Informational		
+Microsoft-Windows-IE-F12-Provider	550	0	Dom_HideColorPickerStop(UnicodeString TraceDescription)	Stop		Dom_HideColorPicker	Informational		
+Microsoft-Windows-IE-F12-Provider	551	0	Dom_SetColorUsingColorPickerStart(UnicodeString TraceDescription)	Start		Dom_SetColorUsingColorPicker	Informational		
+Microsoft-Windows-IE-F12-Provider	552	0	Dom_SetColorUsingColorPickerStop(UnicodeString TraceDescription)	Stop		Dom_SetColorUsingColorPicker	Informational		
+Microsoft-Windows-IE-F12-Provider	601	0	Emulation_Window_CreateStart(UnicodeString TraceDescription)	Start		Emulation_Window_Create	Informational		
+Microsoft-Windows-IE-F12-Provider	602	0	Emulation_Window_CreateStop(UnicodeString TraceDescription)	Stop		Emulation_Window_Create	Informational		
+Microsoft-Windows-IE-F12-Provider	701	0	Generic_Debug_1Start(UnicodeString TraceDescription)	Start		Generic_Debug_1	Informational		
+Microsoft-Windows-IE-F12-Provider	702	0	Generic_Debug_1Stop(UnicodeString TraceDescription)	Stop		Generic_Debug_1	Informational		
+Microsoft-Windows-IE-F12-Provider	703	0	Generic_Debug_2Start(UnicodeString TraceDescription)	Start		Generic_Debug_2	Informational		
+Microsoft-Windows-IE-F12-Provider	704	0	Generic_Debug_2Stop(UnicodeString TraceDescription)	Stop		Generic_Debug_2	Informational		
+Microsoft-Windows-IE-F12-Provider	705	0	Generic_Debug_3Start(UnicodeString TraceDescription)	Start		Generic_Debug_3	Informational		
+Microsoft-Windows-IE-F12-Provider	706	0	Generic_Debug_3Stop(UnicodeString TraceDescription)	Stop		Generic_Debug_3	Informational		
+Microsoft-Windows-IE-F12-Provider	707	0	Generic_Debug_4Start(UnicodeString TraceDescription)	Start		Generic_Debug_4	Informational		
+Microsoft-Windows-IE-F12-Provider	708	0	Generic_Debug_4Stop(UnicodeString TraceDescription)	Stop		Generic_Debug_4	Informational		
+Microsoft-Windows-IE-F12-Provider	709	0	Generic_Debug_5Start(UnicodeString TraceDescription)	Start		Generic_Debug_5	Informational		
+Microsoft-Windows-IE-F12-Provider	710	0	Generic_Debug_5Stop(UnicodeString TraceDescription)	Stop		Generic_Debug_5	Informational		
+Microsoft-Windows-IE-F12-Provider	711	0	Generic_Debug_6Start(UnicodeString TraceDescription)	Start		Generic_Debug_6	Informational		
+Microsoft-Windows-IE-F12-Provider	712	0	Generic_Debug_6Stop(UnicodeString TraceDescription)	Stop		Generic_Debug_6	Informational		
+Microsoft-Windows-IE-F12-Provider	713	0	Generic_Debug_7Start(UnicodeString TraceDescription)	Start		Generic_Debug_7	Informational		
+Microsoft-Windows-IE-F12-Provider	714	0	Generic_Debug_7Stop(UnicodeString TraceDescription)	Stop		Generic_Debug_7	Informational		
+Microsoft-Windows-IE-F12-Provider	715	0	Generic_Debug_8Start(UnicodeString TraceDescription)	Start		Generic_Debug_8	Informational		
+Microsoft-Windows-IE-F12-Provider	716	0	Generic_Debug_8Stop(UnicodeString TraceDescription)	Stop		Generic_Debug_8	Informational		
+Microsoft-Windows-IE-F12-Provider	717	0	Generic_Debug_9Start(UnicodeString TraceDescription)	Start		Generic_Debug_9	Informational		
+Microsoft-Windows-IE-F12-Provider	718	0	Generic_Debug_9Stop(UnicodeString TraceDescription)	Stop		Generic_Debug_9	Informational		
+Microsoft-Windows-IE-F12-Provider	801	0	Header_InitializeTabsStart(UnicodeString TraceDescription)	Start		Header_InitializeTabs	Informational		
+Microsoft-Windows-IE-F12-Provider	802	0	Header_InitializeTabsStop(UnicodeString TraceDescription)	Stop		Header_InitializeTabs	Informational		
+Microsoft-Windows-IE-F12-Provider	901	0	Shell_LoadStart(UnicodeString TraceDescription)	Start		Shell_Load	Informational		
+Microsoft-Windows-IE-F12-Provider	902	0	Shell_LoadStop(UnicodeString TraceDescription)	Stop		Shell_Load	Informational		
+Microsoft-Windows-IE-F12-Provider	903	0	Shell_LaunchToolStart(UnicodeString TraceDescription)	Start		Shell_LaunchTool	Informational		
+Microsoft-Windows-IE-F12-Provider	904	0	Shell_LaunchToolStop(UnicodeString TraceDescription)	Stop		Shell_LaunchTool	Informational		
+Microsoft-Windows-IE-F12-Provider	905	0	Shell_LaunchTool_HeaderStart(UnicodeString TraceDescription)	Start		Shell_LaunchTool_Header	Informational		
+Microsoft-Windows-IE-F12-Provider	906	0	Shell_LaunchTool_HeaderStop(UnicodeString TraceDescription)	Stop		Shell_LaunchTool_Header	Informational		
+Microsoft-Windows-IE-F12-Provider	907	0	Shell_LaunchTool_NetworkStart(UnicodeString TraceDescription)	Start		Shell_LaunchTool_Network	Informational		
+Microsoft-Windows-IE-F12-Provider	908	0	Shell_LaunchTool_NetworkStop(UnicodeString TraceDescription)	Stop		Shell_LaunchTool_Network	Informational		
+Microsoft-Windows-IE-F12-Provider	909	0	Shell_LaunchTool_ProfilerStart(UnicodeString TraceDescription)	Start		Shell_LaunchTool_Profiler	Informational		
+Microsoft-Windows-IE-F12-Provider	910	0	Shell_LaunchTool_ProfilerStop(UnicodeString TraceDescription)	Stop		Shell_LaunchTool_Profiler	Informational		
+Microsoft-Windows-IE-F12-Provider	911	0	Shell_LaunchTool_ConsoleStart(UnicodeString TraceDescription)	Start		Shell_LaunchTool_Console	Informational		
+Microsoft-Windows-IE-F12-Provider	912	0	Shell_LaunchTool_ConsoleStop(UnicodeString TraceDescription)	Stop		Shell_LaunchTool_Console	Informational		
+Microsoft-Windows-IE-F12-Provider	913	0	Shell_LaunchTool_DomStart(UnicodeString TraceDescription)	Start		Shell_LaunchTool_Dom	Informational		
+Microsoft-Windows-IE-F12-Provider	914	0	Shell_LaunchTool_DomStop(UnicodeString TraceDescription)	Stop		Shell_LaunchTool_Dom	Informational		
+Microsoft-Windows-IE-F12-Provider	915	0	Shell_LaunchTool_DebuggerStart(UnicodeString TraceDescription)	Start		Shell_LaunchTool_Debugger	Informational		
+Microsoft-Windows-IE-F12-Provider	916	0	Shell_LaunchTool_DebuggerStop(UnicodeString TraceDescription)	Stop		Shell_LaunchTool_Debugger	Informational		
+Microsoft-Windows-IE-F12-Provider	917	0	Shell_LaunchTool_EmulationStart(UnicodeString TraceDescription)	Start		Shell_LaunchTool_Emulation	Informational		
+Microsoft-Windows-IE-F12-Provider	918	0	Shell_LaunchTool_EmulationStop(UnicodeString TraceDescription)	Stop		Shell_LaunchTool_Emulation	Informational		
+Microsoft-Windows-IE-F12-Provider	921	0	Shell_LaunchTool_MemoryStart(UnicodeString TraceDescription)	Start		Shell_LaunchTool_Memory	Informational		
+Microsoft-Windows-IE-F12-Provider	922	0	Shell_LaunchTool_MemoryStop(UnicodeString TraceDescription)	Stop		Shell_LaunchTool_Memory	Informational		
+Microsoft-Windows-IE-F12-Provider	923	0	Shell_LaunchTool_VisualProfilerStart(UnicodeString TraceDescription)	Start		Shell_LaunchTool_VisualProfiler	Informational		
+Microsoft-Windows-IE-F12-Provider	924	0	Shell_LaunchTool_VisualProfilerStop(UnicodeString TraceDescription)	Stop		Shell_LaunchTool_VisualProfiler	Informational		
+Microsoft-Windows-IE-F12-Provider	925	0	Shell_LaunchTool_PopupStart(UnicodeString TraceDescription)	Start		Shell_LaunchTool_Popup	Informational		
+Microsoft-Windows-IE-F12-Provider	926	0	Shell_LaunchTool_PopupStop(UnicodeString TraceDescription)	Stop		Shell_LaunchTool_Popup	Informational		
+Microsoft-Windows-IE-F12-Provider	927	0	Shell_ShowTool_NetworkStart(UnicodeString TraceDescription)	Start		Shell_ShowTool_Network	Informational		
+Microsoft-Windows-IE-F12-Provider	928	0	Shell_ShowTool_NetworkStop(UnicodeString TraceDescription)	Stop		Shell_ShowTool_Network	Informational		
+Microsoft-Windows-IE-F12-Provider	929	0	Shell_ShowTool_ProfilerStart(UnicodeString TraceDescription)	Start		Shell_ShowTool_Profiler	Informational		
+Microsoft-Windows-IE-F12-Provider	930	0	Shell_ShowTool_ProfilerStop(UnicodeString TraceDescription)	Stop		Shell_ShowTool_Profiler	Informational		
+Microsoft-Windows-IE-F12-Provider	931	0	Shell_ShowTool_ConsoleStart(UnicodeString TraceDescription)	Start		Shell_ShowTool_Console	Informational		
+Microsoft-Windows-IE-F12-Provider	932	0	Shell_ShowTool_ConsoleStop(UnicodeString TraceDescription)	Stop		Shell_ShowTool_Console	Informational		
+Microsoft-Windows-IE-F12-Provider	933	0	Shell_ShowTool_DomStart(UnicodeString TraceDescription)	Start		Shell_ShowTool_Dom	Informational		
+Microsoft-Windows-IE-F12-Provider	934	0	Shell_ShowTool_DomStop(UnicodeString TraceDescription)	Stop		Shell_ShowTool_Dom	Informational		
+Microsoft-Windows-IE-F12-Provider	935	0	Shell_ShowTool_DebuggerStart(UnicodeString TraceDescription)	Start		Shell_ShowTool_Debugger	Informational		
+Microsoft-Windows-IE-F12-Provider	936	0	Shell_ShowTool_DebuggerStop(UnicodeString TraceDescription)	Stop		Shell_ShowTool_Debugger	Informational		
+Microsoft-Windows-IE-F12-Provider	937	0	Shell_ShowTool_EmulationStart(UnicodeString TraceDescription)	Start		Shell_ShowTool_Emulation	Informational		
+Microsoft-Windows-IE-F12-Provider	938	0	Shell_ShowTool_EmulationStop(UnicodeString TraceDescription)	Stop		Shell_ShowTool_Emulation	Informational		
+Microsoft-Windows-IE-F12-Provider	939	0	Shell_ShowTool_PopupStart(UnicodeString TraceDescription)	Start		Shell_ShowTool_Popup	Informational		
+Microsoft-Windows-IE-F12-Provider	940	0	Shell_ShowTool_PopupStop(UnicodeString TraceDescription)	Stop		Shell_ShowTool_Popup	Informational		
+Microsoft-Windows-IE-F12-Provider	941	0	Shell_ShowTool_MemoryStart(UnicodeString TraceDescription)	Start		Shell_ShowTool_Memory	Informational		
+Microsoft-Windows-IE-F12-Provider	942	0	Shell_ShowTool_MemoryStop(UnicodeString TraceDescription)	Stop		Shell_ShowTool_Memory	Informational		
+Microsoft-Windows-IE-F12-Provider	943	0	Shell_ShowTool_VisualProfilerStart(UnicodeString TraceDescription)	Start		Shell_ShowTool_VisualProfiler	Informational		
+Microsoft-Windows-IE-F12-Provider	944	0	Shell_ShowTool_VisualProfilerStop(UnicodeString TraceDescription)	Stop		Shell_ShowTool_VisualProfiler	Informational		

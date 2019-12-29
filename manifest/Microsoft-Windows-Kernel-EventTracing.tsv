@@ -1,0 +1,22 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Kernel-EventTracing	0	0	LoggingWriteBuffer(UnicodeString SessionName, UnicodeString FileName, UInt32 ErrorCode, UInt32 LoggingMode)	WriteBuffer	ETW_KEYWORD_SESSION	Logging	Error		
+Microsoft-Windows-Kernel-EventTracing	1	0	LoggingWriteBuffer1(UnicodeString SessionName, UInt32 ErrorCode, UInt32 LoggingMode)	WriteBuffer	ETW_KEYWORD_SESSION	Logging	Warning		
+Microsoft-Windows-Kernel-EventTracing	2	0	SessionStart(UnicodeString SessionName, UnicodeString FileName, UInt32 ErrorCode, UInt32 LoggingMode)	Start	ETW_KEYWORD_SESSION	Session	Error		
+Microsoft-Windows-Kernel-EventTracing	3	0	SessionStop(UnicodeString SessionName, UnicodeString FileName, UInt32 ErrorCode, UInt32 LoggingMode)	Stop	ETW_KEYWORD_SESSION	Session	Error		
+Microsoft-Windows-Kernel-EventTracing	3	1	SessionStop_V1(UnicodeString SessionName, UnicodeString FileName, UInt32 ErrorCode, UInt32 LoggingMode, UInt32 FailureReason)	Stop	ETW_KEYWORD_SESSION	Session	Error		
+Microsoft-Windows-Kernel-EventTracing	4	0	LoggingWriteBuffer4(UnicodeString SessionName, UnicodeString FileName, UInt32 ErrorCode, UInt32 LoggingMode, UInt64 MaxFileSize)	WriteBuffer	ETW_KEYWORD_SESSION	Logging	Warning		
+Microsoft-Windows-Kernel-EventTracing	5	0	LoggingFileSwitch(UnicodeString SessionName, UnicodeString FileName, UInt32 ErrorCode, UInt32 LoggingMode)	FileSwitch	ETW_KEYWORD_SESSION	Logging	Error		
+Microsoft-Windows-Kernel-EventTracing	8	0	ProviderRegister(GUID ProviderName)	Register	ETW_KEYWORD_PROVIDER	Provider	Verbose		
+Microsoft-Windows-Kernel-EventTracing	9	0	ProviderUnregister(GUID ProviderName)	Unregister	ETW_KEYWORD_PROVIDER	Provider	Verbose		
+Microsoft-Windows-Kernel-EventTracing	10	0	SessionStart10(GUID SessionGuid, UInt32 LoggerMode, UnicodeString SessionName, UnicodeString LogFileName)	Start	ETW_KEYWORD_SESSION	Session	Verbose		
+Microsoft-Windows-Kernel-EventTracing	10	1	SessionStart10_V1(GUID SessionGuid, UInt32 LoggerMode, UnicodeString SessionName, UnicodeString LogFileName, UInt32 MinimumBuffers, UInt32 MaximumBuffers, UInt32 BufferSize, UInt32 PeakBuffersCount, UInt32 CurrentBuffersCount, UInt32 FlushThreshold)	Start	ETW_KEYWORD_SESSION	Session	Verbose		
+Microsoft-Windows-Kernel-EventTracing	11	0	SessionStop11(GUID SessionGuid, UInt32 LoggerMode, UnicodeString SessionName, UnicodeString LogFileName)	Stop	ETW_KEYWORD_SESSION	Session	Verbose		
+Microsoft-Windows-Kernel-EventTracing	11	1	SessionStop11_V1(GUID SessionGuid, UInt32 LoggerMode, UnicodeString SessionName, UnicodeString LogFileName, UInt32 MinimumBuffers, UInt32 MaximumBuffers, UInt32 BufferSize, UInt32 PeakBuffersCount, UInt32 CurrentBuffersCount, UInt32 FlushThreshold)	Stop	ETW_KEYWORD_SESSION	Session	Verbose		
+Microsoft-Windows-Kernel-EventTracing	12	0	SessionConfigure(GUID SessionGuid, UInt32 LoggerMode, UnicodeString SessionName, UnicodeString LogFileName)	Configure	ETW_KEYWORD_SESSION	Session	Verbose		
+Microsoft-Windows-Kernel-EventTracing	13	0	SessionFlush(GUID SessionGuid, UInt32 LoggerMode, UnicodeString SessionName, UnicodeString LogFileName)	Flush	ETW_KEYWORD_SESSION	Session	Verbose		
+Microsoft-Windows-Kernel-EventTracing	14	0	ProviderEnable(GUID ProviderName, UnicodeString SessionName)	Enable	ETW_KEYWORD_PROVIDER	Provider	Verbose		
+Microsoft-Windows-Kernel-EventTracing	15	0	ProviderDisable(GUID ProviderName, UnicodeString SessionName)	Disable	ETW_KEYWORD_PROVIDER	Provider	Verbose		
+Microsoft-Windows-Kernel-EventTracing	17	0	SessionConfigure17(GUID SessionGuid, UInt32 LoggerMode, UnicodeString SessionName, UnicodeString LogFileName)	Configure	ETW_KEYWORD_SESSION	Session	Verbose		
+Microsoft-Windows-Kernel-EventTracing	18	0	StackTraceUserModeStackTrace()	UserModeStackTrace		StackTrace	Informational		
+Microsoft-Windows-Kernel-EventTracing	19	0	LostEvent(GUID ProviderId, UInt32 StatusCode, UInt16 EventId, UnicodeString SessionName)		ETW_KEYWORD_LOST_EVENT	LostEvent	Error		
+Microsoft-Windows-Kernel-EventTracing	20	0	Session(GUID SessionGuid, UInt32 LoggerMode, UnicodeString SessionName, UnicodeString LogFileName, UInt32 MinimumBuffers, UInt32 MaximumBuffers, UInt32 BufferSize, UInt32 PeakBuffersCount, UInt32 CurrentBuffersCount, UInt32 FlushThreshold)		ETW_KEYWORD_SESSION	Session	Verbose		

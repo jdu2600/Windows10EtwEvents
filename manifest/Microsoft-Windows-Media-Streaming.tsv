@@ -1,0 +1,67 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Media-Streaming	1000	0	DMR_GetDefaultSettingStart()	Start		DMR_GetDefaultSetting	Informational		
+Microsoft-Windows-Media-Streaming	1001	0	DMR_GetDefaultSettingStop(UInt32 ErrorCode)	Stop		DMR_GetDefaultSetting	Informational		
+Microsoft-Windows-Media-Streaming	1002	0	DMR_RegisterAsDMRStart()	Start		DMR_RegisterAsDMR	Informational		
+Microsoft-Windows-Media-Streaming	1003	0	DMR_RegisterAsDMRStop(UInt32 ErrorCode)	Stop		DMR_RegisterAsDMR	Informational		
+Microsoft-Windows-Media-Streaming	1004	0	DMR_UnregisterAsDMRStart()	Start		DMR_UnregisterAsDMR	Informational		
+Microsoft-Windows-Media-Streaming	1005	0	DMR_UnregisterAsDMRStop(UInt32 ErrorCode)	Stop		DMR_UnregisterAsDMR	Informational		
+Microsoft-Windows-Media-Streaming	1006	0	DMR_GetDMRUDNStart()	Start		DMR_GetDMRUDN	Informational		
+Microsoft-Windows-Media-Streaming	1007	0	DMR_GetDMRUDNStop(UnicodeString UDN, UInt32 ErrorCode)	Stop		DMR_GetDMRUDN	Informational		
+Microsoft-Windows-Media-Streaming	1008	0	DMR_OnStateChangedStart()	Start		DMR_OnStateChanged	Informational		
+Microsoft-Windows-Media-Streaming	1009	0	DMR_OnStateChangedStop(UInt32 ErrorCode)	Stop		DMR_OnStateChanged	Informational		
+Microsoft-Windows-Media-Streaming	1010	0	DMR_GetStateVariablesStart()	Start		DMR_GetStateVariables	Informational		
+Microsoft-Windows-Media-Streaming	1011	0	DMR_GetStateVariablesStop(UInt32 ErrorCode)	Stop		DMR_GetStateVariables	Informational		
+Microsoft-Windows-Media-Streaming	1012	0	DMR_SetDRMProviderStart()	Start		DMR_SetDRMProvider	Informational		
+Microsoft-Windows-Media-Streaming	1013	0	DMR_SetDRMProviderStop(UInt32 ErrorCode)	Stop		DMR_SetDRMProvider	Informational		
+Microsoft-Windows-Media-Streaming	1014	0	DMR_GetMFSupportedPlaybackDLNAProfilesStart()	Start		DMR_GetMFSupportedPlaybackDLNAProfiles	Informational		
+Microsoft-Windows-Media-Streaming	1015	0	DMR_GetMFSupportedPlaybackDLNAProfilesStop(UInt32 ErrorCode)	Stop		DMR_GetMFSupportedPlaybackDLNAProfiles	Informational		
+Microsoft-Windows-Media-Streaming	1020	0	DMR_SetMuteStart(UInt32 instanceID, UnicodeString String, UInt32 ui32)	Start		DMR_SetMute	Informational		
+Microsoft-Windows-Media-Streaming	1021	0	DMR_SetMuteStop(UInt32 ErrorCode)	Stop		DMR_SetMute	Informational		
+Microsoft-Windows-Media-Streaming	1022	0	DMR_SetVolumeStart(UInt32 instanceID, UnicodeString String, UInt32 ui32)	Start		DMR_SetVolume	Informational		
+Microsoft-Windows-Media-Streaming	1023	0	DMR_SetVolumeStop(UInt32 ErrorCode)	Stop		DMR_SetVolume	Informational		
+Microsoft-Windows-Media-Streaming	1040	0	DMR_SetAVTransportURIStart(UnicodeString URI, UnicodeString URIMetadata)	Start		DMR_SetAVTransportURI	Informational		
+Microsoft-Windows-Media-Streaming	1041	0	DMR_SetAVTransportURIStop(UInt32 ErrorCode)	Stop		DMR_SetAVTransportURI	Informational		
+Microsoft-Windows-Media-Streaming	1042	0	DMR_PlayStart(UInt32 instanceID, UnicodeString String)	Start		DMR_Play	Informational		
+Microsoft-Windows-Media-Streaming	1043	0	DMR_PlayStop(UInt32 ErrorCode)	Stop		DMR_Play	Informational		
+Microsoft-Windows-Media-Streaming	1044	0	DMR_StopStart(UInt32 instanceID)	Start		DMR_Stop	Informational		
+Microsoft-Windows-Media-Streaming	1045	0	DMR_Stop(UInt32 ErrorCode)	Stop		DMR_Stop	Informational		
+Microsoft-Windows-Media-Streaming	1046	0	DMR_PauseStart(UInt32 instanceID)	Start		DMR_Pause	Informational		
+Microsoft-Windows-Media-Streaming	1047	0	DMR_PauseStop(UInt32 ErrorCode)	Stop		DMR_Pause	Informational		
+Microsoft-Windows-Media-Streaming	1048	0	DMR_SeekStart(UInt32 instanceID, UnicodeString String1, UnicodeString String2)	Start		DMR_Seek	Informational		
+Microsoft-Windows-Media-Streaming	1049	0	DMR_SeekStop(UInt32 ErrorCode)	Stop		DMR_Seek	Informational		
+Microsoft-Windows-Media-Streaming	1050	0	DMR_NextStart(UInt32 instanceID)	Start		DMR_Next	Informational		
+Microsoft-Windows-Media-Streaming	1051	0	DMR_NextStop(UInt32 ErrorCode)	Stop		DMR_Next	Informational		
+Microsoft-Windows-Media-Streaming	1052	0	DMR_PreviousStart(UInt32 instanceID)	Start		DMR_Previous	Informational		
+Microsoft-Windows-Media-Streaming	1053	0	DMR_PreviousStop(UInt32 ErrorCode)	Stop		DMR_Previous	Informational		
+Microsoft-Windows-Media-Streaming	1054	0	DMR_SetPlayModeStart(UInt32 instanceID, UnicodeString String)	Start		DMR_SetPlayMode	Informational		
+Microsoft-Windows-Media-Streaming	1055	0	DMR_SetPlayModeStop(UInt32 ErrorCode)	Stop		DMR_SetPlayMode	Informational		
+Microsoft-Windows-Media-Streaming	1056	0	DMR_InvokeActionStart()	Start		DMR_InvokeAction	Informational		
+Microsoft-Windows-Media-Streaming	1057	0	DMR_InvokeActionStop(UInt32 ErrorCode)	Stop		DMR_InvokeAction	Informational		
+Microsoft-Windows-Media-Streaming	1058	0	DMR_LastChange(UInt32 dispid, UInt32 ErrorCode)			DMR_LastChange	Informational		
+Microsoft-Windows-Media-Streaming	3000	0	MediaRenderer_lifetimeStart(Pointer Object)	Start		MediaRenderer_lifetime	Informational		
+Microsoft-Windows-Media-Streaming	3001	0	MediaRenderer_lifetimeStop(Pointer Object)	Stop		MediaRenderer_lifetime	Informational		
+Microsoft-Windows-Media-Streaming	3002	0	MediaRenderer(Pointer Object, UInt32 Value)			MediaRenderer	Informational		
+Microsoft-Windows-Media-Streaming	3050	0	AVTransport(Pointer Object)			AVTransport	Informational		
+Microsoft-Windows-Media-Streaming	3051	0	AVTransport3051(Pointer Object)			AVTransport	Informational		
+Microsoft-Windows-Media-Streaming	3052	0	AVTransport3052(Pointer Object)			AVTransport	Informational		
+Microsoft-Windows-Media-Streaming	3053	0	AVTransport3053(Pointer Object)			AVTransport	Informational		
+Microsoft-Windows-Media-Streaming	3054	0	AVTransport3054(Pointer Object)			AVTransport	Informational		
+Microsoft-Windows-Media-Streaming	3055	0	AVTransport3055(Pointer Object)			AVTransport	Informational		
+Microsoft-Windows-Media-Streaming	3056	0	AVTransport3056(Pointer Object)			AVTransport	Informational		
+Microsoft-Windows-Media-Streaming	3057	0	AVTransport3057(Pointer Object, UnicodeString Uri, UnicodeString Metadata)			AVTransport	Informational		
+Microsoft-Windows-Media-Streaming	3058	0	AVTransport3058(Pointer Object, UnicodeString Uri, UnicodeString Metadata)			AVTransport	Informational		
+Microsoft-Windows-Media-Streaming	3100	0	ConnectionManager(Pointer Object)			ConnectionManager	Informational		
+Microsoft-Windows-Media-Streaming	3101	0	MediaDeliveryEngine_lifetimeStart(Pointer Object)	Start		MediaDeliveryEngine_lifetime	Informational		
+Microsoft-Windows-Media-Streaming	3102	0	MediaDeliveryEngine_lifetimeStop(Pointer Object)	Stop		MediaDeliveryEngine_lifetime	Informational		
+Microsoft-Windows-Media-Streaming	3103	0	MediaDeliveryEngine_starttheserverStart(Pointer Object)	Start		MediaDeliveryEngine_starttheserver	Informational		
+Microsoft-Windows-Media-Streaming	3104	0	MediaDeliveryEngine_starttheserverStop(Pointer Object, UInt32 ErrorCode)	Stop		MediaDeliveryEngine_starttheserver	Informational		
+Microsoft-Windows-Media-Streaming	3105	0	MediaDeliveryEngine_getthesourcemetadataStart(Pointer Object)	Start		MediaDeliveryEngine_getthesourcemetadata	Informational		
+Microsoft-Windows-Media-Streaming	3106	0	MediaDeliveryEngine_getthesourcemetadataStop(Pointer Object, UInt32 ErrorCode)	Stop		MediaDeliveryEngine_getthesourcemetadata	Informational		
+Microsoft-Windows-Media-Streaming	3150	0	UPnPRequestStart(Pointer Object, UnicodeString String)	Start		UPnPRequest	Informational		
+Microsoft-Windows-Media-Streaming	3151	0	UPnPRequestStop(Pointer Object, UnicodeString String, UInt32 ErrorCode)	Stop		UPnPRequest	Informational		
+Microsoft-Windows-Media-Streaming	3201	0	Populate_ContextMenuStart(UInt32 MenuItemCount, UInt32 ErrorCode)	Start		Populate_ContextMenu	Informational		
+Microsoft-Windows-Media-Streaming	3202	0	Populate_ContextMenuStop(UInt32 MenuItemCount, UInt32 ErrorCode)	Stop		Populate_ContextMenu	Informational		
+Microsoft-Windows-Media-Streaming	3203	0	PlayTo_VerifyShouldDisplayStart(UInt32 ErrorCode)	Start		PlayTo_VerifyShouldDisplay	Informational		
+Microsoft-Windows-Media-Streaming	3204	0	PlayTo_VerifyShouldDisplayStop(UInt32 ErrorCode)	Stop		PlayTo_VerifyShouldDisplay	Informational		
+Microsoft-Windows-Media-Streaming	3205	0	LaunchDMCStart(UInt32 ItemCount, UInt32 ErrorCode)	Start		LaunchDMC	Informational		
+Microsoft-Windows-Media-Streaming	3206	0	LaunchDMCStop(UInt32 ItemCount, UInt32 ErrorCode)	Stop		LaunchDMC	Informational		

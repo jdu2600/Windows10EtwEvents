@@ -1,0 +1,22 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Kernel-ShimEngine	1	1	task_0_V1(UInt32 EventId, AnsiString DebugMessage)			task_0	Error		
+Microsoft-Windows-Kernel-ShimEngine	2	1	task_02_V1(UInt32 EventId, AnsiString DebugMessage)			task_0	Informational		
+Microsoft-Windows-Kernel-ShimEngine	3	1	task_03_V1(UnicodeString DriverName, UInt32 ShimSource, UInt32 ShimCount, UnicodeString AppliedGuids)			task_0	Informational		
+Microsoft-Windows-Kernel-ShimEngine	4	1	task_04_V1(UnicodeString DeviceName, UnicodeString DeviceClass, UInt32 FlagSource, UInt64 Flags)			task_0	Informational		
+Microsoft-Windows-Kernel-ShimEngine	5	1	task_05_V1(UnicodeString DriverName, Pointer DriverBase, UInt32 DriverSize, UInt32 DriverTimeStamp, UInt32 DriverCheckSum)		SkipDriverUnloadGeneral	task_0	Verbose		
+Microsoft-Windows-Kernel-ShimEngine	6	1	task_06_V1(Pointer DriverObject, Pointer DriverBase)		SkipDriverUnloadGeneral	task_0	Verbose		
+Microsoft-Windows-Kernel-ShimEngine	10	1	task_010_V1(UnicodeString DriverName, Pointer DriverBase, UInt32 DriverSize, UInt32 DriverTimeStamp, UInt32 DriverCheckSum)		DriverScopeGeneral	task_0	Verbose		
+Microsoft-Windows-Kernel-ShimEngine	11	1	task_011_V1(Pointer DriverObject, Pointer DriverBase)		DriverScopeGeneral	task_0	Verbose		
+Microsoft-Windows-Kernel-ShimEngine	12	1	task_012_V1(Pointer DriverBase, UInt32 DriverSize, Pointer DriverObject, Pointer Pdo, UInt32 Status, UnicodeString ServiceName, UnicodeString HardwareId)		DriverScopeGeneral	task_0	Verbose		
+Microsoft-Windows-Kernel-ShimEngine	13	1	task_013_V1(Pointer Address, Pointer Caller, UInt32 Type, Pointer Size, UInt32 Tag)		DriverScopePool	task_0	Verbose		
+Microsoft-Windows-Kernel-ShimEngine	14	1	task_014_V1(Pointer Address, Pointer Caller, UInt32 Tag)		DriverScopePool	task_0	Verbose		
+Microsoft-Windows-Kernel-ShimEngine	15	1	task_015_V1(Pointer DriverObject, Pointer Fdo, Pointer Irp)		DriverScopeIrps	task_0	Verbose		
+Microsoft-Windows-Kernel-ShimEngine	16	1	task_016_V1(Pointer DriverObject, Pointer Fdo, UInt32 DeviceType, UInt32 DeviceCharacteristics, UInt32 Exclusive, UInt32 Status)		DriverScopeGeneral	task_0	Verbose		
+Microsoft-Windows-Kernel-ShimEngine	17	1	task_017_V1(Pointer DriverObject, Pointer Fdo, Pointer Irp, UInt32 MajorCode, UInt32 Status)		DriverScopeIrps	task_0	Verbose		
+Microsoft-Windows-Kernel-ShimEngine	18	1	task_018_V1(Pointer DriverObject, Pointer Fdo, Pointer Irp, UInt32 MinorCode, UInt32 Status)		DriverScopePnp	task_0	Verbose		
+Microsoft-Windows-Kernel-ShimEngine	19	1	task_019_V1(Pointer DriverObject, Pointer Fdo, Pointer Irp, UInt32 Status)		DriverScopePnp	task_0	Verbose		
+Microsoft-Windows-Kernel-ShimEngine	20	1	task_020_V1(Pointer DriverObject, Pointer Fdo, Pointer Irp, UInt32 Status)		DriverScopePnp	task_0	Verbose		
+Microsoft-Windows-Kernel-ShimEngine	21	1	task_021_V1(Pointer DriverObject, Pointer Fdo, Pointer Irp, UInt32 MinorCode, UInt32 PowerType, UInt32 PowerState, UInt32 Status)		DriverScopePower	task_0	Verbose		
+Microsoft-Windows-Kernel-ShimEngine	22	1	task_022_V1(Pointer DriverObject, Pointer Fdo, Pointer Irp, UInt32 MinorCode, UInt32 PowerType, UInt32 PowerState, UInt32 Status)		DriverScopePower	task_0	Verbose		
+Microsoft-Windows-Kernel-ShimEngine	23	1	task_023_V1(Pointer DriverObject, Pointer Fdo, Pointer Irp, UInt32 MinorCode, UInt32 PowerState, UInt32 Status)		DriverScopePower	task_0	Verbose		
+Microsoft-Windows-Kernel-ShimEngine	24	1	task_024_V1(Pointer DriverObject, Pointer Fdo, Pointer Irp, UInt32 Status)		DriverScopePower	task_0	Verbose		

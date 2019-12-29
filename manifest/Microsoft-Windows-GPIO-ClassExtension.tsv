@@ -1,0 +1,29 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-GPIO-ClassExtension	1000	1	task_0AcpiEventMethodStart_V1(UnicodeString ControllerBiosName, UInt16 BankId, UInt16 PinNumber)	AcpiEventMethodStart		task_0	Informational		
+Microsoft-Windows-GPIO-ClassExtension	1001	1	task_0AcpiEventMethodComplete_V1(UInt16 PinNumber)	AcpiEventMethodComplete		task_0	Informational		
+Microsoft-Windows-GPIO-ClassExtension	1002	1	task_0ClearActiveInterruptsStart_V1(UnicodeString ControllerBiosName, UInt16 BankId, UInt64 PinMask)	ClearActiveInterruptsStart		task_0	Informational		
+Microsoft-Windows-GPIO-ClassExtension	1003	1	task_0ClearActiveInterruptsComplete_V1(UInt64 PinMask)	ClearActiveInterruptsComplete		task_0	Informational		
+Microsoft-Windows-GPIO-ClassExtension	1004	1	task_0DebounceTimerStart_V1(UnicodeString ControllerBiosName, UInt16 BankId, UInt16 PinNumber, UInt16 Timeout)	DebounceTimerStart		task_0	Informational		
+Microsoft-Windows-GPIO-ClassExtension	1005	1	task_0DebounceTimerComplete_V1(UInt16 PinNumber)	DebounceTimerComplete		task_0	Informational		
+Microsoft-Windows-GPIO-ClassExtension	1006	1	task_0DeferredInterruptActivitiesStart_V1(UnicodeString ControllerBiosName, UInt16 BankId)	DeferredInterruptActivitiesStart		task_0	Informational		
+Microsoft-Windows-GPIO-ClassExtension	1007	1	task_0DeferredInterruptActivitiesComplete_V1()	DeferredInterruptActivitiesComplete		task_0	Informational		
+Microsoft-Windows-GPIO-ClassExtension	1008	1	task_0DisableInterruptStart_V1(UnicodeString ControllerBiosName, UInt16 BankId, UInt16 PinNumber)	DisableInterruptStart		task_0	Informational		
+Microsoft-Windows-GPIO-ClassExtension	1009	1	task_0DisableInterruptComplete_V1(UInt16 PinNumber)	DisableInterruptComplete		task_0	Informational		
+Microsoft-Windows-GPIO-ClassExtension	1010	1	task_0EnableInterruptStart_V1(UnicodeString ControllerBiosName, UInt16 BankId, UInt16 PinNumber)	EnableInterruptStart		task_0	Informational		
+Microsoft-Windows-GPIO-ClassExtension	1011	1	task_0EnableInterruptComplete_V1(UInt16 PinNumber)	EnableInterruptComplete		task_0	Informational		
+Microsoft-Windows-GPIO-ClassExtension	1012	1	GPIObankinterruptflowthroughMSGPIOCLXInterruptInvokeDeviceIsrStart_V1(UInt16 PinNumber, UInt32 Gsiv)	InterruptInvokeDeviceIsrStart		GPIObankinterruptflowthroughMSGPIOCLX	Informational		
+Microsoft-Windows-GPIO-ClassExtension	1013	1	GPIObankinterruptflowthroughMSGPIOCLXInterruptInvokeDeviceIsrComplete_V1()	InterruptInvokeDeviceIsrComplete		GPIObankinterruptflowthroughMSGPIOCLX	Informational		
+Microsoft-Windows-GPIO-ClassExtension	1014	1	GPIObankinterruptflowthroughMSGPIOCLXInterruptPinState_V1(UInt64 EnableRegister, UInt64 MaskRegister, UInt64 StatusRegister, UInt64 NonEnabledActiveInterrupts, UInt64 ReplayRegister)	InterruptPinState		GPIObankinterruptflowthroughMSGPIOCLX	Informational		
+Microsoft-Windows-GPIO-ClassExtension	1015	1	GPIObankinterruptflowthroughMSGPIOCLXStart_V1(UnicodeString ControllerBiosName, UInt16 BankId, UInt32 Gsiv)	Start		GPIObankinterruptflowthroughMSGPIOCLX	Informational		
+Microsoft-Windows-GPIO-ClassExtension	1016	1	GPIObankinterruptflowthroughMSGPIOCLXStop_V1()	Stop		GPIObankinterruptflowthroughMSGPIOCLX	Informational		
+Microsoft-Windows-GPIO-ClassExtension	1017	1	task_0MaskInterruptsStart_V1(UnicodeString ControllerBiosName, UInt16 BankId, UInt64 PinMask)	MaskInterruptsStart		task_0	Informational		
+Microsoft-Windows-GPIO-ClassExtension	1018	1	task_0MaskInterruptsComplete_V1(UInt64 PinMask)	MaskInterruptsComplete		task_0	Informational		
+Microsoft-Windows-GPIO-ClassExtension	1019	1	GPIObankinterruptflowthroughMSGPIOCLXQueryActiveInterruptsStart_V1(UnicodeString ControllerBiosName, UInt16 BankId)	QueryActiveInterruptsStart		GPIObankinterruptflowthroughMSGPIOCLX	Informational		
+Microsoft-Windows-GPIO-ClassExtension	1020	1	GPIObankinterruptflowthroughMSGPIOCLXQueryActiveInterruptsComplete_V1()	QueryActiveInterruptsComplete		GPIObankinterruptflowthroughMSGPIOCLX	Informational		
+Microsoft-Windows-GPIO-ClassExtension	1021	1	task_0QueryEnabledInterruptsStart_V1(UnicodeString ControllerBiosName, UInt16 BankId)	QueryEnabledInterruptsStart		task_0	Informational		
+Microsoft-Windows-GPIO-ClassExtension	1022	1	task_0QueryEnabledInterruptsComplete_V1()	QueryEnabledInterruptsComplete		task_0	Informational		
+Microsoft-Windows-GPIO-ClassExtension	1023	1	task_0ReconfigureInterruptStart_V1(UnicodeString ControllerBiosName, UInt16 BankId, UInt16 PinNumber)	ReconfigureInterruptStart		task_0	Informational		
+Microsoft-Windows-GPIO-ClassExtension	1024	1	task_0ReconfigureInterruptComplete_V1(UInt16 PinNumber)	ReconfigureInterruptComplete		task_0	Informational		
+Microsoft-Windows-GPIO-ClassExtension	1025	1	task_0UnmaskInterruptStart_V1(UnicodeString ControllerBiosName, UInt16 BankId, UInt16 PinNumber)	UnmaskInterruptStart		task_0	Informational		
+Microsoft-Windows-GPIO-ClassExtension	1026	1	task_0UnmaskInterruptComplete_V1(UInt16 PinNumber)	UnmaskInterruptComplete		task_0	Informational		
+Microsoft-Windows-GPIO-ClassExtension	1027	1	task_0SpuriousInterruptDetected_V1(UInt16 PinNumber, UInt32 Gsiv)	SpuriousInterruptDetected		task_0	Informational		

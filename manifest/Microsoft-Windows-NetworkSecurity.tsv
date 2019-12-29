@@ -1,0 +1,9 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-NetworkSecurity	801	0	task_0(UInt64 SaContextID, UInt32 Reason)			task_0	Verbose		
+Microsoft-Windows-NetworkSecurity	802	0	task_0802(UInt64 SaContextID, UInt32 Result)			task_0	Verbose		
+Microsoft-Windows-NetworkSecurity	803	0	task_0803(UInt64 SaContextID, UnicodeString LocalAddr, UnicodeString LocalMask, UInt16 LocalPort, UnicodeString RemoteAddress, UnicodeString RemoteMask, UInt16 RemotePort, UInt8 IPProtocol, UnicodeString LocalTunnelEndpt, UnicodeString RemoteTunnelEndpt)			task_0	Verbose		
+Microsoft-Windows-NetworkSecurity	804	0	task_0804(UInt64 SaContextID)			task_0	Verbose		
+Microsoft-Windows-NetworkSecurity	805	0	task_0805(UInt64 SaContextID, UInt32 SPI)			task_0	Verbose		
+Microsoft-Windows-NetworkSecurity	806	0	SaContextOperationStart()	Start		SaContextOperation	Verbose		
+Microsoft-Windows-NetworkSecurity	807	0	SaContextOperationStop()	Stop		SaContextOperation	Verbose		
+Microsoft-Windows-NetworkSecurity	808	0	SaContextOperation(UInt64 SaContextID)			SaContextOperation	Verbose		

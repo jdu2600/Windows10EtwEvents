@@ -1,0 +1,252 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-LiveId	1001	0	LiveSspOperationStart()	Start	Analytic keyword_400000000000	LiveSspOperation	Informational		
+Microsoft-Windows-LiveId	1002	0	LiveSspOperationStop(HexInt32 Status)	Stop	Analytic keyword_400000000000	LiveSspOperation	Informational		
+Microsoft-Windows-LiveId	1003	0	LiveSspOperationStart1003()	Start	Analytic keyword_400000000000	LiveSspOperation	Informational		
+Microsoft-Windows-LiveId	1004	0	LiveSspOperationStop1004(Boolean ServiceCalled, HexInt32 Status)	Stop	Analytic keyword_400000000000	LiveSspOperation	Informational		
+Microsoft-Windows-LiveId	1005	0	IdentityProviderOperationStart()	Start	Analytic	IdentityProviderOperation	Informational		
+Microsoft-Windows-LiveId	1006	0	IdentityProviderOperationStop(Int32 Result)	Stop	Analytic	IdentityProviderOperation	Informational		
+Microsoft-Windows-LiveId	1007	0	IdentityProviderOperationStart1007()	Start	Analytic	IdentityProviderOperation	Informational		
+Microsoft-Windows-LiveId	1008	0	IdentityProviderOperationStop1008(Int32 Result)	Stop	Analytic	IdentityProviderOperation	Informational		
+Microsoft-Windows-LiveId	1009	0	LiveSspOperationStart1009()	Start	Analytic keyword_400000000000	LiveSspOperation	Informational		
+Microsoft-Windows-LiveId	1010	0	LiveSspOperationStop1010(Int32 Result)	Stop	Analytic keyword_400000000000	LiveSspOperation	Informational		
+Microsoft-Windows-LiveId	1011	0	LiveSspOperationStart1011()	Start	Analytic keyword_400000000000	LiveSspOperation	Informational		
+Microsoft-Windows-LiveId	1012	0	LiveSspOperationStop1012(HexInt32 Status)	Stop	Analytic keyword_400000000000	LiveSspOperation	Informational		
+Microsoft-Windows-LiveId	1013	0	WLIDServiceOperationStart()	Start	Analytic	WLIDServiceOperation	Informational		
+Microsoft-Windows-LiveId	1014	0	WLIDServiceOperationStop(UInt32 NoOfTargets, UInt32 RequestType)	Stop	Analytic	WLIDServiceOperation	Informational		
+Microsoft-Windows-LiveId	1015	0	LiveIdModernAPIOperationStart()	Start	Analytic	LiveIdModernAPIOperation	Informational		
+Microsoft-Windows-LiveId	1016	0	LiveIdModernAPIOperationStop(Boolean TicketsCached, HexInt32 Result)	Stop	Analytic	LiveIdModernAPIOperation	Informational		
+Microsoft-Windows-LiveId	1017	0	LiveIdModernAPIOperationStart1017()	Start	Analytic	LiveIdModernAPIOperation	Informational		
+Microsoft-Windows-LiveId	1018	0	LiveIdModernAPIOperationStop1018(Boolean TicketsCached, HexInt32 Result)	Stop	Analytic	LiveIdModernAPIOperation	Informational		
+Microsoft-Windows-LiveId	1019	0	LiveIdModernAPIOperationStart1019()	Start	Analytic	LiveIdModernAPIOperation	Informational		
+Microsoft-Windows-LiveId	1020	0	LiveIdModernAPIOperationStop1020(Int32 Result)	Stop	Analytic	LiveIdModernAPIOperation	Informational		
+Microsoft-Windows-LiveId	1021	0	LiveIdModernAPIOperation(UnicodeString RegistryLocation, HexInt32 Status)		Error Operational	LiveIdModernAPIOperation	Error		
+Microsoft-Windows-LiveId	1022	0	LiveIdModernAPIOperation1022(UnicodeString RegistryLocation, HexInt32 Status)		Error Operational	LiveIdModernAPIOperation	Error		
+Microsoft-Windows-LiveId	2008	0	LiveIdModernAPIOperationStart2008()	Start	Analytic	LiveIdModernAPIOperation	Informational		
+Microsoft-Windows-LiveId	2009	0	LiveIdModernAPIOperationStop2009()	Stop	Analytic	LiveIdModernAPIOperation	Informational		
+Microsoft-Windows-LiveId	2010	0	LiveIdModernAPIOperationStart2010()	Start	Analytic	LiveIdModernAPIOperation	Informational		
+Microsoft-Windows-LiveId	2011	0	LiveIdModernAPIOperationStop2011()	Stop	Analytic	LiveIdModernAPIOperation	Informational		
+Microsoft-Windows-LiveId	2012	0	LiveIdModernAPIOperationStart2012()	Start	Analytic	LiveIdModernAPIOperation	Informational		
+Microsoft-Windows-LiveId	2013	0	LiveIdModernAPIOperationStop2013()	Stop	Analytic	LiveIdModernAPIOperation	Informational		
+Microsoft-Windows-LiveId	2014	0	WLIDServiceOperationStart2014()	Start	Analytic	WLIDServiceOperation	Informational		
+Microsoft-Windows-LiveId	2015	0	WLIDCredProvOperationStart()	Start	Analytic	WLIDCredProvOperation	Informational		
+Microsoft-Windows-LiveId	2016	0	WLIDCredProvOperationStop(Int32 Result)	Stop	Analytic	WLIDCredProvOperation	Informational		
+Microsoft-Windows-LiveId	2017	0	WLIDCredProvOperationStart2017()	Start	Analytic	WLIDCredProvOperation	Informational		
+Microsoft-Windows-LiveId	2018	0	WLIDCredProvOperationStop2018(Int32 Result)	Stop	Analytic	WLIDCredProvOperation	Informational		
+Microsoft-Windows-LiveId	2019	0	WLIDCredProvOperationStart2019()	Start	Analytic	WLIDCredProvOperation	Informational		
+Microsoft-Windows-LiveId	2020	0	WLIDCredProvOperationStop2020(Int32 Result)	Stop	Analytic	WLIDCredProvOperation	Informational		
+Microsoft-Windows-LiveId	2021	0	WLIDCredProvOperationStart2021()	Start	Analytic	WLIDCredProvOperation	Informational		
+Microsoft-Windows-LiveId	2022	0	WLIDCredProvOperationStop2022(Int32 Result)	Stop	Analytic	WLIDCredProvOperation	Informational		
+Microsoft-Windows-LiveId	2023	0	WLIDServiceOperation(UnicodeString Operation, UnicodeString Target, HexInt32 Result)		Operational	WLIDServiceOperation	Informational		
+Microsoft-Windows-LiveId	2024	0	WLIDServiceOperation2024(UnicodeString Operation, UnicodeString Details, HexInt32 Status)		Operational	WLIDServiceOperation	Informational		
+Microsoft-Windows-LiveId	2025	0	WLIDServiceOperation2025(UnicodeString Operation, UnicodeString Reason, HexInt32 Result)		Error Operational keyword_400000000000	WLIDServiceOperation	Error		
+Microsoft-Windows-LiveId	2026	0	task_0(UnicodeString PointType, UnicodeString AppName, UnicodeString ModuleName, UnicodeString ModuleVersion, AnsiString FileName, AnsiString FunctionName, UInt32 LineNumber, Int32 ErrorCode)		Telemetry	task_0	Informational		
+Microsoft-Windows-LiveId	2027	0	task_02027(UnicodeString cid)		Telemetry	task_0	Informational		
+Microsoft-Windows-LiveId	2028	0	task_02028(AnsiString FunctionName, Int32 ErrorCode)		Telemetry Error	task_0	Error		
+Microsoft-Windows-LiveId	2029	0	task_02029(AnsiString FileName, AnsiString FunctionName, UInt32 LineNumber, AnsiString Expression)		Telemetry Error keyword_400000000000	task_0	Error		
+Microsoft-Windows-LiveId	3000	0	task_03000(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		Critical LiveSsp	task_0	Critical		
+Microsoft-Windows-LiveId	3001	0	task_03001(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		Error LiveSsp	task_0	Error		
+Microsoft-Windows-LiveId	3002	0	task_03002(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		Warning LiveSsp	task_0	Warning		
+Microsoft-Windows-LiveId	3003	0	task_03003(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		LiveSsp	task_0	Informational		
+Microsoft-Windows-LiveId	3004	0	task_03004(AnsiString FileName, UInt32 LineNumber, AnsiString description)		Critical LiveSsp	task_0	Critical		
+Microsoft-Windows-LiveId	3005	0	task_03005(AnsiString FileName, UInt32 LineNumber, AnsiString description)		Error LiveSsp	task_0	Error		
+Microsoft-Windows-LiveId	3006	0	task_03006(AnsiString FileName, UInt32 LineNumber, AnsiString description)		Warning LiveSsp	task_0	Warning		
+Microsoft-Windows-LiveId	3007	0	task_03007(AnsiString FileName, UInt32 LineNumber, AnsiString description)		LiveSsp	task_0	Informational		
+Microsoft-Windows-LiveId	3008	0	task_03008(AnsiString FileName, AnsiString FunctionName, UInt32 LineNumber, UnicodeString description)		Function LiveSsp	task_0	Verbose		
+Microsoft-Windows-LiveId	3009	0	task_03009(AnsiString FunctionName, Int32 ErrorCode)		Function LiveSsp	task_0	Verbose		
+Microsoft-Windows-LiveId	3010	0	task_03010(AnsiString FunctionName, Int32 ErrorCode)		Error Function LiveSsp	task_0	Error		
+Microsoft-Windows-LiveId	3011	0	task_03011(AnsiString FunctionName, Pointer Address)		Function LiveSsp	task_0	Verbose		
+Microsoft-Windows-LiveId	3012	0	task_03012(UnicodeString ProcessName)		Error LiveSsp	task_0	Error		
+Microsoft-Windows-LiveId	3013	0	task_03013(AnsiString FileName, AnsiString FunctionName, UInt32 LineNumber, AnsiString Expression, Int32 ErrorCode)		Error LiveSsp	task_0	Error		
+Microsoft-Windows-LiveId	3014	0	task_03014(AnsiString FunctionName, Int32 ErrorCode)		Function Warning LiveSsp	task_0	Warning		
+Microsoft-Windows-LiveId	3015	0	task_03015(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		LiveSsp	task_0	Verbose		
+Microsoft-Windows-LiveId	3016	0	task_03016(AnsiString FileName, UInt32 LineNumber, AnsiString description)		LiveSsp	task_0	Verbose		
+Microsoft-Windows-LiveId	4000	0	task_04000(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		Critical CredProv	task_0	Critical		
+Microsoft-Windows-LiveId	4001	0	task_04001(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		Error CredProv	task_0	Error		
+Microsoft-Windows-LiveId	4002	0	task_04002(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		Warning CredProv	task_0	Warning		
+Microsoft-Windows-LiveId	4003	0	task_04003(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		CredProv	task_0	Informational		
+Microsoft-Windows-LiveId	4004	0	task_04004(AnsiString FileName, UInt32 LineNumber, AnsiString description)		Critical CredProv	task_0	Critical		
+Microsoft-Windows-LiveId	4005	0	task_04005(AnsiString FileName, UInt32 LineNumber, AnsiString description)		Error CredProv	task_0	Error		
+Microsoft-Windows-LiveId	4006	0	task_04006(AnsiString FileName, UInt32 LineNumber, AnsiString description)		Warning CredProv	task_0	Warning		
+Microsoft-Windows-LiveId	4007	0	task_04007(AnsiString FileName, UInt32 LineNumber, AnsiString description)		CredProv	task_0	Informational		
+Microsoft-Windows-LiveId	4008	0	task_04008(AnsiString FileName, AnsiString FunctionName, UInt32 LineNumber, UnicodeString description)		Function CredProv	task_0	Verbose		
+Microsoft-Windows-LiveId	4009	0	task_04009(AnsiString FunctionName, Int32 ErrorCode)		Function CredProv	task_0	Verbose		
+Microsoft-Windows-LiveId	4010	0	task_04010(AnsiString FunctionName, Int32 ErrorCode)		Error Function CredProv	task_0	Error		
+Microsoft-Windows-LiveId	4011	0	task_04011(AnsiString FunctionName, Pointer Address)		Function CredProv	task_0	Verbose		
+Microsoft-Windows-LiveId	4012	0	task_04012(UnicodeString ProcessName)		Error CredProv	task_0	Error		
+Microsoft-Windows-LiveId	4013	0	task_04013(AnsiString FileName, AnsiString FunctionName, UInt32 LineNumber, AnsiString Expression, Int32 ErrorCode)		Error CredProv	task_0	Error		
+Microsoft-Windows-LiveId	4014	0	task_04014(AnsiString FunctionName, Int32 ErrorCode)		Function Warning CredProv	task_0	Warning		
+Microsoft-Windows-LiveId	4015	0	task_04015(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		CredProv	task_0	Verbose		
+Microsoft-Windows-LiveId	4016	0	task_04016(AnsiString FileName, UInt32 LineNumber, AnsiString description)		CredProv	task_0	Verbose		
+Microsoft-Windows-LiveId	5000	0	task_05000(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		Critical WlidNsp	task_0	Critical		
+Microsoft-Windows-LiveId	5001	0	task_05001(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		Error WlidNsp	task_0	Error		
+Microsoft-Windows-LiveId	5002	0	task_05002(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		Warning WlidNsp	task_0	Warning		
+Microsoft-Windows-LiveId	5003	0	task_05003(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		WlidNsp	task_0	Informational		
+Microsoft-Windows-LiveId	5004	0	task_05004(AnsiString FileName, UInt32 LineNumber, AnsiString description)		Critical WlidNsp	task_0	Critical		
+Microsoft-Windows-LiveId	5005	0	task_05005(AnsiString FileName, UInt32 LineNumber, AnsiString description)		Error WlidNsp	task_0	Error		
+Microsoft-Windows-LiveId	5006	0	task_05006(AnsiString FileName, UInt32 LineNumber, AnsiString description)		Warning WlidNsp	task_0	Warning		
+Microsoft-Windows-LiveId	5007	0	task_05007(AnsiString FileName, UInt32 LineNumber, AnsiString description)		WlidNsp	task_0	Informational		
+Microsoft-Windows-LiveId	5008	0	task_05008(AnsiString FileName, AnsiString FunctionName, UInt32 LineNumber, UnicodeString description)		Function WlidNsp	task_0	Verbose		
+Microsoft-Windows-LiveId	5009	0	task_05009(AnsiString FunctionName, Int32 ErrorCode)		Function WlidNsp	task_0	Verbose		
+Microsoft-Windows-LiveId	5010	0	task_05010(AnsiString FunctionName, Int32 ErrorCode)		Error Function WlidNsp	task_0	Error		
+Microsoft-Windows-LiveId	5011	0	task_05011(AnsiString FunctionName, Pointer Address)		Function WlidNsp	task_0	Verbose		
+Microsoft-Windows-LiveId	5012	0	task_05012(UnicodeString ProcessName)		Error WlidNsp	task_0	Error		
+Microsoft-Windows-LiveId	5013	0	task_05013(AnsiString FileName, AnsiString FunctionName, UInt32 LineNumber, AnsiString Expression, Int32 ErrorCode)		Error WlidNsp	task_0	Error		
+Microsoft-Windows-LiveId	5014	0	task_05014(AnsiString FunctionName, Int32 ErrorCode)		Function Warning WlidNsp	task_0	Warning		
+Microsoft-Windows-LiveId	5015	0	task_05015(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		WlidNsp	task_0	Verbose		
+Microsoft-Windows-LiveId	5016	0	task_05016(AnsiString FileName, UInt32 LineNumber, AnsiString description)		WlidNsp	task_0	Verbose		
+Microsoft-Windows-LiveId	6000	0	task_06000(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		Critical WlidSvc	task_0	Critical		
+Microsoft-Windows-LiveId	6001	0	task_06001(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		Error WlidSvc	task_0	Error		
+Microsoft-Windows-LiveId	6002	0	task_06002(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		Warning WlidSvc	task_0	Warning		
+Microsoft-Windows-LiveId	6003	0	task_06003(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		WlidSvc	task_0	Informational		
+Microsoft-Windows-LiveId	6004	0	task_06004(AnsiString FileName, UInt32 LineNumber, AnsiString description)		Critical WlidSvc	task_0	Critical		
+Microsoft-Windows-LiveId	6005	0	task_06005(AnsiString FileName, UInt32 LineNumber, AnsiString description)		Error WlidSvc	task_0	Error		
+Microsoft-Windows-LiveId	6006	0	task_06006(AnsiString FileName, UInt32 LineNumber, AnsiString description)		Warning WlidSvc	task_0	Warning		
+Microsoft-Windows-LiveId	6007	0	task_06007(AnsiString FileName, UInt32 LineNumber, AnsiString description)		WlidSvc	task_0	Informational		
+Microsoft-Windows-LiveId	6008	0	FunctionCallStart(AnsiString FileName, AnsiString FunctionName, UInt32 LineNumber, UnicodeString description)	Start	Function WlidSvc	FunctionCall	Verbose		
+Microsoft-Windows-LiveId	6009	0	FunctionCallStop(AnsiString FunctionName, Int32 ErrorCode)	Stop	Function WlidSvc	FunctionCall	Verbose		
+Microsoft-Windows-LiveId	6010	0	FunctionCallStop6010(AnsiString FunctionName, Int32 ErrorCode)	Stop	Error Function WlidSvc	FunctionCall	Error		
+Microsoft-Windows-LiveId	6011	0	FunctionCallStop6011(AnsiString FunctionName, Pointer Address)	Stop	Function WlidSvc	FunctionCall	Verbose		
+Microsoft-Windows-LiveId	6012	0	task_06012(UnicodeString ProcessName)		Error WlidSvc	task_0	Error		
+Microsoft-Windows-LiveId	6013	0	task_06013(AnsiString FileName, AnsiString FunctionName, UInt32 LineNumber, AnsiString Expression, Int32 ErrorCode)		Error WlidSvc	task_0	Error		
+Microsoft-Windows-LiveId	6014	0	task_06014(AnsiString FunctionName, Int32 ErrorCode)		Function Warning WlidSvc	task_0	Warning		
+Microsoft-Windows-LiveId	6015	0	task_06015(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		WlidSvc	task_0	Verbose		
+Microsoft-Windows-LiveId	6016	0	task_06016(AnsiString FileName, UInt32 LineNumber, AnsiString description)		WlidSvc	task_0	Verbose		
+Microsoft-Windows-LiveId	6100	0	task_06100(UnicodeString value)		RequestStart WlidSvc	task_0	Informational		
+Microsoft-Windows-LiveId	6101	0	task_06101(UnicodeString TargetName, FILETIME ExpiryTime)		WlidSvc Credentials	task_0	Informational		
+Microsoft-Windows-LiveId	6102	0	task_06102(UnicodeString value)		WlidSvc Credentials	task_0	Informational		
+Microsoft-Windows-LiveId	6103	0	task_06103(UnicodeString value)		WlidSvc Credentials	task_0	Informational		
+Microsoft-Windows-LiveId	6104	0	task_06104(Int32 value)		WlidSvc Credentials	task_0	Informational		
+Microsoft-Windows-LiveId	6105	0	task_06105(Int32 value)		WlidSvc Credentials	task_0	Informational		
+Microsoft-Windows-LiveId	6106	0	task_06106(UnicodeString TargetName, Int32 ErrorCode)		Error WlidSvc Credentials	task_0	Critical		
+Microsoft-Windows-LiveId	6107	0	task_06107(UnicodeString TargetName, Int32 ErrorCode)		Error WlidSvc Credentials	task_0	Error		
+Microsoft-Windows-LiveId	6108	0	task_06108(UnicodeString value)		WlidSvc Credentials	task_0	Informational		
+Microsoft-Windows-LiveId	6109	0	task_06109(UnicodeString TargetName, Int32 ErrorCode)		Error WlidSvc Credentials	task_0	Error		
+Microsoft-Windows-LiveId	6110	0	task_06110(UnicodeString value)		WlidSvc Credentials	task_0	Informational		
+Microsoft-Windows-LiveId	6111	0	task_06111(UnicodeString value)		WlidSvc Credentials	task_0	Informational		
+Microsoft-Windows-LiveId	6112	0	task_06112(UnicodeString value1, AnsiString value2)		WlidSvc Credentials	task_0	Informational		
+Microsoft-Windows-LiveId	6113	0	task_06113(AnsiString FunctionName, UInt32 ErrorCode)		Error Operational WlidSvc RPC	task_0	Error		
+Microsoft-Windows-LiveId	6114	0	task_06114(UInt32 RequestType, AnsiString cid, UInt32 ErrorCode, AnsiString MachineEnvironment)		Error Operational WlidSvc SOAP	task_0	Error		
+Microsoft-Windows-LiveId	6115	0	task_06115(AnsiString Value)		WlidSvc SOAP	task_0	Informational		
+Microsoft-Windows-LiveId	6116	0	task_06116(AnsiString Value)		WlidSvc SOAP	task_0	Informational		
+Microsoft-Windows-LiveId	6117	0	task_06117(AnsiString ResourceURI, SYSTEMTIME Created, SYSTEMTIME Expires, AnsiString TokenType, Int32 AuthRequired, Int32 RequestStatus, Boolean HasFlowUrl, Boolean HasAuthUrl, Boolean HasEndAuthUrl)		WlidSvc SOAP	task_0	Informational		
+Microsoft-Windows-LiveId	7000	0	task_07000(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		Critical WlidModern	task_0	Critical		
+Microsoft-Windows-LiveId	7001	0	task_07001(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		Error WlidModern	task_0	Error		
+Microsoft-Windows-LiveId	7002	0	task_07002(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		Warning WlidModern	task_0	Warning		
+Microsoft-Windows-LiveId	7003	0	task_07003(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		WlidModern	task_0	Informational		
+Microsoft-Windows-LiveId	7004	0	task_07004(AnsiString FileName, UInt32 LineNumber, AnsiString description)		Critical WlidModern	task_0	Critical		
+Microsoft-Windows-LiveId	7005	0	task_07005(AnsiString FileName, UInt32 LineNumber, AnsiString description)		Error WlidModern	task_0	Error		
+Microsoft-Windows-LiveId	7006	0	task_07006(AnsiString FileName, UInt32 LineNumber, AnsiString description)		Warning WlidModern	task_0	Warning		
+Microsoft-Windows-LiveId	7007	0	task_07007(AnsiString FileName, UInt32 LineNumber, AnsiString description)		WlidModern	task_0	Informational		
+Microsoft-Windows-LiveId	7008	0	task_07008(AnsiString FileName, AnsiString FunctionName, UInt32 LineNumber, UnicodeString description)		Function WlidModern	task_0	Verbose		
+Microsoft-Windows-LiveId	7009	0	task_07009(AnsiString FunctionName, Int32 ErrorCode)		Function WlidModern	task_0	Verbose		
+Microsoft-Windows-LiveId	7010	0	task_07010(AnsiString FunctionName, Int32 ErrorCode)		Error Function WlidModern	task_0	Error		
+Microsoft-Windows-LiveId	7011	0	task_07011(AnsiString FunctionName, Pointer Address)		Function WlidModern	task_0	Verbose		
+Microsoft-Windows-LiveId	7012	0	task_07012(UnicodeString ProcessName)		Error WlidModern	task_0	Error		
+Microsoft-Windows-LiveId	7013	0	task_07013(AnsiString FileName, AnsiString FunctionName, UInt32 LineNumber, AnsiString Expression, Int32 ErrorCode)		Error WlidModern	task_0	Error		
+Microsoft-Windows-LiveId	7014	0	task_07014(AnsiString FunctionName, Int32 ErrorCode)		Function Warning WlidModern	task_0	Warning		
+Microsoft-Windows-LiveId	7015	0	task_07015(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		WlidModern	task_0	Verbose		
+Microsoft-Windows-LiveId	7016	0	task_07016(AnsiString FileName, UInt32 LineNumber, AnsiString description)		WlidModern	task_0	Verbose		
+Microsoft-Windows-LiveId	7100	0	task_07100(UnicodeString Uri, UnicodeString Policy, UInt32 TimeToLive)		WlidModern Cache	task_0	Informational		
+Microsoft-Windows-LiveId	7101	0	task_07101(UnicodeString value1, UnicodeString value2)		WlidModern	task_0	Informational		
+Microsoft-Windows-LiveId	7102	0	task_07102(UnicodeString value)		RequestStart WlidModern	task_0	Informational		
+Microsoft-Windows-LiveId	7103	0	task_07103(UnicodeString value1, UnicodeString value2)		WlidModern Cache	task_0	Informational		
+Microsoft-Windows-LiveId	7104	0	task_07104(UInt32 Attempts, UInt32 latestIterationResult, Boolean continueRetry, Boolean isConnected, UnicodeString flowUrl, UnicodeString defaultUser, UInt32 promptType, UnicodeString authUrl, UnicodeString endAuthUrl)		WlidModern StateMachine	task_0	Informational		
+Microsoft-Windows-LiveId	7105	0	task_07105(UnicodeString value)		WlidModern Credentials	task_0	Verbose		
+Microsoft-Windows-LiveId	8000	0	task_08000(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		Critical WlidCli	task_0	Critical		
+Microsoft-Windows-LiveId	8001	0	task_08001(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		Error WlidCli	task_0	Error		
+Microsoft-Windows-LiveId	8002	0	task_08002(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		Warning WlidCli	task_0	Warning		
+Microsoft-Windows-LiveId	8003	0	task_08003(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		WlidCli	task_0	Informational		
+Microsoft-Windows-LiveId	8004	0	task_08004(AnsiString FileName, UInt32 LineNumber, AnsiString description)		Critical WlidCli	task_0	Critical		
+Microsoft-Windows-LiveId	8005	0	task_08005(AnsiString FileName, UInt32 LineNumber, AnsiString description)		Error WlidCli	task_0	Error		
+Microsoft-Windows-LiveId	8006	0	task_08006(AnsiString FileName, UInt32 LineNumber, AnsiString description)		Warning WlidCli	task_0	Warning		
+Microsoft-Windows-LiveId	8007	0	task_08007(AnsiString FileName, UInt32 LineNumber, AnsiString description)		WlidCli	task_0	Informational		
+Microsoft-Windows-LiveId	8008	0	task_08008(AnsiString FileName, AnsiString FunctionName, UInt32 LineNumber, UnicodeString description)		Function WlidCli	task_0	Verbose		
+Microsoft-Windows-LiveId	8009	0	task_08009(AnsiString FunctionName, Int32 ErrorCode)		Function WlidCli	task_0	Verbose		
+Microsoft-Windows-LiveId	8010	0	task_08010(AnsiString FunctionName, Int32 ErrorCode)		Error Function WlidCli	task_0	Error		
+Microsoft-Windows-LiveId	8011	0	task_08011(AnsiString FunctionName, Pointer Address)		Function WlidCli	task_0	Verbose		
+Microsoft-Windows-LiveId	8012	0	task_08012(UnicodeString ProcessName)		Error WlidCli	task_0	Error		
+Microsoft-Windows-LiveId	8013	0	task_08013(AnsiString FileName, AnsiString FunctionName, UInt32 LineNumber, AnsiString Expression, Int32 ErrorCode)		Error WlidCli	task_0	Error		
+Microsoft-Windows-LiveId	8014	0	task_08014(AnsiString FunctionName, Int32 ErrorCode)		Function Warning WlidCli	task_0	Warning		
+Microsoft-Windows-LiveId	8015	0	task_08015(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		WlidCli	task_0	Verbose		
+Microsoft-Windows-LiveId	8016	0	task_08016(AnsiString FileName, UInt32 LineNumber, AnsiString description)		WlidCli	task_0	Verbose		
+Microsoft-Windows-LiveId	9000	0	task_09000(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		Critical WlidProv	task_0	Critical		
+Microsoft-Windows-LiveId	9001	0	task_09001(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		Error WlidProv	task_0	Error		
+Microsoft-Windows-LiveId	9002	0	task_09002(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		Warning WlidProv	task_0	Warning		
+Microsoft-Windows-LiveId	9003	0	task_09003(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		WlidProv	task_0	Informational		
+Microsoft-Windows-LiveId	9004	0	task_09004(AnsiString FileName, UInt32 LineNumber, AnsiString description)		Critical WlidProv	task_0	Critical		
+Microsoft-Windows-LiveId	9005	0	task_09005(AnsiString FileName, UInt32 LineNumber, AnsiString description)		Error WlidProv	task_0	Error		
+Microsoft-Windows-LiveId	9006	0	task_09006(AnsiString FileName, UInt32 LineNumber, AnsiString description)		Warning WlidProv	task_0	Warning		
+Microsoft-Windows-LiveId	9007	0	task_09007(AnsiString FileName, UInt32 LineNumber, AnsiString description)		WlidProv	task_0	Informational		
+Microsoft-Windows-LiveId	9008	0	task_09008(AnsiString FileName, AnsiString FunctionName, UInt32 LineNumber, UnicodeString description)		Function WlidProv	task_0	Verbose		
+Microsoft-Windows-LiveId	9009	0	task_09009(AnsiString FunctionName, Int32 ErrorCode)		Function WlidProv	task_0	Verbose		
+Microsoft-Windows-LiveId	9010	0	task_09010(AnsiString FunctionName, Int32 ErrorCode)		Error Function WlidProv	task_0	Error		
+Microsoft-Windows-LiveId	9011	0	task_09011(AnsiString FunctionName, Pointer Address)		Function WlidProv	task_0	Verbose		
+Microsoft-Windows-LiveId	9012	0	task_09012(UnicodeString ProcessName)		Error WlidProv	task_0	Error		
+Microsoft-Windows-LiveId	9013	0	task_09013(AnsiString FileName, AnsiString FunctionName, UInt32 LineNumber, AnsiString Expression, Int32 ErrorCode)		Error WlidProv	task_0	Error		
+Microsoft-Windows-LiveId	9014	0	task_09014(AnsiString FunctionName, Int32 ErrorCode)		Function Warning WlidProv	task_0	Warning		
+Microsoft-Windows-LiveId	9015	0	task_09015(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		WlidProv	task_0	Verbose		
+Microsoft-Windows-LiveId	9016	0	task_09016(AnsiString FileName, UInt32 LineNumber, AnsiString description)		WlidProv	task_0	Verbose		
+Microsoft-Windows-LiveId	9017	0	UserIdKeyManagerOperationStart()	Start	Analytic keyword_400000000000	UserIdKeyManagerOperation	Informational		
+Microsoft-Windows-LiveId	9018	0	UserIdKeyManagerOperationStop(Int32 Result)	Stop	Analytic keyword_400000000000	UserIdKeyManagerOperation	Informational		
+Microsoft-Windows-LiveId	9019	0	UserIdKeyManagerOperationStart9019()	Start	Analytic keyword_400000000000	UserIdKeyManagerOperation	Informational		
+Microsoft-Windows-LiveId	9020	0	UserIdKeyManagerOperationStop9020(Int32 Result)	Stop	Analytic keyword_400000000000	UserIdKeyManagerOperation	Informational		
+Microsoft-Windows-LiveId	9021	0	UserIdKeyManagerOperationStart9021()	Start	Analytic keyword_400000000000	UserIdKeyManagerOperation	Informational		
+Microsoft-Windows-LiveId	9022	0	UserIdKeyManagerOperationStop9022(Int32 Result)	Stop	Analytic keyword_400000000000	UserIdKeyManagerOperation	Informational		
+Microsoft-Windows-LiveId	9023	0	UserIdKeyManagerOperationStart9023()	Start	Analytic keyword_400000000000	UserIdKeyManagerOperation	Informational		
+Microsoft-Windows-LiveId	9024	0	UserIdKeyManagerOperationStop9024(Int32 Result)	Stop	Analytic keyword_400000000000	UserIdKeyManagerOperation	Informational		
+Microsoft-Windows-LiveId	9025	0	UserIdKeyManagerOperationStart9025()	Start	Analytic keyword_400000000000	UserIdKeyManagerOperation	Informational		
+Microsoft-Windows-LiveId	9026	0	UserIdKeyManagerOperationStop9026(Int32 Result)	Stop	Analytic keyword_400000000000	UserIdKeyManagerOperation	Informational		
+Microsoft-Windows-LiveId	9027	0	UserIdKeyManagerOperationStart9027()	Start	Analytic keyword_400000000000	UserIdKeyManagerOperation	Informational		
+Microsoft-Windows-LiveId	9028	0	UserIdKeyManagerOperationStop9028(Int32 Result)	Stop	Analytic keyword_400000000000	UserIdKeyManagerOperation	Informational		
+Microsoft-Windows-LiveId	9100	0	task_09100(UnicodeString value)		WlidProv Credentials	task_0	Verbose		
+Microsoft-Windows-LiveId	10000	0	task_010000(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		Critical WlidBho	task_0	Critical		
+Microsoft-Windows-LiveId	10001	0	task_010001(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		Error WlidBho	task_0	Error		
+Microsoft-Windows-LiveId	10002	0	task_010002(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		Warning WlidBho	task_0	Warning		
+Microsoft-Windows-LiveId	10003	0	task_010003(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		WlidBho	task_0	Informational		
+Microsoft-Windows-LiveId	10004	0	task_010004(AnsiString FileName, UInt32 LineNumber, AnsiString description)		Critical WlidBho	task_0	Critical		
+Microsoft-Windows-LiveId	10005	0	task_010005(AnsiString FileName, UInt32 LineNumber, AnsiString description)		Error WlidBho	task_0	Error		
+Microsoft-Windows-LiveId	10006	0	task_010006(AnsiString FileName, UInt32 LineNumber, AnsiString description)		Warning WlidBho	task_0	Warning		
+Microsoft-Windows-LiveId	10007	0	task_010007(AnsiString FileName, UInt32 LineNumber, AnsiString description)		WlidBho	task_0	Informational		
+Microsoft-Windows-LiveId	10008	0	task_010008(AnsiString FileName, AnsiString FunctionName, UInt32 LineNumber, UnicodeString description)		Function WlidBho	task_0	Verbose		
+Microsoft-Windows-LiveId	10009	0	task_010009(AnsiString FunctionName, Int32 ErrorCode)		Function WlidBho	task_0	Verbose		
+Microsoft-Windows-LiveId	10010	0	task_010010(AnsiString FunctionName, Int32 ErrorCode)		Error Function WlidBho	task_0	Error		
+Microsoft-Windows-LiveId	10011	0	task_010011(AnsiString FunctionName, Pointer Address)		Function WlidBho	task_0	Verbose		
+Microsoft-Windows-LiveId	10012	0	task_010012(UnicodeString ProcessName)		Error WlidBho	task_0	Error		
+Microsoft-Windows-LiveId	10013	0	task_010013(AnsiString FileName, AnsiString FunctionName, UInt32 LineNumber, AnsiString Expression, Int32 ErrorCode)		Error WlidBho	task_0	Error		
+Microsoft-Windows-LiveId	10014	0	task_010014(AnsiString FunctionName, Int32 ErrorCode)		Function Warning WlidBho	task_0	Warning		
+Microsoft-Windows-LiveId	10015	0	task_010015(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		WlidBho	task_0	Verbose		
+Microsoft-Windows-LiveId	10016	0	task_010016(AnsiString FileName, UInt32 LineNumber, AnsiString description)		WlidBho	task_0	Verbose		
+Microsoft-Windows-LiveId	11000	0	task_011000(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		Critical TokenProvider	task_0	Critical		
+Microsoft-Windows-LiveId	11001	0	task_011001(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		Error TokenProvider	task_0	Error		
+Microsoft-Windows-LiveId	11002	0	task_011002(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		Warning TokenProvider	task_0	Warning		
+Microsoft-Windows-LiveId	11003	0	task_011003(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		TokenProvider	task_0	Informational		
+Microsoft-Windows-LiveId	11004	0	task_011004(AnsiString FileName, UInt32 LineNumber, AnsiString description)		Critical TokenProvider	task_0	Critical		
+Microsoft-Windows-LiveId	11005	0	task_011005(AnsiString FileName, UInt32 LineNumber, AnsiString description)		Error TokenProvider	task_0	Error		
+Microsoft-Windows-LiveId	11006	0	task_011006(AnsiString FileName, UInt32 LineNumber, AnsiString description)		Warning TokenProvider	task_0	Warning		
+Microsoft-Windows-LiveId	11007	0	task_011007(AnsiString FileName, UInt32 LineNumber, AnsiString description)		TokenProvider	task_0	Informational		
+Microsoft-Windows-LiveId	11008	0	task_011008(AnsiString FileName, AnsiString FunctionName, UInt32 LineNumber, UnicodeString description)		Function TokenProvider	task_0	Verbose		
+Microsoft-Windows-LiveId	11009	0	task_011009(AnsiString FunctionName, Int32 ErrorCode)		Function TokenProvider	task_0	Verbose		
+Microsoft-Windows-LiveId	11010	0	task_011010(AnsiString FunctionName, Int32 ErrorCode)		Error Function TokenProvider	task_0	Error		
+Microsoft-Windows-LiveId	11011	0	task_011011(AnsiString FunctionName, Pointer Address)		Function TokenProvider	task_0	Verbose		
+Microsoft-Windows-LiveId	11012	0	task_011012(UnicodeString ProcessName)		Error TokenProvider	task_0	Error		
+Microsoft-Windows-LiveId	11013	0	task_011013(AnsiString FileName, AnsiString FunctionName, UInt32 LineNumber, AnsiString Expression, Int32 ErrorCode)		Error TokenProvider	task_0	Error		
+Microsoft-Windows-LiveId	11014	0	task_011014(AnsiString FunctionName, Int32 ErrorCode)		Function Warning TokenProvider	task_0	Warning		
+Microsoft-Windows-LiveId	11015	0	task_011015(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		TokenProvider	task_0	Verbose		
+Microsoft-Windows-LiveId	11016	0	task_011016(AnsiString FileName, UInt32 LineNumber, AnsiString description)		TokenProvider	task_0	Verbose		
+Microsoft-Windows-LiveId	12000	0	task_012000(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		Critical Extension	task_0	Critical		
+Microsoft-Windows-LiveId	12001	0	task_012001(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		Error Extension	task_0	Error		
+Microsoft-Windows-LiveId	12002	0	task_012002(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		Warning Extension	task_0	Warning		
+Microsoft-Windows-LiveId	12003	0	task_012003(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		Extension	task_0	Informational		
+Microsoft-Windows-LiveId	12004	0	task_012004(AnsiString FileName, UInt32 LineNumber, AnsiString description)		Critical Extension	task_0	Critical		
+Microsoft-Windows-LiveId	12005	0	task_012005(AnsiString FileName, UInt32 LineNumber, AnsiString description)		Error Extension	task_0	Error		
+Microsoft-Windows-LiveId	12006	0	task_012006(AnsiString FileName, UInt32 LineNumber, AnsiString description)		Warning Extension	task_0	Warning		
+Microsoft-Windows-LiveId	12007	0	task_012007(AnsiString FileName, UInt32 LineNumber, AnsiString description)		Extension	task_0	Informational		
+Microsoft-Windows-LiveId	12008	0	task_012008(AnsiString FileName, AnsiString FunctionName, UInt32 LineNumber, UnicodeString description)		Function Extension	task_0	Verbose		
+Microsoft-Windows-LiveId	12009	0	task_012009(AnsiString FunctionName, Int32 ErrorCode)		Function Extension	task_0	Verbose		
+Microsoft-Windows-LiveId	12010	0	task_012010(AnsiString FunctionName, Int32 ErrorCode)		Error Function Extension	task_0	Error		
+Microsoft-Windows-LiveId	12011	0	task_012011(AnsiString FunctionName, Pointer Address)		Function Extension	task_0	Verbose		
+Microsoft-Windows-LiveId	12012	0	task_012012(UnicodeString ProcessName)		Error Extension	task_0	Error		
+Microsoft-Windows-LiveId	12013	0	task_012013(AnsiString FileName, AnsiString FunctionName, UInt32 LineNumber, AnsiString Expression, Int32 ErrorCode)		Error Extension	task_0	Error		
+Microsoft-Windows-LiveId	12014	0	task_012014(AnsiString FunctionName, Int32 ErrorCode)		Function Warning Extension	task_0	Warning		
+Microsoft-Windows-LiveId	12015	0	task_012015(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		Extension	task_0	Verbose		
+Microsoft-Windows-LiveId	12016	0	task_012016(AnsiString FileName, UInt32 LineNumber, AnsiString description)		Extension	task_0	Verbose		

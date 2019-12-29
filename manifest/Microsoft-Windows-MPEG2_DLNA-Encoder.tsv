@@ -1,0 +1,21 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-MPEG2_DLNA-Encoder	0	0	MPEG_2Encode/MuxforDLNAStart(UnicodeString Region, UInt32 VideoX, UInt32 VideoY, UInt32 AudioChannels, UInt32 VideoBitRate, UInt32 AudioBitRate, Int64 SeekOffsetMs)	Start		MPEG_2Encode/MuxforDLNA	Informational		
+Microsoft-Windows-MPEG2_DLNA-Encoder	1	0	MPEG_2Encode/MuxforDLNAStop(UInt64 TotalBytesEncoded, UInt64 VideoFramesReceived, UInt64 VideoFramesEncoded, UInt64 AudioBytesReceived, UInt64 AudioFramesEncoded)	Stop		MPEG_2Encode/MuxforDLNA	Informational		
+Microsoft-Windows-MPEG2_DLNA-Encoder	2	0	MPEG_2Encode/MuxforDLNA(Int32 hr)			MPEG_2Encode/MuxforDLNA	Error		
+Microsoft-Windows-MPEG2_DLNA-Encoder	3	0	MPEG_2Encode/MuxforDLNA3(Int64 Timestamp, UInt32 ID)			MPEG_2Encode/MuxforDLNA	Verbose		
+Microsoft-Windows-MPEG2_DLNA-Encoder	4	0	MPEG_2Encode/MuxforDLNA4(UInt32 InputID, Int64 InputTimestamp, Int64 TargetTimestamp)			MPEG_2Encode/MuxforDLNA	Verbose		
+Microsoft-Windows-MPEG2_DLNA-Encoder	5	0	MPEG_2Encode/MuxforDLNA5(Int64 Timestamp, UInt32 Bytes)			MPEG_2Encode/MuxforDLNA	Verbose		
+Microsoft-Windows-MPEG2_DLNA-Encoder	6	0	MPEG_2Encode/MuxforDLNA6()			MPEG_2Encode/MuxforDLNA	Verbose		
+Microsoft-Windows-MPEG2_DLNA-Encoder	7	0	AudioEncodeSessionConfig(UInt32 MaxBitRate, Int32 SampleRate, UInt8 InputFormat)			AudioEncodeSessionConfig	Informational		
+Microsoft-Windows-MPEG2_DLNA-Encoder	8	0	AudioEncodeSessionStart()	Start		AudioEncodeSession	Informational		
+Microsoft-Windows-MPEG2_DLNA-Encoder	9	0	AudioEncodeSessionStop()	Stop		AudioEncodeSession	Informational		
+Microsoft-Windows-MPEG2_DLNA-Encoder	10	0	AudioEncodeTaskStart()	Start		AudioEncodeTask	Verbose		
+Microsoft-Windows-MPEG2_DLNA-Encoder	11	0	AudioEncodeTaskStop()	Stop		AudioEncodeTask	Verbose		
+Microsoft-Windows-MPEG2_DLNA-Encoder	12	0	VideoEncodeSessionConfig(UInt32 Width, Int32 Height, UInt8 Progressive, Int32 MaxBitRate)			VideoEncodeSessionConfig	Informational		
+Microsoft-Windows-MPEG2_DLNA-Encoder	13	0	VideoEncodeSessionStart()	Start		VideoEncodeSession	Informational		
+Microsoft-Windows-MPEG2_DLNA-Encoder	14	0	VideoEncodeSessionStop()	Stop		VideoEncodeSession	Informational		
+Microsoft-Windows-MPEG2_DLNA-Encoder	15	0	VideoEncodeTaskStart()	Start		VideoEncodeTask	Verbose		
+Microsoft-Windows-MPEG2_DLNA-Encoder	16	0	VideoEncodeTaskStop()	Stop		VideoEncodeTask	Verbose		
+Microsoft-Windows-MPEG2_DLNA-Encoder	17	0	MuxSessionConfig(UInt8 MuxFormat)			MuxSessionConfig	Informational		
+Microsoft-Windows-MPEG2_DLNA-Encoder	18	0	MuxSessionStart()	Start		MuxSession	Informational		
+Microsoft-Windows-MPEG2_DLNA-Encoder	19	0	MuxSessionStop()	Stop		MuxSession	Informational		

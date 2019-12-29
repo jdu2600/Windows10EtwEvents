@@ -1,0 +1,15 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-WindowsSystemAssessmentTool	0	0	Application(UInt32 TestV1, UInt32 TestV2, UInt32 TestV3, UnicodeString TestV4)			Application	Informational		
+Microsoft-Windows-WindowsSystemAssessmentTool	1	0	ApplicationStart(FILETIME StartTimeOfDay)	Start		Application	Always		
+Microsoft-Windows-WindowsSystemAssessmentTool	2	0	Application2(UInt16 CommandLineSize, UnicodeString CommandLine)			Application	Always		
+Microsoft-Windows-WindowsSystemAssessmentTool	3	0	ApplicationStop(UInt32 ExitCode)	Stop		Application	Always		
+Microsoft-Windows-WindowsSystemAssessmentTool	4	0	Application4(UInt32 Win32Error, UInt16 CantMsgSize, UnicodeString CantMsg)			Application	Always		
+Microsoft-Windows-WindowsSystemAssessmentTool	5	0	Application5(HexInt32 FailingHresult, GUID FailingInterfaceCLSID, UInt16 SourceSize, UnicodeString Source, UInt16 InfterfaceSize, UnicodeString Interface, UInt16 ErrorMsgSize, UnicodeString ErrorMsg, UInt16 CantMsgSize, UnicodeString CantMsg)			Application	Always		
+Microsoft-Windows-WindowsSystemAssessmentTool	6	0	Application6(UInt16 ErrorMsgSize, UnicodeString ErrorMsg)			Application	Always		
+Microsoft-Windows-WindowsSystemAssessmentTool	7	0	Application7(HexInt32 FailingHresult, UInt16 ErrorMsgSize, UnicodeString ErrorMsg, UInt16 CantMsgSize, UnicodeString CantMsg)			Application	Always		
+Microsoft-Windows-WindowsSystemAssessmentTool	8	0	Application8(UInt16 MessageSize, AnsiString Message)			Application	Informational		
+Microsoft-Windows-WindowsSystemAssessmentTool	9	0	Application9(UInt16 PhaseID, UInt16 DescriptionSize, UnicodeString Description)			Application	Informational		
+Microsoft-Windows-WindowsSystemAssessmentTool	10	0	Application10(UInt16 PhaseID)			Application	Informational		
+Microsoft-Windows-WindowsSystemAssessmentTool	11	0	Application11()			Application	Informational		
+Microsoft-Windows-WindowsSystemAssessmentTool	12	0	Application12()			Application	Informational		
+Microsoft-Windows-WindowsSystemAssessmentTool	13	0	Application13()			Application	Informational		

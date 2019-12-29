@@ -1,0 +1,8 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-VerifyHardwareSecurity	3001	0	CheckGenericEPORTCHECKeportCheck(UInt32 CurrentCheckBit)	reportCheck		CheckGeneric	Informational		
+Microsoft-Windows-VerifyHardwareSecurity	3002	0	CheckSecureBootEnabledECUREBOOTENABLEDFAILEDCHECKecurebootEnabledFailedCheck()	securebootEnabledFailedCheck		CheckSecureBootEnabled	Error		
+Microsoft-Windows-VerifyHardwareSecurity	3003	0	CheckSecureBootEnabledECUREBOOTENABLEDFAILEDTOCHECKecurebootEnabledFailedToCheck(Int32 hr)	securebootEnabledFailedToCheck		CheckSecureBootEnabled	Warning		
+Microsoft-Windows-VerifyHardwareSecurity	3004	0	CheckCertificatesERTSFAILEDCHECKertsFailedCheck(UnicodeString name, UnicodeString database, Binary bytes)	certsFailedCheck		CheckCertificates	Error		
+Microsoft-Windows-VerifyHardwareSecurity	3005	0	CheckCertificatesERTSFAILEDTOCHECKertsFailedToCheck(Int32 hr)	certsFailedToCheck		CheckCertificates	Warning		
+Microsoft-Windows-VerifyHardwareSecurity	3006	0	CheckSecureBootPolicyECUREBOOTPOLICYFAILEDCHECKecurebootPolicyFailedCheck()	securebootPolicyFailedCheck		CheckSecureBootPolicy	Error		
+Microsoft-Windows-VerifyHardwareSecurity	3007	0	CheckSecureBootPolicyECUREBOOTPOLICYFAILEDTOCHECKecurebootPolicyFailedToCheck(Int32 hr)	securebootPolicyFailedToCheck		CheckSecureBootPolicy	Warning		

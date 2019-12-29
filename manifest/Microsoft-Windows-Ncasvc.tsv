@@ -1,0 +1,30 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Ncasvc	1	0	task_0(UInt32 Status)			task_0	Informational		
+Microsoft-Windows-Ncasvc	2	0	task_02(UInt32 Status, UInt32 Substatus)			task_0	Informational		
+Microsoft-Windows-Ncasvc	3	0	task_03(UnicodeString ApiFunction)			task_0	Informational		
+Microsoft-Windows-Ncasvc	4	0	task_04(UnicodeString ApiFunction, UInt64 Error)			task_0	Informational		
+Microsoft-Windows-Ncasvc	5	0	task_05(UInt32 EvColl, Boolean Old, Boolean New, UInt64 UserId)			task_0	Informational		
+Microsoft-Windows-Ncasvc	6	0	task_06(UInt32 Type, UnicodeString Resource)			task_0	Informational		
+Microsoft-Windows-Ncasvc	7	0	task_07(UInt32 Type, UnicodeString Resource, UInt32 Result)			task_0	Informational		
+Microsoft-Windows-Ncasvc	8	0	task_08(UInt32 Type, UInt64 Code, UInt64 Error)			task_0	Informational		
+Microsoft-Windows-Ncasvc	9	0	task_09(UnicodeString Source)			task_0	Informational		
+Microsoft-Windows-Ncasvc	10	0	task_010(UnicodeString Source)			task_0	Informational		
+Microsoft-Windows-Ncasvc	11	0	task_011(UnicodeString ModuleName)			task_0	Informational		
+Microsoft-Windows-Ncasvc	12	0	task_012(UnicodeString ModuleName, UInt64 Error)			task_0	Informational		
+Microsoft-Windows-Ncasvc	13	0	task_013(UnicodeString ModuleName)			task_0	Informational		
+Microsoft-Windows-Ncasvc	14	0	task_014(UnicodeString ModuleName)			task_0	Informational		
+Microsoft-Windows-Ncasvc	15	0	task_015(UnicodeString Source, UnicodeString Info)			task_0	Informational		
+Microsoft-Windows-Ncasvc	10001	0	NcaSvc_PerfTrack_InternetConnected_ActionableStateStart(UInt32 MachineIdentifier, UInt32 SessionIdentifier, UInt32 DeploymentIdentifier, UInt32 StopState)	Start		NcaSvc_PerfTrack_InternetConnected_ActionableState	Informational		
+Microsoft-Windows-Ncasvc	10002	0	NcaSvc_PerfTrack_InternetConnected_ActionableStateStop(UInt32 MachineIdentifier, UInt32 SessionIdentifier, UInt32 DeploymentIdentifier, UInt32 StopState)	Stop		NcaSvc_PerfTrack_InternetConnected_ActionableState	Informational		
+Microsoft-Windows-Ncasvc	10003	0	NcaSvc_PerfTrack_InternetConnected_ResolveNameStart(UInt32 MachineIdentifier, UInt32 SessionIdentifier, UInt32 DeploymentIdentifier, UInt32 StopState)	Start		NcaSvc_PerfTrack_InternetConnected_ResolveName	Informational		
+Microsoft-Windows-Ncasvc	10004	0	NcaSvc_PerfTrack_InternetConnected_ResolveNameStop(UInt32 MachineIdentifier, UInt32 SessionIdentifier, UInt32 DeploymentIdentifier, UInt32 StopState)	Stop		NcaSvc_PerfTrack_InternetConnected_ResolveName	Informational		
+Microsoft-Windows-Ncasvc	10005	0	NcaSvc_PerfTrack_InternetConnected_DAConnectedStart(UInt32 MachineIdentifier, UInt32 SessionIdentifier, UInt32 DeploymentIdentifier, UInt32 StopState)	Start		NcaSvc_PerfTrack_InternetConnected_DAConnected	Informational		
+Microsoft-Windows-Ncasvc	10006	0	NcaSvc_PerfTrack_InternetConnected_DAConnectedStop(UInt32 MachineIdentifier, UInt32 SessionIdentifier, UInt32 DeploymentIdentifier, UInt32 StopState)	Stop		NcaSvc_PerfTrack_InternetConnected_DAConnected	Informational		
+Microsoft-Windows-Ncasvc	10007	0	NcaSvc_PerfTrack_SmartcardRequired_SmartcardEnteredStart(UInt32 MachineIdentifier, UInt32 SessionIdentifier, UInt32 DeploymentIdentifier, UInt32 StopState)	Start		NcaSvc_PerfTrack_SmartcardRequired_SmartcardEntered	Informational		
+Microsoft-Windows-Ncasvc	10008	0	NcaSvc_PerfTrack_SmartcardRequired_SmartcardEnteredStop(UInt32 MachineIdentifier, UInt32 SessionIdentifier, UInt32 DeploymentIdentifier, UInt32 StopState)	Stop		NcaSvc_PerfTrack_SmartcardRequired_SmartcardEntered	Informational		
+Microsoft-Windows-Ncasvc	10009	0	NcaSvc_PerfTrack_SmartcardEntered_DAConnectedStart(UInt32 MachineIdentifier, UInt32 SessionIdentifier, UInt32 DeploymentIdentifier, UInt32 StopState)	Start		NcaSvc_PerfTrack_SmartcardEntered_DAConnected	Informational		
+Microsoft-Windows-Ncasvc	10010	0	NcaSvc_PerfTrack_SmartcardEntered_DAConnectedStop(UInt32 MachineIdentifier, UInt32 SessionIdentifier, UInt32 DeploymentIdentifier, UInt32 StopState)	Stop		NcaSvc_PerfTrack_SmartcardEntered_DAConnected	Informational		
+Microsoft-Windows-Ncasvc	10011	0	NcaSvc_PerfTrack_NAPRequired_DAConnectedStart(UInt32 MachineIdentifier, UInt32 SessionIdentifier, UInt32 DeploymentIdentifier, UInt32 StopState)	Start		NcaSvc_PerfTrack_NAPRequired_DAConnected	Informational		
+Microsoft-Windows-Ncasvc	10012	0	NcaSvc_PerfTrack_NAPRequired_DAConnectedStop(UInt32 MachineIdentifier, UInt32 SessionIdentifier, UInt32 DeploymentIdentifier, UInt32 StopState)	Stop		NcaSvc_PerfTrack_NAPRequired_DAConnected	Informational		
+Microsoft-Windows-Ncasvc	10013	0	NcaSvc_PerfTrack_InternetConnected_DTESucceededStart(UInt32 MachineIdentifier, UInt32 SessionIdentifier, UInt32 DeploymentIdentifier, UInt32 StopState)	Start		NcaSvc_PerfTrack_InternetConnected_DTESucceeded	Informational		
+Microsoft-Windows-Ncasvc	10014	0	NcaSvc_PerfTrack_InternetConnected_DTESucceededStop(UInt32 MachineIdentifier, UInt32 SessionIdentifier, UInt32 DeploymentIdentifier, UInt32 StopState)	Stop		NcaSvc_PerfTrack_InternetConnected_DTESucceeded	Informational		

@@ -1,0 +1,55 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-DirectComposition	1	0	RESOURCE_CREATION(UInt32 channelHandle, UInt32 resourceHandle, UInt32 resourceType, UInt64 resourcePointer)		DCompBasic	RESOURCE_CREATION	Verbose		
+Microsoft-Windows-DirectComposition	2	0	BEGIN_DRAWStart(UInt32 channelHandle, UInt32 resourceType, UInt64 resourcePointer, Int32 left, Int32 top, Int32 right, Int32 bottom)	Start	DCompBasic DCompMemory	BEGIN_DRAW	Verbose		
+Microsoft-Windows-DirectComposition	3	0	BEGIN_DRAWStop()	Stop	DCompBasic	BEGIN_DRAW	Verbose		
+Microsoft-Windows-DirectComposition	4	0	END_DRAWStart(UInt32 channelHandle, UInt32 resourceType, UInt64 resourcePointer)	Start	DCompBasic	END_DRAW	Verbose		
+Microsoft-Windows-DirectComposition	5	0	END_DRAWStop()	Stop	DCompBasic	END_DRAW	Verbose		
+Microsoft-Windows-DirectComposition	6	0	TRIMStart(UInt32 channelHandle, UInt32 resourceType, UInt64 resourcePointer)	Start	DCompBasic DCompMemory	TRIM	Verbose		
+Microsoft-Windows-DirectComposition	7	0	TRIMStop()	Stop	DCompBasic	TRIM	Verbose		
+Microsoft-Windows-DirectComposition	8	0	RESIZEStart(UInt32 channelHandle, UInt32 resourceType, UInt64 resourcePointer)	Start	DCompBasic DCompMemory	RESIZE	Verbose		
+Microsoft-Windows-DirectComposition	9	0	RESIZEStop()	Stop	DCompBasic	RESIZE	Verbose		
+Microsoft-Windows-DirectComposition	10	0	UPDATE_TOKENStart(UInt32 channelHandle, UInt32 resourceType, UInt64 resourcePointer)	Start	DCompBasic	UPDATE_TOKEN	Verbose		
+Microsoft-Windows-DirectComposition	11	0	UPDATE_TOKENStop()	Stop	DCompBasic	UPDATE_TOKEN	Verbose		
+Microsoft-Windows-DirectComposition	12	0	SUSPEND_DRAWStart(UInt32 channelHandle, UInt32 resourceType, UInt64 resourcePointer)	Start	DCompBasic	SUSPEND_DRAW	Verbose		
+Microsoft-Windows-DirectComposition	13	0	SUSPEND_DRAWStop()	Stop	DCompBasic	SUSPEND_DRAW	Verbose		
+Microsoft-Windows-DirectComposition	14	0	RESUME_DRAWStart(UInt32 channelHandle, UInt32 resourceType, UInt64 resourcePointer)	Start	DCompBasic	RESUME_DRAW	Verbose		
+Microsoft-Windows-DirectComposition	15	0	RESUME_DRAWStop()	Stop	DCompBasic	RESUME_DRAW	Verbose		
+Microsoft-Windows-DirectComposition	16	0	ATLAS_ALLOCATE(UInt64 Id, UInt32 Width, UInt32 Height, UInt32 BitDepth, Boolean IsTexturingAtlas, UInt32 ChannelHandle, UInt32 PixelFormat)		DCompDiagnostic DCompMemory	ATLAS_ALLOCATE	Verbose		
+Microsoft-Windows-DirectComposition	17	0	ATLAS_FREE(UInt64 Id)		DCompDiagnostic DCompMemory	ATLAS_FREE	Verbose		
+Microsoft-Windows-DirectComposition	18	0	ATLAS_ENTRY_ALLOCATE(UInt64 AtlasId, UInt32 X, UInt32 Y, UInt32 Width, UInt32 Height, UInt64 EntryId)		DCompDiagnostic DCompMemory	ATLAS_ENTRY_ALLOCATE	Verbose		
+Microsoft-Windows-DirectComposition	19	0	ATLAS_ENTRY_FREE(UInt64 AtlasId, UInt32 X, UInt32 Y, UInt32 Width, UInt32 Height, UInt64 EntryId)		DCompDiagnostic DCompMemory	ATLAS_ENTRY_FREE	Verbose		
+Microsoft-Windows-DirectComposition	20	0	ATLAS_UTILIZATION(UInt64 Id, UInt32 Width, UInt32 Height, UInt32 BitDepth, Float PercentUsed)		DCompDiagnostic DCompMemory	ATLAS_UTILIZATION	Verbose		
+Microsoft-Windows-DirectComposition	21	0	SCROLLStart(UInt32 channelHandle, UInt32 resourceType, UInt64 resourcePointer)	Start	DCompBasic	SCROLL	Verbose		
+Microsoft-Windows-DirectComposition	22	0	SCROLLStop()	Stop	DCompBasic	SCROLL	Verbose		
+Microsoft-Windows-DirectComposition	23	0	DEVICE_CREATE(UInt64 DeviceId, UInt32 ChannelHandle)		DCompDiagnostic DCompMemory	DEVICE_CREATE	Verbose		
+Microsoft-Windows-DirectComposition	24	0	DEVICE_DESTROY(UInt64 DeviceId, UInt32 ChannelHandle)		DCompDiagnostic DCompMemory	DEVICE_DESTROY	Verbose		
+Microsoft-Windows-DirectComposition	25	0	DEVICE_COMMIT(UInt64 DeviceId, UInt32 ChannelHandle, UInt32 LastCommittedBatchId, UInt32 LastConfirmedBatchId)		DCompDiagnostic DCompMemory	DEVICE_COMMIT	Verbose		
+Microsoft-Windows-DirectComposition	26	0	ATLAS_USE_INFO(UInt64 Id, UInt64 Owner, UInt32 UseType, Int32 XData, Int32 YData)		DCompDiagnostic DCompMemory	ATLAS_USE_INFO	Verbose		
+Microsoft-Windows-DirectComposition	27	0	ATLAS_ENTRY_MARK_FOR_DISPOSE(UInt64 Id)		DCompDiagnostic DCompMemory	ATLAS_ENTRY_MARK_FOR_DISPOSE	Verbose		
+Microsoft-Windows-DirectComposition	28	0	ATLAS_ENTRY_MARK_AVAILABLE(UInt64 Id)		DCompDiagnostic DCompMemory	ATLAS_ENTRY_MARK_AVAILABLE	Verbose		
+Microsoft-Windows-DirectComposition	29	0	ATLAS_ENTRY_REUSE(UInt64 AtlasId, UInt32 X, UInt32 Y, UInt32 Width, UInt32 Height, UInt64 EntryId)		DCompDiagnostic DCompMemory	ATLAS_ENTRY_REUSE	Verbose		
+Microsoft-Windows-DirectComposition	30	0	RESOURCE_RELEASE(UInt32 channelHandle, UInt32 resourceHandle, UInt64 resourcePointer)		DCompBasic	RESOURCE_RELEASE	Verbose		
+Microsoft-Windows-DirectComposition	31	0	CREATE_CLUMP(UInt64 clumpPointer, UInt64 virtualSurfacePointer, UInt32 left, UInt32 top, UInt32 right, UInt32 bottom)		DCompDiagnostic DCompMemory	CREATE_CLUMP	Verbose		
+Microsoft-Windows-DirectComposition	32	0	DESTROY_CLUMP(UInt64 clumpPointer)		DCompDiagnostic DCompMemory	DESTROY_CLUMP	Verbose		
+Microsoft-Windows-DirectComposition	33	0	PUSH_DOWNStart(UInt64 surfacePointer)	Start	DCompDiagnostic DCompMemory	PUSH_DOWN	Verbose		
+Microsoft-Windows-DirectComposition	34	0	PUSH_DOWNStop(UInt64 surfacePointer)	Stop	DCompDiagnostic DCompMemory	PUSH_DOWN	Verbose		
+Microsoft-Windows-DirectComposition	35	0	RECLUMPStart(UInt64 surfacePointer)	Start	DCompDiagnostic DCompMemory	RECLUMP	Verbose		
+Microsoft-Windows-DirectComposition	36	0	RECLUMPStop(UInt64 surfacePointer)	Stop	DCompDiagnostic DCompMemory	RECLUMP	Verbose		
+Microsoft-Windows-DirectComposition	37	0	VIRTUAL_SURFACE_COUNTERS(UInt32 percentValidTiles, UInt32 pixelsPerClump)		DCompDiagnostic DCompMemory	VIRTUAL_SURFACE_COUNTERS	Verbose		
+Microsoft-Windows-DirectComposition	38	0	CAP_ALLOCATION_STATS(UInt32 ChannelHandle, UInt32 LastCommittedBatchId, UInt64 largeSurfacesTotalAllocated, UInt64 largeSurfacesInUseAllocated, UInt64 largeSurfacesInUseActual, UInt64 largeSurfacesPeakInUseActual, UInt64 largeSurfacesAllowed, UInt64 poolsTotalAllocated, UInt64 poolsInUseAllocated, UInt64 poolsInUseActual, UInt64 poolsPeakInUseActual, UInt64 poolsAllowed, UInt64 largeSurfacesPendingRelease, UInt64 poolsPendingRelease, UInt64 largeSurfacesMaxStructuralWaste, UInt64 poolsMaxStructuralWaste)		DCompDiagnostic DCompMemory	CAP_ALLOCATION_STATS	Verbose		
+Microsoft-Windows-DirectComposition	39	0	CAP_RELEASE_SURFACE(UInt64 Id, UInt32 Width, UInt32 Height)		DCompDiagnostic DCompMemory	CAP_RELEASE_SURFACE	Verbose		
+Microsoft-Windows-DirectComposition	40	0	BLOCK_FOR_EXCESSIVE_PENDINGStart(UInt64 Id)	Start	DCompDiagnostic DCompMemory	BLOCK_FOR_EXCESSIVE_PENDING	Verbose		
+Microsoft-Windows-DirectComposition	41	0	BLOCK_FOR_EXCESSIVE_PENDINGStop(UInt64 Id)	Stop	DCompDiagnostic DCompMemory	BLOCK_FOR_EXCESSIVE_PENDING	Verbose		
+Microsoft-Windows-DirectComposition	42	0	OFFER_RECLAIM(UInt64 Id, UInt32 Width, UInt32 Height)		DCompMemory OfferReclaim	OFFER_RECLAIM	Verbose		
+Microsoft-Windows-DirectComposition	43	0	OFFER_RECLAIM43(UInt64 Id, UInt32 Width, UInt32 Height, Boolean PixelsDiscarded)		DCompMemory OfferReclaim	OFFER_RECLAIM	Verbose		
+Microsoft-Windows-DirectComposition	44	0	CAP_MAXIMUMStart(UInt64 Id)	Start	DCompDiagnostic DCompMemory	CAP_MAXIMUM	Verbose		
+Microsoft-Windows-DirectComposition	45	0	CAP_MAXIMUMStop(UInt64 Id)	Stop	DCompDiagnostic DCompMemory	CAP_MAXIMUM	Verbose		
+Microsoft-Windows-DirectComposition	46	0	CREATE_SHARED_MEMORY_SECTION(UInt64 section, UInt32 size)		DCompDiagnostic DCompSharedMemory	CREATE_SHARED_MEMORY_SECTION	Verbose		
+Microsoft-Windows-DirectComposition	47	0	DESTROY_SHARED_MEMORY_SECTION(UInt64 section, UInt32 size)		DCompDiagnostic DCompSharedMemory	DESTROY_SHARED_MEMORY_SECTION	Verbose		
+Microsoft-Windows-DirectComposition	48	0	ALLOCATE_FROM_SHARED_MEMORY_SECTION(UInt64 section, UInt32 allocationSize, UInt32 sectionSize, Boolean heap)		DCompDiagnostic DCompSharedMemory	ALLOCATE_FROM_SHARED_MEMORY_SECTION	Verbose		
+Microsoft-Windows-DirectComposition	49	0	FREE_FROM_SHARED_MEMORY_SECTION()		DCompDiagnostic DCompSharedMemory	FREE_FROM_SHARED_MEMORY_SECTION	Verbose		
+Microsoft-Windows-DirectComposition	50	0	ANIMATION_SCENARIO_BEGIN(UInt64 deviceId, UInt32 channelHandle, UInt16 version, UInt16 scenarioPriority, UInt16 flags, UInt64 qpcInitiate, UInt64 qpcInput, UInt32 msIntendedDuration, GUID scenarioGuid, UnicodeString scenarioName, UnicodeString scenarioDetails)		DCompDiagnostic DCompAnimationTelemetry	ANIMATION_SCENARIO_BEGIN	Verbose		
+Microsoft-Windows-DirectComposition	51	0	ANIMATION_SCENARIO_REFERENCE(UInt64 deviceId, UInt32 channelHandle, GUID scenarioGuid, UInt64 uniqueKey)		DCompDiagnostic DCompAnimationTelemetry	ANIMATION_SCENARIO_REFERENCE	Verbose		
+Microsoft-Windows-DirectComposition	52	0	ANIMATION_SCENARIO_UNREFERENCE(UInt64 deviceId, UInt32 channelHandle, GUID scenarioGuid, UInt64 uniqueKey)		DCompDiagnostic DCompAnimationTelemetry	ANIMATION_SCENARIO_UNREFERENCE	Verbose		
+Microsoft-Windows-DirectComposition	53	0	PRIMITIVE_GROUP_UPDATE(UInt32 channelHandle, UInt32 resourceHandle, UInt32 flags, UInt32 batchCount, UInt32 totalPrimitiveCount, Float boundsLeft, Float boundsTop, Float boundsRight, Float boundsBottom, UInt16 singlePrimitiveInfoLength, UInt16 surfaceInfoLength, Binary surfaceInfo, UInt16 primitivesLength, Binary primitives)		DCompPrimitives	PRIMITIVE_GROUP_UPDATE	Verbose		
+Microsoft-Windows-DirectComposition	54	0	ATLAS_RESIZE(UInt32 TargetX, UInt32 TargetY, UInt32 MinX, UInt32 MinY, UInt32 MaxX, UInt32 MaxY, UInt32 RequestX, UInt32 RequestY, UInt32 ShrinkX, UInt32 ShrinkY, UInt32 GrowX, UInt32 GrowY, UInt32 AtlasX, UInt32 AtlasY)		DCompDiagnostic DCompMemory	ATLAS_RESIZE	Verbose		

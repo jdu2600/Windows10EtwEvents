@@ -1,0 +1,18 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-MSMPEG2ADEC	0	0	OUTPUT_SAMPLE_DELIVERED()			OUTPUT_SAMPLE_DELIVERED	Informational		
+Microsoft-Windows-MSMPEG2ADEC	1	0	DECODEStart()	Start		DECODE	Informational		
+Microsoft-Windows-MSMPEG2ADEC	2	0	DECODEStop()	Stop		DECODE	Informational		
+Microsoft-Windows-MSMPEG2ADEC	3	0	AUD_MEDIATYPE_CHANGE(UInt32 srcSamplingRate, Int8 AudioMode)			AUD_MEDIATYPE_CHANGE	Informational		
+Microsoft-Windows-MSMPEG2ADEC	4	0	AUD_BINDING_BLOB_TYPE(UInt32 BlobVer, UInt32 LicensorIndex)			AUD_BINDING_BLOB_TYPE	Informational		
+Microsoft-Windows-MSMPEG2ADEC	5	0	PLAYBACKStart()	Start		PLAYBACK	Informational		
+Microsoft-Windows-MSMPEG2ADEC	6	0	PLAYBACKStop()	Stop		PLAYBACK	Informational		
+Microsoft-Windows-MSMPEG2ADEC	7	0	GETOUTPUTStart()	Start		GETOUTPUT	Informational		
+Microsoft-Windows-MSMPEG2ADEC	8	0	GETOUTPUTStop()	Stop		GETOUTPUT	Informational		
+Microsoft-Windows-MSMPEG2ADEC	9	0	GETOUTPUT()			GETOUTPUT	Error		
+Microsoft-Windows-MSMPEG2ADEC	10	0	AUD_DUALMONO_CHANGE(UInt32 dwordarg)			AUD_DUALMONO_CHANGE	Informational		
+Microsoft-Windows-MSMPEG2ADEC	11	0	AUD_DOLBY_MODE_CHANGE(UInt32 dwordarg)			AUD_DOLBY_MODE_CHANGE	Informational		
+Microsoft-Windows-MSMPEG2ADEC	12	0	AUD_DOLBY_CUTBOOST_CHANGE(UInt32 dwordarg)			AUD_DOLBY_CUTBOOST_CHANGE	Informational		
+Microsoft-Windows-MSMPEG2ADEC	13	0	AUD_LEQ_CHANGE(UInt32 dwordarg)			AUD_LEQ_CHANGE	Informational		
+Microsoft-Windows-MSMPEG2ADEC	14	0	AUDDECODE_FRAME_ERROR(UInt32 dwordarg)			AUDDECODE_FRAME_ERROR	Error		
+Microsoft-Windows-MSMPEG2ADEC	15	0	AUD_RESYNC(UInt32 dwordarg)			AUD_RESYNC	Warning		
+Microsoft-Windows-MSMPEG2ADEC	16	0	AUD_CODECTYPE_CHANGE(UInt32 dwordarg)			AUD_CODECTYPE_CHANGE	Informational		

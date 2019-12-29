@@ -1,0 +1,14 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-DVD	1	0	NavSendSample(Pointer Object, Int32 StreamID, Int32 StreamType, Int32 IsRunning, Int64 rtTimestamp, Int64 rtNow, Int64 rtAhead, Int32 SyncPoint, Int32 TimeDisc, Int32 Length)			NavSendSample	Verbose		
+Microsoft-Windows-DVD	2	0	NavFlushStart(Pointer Object)	Start		NavFlush	Verbose		
+Microsoft-Windows-DVD	3	0	NavFlushStop(Pointer Object)	Stop		NavFlush	Verbose		
+Microsoft-Windows-DVD	5	0	NavStillTimerStart(Pointer Object, Int32 Duration)	Start		NavStillTimer	Verbose		
+Microsoft-Windows-DVD	6	0	NavStillTimerStop(Pointer Object, Int32 Duration)	Stop		NavStillTimer	Verbose		
+Microsoft-Windows-DVD	7	0	NavParsePCI(Pointer Object, Int32 HaveRun, Int32 IsRunning, Int32 UsedGetTime, Int32 SetTimeToNow, Int32 CellTimeDisc, Int64 rtNow, Int64 rtTime0, Int64 rtNow_Time0, Int64 VOBULen)			NavParsePCI	Verbose		
+Microsoft-Windows-DVD	8	0	NavThrottleStart(Pointer Object, Int32 Duration, Int32 MaxLatency)	Start		NavThrottle	Verbose		
+Microsoft-Windows-DVD	9	0	NavThrottleStop(Pointer Object)	Stop		NavThrottle	Verbose		
+Microsoft-Windows-DVD	10	0	NavPumpWaitStart(Pointer Object, Int32 HandleMask)	Start		NavPumpWait	Verbose		
+Microsoft-Windows-DVD	11	0	NavPumpWaitStop(Pointer Object, Int32 WakeIndex, Int32 LastError, Int32 IOIndex, Int32 ExtraEventInfo)	Stop		NavPumpWait	Verbose		
+Microsoft-Windows-DVD	12	0	NavSendEventNotification(Pointer Object, Int32 Type, Int32 Param1, Int32 Param2)			NavSendEventNotification	Verbose		
+Microsoft-Windows-DVD	13	0	NavDomainChange(Pointer Object, Int32 Domain, Int32 VTSN)			NavDomainChange	Verbose		
+Microsoft-Windows-DVD	14	0	NavSendErrorNotification(Pointer Object, Int32 Param1, Int32 Param2)			NavSendErrorNotification	Verbose		

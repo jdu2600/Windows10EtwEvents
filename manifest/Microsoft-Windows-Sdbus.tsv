@@ -1,0 +1,24 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Sdbus	100	0	Interrupt(HexInt64 SDHostPhysicalAddress, HexInt32 EventMask)		Interrupt	Interrupt	Informational		
+Microsoft-Windows-Sdbus	101	0	CallbackRoutineStart(HexInt64 SDHostPhysicalAddress)	Start	Sdio	CallbackRoutine	Informational		
+Microsoft-Windows-Sdbus	102	0	CallbackRoutineStop(HexInt64 SDHostPhysicalAddress)	Stop	Sdio	CallbackRoutine	Informational		
+Microsoft-Windows-Sdbus	103	0	Retune(HexInt64 SDHostPhysicalAddress, UInt64 RetuneCount)		Emmc	Retune	Informational		
+Microsoft-Windows-Sdbus	104	0	Error(HexInt64 SDHostPhysicalAddress, HexInt32 ErrorCode, UInt32 ErrorCount)		Emmc	Error	Informational		
+Microsoft-Windows-Sdbus	105	0	HPIIO(HexInt64 SDHostPhysicalAddress, UInt64 HpiIoCount)		Emmc	HPIIO	Informational		
+Microsoft-Windows-Sdbus	106	0	P_StateRequest(HexInt64 PoFxDeviceHandle, UInt32 PStateRequested, UInt64 PStateRequestCount)		Perf	P_StateRequest	Informational		
+Microsoft-Windows-Sdbus	107	0	P_StateCompletion(HexInt64 PoFxDeviceHandle, UInt32 PStateCompleted, UInt64 PStateCompletionCount)		Perf	P_StateCompletion	Informational		
+Microsoft-Windows-Sdbus	108	0	CommandIssued(HexInt64 SDHostPhysicalAddress, UInt8 Command, HexInt64 Argument, UInt64 Size)		Perf	CommandIssued	Informational		
+Microsoft-Windows-Sdbus	109	0	CommandCompleted(HexInt64 SDHostPhysicalAddress, UInt8 Command, HexInt64 Argument, UInt64 Size)		Perf	CommandCompleted	Informational		
+Microsoft-Windows-Sdbus	110	0	HPICMDIssued(HexInt64 Irp)		Emmc	HPICMDIssued	Informational		
+Microsoft-Windows-Sdbus	111	0	HPICMDIssued111(HexInt64 Irp)		Emmc	HPICMDIssued	Informational		
+Microsoft-Windows-Sdbus	112	0	HPIWorkerProcess(HexInt64 Irp)		Emmc	HPIWorkerProcess	Informational		
+Microsoft-Windows-Sdbus	113	0	HPIWorkerProcess113(HexInt64 Irp, UInt32 HpiExitReason)		Emmc	HPIWorkerProcess	Informational		
+Microsoft-Windows-Sdbus	114	0	P_StateUtilization(HexInt64 PoFxDeviceHandle, UInt32 PStateActivePercent, UInt32 PStateActiveDuration, UInt32 PStateSampleDuration, UInt32 PStateCurrentFrequency, UInt32 PStateRequestedFrequency)		Perf	P_StateUtilization	Informational		
+Microsoft-Windows-Sdbus	115	0	SdbusWorkerDpc(HexInt64 SDHostPhysicalAddress, Pointer Irp, UInt32 WorkPacketWorkerProcFunction, HexInt32 WorkEngineCurrentState, HexInt32 WorkEngineFunctionPhase)		Dpc	SdbusWorkerDpc	Informational		
+Microsoft-Windows-Sdbus	116	0	SdbusWorkerDpc116(HexInt64 SDHostPhysicalAddress, Pointer Irp, UInt32 WorkPacketWorkerProcFunction, HexInt32 WorkEngineCurrentState, HexInt32 WorkEngineFunctionPhase)		Dpc	SdbusWorkerDpc	Informational		
+Microsoft-Windows-Sdbus	117	0	SdbusRequest(HexInt64 SDHostPhysicalAddress, Pointer Irp, HexInt32 WorkEngineCommand, HexInt32 WorkEngineArgument, HexInt32 Status)		Request	SdbusRequest	Informational		
+Microsoft-Windows-Sdbus	118	0	SdbusRequest118(HexInt64 SDHostPhysicalAddress, Pointer Irp, HexInt32 WorkEngineCommand, HexInt32 WorkEngineArgument, HexInt32 Status)		Request	SdbusRequest	Informational		
+Microsoft-Windows-Sdbus	119	0	CallbackRoutineStart119(HexInt64 SDHostPhysicalAddress)	Start	Sdio	CallbackRoutine	Informational		
+Microsoft-Windows-Sdbus	120	0	InterruptStart()	Start	Sdio	Interrupt	Informational		
+Microsoft-Windows-Sdbus	121	0	InterruptStart121()	Start	Sdio	Interrupt	Informational		
+Microsoft-Windows-Sdbus	122	0	InterruptStart122()	Start	Sdio	Interrupt	Informational		

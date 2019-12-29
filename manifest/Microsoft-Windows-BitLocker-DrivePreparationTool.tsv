@@ -1,0 +1,17 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-BitLocker-DrivePreparationTool	1	1	task_0Initialization_V1(HexInt32 MessageCode, UnicodeString MessageText)	Initialization		task_0	Error		
+Microsoft-Windows-BitLocker-DrivePreparationTool	2	1	task_0Shrink_V1(HexInt32 MessageCode, UnicodeString MessageText)	Shrink		task_0	Error		
+Microsoft-Windows-BitLocker-DrivePreparationTool	3	1	task_0Create_V1(HexInt32 MessageCode, UnicodeString MessageText)	Create		task_0	Error		
+Microsoft-Windows-BitLocker-DrivePreparationTool	4	1	task_0Prepare_V1(HexInt32 MessageCode, UnicodeString MessageText)	Prepare		task_0	Error		
+Microsoft-Windows-BitLocker-DrivePreparationTool	5	1	task_0_V1(HexInt32 MessageCode, UnicodeString MessageText)			task_0	Error		
+Microsoft-Windows-BitLocker-DrivePreparationTool	256	1	task_0256_V1(HexInt32 MessageCode, UnicodeString MessageText)			task_0	Warning		
+Microsoft-Windows-BitLocker-DrivePreparationTool	512	1	task_0512_V1()			task_0	Informational		
+Microsoft-Windows-BitLocker-DrivePreparationTool	4096	1	task_0Initialization4096_V1(Boolean Shrinkable, Boolean ContainsWinRE, UnicodeString VolumeName, UInt64 VolumeSize, UInt64 VolumeFreeSpace, UInt64 VolumeMaxShrinkSize, HexInt32 VolumeFlags, UnicodeString DriveLetter, UInt32 DiskNumber, UInt32 PartitionNumber)	Initialization		task_0	Verbose		
+Microsoft-Windows-BitLocker-DrivePreparationTool	4097	1	task_0Initialization4097_V1(GUID DiskId, HexInt32 Type, UInt64 Offset, UInt64 Size, GUID VolumeId)	Initialization		task_0	Informational		
+Microsoft-Windows-BitLocker-DrivePreparationTool	4098	1	task_0Initialization4098_V1(GUID DiskId, HexInt32 Type, UInt64 Offset, UInt64 Size, GUID VolumeId)	Initialization		task_0	Verbose		
+Microsoft-Windows-BitLocker-DrivePreparationTool	4099	1	task_0Initialization4099_V1(UnicodeString RawCommandLine, Boolean ShowUsage, Boolean DisplayDriveInfo, UnicodeString TargetDriveLetter, UInt32 TargetAction, UnicodeString NewSystemDriveLetter, Int64 ShrinkSize, Boolean QuietMode, Boolean AutoRestart)	Initialization		task_0	Informational		
+Microsoft-Windows-BitLocker-DrivePreparationTool	4100	1	task_0Initialization4100_V1(UnicodeString VolumeName, UnicodeString DriveLetter, UInt32 DiskNumber, UInt32 PartitionNumber, UInt64 ShrinkSize, UnicodeString NewDriveLetter)	Initialization		task_0	Informational		
+Microsoft-Windows-BitLocker-DrivePreparationTool	4101	1	task_0Initialization4101_V1(UInt64 ExtentOffset, UInt64 NewPartitionSize, UnicodeString NewDriveLetter)	Initialization		task_0	Informational		
+Microsoft-Windows-BitLocker-DrivePreparationTool	4102	1	task_0Initialization4102_V1(UnicodeString VolumeName, UnicodeString DriveLetter, UInt32 DiskNumber, UInt32 PartitionNumber)	Initialization		task_0	Informational		
+Microsoft-Windows-BitLocker-DrivePreparationTool	4103	1	task_0Initialization4103_V1(UnicodeString WinREVolumeName, UnicodeString DriveLetter, UInt32 DiskNumber, UInt32 PartitionNumber)	Initialization		task_0	Informational		
+Microsoft-Windows-BitLocker-DrivePreparationTool	4104	1	task_0Initialization4104_V1(HexInt32 MessageCode, UnicodeString MessageText, UnicodeString VolumeName, UnicodeString DriveLetter, UInt32 DiskNumber, UInt32 PartitionNumber)	Initialization		task_0	Informational		

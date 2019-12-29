@@ -1,0 +1,32 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-OfflineFiles	1	0	task_0()		CscEvtKeywd_StartupShutdown	task_0	Informational		
+Microsoft-Windows-OfflineFiles	2	0	task_02()		CscEvtKeywd_StartupShutdown	task_0	Informational		
+Microsoft-Windows-OfflineFiles	3	0	task_03()		CscEvtKeywd_StartupShutdown	task_0	Informational		
+Microsoft-Windows-OfflineFiles	4	0	task_04()		CscEvtKeywd_StartupShutdown	task_0	Informational		
+Microsoft-Windows-OfflineFiles	5	0	task_05()		CscEvtKeywd_StartupShutdown	task_0	Informational		
+Microsoft-Windows-OfflineFiles	6	0	task_06()			task_0	Error		
+Microsoft-Windows-OfflineFiles	7	0	task_07(UnicodeString Account, UInt32 Session)		CscEvtKeywd_UserSessionChange	task_0	Informational		
+Microsoft-Windows-OfflineFiles	8	0	task_08(UnicodeString Account, UInt32 Session)		CscEvtKeywd_UserSessionChange	task_0	Informational		
+Microsoft-Windows-OfflineFiles	9	0	task_09(UnicodeString Path)		CscEvtKeywd_Transition	task_0	Informational		
+Microsoft-Windows-OfflineFiles	10	0	task_010(UnicodeString Path)		CscEvtKeywd_Transition	task_0	Informational		
+Microsoft-Windows-OfflineFiles	11	0	task_011()		CscEvtKeywd_Setting	task_0	Informational		
+Microsoft-Windows-OfflineFiles	12	0	task_012()		CscEvtKeywd_Setting	task_0	Informational		
+Microsoft-Windows-OfflineFiles	1000	0	task_01000(UnicodeString Text)		CscEvtKeywd_Agent	task_0	Error		
+Microsoft-Windows-OfflineFiles	1001	0	task_01001(UnicodeString Path, UnicodeString ResultCode, UnicodeString Result)		CscEvtKeywd_BGSync	task_0	Error		
+Microsoft-Windows-OfflineFiles	1002	0	task_01002()		CscEvtKeywd_BGSync	task_0	Informational		
+Microsoft-Windows-OfflineFiles	1003	0	task_01003(UnicodeString Path, UInt32 MinutesSinceLastSync)		CscEvtKeywd_BGSync	task_0	Warning		
+Microsoft-Windows-OfflineFiles	1004	0	task_01004(UnicodeString Path, UInt64 Latency, UInt64 Bandwidth)		CscEvtKeywd_Transition	task_0	Informational		
+Microsoft-Windows-OfflineFiles	1005	0	task_01005(UnicodeString Path, UInt64 Latency)		CscEvtKeywd_Transition	task_0	Informational		
+Microsoft-Windows-OfflineFiles	1006	0	task_01006(UnicodeString Path, UInt32 FailedFileCount)		CscEvtKeywd_BGSync	task_0	Error		
+Microsoft-Windows-OfflineFiles	1007	0	task_01007(UnicodeString Path)		CscEvtKeywd_Transition	task_0	Informational		
+Microsoft-Windows-OfflineFiles	1008	0	task_01008(UnicodeString Path, UnicodeString FileName)		CscEvtKeywd_Transition	task_0	Warning		
+Microsoft-Windows-OfflineFiles	1009	0	task_01009(UnicodeString Path)		CscEvtKeywd_Transition	task_0	Warning		
+Microsoft-Windows-OfflineFiles	2000	0	task_02000(UnicodeString Path, Boolean ServerIsDir, Boolean ClientDeleted, Boolean ServerChanged, FILETIME ServerLastWriteTime, FILETIME ServerChangeTime, UInt32 ServerAttributes, UInt64 ServerSize, UInt32 SyncState, UnicodeString SyncStateText)			task_0	Informational		
+Microsoft-Windows-OfflineFiles	2001	0	task_02001(UnicodeString Path, Boolean ClientIsDir, Boolean ClientChanged, Boolean ClientIsSparse, Boolean ClientCreatedOffline, Boolean ClientDeletedOffline, FILETIME ClientLastWriteTime, FILETIME ClientChangeTime, UInt32 ClientAttributes, UInt64 ClientSize, Boolean ServerDeleted, UInt32 SyncState, UnicodeString SyncStateText)			task_0	Informational		
+Microsoft-Windows-OfflineFiles	2002	0	task_02002(UnicodeString Path, Boolean ClientIsDir, Boolean ClientChanged, Boolean ClientIsSparse, Boolean ClientCreatedOffline, FILETIME ClientLastWriteTime, FILETIME ClientChangeTime, UInt32 ClientAttributes, UInt64 ClientSize, Boolean ServerIsDir, Boolean ServerChanged, FILETIME ServerLastWriteTime, FILETIME ServerChangeTime, UInt32 ServerAttributes, UInt64 ServerSize, UInt32 SyncState, UnicodeString SyncStateText)			task_0	Informational		
+Microsoft-Windows-OfflineFiles	2003	0	task_02003(UnicodeString Path, Boolean ClientIsDir, Boolean ClientChanged, Boolean ClientIsSparse, Boolean ClientCreatedOffline, Boolean ServerIsDir, Boolean ServerChanged, FILETIME ServerLastWriteTime, FILETIME ServerChangeTime, UInt32 ServerAttributes, UInt64 ServerSize, UInt32 SyncState, UnicodeString SyncStateText)			task_0	Informational		
+Microsoft-Windows-OfflineFiles	2004	0	task_02004(UnicodeString Path, Boolean ClientIsDir, Boolean ServerIsDir, Boolean ServerChanged, FILETIME ServerLastWriteTime, FILETIME ServerChangeTime, UInt32 ServerAttributes, UInt64 ServerSize, UInt32 SyncState, UnicodeString SyncStateText)			task_0	Informational		
+Microsoft-Windows-OfflineFiles	2005	0	task_02005(UnicodeString Path, UnicodeString Operation)			task_0	Informational		
+Microsoft-Windows-OfflineFiles	2006	0	task_02006(UnicodeString Path, UnicodeString Operation, UnicodeString ResultCode, UnicodeString Result)			task_0	Warning		
+Microsoft-Windows-OfflineFiles	2010	0	task_02010(UnicodeString Path)		CscEvtKeywd_ExcludedFileType	task_0	Informational		
+Microsoft-Windows-OfflineFiles	2011	0	task_02011(UnicodeString SourcePath, UnicodeString TargetPath)		CscEvtKeywd_ExcludedFileType	task_0	Informational		

@@ -1,0 +1,10 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-D3D9	1	0	PresentStart(Pointer pSwapchain, UInt32 Flags)	Start	Events	Present	Always		
+Microsoft-Windows-D3D9	2	0	PresentStop(UInt32 Result)	Stop	Events	Present	Always		
+Microsoft-Windows-D3D9	3	0	ResetStart(Pointer pSwapchain, UInt32 Width, UInt32 Height, UInt32 BackbufferFormat, UInt32 BackbufferCount, UInt32 SwapEffect, Boolean Windowed, UInt32 PresentationInterval, Boolean AdditionalSwapchain)	Start	Events	Reset	Always		
+Microsoft-Windows-D3D9	4	0	ResetStop(UInt32 Result)	Stop	Events	Reset	Always		
+Microsoft-Windows-D3D9	5	0	BindToDWM(UInt64 LogicalSurfaceHandle, UInt16 BackBufferCount, UInt32 SharedHandles)		Events	BindToDWM	Always		
+Microsoft-Windows-D3D9	6	0	DWMRedirection(Boolean IsOn)		Events	DWMRedirection	Always		
+Microsoft-Windows-D3D9	7	0	FlipExSurfaceTimeout(UInt64 LogicalSurfaceHandle, UInt32 BackBufferNumber, UInt32 BackBufferHandle)		Events	FlipExSurfaceTimeout	Always		
+Microsoft-Windows-D3D9	8	0	FlipExSemaphoreTimeout(UInt64 LogicalSurfaceHandle, UInt32 AdjustValue, UInt64 FenceValue)		Events	FlipExSemaphoreTimeout	Always		
+Microsoft-Windows-D3D9	9	0	GetPresentStats(UInt32 ReturnValue, UInt32 PresentCount, UInt32 PresentRefreshCount, UInt32 SyncRefreshCount, UInt64 SyncQPCTime)		Events	GetPresentStats	Always		

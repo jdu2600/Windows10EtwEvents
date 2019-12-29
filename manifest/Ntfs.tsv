@@ -1,0 +1,6 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Ntfs	55	0	task_0(UnicodeString DriveName, UnicodeString DeviceName, HexInt32 CorruptionState, HexInt32 HeaderFlags, UnicodeString Severity, UnicodeString Origin, UnicodeString Verb, UnicodeString Description, HexInt32 Signature, UnicodeString Outcome, UInt16 SampleLength, Binary SampleData, HexInt32 SourceFile, UInt16 SourceLine, UInt32 SourceTag, HexInt32 AdditionalInfo, AnsiString CallStack)			task_0	Error		
+Ntfs	130	0	task_0130(UInt16 VolumeIdLength, UnicodeString VolumeId, UnicodeString RepairDetail, UInt16 RepairDataLength, Binary RepairData)			task_0	Warning		
+Ntfs	131	0	task_0131(UInt16 VolumeIdLength, UnicodeString VolumeId, UnicodeString RepairDetail, UInt16 RepairDataLength, Binary RepairData)			task_0	Error		
+Ntfs	132	0	task_0132()			task_0	Warning		
+Ntfs	133	0	task_0133(UInt32 TotalCount, UInt32 BadFrsCount, UInt32 OrphanChildFRSCount, UInt32 BadClustersCount, UInt32 BadFreeClustersCount, UInt32 CrossLinkCount, UInt32 SDEntryCount, UInt32 InvalidSidCount, UInt32 IndexAttributeCount, UInt32 IndexSubtreeCount, UInt32 IndexOffsetCount, UInt32 IndexEntryCount, UInt32 IndexOrderCount, UInt32 ConnectCount, UInt32 BreakCycleCount, UInt32 FRSAllocateCount, UInt32 OthersCount)			task_0	Informational		

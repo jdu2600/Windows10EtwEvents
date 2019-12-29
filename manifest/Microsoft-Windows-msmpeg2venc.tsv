@@ -1,0 +1,14 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-msmpeg2venc	0	0	TaskdonebythevideoencoderStart(UInt64 InputStreamID, Pointer pSample, UInt32 dwFlags)	Start	keyword_800000000000	Taskdonebythevideoencoder	Verbose		
+Microsoft-Windows-msmpeg2venc	1	0	TaskdonebythevideoencoderStop(Int32 hr)	Stop	keyword_800000000000	Taskdonebythevideoencoder	Verbose		
+Microsoft-Windows-msmpeg2venc	2	0	TaskdonebythevideoencoderStart2(UInt64 InputStreamID, Pointer pEvent)	Start	keyword_400000000000	Taskdonebythevideoencoder	Verbose		
+Microsoft-Windows-msmpeg2venc	3	0	ConfigurationoftheencoderStop(Int32 hr)	Stop	keyword_400000000000	Configurationoftheencoder	Verbose		
+Microsoft-Windows-msmpeg2venc	4	0	TaskdonebythevideoencoderStart4(UInt32 MessageType, Pointer Param)	Start	keyword_400000000000	Taskdonebythevideoencoder	Verbose		
+Microsoft-Windows-msmpeg2venc	5	0	TaskdonebythevideoencoderStop5(Int32 hr)	Stop	keyword_400000000000	Taskdonebythevideoencoder	Verbose		
+Microsoft-Windows-msmpeg2venc	6	0	Configurationoftheencoder(UInt64 OldBitrate, UInt64 NewBitrate)		keyword_400000000000	Configurationoftheencoder	Informational		
+Microsoft-Windows-msmpeg2venc	7	0	TaskdonebythevideoencoderStart7(UInt32 Flags, UInt64 OutputBufferCount, Pointer pOutputSamples, Pointer pdwStatus)	Start	keyword_800000000000	Taskdonebythevideoencoder	Verbose		
+Microsoft-Windows-msmpeg2venc	8	0	TaskdonebythevideoencoderStop8(Int32 hr)	Stop	keyword_800000000000	Taskdonebythevideoencoder	Verbose		
+Microsoft-Windows-msmpeg2venc	9	0	Taskdonebythevideoencoder(Pointer pSample, UInt64 cSampleLength)		keyword_800000000000	Taskdonebythevideoencoder	Informational		
+Microsoft-Windows-msmpeg2venc	10	0	TaskdonebythevideoencoderSend()	Send	keyword_800000000000	Taskdonebythevideoencoder	Informational		
+Microsoft-Windows-msmpeg2venc	11	0	TaskdonebythevideoencoderReceive(Pointer pSample, UInt64 cSampleLength, Boolean bEndOfEncoding)	Receive	keyword_800000000000	Taskdonebythevideoencoder	Informational		
+Microsoft-Windows-msmpeg2venc	12	0	Configurationoftheencoder12(UInt32 CodingMode, UInt64 Bitrate, UInt64 Complexity, Pointer pEncoder)		keyword_400000000000	Configurationoftheencoder	Informational		

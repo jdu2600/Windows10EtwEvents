@@ -1,0 +1,45 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-FileHistory-Catalog	1	0	AttachStart(UnicodeString CatalogPath, UnicodeString CatalogPath2, Int32 ReadOnly)	Start		Attach	Always		
+Microsoft-Windows-FileHistory-Catalog	2	0	AttachStop(UnicodeString CatalogPath, UnicodeString CatalogPath2, Int32 ReadOnly)	Stop		Attach	Always		
+Microsoft-Windows-FileHistory-Catalog	3	0	DetachStart()	Start		Detach	Always		
+Microsoft-Windows-FileHistory-Catalog	4	0	DetachStop()	Stop		Detach	Always		
+Microsoft-Windows-FileHistory-Catalog	5	0	CreateStart(UnicodeString CatalogPath, UnicodeString CatalogPath2)	Start		Create	Always		
+Microsoft-Windows-FileHistory-Catalog	6	0	CreateStop(UnicodeString CatalogPath, UnicodeString CatalogPath2)	Stop		Create	Always		
+Microsoft-Windows-FileHistory-Catalog	7	0	AddNamespaceRecordStart(UnicodeString Path)	Start		AddNamespaceRecord	Always		
+Microsoft-Windows-FileHistory-Catalog	8	0	AddNamespaceRecordStop(UnicodeString Path)	Stop		AddNamespaceRecord	Always		
+Microsoft-Windows-FileHistory-Catalog	9	0	UpdateNamespaceRecordStart(Int32 id, UnicodeString Path)	Start		UpdateNamespaceRecord	Always		
+Microsoft-Windows-FileHistory-Catalog	10	0	UpdateNamespaceRecordStop(Int32 id, UnicodeString Path)	Stop		UpdateNamespaceRecord	Always		
+Microsoft-Windows-FileHistory-Catalog	11	0	GetNamespaceRecordStart(Int32 id)	Start		GetNamespaceRecord	Always		
+Microsoft-Windows-FileHistory-Catalog	12	0	GetNamespaceRecordStop(Int32 id)	Stop		GetNamespaceRecord	Always		
+Microsoft-Windows-FileHistory-Catalog	13	0	AddFileRecordStart(UnicodeString Path)	Start		AddFileRecord	Always		
+Microsoft-Windows-FileHistory-Catalog	14	0	AddFileRecordStop(UnicodeString Path)	Stop		AddFileRecord	Always		
+Microsoft-Windows-FileHistory-Catalog	15	0	UpdateFileRecordStart(Int32 id, UnicodeString Path)	Start		UpdateFileRecord	Always		
+Microsoft-Windows-FileHistory-Catalog	16	0	UpdateFileRecordStop(Int32 id, UnicodeString Path)	Stop		UpdateFileRecord	Always		
+Microsoft-Windows-FileHistory-Catalog	17	0	GetFileRecordStart(Int32 id)	Start		GetFileRecord	Always		
+Microsoft-Windows-FileHistory-Catalog	18	0	GetFileRecordStop(Int32 id)	Stop		GetFileRecord	Always		
+Microsoft-Windows-FileHistory-Catalog	19	0	FindNsRecordsByFullPathStart(UnicodeString Path, Int32 InitialPosition)	Start		FindNsRecordsByFullPath	Always		
+Microsoft-Windows-FileHistory-Catalog	20	0	FindNsRecordsByFullPathStop(UnicodeString Path, Int32 InitialPosition)	Stop		FindNsRecordsByFullPath	Always		
+Microsoft-Windows-FileHistory-Catalog	21	0	FindPointInTimeFolderStart(UnicodeString Path, Int32 BackupSetId)	Start		FindPointInTimeFolder	Always		
+Microsoft-Windows-FileHistory-Catalog	22	0	FindPointInTimeFolderStop(UnicodeString Path, Int32 BackupSetId)	Stop		FindPointInTimeFolder	Always		
+Microsoft-Windows-FileHistory-Catalog	23	0	FindNsRecordsByFileRecordIdStart(Int32 FileRecordId)	Start		FindNsRecordsByFileRecordId	Always		
+Microsoft-Windows-FileHistory-Catalog	24	0	FindNsRecordsByFileRecordIdStop(Int32 FileRecordId)	Stop		FindNsRecordsByFileRecordId	Always		
+Microsoft-Windows-FileHistory-Catalog	25	0	FindFileRecordsByStateStart(Int32 State, Int32 Sort)	Start		FindFileRecordsByState	Always		
+Microsoft-Windows-FileHistory-Catalog	26	0	FindFileRecordsByStateStop(Int32 State, Int32 Sort)	Stop		FindFileRecordsByState	Always		
+Microsoft-Windows-FileHistory-Catalog	27	0	FindLibrariesTimelineStart()	Start		FindLibrariesTimeline	Always		
+Microsoft-Windows-FileHistory-Catalog	28	0	FindLibrariesTimelineStop()	Stop		FindLibrariesTimeline	Always		
+Microsoft-Windows-FileHistory-Catalog	29	0	FindLibraryTimelineStart(UnicodeString LibraryName)	Start		FindLibraryTimeline	Always		
+Microsoft-Windows-FileHistory-Catalog	30	0	FindLibraryTimelineStop(UnicodeString LibraryName)	Stop		FindLibraryTimeline	Always		
+Microsoft-Windows-FileHistory-Catalog	31	0	FindPointInTimeLibrariesStart(Int32 BackupSetId)	Start		FindPointInTimeLibraries	Always		
+Microsoft-Windows-FileHistory-Catalog	32	0	FindPointInTimeLibrariesStop(Int32 BackupSetId)	Stop		FindPointInTimeLibraries	Always		
+Microsoft-Windows-FileHistory-Catalog	33	0	FindPointInTimeLibraryStart(UnicodeString LibraryName, Int32 BackupSetId)	Start		FindPointInTimeLibrary	Always		
+Microsoft-Windows-FileHistory-Catalog	34	0	FindPointInTimeLibraryStop(UnicodeString LibraryName, Int32 BackupSetId)	Stop		FindPointInTimeLibrary	Always		
+Microsoft-Windows-FileHistory-Catalog	35	0	FindAllLibraryRecordsStart()	Start		FindAllLibraryRecords	Always		
+Microsoft-Windows-FileHistory-Catalog	36	0	FindAllLibraryRecordsStop()	Stop		FindAllLibraryRecords	Always		
+Microsoft-Windows-FileHistory-Catalog	37	0	ReattachStart()	Start		Reattach	Always		
+Microsoft-Windows-FileHistory-Catalog	38	0	ReattachStop()	Stop		Reattach	Always		
+Microsoft-Windows-FileHistory-Catalog	39	0	MoveNextStart(UnicodeString IteratorName)	Start		MoveNext	Always		
+Microsoft-Windows-FileHistory-Catalog	40	0	MoveNextStop(UnicodeString IteratorName)	Stop		MoveNext	Always		
+Microsoft-Windows-FileHistory-Catalog	41	0	MovePreviousStart(UnicodeString IteratorName)	Start		MovePrevious	Always		
+Microsoft-Windows-FileHistory-Catalog	42	0	MovePreviousStop(UnicodeString IteratorName)	Stop		MovePrevious	Always		
+Microsoft-Windows-FileHistory-Catalog	43	0	FindNsRecordsByTVisibleStart(Int32 BackupSetId)	Start		FindNsRecordsByTVisible	Always		
+Microsoft-Windows-FileHistory-Catalog	44	0	FindNsRecordsByTVisibleStop(Int32 BackupSetId)	Stop		FindNsRecordsByTVisible	Always		

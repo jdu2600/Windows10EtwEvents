@@ -1,0 +1,22 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-MSFTEDIT	1	0	PlacingCaretStart(UInt32 param1, UInt32 param2)	Start		PlacingCaret	Informational		
+Microsoft-Windows-MSFTEDIT	2	0	PlacingCaretStop(UInt32 param1, UInt32 param2)	Stop		PlacingCaret	Informational		
+Microsoft-Windows-MSFTEDIT	3	0	PlacingCaret()			PlacingCaret	Informational		
+Microsoft-Windows-MSFTEDIT	4	0	SelectingWord()			SelectingWord	Informational		
+Microsoft-Windows-MSFTEDIT	5	0	DismissingSelection()			DismissingSelection	Informational		
+Microsoft-Windows-MSFTEDIT	6	0	ShowGripperStart(UInt32 param1, UInt32 param2, UInt32 param3)	Start		ShowGripper	Informational		
+Microsoft-Windows-MSFTEDIT	7	0	ShowGripperStop(UInt32 param)	Stop		ShowGripper	Informational		
+Microsoft-Windows-MSFTEDIT	8	0	HideGripperStart(UInt32 param)	Start		HideGripper	Informational		
+Microsoft-Windows-MSFTEDIT	9	0	HideGripperStop(UInt32 param)	Stop		HideGripper	Informational		
+Microsoft-Windows-MSFTEDIT	10	0	SingleTappingText()			SingleTappingText	Informational		
+Microsoft-Windows-MSFTEDIT	11	0	DoubleTappingText()			DoubleTappingText	Informational		
+Microsoft-Windows-MSFTEDIT	12	0	SelectionExtendingStart(UInt32 param1, UInt32 param2)	Start		SelectionExtending	Informational		
+Microsoft-Windows-MSFTEDIT	13	0	SelectionExtendingStop(UInt32 param1, UInt32 param2)	Stop		SelectionExtending	Informational		
+Microsoft-Windows-MSFTEDIT	14	0	OnHandleDragStart()	Start		OnHandleDrag	Informational		
+Microsoft-Windows-MSFTEDIT	15	0	OnHandleDragStop()	Stop		OnHandleDrag	Informational		
+Microsoft-Windows-MSFTEDIT	16	0	ChangeSelectionStart()	Start		ChangeSelection	Informational		
+Microsoft-Windows-MSFTEDIT	17	0	ChangeSelectionStop()	Stop		ChangeSelection	Informational		
+Microsoft-Windows-MSFTEDIT	18	0	ComputeSnappingModeStart()	Start		ComputeSnappingMode	Informational		
+Microsoft-Windows-MSFTEDIT	19	0	ComputeSnappingModeStop()	Stop		ComputeSnappingMode	Informational		
+Microsoft-Windows-MSFTEDIT	20	0	ExtendSelectionRangeStart()	Start		ExtendSelectionRange	Informational		
+Microsoft-Windows-MSFTEDIT	21	0	ExtendSelectionRangeStop()	Stop		ExtendSelectionRange	Informational		

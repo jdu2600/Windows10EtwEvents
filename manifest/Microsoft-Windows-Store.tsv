@@ -1,0 +1,10 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Store	8000	0	LMModuleLoaded(UnicodeString ProcessName, UnicodeString ModuleName, UnicodeString BuildName)		keyword_100000000000	LMModuleLoaded	Informational		
+Microsoft-Windows-Store	8001	0	LMInfo(UnicodeString Message, AnsiString Function, AnsiString Source, UInt32 LineNumber)	Info	keyword_100000000000	LM	Informational		
+Microsoft-Windows-Store	8002	0	LMWarning(UnicodeString Message, AnsiString Function, AnsiString Source, UInt32 LineNumber)	Warning	keyword_100000000000	LM	Warning		
+Microsoft-Windows-Store	8003	0	LMError(UnicodeString Message, AnsiString Function, AnsiString Source, UInt32 LineNumber)	Error	keyword_100000000000	LM	Error		
+Microsoft-Windows-Store	8010	0	LMStateMachineEnqueueEvent(Pointer StateMachine, UInt32 ThreadID, UnicodeString StateMachineName, AnsiString EventName)	EnqueueEvent	keyword_200000000000	LMStateMachine	Verbose		
+Microsoft-Windows-Store	8011	0	LMStateMachineDispatchEvent(Pointer StateMachine, UInt32 ThreadID, UnicodeString StateMachineName, AnsiString EventName, UnicodeString CurrentState)	DispatchEvent	keyword_200000000000	LMStateMachine	Verbose		
+Microsoft-Windows-Store	8012	0	LMStateMachineChangeState(Pointer StateMachine, UInt32 ThreadID, UnicodeString StateMachineName, UnicodeString CurrentState, UnicodeString NewState)	ChangeState	keyword_200000000000	LMStateMachine	Verbose		
+Microsoft-Windows-Store	8013	0	LMStateMachineStartpumpingevents(Pointer StateMachine, UInt32 ThreadID, UnicodeString StateMachineName, UnicodeString CurrentState)	Startpumpingevents	keyword_200000000000	LMStateMachine	Verbose		
+Microsoft-Windows-Store	8014	0	LMStateMachineStoppumpingevents(Pointer StateMachine, UInt32 ThreadID, UnicodeString StateMachineName, UnicodeString CurrentState)	Stoppumpingevents	keyword_200000000000	LMStateMachine	Verbose		

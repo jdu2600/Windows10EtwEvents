@@ -1,0 +1,15 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Dwm-Dwm	1	0	CompositionStateAndInput(UInt32 State, UInt32 Input)		DwmExe	CompositionStateAndInput	Informational		
+Microsoft-Windows-Dwm-Dwm	2	0	CompositionStateOutput(UInt32 State)		DwmExe	CompositionStateOutput	Informational		
+Microsoft-Windows-Dwm-Dwm	3	0	TraceGraphicsCapabilities(UInt32 Capability, UInt32 Verified)		DwmExe	TraceGraphicsCapabilities	Informational		
+Microsoft-Windows-Dwm-Dwm	4	0	CompositionOverriden(UInt32 Flag)		DwmExe	CompositionOverriden	Informational		
+Microsoft-Windows-Dwm-Dwm	5	0	CompositionEnabledByPolicy(UInt32 Flag)		DwmExe	CompositionEnabledByPolicy	Informational		
+Microsoft-Windows-Dwm-Dwm	6	0	RemotingCaps(UInt32 IsCapable, UInt32 AllowDwmcoreInSession, UInt32 RemoteAppEnabled, UInt32 AllowDwmcoreInClient, UInt32 AllowThemesInCLient)		DwmExe	RemotingCaps	Informational		
+Microsoft-Windows-Dwm-Dwm	7	0	SystemMemoryLockingThreshold()		DwmExe	SystemMemoryLockingThreshold	Informational		
+Microsoft-Windows-Dwm-Dwm	8	0	SlowCompositionTime()		DwmExe	SlowCompositionTime	Informational		
+Microsoft-Windows-Dwm-Dwm	9	0	StartDWMTransport(UInt32 MilRemote)		DwmExe	StartDWMTransport	Informational		
+Microsoft-Windows-Dwm-Dwm	10	0	StopDWMTransport()		DwmExe	StopDWMTransport	Informational		
+Microsoft-Windows-Dwm-Dwm	11	0	AddGhost(Pointer CGhostOrHwndToGhost)		DwmExeGhosting	AddGhost	Informational		
+Microsoft-Windows-Dwm-Dwm	12	0	DuplicateGhost(Pointer CGhostOrHwndToGhost)		DwmExeGhosting	DuplicateGhost	Informational		
+Microsoft-Windows-Dwm-Dwm	13	0	VetoCreateGhostWindow(Pointer CGhostOrHwndToGhost)		DwmExeGhosting	VetoCreateGhostWindow	Informational		
+Microsoft-Windows-Dwm-Dwm	14	0	PolicyOrModeChange(UInt32 StateBegin, UInt32 StateEnd)		DwmExe	PolicyOrModeChange	Informational		

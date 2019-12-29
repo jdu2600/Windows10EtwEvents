@@ -1,0 +1,482 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Application Server-Applications	100	0	WorkflowInstanceRecord(GUID InstanceId, Int64 RecordNumber, FILETIME EventTime, UnicodeString ActivityDefinitionId, UnicodeString State, UnicodeString Annotations, UnicodeString ProfileName, UnicodeString HostReference, UnicodeString AppDomain)		WFTracking EndToEndMonitoring HealthMonitoring Troubleshooting	WorkflowInstanceRecord	Informational		
+Microsoft-Windows-Application Server-Applications	101	0	WorkflowInstanceRecordUnhandledExceptionRecord(GUID InstanceId, Int64 RecordNumber, FILETIME EventTime, UnicodeString ActivityDefinitionId, UnicodeString SourceName, UnicodeString SourceId, UnicodeString SourceInstanceId, UnicodeString SourceTypeName, UnicodeString Exception, UnicodeString Annotations, UnicodeString ProfileName, UnicodeString HostReference, UnicodeString AppDomain)	UnhandledExceptionRecord	WFTracking EndToEndMonitoring HealthMonitoring Troubleshooting	WorkflowInstanceRecord	Error		
+Microsoft-Windows-Application Server-Applications	102	0	WorkflowInstanceRecordAbortedRecord(GUID InstanceId, Int64 RecordNumber, FILETIME EventTime, UnicodeString ActivityDefinitionId, UnicodeString Reason, UnicodeString Annotations, UnicodeString ProfileName, UnicodeString HostReference, UnicodeString AppDomain)	AbortedRecord	WFTracking EndToEndMonitoring HealthMonitoring Troubleshooting	WorkflowInstanceRecord	Warning		
+Microsoft-Windows-Application Server-Applications	103	0	WorkflowTracking(GUID InstanceId, Int64 RecordNumber, FILETIME EventTime, UnicodeString State, UnicodeString Name, UnicodeString ActivityId, UnicodeString ActivityInstanceId, UnicodeString ActivityTypeName, UnicodeString Arguments, UnicodeString Variables, UnicodeString Annotations, UnicodeString ProfileName, UnicodeString HostReference, UnicodeString AppDomain)		WFTracking EndToEndMonitoring HealthMonitoring Troubleshooting	WorkflowTracking	Informational		
+Microsoft-Windows-Application Server-Applications	104	0	WorkflowTracking104(GUID InstanceId, Int64 RecordNumber, FILETIME EventTime, UnicodeString Name, UnicodeString ActivityId, UnicodeString ActivityInstanceId, UnicodeString ActivityTypeName, UnicodeString ChildActivityName, UnicodeString ChildActivityId, UnicodeString ChildActivityInstanceId, UnicodeString ChildActivityTypeName, UnicodeString Annotations, UnicodeString ProfileName, UnicodeString HostReference, UnicodeString AppDomain)		WFTracking EndToEndMonitoring HealthMonitoring Troubleshooting	WorkflowTracking	Informational		
+Microsoft-Windows-Application Server-Applications	105	0	WorkflowTracking105(GUID InstanceId, Int64 RecordNumber, FILETIME EventTime, UnicodeString FaultSourceActivityName, UnicodeString FaultSourceActivityId, UnicodeString FaultSourceActivityInstanceId, UnicodeString FaultSourceActivityTypeName, UnicodeString FaultHandlerActivityName, UnicodeString FaultHandlerActivityId, UnicodeString FaultHandlerActivityInstanceId, UnicodeString FaultHandlerActivityTypeName, UnicodeString Fault, UInt8 IsFaultSource, UnicodeString Annotations, UnicodeString ProfileName, UnicodeString HostReference, UnicodeString AppDomain)		WFTracking EndToEndMonitoring HealthMonitoring Troubleshooting	WorkflowTracking	Warning		
+Microsoft-Windows-Application Server-Applications	106	0	WorkflowTracking106(GUID InstanceId, Int64 RecordNumber, FILETIME EventTime, UnicodeString Name, UnicodeString ActivityId, UnicodeString ActivityInstanceId, UnicodeString ActivityTypeName, UnicodeString ChildActivityName, UnicodeString ChildActivityId, UnicodeString ChildActivityInstanceId, UnicodeString ChildActivityTypeName, UnicodeString Annotations, UnicodeString ProfileName, UnicodeString HostReference, UnicodeString AppDomain)		WFTracking EndToEndMonitoring HealthMonitoring Troubleshooting	WorkflowTracking	Informational		
+Microsoft-Windows-Application Server-Applications	107	0	WorkflowTracking107(GUID InstanceId, Int64 RecordNumber, FILETIME EventTime, UnicodeString Name, GUID SubInstanceID, UnicodeString OwnerActivityName, UnicodeString OwnerActivityId, UnicodeString OwnerActivityInstanceId, UnicodeString OwnerActivityTypeName, UnicodeString Annotations, UnicodeString ProfileName, UnicodeString HostReference, UnicodeString AppDomain)		WFTracking EndToEndMonitoring HealthMonitoring Troubleshooting	WorkflowTracking	Informational		
+Microsoft-Windows-Application Server-Applications	108	0	CustomTrackingRecord(GUID InstanceId, Int64 RecordNumber, FILETIME EventTime, UnicodeString Name, UnicodeString ActivityName, UnicodeString ActivityId, UnicodeString ActivityInstanceId, UnicodeString ActivityTypeName, UnicodeString Data, UnicodeString Annotations, UnicodeString ProfileName, UnicodeString HostReference, UnicodeString AppDomain)		WFTracking EndToEndMonitoring HealthMonitoring Troubleshooting UserEvents	CustomTrackingRecord	Informational		
+Microsoft-Windows-Application Server-Applications	110	0	CustomTrackingRecord110(GUID InstanceId, Int64 RecordNumber, FILETIME EventTime, UnicodeString Name, UnicodeString ActivityName, UnicodeString ActivityId, UnicodeString ActivityInstanceId, UnicodeString ActivityTypeName, UnicodeString Data, UnicodeString Annotations, UnicodeString ProfileName, UnicodeString HostReference, UnicodeString AppDomain)		WFTracking EndToEndMonitoring HealthMonitoring Troubleshooting UserEvents	CustomTrackingRecord	Warning		
+Microsoft-Windows-Application Server-Applications	111	0	CustomTrackingRecord111(GUID InstanceId, Int64 RecordNumber, FILETIME EventTime, UnicodeString Name, UnicodeString ActivityName, UnicodeString ActivityId, UnicodeString ActivityInstanceId, UnicodeString ActivityTypeName, UnicodeString Data, UnicodeString Annotations, UnicodeString ProfileName, UnicodeString HostReference, UnicodeString AppDomain)		WFTracking EndToEndMonitoring HealthMonitoring Troubleshooting UserEvents	CustomTrackingRecord	Error		
+Microsoft-Windows-Application Server-Applications	112	0	WorkflowInstanceRecordSuspendedRecord(GUID InstanceId, Int64 RecordNumber, FILETIME EventTime, UnicodeString ActivityDefinitionId, UnicodeString Reason, UnicodeString Annotations, UnicodeString ProfileName, UnicodeString HostReference, UnicodeString AppDomain)	SuspendedRecord	WFTracking HealthMonitoring	WorkflowInstanceRecord	Informational		
+Microsoft-Windows-Application Server-Applications	113	0	WorkflowInstanceRecordTerminatedRecord(GUID InstanceId, Int64 RecordNumber, FILETIME EventTime, UnicodeString ActivityDefinitionId, UnicodeString Reason, UnicodeString Annotations, UnicodeString ProfileName, UnicodeString HostReference, UnicodeString AppDomain)	TerminatedRecord	WFTracking EndToEndMonitoring HealthMonitoring Troubleshooting	WorkflowInstanceRecord	Error		
+Microsoft-Windows-Application Server-Applications	114	0	WorkflowInstanceRecord114(GUID InstanceId, Int64 RecordNumber, FILETIME EventTime, UnicodeString ActivityDefinitionId, UnicodeString State, UnicodeString Annotations, UnicodeString ProfileName, UnicodeString WorkflowDefinitionIdentity, UnicodeString HostReference, UnicodeString AppDomain)		WFTracking HealthMonitoring	WorkflowInstanceRecord	Informational		
+Microsoft-Windows-Application Server-Applications	115	0	WorkflowInstanceRecordAbortedWithId(GUID InstanceId, Int64 RecordNumber, FILETIME EventTime, UnicodeString ActivityDefinitionId, UnicodeString Reason, UnicodeString Annotations, UnicodeString ProfileName, UnicodeString WorkflowDefinitionIdentity, UnicodeString HostReference, UnicodeString AppDomain)	AbortedWithId	WFTracking HealthMonitoring	WorkflowInstanceRecord	Warning		
+Microsoft-Windows-Application Server-Applications	116	0	WorkflowInstanceRecordSuspendedWithId(GUID InstanceId, Int64 RecordNumber, FILETIME EventTime, UnicodeString ActivityDefinitionId, UnicodeString Reason, UnicodeString Annotations, UnicodeString ProfileName, UnicodeString WorkflowDefinitionIdentity, UnicodeString HostReference, UnicodeString AppDomain)	SuspendedWithId	WFTracking HealthMonitoring	WorkflowInstanceRecord	Informational		
+Microsoft-Windows-Application Server-Applications	117	0	WorkflowInstanceRecordTerminatedWithId(GUID InstanceId, Int64 RecordNumber, FILETIME EventTime, UnicodeString ActivityDefinitionId, UnicodeString Reason, UnicodeString Annotations, UnicodeString ProfileName, UnicodeString WorkflowDefinitionIdentity, UnicodeString HostReference, UnicodeString AppDomain)	TerminatedWithId	WFTracking HealthMonitoring	WorkflowInstanceRecord	Error		
+Microsoft-Windows-Application Server-Applications	118	0	WorkflowInstanceRecordUnhandledExceptionWithId(GUID InstanceId, Int64 RecordNumber, FILETIME EventTime, UnicodeString ActivityDefinitionId, UnicodeString SourceName, UnicodeString SourceId, UnicodeString SourceInstanceId, UnicodeString SourceTypeName, UnicodeString Exception, UnicodeString Annotations, UnicodeString ProfileName, UnicodeString WorkflowDefinitionIdentity, UnicodeString HostReference, UnicodeString AppDomain)	UnhandledExceptionWithId	WFTracking HealthMonitoring	WorkflowInstanceRecord	Error		
+Microsoft-Windows-Application Server-Applications	119	0	WorkflowInstanceRecordUpdatedRecord(GUID InstanceId, Int64 RecordNumber, FILETIME EventTime, UnicodeString ActivityDefinitionId, UnicodeString State, UnicodeString OriginalDefinitionIdentity, UnicodeString UpdatedDefinitionIdentity, UnicodeString Annotations, UnicodeString ProfileName, UnicodeString HostReference, UnicodeString AppDomain)	UpdatedRecord	WFTracking HealthMonitoring	WorkflowInstanceRecord	Informational		
+Microsoft-Windows-Application Server-Applications	131	0	BufferPoolingAllocate(Int32 Size, UnicodeString AppDomain)	Allocate	Infrastructure	BufferPooling	Verbose		
+Microsoft-Windows-Application Server-Applications	132	0	BufferPoolingTune(Int32 PoolSize, Int32 Delta, UnicodeString AppDomain)	Tune	Infrastructure	BufferPooling	Verbose		
+Microsoft-Windows-Application Server-Applications	133	0	ThreadSchedulingStart(UnicodeString AppDomain)	Start	Threading	ThreadScheduling	Verbose		
+Microsoft-Windows-Application Server-Applications	134	0	ThreadSchedulingStop(UnicodeString AppDomain)	Stop	Threading	ThreadScheduling	Verbose		
+Microsoft-Windows-Application Server-Applications	201	0	ClientRuntimeClientMessageInspectorAfterReceiveInvoked(UnicodeString TypeName, UnicodeString HostReference, UnicodeString AppDomain)	ClientMessageInspectorAfterReceiveInvoked	ServiceModel Troubleshooting	ClientRuntime	Informational		
+Microsoft-Windows-Application Server-Applications	202	0	ClientRuntimeClientMessageInspectorBeforeSendInvoked(UnicodeString TypeName, UnicodeString HostReference, UnicodeString AppDomain)	ClientMessageInspectorBeforeSendInvoked	ServiceModel Troubleshooting	ClientRuntime	Informational		
+Microsoft-Windows-Application Server-Applications	203	0	ClientRuntimeClientParameterInspectorStop(UnicodeString TypeName, UnicodeString HostReference, UnicodeString AppDomain)	ClientParameterInspectorStop	ServiceModel Troubleshooting	ClientRuntime	Informational		
+Microsoft-Windows-Application Server-Applications	204	0	ClientRuntimeClientParameterInspectorStart(UnicodeString TypeName, UnicodeString HostReference, UnicodeString AppDomain)	ClientParameterInspectorStart	ServiceModel Troubleshooting	ClientRuntime	Informational		
+Microsoft-Windows-Application Server-Applications	205	0	DispatchMessageOperationInvokerStart(UnicodeString MethodName, UnicodeString CallerInfo, UnicodeString HostReference, UnicodeString AppDomain)	OperationInvokerStart	ServiceModel Troubleshooting	DispatchMessage	Informational		
+Microsoft-Windows-Application Server-Applications	206	0	task_0(UnicodeString TypeName, UInt8 Handled, UnicodeString ExceptionTypeName, UnicodeString HostReference, UnicodeString AppDomain)		ServiceModel Troubleshooting	task_0	Informational		
+Microsoft-Windows-Application Server-Applications	207	0	task_0207(UnicodeString TypeName, UnicodeString ExceptionTypeName, UnicodeString HostReference, UnicodeString AppDomain)		ServiceModel Troubleshooting	task_0	Informational		
+Microsoft-Windows-Application Server-Applications	208	0	DispatchMessageDispathMessageInspectorAfterReceiveInvoked(UnicodeString TypeName, UnicodeString HostReference, UnicodeString AppDomain)	DispathMessageInspectorAfterReceiveInvoked	ServiceModel Troubleshooting	DispatchMessage	Informational		
+Microsoft-Windows-Application Server-Applications	209	0	DispatchMessageDispathMessageInspectorBeforeSendInvoked(UnicodeString TypeName, UnicodeString HostReference, UnicodeString AppDomain)	DispathMessageInspectorBeforeSendInvoked	ServiceModel Troubleshooting	DispatchMessage	Informational		
+Microsoft-Windows-Application Server-Applications	210	0	task_0210(UnicodeString ThrottleName, Int64 Limit, UnicodeString HostReference, UnicodeString AppDomain)		ServiceModel EndToEndMonitoring HealthMonitoring Troubleshooting Quota	task_0	Warning		
+Microsoft-Windows-Application Server-Applications	211	0	DispatchMessageParameterInspectorStop(UnicodeString TypeName, UnicodeString HostReference, UnicodeString AppDomain)	ParameterInspectorStop	ServiceModel Troubleshooting	DispatchMessage	Informational		
+Microsoft-Windows-Application Server-Applications	212	0	DispatchMessageParameterInspectorStart(UnicodeString TypeName, UnicodeString HostReference, UnicodeString AppDomain)	ParameterInspectorStart	ServiceModel Troubleshooting	DispatchMessage	Informational		
+Microsoft-Windows-Application Server-Applications	213	0	ServiceHostActivationStart(UnicodeString ServiceTypeName, UnicodeString HostReference, UnicodeString AppDomain)	Start	ServiceHost EndToEndMonitoring HealthMonitoring Troubleshooting	ServiceHostActivation	Always		
+Microsoft-Windows-Application Server-Applications	214	0	DispatchMessageOperationInvokerStop(UnicodeString MethodName, Int64 Duration, UnicodeString HostReference, UnicodeString AppDomain)	OperationInvokerStop	ServiceModel EndToEndMonitoring HealthMonitoring Troubleshooting	DispatchMessage	Informational		
+Microsoft-Windows-Application Server-Applications	215	0	TransportReceiveStop(UnicodeString ListenAddress, UnicodeString HostReference, UnicodeString AppDomain)	Stop	TransportGeneral Troubleshooting	TransportReceive	Informational		
+Microsoft-Windows-Application Server-Applications	216	0	TransportSendStop(UnicodeString DestinationAddress, UnicodeString HostReference, UnicodeString AppDomain)	Stop	TransportGeneral Troubleshooting	TransportSend	Informational		
+Microsoft-Windows-Application Server-Applications	217	0	ClientRuntimeOperationPrepared(UnicodeString Action, UnicodeString ContractName, UnicodeString Destination, UnicodeString HostReference, UnicodeString AppDomain)	OperationPrepared	ServiceModel Troubleshooting	ClientRuntime	Informational		
+Microsoft-Windows-Application Server-Applications	218	0	ServiceChannelCallStop(UnicodeString Action, UnicodeString ContractName, UnicodeString Destination, UnicodeString HostReference, UnicodeString AppDomain)	Stop	ServiceModel Troubleshooting	ServiceChannelCall	Informational		
+Microsoft-Windows-Application Server-Applications	219	0	DispatchMessage(UnicodeString ExceptionToString, UnicodeString ExceptionTypeName, UnicodeString HostReference, UnicodeString AppDomain)		ServiceModel EndToEndMonitoring HealthMonitoring Troubleshooting	DispatchMessage	Error		
+Microsoft-Windows-Application Server-Applications	220	0	task_0220(GUID CorrelationId, UnicodeString HostReference, UnicodeString AppDomain)		TransportGeneral EndToEndMonitoring Troubleshooting	task_0	Informational		
+Microsoft-Windows-Application Server-Applications	221	0	task_0221(GUID CorrelationId, UnicodeString HostReference, UnicodeString AppDomain)		TransportGeneral EndToEndMonitoring Troubleshooting	task_0	Informational		
+Microsoft-Windows-Application Server-Applications	222	0	DispatchMessage222(UnicodeString MethodName, Int64 Duration, UnicodeString HostReference, UnicodeString AppDomain)		ServiceModel EndToEndMonitoring HealthMonitoring Troubleshooting	DispatchMessage	Warning		
+Microsoft-Windows-Application Server-Applications	223	0	DispatchMessage223(UnicodeString MethodName, Int64 Duration, UnicodeString HostReference, UnicodeString AppDomain)		ServiceModel EndToEndMonitoring HealthMonitoring Troubleshooting	DispatchMessage	Warning		
+Microsoft-Windows-Application Server-Applications	224	0	DispatchMessage224(UnicodeString ThrottleName, Int64 Limit, UnicodeString HostReference, UnicodeString AppDomain)		ServiceModel EndToEndMonitoring HealthMonitoring Troubleshooting Quota	DispatchMessage	Warning		
+Microsoft-Windows-Application Server-Applications	225	0	Correlation(GUID InstanceKey, UnicodeString Values, UnicodeString ParentScope, UnicodeString HostReference, UnicodeString AppDomain)		Troubleshooting WFServices	Correlation	Informational		
+Microsoft-Windows-Application Server-Applications	226	0	ServiceShutdown(Int32 ClosedCount, Int32 TotalCount, UnicodeString AppDomain)		WebHost HealthMonitoring	ServiceShutdown	Always		
+Microsoft-Windows-Application Server-Applications	301	0	task_0301(UnicodeString Name, UnicodeString HostReference, UnicodeString Payload)		ServiceModel EndToEndMonitoring HealthMonitoring Troubleshooting UserEvents	task_0	Error		
+Microsoft-Windows-Application Server-Applications	302	0	task_0302(UnicodeString Name, UnicodeString HostReference, UnicodeString Payload)		ServiceModel EndToEndMonitoring HealthMonitoring Troubleshooting UserEvents	task_0	Warning		
+Microsoft-Windows-Application Server-Applications	303	0	task_0303(UnicodeString Name, UnicodeString HostReference, UnicodeString Payload)		ServiceModel EndToEndMonitoring HealthMonitoring Troubleshooting UserEvents	task_0	Informational		
+Microsoft-Windows-Application Server-Applications	401	0	SignpostStop(UnicodeString ExtendedData, UnicodeString AppDomain)	Stop	ServiceModel Troubleshooting	Signpost	Informational		
+Microsoft-Windows-Application Server-Applications	402	0	SignpostStart(UnicodeString ExtendedData, UnicodeString AppDomain)	Start	ServiceModel Troubleshooting	Signpost	Informational		
+Microsoft-Windows-Application Server-Applications	403	0	SignpostSuspend(UnicodeString ExtendedData, UnicodeString AppDomain)	Suspend	ServiceModel Troubleshooting	Signpost	Informational		
+Microsoft-Windows-Application Server-Applications	404	0	SignpostResume(UnicodeString ExtendedData, UnicodeString AppDomain)	Resume	ServiceModel Troubleshooting	Signpost	Informational		
+Microsoft-Windows-Application Server-Applications	440	0	SignpostStart440(UnicodeString ExtendedData, UnicodeString AppDomain)	Start	Troubleshooting WFServices	Signpost	Informational		
+Microsoft-Windows-Application Server-Applications	441	0	SignpostStop441(UnicodeString ExtendedData, UnicodeString AppDomain)	Stop	Troubleshooting WFServices	Signpost	Informational		
+Microsoft-Windows-Application Server-Applications	451	0	task_0451(UnicodeString data1, UnicodeString AppDomain)		WCFMessageLogging Troubleshooting	task_0	Informational		
+Microsoft-Windows-Application Server-Applications	452	0	task_0452(UnicodeString data1, UnicodeString AppDomain)		WCFMessageLogging Troubleshooting	task_0	Warning		
+Microsoft-Windows-Application Server-Applications	499	0	task_0499(UnicodeString HostReference, UnicodeString AppDomain)		ServiceHost ServiceModel WCFMessageLogging WFTracking EndToEndMonitoring Troubleshooting UserEvents	task_0	Always		
+Microsoft-Windows-Application Server-Applications	501	0	ServiceHostCompilationStart(UnicodeString AppDomain)	Start	WebHost	ServiceHostCompilation	Informational		
+Microsoft-Windows-Application Server-Applications	502	0	ServiceHostCompilationStop(UnicodeString AppDomain)	Stop	WebHost	ServiceHostCompilation	Informational		
+Microsoft-Windows-Application Server-Applications	503	0	ServiceHostFactoryCreationStart(UnicodeString AppDomain)	Start	WebHost	ServiceHostFactoryCreation	Informational		
+Microsoft-Windows-Application Server-Applications	504	0	ServiceHostFactoryCreationStop(UnicodeString AppDomain)	Stop	WebHost	ServiceHostFactoryCreation	Informational		
+Microsoft-Windows-Application Server-Applications	505	0	ServiceHostCreateStart(UnicodeString AppDomain)	Start	WebHost	ServiceHostCreate	Informational		
+Microsoft-Windows-Application Server-Applications	506	0	ServiceHostCreateStop(UnicodeString AppDomain)	Stop	WebHost	ServiceHostCreate	Informational		
+Microsoft-Windows-Application Server-Applications	507	0	HostedTransportConfigurationManagerConfigInitStart(UnicodeString AppDomain)	Start	WebHost	HostedTransportConfigurationManagerConfigInit	Informational		
+Microsoft-Windows-Application Server-Applications	508	0	HostedTransportConfigurationManagerConfigInitStop(UnicodeString AppDomain)	Stop	WebHost	HostedTransportConfigurationManagerConfigInit	Informational		
+Microsoft-Windows-Application Server-Applications	509	0	ServiceHostOpenStart(UnicodeString AppDomain)	Start	ServiceHost	ServiceHostOpen	Informational		
+Microsoft-Windows-Application Server-Applications	510	0	ServiceHostOpenStop(UnicodeString AppDomain)	Stop	ServiceHost	ServiceHostOpen	Informational		
+Microsoft-Windows-Application Server-Applications	513	0	WebHostRequestStart(UnicodeString AppDomainFriendlyName, UnicodeString VirtualPath, UnicodeString AppDomain)	Start	WebHost	WebHostRequest	Informational		
+Microsoft-Windows-Application Server-Applications	514	0	WebHostRequestStop(UnicodeString AppDomain)	Stop	WebHost	WebHostRequest	Informational		
+Microsoft-Windows-Application Server-Applications	601	0	task_0601(UnicodeString RelativeAddress, UnicodeString NormalizedAddress, UnicodeString AppDomain)			task_0	Verbose		
+Microsoft-Windows-Application Server-Applications	602	0	task_0602(UnicodeString IncomingAddress, UnicodeString AppDomain)			task_0	Verbose		
+Microsoft-Windows-Application Server-Applications	603	0	task_0603(UnicodeString IncomingAddress, UnicodeString AppDomain)		RoutingServices	task_0	Verbose		
+Microsoft-Windows-Application Server-Applications	604	0	task_0604(UnicodeString AspNetRoutePrefix, UnicodeString ServiceType, UnicodeString ServiceHostFactoryType, UnicodeString AppDomain)		RoutingServices	task_0	Verbose		
+Microsoft-Windows-Application Server-Applications	605	0	WebHostRequest(UnicodeString Data, UnicodeString AppDomain)		WebHost	WebHostRequest	Verbose		
+Microsoft-Windows-Application Server-Applications	606	0	WebHostRequestStop606(UnicodeString Data, UnicodeString AppDomain)	Stop	WebHost	WebHostRequest	Verbose		
+Microsoft-Windows-Application Server-Applications	701	0	ServiceChannelOpenStart(UnicodeString AppDomain)	Start	ServiceModel	ServiceChannelOpen	Informational		
+Microsoft-Windows-Application Server-Applications	702	0	ServiceChannelOpenStop(UnicodeString AppDomain)	Stop	ServiceModel	ServiceChannelOpen	Informational		
+Microsoft-Windows-Application Server-Applications	703	0	ServiceChannelCallStart(UnicodeString AppDomain)	Start	ServiceModel	ServiceChannelCall	Informational		
+Microsoft-Windows-Application Server-Applications	704	0	ServiceChannelCallStart704(UnicodeString AppDomain)	Start	ServiceModel	ServiceChannelCall	Informational		
+Microsoft-Windows-Application Server-Applications	706	0	TransportSendStart(UnicodeString AppDomain)	Start	HTTP	TransportSend	Verbose		
+Microsoft-Windows-Application Server-Applications	707	0	TransportSendStop707(UnicodeString AppDomain)	Stop	HTTP	TransportSend	Verbose		
+Microsoft-Windows-Application Server-Applications	708	0	TransportReceiveStart(UnicodeString AppDomain)	Start	HTTP	TransportReceive	Verbose		
+Microsoft-Windows-Application Server-Applications	709	0	DispatchMessageDispatchStart(UnicodeString HostReference, UnicodeString AppDomain)	DispatchStart	ServiceModel	DispatchMessage	Informational		
+Microsoft-Windows-Application Server-Applications	710	0	TransportReceiveBeforeAuthentication(UnicodeString AppDomain)	BeforeAuthentication	ServiceModel	TransportReceive	Verbose		
+Microsoft-Windows-Application Server-Applications	711	0	DispatchMessageBeforeAuthorization(UnicodeString AppDomain)	BeforeAuthorization	ServiceModel	DispatchMessage	Verbose		
+Microsoft-Windows-Application Server-Applications	712	0	DispatchMessageDispatchStop(UnicodeString AppDomain)	DispatchStop	ServiceModel	DispatchMessage	Informational		
+Microsoft-Windows-Application Server-Applications	715	0	ClientRuntimeClientChannelOpenStart(UnicodeString AppDomain)	ClientChannelOpenStart	ServiceModel	ClientRuntime	Informational		
+Microsoft-Windows-Application Server-Applications	716	0	ClientRuntimeClientChannelOpenStop(UnicodeString AppDomain)	ClientChannelOpenStop	ServiceModel	ClientRuntime	Informational		
+Microsoft-Windows-Application Server-Applications	717	0	TransportSendStart717(UnicodeString AppDomain)	Start	HTTP	TransportSend	Informational		
+Microsoft-Windows-Application Server-Applications	1001	0	WFApplicationStateChangeCompleted(UnicodeString data1, UnicodeString AppDomain)	Completed	WFRuntime	WFApplicationStateChange	Informational		
+Microsoft-Windows-Application Server-Applications	1002	0	WFApplicationStateChangeTerminated(UnicodeString data1, UnicodeString SerializedException, UnicodeString AppDomain)	Terminated	WFRuntime	WFApplicationStateChange	Informational		
+Microsoft-Windows-Application Server-Applications	1003	0	WFApplicationStateChangeInstanceCanceled(UnicodeString data1, UnicodeString AppDomain)	InstanceCanceled	WFRuntime	WFApplicationStateChange	Informational		
+Microsoft-Windows-Application Server-Applications	1004	0	WFApplicationStateChangeInstanceAborted(UnicodeString data1, UnicodeString SerializedException, UnicodeString AppDomain)	InstanceAborted	WFRuntime	WFApplicationStateChange	Informational		
+Microsoft-Windows-Application Server-Applications	1005	0	WFApplicationStateChangeIdled(UnicodeString data1, UnicodeString AppDomain)	Idled	WFRuntime	WFApplicationStateChange	Informational		
+Microsoft-Windows-Application Server-Applications	1006	0	WFApplicationStateChangeUnhandledException(UnicodeString data1, UnicodeString data2, UnicodeString data3, UnicodeString data4, UnicodeString SerializedException, UnicodeString AppDomain)	UnhandledException	WFRuntime	WFApplicationStateChange	Error		
+Microsoft-Windows-Application Server-Applications	1007	0	WFApplicationStateChangePersisted(UnicodeString data1, UnicodeString AppDomain)	Persisted	WFRuntime	WFApplicationStateChange	Informational		
+Microsoft-Windows-Application Server-Applications	1008	0	WFApplicationStateChangeUnloaded(UnicodeString data1, UnicodeString AppDomain)	Unloaded	WFRuntime	WFApplicationStateChange	Informational		
+Microsoft-Windows-Application Server-Applications	1009	0	ScheduleActivity(UnicodeString data1, UnicodeString data2, UnicodeString data3, UnicodeString data4, UnicodeString data5, UnicodeString data6, UnicodeString AppDomain)		WFRuntime	ScheduleActivity	Informational		
+Microsoft-Windows-Application Server-Applications	1010	0	CompleteActivity(UnicodeString data1, UnicodeString data2, UnicodeString data3, UnicodeString data4, UnicodeString AppDomain)		WFRuntime	CompleteActivity	Informational		
+Microsoft-Windows-Application Server-Applications	1011	0	ScheduleWorkItemScheduleExecuteActivity(UnicodeString data1, UnicodeString data2, UnicodeString data3, UnicodeString AppDomain)	ScheduleExecuteActivity	WFRuntime	ScheduleWorkItem	Verbose		
+Microsoft-Windows-Application Server-Applications	1012	0	StartWorkItemStartExecuteActivity(UnicodeString data1, UnicodeString data2, UnicodeString data3, UnicodeString AppDomain)	StartExecuteActivity	WFRuntime	StartWorkItem	Verbose		
+Microsoft-Windows-Application Server-Applications	1013	0	CompleteWorkItemCompleteExecuteActivity(UnicodeString data1, UnicodeString data2, UnicodeString data3, UnicodeString AppDomain)	CompleteExecuteActivity	WFRuntime	CompleteWorkItem	Verbose		
+Microsoft-Windows-Application Server-Applications	1014	0	ScheduleWorkItemScheduleCompletion(UnicodeString data1, UnicodeString data2, UnicodeString data3, UnicodeString data4, UnicodeString data5, UnicodeString data6, UnicodeString AppDomain)	ScheduleCompletion	WFRuntime	ScheduleWorkItem	Verbose		
+Microsoft-Windows-Application Server-Applications	1015	0	StartWorkItemStartCompletion(UnicodeString data1, UnicodeString data2, UnicodeString data3, UnicodeString data4, UnicodeString data5, UnicodeString data6, UnicodeString AppDomain)	StartCompletion	WFRuntime	StartWorkItem	Verbose		
+Microsoft-Windows-Application Server-Applications	1016	0	CompleteWorkItemCompleteCompletion(UnicodeString data1, UnicodeString data2, UnicodeString data3, UnicodeString data4, UnicodeString data5, UnicodeString data6, UnicodeString AppDomain)	CompleteCompletion	WFRuntime	CompleteWorkItem	Verbose		
+Microsoft-Windows-Application Server-Applications	1017	0	ScheduleWorkItemScheduleCancelActivity(UnicodeString data1, UnicodeString data2, UnicodeString data3, UnicodeString AppDomain)	ScheduleCancelActivity	WFRuntime	ScheduleWorkItem	Verbose		
+Microsoft-Windows-Application Server-Applications	1018	0	StartWorkItemStartCancelActivity(UnicodeString data1, UnicodeString data2, UnicodeString data3, UnicodeString AppDomain)	StartCancelActivity	WFRuntime	StartWorkItem	Verbose		
+Microsoft-Windows-Application Server-Applications	1019	0	CompleteWorkItemCompleteCancelActivity(UnicodeString data1, UnicodeString data2, UnicodeString data3, UnicodeString AppDomain)	CompleteCancelActivity	WFRuntime	CompleteWorkItem	Verbose		
+Microsoft-Windows-Application Server-Applications	1020	0	CreateBookmark(UnicodeString data1, UnicodeString data2, UnicodeString data3, UnicodeString data4, UnicodeString data5, UnicodeString AppDomain)		WFRuntime	CreateBookmark	Verbose		
+Microsoft-Windows-Application Server-Applications	1021	0	ScheduleWorkItemScheduleBookmark(UnicodeString data1, UnicodeString data2, UnicodeString data3, UnicodeString data4, UnicodeString data5, UnicodeString AppDomain)	ScheduleBookmark	WFRuntime	ScheduleWorkItem	Verbose		
+Microsoft-Windows-Application Server-Applications	1022	0	StartWorkItemStartBookmark(UnicodeString data1, UnicodeString data2, UnicodeString data3, UnicodeString data4, UnicodeString data5, UnicodeString AppDomain)	StartBookmark	WFRuntime	StartWorkItem	Verbose		
+Microsoft-Windows-Application Server-Applications	1023	0	CompleteWorkItemCompleteBookmark(UnicodeString data1, UnicodeString data2, UnicodeString data3, UnicodeString data4, UnicodeString data5, UnicodeString AppDomain)	CompleteBookmark	WFRuntime	CompleteWorkItem	Verbose		
+Microsoft-Windows-Application Server-Applications	1024	0	CreateBookmark1024(UnicodeString data1, UnicodeString AppDomain)		WFRuntime	CreateBookmark	Verbose		
+Microsoft-Windows-Application Server-Applications	1025	0	InitializeBookmarkScope(UnicodeString data1, UnicodeString data2, UnicodeString AppDomain)		WFRuntime	InitializeBookmarkScope	Verbose		
+Microsoft-Windows-Application Server-Applications	1026	0	ScheduleWorkItemScheduleTransactionContext(UnicodeString data1, UnicodeString data2, UnicodeString data3, UnicodeString AppDomain)	ScheduleTransactionContext	WFRuntime	ScheduleWorkItem	Verbose		
+Microsoft-Windows-Application Server-Applications	1027	0	StartWorkItemStartTransactionContext(UnicodeString data1, UnicodeString data2, UnicodeString data3, UnicodeString AppDomain)	StartTransactionContext	WFRuntime	StartWorkItem	Verbose		
+Microsoft-Windows-Application Server-Applications	1028	0	CompleteWorkItemCompleteTransactionContext(UnicodeString data1, UnicodeString data2, UnicodeString data3, UnicodeString AppDomain)	CompleteTransactionContext	WFRuntime	CompleteWorkItem	Verbose		
+Microsoft-Windows-Application Server-Applications	1029	0	ScheduleWorkItemScheduleFault(UnicodeString data1, UnicodeString data2, UnicodeString data3, UnicodeString data4, UnicodeString data5, UnicodeString data6, UnicodeString SerializedException, UnicodeString AppDomain)	ScheduleFault	WFRuntime	ScheduleWorkItem	Verbose		
+Microsoft-Windows-Application Server-Applications	1030	0	StartWorkItemStartFault(UnicodeString data1, UnicodeString data2, UnicodeString data3, UnicodeString data4, UnicodeString data5, UnicodeString data6, UnicodeString SerializedException, UnicodeString AppDomain)	StartFault	WFRuntime	StartWorkItem	Verbose		
+Microsoft-Windows-Application Server-Applications	1031	0	CompleteWorkItemCompleteFault(UnicodeString data1, UnicodeString data2, UnicodeString data3, UnicodeString data4, UnicodeString data5, UnicodeString data6, UnicodeString SerializedException, UnicodeString AppDomain)	CompleteFault	WFRuntime	CompleteWorkItem	Verbose		
+Microsoft-Windows-Application Server-Applications	1032	0	ScheduleWorkItemScheduleRuntime(UnicodeString data1, UnicodeString data2, UnicodeString data3, UnicodeString AppDomain)	ScheduleRuntime	WFRuntime	ScheduleWorkItem	Verbose		
+Microsoft-Windows-Application Server-Applications	1033	0	StartWorkItemStartRuntime(UnicodeString data1, UnicodeString data2, UnicodeString data3, UnicodeString AppDomain)	StartRuntime	WFRuntime	StartWorkItem	Verbose		
+Microsoft-Windows-Application Server-Applications	1034	0	CompleteWorkItemCompleteRuntime(UnicodeString data1, UnicodeString data2, UnicodeString data3, UnicodeString AppDomain)	CompleteRuntime	WFRuntime	CompleteWorkItem	Verbose		
+Microsoft-Windows-Application Server-Applications	1035	0	RuntimeTransactionSet(UnicodeString data1, UnicodeString data2, UnicodeString data3, UnicodeString data4, UnicodeString data5, UnicodeString data6, UnicodeString AppDomain)	Set	WFServices	RuntimeTransaction	Verbose		
+Microsoft-Windows-Application Server-Applications	1036	0	RuntimeTransactionCompletionRequested(UnicodeString data1, UnicodeString data2, UnicodeString data3, UnicodeString AppDomain)	CompletionRequested	WFServices	RuntimeTransaction	Verbose		
+Microsoft-Windows-Application Server-Applications	1037	0	RuntimeTransactionComplete(UnicodeString data1, UnicodeString AppDomain)	Complete	WFServices	RuntimeTransaction	Verbose		
+Microsoft-Windows-Application Server-Applications	1038	0	NoPersistBlock(UnicodeString AppDomain)		WFRuntime	NoPersistBlock	Verbose		
+Microsoft-Windows-Application Server-Applications	1039	0	NoPersistBlock1039(UnicodeString AppDomain)		WFRuntime	NoPersistBlock	Verbose		
+Microsoft-Windows-Application Server-Applications	1040	0	ExecuteActivity(UnicodeString data1, UnicodeString data2, UnicodeString data3, UnicodeString data4, UnicodeString data5, UnicodeString AppDomain)		WFActivities	ExecuteActivity	Verbose		
+Microsoft-Windows-Application Server-Applications	1041	0	WFApplicationStateChangePersistableIdle(UnicodeString data1, UnicodeString data2, UnicodeString AppDomain)	PersistableIdle	WFRuntime	WFApplicationStateChange	Informational		
+Microsoft-Windows-Application Server-Applications	1101	0	WorkflowActivityStart(GUID Id, UnicodeString AppDomain)	Start	WFRuntime	WorkflowActivity	Informational		
+Microsoft-Windows-Application Server-Applications	1102	0	WorkflowActivityStop(GUID Id, UnicodeString AppDomain)	Stop	WFRuntime	WorkflowActivity	Informational		
+Microsoft-Windows-Application Server-Applications	1103	0	WorkflowActivitySuspend(GUID Id, UnicodeString AppDomain)	Suspend	WFRuntime	WorkflowActivity	Informational		
+Microsoft-Windows-Application Server-Applications	1104	0	WorkflowActivityResume(GUID Id, UnicodeString AppDomain)	Resume	WFRuntime	WorkflowActivity	Informational		
+Microsoft-Windows-Application Server-Applications	1124	0	InvokeMethodIsStatic(UnicodeString data1, UnicodeString AppDomain)	IsStatic	WFRuntime	InvokeMethod	Informational		
+Microsoft-Windows-Application Server-Applications	1125	0	InvokeMethodIsNotStatic(UnicodeString data1, UnicodeString AppDomain)	IsNotStatic	WFRuntime	InvokeMethod	Informational		
+Microsoft-Windows-Application Server-Applications	1126	0	InvokeMethodThrewException(UnicodeString data1, UnicodeString data2, UnicodeString AppDomain)	ThrewException	WFRuntime	InvokeMethod	Informational		
+Microsoft-Windows-Application Server-Applications	1131	0	InvokeMethodUseAsyncPattern(UnicodeString data1, UnicodeString data2, UnicodeString data3, UnicodeString AppDomain)	UseAsyncPattern	WFRuntime	InvokeMethod	Informational		
+Microsoft-Windows-Application Server-Applications	1132	0	InvokeMethodDoesNotUseAsyncPattern(UnicodeString data1, UnicodeString AppDomain)	DoesNotUseAsyncPattern	WFRuntime	InvokeMethod	Informational		
+Microsoft-Windows-Application Server-Applications	1140	0	ExecuteFlowchartBegin(UnicodeString data1, UnicodeString AppDomain)	Begin	WFActivities	ExecuteFlowchart	Informational		
+Microsoft-Windows-Application Server-Applications	1141	0	ExecuteFlowchartEmpty(UnicodeString data1, UnicodeString AppDomain)	Empty	WFActivities	ExecuteFlowchart	Warning		
+Microsoft-Windows-Application Server-Applications	1143	0	ExecuteFlowchartNextNull(UnicodeString data1, UnicodeString AppDomain)	NextNull	WFActivities	ExecuteFlowchart	Informational		
+Microsoft-Windows-Application Server-Applications	1146	0	ExecuteFlowchartSwitchCase(UnicodeString data1, UnicodeString data2, UnicodeString AppDomain)	SwitchCase	WFActivities	ExecuteFlowchart	Informational		
+Microsoft-Windows-Application Server-Applications	1147	0	ExecuteFlowchartSwitchDefault(UnicodeString data1, UnicodeString AppDomain)	SwitchDefault	WFActivities	ExecuteFlowchart	Informational		
+Microsoft-Windows-Application Server-Applications	1148	0	ExecuteFlowchartSwitchCaseNotFound(UnicodeString data1, UnicodeString AppDomain)	SwitchCaseNotFound	WFActivities	ExecuteFlowchart	Informational		
+Microsoft-Windows-Application Server-Applications	1150	0	CompensationState(UnicodeString data1, UnicodeString data2, UnicodeString AppDomain)		WFActivities	CompensationState	Informational		
+Microsoft-Windows-Application Server-Applications	1223	0	ExecuteActivity1223(UnicodeString data1, UnicodeString AppDomain)		WFActivities	ExecuteActivity	Informational		
+Microsoft-Windows-Application Server-Applications	1400	0	TimeoutException(UnicodeString data1, UnicodeString AppDomain)		ServiceModel	TimeoutException	Error		
+Microsoft-Windows-Application Server-Applications	1401	0	TimeoutException1401(UnicodeString data1, UnicodeString AppDomain)		ServiceModel	TimeoutException	Error		
+Microsoft-Windows-Application Server-Applications	1402	0	TimeoutException1402(UnicodeString msg, UnicodeString key, UnicodeString AppDomain)		ServiceModel	TimeoutException	Error		
+Microsoft-Windows-Application Server-Applications	1403	0	TimeoutException1403(UnicodeString msg, UnicodeString key, UnicodeString AppDomain)		ServiceModel	TimeoutException	Informational		
+Microsoft-Windows-Application Server-Applications	1405	0	TimeoutException1405(UnicodeString data1, UnicodeString AppDomain)		ServiceModel	TimeoutException	Error		
+Microsoft-Windows-Application Server-Applications	1406	0	TimeoutException1406(UnicodeString data1, UnicodeString AppDomain)		ServiceModel	TimeoutException	Error		
+Microsoft-Windows-Application Server-Applications	1407	0	TimeoutException1407(UnicodeString data1, UnicodeString AppDomain)		ServiceModel	TimeoutException	Error		
+Microsoft-Windows-Application Server-Applications	1409	0	TimeoutException1409(UnicodeString data1, UnicodeString AppDomain)		ServiceModel	TimeoutException	Informational		
+Microsoft-Windows-Application Server-Applications	1416	0	Quotas(UnicodeString data1, UnicodeString AppDomain)		Quota	Quotas	Error		
+Microsoft-Windows-Application Server-Applications	1417	0	Quotas1417(UnicodeString data1, UnicodeString AppDomain)		Quota	Quotas	Error		
+Microsoft-Windows-Application Server-Applications	1418	0	Quotas1418(UnicodeString data1, UnicodeString AppDomain)		Quota	Quotas	Informational		
+Microsoft-Windows-Application Server-Applications	1419	0	Quotas1419(UnicodeString data1, UnicodeString AppDomain)		Quota	Quotas	Informational		
+Microsoft-Windows-Application Server-Applications	1420	0	Quotas1420(UnicodeString data1, UnicodeString AppDomain)		Quota	Quotas	Error		
+Microsoft-Windows-Application Server-Applications	1422	0	Quotas1422(UnicodeString msg, UnicodeString AppDomain)		Quota	Quotas	Error		
+Microsoft-Windows-Application Server-Applications	1423	0	Quotas1423(Int32 cur, Int32 max, UnicodeString AppDomain)		Quota	Quotas	Verbose		
+Microsoft-Windows-Application Server-Applications	1424	0	Quotas1424(Int32 cur, Int32 max, UnicodeString AppDomain)		Quota	Quotas	Verbose		
+Microsoft-Windows-Application Server-Applications	1430	0	Quotas1430(Int32 cur, Int32 max, UnicodeString AppDomain)		Quota	Quotas	Verbose		
+Microsoft-Windows-Application Server-Applications	1431	0	Quotas1431(Int32 cur, Int32 max, UnicodeString AppDomain)		Quota	Quotas	Verbose		
+Microsoft-Windows-Application Server-Applications	1432	0	Quotas1432(Int32 cur, Int32 max, UnicodeString AppDomain)		Quota	Quotas	Verbose		
+Microsoft-Windows-Application Server-Applications	1433	0	Quotas1433(Int32 cur, Int32 max, UnicodeString AppDomain)		Quota	Quotas	Verbose		
+Microsoft-Windows-Application Server-Applications	1436	0	Quotas1436(Int32 cur, Int32 max, UnicodeString AppDomain)		Quota	Quotas	Verbose		
+Microsoft-Windows-Application Server-Applications	1438	0	Quotas1438(Int32 cur, Int32 max, UnicodeString AppDomain)		Quota	Quotas	Verbose		
+Microsoft-Windows-Application Server-Applications	1439	0	Quotas1439(UnicodeString AppDomain)		Quota	Quotas	Informational		
+Microsoft-Windows-Application Server-Applications	1441	0	Quotas1441(UnicodeString data1, UnicodeString AppDomain)		Quota	Quotas	Warning		
+Microsoft-Windows-Application Server-Applications	1442	0	MsmqQuotas(UnicodeString data1, UnicodeString AppDomain)		Quota	MsmqQuotas	Warning		
+Microsoft-Windows-Application Server-Applications	1443	0	MsmqQuotas1443(UnicodeString data1, UnicodeString AppDomain)		Quota	MsmqQuotas	Error		
+Microsoft-Windows-Application Server-Applications	1445	0	Quotas1445(UnicodeString itemTypeName, UnicodeString AppDomain)		Quota	Quotas	Verbose		
+Microsoft-Windows-Application Server-Applications	1446	0	Quotas1446(UnicodeString itemTypeName, UnicodeString AppDomain)		Quota	Quotas	Verbose		
+Microsoft-Windows-Application Server-Applications	1449	0	WFMessageReceive(UnicodeString AppDomain)	Receive	WFServices	WFMessage	Informational		
+Microsoft-Windows-Application Server-Applications	1450	0	WFMessageSend(UnicodeString AppDomain)	Send	WFServices	WFMessage	Informational		
+Microsoft-Windows-Application Server-Applications	1451	0	Quotas1451(UnicodeString data1, UnicodeString AppDomain)		Quota	Quotas	Error		
+Microsoft-Windows-Application Server-Applications	2021	0	ExecuteWorkItemStart(UnicodeString AppDomain)	Start	WFRuntime	ExecuteWorkItem	Verbose		
+Microsoft-Windows-Application Server-Applications	2022	0	ExecuteWorkItemStop(UnicodeString AppDomain)	Stop	WFRuntime	ExecuteWorkItem	Verbose		
+Microsoft-Windows-Application Server-Applications	2023	0	MessageChannelCacheMissed(UnicodeString AppDomain)	Missed	WFRuntime	MessageChannelCache	Verbose		
+Microsoft-Windows-Application Server-Applications	2024	0	InternalCacheMetadataStart(UnicodeString id, UnicodeString AppDomain)	Start	WFRuntime	InternalCacheMetadata	Verbose		
+Microsoft-Windows-Application Server-Applications	2025	0	InternalCacheMetadataStop(UnicodeString id, UnicodeString AppDomain)	Stop	WFRuntime	InternalCacheMetadata	Verbose		
+Microsoft-Windows-Application Server-Applications	2026	0	VBExpressionCompileStart(UnicodeString expr, UnicodeString AppDomain)	Start	WFRuntime	VBExpressionCompile	Verbose		
+Microsoft-Windows-Application Server-Applications	2027	0	CacheRootMetadataStart(UnicodeString activityName, UnicodeString AppDomain)	Start	WFRuntime	CacheRootMetadata	Verbose		
+Microsoft-Windows-Application Server-Applications	2028	0	CacheRootMetadataStop(UnicodeString activityName, UnicodeString AppDomain)	Stop	WFRuntime	CacheRootMetadata	Verbose		
+Microsoft-Windows-Application Server-Applications	2029	0	VBExpressionCompileStop(UnicodeString AppDomain)	Stop	WFRuntime	VBExpressionCompile	Verbose		
+Microsoft-Windows-Application Server-Applications	2576	0	TryCatchExceptionFromTry(UnicodeString data1, UnicodeString data2, UnicodeString AppDomain)	FromTry	WFActivities	TryCatchException	Informational		
+Microsoft-Windows-Application Server-Applications	2577	0	TryCatchExceptionDuringCancelation(UnicodeString data1, UnicodeString AppDomain)	DuringCancelation	WFActivities	TryCatchException	Warning		
+Microsoft-Windows-Application Server-Applications	2578	0	TryCatchExceptionFromCatchOrFinally(UnicodeString data1, UnicodeString AppDomain)	FromCatchOrFinally	WFActivities	TryCatchException	Warning		
+Microsoft-Windows-Application Server-Applications	3300	0	task_03300(UnicodeString TypeName, UnicodeString AppDomain)		Channel	task_0	Warning		
+Microsoft-Windows-Application Server-Applications	3301	0	task_03301(UnicodeString TypeName, UnicodeString AppDomain)		Channel	task_0	Warning		
+Microsoft-Windows-Application Server-Applications	3302	0	DispatchMessage3302(UnicodeString EventSource, UnicodeString AppDomain)		ServiceModel	DispatchMessage	Warning		
+Microsoft-Windows-Application Server-Applications	3303	0	task_03303(UnicodeString TypeName, UnicodeString ExceptionToString, UnicodeString AppDomain)		Channel	task_0	Informational		
+Microsoft-Windows-Application Server-Applications	3305	0	ChannelFactoryCaching(Int32 Count, Int32 MaxNum, UnicodeString EventSource, UnicodeString AppDomain)		ServiceModel	ChannelFactoryCaching	Informational		
+Microsoft-Windows-Application Server-Applications	3306	0	ChannelFactoryCaching3306(Int32 Count, UnicodeString EventSource, UnicodeString AppDomain)		ServiceModel	ChannelFactoryCaching	Informational		
+Microsoft-Windows-Application Server-Applications	3307	0	ChannelFactoryCaching3307(UnicodeString EventSource, UnicodeString AppDomain)		ServiceModel	ChannelFactoryCaching	Informational		
+Microsoft-Windows-Application Server-Applications	3308	0	ChannelFactoryCaching3308(UnicodeString EventSource, UnicodeString AppDomain)		ServiceModel	ChannelFactoryCaching	Informational		
+Microsoft-Windows-Application Server-Applications	3309	0	task_03309(UnicodeString TypeName, UnicodeString Uri, UnicodeString EventSource, UnicodeString AppDomain)		ServiceModel	task_0	Informational		
+Microsoft-Windows-Application Server-Applications	3310	0	DispatchMessage3310(UnicodeString OperationName, UnicodeString HostReference, UnicodeString AppDomain)		ServiceModel	DispatchMessage	Error		
+Microsoft-Windows-Application Server-Applications	3311	0	DispatchMessageStop(UnicodeString OperationName, UnicodeString HostReference, UnicodeString AppDomain)	Stop	ServiceModel	DispatchMessage	Informational		
+Microsoft-Windows-Application Server-Applications	3312	0	MessageDecodingStop(Int32 Size, UnicodeString EventSource, UnicodeString AppDomain)	Stop	Channel	MessageDecoding	Informational		
+Microsoft-Windows-Application Server-Applications	3313	0	MessageEncodingStop(Int32 Size, UnicodeString EventSource, UnicodeString AppDomain)	Stop	Channel	MessageEncoding	Informational		
+Microsoft-Windows-Application Server-Applications	3314	0	Timeout(UnicodeString RemoteAddress, UnicodeString AppDomain)		ServiceModel	Timeout	Error		
+Microsoft-Windows-Application Server-Applications	3319	0	ConnectionAcceptStart(UnicodeString AppDomain)	Start	TCP	ConnectionAccept	Verbose		
+Microsoft-Windows-Application Server-Applications	3320	0	ConnectionAcceptStop(Int32 ListenerHashCode, Int32 SocketHashCode, UnicodeString AppDomain)	Stop	TCP	ConnectionAccept	Verbose		
+Microsoft-Windows-Application Server-Applications	3321	0	ConnectionPooling(UnicodeString PoolKey, Int32 busy, UnicodeString AppDomain)		Channel	ConnectionPooling	Verbose		
+Microsoft-Windows-Application Server-Applications	3322	0	FormatterDeserializeRequestStart(UnicodeString AppDomain)	Start	ServiceModel	FormatterDeserializeRequest	Verbose		
+Microsoft-Windows-Application Server-Applications	3323	0	FormatterDeserializeRequestStop(UnicodeString AppDomain)	Stop	ServiceModel	FormatterDeserializeRequest	Verbose		
+Microsoft-Windows-Application Server-Applications	3324	0	FormatterSerializeReplyStart(UnicodeString AppDomain)	Start	ServiceModel	FormatterSerializeReply	Verbose		
+Microsoft-Windows-Application Server-Applications	3325	0	FormatterSerializeReplyStop(UnicodeString AppDomain)	Stop	ServiceModel	FormatterSerializeReply	Verbose		
+Microsoft-Windows-Application Server-Applications	3326	0	FormatterSerializeRequestStart(UnicodeString AppDomain)	Start	ServiceModel	FormatterSerializeRequest	Verbose		
+Microsoft-Windows-Application Server-Applications	3327	0	FormatterSerializeRequestStop(UnicodeString AppDomain)	Stop	ServiceModel	FormatterSerializeRequest	Verbose		
+Microsoft-Windows-Application Server-Applications	3328	0	FormatterDeserializeReplyStart(UnicodeString AppDomain)	Start	ServiceModel	FormatterDeserializeReply	Verbose		
+Microsoft-Windows-Application Server-Applications	3329	0	FormatterDeserializeReplyStop(UnicodeString AppDomain)	Stop	ServiceModel	FormatterDeserializeReply	Verbose		
+Microsoft-Windows-Application Server-Applications	3330	0	SecurityNegotiationStart(UnicodeString AppDomain)	Start	Security	SecurityNegotiation	Verbose		
+Microsoft-Windows-Application Server-Applications	3331	0	SecurityNegotiationStop(UnicodeString AppDomain)	Stop	Security	SecurityNegotiation	Verbose		
+Microsoft-Windows-Application Server-Applications	3332	0	SecureMessageStart(UnicodeString AppDomain)	Start	Security	SecureMessage	Verbose		
+Microsoft-Windows-Application Server-Applications	3333	0	SecureMessageStop(UnicodeString AppDomain)	Stop	Security	SecureMessage	Verbose		
+Microsoft-Windows-Application Server-Applications	3334	0	SecurityVerification(UnicodeString AppDomain)		ServiceModel Security	SecurityVerification	Verbose		
+Microsoft-Windows-Application Server-Applications	3335	0	ServiceInstanceStart(UnicodeString AppDomain)	Start	ServiceModel	ServiceInstance	Verbose		
+Microsoft-Windows-Application Server-Applications	3336	0	ServiceInstanceStop(UnicodeString AppDomain)	Stop	ServiceModel	ServiceInstance	Verbose		
+Microsoft-Windows-Application Server-Applications	3337	0	ChannelReceiveStart(Int32 ChannelId, UnicodeString AppDomain)	Start	Channel	ChannelReceive	Verbose		
+Microsoft-Windows-Application Server-Applications	3338	0	ChannelReceiveStop(Int32 ChannelId, UnicodeString AppDomain)	Stop	Channel	ChannelReceive	Verbose		
+Microsoft-Windows-Application Server-Applications	3339	0	ChannelFactoryCreate(UnicodeString EventSource, UnicodeString AppDomain)		ServiceModel	ChannelFactoryCreate	Verbose		
+Microsoft-Windows-Application Server-Applications	3340	0	ConnectionAcceptStart3340(UnicodeString uri, UnicodeString AppDomain)	Start	Channel	ConnectionAccept	Verbose		
+Microsoft-Windows-Application Server-Applications	3341	0	ConnectionAcceptStop3341(UnicodeString AppDomain)	Stop	Channel	ConnectionAccept	Verbose		
+Microsoft-Windows-Application Server-Applications	3342	0	ConnectStart(UnicodeString Key, UnicodeString AppDomain)	Start	Channel	Connect	Verbose		
+Microsoft-Windows-Application Server-Applications	3343	0	ConnectStop(UnicodeString AppDomain)	Stop	Channel	Connect	Verbose		
+Microsoft-Windows-Application Server-Applications	3345	0	Connect(UnicodeString Via, UnicodeString AppDomain)		Channel	Connect	Verbose		
+Microsoft-Windows-Application Server-Applications	3346	0	Connect3346(UnicodeString FaultString, UnicodeString AppDomain)		Channel	Connect	Error		
+Microsoft-Windows-Application Server-Applications	3347	0	ConnectionAcceptStop3347(UnicodeString AppDomain)	Stop	TCP	ConnectionAccept	Verbose		
+Microsoft-Windows-Application Server-Applications	3348	0	ServiceHostFault(UnicodeString EventSource, UnicodeString AppDomain)		TCP	ServiceHostFault	Critical		
+Microsoft-Windows-Application Server-Applications	3349	0	ListenerOpenStart(UnicodeString Uri, UnicodeString AppDomain)	Start	Channel	ListenerOpen	Verbose		
+Microsoft-Windows-Application Server-Applications	3350	0	ListenerOpenStop(UnicodeString AppDomain)	Stop	Channel	ListenerOpen	Verbose		
+Microsoft-Windows-Application Server-Applications	3351	0	Quotas3351(UnicodeString AppDomain)		Quota	Quotas	Verbose		
+Microsoft-Windows-Application Server-Applications	3352	0	Connect3352(Int32 SocketId, UnicodeString Uri, UnicodeString AppDomain)		TCP	Connect	Error		
+Microsoft-Windows-Application Server-Applications	3353	0	Connect3353(Int32 SocketId, UnicodeString Uri, UnicodeString AppDomain)		TCP	Connect	Warning		
+Microsoft-Windows-Application Server-Applications	3354	0	SecurityNegotiation(UnicodeString AppDomain)		Security	SecurityNegotiation	Verbose		
+Microsoft-Windows-Application Server-Applications	3355	0	SecurityNegotiation3355(UnicodeString AppDomain)		Security	SecurityNegotiation	Error		
+Microsoft-Windows-Application Server-Applications	3356	0	SecurityVerification3356(UnicodeString AppDomain)		Security	SecurityVerification	Verbose		
+Microsoft-Windows-Application Server-Applications	3357	0	SecurityVerification3357(UnicodeString AppDomain)		Security	SecurityVerification	Error		
+Microsoft-Windows-Application Server-Applications	3358	0	ActivationDuplicateSocket(UnicodeString Uri, UnicodeString AppDomain)		ActivationServices	ActivationDuplicateSocket	Verbose		
+Microsoft-Windows-Application Server-Applications	3359	0	SecurityImpersonation(UnicodeString AppDomain)		Security	SecurityImpersonation	Verbose		
+Microsoft-Windows-Application Server-Applications	3360	0	SecurityImpersonation3360(UnicodeString AppDomain)		Security	SecurityImpersonation	Warning		
+Microsoft-Windows-Application Server-Applications	3361	0	TransportReceive(UnicodeString AppDomain)		HTTP	TransportReceive	Warning		
+Microsoft-Windows-Application Server-Applications	3362	0	TransportSend(UnicodeString AppDomain)		HTTP	TransportSend	Warning		
+Microsoft-Windows-Application Server-Applications	3363	0	SecurityVerification3363(UnicodeString AppDomain)		HTTP	SecurityVerification	Warning		
+Microsoft-Windows-Application Server-Applications	3364	0	ActivationListenerOpenStart(UnicodeString Uri, UnicodeString AppDomain)	Start	ActivationServices	ActivationListenerOpen	Verbose		
+Microsoft-Windows-Application Server-Applications	3365	0	ActivationListenerOpenStop(UnicodeString AppDomain)	Stop	ActivationServices	ActivationListenerOpen	Verbose		
+Microsoft-Windows-Application Server-Applications	3366	0	ActivationListenerOpen(UnicodeString Status, UnicodeString AppDomain)		ActivationServices	ActivationListenerOpen	Error		
+Microsoft-Windows-Application Server-Applications	3367	0	SessionStart(UnicodeString AppDomain)		Channel	SessionStart	Error		
+Microsoft-Windows-Application Server-Applications	3368	0	SessionUpgradeInitiate(UnicodeString AppDomain)	Initiate	Security	SessionUpgrade	Verbose		
+Microsoft-Windows-Application Server-Applications	3369	0	SessionUpgradeAccept(UnicodeString AppDomain)	Accept	Security	SessionUpgrade	Verbose		
+Microsoft-Windows-Application Server-Applications	3370	0	MessageEncodingStart(UnicodeString AppDomain)	Start	Channel	MessageEncoding	Verbose		
+Microsoft-Windows-Application Server-Applications	3371	0	MessageEncodingStart3371(UnicodeString AppDomain)	Start	Channel	MessageEncoding	Verbose		
+Microsoft-Windows-Application Server-Applications	3372	0	MessageEncodingStart3372(UnicodeString AppDomain)	Start	Channel	MessageEncoding	Verbose		
+Microsoft-Windows-Application Server-Applications	3373	0	MessageDecodingStart(UnicodeString AppDomain)	Start	Channel	MessageDecoding	Verbose		
+Microsoft-Windows-Application Server-Applications	3374	0	MessageDecodingStart3374(UnicodeString AppDomain)	Start	Channel	MessageDecoding	Verbose		
+Microsoft-Windows-Application Server-Applications	3375	0	MessageDecodingStart3375(UnicodeString AppDomain)	Start	Channel	MessageDecoding	Verbose		
+Microsoft-Windows-Application Server-Applications	3376	0	TransportReceiveStart3376(UnicodeString AppDomain)	Start	HTTP	TransportReceive	Informational		
+Microsoft-Windows-Application Server-Applications	3377	0	TransportReceiveStop3377(Int32 SocketId, Int32 Size, UnicodeString Endpoint, UnicodeString AppDomain)	Stop	TCP	TransportReceive	Verbose		
+Microsoft-Windows-Application Server-Applications	3378	0	TransportReceiveStop3378(Int32 SocketId, Int32 Size, UnicodeString Endpoint, UnicodeString AppDomain)	Stop	TCP	TransportReceive	Verbose		
+Microsoft-Windows-Application Server-Applications	3379	0	TransportSendStart3379(Int32 SocketId, Int32 Size, UnicodeString Endpoint, UnicodeString AppDomain)	Start	TCP	TransportSend	Verbose		
+Microsoft-Windows-Application Server-Applications	3380	0	TransportSendStart3380(Int32 SocketId, Int32 Size, UnicodeString Endpoint, UnicodeString AppDomain)	Start	TCP	TransportSend	Verbose		
+Microsoft-Windows-Application Server-Applications	3381	0	ReliableSessionSequenceAck(UnicodeString SessionId, UnicodeString AppDomain)	SequenceAck	Channel	ReliableSession	Verbose		
+Microsoft-Windows-Application Server-Applications	3382	0	ReliableSessionReconnect(UnicodeString SessionId, UnicodeString AppDomain)	Reconnect	Channel	ReliableSession	Informational		
+Microsoft-Windows-Application Server-Applications	3383	0	ReliableSessionFaulted(UnicodeString SessionId, UnicodeString AppDomain)	Faulted	Channel	ReliableSession	Informational		
+Microsoft-Windows-Application Server-Applications	3384	0	SessionUpgradeInitiate3384(UnicodeString AppDomain)	Initiate	Security	SessionUpgrade	Verbose		
+Microsoft-Windows-Application Server-Applications	3385	0	SessionUpgradeAccept3385(UnicodeString AppDomain)	Accept	Security	SessionUpgrade	Verbose		
+Microsoft-Windows-Application Server-Applications	3386	0	ConnectionAbort(Int32 SocketId, UnicodeString AppDomain)		TCP	ConnectionAbort	Warning		
+Microsoft-Windows-Application Server-Applications	3388	0	TransportReceiveStart3388(UnicodeString AppDomain)	Start	HTTP	TransportReceive	Verbose		
+Microsoft-Windows-Application Server-Applications	3389	0	ClientSendPreambleStart(UnicodeString AppDomain)	Start	Channel	ClientSendPreamble	Verbose		
+Microsoft-Windows-Application Server-Applications	3390	0	ClientSendPreambleStop(UnicodeString AppDomain)	Stop	Channel	ClientSendPreamble	Verbose		
+Microsoft-Windows-Application Server-Applications	3391	0	TransportReceiveStart3391(UnicodeString AppDomain)	Start	HTTP	TransportReceive	Warning		
+Microsoft-Windows-Application Server-Applications	3392	0	DispatchMessageTransactionScopeCreate(UnicodeString LocalId, GUID Distributed, UnicodeString AppDomain)	TransactionScopeCreate	ServiceModel	DispatchMessage	Informational		
+Microsoft-Windows-Application Server-Applications	3393	0	MessageDecodingStop3393(UnicodeString AppDomain)	Stop	Channel	MessageDecoding	Informational		
+Microsoft-Windows-Application Server-Applications	3394	0	MessageEncodingStop3394(UnicodeString AppDomain)	Stop	Channel	MessageEncoding	Informational		
+Microsoft-Windows-Application Server-Applications	3395	0	MessageEncodingStop3395(UnicodeString AppDomain)	Stop	Channel	MessageEncoding	Informational		
+Microsoft-Windows-Application Server-Applications	3396	0	TransportSendStart3396(Int32 BufferId, Int32 Size, UnicodeString AppDomain)	Start	Channel	TransportSend	Informational		
+Microsoft-Windows-Application Server-Applications	3397	0	TransportSendStop3397(UnicodeString AppDomain)	Stop	Channel	TransportSend	Informational		
+Microsoft-Windows-Application Server-Applications	3398	0	ListenerOpen(UnicodeString sharedMemoryName, UnicodeString AppDomain)		Channel	ListenerOpen	Verbose		
+Microsoft-Windows-Application Server-Applications	3399	0	ListenerOpen3399(UnicodeString pipeName, UnicodeString AppDomain)		Channel	ListenerOpen	Verbose		
+Microsoft-Windows-Application Server-Applications	3401	0	SignatureVerificationStart(UnicodeString AppDomain)	Start	Security	SignatureVerification	Verbose		
+Microsoft-Windows-Application Server-Applications	3402	0	SignatureVerification(UnicodeString AppDomain)		Security	SignatureVerification	Verbose		
+Microsoft-Windows-Application Server-Applications	3403	0	WrappedKeyDecryption(UnicodeString AppDomain)		Security	WrappedKeyDecryption	Verbose		
+Microsoft-Windows-Application Server-Applications	3404	0	WrappedKeyDecryption3404(UnicodeString AppDomain)		Security	WrappedKeyDecryption	Verbose		
+Microsoft-Windows-Application Server-Applications	3405	0	EncryptedDataProcessing(UnicodeString AppDomain)		Security	EncryptedDataProcessing	Verbose		
+Microsoft-Windows-Application Server-Applications	3406	0	EncryptedDataProcessing3406(UnicodeString AppDomain)		Security	EncryptedDataProcessing	Verbose		
+Microsoft-Windows-Application Server-Applications	3407	0	TransportReceiveStart3407(UnicodeString AppDomain)	Start	HTTP	TransportReceive	Verbose		
+Microsoft-Windows-Application Server-Applications	3408	0	TransportReceiveStart3408(UnicodeString AppDomain)	Start	HTTP	TransportReceive	Verbose		
+Microsoft-Windows-Application Server-Applications	3409	0	TransportReceiveStop3409(UnicodeString AppDomain)	Stop	HTTP	TransportReceive	Verbose		
+Microsoft-Windows-Application Server-Applications	3410	0	TransportReceive3410(UnicodeString AppDomain)		HTTP	TransportReceive	Warning		
+Microsoft-Windows-Application Server-Applications	3411	0	Connect3411(UnicodeString AppDomain)		HTTP	Connect	Error		
+Microsoft-Windows-Application Server-Applications	3412	0	TransportSendStart3412(UnicodeString AppDomain)	Start	HTTP	TransportSend	Verbose		
+Microsoft-Windows-Application Server-Applications	3413	0	TransportSendStart3413(UnicodeString AppDomain)	Start	HTTP	TransportSend	Verbose		
+Microsoft-Windows-Application Server-Applications	3414	0	TransportSendStop3414(UnicodeString AppDomain)	Stop	HTTP	TransportSend	Verbose		
+Microsoft-Windows-Application Server-Applications	3415	0	ConnectStart3415(UnicodeString remoteAddress, UnicodeString AppDomain)	Start	HTTP	Connect	Verbose		
+Microsoft-Windows-Application Server-Applications	3416	0	ConnectStop3416(Int32 websocketId, UnicodeString AppDomain)	Stop	HTTP	Connect	Verbose		
+Microsoft-Windows-Application Server-Applications	3417	0	ConnectStart3417(UnicodeString AppDomain)	Start	HTTP	Connect	Verbose		
+Microsoft-Windows-Application Server-Applications	3418	0	ConnectStop3418(Int32 websocketId, UnicodeString AppDomain)	Stop	HTTP	Connect	Verbose		
+Microsoft-Windows-Application Server-Applications	3419	0	Connect3419(UnicodeString errorMessage, UnicodeString AppDomain)		HTTP	Connect	Error		
+Microsoft-Windows-Application Server-Applications	3420	0	Connect3420(UnicodeString errorMessage, UnicodeString AppDomain)		HTTP	Connect	Error		
+Microsoft-Windows-Application Server-Applications	3421	0	Connect3421(Int32 websocketId, UnicodeString AppDomain)		HTTP	Connect	Error		
+Microsoft-Windows-Application Server-Applications	3422	0	TransportSendStart3422(Int32 websocketId, Int32 byteCount, UnicodeString remoteAddress, UnicodeString AppDomain)	Start	HTTP	TransportSend	Verbose		
+Microsoft-Windows-Application Server-Applications	3423	0	TransportSendStop3423(Int32 websocketId, UnicodeString AppDomain)	Stop	HTTP	TransportSend	Verbose		
+Microsoft-Windows-Application Server-Applications	3424	0	TransportReceiveStart3424(Int32 websocketId, UnicodeString AppDomain)	Start	HTTP	TransportReceive	Verbose		
+Microsoft-Windows-Application Server-Applications	3425	0	TransportReceiveStop3425(Int32 websocketId, Int32 byteCount, UnicodeString remoteAddress, UnicodeString AppDomain)	Stop	HTTP	TransportReceive	Verbose		
+Microsoft-Windows-Application Server-Applications	3426	0	Connect3426(Int32 websocketId, UnicodeString remoteAddress, UnicodeString closeStatus, UnicodeString AppDomain)		HTTP	Connect	Verbose		
+Microsoft-Windows-Application Server-Applications	3427	0	Connect3427(Int32 websocketId, UnicodeString remoteAddress, UnicodeString closeStatus, UnicodeString AppDomain)		HTTP	Connect	Verbose		
+Microsoft-Windows-Application Server-Applications	3428	0	Connect3428(Int32 websocketId, UnicodeString AppDomain)		HTTP	Connect	Verbose		
+Microsoft-Windows-Application Server-Applications	3429	0	Connect3429(Int32 websocketId, UnicodeString closeStatus, UnicodeString AppDomain)		HTTP	Connect	Verbose		
+Microsoft-Windows-Application Server-Applications	3430	0	Connect3430(UnicodeString clientWebSocketFactoryType, UnicodeString AppDomain)		HTTP	Connect	Verbose		
+Microsoft-Windows-Application Server-Applications	3431	0	Connect3431(UnicodeString clientWebSocketFactoryType, UnicodeString AppDomain)		HTTP	Connect	Verbose		
+Microsoft-Windows-Application Server-Applications	3501	0	InferDescriptionContract(UnicodeString data1, UnicodeString data2, UnicodeString AppDomain)	Contract	WFServices	InferDescription	Informational		
+Microsoft-Windows-Application Server-Applications	3502	0	InferDescriptionOperation(UnicodeString data1, UnicodeString data2, UnicodeString data3, UnicodeString AppDomain)	Operation	WFServices	InferDescription	Informational		
+Microsoft-Windows-Application Server-Applications	3503	0	CorrelationDuplicateQuery(UnicodeString data1, UnicodeString AppDomain)	DuplicateQuery	WFServices	Correlation	Warning		
+Microsoft-Windows-Application Server-Applications	3507	0	AddServiceEndpoint(UnicodeString data1, UnicodeString data2, UnicodeString data3, UnicodeString AppDomain)		WFServices	AddServiceEndpoint	Informational		
+Microsoft-Windows-Application Server-Applications	3508	0	TrackingProfileNotFound(UnicodeString TrackingProfile, UnicodeString ActivityDefinitionId, UnicodeString AppDomain)	NotFound	WFServices	TrackingProfile	Verbose		
+Microsoft-Windows-Application Server-Applications	3550	0	BufferOutOfOrderNoInstance(UnicodeString data1, UnicodeString AppDomain)	NoInstance	WFServices	BufferOutOfOrder	Informational		
+Microsoft-Windows-Application Server-Applications	3551	0	BufferOutOfOrderNoBookmark(UnicodeString data1, UnicodeString data2, UnicodeString AppDomain)	NoBookmark	WFServices	BufferOutOfOrder	Informational		
+Microsoft-Windows-Application Server-Applications	3552	0	Quotas3552(Int32 limit, UnicodeString AppDomain)		Quota WFServices	Quotas	Warning		
+Microsoft-Windows-Application Server-Applications	3553	0	XamlServicesLoadStart(UnicodeString AppDomain)	Start	WebHost	XamlServicesLoad	Informational		
+Microsoft-Windows-Application Server-Applications	3554	0	XamlServicesLoadStop(UnicodeString AppDomain)	Stop	WebHost	XamlServicesLoad	Informational		
+Microsoft-Windows-Application Server-Applications	3555	0	CreateWorkflowServiceHostStart(UnicodeString AppDomain)	Start	WebHost	CreateWorkflowServiceHost	Informational		
+Microsoft-Windows-Application Server-Applications	3556	0	CreateWorkflowServiceHostStop(UnicodeString AppDomain)	Stop	WebHost	CreateWorkflowServiceHost	Informational		
+Microsoft-Windows-Application Server-Applications	3557	0	RuntimeTransaction(UnicodeString data1, UnicodeString data2, UnicodeString AppDomain)		WFServices	RuntimeTransaction	Informational		
+Microsoft-Windows-Application Server-Applications	3558	0	ServiceActivationStart(UnicodeString AppDomain)	Start	WebHost	ServiceActivation	Informational		
+Microsoft-Windows-Application Server-Applications	3559	0	ServiceActivationStop(UnicodeString AppDomain)	Stop	WebHost	ServiceActivation	Informational		
+Microsoft-Windows-Application Server-Applications	3560	0	Quotas3560(UInt64 availableMemoryBytes, UnicodeString AppDomain)		Quota	Quotas	Verbose		
+Microsoft-Windows-Application Server-Applications	3561	0	task_03561(UnicodeString data1, UnicodeString SerializedException, UnicodeString AppDomain)		WebHost	task_0	Error		
+Microsoft-Windows-Application Server-Applications	3800	0	RoutingServiceClientClosing(UnicodeString data1, UnicodeString AppDomain)	Closing	RoutingServices	RoutingServiceClient	Informational		
+Microsoft-Windows-Application Server-Applications	3801	0	RoutingServiceClientChannelFaulted(UnicodeString data1, UnicodeString AppDomain)	ChannelFaulted	RoutingServices	RoutingServiceClient	Warning		
+Microsoft-Windows-Application Server-Applications	3802	0	RoutingServiceMessageCompletingOneWay(UnicodeString SerializedException, UnicodeString AppDomain)	CompletingOneWay	RoutingServices	RoutingServiceMessage	Informational		
+Microsoft-Windows-Application Server-Applications	3803	0	RoutingServiceMessageProcessingFailure(UnicodeString data1, UnicodeString SerializedException, UnicodeString AppDomain)	ProcessingFailure	RoutingServices	RoutingServiceMessage	Error		
+Microsoft-Windows-Application Server-Applications	3804	0	RoutingServiceClientCreatingForEndpoint(UnicodeString data1, UnicodeString AppDomain)	CreatingForEndpoint	RoutingServices	RoutingServiceClient	Informational		
+Microsoft-Windows-Application Server-Applications	3805	0	RoutingServiceMessage(UnicodeString data1, UnicodeString data2, UnicodeString data3, UnicodeString AppDomain)		RoutingServices	RoutingServiceMessage	Verbose		
+Microsoft-Windows-Application Server-Applications	3807	0	RoutingServiceMessageCompletingTwoWay(UnicodeString AppDomain)	CompletingTwoWay	RoutingServices	RoutingServiceMessage	Informational		
+Microsoft-Windows-Application Server-Applications	3809	0	RoutingServiceMessageRoutedToEndpoints(UnicodeString data1, UnicodeString data2, UnicodeString AppDomain)	RoutedToEndpoints	RoutingServices	RoutingServiceMessage	Verbose		
+Microsoft-Windows-Application Server-Applications	3810	0	RoutingServiceConfigurationApplied(UnicodeString AppDomain)	ConfigurationApplied	RoutingServices	RoutingService	Informational		
+Microsoft-Windows-Application Server-Applications	3815	0	RoutingServiceMessageProcessingMessage(UnicodeString data1, UnicodeString data2, UnicodeString data3, UnicodeString data4, UnicodeString AppDomain)	ProcessingMessage	RoutingServices	RoutingServiceMessage	Informational		
+Microsoft-Windows-Application Server-Applications	3816	0	RoutingServiceMessageTransmittingMessage(UnicodeString data1, UnicodeString data2, UnicodeString data3, UnicodeString AppDomain)	TransmittingMessage	RoutingServices	RoutingServiceMessage	Informational		
+Microsoft-Windows-Application Server-Applications	3817	0	RoutingServiceTransactionCommittingTransaction(UnicodeString data1, UnicodeString AppDomain)	CommittingTransaction	RoutingServices	RoutingServiceTransaction	Informational		
+Microsoft-Windows-Application Server-Applications	3818	0	RoutingServiceDuplexCallbackException(UnicodeString data1, UnicodeString SerializedException, UnicodeString AppDomain)	DuplexCallbackException	RoutingServices	RoutingService	Error		
+Microsoft-Windows-Application Server-Applications	3819	0	RoutingServiceMessageMovedToBackup(UnicodeString data1, UnicodeString data2, UnicodeString data3, UnicodeString AppDomain)	MovedToBackup	RoutingServices	RoutingServiceMessage	Informational		
+Microsoft-Windows-Application Server-Applications	3820	0	RoutingServiceTransactionCreating(UnicodeString data1, UnicodeString AppDomain)	Creating	RoutingServices	RoutingServiceTransaction	Informational		
+Microsoft-Windows-Application Server-Applications	3821	0	RoutingServiceCloseFailed(UnicodeString data1, UnicodeString SerializedException, UnicodeString AppDomain)	CloseFailed	RoutingServices	RoutingService	Warning		
+Microsoft-Windows-Application Server-Applications	3822	0	RoutingServiceMessageSendingResponse(UnicodeString data1, UnicodeString AppDomain)	SendingResponse	RoutingServices	RoutingServiceMessage	Informational		
+Microsoft-Windows-Application Server-Applications	3823	0	RoutingServiceMessageSendingFaultResponse(UnicodeString data1, UnicodeString AppDomain)	SendingFaultResponse	RoutingServices	RoutingServiceMessage	Warning		
+Microsoft-Windows-Application Server-Applications	3824	0	RoutingServiceReceiveContextCompleting(UnicodeString data1, UnicodeString AppDomain)	Completing	RoutingServices	RoutingServiceReceiveContext	Verbose		
+Microsoft-Windows-Application Server-Applications	3825	0	RoutingServiceReceiveContextAbandoning(UnicodeString data1, UnicodeString AppDomain)	Abandoning	RoutingServices	RoutingServiceReceiveContext	Warning		
+Microsoft-Windows-Application Server-Applications	3826	0	RoutingServiceTransactionUsingExisting(UnicodeString data1, UnicodeString AppDomain)	UsingExisting	RoutingServices	RoutingServiceTransaction	Verbose		
+Microsoft-Windows-Application Server-Applications	3827	0	RoutingServiceTransmitFailed(UnicodeString data1, UnicodeString SerializedException, UnicodeString AppDomain)	TransmitFailed	RoutingServices	RoutingService	Warning		
+Microsoft-Windows-Application Server-Applications	3828	0	RoutingServiceFilterTableMatchStart(UnicodeString AppDomain)	Start	RoutingServices	RoutingServiceFilterTableMatch	Informational		
+Microsoft-Windows-Application Server-Applications	3829	0	RoutingServiceFilterTableMatchStop(UnicodeString AppDomain)	Stop	RoutingServices	RoutingServiceFilterTableMatch	Informational		
+Microsoft-Windows-Application Server-Applications	3830	0	RoutingServiceAbortingChannel(UnicodeString data1, UnicodeString AppDomain)	AbortingChannel	RoutingServices	RoutingService	Verbose		
+Microsoft-Windows-Application Server-Applications	3831	0	RoutingServiceHandledException(UnicodeString SerializedException, UnicodeString AppDomain)	HandledException	RoutingServices	RoutingService	Verbose		
+Microsoft-Windows-Application Server-Applications	3832	0	RoutingServiceMessageTransmitSucceeded(UnicodeString data1, UnicodeString data2, UnicodeString data3, UnicodeString AppDomain)	TransmitSucceeded	RoutingServices	RoutingServiceMessage	Informational		
+Microsoft-Windows-Application Server-Applications	4001	0	ActivationDispatchSessionReceive(UnicodeString via, UnicodeString AppDomain)	Receive	ActivationServices	ActivationDispatchSession	Verbose		
+Microsoft-Windows-Application Server-Applications	4002	0	WASActivation(UnicodeString SerializedException, UnicodeString AppDomain)		ActivationServices	WASActivation	Critical		
+Microsoft-Windows-Application Server-Applications	4003	0	ActivationServiceStart(UnicodeString Endpoint, UnicodeString AppDomain)		ActivationServices	ActivationServiceStart	Error		
+Microsoft-Windows-Application Server-Applications	4008	0	ActivationDispatchSessionStart(UnicodeString AppDomain)	Start	ActivationServices	ActivationDispatchSession	Verbose		
+Microsoft-Windows-Application Server-Applications	4010	0	ActivationDispatchSession(UnicodeString Uri, Int32 count, UnicodeString AppDomain)		ActivationServices	ActivationDispatchSession	Warning		
+Microsoft-Windows-Application Server-Applications	4011	0	MessageQueueRegisterStart(UnicodeString AppDomain)	Start	ActivationServices	MessageQueueRegister	Verbose		
+Microsoft-Windows-Application Server-Applications	4012	0	MessageQueueRegister(UnicodeString Status, UnicodeString Uri, UnicodeString AppDomain)		ActivationServices	MessageQueueRegister	Error		
+Microsoft-Windows-Application Server-Applications	4013	0	MessageQueueRegisterStop(UnicodeString Uri, UnicodeString AppDomain)	Stop	ActivationServices	MessageQueueRegister	Verbose		
+Microsoft-Windows-Application Server-Applications	4014	0	MessageQueueRegister4014(UnicodeString Uri, UnicodeString Status, UnicodeString AppDomain)		ActivationServices	MessageQueueRegister	Error		
+Microsoft-Windows-Application Server-Applications	4015	0	MessageQueueRegister4015(UnicodeString Uri, UnicodeString AppDomain)		ActivationServices	MessageQueueRegister	Informational		
+Microsoft-Windows-Application Server-Applications	4016	0	ActivationDispatchSession4016(UnicodeString AppDomain)		ActivationServices	ActivationDispatchSession	Error		
+Microsoft-Windows-Application Server-Applications	4019	0	ActivationDispatchSessionStop(UnicodeString AppDomain)	Stop	ActivationServices	ActivationDispatchSession	Verbose		
+Microsoft-Windows-Application Server-Applications	4020	0	ActivationTcpListenerListeningStart(UnicodeString Uri, UnicodeString AppDomain)	Start	ActivationServices	ActivationTcpListenerListening	Verbose		
+Microsoft-Windows-Application Server-Applications	4021	0	ActivationTcpListenerListeningStop(UnicodeString AppDomain)	Stop	ActivationServices	ActivationTcpListenerListening	Verbose		
+Microsoft-Windows-Application Server-Applications	4022	0	WASActivation4022(UnicodeString hresult, UnicodeString AppDomain)		ActivationServices	WASActivation	Error		
+Microsoft-Windows-Application Server-Applications	4023	0	WASActivationStop(UnicodeString AppDomain)	Stop	ActivationServices	WASActivation	Informational		
+Microsoft-Windows-Application Server-Applications	4024	0	WASActivationStop4024(UnicodeString hresult, UnicodeString AppDomain)	Stop	ActivationServices	WASActivation	Error		
+Microsoft-Windows-Application Server-Applications	4025	0	WASActivation4025(UnicodeString hresult, UnicodeString AppDomain)		ActivationServices	WASActivation	Error		
+Microsoft-Windows-Application Server-Applications	4026	0	WASActivationConnected(UnicodeString AppDomain)	Connected	ActivationServices	WASActivation	Verbose		
+Microsoft-Windows-Application Server-Applications	4027	0	WASActivationDisconnect(UnicodeString AppDomain)	Disconnect	ActivationServices	WASActivation	Verbose		
+Microsoft-Windows-Application Server-Applications	4028	0	ActivationPipeListenerListeningStart(UnicodeString Uri, UnicodeString AppDomain)	Start	ActivationServices	ActivationPipeListenerListening	Verbose		
+Microsoft-Windows-Application Server-Applications	4029	0	ActivationPipeListenerListeningStop(UnicodeString AppDomain)	Stop	ActivationServices	ActivationPipeListenerListening	Verbose		
+Microsoft-Windows-Application Server-Applications	4030	0	ActivationDispatchSessionStop4030(UnicodeString AppDomain)	Stop	ActivationServices	ActivationDispatchSession	Informational		
+Microsoft-Windows-Application Server-Applications	4031	0	ActivationDispatchSession4031(UnicodeString AppDomain)		ActivationServices	ActivationDispatchSession	Error		
+Microsoft-Windows-Application Server-Applications	4032	0	WASActivation4032(UnicodeString AppDomain)		ActivationServices	WASActivation	Critical		
+Microsoft-Windows-Application Server-Applications	4033	0	ActivationRoutingTableLookupStart(UnicodeString AppDomain)	Start	ActivationServices	ActivationRoutingTableLookup	Verbose		
+Microsoft-Windows-Application Server-Applications	4034	0	ActivationRoutingTableLookupStop(UnicodeString AppDomain)	Stop	ActivationServices	ActivationRoutingTableLookup	Verbose		
+Microsoft-Windows-Application Server-Applications	4035	0	Quotas4035(Int32 curr, Int32 max, UnicodeString AppDomain)		Quota	Quotas	Verbose		
+Microsoft-Windows-Application Server-Applications	4201	0	SqlCommandExecuteStop(UnicodeString data1, UnicodeString AppDomain)	Stop	WFInstanceStore	SqlCommandExecute	Verbose		
+Microsoft-Windows-Application Server-Applications	4202	0	SqlCommandExecuteStart(UnicodeString data1, UnicodeString AppDomain)	Start	WFInstanceStore	SqlCommandExecute	Verbose		
+Microsoft-Windows-Application Server-Applications	4203	0	LockWorkflowInstance(UnicodeString AppDomain)		WFInstanceStore	LockWorkflowInstance	Error		
+Microsoft-Windows-Application Server-Applications	4205	0	SqlCommandExecute(UnicodeString data1, UnicodeString SerializedException, UnicodeString AppDomain)		WFInstanceStore	SqlCommandExecute	Error		
+Microsoft-Windows-Application Server-Applications	4206	0	LockWorkflowInstance4206(UnicodeString data1, UnicodeString AppDomain)		WFInstanceStore	LockWorkflowInstance	Error		
+Microsoft-Windows-Application Server-Applications	4207	0	SqlCommandExecute4207(UnicodeString AppDomain)		Quota WFInstanceStore	SqlCommandExecute	Informational		
+Microsoft-Windows-Application Server-Applications	4208	0	SqlCommandExecute4208(UnicodeString data1, UnicodeString AppDomain)		WFInstanceStore	SqlCommandExecute	Informational		
+Microsoft-Windows-Application Server-Applications	4209	0	SqlCommandExecute4209(UnicodeString data1, UnicodeString AppDomain)		WFInstanceStore	SqlCommandExecute	Error		
+Microsoft-Windows-Application Server-Applications	4210	0	SqlCommandExecute4210(UnicodeString data1, UnicodeString data2, UnicodeString AppDomain)		WFInstanceStore	SqlCommandExecute	Warning		
+Microsoft-Windows-Application Server-Applications	4211	0	LockWorkflowInstance4211(UnicodeString data1, UnicodeString AppDomain)		WFInstanceStore	LockWorkflowInstance	Warning		
+Microsoft-Windows-Application Server-Applications	4212	0	SqlCommandExecute4212(UnicodeString data1, UnicodeString AppDomain)		WFInstanceStore	SqlCommandExecute	Warning		
+Microsoft-Windows-Application Server-Applications	4213	0	LockWorkflowInstance4213(UnicodeString SerializedException, UnicodeString AppDomain)		WFInstanceStore	LockWorkflowInstance	Error		
+Microsoft-Windows-Application Server-Applications	4214	0	LockWorkflowInstance4214(UnicodeString SerializedException, UnicodeString AppDomain)		WFInstanceStore	LockWorkflowInstance	Error		
+Microsoft-Windows-Application Server-Applications	4600	0	task_04600(UnicodeString AppDomain)		WCFMessageLogging	task_0	Warning		
+Microsoft-Windows-Application Server-Applications	4801	0	DiscoveryClientFailedToClose(UnicodeString SerializedException, UnicodeString AppDomain)	FailedToClose	Discovery	DiscoveryClient	Warning		
+Microsoft-Windows-Application Server-Applications	4802	0	DiscoveryClientExceptionSuppressed(UnicodeString SerializedException, UnicodeString AppDomain)	ExceptionSuppressed	Discovery	DiscoveryClient	Informational		
+Microsoft-Windows-Application Server-Applications	4803	0	DiscoveryClientReceivedMulticastSuppression(UnicodeString AppDomain)	ReceivedMulticastSuppression	Discovery	DiscoveryClient	Informational		
+Microsoft-Windows-Application Server-Applications	4804	0	DiscoveryMessageReceivedAfterOperationCompleted(UnicodeString discoveryMessageName, UnicodeString messageId, UnicodeString discoveryOperationName, UnicodeString AppDomain)	ReceivedAfterOperationCompleted	Discovery	DiscoveryMessage	Informational		
+Microsoft-Windows-Application Server-Applications	4805	0	DiscoveryMessageInvalidContent(UnicodeString messageType, UnicodeString messageId, UnicodeString AppDomain)	InvalidContent	Discovery	DiscoveryMessage	Warning		
+Microsoft-Windows-Application Server-Applications	4806	0	DiscoveryMessageInvalidRelatesToOrOperationCompleted(UnicodeString discoveryMessageName, UnicodeString messageId, UnicodeString relatesTo, UnicodeString discoveryOperationName, UnicodeString AppDomain)	InvalidRelatesToOrOperationCompleted	Discovery	DiscoveryMessage	Warning		
+Microsoft-Windows-Application Server-Applications	4807	0	DiscoveryMessageInvalidReplyTo(UnicodeString messageId, UnicodeString AppDomain)	InvalidReplyTo	Discovery	DiscoveryMessage	Warning		
+Microsoft-Windows-Application Server-Applications	4808	0	DiscoveryMessageNoContent(UnicodeString messageType, UnicodeString AppDomain)	NoContent	Discovery	DiscoveryMessage	Warning		
+Microsoft-Windows-Application Server-Applications	4809	0	DiscoveryMessageNullMessageId(UnicodeString messageType, UnicodeString AppDomain)	NullMessageId	Discovery	DiscoveryMessage	Warning		
+Microsoft-Windows-Application Server-Applications	4810	0	DiscoveryMessageNullMessageSequence(UnicodeString discoveryMessageName, UnicodeString messageId, UnicodeString AppDomain)	NullMessageSequence	Discovery	DiscoveryMessage	Warning		
+Microsoft-Windows-Application Server-Applications	4811	0	DiscoveryMessageNullRelatesTo(UnicodeString discoveryMessageName, UnicodeString messageId, UnicodeString AppDomain)	NullRelatesTo	Discovery	DiscoveryMessage	Warning		
+Microsoft-Windows-Application Server-Applications	4812	0	DiscoveryMessageNullReplyTo(UnicodeString messageId, UnicodeString AppDomain)	NullReplyTo	Discovery	DiscoveryMessage	Warning		
+Microsoft-Windows-Application Server-Applications	4813	0	DiscoveryMessageDuplicate(UnicodeString messageType, UnicodeString messageId, UnicodeString AppDomain)	Duplicate	Discovery	DiscoveryMessage	Warning		
+Microsoft-Windows-Application Server-Applications	4814	0	EndpointDiscoverabilityDisabled(UnicodeString endpointAddress, UnicodeString listenUri, UnicodeString AppDomain)	Disabled	Discovery	EndpointDiscoverability	Informational		
+Microsoft-Windows-Application Server-Applications	4815	0	EndpointDiscoverabilityEnabled(UnicodeString endpointAddress, UnicodeString listenUri, UnicodeString AppDomain)	Enabled	Discovery	EndpointDiscoverability	Informational		
+Microsoft-Windows-Application Server-Applications	4816	0	DiscoveryClientChannelFindInitiated(UnicodeString AppDomain)	FindInitiated	Discovery	DiscoveryClientChannel	Verbose		
+Microsoft-Windows-Application Server-Applications	4817	0	DiscoveryClientChannelCreationFailed(UnicodeString endpointAddress, UnicodeString via, UnicodeString SerializedException, UnicodeString AppDomain)	CreationFailed	Discovery	DiscoveryClientChannel	Warning		
+Microsoft-Windows-Application Server-Applications	4818	0	DiscoveryClientChannelOpenFailed(UnicodeString endpointAddress, UnicodeString via, UnicodeString SerializedException, UnicodeString AppDomain)	OpenFailed	Discovery	DiscoveryClientChannel	Warning		
+Microsoft-Windows-Application Server-Applications	4819	0	DiscoveryClientChannelOpenSucceeded(UnicodeString endpointAddress, UnicodeString via, UnicodeString AppDomain)	OpenSucceeded	Discovery	DiscoveryClientChannel	Informational		
+Microsoft-Windows-Application Server-Applications	4820	0	DiscoverySynchronizationContextReset(UnicodeString synchronizationContextType, UnicodeString AppDomain)	Reset	Discovery	DiscoverySynchronizationContext	Informational		
+Microsoft-Windows-Application Server-Applications	4821	0	DiscoverySynchronizationContextSetToNull(UnicodeString AppDomain)	SetToNull	Discovery	DiscoverySynchronizationContext	Informational		
+Microsoft-Windows-Application Server-Applications	5001	0	SurrogateSerializeStart(UnicodeString SurrogateType, UnicodeString AppDomain)	Start	Serialization	SurrogateSerialize	Verbose		
+Microsoft-Windows-Application Server-Applications	5002	0	SurrogateSerializeStop(UnicodeString AppDomain)	Stop	Serialization	SurrogateSerialize	Verbose		
+Microsoft-Windows-Application Server-Applications	5003	0	SurrogateDeserializeStart(UnicodeString SurrogateType, UnicodeString AppDomain)	Start	Serialization	SurrogateDeserialize	Verbose		
+Microsoft-Windows-Application Server-Applications	5004	0	SurrogateDeserializeStop(UnicodeString AppDomain)	Stop	Serialization	SurrogateDeserialize	Verbose		
+Microsoft-Windows-Application Server-Applications	5005	0	ImportKnownTypeStart(UnicodeString AppDomain)	Start	Serialization	ImportKnownType	Verbose		
+Microsoft-Windows-Application Server-Applications	5006	0	ImportKnownTypeStop(UnicodeString AppDomain)	Stop	Serialization	ImportKnownType	Verbose		
+Microsoft-Windows-Application Server-Applications	5007	0	DataContractResolverStart(UnicodeString TypeName, UnicodeString AppDomain)	Start	Serialization	DataContractResolver	Verbose		
+Microsoft-Windows-Application Server-Applications	5008	0	GenerateSerializerStart(UnicodeString Kind, UnicodeString TypeName, UnicodeString AppDomain)	Start	Serialization	GenerateSerializer	Verbose		
+Microsoft-Windows-Application Server-Applications	5009	0	GenerateSerializerStop(UnicodeString AppDomain)	Stop	Serialization	GenerateSerializer	Verbose		
+Microsoft-Windows-Application Server-Applications	5010	0	GenerateDeserializerStart(UnicodeString Kind, UnicodeString TypeName, UnicodeString AppDomain)	Start	Serialization	GenerateDeserializer	Verbose		
+Microsoft-Windows-Application Server-Applications	5011	0	GenerateDeserializerStop(UnicodeString AppDomain)	Stop	Serialization	GenerateDeserializer	Verbose		
+Microsoft-Windows-Application Server-Applications	5012	0	GenerateDeserializerStart5012(UnicodeString Kind, UnicodeString TypeName, UnicodeString AppDomain)	Start	Serialization	GenerateDeserializer	Verbose		
+Microsoft-Windows-Application Server-Applications	5013	0	GenerateDeserializerStop5013(UnicodeString AppDomain)	Stop	Serialization	GenerateDeserializer	Verbose		
+Microsoft-Windows-Application Server-Applications	5014	0	GenerateSerializerStart5014(UnicodeString Kind, UnicodeString TypeName, UnicodeString AppDomain)	Start	Serialization	GenerateSerializer	Verbose		
+Microsoft-Windows-Application Server-Applications	5015	0	GenerateSerializerStop5015(UnicodeString AppDomain)	Stop	Serialization	GenerateSerializer	Verbose		
+Microsoft-Windows-Application Server-Applications	5016	0	GenerateXmlSerializableStart(UnicodeString DCType, UnicodeString AppDomain)	Start	Serialization	GenerateXmlSerializable	Verbose		
+Microsoft-Windows-Application Server-Applications	5017	0	GenerateXmlSerializableStop(UnicodeString AppDomain)	Stop	Serialization	GenerateXmlSerializable	Verbose		
+Microsoft-Windows-Application Server-Applications	5203	0	MessageDecodingStart5203(UnicodeString AppDomain)	Start	Channel	MessageDecoding	Verbose		
+Microsoft-Windows-Application Server-Applications	5204	0	MessageEncodingStart5204(UnicodeString AppDomain)	Start	Channel	MessageEncoding	Verbose		
+Microsoft-Windows-Application Server-Applications	5402	0	TokenValidation(UnicodeString tokenType, UnicodeString tokenID, UnicodeString HostReference, UnicodeString AppDomain)		Security	TokenValidation	Verbose		
+Microsoft-Windows-Application Server-Applications	5403	0	TokenValidation5403(UnicodeString tokenType, UnicodeString tokenID, UnicodeString HostReference, UnicodeString AppDomain)		Security	TokenValidation	Verbose		
+Microsoft-Windows-Application Server-Applications	5404	0	TokenValidation5404(UnicodeString tokenType, UnicodeString tokenID, UnicodeString errorMessage, UnicodeString HostReference, UnicodeString AppDomain)		Security	TokenValidation	Error		
+Microsoft-Windows-Application Server-Applications	5405	0	GetIssuerName(UnicodeString issuerName, UnicodeString tokenID, UnicodeString HostReference, UnicodeString AppDomain)		Security	GetIssuerName	Verbose		
+Microsoft-Windows-Application Server-Applications	5406	0	GetIssuerName5406(UnicodeString tokenID, UnicodeString HostReference, UnicodeString AppDomain)		Security	GetIssuerName	Error		
+Microsoft-Windows-Application Server-Applications	5600	0	FederationMessageProcessing(UnicodeString HostReference, UnicodeString AppDomain)		Security	FederationMessageProcessing	Verbose		
+Microsoft-Windows-Application Server-Applications	5601	0	FederationMessageProcessing5601(UnicodeString HostReference, UnicodeString AppDomain)		Security	FederationMessageProcessing	Verbose		
+Microsoft-Windows-Application Server-Applications	5602	0	FederationMessageCreation(UnicodeString HostReference, UnicodeString AppDomain)		Security	FederationMessageCreation	Verbose		
+Microsoft-Windows-Application Server-Applications	5603	0	FederationMessageCreation5603(UnicodeString HostReference, UnicodeString AppDomain)		Security	FederationMessageCreation	Verbose		
+Microsoft-Windows-Application Server-Applications	5604	0	SessionCookieReading(UnicodeString HostReference, UnicodeString AppDomain)		Security	SessionCookieReading	Verbose		
+Microsoft-Windows-Application Server-Applications	5605	0	SessionCookieReading5605(UnicodeString HostReference, UnicodeString AppDomain)		Security	SessionCookieReading	Verbose		
+Microsoft-Windows-Application Server-Applications	5606	0	PrincipalSetting(UnicodeString HostReference, UnicodeString AppDomain)		Security	PrincipalSetting	Verbose		
+Microsoft-Windows-Application Server-Applications	5607	0	PrincipalSetting5607(UnicodeString HostReference, UnicodeString AppDomain)		Security	PrincipalSetting	Verbose		
+Microsoft-Windows-Application Server-Applications	39456	0	TrackingRecordDropped(Int64 RecordNumber, GUID ProviderId, UnicodeString AppDomain)	Dropped	WFTracking	TrackingRecord	Warning		
+Microsoft-Windows-Application Server-Applications	39457	0	TrackingRecordRaised(UnicodeString data1, UnicodeString data2, UnicodeString AppDomain)	Raised	WFRuntime	TrackingRecord	Informational		
+Microsoft-Windows-Application Server-Applications	39458	0	TrackingRecordTruncated(Int64 RecordNumber, GUID ProviderId, UnicodeString AppDomain)	Truncated	WFTracking	TrackingRecord	Warning		
+Microsoft-Windows-Application Server-Applications	39459	0	TrackingProfile(UnicodeString Data, UnicodeString Activity, UnicodeString AppDomain)		WFRuntime	TrackingProfile	Verbose		
+Microsoft-Windows-Application Server-Applications	39460	0	TrackingProfile39460(UnicodeString name, UnicodeString AppDomain)		WFTracking	TrackingProfile	Warning		
+Microsoft-Windows-Application Server-Applications	57393	0	task_057393(UnicodeString appdomainName, UnicodeString processName, UnicodeString processId, UnicodeString AppDomain)		Infrastructure	task_0	Informational		
+Microsoft-Windows-Application Server-Applications	57394	0	task_057394(UnicodeString data1, UnicodeString SerializedException, UnicodeString AppDomain)		Infrastructure	task_0	Informational		
+Microsoft-Windows-Application Server-Applications	57395	0	task_057395(UnicodeString data1, UnicodeString AppDomain)		Infrastructure	task_0	Error		
+Microsoft-Windows-Application Server-Applications	57396	0	task_057396(UnicodeString data1, UnicodeString data2, UnicodeString SerializedException, UnicodeString AppDomain)		Infrastructure	task_0	Warning		
+Microsoft-Windows-Application Server-Applications	57397	0	task_057397(UnicodeString data1, UnicodeString SerializedException, UnicodeString AppDomain)		Infrastructure	task_0	Critical		
+Microsoft-Windows-Application Server-Applications	57398	0	Throttles(Int32 limit, UnicodeString AppDomain)		WFServices	Throttles	Warning		
+Microsoft-Windows-Application Server-Applications	57399	0	task_057399(UnicodeString ExtendedData, UnicodeString AppDomain)		Infrastructure	task_0	Critical		
+Microsoft-Windows-Application Server-Applications	57400	0	task_057400(UnicodeString ExtendedData, UnicodeString AppDomain)		Infrastructure	task_0	Error		
+Microsoft-Windows-Application Server-Applications	57401	0	task_057401(UnicodeString ExtendedData, UnicodeString AppDomain)		Infrastructure	task_0	Informational		
+Microsoft-Windows-Application Server-Applications	57402	0	task_057402(UnicodeString ExtendedData, UnicodeString AppDomain)		Infrastructure	task_0	Verbose		
+Microsoft-Windows-Application Server-Applications	57403	0	task_057403(UnicodeString ExtendedData, UnicodeString AppDomain)		Infrastructure	task_0	Warning		
+Microsoft-Windows-Application Server-Applications	57404	0	task_057404(UnicodeString data1, UnicodeString SerializedException, UnicodeString AppDomain)		Infrastructure	task_0	Warning		
+Microsoft-Windows-Application Server-Applications	57405	0	task_057405(UnicodeString data1, UnicodeString SerializedException, UnicodeString AppDomain)		Infrastructure	task_0	Error		
+Microsoft-Windows-Application Server-Applications	57406	0	task_057406(UnicodeString data1, UnicodeString SerializedException, UnicodeString AppDomain)		Infrastructure	task_0	Verbose		
+Microsoft-Windows-Application Server-Applications	57407	0	task_057407(UnicodeString data1, UnicodeString data2, UnicodeString SerializedException, UnicodeString AppDomain)		Infrastructure	task_0	Verbose		
+Microsoft-Windows-Application Server-Applications	57408	0	task_057408(UnicodeString data1, UnicodeString SerializedException, UnicodeString AppDomain)		Infrastructure	task_0	Critical		
+Microsoft-Windows-Application Server-Applications	57409	0	task_057409(UnicodeString data1, UnicodeString data2, UnicodeString SerializedException, UnicodeString AppDomain)		Infrastructure	task_0	Verbose		
+Microsoft-Windows-Application Server-Applications	57410	0	task_057410(UnicodeString data1, UnicodeString data2, UnicodeString SerializedException, UnicodeString AppDomain)		Infrastructure	task_0	Warning		
+Microsoft-Windows-Application Server-Applications	62326	0	CreateWorkflowServiceHost(UnicodeString data1, UnicodeString data2, UnicodeString data3, UnicodeString AppDomain)		WebHost	CreateWorkflowServiceHost	Informational		

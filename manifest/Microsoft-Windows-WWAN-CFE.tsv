@@ -1,0 +1,19 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-WWAN-CFE	1	0	Subscription_Page()		Wwan_Performance	Subscription_Page	Informational		
+Microsoft-Windows-WWAN-CFE	2	0	Roaming_Settings_Page()		Wwan_Performance	Roaming_Settings_Page	Informational		
+Microsoft-Windows-WWAN-CFE	3	0	Connecting_Page()		Wwan_Performance	Connecting_Page	Informational		
+Microsoft-Windows-WWAN-CFE	4	0	Launch_Browser()		Wwan_Performance	Launch_Browser	Informational		
+Microsoft-Windows-WWAN-CFE	5	0	Launch_MBAE()		Wwan_Performance	Launch_MBAE	Informational		
+Microsoft-Windows-WWAN-CFE	6	0	L2_Connect_DurationStart()	Start		L2_Connect_Duration	Informational		
+Microsoft-Windows-WWAN-CFE	7	0	L2_Connect_DurationStop()	Stop		L2_Connect_Duration	Informational		
+Microsoft-Windows-WWAN-CFE	8	0	CreateProfile_UserInput_DurationStart()	Start	Wwan_Performance	CreateProfile_UserInput_Duration	Informational		
+Microsoft-Windows-WWAN-CFE	9	0	CreateProfile_UserInput_DurationStop()	Stop	Wwan_Performance	CreateProfile_UserInput_Duration	Informational		
+Microsoft-Windows-WWAN-CFE	10	0	Task_SetHomeProviderStart()	Start		Task_SetHomeProvider	Informational		
+Microsoft-Windows-WWAN-CFE	11	0	Task_SetHomeProviderStop()	Stop		Task_SetHomeProvider	Informational		
+Microsoft-Windows-WWAN-CFE	12	0	Task_SetHomeProviderStop12(UnicodeString Manufacture, UnicodeString Model, UnicodeString FirmwareVersion, HexInt32 ErrorCode)	Stop		Task_SetHomeProvider	Error		
+Microsoft-Windows-WWAN-CFE	13	0	Task_SetHomeProviderStop13()	Stop		Task_SetHomeProvider	Error		
+Microsoft-Windows-WWAN-CFE	14	0	Task_WwanApnDatabaseParsingDurationStart()	Start		Task_WwanApnDatabaseParsingDuration	Informational		
+Microsoft-Windows-WWAN-CFE	15	0	Task_WwanApnDatabaseParsingDurationStop(UnicodeString ProviderName)	Stop		Task_WwanApnDatabaseParsingDuration	Informational		
+Microsoft-Windows-WWAN-CFE	16	0	L2_Connect_DurationStop16(UnicodeString Manufacture, UnicodeString Model, UnicodeString FirmwareVersion, HexInt32 ErrorCode)	Stop		L2_Connect_Duration	Informational		
+Microsoft-Windows-WWAN-CFE	17	0	L2_Connect_DurationStop17()	Stop		L2_Connect_Duration	Informational		
+Microsoft-Windows-WWAN-CFE	18	0	WWAN_CFE_FAIL()		Wwan_Performance	WWAN_CFE_FAIL	Informational		

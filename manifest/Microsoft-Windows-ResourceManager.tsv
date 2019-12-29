@@ -1,0 +1,87 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-ResourceManager	100	0	RM_LegacyRE_SetApply(UInt32 FuncHr, UInt32 ProcessId, UInt32 Priority, UInt32 CpuReserve, Boolean HardCpuLimit, Boolean FreezeProcess, UInt64 MemoryLimit, Boolean NoCpuReservation)		Info	RM_LegacyRE_SetApply	Informational		
+Microsoft-Windows-ResourceManager	103	0	RM_LegacyRE_JobMessage(UInt32 Flags, UInt32 ProcessId, UInt64 ProcessCommit)		Info	RM_LegacyRE_JobMessage	Informational		
+Microsoft-Windows-ResourceManager	105	0	RM_LegacyRE_NtError(AnsiString FuncName, UInt32 Line, UInt32 FuncStatus)		Error	RM_LegacyRE_NtError	Error		
+Microsoft-Windows-ResourceManager	106	0	RM_LegacyRE_SwapJob(UInt32 Status, UInt32 ProcessId, Pointer JobHandle)		Info	RM_LegacyRE_SwapJob	Informational		
+Microsoft-Windows-ResourceManager	107	0	RM_LegacyRE_EmptyProcess(UInt32 ErrorCode, UInt32 ProcessId, UInt32 Flags)		Error	RM_LegacyRE_EmptyProcess	Error		
+Microsoft-Windows-ResourceManager	108	0	RM_LegacyEnforcerCompletionMessageReceived(Pointer ActivityHost, UInt32 CompletionCode, UInt32 ActivityHostFlags, Boolean EnforcementInfoValid)	CompletionMessageReceived		RM_LegacyEnforcer	Verbose		
+Microsoft-Windows-ResourceManager	400	0	RM_Physical_Memory_Low()		Trace	RM_Physical_Memory_Low	Informational		
+Microsoft-Windows-ResourceManager	401	0	RM_Physical_Memory_Healthy()		Trace	RM_Physical_Memory_Healthy	Informational		
+Microsoft-Windows-ResourceManager	402	0	RM_Commit_Memory_Low()		Trace	RM_Commit_Memory_Low	Critical		
+Microsoft-Windows-ResourceManager	403	0	RM_Commit_Memory_Healthy()		Trace	RM_Commit_Memory_Healthy	Critical		
+Microsoft-Windows-ResourceManager	404	0	RM_LowMemoryHandlerStart()	Start	Trace	RM_LowMemoryHandler	Informational		
+Microsoft-Windows-ResourceManager	405	0	RM_LowMemoryHandlerStop()	Stop	Trace	RM_LowMemoryHandler	Informational		
+Microsoft-Windows-ResourceManager	406	0	task_0(UInt32 IntVal)		Trace ProductionCircular	task_0	Informational		
+Microsoft-Windows-ResourceManager	407	0	task_0407()		Trace ProductionCircular	task_0	Informational		
+Microsoft-Windows-ResourceManager	408	0	task_0408(UInt32 IntVal1, UInt32 IntVal2, UInt32 IntVal3)		Trace ProductionCircular	task_0	Critical		
+Microsoft-Windows-ResourceManager	409	0	RM_Commit_Memory_Low_Reboot(UInt32 CommitUsage, UInt32 PeakCommitUsage, UInt32 CommitLimit, UInt32 SharedCommit, UInt32 NonPagedPool, UInt32 PagedPool)		Trace ProductionCritical	RM_Commit_Memory_Low_Reboot	Critical		
+Microsoft-Windows-ResourceManager	410	0	RM_Commit_NonPagedPool_Low()		Trace	RM_Commit_NonPagedPool_Low	Critical		
+Microsoft-Windows-ResourceManager	411	0	RM_Commit_NonPagedPool_Healthy()		Trace	RM_Commit_NonPagedPool_Healthy	Critical		
+Microsoft-Windows-ResourceManager	412	0	RM_ResourceSet_ApplyingToDeadPid(UInt32 IntVal)		Trace	RM_ResourceSet_ApplyingToDeadPid	Informational		
+Microsoft-Windows-ResourceManager	413	0	RM_ResourceSet_Apply(Pointer pResSet, UInt32 hr, UInt32 memLimit, UInt32 priorityClass, UInt32 pid, UInt32 type, Boolean terminal)		Trace ProductionCircular	RM_ResourceSet_Apply	Informational		
+Microsoft-Windows-ResourceManager	414	0	RM_ResourceSet_Unapply(Pointer pResSet, UInt32 hr, UInt32 pid, UInt32 type, Boolean terminal)		Trace	RM_ResourceSet_Unapply	Verbose		
+Microsoft-Windows-ResourceManager	415	0	RM_OnProcessTerminated(UInt32 IntVal)		Trace	RM_OnProcessTerminated	Informational		
+Microsoft-Windows-ResourceManager	416	0	RM_OnProcessCommitWarning(UInt32 pid, UInt32 hr, UInt32 cbCommit)		Trace	RM_OnProcessCommitWarning	Warning		
+Microsoft-Windows-ResourceManager	417	0	RM_TerminateProcessForOom(UInt32 pid, UInt32 cbFailed, Boolean fReboot)		Trace ProductionCircular	RM_TerminateProcessForOom	Error		
+Microsoft-Windows-ResourceManager	418	0	RM_ResourceSet_CreateInstance(Pointer pResSet, UInt32 hr, UInt32 type, Boolean fBool, Pointer pPreviousResSet)		Trace	RM_ResourceSet_CreateInstance	Verbose		
+Microsoft-Windows-ResourceManager	419	0	RM_ReleaseResources(Pointer pResSet, UInt32 hr, UInt32 type, Boolean fBool, Pointer pPreviousResSet)		Trace ProductionCircular	RM_ReleaseResources	Informational		
+Microsoft-Windows-ResourceManager	420	0	RM_LMH_NeedCommit(Boolean p4_Boolean)		Trace	RM_LMH_NeedCommit	Informational		
+Microsoft-Windows-ResourceManager	421	0	RM_LMH_NeedPhysical(Boolean p4_Boolean)		Trace	RM_LMH_NeedPhysical	Informational		
+Microsoft-Windows-ResourceManager	422	0	RM_LMH_NeedNonPagedPool(Boolean p4_Boolean)		Trace	RM_LMH_NeedNonPagedPool	Informational		
+Microsoft-Windows-ResourceManager	423	0	RM_LMH_NeedMemory(Boolean p1_Boolean, Boolean p2_Boolean, Boolean p3_Boolean, Boolean p4_Boolean)		Trace	RM_LMH_NeedMemory	Informational		
+Microsoft-Windows-ResourceManager	424	0	RM_LMH_CommitMemoryCriticallyLow()		Trace	RM_LMH_CommitMemoryCriticallyLow	Critical		
+Microsoft-Windows-ResourceManager	426	0	RM_ResourceSet_Acquire(Pointer pResSet, UInt32 hr, UInt32 type, Boolean fBool, Pointer pPreviousResSet)		Trace ProductionCircular	RM_ResourceSet_Acquire	Informational		
+Microsoft-Windows-ResourceManager	428	0	RM_AcquireResources(UInt32 cRequests, UInt32 priority, UInt32 cmsAcquireDelay, UInt32 pidRequesting, Boolean fForcePending, UInt32 pendtype, UInt32 hr)		Trace	RM_AcquireResources	Verbose		
+Microsoft-Windows-ResourceManager	435	0	RM_RegisterResources(UInt32 ResourceType, UInt32 p1_UINT32, UInt32 HRESULT)		Trace	RM_RegisterResources	Informational		
+Microsoft-Windows-ResourceManager	436	0	RM_AccessCheck(UInt32 ResourceType, UInt32 p1_UINT32, UInt32 HRESULT)		Trace ProductionCircular	RM_AccessCheck	Critical		
+Microsoft-Windows-ResourceManager	437	0	RM_AcquireResources_ServerThunk(Pointer pResourceHandle, UInt32 cRequests, UInt32 priority, UInt32 callerPid, UInt32 pidRequesting, Boolean grfFlags, UInt32 pendtype, Boolean fPending, UInt32 hr)		Trace ProductionCircular	RM_AcquireResources_ServerThunk	Critical		
+Microsoft-Windows-ResourceManager	438	0	RM_AvailabilityCheck(UInt32 cRequests, UInt32 priority, UInt32 pidRequesting, UInt32 hr)		Trace	RM_AvailabilityCheck	Informational		
+Microsoft-Windows-ResourceManager	439	0	RM_GetNotification(Pointer pResourceHandle, UInt32 hr)		Trace	RM_GetNotification	Informational		
+Microsoft-Windows-ResourceManager	440	0	RM_ReleaseResources_Manager(Pointer pResourceHandle, UInt32 hr)		Trace ProductionCircular	RM_ReleaseResources_Manager	Critical		
+Microsoft-Windows-ResourceManager	441	0	RM_QueueMessages(Pointer pResourceHandle, UInt32 ExternalNotificationType, UInt32 ResourceType, UInt32 ReleaseReason, UInt32 hr)		Trace	RM_QueueMessages	Informational		
+Microsoft-Windows-ResourceManager	442	0	RM_IsBlocked(UnicodeString p1_String, UInt32 p2_RSType, UInt32 p3_UInt32, Boolean p4_Boolean, UInt32 p5_UInt32)		Trace ProductionCircular	RM_IsBlocked	Informational		
+Microsoft-Windows-ResourceManager	443	0	RM_CanBlock(UnicodeString p1_String, UInt32 p2_RSType, UInt32 p3_UInt32, Boolean p4_Boolean, UInt32 p5_UInt32)		Trace	RM_CanBlock	Informational		
+Microsoft-Windows-ResourceManager	444	0	RM_CheckAndRevoke(UnicodeString p1_String, Boolean p2_Boolean, UInt32 p3_UInt32)		Trace	RM_CheckAndRevoke	Critical		
+Microsoft-Windows-ResourceManager	445	0	RM_CheckAndRevokeModern(UnicodeString p1_String)		Trace	RM_CheckAndRevokeModern	Critical		
+Microsoft-Windows-ResourceManager	446	0	RM_CheckAndRevokeModernByActivationType(UnicodeString p1_String, UInt32 p2_UInt32, UInt32 p3_UInt32)		Trace	RM_CheckAndRevokeModernByActivationType	Critical		
+Microsoft-Windows-ResourceManager	447	0	RM_OnApplicationTerminated(UnicodeString p1_String, UInt32 p2_UInt32)		Trace	RM_OnApplicationTerminated	Informational		
+Microsoft-Windows-ResourceManager	448	0	RM_ReclaimMemory(Pointer pResSet, UInt32 hr)		Trace ProductionCritical	RM_ReclaimMemory	Critical		
+Microsoft-Windows-ResourceManager	449	0	RM_ExternalRMWatchdog(Pointer pResourceHandle, UInt32 pidRequesting)		Trace ProductionCircular	RM_ExternalRMWatchdog	Critical		
+Microsoft-Windows-ResourceManager	450	0	RM_AcquireAdditionalResources(Pointer pResSet, UInt32 CPU, UInt32 RAM, UInt32 IO, UInt32 hr, Boolean Pending, Pointer TempRS)		Trace ProductionCircular	RM_AcquireAdditionalResources	Informational		
+Microsoft-Windows-ResourceManager	451	0	RM_CompleteAcquireAdditionalResources(Pointer p1_Pointer, Pointer p2_Pointer)		Trace	RM_CompleteAcquireAdditionalResources	Informational		
+Microsoft-Windows-ResourceManager	452	0	RM_RevokeResourcesModern(UnicodeString p1_String, UInt32 p2_UInt32)		Trace ProductionCircular	RM_RevokeResourcesModern	Critical		
+Microsoft-Windows-ResourceManager	453	0	RM_MemoryLimitNotification(UnicodeString PsmKey, SID UserSid, UInt32 SessionId, UInt32 HostJobType, UInt64 Commit, UInt64 SharedCommit, UInt64 NotificationLowLimit, UInt64 NotificationHighLimit, UInt32 CommitAdjustment, UInt64 CommitCap)		Trace	RM_MemoryLimitNotification	Verbose		
+Microsoft-Windows-ResourceManager	454	0	RM_ForceReleaseExternalResources(UInt32 p1_PID)		Trace ProductionCircular	RM_ForceReleaseExternalResources	Verbose		
+Microsoft-Windows-ResourceManager	455	0	RM_AcquireMemoryForFGSharing(Pointer pResSet, UInt32 Amount, UInt32 hr)		Trace	RM_AcquireMemoryForFGSharing	Verbose		
+Microsoft-Windows-ResourceManager	456	0	RM_ReleaseMemoryForFGSharing(Pointer pResSet, UInt32 Amount, UInt32 hr)		Trace	RM_ReleaseMemoryForFGSharing	Verbose		
+Microsoft-Windows-ResourceManager	457	0	RM_TerminateQuotaExhausted(UnicodeString p1_String, UInt32 p2_UInt32)		Trace	RM_TerminateQuotaExhausted	Informational		
+Microsoft-Windows-ResourceManager	458	0	RM_FailedToTransitionForFGSharing(Pointer pResSet, UInt32 hr)		Trace	RM_FailedToTransitionForFGSharing	Error		
+Microsoft-Windows-ResourceManager	459	0	RM_ModernEnforcerFailedError(UnicodeString p1_String, UInt32 p2_UInt32, UInt32 p3_UInt32)	Error	Trace ProductionCircular	RM_ModernEnforcerFailed	Critical		
+Microsoft-Windows-ResourceManager	461	0	RM_OnAcquired(Pointer ResourceSet, Boolean IsLegacy, Pointer CallbackId, UInt32 HRESULT)		Trace ProductionCircular	RM_OnAcquired	Informational		
+Microsoft-Windows-ResourceManager	462	0	RM_MemoryLimitNotificationExit(UnicodeString PsmKey, SID UserSid, UInt32 SessionId, UInt32 HostJobType, UInt32 hr, UInt64 CommitCap, UInt64 NotificationLowLimit, UInt64 NotificationHighLimit)		Trace	RM_MemoryLimitNotificationExit	Verbose		
+Microsoft-Windows-ResourceManager	463	0	RM_TerminateModernAppForOOM(UnicodeString PsmKey, SID UserSid, UInt32 SessionId, UInt32 HostJobType, UInt32 hr, UInt32 FailedAllocationSize, Boolean RebootDecision)		Trace ProductionCritical	RM_TerminateModernAppForOOM	Critical		
+Microsoft-Windows-ResourceManager	464	0	RM_RevokeResourcesLegacy(Pointer pResSet, UInt32 pid)		Trace ProductionCircular	RM_RevokeResourcesLegacy	Critical		
+Microsoft-Windows-ResourceManager	465	0	RM_ResourceSet_ReleaseTerminal(Pointer p1_Pointer, UInt32 p2_PID, UnicodeString p3_String, UInt32 p4_ActType, UInt32 p5_HRESULT)		Trace ProductionCircular	RM_ResourceSet_ReleaseTerminal	Critical		
+Microsoft-Windows-ResourceManager	466	0	RM_ResourceSet_UnapplyModern(Pointer pResSet, UInt32 hr)		Trace ProductionCircular	RM_ResourceSet_UnapplyModern	Critical		
+Microsoft-Windows-ResourceManager	467	0	RM_ObjectTableObjectCreated(Pointer Address, UInt32 ObjectType)	ObjectCreated		RM_ObjectTable	Verbose		
+Microsoft-Windows-ResourceManager	468	0	RM_ObjectTableObjectReferenced(Pointer Address, UInt32 ObjectType, UInt32 NewRefCount, UInt32 OldRefCount)	ObjectReferenced		RM_ObjectTable	Verbose		
+Microsoft-Windows-ResourceManager	469	0	RM_ObjectTableObjectDereferenced(Pointer Address, UInt32 ObjectType, UInt32 NewRefCount, UInt32 OldRefCount)	ObjectDereferenced		RM_ObjectTable	Verbose		
+Microsoft-Windows-ResourceManager	470	1	RM_ResourceSet_Apply470_V1(Pointer pResSet, UInt32 hr, UInt64 memLimit, UInt32 priorityClass, UInt32 pid, UInt32 type, Boolean terminal)		Trace ProductionCircular	RM_ResourceSet_Apply	Informational		
+Microsoft-Windows-ResourceManager	471	1	RM_AcquireAdditionalResources471_V1(Pointer pResSet, UInt64 RAM, UInt32 hr, Boolean Pending, Pointer TempRS)		Trace ProductionCircular	RM_AcquireAdditionalResources	Informational		
+Microsoft-Windows-ResourceManager	472	1	RM_MemoryLimitNotification472_V1(UnicodeString PsmKey, SID UserSid, UInt32 SessionId, UInt32 HostJobType, UInt64 Commit, UInt64 SharedCommit, UInt64 NotificationLowLimit, UInt64 NotificationHighLimit, UInt64 CommitAdjustment, UInt64 CommitCap)		Trace	RM_MemoryLimitNotification	Verbose		
+Microsoft-Windows-ResourceManager	473	1	RM_AcquireMemoryForFGSharing473_V1(Pointer pResSet, UInt64 Amount, UInt32 hr)		Trace	RM_AcquireMemoryForFGSharing	Verbose		
+Microsoft-Windows-ResourceManager	474	1	RM_ReleaseMemoryForFGSharing474_V1(Pointer pResSet, UInt64 Amount, UInt32 hr)		Trace	RM_ReleaseMemoryForFGSharing	Verbose		
+Microsoft-Windows-ResourceManager	550	0	BiTerminateApplicationHostFailed(UInt32 p0_UInt32, UnicodeString p1_UnicodeString, UInt32 p2_UInt32, UInt32 p3_UInt32, Boolean p4_Boolean)		Trace ProductionCircular	BiTerminateApplicationHostFailed	Error		
+Microsoft-Windows-ResourceManager	8199	0	LogTrace(UnicodeString p1_String)		DevPlatCircular	LogTrace	Informational		
+Microsoft-Windows-ResourceManager	8200	0	RM_SetApplicationPropertiesFailed(UInt32 Status, UnicodeString PsmKey, SID UserSid, UInt32 SessionId, UInt32 HostJobType, UInt32 CpuRate, UInt64 HardMemoryLimit, UInt64 NotifyMemoryLowLimit, UInt64 NotifyMemoryHighLimit, UInt8 Priority, Boolean IsCpuSet, Boolean IsHardMemorySet, Boolean IsMemoryLowSet, Boolean IsMemoryHighSet, Boolean IsPrioritySet)		SelfHostCritical DevPlatCircular	RM_SetApplicationPropertiesFailed	Error		
+Microsoft-Windows-ResourceManager	8201	0	RM_QueryApplicationPropertiesFailed(UInt32 Status, UnicodeString PsmKey, SID UserSid, UInt32 SessionId, UInt32 HostJobType, Pointer CpuRate, Pointer HardMemoryLimit, Pointer NotifyMemoryLowLimit, Pointer NotifyMemoryHighLimit, Pointer Priority)		SelfHostCritical DevPlatCircular	RM_QueryApplicationPropertiesFailed	Error		
+Microsoft-Windows-ResourceManager	8202	0	RM_QueryMemoryUsageFailed(UInt32 Status, UnicodeString PsmKey, SID UserSid, UInt32 SessionId, UInt32 HostJobType, Pointer MemoryUsage)		DevPlatCircular	RM_QueryMemoryUsageFailed	Error		
+Microsoft-Windows-ResourceManager	8203	0	RM_QuerySharedCommitFailed(UInt32 Status, UnicodeString PsmKey, SID UserSid, UInt32 SessionId, UInt32 HostJobType, Pointer MemoryUsage)		DevPlatCircular	RM_QuerySharedCommitFailed	Error		
+Microsoft-Windows-ResourceManager	8204	0	RM_SetApplicationProperties(UInt32 Status, UnicodeString PsmKey, SID UserSid, UInt32 SessionId, UInt32 HostJobType, UInt32 CpuRate, UInt64 HardMemoryLimit, UInt64 NotifyMemoryLowLimit, UInt64 NotifyMemoryHighLimit, UInt8 Priority, Boolean IsCpuSet, Boolean IsHardMemorySet, Boolean IsMemoryLowSet, Boolean IsMemoryHighSet, Boolean IsPrioritySet)		DevPlatCircular	RM_SetApplicationProperties	Verbose		
+Microsoft-Windows-ResourceManager	8205	0	RM_QueryApplicationProperties(UInt32 Status, UnicodeString PsmKey, SID UserSid, UInt32 SessionId, UInt32 HostJobType, UInt32 CpuRate, UInt64 HardMemoryLimit, UInt64 NotifyMemoryLowLimit, UInt64 NotifyMemoryHighLimit, UInt8 Priority)		DevPlatCircular	RM_QueryApplicationProperties	Verbose		
+Microsoft-Windows-ResourceManager	8210	0	RM_HandleGroupOwnershipNotification(UInt32 Status, UnicodeString PsmKey, SID UserSid, UInt32 SessionId, UInt32 HostJobType, UInt8 AcquireRelease, Boolean UpdateRate)		DevPlatCircular	RM_HandleGroupOwnershipNotification	Verbose		
+Microsoft-Windows-ResourceManager	8211	0	RM_HandleHostEmptyNotification(UnicodeString PsmKey, SID UserSid, UInt32 SessionId, UInt32 HostJobType)		DevPlatCircular	RM_HandleHostEmptyNotification	Verbose		
+Microsoft-Windows-ResourceManager	8212	0	RM_PsmApplicationStateNotification(SID UserSid, UInt32 SessionId, UnicodeString PsmKey, UInt8 State)		DevPlatCircular	RM_PsmApplicationStateNotification	Verbose		
+Microsoft-Windows-ResourceManager	8213	0	RM_PsmHostStateNotification(SID UserSid, UInt32 SessionId, UnicodeString PsmKey, UInt32 HostJobType, UInt8 State)		DevPlatCircular	RM_PsmHostStateNotification	Verbose		
+Microsoft-Windows-ResourceManager	8214	0	RM_SwapModernApplication(UInt32 Status, UnicodeString PsmKey, SID UserSid, UInt32 SessionId)		DevPlatCircular	RM_SwapModernApplication	Informational		
+Microsoft-Windows-ResourceManager	8215	0	RM_EmptyModernApplication(UInt32 Status, UnicodeString PsmKey, SID UserSid, UInt32 SessionId, UInt32 ProcessId, UInt32 EmptyFlags)		DevPlatCircular	RM_EmptyModernApplication	Informational		

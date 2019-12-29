@@ -1,0 +1,9 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-VPN-Client	10001	0	VPNWmiCreateSuccess(UnicodeString VpnConnectionName, UnicodeString PropertiesString)	Success		VPNWmiCreate	Informational		
+Microsoft-Windows-VPN-Client	10002	0	VPNWmiCreateFailure(UnicodeString VpnConnectionName, UInt32 ErrorCode, UnicodeString PropertiesString)	Failure		VPNWmiCreate	Error		
+Microsoft-Windows-VPN-Client	10003	0	VPNWmiDeleteSuccess(UnicodeString VpnConnectionName)	Success		VPNWmiDelete	Informational		
+Microsoft-Windows-VPN-Client	10004	0	VPNWmiDeleteFailure(UnicodeString VpnConnectionName, UInt32 ErrorCode)	Failure		VPNWmiDelete	Error		
+Microsoft-Windows-VPN-Client	10005	0	VPNWmiModifySuccess(UnicodeString VpnConnectionName, UnicodeString PropertiesString)	Success		VPNWmiModify	Informational		
+Microsoft-Windows-VPN-Client	10006	0	VPNWmiModifyFailure(UnicodeString VpnConnectionName, UInt32 ErrorCode, UnicodeString PropertiesString)	Failure		VPNWmiModify	Error		
+Microsoft-Windows-VPN-Client	10007	0	VPNWmiCreateSuccess10007(UnicodeString VpnConnectionName, UnicodeString PropertiesString, UnicodeString PropertiesNotUpdatedString)	Success		VPNWmiCreate	Informational		
+Microsoft-Windows-VPN-Client	10008	0	VPNWmiModifySuccess10008(UnicodeString VpnConnectionName, UnicodeString PropertiesString, UnicodeString PropertiesNotUpdatedString)	Success		VPNWmiModify	Informational		

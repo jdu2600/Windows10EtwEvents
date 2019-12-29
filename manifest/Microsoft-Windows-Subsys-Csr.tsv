@@ -1,0 +1,6 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Subsys-Csr	1	0	csr:ShutdownProcessesStart()	Start	csr:Diagnostics	csr:ShutdownProcesses	Informational		
+Microsoft-Windows-Subsys-Csr	2	0	csr:ShutdownProcessesStop()	Stop	csr:Diagnostics	csr:ShutdownProcesses	Informational		
+Microsoft-Windows-Subsys-Csr	3	0	csr:ShutdownProcessStart(UInt32 ProcessId, UInt32 Level, UInt32 Flags)	Start	csr:Diagnostics	csr:ShutdownProcess	Informational		
+Microsoft-Windows-Subsys-Csr	4	0	csr:ShutdownProcessStop(UInt32 Status)	Stop	csr:Diagnostics	csr:ShutdownProcess	Informational		
+Microsoft-Windows-Subsys-Csr	4	1	csr:ShutdownProcessStop_V1(UInt32 Status, UInt32 ProcessId)	Stop	csr:Diagnostics	csr:ShutdownProcess	Informational		

@@ -1,0 +1,5 @@
+provider	category	event_id	version	event(fields)	event_type	description
+Active Directory: NetLogon	{393da8c0-dbed-11d2-895b-00c04f79ab69}	1	0	NlServerAuth_Start(String Client, String Account, UInt32 ChannelType, UInt32 NegotiatedFlags)	Start	NetLogon Server Authentication
+Active Directory: NetLogon	{393da8c0-dbed-11d2-895b-00c04f79ab69}	2	0	NlServerAuth_End(String Client, String Account, UInt32 ChannelType, UInt32 NegotiatedFlags, UInt32 Status)	End	NetLogon Server Authentication
+Active Directory: NetLogon	{63dbb180-dbed-11d2-895b-00c04f79ab69}	1	0	NlSecChanlSetup_Start()	Start	NetLogon Secure Channel Setup
+Active Directory: NetLogon	{63dbb180-dbed-11d2-895b-00c04f79ab69}	2	0	NlSecChanlSetup_End()	End	NetLogon Secure Channel Setup

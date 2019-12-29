@@ -1,0 +1,29 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-WinHttp	1	0	task_0(UnicodeString param1)			task_0	Always		
+Microsoft-Windows-WinHttp	2	0	task_02(UnicodeString param1)			task_0	Always		
+Microsoft-Windows-WinHttp	4	0	task_04(UnicodeString loadunloadinfo)			task_0	Always		
+Microsoft-Windows-WinHttp	9	0	APIStart(UInt64 ApiHandle, AnsiString Api)	Start	Keyword.API	API	Verbose		
+Microsoft-Windows-WinHttp	10	0	APIStop(UInt64 ApiHandle, AnsiString Api, UInt32 Result)	Stop	Keyword.API	API	Verbose		
+Microsoft-Windows-WinHttp	11	0	APIStop11(UInt64 ApiHandle, AnsiString Api, UInt32 Result)	Stop	Keyword.API	API	Verbose		
+Microsoft-Windows-WinHttp	12	0	API(UInt64 ApiHandle, AnsiString Api)		Keyword.API	API	Verbose		
+Microsoft-Windows-WinHttp	13	0	APIStop13(UInt64 ApiHandle, AnsiString Api, UInt32 Result)	Stop	Keyword.API	API	Verbose		
+Microsoft-Windows-WinHttp	14	0	APIStop14(UInt64 ApiHandle, AnsiString Api, UInt32 Result)	Stop	Keyword.API	API	Verbose		
+Microsoft-Windows-WinHttp	100	0	API100(Pointer hRequest, UInt32 AuthTargets, UInt32 AuthScheme, UnicodeString UserName, UnicodeString Password)		Keyword.API keyword_20000000000	API	Verbose		
+Microsoft-Windows-WinHttp	12501	0	task_012501()			task_0	Always		
+Microsoft-Windows-WinHttp	12503	0	task_012503(UInt32 IdleTime)			task_0	Always		
+Microsoft-Windows-WinHttp	12506	0	task_012506(UnicodeString Functionname, UnicodeString Errortext, UnicodeString Errorcode)			task_0	Always		
+Microsoft-Windows-WinHttp	12507	0	task_012507()			task_0	Always		
+Microsoft-Windows-WinHttp	12509	0	task_012509(UnicodeString Transporttype)			task_0	Always		
+Microsoft-Windows-WinHttp	12511	0	task_012511(UnicodeString param1)			task_0	Always		
+Microsoft-Windows-WinHttp	12512	0	task_012512()			task_0	Always		
+Microsoft-Windows-WinHttp	12513	0	task_012513()			task_0	Always		
+Microsoft-Windows-WinHttp	12514	0	task_012514(UnicodeString Exceptioncode)			task_0	Always		
+Microsoft-Windows-WinHttp	12516	0	task_012516()			task_0	Always		
+Microsoft-Windows-WinHttp	12517	0	task_012517()			task_0	Always		
+Microsoft-Windows-WinHttp	12518	0	task_012518()			task_0	Always		
+Microsoft-Windows-WinHttp	58999	0	Debug(AnsiString Message)			Debug	Verbose		
+Microsoft-Windows-WinHttp	59995	0	DebugStop(Pointer Context, UInt32 EtwQueueActionType)	Stop		Debug	Verbose		
+Microsoft-Windows-WinHttp	59996	0	DebugStart(Pointer Context, UInt32 EtwQueueActionType)	Start		Debug	Verbose		
+Microsoft-Windows-WinHttp	59997	0	DebugStop59997(Pointer Context, UInt32 EtwQueueActionType)	Stop		Debug	Verbose		
+Microsoft-Windows-WinHttp	59998	0	DebugStart59998(Pointer Context, UInt32 EtwQueueActionType)	Start		Debug	Verbose		
+Microsoft-Windows-WinHttp	59999	0	Debug59999(AnsiString File, UInt32 Line, UInt16 Length, AnsiString Message)			Debug	Verbose		

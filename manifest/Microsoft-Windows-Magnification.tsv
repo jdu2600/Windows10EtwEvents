@@ -1,0 +1,17 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Magnification	1	0	LensCreate(UInt64 hWndLensCtx)		Magnification	LensCreate	Informational		
+Microsoft-Windows-Magnification	2	0	LensDestroy(UInt64 hWndLensCtx)		Magnification	LensDestroy	Informational		
+Microsoft-Windows-Magnification	3	0	SetWindowSource(UInt64 hWndLensCtx, AnsiString SrcRect)		Magnification	SetWindowSource	Informational		
+Microsoft-Windows-Magnification	4	0	SetWindowTransform(UInt64 hWndLensCtx, AnsiString Transform)		Magnification	SetWindowTransform	Informational		
+Microsoft-Windows-Magnification	5	0	UpdateLensContentStart(UInt64 hWndLensCtx, UInt32 DesktopComposited)	Start	Magnification	UpdateLensContent	Informational		
+Microsoft-Windows-Magnification	6	0	UpdateLensContentStop(UInt64 hWndLensCtx, UInt32 DesktopComposited)	Stop	Magnification	UpdateLensContent	Informational		
+Microsoft-Windows-Magnification	7	0	UpdateContentSurfacesStart(UInt64 hWndLensCtx, UInt64 UpdateId)	Start	Magnification	UpdateContentSurfaces	Informational		
+Microsoft-Windows-Magnification	8	0	UpdateContentSurfacesStop(UInt64 hWndLensCtx, UInt64 UpdateId)	Stop	Magnification	UpdateContentSurfaces	Informational		
+Microsoft-Windows-Magnification	9	0	UpdateRedirectionSurfacesStart(UInt64 hWndLensCtx, UInt64 UpdateId)	Start	Magnification	UpdateRedirectionSurfaces	Informational		
+Microsoft-Windows-Magnification	10	0	UpdateRedirectionSurfacesStop(UInt64 hWndLensCtx, UInt64 UpdateId)	Stop	Magnification	UpdateRedirectionSurfaces	Informational		
+Microsoft-Windows-Magnification	11	0	UpdateRedirectionResourcesStart(UInt64 hWndLensCtx, UInt64 UpdateId)	Start	Magnification	UpdateRedirectionResources	Informational		
+Microsoft-Windows-Magnification	12	0	UpdateRedirectionResourcesStop(UInt64 hWndLensCtx, UInt64 UpdateId)	Stop	Magnification	UpdateRedirectionResources	Informational		
+Microsoft-Windows-Magnification	13	0	UpdateSettingsStart(UInt64 hWndLensCtx)	Start	Magnification	UpdateSettings	Informational		
+Microsoft-Windows-Magnification	14	0	UpdateSettingsStop(UInt64 hWndLensCtx)	Stop	Magnification	UpdateSettings	Informational		
+Microsoft-Windows-Magnification	15	0	RecreateTexturesStart(UInt64 hWndLensCtx, UInt32 Width, UInt32 Height)	Start	Magnification	RecreateTextures	Informational		
+Microsoft-Windows-Magnification	16	0	RecreateTexturesStop(UInt64 hWndLensCtx)	Stop	Magnification	RecreateTextures	Informational		

@@ -1,0 +1,29 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Wallet	100	0	LaunchStart()	Start	Performance	Launch	Informational		
+Microsoft-Windows-Wallet	101	0	LaunchStop()	Stop	Performance	Launch	Informational		
+Microsoft-Windows-Wallet	102	0	Item_CreateStart()	Start	Performance	Item_Create	Informational		
+Microsoft-Windows-Wallet	103	0	Item_CreateStop()	Stop	Performance	Item_Create	Informational		
+Microsoft-Windows-Wallet	104	0	Item_GetStart(UnicodeString ItemId)	Start	Performance	Item_Get	Informational		
+Microsoft-Windows-Wallet	105	0	Item_GetStop(UnicodeString ItemId)	Stop	Performance	Item_Get	Informational		
+Microsoft-Windows-Wallet	106	0	Item_DeleteStart()	Start	Performance	Item_Delete	Informational		
+Microsoft-Windows-Wallet	107	0	Item_DeleteStop()	Stop	Performance	Item_Delete	Informational		
+Microsoft-Windows-Wallet	108	0	Item_SaveStart()	Start	Performance	Item_Save	Informational		
+Microsoft-Windows-Wallet	109	0	Item_SaveStop()	Stop	Performance	Item_Save	Informational		
+Microsoft-Windows-Wallet	201	0	List_GetStart(UInt32 ListType)	Start	Performance	List_Get	Informational		
+Microsoft-Windows-Wallet	202	0	List_GetStop(UInt32 ListType)	Stop	Performance	List_Get	Informational		
+Microsoft-Windows-Wallet	203	0	List_Get_SearchStart(UInt32 ListType)	Start	Performance	List_Get_Search	Informational		
+Microsoft-Windows-Wallet	204	0	List_Get_SearchStop(UInt32 ListType)	Stop	Performance	List_Get_Search	Informational		
+Microsoft-Windows-Wallet	303	0	Core_OpenDatabaseStart()	Start	Performance	Core_OpenDatabase	Informational		
+Microsoft-Windows-Wallet	304	0	Core_OpenDatabaseStop()	Stop	Performance	Core_OpenDatabase	Informational		
+Microsoft-Windows-Wallet	305	0	Core_GetListStart(UInt32 ListType)	Start	Performance	Core_GetList	Informational		
+Microsoft-Windows-Wallet	306	0	Core_GetListStop(UInt32 ListType)	Stop	Performance	Core_GetList	Informational		
+Microsoft-Windows-Wallet	307	0	Core_GetListWithParamsStart(UInt32 ListType)	Start	Performance	Core_GetListWithParams	Informational		
+Microsoft-Windows-Wallet	308	0	Core_GetListWithParamsStop(UInt32 ListType)	Stop	Performance	Core_GetListWithParams	Informational		
+Microsoft-Windows-Wallet	309	0	Core_GetPropertyStart(HexInt64 ItemId, UInt32 WalletItemPropertyType)	Start	Performance	Core_GetProperty	Informational		
+Microsoft-Windows-Wallet	310	0	Core_GetPropertyStop(HexInt64 ItemId, UInt32 WalletItemPropertyType)	Stop	Performance	Core_GetProperty	Informational		
+Microsoft-Windows-Wallet	311	0	Core_SetPropertyStart(HexInt64 ItemId, UInt32 WalletItemPropertyType)	Start	Performance	Core_SetProperty	Informational		
+Microsoft-Windows-Wallet	312	0	Core_SetPropertyStop(HexInt64 ItemId, UInt32 WalletItemPropertyType)	Stop	Performance	Core_SetProperty	Informational		
+Microsoft-Windows-Wallet	313	0	Core_ProcessPackageStart()	Start	Performance	Core_ProcessPackage	Informational		
+Microsoft-Windows-Wallet	314	0	Core_ProcessPackageStop()	Stop	Performance	Core_ProcessPackage	Informational		
+Microsoft-Windows-Wallet	315	0	Core_ProcessGeofencingStart()	Start	Performance	Core_ProcessGeofencing	Informational		
+Microsoft-Windows-Wallet	316	0	Core_ProcessGeofencingStop()	Stop	Performance	Core_ProcessGeofencing	Informational		

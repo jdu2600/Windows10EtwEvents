@@ -1,0 +1,13 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-TSF-msutb	1	0	CreateLanguageBarStart(UInt32 param)	Start	Perf	CreateLanguageBar	Informational		
+Microsoft-Windows-TSF-msutb	2	0	CreateLanguageBarStop()	Stop	Perf	CreateLanguageBar	Informational		
+Microsoft-Windows-TSF-msutb	3	0	DestroyLanguageBarStart()	Start	Perf	DestroyLanguageBar	Informational		
+Microsoft-Windows-TSF-msutb	4	0	DestroyLanguageBarStop()	Stop	Perf	DestroyLanguageBar	Informational		
+Microsoft-Windows-TSF-msutb	5	0	CloseDeskbandStart()	Start	Perf	CloseDeskband	Informational		
+Microsoft-Windows-TSF-msutb	6	0	CloseDeskbandStop()	Stop	Perf	CloseDeskband	Informational		
+Microsoft-Windows-TSF-msutb	7	0	HandleLanguageBarStatusChangeStart(UInt32 flags_current, UInt32 flags_new)	Start	Perf	HandleLanguageBarStatusChange	Informational		
+Microsoft-Windows-TSF-msutb	8	0	HandleLanguageBarStatusChangeStop(UInt32 flags_current, UInt32 flags_new)	Stop	Perf	HandleLanguageBarStatusChange	Informational		
+Microsoft-Windows-TSF-msutb	9	0	ShowHideLanguageBar(UInt32 param)		Perf	ShowHideLanguageBar	Informational		
+Microsoft-Windows-TSF-msutb	10	0	HandleFocusThreadChangeStart(UInt32 tid_current, UInt32 tid_new)	Start	Perf Focus	HandleFocusThreadChange	Informational		
+Microsoft-Windows-TSF-msutb	11	0	HandleFocusThreadChangeStop(UInt32 tid_current, UInt32 tid_new)	Stop	Perf	HandleFocusThreadChange	Informational		
+Microsoft-Windows-TSF-msutb	12	0	task_0(UInt32 param)		Perf	task_0	Informational		

@@ -1,0 +1,22 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-DesktopActivityModerator	1	0	StartDriverStart()	Start	StartStopDriver	StartDriver	Informational		
+Microsoft-Windows-DesktopActivityModerator	4	0	StartDriver()		StartStopDriver	StartDriver	Informational		
+Microsoft-Windows-DesktopActivityModerator	9	0	StartDriverStop(UInt32 NTSTATUS)	Stop	StartStopDriver	StartDriver	Informational		
+Microsoft-Windows-DesktopActivityModerator	11	0	StopDriverStart()	Start	StartStopDriver	StopDriver	Informational		
+Microsoft-Windows-DesktopActivityModerator	19	0	StopDriverStop()	Stop	StartStopDriver	StopDriver	Informational		
+Microsoft-Windows-DesktopActivityModerator	21	0	SuspendResumeStart(Boolean SuspendFlag)	Start	Control	SuspendResume	Informational		
+Microsoft-Windows-DesktopActivityModerator	22	0	SuspendResumeStop(Boolean SuspendFlag)	Stop	Control	SuspendResume	Informational		
+Microsoft-Windows-DesktopActivityModerator	23	0	ThrottleStart(Boolean SuspendFlag)	Start	Control	Throttle	Informational		
+Microsoft-Windows-DesktopActivityModerator	24	0	ThrottleStop(Boolean SuspendFlag)	Stop	Control	Throttle	Informational		
+Microsoft-Windows-DesktopActivityModerator	25	0	ResiliencyEngageStart(Boolean ActiveFlag)	Start	Control	ResiliencyEngage	Informational		
+Microsoft-Windows-DesktopActivityModerator	26	0	ResiliencyEngageStop(Boolean ActiveFlag)	Stop	Control	ResiliencyEngage	Informational		
+Microsoft-Windows-DesktopActivityModerator	31	0	ProcessActivityStart(UInt32 ProcessId, UInt32 SessionId, UInt16 ImageFileNameLength, UnicodeString ImageFileName, UInt16 CommandLineLength, UnicodeString CommandLine)	Start	ProcessActivity	ProcessActivity	Informational		
+Microsoft-Windows-DesktopActivityModerator	32	0	ProcessActivityStop(UInt32 ProcessId, UInt32 SessionId)	Stop	ProcessActivity	ProcessActivity	Informational		
+Microsoft-Windows-DesktopActivityModerator	41	0	ProcessExempt(UInt32 ProcessId, UInt32 SessionId, UInt32 ExemptGroup, Boolean Modern)		Policy	ProcessExempt	Informational		
+Microsoft-Windows-DesktopActivityModerator	42	0	PolicyReload(UInt32 PolicyRecords)		Policy	PolicyReload	Informational		
+Microsoft-Windows-DesktopActivityModerator	51	0	PdcCallback(UInt32 State, UInt32 NTSTATUS, Boolean WorkItemQueued)		Pdc	PdcCallback	Informational		
+Microsoft-Windows-DesktopActivityModerator	52	0	PdcCallback52(UInt32 ClientState)		Pdc	PdcCallback	Informational		
+Microsoft-Windows-DesktopActivityModerator	53	0	PdcCallback53(UInt32 Flags)		Pdc	PdcCallback	Informational		
+Microsoft-Windows-DesktopActivityModerator	54	0	PdcAcknowledge()		Pdc	PdcAcknowledge	Informational		
+Microsoft-Windows-DesktopActivityModerator	60	0	IoTrackingPerfTrack(UInt32 DeviceBucket, UInt32 ElapsedTimeMs, UInt32 FastIoCount, UInt32 SlowIoCount)		IoTracking	IoTrackingPerfTrack	Informational		
+Microsoft-Windows-DesktopActivityModerator	61	0	IoTrackingCallback(UInt16 DeviceType, UInt32 DeviceBucket, UInt64 ElapsedTime, Boolean SlowIo)		IoTracking	IoTrackingCallback	Verbose		

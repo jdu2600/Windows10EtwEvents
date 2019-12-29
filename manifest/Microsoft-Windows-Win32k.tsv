@@ -1,0 +1,273 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Win32k	1	0	WindowUpdate(Pointer Hwnd, UInt32 Type)		Updates	WindowUpdate	Informational		
+Microsoft-Windows-Win32k	2	0	FocusChange(UInt32 OldThreadId, UInt32 NewThreadId)		Focus	FocusChange	Informational		
+Microsoft-Windows-Win32k	3	0	UIPIMsgError(UInt8 UIPI_Trace_Header, UInt32 Message, UInt64 wParam, UInt64 lParam)		UIPI	UIPIMsgError	Informational		
+Microsoft-Windows-Win32k	4	0	UIPIHookError(UInt16 UIPI_Trace_Header, Int32 HookID, Int8 Flags, Int32 nCode, UInt64 wParam, UInt64 lParam)		UIPI	UIPIHookError	Informational		
+Microsoft-Windows-Win32k	5	0	UIPIEventHookError(UInt32 UIPI_Trace_Header, UInt32 WinEvent, UInt64 WndHandle, UInt32 ObjectID, UInt32 ChildID, Int32 SenderTID, Int32 Time, UInt32 Flags)		UIPI	UIPIEventHookError	Informational		
+Microsoft-Windows-Win32k	6	0	UIPIHandleValError(UInt8 UIPI_Trace_Header, UInt64 Handle, UInt32 HandleType, UInt32 Reserved)		UIPI	UIPIHandleValError	Informational		
+Microsoft-Windows-Win32k	7	0	UIPIInputError(UInt8 UIPI_Trace_Header, UInt32 InputType, UInt32 QIL, UInt32 QLBN)		UIPI	UIPIInputError	Informational		
+Microsoft-Windows-Win32k	8	0	UIPIClipboardError(UInt8 UIPI_Trace_Header, UInt32 ClipFormat, UInt32 ClipIL, UInt32 ClipLBN)		UIPI	UIPIClipboardError	Informational		
+Microsoft-Windows-Win32k	9	0	UIPISystemError(AnsiString UIPI_Trace_Header, UInt32 SysErrorType)		UIPI	UIPISystemError	Informational		
+Microsoft-Windows-Win32k	10	0	PowerDisplayChange(UInt32 SessionId, UInt32 PreviousStateTime, UInt16 PreviousState, UInt16 NewState, UInt16 IsConsoleSession)		win32Power	PowerDisplayChange	Informational		
+Microsoft-Windows-Win32k	11	0	IdleActionExpiration(UInt32 SessionId, UInt32 IdleAction, UInt32 TimeoutValueMs, UInt32 IdleStartTime, UInt16 IsConsoleSession)		win32Power	IdleActionExpiration	Informational		
+Microsoft-Windows-Win32k	12	0	DisplayReqChange(UInt32 SessionId, UInt16 IsConsoleSession, UInt32 NewCount)		win32Power	DisplayReqChange	Informational		
+Microsoft-Windows-Win32k	13	0	DisplayTimeoutReset(UInt32 SessionId, UInt16 IsConsoleSession, UInt32 DisplayTimeoutValueMs)		win32Power	DisplayTimeoutReset	Informational		
+Microsoft-Windows-Win32k	14	0	LockAcquireExclusive(Pointer LockId, UInt32 LockLevel, UnicodeString LockName)		Concurrency	LockAcquireExclusive	Informational		
+Microsoft-Windows-Win32k	15	0	LockAcquireShared(Pointer LockId, UnicodeString LockName)		Concurrency	LockAcquireShared	Informational		
+Microsoft-Windows-Win32k	16	0	LockAcquireSharedStarveExclusive(Pointer LockId, UnicodeString LockName)		Concurrency	LockAcquireSharedStarveExclusive	Informational		
+Microsoft-Windows-Win32k	17	0	LockRelease(Pointer LockId, UnicodeString LockName)		Concurrency	LockRelease	Informational		
+Microsoft-Windows-Win32k	18	0	SwapChainBind(UInt64 hWnd, UInt64 hLogicalSurfSwapChainBind)		Updates	SwapChainBind	Informational		
+Microsoft-Windows-Win32k	19	0	SwapChainUnBind(UInt64 hWnd, UInt64 hLogicalSurfSwapChainBind)		Updates	SwapChainUnBind	Informational		
+Microsoft-Windows-Win32k	20	0	IdleStatusTracing(UInt32 SessionId, UInt32 AccruedIdleTime, UInt32 DisplayTimeoutValueMs, UInt32 ScreenSaverTimeoutValueMs, UInt32 DimTimeoutValueMs, UInt32 DimBrightnessValue, UInt32 NormalBrightnessValue)		win32Power	IdleStatusTracing	Informational		
+Microsoft-Windows-Win32k	21	0	SwapChainSetStats(UInt64 hLogicalSurfSwapChainBind, UInt32 ConfirmReason, UInt32 LastPresentId, UInt32 LastFrameCount, UInt32 SyncFrameCount, UInt64 LastFrameTime)		Updates	SwapChainSetStats	Informational		
+Microsoft-Windows-Win32k	22	0	ScreenSaverProcess(UInt32 Action)		win32Power	ScreenSaverProcess	Informational		
+Microsoft-Windows-Win32k	23	0	WinlogonSleepStart(UInt32 Action)		win32Power	WinlogonSleepStart	Informational		
+Microsoft-Windows-Win32k	24	0	WinlogonSleepEnd(UInt32 Action)		win32Power	WinlogonSleepEnd	Informational		
+Microsoft-Windows-Win32k	25	0	UserActive(UInt32 SessionId, UInt32 ProcessIdOwningFocus, FILETIME ProcessCreateTimeOwningFocus)		UserActivity	UserActive	Informational		
+Microsoft-Windows-Win32k	26	0	FocusedProcessChange(UInt32 SessionId, UInt32 OldProcessId, UInt32 NewProcessId)		UserActivity	FocusedProcessChange	Informational		
+Microsoft-Windows-Win32k	27	0	DwmSpriteCreate(UInt64 hWnd, UInt64 hSprite)		Updates	DwmSpriteCreate	Informational		
+Microsoft-Windows-Win32k	28	0	DwmSpriteDestroy(UInt64 hWnd, UInt64 hSprite)		Updates	DwmSpriteDestroy	Informational		
+Microsoft-Windows-Win32k	29	0	LogicalSurfCreate(UInt64 hLogicalSurf, UInt32 Flags)		Updates	LogicalSurfCreate	Informational		
+Microsoft-Windows-Win32k	30	0	LogicalSurfDestroy(UInt64 hLogicalSurf, UInt32 Flags)		Updates	LogicalSurfDestroy	Informational		
+Microsoft-Windows-Win32k	31	0	LogicalSurfPhysSurfBind(UInt64 hLogicalSurf, UInt64 hPhysicalSurf)		Updates	LogicalSurfPhysSurfBind	Informational		
+Microsoft-Windows-Win32k	32	0	LogicalSurfPhysSurfUnbind(UInt64 hLogicalSurf, UInt64 hPhysicalSurf)		Updates	LogicalSurfPhysSurfUnbind	Informational		
+Microsoft-Windows-Win32k	33	0	GdiSysMemToken(UInt32 Pending, UInt32 dwDirtyFlags, UInt64 hLogicalSurf, UInt64 uiCookie)		Updates	GdiSysMemToken	Informational		
+Microsoft-Windows-Win32k	35	0	WaitCursor(UInt32 CursorThreadId, UInt32 CursorProcessId, UInt32 SessionId, UInt32 CursorType, UInt32 DisplayTimeMs)		UIUnresponsiveness	WaitCursor	Informational		
+Microsoft-Windows-Win32k	36	0	ThreadInfoRundown(UInt32 ThreadId, UInt32 Flags, UInt32 TimeSinceInputCheckMs, UInt32 TimeSinceInputRemoveMs, UInt32 TimeSinceOldestInputMs)		ThreadRundown	ThreadInfoRundown	Informational		
+Microsoft-Windows-Win32k	37	0	InputProcessDelay(UInt32 Flags, UInt32 TimeSinceInputRemoveMs, UInt32 TimeSinceOldestInputMs, UnicodeString ClassName, UnicodeString TopLevelClassName, UnicodeString ImagePath, UInt32 MessageId, UInt64 WParam)		UIUnresponsiveness	InputProcessDelay	Informational		
+Microsoft-Windows-Win32k	38	0	MessageCheckDelay(UInt32 Flags, UInt32 DelayTimeMs, UInt32 TimeSinceInputRemoveMs, UInt32 TimeSinceOldestInputMs, UnicodeString ClassName, UnicodeString TopLevelClassName, UnicodeString ImagePath, UInt32 MessageId, UInt64 WParam)		UIUnresponsiveness	MessageCheckDelay	Informational		
+Microsoft-Windows-Win32k	39	0	RenderingNewRendering(Pointer hwndDst, Pointer hwndDstSprite, Pointer hbmDst, UInt32 DstLeft, UInt32 DstTop, UInt32 DstRight, UInt32 DstBottom, Pointer hwndSrc, Pointer hwndSrcSprite, Pointer hbmSrc, UInt32 SrcLeft, UInt32 SrcTop, UInt32 SrcRight, UInt32 SrcBottom)	NewRendering	Rendering	Rendering	Informational		
+Microsoft-Windows-Win32k	40	0	RenderingOldToNewRendering(Pointer hwndDst, Pointer hwndDstSprite, Pointer hbmDst, UInt32 DstLeft, UInt32 DstTop, UInt32 DstRight, UInt32 DstBottom, Pointer hwndSrc, Pointer hwndSrcSprite, Pointer hbmSrc, UInt32 SrcLeft, UInt32 SrcTop, UInt32 SrcRight, UInt32 SrcBottom)	OldToNewRendering	Rendering	Rendering	Informational		
+Microsoft-Windows-Win32k	41	0	RenderingAppRenderingUpdate(Pointer hwnd, UInt32 bitmapCX, UInt32 bitmapCY, UInt32 DirtyLeft, UInt32 DirtyTop, UInt32 DirtyRight, UInt32 DirtyBottom)	AppRenderingUpdate	Rendering	Rendering	Informational		
+Microsoft-Windows-Win32k	42	0	RenderingAppRenderingTightUpdate(Pointer hwnd, UInt32 bitmapCX, UInt32 bitmapCY, UInt32 DirtyLeft, UInt32 DirtyTop, UInt32 DirtyRight, UInt32 DirtyBottom)	AppRenderingTightUpdate	Rendering	Rendering	Informational		
+Microsoft-Windows-Win32k	43	0	RenderingValidateWindow(Pointer hwnd, UInt32 FULL, UInt32 Left, UInt32 Top, UInt32 Right, UInt32 Bottom)	ValidateWindow	Rendering	Rendering	Informational		
+Microsoft-Windows-Win32k	44	0	RenderingInvalidateWindow(Pointer hwnd, UInt32 FULL, UInt32 Left, UInt32 Top, UInt32 Right, UInt32 Bottom)	InvalidateWindow	Rendering	Rendering	Informational		
+Microsoft-Windows-Win32k	45	0	ThreadExit(UInt32 ThreadId, UInt32 Flags, UInt32 TimeSinceInputCheckMs, UInt32 TimeSinceInputRemoveMs, UInt32 TimeSinceOldestInputMs)		ThreadInfo	ThreadExit	Informational		
+Microsoft-Windows-Win32k	46	0	BindLogicalSurface(UInt64 hWnd, UInt64 hLogicalSurf)		Updates	BindLogicalSurface	Informational		
+Microsoft-Windows-Win32k	47	0	UnBindLogicalSurface(UInt64 hWnd, UInt64 hLogicalSurf)		Updates	UnBindLogicalSurface	Informational		
+Microsoft-Windows-Win32k	48	0	BindLogicalSurfaceRH(UInt64 hLogicalSurf, UInt64 bCreated)		Updates	BindLogicalSurfaceRH	Informational		
+Microsoft-Windows-Win32k	49	0	DwmSpriteLogicalSurfBind(UInt64 hDwmSprite, UInt64 hLogicalSurf)		Updates	DwmSpriteLogicalSurfBind	Informational		
+Microsoft-Windows-Win32k	50	0	DwmSpriteLogicalSurfUnBind(UInt64 hDwmSprite, UInt64 hLogicalSurf)		Updates	DwmSpriteLogicalSurfUnBind	Informational		
+Microsoft-Windows-Win32k	51	0	LogicalSurfEnableDirtyNotification(UInt64 hLogicalSurf, UInt64 hPhysSurf)		Updates	LogicalSurfEnableDirtyNotification	Informational		
+Microsoft-Windows-Win32k	52	0	PhysicalSurfCreate(UInt64 hPhysicalSurf, UInt32 Type, UInt64 hDxSharedSurface, UInt32 Flags)		Updates	PhysicalSurfCreate	Informational		
+Microsoft-Windows-Win32k	53	0	ModifyRgn(UInt64 hLogicalSurface, UInt32 RgnType, Int16 rcBounds, UInt32 NumRects, Int64 rcData)		Updates	ModifyRgn	Informational		
+Microsoft-Windows-Win32k	54	0	SwapChainGetStats(UInt64 hLogicalSurfSwapChainBind, UInt32 ConfirmReason, UInt32 LastPresentId, UInt32 LastFrameCount, UInt32 SyncFrameCount, UInt64 LastFrameTime)		Updates	SwapChainGetStats	Informational		
+Microsoft-Windows-Win32k	55	0	SwapChainBindingOpen(UInt64 hLogicalSurfSwapChainBinding, UInt64 luidAdapter, UInt32 nWidth, UInt32 nHeight, UInt32 DxgiColorFormat, UInt64 hmonAssociation, UInt64 uiPresentLimitSemaphoreId, UInt32 cBuffers, Int64 BindingInfoHandle)		Updates	SwapChainBindingOpen	Informational		
+Microsoft-Windows-Win32k	56	0	SwapChainBindingRelease(UInt64 hLogicalSurfSwapChainBinding, UInt8 DesktopCompositorProcess, UInt8 DesktopCompositorError, UInt8 DesktopCompositorRef, UInt8 DesktopCompositorStatus, UInt64 pEventConfirmed)		Updates	SwapChainBindingRelease	Informational		
+Microsoft-Windows-Win32k	57	0	SwapChainBindingStatus(UInt64 hLogicalSurfSwapChainBinding, UInt8 DesktopCompositorStatus)		Updates	SwapChainBindingStatus	Informational		
+Microsoft-Windows-Win32k	58	0	DesktopResolutionFailure(UInt32 ProcessId, UInt32 FailureStatus)		Updates	DesktopResolutionFailure	Informational		
+Microsoft-Windows-Win32k	59	0	QueuePostMessage(Int8 CallbackCount, Pointer pqmsg, Pointer hwnd, Pointer WParam, Pointer LParam, UInt32 message, UInt32 inputReadyTimeMs)		MessagePump	QueuePostMessage	Informational		
+Microsoft-Windows-Win32k	60	0	SendMessageStart(Int8 CallbackCount, Pointer pqmsg, Pointer hwnd, Pointer WParam, Pointer LParam, UInt32 message, UInt32 inputReadyTimeMs, UInt32 flags, UInt32 pidReceiver, UInt32 tidReceiver)	Start	MessagePump	SendMessage	Informational		
+Microsoft-Windows-Win32k	61	0	RetrievePostMessage(Int8 CallbackCount, Pointer pqmsg, Pointer hwnd, Pointer WParam, Pointer LParam, UInt32 message, UInt32 inputReadyTimeMs, UInt32 flags)		MessagePump	RetrievePostMessage	Informational		
+Microsoft-Windows-Win32k	62	0	RetrieveSendMessageStart(Int8 CallbackCount, Pointer pqmsg, Pointer hwnd, Pointer WParam, Pointer LParam, UInt32 message, UInt32 inputReadyTimeMs)	Start	MessagePump	RetrieveSendMessage	Informational		
+Microsoft-Windows-Win32k	63	0	RetrieveInputMessage(Int8 CallbackCount, Pointer hwnd, Pointer WParam, Pointer LParam, UInt32 message, UInt32 inputReadyTimeMs, UInt32 flags)		MessagePump ComponentHosting	RetrieveInputMessage	Informational		
+Microsoft-Windows-Win32k	64	0	RetrievePseudoMessage(Int8 CallbackCount, Pointer pqmsg, Pointer hwnd, Pointer WParam, Pointer LParam, UInt32 message, UInt32 inputReadyTimeMs, UInt32 flags)		MessagePump	RetrievePseudoMessage	Always		
+Microsoft-Windows-Win32k	65	0	WakePump(Int8 CallbackCount, Pointer pqmsg, Pointer hwnd, Pointer WParam, Pointer LParam, UInt32 message, UInt32 inputReadyTimeMs)		MessagePump	WakePump	Informational		
+Microsoft-Windows-Win32k	66	0	InputQueueLocked(Int8 CallbackCount, Pointer pQueue, UInt32 ownerThread)		MessagePumpInternalAndInput	InputQueueLocked	Informational		
+Microsoft-Windows-Win32k	67	0	InputQueueLocked67(Int8 CallbackCount, Pointer pQueue, UInt32 ownerThread)		MessagePumpInternalAndInput	InputQueueLocked	Informational		
+Microsoft-Windows-Win32k	68	0	UserCallbackStart(Int8 CallbackCount, Int32 api)	Start	MessagePumpInternalAndInput	UserCallback	Informational		
+Microsoft-Windows-Win32k	69	0	UserCallbackStop(Int8 CallbackCount, Int32 api)	Stop	MessagePumpInternalAndInput	UserCallback	Informational		
+Microsoft-Windows-Win32k	70	0	SendMessageStop(Int8 CallbackCount, Pointer pqmsg)	Stop	MessagePump	SendMessage	Informational		
+Microsoft-Windows-Win32k	71	0	SendMessageTimeOutToBlocking(Int8 CallbackCount)		MessagePumpInternalAndInput	SendMessageTimeOutToBlocking	Informational		
+Microsoft-Windows-Win32k	72	0	InputDeviceReadStart(Int32 DeviceType, UInt32 dwFlags)	Start	MessagePumpInternalAndInput	InputDeviceRead	Informational		
+Microsoft-Windows-Win32k	73	0	InputDeviceReadStop(Int32 DeviceType, UInt32 dwFlags)	Stop	MessagePumpInternalAndInput	InputDeviceRead	Informational		
+Microsoft-Windows-Win32k	74	0	MessageInjectionPostGestureInputMessage(Int8 CallbackCount, Pointer hwnd, Pointer hGestureInfo)	PostGestureInputMessage	MessagePumpInternalAndInput	MessageInjection	Informational		
+Microsoft-Windows-Win32k	75	0	MessageInjectionPostGestureMessage(Int8 CallbackCount, Pointer hwnd, Pointer hGestureInfo)	PostGestureMessage	MessagePumpInternalAndInput	MessageInjection	Informational		
+Microsoft-Windows-Win32k	76	0	AppMessagePumpStart(Int8 CallbackCount, Int32 fGetMessage, UInt32 dwFlags, UInt32 Message)	Start	MessagePumpInternalAndInput	AppMessagePump	Informational		
+Microsoft-Windows-Win32k	77	0	AppMessagePumpStop(Int8 CallbackCount, Int32 fGetMessage)	Stop	MessagePumpInternalAndInput	AppMessagePump	Informational		
+Microsoft-Windows-Win32k	78	0	WakeRIT(Int8 CallbackCount, Int32 WakeReason)		MessagePumpInternalAndInput	WakeRIT	Informational		
+Microsoft-Windows-Win32k	79	0	PointerMotionStart(Int32 Time, Int32 X, Int32 Y)	Start	MessagePumpInternalAndInput	PointerMotion	Informational		
+Microsoft-Windows-Win32k	80	0	PointerMotionStop(Int32 Time, Int32 X, Int32 Y)	Stop	MessagePumpInternalAndInput	PointerMotion	Informational		
+Microsoft-Windows-Win32k	81	0	InjectMouseStart(Int8 CallbackCount, Int32 Time, Int32 X, Int32 Y)	Start	MessagePumpInternalAndInput	InjectMouse	Informational		
+Microsoft-Windows-Win32k	82	0	InjectMouseStop(Int8 CallbackCount, Int32 Time, Int32 X, Int32 Y)	Stop	MessagePumpInternalAndInput	InjectMouse	Informational		
+Microsoft-Windows-Win32k	83	0	RetrieveSendMessageStop(Int8 CallbackCount, Pointer pqmsg)	Stop	MessagePump	RetrieveSendMessage	Informational		
+Microsoft-Windows-Win32k	84	0	GUIProcessStart()	Start	ThreadInfo	GUIProcess	Informational		
+Microsoft-Windows-Win32k	85	0	GUIProcessStop()	Stop	ThreadInfo	GUIProcess	Informational		
+Microsoft-Windows-Win32k	86	0	GUIThreadStart()	Start	ThreadInfo	GUIThread	Informational		
+Microsoft-Windows-Win32k	87	0	GUIThreadStop()	Stop	ThreadInfo	GUIThread	Informational		
+Microsoft-Windows-Win32k	88	0	QueueInputMessage(Int8 CallbackCount, Pointer pqmsg, Boolean WindowDelegated, Boolean WasWindowDelegated, Boolean Delegated, Boolean WasDelegated, Boolean Processed, Boolean fDelayedFree, Pointer hwnd, Pointer WParam, Pointer LParam, UInt32 message, UInt32 inputReadyTimeMs)		MessagePump ComponentHosting	QueueInputMessage	Informational		
+Microsoft-Windows-Win32k	89	0	TranslateMessageStart(Int8 CallbackCount, UInt32 message)	Start	MessagePump	TranslateMessage	Informational		
+Microsoft-Windows-Win32k	91	0	TranslateMessageStop(Int8 CallbackCount, UInt32 message)	Stop	MessagePump	TranslateMessage	Informational		
+Microsoft-Windows-Win32k	92	0	DispatchMessageStart(Int8 CallbackCount, UInt32 message)	Start	MessagePump	DispatchMessage	Informational		
+Microsoft-Windows-Win32k	93	0	DispatchMessageStop(Int8 CallbackCount, UInt32 message)	Stop	MessagePump	DispatchMessage	Informational		
+Microsoft-Windows-Win32k	94	0	TouchTargetingSpeedHitTestStart()	Start	MessagePumpInternalAndInput	TouchTargetingSpeedHitTest	Informational		
+Microsoft-Windows-Win32k	95	0	TouchTargetingSpeedHitTestStop()	Stop	MessagePumpInternalAndInput	TouchTargetingSpeedHitTest	Informational		
+Microsoft-Windows-Win32k	96	0	TouchTargetingWindowHitTestStart()	Start	MessagePumpInternalAndInput	TouchTargetingWindowHitTest	Informational		
+Microsoft-Windows-Win32k	97	0	TouchTargetingWindowHitTestStop()	Stop	MessagePumpInternalAndInput	TouchTargetingWindowHitTest	Informational		
+Microsoft-Windows-Win32k	98	0	TouchTargetingPointerTargetStart()	Start	MessagePumpInternalAndInput	TouchTargetingPointerTarget	Informational		
+Microsoft-Windows-Win32k	99	0	TouchTargetingPointerTargetStop()	Stop	MessagePumpInternalAndInput	TouchTargetingPointerTarget	Informational		
+Microsoft-Windows-Win32k	100	0	MessageInjectionInjectTouchEvent(Int8 CallbackCount)	InjectTouchEvent	MessagePumpInternalAndInput	MessageInjection	Informational		
+Microsoft-Windows-Win32k	102	0	task_0(UInt32 SessionId, UInt32 cLineWidth, Int16 TimerStatisticsThreshold, UInt32 cElements, UInt16 TimerStatisticsInfo)		TimerSurvey	task_0	Informational		
+Microsoft-Windows-Win32k	103	0	task_0103(AnsiString ProcName, UnicodeString ClassName, UnicodeString WindowName, UInt32 uId, UInt32 uElapse, UInt32 uType)		TimerSurvey	task_0	Informational		
+Microsoft-Windows-Win32k	104	0	ContactVisualizationStart()	Start	UserActivity Rendering	ContactVisualization	Informational		
+Microsoft-Windows-Win32k	105	0	ContactVisualizationStop()	Stop	UserActivity Rendering	ContactVisualization	Informational		
+Microsoft-Windows-Win32k	106	0	TouchTargetingOffset(Int32 ptOffsetX, Int32 ptOffsetY, Int32 pointerId, Int32 cursorId)		MessagePumpInternalAndInput	TouchTargetingOffset	Informational		
+Microsoft-Windows-Win32k	107	0	TouchTargetingPointerEvent(Int32 pointerId, Int32 cursorId, Int32 pointerType, Int32 pointerFlags, Int32 touchMask, Int32 ptLocationX, Int32 ptLocationY, Int32 rcContactLeft, Int32 rcContactRight, Int32 rcContactTop, Int32 rcContactBottom, Int32 orientation)		MessagePumpInternalAndInput	TouchTargetingPointerEvent	Informational		
+Microsoft-Windows-Win32k	108	0	TouchTargetingPointerEvent108(Int32 pointerId, Int32 cursorId, Int32 pointerType, Int32 pointerFlags, Int32 touchMask, Int32 ptLocationX, Int32 ptLocationY, Int32 rcContactLeft, Int32 rcContactRight, Int32 rcContactTop, Int32 rcContactBottom, Int32 orientation)		MessagePumpInternalAndInput	TouchTargetingPointerEvent	Verbose		
+Microsoft-Windows-Win32k	109	0	PointerDeviceReadStart()	Start	MessagePumpInternalAndInput	PointerDeviceRead	Informational		
+Microsoft-Windows-Win32k	110	0	PointerDeviceReadStop()	Stop	MessagePumpInternalAndInput	PointerDeviceRead	Informational		
+Microsoft-Windows-Win32k	111	0	PointerDeviceMessageStart()	Start	MessagePumpInternalAndInput	PointerDeviceMessage	Informational		
+Microsoft-Windows-Win32k	112	0	PointerDeviceMessageStop()	Stop	MessagePumpInternalAndInput	PointerDeviceMessage	Informational		
+Microsoft-Windows-Win32k	113	0	PointerDeviceMessageStart113()	Start	MessagePumpInternalAndInput	PointerDeviceMessage	Informational		
+Microsoft-Windows-Win32k	114	0	PointerDeviceMessageStop114()	Stop	MessagePumpInternalAndInput	PointerDeviceMessage	Informational		
+Microsoft-Windows-Win32k	115	0	PointerDeviceTransformationStart(UInt32 ulContactId)	Start	MessagePumpInternalAndInput	PointerDeviceTransformation	Informational		
+Microsoft-Windows-Win32k	116	0	PointerDeviceTransformationStop(UInt32 ulContactId)	Stop	MessagePumpInternalAndInput	PointerDeviceTransformation	Informational		
+Microsoft-Windows-Win32k	117	0	RenderingTranslationUpdate(Pointer hwnd, UInt32 DirtyLeft, UInt32 DirtyTop, UInt32 DirtyRight, UInt32 DirtyBottom)	TranslationUpdate	Rendering	Rendering	Informational		
+Microsoft-Windows-Win32k	118	0	TranslationUpdateOffset(Pointer hwnd, Int32 Offsetx, Int32 Offsety)		Rendering	TranslationUpdateOffset	Informational		
+Microsoft-Windows-Win32k	119	0	RenderingTranslationUpdateRectClip(Pointer hwnd, UInt32 DirtyLeft, UInt32 DirtyTop, UInt32 DirtyRight, UInt32 DirtyBottom)	TranslationUpdateRectClip	Rendering	Rendering	Informational		
+Microsoft-Windows-Win32k	120	0	RenderingUpdateDxAccumFromGDI(Pointer hwnd, UInt32 DirtyLeft, UInt32 DirtyTop, UInt32 DirtyRight, UInt32 DirtyBottom)	UpdateDxAccumFromGDI	Rendering	Rendering	Informational		
+Microsoft-Windows-Win32k	121	0	RenderingUpdateDxAccumFromDX(Pointer hwnd, UInt32 DirtyLeft, UInt32 DirtyTop, UInt32 DirtyRight, UInt32 DirtyBottom)	UpdateDxAccumFromDX	Rendering	Rendering	Informational		
+Microsoft-Windows-Win32k	122	0	RenderingGetDxAccum(UInt64 hSprite, Pointer hWnd)	GetDxAccum	Rendering	Rendering	Informational		
+Microsoft-Windows-Win32k	123	0	ModifyDxAccumRgn(UInt64 hLogicalSurface, UInt32 RgnType, Int16 rcBounds, UInt32 NumRects, Int64 rcData)		Updates	ModifyDxAccumRgn	Informational		
+Microsoft-Windows-Win32k	124	0	LogicalSurfRemovedTranslationFromDirty(Pointer hwnd, UInt32 DirtyLeft, UInt32 DirtyTop, UInt32 DirtyRight, UInt32 DirtyBottom)		Updates	LogicalSurfRemovedTranslationFromDirty	Informational		
+Microsoft-Windows-Win32k	125	0	PointerDeviceDiscoveryStart()	Start	MessagePumpInternalAndInput	PointerDeviceDiscovery	Informational		
+Microsoft-Windows-Win32k	126	0	PointerDeviceDiscoveryStop()	Stop	MessagePumpInternalAndInput	PointerDeviceDiscovery	Informational		
+Microsoft-Windows-Win32k	127	0	PointerDeviceMessageStart127()	Start	MessagePumpInternalAndInput	PointerDeviceMessage	Informational		
+Microsoft-Windows-Win32k	128	0	PointerDeviceMessageStop128()	Stop	MessagePumpInternalAndInput	PointerDeviceMessage	Informational		
+Microsoft-Windows-Win32k	129	0	TouchInjectionEventStart()	Start	MessagePumpInternalAndInput	TouchInjectionEvent	Informational		
+Microsoft-Windows-Win32k	130	0	TouchInjectionEventStop()	Stop	MessagePumpInternalAndInput	TouchInjectionEvent	Informational		
+Microsoft-Windows-Win32k	131	0	PointerFrameCreationStart(UInt32 FrameId, UInt32 PointerCount, UInt32 PendingPointerCount)	Start	PointerInput	PointerFrameCreation	Informational		
+Microsoft-Windows-Win32k	132	0	PointerFrameCreationStop(UInt32 FrameId, UInt32 PointerCount, UInt32 PendingPointerCount)	Stop	PointerInput	PointerFrameCreation	Informational		
+Microsoft-Windows-Win32k	133	0	PointerFrameBuildPartialStart(UInt32 FrameId, UInt32 PointerCount, UInt32 PendingPointerCount)	Start	PointerInput	PointerFrameBuildPartial	Informational		
+Microsoft-Windows-Win32k	134	0	PointerFrameBuildPartialStop(UInt32 FrameId, UInt32 PointerCount, UInt32 PendingPointerCount)	Stop	PointerInput	PointerFrameBuildPartial	Informational		
+Microsoft-Windows-Win32k	135	0	PointerFrameCommitStart(UInt32 FrameId, UInt32 PointerCount, UInt32 PendingPointerCount)	Start	PointerInput	PointerFrameCommit	Informational		
+Microsoft-Windows-Win32k	136	0	PointerFrameCommitStop(UInt32 FrameId, UInt32 PointerCount, UInt32 PendingPointerCount)	Stop	PointerInput	PointerFrameCommit	Informational		
+Microsoft-Windows-Win32k	137	0	PointerFrameCoalesceStart(UInt32 FrameId, UInt32 PointerCount, UInt32 PendingPointerCount)	Start	PointerInput	PointerFrameCoalesce	Informational		
+Microsoft-Windows-Win32k	138	0	PointerFrameCoalesceStop(UInt32 FrameId, UInt32 PointerCount, UInt32 PendingPointerCount)	Stop	PointerInput	PointerFrameCoalesce	Informational		
+Microsoft-Windows-Win32k	139	0	PointerFrameMessageGenerationStart(UInt32 FrameId, UInt32 PointerCount, UInt32 PendingPointerCount)	Start	PointerInput	PointerFrameMessageGeneration	Informational		
+Microsoft-Windows-Win32k	140	0	PointerFrameMessageGenerationStop(UInt32 FrameId, UInt32 PointerCount, UInt32 PendingPointerCount)	Stop	PointerInput	PointerFrameMessageGeneration	Informational		
+Microsoft-Windows-Win32k	141	0	PointerMessageRetrieveStart(Pointer pqmsg, UInt32 PointerId, UInt32 Message)	Start	PointerInput	PointerMessageRetrieve	Informational		
+Microsoft-Windows-Win32k	142	0	PointerMessageRetrieveStop(Pointer pqmsg, UInt32 PointerId, UInt32 Message)	Stop	PointerInput	PointerMessageRetrieve	Informational		
+Microsoft-Windows-Win32k	143	0	PointerUpdateMessageRetrieveStart(Pointer pqmsg, UInt32 PointerId, UInt32 Message)	Start	PointerInput	PointerUpdateMessageRetrieve	Verbose		
+Microsoft-Windows-Win32k	144	0	PointerUpdateMessageRetrieveStop(Pointer pqmsg, UInt32 PointerId, UInt32 Message)	Stop	PointerInput	PointerUpdateMessageRetrieve	Verbose		
+Microsoft-Windows-Win32k	145	0	PointerSetTargetWindowsStart()	Start	PointerInput	PointerSetTargetWindows	Informational		
+Microsoft-Windows-Win32k	146	0	PointerSetTargetWindowsStop()	Stop	PointerInput	PointerSetTargetWindows	Informational		
+Microsoft-Windows-Win32k	147	0	PointerUpdateSetTargetWindowsStart()	Start	PointerInput	PointerUpdateSetTargetWindows	Verbose		
+Microsoft-Windows-Win32k	148	0	PointerUpdateSetTargetWindowsStop()	Stop	PointerInput	PointerUpdateSetTargetWindows	Verbose		
+Microsoft-Windows-Win32k	149	0	InputQueueNoRemoveLockerStop(Int8 CallbackCount, Pointer pQueue, UInt32 ownerThread)	Stop	MessagePumpInternalAndInput	InputQueueNoRemoveLocker	Informational		
+Microsoft-Windows-Win32k	150	0	InputQueueLockedPeekRecursionStop(Int8 CallbackCount, Pointer pQueue, UInt32 ownerThread)	Stop	MessagePumpInternalAndInput	InputQueueLockedPeekRecursion	Informational		
+Microsoft-Windows-Win32k	151	0	DCompCommitBatch(UInt32 channelHandle, Pointer pBatch, UInt32 batchID)		Updates	DCompCommitBatch	Informational		
+Microsoft-Windows-Win32k	152	0	DelegateInputUserCallbackStart(Int8 CallbackCount, Pointer pqmsg, Boolean WindowDelegated, Boolean WasWindowDelegated, Boolean Delegated, Boolean WasDelegated, Boolean Processed, Boolean fDelayedFree, Pointer hwnd, Pointer WParam, Pointer LParam, UInt32 message, UInt32 inputReadyTimeMs)	Start	MessagePumpInternalAndInput	DelegateInputUserCallback	Informational		
+Microsoft-Windows-Win32k	153	0	DelegateInputUserCallbackStop(Int8 CallbackCount, Pointer pqmsg, Boolean WindowDelegated, Boolean WasWindowDelegated, Boolean Delegated, Boolean WasDelegated, Boolean Processed, Boolean fDelayedFree, Pointer hwnd, Pointer WParam, Pointer LParam, UInt32 message, UInt32 inputReadyTimeMs)	Stop	MessagePumpInternalAndInput	DelegateInputUserCallback	Informational		
+Microsoft-Windows-Win32k	154	0	DelegatedInputWorkerStart(Int8 CallbackCount, Pointer pqmsg, Boolean WindowDelegated, Boolean WasWindowDelegated, Boolean Delegated, Boolean WasDelegated, Boolean Processed, Boolean fDelayedFree, Pointer hwnd, Pointer WParam, Pointer LParam, UInt32 message, UInt32 inputReadyTimeMs, UInt32 hdfResponse)	Start	MessagePumpInternalAndInput	DelegatedInputWorker	Informational		
+Microsoft-Windows-Win32k	155	0	DelegatedInputWorkerStop(Int8 CallbackCount, Pointer pqmsg, Boolean WindowDelegated, Boolean WasWindowDelegated, Boolean Delegated, Boolean WasDelegated, Boolean Processed, Boolean fDelayedFree, Pointer hwnd, Pointer WParam, Pointer LParam, UInt32 message, UInt32 inputReadyTimeMs, UInt32 hdfResponse)	Stop	MessagePumpInternalAndInput	DelegatedInputWorker	Informational		
+Microsoft-Windows-Win32k	156	0	PointerDeviceMessage(UInt32 bNew, UInt32 ulContactId, UInt32 dwCursorId, Int32 X, Int32 Y)		MessagePumpInternalAndInput	PointerDeviceMessage	Informational		
+Microsoft-Windows-Win32k	157	0	PointerMessageGenerationStart(UInt16 wCursorId, UInt16 wPointerId)	Start	PointerInput	PointerMessageGeneration	Informational		
+Microsoft-Windows-Win32k	158	0	PointerMessageGenerationStop(UInt16 wCursorId, UInt16 wPointerId)	Stop	PointerInput	PointerMessageGeneration	Informational		
+Microsoft-Windows-Win32k	159	0	PointerFrameCoalesce(UInt16 wCursorId, UInt16 wPointerId, UInt32 dwReason)		PointerInput	PointerFrameCoalesce	Informational		
+Microsoft-Windows-Win32k	160	0	SmoothRotationStart(UInt32 Orientation, Boolean SensorOriginated, UInt32 ActiveProcessId)	Start	UIUnresponsiveness AutoRotation	SmoothRotation	Informational		
+Microsoft-Windows-Win32k	161	0	SmoothRotationStop(UInt32 Orientation, Boolean SensorOriginated)	Stop	UIUnresponsiveness AutoRotation	SmoothRotation	Informational		
+Microsoft-Windows-Win32k	162	0	DCompGetBatch(Pointer pBatch)		Updates	DCompGetBatch	Informational		
+Microsoft-Windows-Win32k	163	0	ExclusiveUserCrit(UInt64 AcquireQpcCounts, UInt32 AcquireTimeMs, UInt64 Token)		Contention	ExclusiveUserCrit	Informational		
+Microsoft-Windows-Win32k	164	0	ExclusiveUserCrit164(UInt64 AcquireQpcCounts, UInt32 AcquireTimeMs, UInt64 Token)		Contention	ExclusiveUserCrit	Informational		
+Microsoft-Windows-Win32k	165	0	SharedUserCrit(UInt64 AcquireQpcCounts, UInt32 AcquireTimeMs, UInt64 Token)		Contention	SharedUserCrit	Informational		
+Microsoft-Windows-Win32k	166	0	SharedUserCrit166(UInt64 AcquireQpcCounts, UInt32 AcquireTimeMs, UInt64 Token)		Contention	SharedUserCrit	Informational		
+Microsoft-Windows-Win32k	167	0	ReleaseUserCrit(UInt64 HoldQpcCounts, UInt32 HoldTimeMs, UInt64 Token)		Contention	ReleaseUserCrit	Informational		
+Microsoft-Windows-Win32k	168	0	SleepInputIdle(Pointer pti)		MessagePumpInternalAndInput	SleepInputIdle	Informational		
+Microsoft-Windows-Win32k	169	0	WakeInputIdle(Pointer pti)		MessagePumpInternalAndInput	WakeInputIdle	Informational		
+Microsoft-Windows-Win32k	170	0	EdgyDetectionStart()	Start	UserActivity PointerInput	EdgyDetection	Informational		
+Microsoft-Windows-Win32k	171	0	EdgyDetectionStop(UInt32 Info)	Stop	UserActivity PointerInput	EdgyDetection	Informational		
+Microsoft-Windows-Win32k	172	0	ImmersiveInputProcessDelay(UInt32 Flags, UInt32 TimeSinceInputRemoveMs, UInt32 TimeSinceOldestInputMs, UnicodeString ClassName, UnicodeString TopLevelClassName, UnicodeString PackageMoniker, UnicodeString AppUserModelId, UInt32 MessageId, UInt64 WParam)		UIUnresponsiveness	ImmersiveInputProcessDelay	Informational		
+Microsoft-Windows-Win32k	173	0	ImmersiveMessageCheckDelay(UInt32 Flags, UInt32 DelayTimeMs, UInt32 TimeSinceInputRemoveMs, UInt32 TimeSinceOldestInputMs, UnicodeString ClassName, UnicodeString TopLevelClassName, UnicodeString PackageMoniker, UnicodeString AppUserModelId, UInt32 MessageId, UInt64 WParam)		UIUnresponsiveness	ImmersiveMessageCheckDelay	Informational		
+Microsoft-Windows-Win32k	174	0	THQAEventStart()	Start	MessagePumpInternalAndInput	THQAEvent	Informational		
+Microsoft-Windows-Win32k	175	0	THQAEventStop()	Stop	MessagePumpInternalAndInput	THQAEvent	Informational		
+Microsoft-Windows-Win32k	176	0	PointerPredictionStart(UInt32 ulContactId)	Start	MessagePumpInternalAndInput	PointerPrediction	Informational		
+Microsoft-Windows-Win32k	177	0	PointerPredictionStop(UInt32 ulContactId)	Stop	MessagePumpInternalAndInput	PointerPrediction	Informational		
+Microsoft-Windows-Win32k	178	0	MoveRgn(UInt64 hLogicalSurface, UInt32 RgnType, Int16 rcBounds, UInt32 NumRects, Int64 rcData)		Updates	MoveRgn	Informational		
+Microsoft-Windows-Win32k	179	0	DirtyRgn(UInt64 hLogicalSurface, UInt32 RgnType, Int16 rcBounds, UInt32 NumRects, Int64 rcData)		Updates	DirtyRgn	Informational		
+Microsoft-Windows-Win32k	180	0	LogicalSurfRemovedTranslationFromMove(Pointer hwnd, UInt32 DirtyLeft, UInt32 DirtyTop, UInt32 DirtyRight, UInt32 DirtyBottom)		Updates	LogicalSurfRemovedTranslationFromMove	Informational		
+Microsoft-Windows-Win32k	181	0	DirtyRectUpdate(Pointer hwnd, UInt32 DirtyLeft, UInt32 DirtyTop, UInt32 DirtyRight, UInt32 DirtyBottom)		Updates	DirtyRectUpdate	Informational		
+Microsoft-Windows-Win32k	182	0	TranslationUpdateOffsetDWM(Pointer hwnd, Int32 Offsetx, Int32 Offsety)		Rendering	TranslationUpdateOffsetDWM	Informational		
+Microsoft-Windows-Win32k	183	0	DwmGetRgn(UInt64 hLogicalSurface, UInt32 RgnType, Int16 rcBounds, UInt32 NumRects, Int64 rcData)		Updates	DwmGetRgn	Informational		
+Microsoft-Windows-Win32k	184	0	PointerFrameCoalesceStart184(UInt32 FrameId, UInt32 PointerCount, UInt32 PendingPointerCount)	Start	PointerInput	PointerFrameCoalesce	Informational		
+Microsoft-Windows-Win32k	185	0	PointerFrameCoalesceStop185(UInt32 FrameId, UInt32 PointerCount, UInt32 PendingPointerCount)	Stop	PointerInput	PointerFrameCoalesce	Informational		
+Microsoft-Windows-Win32k	186	0	PointerFrameCoalesce186(UInt16 wCursorId, UInt16 wPointerId, UInt32 dwReason)		PointerInput	PointerFrameCoalesce	Informational		
+Microsoft-Windows-Win32k	187	0	InternalSetTimerCoalescing(Pointer Hwnd, UInt32 uId, UInt32 uElapse, UInt32 uCoalescingTolerance, UInt32 uType)		TimerInfo	InternalSetTimerCoalescing	Informational		
+Microsoft-Windows-Win32k	188	0	InternalSetTimerNoCoalescing(Pointer Hwnd, UInt32 uId, UInt32 uElapse, UInt32 uType)		TimerInfo	InternalSetTimerNoCoalescing	Informational		
+Microsoft-Windows-Win32k	189	0	KillTimer(Pointer Hwnd, UInt32 uId)		TimerInfo	KillTimer	Informational		
+Microsoft-Windows-Win32k	190	0	ProcTimerCoalescing(Pointer Hwnd, UInt32 uId, UInt32 uElapse, UInt32 uCoalescingTolerance, UInt32 uType)		TimerInfo	ProcTimerCoalescing	Informational		
+Microsoft-Windows-Win32k	191	0	ProcTimerNoCoalescing(Pointer Hwnd, UInt32 uId, UInt32 uElapse, UInt32 uType)		TimerInfo	ProcTimerNoCoalescing	Informational		
+Microsoft-Windows-Win32k	192	0	DrvChangeDisplaySettingsStart()	Start		DrvChangeDisplaySettings	Informational		
+Microsoft-Windows-Win32k	193	0	DrvChangeDisplaySettingsStop()	Stop		DrvChangeDisplaySettings	Informational		
+Microsoft-Windows-Win32k	194	0	ChangeDisplayModeStart()	Start		ChangeDisplayMode	Informational		
+Microsoft-Windows-Win32k	195	0	ChangeDisplayModeStop()	Stop		ChangeDisplayMode	Informational		
+Microsoft-Windows-Win32k	196	0	PseudoDevCreationStart()	Start	MessagePumpInternalAndInput	PseudoDevCreation	Informational		
+Microsoft-Windows-Win32k	197	0	PseudoDevCreationStop()	Stop	MessagePumpInternalAndInput	PseudoDevCreation	Informational		
+Microsoft-Windows-Win32k	198	0	TouchHWTimeStamp(Int32 ScanTime, Int32 dwTime, UInt64 QPC, Int32 XRawPosition, Int32 YRawPosition, Int32 XPredictedPosition, Int32 YPredictedPosition)		MessagePumpInternalAndInput	TouchHWTimeStamp	Informational		
+Microsoft-Windows-Win32k	199	0	PointerFrameCoalesce199(UInt16 wCursorId, UInt16 wPointerId, UInt32 dwReason)		PointerInput	PointerFrameCoalesce	Informational		
+Microsoft-Windows-Win32k	200	0	PointerFrameCoalesce200(UInt16 wCursorId, UInt16 wPointerId, UInt32 dwReason)		PointerInput	PointerFrameCoalesce	Informational		
+Microsoft-Windows-Win32k	201	0	TokenCompositionSurfaceObject(Pointer pToken, Pointer pCompositionSurfaceObject, UInt32 SwapChainIndex, UInt64 PresentCount, UInt64 CompositionSurfaceLuid, UInt64 BindId)		Updates	TokenCompositionSurfaceObject	Informational		
+Microsoft-Windows-Win32k	202	0	CompositionSurfaceObjectUpdate(Pointer pCompositionSurfaceObject, UInt32 SwapChainIndex)		Updates	CompositionSurfaceObjectUpdate	Informational		
+Microsoft-Windows-Win32k	203	0	QueueEventMessage(Int8 CallbackCount, Pointer pqmsg, Pointer pti, UInt32 dwQEvent, Pointer hwnd)		MessagePumpInternalAndInput	QueueEventMessage	Informational		
+Microsoft-Windows-Win32k	204	0	RetrieveQueueEventMessage(Int8 CallbackCount, Pointer pqmsg, Pointer pti, UInt32 dwQEvent, Pointer hwnd)		MessagePumpInternalAndInput	RetrieveQueueEventMessage	Informational		
+Microsoft-Windows-Win32k	205	0	ForegroundWindowFullScreenStart()	Start	UIUnresponsiveness AutoRotation	ForegroundWindowFullScreen	Informational		
+Microsoft-Windows-Win32k	206	0	ForegroundWindowFullScreenStop()	Stop	UIUnresponsiveness AutoRotation	ForegroundWindowFullScreen	Informational		
+Microsoft-Windows-Win32k	207	0	ChangeDisplayModeBroadcast()			ChangeDisplayModeBroadcast	Informational		
+Microsoft-Windows-Win32k	213	0	ContactVisualization(UInt32 data)		UserActivity Rendering	ContactVisualization	Informational		
+Microsoft-Windows-Win32k	214	0	ChangeDisplayModeDeferral()			ChangeDisplayModeDeferral	Informational		
+Microsoft-Windows-Win32k	215	0	ConvertibleState(UInt32 ConvertibleState)		UserActivity	ConvertibleState	Informational		
+Microsoft-Windows-Win32k	216	0	DockState(UInt32 DockState)		UserActivity	DockState	Informational		
+Microsoft-Windows-Win32k	217	0	TouchPadHWTimeStamp(UInt32 ScanTime, UInt32 dwTime, UInt64 QPCTime, UInt32 XLogicalT, UInt32 YLogicalT, UInt32 XLogicalC, UInt32 YLogicalC, UInt32 XHimetricT, UInt32 YHimetricT, Boolean Button, UInt32 Count, UInt32 Identifier, UInt32 Width, UInt32 Height, Boolean Confidence, UInt32 Pressure, UInt32 DeviceType)		TouchInput	TouchPadHWTimeStamp	Informational		
+Microsoft-Windows-Win32k	218	0	TransformAgeDecay(Pointer InputTransformList, UInt64 PerformanceCount)			TransformAgeDecay	Informational		
+Microsoft-Windows-Win32k	219	0	WakeDIT(Int8 CallbackCount, Int32 WakeReason)		MessagePumpInternalAndInput ComponentHosting	WakeDIT	Informational		
+Microsoft-Windows-Win32k	220	0	ArmDitMouseFlush()		MessagePumpInternalAndInput ComponentHosting	ArmDitMouseFlush	Informational		
+Microsoft-Windows-Win32k	221	0	ProcessQueuedMouseEventsStart()	Start	MessagePumpInternalAndInput ComponentHosting	ProcessQueuedMouseEvents	Informational		
+Microsoft-Windows-Win32k	222	0	ProcessQueuedMouseEventsStop()	Stop	MessagePumpInternalAndInput ComponentHosting	ProcessQueuedMouseEvents	Informational		
+Microsoft-Windows-Win32k	223	0	DITSpeedHitTestFailedRevalidation(Pointer Hwnd)		MessagePumpInternalAndInput ComponentHosting	DITSpeedHitTestFailedRevalidation	Informational		
+Microsoft-Windows-Win32k	224	0	InputRedirection(Pointer hDCompInputHandle, Pointer Hwnd, UInt64 XformQPCTime, UInt32 XformStored)		MessagePumpInternalAndInput ComponentHosting	InputRedirection	Informational		
+Microsoft-Windows-Win32k	225	0	OnInputXformUpdate(Pointer Hwnd, UInt64 XformQPCTime, UInt32 XformUpdated)		MessagePumpInternalAndInput ComponentHosting	OnInputXformUpdate	Informational		
+Microsoft-Windows-Win32k	226	0	DitWaitForRitDisEngagement()		MessagePumpInternalAndInput ComponentHosting	DitWaitForRitDisEngagement	Informational		
+Microsoft-Windows-Win32k	227	0	RitDisEngaged()		MessagePumpInternalAndInput ComponentHosting	RitDisEngaged	Informational		
+Microsoft-Windows-Win32k	228	0	DitEngaged()		MessagePumpInternalAndInput ComponentHosting	DitEngaged	Informational		
+Microsoft-Windows-Win32k	229	0	RitReEngaged()		MessagePumpInternalAndInput ComponentHosting	RitReEngaged	Informational		
+Microsoft-Windows-Win32k	230	0	DitDisEngaged()		MessagePumpInternalAndInput ComponentHosting	DitDisEngaged	Informational		
+Microsoft-Windows-Win32k	231	0	DitTerminated()		MessagePumpInternalAndInput ComponentHosting	DitTerminated	Informational		
+Microsoft-Windows-Win32k	232	0	DitShutdown()		MessagePumpInternalAndInput ComponentHosting	DitShutdown	Informational		
+Microsoft-Windows-Win32k	233	0	TouchPadAAP(UInt32 LastKeyDownTime, UInt32 LastKeyUpTime, UInt32 TapTime, Boolean Blocked, UInt32 Feature)		TouchInput	TouchPadAAP	Informational		
+Microsoft-Windows-Win32k	234	0	MouseInputApc()		MessagePumpInternalAndInput ComponentHosting	MouseInputApc	Informational		
+Microsoft-Windows-Win32k	235	0	MouseInputCoalesced()		MessagePumpInternalAndInput ComponentHosting	MouseInputCoalesced	Informational		
+Microsoft-Windows-Win32k	236	0	TouchPadTypeDiscovered(UInt32 deviceType)		TouchInput	TouchPadTypeDiscovered	Informational		
+Microsoft-Windows-Win32k	237	0	TouchPadEnabledStatusChangeStart()	Start	TouchInput	TouchPadEnabledStatusChange	Informational		
+Microsoft-Windows-Win32k	238	0	TouchPadEnabledStatusChangeStop()	Stop	TouchInput	TouchPadEnabledStatusChange	Informational		
+Microsoft-Windows-Win32k	239	0	PTPReadThresholdsStart()	Start	TouchInput	PTPReadThresholds	Informational		
+Microsoft-Windows-Win32k	240	0	PTPReadThresholdsStop()	Stop	TouchInput	PTPReadThresholds	Informational		
+Microsoft-Windows-Win32k	241	0	TouchPadConfidenceCleared(UInt32 ContactId, Boolean OnUp, Boolean NeedsUp)		TouchInput	TouchPadConfidenceCleared	Informational		
+Microsoft-Windows-Win32k	242	0	TouchPadConfidenceUpped(UInt32 ContactId)		TouchInput	TouchPadConfidenceUpped	Informational		
+Microsoft-Windows-Win32k	243	0	PTPElasticDragModeStart()	Start	TouchInput	PTPElasticDragMode	Informational		
+Microsoft-Windows-Win32k	244	0	PTPElasticDragModeStop()	Stop	TouchInput	PTPElasticDragMode	Informational		
+Microsoft-Windows-Win32k	245	0	LegacyTouchPadDetectionStart()	Start	TouchInput	LegacyTouchPadDetection	Informational		
+Microsoft-Windows-Win32k	246	0	LegacyTouchPadDetectionStop()	Stop	TouchInput	LegacyTouchPadDetection	Informational		
+Microsoft-Windows-Win32k	247	0	LegacyTouchPadDetection()		TouchInput	LegacyTouchPadDetection	Informational		
+Microsoft-Windows-Win32k	248	0	LegacyTouchPadDetection248()		TouchInput	LegacyTouchPadDetection	Informational		
+Microsoft-Windows-Win32k	249	0	TouchPadCurtainState(Boolean CurtainsOn)		TouchInput	TouchPadCurtainState	Informational		
+Microsoft-Windows-Win32k	250	0	TouchPadCurtainSize(UInt32 Top, UInt32 Left, UInt32 Right, Boolean Enabled)		TouchInput	TouchPadCurtainSize	Informational		
+Microsoft-Windows-Win32k	251	0	TouchpadStopInertia()		TouchInput	TouchpadStopInertia	Informational		
+Microsoft-Windows-Win32k	252	0	TouchpadStopInertia252()		TouchInput	TouchpadStopInertia	Informational		
+Microsoft-Windows-Win32k	253	0	TouchpadStopInertia253()		TouchInput	TouchpadStopInertia	Informational		
+Microsoft-Windows-Win32k	254	0	TrappedAppContainerRender(AnsiString RenderSourceProcessName, UnicodeString RenderSourcePackageName, AnsiString RenderTargetProcessName, UnicodeString RenderTargetPackageName)		TrappedACRendering	TrappedAppContainerRender	Error		
+Microsoft-Windows-Win32k	255	0	CursorSize(UInt32 iCursorDim, UInt32 cx, UInt32 cy)		Updates	CursorSize	Informational		
+Microsoft-Windows-Win32k	256	0	DitMmcssWorkStart()	Start	MessagePumpInternalAndInput ComponentHosting	DitMmcssWork	Informational		
+Microsoft-Windows-Win32k	257	0	DitMmcssWorkStop()	Stop	MessagePumpInternalAndInput ComponentHosting	DitMmcssWork	Informational		
+Microsoft-Windows-Win32k	258	0	FocusedProcessChangeGained(UInt32 SessionId, UInt32 NewProcessId, FILETIME NewProcessCreateTime)		UserActivity	FocusedProcessChangeGained	Informational		
+Microsoft-Windows-Win32k	259	0	FocusedProcessChangeLost(UInt32 SessionId, UInt32 OldProcessId, FILETIME OldProcessCreateTime)		UserActivity	FocusedProcessChangeLost	Informational		
+Microsoft-Windows-Win32k	260	0	FontLoadAttempt(UnicodeString SourceProcessName, UInt32 SourceType, UnicodeString FontSourcePath, Boolean Blocked)		Fonts	FontLoadAttempt	Informational		
+Microsoft-Windows-Win32k	301	0	TokenStateChanged(Pointer pCompositionSurfaceObject, UInt32 SwapChainIndex, UInt32 PresentCount, UInt64 FenceValue, UInt32 NewState, Boolean IndependentFlip, Boolean SkipIndependentFlip, UInt64 CompositionSurfaceLuid, UInt64 BindId)		Updates	TokenStateChanged	Informational		
+Microsoft-Windows-Win32k	400	0	DCompDeferBatch(UInt32 channelHandle, Pointer pBatch, UInt32 batchID, UInt64 submissionTime, UInt64 submissionDeadline, UInt32 deferReason)		Updates	DCompDeferBatch	Informational		
+Microsoft-Windows-Win32k	401	0	TouchPadHIDProcessingStart()	Start	MessagePumpInternalAndInput	TouchPadHIDProcessing	Informational		
+Microsoft-Windows-Win32k	402	0	TouchPadHIDProcessingStop()	Stop	MessagePumpInternalAndInput	TouchPadHIDProcessing	Informational		
+Microsoft-Windows-Win32k	403	0	TouchPadWMPointerProcessingStart()	Start	MessagePumpInternalAndInput	TouchPadWMPointerProcessing	Informational		
+Microsoft-Windows-Win32k	404	0	TouchPadWMPointerProcessingStop()	Stop	MessagePumpInternalAndInput	TouchPadWMPointerProcessing	Informational		
+Microsoft-Windows-Win32k	405	0	TouchPadGesture()		MessagePumpInternalAndInput	TouchPadGesture	Informational		
+Microsoft-Windows-Win32k	406	0	CopyPointerInputFrameStart()	Start	MessagePumpInternalAndInput	CopyPointerInputFrame	Informational		
+Microsoft-Windows-Win32k	407	0	CopyPointerInputFrameStop()	Stop	MessagePumpInternalAndInput	CopyPointerInputFrame	Informational		
+Microsoft-Windows-Win32k	410	0	TouchPadLatencyModeProcessingStart()	Start		TouchPadLatencyModeProcessing	Informational		
+Microsoft-Windows-Win32k	411	0	TouchPadLatencyModeProcessingStop()	Stop		TouchPadLatencyModeProcessing	Informational		
+Microsoft-Windows-Win32k	412	0	DCompBeginFrame(UInt64 hConnection, UInt32 SyncRefreshCount)		Updates	DCompBeginFrame	Informational		
+Microsoft-Windows-Win32k	413	0	TokenIndependentFlipSkipComplete(UInt32 SyncRefreshCount, UInt32 PresentCount, UInt64 CompositionSurfaceLuid, UInt64 BindId)		Updates	TokenIndependentFlipSkipComplete	Informational		
+Microsoft-Windows-Win32k	414	0	DwmManipulationFrameStart(UInt32 FrameId, UInt32 PointerCount)		Updates	DwmManipulationFrameStart	Informational		
+Microsoft-Windows-Win32k	415	0	DwmManipulationFrameRouted(UInt32 FrameId, UInt32 PointerCount)		Updates	DwmManipulationFrameRouted	Informational		
+Microsoft-Windows-Win32k	416	0	ExclusiveUserCritTelemetry(UInt64 AcquireQpcCounts, UInt32 AcquireTimeMs, UInt64 Token)			ExclusiveUserCritTelemetry	Informational		
+Microsoft-Windows-Win32k	417	0	SharedUserCritTelemetry(UInt64 AcquireQpcCounts, UInt32 AcquireTimeMs, UInt64 Token)			SharedUserCritTelemetry	Informational		
+Microsoft-Windows-Win32k	1000	0	task_01000(UInt32 eventMin, UInt32 eventMax, UInt32 idEventProcess, UInt32 idEventThread, UInt32 Flags, Pointer HookInstance)		AuditApiCalls	task_0	Informational		
+Microsoft-Windows-Win32k	1001	0	task_01001(UInt32 ReturnValue)		AuditApiCalls	task_0	Informational		
+Microsoft-Windows-Win32k	10002	0	WindowLayoutChangeStop(UInt32 hWnd, UInt32 Packed_High_Height_Low_Width, UnicodeString PRAID, UnicodeString PackageFullName)	Stop		WindowLayoutChange	Informational		

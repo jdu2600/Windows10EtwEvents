@@ -1,0 +1,50 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-MSMPEG2VDEC	0	0	H264_NotifyDecode(UInt32 IDRCount, Int32 POC, UInt8 PictureType)			H264_NotifyDecode	Informational		
+Microsoft-Windows-MSMPEG2VDEC	1	0	H264_NotifySkip(UInt32 IDRCount, Int32 POC, UInt8 PictureType)			H264_NotifySkip	Informational		
+Microsoft-Windows-MSMPEG2VDEC	2	0	H264_NotifyOutput(UInt32 IDRCount, Int32 POC)			H264_NotifyOutput	Informational		
+Microsoft-Windows-MSMPEG2VDEC	3	0	H264_DecodeTaskStart(UInt8 TaskID, UInt32 IDRCount, Int32 POC)	Start		H264_DecodeTask	Verbose		
+Microsoft-Windows-MSMPEG2VDEC	4	0	H264_DecodeTaskStop(UInt8 TaskID, UInt32 IDRCount, Int32 POC)	Stop		H264_DecodeTask	Verbose		
+Microsoft-Windows-MSMPEG2VDEC	5	0	H264_EncryptInputStart()	Start		H264_EncryptInput	Verbose		
+Microsoft-Windows-MSMPEG2VDEC	6	0	H264_EncryptInputStop()	Stop		H264_EncryptInput	Verbose		
+Microsoft-Windows-MSMPEG2VDEC	7	0	H264_NotifyCorruptedInput()			H264_NotifyCorruptedInput	Verbose		
+Microsoft-Windows-MSMPEG2VDEC	8	0	H264_SetQualityMode(UInt8 QualityMode)			H264_SetQualityMode	Verbose		
+Microsoft-Windows-MSMPEG2VDEC	9	0	H264_FormatChange(UInt32 Width, UInt32 Height, UInt32 SARWidth, UInt32 SARHeight, UInt8 BitDepthLuma, UInt8 BitDepthChroma, UInt8 ChromaFormat)			H264_FormatChange	Informational		
+Microsoft-Windows-MSMPEG2VDEC	10	0	MPEG2_NotifyDiscover(UInt8 PictureType)			MPEG2_NotifyDiscover	Informational		
+Microsoft-Windows-MSMPEG2VDEC	11	0	MPEG2_NotifySkip(UInt8 PictureType)			MPEG2_NotifySkip	Informational		
+Microsoft-Windows-MSMPEG2VDEC	12	0	MPEG2_DecodeTaskStart()	Start		MPEG2_DecodeTask	Verbose		
+Microsoft-Windows-MSMPEG2VDEC	14	0	MPEG2_NotifyCorruptedInput()			MPEG2_NotifyCorruptedInput	Verbose		
+Microsoft-Windows-MSMPEG2VDEC	15	0	DShow_PlaybackStart()	Start		DShow_Playback	Informational		
+Microsoft-Windows-MSMPEG2VDEC	16	0	DShow_PlaybackStop()	Stop		DShow_Playback	Informational		
+Microsoft-Windows-MSMPEG2VDEC	17	0	DShow_NotifyCodec(UInt8 CodecID)			DShow_NotifyCodec	Informational		
+Microsoft-Windows-MSMPEG2VDEC	18	0	DShow_ReceiveStart()	Start		DShow_Receive	Verbose		
+Microsoft-Windows-MSMPEG2VDEC	19	0	DShow_ReceiveStop()	Stop		DShow_Receive	Verbose		
+Microsoft-Windows-MSMPEG2VDEC	20	0	DShow_DeliverStart()	Start		DShow_Deliver	Verbose		
+Microsoft-Windows-MSMPEG2VDEC	21	0	DShow_DeliverStop()	Stop		DShow_Deliver	Verbose		
+Microsoft-Windows-MSMPEG2VDEC	22	0	DShow_SetOutputAttribute(Int64 SampleTime, Int64 SampleDuration)			DShow_SetOutputAttribute	Verbose		
+Microsoft-Windows-MSMPEG2VDEC	23	0	DShow_NotifyQuality(UInt8 QualityType, Int32 Proportion, Int64 Late, Int64 TimeStamp)			DShow_NotifyQuality	Verbose		
+Microsoft-Windows-MSMPEG2VDEC	24	0	DShow_NewDXVAConfig(GUID DecoderGUID, GUID ConfigBitstreamEncryption, GUID ConfigMBcontrolEncryption, GUID ConfigResidDiffEncryption, UInt32 ConfigBitstreamRaw, UInt32 ConfigMBcontrolRasterOrder, UInt32 ConfigResidDiffHost, UInt32 ConfigSpatialResid8, UInt32 ConfigResid8Subtraction, UInt32 ConfigSpatialHost8or9Clipping, UInt32 ConfigSpatialResidInterleaved, UInt32 ConfigIntraResidUnsigned, UInt32 ConfigResidDiffAccelerator, UInt32 ConfigHostInverseScan, UInt32 ConfigSpecificIDCT, UInt32 Config4GroupedCoefs, UInt32 ConfigMinRenderTargetBuffCount)			DShow_NewDXVAConfig	Verbose		
+Microsoft-Windows-MSMPEG2VDEC	25	0	DShow_GetOutputStart()	Start		DShow_GetOutput	Verbose		
+Microsoft-Windows-MSMPEG2VDEC	26	0	DShow_GetOutputStop()	Stop		DShow_GetOutput	Verbose		
+Microsoft-Windows-MSMPEG2VDEC	27	0	MFT_PlaybackStart()	Start		MFT_Playback	Informational		
+Microsoft-Windows-MSMPEG2VDEC	28	0	MFT_PlaybackStop()	Stop		MFT_Playback	Informational		
+Microsoft-Windows-MSMPEG2VDEC	29	0	MFT_ProcessInputStart()	Start		MFT_ProcessInput	Verbose		
+Microsoft-Windows-MSMPEG2VDEC	30	0	MFT_ProcessInputStop()	Stop		MFT_ProcessInput	Verbose		
+Microsoft-Windows-MSMPEG2VDEC	31	0	MFT_ProcessOutputStart()	Start		MFT_ProcessOutput	Verbose		
+Microsoft-Windows-MSMPEG2VDEC	32	0	MFT_ProcessOutputStop()	Stop		MFT_ProcessOutput	Verbose		
+Microsoft-Windows-MSMPEG2VDEC	33	0	MFT_SetOutputAttribute(Int64 SampleTime, Int64 SampleDuration, Int8 PicStructPresent, Int8 PicStruct)			MFT_SetOutputAttribute	Verbose		
+Microsoft-Windows-MSMPEG2VDEC	34	0	MFT_NotifySampleLag(Int64 SampleLag)			MFT_NotifySampleLag	Verbose		
+Microsoft-Windows-MSMPEG2VDEC	35	0	MFT_ProcessMessage(UInt32 Message)			MFT_ProcessMessage	Verbose		
+Microsoft-Windows-MSMPEG2VDEC	36	0	DXVA_CreateVideoDecoderStart(GUID DecoderGUID, UInt32 NumSurfaces, UInt32 Width, UInt32 Height, UInt32 RenderTarget, UInt32 D3DFormat)	Start		DXVA_CreateVideoDecoder	Informational		
+Microsoft-Windows-MSMPEG2VDEC	37	0	DXVA_CreateVideoDecoderStop(GUID DecoderGUID, UInt32 NumSurfaces, UInt32 Width, UInt32 Height, UInt32 RenderTarget, UInt32 D3DFormat)	Stop		DXVA_CreateVideoDecoder	Informational		
+Microsoft-Windows-MSMPEG2VDEC	38	0	DXVA_BeginFrameStart()	Start		DXVA_BeginFrame	Verbose		
+Microsoft-Windows-MSMPEG2VDEC	39	0	DXVA_BeginFrameStop()	Stop		DXVA_BeginFrame	Verbose		
+Microsoft-Windows-MSMPEG2VDEC	40	0	DXVA_GetBufferStart()	Start		DXVA_GetBuffer	Verbose		
+Microsoft-Windows-MSMPEG2VDEC	41	0	DXVA_GetBufferStop()	Stop		DXVA_GetBuffer	Verbose		
+Microsoft-Windows-MSMPEG2VDEC	42	0	DXVA_ReleaseBufferStart()	Start		DXVA_ReleaseBuffer	Verbose		
+Microsoft-Windows-MSMPEG2VDEC	43	0	DXVA_ReleaseBufferStop()	Stop		DXVA_ReleaseBuffer	Verbose		
+Microsoft-Windows-MSMPEG2VDEC	44	0	DXVA_ExecuteStart()	Start		DXVA_Execute	Verbose		
+Microsoft-Windows-MSMPEG2VDEC	45	0	DXVA_ExecuteStop()	Stop		DXVA_Execute	Verbose		
+Microsoft-Windows-MSMPEG2VDEC	46	0	DXVA_EndFrameStart()	Start		DXVA_EndFrame	Verbose		
+Microsoft-Windows-MSMPEG2VDEC	47	0	DXVA_EndFrameStop()	Stop		DXVA_EndFrame	Verbose		
+Microsoft-Windows-MSMPEG2VDEC	48	0	MPEG2_EncryptInputStart()	Start		MPEG2_EncryptInput	Verbose		
+Microsoft-Windows-MSMPEG2VDEC	49	0	MPEG2_EncryptInputStop()	Stop		MPEG2_EncryptInput	Verbose		

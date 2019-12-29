@@ -1,0 +1,167 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-WinRM	2	0	WSManAPIInitializeStart()	Start	Keyword.Client	WSManAPIInitialize	Informational		
+Microsoft-Windows-WinRM	3	0	WSManAPIInitializeStop(UInt32 errorCode)	Stop	Keyword.Client	WSManAPIInitialize	Error		
+Microsoft-Windows-WinRM	4	0	WSManAPIDeinitializeStart()	Start	Keyword.Client	WSManAPIDeinitialize	Informational		
+Microsoft-Windows-WinRM	5	0	WSManAPIDeinitializeStop(UInt32 errorCode)	Stop	Keyword.Client	WSManAPIDeinitialize	Error		
+Microsoft-Windows-WinRM	6	0	WSManSessioninitializeStart(UnicodeString connection)	Start	Keyword.Client	WSManSessioninitialize	Informational		
+Microsoft-Windows-WinRM	7	0	WSManSessioninitializeStop(UInt32 errorCode)	Stop	Keyword.Client	WSManSessioninitialize	Error		
+Microsoft-Windows-WinRM	8	0	WSManSessiondeinitializeStart()	Start	Keyword.Client	WSManSessiondeinitialize	Informational		
+Microsoft-Windows-WinRM	9	0	WSManSessiondeinitializeStop(UInt32 errorCode)	Stop	Keyword.Client	WSManSessiondeinitialize	Error		
+Microsoft-Windows-WinRM	10	0	WSManAPIcall(UInt32 optionCode, UnicodeString optionName, UnicodeString optionValue)		Keyword.Client	WSManAPIcall	Informational		
+Microsoft-Windows-WinRM	11	0	WSManAPIcallStart(UnicodeString resourceUri, UnicodeString shellId)	Start	Keyword.Client	WSManAPIcall	Informational		
+Microsoft-Windows-WinRM	12	0	WSManAPIcallStop(UInt32 errorCode)	Stop	Keyword.Client	WSManAPIcall	Error		
+Microsoft-Windows-WinRM	13	0	WSManAPIcallStart13(UnicodeString commandId)	Start	Keyword.Client	WSManAPIcall	Informational		
+Microsoft-Windows-WinRM	14	0	WSManAPIcallStop14(UInt32 errorCode)	Stop	Keyword.Client	WSManAPIcall	Error		
+Microsoft-Windows-WinRM	15	0	WSManAPIcallStart15()	Start	Keyword.Client	WSManAPIcall	Informational		
+Microsoft-Windows-WinRM	16	0	WSManAPIcallStart16()	Start	Keyword.Client	WSManAPIcall	Informational		
+Microsoft-Windows-WinRM	28	0	WSManAPIcallStop28(UnicodeString apiCall)	Stop	Keyword.Client	WSManAPIcall	Informational		
+Microsoft-Windows-WinRM	29	0	WSManAPIInitializeStop29()	Stop	Keyword.Client	WSManAPIInitialize	Informational		
+Microsoft-Windows-WinRM	30	0	WSManAPIDeinitializeStop30()	Stop	Keyword.Client	WSManAPIDeinitialize	Informational		
+Microsoft-Windows-WinRM	31	0	WSManSessioninitializeStop31()	Stop	Keyword.Client	WSManSessioninitialize	Informational		
+Microsoft-Windows-WinRM	32	0	WSManAPIcall32(UInt32 optionCode, UnicodeString optionName, UInt32 errorCode)		Keyword.Client	WSManAPIcall	Error		
+Microsoft-Windows-WinRM	33	0	WSManSessiondeinitializeStop33()	Stop	Keyword.Client	WSManSessiondeinitialize	Informational		
+Microsoft-Windows-WinRM	37	0	WSManAPIcallStop37(UInt32 errorCode)	Stop	Keyword.Client	WSManAPIcall	Error		
+Microsoft-Windows-WinRM	38	0	WSManAPIcallStop38(UInt32 errorCode)	Stop	Keyword.Client	WSManAPIcall	Error		
+Microsoft-Windows-WinRM	40	0	WSManAPIcallStop40(UnicodeString operationName, UInt32 errorCode)	Stop	Keyword.Client	WSManAPIcall	Error		
+Microsoft-Windows-WinRM	41	0	WinRMMIProtocolHandlerStart(UnicodeString applicationID)	Start	Keyword.Client	WinRMMIProtocolHandler	Informational		
+Microsoft-Windows-WinRM	42	0	WinRMMIProtocolHandlerStop()	Stop	Keyword.Client	WinRMMIProtocolHandler	Informational		
+Microsoft-Windows-WinRM	43	0	WinRMMIProtocolHandlerStop43(UInt32 errorCode, UnicodeString errorMessage)	Stop	Keyword.Client	WinRMMIProtocolHandler	Error		
+Microsoft-Windows-WinRM	44	0	WinRMMISessionStart(UnicodeString destination)	Start	Keyword.Client	WinRMMISession	Informational		
+Microsoft-Windows-WinRM	45	0	WinRMMISessionStop()	Stop	Keyword.Client	WinRMMISession	Informational		
+Microsoft-Windows-WinRM	46	0	WinRMMISessionStop46(UInt32 errorCode, UnicodeString errorMessage)	Stop	Keyword.Client	WinRMMISession	Error		
+Microsoft-Windows-WinRM	47	0	WinRMMIOperationStart(UnicodeString operationType, UnicodeString namespaceName, UnicodeString className)	Start	Keyword.Client	WinRMMIOperation	Informational		
+Microsoft-Windows-WinRM	48	0	WinRMMIOperationStop()	Stop	Keyword.Client	WinRMMIOperation	Informational		
+Microsoft-Windows-WinRM	49	0	WinRMMIOperationStop49(UInt32 errorCode, UnicodeString errorMessage)	Stop	Keyword.Client	WinRMMIOperation	Error		
+Microsoft-Windows-WinRM	84	0	Requesthandling(UInt32 users)		Keyword.Server Keyword.QuotaViolation	Requesthandling	Error		
+Microsoft-Windows-WinRM	85	0	Requesthandling85(UnicodeString senderName, UInt32 concurrentShells)		Keyword.Server Keyword.QuotaViolation	Requesthandling	Error		
+Microsoft-Windows-WinRM	86	0	Requesthandling86(UInt32 errorCode)		Keyword.Server	Requesthandling	Error		
+Microsoft-Windows-WinRM	87	0	Requesthandling87(UInt32 errorCode)		Keyword.Server	Requesthandling	Error		
+Microsoft-Windows-WinRM	90	0	Requesthandling90()		Keyword.Server	Requesthandling	Informational		
+Microsoft-Windows-WinRM	91	0	Requesthandling91(UnicodeString resourceUri, UnicodeString shellId)		Keyword.Server	Requesthandling	Informational		
+Microsoft-Windows-WinRM	131	0	Responsehandling(UnicodeString location)		Keyword.Client	Responsehandling	Error		
+Microsoft-Windows-WinRM	132	0	ResponsehandlingStop(UnicodeString operationName)	Stop	Keyword.Client	Responsehandling	Informational		
+Microsoft-Windows-WinRM	135	0	Responsehandling135()		Keyword.Client	Responsehandling	Error		
+Microsoft-Windows-WinRM	136	0	Responsehandling136()		Keyword.Client	Responsehandling	Error		
+Microsoft-Windows-WinRM	137	0	Responsehandling137()		Keyword.Client	Responsehandling	Error		
+Microsoft-Windows-WinRM	138	0	Responsehandling138()		Keyword.Client	Responsehandling	Error		
+Microsoft-Windows-WinRM	139	0	Responsehandling139()		Keyword.Client	Responsehandling	Error		
+Microsoft-Windows-WinRM	142	0	ResponsehandlingStop142(UnicodeString operationName, UInt32 errorCode)	Stop	Keyword.Client	Responsehandling	Error		
+Microsoft-Windows-WinRM	145	0	WSManAPIcallStart145(UnicodeString operationName, UnicodeString resourceUri)	Start	Keyword.Client	WSManAPIcall	Informational		
+Microsoft-Windows-WinRM	161	0	Userauthentication(UnicodeString authFailureMessage)		Keyword.Client Keyword.Security	Userauthentication	Error		
+Microsoft-Windows-WinRM	162	0	Userauthentication162()		Keyword.Client Keyword.Security	Userauthentication	Error		
+Microsoft-Windows-WinRM	163	0	Userauthentication163(UnicodeString authClient, UnicodeString authServer1, UnicodeString authServer2, UnicodeString authServer3, UnicodeString authServer4, UnicodeString authServer5)		Keyword.Client Keyword.Security	Userauthentication	Error		
+Microsoft-Windows-WinRM	164	0	Userauthentication164(UnicodeString destinationMachine)		Keyword.Client Keyword.Security	Userauthentication	Error		
+Microsoft-Windows-WinRM	165	0	Userauthentication165(UnicodeString authProxy1, UnicodeString authProxy2, UnicodeString authProxy3, UnicodeString authProxy4, UnicodeString authProxy5)		Keyword.Client Keyword.Security	Userauthentication	Error		
+Microsoft-Windows-WinRM	171	0	Userauthentication171()		Keyword.Client Keyword.Security	Userauthentication	Error		
+Microsoft-Windows-WinRM	172	0	Userauthentication172(UnicodeString machineName, UnicodeString port, UnicodeString error1, UnicodeString error2, UnicodeString error3, UnicodeString error4, UnicodeString error5, UnicodeString error6, UnicodeString error7, UnicodeString error8)		Keyword.Client Keyword.Security	Userauthentication	Error		
+Microsoft-Windows-WinRM	173	0	Userauthentication173(UnicodeString param1, UnicodeString param2)		Keyword.Security Keyword.Error	Userauthentication	Error		
+Microsoft-Windows-WinRM	192	0	Userauthorization(UInt32 errorCode)		Keyword.Server Keyword.Security	Userauthorization	Informational		
+Microsoft-Windows-WinRM	193	0	Userauthorization193(UnicodeString param1, UnicodeString param2, UnicodeString param3)		Keyword.Server Keyword.Security	Userauthorization	Informational		
+Microsoft-Windows-WinRM	208	0	Winrmservicestart/stopStart()	Start	Keyword.Server	Winrmservicestart/stop	Informational		
+Microsoft-Windows-WinRM	209	0	Winrmservicestart/stop()		Keyword.Server	Winrmservicestart/stop	Informational		
+Microsoft-Windows-WinRM	210	0	Winrmservicestart/stop210(UInt32 errorCode)	Stop	Keyword.Server	Winrmservicestart/stop	Error		
+Microsoft-Windows-WinRM	211	0	Winrmservicestart/stop211()		Keyword.Server	Winrmservicestart/stop	Informational		
+Microsoft-Windows-WinRM	212	0	Winrmservicestart/stop212()	Stop	Keyword.Server	Winrmservicestart/stop	Informational		
+Microsoft-Windows-WinRM	213	0	Winrmservicestart/stop213()		Keyword.Server Keyword.Security	Winrmservicestart/stop	Error		
+Microsoft-Windows-WinRM	214	0	Winrmservicestart/stop214()		Keyword.Client Keyword.Security	Winrmservicestart/stop	Error		
+Microsoft-Windows-WinRM	215	0	Winrmservicestart/stop215(UnicodeString pluginName, UnicodeString errorcode, UnicodeString errordetail)		Keyword.Server Keyword.Security	Winrmservicestart/stop	Error		
+Microsoft-Windows-WinRM	216	0	Winrmservicestart/stop216(UnicodeString errorcode)		Keyword.Server	Winrmservicestart/stop	Error		
+Microsoft-Windows-WinRM	217	0	Winrmservicestart/stop217(UnicodeString pluginName, UInt32 errorcode)		Keyword.Server	Winrmservicestart/stop	Error		
+Microsoft-Windows-WinRM	218	0	Winrmservicestart/stop218(UnicodeString pluginName)		Keyword.Server	Winrmservicestart/stop	Informational		
+Microsoft-Windows-WinRM	219	0	Winrmservicestart/stop219(UnicodeString param1)		Keyword.Server	Winrmservicestart/stop	Error		
+Microsoft-Windows-WinRM	224	0	Winrmconfiguration(UnicodeString message)		Keyword.Server	Winrmconfiguration	Informational		
+Microsoft-Windows-WinRM	229	0	Winrmconfiguration229(UnicodeString param1, UInt32 param2)		Keyword.Client Keyword.Server	Winrmconfiguration	Informational		
+Microsoft-Windows-WinRM	230	0	Winrmconfiguration230(UnicodeString param1)		Keyword.Server	Winrmconfiguration	Warning		
+Microsoft-Windows-WinRM	254	0	task_0()		Keyword.Client Keyword.Server Keyword.Transfer	task_0	Informational		
+Microsoft-Windows-WinRM	255	0	task_0255()		Keyword.Client Keyword.Server Keyword.Transfer	task_0	Informational		
+Microsoft-Windows-WinRM	283	0	WSManAPIcall283(UnicodeString operationName)		Keyword.Server	WSManAPIcall	Informational		
+Microsoft-Windows-WinRM	284	0	WSManAPIcall284(UnicodeString operationName)		Keyword.Server	WSManAPIcall	Informational		
+Microsoft-Windows-WinRM	285	0	WSManAPIcall285(UnicodeString operationName)		Keyword.Server	WSManAPIcall	Informational		
+Microsoft-Windows-WinRM	286	0	WSManAPIcall286(UnicodeString operationName)		Keyword.Server	WSManAPIcall	Informational		
+Microsoft-Windows-WinRM	287	0	WSManAPIcall287()		Keyword.Server	WSManAPIcall	Informational		
+Microsoft-Windows-WinRM	288	0	WSManAPIcall288(UnicodeString operationName)		Keyword.Server	WSManAPIcall	Informational		
+Microsoft-Windows-WinRM	289	0	WSManAPIcall289(UInt32 parameters, UnicodeString operationName)		Keyword.Server	WSManAPIcall	Informational		
+Microsoft-Windows-WinRM	290	0	WSManAPIcall290(UnicodeString username, UInt32 errorCode)		Keyword.Server	WSManAPIcall	Informational		
+Microsoft-Windows-WinRM	291	0	WSManAPIcall291(UInt32 errorCode, UnicodeString operation, UnicodeString resourceUri)		Keyword.Server	WSManAPIcall	Informational		
+Microsoft-Windows-WinRM	292	0	WSManAPIcall292(UnicodeString username, UInt32 errorCode, UInt32 maxAllowedConcurrentShells, UInt32 maxAllowedConcurrentOperations, UInt32 timeslotSize, UInt32 maxAllowedOperationsPerTimeslot)		Keyword.Server	WSManAPIcall	Informational		
+Microsoft-Windows-WinRM	306	1	WSManAPIcallStart306_V1(UnicodeString provider, UnicodeString path)	Start	Keyword.Server	WSManAPIcall	Informational		
+Microsoft-Windows-WinRM	307	1	WSManAPIcallStop307_V1(UnicodeString provider, UnicodeString path)	Stop	Keyword.Server	WSManAPIcall	Informational		
+Microsoft-Windows-WinRM	308	0	WSManAPIcall308(UInt32 Flags, UInt32 Result)		Keyword.Server	WSManAPIcall	Informational		
+Microsoft-Windows-WinRM	309	0	WSManAPIcall309(UInt32 Flags, UInt32 Result)		Keyword.Server	WSManAPIcall	Informational		
+Microsoft-Windows-WinRM	310	0	WSManAPIcall310(UnicodeString Plugin)		Keyword.Server	WSManAPIcall	Informational		
+Microsoft-Windows-WinRM	311	0	WSManAPIcallStop311(UInt32 errorCode)	Stop	Keyword.Client	WSManAPIcall	Error		
+Microsoft-Windows-WinRM	312	0	WSManAPIcallStart312()	Start	Keyword.Client	WSManAPIcall	Informational		
+Microsoft-Windows-WinRM	313	0	WSManAPIcallStart313()	Start	Keyword.Client	WSManAPIcall	Informational		
+Microsoft-Windows-WinRM	314	0	WSManAPIcallStart314()	Start	Keyword.Client	WSManAPIcall	Informational		
+Microsoft-Windows-WinRM	315	0	WSManAPIcallStop315(UInt32 errorCode)	Stop	Keyword.Client	WSManAPIcall	Error		
+Microsoft-Windows-WinRM	316	0	WSManAPIcallStart316()	Start	Keyword.Client	WSManAPIcall	Informational		
+Microsoft-Windows-WinRM	317	0	WSManAPIcallStop317(UInt32 errorCode)	Stop	Keyword.Client	WSManAPIcall	Error		
+Microsoft-Windows-WinRM	318	0	WSManAPIcallStart318()	Start	Keyword.Client	WSManAPIcall	Informational		
+Microsoft-Windows-WinRM	319	0	WSManAPIcallStop319(UInt32 inputErrorCode, UnicodeString languageCode)	Stop	Keyword.Client	WSManAPIcall	Informational		
+Microsoft-Windows-WinRM	320	0	WSManAPIcallStart320(UInt32 optionCode, UnicodeString optionName)	Start	Keyword.Client	WSManAPIcall	Informational		
+Microsoft-Windows-WinRM	321	0	WSManAPIcallStart321()	Start	Keyword.Client	WSManAPIcall	Informational		
+Microsoft-Windows-WinRM	322	0	WSManAPIcallStop322(UInt32 errorCode)	Stop	Keyword.Client	WSManAPIcall	Error		
+Microsoft-Windows-WinRM	323	0	WSManAPIcallStart323()	Start	Keyword.Client	WSManAPIcall	Informational		
+Microsoft-Windows-WinRM	324	0	WSManAPIcallStop324(UnicodeString operationName)	Stop	Keyword.Client	WSManAPIcall	Informational		
+Microsoft-Windows-WinRM	325	0	WSManAPIcallStart325(UnicodeString argument)	Start	Keyword.Client	WSManAPIcall	Informational		
+Microsoft-Windows-WinRM	326	0	WSManAPIcallStop326(UInt32 errorCode)	Stop	Keyword.Client	WSManAPIcall	Error		
+Microsoft-Windows-WinRM	327	0	WSManAPIcallStart327(UnicodeString argument)	Start	Keyword.Client	WSManAPIcall	Informational		
+Microsoft-Windows-WinRM	328	0	WSManAPIcallStop328(UInt32 errorCode)	Stop	Keyword.Client	WSManAPIcall	Error		
+Microsoft-Windows-WinRM	329	0	WSManAPIcallStart329(UnicodeString argument)	Start	Keyword.Client	WSManAPIcall	Informational		
+Microsoft-Windows-WinRM	330	0	WSManAPIcallStop330(UInt32 errorCode)	Stop	Keyword.Client	WSManAPIcall	Error		
+Microsoft-Windows-WinRM	331	0	WSManAPIcallStart331(UnicodeString argument)	Start	Keyword.Client	WSManAPIcall	Informational		
+Microsoft-Windows-WinRM	332	0	WSManAPIcallStop332(UInt32 errorCode)	Stop	Keyword.Client	WSManAPIcall	Error		
+Microsoft-Windows-WinRM	333	0	WSManAPIcallStart333(UnicodeString argument)	Start	Keyword.Client	WSManAPIcall	Informational		
+Microsoft-Windows-WinRM	334	0	WSManAPIcallStop334(UInt32 errorCode)	Stop	Keyword.Client	WSManAPIcall	Error		
+Microsoft-Windows-WinRM	512	0	Auto_detectingproxysettingsStart()	Start	Keyword.Client	Auto_detectingproxysettings	Informational		
+Microsoft-Windows-WinRM	513	0	Auto_detectingproxysettingsStop(UnicodeString proxyList, UnicodeString bypassList)	Stop	Keyword.Client	Auto_detectingproxysettings	Informational		
+Microsoft-Windows-WinRM	514	0	Auto_detectingproxysettings(UnicodeString proxyList, UnicodeString bypassList)		Keyword.Client	Auto_detectingproxysettings	Informational		
+Microsoft-Windows-WinRM	771	0	Requesthandling771(UInt32 index, UInt32 totalChunks, UInt32 bytes, UnicodeString SoapDocument)		Keyword.SoapTrace Keyword.Client	Requesthandling	Informational		
+Microsoft-Windows-WinRM	772	0	Requesthandling772(UInt32 index, UInt32 totalChunks, UInt32 bytes, UnicodeString SoapDocument)		Keyword.SoapTrace Keyword.Server	Requesthandling	Informational		
+Microsoft-Windows-WinRM	774	0	Requesthandling774(UnicodeString senderName, UInt32 concurrentOperations)		Keyword.Server Keyword.QuotaViolation	Requesthandling	Error		
+Microsoft-Windows-WinRM	775	0	Requesthandling775(UInt32 requests, UInt32 windowTime, UnicodeString senderName, UInt32 delayHint)		Keyword.Server Keyword.QuotaViolation	Requesthandling	Error		
+Microsoft-Windows-WinRM	776	0	Requesthandling776(UInt32 requests, UInt32 windowTime, UnicodeString senderName, UInt32 delayHint)		Keyword.Server Keyword.QuotaViolation	Requesthandling	Error		
+Microsoft-Windows-WinRM	779	0	Requesthandling779(UInt32 index, UInt32 totalChunks, UInt32 bytes, AnsiString SoapDocument)		Keyword.SoapTrace Keyword.Client	Requesthandling	Informational		
+Microsoft-Windows-WinRM	780	0	Requesthandling780(UnicodeString param1)		Keyword.Client Keyword.Server	Requesthandling	Informational		
+Microsoft-Windows-WinRM	781	0	Requesthandling781()		Keyword.Client	Requesthandling	Informational		
+Microsoft-Windows-WinRM	782	0	Requesthandling782()		Keyword.Server	Requesthandling	Informational		
+Microsoft-Windows-WinRM	783	0	Requesthandling783(UnicodeString param1)		Keyword.Client Keyword.Server	Requesthandling	Informational		
+Microsoft-Windows-WinRM	784	0	Requesthandling784(UnicodeString param1)		Keyword.Client Keyword.Server	Requesthandling	Informational		
+Microsoft-Windows-WinRM	785	0	Requesthandling785(UnicodeString userName)		Keyword.Server	Requesthandling	Informational		
+Microsoft-Windows-WinRM	786	0	Requesthandling786(UnicodeString userName)		Keyword.Server	Requesthandling	Informational		
+Microsoft-Windows-WinRM	787	0	RequesthandlingStart(UnicodeString operationName, UnicodeString url, UInt32 port)	Start	Keyword.Client	Requesthandling	Informational		
+Microsoft-Windows-WinRM	788	0	Requesthandling788(UnicodeString operationName)		Keyword.Server	Requesthandling	Informational		
+Microsoft-Windows-WinRM	789	0	Requesthandling789(UnicodeString operation, UnicodeString resourceURI)		Keyword.Server	Requesthandling	Informational		
+Microsoft-Windows-WinRM	790	0	RequesthandlingStop(UnicodeString operation)	Stop	Keyword.Server	Requesthandling	Informational		
+Microsoft-Windows-WinRM	791	0	Requesthandling791(UInt32 errorCode)		Keyword.Server	Requesthandling	Informational		
+Microsoft-Windows-WinRM	1025	0	Responsehandling1025(UnicodeString actionUri)		Keyword.Server	Responsehandling	Error		
+Microsoft-Windows-WinRM	1026	0	Responsehandling1026(UInt32 index, UInt32 totalChunks, UInt32 bytes, UnicodeString SoapDocument)		Keyword.SoapTrace Keyword.Client	Responsehandling	Informational		
+Microsoft-Windows-WinRM	1027	0	Responsehandling1027(UInt32 index, UInt32 totalChunks, UInt32 bytes, UnicodeString SoapDocument)		Keyword.SoapTrace Keyword.Server	Responsehandling	Informational		
+Microsoft-Windows-WinRM	1041	0	Responsehandling1041()		Keyword.Server	Responsehandling	Informational		
+Microsoft-Windows-WinRM	1043	0	Responsehandling1043()		Keyword.Server	Responsehandling	Informational		
+Microsoft-Windows-WinRM	1044	0	Responsehandling1044(UInt32 index, UInt32 totalChunks, UInt32 bytes, AnsiString SoapDocument)		Keyword.SoapTrace Keyword.Server	Responsehandling	Informational		
+Microsoft-Windows-WinRM	1045	0	ResponsehandlingStart()	Start	Keyword.Client	Responsehandling	Informational		
+Microsoft-Windows-WinRM	1046	0	Responsehandling1046(UnicodeString operationName)		Keyword.Server	Responsehandling	Informational		
+Microsoft-Windows-WinRM	1047	0	ResponsehandlingStart1047(UnicodeString status)	Start	Keyword.Client	Responsehandling	Error		
+Microsoft-Windows-WinRM	1048	0	Responsehandling1048(UInt16 httpStatus, UInt32 errorCode, UnicodeString extraErrorInfo1, UnicodeString extraErrorInfo2)		Keyword.Server	Responsehandling	Error		
+Microsoft-Windows-WinRM	1049	0	Responsehandling1049(UnicodeString operationName)		Keyword.Server	Responsehandling	Informational		
+Microsoft-Windows-WinRM	1050	0	Responsehandling1050(UnicodeString operationName)		Keyword.Server	Responsehandling	Informational		
+Microsoft-Windows-WinRM	1051	0	Responsehandling1051(UInt32 status)		Keyword.Client	Responsehandling	Error		
+Microsoft-Windows-WinRM	1052	0	ResponsehandlingStop1052(UnicodeString operationName)	Stop	Keyword.Client	Responsehandling	Informational		
+Microsoft-Windows-WinRM	1053	0	WinrmOperationStop(UnicodeString operationName)	Stop	Keyword.Client	WinrmOperation	Informational		
+Microsoft-Windows-WinRM	1054	0	WinrmOperationStop1054(UnicodeString operationName)	Stop	Keyword.Client	WinrmOperation	Informational		
+Microsoft-Windows-WinRM	1291	0	Userauthentication1291()		Keyword.Client Keyword.Security	Userauthentication	Informational		
+Microsoft-Windows-WinRM	1292	0	Userauthentication1292()		Keyword.Client Keyword.Security	Userauthentication	Informational		
+Microsoft-Windows-WinRM	1293	0	Userauthentication1293(UnicodeString auth)		Keyword.Client Keyword.Security	Userauthentication	Informational		
+Microsoft-Windows-WinRM	1294	0	Userauthentication1294()		Keyword.Server Keyword.Security	Userauthentication	Error		
+Microsoft-Windows-WinRM	1295	0	Userauthentication1295(UnicodeString username, UnicodeString authenticationMechanism)		Keyword.Server Keyword.Security	Userauthentication	Informational		
+Microsoft-Windows-WinRM	1296	0	Userauthentication1296(UnicodeString subject)		Keyword.Server Keyword.Security	Userauthentication	Informational		
+Microsoft-Windows-WinRM	1297	0	Userauthentication1297(UnicodeString authentication)		Keyword.Client Keyword.Security	Userauthentication	Informational		
+Microsoft-Windows-WinRM	1536	0	Userauthorization1536()		Keyword.Server Keyword.Security	Userauthorization	Informational		
+Microsoft-Windows-WinRM	1537	0	Userauthorization1537()		Keyword.Server Keyword.Security	Userauthorization	Informational		
+Microsoft-Windows-WinRM	1840	0	WinrmOperation(UInt32 errorCode, UnicodeString errorString, UnicodeString extraInformation1, UnicodeString extraInformation2, UnicodeString extraInformation3, UnicodeString extraInformation4)		Keyword.Error	WinrmOperation	Error		
+Microsoft-Windows-WinRM	1841	0	WinrmOperation1841(UInt32 errorCode, UnicodeString extraInformation1, UnicodeString extraInformation2, UnicodeString extraInformation3, UnicodeString extraInformation4)		Keyword.Error	WinrmOperation	Error		
+Microsoft-Windows-WinRM	1842	0	WinrmOperation1842(UInt32 level, UnicodeString extraInformation1, UnicodeString extraInformation2, UnicodeString extraInformation3, UnicodeString extraInformation4)		Keyword.Error	WinrmOperation	Informational		
+Microsoft-Windows-WinRM	1843	0	Userauthentication1843(UnicodeString clientIP)		Keyword.Security Keyword.Error	Userauthentication	Warning		
+Microsoft-Windows-WinRM	2048	0	WinrmVerboseMessage(UnicodeString param1, UInt32 param2, UnicodeString param3, UnicodeString param4)		Keyword.Client Keyword.Server	WinrmVerboseMessage	Informational		
+Microsoft-Windows-WinRM	2049	0	WinrmVerboseMessage2049(UnicodeString param1, UInt32 param2, UnicodeString param3, UInt32 param4, UnicodeString param5)		Keyword.Error	WinrmVerboseMessage	Error		

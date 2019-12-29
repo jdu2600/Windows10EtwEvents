@@ -1,0 +1,12 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+WINSATAPI_ETW_PROVIDER	0	0	Application(UInt32 TestV1, UInt32 TestV2, UInt32 TestV3, UnicodeString TestV4)			Application	Informational		
+WINSATAPI_ETW_PROVIDER	1	0	ApplicationStart(FILETIME StartTimeOfDay)	Start		Application	Always		
+WINSATAPI_ETW_PROVIDER	2	0	Application2(UInt16 CommandLineSize, UnicodeString CommandLine)			Application	Always		
+WINSATAPI_ETW_PROVIDER	3	0	ApplicationStop(UInt32 ExitCode)	Stop		Application	Always		
+WINSATAPI_ETW_PROVIDER	4	0	Application4(UInt32 Win32Error, UInt16 CantMsgSize, UnicodeString CantMsg)			Application	Always		
+WINSATAPI_ETW_PROVIDER	5	0	Application5(HexInt32 FailingHresult, GUID FailingInterfaceCLSID, UInt16 SourceSize, UnicodeString Source, UInt16 InfterfaceSize, UnicodeString Interface, UInt16 ErrorMsgSize, UnicodeString ErrorMsg, UInt16 CantMsgSize, UnicodeString CantMsg)			Application	Always		
+WINSATAPI_ETW_PROVIDER	6	0	Application6(UInt16 ErrorMsgSize, UnicodeString ErrorMsg)			Application	Always		
+WINSATAPI_ETW_PROVIDER	7	0	Application7(HexInt32 FailingHresult, UInt16 ErrorMsgSize, UnicodeString ErrorMsg, UInt16 CantMsgSize, UnicodeString CantMsg)			Application	Always		
+WINSATAPI_ETW_PROVIDER	8	0	Application8(UInt16 MessageSize, AnsiString Message)			Application	Informational		
+WINSATAPI_ETW_PROVIDER	9	0	Application9(UInt16 PhaseID, UInt16 DescriptionSize, UnicodeString Description)			Application	Informational		
+WINSATAPI_ETW_PROVIDER	10	0	Application10(UInt16 PhaseID)			Application	Informational		

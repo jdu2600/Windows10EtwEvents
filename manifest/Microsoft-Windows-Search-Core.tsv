@@ -1,0 +1,371 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Search-Core	1	0	CrawlStart()	Start	Performance Indexing Gatherer	Crawl	Informational		
+Microsoft-Windows-Search-Core	2	0	CrawlStop()	Stop	Performance Indexing Gatherer	Crawl	Informational		
+Microsoft-Windows-Search-Core	3	0	IncCrawlStart()	Start		IncCrawl	Informational		
+Microsoft-Windows-Search-Core	4	0	IncCrawlStop()	Stop		IncCrawl	Informational		
+Microsoft-Windows-Search-Core	5	0	BackOff_MemStart()	Start		BackOff_Mem	Informational		
+Microsoft-Windows-Search-Core	6	0	BackOff_MemStop()	Stop		BackOff_Mem	Informational		
+Microsoft-Windows-Search-Core	7	0	BackOff_BatStart()	Start		BackOff_Bat	Informational		
+Microsoft-Windows-Search-Core	8	0	BackOff_BatStop()	Stop		BackOff_Bat	Informational		
+Microsoft-Windows-Search-Core	9	0	BackOff_ActStart()	Start		BackOff_Act	Informational		
+Microsoft-Windows-Search-Core	10	0	BackOff_ActStop()	Stop		BackOff_Act	Informational		
+Microsoft-Windows-Search-Core	11	0	BackOff_IORStart()	Start		BackOff_IOR	Informational		
+Microsoft-Windows-Search-Core	12	0	BackOff_IORStop()	Stop		BackOff_IOR	Informational		
+Microsoft-Windows-Search-Core	13	0	BackOff_NtfStart()	Start		BackOff_Ntf	Informational		
+Microsoft-Windows-Search-Core	14	0	BackOff_NtfStop()	Stop		BackOff_Ntf	Informational		
+Microsoft-Windows-Search-Core	15	0	BackOff_CPUStart()	Start		BackOff_CPU	Informational		
+Microsoft-Windows-Search-Core	16	0	BackOff_CPUStop()	Stop		BackOff_CPU	Informational		
+Microsoft-Windows-Search-Core	17	0	Index_FileStart(UnicodeString Description)	Start	Performance IndexingItem ProtocolHost	Index_File	Informational		
+Microsoft-Windows-Search-Core	18	0	Index_FileStop()	Stop		Index_File	Informational		
+Microsoft-Windows-Search-Core	18	1	Index_FileStop_V1(Boolean UsesFilter, Boolean UsesPropertyHandler)	Stop	Performance IndexingItem ProtocolHost	Index_File	Informational		
+Microsoft-Windows-Search-Core	19	0	USN_Notify(UInt32 Reason, UnicodeString Path)		IndexingItem USN	USN_Notify	Informational		
+Microsoft-Windows-Search-Core	21	0	USN_Notify_Filtered(UInt32 Reason, UnicodeString Path)		IndexingItem USN	USN_Notify_Filtered	Informational		
+Microsoft-Windows-Search-Core	22	0	Catalog_MonitorStart()	Start	Performance Indexing USN	Catalog_Monitor	Informational		
+Microsoft-Windows-Search-Core	23	0	Catalog_MonitorStop()	Stop	Performance Indexing USN	Catalog_Monitor	Informational		
+Microsoft-Windows-Search-Core	24	0	Index_MergeStart(UInt32 Value)	Start	Performance Indexing IndexPI	Index_Merge	Informational		
+Microsoft-Windows-Search-Core	25	0	Index_MergeStop()	Stop	Performance Indexing IndexPI	Index_Merge	Informational		
+Microsoft-Windows-Search-Core	26	0	Index_CommitStart(UInt32 Value)	Start	Performance Indexing IndexPI	Index_Commit	Informational		
+Microsoft-Windows-Search-Core	27	0	Index_CommitStop()	Stop	Performance Indexing IndexPI	Index_Commit	Informational		
+Microsoft-Windows-Search-Core	28	0	MapiEmailItemStart()	Start		MapiEmailItem	Informational		
+Microsoft-Windows-Search-Core	29	0	MapiEmailItemStop()	Stop		MapiEmailItem	Informational		
+Microsoft-Windows-Search-Core	30	0	CSCDocumentStart()	Start		CSCDocument	Informational		
+Microsoft-Windows-Search-Core	31	0	CSCDocumentStop()	Stop		CSCDocument	Informational		
+Microsoft-Windows-Search-Core	32	0	RetrieveValueStart(UInt32 Value)	Start		RetrieveValue	Informational		
+Microsoft-Windows-Search-Core	33	0	RetrieveValueStop()	Stop		RetrieveValue	Informational		
+Microsoft-Windows-Search-Core	34	0	MapiOpenMessageStart()	Start		MapiOpenMessage	Informational		
+Microsoft-Windows-Search-Core	35	0	MapiOpenMessageStop()	Stop		MapiOpenMessage	Informational		
+Microsoft-Windows-Search-Core	36	0	MapiGetAttachmentFromMessageStart()	Start		MapiGetAttachmentFromMessage	Informational		
+Microsoft-Windows-Search-Core	37	0	MapiGetAttachmentFromMessageStop()	Stop		MapiGetAttachmentFromMessage	Informational		
+Microsoft-Windows-Search-Core	38	0	MapiEnumerateAttachmentsStart()	Start		MapiEnumerateAttachments	Informational		
+Microsoft-Windows-Search-Core	39	0	MapiEnumerateAttachmentsStop()	Stop		MapiEnumerateAttachments	Informational		
+Microsoft-Windows-Search-Core	40	0	MapiGetMapiFpsPropValsStop()	Stop		MapiGetMapiFpsPropVals	Informational		
+Microsoft-Windows-Search-Core	41	0	MapiGetMapiFpsPropValsStop41()	Stop		MapiGetMapiFpsPropVals	Informational		
+Microsoft-Windows-Search-Core	42	0	IndexItemInit(UInt64 ITrans, UInt32 ResID, UInt32 Status, UInt32 Type, UInt32 Flags, UInt32 InternalFlags, UInt32 CrawlNumber, UInt32 CrawlType, UInt32 Extra1, UInt32 Extra2, UInt32 Extra3, UnicodeString Path)		IndexingItem Gatherer	IndexItemInit	Informational		
+Microsoft-Windows-Search-Core	43	0	IndexItemSetStatus(UInt64 ITrans, UInt32 ResID, UInt32 Status, UInt32 Type, UInt32 Flags, UInt32 InternalFlags, UInt32 CrawlNumber, UInt32 CrawlType, UInt32 Extra1, UInt32 Extra2, UInt32 Extra3, UnicodeString Path)		IndexingItem Gatherer	IndexItemSetStatus	Informational		
+Microsoft-Windows-Search-Core	44	0	OnDataChange(UInt64 Value)		IndexingItem Gatherer	OnDataChange	Informational		
+Microsoft-Windows-Search-Core	46	0	IndexItemDataComplete(UInt64 ITrans, UInt32 ResID, UInt32 Status, UInt32 Type, UInt32 Flags, UInt32 InternalFlags, UInt32 CrawlNumber, UInt32 CrawlType, UInt32 Extra1, UInt32 Extra2, UInt32 Extra3, UnicodeString Path)		IndexingItem Gatherer	IndexItemDataComplete	Informational		
+Microsoft-Windows-Search-Core	47	0	HighPriorityItemBoost(UInt32 Value)		IndexingItem Gatherer	HighPriorityItemBoost	Informational		
+Microsoft-Windows-Search-Core	48	0	HighPriorityThreadBoost(UInt32 Value)			HighPriorityThreadBoost	Informational		
+Microsoft-Windows-Search-Core	49	0	HighPriorityMergeBoost(UInt32 Value)		Indexing IndexPI	HighPriorityMergeBoost	Informational		
+Microsoft-Windows-Search-Core	50	0	ClientQueryStart(UnicodeString Description)	Start		ClientQuery	Informational		
+Microsoft-Windows-Search-Core	50	1	ClientQueryStart_V1(UnicodeString QueryText)	Start	Performance Querying	ClientQuery	Informational		
+Microsoft-Windows-Search-Core	51	0	ClientQueryStop(UnicodeString Description)	Stop		ClientQuery	Informational		
+Microsoft-Windows-Search-Core	51	1	ClientQueryStop_V1(UnicodeString QueryText, UInt32 ErrorCode)	Stop	Performance Querying	ClientQuery	Informational		
+Microsoft-Windows-Search-Core	52	0	IndexItemEnd(UInt64 ITrans, UInt32 ResID, UInt32 Status, UInt32 Type, UInt32 Flags, UInt32 InternalFlags, UInt32 CrawlNumber, UInt32 CrawlType, UInt32 Extra1, UInt32 Extra2, UInt32 Extra3, UnicodeString Path)		IndexingItem Gatherer	IndexItemEnd	Informational		
+Microsoft-Windows-Search-Core	53	0	MergeItemStart(UInt64 Value)	Start	Indexing IndexPI	MergeItem	Informational		
+Microsoft-Windows-Search-Core	54	0	MergeThreadStart(UInt64 Value)	Start		MergeThread	Informational		
+Microsoft-Windows-Search-Core	54	1	MergeThreadStart_V1(UInt32 Level, UInt64 Type)	Start	Performance Indexing IndexPI	MergeThread	Informational		
+Microsoft-Windows-Search-Core	55	0	MergeThreadStop(UInt64 Value)	Stop		MergeThread	Informational		
+Microsoft-Windows-Search-Core	55	1	MergeThreadStop_V1(UInt32 Level, UInt64 Type)	Stop	Performance Indexing IndexPI	MergeThread	Informational		
+Microsoft-Windows-Search-Core	56	0	IndexItemPushToFile(UInt64 ITrans, UInt32 ResID, UInt32 Status, UInt32 Type, UInt32 Flags, UInt32 InternalFlags, UInt32 CrawlNumber, UInt32 CrawlType, UInt32 Extra1, UInt32 Extra2, UInt32 Extra3, UnicodeString Path)		IndexingItem Gatherer	IndexItemPushToFile	Informational		
+Microsoft-Windows-Search-Core	57	0	ClientGetNextRows(UInt64 Rowset, UInt64 Chapter, Int64 RowsToSkip, Int64 RowsRequested, UInt64 RowsReturned)			ClientGetNextRows	Informational		
+Microsoft-Windows-Search-Core	58	0	FilterOplockBreak(UnicodeString Description)			FilterOplockBreak	Informational		
+Microsoft-Windows-Search-Core	59	0	BackoffThreadWaitStart(UInt32 Value)	Start	Performance Backoff	BackoffThreadWait	Informational		
+Microsoft-Windows-Search-Core	60	0	BackoffThreadWaitStop(UInt32 Value)	Stop	Performance Backoff	BackoffThreadWait	Informational		
+Microsoft-Windows-Search-Core	61	0	BackoffReason(UInt32 Value)		Backoff	BackoffReason	Informational		
+Microsoft-Windows-Search-Core	62	0	FilterOplockFail(UnicodeString Description)			FilterOplockFail	Informational		
+Microsoft-Windows-Search-Core	63	0	ServiceStatusUpdate(UInt32 WaitHint, UInt32 State, UInt32 CheckPoint)		Service	ServiceStatusUpdate	Informational		
+Microsoft-Windows-Search-Core	64	0	SearchIndexerStart(UInt32 Value)	Start	Service	SearchIndexer	Informational		
+Microsoft-Windows-Search-Core	65	0	SearchIndexerStop(UInt32 Value)	Stop	Service	SearchIndexer	Informational		
+Microsoft-Windows-Search-Core	66	0	SearchProtocolHostStart(UInt32 Value)	Start	ProtocolHost	SearchProtocolHost	Informational		
+Microsoft-Windows-Search-Core	67	0	SearchProtocolHostStop(UInt32 Value)	Stop	ProtocolHost	SearchProtocolHost	Informational		
+Microsoft-Windows-Search-Core	68	0	SearchFilterHostStart(UInt32 Value)	Start	FilterHost	SearchFilterHost	Informational		
+Microsoft-Windows-Search-Core	69	0	SearchFilterHostStop(UInt32 Value)	Stop	FilterHost	SearchFilterHost	Informational		
+Microsoft-Windows-Search-Core	70	0	StatusChange_PostToStatusThread(UInt32 Value)		Gatherer	StatusChange_PostToStatusThread	Informational		
+Microsoft-Windows-Search-Core	71	0	StatusChange_ProcessInStatusThread(UInt32 Value)		Gatherer	StatusChange_ProcessInStatusThread	Informational		
+Microsoft-Windows-Search-Core	72	0	StatusThreadStart()	Start	Gatherer	StatusThread	Informational		
+Microsoft-Windows-Search-Core	73	0	StatusThreadStop()	Stop	Gatherer	StatusThread	Informational		
+Microsoft-Windows-Search-Core	74	0	StatusChange_AppendToGathererQueue(UInt32 Value)		Gatherer	StatusChange_AppendToGathererQueue	Informational		
+Microsoft-Windows-Search-Core	75	0	StatusChange_AppendCrawlToGathererQueue(UInt32 Value)		Gatherer	StatusChange_AppendCrawlToGathererQueue	Informational		
+Microsoft-Windows-Search-Core	76	0	StatusChange_RemoveFromGathererQueue(UInt32 Value)		Gatherer	StatusChange_RemoveFromGathererQueue	Informational		
+Microsoft-Windows-Search-Core	77	0	Gatherer_AdviseStatus(UInt32 Status, UInt32 hrReason)		Gatherer	Gatherer_AdviseStatus	Informational		
+Microsoft-Windows-Search-Core	78	0	Gatherer_RequestStatusChange(UInt32 Status, UInt32 hrReason)		Gatherer	Gatherer_RequestStatusChange	Informational		
+Microsoft-Windows-Search-Core	79	1	GatherProject_AdviseStatusChange_V1(UInt64 ProjectPtr, UInt32 Status, UInt32 hrReason)		Gatherer	GatherProject_AdviseStatusChange	Informational		
+Microsoft-Windows-Search-Core	80	0	GatherProject_AdviseRequestStatus(UInt32 Value)		Gatherer	GatherProject_AdviseRequestStatus	Informational		
+Microsoft-Windows-Search-Core	81	0	GatherProject_PrepareStatusChange(UInt32 Value)		Gatherer	GatherProject_PrepareStatusChange	Informational		
+Microsoft-Windows-Search-Core	82	0	AliasTable_InitSDIDCache()		IndexingItem Gatherer	AliasTable_InitSDIDCache	Informational		
+Microsoft-Windows-Search-Core	83	0	WID_SDID_Cache_Initialize(Boolean IsCompact, UInt32 CacheCapacity)		IndexingItem Gatherer	WID_SDID_Cache_Initialize	Informational		
+Microsoft-Windows-Search-Core	84	0	WID_SDID_Cache_Write(UInt32 MaxWID, UInt32 SDID, Boolean IsCompact, UInt32 CacheCapacity)		IndexingItem Gatherer	WID_SDID_Cache_Write	Informational		
+Microsoft-Windows-Search-Core	85	0	WID_SDID_Cache_SwitchToFull(UInt32 Value)		IndexingItem Gatherer	WID_SDID_Cache_SwitchToFull	Informational		
+Microsoft-Windows-Search-Core	86	0	Backoff_MemoryCheck(UInt32 MemAvail, UInt32 MemTreshold, Boolean IsLow)		Backoff	Backoff_MemoryCheck	Informational		
+Microsoft-Windows-Search-Core	87	0	Backoff_BatteryPolicyCheck(UInt8 ACLineStatus, Boolean BackOffOnBattery, Boolean IsBackOffNeeded)		Backoff	Backoff_BatteryPolicyCheck	Informational		
+Microsoft-Windows-Search-Core	88	0	Backoff_BatteryCheck(UInt8 ACLineStatus, UInt8 BatteryFlag, UInt8 BatteryLifePercent, UInt32 LowBatteryThreshold, Boolean IsLow)		Backoff	Backoff_BatteryCheck	Informational		
+Microsoft-Windows-Search-Core	89	0	Backoff_LowDiskCheck(Double DiskAvail, UInt32 LowDiskThreshold, Boolean IsLow)		Backoff	Backoff_LowDiskCheck	Informational		
+Microsoft-Windows-Search-Core	90	0	Backoff_UserActivityCheck(UInt32 Interval, Boolean IsUserActive)		Backoff	Backoff_UserActivityCheck	Informational		
+Microsoft-Windows-Search-Core	91	0	Backoff_HighCPUCheck(Double Idle, UInt32 MaxIdle, Boolean IsHigh)		Backoff	Backoff_HighCPUCheck	Informational		
+Microsoft-Windows-Search-Core	92	0	Backoff_HighIOCheck(UInt32 IORate, UInt32 HighIOThreshold, Boolean IsHigh)		Backoff	Backoff_HighIOCheck	Informational		
+Microsoft-Windows-Search-Core	93	0	Backoff_HighNotificationsCheck(UInt32 NotificationRate, UInt32 HighNotificationThreshold, Boolean IsHigh)		Backoff	Backoff_HighNotificationsCheck	Informational		
+Microsoft-Windows-Search-Core	94	0	Backoff_PendingNotificationsCheck(UInt32 PendingNotifications, UInt32 NotificationsForceAtMost, Boolean NotificationsForced)		Backoff	Backoff_PendingNotificationsCheck	Informational		
+Microsoft-Windows-Search-Core	95	0	Backoff_AllowNewItemsCheck(UInt32 LastIndexNewItemReason, UInt32 IndexNewItemReason, UInt32 BackoffReason)		Backoff	Backoff_AllowNewItemsCheck	Informational		
+Microsoft-Windows-Search-Core	96	0	Backoff_State(UInt32 BackoffReason, UInt32 IndexNewItemReason, UInt32 AllReasons, UInt32 FeatureDisabled, UInt32 PowerSetting, Boolean BackoffRecoveryIsON, Boolean ProcessNotifications, Boolean BackOffOnPendingNotifications, UInt32 PendingHiPriNotifications, Boolean BackOffOnPowerSetting, Boolean XPScreenSaverAndNoBattery, Boolean EnablePHBackoff, Boolean Merging)		Backoff	Backoff_State	Informational		
+Microsoft-Windows-Search-Core	97	0	ProtocolHostObjConstructor()		Service	ProtocolHostObjConstructor	Informational		
+Microsoft-Windows-Search-Core	98	0	ProtocolHostObjInit(UInt32 ProcessID, UnicodeString SID, Boolean IsProcessWow64)		Service	ProtocolHostObjInit	Informational		
+Microsoft-Windows-Search-Core	99	0	ProtocolHostTerminating(UInt32 ProcessID, UnicodeString SID, Boolean IsProcessWow64)		Service	ProtocolHostTerminating	Informational		
+Microsoft-Windows-Search-Core	100	0	ProtocolHostStarted(UInt32 ProcessID, UnicodeString SID, Boolean IsProcessWow64)		Service	ProtocolHostStarted	Informational		
+Microsoft-Windows-Search-Core	101	0	ProtocolHostStopped(UInt32 ProcessID, UnicodeString SID, Boolean IsProcessWow64)		Service	ProtocolHostStopped	Informational		
+Microsoft-Windows-Search-Core	102	0	ProtocolHostKilled(UInt32 ProcessID, UnicodeString SID, Boolean IsProcessWow64)		Service	ProtocolHostKilled	Informational		
+Microsoft-Windows-Search-Core	103	0	ProtocolHostStoppedAlready(UInt32 ProcessID, UnicodeString SID, Boolean IsProcessWow64)		Service	ProtocolHostStoppedAlready	Informational		
+Microsoft-Windows-Search-Core	104	0	ProtocolHostTerminatingInDestructor(UInt32 ProcessID, UnicodeString SID, Boolean IsProcessWow64)		Service	ProtocolHostTerminatingInDestructor	Informational		
+Microsoft-Windows-Search-Core	105	0	ProtocolHostKilledInDestructor(UInt32 ProcessID, UnicodeString SID, Boolean IsProcessWow64)		Service	ProtocolHostKilledInDestructor	Informational		
+Microsoft-Windows-Search-Core	106	0	ProtocolHostStoppedInDestructor(UInt32 ProcessID, UnicodeString SID, Boolean IsProcessWow64)		Service	ProtocolHostStoppedInDestructor	Informational		
+Microsoft-Windows-Search-Core	107	0	ProtocolHostObjDestructor(UInt32 ProcessID, UnicodeString SID, Boolean IsProcessWow64)		Service	ProtocolHostObjDestructor	Informational		
+Microsoft-Windows-Search-Core	108	0	ProtocolHostNameConflict_FailedToKill(UInt32 ProcessID, UnicodeString SID)		Service	ProtocolHostNameConflict_FailedToKill	Error		
+Microsoft-Windows-Search-Core	109	0	ProtocolHostNameConflict_Killed(UInt32 ProcessID, UnicodeString SID)		Service	ProtocolHostNameConflict_Killed	Informational		
+Microsoft-Windows-Search-Core	110	0	ProtocolHostNameConflict_Killing(UInt32 ProcessID, UnicodeString SID)		Service	ProtocolHostNameConflict_Killing	Informational		
+Microsoft-Windows-Search-Core	111	0	FilterHostStarting()		Service	FilterHostStarting	Informational		
+Microsoft-Windows-Search-Core	112	0	FilterHostStarted(UInt32 Value)		Service	FilterHostStarted	Informational		
+Microsoft-Windows-Search-Core	113	0	FilterHostStopping(UInt32 Value)		Service	FilterHostStopping	Informational		
+Microsoft-Windows-Search-Core	114	0	FilterHostHung(UInt32 Value)		Service	FilterHostHung	Informational		
+Microsoft-Windows-Search-Core	115	0	FilterHostStopped(UInt32 Value)		Service	FilterHostStopped	Informational		
+Microsoft-Windows-Search-Core	116	0	Startup_CSearchService_Init()		Service	Startup_CSearchService_Init	Informational		
+Microsoft-Windows-Search-Core	117	0	Startup_CDcomService_Init()		Service	Startup_CDcomService_Init	Informational		
+Microsoft-Windows-Search-Core	118	0	Startup_CDcomService_ServiceStart()		Service	Startup_CDcomService_ServiceStart	Informational		
+Microsoft-Windows-Search-Core	119	0	Startup_CDcomService_ServiceMain()		Service	Startup_CDcomService_ServiceMain	Informational		
+Microsoft-Windows-Search-Core	120	0	Startup_RecoverIfNecessary()		Service	Startup_RecoverIfNecessary	Informational		
+Microsoft-Windows-Search-Core	121	0	Startup_RecoverDataFiles()		Service	Startup_RecoverDataFiles	Informational		
+Microsoft-Windows-Search-Core	122	0	Startup_RecoverDataFiles_RemoveDir(UnicodeString Path)		Service	Startup_RecoverDataFiles_RemoveDir	Informational		
+Microsoft-Windows-Search-Core	123	0	Startup_MoveDataFiles(UnicodeString OldPath, UnicodeString NewPath)		Service	Startup_MoveDataFiles	Informational		
+Microsoft-Windows-Search-Core	124	0	Startup_MoveDataFiles_CopyDir(UnicodeString OldPath, UnicodeString NewPath)		Service	Startup_MoveDataFiles_CopyDir	Informational		
+Microsoft-Windows-Search-Core	125	0	Startup_MoveDataFiles_RemoveDir(UnicodeString Path)		Service	Startup_MoveDataFiles_RemoveDir	Informational		
+Microsoft-Windows-Search-Core	126	0	Startup_ReplaceDirectoryPrefixInValue(UnicodeString Value, UnicodeString OldPrefix, UnicodeString NewPrefix)		Service	Startup_ReplaceDirectoryPrefixInValue	Informational		
+Microsoft-Windows-Search-Core	127	0	Startup_SysPrepInProgress(UInt32 Value)		Service	Startup_SysPrepInProgress	Informational		
+Microsoft-Windows-Search-Core	128	0	Startup_GuiSetupInProgress(UInt32 Value)		Service	Startup_GuiSetupInProgress	Informational		
+Microsoft-Windows-Search-Core	129	0	Startup_CDcomService_IsIdleServiceMode(UInt32 Value)		Service	Startup_CDcomService_IsIdleServiceMode	Informational		
+Microsoft-Windows-Search-Core	130	0	Startup_CSearchService_Init2(Boolean NoRun, Boolean SystemSetupOver)		Service	Startup_CSearchService_Init2	Informational		
+Microsoft-Windows-Search-Core	131	0	Startup_SetupWorkingDirectory()		Service	Startup_SetupWorkingDirectory	Informational		
+Microsoft-Windows-Search-Core	132	0	Startup_SetupWorkingDirectory_RemovePath(UnicodeString Path)		Service	Startup_SetupWorkingDirectory_RemovePath	Informational		
+Microsoft-Windows-Search-Core	133	0	Startup_CheckAndCleanup()		Service	Startup_CheckAndCleanup	Informational		
+Microsoft-Windows-Search-Core	134	0	Startup_CSearchServiceObj_Initialize(UInt32 Value)		Service	Startup_CSearchServiceObj_Initialize	Informational		
+Microsoft-Windows-Search-Core	135	0	Startup_CGatherModule_Init()		Service	Startup_CGatherModule_Init	Informational		
+Microsoft-Windows-Search-Core	136	0	Startup_CGatheringService_InitStart(Boolean NoRun)	Start	Service	Startup_CGatheringService_Init	Informational		
+Microsoft-Windows-Search-Core	137	0	Startup_CGatheringService_InitStop(UInt32 hr)	Stop	Service	Startup_CGatheringService_Init	Informational		
+Microsoft-Windows-Search-Core	138	0	Startup_InitialIndexSetup()		Service	Startup_InitialIndexSetup	Informational		
+Microsoft-Windows-Search-Core	139	0	Setup_DeletePreviousUsersSettingsKey()		Service	Setup_DeletePreviousUsersSettingsKey	Informational		
+Microsoft-Windows-Search-Core	140	0	Setup_SetCompletedSuccessfully(UInt32 Value)		Service	Setup_SetCompletedSuccessfully	Informational		
+Microsoft-Windows-Search-Core	141	0	Setup_Phase(UInt32 Value)		Service	Setup_Phase	Informational		
+Microsoft-Windows-Search-Core	142	0	Setup_CatalogSetupSucceeded()		Service	Setup_CatalogSetupSucceeded	Informational		
+Microsoft-Windows-Search-Core	143	0	Setup_CatalogSetupFailed(UInt32 hr, UnicodeString Message)		Service	Setup_CatalogSetupFailed	Informational		
+Microsoft-Windows-Search-Core	144	0	Setup_CleanupStarted()		Service	Setup_CleanupStarted	Informational		
+Microsoft-Windows-Search-Core	145	0	Setup_CleanupRemoveDir(UnicodeString Path)		Service	Setup_CleanupRemoveDir	Informational		
+Microsoft-Windows-Search-Core	146	0	Setup_CleanupSucceeded()		Service	Setup_CleanupSucceeded	Informational		
+Microsoft-Windows-Search-Core	147	0	Setup_CleanupFailed(UInt32 hr)		Service	Setup_CleanupFailed	Error		
+Microsoft-Windows-Search-Core	148	0	Crawl_InitializeNew(UInt32 CrawlNo, UInt32 CrawlType, UnicodeString FileName, Boolean IsCatalogLevel)		Indexing Gatherer	Crawl_InitializeNew	Informational		
+Microsoft-Windows-Search-Core	149	0	Crawl_Initialize(UInt32 CrawlNo)		Indexing Gatherer	Crawl_Initialize	Informational		
+Microsoft-Windows-Search-Core	150	0	Crawl_Initialize_Load(UInt32 CrawlNo, UInt32 CrawlType, UnicodeString FileName, Boolean IsCatalogLevel)		Indexing Gatherer	Crawl_Initialize_Load	Informational		
+Microsoft-Windows-Search-Core	151	0	Crawl_AddStartPage(UInt32 CrawlNo, UnicodeString StartPageName, UInt32 StartPageRefID)		Indexing Gatherer	Crawl_AddStartPage	Informational		
+Microsoft-Windows-Search-Core	152	0	Crawl_RemoveStartPage(UInt32 CrawlNo, UnicodeString StartPageName, UInt32 StartPageRefID, UInt32 CrawlIsInProgress)		Indexing Gatherer	Crawl_RemoveStartPage	Informational		
+Microsoft-Windows-Search-Core	153	0	Crawl_IsDone(UInt32 CrawlNo, Boolean IsDone)		Indexing Gatherer	Crawl_IsDone	Informational		
+Microsoft-Windows-Search-Core	154	0	Transactions_IterateHistoryStart(UInt32 CrawlNo, UInt32 CrawlType)	Start	Indexing Gatherer	Transactions_IterateHistory	Informational		
+Microsoft-Windows-Search-Core	155	0	Transactions_IterateHistoryStop(UInt32 CrawlNo, UInt32 hr)	Stop	Indexing Gatherer	Transactions_IterateHistory	Informational		
+Microsoft-Windows-Search-Core	156	0	Transactions_IterateHistory_Modify(UInt32 CrawlNo, UnicodeString URL)		IndexingItem Gatherer	Transactions_IterateHistory_Modify	Informational		
+Microsoft-Windows-Search-Core	157	0	Transactions_IterateHistory_Delete(UInt32 CrawlNo, UnicodeString URL)		IndexingItem Gatherer	Transactions_IterateHistory_Delete	Informational		
+Microsoft-Windows-Search-Core	158	0	Transactions_UpdateFailuresStart()	Start	Indexing Gatherer	Transactions_UpdateFailures	Informational		
+Microsoft-Windows-Search-Core	159	0	Transactions_UpdateFailuresStop(UInt32 hr)	Stop	Indexing Gatherer	Transactions_UpdateFailures	Informational		
+Microsoft-Windows-Search-Core	160	0	GatherLog_Transaction(UInt32 hrCode, UnicodeString URL, UInt32 TransactionType, UInt32 StartAddressId, UInt32 CrawlNo, UInt32 DocId, UInt32 hrTransactionError, UnicodeString Description)		IndexingItem Gatherer	GatherLog_Transaction	Informational		
+Microsoft-Windows-Search-Core	161	0	GatherLog_Crawl(UInt32 hrCode, UnicodeString URL, UInt32 TransactionType, UInt32 StartAddressId, UInt32 CrawlNo, UInt32 DocId, UInt32 hrTransactionError, UnicodeString Description)		Indexing Gatherer	GatherLog_Crawl	Informational		
+Microsoft-Windows-Search-Core	162	0	Gatherer_OnDataChangeStart(UInt64 Resource, UInt32 ChangeAdvice)	Start	IndexingItem Gatherer	Gatherer_OnDataChange	Informational		
+Microsoft-Windows-Search-Core	163	0	Gatherer_OnDataChangeStop(UInt64 Resource, UInt32 hr)	Stop	IndexingItem Gatherer	Gatherer_OnDataChange	Informational		
+Microsoft-Windows-Search-Core	164	0	Gatherer_OnDataChange(UInt64 Resource, UnicodeString TransactionURL, UInt32 TransactionType)		IndexingItem Gatherer	Gatherer_OnDataChange	Informational		
+Microsoft-Windows-Search-Core	165	0	Gatherer_OnDataChange_Failed()		IndexingItem Gatherer	Gatherer_OnDataChange_Failed	Error		
+Microsoft-Windows-Search-Core	166	0	OnDataChange_Failed()		IndexingItem Gatherer	OnDataChange_Failed	Error		
+Microsoft-Windows-Search-Core	169	0	RobotThread_BeforeGetNewTransaction()		IndexingItem Gatherer	RobotThread_BeforeGetNewTransaction	Informational		
+Microsoft-Windows-Search-Core	170	0	RobotThread_ProcessNewTransaction(UInt64 ITrans, UInt32 ResID, UInt32 Status, UInt32 Type, UInt32 Flags, UInt32 InternalFlags, UInt32 CrawlNumber, UInt32 CrawlType, UInt32 Extra1, UInt32 Extra2, UInt32 Extra3, UnicodeString Path)		IndexingItem Gatherer	RobotThread_ProcessNewTransaction	Informational		
+Microsoft-Windows-Search-Core	171	1	RobotThread_FilterDriver_Init_Failed_V1(UInt64 ITrans)		IndexingItem Gatherer	RobotThread_FilterDriver_Init_Failed	Error		
+Microsoft-Windows-Search-Core	172	1	RobotThread_IsHistoryIterator_V1(UInt64 ITrans)		IndexingItem Gatherer	RobotThread_IsHistoryIterator	Informational		
+Microsoft-Windows-Search-Core	173	1	RobotThread_IsWildcardTransaction_V1(UInt64 ITrans)		IndexingItem Gatherer	RobotThread_IsWildcardTransaction	Informational		
+Microsoft-Windows-Search-Core	174	1	RobotThread_IsIteratorByStartAddress_V1(UInt64 ITrans)		IndexingItem Gatherer	RobotThread_IsIteratorByStartAddress	Informational		
+Microsoft-Windows-Search-Core	175	1	RobotThread_IsHistoryIteratorUpdateFailures_V1(UInt64 ITrans)		IndexingItem Gatherer	RobotThread_IsHistoryIteratorUpdateFailures	Informational		
+Microsoft-Windows-Search-Core	176	1	RobotThread_ProcessAnnotation_Failed_V1(UInt64 ITrans, UInt32 hr)		IndexingItem Gatherer	RobotThread_ProcessAnnotation_Failed	Error		
+Microsoft-Windows-Search-Core	177	1	RobotThread_GetStandardProperties_Failed_V1(UInt64 ITrans, UInt32 hr)		IndexingItem Gatherer	RobotThread_GetStandardProperties_Failed	Error		
+Microsoft-Windows-Search-Core	178	1	RobotThread_TransactionNotModified_V1(UInt64 ITrans)		IndexingItem Gatherer	RobotThread_TransactionNotModified	Informational		
+Microsoft-Windows-Search-Core	179	1	RobotThread_CatalogResetRequested_V1(UInt64 ITrans)		IndexingItem Gatherer	RobotThread_CatalogResetRequested	Informational		
+Microsoft-Windows-Search-Core	180	0	CEnumSearchRoots_Constructor()		CSM	CEnumSearchRoots_Constructor	Informational		
+Microsoft-Windows-Search-Core	181	0	CEnumSearchRoots_Destructor()		CSM	CEnumSearchRoots_Destructor	Informational		
+Microsoft-Windows-Search-Core	182	0	CEnumSearchRoots_DestructorStop()	Stop	CSM	CEnumSearchRoots_Destructor	Informational		
+Microsoft-Windows-Search-Core	183	0	CEnumSearchRoots_Reset()		CSM	CEnumSearchRoots_Reset	Informational		
+Microsoft-Windows-Search-Core	184	0	CEnumSearchRoots_CloneStart()	Start	CSM	CEnumSearchRoots_Clone	Informational		
+Microsoft-Windows-Search-Core	185	0	CEnumSearchRoots_CloneStop(UInt32 hr)	Stop	CSM	CEnumSearchRoots_Clone	Informational		
+Microsoft-Windows-Search-Core	186	0	CEnumSearchRoots_NextStart(UInt32 ElementCount)	Start	CSM	CEnumSearchRoots_Next	Informational		
+Microsoft-Windows-Search-Core	187	0	CEnumSearchRoots_NextStop(UInt32 hr, UInt32 ElementCount)	Stop	CSM	CEnumSearchRoots_Next	Informational		
+Microsoft-Windows-Search-Core	188	0	CEnumSearchRoots_Next_Fetch(UnicodeString SearchRootURL)		CSM	CEnumSearchRoots_Next_Fetch	Informational		
+Microsoft-Windows-Search-Core	189	0	CEnumSearchRoots_SkipStart()	Start	CSM	CEnumSearchRoots_Skip	Informational		
+Microsoft-Windows-Search-Core	190	0	CEnumSearchRoots_SkipStop(UInt32 hr)	Stop	CSM	CEnumSearchRoots_Skip	Informational		
+Microsoft-Windows-Search-Core	191	0	CEnumSearchScopeRules_Constructor()		CSM	CEnumSearchScopeRules_Constructor	Informational		
+Microsoft-Windows-Search-Core	192	0	CEnumSearchScopeRules_DestructorStart()	Start	CSM	CEnumSearchScopeRules_Destructor	Informational		
+Microsoft-Windows-Search-Core	193	0	CEnumSearchScopeRules_DestructorStop()	Stop	CSM	CEnumSearchScopeRules_Destructor	Informational		
+Microsoft-Windows-Search-Core	194	0	CEnumSearchScopeRules_Reset()		CSM	CEnumSearchScopeRules_Reset	Informational		
+Microsoft-Windows-Search-Core	195	0	CEnumSearchScopeRules_CloneStart()	Start	CSM	CEnumSearchScopeRules_Clone	Informational		
+Microsoft-Windows-Search-Core	196	0	CEnumSearchScopeRules_CloneStop(UInt32 hr)	Stop	CSM	CEnumSearchScopeRules_Clone	Informational		
+Microsoft-Windows-Search-Core	197	0	CEnumSearchScopeRules_NextStart()	Start	CSM	CEnumSearchScopeRules_Next	Informational		
+Microsoft-Windows-Search-Core	198	0	CEnumSearchScopeRules_NextStop(UInt32 hr)	Stop	CSM	CEnumSearchScopeRules_Next	Informational		
+Microsoft-Windows-Search-Core	199	0	CEnumSearchScopeRules_Next_Fetch(UnicodeString ScopeRuleURL)		CSM	CEnumSearchScopeRules_Next_Fetch	Informational		
+Microsoft-Windows-Search-Core	200	0	CEnumSearchScopeRules_SkipStart()	Start	CSM	CEnumSearchScopeRules_Skip	Informational		
+Microsoft-Windows-Search-Core	201	0	CEnumSearchScopeRules_SkipStop(UInt32 hr)	Stop	CSM	CEnumSearchScopeRules_Skip	Informational		
+Microsoft-Windows-Search-Core	202	0	CSearchCrawlScopeManager_Constructor()		CSM	CSearchCrawlScopeManager_Constructor	Informational		
+Microsoft-Windows-Search-Core	203	0	CSearchCrawlScopeManager_Destructor()		CSM	CSearchCrawlScopeManager_Destructor	Informational		
+Microsoft-Windows-Search-Core	204	0	CSearchCrawlScopeManager_IncludedInCrawlScopeStart(UnicodeString URL)	Start	CSM	CSearchCrawlScopeManager_IncludedInCrawlScope	Informational		
+Microsoft-Windows-Search-Core	205	0	CSearchCrawlScopeManager_IncludedInCrawlScopeStop(UInt32 hr, Boolean IsIncluded)	Stop	CSM	CSearchCrawlScopeManager_IncludedInCrawlScope	Informational		
+Microsoft-Windows-Search-Core	206	0	CSearchCrawlScopeManager_AddDefaultScopeRuleStart(UnicodeString URL, Boolean IsInclude, UInt32 FollowFlags)	Start	CSM	CSearchCrawlScopeManager_AddDefaultScopeRule	Informational		
+Microsoft-Windows-Search-Core	207	0	CSearchCrawlScopeManager_AddDefaultScopeRuleStop(UInt32 hr)	Stop	CSM	CSearchCrawlScopeManager_AddDefaultScopeRule	Informational		
+Microsoft-Windows-Search-Core	208	0	CSearchCrawlScopeManager_AddHierarchicalScopeStart(UnicodeString URL, Boolean IsInclude, Boolean IsDefault, Boolean OverrideChildren)	Start	CSM	CSearchCrawlScopeManager_AddHierarchicalScope	Informational		
+Microsoft-Windows-Search-Core	209	0	CSearchCrawlScopeManager_AddHierarchicalScopeStop(UInt32 hr)	Stop	CSM	CSearchCrawlScopeManager_AddHierarchicalScope	Informational		
+Microsoft-Windows-Search-Core	210	0	CSearchCrawlScopeManager_AddRootStart(UnicodeString SearchRootURL)	Start	CSM	CSearchCrawlScopeManager_AddRoot	Informational		
+Microsoft-Windows-Search-Core	211	0	CSearchCrawlScopeManager_AddRootStop(UInt32 hr)	Stop	CSM	CSearchCrawlScopeManager_AddRoot	Informational		
+Microsoft-Windows-Search-Core	212	0	CSearchCrawlScopeManager_AddUserScopeRuleStart(UnicodeString URL, Boolean IsInclude, Boolean OverrideChildren, UInt32 FollowFlags)	Start	CSM	CSearchCrawlScopeManager_AddUserScopeRule	Informational		
+Microsoft-Windows-Search-Core	213	0	CSearchCrawlScopeManager_AddUserScopeRuleStop(UInt32 hr)	Stop	CSM	CSearchCrawlScopeManager_AddUserScopeRule	Informational		
+Microsoft-Windows-Search-Core	214	0	CSearchCrawlScopeManager_EnumerateRootsStart()	Start	CSM	CSearchCrawlScopeManager_EnumerateRoots	Informational		
+Microsoft-Windows-Search-Core	215	0	CSearchCrawlScopeManager_EnumerateRootsStop(UInt32 hr)	Stop	CSM	CSearchCrawlScopeManager_EnumerateRoots	Informational		
+Microsoft-Windows-Search-Core	216	0	CSearchCrawlScopeManager_EnumerateScopeRulesStart()	Start	CSM	CSearchCrawlScopeManager_EnumerateScopeRules	Informational		
+Microsoft-Windows-Search-Core	217	0	CSearchCrawlScopeManager_EnumerateScopeRulesStop(UInt32 hr)	Stop	CSM	CSearchCrawlScopeManager_EnumerateScopeRules	Informational		
+Microsoft-Windows-Search-Core	218	0	CSearchCrawlScopeManager_GetParentScopeVersionIdStart(UnicodeString URL)	Start	CSM	CSearchCrawlScopeManager_GetParentScopeVersionId	Informational		
+Microsoft-Windows-Search-Core	219	0	CSearchCrawlScopeManager_GetParentScopeVersionIdStop(UInt32 hr, UInt32 ScopeId)	Stop	CSM	CSearchCrawlScopeManager_GetParentScopeVersionId	Informational		
+Microsoft-Windows-Search-Core	220	0	CSearchCrawlScopeManager_HasChildScopeRuleStart(UnicodeString URL)	Start	CSM	CSearchCrawlScopeManager_HasChildScopeRule	Informational		
+Microsoft-Windows-Search-Core	221	0	CSearchCrawlScopeManager_HasChildScopeRuleStop(UInt32 hr, Boolean HasChildRule)	Stop	CSM	CSearchCrawlScopeManager_HasChildScopeRule	Informational		
+Microsoft-Windows-Search-Core	222	0	CSearchCrawlScopeManager_HasParentScopeRuleStart(UnicodeString URL)	Start	CSM	CSearchCrawlScopeManager_HasParentScopeRule	Informational		
+Microsoft-Windows-Search-Core	223	0	CSearchCrawlScopeManager_HasParentScopeRuleStop(UInt32 hr, Boolean HasParentRule)	Stop	CSM	CSearchCrawlScopeManager_HasParentScopeRule	Informational		
+Microsoft-Windows-Search-Core	224	0	CSearchCrawlScopeManager_IncludedInCrawlScopeExStart(UnicodeString URL)	Start	CSM	CSearchCrawlScopeManager_IncludedInCrawlScopeEx	Informational		
+Microsoft-Windows-Search-Core	225	0	CSearchCrawlScopeManager_IncludedInCrawlScopeExStop(UInt32 hr, Boolean IsIncluded, UInt32 Reason)	Stop	CSM	CSearchCrawlScopeManager_IncludedInCrawlScopeEx	Informational		
+Microsoft-Windows-Search-Core	226	0	CSearchCrawlScopeManager_RemoveDefaultScopeRuleStart(UnicodeString URL)	Start	CSM	CSearchCrawlScopeManager_RemoveDefaultScopeRule	Informational		
+Microsoft-Windows-Search-Core	227	0	CSearchCrawlScopeManager_RemoveDefaultScopeRuleStop(UInt32 hr)	Stop	CSM	CSearchCrawlScopeManager_RemoveDefaultScopeRule	Informational		
+Microsoft-Windows-Search-Core	228	0	CSearchCrawlScopeManager_RemoveRootStart(UnicodeString SearchRootURL)	Start	CSM	CSearchCrawlScopeManager_RemoveRoot	Informational		
+Microsoft-Windows-Search-Core	229	0	CSearchCrawlScopeManager_RemoveRootStop(UInt32 hr)	Stop	CSM	CSearchCrawlScopeManager_RemoveRoot	Informational		
+Microsoft-Windows-Search-Core	230	0	CSearchCrawlScopeManager_RemoveScopeRuleStart(UnicodeString ScopeRuleURL)	Start	CSM	CSearchCrawlScopeManager_RemoveScopeRule	Informational		
+Microsoft-Windows-Search-Core	231	0	CSearchCrawlScopeManager_RemoveScopeRuleStop(UInt32 hr)	Stop	CSM	CSearchCrawlScopeManager_RemoveScopeRule	Informational		
+Microsoft-Windows-Search-Core	232	0	CSearchCrawlScopeManager_RevertToDefaultScopesStart()	Start	CSM	CSearchCrawlScopeManager_RevertToDefaultScopes	Informational		
+Microsoft-Windows-Search-Core	233	0	CSearchCrawlScopeManager_RevertToDefaultScopesStop(UInt32 hr)	Stop	CSM	CSearchCrawlScopeManager_RevertToDefaultScopes	Informational		
+Microsoft-Windows-Search-Core	234	0	CSearchCrawlScopeManager_SaveAllStart()	Start	CSM	CSearchCrawlScopeManager_SaveAll	Informational		
+Microsoft-Windows-Search-Core	235	0	CSearchCrawlScopeManager_SaveAllStop(UInt32 hr)	Stop	CSM	CSearchCrawlScopeManager_SaveAll	Informational		
+Microsoft-Windows-Search-Core	236	0	CSearchRoot_put_RootURL(UnicodeString SearchRootURL)		CSM	CSearchRoot_put_RootURL	Informational		
+Microsoft-Windows-Search-Core	237	0	CSearchRoot_get_RootURL(UInt32 hr, UnicodeString SearchRootURL)		CSM	CSearchRoot_get_RootURL	Informational		
+Microsoft-Windows-Search-Core	238	0	CSearchRoot_get_AuthenticationType(UInt32 hr, UInt32 Value)		CSM	CSearchRoot_get_AuthenticationType	Informational		
+Microsoft-Windows-Search-Core	239	0	CSearchRoot_get_EnumerationDepth(UInt32 hr, UInt32 Value)		CSM	CSearchRoot_get_EnumerationDepth	Informational		
+Microsoft-Windows-Search-Core	240	0	CSearchRoot_get_FollowDirectories(UInt32 hr, Boolean Value)		CSM	CSearchRoot_get_FollowDirectories	Informational		
+Microsoft-Windows-Search-Core	241	0	CSearchRoot_get_HostDepth(UInt32 hr, UInt32 Value)		CSM	CSearchRoot_get_HostDepth	Informational		
+Microsoft-Windows-Search-Core	242	0	CSearchRoot_get_IsHierarchical(UInt32 hr, Boolean Value)		CSM	CSearchRoot_get_IsHierarchical	Informational		
+Microsoft-Windows-Search-Core	243	0	CSearchRoot_get_ProvidesNotifications(UInt32 hr, Boolean Value)		CSM	CSearchRoot_get_ProvidesNotifications	Informational		
+Microsoft-Windows-Search-Core	244	0	CSearchRoot_get_Schedule(UInt32 hr, UnicodeString Value)		CSM	CSearchRoot_get_Schedule	Informational		
+Microsoft-Windows-Search-Core	245	0	CSearchRoot_get_UseNotificationsOnly(UInt32 hr, Boolean Value)		CSM	CSearchRoot_get_UseNotificationsOnly	Informational		
+Microsoft-Windows-Search-Core	246	0	CSearchRoot_put_AuthenticationType(UInt32 Value)		CSM	CSearchRoot_put_AuthenticationType	Informational		
+Microsoft-Windows-Search-Core	247	0	CSearchRoot_put_EnumerationDepth(UInt32 Value)		CSM	CSearchRoot_put_EnumerationDepth	Informational		
+Microsoft-Windows-Search-Core	248	0	CSearchRoot_put_FollowDirectories(Boolean Value)		CSM	CSearchRoot_put_FollowDirectories	Informational		
+Microsoft-Windows-Search-Core	249	0	CSearchRoot_put_HostDepth(UInt32 Value)		CSM	CSearchRoot_put_HostDepth	Informational		
+Microsoft-Windows-Search-Core	250	0	CSearchRoot_put_IsHierarchical(Boolean Value)		CSM	CSearchRoot_put_IsHierarchical	Informational		
+Microsoft-Windows-Search-Core	251	0	CSearchRoot_put_ProvidesNotifications(Boolean Value)		CSM	CSearchRoot_put_ProvidesNotifications	Informational		
+Microsoft-Windows-Search-Core	252	0	CSearchRoot_put_Schedule(UnicodeString Description)		CSM	CSearchRoot_put_Schedule	Informational		
+Microsoft-Windows-Search-Core	253	0	CSearchRoot_put_UseNotificationsOnly(Boolean Value)		CSM	CSearchRoot_put_UseNotificationsOnly	Informational		
+Microsoft-Windows-Search-Core	254	0	CSearchScopeRule_get_IsDefault(UInt32 hr, Boolean Value)		CSM	CSearchScopeRule_get_IsDefault	Informational		
+Microsoft-Windows-Search-Core	255	0	CSearchScopeRule_get_IsIncluded(UInt32 hr, Boolean Value)		CSM	CSearchScopeRule_get_IsIncluded	Informational		
+Microsoft-Windows-Search-Core	256	0	CSearchScopeRule_get_PatternOrURL(UInt32 hr, UnicodeString Value)		CSM	CSearchScopeRule_get_PatternOrURL	Informational		
+Microsoft-Windows-Search-Core	257	0	StatusChange_QueueLocked(UInt32 Value)		Service	StatusChange_QueueLocked	Informational		
+Microsoft-Windows-Search-Core	258	0	StatusChange_QueueUnlocked()		Service	StatusChange_QueueUnlocked	Informational		
+Microsoft-Windows-Search-Core	259	0	Gatherer_OnDataChange_Track_Url(UInt64 Resource, UnicodeString TransactionURL)		IndexingItem Gatherer	Gatherer_OnDataChange_Track_Url	Informational		
+Microsoft-Windows-Search-Core	260	0	Gatherer_DocIdTable_GetNewId(UInt32 WorkId, UInt32 hr)		IndexingItem Gatherer	Gatherer_DocIdTable_GetNewId	Informational		
+Microsoft-Windows-Search-Core	261	0	Gatherer_DocIdTable_UndeleteId(UInt32 WorkId, UInt32 hr)		IndexingItem Gatherer	Gatherer_DocIdTable_UndeleteId	Informational		
+Microsoft-Windows-Search-Core	262	0	Gatherer_DocIdTable_DeleteId(UInt32 WorkId, UInt32 hr)		IndexingItem Gatherer	Gatherer_DocIdTable_DeleteId	Informational		
+Microsoft-Windows-Search-Core	263	0	Gatherer_DocIdTable_GetMaxId(UInt32 WorkId, UInt32 hr)		IndexingItem Gatherer	Gatherer_DocIdTable_GetMaxId	Informational		
+Microsoft-Windows-Search-Core	264	0	Gatherer_DocIdTable_SetMaxId(UInt32 WorkId, UInt32 hr)		IndexingItem Gatherer	Gatherer_DocIdTable_SetMaxId	Informational		
+Microsoft-Windows-Search-Core	265	0	WID_SDID_Cache_NumberItems(UInt32 NumWID)		IndexingItem Gatherer	WID_SDID_Cache_NumberItems	Informational		
+Microsoft-Windows-Search-Core	266	0	Gatherer_Queues_QueueLength(UInt32 GathererCodeLocation, UInt32 TransactionsInFile, UInt32 TransactionsInMemory, UInt32 TransactionQueueLength, UInt32 TransactionsInFileNotifications, UInt32 TransactionsInMemoryNotifications, UInt32 TransactionQueueLengthNotifications, UInt32 TransactionsHighLimit, UInt32 TransactionsLowLimitPerCrawl, UInt32 TransactionsHighLimitPerCrawl, UInt32 TransactionsInIncrementalQueue, UInt32 TransactionsInNotificationQueue, UInt32 TansactionsInNotificationHighPriorityQueue)		IndexingItem Gatherer	Gatherer_Queues_QueueLength	Informational		
+Microsoft-Windows-Search-Core	267	0	Startup_Search_Service_DurationStart()	Start	Performance Indexing	Startup_Search_Service_Duration	Informational		
+Microsoft-Windows-Search-Core	268	0	Startup_Search_Service_DurationStop()	Stop	Performance Indexing	Startup_Search_Service_Duration	Informational		
+Microsoft-Windows-Search-Core	269	0	Shutdown_Search_Service_DurationStart()	Start	Performance Indexing	Shutdown_Search_Service_Duration	Informational		
+Microsoft-Windows-Search-Core	270	0	Shutdown_Search_Service_DurationStop()	Stop	Performance Indexing	Shutdown_Search_Service_Duration	Informational		
+Microsoft-Windows-Search-Core	271	0	ServerQueryRelease(UInt32 Qid)		Querying	ServerQueryRelease	Informational		
+Microsoft-Windows-Search-Core	272	0	CreatePhysCursorStart(UInt32 ObjectWid, UInt32 KeyPid, UnicodeString GroupPids, UnicodeString KeyStr)	Start	Querying	CreatePhysCursor	Informational		
+Microsoft-Windows-Search-Core	273	0	CreatePhysCursorStop(UInt32 ObjectWid)	Stop	Querying	CreatePhysCursor	Informational		
+Microsoft-Windows-Search-Core	274	0	CreatePhysCursorRangeStart(UInt32 ObjectWid, UInt32 KeyStartPid, UnicodeString GroupPids, UnicodeString KeyEndStr)	Start	Querying	CreatePhysCursorRange	Informational		
+Microsoft-Windows-Search-Core	275	0	CreatePhysCursorRangeStop(UInt32 ObjectWid, UInt32 StackCount)	Stop	Querying	CreatePhysCursorRange	Informational		
+Microsoft-Windows-Search-Core	276	0	MergeStart(UInt32 ObjectWid, Boolean UseQueryPerfOpt, Boolean Restarted, UnicodeString IndexIds, UInt32 TotalSizeInPages, UInt32 MaxWid)	Start	Indexing	Merge	Informational		
+Microsoft-Windows-Search-Core	277	0	MergeStop(UInt32 ObjectWid)	Stop	Indexing	Merge	Informational		
+Microsoft-Windows-Search-Core	278	0	CreateWLCursorStart(UInt64 WordListId, UInt32 KeyTargetPid, UnicodeString KeyTargetStr)	Start	Querying	CreateWLCursor	Informational		
+Microsoft-Windows-Search-Core	279	0	CreateWLCursorStop(UInt64 WordListId)	Stop	Querying	CreateWLCursor	Informational		
+Microsoft-Windows-Search-Core	280	0	CreateWLCursorRangeStart(UInt64 WordListId, UInt32 KeyStartPid, UnicodeString GroupPids, UnicodeString KeyEndStr)	Start	Querying	CreateWLCursorRange	Informational		
+Microsoft-Windows-Search-Core	281	0	CreateWLCursorRangeStop(UInt64 WordListId, UInt32 StackCount)	Stop	Querying	CreateWLCursorRange	Informational		
+Microsoft-Windows-Search-Core	282	0	ServerQueryStart(UInt32 Qid)	Start	Querying	ServerQuery	Informational		
+Microsoft-Windows-Search-Core	283	0	ServerQuery_Send(UInt32 Qid, UInt32 BytesSent, Int32 MessageId)		Querying	ServerQuery_Send	Informational		
+Microsoft-Windows-Search-Core	284	0	ServerQuery_Received(UInt32 Qid, UInt32 BytesReceived, Int32 MessageId)		Querying	ServerQuery_Received	Informational		
+Microsoft-Windows-Search-Core	285	0	ClientQuery_Send(UInt32 BytesSent, Int32 MessageId)		Querying	ClientQuery_Send	Informational		
+Microsoft-Windows-Search-Core	286	0	ClientQuery_Received(UInt32 BytesReceived, Int32 MessageId)		Querying	ClientQuery_Received	Informational		
+Microsoft-Windows-Search-Core	287	0	ServerQueryStop(UInt32 Qid)	Stop	Querying	ServerQuery	Informational		
+Microsoft-Windows-Search-Core	288	0	ServerQuery_Create(UInt32 Qid)		Querying	ServerQuery_Create	Informational		
+Microsoft-Windows-Search-Core	289	0	ClientStartFetch(UInt64 Rowset, UInt64 Chapter, Int64 RowsRequested, Int32 RowSeekMethod, Int64 RowsToSkip, Int32 RowOffset, UInt32 Bookmark, UnicodeString Bookmarks, UInt32 Numerator, UInt32 Denominator)		Querying	ClientStartFetch	Informational		
+Microsoft-Windows-Search-Core	290	0	ClientFetched(UInt64 Rowset, Int64 RowsReturned, UInt32 ErrorCode)		Querying	ClientFetched	Informational		
+Microsoft-Windows-Search-Core	291	0	ServerGetRowsStart(UInt32 Qid, UInt32 WidStart, UInt32 Chapter, UInt32 Depth, Int64 RowOffset, UInt32 RequestedRows)	Start	Querying	ServerGetRows	Informational		
+Microsoft-Windows-Search-Core	292	0	ServerGetRowsStop(UInt32 Qid, UInt32 RowsTransferred, UInt32 ErrorCode)	Stop	Querying	ServerGetRows	Informational		
+Microsoft-Windows-Search-Core	293	0	RobotThread_LangAutoDetection_Start(GUID fmtid, UInt32 pid, UnicodeString TextPrefix, UInt32 TextLength)	Start	IndexingChunk Gatherer	RobotThread_LangAutoDetection_Start	Informational		
+Microsoft-Windows-Search-Core	294	0	RobotThread_LangAutoDetection_Stop(UInt32 LocaleID)	Stop	IndexingChunk Gatherer	RobotThread_LangAutoDetection_Stop	Informational		
+Microsoft-Windows-Search-Core	295	0	RobotThread_LangAutoDetection_Succeed(UnicodeString LocaleName)		IndexingChunk Gatherer	RobotThread_LangAutoDetection_Succeed	Informational		
+Microsoft-Windows-Search-Core	296	0	RobotThread_LangAutoDetection_Fail(UInt32 hr)		IndexingChunk Gatherer	RobotThread_LangAutoDetection_Fail	Error		
+Microsoft-Windows-Search-Core	297	0	Service_Status_NotifyStart(UInt32 Value)	Start	Service	Service_Status_Notify	Informational		
+Microsoft-Windows-Search-Core	298	0	Service_Status_NotifyStop(UInt32 Value)	Stop	Service	Service_Status_Notify	Informational		
+Microsoft-Windows-Search-Core	300	0	ServerQuery_ForcePublishStart(UInt32 Qid)	Start	Performance Indexing Querying IndexPI	ServerQuery_ForcePublish	Informational		
+Microsoft-Windows-Search-Core	301	0	ServerQuery_ForcePublishStop(UInt32 Qid)	Stop	Performance Indexing Querying IndexPI	ServerQuery_ForcePublish	Informational		
+Microsoft-Windows-Search-Core	302	0	Wordlist_PublishStart(UInt64 CBID, UInt32 DocCount, UInt64 BytesAvailable)	Start	Performance Indexing IndexPI	Wordlist_Publish	Informational		
+Microsoft-Windows-Search-Core	303	0	Wordlist_PublishStop(UInt64 CBID)	Stop	Performance Indexing IndexPI	Wordlist_Publish	Informational		
+Microsoft-Windows-Search-Core	304	0	Flush_Schedule(Boolean Scheduled, UInt32 Reason)		Indexing IndexPI	Flush_Schedule	Informational		
+Microsoft-Windows-Search-Core	305	0	CBPool_ForceFlush(UInt32 AvailableCBCount, UInt32 DirtyCBCount, UInt32 InUseCBCount, UInt32 PublishedCBCount)		Indexing IndexPI	CBPool_ForceFlush	Informational		
+Microsoft-Windows-Search-Core	306	0	DocAborted_ForcePublish(UInt32 DocID)		Indexing IndexPI	DocAborted_ForcePublish	Informational		
+Microsoft-Windows-Search-Core	307	0	DocAborted_CBOverflow(UInt32 DocID)		Indexing IndexPI	DocAborted_CBOverflow	Informational		
+Microsoft-Windows-Search-Core	308	0	Wordlist_BeginResourceFailed_CBOverflow(UInt32 DocID, UInt32 BytesAvailable)		Indexing IndexPI	Wordlist_BeginResourceFailed_CBOverflow	Informational		
+Microsoft-Windows-Search-Core	309	0	Wordlist_BeginResourceFailed_DocInError(UInt32 DocID)		Indexing IndexPI	Wordlist_BeginResourceFailed_DocInError	Informational		
+Microsoft-Windows-Search-Core	310	0	Wordlist_BeginResource_InvalidatedPreviousDoc(UInt32 DocID, UInt64 CBID)		Indexing IndexPI	Wordlist_BeginResource_InvalidatedPreviousDoc	Informational		
+Microsoft-Windows-Search-Core	311	0	ClientQuery_Rowset_Reuse(UInt32 Value)		Querying	ClientQuery_Rowset_Reuse	Informational		
+Microsoft-Windows-Search-Core	312	0	ServerQuery_DeferredProperty(UInt32 DocID, UInt32 PropID)		Querying	ServerQuery_DeferredProperty	Informational		
+Microsoft-Windows-Search-Core	313	0	ScopeManager_Init(Boolean IsCompact, UInt32 CacheCapacity)		IndexingItem Gatherer	ScopeManager_Init	Informational		
+Microsoft-Windows-Search-Core	314	0	ScopeManager_Retrieved(UInt32 NumWID)		IndexingItem Gatherer	ScopeManager_Retrieved	Informational		
+Microsoft-Windows-Search-Core	315	0	ScopeManager_SwitchToFull(UInt32 Value)		IndexingItem Gatherer	ScopeManager_SwitchToFull	Informational		
+Microsoft-Windows-Search-Core	316	0	ScopeManager_Write(UInt32 MaxWID, UInt32 Scope, Boolean IsCompact, UInt32 CacheCapacity)		IndexingItem Gatherer	ScopeManager_Write	Informational		
+Microsoft-Windows-Search-Core	317	0	Prioritization_Request(UInt64 RequestID, UInt32 Priority, UInt32 Indexed, UInt32 OutstandingAdds, UInt32 OutstandingModifies)		IndexingItem Gatherer	Prioritization_Request	Informational		
+Microsoft-Windows-Search-Core	318	0	Prioritization_Complete(UInt64 RequestID, UInt32 Priority, UInt32 Indexed, UInt32 OutstandingAdds, UInt32 OutstandingModifies)		IndexingItem Gatherer	Prioritization_Complete	Informational		
+Microsoft-Windows-Search-Core	319	0	Prioritization_Statistics(UInt64 RequestID, UInt32 Priority, UInt32 Indexed, UInt32 OutstandingAdds, UInt32 OutstandingModifies)		IndexingItem Gatherer	Prioritization_Statistics	Informational		
+Microsoft-Windows-Search-Core	320	0	JET_IO_Low_Priority_Change(UInt32 hr, Boolean Value)		Performance Service PropStorePI	JET_IO_Low_Priority_Change	Informational		
+Microsoft-Windows-Search-Core	321	0	Gather_Transaction_Failure_Code(UInt32 Status, UnicodeString URL, UInt32 DocID, UInt32 hr)		IndexingItem Gatherer	Gather_Transaction_Failure_Code	Informational		
+Microsoft-Windows-Search-Core	322	0	ETWLogging(UnicodeString Info)		Indexing	ETWLogging	Informational		
+Microsoft-Windows-Search-Core	323	0	ETWLoggingFailure(UInt32 Hr, UnicodeString Info)		Indexing	ETWLoggingFailure	Informational		
+Microsoft-Windows-Search-Core	324	0	ETWLoggingItem(UInt32 DocID, UnicodeString URL, UnicodeString Info)		Indexing	ETWLoggingItem	Informational		
+Microsoft-Windows-Search-Core	325	0	ETWLoggingItemFailure(UInt32 Hr, UInt32 DocID, UnicodeString URL, UnicodeString Info)		Indexing	ETWLoggingItemFailure	Informational		
+Microsoft-Windows-Search-Core	326	0	USN_Notify_Journal_Wrap(UnicodeString Volume, Int64 DesiredPosition, Int64 CurrentPosition, UInt32 hr)		USN	USN_Notify_Journal_Wrap	Informational		
+Microsoft-Windows-Search-Core	327	0	GathererRecoverStart()	Start	Service Gatherer	GathererRecover	Informational		
+Microsoft-Windows-Search-Core	328	0	GathererRecoverStop(UInt32 hr)	Stop	Service Gatherer	GathererRecover	Informational		
+Microsoft-Windows-Search-Core	329	0	ValueIndexCreationStart(UInt32 Locale, AnsiString IdxName, Boolean IsShadow, UInt64 ColumnType)	Start	Indexing Querying	ValueIndexCreation	Informational		
+Microsoft-Windows-Search-Core	330	0	ValueIndexCreationStop(UInt32 Locale, AnsiString IdxName, Boolean IsShadow, UInt32 ErrorCode)	Stop	Indexing Querying	ValueIndexCreation	Informational		
+Microsoft-Windows-Search-Core	331	0	ValueIndexSeekStart(UnicodeString SeekType, UInt32 ColumnType)	Start	Indexing Querying	ValueIndexSeek	Informational		
+Microsoft-Windows-Search-Core	332	0	ValueIndexSeekStop(UnicodeString SeekType, UInt32 Result)	Stop	Indexing Querying	ValueIndexSeek	Informational		
+Microsoft-Windows-Search-Core	333	0	ValueIndexSeekStart333(Boolean HasStartVariant, Boolean HasEndVariant, Boolean ExcludeStartVariant, Boolean ExcludeEndVariant)	Start	Indexing Querying	ValueIndexSeek	Informational		
+Microsoft-Windows-Search-Core	334	0	ValueIndexSeekStop334(UInt32 RangeSet)	Stop	Indexing Querying	ValueIndexSeek	Informational		
+Microsoft-Windows-Search-Core	335	0	FreeCursor(UInt32 Qid, UInt32 Cursor)		Querying	FreeCursor	Informational		
+Microsoft-Windows-Search-Core	336	0	ReuseRestriction(UInt32 WhereID)		Querying	ReuseRestriction	Informational		
+Microsoft-Windows-Search-Core	337	0	GetQueryStatusExStart(UInt32 Qid)	Start	Querying	GetQueryStatusEx	Informational		
+Microsoft-Windows-Search-Core	338	0	GetQueryStatusExStop(UInt32 Qid)	Stop	Querying	GetQueryStatusEx	Informational		
+Microsoft-Windows-Search-Core	339	0	CreateWordBreakerStart(UInt32 Locale)	Start	Indexing	CreateWordBreaker	Informational		
+Microsoft-Windows-Search-Core	340	0	CreateWordBreakerStop(UInt32 Locale)	Stop	Indexing	CreateWordBreaker	Informational		
+Microsoft-Windows-Search-Core	341	0	ReleaseWordBreakerStart(UInt32 Locale)	Start	Indexing	ReleaseWordBreaker	Informational		
+Microsoft-Windows-Search-Core	342	0	ReleaseWordBreakerStop(UInt32 Locale)	Stop	Indexing	ReleaseWordBreaker	Informational		
+Microsoft-Windows-Search-Core	343	0	CreateStemmerStart(UInt32 Locale)	Start	Indexing	CreateStemmer	Informational		
+Microsoft-Windows-Search-Core	344	0	CreateStemmerStop(UInt32 Locale)	Stop	Indexing	CreateStemmer	Informational		
+Microsoft-Windows-Search-Core	345	0	ReleaseStemmerStart(UInt32 Locale)	Start	Indexing	ReleaseStemmer	Informational		
+Microsoft-Windows-Search-Core	346	0	ReleaseStemmerStop(UInt32 Locale)	Stop	Indexing	ReleaseStemmer	Informational		
+Microsoft-Windows-Search-Core	347	0	CreateCatalog(UInt32 hr, UnicodeString Message)		Service	CreateCatalog	Informational		
+Microsoft-Windows-Search-Core	348	0	DeleteCatalog(UInt32 hr, UnicodeString Message)		Service	DeleteCatalog	Informational		
+Microsoft-Windows-Search-Core	349	0	RobotThread_GetWordBreaker(GUID fmtid, UInt32 pid, UInt32 LocaleID, UInt32 LocaleSource)		IndexingChunk Gatherer	RobotThread_GetWordBreaker	Informational		
+Microsoft-Windows-Search-Core	350	0	GetWordBreaker(UInt32 Locale)		Indexing	GetWordBreaker	Informational		
+Microsoft-Windows-Search-Core	351	0	WordBreakerSelector_IncrementHistory(UInt32 LocaleID, UInt32 IncrementCallID)		IndexingChunk Gatherer	WordBreakerSelector_IncrementHistory	Informational		
+Microsoft-Windows-Search-Core	352	0	WordBreakerSelector_SubstituteLocale(UInt32 LocaleOriginal, UInt32 LocaleSubstitute)		IndexingChunk Gatherer	WordBreakerSelector_SubstituteLocale	Informational		
+Microsoft-Windows-Search-Core	353	0	WordBreakerSelector_Fallback(UInt32 LocaleID)		IndexingChunk Gatherer	WordBreakerSelector_Fallback	Informational		
+Microsoft-Windows-Search-Core	354	0	WordBreakerHistory_Save(AnsiString Data)		IndexingChunk Gatherer	WordBreakerHistory_Save	Informational		
+Microsoft-Windows-Search-Core	355	0	WordBreakerHistory_Load(AnsiString Data)		IndexingChunk Gatherer	WordBreakerHistory_Load	Informational		
+Microsoft-Windows-Search-Core	356	0	RobotThread_LangAutoDetection_Scores(UInt32 TextLength, UInt32 TopLCID, UInt32 TopScore, UInt32 SecondLCID, UInt32 SecondScore)		IndexingChunk Gatherer	RobotThread_LangAutoDetection_Scores	Informational		
+Microsoft-Windows-Search-Core	357	0	FileChangeTracker_APICallStart()	Start	IndexingChunk Gatherer	FileChangeTracker_APICall	Informational		
+Microsoft-Windows-Search-Core	358	0	FileChangeTracker_APICallStop(UInt32 ErrorCode)	Stop	IndexingChunk Gatherer	FileChangeTracker_APICall	Informational		
+Microsoft-Windows-Search-Core	359	0	FileChangeTracker_APICallStart359()	Start	IndexingChunk Gatherer	FileChangeTracker_APICall	Informational		
+Microsoft-Windows-Search-Core	360	0	FileChangeTracker_APICallStop360(UInt32 ErrorCode)	Stop	IndexingChunk Gatherer	FileChangeTracker_APICall	Informational		
+Microsoft-Windows-Search-Core	361	0	FileChangeTracker_APICallStart361()	Start	IndexingChunk Gatherer	FileChangeTracker_APICall	Informational		
+Microsoft-Windows-Search-Core	362	0	FileChangeTracker_APICallStop362(UInt32 ErrorCode)	Stop	IndexingChunk Gatherer	FileChangeTracker_APICall	Informational		
+Microsoft-Windows-Search-Core	363	0	FileChangeTracker_ProcessUSNStart()	Start	IndexingChunk Gatherer	FileChangeTracker_ProcessUSN	Informational		
+Microsoft-Windows-Search-Core	364	0	FileChangeTracker_ProcessUSNStop()	Stop	IndexingChunk Gatherer	FileChangeTracker_ProcessUSN	Informational		
+Microsoft-Windows-Search-Core	365	0	ScopeChangeNotification_OnChanged(UInt32 ScopeId, GUID EventId, UnicodeString PackageFamilyName, UnicodeString Path, UInt32 Result, Boolean SuccessEvent)		IndexingItem Gatherer	ScopeChangeNotification_OnChanged	Informational		
+Microsoft-Windows-Search-Core	366	0	ScopeChangeNotification_OnChanged366(UInt32 ScopeId)		IndexingItem Gatherer	ScopeChangeNotification_OnChanged	Informational		
+Microsoft-Windows-Search-Core	367	0	ScopeChangeNotification_RegisterStart(UnicodeString UserSid, UnicodeString PackageFamilyName, GUID EventId, UInt32 Count, UnicodeString Paths)	Start		ScopeChangeNotification_Register	Informational		
+Microsoft-Windows-Search-Core	368	0	ScopeChangeNotification_RegisterStop()	Stop		ScopeChangeNotification_Register	Informational		
+Microsoft-Windows-Search-Core	369	0	ScopeChangeNotification_UnregisterStart(UnicodeString UserSid, UnicodeString PackageFamilyName, GUID EventId)	Start		ScopeChangeNotification_Unregister	Informational		
+Microsoft-Windows-Search-Core	370	0	ScopeChangeNotification_UnregisterStop()	Stop		ScopeChangeNotification_Unregister	Informational		

@@ -1,0 +1,53 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-NlaSvc	4001	0	WaitforIdentificationStart(GUID InterfaceGuid, UInt8 CurrentOrNextState)	Start	Identification keyword_200000000000	WaitforIdentification	Informational		
+Microsoft-Windows-NlaSvc	4002	0	WaitforIdentificationStop(GUID InterfaceGuid, UInt8 CurrentOrNextState)	Stop	Identification keyword_200000000000	WaitforIdentification	Informational		
+Microsoft-Windows-NlaSvc	4101	0	TriggerMediaConnect(GUID InterfaceGuid, UnicodeString AdapterName)	MediaConnect	Trigger LwtDiagnostic	Trigger	Informational		
+Microsoft-Windows-NlaSvc	4102	0	TriggerMediaDisconnect(GUID InterfaceGuid, UnicodeString AdapterName)	MediaDisconnect	Trigger LwtDiagnostic	Trigger	Informational		
+Microsoft-Windows-NlaSvc	4103	0	TriggerRouteChange(GUID InterfaceGuid, UInt32 MibNotificationType)	RouteChange	Trigger	Trigger	Informational		
+Microsoft-Windows-NlaSvc	4104	0	TriggerAddressChange(GUID InterfaceGuid, UInt32 MibNotificationType)	AddressChange	Trigger	Trigger	Informational		
+Microsoft-Windows-NlaSvc	4105	0	TriggerQuarantineStateChange()	QuarantineStateChange	Trigger	Trigger	Informational		
+Microsoft-Windows-NlaSvc	4106	0	TriggerDhcpNotification()	DhcpNotification	Trigger	Trigger	Informational		
+Microsoft-Windows-NlaSvc	4201	0	GatewayResolutionStart()	Start	Resolver	GatewayResolution	Informational		
+Microsoft-Windows-NlaSvc	4202	0	GatewayResolutionStop()	Stop	Resolver	GatewayResolution	Informational		
+Microsoft-Windows-NlaSvc	4203	0	GatewayResolutionStart4203(GUID InterfaceGuid, UnicodeString GatewayIpAddress)	Start	Resolver	GatewayResolution	Informational		
+Microsoft-Windows-NlaSvc	4204	0	GatewayResolutionStop4204(GUID InterfaceGuid, UnicodeString GatewayIpAddress, UInt32 ErrorCode, UInt32 NlnsState, UInt16 MacAddrLen, Binary MacAddr)	Stop	Resolver	GatewayResolution	Informational		
+Microsoft-Windows-NlaSvc	4205	0	GatewayResolutionFailed(GUID InterfaceGuid, UnicodeString GatewayIpAddress, UInt32 ErrorCode)	Failed	Resolver LwtDiagnostic	GatewayResolution	Error		
+Microsoft-Windows-NlaSvc	4251	0	PluginDataIndication(UnicodeString PluginName, UnicodeString EntityName, UInt16 IndicatedRowCount, UInt16 RowsWithInterfacesIndicatedCount, GUID RowInterfaceGuid)	DataIndication	Plugin	Plugin	Informational		
+Microsoft-Windows-NlaSvc	4261	0	DhcpStabilized(GUID InterfaceGuid, UInt32 NlaState)	Stabilized	Trigger LwtDiagnostic	Dhcp	Informational		
+Microsoft-Windows-NlaSvc	4301	0	IntranetResolutionStart()	Start	Resolver Intranet	IntranetResolution	Informational		
+Microsoft-Windows-NlaSvc	4302	0	IntranetResolutionStop()	Stop	Resolver Intranet	IntranetResolution	Informational		
+Microsoft-Windows-NlaSvc	4311	0	DsGetDcName(DnsSuffix)Start(UnicodeString DnsSuffix, UInt32 Flags, UInt32 ErrorCode, UnicodeString RetrievedDomain, UnicodeString RetrievedForest)	Start	Resolver Intranet	DsGetDcName(DnsSuffix)	Informational		
+Microsoft-Windows-NlaSvc	4312	0	DsGetDcName(DnsSuffix)Stop(UnicodeString DnsSuffix, UInt32 Flags, UInt32 ErrorCode, UnicodeString RetrievedDomain, UnicodeString RetrievedForest)	Stop	Resolver Intranet	DsGetDcName(DnsSuffix)	Informational		
+Microsoft-Windows-NlaSvc	4313	0	DsGetDcName(DnsSuffix)Failed(UnicodeString DnsSuffix, UInt32 Flags, UInt32 ErrorCode, UnicodeString RetrievedDomain, UnicodeString RetrievedForest)	Failed	Resolver Intranet LwtDiagnostic	DsGetDcName(DnsSuffix)	Warning		
+Microsoft-Windows-NlaSvc	4321	0	DsGetDcName(Ds)Start(UnicodeString DnsSuffix, UInt32 Flags, UInt32 ErrorCode, UnicodeString RetrievedDomain, UnicodeString RetrievedForest)	Start	Resolver Intranet	DsGetDcName(Ds)	Informational		
+Microsoft-Windows-NlaSvc	4322	0	DsGetDcName(Ds)Stop(UnicodeString DnsSuffix, UInt32 Flags, UInt32 ErrorCode, UnicodeString RetrievedDomain, UnicodeString RetrievedForest)	Stop	Resolver Intranet	DsGetDcName(Ds)	Informational		
+Microsoft-Windows-NlaSvc	4323	0	DsGetDcName(Ds)Failed(UnicodeString DnsSuffix, UInt32 Flags, UInt32 ErrorCode, UnicodeString RetrievedDomain, UnicodeString RetrievedForest)	Failed	Resolver Intranet LwtDiagnostic	DsGetDcName(Ds)	Warning		
+Microsoft-Windows-NlaSvc	4331	0	DsGetDcName(RootDomainGuid)Start(UnicodeString DnsSuffix, UInt32 Flags, UInt32 ErrorCode, UnicodeString RetrievedDomain, UnicodeString RetrievedForest)	Start	Resolver Intranet	DsGetDcName(RootDomainGuid)	Informational		
+Microsoft-Windows-NlaSvc	4332	0	DsGetDcName(RootDomainGuid)Stop(UnicodeString DnsSuffix, UInt32 Flags, UInt32 ErrorCode, UnicodeString RetrievedDomain, UnicodeString RetrievedForest)	Stop	Resolver Intranet	DsGetDcName(RootDomainGuid)	Informational		
+Microsoft-Windows-NlaSvc	4333	0	DsGetDcName(RootDomainGuid)Failed(UnicodeString DnsSuffix, UInt32 Flags, UInt32 ErrorCode, UnicodeString RetrievedDomain, UnicodeString RetrievedForest)	Failed	Resolver Intranet LwtDiagnostic	DsGetDcName(RootDomainGuid)	Error		
+Microsoft-Windows-NlaSvc	4341	0	LdapAuthenticationStart(UnicodeString InterfaceName, UnicodeString Addresses, UInt32 TryCount, UInt32 ErrorCode)	Start	Resolver Intranet	LdapAuthentication	Informational		
+Microsoft-Windows-NlaSvc	4342	0	LdapAuthenticationStop(UnicodeString InterfaceName, UnicodeString Addresses, UInt32 TryCount, UInt32 ErrorCode)	Stop	Resolver Intranet	LdapAuthentication	Informational		
+Microsoft-Windows-NlaSvc	4343	0	LdapAuthenticationFailed(UnicodeString InterfaceName, UnicodeString Addresses, UInt32 TryCount, UInt32 ErrorCode)	Failed	Resolver Intranet LwtDiagnostic	LdapAuthentication	Error		
+Microsoft-Windows-NlaSvc	4351	0	ldap_connectStart(UnicodeString Addresses, UnicodeString DcName, UInt32 TryNumber, UInt32 TryCount, UInt32 ErrorCode)	Start	Resolver Intranet	ldap_connect	Informational		
+Microsoft-Windows-NlaSvc	4352	0	ldap_connectStop(UnicodeString Addresses, UnicodeString DcName, UInt32 TryNumber, UInt32 TryCount, UInt32 ErrorCode)	Stop	Resolver Intranet	ldap_connect	Informational		
+Microsoft-Windows-NlaSvc	4353	0	ldap_connectFailed(UnicodeString Addresses, UnicodeString DcName, UInt32 TryNumber, UInt32 TryCount, UInt32 ErrorCode)	Failed	Resolver Intranet LwtDiagnostic	ldap_connect	Error		
+Microsoft-Windows-NlaSvc	4354	0	ldap_bindStart(UnicodeString Addresses, UnicodeString DcName, UInt32 TryNumber, UInt32 TryCount, UInt32 ErrorCode)	Start	Resolver Intranet	ldap_bind	Informational		
+Microsoft-Windows-NlaSvc	4355	0	ldap_bindStop(UnicodeString Addresses, UnicodeString DcName, UInt32 TryNumber, UInt32 TryCount, UInt32 ErrorCode)	Stop	Resolver Intranet	ldap_bind	Informational		
+Microsoft-Windows-NlaSvc	4356	0	ldap_bindFailed(UnicodeString Addresses, UnicodeString DcName, UInt32 TryNumber, UInt32 TryCount, UInt32 ErrorCode)	Failed	Resolver Intranet LwtDiagnostic	ldap_bind	Error		
+Microsoft-Windows-NlaSvc	4401	0	Identifying(GUID InterfaceGuid, UInt16 SignatureLength, Binary Signature, UInt32 SignatureSource)		Identification LwtDiagnostic	Identifying	Informational		
+Microsoft-Windows-NlaSvc	4402	0	Identified(GUID InterfaceGuid, UInt16 SignatureLength, Binary Signature, UInt32 SignatureSource)		Identification LwtDiagnostic	Identified	Informational		
+Microsoft-Windows-NlaSvc	4403	0	Disconnect(GUID InterfaceGuid, UInt16 SignatureLength, Binary Signature, UInt32 SignatureSource)		Identification LwtDiagnostic	Disconnect	Informational		
+Microsoft-Windows-NlaSvc	4404	0	Identified4404(GUID InterfaceGuid, UInt16 SignatureLength, Binary Signature, UInt32 SignatureSource)		Identification	Identified	Informational		
+Microsoft-Windows-NlaSvc	4405	0	Identified4405(GUID InterfaceGuid, UInt16 SignatureLength, Binary Signature, UInt32 SignatureSource)		Identification LwtDiagnostic	Identified	Informational		
+Microsoft-Windows-NlaSvc	4407	0	InterfaceMediaConnect(GUID InterfaceGuid, UnicodeString AdapterName)	MediaConnect	Identification LwtDiagnostic	Interface	Informational		
+Microsoft-Windows-NlaSvc	4408	0	InterfaceMediaDisconnect(GUID InterfaceGuid, UnicodeString AdapterName)	MediaDisconnect	Identification LwtDiagnostic	Interface	Informational		
+Microsoft-Windows-NlaSvc	4409	0	Interface(GUID InterfaceGuid, UnicodeString AdapterName)		Identification	Interface	Informational		
+Microsoft-Windows-NlaSvc	4410	0	Identified4410(GUID InterfaceGuid, UInt16 SignatureLength, Binary Signature, UInt32 SignatureSource)		Identification LwtDiagnostic	Identified	Informational		
+Microsoft-Windows-NlaSvc	4411	0	Identified4411(GUID InterfaceGuid, UInt16 SignatureLength, Binary Signature, UInt32 SignatureSource)		Identification	Identified	Informational		
+Microsoft-Windows-NlaSvc	4451	0	LdapAuthentication(GUID InterfaceGuid, UInt32 AuthCapUnlikelyReason, UInt32 SpeculativeTimeout)			LdapAuthentication	Informational		
+Microsoft-Windows-NlaSvc	5001	0	DhcpStabilized5001(GUID InterfaceGuid, UInt32 NlaState)	Stabilized		Dhcp	Informational		
+Microsoft-Windows-NlaSvc	5002	0	Identified5002(GUID InterfaceGuid, UInt32 SignatureSource, UInt32 SignatureCharacteristics)			Identified	Informational		
+Microsoft-Windows-NlaSvc	6101	0	PerftrackCancel(GUID InterfaceGuid, UnicodeString AdapterName)		Identification	PerftrackCancel	Informational		
+Microsoft-Windows-NlaSvc	6102	0	PerftrackCancel6102(GUID InterfaceGuid, UnicodeString AdapterName)		Identification	PerftrackCancel	Informational		
+Microsoft-Windows-NlaSvc	6103	0	PerftrackCancel6103(GUID InterfaceGuid, UnicodeString AdapterName)		Identification	PerftrackCancel	Informational		
+Microsoft-Windows-NlaSvc	6104	0	PerftrackCancel6104(GUID InterfaceGuid, UnicodeString AdapterName)		Identification	PerftrackCancel	Informational		

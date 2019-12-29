@@ -1,0 +1,8 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-SetupPlatform	1001	0	RunoperationStart(UnicodeString Operation, UInt32 ErrorCode)	Start	keyPerformance	Runoperation	Informational		
+Microsoft-Windows-SetupPlatform	1002	0	RunoperationStop(UnicodeString Operation, UInt32 ErrorCode)	Stop	keyPerformance	Runoperation	Informational		
+Microsoft-Windows-SetupPlatform	1003	0	OnlinegatherStart(UnicodeString OfflineWinDir, UInt32 MachineSpecific)	Start	keyPerformance	Onlinegather	Informational		
+Microsoft-Windows-SetupPlatform	1004	0	OnlinegatherStop(UnicodeString OfflineWinDir, UInt32 MachineSpecific)	Stop	keyPerformance	Onlinegather	Informational		
+Microsoft-Windows-SetupPlatform	1005	0	OfflinegatherStart()	Start	keyPerformance	Offlinegather	Informational		
+Microsoft-Windows-SetupPlatform	1006	0	OfflinegatherStop()	Stop	keyPerformance	Offlinegather	Informational		
+Microsoft-Windows-SetupPlatform	2005	0	InstallWindowsTask(UInt32 Installationchoice, UInt32 HostOSMajorversion, UInt32 HostOSMinorversion, UInt32 HostOSBuildnumber, UInt32 HostOSServicepackmajornumber, UInt32 HostOSServicepackminornumber)			InstallWindowsTask	Informational		

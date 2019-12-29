@@ -1,0 +1,12 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-HealthCenterCPL	100	0	WHC_ControlPanelLaunchStart()	Start		WHC_ControlPanelLaunch	Informational		
+Microsoft-Windows-HealthCenterCPL	101	0	WHC_ControlPanelLaunchStop()	Stop		WHC_ControlPanelLaunch	Informational		
+Microsoft-Windows-HealthCenterCPL	102	0	WHC_ControlPanel_DataStart()	Start		WHC_ControlPanel_Data	Informational		
+Microsoft-Windows-HealthCenterCPL	103	0	WHC_ControlPanel_DataStop()	Stop		WHC_ControlPanel_Data	Informational		
+Microsoft-Windows-HealthCenterCPL	104	0	WHC_ControlPanel_FixStart(UnicodeString psz)	Start		WHC_ControlPanel_Fix	Informational		
+Microsoft-Windows-HealthCenterCPL	105	0	WHC_ControlPanel_FixStop(UnicodeString psz)	Stop		WHC_ControlPanel_Fix	Informational		
+Microsoft-Windows-HealthCenterCPL	106	0	WHC_ControlPanel_Check_ChangeStart(UnicodeString psz)	Start		WHC_ControlPanel_Check_Change	Informational		
+Microsoft-Windows-HealthCenterCPL	107	0	WHC_ControlPanel_Check_ChangeStop(UnicodeString psz)	Stop		WHC_ControlPanel_Check_Change	Informational		
+Microsoft-Windows-HealthCenterCPL	108	0	WHC_ControlPanel_TaskLink_LaunchUACStart()	Start		WHC_ControlPanel_TaskLink_LaunchUAC	Informational		
+Microsoft-Windows-HealthCenterCPL	109	0	Perftrack_HealthCenter_OpenUsingIconFlyoutStop()	Stop		Perftrack_HealthCenter_OpenUsingIconFlyout	Informational		
+Microsoft-Windows-HealthCenterCPL	110	0	WHC_ControlPanel_TaskLink_LaunchSmartScreenStart()	Start	HealthCenterCPL	WHC_ControlPanel_TaskLink_LaunchSmartScreen	Informational		

@@ -1,0 +1,15 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Kernel-General	1	0	task_0(FILETIME NewTime, FILETIME OldTime)		KERNEL_GENERAL_KEYWORD_TIME	task_0	Informational		
+Microsoft-Windows-Kernel-General	1	1	task_0_V1(FILETIME NewTime, FILETIME OldTime, UInt32 Reason)		KERNEL_GENERAL_KEYWORD_TIME	task_0	Informational		
+Microsoft-Windows-Kernel-General	2	0	task_02()			task_0	Informational		
+Microsoft-Windows-Kernel-General	3	0	task_03()			task_0	Informational		
+Microsoft-Windows-Kernel-General	4	0	task_04()			task_0	Informational		
+Microsoft-Windows-Kernel-General	5	0	task_05(HexInt32 FinalStatus, UInt16 ExtraStringLength, UnicodeString ExtraString)			task_0	Error		
+Microsoft-Windows-Kernel-General	6	0	task_06(HexInt32 FinalStatus, UInt16 ExtraStringLength, UnicodeString ExtraString)			task_0	Error		
+Microsoft-Windows-Kernel-General	11	0	task_011(UInt16 ExtraStringLength, UnicodeString ExtraString, GUID TmId, GUID RmId, HexInt32 Status, UInt32 InternalCode)			task_0	Informational		
+Microsoft-Windows-Kernel-General	12	0	task_012(UInt32 MajorVersion, UInt32 MinorVersion, UInt32 BuildVersion, UInt32 QfeVersion, UInt16 ServiceVersion, UInt32 BootMode, FILETIME StartTime)			task_0	Informational		
+Microsoft-Windows-Kernel-General	13	0	task_013(FILETIME StopTime)			task_0	Informational		
+Microsoft-Windows-Kernel-General	14	0	task_014(UnicodeString Mode, UnicodeString ObjectType, UnicodeString ObjectName, UnicodeString ProcessName, UnicodeString ObjectCreatorProcessName, HexInt32 AccessMask, UInt32 TokenType, UInt32 ImpersonationLevel, UInt32 SessionId, UInt32 LowBoxNumber, UInt32 TokenGroupsCount, 28 TokenGroups, UInt32 TokenPackageCount, 30 TokenPackage, UInt32 TokenCapabilityCount, 31 TokenCapabilities, UInt32 TokenTrustLevelCount, 33 TokenTrustLevel, UInt8 SecurityDescriptorRevision, UInt16 SecurityDescriptorControl, SID SecurityDescriptorOwner, SID SecurityDescriptorGroup, UInt8 DaclRevision, UInt16 DaclAceCount, 34 DaclAce, UInt8 SaclRevision, UInt16 SaclAceCount, 38 SaclAce)		KERNEL_GENERAL_SECURITY_ACCESSCHECK	task_0	Error		
+Microsoft-Windows-Kernel-General	15	0	task_015(UInt16 HiveNameLength, UnicodeString HiveName, UInt32 OriginalSize, UInt32 NewSize)			task_0	Informational		
+Microsoft-Windows-Kernel-General	16	0	task_016(UInt16 HiveNameLength, UnicodeString HiveName, UInt32 KeysUpdated, UInt32 DirtyPages)			task_0	Informational		
+Microsoft-Windows-Kernel-General	17	0	task_017(UnicodeString ActionName, UnicodeString ProcessName, UnicodeString AccountName, UnicodeString AuthorityName, HexInt64 TokenId, HexInt64 AuthenticationId, UInt32 TokenType, UInt32 ImpersonationLevel, HexInt32 TokenFlags, Int64 SidValuesReferenceCount, UInt32 SidValuesCount, GUID SidValues, Int64 SharedSidValuesReferenceCount, UInt32 SharedSidValuesCount, Pointer SharedSidValues)		KERNEL_GENERAL_TOKEN_SID_MANAGEMENT	task_0	Informational		

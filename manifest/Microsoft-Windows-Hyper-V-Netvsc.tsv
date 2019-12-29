@@ -1,0 +1,23 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Hyper-V-Netvsc	1	0	ProtocolNegotiate(UInt32 VersionLen, UnicodeString Version, UInt32 Status)			ProtocolNegotiate	Informational		
+Microsoft-Windows-Hyper-V-Netvsc	2	0	ProtocolNegotiate2(UInt32 VersionLen, UnicodeString Version, UInt32 Status)			ProtocolNegotiate	Error		
+Microsoft-Windows-Hyper-V-Netvsc	3	0	RndisMPInit(UInt32 MiniportNameLen, UnicodeString MiniportName)			RndisMPInit	Informational		
+Microsoft-Windows-Hyper-V-Netvsc	4	0	RndisMPInit4(UInt32 MiniportNameLen, UnicodeString MiniportName, UInt32 Status)			RndisMPInit	Error		
+Microsoft-Windows-Hyper-V-Netvsc	5	0	RndisMPInit5(UInt32 MiniportNameLen, UnicodeString MiniportName, UInt32 SubkeyNameLen, UnicodeString SubkeyName, UInt32 Status)			RndisMPInit	Error		
+Microsoft-Windows-Hyper-V-Netvsc	6	0	RndisStatusChange(UInt32 MiniportNameLen, UnicodeString MiniportName)			RndisStatusChange	Informational		
+Microsoft-Windows-Hyper-V-Netvsc	7	0	RndisStatusChange7(UInt32 MiniportNameLen, UnicodeString MiniportName)			RndisStatusChange	Informational		
+Microsoft-Windows-Hyper-V-Netvsc	8	0	RndisStatusChange8(UInt32 MiniportNameLen, UnicodeString MiniportName)			RndisStatusChange	Warning		
+Microsoft-Windows-Hyper-V-Netvsc	9	0	RndisStatusChange9(UInt32 MiniportNameLen, UnicodeString MiniportName)			RndisStatusChange	Warning		
+Microsoft-Windows-Hyper-V-Netvsc	10	0	RndisStatusChange10(UInt32 MiniportNameLen, UnicodeString MiniportName)			RndisStatusChange	Informational		
+Microsoft-Windows-Hyper-V-Netvsc	11	0	RndisStatusChange11(UInt32 MiniportNameLen, UnicodeString MiniportName)			RndisStatusChange	Informational		
+Microsoft-Windows-Hyper-V-Netvsc	12	0	RndisStatusChange12(UInt32 MiniportNameLen, UnicodeString MiniportName)			RndisStatusChange	Informational		
+Microsoft-Windows-Hyper-V-Netvsc	13	0	RndisStatusChange13(UInt32 MiniportNameLen, UnicodeString MiniportName)			RndisStatusChange	Informational		
+Microsoft-Windows-Hyper-V-Netvsc	14	0	RndisStatusChange14(UInt32 MiniportNameLen, UnicodeString MiniportName)			RndisStatusChange	Informational		
+Microsoft-Windows-Hyper-V-Netvsc	15	0	MicroportInit(UInt32 Status)			MicroportInit	Error		
+Microsoft-Windows-Hyper-V-Netvsc	16	0	task_0(UInt32 Status, UInt32 Operation, UInt32 DropReason, UInt32 MiniportNameLen, UnicodeString MiniportName)			task_0	Error		
+Microsoft-Windows-Hyper-V-Netvsc	17	0	task_017(UInt32 Status, UInt32 DropReason)			task_0	Error		
+Microsoft-Windows-Hyper-V-Netvsc	34	0	PdApi(Pointer ClientContext)			PdApi	Informational		
+Microsoft-Windows-Hyper-V-Netvsc	35	0	PdApi35(UInt32 Status, Pointer ClientContext)			PdApi	Error		
+Microsoft-Windows-Hyper-V-Netvsc	36	0	PdApi36(Pointer ClientContext)			PdApi	Informational		
+Microsoft-Windows-Hyper-V-Netvsc	37	0	NdkOpenAdapter(UInt32 Status, UInt32 failureReason)			NdkOpenAdapter	Error		
+Microsoft-Windows-Hyper-V-Netvsc	38	0	NdkPnPEvent(UInt32 Status, UInt32 failureReason)			NdkPnPEvent	Error		

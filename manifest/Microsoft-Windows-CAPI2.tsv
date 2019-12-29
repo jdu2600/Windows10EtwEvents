@@ -1,0 +1,70 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-CAPI2	10	0	BuildChainStart(UnicodeString EventWriteData)	Start	PathValidation PathDiscovery	BuildChain	Informational		
+Microsoft-Windows-CAPI2	11	0	BuildChainStop(UnicodeString EventWriteData)	Stop	PathValidation PathDiscovery	BuildChain	Informational		
+Microsoft-Windows-CAPI2	12	0	RetrieveIssuerCertificatefromCacheStart(UnicodeString EventWriteData)	Start	PathDiscovery Cache	RetrieveIssuerCertificatefromCache	Informational		
+Microsoft-Windows-CAPI2	13	0	RetrieveIssuerCertificatefromCacheStop(UnicodeString EventWriteData)	Stop	PathDiscovery Cache	RetrieveIssuerCertificatefromCache	Informational		
+Microsoft-Windows-CAPI2	14	0	RetrieveIssuerCertificatefromNetworkStart(UnicodeString EventWriteData)	Start	PathDiscovery Retrieval	RetrieveIssuerCertificatefromNetwork	Informational		
+Microsoft-Windows-CAPI2	15	0	RetrieveIssuerCertificatefromNetworkStop(UnicodeString EventWriteData)	Stop	PathDiscovery Retrieval	RetrieveIssuerCertificatefromNetwork	Informational		
+Microsoft-Windows-CAPI2	16	0	InhibitIssuerCertificateRetrieval(UnicodeString EventWriteData)		PathDiscovery Cache Retrieval	InhibitIssuerCertificateRetrieval	Error		
+Microsoft-Windows-CAPI2	17	0	RetrieveThird_PartyRootCertificatefromCacheStart(UnicodeString EventWriteData)	Start	PathDiscovery Cache AutoRootUpdate	RetrieveThird_PartyRootCertificatefromCache	Informational		
+Microsoft-Windows-CAPI2	18	0	RetrieveThird_PartyRootCertificatefromCacheStop(UnicodeString EventWriteData)	Stop	PathDiscovery Cache AutoRootUpdate	RetrieveThird_PartyRootCertificatefromCache	Informational		
+Microsoft-Windows-CAPI2	19	0	RetrieveThird_PartyRootCertificatefromNetworkStart(UnicodeString EventWriteData)	Start	PathDiscovery Retrieval AutoRootUpdate	RetrieveThird_PartyRootCertificatefromNetwork	Informational		
+Microsoft-Windows-CAPI2	20	0	RetrieveThird_PartyRootCertificatefromNetworkStop(UnicodeString EventWriteData)	Stop	PathDiscovery Retrieval AutoRootUpdate	RetrieveThird_PartyRootCertificatefromNetwork	Informational		
+Microsoft-Windows-CAPI2	21	0	RetrieveCrossCertificatefromCacheStart(UnicodeString EventWriteData)	Start	PathDiscovery Cache	RetrieveCrossCertificatefromCache	Informational		
+Microsoft-Windows-CAPI2	22	0	RetrieveCrossCertificatefromCacheStop(UnicodeString EventWriteData)	Stop	PathDiscovery Cache	RetrieveCrossCertificatefromCache	Informational		
+Microsoft-Windows-CAPI2	23	0	RetrieveCrossCertificatefromNetworkStart(UnicodeString EventWriteData)	Start	PathDiscovery Retrieval	RetrieveCrossCertificatefromNetwork	Informational		
+Microsoft-Windows-CAPI2	24	0	RetrieveCrossCertificatefromNetworkStop(UnicodeString EventWriteData)	Stop	PathDiscovery Retrieval	RetrieveCrossCertificatefromNetwork	Informational		
+Microsoft-Windows-CAPI2	30	0	VerifyChainPolicy(UnicodeString EventWriteData)		PathValidation	VerifyChainPolicy	Informational		
+Microsoft-Windows-CAPI2	40	0	VerifyRevocationStart(UnicodeString EventWriteData)	Start	PathValidation Revocation	VerifyRevocation	Informational		
+Microsoft-Windows-CAPI2	41	0	VerifyRevocationStop(UnicodeString EventWriteData)	Stop	PathValidation Revocation	VerifyRevocation	Informational		
+Microsoft-Windows-CAPI2	42	0	RejectRevocationInformation(UnicodeString EventWriteData)		PathValidation Revocation	RejectRevocationInformation	Error		
+Microsoft-Windows-CAPI2	50	0	RetrieveObjectfromCacheStart(UnicodeString EventWriteData)	Start	PathDiscovery Revocation Cache AutoRootUpdate	RetrieveObjectfromCache	Informational		
+Microsoft-Windows-CAPI2	51	0	RetrieveObjectfromCacheStop(UnicodeString EventWriteData)	Stop	PathDiscovery Revocation Cache AutoRootUpdate	RetrieveObjectfromCache	Informational		
+Microsoft-Windows-CAPI2	52	0	RetrieveObjectfromNetworkStart(UnicodeString EventWriteData)	Start	PathDiscovery Revocation Retrieval AutoRootUpdate	RetrieveObjectfromNetwork	Informational		
+Microsoft-Windows-CAPI2	53	0	RetrieveObjectfromNetworkStop(UnicodeString EventWriteData)	Stop	PathDiscovery Revocation Retrieval AutoRootUpdate	RetrieveObjectfromNetwork	Informational		
+Microsoft-Windows-CAPI2	60	0	OpenStore(UnicodeString EventWriteData)		CertificateStore	OpenStore	Verbose		
+Microsoft-Windows-CAPI2	70	0	AcquireCertificatePrivateKey(UnicodeString EventWriteData)		PrivateKey	AcquireCertificatePrivateKey	Informational		
+Microsoft-Windows-CAPI2	71	0	SignCertificate(UnicodeString EventWriteData)		PrivateKey	SignCertificate	Informational		
+Microsoft-Windows-CAPI2	80	0	VerifyTrustStart(UnicodeString EventWriteData)	Start	WinVerifyTrust	VerifyTrust	Informational		
+Microsoft-Windows-CAPI2	81	0	VerifyTrustStop(UnicodeString EventWriteData)	Stop	WinVerifyTrust	VerifyTrust	Informational		
+Microsoft-Windows-CAPI2	82	0	FindSecurityCatalogforFile(UnicodeString EventWriteData)		Catalog	FindSecurityCatalogforFile	Informational		
+Microsoft-Windows-CAPI2	90	0	X509Objects(UnicodeString EventWriteData)		CertificateDetails	X509Objects	Informational		
+Microsoft-Windows-CAPI2	256	0	task_0(UnicodeString 1, UnicodeString 2)			task_0	Error		
+Microsoft-Windows-CAPI2	257	0	task_0257(UnicodeString 1)			task_0	Error		
+Microsoft-Windows-CAPI2	512	0	task_0512(UnicodeString 1)			task_0	Critical		
+Microsoft-Windows-CAPI2	513	0	task_0513(UnicodeString 1)			task_0	Critical		
+Microsoft-Windows-CAPI2	4097	0	task_04097(UnicodeString 1, UnicodeString 2)			task_0	Informational		
+Microsoft-Windows-CAPI2	4098	0	task_04098(UnicodeString 1)			task_0	Informational		
+Microsoft-Windows-CAPI2	4099	0	task_04099(UnicodeString 1, UnicodeString 2)			task_0	Error		
+Microsoft-Windows-CAPI2	4100	0	task_04100(UnicodeString 1)			task_0	Informational		
+Microsoft-Windows-CAPI2	4101	0	task_04101(UnicodeString 1, UnicodeString 2)			task_0	Error		
+Microsoft-Windows-CAPI2	4102	0	task_04102(UnicodeString 1, UnicodeString 2)			task_0	Informational		
+Microsoft-Windows-CAPI2	4103	0	task_04103(UnicodeString 1)			task_0	Informational		
+Microsoft-Windows-CAPI2	4104	0	task_04104(UnicodeString 1, UnicodeString 2)			task_0	Error		
+Microsoft-Windows-CAPI2	4105	0	task_04105(UnicodeString 1, UnicodeString 2)			task_0	Informational		
+Microsoft-Windows-CAPI2	4106	0	task_04106(UnicodeString 1, UnicodeString 2)			task_0	Informational		
+Microsoft-Windows-CAPI2	4107	0	task_04107(UnicodeString 1, UnicodeString 2)			task_0	Error		
+Microsoft-Windows-CAPI2	4108	0	task_04108(UnicodeString 1, UnicodeString 2)			task_0	Informational		
+Microsoft-Windows-CAPI2	4109	0	task_04109(UnicodeString 1, UnicodeString 2)			task_0	Informational		
+Microsoft-Windows-CAPI2	4110	0	task_04110(UnicodeString 1, UnicodeString 2)			task_0	Error		
+Microsoft-Windows-CAPI2	4111	0	task_04111(UnicodeString 1)			task_0	Informational		
+Microsoft-Windows-CAPI2	4112	0	task_04112(UnicodeString 1)			task_0	Informational		
+Microsoft-Windows-CAPI2	4113	0	task_04113(UnicodeString 1)			task_0	Informational		
+Microsoft-Windows-CAPI2	4114	0	task_04114(UnicodeString 1, UnicodeString 2, UnicodeString 3, UnicodeString 4, UnicodeString 5, UnicodeString 6, UnicodeString 7)			task_0	Error		
+Microsoft-Windows-CAPI2	4128	0	task_04128(UnicodeString 1)			task_0	Informational		
+Microsoft-Windows-CAPI2	4129	0	task_04129(UnicodeString 1, UnicodeString 2)			task_0	Error		
+Microsoft-Windows-CAPI2	4176	0	task_04176(UnicodeString 1, UnicodeString 2)			task_0	Error		
+Microsoft-Windows-CAPI2	4177	0	task_04177(UnicodeString 1, UnicodeString 2)			task_0	Error		
+Microsoft-Windows-CAPI2	4178	0	task_04178(UnicodeString 1, UnicodeString 2)			task_0	Error		
+Microsoft-Windows-CAPI2	8192	0	AddaSecurityCatalogtotheCatalogDatabaseStart(UnicodeString Subsystem, UnicodeString FileName)	Start	Catalog	AddaSecurityCatalogtotheCatalogDatabase	Informational		
+Microsoft-Windows-CAPI2	8193	0	AddaSecurityCatalogtotheCatalogDatabaseStop(HexInt32 Status)	Stop	Catalog	AddaSecurityCatalogtotheCatalogDatabase	Informational		
+Microsoft-Windows-CAPI2	8194	0	RemoveaSecurityCatalogfromtheCatalogDatabaseStart(UnicodeString Subsystem, UnicodeString FileName)	Start	Catalog	RemoveaSecurityCatalogfromtheCatalogDatabase	Informational		
+Microsoft-Windows-CAPI2	8195	0	RemoveaSecurityCatalogfromtheCatalogDatabaseStop(HexInt32 Status)	Stop	Catalog	RemoveaSecurityCatalogfromtheCatalogDatabase	Informational		
+Microsoft-Windows-CAPI2	8196	0	SyncaSecurityCatalogwiththeCatalogDatabaseStart(UnicodeString Subsystem, UnicodeString FileName)	Start	Catalog	SyncaSecurityCatalogwiththeCatalogDatabase	Verbose		
+Microsoft-Windows-CAPI2	8197	0	SyncaSecurityCatalogwiththeCatalogDatabaseStop(HexInt32 Status)	Stop	Catalog	SyncaSecurityCatalogwiththeCatalogDatabase	Verbose		
+Microsoft-Windows-CAPI2	8198	0	RebuildasubsystemoftheCatalogDatabaseStart(UnicodeString Subsystem)	Start	Catalog	RebuildasubsystemoftheCatalogDatabase	Informational		
+Microsoft-Windows-CAPI2	8199	0	RebuildasubsystemoftheCatalogDatabaseStop(HexInt32 Status)	Stop	Catalog	RebuildasubsystemoftheCatalogDatabase	Informational		
+Microsoft-Windows-CAPI2	8200	0	SearchforSecurityCatalogsintheCatalogDatabasethatcontainthehashStart(UnicodeString Subsystem, UnicodeString Algorithm, UInt16 Length, Binary Value)	Start	Catalog	SearchforSecurityCatalogsintheCatalogDatabasethatcontainthehash	Informational		
+Microsoft-Windows-CAPI2	8201	0	SearchforSecurityCatalogsintheCatalogDatabasethatcontainthehashStop(HexInt32 Status, UInt32 Count)	Stop	Catalog	SearchforSecurityCatalogsintheCatalogDatabasethatcontainthehash	Informational		
+Microsoft-Windows-CAPI2	8202	0	SyncaSecurityCatalogwiththeCatalogDatabaseStart8202(UnicodeString Subsystem)	Start	Catalog	SyncaSecurityCatalogwiththeCatalogDatabase	Informational		
+Microsoft-Windows-CAPI2	8203	0	SyncaSecurityCatalogwiththeCatalogDatabaseStop8203(HexInt32 Status)	Stop	Catalog	SyncaSecurityCatalogwiththeCatalogDatabase	Informational		

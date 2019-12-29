@@ -1,0 +1,9 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Sdstor	100	0	Io(UInt8 Port, UInt8 Bus, UInt8 Target, UInt8 LUN, UInt64 RequestDuration, UInt32 CDBLength, Binary CDB, UInt8 SrbStatus, Pointer Irp, Pointer OriginalIrp)			Io	Informational		
+Microsoft-Windows-Sdstor	101	0	PackedCommand(UInt32 PackedCommandCount, UInt32 NumIrpsPacked)			PackedCommand	Informational		
+Microsoft-Windows-Sdstor	102	0	PackedCommand102(UInt32 PackedCommandCount, UInt32 NumIrpsPacked)			PackedCommand	Informational		
+Microsoft-Windows-Sdstor	103	0	HighPriorityInterrupt()			HighPriorityInterrupt	Informational		
+Microsoft-Windows-Sdstor	104	0	HighPriorityInterrupt104()			HighPriorityInterrupt	Informational		
+Microsoft-Windows-Sdstor	105	0	HighPriorityInterrupt105(UInt32 ResultCode)			HighPriorityInterrupt	Informational		
+Microsoft-Windows-Sdstor	106	0	Flush()			Flush	Informational		
+Microsoft-Windows-Sdstor	107	0	Discard(UInt64 LBA, UInt32 Length)			Discard	Informational		

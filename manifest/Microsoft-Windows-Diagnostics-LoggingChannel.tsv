@@ -1,0 +1,21 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Diagnostics-LoggingChannel	1	0	task_0(UnicodeString LoggingChannelName, UnicodeString StringMessage)		K_LogMsg	task_0	Critical		
+Microsoft-Windows-Diagnostics-LoggingChannel	2	0	task_02(UnicodeString LoggingChannelName, UnicodeString StringMessage)		K_LogMsg	task_0	Error		
+Microsoft-Windows-Diagnostics-LoggingChannel	3	0	task_03(UnicodeString LoggingChannelName, UnicodeString StringMessage)		K_LogMsg	task_0	Warning		
+Microsoft-Windows-Diagnostics-LoggingChannel	4	0	task_04(UnicodeString LoggingChannelName, UnicodeString StringMessage)		K_LogMsg	task_0	Informational		
+Microsoft-Windows-Diagnostics-LoggingChannel	5	0	task_05(UnicodeString LoggingChannelName, UnicodeString StringMessage)		K_LogMsg	task_0	Verbose		
+Microsoft-Windows-Diagnostics-LoggingChannel	6	0	task_06(UnicodeString LoggingChannelName, UnicodeString StringValue, Int32 IntegerValue)		K_LogPair	task_0	Critical		
+Microsoft-Windows-Diagnostics-LoggingChannel	7	0	task_07(UnicodeString LoggingChannelName, UnicodeString StringValue, Int32 IntegerValue)		K_LogPair	task_0	Error		
+Microsoft-Windows-Diagnostics-LoggingChannel	8	0	task_08(UnicodeString LoggingChannelName, UnicodeString StringValue, Int32 IntegerValue)		K_LogPair	task_0	Warning		
+Microsoft-Windows-Diagnostics-LoggingChannel	9	0	task_09(UnicodeString LoggingChannelName, UnicodeString StringValue, Int32 IntegerValue)		K_LogPair	task_0	Informational		
+Microsoft-Windows-Diagnostics-LoggingChannel	10	0	task_010(UnicodeString LoggingChannelName, UnicodeString StringValue, Int32 IntegerValue)		K_LogPair	task_0	Verbose		
+Microsoft-Windows-Diagnostics-LoggingChannel	11	0	task_0Start(UnicodeString LoggingChannelName, UnicodeString ActivityName)	Start	K_ActivityLogging	task_0	Critical		
+Microsoft-Windows-Diagnostics-LoggingChannel	12	0	task_0Start12(UnicodeString LoggingChannelName, UnicodeString ActivityName)	Start	K_ActivityLogging	task_0	Error		
+Microsoft-Windows-Diagnostics-LoggingChannel	13	0	task_0Start13(UnicodeString LoggingChannelName, UnicodeString ActivityName)	Start	K_ActivityLogging	task_0	Warning		
+Microsoft-Windows-Diagnostics-LoggingChannel	14	0	task_0Start14(UnicodeString LoggingChannelName, UnicodeString ActivityName)	Start	K_ActivityLogging	task_0	Informational		
+Microsoft-Windows-Diagnostics-LoggingChannel	15	0	task_0Start15(UnicodeString LoggingChannelName, UnicodeString ActivityName)	Start	K_ActivityLogging	task_0	Verbose		
+Microsoft-Windows-Diagnostics-LoggingChannel	16	0	task_0Stop(UnicodeString LoggingChannelName, UnicodeString ActivityName)	Stop	K_ActivityLogging	task_0	Critical		
+Microsoft-Windows-Diagnostics-LoggingChannel	17	0	task_0Stop17(UnicodeString LoggingChannelName, UnicodeString ActivityName)	Stop	K_ActivityLogging	task_0	Error		
+Microsoft-Windows-Diagnostics-LoggingChannel	18	0	task_0Stop18(UnicodeString LoggingChannelName, UnicodeString ActivityName)	Stop	K_ActivityLogging	task_0	Warning		
+Microsoft-Windows-Diagnostics-LoggingChannel	19	0	task_0Stop19(UnicodeString LoggingChannelName, UnicodeString ActivityName)	Stop	K_ActivityLogging	task_0	Informational		
+Microsoft-Windows-Diagnostics-LoggingChannel	20	0	task_0Stop20(UnicodeString LoggingChannelName, UnicodeString ActivityName)	Stop	K_ActivityLogging	task_0	Verbose		

@@ -1,0 +1,19 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-XAudio2	16	0	Initialize(Pointer Instance, HexInt32 Processors)			Initialize	Informational		
+Microsoft-Windows-XAudio2	17	0	Initialize17()			Initialize	Error		
+Microsoft-Windows-XAudio2	32	0	Shutdown(Pointer Pointer)			Shutdown	Informational		
+Microsoft-Windows-XAudio2	33	0	Shutdown33(UInt32 SourceVoiceCount, UInt32 SubmixVoiceCount, UInt32 MasteringVoiceCount)			Shutdown	Warning		
+Microsoft-Windows-XAudio2	48	0	SubmixVoiceCreate(Pointer Address, UInt32 ProcessingStage, UInt32 Channels, UInt32 SampleRate)	Create		SubmixVoice	Verbose		
+Microsoft-Windows-XAudio2	49	0	SubmixVoiceCreate49(UInt32 OriginalHz, UInt32 NewHz, UInt32 Quantum)	Create		SubmixVoice	Warning		
+Microsoft-Windows-XAudio2	64	0	MasteringVoiceCreate(Pointer Address, UInt32 Channels, UInt32 SampleRate, UnicodeString RendererId)	Create		MasteringVoice	Verbose		
+Microsoft-Windows-XAudio2	65	0	MasteringVoiceCreate65(UInt32 OriginalHz, UInt32 NewHz, UInt32 Quantum)	Create		MasteringVoice	Warning		
+Microsoft-Windows-XAudio2	66	0	MasteringVoiceCreate66(Pointer Address, UInt32 Channels, UInt32 SampleRate, UnicodeString RendererId)	Create		MasteringVoice	Informational		
+Microsoft-Windows-XAudio2	67	0	MasteringVoiceCreate67(UnicodeString DeviceId, UnicodeString EndpointId)	Create		MasteringVoice	Verbose		
+Microsoft-Windows-XAudio2	80	0	task_0(Int32 hr)			task_0	Critical		
+Microsoft-Windows-XAudio2	96	0	ProcessingPerformanceWarning(Float Time, UInt32 Callback)	PerformanceWarning		Processing	Warning		
+Microsoft-Windows-XAudio2	97	0	ProcessingPerformanceWarning97(Float Value)	PerformanceWarning		Processing	Warning		
+Microsoft-Windows-XAudio2	98	0	ProcessingPerformanceWarning98(UInt32 Value)	PerformanceWarning		Processing	Warning		
+Microsoft-Windows-XAudio2	99	0	SourceVoicePerformanceWarning(Pointer Pointer)	PerformanceWarning		SourceVoice	Warning		
+Microsoft-Windows-XAudio2	112	0	ProcessingStart()	Start		Processing	Informational		
+Microsoft-Windows-XAudio2	128	0	ProcessingStop()	Stop		Processing	Informational		
+Microsoft-Windows-XAudio2	256	0	Processing(UInt32 MinimumCyclesPerQuantum, UInt32 MaximumCyclesPerQuantum, UInt32 GlitchesSinceEngineStarted, Float CpuUsage, UInt32 LatencyInSamples, UInt32 TotalMemoryUsage, UInt32 ActiveSourceVoices, UInt32 TotalSourceVoices, UInt32 ActiveSubmixVoices, UInt32 ActiveResamplers, UInt32 ActiveMatrixMixers)			Processing			

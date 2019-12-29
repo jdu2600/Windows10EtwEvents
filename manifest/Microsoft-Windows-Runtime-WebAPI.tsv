@@ -1,0 +1,72 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Runtime-WebAPI	1	0	AsyncI/OAsyncoperationstart(UInt32 asyncOperation, Pointer asyncObject)	Asyncoperationstart	keywords.AsyncOperation	AsyncI/O	Informational		
+Microsoft-Windows-Runtime-WebAPI	2	0	AsyncI/OAsyncoperationfailure(UInt32 asyncOperation, Pointer asyncObject, UInt32 errorCode, Int32 hresult)	Asyncoperationfailure	keywords.AsyncOperation	AsyncI/O	Error		
+Microsoft-Windows-Runtime-WebAPI	3	0	AsyncI/OAsyncoperationcomplete(UInt32 asyncOperation, Pointer asyncObject)	Asyncoperationcomplete	keywords.AsyncOperation	AsyncI/O	Informational		
+Microsoft-Windows-Runtime-WebAPI	4	0	AsyncI/OAsyncoperationfailure4(UInt32 asyncOperation, Pointer asyncObject, UInt32 errorCode, Int32 hresult)	Asyncoperationfailure	keywords.AsyncOperation	AsyncI/O	Error		
+Microsoft-Windows-Runtime-WebAPI	5	0	AsyncI/OAsyncoperationabort(UInt32 asyncOperation, Pointer asyncObject)	Asyncoperationabort	keywords.AsyncOperation	AsyncI/O	Informational		
+Microsoft-Windows-Runtime-WebAPI	6	0	AsyncI/OAsyncoperationclose(UInt32 asyncOperation, Pointer asyncObject)	Asyncoperationclose	keywords.AsyncOperation	AsyncI/O	Informational		
+Microsoft-Windows-Runtime-WebAPI	7	0	AsyncI/OAsyncoperationcompletion(UInt32 asyncOperation, Pointer asyncObject, Pointer callback)	Asyncoperationcompletion	keywords.AsyncOperation	AsyncI/O	Informational		
+Microsoft-Windows-Runtime-WebAPI	8	0	AsyncI/OAsyncoperationprogress(UInt32 asyncOperation, Pointer asyncObject, Pointer callback)	Asyncoperationprogress	keywords.AsyncOperation	AsyncI/O	Informational		
+Microsoft-Windows-Runtime-WebAPI	9	0	AsyncI/OAsyncoperationfailure9(UInt32 asyncOperation, Pointer asyncObject, UInt32 errorCode, Int32 hresult)	Asyncoperationfailure	keywords.AsyncOperation	AsyncI/O	Error		
+Microsoft-Windows-Runtime-WebAPI	10	0	AsyncI/OAsyncoperationfailure10(UInt32 asyncOperation, Pointer asyncObject, UInt32 errorCode, Int32 hresult)	Asyncoperationfailure	keywords.AsyncOperation	AsyncI/O	Error		
+Microsoft-Windows-Runtime-WebAPI	11	0	AsyncI/OAsyncoperationfailure11(UInt32 asyncOperation, Pointer asyncObject, UInt32 errorCode, Int32 hresult)	Asyncoperationfailure	keywords.AsyncOperation	AsyncI/O	Error		
+Microsoft-Windows-Runtime-WebAPI	12	0	ParseParseURI(UnicodeString uri)	ParseURI	keywords.Format	Parse	Warning		
+Microsoft-Windows-Runtime-WebAPI	13	0	ParseParseURI13(UnicodeString str1, UnicodeString str2)	ParseURI	keywords.Format	Parse	Warning		
+Microsoft-Windows-Runtime-WebAPI	14	0	AsyncI/OHTTPoperation(UnicodeString str1, UnicodeString str2)	HTTPoperation	keywords.Http	AsyncI/O	Informational		
+Microsoft-Windows-Runtime-WebAPI	15	0	AsyncI/OHTTPoperation15(UnicodeString str1, UnicodeString str2)	HTTPoperation	keywords.Http	AsyncI/O	Informational		
+Microsoft-Windows-Runtime-WebAPI	16	0	AsyncI/OHTTPoperation16(UnicodeString uri)	HTTPoperation	keywords.Http	AsyncI/O	Informational		
+Microsoft-Windows-Runtime-WebAPI	17	0	AsyncI/OHTTPoperation17(UnicodeString uri, UInt32 port, UInt32 errorCode, UInt32 errorMessage)	HTTPoperation	keywords.Http	AsyncI/O	Error		
+Microsoft-Windows-Runtime-WebAPI	18	0	AsyncI/OHTTPoperation18(UnicodeString str1, UnicodeString str2, HexInt32 flags)	HTTPoperation	keywords.Http	AsyncI/O	Informational		
+Microsoft-Windows-Runtime-WebAPI	19	0	AsyncI/OHTTPoperation19(UnicodeString uri, UInt32 port, UInt32 errorCode, UInt32 errorMessage)	HTTPoperation	keywords.Http	AsyncI/O	Error		
+Microsoft-Windows-Runtime-WebAPI	20	0	AsyncI/OHTTPoperation20(Pointer obj1, Pointer obj2, UnicodeString uri)	HTTPoperation	keywords.Http	AsyncI/O	Informational		
+Microsoft-Windows-Runtime-WebAPI	21	0	AsyncI/OHTTPoperation21(Pointer obj, UInt32 length)	HTTPoperation	keywords.Http	AsyncI/O	Informational		
+Microsoft-Windows-Runtime-WebAPI	22	0	AsyncI/OHTTPoperation22(Pointer obj, UInt32 length)	HTTPoperation	keywords.Http	AsyncI/O	Informational		
+Microsoft-Windows-Runtime-WebAPI	23	0	AsyncI/OHTTPoperation23(Pointer obj)	HTTPoperation	keywords.Http	AsyncI/O	Informational		
+Microsoft-Windows-Runtime-WebAPI	24	0	AsyncI/OHTTPoperation24(Pointer obj)	HTTPoperation	keywords.Http	AsyncI/O	Informational		
+Microsoft-Windows-Runtime-WebAPI	25	0	AsyncI/OHTTPoperation25(Pointer obj, UInt32 length)	HTTPoperation	keywords.Http	AsyncI/O	Informational		
+Microsoft-Windows-Runtime-WebAPI	26	0	AsyncI/OHTTPoperation26(Pointer obj, UInt32 errorCode, UInt32 errorMessage)	HTTPoperation	keywords.Http	AsyncI/O	Error		
+Microsoft-Windows-Runtime-WebAPI	27	0	AsyncI/OHTTPoperation27(Pointer obj, UnicodeString statusDescription)	HTTPoperation	keywords.Http	AsyncI/O	Verbose		
+Microsoft-Windows-Runtime-WebAPI	28	0	AsyncI/OHTTPoperation28(Pointer obj)	HTTPoperation	keywords.Http	AsyncI/O	Informational		
+Microsoft-Windows-Runtime-WebAPI	29	0	AsyncI/OHTTPoperation29(Pointer obj, UInt32 statusCode, UnicodeString statusDescription)	HTTPoperation	keywords.Http	AsyncI/O	Informational		
+Microsoft-Windows-Runtime-WebAPI	30	0	AsyncI/OHTTPoperation30(Pointer obj, UnicodeString statusDescription)	HTTPoperation	keywords.Http	AsyncI/O	Verbose		
+Microsoft-Windows-Runtime-WebAPI	31	0	AsyncI/OHTTPoperation31(Pointer obj, UInt32 errorCode, UInt32 errorMessage)	HTTPoperation	keywords.Http	AsyncI/O	Error		
+Microsoft-Windows-Runtime-WebAPI	32	0	AsyncI/OHTTPoperation32(Pointer obj, UInt32 length, UInt32 limit)	HTTPoperation	keywords.Http	AsyncI/O	Informational		
+Microsoft-Windows-Runtime-WebAPI	33	0	AsyncI/OHTTPoperation33(Pointer obj)	HTTPoperation	keywords.Http	AsyncI/O	Informational		
+Microsoft-Windows-Runtime-WebAPI	34	0	AsyncI/OHTTPoperation34(Pointer obj, UnicodeString statusDescription)	HTTPoperation	keywords.Http	AsyncI/O	Informational		
+Microsoft-Windows-Runtime-WebAPI	35	0	AsyncI/OHTTPoperation35(Pointer obj)	HTTPoperation	keywords.Http	AsyncI/O	Informational		
+Microsoft-Windows-Runtime-WebAPI	36	0	AsyncI/OHTTPoperation36(UnicodeString statusDescription, UInt32 int1, UInt32 int2, UInt32 int3, UInt32 int4)	HTTPoperation	keywords.Http	AsyncI/O	Informational		
+Microsoft-Windows-Runtime-WebAPI	37	0	AsyncI/OHTTPoperation37(UnicodeString uri, UInt32 hresult, Int32 errorMessage)	HTTPoperation	keywords.Http	AsyncI/O	Error		
+Microsoft-Windows-Runtime-WebAPI	38	0	ParseHTTPoperation(UInt32 asyncOperation, Pointer asyncObject, UnicodeString response, UInt32 errorCode, Int32 hresult)	HTTPoperation	keywords.Format	Parse	Error		
+Microsoft-Windows-Runtime-WebAPI	39	0	APIsAPIEnter(UInt32 runtimeClass, UInt32 api)	APIEnter	keywords.API	APIs	Verbose		
+Microsoft-Windows-Runtime-WebAPI	40	0	APIsAPIExit(UInt32 runtimeClass, UInt32 api)	APIExit	keywords.API	APIs	Verbose		
+Microsoft-Windows-Runtime-WebAPI	41	0	APIsAPIExit41(UInt32 runtimeClass, UInt32 api, UInt32 hresult, Int32 errorMessage)	APIExit	keywords.API	APIs	Error		
+Microsoft-Windows-Runtime-WebAPI	42	0	AsyncI/OHTTPoperation42(UnicodeString uri)	HTTPoperation	keywords.AtomPub	AsyncI/O	Informational		
+Microsoft-Windows-Runtime-WebAPI	43	0	AsyncI/OHTTPoperation43(UnicodeString uri)	HTTPoperation	keywords.AtomPub	AsyncI/O	Informational		
+Microsoft-Windows-Runtime-WebAPI	44	0	AsyncI/OHTTPoperation44(UnicodeString uri, UInt32 hresult, Int32 errorMessage)	HTTPoperation	keywords.AtomPub	AsyncI/O	Warning		
+Microsoft-Windows-Runtime-WebAPI	45	0	AsyncI/OHTTPoperation45(UnicodeString uri, UInt32 statusCode)	HTTPoperation	keywords.AtomPub	AsyncI/O	Informational		
+Microsoft-Windows-Runtime-WebAPI	46	0	AsyncI/OParsecategorydocument(UnicodeString uri, UInt32 hresult, Int32 errorMessage)	Parsecategorydocument	keywords.AtomPub	AsyncI/O	Warning		
+Microsoft-Windows-Runtime-WebAPI	47	0	ParseCheckrequiredelement(UnicodeString uri)	Checkrequiredelement	keywords.Format	Parse	Warning		
+Microsoft-Windows-Runtime-WebAPI	48	0	ParseCheckrequiredattribute(UnicodeString str1, UnicodeString str2)	Checkrequiredattribute	keywords.Format	Parse	Warning		
+Microsoft-Windows-Runtime-WebAPI	49	0	ParseCheckduplicatedelement(UnicodeString uri)	Checkduplicatedelement	keywords.Format	Parse	Warning		
+Microsoft-Windows-Runtime-WebAPI	50	0	SerializeAdddefaultvalue(UnicodeString uri)	Adddefaultvalue	keywords.Format	Serialize	Warning		
+Microsoft-Windows-Runtime-WebAPI	51	0	SerializeAdddefaultvalue51(UnicodeString str1, UnicodeString str2)	Adddefaultvalue	keywords.Format	Serialize	Warning		
+Microsoft-Windows-Runtime-WebAPI	52	0	ParseCheckrequiredelement52()	Checkrequiredelement	keywords.Format	Parse	Warning		
+Microsoft-Windows-Runtime-WebAPI	53	0	SerializeAddfirstvalue(UnicodeString uri)	Addfirstvalue	keywords.Format	Serialize	Warning		
+Microsoft-Windows-Runtime-WebAPI	54	0	ParseIgnoreunexpectedcontent()	Ignoreunexpectedcontent	keywords.Format	Parse	Warning		
+Microsoft-Windows-Runtime-WebAPI	55	0	ParseCheckrequiredelement55(UnicodeString uri)	Checkrequiredelement	keywords.Format	Parse	Warning		
+Microsoft-Windows-Runtime-WebAPI	56	0	ParseCheckrequiredelement56(UnicodeString uri)	Checkrequiredelement	keywords.Format	Parse	Warning		
+Microsoft-Windows-Runtime-WebAPI	57	0	ParseCheckrequiredattribute57(UnicodeString uri)	Checkrequiredattribute	keywords.Format	Parse	Warning		
+Microsoft-Windows-Runtime-WebAPI	58	0	ParseIgnoreunexpectedcontent58(UnicodeString uri)	Ignoreunexpectedcontent	keywords.Format	Parse	Warning		
+Microsoft-Windows-Runtime-WebAPI	59	0	ParseIgnoreunexpectedcontent59(UnicodeString str1, UnicodeString str2)	Ignoreunexpectedcontent	keywords.Format	Parse	Warning		
+Microsoft-Windows-Runtime-WebAPI	60	0	ParseIgnoreunexpectedcontent60(UnicodeString str1, UnicodeString str2)	Ignoreunexpectedcontent	keywords.Format	Parse	Warning		
+Microsoft-Windows-Runtime-WebAPI	61	0	ParseIgnoreunexpectedcontent61(UnicodeString str1, UnicodeString str2)	Ignoreunexpectedcontent	keywords.Format	Parse	Warning		
+Microsoft-Windows-Runtime-WebAPI	62	0	ParseIgnoreunexpectedcontent62(UnicodeString uri)	Ignoreunexpectedcontent	keywords.Format	Parse	Warning		
+Microsoft-Windows-Runtime-WebAPI	63	0	ParseParsedatetimestring(UnicodeString uri)	Parsedatetimestring	keywords.Format	Parse	Warning		
+Microsoft-Windows-Runtime-WebAPI	64	0	ParseParseinteger(UnicodeString uri)	Parseinteger	keywords.Format	Parse	Warning		
+Microsoft-Windows-Runtime-WebAPI	65	0	ParseParseXML(UnicodeString uri)	ParseXML	keywords.Format	Parse	Warning		
+Microsoft-Windows-Runtime-WebAPI	66	0	ParseCheckcustomattribute(UnicodeString str1, UnicodeString str2)	Checkcustomattribute	keywords.Format	Parse	Error		
+Microsoft-Windows-Runtime-WebAPI	67	0	ParseCheckcustomelement(UnicodeString str1, UnicodeString str2)	Checkcustomelement	keywords.Format	Parse	Error		
+Microsoft-Windows-Runtime-WebAPI	68	0	ParseAddcustomattribute(UnicodeString str1, UnicodeString str2)	Addcustomattribute	keywords.Format	Parse	Error		
+Microsoft-Windows-Runtime-WebAPI	69	0	ParseParseJSONstring(UnicodeString uri, UInt32 statusCode)	ParseJSONstring	keywords.Format	Parse	Error		
+Microsoft-Windows-Runtime-WebAPI	70	0	ParseParseJSONstring70(UInt32 obj)	ParseJSONstring	keywords.Format	Parse	Error		
+Microsoft-Windows-Runtime-WebAPI	71	0	AsyncI/O(Pointer obj)			AsyncI/O	Informational		

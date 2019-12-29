@@ -1,0 +1,8 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Kernel-Pep	1	0	PepRailRundown(UInt32 VoltageRailId, UnicodeString VoltageRailName, UInt32 CurrentVoltageMv, UInt32 MaxVoltageMv)		popep:Power	PepRailRundown	Informational		
+Microsoft-Windows-Kernel-Pep	2	0	PepDeviceRundown(Pointer DeviceId, UnicodeString DeviceName, UInt32 PlatformStateDependencyCount, UInt8 PlatformStateDependency)		popep:Power	PepDeviceRundown	Informational		
+Microsoft-Windows-Kernel-Pep	3	0	PepComponentRundown(UInt32 VoltageRailId, Pointer DeviceId, UInt32 ComponentIndex, UInt32 CurrentFrequencyKHz, UInt32 MaxFrequencyKHz, UInt32 PlatformStateDependencyCount, Int64 PlatformStateDependency, UInt32 ComponentDescriptionLength, UnicodeString ComponentDescription)		popep:Power	PepComponentRundown	Informational		
+Microsoft-Windows-Kernel-Pep	4	0	PepRailVoltageChange(UInt32 VoltageRailId, UInt32 OldRailVoltageMv, UInt32 NewRailVoltageMv)		popep:Power	PepRailVoltageChange	Informational		
+Microsoft-Windows-Kernel-Pep	5	0	PepComponentFrequencyChange(Pointer DeviceId, UInt32 ComponentIndex, UInt32 OldComponentFrequencyKHz, UInt32 NewComponentFrequencyKHz)		popep:Power	PepComponentFrequencyChange	Informational		
+Microsoft-Windows-Kernel-Pep	6	0	PepPlatformIdleResidency(UInt32 PlatformStateCount, AnsiString PlatformIdleStateResidency)		popep:Power	PepPlatformIdleResidency	Informational		
+Microsoft-Windows-Kernel-Pep	7	0	PepPlatformIdleTransition(UInt32 OldPlatformState, UInt32 NewPlatformState)		popep:Power	PepPlatformIdleTransition	Informational		

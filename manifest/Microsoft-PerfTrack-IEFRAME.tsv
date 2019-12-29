@@ -1,0 +1,187 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-PerfTrack-IEFRAME	101	0	TabSwitch_NotAccountingForInputDelayStart(UInt64 HWND)	Start		TabSwitch_NotAccountingForInputDelay	Informational		
+Microsoft-PerfTrack-IEFRAME	102	0	TabSwitch_NotAccountingForInputDelayStop(UInt64 HWND, UInt32 NewTID)	Stop		TabSwitch_NotAccountingForInputDelay	Informational		
+Microsoft-PerfTrack-IEFRAME	103	0	TabCreateStart(UInt64 Object)	Start		TabCreate	Informational		
+Microsoft-PerfTrack-IEFRAME	104	0	TabCreateStop(UInt64 Object, UInt32 NewTID)	Stop		TabCreate	Informational		
+Microsoft-PerfTrack-IEFRAME	105	0	FavoritesSwitchViewStart(UInt64 Object)	Start		FavoritesSwitchView	Informational		
+Microsoft-PerfTrack-IEFRAME	106	0	FavoritesSwitchViewStop(UInt64 Object)	Stop		FavoritesSwitchView	Informational		
+Microsoft-PerfTrack-IEFRAME	107	0	FeedsSwitchViewStart(UInt64 Object)	Start		FeedsSwitchView	Informational		
+Microsoft-PerfTrack-IEFRAME	108	0	FeedsSwitchViewStop(UInt64 Object)	Stop		FeedsSwitchView	Informational		
+Microsoft-PerfTrack-IEFRAME	109	0	HistorySwitchViewStart(UInt64 Object)	Start		HistorySwitchView	Informational		
+Microsoft-PerfTrack-IEFRAME	110	0	HistorySwitchViewStop(UInt64 Object)	Stop		HistorySwitchView	Informational		
+Microsoft-PerfTrack-IEFRAME	111	0	TabCreateStop111(UInt64 Object)	Stop		TabCreate	Informational		
+Microsoft-PerfTrack-IEFRAME	116	0	TabSwitch(UInt32 TimespanInMs, UInt32 dwTabScenarioFlags)			TabSwitch	Informational		
+Microsoft-PerfTrack-IEFRAME	119	0	CreateAndSelectTab(UInt32 TimespanInMs, UInt32 dwTabScenarioFlags)			CreateAndSelectTab	Informational		
+Microsoft-PerfTrack-IEFRAME	120	0	LaunchFrame(UInt32 TimespanInMs, UInt32 dwTabScenarioFlags, UInt32 totalTabCount, UInt32 halfTabCount)			LaunchFrame	Informational		
+Microsoft-PerfTrack-IEFRAME	122	0	CloseFrame(UInt32 TimespanInMs, UInt32 dwTabScenarioFlags)			CloseFrame	Informational		
+Microsoft-PerfTrack-IEFRAME	124	0	CloseTab(UInt32 TimespanInMs, UInt32 dwTabScenarioFlags)			CloseTab	Informational		
+Microsoft-PerfTrack-IEFRAME	201	0	HistoryByDateSwitchViewStart(UInt64 Object)	Start		HistoryByDateSwitchView	Informational		
+Microsoft-PerfTrack-IEFRAME	202	0	HistoryByDateSwitchViewStop(UInt64 Object)	Stop		HistoryByDateSwitchView	Informational		
+Microsoft-PerfTrack-IEFRAME	203	0	HistoryBySiteSwitchViewStart(UInt64 Object)	Start		HistoryBySiteSwitchView	Informational		
+Microsoft-PerfTrack-IEFRAME	204	0	HistoryBySiteSwitchViewStop(UInt64 Object)	Stop		HistoryBySiteSwitchView	Informational		
+Microsoft-PerfTrack-IEFRAME	205	0	HistoryByMostVisSwitchViewStart(UInt64 Object)	Start		HistoryByMostVisSwitchView	Informational		
+Microsoft-PerfTrack-IEFRAME	206	0	HistoryByMostVisSwitchViewStop(UInt64 Object)	Stop		HistoryByMostVisSwitchView	Informational		
+Microsoft-PerfTrack-IEFRAME	207	0	HistoryByOrderSwitchViewStart(UInt64 Object)	Start		HistoryByOrderSwitchView	Informational		
+Microsoft-PerfTrack-IEFRAME	208	0	HistoryByOrderSwitchViewStop(UInt64 Object)	Stop		HistoryByOrderSwitchView	Informational		
+Microsoft-PerfTrack-IEFRAME	209	0	HistorySearchSwitchViewStart(UInt64 Object)	Start		HistorySearchSwitchView	Informational		
+Microsoft-PerfTrack-IEFRAME	210	0	HistorySearchSwitchViewStop(UInt64 Object)	Stop		HistorySearchSwitchView	Informational		
+Microsoft-PerfTrack-IEFRAME	211	0	FavCenterOpenStart(UInt64 Object)	Start		FavCenterOpen	Informational		
+Microsoft-PerfTrack-IEFRAME	212	0	FavCenterOpenStop(UInt64 Object)	Stop		FavCenterOpen	Informational		
+Microsoft-PerfTrack-IEFRAME	213	0	FavCenterCloseStart(UInt64 Object)	Start		FavCenterClose	Informational		
+Microsoft-PerfTrack-IEFRAME	214	0	FavCenterCloseStop(UInt64 Object)	Stop		FavCenterClose	Informational		
+Microsoft-PerfTrack-IEFRAME	301	0	MenuExpandStart(UInt64 Object)	Start		MenuExpand	Informational		
+Microsoft-PerfTrack-IEFRAME	302	0	MenuExpandStop(UInt64 Object)	Stop		MenuExpand	Informational		
+Microsoft-PerfTrack-IEFRAME	303	0	MenuShrinkStart(UInt64 Object)	Start		MenuShrink	Informational		
+Microsoft-PerfTrack-IEFRAME	304	0	MenuShrinkStop(UInt64 Object)	Stop		MenuShrink	Informational		
+Microsoft-PerfTrack-IEFRAME	305	0	MenuItemPopStart(UInt64 Object, UInt32 ID)	Start		MenuItemPop	Informational		
+Microsoft-PerfTrack-IEFRAME	306	0	MenuItemPopStop(UInt64 Object, UInt32 ID)	Stop		MenuItemPop	Informational		
+Microsoft-PerfTrack-IEFRAME	601	0	Browseui_Tabs_CloseTab_PerftrackStart(UInt64 Object, UInt32 TID)	Start		Browseui_Tabs_CloseTab_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	602	0	Browseui_Tabs_CloseTab_PerftrackStop(UInt64 Object, UInt32 TID)	Stop		Browseui_Tabs_CloseTab_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	603	0	Browseui_CBrowserFrame_CreateInstance_PerftrackStart(UInt64 Object)	Start		Browseui_CBrowserFrame_CreateInstance_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	604	0	Browseui_CBrowserFrame_CreateInstance_PerftrackStop(UInt64 Object)	Stop		Browseui_CBrowserFrame_CreateInstance_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	607	0	CreateHTMLPreview_PerftrackStart(UInt64 Object)	Start		CreateHTMLPreview_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	608	0	CreateHTMLPreview_PerftrackStop(UInt64 Object)	Stop		CreateHTMLPreview_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	609	0	FavoritesBar_PopulateFeedsMenu_PerftrackStart(UInt64 Object)	Start		FavoritesBar_PopulateFeedsMenu_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	610	0	FavoritesBar_PopulateFeedsMenu_PerftrackStop(UInt64 Object)	Stop		FavoritesBar_PopulateFeedsMenu_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	611	0	CreateThumbnail_PerftrackStart(UInt64 Object)	Start	defunct	CreateThumbnail_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	612	0	CreateThumbnail_PerftrackStop(UInt64 Object)	Stop	defunct	CreateThumbnail_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	613	0	Imaging_CreateWebPagePreview_PerftrackStart(UInt64 Object)	Start		Imaging_CreateWebPagePreview_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	614	0	Imaging_CreateWebPagePreview_PerftrackStop(UInt64 Object)	Stop		Imaging_CreateWebPagePreview_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	615	0	Find_FindHits_PerftrackStart(UInt64 Object)	Start		Find_FindHits_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	616	0	Find_FindHits_PerftrackStop(UInt64 Object)	Stop		Find_FindHits_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	617	0	Find_HighlightHits_PerftrackStart(UInt64 Object)	Start		Find_HighlightHits_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	618	0	Find_HighlightHits_PerftrackStop(UInt64 Object)	Stop		Find_HighlightHits_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	619	0	Search_SuggestionsProcessing_PerftrackStart(UInt64 Object)	Start		Search_SuggestionsProcessing_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	620	0	Search_SuggestionsProcessing_PerftrackStop(UInt64 Object)	Stop		Search_SuggestionsProcessing_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	621	0	Search_ImageProcessing_PerftrackStart(UInt64 Object)	Start		Search_ImageProcessing_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	622	0	Search_ImageProcessing_PerftrackStop(UInt64 Object)	Stop		Search_ImageProcessing_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	623	0	UnifiedListView_Typed_Perftrack(UInt64 Object)			UnifiedListView_Typed_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	625	0	UnifiedListView_Dropdown_Perftrack(UInt64 Object)			UnifiedListView_Dropdown_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	627	0	UnifiedListView_Displayed_Perftrack(UInt64 Object)		defunct	UnifiedListView_Displayed_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	629	0	UnifiedListView_Cancelled_Perftrack(UInt64 Object)			UnifiedListView_Cancelled_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	631	0	UnifiedListView_Displayed_Complete_Perftrack(UInt64 Object)			UnifiedListView_Displayed_Complete_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	633	0	UnifiedListView_Query_History_PerftrackStart(UInt64 Object)	Start	defunct	UnifiedListView_Query_History_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	634	0	UnifiedListView_Query_History_PerftrackStop(UInt64 Object)	Stop	defunct	UnifiedListView_Query_History_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	635	0	UnifiedListView_Query_Favorites_PerftrackStart(UInt64 Object)	Start	defunct	UnifiedListView_Query_Favorites_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	636	0	UnifiedListView_Query_Favorites_PerftrackStop(UInt64 Object)	Stop	defunct	UnifiedListView_Query_Favorites_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	637	0	UnifiedListView_Query_Feeds_PerftrackStart(UInt64 Object)	Start	defunct	UnifiedListView_Query_Feeds_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	638	0	UnifiedListView_Query_Feeds_PerftrackStop(UInt64 Object)	Stop	defunct	UnifiedListView_Query_Feeds_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	639	0	Print_Dialog_PerftrackStart(UInt64 Object)	Start		Print_Dialog_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	640	0	Print_Dialog_PerftrackStop(UInt64 Object)	Stop		Print_Dialog_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	641	0	Tab_Fast_Shutdown_PerftrackStart(UInt64 Object, UInt32 TID)	Start		Tab_Fast_Shutdown_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	642	0	Tab_Fast_Shutdown_PerftrackStop(UInt64 Object, UInt32 TID)	Stop		Tab_Fast_Shutdown_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	643	0	Tab_Fast_Shutdown_PerftrackStop643(UInt64 Object, UInt32 TID)	Stop		Tab_Fast_Shutdown_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	644	0	Frame_Fast_Shutdown_PerftrackStart(UInt64 Object)	Start		Frame_Fast_Shutdown_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	645	0	Frame_Fast_Shutdown_PerftrackStop(UInt64 Object)	Stop		Frame_Fast_Shutdown_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	646	0	Frame_Fast_Shutdown_PerftrackStop646(UInt64 Object)	Stop		Frame_Fast_Shutdown_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	647	0	Browseui_Tabs_CloseTab_PerftrackStop647(UInt64 Object, UInt32 TID)	Stop		Browseui_Tabs_CloseTab_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	650	0	CreateThumbnail_Immersive_PerftrackStart(UInt64 Object)	Start		CreateThumbnail_Immersive_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	651	0	CreateThumbnail_Immersive_PerftrackStop(UInt64 Object)	Stop		CreateThumbnail_Immersive_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	652	0	CreateThumbnail_Superbar_PerftrackStart(UInt64 Object)	Start		CreateThumbnail_Superbar_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	653	0	CreateThumbnail_Superbar_PerftrackStop(UInt64 Object)	Stop		CreateThumbnail_Superbar_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	700	0	Browseui_Tabs_Tearoff_ShowVisualStart(UInt64 Object)	Start		Browseui_Tabs_Tearoff_ShowVisual	Informational		
+Microsoft-PerfTrack-IEFRAME	701	0	Browseui_Tabs_Tearoff_ShowVisualStop(UInt64 Object)	Stop		Browseui_Tabs_Tearoff_ShowVisual	Informational		
+Microsoft-PerfTrack-IEFRAME	702	0	Browseui_Tabs_Tearoff_NewWindowStart(UInt64 Object)	Start		Browseui_Tabs_Tearoff_NewWindow	Informational		
+Microsoft-PerfTrack-IEFRAME	703	0	Browseui_Tabs_Tearoff_NewWindowStop(UInt64 Object)	Stop		Browseui_Tabs_Tearoff_NewWindow	Informational		
+Microsoft-PerfTrack-IEFRAME	704	0	Browseui_Tabs_Tearoff_BetweenWindowsStart(UInt64 Object)	Start		Browseui_Tabs_Tearoff_BetweenWindows	Informational		
+Microsoft-PerfTrack-IEFRAME	705	0	Browseui_Tabs_Tearoff_BetweenWindowsStop(UInt64 Object)	Stop		Browseui_Tabs_Tearoff_BetweenWindows	Informational		
+Microsoft-PerfTrack-IEFRAME	706	0	Browseui_Tabs_NavToDroppedLinkStart(UInt64 Object)	Start		Browseui_Tabs_NavToDroppedLink	Informational		
+Microsoft-PerfTrack-IEFRAME	707	0	Browseui_Tabs_NavToDroppedLinkStop(UInt64 Object)	Stop		Browseui_Tabs_NavToDroppedLink	Informational		
+Microsoft-PerfTrack-IEFRAME	708	0	Browseui_Tabs_MoveStart(UInt64 Object)	Start		Browseui_Tabs_Move	Informational		
+Microsoft-PerfTrack-IEFRAME	709	0	Browseui_Tabs_MoveStop(UInt64 Object)	Stop		Browseui_Tabs_Move	Informational		
+Microsoft-PerfTrack-IEFRAME	710	0	Browseui_Tabs_Tearoff_Complete_TabProc(UInt64 Object)			Browseui_Tabs_Tearoff_Complete_TabProc	Informational		
+Microsoft-PerfTrack-IEFRAME	711	0	Browseui_Tabs_Tearoff_NewWindow_TabProc(UInt64 Object)			Browseui_Tabs_Tearoff_NewWindow_TabProc	Informational		
+Microsoft-PerfTrack-IEFRAME	712	0	Find_FindFirstHit_PerftrackStart(UInt64 Object)	Start		Find_FindFirstHit_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	713	0	Find_FindFirstHit_PerftrackStop(UInt64 Object)	Stop		Find_FindFirstHit_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	714	0	Find_MatchAndHighlightHits_PerftrackStart(UInt64 Object)	Start		Find_MatchAndHighlightHits_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	715	0	Find_MatchAndHighlightHits_PerftrackStop(UInt64 Object)	Stop		Find_MatchAndHighlightHits_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	716	0	Find_MatchAndHighlightHits_PerftrackStop716(UInt64 Object)	Stop		Find_MatchAndHighlightHits_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	717	0	Browseui_Tabs_Tearoff_BetweenWindows_TabProc(UInt64 Object)			Browseui_Tabs_Tearoff_BetweenWindows_TabProc	Informational		
+Microsoft-PerfTrack-IEFRAME	800	0	Browseui_CIMBrowserFrame_CreateInstance_PerftrackStart(UInt64 Object)	Start	nonPerfTrack	Browseui_CIMBrowserFrame_CreateInstance_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	801	0	Browseui_CIMBrowserFrame_CreateInstance_PerftrackStop(UInt64 Object)	Stop	nonPerfTrack	Browseui_CIMBrowserFrame_CreateInstance_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	806	0	Browseui_CIMTabView_CloseTab_PerftrackStart(UInt64 Object)	Start	nonPerfTrack	Browseui_CIMTabView_CloseTab_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	807	0	Browseui_CIMTabView_CloseTab_PerftrackStop(UInt64 Object)	Stop	nonPerfTrack	Browseui_CIMTabView_CloseTab_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	808	0	CIMNavBar_Show_PerftrackStart(UInt64 Object)	Start		CIMNavBar_Show_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	809	0	CIMNavBar_Show_PerftrackStop(UInt64 Object)	Stop		CIMNavBar_Show_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	810	0	CIMNavBar_Hide_PerftrackStart(UInt64 Object)	Start	nonPerfTrack	CIMNavBar_Hide_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	811	0	CIMNavBar_Hide_PerftrackStop(UInt64 Object)	Stop	nonPerfTrack	CIMNavBar_Hide_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	812	0	QSA_PopulateTile_PerftrackStart(UInt64 Object)	Start	nonPerfTrack	QSA_PopulateTile_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	813	0	QSA_PopulateTile_PerftrackStop(UInt64 Object)	Stop	nonPerfTrack	QSA_PopulateTile_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	814	0	Thumbnail_RemoveGuttersStart()	Start	nonPerfTrack	Thumbnail_RemoveGutters	Informational		
+Microsoft-PerfTrack-IEFRAME	815	0	Thumbnail_RemoveGuttersStop()	Stop	nonPerfTrack	Thumbnail_RemoveGutters	Informational		
+Microsoft-PerfTrack-IEFRAME	816	0	QSA_CalculateTilesInView_PerftrackStart(UInt64 Object)	Start	nonPerfTrack	QSA_CalculateTilesInView_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	817	0	QSA_CalculateTilesInView_PerftrackStop(UInt64 Object, UInt32 ID)	Stop	nonPerfTrack	QSA_CalculateTilesInView_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	818	0	QSA_PopulateTiles_PerftrackStart(UInt64 Object, UInt32 ID)	Start	nonPerfTrack	QSA_PopulateTiles_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	819	0	QSA_PopulateTiles_PerftrackStop(UInt64 Object, UInt32 ID)	Stop	nonPerfTrack	QSA_PopulateTiles_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	820	0	Immersive_Travellog_PerftrackStart()	Start	nonPerfTrack	Immersive_Travellog_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	821	0	Immersive_Travellog_PerftrackStop()	Stop	nonPerfTrack	Immersive_Travellog_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	822	0	Immersive_Travellog_PerftrackStart822()	Start	nonPerfTrack	Immersive_Travellog_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	823	0	Immersive_Travellog_PerftrackStop823()	Stop	nonPerfTrack	Immersive_Travellog_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	824	0	Immersive_Travellog_PerftrackStart824()	Start	nonPerfTrack	Immersive_Travellog_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	825	0	Immersive_Travellog_PerftrackStop825()	Stop	nonPerfTrack	Immersive_Travellog_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	826	0	Immersive_Travellog_PerftrackStart826()	Start	nonPerfTrack	Immersive_Travellog_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	827	0	Immersive_Travellog_PerftrackStop827()	Stop	nonPerfTrack	Immersive_Travellog_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	828	0	TabWindowManager_DehydrateTabsOnSuspend_PerftrackStart(UInt64 Object)	Start	nonPerfTrack	TabWindowManager_DehydrateTabsOnSuspend_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	829	0	TabWindowManager_DehydrateTabsOnSuspend_PerftrackStop(UInt64 Object)	Stop	nonPerfTrack	TabWindowManager_DehydrateTabsOnSuspend_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	830	0	TabWindowManager_UnDehydrateTabsOnResume_PerftrackStart(UInt64 Object)	Start	nonPerfTrack	TabWindowManager_UnDehydrateTabsOnResume_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	831	0	TabWindowManager_UnDehydrateTabsOnResume_PerftrackStop(UInt64 Object)	Stop	nonPerfTrack	TabWindowManager_UnDehydrateTabsOnResume_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	832	0	ULV_AggregateItems_PerftrackStart(UInt64 Object)	Start	nonPerfTrack	ULV_AggregateItems_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	833	0	ULV_AggregateItems_PerftrackStop(UInt64 Object)	Stop	nonPerfTrack	ULV_AggregateItems_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	836	0	QSA_UpdateGroup_PerftrackStart(UInt64 Object)	Start	nonPerfTrack	QSA_UpdateGroup_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	837	0	QSA_UpdateGroup_PerftrackStop(UInt64 Object)	Stop	nonPerfTrack	QSA_UpdateGroup_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	838	0	Snippet_Aggregate_PerftrackStart(UInt64 Object)	Start	nonPerfTrack	Snippet_Aggregate_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	839	0	Snippet_Aggregate_PerftrackStop(UInt64 Object)	Stop	nonPerfTrack	Snippet_Aggregate_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	840	0	Snippet_MetaExtraction_PerftrackStart(UInt64 Object)	Start	nonPerfTrack	Snippet_MetaExtraction_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	841	0	Snippet_MetaExtraction_PerftrackStop(UInt64 Object)	Stop	nonPerfTrack	Snippet_MetaExtraction_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	842	0	Snippet_UserSelExtraction_PerftrackStart(UInt64 Object)	Start	nonPerfTrack	Snippet_UserSelExtraction_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	843	0	Snippet_UserSelExtraction_PerftrackStop(UInt64 Object)	Stop	nonPerfTrack	Snippet_UserSelExtraction_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	844	0	Snippet_BOLLExtraction_PerftrackStart(UInt64 Object)	Start	nonPerfTrack	Snippet_BOLLExtraction_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	845	0	Snippet_BOLLExtraction_PerftrackStop(UInt64 Object)	Stop	nonPerfTrack	Snippet_BOLLExtraction_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	846	0	DLVA_Animation_PerftrackStart(UInt32 Cookie, UInt32 AnimationType, UInt32 RowCount)	Start	nonPerfTrack	DLVA_Animation_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	847	0	DLVA_Animation_PerftrackStop(UInt32 Cookie, UInt32 AnimationType, UInt32 RowCount)	Stop	nonPerfTrack	DLVA_Animation_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	850	0	Immersive_Travellog_PerftrackStart850()	Start	nonPerfTrack	Immersive_Travellog_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	851	0	Immersive_Travellog_PerftrackStop851()	Stop	nonPerfTrack	Immersive_Travellog_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	852	0	Immersive_Travellog_PerftrackStart852()	Start	nonPerfTrack	Immersive_Travellog_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	853	0	Immersive_Travellog_PerftrackStop853()	Stop	nonPerfTrack	Immersive_Travellog_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	854	0	Immersive_Travellog_PerftrackStart854()	Start	nonPerfTrack	Immersive_Travellog_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	855	0	Immersive_Travellog_PerftrackStop855()	Stop	nonPerfTrack	Immersive_Travellog_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	860	0	Immersive_Travellog_PerftrackStart860()	Start	nonPerfTrack	Immersive_Travellog_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	861	0	Immersive_Travellog_PerftrackStop861()	Stop	nonPerfTrack	Immersive_Travellog_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	862	0	Immersive_Travellog_PerftrackStart862()	Start	nonPerfTrack	Immersive_Travellog_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	863	0	Immersive_Travellog_PerftrackStop863()	Stop	nonPerfTrack	Immersive_Travellog_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	864	0	Immersive_Travellog_PerftrackStart864()	Start	nonPerfTrack	Immersive_Travellog_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	865	0	Immersive_Travellog_PerftrackStop865()	Stop	nonPerfTrack	Immersive_Travellog_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	900	0	CIMFindBar_Show_PerftrackStart(UInt64 Object)	Start	nonPerfTrack	CIMFindBar_Show_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	901	0	CIMFindBar_Show_PerftrackStop(UInt64 Object)	Stop	nonPerfTrack	CIMFindBar_Show_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	902	0	CIMFindBar_Hide_PerftrackStart(UInt64 Object)	Start	nonPerfTrack	CIMFindBar_Hide_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	903	0	CIMFindBar_Hide_PerftrackStop(UInt64 Object)	Stop	nonPerfTrack	CIMFindBar_Hide_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	908	0	QSA_OpenUnfilteredView_PerftrackStart(UInt64 Object)	Start		QSA_OpenUnfilteredView_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	909	0	QSA_OpenUnfilteredView_PerftrackStop(UInt64 Object)	Stop		QSA_OpenUnfilteredView_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	910	0	QSA_OpenUnfilteredView_PerftrackStop910(UInt64 Object)	Stop		QSA_OpenUnfilteredView_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	911	0	UnifiedListView_Query_DomainSuggestion_PerftrackStart(UInt64 Object)	Start	nonPerfTrack	UnifiedListView_Query_DomainSuggestion_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	912	0	UnifiedListView_Query_DomainSuggestion_PerftrackStop(UInt64 Object)	Stop	nonPerfTrack	UnifiedListView_Query_DomainSuggestion_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	913	0	FlipAhead_RulesFileUpdateStart()	Start		FlipAhead_RulesFileUpdate	Informational		
+Microsoft-PerfTrack-IEFRAME	914	0	FlipAhead_RulesFileUpdateStop(UInt32 FileVersion)	Stop		FlipAhead_RulesFileUpdate	Informational		
+Microsoft-PerfTrack-IEFRAME	915	0	IMDownloadWindow_Show_PerftrackStart(UInt64 Object)	Start	nonPerfTrack	IMDownloadWindow_Show_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	916	0	IMDownloadWindow_Show_PerftrackStop(UInt64 Object)	Stop	nonPerfTrack	IMDownloadWindow_Show_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	917	0	IMDownloadWindow_Hide_PerftrackStart(UInt64 Object)	Start	nonPerfTrack	IMDownloadWindow_Hide_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	918	0	IMDownloadWindow_Hide_PerftrackStop(UInt64 Object)	Stop	nonPerfTrack	IMDownloadWindow_Hide_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	919	0	CIMContextMenuBar_Show_PerftrackStart(UInt64 Object)	Start	nonPerfTrack	CIMContextMenuBar_Show_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	920	0	CIMContextMenuBar_Show_PerftrackStop(UInt64 Object)	Stop	nonPerfTrack	CIMContextMenuBar_Show_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	921	0	CIMContextMenuBar_Hide_PerftrackStart(UInt64 Object)	Start	nonPerfTrack	CIMContextMenuBar_Hide_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	922	0	CIMContextMenuBar_Hide_PerftrackStop(UInt64 Object)	Stop	nonPerfTrack	CIMContextMenuBar_Hide_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	923	0	DownloadWindow_HistoryQuery_PerftrackStart(UInt64 Object)	Start	nonPerfTrack	DownloadWindow_HistoryQuery_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	924	0	DownloadWindow_HistoryQuery_PerftrackStop(UInt64 Object)	Stop	nonPerfTrack	DownloadWindow_HistoryQuery_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	925	0	DownloadWindow_HistoryPopulate_PerftrackStart(UInt64 Object)	Start	nonPerfTrack	DownloadWindow_HistoryPopulate_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	926	0	DownloadWindow_HistoryPopulate_PerftrackStop(UInt64 Object)	Stop	nonPerfTrack	DownloadWindow_HistoryPopulate_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	927	0	Immersive_Travellog_SwipeStartThresholdMet()		nonPerfTrack	Immersive_Travellog_SwipeStartThresholdMet	Informational		
+Microsoft-PerfTrack-IEFRAME	928	0	JournalEncryption_Init_PerftrackStart()	Start	nonPerfTrack	JournalEncryption_Init_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	929	0	JournalEncryption_Init_PerftrackStop()	Stop	nonPerfTrack	JournalEncryption_Init_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	930	0	Browseui_TabWindow_CommitRoamingState_PerftrackStart(UInt64 Object)	Start		Browseui_TabWindow_CommitRoamingState_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	931	0	Browseui_TabWindow_CommitRoamingState_PerftrackStop(UInt64 Object)	Stop		Browseui_TabWindow_CommitRoamingState_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	932	0	EUPP_HPNavigationTriggerProtection_PerftrackStart()	Start	nonPerfTrack	EUPP_HPNavigationTriggerProtection_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	933	0	EUPP_HPNavigationTriggerProtection_PerftrackStop(UInt32 TriggerProtectionHResult)	Stop	nonPerfTrack	EUPP_HPNavigationTriggerProtection_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	934	0	EUPP_DoAsyncOperation_PerftrackStart(UInt32 OpType)	Start	nonPerfTrack	EUPP_DoAsyncOperation_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	935	0	EUPP_DoAsyncOperation_PerftrackStop(UInt32 OpType)	Stop	nonPerfTrack	EUPP_DoAsyncOperation_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	936	0	EUPP_HandleAsyncOperationResult_PerftrackStart(UInt32 OpType)	Start	nonPerfTrack	EUPP_HandleAsyncOperationResult_Perftrack	Informational		
+Microsoft-PerfTrack-IEFRAME	937	0	EUPP_HandleAsyncOperationResult_PerftrackStop(UInt32 OpType)	Stop	nonPerfTrack	EUPP_HandleAsyncOperationResult_Perftrack	Informational		

@@ -1,0 +1,5 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-WEPHOSTSVC	1	0	TASK_SERVICE(UInt32 ErrorCode)			TASK_SERVICE	Critical		
+Microsoft-Windows-WEPHOSTSVC	2	0	TASK_SERVICE2(UInt32 ErrorCode)			TASK_SERVICE	Critical		
+Microsoft-Windows-WEPHOSTSVC	300	0	TASK_SERVICEStart()	Start		TASK_SERVICE	Informational		
+Microsoft-Windows-WEPHOSTSVC	301	0	TASK_SERVICEStop()	Stop		TASK_SERVICE	Informational		

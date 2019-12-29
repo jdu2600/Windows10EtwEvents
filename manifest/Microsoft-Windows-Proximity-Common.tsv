@@ -1,0 +1,21 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Proximity-Common	5	0	Proximity_DeviceArrivalTriggerStart(Pointer Pointer1)	Start		Proximity_DeviceArrivalTrigger	Informational		
+Microsoft-Windows-Proximity-Common	10	0	Proximity_OOBMessageProcessingStart(Pointer Pointer1)	Start	ProximityAssociation	Proximity_OOBMessageProcessing	Informational		
+Microsoft-Windows-Proximity-Common	11	0	Proximity_OOBMessagePublishingStart(Pointer Pointer1, UnicodeString String2, UnicodeString String3)	Start	ProximityAssociation	Proximity_OOBMessagePublishing	Informational		
+Microsoft-Windows-Proximity-Common	12	0	Proximity_OOBMessagePublishingStop(Pointer Pointer1, UnicodeString String2, UnicodeString String3)	Stop		Proximity_OOBMessagePublishing	Informational		
+Microsoft-Windows-Proximity-Common	13	0	Proximity_OOBMessageProcessingStop(Pointer Pointer1, UnicodeString String2, UnicodeString String3)	Stop		Proximity_OOBMessageProcessing	Informational		
+Microsoft-Windows-Proximity-Common	14	0	Proximity_DeviceAssociationStart(UInt32 HrResult, UnicodeString DeviceCategory)	Start		Proximity_DeviceAssociation	Informational		
+Microsoft-Windows-Proximity-Common	15	0	Proximity_DeviceAssociationStop(UInt32 HrResult, UnicodeString DeviceCategory)	Stop		Proximity_DeviceAssociation	Informational		
+Microsoft-Windows-Proximity-Common	16	0	Proximity_SessionAppLaunchStart(UnicodeString String)	Start		Proximity_SessionAppLaunch	Informational		
+Microsoft-Windows-Proximity-Common	17	0	Proximity_SessionAppLaunchStop(UnicodeString String)	Stop		Proximity_SessionAppLaunch	Informational		
+Microsoft-Windows-Proximity-Common	18	0	Proximity_ReceiveSharedContentStart(Pointer Pointer1)	Start		Proximity_ReceiveSharedContent	Informational		
+Microsoft-Windows-Proximity-Common	19	0	Proximity_ReceiveSharedContentStop(Pointer Pointer1)	Stop		Proximity_ReceiveSharedContent	Informational		
+Microsoft-Windows-Proximity-Common	20	0	Proximity_SessionProtocolStart(UnicodeString String)	Start		Proximity_SessionProtocol	Informational		
+Microsoft-Windows-Proximity-Common	21	0	Proximity_SessionProtocolStop(UnicodeString String)	Stop		Proximity_SessionProtocol	Informational		
+Microsoft-Windows-Proximity-Common	22	0	Proximity_SessionConnectStart(UnicodeString String)	Start		Proximity_SessionConnect	Informational		
+Microsoft-Windows-Proximity-Common	23	0	Proximity_SessionConnectStop(UInt32 Integer4, UnicodeString String)	Stop		Proximity_SessionConnect	Informational		
+Microsoft-Windows-Proximity-Common	24	0	task_0(UnicodeString String1, UnicodeString String2)			task_0	Error		
+Microsoft-Windows-Proximity-Common	30	0	Proximity_ReceiveSharedContentStart30(Pointer Pointer1)	Start		Proximity_ReceiveSharedContent	Informational		
+Microsoft-Windows-Proximity-Common	31	0	Proximity_ReceiveSharedContentStop31(Pointer Pointer1)	Stop		Proximity_ReceiveSharedContent	Informational		
+Microsoft-Windows-Proximity-Common	40	0	Proximity_SocketConnectStart()	Start		Proximity_SocketConnect	Informational		
+Microsoft-Windows-Proximity-Common	41	0	Proximity_SocketConnectStop(UInt32 TransportType, UInt32 HrConnectResult)	Stop		Proximity_SocketConnect	Informational		

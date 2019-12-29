@@ -1,0 +1,126 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-WindowsPhone-CoreMessaging	1000	0	InitStart(UInt32 hex)	Start	Performance	Init	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	1001	0	InitStop(UInt32 hex)	Stop	Performance	Init	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	1050	0	task_0()		Error	task_0	Error		
+Microsoft-WindowsPhone-CoreMessaging	2900	0	CoreUIService(UInt32 coreUIServiceType)		CoreUIService	CoreUIService	Informational		
+Microsoft-WindowsPhone-CoreMessaging	2901	0	CoreUIService2901(UInt32 coreUIServiceType)		CoreUIService	CoreUIService	Informational		
+Microsoft-WindowsPhone-CoreMessaging	2902	0	CoreUIService2902(UInt32 coreUIServiceType)		CoreUIService	CoreUIService	Informational		
+Microsoft-WindowsPhone-CoreMessaging	2903	0	CoreUIService2903(UInt32 coreUIServiceType)		CoreUIService	CoreUIService	Informational		
+Microsoft-WindowsPhone-CoreMessaging	2904	0	CoreUIService2904(UInt32 coreUIServiceType)		CoreUIService	CoreUIService	Informational		
+Microsoft-WindowsPhone-CoreMessaging	2905	0	CoreUIService2905(UInt32 coreUIServiceType)		CoreUIService	CoreUIService	Informational		
+Microsoft-WindowsPhone-CoreMessaging	2906	0	CoreUIService2906(UInt32 coreUIServiceType)		CoreUIService	CoreUIService	Informational		
+Microsoft-WindowsPhone-CoreMessaging	2907	0	CoreUIService2907(UInt32 coreUIServiceType)		CoreUIService	CoreUIService	Informational		
+Microsoft-WindowsPhone-CoreMessaging	2908	0	CoreUIService2908(UnicodeString pwsz)		CoreUIService	CoreUIService	Informational		
+Microsoft-WindowsPhone-CoreMessaging	3100	0	SessionCoreUICreateStart()	Start	MessagingPerformance Session	SessionCoreUICreate	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3101	0	SessionCoreUICreateStop()	Stop	MessagingPerformance Session	SessionCoreUICreate	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3102	0	SessionInitializeCnContextStart()	Start	MessagingPerformance Session	SessionInitializeCnContext	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3103	0	SessionInitializeCnContextStop()	Stop	MessagingPerformance Session	SessionInitializeCnContext	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3106	0	SessionExportSessionStart()	Start	MessagingPerformance Session	SessionExportSession	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3107	0	SessionExportSessionStop()	Stop	MessagingPerformance Session	SessionExportSession	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3110	0	SessionConstructThreadContextStart()	Start	MessagingPerformance Session	SessionConstructThreadContext	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3111	0	SessionConstructThreadContextStop()	Stop	MessagingPerformance Session	SessionConstructThreadContext	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3210	0	DispatcherDispatchLoopStart()	Start	MessagingPerformance Dispatcher	DispatcherDispatchLoop	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3211	0	DispatcherDispatchLoopStop()	Stop	MessagingPerformance Dispatcher	DispatcherDispatchLoop	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3212	0	DispatcherDispatchCallbackStart()	Start	MessagingPerformance Dispatcher	DispatcherDispatchCallback	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3213	0	DispatcherDispatchCallbackStop()	Stop	MessagingPerformance Dispatcher	DispatcherDispatchCallback	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3214	0	DispatcherDispatchItemStart(UInt32 InternalPriority)	Start	MessagingPerformance Dispatcher	DispatcherDispatchItem	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3215	0	DispatcherDispatchItemStop(UInt32 InternalPriority)	Stop	MessagingPerformance Dispatcher	DispatcherDispatchItem	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3216	0	DispatcherWakeLevel(UInt32 unParam, UInt32 InternalPriority, UInt32 InternalPriority2)		MessagingPerformance Dispatcher	DispatcherWakeLevel	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3220	0	DispatcherDoWaitStart(UInt32 hex)	Start	MessagingPerformance Dispatcher	DispatcherDoWait	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3221	0	DispatcherDoWaitStop(UInt32 unParam, UInt32 unParam2)	Stop	MessagingPerformance Dispatcher	DispatcherDoWait	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3222	0	DispatcherCallDispatchCallbackStart(Boolean fBool, UInt64 unParam)	Start	MessagingPerformance Dispatcher	DispatcherCallDispatchCallback	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3223	0	DispatcherCallDispatchCallbackStop(UInt64 unParam)	Stop	MessagingPerformance Dispatcher	DispatcherCallDispatchCallback	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3224	0	UserAdapterScheduleDispatch(UInt32 UserPriority)		MessagingPerformance Dispatcher	UserAdapterScheduleDispatch	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3225	0	UserAdapterHostModeRunStart(UInt32 RunMode, Boolean fBool)	Start	MessagingPerformance Dispatcher	UserAdapterHostModeRun	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3226	0	UserAdapterHostModeRunStop(Int32 param)	Stop	MessagingPerformance Dispatcher	UserAdapterHostModeRun	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3227	0	UserAdapterOnUserDispatchStart(UInt32 UserPriority)	Start	MessagingPerformance Dispatcher	UserAdapterOnUserDispatch	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3228	0	UserAdapterOnUserDispatchStop(Boolean fBool)	Stop	MessagingPerformance Dispatcher	UserAdapterOnUserDispatch	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3229	0	UserAdapterIntegratedLoopWaitStart()	Start	MessagingPerformance Dispatcher	UserAdapterIntegratedLoopWait	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3230	0	UserAdapterIntegratedLoopWaitStop()	Stop	MessagingPerformance Dispatcher	UserAdapterIntegratedLoopWait	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3231	0	UserAdapterPostMessageError()		Error Dispatcher	UserAdapterPostMessageError	Error		
+Microsoft-WindowsPhone-CoreMessaging	3300	0	RegistrarClientInitializeStart()	Start	MessagingPerformance RegistrarClient	RegistrarClientInitialize	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3301	0	RegistrarClientInitializeStop()	Stop	MessagingPerformance RegistrarClient	RegistrarClientInitialize	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3310	0	RegistrarClientConnectToRegistrarServerStart()	Start	MessagingPerformance RegistrarClient	RegistrarClientConnectToRegistrarServer	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3311	0	RegistrarClientConnectToRegistrarServerStop()	Stop	MessagingPerformance RegistrarClient	RegistrarClientConnectToRegistrarServer	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3400	0	RemoteRegistrarClientConnectStart()	Start	MessagingPerformance RegistrarClient	RemoteRegistrarClientConnect	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3401	0	RemoteRegistrarClientConnectStop()	Stop	MessagingPerformance RegistrarClient	RemoteRegistrarClientConnect	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3402	0	RemoteRegistrarClientRegisterThreadStart()	Start	MessagingPerformance RegistrarClient	RemoteRegistrarClientRegisterThread	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3403	0	RemoteRegistrarClientRegisterThreadStop()	Stop	MessagingPerformance RegistrarClient	RemoteRegistrarClientRegisterThread	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3404	0	RemoteRegistrarClientRegisterAlpcPortStart()	Start	MessagingPerformance RegistrarClient	RemoteRegistrarClientRegisterAlpcPort	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3405	0	RemoteRegistrarClientRegisterAlpcPortStop()	Stop	MessagingPerformance RegistrarClient	RemoteRegistrarClientRegisterAlpcPort	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3406	0	RemoteRegistrarClientUnregisterAlpcPortStart()	Start	MessagingPerformance RegistrarClient	RemoteRegistrarClientUnregisterAlpcPort	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3407	0	RemoteRegistrarClientUnregisterAlpcPortStop()	Stop	MessagingPerformance RegistrarClient	RemoteRegistrarClientUnregisterAlpcPort	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3408	0	RemoteRegistrarClientPrepareConnectionStart()	Start	MessagingPerformance RegistrarClient	RemoteRegistrarClientPrepareConnection	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3409	0	RemoteRegistrarClientPrepareConnectionStop()	Stop	MessagingPerformance RegistrarClient	RemoteRegistrarClientPrepareConnection	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3410	0	RemoteRegistrarClientCloseConnectionStart()	Start	MessagingPerformance RegistrarClient	RemoteRegistrarClientCloseConnection	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3411	0	RemoteRegistrarClientCloseConnectionStop()	Stop	MessagingPerformance RegistrarClient	RemoteRegistrarClientCloseConnection	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3412	0	RemoteRegistrarClientCompleteCrossProcConnectionStart()	Start	MessagingPerformance RegistrarClient	RemoteRegistrarClientCompleteCrossProcConnection	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3413	0	RemoteRegistrarClientCompleteCrossProcConnectionStop()	Stop	MessagingPerformance RegistrarClient	RemoteRegistrarClientCompleteCrossProcConnection	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3414	0	RemoteRegistrarClientCrossProcClientDisconnectedStart()	Start	MessagingPerformance RegistrarClient	RemoteRegistrarClientCrossProcClientDisconnected	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3415	0	RemoteRegistrarClientCrossProcClientDisconnectedStop()	Stop	MessagingPerformance RegistrarClient	RemoteRegistrarClientCrossProcClientDisconnected	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3418	0	RemoteRegistrarClientRegisterObjectStart(UnicodeString pwsz)	Start	MessagingPerformance RegistrarClient	RemoteRegistrarClientRegisterObject	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3419	0	RemoteRegistrarClientRegisterObjectStop()	Stop	MessagingPerformance RegistrarClient	RemoteRegistrarClientRegisterObject	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3420	0	RemoteRegistrarClientUnregisterObjectStart(UnicodeString pwsz)	Start	MessagingPerformance RegistrarClient	RemoteRegistrarClientUnregisterObject	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3421	0	RemoteRegistrarClientUnregisterObjectStop()	Stop	MessagingPerformance RegistrarClient	RemoteRegistrarClientUnregisterObject	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3424	0	RemoteRegistrarClientFindObjectStart(UnicodeString pwsz)	Start	MessagingPerformance RegistrarClient	RemoteRegistrarClientFindObject	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3425	0	RemoteRegistrarClientFindObjectStop()	Stop	MessagingPerformance RegistrarClient	RemoteRegistrarClientFindObject	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3426	0	RemoteRegistrarClientCompleteLocalConnectionStart()	Start	MessagingPerformance RegistrarClient	RemoteRegistrarClientCompleteLocalConnection	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3427	0	RemoteRegistrarClientCompleteLocalConnectionStop()	Stop	MessagingPerformance RegistrarClient	RemoteRegistrarClientCompleteLocalConnection	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3428	0	RemoteRegistrarClientLocalClientDisconnectedStart()	Start	MessagingPerformance RegistrarClient	RemoteRegistrarClientLocalClientDisconnected	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3429	0	RemoteRegistrarClientLocalClientDisconnectedStop()	Stop	MessagingPerformance RegistrarClient	RemoteRegistrarClientLocalClientDisconnected	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3430	0	RemoteRegistrarClientRegisterReverseConnectionPortStart()	Start	MessagingPerformance RegistrarClient	RemoteRegistrarClientRegisterReverseConnectionPort	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3431	0	RemoteRegistrarClientRegisterReverseConnectionPortStop()	Stop	MessagingPerformance RegistrarClient	RemoteRegistrarClientRegisterReverseConnectionPort	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3432	0	RemoteRegistrarClientUnregisterReverseConnectionPortStart()	Start	MessagingPerformance RegistrarClient	RemoteRegistrarClientUnregisterReverseConnectionPort	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3433	0	RemoteRegistrarClientUnregisterReverseConnectionPortStop()	Stop	MessagingPerformance RegistrarClient	RemoteRegistrarClientUnregisterReverseConnectionPort	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3434	0	RemoteRegistrarClientFindConversationServerStart(UnicodeString pwsz)	Start	MessagingPerformance RegistrarClient	RemoteRegistrarClientFindConversationServer	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3435	0	RemoteRegistrarClientFindConversationServerStop()	Stop	MessagingPerformance RegistrarClient	RemoteRegistrarClientFindConversationServer	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3436	0	RemoteRegistrarClientRegisterConversationStart(UnicodeString pwsz)	Start	MessagingPerformance RegistrarClient	RemoteRegistrarClientRegisterConversation	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3437	0	RemoteRegistrarClientRegisterConversationStop()	Stop	MessagingPerformance RegistrarClient	RemoteRegistrarClientRegisterConversation	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3438	0	RemoteRegistrarClientUnregisterConversationStart(UnicodeString pwsz)	Start	MessagingPerformance RegistrarClient	RemoteRegistrarClientUnregisterConversation	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3439	0	RemoteRegistrarClientUnregisterConversationStop()	Stop	MessagingPerformance RegistrarClient	RemoteRegistrarClientUnregisterConversation	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3440	0	RemoteRegistrarClientRegisterPendingConversationClientStart(UnicodeString pwsz)	Start	MessagingPerformance RegistrarClient	RemoteRegistrarClientRegisterPendingConversationClient	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3441	0	RemoteRegistrarClientRegisterPendingConversationClientStop()	Stop	MessagingPerformance RegistrarClient	RemoteRegistrarClientRegisterPendingConversationClient	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3442	0	RemoteRegistrarClientConnectPendingConversationClientStart(UnicodeString pwsz, UInt32 unParam)	Start	MessagingPerformance RegistrarClient	RemoteRegistrarClientConnectPendingConversationClient	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3443	0	RemoteRegistrarClientConnectPendingConversationClientStop()	Stop	MessagingPerformance RegistrarClient	RemoteRegistrarClientConnectPendingConversationClient	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3446	0	RemoteRegistrarClientReleaseConversationClientStart(UnicodeString pwsz, UInt32 unParam, UInt32 unParam2)	Start	MessagingPerformance RegistrarClient	RemoteRegistrarClientReleaseConversationClient	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3447	0	RemoteRegistrarClientReleaseConversationClientStop()	Stop	MessagingPerformance RegistrarClient	RemoteRegistrarClientReleaseConversationClient	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3450	0	RemoteRegistrarClientFindConversationClientStart(UnicodeString pwsz, UInt32 unParam)	Start	MessagingPerformance RegistrarClient	RemoteRegistrarClientFindConversationClient	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3451	0	RemoteRegistrarClientFindConversationClientStop()	Stop	MessagingPerformance RegistrarClient	RemoteRegistrarClientFindConversationClient	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3452	0	RemoteRegistrarClientFindCrossProcConnectionStart()	Start	MessagingPerformance RegistrarClient	RemoteRegistrarClientFindCrossProcConnection	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3453	0	RemoteRegistrarClientFindCrossProcConnectionStop()	Stop	MessagingPerformance RegistrarClient	RemoteRegistrarClientFindCrossProcConnection	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	4000	0	MessagingConstructMessageSessionStart()	Start	MessagingPerformance Messaging	MessagingConstructMessageSession	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	4001	0	MessagingConstructMessageSessionStop()	Stop	MessagingPerformance Messaging	MessagingConstructMessageSession	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	4010	0	MessagingCreateConnectionStart(UInt32 unParam, UInt32 unParam2)	Start	MessagingPerformance Messaging	MessagingCreateConnection	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	4011	0	MessagingCreateConnectionStop(UInt32 unParam, UInt32 unParam2)	Stop	MessagingPerformance Messaging	MessagingCreateConnection	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	4020	0	MessagingAllocatedMessage(UInt32 ExternalPriority, UInt32 unParam, UInt32 hex, UInt32 hex2)		MessagingPerformance Messaging	MessagingAllocatedMessage	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	4022	0	MessagingFlushPendingStreamsStart(UInt32 ExternalPriority)	Start	MessagingPerformance Messaging	MessagingFlushPendingStreams	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	4023	0	MessagingFlushPendingStreamsStop()	Stop	MessagingPerformance Messaging	MessagingFlushPendingStreams	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	4030	0	MessagingLocalReceiveStart()	Start	MessagingPerformance Messaging	MessagingLocalReceive	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	4031	0	MessagingLocalReceiveStop(UInt32 unParam, UInt32 unParam2)	Stop	MessagingPerformance Messaging	MessagingLocalReceive	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	4041	0	MessagingInterconnectSend(UInt32 unParam, UInt32 unParam2)		MessagingPerformance Messaging	MessagingInterconnectSend	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	4042	0	MessagingInterconnectFlushStart(UInt32 ExternalPriority, UInt32 unParam, UInt32 unParam2)	Start	MessagingPerformance Messaging	MessagingInterconnectFlush	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	4043	0	MessagingInterconnectFlushStop(UInt32 ExternalPriority, UInt32 unParam, UInt32 unParam2)	Stop	MessagingPerformance Messaging	MessagingInterconnectFlush	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	4044	0	MessagingInterconnectReceiveStart()	Start	MessagingPerformance Messaging	MessagingInterconnectReceive	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	4045	0	MessagingInterconnectReceiveStop(UInt32 unParam, UInt32 unParam2, UInt32 unParam3)	Stop	MessagingPerformance Messaging	MessagingInterconnectReceive	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	4051	0	MessagingAlpcSend(UInt32 unParam, UInt32 unParam2)		MessagingPerformance Messaging	MessagingAlpcSend	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	4052	0	MessagingAlpcFlushStart(UInt32 ExternalPriority, UInt32 unParam, UInt32 unParam2)	Start	MessagingPerformance Messaging	MessagingAlpcFlush	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	4053	0	MessagingAlpcFlushStop(UInt32 ExternalPriority, UInt32 unParam, UInt32 unParam2)	Stop	MessagingPerformance Messaging	MessagingAlpcFlush	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	4054	0	MessagingAlpcReceiveStart()	Start	MessagingPerformance Messaging	MessagingAlpcReceive	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	4055	0	MessagingAlpcReceiveStop(UInt32 unParam, UInt32 unParam2, UInt32 unParam3, UInt32 unParam4)	Stop	MessagingPerformance Messaging	MessagingAlpcReceive	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	5050	0	ProxyMessageMethodStart(UnicodeString pwsz)	Start	MessagingPerformance Proxy	ProxyMessageMethod	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	5051	0	ProxyMessageMethodStop()	Stop	MessagingPerformance Proxy	ProxyMessageMethod	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	5052	0	ProxyMessageEventStart(UnicodeString pwsz)	Start	MessagingPerformance Proxy	ProxyMessageEvent	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	5053	0	ProxyMessageEventStop()	Stop	MessagingPerformance Proxy	ProxyMessageEvent	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	5054	0	ProxyPropertyUpdateStart(UnicodeString pwsz)	Start	MessagingPerformance Proxy	ProxyPropertyUpdate	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	5055	0	ProxyPropertyUpdateStop()	Stop	MessagingPerformance Proxy	ProxyPropertyUpdate	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	7000	0	RegistrarService(UnicodeString pwsz, UInt32 hex, UInt32 hex2, UInt32 hex3, UInt32 hex4)		keyword_40000000000	RegistrarService	Informational		
+Microsoft-WindowsPhone-CoreMessaging	7001	0	RegistrarService7001(UnicodeString pwsz, UInt32 hex, UInt32 hex2, UInt32 hex3, Boolean fBool)		keyword_40000000000	RegistrarService	Informational		
+Microsoft-WindowsPhone-CoreMessaging	7002	0	MessagingAPI(UInt32 hex, UInt32 hex2, GUID guid)		keyword_40000000000	MessagingAPI	Informational		
+Microsoft-WindowsPhone-CoreMessaging	7003	0	RegistrarService7003(UnicodeString pwsz)		keyword_40000000000	RegistrarService	Informational		
+Microsoft-WindowsPhone-CoreMessaging	7004	0	RegistrarService7004(UnicodeString pwsz)		keyword_40000000000	RegistrarService	Informational		
+Microsoft-WindowsPhone-CoreMessaging	20000	0	ThrownException(UnicodeString pwsz, UInt32 hex, UnicodeString pwsz2)		MessagingPerformance Session Dispatcher RegistrarClient Messaging keyword_80000000000	ThrownException	Error		
+Microsoft-WindowsPhone-CoreMessaging	20001	0	RegistrarService20001(UnicodeString pwsz, UInt32 unParam)		keyword_80000000000	RegistrarService	Error		
+Microsoft-WindowsPhone-CoreMessaging	20002	0	MessagingAPI20002(UInt32 hex, UInt32 hex2, GUID guid)		keyword_80000000000	MessagingAPI	Error		
+Microsoft-WindowsPhone-CoreMessaging	20003	0	MessagingAPI20003(UInt32 hex, UInt32 hex2)		keyword_80000000000	MessagingAPI	Error		
+Microsoft-WindowsPhone-CoreMessaging	20004	0	MessagingAPI20004(UnicodeString pwsz, Int32 hresult)		keyword_80000000000	MessagingAPI	Error		
+Microsoft-WindowsPhone-CoreMessaging	20005	0	RegistrarService20005(UnicodeString pwsz)		keyword_80000000000	RegistrarService	Error		

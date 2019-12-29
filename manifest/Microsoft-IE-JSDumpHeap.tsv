@@ -1,0 +1,8 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-IE-JSDumpHeap	1	0	JSDumpHeapEnvelopeStart(UnicodeString Settings)	Start	jsdumpheap jsdumpheapEnvelopeOnly	JSDumpHeapEnvelope	Always		
+Microsoft-IE-JSDumpHeap	2	1	JSDumpHeapEnvelopeStop_V1(UnicodeString Summary)	Stop	jsdumpheap jsdumpheapEnvelopeOnly	JSDumpHeapEnvelope	Always		
+Microsoft-IE-JSDumpHeap	3	0	JSDumpHeapBulkNode(UInt32 Index, UInt32 Count, Int8 Values)		jsdumpheap	JSDumpHeapBulkNode	Always		
+Microsoft-IE-JSDumpHeap	4	0	JSDumpHeapBulkAttribute(UInt32 Index, UInt32 Count, Int8 Values)		jsdumpheap	JSDumpHeapBulkAttribute	Always		
+Microsoft-IE-JSDumpHeap	5	0	JSDumpHeapBulkEdge(UInt32 Index, UInt32 Count, Int8 Values)		jsdumpheap	JSDumpHeapBulkEdge	Always		
+Microsoft-IE-JSDumpHeap	6	0	JSDumpHeapStringTable(UInt32 Index, UInt32 Count, Int8 Values)		jsdumpheap	JSDumpHeapStringTable	Always		
+Microsoft-IE-JSDumpHeap	7	0	JSDumpHeapDoubleTable(UInt32 Index, UInt32 Count, Int8 Values)		jsdumpheap	JSDumpHeapDoubleTable	Always		

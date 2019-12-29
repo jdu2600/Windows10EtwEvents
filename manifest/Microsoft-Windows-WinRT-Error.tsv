@@ -1,0 +1,5 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-WinRT-Error	1	0	OriginateError(Int32 HRESULT, UnicodeString ErrorMesage)		WinRTError	OriginateError	Informational		
+Microsoft-Windows-WinRT-Error	2	0	OriginateLanguageError(Int32 HRESULT, UnicodeString ErrorMesage, Pointer LanguageErrorPointer)		WinRTError	OriginateLanguageError	Informational		
+Microsoft-Windows-WinRT-Error	3	0	TransformError(Int32 OriginalHRESULT, Int32 NewHRESULT, UnicodeString ErrorMesage)		WinRTError	TransformError	Informational		
+Microsoft-Windows-WinRT-Error	4	0	ClearError()		WinRTError	ClearError	Informational		

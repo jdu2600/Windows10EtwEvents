@@ -1,0 +1,18 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-VAN	8001	0	InitStart()	Start		Init	Informational		
+Microsoft-Windows-VAN	8002	0	InitStop()	Stop		Init	Informational		
+Microsoft-Windows-VAN	8005	0	ShowFlyoutFromTrayStart()	Start		ShowFlyoutFromTray	Informational		
+Microsoft-Windows-VAN	8006	0	ShowFlyoutFromTrayStop()	Stop		ShowFlyoutFromTray	Informational		
+Microsoft-Windows-VAN	8007	0	ShowCFEStart()	Start	VAN_Performance	ShowCFE	Informational		
+Microsoft-Windows-VAN	8008	0	ShowCFEStop()	Stop		ShowCFE	Informational		
+Microsoft-Windows-VAN	8009	0	DisconnectStart()	Start		Disconnect	Informational		
+Microsoft-Windows-VAN	8010	0	DisconnectStop()	Stop		Disconnect	Informational		
+Microsoft-Windows-VAN	8012	0	CFEConnectFlowFinished()		VAN_Performance	CFEConnectFlowFinished	Informational		
+Microsoft-Windows-VAN	8013	0	NetworkStatus_Limited()		VAN_Performance Aoac	NetworkStatus_Limited	Informational		
+Microsoft-Windows-VAN	8014	0	NetworkStatus_Connected()		VAN_Performance Aoac	NetworkStatus_Connected	Informational		
+Microsoft-Windows-VAN	8015	0	LoadPreCFEStart()	Start	VAN_Performance	LoadPreCFE	Informational		
+Microsoft-Windows-VAN	8016	0	LoadPreCFEStop()	Stop	VAN_Performance	LoadPreCFE	Informational		
+Microsoft-Windows-VAN	8017	0	ExpandNetworkStart()	Start	VAN_Performance	ExpandNetwork	Informational		
+Microsoft-Windows-VAN	8018	0	ExpandNetworkStop()	Stop	VAN_Performance	ExpandNetwork	Informational		
+Microsoft-Windows-VAN	8019	0	DisplayContextMenuStart()	Start	VAN_Performance	DisplayContextMenu	Informational		
+Microsoft-Windows-VAN	8020	0	DisplayContextMenuStop()	Stop	VAN_Performance	DisplayContextMenu	Informational		

@@ -1,0 +1,46 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-wmvdecod	0	0	wmvdecod_VC1_DecodeTaskStart(UInt64 PictureID, Int32 FrameType, Int32 TaskType)	Start		wmvdecod_VC1_DecodeTask	Informational		
+Microsoft-Windows-wmvdecod	1	0	wmvdecod_VC1_DecodeTaskStop()	Stop		wmvdecod_VC1_DecodeTask	Informational		
+Microsoft-Windows-wmvdecod	2	0	wmvdecod_InitStart(UInt32 FourCC, Int32 Width, Int32 Height)	Start		wmvdecod_Init	Informational		
+Microsoft-Windows-wmvdecod	3	0	wmvdecod_InitStop()	Stop		wmvdecod_Init	Informational		
+Microsoft-Windows-wmvdecod	4	0	wmvdecod_setExtendedFormatStart(UInt32 FormatSize, Binary Format)	Start		wmvdecod_setExtendedFormat	Informational		
+Microsoft-Windows-wmvdecod	5	0	wmvdecod_setExtendedFormatStop()	Stop		wmvdecod_setExtendedFormat	Informational		
+Microsoft-Windows-wmvdecod	6	0	wmvdecod_ProcessInputStart(UInt32 SampleSizeInBytes, Int64 SampleTime, Int64 SampleDuration)	Start		wmvdecod_ProcessInput	Informational		
+Microsoft-Windows-wmvdecod	7	0	wmvdecod_ProcessInputStop(UInt32 VOP, UInt32 Frame)	Stop		wmvdecod_ProcessInput	Informational		
+Microsoft-Windows-wmvdecod	8	0	wmvdecod_ProcessInput(UInt32 VOP, UInt32 Frame, Int64 SampleTime, Int64 SampleDuration)			wmvdecod_ProcessInput	Informational		
+Microsoft-Windows-wmvdecod	9	0	wmvdecod_ProcessOutputStart()	Start		wmvdecod_ProcessOutput	Informational		
+Microsoft-Windows-wmvdecod	10	0	wmvdecod_ProcessOutputStop(Int64 SampleTime, Int64 SampleDuration)	Stop		wmvdecod_ProcessOutput	Informational		
+Microsoft-Windows-wmvdecod	11	0	wmvdecod_LoopFilterStart()	Start		wmvdecod_LoopFilter	Informational		
+Microsoft-Windows-wmvdecod	12	0	wmvdecod_LoopFilterStop()	Stop		wmvdecod_LoopFilter	Informational		
+Microsoft-Windows-wmvdecod	13	0	wmvdecod_DeblockingStart(UInt32 Level)	Start		wmvdecod_Deblocking	Informational		
+Microsoft-Windows-wmvdecod	14	0	wmvdecod_DeblockingStop()	Stop		wmvdecod_Deblocking	Informational		
+Microsoft-Windows-wmvdecod	15	0	wmvdecod_ProcessOutputStart15()	Start		wmvdecod_ProcessOutput	Informational		
+Microsoft-Windows-wmvdecod	16	0	wmvdecod_ProcessOutputStop16()	Stop		wmvdecod_ProcessOutput	Informational		
+Microsoft-Windows-wmvdecod	17	0	wmvdecod_ColorConvStart()	Start		wmvdecod_ColorConv	Informational		
+Microsoft-Windows-wmvdecod	18	0	wmvdecod_ColorConvStop()	Stop		wmvdecod_ColorConv	Informational		
+Microsoft-Windows-wmvdecod	19	0	wmvdecod_DXVA2_GetBufferStop()	Stop		wmvdecod_DXVA2_GetBuffer	Informational		
+Microsoft-Windows-wmvdecod	20	0	wmvdecod_DXVA2_GetBufferStop20(Int32 TypeIndex, UInt32 BufferSize)	Stop		wmvdecod_DXVA2_GetBuffer	Informational		
+Microsoft-Windows-wmvdecod	21	0	wmvdecod_DXVA2_ReleaseBufferStop(Int32 TypeIndex)	Stop		wmvdecod_DXVA2_ReleaseBuffer	Informational		
+Microsoft-Windows-wmvdecod	22	0	wmvdecod_DXVA2_ReleaseBufferStop22()	Stop		wmvdecod_DXVA2_ReleaseBuffer	Informational		
+Microsoft-Windows-wmvdecod	23	0	wmvdecod_DXVA2Stop()	Stop		wmvdecod_DXVA2	Informational		
+Microsoft-Windows-wmvdecod	24	0	wmvdecod_DXVA2Stop24()	Stop		wmvdecod_DXVA2	Informational		
+Microsoft-Windows-wmvdecod	25	0	wmvdecod_DXVA2Stop25()	Stop		wmvdecod_DXVA2	Informational		
+Microsoft-Windows-wmvdecod	26	0	wmvdecod_DXVA2Stop26()	Stop		wmvdecod_DXVA2	Informational		
+Microsoft-Windows-wmvdecod	27	0	wmvdecod_DXVA2_BeginFrameStop()	Stop		wmvdecod_DXVA2_BeginFrame	Informational		
+Microsoft-Windows-wmvdecod	28	0	wmvdecod_DXVA2_BeginFrameStop28()	Stop		wmvdecod_DXVA2_BeginFrame	Informational		
+Microsoft-Windows-wmvdecod	29	0	wmvdecod_DXVA2_EndFrameStop()	Stop		wmvdecod_DXVA2_EndFrame	Informational		
+Microsoft-Windows-wmvdecod	30	0	wmvdecod_DXVA2_EndFrameStop30()	Stop		wmvdecod_DXVA2_EndFrame	Informational		
+Microsoft-Windows-wmvdecod	31	0	wmvdecod_DXVA2_ExecuteStop()	Stop		wmvdecod_DXVA2_Execute	Informational		
+Microsoft-Windows-wmvdecod	32	0	wmvdecod_DXVA2_ExecuteStop32()	Stop		wmvdecod_DXVA2_Execute	Informational		
+Microsoft-Windows-wmvdecod	33	0	wmvdecod_DXVA2_MFSampleOutStart(UInt32 SampleIndex)	Start		wmvdecod_DXVA2_MFSampleOut	Informational		
+Microsoft-Windows-wmvdecod	34	0	wmvdecod_DXVA2_MFSampleReturnStart(UInt32 SampleIndex)	Start		wmvdecod_DXVA2_MFSampleReturn	Informational		
+Microsoft-Windows-wmvdecod	35	0	wmvdecod_FormatChangeStart(Int32 OrigWidth, Int32 OrigHeight, UInt32 OrigAspectRatioX, UInt32 OrigAspectRatioY, Int32 NewWidth, Int32 NewHeight, UInt32 NewAspectRatioX, UInt32 NewAspectRatioY)	Start		wmvdecod_FormatChange	Informational		
+Microsoft-Windows-wmvdecod	36	0	wmvdecod_MonitorSwitchStart(UInt32 SwitchType)	Start		wmvdecod_MonitorSwitch	Informational		
+Microsoft-Windows-wmvdecod	37	0	wmvdecod_QualityManagerStart(Int64 rtLagTime, UInt32 dwDropModeCurrent, UInt32 dwPostModeCurrent, UInt32 dwDropModeNew, UInt32 dwPostModeNew)	Start		wmvdecod_QualityManager	Informational		
+Microsoft-Windows-wmvdecod	38	0	wmvdecod_MFMessages_D3DStart(UInt32 D3DAWARE)	Start		wmvdecod_MFMessages_D3D	Informational		
+Microsoft-Windows-wmvdecod	39	0	wmvdecod_MFMessages_BeginStreamingStart()	Start		wmvdecod_MFMessages_BeginStreaming	Informational		
+Microsoft-Windows-wmvdecod	40	0	wmvdecod_MFMessages_EndStreamingStart()	Start		wmvdecod_MFMessages_EndStreaming	Informational		
+Microsoft-Windows-wmvdecod	41	0	wmvdecod_MFMessages_DrainStart()	Start		wmvdecod_MFMessages_Drain	Informational		
+Microsoft-Windows-wmvdecod	42	0	wmvdecod_MFMessages_FlushStart()	Start		wmvdecod_MFMessages_Flush	Informational		
+Microsoft-Windows-wmvdecod	43	0	wmvdecod_DXVA_EncryptFrameStart()	Start		wmvdecod_DXVA_EncryptFrame	Informational		
+Microsoft-Windows-wmvdecod	44	0	wmvdecod_DXVA_EncryptFrameStop()	Stop		wmvdecod_DXVA_EncryptFrame	Informational		

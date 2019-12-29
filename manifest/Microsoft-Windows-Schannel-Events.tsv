@@ -1,0 +1,25 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Schannel-Events	257	0	AcquireCredentialHandleStart()	Start		AcquireCredentialHandle	Informational		
+Microsoft-Windows-Schannel-Events	258	0	AcquireCredentialHandleStop(HexInt32 ReturnValue)	Stop		AcquireCredentialHandle	Informational		
+Microsoft-Windows-Schannel-Events	513	0	AcceptSecurityContextStart(Pointer CredHandle, Pointer ContextHandle)	Start		AcceptSecurityContext	Informational		
+Microsoft-Windows-Schannel-Events	514	0	AcceptSecurityContextStop(Pointer ContextHandle, HexInt32 ReturnValue)	Stop		AcceptSecurityContext	Informational		
+Microsoft-Windows-Schannel-Events	769	0	MemoryAllocationAllocate(Pointer Address, HexInt32 AllocationSize)	Allocate		MemoryAllocation	Informational		
+Microsoft-Windows-Schannel-Events	770	0	MemoryAllocationFree(Pointer Address)	Free		MemoryAllocation	Informational		
+Microsoft-Windows-Schannel-Events	1025	0	CAPI2CallsStart()	Start		CAPI2Calls	Informational		
+Microsoft-Windows-Schannel-Events	1026	0	CAPI2CallsStop()	Stop		CAPI2Calls	Informational		
+Microsoft-Windows-Schannel-Events	1027	0	CAPI2CallsStart1027()	Start		CAPI2Calls	Informational		
+Microsoft-Windows-Schannel-Events	1028	0	CAPI2CallsStop1028()	Stop		CAPI2Calls	Informational		
+Microsoft-Windows-Schannel-Events	1029	0	CAPI2CallsStart1029()	Start		CAPI2Calls	Informational		
+Microsoft-Windows-Schannel-Events	1030	0	CAPI2CallsStop1030()	Stop		CAPI2Calls	Informational		
+Microsoft-Windows-Schannel-Events	1031	0	CAPI2CallsStart1031()	Start		CAPI2Calls	Informational		
+Microsoft-Windows-Schannel-Events	1032	0	CAPI2CallsStop1032()	Stop		CAPI2Calls	Informational		
+Microsoft-Windows-Schannel-Events	1033	0	CAPI2CallsStart1033()	Start		CAPI2Calls	Informational		
+Microsoft-Windows-Schannel-Events	1034	0	CAPI2CallsStop1034()	Stop		CAPI2Calls	Informational		
+Microsoft-Windows-Schannel-Events	1281	0	PKCryptoStart()	Start		PKCrypto	Informational		
+Microsoft-Windows-Schannel-Events	1282	0	PKCryptoStop()	Stop		PKCrypto	Informational		
+Microsoft-Windows-Schannel-Events	1283	0	PKCryptoStart1283()	Start		PKCrypto	Informational		
+Microsoft-Windows-Schannel-Events	1284	0	PKCryptoStop1284()	Stop		PKCrypto	Informational		
+Microsoft-Windows-Schannel-Events	1537	0	FreeCredentialHandleStart(Pointer CredHandle)	Start		FreeCredentialHandle	Informational		
+Microsoft-Windows-Schannel-Events	1538	0	FreeCredentialHandleStop()	Stop		FreeCredentialHandle	Informational		
+Microsoft-Windows-Schannel-Events	1793	0	DeleteSecurityContextStart(Pointer ContextHandle, UnicodeString TargetName)	Start		DeleteSecurityContext	Informational		
+Microsoft-Windows-Schannel-Events	1794	0	DeleteSecurityContextStop()	Stop		DeleteSecurityContext	Informational		

@@ -1,0 +1,118 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-MediaEngine	100	0	MediaFoundationTransferFrameStart(UInt32 id)	Start		MediaFoundationTransferFrame	Verbose		
+Microsoft-Windows-MediaEngine	101	0	MediaFoundationTransferFrameStop(UInt32 id, HexInt32 hr)	Stop		MediaFoundationTransferFrame	Verbose		
+Microsoft-Windows-MediaEngine	102	0	MediaFoundationTransferFrameRemoteStart(UInt32 id)	Start		MediaFoundationTransferFrameRemote	Verbose		
+Microsoft-Windows-MediaEngine	103	0	MediaFoundationTransferFrameRemoteStop(UInt32 id, HexInt32 hr)	Stop		MediaFoundationTransferFrameRemote	Verbose		
+Microsoft-Windows-MediaEngine	104	0	MediaFoundationInitialize(UInt32 id, HexInt32 hr)			MediaFoundationInitialize	Informational		
+Microsoft-Windows-MediaEngine	105	0	MediaFoundationLifetimeStart(UInt32 id)	Start		MediaFoundationLifetime	Informational		
+Microsoft-Windows-MediaEngine	106	0	MediaFoundationPlaybackRateChange(UInt32 id, Float rate)			MediaFoundationPlaybackRateChange	Informational		
+Microsoft-Windows-MediaEngine	107	0	MediaFoundationPlayStart(UInt32 id)	Start		MediaFoundationPlay	Informational		
+Microsoft-Windows-MediaEngine	108	0	MediaFoundationPlayStop(UInt32 id, HexInt32 hr)	Stop		MediaFoundationPlay	Informational		
+Microsoft-Windows-MediaEngine	109	0	MediaFoundationPauseStart(UInt32 id)	Start		MediaFoundationPause	Informational		
+Microsoft-Windows-MediaEngine	110	0	MediaFoundationPauseStop(UInt32 id, HexInt32 hr)	Stop		MediaFoundationPause	Informational		
+Microsoft-Windows-MediaEngine	111	0	MediaFoundationSeekStart(UInt32 id, Float rate)	Start		MediaFoundationSeek	Informational		
+Microsoft-Windows-MediaEngine	112	0	MediaFoundationSeekStop(UInt32 id, HexInt32 hr)	Stop		MediaFoundationSeek	Informational		
+Microsoft-Windows-MediaEngine	113	0	MediaFoundationLifetimeStop(UInt32 id)	Stop		MediaFoundationLifetime	Informational		
+Microsoft-Windows-MediaEngine	114	0	MediaFoundationDroppedFrame(UInt32 id, UInt32 location, Int64 pts, Int64 clock)			MediaFoundationDroppedFrame	Verbose		
+Microsoft-Windows-MediaEngine	115	0	MediaFoundationPresentedFrame(UInt32 id, Int64 pts, Int64 clock)			MediaFoundationPresentedFrame	Verbose		
+Microsoft-Windows-MediaEngine	116	0	MediaFoundationPresent_SubmittedFrame(Pointer object, Int64 sampleTime, Int64 QPC, Int64 Ahead)			MediaFoundationPresent_SubmittedFrame	Verbose		
+Microsoft-Windows-MediaEngine	117	0	MediaFoundationPresent_QueuedFrame(Pointer object, Int64 sampleTime, Int64 QPC, Int64 QPC_snapped, UInt32 PresentFlags, UInt32 SyncInterval, UInt32 Repeat, Int64 Now, Int32 DeltaToTarget_MS, UInt32 PresentCount, UInt32 FrameCount)			MediaFoundationPresent_QueuedFrame	Verbose		
+Microsoft-Windows-MediaEngine	118	0	MediaFoundationPresent_CompletedFrame(Pointer object, Int64 sampleTime, Int64 QPC_target, Int64 QPC_actual, Int64 QPC_actual_behind, Int64 FramePeriod, Int32 FrameAdjustment, Int32 PresentCount, Int32 FrameCount, Float RatioAverage)			MediaFoundationPresent_CompletedFrame	Verbose		
+Microsoft-Windows-MediaEngine	119	0	MediaFoundationVideoFrameGlitch(Pointer object, Int64 sampleTime, Int32 FramesLate)			MediaFoundationVideoFrameGlitch	Verbose		
+Microsoft-Windows-MediaEngine	120	0	MediaFoundationPresentAtSleep(Pointer object)			MediaFoundationPresentAtSleep	Verbose		
+Microsoft-Windows-MediaEngine	121	0	PerfTrack:MediaFoundationPlay(UInt64 object, UInt32 protected, UInt32 width, UInt32 height)			PerfTrack:MediaFoundationPlay	Informational		
+Microsoft-Windows-MediaEngine	123	0	PerfTrack:MediaFoundationPlayCancelled(UInt64 object, UInt32 protected, UInt32 width, UInt32 height)			PerfTrack:MediaFoundationPlayCancelled	Informational		
+Microsoft-Windows-MediaEngine	125	0	PerfTrack:FirstFrameAfterPlayPresented(UInt64 object, UInt32 protected, UInt32 width, UInt32 height)			PerfTrack:FirstFrameAfterPlayPresented	Informational		
+Microsoft-Windows-MediaEngine	127	0	MediaFoundationPresent_QueuedFrameStats(Pointer object, UInt32 Length, UInt32 Queued, UInt32 Free, Int64 DeltaToTarget, Int64 SubmittedAheadDelta, Int64 TimeInQueue, Int64 MinLatency, Int32 MaxLatency, Int64 FramePeriod, Int64 sampleTime, Int64 TargetQPC, Int32 HistoryPresents)			MediaFoundationPresent_QueuedFrameStats	Verbose		
+Microsoft-Windows-MediaEngine	128	0	MediaFoundationSuspend(UInt32 id, Boolean paused)			MediaFoundationSuspend	Informational		
+Microsoft-Windows-MediaEngine	129	0	MediaFoundationRestore(UInt32 id, Boolean resumed)			MediaFoundationRestore	Informational		
+Microsoft-Windows-MediaEngine	130	0	MediaFoundationNotVisible(UInt32 id, Boolean thinning)			MediaFoundationNotVisible	Informational		
+Microsoft-Windows-MediaEngine	131	0	MediaFoundationNotVisibleTimer(UInt32 id, Boolean thinning)			MediaFoundationNotVisibleTimer	Informational		
+Microsoft-Windows-MediaEngine	132	0	MediaFoundationVisible(UInt32 id, Boolean resumed)			MediaFoundationVisible	Informational		
+Microsoft-Windows-MediaEngine	133	0	MediaFoundationVisible133(UInt32 id, Int32 priority)			MediaFoundationVisible	Informational		
+Microsoft-Windows-MediaEngine	134	0	PerfTrack:MediaFoundationVideoGlitch(UInt32 NumGlitches)			PerfTrack:MediaFoundationVideoGlitch	Informational		
+Microsoft-Windows-MediaEngine	135	0	SaveimageStart(Pointer object)	Start		Saveimage	Verbose		
+Microsoft-Windows-MediaEngine	136	0	SaveimageStop(Pointer object, UInt32 NativeWidth, UInt32 NativeHeight, UInt32 EncodedWidth, UInt32 EncodedHeight, UInt32 EncodedSize, UInt32 ErrorCode)	Stop		Saveimage	Verbose		
+Microsoft-Windows-MediaEngine	137	0	SetSourceoperationStart(Pointer object)	Start		SetSourceoperation	Verbose		
+Microsoft-Windows-MediaEngine	138	0	SetSourceoperationStop(Pointer object, UInt32 ErrorCode)	Stop		SetSourceoperation	Verbose		
+Microsoft-Windows-MediaEngine	139	0	MediaFoundationVideoFrameEarly(Pointer object, Int64 sampleTime, Int32 FramesEarly)			MediaFoundationVideoFrameEarly	Verbose		
+Microsoft-Windows-MediaEngine	140	0	MediaFoundationPresent_ProcessVSync(Pointer object, Int64 QPC_Prev, Int64 Delta_us, Int32 Delta_Frames, Int32 InputFrameIndex, Int32 FrameIndex, Float PreviousFramerate, Float Framerate, Int64 QPC_Actual, Int64 QPC_Smoothed, Int64 QPC_SmoothedNonQuant, Boolean Accepted)			MediaFoundationPresent_ProcessVSync	Verbose		
+Microsoft-Windows-MediaEngine	141	0	MediaFoundationPresent_GetCorrelatedTimeStart(Pointer object)	Start		MediaFoundationPresent_GetCorrelatedTime	Verbose		
+Microsoft-Windows-MediaEngine	142	0	MediaFoundationPresent_IgnoreVSync(Pointer object, Int64 QPC, Int64 Delta, Int32 Frames)			MediaFoundationPresent_IgnoreVSync	Verbose		
+Microsoft-Windows-MediaEngine	143	0	MediaFoundationRequestNetwork(Pointer object, Boolean Requested, UInt32 ReferenceCounter)			MediaFoundationRequestNetwork	Informational		
+Microsoft-Windows-MediaEngine	144	0	BatchoperationStart(Pointer object)	Start		Batchoperation	Verbose		
+Microsoft-Windows-MediaEngine	145	0	BatchoperationStop(Pointer object)	Stop		Batchoperation	Verbose		
+Microsoft-Windows-MediaEngine	146	0	DecodeSwapchainCreated(Pointer object, Pointer Swapchain, Pointer TextureArray)			DecodeSwapchainCreated	Informational		
+Microsoft-Windows-MediaEngine	147	0	YUVSwapchainConfigured(Pointer object, Pointer Swapchain, Int32 SrcRect_Left, Int32 SrcRect_Top, Int32 SrcRect_Right, Int32 SrcRect_Bottom, Int32 DstRect_Left, Int32 DstRect_Top, Int32 DstRect_Right, Int32 DstRect_Bottom, Int32 DstSize_Width, Int32 DstRect_Height)			YUVSwapchainConfigured	Informational		
+Microsoft-Windows-MediaEngine	148	0	DecodeSwapchainDestroyed(Pointer object, Pointer Swapchain, UInt32 SwapchainState)			DecodeSwapchainDestroyed	Informational		
+Microsoft-Windows-MediaEngine	149	0	DecodeSwapchainNotUsed(Pointer object, UInt32 SwapchainState)			DecodeSwapchainNotUsed	Informational		
+Microsoft-Windows-MediaEngine	151	0	MediaFoundationSeek(UInt32 id, Float rate)			MediaFoundationSeek	Informational		
+Microsoft-Windows-MediaEngine	152	0	MediaFoundationPresent_QualityNotify(Pointer object, UInt32 NumGlitches, Int64 SampleTime, Int64 GlitchDuration)			MediaFoundationPresent_QualityNotify	Verbose		
+Microsoft-Windows-MediaEngine	153	0	ContentFramerateDetected(Pointer object, UInt64 FrameDuration)			ContentFramerateDetected	Informational		
+Microsoft-Windows-MediaEngine	154	0	CustomRefreshRateRequested(Pointer object, UInt64 FrameDuration, UInt64 RefreshDuration)			CustomRefreshRateRequested	Informational		
+Microsoft-Windows-MediaEngine	155	0	CustomRefreshRateEnabled(Pointer object, UInt64 RequestedRefreshDuration, UInt64 ActualRefreshDuration)			CustomRefreshRateEnabled	Informational		
+Microsoft-Windows-MediaEngine	156	0	CustomRefreshRateDisabled(Pointer object, UInt32 State)			CustomRefreshRateDisabled	Informational		
+Microsoft-Windows-MediaEngine	157	0	CustomRefreshRateStateChange(Pointer object, UInt32 State)			CustomRefreshRateStateChange	Verbose		
+Microsoft-Windows-MediaEngine	158	0	MediaFoundationUpdateVideo(Pointer object, Int32 Dst_left, Int32 Dst_top, Int32 Dst_right, Int32 Dst_bottom, Float Src_left, Float Src_top, Float Src_right, Float Src_bottom, Int32 flags)			MediaFoundationUpdateVideo	Verbose		
+Microsoft-Windows-MediaEngine	159	0	Normal(non_decode)SwapchainCreated(Pointer object, Pointer Swapchain, UInt32 Format, UInt32 Width, UInt32 Height, UInt32 Backbuffers, UInt32 Flags)			Normal(non_decode)SwapchainCreated	Informational		
+Microsoft-Windows-MediaEngine	160	0	MediaEngineSampleReceived(Pointer object, Pointer Sample, Int64 TimeStamp, Int64 Duration, Int32 FirstFrameReady, Int32 Dropped)			MediaEngineSampleReceived	Verbose		
+Microsoft-Windows-MediaEngine	161	0	MediaEnginePurgedFrames(Pointer object, Int32 Count)			MediaEnginePurgedFrames	Verbose		
+Microsoft-Windows-MediaEngine	162	0	MediaEngineYUVSwapchainQueue(Pointer object, Int32 Count)			MediaEngineYUVSwapchainQueue	Verbose		
+Microsoft-Windows-MediaEngine	163	0	MediaEngineGPUSwapchainWaitStart(Pointer object)	Start		MediaEngineGPUSwapchainWait	Verbose		
+Microsoft-Windows-MediaEngine	164	0	MediaEngineGPUSwapchainWaitStop(Pointer object)	Stop		MediaEngineGPUSwapchainWait	Verbose		
+Microsoft-Windows-MediaEngine	165	0	MediaEngineGetPresentStats(Pointer object, UInt32 hr, Int32 PresentCount, Int32 PresentRefreshCount, Int32 SyncRefreshCount, UInt64 SyncQPC_us, Int32 CompMode, Int32 Duration)			MediaEngineGetPresentStats	Verbose		
+Microsoft-Windows-MediaEngine	166	0	MediaEnginePruneHistory(Pointer object, Int32 PresentCount)			MediaEnginePruneHistory	Verbose		
+Microsoft-Windows-MediaEngine	167	0	MediaFoundationPresent_InitVSyncRefreshRate(Pointer object, Float FrameRate, Int32 Ratio, Int32 MaxRatio, Int32 Reason)			MediaFoundationPresent_InitVSyncRefreshRate	Verbose		
+Microsoft-Windows-MediaEngine	168	0	MediaFoundationPresent_ClockSmooth(Pointer object, Int64 ClockTime0_us, Int64 QPC0_us, Int64 SmoothedQPC0_us, Int64 QPCDelta_us, Int32 WindowCount, Int64 WindowWidth_us, Boolean Accepted)			MediaFoundationPresent_ClockSmooth	Verbose		
+Microsoft-Windows-MediaEngine	169	0	MediaEngineQuantizeFrame(Pointer object, Int64 sampleTime_us, Int64 OrigTargetQPC_us, Int64 TargetQPC_us, Int64 DeltaQPC_us)			MediaEngineQuantizeFrame	Verbose		
+Microsoft-Windows-MediaEngine	170	0	UpdateLongRunningoperation(Pointer object, Int32 newState, Int32 oldState)			UpdateLongRunningoperation	Verbose		
+Microsoft-Windows-MediaEngine	171	0	MediaFoundationPresent_MapSample(Pointer object, Int64 QPCnow_us, Float rate, Int64 ClockTime0_us, Int64 QPC0_us, Int64 SampleTime_us, Int64 SampleQPC_us, Int64 SampleQPCAhead_us)			MediaFoundationPresent_MapSample	Verbose		
+Microsoft-Windows-MediaEngine	172	0	MediaFoundationPresent_GetCorrelatedTimeStop(Pointer object, Int64 QPCnow_us, Int64 ClockTime0_us, Int64 QPC0_us, Int64 ApproxClockJitter_us)	Stop		MediaFoundationPresent_GetCorrelatedTime	Verbose		
+Microsoft-Windows-MediaEngine	173	0	MediaFoundationPresent_ProcessFlipMode(Pointer object, Int64 SampleTime, Int64 LastQueuedQPC, Int64 TargetQPC, Int64 nowQPC, Int64 AheadQPC, Int32 Delta_Frames, Int32 AdjustFrames, UInt32 PresentCount, UInt32 FrameCount, Int64 FramePeriod)			MediaFoundationPresent_ProcessFlipMode	Verbose		
+Microsoft-Windows-MediaEngine	200	0	EMENeedKey(UInt32 length, Binary data)			EMENeedKey	Informational		
+Microsoft-Windows-MediaEngine	201	0	EMEMediaKeys(UnicodeString keysystem, UnicodeString defaultCdmStorePath, UnicodeString inprivateCdmStorePath, Pointer object, UInt32 ErrorCode)			EMEMediaKeys	Informational		
+Microsoft-Windows-MediaEngine	202	0	EMEMediaKeySessionStart(UnicodeString sessionId, UnicodeString keySystem, UnicodeString type, UInt32 length, Binary data, UInt32 ErrorCode)	Start		EMEMediaKeySession	Informational		
+Microsoft-Windows-MediaEngine	203	0	EMEMediaKeySessionStop(UnicodeString sessionId)	Stop		EMEMediaKeySession	Informational		
+Microsoft-Windows-MediaEngine	204	0	EMEKeyMessageStart(UnicodeString sessionId, UnicodeString url, UInt32 length, Binary data)	Start		EMEKeyMessage	Informational		
+Microsoft-Windows-MediaEngine	205	0	EMEKeyMessage(UnicodeString sessionId, UInt16 code, UInt32 systemError)			EMEKeyMessage	Informational		
+Microsoft-Windows-MediaEngine	206	0	EMEKeyMessageStop(UnicodeString sessionId)	Stop		EMEKeyMessage	Informational		
+Microsoft-Windows-MediaEngine	207	0	EMEKeyMessageStart207(UnicodeString sessionId, UInt32 length, Binary data, UInt32 ErrorCode)	Start		EMEKeyMessage	Informational		
+Microsoft-Windows-MediaEngine	208	0	EMEKeysAttribute(Pointer object)			EMEKeysAttribute	Informational		
+Microsoft-Windows-MediaEngine	209	0	ContentEnablerStart(GUID enabletype, UInt32 ErrorCode)	Start		ContentEnabler	Informational		
+Microsoft-Windows-MediaEngine	210	0	ContentEnablerStop(UInt32 ErrorCode)	Stop		ContentEnabler	Informational		
+Microsoft-Windows-MediaEngine	212	0	BatchingReason(Pointer object, Boolean Ok, Int32 Bits)			BatchingReason	Verbose		
+Microsoft-Windows-MediaEngine	213	0	MediaFoundationSubtitleQueued(Pointer buffer, Int64 sampleTime, Int64 sampleDuration)			MediaFoundationSubtitleQueued	Verbose		
+Microsoft-Windows-MediaEngine	214	0	EngineEnded(UInt32 id)			EngineEnded	Informational		
+Microsoft-Windows-MediaEngine	215	0	MediaFoundationPresent_Delay(Pointer object, UInt32 Delay, Int64 TimeToDeadline, UInt32 Location)			MediaFoundationPresent_Delay	Verbose		
+Microsoft-Windows-MediaEngine	216	0	PresentTimerStart(Pointer Object, UInt32 Period)	Start		PresentTimer	Verbose		
+Microsoft-Windows-MediaEngine	217	0	PresentTimerStop(Pointer Object, UInt32 Period)	Stop		PresentTimer	Verbose		
+Microsoft-Windows-MediaEngine	218	0	PresentTimeCriticalStart(Pointer Object, Int64 TimeDelta)	Start		PresentTimeCritical	Verbose		
+Microsoft-Windows-MediaEngine	219	0	PresentTimeCriticalStop(Pointer Object, Int64 TimeDelta)	Stop		PresentTimeCritical	Verbose		
+Microsoft-Windows-MediaEngine	220	0	TimedTextDtvCCSampleDecodeTaskStart(Pointer object, Int64 SampleStartTime, Int64 SampleEndTime)	Start		TimedTextDtvCCSampleDecodeTask	Informational		
+Microsoft-Windows-MediaEngine	221	0	TimedTextDtvCCSampleDecodeTaskStop(Pointer object, Int64 CueStartTime, Int64 CueEndTime, Int64 CueTicket)	Stop		TimedTextDtvCCSampleDecodeTask	Informational		
+Microsoft-Windows-MediaEngine	222	0	TimedTextSendCueTaskStart(Pointer object, Int64 SampleStartTime, Int64 SampleEndTime)	Start		TimedTextSendCueTask	Informational		
+Microsoft-Windows-MediaEngine	223	0	TimedTextSendCueTaskStop(Pointer object, Int64 SampleStartTime, Int64 SampleEndTime)	Stop		TimedTextSendCueTask	Informational		
+Microsoft-Windows-MediaEngine	224	0	OPMOpenStart()	Start		OPMOpen	Informational		
+Microsoft-Windows-MediaEngine	225	0	OPMOpenStop()	Stop		OPMOpen	Informational		
+Microsoft-Windows-MediaEngine	226	0	OPMExecuteCmdStart()	Start		OPMExecuteCmd	Informational		
+Microsoft-Windows-MediaEngine	227	0	OPMExecuteCmdStop()	Stop		OPMExecuteCmd	Informational		
+Microsoft-Windows-MediaEngine	228	0	OPMExecuteQueryStart()	Start		OPMExecuteQuery	Informational		
+Microsoft-Windows-MediaEngine	229	0	OPMExecuteQueryStop()	Stop		OPMExecuteQuery	Informational		
+Microsoft-Windows-MediaEngine	230	0	OPMProcessCertificateStart()	Start		OPMProcessCertificate	Informational		
+Microsoft-Windows-MediaEngine	231	0	OPMProcessCertificateStop()	Stop		OPMProcessCertificate	Informational		
+Microsoft-Windows-MediaEngine	232	0	OPMGetPublicKeyStart()	Start		OPMGetPublicKey	Informational		
+Microsoft-Windows-MediaEngine	233	0	OPMGetPublicKeyStop()	Stop		OPMGetPublicKey	Informational		
+Microsoft-Windows-MediaEngine	234	0	TeardownStart()	Start		Teardown	Informational		
+Microsoft-Windows-MediaEngine	235	0	TeardownStop()	Stop		Teardown	Informational		
+Microsoft-Windows-MediaEngine	236	0	Resizedswapchain(UInt32 Width, UInt32 Height, UInt32 Backbuffers, UInt32 Format, UInt32 Flags)			Resizedswapchain	Informational		
+Microsoft-Windows-MediaEngine	237	0	EMEMediaKeySessionStop237(UnicodeString sessionId)	Stop		EMEMediaKeySession	Informational		
+Microsoft-Windows-MediaEngine	238	0	EMEMediaKeySessionStop238(UnicodeString sessionId, UnicodeString keySystem, UInt32 length, Binary data)	Stop		EMEMediaKeySession	Informational		
+Microsoft-Windows-MediaEngine	239	0	EMEMediaKeySessionStop239(UnicodeString sessionId)	Stop		EMEMediaKeySession	Informational		
+Microsoft-Windows-MediaEngine	240	0	EMENeedKey_122(UInt32 length, Binary data)			EMENeedKey_122	Informational		
+Microsoft-Windows-MediaEngine	241	0	EMEMediaKeySessionStart241(UInt32 SessionType, UnicodeString keySystem, UInt32 UseDistinctiveIdentifier)	Start		EMEMediaKeySession	Informational		
+Microsoft-Windows-MediaEngine	242	0	EMEKeyMessage2Start(UnicodeString sessionId, UInt32 MessageType, UnicodeString url, UInt32 length, Binary data)	Start		EMEKeyMessage2	Informational		
+Microsoft-Windows-MediaEngine	243	0	EMEMediaKeySessionStop243(UnicodeString sessionId)	Stop		EMEMediaKeySession	Informational		
+Microsoft-Windows-MediaEngine	244	0	EMEMediaKeys244(UInt32 length, Binary data)			EMEMediaKeys	Informational		
+Microsoft-Windows-MediaEngine	245	0	EMEMediaKeys245(UnicodeString keysystem, Pointer CDMAccess, Pointer CDMCustomConfig, Pointer MediaKeysObject, UInt32 SoftwareOverride)			EMEMediaKeys	Informational		
+Microsoft-Windows-MediaEngine	246	0	EMEMediaKeySystemAccess(UnicodeString keysystem, UInt32 configCount, UInt32 selectedConfigCount, Pointer object)			EMEMediaKeySystemAccess	Informational		
+Microsoft-Windows-MediaEngine	247	0	PresentRestart(Pointer Object, UInt32 PresentCount)			PresentRestart	Verbose		

@@ -1,0 +1,141 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Kernel-Processor-Power	1	0	IdleStatesError(UInt32 Processor)			IdleStatesError	Error		
+Microsoft-Windows-Kernel-Processor-Power	2	0	PerfStatesError(UInt32 Processor)			PerfStatesError	Error		
+Microsoft-Windows-Kernel-Processor-Power	3	0	ThrottleStatesError(UInt32 Processor)			ThrottleStatesError	Error		
+Microsoft-Windows-Kernel-Processor-Power	4	0	Summary(UInt32 Processor, UInt32 IdleStateCount, UInt32 PerfStateCount, UInt32 ThrottleStateCount, UInt16 IdleState, Int32 PerfState)			Summary	Informational		
+Microsoft-Windows-Kernel-Processor-Power	5	0	IdleStatesErrata()			IdleStatesErrata	Error		
+Microsoft-Windows-Kernel-Processor-Power	6	0	PerfStatesErrata()			PerfStatesErrata	Error		
+Microsoft-Windows-Kernel-Processor-Power	7	0	LongCapInfo(UInt32 Processor, UInt32 CapDurationInSeconds, UInt32 PpcChanges, UInt32 TpcChanges)			LongCapInfo	Warning		
+Microsoft-Windows-Kernel-Processor-Power	8	0	QuickCapInfo(UInt32 Processor, UInt32 CapDurationInSeconds, UInt32 PpcChanges, UInt32 TpcChanges)			QuickCapInfo	Warning		
+Microsoft-Windows-Kernel-Processor-Power	9	0	DomainPerfStateChange(UInt32 State, UInt32 Speed, UInt16 GroupCount, UInt8 Group)		Perf	DomainPerfStateChange	Informational		
+Microsoft-Windows-Kernel-Processor-Power	9	1	DomainPerfStateChange_V1(UInt32 State, UInt32 Speed, UInt16 GroupCount, Int16 Group, UInt32 Performance)		Perf	DomainPerfStateChange	Informational		
+Microsoft-Windows-Kernel-Processor-Power	9	2	DomainPerfStateChange_V2(UInt32 State, UInt32 Speed, UInt16 GroupCount, UInt32 Group, UInt32 Performance, UInt32 MinPercent, UInt32 MaxPercent, UInt32 TolerancePercent)		Perf	DomainPerfStateChange	Informational		
+Microsoft-Windows-Kernel-Processor-Power	10	0	ProcessorPerfStateChange(UInt32 State, UInt32 Speed, UInt16 Group, UInt8 Number)		Perf	ProcessorPerfStateChange	Informational		
+Microsoft-Windows-Kernel-Processor-Power	10	1	ProcessorPerfStateChange_V1(UInt32 State, UInt32 Speed, UInt16 Group, UInt8 Number, UInt32 Performance)		Perf	ProcessorPerfStateChange	Informational		
+Microsoft-Windows-Kernel-Processor-Power	10	2	ProcessorPerfStateChange_V2(UInt32 State, UInt32 Speed, UInt16 Group, UInt8 Number, UInt32 Performance, UInt32 TolerancePercent)		Perf	ProcessorPerfStateChange	Informational		
+Microsoft-Windows-Kernel-Processor-Power	11	0	PerfCheckStart(UInt64 PpmCheckTime)	Start	Diag	PerfCheck	Verbose		
+Microsoft-Windows-Kernel-Processor-Power	11	1	PerfCheckStart_V1(UInt64 PpmCheckTime, UInt64 AdjustedCheckTime, UInt32 StartPhase)	Start	Diag	PerfCheck	Verbose		
+Microsoft-Windows-Kernel-Processor-Power	12	0	RecordedUtility(UInt64 PpmCheckTime, UInt64 IdleTime, UInt64 BusyTime, UInt32 Frequency, UInt16 Group, UInt8 Number)		Diag	RecordedUtility	Verbose		
+Microsoft-Windows-Kernel-Processor-Power	12	1	RecordedUtility_V1(UInt64 PpmCheckTime, UInt64 IdleTime, UInt64 BusyTime, UInt32 Frequency, UInt16 Group, UInt8 Number, UInt32 DeliveredPerformance, UInt16 Utility, UInt16 AffinitizedUtility, UInt8 FrequencySensitivity)		Diag	RecordedUtility	Verbose		
+Microsoft-Windows-Kernel-Processor-Power	12	2	RecordedUtility_V2(UInt64 PpmCheckTime, UInt64 IdleTime, UInt64 BusyTime, UInt32 Frequency, UInt16 Group, UInt8 Number, UInt32 DeliveredPerformance, UInt16 Utility, UInt16 AffinitizedUtility, UInt8 FrequencySensitivity, UInt8 BufferingPercent, UInt64 StallTime)		Diag	RecordedUtility	Verbose		
+Microsoft-Windows-Kernel-Processor-Power	13	0	ExpectedUtility(UInt64 PpmCheckTime, UInt32 IdleTimeInMs, UInt32 BusyTimeInMs, UInt32 ExcessBusyTimeInMs, UInt32 Frequency, UInt16 Group, UInt8 Number)		Diag	ExpectedUtility	Informational		
+Microsoft-Windows-Kernel-Processor-Power	14	0	ParkCore(UInt64 PpmCheckTime, UInt16 Group, UInt8 Number)		Perf Diag	ParkCore	Informational		
+Microsoft-Windows-Kernel-Processor-Power	15	0	UnparkCore(UInt64 PpmCheckTime, UInt16 Group, UInt8 Number)		Perf Diag	UnparkCore	Informational		
+Microsoft-Windows-Kernel-Processor-Power	16	0	PerfCheckStop(UInt64 PpmCheckTime)	Stop	Diag	PerfCheck	Verbose		
+Microsoft-Windows-Kernel-Processor-Power	18	0	ProcessorPerfStateChange18(UInt32 State, UInt32 Speed, UInt16 Group, UInt8 Number)		Perf	ProcessorPerfStateChange	Informational		
+Microsoft-Windows-Kernel-Processor-Power	18	1	ProcessorPerfStateChange18_V1(UInt32 State, UInt32 Speed, UInt16 Group, UInt8 Number, UInt32 Performance)		Perf	ProcessorPerfStateChange	Informational		
+Microsoft-Windows-Kernel-Processor-Power	18	2	ProcessorPerfStateChange18_V2(UInt32 State, UInt32 Speed, UInt16 Group, UInt8 Number, UInt32 Performance, UInt32 TolerancePercent)		Perf	ProcessorPerfStateChange	Informational		
+Microsoft-Windows-Kernel-Processor-Power	19	0	IdleAccountingRundown(UInt32 StateCount, UInt32 TotalTransitions, UInt32 ResetCount, UInt32 Pad, UInt64 StartTime, UInt32 State, UInt16 Group, UInt8 Number)		Diag PowerDiagnostics	IdleAccountingRundown	Informational		
+Microsoft-Windows-Kernel-Processor-Power	19	1	IdleAccountingRundown_V1(UInt32 StateCount, UInt32 TotalTransitions, UInt32 ResetCount, UInt32 AbortCount, UInt64 StartTime, Int64 State, UInt16 Group, UInt8 Number, UInt64 IdleTime)		Diag PowerDiagnostics	IdleAccountingRundown	Informational		
+Microsoft-Windows-Kernel-Processor-Power	19	2	IdleAccountingRundown_V2(UInt32 StateCount, UInt32 TotalTransitions, UInt32 ResetCount, UInt32 AbortCount, UInt64 StartTime, Float State, UInt16 Group, UInt8 Number, UInt64 IdleTime, UInt32 SelectionCount, SID SelectionAccounting)		Diag PowerDiagnostics	IdleAccountingRundown	Informational		
+Microsoft-Windows-Kernel-Processor-Power	20	0	ProcessorFirmwareRundown(UInt32 FeaturesPresent, UInt32 FeaturesAccessed, UInt32 FeaturesValidated, UInt16 Group, UInt8 Number)		Diag PowerDiagnostics	ProcessorFirmwareRundown	Informational		
+Microsoft-Windows-Kernel-Processor-Power	21	0	CStateDomainFirmwareRundown(UInt32 DomainId, UInt32 MemberCount, UInt32 MembersEnumerated)		Diag PowerDiagnostics	CStateDomainFirmwareRundown	Informational		
+Microsoft-Windows-Kernel-Processor-Power	22	0	PTStateDomainFirmwareRundown(UInt32 DomainId, UInt32 MemberCount, UInt32 MembersEnumerated)		Diag PowerDiagnostics	PTStateDomainFirmwareRundown	Informational		
+Microsoft-Windows-Kernel-Processor-Power	23	0	Summary23(UInt16 Group, UInt8 Number, UInt32 IdleStateCount, UInt32 PerfStateCount, UInt32 ThrottleStateCount, Int32 IdleState, UInt32 PerfState)		Diag PowerDiagnostics	Summary	Informational		
+Microsoft-Windows-Kernel-Processor-Power	24	0	IdleStatesErrata24()		Diag PowerDiagnostics	IdleStatesErrata	Error		
+Microsoft-Windows-Kernel-Processor-Power	25	0	PerfStatesErrata25()		Diag PowerDiagnostics	PerfStatesErrata	Error		
+Microsoft-Windows-Kernel-Processor-Power	26	0	Summary26(UInt16 Group, UInt8 Number, UInt32 IdleStateCount, UInt32 PerfStateCount, UInt32 ThrottleStateCount, Int32 IdleState, UInt32 PerfState)			Summary	Informational		
+Microsoft-Windows-Kernel-Processor-Power	26	1	Summary26_V1(UInt16 Group, UInt8 Number, UInt32 IdleStateCount, UInt32 PerfStateCount, UInt32 ThrottleStateCount, Int32 IdleState, UInt32 PerfState)			Summary	Informational		
+Microsoft-Windows-Kernel-Processor-Power	27	0	ThrottleStatesErrata()			ThrottleStatesErrata	Error		
+Microsoft-Windows-Kernel-Processor-Power	28	0	ThrottleStatesErrata28()		Diag PowerDiagnostics	ThrottleStatesErrata	Error		
+Microsoft-Windows-Kernel-Processor-Power	29	0	PccSummary(UInt8 MajorVersion, UInt8 MinorVersion, UInt8 MinPerfPercent, UInt8 MinThrottlePercent)			PccSummary	Informational		
+Microsoft-Windows-Kernel-Processor-Power	30	0	PccSummary30(UInt8 MajorVersion, UInt8 MinorVersion, UInt8 MinPerfPercent, UInt8 MinThrottlePercent)		Diag PowerDiagnostics	PccSummary	Informational		
+Microsoft-Windows-Kernel-Processor-Power	31	0	PccErrata()			PccErrata	Error		
+Microsoft-Windows-Kernel-Processor-Power	32	0	PccErrata32()		Diag PowerDiagnostics	PccErrata	Error		
+Microsoft-Windows-Kernel-Processor-Power	33	0	PccError(UInt16 Group, UInt8 Number)			PccError	Error		
+Microsoft-Windows-Kernel-Processor-Power	34	0	IdleStatesError34(UInt16 Group, UInt8 Number)			IdleStatesError	Error		
+Microsoft-Windows-Kernel-Processor-Power	34	1	IdleStatesError34_V1(UInt16 Group, UInt8 Number)			IdleStatesError	Error		
+Microsoft-Windows-Kernel-Processor-Power	35	0	PerfStatesError35(UInt16 Group, UInt8 Number)			PerfStatesError	Error		
+Microsoft-Windows-Kernel-Processor-Power	35	1	PerfStatesError35_V1(UInt16 Group, UInt8 Number)			PerfStatesError	Error		
+Microsoft-Windows-Kernel-Processor-Power	36	0	ThrottleStatesError36(UInt16 Group, UInt8 Number)			ThrottleStatesError	Error		
+Microsoft-Windows-Kernel-Processor-Power	36	1	ThrottleStatesError36_V1(UInt16 Group, UInt8 Number)			ThrottleStatesError	Error		
+Microsoft-Windows-Kernel-Processor-Power	37	0	LongCapInfo37(UInt16 Group, UInt8 Number, UInt32 CapDurationInSeconds, UInt32 PpcChanges, UInt32 TpcChanges, UInt32 PccChanges)			LongCapInfo	Warning		
+Microsoft-Windows-Kernel-Processor-Power	37	1	LongCapInfo37_V1(UInt16 Group, UInt8 Number, UInt32 CapDurationInSeconds, UInt32 PpcChanges, UInt32 TpcChanges, UInt32 PccChanges)			LongCapInfo	Warning		
+Microsoft-Windows-Kernel-Processor-Power	38	0	QuickCapInfo38(UInt16 Group, UInt8 Number, UInt32 CapDurationInSeconds, UInt32 PpcChanges, UInt32 TpcChanges, UInt32 PccChanges)			QuickCapInfo	Warning		
+Microsoft-Windows-Kernel-Processor-Power	39	0	NotifyPStates(UInt16 Group, UInt8 Number, UInt32 Cap)		Diag	NotifyPStates	Informational		
+Microsoft-Windows-Kernel-Processor-Power	40	0	NotifyCStates(UInt16 Group, UInt8 Number)		Diag	NotifyCStates	Informational		
+Microsoft-Windows-Kernel-Processor-Power	41	0	NotifyTStates(UInt16 Group, UInt8 Number, UInt32 Cap)		Diag	NotifyTStates	Informational		
+Microsoft-Windows-Kernel-Processor-Power	42	0	PerfStatesRundown(UInt16 Group, UInt8 Number, UInt32 StateCount, UInt8 States)		Diag PowerDiagnostics	PerfStatesRundown	Informational		
+Microsoft-Windows-Kernel-Processor-Power	43	0	BiosPStatesRundown(UInt16 Group, UInt8 Number, UInt32 PBlockAddress, UInt8 PBlockLength, UInt32 ProcessorId, UInt32 ApicId, UInt32 Ppc, Float PctControl, Pointer PctStatus, UInt32 StateCount, HexInt64 PssStates)		Diag PowerDiagnostics	BiosPStatesRundown	Informational		
+Microsoft-Windows-Kernel-Processor-Power	44	0	BiosCStatesRundown(UInt16 Group, UInt8 Number, UInt16 FadtC2Latency, UInt16 FadtC3Latency, UInt32 CStateVersionInUse, UInt32 StateCount, Int32 CstStates)		Diag PowerDiagnostics	BiosCStatesRundown	Informational		
+Microsoft-Windows-Kernel-Processor-Power	45	0	BiosTStatesRundown(UInt16 Group, UInt8 Number, UInt8 FadtDutyWidth, UInt8 FadtDutyOffset, UInt32 Tpc, UInt32 TStateVersionInUse, UInt64 PtcControl, GUID PtcStatus, UInt32 StateCount, HexInt32 TssStates)		Diag PowerDiagnostics	BiosTStatesRundown	Informational		
+Microsoft-Windows-Kernel-Processor-Power	46	0	PccCapChange(UInt16 Group, UInt8 Number, UInt32 Cap)		Diag	PccCapChange	Informational		
+Microsoft-Windows-Kernel-Processor-Power	47	0	BiosCapChange(UInt16 Group, UInt8 Number, UInt32 Cap)		Diag	BiosCapChange	Informational		
+Microsoft-Windows-Kernel-Processor-Power	48	0	ThermalCapChange(UInt16 Group, UInt8 Number, UInt32 Cap)		Diag	ThermalCapChange	Informational		
+Microsoft-Windows-Kernel-Processor-Power	49	0	PerfCheckMakeup()	Makeup	Diag	PerfCheck	Verbose		
+Microsoft-Windows-Kernel-Processor-Power	50	0	LogicalProcessorIdlingCorePark(UInt32 Cap, Boolean IsApplied)		Diag Lpi	LogicalProcessorIdlingCorePark	Informational		
+Microsoft-Windows-Kernel-Processor-Power	51	0	LogicalProcessorIdlingRundown(UInt32 Cap, Boolean IsApplied)		Diag Lpi	LogicalProcessorIdlingRundown	Informational		
+Microsoft-Windows-Kernel-Processor-Power	52	0	LatencySensitivityHint(UInt32 HintType)		Diag	LatencySensitivityHint	Informational		
+Microsoft-Windows-Kernel-Processor-Power	53	0	ParkNodeRecordedStats(UInt16 Group, Pointer Affinity, UInt8 ConcurrentCores, UInt32 HistogramSize, UInt64 ConcurrencyHistogram)		Diag	ParkNodeRecordedStats	Verbose		
+Microsoft-Windows-Kernel-Processor-Power	53	1	ParkNodeRecordedStats_V1(UInt16 Group, Pointer Affinity, UInt8 ConcurrentCores, UInt32 HistogramSize, UInt64 ConcurrencyHistogram, UInt8 DistributeCores)		Diag	ParkNodeRecordedStats	Verbose		
+Microsoft-Windows-Kernel-Processor-Power	54	0	CpcError(UInt16 Group, UInt8 Number)			CpcError	Error		
+Microsoft-Windows-Kernel-Processor-Power	55	0	Summary2(UInt16 Group, UInt8 Number, UInt32 IdleStateCount, UInt32 IdleImplementation, UInt32 NominalFrequency, UInt32 MaximumPerformancePercent, UInt32 MinimumPerformancePercent, UInt32 MinimumThrottlePercent, UInt32 PerformanceImplementation)			Summary2	Informational		
+Microsoft-Windows-Kernel-Processor-Power	55	1	Summary2_V1(UInt16 Group, UInt8 Number, UInt32 IdleStateCount, UInt32 IdleImplementation, UInt32 NominalFrequency, UInt32 MaximumPerformancePercent, UInt32 MinimumPerformancePercent, UInt32 MinimumThrottlePercent, UInt32 PerformanceImplementation)			Summary2	Informational		
+Microsoft-Windows-Kernel-Processor-Power	56	0	Summary256(UInt16 Group, UInt8 Number, UInt32 IdleStateCount, UInt32 IdleImplementation, UInt32 NominalFrequency, UInt32 MaximumPerformancePercent, UInt32 MinimumPerformancePercent, UInt32 MinimumThrottlePercent, UInt32 PerformanceImplementation)		Diag PowerDiagnostics	Summary2	Informational		
+Microsoft-Windows-Kernel-Processor-Power	57	0	PepGetIdleStates(UInt16 Group, UInt8 Number, UInt32 MaximumCoordinatedProcessors, UInt32 StateCount, Int16 States)		Diag	PepGetIdleStates	Informational		
+Microsoft-Windows-Kernel-Processor-Power	58	0	PepGetIdleStates58(UInt16 Group, UInt8 Number, UInt32 MaximumCoordinatedProcessors, UInt32 StateCount, Int16 States)		Diag	PepGetIdleStates	Informational		
+Microsoft-Windows-Kernel-Processor-Power	59	0	PepQueryCapabilities(UInt16 Group, UInt8 Number, UInt32 FeedbackCounterCount, UInt32 IdleStateCount, Boolean PerformanceStatesSupported, Boolean ParkingSupported)		Diag	PepQueryCapabilities	Informational		
+Microsoft-Windows-Kernel-Processor-Power	60	0	PepQueryCapabilities60(UInt16 Group, UInt8 Number, UInt32 FeedbackCounterCount, UInt32 IdleStateCount, Boolean PerformanceStatesSupported, Boolean ParkingSupported)		Diag	PepQueryCapabilities	Informational		
+Microsoft-Windows-Kernel-Processor-Power	61	0	PepPerfConstraintChange(UInt16 Group, UInt8 Number, UInt32 GuaranteedPerformance, UInt32 LimitReasons)		Diag	PepPerfConstraintChange	Informational		
+Microsoft-Windows-Kernel-Processor-Power	62	0	PepPerfCapabilities(UInt16 Group, UInt8 Number, UInt32 FeedbackCount, UInt64 Feedback, UInt32 HighestPerformance, UInt32 NominalPerformance, UInt32 LowestNonlinearPerformance, UInt32 LowestPerformance, UInt32 DomainId, UInt32 DomainMembers)		Diag	PepPerfCapabilities	Informational		
+Microsoft-Windows-Kernel-Processor-Power	63	0	PepPerfCapabilities63(UInt16 Group, UInt8 Number, UInt32 FeedbackCount, UInt64 Feedback, UInt32 HighestPerformance, UInt32 NominalPerformance, UInt32 LowestNonlinearPerformance, UInt32 LowestPerformance, UInt32 DomainId, UInt32 DomainMembers)		Diag	PepPerfCapabilities	Informational		
+Microsoft-Windows-Kernel-Processor-Power	64	0	ProcessorPerformanceRundown(UInt16 Group, UInt8 Number, Boolean Parked, UInt32 BiosCap, UInt32 ThermalCap, UInt32 DesiredPerformance, UInt32 NominalFrequency)		Diag	ProcessorPerformanceRundown	Informational		
+Microsoft-Windows-Kernel-Processor-Power	64	1	ProcessorPerformanceRundown_V1(UInt16 Group, UInt8 Number, Boolean Parked, UInt32 BiosCap, UInt32 ThermalCap, UInt32 DesiredPerformance, UInt32 NominalFrequency, UInt32 MinPercent, UInt32 MaxPercent, UInt32 TolerancePercent, UInt32 DeliveredPerformance)		Diag PerfDiag	ProcessorPerformanceRundown	Informational		
+Microsoft-Windows-Kernel-Processor-Power	65	0	ParkNodeRundown(UInt16 Group, Pointer Affinity, Pointer Parked, UInt8 LpiCap)		Diag	ParkNodeRundown	Informational		
+Microsoft-Windows-Kernel-Processor-Power	65	1	ParkNodeRundown_V1(UInt16 Group, Pointer Affinity, Pointer Parked, UInt8 LpiCap, UInt8 ThermalCap)		Diag	ParkNodeRundown	Informational		
+Microsoft-Windows-Kernel-Processor-Power	66	0	ParkNodeCapChange(UInt16 Group, Pointer Affinity, UInt8 LpiCap)		Diag	ParkNodeCapChange	Informational		
+Microsoft-Windows-Kernel-Processor-Power	66	1	ParkNodeCapChange_V1(UInt16 Group, Pointer Affinity, UInt8 LpiCap, UInt8 ThermalCap)		Diag	ParkNodeCapChange	Informational		
+Microsoft-Windows-Kernel-Processor-Power	67	0	ProcessorIdleRundown(UInt16 Group, UInt8 Number, UInt32 Type, UInt32 StateCount)		Diag	ProcessorIdleRundown	Informational		
+Microsoft-Windows-Kernel-Processor-Power	67	1	ProcessorIdleRundown_V1(UInt16 Group, UInt8 Number, UInt32 Type, UInt32 StateCount, Int16 States)		Diag	ProcessorIdleRundown	Informational		
+Microsoft-Windows-Kernel-Processor-Power	68	0	ProcessorIdRundown(UInt16 Group, UInt8 Number, UInt32 AcpiId, UInt32 InterruptControllerId)		Diag	ProcessorIdRundown	Informational		
+Microsoft-Windows-Kernel-Processor-Power	68	1	ProcessorIdRundown_V1(UInt16 Group, UInt8 Number, UInt32 AcpiId, UInt32 InterruptControllerId, UInt32 ProcessorIndex)		Diag	ProcessorIdRundown	Informational		
+Microsoft-Windows-Kernel-Processor-Power	69	0	PepGetPlatformIdleStates(UInt32 PlatformIdleStateCount)		Diag	PepGetPlatformIdleStates	Informational		
+Microsoft-Windows-Kernel-Processor-Power	70	0	PepGetPlatformIdleStates70(UInt32 PlatformIdleStateCount)		Diag SleepStudy	PepGetPlatformIdleStates	Informational		
+Microsoft-Windows-Kernel-Processor-Power	71	0	PerfCheckFailedStart(UInt64 AdjustedCheckTime)	FailedStart	Diag	PerfCheck	Verbose		
+Microsoft-Windows-Kernel-Processor-Power	72	0	PlatformIdleAccountingRundown(UInt32 StateCount, UInt32 ResetCount, UInt64 TotalTransitions, UInt64 StartTime, UInt64 Reserved, UInt32 State, UInt16 Group, UInt8 Number)		Diag	PlatformIdleAccountingRundown	Informational		
+Microsoft-Windows-Kernel-Processor-Power	72	1	PlatformIdleAccountingRundown_V1(UInt32 StateCount, UInt32 ResetCount, UInt64 TotalTransitions, UInt64 StartTime, UInt64 Reserved, UInt64 State, UInt16 Group, UInt8 Number, UInt32 SelectionCount, SID SelectionAccounting)		Diag	PlatformIdleAccountingRundown	Informational		
+Microsoft-Windows-Kernel-Processor-Power	73	0	PlatformParkingPreference(UInt16 Group, Pointer Affinity, UInt8 UnparkCount, Pointer OSPreferencePark, Pointer OSPreferenceUnpark, Pointer PlatformPreferencePark, Pointer PlatformPreferenceUnpark)		Diag	PlatformParkingPreference	Informational		
+Microsoft-Windows-Kernel-Processor-Power	74	0	LowPowerScenarioChange(UInt32 PreviousActiveScenarioId, UInt32 NewActiveScenarioId)		Perf Diag	LowPowerScenarioChange	Informational		
+Microsoft-Windows-Kernel-Processor-Power	75	0	LowPowerScenarioRundown(UInt32 CurrentActiveScenarioId)		Perf Diag	LowPowerScenarioRundown	Informational		
+Microsoft-Windows-Kernel-Processor-Power	76	0	LowPowerScenarioInformationRundown(UInt32 ScenarioId, UInt32 PlatformIdleStateIndex)		Perf Diag	LowPowerScenarioInformationRundown	Informational		
+Microsoft-Windows-Kernel-Processor-Power	77	0	PepGetIdleStatesV2(UInt16 Group, UInt8 Number, UInt32 StateCount, UInt8 States)		Diag	PepGetIdleStatesV2	Informational		
+Microsoft-Windows-Kernel-Processor-Power	78	0	PepGetIdleStatesV2Rundown(UInt16 Group, UInt8 Number, UInt32 StateCount, UInt8 States)		Diag	PepGetIdleStatesV2Rundown	Informational		
+Microsoft-Windows-Kernel-Processor-Power	79	0	PepGetPlatformIdleState(UInt32 StateIndex, Int32 InitiatingProcessor, Boolean OneInitiator, UInt32 Latency, UInt32 BreakEvenDuration, UInt32 DependencyCount, Int64 Dependencies)		Diag	PepGetPlatformIdleState	Informational		
+Microsoft-Windows-Kernel-Processor-Power	80	0	PepGetPlatformIdleStateRundown(UInt32 StateIndex, Int32 InitiatingProcessor, Boolean OneInitiator, UInt32 Latency, UInt32 BreakEvenDuration, UInt32 DependencyCount, Int64 Dependencies)		Diag	PepGetPlatformIdleStateRundown	Informational		
+Microsoft-Windows-Kernel-Processor-Power	81	0	DripsAccountingSnapshot(UInt8 ScenarioInstanceId, UInt32 DripsBucketsCount, Binary TotalTimes)		SleepStudy	DripsAccountingSnapshot	Informational		
+Microsoft-Windows-Kernel-Processor-Power	82	0	PlatformAccountingBucketIntervalsRundown(UInt32 IntervalLimitsCount, Binary IntervalLimits)		SleepStudy	PlatformAccountingBucketIntervalsRundown	Informational		
+Microsoft-Windows-Kernel-Processor-Power	83	0	PlatformIdleVetoIncrement(UInt32 StateIndex, UInt32 VetoReason)		Diag	PlatformIdleVetoIncrement	Informational		
+Microsoft-Windows-Kernel-Processor-Power	84	0	PlatformIdleVetoDecrement(UInt32 StateIndex, UInt32 VetoReason)		Diag	PlatformIdleVetoDecrement	Informational		
+Microsoft-Windows-Kernel-Processor-Power	85	0	ProcessorIdleVetoIncrement(UInt16 Group, UInt8 Number, UInt32 StateIndex, UInt32 VetoReason)		Diag	ProcessorIdleVetoIncrement	Informational		
+Microsoft-Windows-Kernel-Processor-Power	86	0	ProcessorIdleVetoDecrement(UInt16 Group, UInt8 Number, UInt32 StateIndex, UInt32 VetoReason)		Diag	ProcessorIdleVetoDecrement	Informational		
+Microsoft-Windows-Kernel-Processor-Power	87	0	PlatformIdleVetoRundown(UInt32 StateIndex, UInt32 VetoReason, UInt32 VetoCount)		Diag	PlatformIdleVetoRundown	Informational		
+Microsoft-Windows-Kernel-Processor-Power	88	0	ProcessorIdleVetoRundown(UInt16 Group, UInt8 Number, UInt32 StateIndex, UInt32 VetoReason, UInt32 VetoCount)		Diag	ProcessorIdleVetoRundown	Informational		
+Microsoft-Windows-Kernel-Processor-Power	89	0	StaticPolicyRundown(Boolean PerfBoostAtGuaranteed, UInt32 PerfIdealAggressiveIncreasePolicyThreshold, UInt32 PerfSingleStepSize, UInt32 PerfCalculateActualUtilization, Boolean PerfArtificialDomain, UInt32 LowLatencyScalingPercentage, Boolean ParkWithCoreGranularity, UInt32 MultiparkGranularity)		Diag	StaticPolicyRundown	Informational		
+Microsoft-Windows-Kernel-Processor-Power	90	0	PerfSelectProcessorState(UInt16 Group, UInt8 Number, UInt32 ResolvedUtilization, UInt32 Target, UInt32 ResolvedTarget, UInt32 Flags)		Algorithm	PerfSelectProcessorState	Informational		
+Microsoft-Windows-Kernel-Processor-Power	91	0	VetoNameRundown(UInt32 VetoReason, UnicodeString Name)		Diag	VetoNameRundown	Informational		
+Microsoft-Windows-Kernel-Processor-Power	92	0	PepGetCoordinatedIdleStates(UInt32 StateCount, AnsiString CoordinatedStates)		Diag	PepGetCoordinatedIdleStates	Informational		
+Microsoft-Windows-Kernel-Processor-Power	93	0	PepGetCoordinatedIdleStatesRundown(UInt32 StateCount, AnsiString CoordinatedStates)		Diag	PepGetCoordinatedIdleStatesRundown	Informational		
+Microsoft-Windows-Kernel-Processor-Power	94	0	PepGetCoordinatedDependency(UInt32 StateIndex, UInt32 DependencyIndex, Boolean ProcessorDependency, UInt16 TargetProcessor, UInt32 OptionCount, UInt32 Options)		Diag	PepGetCoordinatedDependency	Informational		
+Microsoft-Windows-Kernel-Processor-Power	95	0	PepGetCoordinatedDependencyRundown(UInt32 StateIndex, UInt32 DependencyIndex, Boolean ProcessorDependency, UInt16 TargetProcessor, UInt32 OptionCount, UInt32 Options)		Diag	PepGetCoordinatedDependencyRundown	Informational		
+Microsoft-Windows-Kernel-Processor-Power	96	0	MediaBufferingNotify(Boolean Engaged)		Algorithm	MediaBufferingNotify	Informational		
+Microsoft-Windows-Kernel-Processor-Power	97	0	ComputeEnergy(UInt32 EfficiencyClass, UInt64 EnergyInMicroJoules)		EnergyEstimation	ComputeEnergy	Informational		
+Microsoft-Windows-Kernel-Processor-Power	98	0	CoordinatedIdleRundown(UInt32 StateCount, AnsiString States)		Diag	CoordinatedIdleRundown	Informational		
+Microsoft-Windows-Kernel-Processor-Power	99	0	HeteroResponse(UInt16 Group, Pointer Affinity, UInt8 ProcCount, UInt32 ActualUtility, UInt64 EstimatedUtility, UInt64 ActiveTime, UInt8 CheckCount, UInt8 Decision, UInt8 IdealClass1Count, UInt8 ActualClass1Count, UInt32 Flags)		Algorithm	HeteroResponse	Verbose		
+Microsoft-Windows-Kernel-Processor-Power	100	0	PerfCheckStart100(UInt64 PpmCheckTime, UInt64 AdjustedCheckTime, UInt32 PipelineId)	Start	Diag	PerfCheck	Verbose		
+Microsoft-Windows-Kernel-Processor-Power	101	0	HeteroDistributeUtility(UInt16 Group, Pointer Affinity, UInt8 Class0FloorPerf, UInt8 Class1MinimumPerf)		Algorithm	HeteroDistributeUtility	Verbose		
+Microsoft-Windows-Kernel-Processor-Power	102	0	ProfileRegistered(UnicodeString Name, UInt8 Id, UInt8 Priority, UInt32 Flags, GUID Guid, UInt64 ActiveCount, UInt64 MaxActiveDurationInUs, UInt64 MinActiveDurationInUs, UInt64 TotalActiveDurationInUs)		Algorithm Profiles	ProfileRegistered	Informational		
+Microsoft-Windows-Kernel-Processor-Power	103	0	ProfileRundown(UnicodeString Name, UInt8 Id, UInt8 Priority, UInt32 Flags, GUID Guid, UInt64 ActiveCount, UInt64 MaxActiveDurationInUs, UInt64 MinActiveDurationInUs, UInt64 TotalActiveDurationInUs)		PowerDiagnostics Algorithm Profiles	ProfileRundown	Informational		
+Microsoft-Windows-Kernel-Processor-Power	104	0	ProfileChange(UInt8 PreviousProfileId, UInt8 NextProfileId)		Algorithm Profiles	ProfileChange	Informational		
+Microsoft-Windows-Kernel-Processor-Power	105	0	ProfileSettingChange(UInt8 ProfileId, AnsiString Name, UInt32 Type, UInt8 Class, GUID Guid, UInt32 ValueSize, Binary Value)		Algorithm Profiles	ProfileSettingChange	Informational		
+Microsoft-Windows-Kernel-Processor-Power	106	0	ProfileSettingRundown(UInt8 ProfileId, AnsiString Name, UInt32 Type, UInt8 Class, GUID Guid, UInt32 ValueSize, Binary Value)		PowerDiagnostics Algorithm Profiles	ProfileSettingRundown	Informational		
+Microsoft-Windows-Kernel-Processor-Power	107	0	ProfileStatusRundown(UInt32 Flags)		PowerDiagnostics Algorithm Profiles	ProfileStatusRundown	Informational		
+Microsoft-Windows-Kernel-Processor-Power	108	0	ProfileEnabled(UInt8 ProfileId)		Algorithm Profiles	ProfileEnabled	Informational		
+Microsoft-Windows-Kernel-Processor-Power	109	0	ProfileDisabled(UInt8 ProfileId)		Algorithm Profiles	ProfileDisabled	Informational		
+Microsoft-Windows-Kernel-Processor-Power	110	0	IdleDurationExpiration(UInt16 GroupCount, AnsiString Group)		Diag	IdleDurationExpiration	Informational		
+Microsoft-Windows-Kernel-Processor-Power	111	0	DeliveredPerfChange(UInt16 Group, UInt8 Number, UInt32 DeliveredPerformance)		PerfDiag	DeliveredPerfChange	Informational		
+Microsoft-Windows-Kernel-Processor-Power	111	1	DeliveredPerfChange_V1(UInt16 Group, UInt8 Number, UInt32 DeliveredPerformance, UInt64 DurationInUs)		PerfDiag	DeliveredPerfChange	Informational		
+Microsoft-Windows-Kernel-Processor-Power	112	0	ParkSelection(UInt16 Group, Pointer Processors, Pointer OldPark, Pointer NewPark, Pointer OverUtilizedSet, Pointer IsolatedCores, UInt8 IdealUnparked, UInt8 UnparkCount, UInt32 ParkReason)		Algorithm	ParkSelection	Verbose		
+Microsoft-Windows-Kernel-Processor-Power	113	0	ProcessorEnergyCounter(UInt16 Group, UInt8 Number, UInt32 CounterId, HexInt64 CounterValue)		EnergyEstimation	ProcessorEnergyCounter	Verbose		
+Microsoft-Windows-Kernel-Processor-Power	114	0	PackageEnergyCounter(UInt32 CounterId, HexInt64 CounterValue)		EnergyEstimation	PackageEnergyCounter	Verbose		
+Microsoft-Windows-Kernel-Processor-Power	115	0	ProcessorPreVetoAccountingRundown(UInt16 Group, UInt8 Number, UInt32 StateIndex, UInt32 VetoCodeCount, Int16 Accounting)		Diag	ProcessorPreVetoAccountingRundown	Verbose		
+Microsoft-Windows-Kernel-Processor-Power	116	0	PlatformPreVetoAccountingRundown(UInt32 StateIndex, UInt32 VetoCodeCount, Int8 Accounting)		Diag	PlatformPreVetoAccountingRundown	Verbose		

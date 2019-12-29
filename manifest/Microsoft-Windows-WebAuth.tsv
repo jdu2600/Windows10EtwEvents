@@ -1,0 +1,38 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-WebAuth	1000	0	NavigationStart(UnicodeString StartUrl, UnicodeString TerminateUrl)	Start	AuthHost	NavigationStart	Informational		
+Microsoft-Windows-WebAuth	1001	0	NavigationStart1001(UnicodeString StartUrl)	Start	AuthHost	NavigationStart	Informational		
+Microsoft-Windows-WebAuth	1002	0	NavigationStart1002(UnicodeString Url)	Start	AuthHost	NavigationStart	Informational		
+Microsoft-Windows-WebAuth	1003	0	NavigationStart1003(UnicodeString Url)	Start	AuthHost	NavigationStart	Informational		
+Microsoft-Windows-WebAuth	1010	0	NavigationCompleteStop(UnicodeString Url)	Stop	AuthHost	NavigationComplete	Informational		
+Microsoft-Windows-WebAuth	1011	0	NavigationCompleteStop1011(UnicodeString Url)	Stop	AuthHost	NavigationComplete	Informational		
+Microsoft-Windows-WebAuth	1020	0	NavigationRedirectStart(UnicodeString RedirectedUrl, UnicodeString OriginalUrl, UInt32 HttpStatusCode)	Start	AuthHost	NavigationRedirect	Informational		
+Microsoft-Windows-WebAuth	1021	0	NavigationNewWindowStart(UnicodeString Url, UnicodeString ReferrerUrl)	Start	AuthHost	NavigationNewWindow	Informational		
+Microsoft-Windows-WebAuth	1022	0	NavigationDelegateStart(UnicodeString Url)	Start	AuthHost	NavigationDelegate	Informational		
+Microsoft-Windows-WebAuth	1023	0	NavigationNewScriptEngineStart(UnicodeString Url)	Start	AuthHost	NavigationNewScriptEngine	Informational		
+Microsoft-Windows-WebAuth	1024	0	NavigationNewWindow(UnicodeString Url, UnicodeString ReferrerUrl)		AuthHost	NavigationNewWindow	Informational		
+Microsoft-Windows-WebAuth	1040	0	NavigationTerminateStop(UnicodeString Url, UnicodeString TerminateUrl)	Stop	AuthHost	NavigationTerminate	Informational		
+Microsoft-Windows-WebAuth	1041	0	NavigationTerminateStop1041(UnicodeString Title, UnicodeString Url, UnicodeString TerminateUrl)	Stop	AuthHost	NavigationTerminate	Informational		
+Microsoft-Windows-WebAuth	1042	0	NavigationTerminateStop1042()	Stop	AuthHost	NavigationTerminate	Informational		
+Microsoft-Windows-WebAuth	1043	0	NavigationTerminateStop1043(UnicodeString Post, UnicodeString Url, UnicodeString TerminateUrl)	Stop	AuthHost	NavigationTerminate	Informational		
+Microsoft-Windows-WebAuth	1050	0	NavigationErrorStop(UnicodeString Url, HexInt32 StatusCode)	Stop	AuthHost	NavigationError	Error		
+Microsoft-Windows-WebAuth	1051	0	NavigationErrorStop1051(UnicodeString Url, UInt32 HttpStatusCode)	Stop	AuthHost	NavigationError	Error		
+Microsoft-Windows-WebAuth	1100	0	SecurityProblem(UInt32 Problem)		AuthHost	SecurityProblem	Warning		
+Microsoft-Windows-WebAuth	1101	0	SecurityProblemStop(HexInt32 StatusCode)	Stop	AuthHost	SecurityProblem	Error		
+Microsoft-Windows-WebAuth	1200	0	SecurityManager(HexInt32 Action, UnicodeString Url)		AuthHost	SecurityManager	Verbose		
+Microsoft-Windows-WebAuth	1201	0	SecurityManager1201(HexInt32 Action, UnicodeString Url)		AuthHost	SecurityManager	Verbose		
+Microsoft-Windows-WebAuth	1202	0	SecurityManager1202(HexInt32 Action, UnicodeString Url)		AuthHost	SecurityManager	Warning		
+Microsoft-Windows-WebAuth	1203	0	SecurityManager1203(UnicodeString Url)		AuthHost	SecurityManager	Verbose		
+Microsoft-Windows-WebAuth	1204	0	SecurityManager1204(UnicodeString Url)		AuthHost	SecurityManager	Informational		
+Microsoft-Windows-WebAuth	1205	0	SecurityManager1205(UnicodeString Url)		AuthHost	SecurityManager	Informational		
+Microsoft-Windows-WebAuth	1206	0	SecurityManager1206(UnicodeString Url)		AuthHost	SecurityManager	Informational		
+Microsoft-Windows-WebAuth	1300	0	SecurityManager1300(GUID Clsid, UnicodeString Url)		AuthHost	SecurityManager	Informational		
+Microsoft-Windows-WebAuth	1301	0	SecurityManager1301(GUID Clsid, UnicodeString Url)		AuthHost	SecurityManager	Warning		
+Microsoft-Windows-WebAuth	1310	0	SecurityManager1310(GUID Clsid, UnicodeString Url)		AuthHost	SecurityManager	Informational		
+Microsoft-Windows-WebAuth	1311	0	SecurityManager1311(GUID Clsid, UnicodeString Url)		AuthHost	SecurityManager	Warning		
+Microsoft-Windows-WebAuth	1400	0	MetaTag(UnicodeString Content)		AuthHost	MetaTag	Informational		
+Microsoft-Windows-WebAuth	1401	0	MetaTag1401(UnicodeString Url)		AuthHost	MetaTag	Informational		
+Microsoft-Windows-WebAuth	1402	0	MetaTag1402(UnicodeString Content, HexInt32 ConvertedValue)		AuthHost	MetaTag	Informational		
+Microsoft-Windows-WebAuth	1403	0	MetaTag1403(UnicodeString Content)		AuthHost	MetaTag	Warning		
+Microsoft-Windows-WebAuth	1404	0	MetaTag1404(UnicodeString Url)		AuthHost	MetaTag	Informational		
+Microsoft-Windows-WebAuth	1405	0	MetaTag1405(UnicodeString Url)		AuthHost	MetaTag	Informational		
+Microsoft-Windows-WebAuth	1406	0	MetaTag1406(UnicodeString Url, HexInt32 StatusCode)		AuthHost	MetaTag	Error		

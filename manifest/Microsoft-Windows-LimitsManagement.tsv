@@ -1,0 +1,15 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-LimitsManagement	1	0	MonitorEnumerated(UInt64 Token, UInt32 Type, UInt32 LowerThreshold, UInt32 UpperThreshold, UInt32 Value, Boolean Mitigating, UnicodeString Name)			MonitorEnumerated	Informational		
+Microsoft-Windows-LimitsManagement	2	0	MonitorRundown(UInt64 Token, UInt32 Type, UInt32 LowerThreshold, UInt32 UpperThreshold, UInt32 Value, Boolean Mitigating, UnicodeString Name)			MonitorRundown	Informational		
+Microsoft-Windows-LimitsManagement	3	0	MonitorValueChange(UInt64 Token, UInt32 Value)			MonitorValueChange	Informational		
+Microsoft-Windows-LimitsManagement	4	0	MonitorMitigatingChange(UInt64 Token, Boolean Mitigating)			MonitorMitigatingChange	Informational		
+Microsoft-Windows-LimitsManagement	5	0	MonitorThresholdChange(UInt64 Token, UInt32 LowerThreshold, UInt32 UpperThreshold)			MonitorThresholdChange	Informational		
+Microsoft-Windows-LimitsManagement	6	0	MonitorRemoved(UInt64 Token)			MonitorRemoved	Informational		
+Microsoft-Windows-LimitsManagement	7	0	MitigationEvent(UInt32 Event, UInt32 Type, UInt32 LowerThreshold, UInt32 UpperThreshold, UInt32 Value, UnicodeString Initiator)			MitigationEvent	Informational		
+Microsoft-Windows-LimitsManagement	8	0	PolicyEnumerated(UInt64 Token, UnicodeString Name, UnicodeString Parameters)			PolicyEnumerated	Informational		
+Microsoft-Windows-LimitsManagement	9	0	PolicyRundown(UInt64 Token, UnicodeString Name, UnicodeString Parameters)			PolicyRundown	Informational		
+Microsoft-Windows-LimitsManagement	10	0	PolicyRemoved(UInt64 Token)			PolicyRemoved	Informational		
+Microsoft-Windows-LimitsManagement	11	0	MitigationEnumerated(UInt64 Token, UInt32 Type, UInt32 DisengagedValue, UInt32 FullyEngagedValue, UInt32 Value, UnicodeString Name)			MitigationEnumerated	Informational		
+Microsoft-Windows-LimitsManagement	12	0	MitigationRundown(UInt64 Token, UInt32 Type, UInt32 DisengagedValue, UInt32 FullyEngagedValue, UInt32 Value, UnicodeString Name)			MitigationRundown	Informational		
+Microsoft-Windows-LimitsManagement	13	0	MitigationValueChange(UInt64 Token, UInt32 Value)			MitigationValueChange	Informational		
+Microsoft-Windows-LimitsManagement	14	0	MitigationRemoved(UInt64 Token)			MitigationRemoved	Informational		

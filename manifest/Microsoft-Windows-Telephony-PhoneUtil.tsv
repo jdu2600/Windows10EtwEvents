@@ -1,0 +1,61 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Telephony-PhoneUtil	1	0	task_0(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		Error	task_0	Error		
+Microsoft-Windows-Telephony-PhoneUtil	2	0	task_02(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		keyword_400000000000	task_0	Warning		
+Microsoft-Windows-Telephony-PhoneUtil	600	0	task_0600(Int32 Prop_Int32_1, Int32 Prop_Int32_2)		MISC	task_0	Verbose		
+Microsoft-Windows-Telephony-PhoneUtil	607	0	task_0607(UInt32 brandingArea, UInt32 simState, UInt32 registrationState, UInt32 brandingFlags, UInt32 ids, UnicodeString brandingText)		MISC	task_0	Informational		
+Microsoft-Windows-Telephony-PhoneUtil	608	0	task_0608(Boolean Prop_Bool1)		MISC	task_0	Informational		
+Microsoft-Windows-Telephony-PhoneUtil	609	0	task_0609(Boolean Prop_Bool1)		MISC	task_0	Informational		
+Microsoft-Windows-Telephony-PhoneUtil	1040	0	AssistedDialStart()	Start	Performance	AssistedDial	Verbose		
+Microsoft-Windows-Telephony-PhoneUtil	1041	0	AssistedDialStop()	Stop	Performance	AssistedDial	Verbose		
+Microsoft-Windows-Telephony-PhoneUtil	1200	0	task_01200(UInt32 OperationId, AnsiString OperationContext, UInt32 OperationTimeout, UInt32 ElapsedTime)		Error	task_0	Error		
+Microsoft-Windows-Telephony-PhoneUtil	1201	0	task_01201(UInt32 OperationId, AnsiString OperationContext, UInt32 OperationActualTime)		Error	task_0	Error		
+Microsoft-Windows-Telephony-PhoneUtil	5000	0	task_05000(UInt32 Ordinal, Pointer Pointer)		SIMOM	task_0	Informational		
+Microsoft-Windows-Telephony-PhoneUtil	5001	0	task_05001(UInt32 Ordinal, Pointer Pointer)		SIMOM	task_0	Informational		
+Microsoft-Windows-Telephony-PhoneUtil	5002	0	task_05002(UInt32 Ordinal, Pointer Pointer)		SIMOM	task_0	Informational		
+Microsoft-Windows-Telephony-PhoneUtil	5003	0	task_05003(UInt32 Ordinal, Pointer Pointer)		SIMOM	task_0	Informational		
+Microsoft-Windows-Telephony-PhoneUtil	5004	0	task_05004(UInt32 Ordinal, Pointer ClientCallbacks, UInt32 Event)		keyword_800000000000	task_0	Informational		
+Microsoft-Windows-Telephony-PhoneUtil	5005	0	task_05005(UInt32 Ordinal, Pointer Pointer, GUID Guid)		keyword_800000000000	task_0	Informational		
+Microsoft-Windows-Telephony-PhoneUtil	5006	0	task_05006(UInt32 Ordinal, Pointer Pointer, GUID Guid)		keyword_800000000000	task_0	Informational		
+Microsoft-Windows-Telephony-PhoneUtil	5007	0	task_05007(UInt32 Ordinal)		keyword_800000000000	task_0	Informational		
+Microsoft-Windows-Telephony-PhoneUtil	5008	0	task_05008(UInt32 Ordinal, Pointer CanPointer, GUID CanGuid, Pointer ModemPointer, GUID ModemGuid)		keyword_800000000000	task_0	Informational		
+Microsoft-Windows-Telephony-PhoneUtil	5009	0	task_05009(UInt32 Ordinal, Pointer CanPointer, GUID CanGuid, Pointer ModemPointer, GUID ModemGuid)		keyword_800000000000	task_0	Informational		
+Microsoft-Windows-Telephony-PhoneUtil	5010	0	task_05010(UInt32 Ordinal, Pointer Pointer, GUID Guid)		keyword_800000000000	task_0	Informational		
+Microsoft-Windows-Telephony-PhoneUtil	5011	0	task_05011(UInt32 Ordinal, Pointer SlotPointer, UInt32 SlotIndex, Pointer ModemPointer, GUID ModemGuid)		keyword_800000000000	task_0	Informational		
+Microsoft-Windows-Telephony-PhoneUtil	5012	0	task_05012(UInt32 Ordinal, Pointer SlotPointer, UInt32 SlotIndex, Pointer ModemPointer, GUID ModemGuid)		keyword_800000000000	task_0	Informational		
+Microsoft-Windows-Telephony-PhoneUtil	5013	0	task_05013(UInt32 Ordinal, Pointer Pointer, GUID Guid)		keyword_800000000000	task_0	Informational		
+Microsoft-Windows-Telephony-PhoneUtil	5014	0	task_05014(UInt32 Ordinal, UInt32 Result, GUID CanGuid, Pointer SlotPointer, UInt32 SlotIndex)		keyword_800000000000	task_0	Informational		
+Microsoft-Windows-Telephony-PhoneUtil	5015	0	task_05015(UInt32 Ordinal, UInt32 State)		keyword_800000000000	task_0	Informational		
+Microsoft-Windows-Telephony-PhoneUtil	5016	0	task_05016(UInt32 Ordinal, Pointer SlotPointer, UInt32 SlotIndex, UInt32 SlotState)		keyword_800000000000	task_0	Informational		
+Microsoft-Windows-Telephony-PhoneUtil	5017	0	task_05017(UInt32 Ordinal, Pointer SlotPointer, UInt32 SlotIndex, Pointer UICCPointer)		keyword_800000000000	task_0	Informational		
+Microsoft-Windows-Telephony-PhoneUtil	5018	0	task_05018(UInt32 Ordinal, Pointer SlotPointer, UInt32 SlotIndex, Pointer UICCPointer)		keyword_800000000000	task_0	Informational		
+Microsoft-Windows-Telephony-PhoneUtil	5019	0	task_05019(UInt32 Ordinal, Pointer Pointer, UInt32 HexInt)		keyword_800000000000	task_0	Informational		
+Microsoft-Windows-Telephony-PhoneUtil	5020	0	task_05020(UInt32 Ordinal, Pointer Pointer)		keyword_800000000000	task_0	Informational		
+Microsoft-Windows-Telephony-PhoneUtil	5021	0	task_05021(UInt32 Ordinal, Pointer Pointer)		keyword_800000000000	task_0	Informational		
+Microsoft-Windows-Telephony-PhoneUtil	5022	0	task_05022(UInt32 Ordinal, Pointer Pointer)		keyword_400000000000	task_0	Warning		
+Microsoft-Windows-Telephony-PhoneUtil	5023	0	task_05023(UInt32 Ordinal, Pointer CanPointer, GUID CanGuid, UInt32 Count)		keyword_800000000000	task_0	Informational		
+Microsoft-Windows-Telephony-PhoneUtil	5024	0	task_05024(UInt32 Ordinal, Pointer Pointer1, UInt32 AppType, Pointer Pointer2)		keyword_800000000000	task_0	Informational		
+Microsoft-Windows-Telephony-PhoneUtil	5025	0	task_05025(UInt32 Ordinal, Pointer Pointer1, Pointer Pointer2)		keyword_800000000000	task_0	Informational		
+Microsoft-Windows-Telephony-PhoneUtil	5026	0	task_05026(UInt32 Ordinal, Pointer Pointer)		keyword_800000000000	task_0	Informational		
+Microsoft-Windows-Telephony-PhoneUtil	5027	0	task_05027(UInt32 Ordinal, Pointer UiccPointer, UInt32 Params, UInt32 Huiccapp, UInt32 KeyRef, UInt32 State, UInt32 VerifyCount, UInt32 UnblockCount)		keyword_800000000000	task_0	Informational		
+Microsoft-Windows-Telephony-PhoneUtil	5028	0	task_05028(UInt32 Ordinal, Pointer CanPointer, GUID CanGuid, UInt32 Count)		keyword_800000000000	task_0	Informational		
+Microsoft-Windows-Telephony-PhoneUtil	5029	0	task_05029(UInt32 Ordinal, Pointer ClientCallbacks, UInt32 State)		keyword_800000000000	task_0	Informational		
+Microsoft-Windows-Telephony-PhoneUtil	5031	0	task_05031(UInt32 Ordinal, GUID CanGuid, UInt32 LineIndex, Pointer LinePointer)		keyword_800000000000	task_0	Informational		
+Microsoft-Windows-Telephony-PhoneUtil	5032	0	task_05032(UInt32 Ordinal, GUID CanGuid, UInt32 LineIndex, Pointer LinePointer, UInt32 SystemType)		keyword_800000000000	task_0	Informational		
+Microsoft-Windows-Telephony-PhoneUtil	5033	0	task_05033(UInt32 Ordinal, GUID Guid, UInt32 Int)		keyword_800000000000	task_0	Informational		
+Microsoft-Windows-Telephony-PhoneUtil	5034	0	task_05034(UInt32 Ordinal, Pointer CanPointer, GUID CanGuid, UInt32 Params, UInt32 RoamingMode)		keyword_800000000000	task_0	Informational		
+Microsoft-Windows-Telephony-PhoneUtil	5035	0	task_05035(UInt32 Ordinal, UnicodeString String)		keyword_800000000000	task_0	Informational		
+Microsoft-Windows-Telephony-PhoneUtil	5036	0	task_05036(UInt32 Ordinal, Pointer CanPointer, GUID CanGuid, Pointer AppPointer)		keyword_800000000000	task_0	Informational		
+Microsoft-Windows-Telephony-PhoneUtil	5037	0	task_05037(UInt32 Ordinal, Pointer CanPointer, GUID CanGuid, Pointer AppPointer)		keyword_800000000000	task_0	Informational		
+Microsoft-Windows-Telephony-PhoneUtil	5038	0	task_05038(UInt32 Ordinal, Pointer Pointer)		keyword_800000000000	task_0	Informational		
+Microsoft-Windows-Telephony-PhoneUtil	5039	0	task_05039(UInt32 Ordinal, Pointer CanPointer, GUID CanGuid, Pointer AppPointer)		keyword_800000000000	task_0	Informational		
+Microsoft-Windows-Telephony-PhoneUtil	5040	0	task_05040(UInt32 Ordinal, Pointer Pointer)		keyword_800000000000	task_0	Informational		
+Microsoft-Windows-Telephony-PhoneUtil	5041	0	task_05041(UInt32 Ordinal, Pointer Pointer)		keyword_800000000000	task_0	Informational		
+Microsoft-Windows-Telephony-PhoneUtil	6000	0	task_06000(UInt64 Prop_HexInt64, UnicodeString Prop_String)		MISC	task_0	Verbose		
+Microsoft-Windows-Telephony-PhoneUtil	6001	0	task_06001(UInt32 Lhs, UInt32 Operator, UInt32 Rhs, UInt32 Rhs2, UInt32 Pass)		MISC	task_0	Verbose		
+Microsoft-Windows-Telephony-PhoneUtil	6002	0	task_06002(UInt32 Action, UInt32 Rhs)		MISC	task_0	Verbose		
+Microsoft-Windows-Telephony-PhoneUtil	6003	0	task_06003(UnicodeString Prop_String1, UnicodeString Prop_String2, Boolean Prop_Bool)		MISC	task_0	Verbose		
+Microsoft-Windows-Telephony-PhoneUtil	6004	0	task_06004(Int64 Prop_Int64_1)		keyword_800000000000	task_0	Informational		
+Microsoft-Windows-Telephony-PhoneUtil	6005	0	task_06005(Int32 Prop_Int32_1, Int32 Prop_Int32_2)		keyword_800000000000	task_0	Informational		
+Microsoft-Windows-Telephony-PhoneUtil	6006	0	task_06006(Int32 Prop_Int32_1, Int32 Prop_Int32_2)		keyword_800000000000	task_0	Informational		
+Microsoft-Windows-Telephony-PhoneUtil	7000	0	task_07000(UnicodeString actionName, Pointer this, UnicodeString keyName)		keyword_800000000000	task_0	Informational		
+Microsoft-Windows-Telephony-PhoneUtil	8000	0	task_08000(Int32 P1_Int, UnicodeString P2_UnicodeString)		keyword_800000000000	task_0	Informational		

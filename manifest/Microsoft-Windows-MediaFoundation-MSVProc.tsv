@@ -1,0 +1,20 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-MediaFoundation-MSVProc	100	0	MSVideoProcessoftMFT(D3D11)_CreateVideoProcessor(Pointer VideoDevice, Pointer VP, UInt32 RateConversionIndex, UInt32 PastFrames)			MSVideoProcessoftMFT(D3D11)_CreateVideoProcessor	Verbose		
+Microsoft-Windows-MediaFoundation-MSVProc	101	0	MSVideoProcessoftMFT(D3D11)_CreateInputView(Pointer Sample, UInt32 BufferIndex, HexInt32 hr, Pointer View)			MSVideoProcessoftMFT(D3D11)_CreateInputView	Verbose		
+Microsoft-Windows-MediaFoundation-MSVProc	102	0	MSVideoProcessoftMFT(D3D11)_CreateOutputView(Pointer Sample, UInt32 BufferIndex, HexInt32 hr, Pointer View)			MSVideoProcessoftMFT(D3D11)_CreateOutputView	Verbose		
+Microsoft-Windows-MediaFoundation-MSVProc	103	0	MSVideoProcessoftMFT(D3D11)_VideoProcessorBltStart(Pointer InputSample, UInt32 InputViewIndex, Pointer OutputSample, UInt32 InputFrameOrField, UInt32 OutputIndex, UInt32 OutputFrame, Int32 SrcWidth, Int32 SrcHeight, Int32 DestWidth, Int32 DestHeight, UInt32 SourceFourCC, UInt32 DestFourCC)	Start		MSVideoProcessoftMFT(D3D11)_VideoProcessorBlt	Verbose		
+Microsoft-Windows-MediaFoundation-MSVProc	104	0	MSVideoProcessoftMFT(D3D11)_VideoProcessorBltStop(Pointer OutputSample, HexInt32 hr)	Stop		MSVideoProcessoftMFT(D3D11)_VideoProcessorBlt	Verbose		
+Microsoft-Windows-MediaFoundation-MSVProc	105	0	MSVideoProcessoftMFT_Create/DestroyMFTStart(Pointer MSVProcObj)	Start		MSVideoProcessoftMFT_Create/DestroyMFT	Verbose		
+Microsoft-Windows-MediaFoundation-MSVProc	106	0	MSVideoProcessoftMFT_Create/DestroyMFTStop(Pointer MSVProcObj)	Stop		MSVideoProcessoftMFT_Create/DestroyMFT	Verbose		
+Microsoft-Windows-MediaFoundation-MSVProc	107	0	MSVideoProcessoftMFT_ProcessInputStart(Pointer MSVProcObj)	Start		MSVideoProcessoftMFT_ProcessInput	Verbose		
+Microsoft-Windows-MediaFoundation-MSVProc	108	0	MSVideoProcessoftMFT_ProcessInputStop(Pointer MSVProcObj, HexInt32 hr)	Stop		MSVideoProcessoftMFT_ProcessInput	Verbose		
+Microsoft-Windows-MediaFoundation-MSVProc	109	0	MSVideoProcessoftMFT_ProcessOutputStart(Pointer MSVProcObj)	Start		MSVideoProcessoftMFT_ProcessOutput	Verbose		
+Microsoft-Windows-MediaFoundation-MSVProc	110	0	MSVideoProcessoftMFT_ProcessOutputStop(Pointer MSVProcObj, HexInt32 hr)	Stop		MSVideoProcessoftMFT_ProcessOutput	Verbose		
+Microsoft-Windows-MediaFoundation-MSVProc	111	0	MSVideoProcessoftMFT_ColorConvStart(HexInt32 fourCCSrc, HexInt32 fourCCDst)	Start		MSVideoProcessoftMFT_ColorConv	Verbose		
+Microsoft-Windows-MediaFoundation-MSVProc	112	0	MSVideoProcessoftMFT_ColorConvStop()	Stop		MSVideoProcessoftMFT_ColorConv	Verbose		
+Microsoft-Windows-MediaFoundation-MSVProc	113	0	MSVideoProcessoftMFT_ResizerStart(HexInt32 fourCC, UInt32 srcWidth, UInt32 srcHeight, UInt32 dstWidth, UInt32 dstHeight)	Start		MSVideoProcessoftMFT_Resizer	Verbose		
+Microsoft-Windows-MediaFoundation-MSVProc	114	0	MSVideoProcessoftMFT_ResizerStop()	Stop		MSVideoProcessoftMFT_Resizer	Verbose		
+Microsoft-Windows-MediaFoundation-MSVProc	115	0	MSVideoProcessoftMFT_RotationStart(HexInt32 fourCC, UInt32 Rotation)	Start		MSVideoProcessoftMFT_Rotation	Verbose		
+Microsoft-Windows-MediaFoundation-MSVProc	116	0	MSVideoProcessoftMFT_RotationStop()	Stop		MSVideoProcessoftMFT_Rotation	Verbose		
+Microsoft-Windows-MediaFoundation-MSVProc	117	0	MSVideoProcessoftMFT_MirrorStart(HexInt32 fourCC, UInt32 Mirror)	Start		MSVideoProcessoftMFT_Mirror	Verbose		
+Microsoft-Windows-MediaFoundation-MSVProc	118	0	MSVideoProcessoftMFT_MirrorStop()	Stop		MSVideoProcessoftMFT_Mirror	Verbose		

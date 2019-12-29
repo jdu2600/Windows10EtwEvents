@@ -1,0 +1,76 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-OneX	1	0	API(UInt32 PortId)		API ut:Authentication	API	Informational		
+Microsoft-Windows-OneX	2	0	APIStart(UInt32 PortId)	Start	API LwtDiagnostic ut:Authentication	API	Informational		
+Microsoft-Windows-OneX	3	0	APIStop(UInt32 PortId)	Stop	API LwtDiagnostic ut:Authentication	API	Informational		
+Microsoft-Windows-OneX	4	0	EAP(UInt32 PortId, UInt32 WinError, UInt32 ReasonCode, UInt8 EAPMethodType, UnicodeString RootCauseString)		EAP LwtDiagnostic ut:Authentication	EAP	Error		
+Microsoft-Windows-OneX	5	0	EAP5(UInt32 PortId)		EAP LwtDiagnostic ut:Authentication	EAP	Warning		
+Microsoft-Windows-OneX	6	0	EAP6(UInt32 PortId, UInt32 WinError, UInt32 ReasonCode)		EAP LwtDiagnostic ut:Authentication	EAP	Error		
+Microsoft-Windows-OneX	7	0	EAP7(UInt32 PortId, UInt32 UserDataSize)		EAP ut:Authentication	EAP	Informational		
+Microsoft-Windows-OneX	8	0	EAP8(UInt32 PortId, UInt32 UserDataSize)		EAP ut:Authentication	EAP	Informational		
+Microsoft-Windows-OneX	9	0	EAP9(UInt32 PortId)		EAP LwtDiagnostic ut:Authentication	EAP	Informational		
+Microsoft-Windows-OneX	10	0	EAP10(UInt32 PortId, UInt32 Response)		EAP ut:Authentication	EAP	Informational		
+Microsoft-Windows-OneX	11	0	EAP11(UInt32 PortId)		EAP LwtDiagnostic ut:Authentication	EAP	Warning		
+Microsoft-Windows-OneX	12	0	EAP12(UInt32 ErrorCode, UInt32 Location, UInt32 Context)		EAP LwtDiagnostic ut:Authentication	EAP	Error		
+Microsoft-Windows-OneX	13	0	EAP13(UInt32 ErrorCode, UInt32 Location, UInt32 Context)		EAP LwtDiagnostic ut:Authentication	EAP	Error		
+Microsoft-Windows-OneX	14	0	EAP14(UInt32 ErrorCode, UInt32 Location, UInt32 Context)		EAP LwtDiagnostic ut:Authentication	EAP	Error		
+Microsoft-Windows-OneX	15	0	EAP15(UInt32 ErrorCode, UInt32 Location, UInt32 Context)		EAP LwtDiagnostic ut:Authentication	EAP	Error		
+Microsoft-Windows-OneX	16	0	EAP16(UInt32 ErrorCode, UInt32 Location, UInt32 Context)		EAP LwtDiagnostic ut:Authentication	EAP	Error		
+Microsoft-Windows-OneX	17	0	EAP17(UInt32 ErrorCode, UInt32 Location, UInt32 Context)		EAP LwtDiagnostic ut:Authentication	EAP	Error		
+Microsoft-Windows-OneX	18	0	EAP18(UInt32 ErrorCode, UInt32 Location, UInt32 Context)		EAP LwtDiagnostic ut:Authentication	EAP	Error		
+Microsoft-Windows-OneX	19	0	EAP19(UInt32 ErrorCode, UInt32 Location, UInt32 Context)		EAP LwtDiagnostic ut:Authentication	EAP	Error		
+Microsoft-Windows-OneX	20	0	MSM(UInt32 PortId, UInt32 UIRequestCode)		OneXUI LwtDiagnostic ut:Authentication	MSM	Error		
+Microsoft-Windows-OneX	21	0	User(UInt32 ErrorCode, UInt32 Location, UInt32 Context)		User LwtDiagnostic ut:Authentication	User	Error		
+Microsoft-Windows-OneX	22	0	User22(UInt32 ErrorCode, UInt32 Location, UInt32 Context)		User LwtDiagnostic ut:Authentication	User	Error		
+Microsoft-Windows-OneX	23	0	User23(UInt32 PortId)		User LwtDiagnostic ut:Authentication	User	Error		
+Microsoft-Windows-OneX	24	0	Supplicant(UInt32 ErrorCode, UInt32 Location, UInt32 Context)		Supplicant LwtDiagnostic ut:Authentication	Supplicant	Error		
+Microsoft-Windows-OneX	25	0	Supplicant25(UInt32 WarningCode, UInt32 Location, UInt32 Context)		Supplicant LwtDiagnostic ut:Authentication	Supplicant	Warning		
+Microsoft-Windows-OneX	26	0	Supplicant26(UInt32 ErrorCode, UInt32 Location, UInt32 Context)		Supplicant LwtDiagnostic ut:Authentication	Supplicant	Error		
+Microsoft-Windows-OneX	27	0	Supplicant27(UInt32 ErrorCode, UInt32 Location, UInt32 Context)		Supplicant LwtDiagnostic ut:Authentication	Supplicant	Error		
+Microsoft-Windows-OneX	28	0	EAP28(UInt32 ErrorCode, UInt32 Location, UInt32 Context)		EAP LwtDiagnostic ut:Authentication	EAP	Error		
+Microsoft-Windows-OneX	29	0	Profile(UInt8 EAPMethodType)		Profile ut:Authentication	Profile	Informational		
+Microsoft-Windows-OneX	30	0	Profile30(UInt8 EAPMethodType)		Profile ut:Authentication	Profile	Informational		
+Microsoft-Windows-OneX	31	0	Profile31(UInt32 ProfilesCount)		Profile ut:Authentication	Profile	Informational		
+Microsoft-Windows-OneX	32	0	Profile32(UInt8 EAPMethodType, UnicodeString AuthMode)		Profile ut:Authentication	Profile	Informational		
+Microsoft-Windows-OneX	33	0	Profile33(UInt8 EAPMethodType, UInt32 MediaType)		Profile ut:Authentication	Profile	Informational		
+Microsoft-Windows-OneX	34	0	MSM34(UInt32 PortId, UInt32 UIRequestCode)		OneXUI LwtDiagnostic ut:Authentication	MSM	Informational		
+Microsoft-Windows-OneX	35	0	Supplicant35(UInt32 ChangeType)		Supplicant ut:Authentication	Supplicant	Informational		
+Microsoft-Windows-OneX	36	0	Port(UInt32 PortId, UnicodeString FriendlyName)		Supplicant ut:Authentication	Port	Informational		
+Microsoft-Windows-OneX	37	0	Supplicant37(UInt32 PortId)		Supplicant ut:Authentication	Supplicant	Informational		
+Microsoft-Windows-OneX	38	0	MSM38(UInt32 PortId, UInt32 UIRequestCode)		OneXUI ut:Authentication	MSM	Informational		
+Microsoft-Windows-OneX	39	0	MSM39(UInt32 PortId)		Profile ut:Authentication	MSM	Informational		
+Microsoft-Windows-OneX	40	0	EAP40(UInt32 PortId, UInt16 PacketLength, UInt32 PacketType, UInt8 Identifier, UInt32 EapMethodType)		EAP EAPPacket LwtDiagnostic ut:Authentication	EAP	Informational		
+Microsoft-Windows-OneX	41	0	EAP41(UInt32 PortId)		EAP EAPPacket LwtDiagnostic ut:Authentication	EAP	Informational		
+Microsoft-Windows-OneX	42	0	EAP42(UInt32 PortId)		EAP EAPPacket ut:Authentication	EAP	Informational		
+Microsoft-Windows-OneX	43	0	MSM43(UInt32 PortId, UInt32 Reason)		Supplicant LwtDiagnostic ut:Authentication	MSM	Warning		
+Microsoft-Windows-OneX	44	0	SupplicantStart(UInt32 PortId)	Start	Supplicant ut:Authentication	Supplicant	Informational		
+Microsoft-Windows-OneX	45	0	SupplicantStop(UInt32 PortId)	Stop	Supplicant ut:Authentication	Supplicant	Informational		
+Microsoft-Windows-OneX	46	0	Supplicant46(UInt32 PortId, UInt32 TimeTaken)		Supplicant ut:Authentication	Supplicant	Informational		
+Microsoft-Windows-OneX	47	0	Supplicant47(UInt32 PortId, UnicodeString AuthIdentity, UInt32 SessionId, UnicodeString Username, UnicodeString Domain)		Supplicant ut:Authentication	Supplicant	Informational		
+Microsoft-Windows-OneX	48	0	Supplicant48(UInt32 PortId)		Supplicant ut:Authentication	Supplicant	Informational		
+Microsoft-Windows-OneX	49	0	Supplicant49(UInt32 PortId, UInt32 Reason)		Supplicant ut:Authentication	Supplicant	Informational		
+Microsoft-Windows-OneX	50	0	Supplicant50(UInt32 PortId)		Supplicant ut:Authentication	Supplicant	Informational		
+Microsoft-Windows-OneX	51	0	Supplicant51(UInt32 PortId)		Supplicant ut:Authentication	Supplicant	Informational		
+Microsoft-Windows-OneX	52	0	Supplicant52(UInt32 PortId)		Supplicant ut:Authentication	Supplicant	Informational		
+Microsoft-Windows-OneX	53	0	Supplicant53(UInt32 PortId)		Supplicant LwtDiagnostic ut:Authentication	Supplicant	Informational		
+Microsoft-Windows-OneX	54	0	Supplicant54(UInt32 PortId)		Supplicant LwtDiagnostic ut:Authentication	Supplicant	Informational		
+Microsoft-Windows-OneX	55	0	User55(UInt32 PortId, UInt32 SessionId, UInt32 UIRequestSessionId)		EAP OneXUI LwtDiagnostic ut:Authentication	User	Warning		
+Microsoft-Windows-OneX	56	0	User56(UInt32 PortId, UInt32 Size, UInt32 SessionId)		OneXUI LwtDiagnostic ut:Authentication	User	Warning		
+Microsoft-Windows-OneX	57	0	User57(UInt32 PortId, UInt32 Reason, UInt32 SessionId)		User LwtDiagnostic ut:Authentication	User	Informational		
+Microsoft-Windows-OneX	58	0	User58(UInt32 PortId)		User LwtDiagnostic ut:Authentication	User	Informational		
+Microsoft-Windows-OneX	59	0	EAP59(UInt32 PortId, UInt32 WinError, UInt32 ReasonCode)		EAP OneXUI LwtDiagnostic ut:Authentication	EAP	Error		
+Microsoft-Windows-OneX	60	0	EAP60(UInt32 ErrorCode, UInt32 Location, UInt32 Context)		EAP OneXUI ut:Authentication	EAP	Error		
+Microsoft-Windows-OneX	61	0	EAP61(UInt32 ErrorCode, UInt32 Location, UInt32 Context)		EAP OneXUI ut:Authentication	EAP	Error		
+Microsoft-Windows-OneX	62	0	EAP62(UInt32 ErrorCode, UInt32 Location, UInt32 Context)		EAP OneXUI ut:Authentication	EAP	Error		
+Microsoft-Windows-OneX	63	0	User63(UInt32 Result)		OneXUI ut:Authentication	User	Informational		
+Microsoft-Windows-OneX	64	0	EAP64(UInt32 PortId, UInt16 PacketLength, UInt32 PacketType, UInt8 Identifier, UInt32 EapMethodType)		EAP EAPPacket LwtDiagnostic ut:Authentication	EAP	Informational		
+Microsoft-Windows-OneX	65	0	EAP65(UInt32 PortId, AnsiString Identity)		EAP EAPPacket LwtDiagnostic ut:Authentication	EAP	Informational		
+Microsoft-Windows-OneX	66	0	EAP66(UInt32 PortId, Boolean ExplicitCredentials)		EAP ut:Authentication	EAP	Informational		
+Microsoft-Windows-OneX	68	0	EAP68(UInt32 PortId, Boolean ExplicitCredentials)		EAP ut:Authentication	EAP	Informational		
+Microsoft-Windows-OneX	70	0	EAP70(UInt32 PortId)		EAP ut:Authentication	EAP	Informational		
+Microsoft-Windows-OneX	60001	0	task_0(UInt32 ErrorCode, UInt32 Location, UInt32 Context)			task_0	Error		
+Microsoft-Windows-OneX	60002	0	task_060002(UInt32 WarningCode, UInt32 Location, UInt32 Context)			task_0	Warning		
+Microsoft-Windows-OneX	60003	0	task_060003(UInt8 NextState, UInt32 Context)		keyword_200000000000	task_0	Informational		
+Microsoft-Windows-OneX	60004	0	task_060004(UInt32 Context, UInt32 UpdateReasonCode)			task_0	Informational		
+Microsoft-Windows-OneX	60101	0	task_060101(UInt32 SourceAddress, UInt32 SourcePort, UInt32 DestinationAddress, UInt32 DestinationPort, UInt32 Protocol, UInt32 ReferenceContext)			task_0	Informational		
+Microsoft-Windows-OneX	60102	0	task_060102(Binary SourceAddress, UInt32 SourcePort, Binary DestinationAddress, UInt32 DestinationPort, UInt32 Protocol, UInt32 ReferenceContext)			task_0	Informational		
+Microsoft-Windows-OneX	60103	0	task_060103(GUID IfGuid, UInt32 IfIndex, UInt64 IfLuid, UInt32 ReferenceContext)			task_0	Informational		

@@ -1,0 +1,20 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-OverlayFilter	24832	0	WIMintegrityverificationIntegrityFileOpen(UInt16 FileNameLength, UnicodeString FileNameBuffer, Int64 DataSourceId, HexInt32 Status)	IntegrityFileOpen		WIMintegrityverification	Critical		
+Microsoft-Windows-OverlayFilter	24833	0	WIMintegrityverificationIntegrityBlockVerificationFailure(UInt16 FileNameLength, UnicodeString FileNameBuffer, UInt32 BlockNumber, UInt32 BlockLength)	IntegrityBlockVerificationFailure		WIMintegrityverification	Critical		
+Microsoft-Windows-OverlayFilter	24834	0	WIMintegrityverificationIntegrityInvalidBlock(UInt16 FileNameLength, UnicodeString FileNameBuffer, Int64 FileOffset, UInt32 ReadSize)	IntegrityInvalidBlock		WIMintegrityverification	Critical		
+Microsoft-Windows-OverlayFilter	24835	0	TheWindowsOverlayTaskEnumVolume(UnicodeString volume)	EnumVolume		TheWindowsOverlayTask	Informational		
+Microsoft-Windows-OverlayFilter	24836	0	TheWindowsOverlayTaskReportHashGenerationToBitlockerError(UInt32 hr)	ReportHashGenerationToBitlockerError		TheWindowsOverlayTask	Error		
+Microsoft-Windows-OverlayFilter	24837	0	TheWindowsOverlayTaskCreateHashFile(UnicodeString wimHashFile, UnicodeString wimFile)	CreateHashFile		TheWindowsOverlayTask	Informational		
+Microsoft-Windows-OverlayFilter	24838	0	TheWindowsOverlayTaskCompleteHashFile(UnicodeString wimHashFile, UnicodeString wimFile)	CompleteHashFile		TheWindowsOverlayTask	Informational		
+Microsoft-Windows-OverlayFilter	24839	0	TheWindowsOverlayTaskDeleteHashFile(UnicodeString wimHashFile, UnicodeString wimFile)	DeleteHashFile		TheWindowsOverlayTask	Informational		
+Microsoft-Windows-OverlayFilter	24840	0	TheWindowsOverlayTaskResumeHashFile(UnicodeString filename, UInt64 offset)	ResumeHashFile		TheWindowsOverlayTask	Informational		
+Microsoft-Windows-OverlayFilter	24841	0	TheWindowsOverlayTaskPauseHashFile(UnicodeString filename, UInt64 offset)	PauseHashFile		TheWindowsOverlayTask	Informational		
+Microsoft-Windows-OverlayFilter	24842	0	TheWindowsOverlayTaskActionError(UInt32 hr)	ActionError		TheWindowsOverlayTask	Error		
+Microsoft-Windows-OverlayFilter	24843	0	TheWindowsOverlayTaskGenerateHashFileError(UnicodeString wimHashFile, UnicodeString wimFile, Int32 hr)	GenerateHashFileError		TheWindowsOverlayTask	Error		
+Microsoft-Windows-OverlayFilter	24844	0	TheWindowsOverlayTaskDeleteHashFileError(UnicodeString wimHashFile, UnicodeString wimFile, Int32 hr)	DeleteHashFileError		TheWindowsOverlayTask	Error		
+Microsoft-Windows-OverlayFilter	24845	0	TheWindowsOverlayTaskFileReadError(UnicodeString wimHashFile, UnicodeString wimFile, Int32 hr)	FileReadError		TheWindowsOverlayTask	Error		
+Microsoft-Windows-OverlayFilter	24846	0	TheWindowsOverlayTaskFileWriteError(UnicodeString wimHashFile, UnicodeString wimFile, Int32 hr)	FileWriteError		TheWindowsOverlayTask	Error		
+Microsoft-Windows-OverlayFilter	24847	0	WIMintegrityverificationIntegrityFileOpen24847(UInt16 FileNameLength, UnicodeString FileNameBuffer, Int64 DataSourceId)	IntegrityFileOpen		WIMintegrityverification	Informational		
+Microsoft-Windows-OverlayFilter	24848	0	WIMintegrityverificationIntegrityFileOpen24848(UInt16 FileNameLength, UnicodeString FileNameBuffer, Int64 DataSourceId)	IntegrityFileOpen		WIMintegrityverification	Informational		
+Microsoft-Windows-OverlayFilter	24849	0	TheWindowsOverlayTaskActionGenerateHashes()	ActionGenerateHashes		TheWindowsOverlayTask	Informational		
+Microsoft-Windows-OverlayFilter	24850	0	TheWindowsOverlayTaskActionDeleteHashes()	ActionDeleteHashes		TheWindowsOverlayTask	Informational		

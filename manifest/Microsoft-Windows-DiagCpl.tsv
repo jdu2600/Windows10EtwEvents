@@ -1,0 +1,8 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-DiagCpl	1001	0	task_0(UnicodeString Message, AnsiString FileName, AnsiString Function, UInt32 Line, UInt32 Result)			task_0	Informational		
+Microsoft-Windows-DiagCpl	1002	0	task_01002(UnicodeString Message, AnsiString FileName, AnsiString Function, UInt32 Line, UInt32 Result)			task_0	Informational		
+Microsoft-Windows-DiagCpl	1003	0	task_01003(UnicodeString Message, AnsiString FileName, AnsiString Function, UInt32 Line, UInt32 Result)			task_0	Informational		
+Microsoft-Windows-DiagCpl	2001	0	task_02001(AnsiString FileName, UInt32 Line, Pointer Address, UInt32 Size)			task_0	Informational		
+Microsoft-Windows-DiagCpl	2002	0	task_02002(AnsiString FileName, UInt32 Line, Pointer Address)			task_0	Informational		
+Microsoft-Windows-DiagCpl	4000	0	PerfTrack_DIAGCPL_SearchStart(UInt32 SearchOnline, UInt32 SearchType, UInt32 ExitCode)	Start		PerfTrack_DIAGCPL_Search	Informational		
+Microsoft-Windows-DiagCpl	4001	0	PerfTrack_DIAGCPL_SearchStop(UInt32 SearchOnline, UInt32 SearchType, UInt32 ExitCode)	Stop		PerfTrack_DIAGCPL_Search	Informational		

@@ -1,0 +1,39 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-MSPaint	1	0	task_0()			task_0	Informational		
+Microsoft-Windows-MSPaint	2	0	task_02()			task_0	Informational		
+Microsoft-Windows-MSPaint	3	0	MSPaint_LaunchStart()	Start		MSPaint_Launch	Informational		
+Microsoft-Windows-MSPaint	4	0	MSPaint_LaunchStop()	Stop		MSPaint_Launch	Informational		
+Microsoft-Windows-MSPaint	5	0	MSPaint_ExitStart()	Start		MSPaint_Exit	Informational		
+Microsoft-Windows-MSPaint	6	0	MSPaint_ExitStop()	Stop		MSPaint_Exit	Informational		
+Microsoft-Windows-MSPaint	7	0	Select_ToolStart(Int32 ToolID)	Start		Select_Tool	Informational		
+Microsoft-Windows-MSPaint	8	0	Select_ToolStop()	Stop		Select_Tool	Informational		
+Microsoft-Windows-MSPaint	9	0	Commit_ToolStart(Int32 ToolID)	Start		Commit_Tool	Informational		
+Microsoft-Windows-MSPaint	10	0	Commit_ToolStop()	Stop		Commit_Tool	Informational		
+Microsoft-Windows-MSPaint	11	0	UndoStart()	Start		Undo	Informational		
+Microsoft-Windows-MSPaint	12	0	UndoStop()	Stop		Undo	Informational		
+Microsoft-Windows-MSPaint	13	0	task_013(Int32 ToolID, Int32 ToolThickness)			task_0	Informational		
+Microsoft-Windows-MSPaint	14	0	task_014(UInt64 Color)			task_0	Informational		
+Microsoft-Windows-MSPaint	15	0	task_015(UInt64 Color)			task_0	Informational		
+Microsoft-Windows-MSPaint	16	0	task_016(Int32 ShapeDrawMode)			task_0	Informational		
+Microsoft-Windows-MSPaint	17	0	task_017(Int32 ToolCrosssection)			task_0	Informational		
+Microsoft-Windows-MSPaint	18	0	task_018(Int32 ToolCrosssection)			task_0	Informational		
+Microsoft-Windows-MSPaint	19	0	task_019(UInt64 Color)			task_0	Informational		
+Microsoft-Windows-MSPaint	20	0	task_020(UInt32 HResult)			task_0	Error		
+Microsoft-Windows-MSPaint	21	0	task_021()			task_0	Error		
+Microsoft-Windows-MSPaint	22	0	MeasurePaintLagStart()	Start		MeasurePaintLag	Informational		
+Microsoft-Windows-MSPaint	23	0	MeasurePaintLagStop()	Stop		MeasurePaintLag	Informational		
+Microsoft-Windows-MSPaint	24	0	MeasurePaintLag()			MeasurePaintLag	Informational		
+Microsoft-Windows-MSPaint	25	0	SaveDrawingStart()	Start		SaveDrawing	Informational		
+Microsoft-Windows-MSPaint	26	0	SaveDrawingStop(Int32 Saveoperationresult)	Stop		SaveDrawing	Informational		
+Microsoft-Windows-MSPaint	27	0	OpenImageStart()	Start		OpenImage	Informational		
+Microsoft-Windows-MSPaint	28	0	OpenImageStop()	Stop		OpenImage	Informational		
+Microsoft-Windows-MSPaint	29	0	FlipOperationStart()	Start		FlipOperation	Informational		
+Microsoft-Windows-MSPaint	30	0	FlipOperationStop()	Stop		FlipOperation	Informational		
+Microsoft-Windows-MSPaint	31	0	RotateOperationStart()	Start		RotateOperation	Informational		
+Microsoft-Windows-MSPaint	32	0	RotateOperationStop()	Stop		RotateOperation	Informational		
+Microsoft-Windows-MSPaint	33	0	CropOperationStart()	Start		CropOperation	Informational		
+Microsoft-Windows-MSPaint	34	0	CropOperationStop()	Stop		CropOperation	Informational		
+Microsoft-Windows-MSPaint	35	0	InvertColorOperationStart()	Start		InvertColorOperation	Informational		
+Microsoft-Windows-MSPaint	36	0	InvertColorOperationStop()	Stop		InvertColorOperation	Informational		
+Microsoft-Windows-MSPaint	37	0	ResizeSkewOperationStart()	Start		ResizeSkewOperation	Informational		
+Microsoft-Windows-MSPaint	38	0	ResizeSkewOperationStop(Int32 ResizeskewOperationresult, Int32 Widthofthecanvas, Int32 Heightofthecanvas, Int32 Horizontalresizepercentage, Int32 Verticalresizepercentage, Int32 Horizontalskewangle, Int32 Verticalskewangle)	Stop		ResizeSkewOperation	Informational		

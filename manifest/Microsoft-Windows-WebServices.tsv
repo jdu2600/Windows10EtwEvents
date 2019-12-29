@@ -1,0 +1,22 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-WebServices	1	0	APIsAPIEnter(UInt32 api)	APIEnter	keywords.API	APIs	Informational		
+Microsoft-Windows-WebServices	2	0	APIsAPIExitSyncSuccess(UInt32 api, UInt32 result)	APIExitSyncSuccess	keywords.API	APIs	Informational		
+Microsoft-Windows-WebServices	3	0	APIsAPIExitSyncFailure(UInt32 api, UInt32 result)	APIExitSyncFailure	keywords.API	APIs	Error		
+Microsoft-Windows-WebServices	4	0	APIsAPIPending(UInt32 api)	APIPending	keywords.API	APIs	Informational		
+Microsoft-Windows-WebServices	5	0	APIsAPIExitAsyncSuccess(UInt32 api, UInt32 result)	APIExitAsyncSuccess	keywords.API	APIs	Informational		
+Microsoft-Windows-WebServices	6	0	APIsAPIExitAsyncFailure(UInt32 api, UInt32 result)	APIExitAsyncFailure	keywords.API	APIs	Error		
+Microsoft-Windows-WebServices	7	0	ErrorsError(UInt32 error, UnicodeString errorString)	Error	keywords.Error	Errors	Error		
+Microsoft-Windows-WebServices	8	0	IOOperationsIOStarted(UInt32 operation)	IOStarted	keywords.IO	IOOperations	Informational		
+Microsoft-Windows-WebServices	9	0	IOOperationsIOCompleted(UInt32 operation, UInt32 size)	IOCompleted	keywords.IO	IOOperations	Informational		
+Microsoft-Windows-WebServices	10	0	IOOperationsIOFailed(UInt32 operation, UInt32 error)	IOFailed	keywords.IO	IOOperations	Error		
+Microsoft-Windows-WebServices	11	0	MessageExchangeSendingMessage_Binary(UInt64 correlationId, UInt16 length, UnicodeString message)	SendingMessage_Binary	keywords.BinaryMessage	MessageExchange	Verbose		
+Microsoft-Windows-WebServices	12	0	MessageExchangeReceivedMessage_Binary(UInt64 correlationId, UInt16 length, UnicodeString message)	ReceivedMessage_Binary	keywords.BinaryMessage	MessageExchange	Verbose		
+Microsoft-Windows-WebServices	13	0	MessageExchangeSendingMessage_Text(UInt64 correlationId, UInt16 length, UnicodeString message)	SendingMessage_Text	keywords.Message	MessageExchange	Verbose		
+Microsoft-Windows-WebServices	14	0	MessageExchangeReceivedMessage_Text(UInt64 correlationId, UInt16 length, UnicodeString message)	ReceivedMessage_Text	keywords.Message	MessageExchange	Verbose		
+Microsoft-Windows-WebServices	15	0	MessageExchangeSendingMessageStart(UInt64 correlationId)	SendingMessageStart	keywords.Message	MessageExchange	Verbose		
+Microsoft-Windows-WebServices	16	0	MessageExchangeSendingMessageStop(UInt64 correlationId)	SendingMessageStop	keywords.Message	MessageExchange	Verbose		
+Microsoft-Windows-WebServices	17	0	MessageExchangeReceivedMessageStart(UInt64 correlationId)	ReceivedMessageStart	keywords.Message	MessageExchange	Verbose		
+Microsoft-Windows-WebServices	18	0	MessageExchangeReceivedMessageStop(UInt64 correlationId)	ReceivedMessageStop	keywords.Message	MessageExchange	Verbose		
+Microsoft-Windows-WebServices	19	0	APIsSendingHTTPheaders(UInt16 length, UnicodeString traceString)	SendingHTTPheaders	keywords.Message	APIs	Informational		
+Microsoft-Windows-WebServices	20	0	APIsReceivingHTTPheaders(UInt16 length, UnicodeString traceString)	ReceivingHTTPheaders	keywords.Message	APIs	Informational		
+Microsoft-Windows-WebServices	21	0	APIsTrace(UnicodeString traceString)	Trace	keywords.Error	APIs	Informational		

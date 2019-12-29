@@ -1,0 +1,32 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Runtime-Networking-BackgroundTransfer	1	0	BackgroundTransferOperationStart(GUID OperationId, UInt32 TransferType, UnicodeString Method, UnicodeString URI, UInt32 CostPolicy, UnicodeString Group, GUID CompletionGroupId)	Start	keywords.KW_ALL	BackgroundTransferOperation	Informational		
+Microsoft-Windows-Runtime-Networking-BackgroundTransfer	2	0	BackgroundTransferOperation(GUID OperationId, UInt32 TransferType, UnicodeString Method, UnicodeString URI, UInt32 CostPolicy, UnicodeString Group, GUID CompletionGroupId)		keywords.KW_ALL	BackgroundTransferOperation	Informational		
+Microsoft-Windows-Runtime-Networking-BackgroundTransfer	3	0	BackgroundTransferOperationStop(GUID OperationId, UInt32 TransferType, HexInt32 Result)	Stop	keywords.KW_ALL	BackgroundTransferOperation	Informational		
+Microsoft-Windows-Runtime-Networking-BackgroundTransfer	4	0	BackgroundTransferOperation4(GUID OperationId, UInt32 LocationId, HexInt32 Error)		keywords.KW_ALL	BackgroundTransferOperation	Error		
+Microsoft-Windows-Runtime-Networking-BackgroundTransfer	5	0	BackgroundTransfer(UInt32 LocationId, HexInt32 Error)		keywords.KW_ALL	BackgroundTransfer	Error		
+Microsoft-Windows-Runtime-Networking-BackgroundTransfer	6	0	BackgroundTransferOperation6(GUID OperationId, UInt32 LocationId)		keywords.KW_ALL	BackgroundTransferOperation	Informational		
+Microsoft-Windows-Runtime-Networking-BackgroundTransfer	7	0	BackgroundTransfer7(UInt32 LocationId)		keywords.KW_ALL	BackgroundTransfer	Informational		
+Microsoft-Windows-Runtime-Networking-BackgroundTransfer	8	0	BackgroundTransferOperation8(GUID WorkItemId, GUID OperationId, UInt32 LocationId, HexInt32 Error)		keywords.KW_ALL	BackgroundTransferOperation	Error		
+Microsoft-Windows-Runtime-Networking-BackgroundTransfer	9	0	BackgroundTransferOperation9(GUID WorkItemId, GUID OperationId, UInt32 LocationId)		keywords.KW_ALL	BackgroundTransferOperation	Informational		
+Microsoft-Windows-Runtime-Networking-BackgroundTransfer	10	0	BackgroundTransfer10(UInt32 ProcessId, UInt32 PowerPolicyValue, UInt32 PromptLogicValue)		keywords.KW_ALL	BackgroundTransfer	Informational		
+Microsoft-Windows-Runtime-Networking-BackgroundTransfer	11	0	BackgroundTransfer11(UInt32 ProcessId)		keywords.KW_ALL	BackgroundTransfer	Informational		
+Microsoft-Windows-Runtime-Networking-BackgroundTransfer	12	0	BackgroundTransfer12(UInt32 ProcessId, HexInt32 Error)		keywords.KW_ALL	BackgroundTransfer	Error		
+Microsoft-Windows-Runtime-Networking-BackgroundTransfer	13	0	BackgroundTransferOperation13(GUID OperationId, UInt32 CostPolicy)		keywords.KW_ALL	BackgroundTransferOperation	Informational		
+Microsoft-Windows-Runtime-Networking-BackgroundTransfer	14	0	BackgroundTransferOperation14(GUID OperationId, UInt32 Priority)		keywords.KW_ALL	BackgroundTransferOperation	Informational		
+Microsoft-Windows-Runtime-Networking-BackgroundTransfer	15	0	BackgroundTransfer15(Boolean IsInternetAvailable, UInt32 CostType, Boolean IsRoaming, Boolean IsOverDataLimit, UInt32 DataLimitMegabytes, UInt32 UsedMegabytes)		keywords.KW_ALL	BackgroundTransfer	Informational		
+Microsoft-Windows-Runtime-Networking-BackgroundTransfer	16	0	BackgroundTransferOperation16(GUID OperationId, Boolean IsResume)		keywords.KW_ALL	BackgroundTransferOperation	Informational		
+Microsoft-Windows-Runtime-Networking-BackgroundTransfer	17	0	BackgroundTransfer17(UnicodeString GroupName, UInt32 LocationId, HexInt32 Error)		keywords.KW_ALL	BackgroundTransfer	Error		
+Microsoft-Windows-Runtime-Networking-BackgroundTransfer	18	0	BackgroundTransfer18(UnicodeString GroupName, UInt32 Behavior)		keywords.KW_ALL	BackgroundTransfer	Informational		
+Microsoft-Windows-Runtime-Networking-BackgroundTransfer	19	0	BackgroundTransfer19(GUID NotificationId, UInt32 LocationId)		keywords.KW_ALL	BackgroundTransfer	Informational		
+Microsoft-Windows-Runtime-Networking-BackgroundTransfer	20	0	BackgroundTransfer20(GUID NotificationId, UInt32 LocationId, HexInt32 Error)		keywords.KW_ALL	BackgroundTransfer	Error		
+Microsoft-Windows-Runtime-Networking-BackgroundTransfer	21	0	BackgroundTransferOperation21(GUID OperationId, GUID NotificationId)		keywords.KW_ALL	BackgroundTransferOperation	Informational		
+Microsoft-Windows-Runtime-Networking-BackgroundTransfer	22	0	BackgroundTransfer22(GUID NotificationId, UInt32 LocationId, UInt32 NotificationType, Boolean NotificationInformationAvailable)		keywords.KW_ALL	BackgroundTransfer	Informational		
+Microsoft-Windows-Runtime-Networking-BackgroundTransfer	23	0	BackgroundTransferOperation23(GUID OperationId, UInt32 ElapsedTimeInSeconds, UInt64 TotalBytesRemaining, UInt64 TransferSpeedInBytesPerSeconds, UInt64 EtaInSeconds)		keywords.KW_ALL	BackgroundTransferOperation	Informational		
+Microsoft-Windows-Runtime-Networking-BackgroundTransfer	24	0	BackgroundTransfer24(GUID CompletionGroupId, UInt32 LocationId, HexInt32 Error)		keywords.KW_ALL	BackgroundTransfer	Error		
+Microsoft-Windows-Runtime-Networking-BackgroundTransfer	25	0	BackgroundTransfer25(GUID CompletionGroupId, UInt32 LocationId)		keywords.KW_ALL	BackgroundTransfer	Informational		
+Microsoft-Windows-Runtime-Networking-BackgroundTransfer	26	0	BackgroundTransfer26(GUID CompletionGroupId, GUID TriggerId, HexInt32 Error, UInt32 ActivationStatus)		keywords.KW_ALL	BackgroundTransfer	Informational		
+Microsoft-Windows-Runtime-Networking-BackgroundTransfer	27	0	BackgroundTransfer27(GUID CompletionGroupId, GUID TriggerId, HexInt32 Error, UInt32 ActivationStatus)		keywords.KW_ALL	BackgroundTransfer	Error		
+Microsoft-Windows-Runtime-Networking-BackgroundTransfer	28	0	BackgroundTransfer28(GUID CompletionGroupId, GUID TriggerId)		keywords.KW_ALL	BackgroundTransfer	Informational		
+Microsoft-Windows-Runtime-Networking-BackgroundTransfer	30	0	BackgroundTransfer30(GUID CompletionGroupId, GUID TriggerId, HexInt32 Error)		keywords.KW_ALL	BackgroundTransfer	Error		
+Microsoft-Windows-Runtime-Networking-BackgroundTransfer	31	0	BackgroundTransferOperation31(GUID OldOperationId, GUID NewOperationId)		keywords.KW_ALL	BackgroundTransferOperation	Informational		
+Microsoft-Windows-Runtime-Networking-BackgroundTransfer	32	0	BackgroundTransfer32(GUID CompletionGroupId, UInt32 RunningOperationsCount, UInt32 CopiedOperationsCount)		keywords.KW_ALL	BackgroundTransfer	Informational		

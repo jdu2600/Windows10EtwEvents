@@ -1,0 +1,37 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-ReadyBoost	1000	0	ReadyBoost(UnicodeString DeviceName, UInt32 FreeSpace, UInt32 ReadRate, UInt32 WriteRate)		ReadyBoost	ReadyBoost	Informational		
+Microsoft-Windows-ReadyBoost	1002	0	ReadyBoost1002(UnicodeString DeviceName)		ReadyBoost	ReadyBoost	Informational		
+Microsoft-Windows-ReadyBoost	1003	0	task_0(UnicodeString DeviceName, UInt32 IntValue)			task_0	Informational		
+Microsoft-Windows-ReadyBoost	1003	1	ReadyBoost1003_V1(UnicodeString DeviceName, UInt32 IntValue, UInt32 SecondIntValue)		ReadyBoost	ReadyBoost	Informational		
+Microsoft-Windows-ReadyBoost	1004	0	ReadyBoost1004(UnicodeString DeviceName, UInt32 IORate)		ReadyBoost	ReadyBoost	Informational		
+Microsoft-Windows-ReadyBoost	1005	0	ReadyBoost1005(UnicodeString DeviceName, UInt32 IORate)		ReadyBoost	ReadyBoost	Informational		
+Microsoft-Windows-ReadyBoost	1006	0	ReadyBoost1006(UnicodeString DeviceName, UInt32 ErrorCode)		ReadyBoost	ReadyBoost	Error		
+Microsoft-Windows-ReadyBoost	1007	0	task_01007(UnicodeString DeviceName, UnicodeString StringLabel)			task_0	Informational		
+Microsoft-Windows-ReadyBoost	1007	1	ReadyBoost1007_V1(UnicodeString DeviceName)		ReadyBoost	ReadyBoost	Informational		
+Microsoft-Windows-ReadyBoost	1008	0	ReadyBoost1008(UnicodeString DeviceName, UInt32 IntValue)		ReadyBoost	ReadyBoost	Informational		
+Microsoft-Windows-ReadyBoost	1009	0	ReadyBoost1009(UnicodeString DeviceName, UInt32 IntValue, UInt32 SecondIntValue)		ReadyBoost	ReadyBoost	Informational		
+Microsoft-Windows-ReadyBoost	1010	0	ReadyBoost1010(UnicodeString DeviceName, UInt32 IntValue)		ReadyBoost	ReadyBoost	Informational		
+Microsoft-Windows-ReadyBoost	1011	0	task_01011(UnicodeString DeviceName)			task_0	Informational		
+Microsoft-Windows-ReadyBoost	1012	0	task_01012(UnicodeString DeviceName, UnicodeString StringLabel)			task_0	Informational		
+Microsoft-Windows-ReadyBoost	1013	0	ReadyBoost1013(UnicodeString DeviceName)		ReadyBoost	ReadyBoost	Informational		
+Microsoft-Windows-ReadyBoost	1014	0	task_01014(UnicodeString DeviceName)			task_0	Informational		
+Microsoft-Windows-ReadyBoost	1015	0	ReadyBoot(FILETIME RB_BootTimeUTC, FILETIME RB_LastBootPlanUTC, UInt64 RB_IoReadKB, UInt64 RB_CacheHitKB, UInt64 RB_CompressedDataSizeKB, UInt64 RB_RawDataSizeKB, Int64 RB_BootPrefetchDiskTimeUs, Int64 RB_BootPrefetchDataReadBytes, Double RB_CacheHitPercentage, Double RB_CacheFragmentation, Double RB_CompressionRatio, UInt32 RB_IoReadCount, UInt32 RB_CacheHitCount, UInt32 RB_CacheSizeKB, UInt32 RB_LastBootPlanUserTimeLength, UnicodeString RB_LastBootPlanUserTime)		Diag	ReadyBoot	Informational		
+Microsoft-Windows-ReadyBoost	1015	1	ReadyBoot_V1(UInt64 RB_IoReadBytes, UInt64 RB_CacheHitBytes, UInt64 RB_PrefetchBytes, Double RB_CacheHitPercentage, UInt32 RB_IoReadCount, UInt32 RB_CacheHitCount, UInt32 RB_PrefetchReadCount, UInt32 RB_PrefetchDiskTimeUs)		ReadyBoot	ReadyBoot	Informational		
+Microsoft-Windows-ReadyBoost	1016	0	ReadyBoot1016(FILETIME BootPlanTimestamp, Boolean ValidBootPlan)		Diag	ReadyBoot	Informational		
+Microsoft-Windows-ReadyBoost	1016	1	ReadyBoot1016_V1(FILETIME BootPlanTimestamp, UInt32 ErrorCode, UInt16 Durationms, UInt8 Reason)		ReadyBoot	ReadyBoot	Informational		
+Microsoft-Windows-ReadyBoost	1017	0	ReadyBoot_1017(FILETIME DefragCompletionTimestamp)		Diag	ReadyBoot_1017	Informational		
+Microsoft-Windows-ReadyBoost	1017	1	ReadyBoost1017_V1(UnicodeString DeviceName)		ReadyBoost	ReadyBoost	Informational		
+Microsoft-Windows-ReadyBoost	1018	0	ReadyBoot_1018(FILETIME DiskAssessmentTimestamp, Boolean Success)		Diag	ReadyBoot_1018	Informational		
+Microsoft-Windows-ReadyBoost	1018	1	ReadyBoot1018_V1(FILETIME DiskAssessmentTimestamp, UInt32 ErrorCode, UInt16 Durationms)		ReadyBoot	ReadyBoot	Informational		
+Microsoft-Windows-ReadyBoost	1019	1	ReadyBoost1019_V1(UnicodeString DeviceName)		ReadyBoost	ReadyBoost	Informational		
+Microsoft-Windows-ReadyBoost	1020	1	ReadyBoost1020_V1(UnicodeString DeviceName)		ReadyBoost	ReadyBoost	Informational		
+Microsoft-Windows-ReadyBoost	1021	1	ReadyBoost1021_V1(UnicodeString DeviceName)		ReadyBoost	ReadyBoost	Informational		
+Microsoft-Windows-ReadyBoost	1022	1	ReadyBoost1022_V1(UnicodeString DeviceName)		ReadyBoost	ReadyBoost	Informational		
+Microsoft-Windows-ReadyBoost	1023	1	ReadyBoost1023_V1(UnicodeString DeviceName)		ReadyBoost	ReadyBoost	Informational		
+Microsoft-Windows-ReadyBoost	1024	1	ReadyBoot1024_V1(UInt32 RB_HistoryCount, UInt32 RB_BootPlanAge, UInt32 RB_DiskAssessmentRPM)		ReadyBoot	ReadyBoot	Informational		
+Microsoft-Windows-ReadyBoost	1024	2	ReadyBoot1024_V2(UInt32 RB_HistoryCount, UInt32 RB_BootPlanAge, UInt32 RB_DiskAssessmentRPM, UInt32 RB_Flags)		ReadyBoot	ReadyBoot	Informational		
+Microsoft-Windows-ReadyBoost	1025	1	ReadyBoost1025_V1(UnicodeString DeviceName)		ReadyBoost	ReadyBoost	Informational		
+Microsoft-Windows-ReadyBoost	1026	1	ReadyBoot1026_V1(UnicodeString VolumeUniqueId, UInt16 OldRdbAttachState, UInt16 NewRdbAttachState, UInt16 OldHbdrvAttachState, UInt16 NewHbdrvAttachState, UnicodeString VolumePath)		ReadyBoot	ReadyBoot	Informational		
+Microsoft-Windows-ReadyBoost	1027	1	ReadyBoot1027_V1(UInt32 ErrorCode, UInt32 UniqueIdLength, Binary VolumeUniqueId)		ReadyBoot	ReadyBoot	Informational		
+Microsoft-Windows-ReadyBoost	1028	1	HybridDrive_V1(UInt32 DiskNumber)		ReadyBoost	HybridDrive	Warning		
+Microsoft-Windows-ReadyBoost	1029	1	HybridDrive1029_V1(UInt32 HbdrvSpeedTestResult, UInt32 DiskSeqReadKbps, UInt32 DiskSeqWriteKbps, UInt32 FlashSeqReadKbps, UInt32 FlashSeqWriteKbps, UInt32 FlashRndReadKbps, UInt32 ErrorCode)		ReadyBoost	HybridDrive	Informational		

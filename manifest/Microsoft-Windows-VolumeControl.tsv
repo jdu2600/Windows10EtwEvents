@@ -1,0 +1,16 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-VolumeControl	102	0	AudioPerf_Task_LaunchFlyoutStart(UInt32 Object)	Start		AudioPerf_Task_LaunchFlyout	Informational		
+Microsoft-Windows-VolumeControl	103	0	AudioPerf_Task_LaunchFlyoutStop(UInt32 Object)	Stop		AudioPerf_Task_LaunchFlyout	Informational		
+Microsoft-Windows-VolumeControl	104	0	task_VolumeLimit_UIVolumeLimit_SubscribeWnf(Pointer object, Int32 ChangeStamp)	VolumeLimit_SubscribeWnf		task_VolumeLimit_UI	Informational		
+Microsoft-Windows-VolumeControl	105	0	task_VolumeLimit_UIVolumeLimit_UnsubscribeWnf(Pointer object)	VolumeLimit_UnsubscribeWnf		task_VolumeLimit_UI	Informational		
+Microsoft-Windows-VolumeControl	106	0	task_VolumeLimit_UIVolumeLimit_WnfCallback(Pointer object, Int32 ChangeStamp)	VolumeLimit_WnfCallback		task_VolumeLimit_UI	Informational		
+Microsoft-Windows-VolumeControl	107	0	task_VolumeLimit_UIVolumeLimit_WnfCallback_Skip(Pointer object, Int32 PrevChangeStamp, Int32 ChangeStamp)	VolumeLimit_WnfCallback_Skip		task_VolumeLimit_UI	Informational		
+Microsoft-Windows-VolumeControl	108	0	task_VolumeLimit_UIVolumeLimit_WnfCallback_ScheduleUI(Pointer object, Pointer m_pUIWorkItem)	VolumeLimit_WnfCallback_ScheduleUI		task_VolumeLimit_UI	Informational		
+Microsoft-Windows-VolumeControl	109	0	task_VolumeLimit_UIVolumeLimit_IsChildAccount(Pointer object, Boolean IsChildAccount, Int32 hResult)	VolumeLimit_IsChildAccount		task_VolumeLimit_UI	Informational		
+Microsoft-Windows-VolumeControl	110	0	task_VolumeLimit_UIStart(Pointer object, Pointer pSystemModalDialog)	Start		task_VolumeLimit_UI	Informational		
+Microsoft-Windows-VolumeControl	111	0	task_VolumeLimit_UIVolumeLimit_UIThread_PopupWindowFactory(Pointer object)	VolumeLimit_UIThread_PopupWindowFactory		task_VolumeLimit_UI	Informational		
+Microsoft-Windows-VolumeControl	112	0	task_VolumeLimit_UIVolumeLimit_UIThread_PopupUI(Pointer object, Boolean IsChildAccount)	VolumeLimit_UIThread_PopupUI		task_VolumeLimit_UI	Informational		
+Microsoft-Windows-VolumeControl	113	0	task_VolumeLimit_UIStop(Pointer object, Int32 hResult)	Stop		task_VolumeLimit_UI	Informational		
+Microsoft-Windows-VolumeControl	114	0	task_VolumeLimit_UIVolumeLimit_UserSelection(Pointer object, Boolean AllowsButton, Boolean NotAllowsButton, Boolean OkButton)	VolumeLimit_UserSelection		task_VolumeLimit_UI	Informational		
+Microsoft-Windows-VolumeControl	115	0	task_VolumeLimit_UIVolumeLimit_PropogateToDriver(Pointer object, Boolean bEngageVolumeLimit)	VolumeLimit_PropogateToDriver		task_VolumeLimit_UI	Informational		
+Microsoft-Windows-VolumeControl	116	0	task_VolumeLimit_UIVolumeLimit_UserSelectionPropogationResult(Pointer object, Int32 hResult)	VolumeLimit_UserSelectionPropogationResult		task_VolumeLimit_UI	Informational		

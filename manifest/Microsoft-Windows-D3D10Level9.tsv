@@ -1,0 +1,10 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-D3D10Level9	1	0	UnderlyingResourceStart(Pointer D3D10Level9Resource, Pointer m_hDX9Resource, UInt32 Usage)	Start	Resources	UnderlyingResource	Always		
+Microsoft-Windows-D3D10Level9	2	0	UnderlyingResourceStop(Pointer D3D10Level9Resource, Pointer m_hDX9Resource, UInt32 Usage)	Stop	Resources	UnderlyingResource	Always		
+Microsoft-Windows-D3D10Level9	3	0	UnderlyingResourceDCStart(Pointer D3D10Level9Resource, Pointer m_hDX9Resource, UInt32 Usage)	DC_Start	Resources	UnderlyingResource	Always		
+Microsoft-Windows-D3D10Level9	4	0	UMD9CreateDeviceStart()	Start	Devices	UMD9CreateDevice	Always		
+Microsoft-Windows-D3D10Level9	5	0	UMD9CreateDeviceStop()	Stop	Devices	UMD9CreateDevice	Always		
+Microsoft-Windows-D3D10Level9	6	0	UMD9PostCreateDeviceStart()	Start	Devices	UMD9PostCreateDevice	Always		
+Microsoft-Windows-D3D10Level9	7	0	UMD9PostCreateDeviceStop()	Stop	Devices	UMD9PostCreateDevice	Always		
+Microsoft-Windows-D3D10Level9	8	0	UMD9ReOpenAdapterStart()	Start	Devices	UMD9ReOpenAdapter	Always		
+Microsoft-Windows-D3D10Level9	9	0	UMD9ReOpenAdapterStop()	Stop	Devices	UMD9ReOpenAdapter	Always		

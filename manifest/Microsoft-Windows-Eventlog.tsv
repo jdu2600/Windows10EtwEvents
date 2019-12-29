@@ -1,0 +1,35 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Eventlog	20	0	Servicestartup(UInt32 ErrorCode, UnicodeString Path)		el:Availability	Servicestartup	Error		
+Microsoft-Windows-Eventlog	21	0	Servicestartup21(UInt32 ErrorCode, UnicodeString ChannelPath, UnicodeString ConfigProperty)		el:Availability el:Settings	Servicestartup	Error		
+Microsoft-Windows-Eventlog	22	0	Servicestartup22(UInt32 ErrorCode, UnicodeString Path)		el:Availability	Servicestartup	Error		
+Microsoft-Windows-Eventlog	23	0	Servicestartup23(UInt32 ErrorCode, UnicodeString Path)		el:Availability	Servicestartup	Error		
+Microsoft-Windows-Eventlog	25	0	Servicestartup25(UnicodeString ChannelPath)		el:Availability	Servicestartup	Informational		
+Microsoft-Windows-Eventlog	26	0	Servicestartup26(UnicodeString ChannelPath)		el:Availability	Servicestartup	Informational		
+Microsoft-Windows-Eventlog	27	0	Servicestartup27(UInt32 ErrorCode, UnicodeString ChannelPath, UnicodeString NewLogFilePath)		el:Availability el:Settings	Servicestartup	Warning		
+Microsoft-Windows-Eventlog	28	0	Servicestartup28(UInt32 ErrorCode, UnicodeString ChannelPath)		el:Availability el:Settings	Servicestartup	Warning		
+Microsoft-Windows-Eventlog	29	0	task_0(UInt32 ErrorCode, UnicodeString ChannelPath)		el:Availability	task_0	Critical		
+Microsoft-Windows-Eventlog	30	0	Servicestartup30(UInt32 ErrorCode, UnicodeString ChannelPath, GUID PublisherGuid)		el:Availability	Servicestartup	Error		
+Microsoft-Windows-Eventlog	31	0	Servicestartup31(UInt32 ErrorCode, UnicodeString ChannelPath)		el:Availability el:Settings	Servicestartup	Warning		
+Microsoft-Windows-Eventlog	40	0	task_040(UInt32 ErrorCode, UnicodeString ChannelPath)		el:Availability	task_0	Error		
+Microsoft-Windows-Eventlog	100	0	Eventprocessing(UInt32 ErrorCode, UInt16 EventID, UnicodeString PubID)		el:Availability	Eventprocessing	Error		
+Microsoft-Windows-Eventlog	102	0	Eventprocessing102(UInt32 ErrorCode, UInt16 EventID, UnicodeString PublisherName, GUID PublisherGuid, UInt32 ProcessID)		el:Availability	Eventprocessing	Error		
+Microsoft-Windows-Eventlog	103	0	Eventprocessing103(UInt8 Reason, UnicodeString SessionName)			Eventprocessing	Error		
+Microsoft-Windows-Eventlog	104	0	Logclear(UnicodeString SubjectUserName, UnicodeString SubjectDomainName, UnicodeString Channel, UnicodeString BackupPath)			Logclear	Informational		
+Microsoft-Windows-Eventlog	105	0	Logautomaticbackup(UnicodeString Channel, UnicodeString BackupPath)			Logautomaticbackup	Informational		
+Microsoft-Windows-Eventlog	106	0	task_0106(UnicodeString Channel)		el:Availability	task_0	Error		
+Microsoft-Windows-Eventlog	107	0	task_0107(UInt32 ErrorCode, UnicodeString ProviderName, GUID PublisherGuid)			task_0	Error		
+Microsoft-Windows-Eventlog	108	0	SystemAbnormalShutdown(SYSTEMTIME ShutdownTime, UInt32 ActualMaxInterval, UInt32 DiskPmDisabledMaxInterval, UInt32 DiskPmEnabledFlag, UInt32 DiskPmEnabledMaxInterval, UInt32 TimestampForced, UInt32 DiskPmPolicy, UInt32 BiasValid, UInt32 StartBias)		el:SystemAvailability	SystemAbnormalShutdown	Informational		
+Microsoft-Windows-Eventlog	109	0	Eventprocessing109(UInt32 ErrorCode, UInt16 EventID, UnicodeString PublisherName, GUID PublisherGuid, UInt32 ProcessID, UnicodeString EventName)		el:Availability	Eventprocessing	Error		
+Microsoft-Windows-Eventlog	110	0	EventprocessingStart(GUID PublisherGuid, UnicodeString PublisherName)	Start		Eventprocessing	Verbose		
+Microsoft-Windows-Eventlog	111	0	EventprocessingStop(GUID PublisherGuid, UnicodeString PublisherName, UInt32 EventMetaDataCount)	Stop		Eventprocessing	Verbose		
+Microsoft-Windows-Eventlog	112	0	EventprocessingStop112(GUID PublisherGuid, UnicodeString PublisherName, UInt32 ErrorCode)	Stop		Eventprocessing	Verbose		
+Microsoft-Windows-Eventlog	1100	0	Serviceshutdown()			Serviceshutdown	Informational		
+Microsoft-Windows-Eventlog	1101	0	Eventprocessing1101(UInt8 Reason)			Eventprocessing	Error		
+Microsoft-Windows-Eventlog	1102	0	Logclear1102(SID SubjectUserSid, UnicodeString SubjectUserName, UnicodeString SubjectDomainName, HexInt64 SubjectLogonId)			Logclear	Informational		
+Microsoft-Windows-Eventlog	1103	0	Eventprocessing1103(UInt32 PercentFull)			Eventprocessing	Informational		
+Microsoft-Windows-Eventlog	1104	0	Eventprocessing1104()			Eventprocessing	Error		
+Microsoft-Windows-Eventlog	1105	0	Logautomaticbackup1105(UnicodeString Channel, UnicodeString BackupPath)			Logautomaticbackup	Informational		
+Microsoft-Windows-Eventlog	1106	0	Eventprocessing1106(HexInt32 Reason)			Eventprocessing	Error		
+Microsoft-Windows-Eventlog	1107	0	Eventprocessing1107(UInt32 ErrorCode, UInt16 EventID, UnicodeString PublisherName, GUID PublisherGuid, UInt32 ProcessID)			Eventprocessing	Error		
+Microsoft-Windows-Eventlog	1108	0	Eventprocessing1108(UInt32 ErrorCode, UInt16 EventID, UnicodeString PubID)			Eventprocessing	Error		
+Microsoft-Windows-Eventlog	6000	0	task_06000(UnicodeString Channel)			task_0	Informational		

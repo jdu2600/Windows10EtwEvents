@@ -1,0 +1,31 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-DXP	1	0	WorkingSetCompositionStart(UnicodeString DeviceID)	Start		WorkingSetComposition	Informational		
+Microsoft-Windows-DXP	2	0	WorkingSetCompositionStop(UnicodeString DeviceID)	Stop		WorkingSetComposition	Informational		
+Microsoft-Windows-DXP	3	0	MetadataAcquisitionStart(UnicodeString DeviceID)	Start		MetadataAcquisition	Informational		
+Microsoft-Windows-DXP	4	0	MetadataAcquisitionStop(UnicodeString DeviceID)	Stop		MetadataAcquisition	Informational		
+Microsoft-Windows-DXP	5	0	SignatureVerificationStart(UnicodeString FileName)	Start		SignatureVerification	Informational		
+Microsoft-Windows-DXP	6	0	SignatureVerificationStop(UnicodeString FileName)	Stop		SignatureVerification	Informational		
+Microsoft-Windows-DXP	7	0	DestinationListCreationStart(UnicodeString DeviceID)	Start		DestinationListCreation	Informational		
+Microsoft-Windows-DXP	8	0	DestinationListCreationStop(UnicodeString DeviceID)	Stop		DestinationListCreation	Informational		
+Microsoft-Windows-DXP	11	0	AutoPlayLaunchStart(UnicodeString DeviceID)	Start		AutoPlayLaunch	Informational		
+Microsoft-Windows-DXP	12	0	AutoPlayLaunchStop(UnicodeString DeviceID)	Stop		AutoPlayLaunch	Informational		
+Microsoft-Windows-DXP	13	0	LauncherStart(UnicodeString DeviceID)	Start		Launcher	Informational		
+Microsoft-Windows-DXP	14	0	LauncherStop(UnicodeString DeviceID)	Stop		Launcher	Informational		
+Microsoft-Windows-DXP	15	0	Launcher(UnicodeString DeviceID)			Launcher	Informational		
+Microsoft-Windows-DXP	16	0	Launcher16(UnicodeString DeviceID)			Launcher	Informational		
+Microsoft-Windows-DXP	18	0	LayoutInitialized(UnicodeString DeviceID)			LayoutInitialized	Informational		
+Microsoft-Windows-DXP	19	0	StatusStart(UnicodeString DeviceID)	Start		Status	Informational		
+Microsoft-Windows-DXP	20	0	StatusStop(UnicodeString DeviceID)	Stop		Status	Informational		
+Microsoft-Windows-DXP	21	0	Tasks()			Tasks	Informational		
+Microsoft-Windows-DXP	22	0	DeviceAccessStart()	Start		DeviceAccess	Informational		
+Microsoft-Windows-DXP	23	0	DeviceAccessStop()	Stop		DeviceAccess	Informational		
+Microsoft-Windows-DXP	24	0	TasksStart()	Start		Tasks	Informational		
+Microsoft-Windows-DXP	25	0	TasksStop()	Stop		Tasks	Informational		
+Microsoft-Windows-DXP	26	0	SSOStart()	Start		SSO	Informational		
+Microsoft-Windows-DXP	27	0	SSOStop()	Stop		SSO	Informational		
+Microsoft-Windows-DXP	28	0	DeviceConnectStop(UnicodeString DeviceID)	Stop		DeviceConnect	Informational		
+Microsoft-Windows-DXP	29	0	DeviceConnectStop29(UnicodeString DeviceID)	Stop		DeviceConnect	Informational		
+Microsoft-Windows-DXP	30	0	LayoutInitialized30()			LayoutInitialized	Informational		
+Microsoft-Windows-DXP	31	0	LayoutInitializedStart(UInt64 Object)	Start		LayoutInitialized	Informational		
+Microsoft-Windows-DXP	32	0	LayoutInitializedStop(UInt64 Object)	Stop		LayoutInitialized	Informational		
+Microsoft-Windows-DXP	33	0	LayoutInitialized33(UnicodeString DeviceID)			LayoutInitialized	Informational		

@@ -1,0 +1,33 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Serial-ClassExtension-V2	1	1	task_0_V1(UnicodeString ControlDeviceName)		PNP	task_0	Informational		
+Microsoft-Windows-Serial-ClassExtension-V2	2	1	task_02_V1(UnicodeString ControlDeviceName, HexInt32 Status)		PNP	task_0	Error		
+Microsoft-Windows-Serial-ClassExtension-V2	3	1	task_03_V1()		PNP	task_0	Informational		
+Microsoft-Windows-Serial-ClassExtension-V2	4	1	Rundownevents.Start_V1()	Start	Rundown	Rundownevents.	Informational		
+Microsoft-Windows-Serial-ClassExtension-V2	5	1	Rundownevents._V1(Pointer Device, Pointer TransmitTransferSmContext, Pointer ReceiveTransferSmContext, UnicodeString DeviceInstanceId)		Rundown	Rundownevents.	Informational		
+Microsoft-Windows-Serial-ClassExtension-V2	6	1	Rundownevents.Stop_V1()	Stop	Rundown	Rundownevents.	Informational		
+Microsoft-Windows-Serial-ClassExtension-V2	7	1	task_07_V1(Pointer Device, Pointer TransmitTransferSmContext, Pointer ReceiveTransferSmContext, UnicodeString DeviceInstanceId)		PNP	task_0	Informational		
+Microsoft-Windows-Serial-ClassExtension-V2	8	1	task_08_V1(Pointer Device)		PNP	task_0	Informational		
+Microsoft-Windows-Serial-ClassExtension-V2	9	1	I/Orequest.I/OStateMachineoperation._V1(Pointer TransferSmContext, HexInt32 Event)	I/OStateMachineoperation.	TransferStateMachine TransmitTransferStateMachine	I/Orequest.	Informational		
+Microsoft-Windows-Serial-ClassExtension-V2	10	1	I/Orequest.I/OStateMachineoperation.10_V1(Pointer TransferSmContext, HexInt32 FromState, HexInt32 Event, HexInt32 ToState)	I/OStateMachineoperation.	TransferStateMachine TransmitTransferStateMachine	I/Orequest.	Informational		
+Microsoft-Windows-Serial-ClassExtension-V2	11	1	I/Orequest._V1(Pointer TransferSmContext, HexInt32 FromState, HexInt32 Event, HexInt32 ToState)		TransferStateMachine TransmitTransferStateMachine	I/Orequest.	Error		
+Microsoft-Windows-Serial-ClassExtension-V2	12	1	I/Orequest.I/OStateMachineoperation.12_V1(Pointer TransferSmContext, HexInt32 Event)	I/OStateMachineoperation.	TransferStateMachine ReceiveTransferStateMachine	I/Orequest.	Informational		
+Microsoft-Windows-Serial-ClassExtension-V2	13	1	I/Orequest.I/OStateMachineoperation.13_V1(Pointer TransferSmContext, HexInt32 FromState, HexInt32 Event, HexInt32 ToState)	I/OStateMachineoperation.	TransferStateMachine ReceiveTransferStateMachine	I/Orequest.	Informational		
+Microsoft-Windows-Serial-ClassExtension-V2	14	1	I/Orequest.14_V1(Pointer TransferSmContext, HexInt32 FromState, HexInt32 Event, HexInt32 ToState)		TransferStateMachine ReceiveTransferStateMachine	I/Orequest.	Error		
+Microsoft-Windows-Serial-ClassExtension-V2	15	1	IOCTLrequest.Start_V1(Pointer Device, HexInt32 IOCTL, HexInt32 IOCTLInputBufferLength, Binary IOCTLInputBuffer)	Start	IOCTL	IOCTLrequest.	Informational		
+Microsoft-Windows-Serial-ClassExtension-V2	16	1	IOCTLrequest.Stop_V1(Pointer Device, HexInt32 IOCTL, HexInt32 Status, HexInt32 IOCTLOutputBufferLength, Binary IOCTLOutputBuffer)	Stop	IOCTL	IOCTLrequest.	Informational		
+Microsoft-Windows-Serial-ClassExtension-V2	17	1	I/Orequest.Start_V1(Pointer Device, UInt64 Length)	Start	IO TransmitIO	I/Orequest.	Informational		
+Microsoft-Windows-Serial-ClassExtension-V2	18	1	I/Orequest.Stop_V1(Pointer Device, HexInt32 Status, UInt64 Information)	Stop	IO TransmitIO	I/Orequest.	Informational		
+Microsoft-Windows-Serial-ClassExtension-V2	19	1	I/Orequest.I/Opayloadoperation._V1(Pointer Device, UInt64 Offset, UInt32 Length, HexInt32 TransferModeEvent, Binary Payload)	I/Opayloadoperation.	IOPayload TransmitIOPayload	I/Orequest.	Verbose		
+Microsoft-Windows-Serial-ClassExtension-V2	20	1	I/Orequest.Start20_V1(Pointer Device, UInt64 Length)	Start	IO ReceiveIO	I/Orequest.	Informational		
+Microsoft-Windows-Serial-ClassExtension-V2	21	1	I/Orequest.Stop21_V1(Pointer Device, HexInt32 Status, UInt64 Information)	Stop	IO ReceiveIO	I/Orequest.	Informational		
+Microsoft-Windows-Serial-ClassExtension-V2	22	1	I/Orequest.I/Opayloadoperation.22_V1(Pointer Device, UInt64 Offset, UInt32 Length, HexInt32 TransferModeEvent, Binary Payload)	I/Opayloadoperation.	IOPayload ReceiveIOPayload	I/Orequest.	Verbose		
+Microsoft-Windows-Serial-ClassExtension-V2	23	1	I/Orequest.23_V1(Pointer Device, UInt32 BytesSaved, UInt32 TotalBytes)		IO ReceiveIO	I/Orequest.	Informational		
+Microsoft-Windows-Serial-ClassExtension-V2	24	1	Powerstatetransitions.Start_V1(Pointer Device, HexInt32 TargetState)	Start	PowerStateTransition	Powerstatetransitions.	Informational		
+Microsoft-Windows-Serial-ClassExtension-V2	25	1	Powerstatetransitions.Start25_V1(Pointer Device, HexInt32 TargetState)	Start	PowerStateTransition	Powerstatetransitions.	Informational		
+Microsoft-Windows-Serial-ClassExtension-V2	26	1	Powerstatetransitions.Stop_V1(Pointer Device, HexInt32 TargetState, HexInt32 Status)	Stop	PowerStateTransition	Powerstatetransitions.	Informational		
+Microsoft-Windows-Serial-ClassExtension-V2	27	1	Powerstatetransitions.Stop27_V1(Pointer Device, HexInt32 TargetState, HexInt32 Status)	Stop	PowerStateTransition	Powerstatetransitions.	Informational		
+Microsoft-Windows-Serial-ClassExtension-V2	28	1	I/Orequest.28_V1(Pointer Device, HexInt32 Event)		IO	I/Orequest.	Informational		
+Microsoft-Windows-Serial-ClassExtension-V2	29	1	I/Orequest.I/OStateMachineoperation.29_V1(Pointer TransferSmContext, HexInt32 Event)	I/OStateMachineoperation.	TransferStateMachine TransmitTransferStateMachine	I/Orequest.	Informational		
+Microsoft-Windows-Serial-ClassExtension-V2	30	1	I/Orequest.I/OStateMachineoperation.30_V1(Pointer TransferSmContext, HexInt32 FromState, HexInt32 Event, HexInt32 ToState)	I/OStateMachineoperation.	TransferStateMachine TransmitTransferStateMachine	I/Orequest.	Informational		
+Microsoft-Windows-Serial-ClassExtension-V2	31	1	I/Orequest.I/OStateMachineoperation.31_V1(Pointer TransferSmContext, HexInt32 Event)	I/OStateMachineoperation.	TransferStateMachine ReceiveTransferStateMachine	I/Orequest.	Informational		
+Microsoft-Windows-Serial-ClassExtension-V2	32	1	I/Orequest.I/OStateMachineoperation.32_V1(Pointer TransferSmContext, HexInt32 FromState, HexInt32 Event, HexInt32 ToState)	I/OStateMachineoperation.	TransferStateMachine ReceiveTransferStateMachine	I/Orequest.	Informational		

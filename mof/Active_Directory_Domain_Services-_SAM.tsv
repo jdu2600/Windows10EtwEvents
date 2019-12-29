@@ -1,0 +1,107 @@
+provider	category	event_id	version	event(fields)	event_type	description
+Active Directory Domain Services: SAM	{0254ba6d-7ff0-4bfe-a3f9-8fd8da667641}	1	0	SamSetMemAttrsOfGrp_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM Set Member Attributes Of Group
+Active Directory Domain Services: SAM	{0254ba6d-7ff0-4bfe-a3f9-8fd8da667641}	2	0	SamSetMemAttrsOfGrp_End()	End	SAM Set Member Attributes Of Group
+Active Directory Domain Services: SAM	{07ffaa1d-34f6-49cd-b541-2f0d7dff15c4}	1	0	SamEnumUsersInDom_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM Enumerate Users In Domain
+Active Directory Domain Services: SAM	{07ffaa1d-34f6-49cd-b541-2f0d7dff15c4}	2	0	SamEnumUsersInDom_End()	End	SAM Enumerate Users In Domain
+Active Directory Domain Services: SAM	{0e3913c5-9760-4ced-b133-004a64e8d53c}	1	0	SamGetGrpsForUser_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM Get Groups For User
+Active Directory Domain Services: SAM	{0e3913c5-9760-4ced-b133-004a64e8d53c}	2	0	SamGetGrpsForUser_End()	End	SAM Get Groups For User
+Active Directory Domain Services: SAM	{19b30cde-3e41-4cff-83c8-3df2779f840c}	1	0	SamChangePwdComputer_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM Change Password Computer
+Active Directory Domain Services: SAM	{19b30cde-3e41-4cff-83c8-3df2779f840c}	2	0	SamChangePwdComputer_End()	End	SAM Change Password Computer
+Active Directory Domain Services: SAM	{1cf5fd19-1ac1-4324-84f7-970a634a91ee}	1	0	SamGetAliasMem_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM Get Alias Membership
+Active Directory Domain Services: SAM	{1cf5fd19-1ac1-4324-84f7-970a634a91ee}	2	0	SamGetAliasMem_End()	End	SAM Get Alias Membership
+Active Directory Domain Services: SAM	{1f228de8-8a6c-11d2-819e-0000f875a064}	1	0	SamPwdPushPdc_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM Password Push PDC
+Active Directory Domain Services: SAM	{1f228de8-8a6c-11d2-819e-0000f875a064}	2	0	SamPwdPushPdc_End()	End	SAM Password Push PDC
+Active Directory Domain Services: SAM	{25059476-899f-11d2-819e-0000f875a064}	1	0	SamNameById_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM Name By Id
+Active Directory Domain Services: SAM	{25059476-899f-11d2-819e-0000f875a064}	2	0	SamNameById_End()	End	SAM Name By Id
+Active Directory Domain Services: SAM	{250959aa-899d-11d2-819e-0000f875a064}	1	0	SamDelMemGrp_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM Delete Member From Group
+Active Directory Domain Services: SAM	{250959aa-899d-11d2-819e-0000f875a064}	2	0	SamDelMemGrp_End()	End	SAM Delete Member From Group
+Active Directory Domain Services: SAM	{26106246-4473-4295-841b-4a51c6afc3db}	1	0	SamSetInfoGrp_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM Set Information Group
+Active Directory Domain Services: SAM	{26106246-4473-4295-841b-4a51c6afc3db}	2	0	SamSetInfoGrp_End()	End	SAM Set Information Group
+Active Directory Domain Services: SAM	{2e991575-c2ed-42a7-97ff-a0d6571f1862}	1	0	SamSetBootKeyInfo_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM Set Boot Key Information
+Active Directory Domain Services: SAM	{2e991575-c2ed-42a7-97ff-a0d6571f1862}	2	0	SamSetBootKeyInfo_End()	End	SAM Set Boot Key Information
+Active Directory Domain Services: SAM	{33be4128-d02e-4b6f-949e-ab77cc8164b1}	1	0	SamGetBootKeyInfo_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM Get Boot Key Information
+Active Directory Domain Services: SAM	{33be4128-d02e-4b6f-949e-ab77cc8164b1}	2	0	SamGetBootKeyInfo_End()	End	SAM Get Boot Key Information
+Active Directory Domain Services: SAM	{39511dbe-899b-11d2-819e-0000f875a064}	1	0	SamUserCreate_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM User Create
+Active Directory Domain Services: SAM	{39511dbe-899b-11d2-819e-0000f875a064}	2	0	SamUserCreate_End()	End	SAM User Create
+Active Directory Domain Services: SAM	{3a2e63d1-5dc4-4168-85ea-3e331f88ce83}	1	0	SamAddMemToAlias_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM Add Member To Alias
+Active Directory Domain Services: SAM	{3a2e63d1-5dc4-4168-85ea-3e331f88ce83}	2	0	SamAddMemToAlias_End()	End	SAM Add Member To Alias
+Active Directory Domain Services: SAM	{419f025a-bf06-4673-af66-d230bec2af02}	1	0	SamQueryInfoAlias_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM Query Information Alias
+Active Directory Domain Services: SAM	{419f025a-bf06-4673-af66-d230bec2af02}	2	0	SamQueryInfoAlias_End()	End	SAM Query Information Alias
+Active Directory Domain Services: SAM	{45309ef4-c59e-425e-b95b-19f1c5a3c55a}	1	0	SamSetInfoDom_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM Set Information Domain
+Active Directory Domain Services: SAM	{45309ef4-c59e-425e-b95b-19f1c5a3c55a}	2	0	SamSetInfoDom_End()	End	SAM Set Information Domain
+Active Directory Domain Services: SAM	{45fc997e-899d-11d2-819e-0000f875a064}	1	0	SamPwdChng_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM Password Change
+Active Directory Domain Services: SAM	{45fc997e-899d-11d2-819e-0000f875a064}	2	0	SamPwdChng_End()	End	SAM Password Change
+Active Directory Domain Services: SAM	{4ff7a7db-43ca-470a-8b64-3003e2d22042}	1	0	SamGetUserDomPwdInfo_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM Get User Domain Password Information
+Active Directory Domain Services: SAM	{4ff7a7db-43ca-470a-8b64-3003e2d22042}	2	0	SamGetUserDomPwdInfo_End()	End	SAM Get User Domain Password Information
+Active Directory Domain Services: SAM	{5954bc51-c5ec-4aaa-831c-6f2c1b2515b6}	1	0	SamGetMemInGrp_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM Get Members In Group
+Active Directory Domain Services: SAM	{5954bc51-c5ec-4aaa-831c-6f2c1b2515b6}	2	0	SamGetMemInGrp_End()	End	SAM Get Members In Group
+Active Directory Domain Services: SAM	{5cec3d52-6eeb-474d-b468-58362888f1b0}	1	0	SamGetMemInAlias_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM Get Members In Alias
+Active Directory Domain Services: SAM	{5cec3d52-6eeb-474d-b468-58362888f1b0}	2	0	SamGetMemInAlias_End()	End	SAM Get Members In Alias
+Active Directory Domain Services: SAM	{5d11e02f-0c36-4180-ad07-89062c9df9ec}	1	0	SamEnumGrpsInDom_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM Enumerate Groups In Domain 
+Active Directory Domain Services: SAM	{5d11e02f-0c36-4180-ad07-89062c9df9ec}	2	0	SamEnumGrpsInDom_End()	End	SAM Enumerate Groups In Domain 
+Active Directory Domain Services: SAM	{5e612efd-c05e-4f76-bced-f5607aa3d46e}	1	0	SamCreateAliasInDom_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM Create Alias In Domain
+Active Directory Domain Services: SAM	{5e612efd-c05e-4f76-bced-f5607aa3d46e}	2	0	SamCreateAliasInDom_End()	End	SAM Create Alias In Domain
+Active Directory Domain Services: SAM	{5f7c4ba5-d6a4-4625-900e-48fa7811e06a}	1	0	SamDeleteGrp_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM Delete Group
+Active Directory Domain Services: SAM	{5f7c4ba5-d6a4-4625-900e-48fa7811e06a}	2	0	SamDeleteGrp_End()	End	SAM Delete Group
+Active Directory Domain Services: SAM	{62bef71e-899d-11d2-819e-0000f875a064}	1	0	SamUserPwdSet_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM User Password Set
+Active Directory Domain Services: SAM	{62bef71e-899d-11d2-819e-0000f875a064}	2	0	SamUserPwdSet_End()	End	SAM User Password Set
+Active Directory Domain Services: SAM	{632fcc78-6057-48f9-8d5f-4bb0f73d3cd1}	1	0	SamQueryInfoGrp_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM Query Information Group
+Active Directory Domain Services: SAM	{632fcc78-6057-48f9-8d5f-4bb0f73d3cd1}	2	0	SamQueryInfoGrp_End()	End	SAM Query Information Group
+Active Directory Domain Services: SAM	{676347f3-fd20-4e7d-90b1-77e35f84af9a}	1	0	SamQuerySecurityObj_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM Query Security Object
+Active Directory Domain Services: SAM	{676347f3-fd20-4e7d-90b1-77e35f84af9a}	2	0	SamQuerySecurityObj_End()	End	SAM Query Security Object
+Active Directory Domain Services: SAM	{6ba1639c-afc4-454e-b3e0-5e8f7fc39af9}	1	0	SamRemoveMemFromAlias_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM Remove Member From Alias
+Active Directory Domain Services: SAM	{6ba1639c-afc4-454e-b3e0-5e8f7fc39af9}	2	0	SamRemoveMemFromAlias_End()	End	SAM Remove Member From Alias
+Active Directory Domain Services: SAM	{6e1f2449-f1f3-4634-b51f-46e2c6625892}	1	0	SamOpenDomain_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM Open Domain
+Active Directory Domain Services: SAM	{6e1f2449-f1f3-4634-b51f-46e2c6625892}	2	0	SamOpenDomain_End()	End	SAM Open Domain
+Active Directory Domain Services: SAM	{74e10cbb-202e-4a97-871d-8547972b5141}	1	0	SamSetSecurityObj_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM Set Security Object
+Active Directory Domain Services: SAM	{74e10cbb-202e-4a97-871d-8547972b5141}	2	0	SamSetSecurityObj_End()	End	SAM Set Security Object
+Active Directory Domain Services: SAM	{7c65ceb0-75ba-46b9-884e-67e038c5b003}	1	0	SamEnumDomInSamSrv_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM Enumerate Domains In SAM Server
+Active Directory Domain Services: SAM	{7c65ceb0-75ba-46b9-884e-67e038c5b003}	2	0	SamEnumDomInSamSrv_End()	End	SAM Enumerate Domains In SAM Server
+Active Directory Domain Services: SAM	{880217b8-899d-11d2-819e-0000f875a064}	1	0	SamCompPwdSet_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM Computer Password Set
+Active Directory Domain Services: SAM	{880217b8-899d-11d2-819e-0000f875a064}	2	0	SamCompPwdSet_End()	End	SAM Computer Password Set
+Active Directory Domain Services: SAM	{8919f267-a053-4669-aa69-2da0d4a20d92}	1	0	SamRemoveMemFromForeignDom_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM Remove Member From Foreign Domain
+Active Directory Domain Services: SAM	{8919f267-a053-4669-aa69-2da0d4a20d92}	2	0	SamRemoveMemFromForeignDom_End()	End	SAM Remove Member From Foreign Domain
+Active Directory Domain Services: SAM	{89399c21-4aaf-408e-ba39-ab831a1298d5}	1	0	SamQueryInfoDom_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM Query Information Domain
+Active Directory Domain Services: SAM	{89399c21-4aaf-408e-ba39-ab831a1298d5}	2	0	SamQueryInfoDom_End()	End	SAM Query Information Domain
+Active Directory Domain Services: SAM	{8c89045c-3f5d-4289-939a-fb854000cb6b}	1	0	SamConnect_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM Connect
+Active Directory Domain Services: SAM	{8c89045c-3f5d-4289-939a-fb854000cb6b}	2	0	SamConnect_End()	End	SAM Connect
+Active Directory Domain Services: SAM	{96bd320f-1e51-4c06-86f3-ee64f0a2f0cf}	1	0	SamProcessMappedAttributes_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM Process Mapped Attributes
+Active Directory Domain Services: SAM	{96bd320f-1e51-4c06-86f3-ee64f0a2f0cf}	2	0	SamProcessMappedAttributes_End()	End	SAM Process Mapped Attributes
+Active Directory Domain Services: SAM	{a11e5d6b-353d-4bf6-97a8-ede4cba45524}	1	0	SamLookupDomInSamSrv_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM Lookup Domain In SAM Server
+Active Directory Domain Services: SAM	{a11e5d6b-353d-4bf6-97a8-ede4cba45524}	2	0	SamLookupDomInSamSrv_End()	End	SAM Lookup Domain In SAM Server
+Active Directory Domain Services: SAM	{a41d90bc-899d-11d2-819e-0000f875a064}	1	0	SamIdByName_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM Id By Name
+Active Directory Domain Services: SAM	{a41d90bc-899d-11d2-819e-0000f875a064}	2	0	SamIdByName_End()	End	SAM Id By Name
+Active Directory Domain Services: SAM	{abb14b68-899b-11d2-819e-0000f875a064}	1	0	SamCompCreate_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM Computer Create
+Active Directory Domain Services: SAM	{abb14b68-899b-11d2-819e-0000f875a064}	2	0	SamCompCreate_End()	End	SAM Computer Create
+Active Directory Domain Services: SAM	{aceb7864-9a14-4c73-8ed0-94ec53f6651c}	1	0	SamGetDisplayEnumIdx_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM Get Display Enumeration Index
+Active Directory Domain Services: SAM	{aceb7864-9a14-4c73-8ed0-94ec53f6651c}	2	0	SamGetDisplayEnumIdx_End()	End	SAM Get Display Enumeration Index
+Active Directory Domain Services: SAM	{b41d7bdf-4249-4651-ac0f-1879be0d5c0c}	1	0	SamOpenGrp_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM Open Group
+Active Directory Domain Services: SAM	{b41d7bdf-4249-4651-ac0f-1879be0d5c0c}	2	0	SamOpenGrp_End()	End	SAM Open Group
+Active Directory Domain Services: SAM	{b8d2bc4a-1525-4386-bb1c-6bb2e24eb001}	1	0	SamOpenUser_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM Open User
+Active Directory Domain Services: SAM	{b8d2bc4a-1525-4386-bb1c-6bb2e24eb001}	2	0	SamOpenUser_End()	End	SAM Open User
+Active Directory Domain Services: SAM	{ba41c883-592f-4ab9-b2a9-c6263b011fe7}	1	0	SamOpenAlias_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM Open Alias
+Active Directory Domain Services: SAM	{ba41c883-592f-4ab9-b2a9-c6263b011fe7}	2	0	SamOpenAlias_End()	End	SAM Open Alias
+Active Directory Domain Services: SAM	{bc80e27f-6b74-4da9-abfc-2e4e82b81000}	1	0	SamSetInfoUser_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM Set Information User
+Active Directory Domain Services: SAM	{bc80e27f-6b74-4da9-abfc-2e4e82b81000}	2	0	SamSetInfoUser_End()	End	SAM Set Information User
+Active Directory Domain Services: SAM	{c2a0e094-a178-4372-b4fe-a33e48c3585c}	1	0	SamDeleteUser_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM Delete User
+Active Directory Domain Services: SAM	{c2a0e094-a178-4372-b4fe-a33e48c3585c}	2	0	SamDeleteUser_End()	End	SAM Delete User
+Active Directory Domain Services: SAM	{c8eb5e5c-899c-11d2-819e-0000f875a064}	1	0	SamGrpCreate_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM Group Create
+Active Directory Domain Services: SAM	{c8eb5e5c-899c-11d2-819e-0000f875a064}	2	0	SamGrpCreate_End()	End	SAM Group Create
+Active Directory Domain Services: SAM	{dbc0ceab-cff3-4c0f-85f2-0c2107142f36}	1	0	SamCloseHandle_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM Close Handle
+Active Directory Domain Services: SAM	{dbc0ceab-cff3-4c0f-85f2-0c2107142f36}	2	0	SamCloseHandle_End()	End	SAM Close Handle
+Active Directory Domain Services: SAM	{e1cb227a-6d55-4282-a5f7-6fa4a5922c0b}	1	0	SamQueryInfoUser_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM Query Information User
+Active Directory Domain Services: SAM	{e1cb227a-6d55-4282-a5f7-6fa4a5922c0b}	2	0	SamQueryInfoUser_End()	End	SAM Query Information User
+Active Directory Domain Services: SAM	{e712d39d-a3a6-4224-a1bd-4717b24e4e8c}	1	0	SamSetInfoAlias_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM Set Information Alias
+Active Directory Domain Services: SAM	{e712d39d-a3a6-4224-a1bd-4717b24e4e8c}	2	0	SamSetInfoAlias_End()	End	SAM Set Information Alias
+Active Directory Domain Services: SAM	{eb225178-f5f0-42b7-895b-db89276f647a}	1	0	SamQueryDisplayInfo_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM Query Display Information
+Active Directory Domain Services: SAM	{eb225178-f5f0-42b7-895b-db89276f647a}	2	0	SamQueryDisplayInfo_End()	End	SAM Query Display Information
+Active Directory Domain Services: SAM	{f1fea491-bfa6-436c-a178-a70d03b4fb1a}	1	0	SamEnumAliasesInDom_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM Enumerate Aliases In Domain
+Active Directory Domain Services: SAM	{f1fea491-bfa6-436c-a178-a70d03b4fb1a}	2	0	SamEnumAliasesInDom_End()	End	SAM Enumerate Aliases In Domain
+Active Directory Domain Services: SAM	{f8012701-7e99-49c5-b832-1db8bc4a610d}	1	0	SamShutdownSamSrv_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM Shutdown SAM Server
+Active Directory Domain Services: SAM	{f8012701-7e99-49c5-b832-1db8bc4a610d}	2	0	SamShutdownSamSrv_End()	End	SAM Shutdown SAM Server
+Active Directory Domain Services: SAM	{f9d2ba6a-899c-11d2-819e-0000f875a064}	1	0	SamAddMemGrp_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM Add Member to Group
+Active Directory Domain Services: SAM	{f9d2ba6a-899c-11d2-819e-0000f875a064}	2	0	SamAddMemGrp_End()	End	SAM Add Member to Group
+Active Directory Domain Services: SAM	{fbfe2540-452b-41bb-9219-dfb6fd1a129b}	1	0	SamDeleteAlias_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM Delete Alias
+Active Directory Domain Services: SAM	{fbfe2540-452b-41bb-9219-dfb6fd1a129b}	2	0	SamDeleteAlias_End()	End	SAM Delete Alias
+Active Directory Domain Services: SAM	{ff0c6ce2-9528-4a91-b9c7-bcf834b6f79a}	1	0	SamGetDomPwdInfo_Start(String Sam, UInt32 Version, String Sid, String Client)	Start	SAM Get Domain Password Information
+Active Directory Domain Services: SAM	{ff0c6ce2-9528-4a91-b9c7-bcf834b6f79a}	2	0	SamGetDomPwdInfo_End()	End	SAM Get Domain Password Information

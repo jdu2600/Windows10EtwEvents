@@ -1,0 +1,8 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Services	101	0	Autostart()	Start	Performance	Autostart	Informational		
+Microsoft-Windows-Services	102	0	AutostartStop()	Stop	Performance	Autostart	Informational		
+Microsoft-Windows-Services	103	0	StartingGroupStart(UnicodeString GroupName)	Start	Performance	StartingGroup	Informational		
+Microsoft-Windows-Services	104	0	StartingGroupStop(UnicodeString GroupName)	Stop	Performance	StartingGroup	Informational		
+Microsoft-Windows-Services	105	0	ServiceStatusChange(UInt32 ExecutionPhase, UInt32 CurrentState, UInt32 StartType, UInt32 PID, UnicodeString ServiceName, UnicodeString ImageName)	StatusChange	Performance	ServiceStatusChange	Informational		
+Microsoft-Windows-Services	106	0	PerfCriticalAutostart()	Start	Performance	PerfCriticalAutostart	Informational		
+Microsoft-Windows-Services	107	0	PerfCriticalAutostartStop()	Stop	Performance	PerfCriticalAutostart	Informational		

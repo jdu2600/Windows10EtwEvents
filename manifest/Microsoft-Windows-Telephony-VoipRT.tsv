@@ -1,0 +1,22 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Telephony-VoipRT	1	0	task_0(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		Error	task_0	Error		
+Microsoft-Windows-Telephony-VoipRT	2	0	task_02(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		keyword_400000000000	task_0	Warning		
+Microsoft-Windows-Telephony-VoipRT	10	0	task_010(UnicodeString Prop_UnicodeString)		Debug	task_0	Verbose		
+Microsoft-Windows-Telephony-VoipRT	100	0	task_0100()		VoipCallCoordinator	task_0	Informational		
+Microsoft-Windows-Telephony-VoipRT	101	0	task_0101()		VoipCallCoordinator	task_0	Informational		
+Microsoft-Windows-Telephony-VoipRT	102	0	task_0102(UInt32 Prop_HexInt32)		VoipCallCoordinator	task_0	Informational		
+Microsoft-Windows-Telephony-VoipRT	103	0	task_0103(UInt32 Prop_HexInt32)		VoipCallCoordinator	task_0	Informational		
+Microsoft-Windows-Telephony-VoipRT	104	0	task_0104(UnicodeString Prop_UnicodeString_1, UnicodeString Prop_UnicodeString_2)		VoipCallCoordinator	task_0	Informational		
+Microsoft-Windows-Telephony-VoipRT	105	0	task_0105(UInt32 Prop_HexInt32, GUID Prop_Guid)		VoipCallCoordinator	task_0	Informational		
+Microsoft-Windows-Telephony-VoipRT	106	0	task_0106(UInt32 Prop_HexInt32)		VoipCallCoordinator	task_0	Informational		
+Microsoft-Windows-Telephony-VoipRT	120	0	task_0120(UInt32 Prop_HexInt32)		VoipPhoneCall	task_0	Informational		
+Microsoft-Windows-Telephony-VoipRT	121	0	task_0121(UInt32 Prop_HexInt32)		VoipPhoneCall	task_0	Informational		
+Microsoft-Windows-Telephony-VoipRT	122	0	task_0122(UInt32 Prop_HexInt32)		VoipPhoneCall	task_0	Informational		
+Microsoft-Windows-Telephony-VoipRT	123	0	task_0123(UInt32 Prop_HexInt32)		VoipPhoneCall	task_0	Informational		
+Microsoft-Windows-Telephony-VoipRT	124	0	task_0124(UInt32 Prop_HexInt32)		VoipPhoneCall	task_0	Informational		
+Microsoft-Windows-Telephony-VoipRT	200	0	IncomingCallStart()	Start	Performance	IncomingCall	Verbose		
+Microsoft-Windows-Telephony-VoipRT	201	0	StartCallStart()	Start	Performance	StartCall	Verbose		
+Microsoft-Windows-Telephony-VoipRT	202	0	StartCallStop()	Stop	Performance	StartCall	Verbose		
+Microsoft-Windows-Telephony-VoipRT	203	0	EndCallStart()	Start	Performance	EndCall	Verbose		
+Microsoft-Windows-Telephony-VoipRT	206	0	ProcessMuteStateNotificationStart()	Start	Performance	ProcessMuteStateNotification	Verbose		
+Microsoft-Windows-Telephony-VoipRT	207	0	ProcessMuteStateNotificationStart207()	Start	Performance	ProcessMuteStateNotification	Verbose		

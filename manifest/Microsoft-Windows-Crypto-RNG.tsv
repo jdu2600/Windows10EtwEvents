@@ -1,0 +1,10 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Crypto-RNG	1	0	GatherentropyforthesystemrandomnumbergeneratorStart(UInt64 SourceNumber, UnicodeString SourceName, UInt32 SourceType)	Start	KEYWORD_SYSTEMRNG_ENTROPY_REGISTRATION	Gatherentropyforthesystemrandomnumbergenerator	Informational		
+Microsoft-Windows-Crypto-RNG	2	0	GatherentropyforthesystemrandomnumbergeneratorStop(UInt64 SourceNumber, UnicodeString SourceName)	Stop	KEYWORD_SYSTEMRNG_ENTROPY_REGISTRATION	Gatherentropyforthesystemrandomnumbergenerator	Informational		
+Microsoft-Windows-Crypto-RNG	3	0	Gatherentropyforthesystemrandomnumbergenerator(UInt64 SourceNumber, UInt32 BytesProvided, Int32 EntropyEstimate, UInt32 nData, Binary Data)		KEYWORD_SYSTEMRNG_ENTROPY_DATA	Gatherentropyforthesystemrandomnumbergenerator	Informational		
+Microsoft-Windows-Crypto-RNG	4	0	Gatherentropyforthesystemrandomnumbergenerator4(UInt64 SourceNumber, HexInt32 ResultStatus, UInt64 TimeTaken)		KEYWORD_SYSTEMRNG_ENTROPY_DATA	Gatherentropyforthesystemrandomnumbergenerator	Informational		
+Microsoft-Windows-Crypto-RNG	16	0	Gatherentropyforthesystemrandomnumbergenerator16(UInt32 Source, UInt32 Policy, UInt32 ResultCode, HexInt32 ResultStatus, UInt64 Time, UInt32 BytesProvided, UInt32 nData, Binary Data)		KEYWORD_SYSTEMRNG_ENTROPY_DATA	Gatherentropyforthesystemrandomnumbergenerator	Informational		
+Microsoft-Windows-Crypto-RNG	32	0	Gatherentropyforthesystemrandomnumbergenerator32(UInt64 PoolReseedCount, UInt32 ReseedType, UInt32 nData, Binary Data)		KEYWORD_SYSTEMRNG_ENTROPY_DATA	Gatherentropyforthesystemrandomnumbergenerator	Informational		
+Microsoft-Windows-Crypto-RNG	33	0	Gatherentropyforthesystemrandomnumbergenerator33(UInt32 PoolNo, UInt32 nData, Binary Data)		KEYWORD_SYSTEMRNG_ENTROPY_DATA	Gatherentropyforthesystemrandomnumbergenerator	Informational		
+Microsoft-Windows-Crypto-RNG	48	0	Prng(HexInt64 PrngAddress, UInt32 nData, Binary Data)		KEYWORD_SYSTEMRNG_PRNG	Prng	Informational		
+Microsoft-Windows-Crypto-RNG	49	0	Prng49(HexInt64 PrngAddress, UInt64 BytesProduced, UInt32 nData, Binary Data)		KEYWORD_SYSTEMRNG_PRNG	Prng	Informational		

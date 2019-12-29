@@ -1,0 +1,85 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-TSF-UIManager	1	0	UIManager_CreateInstanceStart()	Start	TSF_UIManager	UIManager_CreateInstance	Informational		
+Microsoft-Windows-TSF-UIManager	2	0	UIManager_CreateInstanceStop()	Stop	TSF_UIManager	UIManager_CreateInstance	Informational		
+Microsoft-Windows-TSF-UIManager	3	0	UIManager_DestructorStart()	Start	TSF_UIManager	UIManager_Destructor	Informational		
+Microsoft-Windows-TSF-UIManager	4	0	UIManager_DestructorStop()	Stop	TSF_UIManager	UIManager_Destructor	Informational		
+Microsoft-Windows-TSF-UIManager	5	0	IUIManager_ShowCandidateListStart(UInt32 contextFlags, Int32 cItems, Int32 targetRangeLeft, Int32 targetRangeTop, Int32 targetRangeRight, Int32 targetRangeBottom)	Start	TSF_UIManager	IUIManager_ShowCandidateList	Informational		
+Microsoft-Windows-TSF-UIManager	6	0	IUIManager_ShowCandidateListStop()	Stop	TSF_UIManager	IUIManager_ShowCandidateList	Informational		
+Microsoft-Windows-TSF-UIManager	7	0	IUIManager_ShowImeCommandsStart(UInt32 contextFlags, Int32 cItems, Int32 targetRangeLeft, Int32 targetRangeTop, Int32 targetRangeRight, Int32 targetRangeBottom)	Start	TSF_UIManager	IUIManager_ShowImeCommands	Informational		
+Microsoft-Windows-TSF-UIManager	8	0	IUIManager_ShowImeCommandsStop()	Stop	TSF_UIManager	IUIManager_ShowImeCommands	Informational		
+Microsoft-Windows-TSF-UIManager	9	0	IUIManager_OnTargetPositionChangingStart()	Start	TSF_UIManager	IUIManager_OnTargetPositionChanging	Informational		
+Microsoft-Windows-TSF-UIManager	10	0	IUIManager_OnTargetPositionChangingStop()	Stop	TSF_UIManager	IUIManager_OnTargetPositionChanging	Informational		
+Microsoft-Windows-TSF-UIManager	11	0	IUIManager_OnTargetPositionChangedStart(Int32 targetRangeLeft, Int32 targetRangeTop, Int32 targetRangeRight, Int32 targetRangeBottom)	Start	TSF_UIManager	IUIManager_OnTargetPositionChanged	Informational		
+Microsoft-Windows-TSF-UIManager	12	0	IUIManager_OnTargetPositionChangedStop()	Stop	TSF_UIManager	IUIManager_OnTargetPositionChanged	Informational		
+Microsoft-Windows-TSF-UIManager	13	0	IUIManager_RefreshStart(UInt32 start, UInt32 end)	Start	TSF_UIManager	IUIManager_Refresh	Informational		
+Microsoft-Windows-TSF-UIManager	14	0	IUIManager_RefreshStop()	Stop	TSF_UIManager	IUIManager_Refresh	Informational		
+Microsoft-Windows-TSF-UIManager	15	0	IUIManager_HideStart()	Start	TSF_UIManager	IUIManager_Hide	Informational		
+Microsoft-Windows-TSF-UIManager	16	0	IUIManager_HideStop()	Stop	TSF_UIManager	IUIManager_Hide	Informational		
+Microsoft-Windows-TSF-UIManager	17	0	IUIManager_OnKeyPressedStart()	Start	TSF_UIManager	IUIManager_OnKeyPressed	Informational		
+Microsoft-Windows-TSF-UIManager	18	0	IUIManager_OnKeyPressedStop()	Stop	TSF_UIManager	IUIManager_OnKeyPressed	Informational		
+Microsoft-Windows-TSF-UIManager	19	0	UIManager_UpdateKeyboardRectStart(Int32 left, Int32 top, Int32 right, Int32 bottom)	Start	TSF_UIManager	UIManager_UpdateKeyboardRect	Informational		
+Microsoft-Windows-TSF-UIManager	20	0	UIManager_UpdateKeyboardRectStop()	Stop	TSF_UIManager	UIManager_UpdateKeyboardRect	Informational		
+Microsoft-Windows-TSF-UIManager	21	0	UIManager_OnAnimationStart()	Start	TSF_UIManager	UIManager_OnAnimationStart	Informational		
+Microsoft-Windows-TSF-UIManager	22	0	UIManager_OnAnimationStartStop()	Stop	TSF_UIManager	UIManager_OnAnimationStart	Informational		
+Microsoft-Windows-TSF-UIManager	23	0	UIManager_OnAnimationFinishStart()	Start	TSF_UIManager	UIManager_OnAnimationFinish	Informational		
+Microsoft-Windows-TSF-UIManager	24	0	UIManager_OnAnimationFinishStop()	Stop	TSF_UIManager	UIManager_OnAnimationFinish	Informational		
+Microsoft-Windows-TSF-UIManager	25	0	UIManager_OnKeyboardUIActionStart()	Start	TSF_UIManager	UIManager_OnKeyboardUIAction	Informational		
+Microsoft-Windows-TSF-UIManager	26	0	UIManager_OnKeyboardUIActionStop()	Stop	TSF_UIManager	UIManager_OnKeyboardUIAction	Informational		
+Microsoft-Windows-TSF-UIManager	27	0	UIManager_OnTimerStart()	Start	TSF_UIManager	UIManager_OnTimer	Informational		
+Microsoft-Windows-TSF-UIManager	28	0	UIManager_OnTimerStop()	Stop	TSF_UIManager	UIManager_OnTimer	Informational		
+Microsoft-Windows-TSF-UIManager	29	0	UIManager_OnMouseEventStart()	Start	TSF_UIManager	UIManager_OnMouseEvent	Informational		
+Microsoft-Windows-TSF-UIManager	30	0	UIManager_OnMouseEventStop()	Stop	TSF_UIManager	UIManager_OnMouseEvent	Informational		
+Microsoft-Windows-TSF-UIManager	100	0	IMEPreferencesAndActionsHelper_CreateInstanceStart()	Start	TSF_UIManager	IMEPreferencesAndActionsHelper_CreateInstance	Informational		
+Microsoft-Windows-TSF-UIManager	101	0	IMEPreferencesAndActionsHelper_CreateInstanceStop()	Stop	TSF_UIManager	IMEPreferencesAndActionsHelper_CreateInstance	Informational		
+Microsoft-Windows-TSF-UIManager	102	0	IMEPreferencesAndActionsHelper_LoadDataStart(UInt32 langId, GUID clsId, GUID guidProfile)	Start	TSF_UIManager	IMEPreferencesAndActionsHelper_LoadData	Informational		
+Microsoft-Windows-TSF-UIManager	103	0	IMEPreferencesAndActionsHelper_LoadDataStop()	Stop	TSF_UIManager	IMEPreferencesAndActionsHelper_LoadData	Informational		
+Microsoft-Windows-TSF-UIManager	200	0	CommandingUIManager_CreateInstanceStart()	Start	TSF_UIManager	CommandingUIManager_CreateInstance	Informational		
+Microsoft-Windows-TSF-UIManager	201	0	CommandingUIManager_CreateInstanceStop()	Stop	TSF_UIManager	CommandingUIManager_CreateInstance	Informational		
+Microsoft-Windows-TSF-UIManager	202	0	CommandingUIManager_OnCommandClickedStart()	Start	TSF_UIManager	CommandingUIManager_OnCommandClicked	Informational		
+Microsoft-Windows-TSF-UIManager	203	0	CommandingUIManager_OnCommandClickedStop()	Stop	TSF_UIManager	CommandingUIManager_OnCommandClicked	Informational		
+Microsoft-Windows-TSF-UIManager	204	0	CommandingUIManager_OnCommandShowMenuStart()	Start	TSF_UIManager	CommandingUIManager_OnCommandShowMenu	Informational		
+Microsoft-Windows-TSF-UIManager	205	0	CommandingUIManager_OnCommandShowMenuStop()	Stop	TSF_UIManager	CommandingUIManager_OnCommandShowMenu	Informational		
+Microsoft-Windows-TSF-UIManager	206	0	CommandingUIManager_HideImmediateStart()	Start	TSF_UIManager	CommandingUIManager_HideImmediate	Informational		
+Microsoft-Windows-TSF-UIManager	207	0	CommandingUIManager_HideImmediateStop()	Stop	TSF_UIManager	CommandingUIManager_HideImmediate	Informational		
+Microsoft-Windows-TSF-UIManager	208	0	CommandingUIManager_ShowOnTimerStart()	Start	TSF_UIManager	CommandingUIManager_ShowOnTimer	Informational		
+Microsoft-Windows-TSF-UIManager	209	0	CommandingUIManager_ShowOnTimerStop()	Stop	TSF_UIManager	CommandingUIManager_ShowOnTimer	Informational		
+Microsoft-Windows-TSF-UIManager	210	0	CommandingUIManager_AutoDismissStart()	Start	TSF_UIManager	CommandingUIManager_AutoDismiss	Informational		
+Microsoft-Windows-TSF-UIManager	211	0	CommandingUIManager_AutoDismissStop()	Stop	TSF_UIManager	CommandingUIManager_AutoDismiss	Informational		
+Microsoft-Windows-TSF-UIManager	212	0	CommandingUI_Click()		TSF_UIManager	CommandingUI_Click	Informational		
+Microsoft-Windows-TSF-UIManager	213	0	CommandingUI_ContextMenuRequested()		TSF_UIManager	CommandingUI_ContextMenuRequested	Informational		
+Microsoft-Windows-TSF-UIManager	214	0	CommandingUI_ContextMenuModeSelected(UInt32 value)		TSF_UIManager	CommandingUI_ContextMenuModeSelected	Informational		
+Microsoft-Windows-TSF-UIManager	215	0	CommandingUI_ContextMenuCanceled()		TSF_UIManager	CommandingUI_ContextMenuCanceled	Informational		
+Microsoft-Windows-TSF-UIManager	216	0	CommandingUI_UpdatePosition(Int32 left, Int32 top, Int32 right, Int32 bottom)		TSF_UIManager	CommandingUI_UpdatePosition	Informational		
+Microsoft-Windows-TSF-UIManager	300	0	CandidateWindowUIManager_CreateInstanceStart()	Start	TSF_UIManager	CandidateWindowUIManager_CreateInstance	Informational		
+Microsoft-Windows-TSF-UIManager	301	0	CandidateWindowUIManager_CreateInstanceStop()	Stop	TSF_UIManager	CandidateWindowUIManager_CreateInstance	Informational		
+Microsoft-Windows-TSF-UIManager	302	0	CandidateWindow_ShowStart()	Start	TSF_UIManager	CandidateWindow_Show	Informational		
+Microsoft-Windows-TSF-UIManager	303	0	CandidateWindow_ShowStop()	Stop	TSF_UIManager	CandidateWindow_Show	Informational		
+Microsoft-Windows-TSF-UIManager	304	0	CandidateWindow_UpdateStart()	Start	TSF_UIManager	CandidateWindow_Update	Informational		
+Microsoft-Windows-TSF-UIManager	305	0	CandidateWindow_UpdateStop()	Stop	TSF_UIManager	CandidateWindow_Update	Informational		
+Microsoft-Windows-TSF-UIManager	306	0	CandidateWindow_HideStart()	Start	TSF_UIManager	CandidateWindow_Hide	Informational		
+Microsoft-Windows-TSF-UIManager	307	0	CandidateWindow_HideStop()	Stop	TSF_UIManager	CandidateWindow_Hide	Informational		
+Microsoft-Windows-TSF-UIManager	308	0	CandidateWindow_HandleActionStart(UInt32 action, Int32 param)	Start	TSF_UIManager	CandidateWindow_HandleAction	Informational		
+Microsoft-Windows-TSF-UIManager	309	0	CandidateWindow_HandleActionStop()	Stop	TSF_UIManager	CandidateWindow_HandleAction	Informational		
+Microsoft-Windows-TSF-UIManager	310	0	CandidateWindow_UpdatePosition(Int32 left, Int32 top, Int32 right, Int32 bottom)		TSF_UIManager	CandidateWindow_UpdatePosition	Informational		
+Microsoft-Windows-TSF-UIManager	311	0	CandidateWindow_SetView(UInt32 langid, UInt32 viewflags)		TSF_UIManager	CandidateWindow_SetView	Informational		
+Microsoft-Windows-TSF-UIManager	312	0	CandidateWindow_CreateUIThreadStart()	Start	TSF_UIManager	CandidateWindow_CreateUIThread	Informational		
+Microsoft-Windows-TSF-UIManager	313	0	CandidateWindow_CreateUIThreadStop()	Stop	TSF_UIManager	CandidateWindow_CreateUIThread	Informational		
+Microsoft-Windows-TSF-UIManager	350	0	CandidateView_Click(UInt32 value)		TSF_UIManager	CandidateView_Click	Informational		
+Microsoft-Windows-TSF-UIManager	351	0	CandidateView_SetTopStart()	Start	TSF_UIManager	CandidateView_SetTop	Informational		
+Microsoft-Windows-TSF-UIManager	352	0	CandidateView_SetTopStop()	Stop	TSF_UIManager	CandidateView_SetTop	Informational		
+Microsoft-Windows-TSF-UIManager	353	0	CandidateView_CreateInstanceStart()	Start	TSF_UIManager	CandidateView_CreateInstance	Informational		
+Microsoft-Windows-TSF-UIManager	354	0	CandidateView_CreateInstanceStop()	Stop	TSF_UIManager	CandidateView_CreateInstance	Informational		
+Microsoft-Windows-TSF-UIManager	355	0	CandidateView_SetCandidateListStart()	Start	TSF_UIManager	CandidateView_SetCandidateList	Informational		
+Microsoft-Windows-TSF-UIManager	356	0	CandidateView_SetCandidateListStop()	Stop	TSF_UIManager	CandidateView_SetCandidateList	Informational		
+Microsoft-Windows-TSF-UIManager	357	0	CandidateView_CloudConsentButton_Click()		TSF_UIManager	CandidateView_CloudConsentButton_Click	Informational		
+Microsoft-Windows-TSF-UIManager	358	0	CandidateView_CloudConsentHyperlink_Click()		TSF_UIManager	CandidateView_CloudConsentHyperlink_Click	Informational		
+Microsoft-Windows-TSF-UIManager	400	0	TsfCandidateList_GetItemStart(UInt32 value)	Start	TSF_UIManager	TsfCandidateList_GetItem	Informational		
+Microsoft-Windows-TSF-UIManager	401	0	TsfCandidateList_GetItemStop()	Stop	TSF_UIManager	TsfCandidateList_GetItem	Informational		
+Microsoft-Windows-TSF-UIManager	402	0	TsfCandidateList_SetSelectionStart(UInt32 index, Boolean commit)	Start	TSF_UIManager	TsfCandidateList_SetSelection	Informational		
+Microsoft-Windows-TSF-UIManager	403	0	TsfCandidateList_SetSelectionStop()	Stop	TSF_UIManager	TsfCandidateList_SetSelection	Informational		
+Microsoft-Windows-TSF-UIManager	500	0	CandListData_CreateStart()	Start	TSF_UIManager	CandListData_Create	Informational		
+Microsoft-Windows-TSF-UIManager	501	0	CandListData_CreateStop()	Stop	TSF_UIManager	CandListData_Create	Informational		
+Microsoft-Windows-TSF-UIManager	502	0	CandListData_RefreshStart(UInt32 start, UInt32 end)	Start	TSF_UIManager	CandListData_Refresh	Informational		
+Microsoft-Windows-TSF-UIManager	503	0	CandListData_RefreshStop()	Stop	TSF_UIManager	CandListData_Refresh	Informational		
+Microsoft-Windows-TSF-UIManager	504	0	CandListData_RefreshStart504(UInt32 start, UInt32 end)	Start	TSF_UIManager	CandListData_Refresh	Informational		
+Microsoft-Windows-TSF-UIManager	505	0	CandListData_GrowCacheStop()	Stop	TSF_UIManager	CandListData_GrowCache	Informational		

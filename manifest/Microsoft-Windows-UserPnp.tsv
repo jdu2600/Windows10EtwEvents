@@ -1,0 +1,64 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-UserPnp	7550	0	PnP_PlugPlay_DeviceInstall(UnicodeString DeviceId)		UserPnp	PnP_PlugPlay_DeviceInstall	Informational		
+Microsoft-Windows-UserPnp	7551	0	PnP_PlugPlay_ProcessDeviceInstallBatchStart(UInt32 ThreadId)	Start	UserPnp	PnP_PlugPlay_ProcessDeviceInstallBatch	Informational		
+Microsoft-Windows-UserPnp	7552	0	PnP_PlugPlay_ProcessDeviceInstallBatchStop(UInt32 ThreadId)	Stop	UserPnp	PnP_PlugPlay_ProcessDeviceInstallBatch	Informational		
+Microsoft-Windows-UserPnp	7553	0	PnP_PlugPlay_DeviceInstall7553(UInt32 ThreadId, UnicodeString DeviceId)		UserPnp	PnP_PlugPlay_DeviceInstall	Informational		
+Microsoft-Windows-UserPnp	7554	0	PnP_PlugPlay_DeviceInstall7554(UInt32 ThreadId)		UserPnp	PnP_PlugPlay_DeviceInstall	Informational		
+Microsoft-Windows-UserPnp	7555	0	PnP_PlugPlay_DeviceInstall7555(UnicodeString ChildDevice, UnicodeString ParentDevice)		UserPnp	PnP_PlugPlay_DeviceInstall	Informational		
+Microsoft-Windows-UserPnp	7556	0	PnP_PlugPlay_DeviceInstall7556(UnicodeString DeviceId)		UserPnp	PnP_PlugPlay_DeviceInstall	Informational		
+Microsoft-Windows-UserPnp	7700	0	PnP_SetupAPI_CallClassInstallerStart(UnicodeString DIF_CODE, HexInt32 ErrorCode)	Start	UserPnp	PnP_SetupAPI_CallClassInstaller	Informational		
+Microsoft-Windows-UserPnp	7701	0	PnP_SetupAPI_CallClassInstallerStop(UnicodeString DIF_CODE, HexInt32 ErrorCode)	Stop	UserPnp	PnP_SetupAPI_CallClassInstaller	Informational		
+Microsoft-Windows-UserPnp	7702	0	PnP_Drvinst_ProcessCoreDeviceInstallStart()	Start	PerfTrackContext	PnP_Drvinst_ProcessCoreDeviceInstall	Informational		
+Microsoft-Windows-UserPnp	7703	0	PnP_Drvinst_ProcessCoreDeviceInstallStop()	Stop		PnP_Drvinst_ProcessCoreDeviceInstall	Informational		
+Microsoft-Windows-UserPnp	7704	0	PnP_Drvinst_WaitCoreInstallMutexStart()	Start	UserPnp	PnP_Drvinst_WaitCoreInstallMutex	Informational		
+Microsoft-Windows-UserPnp	7705	0	PnP_Drvinst_WaitCoreInstallMutexStop()	Stop	UserPnp	PnP_Drvinst_WaitCoreInstallMutex	Informational		
+Microsoft-Windows-UserPnp	7708	0	PnP_SetupAPI_StageDriverPackageStart()	Start		PnP_SetupAPI_StageDriverPackage	Informational		
+Microsoft-Windows-UserPnp	7709	0	PnP_SetupAPI_StageDriverPackageStop()	Stop		PnP_SetupAPI_StageDriverPackage	Informational		
+Microsoft-Windows-UserPnp	7718	0	PnP_Drvinst_DevicePolicyCheckStart()	Start	UserPnp	PnP_Drvinst_DevicePolicyCheck	Informational		
+Microsoft-Windows-UserPnp	7719	0	PnP_Drvinst_DevicePolicyCheckStop()	Stop	UserPnp	PnP_Drvinst_DevicePolicyCheck	Informational		
+Microsoft-Windows-UserPnp	7720	0	PnP_SetupAPI_BuildDriverInfoListStart()	Start	UserPnp	PnP_SetupAPI_BuildDriverInfoList	Informational		
+Microsoft-Windows-UserPnp	7721	0	PnP_SetupAPI_BuildDriverInfoListStop()	Stop	UserPnp	PnP_SetupAPI_BuildDriverInfoList	Informational		
+Microsoft-Windows-UserPnp	7722	0	PnP_SetupAPI_PublishedInfDriverSearchStart()	Start	UserPnp	PnP_SetupAPI_PublishedInfDriverSearch	Informational		
+Microsoft-Windows-UserPnp	7723	0	PnP_SetupAPI_PublishedInfDriverSearchStop()	Stop	UserPnp	PnP_SetupAPI_PublishedInfDriverSearch	Informational		
+Microsoft-Windows-UserPnp	7724	0	PnP_SetupAPI_DevicePathDriverSearchStart()	Start	UserPnp	PnP_SetupAPI_DevicePathDriverSearch	Informational		
+Microsoft-Windows-UserPnp	7725	0	PnP_SetupAPI_DevicePathDriverSearchStop()	Stop	UserPnp	PnP_SetupAPI_DevicePathDriverSearch	Informational		
+Microsoft-Windows-UserPnp	7728	0	PnP_SetupAPI_FolderDriverSearchStart()	Start	UserPnp	PnP_SetupAPI_FolderDriverSearch	Informational		
+Microsoft-Windows-UserPnp	7729	0	PnP_SetupAPI_FolderDriverSearchStop()	Stop	UserPnp	PnP_SetupAPI_FolderDriverSearch	Informational		
+Microsoft-Windows-UserPnp	7730	0	PnP_PlugPlay_PnpInstallDeviceStart()	Start		PnP_PlugPlay_PnpInstallDevice	Informational		
+Microsoft-Windows-UserPnp	7731	0	PnP_PlugPlay_PnpInstallDeviceStop()	Stop		PnP_PlugPlay_PnpInstallDevice	Informational		
+Microsoft-Windows-UserPnp	7800	0	PnP_DMRC_SearchWMISStart()	Start		PnP_DMRC_SearchWMIS	Informational		
+Microsoft-Windows-UserPnp	7801	0	PnP_DMRC_SearchWMISStop()	Stop		PnP_DMRC_SearchWMIS	Informational		
+Microsoft-Windows-UserPnp	7802	0	PnP_DMRC_DownloadPackageStart()	Start		PnP_DMRC_DownloadPackage	Informational		
+Microsoft-Windows-UserPnp	7803	0	PnP_DMRC_DownloadPackageStop()	Stop		PnP_DMRC_DownloadPackage	Informational		
+Microsoft-Windows-UserPnp	7804	0	PnP_DMRC_SearchLocalIndexStart()	Start	UserPnp	PnP_DMRC_SearchLocalIndex	Informational		
+Microsoft-Windows-UserPnp	7805	0	PnP_DMRC_SearchLocalIndexStop()	Stop	UserPnp	PnP_DMRC_SearchLocalIndex	Informational		
+Microsoft-Windows-UserPnp	7806	0	PnP_DMRC_UnpackPackageStart()	Start	UserPnp	PnP_DMRC_UnpackPackage	Informational		
+Microsoft-Windows-UserPnp	7807	0	PnP_DMRC_UnpackPackageStop()	Stop	UserPnp	PnP_DMRC_UnpackPackage	Informational		
+Microsoft-Windows-UserPnp	7808	0	PnP_DMRC_ParsePackageInfoStart()	Start	UserPnp	PnP_DMRC_ParsePackageInfo	Informational		
+Microsoft-Windows-UserPnp	7809	0	PnP_DMRC_ParsePackageInfoStop()	Stop	UserPnp	PnP_DMRC_ParsePackageInfo	Informational		
+Microsoft-Windows-UserPnp	7810	0	PnP_DMRC_ScanLocalStoreStart()	Start	UserPnp	PnP_DMRC_ScanLocalStore	Informational		
+Microsoft-Windows-UserPnp	7811	0	PnP_DMRC_ScanLocalStoreStop()	Stop	UserPnp	PnP_DMRC_ScanLocalStore	Informational		
+Microsoft-Windows-UserPnp	7812	0	PnP_DMRC_InitializeStart()	Start	UserPnp	PnP_DMRC_Initialize	Informational		
+Microsoft-Windows-UserPnp	7813	0	PnP_DMRC_InitializeStop()	Stop	UserPnp	PnP_DMRC_Initialize	Informational		
+Microsoft-Windows-UserPnp	7814	0	PnP_DMRC_UninitializeStart()	Start	UserPnp	PnP_DMRC_Uninitialize	Informational		
+Microsoft-Windows-UserPnp	7815	0	PnP_DMRC_UninitializeStop()	Stop	UserPnp	PnP_DMRC_Uninitialize	Informational		
+Microsoft-Windows-UserPnp	7900	0	PnP_DMRC_ParseMetadata(UnicodeString Message, UnicodeString Package, HexInt32 ErrorCode, HexInt32 Win32ErrorCode)		UserPnp	PnP_DMRC_ParseMetadata	Error		
+Microsoft-Windows-UserPnp	7901	0	PnP_DMRC_Query(UnicodeString PackagePath)		UserPnp	PnP_DMRC_Query	Informational		
+Microsoft-Windows-UserPnp	7902	0	PnP_DMRC_ParseMetadata7902(UnicodeString Message, UnicodeString Package, HexInt32 ErrorCode, HexInt32 Win32ErrorCode)		UserPnp	PnP_DMRC_ParseMetadata	Error		
+Microsoft-Windows-UserPnp	7903	0	PnP_DMRC_ParseMetadata7903(UnicodeString File, UnicodeString Language)		UserPnp	PnP_DMRC_ParseMetadata	Informational		
+Microsoft-Windows-UserPnp	7950	0	PnP_DMRC_ParseMetadata7950(UnicodeString PackageName, UnicodeString PackagePath)		UserPnp	PnP_DMRC_ParseMetadata	Informational		
+Microsoft-Windows-UserPnp	7951	0	PnP_DMRC_Query7951(UnicodeString QueryType, UnicodeString LookupKey)		UserPnp	PnP_DMRC_Query	Informational		
+Microsoft-Windows-UserPnp	7952	0	PnP_DMRC_Query7952(UnicodeString Message, HexInt32 NetworkErrorCode, UInt32 HttpStatusCode)		UserPnp	PnP_DMRC_Query	Warning		
+Microsoft-Windows-UserPnp	8000	0	task_0(UnicodeString DeviceId)		UserPnp	task_0	Warning		
+Microsoft-Windows-UserPnp	8001	0	task_08001()		UserPnp	task_0	Informational		
+Microsoft-Windows-UserPnp	8002	0	task_08002()		UserPnp	task_0	Informational		
+Microsoft-Windows-UserPnp	8010	0	FinishInstallOperationsstatehaschanged.(UInt32 hc_stateid)			FinishInstallOperationsstatehaschanged.	Informational		
+Microsoft-Windows-UserPnp	20001	0	PnP_PlugPlay_DeviceInstall20001(UnicodeString DriverName, UnicodeString DriverVersion, UnicodeString DriverProvider, UnicodeString DeviceInstanceID, GUID SetupClass, Boolean RebootOption, Boolean UpgradeDevice, Boolean IsDriverOEM, HexInt32 InstallStatus, UnicodeString DriverDescription)			PnP_PlugPlay_DeviceInstall	Informational		
+Microsoft-Windows-UserPnp	20002	0	PnP_PlugPlay_DeviceInstall20002(UnicodeString DriverName, UnicodeString DriverVersion, UnicodeString DriverProvider, UnicodeString DeviceInstanceID, GUID SetupClass, Boolean RebootOption, Boolean UpgradeDevice, Boolean IsDriverOEM, HexInt32 InstallStatus, UnicodeString DriverDescription)			PnP_PlugPlay_DeviceInstall	Informational		
+Microsoft-Windows-UserPnp	20003	0	PnP_PlugPlay_DeviceInstall20003(UnicodeString ServiceName, UnicodeString DriverFileName, UnicodeString DeviceInstanceID, Boolean PrimaryService, Boolean UpdateService, UInt32 AddServiceStatus)			PnP_PlugPlay_DeviceInstall	Informational		
+Microsoft-Windows-UserPnp	20004	0	PnP_PlugPlay_DeviceInstall20004(UnicodeString ServiceName, UnicodeString DriverFileName, UnicodeString DeviceInstanceID, Boolean PrimaryService, Boolean UpdateService, UInt32 AddServiceStatus)			PnP_PlugPlay_DeviceInstall	Informational		
+Microsoft-Windows-UserPnp	20005	0	PnP_PlugPlay_DeviceInstall20005(UnicodeString DeviceId)			PnP_PlugPlay_DeviceInstall	Informational		
+Microsoft-Windows-UserPnp	20006	0	PnP_PlugPlay_DeviceInstall20006(UnicodeString DeviceId)			PnP_PlugPlay_DeviceInstall	Informational		
+Microsoft-Windows-UserPnp	20007	0	PnP_PlugPlay_DeviceInstall20007(UnicodeString DeviceId)			PnP_PlugPlay_DeviceInstall	Informational		
+Microsoft-Windows-UserPnp	20008	0	PnP_PlugPlay_DeviceInstall20008(UnicodeString DeviceId)			PnP_PlugPlay_DeviceInstall	Informational		
+Microsoft-Windows-UserPnp	20009	0	PnP_PlugPlay_DeviceInstall20009(UInt32 RebootTime)			PnP_PlugPlay_DeviceInstall	Informational		

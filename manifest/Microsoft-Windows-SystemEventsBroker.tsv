@@ -1,0 +1,7 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-SystemEventsBroker	15	1	SebEventCreate_V1(GUID BrokeredEventId, SID UserSID, UInt32 EventType)	Create	TraceSebEvent	SebEvent	Informational		
+Microsoft-Windows-SystemEventsBroker	16	1	SebEventDelete_V1(GUID BrokeredEventId)	Delete	TraceSebEvent	SebEvent	Informational		
+Microsoft-Windows-SystemEventsBroker	17	1	SebEventSignal_V1(GUID BrokeredEventId)	Signal	TraceSebEvent	SebEvent	Informational		
+Microsoft-Windows-SystemEventsBroker	18	1	SebEventDrop_V1(GUID BrokeredEventId)	Drop	TraceSebEvent	SebEvent	Informational		
+Microsoft-Windows-SystemEventsBroker	19	1	SebEventSessionConnected_V1(UInt32 SessionID, SID UserSID)	SessionConnected	TraceSebEvent	SebEvent	Informational		
+Microsoft-Windows-SystemEventsBroker	19	2	SebEventSessionConnected_V2(UInt32 SessionID)	SessionConnected	TraceSebEvent	SebEvent	Informational		

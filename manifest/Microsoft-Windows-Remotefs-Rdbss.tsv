@@ -1,0 +1,25 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Remotefs-Rdbss	100	0	task_0(UInt32 ErrorCode, UInt32 Location, UInt32 Context)		keyword_400000000000	task_0	Error		
+Microsoft-Windows-Remotefs-Rdbss	401	0	task_0401(UInt32 ErrorCode, UInt32 Location, UInt32 Context)		keyword_400000000000	task_0	Error		
+Microsoft-Windows-Remotefs-Rdbss	30001	0	task_030001(Pointer Irp, Pointer RxContext, Pointer Fcb, Pointer Fobx, Pointer FileObject, UInt16 FileNameLength, UnicodeString FileName, UInt16 MajorFunction)		Rdbss_Perf Rdbss_Info	task_0	Informational		
+Microsoft-Windows-Remotefs-Rdbss	30002	0	task_030002(Pointer Irp, Pointer RxContext, Pointer Fcb, Pointer Fobx, Pointer FileObject, UInt16 FileNameLength, UnicodeString FileName, UInt16 MajorFunction, UInt32 Status)		Rdbss_Perf Rdbss_Info	task_0	Informational		
+Microsoft-Windows-Remotefs-Rdbss	30003	0	task_030003(Pointer FileObject, UInt16 FileNameLength, UnicodeString FileName, UInt16 MajorFunction)		Rdbss_Perf	task_0	Informational		
+Microsoft-Windows-Remotefs-Rdbss	30004	0	task_030004(Pointer FileObject, UInt16 FileNameLength, UnicodeString FileName, UInt16 MajorFunction, UInt32 Status)		Rdbss_Perf	task_0	Informational		
+Microsoft-Windows-Remotefs-Rdbss	30005	0	task_030005(Pointer RxContext)		Rdbss_Perf	task_0	Informational		
+Microsoft-Windows-Remotefs-Rdbss	30006	0	task_030006(Pointer RxContext, UInt32 Status)		Rdbss_Perf	task_0	Informational		
+Microsoft-Windows-Remotefs-Rdbss	30007	0	task_030007(Pointer RxContext, Pointer Fcb, UInt32 Mode)		Rdbss_Perf	task_0	Verbose		
+Microsoft-Windows-Remotefs-Rdbss	30008	0	task_030008(Pointer RxContext, Pointer Fcb)		Rdbss_Perf	task_0	Verbose		
+Microsoft-Windows-Remotefs-Rdbss	30009	0	task_030009(Pointer RxContext, Pointer FileObject)		Rdbss_Perf	task_0	Verbose		
+Microsoft-Windows-Remotefs-Rdbss	30010	0	task_030010(Pointer RxContext, Pointer FileObject, UInt32 Status)		Rdbss_Perf	task_0	Verbose		
+Microsoft-Windows-Remotefs-Rdbss	30011	0	task_030011(Pointer RxContext, Pointer FileObject)		Rdbss_Perf	task_0	Verbose		
+Microsoft-Windows-Remotefs-Rdbss	30012	0	task_030012(Pointer RxContext, Pointer FileObject, UInt32 Status)		Rdbss_Perf	task_0	Verbose		
+Microsoft-Windows-Remotefs-Rdbss	30013	0	task_030013(Pointer RxContext, Pointer FileObject)		Rdbss_Perf	task_0	Verbose		
+Microsoft-Windows-Remotefs-Rdbss	30014	0	task_030014(Pointer RxContext, Pointer FileObject, UInt32 Status)		Rdbss_Perf	task_0	Verbose		
+Microsoft-Windows-Remotefs-Rdbss	30015	0	task_030015(Pointer Fcb)		Rdbss_Perf	task_0	Verbose		
+Microsoft-Windows-Remotefs-Rdbss	30016	0	task_030016(Pointer Fcb)		Rdbss_Perf	task_0	Verbose		
+Microsoft-Windows-Remotefs-Rdbss	30017	0	task_030017(Pointer Fcb)		Rdbss_Perf	task_0	Verbose		
+Microsoft-Windows-Remotefs-Rdbss	30018	0	task_030018(Pointer Fcb)		Rdbss_Perf	task_0	Verbose		
+Microsoft-Windows-Remotefs-Rdbss	30019	0	task_030019(Pointer RxContext, UInt16 LogicalPathFromLength, UnicodeString LogicalPathFrom, UInt16 PhysicalPathFromLength, UnicodeString PhysicalPathFrom, UInt16 LogicalPathToLength, UnicodeString LogicalPathTo, UInt16 PhysicalPathToLength, UnicodeString PhysicalPathTo)		Rdbss_Perf	task_0	Informational		
+Microsoft-Windows-Remotefs-Rdbss	30020	0	task_030020(Pointer RxContext, UInt16 LogicalPathFromLength, UnicodeString LogicalPathFrom, UInt16 PhysicalPathFromLength, UnicodeString PhysicalPathFrom, UInt16 LogicalPathToLength, UnicodeString LogicalPathTo, UInt16 PhysicalPathToLength, UnicodeString PhysicalPathTo)		Rdbss_Perf Rdbss_Info	task_0	Informational		
+Microsoft-Windows-Remotefs-Rdbss	30301	0	task_030301(Pointer Fcb, Pointer SrvOpen, Pointer Fobx)		Rdbss_Info	task_0	Informational		
+Microsoft-Windows-Remotefs-Rdbss	30302	0	task_030302(Pointer Fcb, Pointer SrvOpen, Pointer Fobx)		Rdbss_Info	task_0	Informational		

@@ -1,0 +1,14 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-WMVENCOD	0	0	VC1ENC_ACCEPTINPUTStart(Int64 SampleTime, Pointer SamplePointer, Pointer EncoderInstance)	Start		VC1ENC_ACCEPTINPUT	Informational		
+Microsoft-Windows-WMVENCOD	1	0	VC1ENC_ACCEPTINPUTStop(Int64 SampleTime, Pointer SamplePointer, Pointer EncoderInstance)	Stop		VC1ENC_ACCEPTINPUT	Informational		
+Microsoft-Windows-WMVENCOD	2	0	VC1ENC_PRODUCEOUTPUTStart(Int64 SampleTime, Pointer SamplePointer, Pointer EncoderInstance)	Start		VC1ENC_PRODUCEOUTPUT	Informational		
+Microsoft-Windows-WMVENCOD	3	0	VC1ENC_PRODUCEOUTPUTStop(Int64 SampleTime, Pointer SamplePointer, Pointer EncoderInstance)	Stop		VC1ENC_PRODUCEOUTPUT	Informational		
+Microsoft-Windows-WMVENCOD	4	0	VC1ENC_SEQ_INFO(Int32 CodingMode, UInt32 InterlaceCodingType, Pointer EncoderInstance)			VC1ENC_SEQ_INFO	Verbose		
+Microsoft-Windows-WMVENCOD	5	0	VC1ENC_FRAME_BUFFERLEVEL_INFO(Int32 BufferLevelInfo, Int64 SampleTime, Pointer EncoderInstance)			VC1ENC_FRAME_BUFFERLEVEL_INFO	Verbose		
+Microsoft-Windows-WMVENCOD	6	0	VC1ENC_FRAME_NOOFREENCODE_INFO(Int32 NumberOfReencode, Int64 SampleTime, Pointer EncoderInstance)			VC1ENC_FRAME_NOOFREENCODE_INFO	Verbose		
+Microsoft-Windows-WMVENCOD	7	0	VC1ENC_FRAME_DROP_INFO(Int64 SampleTime, Pointer EncoderInstance)			VC1ENC_FRAME_DROP_INFO	Verbose		
+Microsoft-Windows-WMVENCOD	8	0	VC1ENC_FRAME_MODECOST_INFO(Double MixedMVCost, Double OneMVQPBicubicCost, Double OneMVHPBicubicCost, Double OneMVHPBilinearCost, Double IntraCost, Int64 SampleTime, Pointer EncoderInstance)			VC1ENC_FRAME_MODECOST_INFO	Verbose		
+Microsoft-Windows-WMVENCOD	9	0	VC1ENC_FRAME_PTOI_INFO(Int64 SampleTime, Pointer EncoderInstance)			VC1ENC_FRAME_PTOI_INFO	Verbose		
+Microsoft-Windows-WMVENCOD	10	0	VC1ENC_ADAPTIVE_RESCHANGE(UInt32 Resolution, Pointer EncoderInstance)			VC1ENC_ADAPTIVE_RESCHANGE	Verbose		
+Microsoft-Windows-WMVENCOD	11	0	VC1ENC_ADAPTIVE_AVAILBANDWIDTH(UInt32 Bitrate, Pointer EncoderInstance)			VC1ENC_ADAPTIVE_AVAILBANDWIDTH	Verbose		
+Microsoft-Windows-WMVENCOD	12	0	VC1ENC_ADAPTIVE_VIDEOBITRATE(UInt32 Bitrate, Pointer EncoderInstance)			VC1ENC_ADAPTIVE_VIDEOBITRATE	Verbose		

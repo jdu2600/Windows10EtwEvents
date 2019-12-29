@@ -1,0 +1,104 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-AppModel-State	1	0	task_0(UnicodeString ErrorString, Int32 Error)		UnstructuredReset	task_0	Informational		
+Microsoft-Windows-AppModel-State	2	0	task_02(UnicodeString ErrorString, Int32 Error)		UnstructuredReset	task_0	Informational		
+Microsoft-Windows-AppModel-State	3	0	task_03()		OutOfMemory	task_0	Error		
+Microsoft-Windows-AppModel-State	4	0	task_04(UnicodeString ErrorString, Int32 Error)		ApiSetError	task_0	Error		
+Microsoft-Windows-AppModel-State	5	0	task_05(UnicodeString ErrorString, Int32 Error)		DataStoreError	task_0	Error		
+Microsoft-Windows-AppModel-State	6	0	task_06()			task_0	Informational		
+Microsoft-Windows-AppModel-State	7	0	task_07()			task_0	Informational		
+Microsoft-Windows-AppModel-State	8	0	task_08(UnicodeString ErrorString, Int32 Error)			task_0	Error		
+Microsoft-Windows-AppModel-State	9	0	task_09()			task_0	Error		
+Microsoft-Windows-AppModel-State	10	0	task_010(UnicodeString ErrorString, Int32 Error)			task_0	Error		
+Microsoft-Windows-AppModel-State	11	0	task_011(UnicodeString ErrorString, Int32 Error)			task_0	Error		
+Microsoft-Windows-AppModel-State	12	0	task_012(UnicodeString ErrorString, Int32 Error)			task_0	Error		
+Microsoft-Windows-AppModel-State	13	0	task_013(UnicodeString FolderString, UnicodeString PackageString, Int32 Error)			task_0	Error		
+Microsoft-Windows-AppModel-State	14	0	task_014(UnicodeString PackageString, UnicodeString UserSid, Int32 Error)			task_0	Informational		
+Microsoft-Windows-AppModel-State	15	0	task_015(UnicodeString PackageString, UnicodeString UserSid, Int32 Error)			task_0	Informational		
+Microsoft-Windows-AppModel-State	16	0	task_016(UnicodeString PackageString, UnicodeString UserSid, Int32 Error)			task_0	Informational		
+Microsoft-Windows-AppModel-State	17	0	task_017(UnicodeString PackageString, UnicodeString UserSid, Int32 Error)			task_0	Informational		
+Microsoft-Windows-AppModel-State	18	0	task_018(UnicodeString InformationalString)			task_0	Informational		
+Microsoft-Windows-AppModel-State	19	0	task_019(UnicodeString ErrorString, Int32 Error)			task_0	Error		
+Microsoft-Windows-AppModel-State	50	0	AppModel.Task.State.WriteSettingStart()	Start	Structured	AppModel.Task.State.WriteSetting	Informational		
+Microsoft-Windows-AppModel-State	51	0	AppModel.Task.State.WriteSettingStop()	Stop	Structured	AppModel.Task.State.WriteSetting	Informational		
+Microsoft-Windows-AppModel-State	60	0	AppModel.Task.State.ReadSettingStart()	Start	Structured	AppModel.Task.State.ReadSetting	Informational		
+Microsoft-Windows-AppModel-State	61	0	AppModel.Task.State.ReadSettingStop()	Stop	Structured	AppModel.Task.State.ReadSetting	Informational		
+Microsoft-Windows-AppModel-State	70	0	AppModel.Task.State.DeleteSettingStart()	Start	Structured	AppModel.Task.State.DeleteSetting	Informational		
+Microsoft-Windows-AppModel-State	71	0	AppModel.Task.State.DeleteSettingStop()	Stop	Structured	AppModel.Task.State.DeleteSetting	Informational		
+Microsoft-Windows-AppModel-State	80	0	AppModel.Task.State.WriteSettingInAtomStart()	Start	Structured	AppModel.Task.State.WriteSettingInAtom	Informational		
+Microsoft-Windows-AppModel-State	81	0	AppModel.Task.State.WriteSettingInAtomStop()	Stop	Structured	AppModel.Task.State.WriteSettingInAtom	Informational		
+Microsoft-Windows-AppModel-State	90	0	AppModel.Task.State.ReadSettingInAtomStart()	Start	Structured	AppModel.Task.State.ReadSettingInAtom	Informational		
+Microsoft-Windows-AppModel-State	91	0	AppModel.Task.State.ReadSettingInAtomStop()	Stop	Structured	AppModel.Task.State.ReadSettingInAtom	Informational		
+Microsoft-Windows-AppModel-State	100	0	AppModel.Task.State.DeleteSettingInAtomStart()	Start	Structured	AppModel.Task.State.DeleteSettingInAtom	Informational		
+Microsoft-Windows-AppModel-State	101	0	AppModel.Task.State.DeleteSettingInAtomStop()	Stop	Structured	AppModel.Task.State.DeleteSettingInAtom	Informational		
+Microsoft-Windows-AppModel-State	110	0	AppModel.Task.State.CommitAtomStart()	Start	Structured	AppModel.Task.State.CommitAtom	Informational		
+Microsoft-Windows-AppModel-State	111	0	AppModel.Task.State.CommitAtomStop()	Stop	Structured	AppModel.Task.State.CommitAtom	Informational		
+Microsoft-Windows-AppModel-State	120	0	AppModel.Task.State.LoadAppHiveStart()	Start	Structured	AppModel.Task.State.LoadAppHive	Informational		
+Microsoft-Windows-AppModel-State	121	0	AppModel.Task.State.LoadAppHiveStop()	Stop	Structured	AppModel.Task.State.LoadAppHive	Informational		
+Microsoft-Windows-AppModel-State	150	0	AppModel.Task.StateWinRT.AppDataFactory_ActivationStart()	Start	WinRT	AppModel.Task.StateWinRT.AppDataFactory_Activation	Informational		
+Microsoft-Windows-AppModel-State	151	0	AppModel.Task.StateWinRT.AppDataFactory_ActivationStop()	Stop	WinRT	AppModel.Task.StateWinRT.AppDataFactory_Activation	Informational		
+Microsoft-Windows-AppModel-State	160	0	AppModel.Task.StateWinRT.ApplicationDataServer_LifespanStart()	Start	WinRT	AppModel.Task.StateWinRT.ApplicationDataServer_Lifespan	Informational		
+Microsoft-Windows-AppModel-State	161	0	AppModel.Task.StateWinRT.ApplicationDataServer_LifespanStop()	Stop	WinRT	AppModel.Task.StateWinRT.ApplicationDataServer_Lifespan	Informational		
+Microsoft-Windows-AppModel-State	170	0	AppModel.Task.StateWinRT.ApplicationDataServer_GetVersionStart()	Start	WinRT	AppModel.Task.StateWinRT.ApplicationDataServer_GetVersion	Informational		
+Microsoft-Windows-AppModel-State	171	0	AppModel.Task.StateWinRT.ApplicationDataServer_GetVersionStop()	Stop	WinRT	AppModel.Task.StateWinRT.ApplicationDataServer_GetVersion	Informational		
+Microsoft-Windows-AppModel-State	180	0	AppModel.Task.StateWinRT.ApplicationDataServer_SetVersionStart()	Start	WinRT	AppModel.Task.StateWinRT.ApplicationDataServer_SetVersion	Informational		
+Microsoft-Windows-AppModel-State	181	0	AppModel.Task.StateWinRT.ApplicationDataServer_SetVersionStop()	Stop	WinRT	AppModel.Task.StateWinRT.ApplicationDataServer_SetVersion	Informational		
+Microsoft-Windows-AppModel-State	190	0	AppModel.Task.StateWinRT.ApplicationDataServer_RoamingStorageQuotaStart()	Start	WinRT	AppModel.Task.StateWinRT.ApplicationDataServer_RoamingStorageQuota	Informational		
+Microsoft-Windows-AppModel-State	191	0	AppModel.Task.StateWinRT.ApplicationDataServer_RoamingStorageQuotaStop()	Stop	WinRT	AppModel.Task.StateWinRT.ApplicationDataServer_RoamingStorageQuota	Informational		
+Microsoft-Windows-AppModel-State	210	0	AppModel.Task.StateWinRT.ApplicationDataServer_ActivateContainerServerStart()	Start	WinRT	AppModel.Task.StateWinRT.ApplicationDataServer_ActivateContainerServer	Informational		
+Microsoft-Windows-AppModel-State	211	0	AppModel.Task.StateWinRT.ApplicationDataServer_ActivateContainerServerStop()	Stop	WinRT	AppModel.Task.StateWinRT.ApplicationDataServer_ActivateContainerServer	Informational		
+Microsoft-Windows-AppModel-State	220	0	AppModel.Task.StateWinRT.ApplicationDataServer_ActivateFileItemServerStart()	Start	WinRT	AppModel.Task.StateWinRT.ApplicationDataServer_ActivateFileItemServer	Informational		
+Microsoft-Windows-AppModel-State	221	0	AppModel.Task.StateWinRT.ApplicationDataServer_ActivateFileItemServerStop()	Stop	WinRT	AppModel.Task.StateWinRT.ApplicationDataServer_ActivateFileItemServer	Informational		
+Microsoft-Windows-AppModel-State	230	0	AppModel.Task.StateWinRT.ApplicationDataContainerServer_LifespanStart()	Start	WinRT	AppModel.Task.StateWinRT.ApplicationDataContainerServer_Lifespan	Informational		
+Microsoft-Windows-AppModel-State	231	0	AppModel.Task.StateWinRT.ApplicationDataContainerServer_LifespanStop()	Stop	WinRT	AppModel.Task.StateWinRT.ApplicationDataContainerServer_Lifespan	Informational		
+Microsoft-Windows-AppModel-State	240	0	AppModel.Task.StateWinRT.ApplicationDataContainerServer_GetValuesStart()	Start	WinRT	AppModel.Task.StateWinRT.ApplicationDataContainerServer_GetValues	Informational		
+Microsoft-Windows-AppModel-State	241	0	AppModel.Task.StateWinRT.ApplicationDataContainerServer_GetValuesStop()	Stop	WinRT	AppModel.Task.StateWinRT.ApplicationDataContainerServer_GetValues	Informational		
+Microsoft-Windows-AppModel-State	250	0	AppModel.Task.StateWinRT.ApplicationDataContainerServer_GetContainersStart()	Start	WinRT	AppModel.Task.StateWinRT.ApplicationDataContainerServer_GetContainers	Informational		
+Microsoft-Windows-AppModel-State	251	0	AppModel.Task.StateWinRT.ApplicationDataContainerServer_GetContainersStop()	Stop	WinRT	AppModel.Task.StateWinRT.ApplicationDataContainerServer_GetContainers	Informational		
+Microsoft-Windows-AppModel-State	260	0	AppModel.Task.StateWinRT.ApplicationDataContainerServer_CreateContainerStart()	Start	WinRT	AppModel.Task.StateWinRT.ApplicationDataContainerServer_CreateContainer	Informational		
+Microsoft-Windows-AppModel-State	261	0	AppModel.Task.StateWinRT.ApplicationDataContainerServer_CreateContainerStop()	Stop	WinRT	AppModel.Task.StateWinRT.ApplicationDataContainerServer_CreateContainer	Informational		
+Microsoft-Windows-AppModel-State	270	0	AppModel.Task.StateWinRT.ApplicationDataContainerServer_DeleteContainerStart()	Start	WinRT	AppModel.Task.StateWinRT.ApplicationDataContainerServer_DeleteContainer	Informational		
+Microsoft-Windows-AppModel-State	271	0	AppModel.Task.StateWinRT.ApplicationDataContainerServer_DeleteContainerStop()	Stop	WinRT	AppModel.Task.StateWinRT.ApplicationDataContainerServer_DeleteContainer	Informational		
+Microsoft-Windows-AppModel-State	280	0	AppModel.Task.StateWinRT.ApplicationDataContainerSettingsServer_LifespanStart()	Start	WinRT	AppModel.Task.StateWinRT.ApplicationDataContainerSettingsServer_Lifespan	Informational		
+Microsoft-Windows-AppModel-State	281	0	AppModel.Task.StateWinRT.ApplicationDataContainerSettingsServer_LifespanStop()	Stop	WinRT	AppModel.Task.StateWinRT.ApplicationDataContainerSettingsServer_Lifespan	Informational		
+Microsoft-Windows-AppModel-State	290	0	AppModel.Task.StateWinRT.ApplicationDataContainerSettingsServer_LookupStart()	Start	WinRT	AppModel.Task.StateWinRT.ApplicationDataContainerSettingsServer_Lookup	Informational		
+Microsoft-Windows-AppModel-State	291	0	AppModel.Task.StateWinRT.ApplicationDataContainerSettingsServer_LookupStop()	Stop	WinRT	AppModel.Task.StateWinRT.ApplicationDataContainerSettingsServer_Lookup	Informational		
+Microsoft-Windows-AppModel-State	300	0	AppModel.Task.StateWinRT.ApplicationDataContainerSettingsServer_SizeStart()	Start	WinRT	AppModel.Task.StateWinRT.ApplicationDataContainerSettingsServer_Size	Informational		
+Microsoft-Windows-AppModel-State	301	0	AppModel.Task.StateWinRT.ApplicationDataContainerSettingsServer_SizeStop()	Stop	WinRT	AppModel.Task.StateWinRT.ApplicationDataContainerSettingsServer_Size	Informational		
+Microsoft-Windows-AppModel-State	310	0	AppModel.Task.StateWinRT.ApplicationDataContainerSettingsServer_HasKeyStart()	Start	WinRT	AppModel.Task.StateWinRT.ApplicationDataContainerSettingsServer_HasKey	Informational		
+Microsoft-Windows-AppModel-State	311	0	AppModel.Task.StateWinRT.ApplicationDataContainerSettingsServer_HasKeyStop()	Stop	WinRT	AppModel.Task.StateWinRT.ApplicationDataContainerSettingsServer_HasKey	Informational		
+Microsoft-Windows-AppModel-State	320	0	AppModel.Task.StateWinRT.ApplicationDataContainerSettingsServer_GetViewStart()	Start	WinRT	AppModel.Task.StateWinRT.ApplicationDataContainerSettingsServer_GetView	Informational		
+Microsoft-Windows-AppModel-State	321	0	AppModel.Task.StateWinRT.ApplicationDataContainerSettingsServer_GetViewStop()	Stop	WinRT	AppModel.Task.StateWinRT.ApplicationDataContainerSettingsServer_GetView	Informational		
+Microsoft-Windows-AppModel-State	330	0	AppModel.Task.StateWinRT.ApplicationDataContainerSettingsServer_InsertStart()	Start	WinRT	AppModel.Task.StateWinRT.ApplicationDataContainerSettingsServer_Insert	Informational		
+Microsoft-Windows-AppModel-State	331	0	AppModel.Task.StateWinRT.ApplicationDataContainerSettingsServer_InsertStop()	Stop	WinRT	AppModel.Task.StateWinRT.ApplicationDataContainerSettingsServer_Insert	Informational		
+Microsoft-Windows-AppModel-State	340	0	AppModel.Task.StateWinRT.ApplicationDataContainerSettingsServer_RemoveStart()	Start	WinRT	AppModel.Task.StateWinRT.ApplicationDataContainerSettingsServer_Remove	Informational		
+Microsoft-Windows-AppModel-State	341	0	AppModel.Task.StateWinRT.ApplicationDataContainerSettingsServer_RemoveStop()	Stop	WinRT	AppModel.Task.StateWinRT.ApplicationDataContainerSettingsServer_Remove	Informational		
+Microsoft-Windows-AppModel-State	350	0	AppModel.Task.StateWinRT.ApplicationDataContainerSettingsServer_ClearStart()	Start	WinRT	AppModel.Task.StateWinRT.ApplicationDataContainerSettingsServer_Clear	Informational		
+Microsoft-Windows-AppModel-State	351	0	AppModel.Task.StateWinRT.ApplicationDataContainerSettingsServer_ClearStop()	Stop	WinRT	AppModel.Task.StateWinRT.ApplicationDataContainerSettingsServer_Clear	Informational		
+Microsoft-Windows-AppModel-State	360	0	AppModel.Task.StateWinRT.ApplicationDataContainerSettingsServer_FirstStart()	Start	WinRT	AppModel.Task.StateWinRT.ApplicationDataContainerSettingsServer_First	Informational		
+Microsoft-Windows-AppModel-State	361	0	AppModel.Task.StateWinRT.ApplicationDataContainerSettingsServer_FirstStop()	Stop	WinRT	AppModel.Task.StateWinRT.ApplicationDataContainerSettingsServer_First	Informational		
+Microsoft-Windows-AppModel-State	370	0	AppModel.Task.StateWinRT.ApplicationDataCompositeValueServer_LifespanStart()	Start	WinRT	AppModel.Task.StateWinRT.ApplicationDataCompositeValueServer_Lifespan	Informational		
+Microsoft-Windows-AppModel-State	371	0	AppModel.Task.StateWinRT.ApplicationDataCompositeValueServer_LifespanStop()	Stop	WinRT	AppModel.Task.StateWinRT.ApplicationDataCompositeValueServer_Lifespan	Informational		
+Microsoft-Windows-AppModel-State	380	0	AppModel.Task.StateWinRT.ApplicationDataCompositeValueServer_LookupStart()	Start	WinRT	AppModel.Task.StateWinRT.ApplicationDataCompositeValueServer_Lookup	Informational		
+Microsoft-Windows-AppModel-State	381	0	AppModel.Task.StateWinRT.ApplicationDataCompositeValueServer_LookupStop()	Stop	WinRT	AppModel.Task.StateWinRT.ApplicationDataCompositeValueServer_Lookup	Informational		
+Microsoft-Windows-AppModel-State	390	0	AppModel.Task.StateWinRT.ApplicationDataCompositeValueServer_SizeStart()	Start	WinRT	AppModel.Task.StateWinRT.ApplicationDataCompositeValueServer_Size	Informational		
+Microsoft-Windows-AppModel-State	391	0	AppModel.Task.StateWinRT.ApplicationDataCompositeValueServer_SizeStop()	Stop	WinRT	AppModel.Task.StateWinRT.ApplicationDataCompositeValueServer_Size	Informational		
+Microsoft-Windows-AppModel-State	400	0	AppModel.Task.StateWinRT.ApplicationDataCompositeValueServer_HasKeyStart()	Start	WinRT	AppModel.Task.StateWinRT.ApplicationDataCompositeValueServer_HasKey	Informational		
+Microsoft-Windows-AppModel-State	401	0	AppModel.Task.StateWinRT.ApplicationDataCompositeValueServer_HasKeyStop()	Stop	WinRT	AppModel.Task.StateWinRT.ApplicationDataCompositeValueServer_HasKey	Informational		
+Microsoft-Windows-AppModel-State	410	0	AppModel.Task.StateWinRT.ApplicationDataCompositeValueServer_GetViewStart()	Start	WinRT	AppModel.Task.StateWinRT.ApplicationDataCompositeValueServer_GetView	Informational		
+Microsoft-Windows-AppModel-State	411	0	AppModel.Task.StateWinRT.ApplicationDataCompositeValueServer_GetViewStop()	Stop	WinRT	AppModel.Task.StateWinRT.ApplicationDataCompositeValueServer_GetView	Informational		
+Microsoft-Windows-AppModel-State	420	0	AppModel.Task.StateWinRT.ApplicationDataCompositeValueServer_InsertStart()	Start	WinRT	AppModel.Task.StateWinRT.ApplicationDataCompositeValueServer_Insert	Informational		
+Microsoft-Windows-AppModel-State	421	0	AppModel.Task.StateWinRT.ApplicationDataCompositeValueServer_InsertStop()	Stop	WinRT	AppModel.Task.StateWinRT.ApplicationDataCompositeValueServer_Insert	Informational		
+Microsoft-Windows-AppModel-State	430	0	AppModel.Task.StateWinRT.ApplicationDataCompositeValueServer_RemoveStart()	Start	WinRT	AppModel.Task.StateWinRT.ApplicationDataCompositeValueServer_Remove	Informational		
+Microsoft-Windows-AppModel-State	431	0	AppModel.Task.StateWinRT.ApplicationDataCompositeValueServer_RemoveStop()	Stop	WinRT	AppModel.Task.StateWinRT.ApplicationDataCompositeValueServer_Remove	Informational		
+Microsoft-Windows-AppModel-State	440	0	AppModel.Task.StateWinRT.ApplicationDataCompositeValueServer_ClearStart()	Start	WinRT	AppModel.Task.StateWinRT.ApplicationDataCompositeValueServer_Clear	Informational		
+Microsoft-Windows-AppModel-State	441	0	AppModel.Task.StateWinRT.ApplicationDataCompositeValueServer_ClearStop()	Stop	WinRT	AppModel.Task.StateWinRT.ApplicationDataCompositeValueServer_Clear	Informational		
+Microsoft-Windows-AppModel-State	450	0	AppModel.Task.StateWinRT.ApplicationDataCompositeValueServer_FirstStart()	Start	WinRT	AppModel.Task.StateWinRT.ApplicationDataCompositeValueServer_First	Informational		
+Microsoft-Windows-AppModel-State	451	0	AppModel.Task.StateWinRT.ApplicationDataCompositeValueServer_FirstStop()	Stop	WinRT	AppModel.Task.StateWinRT.ApplicationDataCompositeValueServer_First	Informational		
+Microsoft-Windows-AppModel-State	460	0	AppModel.Task.StateWinRT.RoamingRpcSignalStart()	Start	WinRT	AppModel.Task.StateWinRT.RoamingRpcSignal	Informational		
+Microsoft-Windows-AppModel-State	461	0	AppModel.Task.StateWinRT.RoamingRpcSignalStop()	Stop	WinRT	AppModel.Task.StateWinRT.RoamingRpcSignal	Informational		
+Microsoft-Windows-AppModel-State	470	0	AppModel.Task.StateWinRT.DataChangedEventDispatchStart()	Start	WinRT	AppModel.Task.StateWinRT.DataChangedEventDispatch	Informational		
+Microsoft-Windows-AppModel-State	471	0	AppModel.Task.StateWinRT.DataChangedEventDispatchStop()	Stop	WinRT	AppModel.Task.StateWinRT.DataChangedEventDispatch	Informational		
+Microsoft-Windows-AppModel-State	480	0	AppModel.Task.StateWinRT.TempCleanupStart()	Start	WinRT	AppModel.Task.StateWinRT.TempCleanup	Informational		
+Microsoft-Windows-AppModel-State	481	0	AppModel.Task.StateWinRT.TempCleanupStop()	Stop	WinRT	AppModel.Task.StateWinRT.TempCleanup	Informational		
+Microsoft-Windows-AppModel-State	490	0	AppModel.Task.StateWinRT.ApplicationDataServer_ForUserStart()	Start	WinRT	AppModel.Task.StateWinRT.ApplicationDataServer_ForUser	Informational		
+Microsoft-Windows-AppModel-State	491	0	AppModel.Task.StateWinRT.ApplicationDataServer_ForUserStop()	Stop	WinRT	AppModel.Task.StateWinRT.ApplicationDataServer_ForUser	Informational		

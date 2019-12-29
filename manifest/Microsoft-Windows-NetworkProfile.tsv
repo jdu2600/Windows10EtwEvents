@@ -1,0 +1,18 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-NetworkProfile	4001	0	WaitforIdentificationStart(GUID InterfaceGuid, UInt8 CurrentOrNextState)	Start	keyword_200000000000	WaitforIdentification	Informational		
+Microsoft-Windows-NetworkProfile	4002	0	WaitforIdentificationStop(GUID InterfaceGuid, UInt8 CurrentOrNextState)	Stop	keyword_200000000000	WaitforIdentification	Informational		
+Microsoft-Windows-NetworkProfile	4003	0	WaitforIdentificationStop4003(GUID InterfaceGuid, UInt8 CurrentOrNextState)	Stop	keyword_200000000000	WaitforIdentification	Informational		
+Microsoft-Windows-NetworkProfile	4004	0	task_0(Boolean NewInternetConnectionProfile, Boolean ConnectionCostChanged, Boolean DomainConnectivityLevelChanged, Boolean NetworkConnectivityLevelChanged, Boolean HostNameChanged, Boolean WwanRegistrationStateChanged, Boolean TetheringOperationalStateChanged, Boolean TetheringClientCountChanged)			task_0	Informational		
+Microsoft-Windows-NetworkProfile	10000	0	task_010000(UnicodeString Name, UnicodeString Description, GUID Guid, UInt32 Type, UInt32 State, UInt32 Category)		LwtDiagnostic keyword_200000000000	task_0	Informational		
+Microsoft-Windows-NetworkProfile	10001	0	task_010001(UnicodeString Name, UnicodeString Description, GUID Guid, UInt32 Type, UInt32 State, UInt32 Category)		LwtDiagnostic keyword_200000000000	task_0	Informational		
+Microsoft-Windows-NetworkProfile	10002	0	task_010002(UnicodeString Name, UnicodeString Description, GUID Guid, UInt32 Type, UInt32 State, UInt32 Category)		LwtDiagnostic keyword_200000000000	task_0	Informational		
+Microsoft-Windows-NetworkProfile	10003	0	NotifyClientsStart(UInt32 NetworkProfileEventState, GUID Guid)	Start	keyword_200000000000	NotifyClients	Informational		
+Microsoft-Windows-NetworkProfile	10004	0	NotifyClientsStop(UInt32 NetworkProfileEventState, GUID Guid)	Stop	keyword_200000000000	NotifyClients	Informational		
+Microsoft-Windows-NetworkProfile	10005	0	NotifyClientsStart10005(UInt32 NetworkProfileEventState, GUID Guid)	Start	keyword_200000000000	NotifyClients	Informational		
+Microsoft-Windows-NetworkProfile	10006	0	NotifyClientsStop10006(UInt32 NetworkProfileEventState, GUID Guid)	Stop	keyword_200000000000	NotifyClients	Informational		
+Microsoft-Windows-NetworkProfile	10007	0	NotifyClientsStart10007(UInt32 NetworkProfileEventState, GUID Guid)	Start	keyword_200000000000	NotifyClients	Informational		
+Microsoft-Windows-NetworkProfile	10008	0	NotifyClientsStop10008(UInt32 NetworkProfileEventState, GUID Guid)	Stop	keyword_200000000000	NotifyClients	Informational		
+Microsoft-Windows-NetworkProfile	20001	0	task_020001(Int32 ErrorCode, UInt32 Context)		LwtDiagnostic	task_0	Error		
+Microsoft-Windows-NetworkProfile	20002	0	task_020002(GUID ProfileGuid, GUID InterfaceGuid, UInt32 Category, Int32 ErrorCodev4, Int32 ErrorCodev6, UInt32 Context)		LwtDiagnostic	task_0	Informational		
+Microsoft-Windows-NetworkProfile	20003	0	task_020003(Boolean InternetPresent, UInt32 WnfStatusCode)		LwtDiagnostic	task_0	Informational		
+Microsoft-Windows-NetworkProfile	20004	0	task_020004(Boolean FreeNetworkPresent, UInt32 WnfStatusCode)		LwtDiagnostic	task_0	Informational		

@@ -1,0 +1,10 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-WWAN-MM-EVENTS	1001	0	task_0()			task_0	Informational		
+Microsoft-Windows-WWAN-MM-EVENTS	1002	0	task_01002()			task_0	Informational		
+Microsoft-Windows-WWAN-MM-EVENTS	1004	0	task_01004(GUID InterfaceGuid, UInt32 ErrorCode, UInt32 Location, UInt32 Context)			task_0	Error		
+Microsoft-Windows-WWAN-MM-EVENTS	10001	0	WWANMMInterfaceArrivaltaskStart(UInt8 CurrentOrNextState, UInt32 Location, UInt32 Context, GUID InterfaceGuid)	Start	ut:L2ConnectPath keyword_200000000000	WWANMMInterfaceArrivaltask	Informational		
+Microsoft-Windows-WWAN-MM-EVENTS	10002	0	WWANMMInterfaceArrivaltaskStop(UInt8 CurrentOrNextState, UInt32 Location, UInt32 Context, GUID InterfaceGuid)	Stop	ut:L2ConnectPath keyword_200000000000	WWANMMInterfaceArrivaltask	Informational		
+Microsoft-Windows-WWAN-MM-EVENTS	10011	0	WWANMMConnecttaskStart(UInt8 CurrentOrNextState, UInt32 Location, UInt32 Context, GUID InterfaceGuid)	Start	ut:L2ConnectPath keyword_200000000000	WWANMMConnecttask	Informational		
+Microsoft-Windows-WWAN-MM-EVENTS	10012	0	WWANMMConnecttaskStop(UInt8 CurrentOrNextState, UInt32 Location, UInt32 Context, GUID InterfaceGuid)	Stop	ut:L2ConnectPath keyword_200000000000	WWANMMConnecttask	Informational		
+Microsoft-Windows-WWAN-MM-EVENTS	10021	0	WWANMMWritetoUCMspacetaskStart(UInt8 CurrentOrNextState, UInt32 Location, UInt32 Context, GUID InterfaceGuid)	Start	ut:L2ConnectPath keyword_200000000000	WWANMMWritetoUCMspacetask	Informational		
+Microsoft-Windows-WWAN-MM-EVENTS	10022	0	WWANMMWritetoUCMspacetaskStop(UInt8 CurrentOrNextState, UInt32 Location, UInt32 Context, GUID InterfaceGuid)	Stop	ut:L2ConnectPath keyword_200000000000	WWANMMWritetoUCMspacetask	Informational		

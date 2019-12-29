@@ -1,0 +1,117 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Winlogon	1	0	AuthenticateUserStart()	Start	PerfInstrumentation keyword_200000000000	AuthenticateUser	Informational		
+Microsoft-Windows-Winlogon	2	0	AuthenticateUserStop(UInt32 Win32Status)	Stop	PerfInstrumentation keyword_200000000000	AuthenticateUser	Informational		
+Microsoft-Windows-Winlogon	3	0	UpdatePerUserSystemParametersStart(UInt32 Flags)	Start	PerfInstrumentation	UpdatePerUserSystemParameters	Informational		
+Microsoft-Windows-Winlogon	4	0	UpdatePerUserSystemParametersStop(UInt32 Flags)	Stop	PerfInstrumentation	UpdatePerUserSystemParameters	Informational		
+Microsoft-Windows-Winlogon	5	0	CheckWindowsLicenseStatusStart()	Start	PerfInstrumentation	CheckWindowsLicenseStatus	Informational		
+Microsoft-Windows-Winlogon	6	0	CheckWindowsLicenseStatusStop()	Stop	PerfInstrumentation	CheckWindowsLicenseStatus	Informational		
+Microsoft-Windows-Winlogon	7	0	RestoringNetConnectionsStart()	Start	PerfInstrumentation	RestoringNetConnections	Informational		
+Microsoft-Windows-Winlogon	8	0	RestoringNetConnectionsStop()	Stop	PerfInstrumentation	RestoringNetConnections	Informational		
+Microsoft-Windows-Winlogon	9	0	ExecuteShellCommandListStart(UnicodeString CommandList)	Start	PerfInstrumentation	ExecuteShellCommandList	Informational		
+Microsoft-Windows-Winlogon	10	0	ExecuteShellCommandListStop()	Stop	PerfInstrumentation PerfDiagnostics	ExecuteShellCommandList	Informational		
+Microsoft-Windows-Winlogon	11	0	ThemesOnLogonPreStart()	Start	PerfInstrumentation	ThemesOnLogonPre	Informational		
+Microsoft-Windows-Winlogon	12	0	ThemesOnLogonPreStop()	Stop	PerfInstrumentation	ThemesOnLogonPre	Informational		
+Microsoft-Windows-Winlogon	13	0	ThemesOnLogonPostStart()	Start	PerfInstrumentation	ThemesOnLogonPost	Informational		
+Microsoft-Windows-Winlogon	14	0	ThemesOnLogonPostStop()	Stop	PerfInstrumentation	ThemesOnLogonPost	Informational		
+Microsoft-Windows-Winlogon	51	0	ThemesOnLogoffStart()	Start	PerfInstrumentation	ThemesOnLogoff	Informational		
+Microsoft-Windows-Winlogon	52	0	ThemesOnLogoffStop()	Stop	PerfInstrumentation	ThemesOnLogoff	Informational		
+Microsoft-Windows-Winlogon	61	0	DwmpCreateSessionProcessStart()	Start	PerfInstrumentation	DwmpCreateSessionProcess	Informational		
+Microsoft-Windows-Winlogon	62	0	DwmpCreateSessionProcessStop()	Stop	PerfInstrumentation	DwmpCreateSessionProcess	Informational		
+Microsoft-Windows-Winlogon	64	0	DwmpTerminateSessionProcessStart()	Start	PerfInstrumentation	DwmpTerminateSessionProcess	Informational		
+Microsoft-Windows-Winlogon	65	0	DwmpTerminateSessionProcessStop()	Stop	PerfInstrumentation	DwmpTerminateSessionProcess	Informational		
+Microsoft-Windows-Winlogon	67	0	DwmpNotifyUserLogonStart()	Start	PerfInstrumentation	DwmpNotifyUserLogon	Informational		
+Microsoft-Windows-Winlogon	68	0	DwmpNotifyUserLogonStop()	Stop	PerfInstrumentation	DwmpNotifyUserLogon	Informational		
+Microsoft-Windows-Winlogon	70	0	ThemesOnEarlyCreateSessionStart()	Start	PerfInstrumentation	ThemesOnEarlyCreateSession	Informational		
+Microsoft-Windows-Winlogon	71	0	ThemesOnEarlyCreateSessionStop()	Stop	PerfInstrumentation	ThemesOnEarlyCreateSession	Informational		
+Microsoft-Windows-Winlogon	72	0	DwmpNotifyUserLogoffStart()	Start	PerfInstrumentation	DwmpNotifyUserLogoff	Informational		
+Microsoft-Windows-Winlogon	73	0	DwmpNotifyUserLogoffStop()	Stop	PerfInstrumentation	DwmpNotifyUserLogoff	Informational		
+Microsoft-Windows-Winlogon	101	0	CreatePrimaryTerminalStart()	Start	PerfInstrumentation	CreatePrimaryTerminal	Informational		
+Microsoft-Windows-Winlogon	102	0	CreatePrimaryTerminalStop()	Stop	PerfInstrumentation	CreatePrimaryTerminal	Informational		
+Microsoft-Windows-Winlogon	103	0	StartLogonUIStart()	Start	PerfInstrumentation	StartLogonUI	Informational		
+Microsoft-Windows-Winlogon	104	0	StartLogonUIStop()	Stop	PerfInstrumentation	StartLogonUI	Informational		
+Microsoft-Windows-Winlogon	105	0	RunStateMachineStart()	Start	PerfInstrumentation	RunStateMachine	Informational		
+Microsoft-Windows-Winlogon	106	0	RunStateMachineStop()	Stop	PerfInstrumentation	RunStateMachine	Informational		
+Microsoft-Windows-Winlogon	107	0	WaitForLSMStart()	Start	PerfInstrumentation	WaitForLSM	Informational		
+Microsoft-Windows-Winlogon	108	0	WaitForLSMStop()	Stop	PerfInstrumentation	WaitForLSM	Informational		
+Microsoft-Windows-Winlogon	201	0	DisplayWelcomeScreenStart()	Start	PerfInstrumentation	DisplayWelcomeScreen	Informational		
+Microsoft-Windows-Winlogon	202	0	DisplayWelcomeScreenStop()	Stop	PerfInstrumentation	DisplayWelcomeScreen	Informational		
+Microsoft-Windows-Winlogon	203	0	RequestCredentialsStart()	Start	PerfInstrumentation	RequestCredentials	Informational		
+Microsoft-Windows-Winlogon	204	0	RequestCredentialsStop()	Stop	PerfInstrumentation	RequestCredentials	Informational		
+Microsoft-Windows-Winlogon	205	0	ThemesOnCreateSessionStart()	Start	PerfInstrumentation	ThemesOnCreateSession	Informational		
+Microsoft-Windows-Winlogon	206	0	ThemesOnCreateSessionStop()	Stop	PerfInstrumentation	ThemesOnCreateSession	Informational		
+Microsoft-Windows-Winlogon	207	0	ThemesOnTerminateSessionStart()	Start	PerfInstrumentation	ThemesOnTerminateSession	Informational		
+Microsoft-Windows-Winlogon	208	0	ThemesOnTerminateSessionStop()	Stop	PerfInstrumentation	ThemesOnTerminateSession	Informational		
+Microsoft-Windows-Winlogon	301	0	ReceivedLogoffRequest(UInt32 Flags)		PerfInstrumentation	ReceivedLogoffRequest	Informational		
+Microsoft-Windows-Winlogon	401	0	ShutdownWindowsStart(UInt32 Flags)	Start	PerfInstrumentation	ShutdownWindows	Informational		
+Microsoft-Windows-Winlogon	402	0	ShutdownWindowsStop(UInt32 Win32Status)	Stop	PerfInstrumentation	ShutdownWindows	Informational		
+Microsoft-Windows-Winlogon	403	0	InitiateShutdownStart(UInt32 Flags)	Start	PerfInstrumentation	InitiateShutdown	Informational		
+Microsoft-Windows-Winlogon	404	0	InitiateShutdownStop(UInt32 Win32Status)	Stop	PerfInstrumentation	InitiateShutdown	Informational		
+Microsoft-Windows-Winlogon	501	0	WluiServerStartupStart()	Start	PerfInstrumentation	WluiServerStartup	Informational		
+Microsoft-Windows-Winlogon	502	0	WluiServerStartupStop()	Stop	PerfInstrumentation	WluiServerStartup	Informational		
+Microsoft-Windows-Winlogon	503	0	WluiServerShutdownStart()	Start	PerfInstrumentation	WluiServerShutdown	Informational		
+Microsoft-Windows-Winlogon	504	0	WluiServerShutdownStop()	Stop	PerfInstrumentation	WluiServerShutdown	Informational		
+Microsoft-Windows-Winlogon	505	0	WluiServerStartup()			WluiServerStartup	Error		
+Microsoft-Windows-Winlogon	801	0	NotifyExecuteStart(UInt32 Event)	Start	PerfInstrumentation PerfTrackContext keyword_200000000000	NotifyExecute	Informational		
+Microsoft-Windows-Winlogon	802	0	NotifyExecuteStop(UInt32 Event)	Stop	PerfInstrumentation keyword_200000000000	NotifyExecute	Informational		
+Microsoft-Windows-Winlogon	803	0	NotifyServicesStart(UInt32 EventCode, UInt32 SessionId)	Start	PerfInstrumentation	NotifyServices	Informational		
+Microsoft-Windows-Winlogon	804	0	NotifyServicesStop(UInt32 EventCode, UInt32 SessionId)	Stop	PerfInstrumentation	NotifyServices	Informational		
+Microsoft-Windows-Winlogon	805	0	NotifySubscriberStart(UInt32 Event, UnicodeString SubscriberName)	Start	PerfInstrumentation keyword_200000000000	NotifySubscriber	Informational		
+Microsoft-Windows-Winlogon	806	0	NotifySubscriberStop(UInt32 Event, UnicodeString SubscriberName)	Stop	PerfInstrumentation keyword_200000000000	NotifySubscriber	Informational		
+Microsoft-Windows-Winlogon	807	0	NotifySubscriberNotificationPended(UInt32 Event, UnicodeString SubscriberName, UnicodeString Message)	NotificationPended	PerfInstrumentation	NotifySubscriber	Informational		
+Microsoft-Windows-Winlogon	808	0	NotifySubscriberNotificationFailed(UInt32 Event, UnicodeString SubscriberName, UnicodeString Message)	NotificationFailed	PerfInstrumentation	NotifySubscriber	Informational		
+Microsoft-Windows-Winlogon	809	0	ConnectToSubscriberStart(UnicodeString SubscriberName)	Start	PerfInstrumentation	ConnectToSubscriber	Informational		
+Microsoft-Windows-Winlogon	810	0	ConnectToSubscriberStop(UnicodeString SubscriberName)	Stop	PerfInstrumentation	ConnectToSubscriber	Informational		
+Microsoft-Windows-Winlogon	811	0	CallSubscriberStart(UInt32 Event, UnicodeString SubscriberName)	Start	PerfInstrumentation	CallSubscriber	Informational		
+Microsoft-Windows-Winlogon	812	0	CallSubscriberStop(UInt32 Event, UnicodeString SubscriberName)	Stop	PerfInstrumentation	CallSubscriber	Informational		
+Microsoft-Windows-Winlogon	1001	0	LogonHours(UInt32 ActionId, UInt32 TimeLeft)		NotificationEvents	LogonHours	Informational		
+Microsoft-Windows-Winlogon	1002	0	task_0PCODE_64pcode_64()	opcode_64		task_0	Always		
+Microsoft-Windows-Winlogon	1101	0	EAS(SID UserSid, UnicodeString UserName, UnicodeString UserDomain)			EAS	Warning		
+Microsoft-Windows-Winlogon	1102	0	EAS1102(SID UserSid, UnicodeString UserName, UnicodeString UserDomain)			EAS	Warning		
+Microsoft-Windows-Winlogon	1103	0	EAS1103(SID UserSid, UnicodeString UserName, UnicodeString UserDomain)			EAS	Warning		
+Microsoft-Windows-Winlogon	1104	0	EAS1104(UInt32 Win32Status)			EAS	Warning		
+Microsoft-Windows-Winlogon	4002	0	task_0PCODE_64pcode_644002()	opcode_64		task_0	Always		
+Microsoft-Windows-Winlogon	4003	0	task_0PCODE_192pcode_192()	opcode_192		task_0	Always		
+Microsoft-Windows-Winlogon	4004	0	task_0PCODE_192pcode_1924004()	opcode_192		task_0	Always		
+Microsoft-Windows-Winlogon	4005	0	task_0PCODE_192pcode_1924005()	opcode_192		task_0	Always		
+Microsoft-Windows-Winlogon	4006	0	task_0PCODE_128pcode_128()	opcode_128		task_0	Always		
+Microsoft-Windows-Winlogon	4007	0	task_0PCODE_128pcode_1284007()	opcode_128		task_0	Always		
+Microsoft-Windows-Winlogon	4101	0	task_0PCODE_64pcode_644101()	opcode_64		task_0	Always		
+Microsoft-Windows-Winlogon	4102	0	task_0PCODE_192pcode_1924102()	opcode_192		task_0	Always		
+Microsoft-Windows-Winlogon	4103	0	task_0PCODE_192pcode_1924103()	opcode_192		task_0	Always		
+Microsoft-Windows-Winlogon	4104	0	task_0PCODE_64pcode_644104()	opcode_64		task_0	Always		
+Microsoft-Windows-Winlogon	4105	0	task_0PCODE_128pcode_1284105()	opcode_128		task_0	Always		
+Microsoft-Windows-Winlogon	5001	0	UserBootStart(UInt32 SessionId)	Start	PerfDiagnostics	UserBoot	Informational		
+Microsoft-Windows-Winlogon	5002	0	UserBootStop()	Stop	PerfDiagnostics	UserBoot	Informational		
+Microsoft-Windows-Winlogon	5003	0	UserBoot(UInt32 SessionId)		PerfDiagnostics	UserBoot	Informational		
+Microsoft-Windows-Winlogon	5005	0	UserShellLaunch()		PerfDiagnostics	UserShellLaunch	Informational		
+Microsoft-Windows-Winlogon	5007	0	SystemBootStop(UInt32 SessionId)	Stop	PerfDiagnostics	SystemBoot	Informational		
+Microsoft-Windows-Winlogon	6000	0	task_0PCODE_128pcode_1286000()	opcode_128		task_0	Always		
+Microsoft-Windows-Winlogon	6001	0	ShutdownDiagnosticsStart(UInt32 Flags)	Start	PerfInstrumentation PerfDiagnostics	ShutdownDiagnostics	Informational		
+Microsoft-Windows-Winlogon	6001	0	task_0PCODE_128pcode_1286001()	opcode_128		task_0	Always		
+Microsoft-Windows-Winlogon	6002	0	task_0PCODE_128pcode_1286002()	opcode_128		task_0	Always		
+Microsoft-Windows-Winlogon	6003	0	task_0PCODE_128pcode_1286003()	opcode_128		task_0	Always		
+Microsoft-Windows-Winlogon	6004	0	task_0PCODE_128pcode_1286004()	opcode_128		task_0	Always		
+Microsoft-Windows-Winlogon	6005	0	task_0PCODE_128pcode_1286005()	opcode_128		task_0	Always		
+Microsoft-Windows-Winlogon	6006	0	task_0PCODE_128pcode_1286006()	opcode_128		task_0	Always		
+Microsoft-Windows-Winlogon	6101	0	LogoffRequestToUserFeedbackStart(UInt32 LogoffFlags)	Start	PerfDiagnostics	LogoffRequestToUserFeedback	Informational		
+Microsoft-Windows-Winlogon	6102	0	LogoffRequestToUserFeedbackStop(UInt32 Flags)	Stop	PerfDiagnostics	LogoffRequestToUserFeedback	Informational		
+Microsoft-Windows-Winlogon	6103	0	LogoffAppsTerminationToSessionEndStart(UInt32 LogoffFlags)	Start	PerfDiagnostics	LogoffAppsTerminationToSessionEnd	Informational		
+Microsoft-Windows-Winlogon	6104	0	LogoffAppsTerminationToSessionEndStop(UInt32 LogoffFlags)	Stop	PerfDiagnostics	LogoffAppsTerminationToSessionEnd	Informational		
+Microsoft-Windows-Winlogon	6105	0	UnlockStart()	Start	PerfDiagnostics keyword_200000000000	Unlock	Informational		
+Microsoft-Windows-Winlogon	6106	0	UnlockStop()	Stop	PerfDiagnostics keyword_400000000000	Unlock	Informational		
+Microsoft-Windows-Winlogon	6107	0	UnlockStop6107(UInt32 Status)	Stop	PerfDiagnostics keyword_400000000000	Unlock	Informational		
+Microsoft-Windows-Winlogon	6108	0	LogonStart()	Start	PerfDiagnostics keyword_200000000000	Logon	Informational		
+Microsoft-Windows-Winlogon	6109	0	LogonStop(UInt32 Status)	Stop	PerfDiagnostics keyword_400000000000	Logon	Informational		
+Microsoft-Windows-Winlogon	6110	0	LogonStop6110()	Stop	PerfDiagnostics keyword_400000000000	Logon	Informational		
+Microsoft-Windows-Winlogon	6111	0	LogonStop6111()	Stop	PerfDiagnostics keyword_400000000000	Logon	Informational		
+Microsoft-Windows-Winlogon	6112	0	LogonStop6112()	Stop	PerfDiagnostics keyword_400000000000	Logon	Informational		
+Microsoft-Windows-Winlogon	6113	0	LockStart()	Start	PerfDiagnostics keyword_200000000000	Lock	Informational		
+Microsoft-Windows-Winlogon	6114	0	LockStop()	Stop	PerfDiagnostics	Lock	Informational		
+Microsoft-Windows-Winlogon	6115	0	LockStop6115()	Stop	PerfDiagnostics	Lock	Informational		
+Microsoft-Windows-Winlogon	6116	0	Logoff(UInt32 Duration, UInt32 ResolverData)		PerfDiagnostics keyword_400000000000	Logoff	Informational		
+Microsoft-Windows-Winlogon	6117	0	DelayLockDisplayLockScreen()		keyword_200000000000	DelayLockDisplayLockScreen	Informational		
+Microsoft-Windows-Winlogon	6118	0	KillingScreenSaverToLockWorkStation()		keyword_200000000000	KillingScreenSaverToLockWorkStation	Informational		
+Microsoft-Windows-Winlogon	6119	0	AutomaticRestartSignOn()		keyword_200000000000	AutomaticRestartSignOn	Informational		
+Microsoft-Windows-Winlogon	6120	0	HotKeyLockDesktopInvoked()		keyword_200000000000	HotKeyLockDesktopInvoked	Informational		
+Microsoft-Windows-Winlogon	7001	0	WinSqmUserLogin(UInt32 TSId, SID UserSid)		keyword_200000000000	WinSqmUserLogin	Informational		
+Microsoft-Windows-Winlogon	7002	0	WinSqmUserLogoff(UInt32 TSId, SID UserSid)		keyword_200000000000	WinSqmUserLogoff	Informational		

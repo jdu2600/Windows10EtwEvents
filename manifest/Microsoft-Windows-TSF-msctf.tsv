@@ -1,0 +1,96 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-TSF-msctf	1	0	InitMSCTFForProcessStart()	Start	Perf	InitMSCTFForProcess	Informational		
+Microsoft-Windows-TSF-msctf	2	0	InitMSCTFForProcessStop()	Stop	Perf	InitMSCTFForProcess	Informational		
+Microsoft-Windows-TSF-msctf	3	0	UninitMSCTFForProcessStart()	Start	Perf	UninitMSCTFForProcess	Informational		
+Microsoft-Windows-TSF-msctf	4	0	UninitMSCTFForProcessStop()	Stop	Perf	UninitMSCTFForProcess	Informational		
+Microsoft-Windows-TSF-msctf	5	0	ActivateCiceroForThreadStart(UInt32 thread_flags, UInt32 activation_flags)	Start	Perf	ActivateCiceroForThread	Informational		
+Microsoft-Windows-TSF-msctf	6	0	ActivateCiceroForThread()		Perf	ActivateCiceroForThread	Informational		
+Microsoft-Windows-TSF-msctf	7	0	ActivateCiceroForThreadStop(UInt32 thread_flags, UInt32 activation_flags)	Stop	Perf	ActivateCiceroForThread	Informational		
+Microsoft-Windows-TSF-msctf	8	0	DeactivateCiceroForThreadStart()	Start	Perf	DeactivateCiceroForThread	Informational		
+Microsoft-Windows-TSF-msctf	9	0	DeactivateCiceroForThreadStop()	Stop	Perf	DeactivateCiceroForThread	Informational		
+Microsoft-Windows-TSF-msctf	10	0	FLSCallbackStart()	Start	Perf	FLSCallback	Informational		
+Microsoft-Windows-TSF-msctf	11	0	FLSCallbackStop()	Stop	Perf	FLSCallback	Informational		
+Microsoft-Windows-TSF-msctf	12	0	ConnectServerStart()	Start	Perf ALPC	ConnectServer	Informational		
+Microsoft-Windows-TSF-msctf	13	0	ConnectServer()		ALPC	ConnectServer	Warning		
+Microsoft-Windows-TSF-msctf	14	0	ConnectServerStop()	Stop	Perf ALPC	ConnectServer	Informational		
+Microsoft-Windows-TSF-msctf	15	0	task_0()		Status ALPC	task_0	Informational		
+Microsoft-Windows-TSF-msctf	16	0	CreateMessageWindow()		Status	CreateMessageWindow	Informational		
+Microsoft-Windows-TSF-msctf	17	0	CreateMessageWindow17()		Status	CreateMessageWindow	Error		
+Microsoft-Windows-TSF-msctf	18	0	task_018()		Status	task_0	Informational		
+Microsoft-Windows-TSF-msctf	19	0	ActivateTIPStart(GUID guid)	Start	Perf	ActivateTIP	Informational		
+Microsoft-Windows-TSF-msctf	20	0	ActivateTIPStop(GUID guid)	Stop	Perf	ActivateTIP	Informational		
+Microsoft-Windows-TSF-msctf	21	0	DeactivateTIPStart(GUID guid)	Start	Perf	DeactivateTIP	Informational		
+Microsoft-Windows-TSF-msctf	22	0	DeactivateTIPStop(GUID guid)	Stop	Perf	DeactivateTIP	Informational		
+Microsoft-Windows-TSF-msctf	23	0	CheckLastWindowDestroyedStart()	Start	Perf	CheckLastWindowDestroyed	Informational		
+Microsoft-Windows-TSF-msctf	24	0	CheckLastWindowDestroyedStop()	Stop	Perf	CheckLastWindowDestroyed	Informational		
+Microsoft-Windows-TSF-msctf	25	0	CreateAssemblyListStart()	Start	Perf	CreateAssemblyList	Informational		
+Microsoft-Windows-TSF-msctf	26	0	CreateAssemblyListStop()	Stop	Perf	CreateAssemblyList	Informational		
+Microsoft-Windows-TSF-msctf	27	0	LoadAssemblyListStart()	Start	Perf	LoadAssemblyList	Informational		
+Microsoft-Windows-TSF-msctf	28	0	LoadAssemblyListStop()	Stop	Perf	LoadAssemblyList	Informational		
+Microsoft-Windows-TSF-msctf	29	0	ActivateAssemblyStart(UInt32 LANGID)	Start	Perf	ActivateAssembly	Informational		
+Microsoft-Windows-TSF-msctf	30	0	ActivateAssemblyStop(UInt32 LANGID)	Stop	Perf	ActivateAssembly	Informational		
+Microsoft-Windows-TSF-msctf	31	0	HandleThreadInputFocusEventStart(UInt32 event, Pointer hwnd, UInt32 flags, UInt32 event_order)	Start	Focus	HandleThreadInputFocusEvent	Informational		
+Microsoft-Windows-TSF-msctf	32	0	HandleThreadInputFocusEventStop(Pointer hwnd)	Stop	Focus	HandleThreadInputFocusEvent	Informational		
+Microsoft-Windows-TSF-msctf	33	0	HandleGlobalInputFocusEventStart(UInt32 event, Pointer hwnd, UInt32 flags, UInt32 event_order)	Start	Focus	HandleGlobalInputFocusEvent	Informational		
+Microsoft-Windows-TSF-msctf	34	0	HandleGlobalInputFocusEventStop()	Stop	Focus	HandleGlobalInputFocusEvent	Informational		
+Microsoft-Windows-TSF-msctf	35	0	SendNotificationSend(UInt32 message, UInt32 target_tid, UInt32 params)	Send	ALPC	SendNotification	Informational		
+Microsoft-Windows-TSF-msctf	36	0	SendSyncRequestSuspend(UInt32 message, UInt32 target_tid, UInt32 params)	Suspend	ALPC	SendSyncRequest	Informational		
+Microsoft-Windows-TSF-msctf	37	0	SendSyncRequestResume()	Resume	ALPC	SendSyncRequest	Informational		
+Microsoft-Windows-TSF-msctf	38	0	SendAsyncRequestStart(UInt32 message, UInt32 target_tid, UInt32 params)	Start	ALPC	SendAsyncRequest	Informational		
+Microsoft-Windows-TSF-msctf	39	0	SendAsyncRequestStop()	Stop	ALPC	SendAsyncRequest	Informational		
+Microsoft-Windows-TSF-msctf	40	0	ReceiveALPCMessagesStart()	Start	ALPC	ReceiveALPCMessages	Informational		
+Microsoft-Windows-TSF-msctf	41	0	ReceiveALPCMessagesStop()	Stop	ALPC	ReceiveALPCMessages	Informational		
+Microsoft-Windows-TSF-msctf	42	0	ProcessALPCMessageStart(UInt32 message, UInt32 target_tid, UInt32 params)	Start	ALPC	ProcessALPCMessage	Informational		
+Microsoft-Windows-TSF-msctf	43	0	ProcessALPCMessageStop(UInt32 param)	Stop	ALPC	ProcessALPCMessage	Error		
+Microsoft-Windows-TSF-msctf	44	0	ProcessALPCMessageStop44()	Stop	ALPC	ProcessALPCMessage	Informational		
+Microsoft-Windows-TSF-msctf	45	0	ProcessALPCMessageReply(UInt32 message, UInt32 target_tid, UInt32 params, UInt32 hr)	Reply	ALPC	ProcessALPCMessage	Informational		
+Microsoft-Windows-TSF-msctf	46	0	CreateLangBarItemMgrStart()	Start	Perf	CreateLangBarItemMgr	Informational		
+Microsoft-Windows-TSF-msctf	47	0	CreateLangBarItemMgrStop()	Stop	Perf	CreateLangBarItemMgr	Informational		
+Microsoft-Windows-TSF-msctf	48	0	GetIconFromFileStart()	Start	Perf	GetIconFromFile	Informational		
+Microsoft-Windows-TSF-msctf	49	0	GetIconFromFileStop()	Stop	Perf	GetIconFromFile	Informational		
+Microsoft-Windows-TSF-msctf	50	0	CreateBitmapStart()	Start	Perf	CreateBitmap	Informational		
+Microsoft-Windows-TSF-msctf	51	0	CreateBitmapStop()	Stop	Perf	CreateBitmap	Informational		
+Microsoft-Windows-TSF-msctf	52	0	ITfThreadFocusSink_OnSetThreadFocusStart(UInt32 param)	Start	TSFEvent	ITfThreadFocusSink_OnSetThreadFocus	Informational		
+Microsoft-Windows-TSF-msctf	53	0	ITfThreadFocusSink_OnSetThreadFocusStop(UInt32 param)	Stop	TSFEvent	ITfThreadFocusSink_OnSetThreadFocus	Informational		
+Microsoft-Windows-TSF-msctf	54	0	ITfThreadFocusSink_OnKillThreadFocusStart(UInt32 param)	Start	TSFEvent	ITfThreadFocusSink_OnKillThreadFocus	Informational		
+Microsoft-Windows-TSF-msctf	55	0	ITfThreadFocusSink_OnKillThreadFocusStop(UInt32 param)	Stop	TSFEvent	ITfThreadFocusSink_OnKillThreadFocus	Informational		
+Microsoft-Windows-TSF-msctf	56	0	ITfThreadMgrEventSink_OnSetFocusStart(Pointer pdimNewFocus, Pointer pdimPrevFocus)	Start	TSFEvent	ITfThreadMgrEventSink_OnSetFocus	Informational		
+Microsoft-Windows-TSF-msctf	57	0	ITfThreadMgrEventSink_OnSetFocusStop(Pointer pdimNewFocus, Pointer pdimPrevFocus)	Stop	TSFEvent	ITfThreadMgrEventSink_OnSetFocus	Informational		
+Microsoft-Windows-TSF-msctf	58	0	CiceroServerStart(UInt32 param)	Start	Status	CiceroServer	Informational		
+Microsoft-Windows-TSF-msctf	59	0	CiceroServerStop(UInt32 param)	Stop	Status	CiceroServer	Informational		
+Microsoft-Windows-TSF-msctf	60	0	CiceroServer()		Status	CiceroServer	Informational		
+Microsoft-Windows-TSF-msctf	61	0	CiceroServer61()		Status	CiceroServer	Informational		
+Microsoft-Windows-TSF-msctf	62	0	CiceroServer62()		Status	CiceroServer	Informational		
+Microsoft-Windows-TSF-msctf	63	0	CiceroServer63()		Status	CiceroServer	Informational		
+Microsoft-Windows-TSF-msctf	64	0	task_064(UInt32 param)		Status	task_0	Informational		
+Microsoft-Windows-TSF-msctf	65	0	IMELocalServer(GUID guid)		OOPIME	IMELocalServer	Informational		
+Microsoft-Windows-TSF-msctf	66	0	IMELocalServer66(GUID guid)		OOPIME	IMELocalServer	Informational		
+Microsoft-Windows-TSF-msctf	67	0	IMELocalServer67(GUID guid)		OOPIME	IMELocalServer	Informational		
+Microsoft-Windows-TSF-msctf	68	0	IMELocalServer68(GUID guid)		OOPIME	IMELocalServer	Informational		
+Microsoft-Windows-TSF-msctf	69	0	IMELocalServer69(GUID guid)		OOPIME	IMELocalServer	Informational		
+Microsoft-Windows-TSF-msctf	70	0	IMELocalServer70(GUID guid)		OOPIME	IMELocalServer	Informational		
+Microsoft-Windows-TSF-msctf	71	0	IMELocalServerStart()	Start	Perf	IMELocalServer	Informational		
+Microsoft-Windows-TSF-msctf	72	0	IMELocalServerStop()	Stop	Perf	IMELocalServer	Informational		
+Microsoft-Windows-TSF-msctf	73	0	InputProfileActivation()		OOPIME	InputProfileActivation	Informational		
+Microsoft-Windows-TSF-msctf	74	0	InputProfileActivation74(UInt32 param)		OOPIME	InputProfileActivation	Informational		
+Microsoft-Windows-TSF-msctf	75	0	InputProfileActivation75(GUID guid, UInt16 langid)		OOPIME	InputProfileActivation	Informational		
+Microsoft-Windows-TSF-msctf	76	0	InputProfileDeactivation()		OOPIME	InputProfileDeactivation	Informational		
+Microsoft-Windows-TSF-msctf	77	0	InputProfileDeactivation77(UInt32 param)		OOPIME	InputProfileDeactivation	Informational		
+Microsoft-Windows-TSF-msctf	78	0	InputProfileDeactivation78()		OOPIME	InputProfileDeactivation	Informational		
+Microsoft-Windows-TSF-msctf	79	0	DocumentFocusChange(UInt32 DocId, UInt32 DocThread, Boolean GainFocus)		OOPIME	DocumentFocusChange	Informational		
+Microsoft-Windows-TSF-msctf	80	0	DocumentFocusChange80(UInt32 thread, UInt32 document)		OOPIME	DocumentFocusChange	Informational		
+Microsoft-Windows-TSF-msctf	81	0	DocumentFocusChange81(UInt32 thread, UInt32 document)		OOPIME	DocumentFocusChange	Informational		
+Microsoft-Windows-TSF-msctf	82	0	DocumentFocusChange82(Boolean boolean)		OOPIME	DocumentFocusChange	Informational		
+Microsoft-Windows-TSF-msctf	83	0	DocumentContentChange()		OOPIME	DocumentContentChange	Informational		
+Microsoft-Windows-TSF-msctf	84	0	DocumentContentChange84(UInt32 param)		OOPIME	DocumentContentChange	Informational		
+Microsoft-Windows-TSF-msctf	85	0	DocumentContentChange85(UInt32 param)		OOPIME	DocumentContentChange	Informational		
+Microsoft-Windows-TSF-msctf	86	0	DocumentContentChange86()		OOPIME	DocumentContentChange	Informational		
+Microsoft-Windows-TSF-msctf	87	0	KeyboardEventHandling()		Perf OOPIME	KeyboardEventHandling	Informational		
+Microsoft-Windows-TSF-msctf	88	0	KeyboardEventHandling88()		Perf OOPIME	KeyboardEventHandling	Informational		
+Microsoft-Windows-TSF-msctf	89	0	KeyboardEventHandling89(Boolean boolean)		Perf OOPIME	KeyboardEventHandling	Informational		
+Microsoft-Windows-TSF-msctf	90	0	KeyboardEventHandling90()		Perf OOPIME	KeyboardEventHandling	Informational		
+Microsoft-Windows-TSF-msctf	91	0	KeyboardEventHandling91()		Perf OOPIME	KeyboardEventHandling	Informational		
+Microsoft-Windows-TSF-msctf	92	0	KeyboardEventHandling92()		Perf OOPIME	KeyboardEventHandling	Informational		
+Microsoft-Windows-TSF-msctf	93	0	KeyboardEventHandling93()		Perf OOPIME	KeyboardEventHandling	Informational		
+Microsoft-Windows-TSF-msctf	94	0	KeyboardEventHandling94()		Perf OOPIME	KeyboardEventHandling	Informational		
+Microsoft-Windows-TSF-msctf	95	0	KeyboardEventHandling95()		Perf OOPIME	KeyboardEventHandling	Informational		

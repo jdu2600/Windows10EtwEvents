@@ -1,0 +1,12 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+RmClient_RestartManager	10000	0	task_0(UInt32 RmSessionId, FILETIME UTCStartTime)			task_0	Informational		
+RmClient_RestartManager	10001	0	task_010001(UInt32 RmSessionId, FILETIME UTCStartTime)			task_0	Informational		
+RmClient_RestartManager	10002	0	task_010002(UInt32 RmSessionId, UnicodeString FullPath, UnicodeString DisplayName, UInt32 AppVersion, UInt32 AppType, UInt32 TSSessionId, UInt32 Status, UInt32 Pid, UInt32 nFiles, UnicodeString File)			task_0	Informational		
+RmClient_RestartManager	10003	0	task_010003(UInt32 RmSessionId, UnicodeString FullPath, UnicodeString DisplayName, UInt32 AppVersion, UInt32 AppType, UInt32 TSSessionId, UInt32 Status, UInt32 Pid, UInt32 nFiles, UnicodeString File)			task_0	Informational		
+RmClient_RestartManager	10004	0	task_010004(UInt32 RmSessionId, UInt32 nFiles, UInt32 nRegProcs, UInt32 nRegServices, UnicodeString Files, UnicodeString RegProcs, UnicodeString RegServices)			task_0	Informational		
+RmClient_RestartManager	10005	0	task_010005(UInt32 RmSessionId, UInt32 nApplications, UnicodeString Applications, UInt32 dwRebootReasons)			task_0	Informational		
+RmClient_RestartManager	10006	0	task_010006(UInt32 RmSessionId, UnicodeString FullPath, UnicodeString DisplayName, UInt32 AppVersion, UInt32 AppType, UInt32 TSSessionId, UInt32 Status, UInt32 Pid, UInt32 nFiles, UnicodeString File)			task_0	Error		
+RmClient_RestartManager	10007	0	task_010007(UInt32 RmSessionId, UnicodeString FullPath, UnicodeString DisplayName, UInt32 AppVersion, UInt32 AppType, UInt32 TSSessionId, UInt32 Status, UInt32 Pid, UInt32 nFiles, UnicodeString File)			task_0	Error		
+RmClient_RestartManager	10008	0	task_010008(UInt32 RmSessionId, UInt32 cbSize, Binary pbBinary)			task_0	Error		
+RmClient_RestartManager	10009	0	task_010009(UInt32 RmSessionId, UInt32 SvcHostPid, UInt32 nFiles, UInt32 nServices, UnicodeString FileName, UnicodeString Service)			task_0	Warning		
+RmClient_RestartManager	10010	0	task_010010(UInt32 RmSessionId, UInt32 Pid, UnicodeString FullPath, UnicodeString DisplayName, UInt32 AppVersion, UInt32 AppType, UInt32 TSSessionId, UInt32 Status, UInt32 Reason)			task_0	Warning		

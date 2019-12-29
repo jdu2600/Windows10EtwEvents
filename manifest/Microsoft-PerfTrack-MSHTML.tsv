@@ -1,0 +1,16 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-PerfTrack-MSHTML	101	0	NavigationStart(UInt64 ObjectMSHTML, UInt32 Counter)	Start		Navigation	Informational		
+Microsoft-PerfTrack-MSHTML	102	0	NavigationStop(UInt64 ObjectMSHTML, UInt32 Counter)	Stop		Navigation	Informational		
+Microsoft-PerfTrack-MSHTML	103	0	ScrollStart(UInt64 ObjectMSHTML)	Start	defunct	Scroll	Informational		
+Microsoft-PerfTrack-MSHTML	104	0	ScrollStop(UInt64 ObjectMSHTML)	Stop	defunct	Scroll	Informational		
+Microsoft-PerfTrack-MSHTML	105	0	RedirectStart(UInt64 ObjectMSHTML, UInt32 Counter)	Start		Redirect	Informational		
+Microsoft-PerfTrack-MSHTML	107	0	XSSFilter_RuleCheckStart(UInt64 ObjectXSSFilter, UnicodeString Type)	Start		XSSFilter_RuleCheck	Informational		
+Microsoft-PerfTrack-MSHTML	108	0	XSSFilter_RuleCheckStop(UInt64 ObjectXSSFilter, UnicodeString Type)	Stop		XSSFilter_RuleCheck	Informational		
+Microsoft-PerfTrack-MSHTML	109	0	XSSFilter_SanitizeStart(UInt64 ObjectXSSFilter)	Start		XSSFilter_Sanitize	Informational		
+Microsoft-PerfTrack-MSHTML	110	0	XSSFilter_SanitizeStop(UInt64 ObjectXSSFilter)	Stop		XSSFilter_Sanitize	Informational		
+Microsoft-PerfTrack-MSHTML	120	0	Mshtml_TouchSelection_InvocationStart()	Start		Mshtml_TouchSelection_Invocation	Informational		
+Microsoft-PerfTrack-MSHTML	121	0	Mshtml_TouchSelection_InvocationStop()	Stop		Mshtml_TouchSelection_Invocation	Informational		
+Microsoft-PerfTrack-MSHTML	122	0	Mshtml_TouchSelection_ManipulationStart()	Start		Mshtml_TouchSelection_Manipulation	Informational		
+Microsoft-PerfTrack-MSHTML	123	0	Mshtml_TouchSelection_ManipulationStop()	Stop		Mshtml_TouchSelection_Manipulation	Informational		
+Microsoft-PerfTrack-MSHTML	124	0	Mshtml_TouchSelection_DismissalStart()	Start		Mshtml_TouchSelection_Dismissal	Informational		
+Microsoft-PerfTrack-MSHTML	125	0	Mshtml_TouchSelection_DismissalStop()	Stop		Mshtml_TouchSelection_Dismissal	Informational		

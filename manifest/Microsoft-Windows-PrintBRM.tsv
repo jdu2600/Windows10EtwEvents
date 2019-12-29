@@ -1,0 +1,84 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-PrintBRM	1	0	BackupPrintBRMoperationsuccess()	PrintBRMoperationsuccess	PRINT_QUEUE_KEYWORD	Backup	Informational		
+Microsoft-Windows-PrintBRM	2	0	RestorePrintBRMoperationsuccess()	PrintBRMoperationsuccess	PRINT_QUEUE_KEYWORD	Restore	Informational		
+Microsoft-Windows-PrintBRM	3	0	RestorePrintBRMoperationsuccess3(UnicodeString DriverName, UnicodeString NewDriver, UnicodeString PrinterName)	PrintBRMoperationsuccess	PRINT_QUEUE_KEYWORD	Restore	Informational		
+Microsoft-Windows-PrintBRM	4	0	RestorePrintBRMoperationfailure(UnicodeString PrinterName, HexInt32 ErrorCode)	PrintBRMoperationfailure	PRINT_QUEUE_KEYWORD	Restore	Error		
+Microsoft-Windows-PrintBRM	5	0	GeneraloperationPrintBRMoperationsuccess()	PrintBRMoperationsuccess	PRINT_BRM_KEYWORD	Generaloperation	Informational		
+Microsoft-Windows-PrintBRM	6	0	RestorePrintBRMoperationsuccess6(UnicodeString PrinterName)	PrintBRMoperationsuccess	PRINT_QUEUE_KEYWORD	Restore	Informational		
+Microsoft-Windows-PrintBRM	7	0	RestorePrintBRMoperationfailure7(UnicodeString PrinterName, HexInt32 ErrorCode)	PrintBRMoperationfailure	PRINT_QUEUE_KEYWORD	Restore	Error		
+Microsoft-Windows-PrintBRM	8	0	RestorePrintBRMoperationsuccess8(UnicodeString PrinterName)	PrintBRMoperationsuccess	PRINT_QUEUE_KEYWORD	Restore	Informational		
+Microsoft-Windows-PrintBRM	9	0	RestorePrintBRMoperationsuccess9(UnicodeString PrinterName)	PrintBRMoperationsuccess	PRINT_QUEUE_KEYWORD	Restore	Informational		
+Microsoft-Windows-PrintBRM	10	0	RestorePrintBRMoperationsuccess10(UnicodeString PrinterName)	PrintBRMoperationsuccess	PRINT_QUEUE_KEYWORD	Restore	Informational		
+Microsoft-Windows-PrintBRM	11	0	RestorePrintBRMoperationfailure11(UnicodeString PrinterName, UnicodeString PortName)	PrintBRMoperationfailure	PRINT_QUEUE_KEYWORD	Restore	Error		
+Microsoft-Windows-PrintBRM	12	0	RestorePrintBRMoperationsuccess12(UnicodeString PrinterName)	PrintBRMoperationsuccess	PRINT_QUEUE_KEYWORD	Restore	Informational		
+Microsoft-Windows-PrintBRM	13	0	RestorePrintBRMoperationfailure13(UnicodeString PrinterName, HexInt32 ErrorCode)	PrintBRMoperationfailure	PRINT_QUEUE_KEYWORD	Restore	Error		
+Microsoft-Windows-PrintBRM	14	0	RestorePrintBRMoperationsuccess14(UnicodeString PrintProcessorName)	PrintBRMoperationsuccess	PRINT_PROC_KEYWORD	Restore	Informational		
+Microsoft-Windows-PrintBRM	15	0	RestorePrintBRMoperationfailure15(UnicodeString PrintProcessorName, HexInt32 ErrorCode)	PrintBRMoperationfailure	PRINT_PROC_KEYWORD	Restore	Error		
+Microsoft-Windows-PrintBRM	16	0	BackupPrintBRMoperationfailure(UnicodeString FileName, HexInt32 ErrorCode)	PrintBRMoperationfailure	PRINT_LANG_MON_KEYWORD	Backup	Error		
+Microsoft-Windows-PrintBRM	17	0	RestorePrintBRMoperationsuccess17(UnicodeString LanguageMonitor)	PrintBRMoperationsuccess	PRINT_LANG_MON_KEYWORD	Restore	Informational		
+Microsoft-Windows-PrintBRM	18	0	RestorePrintBRMoperationfailure18(UnicodeString LanguageMonitor, HexInt32 ErrorCode)	PrintBRMoperationfailure	PRINT_LANG_MON_KEYWORD	Restore	Error		
+Microsoft-Windows-PrintBRM	19	0	RestorePrintBRMoperationfailure19(UnicodeString SourceArchitecture, UnicodeString TargetArchitecture)	PrintBRMoperationfailure	PRINT_LANG_MON_KEYWORD	Restore	Error		
+Microsoft-Windows-PrintBRM	20	0	Restore(UnicodeString DriverName, UnicodeString TargetServerArchitecture)		PRINT_DRIVER_KEYWORD	Restore	Warning		
+Microsoft-Windows-PrintBRM	21	0	RestorePrintBRMoperationsuccess21(UnicodeString DriverName)	PrintBRMoperationsuccess	PRINT_DRIVER_KEYWORD	Restore	Informational		
+Microsoft-Windows-PrintBRM	22	0	RestorePrintBRMoperationfailure22(UnicodeString DriverName, UnicodeString TargetServerArchitecture, HexInt32 ErrorCode)	PrintBRMoperationfailure	PRINT_DRIVER_KEYWORD	Restore	Error		
+Microsoft-Windows-PrintBRM	23	0	RestorePrintBRMoperationsuccess23(UnicodeString DriverName, UnicodeString Architecture)	PrintBRMoperationsuccess	PRINT_DRIVER_KEYWORD	Restore	Informational		
+Microsoft-Windows-PrintBRM	24	0	RestorePrintBRMoperationfailure24(UnicodeString DriverName, UnicodeString Architecture, HexInt32 ErrorCode)	PrintBRMoperationfailure	PRINT_DRIVER_KEYWORD	Restore	Error		
+Microsoft-Windows-PrintBRM	25	0	RestorePrintBRMoperationsuccess25(UnicodeString DriverName, UnicodeString Architecture)	PrintBRMoperationsuccess	PRINT_DRIVER_KEYWORD	Restore	Informational		
+Microsoft-Windows-PrintBRM	26	0	RestorePrintBRMoperationfailure26(UnicodeString DriverName, UnicodeString Architecture, HexInt32 ErrorCode)	PrintBRMoperationfailure	PRINT_DRIVER_KEYWORD	Restore	Error		
+Microsoft-Windows-PrintBRM	27	0	GeneraloperationPrintBRMoperationfailure(UnicodeString DirectoryName, HexInt32 ErrorCode)	PrintBRMoperationfailure	PRINT_DRIVER_KEYWORD	Generaloperation	Error		
+Microsoft-Windows-PrintBRM	28	0	RestorePrintBRMoperationfailure28(UnicodeString Source, UnicodeString Destination, HexInt32 ErrorCode)	PrintBRMoperationfailure	PRINT_DRIVER_KEYWORD	Restore	Error		
+Microsoft-Windows-PrintBRM	29	0	RestorePrintBRMoperationfailure29(UnicodeString Port, HexInt32 ErrorCode)	PrintBRMoperationfailure	PRINT_PORT_KEYWORD	Restore	Error		
+Microsoft-Windows-PrintBRM	30	0	RestorePrintBRMoperationfailure30(UnicodeString PortName, HexInt32 ErrorCode)	PrintBRMoperationfailure	PRINT_PORT_KEYWORD	Restore	Error		
+Microsoft-Windows-PrintBRM	31	0	RestorePrintBRMoperationsuccess31(UnicodeString PortName)	PrintBRMoperationsuccess	PRINT_PORT_KEYWORD	Restore	Informational		
+Microsoft-Windows-PrintBRM	32	0	RestorePrintBRMoperationsuccess32(UnicodeString Status)	PrintBRMoperationsuccess	PRINT_PORT_KEYWORD	Restore	Informational		
+Microsoft-Windows-PrintBRM	33	0	BackupPrintBRMoperationsuccess33()	PrintBRMoperationsuccess	PRINT_FORM_KEYWORD	Backup	Informational		
+Microsoft-Windows-PrintBRM	34	0	RestorePrintBRMoperationsuccess34()	PrintBRMoperationsuccess	PRINT_FORM_KEYWORD	Restore	Informational		
+Microsoft-Windows-PrintBRM	35	0	BackupPrintBRMoperationsuccess35(UInt32 NumberOfForms)	PrintBRMoperationsuccess	PRINT_FORM_KEYWORD	Backup	Informational		
+Microsoft-Windows-PrintBRM	36	0	RestorePrintBRMoperationsuccess36()	PrintBRMoperationsuccess	PRINT_FORM_KEYWORD	Restore	Informational		
+Microsoft-Windows-PrintBRM	37	0	RestorePrintBRMoperationsuccess37()	PrintBRMoperationsuccess	PRINT_FORM_KEYWORD	Restore	Informational		
+Microsoft-Windows-PrintBRM	38	0	RestorePrintBRMoperationfailure38(UnicodeString FileName, HexInt32 ErrorCode)	PrintBRMoperationfailure	PRINT_BRM_KEYWORD	Restore	Error		
+Microsoft-Windows-PrintBRM	39	0	BackupPrintBRMoperationfailure39(UnicodeString PluginDllName, UnicodeString ProcessorName)	PrintBRMoperationfailure	PRINT_PROC_KEYWORD	Backup	Error		
+Microsoft-Windows-PrintBRM	40	0	RestorePrintBRMoperationsuccess40(UnicodeString FolderName)	PrintBRMoperationsuccess	PRINT_BRM_KEYWORD	Restore	Informational		
+Microsoft-Windows-PrintBRM	41	0	RestorePrintBRMoperationfailure41(UnicodeString FolderName)	PrintBRMoperationfailure	PRINT_BRM_KEYWORD	Restore	Error		
+Microsoft-Windows-PrintBRM	42	0	RestorePrintBRMoperationfailure42(HexInt32 ErrorCode)	PrintBRMoperationfailure	PRINT_BRM_KEYWORD	Restore	Error		
+Microsoft-Windows-PrintBRM	43	0	RestorePrintBRMoperationsuccess43(UInt32 LogLevel)	PrintBRMoperationsuccess	PRINT_BRM_KEYWORD	Restore	Informational		
+Microsoft-Windows-PrintBRM	44	0	RestorePrintBRMoperationfailure44(HexInt32 ErrorCode)	PrintBRMoperationfailure	PRINT_BRM_KEYWORD	Restore	Error		
+Microsoft-Windows-PrintBRM	45	0	BackupPrintBRMoperationsuccess45(UnicodeString ServerName)	PrintBRMoperationsuccess	PRINT_BRM_KEYWORD	Backup	Informational		
+Microsoft-Windows-PrintBRM	46	0	BackupPrintBRMoperationfailure46(UnicodeString CabFileName, HexInt32 ErrorCode)	PrintBRMoperationfailure	PRINT_BRM_KEYWORD	Backup	Error		
+Microsoft-Windows-PrintBRM	47	0	BackupPrintBRMoperationfailure47(UnicodeString FileName, HexInt32 ErrorCode)	PrintBRMoperationfailure	PRINT_BRM_KEYWORD	Backup	Error		
+Microsoft-Windows-PrintBRM	48	0	BackupPrintBRMoperationfailure48(UnicodeString PluginDllName, HexInt32 ErrorCode)	PrintBRMoperationfailure	PRINT_BRM_KEYWORD	Backup	Error		
+Microsoft-Windows-PrintBRM	49	0	BackupPrintBRMoperationfailure49(UnicodeString PluginDllName)	PrintBRMoperationfailure	PRINT_BRM_KEYWORD	Backup	Error		
+Microsoft-Windows-PrintBRM	50	0	BackupPrintBRMoperationfailure50(UnicodeString PluginDllName, HexInt32 ErrorCode)	PrintBRMoperationfailure	PRINT_BRM_KEYWORD	Backup	Error		
+Microsoft-Windows-PrintBRM	51	0	GeneraloperationPrintBRMoperationsuccess51(UnicodeString PluginDllName)	PrintBRMoperationsuccess	PRINT_BRM_KEYWORD	Generaloperation	Informational		
+Microsoft-Windows-PrintBRM	52	0	RestorePrintBRMoperationsuccess52(UnicodeString ProcessorName)	PrintBRMoperationsuccess	PRINT_PROC_KEYWORD	Restore	Informational		
+Microsoft-Windows-PrintBRM	53	0	GeneraloperationPrintBRMoperationfailure53(UnicodeString FunctionName, UnicodeString ComputerName, HexInt32 ErrorCode)	PrintBRMoperationfailure	PRINT_BRM_KEYWORD	Generaloperation	Error		
+Microsoft-Windows-PrintBRM	54	0	GeneraloperationPrintBRMoperationsuccess54(UnicodeString ServiceName, UnicodeString ServerName)	PrintBRMoperationsuccess	PRINT_BRM_KEYWORD	Generaloperation	Informational		
+Microsoft-Windows-PrintBRM	55	0	GeneraloperationPrintBRMoperationsuccess55(UnicodeString ServiceName, UnicodeString ServerName)	PrintBRMoperationsuccess	PRINT_BRM_KEYWORD	Generaloperation	Informational		
+Microsoft-Windows-PrintBRM	56	0	GeneraloperationPrintBRMoperationfailure56(UnicodeString ServiceName, UnicodeString ComputerName, HexInt32 ErrorCode)	PrintBRMoperationfailure	PRINT_BRM_KEYWORD	Generaloperation	Error		
+Microsoft-Windows-PrintBRM	57	0	GeneraloperationPrintBRMoperationfailure57(UnicodeString ServiceName, UnicodeString ComputerName, HexInt32 ErrorCode)	PrintBRMoperationfailure	PRINT_BRM_KEYWORD	Generaloperation	Error		
+Microsoft-Windows-PrintBRM	58	0	RestorePrintBRMoperationsuccess58(UnicodeString FileName)	PrintBRMoperationsuccess	PRINT_PROC_KEYWORD	Restore	Informational		
+Microsoft-Windows-PrintBRM	59	0	GeneraloperationPrintBRMoperationsuccess59(UnicodeString SourceFile, UnicodeString DestinationFile)	PrintBRMoperationsuccess	PRINT_PROC_KEYWORD	Generaloperation	Informational		
+Microsoft-Windows-PrintBRM	60	0	GeneraloperationPrintBRMoperationfailure60(UnicodeString SourceFile, UnicodeString DestinationFile, HexInt32 ErrorCode)	PrintBRMoperationfailure	PRINT_PROC_KEYWORD	Generaloperation	Error		
+Microsoft-Windows-PrintBRM	61	0	GeneraloperationPrintBRMoperationsuccess61(UnicodeString HostName, UnicodeString DeviceSection)	PrintBRMoperationsuccess	PRINT_PORT_KEYWORD	Generaloperation	Informational		
+Microsoft-Windows-PrintBRM	62	0	RestorePrintBRMoperationfailure62(UnicodeString PortName)	PrintBRMoperationfailure	PRINT_PORT_KEYWORD	Restore	Error		
+Microsoft-Windows-PrintBRM	63	0	RestorePrintBRMoperationfailure63(UnicodeString Port, HexInt32 ErrorCode)	PrintBRMoperationfailure	PRINT_PORT_KEYWORD	Restore	Error		
+Microsoft-Windows-PrintBRM	64	0	RestorePrintBRMoperationfailure64(UnicodeString Port, HexInt32 ErrorCode)	PrintBRMoperationfailure	PRINT_PORT_KEYWORD	Restore	Error		
+Microsoft-Windows-PrintBRM	65	0	RestorePrintBRMoperationfailure65(UnicodeString KeyName, UnicodeString ValueName, HexInt32 ErrorCode)	PrintBRMoperationfailure	PRINT_QUEUE_KEYWORD	Restore	Error		
+Microsoft-Windows-PrintBRM	66	0	RestorePrintBRMoperationfailure66(UnicodeString PrinterName, UnicodeString PortName)	PrintBRMoperationfailure	PRINT_QUEUE_KEYWORD	Restore	Error		
+Microsoft-Windows-PrintBRM	67	0	GeneraloperationPrintBRMoperationfailure67(UnicodeString KeyName, HexInt32 ErrorCode)	PrintBRMoperationfailure	PRINT_BRM_KEYWORD	Generaloperation	Error		
+Microsoft-Windows-PrintBRM	68	0	GeneraloperationPrintBRMoperationfailure68(UnicodeString PathName, HexInt32 ErrorCode)	PrintBRMoperationfailure	PRINT_BRM_KEYWORD	Generaloperation	Error		
+Microsoft-Windows-PrintBRM	69	0	RestorePrintBRMoperationfailure69(UnicodeString Address, UnicodeString PortName)	PrintBRMoperationfailure	PRINT_PORT_KEYWORD	Restore	Error		
+Microsoft-Windows-PrintBRM	70	0	BackupPrintBRMoperationfailure70(UnicodeString FileName)	PrintBRMoperationfailure	PRINT_BRM_KEYWORD	Backup	Error		
+Microsoft-Windows-PrintBRM	71	0	GeneraloperationPrintBRMoperationfailure71(UnicodeString ComputerName, HexInt32 ErrorCode)	PrintBRMoperationfailure	PRINT_BRM_KEYWORD	Generaloperation	Error		
+Microsoft-Windows-PrintBRM	72	0	GeneraloperationPrintBRMoperationfailure72(UnicodeString ComputerName, HexInt32 ErrorCode)	PrintBRMoperationfailure	PRINT_BRM_KEYWORD	Generaloperation	Error		
+Microsoft-Windows-PrintBRM	73	0	GeneraloperationPrintBRMoperationfailure73(HexInt32 ErrorCode)	PrintBRMoperationfailure	PRINT_BRM_KEYWORD	Generaloperation	Error		
+Microsoft-Windows-PrintBRM	74	0	RestorePrintBRMoperationsuccess74(UnicodeString DriverName, UnicodeString Architecture)	PrintBRMoperationsuccess	PRINT_DRIVER_KEYWORD	Restore	Informational		
+Microsoft-Windows-PrintBRM	75	0	RestorePrintBRMoperationfailure75(UnicodeString DriverName, UnicodeString Architecture, HexInt32 ErrorCode)	PrintBRMoperationfailure	PRINT_DRIVER_KEYWORD	Restore	Error		
+Microsoft-Windows-PrintBRM	76	0	BackupPrintBRMoperationfailure76(UnicodeString DriverName, UnicodeString Architecture, HexInt32 ErrorCode)	PrintBRMoperationfailure	PRINT_DRIVER_KEYWORD	Backup	Error		
+Microsoft-Windows-PrintBRM	77	0	BackupPrintBRMoperationfailure77(UnicodeString PortName, HexInt32 ErrorCode)	PrintBRMoperationfailure	PRINT_DRIVER_KEYWORD	Backup	Error		
+Microsoft-Windows-PrintBRM	78	0	BackupPrintBRMoperationfailure78(UnicodeString PrintProcessorName, UnicodeString PrintProcessorArchitecture, HexInt32 ErrorCode)	PrintBRMoperationfailure	PRINT_PROC_KEYWORD	Backup	Error		
+Microsoft-Windows-PrintBRM	79	0	BackupPrintBRMoperationfailure79(UnicodeString PrintProcessorArchitecture, HexInt32 ErrorCode)	PrintBRMoperationfailure	PRINT_PROC_KEYWORD	Backup	Error		
+Microsoft-Windows-PrintBRM	80	0	BackupPrintBRMoperationfailure80(UnicodeString PrinterName, HexInt32 ErrorCode)	PrintBRMoperationfailure	PRINT_QUEUE_KEYWORD	Backup	Error		
+Microsoft-Windows-PrintBRM	81	0	RestorePrintBRMoperationfailure81(UnicodeString PrinterName, HexInt32 ErrorCode)	PrintBRMoperationfailure	PRINT_QUEUE_KEYWORD	Restore	Error		
+Microsoft-Windows-PrintBRM	82	0	RestorePrintBRMoperationfailure82(UnicodeString PrinterName, HexInt32 ErrorCode)	PrintBRMoperationfailure	PRINT_QUEUE_KEYWORD	Restore	Error		
+Microsoft-Windows-PrintBRM	83	0	RestorePrintBRMoperationfailure83(UnicodeString Port, HexInt32 ErrorCode)	PrintBRMoperationfailure	PRINT_PORT_KEYWORD	Restore	Error		

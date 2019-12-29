@@ -1,0 +1,142 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-UI-Search	101	0	XamlViewStartupStart(UInt32 XAMLView)	Start		XamlViewStartup	Informational		
+Microsoft-Windows-UI-Search	102	0	XamlViewStartupStop(UInt32 XAMLView, UInt32 Result)	Stop		XamlViewStartup	Informational		
+Microsoft-Windows-UI-Search	103	0	Perftrack_SearchPaneViewSetupStart()	Start		Perftrack_SearchPaneViewSetup	Informational		
+Microsoft-Windows-UI-Search	104	0	Perftrack_SearchPaneViewSetupStop()	Stop		Perftrack_SearchPaneViewSetup	Informational		
+Microsoft-Windows-UI-Search	105	0	Perftrack_SearchResultsViewSetupStart()	Start		Perftrack_SearchResultsViewSetup	Informational		
+Microsoft-Windows-UI-Search	106	0	Perftrack_SearchResultsViewSetupStop()	Stop		Perftrack_SearchResultsViewSetup	Informational		
+Microsoft-Windows-UI-Search	107	0	Perftrack_StartMenuViewSetupStart()	Start		Perftrack_StartMenuViewSetup	Informational		
+Microsoft-Windows-UI-Search	108	0	Perftrack_StartMenuViewSetupStop()	Stop		Perftrack_StartMenuViewSetup	Informational		
+Microsoft-Windows-UI-Search	201	0	ASTAThreadStart(UInt32 ThreadID, UInt32 XAMLView)	Start		ASTAThread	Informational		
+Microsoft-Windows-UI-Search	202	0	ASTAThreadStop(UInt32 ThreadID, UInt32 XAMLView)	Stop		ASTAThread	Informational		
+Microsoft-Windows-UI-Search	301	0	ResourceManagerStart()	Start		ResourceManager	Informational		
+Microsoft-Windows-UI-Search	302	0	ResourceManagerStop(UInt32 Result)	Stop		ResourceManager	Informational		
+Microsoft-Windows-UI-Search	401	0	XAMLContentStart()	Start		XAMLContent	Informational		
+Microsoft-Windows-UI-Search	402	0	XAMLContentStop(UInt32 Result)	Stop		XAMLContent	Informational		
+Microsoft-Windows-UI-Search	501	0	ViewServiceInitStart(UInt32 ServiceIndex)	Start		ViewServiceInit	Informational		
+Microsoft-Windows-UI-Search	502	0	ViewServiceInitStop(UInt32 ServiceIndex, UInt32 Result)	Stop		ViewServiceInit	Informational		
+Microsoft-Windows-UI-Search	503	0	ViewServiceSubscribeStart(UInt32 ServiceIndex)	Start		ViewServiceSubscribe	Informational		
+Microsoft-Windows-UI-Search	504	0	ViewServiceSubscribeStop(UInt32 ServiceIndex, UInt32 Result)	Stop		ViewServiceSubscribe	Informational		
+Microsoft-Windows-UI-Search	601	0	XamlViewShutdownStart(UInt32 XAMLView)	Start		XamlViewShutdown	Informational		
+Microsoft-Windows-UI-Search	602	0	XamlViewShutdownStop(UInt32 XAMLView, UInt32 Result)	Stop		XamlViewShutdown	Informational		
+Microsoft-Windows-UI-Search	701	0	GlobalSuggestionsCollection_SuggestionsCleared()			GlobalSuggestionsCollection_SuggestionsCleared	Informational		
+Microsoft-Windows-UI-Search	702	0	GlobalSuggestionsCollection_QuerySubmitted(UnicodeString QueryString)			GlobalSuggestionsCollection_QuerySubmitted	Informational		
+Microsoft-Windows-UI-Search	703	0	GlobalSuggestionsCollection_AllProvidersLoaded()			GlobalSuggestionsCollection_AllProvidersLoaded	Informational		
+Microsoft-Windows-UI-Search	704	0	SearchPane_QuerySubmitted(UnicodeString QueryString)			SearchPane_QuerySubmitted	Informational		
+Microsoft-Windows-UI-Search	705	0	ContactsCollection_VectorChange()			ContactsCollection_VectorChange	Informational		
+Microsoft-Windows-UI-Search	706	0	LocalResults_VectorChange()			LocalResults_VectorChange	Informational		
+Microsoft-Windows-UI-Search	707	0	HierarchicalCollection_VectorChange()			HierarchicalCollection_VectorChange	Informational		
+Microsoft-Windows-UI-Search	708	0	GlobalSuggestionsCollection_VectorChange()			GlobalSuggestionsCollection_VectorChange	Informational		
+Microsoft-Windows-UI-Search	709	0	XamlHostCreateWindowStart()	Start		XamlHostCreateWindow	Informational		
+Microsoft-Windows-UI-Search	710	0	XamlHostCreateWindowStop(UInt32 Result)	Stop		XamlHostCreateWindow	Informational		
+Microsoft-Windows-UI-Search	711	0	SearchPane_QueryChanged(UnicodeString QueryString)			SearchPane_QueryChanged	Informational		
+Microsoft-Windows-UI-Search	712	0	SearchPane_SuggestionInvoked()			SearchPane_SuggestionInvoked	Informational		
+Microsoft-Windows-UI-Search	901	0	TemplateLoadStart(UnicodeString TemplateID)	Start		TemplateLoad	Informational		
+Microsoft-Windows-UI-Search	902	0	TemplateLoadStop(UInt32 Result, UnicodeString TemplateID)	Stop		TemplateLoad	Informational		
+Microsoft-Windows-UI-Search	903	0	TemplateResolved(UInt32 Result, UnicodeString existingTemplates, UnicodeString resolvedTemplates, UnicodeString unresolvedTemplates, UnicodeString invalidXAMLTemplates)			TemplateResolved	Informational		
+Microsoft-Windows-UI-Search	904	0	TemplateManager_NullOrEmptyToVisibilityConverter(UnicodeString Input, UnicodeString Parameter, UnicodeString Output)			TemplateManager_NullOrEmptyToVisibilityConverter	Informational		
+Microsoft-Windows-UI-Search	905	0	TemplateManager_StringToResourceConverter(UnicodeString Input, UnicodeString Parameter, UnicodeString Output)			TemplateManager_StringToResourceConverter	Informational		
+Microsoft-Windows-UI-Search	906	0	TemplateManager_DownloadResourceStart(UnicodeString TemplateID)	Start		TemplateManager_DownloadResource	Informational		
+Microsoft-Windows-UI-Search	907	0	TemplateManager_DownloadResourceStop(UInt32 Result, UnicodeString TemplateID)	Stop		TemplateManager_DownloadResource	Informational		
+Microsoft-Windows-UI-Search	910	0	TemplateManager_XAMLCallbackException(UInt32 Result, UnicodeString Message)			TemplateManager_XAMLCallbackException	Informational		
+Microsoft-Windows-UI-Search	911	0	TemplateManager_StringPropertyConcatenatorConverter(UnicodeString Input, UnicodeString Parameter, UnicodeString Output)			TemplateManager_StringPropertyConcatenatorConverter	Informational		
+Microsoft-Windows-UI-Search	912	0	TemplateManager_DataContextBindingError(UnicodeString Property)			TemplateManager_DataContextBindingError	Informational		
+Microsoft-Windows-UI-Search	913	0	TemplateManager_TemplateLookupError(UnicodeString TemplateId, UInt32 ErrorCode)			TemplateManager_TemplateLookupError	Error		
+Microsoft-Windows-UI-Search	914	0	TemplateManager_TemplateFallbackSuccess(UnicodeString Property)			TemplateManager_TemplateFallbackSuccess	Informational		
+Microsoft-Windows-UI-Search	915	0	TemplateManager_SwitchCaseConverter(UnicodeString Input, UnicodeString Parameter, UnicodeString Output)			TemplateManager_SwitchCaseConverter	Informational		
+Microsoft-Windows-UI-Search	916	0	TemplateManager_OfflineAvailabilityToVisibilityConverter(UnicodeString Input, UnicodeString Parameter, UnicodeString Output)			TemplateManager_OfflineAvailabilityToVisibilityConverter	Informational		
+Microsoft-Windows-UI-Search	917	0	TemplateManager_VideoKindToVisibilityConverter(UnicodeString Input, UnicodeString Parameter, UnicodeString Output)			TemplateManager_VideoKindToVisibilityConverter	Informational		
+Microsoft-Windows-UI-Search	918	0	TemplateManager_BoolToVisibilityConverter(UnicodeString Input, UnicodeString Parameter, UnicodeString Output)			TemplateManager_BoolToVisibilityConverter	Informational		
+Microsoft-Windows-UI-Search	919	0	TemplateManager_NegatedBoolToVisibilityConverter(UnicodeString Input, UnicodeString Parameter, UnicodeString Output)			TemplateManager_NegatedBoolToVisibilityConverter	Informational		
+Microsoft-Windows-UI-Search	920	0	TemplateManager_AccentColorSet(UnicodeString ColorString, UInt32 AccentIndex)			TemplateManager_AccentColorSet	Informational		
+Microsoft-Windows-UI-Search	1001	0	XamlHostWindow_VisibilityChanged(UInt32 Visibility, UInt32 XAMLView)			XamlHostWindow_VisibilityChanged	Informational		
+Microsoft-Windows-UI-Search	1101	0	SearchResultsRunQueryStart(UnicodeString QueryString)	Start		SearchResultsRunQuery	Informational		
+Microsoft-Windows-UI-Search	1102	0	SearchResultsRunQueryStop(UnicodeString QueryString)	Stop		SearchResultsRunQuery	Informational		
+Microsoft-Windows-UI-Search	1103	0	SearchResultsGroupsRealized(UnicodeString QueryString)			SearchResultsGroupsRealized	Informational		
+Microsoft-Windows-UI-Search	1104	0	SearchResultsSwitchToView(UnicodeString QueryString, UnicodeString AppId)			SearchResultsSwitchToView	Informational		
+Microsoft-Windows-UI-Search	1105	0	SearchResultsResultsReady(UnicodeString QueryString)			SearchResultsResultsReady	Informational		
+Microsoft-Windows-UI-Search	1200	0	SanitizeImageStart(UnicodeString Url, UInt32 Size)	Start		SanitizeImage	Informational		
+Microsoft-Windows-UI-Search	1201	0	SanitizeImageStop(UInt32 Result, UnicodeString Url)	Stop		SanitizeImage	Informational		
+Microsoft-Windows-UI-Search	1300	0	DownloadImageStart(UnicodeString Url)	Start		DownloadImage	Informational		
+Microsoft-Windows-UI-Search	1301	0	DownloadImageStop(UInt32 Result, UnicodeString Url)	Stop		DownloadImage	Informational		
+Microsoft-Windows-UI-Search	1400	0	PathSuggestionProvider_Loaded()			PathSuggestionProvider_Loaded	Informational		
+Microsoft-Windows-UI-Search	1405	0	ProtocolSuggestionProvider_Loaded()			ProtocolSuggestionProvider_Loaded	Informational		
+Microsoft-Windows-UI-Search	1410	0	HistorySuggestionProvider_Loaded()			HistorySuggestionProvider_Loaded	Informational		
+Microsoft-Windows-UI-Search	1420	0	AppsSuggestionProvider_Loaded()			AppsSuggestionProvider_Loaded	Informational		
+Microsoft-Windows-UI-Search	1430	0	MusicSuggestionProvider_Loaded()			MusicSuggestionProvider_Loaded	Informational		
+Microsoft-Windows-UI-Search	1440	0	SettingsSuggestionProvider_Loaded()			SettingsSuggestionProvider_Loaded	Informational		
+Microsoft-Windows-UI-Search	1450	0	FilesSuggestionProvider_Loaded()			FilesSuggestionProvider_Loaded	Informational		
+Microsoft-Windows-UI-Search	1480	0	ContactsSuggestionProvider_Loaded()			ContactsSuggestionProvider_Loaded	Informational		
+Microsoft-Windows-UI-Search	1490	0	ConnnectedSearchSuggestionProvider_Loaded()			ConnnectedSearchSuggestionProvider_Loaded	Informational		
+Microsoft-Windows-UI-Search	1495	0	ConnnectedSearchZeroInputProvider_Loaded()			ConnnectedSearchZeroInputProvider_Loaded	Informational		
+Microsoft-Windows-UI-Search	1501	0	LocalResults_RunQueryStart(UInt32 GroupId)	Start		LocalResults_RunQuery	Informational		
+Microsoft-Windows-UI-Search	1502	0	LocalResults_RunQueryStop(UInt32 GroupId)	Stop		LocalResults_RunQuery	Informational		
+Microsoft-Windows-UI-Search	1503	0	LocalResults_TemplateSelected(UnicodeString ItemName, UnicodeString TemplateType)			LocalResults_TemplateSelected	Informational		
+Microsoft-Windows-UI-Search	1504	0	LocalResults_ColumnsWrappedAt(Int32 ColumnsWrappedAt)			LocalResults_ColumnsWrappedAt	Informational		
+Microsoft-Windows-UI-Search	1600	0	Perftrack_FirstLocalSuggestionStart()	Start		Perftrack_FirstLocalSuggestion	Informational		
+Microsoft-Windows-UI-Search	1601	0	Perftrack_FirstLocalSuggestionStop()	Stop		Perftrack_FirstLocalSuggestion	Informational		
+Microsoft-Windows-UI-Search	1602	0	FirstWebSuggestion()			FirstWebSuggestion	Informational		
+Microsoft-Windows-UI-Search	1603	0	Perftrack_AllSuggestionsStart()	Start		Perftrack_AllSuggestions	Informational		
+Microsoft-Windows-UI-Search	1604	0	Perftrack_AllSuggestionsStop()	Stop		Perftrack_AllSuggestions	Informational		
+Microsoft-Windows-UI-Search	1605	0	Perftrack_SuggestionsCancelledStop()	Stop		Perftrack_SuggestionsCancelled	Informational		
+Microsoft-Windows-UI-Search	1606	0	Perftrack_AllLocalSuggestions()			Perftrack_AllLocalSuggestions	Informational		
+Microsoft-Windows-UI-Search	1607	0	Perftrack_AllLocalSuggestions1607()			Perftrack_AllLocalSuggestions	Informational		
+Microsoft-Windows-UI-Search	1700	0	ResultsPerfQueryStart(UnicodeString Scope)	Start		ResultsPerfQuery	Informational		
+Microsoft-Windows-UI-Search	1701	0	ResultsPerfInitialRenderStop(UnicodeString Scope)	Stop		ResultsPerfInitialRender	Informational		
+Microsoft-Windows-UI-Search	1702	0	ResultsPerfInitialRenderStart(UnicodeString Scope)	Start		ResultsPerfInitialRender	Informational		
+Microsoft-Windows-UI-Search	1703	0	ResultsPerfQueryCancelledStop()	Stop		ResultsPerfQueryCancelled	Informational		
+Microsoft-Windows-UI-Search	1780	0	SerpIncrementalLoadingPerfStart()	Start		SerpIncrementalLoadingPerf	Informational		
+Microsoft-Windows-UI-Search	1781	0	SerpIncrementalLoadingPerfStop()	Stop		SerpIncrementalLoadingPerf	Informational		
+Microsoft-Windows-UI-Search	1800	0	MultimediaView_Loaded()			MultimediaView_Loaded	Informational		
+Microsoft-Windows-UI-Search	1810	0	Perftrack_MultimediaView_ContentLoadStart()	Start		Perftrack_MultimediaView_ContentLoad	Informational		
+Microsoft-Windows-UI-Search	1811	0	Perftrack_MultimediaView_ContentLoadStop()	Stop		Perftrack_MultimediaView_ContentLoad	Informational		
+Microsoft-Windows-UI-Search	1812	0	Perftrack_MultimediaView_PaginationStart()	Start		Perftrack_MultimediaView_Pagination	Informational		
+Microsoft-Windows-UI-Search	1813	0	Perftrack_MultimediaView_PaginationStop()	Stop		Perftrack_MultimediaView_Pagination	Informational		
+Microsoft-Windows-UI-Search	1814	0	Perftrack_MultimediaView_ScrollStart()	Start		Perftrack_MultimediaView_Scroll	Informational		
+Microsoft-Windows-UI-Search	1815	0	Perftrack_MultimediaView_ScrollStop()	Stop		Perftrack_MultimediaView_Scroll	Informational		
+Microsoft-Windows-UI-Search	1816	0	Perftrack_MultimediaView_OrientationStart()	Start		Perftrack_MultimediaView_Orientation	Informational		
+Microsoft-Windows-UI-Search	1817	0	Perftrack_MultimediaView_OrientationStop()	Stop		Perftrack_MultimediaView_Orientation	Informational		
+Microsoft-Windows-UI-Search	1818	0	Perftrack_MultimediaView_FilterLoadStart()	Start		Perftrack_MultimediaView_FilterLoad	Informational		
+Microsoft-Windows-UI-Search	1819	0	Perftrack_MultimediaView_FilterLoadStop()	Stop		Perftrack_MultimediaView_FilterLoad	Informational		
+Microsoft-Windows-UI-Search	1830	0	Perftrack_ImageDetails_ThumbnailLoadStart(UInt32 Index)	Start		Perftrack_ImageDetails_ThumbnailLoad	Informational		
+Microsoft-Windows-UI-Search	1831	0	Perftrack_ImageDetails_ThumbnailLoadStop(UInt32 Index)	Stop		Perftrack_ImageDetails_ThumbnailLoad	Informational		
+Microsoft-Windows-UI-Search	1832	0	Perftrack_ImageDetails_ImageLoadStart(UInt32 Index)	Start		Perftrack_ImageDetails_ImageLoad	Informational		
+Microsoft-Windows-UI-Search	1833	0	Perftrack_ImageDetails_ImageLoadStop(UInt32 Index)	Stop		Perftrack_ImageDetails_ImageLoad	Informational		
+Microsoft-Windows-UI-Search	1834	0	Perftrack_ImageDetails_CloseStart()	Start		Perftrack_ImageDetails_Close	Informational		
+Microsoft-Windows-UI-Search	1835	0	Perftrack_ImageDetails_CloseStop()	Stop		Perftrack_ImageDetails_Close	Informational		
+Microsoft-Windows-UI-Search	1836	0	GetSearchLaunchModeForWindow_Result(UInt32 HRESULT, UInt32 LaunchMode)			GetSearchLaunchModeForWindow_Result	Informational		
+Microsoft-Windows-UI-Search	2000	0	ContactCard_LoadingUIShown()			ContactCard_LoadingUIShown	Informational		
+Microsoft-Windows-UI-Search	2001	0	ContactCard_ContactObjectGiven()			ContactCard_ContactObjectGiven	Informational		
+Microsoft-Windows-UI-Search	2002	0	ContactCard_FullContactCardShown()			ContactCard_FullContactCardShown	Informational		
+Microsoft-Windows-UI-Search	2003	0	ContactCard_ActionInvocated()			ContactCard_ActionInvocated	Informational		
+Microsoft-Windows-UI-Search	3001	0	PerfTrack_SearchPaneOpenStart()	Start		PerfTrack_SearchPaneOpen	Informational		
+Microsoft-Windows-UI-Search	3002	0	PerfTrack_SearchPaneOpenStop()	Stop		PerfTrack_SearchPaneOpen	Informational		
+Microsoft-Windows-UI-Search	3003	0	ImageTracking_Loaded_Tracked(UnicodeString ImageUri, Int32 LoadingImageCount)			ImageTracking_Loaded_Tracked	Informational		
+Microsoft-Windows-UI-Search	3004	0	ImageTracking_Loaded_Dropped(UnicodeString ImageUri, Int32 LoadingImageCount)			ImageTracking_Loaded_Dropped	Informational		
+Microsoft-Windows-UI-Search	3005	0	ImageTracking_Opened_Tracked(UnicodeString ImageUri, Int32 LoadingImageCount)			ImageTracking_Opened_Tracked	Informational		
+Microsoft-Windows-UI-Search	3006	0	ImageTracking_Opened_Dropped(UnicodeString ImageUri, Int32 LoadingImageCount)			ImageTracking_Opened_Dropped	Informational		
+Microsoft-Windows-UI-Search	3007	0	ImageTracking_Failed_Tracked(UnicodeString ImageUri, Int32 LoadingImageCount)			ImageTracking_Failed_Tracked	Informational		
+Microsoft-Windows-UI-Search	3008	0	ImageTracking_Failed_Dropped(UnicodeString ImageUri, Int32 LoadingImageCount)			ImageTracking_Failed_Dropped	Informational		
+Microsoft-Windows-UI-Search	3009	0	ImageTracking_Unloaded_Tracked(UnicodeString ImageUri, Int32 LoadingImageCount)			ImageTracking_Unloaded_Tracked	Informational		
+Microsoft-Windows-UI-Search	3010	0	ImageTracking_Unloaded_Dropped(UnicodeString ImageUri, Int32 LoadingImageCount)			ImageTracking_Unloaded_Dropped	Informational		
+Microsoft-Windows-UI-Search	3011	0	ImageTracking_CallbackWithNoUri(UnicodeString ImageUri, Int32 LoadingImageCount)			ImageTracking_CallbackWithNoUri	Warning		
+Microsoft-Windows-UI-Search	3100	0	Virtualizer_AddElement(Int32 VirtualizationType, UnicodeString ElementType, UnicodeString Name, UnicodeString AutomationId)			Virtualizer_AddElement	Informational		
+Microsoft-Windows-UI-Search	3101	0	Virtualizer_RemoveElement(Int32 VirtualizationType, UnicodeString ElementType, UnicodeString Name, UnicodeString AutomationId)			Virtualizer_RemoveElement	Informational		
+Microsoft-Windows-UI-Search	3102	0	Virtualizer_RecalculateRectsStart(UInt32 TrackingCount, UInt32 UpdatingCount, Float ViewportRect)	Start		Virtualizer_RecalculateRects	Informational		
+Microsoft-Windows-UI-Search	3103	0	Virtualizer_RecalculateRectsStop(UInt32 TrackingCount, UInt32 UpdatingCount, Float ViewportRect)	Stop		Virtualizer_RecalculateRects	Informational		
+Microsoft-Windows-UI-Search	3104	0	Virtualizer_RectUpdated(Int32 VirtualizationType, UnicodeString ElementType, UnicodeString Name, UnicodeString AutomationId, Float ViewportRect)			Virtualizer_RectUpdated	Informational		
+Microsoft-Windows-UI-Search	3105	0	Virtualizer_RealizeElementsInViewportStart(UInt32 TrackingCount, UInt32 UpdatingCount, Float ViewportRect)	Start		Virtualizer_RealizeElementsInViewport	Informational		
+Microsoft-Windows-UI-Search	3106	0	Virtualizer_RealizeElementsInViewportStop(UInt32 TrackingCount, UInt32 UpdatingCount, Float ViewportRect)	Stop		Virtualizer_RealizeElementsInViewport	Informational		
+Microsoft-Windows-UI-Search	3107	0	Virtualizer_RealizeComplete(UInt32 TrackingCount, UInt32 UpdatingCount, Float ViewportRect)			Virtualizer_RealizeComplete	Informational		
+Microsoft-Windows-UI-Search	3108	0	Virtualizer_RealizeElement(Int32 VirtualizationType, UnicodeString ElementType, UnicodeString Name, UnicodeString AutomationId, Float ViewportRect)			Virtualizer_RealizeElement	Informational		
+Microsoft-Windows-UI-Search	3109	0	Virtualizer_UnrealizeElement(Int32 VirtualizationType, UnicodeString ElementType, UnicodeString Name, UnicodeString AutomationId, Float ViewportRect)			Virtualizer_UnrealizeElement	Informational		
+Microsoft-Windows-UI-Search	3120	0	ETWLogger_LogOptionsChanged(UnicodeString Name, UnicodeString AutomationId, UInt32 LogOptionsOld, UInt32 LogOptionsNew)			ETWLogger_LogOptionsChanged	Informational		
+Microsoft-Windows-UI-Search	3121	0	ETWLogger_Loaded(UnicodeString Name, UnicodeString AutomationId)			ETWLogger_Loaded	Informational		
+Microsoft-Windows-UI-Search	3122	0	ETWLogger_Unloaded(UnicodeString Name, UnicodeString AutomationId)			ETWLogger_Unloaded	Informational		
+Microsoft-Windows-UI-Search	3150	0	ResultsCommonViewSource_UpdateViewProperties(Double ViewWidth, Double ViewHeight, Double ViewContentWidth, Double ViewContentHeight, UnicodeString ViewOrientation, UnicodeString ViewDisplayMode)			ResultsCommonViewSource_UpdateViewProperties	Informational		
+Microsoft-Windows-UI-Search	3151	0	ResultsCommonViewSource_UpdatePropertySet(UnicodeString Id, UnicodeString ConditionArgs)			ResultsCommonViewSource_UpdatePropertySet	Informational		
+Microsoft-Windows-UI-Search	3152	0	ResultsCommonViewSource_UpdateGridProperties(UnicodeString GridOrientation, UnicodeString GridDisplayMode, Double GridCellHeight, Double GridCellWidth, Int32 GridMaxRowsOrColumns, Double GridHangline, Double GridDescent)			ResultsCommonViewSource_UpdateGridProperties	Informational		
+Microsoft-Windows-UI-Search	3160	0	ParseType_JsonParseError(UnicodeString ParseTypeId, UnicodeString JsonTypeToParse, UnicodeString JsonInput)			ParseType_JsonParseError	Error		
+Microsoft-Windows-UI-Search	3161	0	ParseType_InvalidJsonTypeError(UnicodeString ParseTypeId, UInt32 ExpectedJsonValueType, UInt32 ActualJsonValueType, UnicodeString JsonInput)			ParseType_InvalidJsonTypeError	Error		
+Microsoft-Windows-UI-Search	3162	0	ParseType_PropertyMissingError(UnicodeString ParseTypeId, UnicodeString PropertyName, UnicodeString JsonInput)			ParseType_PropertyMissingError	Error		
+Microsoft-Windows-UI-Search	3163	0	ParseType_PropertyInvalidError(UnicodeString ParseTypeId, UnicodeString PropertyName, UnicodeString JsonInput)			ParseType_PropertyInvalidError	Error		

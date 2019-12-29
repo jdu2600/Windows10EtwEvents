@@ -1,0 +1,48 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-MediaFoundation-MFReadWrite	0	0	SourceReader_SetCurrentMediaTypeStart(Pointer Object, UInt32 StreamIndex, GUID MajorType, GUID Subtype)	Start		SourceReader_SetCurrentMediaType	Informational		
+Microsoft-Windows-MediaFoundation-MFReadWrite	1	0	SourceReader_SetCurrentMediaTypeStop(Pointer Object, UInt32 StreamIndex, UInt32 ErrorCode)	Stop		SourceReader_SetCurrentMediaType	Informational		
+Microsoft-Windows-MediaFoundation-MFReadWrite	2	0	SourceReader_SetCurrentPositionStart(Pointer Object, GUID TimeFormat, UInt32 VariantType, UInt64 Position)	Start		SourceReader_SetCurrentPosition	Informational		
+Microsoft-Windows-MediaFoundation-MFReadWrite	3	0	SourceReader_SetCurrentPositionStop(Pointer Object, UInt32 ErrorCode)	Stop		SourceReader_SetCurrentPosition	Informational		
+Microsoft-Windows-MediaFoundation-MFReadWrite	4	0	SourceReader_ReadSampleStart(Pointer Object, UInt32 StreamIndex, UInt32 ControlFlags)	Start		SourceReader_ReadSample	Informational		
+Microsoft-Windows-MediaFoundation-MFReadWrite	5	0	SourceReader_ReadSampleStop(Pointer Object, UInt32 ErrorCode, UInt32 ActualStreamIndex, UInt32 StreamFlags, Pointer Sample, UInt64 Timestamp, UInt64 Duration, UInt32 Size, Boolean Discontinuity, Boolean CleanPoint)	Stop		SourceReader_ReadSample	Informational		
+Microsoft-Windows-MediaFoundation-MFReadWrite	6	0	SourceReader_FlushStart(Pointer Object, UInt32 StreamIndex)	Start		SourceReader_Flush	Informational		
+Microsoft-Windows-MediaFoundation-MFReadWrite	7	0	SourceReader_FlushStop(Pointer Object, UInt32 StreamIndex)	Stop		SourceReader_Flush	Informational		
+Microsoft-Windows-MediaFoundation-MFReadWrite	8	0	SourceReader_RequestSample(Pointer Object)			SourceReader_RequestSample	Informational		
+Microsoft-Windows-MediaFoundation-MFReadWrite	9	0	SourceReader_MediaSourceEvent(Pointer Object, UInt32 EventType, UInt32 ErrorCode)			SourceReader_MediaSourceEvent	Informational		
+Microsoft-Windows-MediaFoundation-MFReadWrite	10	0	SourceReader_MediaStreamEvent(Pointer Object, UInt32 StreamIndex, UInt32 EventType, UInt32 ErrorCode)			SourceReader_MediaStreamEvent	Informational		
+Microsoft-Windows-MediaFoundation-MFReadWrite	11	0	SourceReader_Error(Pointer Object, UInt32 ErrorCode)			SourceReader_Error	Error		
+Microsoft-Windows-MediaFoundation-MFReadWrite	12	0	SourceReader_CapturePluginCreated(Pointer Object, UInt32 StreamIndex, Pointer MFT, GUID CLSID, Pointer vtable)			SourceReader_CapturePluginCreated	Informational		
+Microsoft-Windows-MediaFoundation-MFReadWrite	13	0	SourceReader_TransformChange()			SourceReader_TransformChange	Informational		
+Microsoft-Windows-MediaFoundation-MFReadWrite	14	0	SourceReader_Error14(Pointer Object, UInt32 StreamIndex, UInt32 ErrorCode)			SourceReader_Error	Error		
+Microsoft-Windows-MediaFoundation-MFReadWrite	100	0	SinkWriter_SetInputMediaTypeStart(Pointer Object, UInt32 StreamIndex, GUID MajorType, GUID Subtype)	Start		SinkWriter_SetInputMediaType	Informational		
+Microsoft-Windows-MediaFoundation-MFReadWrite	101	0	SinkWriter_SetInputMediaTypeStop(Pointer Object, UInt32 StreamIndex, UInt32 ErrorCode)	Stop		SinkWriter_SetInputMediaType	Informational		
+Microsoft-Windows-MediaFoundation-MFReadWrite	102	0	SinkWriter_BeginWriting(Pointer Object)			SinkWriter_BeginWriting	Informational		
+Microsoft-Windows-MediaFoundation-MFReadWrite	103	0	SinkWriter_WriteSample(Pointer Object, UInt32 StreamIndex, Pointer Sample, UInt64 Timestamp, UInt64 Duration, UInt32 Size, Boolean Discontinuity, Boolean CleanPoint)			SinkWriter_WriteSample	Informational		
+Microsoft-Windows-MediaFoundation-MFReadWrite	104	0	SinkWriter_StreamTick(Pointer Object, UInt32 StreamIndex, UInt64 Timestamp)			SinkWriter_StreamTick	Informational		
+Microsoft-Windows-MediaFoundation-MFReadWrite	105	0	SinkWriter_MarkerStart(Pointer Object, UInt32 StreamIndex, Pointer Context)	Start		SinkWriter_Marker	Informational		
+Microsoft-Windows-MediaFoundation-MFReadWrite	106	0	SinkWriter_MarkerStop(Pointer Object, UInt32 StreamIndex, Pointer Context)	Stop		SinkWriter_Marker	Informational		
+Microsoft-Windows-MediaFoundation-MFReadWrite	107	0	SinkWriter_ProcessSample(Pointer Object, UInt32 StreamIndex, Pointer Sample, UInt64 Timestamp)			SinkWriter_ProcessSample	Informational		
+Microsoft-Windows-MediaFoundation-MFReadWrite	108	0	SinkWriter_FinalizeStart(Pointer Object)	Start		SinkWriter_Finalize	Informational		
+Microsoft-Windows-MediaFoundation-MFReadWrite	109	0	SinkWriter_FinalizeStop(Pointer Object, UInt32 ErrorCode)	Stop		SinkWriter_Finalize	Informational		
+Microsoft-Windows-MediaFoundation-MFReadWrite	110	0	SinkWriter_MediaSinkEvent(Pointer Object, UInt32 EventType, UInt32 ErrorCode)			SinkWriter_MediaSinkEvent	Informational		
+Microsoft-Windows-MediaFoundation-MFReadWrite	111	0	SinkWriter_StreamSinkEvent(Pointer Object, UInt32 StreamIndex, UInt32 EventType, UInt32 ErrorCode)			SinkWriter_StreamSinkEvent	Informational		
+Microsoft-Windows-MediaFoundation-MFReadWrite	112	0	SinkWriter_ThrottleStart(Pointer Object, UInt32 StreamIndex, UInt32 Threshold, UInt64 ClockTime, UInt64 Timestamp)	Start		SinkWriter_Throttle	Informational		
+Microsoft-Windows-MediaFoundation-MFReadWrite	113	0	SinkWriter_ThrottleStop(Pointer Object, UInt32 StreamIndex, UInt32 Delay)	Stop		SinkWriter_Throttle	Informational		
+Microsoft-Windows-MediaFoundation-MFReadWrite	114	0	SinkWriter_Error(Pointer Object, UInt32 ErrorCode)			SinkWriter_Error	Error		
+Microsoft-Windows-MediaFoundation-MFReadWrite	115	0	SinkWriter_Error115(Pointer Object, UInt32 StreamIndex, UInt32 ErrorCode)			SinkWriter_Error	Error		
+Microsoft-Windows-MediaFoundation-MFReadWrite	116	0	SinkWriter_StateChange(Pointer Object, UInt32 OldState, UInt32 NewState, UInt32 ErrorCode)			SinkWriter_StateChange	Informational		
+Microsoft-Windows-MediaFoundation-MFReadWrite	117	0	SinkWriter_EndOfSegment(Pointer Object, UInt32 StreamIndex)			SinkWriter_EndOfSegment	Informational		
+Microsoft-Windows-MediaFoundation-MFReadWrite	118	0	SinkWriter_Flush(Pointer Object, UInt32 StreamIndex)			SinkWriter_Flush	Informational		
+Microsoft-Windows-MediaFoundation-MFReadWrite	119	0	SinkWriter_TransformChange()			SinkWriter_TransformChange	Informational		
+Microsoft-Windows-MediaFoundation-MFReadWrite	200	0	Transform_ProcessInput(Pointer Object, UInt32 StreamIndex, Pointer Transform, Pointer Sample, UInt64 Timestamp, UInt64 Duration, UInt32 Size, Boolean Discontinuity, Boolean CleanPoint, UInt32 TransformType)			Transform_ProcessInput	Informational		
+Microsoft-Windows-MediaFoundation-MFReadWrite	201	0	Transform_ProcessInput201(Pointer Object, UInt32 StreamIndex, Pointer Transform, UInt32 ErrorCode)			Transform_ProcessInput	Informational		
+Microsoft-Windows-MediaFoundation-MFReadWrite	202	0	Transform_ProcessOutput(Pointer Object, UInt32 StreamIndex, Pointer Transform, UInt32 OutputStreamIndex, Pointer Sample, UInt64 Timestamp, UInt64 Duration, UInt32 Size, Boolean Discontinuity, Boolean CleanPoint, UInt32 TransformType)			Transform_ProcessOutput	Informational		
+Microsoft-Windows-MediaFoundation-MFReadWrite	203	0	Transform_ProcessOutput203(Pointer Object, UInt32 StreamIndex, Pointer Transform, UInt32 ErrorCode)			Transform_ProcessOutput	Informational		
+Microsoft-Windows-MediaFoundation-MFReadWrite	204	0	Transform_ProcessMessage(Pointer Object, UInt32 StreamIndex, Pointer Transform, UInt32 Message, Pointer Param)			Transform_ProcessMessage	Informational		
+Microsoft-Windows-MediaFoundation-MFReadWrite	205	0	Transform_Event(Pointer Object, UInt32 StreamIndex, Pointer Transform, UInt32 EventType, UInt32 ErrorCode)			Transform_Event	Informational		
+Microsoft-Windows-MediaFoundation-MFReadWrite	206	0	Transform_ProcessEvent(Pointer Object, UInt32 StreamIndex, Pointer Transform, UInt32 EventType)			Transform_ProcessEvent	Informational		
+Microsoft-Windows-MediaFoundation-MFReadWrite	207	0	Transform_Created(Pointer Object, UInt32 StreamIndex, Pointer MFT, GUID CLSID, Pointer vtable)			Transform_Created	Informational		
+Microsoft-Windows-MediaFoundation-MFReadWrite	208	0	Transform_Destroyed(Pointer Object, UInt32 StreamIndex, Pointer MFT, GUID CLSID, Pointer vtable)			Transform_Destroyed	Informational		
+Microsoft-Windows-MediaFoundation-MFReadWrite	209	0	Transform_ProcessStart(Pointer Object, UInt32 StreamIndex, Pointer Transform, Pointer Sample, UInt64 Timestamp, UInt64 Duration, UInt32 Size, Boolean Discontinuity, Boolean CleanPoint, UInt32 TransformType)	Start		Transform_Process	Verbose		
+Microsoft-Windows-MediaFoundation-MFReadWrite	210	0	Transform_ProcessStop(Pointer Object, UInt32 StreamIndex, Pointer Transform, UInt32 OutputStreamIndex, Pointer Sample, UInt64 Timestamp, UInt64 Duration, UInt32 Size, Boolean Discontinuity, Boolean CleanPoint, UInt32 TransformType)	Stop		Transform_Process	Verbose		
+Microsoft-Windows-MediaFoundation-MFReadWrite	211	0	Transform_SetInputType(Pointer Object, UInt32 TransformType, AnsiString MediaType)			Transform_SetInputType	Informational		

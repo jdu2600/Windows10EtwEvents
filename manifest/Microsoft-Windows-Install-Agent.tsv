@@ -1,0 +1,6 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Install-Agent	2000	0	InstallAgentModuleLoaded(UnicodeString ProcessName, UnicodeString ModuleName, UnicodeString BuildName)		Messages	InstallAgentModuleLoaded	Informational		
+Microsoft-Windows-Install-Agent	2001	0	AgentVerbose(UnicodeString Message, AnsiString Function, Int32 ErrorCode, AnsiString Source, UInt32 LineNumber)	Verbose	Messages	Agent	Verbose		
+Microsoft-Windows-Install-Agent	2002	0	AgentInfo(UnicodeString Message, AnsiString Function, Int32 ErrorCode, AnsiString Source, UInt32 LineNumber)	Info	Messages	Agent	Informational		
+Microsoft-Windows-Install-Agent	2003	0	AgentWarning(UnicodeString Message, AnsiString Function, Int32 ErrorCode, AnsiString Source, UInt32 LineNumber)	Warning	Messages	Agent	Warning		
+Microsoft-Windows-Install-Agent	2004	0	AgentError(UnicodeString Message, AnsiString Function, Int32 ErrorCode, AnsiString Source, UInt32 LineNumber)	Error	Messages	Agent	Error		

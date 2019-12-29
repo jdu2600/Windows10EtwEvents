@@ -1,0 +1,9 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Hyper-V-Guest-Drivers-Storage-Filter	1	0	task_0(HexInt32 NTStatus)			task_0	Warning		
+Microsoft-Windows-Hyper-V-Guest-Drivers-Storage-Filter	2	0	task_02(HexInt32 NTStatus)			task_0	Warning		
+Microsoft-Windows-Hyper-V-Guest-Drivers-Storage-Filter	3	0	task_03(UnicodeString Location, HexInt32 NTStatus)			task_0	Informational		
+Microsoft-Windows-Hyper-V-Guest-Drivers-Storage-Filter	4	0	task_04(UnicodeString Location, HexInt32 NTStatus)			task_0	Warning		
+Microsoft-Windows-Hyper-V-Guest-Drivers-Storage-Filter	5	0	task_05()			task_0	Warning		
+Microsoft-Windows-Hyper-V-Guest-Drivers-Storage-Filter	202	1	PortDispatchingofrequest._V1(Pointer Irp, UInt8 Command, UInt64 LengthOfTransferinblocks, HexInt64 LBA, Pointer OriginalIrp)	Dispatchingofrequest.	Read	Port	Verbose		
+Microsoft-Windows-Hyper-V-Guest-Drivers-Storage-Filter	203	1	PortDispatchingofrequest.203_V1(Pointer Irp, UInt8 Command, UInt64 LengthOfTransferinblocks, HexInt64 LBA, Pointer OriginalIrp)	Dispatchingofrequest.	Write	Port	Verbose		
+Microsoft-Windows-Hyper-V-Guest-Drivers-Storage-Filter	208	1	PortCompletionofrequest._V1(Pointer Irp, HexInt32 NTStatus, UInt8 SrbStatus, UInt8 ScsiStatus, UInt8 SenseKey, UInt8 AddSense, UInt8 AddSenseQ, Pointer OriginalIrp)	Completionofrequest.	Read Write PagingRead PagingWrite LowMemoryRead LowMemoryWrite	Port	Verbose		

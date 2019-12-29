@@ -1,0 +1,9 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Networking-Correlation	3001	0	task_0()			task_0	Critical		
+Microsoft-Windows-Networking-Correlation	3002	0	task_03002()			task_0	Error		
+Microsoft-Windows-Networking-Correlation	3003	0	task_03003()			task_0	Warning		
+Microsoft-Windows-Networking-Correlation	3004	0	task_03004()			task_0	Informational		
+Microsoft-Windows-Networking-Correlation	3005	0	task_03005()			task_0	Verbose		
+Microsoft-Windows-Networking-Correlation	60001	0	task_0Start(GUID SourceProvider, UInt32 Context)	Start	ActivityTransfer ActivityStart	task_0	Critical		
+Microsoft-Windows-Networking-Correlation	60002	0	task_0Stop(GUID SourceProvider, UInt32 Context)	Stop	ActivityTransfer ActivityStop	task_0	Critical		
+Microsoft-Windows-Networking-Correlation	60003	0	task_0Send(GUID SourceProvider, UInt32 Context)	Send	ActivityTransfer	task_0	Critical		

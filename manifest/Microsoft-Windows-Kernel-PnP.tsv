@@ -1,0 +1,109 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Kernel-PnP	200	0	BootStart()	Start	Performance	BootStart	Informational		
+Microsoft-Windows-Kernel-PnP	201	0	BootStartStop()	Stop	Performance	BootStart	Informational		
+Microsoft-Windows-Kernel-PnP	202	0	SystemStart()	Start	Performance	SystemStart	Informational		
+Microsoft-Windows-Kernel-PnP	203	0	SystemStartStop()	Stop	Performance	SystemStart	Informational		
+Microsoft-Windows-Kernel-PnP	204	0	OsLoader(UInt64 OSLoaderStart, UInt64 OSLoaderEnd)		Performance	OsLoader	Informational		
+Microsoft-Windows-Kernel-PnP	205	0	EarlyLaunchAntiMalwareStart(UInt16 ElamDriverNameLength, UnicodeString ElamDriverName)	Start	Performance	EarlyLaunchAntiMalware	Informational		
+Microsoft-Windows-Kernel-PnP	206	0	EarlyLaunchAntiMalwareStop(UInt16 ElamDriverNameLength, UnicodeString ElamDriverName)	Stop	Performance	EarlyLaunchAntiMalware	Informational		
+Microsoft-Windows-Kernel-PnP	207	0	EarlyLaunchAntiMalwareStart207(UInt32 ElamStatus)	Start	Performance	EarlyLaunchAntiMalware	Informational		
+Microsoft-Windows-Kernel-PnP	208	0	EarlyLaunchAntiMalwareStop208(UInt32 ElamStatus)	Stop	Performance	EarlyLaunchAntiMalware	Informational		
+Microsoft-Windows-Kernel-PnP	209	0	EarlyLaunchAntiMalware(UInt32 Classification, UInt32 Policy, UInt32 Result)		Performance	EarlyLaunchAntiMalware	Informational		
+Microsoft-Windows-Kernel-PnP	210	0	BootInitStart(UInt16 DriverNameLength, UnicodeString DriverName)	Start	Performance BootInit	BootInit	Informational		
+Microsoft-Windows-Kernel-PnP	211	0	BootInitStop(UInt16 DriverNameLength, UnicodeString DriverName, UInt32 Status)	Stop	Performance BootInit	BootInit	Informational		
+Microsoft-Windows-Kernel-PnP	212	0	DriverLoadStart(UInt16 DriverNameLength, UnicodeString DriverName)	Start	Performance DriverLoad	DriverLoad	Informational		
+Microsoft-Windows-Kernel-PnP	213	0	DriverLoadStop(UInt16 ServiceNameLength, UnicodeString ServiceName, UInt32 Status, UInt16 DriverNameLength, UnicodeString DriverName, UInt32 Version)	Stop	Performance DriverLoad	DriverLoad	Informational		
+Microsoft-Windows-Kernel-PnP	214	0	DriverUnloadStart(UInt16 DriverNameLength, UnicodeString DriverName)	Start	Performance DriverUnload	DriverUnload	Informational		
+Microsoft-Windows-Kernel-PnP	215	0	DriverUnloadStop(UInt16 ServiceNameLength, UnicodeString ServiceName, UInt32 Status, UInt16 DriverNameLength, UnicodeString DriverName, UInt32 Version)	Stop	Performance DriverUnload	DriverUnload	Informational		
+Microsoft-Windows-Kernel-PnP	216	0	DeviceStart(UInt16 DriverNameLength, UnicodeString DriverName)	Start	Performance DeviceStart	DeviceStart	Informational		
+Microsoft-Windows-Kernel-PnP	217	0	DeviceStartSuspend(UInt16 DriverNameLength, UnicodeString DriverName)	Suspend	Performance DeviceStart	DeviceStart	Informational		
+Microsoft-Windows-Kernel-PnP	218	0	DeviceStartStop(UInt16 DriverNameLength, UnicodeString DriverName, UInt32 Status, UInt16 FailureNameLength, UnicodeString FailureName, UInt32 Version)	Stop	Performance DeviceStart	DeviceStart	Informational		
+Microsoft-Windows-Kernel-PnP	219	0	DriverLoad(UInt16 DriverNameLength, UnicodeString DriverName, UInt32 Status, UInt16 FailureNameLength, UnicodeString FailureName, UInt32 Version)			DriverLoad	Warning		
+Microsoft-Windows-Kernel-PnP	220	0	DeviceEnumStart(UInt16 DriverNameLength, UnicodeString DriverName)	Start	Performance DeviceEnum	DeviceEnum	Informational		
+Microsoft-Windows-Kernel-PnP	221	0	DeviceEnumSuspend(UInt16 DriverNameLength, UnicodeString DriverName)	Suspend	Performance DeviceEnum	DeviceEnum	Informational		
+Microsoft-Windows-Kernel-PnP	222	0	DeviceEnumStop(UInt16 DriverNameLength, UnicodeString DriverName)	Stop	Performance DeviceEnum	DeviceEnum	Informational		
+Microsoft-Windows-Kernel-PnP	223	0	DeviceEjectStart(UInt16 DriverNameLength, UnicodeString DriverName)	Start	DeviceEject	DeviceEject	Informational		
+Microsoft-Windows-Kernel-PnP	224	0	DeviceEjectStop(UInt16 DriverNameLength, UnicodeString DriverName, UInt32 Status, UInt16 FailureNameLength, UnicodeString FailureName, UInt32 Version)	Stop	DeviceEject	DeviceEject	Informational		
+Microsoft-Windows-Kernel-PnP	225	0	DeviceEject(UInt32 ProcessId, UInt16 ProcessNameLength, UnicodeString ProcessName, UInt16 DeviceInstanceLength, UnicodeString DeviceInstance)			DeviceEject	Warning		
+Microsoft-Windows-Kernel-PnP	226	0	DriverInitStart(UInt16 DriverNameLength, UnicodeString DriverName)	Start	Performance DriverInit	DriverInit	Informational		
+Microsoft-Windows-Kernel-PnP	227	0	DriverInitStop(UInt16 DriverNameLength, UnicodeString DriverName, UInt32 Status)	Stop	Performance DriverInit	DriverInit	Informational		
+Microsoft-Windows-Kernel-PnP	228	0	task_0(UInt32 SqmType, GUID SqmSessionGuid, SID SqmSid, UInt32 SqmWindowsSessionId, UInt32 SqmSessionFlags)			task_0	Informational		
+Microsoft-Windows-Kernel-PnP	229	0	task_0229(UInt32 SqmType, GUID SqmSessionGuid)			task_0	Informational		
+Microsoft-Windows-Kernel-PnP	230	0	task_0230(UInt32 SqmType, GUID SqmSessionGuid, UInt32 SqmID, UInt32 SqmDWORDDatapointValue)			task_0	Informational		
+Microsoft-Windows-Kernel-PnP	231	0	task_0Stop(UInt32 SqmType, GUID SqmSessionGuid, UInt32 SqmID, UInt32 SqmDWORDDatapointValue)	Stop		task_0	Informational		
+Microsoft-Windows-Kernel-PnP	232	0	task_0232(UInt32 SqmType, GUID SqmSessionGuid, UInt32 SqmID, UInt32 SqmDWORDDatapointValue)			task_0	Informational		
+Microsoft-Windows-Kernel-PnP	233	0	task_0233(UInt32 SqmType, GUID SqmSessionGuid, UInt32 SqmID, UInt32 SqmDWORDDatapointValue)			task_0	Informational		
+Microsoft-Windows-Kernel-PnP	234	0	task_0234(UInt32 SqmType, GUID SqmSessionGuid, UInt32 SqmID, UInt32 SqmDWORDDatapointValue)			task_0	Informational		
+Microsoft-Windows-Kernel-PnP	235	0	task_0235(UInt32 SqmType, GUID SqmSessionGuid, UInt32 SqmID, UnicodeString SqmStringDatapointValue)			task_0	Informational		
+Microsoft-Windows-Kernel-PnP	236	0	task_0236(UInt32 SqmType, GUID SqmSessionGuid, UInt32 SqmID, UInt32 SqmStreamRowLength, Int16 SqmStreamRow)			task_0	Informational		
+Microsoft-Windows-Kernel-PnP	240	0	task_0240(UnicodeString TargetPath, UnicodeString SparePath)			task_0	Informational		
+Microsoft-Windows-Kernel-PnP	241	0	task_0241(UnicodeString TargetPath, UnicodeString SparePath, HexInt32 Status, UInt32 Location)			task_0	Error		
+Microsoft-Windows-Kernel-PnP	241	1	task_0241_V1(UnicodeString TargetPath, UnicodeString SparePath, HexInt32 Status, UInt32 Location, UInt32 ExtendedStatus)			task_0	Error		
+Microsoft-Windows-Kernel-PnP	242	0	task_0242(UnicodeString TargetPath, HexInt64 TargetAffinity, UInt32 TargetProcessorCount, UInt32 TargetMemoryCount, HexInt64 TargetMemorySize, UnicodeString SparePath, UInt32 SpareProcessorCount, UInt32 SpareMemoryCount, HexInt64 SpareMemorySize, UInt32 TimeTotal, UInt32 TimeToQuiesce, UInt32 TimeQuiesced, UInt32 TimeToWake, FILETIME TargetProcessors, SYSTEMTIME TargetMemoryRanges, HexInt32 SpareProcessors, HexInt64 SpareMemoryRanges)			task_0	Informational		
+Microsoft-Windows-Kernel-PnP	250	0	DeviceConfigStart(UInt16 DeviceInstanceLength, UnicodeString DeviceInstance)	Start	DeviceConfig	DeviceConfig	Informational		
+Microsoft-Windows-Kernel-PnP	251	0	DeviceConfigSuspend(UInt16 DeviceInstanceLength, UnicodeString DeviceInstance)	Suspend	DeviceConfig	DeviceConfig	Informational		
+Microsoft-Windows-Kernel-PnP	252	0	DeviceConfigStop(UInt16 DeviceInstanceLength, UnicodeString DeviceInstance, UInt32 Status)	Stop	DeviceConfig	DeviceConfig	Informational		
+Microsoft-Windows-Kernel-PnP	260	0	SystemStartPnPEnumStart()	Start	Performance	SystemStartPnPEnum	Informational		
+Microsoft-Windows-Kernel-PnP	261	0	SystemStartPnPEnumStop()	Stop	Performance	SystemStartPnPEnum	Informational		
+Microsoft-Windows-Kernel-PnP	262	0	SystemStartLegacyEnumStart()	Start	Performance	SystemStartLegacyEnum	Informational		
+Microsoft-Windows-Kernel-PnP	263	0	SystemStartLegacyEnumStop()	Stop	Performance	SystemStartLegacyEnum	Informational		
+Microsoft-Windows-Kernel-PnP	264	0	BootDriverReinitStart()	Start	Performance	BootDriverReinit	Informational		
+Microsoft-Windows-Kernel-PnP	265	0	BootDriverReinitStop()	Stop	Performance	BootDriverReinit	Informational		
+Microsoft-Windows-Kernel-PnP	266	0	SystemStartDriverReinitStart()	Start	Performance	SystemStartDriverReinit	Informational		
+Microsoft-Windows-Kernel-PnP	267	0	SystemStartDriverReinitStop()	Stop	Performance	SystemStartDriverReinit	Informational		
+Microsoft-Windows-Kernel-PnP	270	0	DriverDatabaseLoadStart(UInt16 DriverNameLength, UnicodeString DriverName)	Start	DriverDatabase	DriverDatabaseLoad	Informational		
+Microsoft-Windows-Kernel-PnP	271	0	DriverDatabaseLoadSuspend(UInt16 DriverNameLength, UnicodeString DriverName)	Suspend	DriverDatabase	DriverDatabaseLoad	Informational		
+Microsoft-Windows-Kernel-PnP	272	0	DriverDatabaseLoadStop(UInt16 DriverNameLength, UnicodeString DriverName, UInt32 Status)	Stop	DriverDatabase	DriverDatabaseLoad	Informational		
+Microsoft-Windows-Kernel-PnP	273	0	DriverDatabaseUnloadStart(UInt16 DriverNameLength, UnicodeString DriverName)	Start	DriverDatabase	DriverDatabaseUnload	Informational		
+Microsoft-Windows-Kernel-PnP	274	0	DriverDatabaseUnloadSuspend(UInt16 DriverNameLength, UnicodeString DriverName)	Suspend	DriverDatabase	DriverDatabaseUnload	Informational		
+Microsoft-Windows-Kernel-PnP	275	0	DriverDatabaseUnloadStop(UInt16 DriverNameLength, UnicodeString DriverName, UInt32 Status)	Stop	DriverDatabase	DriverDatabaseUnload	Informational		
+Microsoft-Windows-Kernel-PnP	276	0	DriverDatabaseLoadedStart(UInt16 DriverNameLength, UnicodeString DriverName)	Start	DriverDatabase	DriverDatabaseLoaded	Informational		
+Microsoft-Windows-Kernel-PnP	277	0	DriverDatabaseLoadedStop(UInt16 DriverNameLength, UnicodeString DriverName, UInt32 Status)	Stop	DriverDatabase	DriverDatabaseLoaded	Informational		
+Microsoft-Windows-Kernel-PnP	278	0	task_0278(GUID BlockedDriverEntry)			task_0	Informational		
+Microsoft-Windows-Kernel-PnP	300	0	task_0300()			task_0	Informational		
+Microsoft-Windows-Kernel-PnP	301	0	task_0301()			task_0	Informational		
+Microsoft-Windows-Kernel-PnP	400	0	task_0400(UnicodeString DeviceInstanceId, UnicodeString DriverName, GUID ClassGuid, UnicodeString DriverDate, UnicodeString DriverVersion, UnicodeString DriverProvider, Boolean DriverInbox, UnicodeString DriverSection, HexInt32 DriverRank, UnicodeString MatchingDeviceId, UnicodeString OutrankedDrivers, Boolean DeviceUpdated, HexInt32 Status, UnicodeString ParentDeviceInstanceId)			task_0	Informational		
+Microsoft-Windows-Kernel-PnP	401	0	task_0401(UnicodeString DeviceInstanceId, UnicodeString DriverName, GUID ClassGuid, UnicodeString DriverDate, UnicodeString DriverVersion, UnicodeString DriverProvider, Boolean DriverInbox, UnicodeString DriverSection, HexInt32 DriverRank, UnicodeString MatchingDeviceId, UnicodeString OutrankedDrivers, Boolean DeviceUpdated, HexInt32 Status, UnicodeString ParentDeviceInstanceId)			task_0	Error		
+Microsoft-Windows-Kernel-PnP	402	0	task_0402(UnicodeString DeviceInstanceId, UnicodeString DriverName, GUID ClassGuid, UnicodeString DriverDate, UnicodeString DriverVersion, UnicodeString DriverProvider, Boolean DriverInbox, UnicodeString DriverSection, HexInt32 DriverRank, UnicodeString MatchingDeviceId, UnicodeString OutrankedDrivers, Boolean DeviceUpdated, HexInt32 Status, UnicodeString ParentDeviceInstanceId)			task_0	Warning		
+Microsoft-Windows-Kernel-PnP	403	0	task_0403(UnicodeString DeviceInstanceId, UnicodeString DriverName, GUID ClassGuid, UnicodeString DriverDate, UnicodeString DriverVersion, UnicodeString DriverProvider, Boolean DriverInbox, UnicodeString DriverSection, HexInt32 DriverRank, UnicodeString MatchingDeviceId, UnicodeString OutrankedDrivers, Boolean DeviceUpdated, HexInt32 Status, UnicodeString ParentDeviceInstanceId)			task_0	Warning		
+Microsoft-Windows-Kernel-PnP	410	0	task_0410(UnicodeString DeviceInstanceId, UnicodeString DriverName, GUID ClassGuid, UnicodeString ServiceName, UnicodeString LowerFilters, UnicodeString UpperFilters, HexInt32 Problem, HexInt32 Status)			task_0	Informational		
+Microsoft-Windows-Kernel-PnP	411	0	task_0411(UnicodeString DeviceInstanceId, UnicodeString DriverName, GUID ClassGuid, UnicodeString ServiceName, UnicodeString LowerFilters, UnicodeString UpperFilters, HexInt32 Problem, HexInt32 Status)			task_0	Error		
+Microsoft-Windows-Kernel-PnP	412	0	task_0412(UnicodeString DeviceInstanceId, UnicodeString DriverName, GUID ClassGuid, UnicodeString ServiceName, UnicodeString LowerFilters, UnicodeString UpperFilters, HexInt32 Problem, HexInt32 Status)			task_0	Warning		
+Microsoft-Windows-Kernel-PnP	420	0	task_0420(UnicodeString DeviceInstanceId, GUID ClassGuid, HexInt32 Problem, HexInt32 Status)			task_0	Informational		
+Microsoft-Windows-Kernel-PnP	421	0	task_0421(UnicodeString DeviceInstanceId, GUID ClassGuid, HexInt32 Problem, HexInt32 Status)			task_0	Error		
+Microsoft-Windows-Kernel-PnP	430	0	task_0430(UnicodeString DeviceInstanceId)			task_0	Informational		
+Microsoft-Windows-Kernel-PnP	440	0	task_0440(UnicodeString DeviceInstanceId, UnicodeString LastDeviceInstanceId, GUID ClassGuid, UnicodeString LocationPath, HexInt64 MigrationRank, Boolean Present, HexInt32 Status)			task_0	Informational		
+Microsoft-Windows-Kernel-PnP	441	0	task_0441(UnicodeString DeviceInstanceId, UnicodeString LastDeviceInstanceId, GUID ClassGuid, UnicodeString LocationPath, HexInt64 MigrationRank, Boolean Present, HexInt32 Status)			task_0	Error		
+Microsoft-Windows-Kernel-PnP	500	0	DevQuery_QueryProcessingQueryStart(Pointer QueryAddress, UInt32 ProcessId, UnicodeString ObjectType, UnicodeString QueryType, UnicodeString ObjectId, UnicodeString QueryFlags, UnicodeString PreferredLanguages, UnicodeString RequestedProperties, UnicodeString FilterExpression)	QueryStart	DevQuery	DevQuery_QueryProcessing	Informational		
+Microsoft-Windows-Kernel-PnP	501	0	DevQuery_QueryProcessingProcessingStart(Pointer QueryAddress)	ProcessingStart	DevQuery	DevQuery_QueryProcessing	Informational		
+Microsoft-Windows-Kernel-PnP	502	0	DevQuery_QueryProcessingProcessingStop(Pointer QueryAddress)	ProcessingStop	DevQuery	DevQuery_QueryProcessing	Informational		
+Microsoft-Windows-Kernel-PnP	503	0	DevQuery_QueryProcessingQueryStop(Pointer QueryAddress)	QueryStop	DevQuery	DevQuery_QueryProcessing	Informational		
+Microsoft-Windows-Kernel-PnP	600	0	DriverOverride(HexInt32 HardwareConfigurationId, UnicodeString Driver, HexInt32 StartType)			DriverOverride	Informational		
+Microsoft-Windows-Kernel-PnP	700	0	CfgMgr_DeviceListStart(UnicodeString Filter, UnicodeString FilterBy, Boolean OnlyPresent)	Start	CfgMgr	CfgMgr_DeviceList	Informational		
+Microsoft-Windows-Kernel-PnP	701	0	CfgMgr_DeviceListStop(HexInt32 Result)	Stop	CfgMgr	CfgMgr_DeviceList	Informational		
+Microsoft-Windows-Kernel-PnP	702	0	CfgMgr_DeviceInterfaceListStart(GUID Class, UnicodeString Device, Boolean OnlyPresent)	Start	CfgMgr	CfgMgr_DeviceInterfaceList	Informational		
+Microsoft-Windows-Kernel-PnP	703	0	CfgMgr_DeviceInterfaceListStop(HexInt32 Result)	Stop	CfgMgr	CfgMgr_DeviceInterfaceList	Informational		
+Microsoft-Windows-Kernel-PnP	704	0	CfgMgr_QueryRemoveStart(HexInt32 QueryRemoveType, UnicodeString Device)	Start	CfgMgr	CfgMgr_QueryRemove	Informational		
+Microsoft-Windows-Kernel-PnP	705	0	CfgMgr_QueryRemoveStop(UnicodeString Device)	Stop	CfgMgr	CfgMgr_QueryRemove	Informational		
+Microsoft-Windows-Kernel-PnP	800	0	ProcessNewDeviceStart(Pointer DeviceNode)	Start	Enumeration	ProcessNewDevice	Informational		
+Microsoft-Windows-Kernel-PnP	801	0	ProcessNewDevice(Pointer DeviceNode, UnicodeString DeviceInstancePath)		Enumeration	ProcessNewDevice	Informational		
+Microsoft-Windows-Kernel-PnP	802	0	ProcessNewDeviceStop(Pointer DeviceNode)	Stop	Enumeration	ProcessNewDevice	Informational		
+Microsoft-Windows-Kernel-PnP	803	0	ProcessDeviceStart(HexInt32 Phase, UnicodeString Device)	Start	Enumeration	ProcessDeviceStart	Informational		
+Microsoft-Windows-Kernel-PnP	804	0	ProcessDeviceStartStop(HexInt32 Phase, UnicodeString Device)	Stop	Enumeration	ProcessDeviceStart	Informational		
+Microsoft-Windows-Kernel-PnP	805	0	ProcessDeviceRestart(HexInt32 Phase, UnicodeString Device)	Start	Enumeration	ProcessDeviceRestart	Informational		
+Microsoft-Windows-Kernel-PnP	806	0	ProcessDeviceRestartStop(HexInt32 Phase, UnicodeString Device)	Stop	Enumeration	ProcessDeviceRestart	Informational		
+Microsoft-Windows-Kernel-PnP	810	0	ReenumerateDeviceTree(UnicodeString Device, HexInt32 ReenumerateType)		Enumeration	ReenumerateDeviceTree	Informational		
+Microsoft-Windows-Kernel-PnP	811	0	ReenumerateDeviceTreeStart(UnicodeString Device, HexInt32 ReenumerateType)	Start	Enumeration	ReenumerateDeviceTree	Informational		
+Microsoft-Windows-Kernel-PnP	812	0	ReenumerateDeviceTreeStop(UnicodeString Device, HexInt32 ReenumerateType)	Stop	Enumeration	ReenumerateDeviceTree	Informational		
+Microsoft-Windows-Kernel-PnP	813	0	ReenumerateDeviceOnly(UnicodeString Device)		Enumeration	ReenumerateDeviceOnly	Informational		
+Microsoft-Windows-Kernel-PnP	814	0	ReenumerateDeviceOnlyStart(UnicodeString Device)	Start	Enumeration	ReenumerateDeviceOnly	Informational		
+Microsoft-Windows-Kernel-PnP	815	0	ReenumerateDeviceOnlyStop(UnicodeString Device)	Stop	Enumeration	ReenumerateDeviceOnly	Informational		
+Microsoft-Windows-Kernel-PnP	830	0	DeviceRemoval(UnicodeString Device)		Enumeration	DeviceRemoval	Informational		
+Microsoft-Windows-Kernel-PnP	831	0	DeviceRemovalStart(UnicodeString Device)	Start	Enumeration	DeviceRemoval	Informational		
+Microsoft-Windows-Kernel-PnP	832	0	DeviceRemovalStop(UnicodeString Device)	Stop	Enumeration	DeviceRemoval	Informational		
+Microsoft-Windows-Kernel-PnP	840	0	task_0Start(UInt16 DeviceInstanceLength, UnicodeString DeviceInstance)	Start	Enumeration	task_0	Informational		
+Microsoft-Windows-Kernel-PnP	841	0	task_0Stop841(UInt16 DeviceInstanceLength, UnicodeString DeviceInstance, UInt32 Status, UInt32 VetoType, UInt16 VetoNameLength, UnicodeString VetoName)	Stop	Enumeration	task_0	Informational		
+Microsoft-Windows-Kernel-PnP	850	0	AssignResourcesStart(UnicodeString Device)	Start	Enumeration	AssignResources	Informational		
+Microsoft-Windows-Kernel-PnP	851	0	AssignResourcesStop(UnicodeString Device)	Stop	Enumeration	AssignResources	Informational		
+Microsoft-Windows-Kernel-PnP	852	0	RebalanceStart(UInt16 DeviceInstanceLength, UnicodeString DeviceInstance)	Start	Enumeration	Rebalance	Informational		
+Microsoft-Windows-Kernel-PnP	853	0	RebalanceStop(UInt16 DeviceInstanceLength, UnicodeString DeviceInstance, UInt32 Status)	Stop	Enumeration	Rebalance	Informational		

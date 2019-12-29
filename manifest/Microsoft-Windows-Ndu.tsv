@@ -1,0 +1,17 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Ndu	2001	0	NduDebugTrace(UnicodeString _DebugString)		KeywordNduDebugTrace	NduDebugTrace	Informational		
+Microsoft-Windows-Ndu	2002	0	NduDebugTrace2002(UnicodeString _FunctionName, UInt32 _Status)		KeywordNduDebugTrace	NduDebugTrace	Error		
+Microsoft-Windows-Ndu	2003	0	PerInterfaceStats(UInt64 _IfLuid, UInt32 _ProcNum, UInt16 _ListIndex)		KeywordNduPerInterfaceStats	PerInterfaceStats	Informational		
+Microsoft-Windows-Ndu	2004	0	PerFlowStats(UnicodeString _Direction, UInt64 _FlowHandle, UnicodeString _ExePath, UInt32 _SvcTag, UnicodeString _PkgName, SID _UserId, UInt32 _Pid)		KeywordNduPerFlowStats	PerFlowStats	Informational		
+Microsoft-Windows-Ndu	2005	0	PerFlowStats2005(UInt64 _FlowHandle, UnicodeString _RefDeref)		KeywordNduPerFlowStats	PerFlowStats	Verbose		
+Microsoft-Windows-Ndu	2006	0	PerInterfaceStats2006(UInt64 _IfLuid, UInt32 _ProfileId, UInt32 _BytesSent, UInt32 _BytesRecvd)		KeywordNduPerInterfaceStats	PerInterfaceStats	Verbose		
+Microsoft-Windows-Ndu	2007	0	PerFlowStats2007(UInt64 _IfLuid, UInt64 _FlowHandle, UInt32 _BytesSent, UInt32 _BytesRecvd)		KeywordNduPerFlowStats	PerFlowStats	Verbose		
+Microsoft-Windows-Ndu	2008	0	TokenTracking(UnicodeString _ExePath, UInt32 _SvcTag, UnicodeString _PkgName, SID _UserId, UInt32 _Cookie, UInt32 _Quota)		KeywordNduTokenTracking	TokenTracking	Informational		
+Microsoft-Windows-Ndu	2009	0	TokenTracking2009(UInt32 _Cookie)		KeywordNduTokenTracking	TokenTracking	Informational		
+Microsoft-Windows-Ndu	2010	0	PerInterfaceStats2010(UInt64 _IfLuid, UInt32 _ProfileId, UInt64 _BytesLimit)		KeywordNduPerInterfaceStats	PerInterfaceStats	Informational		
+Microsoft-Windows-Ndu	2011	0	PerInterfaceStats2011(UInt64 _IfLuid, UInt32 _ProfileId)		KeywordNduPerInterfaceStats	PerInterfaceStats	Informational		
+Microsoft-Windows-Ndu	2012	0	NduDebugTrace2012(UnicodeString _DebugString)		KeywordNduDebugTrace	NduDebugTrace	Verbose		
+Microsoft-Windows-Ndu	2013	0	NduDebugTrace2013(UnicodeString _DebugString)		KeywordNduDebugTrace	NduDebugTrace	Error		
+Microsoft-Windows-Ndu	2014	0	PerInterfaceStats2014(UInt64 _IfLuid, UInt32 _ProfileId, UInt64 _BytesSent, UInt64 _BytesRecvd, Boolean _IsCosted)		KeywordNduLwtPerMinuteInterfaceStats	PerInterfaceStats	Informational		
+Microsoft-Windows-Ndu	2015	0	NduPowerDebug(UInt64 _IfLuid, UInt64 TimeSinceLast, UInt64 Energy, UInt32 CurrentProc, UInt32 BytesTxRx, UInt32 Pid, UInt8 IfMediaType)		KeywordNduPowerDebug	NduPowerDebug	Informational		
+Microsoft-Windows-Ndu	2016	0	NduPowerQueueWorkItem(UInt32 ProcId, UInt32 Count)		KeywordNduPowerDebug	NduPowerQueueWorkItem	Informational		

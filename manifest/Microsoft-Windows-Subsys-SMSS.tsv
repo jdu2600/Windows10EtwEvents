@@ -1,0 +1,21 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Subsys-SMSS	1	0	smss:ExecuteImageStart(UInt32 Flags, UInt16 ImageNameLength, UnicodeString ImageName)	Start	smss:Diagnostics	smss:ExecuteImage	Informational		
+Microsoft-Windows-Subsys-SMSS	2	0	smss:ExecuteImageStop(UInt32 ProcessId)	Stop	smss:Diagnostics	smss:ExecuteImage	Informational		
+Microsoft-Windows-Subsys-SMSS	3	0	smss:InitializeRegistryStart()	Start	smss:Diagnostics	smss:InitializeRegistry	Informational		
+Microsoft-Windows-Subsys-SMSS	4	0	smss:InitializeRegistryStop()	Stop	smss:Diagnostics	smss:InitializeRegistry	Informational		
+Microsoft-Windows-Subsys-SMSS	5	0	smss:SetupExecuteListStart()	Start	smss:Diagnostics	smss:SetupExecuteList	Informational		
+Microsoft-Windows-Subsys-SMSS	6	0	smss:SetupExecuteListStop()	Stop	smss:Diagnostics	smss:SetupExecuteList	Informational		
+Microsoft-Windows-Subsys-SMSS	7	0	smss:BootExecuteListStart()	Start	smss:Diagnostics	smss:BootExecuteList	Informational		
+Microsoft-Windows-Subsys-SMSS	8	0	smss:BootExecuteListStop()	Stop	smss:Diagnostics	smss:BootExecuteList	Informational		
+Microsoft-Windows-Subsys-SMSS	9	0	smss:ProcessFileRenamesStart()	Start	smss:Diagnostics	smss:ProcessFileRenames	Informational		
+Microsoft-Windows-Subsys-SMSS	10	0	smss:ProcessFileRenamesStop()	Stop	smss:Diagnostics	smss:ProcessFileRenames	Informational		
+Microsoft-Windows-Subsys-SMSS	11	0	smss:FileRename(UInt16 FromNameLength, UInt16 ToNameLength, UnicodeString FromName, UnicodeString ToName)		smss:Diagnostics	smss:FileRename	Verbose		
+Microsoft-Windows-Subsys-SMSS	12	0	task_0(UInt16 FileNameLength, UnicodeString FileName)			task_0	Error		
+Microsoft-Windows-Subsys-SMSS	13	0	task_013(UnicodeString CurrentRunLevel, UnicodeString TargetRunLevel)			task_0	Informational		
+Microsoft-Windows-Subsys-SMSS	14	0	task_014(UnicodeString CurrentRunLevel, UnicodeString TargetRunLevel)			task_0	Informational		
+Microsoft-Windows-Subsys-SMSS	15	0	task_015(UnicodeString CurrentRunLevel, UnicodeString TargetRunLevel, UnicodeString AgentName, UnicodeString Error)			task_0	Error		
+Microsoft-Windows-Subsys-SMSS	16	0	task_016(UnicodeString CurrentRunLevel, UnicodeString TargetRunLevel, UnicodeString AgentName, UnicodeString Error)			task_0	Warning		
+Microsoft-Windows-Subsys-SMSS	17	0	task_017()			task_0	Informational		
+Microsoft-Windows-Subsys-SMSS	18	0	task_018(UInt32 Status)			task_0	Informational		
+Microsoft-Windows-Subsys-SMSS	19	0	smss:BootExecuteNoPnpSyncListStart()	Start	smss:Diagnostics	smss:BootExecuteNoPnpSyncList	Informational		
+Microsoft-Windows-Subsys-SMSS	20	0	smss:BootExecuteNoPnpSyncListStop()	Stop	smss:Diagnostics	smss:BootExecuteNoPnpSyncList	Informational		

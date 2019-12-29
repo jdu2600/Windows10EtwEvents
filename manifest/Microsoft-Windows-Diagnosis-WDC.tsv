@@ -1,0 +1,16 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Diagnosis-WDC	5016	0	task_0(AnsiString FileName, UInt32 Line, Pointer Address, Pointer Size)		memory	task_0	Always		
+Microsoft-Windows-Diagnosis-WDC	5017	0	task_05017(AnsiString FileName, UInt32 Line, Pointer Address)		memory	task_0	Always		
+Microsoft-Windows-Diagnosis-WDC	5018	0	task_05018(AnsiString FileName, UInt32 Line, Pointer Address, Pointer Size, Pointer OrigAddress)		memory	task_0	Always		
+Microsoft-Windows-Diagnosis-WDC	5100	0	ListUpdate(UInt32 TableId, UInt32 ItemPos, UInt32 ItemState, UnicodeString ItemContent)	Update	list	ListUpdate	Informational		
+Microsoft-Windows-Diagnosis-WDC	5101	0	ListUpdateInsert(UInt32 TableId, UInt32 ItemPos, UInt32 ItemState, UnicodeString ItemContent)	Insert	list	ListUpdate	Informational		
+Microsoft-Windows-Diagnosis-WDC	5102	0	ListUpdateDelete(UInt32 TableId, UInt32 ItemPos, UInt32 ItemState, UnicodeString ItemContent)	Delete	list	ListUpdate	Informational		
+Microsoft-Windows-Diagnosis-WDC	5103	0	task_05103(AnsiString FileName, AnsiString Function, UInt32 Line, UnicodeString ErrorText)		error	task_0	Error		
+Microsoft-Windows-Diagnosis-WDC	5200	0	PerfTrack_LaunchStart()	Start		PerfTrack_Launch	Informational		
+Microsoft-Windows-Diagnosis-WDC	5201	0	PerfTrack_LaunchStop()	Stop		PerfTrack_Launch	Informational		
+Microsoft-Windows-Diagnosis-WDC	5202	0	PerfTrack_TabSwitchStart(UInt32 TabId)	Start		PerfTrack_TabSwitch	Informational		
+Microsoft-Windows-Diagnosis-WDC	5203	0	PerfTrack_TabSwitchStop(UInt32 TabId)	Stop		PerfTrack_TabSwitch	Informational		
+Microsoft-Windows-Diagnosis-WDC	5204	0	PerfTrack_HandleSearchStart(UInt32 RequestCookie)	Start		PerfTrack_HandleSearch	Informational		
+Microsoft-Windows-Diagnosis-WDC	5205	0	PerfTrack_HandleSearchStop(UInt32 RequestCookie)	Stop		PerfTrack_HandleSearch	Informational		
+Microsoft-Windows-Diagnosis-WDC	5206	0	PerfTrack_ColumnSortStart(UInt32 TableId, UInt32 ColumnId)	Start		PerfTrack_ColumnSort	Informational		
+Microsoft-Windows-Diagnosis-WDC	5207	0	PerfTrack_ColumnSortStop(UInt32 TableId, UInt32 ColumnId)	Stop		PerfTrack_ColumnSort	Informational		

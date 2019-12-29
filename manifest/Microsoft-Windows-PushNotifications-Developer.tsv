@@ -1,0 +1,107 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-PushNotifications-Developer	1	0	task_0(UnicodeString FileName, UnicodeString FunctionName, Int32 LineNumber, UInt32 ErrorCode)			task_0	Error		
+Microsoft-Windows-PushNotifications-Developer	2	0	task_02()			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	3	0	task_03()			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	1000	0	task_01000(UnicodeString AppID)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	1001	0	task_01001(UnicodeString AppID, UnicodeString Channel)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	1002	0	task_01002(UnicodeString Channel)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	1100	0	CloudNotificationDeliveryStart(UInt32 NotificationType)	Start		CloudNotificationDelivery	Informational		
+Microsoft-Windows-PushNotifications-Developer	1101	0	CloudNotificationDeliveryStop(UInt32 NotificationType)	Stop		CloudNotificationDelivery	Informational		
+Microsoft-Windows-PushNotifications-Developer	1102	0	task_01102(UInt32 NotificationType)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	1103	0	task_01103(UInt32 NotificationType)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	1104	0	task_01104(UnicodeString AppID, UInt32 NotificationType)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	1105	0	task_01105(UnicodeString AppID)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	1106	0	task_01106(UnicodeString AppID)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	1107	0	task_01107(UnicodeString AppID)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	1108	0	ToastDismissedStart()	Start		ToastDismissed	Informational		
+Microsoft-Windows-PushNotifications-Developer	1109	0	ToastDismissedStop()	Stop		ToastDismissed	Informational		
+Microsoft-Windows-PushNotifications-Developer	1110	0	ToastCanceledStart()	Start		ToastCanceled	Informational		
+Microsoft-Windows-PushNotifications-Developer	1111	0	ToastCanceledStop()	Stop		ToastCanceled	Informational		
+Microsoft-Windows-PushNotifications-Developer	1112	0	ToastTimedOutStart()	Start		ToastTimedOut	Informational		
+Microsoft-Windows-PushNotifications-Developer	1113	0	ToastTimedOutStop()	Stop		ToastTimedOut	Informational		
+Microsoft-Windows-PushNotifications-Developer	1114	0	ToastActivatedStart()	Start		ToastActivated	Informational		
+Microsoft-Windows-PushNotifications-Developer	1115	0	ToastActivatedStop()	Stop		ToastActivated	Informational		
+Microsoft-Windows-PushNotifications-Developer	1116	0	ToastErrorStart()	Start		ToastError	Informational		
+Microsoft-Windows-PushNotifications-Developer	1117	0	ToastErrorStop()	Stop		ToastError	Informational		
+Microsoft-Windows-PushNotifications-Developer	1118	0	task_01118(UnicodeString AppID)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	1119	0	task_01119(UnicodeString AppID)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	1120	0	task_01120(UnicodeString AppID)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	1121	0	task_01121(UnicodeString AppID)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	1122	0	ConnectionStatusDeliveryStart(UnicodeString AppID, Boolean IsConnected)	Start		ConnectionStatusDelivery	Informational		
+Microsoft-Windows-PushNotifications-Developer	1123	0	ConnectionStatusDeliveryStop(UnicodeString AppID, Boolean IsConnected)	Stop		ConnectionStatusDelivery	Informational		
+Microsoft-Windows-PushNotifications-Developer	1124	0	task_01124(UnicodeString AppID)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	2000	0	task_02000(UnicodeString ErrorMessage, Int32 ErrorCode)			task_0	Error		
+Microsoft-Windows-PushNotifications-Developer	2001	0	task_02001(Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	2002	0	SecondaryTileCreateAsyncLambdaStart()	Start		SecondaryTileCreateAsyncLambda	Informational		
+Microsoft-Windows-PushNotifications-Developer	2003	0	SecondaryTileCreateAsyncLambdaStop(Int32 ErrorCode)	Stop		SecondaryTileCreateAsyncLambda	Informational		
+Microsoft-Windows-PushNotifications-Developer	2004	0	SecondaryTileDeleteAsyncStart()	Start		SecondaryTileDeleteAsync	Informational		
+Microsoft-Windows-PushNotifications-Developer	2005	0	SecondaryTileDeleteAsyncStop(Int32 ErrorCode)	Stop		SecondaryTileDeleteAsync	Informational		
+Microsoft-Windows-PushNotifications-Developer	2006	0	SecondaryTileUpdateAsyncStart()	Start		SecondaryTileUpdateAsync	Informational		
+Microsoft-Windows-PushNotifications-Developer	2007	0	SecondaryTileUpdateAsyncStop(Int32 ErrorCode)	Stop		SecondaryTileUpdateAsync	Informational		
+Microsoft-Windows-PushNotifications-Developer	2008	0	SecondaryTileStaticsExistsStart()	Start		SecondaryTileStaticsExists	Informational		
+Microsoft-Windows-PushNotifications-Developer	2009	0	SecondaryTileStaticsExistsStop(Int32 ErrorCode)	Stop		SecondaryTileStaticsExists	Informational		
+Microsoft-Windows-PushNotifications-Developer	2010	0	SecondaryTileStaticsFindAllAsyncStart()	Start		SecondaryTileStaticsFindAllAsync	Informational		
+Microsoft-Windows-PushNotifications-Developer	2011	0	SecondaryTileStaticsFindAllAsyncStop(Int32 ErrorCode)	Stop		SecondaryTileStaticsFindAllAsync	Informational		
+Microsoft-Windows-PushNotifications-Developer	2012	0	SecondaryTileStaticsFindAllAsyncForApplicationStart()	Start		SecondaryTileStaticsFindAllAsyncForApplication	Informational		
+Microsoft-Windows-PushNotifications-Developer	2013	0	SecondaryTileStaticsFindAllAsyncForApplicationStop(Int32 ErrorCode)	Stop		SecondaryTileStaticsFindAllAsyncForApplication	Informational		
+Microsoft-Windows-PushNotifications-Developer	2014	0	SecondaryTileStaticsFindAllAsyncForPackageStart()	Start		SecondaryTileStaticsFindAllAsyncForPackage	Informational		
+Microsoft-Windows-PushNotifications-Developer	2015	0	SecondaryTileStaticsFindAllAsyncForPackageStop(Int32 ErrorCode)	Stop		SecondaryTileStaticsFindAllAsyncForPackage	Informational		
+Microsoft-Windows-PushNotifications-Developer	2016	0	SecondaryTileFactoryEnumerateTilesStart()	Start		SecondaryTileFactoryEnumerateTiles	Informational		
+Microsoft-Windows-PushNotifications-Developer	2017	0	SecondaryTileFactoryEnumerateTilesStop(Int32 ErrorCode)	Stop		SecondaryTileFactoryEnumerateTiles	Informational		
+Microsoft-Windows-PushNotifications-Developer	2018	0	task_02018(Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	2019	0	task_02019(Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	2020	0	task_02020(Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	2021	0	task_02021(Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	2022	0	task_02022(Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	2023	0	task_02023(Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	2024	0	task_02024(Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	2025	0	task_02025(Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	2026	0	task_02026(Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	2027	0	task_02027(Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	2028	0	task_02028(Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	2029	0	task_02029(Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	2030	0	task_02030(Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	2031	0	task_02031(Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	2032	0	task_02032(Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	2033	0	task_02033(Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	2034	0	task_02034(Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	2035	0	task_02035(Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	2036	0	task_02036(Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	2037	0	task_02037(Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	2038	0	task_02038(Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	2039	0	task_02039(Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	2040	0	task_02040(Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	2041	0	task_02041(Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	2042	0	task_02042(Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	2043	0	task_02043(Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	2044	0	task_02044(Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	2045	0	task_02045(Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	2046	0	task_02046(Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	2047	0	task_02047(Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	2048	0	task_02048(Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	2049	0	task_02049()			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	2050	0	task_02050(Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	2051	0	task_02051(Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	2052	0	task_02052(Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	2053	0	task_02053()			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	2054	0	task_02054(Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	2055	0	task_02055(Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	2056	0	task_02056(Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	2057	0	task_02057(Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	2058	0	task_02058(Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	2059	0	task_02059(Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	2060	0	task_02060(Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	2061	0	task_02061(Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	2062	0	task_02062(Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	2063	0	task_02063(Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	2064	0	task_02064(Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	2065	0	task_02065(Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	2066	0	task_02066(Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	2067	0	task_02067(Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	3001	0	task_03001(Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-PushNotifications-Developer	3002	0	DualSimTileCreateAsyncStart()	Start		DualSimTileCreateAsync	Informational		
+Microsoft-Windows-PushNotifications-Developer	3003	0	DualSimTileCreateAsyncStop(Int32 ErrorCode)	Stop		DualSimTileCreateAsync	Informational		
+Microsoft-Windows-PushNotifications-Developer	3004	0	DualSimTileDeleteAsyncStart()	Start		DualSimTileDeleteAsync	Informational		
+Microsoft-Windows-PushNotifications-Developer	3005	0	DualSimTileDeleteAsyncStop(Int32 ErrorCode)	Stop		DualSimTileDeleteAsync	Informational		
+Microsoft-Windows-PushNotifications-Developer	3006	0	DualSimTileUpdateAsyncStart()	Start		DualSimTileUpdateAsync	Informational		
+Microsoft-Windows-PushNotifications-Developer	3007	0	DualSimTileUpdateAsyncStop(Int32 ErrorCode)	Stop		DualSimTileUpdateAsync	Informational		

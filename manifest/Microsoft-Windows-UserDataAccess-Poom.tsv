@@ -1,0 +1,29 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-UserDataAccess-Poom	1	0	task_0(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		Error	task_0	Error		
+Microsoft-Windows-UserDataAccess-Poom	2	0	task_02(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		Warning keyword_200000000000	task_0	Warning		
+Microsoft-Windows-UserDataAccess-Poom	1000	0	Trace(Pointer Message)		debug	Trace	Verbose		
+Microsoft-Windows-UserDataAccess-Poom	2000	0	task_02000(UnicodeString Prop_Process_UnicodeString, UInt32 Prop_ErrorCode)		POOM_Appointment	task_0	Informational		
+Microsoft-Windows-UserDataAccess-Poom	2002	0	task_02002(UInt32 Prop_Handle, UInt32 Prop_HRESULT, UInt32 Prop_UINT)		POOM	task_0	Error		
+Microsoft-Windows-UserDataAccess-Poom	2003	0	task_02003(UInt32 Prop_Handle, UInt32 Prop_HRESULT)		POOM	task_0	Error		
+Microsoft-Windows-UserDataAccess-Poom	2008	0	task_02008()		POOM	task_0	Informational		
+Microsoft-Windows-UserDataAccess-Poom	2009	0	task_02009(UInt32 Prop_UInt32)		POOM	task_0	Informational		
+Microsoft-Windows-UserDataAccess-Poom	2010	0	task_02010(UInt32 Prop_UInt32)		POOM	task_0	Informational		
+Microsoft-Windows-UserDataAccess-Poom	2011	0	task_02011(UInt32 Prop_Handle, UInt32 Prop_HRESULT, UInt32 Prop_UINT)		POOM	task_0	Informational		
+Microsoft-Windows-UserDataAccess-Poom	2012	0	task_02012(UInt32 Prop_Handle, UInt32 Prop_HRESULT, UInt32 Prop_UINT)		POOM	task_0	Error		
+Microsoft-Windows-UserDataAccess-Poom	2013	0	task_02013(UInt32 Prop_UInt32)		POOM	task_0	Error		
+Microsoft-Windows-UserDataAccess-Poom	2014	0	task_02014(HexInt32 Prop_HexInt1, Boolean Prop_Bool, HexInt32 Prop_HexInt2, HexInt32 Prop_HexInt3)		POOM	task_0	Error		
+Microsoft-Windows-UserDataAccess-Poom	2015	0	task_02015()		POOM	task_0	Warning		
+Microsoft-Windows-UserDataAccess-Poom	2016	0	task_02016(UInt32 P1_UInt32, UnicodeString P2_String, UInt32 P3_UInt32)		POOM	task_0	Informational		
+Microsoft-Windows-UserDataAccess-Poom	2017	0	task_02017(UInt32 P1_UInt32, UnicodeString P2_String, UInt32 P3_UInt32, UInt32 P4_UInt32)		POOM	task_0	Informational		
+Microsoft-Windows-UserDataAccess-Poom	2018	0	task_02018(UInt32 Prop_UInt32, UInt32 Prop_Hex_UInt32)		POOM	task_0	Informational		
+Microsoft-Windows-UserDataAccess-Poom	2019	0	task_02019(HexInt32 P1_HexInt, UnicodeString P2_UnicodeString, UnicodeString P3_UnicodeString)		POOM	task_0	Informational		
+Microsoft-Windows-UserDataAccess-Poom	2020	0	task_02020(UInt32 Prop_UInt32)		POOM	task_0	Informational		
+Microsoft-Windows-UserDataAccess-Poom	2021	0	task_02021(UInt32 Prop_UInt32)		POOM	task_0	Informational		
+Microsoft-Windows-UserDataAccess-Poom	5000	0	task_05000(UnicodeString Prop_CriticalSection_Name, UInt64 Prop_TimeHeld, UInt32 Prop_ReleaseFunction)		POOM Warning	task_0	Warning		
+Microsoft-Windows-UserDataAccess-Poom	5001	0	task_05001(UInt32 Prop_UInt32, UInt32 Prop_Hex_UInt32)		POOM Warning	task_0	Warning		
+Microsoft-Windows-UserDataAccess-Poom	6000	0	SODA_ActivitySnapshotStart(UInt32 P1_UInt32, UInt32 P2_UInt32, UInt32 P3_UInt32)	Start	Performance	SODA_ActivitySnapshot	Informational		
+Microsoft-Windows-UserDataAccess-Poom	6001	0	SODA_ActivitySnapshotStop(UInt32 P1_UInt32, UInt32 P2_UInt32, UInt32 P3_UInt32)	Stop	Performance	SODA_ActivitySnapshot	Informational		
+Microsoft-Windows-UserDataAccess-Poom	6002	0	SODA_ActivitySnapshot_AggregateFeedStart(UInt32 P1_UInt32, UInt32 P2_UInt32, UInt32 P3_UInt32)	Start	Performance	SODA_ActivitySnapshot_AggregateFeed	Informational		
+Microsoft-Windows-UserDataAccess-Poom	6003	0	SODA_ActivitySnapshot_AggregateFeedStop(UInt32 P1_UInt32, UInt32 P2_UInt32, UInt32 P3_UInt32)	Stop	Performance	SODA_ActivitySnapshot_AggregateFeed	Informational		
+Microsoft-Windows-UserDataAccess-Poom	6004	0	SODA_ActivitySnapshot_MergeFeedStart()	Start	Performance	SODA_ActivitySnapshot_MergeFeed	Informational		
+Microsoft-Windows-UserDataAccess-Poom	6005	0	SODA_ActivitySnapshot_MergeFeedStop()	Stop	Performance	SODA_ActivitySnapshot_MergeFeed	Informational		

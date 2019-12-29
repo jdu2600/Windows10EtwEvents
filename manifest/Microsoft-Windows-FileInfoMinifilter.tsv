@@ -1,0 +1,4 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-FileInfoMinifilter	1	0	fi:FileNameCreate(Pointer FileObject, UInt16 PathLength, UnicodeString Path)		fi:FileNameCreate	fi:FileNameCreate	Informational		
+Microsoft-Windows-FileInfoMinifilter	2	0	fi:FileNameRundown(Pointer FileObject, UInt16 PathLength, UnicodeString Path)		fi:FileNameRundown	fi:FileNameRundown	Informational		
+Microsoft-Windows-FileInfoMinifilter	3	0	fi:FileNameDelete(Pointer FileObject, UInt16 PathLength, UnicodeString Path)		fi:FileNameDelete	fi:FileNameDelete	Informational		

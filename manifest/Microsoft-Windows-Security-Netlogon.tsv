@@ -1,0 +1,11 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Security-Netlogon	4004	0	BlockingNTLM(UnicodeString SChannelName, UnicodeString UserName, UnicodeString DomainName, UnicodeString WorkstationName, UInt32 SChannelType)			BlockingNTLM	Warning		
+Microsoft-Windows-Security-Netlogon	4005	0	BlockingNTLM4005(UnicodeString SChannelName, UnicodeString UserName, UnicodeString DomainName, UnicodeString WorkstationName, UInt32 SChannelType)			BlockingNTLM	Warning		
+Microsoft-Windows-Security-Netlogon	4006	0	BlockingNTLM4006(UnicodeString SChannelName, UnicodeString UserName, UnicodeString DomainName, UnicodeString WorkstationName, UInt32 SChannelType)			BlockingNTLM	Warning		
+Microsoft-Windows-Security-Netlogon	8004	0	AuditingNTLM(UnicodeString SChannelName, UnicodeString UserName, UnicodeString DomainName, UnicodeString WorkstationName, UInt32 SChannelType)			AuditingNTLM	Informational		
+Microsoft-Windows-Security-Netlogon	8005	0	AuditingNTLM8005(UnicodeString SChannelName, UnicodeString UserName, UnicodeString DomainName, UnicodeString WorkstationName, UInt32 SChannelType)			AuditingNTLM	Informational		
+Microsoft-Windows-Security-Netlogon	8006	0	AuditingNTLM8006(UnicodeString SChannelName, UnicodeString UserName, UnicodeString DomainName, UnicodeString WorkstationName, UInt32 SChannelType)			AuditingNTLM	Informational		
+Microsoft-Windows-Security-Netlogon	9000	0	MSA(UnicodeString AccountName, UnicodeString AccountDomain, UInt32 Status)			MSA	Error		
+Microsoft-Windows-Security-Netlogon	9001	0	MSA9001(UnicodeString Account)			MSA	Error		
+Microsoft-Windows-Security-Netlogon	9002	0	MSA9002(UnicodeString Account, UInt32 Status)			MSA	Error		
+Microsoft-Windows-Security-Netlogon	9003	0	MSA9003(UnicodeString Account, UInt32 Status)			MSA	Error		

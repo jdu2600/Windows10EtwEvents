@@ -1,0 +1,11 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Windows-ApplicationModel-Store-SDK	1	0	StorefrontClient(UnicodeString Message, UInt32 LineNumber, UnicodeString FileName, UnicodeString Function, Int32 ErrorCode)		StorefrontClient	StorefrontClient	Error		
+Windows-ApplicationModel-Store-SDK	2	0	StorefrontClient_2(UnicodeString Message, UInt32 LineNumber, UnicodeString FileName, UnicodeString Function, UnicodeString ExceptionDetails)		StorefrontClient	StorefrontClient_2	Warning		
+Windows-ApplicationModel-Store-SDK	3	0	StorefrontClient_3(UnicodeString Message, UInt32 LineNumber, UnicodeString FileName, UnicodeString MemberName)		StorefrontClient	StorefrontClient_3	Warning		
+Windows-ApplicationModel-Store-SDK	4	0	StorefrontClient_4(UnicodeString Message, UInt32 LineNumber, UnicodeString FileName, UnicodeString MemberName)		StorefrontClient	StorefrontClient_4	Informational		
+Windows-ApplicationModel-Store-SDK	5	0	StorefrontClient_5(UnicodeString Message, UInt32 LineNumber, UnicodeString FileName, UnicodeString MemberName)		StorefrontClient	StorefrontClient_5	Verbose		
+Windows-ApplicationModel-Store-SDK	2000	0	StoreSDKModuleLoaded(UnicodeString ProcessName, UnicodeString ModuleName, UnicodeString BuildName)		Messages	StoreSDKModuleLoaded	Informational		
+Windows-ApplicationModel-Store-SDK	2001	0	In_AppPurchaseVerbose(UnicodeString Message, AnsiString Function, Int32 ErrorCode, AnsiString Source, UInt32 LineNumber)	Verbose	Messages	In_AppPurchase	Informational		
+Windows-ApplicationModel-Store-SDK	2002	0	In_AppPurchaseInfo(UnicodeString Message, AnsiString Function, Int32 ErrorCode, AnsiString Source, UInt32 LineNumber)	Info	Messages	In_AppPurchase	Informational		
+Windows-ApplicationModel-Store-SDK	2003	0	In_AppPurchaseWarning(UnicodeString Message, AnsiString Function, Int32 ErrorCode, AnsiString Source, UInt32 LineNumber)	Warning	Messages	In_AppPurchase	Warning		
+Windows-ApplicationModel-Store-SDK	2004	0	In_AppPurchaseError(UnicodeString Message, AnsiString Function, Int32 ErrorCode, AnsiString Source, UInt32 LineNumber)	Error	Messages	In_AppPurchase	Error		

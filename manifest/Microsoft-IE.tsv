@@ -1,0 +1,665 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-IE	1	0	Mshtml_CDoc_OnPaintStart(Pointer DOC, Pointer Markup, Int32 left, Int32 top, Int32 right, Int32 bottom)	Start	primarynav pageloadbreakdown	Mshtml_CDoc_OnPaint	Always		
+Microsoft-IE	1	1	Mshtml_CDoc_OnPaintStart_V1(Pointer DOC, Pointer Markup, Int32 left, Int32 top, Int32 right, Int32 bottom, UInt64 EventContextId)	Start	primarynav pageloadbreakdown	Mshtml_CDoc_OnPaint	Always		
+Microsoft-IE	2	0	Mshtml_CDoc_OnPaintStop(Pointer HWND, UInt32 Flags)	Stop	primarynav pageloadbreakdown	Mshtml_CDoc_OnPaint	Always		
+Microsoft-IE	2	1	Mshtml_CDoc_OnPaintStop_V1(Pointer HWND, UInt32 Flags, UInt64 EventContextId)	Stop	primarynav pageloadbreakdown	Mshtml_CDoc_OnPaint	Always		
+Microsoft-IE	3	0	Mshtml_CMarkup_LayoutStart(Pointer View, UInt32 grfLAYOUT)	Start	primarynav pageloadbreakdown	Mshtml_CMarkup_Layout	Always		
+Microsoft-IE	3	1	Mshtml_CMarkup_LayoutStart_V1(Pointer View, UInt32 grfLAYOUT, UInt64 EventContextId)	Start	primarynav pageloadbreakdown	Mshtml_CMarkup_Layout	Always		
+Microsoft-IE	4	0	Mshtml_CMarkup_LayoutStop(Pointer DOC, UInt32 Flags)	Stop	primarynav pageloadbreakdown	Mshtml_CMarkup_Layout	Always		
+Microsoft-IE	4	1	Mshtml_CMarkup_LayoutStop_V1(Pointer DOC, UInt32 Flags, UInt64 EventContextId)	Stop	primarynav pageloadbreakdown	Mshtml_CMarkup_Layout	Always		
+Microsoft-IE	5	0	Mshtml_CMarkup_BackgroundLayout(UnicodeString AddressName)		primarynav	Mshtml_CMarkup_BackgroundLayout	Always		
+Microsoft-IE	6	0	Mshtml_CMarkup_OnLoadStatusDone(UnicodeString AddressName)		primarynav pageloadbreakdown	Mshtml_CMarkup_OnLoadStatusDone	Always		
+Microsoft-IE	7	0	Mshtml_CMarkup_DOMContentLoadedEvent_Start(UnicodeString AddressName)	Start	primarynav pageloadbreakdown	Mshtml_CMarkup_DOMContentLoadedEvent_Start	Always		
+Microsoft-IE	7	1	Mshtml_CMarkup_DOMContentLoadedEvent_Start_V1(UnicodeString AddressName, UInt64 EventContextId)	Start	primarynav pageloadbreakdown	Mshtml_CMarkup_DOMContentLoadedEvent_Start	Always		
+Microsoft-IE	8	0	Mshtml_CMarkup_DOMContentLoadedEvent_Stop(UnicodeString AddressName)	Stop	primarynav pageloadbreakdown	Mshtml_CMarkup_DOMContentLoadedEvent_Stop	Always		
+Microsoft-IE	8	1	Mshtml_CMarkup_DOMContentLoadedEvent_Stop_V1(UnicodeString AddressName, UInt64 EventContextId)	Stop	primarynav pageloadbreakdown	Mshtml_CMarkup_DOMContentLoadedEvent_Stop	Always		
+Microsoft-IE	9	0	Mshtml_CMarkup_LoadEvent_Start(UnicodeString AddressName)	Start	primarynav pageloadbreakdown	Mshtml_CMarkup_LoadEvent_Start	Always		
+Microsoft-IE	9	1	Mshtml_CMarkup_LoadEvent_Start_V1(UnicodeString AddressName, UInt64 EventContextId)	Start	primarynav pageloadbreakdown	Mshtml_CMarkup_LoadEvent_Start	Always		
+Microsoft-IE	10	0	Mshtml_CMarkup_LoadEvent_Stop(UnicodeString AddressName)	Stop	primarynav pageloadbreakdown	Mshtml_CMarkup_LoadEvent_Stop	Always		
+Microsoft-IE	10	1	Mshtml_CMarkup_LoadEvent_Stop_V1(UnicodeString AddressName, UInt64 EventContextId)	Stop	primarynav pageloadbreakdown	Mshtml_CMarkup_LoadEvent_Stop	Always		
+Microsoft-IE	32	0	Mshtml_CFormElement_DoSubmit(UnicodeString AddressName)		primarynav	Mshtml_CFormElement_DoSubmit	Always		
+Microsoft-IE	33	0	Mshtml_CDoc_ExecuteScriptURL(UnicodeString AddressName)		primarynav	Mshtml_CDoc_ExecuteScriptURL	Always		
+Microsoft-IE	34	0	AntiPhishing_EvaluateStart(Pointer ThisPtr, UnicodeString URL)	Start	primarynav ap	AntiPhishing_Evaluate	Always		
+Microsoft-IE	35	0	AntiPhishing_EvaluateStop(Pointer ThisPtr, UnicodeString URL)	Stop	primarynav ap	AntiPhishing_Evaluate	Always		
+Microsoft-IE	36	0	AntiPhishing_ProcessingComplete(Pointer ThisPtr, UInt32 PCL)		primarynav ap	AntiPhishing_ProcessingComplete	Always		
+Microsoft-IE	37	0	Mshtml_CDwnBindData_OnProgressStart(UInt32 dwCode, UInt32 dwPos, UInt32 dwMax, UnicodeString Text)	Start	primarynav	Mshtml_CDwnBindData_OnProgress	Always		
+Microsoft-IE	38	0	Mshtml_CDwnBindData_OnProgressStop(Pointer DOC, UInt32 dwCode)	Stop	primarynav	Mshtml_CDwnBindData_OnProgress	Always		
+Microsoft-IE	39	0	Mshtml_CDwnBindData_BindStart(UInt32 Flags, UnicodeString Text)	Start	primarynav	Mshtml_CDwnBindData_Bind	Always		
+Microsoft-IE	40	0	Mshtml_CDwnBindData_BindStop(UInt32 dwCode, UInt32 dwPos, UInt32 dwMax, UnicodeString Text)	Stop	primarynav	Mshtml_CDwnBindData_Bind	Always		
+Microsoft-IE	41	0	Mshtml_CHtmPre_Suspend(Pointer DOC, UnicodeString HtmlTag)		primarynav	Mshtml_CHtmPre_Suspend	Always		
+Microsoft-IE	42	0	Mshtml_CHtmPre_SpeculativeRejected(Pointer DOC, UnicodeString HtmlTag)		primarynav	Mshtml_CHtmPre_SpeculativeRejected	Always		
+Microsoft-IE	43	0	Mshtml_CHtmPre_ScriptStart(Pointer DOC, UInt32 Length, UnicodeString SRC)		primarynav	Mshtml_CHtmPre_ScriptStart	Always		
+Microsoft-IE	44	0	Mshtml_HtmPost_PostManKillTimer(UInt32 dw, Pointer HWND)		subsystem mshtml	Mshtml_HtmPost_PostManKillTimer	Always		
+Microsoft-IE	45	0	Mshtml_HtmPost_PostManSetTimer(UInt32 dw, Pointer HWND)		subsystem mshtml	Mshtml_HtmPost_PostManSetTimer	Always		
+Microsoft-IE	46	0	Mshtml_HtmPost_PostManOnTimerStart(UInt32 cPts, Pointer HWND)	Start	subsystem mshtml pageloadbreakdown	Mshtml_HtmPost_PostManOnTimer	Always		
+Microsoft-IE	47	0	Mshtml_HtmPost_PostManOnTimerStop(UInt32 cPts, Pointer HWND)	Stop	subsystem mshtml pageloadbreakdown	Mshtml_HtmPost_PostManOnTimer	Always		
+Microsoft-IE	48	0	Mshtml_HtmPost_SetFlag(Pointer HTMPOST, UInt32 Flags, UInt32 Line, UInt32 Offset)		subsystem mshtml	Mshtml_HtmPost_SetFlag	Always		
+Microsoft-IE	49	0	Mshtml_HtmPost_ClearFlag(Pointer HTMPOST, UInt32 Flags, UInt32 Line, UInt32 Offset)		subsystem mshtml	Mshtml_HtmPost_ClearFlag	Always		
+Microsoft-IE	50	0	Mshtml_HtmPost_AbandonTimeslice(Pointer HTMPOST, UInt32 OneExec2PT3ST4Run)		subsystem mshtml	Mshtml_HtmPost_AbandonTimeslice	Always		
+Microsoft-IE	51	0	Mshtml_HtmPost_YieldToPreparserStart(Pointer HTMPOST, UInt32 Zero)	Start	subsystem mshtml	Mshtml_HtmPost_YieldToPreparser	Always		
+Microsoft-IE	52	0	Mshtml_HtmPost_YieldToPreparserStop(Pointer HTMPOST, UInt32 Zero)	Stop	subsystem mshtml	Mshtml_HtmPost_YieldToPreparser	Always		
+Microsoft-IE	53	0	Mshtml_HtmPost_OnPostDone(Pointer HTMPOST, UInt32 Error)		subsystem mshtml	Mshtml_HtmPost_OnPostDone	Always		
+Microsoft-IE	54	0	Mshtml_CScriptElement_CommitCode(UInt32 Length, UnicodeString Script, Boolean IsInline)		primarynav	Mshtml_CScriptElement_CommitCode	Always		
+Microsoft-IE	55	0	Mshtml_CHtmRootParseCtx_ElementsAdded(UInt32 SourceIndex, UInt32 NumElemsAdded)		subsystem	Mshtml_CHtmRootParseCtx_ElementsAdded	Always		
+Microsoft-IE	56	0	Mshtml_CMarkup_InvalDoc(Pointer Markup)		subsystem	Mshtml_CMarkup_InvalDoc	Always		
+Microsoft-IE	57	0	Mshtml_NotifyGoesInteractiveStart(Pointer Markup)	Start	subsystem mshtml	Mshtml_NotifyGoesInteractive	Always		
+Microsoft-IE	58	0	Mshtml_NotifyGoesInteractiveStop(Pointer Markup)	Stop	subsystem mshtml	Mshtml_NotifyGoesInteractive	Always		
+Microsoft-IE	59	0	Mshtml_CMarkup_SwitchMarkupStart(Pointer Markup, UInt32 Zero)	Start	subsystem pageloadbreakdown	Mshtml_CMarkup_SwitchMarkup	Always		
+Microsoft-IE	60	0	Mshtml_CMarkup_SwitchMarkupStop(Pointer Markup, UInt32 HR)	Stop	subsystem pageloadbreakdown	Mshtml_CMarkup_SwitchMarkup	Always		
+Microsoft-IE	61	0	Mshtml_CMarkup_UnloadContentsStart(Pointer Markup)	Start	subsystem pageloadbreakdown	Mshtml_CMarkup_UnloadContents	Always		
+Microsoft-IE	62	0	Mshtml_CMarkup_UnloadContentsStop(Pointer Markup, UInt32 HR)	Stop	subsystem pageloadbreakdown	Mshtml_CMarkup_UnloadContents	Always		
+Microsoft-IE	63	0	Mshtml_InitImageSizeCacheStart(Pointer Zero2, UInt32 Zero1)	Start	subsystem mshtml	Mshtml_InitImageSizeCache	Always		
+Microsoft-IE	64	0	Mshtml_InitImageSizeCacheStop(Pointer Zero2, UInt32 Zero1)	Stop	subsystem mshtml	Mshtml_InitImageSizeCache	Always		
+Microsoft-IE	65	0	Mshtml_CDoc_Running2InplaceInvalDoc(Pointer CDoc)		subsystem	Mshtml_CDoc_Running2InplaceInvalDoc	Always		
+Microsoft-IE	66	0	Mshtml_CView_InvalidateRect(Pointer CView, UInt32 fSynchronousRedraw, UInt32 left, UInt32 top, UInt32 right, UInt32 bottom, UInt32 fInvalChildWindows, UInt32 fPostRender)		subsystem	Mshtml_CView_InvalidateRect	Always		
+Microsoft-IE	67	0	Mshtml_CView_InvalidateRgn(Pointer CView, UInt32 fSynchronousRedraw, UInt32 left, UInt32 top, UInt32 right, UInt32 bottom, UInt32 fInvalChildWindows, UInt32 fPostRender)		subsystem	Mshtml_CView_InvalidateRgn	Always		
+Microsoft-IE	68	0	Mshtml_CDoc_Invalidate(UInt32 HRGN, UInt32 dwFlags, UInt32 left, UInt32 top, UInt32 right, UInt32 bottom, UInt32 NoUpdSink)		subsystem	Mshtml_CDoc_Invalidate	Always		
+Microsoft-IE	69	0	Mshtml_CHTMLoad_Write(UInt32 fParseNow, UInt32 Length, UnicodeString Script)		primarynav	Mshtml_CHTMLoad_Write	Always		
+Microsoft-IE	70	0	Mshtml_CWindow_SuperNavigate2Start(Pointer window, UInt32 FlagsOrResult)	Start	primarynav	Mshtml_CWindow_SuperNavigate2	Always		
+Microsoft-IE	71	0	Mshtml_CWindow_SuperNavigate2Stop(Pointer window, UInt32 FlagsOrResult)	Stop	primarynav	Mshtml_CWindow_SuperNavigate2	Always		
+Microsoft-IE	72	0	Mshtml_CImgHelper_RequestLayout(UInt32 zero, UInt32 zero1)		primarynav	Mshtml_CImgHelper_RequestLayout	Always		
+Microsoft-IE	73	0	Mshtml_HtmPre_RunStart(Pointer CHtmPrePtr, UInt64 Object)	Start	primarynav mshtml pageloadbreakdown	Mshtml_HtmPre_Run	Always		
+Microsoft-IE	74	0	Mshtml_HtmPre_RunStop(UInt32 HR, Pointer CHtmPrePtr, UInt32 fDataPend, UInt32 fSuspended, UInt64 Object)	Stop	primarynav mshtml pageloadbreakdown	Mshtml_HtmPre_Run	Always		
+Microsoft-IE	75	0	Mshtml_CImgTaskExecStart(Pointer CImgTaskPtr, UInt32 Flags)	Start	primarynav	Mshtml_CImgTaskExec	Always		
+Microsoft-IE	76	0	Mshtml_CImgTaskExecStop(Pointer CImgTaskPtr, UInt32 Flags)	Stop	primarynav	Mshtml_CImgTaskExec	Always		
+Microsoft-IE	77	0	Mshtml_CImgTask_ReadYieldStart(Pointer CImgTaskPtr, UInt32 cbRead)	Start	primarynav	Mshtml_CImgTask_ReadYield	Always		
+Microsoft-IE	78	0	Mshtml_CImgTask_ReadYieldStop(Pointer CImgTaskPtr, UInt32 cbRead)	Stop	primarynav	Mshtml_CImgTask_ReadYield	Always		
+Microsoft-IE	79	0	Mshtml_CDwnTaskExec_ThreadExecBail(Pointer CDwnTaskPtr, UInt32 Zero)		primarynav	Mshtml_CDwnTaskExec_ThreadExecBail	Always		
+Microsoft-IE	80	0	Mshtml_CDwnTaskExec_ThreadExecRunStart(Pointer CDwnTaskPtr, UInt32 Zero)	Start	primarynav	Mshtml_CDwnTaskExec_ThreadExecRun	Always		
+Microsoft-IE	81	0	Mshtml_CDwnTaskExec_ThreadExecRunStop(Pointer CDwnTaskPtr, UInt32 Zero)	Stop	primarynav	Mshtml_CDwnTaskExec_ThreadExecRun	Always		
+Microsoft-IE	82	0	Mshtml_CWindow_ScriptStart(Pointer CDoc, UInt32 Nesting)	Start	primarynav pageloadbreakdown	Mshtml_CWindow_Script	Always		
+Microsoft-IE	83	0	Mshtml_CWindow_ScriptStop(Pointer CDoc, UInt32 Nesting)	Stop	primarynav pageloadbreakdown	Mshtml_CWindow_Script	Always		
+Microsoft-IE	84	0	Mshtml_CWindow_CommitCodeLightStart(Pointer CDoc)	Start	primarynav pageloadbreakdown	Mshtml_CWindow_CommitCodeLight	Always		
+Microsoft-IE	84	1	Mshtml_CWindow_CommitCodeLightStart_V1(Pointer CDoc, UInt64 EventContextId)	Start	primarynav pageloadbreakdown	Mshtml_CWindow_CommitCodeLight	Always		
+Microsoft-IE	85	0	Mshtml_CWindow_CommitCodeLightStop(Pointer CDoc, UInt32 HR)	Stop	primarynav pageloadbreakdown	Mshtml_CWindow_CommitCodeLight	Always		
+Microsoft-IE	85	1	Mshtml_CWindow_CommitCodeLightStop_V1(Pointer CDoc, UInt32 HR, UInt64 EventContextId)	Stop	primarynav pageloadbreakdown	Mshtml_CWindow_CommitCodeLight	Always		
+Microsoft-IE	86	0	Mshtml_HtmPost_PostManExecuteStart(Pointer PtrIn, UInt32 dwTimeout)	Start	primarynav mshtml pageloadbreakdown	Mshtml_HtmPost_PostManExecute	Always		
+Microsoft-IE	87	0	Mshtml_HtmPost_PostManExecuteStop(Pointer PtrOut, UInt32 ExitCode)	Stop	primarynav mshtml pageloadbreakdown	Mshtml_HtmPost_PostManExecute	Always		
+Microsoft-IE	88	0	Mshtml_HtmPost_ExecStart(Pointer PtrIn, UInt32 dwTimeout, UInt64 Object)	Start	primarynav mshtml pageloadbreakdown	Mshtml_HtmPost_Exec	Always		
+Microsoft-IE	88	1	Mshtml_HtmPost_ExecStart_V1(Pointer PtrIn, UInt32 dwTimeout, UInt64 Object, UInt64 EventContextId)	Start	primarynav mshtml pageloadbreakdown	Mshtml_HtmPost_Exec	Always		
+Microsoft-IE	89	0	Mshtml_HtmPost_ExecStop(Pointer PtrOut, UInt32 ExitCode, UInt64 Object)	Stop	primarynav mshtml pageloadbreakdown	Mshtml_HtmPost_Exec	Always		
+Microsoft-IE	89	1	Mshtml_HtmPost_ExecStop_V1(Pointer PtrOut, UInt32 ExitCode, UInt64 Object, UInt64 EventContextId)	Stop	primarynav mshtml pageloadbreakdown	Mshtml_HtmPost_Exec	Always		
+Microsoft-IE	90	0	Mshtml_CImgTask_Init(Pointer CImgTaskPtr, UnicodeString URL)		primarynav	Mshtml_CImgTask_Init	Always		
+Microsoft-IE	91	0	Mshtml_OnQuiescence()		primarynav mshtml	Mshtml_OnQuiescence	Always		
+Microsoft-IE	92	0	Mshtml_OffscreenBufferCreated(Pointer Buffer, UInt32 Depth, UInt32 Width, UInt32 Height)		primarynav mshtml	Mshtml_OffscreenBufferCreated	Always		
+Microsoft-IE	100	0	Mshtml_CDoc_PaintRect(UInt32 left, UInt32 top, UInt32 right, UInt32 bottom)		subsystem	Mshtml_CDoc_PaintRect	Always		
+Microsoft-IE	101	0	Mshtml_CElement_HandleMouseHoverForStyleStart(Pointer Object)	Start	subsystem	Mshtml_CElement_HandleMouseHoverForStyle	Always		
+Microsoft-IE	102	0	Mshtml_CElement_HandleMouseHoverForStyleStop(Pointer Object)	Stop	subsystem	Mshtml_CElement_HandleMouseHoverForStyle	Always		
+Microsoft-IE	103	0	Mshtml_CStorage_GetItemStart(Pointer Storage, UnicodeString Key)	Start	subsystem	Mshtml_CStorage_GetItem	Always		
+Microsoft-IE	104	0	Mshtml_CStorage_GetItemStop(Pointer Storage, UnicodeString Key)	Stop	subsystem	Mshtml_CStorage_GetItem	Always		
+Microsoft-IE	105	0	Mshtml_CStorage_SetItemStart(Pointer Storage, UnicodeString Key)	Start	subsystem	Mshtml_CStorage_SetItem	Always		
+Microsoft-IE	106	0	Mshtml_CStorage_SetItemStop(Pointer Storage, UnicodeString Key)	Stop	subsystem	Mshtml_CStorage_SetItem	Always		
+Microsoft-IE	107	0	Mshtml_CStorage_RemoveItemStart(Pointer Storage, UnicodeString Key)	Start	subsystem	Mshtml_CStorage_RemoveItem	Always		
+Microsoft-IE	108	0	Mshtml_CStorage_RemoveItemStop(Pointer Storage, UnicodeString Key)	Stop	subsystem	Mshtml_CStorage_RemoveItem	Always		
+Microsoft-IE	109	0	Mshtml_CStorageHelper_CommitToDiskStart(Pointer StorageHelper, UnicodeString Domain)	Start	subsystem	Mshtml_CStorageHelper_CommitToDisk	Always		
+Microsoft-IE	110	0	Mshtml_CStorageHelper_CommitToDiskStop(Pointer StorageHelper, UnicodeString Domain)	Stop	subsystem	Mshtml_CStorageHelper_CommitToDisk	Always		
+Microsoft-IE	111	0	Mshtml_CStorageHelper_MergeFromDiskStart(Pointer StorageHelper, UnicodeString Domain)	Start	subsystem	Mshtml_CStorageHelper_MergeFromDisk	Always		
+Microsoft-IE	112	0	Mshtml_CStorageHelper_MergeFromDiskStop(Pointer StorageHelper, UnicodeString Domain)	Stop	subsystem	Mshtml_CStorageHelper_MergeFromDisk	Always		
+Microsoft-IE	113	0	Mshtml_CStorageListHelper_LoadStart(Pointer StorageListHelper)	Start	subsystem	Mshtml_CStorageListHelper_Load	Always		
+Microsoft-IE	114	0	Mshtml_CStorageListHelper_LoadStop(Pointer StorageListHelper)	Stop	subsystem	Mshtml_CStorageListHelper_Load	Always		
+Microsoft-IE	115	0	Mshtml_CStorageListHelper_SaveStart(Pointer StorageListHelper)	Start	subsystem	Mshtml_CStorageListHelper_Save	Always		
+Microsoft-IE	116	0	Mshtml_CStorageListHelper_SaveStop(Pointer StorageListHelper)	Stop	subsystem	Mshtml_CStorageListHelper_Save	Always		
+Microsoft-IE	117	0	Mshtml_DOM_Marshalling_GetDispIDStart(Pointer Thunk, UInt32 GrfDex, UInt32 Zero1, UInt32 Zero2)	Start	marshalling	Mshtml_DOM_Marshalling_GetDispID	Always		
+Microsoft-IE	118	0	Mshtml_DOM_Marshalling_GetDispIDStop(Pointer Thunk, UInt32 hr, UInt32 DispID, UInt32 Versioned)	Stop	marshalling	Mshtml_DOM_Marshalling_GetDispID	Always		
+Microsoft-IE	119	0	Mshtml_DOM_Marshalling_InvokeExStart(Pointer Thunk, UInt32 DispID)	Start	marshalling	Mshtml_DOM_Marshalling_InvokeEx	Always		
+Microsoft-IE	120	0	Mshtml_DOM_Marshalling_InvokeExStop(Pointer Thunk, UInt32 DispID, UInt32 Derived, UInt32 hr)	Stop	marshalling	Mshtml_DOM_Marshalling_InvokeEx	Always		
+Microsoft-IE	121	0	Mshtml_DOM_Marshalling_NativeStart(Pointer VTable, UInt32 MethodType)	Start	marshalling	Mshtml_DOM_Marshalling_Native	Always		
+Microsoft-IE	122	0	Mshtml_DOM_Marshalling_NativeStop(Pointer Instance, UInt32 OptionalArgs)	Stop	marshalling	Mshtml_DOM_Marshalling_Native	Always		
+Microsoft-IE	123	0	Mshtml_CSS_ParserStart(Pointer Parser, UInt32 ParserType)	Start	subsystem mshtml	Mshtml_CSS_Parser	Always		
+Microsoft-IE	123	1	Mshtml_CSS_ParserStart_V1(Pointer Parser, UInt32 ParserType, UInt32 ParseType, UnicodeString URL, Boolean IsInline)	Start	subsystem mshtml	Mshtml_CSS_Parser	Always		
+Microsoft-IE	123	2	Mshtml_CSS_ParserStart_V2(Pointer Parser, UInt32 ParserType, UInt32 ParseType, UnicodeString URL, Boolean IsInline, UInt64 EventContextId)	Start	subsystem mshtml	Mshtml_CSS_Parser	Always		
+Microsoft-IE	124	0	Mshtml_CSS_ParserStop(Pointer Parser, UInt32 ParserType)	Stop	subsystem mshtml	Mshtml_CSS_Parser	Always		
+Microsoft-IE	124	1	Mshtml_CSS_ParserStop_V1(Pointer Parser, UInt32 ParserType, UInt32 ParseType, UnicodeString URL, Boolean IsInline)	Stop	subsystem mshtml	Mshtml_CSS_Parser	Always		
+Microsoft-IE	124	2	Mshtml_CSS_ParserStop_V2(Pointer Parser, UInt32 ParserType, UInt32 ParseType, UnicodeString URL, Boolean IsInline, UInt64 EventContextId)	Stop	subsystem mshtml	Mshtml_CSS_Parser	Always		
+Microsoft-IE	125	0	Mshtml_FormatCalculation_ComputeFormatsStart(Pointer TreeNode, UInt32 NodeType)	Start	verbose	Mshtml_FormatCalculation_ComputeFormats	Always		
+Microsoft-IE	125	1	Mshtml_FormatCalculation_ComputeFormatsStart_V1(Pointer TreeNode, UInt32 NodeType, UInt64 EventContextId)	Start	verbose	Mshtml_FormatCalculation_ComputeFormats	Always		
+Microsoft-IE	126	0	Mshtml_FormatCalculation_ComputeFormatsStop(Pointer TreeNode, UInt32 NodeType)	Stop	verbose	Mshtml_FormatCalculation_ComputeFormats	Always		
+Microsoft-IE	126	1	Mshtml_FormatCalculation_ComputeFormatsStop_V1(Pointer TreeNode, UInt32 NodeType, UInt64 EventContextId)	Stop	verbose	Mshtml_FormatCalculation_ComputeFormats	Always		
+Microsoft-IE	127	0	JScript_GCStart(Pointer Element, UInt32 Zero)	Start	jscript	JScript_GC	Always		
+Microsoft-IE	128	0	JScript_GCStop(Pointer Element, UInt32 Zero)	Stop	jscript	JScript_GC	Always		
+Microsoft-IE	129	0	JScript_ParseStart(Pointer Element, UInt32 Zero)	Start	jscript	JScript_Parse	Always		
+Microsoft-IE	130	0	JScript_ParseStop(Pointer Element, UInt32 Zero)	Stop	jscript	JScript_Parse	Always		
+Microsoft-IE	131	0	JScript_RunStart(Pointer Element, UInt32 Zero)	Start	jscript_verbose pageloadbreakdown	JScript_Run	Always		
+Microsoft-IE	132	0	JScript_RunStop(Pointer Element, UInt32 Zero)	Stop	jscript_verbose pageloadbreakdown	JScript_Run	Always		
+Microsoft-IE	133	0	Mshtml_Collections_EnsureAryStart(Pointer Cache, UInt32 Index)	Start	verbose	Mshtml_Collections_EnsureAry	Always		
+Microsoft-IE	134	0	Mshtml_Collections_EnsureAryStop(Pointer Cache, UInt32 Index)	Stop	verbose	Mshtml_Collections_EnsureAry	Always		
+Microsoft-IE	135	0	Mshtml_DOM_ExpandoStart(Pointer Cache, UInt32 Index)	Start	marshalling	Mshtml_DOM_Expando	Always		
+Microsoft-IE	136	0	Mshtml_DOM_ExpandoStop(Pointer Cache, UInt32 Index)	Stop	marshalling	Mshtml_DOM_Expando	Always		
+Microsoft-IE	137	0	Mshtml_View_RenderViewStart(Pointer View)	Start	subsystem mshtml pageloadbreakdown	Mshtml_View_RenderView	Always		
+Microsoft-IE	138	0	Mshtml_View_RenderViewStop(Pointer View, UInt32 Exit)	Stop	subsystem mshtml pageloadbreakdown	Mshtml_View_RenderView	Always		
+Microsoft-IE	139	0	Mshtml_View_OnViewQ(Pointer View)		mshtml	Mshtml_View_OnViewQ	Always		
+Microsoft-IE	140	0	Mshtml_View_OnViewD(Pointer View)		mshtml	Mshtml_View_OnViewD	Always		
+Microsoft-IE	141	0	Mshtml_PrivacIE_BlockUrlStart(UnicodeString URL)	Start	subsystem privacie	Mshtml_PrivacIE_BlockUrl	Always		
+Microsoft-IE	142	0	Mshtml_PrivacIE_BlockUrlStop(UnicodeString URL)	Stop	subsystem privacie	Mshtml_PrivacIE_BlockUrl	Always		
+Microsoft-IE	143	0	Mshtml_PrivacIE_AddUrlToDBStart(UnicodeString URL)	Start	subsystem privacie	Mshtml_PrivacIE_AddUrlToDB	Always		
+Microsoft-IE	144	0	Mshtml_PrivacIE_AddUrlToDBStop(UnicodeString URL)	Stop	subsystem privacie	Mshtml_PrivacIE_AddUrlToDB	Always		
+Microsoft-IE	145	0	Mshtml_PrivacIE_AddToUserListStart(Pointer Storage, UnicodeString Key)	Start	subsystem privacie	Mshtml_PrivacIE_AddToUserList	Always		
+Microsoft-IE	146	0	Mshtml_PrivacIE_AddToUserListStop(Pointer Storage, UnicodeString Key)	Stop	subsystem privacie	Mshtml_PrivacIE_AddToUserList	Always		
+Microsoft-IE	147	0	Mshtml_PrivacIE_AddWebFilterStart(Pointer Storage, UnicodeString Key)	Start	subsystem privacie	Mshtml_PrivacIE_AddWebFilter	Always		
+Microsoft-IE	148	0	Mshtml_PrivacIE_AddWebFilterStop(Pointer Storage, UnicodeString Key)	Stop	subsystem privacie	Mshtml_PrivacIE_AddWebFilter	Always		
+Microsoft-IE	150	0	Mshtml_DOM_CustomSiteEvent(Pointer CWindow, Pointer Markup, UnicodeString EventName)		extended mshtml pagemark	Mshtml_DOM_CustomSiteEvent	Always		
+Microsoft-IE	151	0	Mshtml_Ole_OleLayout_DrawStart(Pointer COleSite, GUID CLSID, UInt32 left, UInt32 top, UInt32 right, UInt32 bottom)	Start	extended mshtml	Mshtml_Ole_OleLayout_Draw	Always		
+Microsoft-IE	152	0	Mshtml_Ole_OleLayout_DrawStop()	Stop	extended mshtml	Mshtml_Ole_OleLayout_Draw	Always		
+Microsoft-IE	153	0	Mshtml_ScrollEvent()		extended mshtml	Mshtml_ScrollEvent	Always		
+Microsoft-IE	154	0	Mshtml_ZoomEvent()		extended mshtml	Mshtml_ZoomEvent	Always		
+Microsoft-IE	155	0	Mshtml_PrintPreviewStart()	Start	extended mshtml	Mshtml_PrintPreview	Always		
+Microsoft-IE	156	0	Mshtml_PrintPreviewStop()	Stop	extended mshtml	Mshtml_PrintPreview	Always		
+Microsoft-IE	157	0	Mshtml_CWindow_ExecScriptStart(Pointer CDoc, UInt32 Nesting)	Start	primarynav mshtml	Mshtml_CWindow_ExecScript	Always		
+Microsoft-IE	158	0	Mshtml_CWindow_ExecScriptStop(Pointer CDoc, UInt32 Nesting)	Stop	primarynav mshtml	Mshtml_CWindow_ExecScript	Always		
+Microsoft-IE	159	0	Mshtml_CssLayout_BuildBlocksStart()	Start	extended mshtml	Mshtml_CssLayout_BuildBlocks	Always		
+Microsoft-IE	160	0	Mshtml_CssLayout_BuildBlocksStop()	Stop	extended mshtml	Mshtml_CssLayout_BuildBlocks	Always		
+Microsoft-IE	161	0	Mshtml_CssLayout_BuildLayoutStart()	Start	extended mshtml	Mshtml_CssLayout_BuildLayout	Always		
+Microsoft-IE	162	0	Mshtml_CssLayout_BuildLayoutStop()	Stop	extended mshtml	Mshtml_CssLayout_BuildLayout	Always		
+Microsoft-IE	163	0	Mshtml_CssLayout_BuildDisplayStart()	Start	verbose	Mshtml_CssLayout_BuildDisplay	Always		
+Microsoft-IE	164	0	Mshtml_CssLayout_BuildDisplayStop()	Stop	verbose	Mshtml_CssLayout_BuildDisplay	Always		
+Microsoft-IE	165	0	Mshtml_XmlPre_RunStart(Pointer CXmlPrePtr)	Start	primarynav mshtml	Mshtml_XmlPre_Run	Always		
+Microsoft-IE	166	0	Mshtml_XmlPre_RunStop(UInt32 HR, Pointer CXmlPrePtr, UInt32 fDataPend, UInt32 fSuspended)	Stop	primarynav mshtml	Mshtml_XmlPre_Run	Always		
+Microsoft-IE	167	0	Mshtml_Render_Present(UInt32 HR)		extended mshtml	Mshtml_Render_Present	Always		
+Microsoft-IE	168	0	JScript_ByteCodeGenStart(Pointer Element, UInt32 Zero)	Start	jscript	JScript_ByteCodeGen	Always		
+Microsoft-IE	169	0	JScript_ByteCodeGenStop(Pointer Element, UInt32 Zero)	Stop	jscript	JScript_ByteCodeGen	Always		
+Microsoft-IE	170	0	JScript_NativeCodeGenStart(Pointer Element, UInt32 Zero)	Start	jscript	JScript_NativeCodeGen	Always		
+Microsoft-IE	171	0	JScript_NativeCodeGenStop(Pointer Element, UInt32 Zero)	Stop	jscript	JScript_NativeCodeGen	Always		
+Microsoft-IE	172	0	JScript_NativeCodeGenDelayStart(Pointer Element, UInt32 Zero)	Start	jscript	JScript_NativeCodeGenDelay	Always		
+Microsoft-IE	173	0	JScript_NativeCodeGenDelayStop(Pointer Element, UInt32 Zero)	Stop	jscript	JScript_NativeCodeGenDelay	Always		
+Microsoft-IE	174	0	JScript_CallOutStart(Pointer Element, UInt32 Zero)	Start	jscript_verbose	JScript_CallOut	Always		
+Microsoft-IE	175	0	JScript_CallOutStop(Pointer Element, UInt32 Zero)	Stop	jscript_verbose	JScript_CallOut	Always		
+Microsoft-IE	176	0	Mshtml_Dx_DeviceCreateStart()	Start	extended mshtml pageloadbreakdown	Mshtml_Dx_DeviceCreate	Always		
+Microsoft-IE	177	0	Mshtml_Dx_DeviceCreateStop()	Stop	extended mshtml pageloadbreakdown	Mshtml_Dx_DeviceCreate	Always		
+Microsoft-IE	178	0	Mshtml_Dx_TargetSurfaceEnsureStart(Pointer RenderTarget, UInt32 TargetSurfaceBaseType, UInt32 TargetSurfaceSubType)	Start	subsystem pageloadbreakdown	Mshtml_Dx_TargetSurfaceEnsure	Always		
+Microsoft-IE	179	0	Mshtml_Dx_TargetSurfaceEnsureStop(Pointer RenderTarget)	Stop	subsystem pageloadbreakdown	Mshtml_Dx_TargetSurfaceEnsure	Always		
+Microsoft-IE	180	0	Mshtml_CImgTask_Decoded(Pointer ImgInfo, Pointer ImgTask, Pointer ImgCacheEntry, UInt32 Width, UInt32 Height, UInt32 CompressedSize, UInt32 BitCount, UInt16 ChromaSubsampling, UnicodeString URL)		primarynav	Mshtml_CImgTask_Decoded	Always		
+Microsoft-IE	181	0	Mshtml_CImgCacheEntry_Attach(Pointer ImgCacheEntry, Pointer ImgInfo, UInt32 FrameIndex, Pointer ImgBits, UInt32 ImgBitsSize, UInt32 Width, UInt32 Height, UInt8 BitCount, UInt8 IsSolidColor, UInt8 IsTransparent)		subsystem	Mshtml_CImgCacheEntry_Attach	Always		
+Microsoft-IE	182	0	Mshtml_CImgCacheEntry_PrepareToRender(Pointer ImgCacheEntry)		subsystem	Mshtml_CImgCacheEntry_PrepareToRender	Always		
+Microsoft-IE	183	0	Mshtml_CImgCacheEntry_RemoveFromWS(Pointer ImgCacheEntry)		subsystem	Mshtml_CImgCacheEntry_RemoveFromWS	Always		
+Microsoft-IE	184	0	Mshtml_CImgCacheEntry_Destroy(Pointer ImgCacheEntry)		subsystem	Mshtml_CImgCacheEntry_Destroy	Always		
+Microsoft-IE	185	0	Mshtml_CDwnInfo_CacheHit(Pointer DwnInfo, Pointer HitDwnInfo, UInt8 IsHitDwnInfoActive, UnicodeString URL)		subsystem	Mshtml_CDwnInfo_CacheHit	Always		
+Microsoft-IE	186	0	Mshtml_Image_Draw(Pointer ImgCacheEntry, Float DestLeft, Float DestTop, Float DestRight, Float DestBottom, Float ScaledSizeWidth, Float ScaledSizeHeight, Float TranslateX, Float TranslateY, Float Opacity, UInt32 Tiled, UInt32 UnscaledSizeWidth, UInt32 UnscaledSizeHeight)		subsystem pageloadbreakdown	Mshtml_Image_Draw	Always		
+Microsoft-IE	187	0	Mshtml_CImgInfo_Destroy(Pointer DwnInfo, UInt32 DecodeFlags)		subsystem	Mshtml_CImgInfo_Destroy	Always		
+Microsoft-IE	188	0	Mshtml_Print_DocumentStart()	Start	subsystem	Mshtml_Print_Document	Always		
+Microsoft-IE	189	0	Mshtml_Print_DocumentStop()	Stop	subsystem	Mshtml_Print_Document	Always		
+Microsoft-IE	190	0	Mshtml_Print_PageStart()	Start	subsystem	Mshtml_Print_Page	Always		
+Microsoft-IE	191	0	Mshtml_Print_PageStop()	Stop	subsystem	Mshtml_Print_Page	Always		
+Microsoft-IE	192	0	Mshtml_Scroll_SetOffsetStart(Int32 CurrentX, Int32 CurrentY, Int32 DeltaX, Int32 DeltaY)	Start	scroll	Mshtml_Scroll_SetOffset	Always		
+Microsoft-IE	193	0	Mshtml_Scroll_SetOffsetStop()	Stop	scroll	Mshtml_Scroll_SetOffset	Always		
+Microsoft-IE	194	0	Mshtml_Scroll_Frame(UInt32 TimeSinceStartUs, UInt32 ExpectedFrameTimeUs, UInt32 LastScrollTimeUs)		scroll	Mshtml_Scroll_Frame	Always		
+Microsoft-IE	195	0	Mshtml_Scroll_WaitForNextFrameStart()	Start	scroll	Mshtml_Scroll_WaitForNextFrame	Always		
+Microsoft-IE	196	0	Mshtml_Scroll_WaitForNextFrameStop()	Stop	scroll	Mshtml_Scroll_WaitForNextFrame	Always		
+Microsoft-IE	197	0	Mshtml_SAM_Allocate(Pointer Allocator, Pointer Allocation, UInt32 Size)		verbose	Mshtml_SAM_Allocate	Always		
+Microsoft-IE	198	0	Mshtml_SAM_Free(Pointer Allocator, Pointer Allocation, UInt32 Size)		verbose	Mshtml_SAM_Free	Always		
+Microsoft-IE	199	0	Mshtml_SAM_Segment_Create(Pointer Allocator, Pointer Allocation, UInt32 Size)		verbose	Mshtml_SAM_Segment_Create	Always		
+Microsoft-IE	200	0	Mshtml_SAM_Segment_Delete(Pointer Allocator, Pointer Allocation, UInt32 Size)		verbose	Mshtml_SAM_Segment_Delete	Always		
+Microsoft-IE	201	0	Mshtml_AlignedTimer_Setup(UInt64 Object, UInt32 TimerId, Int32 DeltaMs, Int32 PeriodMs, UInt64 CurrentTimeMs)		paintbeat	Mshtml_AlignedTimer_Setup	Always		
+Microsoft-IE	201	1	Mshtml_AlignedTimer_Setup_V1(Pointer Object, UInt32 TimerId, Int32 DeltaMs, Int32 PeriodMs, UInt64 CurrentTimeMs, HexInt32 Flags, Pointer Callback)		paintbeat	Mshtml_AlignedTimer_Setup	Always		
+Microsoft-IE	202	0	Mshtml_AlignedTimer_Kill(UInt64 Object, UInt32 TimerId, Int32 DeltaMs, Int32 PeriodMs, UInt64 CurrentTimeMs)		paintbeat	Mshtml_AlignedTimer_Kill	Always		
+Microsoft-IE	202	1	Mshtml_AlignedTimer_Kill_V1(Pointer Object, UInt32 TimerId, Int32 DeltaMs, Int32 PeriodMs, UInt64 CurrentTimeMs, HexInt32 Flags, Pointer Callback)		paintbeat	Mshtml_AlignedTimer_Kill	Always		
+Microsoft-IE	203	0	Mshtml_AlignedTimer_Fire(UInt64 Object, UInt32 TimerId, Int32 DeltaMs, Int32 PeriodMs, UInt64 CurrentTimeMs)		paintbeat	Mshtml_AlignedTimer_Fire	Always		
+Microsoft-IE	203	1	Mshtml_AlignedTimer_Fire_V1(Pointer Object, UInt32 TimerId, Int32 DeltaMs, Int32 PeriodMs, UInt64 CurrentTimeMs, HexInt32 Flags, Pointer Callback)		paintbeat	Mshtml_AlignedTimer_Fire	Always		
+Microsoft-IE	204	0	Mshtml_AlignedBeat_Setup(UInt64 Object, UInt64 CurrentTimeMs, Int32 DeltaMs, UInt32 BeatPeriodMs, UInt32 RefreshMultipleUs)		paintbeat	Mshtml_AlignedBeat_Setup	Always		
+Microsoft-IE	205	0	Mshtml_AlignedBeat_Kill(UInt64 Object, UInt64 CurrentTimeMs, Int32 DeltaMs, UInt32 BeatPeriodMs, UInt32 RefreshMultipleUs)		paintbeat	Mshtml_AlignedBeat_Kill	Always		
+Microsoft-IE	206	0	Mshtml_AlignedBeat_FireStart(UInt64 Object, UInt64 CurrentTimeMs, Int32 DeltaMs, UInt32 BeatPeriodMs, UInt32 RefreshMultipleUs)	Start	paintbeat	Mshtml_AlignedBeat_Fire	Always		
+Microsoft-IE	207	0	Mshtml_AlignedBeat_Watchdog(UInt64 Object, UInt64 Value)		paintbeat	Mshtml_AlignedBeat_Watchdog	Always		
+Microsoft-IE	208	0	Mshtml_AlignedBeat_VSync(UInt64 Object, UInt64 Value)		paintbeat	Mshtml_AlignedBeat_VSync	Always		
+Microsoft-IE	209	0	Mshtml_AlignedBeat_VSyncStatus(UInt64 Object, UInt64 Value)		paintbeat	Mshtml_AlignedBeat_VSyncStatus	Always		
+Microsoft-IE	210	0	Mshtml_MsPerformance_FullyLoaded()		primarynav	Mshtml_MsPerformance_FullyLoaded	Always		
+Microsoft-IE	211	0	Mshtml_MsPerformance_Mark(UnicodeString Name)		primarynav	Mshtml_MsPerformance_Mark	Always		
+Microsoft-IE	212	0	Mshtml_MsPerformance_Measure(UnicodeString Name, UnicodeString StartMark, UnicodeString EndMark, UInt64 Duration)		verbose	Mshtml_MsPerformance_Measure	Always		
+Microsoft-IE	213	0	Mshtml_AttachIDispImage(UInt64 Object, UInt64 Value)		subsystem	Mshtml_AttachIDispImage	Always		
+Microsoft-IE	214	0	Mshtml_DetachIDispImage(UInt64 Object, UInt64 Value)		subsystem	Mshtml_DetachIDispImage	Always		
+Microsoft-IE	215	0	Mshtml_LowPriMethodCall_Watchdog()		subsystem	Mshtml_LowPriMethodCall_Watchdog	Always		
+Microsoft-IE	216	0	Mshtml_MediaEngine_Created(UInt32 MediaEngineID)		mediaengine	Mshtml_MediaEngine_Created	Always		
+Microsoft-IE	217	0	Mshtml_MediaEngine_PlayStart(UInt32 MediaEngineID)	Start	mediaengine	Mshtml_MediaEngine_Play	Always		
+Microsoft-IE	218	0	Mshtml_MediaEngine_PlayStop(UInt32 MediaEngineID)	Stop	mediaengine	Mshtml_MediaEngine_Play	Always		
+Microsoft-IE	219	0	Mshtml_MediaEngine_PauseStart(UInt32 MediaEngineID)	Start	mediaengine	Mshtml_MediaEngine_Pause	Always		
+Microsoft-IE	220	0	Mshtml_MediaEngine_PauseStop(UInt32 MediaEngineID)	Stop	mediaengine	Mshtml_MediaEngine_Pause	Always		
+Microsoft-IE	221	0	Mshtml_MediaEngine_SeekStart(UInt32 MediaEngineID, Float Time)	Start	mediaengine	Mshtml_MediaEngine_Seek	Always		
+Microsoft-IE	222	0	Mshtml_MediaEngine_SeekStop(UInt32 MediaEngineID, UInt32 hrResult)	Stop	mediaengine	Mshtml_MediaEngine_Seek	Always		
+Microsoft-IE	223	0	Mshtml_MediaEngine_Ended(UInt32 MediaEngineID)		mediaengine	Mshtml_MediaEngine_Ended	Always		
+Microsoft-IE	224	0	Mshtml_MediaEngine_PlaybackRateChange(UInt32 MediaEngineID, Float Rate)		mediaengine	Mshtml_MediaEngine_PlaybackRateChange	Always		
+Microsoft-IE	225	0	Mshtml_MediaEngine_StreamInfo(UInt32 MediaEngineID, GUID majortype, GUID subtype)		mediaengine	Mshtml_MediaEngine_StreamInfo	Always		
+Microsoft-IE	226	0	Mshtml_MediaEngine_VideoMediaType(UInt32 MediaEngineID, UInt32 format, UInt32 width, UInt32 height, UInt32 frameratenum, UInt32 framerateden)		mediaengine	Mshtml_MediaEngine_VideoMediaType	Always		
+Microsoft-IE	227	0	Mshtml_MediaEngine_AudioMediaType(UInt32 MediaEngineID, UInt32 numchannels, UInt32 samplespersec, UInt32 bitspersample)		mediaengine	Mshtml_MediaEngine_AudioMediaType	Always		
+Microsoft-IE	228	0	Mshtml_MediaEngine_VideoFramePresented(UInt32 MediaEngineID, UInt32 left, UInt32 top, UInt32 right, UInt32 bottom, UInt64 sampletime, UInt64 processtime)		mediaengine	Mshtml_MediaEngine_VideoFramePresented	Always		
+Microsoft-IE	229	0	Mshtml_MediaEngine_VideoFrameDropped(UInt32 MediaEngineID, UInt32 reason, UInt64 sampletime, UInt64 processtime)		mediaengine	Mshtml_MediaEngine_VideoFrameDropped	Always		
+Microsoft-IE	230	0	Mshtml_MediaEngine_VideoQualityMessage(UInt32 MediaEngineID, Int64 lag)		mediaengine	Mshtml_MediaEngine_VideoQualityMessage	Always		
+Microsoft-IE	235	0	Mshtml_MediaEngine_AudioDataPresented(UInt32 MediaEngineID, UInt64 sampletime, Float dataPresented)		mediaengine	Mshtml_MediaEngine_AudioDataPresented	Always		
+Microsoft-IE	236	0	Mshtml_MediaEngine_VSyncTick(UInt32 MediaEngineID)		mediaengine	Mshtml_MediaEngine_VSyncTick	Always		
+Microsoft-IE	237	0	Mshtml_MediaEngine_Destroyed(UInt32 MediaEngineID)		mediaengine	Mshtml_MediaEngine_Destroyed	Always		
+Microsoft-IE	238	0	Mshtml_CImgTask_LazyDecoded(Pointer ImgInfo, Pointer ImgTask, Pointer ImgCacheEntry, UInt32 Width, UInt32 Height, UInt32 CompressedSize, UInt32 BitCount, UInt16 ChromaSubsampling, UnicodeString URL)		subsystem	Mshtml_CImgTask_LazyDecoded	Always		
+Microsoft-IE	239	0	Mshtml_CImgInfo_ForcedDecoding(Pointer DwnInfo, UInt32 DecodeFlags)		subsystem	Mshtml_CImgInfo_ForcedDecoding	Always		
+Microsoft-IE	240	0	Mshtml_CPaintController_NotReadyToPaint()		subsystem	Mshtml_CPaintController_NotReadyToPaint	Always		
+Microsoft-IE	241	0	Mshtml_AlignedBeat_FireStop()	Stop	paintbeat	Mshtml_AlignedBeat_Fire	Always		
+Microsoft-IE	242	0	Mshtml_CTimerMan_WaitStart(Pointer TimerMan, UInt32 Info)	Start	paintbeat	Mshtml_CTimerMan_Wait	Always		
+Microsoft-IE	243	0	Mshtml_CTimerMan_WaitStop(Pointer TimerMan, UInt32 Info)	Stop	paintbeat	Mshtml_CTimerMan_Wait	Always		
+Microsoft-IE	244	0	Mshtml_CHighFreqScheduler_FireStart(UInt64 Object, UInt64 Value)	Start	paintbeat	Mshtml_CHighFreqScheduler_Fire	Always		
+Microsoft-IE	245	0	Mshtml_CHighFreqScheduler_FireStop(UInt64 Object, UInt64 Value)	Stop	paintbeat	Mshtml_CHighFreqScheduler_Fire	Always		
+Microsoft-IE	246	0	Mshtml_CPaintController_CanNotPaintNow(UInt64 Object, UInt64 Value)		subsystem	Mshtml_CPaintController_CanNotPaintNow	Always		
+Microsoft-IE	247	0	Mshtml_CMarkup_QME(UInt64 Object, UInt64 Value)		primarynav	Mshtml_CMarkup_QME	Always		
+Microsoft-IE	248	0	Mshtml_IViewObjectPresentSite_Present(Pointer Presenter, UInt32 x, UInt32 y, UInt32 width, UInt32 height)		subsystem	Mshtml_IViewObjectPresentSite_Present	Always		
+Microsoft-IE	249	0	Mshtml_IViewObjectPresentNotifySite_RequestFrame(Pointer Presenter)		subsystem	Mshtml_IViewObjectPresentNotifySite_RequestFrame	Always		
+Microsoft-IE	250	0	Mshtml_MediaEngine_TransferVideoFrameStart(UInt32 MediaEngineID)	Start	mediaengine	Mshtml_MediaEngine_TransferVideoFrame	Always		
+Microsoft-IE	251	0	Mshtml_MediaEngine_TransferVideoFrameStop(UInt32 MediaEngineID)	Stop	mediaengine	Mshtml_MediaEngine_TransferVideoFrame	Always		
+Microsoft-IE	252	0	Mshtml_GlyphRun_Draw(Float DestRight, Float DestBottom)		subsystem pageloadbreakdown	Mshtml_GlyphRun_Draw	Always		
+Microsoft-IE	253	0	Mshtml_Image_Offer(Pointer Object)		subsystem	Mshtml_Image_Offer	Always		
+Microsoft-IE	254	0	Mshtml_Image_Reclaim(Pointer Object)		subsystem	Mshtml_Image_Reclaim	Always		
+Microsoft-IE	255	0	Mshtml_Image_Reclaim_Fail(Pointer Object)		subsystem	Mshtml_Image_Reclaim_Fail	Always		
+Microsoft-IE	338	0	Mshtml_CTouchHelper_HandleTouchMessageStart(Pointer Doc, UInt32 MessageId, UInt32 PointerId)	Start	mshtml touch	Mshtml_CTouchHelper_HandleTouchMessage	Always		
+Microsoft-IE	339	0	Mshtml_CTouchHelper_HandleTouchMessageStop(Pointer Doc, UInt32 MessageId, UInt32 PointerId)	Stop	mshtml touch	Mshtml_CTouchHelper_HandleTouchMessage	Always		
+Microsoft-IE	340	0	Mshtml_CTouchHelper_DispatchTouchEventStart(UnicodeString EventType)	Start	mshtml touch	Mshtml_CTouchHelper_DispatchTouchEvent	Always		
+Microsoft-IE	341	0	Mshtml_CTouchHelper_DispatchTouchEventStop(UnicodeString EventType)	Stop	mshtml touch	Mshtml_CTouchHelper_DispatchTouchEvent	Always		
+Microsoft-IE	342	0	Mshtml_Animations_UpdateStart(UInt32 TotalStoryboardCount, UInt32 IndependentStoryboardCount)	Start	animation	Mshtml_Animations_Update	Always		
+Microsoft-IE	343	0	Mshtml_Animations_UpdateStop(UInt32 NumberOfUpdates, UInt32 NumberOfUpdateSkips)	Stop	animation	Mshtml_Animations_Update	Always		
+Microsoft-IE	348	0	Mshtml_MediaElement_PlayPauseStart(UInt32 MediaElementId)	Start	subsystem mshtml	Mshtml_MediaElement_PlayPause	Always		
+Microsoft-IE	349	0	Mshtml_MediaElement_PlayPauseStop(UInt32 MediaElementId)	Stop	subsystem mshtml	Mshtml_MediaElement_PlayPause	Always		
+Microsoft-IE	350	0	Mshtml_MediaElement_PlayPauseStart350(UInt32 MediaElementId)	Start	subsystem mshtml	Mshtml_MediaElement_PlayPause	Always		
+Microsoft-IE	351	0	Mshtml_MediaElement_PlayPauseStop351(UInt32 MediaElementId)	Stop	subsystem mshtml	Mshtml_MediaElement_PlayPause	Always		
+Microsoft-IE	352	0	Mshtml_MediaElement_VolumeChangeStart(UInt32 MediaElementId)	Start	subsystem mshtml	Mshtml_MediaElement_VolumeChange	Always		
+Microsoft-IE	353	0	Mshtml_MediaElement_VolumeChangeStart353(UInt32 MediaElementId)	Start	subsystem mshtml	Mshtml_MediaElement_VolumeChange	Always		
+Microsoft-IE	354	0	Mshtml_MediaElement_VolumeChangeStart354(UInt32 MediaElementId, Double PositionInPercentage)	Start	subsystem mshtml	Mshtml_MediaElement_VolumeChange	Always		
+Microsoft-IE	355	0	Mshtml_MediaElement_VolumeChangeStop(UInt32 MediaElementId)	Stop	subsystem mshtml	Mshtml_MediaElement_VolumeChange	Always		
+Microsoft-IE	356	0	Mshtml_MediaElement_SeekStart(UInt32 MediaElementId, Double TimeDurationInSecs)	Start	subsystem mshtml	Mshtml_MediaElement_Seek	Always		
+Microsoft-IE	357	0	Mshtml_MediaElement_SeekStart357(UInt32 MediaElementId, Double TimeDurationInSecs)	Start	subsystem mshtml	Mshtml_MediaElement_Seek	Always		
+Microsoft-IE	358	0	Mshtml_MediaElement_SeekStart358(UInt32 MediaElementId, Double PositionInPercentage)	Start	subsystem mshtml	Mshtml_MediaElement_Seek	Always		
+Microsoft-IE	359	0	Mshtml_MediaElement_SeekStart359(UInt32 MediaElementId, Double TimeInSecs)	Start	subsystem mshtml	Mshtml_MediaElement_Seek	Always		
+Microsoft-IE	360	0	Mshtml_MediaElement_SeekStop(UInt32 MediaElementId)	Stop	subsystem mshtml	Mshtml_MediaElement_Seek	Always		
+Microsoft-IE	361	0	Mshtml_MediaElement_ZoomStart(UInt32 MediaElementId)	Start	subsystem mshtml	Mshtml_MediaElement_Zoom	Always		
+Microsoft-IE	362	0	Mshtml_MediaElement_ZoomStop(UInt32 MediaElementId)	Stop	subsystem mshtml	Mshtml_MediaElement_Zoom	Always		
+Microsoft-IE	363	0	Mshtml_MediaElement_ZoomStart363(UInt32 MediaElementId)	Start	subsystem mshtml	Mshtml_MediaElement_Zoom	Always		
+Microsoft-IE	364	0	Mshtml_MediaElement_ZoomStop364(UInt32 MediaElementId)	Stop	subsystem mshtml	Mshtml_MediaElement_Zoom	Always		
+Microsoft-IE	365	0	Mshtml_CElement_HandleMouseForActiveStyleStart(Pointer Object)	Start	subsystem	Mshtml_CElement_HandleMouseForActiveStyle	Always		
+Microsoft-IE	366	0	Mshtml_CElement_HandleMouseForActiveStyleStop(Pointer Object)	Stop	subsystem	Mshtml_CElement_HandleMouseForActiveStyle	Always		
+Microsoft-IE	367	0	Mshtml_HTMLSpell_InitSpellerStart()	Start	subsystem mshtml	Mshtml_HTMLSpell_InitSpeller	Always		
+Microsoft-IE	368	0	Mshtml_HTMLSpell_InitSpellerStop()	Stop	subsystem mshtml	Mshtml_HTMLSpell_InitSpeller	Always		
+Microsoft-IE	369	0	Mshtml_HTMLSpell_SpellCheckingEngineStart()	Start	subsystem mshtml	Mshtml_HTMLSpell_SpellCheckingEngine	Always		
+Microsoft-IE	370	0	Mshtml_HTMLSpell_SpellCheckingEngineStop()	Stop	subsystem mshtml	Mshtml_HTMLSpell_SpellCheckingEngine	Always		
+Microsoft-IE	375	0	Mshtml_CElement_GetTooltipText(Pointer Element, UnicodeString Tooltip)		subsystem mshtml	Mshtml_CElement_GetTooltipText	Always		
+Microsoft-IE	383	0	Mshtml_Composition_LayerManager_InitializeStart()	Start	composition	Mshtml_Composition_LayerManager_Initialize	Always		
+Microsoft-IE	384	0	Mshtml_Composition_LayerManager_InitializeStop()	Stop	composition	Mshtml_Composition_LayerManager_Initialize	Always		
+Microsoft-IE	385	0	Mshtml_Composition_Destination_PreRenderStart()	Start	composition	Mshtml_Composition_Destination_PreRender	Always		
+Microsoft-IE	386	0	Mshtml_Composition_Destination_PreRenderStop()	Stop	composition	Mshtml_Composition_Destination_PreRender	Always		
+Microsoft-IE	387	0	Mshtml_Composition_Destination_RenderLayerStart()	Start	composition	Mshtml_Composition_Destination_RenderLayer	Always		
+Microsoft-IE	388	0	Mshtml_Composition_Destination_RenderLayerStop()	Stop	composition	Mshtml_Composition_Destination_RenderLayer	Always		
+Microsoft-IE	389	0	Mshtml_Composition_Create_LayerStart()	Start	composition	Mshtml_Composition_Create_Layer	Always		
+Microsoft-IE	390	0	Mshtml_Composition_Create_LayerStop()	Stop	composition	Mshtml_Composition_Create_Layer	Always		
+Microsoft-IE	391	0	Mshtml_Composition_Destroy_Layer_GroupStart()	Start	composition	Mshtml_Composition_Destroy_Layer_Group	Always		
+Microsoft-IE	392	0	Mshtml_Composition_Destroy_Layer_GroupStop()	Stop	composition	Mshtml_Composition_Destroy_Layer_Group	Always		
+Microsoft-IE	393	0	Mshtml_Composition_Destroy_All_LayersStart()	Start	composition	Mshtml_Composition_Destroy_All_Layers	Always		
+Microsoft-IE	394	0	Mshtml_Composition_Destroy_All_LayersStop()	Stop	composition	Mshtml_Composition_Destroy_All_Layers	Always		
+Microsoft-IE	395	0	Mshtml_Composition_Update_Implicit_LayersStart()	Start	composition	Mshtml_Composition_Update_Implicit_Layers	Always		
+Microsoft-IE	396	0	Mshtml_Composition_Update_Implicit_LayersStop()	Stop	composition	Mshtml_Composition_Update_Implicit_Layers	Always		
+Microsoft-IE	397	0	Mshtml_Composition_Layer_Invalidate(Pointer DispNode, Pointer DispLayer, Int32 left, Int32 top, Int32 right, Int32 bottom, UInt64 ElementDDTId)		subsystem composition	Mshtml_Composition_Layer_Invalidate	Always		
+Microsoft-IE	398	0	Mshtml_CTouchHelper_DispatchGestureEventStart()	Start	mshtml touch	Mshtml_CTouchHelper_DispatchGestureEvent	Always		
+Microsoft-IE	399	0	Mshtml_CTouchHelper_DispatchGestureEventStop()	Stop	mshtml touch	Mshtml_CTouchHelper_DispatchGestureEvent	Always		
+Microsoft-IE	400	0	Mshtml_CTouchHelper_DispatchGestureEventStart400()	Start	mshtml touch	Mshtml_CTouchHelper_DispatchGestureEvent	Always		
+Microsoft-IE	401	0	Mshtml_CTouchHelper_DispatchGestureEventStop401()	Stop	mshtml touch	Mshtml_CTouchHelper_DispatchGestureEvent	Always		
+Microsoft-IE	402	0	Mshtml_CTouchHelper_DispatchGestureEventStart402()	Start	mshtml touch	Mshtml_CTouchHelper_DispatchGestureEvent	Always		
+Microsoft-IE	403	0	Mshtml_CTouchHelper_DispatchGestureEventStop403()	Stop	mshtml touch	Mshtml_CTouchHelper_DispatchGestureEvent	Always		
+Microsoft-IE	404	0	Mshtml_MediaElement_PlayTo_ConnectStart(UInt32 MediaElementId, UnicodeString MediaElementIdAttribute)	Start	subsystem mshtml	Mshtml_MediaElement_PlayTo_Connect	Always		
+Microsoft-IE	405	0	Mshtml_MediaElement_PlayTo_ConnectStop(UInt32 MediaElementId, UnicodeString MediaElementIdAttribute, UnicodeString UniqueDeviceName, UnicodeString FriendlyDeviceName)	Stop	subsystem mshtml	Mshtml_MediaElement_PlayTo_Connect	Always		
+Microsoft-IE	406	0	Mshtml_MediaElement_PlayTo_DisconnectStart(UInt32 MediaElementId, UnicodeString MediaElementIdAttribute, UnicodeString UniqueDeviceName, UnicodeString FriendlyDeviceName)	Start	subsystem mshtml	Mshtml_MediaElement_PlayTo_Disconnect	Always		
+Microsoft-IE	407	0	Mshtml_MediaElement_PlayTo_DisconnectStop(UInt32 MediaElementId, UnicodeString MediaElementIdAttribute)	Stop	subsystem mshtml	Mshtml_MediaElement_PlayTo_Disconnect	Always		
+Microsoft-IE	408	1	Mshtml_Animations_AnimatingStart_V1(Pointer AnimationClientObject, Pointer StoryboardObject, Pointer TreeNode, Double DurationInSeconds, Double DelayInSeconds, UInt32 NumberOfProperties, UnicodeString AnimationName, UInt64 DDTObject)	Start	animation	Mshtml_Animations_Animating	Always		
+Microsoft-IE	409	0	Mshtml_Animations_AnimatingStop(Pointer AnimationClientObject, Pointer TreeNode)	Stop	animation	Mshtml_Animations_Animating	Always		
+Microsoft-IE	410	1	Mshtml_Animations_TransitioningStart_V1(Pointer TransitionClientObject, Pointer StoryboardObject, Pointer TreeNode, Double DurationInSeconds, Double DelayInSeconds, UInt32 DISPID, Boolean IsReversal, UInt64 DDTObject)	Start	animation	Mshtml_Animations_Transitioning	Always		
+Microsoft-IE	411	0	Mshtml_Animations_TransitioningStop(Pointer AnimationClientObject, Pointer TreeNode, UInt32 DISPID)	Stop	animation	Mshtml_Animations_Transitioning	Always		
+Microsoft-IE	412	0	Mshtml_HTMLSpell_NotifyStart()	Start	subsystem mshtml	Mshtml_HTMLSpell_Notify	Always		
+Microsoft-IE	413	0	Mshtml_HTMLSpell_NotifyStop()	Stop	subsystem mshtml	Mshtml_HTMLSpell_Notify	Always		
+Microsoft-IE	414	0	Mshtml_HTMLSpell_CreateSpellerStart()	Start	subsystem mshtml	Mshtml_HTMLSpell_CreateSpeller	Always		
+Microsoft-IE	415	0	Mshtml_HTMLSpell_CreateSpellerStop()	Stop	subsystem mshtml	Mshtml_HTMLSpell_CreateSpeller	Always		
+Microsoft-IE	430	0	Mshtml_SetTimeout_Url(Pointer WindowObject, UInt32 IsPrimary, UnicodeString URL)		paintbeat	Mshtml_SetTimeout_Url	Always		
+Microsoft-IE	431	0	Mshtml_FormsTimer_Set(Pointer Object, UInt32 TimerId, Pointer Callback, UInt32 Timeout)		paintbeat	Mshtml_FormsTimer_Set	Always		
+Microsoft-IE	432	0	Mshtml_FormsTimer_Reset(Pointer Object, UInt32 TimerId, Pointer Callback, UInt32 Timeout)		paintbeat	Mshtml_FormsTimer_Reset	Always		
+Microsoft-IE	433	0	Mshtml_FormsTimer_Kill(Pointer Object, UInt32 TimerId, Pointer Callback, UInt32 Timeout)		paintbeat	Mshtml_FormsTimer_Kill	Always		
+Microsoft-IE	434	0	Mshtml_FormsTimer_OnTimer(Pointer Object, UInt32 TimerId, Pointer Callback, UInt32 Timeout)		paintbeat	Mshtml_FormsTimer_OnTimer	Always		
+Microsoft-IE	435	0	Mshtml_MediaElement_LoadingStart(UInt32 MediaElementId)	Start	subsystem mshtml	Mshtml_MediaElement_Loading	Always		
+Microsoft-IE	436	0	Mshtml_MediaElement_LoadingStop(UInt32 MediaElementId)	Stop	subsystem mshtml	Mshtml_MediaElement_Loading	Always		
+Microsoft-IE	437	0	Mshtml_MediaElement_VisualizationStart(UInt32 MediaElementId, UInt32 AnimationGroupId, UInt32 VisualizationId)	Start	subsystem mshtml	Mshtml_MediaElement_Visualization	Always		
+Microsoft-IE	438	0	Mshtml_MediaElement_VisualizationStop(UInt32 MediaElementId, UInt32 AnimationGroupId, UInt32 VisualizationId)	Stop	subsystem mshtml	Mshtml_MediaElement_Visualization	Always		
+Microsoft-IE	439	0	Mshtml_MediaElement_Buffering(UInt32 MediaElementId, Double StartTimeDurationInSecs, Double EndTimeDurationInSecs, Int32 ProgressStartLevelInPercentage, Int32 ProgressEndLevelInPercentage)		subsystem mshtml	Mshtml_MediaElement_Buffering	Always		
+Microsoft-IE	440	0	Mshtml_TouchSelection_GripperShown(UInt32 GripperID)		mshtml touch	Mshtml_TouchSelection_GripperShown	Always		
+Microsoft-IE	441	0	Mshtml_TouchSelection_GripperHidden(UInt32 GripperID)		mshtml touch	Mshtml_TouchSelection_GripperHidden	Always		
+Microsoft-IE	442	0	Mshtml_TouchSelection_CaretShown()		mshtml touch	Mshtml_TouchSelection_CaretShown	Always		
+Microsoft-IE	443	0	Mshtml_TouchSelection_CaretHidden()		mshtml touch	Mshtml_TouchSelection_CaretHidden	Always		
+Microsoft-IE	444	0	Mshtml_TouchSelection_CaretPlacementStart()	Start	mshtml touch	Mshtml_TouchSelection_CaretPlacement	Always		
+Microsoft-IE	445	0	Mshtml_TouchSelection_CaretPlacementStop()	Stop	mshtml touch	Mshtml_TouchSelection_CaretPlacement	Always		
+Microsoft-IE	446	0	Mshtml_TouchSelection_TouchSelectionManipulation_InitiationStart()	Start	mshtml touch	Mshtml_TouchSelection_TouchSelectionManipulation_Initiation	Always		
+Microsoft-IE	447	0	Mshtml_TouchSelection_TouchSelectionManipulation_InitiationStop()	Stop	mshtml touch	Mshtml_TouchSelection_TouchSelectionManipulation_Initiation	Always		
+Microsoft-IE	448	0	Mshtml_TouchSelection_TouchSelectionManipulation_CompletionStart()	Start	mshtml touch	Mshtml_TouchSelection_TouchSelectionManipulation_Completion	Always		
+Microsoft-IE	449	0	Mshtml_TouchSelection_TouchSelectionManipulation_CompletionStop()	Stop	mshtml touch	Mshtml_TouchSelection_TouchSelectionManipulation_Completion	Always		
+Microsoft-IE	450	0	Mshtml_HTMLSpell_ShowContextMenuStart()	Start	subsystem mshtml	Mshtml_HTMLSpell_ShowContextMenu	Always		
+Microsoft-IE	451	0	Mshtml_HTMLSpell_ShowContextMenuStop()	Stop	subsystem mshtml	Mshtml_HTMLSpell_ShowContextMenu	Always		
+Microsoft-IE	452	0	Mshtml_HTMLSpell_ContextMenuInvokeStart()	Start	subsystem mshtml	Mshtml_HTMLSpell_ContextMenuInvoke	Always		
+Microsoft-IE	453	0	Mshtml_HTMLSpell_ContextMenuInvokeStop()	Stop	subsystem mshtml	Mshtml_HTMLSpell_ContextMenuInvoke	Always		
+Microsoft-IE	456	0	Mshtml_Composition_Scrollbar_Paint(UInt32 ScrollbarLayerId)		composition	Mshtml_Composition_Scrollbar_Paint	Always		
+Microsoft-IE	457	0	Mshtml_OleSite_Immersive_Incompatible(GUID Clsid, UnicodeString Url)		subsystem mshtml	Mshtml_OleSite_Immersive_Incompatible	Always		
+Microsoft-IE	458	0	Mshtml_UrlAction_ActiveX_Immersive_Incompatible(GUID Clsid)		subsystem mshtml	Mshtml_UrlAction_ActiveX_Immersive_Incompatible	Always		
+Microsoft-IE	459	0	Mshtml_MediaElement_FrameStepStart(UInt32 MediaElementId)	Start	subsystem mshtml	Mshtml_MediaElement_FrameStep	Always		
+Microsoft-IE	460	0	Mshtml_MediaElement_FrameStepStart460(UInt32 MediaElementId)	Start	subsystem mshtml	Mshtml_MediaElement_FrameStep	Always		
+Microsoft-IE	461	0	Mshtml_MediaElement_FrameStepStop(UInt32 MediaElementId)	Stop	subsystem mshtml	Mshtml_MediaElement_FrameStep	Always		
+Microsoft-IE	462	0	Mshtml_IndependentAnimation_Start(Pointer AnimationID, Pointer AnimationInstanceObject, UInt32 AnimationPropertyId, Boolean IsTransition, UInt64 QPCScheduleTime)	Start	animation	Mshtml_IndependentAnimation_Start	Always		
+Microsoft-IE	463	0	Mshtml_IndependentAnimation_Stop(Pointer AnimationID, Pointer AnimationInstanceObject, Pointer TreeNode, UInt32 PreviousAnimationState)	Stop	animation	Mshtml_IndependentAnimation_Stop	Always		
+Microsoft-IE	464	0	Mshtml_IndependentAnimation_Candidacy_Failure(Pointer AnimationID)		animation	Mshtml_IndependentAnimation_Candidacy_Failure	Always		
+Microsoft-IE	464	2	Mshtml_IndependentAnimation_Candidacy_Failure_V2(Pointer CIndependentAnimation, UInt32 ReasonCode, UnicodeString Description)		animation	Mshtml_IndependentAnimation_Candidacy_Failure	Always		
+Microsoft-IE	465	0	Mshtml_Composition_Layer_PaintRect(Pointer DispNode, Pointer DispLayer, Int32 left, Int32 top, Int32 right, Int32 bottom, UInt64 ElementDDTId)		subsystem composition	Mshtml_Composition_Layer_PaintRect	Always		
+Microsoft-IE	466	0	Mshtml_PredictedView_Update(Pointer Scroller, Int32 RectType, Int32 left, Int32 top, Int32 right, Int32 bottom)		composition	Mshtml_PredictedView_Update	Always		
+Microsoft-IE	467	0	Mshtml_MediaElement_EndOfMedia(UInt32 MediaElementId)		subsystem mshtml	Mshtml_MediaElement_EndOfMedia	Always		
+Microsoft-IE	468	0	Mshtml_CActiveScriptHolder_Construct(Pointer CActiveScriptHolder, Pointer CMarkup)		mshtml	Mshtml_CActiveScriptHolder_Construct	Always		
+Microsoft-IE	469	0	Mshtml_CActiveScriptHolder_Close(Pointer CActiveScriptHolder, Pointer CMarkup)		mshtml	Mshtml_CActiveScriptHolder_Close	Always		
+Microsoft-IE	470	0	Mshtml_CJScript9Holder_TypeSystem_InitStart(Pointer CActiveScriptHolder, Pointer CMarkup)	Start	mshtml	Mshtml_CJScript9Holder_TypeSystem_Init	Always		
+Microsoft-IE	471	0	Mshtml_CJScript9Holder_TypeSystem_InitStop(Pointer CActiveScriptHolder, Pointer CMarkup, UInt32 HR)	Stop	mshtml	Mshtml_CJScript9Holder_TypeSystem_Init	Always		
+Microsoft-IE	472	0	Mshtml_CScriptCollection_WebOC_FirstScriptExecutionEventStart(Pointer CScriptCollection, Pointer CMarkup)	Start	mshtml	Mshtml_CScriptCollection_WebOC_FirstScriptExecutionEvent	Always		
+Microsoft-IE	473	0	Mshtml_CScriptCollection_WebOC_FirstScriptExecutionEventStop(Pointer CScriptCollection, Pointer CMarkup)	Stop	mshtml	Mshtml_CScriptCollection_WebOC_FirstScriptExecutionEvent	Always		
+Microsoft-IE	474	0	Mshtml_CScriptCollection_DevToolbar_FirstScriptExecutionEventStart(Pointer CScriptCollection, Pointer CMarkup)	Start	mshtml	Mshtml_CScriptCollection_DevToolbar_FirstScriptExecutionEvent	Always		
+Microsoft-IE	475	0	Mshtml_CScriptCollection_DevToolbar_FirstScriptExecutionEventStop(Pointer CScriptCollection, Pointer CMarkup)	Stop	mshtml	Mshtml_CScriptCollection_DevToolbar_FirstScriptExecutionEvent	Always		
+Microsoft-IE	476	0	Mshtml_CActiveScriptHolder_WebPlatform_NewScriptEngineEventStart(Pointer CActiveScriptHolder, Pointer CMarkup)	Start	mshtml	Mshtml_CActiveScriptHolder_WebPlatform_NewScriptEngineEvent	Always		
+Microsoft-IE	477	0	Mshtml_CActiveScriptHolder_WebPlatform_NewScriptEngineEventStop(Pointer CActiveScriptHolder, Pointer CMarkup)	Stop	mshtml	Mshtml_CActiveScriptHolder_WebPlatform_NewScriptEngineEvent	Always		
+Microsoft-IE	478	0	JScript_Parse(Pointer ScriptContext, UInt32 FunctionId, Boolean Undefer)		jscript_verbose	JScript_Parse	Always		
+Microsoft-IE	479	0	Mshtml_CView_HitTest_InActiveView(Pointer View)		mshtml	Mshtml_CView_HitTest_InActiveView	Always		
+Microsoft-IE	480	0	Mshtml_CView_HitTest_MessageContextStart(Pointer View, Pointer ContextElement, UInt32 Flags, UInt32 MessageId, UInt32 left, UInt32 top, UInt32 right, UInt32 bottom)	Start	mshtml	Mshtml_CView_HitTest_MessageContext	Always		
+Microsoft-IE	481	0	Mshtml_CView_HitTest_MessageContextStop(Pointer View, UInt32 HTC)	Stop	mshtml	Mshtml_CView_HitTest_MessageContext	Always		
+Microsoft-IE	482	0	Mshtml_CView_ExecuteInvalidationTasksStart(Pointer View, UInt32 Nodes)	Start	mshtml	Mshtml_CView_ExecuteInvalidationTasks	Always		
+Microsoft-IE	483	0	Mshtml_CView_ExecuteInvalidationTasksStop(Pointer View, UInt32 UniqueSubtrees, UInt32 UpdatedSubtrees)	Stop	mshtml	Mshtml_CView_ExecuteInvalidationTasks	Always		
+Microsoft-IE	484	0	Mshtml_DisplayTreeOpenStart(Pointer CDispNode)	Start	verbose	Mshtml_DisplayTreeOpen	Always		
+Microsoft-IE	485	0	Mshtml_DisplayTreeOpenStop(Pointer CDispNode)	Stop	verbose	Mshtml_DisplayTreeOpen	Always		
+Microsoft-IE	486	0	Mshtml_CDirectManipulationHandler_TouchHandler_Configuration(Pointer CDoc, Pointer CElement, UInt32 ElementTag, Boolean PrimaryTouchHandler, Boolean IndpendentlyComposed, UInt32 TouchConfiguration)		verbose	Mshtml_CDirectManipulationHandler_TouchHandler_Configuration	Always		
+Microsoft-IE	487	0	Mshtml_CDoc_OnMouseMessageStart(Pointer CDoc, UInt32 MsgID, UInt32 x, UInt32 y)	Start	mshtml	Mshtml_CDoc_OnMouseMessage	Always		
+Microsoft-IE	488	0	Mshtml_CDoc_OnMouseMessageStop(Pointer CDoc)	Stop	mshtml	Mshtml_CDoc_OnMouseMessage	Always		
+Microsoft-IE	489	0	Mshtml_IndependentHitTestStart(Int32 PointerID)	Start	mshtml	Mshtml_IndependentHitTest	Always		
+Microsoft-IE	490	0	Mshtml_IndependentHitTestStop(Int32 PointerID)	Stop	mshtml	Mshtml_IndependentHitTest	Always		
+Microsoft-IE	491	0	Mshtml_IndependentHitTestInfo(Int32 PointerID, Boolean DependentRegion)		mshtml	Mshtml_IndependentHitTestInfo	Always		
+Microsoft-IE	492	0	Mshtml_DocumentSuspend(UInt32 OldState, UInt32 NewState, UInt32 SuspendTimer)		primarynav	Mshtml_DocumentSuspend	Always		
+Microsoft-IE	493	0	Mshtml_Animations_AnimatingStop493(Pointer AnimationClientObject, Pointer TreeNode)	Stop	animation	Mshtml_Animations_Animating	Always		
+Microsoft-IE	493	2	Mshtml_Animations_AnimatingStop493_V2(Pointer AnimationClientObject, Pointer TreeNode, UInt32 ReasonCode, UnicodeString Description)	Stop	animation	Mshtml_Animations_Animating	Always		
+Microsoft-IE	494	0	Mshtml_Animations_TransitioningStop494(Pointer AnimationClientObject, Pointer TreeNode, UInt32 DISPID)	Stop	animation	Mshtml_Animations_Transitioning	Always		
+Microsoft-IE	494	2	Mshtml_Animations_TransitioningStop494_V2(Pointer AnimationClientObject, Pointer TreeNode, UInt32 DISPID, UInt32 ReasonCode, UnicodeString Description)	Stop	animation	Mshtml_Animations_Transitioning	Always		
+Microsoft-IE	495	0	Mshtml_JsCache_SaveEntry(UnicodeString URL, UInt32 DataSize, HexInt32 HRESULT)		mshtml	Mshtml_JsCache_SaveEntry	Always		
+Microsoft-IE	496	0	Mshtml_Composition_Create_ImplicitLayer(Pointer IntersectingLayerNode, Pointer NewImplicitLayerNode, Int32 ImplicitLayerCount)		composition	Mshtml_Composition_Create_ImplicitLayer	Always		
+Microsoft-IE	497	0	Mshtml_Composition_Max_ImplicitLayers_Exceeded()		composition	Mshtml_Composition_Max_ImplicitLayers_Exceeded	Always		
+Microsoft-IE	498	0	Mshtml_HoverDeferral_Undeferred(Pointer Doc, Int32 PointerID, Boolean Timer)		mshtml	Mshtml_HoverDeferral_Undeferred	Always		
+Microsoft-IE	499	0	Mshtml_Composition_Destination_PreRender(Pointer DispNode, Pointer DispLayer, Pointer SBLayer, Int32 LayerWidth, Int32 LayerHeight, Int32 GlobalLayerLeft, Int32 GlobalLayerTop, Int32 GlobalLayerRight, Int32 GlobalLayerBottom, Int32 DestinationType, UInt32 Flags, Float TransformM11, Float TransformM12, Float TransformM21, Float TransformM22, Float TransformDx, Float TransformDy)		composition	Mshtml_Composition_Destination_PreRender	Always		
+Microsoft-IE	500	0	Mshtml_Composition_Create_SBLayer(Pointer Object)		composition	Mshtml_Composition_Create_SBLayer	Always		
+Microsoft-IE	501	0	Mshtml_Composition_Create_SBLayer_Surface(Pointer SBLayer, Pointer DCompSurface, Int32 Width, Int32 Height, UInt32 AlphaMode, UInt32 Flags)		composition	Mshtml_Composition_Create_SBLayer_Surface	Always		
+Microsoft-IE	502	0	Mshtml_Composition_Destroy_SBLayer(Pointer Object)		composition	Mshtml_Composition_Destroy_SBLayer	Always		
+Microsoft-IE	503	0	Mshtml_Composition_Trim_SBLayer(Pointer Object, UInt16 RectsLength, Binary Rects)		composition	Mshtml_Composition_Trim_SBLayer	Always		
+Microsoft-IE	504	0	Mshtml_Composition_Destination_Invalid_Region(Pointer Object, UInt16 RectsLength, Binary Rects)		composition	Mshtml_Composition_Destination_Invalid_Region	Always		
+Microsoft-IE	505	0	Mshtml_CDoc_PaintRect505(UInt32 left, UInt32 top, UInt32 right, UInt32 bottom)		composition	Mshtml_CDoc_PaintRect	Always		
+Microsoft-IE	506	0	Mshtml_Composition_Scroller_PVR(Pointer Scroller, Int32 RectType, Int32 left, Int32 top, Int32 right, Int32 bottom)		composition	Mshtml_Composition_Scroller_PVR	Always		
+Microsoft-IE	507	0	FlipAhead_UpdateTargetStart()	Start	flipahead	FlipAhead_UpdateTarget	Always		
+Microsoft-IE	508	0	FlipAhead_UpdateTargetStop(Boolean Success, UInt32 MatchType, UnicodeString Uri, UnicodeString TextContent, UInt32 FileVersion, UInt32 RuleID)	Stop	flipahead	FlipAhead_UpdateTarget	Always		
+Microsoft-IE	509	0	FlipAhead_UpdateTarget()		flipahead	FlipAhead_UpdateTarget	Always		
+Microsoft-IE	510	0	FlipAhead_InvokeTarget(Boolean Success, UInt32 MatchType, UnicodeString Uri, UnicodeString TextContent, UInt32 FileVersion, UInt32 RuleID)		flipahead	FlipAhead_InvokeTarget	Always		
+Microsoft-IE	511	0	Mshtml_Animations_HighQualityScale_Limited()		animation	Mshtml_Animations_HighQualityScale_Limited	Always		
+Microsoft-IE	512	0	Mshtml_CView_ExecuteInvalidationTasks_Stats(Pointer CView, UInt32 ElementsInvalidated, HexInt32 InvalidationFlags)		verbose invalidation	Mshtml_CView_ExecuteInvalidationTasks_Stats	Always		
+Microsoft-IE	513	0	Mshtml_XML_Http_Request_Open_Sync_On_UI_Thread(UnicodeString URL)		mshtml	Mshtml_XML_Http_Request_Open_Sync_On_UI_Thread	Always		
+Microsoft-IE	514	0	Mshtml_Composition_Layer_Candidacy_Failure(Pointer DispNode, UnicodeString NodeDescription, Int32 ReasonCode, UnicodeString ReasonDescription, Pointer DispNode2, UnicodeString NodeDescription2, Int32 CandidacyCode)		composition	Mshtml_Composition_Layer_Candidacy_Failure	Always		
+Microsoft-IE	515	0	Mshtml_Composition_Layer_Dependent_Subtree(Pointer DispNode, UnicodeString NodeDescription, Boolean HasDependentCompositionEffect, Boolean HasRoundedBorders)		composition	Mshtml_Composition_Layer_Dependent_Subtree	Always		
+Microsoft-IE	516	0	Mshtml_Composition_Layer_Reverted(Pointer DispNode, UnicodeString NodeDescription, Int32 ReasonCode)		composition_verbose	Mshtml_Composition_Layer_Reverted	Always		
+Microsoft-IE	517	0	Mshtml_MediaElement_FullScreenStart(UInt32 MediaElementId)	Start	subsystem mshtml	Mshtml_MediaElement_FullScreen	Always		
+Microsoft-IE	518	0	Mshtml_MediaElement_FullScreenStop(UInt32 MediaElementId)	Stop	subsystem mshtml	Mshtml_MediaElement_FullScreen	Always		
+Microsoft-IE	519	0	Mshtml_MediaElement_FullScreenStart519(UInt32 MediaElementId)	Start	subsystem mshtml	Mshtml_MediaElement_FullScreen	Always		
+Microsoft-IE	520	0	Mshtml_MediaElement_FullScreenStop520(UInt32 MediaElementId)	Stop	subsystem mshtml	Mshtml_MediaElement_FullScreen	Always		
+Microsoft-IE	521	0	Mshtml_Animations_TimerStart()	Start	composition_verbose	Mshtml_Animations_Timer	Always		
+Microsoft-IE	522	0	Mshtml_Animations_TimerStop()	Stop	composition_verbose	Mshtml_Animations_Timer	Always		
+Microsoft-IE	523	0	Mshtml_Animations_InstanceStart(Pointer AnimationInstanceObject, Pointer AnimationStoryboardObject, UInt32 DISPID, Boolean IsTransition)	Start	animation composition_verbose	Mshtml_Animations_Instance	Always		
+Microsoft-IE	524	0	Mshtml_Animations_InstanceStop(Pointer AnimationInstanceObject)	Stop	animation composition_verbose	Mshtml_Animations_Instance	Always		
+Microsoft-IE	525	0	Mshtml_Canvas_Operation(Pointer CHTMLCanvasElement, UInt32 Operation, UInt32 canvasWidth, UInt32 canvasHeight, Float DestLeft, Float DestTop, Float ScaledSizeWidth, Float ScaledSizeHeight)		canvas	Mshtml_Canvas_Operation	Always		
+Microsoft-IE	526	0	Mshtml_EventDebug_DOM_Event_DispatchStart(UnicodeString EventType, Pointer EventParam, Pointer EventTarget)	Start	eventsandtimers	Mshtml_EventDebug_DOM_Event_Dispatch	Always		
+Microsoft-IE	526	1	Mshtml_EventDebug_DOM_Event_DispatchStart_V1(UnicodeString EventType, Pointer EventParam, Pointer EventTarget, UInt64 EventContextId)	Start	eventsandtimers	Mshtml_EventDebug_DOM_Event_Dispatch	Always		
+Microsoft-IE	527	0	Mshtml_EventDebug_DOM_Event_DispatchStop(UnicodeString EventType, Pointer EventParam, Pointer EventTarget, UInt32 PropagationStatus)	Stop	eventsandtimers	Mshtml_EventDebug_DOM_Event_Dispatch	Always		
+Microsoft-IE	527	1	Mshtml_EventDebug_DOM_Event_DispatchStop_V1(UnicodeString EventType, Pointer EventParam, Pointer EventTarget, UInt32 PropagationStatus, UInt64 EventContextId)	Stop	eventsandtimers	Mshtml_EventDebug_DOM_Event_Dispatch	Always		
+Microsoft-IE	528	0	Mshtml_EventDebug_DOM_Event_Invoke_CallbackStart(UnicodeString EventType, Pointer EventParam, Pointer EventTarget, UInt16 EventPhase, UInt32 PropagationStatus, Boolean ListenerUsesCapture, UInt32 FunctionId, UInt64 Object)	Start	eventsandtimers	Mshtml_EventDebug_DOM_Event_Invoke_Callback	Always		
+Microsoft-IE	528	1	Mshtml_EventDebug_DOM_Event_Invoke_CallbackStart_V1(UnicodeString EventType, Pointer EventParam, Pointer EventTarget, UInt16 EventPhase, UInt32 PropagationStatus, Boolean ListenerUsesCapture, UInt32 FunctionId, UInt64 Object, UInt64 ScriptContextId)	Start	eventsandtimers	Mshtml_EventDebug_DOM_Event_Invoke_Callback	Always		
+Microsoft-IE	529	0	Mshtml_EventDebug_DOM_Event_Invoke_CallbackStop(UnicodeString EventType, Pointer EventParam, Pointer EventTarget, UInt16 EventPhase, UInt32 PropagationStatus, Boolean ListenerUsesCapture, UInt32 FunctionId, UInt64 Object)	Stop	eventsandtimers	Mshtml_EventDebug_DOM_Event_Invoke_Callback	Always		
+Microsoft-IE	529	1	Mshtml_EventDebug_DOM_Event_Invoke_CallbackStop_V1(UnicodeString EventType, Pointer EventParam, Pointer EventTarget, UInt16 EventPhase, UInt32 PropagationStatus, Boolean ListenerUsesCapture, UInt32 FunctionId, UInt64 Object, UInt64 ScriptContextId)	Stop	eventsandtimers	Mshtml_EventDebug_DOM_Event_Invoke_Callback	Always		
+Microsoft-IE	530	0	Mshtml_EventDebug_Timer_Invoke_CallbackStart(UInt32 TimerType, UInt32 CallbackCookie, UInt32 FunctionId)	Start	eventsandtimers	Mshtml_EventDebug_Timer_Invoke_Callback	Always		
+Microsoft-IE	530	1	Mshtml_EventDebug_Timer_Invoke_CallbackStart_V1(UInt32 TimerType, UInt32 CallbackCookie, UInt32 FunctionId, UInt32 TimeoutValue, UInt64 ScriptContextId)	Start	eventsandtimers	Mshtml_EventDebug_Timer_Invoke_Callback	Always		
+Microsoft-IE	530	2	Mshtml_EventDebug_Timer_Invoke_CallbackStart_V2(UInt32 TimerType, UInt32 CallbackCookie, UInt32 FunctionId, UInt32 TimeoutValue, UInt64 ScriptContextId, UInt64 EventContextId)	Start	eventsandtimers	Mshtml_EventDebug_Timer_Invoke_Callback	Always		
+Microsoft-IE	531	0	Mshtml_EventDebug_Timer_Invoke_CallbackStop(UInt32 TimerType, UInt32 CallbackCookie, UInt32 FunctionId)	Stop	eventsandtimers	Mshtml_EventDebug_Timer_Invoke_Callback	Always		
+Microsoft-IE	531	1	Mshtml_EventDebug_Timer_Invoke_CallbackStop_V1(UInt32 TimerType, UInt32 CallbackCookie, UInt32 FunctionId, UInt32 TimeoutValue, UInt64 ScriptContextId)	Stop	eventsandtimers	Mshtml_EventDebug_Timer_Invoke_Callback	Always		
+Microsoft-IE	531	2	Mshtml_EventDebug_Timer_Invoke_CallbackStop_V2(UInt32 TimerType, UInt32 CallbackCookie, UInt32 FunctionId, UInt32 TimeoutValue, UInt64 ScriptContextId, UInt64 EventContextId)	Stop	eventsandtimers	Mshtml_EventDebug_Timer_Invoke_Callback	Always		
+Microsoft-IE	532	0	Mshtml_DynamicDependencyTracker(UInt16 ACount, UInt64 objectInstance, UInt64 property, UnicodeString StringValue)		DDT	Mshtml_DynamicDependencyTracker	Always		
+Microsoft-IE	533	0	Mshtml_DynamicDependencyTrackerStart(UInt16 ACount, Binary A)	Start	DDT	Mshtml_DynamicDependencyTracker	Always		
+Microsoft-IE	534	0	Mshtml_DynamicDependencyTrackerStop(UInt16 ACount, Binary A)	Stop	DDT	Mshtml_DynamicDependencyTracker	Always		
+Microsoft-IE	535	0	Mshtml_DynamicDependencyTracker535(UInt16 ACount, Binary A)		DDT	Mshtml_DynamicDependencyTracker	Always		
+Microsoft-IE	536	0	Mshtml_DMTouchTarget_SetContentRect(Int32 left, Int32 top, Int32 right, Int32 bottom, Pointer TouchTarget, UInt32 Scenario)		mshtml	Mshtml_DMTouchTarget_SetContentRect	Always		
+Microsoft-IE	537	0	Mshtml_DMTouchTarget_UpdateContentRectForBusyState(Boolean _fBusy, Boolean fBusy)		mshtml	Mshtml_DMTouchTarget_UpdateContentRectForBusyState	Always		
+Microsoft-IE	538	0	Mshtml_DispNode_Description(Pointer DispNode, UnicodeString NodeDescription)		composition	Mshtml_DispNode_Description	Always		
+Microsoft-IE	539	0	Mshtml_Prefetching(UnicodeString Current_URL, UnicodeString Prefetch_or_Prerender_URL)		mshtml	Mshtml_Prefetching	Always		
+Microsoft-IE	540	0	Mshtml_PrefetchingStart(UnicodeString Current_URL, UnicodeString Prefetch_or_Prerender_URL)	Start	mshtml	Mshtml_Prefetching	Always		
+Microsoft-IE	541	0	Mshtml_PrefetchingStop(UnicodeString Current_URL, UnicodeString Prefetch_or_Prerender_URL)	Stop	mshtml	Mshtml_Prefetching	Always		
+Microsoft-IE	542	0	Mshtml_Prefetching542(UnicodeString Prefetch_or_Prerender_URL, UInt32 Termination_Reason)		mshtml	Mshtml_Prefetching	Always		
+Microsoft-IE	543	0	Mshtml_Prerendering(UnicodeString Current_URL, UnicodeString Prefetch_or_Prerender_URL)		mshtml	Mshtml_Prerendering	Always		
+Microsoft-IE	544	0	Mshtml_Prerendering544(UnicodeString Current_URL, UnicodeString Prefetch_or_Prerender_URL)		mshtml	Mshtml_Prerendering	Always		
+Microsoft-IE	545	0	Mshtml_Prerendering545(UnicodeString Current_URL, UnicodeString Prefetch_or_Prerender_URL)		mshtml	Mshtml_Prerendering	Always		
+Microsoft-IE	546	0	Mshtml_Prerendering546(UnicodeString Prefetch_or_Prerender_URL, UInt32 Termination_Reason)		mshtml	Mshtml_Prerendering	Always		
+Microsoft-IE	547	0	Mshtml_Prerendering547(UnicodeString Current_URL, UnicodeString Prefetch_or_Prerender_URL)		mshtml	Mshtml_Prerendering	Always		
+Microsoft-IE	548	0	Mshtml_Prerendering548(UnicodeString Current_URL, UnicodeString Prefetch_or_Prerender_URL)		mshtml	Mshtml_Prerendering	Always		
+Microsoft-IE	549	0	Mshtml_Composition_IR_Enabled()		subsystem composition	Mshtml_Composition_IR_Enabled	Always		
+Microsoft-IE	550	0	Mshtml_Composition_IR_Disabled(UInt64 ContentTypes)		subsystem composition	Mshtml_Composition_IR_Disabled	Always		
+Microsoft-IE	551	0	Mshtml_PrerenderingStart(UnicodeString Prerender_URL, UInt32 Deferred_Item)	Start	mshtml	Mshtml_Prerendering	Always		
+Microsoft-IE	552	0	Mshtml_PrerenderingStop(UnicodeString Prerender_URL, UInt32 Deferred_Item)	Stop	mshtml	Mshtml_Prerendering	Always		
+Microsoft-IE	553	0	WPGeneralTracing(UnicodeString WPGeneralTracingStr)		generaltracing	WPGeneralTracing	Informational		
+Microsoft-IE	554	0	Mshtml_Scheduler_API()		scheduler_api jscript_verbose	Mshtml_Scheduler_API	Always		
+Microsoft-IE	555	0	Mshtml_RenderTask_Queued(Pointer RenderTask, UInt32 QueueDepth, Boolean OnUIThread, Boolean Async, UnicodeString Description)		subsystem composition	Mshtml_RenderTask_Queued	Always		
+Microsoft-IE	556	0	Mshtml_RenderTask_ProcessingStart(Pointer RenderTask, Boolean Skipped)	Start	subsystem composition	Mshtml_RenderTask_Processing	Always		
+Microsoft-IE	557	0	Mshtml_RenderTask_ProcessingStop(Pointer RenderTask, Boolean Skipped)	Stop	subsystem composition	Mshtml_RenderTask_Processing	Always		
+Microsoft-IE	558	0	Mshtml_RenderTask_RenderThreadStateUpdate(Pointer RenderThread, UInt32 State, UInt32 ExtraInfo)		subsystem composition	Mshtml_RenderTask_RenderThreadStateUpdate	Always		
+Microsoft-IE	559	0	Mshtml_FormatDetectionStart()	Start	mshtml	Mshtml_FormatDetection	Always		
+Microsoft-IE	560	0	Mshtml_FormatDetectionStop()	Stop	mshtml	Mshtml_FormatDetection	Always		
+Microsoft-IE	561	0	Mshtml_FormatDetection_LanguageChange()		verbose	Mshtml_FormatDetection_LanguageChange	Always		
+Microsoft-IE	562	0	Mshtml_FormatDetection_EntityFound(UInt32 EntityType, UInt32 StartIndex, UInt32 EndIndex)		verbose	Mshtml_FormatDetection_EntityFound	Always		
+Microsoft-IE	563	0	Mshtml_FormatDetection_TextExtractionStart()	Start	mshtml	Mshtml_FormatDetection_TextExtraction	Always		
+Microsoft-IE	564	0	Mshtml_FormatDetection_TextExtractionStop()	Stop	mshtml	Mshtml_FormatDetection_TextExtraction	Always		
+Microsoft-IE	565	0	Mshtml_FormatDetection_EntityExtractionStart()	Start	mshtml	Mshtml_FormatDetection_EntityExtraction	Always		
+Microsoft-IE	566	0	Mshtml_FormatDetection_EntityExtractionStop()	Stop	mshtml	Mshtml_FormatDetection_EntityExtraction	Always		
+Microsoft-IE	567	0	Mshtml_FormatDetection_EntityHighlightingStart()	Start	mshtml	Mshtml_FormatDetection_EntityHighlighting	Always		
+Microsoft-IE	568	0	Mshtml_FormatDetection_EntityHighlightingStop()	Stop	mshtml	Mshtml_FormatDetection_EntityHighlighting	Always		
+Microsoft-IE	571	0	Mshtml_TravelLogPrerendering(UnicodeString URL)		mshtml	Mshtml_TravelLogPrerendering	Always		
+Microsoft-IE	572	0	Mshtml_TravelLogPrerendering572(UnicodeString URL)		mshtml	Mshtml_TravelLogPrerendering	Always		
+Microsoft-IE	573	0	Mshtml_TravelLogPrerendering573(UnicodeString URL)		mshtml	Mshtml_TravelLogPrerendering	Always		
+Microsoft-IE	574	0	Mshtml_BFCache(UInt32 FailureFlags, UnicodeString URL)		mshtml	Mshtml_BFCache	Always		
+Microsoft-IE	575	0	Mshtml_EventDebug_XmlHttpRequest_Open(Pointer XHR, UnicodeString Method, UnicodeString Url)		eventsandtimers	Mshtml_EventDebug_XmlHttpRequest_Open	Always		
+Microsoft-IE	576	0	Mshtml_EventDebug_XmlHttpRequest_Relate(Pointer XHR, UInt64 OperationID)		eventsandtimers	Mshtml_EventDebug_XmlHttpRequest_Relate	Always		
+Microsoft-IE	577	0	Mshtml_ElementRundownStart()	Start	element_rundown mshtml	Mshtml_ElementRundown	Always		
+Microsoft-IE	578	0	Mshtml_ElementRundownStop()	Stop	element_rundown mshtml	Mshtml_ElementRundown	Always		
+Microsoft-IE	579	0	Mshtml_EventDebug_MediaQuery_Invoke_CallbackStart(UnicodeString MediaQuery, UInt32 FunctionId, UInt64 ScriptContextId)	Start	eventsandtimers mshtml	Mshtml_EventDebug_MediaQuery_Invoke_Callback	Always		
+Microsoft-IE	579	1	Mshtml_EventDebug_MediaQuery_Invoke_CallbackStart_V1(UnicodeString MediaQuery, UInt32 FunctionId, UInt64 ScriptContextId, UInt64 EventContextId)	Start	eventsandtimers mshtml	Mshtml_EventDebug_MediaQuery_Invoke_Callback	Always		
+Microsoft-IE	580	0	Mshtml_EventDebug_MediaQuery_Invoke_CallbackStop(UnicodeString MediaQuery, UInt32 FunctionId, UInt64 ScriptContextId)	Stop	eventsandtimers mshtml	Mshtml_EventDebug_MediaQuery_Invoke_Callback	Always		
+Microsoft-IE	580	1	Mshtml_EventDebug_MediaQuery_Invoke_CallbackStop_V1(UnicodeString MediaQuery, UInt32 FunctionId, UInt64 ScriptContextId, UInt64 EventContextId)	Stop	eventsandtimers mshtml	Mshtml_EventDebug_MediaQuery_Invoke_Callback	Always		
+Microsoft-IE	581	0	Mshtml_Media_TextTrack_ParsingStart(Pointer Parser, Pointer Stream)	Start	subsystem mshtml	Mshtml_Media_TextTrack_Parsing	Always		
+Microsoft-IE	582	0	Mshtml_Media_TextTrack_ParsingStop(Pointer Parser, Pointer Stream)	Stop	subsystem mshtml	Mshtml_Media_TextTrack_Parsing	Always		
+Microsoft-IE	583	0	Mshtml_Media_TextTrack_ParsingStart583(Pointer Parser, Pointer Stream)	Start	subsystem mshtml	Mshtml_Media_TextTrack_Parsing	Always		
+Microsoft-IE	584	0	Mshtml_Media_TextTrack_ParsingStop584(Pointer Parser, Pointer Stream)	Stop	subsystem mshtml	Mshtml_Media_TextTrack_Parsing	Always		
+Microsoft-IE	585	0	Mshtml_Media_TextTrack_ParsingStart585(Pointer Parser, Pointer Stream)	Start	subsystem mshtml	Mshtml_Media_TextTrack_Parsing	Always		
+Microsoft-IE	586	0	Mshtml_Media_TextTrack_ParsingStop586(Pointer Parser, Pointer Stream)	Stop	subsystem mshtml	Mshtml_Media_TextTrack_Parsing	Always		
+Microsoft-IE	587	0	Mshtml_Media_TextTrack_ParsingStart587(Pointer Parser, Pointer Stream)	Start	subsystem mshtml	Mshtml_Media_TextTrack_Parsing	Always		
+Microsoft-IE	588	0	Mshtml_Media_TextTrack_ParsingStop588(Pointer Parser, Pointer Stream)	Stop	subsystem mshtml	Mshtml_Media_TextTrack_Parsing	Always		
+Microsoft-IE	589	0	Mshtml_Media_TextTrack_ParsingStart589(Pointer Parser, Pointer Stream)	Start	subsystem mshtml	Mshtml_Media_TextTrack_Parsing	Always		
+Microsoft-IE	590	0	Mshtml_Media_TextTrack_ParsingStop590(Pointer Parser, Pointer Stream)	Stop	subsystem mshtml	Mshtml_Media_TextTrack_Parsing	Always		
+Microsoft-IE	591	0	Mshtml_Media_TextTrack_ParsingStart591(Pointer Parser, Pointer Stream)	Start	subsystem mshtml	Mshtml_Media_TextTrack_Parsing	Always		
+Microsoft-IE	592	0	Mshtml_Media_TextTrack_ParsingStop592(Pointer Parser, Pointer Stream)	Stop	subsystem mshtml	Mshtml_Media_TextTrack_Parsing	Always		
+Microsoft-IE	593	0	Mshtml_Media_TextTrack_ParsingStart593(Pointer Parser, Pointer Stream)	Start	subsystem mshtml	Mshtml_Media_TextTrack_Parsing	Always		
+Microsoft-IE	594	0	Mshtml_Media_TextTrack_ParsingStop594(Pointer Parser, Pointer Stream)	Stop	subsystem mshtml	Mshtml_Media_TextTrack_Parsing	Always		
+Microsoft-IE	595	0	Mshtml_View_LinkHighlightShowStart()	Start	subsystem mshtml touch	Mshtml_View_LinkHighlightShow	Always		
+Microsoft-IE	596	0	Mshtml_View_LinkHighlightShowStop()	Stop	subsystem mshtml touch	Mshtml_View_LinkHighlightShow	Always		
+Microsoft-IE	597	0	Mshtml_View_LinkHighlightHideStart()	Start	subsystem mshtml touch	Mshtml_View_LinkHighlightHide	Always		
+Microsoft-IE	598	0	Mshtml_View_LinkHighlightHideStop()	Stop	subsystem mshtml touch	Mshtml_View_LinkHighlightHide	Always		
+Microsoft-IE	599	0	Mshtml_View_LinkHighlightStartFromNormalEventStart()	Start	subsystem mshtml touch	Mshtml_View_LinkHighlightStartFromNormalEvent	Always		
+Microsoft-IE	600	0	Mshtml_View_LinkHighlightStartFromNormalEventStop()	Stop	subsystem mshtml touch	Mshtml_View_LinkHighlightStartFromNormalEvent	Always		
+Microsoft-IE	601	0	Mshtml_View_LinkHighlightStartFromQueryContinueStart()	Start	subsystem mshtml touch	Mshtml_View_LinkHighlightStartFromQueryContinue	Always		
+Microsoft-IE	602	0	Mshtml_View_LinkHighlightStartFromQueryContinueStop()	Stop	subsystem mshtml touch	Mshtml_View_LinkHighlightStartFromQueryContinue	Always		
+Microsoft-IE	603	0	Mshtml_View_LinkHighlightTimerPaintStop()	Stop	subsystem mshtml touch	Mshtml_View_LinkHighlightTimerPaint	Always		
+Microsoft-IE	604	0	Mshtml_View_LinkHighlightTimerPaintStop604()	Stop	subsystem mshtml touch	Mshtml_View_LinkHighlightTimerPaint	Always		
+Microsoft-IE	605	0	Mshtml_View_LinkHighlightPointerUpdateCancelStop()	Stop	subsystem mshtml touch	Mshtml_View_LinkHighlightPointerUpdateCancel	Always		
+Microsoft-IE	606	0	Mshtml_View_LinkHighlightPointerUpdateCancelStop606()	Stop	subsystem mshtml touch	Mshtml_View_LinkHighlightPointerUpdateCancel	Always		
+Microsoft-IE	607	0	Mshtml_Phone_DoubleTapStart()	Start	verbose	Mshtml_Phone_DoubleTap	Always		
+Microsoft-IE	608	0	Mshtml_Phone_DoubleTapStop()	Stop	verbose	Mshtml_Phone_DoubleTap	Always		
+Microsoft-IE	609	0	Mshtml_CDoc_Navigation(Pointer CDoc, Pointer CMarkup, UnicodeString URL)		primarynav mshtml	Mshtml_CDoc_Navigation	Always		
+Microsoft-IE	609	1	Mshtml_CDoc_Navigation_V1(Pointer CDoc, Pointer CMarkup, UnicodeString URL, UInt64 EventContextId)		primarynav mshtml	Mshtml_CDoc_Navigation	Always		
+Microsoft-IE	610	0	Mshtml_WebWorker(Pointer Manager, UInt32 ID, Pointer WorkerObject, Pointer WorkerScope, UnicodeString URL)		mshtml	Mshtml_WebWorker	Always		
+Microsoft-IE	611	0	Mshtml_WebWorkerStart(Pointer Manager, UInt32 ID, Pointer WorkerObject, Pointer WorkerScope, UnicodeString URL)	Start	mshtml	Mshtml_WebWorker	Always		
+Microsoft-IE	612	0	Mshtml_WebWorkerStop(Pointer Manager, UInt32 ID, Pointer WorkerObject, Pointer WorkerScope, UnicodeString URL)	Stop	mshtml	Mshtml_WebWorker	Always		
+Microsoft-IE	613	0	Mshtml_MessagePort(Pointer MessagePort, Pointer Owner, UInt32 OwnerType)		mshtml	Mshtml_MessagePort	Always		
+Microsoft-IE	614	0	Mshtml_MessagePortStart(Pointer Object)	Start	mshtml	Mshtml_MessagePort	Always		
+Microsoft-IE	615	0	Mshtml_MessagePortStop(Pointer Object)	Stop	mshtml	Mshtml_MessagePort	Always		
+Microsoft-IE	616	0	Mshtml_RenderTask_ApplyPSPStart(Pointer RenderTask)	Start	subsystem composition	Mshtml_RenderTask_ApplyPSP	Always		
+Microsoft-IE	617	0	Mshtml_RenderTask_ApplyPSPStop(Pointer RenderTask)	Stop	subsystem composition	Mshtml_RenderTask_ApplyPSP	Always		
+Microsoft-IE	618	0	Mshtml_CDoc_PrepareForSetVisibleStart(Boolean IsDocVisible, Boolean NotifyFrame, UInt32 HR)	Start	mshtml	Mshtml_CDoc_PrepareForSetVisible	Always		
+Microsoft-IE	619	0	Mshtml_CDoc_PrepareForSetVisibleStop(Boolean IsDocVisible, Boolean NotifyFrame, UInt32 HR)	Stop	mshtml	Mshtml_CDoc_PrepareForSetVisible	Always		
+Microsoft-IE	620	0	Mshtml_CDoc_OnSuspendDocumentStart(UInt32 SuspendLevel, UInt32 HR)	Start	mshtml	Mshtml_CDoc_OnSuspendDocument	Always		
+Microsoft-IE	621	0	Mshtml_CDoc_OnSuspendDocumentStop(UInt32 SuspendLevel, UInt32 HR)	Stop	mshtml	Mshtml_CDoc_OnSuspendDocument	Always		
+Microsoft-IE	622	0	Mshtml_CDoc_OnUserVisibilityChangedStart(Boolean Visible, Boolean IsDocInvisible)	Start	mshtml	Mshtml_CDoc_OnUserVisibilityChanged	Always		
+Microsoft-IE	623	0	Mshtml_CDoc_OnUserVisibilityChangedStop(Boolean Visible, Boolean IsDocInvisible)	Stop	mshtml	Mshtml_CDoc_OnUserVisibilityChanged	Always		
+Microsoft-IE	624	0	Mshtml_SetStyle(UInt64 ElementDDTId, UnicodeString StyleProperty, UnicodeString NewValue)		verbose	Mshtml_SetStyle	Always		
+Microsoft-IE	637	0	Mshtml_CGarbageTracker_CollectGarbage(Pointer CGarbageTracker, UInt32 ResourceType, UInt32 Reason, UInt32 RequestedGCType, UInt32 GCType)		mshtml	Mshtml_CGarbageTracker_CollectGarbage	Always		
+Microsoft-IE	638	0	Mshtml_CDoc_PrepareForResizeStart()	Start	mshtml	Mshtml_CDoc_PrepareForResize	Always		
+Microsoft-IE	639	0	Mshtml_CDoc_PrepareForResizeStop()	Stop	mshtml	Mshtml_CDoc_PrepareForResize	Always		
+Microsoft-IE	640	0	Mshtml_CDoc_HostPaintUpdateNotificationStart(Pointer CDoc, Pointer PrimaryCMarkup, UInt32 SourceContext)	Start	mshtml	Mshtml_CDoc_HostPaintUpdateNotification	Always		
+Microsoft-IE	641	0	Mshtml_CDoc_HostPaintUpdateNotificationStop(Pointer CDoc, Pointer PrimaryCMarkup, UInt32 SourceContext)	Stop	mshtml	Mshtml_CDoc_HostPaintUpdateNotification	Always		
+Microsoft-IE	642	0	Mshtml_CDoc_HostPaintUpdateNotification_IgnoredRequest(Pointer CDoc, Pointer PrimaryCMarkup, UInt32 SourceContext)		mshtml	Mshtml_CDoc_HostPaintUpdateNotification_IgnoredRequest	Always		
+Microsoft-IE	643	0	Mshtml_EventDebug_MutationObserverCallbackStart(UInt32 FunctionId, UInt64 ScriptContextId)	Start	eventsandtimers	Mshtml_EventDebug_MutationObserverCallback	Always		
+Microsoft-IE	643	1	Mshtml_EventDebug_MutationObserverCallbackStart_V1(UInt32 FunctionId, UInt64 ScriptContextId, UInt64 EventContextId)	Start	eventsandtimers	Mshtml_EventDebug_MutationObserverCallback	Always		
+Microsoft-IE	644	0	Mshtml_EventDebug_MutationObserverCallbackStop()	Stop	eventsandtimers	Mshtml_EventDebug_MutationObserverCallback	Always		
+Microsoft-IE	644	1	Mshtml_EventDebug_MutationObserverCallbackStop_V1(UInt64 EventContextId)	Stop	eventsandtimers	Mshtml_EventDebug_MutationObserverCallback	Always		
+Microsoft-IE	645	0	Mshtml_EventDebug_MutationObserverCallback(UInt64 TargetElementDdtId, UInt16 Type, UnicodeString ChangedAttributeName, UInt32 AddedChildCount, UInt32 RemovedChildCount)		eventsandtimers	Mshtml_EventDebug_MutationObserverCallback	Always		
+Microsoft-IE	645	1	Mshtml_EventDebug_MutationObserverCallback_V1(UInt64 TargetElementDdtId, UInt16 Type, UnicodeString ChangedAttributeName, UInt32 AddedChildCount, UInt32 RemovedChildCount, UInt64 EventContextId)		eventsandtimers	Mshtml_EventDebug_MutationObserverCallback	Always		
+Microsoft-IE	646	0	Mshtml_Generic_Diagnosis_Hr_Error(AnsiString HrErrorDescription, Pointer ThisPtr, Int32 HR)		mshtml	Mshtml_Generic_Diagnosis_Hr_Error	Error		
+Microsoft-IE	647	0	Mshtml_Generic_Diagnosis_Win_Error(AnsiString WinErrorDescription, Pointer ThisPtr, UInt32 WinError)		mshtml	Mshtml_Generic_Diagnosis_Win_Error	Error		
+Microsoft-IE	648	0	Mshtml_Generic_Diagnosis_Trace_Hr_Error(AnsiString ErrorDescription, Pointer ThisPtr, Int32 HR)		mshtml	Mshtml_Generic_Diagnosis_Trace_Hr_Error	Error		
+Microsoft-IE	649	0	Mshtml_Generic_Diagnosis(AnsiString InfoDescription, Pointer ThisPtr)		mshtml	Mshtml_Generic_Diagnosis	Informational		
+Microsoft-IE	650	0	Mshtml_Generic_Diagnosis_Info1(AnsiString InfoDescription, UnicodeString StringParam, Pointer ThisPtr)		mshtml	Mshtml_Generic_Diagnosis_Info1	Informational		
+Microsoft-IE	651	0	Mshtml_Generic_Diagnosis_Warn0(AnsiString WarningDescription, UnicodeString StringParam, Pointer ThisPtr)		mshtml	Mshtml_Generic_Diagnosis_Warn0	Warning		
+Microsoft-IE	652	0	Mshtml_Generic_Diagnosis_Warn1(AnsiString WarningDescription, UInt32 DwordParam, Pointer ThisPtr)		mshtml	Mshtml_Generic_Diagnosis_Warn1	Warning		
+Microsoft-IE	653	0	Mshtml_Generic_DiagnosisStart(AnsiString InfoDescription, Pointer ThisPtr)	Start	mshtml	Mshtml_Generic_Diagnosis	Verbose		
+Microsoft-IE	654	0	Mshtml_Generic_DiagnosisStop(AnsiString ErrorDescription, Pointer ThisPtr, Int32 HR)	Stop	mshtml	Mshtml_Generic_Diagnosis	Verbose		
+Microsoft-IE	655	0	Mshtml_Video_SizingStart(UInt32 Width, UInt32 Height, UInt32 PresenterWidth, UInt32 PresenterHeight, Float ScaleFactor, UInt32 DisableDComp, UInt32 DCompState, Pointer ThisPtr)	Start	mshtml	Mshtml_Video_Sizing	Verbose		
+Microsoft-IE	656	0	Mshtml_Video_SizingStop(UInt32 Width, UInt32 Height, UInt32 PresenterWidth, UInt32 PresenterHeight, Float ScaleFactor, UInt32 DisableDComp, UInt32 DCompState, Pointer ThisPtr)	Stop	mshtml	Mshtml_Video_Sizing	Verbose		
+Microsoft-IE	657	0	Mshtml_CDoc_UpdateUnitInfo(Pointer CDoc, Float BaseOpticalZoom, Float BaseOpticalZoomDefault, Boolean HostDpiAware, Boolean StaticViewportSizeApplied, Boolean AtViewportHasDeviceWidthOrHeight)		mshtml	Mshtml_CDoc_UpdateUnitInfo	Always		
+Microsoft-IE	658	0	Mshtml_CView_UpdateRootScrollerSizeAndZoom(Pointer CView, Int32 VisualViewportWidth, Int32 VisualViewportHeight, Int32 LayoutViewportWidth, Int32 LayoutViewportHeight, Float BaseOpticalZoom, Boolean IsClamping, Boolean HasAtViewportRule, Boolean HasDeviceWidthOrHeight, Boolean ViewportControllerEnabled, Boolean HasHorizontalScrollbar, Boolean HasVerticalScrollbar, Boolean UpdateUnitInfoZoomOnly)		mshtml	Mshtml_CView_UpdateRootScrollerSizeAndZoom	Always		
+Microsoft-IE	659	0	Mshtml_CView_SetFixedLayoutWidth(Pointer CView, Float FixedLayoutWidthOld, Float FixedLayoutWidthNew)		mshtml	Mshtml_CView_SetFixedLayoutWidth	Always		
+Microsoft-IE	660	0	Mshtml_CView_SetViewportMode_FixedLayoutWidth(Pointer CView, Boolean IsEnabled)		mshtml	Mshtml_CView_SetViewportMode_FixedLayoutWidth	Always		
+Microsoft-IE	661	0	Mshtml_CView_SetViewportMode_VisualHeightExclusion(Pointer CView, Boolean IsEnabled)		mshtml	Mshtml_CView_SetViewportMode_VisualHeightExclusion	Always		
+Microsoft-IE	662	0	Mshtml_CDMScrollableTouchTarget_OnViewportStatusChanged(UInt32 PreviousStatus, UInt32 CurrentStatus, Pointer TouchTargetPtr)		touch	Mshtml_CDMScrollableTouchTarget_OnViewportStatusChanged	Always		
+Microsoft-IE	663	0	Mshtml_CDMScrollableTouchTarget_BeginInteraction(UInt32 ManualGestureConfiguration, UInt16 PointerID, Boolean IsIHTThread, Pointer CDMScrollableTouchTarget)		touch	Mshtml_CDMScrollableTouchTarget_BeginInteraction	Always		
+Microsoft-IE	664	0	Mshtml_CDMTouchTarget_InputTransform(Boolean IsIHTThread, Float mat_11, Float mat_12, Float mat_21, Float mat_22, Float mat_31, Float mat_32, Pointer CDMTouchTarget)		touch	Mshtml_CDMTouchTarget_InputTransform	Always		
+Microsoft-IE	665	0	Mshtml_CDMTouchTarget_DisplayTransform(Boolean IsIHTThread, Float mat_11, Float mat_12, Float mat_21, Float mat_22, Float mat_31, Float mat_32, Pointer CDMTouchTarget)		touch	Mshtml_CDMTouchTarget_DisplayTransform	Always		
+Microsoft-IE	666	0	Mshtml_IndependentHitTest_HitTestPointer(Pointer HwndWorker, UInt16 PointerID, UInt32 ClientX, UInt32 ClientY)		touch	Mshtml_IndependentHitTest_HitTestPointer	Always		
+Microsoft-IE	667	0	Mshtml_CDMScrollableTouchTargetHandler_ContentState(Float ViewportOffsetWidth, Float ViewportOffsetHeight, Float LayoutViewportOffsetWidth, Float LayoutViewportOffsetHeight, Float ZoomLevel, Pointer CDMScrollableTouchTargetHandler)		touch	Mshtml_CDMScrollableTouchTargetHandler_ContentState	Always		
+Microsoft-IE	668	0	Mshtml_CDMScrollableTouchTargetHandler_ContentState668(Float ViewportOffsetWidth, Float ViewportOffsetHeight, Float ZoomLevel, Pointer CDMScrollableTouchTargetHandler)		touch	Mshtml_CDMScrollableTouchTargetHandler_ContentState	Always		
+Microsoft-IE	669	0	Mshtml_CDMScrollableTouchTargetHandler_StartTarget(UInt32 MsgID, Pointer CDMScrollableTouchTargetHandler)		touch	Mshtml_CDMScrollableTouchTargetHandler_StartTarget	Always		
+Microsoft-IE	670	0	Mshtml_CDMTouchTargetHandler_ApplyViewportStatusChange(UInt32 FromStatus, UInt32 ToStatus, Pointer CDMTouchTargetHandler)		touch	Mshtml_CDMTouchTargetHandler_ApplyViewportStatusChange	Always		
+Microsoft-IE	671	0	Mshtml_TouchDiagnosis_GenericInfo_Output(UInt32 GenericInfo, Pointer ThisPtr)		touch	Mshtml_TouchDiagnosis_GenericInfo_Output	Informational		
+Microsoft-IE	672	0	Mshtml_CDMCrossSlideDraggableTouchTarget_AssignDispLayerImpl(Pointer IDispLayer, Pointer CDMCrossSlideDraggableTouchTarget)		draganddrop touch	Mshtml_CDMCrossSlideDraggableTouchTarget_AssignDispLayerImpl	Always		
+Microsoft-IE	673	0	Mshtml_CDMCrossSlideDraggableTouchTarget_AssignDispLayerWithDragState(Pointer IDispLayer, Boolean fIsDraggingRequested, Pointer CDMCrossSlideDraggableTouchTarget)		draganddrop touch	Mshtml_CDMCrossSlideDraggableTouchTarget_AssignDispLayerWithDragState	Always		
+Microsoft-IE	674	0	Mshtml_CDMCrossSlideDraggableTouchTarget_SetupLayerForDragging(Pointer IDispLayer, Pointer CDMCrossSlideDraggableTouchTarget)		draganddrop touch	Mshtml_CDMCrossSlideDraggableTouchTarget_SetupLayerForDragging	Always		
+Microsoft-IE	675	0	Mshtml_CDMCrossSlideDraggableTouchTarget_ClearLayerFromDragging(Pointer IDispLayer, Pointer CDMCrossSlideDraggableTouchTarget)		draganddrop touch	Mshtml_CDMCrossSlideDraggableTouchTarget_ClearLayerFromDragging	Always		
+Microsoft-IE	676	0	Mshtml_CDMCrossSlideDraggableTouchTargetHandler_UpdateCrossSlideOffset(Float ViewportOffsetWidth, Float ViewportOffsetHeight, Float ZoomLevel, Pointer CDMCrossSlideDraggableTouchTargetHandler)		draganddrop touch	Mshtml_CDMCrossSlideDraggableTouchTargetHandler_UpdateCrossSlideOffset	Always		
+Microsoft-IE	677	0	Mshtml_CDMHoldDraggableTouchTarget_OnInteraction(UInt32 DManipInteractionType, Pointer CDMHoldDraggableTouchTarget)		draganddrop touch	Mshtml_CDMHoldDraggableTouchTarget_OnInteraction	Always		
+Microsoft-IE	678	0	Mshtml_CDMDraggableTouchTarget_SetDragDropConfiguration(UInt32 DManipDragDropConfiguration, Pointer CDMDraggableTouchTarget)		draganddrop touch	Mshtml_CDMDraggableTouchTarget_SetDragDropConfiguration	Always		
+Microsoft-IE	679	0	Mshtml_CDMDraggableTouchTarget_OnDragDropStatusChangeImp(UInt32 PreviousStatus, UInt32 CurrentStatus, Pointer CDMDraggableTouchTarget)		draganddrop touch	Mshtml_CDMDraggableTouchTarget_OnDragDropStatusChangeImp	Always		
+Microsoft-IE	680	0	Mshtml_CDMDraggableTouchTarget_BeginInteraction(UInt16 PointerID, Boolean IsIHTThread, Pointer CDMDraggableTouchTarget)		draganddrop touch	Mshtml_CDMDraggableTouchTarget_BeginInteraction	Always		
+Microsoft-IE	681	0	Mshtml_CDMDraggableTouchTarget_HandleDragStateChanges(Boolean fIsDraggingRequested, Boolean fIsPreviewCurrentlyDisplayed, Pointer CDMDraggableTouchTarget)		draganddrop touch	Mshtml_CDMDraggableTouchTarget_HandleDragStateChanges	Always		
+Microsoft-IE	682	0	Mshtml_CDMDraggableTouchTarget_ReturnTargetToOriginalLocation(Int32 rcWidth, Int32 rcHeight, Pointer CDMDraggableTouchTarget)		draganddrop touch	Mshtml_CDMDraggableTouchTarget_ReturnTargetToOriginalLocation	Always		
+Microsoft-IE	683	0	Mshtml_CDMDraggableTouchTarget_OnViewportStatusChanged(UInt32 PreviousStatus, UInt32 CurrentStatus, Pointer TouchTargetPtr)		draganddrop touch	Mshtml_CDMDraggableTouchTarget_OnViewportStatusChanged	Always		
+Microsoft-IE	684	0	Mshtml_CDMDraggableTouchTarget_ProcessTouchTargetStatusChange(Boolean fTouchStarting, Pointer CDMDraggableTouchTarget)		draganddrop touch	Mshtml_CDMDraggableTouchTarget_ProcessTouchTargetStatusChange	Always		
+Microsoft-IE	685	0	Mshtml_CDMDraggableTouchTargetHandler_OnDragInitiated(Pointer CElement, Pointer CDMDraggableTouchTargetHandler)		draganddrop touch	Mshtml_CDMDraggableTouchTargetHandler_OnDragInitiated	Always		
+Microsoft-IE	686	0	Mshtml_CStorage(UInt32 SharedMemoryHandle, UInt32 TotalBufferSizeInBytes)		mshtml	Mshtml_CStorage	Always		
+Microsoft-IE	687	0	Mshtml_CStorage687(HexInt32 FailureHresult, UInt32 TotalBufferSizeInBytes)		mshtml	Mshtml_CStorage	Always		
+Microsoft-IE	688	0	Mshtml_CStorage688(UInt32 SharedMemoryHandle)		mshtml	Mshtml_CStorage	Always		
+Microsoft-IE	689	0	Mshtml_CStorage689(UInt32 SharedMemoryHandle, HexInt32 FailureHresult)		mshtml	Mshtml_CStorage	Always		
+Microsoft-IE	690	0	Mshtml_CStorage690(UInt32 FailureReason, HexInt32 FailureHresult, UnicodeString TargetURL, UInt32 EmulationMode)		mshtml	Mshtml_CStorage	Always		
+Microsoft-IE	691	0	Mshtml_CTouchHelper_OnPointerMessage_StartDoubleTapTimer()		touch	Mshtml_CTouchHelper_OnPointerMessage_StartDoubleTapTimer	Always		
+Microsoft-IE	692	0	Mshtml_CTouchHelper_DoubleTapOnTick_CommitDeferredActionsForDoubleTapZoomCancel()		touch	Mshtml_CTouchHelper_DoubleTapOnTick_CommitDeferredActionsForDoubleTapZoomCancel	Always		
+Microsoft-IE	693	0	Mshtml_CTouchHelper_PreFilterMessageForCapture_CommitDeferredActionsForDoubleTapZoomCancel()		touch	Mshtml_CTouchHelper_PreFilterMessageForCapture_CommitDeferredActionsForDoubleTapZoomCancel	Always		
+Microsoft-IE	694	0	Mshtml_CTouchHelper_PreFilterMessageForCapture_CommitDeferredActionsForDoubleTapZoom(Pointer pNodeFirstTap, Int32 pointX, Int32 pointY)		touch	Mshtml_CTouchHelper_PreFilterMessageForCapture_CommitDeferredActionsForDoubleTapZoom	Always		
+Microsoft-IE	695	0	Mshtml_CDoubleTap_PanAndZoom(UInt32 Reason, Float DesiredOffsetX, Float DesiredOffsetY, Float DesiredZoomFactor)		touch	Mshtml_CDoubleTap_PanAndZoom	Always		
+Microsoft-IE	696	0	Mshtml_CDoubleTap_IsDoubleTapAllowed(Pointer pNodeHit, Boolean fAllowed)		touch	Mshtml_CDoubleTap_IsDoubleTapAllowed	Always		
+Microsoft-IE	697	0	Mshtml_CTouchHelper_IsDoubleClick(Boolean fPotentialDoubleTap, Boolean fDoubleTapTimerPending, UInt32 pMessageTime, UInt64 MaxTimeForSecondTap, Int32 FirstTapPointX, Int32 FirstTapPointY, Int32 SecondTapPointX, Int32 SecondTapPointY, Boolean fIsDoubleClick)		touch	Mshtml_CTouchHelper_IsDoubleClick	Always		
+Microsoft-IE	698	0	Mshtml_Animations_Instance(Pointer AnimationClientObject, Pointer AnimationInstanceObject, UInt32 DISPID)		animation	Mshtml_Animations_Instance	Always		
+Microsoft-IE	699	0	Mshtml_Animations_Instance699(Pointer DispNode, Pointer IndAnimationInstanceObject, UInt32 DISPID)		animation	Mshtml_Animations_Instance	Always		
+Microsoft-IE	700	0	Mshtml_CTouchHelper_HandleTouchMessage_Info(HexInt32 Msg, UInt64 TimeStamp, UInt32 PointerId, UInt32 FrameId, UInt32 PointerType, UInt32 ScreenX, UInt32 ScreenY, UInt32 ClientX, UInt32 ClientY, UInt32 ButtonChanged, HexInt32 ButtonState, HexInt32 PointerFlags)		touch	Mshtml_CTouchHelper_HandleTouchMessage_Info	Always		
+Microsoft-IE	701	0	Mshtml_DragAndDrop_Fire_DragEnd(Pointer Element, Int32 DropEffect, Int32 ScreenLocationX, Int32 ScreenLocationY)		draganddrop	Mshtml_DragAndDrop_Fire_DragEnd	Always		
+Microsoft-IE	702	0	Mshtml_DragAndDrop_Fire_DragEnter(Pointer Element, Int32 DropEffect, Int32 ScreenLocationX, Int32 ScreenLocationY)		draganddrop	Mshtml_DragAndDrop_Fire_DragEnter	Always		
+Microsoft-IE	703	0	Mshtml_DragAndDrop_Fire_DragOver(Pointer Element, Int32 DropEffect, Int32 ScreenLocationX, Int32 ScreenLocationY)		draganddrop	Mshtml_DragAndDrop_Fire_DragOver	Always		
+Microsoft-IE	704	0	Mshtml_DragAndDrop_Fire_DragStart(Pointer Element, Int32 DropEffect, Int32 ScreenLocationX, Int32 ScreenLocationY)		draganddrop	Mshtml_DragAndDrop_Fire_DragStart	Always		
+Microsoft-IE	705	0	Mshtml_DragAndDrop_Fire_Drop(Pointer Element, Int32 DropEffect, Int32 ScreenLocationX, Int32 ScreenLocationY)		draganddrop	Mshtml_DragAndDrop_Fire_Drop	Always		
+Microsoft-IE	706	0	Mshtml_DragAndDrop_Fire_Drag(Pointer Element, Int32 DropEffect, Int32 ScreenLocationX, Int32 ScreenLocationY)		draganddrop	Mshtml_DragAndDrop_Fire_Drag	Always		
+Microsoft-IE	707	0	Mshtml_DragAndDrop_Fire_DragLeave(Pointer Element, Int32 DropEffect, Int32 ScreenLocationX, Int32 ScreenLocationY)		draganddrop	Mshtml_DragAndDrop_Fire_DragLeave	Always		
+Microsoft-IE	708	0	Mshtml_Post_MSManipulationStateChange(Pointer Element, UInt32 PreviousState, UInt32 CurrentState)		touch	Mshtml_Post_MSManipulationStateChange	Always		
+Microsoft-IE	709	0	Mshtml_Fire_MSManipulationStateChange(Pointer Element, UInt32 PreviousState, UInt32 CurrentState)		touch	Mshtml_Fire_MSManipulationStateChange	Always		
+Microsoft-IE	710	0	Mshtml_CDragPreview_RenderPreviewStart(Pointer DragPreview)	Start	draganddrop touch	Mshtml_CDragPreview_RenderPreview	Always		
+Microsoft-IE	711	0	Mshtml_CDragPreview_RenderPreviewStop(Pointer DragPreview, HexInt32 FailureHresult)	Stop	draganddrop touch	Mshtml_CDragPreview_RenderPreview	Always		
+Microsoft-IE	712	0	Mshtml_CDragPreview_InitializeStart(Pointer DragPreview)	Start	draganddrop touch	Mshtml_CDragPreview_Initialize	Always		
+Microsoft-IE	713	0	Mshtml_CDragPreview_InitializeStop(Pointer DragPreview, HexInt32 FailureHresult)	Stop	draganddrop touch	Mshtml_CDragPreview_Initialize	Always		
+Microsoft-IE	714	0	Mshtml_CDragPreview_CreateSurfaceStart(Pointer DragPreview)	Start	draganddrop touch	Mshtml_CDragPreview_CreateSurface	Always		
+Microsoft-IE	715	0	Mshtml_CDragPreview_CreateSurfaceStop(Pointer DragPreview, HexInt32 FailureHresult)	Stop	draganddrop touch	Mshtml_CDragPreview_CreateSurface	Always		
+Microsoft-IE	716	0	Mshtml_CDragPreview_HookupStart(Pointer DragPreview)	Start	draganddrop touch	Mshtml_CDragPreview_Hookup	Always		
+Microsoft-IE	717	0	Mshtml_CDragPreview_HookupStop(Pointer DragPreview, HexInt32 FailureHresult)	Stop	draganddrop touch	Mshtml_CDragPreview_Hookup	Always		
+Microsoft-IE	718	0	Mshtml_CTouchDragDropHelper_DragInitiatedStart(Pointer TouchDragDropHelper, Pointer Element)	Start	draganddrop touch	Mshtml_CTouchDragDropHelper_DragInitiated	Always		
+Microsoft-IE	719	0	Mshtml_CTouchDragDropHelper_DragInitiatedStop(Pointer TouchDragDropHelper, Pointer Element, HexInt32 FailureHresult)	Stop	draganddrop touch	Mshtml_CTouchDragDropHelper_DragInitiated	Always		
+Microsoft-IE	720	0	Mshtml_CTouchDragDropHelper_DragCancelledStart(Pointer TouchDragDropHelper)	Start	draganddrop touch	Mshtml_CTouchDragDropHelper_DragCancelled	Always		
+Microsoft-IE	721	0	Mshtml_CTouchDragDropHelper_DragCancelledStop(Pointer TouchDragDropHelper, HexInt32 FailureHresult)	Stop	draganddrop touch	Mshtml_CTouchDragDropHelper_DragCancelled	Always		
+Microsoft-IE	722	0	Mshtml_CTouchDragDropHelper_OnDraggingStart(Pointer TouchDragDropHelper)	Start	draganddrop touch	Mshtml_CTouchDragDropHelper_OnDragging	Always		
+Microsoft-IE	723	0	Mshtml_CTouchDragDropHelper_OnDraggingStop(Pointer TouchDragDropHelper, HexInt32 FailureHresult)	Stop	draganddrop touch	Mshtml_CTouchDragDropHelper_OnDragging	Always		
+Microsoft-IE	724	0	Mshtml_CTouchDragDropHelper_OnDroppedStart(Pointer TouchDragDropHelper)	Start	draganddrop touch	Mshtml_CTouchDragDropHelper_OnDropped	Always		
+Microsoft-IE	725	0	Mshtml_CTouchDragDropHelper_OnDroppedStop(Pointer TouchDragDropHelper, HexInt32 FailureHresult)	Stop	draganddrop touch	Mshtml_CTouchDragDropHelper_OnDropped	Always		
+Microsoft-IE	726	0	Mshtml_CTouchDragDropHelper_ShutdownStart(Pointer TouchDragDropHelper)	Start	draganddrop touch	Mshtml_CTouchDragDropHelper_Shutdown	Always		
+Microsoft-IE	727	0	Mshtml_CTouchDragDropHelper_ShutdownStop(Pointer TouchDragDropHelper)	Stop	draganddrop touch	Mshtml_CTouchDragDropHelper_Shutdown	Always		
+Microsoft-IE	728	0	Mshtml_Prerendering728(UnicodeString FlipAhead_Target_URL, UInt32 Target_Source_Method)		mshtml	Mshtml_Prerendering	Always		
+Microsoft-IE	729	0	Mshtml_DMTouchTargetHandler_TouchEnd()		touch	Mshtml_DMTouchTargetHandler_TouchEnd	Always		
+Microsoft-IE	730	0	Mshtml_WebOCEvents_BeforeNavigate(Pointer CMarkup, Boolean Canceled)		webocevents	Mshtml_WebOCEvents_BeforeNavigate	Always		
+Microsoft-IE	731	0	Mshtml_WebOCEvents_BeforeNavigateRefresh(Pointer CMarkup, UInt32 RefreshLevel, Boolean Canceled)		webocevents	Mshtml_WebOCEvents_BeforeNavigateRefresh	Always		
+Microsoft-IE	732	0	Mshtml_WebOCEvents_NavigateComplete(Pointer CMarkup)		webocevents	Mshtml_WebOCEvents_NavigateComplete	Always		
+Microsoft-IE	733	0	Mshtml_WebOCEvents_DownloadBegin(Pointer CMarkup)		webocevents	Mshtml_WebOCEvents_DownloadBegin	Always		
+Microsoft-IE	734	0	Mshtml_WebOCEvents_DownloadComplete(Pointer CMarkup)		webocevents	Mshtml_WebOCEvents_DownloadComplete	Always		
+Microsoft-IE	735	0	Mshtml_WebOCEvents_DocumentComplete(Pointer CMarkup)		webocevents	Mshtml_WebOCEvents_DocumentComplete	Always		
+Microsoft-IE	736	0	Mshtml_WebOCEvents_NavigateError(Pointer CMarkup, UInt32 hrReason)		webocevents	Mshtml_WebOCEvents_NavigateError	Always		
+Microsoft-IE	737	0	Mshtml_WebOCEvents_NavigateRedirected(Pointer CMarkup, UnicodeString RedirectURL, UInt32 StatusCode, Boolean Canceled)		webocevents	Mshtml_WebOCEvents_NavigateRedirected	Always		
+Microsoft-IE	738	0	Mshtml_WebOCEvents_DelegateNavigate(Pointer CMarkup)		webocevents	Mshtml_WebOCEvents_DelegateNavigate	Always		
+Microsoft-IE	739	0	Mshtml_WebOCEvents_DOMContentLoaded(Pointer CMarkup)		webocevents	Mshtml_WebOCEvents_DOMContentLoaded	Always		
+Microsoft-IE	740	0	Mshtml_MemoryProtector_ReclaimMemoryWithoutProtectionStart(Pointer CMemoryProtector, UInt64 StackSize, UInt64 Blocks, UInt64 Bytes)	Start	mshtml	Mshtml_MemoryProtector_ReclaimMemoryWithoutProtection	Always		
+Microsoft-IE	741	0	Mshtml_MemoryProtector_ReclaimMemoryWithoutProtectionStop(Pointer CMemoryProtector)	Stop	mshtml	Mshtml_MemoryProtector_ReclaimMemoryWithoutProtection	Always		
+Microsoft-IE	742	0	Mshtml_MemoryProtector_SyncMarkStart(Pointer CMemoryProtector, UInt64 StackSize, UInt64 Blocks, UInt64 Bytes)	Start	mshtml	Mshtml_MemoryProtector_SyncMark	Always		
+Microsoft-IE	743	0	Mshtml_MemoryProtector_SyncMarkStop(Pointer CMemoryProtector)	Stop	mshtml	Mshtml_MemoryProtector_SyncMark	Always		
+Microsoft-IE	744	0	Mshtml_MemoryProtector_ReclaimUnmarkedStart(Pointer CMemoryProtector, UInt64 Blocks, UInt64 Bytes)	Start	mshtml	Mshtml_MemoryProtector_ReclaimUnmarked	Always		
+Microsoft-IE	745	0	Mshtml_MemoryProtector_ReclaimUnmarkedStop(Pointer CMemoryProtector, UInt64 MarkedBlocks, UInt64 MarkedBytes)	Stop	mshtml	Mshtml_MemoryProtector_ReclaimUnmarked	Always		
+Microsoft-IE	746	0	Edgehtml_HtmlPopup(UInt32 HRESULT, UInt32 Left, UInt32 Right, UInt32 Top, UInt32 Bottom)		mshtml	Edgehtml_HtmlPopup	Always		
+Microsoft-IE	747	0	Mshtml_CSP_AddPolicyStart(Pointer CContentSecurityPolicy, UInt32 PolicyType)	Start	mshtml	Mshtml_CSP_AddPolicy	Always		
+Microsoft-IE	748	0	Mshtml_CSP_AddPolicyStop(Pointer CContentSecurityPolicy, UInt32 PolicyType, Boolean Added)	Stop	mshtml	Mshtml_CSP_AddPolicy	Always		
+Microsoft-IE	749	0	Mshtml_CSP_CheckPolicyStart(Pointer CContentSecurityPolicy, UInt32 ResourceDirectiveType)	Start	mshtml	Mshtml_CSP_CheckPolicy	Always		
+Microsoft-IE	750	0	Mshtml_CSP_CheckPolicyStop(Pointer CContentSecurityPolicy, UInt32 ResourceDirectiveType, Boolean Allowed)	Stop	mshtml	Mshtml_CSP_CheckPolicy	Always		
+Microsoft-IE	751	0	EdgeHTML_Webview_AppPermissionResponse(UnicodeString URL, UInt32 PermissionType, UInt32 PermissionState, Boolean IsPrimaryResponse)		mshtml keyword_200000000000	EdgeHTML_Webview_AppPermissionResponse	Always		
+Microsoft-IE	752	0	Mshtml_Download_Initiator(UnicodeString DownloadedURL, Pointer BindInfo, Pointer CHtmPre, Pointer CPre, Pointer CDoc, Pointer CWindow, UnicodeString WindowURL, UnicodeString URL, UInt32 Line, UInt32 Offset, Boolean Speculative, Boolean LookAhead, Boolean PreParserRestarted, UInt32 Context, UInt32 Initiator, UInt32 Source, UInt32 LookAheadCount)		mshtml	Mshtml_Download_Initiator	Always		
+Microsoft-IE	753	0	Mshtml_CrossCDoc_NodeAdoptionAttempt(UInt32 PID, UInt32 TID, UnicodeString SourceUrl, UnicodeString TargetUrl, UnicodeString Func)		mshtml keyword_200000000000	Mshtml_CrossCDoc_NodeAdoptionAttempt	Always		
+Microsoft-IE	754	0	Mshtml_Ortc_Candidate_GatheringStart(Pointer ThisPtr)	Start	mshtml	Mshtml_Ortc_Candidate_Gathering	Always		
+Microsoft-IE	755	0	Mshtml_Ortc_Candidate_GatheringStop(Pointer ThisPtr)	Stop	mshtml	Mshtml_Ortc_Candidate_Gathering	Always		
+Microsoft-IE	756	0	Mshtml_Ortc_Candidate_Gathering(Int32 HR, Pointer ThisPtr)		mshtml	Mshtml_Ortc_Candidate_Gathering	Always		
+Microsoft-IE	757	0	Mshtml_Ortc_Connectivity_Check(UnicodeString ICEState, Pointer ThisPtr)		mshtml	Mshtml_Ortc_Connectivity_Check	Always		
+Microsoft-IE	758	0	Mshtml_Ortc_Dtls_State(UnicodeString DTLSState, Pointer ThisPtr)		mshtml	Mshtml_Ortc_Dtls_State	Always		
+Microsoft-IE	759	0	Mshtml_Ortc_Create_Render_Sample_Queue(AnsiString SampleQueueType, Pointer ThisPtr)		mshtml	Mshtml_Ortc_Create_Render_Sample_Queue	Always		
+Microsoft-IE	760	0	Mshtml_Ortc_Render_Sample_Dropped(UInt64 DroppedSampleCount, Pointer ThisPtr)		mshtml	Mshtml_Ortc_Render_Sample_Dropped	Always		
+Microsoft-IE	761	0	Mshtml_Ortc_Audio_Render_Sample_Time_Push(UInt64 SampleCount, UInt64 CurrentTimeMSec, Pointer ThisPtr)		mshtml	Mshtml_Ortc_Audio_Render_Sample_Time_Push	Always		
+Microsoft-IE	762	0	Mshtml_Ortc_Audio_Render_Sample_Time_Pull(UInt64 SampleCount, UInt64 CurrentTimeMSec, Pointer ThisPtr)		mshtml	Mshtml_Ortc_Audio_Render_Sample_Time_Pull	Always		
+Microsoft-IE	763	0	Mshtml_Ortc_Audio_Render_Sample_Time_Delivery(UInt64 SampleCount, UInt64 CurrentTimeMSec, Pointer ThisPtr)		mshtml	Mshtml_Ortc_Audio_Render_Sample_Time_Delivery	Always		
+Microsoft-IE	764	0	Mshtml_Ortc_Video_Render_Sample_Time_Push(UInt64 SampleCount, UInt64 CurrentTimeMSec, Pointer ThisPtr)		mshtml	Mshtml_Ortc_Video_Render_Sample_Time_Push	Always		
+Microsoft-IE	765	0	Mshtml_Ortc_Video_Render_Sample_Time_Pull(UInt64 SampleCount, UInt64 CurrentTimeMSec, Pointer ThisPtr)		mshtml	Mshtml_Ortc_Video_Render_Sample_Time_Pull	Always		
+Microsoft-IE	766	0	Mshtml_Ortc_Video_Render_Sample_Time_Delivery(UInt64 SampleCount, UInt64 CurrentTimeMSec, Pointer ThisPtr)		mshtml	Mshtml_Ortc_Video_Render_Sample_Time_Delivery	Always		
+Microsoft-IE	767	0	Mshtml_Selectors_Api_Query_Selector(UInt32 SelectorType, UnicodeString Selector, UInt32 TargetType, Pointer Target, Boolean IsQueryAll)		verbose	Mshtml_Selectors_Api_Query_Selector	Always		
+Microsoft-IE	768	0	Mshtml_Image_Pooling_Budget_EnforceStart(UInt32 Type, UInt32 Budget, UInt32 Current)	Start	mshtml	Mshtml_Image_Pooling_Budget_Enforce	Always		
+Microsoft-IE	769	0	Mshtml_Image_Pooling_Budget_EnforceStop(UInt32 Type, UInt32 Budget, UInt32 Current)	Stop	mshtml	Mshtml_Image_Pooling_Budget_Enforce	Always		
+Microsoft-IE	770	0	Mshtml_Ortc_Set_Video_Size_Preference(UInt32 Width, UInt32 Height, Pointer VideoElement, Pointer RemoteMediaStreamTrack, Pointer ThisPtr)		mshtml	Mshtml_Ortc_Set_Video_Size_Preference	Always		
+Microsoft-IE	771	0	Mshtml_Ortc_Audio_Drift_Render_Sample_Dropped(UInt64 DriftedTimeMSec, UInt64 LastSampleEndTimeMSec, UInt64 CurrentPresentationClockTimeMSec, UInt64 AudioDriftDroppedSampleCount, Pointer ThisPtr)		mshtml	Mshtml_Ortc_Audio_Drift_Render_Sample_Dropped	Always		
+Microsoft-IE	772	0	Mshtml_Ortc_Audio_Clock_Stall_Render_Sample_Dropped(UInt64 LastSampleEndTimeMSec, UInt64 CurrentPresentationClockTimeMSec, UInt64 AudioDriftDroppedSampleCount, Pointer ThisPtr)		mshtml	Mshtml_Ortc_Audio_Clock_Stall_Render_Sample_Dropped	Always		
+Microsoft-IE	773	0	Mshtml_Ortc_Capture_Sample_Requested(UInt64 SampleRequstedCount, UInt64 SampleDeliveredCount, UInt64 SampleReceivedCount, UInt64 SampleDroppedCount, UInt32 TrackKind, Pointer ThisPtr)		mshtml	Mshtml_Ortc_Capture_Sample_Requested	Always		
+Microsoft-IE	774	0	Mshtml_Ortc_Capture_Sample_Delivered(UInt64 SampleRequstedCount, UInt64 SampleDeliveredCount, UInt64 SampleReceivedCount, UInt64 SampleDroppedCount, UInt32 TrackKind, Pointer ThisPtr)		mshtml	Mshtml_Ortc_Capture_Sample_Delivered	Always		
+Microsoft-IE	775	0	Mshtml_Ortc_Capture_Sample_Received(UInt64 SampleRequstedCount, UInt64 SampleDeliveredCount, UInt64 SampleReceivedCount, UInt64 SampleDroppedCount, UInt32 TrackKind, Pointer ThisPtr)		mshtml	Mshtml_Ortc_Capture_Sample_Received	Always		
+Microsoft-IE	776	0	Mshtml_Ortc_Capture_Sample_Dropped(UInt64 SampleRequstedCount, UInt64 SampleDeliveredCount, UInt64 SampleReceivedCount, UInt64 SampleDroppedCount, UInt32 TrackKind, Pointer ThisPtr)		mshtml	Mshtml_Ortc_Capture_Sample_Dropped	Always		
+Microsoft-IE	777	0	Mshtml_Ortc_Ice_Transport_StatsStart(UInt64 OutstandingStatsRequestCount, HexInt32 HrTask, Pointer ThisPtr)	Start	mshtml	Mshtml_Ortc_Ice_Transport_Stats	Always		
+Microsoft-IE	778	0	Mshtml_Ortc_Ice_Transport_StatsStop(UInt64 OutstandingStatsRequestCount, HexInt32 HrTask, Pointer ThisPtr)	Stop	mshtml	Mshtml_Ortc_Ice_Transport_Stats	Always		
+Microsoft-IE	779	0	Mshtml_Ortc_Sender_StatsStart(UInt64 OutstandingStatsRequestCount, HexInt32 HrTask, Pointer ThisPtr)	Start	mshtml	Mshtml_Ortc_Sender_Stats	Always		
+Microsoft-IE	780	0	Mshtml_Ortc_Sender_StatsStop(UInt64 OutstandingStatsRequestCount, HexInt32 HrTask, Pointer ThisPtr)	Stop	mshtml	Mshtml_Ortc_Sender_Stats	Always		
+Microsoft-IE	781	0	Mshtml_Ortc_Receiver_StatsStart(UInt64 OutstandingStatsRequestCount, HexInt32 HrTask, Pointer ThisPtr)	Start	mshtml	Mshtml_Ortc_Receiver_Stats	Always		
+Microsoft-IE	782	0	Mshtml_Ortc_Receiver_StatsStop(UInt64 OutstandingStatsRequestCount, HexInt32 HrTask, Pointer ThisPtr)	Stop	mshtml	Mshtml_Ortc_Receiver_Stats	Always		
+Microsoft-IE	783	0	Mshtml_Media_Capture_Sample_Requested(UInt64 SampleRequstedCount, UInt64 SampleDeliveredCount, UInt64 SampleReceivedCount, UInt64 SampleDroppedCount, UInt32 TrackKind, Pointer ThisPtr)		mshtml	Mshtml_Media_Capture_Sample_Requested	Always		
+Microsoft-IE	784	0	Mshtml_Media_Capture_Sample_Delivered(UInt64 SampleRequstedCount, UInt64 SampleDeliveredCount, UInt64 SampleReceivedCount, UInt64 SampleDroppedCount, UInt32 TrackKind, Pointer ThisPtr)		mshtml	Mshtml_Media_Capture_Sample_Delivered	Always		
+Microsoft-IE	785	0	Mshtml_Media_Capture_Sample_Received(UInt64 SampleRequstedCount, UInt64 SampleDeliveredCount, UInt64 SampleReceivedCount, UInt64 SampleDroppedCount, UInt32 TrackKind, Pointer ThisPtr)		mshtml	Mshtml_Media_Capture_Sample_Received	Always		
+Microsoft-IE	786	0	Mshtml_Media_Capture_Sample_Dropped(UInt64 SampleRequstedCount, UInt64 SampleDeliveredCount, UInt64 SampleReceivedCount, UInt64 SampleDroppedCount, UInt32 TrackKind, Pointer ThisPtr)		mshtml	Mshtml_Media_Capture_Sample_Dropped	Always		

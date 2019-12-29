@@ -1,0 +1,8 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Dwm-Redir	1	0	RedirGetSharedHandle(UInt32 FlipChain, UInt32 SerialNumber, UInt32 BuffersEmpty, UInt32 Index, UInt32 IndexUnconfirmed, Pointer hSurface)		DwmRedir	RedirGetSharedHandle	Informational		
+Microsoft-Windows-Dwm-Redir	2	0	RedirUpdateSharedSurface(UInt32 FlipChain, UInt32 SerialNumber, UInt32 BuffersEmpty, UInt32 Index, UInt32 IndexUnconfirmed, Pointer hSurface)		DwmRedir	RedirUpdateSharedSurface	Informational		
+Microsoft-Windows-Dwm-Redir	3	0	RedirAsyncFlush(UInt32 ProcessID, UInt32 AsyncFlushType)		DwmRedir	RedirAsyncFlush	Informational		
+Microsoft-Windows-Dwm-Redir	4	0	RedirDxResize(Pointer Hwnd, UInt32 xSizeOld, UInt32 ySizeOld, Pointer formatOld, UInt32 xSizeNew, UInt32 ySizeNew, Pointer formatNew)		DwmRedir	RedirDxResize	Informational		
+Microsoft-Windows-Dwm-Redir	7	0	RedirDwmUpdate(Pointer Hwnd, UInt32 MessageId, UInt32 Flags)		DwmRedir	RedirDwmUpdate	Informational		
+Microsoft-Windows-Dwm-Redir	8	0	RedirSetLivePreviewExcludeHwnd(Pointer hwnd, Boolean fExcludedFromLivePreview)		DwmRedir	RedirSetLivePreviewExcludeHwnd	Informational		
+Microsoft-Windows-Dwm-Redir	9	0	RedirProcessLogicalSurface(UInt64 logicalSurfaceHandle, UInt64 spriteHandle, UInt64 windowHandle)		DwmRedir	RedirProcessLogicalSurface	Informational		

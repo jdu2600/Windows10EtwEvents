@@ -1,0 +1,152 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-TaskScheduler	100	0	TaskStartedStart(UnicodeString TaskName, UnicodeString UserContext, GUID InstanceId)	Start	ForcedIdleProcessing	TaskStarted	Informational		
+Microsoft-Windows-TaskScheduler	101	0	TaskStartFailedLaunchFailure(UnicodeString TaskName, UnicodeString UserContext, UInt32 ResultCode)	LaunchFailure	ForcedIdleProcessing	TaskStartFailed	Error		
+Microsoft-Windows-TaskScheduler	102	0	TaskcompletedStop(UnicodeString TaskName, UnicodeString UserContext, GUID InstanceId)	Stop	ForcedIdleProcessing	Taskcompleted	Informational		
+Microsoft-Windows-TaskScheduler	103	0	ActionstartfailedRunFailure(UnicodeString TaskName, GUID InstanceId, UnicodeString UserContext, UInt32 ResultCode)	RunFailure	ForcedIdleProcessing	Actionstartfailed	Error		
+Microsoft-Windows-TaskScheduler	104	0	Logonfailure(UnicodeString UserName, UnicodeString ErrorDescription, UInt32 ResultCode)			Logonfailure	Error		
+Microsoft-Windows-TaskScheduler	105	0	Impersonationfailure(UnicodeString Context, UInt32 ResultCode)			Impersonationfailure	Error		
+Microsoft-Windows-TaskScheduler	106	0	Taskregistered(UnicodeString TaskName, UnicodeString UserContext)			Taskregistered	Informational		
+Microsoft-Windows-TaskScheduler	107	0	Tasktriggeredonscheduler(UnicodeString TaskName, GUID InstanceId)			Tasktriggeredonscheduler	Informational		
+Microsoft-Windows-TaskScheduler	108	0	Tasktriggeredonevent(UnicodeString TaskName, GUID InstanceId)			Tasktriggeredonevent	Informational		
+Microsoft-Windows-TaskScheduler	109	0	Tasktriggeredbyregistration(UnicodeString TaskName, GUID InstanceId)			Tasktriggeredbyregistration	Informational		
+Microsoft-Windows-TaskScheduler	110	0	Tasktriggeredbyuser(UnicodeString TaskName, GUID InstanceId, UnicodeString UserContext)			Tasktriggeredbyuser	Informational		
+Microsoft-Windows-TaskScheduler	111	0	TaskterminatedTermination(UnicodeString TaskName, GUID InstanceId)	Termination	ForcedIdleProcessing	Taskterminated	Informational		
+Microsoft-Windows-TaskScheduler	112	0	Launchconditionnotmet,networkunavailable(UnicodeString TaskName)			Launchconditionnotmet,networkunavailable	Warning		
+Microsoft-Windows-TaskScheduler	113	0	Taskregisteredwithoutsometriggers(UnicodeString TaskName, UInt32 ResultCode)			Taskregisteredwithoutsometriggers	Warning		
+Microsoft-Windows-TaskScheduler	114	0	Missedtaskstarted(UnicodeString TaskName, GUID InstanceId)			Missedtaskstarted	Warning		
+Microsoft-Windows-TaskScheduler	115	0	Taskupdateordeletionerror(UInt32 ResultCode)			Taskupdateordeletionerror	Error		
+Microsoft-Windows-TaskScheduler	116	0	Taskregisteredwithoutcredentials(UnicodeString TaskName, UInt32 ResultCode)			Taskregisteredwithoutcredentials	Warning		
+Microsoft-Windows-TaskScheduler	117	0	TasktriggeredonIdle(UnicodeString TaskName, GUID InstanceId)			TasktriggeredonIdle	Informational		
+Microsoft-Windows-TaskScheduler	118	0	Tasktriggeredbycomputerstartup(UnicodeString TaskName, GUID InstanceId)			Tasktriggeredbycomputerstartup	Informational		
+Microsoft-Windows-TaskScheduler	119	0	Tasktriggeredonlogon(UnicodeString TaskName, UnicodeString UserName, GUID InstanceId)			Tasktriggeredonlogon	Informational		
+Microsoft-Windows-TaskScheduler	120	0	Tasktriggeredonlocalconsoleconnect(UnicodeString TaskName, UnicodeString UserName, GUID InstanceId)			Tasktriggeredonlocalconsoleconnect	Informational		
+Microsoft-Windows-TaskScheduler	121	0	Tasktriggeredonlocalconsoledisconnect(UnicodeString TaskName, UnicodeString UserName, GUID InstanceId)			Tasktriggeredonlocalconsoledisconnect	Informational		
+Microsoft-Windows-TaskScheduler	122	0	Tasktriggeredonremoteconsoleconnect(UnicodeString TaskName, UnicodeString UserName, GUID InstanceId)			Tasktriggeredonremoteconsoleconnect	Informational		
+Microsoft-Windows-TaskScheduler	123	0	Tasktriggeredonremoteconsoledisconnect(UnicodeString TaskName, UnicodeString UserName, GUID InstanceId)			Tasktriggeredonremoteconsoledisconnect	Informational		
+Microsoft-Windows-TaskScheduler	124	0	Tasktriggeredbylockingtheworkstation(UnicodeString TaskName, UnicodeString UserName, GUID InstanceId)			Tasktriggeredbylockingtheworkstation	Informational		
+Microsoft-Windows-TaskScheduler	125	0	Tasktriggeredbyunlockingtheworkstation(UnicodeString TaskName, UnicodeString UserName, GUID InstanceId)			Tasktriggeredbyunlockingtheworkstation	Informational		
+Microsoft-Windows-TaskScheduler	126	0	Taskrestartedonfailure(UnicodeString TaskName, UInt32 ResultCode)			Taskrestartedonfailure	Warning		
+Microsoft-Windows-TaskScheduler	127	0	Taskrestartedonfailure_127(UnicodeString TaskName)			Taskrestartedonfailure_127	Informational		
+Microsoft-Windows-TaskScheduler	128	0	Launchconditionnotmet,beyondendtime(UnicodeString TaskName)			Launchconditionnotmet,beyondendtime	Informational		
+Microsoft-Windows-TaskScheduler	129	0	CreatedTaskProcess(UnicodeString TaskName, UnicodeString Path, UInt32 ProcessID, UInt32 Priority)			CreatedTaskProcess	Informational		
+Microsoft-Windows-TaskScheduler	130	0	Launchconditionnotmet,servicebusy(UnicodeString TaskName, UInt32 ResultCode)			Launchconditionnotmet,servicebusy	Error		
+Microsoft-Windows-TaskScheduler	131	0	Launchconditionnotmet,quotaexceeded(UnicodeString TaskName, UInt32 CurrentQuota)			Launchconditionnotmet,quotaexceeded	Error		
+Microsoft-Windows-TaskScheduler	132	0	Launchconditionwarning,quotaapproaching(UInt32 CurrentQuota)			Launchconditionwarning,quotaapproaching	Warning		
+Microsoft-Windows-TaskScheduler	133	0	Launchconditionnotmet,quotaexceeded_133(UnicodeString TaskName, UnicodeString TaskEngineName, UnicodeString UserName)			Launchconditionnotmet,quotaexceeded_133	Error		
+Microsoft-Windows-TaskScheduler	134	0	Launchconditionwarning,quotaapproaching_134(UnicodeString TaskEngineName, UnicodeString UserName)			Launchconditionwarning,quotaapproaching_134	Warning		
+Microsoft-Windows-TaskScheduler	135	0	Launchconditionnotmet,machinenotidle(UnicodeString TaskName)			Launchconditionnotmet,machinenotidle	Warning		
+Microsoft-Windows-TaskScheduler	140	0	Taskregistrationupdated(UnicodeString TaskName, UnicodeString UserName)			Taskregistrationupdated	Informational		
+Microsoft-Windows-TaskScheduler	141	0	Taskregistrationdeleted(UnicodeString TaskName, UnicodeString UserName)			Taskregistrationdeleted	Informational		
+Microsoft-Windows-TaskScheduler	142	0	Taskdisabled(UnicodeString TaskName, UnicodeString UserName)			Taskdisabled	Informational		
+Microsoft-Windows-TaskScheduler	145	0	Tasktriggeredbycomingoutofsuspendmode()			Tasktriggeredbycomingoutofsuspendmode	Informational		
+Microsoft-Windows-TaskScheduler	146	0	Taskloadingatservicestartupfailed(UnicodeString TaskName, UInt32 ResultCode)			Taskloadingatservicestartupfailed	Error		
+Microsoft-Windows-TaskScheduler	147	0	TaskimagerecoveredafterOSmigration(UnicodeString TaskName)			TaskimagerecoveredafterOSmigration	Informational		
+Microsoft-Windows-TaskScheduler	148	0	TaskimagerecoveringfailedafterOSmigration(UnicodeString TaskName, HexInt32 ResultCode)			TaskimagerecoveringfailedafterOSmigration	Error		
+Microsoft-Windows-TaskScheduler	149	0	Taskisusingacombinationofpropertiesthatisincompatiblewiththeschedulingengine(UnicodeString TaskName)			Taskisusingacombinationofpropertiesthatisincompatiblewiththeschedulingengine	Warning		
+Microsoft-Windows-TaskScheduler	150	0	Taskregistrationoneventfailed(UnicodeString TaskName, UInt32 ResultCode)			Taskregistrationoneventfailed	Error		
+Microsoft-Windows-TaskScheduler	151	0	TaskSchedulerfailedtoinstantiatetaskatservicestartup.(UnicodeString TaskName, UnicodeString LogPoint, UInt32 ResultCode)			TaskSchedulerfailedtoinstantiatetaskatservicestartup.	Error		
+Microsoft-Windows-TaskScheduler	152	0	Taskwasredirectedtolegacyengine(UnicodeString TaskName)			Taskwasredirectedtolegacyengine	Warning		
+Microsoft-Windows-TaskScheduler	153	0	Missedtaskstartrejected(UnicodeString TaskName)			Missedtaskstartrejected	Warning		
+Microsoft-Windows-TaskScheduler	155	0	TaskCompletionPending(UnicodeString TaskPath)		ForcedIdleProcessing	TaskCompletionPending	Informational		
+Microsoft-Windows-TaskScheduler	200	0	ActionstartedStart(UnicodeString TaskName, UnicodeString ActionName, GUID TaskInstanceId)	Start		Actionstarted	Informational		
+Microsoft-Windows-TaskScheduler	200	1	ActionstartedStart_V1(UnicodeString TaskName, UnicodeString ActionName, GUID TaskInstanceId, UInt32 EnginePID)	Start		Actionstarted	Informational		
+Microsoft-Windows-TaskScheduler	201	0	ActioncompletedStop(UnicodeString TaskName, UnicodeString ActionName, GUID TaskInstanceId)	Stop		Actioncompleted	Informational		
+Microsoft-Windows-TaskScheduler	201	1	ActioncompletedStop_V1(UnicodeString TaskName, GUID TaskInstanceId, UnicodeString ActionName, UInt32 ResultCode)	Stop		Actioncompleted	Informational		
+Microsoft-Windows-TaskScheduler	201	2	ActioncompletedStop_V2(UnicodeString TaskName, GUID TaskInstanceId, UnicodeString ActionName, UInt32 ResultCode, UInt32 EnginePID)	Stop		Actioncompleted	Informational		
+Microsoft-Windows-TaskScheduler	202	0	ActionfailedRunFailure(UnicodeString TaskName, GUID TaskInstanceId, UnicodeString ActionName, UInt32 ResultCode)	RunFailure		Actionfailed	Error		
+Microsoft-Windows-TaskScheduler	202	1	ActionfailedRunFailure_V1(UnicodeString TaskName, GUID TaskInstanceId, UnicodeString ActionName, UInt32 ResultCode, UInt32 EnginePID)	RunFailure		Actionfailed	Error		
+Microsoft-Windows-TaskScheduler	203	0	ActionfailedtostartLaunchFailure(UnicodeString TaskName, GUID TaskInstanceId, UnicodeString ActionName, UInt32 ResultCode)	LaunchFailure		Actionfailedtostart	Error		
+Microsoft-Windows-TaskScheduler	204	0	Taskfailedtostartonevent(UnicodeString TaskName, UInt32 ResultCode)			Taskfailedtostartonevent	Error		
+Microsoft-Windows-TaskScheduler	205	0	Taskfailedtostartoneventpatternmatch(UnicodeString TaskName, UInt32 ResultCode)			Taskfailedtostartoneventpatternmatch	Error		
+Microsoft-Windows-TaskScheduler	300	0	TaskenginelaunchedStart(UnicodeString TaskEngineName, UInt32 ProcessID)	Start		Taskenginelaunched	Informational		
+Microsoft-Windows-TaskScheduler	301	0	TaskengineproperlyshutdownStop(UnicodeString TaskEngineName)	Stop		Taskengineproperlyshutdown	Informational		
+Microsoft-Windows-TaskScheduler	303	0	TaskengineshutdownduetoerrorFailure(UnicodeString TaskEngineName, UnicodeString ErrorDescription, UInt32 ResultCode)	Failure		Taskengineshutdownduetoerror	Error		
+Microsoft-Windows-TaskScheduler	304	0	Tasksenttoengine(UnicodeString TaskName, UnicodeString TaskEngineName, GUID TaskInstanceId)			Tasksenttoengine	Informational		
+Microsoft-Windows-TaskScheduler	305	0	TaskfailedtobesenttoengineFailure(UnicodeString TaskName, UnicodeString TaskEngineName, UInt32 ResultCode)	Failure		Taskfailedtobesenttoengine	Error		
+Microsoft-Windows-TaskScheduler	306	0	EnginefailedtoreceivethetaskFailure(UnicodeString TaskEngineName, UInt32 ResultCode)	Failure		Enginefailedtoreceivethetask	Error		
+Microsoft-Windows-TaskScheduler	307	0	ServiceEngineconnectionfailure(UnicodeString TaskEngineName, UInt32 ResultCode)	Failure		ServiceEngineconnectionfailure	Error		
+Microsoft-Windows-TaskScheduler	308	0	ServiceEngineconnected(UnicodeString TaskEngineName)			ServiceEngineconnected	Informational		
+Microsoft-Windows-TaskScheduler	309	0	Engineorphaned(UInt32 TaskCount, UnicodeString TaskEngineName)			Engineorphaned	Error		
+Microsoft-Windows-TaskScheduler	310	0	TaskEnginestarted(UnicodeString TaskEngineName, UnicodeString Command, UInt32 ProcessID, UInt32 ThreadID)			TaskEnginestarted	Informational		
+Microsoft-Windows-TaskScheduler	311	0	TaskEnginefailedtostartLaunchFailure(UnicodeString TaskEngineName, UnicodeString Command, UnicodeString ErrorDescription, UInt32 ResultCode)	LaunchFailure		TaskEnginefailedtostart	Error		
+Microsoft-Windows-TaskScheduler	312	0	TaskEnginejobobjectcreated(UnicodeString TaskEngineName)			TaskEnginejobobjectcreated	Informational		
+Microsoft-Windows-TaskScheduler	313	0	ServiceEnginechannelready(UnicodeString TaskEngineName)			ServiceEnginechannelready	Informational		
+Microsoft-Windows-TaskScheduler	314	0	TaskEngineidle(UnicodeString TaskEngineName)			TaskEngineidle	Informational		
+Microsoft-Windows-TaskScheduler	315	0	ServiceEngineconnectionfailure_315Failure(UnicodeString TaskEngineName, UInt32 ResultCode)	Failure		ServiceEngineconnectionfailure_315	Error		
+Microsoft-Windows-TaskScheduler	316	0	EnginefailedtosendmessagetoserviceFailure(UnicodeString TaskEngineName, UInt32 ResultCode)	Failure		Enginefailedtosendmessagetoservice	Error		
+Microsoft-Windows-TaskScheduler	317	0	TaskEnginestarted_317Start(UnicodeString TaskEngineName)	Start		TaskEnginestarted_317	Informational		
+Microsoft-Windows-TaskScheduler	318	0	Taskengineproperlyshutdown_318Stop(UnicodeString TaskEngineName)	Stop		Taskengineproperlyshutdown_318	Informational		
+Microsoft-Windows-TaskScheduler	319	0	TaskEnginereceivedmessagetostarttaskStart(UnicodeString TaskEngineName, UnicodeString TaskName)	Start		TaskEnginereceivedmessagetostarttask	Informational		
+Microsoft-Windows-TaskScheduler	320	0	TaskEnginereceivedmessagetostoptaskStop(UnicodeString TaskEngineName, GUID TaskInstanceId)	Stop		TaskEnginereceivedmessagetostoptask	Informational		
+Microsoft-Windows-TaskScheduler	322	0	Launchrequestignored,instancealreadyrunning(UnicodeString TaskName, GUID TaskInstanceId)			Launchrequestignored,instancealreadyrunning	Warning		
+Microsoft-Windows-TaskScheduler	323	0	Launchrequestacknowledged,currentinstancestopped(UnicodeString TaskName, GUID StoppedTaskInstanceId, GUID NewTaskInstanceId)			Launchrequestacknowledged,currentinstancestopped	Warning		
+Microsoft-Windows-TaskScheduler	324	0	Launchrequestqueued,instancealreadyrunning(UnicodeString TaskName, GUID QueuedTaskInstanceId, GUID RunningTaskInstanceId)			Launchrequestqueued,instancealreadyrunning	Warning		
+Microsoft-Windows-TaskScheduler	325	0	Launchrequestqueued(UnicodeString TaskName, GUID QueuedTaskInstanceId)			Launchrequestqueued	Warning		
+Microsoft-Windows-TaskScheduler	326	0	Launchconditionnotmet,computeronbatteries(UnicodeString TaskName)			Launchconditionnotmet,computeronbatteries	Warning		
+Microsoft-Windows-TaskScheduler	327	0	Taskstoppingduetoswitchingtobatteries(UnicodeString TaskName, GUID TaskInstanceId)			Taskstoppingduetoswitchingtobatteries	Informational		
+Microsoft-Windows-TaskScheduler	328	0	Taskstoppingduetocomputernotidle(UnicodeString TaskName, GUID TaskInstanceId)			Taskstoppingduetocomputernotidle	Informational		
+Microsoft-Windows-TaskScheduler	329	0	Taskstoppingduetotimeoutreached(UnicodeString TaskName, GUID TaskInstanceId)			Taskstoppingduetotimeoutreached	Informational		
+Microsoft-Windows-TaskScheduler	330	0	Taskstoppingduetouserrequest(UnicodeString TaskName, GUID TaskInstanceId, UnicodeString UserContext)			Taskstoppingduetouserrequest	Informational		
+Microsoft-Windows-TaskScheduler	331	0	Taskfailedtostopontimeout(UnicodeString TaskName, GUID TaskInstanceId, UInt32 ResultCode)			Taskfailedtostopontimeout	Warning		
+Microsoft-Windows-TaskScheduler	332	0	Launchconditionnotmet,usernotlogged_on(UnicodeString TaskName, UnicodeString UserName)			Launchconditionnotmet,usernotlogged_on	Warning		
+Microsoft-Windows-TaskScheduler	333	0	Launchconditionnotmet,sessionisRemoteAppSession(UnicodeString TaskName)			Launchconditionnotmet,sessionisRemoteAppSession	Warning		
+Microsoft-Windows-TaskScheduler	334	0	Launchconditionnotmet,sessionisaWorkerSession(UnicodeString TaskName)			Launchconditionnotmet,sessionisaWorkerSession	Warning		
+Microsoft-Windows-TaskScheduler	400	0	ServicestartedStart()	Start		Servicestarted	Informational		
+Microsoft-Windows-TaskScheduler	401	0	ServicefailedtostartLaunchFailure(UnicodeString ErrorDescription, UInt32 ResultCode)	LaunchFailure		Servicefailedtostart	Critical		
+Microsoft-Windows-TaskScheduler	402	0	ServiceisshuttingdownStop()	Stop		Serviceisshuttingdown	Informational		
+Microsoft-Windows-TaskScheduler	403	0	ServicecriticalerrorFailure(UnicodeString ErrorDescription, UInt32 ResultCode)	Failure		Servicecriticalerror	Error		
+Microsoft-Windows-TaskScheduler	404	0	ServiceRPCerror(UnicodeString ErrorDescription, UInt32 ResultCode)			ServiceRPCerror	Critical		
+Microsoft-Windows-TaskScheduler	405	0	ServiceCOMerror(UInt32 ResultCode)			ServiceCOMerror	Critical		
+Microsoft-Windows-TaskScheduler	406	0	Credstoreinitializationerror(UInt32 ResultCode)			Credstoreinitializationerror	Critical		
+Microsoft-Windows-TaskScheduler	407	0	LSAinitializationerror(UInt32 ResultCode)			LSAinitializationerror	Critical		
+Microsoft-Windows-TaskScheduler	408	0	Idledetectionerror(UInt32 ResultCode)			Idledetectionerror	Error		
+Microsoft-Windows-TaskScheduler	409	0	Timechangenotificationerror(UInt32 ResultCode)			Timechangenotificationerror	Critical		
+Microsoft-Windows-TaskScheduler	410	0	Wakeuptimererror(UInt32 ResultCode)			Wakeuptimererror	Error		
+Microsoft-Windows-TaskScheduler	411	0	Servicesignaledtimechange()			Servicesignaledtimechange	Informational		
+Microsoft-Windows-TaskScheduler	412	0	Servicecriticalerror(UInt32 ResultCode)			Servicecriticalerror	Error		
+Microsoft-Windows-TaskScheduler	413	0	Servicecriticalerror413(UInt32 ResultCode)			Servicecriticalerror	Error		
+Microsoft-Windows-TaskScheduler	414	0	TaskMisconfiguration(UnicodeString TaskName, UnicodeString Parameter)			TaskMisconfiguration	Warning		
+Microsoft-Windows-TaskScheduler	500	0	IdleTaskRegister(UInt32 IdleTaskId, UInt32 ProcessId)		ForcedIdleProcessing	IdleTaskRegister	Informational		
+Microsoft-Windows-TaskScheduler	501	0	IdleTaskUnregister(UInt32 IdleTaskId, UInt32 ProcessId)		ForcedIdleProcessing	IdleTaskUnregister	Informational		
+Microsoft-Windows-TaskScheduler	502	0	IdleTaskExecuteStart(UInt32 IdleTaskId, UInt32 ProcessId)	Start	ForcedIdleProcessing	IdleTaskExecute	Informational		
+Microsoft-Windows-TaskScheduler	503	0	IdleTaskExecuteStop(UInt32 IdleTaskId, UInt32 ProcessId)	Stop	ForcedIdleProcessing	IdleTaskExecute	Informational		
+Microsoft-Windows-TaskScheduler	504	0	IdleTaskNotifyStart(UInt32 IdleTaskId, UInt32 ProcessId)	Start	ForcedIdleProcessing	IdleTaskNotify	Informational		
+Microsoft-Windows-TaskScheduler	505	0	IdleTaskNotifyStop(UInt32 IdleTaskId, UInt32 ProcessId)	Stop	ForcedIdleProcessing	IdleTaskNotify	Informational		
+Microsoft-Windows-TaskScheduler	506	0	IdleTaskExplicitProcessingStart()	Start	ForcedIdleProcessing	IdleTaskExplicitProcessing	Informational		
+Microsoft-Windows-TaskScheduler	507	0	IdleTaskExplicitProcessingStop()	Stop	ForcedIdleProcessing	IdleTaskExplicitProcessing	Informational		
+Microsoft-Windows-TaskScheduler	508	0	IdleTaskExplicitProcessingActive()		ForcedIdleProcessing	IdleTaskExplicitProcessingActive	Informational		
+Microsoft-Windows-TaskScheduler	509	0	IdleTaskPowerNotificationReceived(UnicodeString NotificationType, UInt32 State)		ForcedIdleProcessing	IdleTaskPowerNotificationReceived	Informational		
+Microsoft-Windows-TaskScheduler	510	0	IdleTaskPerfTrackResourceConsumption(UInt32 NoIdleReason, UInt32 DATA1, UInt32 DATA2)		ForcedIdleProcessing	IdleTaskPerfTrackResourceConsumption	Informational		
+Microsoft-Windows-TaskScheduler	511	0	IdleTaskPerfTrackIdleExit(UInt32 TimeSinceUserNotPresent, UInt32 DATA)		ForcedIdleProcessing	IdleTaskPerfTrackIdleExit	Informational		
+Microsoft-Windows-TaskScheduler	512	0	IdleCheckPoint(UInt32 DetectionResult, UInt32 Reason)		ForcedIdleProcessing	IdleCheckPoint	Informational		
+Microsoft-Windows-TaskScheduler	700	0	Compatibilitymodulestarted()			Compatibilitymodulestarted	Informational		
+Microsoft-Windows-TaskScheduler	701	0	Compatibilitymodulefailedtostart(UInt32 ResultCode)			Compatibilitymodulefailedtostart	Error		
+Microsoft-Windows-TaskScheduler	702	0	CompatibilitymoduleRPCfailed(UInt32 ResultCode)			CompatibilitymoduleRPCfailed	Error		
+Microsoft-Windows-TaskScheduler	703	0	CompatibilitymoduleNetScheduleAPIfailed(UInt32 ResultCode)			CompatibilitymoduleNetScheduleAPIfailed	Error		
+Microsoft-Windows-TaskScheduler	704	0	CompatibilitymoduleLSAfailed(UInt32 ResultCode)			CompatibilitymoduleLSAfailed	Error		
+Microsoft-Windows-TaskScheduler	705	0	Compatibilitymoduledirectorymonitoringfailed(UInt32 ResultCode)			Compatibilitymoduledirectorymonitoringfailed	Error		
+Microsoft-Windows-TaskScheduler	706	0	Compatibilitymoduletaskstatusupdatefailed(UnicodeString TaskName, UInt32 TaskStatus, UInt32 ResultCode)			Compatibilitymoduletaskstatusupdatefailed	Error		
+Microsoft-Windows-TaskScheduler	707	0	Compatibilitymoduletaskdeletionfailed(UnicodeString TaskName, UInt32 ResultCode)			Compatibilitymoduletaskdeletionfailed	Error		
+Microsoft-Windows-TaskScheduler	708	0	Compatibilitymodulesecuritydescriptorfailed(UnicodeString SecurityDescriptor, UnicodeString TaskName, UInt32 ResultCode)			Compatibilitymodulesecuritydescriptorfailed	Error		
+Microsoft-Windows-TaskScheduler	709	0	Compatibilitymoduletaskupdatefailed(UnicodeString TaskName, UInt32 ResultCode)			Compatibilitymoduletaskupdatefailed	Error		
+Microsoft-Windows-TaskScheduler	710	0	Compatibilitymoduletasksupgradefailed(UInt32 ResultCode)			Compatibilitymoduletasksupgradefailed	Error		
+Microsoft-Windows-TaskScheduler	711	0	Compatibilitymoduletasksupgradefailed711(UnicodeString Account, UInt32 ResultCode)			Compatibilitymoduletasksupgradefailed	Error		
+Microsoft-Windows-TaskScheduler	712	0	Compatibilitymoduletasksupgradefailed712(UInt32 ResultCode)			Compatibilitymoduletasksupgradefailed	Error		
+Microsoft-Windows-TaskScheduler	713	0	Compatibilitymoduletasksupgradefailed713(UnicodeString TaskName, UInt32 ResultCode)			Compatibilitymoduletasksupgradefailed	Error		
+Microsoft-Windows-TaskScheduler	714	0	Compatibilitymoduletasksupgradefailed714(UnicodeString TaskName, UInt32 ResultCode)			Compatibilitymoduletasksupgradefailed	Error		
+Microsoft-Windows-TaskScheduler	715	0	Compatibilitymoduletasksupgradefailed715(UInt32 ResultCode)			Compatibilitymoduletasksupgradefailed	Error		
+Microsoft-Windows-TaskScheduler	716	0	Compatibilitymoduletasksupgradefailed716(UInt32 ResultCode)			Compatibilitymoduletasksupgradefailed	Error		
+Microsoft-Windows-TaskScheduler	717	0	Compatibilitymoduletasksupgradeundetermined(UInt32 ResultCode)			Compatibilitymoduletasksupgradeundetermined	Error		
+Microsoft-Windows-TaskScheduler	718	0	Credentialstoreupgradefailed(UInt32 ResultCode)			Credentialstoreupgradefailed	Error		
+Microsoft-Windows-TaskScheduler	719	0	TaskSchedulerOperationallogwasdisabled()			TaskSchedulerOperationallogwasdisabled	Informational		
+Microsoft-Windows-TaskScheduler	800	0	Maintenancestatehaschanged(UInt32 hc_stateid, UnicodeString LastRunDateTime)			Maintenancestatehaschanged	Informational		
+Microsoft-Windows-TaskScheduler	801	0	Maintenancelaunchfailed(UInt32 ErrorCode)			Maintenancelaunchfailed	Error		
+Microsoft-Windows-TaskScheduler	802	0	Maintenancere_configurationfailed(UInt32 ErrorCode)			Maintenancere_configurationfailed	Error		
+Microsoft-Windows-TaskScheduler	803	0	MaintenanceSchedulerenginetaskerror(UnicodeString Task, UInt32 ErrorCode)			MaintenanceSchedulerenginetaskerror	Error		
+Microsoft-Windows-TaskScheduler	804	0	Maintenancetaskcycledependencydetected(UnicodeString Task)			Maintenancetaskcycledependencydetected	Error		
+Microsoft-Windows-TaskScheduler	805	0	Maintenancetaskisbehinddeadline(UnicodeString Task)			Maintenancetaskisbehinddeadline	Warning		
+Microsoft-Windows-TaskScheduler	806	0	Maintenancetaskprocessingerror(UnicodeString Task, UInt32 InfoCode)			Maintenancetaskprocessingerror	Error		
+Microsoft-Windows-TaskScheduler	807	0	Maintenancecomplete(UInt32 LauncherId)			Maintenancecomplete	Informational		
+Microsoft-Windows-TaskScheduler	808	0	Maintenancewakeuprequested(UnicodeString Task)			Maintenancewakeuprequested	Warning		
+Microsoft-Windows-TaskScheduler	998	0	MethodFailure(UnicodeString Name, UInt32 HRESULT, UnicodeString File, UInt32 Line)	Failure		MethodFailure	Verbose		
+Microsoft-Windows-TaskScheduler	999	0	Debug(UnicodeString String)			Debug	Verbose		

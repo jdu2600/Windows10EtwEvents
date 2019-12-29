@@ -1,0 +1,78 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-CodeIntegrity	3001	0	CreateSectionUnsignedDriverLoaded(UInt16 FileNameLength, UnicodeString FileNameBuffer)	UnsignedDriverLoaded		CreateSection	Warning		
+Microsoft-Windows-CodeIntegrity	3002	0	CreateSectionPageHashNotFound(UInt16 FileNameLength, UnicodeString FileNameBuffer)	PageHashNotFound		CreateSection	Error		
+Microsoft-Windows-CodeIntegrity	3003	0	CreateSectionPageHashNotFound_DbgAttached(UInt16 FileNameLength, UnicodeString FileNameBuffer)	PageHashNotFound_DbgAttached		CreateSection	Warning		
+Microsoft-Windows-CodeIntegrity	3004	0	CreateSectionFileHashNotFound(UInt16 FileNameLength, UnicodeString FileNameBuffer)	FileHashNotFound		CreateSection	Error		
+Microsoft-Windows-CodeIntegrity	3005	0	CreateSectionFileHashNotFound_DbgAttached(UInt16 FileNameLength, UnicodeString FileNameBuffer)	FileHashNotFound_DbgAttached		CreateSection	Warning		
+Microsoft-Windows-CodeIntegrity	3006	0	PageHashFoundInCatalog(UInt16 FileNameLength, UnicodeString FileNameBuffer, UInt16 CatalogNameLength, UnicodeString CatalogNameBuffer)			PageHashFoundInCatalog	Informational		
+Microsoft-Windows-CodeIntegrity	3007	0	PageHashFoundInImageCertificate(UInt16 FileNameLength, UnicodeString FileNameBuffer)			PageHashFoundInImageCertificate	Informational		
+Microsoft-Windows-CodeIntegrity	3008	0	FileHashFoundInCatalog(UInt16 FileNameLength, UnicodeString FileNameBuffer, UInt16 CatalogNameLength, UnicodeString CatalogNameBuffer)			FileHashFoundInCatalog	Informational		
+Microsoft-Windows-CodeIntegrity	3009	0	FileHashFoundInImageCertificate(UInt16 FileNameLength, UnicodeString FileNameBuffer)			FileHashFoundInImageCertificate	Informational		
+Microsoft-Windows-CodeIntegrity	3010	0	LoadCatalogFailed(UInt16 FileNameLength, UnicodeString FileNameBuffer)	Failed		LoadCatalog	Warning		
+Microsoft-Windows-CodeIntegrity	3011	0	LoadCatalogStop(UInt16 FileNameLength, UnicodeString FileNameBuffer)	Stop		LoadCatalog	Informational		
+Microsoft-Windows-CodeIntegrity	3012	0	LoadCatalogStart(UInt16 FileNameLength, UnicodeString FileNameBuffer)	Start		LoadCatalog	Informational		
+Microsoft-Windows-CodeIntegrity	3013	0	ReloadCatalogsStart()	Start		ReloadCatalogs	Informational		
+Microsoft-Windows-CodeIntegrity	3014	0	ReloadCatalogsStop(UInt32 Status)	Stop		ReloadCatalogs	Informational		
+Microsoft-Windows-CodeIntegrity	3014	1	ReloadCatalogsStop_V1(HexInt32 Status)	Stop		ReloadCatalogs	Informational		
+Microsoft-Windows-CodeIntegrity	3015	0	ValidateFileHashStart(UInt16 FileNameLength, UnicodeString FileNameBuffer)	Start		ValidateFileHash	Verbose		
+Microsoft-Windows-CodeIntegrity	3016	0	ValidateFileHashStop(UInt32 Status)	Stop		ValidateFileHash	Verbose		
+Microsoft-Windows-CodeIntegrity	3016	1	ValidateFileHashStop_V1(HexInt32 Status)	Stop		ValidateFileHash	Verbose		
+Microsoft-Windows-CodeIntegrity	3017	0	ValidatePageHashStart(UInt16 FileNameLength, UnicodeString FileNameBuffer)	Start		ValidatePageHash	Verbose		
+Microsoft-Windows-CodeIntegrity	3018	0	ValidatePageHashStop(UInt32 Status)	Stop		ValidatePageHash	Verbose		
+Microsoft-Windows-CodeIntegrity	3018	1	ValidatePageHashStop_V1(HexInt32 Status)	Stop		ValidatePageHash	Verbose		
+Microsoft-Windows-CodeIntegrity	3019	0	LoadCatalogCacheStart(UInt16 FileNameLength, UnicodeString FileNameBuffer)	Start		LoadCatalogCache	Verbose		
+Microsoft-Windows-CodeIntegrity	3020	0	LoadCatalogCacheStop(UInt32 Status)	Stop		LoadCatalogCache	Verbose		
+Microsoft-Windows-CodeIntegrity	3020	1	LoadCatalogCacheStop_V1(HexInt32 Status)	Stop		LoadCatalogCache	Verbose		
+Microsoft-Windows-CodeIntegrity	3021	0	CreateSectionRevokedDriverLoaded(UInt16 FileNameLength, UnicodeString FileNameBuffer)	RevokedDriverLoaded		CreateSection	Warning		
+Microsoft-Windows-CodeIntegrity	3022	0	CreateSectionRevokedDriverLoadedInDebugger(UInt16 FileNameLength, UnicodeString FileNameBuffer)	RevokedDriverLoadedInDebugger		CreateSection	Warning		
+Microsoft-Windows-CodeIntegrity	3023	0	CreateSectionRevokedDriverNotLoaded(UInt16 FileNameLength, UnicodeString FileNameBuffer)	RevokedDriverNotLoaded		CreateSection	Error		
+Microsoft-Windows-CodeIntegrity	3024	0	SaveCatalogCacheUpdateCatalogCacheFailed(HexInt32 Status)	UpdateCatalogCacheFailed		SaveCatalogCache	Warning		
+Microsoft-Windows-CodeIntegrity	3025	0	CreateSectionUnsignedDriverLoaded3025(UInt16 FileNameLength, UnicodeString FileNameBuffer)	UnsignedDriverLoaded		CreateSection	Verbose		
+Microsoft-Windows-CodeIntegrity	3026	0	LoadCatalogFailed3026(UInt16 FileNameLength, UnicodeString FileNameBuffer)	Failed		LoadCatalog	Warning		
+Microsoft-Windows-CodeIntegrity	3027	0	LoadCatalogCache(UInt16 FileNameLength, UnicodeString FileNameBuffer)			LoadCatalogCache	Verbose		
+Microsoft-Windows-CodeIntegrity	3028	0	SaveCatalogCacheStart(UInt16 FileNameLength, UnicodeString FileNameBuffer)	Start		SaveCatalogCache	Verbose		
+Microsoft-Windows-CodeIntegrity	3029	1	SaveCatalogCacheStop_V1(HexInt32 Status)	Stop		SaveCatalogCache	Verbose		
+Microsoft-Windows-CodeIntegrity	3030	0	SaveCatalogCache(UInt16 FileNameLength, UnicodeString FileNameBuffer)			SaveCatalogCache	Verbose		
+Microsoft-Windows-CodeIntegrity	3032	0	CreateSectionRevokedImageLoaded(UInt16 FileNameLength, UnicodeString FileNameBuffer)	RevokedImageLoaded		CreateSection	Warning		
+Microsoft-Windows-CodeIntegrity	3033	0	CreateSectionPolicyFailure(UInt16 FileNameLength, UnicodeString FileNameBuffer, UInt16 ProcessNameLength, UnicodeString ProcessNameBuffer, UInt8 RequestedPolicy, UInt8 ValidatedPolicy, UInt32 Status)	PolicyFailure		CreateSection	Error		
+Microsoft-Windows-CodeIntegrity	3034	0	CreateSectionPolicyFailure3034(UInt16 FileNameLength, UnicodeString FileNameBuffer, UInt16 ProcessNameLength, UnicodeString ProcessNameBuffer, UInt8 RequestedPolicy, UInt8 ValidatedPolicy, UInt32 Status)	PolicyFailure		CreateSection	Warning		
+Microsoft-Windows-CodeIntegrity	3035	0	CreateSectionRevokedImageLoadedInDebugger(UInt16 FileNameLength, UnicodeString FileNameBuffer)	RevokedImageLoadedInDebugger		CreateSection	Warning		
+Microsoft-Windows-CodeIntegrity	3036	0	CreateSectionRevokedImageNotLoaded(UInt16 FileNameLength, UnicodeString FileNameBuffer)	RevokedImageNotLoaded		CreateSection	Error		
+Microsoft-Windows-CodeIntegrity	3037	0	CreateSectionUnsignedImageLoaded(UInt16 FileNameLength, UnicodeString FileNameBuffer)	UnsignedImageLoaded		CreateSection	Warning		
+Microsoft-Windows-CodeIntegrity	3038	0	ValidateImageHeaderStart(UInt16 FileNameLength, UnicodeString FileNameBuffer)	Start		ValidateImageHeader	Verbose		
+Microsoft-Windows-CodeIntegrity	3038	1	ValidateImageHeaderStart_V1(UInt16 FileNameLength, UnicodeString FileNameBuffer, HexInt32 SecureRequired, UInt8 RequestedSigningLevel)	Start		ValidateImageHeader	Verbose		
+Microsoft-Windows-CodeIntegrity	3039	1	ValidateImageHeaderStop_V1(HexInt32 Status)	Stop		ValidateImageHeader	Verbose		
+Microsoft-Windows-CodeIntegrity	3040	0	GetFileCacheStart(UInt16 FileNameLength, UnicodeString FileNameBuffer)	Start		GetFileCache	Verbose		
+Microsoft-Windows-CodeIntegrity	3041	2	GetFileCacheStop_V2(HexInt32 Status, HexInt32 CachedFlags, UInt8 CacheSource, UInt8 CachedPolicy)	Stop		GetFileCache	Verbose		
+Microsoft-Windows-CodeIntegrity	3042	0	SetFileCacheStart(UInt16 FileNameLength, UnicodeString FileNameBuffer)	Start		SetFileCache	Verbose		
+Microsoft-Windows-CodeIntegrity	3043	1	SetFileCacheStop3043_V1(HexInt32 Status, HexInt32 CachedFlags, UInt8 CacheSource, UInt8 CachedPolicy)	Stop		SetFileCache	Verbose		
+Microsoft-Windows-CodeIntegrity	3050	0	GetFileCache(HexInt32 Status)			GetFileCache	Always		
+Microsoft-Windows-CodeIntegrity	3051	0	GetFileCache3051(HexInt32 Status)			GetFileCache	Always		
+Microsoft-Windows-CodeIntegrity	3052	0	GetFileCache3052(HexInt32 Status)			GetFileCache	Always		
+Microsoft-Windows-CodeIntegrity	3054	0	SetFileCacheStart3054(UInt16 FileNameLength, UnicodeString FileNameBuffer)	Start		SetFileCache	Verbose		
+Microsoft-Windows-CodeIntegrity	3055	0	SetFileCacheStop(HexInt32 Status)	Stop		SetFileCache	Verbose		
+Microsoft-Windows-CodeIntegrity	3057	0	GetFileCache3057(HexInt32 Status)			GetFileCache	Always		
+Microsoft-Windows-CodeIntegrity	3058	0	GetFileCache3058(HexInt32 Status)			GetFileCache	Always		
+Microsoft-Windows-CodeIntegrity	3059	0	SetCatalogHint(UInt16 FileNameLength, UnicodeString FileNameBuffer, UInt16 CatalogNameLength, UnicodeString CatalogNameBuffer)			SetCatalogHint	Informational		
+Microsoft-Windows-CodeIntegrity	3060	0	GetCatalogHint(UInt16 FileNameLength, UnicodeString FileNameBuffer, UInt16 CatalogNameLength, UnicodeString CatalogNameBuffer)			GetCatalogHint	Informational		
+Microsoft-Windows-CodeIntegrity	3061	0	SetCatalogHint3061(UInt16 FileNameLength, UnicodeString FileNameBuffer, UInt16 CatalogNameLength, UnicodeString CatalogNameBuffer)			SetCatalogHint	Informational		
+Microsoft-Windows-CodeIntegrity	3062	0	GetCatalogHint3062(UInt16 FileNameLength, UnicodeString FileNameBuffer, UInt16 CatalogNameLength, UnicodeString CatalogNameBuffer)			GetCatalogHint	Informational		
+Microsoft-Windows-CodeIntegrity	3063	0	CreateSectionSdlRequirement(UInt16 FileNameLength, UnicodeString FileNameBuffer, UInt16 ProcessNameLength, UnicodeString ProcessNameBuffer, UInt8 RequirementType, HexInt32 Status)	SdlRequirement		CreateSection	Error		
+Microsoft-Windows-CodeIntegrity	3064	0	CreateSection(UInt16 FileNameLength, UnicodeString FileNameBuffer, UInt16 ProcessNameLength, UnicodeString ProcessNameBuffer, UInt8 RequirementType, HexInt32 Status)			CreateSection	Warning		
+Microsoft-Windows-CodeIntegrity	3065	0	CreateSectionSdlRequirement3065(UInt16 FileNameLength, UnicodeString FileNameBuffer, UInt16 ProcessNameLength, UnicodeString ProcessNameBuffer, UInt8 RequirementType, HexInt32 Status)	SdlRequirement		CreateSection	Informational		
+Microsoft-Windows-CodeIntegrity	3066	0	CreateSectionPolicyFailure3066(UInt16 FileNameLength, UnicodeString FileNameBuffer, UInt16 ProcessNameLength, UnicodeString ProcessNameBuffer, UInt8 RequestedPolicy, UInt8 ValidatedPolicy, UInt32 Status)	PolicyFailure		CreateSection	Informational		
+Microsoft-Windows-CodeIntegrity	3067	0	ValidateSIPolicySiPolicyFailureIgnored(UInt16 FileNameLength, UnicodeString FileNameBuffer, UInt16 ProcessNameLength, UnicodeString ProcessNameBuffer, UInt8 RequestedPolicy, UInt8 ValidatedPolicy, UInt32 Status)	SiPolicyFailureIgnored		ValidateSIPolicy	Informational		
+Microsoft-Windows-CodeIntegrity	3068	0	ValidateSIPolicyPolicyFailure(UInt16 FileNameLength, UnicodeString FileNameBuffer, UInt16 ProcessNameLength, UnicodeString ProcessNameBuffer, UInt8 RequestedPolicy, UInt8 ValidatedPolicy, UInt32 Status)	PolicyFailure		ValidateSIPolicy	Error		
+Microsoft-Windows-CodeIntegrity	3069	0	LoadWeakCryptoPoliciesLoadWeakCryptoRegistryValueFailed(HexInt32 Status)	LoadWeakCryptoRegistryValueFailed		LoadWeakCryptoPolicies	Error		
+Microsoft-Windows-CodeIntegrity	3070	0	LoadWeakCryptoPoliciesLoadWeakCryptoRegistryPolicyFailed(HexInt32 Status)	LoadWeakCryptoRegistryPolicyFailed		LoadWeakCryptoPolicies	Error		
+Microsoft-Windows-CodeIntegrity	3071	0	LoadWeakCryptoPoliciesLoadWeakCryptoPoliciesFailed(HexInt32 Status)	LoadWeakCryptoPoliciesFailed		LoadWeakCryptoPolicies	Error		
+Microsoft-Windows-CodeIntegrity	3072	0	CreateSectionHvciUnalignedSection(UInt16 FileNameLength, UnicodeString FileNameBuffer)	HvciUnalignedSection		CreateSection	Warning		
+Microsoft-Windows-CodeIntegrity	3073	0	CreateSectionHvciWritableExecutableSection(UInt16 FileNameLength, UnicodeString FileNameBuffer)	HvciWritableExecutableSection		CreateSection	Warning		
+Microsoft-Windows-CodeIntegrity	3074	0	ValidatePageHashHvciPageVerificationFailure(HexInt32 Status)	HvciPageVerificationFailure		ValidatePageHash	Error		
+Microsoft-Windows-CodeIntegrity	3075	0	ValidateSIPolicyPolicyPerformance(UInt16 FileNameLength, UnicodeString FileNameBuffer, UInt16 ProcessNameLength, UnicodeString ProcessNameBuffer, UInt8 RequestedSigningLevel, UInt8 ValidatedSigningLevel, UInt64 ElapsedTime, UInt64 PolicyElapsedTime, UInt32 PercentageTime)	PolicyPerformance		ValidateSIPolicy	Informational		
+Microsoft-Windows-CodeIntegrity	3076	0	ValidateSIPolicySiPolicyFailureIgnored3076(UInt16 FileNameLength, UnicodeString FileName, UInt16 ProcessNameLength, UnicodeString ProcessName, UInt8 RequestedSigningLevel, UInt8 ValidatedSigningLevel, UInt32 Status, UInt32 SHA1HashSize, Binary SHA1Hash, UInt32 SHA256HashSize, Binary SHA256Hash, UInt64 USN, UInt32 SISigningScenario)	SiPolicyFailureIgnored		ValidateSIPolicy	Informational		
+Microsoft-Windows-CodeIntegrity	3077	0	ValidateSIPolicyPolicyFailure3077(UInt16 FileNameLength, UnicodeString FileName, UInt16 ProcessNameLength, UnicodeString ProcessName, UInt8 RequestedSigningLevel, UInt8 ValidatedSigningLevel, UInt32 Status, UInt32 SHA1HashSize, Binary SHA1Hash, UInt32 SHA256HashSize, Binary SHA256Hash, UInt64 USN, UInt32 SISigningScenario)	PolicyFailure		ValidateSIPolicy	Error		
+Microsoft-Windows-CodeIntegrity	3078	0	ValidateSIPolicySiPolicyFailureIgnored3078(UInt16 FileNameLength, UnicodeString FileName, UInt16 ProcessNameLength, UnicodeString ProcessName, UInt8 RequestedSigningLevel, UInt8 ValidatedSigningLevel, UInt32 Status, UInt32 SHA1HashSize, Binary SHA1Hash, UInt32 SHA256HashSize, Binary SHA256Hash, UInt64 USN, UInt32 SISigningScenario)	SiPolicyFailureIgnored		ValidateSIPolicy	Informational		
+Microsoft-Windows-CodeIntegrity	3079	0	ValidateSIPolicyPolicyFailure3079(UInt16 FileNameLength, UnicodeString FileName, UInt16 ProcessNameLength, UnicodeString ProcessName, UInt8 RequestedSigningLevel, UInt8 ValidatedSigningLevel, UInt32 Status, UInt32 SHA1HashSize, Binary SHA1Hash, UInt32 SHA256HashSize, Binary SHA256Hash, UInt64 USN, UInt32 SISigningScenario)	PolicyFailure		ValidateSIPolicy	Error		
+Microsoft-Windows-CodeIntegrity	3080	0	ValidateSIPolicySiPolicyFailureIgnored3080(UInt16 FileNameLength, UnicodeString FileName, UInt16 ProcessNameLength, UnicodeString ProcessName, UInt8 RequestedSigningLevel, UInt8 ValidatedSigningLevel, UInt32 Status, UInt32 SHA1HashSize, Binary SHA1Hash, UInt32 SHA256HashSize, Binary SHA256Hash, UInt64 USN, UInt32 SISigningScenario)	SiPolicyFailureIgnored		ValidateSIPolicy	Informational		
+Microsoft-Windows-CodeIntegrity	3081	0	ValidateSIPolicyPolicyFailure3081(UInt16 FileNameLength, UnicodeString FileName, UInt16 ProcessNameLength, UnicodeString ProcessName, UInt8 RequestedSigningLevel, UInt8 ValidatedSigningLevel, UInt32 Status, UInt32 SHA1HashSize, Binary SHA1Hash, UInt32 SHA256HashSize, Binary SHA256Hash, UInt64 USN, UInt32 SISigningScenario)	PolicyFailure		ValidateSIPolicy	Error		

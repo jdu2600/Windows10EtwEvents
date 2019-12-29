@@ -1,0 +1,5 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-ApplicationExperience-SwitchBack	1	0	AeSbCall(GUID SwitchBranchGuid, UInt16 SwitchBranchNameLength, UnicodeString SwitchBranchName, UInt16 SwitchBranchDescriptionLength, UnicodeString SwitchBranchDescription)			AeSbCall	Informational		
+Microsoft-Windows-ApplicationExperience-SwitchBack	2	0	AeSbImpl(GUID SwitchBranchImplGuid, UInt16 SwitchBranchImplNameLength, UnicodeString SwitchBranchImplName, UInt16 SwitchBranchImplDescriptionLength, UnicodeString SwitchBranchImplDescription)			AeSbImpl	Informational		
+Microsoft-Windows-ApplicationExperience-SwitchBack	3	0	AeSbContextUpdate(GUID TargetContextGuid, UInt16 TargetContextType, UInt16 ModuleNameLength, UnicodeString ModuleName)			AeSbContextUpdate	Informational		
+Microsoft-Windows-ApplicationExperience-SwitchBack	4	0	AeSbContextReadRetry(UInt64 ContextUpdateCounter)			AeSbContextReadRetry	Informational		

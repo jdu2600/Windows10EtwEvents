@@ -1,0 +1,35 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-WindowsUIImmersive	8701	0	PopupGeneral()			PopupGeneral	Informational		
+Microsoft-Windows-WindowsUIImmersive	8702	0	PopupGeneral8702()			PopupGeneral	Informational		
+Microsoft-Windows-WindowsUIImmersive	8703	0	PopupGeneral8703()			PopupGeneral	Informational		
+Microsoft-Windows-WindowsUIImmersive	8704	0	PopupGeneral8704()			PopupGeneral	Informational		
+Microsoft-Windows-WindowsUIImmersive	8705	0	PopupGeneral8705(UInt32 CommandID)			PopupGeneral	Informational		
+Microsoft-Windows-WindowsUIImmersive	8706	0	PopupGeneral8706()			PopupGeneral	Informational		
+Microsoft-Windows-WindowsUIImmersive	8711	0	PopupShowStart()	Start	keyword_400000000000	PopupShow	Informational		
+Microsoft-Windows-WindowsUIImmersive	8712	0	PopupShowStop(UInt32 HRESULT)	Stop	keyword_400000000000	PopupShow	Informational		
+Microsoft-Windows-WindowsUIImmersive	8713	0	PopupProgrammaticHideStart()	Start		PopupProgrammaticHide	Informational		
+Microsoft-Windows-WindowsUIImmersive	8714	0	PopupProgrammaticHideStop()	Stop		PopupProgrammaticHide	Informational		
+Microsoft-Windows-WindowsUIImmersive	8715	0	PopupChangeContentStart()	Start		PopupChangeContent	Informational		
+Microsoft-Windows-WindowsUIImmersive	8716	0	PopupChangeContentStop()	Stop		PopupChangeContent	Informational		
+Microsoft-Windows-WindowsUIImmersive	8717	0	PopupRepositionStart()	Start		PopupReposition	Informational		
+Microsoft-Windows-WindowsUIImmersive	8718	0	PopupRepositionStart8718()	Start		PopupReposition	Informational		
+Microsoft-Windows-WindowsUIImmersive	8719	0	PopupRepositionStop()	Stop		PopupReposition	Informational		
+Microsoft-Windows-WindowsUIImmersive	8720	0	PopupLightDismissStart(Pointer HWND, HexInt32 ProcessID, HexInt32 Flags)	Start		PopupLightDismiss	Informational		
+Microsoft-Windows-WindowsUIImmersive	8721	0	PopupLightDismissStop()	Stop		PopupLightDismiss	Informational		
+Microsoft-Windows-WindowsUIImmersive	8722	0	PopupLightDismiss(Pointer HWND, UInt32 DismissReason)			PopupLightDismiss	Informational		
+Microsoft-Windows-WindowsUIImmersive	8723	0	PopupLightDismiss8723(UInt32 HRESULT)			PopupLightDismiss	Informational		
+Microsoft-Windows-WindowsUIImmersive	8741	0	LightDismiss()			LightDismiss	Informational		
+Microsoft-Windows-WindowsUIImmersive	8742	0	LightDismiss8742(Pointer HWND)			LightDismiss	Informational		
+Microsoft-Windows-WindowsUIImmersive	8743	0	LightDismiss8743()			LightDismiss	Informational		
+Microsoft-Windows-WindowsUIImmersive	8744	0	LightDismiss8744()			LightDismiss	Informational		
+Microsoft-Windows-WindowsUIImmersive	8745	0	LightDismiss8745()			LightDismiss	Informational		
+Microsoft-Windows-WindowsUIImmersive	8751	0	LightDismissOverlay(Int32 Left, Int32 Top, Int32 Right, Int32 Bottom)			LightDismissOverlay	Informational		
+Microsoft-Windows-WindowsUIImmersive	10050	0	WerConsentAppDialogShowStart(UnicodeString ApplicationUserModelID)	Start		WerConsentAppDialogShow	Informational		
+Microsoft-Windows-WindowsUIImmersive	10051	0	WerConsentAppDialogShowStop(UnicodeString ApplicationUserModelID)	Stop		WerConsentAppDialogShow	Informational		
+Microsoft-Windows-WindowsUIImmersive	10052	0	task_0(UnicodeString ApplicationUserModelID, UInt32 HungProcessId)			task_0	Informational		
+Microsoft-Windows-WindowsUIImmersive	10053	0	WerConsentShellDialogShowStart()	Start		WerConsentShellDialogShow	Informational		
+Microsoft-Windows-WindowsUIImmersive	10054	0	WerConsentShellDialogShowStop()	Stop		WerConsentShellDialogShow	Informational		
+Microsoft-Windows-WindowsUIImmersive	10055	0	WerConsentOcaDialogShowStart()	Start		WerConsentOcaDialogShow	Informational		
+Microsoft-Windows-WindowsUIImmersive	10056	0	WerConsentOcaDialogShowStop()	Stop		WerConsentOcaDialogShow	Informational		
+Microsoft-Windows-WindowsUIImmersive	10057	0	WerConsentSystemDialogShowStart(UnicodeString ApplicationName)	Start		WerConsentSystemDialogShow	Informational		
+Microsoft-Windows-WindowsUIImmersive	10058	0	WerConsentSystemDialogShowStop(UnicodeString ApplicationName)	Stop		WerConsentSystemDialogShow	Informational		

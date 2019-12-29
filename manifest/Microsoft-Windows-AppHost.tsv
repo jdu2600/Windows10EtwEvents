@@ -1,0 +1,104 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-AppHost	101	0	InitializeAppHostOperationFailed(Int32 PID, UnicodeString PackageFullName, UnicodeString AppUserModelId)	AppHostOperationFailed	WWAHOST_KEYWORD	Initialize	Error		
+Microsoft-Windows-AppHost	102	0	InitializeAppHostOperationFailed102(HexInt32 HResult, Int32 PID, UnicodeString PackageFullName, UnicodeString AppUserModelId)	AppHostOperationFailed	WWAHOST_KEYWORD	Initialize	Error		
+Microsoft-Windows-AppHost	112	0	Telemetry.WERReportingAppHostInformation(UnicodeString param1, UnicodeString param2, UnicodeString param3, UnicodeString param4, UnicodeString param5, UnicodeString param6, Int32 PID, UnicodeString ProcessCreationTime, UnicodeString ApplicationBinaryPath, UnicodeString ReportId)	AppHostInformation	WWAHOST_KEYWORD	Telemetry.WERReporting	Informational		
+Microsoft-Windows-AppHost	121	0	WinRTIntegrationAppHostOperationFailed(HexInt32 HResultErrorCode, Int32 PID, UnicodeString PackageFullName, UnicodeString AppUserModelId)	AppHostOperationFailed	WWAHOST_KEYWORD	WinRTIntegration	Error		
+Microsoft-Windows-AppHost	122	0	WinRTIntegrationAppHostOperationFailed122(HexInt32 HResultErrorCode, Int32 PID, UnicodeString PackageFullName, UnicodeString AppUserModelId)	AppHostOperationFailed	WWAHOST_KEYWORD	WinRTIntegration	Error		
+Microsoft-Windows-AppHost	126	0	Telemetry.WERReportingAppHostOperationFailed(UnicodeString DisplayName, UnicodeString ApplicationName, UnicodeString AppUserModelId, UnicodeString PackageFullName, Int32 ProcessId, UnicodeString ErrorType, UnicodeString ErrorDescription, UnicodeString DocumentFile, UnicodeString SourceFile, Int32 SourceLine, Int32 SourceColumn, UnicodeString StackTrace)	AppHostOperationFailed	WWAHOST_KEYWORD	Telemetry.WERReporting	Error		
+Microsoft-Windows-AppHost	127	0	Telemetry.WERReportingAppHostOperationFailed127(UnicodeString DisplayName, UnicodeString ApplicationName, UnicodeString AppUserModelId, UnicodeString PackageFullName, Int32 ProcessId, UnicodeString ErrorDescription, UnicodeString DocumentFile, UnicodeString StackTrace)	AppHostOperationFailed	WWAHOST_KEYWORD	Telemetry.WERReporting	Error		
+Microsoft-Windows-AppHost	128	0	Telemetry.WERReportingAppHostInformation128(Int32 PID, UnicodeString PackageFullName, UnicodeString AppUserModelId)	AppHostInformation	WWAHOST_KEYWORD	Telemetry.WERReporting	Error		
+Microsoft-Windows-AppHost	129	0	Telemetry.WERReportingAppHostInformation129(Int32 PID, UnicodeString PackageFullName, UnicodeString AppUserModelId)	AppHostInformation	WWAHOST_KEYWORD	Telemetry.WERReporting	Error		
+Microsoft-Windows-AppHost	131	0	Telemetry.WERReportingAppHostOperationFailed131(UnicodeString DisplayName, UnicodeString ApplicationName, UnicodeString AppUserModelId, UnicodeString PackageFullName, Int32 ProcessId, UnicodeString DocumentFile)	AppHostOperationFailed	WWAHOST_KEYWORD	Telemetry.WERReporting	Error		
+Microsoft-Windows-AppHost	132	0	Telemetry.WERReportingAppHostOperationFailed132(UnicodeString DisplayName, UnicodeString ApplicationName, UnicodeString AppUserModelId, UnicodeString PackageFullName, Int32 ProcessId, UnicodeString DocumentFile, UnicodeString TargetUrl, UnicodeString ErrorCode)	AppHostOperationFailed	WWAHOST_KEYWORD	Telemetry.WERReporting	Error		
+Microsoft-Windows-AppHost	133	0	Infrastructure.LifecycleAppHostOperationFailed(UnicodeString Function, UnicodeString Module, HexInt32 HResult, Int32 PID, UnicodeString PackageFullName, UnicodeString AppUserModelId)	AppHostOperationFailed	WWAHOST_KEYWORD	Infrastructure.Lifecycle	Error		
+Microsoft-Windows-AppHost	134	0	Infrastructure.LifecycleAppHostOperationFailed134(UnicodeString Function, UnicodeString Module, Int32 WebInstance, HexInt32 HResult, Int32 PID, UnicodeString PackageFullName, UnicodeString AppUserModelId)	AppHostOperationFailed	WWAHOST_KEYWORD	Infrastructure.Lifecycle	Error		
+Microsoft-Windows-AppHost	135	0	Infrastructure.LifecycleAppHostOperationFailed135(Int32 WebInstance, HexInt32 HResult, Int32 PID, UnicodeString PackageFullName, UnicodeString AppUserModelId)	AppHostOperationFailed	WWAHOST_KEYWORD	Infrastructure.Lifecycle	Error		
+Microsoft-Windows-AppHost	136	0	Infrastructure.LifecycleAppHostOperationFailed136(HexInt32 HResult, Int32 PID, UnicodeString PackageFullName, UnicodeString AppUserModelId)	AppHostOperationFailed	WWAHOST_KEYWORD	Infrastructure.Lifecycle	Error		
+Microsoft-Windows-AppHost	137	0	Infrastructure.LifecycleAppHostInformation(Int32 PID, UnicodeString PackageFullName, UnicodeString AppUserModelId)	AppHostInformation	WWAHOST_KEYWORD	Infrastructure.Lifecycle	Informational		
+Microsoft-Windows-AppHost	500	0	Infrastructure.LifecycleAppHostOperationSucceeded(UnicodeString Function, UnicodeString Module, Int32 PID, UnicodeString PackageFullName, UnicodeString AppUserModelId)	AppHostOperationSucceeded	WWAHOST_KEYWORD	Infrastructure.Lifecycle	Informational		
+Microsoft-Windows-AppHost	502	0	Infrastructure.LifecycleAppHostOperationSucceeded502(UnicodeString Function, UnicodeString Module, Int32 WebInstance, Int32 PID, UnicodeString PackageFullName, UnicodeString AppUserModelId)	AppHostOperationSucceeded	WWAHOST_KEYWORD	Infrastructure.Lifecycle	Informational		
+Microsoft-Windows-AppHost	504	0	Infrastructure.LifecycleAppHostOperationSucceeded504(UnicodeString Action, Int32 WebInstance, Int32 PID, UnicodeString PackageFullName, UnicodeString AppUserModelId)	AppHostOperationSucceeded	WWAHOST_KEYWORD	Infrastructure.Lifecycle	Informational		
+Microsoft-Windows-AppHost	506	0	SuspendingAppHostInformation(Int32 PID, UnicodeString PackageFullName, UnicodeString AppUserModelId)	AppHostInformation	WWAHOST_KEYWORD	Suspending	Informational		
+Microsoft-Windows-AppHost	507	0	SuspendingAppHostInformation507(Int32 PID, UnicodeString PackageFullName, UnicodeString AppUserModelId)	AppHostInformation	WWAHOST_KEYWORD	Suspending	Informational		
+Microsoft-Windows-AppHost	508	0	SuspendingAppHostInformation508(Int32 PID, UnicodeString PackageFullName, UnicodeString AppUserModelId)	AppHostInformation	WWAHOST_KEYWORD	Suspending	Informational		
+Microsoft-Windows-AppHost	509	0	SuspendingAppHostInformation509(Int32 WindowType, Boolean WebPlatformSuspendDownloadPending, Boolean WebPlatformCleanupPending, Boolean WerReportDuringSuspend, Int32 suspendSubdownloadsCount, Int32 NewTimeout, Int32 CurrentTimeout, Int32 PID, Int32 TID, UnicodeString PackageFullName, UnicodeString AppUserModelId)	AppHostInformation	WWAHOST_KEYWORD	Suspending	Informational		
+Microsoft-Windows-AppHost	511	0	SuspendingAppHostInformation511(Int32 PID, UnicodeString PackageFullName, UnicodeString AppUserModelId)	AppHostInformation	WWAHOST_KEYWORD	Suspending	Informational		
+Microsoft-Windows-AppHost	512	0	SuspendingAppHostInformation512(Int32 PID, UnicodeString PackageFullName, UnicodeString AppUserModelId)	AppHostInformation	WWAHOST_KEYWORD	Suspending	Informational		
+Microsoft-Windows-AppHost	513	0	SuspendingAppHostInformation513(Int32 PID, UnicodeString PackageFullName, UnicodeString AppUserModelId)	AppHostInformation	WWAHOST_KEYWORD	Suspending	Informational		
+Microsoft-Windows-AppHost	514	0	Activation.ModuleInitializationAppHostInformation(UnicodeString PackageFullName, HexInt64 OSVersion, HexInt64 WebPlatformVersion, HexInt32 ScriptProjectionVersion)	AppHostInformation	WWAHOST_KEYWORD	Activation.ModuleInitialization	Informational		
+Microsoft-Windows-AppHost	515	0	Infrastructure.LifecycleAppHostInformation515(UInt64 MainWebInstanceInitializeTime, UInt64 AppSuspendHandlerInvoked, UInt64 AppSuspendHandlerCompleted, Boolean WebPlatformSuspendDownloadPending, Int32 WebPlatformSuspendDownloadCount, UInt64 WebPlatformSuspendDownloadWaitStart, Boolean WebPlatformCleanupPending, UInt64 WebPlatformCleanupStart, Int32 CurrentSuspendingTimeout, Int32 NewSuspendingTimeout, Int32 PID, UnicodeString PackageFullName, UnicodeString AppUserModelId)	AppHostInformation	WWAHOST_KEYWORD	Infrastructure.Lifecycle	Informational		
+Microsoft-Windows-AppHost	516	0	SuspendingInternalPlmTimeoutExprationAppHostInformation(Int32 WindowType, Boolean WebPlatformSuspendDownloadPending, Boolean WebPlatformCleanupPending, Int32 suspendSubdownloadsCount, Int32 PID, Int32 TID, UnicodeString PackageFullName, UnicodeString AppUserModelId)	AppHostInformation	WWAHOST_KEYWORD	SuspendingInternalPlmTimeoutExpration	Informational		
+Microsoft-Windows-AppHost	517	0	SuspendingSubDownloadsAppHostInformation(Int32 WindowType, Boolean WebPlatformSuspendDownloadPending, Boolean WebPlatformCleanupPending, Int32 PID, Int32 TID, UnicodeString PackageFullName, UnicodeString AppUserModelId)	AppHostInformation	WWAHOST_KEYWORD	SuspendingSubDownloads	Informational		
+Microsoft-Windows-AppHost	518	0	SuspendingGarbageCollectionAppHostInformation(Int32 WindowType, Boolean WebPlatformSuspendDownloadPending, Boolean WebPlatformCleanupPending, Int32 PID, Int32 TID, UnicodeString PackageFullName, UnicodeString AppUserModelId)	AppHostInformation	WWAHOST_KEYWORD	SuspendingGarbageCollection	Informational		
+Microsoft-Windows-AppHost	1001	0	Navigation.NavigationDomain.DecisionStart()	Start	WwaHost	Navigation.NavigationDomain.Decision	Informational		
+Microsoft-Windows-AppHost	1002	0	Navigation.NavigationDomain.DecisionStop()	Stop	WwaHost	Navigation.NavigationDomain.Decision	Informational		
+Microsoft-Windows-AppHost	1003	0	MswwaProtocol.PackageToFileUriStart()	Start	WwaHost	MswwaProtocol.PackageToFileUri	Informational		
+Microsoft-Windows-AppHost	1004	0	MswwaProtocol.PackageToFileUriStop()	Stop	WwaHost	MswwaProtocol.PackageToFileUri	Informational		
+Microsoft-Windows-AppHost	1007	0	Activation.ModuleInitializationStart()	Start	WwaHost	Activation.ModuleInitialization	Informational		
+Microsoft-Windows-AppHost	1008	0	Activation.ModuleInitializationStop()	Stop	WwaHost	Activation.ModuleInitialization	Informational		
+Microsoft-Windows-AppHost	1009	0	Infrastructure.Host.SetupStart()	Start	WwaHost	Infrastructure.Host.Setup	Informational		
+Microsoft-Windows-AppHost	1010	0	Infrastructure.Host.SetupStop()	Stop	WwaHost	Infrastructure.Host.Setup	Informational		
+Microsoft-Windows-AppHost	1011	0	NavigationStart(UInt64 ObjectWWA, UInt32 Counter, UnicodeString PackageFullName, UnicodeString AppID, HexInt32 NavigationInfo)	Start	WwaHost	Navigation	Informational		
+Microsoft-Windows-AppHost	1012	0	NavigationStop(UInt64 ObjectWWA, UInt32 Counter, UnicodeString PackageFullName, UnicodeString AppID, HexInt32 NavigationInfo)	Stop	WwaHost	Navigation	Informational		
+Microsoft-Windows-AppHost	1015	0	Telemetry.WERReportingStart()	Start	WwaHost	Telemetry.WERReporting	Informational		
+Microsoft-Windows-AppHost	1016	0	Telemetry.WERReportingStop()	Stop	WwaHost	Telemetry.WERReporting	Informational		
+Microsoft-Windows-AppHost	1017	0	Infrastructure.Host.UptimeStart()	Start	WwaHost	Infrastructure.Host.Uptime	Informational		
+Microsoft-Windows-AppHost	1018	0	Infrastructure.Host.UptimeStop()	Stop	WwaHost	Infrastructure.Host.Uptime	Informational		
+Microsoft-Windows-AppHost	1019	0	ApplicationActivateEventStart(UnicodeString PackageFullName, UnicodeString AppID, UnicodeString ContractID, UInt32 IsReactivation)	Start	WwaHost	ApplicationActivateEvent	Informational		
+Microsoft-Windows-AppHost	1020	0	ApplicationActivateEventStop(UnicodeString PackageFullName, UnicodeString AppID, UnicodeString ContractID, UInt32 IsReactivation)	Stop	WwaHost	ApplicationActivateEvent	Informational		
+Microsoft-Windows-AppHost	1021	0	ApplicationTerminationStart(UnicodeString PackageFullName, UnicodeString AppID)	Start	WwaHost	ApplicationTermination	Informational		
+Microsoft-Windows-AppHost	1022	0	ApplicationTerminationStop(UnicodeString PackageFullName, UnicodeString AppID)	Stop	WwaHost	ApplicationTermination	Informational		
+Microsoft-Windows-AppHost	1023	0	SuspendingStart()	Start	WwaHost	Suspending	Informational		
+Microsoft-Windows-AppHost	1024	0	SuspendingStop()	Stop	WwaHost	Suspending	Informational		
+Microsoft-Windows-AppHost	1025	0	ResumingStart()	Start	WwaHost	Resuming	Informational		
+Microsoft-Windows-AppHost	1026	0	ResumingStop()	Stop	WwaHost	Resuming	Informational		
+Microsoft-Windows-AppHost	1027	0	Infrastructure.WebInstance.SetupStart()	Start	WwaHost	Infrastructure.WebInstance.Setup	Informational		
+Microsoft-Windows-AppHost	1028	0	Infrastructure.WebInstance.SetupStop()	Stop	WwaHost	Infrastructure.WebInstance.Setup	Informational		
+Microsoft-Windows-AppHost	1029	0	InputPanelShowStart()	Start	WwaHost	InputPanelShow	Informational		
+Microsoft-Windows-AppHost	1030	0	InputPanelShowStop()	Stop	WwaHost	InputPanelShow	Informational		
+Microsoft-Windows-AppHost	1031	0	InputPanelHideStart()	Start	WwaHost	InputPanelHide	Informational		
+Microsoft-Windows-AppHost	1032	0	InputPanelHideStop()	Stop	WwaHost	InputPanelHide	Informational		
+Microsoft-Windows-AppHost	1033	0	SuspendingSubDownloadsStart()	Start	WwaHost	SuspendingSubDownloads	Informational		
+Microsoft-Windows-AppHost	1034	0	SuspendingSubDownloadsStop()	Stop	WwaHost	SuspendingSubDownloads	Informational		
+Microsoft-Windows-AppHost	1035	0	TerminateAppStart()	Start	WwaHost	TerminateApp	Informational		
+Microsoft-Windows-AppHost	1036	0	TerminateAppStop()	Stop	WwaHost	TerminateApp	Informational		
+Microsoft-Windows-AppHost	1037	0	MswwaProtocol.AppDataToFileUriStart()	Start	WwaHost	MswwaProtocol.AppDataToFileUri	Informational		
+Microsoft-Windows-AppHost	1038	0	MswwaProtocol.AppDataToFileUriStop()	Stop	WwaHost	MswwaProtocol.AppDataToFileUri	Informational		
+Microsoft-Windows-AppHost	1039	0	EvaluatePackageStart()	Start	WwaHost	EvaluatePackage	Informational		
+Microsoft-Windows-AppHost	1040	0	EvaluatePackageStop()	Stop	WwaHost	EvaluatePackage	Informational		
+Microsoft-Windows-AppHost	1041	0	ResizeStart()	Start	WwaHost	Resize	Informational		
+Microsoft-Windows-AppHost	1042	0	ResizeStop()	Stop	WwaHost	Resize	Informational		
+Microsoft-Windows-AppHost	1043	0	ViewStateStart()	Start	WwaHost	ViewState	Informational		
+Microsoft-Windows-AppHost	1044	0	ViewStateStop()	Stop	WwaHost	ViewState	Informational		
+Microsoft-Windows-AppHost	1045	0	InputPanelResizeViewportStart()	Start	WwaHost	InputPanelResizeViewport	Informational		
+Microsoft-Windows-AppHost	1046	0	InputPanelResizeViewportStop()	Stop	WwaHost	InputPanelResizeViewport	Informational		
+Microsoft-Windows-AppHost	1047	0	SuspendingGarbageCollectionStart()	Start	WwaHost	SuspendingGarbageCollection	Informational		
+Microsoft-Windows-AppHost	1048	0	SuspendingGarbageCollectionStop()	Stop	WwaHost	SuspendingGarbageCollection	Informational		
+Microsoft-Windows-AppHost	1049	0	ThreadMrtInitializationStart()	Start	WwaHost	ThreadMrtInitialization	Informational		
+Microsoft-Windows-AppHost	1050	0	ThreadMrtInitializationStop()	Stop	WwaHost	ThreadMrtInitialization	Informational		
+Microsoft-Windows-AppHost	1051	0	Infrastructure.Host.HostModulesInitializationStart()	Start	WwaHost	Infrastructure.Host.HostModulesInitialization	Informational		
+Microsoft-Windows-AppHost	1052	0	Infrastructure.Host.HostModulesInitializationStop()	Stop	WwaHost	Infrastructure.Host.HostModulesInitialization	Informational		
+Microsoft-Windows-AppHost	1053	0	Infrastructure.Host.HostRunStart()	Start	WwaHost	Infrastructure.Host.HostRun	Informational		
+Microsoft-Windows-AppHost	1054	0	Infrastructure.Host.HostRunStop()	Stop	WwaHost	Infrastructure.Host.HostRun	Informational		
+Microsoft-Windows-AppHost	1055	0	Infrastructure.WebInstance.InitializeStart()	Start	WwaHost	Infrastructure.WebInstance.Initialize	Informational		
+Microsoft-Windows-AppHost	1056	0	Infrastructure.WebInstance.InitializeStop()	Stop	WwaHost	Infrastructure.WebInstance.Initialize	Informational		
+Microsoft-Windows-AppHost	1057	0	Infrastructure.WebInstance.DispatchStart()	Start	WwaHost	Infrastructure.WebInstance.Dispatch	Informational		
+Microsoft-Windows-AppHost	1058	0	Infrastructure.WebInstance.DispatchStop()	Stop	WwaHost	Infrastructure.WebInstance.Dispatch	Informational		
+Microsoft-Windows-AppHost	1059	0	Infrastructure.WebInstance.RunStart()	Start	WwaHost	Infrastructure.WebInstance.Run	Informational		
+Microsoft-Windows-AppHost	1060	0	Infrastructure.WebInstance.RunStop()	Stop	WwaHost	Infrastructure.WebInstance.Run	Informational		
+Microsoft-Windows-AppHost	1061	0	WinRTAsyncCallStart(Int32 Priority, Pointer Id)	Start	WwaHost	WinRTAsyncCall	Informational		
+Microsoft-Windows-AppHost	1062	0	WinRTAsyncCallStop(Int32 Priority, Pointer Id)	Stop	WwaHost	WinRTAsyncCall	Informational		
+Microsoft-Windows-AppHost	1063	0	MemoryStatsOnSuspend(HexInt32 JSHeapSizeMB, HexInt32 TotalWorkingSetMBandPrivateCommitMB, UInt32 PackageAgeS, UnicodeString AppID, UnicodeString PackageFullName)		WwaHost	MemoryStatsOnSuspend	Informational		
+Microsoft-Windows-AppHost	1064	0	LayoutChangedStart()	Start	WwaHost	LayoutChanged	Informational		
+Microsoft-Windows-AppHost	1065	0	LayoutChangedStop()	Stop	WwaHost	LayoutChanged	Informational		
+Microsoft-Windows-AppHost	1066	0	ApplicationActivateEvent(UInt32 ToggleCount, UInt32 ToggleDetail, UnicodeString PackageFullName, UnicodeString AppID)		WwaHost	ApplicationActivateEvent	Informational		
+Microsoft-Windows-AppHost	1067	0	ByteCodeSourceMapping(UnicodeString FilePath)		WwaHost	ByteCodeSourceMapping	Informational		
+Microsoft-Windows-AppHost	1068	0	ByteCodeSourceMapping1068(UnicodeString FilePath)		WwaHost	ByteCodeSourceMapping	Informational		
+Microsoft-Windows-AppHost	10000	0	ApplicationTracing.ErrorAppHostApplicationError(UnicodeString DisplayName, UnicodeString ApplicationName, UnicodeString AppUserModelId, UnicodeString PackageFullName, Int32 ProcessId, UnicodeString Source, UnicodeString DocumentFile, Int32 Line, Int32 Column, Int32 MessageId, UnicodeString Message)	AppHostApplicationError	WWAHOST_APPLICATION_KEYWORD	ApplicationTracing.Error	Error		
+Microsoft-Windows-AppHost	10001	0	ApplicationTracing.WarningAppHostApplicationWarning(UnicodeString DisplayName, UnicodeString ApplicationName, UnicodeString AppUserModelId, UnicodeString PackageFullName, Int32 ProcessId, UnicodeString Source, UnicodeString DocumentFile, Int32 Line, Int32 Column, Int32 MessageId, UnicodeString Message)	AppHostApplicationWarning	WWAHOST_APPLICATION_KEYWORD	ApplicationTracing.Warning	Warning		
+Microsoft-Windows-AppHost	10002	0	ApplicationTracing.InformationalAppHostApplicationInformation(UnicodeString DisplayName, UnicodeString ApplicationName, UnicodeString AppUserModelId, UnicodeString PackageFullName, Int32 ProcessId, UnicodeString Source, UnicodeString DocumentFile, Int32 Line, Int32 Column, Int32 MessageId, UnicodeString Message)	AppHostApplicationInformation	WWAHOST_APPLICATION_KEYWORD	ApplicationTracing.Informational	Informational		
+Microsoft-Windows-AppHost	10003	0	ApplicationTracing.InformationalAppHostApplicationInformation10003(Int32 DeferralCount)	AppHostApplicationInformation	WWAHOST_DIAGNOSTIC_KEYWORD	ApplicationTracing.Informational	Informational		
+Microsoft-Windows-AppHost	10004	0	ApplicationTracing.InformationalAppHostApplicationInformation10004(Int32 DeferralCount)	AppHostApplicationInformation	WWAHOST_DIAGNOSTIC_KEYWORD	ApplicationTracing.Informational	Informational		
+Microsoft-Windows-AppHost	10005	0	Activation.CompleteActivationStart()	Start	WwaHost	Activation.CompleteActivation	Informational		
+Microsoft-Windows-AppHost	10006	0	Activation.CompleteActivationStop()	Stop	WwaHost	Activation.CompleteActivation	Informational		
+Microsoft-Windows-AppHost	10007	0	DrawingAppHostInformation(UnicodeString Value)	AppHostInformation	WWAHOST_KEYWORD	Drawing	Informational		

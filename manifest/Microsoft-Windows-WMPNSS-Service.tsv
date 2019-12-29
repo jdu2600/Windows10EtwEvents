@@ -1,0 +1,225 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-WMPNSS-Service	1001	0	CDS_On_Container_ChangedStart(UInt32 ChangeCount, UInt32 ErrorCode)	Start		CDS_On_Container_Changed	Informational		
+Microsoft-Windows-WMPNSS-Service	1002	0	CDS_On_Container_ChangedStop(UInt32 ChangeCount, UInt32 ErrorCode)	Stop		CDS_On_Container_Changed	Informational		
+Microsoft-Windows-WMPNSS-Service	1003	0	CDS_BrowseStart(UnicodeString ID, UnicodeString Criteria, UInt32 StartIndex, UInt32 RequestedCount, UnicodeString Filter, UnicodeString SortCriteria, UInt32 ReturnedCount, UInt32 TotalMatches, UInt32 ErrorCode)	Start		CDS_Browse	Informational		
+Microsoft-Windows-WMPNSS-Service	1004	0	CDS_BrowseStop(UnicodeString ID, UnicodeString Criteria, UInt32 StartIndex, UInt32 RequestedCount, UnicodeString Filter, UnicodeString SortCriteria, UInt32 ReturnedCount, UInt32 TotalMatches, UInt32 ErrorCode)	Stop		CDS_Browse	Informational		
+Microsoft-Windows-WMPNSS-Service	1005	0	Browse_Filter_EndpointStart()	Start		Browse_Filter_Endpoint	Informational		
+Microsoft-Windows-WMPNSS-Service	1006	0	Browse_Filter_EndpointStop()	Stop		Browse_Filter_Endpoint	Informational		
+Microsoft-Windows-WMPNSS-Service	1007	0	Browse_SetupStart(Boolean PublishAllAlbumArts, UInt32 FilterItemCount, UInt32 SortItemCount)	Start		Browse_Setup	Informational		
+Microsoft-Windows-WMPNSS-Service	1008	0	Browse_SetupStop(Boolean PublishAllAlbumArts, UInt32 FilterItemCount, UInt32 SortItemCount)	Stop		Browse_Setup	Informational		
+Microsoft-Windows-WMPNSS-Service	1009	0	Browse_Query_Content_ProviderStart()	Start		Browse_Query_Content_Provider	Informational		
+Microsoft-Windows-WMPNSS-Service	1010	0	Browse_Query_Content_ProviderStop()	Stop		Browse_Query_Content_Provider	Informational		
+Microsoft-Windows-WMPNSS-Service	1011	0	Browse_Write_ResultStart(UInt32 WrittenCount, UInt32 TotalResultLength)	Start		Browse_Write_Result	Informational		
+Microsoft-Windows-WMPNSS-Service	1012	0	Browse_Write_ResultStop(UInt32 WrittenCount, UInt32 TotalResultLength)	Stop		Browse_Write_Result	Informational		
+Microsoft-Windows-WMPNSS-Service	1013	0	Browse_Sort_Criteria()			Browse_Sort_Criteria	Informational		
+Microsoft-Windows-WMPNSS-Service	1014	0	Browse_Filter_Fields()			Browse_Filter_Fields	Informational		
+Microsoft-Windows-WMPNSS-Service	1015	0	CDS_SearchStart(UnicodeString ID, UnicodeString Criteria, UInt32 StartIndex, UInt32 RequestedCount, UnicodeString Filter, UnicodeString SortCriteria, UInt32 ReturnedCount, UInt32 TotalMatches, UInt32 ErrorCode)	Start		CDS_Search	Informational		
+Microsoft-Windows-WMPNSS-Service	1016	0	CDS_SearchStop(UnicodeString ID, UnicodeString Criteria, UInt32 StartIndex, UInt32 RequestedCount, UnicodeString Filter, UnicodeString SortCriteria, UInt32 ReturnedCount, UInt32 TotalMatches, UInt32 ErrorCode)	Stop		CDS_Search	Informational		
+Microsoft-Windows-WMPNSS-Service	1017	0	Search_Filter_EndpointStart()	Start		Search_Filter_Endpoint	Informational		
+Microsoft-Windows-WMPNSS-Service	1018	0	Search_Filter_EndpointStop()	Stop		Search_Filter_Endpoint	Informational		
+Microsoft-Windows-WMPNSS-Service	1019	0	Search_SetupStart(Boolean PublishAllAlbumArts, UInt32 FilterItemCount, UInt32 SortItemCount)	Start		Search_Setup	Informational		
+Microsoft-Windows-WMPNSS-Service	1020	0	Search_SetupStop(Boolean PublishAllAlbumArts, UInt32 FilterItemCount, UInt32 SortItemCount)	Stop		Search_Setup	Informational		
+Microsoft-Windows-WMPNSS-Service	1021	0	Search_Query_Content_ProviderStart()	Start		Search_Query_Content_Provider	Informational		
+Microsoft-Windows-WMPNSS-Service	1022	0	Search_Query_Content_ProviderStop()	Stop		Search_Query_Content_Provider	Informational		
+Microsoft-Windows-WMPNSS-Service	1023	0	Search_Write_ResultStart(UInt32 WrittenCount, UInt32 TotalResultLength)	Start		Search_Write_Result	Informational		
+Microsoft-Windows-WMPNSS-Service	1024	0	Search_Write_ResultStop(UInt32 WrittenCount, UInt32 TotalResultLength)	Stop		Search_Write_Result	Informational		
+Microsoft-Windows-WMPNSS-Service	1025	0	Search_Sort_Criteria()			Search_Sort_Criteria	Informational		
+Microsoft-Windows-WMPNSS-Service	1026	0	Search_Filter_Fields()			Search_Filter_Fields	Informational		
+Microsoft-Windows-WMPNSS-Service	1027	0	Objwriter_Write_ResultStart(Boolean PublishAllAlbumArts, UInt32 Count, UInt32 ErrorCode)	Start		Objwriter_Write_Result	Informational		
+Microsoft-Windows-WMPNSS-Service	1028	0	Objwriter_Write_ResultStop(Boolean PublishAllAlbumArts, UInt32 Count, UInt32 ErrorCode)	Stop		Objwriter_Write_Result	Informational		
+Microsoft-Windows-WMPNSS-Service	1029	0	Objwriter_Write_ObjectStart(UInt32 Element)	Start		Objwriter_Write_Object	Informational		
+Microsoft-Windows-WMPNSS-Service	1030	0	Objwriter_Write_ObjectStop(UInt32 Element)	Stop		Objwriter_Write_Object	Informational		
+Microsoft-Windows-WMPNSS-Service	1031	0	Objwriter_Act_Write_ElementStart(UInt32 ElementValue, UInt32 Index, Boolean ElementExists, UInt32 ErrorCode)	Start		Objwriter_Act_Write_Element	Verbose		
+Microsoft-Windows-WMPNSS-Service	1032	0	Objwriter_Act_Write_ElementStop(UInt32 ElementValue, UInt32 Index, Boolean ElementExists, UInt32 ErrorCode)	Stop		Objwriter_Act_Write_Element	Verbose		
+Microsoft-Windows-WMPNSS-Service	1033	0	Objwriter_Act_Write_Res_ElementStart(UInt32 CompatFlags, UInt32 ErrorCode)	Start		Objwriter_Act_Write_Res_Element	Informational		
+Microsoft-Windows-WMPNSS-Service	1034	0	Objwriter_Act_Write_Res_ElementStop(UInt32 CompatFlags, UInt32 ErrorCode)	Stop		Objwriter_Act_Write_Res_Element	Informational		
+Microsoft-Windows-WMPNSS-Service	1035	0	Objwriter_Act_Write_Album_Art_ElementStart(UInt32 CompatFlags, UInt32 ErrorCode)	Start		Objwriter_Act_Write_Album_Art_Element	Informational		
+Microsoft-Windows-WMPNSS-Service	1036	0	Objwriter_Act_Write_Album_Art_ElementStop(UInt32 CompatFlags, UInt32 ErrorCode)	Stop		Objwriter_Act_Write_Album_Art_Element	Informational		
+Microsoft-Windows-WMPNSS-Service	1037	0	Objwriter_Get_Res_ElementsStart(UInt32 Count, UInt32 ErrorCode)	Start		Objwriter_Get_Res_Elements	Informational		
+Microsoft-Windows-WMPNSS-Service	1038	0	Objwriter_Get_Res_ElementsStop(UInt32 Count, UInt32 ErrorCode)	Stop		Objwriter_Get_Res_Elements	Informational		
+Microsoft-Windows-WMPNSS-Service	1039	0	Objwriter_Write_Inner_AttribStart(UInt32 Value, UInt32 AttributesWritten, UInt32 ErrorCode)	Start		Objwriter_Write_Inner_Attrib	Verbose		
+Microsoft-Windows-WMPNSS-Service	1040	0	Objwriter_Write_Object_AttribStop(UInt32 Value, UInt32 AttributesWritten, UInt32 ErrorCode)	Stop		Objwriter_Write_Object_Attrib	Verbose		
+Microsoft-Windows-WMPNSS-Service	1041	0	Objwriter_Get_Element_ValueStart(UInt32 ElementValue, UInt32 Index, UInt32 ErrorCode)	Start		Objwriter_Get_Element_Value	Verbose		
+Microsoft-Windows-WMPNSS-Service	1042	0	Objwriter_Get_Element_ValueStop(UInt32 ElementValue, UInt32 Index, UInt32 ErrorCode)	Stop		Objwriter_Get_Element_Value	Verbose		
+Microsoft-Windows-WMPNSS-Service	1043	0	Objwriter_Get_Element_Attrib_ValueStart(UInt32 ElementValue, UInt32 Index, UInt32 AttributeValue, UInt32 ErrorCode)	Start		Objwriter_Get_Element_Attrib_Value	Verbose		
+Microsoft-Windows-WMPNSS-Service	1044	0	Objwriter_Get_Element_Attrib_ValueStop(UInt32 ElementValue, UInt32 Index, UInt32 AttributeValue, UInt32 ErrorCode)	Stop		Objwriter_Get_Element_Attrib_Value	Verbose		
+Microsoft-Windows-WMPNSS-Service	1045	0	Objwriter_Get_Element_Value_ExStart(UInt32 ElementValue, UInt32 Index, UInt32 ErrorCode)	Start		Objwriter_Get_Element_Value_Ex	Verbose		
+Microsoft-Windows-WMPNSS-Service	1046	0	Objwriter_Get_Element_Value_ExStop(UInt32 ElementValue, UInt32 Index, UInt32 ErrorCode)	Stop		Objwriter_Get_Element_Value_Ex	Verbose		
+Microsoft-Windows-WMPNSS-Service	1047	0	Objwriter_Write_ElementStart(UInt32 ElementValue, Boolean IsSelected, UInt32 ErrorCode)	Start		Objwriter_Write_Element	Verbose		
+Microsoft-Windows-WMPNSS-Service	1048	0	Objwriter_Write_ElementStop(UInt32 ElementValue, Boolean IsSelected, UInt32 ErrorCode)	Stop		Objwriter_Write_Element	Verbose		
+Microsoft-Windows-WMPNSS-Service	1049	0	Objwriter_Write_Object_AttribStart(UInt32 Value, UInt32 AttributesWritten, UInt32 ErrorCode)	Start		Objwriter_Write_Object_Attrib	Verbose		
+Microsoft-Windows-WMPNSS-Service	1050	0	Objwriter_Write_Inner_AttribStop(UInt32 Value, UInt32 AttributesWritten, UInt32 ErrorCode)	Stop		Objwriter_Write_Inner_Attrib	Verbose		
+Microsoft-Windows-WMPNSS-Service	1051	0	Objwriter_Get_Album_Art_DataStart(UInt32 ErrorCode)	Start		Objwriter_Get_Album_Art_Data	Informational		
+Microsoft-Windows-WMPNSS-Service	1052	0	Objwriter_Get_Album_Art_DataStop(UInt32 ErrorCode)	Stop		Objwriter_Get_Album_Art_Data	Informational		
+Microsoft-Windows-WMPNSS-Service	1053	0	UpdateObjectStart(UnicodeString ID, UnicodeString CurrentTagValue, UnicodeString NewTagValue)	Start		UpdateObject	Informational		
+Microsoft-Windows-WMPNSS-Service	1054	0	UpdateObjectStop(UnicodeString ID, UInt32 ErrorCode)	Stop		UpdateObject	Informational		
+Microsoft-Windows-WMPNSS-Service	2001	0	Svc_Is_AuthorizedStart(Boolean IsDeviceGiven, Boolean IsDeviceAuthorized, UInt32 ErrorCode)	Start		Svc_Is_Authorized	Informational		
+Microsoft-Windows-WMPNSS-Service	2002	0	Svc_Is_AuthorizedStop(Boolean IsDeviceGiven, Boolean IsDeviceAuthorized, UInt32 ErrorCode)	Stop		Svc_Is_Authorized	Informational		
+Microsoft-Windows-WMPNSS-Service	2003	0	Svc_Filter_EndpointStart()	Start		Svc_Filter_Endpoint	Informational		
+Microsoft-Windows-WMPNSS-Service	2004	0	Svc_Filter_EndpointStop()	Stop		Svc_Filter_Endpoint	Informational		
+Microsoft-Windows-WMPNSS-Service	2005	0	Svc_Is_ValidatedStart(Boolean IsDeviceGiven, Boolean IsDeviceValidated, UInt32 ErrorCode)	Start		Svc_Is_Validated	Informational		
+Microsoft-Windows-WMPNSS-Service	2006	0	Svc_Is_ValidatedStop(Boolean IsDeviceGiven, Boolean IsDeviceValidated, UInt32 ErrorCode)	Stop		Svc_Is_Validated	Informational		
+Microsoft-Windows-WMPNSS-Service	2007	0	Svc_Query_MediaserverStart(Boolean IsAllowed, Boolean IsValidated, UInt32 ErrorCode)	Start		Svc_Query_Mediaserver	Informational		
+Microsoft-Windows-WMPNSS-Service	2008	0	Svc_Query_MediaserverStop(Boolean IsAllowed, Boolean IsValidated, UInt32 ErrorCode)	Stop		Svc_Query_Mediaserver	Informational		
+Microsoft-Windows-WMPNSS-Service	2009	0	Svc_Register_DeviceStart(UInt32 ErrorCode)	Start		Svc_Register_Device	Informational		
+Microsoft-Windows-WMPNSS-Service	2010	0	Svc_Register_DeviceStop(UInt32 ErrorCode)	Stop		Svc_Register_Device	Informational		
+Microsoft-Windows-WMPNSS-Service	2011	0	Svc_Register_Device_Create_Device_RegStart(UInt32 ErrorCode)	Start		Svc_Register_Device_Create_Device_Reg	Informational		
+Microsoft-Windows-WMPNSS-Service	2012	0	Svc_Register_Device_Create_Device_RegStop(UInt32 ErrorCode)	Stop		Svc_Register_Device_Create_Device_Reg	Informational		
+Microsoft-Windows-WMPNSS-Service	2013	0	Svc_Register_Device_Parse_ReqStart(UInt32 ErrorCode)	Start		Svc_Register_Device_Parse_Req	Informational		
+Microsoft-Windows-WMPNSS-Service	2014	0	Svc_Register_Device_Parse_ReqStop(UInt32 ErrorCode)	Stop		Svc_Register_Device_Parse_Req	Informational		
+Microsoft-Windows-WMPNSS-Service	2015	0	Svc_Register_Device_Reg_DeviceStart(UInt32 ErrorCode)	Start		Svc_Register_Device_Reg_Device	Informational		
+Microsoft-Windows-WMPNSS-Service	2016	0	Svc_Register_Device_Reg_DeviceStop(UInt32 ErrorCode)	Stop		Svc_Register_Device_Reg_Device	Informational		
+Microsoft-Windows-WMPNSS-Service	2017	0	Svc_Register_Device_Start_DetectionStart(UInt32 ErrorCode)	Start		Svc_Register_Device_Start_Detection	Informational		
+Microsoft-Windows-WMPNSS-Service	2018	0	Svc_Register_Device_Start_DetectionStop(UInt32 ErrorCode)	Stop		Svc_Register_Device_Start_Detection	Informational		
+Microsoft-Windows-WMPNSS-Service	3001	0	Generate_Nontrans_Res_ElementStart(UInt32 ElementCount, UInt32 ErrorCode)	Start		Generate_Nontrans_Res_Element	Verbose		
+Microsoft-Windows-WMPNSS-Service	3002	0	Generate_Nontrans_Res_ElementStop(UInt32 ElementCount, UInt32 ErrorCode)	Stop		Generate_Nontrans_Res_Element	Verbose		
+Microsoft-Windows-WMPNSS-Service	3003	0	Generate_Trans_Res_ElementStart(UInt32 ElementCount, UInt32 ErrorCode)	Start		Generate_Trans_Res_Element	Verbose		
+Microsoft-Windows-WMPNSS-Service	3004	0	Generate_Trans_Res_ElementStop(UInt32 ElementCount, UInt32 ErrorCode)	Stop		Generate_Trans_Res_Element	Verbose		
+Microsoft-Windows-WMPNSS-Service	3005	0	Generate_Res_ElementStart(UInt32 ElementCount, UInt32 ErrorCode)	Start		Generate_Res_Element	Informational		
+Microsoft-Windows-WMPNSS-Service	3006	0	Generate_Res_ElementStop(UInt32 ElementCount, UInt32 ErrorCode)	Stop		Generate_Res_Element	Informational		
+Microsoft-Windows-WMPNSS-Service	3007	0	Generate_Album_Art_ElementStart(UInt32 ElementCount, UInt32 ErrorCode)	Start		Generate_Album_Art_Element	Informational		
+Microsoft-Windows-WMPNSS-Service	3008	0	Generate_Album_Art_ElementStop(UInt32 ElementCount, UInt32 ErrorCode)	Stop		Generate_Album_Art_Element	Informational		
+Microsoft-Windows-WMPNSS-Service	3009	0	Callback_Begin_AuthenticateStart(Pointer NetEvent, Pointer Callback, Pointer State, UInt32 ErrorCode)	Start		Callback_Begin_Authenticate	Informational		
+Microsoft-Windows-WMPNSS-Service	3010	0	Callback_Begin_AuthenticateStop(Pointer NetEvent, Pointer Callback, Pointer State, UInt32 ErrorCode)	Stop		Callback_Begin_Authenticate	Informational		
+Microsoft-Windows-WMPNSS-Service	3011	0	Callback_End_AuthenticateStart(Pointer Address, UInt32 ErrorCode)	Start		Callback_End_Authenticate	Informational		
+Microsoft-Windows-WMPNSS-Service	3012	0	Callback_End_AuthenticateStop(Pointer Address, UInt32 ErrorCode)	Stop		Callback_End_Authenticate	Informational		
+Microsoft-Windows-WMPNSS-Service	3013	0	Callback_Begin_AuthorizeStart(Pointer NetEvent, Pointer Callback, Pointer State, UInt32 ErrorCode)	Start		Callback_Begin_Authorize	Informational		
+Microsoft-Windows-WMPNSS-Service	3014	0	Callback_Begin_AuthorizeStop(Pointer NetEvent, Pointer Callback, Pointer State, UInt32 ErrorCode)	Stop		Callback_Begin_Authorize	Informational		
+Microsoft-Windows-WMPNSS-Service	3015	0	Callback_End_AuthorizeStart(Pointer Address, UInt32 ErrorCode)	Start		Callback_End_Authorize	Informational		
+Microsoft-Windows-WMPNSS-Service	3016	0	Callback_End_AuthorizeStop(Pointer Address, UInt32 ErrorCode)	Stop		Callback_End_Authorize	Informational		
+Microsoft-Windows-WMPNSS-Service	3017	0	Callback_Begin_Url_TransformStart(Pointer NetEvent, Pointer Callback, Pointer State, UInt32 ErrorCode)	Start		Callback_Begin_Url_Transform	Informational		
+Microsoft-Windows-WMPNSS-Service	3018	0	Callback_Begin_Url_TransformStop(Pointer NetEvent, Pointer Callback, Pointer State, UInt32 ErrorCode)	Stop		Callback_Begin_Url_Transform	Informational		
+Microsoft-Windows-WMPNSS-Service	3019	0	Callback_End_Url_TransformStart(Pointer Address, UInt32 ErrorCode)	Start		Callback_End_Url_Transform	Informational		
+Microsoft-Windows-WMPNSS-Service	3020	0	Callback_End_Url_TransformStop(Pointer Address, UInt32 ErrorCode)	Stop		Callback_End_Url_Transform	Informational		
+Microsoft-Windows-WMPNSS-Service	3021	0	Callback_Begin_Select_ProfileStart(Pointer NetEvent, Pointer Callback, Pointer State, UInt32 ErrorCode)	Start		Callback_Begin_Select_Profile	Informational		
+Microsoft-Windows-WMPNSS-Service	3022	0	Callback_Begin_Select_ProfileStop(Pointer NetEvent, Pointer Callback, Pointer State, UInt32 ErrorCode)	Stop		Callback_Begin_Select_Profile	Informational		
+Microsoft-Windows-WMPNSS-Service	3023	0	Callback_End_Select_ProfileStart(Pointer Address, UInt32 ErrorCode)	Start		Callback_End_Select_Profile	Informational		
+Microsoft-Windows-WMPNSS-Service	3024	0	Callback_End_Select_ProfileStop(Pointer Address, UInt32 ErrorCode)	Stop		Callback_End_Select_Profile	Informational		
+Microsoft-Windows-WMPNSS-Service	3025	0	Callback_Get_Local_PathStart(Boolean IsAlbumArt, Boolean IsStream, UInt32 ErrorCode)	Start		Callback_Get_Local_Path	Informational		
+Microsoft-Windows-WMPNSS-Service	3026	0	Callback_Get_Local_PathStop(Boolean IsAlbumArt, Boolean IsStream, UInt32 ErrorCode)	Stop		Callback_Get_Local_Path	Informational		
+Microsoft-Windows-WMPNSS-Service	3027	0	Callback_Get_ObjectStart(UInt32 ErrorCode)	Start		Callback_Get_Object	Informational		
+Microsoft-Windows-WMPNSS-Service	3028	0	Callback_Get_ObjectStop(UInt32 ErrorCode)	Stop		Callback_Get_Object	Informational		
+Microsoft-Windows-WMPNSS-Service	3029	0	Callback_Get_ProfileStart(Boolean IsAlbumArt, Boolean IsTranscode, UInt32 FormatID, UInt32 ErrorCode)	Start		Callback_Get_Profile	Informational		
+Microsoft-Windows-WMPNSS-Service	3030	0	Callback_Get_ProfileStop(Boolean IsAlbumArt, Boolean IsTranscode, UInt32 FormatID, UInt32 ErrorCode)	Stop		Callback_Get_Profile	Informational		
+Microsoft-Windows-WMPNSS-Service	3031	0	Callback_Begin_CloseStart(Pointer NetEvent, Pointer Callback, Pointer State, UInt32 ErrorCode)	Start		Callback_Begin_Close	Informational		
+Microsoft-Windows-WMPNSS-Service	3032	0	Callback_Begin_CloseStop(Pointer NetEvent, Pointer Callback, Pointer State, UInt32 ErrorCode)	Stop		Callback_Begin_Close	Informational		
+Microsoft-Windows-WMPNSS-Service	3033	0	Callback_End_CloseStart(Pointer Address, UInt32 ErrorCode)	Start		Callback_End_Close	Informational		
+Microsoft-Windows-WMPNSS-Service	3034	0	Callback_End_CloseStop(Pointer Address, UInt32 ErrorCode)	Stop		Callback_End_Close	Informational		
+Microsoft-Windows-WMPNSS-Service	3035	0	Callback_Id(Pointer ID)			Callback_Id	Informational		
+Microsoft-Windows-WMPNSS-Service	4001	0	Convert_SortStart(UnicodeString ContainerID, UnicodeString Sort, Boolean OnlyItemsInSearchResults, UInt32 SortItemCount, UInt32 ErrorCode)	Start		Convert_Sort	Informational		
+Microsoft-Windows-WMPNSS-Service	4002	0	Convert_SortStop(UnicodeString ContainerID, UnicodeString Sort, Boolean OnlyItemsInSearchResults, UInt32 SortItemCount, UInt32 ErrorCode)	Stop		Convert_Sort	Informational		
+Microsoft-Windows-WMPNSS-Service	4003	0	Convert_QueryStart(UnicodeString ContainerID, UnicodeString UPnPClassToReturn, UnicodeString Query, Boolean OnlyItemsInSearchResults, UInt32 ErrorCode)	Start		Convert_Query	Informational		
+Microsoft-Windows-WMPNSS-Service	4004	0	Convert_QueryStop(UnicodeString ContainerID, UnicodeString UPnPClassToReturn, UnicodeString Query, Boolean OnlyItemsInSearchResults, UInt32 ErrorCode)	Stop		Convert_Query	Informational		
+Microsoft-Windows-WMPNSS-Service	4005	0	Verify_UPnP_ClassStart(UnicodeString ClassName, UInt32 ErrorCode)	Start		Verify_UPnP_Class	Informational		
+Microsoft-Windows-WMPNSS-Service	4006	0	Verify_UPnP_ClassStop(UnicodeString ClassName, UInt32 ErrorCode)	Stop		Verify_UPnP_Class	Informational		
+Microsoft-Windows-WMPNSS-Service	4007	0	Execute_QueryStart(UInt32 TotalRetry, UInt32 ErrorCode)	Start		Execute_Query	Informational		
+Microsoft-Windows-WMPNSS-Service	4008	0	Execute_QueryStop(UInt32 TotalRetry, UInt32 ErrorCode)	Stop		Execute_Query	Informational		
+Microsoft-Windows-WMPNSS-Service	4009	0	WMP_On_Container_ChangedStart(UnicodeString ContainerID, UInt32 ErrorCode)	Start		WMP_On_Container_Changed	Informational		
+Microsoft-Windows-WMPNSS-Service	4010	0	WMP_On_Container_ChangedStop(UnicodeString ContainerID, UInt32 ErrorCode)	Stop		WMP_On_Container_Changed	Informational		
+Microsoft-Windows-WMPNSS-Service	4011	0	Execute_RefId_QueryStart(UnicodeString ContainerID, UnicodeString RefID, UInt32 StartIndex, UInt32 RequestedCount, UInt32 TotalMatches, UInt32 ErrorCode)	Start		Execute_RefId_Query	Informational		
+Microsoft-Windows-WMPNSS-Service	4012	0	Execute_RefId_QueryStop(UnicodeString ContainerID, UnicodeString RefID, UInt32 StartIndex, UInt32 RequestedCount, UInt32 TotalMatches, UInt32 ErrorCode)	Stop		Execute_RefId_Query	Informational		
+Microsoft-Windows-WMPNSS-Service	4013	0	Execute_RefId_ExistsStart(UnicodeString ContainerID, UInt32 StartIndex, UInt32 RequestedCount, UInt32 SortItemCount, UInt32 TotalMatches, UInt32 ErrorCode)	Start		Execute_RefId_Exists	Informational		
+Microsoft-Windows-WMPNSS-Service	4014	0	Execute_RefId_ExistsStop(UnicodeString ContainerID, UInt32 StartIndex, UInt32 RequestedCount, UInt32 SortItemCount, UInt32 TotalMatches, UInt32 ErrorCode)	Stop		Execute_RefId_Exists	Informational		
+Microsoft-Windows-WMPNSS-Service	4015	0	Execute_ReturnAllChildrenStart(UnicodeString ContainerID, Boolean ItemsOnly, UInt32 StartIndex, UInt32 RequestedCount, UInt32 SortItemCount, UInt32 TotalMatches, UInt32 ErrorCode)	Start		Execute_ReturnAllChildren	Informational		
+Microsoft-Windows-WMPNSS-Service	4016	0	Execute_ReturnAllChildrenStop(UnicodeString ContainerID, Boolean ItemsOnly, UInt32 StartIndex, UInt32 RequestedCount, UInt32 SortItemCount, UInt32 TotalMatches, UInt32 ErrorCode)	Stop		Execute_ReturnAllChildren	Informational		
+Microsoft-Windows-WMPNSS-Service	4017	0	Results_Get_CountStart(UInt32 Count, UInt32 ErrorCode)	Start		Results_Get_Count	Informational		
+Microsoft-Windows-WMPNSS-Service	4018	0	Results_Get_CountStop(UInt32 Count, UInt32 ErrorCode)	Stop		Results_Get_Count	Informational		
+Microsoft-Windows-WMPNSS-Service	4019	0	Results_Get_ItemStart(UInt32 Index, UInt32 ErrorCode)	Start		Results_Get_Item	Informational		
+Microsoft-Windows-WMPNSS-Service	4020	0	Results_Get_ItemStop(UInt32 Index, UInt32 ErrorCode)	Stop		Results_Get_Item	Informational		
+Microsoft-Windows-WMPNSS-Service	4021	0	Results_Create_Browse_Metadata_InstStart(UInt32 BrowseIndex, UInt32 ErrorCode)	Start		Results_Create_Browse_Metadata_Inst	Informational		
+Microsoft-Windows-WMPNSS-Service	4022	0	Results_Create_Browse_Metadata_InstStop(UInt32 BrowseIndex, UInt32 ErrorCode)	Stop		Results_Create_Browse_Metadata_Inst	Informational		
+Microsoft-Windows-WMPNSS-Service	4023	0	Results_Create_Browse_Children_InstStart(UInt32 StartingIndex, UInt32 RequestedCount, UInt32 SortItemCount, UInt32 ErrorCode)	Start		Results_Create_Browse_Children_Inst	Informational		
+Microsoft-Windows-WMPNSS-Service	4024	0	Results_Create_Browse_Children_InstStop(UInt32 StartingIndex, UInt32 RequestedCount, UInt32 SortItemCount, UInt32 ErrorCode)	Stop		Results_Create_Browse_Children_Inst	Informational		
+Microsoft-Windows-WMPNSS-Service	4025	0	Results_InitializeStart(Boolean BrowseChildren, UInt32 BrowseIndex, UInt32 RequestedCount, UInt32 SortItemCount, UInt32 ItemCount, UInt32 ErrorCode)	Start		Results_Initialize	Informational		
+Microsoft-Windows-WMPNSS-Service	4026	0	Results_InitializeStop(Boolean BrowseChildren, UInt32 BrowseIndex, UInt32 RequestedCount, UInt32 SortItemCount, UInt32 ItemCount, UInt32 ErrorCode)	Stop		Results_Initialize	Informational		
+Microsoft-Windows-WMPNSS-Service	4027	0	Results_Pop_SortmapStart(UInt32 SortItemCount, UInt32 ErrorCode)	Start		Results_Pop_Sortmap	Informational		
+Microsoft-Windows-WMPNSS-Service	4028	0	Results_Pop_SortmapStop(UInt32 SortItemCount, UInt32 ErrorCode)	Stop		Results_Pop_Sortmap	Informational		
+Microsoft-Windows-WMPNSS-Service	4029	0	Obj_Get_Element_ValueStart(UInt32 ElementValue, UInt32 Index, UInt32 AttributeValue, UInt32 MaxLength, UInt32 ErrorCode)	Start		Obj_Get_Element_Value	Informational		
+Microsoft-Windows-WMPNSS-Service	4030	0	Obj_Get_Element_ValueStop(UInt32 ElementValue, UInt32 Index, UInt32 AttributeValue, UInt32 MaxLength, UInt32 ErrorCode)	Stop		Obj_Get_Element_Value	Informational		
+Microsoft-Windows-WMPNSS-Service	4031	0	Obj_Get_Element_Value_ExStart(UInt32 ElementValue, UInt32 Index, UInt32 AttributeValue, UInt32 MaxLength, UInt32 ErrorCode)	Start		Obj_Get_Element_Value_Ex	Informational		
+Microsoft-Windows-WMPNSS-Service	4032	0	Obj_Get_Element_Value_ExStop(UInt32 ElementValue, UInt32 Index, UInt32 AttributeValue, UInt32 MaxLength, UInt32 ErrorCode)	Stop		Obj_Get_Element_Value_Ex	Informational		
+Microsoft-Windows-WMPNSS-Service	4033	0	Browse_Remote_Address(UnicodeString RemoteMACAddress)			Browse_Remote_Address	Informational		
+Microsoft-Windows-WMPNSS-Service	4034	0	Obj_Get_Element_Attribute_ValueStart(UInt32 ElementValue, UInt32 Index, UInt32 AttributeValue, UInt32 MaxLength, UInt32 ErrorCode)	Start		Obj_Get_Element_Attribute_Value	Informational		
+Microsoft-Windows-WMPNSS-Service	4035	0	Obj_Get_Element_Attribute_ValueStop(UInt32 ElementValue, UInt32 Index, UInt32 AttributeValue, UInt32 MaxLength, UInt32 ErrorCode)	Stop		Obj_Get_Element_Attribute_Value	Informational		
+Microsoft-Windows-WMPNSS-Service	4036	0	Obj_InitializeStart(UInt32 Index, UInt32 ErrorCode)	Start		Obj_Initialize	Informational		
+Microsoft-Windows-WMPNSS-Service	4037	0	Obj_InitializeStop(UInt32 Index, UInt32 ErrorCode)	Stop		Obj_Initialize	Informational		
+Microsoft-Windows-WMPNSS-Service	4038	0	Obj_Get_Desc_Element_ValueStart(UInt32 CountAdded, UInt32 ErrorCode)	Start		Obj_Get_Desc_Element_Value	Informational		
+Microsoft-Windows-WMPNSS-Service	4039	0	Obj_Get_Desc_Element_ValueStop(UInt32 CountAdded, UInt32 ErrorCode)	Stop		Obj_Get_Desc_Element_Value	Informational		
+Microsoft-Windows-WMPNSS-Service	4040	0	Obj_Get_Desc_Element_DataStart(UInt32 ElementValue, UInt32 Index, UInt32 AttributeValue, UInt32 MaxLength, UInt32 ErrorCode)	Start		Obj_Get_Desc_Element_Data	Verbose		
+Microsoft-Windows-WMPNSS-Service	4041	0	Obj_Get_Desc_Element_DataStop(UInt32 ElementValue, UInt32 Index, UInt32 AttributeValue, UInt32 MaxLength, UInt32 ErrorCode)	Stop		Obj_Get_Desc_Element_Data	Verbose		
+Microsoft-Windows-WMPNSS-Service	4042	0	Obj_Get_Search_Class_Element_ValueStart(UInt32 CountAdded, UInt32 ErrorCode)	Start		Obj_Get_Search_Class_Element_Value	Informational		
+Microsoft-Windows-WMPNSS-Service	4043	0	Obj_Get_Search_Class_Element_ValueStop(UInt32 CountAdded, UInt32 ErrorCode)	Stop		Obj_Get_Search_Class_Element_Value	Informational		
+Microsoft-Windows-WMPNSS-Service	4044	0	Obj_Get_Search_Class_Element_DataStart(UInt32 ElementValue, UInt32 Index, UInt32 AttributeValue, UInt32 MaxLength, UInt32 ErrorCode)	Start		Obj_Get_Search_Class_Element_Data	Informational		
+Microsoft-Windows-WMPNSS-Service	4045	0	Obj_Get_Search_Class_Element_DataStop(UInt32 ElementValue, UInt32 Index, UInt32 AttributeValue, UInt32 MaxLength, UInt32 ErrorCode)	Stop		Obj_Get_Search_Class_Element_Data	Informational		
+Microsoft-Windows-WMPNSS-Service	4046	0	Obj_Get_Artist_Author_Element_DataStart(UInt32 ElementValue, UInt32 Index, UInt32 AttributeValue, UInt32 MaxLength, UInt32 ErrorCode)	Start		Obj_Get_Artist_Author_Element_Data	Verbose		
+Microsoft-Windows-WMPNSS-Service	4047	0	Obj_Get_Artist_Author_Element_DataStop(UInt32 ElementValue, UInt32 Index, UInt32 AttributeValue, UInt32 MaxLength, UInt32 ErrorCode)	Stop		Obj_Get_Artist_Author_Element_Data	Verbose		
+Microsoft-Windows-WMPNSS-Service	4048	0	Obj_Pop_Artist_AuthorStart(UInt32 WMPAtom, UInt32 ReturnedCount, UInt32 ErrorCode)	Start		Obj_Pop_Artist_Author	Verbose		
+Microsoft-Windows-WMPNSS-Service	4049	0	Obj_Pop_Artist_AuthorStop(UInt32 WMPAtom, UInt32 ReturnedCount, UInt32 ErrorCode)	Stop		Obj_Pop_Artist_Author	Verbose		
+Microsoft-Windows-WMPNSS-Service	4050	0	CP_Execute_QueryStart(Boolean OnlyItemsInSearchResults, UInt32 ErrorCode)	Start		CP_Execute_Query	Informational		
+Microsoft-Windows-WMPNSS-Service	4051	0	CP_Execute_QueryStop(Boolean OnlyItemsInSearchResults, UInt32 ErrorCode)	Stop		CP_Execute_Query	Informational		
+Microsoft-Windows-WMPNSS-Service	4052	0	CP_Get_AttribStart(UInt32 WMPAtom, UInt32 ErrorCode)	Start		CP_Get_Attrib	Informational		
+Microsoft-Windows-WMPNSS-Service	4053	0	CP_Get_AttribStop(UInt32 WMPAtom, UInt32 ErrorCode)	Stop		CP_Get_Attrib	Informational		
+Microsoft-Windows-WMPNSS-Service	4054	0	CPR_Get_AttribStart(UInt32 Index, UInt32 WMPAtom, UInt32 ErrorCode)	Start		CPR_Get_Attrib	Informational		
+Microsoft-Windows-WMPNSS-Service	4055	0	CPR_Get_AttribStop(UInt32 Index, UInt32 WMPAtom, UInt32 ErrorCode)	Stop		CPR_Get_Attrib	Informational		
+Microsoft-Windows-WMPNSS-Service	4056	0	WMP_On_Content_Prov_AddedStart(Pointer Address, UInt32 ErrorCode)	Start		WMP_On_Content_Prov_Added	Informational		
+Microsoft-Windows-WMPNSS-Service	4057	0	WMP_On_Content_Prov_AddedStop(Pointer Address, UInt32 ErrorCode)	Stop		WMP_On_Content_Prov_Added	Informational		
+Microsoft-Windows-WMPNSS-Service	4058	0	WMP_On_Content_Prov_RemovedStart(Pointer Address, UInt32 ErrorCode)	Start		WMP_On_Content_Prov_Removed	Informational		
+Microsoft-Windows-WMPNSS-Service	4059	0	WMP_On_Content_Prov_RemovedStop(Pointer Address, UInt32 ErrorCode)	Stop		WMP_On_Content_Prov_Removed	Informational		
+Microsoft-Windows-WMPNSS-Service	4060	0	On_Content_Prov_ChangedStart(Pointer Address, UInt32 ErrorCode)	Start		On_Content_Prov_Changed	Informational		
+Microsoft-Windows-WMPNSS-Service	4061	0	On_Content_Prov_ChangedStop(Pointer Address, UInt32 ErrorCode)	Stop		On_Content_Prov_Changed	Informational		
+Microsoft-Windows-WMPNSS-Service	4062	0	WMP_BrowseStart(UnicodeString ID, UInt32 BrowseType, UInt32 StartIndex, UInt32 RequestedCount, UInt32 FilterItemCount, UInt32 SortItemCount, UInt32 TotalMatches, UInt32 ErrorCode)	Start		WMP_Browse	Informational		
+Microsoft-Windows-WMPNSS-Service	4063	0	WMP_BrowseStop(UnicodeString ID, UInt32 BrowseType, UInt32 StartIndex, UInt32 RequestedCount, UInt32 FilterItemCount, UInt32 SortItemCount, UInt32 TotalMatches, UInt32 ErrorCode)	Stop		WMP_Browse	Informational		
+Microsoft-Windows-WMPNSS-Service	4064	0	Search_Remote_Address(UnicodeString RemoteMACAddress)			Search_Remote_Address	Informational		
+Microsoft-Windows-WMPNSS-Service	4065	0	WMP_SearchStart(UnicodeString ID, UnicodeString Query, UInt32 StartIndex, UInt32 RequestedCount, UInt32 FilterItemCount, UInt32 SortItemCount, UInt32 TotalMatches, UInt32 ErrorCode)	Start		WMP_Search	Informational		
+Microsoft-Windows-WMPNSS-Service	4066	0	WMP_SearchStop(UnicodeString ID, UnicodeString Query, UInt32 StartIndex, UInt32 RequestedCount, UInt32 FilterItemCount, UInt32 SortItemCount, UInt32 TotalMatches, UInt32 ErrorCode)	Stop		WMP_Search	Informational		
+Microsoft-Windows-WMPNSS-Service	5001	0	Create_And_Register_ServerStart(Pointer Address, UInt32 ErrorCode)	Start		Create_And_Register_Server	Informational		
+Microsoft-Windows-WMPNSS-Service	5002	0	Create_And_Register_ServerStop(Pointer Address, UInt32 ErrorCode)	Stop		Create_And_Register_Server	Informational		
+Microsoft-Windows-WMPNSS-Service	5003	0	Create_Media_ServerStart(Pointer Address, UInt32 ErrorCode)	Start		Create_Media_Server	Informational		
+Microsoft-Windows-WMPNSS-Service	5004	0	Create_Media_ServerStop(Pointer Address, UInt32 ErrorCode)	Stop		Create_Media_Server	Informational		
+Microsoft-Windows-WMPNSS-Service	5005	0	WMC_On_Content_Prov_AddedStart(Pointer Address, UInt32 ErrorCode)	Start		WMC_On_Content_Prov_Added	Informational		
+Microsoft-Windows-WMPNSS-Service	5006	0	WMC_On_Content_Prov_AddedStop(Pointer Address, UInt32 ErrorCode)	Stop		WMC_On_Content_Prov_Added	Informational		
+Microsoft-Windows-WMPNSS-Service	5007	0	WMC_On_Content_Prov_RemovedStart(Pointer Address, UInt32 ErrorCode)	Start		WMC_On_Content_Prov_Removed	Informational		
+Microsoft-Windows-WMPNSS-Service	5008	0	WMC_On_Content_Prov_RemovedStop(Pointer Address, UInt32 ErrorCode)	Stop		WMC_On_Content_Prov_Removed	Informational		
+Microsoft-Windows-WMPNSS-Service	5009	0	Create_Media_DevicesStart(UInt32 Count, UInt32 ErrorCode)	Start		Create_Media_Devices	Informational		
+Microsoft-Windows-WMPNSS-Service	5010	0	Create_Media_DevicesStop(UInt32 Count, UInt32 ErrorCode)	Stop		Create_Media_Devices	Informational		
+Microsoft-Windows-WMPNSS-Service	5011	0	Create_Media_Devices_For_FactoryStart(UInt32 Count, UInt32 ErrorCode)	Start		Create_Media_Devices_For_Factory	Informational		
+Microsoft-Windows-WMPNSS-Service	5012	0	Create_Media_Devices_For_FactoryStop(UInt32 Count, UInt32 ErrorCode)	Stop		Create_Media_Devices_For_Factory	Informational		
+Microsoft-Windows-WMPNSS-Service	5013	0	On_SuspendStart(UInt32 Count, UInt32 ErrorCode)	Start		On_Suspend	Informational		
+Microsoft-Windows-WMPNSS-Service	5014	0	On_SuspendStop(UInt32 Count, UInt32 ErrorCode)	Stop		On_Suspend	Informational		
+Microsoft-Windows-WMPNSS-Service	5015	0	On_ResumeStart(UInt32 Count, UInt32 ErrorCode)	Start		On_Resume	Informational		
+Microsoft-Windows-WMPNSS-Service	5016	0	On_ResumeStop(UInt32 Count, UInt32 ErrorCode)	Stop		On_Resume	Informational		
+Microsoft-Windows-WMPNSS-Service	5017	0	Update_Requests_Oustanding(UInt32 RequestsOutstanding, UInt64 TimeContentRequestsBecameZero)			Update_Requests_Oustanding	Informational		
+Microsoft-Windows-WMPNSS-Service	5018	0	Handle_Network_ChangeStart()	Start		Handle_Network_Change	Informational		
+Microsoft-Windows-WMPNSS-Service	5019	0	Handle_Network_ChangeStop()	Stop		Handle_Network_Change	Informational		
+Microsoft-Windows-WMPNSS-Service	5020	0	Cleanup_DevicesStart(UInt32 DeviceType, UInt32 DevicesRemoved)	Start		Cleanup_Devices	Informational		
+Microsoft-Windows-WMPNSS-Service	5021	0	Cleanup_DevicesStop(UInt32 DeviceType, UInt32 DevicesRemoved)	Stop		Cleanup_Devices	Informational		
+Microsoft-Windows-WMPNSS-Service	5022	0	Check_Server_KeepAwakeStart(Boolean KeepAwake)	Start		Check_Server_KeepAwake	Informational		
+Microsoft-Windows-WMPNSS-Service	5023	0	Check_Server_KeepAwakeStop(Boolean KeepAwake)	Stop		Check_Server_KeepAwake	Informational		
+Microsoft-Windows-WMPNSS-Service	5024	0	Flush_MemoryStart(UInt32 IdleSecondsUntilMemoryFlush, UInt64 TimeContentRequestsBecameZero)	Start		Flush_Memory	Informational		
+Microsoft-Windows-WMPNSS-Service	5025	0	Flush_MemoryStop(UInt32 IdleSecondsUntilMemoryFlush, UInt64 TimeContentRequestsBecameZero)	Stop		Flush_Memory	Informational		
+Microsoft-Windows-WMPNSS-Service	6001	0	Is_AllowedStart(UnicodeString MACAddress, UInt32 ErrorCode)	Start		Is_Allowed	Informational		
+Microsoft-Windows-WMPNSS-Service	6002	0	Is_AllowedStop(UnicodeString MACAddress, UInt32 ErrorCode)	Stop		Is_Allowed	Informational		
+Microsoft-Windows-WMPNSS-Service	6003	0	Filter_Addr_1Start(Pointer Address, UnicodeString MACAddress, Pointer SockAddr, UInt32 ErrorCode)	Start		Filter_Addr_1	Informational		
+Microsoft-Windows-WMPNSS-Service	6004	0	Filter_Addr_1Stop(Pointer Address, UnicodeString MACAddress, Pointer SockAddr, UInt32 ErrorCode)	Stop		Filter_Addr_1	Informational		
+Microsoft-Windows-WMPNSS-Service	6005	0	Filter_Addr_2Start(Pointer Address, UnicodeString MACAddress, Pointer SockAddr, UInt32 ErrorCode)	Start		Filter_Addr_2	Informational		
+Microsoft-Windows-WMPNSS-Service	6006	0	Filter_Addr_2Stop(Pointer Address, UnicodeString MACAddress, Pointer SockAddr, UInt32 ErrorCode)	Stop		Filter_Addr_2	Informational		
+Microsoft-Windows-WMPNSS-Service	6007	0	Filter_Addr_3Start(Pointer Address, UnicodeString MACAddress, Pointer SockAddr, UInt32 ErrorCode)	Start		Filter_Addr_3	Informational		
+Microsoft-Windows-WMPNSS-Service	6008	0	Filter_Addr_3Stop(Pointer Address, UnicodeString MACAddress, Pointer SockAddr, UInt32 ErrorCode)	Stop		Filter_Addr_3	Informational		
+Microsoft-Windows-WMPNSS-Service	6009	0	Filter_Addr_4Start(Pointer Address, UnicodeString MACAddress, Pointer SockAddr, UInt32 ErrorCode)	Start		Filter_Addr_4	Informational		
+Microsoft-Windows-WMPNSS-Service	6010	0	Filter_Addr_4Stop(Pointer Address, UnicodeString MACAddress, Pointer SockAddr, UInt32 ErrorCode)	Stop		Filter_Addr_4	Informational		
+Microsoft-Windows-WMPNSS-Service	6011	0	Initialize_ServerStart(Pointer Address, UInt32 ErrorCode)	Start		Initialize_Server	Informational		
+Microsoft-Windows-WMPNSS-Service	6012	0	Initialize_ServerStop(Pointer Address, UInt32 ErrorCode)	Stop		Initialize_Server	Informational		
+Microsoft-Windows-WMPNSS-Service	6013	0	Filter_Caller_IP_Address(UnicodeString Address)			Filter_Caller_IP_Address	Informational		
+Microsoft-Windows-WMPNSS-Service	6101	0	DeviceDiscoveryStart(UInt32 ServerOrRenderer, UInt32 ErrorCode)	Start		DeviceDiscovery	Informational		
+Microsoft-Windows-WMPNSS-Service	6102	0	SearchComplete(UInt32 ServerOrRenderer)			SearchComplete	Informational		
+Microsoft-Windows-WMPNSS-Service	6103	0	DeviceDiscoveryStop(UInt32 ServerOrRenderer, UInt32 ErrorCode)	Stop		DeviceDiscovery	Informational		
+Microsoft-Windows-WMPNSS-Service	6104	0	DeviceAddedStart(UInt32 ServerOrRenderer, Pointer IUPnPDevice, GUID NetworkGUID)	Start		DeviceAdded	Informational		
+Microsoft-Windows-WMPNSS-Service	6105	0	DeviceAddedStop(UInt32 ServerOrRenderer, Pointer IUPnPDevice, UnicodeString UDN, UnicodeString FriendlyName, Boolean IsFunctionalDMR, UInt32 ErrorCode)	Stop		DeviceAdded	Informational		
+Microsoft-Windows-WMPNSS-Service	6106	0	DeviceCountUpdate(UInt32 TotalDevicesAdded, UInt32 DeviceFunctionalCount, UInt32 TotalUDNRenderersAdded, UInt32 UDNRenderersFunctionalCount)			DeviceCountUpdate	Informational		
+Microsoft-Windows-WMPNSS-Service	6107	0	DeviceRemovedStart(UInt32 ServerOrRenderer, UnicodeString UDN)	Start		DeviceRemoved	Informational		
+Microsoft-Windows-WMPNSS-Service	6108	0	DeviceRemovedStop(UInt32 ServerOrRenderer, UnicodeString UDN, UInt32 ErrorCode, UInt32 FailureReason)	Stop		DeviceRemoved	Informational		
+Microsoft-Windows-WMPNSS-Service	6109	0	DeviceAdded(Pointer IUPnPDevice, Boolean HasAVTransport, Boolean HasRenderingControl, Boolean HasConnectionManager)			DeviceAdded	Informational		
+Microsoft-Windows-WMPNSS-Service	6110	0	RMEClientAuthenticationStart(UnicodeString RMEClientID)	Start		RMEClientAuthentication	Informational		
+Microsoft-Windows-WMPNSS-Service	6111	0	RMEClientAuthenticationStop(UnicodeString RMEClientID, UInt32 ErrorCode)	Stop		RMEClientAuthentication	Informational		
+Microsoft-Windows-WMPNSS-Service	6112	0	RMEClientEnumLibQueryStart(UnicodeString RMEClientID)	Start		RMEClientEnumLibQuery	Informational		
+Microsoft-Windows-WMPNSS-Service	6113	0	RMEClientEnumLibQueryStop(UnicodeString RMEClientID, UInt32 ErrorCode)	Stop		RMEClientEnumLibQuery	Informational		

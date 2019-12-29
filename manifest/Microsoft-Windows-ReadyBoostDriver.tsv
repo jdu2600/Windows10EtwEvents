@@ -1,0 +1,30 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-ReadyBoostDriver	1	2	StoreReadStart_V2(UInt64 ByteOffset, Pointer Irp, UInt32 ByteLength, UInt32 Flags, Pointer FileKey, UInt16 StoreId, UInt16 VolumeId)	Start	StoreOps	StoreRead	Informational		
+Microsoft-Windows-ReadyBoostDriver	2	1	StoreReadStop_V1(Pointer Irp, UInt32 Status)	Stop	StoreOps	StoreRead	Informational		
+Microsoft-Windows-ReadyBoostDriver	3	2	StoreAdd_V2(UInt64 DataKey, Pointer DataMgr, UInt32 StoreOffset, UInt16 CompressedSize, UInt16 Flags)		StoreOps	StoreAdd	Informational		
+Microsoft-Windows-ReadyBoostDriver	4	1	StoreRemove_V1(UInt64 DataKey, Pointer DataMgr, UInt32 StoreOffset)		StoreOps	StoreRemove	Informational		
+Microsoft-Windows-ReadyBoostDriver	6	1	StoreDelete_V1(Pointer StoreKey)		StoreOps	StoreDelete	Informational		
+Microsoft-Windows-ReadyBoostDriver	8	1	VolumeMapRundown_V1(UInt16 VolumeId, UInt16 VolumeNameLength, UnicodeString VolumePath)		StoreOps	VolumeMapRundown	Informational		
+Microsoft-Windows-ReadyBoostDriver	9	1	VolumeMapCreate_V1(UInt16 VolumeId, UInt16 VolumeNameLength, UnicodeString VolumePath)		StoreOps	VolumeMapCreate	Informational		
+Microsoft-Windows-ReadyBoostDriver	10	1	VolumeMapRemove_V1(UInt16 VolumeId, UInt16 VolumeNameLength, UnicodeString VolumePath)		StoreOps	VolumeMapRemove	Informational		
+Microsoft-Windows-ReadyBoostDriver	11	1	StoreIgnoredIO_V1(Pointer Irp, UInt16 Reason, UInt16 Flags)		StoreOps	StoreIgnoredIO	Informational		
+Microsoft-Windows-ReadyBoostDriver	12	2	ReadyBootIO_V2(UInt64 StartTime, UInt64 ByteOffset, Pointer FileKey, Pointer ProcessKey, UInt32 ByteLength, UInt32 Flags)		ReadyBoot	ReadyBootIO	Informational		
+Microsoft-Windows-ReadyBoostDriver	13	1	StoreCorruption_V1(Pointer DataMgr, Pointer VirtualAddress, UInt64 PhysicalAddress, UInt16 Size, UInt8 FileBacked, UInt8 CorruptionType, UInt32 Flags)		StoreOps StoreDiag	StoreCorruption	Informational		
+Microsoft-Windows-ReadyBoostDriver	14	1	StorePageRundown_V1(UInt64 DataKey, Pointer DataMgr, UInt32 StoreOffset, UInt16 CompressedSize, UInt16 Flags)		StoreContentsRundown	StorePageRundown	Informational		
+Microsoft-Windows-ReadyBoostDriver	15	2	RegionEvict_V2(Pointer DataMgr, UInt32 RegionIndex, UInt32 Status, UInt16 SpaceUsed, UInt16 LastAccessTime)		StoreOps	RegionEvict	Informational		
+Microsoft-Windows-ReadyBoostDriver	16	2	RegionWrite_V2(Pointer DataMgr, UInt32 RegionIndex, UInt32 Status, UInt16 SpaceUsed, UInt16 LastAccessTime)		StoreOps	RegionWrite	Informational		
+Microsoft-Windows-ReadyBoostDriver	17	1	UnpersistFailure_V1(UInt32 FailReason, HexInt32 FailStatus, UInt16 ObjectPathLength, UnicodeString ObjectPath)		StoreOps StoreDiag	UnpersistFailure	Informational		
+Microsoft-Windows-ReadyBoostDriver	18	1	UserActive_V1(UInt8 UserActive)		StoreOps	UserActive	Informational		
+Microsoft-Windows-ReadyBoostDriver	19	1	StoreIoStats_V1(Pointer StoreKey, UInt32 Size, Binary Data)		StoreOps	StoreIoStats	Informational		
+Microsoft-Windows-ReadyBoostDriver	20	1	GlobalStats_V1(UInt32 Size, Binary Data)		StoreOps	GlobalStats	Informational		
+Microsoft-Windows-ReadyBoostDriver	21	1	StoreEmpty_V1(Pointer StoreKey, Pointer Param)		StoreOps	StoreEmpty	Informational		
+Microsoft-Windows-ReadyBoostDriver	22	1	RegionRelease_V1(Pointer DataMgr, UInt32 RegionIndex, UInt32 Status, UInt16 SpaceUsed, UInt16 LastAccessTime)		StoreOps	RegionRelease	Informational		
+Microsoft-Windows-ReadyBoostDriver	23	1	RegionCompactStart_V1(Pointer DataMgr, UInt32 RegionIndex, UInt32 Status, UInt16 SpaceUsed, UInt16 LastAccessTime)	Start	StoreOps	RegionCompact	Informational		
+Microsoft-Windows-ReadyBoostDriver	24	1	RegionCompactStop_V1(Pointer DataMgr, UInt32 RegionIndex, UInt32 Status, UInt16 SpaceUsed, UInt16 LastAccessTime)	Stop	StoreOps	RegionCompact	Informational		
+Microsoft-Windows-ReadyBoostDriver	25	1	RegionRundown_V1(Pointer DataMgr, UInt32 RegionIndex, UInt32 Status, UInt16 SpaceUsed, UInt16 LastAccessTime)		StoreContentsRundown	RegionRundown	Informational		
+Microsoft-Windows-ReadyBoostDriver	26	1	WriteEvict_V1(UInt64 DataKey, UInt64 LengthInBytes)		StoreContentsRundown	WriteEvict	Informational		
+Microsoft-Windows-ReadyBoostDriver	27	1	CacheTermination_V1(UInt8 Reason, HexInt32 FailStatus, UInt16 DeviceDescLength, UnicodeString DeviceDescription, UInt16 ObjectPathLength, UnicodeString ObjectPath)		StoreOps StoreDiag	CacheTermination	Informational		
+Microsoft-Windows-ReadyBoostDriver	28	1	ReadyBootPeriodicStats_V1(UInt32 Size, Binary Data)		ReadyBoot	ReadyBootPeriodicStats	Informational		
+Microsoft-Windows-ReadyBoostDriver	29	0	task_0(UInt32 SqmType, GUID SqmSessionGuid, UInt32 SqmID, UInt32 SqmStreamRowLength, Int16 SqmStreamRow)			task_0	Informational		
+Microsoft-Windows-ReadyBoostDriver	30	1	ReadyBootCacheOp_V1(Pointer Key, UInt32 Operation, UInt32 Flags)		ReadyBoot StoreDiag	ReadyBootCacheOp	Informational		
+Microsoft-Windows-ReadyBoostDriver	31	1	HbdrvIrpTag_V1(UInt64 VolumeOffset, UInt32 Length, UInt8 Read, UInt16 Priority, UInt8 PartialBmpHit)		StoreDiag	HbdrvIrpTag	Informational		

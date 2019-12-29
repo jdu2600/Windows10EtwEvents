@@ -1,0 +1,5 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-TimeBroker	1	1	task_0_V1(GUID BrokeredEventId, UInt32 OldState, UInt32 NewState)		EventState	task_0	Verbose		
+Microsoft-Windows-TimeBroker	2	1	task_02_V1(GUID BrokeredEventId, FILETIME StartTime, FILETIME EndTime)		EventState	task_0	Verbose		
+Microsoft-Windows-TimeBroker	3	1	task_03_V1(GUID BrokeredEventId, UInt32 EventType, HexInt32 Status)		Api	task_0	Informational		
+Microsoft-Windows-TimeBroker	4	1	task_04_V1(GUID BrokeredEventId, HexInt32 Status)		Api	task_0	Informational		

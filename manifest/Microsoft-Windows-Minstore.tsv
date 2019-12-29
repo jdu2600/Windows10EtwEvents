@@ -1,0 +1,36 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Minstore	1	1	TableEventBucketSplit_V1(HexInt64 IdHigh, HexInt64 IdLow, UInt32 TableType)	BucketSplit		TableEvent	Informational		
+Microsoft-Windows-Minstore	2	1	TableEventBucketMerge_V1(HexInt64 IdHigh, HexInt64 IdLow, UInt32 TableType)	BucketMerge		TableEvent	Informational		
+Microsoft-Windows-Minstore	10	1	TreeUpdateTaskWriteB+tree_V1(UInt32 PageCount, HexInt64 IdHigh, HexInt64 IdLow)	WriteB+tree		TreeUpdateTask	Informational		
+Microsoft-Windows-Minstore	11	1	VolumeCheckpoint_V1(UInt32 PageCount, HexInt64 IdHigh, HexInt64 IdLow)	Checkpoint		VolumeCheckpoint	Informational		
+Microsoft-Windows-Minstore	12	1	TreeUpdateTaskStartedwritingB+tree_V1(UInt32 PageCount, HexInt64 IdHigh, HexInt64 IdLow)	StartedwritingB+tree		TreeUpdateTask	Informational		
+Microsoft-Windows-Minstore	13	1	TreeUpdateTaskFinishedwritingB+tree_V1(UInt32 PageCount, HexInt64 IdHigh, HexInt64 IdLow)	FinishedwritingB+tree		TreeUpdateTask	Informational		
+Microsoft-Windows-Minstore	20	1	ForwardProgressLFF:RedoLog_V1(UInt32 Pending, UInt32 Amount, HexInt64 Lsn1, HexInt64 Lsn2, HexInt64 Lsn3)	RedoLog		ForwardProgress	Informational		
+Microsoft-Windows-Minstore	21	1	ForwardProgressLFF:ProtectedSpace_V1(UInt32 PageCount, HexInt64 IdHigh, HexInt64 IdLow)	ProtectedSpace		ForwardProgress	Informational		
+Microsoft-Windows-Minstore	22	1	AllocationAllocationrange_V1(Boolean IsMetadata, UInt32 RequestedTier, UInt32 ActualTier, UInt64 RequestedStartOfRange, UInt64 RequestedCountOfRange, UInt64 AllocatedStartOfRange, UInt64 AllocatedCountOfRange)	Allocationrange		Allocation	Verbose		
+Microsoft-Windows-Minstore	23	1	ForwardProgressLogtailadvance_V1(UInt32 Pending, UInt32 Amount, HexInt64 Lsn1, HexInt64 Lsn2, HexInt64 Lsn3)	Logtailadvance		ForwardProgress	Informational		
+Microsoft-Windows-Minstore	24	1	ForwardProgressLogpulselazywriter_V1(UInt32 Pending, UInt32 Amount, HexInt64 Lsn1, HexInt64 Lsn2, HexInt64 Lsn3)	Logpulselazywriter		ForwardProgress	Informational		
+Microsoft-Windows-Minstore	25	1	AllocationContainermove_V1(UInt32 SourceTier, UInt32 TargetTier, HexInt64 SourceStartOfRange, HexInt64 SourceCountOfRange, HexInt64 TargetPhysicalOffset, UInt32 SsdFillRatio, UInt32 HddFillRatio, Boolean IsTargetReserved, HexInt64 DestageAllocationCount, Boolean FailedSsdDestage)	Containermove		Allocation	Informational		
+Microsoft-Windows-Minstore	50	1	ContentionBucketreadcollision_V1(HexInt64 IdHigh, HexInt64 IdLow, HexInt64 Lcn, HexInt32 Level)	Bucketreadcollision		Contention	Informational		
+Microsoft-Windows-Minstore	51	1	ContentionBucketlockcollision_V1(HexInt64 IdHigh, HexInt64 IdLow, HexInt64 Lcn, HexInt32 Level)	Bucketlockcollision		Contention	Informational		
+Microsoft-Windows-Minstore	52	1	ContentionBucketcowcollision_V1(HexInt64 IdHigh, HexInt64 IdLow, HexInt64 Lcn, HexInt32 Level)	Bucketcowcollision		Contention	Informational		
+Microsoft-Windows-Minstore	100	1	ErrorDetectedB+nodeCRCmismatch_V1(HexInt64 IdHigh, HexInt64 IdLow, HexInt64 PageLcn, HexInt64 Lcn, HexInt64 PageVirtualClock, HexInt64 VolumeVirtualClock, Boolean Scrubbing)	B+nodeCRCmismatch		ErrorDetected	Informational		
+Microsoft-Windows-Minstore	101	1	ErrorDetectedB+noderepairedviaredundantcopy_V1(HexInt64 Lcn, Boolean Scrubbing)	B+noderepairedviaredundantcopy		ErrorDetected	Informational		
+Microsoft-Windows-Minstore	1000	2	TableEventBucketSplit1000_V2(HexInt64 IdHigh, HexInt64 IdLow, UInt32 TableType)	BucketSplit		TableEvent	Informational		
+Microsoft-Windows-Minstore	1002	2	TableEventBucketSplit1002_V2(HexInt64 IdHigh, HexInt64 IdLow, UInt32 TableType)	BucketSplit		TableEvent	Informational		
+Microsoft-Windows-Minstore	1003	2	TableEventBucketMerge1003_V2(HexInt64 IdHigh, HexInt64 IdLow, UInt32 TableType)	BucketMerge		TableEvent	Informational		
+Microsoft-Windows-Minstore	1004	2	TableEventBucketMerge1004_V2(HexInt64 IdHigh, HexInt64 IdLow, UInt32 TableType)	BucketMerge		TableEvent	Informational		
+Microsoft-Windows-Minstore	1005	2	TableEventBucketSplit1005_V2(HexInt64 IdHigh, HexInt64 IdLow, UInt32 TableType)	BucketSplit		TableEvent	Informational		
+Microsoft-Windows-Minstore	1006	2	TableEventBucketSplit1006_V2(HexInt64 IdHigh, HexInt64 IdLow, UInt32 TableType)	BucketSplit		TableEvent	Informational		
+Microsoft-Windows-Minstore	1007	2	TableEventBucketMerge1007_V2(HexInt64 IdHigh, HexInt64 IdLow, UInt32 TableType)	BucketMerge		TableEvent	Informational		
+Microsoft-Windows-Minstore	1008	2	TableEventBucketMerge1008_V2(HexInt64 IdHigh, HexInt64 IdLow, UInt32 TableType)	BucketMerge		TableEvent	Informational		
+Microsoft-Windows-Minstore	1011	2	LogRedo_V2(HexInt64 StartLsn, HexInt64 EndLsn, UInt64 TransactionsRemaining)	LogRedo		LogRedo	Informational		
+Microsoft-Windows-Minstore	1012	2	LogRedo1012_V2(HexInt64 StartLsn, HexInt64 EndLsn, UInt64 TransactionsRemaining)	LogRedo		LogRedo	Informational		
+Microsoft-Windows-Minstore	1013	2	LogRedo1013_V2(HexInt64 StartLsn, HexInt64 EndLsn, UInt64 TransactionsRemaining)	LogRedo		LogRedo	Informational		
+Microsoft-Windows-Minstore	1014	2	LogRedo1014_V2(HexInt64 StartLsn, HexInt64 EndLsn, UInt64 TransactionsRemaining)	LogRedo		LogRedo	Informational		
+Microsoft-Windows-Minstore	1015	2	LogRedo1015_V2(HexInt64 StartLsn, HexInt64 EndLsn, UInt64 TransactionsRemaining)	LogRedo		LogRedo	Informational		
+Microsoft-Windows-Minstore	1016	2	LogRedo1016_V2(HexInt64 StartLsn, HexInt64 EndLsn, UInt64 TransactionsRemaining)	LogRedo		LogRedo	Informational		
+Microsoft-Windows-Minstore	1017	2	LogRedo1017_V2(HexInt64 StartLsn, HexInt64 EndLsn, UInt64 TransactionsRemaining)	LogRedo		LogRedo	Informational		
+Microsoft-Windows-Minstore	1018	2	LogRedo1018_V2(HexInt64 StartLsn, HexInt64 EndLsn, UInt64 TransactionsRemaining)	LogRedo		LogRedo	Informational		
+Microsoft-Windows-Minstore	1019	2	LogRedo1019_V2(HexInt64 StartLsn, HexInt64 EndLsn, UInt64 TransactionsRemaining)	LogRedo		LogRedo	Informational		
+Microsoft-Windows-Minstore	1020	2	LogRedo1020_V2(HexInt64 StartLsn, HexInt64 EndLsn, UInt64 TransactionsRemaining)	LogRedo		LogRedo	Informational		

@@ -1,0 +1,26 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Diagnosis-Scripted	1	0	task_0(UnicodeString PackagePath, UnicodeString PackageId)		admin	task_0	Informational		
+Microsoft-Windows-Diagnosis-Scripted	101	0	task_0101(UnicodeString PackagePath)		lifecycle	task_0	Informational		
+Microsoft-Windows-Diagnosis-Scripted	102	0	task_0102(UnicodeString PackagePath)		lifecycle	task_0	Informational		
+Microsoft-Windows-Diagnosis-Scripted	103	0	task_0103(UnicodeString PackageId)		lifecycle	task_0	Informational		
+Microsoft-Windows-Diagnosis-Scripted	104	0	task_0104(UnicodeString PackageId)		lifecycle	task_0	Informational		
+Microsoft-Windows-Diagnosis-Scripted	105	0	task_0105(UnicodeString PackageId, UnicodeString ResolutionId)		lifecycle	task_0	Informational		
+Microsoft-Windows-Diagnosis-Scripted	106	0	task_0106(UnicodeString PackageId, UnicodeString ResolutionId)		lifecycle	task_0	Informational		
+Microsoft-Windows-Diagnosis-Scripted	107	0	task_0107(UnicodeString PackageId)		lifecycle	task_0	Informational		
+Microsoft-Windows-Diagnosis-Scripted	108	0	task_0108(UnicodeString PackageId)		lifecycle	task_0	Informational		
+Microsoft-Windows-Diagnosis-Scripted	201	0	task_0201(UInt32 Status)		lifecycle	task_0	Warning		
+Microsoft-Windows-Diagnosis-Scripted	301	0	task_0301(UnicodeString FunctionName, Int32 LineNumber, UInt32 ErrorCode)		debug	task_0	Error		
+Microsoft-Windows-Diagnosis-Scripted	401	0	task_0401(UnicodeString PackageId, UnicodeString RootCauseId)		lifecycle	task_0	Informational		
+Microsoft-Windows-Diagnosis-Scripted	402	0	task_0402(UnicodeString PackageId, UnicodeString RootCauseId)		lifecycle	task_0	Informational		
+Microsoft-Windows-Diagnosis-Scripted	1000	0	SCRIPTED_DIAGNOSTICS_TASK_HOSTStart()	Start	analytic	SCRIPTED_DIAGNOSTICS_TASK_HOST	Informational		
+Microsoft-Windows-Diagnosis-Scripted	1002	0	SCRIPTED_DIAGNOSTICS_TASK_HOSTStop()	Stop	analytic	SCRIPTED_DIAGNOSTICS_TASK_HOST	Informational		
+Microsoft-Windows-Diagnosis-Scripted	1004	0	SCRIPTED_DIAGNOSTICS_TASK_SERIALIZEStart()	Start	analytic	SCRIPTED_DIAGNOSTICS_TASK_SERIALIZE	Informational		
+Microsoft-Windows-Diagnosis-Scripted	1006	0	SCRIPTED_DIAGNOSTICS_TASK_SERIALIZEStop()	Stop	analytic	SCRIPTED_DIAGNOSTICS_TASK_SERIALIZE	Informational		
+Microsoft-Windows-Diagnosis-Scripted	1008	0	SCRIPTED_DIAGNOSTICS_TASK_INITIALIZEStart()	Start	analytic	SCRIPTED_DIAGNOSTICS_TASK_INITIALIZE	Informational		
+Microsoft-Windows-Diagnosis-Scripted	1010	0	SCRIPTED_DIAGNOSTICS_TASK_INITIALIZEStop()	Stop	analytic	SCRIPTED_DIAGNOSTICS_TASK_INITIALIZE	Informational		
+Microsoft-Windows-Diagnosis-Scripted	1012	0	SCRIPTED_DIAGNOSTICS_TASK_VALIDATEStart()	Start	analytic	SCRIPTED_DIAGNOSTICS_TASK_VALIDATE	Informational		
+Microsoft-Windows-Diagnosis-Scripted	1014	0	SCRIPTED_DIAGNOSTICS_TASK_VALIDATEStop()	Stop	analytic	SCRIPTED_DIAGNOSTICS_TASK_VALIDATE	Informational		
+Microsoft-Windows-Diagnosis-Scripted	1016	0	SCRIPTED_DIAGNOSTICS_TASK_SCRIPTStart()	Start	analytic	SCRIPTED_DIAGNOSTICS_TASK_SCRIPT	Informational		
+Microsoft-Windows-Diagnosis-Scripted	1018	0	SCRIPTED_DIAGNOSTICS_TASK_SCRIPTStop()	Stop	analytic	SCRIPTED_DIAGNOSTICS_TASK_SCRIPT	Informational		
+Microsoft-Windows-Diagnosis-Scripted	1020	0	SCRIPTED_DIAGNOSTICS_TASK_TRUSTStart()	Start	analytic	SCRIPTED_DIAGNOSTICS_TASK_TRUST	Informational		
+Microsoft-Windows-Diagnosis-Scripted	1022	0	SCRIPTED_DIAGNOSTICS_TASK_TRUSTStop()	Stop	analytic	SCRIPTED_DIAGNOSTICS_TASK_TRUST	Informational		

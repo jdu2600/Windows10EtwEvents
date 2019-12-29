@@ -1,0 +1,12 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-NTLM	100	0	task_0(UnicodeString AccountName, UnicodeString DeviceName, HexInt32 Status)			task_0	Error		
+Microsoft-Windows-NTLM	101	0	task_0101(UnicodeString AccountName, UnicodeString DeviceName, HexInt32 Status, UnicodeString SiloName, UnicodeString PolicyName)			task_0	Error		
+Microsoft-Windows-NTLM	4001	0	BlockingNTLM(UnicodeString TargetName, UnicodeString UserName, UnicodeString DomainName, UInt32 CallerPID, UnicodeString ProcessName, HexInt64 ClientLUID, UnicodeString ClientUserName, UnicodeString ClientDomainName, UnicodeString MechanismOID)			BlockingNTLM	Warning		
+Microsoft-Windows-NTLM	4002	0	BlockingNTLM4002(UInt32 CallerPID, UnicodeString ProcessName, HexInt64 ClientLUID, UnicodeString ClientUserName, UnicodeString ClientDomainName, UnicodeString MechanismOID)			BlockingNTLM	Warning		
+Microsoft-Windows-NTLM	4003	0	BlockingNTLM4003(UnicodeString UserName, UnicodeString DomainName, UnicodeString Workstation, UInt32 CallerPID, UnicodeString ProcessName, UInt32 LogonType, Boolean InProc, UnicodeString MechanismOID)			BlockingNTLM	Warning		
+Microsoft-Windows-NTLM	4010	0	task_04010(UInt32 CallerPID, UnicodeString ProcessName, HexInt32 NegotiatedSecurity, HexInt32 RequiredSecurity)			task_0	Warning		
+Microsoft-Windows-NTLM	4011	0	task_04011(UInt32 CallerPID, UnicodeString ProcessName, HexInt32 NegotiatedSecurity, HexInt32 RequiredSecurity)			task_0	Warning		
+Microsoft-Windows-NTLM	4012	0	task_04012(UnicodeString AccountName, UnicodeString DeviceName)			task_0	Informational		
+Microsoft-Windows-NTLM	8001	0	AuditingNTLM(UnicodeString TargetName, UnicodeString UserName, UnicodeString DomainName, UInt32 CallerPID, UnicodeString ProcessName, HexInt64 ClientLUID, UnicodeString ClientUserName, UnicodeString ClientDomainName, UnicodeString MechanismOID)			AuditingNTLM	Informational		
+Microsoft-Windows-NTLM	8002	0	AuditingNTLM8002(UInt32 CallerPID, UnicodeString ProcessName, HexInt64 ClientLUID, UnicodeString ClientUserName, UnicodeString ClientDomainName, UnicodeString MechanismOID)			AuditingNTLM	Informational		
+Microsoft-Windows-NTLM	8003	0	AuditingNTLM8003(UnicodeString UserName, UnicodeString DomainName, UnicodeString Workstation, UInt32 CallerPID, UnicodeString ProcessName, UInt32 LogonType, Boolean InProc, UnicodeString MechanismOID)			AuditingNTLM	Informational		

@@ -1,0 +1,6 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Storage-Tiering-IoHeat	1	0	HeatInit(GUID VolumeGuid, UInt32 VolumeIdHash)		STORAGE_TIERING_KEYWORD_INIT	HeatInit	Informational		
+Microsoft-Windows-Storage-Tiering-IoHeat	2	0	MeasureHeat(UInt64 FileIDLower, UInt64 FileIDUpper, UInt64 Offset, UInt32 Length, UInt32 VolumeIdHash)		STORAGE_TIERING_KEYWORD_DATA STORAGE_TIERING_KEYWORD_READ	MeasureHeat	Informational		
+Microsoft-Windows-Storage-Tiering-IoHeat	3	0	MeasureHeat3(UInt64 FileIDLower, UInt64 FileIDUpper, UInt64 Offset, UInt32 Length, UInt32 VolumeIdHash)		STORAGE_TIERING_KEYWORD_DATA STORAGE_TIERING_KEYWORD_WRITE	MeasureHeat	Informational		
+Microsoft-Windows-Storage-Tiering-IoHeat	4	0	MeasureHeat4(UInt64 FileIDLower, UInt64 FileIDUpper, UInt64 Offset, UInt32 Length, UInt32 VolumeIdHash)		STORAGE_TIERING_KEYWORD_DATA STORAGE_TIERING_KEYWORD_DELETE	MeasureHeat	Informational		
+Microsoft-Windows-Storage-Tiering-IoHeat	5	0	MeasureHeat5(UInt64 FileIDLower, UInt64 FileIDUpper, UInt64 Offset, UInt32 Length, UInt32 Source, UInt32 Destination, UInt32 VolumeIdHash)		STORAGE_TIERING_KEYWORD_DATA STORAGE_TIERING_KEYWORD_TIERMOVE	MeasureHeat	Informational		

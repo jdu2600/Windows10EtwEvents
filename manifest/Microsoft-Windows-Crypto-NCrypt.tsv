@@ -1,0 +1,9 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Crypto-NCrypt	1	0	OperationFailure(UInt32 OperationType, UnicodeString ProviderName, UnicodeString KeyName, UnicodeString KeyType, UnicodeString AlgorithmName, HexInt32 Status, UnicodeString ProcessName)		ETW_KEYWORD_NCRYPT_OPERATION	OperationFailure	Error		
+Microsoft-Windows-Crypto-NCrypt	2	0	OpenProviderFailure(UnicodeString ProviderName, HexInt32 Status, UnicodeString ProcessName)		ETW_KEYWORD_NCRYPT_OPERATION	OpenProviderFailure	Error		
+Microsoft-Windows-Crypto-NCrypt	3	0	OpenKeyFailure(UnicodeString ProviderName, UnicodeString KeyName, HexInt32 Status, UnicodeString ProcessName)		ETW_KEYWORD_NCRYPT_OPERATION	OpenKeyFailure	Error		
+Microsoft-Windows-Crypto-NCrypt	4	0	KeyCreationFailure(UnicodeString ProviderName, UnicodeString KeyName, UnicodeString AlgorithmName, HexInt32 Flags, HexInt32 Status, UnicodeString ProcessName)		ETW_KEYWORD_NCRYPT_OPERATION	KeyCreationFailure	Error		
+Microsoft-Windows-Crypto-NCrypt	5	0	OperationFailure_5(UnicodeString ProtectorName, UnicodeString ProtectorAttributes, HexInt32 Flags, HexInt32 Status, UnicodeString ProcessName)		ETW_KEYWORD_PROTECT_OPERATION	OperationFailure_5	Error		
+Microsoft-Windows-Crypto-NCrypt	6	0	OperationFailure_6(UnicodeString ProtectorName, UInt32 RecipientType, HexInt32 Flags, HexInt32 Status, UnicodeString ProcessName, UInt32 KeyIdLength, Binary KeyId)		ETW_KEYWORD_PROTECT_OPERATION	OperationFailure_6	Error		
+Microsoft-Windows-Crypto-NCrypt	7	0	OperationFailure_7(HexInt32 Flags, HexInt32 Status, UnicodeString ProcessName)		ETW_KEYWORD_PROTECT_OPERATION	OperationFailure_7	Error		
+Microsoft-Windows-Crypto-NCrypt	8	0	OperationFailure_8(HexInt32 Flags, HexInt32 Status, UnicodeString ProcessName)		ETW_KEYWORD_PROTECT_OPERATION	OperationFailure_8	Error		

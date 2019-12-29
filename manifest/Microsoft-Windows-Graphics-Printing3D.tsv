@@ -1,0 +1,7 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Graphics-Printing3D	1	0	PrintDXGIPreviewTarget_DrawPageStart()	Start		PrintDXGIPreviewTarget_DrawPage	Informational		
+Microsoft-Windows-Graphics-Printing3D	2	0	PrintDXGIPreviewTarget_DrawPageStop(UInt32 HResult)	Stop		PrintDXGIPreviewTarget_DrawPage	Informational		
+Microsoft-Windows-Graphics-Printing3D	3	0	PrintTask_EnsureDocumentSourceStart()	Start		PrintTask_EnsureDocumentSource	Informational		
+Microsoft-Windows-Graphics-Printing3D	4	0	PrintTask_EnsureDocumentSourceStop(UInt32 HResult)	Stop		PrintTask_EnsureDocumentSource	Informational		
+Microsoft-Windows-Graphics-Printing3D	5	0	PrintTask_BindPrinterStart(UnicodeString Name)	Start		PrintTask_BindPrinter	Informational		
+Microsoft-Windows-Graphics-Printing3D	6	0	PrintTask_BindPrinterStop(UInt32 HResult, UnicodeString Name)	Stop		PrintTask_BindPrinter	Informational		

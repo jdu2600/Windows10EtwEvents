@@ -1,0 +1,27 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-User Device Registration	100	0	task_0()			task_0	Informational		
+Microsoft-Windows-User Device Registration	101	0	task_0101(UnicodeString ServerMessage)			task_0	Informational		
+Microsoft-Windows-User Device Registration	102	0	task_0102(Int32 JoinRequestInput, UnicodeString DomainInput)			task_0	Informational		
+Microsoft-Windows-User Device Registration	103	0	task_0103(UnicodeString AuthToken)			task_0	Informational		
+Microsoft-Windows-User Device Registration	104	0	task_0104(UnicodeString ServerResponse)			task_0	Informational		
+Microsoft-Windows-User Device Registration	105	0	task_0105()			task_0	Informational		
+Microsoft-Windows-User Device Registration	106	0	task_0106()			task_0	Informational		
+Microsoft-Windows-User Device Registration	200	0	task_0200(Int32 ExitCode, UnicodeString Domain)			task_0	Error		
+Microsoft-Windows-User Device Registration	201	0	task_0201(Int32 ExitCode, UInt32 HttpStatus, UnicodeString ServerMessage)			task_0	Error		
+Microsoft-Windows-User Device Registration	202	0	task_0202(Int32 ExitCode, Int32 JoinRequestInput, UnicodeString DomainInput)			task_0	Error		
+Microsoft-Windows-User Device Registration	203	0	task_0203(Int32 ExitCode, UnicodeString ActivityId)			task_0	Error		
+Microsoft-Windows-User Device Registration	204	0	task_0204(Int32 ExitCode, UnicodeString ActivityId, UInt32 HttpStatus, UnicodeString ServerResponse)			task_0	Error		
+Microsoft-Windows-User Device Registration	205	0	task_0205(Int32 ExitCode)			task_0	Error		
+Microsoft-Windows-User Device Registration	206	0	task_0206(Int32 ExitCode)			task_0	Error		
+Microsoft-Windows-User Device Registration	300	0	task_0300(GUID KeyId, UnicodeString UPN, UnicodeString Attestation, UnicodeString ClientRequestId, UnicodeString ServerRequestId, UnicodeString ServerResponse)			task_0	Informational		
+Microsoft-Windows-User Device Registration	301	0	task_0301(Int32 ExitCode, UnicodeString ClientRequestId, UnicodeString ServerRequestId, UnicodeString ErrorCode, UnicodeString ServerErrorMessage, UnicodeString RecommendedClientResponse, UnicodeString ServerResponse)			task_0	Error		
+Microsoft-Windows-User Device Registration	302	0	task_0302(UnicodeString Email, UnicodeString AuthToken)			task_0	Informational		
+Microsoft-Windows-User Device Registration	303	0	task_0303(Int32 ExitCode, UnicodeString Email, UnicodeString AuthToken)			task_0	Error		
+Microsoft-Windows-User Device Registration	304	0	task_0304(Int32 ExitCode, UnicodeString ServerErrorMessage, UnicodeString TenantName)			task_0	Error		
+Microsoft-Windows-User Device Registration	305	0	task_0305(Int32 ExitCode, UnicodeString ServerErrorMessage, UnicodeString TenantType)			task_0	Error		
+Microsoft-Windows-User Device Registration	306	0	task_0306()			task_0	Informational		
+Microsoft-Windows-User Device Registration	307	0	task_0307(Int32 ExitCode)			task_0	Error		
+Microsoft-Windows-User Device Registration	308	0	task_0308(UnicodeString UserSID)			task_0	Warning		
+Microsoft-Windows-User Device Registration	500	0	task_0500(UnicodeString Message)			task_0	Informational		
+Microsoft-Windows-User Device Registration	501	0	task_0501(UnicodeString Message)			task_0	Warning		
+Microsoft-Windows-User Device Registration	502	0	task_0502(UnicodeString Message)			task_0	Error		

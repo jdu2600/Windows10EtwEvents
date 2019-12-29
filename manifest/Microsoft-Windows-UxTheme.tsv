@@ -1,0 +1,34 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-UxTheme	1	0	ThemesAndMetric_SwitchThemeStart()	Start		ThemesAndMetric_SwitchTheme	Informational		
+Microsoft-Windows-UxTheme	2	0	ThemesAndMetric_SwitchThemeStop()	Stop		ThemesAndMetric_SwitchTheme	Informational		
+Microsoft-Windows-UxTheme	3	0	ThemesAndMetric_IsThemePartDefinedStart(Int32 PartId, Int32 StateId)	Start		ThemesAndMetric_IsThemePartDefined	Informational		
+Microsoft-Windows-UxTheme	4	0	ThemesAndMetric_IsThemePartDefinedStop()	Stop		ThemesAndMetric_IsThemePartDefined	Informational		
+Microsoft-Windows-UxTheme	5	0	ThemesAndMetric_GetCurrentThemeNameStart()	Start		ThemesAndMetric_GetCurrentThemeName	Informational		
+Microsoft-Windows-UxTheme	6	0	ThemesAndMetric_GetCurrentThemeNameStop(UnicodeString Name)	Stop		ThemesAndMetric_GetCurrentThemeName	Informational		
+Microsoft-Windows-UxTheme	7	0	ThemesAndMetric_GetThemeFontStart()	Start		ThemesAndMetric_GetThemeFont	Informational		
+Microsoft-Windows-UxTheme	8	0	ThemesAndMetric_GetThemeFontStop()	Stop		ThemesAndMetric_GetThemeFont	Informational		
+Microsoft-Windows-UxTheme	9	0	BufferedPaint_ThreadContention()			BufferedPaint_ThreadContention	Informational		
+Microsoft-Windows-UxTheme	11	0	BufferedPaint_PruningBuffers()			BufferedPaint_PruningBuffers	Informational		
+Microsoft-Windows-UxTheme	13	0	Shake_PreMovingMessageHandlerStart()	Start		Shake_PreMovingMessageHandler	Informational		
+Microsoft-Windows-UxTheme	15	0	Shake_PreMovingMessageHandlerStop()	Stop		Shake_PreMovingMessageHandler	Informational		
+Microsoft-Windows-UxTheme	17	0	Shake_PreMovingMessageHandlerWindowPosition(Int16 X, Int16 Y)	WindowPosition		Shake_PreMovingMessageHandler	Informational		
+Microsoft-Windows-UxTheme	19	0	Shake_PreMovingMessageHandlerWindowDeltaTime(Double DeltaTime)	WindowDeltaTime		Shake_PreMovingMessageHandler	Informational		
+Microsoft-Windows-UxTheme	21	0	Shake_PreMovingMessageHandlerTrigger(UnicodeString ProcessName)	Trigger		Shake_PreMovingMessageHandler	Informational		
+Microsoft-Windows-UxTheme	23	0	ThemesAndMetric_ThemeWindow()			ThemesAndMetric_ThemeWindow	Informational		
+Microsoft-Windows-UxTheme	24	0	ApiExecutionStart()	Start		ApiExecution	Informational		
+Microsoft-Windows-UxTheme	25	0	ApiExecutionStop(Int64 ApiNumber, Int32 ClientSessionId, UInt32 status)	Stop		ApiExecution	Informational		
+Microsoft-Windows-UxTheme	26	0	GetClientSessionDataStart()	Start		GetClientSessionData	Informational		
+Microsoft-Windows-UxTheme	27	0	GetClientSessionDataStop(Int32 ClientSessionId, UInt32 status)	Stop		GetClientSessionData	Informational		
+Microsoft-Windows-UxTheme	28	0	HandleServerRequestStart()	Start		HandleServerRequest	Informational		
+Microsoft-Windows-UxTheme	29	0	HandleServerRequestStop(Int64 ApiNumber, Int32 ClientSessionId, UInt32 status)	Stop		HandleServerRequest	Informational		
+Microsoft-Windows-UxTheme	30	0	HandleServerConnectionRequestStart()	Start		HandleServerConnectionRequest	Informational		
+Microsoft-Windows-UxTheme	31	0	HandleServerConnectionRequestStop(UInt32 status)	Stop		HandleServerConnectionRequest	Informational		
+Microsoft-Windows-UxTheme	32	0	SignalRequestPendingStart()	Start		SignalRequestPending	Informational		
+Microsoft-Windows-UxTheme	33	0	SignalRequestPendingStop(Boolean fRequestPending, UInt32 status)	Stop		SignalRequestPending	Informational		
+Microsoft-Windows-UxTheme	34	0	QueuingThreadpoolWorker(UInt32 status)			QueuingThreadpoolWorker	Informational		
+Microsoft-Windows-UxTheme	35	0	QueueApiRequestStart(Boolean fConnectionClosed)	Start		QueueApiRequest	Informational		
+Microsoft-Windows-UxTheme	36	0	QueueApiRequestStop(UInt32 status)	Stop		QueueApiRequest	Informational		
+Microsoft-Windows-UxTheme	37	0	RejectApiRequest(Boolean fConnectionClosed)			RejectApiRequest	Informational		
+Microsoft-Windows-UxTheme	38	0	WorkerThreadEntryStart()	Start		WorkerThreadEntry	Informational		
+Microsoft-Windows-UxTheme	39	0	WorkerThreadEntryStop()	Stop		WorkerThreadEntry	Informational		
+Microsoft-Windows-UxTheme	40	0	CallTimedOut(Int32 HangingThreadId, Int32 TimeoutUsed)			CallTimedOut	Informational		

@@ -1,0 +1,19 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-BackgroundTransfer-ContentPrefetcher	0	0	PrefetchTaskActivity(UnicodeString appName)			PrefetchTaskActivity	Informational		
+Microsoft-Windows-BackgroundTransfer-ContentPrefetcher	1	0	PrefetchTaskActivity1(UnicodeString appName)			PrefetchTaskActivity	Informational		
+Microsoft-Windows-BackgroundTransfer-ContentPrefetcher	2	0	URIFetch(UnicodeString uri)			URIFetch	Informational		
+Microsoft-Windows-BackgroundTransfer-ContentPrefetcher	3	0	URIFetch3(UnicodeString uri)			URIFetch	Informational		
+Microsoft-Windows-BackgroundTransfer-ContentPrefetcher	4	0	URIFetch4(UnicodeString uri, UInt32 httpStatusCode, UnicodeString errorString)			URIFetch	Informational		
+Microsoft-Windows-BackgroundTransfer-ContentPrefetcher	6	0	URIFetch6(UnicodeString uri, UInt32 statusCode, UnicodeString errorString)			URIFetch	Error		
+Microsoft-Windows-BackgroundTransfer-ContentPrefetcher	7	0	URIFetch7(UnicodeString uri, AnsiString errorString)			URIFetch	Error		
+Microsoft-Windows-BackgroundTransfer-ContentPrefetcher	8	0	IndirectContentURI(UnicodeString uri, AnsiString xmlBlob)			IndirectContentURI	Informational		
+Microsoft-Windows-BackgroundTransfer-ContentPrefetcher	9	0	IndirectContentURI9(UInt32 statusCode, UnicodeString errorReason, UnicodeString sourceText, UInt32 errorOffset)			IndirectContentURI	Error		
+Microsoft-Windows-BackgroundTransfer-ContentPrefetcher	10	0	URIFetch10(UInt32 count)			URIFetch	Informational		
+Microsoft-Windows-BackgroundTransfer-ContentPrefetcher	11	0	URIFetch11(UnicodeString uri)			URIFetch	Warning		
+Microsoft-Windows-BackgroundTransfer-ContentPrefetcher	12	0	PrefetchTaskActivity12(UnicodeString appName, UInt32 httpStatusCode, UnicodeString errorString)			PrefetchTaskActivity	Error		
+Microsoft-Windows-BackgroundTransfer-ContentPrefetcher	13	0	PrefetchTaskActivity13(UnicodeString appName, AnsiString errorString)			PrefetchTaskActivity	Error		
+Microsoft-Windows-BackgroundTransfer-ContentPrefetcher	14	0	PrefetchTaskActivity14(UnicodeString appName)			PrefetchTaskActivity	Error		
+Microsoft-Windows-BackgroundTransfer-ContentPrefetcher	15	0	PrefetchTaskActivity15(UnicodeString appName, UInt32 errorString)			PrefetchTaskActivity	Error		
+Microsoft-Windows-BackgroundTransfer-ContentPrefetcher	16	0	URIFetch16(UnicodeString uri, UInt32 statusCode)			URIFetch	Error		
+Microsoft-Windows-BackgroundTransfer-ContentPrefetcher	17	0	IndirectContentURI17(UInt32 count)			IndirectContentURI	Informational		
+Microsoft-Windows-BackgroundTransfer-ContentPrefetcher	18	0	URIFetch18(UnicodeString uri)			URIFetch	Informational		

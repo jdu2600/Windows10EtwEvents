@@ -1,0 +1,5 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-VWiFi	25001	0	EnableVWiFiStart(GUID IfGuid, UnicodeString FriendlyName)	Start		EnableVWiFi	Informational		
+Microsoft-Windows-VWiFi	25002	0	DisableVWiFiStart(GUID IfGuid, UnicodeString FriendlyName)	Start		DisableVWiFi	Informational		
+Microsoft-Windows-VWiFi	25003	0	EnableVWiFiStop(GUID IfGuid, UnicodeString FriendlyName, GUID VIfGuid)	Stop		EnableVWiFi	Informational		
+Microsoft-Windows-VWiFi	25004	0	DisableVWiFiStop(GUID IfGuid, UnicodeString FriendlyName, GUID VIfGuid)	Stop		DisableVWiFi	Informational		

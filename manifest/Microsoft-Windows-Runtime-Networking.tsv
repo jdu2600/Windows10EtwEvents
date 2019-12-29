@@ -1,0 +1,73 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Runtime-Networking	1	0	AsyncOperationAsyncoperationstart(UInt32 asyncOperation, Pointer asyncObject)	Asyncoperationstart	keywords.AsyncOperation	AsyncOperation	Informational		
+Microsoft-Windows-Runtime-Networking	2	0	AsyncOperationAsyncoperationfailure(UInt32 asyncOperation, Pointer asyncObject, UInt32 errorCode, Int32 hresult)	Asyncoperationfailure	keywords.AsyncOperation	AsyncOperation	Error		
+Microsoft-Windows-Runtime-Networking	3	0	AsyncOperationAsyncoperationcomplete(UInt32 asyncOperation, Pointer asyncObject)	Asyncoperationcomplete	keywords.AsyncOperation	AsyncOperation	Informational		
+Microsoft-Windows-Runtime-Networking	4	0	AsyncOperationAsyncoperationfailure4(UInt32 asyncOperation, Pointer asyncObject, UInt32 errorCode, Int32 hresult)	Asyncoperationfailure	keywords.AsyncOperation	AsyncOperation	Error		
+Microsoft-Windows-Runtime-Networking	5	0	AsyncOperationAsyncoperationabort(UInt32 asyncOperation, Pointer asyncObject)	Asyncoperationabort	keywords.AsyncOperation	AsyncOperation	Informational		
+Microsoft-Windows-Runtime-Networking	6	0	AsyncOperationAsyncoperationclose(UInt32 asyncOperation, Pointer asyncObject)	Asyncoperationclose	keywords.AsyncOperation	AsyncOperation	Informational		
+Microsoft-Windows-Runtime-Networking	7	0	WebSocketConnectHTTPoperation(UnicodeString uri)	HTTPoperation	keywords.Http	WebSocketConnect	Warning		
+Microsoft-Windows-Runtime-Networking	8	0	WebSocketConnectHTTPoperation8(UnicodeString str1, UnicodeString str2)	HTTPoperation	keywords.Http	WebSocketConnect	Warning		
+Microsoft-Windows-Runtime-Networking	9	0	WebSocketConnectHTTPoperation9(UnicodeString str1, UnicodeString str2)	HTTPoperation	keywords.Http	WebSocketConnect	Informational		
+Microsoft-Windows-Runtime-Networking	10	0	WebSocketConnectHTTPoperation10(UnicodeString str1, UnicodeString str2)	HTTPoperation	keywords.Http	WebSocketConnect	Informational		
+Microsoft-Windows-Runtime-Networking	11	0	WebSocketConnectHTTPoperation11(UnicodeString uri)	HTTPoperation	keywords.Http	WebSocketConnect	Informational		
+Microsoft-Windows-Runtime-Networking	12	0	WebSocketConnectHTTPoperation12(UnicodeString uri, UInt32 port, UInt32 errorCode, UInt32 errorMessage)	HTTPoperation	keywords.Http	WebSocketConnect	Error		
+Microsoft-Windows-Runtime-Networking	13	0	WebSocketConnectHTTPoperation13(UnicodeString str1, UnicodeString str2, HexInt32 flags)	HTTPoperation	keywords.Http	WebSocketConnect	Informational		
+Microsoft-Windows-Runtime-Networking	14	0	WebSocketConnectHTTPoperation14(UnicodeString uri, UInt32 port, UInt32 errorCode, UInt32 errorMessage)	HTTPoperation	keywords.Http	WebSocketConnect	Error		
+Microsoft-Windows-Runtime-Networking	15	0	WebSocketConnectHTTPoperation15(Pointer obj1, Pointer obj2, UnicodeString uri)	HTTPoperation	keywords.Http	WebSocketConnect	Informational		
+Microsoft-Windows-Runtime-Networking	16	0	WebSocketConnectHTTPoperation16(Pointer obj, UInt32 length)	HTTPoperation	keywords.Http	WebSocketConnect	Informational		
+Microsoft-Windows-Runtime-Networking	17	0	WebSocketConnectHTTPoperation17(Pointer obj, UInt32 length)	HTTPoperation	keywords.Http	WebSocketConnect	Informational		
+Microsoft-Windows-Runtime-Networking	18	0	WebSocketConnectHTTPoperation18(Pointer obj)	HTTPoperation	keywords.Http	WebSocketConnect	Informational		
+Microsoft-Windows-Runtime-Networking	19	0	WebSocketConnectHTTPoperation19(Pointer obj)	HTTPoperation	keywords.Http	WebSocketConnect	Informational		
+Microsoft-Windows-Runtime-Networking	20	0	WebSocketConnectHTTPoperation20(Pointer obj, UInt32 length)	HTTPoperation	keywords.Http	WebSocketConnect	Informational		
+Microsoft-Windows-Runtime-Networking	21	0	WebSocketConnectHTTPoperation21(Pointer obj, UInt32 errorCode, UInt32 errorMessage)	HTTPoperation	keywords.Http	WebSocketConnect	Error		
+Microsoft-Windows-Runtime-Networking	22	0	WebSocketConnectHTTPoperation22(Pointer obj, UnicodeString statusDescription)	HTTPoperation	keywords.Http	WebSocketConnect	Verbose		
+Microsoft-Windows-Runtime-Networking	23	0	WebSocketConnectHTTPoperation23(Pointer obj)	HTTPoperation	keywords.Http	WebSocketConnect	Informational		
+Microsoft-Windows-Runtime-Networking	24	0	WebSocketConnectHTTPoperation24(Pointer obj, UInt32 statusCode, UnicodeString statusDescription)	HTTPoperation	keywords.Http	WebSocketConnect	Informational		
+Microsoft-Windows-Runtime-Networking	25	0	WebSocketConnectHTTPoperation25(Pointer obj, UnicodeString statusDescription)	HTTPoperation	keywords.Http	WebSocketConnect	Verbose		
+Microsoft-Windows-Runtime-Networking	26	0	WebSocketConnectHTTPoperation26(Pointer obj, UInt32 errorCode, UInt32 errorMessage)	HTTPoperation	keywords.Http	WebSocketConnect	Error		
+Microsoft-Windows-Runtime-Networking	27	0	WebSocketConnectHTTPoperation27(Pointer obj, UInt32 length, UInt32 limit)	HTTPoperation	keywords.Http	WebSocketConnect	Informational		
+Microsoft-Windows-Runtime-Networking	28	0	WebSocketConnectHTTPoperation28(Pointer obj)	HTTPoperation	keywords.Http	WebSocketConnect	Informational		
+Microsoft-Windows-Runtime-Networking	29	0	WebSocketConnectHTTPoperation29(Pointer obj, UnicodeString statusDescription)	HTTPoperation	keywords.Http	WebSocketConnect	Informational		
+Microsoft-Windows-Runtime-Networking	30	0	WebSocketConnectHTTPoperation30(Pointer obj)	HTTPoperation	keywords.Http	WebSocketConnect	Informational		
+Microsoft-Windows-Runtime-Networking	31	0	WebSocketConnectHTTPoperation31(UnicodeString statusDescription, UInt32 int1, UInt32 int2, UInt32 int3, UInt32 int4)	HTTPoperation	keywords.Http	WebSocketConnect	Informational		
+Microsoft-Windows-Runtime-Networking	32	0	WebSocketConnectHTTPoperation32(UnicodeString uri, UInt32 hresult, Int32 errorMessage)	HTTPoperation	keywords.Http	WebSocketConnect	Error		
+Microsoft-Windows-Runtime-Networking	33	0	WebSocketConnectHTTPoperation33(UInt32 asyncOperation, Pointer asyncObject, UnicodeString response, UInt32 errorCode, Int32 hresult)	HTTPoperation	keywords.Http	WebSocketConnect	Error		
+Microsoft-Windows-Runtime-Networking	34	0	APIsAPIEnter(UInt32 runtimeClass, UInt32 api)	APIEnter	keywords.API	APIs	Verbose		
+Microsoft-Windows-Runtime-Networking	35	0	APIsAPIExit(UInt32 runtimeClass, UInt32 api)	APIExit	keywords.API	APIs	Verbose		
+Microsoft-Windows-Runtime-Networking	36	0	APIsAPIExit36(UInt32 runtimeClass, UInt32 api, UInt32 hresult, Int32 errorMessage)	APIExit	keywords.API	APIs	Error		
+Microsoft-Windows-Runtime-Networking	37	0	APIsAPIExit37(UInt32 win32Api, UInt32 error, UInt32 errorMessage)	APIExit	keywords.API	APIs	Error		
+Microsoft-Windows-Runtime-Networking	38	0	APIsAPIExit38(Pointer obj, UInt32 errorCode, UInt32 errorMessage)	APIExit	keywords.API	APIs	Informational		
+Microsoft-Windows-Runtime-Networking	39	0	APIsAPIExit39(Pointer obj, UInt32 errorCode, UInt32 errorMessage)	APIExit	keywords.API	APIs	Informational		
+Microsoft-Windows-Runtime-Networking	40	0	SocketReceiveProcessingafterread(Pointer obj, UInt32 hresult, Int32 errorMessage)	Processingafterread	keywords.Socket	SocketReceive	Error		
+Microsoft-Windows-Runtime-Networking	41	0	SocketReceiveProcessingafterread41(Pointer obj, UInt32 bytesRead, UInt32 size, Binary address)	Processingafterread	keywords.Socket	SocketReceive	Informational		
+Microsoft-Windows-Runtime-Networking	42	0	SocketReceiveStartread(Pointer obj, Pointer handle)	Startread	keywords.Socket	SocketReceive	Informational		
+Microsoft-Windows-Runtime-Networking	43	0	SocketReceiveReaderror(Pointer obj, UInt32 hresult, Int32 errorMessage)	Readerror	keywords.Socket	SocketReceive	Error		
+Microsoft-Windows-Runtime-Networking	44	0	SocketReceiveStartread44(UInt32 asyncOperation, Pointer obj, UInt32 length, Pointer handle)	Startread	keywords.Socket	SocketReceive	Informational		
+Microsoft-Windows-Runtime-Networking	45	0	SocketReceiveStartread45(UInt32 asyncOperation, Pointer obj, UInt32 read, UInt32 length)	Startread	keywords.Socket	SocketReceive	Informational		
+Microsoft-Windows-Runtime-Networking	46	0	SocketReceiveReadcomplete(UInt32 asyncOperation, Pointer obj, UInt32 length)	Readcomplete	keywords.Socket	SocketReceive	Informational		
+Microsoft-Windows-Runtime-Networking	47	0	SocketConnectTCPconnected(Pointer obj, UnicodeString port1, UnicodeString ip, UnicodeString port2)	TCPconnected	keywords.Socket	SocketConnect	Informational		
+Microsoft-Windows-Runtime-Networking	48	0	SocketConnectTCPconnected48(Pointer obj, UInt32 size, Binary address)	TCPconnected	keywords.Socket	SocketConnect	Informational		
+Microsoft-Windows-Runtime-Networking	49	0	SocketReceiveProcessingafterread49(Pointer obj, UInt32 size, Binary address)	Processingafterread	keywords.Socket	SocketReceive	Warning		
+Microsoft-Windows-Runtime-Networking	50	0	SocketSendWritecomplete(UInt32 asyncOperation, Pointer obj, UInt32 length)	Writecomplete	keywords.Socket	SocketSend	Informational		
+Microsoft-Windows-Runtime-Networking	51	0	SocketSendStartwrite(UInt32 asyncOperation, Pointer obj, UInt32 length, Pointer handle)	Startwrite	keywords.Socket	SocketSend	Informational		
+Microsoft-Windows-Runtime-Networking	52	0	WebSocketReceiveProcessingafterread(Pointer obj)	Processingafterread	keywords.WebSocket	WebSocketReceive	Informational		
+Microsoft-Windows-Runtime-Networking	53	0	WebSocketReceiveProcessingafterread53(Pointer obj, UInt32 length)	Processingafterread	keywords.WebSocket	WebSocketReceive	Informational		
+Microsoft-Windows-Runtime-Networking	54	0	WebSocketReceiveReaderror(Pointer obj, UInt32 hresult, Int32 errorMessage)	Readerror	keywords.WebSocket	WebSocketReceive	Error		
+Microsoft-Windows-Runtime-Networking	55	0	WebSocketReceiveProcessingafterread55(Pointer obj, UInt32 hresult, Int32 errorMessage)	Processingafterread	keywords.WebSocket	WebSocketReceive	Error		
+Microsoft-Windows-Runtime-Networking	57	0	WebSocketSendStartwrite(Pointer obj)	Startwrite	keywords.WebSocket	WebSocketSend	Informational		
+Microsoft-Windows-Runtime-Networking	58	0	WebSocketReceiveStartread(Pointer obj, UInt32 statusCode, UnicodeString statusDescription)	Startread	keywords.WebSocket	WebSocketReceive	Informational		
+Microsoft-Windows-Runtime-Networking	59	0	SocketIOI/Oerror(Pointer obj, UInt32 hresult, Int32 errorMessage)	I/Oerror	keywords.Socket	SocketIO	Warning		
+Microsoft-Windows-Runtime-Networking	60	0	SocketSendWritecomplete60(UInt32 asyncOperation, Pointer obj, UInt32 length)	Writecomplete	keywords.Socket	SocketSend	Informational		
+Microsoft-Windows-Runtime-Networking	61	0	SocketSendStartwrite61(UInt32 asyncOperation, Pointer obj, UInt32 length, Pointer handle)	Startwrite	keywords.Socket	SocketSend	Informational		
+Microsoft-Windows-Runtime-Networking	62	0	APIsRtcCompleteDelivery(UInt32 runtimeClass, UInt32 pendingOperations)	RtcCompleteDelivery	keywords.Rtc	APIs	Informational		
+Microsoft-Windows-Runtime-Networking	63	0	APIsRtcCompleteDelivery63(UInt32 runtimeClass, UInt32 pendingOperations, UInt32 winsockPendingOperations, Boolean winsockDataAvailable)	RtcCompleteDelivery	keywords.Rtc	APIs	Informational		
+Microsoft-Windows-Runtime-Networking	64	0	APIsRtcFlush(UInt32 runtimeClass, UInt32 pendingOperations)	RtcFlush	keywords.Rtc	APIs	Informational		
+Microsoft-Windows-Runtime-Networking	65	0	APIsRtcFlush65(UInt32 runtimeClass, UInt32 pendingOperations)	RtcFlush	keywords.Rtc	APIs	Informational		
+Microsoft-Windows-Runtime-Networking	66	0	SocketConnect(UInt32 connectorType)		keywords.Socket	SocketConnect	Informational		
+Microsoft-Windows-Runtime-Networking	67	0	SocketConnect67(UnicodeString value, UInt32 resolutionResult)		keywords.Socket	SocketConnect	Informational		
+Microsoft-Windows-Runtime-Networking	68	0	SocketConnect68(UnicodeString value, UInt32 errorCode, UInt32 errorMessage)		keywords.Socket	SocketConnect	Informational		
+Microsoft-Windows-Runtime-Networking	69	0	SocketConnect69(UInt32 errorCount, UInt32 errorList)		keywords.Socket	SocketConnect	Informational		
+Microsoft-Windows-Runtime-Networking	70	0	SocketConnect70(UnicodeString certificateThumbprint, Boolean hasFatalError, UInt32 errorCount, UInt32 errorList, UInt32 intermediateCertificatesCount, UnicodeString intermediateCertificatesList)		keywords.Socket	SocketConnect	Informational		
+Microsoft-Windows-Runtime-Networking	71	0	SocketIOI/Oerror71(Pointer obj, UInt32 hresult, Int32 errorMessage)	I/Oerror	keywords.Socket	SocketIO	Error		
+Microsoft-Windows-Runtime-Networking	72	0	WebSocketConnect(Pointer obj)			WebSocketConnect	Informational		
+Microsoft-Windows-Runtime-Networking	73	0	task_0(AnsiString functionName, Int32 lineNumber, Int32 status)			task_0	Informational		

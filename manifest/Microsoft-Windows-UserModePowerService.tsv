@@ -1,0 +1,31 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-UserModePowerService	1	0	RundownPlatformRole(UInt32 PlatformRole)			RundownPlatformRole	Informational		
+Microsoft-Windows-UserModePowerService	2	0	RundownPowerScheme(GUID SchemeGuid)			RundownPowerScheme	Informational		
+Microsoft-Windows-UserModePowerService	3	0	RundownAcPowerSetting(GUID SubgroupGuid, GUID SettingGuid, UInt32 ValueIndex, UInt32 Type, UInt32 DataSize, Binary Data)			RundownAcPowerSetting	Informational		
+Microsoft-Windows-UserModePowerService	4	0	RundownDcPowerSetting(GUID SubgroupGuid, GUID SettingGuid, UInt32 ValueIndex, UInt32 Type, UInt32 DataSize, Binary Data)			RundownDcPowerSetting	Informational		
+Microsoft-Windows-UserModePowerService	5	0	AdaptiveDimTimeout(UInt32 Timeout)			AdaptiveDimTimeout	Informational		
+Microsoft-Windows-UserModePowerService	7	0	task_0(UnicodeString Name)			task_0	Informational		
+Microsoft-Windows-UserModePowerService	8	0	RundownBatteryInformation(UnicodeString DeviceName, UnicodeString ManufacturerName, UInt8 ManufactureDay, UInt8 ManufactureMonth, UInt16 ManufactureYear, UnicodeString SerialNumber, UInt32 Capabilities, UInt8 Technology, Binary Pad, AnsiString Chemistry, UInt32 DesignCapacity, UInt32 FullChargeCapacity, UInt32 DefaultAlert1, UInt32 DefaultAlert2, UInt32 CriticalBias, UInt32 CycleCount, UInt32 GranularityScaleCount, SID GranularityScale, UnicodeString UniqueId)			RundownBatteryInformation	Informational		
+Microsoft-Windows-UserModePowerService	9	0	RundownBatteryStatus(UInt32 State, UInt32 Capacity, UInt32 Voltage, Int32 Rate, UInt32 EstimatedRuntime, UnicodeString UniqueId)			RundownBatteryStatus	Informational		
+Microsoft-Windows-UserModePowerService	10	0	RundownBrightnessCapability(Boolean BrightnessCapable)			RundownBrightnessCapability	Informational		
+Microsoft-Windows-UserModePowerService	11	0	RundownPowerSource(Boolean AcOnline)			RundownPowerSource	Informational		
+Microsoft-Windows-UserModePowerService	12	0	PowerSchemeChanged(UnicodeString ProcessPath, UInt32 ProcessPid, GUID OldSchemeGuid, GUID NewSchemeGuid)			PowerSchemeChanged	Informational		
+Microsoft-Windows-UserModePowerService	13	0	PowerMeterData(Pointer MeterId, UInt32 value)		PowerMeter	PowerMeterData	Informational		
+Microsoft-Windows-UserModePowerService	14	0	PowerMeterMetaData(Pointer MeterId, UInt64 SamplingPeriod, UInt32 MeterNameLength, UnicodeString MeterName, UInt32 MeteredHardwareCount, UnicodeString MeteredHardwareName)		PowerMeter	PowerMeterMetaData	Informational		
+Microsoft-Windows-UserModePowerService	15	0	RundownOverrideConfiguration(UInt32 Flags, UInt32 ProcessorVendor, UInt32 ProcessorType)			RundownOverrideConfiguration	Informational		
+Microsoft-Windows-UserModePowerService	16	0	RundownOverridePowerSetting(GUID SchemeGuid, GUID SubgroupGuid, GUID SettingGuid, UInt32 Flags, UInt32 DataType, UInt32 DataSize, Binary Data)			RundownOverridePowerSetting	Informational		
+Microsoft-Windows-UserModePowerService	17	0	RundownPowerProfileSetting(GUID ProfileGuid, GUID SubgroupGuid, GUID SettingGuid, GUID SchemePersonalityGuid, UInt32 Flags, UInt32 ValueIndex, UInt32 Type, UInt32 DataSize, Binary Data)			RundownPowerProfileSetting	Informational		
+Microsoft-Windows-UserModePowerService	18	0	EnergyMeterData(Pointer MeterId, UInt64 AbsoluteEnergy, UInt64 AbsoluteTime)		EnergyMeter	EnergyMeterData	Informational		
+Microsoft-Windows-UserModePowerService	19	0	EnergyMeterMetaData(Pointer MeterId, UInt64 SamplingPeriod, UInt32 ChannelNameLength, UnicodeString ChannelName)		EnergyMeter	EnergyMeterMetaData	Informational		
+Microsoft-Windows-UserModePowerService	22	0	ProvEngineTurnApply(UInt32 Turn)		keyword_400000000000	ProvEngineTurnApply	Informational		
+Microsoft-Windows-UserModePowerService	23	0	RundownConsoleSession(UInt32 SessionId)			RundownConsoleSession	Informational		
+Microsoft-Windows-UserModePowerService	24	0	ConsoleSessionChange(UInt32 Event, UInt32 SessionId)			ConsoleSessionChange	Informational		
+Microsoft-Windows-UserModePowerService	25	0	RundownSessionUser(UInt64 UserContextToken, UInt32 SessionId, SID UserSid)			RundownSessionUser	Informational		
+Microsoft-Windows-UserModePowerService	26	0	SessionUserChange(UInt32 Event, UInt64 UserContextToken, UInt32 SessionId, SID UserSid)			SessionUserChange	Informational		
+Microsoft-Windows-UserModePowerService	27	0	RundownSmartUserPresenceState(Boolean Supported, Boolean GlobalUserPresent, UInt32 UserPredictionMode, UInt8 MinConfidence, UInt32 SuspendCount, UInt64 LastUserAwayEndSystemTime)		SmartUserPresence	RundownSmartUserPresenceState	Informational		
+Microsoft-Windows-UserModePowerService	28	0	RundownSmartUserPresenceIntevals(SID UserSid, UInt32 IntervalCount, Int8 AwayIntervals)		SmartUserPresence	RundownSmartUserPresenceIntevals	Informational		
+Microsoft-Windows-UserModePowerService	29	0	SmartUserPresenceIntervalsSet(SID UserSid, UInt32 IntervalCount, Int8 AwayIntervals)		SmartUserPresence	SmartUserPresenceIntervalsSet	Informational		
+Microsoft-Windows-UserModePowerService	30	0	SmartUserPresenceIntevalsClear(SID UserSid)		SmartUserPresence	SmartUserPresenceIntevalsClear	Informational		
+Microsoft-Windows-UserModePowerService	31	0	SmartUserPresencePrediction(UInt64 UserAwayEndSystemTime)		SmartUserPresence	SmartUserPresencePrediction	Informational		
+Microsoft-Windows-UserModePowerService	32	0	SmartUserPresenceSuspendResume(Boolean Suspend, UInt32 SuspendCount, Boolean GlobalUserPresent, UInt32 UserPredictionMode)		SmartUserPresence	SmartUserPresenceSuspendResume	Informational		
+Microsoft-Windows-UserModePowerService	33	0	SmartUserPresenceTimeUpdate(Int64 SystemTimeShift)		SmartUserPresence	SmartUserPresenceTimeUpdate	Informational		

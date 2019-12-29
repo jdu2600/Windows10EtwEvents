@@ -1,0 +1,26 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-MP4SDECD	0	0	MP4SDECD_DecoderStart()	Start		MP4SDECD_Decoder	Informational		
+Microsoft-Windows-MP4SDECD	1	0	MP4SDECD_DecoderStop()	Stop		MP4SDECD_Decoder	Informational		
+Microsoft-Windows-MP4SDECD	2	0	MP4SDECD_InitStart(UInt32 FourCC, UInt32 FrameRate, Int32 WidthSource, Int32 WidthHeight)	Start		MP4SDECD_Init	Informational		
+Microsoft-Windows-MP4SDECD	3	0	MP4SDECD_InitStop()	Stop		MP4SDECD_Init	Informational		
+Microsoft-Windows-MP4SDECD	4	0	MP4SDECD_setExtendedFormatStart(UInt32 FormatSize, Binary Format)	Start		MP4SDECD_setExtendedFormat	Informational		
+Microsoft-Windows-MP4SDECD	5	0	MP4SDECD_setExtendedFormatStop()	Stop		MP4SDECD_setExtendedFormat	Informational		
+Microsoft-Windows-MP4SDECD	6	0	MP4SDECD_ProcessInputStart(UInt32 SampleSizeInBytes, Int64 SampleTime, Int64 SampleDuration)	Start		MP4SDECD_ProcessInput	Informational		
+Microsoft-Windows-MP4SDECD	7	0	MP4SDECD_ProcessInputStop(UInt32 Frame)	Stop		MP4SDECD_ProcessInput	Informational		
+Microsoft-Windows-MP4SDECD	8	0	MP4SDECD_ProcessInput(UInt32 Frame, Int64 SampleTime, Int64 SampleDuration)			MP4SDECD_ProcessInput	Informational		
+Microsoft-Windows-MP4SDECD	9	0	MP4SDECD_ProcessOutputStart()	Start		MP4SDECD_ProcessOutput	Informational		
+Microsoft-Windows-MP4SDECD	10	0	MP4SDECD_ProcessOutputStop(Int64 SampleTime, Int64 SampleDuration)	Stop		MP4SDECD_ProcessOutput	Informational		
+Microsoft-Windows-MP4SDECD	11	0	MP4SDECD_ProcessOutputStart11()	Start		MP4SDECD_ProcessOutput	Informational		
+Microsoft-Windows-MP4SDECD	12	0	MP4SDECD_ProcessOutputStop12()	Stop		MP4SDECD_ProcessOutput	Informational		
+Microsoft-Windows-MP4SDECD	13	0	MP4SDECD_ProcessOutputStart13()	Start		MP4SDECD_ProcessOutput	Informational		
+Microsoft-Windows-MP4SDECD	14	0	MP4SDECD_ProcessOutputStop14()	Stop		MP4SDECD_ProcessOutput	Informational		
+Microsoft-Windows-MP4SDECD	15	0	MP4SDECD_ProcessOutputStart15()	Start		MP4SDECD_ProcessOutput	Informational		
+Microsoft-Windows-MP4SDECD	16	0	MP4SDECD_ProcessOutputStop16()	Stop		MP4SDECD_ProcessOutput	Informational		
+Microsoft-Windows-MP4SDECD	17	0	MP4SDECD_ProcessOutputStart17()	Start		MP4SDECD_ProcessOutput	Informational		
+Microsoft-Windows-MP4SDECD	18	0	MP4SDECD_ProcessOutputStop18()	Stop		MP4SDECD_ProcessOutput	Informational		
+Microsoft-Windows-MP4SDECD	19	0	MP4SDECD_MFSetRate(Boolean ThinningMode, Float Rate)			MP4SDECD_MFSetRate	Verbose		
+Microsoft-Windows-MP4SDECD	20	0	MP4SDECD_Discontinuity()			MP4SDECD_Discontinuity	Verbose		
+Microsoft-Windows-MP4SDECD	21	0	MP4SDECD_Flush()			MP4SDECD_Flush	Verbose		
+Microsoft-Windows-MP4SDECD	22	0	MP4SDECD_NullOutput()			MP4SDECD_NullOutput	Verbose		
+Microsoft-Windows-MP4SDECD	23	0	MP4SDECD_QM(UInt32 DropMode)			MP4SDECD_QM	Informational		
+Microsoft-Windows-MP4SDECD	24	0	MP4SDECD_QM24(UInt32 PostProcessingLevel)			MP4SDECD_QM	Informational		

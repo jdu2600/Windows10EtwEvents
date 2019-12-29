@@ -1,0 +1,338 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-PushNotifications-Platform	1	0	task_0(UnicodeString FileName, UnicodeString FunctionName, Int32 LineNumber, UInt32 ErrorCode)		wpndbg	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	2	0	PlatformBootUp()		wpnplat wpnperf_FirstCloudNotification wpnperf_FirstCloudNotificationWithCloudImage keyword_200000000000	PlatformBootUp	Informational		
+Microsoft-Windows-PushNotifications-Platform	3	0	PlatformShutdown()		wpnplat wpnperf_Shutdown	PlatformShutdown	Informational		
+Microsoft-Windows-PushNotifications-Platform	4	0	task_04()		wpnplat	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	5	0	PlatformBootUp5()		wpnplat wpnperf_FirstCloudNotification wpnperf_FirstCloudNotificationWithCloudImage	PlatformBootUp	Informational		
+Microsoft-Windows-PushNotifications-Platform	6	0	PlatformShutdown6()		wpnplat wpnperf_Shutdown keyword_200000000000	PlatformShutdown	Informational		
+Microsoft-Windows-PushNotifications-Platform	7	0	task_07(UInt32 Type, UInt32 Privilege)		wpnplat	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	8	0	SwitchPrivilegeStart(UInt32 NewPrivilege)	Start	wpnplat	SwitchPrivilege	Informational		
+Microsoft-Windows-PushNotifications-Platform	9	0	SwitchPrivilegeStop(UInt32 ResultedPrivilege, Int32 Error)	Stop	wpnplat	SwitchPrivilege	Informational		
+Microsoft-Windows-PushNotifications-Platform	10	0	DefragFileStart()	Start	wpnplat	DefragFile	Informational		
+Microsoft-Windows-PushNotifications-Platform	11	0	DefragFileStop()	Stop	wpnplat	DefragFile	Informational		
+Microsoft-Windows-PushNotifications-Platform	12	0	task_012(UInt16 CountApplication, UInt16 MaximumApplication, UInt16 OldMaximumApplication)		wpnplat	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	13	0	task_013(UInt16 NewMaximumApplication)		wpnplat	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	14	0	task_014()		wpnplat	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	15	0	task_015(UInt16 CountApplication, UInt16 CountAllocated, UInt16 MaximumApplication)		wpnplat	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	16	0	task_016()		wpnplat	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	17	0	task_017()		wpnplat	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	18	0	task_018()		wpnplat	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	19	0	task_019(UnicodeString FileName, UnicodeString FunctionName, Int32 LineNumber, UInt32 ErrorCode)		wpndbg	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	20	0	task_020(UnicodeString FilePath, UInt32 ErrorCode)		wpndbg	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	21	0	ProcessTileUpdateSettingsStart(UInt32 CountInboxApps, UInt32 CountPreinstallApps)	Start	wpnplat	ProcessTileUpdateSettings	Informational		
+Microsoft-Windows-PushNotifications-Platform	22	0	ProcessTileUpdateSettingsStop()	Stop	wpnplat	ProcessTileUpdateSettings	Informational		
+Microsoft-Windows-PushNotifications-Platform	23	0	ProcessTileUpdateSettings(UnicodeString AppUserModelId, UnicodeString Uri, UInt32 WpnRecurrence)		wpnplat	ProcessTileUpdateSettings	Informational		
+Microsoft-Windows-PushNotifications-Platform	24	0	PlatformBootUp24()		wpnplat wpntroubleshoot keyword_200000000000	PlatformBootUp	Informational		
+Microsoft-Windows-PushNotifications-Platform	25	0	PlatformShutdown25()		wpnplat wpntroubleshoot	PlatformShutdown	Informational		
+Microsoft-Windows-PushNotifications-Platform	26	0	task_026(UnicodeString Name, Pointer InstanceId)		wpnplat wpntroubleshoot	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	27	0	task_027(UnicodeString Name, Pointer InstanceId, Int32 ErrorCode)		wpnplat wpntroubleshoot	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	28	0	task_028(UInt32 MessageCode)		wpnplat wpntroubleshoot	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	29	0	DefragFileStart29()	Start	wpnplat wpntroubleshoot	DefragFile	Informational		
+Microsoft-Windows-PushNotifications-Platform	30	0	DefragFileStop30()	Stop	wpnplat wpntroubleshoot	DefragFile	Informational		
+Microsoft-Windows-PushNotifications-Platform	31	0	task_031(UInt64 TotalSize)		wpnplat	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	32	0	BatterySaverStart()	Start	wpnplat wpntroubleshoot	BatterySaver	Informational		
+Microsoft-Windows-PushNotifications-Platform	33	0	BatterySaverStop()	Stop	wpnplat wpntroubleshoot	BatterySaver	Informational		
+Microsoft-Windows-PushNotifications-Platform	34	0	task_034()		wpnplat	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	35	0	task_035(Int32 ErrorCode)		wpnplat	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	36	0	task_036(Int32 ErrorCode)		wpnplat	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	37	0	task_037(Boolean ChannelsExist)		wpnplat wpntroubleshoot wpndebug_connectivity	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	38	0	task_038(Int32 ErrorCode)		wpnplat wpntroubleshoot	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	39	0	task_039(Int32 ErrorCode)		wpnplat wpntroubleshoot	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	40	0	task_040(Int32 ErrorCode, UInt32 PdcType, UInt32 PdcScenario, Int64 PdcNetRefCount, Int64 PdcPlatRefCount)		wpnplat wpntroubleshoot keyword_200000000000	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	41	0	task_041(Int32 ErrorCode, UInt32 PdcType, Int64 PdcNetRefCount, Int64 PdcPlatRefCount)		wpnplat wpntroubleshoot keyword_200000000000	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1000	0	task_01000(GUID CLSID, Boolean Enabled, UInt32 Flags)		wpnconn	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1001	0	task_01001(GUID CLSID, UInt32 Flags, Int32 ErrorCode)		wpnconn	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1002	0	task_01002(GUID CLSID, UInt32 Flags, Int32 ErrorCode)		wpnconn	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1003	0	ConnectionEstablishment()		wpnconn wpntroubleshoot	ConnectionEstablishment	Informational		
+Microsoft-Windows-PushNotifications-Platform	1004	0	task_01004()		wpnconn wpntroubleshoot keyword_200000000000	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1005	0	ConnectionEstablishment1005(UInt32 Status)		wpnconn wpnperf_FirstCloudNotification wpnperf_FirstCloudNotificationWithCloudImage wpntroubleshoot wpndebug_connectivity wpndebug_connectivity_isConnected	ConnectionEstablishment	Informational		
+Microsoft-Windows-PushNotifications-Platform	1006	0	task_01006(UnicodeString PackageFullName, UInt32 Properties, UInt32 Cookie, Int32 TransactionId)		wpnconn	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1007	0	task_01007(Int32 TransactionId, UnicodeString ChannelId, UnicodeString ChannelUri, Double Expiry)		wpnconn	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1008	0	task_01008(UnicodeString ChannelId)		wpnconn	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1010	0	NewCloudNotificationArrivalStart(UInt32 NotificationType, UnicodeString ChannelId, UnicodeString AppUserModelId, UInt32 TrackingId, UInt64 MessageId, Double Timestamp, Double Expiry, UnicodeString Tag, UnicodeString Group, UInt32 Action, UInt32 OfflineCacheCount, Boolean CacheRollover, UnicodeString OfflineBundleId)	Start	wpndebug_cloudtoast_isolate wpndebug_raw_isolate wpnconn wpnperf_FirstCloudNotification wpnperf_FirstCloudNotificationWithCloudImage wpnperf_NewCloudNotificationArrival wpnperf_NewCloudNotificationArrivalWithCloudImage wpntroubleshoot wpndebug_cloudtile_isolate wpndev_NotificationE2E	NewCloudNotificationArrival	Informational		
+Microsoft-Windows-PushNotifications-Platform	1011	0	task_01011(UnicodeString ChannelId, UnicodeString PackageFullName, UInt32 Properties, UInt32 Cookie, Int32 TransactionId)		wpnconn	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1012	0	task_01012(UInt32 BatchingState)		wpnconn	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1013	0	task_01013(UnicodeString ChannelId, UInt32 NotificationType, Boolean Enabled, UnicodeString AppUserModelId)		wpndebug_raw_dropped wpnconn wpntroubleshoot	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1014	0	task_01014(UInt32 DisplayStatus)		wpnconn	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1015	0	task_01015(UInt32 NotificationType, Boolean Enabled)		wpnconn wpntroubleshoot	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1016	0	task_01016(UInt32 NetworkCost, Boolean Costly)		wpnconn	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1017	0	task_01017(UInt32 DateSource, FILETIME BillingCycle)		wpnconn	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1018	0	task_01018()		wpnconn	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1019	0	task_01019(UInt32 Status, UInt32 SessionId, UInt32 CurrentSessionId)		wpnconn	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1020	0	ConnectionEstablishment1020(UInt32 Status)		wpnconn wpnperf_FirstCloudNotification wpnperf_FirstCloudNotificationWithCloudImage wpntroubleshoot wpndebug_connectivity wpndebug_connectivity_isConnected	ConnectionEstablishment	Error		
+Microsoft-Windows-PushNotifications-Platform	1021	0	task_01021(Int32 ErrorCode)		wpnconn wpntroubleshoot wpndebug_connectivity wpndebug_connectivity_isConnected	task_0	Error		
+Microsoft-Windows-PushNotifications-Platform	1022	0	task_01022()		wpnconn wpntroubleshoot wpndebug_connectivity wpndebug_connectivity_isConnected	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1023	0	task_01023(UnicodeString WorkItemName)		wpnconn wpntroubleshoot wpndebug_connectivity wpndebug_connectivity_isConnected	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1024	0	task_01024(Boolean WasConnected)		wpnconn wpntroubleshoot wpndebug_connectivity wpndebug_connectivity_isConnected	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1100	0	task_01100(UInt64 UserId, UInt32 UserType, AnsiString FeatureSet, AnsiString AuthType, UInt32 AuthPayloadSize, Binary AuthPayload, UInt32 BindPayloadSize, Binary BindPayload)		wpnprv	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1101	0	task_01101(UInt32 Error)		wpnprv wpndebug_connectivity wpndebug_connectivity_error	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1102	0	task_01102(Int32 TransactionId, AnsiString ChannelId, AnsiString PackageFullName, UInt32 Properties, UInt32 CommandSize, Binary Command, AnsiString Namespace, UInt64 ContextId, UInt32 PayloadSize, Binary Payload, UInt64 UserId)		wpnprv	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1103	0	task_01103(Int32 TransactionId, UInt32 TrID)		wpnprv	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1104	0	task_01104(AnsiString ChannelId, UInt32 CommandSize, Binary Command, AnsiString Namespace, UInt64 ContextId, UInt32 PayloadSize, Binary Payload, UInt64 UserId)		wpnprv	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1105	0	task_01105(AnsiString ChannelId, UInt32 NotificationType, Boolean Enabled, UInt32 CommandSize, Binary Command, AnsiString Namespace, UInt64 ContextId, UInt32 PayloadSize, Binary Payload, UInt64 UserId)		wpnprv	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1106	0	task_01106(UInt32 BatchingState, UInt32 CommandSize, Binary Command, AnsiString Namespace, UInt64 ContextId, UInt32 PayloadSize, Binary Payload)		wpnprv	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1107	0	task_01107(UInt32 TrID, UInt32 Error, UInt64 ContextId, UInt64 UserId)		wpnprv	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1108	0	task_01108(AnsiString Namespace, AnsiString UserId, UInt32 PayloadSize, UInt64 MsgId, Boolean Ack)		wpnprv	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1109	0	task_01109()		wpnprv	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1110	0	task_01110(UInt32 Error)		wpnprv	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1112	0	ConnectionEstablishmentStart(UInt32 ConnectionType)	Start	wpnprv wpnperf_FirstCloudNotification wpnperf_FirstCloudNotificationWithCloudImage	ConnectionEstablishment	Informational		
+Microsoft-Windows-PushNotifications-Platform	1113	0	ConnectionEstablishmentStop(AnsiString DeviceId, UInt32 ConnectionType)	Stop	wpnprv wpnperf_FirstCloudNotification wpnperf_FirstCloudNotificationWithCloudImage	ConnectionEstablishment	Informational		
+Microsoft-Windows-PushNotifications-Platform	1114	0	task_01114(UInt32 NotificationType, Boolean Enabled, UInt32 CommandSize, Binary Command, AnsiString Namespace, UInt64 ContextId, UInt32 PayloadSize, Binary Payload, UInt64 UserId)		wpnprv	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1115	0	task_01115(UInt64 MsgId, UInt32 CommandSize, Binary Command, AnsiString Namespace, UInt32 PayloadSize, Binary Payload)		wpnprv	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1116	0	ConnectionEstablishmentStop1116(UInt32 Error, UInt32 ConnectionType)	Stop	wpnprv wpnperf_FirstCloudNotification wpnperf_FirstCloudNotificationWithCloudImage wpntroubleshoot wpndebug_connectivity wpndebug_connectivity_error	ConnectionEstablishment	Error		
+Microsoft-Windows-PushNotifications-Platform	1117	0	task_01117(UInt32 Error)		wpnprv wpndebug_connectivity wpndebug_connectivity_error	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1118	0	task_01118(AnsiString Nonce, AnsiString Response, UInt32 CommandSize, Binary Command, AnsiString Namespace, UInt64 ContextId, UInt32 PayloadSize, Binary Payload)		wpnprv	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1201	0	ConnectionEstablishmentStart1201(UInt32 ConnectionType)	Start	wpnperf_FirstCloudNotification wpnperf_FirstCloudNotificationWithCloudImage wnptrans	ConnectionEstablishment	Informational		
+Microsoft-Windows-PushNotifications-Platform	1202	0	ConnectionEstablishmentStop1202(UInt32 ConnectionType)	Stop	wpnperf_FirstCloudNotification wpnperf_FirstCloudNotificationWithCloudImage wnptrans	ConnectionEstablishment	Informational		
+Microsoft-Windows-PushNotifications-Platform	1203	0	task_0Start(UInt32 CommandTrid, UInt32 ConnectionType)	Start	wnptrans	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1204	0	task_0Stop(UInt32 CommandTrid, UInt32 ConnectionType, UInt32 Error)	Stop	wnptrans	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1205	0	PlatformShutdownStart(UInt32 ConnectionType)	Start	wpnperf_Shutdown wnptrans	PlatformShutdown	Informational		
+Microsoft-Windows-PushNotifications-Platform	1206	0	PlatformShutdownStop(UInt32 ConnectionType)	Stop	wpnperf_Shutdown wnptrans	PlatformShutdown	Informational		
+Microsoft-Windows-PushNotifications-Platform	1207	0	ConnectionEstablishmentStart1207(UInt32 ConnectionType, AnsiString HostName)	Start	wpnperf_FirstCloudNotification wpnperf_FirstCloudNotificationWithCloudImage wnptrans	ConnectionEstablishment	Informational		
+Microsoft-Windows-PushNotifications-Platform	1208	0	ConnectionEstablishmentStop1208(UInt32 ConnectionType, Int32 ErrorCode)	Stop	wpnperf_FirstCloudNotification wpnperf_FirstCloudNotificationWithCloudImage wnptrans	ConnectionEstablishment	Informational		
+Microsoft-Windows-PushNotifications-Platform	1211	0	ConnectionEstablishmentStart1211(UInt32 ConnectionType, AnsiString HostName, UInt16 Port)	Start	wpnperf_FirstCloudNotification wpnperf_FirstCloudNotificationWithCloudImage wnptrans	ConnectionEstablishment	Informational		
+Microsoft-Windows-PushNotifications-Platform	1212	0	ConnectionEstablishmentStop1212(UInt32 ConnectionType, AnsiString HostName, UInt16 Port)	Stop	wpnperf_FirstCloudNotification wpnperf_FirstCloudNotificationWithCloudImage wnptrans	ConnectionEstablishment	Informational		
+Microsoft-Windows-PushNotifications-Platform	1213	0	ConnectionEstablishmentStart1213(UInt32 ConnectionType)	Start	wpnperf_FirstCloudNotification wpnperf_FirstCloudNotificationWithCloudImage wnptrans	ConnectionEstablishment	Informational		
+Microsoft-Windows-PushNotifications-Platform	1214	0	ConnectionEstablishmentStop1214(UInt32 ConnectionType, UnicodeString HostName)	Stop	wpnperf_FirstCloudNotification wpnperf_FirstCloudNotificationWithCloudImage wnptrans	ConnectionEstablishment	Informational		
+Microsoft-Windows-PushNotifications-Platform	1215	0	ConnectionEstablishmentStart1215(UInt32 ConnectionType)	Start	wpnperf_FirstCloudNotification wpnperf_FirstCloudNotificationWithCloudImage wnptrans	ConnectionEstablishment	Informational		
+Microsoft-Windows-PushNotifications-Platform	1216	0	ConnectionEstablishmentStop1216(UInt32 ConnectionType)	Stop	wpnperf_FirstCloudNotification wpnperf_FirstCloudNotificationWithCloudImage wnptrans	ConnectionEstablishment	Informational		
+Microsoft-Windows-PushNotifications-Platform	1217	0	ConnectionEstablishmentStart1217(UInt32 ConnectionType)	Start	wpnperf_FirstCloudNotification wpnperf_FirstCloudNotificationWithCloudImage wnptrans	ConnectionEstablishment	Informational		
+Microsoft-Windows-PushNotifications-Platform	1218	0	ConnectionEstablishmentStop1218(UInt32 ConnectionType, Int32 ErrorCode)	Stop	wpnperf_FirstCloudNotification wpnperf_FirstCloudNotificationWithCloudImage wnptrans	ConnectionEstablishment	Informational		
+Microsoft-Windows-PushNotifications-Platform	1219	0	task_01219(UInt32 Bytes, UInt32 ConnectionType)		wnptrans	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1220	0	task_01220(UInt32 Bytes, UInt32 ConnectionType)		wnptrans	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1223	0	task_01223(AnsiString Verb, UInt32 TrID, AnsiString Namespace, UInt32 Bytes, Binary Payload, UInt32 ConnectionType)		wnptrans wpndebug_connectivity wpndebug_connectivity_isConnected	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	1224	0	task_01224(UInt32 Bytes, Binary Payload, UInt32 ConnectionType)		wnptrans	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	1225	0	task_01225(AnsiString Verb, UInt32 TrID, AnsiString Namespace, UInt32 Bytes, Binary Payload, UInt32 ConnectionType)		wnptrans wpndebug_connectivity wpndebug_connectivity_isConnected	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	1226	0	task_01226(UInt32 Bytes, Binary Payload, UInt32 ConnectionType)		wnptrans	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	1227	0	task_01227(AnsiString Verb, UInt32 TrID, AnsiString Namespace, UInt32 Bytes, Binary Payload, UInt32 ConnectionType)		wnptrans	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1228	0	task_01228(UInt32 ErrorCode)		wnptrans	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1229	0	task_01229(UInt32 ErrorCode)		wnptrans	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1230	0	task_01230(UInt32 ErrorCode)		wnptrans	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1231	0	task_01231(UInt32 ServerKaHint)		wnptrans	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1232	0	task_01232(UInt32 KaValueType, UInt32 KaValue)		wnptrans	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1233	0	task_01233(AnsiString SessionId, UInt64 SecondsSinceLastSentPacket, UInt32 ConnectionType)		wnptrans	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1234	0	task_01234(UInt32 ProtocolType, UInt32 ConnectionType)		wnptrans	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1235	0	task_01235(UInt32 IdleSucceededInterval, UInt32 IdleFailedInterval)		wnptrans	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1236	0	task_01236(UInt32 IdleSucceededCount)		wnptrans	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1237	0	task_01237(UInt32 IdleFailedInterval)		wnptrans	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1238	0	task_01238()		wnptrans	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1239	0	task_01239(UInt32 KaValueType, UInt32 KaValue, UInt32 KaMinLimit)		wnptrans	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1240	0	task_01240()		wnptrans	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1241	0	task_01241(UInt32 ProtocolType)		wnptrans	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1242	0	task_01242(UInt32 PowerManagementType, UInt32 ConnectionType)		wnptrans	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1243	0	task_01243(UInt32 PowerManagementType, UInt32 ConnectionType)		wnptrans	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	1244	0	task_01244(UnicodeString HostName, UInt16 Port, UnicodeString ProxyHostName)		wnptrans	task_0	Warning		
+Microsoft-Windows-PushNotifications-Platform	1245	0	task_01245(UnicodeString HostName, UInt16 Port, UnicodeString ProxyHostName)		wnptrans	task_0	Warning		
+Microsoft-Windows-PushNotifications-Platform	1246	0	task_01246()		wnptrans wpndebug_connectivity wpndebug_connectivity_error	task_0	Warning		
+Microsoft-Windows-PushNotifications-Platform	1247	0	task_01247(UInt32 ControlChannelTriggerStatus)		wnptrans	task_0	Warning		
+Microsoft-Windows-PushNotifications-Platform	1248	0	task_01248(UnicodeString HostName, UInt16 Port, UnicodeString ProxyHostName, UInt32 HttpStatus)		wnptrans	task_0	Warning		
+Microsoft-Windows-PushNotifications-Platform	1249	0	task_01249()		wnptrans	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1250	0	task_01250()		wnptrans	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1251	0	task_01251(UInt32 Error)		wnptrans	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1252	0	task_01252()		wnptrans	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1253	0	task_01253()		wnptrans	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1254	0	task_01254(UInt32 ConnectionType, UInt32 OldIndex, UInt32 OldAddressFamily, UInt32 NewIndex, UInt32 NewAddressFamily, UInt32 NewPhysicalMediumType)		wnptrans	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1255	0	task_01255(UInt32 ConnectionType)		wnptrans	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1256	0	task_01256(UInt32 ConnectionType)		wnptrans	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1257	0	task_01257(UInt32 ConnectionType, UInt32 Error)		wnptrans	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1258	0	task_01258(UInt32 ConnectionType, UInt32 SocketError)		wnptrans	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1259	0	task_01259()		wnptrans	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1260	0	task_01260()		wnptrans	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1261	0	task_01261(AnsiString DeviceId, UInt64 UserId, UInt32 UserType)		wnptrans	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1262	0	task_01262(AnsiString DeviceId, UInt64 UserId, UInt32 UserType)		wnptrans	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1263	0	task_01263(AnsiString DeviceId, UInt64 OldUserId, UInt32 OldUserType, UInt64 NewUserId, UInt32 NewUserType)		wnptrans	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1264	0	task_01264(AnsiString DeviceId, UInt64 UserId, UInt32 Error)		wnptrans	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1265	0	task_01265(AnsiString DeviceId, UInt64 UserId, UInt32 Error)		wnptrans	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1266	0	task_01266(AnsiString DeviceId, UInt64 OldUserId, UInt64 NewUserId, UInt32 Error)		wnptrans	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1267	0	task_01267(AnsiString Verb, UInt32 TrID, AnsiString Namespace, UInt32 Bytes, Binary Payload, UInt32 ConnectionType)		wnptrans wpndebug_connectivity wpndebug_connectivity_isConnected	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	1268	0	task_01268(AnsiString Verb, UInt32 TrID, AnsiString Namespace, UInt32 Bytes, Binary Payload, UInt32 ConnectionType)		wnptrans wpndebug_connectivity wpndebug_connectivity_isConnected	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	1300	0	task_01300()		wpnprv	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1301	0	task_01301()		wpnprv	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1302	0	task_01302(Int32 ErrorCode, Int64 InitCount)		wpnprv	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1303	0	task_01303(Int32 ErrorCode, Int64 InitCount)		wpnprv	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1304	0	task_01304(Int32 ErrorCode, Int64 InitCount, Int64 PdcReason, UInt32 ConnectionType)		wpnprv	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1305	0	task_01305(Int32 ErrorCode, Int64 InitCount, Int64 PdcReason, UInt32 ConnectionType)		wpnprv	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1306	0	task_01306(AnsiString DeviceId, Int64 State, UInt32 ConnectionType)		wpnprv	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1307	0	task_01307(UInt32 ConnectorId, Int64 State, UInt32 ConnectionType)		wpnprv	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1308	0	task_01308(UInt32 ConnectorId, UInt32 ConnectionType, Int32 ErrorCode)		wnptrans	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1309	0	task_01309(UInt32 ConnectionType, Int32 ErrorCode)		wnptrans	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1310	0	task_01310(UInt32 ConnectionType, UInt32 OldIndex, UInt32 OldAddressFamily, UInt32 NewIndex, UInt32 NewAddressFamily, UInt32 NewPhysicalMediumType)		wnptrans	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1311	0	task_01311(UInt32 ConnectionType, UInt32 OldIndex, UInt32 OldAddressFamily, UInt32 NewIndex, UInt32 NewAddressFamily, UInt32 NewPhysicalMediumType)		wnptrans	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1312	0	task_01312(UInt32 TriggerValue)		wnptrans	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1313	0	task_01313(UInt32 TriggerValue)		wnptrans	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1314	0	task_01314(UInt32 TriggerValue)		wnptrans	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1315	0	task_01315(UInt32 TriggerValue)		wnptrans	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	2000	0	RequestChannelStart(UnicodeString PackageFullName, UnicodeString AppUserModelId)	Start	wpnend	RequestChannel	Informational		
+Microsoft-Windows-PushNotifications-Platform	2001	0	RequestChannelStop(UnicodeString ChannelId, UnicodeString AppUserModelId)	Stop	wpnend wpntroubleshoot	RequestChannel	Informational		
+Microsoft-Windows-PushNotifications-Platform	2002	0	task_02002(UnicodeString ChannelId, UnicodeString AppUserModelId)		wpnend wpntroubleshoot	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	2003	0	RequestChannelStop2003(UnicodeString ChannelId, UnicodeString AppUserModelId)	Stop	wpnend wpntroubleshoot	RequestChannel	Informational		
+Microsoft-Windows-PushNotifications-Platform	2004	0	RequestChannelStop2004(UnicodeString ChannelId, UnicodeString AppUserModelId)	Stop	wpnend wpntroubleshoot	RequestChannel	Informational		
+Microsoft-Windows-PushNotifications-Platform	2005	0	task_02005(UnicodeString AppUserModelId)		wpnend	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	2006	0	task_02006(UnicodeString AppUserModelId)		wpnend	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	2007	0	task_02007(UnicodeString AppUserModelId, Int32 ErrorCode)		wpnend wpndev_NotificationE2E	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	2008	0	task_02008(UnicodeString AppUserModelId, UInt32 NotificationType, UInt32 TrackingId)		wpnend wpndev_NotificationE2E	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	2009	0	NewLocalNotificationArrivalStart(UnicodeString AppUserModelId, UInt32 NotificationType, UInt32 TrackingId, UInt32 NotificationSource)	Start	wpndebug_localtoast_isolate wpnend wpntroubleshoot wpndebug_localtile_isolate wpndev_NotificationE2E	NewLocalNotificationArrival	Informational		
+Microsoft-Windows-PushNotifications-Platform	2010	0	task_02010(UnicodeString AppUserModelId)		wpnend	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	2011	0	task_02011(UnicodeString AppUserModelId)		wpnend	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	2012	0	task_02012(UnicodeString AppUserModelId, UInt32 TrackingId)		wpnend	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	2013	0	task_02013(UnicodeString AppUserModelId)		wpnend	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	2014	0	task_02014(UnicodeString AppUserModelId, UnicodeString Tag, UnicodeString Group)		wpnend	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	2015	0	task_02015(UnicodeString AppUserModelId, Int32 ErrorCode)		wpnend wpntroubleshoot	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	2016	0	task_02016(UnicodeString AppUserModelId)		wpnend	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	2025	0	task_02025(UInt32 TrackingId)		wpnend	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	2026	0	task_02026(UInt32 TrackingId)		wpnend	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	2027	0	task_02027(UInt32 TrackingId)		wpnend	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	2028	0	task_02028(UnicodeString PackageFullName, UnicodeString AppUserModelID, GUID TimerId, FILETIME Duetime)		wpnend	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	2029	0	task_02029(UnicodeString PackageFullName, UnicodeString AppUserModelID)		wpnend	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	2030	0	task_02030(UnicodeString AppUserModelID, GUID TimerId, FILETIME Duetime)		wpnend	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	2031	0	task_02031(UnicodeString AppUserModelID, GUID EventId)		wpnend	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	2032	0	task_02032(UnicodeString AppUserModelID, GUID EventId)		wpnend	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	2033	0	NewCloudNotificationArrivalStop(UnicodeString AppUserModelID, GUID EventId, UInt32 NotificationId)	Stop	wpndebug_raw_isolate wpnend wpndev_NotificationE2E	NewCloudNotificationArrival	Informational		
+Microsoft-Windows-PushNotifications-Platform	2034	0	task_02034(UnicodeString AppUserModelID)		wpnend	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	2035	0	task_02035(UnicodeString PackageFullName, UnicodeString AppUserModelID, GUID TimerId, FILETIME Duetime)		wpnend	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	2036	0	task_02036(UnicodeString PackageFullName, UnicodeString AppUserModelID, GUID TimerId)		wpnend	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	2037	0	task_02037(UnicodeString AppUserModelID, GUID TimerId, FILETIME Duetime)		wpnend	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	2038	0	task_02038(UnicodeString AppUserModelID, GUID TimerId, FILETIME Duetime)		wpnend	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	2039	0	task_02039(UnicodeString PackageFullName, UnicodeString AppUserModelID, UInt32 NotificationType, GUID TimerId, UnicodeString URL)		wpnend	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	2040	0	task_02040(UnicodeString PackageFullName, UnicodeString AppUserModelID, UInt32 NotificationType)		wpnend	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	2041	0	PeriodicPollStart(UnicodeString AppUserModelID, UInt32 NotificationType, GUID TimerId)	Start	wpnend	PeriodicPoll	Informational		
+Microsoft-Windows-PushNotifications-Platform	2042	0	PeriodicPollStop(UnicodeString AppUserModelID, UInt32 NotificationType)	Stop	wpnend	PeriodicPoll	Informational		
+Microsoft-Windows-PushNotifications-Platform	2043	0	PeriodicPollStop2043(UnicodeString AppUserModelID, UInt32 NotificationType, UnicodeString URL)	Stop	wpnend wpntroubleshoot wpndebug_polling_error	PeriodicPoll	Error		
+Microsoft-Windows-PushNotifications-Platform	2044	0	PeriodicPollStop2044(UnicodeString AppUserModelID, UInt32 NotificationType)	Stop	wpnend wpntroubleshoot wpndebug_polling_error	PeriodicPoll	Error		
+Microsoft-Windows-PushNotifications-Platform	2045	0	PeriodicPollStop2045(UnicodeString AppUserModelID, UInt32 NotificationType, UnicodeString URL, Int32 Error)	Stop	wpnend wpntroubleshoot wpndebug_polling_error	PeriodicPoll	Error		
+Microsoft-Windows-PushNotifications-Platform	2046	0	task_02046(UnicodeString AppUserModelID)		wpnend	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	2047	0	task_02047(UnicodeString AppUserModelId)		wpnend wpntroubleshoot	task_0	Error		
+Microsoft-Windows-PushNotifications-Platform	2048	0	NewCloudNotificationArrivalStop2048(UnicodeString AppUserModelID, GUID EventId, UInt32 ErrorCode)	Stop	wpnend wpndev_NotificationE2E	NewCloudNotificationArrival	Informational		
+Microsoft-Windows-PushNotifications-Platform	2049	0	PeriodicPoll(UnicodeString AppUserModelID, UInt32 NotificationType, UnicodeString URL, UInt32 HttpStatusCode)		wpnend wpntroubleshoot wpndebug_polling_error	PeriodicPoll	Informational		
+Microsoft-Windows-PushNotifications-Platform	2050	0	PeriodicPollStop2050(UnicodeString AppUserModelID, UInt32 NotificationType, UnicodeString URL)	Stop	wpnend wpntroubleshoot wpndebug_polling_error	PeriodicPoll	Error		
+Microsoft-Windows-PushNotifications-Platform	2051	0	PeriodicPollStop2051(UnicodeString AppUserModelID, UInt32 NotificationType, UnicodeString URL)	Stop	wpnend wpntroubleshoot wpndebug_polling_error	PeriodicPoll	Error		
+Microsoft-Windows-PushNotifications-Platform	2052	0	PeriodicPollStop2052(UnicodeString AppUserModelID, UInt32 NotificationType, UnicodeString URL, Int32 Error)	Stop	wpnend wpntroubleshoot wpndebug_polling_error	PeriodicPoll	Informational		
+Microsoft-Windows-PushNotifications-Platform	2053	0	PeriodicPollStop2053(UnicodeString AppUserModelID, UInt32 NotificationType, UnicodeString URL)	Stop	wpnend wpntroubleshoot wpndebug_polling_error	PeriodicPoll	Error		
+Microsoft-Windows-PushNotifications-Platform	2100	0	task_02100(UnicodeString ChannelId)		wpnend wpndev_NotificationE2E	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	2101	0	task_02101(UInt32 TrackingId)		wpnend wpndev_NotificationE2E	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	2102	0	task_02102(UInt32 RequestFlags, UInt32 TrackingId, UInt32 NotificationType)		wpnend wpndev_NotificationE2E	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	2103	0	task_02103(UInt32 RequestFlags, UInt32 TrackingId)		wpnend wpndev_NotificationE2E	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	2104	0	task_02104(UnicodeString AppUserModelId, UInt32 TrackingId, UInt32 NotificationType)		wpnend wpndev_NotificationE2E	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	2105	0	task_02105(UnicodeString AppUserModelId, UInt32 TrackingId)		wpnend wpndev_NotificationE2E	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	2106	0	task_02106(UnicodeString AppUserModelId, UInt32 TrackingId, UInt32 NotificationType)		wpnend wpndev_NotificationE2E	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	2107	0	task_02107(UnicodeString AppUserModelId, UInt32 TrackingId, UInt32 NotificationType)		wpnend wpndev_NotificationE2E	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	2108	0	task_02108(UnicodeString AppUserModelId, UInt32 TrackingId, UInt32 NotificationType)		wpnend wpndev_NotificationE2E	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	2109	0	task_02109(UnicodeString AppUserModelId, UInt32 NotificationType, UInt64 Size, UInt32 NetworkType)		wpnend	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	2110	0	task_02110(UnicodeString AppUserModelId, UInt32 TrackingId, UInt32 NotificationType)		wpnend wpndev_NotificationE2E	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	2111	0	task_02111(UnicodeString PackageFullName, UnicodeString AppUserModelId, UInt32 NotificationType)		wpnend wpndev_NotificationE2E	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	2112	0	task_02112(UnicodeString AppUserModelId, UInt32 TrackingId, UInt32 NotificationType)		wpnend wpndev_NotificationE2E	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	2150	0	task_02150(UnicodeString AppUserModelId, UInt32 SettingType, Boolean Enabled)		wpnend wpntroubleshoot wpndebug_platform_setting	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	2151	0	task_02151(Boolean Enabled)		wpnend wpntroubleshoot	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	2152	0	task_02152(UnicodeString AppUserModelId, UInt32 SettingType, Boolean Enabled)		wpnend	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	2153	0	task_02153(UInt32 SettingType, Boolean Enabled, UInt32 PolicyLevel)		wpnend wpntroubleshoot wpndebug_platform_setting	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	2154	0	task_02154(UInt32 SettingType, Boolean Enabled, UInt32 PolicyLevel)		wpnend	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	2155	0	task_02155(UInt32 SettingType)		wpnend	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	2156	0	task_02156(UInt32 SettingType, UInt32 Cookie)		wpnend	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	2157	0	task_02157(UInt32 Cookie)		wpnend	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	2158	0	ClearAllStop()	Stop	wpnend	ClearAll	Verbose		
+Microsoft-Windows-PushNotifications-Platform	2159	0	task_02159(UInt64 SettingsValue)		wpnend	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	2160	0	task_02160(UInt64 SettingsValue)		wpnend	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	2161	0	task_02161(UInt64 SettingsValue)		wpnend	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	2162	0	task_02162()		wpnend	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	2163	0	task_02163(UInt32 SettingType, UnicodeString PackageFamilyName)		wpnend	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	2164	0	ClearAllStart()	Start	wpnend	ClearAll	Verbose		
+Microsoft-Windows-PushNotifications-Platform	2165	0	task_02165(Boolean Enabled)		wpnend	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	2166	0	task_02166(FILETIME WakeupTime, Boolean IsValid)		wpnend	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	2167	0	task_02167(FILETIME WakeupTime, Boolean IsValid)		wpnend	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	2168	0	task_02168()		wpnend	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	2169	0	task_02169(UnicodeString PackageFamilyName)		wpnend	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	2170	0	task_02170(UnicodeString PackageFamilyName, UnicodeString CollectionId)		wpnend	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	2171	0	task_02171()		wpnend wpntroubleshoot wpndebug_platform_setting	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	2200	0	task_02200(UInt32 RequestFlags, UnicodeString AppUserModelId)		wpnend	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	2201	0	task_02201(UnicodeString AppUserModelId)		wpnend	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	2202	0	task_02202(UInt32 TrackingId, UInt32 NotificationType)		wpnend wpndev_NotificationE2E	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	2203	0	NewCloudNotificationArrivalStop2203(UnicodeString AppUserModelId, UInt32 TrackingId, UInt32 NotificationType)	Stop	wpndebug_raw_isolate wpnend wpndev_NotificationE2E	NewCloudNotificationArrival	Verbose		
+Microsoft-Windows-PushNotifications-Platform	2250	0	task_02250(UnicodeString PackageFullName)		wpnend	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	2300	0	task_02300(UnicodeString PackageFullName, UnicodeString PackageRelativeApplicationId)		wpnend	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	2301	0	task_02301(UnicodeString PackageFullName, UnicodeString PackageRelativeApplicationId)		wpnend	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	2400	0	task_02400(UnicodeString PackageFullName, UnicodeString AppUserModelId, UInt32 Capabilities, UInt32 WNFEventNameLength, Binary WNFEventName)		wpnend	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	2401	0	task_02401(UnicodeString AppUserModelId)		wpnend	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	2402	0	task_02402(UnicodeString AppUserModelId)		wpnend	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	2403	0	task_02403(UnicodeString AppUserModelId)		wpnend	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	2404	0	task_02404(UnicodeString AppUserModelId, GUID PhoneVoipAgentId)		wpnend	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	2405	0	task_02405(UnicodeString AppUserModelId)		wpnend	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	2406	0	RequestChannelStart2406(UnicodeString PackageFullName, UnicodeString AppUserModelId, UnicodeString ChannelName, UnicodeString ServiceName)	Start	wpnend	RequestChannel	Informational		
+Microsoft-Windows-PushNotifications-Platform	2407	0	task_02407(UnicodeString ChannelId, UInt32 NotificationType, UInt32 TrackingId, UnicodeString AppUserModelId)		wpnend	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	2408	0	task_02408(UnicodeString ChannelId, UInt32 NotificationType, UInt32 TrackingId, UnicodeString AppUserModelId, GUID PhoneVoipAgentId)		wpnend	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	2409	0	task_02409(UnicodeString AppUserModelId)		wpnend	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	2410	0	task_02410(UnicodeString AppUserModelId)		wpnend	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	2411	0	task_02411(UnicodeString AppUserModelId)		wpnend	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	2412	0	task_02412(UnicodeString AppUserModelId, Boolean IsConnected, Int32 ErrorCode)		wpnend	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	2413	0	task_02413(UnicodeString PackageFullName, UnicodeString AppUserModelId, UInt32 AppSettings, UInt32 AppType, Int32 ErrorCode)		wpnend wpntroubleshoot	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	2414	0	task_02414(UnicodeString PackageFullName, UnicodeString AppUserModelId, UInt32 AppSettings, UInt32 AppType, Int32 ErrorCode)		wpnend wpntroubleshoot	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	2415	0	task_02415(UnicodeString AppUserModelId, Int32 ErrorCode)		wpnend wpntroubleshoot	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	3000	0	TileSessionCreateStart(Pointer Object, UnicodeString ProcessName)	Start	wpnui	TileSessionCreate	Informational		
+Microsoft-Windows-PushNotifications-Platform	3001	0	TileSessionCreateStop(Pointer Endpoint, UInt32 SessionId, Int32 Error, UnicodeString ProcessName, Int32 QueuedTileCloses, Int32 QueuedTileCleanups)	Stop	wpnui	TileSessionCreate	Informational		
+Microsoft-Windows-PushNotifications-Platform	3002	0	TileSessionUpdateStart(UInt32 SessionId)	Start	wpnui	TileSessionUpdate	Informational		
+Microsoft-Windows-PushNotifications-Platform	3003	0	TileSessionUpdateStop(UInt32 SessionId, UInt32 Count, Int32 Error)	Stop	wpnui	TileSessionUpdate	Informational		
+Microsoft-Windows-PushNotifications-Platform	3004	0	TileSessionCloseStart(UInt32 SessionId)	Start	wpnui	TileSessionClose	Informational		
+Microsoft-Windows-PushNotifications-Platform	3005	0	TileSessionCloseStop(UInt32 SessionId, Int32 Error)	Stop	wpnui	TileSessionClose	Informational		
+Microsoft-Windows-PushNotifications-Platform	3006	0	ToastSessionCreateStart(Pointer Object, UnicodeString ProcessName)	Start	wpnui	ToastSessionCreate	Informational		
+Microsoft-Windows-PushNotifications-Platform	3007	0	ToastSessionCreateStop(Pointer Endpoint, UInt32 SessionId, Int32 Error, UnicodeString ProcessName)	Stop	wpnui	ToastSessionCreate	Informational		
+Microsoft-Windows-PushNotifications-Platform	3008	0	ToastSessionCloseStart(UInt32 SessionId)	Start	wpnui	ToastSessionClose	Informational		
+Microsoft-Windows-PushNotifications-Platform	3009	0	ToastSessionCloseStop(UInt32 SessionId, Int32 Error)	Stop	wpnui	ToastSessionClose	Informational		
+Microsoft-Windows-PushNotifications-Platform	3010	0	RequestNotificationStart()	Start	wpnui wpnperf_MoGoPanning wpnperf_MoGoPanningWithCloudImage	RequestNotification	Informational		
+Microsoft-Windows-PushNotifications-Platform	3011	0	RequestNotificationStop()	Stop	wpnui wpnperf_MoGoPanning wpnperf_MoGoPanningWithCloudImage	RequestNotification	Informational		
+Microsoft-Windows-PushNotifications-Platform	3012	0	NewCloudNotificationArrivalStop3012(Int32 TrackingId, UnicodeString AppUserModelId, UInt32 SessionId)	Stop	wpndebug_cloudtoast_isolate wpndebug_localtoast_isolate wpnui wpntroubleshoot wpndev_NotificationE2E keyword_200000000000	NewCloudNotificationArrival	Informational		
+Microsoft-Windows-PushNotifications-Platform	3013	0	NewCloudNotificationArrivalStop3013(UInt32 NotificationType, Int32 TrackingId, UnicodeString AppUserModelId, UInt32 SessionId)	Stop	wpnui wpnperf_FirstCloudNotification wpnperf_FirstCloudNotificationWithCloudImage wpnperf_NewCloudNotificationArrival wpnperf_NewCloudNotificationArrivalWithCloudImage wpntroubleshoot wpndebug_cloudtile_isolate wpndebug_localtile_isolate wpndev_NotificationE2E keyword_200000000000	NewCloudNotificationArrival	Informational		
+Microsoft-Windows-PushNotifications-Platform	3014	0	task_03014(UnicodeString AppUserModelId)		wpnui	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	3015	0	NewCloudNotificationArrivalStop3015(UnicodeString AppUserModelId, UInt32 NotificationId, UInt16 QueueIndex)	Stop	wpnui wpnperf_FirstCloudNotification wpnperf_FirstCloudNotificationWithCloudImage wpnperf_NewCloudNotificationArrival wpnperf_NewCloudNotificationArrivalWithCloudImage wpndev_NotificationE2E	NewCloudNotificationArrival	Verbose		
+Microsoft-Windows-PushNotifications-Platform	3016	0	task_03016(UInt32 OverridedNotificationId, UInt32 OverridingNotificationId)		wpnui wpndev_NotificationE2E	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	3017	0	task_03017(UnicodeString AppUserModelId, UInt32 SessionMask, UInt16 Flag, UInt16 UpdateIndex, UInt32 KeystoneNotificationId, UInt16 KeystoneFlag, Int32 Appspace)		wpnui	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	3018	0	NewCloudNotificationArrival(UnicodeString AppUserModelId, UInt32 TrackingId)		wpnui wpnperf_FirstCloudNotification wpnperf_FirstCloudNotificationWithCloudImage wpnperf_NewCloudNotificationArrival wpnperf_NewCloudNotificationArrivalWithCloudImage wpndev_NotificationE2E	NewCloudNotificationArrival	Verbose		
+Microsoft-Windows-PushNotifications-Platform	3019	0	TileImageDownloadStart(UInt32 RequestId, UInt32 RequestCountInHighPriority, UInt32 RequestCountInMedPriority, UInt32 RequestCountInLowPriority)	Start	wpnui wpnperf_FirstCloudNotificationWithCloudImage wpnperf_NewCloudNotificationArrivalWithCloudImage wpnperf_MoGoPanningWithCloudImage	TileImageDownload	Informational		
+Microsoft-Windows-PushNotifications-Platform	3020	0	TileImageDownload(UInt32 RequestId)		wpnui	TileImageDownload	Verbose		
+Microsoft-Windows-PushNotifications-Platform	3021	0	TileImageDownload3021(UInt32 PriorityIndex, UnicodeString AppUserModelId, UInt32 NotificationId, UInt32 URLCount, UInt32 Flag)		wpnui wpndev_NotificationE2E	TileImageDownload	Verbose		
+Microsoft-Windows-PushNotifications-Platform	3022	0	TileImageDownload3022(UInt32 ResourceId, UnicodeString URL)		wpnui	TileImageDownload	Verbose		
+Microsoft-Windows-PushNotifications-Platform	3023	0	TileImageDownload3023(UInt32 NotificationId, UInt32 ResourceId, UnicodeString LocalPath, Int32 ErrorCode, UInt32 Flag)		wpnui wpnperf_FirstCloudNotificationWithCloudImage wpnperf_NewCloudNotificationArrivalWithCloudImage wpnperf_MoGoPanningWithCloudImage	TileImageDownload	Verbose		
+Microsoft-Windows-PushNotifications-Platform	3024	0	TileImageDownloadStop(UInt32 NotificationId, UInt32 Flag, UInt32 Count, UInt8 URLComplete)	Stop	wpnui wpnperf_FirstCloudNotificationWithCloudImage wpnperf_NewCloudNotificationArrivalWithCloudImage wpnperf_MoGoPanningWithCloudImage wpndev_NotificationE2E	TileImageDownload	Informational		
+Microsoft-Windows-PushNotifications-Platform	3025	0	task_03025(UnicodeString AppUserModelId, UInt32 NotificationId, UInt32 URLCount, UInt32 Flag)		wpnui wpndev_NotificationE2E	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	3026	0	task_03026(UInt32 ResourceId, UnicodeString URL)		wpnui	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	3027	0	task_03027(UInt32 SlotIndex, UInt32 NotificationId, UInt32 BITSPriority, Boolean IsTile, UnicodeString URL)		wpnui	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	3028	0	task_03028(UInt32 NotificationId, Boolean IsTile, UnicodeString Path)		wpnui	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	3029	0	task_03029(UInt32 NotificationId, Boolean IsTile, Int32 ErrorCode, UnicodeString URL)		wpnui wpntroubleshoot	task_0	Error		
+Microsoft-Windows-PushNotifications-Platform	3030	0	RequestResourceStart()	Start	wpnui	RequestResource	Informational		
+Microsoft-Windows-PushNotifications-Platform	3031	0	RequestResourceStop()	Stop	wpnui	RequestResource	Informational		
+Microsoft-Windows-PushNotifications-Platform	3032	0	ClearAllTilesStart()	Start	wpnui	ClearAllTiles	Informational		
+Microsoft-Windows-PushNotifications-Platform	3033	0	ClearAllTilesStop()	Stop	wpnui	ClearAllTiles	Informational		
+Microsoft-Windows-PushNotifications-Platform	3034	0	ClearAllImagesStart()	Start	wpnui	ClearAllImages	Informational		
+Microsoft-Windows-PushNotifications-Platform	3035	0	ClearAllImagesStop()	Stop	wpnui	ClearAllImages	Informational		
+Microsoft-Windows-PushNotifications-Platform	3036	0	task_03036(Boolean IDM_Enabled)		wpnui	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	3037	0	TileSessionUpdateStart3037(UInt32 SessionId, UInt32 Count, Int8 UpdateControl)	Start	wpnui	TileSessionUpdate	Verbose		
+Microsoft-Windows-PushNotifications-Platform	3038	0	RequestNotificationStart3038(UInt32 Count, AnsiString RequestControl)	Start	wpnui	RequestNotification	Verbose		
+Microsoft-Windows-PushNotifications-Platform	3039	0	task_03039()		wpnui	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	3040	0	task_03040(UnicodeString URL)		wpnui wpndev_NotificationE2E	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	3041	0	task_03041(UnicodeString URL)		wpnui wpndev_NotificationE2E	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	3042	0	task_03042(UnicodeString URL)		wpnui wpndev_NotificationE2E	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	3043	0	task_03043(UInt64 NewNotificationId, UInt64 OldNotificationId)		wpnui wpndev_NotificationE2E	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	3044	0	task_03044(UInt64 NewNotificationId, UInt64 OldNotificationId)		wpnui wpndev_NotificationE2E	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	3045	0	ToastRequestNotificationStart()	Start	wpnui wpndev_NotificationE2E	ToastRequestNotification	Informational		
+Microsoft-Windows-PushNotifications-Platform	3046	0	ToastRequestNotificationStart3046()	Start	wpnui wpndev_NotificationE2E	ToastRequestNotification	Informational		
+Microsoft-Windows-PushNotifications-Platform	3047	0	task_03047(UInt64 NewNotificationId, UInt64 OldNotificationId)		wpnui wpndev_NotificationE2E	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	3048	0	NewCloudNotificationArrival3048(UnicodeString AppUserModelId, UInt32 TrackingId)		wpnui wpnperf_FirstCloudNotification wpnperf_FirstCloudNotificationWithCloudImage wpnperf_NewCloudNotificationArrival wpnperf_NewCloudNotificationArrivalWithCloudImage wpndev_NotificationE2E	NewCloudNotificationArrival	Verbose		
+Microsoft-Windows-PushNotifications-Platform	3049	0	task_03049(Pointer Object)		wpnui	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	3050	0	NewCloudNotificationArrivalStop3050(UnicodeString AppUserModelId, UInt32 NotificationId, UInt16 QueueIndex)	Stop	wpnui wpnperf_FirstCloudNotification wpnperf_FirstCloudNotificationWithCloudImage wpnperf_NewCloudNotificationArrival wpnperf_NewCloudNotificationArrivalWithCloudImage wpndev_NotificationE2E	NewCloudNotificationArrival	Verbose		
+Microsoft-Windows-PushNotifications-Platform	3051	0	task_03051(UInt32 OverridedNotificationId, UInt32 OverridingNotificationId)		wpnui wpndev_NotificationE2E	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	3052	0	NewCloudNotificationArrivalStart3052(Int32 TrackingId, UnicodeString AppUserModelId, UInt32 SessionId)	Start	wpndebug_cloudtoast_isolate wpndebug_localtoast_isolate wpnui wpntroubleshoot wpndev_NotificationE2E keyword_200000000000	NewCloudNotificationArrival	Informational		
+Microsoft-Windows-PushNotifications-Platform	3053	0	NewCloudNotificationArrivalStart3053(UInt32 NotificationType, Int32 TrackingId, UnicodeString AppUserModelId, UInt32 SessionId)	Start	wpnui wpnperf_FirstCloudNotification wpnperf_FirstCloudNotificationWithCloudImage wpnperf_NewCloudNotificationArrival wpnperf_NewCloudNotificationArrivalWithCloudImage wpntroubleshoot wpndebug_cloudtile_isolate wpndebug_localtile_isolate wpndev_NotificationE2E keyword_200000000000	NewCloudNotificationArrival	Informational		
+Microsoft-Windows-PushNotifications-Platform	3054	0	task_03054(Int32 TrackingId, UnicodeString AppUserModelId, UInt32 SessionId)		wpnui wpnperf_FirstCloudNotification wpnperf_FirstCloudNotificationWithCloudImage wpnperf_NewCloudNotificationArrival wpnperf_NewCloudNotificationArrivalWithCloudImage wpntroubleshoot wpndebug_cloudtile_isolate wpndebug_localtile_isolate wpndev_NotificationE2E	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	3055	0	ClearToastNotification(UInt32 SessionId)		wpnui wpnperf_FirstCloudNotification wpnperf_FirstCloudNotificationWithCloudImage wpnperf_NewCloudNotificationArrival wpnperf_NewCloudNotificationArrivalWithCloudImage wpntroubleshoot wpndebug_cloudtile_isolate wpndebug_localtile_isolate wpndev_NotificationE2E	ClearToastNotification	Informational		
+Microsoft-Windows-PushNotifications-Platform	3056	0	task_03056(UInt32 NotificationType, UnicodeString AppUserModelId, UInt32 SessionId)		wpnui wpnperf_FirstCloudNotification wpnperf_FirstCloudNotificationWithCloudImage wpnperf_NewCloudNotificationArrival wpnperf_NewCloudNotificationArrivalWithCloudImage wpntroubleshoot wpndebug_cloudtile_isolate wpndebug_localtile_isolate wpndev_NotificationE2E	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	3057	0	TileSessionCloseStart3057(UInt32 SessionId)	Start	wpnui	TileSessionClose	Informational		
+Microsoft-Windows-PushNotifications-Platform	3058	0	TileSessionCloseStop3058(UInt32 SessionId)	Stop	wpnui	TileSessionClose	Informational		
+Microsoft-Windows-PushNotifications-Platform	3100	0	ClearToastNotificationStart()	Start	wpnui wpndev_NotificationE2E	ClearToastNotification	Informational		
+Microsoft-Windows-PushNotifications-Platform	3101	0	ClearToastNotificationStart3101()	Start	wpnui wpndev_NotificationE2E	ClearToastNotification	Informational		
+Microsoft-Windows-PushNotifications-Platform	3102	0	ClearToastNotificationsStart()	Start	wpnui wpndev_NotificationE2E	ClearToastNotifications	Informational		
+Microsoft-Windows-PushNotifications-Platform	3103	0	ClearToastNotificationsStart3103()	Start	wpnui wpndev_NotificationE2E	ClearToastNotifications	Informational		
+Microsoft-Windows-PushNotifications-Platform	3104	0	task_03104(UInt32 TrackingId)		wpnui wpndev_NotificationE2E	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	3105	0	RemoveToastNotificationsStart()	Start	wpnui wpndev_NotificationE2E	RemoveToastNotifications	Informational		
+Microsoft-Windows-PushNotifications-Platform	3106	0	RemoveToastNotificationsStart3106()	Start	wpnui wpndev_NotificationE2E	RemoveToastNotifications	Informational		
+Microsoft-Windows-PushNotifications-Platform	3107	0	task_03107(UnicodeString ChannelId, UInt32 NotificationType, UInt32 TrackingId, UnicodeString AppUserModelId, Int32 ErrorCode)		wpnend wpntroubleshoot	task_0	Error		
+Microsoft-Windows-PushNotifications-Platform	3108	0	ClearToastNotificationRolloverStart()	Start	wpnui wpndev_NotificationE2E	ClearToastNotificationRollover	Informational		
+Microsoft-Windows-PushNotifications-Platform	3109	0	ClearToastNotificationRolloverStop()	Stop	wpnui wpndev_NotificationE2E	ClearToastNotificationRollover	Informational		
+Microsoft-Windows-PushNotifications-Platform	10000	0	task_010000(UnicodeString debugString)		wpndbg	task_0	Verbose		

@@ -1,0 +1,127 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Dhcp-Client	1000	0	AddressConfigurationStateEventLostIpAddress(UInt32 Address, UInt32 HWLength, Binary HWAddress)	LostIpAddress		AddressConfigurationStateEvent	Warning		
+Microsoft-Windows-Dhcp-Client	1001	0	AddressConfigurationStateEventIpAddressNotAssigned(UInt32 HWLength, Binary HWAddress, UInt32 StatusCode)	IpAddressNotAssigned	DHCP_AOAC	AddressConfigurationStateEvent	Error		
+Microsoft-Windows-Dhcp-Client	1002	0	AddressConfigurationStateEventIpLeaseDenied(UInt32 Address1, UInt32 HWLength, Binary HWAddress, UInt32 Address2)	IpLeaseDenied	DHCP_AOAC	AddressConfigurationStateEvent	Error		
+Microsoft-Windows-Dhcp-Client	1003	0	AddressConfigurationStateEventIpLeaseRenewalFailed(UInt32 HWLength, Binary HWAddress, UInt32 StatusCode)	IpLeaseRenewalFailed	DHCP_AOAC	AddressConfigurationStateEvent	Warning		
+Microsoft-Windows-Dhcp-Client	1004	0	ServiceStateEventErrorServiceStop(UInt32 StatusCode, UInt32 DwordVal)	ErrorServiceStop		ServiceStateEvent	Error		
+Microsoft-Windows-Dhcp-Client	1005	0	AddressConfigurationStateEventIPConflict(UInt32 Address, UInt32 HWLength, Binary HWAddress)	IPConflict		AddressConfigurationStateEvent	Warning		
+Microsoft-Windows-Dhcp-Client	1006	0	AddressConfigurationStateEventAutoconfigurationFailed(UInt32 HWLength, Binary HWAddress, UInt32 StatusCode)	AutoconfigurationFailed		AddressConfigurationStateEvent	Warning		
+Microsoft-Windows-Dhcp-Client	1007	0	AddressConfigurationStateEventAutoconfigurationSuccess(UInt32 HWLength, Binary HWAddress, UInt32 Address)	AutoconfigurationSuccess		AddressConfigurationStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	1008	0	AddressConfigurationStateEventInitNetworkInterfaceFailed(UInt32 StatusCode)	InitNetworkInterfaceFailed		AddressConfigurationStateEvent	Error		
+Microsoft-Windows-Dhcp-Client	1018	0	AddressConfigurationStateEventDhcpv6InitFailed(UInt32 StatusCode)	Dhcpv6InitFailed		AddressConfigurationStateEvent	Error		
+Microsoft-Windows-Dhcp-Client	50001	0	MediaStateEventMediaConnect(UInt32 InterfaceId)	MediaConnect	keyword_200000000000	MediaStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50002	0	MediaStateEventMediaDisconnect(UInt32 InterfaceId)	MediaDisconnect	keyword_200000000000	MediaStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50003	0	MediaStateEventMediaReconnect(UInt32 InterfaceId)	MediaReconnect	keyword_200000000000	MediaStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50004	0	AddressConfigurationStateEventDhcpEnabled(UInt32 InterfaceId)	DhcpEnabled	keyword_200000000000	AddressConfigurationStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50005	0	AddressConfigurationStateEventDhcpDisabled(UInt32 InterfaceId)	DhcpDisabled	keyword_200000000000	AddressConfigurationStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50006	0	ProtocolStateEventInitRequestAck(UInt32 InterfaceId)	InitRequestAck	DHCP_AOAC	ProtocolStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50007	0	ProtocolStateEventInitDORA(UInt32 InterfaceId)	InitDORA	DHCP_AOAC	ProtocolStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50008	0	AddressConfigurationStateEventStaticToDhcp(UInt32 InterfaceId)	StaticToDhcp		AddressConfigurationStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50009	0	ProtocolStateEventDiscoverSent(UInt32 InterfaceId, UInt32 StatusCode)	DiscoverSent		ProtocolStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50010	0	ProtocolStateEventOfferReceived(UInt32 InterfaceId, UInt32 Address1, UInt32 Address2)	OfferReceived		ProtocolStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50011	0	ProtocolStateEventOfferDiscarded(UInt32 InterfaceId, UInt32 StatusCode)	OfferDiscarded		ProtocolStateEvent	Error		
+Microsoft-Windows-Dhcp-Client	50012	0	ProtocolStateEventRequestSent(UInt32 InterfaceId, UInt32 StatusCode)	RequestSent		ProtocolStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50013	0	ProtocolStateEventAckReceived(UInt32 InterfaceId, UInt32 Address1, UInt32 Address2)	AckReceived		ProtocolStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50014	0	ProtocolStateEventAckDiscarded(UInt32 InterfaceId, UInt32 StatusCode)	AckDiscarded		ProtocolStateEvent	Error		
+Microsoft-Windows-Dhcp-Client	50015	0	ProtocolStateEventNackReceived(UInt32 InterfaceId)	NackReceived		ProtocolStateEvent	Error		
+Microsoft-Windows-Dhcp-Client	50016	0	ProtocolStateEventUnknownMessageDiscarded(UInt32 InterfaceId)	UnknownMessageDiscarded		ProtocolStateEvent	Warning		
+Microsoft-Windows-Dhcp-Client	50017	0	ProtocolStateEventDeclineSent(UInt32 InterfaceId, UInt32 StatusCode)	DeclineSent		ProtocolStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50018	0	ProtocolStateEventInformSent(UInt32 InterfaceId, UInt32 StatusCode)	InformSent		ProtocolStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50019	0	ProtocolStateEventReleaseSent(UInt32 InterfaceId, UInt32 StatusCode)	ReleaseSent		ProtocolStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50020	0	ProtocolStateEventBroadcastbitToggled(UInt32 InterfaceId, Boolean BoolFlag)	BroadcastbitToggled		ProtocolStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50021	0	ProtocolStateEventErrorExtractingOptions(UInt32 InterfaceId, UInt32 StatusCode)	ErrorExtractingOptions		ProtocolStateEvent	Error		
+Microsoft-Windows-Dhcp-Client	50022	0	AddressConfigurationStateEventFallbackConfigSet(UInt32 InterfaceId, UInt32 Address, UInt32 StatusCode)	FallbackConfigSet		AddressConfigurationStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50023	0	ProtocolStateEventOfferReceiveTimeout(UInt32 InterfaceId)	OfferReceiveTimeout	keyword_200000000000	ProtocolStateEvent	Warning		
+Microsoft-Windows-Dhcp-Client	50024	0	ProtocolStateEventAckReceiveTimeout(UInt32 InterfaceId)	AckReceiveTimeout	keyword_200000000000	ProtocolStateEvent	Warning		
+Microsoft-Windows-Dhcp-Client	50025	0	ProtocolStateEventCancelRenewal(UInt32 InterfaceId)	CancelRenewal		ProtocolStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50028	0	AddressConfigurationStateEventAddressPlumbed(UInt32 Address, UInt32 InterfaceId, UInt32 StatusCode)	AddressPlumbed	DHCP_AOAC	AddressConfigurationStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50029	0	AddressConfigurationStateEventAddressUnplumbed(UInt32 Address, UInt32 InterfaceId, UInt32 StatusCode)	AddressUnplumbed	DHCP_AOAC	AddressConfigurationStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50030	0	AddressConfigurationStateEventPlumbingError(UInt32 InterfaceId, UInt32 StatusCode)	PlumbingError	keyword_200000000000	AddressConfigurationStateEvent	Error		
+Microsoft-Windows-Dhcp-Client	50032	0	AddressConfigurationStateEventLeaseExpired(UInt32 InterfaceId, UInt32 Address)	LeaseExpired	keyword_200000000000	AddressConfigurationStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50033	0	MediaStateEventInterfaceAdded(UInt32 InterfaceId, UInt32 StatusCode)	InterfaceAdded		MediaStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50034	0	AddressConfigurationStateEventErrorInitializeInterface(UInt32 InterfaceId, UInt32 StatusCode)	ErrorInitializeInterface	keyword_200000000000	AddressConfigurationStateEvent	Error		
+Microsoft-Windows-Dhcp-Client	50035	0	AddressConfigurationStateEventRouteUpdated(UInt32 InterfaceId, UInt32 StatusCode)	RouteUpdated	keyword_200000000000	AddressConfigurationStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50036	0	ServiceStateEventServiceStart()	ServiceStart		ServiceStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50037	0	ServiceStateEventServiceStop(UInt32 DwordVal)	ServiceStop		ServiceStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50038	0	ServiceStateEventErrorInitService(UInt32 StatusCode)	ErrorInitService		ServiceStateEvent	Error		
+Microsoft-Windows-Dhcp-Client	50039	0	WinsockStateEventErrorOpeningSocket(UInt32 InterfaceId, UInt32 StatusCode)	ErrorOpeningSocket		WinsockStateEvent	Error		
+Microsoft-Windows-Dhcp-Client	50040	0	WinsockStateEventErrorClosingSocket(UInt32 InterfaceId, UInt32 StatusCode)	ErrorClosingSocket		WinsockStateEvent	Error		
+Microsoft-Windows-Dhcp-Client	50041	0	DNSStateEventDomainChangeNotification()	DomainChangeNotification		DNSStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50042	0	DNSStateEventDnsRegistrationDone(UInt32 InterfaceId, UInt32 StatusCode, UInt32 Dword)	DnsRegistrationDone		DNSStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50043	0	DNSStateEventDnsDeregistrationDone(UInt32 InterfaceId, UInt32 StatusCode)	DnsDeregistrationDone		DNSStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50044	0	ProtocolStateEventInformAckReceived(UInt32 InterfaceId)	InformAckReceived		ProtocolStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50053	0	ProtocolStateEventNetworkError(UInt32 InterfaceId, UInt32 StatusCode)	NetworkError		ProtocolStateEvent	Error		
+Microsoft-Windows-Dhcp-Client	50055	0	AddressConfigurationStateEventGatewayReachable(UInt32 Address, UInt32 InterfaceId)	GatewayReachable		AddressConfigurationStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50056	0	AddressConfigurationStateEventGatewayUnreachable(UInt32 InterfaceId)	GatewayUnreachable	keyword_200000000000	AddressConfigurationStateEvent	Error		
+Microsoft-Windows-Dhcp-Client	50058	0	AddressConfigurationStateEventSuccessfulLease()	SuccessfulLease		AddressConfigurationStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50059	0	AddressConfigurationStateEventRouteAdded(UnicodeString Str1, UnicodeString Str2, UnicodeString Str3, UnicodeString Str4)	RouteAdded		AddressConfigurationStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50060	0	AddressConfigurationStateEventRouteDeleted(UnicodeString Str1, UnicodeString Str2, UnicodeString Str3, UnicodeString Str4)	RouteDeleted		AddressConfigurationStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50061	0	ProtocolStateEventOfferReceivedForDiagnostics(UInt32 InterfaceId)	OfferReceivedForDiagnostics		ProtocolStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50062	0	AddressConfigurationStateEventStartGatewayReachabilityTest(UInt32 Address, UInt32 InterfaceId)	StartGatewayReachabilityTest		AddressConfigurationStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50063	0	AddressConfigurationStateEventNLANotified(UInt32 InterfaceId)	NLANotified	keyword_200000000000	AddressConfigurationStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50064	0	AddressConfigurationStateEventCacheScavengerRun(UInt32 InterfaceId)	CacheScavengerRun		AddressConfigurationStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50065	0	AddressConfigurationStateEventNetworkHintMatchFound(UnicodeString NetworkHintString, UnicodeString NetworkHint, UInt32 HWLength, Binary HWAddress)	NetworkHintMatchFound		AddressConfigurationStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50066	0	AddressConfigurationStateEventMatchedAddressPlumbed(UnicodeString NetworkHintString, UnicodeString NetworkHint, UInt32 HWLength, Binary HWAddress)	MatchedAddressPlumbed		AddressConfigurationStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50067	0	AddressConfigurationStateEventNetworkHintReceived(UnicodeString NetworkHintString, UnicodeString NetworkHint, UInt32 HWLength, Binary HWAddress)	NetworkHintReceived		AddressConfigurationStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50068	0	AddressConfigurationStateEventAddressAlreadyExists(UInt32 Address, UInt32 InterfaceId)	AddressAlreadyExists		AddressConfigurationStateEvent	Error		
+Microsoft-Windows-Dhcp-Client	50069	0	ProtocolStateEventBroadcastbitCached(Boolean BoolFlag, UInt32 InterfaceId)	BroadcastbitCached		ProtocolStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50070	0	AddressConfigurationStateEventNetworkHintNotReceived(UInt32 InterfaceId)	NetworkHintNotReceived		AddressConfigurationStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50071	0	AddressConfigurationStateEventNetworkHintMatchNotFound(UnicodeString NetworkHintString, UnicodeString NetworkHint, UInt32 InterfaceId)	NetworkHintMatchNotFound		AddressConfigurationStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50072	0	ProtocolStateEventDiagnosticsInitiated(UInt32 InterfaceId)	DiagnosticsInitiated		ProtocolStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50073	0	ProtocolStateEventDiagnosticsFailed(UInt32 InterfaceId)	DiagnosticsFailed		ProtocolStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50074	0	ProtocolStateEventFirewallPortExempted(UInt32 DwordVal, UInt32 InterfaceId, UInt32 DwordVal1)	FirewallPortExempted		ProtocolStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50075	0	ProtocolStateEventFirewallPortClosed(UInt32 DwordVal, UInt32 InterfaceId, UInt32 DwordVal1)	FirewallPortClosed		ProtocolStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50076	0	AddressConfigurationStateEventMatchedAddressNotPlumbed(UnicodeString NetworkHintString, UnicodeString NetworkHint, UInt32 HWLength, Binary HWAddress)	MatchedAddressNotPlumbed		AddressConfigurationStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50077	0	ProtocolStateEventAggressiveRetryOn(UInt32 InterfaceId)	AggressiveRetryOn		ProtocolStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50081	0	ProtocolStateEventAbandonDiscovInCSSinceDhcp(UInt32 DwordVal1, UInt32 InterfaceId, Binary Address)	AbandonDiscovInCSSinceDhcp		ProtocolStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50083	0	MediaStateEventAcquireNICReference(UInt32 InterfaceId, UInt32 StatusCode)	AcquireNICReference		MediaStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50084	0	MediaStateEventReleaseNICReference(UInt32 InterfaceId, UInt32 StatusCode)	ReleaseNICReference		MediaStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50085	0	ProtocolStateEventRegisterConflictDetectionNotification(UInt32 InterfaceId, UInt32 Address)	RegisterConflictDetectionNotification		ProtocolStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50086	0	ProtocolStateEventConflictDetectionComplete(UInt32 InterfaceId, UInt32 Address, UInt32 StatusCode)	ConflictDetectionComplete		ProtocolStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50087	0	ProtocolStateEventConflictDetectionTentative(UInt32 InterfaceId, UInt32 Address)	ConflictDetectionTentative		ProtocolStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50088	0	NetworkParameterStateEventParamChangeRegister(UInt32 ProcID, UInt32 UniqueID, AnsiString EventPath, UInt32 ClassIDSize, Binary ClassID, UInt32 OptListSize, Binary OptList, Boolean IsVendor)	ParamChangeRegister		NetworkParameterStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50089	0	NetworkParameterStateEventParamChangeUnregister(UInt32 ProcID, UInt32 UniqueID)	ParamChangeUnregister		NetworkParameterStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50090	0	NetworkParameterStateEventParamChangeNotification(UInt32 ProcID, UInt32 UniqueID, UInt32 StatusCode)	ParamChangeNotification		NetworkParameterStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50091	0	NetworkParameterStateEventParamRequest(HexInt64 InterfaceLUID, UInt32 ClassIDSize, Binary ClassID, UInt32 StandardOptListSize, Binary StandardOptList, UInt32 VendorOptListSize, Binary VendorOptList)	ParamRequest		NetworkParameterStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50092	0	NetworkParameterStateEventParamRequestUnblocked(HexInt64 InterfaceLUID, UInt32 InterfaceId)	ParamRequestUnblocked		NetworkParameterStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50093	0	NetworkParameterStateEventParamRequestComplete(HexInt64 InterfaceLUID, UInt32 InterfaceId, UInt32 StatusCode, UInt32 OptDataSize, Binary OptData)	ParamRequestComplete		NetworkParameterStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50094	0	ProtocolStateEventFirewallPortExemptionTriggered(UInt32 InterfaceId, UInt32 DwordVal1)	FirewallPortExemptionTriggered		ProtocolStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50095	0	ProtocolStateEventFirewallPortCloseTriggered(UInt32 InterfaceId, UInt32 DwordVal1)	FirewallPortCloseTriggered		ProtocolStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50096	0	ProtocolStateEventAbandonDiscovInCSSinceStateless(UInt32 DwordVal1, UInt32 InterfaceId, Binary Address)	AbandonDiscovInCSSinceStateless		ProtocolStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50097	0	ProtocolStateEventAbandonDiscovInCSSinceStatic(UInt32 DwordVal1, UInt32 InterfaceId, Binary Address)	AbandonDiscovInCSSinceStatic		ProtocolStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50098	0	ProtocolStateEventDontStartDiscovInCSSinceV6Plumbed(UInt32 InterfaceId, Binary Address)	DontStartDiscovInCSSinceV6Plumbed		ProtocolStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50099	0	ProtocolStateEventStartDiscovInCSSinceV6Unplumbed(UInt32 InterfaceId)	StartDiscovInCSSinceV6Unplumbed		ProtocolStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50100	0	ProtocolStateEventStartDiscovInCSAtCompulsoryTime(UInt32 InterfaceId)	StartDiscovInCSAtCompulsoryTime		ProtocolStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50101	0	NetworkParameterStateEventNotifyCSEntry()	NotifyCSEntry		NetworkParameterStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50102	0	NetworkParameterStateEventNotifyCSExit()	NotifyCSExit		NetworkParameterStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	60000	0	ProtocolStateEventPerfTrackAckConfirm(GUID InterfaceGuid, UInt32 InterfaceId, UInt32 Address1, UInt32 Address2)	PerfTrackAckConfirm		ProtocolStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	60001	0	ProtocolStateEventPerfTrackAckDORA(GUID InterfaceGuid, UInt32 InterfaceId, UInt32 Address1, UInt32 Address2)	PerfTrackAckDORA		ProtocolStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	60002	0	AddressConfigurationStateEventPerfTrackGatewayReachable(GUID InterfaceGuid, UInt32 InterfaceId)	PerfTrackGatewayReachable		AddressConfigurationStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	60003	0	AddressConfigurationStateEventPerfTrackStatic(GUID InterfaceGuid, UInt32 InterfaceId)	PerfTrackStatic		AddressConfigurationStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	60004	0	AddressConfigurationStateEventPerfTrackFallbackAddressSet(GUID InterfaceGuid, UInt32 InterfaceId, UInt32 StatusCode)	PerfTrackFallbackAddressSet		AddressConfigurationStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	60005	0	ProtocolStateEventPerfTrackToggleRequestAck(GUID InterfaceGuid, UInt32 InterfaceId, UInt32 Address1, UInt32 Address2)	PerfTrackToggleRequestAck		ProtocolStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	60006	0	ProtocolStateEventPerfTrackToggleDORAAck(GUID InterfaceGuid, UInt32 InterfaceId, UInt32 Address1, UInt32 Address2)	PerfTrackToggleDORAAck		ProtocolStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	60007	0	ProtocolStateEventPerfTrackToggleInitDORA(GUID InterfaceGuid, UInt32 InterfaceId, UInt32 Address1, UInt32 Address2)	PerfTrackToggleInitDORA		ProtocolStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	60010	0	ProtocolStateEventPerfTrackAckConfirm60010(GUID InterfaceGuid, UInt32 InterfaceId, UInt32 Address1, UInt32 Address2)	PerfTrackAckConfirm		ProtocolStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	60011	0	ProtocolStateEventPerfTrackAckDORA60011(GUID InterfaceGuid, UInt32 InterfaceId, UInt32 Address1, UInt32 Address2)	PerfTrackAckDORA		ProtocolStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	60012	0	AddressConfigurationStateEventPerfTrackGatewayReachable60012(GUID InterfaceGuid, UInt32 InterfaceId)	PerfTrackGatewayReachable		AddressConfigurationStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	60013	0	AddressConfigurationStateEventPerfTrackStatic60013(GUID InterfaceGuid, UInt32 InterfaceId)	PerfTrackStatic		AddressConfigurationStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	60014	0	AddressConfigurationStateEventPerfTrackFallbackAddressSet60014(GUID InterfaceGuid, UInt32 InterfaceId, UInt32 StatusCode)	PerfTrackFallbackAddressSet		AddressConfigurationStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	60015	0	ProtocolStateEventPerfTrackToggleRequestAck60015(GUID InterfaceGuid, UInt32 InterfaceId, UInt32 Address1, UInt32 Address2)	PerfTrackToggleRequestAck		ProtocolStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	60016	0	ProtocolStateEventPerfTrackToggleDORAAck60016(GUID InterfaceGuid, UInt32 InterfaceId, UInt32 Address1, UInt32 Address2)	PerfTrackToggleDORAAck		ProtocolStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	60017	0	ProtocolStateEventPerfTrackToggleInitDORA60017(GUID InterfaceGuid, UInt32 InterfaceId, UInt32 Address1, UInt32 Address2)	PerfTrackToggleInitDORA		ProtocolStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	60018	0	MediaStateEventPerfTrackMediaConnect(GUID InterfaceGuid, UInt32 InterfaceId)	PerfTrackMediaConnect		MediaStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	60019	0	MediaStateEventPerfTrackMediaConnectEnd(GUID InterfaceGuid, UInt32 InterfaceId)	PerfTrackMediaConnectEnd		MediaStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	60020	0	MediaStateEventPerfTrackMediaReconnect(GUID InterfaceGuid, UInt32 InterfaceId)	PerfTrackMediaReconnect		MediaStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	60021	0	ProtocolStateEventPerfTrackDiscoverNetworkLatency(GUID InterfaceGuid, UInt32 InterfaceId)	PerfTrackDiscoverNetworkLatency		ProtocolStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	60022	0	ProtocolStateEventPerfTrackDiscoverTimeout(GUID InterfaceGuid, UInt32 InterfaceId)	PerfTrackDiscoverTimeout	keyword_200000000000	ProtocolStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	60023	0	ProtocolStateEventPerfTrackRequestNetworkLatency(GUID InterfaceGuid, UInt32 InterfaceId)	PerfTrackRequestNetworkLatency		ProtocolStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	60024	0	ProtocolStateEventPerfTrackRequestNoResponse(GUID InterfaceGuid, UInt32 InterfaceId)	PerfTrackRequestNoResponse	keyword_200000000000	ProtocolStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	60025	0	AddressConfigurationStateEventPerfTrackFallbackAfterDiscover(GUID InterfaceGuid, UInt32 Address, UInt32 InterfaceId)	PerfTrackFallbackAfterDiscover		AddressConfigurationStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	60026	0	AddressConfigurationStateEventProcessDHCPRequestForeverEntered()	ProcessDHCPRequestForeverEntered		AddressConfigurationStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	60027	0	AddressConfigurationStateEventProcessDHCPRequestForeverTimedout()	ProcessDHCPRequestForeverTimedout		AddressConfigurationStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	60028	0	AddressConfigurationStateEventCreateRenewalSignalHandleFailed(UInt32 StatusCode)	CreateRenewalSignalHandleFailed		AddressConfigurationStateEvent	Error		
+Microsoft-Windows-Dhcp-Client	60029	0	AddressConfigurationStateEventDeleteRenewTimerFailed(UInt32 StatusCode)	DeleteRenewTimerFailed		AddressConfigurationStateEvent	Error		
+Microsoft-Windows-Dhcp-Client	60030	0	AddressConfigurationStateEventResetRenewalSignalHandleFailed(UInt32 StatusCode)	ResetRenewalSignalHandleFailed		AddressConfigurationStateEvent	Error		
+Microsoft-Windows-Dhcp-Client	60031	0	AddressConfigurationStateEventCreateRenewTimerFailed(UInt32 StatusCode)	CreateRenewTimerFailed		AddressConfigurationStateEvent	Error		
+Microsoft-Windows-Dhcp-Client	60032	0	AddressConfigurationStateEventProcessDHCPRequestForeverFailed(UInt32 StatusCode)	ProcessDHCPRequestForeverFailed		AddressConfigurationStateEvent	Error		

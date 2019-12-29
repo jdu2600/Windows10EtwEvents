@@ -1,0 +1,25 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Network-Setup	100	0	RunserviceStart()	Start		Runservice	Informational		
+Microsoft-Windows-Network-Setup	101	0	Runservice()			Runservice	Informational		
+Microsoft-Windows-Network-Setup	102	0	Runservice102(Int32 Code)			Runservice	Error		
+Microsoft-Windows-Network-Setup	110	0	Runservice110()			Runservice	Informational		
+Microsoft-Windows-Network-Setup	111	0	Runservice111()			Runservice	Informational		
+Microsoft-Windows-Network-Setup	112	0	Runservice112()			Runservice	Informational		
+Microsoft-Windows-Network-Setup	113	0	RunserviceStop()	Stop		Runservice	Informational		
+Microsoft-Windows-Network-Setup	200	0	TransactionStart(GUID TransactionGuid, UInt32 EnvironmentType)	Start		Transaction	Informational		
+Microsoft-Windows-Network-Setup	201	0	TransactionStop(GUID TransactionGuid)	Stop		Transaction	Informational		
+Microsoft-Windows-Network-Setup	202	0	CalculatebindingsStart(GUID TransactionGuid)	Start		Calculatebindings	Informational		
+Microsoft-Windows-Network-Setup	203	0	CalculatebindingsStop(GUID TransactionGuid)	Stop		Calculatebindings	Informational		
+Microsoft-Windows-Network-Setup	204	0	CommitchangesStart(GUID TransactionGuid)	Start		Commitchanges	Informational		
+Microsoft-Windows-Network-Setup	205	0	CommitchangesStop(GUID TransactionGuid)	Stop		Commitchanges	Informational		
+Microsoft-Windows-Network-Setup	300	0	ExternalAPIStart(GUID TransactionGuid, UInt32 Api)	Start		ExternalAPI	Informational		
+Microsoft-Windows-Network-Setup	301	0	ExternalAPIStop(GUID TransactionGuid, UInt32 Api, Int32 Code)	Stop		ExternalAPI	Informational		
+Microsoft-Windows-Network-Setup	400	0	PlugincallbackStart(GUID TransactionGuid, UInt32 PluginId, UnicodeString PluginName, UInt32 Api)	Start		Plugincallback	Informational		
+Microsoft-Windows-Network-Setup	401	0	PlugincallbackStop(GUID TransactionGuid, UInt32 Output, Int32 Code)	Stop		Plugincallback	Informational		
+Microsoft-Windows-Network-Setup	500	0	OperationStart(GUID TransactionGuid, UInt32 OperationType, UInt32 ObjectType, GUID ObjectId, UInt16 PropertyBufferSize, Binary PropertyBuffer)	Start		Operation	Informational		
+Microsoft-Windows-Network-Setup	501	0	OperationStop(GUID TransactionGuid, Int32 Code)	Stop		Operation	Informational		
+Microsoft-Windows-Network-Setup	600	0	INetCfgAPIStart(UInt32 Api)	Start		INetCfgAPI	Informational		
+Microsoft-Windows-Network-Setup	601	0	INetCfgAPIStop(Int32 Code)	Stop		INetCfgAPI	Informational		
+Microsoft-Windows-Network-Setup	700	0	INetCfgNotifyObjectStart(GUID TransactionGuid, UnicodeString ComponentId, UInt32 Api, UInt32 Parameter1, UnicodeString Parameter2)	Start		INetCfgNotifyObject	Informational		
+Microsoft-Windows-Network-Setup	701	0	INetCfgNotifyObjectStop(Int32 Code)	Stop		INetCfgNotifyObject	Informational		
+Microsoft-Windows-Network-Setup	702	0	INetCfgNotifyObjectStop702(Int32 Code)	Stop		INetCfgNotifyObject	Warning		

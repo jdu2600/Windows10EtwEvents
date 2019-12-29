@@ -1,0 +1,29 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Wininit	1	0	WaitForWinstationShutdownStart()	Start	PerfInstrumentation	WaitForWinstationShutdown	Informational		
+Microsoft-Windows-Wininit	2	0	WaitForWinstationShutdownStop()	Stop	PerfInstrumentation	WaitForWinstationShutdown	Informational		
+Microsoft-Windows-Wininit	3	0	PreShutdownNotificationStart()	Start	PerfInstrumentation	PreShutdownNotification	Informational		
+Microsoft-Windows-Wininit	4	0	PreShutdownNotificationStop()	Stop	PerfInstrumentation	PreShutdownNotification	Informational		
+Microsoft-Windows-Wininit	5	0	WaitForSystemProcessesStart()	Start	PerfInstrumentation	WaitForSystemProcesses	Informational		
+Microsoft-Windows-Wininit	6	0	WaitForSystemProcessesStop()	Stop	PerfInstrumentation	WaitForSystemProcesses	Informational		
+Microsoft-Windows-Wininit	7	0	ShutdownSystemRestoreStart()	Start	PerfInstrumentation	ShutdownSystemRestore	Informational		
+Microsoft-Windows-Wininit	8	0	ShutdownSystemRestoreStop()	Stop	PerfInstrumentation	ShutdownSystemRestore	Informational		
+Microsoft-Windows-Wininit	9	0	ShutdownWindowsStart(UInt32 Flags)	Start	PerfInstrumentation	ShutdownWindows	Informational		
+Microsoft-Windows-Wininit	10	0	ShutdownWindowsStop(UInt32 Win32Status)	Stop	PerfInstrumentation	ShutdownWindows	Informational		
+Microsoft-Windows-Wininit	11	0	task_0(UInt32 StringCount, UnicodeString String)			task_0	Warning		
+Microsoft-Windows-Wininit	12	0	task_012(UInt32 Level)			task_0	Informational		
+Microsoft-Windows-Wininit	13	0	task_013(UInt32 Level)			task_0	Informational		
+Microsoft-Windows-Wininit	14	0	task_014(UInt32 Config, UInt32 IsTestConfig)			task_0	Informational		
+Microsoft-Windows-Wininit	15	0	task_015(UInt32 Level)			task_0	Warning		
+Microsoft-Windows-Wininit	16	0	task_016(UInt32 Level)			task_0	Error		
+Microsoft-Windows-Wininit	17	0	task_017(UInt32 Level)			task_0	Error		
+Microsoft-Windows-Wininit	51	0	NtShutdownSystem()		PerfInstrumentation	NtShutdownSystem	Informational		
+Microsoft-Windows-Wininit	53	0	SentLogoffRequest(UInt32 SessionId, UInt32 Flags)		PerfInstrumentation	SentLogoffRequest	Informational		
+Microsoft-Windows-Wininit	55	0	ReceivedShutdownRequest(UInt32 SessionId, UInt32 IsRemote, UInt32 GracePeriod, UInt32 Flags, UInt32 Reason, UnicodeString Message)		PerfInstrumentation	ReceivedShutdownRequest	Informational		
+Microsoft-Windows-Wininit	1001	0	task_0PCODE_64pcode_64()	opcode_64		task_0	Always		
+Microsoft-Windows-Wininit	1015	0	task_0PCODE_192pcode_192()	opcode_192		task_0	Always		
+Microsoft-Windows-Wininit	3002	0	task_0PCODE_192pcode_1923002()	opcode_192		task_0	Always		
+Microsoft-Windows-Wininit	3003	0	task_0PCODE_128pcode_128()	opcode_128		task_0	Always		
+Microsoft-Windows-Wininit	3004	0	task_0PCODE_128pcode_1283004()	opcode_128		task_0	Always		
+Microsoft-Windows-Wininit	3005	0	task_0PCODE_192pcode_1923005()	opcode_192		task_0	Always		
+Microsoft-Windows-Wininit	6001	0	ShutdownDiagnosticsStart(UInt32 Flags)	Start	PerfInstrumentation PerfDiagnostics	ShutdownDiagnostics	Informational		
+Microsoft-Windows-Wininit	6002	0	PerfTrackFullShutdown(UInt32 ShutdownFlags, UInt64 UserSessionShutdownDuration, UInt64 SystemShutdownDuration, UInt64 FullShutdownDuration)		PerfInstrumentation	PerfTrackFullShutdown	Informational		

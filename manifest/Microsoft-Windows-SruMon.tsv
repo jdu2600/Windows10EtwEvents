@@ -1,0 +1,13 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-SruMon	2001	0	SruMonDebugTrace(UnicodeString _DebugString)		KeywordSruMonDebugTrace	SruMonDebugTrace	Verbose		
+Microsoft-Windows-SruMon	2002	0	SruMonDebugTrace2002(UnicodeString _FunctionName, UInt32 _Status)		KeywordSruMonDebugTrace KeywordSruMonDebugSequenceTrace	SruMonDebugTrace	Error		
+Microsoft-Windows-SruMon	2003	0	SruMonDebugTrace2003(UnicodeString _FunctionName, Int32 _HR)		KeywordSruMonDebugTrace KeywordSruMonDebugSequenceTrace	SruMonDebugTrace	Error		
+Microsoft-Windows-SruMon	2004	0	SruMonDebugTrace2004(UnicodeString _TableName)		KeywordSruMonDebugTrace	SruMonDebugTrace	Verbose		
+Microsoft-Windows-SruMon	2005	0	SruMonDebugTrace2005(UnicodeString _FunctionName, Int32 _HR)		KeywordSruMonDebugTrace KeywordSruMonDebugSequenceTrace	SruMonDebugTrace	Error		
+Microsoft-Windows-SruMon	2006	0	SruMonDebugSequenceTrace(UnicodeString _FunctionName)		KeywordSruMonDebugSequenceTrace KeywordSruMonDebugSequenceErrorTrace	SruMonDebugSequenceTrace	Verbose		
+Microsoft-Windows-SruMon	2007	0	SruMonDebugSequenceTrace2007(UnicodeString _FunctionName)		KeywordSruMonDebugSequenceTrace KeywordSruMonDebugSequenceErrorTrace	SruMonDebugSequenceTrace	Verbose		
+Microsoft-Windows-SruMon	2008	0	SruMonDebugSequenceTrace2008(UnicodeString _Status)		KeywordSruMonDebugSequenceTrace KeywordSruMonDebugSequenceErrorTrace	SruMonDebugSequenceTrace	Verbose		
+Microsoft-Windows-SruMon	2009	0	SruMonDebugSequenceErrorTrace(UnicodeString _Reset)		KeywordSruMonDebugSequenceErrorTrace KeywordSruMonDebugDBResetTrace KeywordSruMonNWAggregationTrace	SruMonDebugSequenceErrorTrace	Error		
+Microsoft-Windows-SruMon	2010	0	SruMonNWAggregationTrace(UnicodeString _FunctionName, UnicodeString _ApplicationName, UInt64 _InterfaceLuid, Boolean _Costed, UInt64 _BytesSent, UInt64 _BytesReceived)		KeywordSruMonNWAggregationTrace	SruMonNWAggregationTrace	Verbose		
+Microsoft-Windows-SruMon	2011	0	SruMonNWAggregationTrace2011(UnicodeString _FunctionName)		KeywordSruMonNWAggregationTrace	SruMonNWAggregationTrace	Verbose		
+Microsoft-Windows-SruMon	2012	0	SruMonNWAggregationTrace2012(GUID _InterfaceGuid, UInt64 _InterfaceLuid, UnicodeString _Application, UInt64 _ProfileId, UInt64 _ProfileFlags, UInt64 _BytesSent, UInt64 _BytesReceived)		KeywordSruMonNWAggregationTrace keyword_200000000000	SruMonNWAggregationTrace	Verbose		

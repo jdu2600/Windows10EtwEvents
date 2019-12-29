@@ -1,0 +1,9 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-WinMDE	1	0	HTTPListenerStart(Pointer Object)	Start		HTTPListener	Informational		
+Microsoft-Windows-WinMDE	2	0	HTTPListenerStop(Pointer Object)	Stop		HTTPListener	Informational		
+Microsoft-Windows-WinMDE	3	0	HTTPListener(Pointer Object)			HTTPListener	Informational		
+Microsoft-Windows-WinMDE	4	0	HTTPListener4(Pointer Object, UInt32 Value)			HTTPListener	Informational		
+Microsoft-Windows-WinMDE	5	0	NetStreamSink_SampleRequests(Pointer Object, UInt32 Value)			NetStreamSink_SampleRequests	Verbose		
+Microsoft-Windows-WinMDE	6	0	RtspSink_SetWorkQueueTask(Pointer Object, UInt32 StreamIndex, UInt32 WorkQueueID)			RtspSink_SetWorkQueueTask	Verbose		
+Microsoft-Windows-WinMDE	7	0	RtspSink_ProcessSampleTaskStart(Pointer Object)	Start		RtspSink_ProcessSampleTask	Verbose		
+Microsoft-Windows-WinMDE	8	0	RtspSink_ProcessSampleTaskStop(Pointer Object)	Stop		RtspSink_ProcessSampleTask	Verbose		

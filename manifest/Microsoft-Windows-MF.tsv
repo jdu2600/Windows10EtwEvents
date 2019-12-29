@@ -39,6 +39,18 @@ Microsoft-Windows-MF	1002	0	MediaFoundationLoadTopology(UnicodeString CLSID, Hex
 Microsoft-Windows-MF	1003	0	MediaFoundationFallBackToDefaultD3DFmt(UInt32 D3DFmt)			MediaFoundationFallBackToDefaultD3DFmt	Informational		
 Microsoft-Windows-MF	1004	0	Destinationrectchanged(UInt32 left, UInt32 top, UInt32 right, UInt32 bottom)			Destinationrectchanged	Informational		
 Microsoft-Windows-MF	1005	0	Sourcerectchanged(UInt32 left, UInt32 top, UInt32 right, UInt32 bottom)			Sourcerectchanged	Informational		
+Microsoft-Windows-MF	1006	0	MediaFoundationDispatchDelayedEventsStart(Pointer Bitpump, UInt32 Count)	Start		MediaFoundationDispatchDelayedEvents	Verbose		
+Microsoft-Windows-MF	1007	0	MediaFoundationDispatchDelayedEventsStop(Pointer QueuePtr)	Stop		MediaFoundationDispatchDelayedEvents	Verbose		
+Microsoft-Windows-MF	1008	0	MediaFoundationHandleStreamEventStart(Pointer Bitpump, UInt32 Type)	Start		MediaFoundationHandleStreamEvent	Verbose		
+Microsoft-Windows-MF	1009	0	MediaFoundationHandleStreamEventStop(Pointer Bitpump, UInt32 Type, UInt32 hr)	Stop		MediaFoundationHandleStreamEvent	Verbose		
+Microsoft-Windows-MF	1010	0	MediaFoundationHandleMFTEventStart(Pointer MFT, UInt32 Type)	Start		MediaFoundationHandleMFTEvent	Verbose		
+Microsoft-Windows-MF	1011	0	MediaFoundationHandleMFTEventStop(Pointer MFT, UInt32 Type, UInt32 hr)	Stop		MediaFoundationHandleMFTEvent	Verbose		
+Microsoft-Windows-MF	1012	0	MediaFoundationMediaProcStreamRequestSampleStart(Pointer MP, UInt32 Node, UInt32 SampleCount)	Start		MediaFoundationMediaProcStreamRequestSample	Verbose		
+Microsoft-Windows-MF	1013	0	MediaFoundationMediaProcStreamRequestSampleStop(Pointer MFT, UInt32 Node, UInt32 hr)	Stop		MediaFoundationMediaProcStreamRequestSample	Verbose		
+Microsoft-Windows-MF	1014	0	MediaFoundationHandleSinkEventStart(Pointer Bitpump, UInt32 Type)	Start		MediaFoundationHandleSinkEvent	Verbose		
+Microsoft-Windows-MF	1015	0	MediaFoundationHandleSinkEventStop(Pointer Bitpump, UInt32 Type, UInt32 hr)	Stop		MediaFoundationHandleSinkEvent	Verbose		
+Microsoft-Windows-MF	1016	0	MediaFoundationPathLockStart(Pointer PathLock)	Start		MediaFoundationPathLock	Verbose		
+Microsoft-Windows-MF	1017	0	MediaFoundationPathLockStop(Pointer PathLock)	Stop		MediaFoundationPathLock	Verbose		
 Microsoft-Windows-MF	1098	0	MediaFoundationOPMPoll(GUID fromtype)			MediaFoundationOPMPoll	Verbose		
 Microsoft-Windows-MF	1099	0	MediaFoundationOPMPoll_1099(Boolean exitPolling)			MediaFoundationOPMPoll_1099	Verbose		
 Microsoft-Windows-MF	1100	0	MediaFoundationIMFInputTrustAuthority_RequestAccess(UInt32 stream, UInt32 action, Boolean enablerReturned, HexInt32 hr)			MediaFoundationIMFInputTrustAuthority_RequestAccess	Verbose		
@@ -79,6 +91,8 @@ Microsoft-Windows-MF	1135	0	MediaFoundationAsyncWrapperStart(Pointer ObjectPtr, 
 Microsoft-Windows-MF	1136	0	MediaFoundationAsyncWrapperStop(Pointer ObjectPtr, Pointer MFTPtr)	Stop		MediaFoundationAsyncWrapper	Verbose		
 Microsoft-Windows-MF	1137	0	MediaFoundationAsyncWrapperDeadlineStart(Pointer WrapperPtr, UInt32 WorkQueueID, UInt64 DeadlineHNS)	Start		MediaFoundationAsyncWrapperDeadline	Verbose		
 Microsoft-Windows-MF	1138	0	MediaFoundationAsyncWrapperDeadlineStop(Pointer WrapperPtr, UInt32 WorkQueueID)	Stop		MediaFoundationAsyncWrapperDeadline	Verbose		
+Microsoft-Windows-MF	1139	0	MediaFoundationAsyncWrapperLoopRunningStart(Pointer WrapperPtr)	Start		MediaFoundationAsyncWrapperLoopRunning	Verbose		
+Microsoft-Windows-MF	1140	0	MediaFoundationAsyncWrapperLoopRunningStop(Pointer WrapperPtr)	Stop		MediaFoundationAsyncWrapperLoopRunning	Verbose		
 Microsoft-Windows-MF	1150	0	MediaFoundationVideoFrameConstrict(UInt64 bandwidthInPixels)			MediaFoundationVideoFrameConstrict	Verbose		
 Microsoft-Windows-MF	1151	0	MediaFoundationOPMFail(HexInt32 hr)			MediaFoundationOPMFail	Error		
 Microsoft-Windows-MF	1200	0	task_01200(UInt32 ComponentType, UInt32 SettingType, Int32 Result)			task_0	Informational		
@@ -113,3 +127,15 @@ Microsoft-Windows-MF	1313	0	SrcStreamNeedMoreSamples(Pointer Object, Int32 UseSa
 Microsoft-Windows-MF	1314	0	SrcPrefetchTimeoutStart(Pointer Object)	Start		SrcPrefetchTimeout	Verbose		
 Microsoft-Windows-MF	1315	0	SrcPrefetchTimeoutStop(Pointer Object)	Stop		SrcPrefetchTimeout	Verbose		
 Microsoft-Windows-MF	1316	0	SrcPrefetchTimeout(Pointer Object)			SrcPrefetchTimeout	Verbose		
+Microsoft-Windows-MF	1317	0	SrcStreamRequestSampleTimeoutStart(Pointer Object, Pointer Token)	Start		SrcStreamRequestSampleTimeout	Verbose		
+Microsoft-Windows-MF	1318	0	SrcStreamRequestSampleTimeoutStop(Pointer Object, Pointer Token)	Stop		SrcStreamRequestSampleTimeout	Verbose		
+Microsoft-Windows-MF	1417	0	MediaFoundationDeviceMFTInitializationStart(UnicodeString SymLink)	Start		MediaFoundationDeviceMFTInitialization	Informational		
+Microsoft-Windows-MF	1418	0	MediaFoundationDeviceMFTInitializationStart1418(HexInt32 hr)	Start		MediaFoundationDeviceMFTInitialization	Informational		
+Microsoft-Windows-MF	1419	0	MediaFoundationDeviceMFTSetOutputTypeInitializationStart(UInt32 PinId, AnsiString MediaType, UInt32 PinState)	Start		MediaFoundationDeviceMFTSetOutputTypeInitialization	Informational		
+Microsoft-Windows-MF	1420	0	MediaFoundationDeviceMFTSetOutputTypeInitializationStop(HexInt32 hr)	Stop		MediaFoundationDeviceMFTSetOutputTypeInitialization	Informational		
+Microsoft-Windows-MF	1421	0	MediaFoundationDeviceMFTInputStreamStateChangedStart(UInt32 PinId, AnsiString MediaType, UInt32 PinState)	Start		MediaFoundationDeviceMFTInputStreamStateChanged	Informational		
+Microsoft-Windows-MF	1422	0	MediaFoundationDeviceMFTInputStreamStateChangedStop(HexInt32 hr)	Stop		MediaFoundationDeviceMFTInputStreamStateChanged	Informational		
+Microsoft-Windows-MF	1423	0	MediaFoundationDeviceMFTProcessOutput(Pointer Object, Int32 StreamID, Pointer Sample, Int64 Timestamp)			MediaFoundationDeviceMFTProcessOutput	Verbose		
+Microsoft-Windows-MF	1424	0	MediaFoundationDeviceMFTMErrorThrown(HexInt32 hr)			MediaFoundationDeviceMFTMErrorThrown	Informational		
+Microsoft-Windows-MF	1425	0	DeviceMFTMDeviceTransformSetOutputTypeStart(UInt32 PinId, AnsiString MediaType, UInt32 PinState)	Start		DeviceMFTMDeviceTransformSetOutputType	Informational		
+Microsoft-Windows-MF	1426	0	DeviceMFTMDeviceTransformSetOutputTypeStop(HexInt32 hr)	Stop		DeviceMFTMDeviceTransformSetOutputType	Informational		

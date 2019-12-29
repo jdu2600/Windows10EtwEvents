@@ -85,7 +85,7 @@ Microsoft-Windows-Time-Service	158	0	task_0158(UnicodeString TimeProvider)			tas
 Microsoft-Windows-Time-Service	159	0	task_0159(UnicodeString ErrorMessage)			task_0	Warning		
 Microsoft-Windows-Time-Service	257	0	task_0257(UnicodeString CurrentTimeUTC, UInt64 TickCount, UnicodeString Configuration, UnicodeString TimeProviders, UInt64 ClockRate)			task_0	Informational		
 Microsoft-Windows-Time-Service	258	0	task_0258(UnicodeString CurrentTimeUTC, UInt64 TickCount, UnicodeString ErrorMessage)			task_0	Informational		
-Microsoft-Windows-Time-Service	259	0	task_0259(UnicodeString AllNtpServers, UnicodeString ChosenReferenceNtpServer, UInt64 TickCount)			task_0	Informational		
+Microsoft-Windows-Time-Service	259	0	task_0259(UnicodeString AllNtpServers, UnicodeString ChosenReferenceNtpServer, UInt64 TickCount, UInt32 IFTSTMP)			task_0	Informational		
 Microsoft-Windows-Time-Service	260	0	task_0260(UnicodeString Configuration, UnicodeString TimeProviders, UInt64 LeapIndicator, UInt64 Stratum, UnicodeString Precision, UnicodeString RootDelay, UnicodeString RootDispersion, UnicodeString ReferenceId, UnicodeString LastSuccessfulSyncTime, UnicodeString Source, UInt64 PollInterval, UnicodeString PhaseOffset, UInt64 ClockRate, UInt64 StateMachine, UInt64 TimeSourceFlags, UInt64 ServerRole, UInt64 LastSyncError, UnicodeString TimeSinceLastGoodSync, UInt64 TickCount)			task_0	Informational		
 Microsoft-Windows-Time-Service	261	0	task_0261(UnicodeString NewTime, UnicodeString OldTime, UInt64 TickCount)			task_0	Informational		
 Microsoft-Windows-Time-Service	262	0	task_0262(UnicodeString AdjustmentPPM, UInt64 NewClockRate, UInt64 OldClockRate, UInt64 TickCount, UnicodeString MinReportedAdjustmentPPM)			task_0	Informational		
@@ -93,3 +93,10 @@ Microsoft-Windows-Time-Service	263	0	task_0263(UnicodeString Configuration, Unic
 Microsoft-Windows-Time-Service	264	0	task_0264(UnicodeString AllNtpServers, UInt64 TickCount)			task_0	Informational		
 Microsoft-Windows-Time-Service	265	0	task_0265(UnicodeString TimeSource, UnicodeString TimeSourceRefId, UInt32 LocalStratumNumber, UInt64 TickCount)			task_0	Informational		
 Microsoft-Windows-Time-Service	266	0	task_0266(UInt64 ReasonCode, UInt64 TickCount)			task_0	Informational		
+Microsoft-Windows-Time-Service	272	0	task_0272(UInt32 Enabled, UInt32 LeapSecondCount, Int32 CurrentUtcOffset, UInt32 RuntimeStateAndSettingsConsistent, UnicodeString NewestLeapSecondsList, UInt64 TickCount)			task_0	Informational		
+Microsoft-Windows-Time-Service	273	0	task_0273(UnicodeString Action, UnicodeString UtcTime, UnicodeString LocalTime, UnicodeString TimeProvider, UInt64 TickCount)			task_0	Informational		
+Microsoft-Windows-Time-Service	274	0	task_0274(UnicodeString Action, UnicodeString UtcTime, UnicodeString LocalTime, UnicodeString TimeProvider, UInt64 TickCount)			task_0	Warning		
+Microsoft-Windows-Time-Service	275	0	task_0275(UnicodeString UtcLeapSecondString, UnicodeString ErrorMessage, UInt64 TickCount)			task_0	Warning		
+Microsoft-Windows-Time-Service	276	0	task_0276(UnicodeString Action, UnicodeString UtcTime, UnicodeString LocalTime, UnicodeString TimeProvider, UInt64 TickCount)			task_0	Warning		
+Microsoft-Windows-Time-Service	279	0	task_0279(UInt64 TickCount)			task_0	Warning		
+Microsoft-Windows-Time-Service	280	0	task_0280(UInt32 RpcEndPointError)			task_0	Warning		

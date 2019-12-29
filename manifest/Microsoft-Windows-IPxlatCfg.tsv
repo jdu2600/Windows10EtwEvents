@@ -1,0 +1,14 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-IPxlatCfg	1001	0	task_0(AnsiString ErrorString, UInt32 ErrorCode)			task_0	Error		
+Microsoft-Windows-IPxlatCfg	1002	0	task_01002(AnsiString ErrorString, UInt32 ErrorCode, UInt64 InterfaceLuid)			task_0	Error		
+Microsoft-Windows-IPxlatCfg	1003	0	task_01003(AnsiString InfoString)			task_0	Informational		
+Microsoft-Windows-IPxlatCfg	1005	0	task_01005(UInt32 IPv4Address, UInt32 IPv4Prefix)			task_0	Informational		
+Microsoft-Windows-IPxlatCfg	1006	0	task_01006(AnsiString InfoString, UInt64 InterfaceLuid)			task_0	Informational		
+Microsoft-Windows-IPxlatCfg	1007	0	task_01007(UInt64 InterfaceLuid, Binary Prefix, UInt32 PrefixLength)			task_0	Informational		
+Microsoft-Windows-IPxlatCfg	1008	0	task_01008(UInt64 InterfaceLuid, UInt32 IPv4Address)			task_0	Informational		
+Microsoft-Windows-IPxlatCfg	1009	0	task_01009(UInt64 InterfaceLuid, Binary IPv6Address)			task_0	Informational		
+Microsoft-Windows-IPxlatCfg	1010	0	task_01010(UInt64 InterfaceLuid)			task_0	Informational		
+Microsoft-Windows-IPxlatCfg	1011	0	task_01011(AnsiString InfoString, UInt32 MTU)			task_0	Informational		
+Microsoft-Windows-IPxlatCfg	1101	0	task_0Start(UInt64 InterfaceLuid, UInt32 Metric, Binary RemotePrefix, UInt32 RemotePrefixLength, Binary LocalPrefix, UInt32 LocalPrefixLength)	Start		task_0	Informational		
+Microsoft-Windows-IPxlatCfg	1102	0	task_0Stop(UInt64 InterfaceLuid, UInt32 Metric, Binary RemotePrefix, UInt32 RemotePrefixLength, Binary LocalPrefix, UInt32 LocalPrefixLength)	Stop		task_0	Informational		
+Microsoft-Windows-IPxlatCfg	1103	0	task_01103(UInt64 InterfaceLuid, Binary Prefix, UInt32 PrefixLength)			task_0	Informational		

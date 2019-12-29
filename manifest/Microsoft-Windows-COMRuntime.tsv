@@ -1,10 +1,10 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
 Microsoft-Windows-COMRuntime	1	0	CliModalLoopDelay(UInt32 Flags, UInt32 BlockTimeMs, UInt32 TotalTimeMs)		CliModalLoop	CliModalLoopDelay	Informational		
 Microsoft-Windows-COMRuntime	2	0	ComCallDelay(UInt32 Flags, UInt32 CallTimeMs, UInt32 CallResult, UInt32 TargetThreadId, UInt32 TargetProcessId, UInt32 TargetMethod, GUID TargetInterface)		ComCallWaitAnalysis	ComCallDelay	Informational		
-Microsoft-Windows-COMRuntime	3	0	DropKeyboardMessage(UInt32 ApartmentKind)		DropInputMessage	DropKeyboardMessage	Informational		
-Microsoft-Windows-COMRuntime	4	0	DropMouseMessage(UInt32 ApartmentKind)		DropInputMessage	DropMouseMessage	Informational		
-Microsoft-Windows-COMRuntime	5	0	DropQueueSyncMessage(UInt32 ApartmentKind)		DropInputMessage	DropQueueSyncMessage	Informational		
-Microsoft-Windows-COMRuntime	6	0	DropPointerMessage(UInt32 ApartmentKind, UInt32 Message)		DropInputMessage	DropPointerMessage	Informational		
+Microsoft-Windows-COMRuntime	3	0	DropKeyboardMessage(UInt32 ApartmentType)		DropInputMessage	DropKeyboardMessage	Informational		
+Microsoft-Windows-COMRuntime	4	0	DropMouseMessage(UInt32 ApartmentType)		DropInputMessage	DropMouseMessage	Informational		
+Microsoft-Windows-COMRuntime	5	0	DropQueueSyncMessage(UInt32 ApartmentType)		DropInputMessage	DropQueueSyncMessage	Informational		
+Microsoft-Windows-COMRuntime	6	0	DropPointerMessage(UInt32 ApartmentType, UInt32 Message)		DropInputMessage	DropPointerMessage	Informational		
 Microsoft-Windows-COMRuntime	7	0	PrematureStubRundown(GUID IID, UInt32 Method, GUID IPID, UInt32 CallType)		PrematureStubRundown	PrematureStubRundown	Informational		
 Microsoft-Windows-COMRuntime	18205	0	task_0(UnicodeString param1, UnicodeString param2, UnicodeString param3)			task_0	Error		
 Microsoft-Windows-COMRuntime	18207	0	task_018207(UnicodeString param1, UnicodeString param2, UnicodeString param3, UnicodeString param4, UnicodeString param5, UnicodeString param6, UnicodeString param7, UnicodeString param8, UnicodeString param9, UnicodeString param10)			task_0	Error		

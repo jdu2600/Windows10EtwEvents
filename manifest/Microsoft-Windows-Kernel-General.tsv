@@ -1,6 +1,7 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
 Microsoft-Windows-Kernel-General	1	0	task_0(FILETIME NewTime, FILETIME OldTime)		KERNEL_GENERAL_KEYWORD_TIME	task_0	Informational		
 Microsoft-Windows-Kernel-General	1	1	SystemTimeChange_V1(FILETIME NewTime, FILETIME OldTime, UInt32 Reason)		KERNEL_GENERAL_KEYWORD_TIME	SystemTimeChange	Informational		
+Microsoft-Windows-Kernel-General	1	2	SystemTimeChange_V2(FILETIME NewTime, FILETIME OldTime, UInt32 Reason, UnicodeString ProcessName, UInt32 ProcessID)		KERNEL_GENERAL_KEYWORD_TIME	SystemTimeChange	Informational		
 Microsoft-Windows-Kernel-General	2	0	task_02()			task_0	Informational		
 Microsoft-Windows-Kernel-General	3	0	task_03()			task_0	Informational		
 Microsoft-Windows-Kernel-General	4	0	task_04()			task_0	Informational		
@@ -15,3 +16,6 @@ Microsoft-Windows-Kernel-General	16	0	task_016(UInt16 HiveNameLength, UnicodeStr
 Microsoft-Windows-Kernel-General	17	0	task_017(UnicodeString ActionName, UnicodeString ProcessName, UnicodeString AccountName, UnicodeString AuthorityName, HexInt64 TokenId, HexInt64 AuthenticationId, UInt32 TokenType, UInt32 ImpersonationLevel, HexInt32 TokenFlags, Int64 SidValuesReferenceCount, UInt32 SidValuesCount, GUID SidValues, Int64 SharedSidValuesReferenceCount, UInt32 SharedSidValuesCount, Pointer SharedSidValues)		KERNEL_GENERAL_TOKEN_SID_MANAGEMENT	task_0	Informational		
 Microsoft-Windows-Kernel-General	18	0	SoftBootInfo(FILETIME TransitionStartTime, FILETIME CurrentTime, UInt32 SoftRestartCount)		BootPerformance	SoftBootInfo	Informational		
 Microsoft-Windows-Kernel-General	19	0	BootPerformanceData(UInt64 MmPhase0Start, UInt64 MmPhase0Stop, UInt64 Phase1Start, UInt64 KsrExtensionStart, UInt64 KsrExtensionStop, UInt64 StartProcessorsStart, UInt64 StartProcessorsStop)		BootPerformance	BootPerformanceData	Informational		
+Microsoft-Windows-Kernel-General	19	1	BootPerformanceData_V1(UInt64 MmPhase0Start, UInt64 MmPhase0Stop, UInt64 Phase1Start, UInt64 KsrExtensionStart, UInt64 KsrExtensionStop, UInt64 StartProcessorsStart, UInt64 StartProcessorsStop, UInt64 AutoLoggerInitStart, UInt64 AutoLoggerInitStop)		BootPerformance	BootPerformanceData	Informational		
+Microsoft-Windows-Kernel-General	20	0	LeapSecondDataUpdate(UInt32 UpdateReason, Boolean EnabledNew, UInt32 CountNew, UInt32 CountOld)		KERNEL_GENERAL_KEYWORD_TIME	LeapSecondDataUpdate	Informational		
+Microsoft-Windows-Kernel-General	21	0	LeapSecondDataParseFailure(UInt32 FailureResult)		KERNEL_GENERAL_KEYWORD_TIME	LeapSecondDataParseFailure	Warning		

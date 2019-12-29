@@ -1,7 +1,7 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
 Microsoft-Windows-AssignedAccessBroker	30000	0	ActivateAssignedAccessApplication(UnicodeString AboveLockAppAUMID, UnicodeString InterfaceType, HexInt32 HResult)			ActivateAssignedAccessApplication	Informational		
 Microsoft-Windows-AssignedAccessBroker	30002	0	WaitForAssignedAccessApplicationToDie()			WaitForAssignedAccessApplicationToDie	Informational		
-Microsoft-Windows-AssignedAccessBroker	30003	0	WaitForAssignedAccessApplicationToDie30003()			WaitForAssignedAccessApplicationToDie	Informational		
+Microsoft-Windows-AssignedAccessBroker	30003	0	WaitForAssignedAccessApplicationToDie30003(Boolean Result)			WaitForAssignedAccessApplicationToDie	Informational		
 Microsoft-Windows-AssignedAccessBroker	30004	0	CustomTask(UnicodeString CustomMessage, HexInt32 HResult, Pointer Address)			CustomTask	Informational		
 Microsoft-Windows-AssignedAccessBroker	30005	0	LockFrameworkQueryTask(UnicodeString Interface, HexInt32 HResult)			LockFrameworkQueryTask	Error		
 Microsoft-Windows-AssignedAccessBroker	30006	0	UnlockTask()			UnlockTask	Informational		
@@ -9,3 +9,5 @@ Microsoft-Windows-AssignedAccessBroker	30007	0	LockAppPidTask(UnicodeString Inte
 Microsoft-Windows-AssignedAccessBroker	30008	0	AbovelockToastTask(UnicodeString Operation, HexInt32 HResult)			AbovelockToastTask	Informational		
 Microsoft-Windows-AssignedAccessBroker	30009	0	SetPowerManagerStatusTask(Boolean RequestAction, HexInt32 HResult)			SetPowerManagerStatusTask	Informational		
 Microsoft-Windows-AssignedAccessBroker	30010	0	ClosePowerRequestHandleTask(Boolean Result)			ClosePowerRequestHandleTask	Informational		
+Microsoft-Windows-AssignedAccessBroker	30011	0	ReportUnresponsiveAssignedAccessApplication()			ReportUnresponsiveAssignedAccessApplication	Error		
+Microsoft-Windows-AssignedAccessBroker	30012	0	AppSpecificSettingsTask()			AppSpecificSettingsTask	Informational		

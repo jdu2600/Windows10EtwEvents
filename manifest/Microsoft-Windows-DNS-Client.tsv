@@ -17,21 +17,21 @@ Microsoft-Windows-DNS-Client	1016	0	DnsNameError(UnicodeString QueryName, UInt32
 Microsoft-Windows-DNS-Client	1017	0	DnsAuthoritativeResponse(UnicodeString QueryName, UInt32 AddressLength, Binary Address)			DnsAuthoritativeResponse	Informational		
 Microsoft-Windows-DNS-Client	1018	0	DnsLinkLocal(UnicodeString QueryName, UInt32 AddressLength, Binary Address, UInt32 DnsAddressLength, Binary DnsAddress)			DnsLinkLocal	Informational		
 Microsoft-Windows-DNS-Client	1019	0	DnsNoServerConfigV6(UInt32 Location, UInt32 Context)			DnsNoServerConfigV6	Informational		
-Microsoft-Windows-DNS-Client	1020	0	DnsReadPolicyTable(UnicodeString KeyName, UInt32 DnsSecValidationRequired, UInt32 DnsQueryOverIPSec, UInt32 DnsEncryption, UnicodeString DirectAccessServerList, UInt32 RemoteIPSEC, UInt32 RemoteEncryption, UInt32 ProxyType, UnicodeString ProxyName)		keyword_200000000000	DnsReadPolicyTable	Informational		
-Microsoft-Windows-DNS-Client	1021	0	DnsMatchPolicyInfo(UnicodeString QueryName, UnicodeString KeyName, UInt32 DnsSecValidationRequired, UInt32 DnsQueryOverIPSec, UInt32 DnsEncryption, UnicodeString DirectAccessServerList, UInt32 ProxyType, UnicodeString ProxyName)		keyword_200000000000	DnsMatchPolicyInfo	Informational		
-Microsoft-Windows-DNS-Client	1022	0	DnsSecureNoFallback(UnicodeString QueryName)		keyword_200000000000	DnsSecureNoFallback	Informational		
+Microsoft-Windows-DNS-Client	1020	0	DnsReadPolicyTable(UnicodeString KeyName, UInt32 DnsSecValidationRequired, UInt32 DnsQueryOverIPSec, UInt32 DnsEncryption, UnicodeString DirectAccessServerList, UInt32 RemoteIPSEC, UInt32 RemoteEncryption, UInt32 ProxyType, UnicodeString ProxyName)		ut:PolicyTable	DnsReadPolicyTable	Informational		
+Microsoft-Windows-DNS-Client	1021	0	DnsMatchPolicyInfo(UnicodeString QueryName, UnicodeString KeyName, UInt32 DnsSecValidationRequired, UInt32 DnsQueryOverIPSec, UInt32 DnsEncryption, UnicodeString DirectAccessServerList, UInt32 ProxyType, UnicodeString ProxyName)		ut:PolicyTable	DnsMatchPolicyInfo	Informational		
+Microsoft-Windows-DNS-Client	1022	0	DnsSecureNoFallback(UnicodeString QueryName)		ut:PolicyTable	DnsSecureNoFallback	Informational		
 Microsoft-Windows-DNS-Client	1023	0	DnsPolicySystemReadError(UnicodeString RuleName, UInt32 ErrorCode)		ut:DnsAutoLogKeyword	DnsPolicySystemReadError	Error		
 Microsoft-Windows-DNS-Client	1024	0	DnsQueryBadXid(UnicodeString QueryName, UInt32 AddressLength, Binary Address)			DnsQueryBadXid	Informational		
 Microsoft-Windows-DNS-Client	1025	0	DnsQueryInvalidServerIp(UnicodeString QueryName, UInt32 AddressLength, Binary Address)			DnsQueryInvalidServerIp	Informational		
 Microsoft-Windows-DNS-Client	1026	0	DnsQueryInvalidQuestion(UnicodeString QueryName, UnicodeString ResponseQuestion, UInt32 AddressLength, Binary Address)			DnsQueryInvalidQuestion	Informational		
-Microsoft-Windows-DNS-Client	1027	0	task_0(UnicodeString QueryName)		keyword_200000000000	task_0	Informational		
-Microsoft-Windows-DNS-Client	1028	0	DnsMatchPolicyInfo1028(UnicodeString QueryName, UnicodeString KeyName, UInt32 DnsSecValidationRequired, UInt32 DnsQueryOverIPSec, UInt32 DnsEncryption, UnicodeString DirectAccessServerList, UInt32 ProxyType, UnicodeString ProxyName, UnicodeString GenericServerList, UInt32 IdnConfig)		keyword_200000000000	DnsMatchPolicyInfo	Informational		
-Microsoft-Windows-DNS-Client	3000	0	task_03000(UnicodeString QueryName, UInt32 QueryType, UInt64 QueryOptions)		keyword_400000000000	task_0	Informational		
-Microsoft-Windows-DNS-Client	3001	0	task_03001(UInt32 Status)		keyword_400000000000	task_0	Informational		
-Microsoft-Windows-DNS-Client	3002	0	task_03002(UnicodeString QueryName, UInt32 QueryType, UInt64 QueryOptions)		keyword_400000000000	task_0	Informational		
-Microsoft-Windows-DNS-Client	3003	0	task_03003(UnicodeString QueryName, UInt32 QueryType, UInt32 Status)		keyword_400000000000	task_0	Informational		
-Microsoft-Windows-DNS-Client	3004	0	task_03004(UnicodeString QueryName, UInt32 QueryType, UInt64 QueryOptions)		keyword_400000000000	task_0	Informational		
-Microsoft-Windows-DNS-Client	3005	0	task_03005(UnicodeString QueryName, UInt32 QueryType, UInt32 Status)		keyword_400000000000	task_0	Informational		
+Microsoft-Windows-DNS-Client	1027	0	task_0(UnicodeString QueryName)		ut:PolicyTable	task_0	Informational		
+Microsoft-Windows-DNS-Client	1028	0	DnsMatchPolicyInfo1028(UnicodeString QueryName, UnicodeString KeyName, UInt32 DnsSecValidationRequired, UInt32 DnsQueryOverIPSec, UInt32 DnsEncryption, UnicodeString DirectAccessServerList, UInt32 ProxyType, UnicodeString ProxyName, UnicodeString GenericServerList, UInt32 IdnConfig)		ut:PolicyTable	DnsMatchPolicyInfo	Informational		
+Microsoft-Windows-DNS-Client	3000	0	task_03000(UnicodeString QueryName, UInt32 QueryType, UInt64 QueryOptions)		ut:PerfCheckPoints	task_0	Informational		
+Microsoft-Windows-DNS-Client	3001	0	task_03001(UInt32 Status)		ut:PerfCheckPoints	task_0	Informational		
+Microsoft-Windows-DNS-Client	3002	0	task_03002(UnicodeString QueryName, UInt32 QueryType, UInt64 QueryOptions)		ut:PerfCheckPoints	task_0	Informational		
+Microsoft-Windows-DNS-Client	3003	0	task_03003(UnicodeString QueryName, UInt32 QueryType, UInt32 Status)		ut:PerfCheckPoints	task_0	Informational		
+Microsoft-Windows-DNS-Client	3004	0	task_03004(UnicodeString QueryName, UInt32 QueryType, UInt64 QueryOptions)		ut:PerfCheckPoints	task_0	Informational		
+Microsoft-Windows-DNS-Client	3005	0	task_03005(UnicodeString QueryName, UInt32 QueryType, UInt32 Status)		ut:PerfCheckPoints	task_0	Informational		
 Microsoft-Windows-DNS-Client	3006	0	task_03006(UnicodeString QueryName, UInt32 QueryType, UInt64 QueryOptions, UnicodeString ServerList, UInt32 IsNetworkQuery, UInt32 NetworkQueryIndex, UInt32 InterfaceIndex, UInt32 IsAsyncQuery)			task_0	Informational		
 Microsoft-Windows-DNS-Client	3007	0	task_03007(UnicodeString QueryName)			task_0	Informational		
 Microsoft-Windows-DNS-Client	3008	0	task_03008(UnicodeString QueryName, UInt32 QueryType, UInt64 QueryOptions, UInt32 QueryStatus, UnicodeString QueryResults)			task_0	Informational		

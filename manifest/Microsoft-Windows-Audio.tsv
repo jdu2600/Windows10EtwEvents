@@ -92,3 +92,8 @@ Microsoft-Windows-Audio	132	0	StreamCreationConnectedStreamGrouptoSaDevice()	Con
 Microsoft-Windows-Audio	133	0	CreateDeviceEndpointInstancetaskStart(UnicodeString EndpointId, UInt32 ConnectorType)	Start		CreateDeviceEndpointInstancetask	Informational		
 Microsoft-Windows-Audio	134	0	CreateDeviceEndpointInstancetaskStop()	Stop		CreateDeviceEndpointInstancetask	Informational		
 Microsoft-Windows-Audio	135	0	Pump:CorrectPosition(Pointer PumpInstance, UInt64 SampleIndex, UInt64 OrigProcessingStart, UInt64 NewProcessingStart, Int64 StartCorrection, UInt64 TimeDelta, UInt32 SampleDelta, UInt64 DevicePeriod, UInt64 ActualDevicePeriod, UInt64 WindowWidth_ms)			Pump:CorrectPosition	Verbose		
+Microsoft-Windows-Audio	136	0	Pump:YieldStart(Pointer PumpInstance, UInt32 uEventMask)	Start		Pump:Yield	Verbose		
+Microsoft-Windows-Audio	137	0	Pump:YieldStop(Pointer PumpInstance, UInt32 WakeCategory, UInt32 WakeValue)	Stop		Pump:Yield	Verbose		
+Microsoft-Windows-Audio	138	0	Pump:ProcessStart(Pointer PumpInstance, UInt32 Phase)	Start		Pump:Process	Verbose		
+Microsoft-Windows-Audio	139	0	Pump:ProcessStop(Pointer PumpInstance)	Stop		Pump:Process	Verbose		
+Microsoft-Windows-Audio	140	0	Pump:ProcPassDuration(Pointer PumpInstance, Int64 WorkDuration, Int64 MaxWorkDuration)			Pump:ProcPassDuration	Verbose		

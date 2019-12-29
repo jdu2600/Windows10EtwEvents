@@ -19,8 +19,8 @@ Microsoft-Windows-DirectManipulation	43	0	Manipulation_DManipTrigger(UInt32 DMan
 Microsoft-Windows-DirectManipulation	44	0	Manipulation_UpdateTransform(Pointer ContentPointer, Int32 TransformType, Float xPosition, Float yPosition, Float zPosition, UInt64 PredictedTimeGap)			Manipulation_UpdateTransform	Informational		
 Microsoft-Windows-DirectManipulation	45	0	Manipulation_ViewportAbandonStart(Pointer ViewportPointer)	Start		Manipulation_ViewportAbandon	Informational		
 Microsoft-Windows-DirectManipulation	46	0	Manipulation_ViewportAbandonStop(Pointer ViewportPointer)	Stop		Manipulation_ViewportAbandon	Informational		
-Microsoft-Windows-DirectManipulation	47	0	Manipulation_DCompCompositorOnViewportStatusChangedStart(Pointer CompositorPointer, Pointer ViewportPointer)	Start		Manipulation_DCompCompositorOnViewportStatusChanged	Informational		
-Microsoft-Windows-DirectManipulation	48	0	Manipulation_DCompCompositorOnViewportStatusChangedStop(Pointer CompositorPointer, Pointer ViewportPointer)	Stop		Manipulation_DCompCompositorOnViewportStatusChanged	Informational		
+Microsoft-Windows-DirectManipulation	47	0	Manipulation_DCompCompositorOnViewportStatusChangedStart(Pointer CompositorPointer, Pointer ViewportPointer, Int32 CurrentStatus, Int32 PreviousStatus)	Start		Manipulation_DCompCompositorOnViewportStatusChanged	Informational		
+Microsoft-Windows-DirectManipulation	48	0	Manipulation_DCompCompositorOnViewportStatusChangedStop(Pointer CompositorPointer, Pointer ViewportPointer, Int32 CurrentStatus, Int32 PreviousStatus)	Stop		Manipulation_DCompCompositorOnViewportStatusChanged	Informational		
 Microsoft-Windows-DirectManipulation	49	0	Manipulation_DCompCompositorOnViewportUpdatedStart(Pointer CompositorPointer, Pointer ViewportPointer)	Start		Manipulation_DCompCompositorOnViewportUpdated	Informational		
 Microsoft-Windows-DirectManipulation	50	0	Manipulation_DCompCompositorOnViewportUpdatedStop(Pointer CompositorPointer, Pointer ViewportPointer)	Stop		Manipulation_DCompCompositorOnViewportUpdated	Informational		
 Microsoft-Windows-DirectManipulation	51	0	Manipulation_DCompCompositorOnContentUpdatedStart(Pointer CompositorPointer, Pointer ContentPointer)	Start		Manipulation_DCompCompositorOnContentUpdated	Informational		
@@ -61,3 +61,5 @@ Microsoft-Windows-DirectManipulation	85	0	Manipulation_TelemetryStart(UnicodeStr
 Microsoft-Windows-DirectManipulation	86	0	Manipulation_Telemetry86(UInt64 UniqueKey, UInt32 InputType, UInt16 NumTouchPoints, UInt32 ManipulationFrameId, UInt32 FrameId, UInt32 InteractionType, UInt64 QpcKernelInputStart, UInt64 QpcInteractionLibraryStart, UInt64 QpcInteractionLibraryStop, UInt16 ZoomToRectCalls, UInt32 CoalescedFrames)			Manipulation_Telemetry	Verbose		
 Microsoft-Windows-DirectManipulation	87	0	Manipulation_TelemetryStop(UInt64 UniqueKey)	Stop		Manipulation_Telemetry	Informational		
 Microsoft-Windows-DirectManipulation	88	0	Manipulation_Telemetry88(UInt64 InteractionLibraryStartTime)			Manipulation_Telemetry	Verbose		
+Microsoft-Windows-DirectManipulation	89	0	Manipulation_TurnOffInteraction(Pointer Viewport, Pointer Interaction)			Manipulation_TurnOffInteraction	Verbose		
+Microsoft-Windows-DirectManipulation	90	0	Manipulation_TurnOnInteraction(Pointer Viewport, Pointer Interaction)			Manipulation_TurnOnInteraction	Verbose		

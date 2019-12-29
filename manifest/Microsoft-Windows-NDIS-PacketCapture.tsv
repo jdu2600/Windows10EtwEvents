@@ -1,5 +1,5 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-NDIS-PacketCapture	1001	0	task_0(UInt32 MiniportIfIndex, UInt32 LowerIfIndex, UInt32 FragmentSize, Binary Fragment)		keyword_20000000000 keyword_40000000000	task_0	Informational		
+Microsoft-Windows-NDIS-PacketCapture	1001	0	task_0(UInt32 MiniportIfIndex, UInt32 LowerIfIndex, UInt32 FragmentSize, Binary Fragment, UInt64 GftFlowEntryId, UInt64 GftOffloadInformation)		keyword_20000000000 keyword_40000000000	task_0	Informational		
 Microsoft-Windows-NDIS-PacketCapture	1002	0	task_01002(UInt32 MiniportIfIndex, UInt32 LowerIfIndex, UInt32 MetadataSize, Binary Metadata)		keyword_40000000000	task_0	Informational		
 Microsoft-Windows-NDIS-PacketCapture	1003	0	task_01003(UInt32 MiniportIfIndex, UInt32 LowerIfIndex, UInt32 SourcePortId, UnicodeString SourcePortName, UnicodeString SourceNicName, UnicodeString SourceNicType, UInt32 DestinationCount, Double Destination, UInt32 FragmentSize, Binary Fragment, UInt32 OOBDataSize, Binary OOBData)		VMSwitch keyword_40000000000	task_0	Informational		
 Microsoft-Windows-NDIS-PacketCapture	1011	0	Rules(UInt32 RulesCount)		ut:Configuration ut:Global	Rules	Informational		

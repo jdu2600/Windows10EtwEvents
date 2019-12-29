@@ -42,9 +42,9 @@ Microsoft-Windows-User Device Registration	227	0	task_0227(UnicodeString Verb, U
 Microsoft-Windows-User Device Registration	228	0	task_0228(UInt32 NotificationFlags, UInt32 ErrorCode)			task_0	Error		
 Microsoft-Windows-User Device Registration	229	0	task_0229(UInt32 Flags, UnicodeString HeaderName, UInt32 ErrorCode)			task_0	Informational		
 Microsoft-Windows-User Device Registration	230	0	task_0230(UInt32 ErrorCode)			task_0	Error		
-Microsoft-Windows-User Device Registration	231	0	task_0231(UInt32 ErrorCode)			task_0	Informational		
-Microsoft-Windows-User Device Registration	232	0	task_0232(UInt32 StatusCode)			task_0	Informational		
-Microsoft-Windows-User Device Registration	233	0	task_0233(UInt32 StatusCode, UInt32 ErrorCode)			task_0	Error		
+Microsoft-Windows-User Device Registration	231	0	task_0231(UInt32 ErrorCode, UInt32 WinHttpStatus, UnicodeString WinHttpStatusFlag)			task_0	Error		
+Microsoft-Windows-User Device Registration	232	0	task_0232(UInt32 StatusCode, UnicodeString StatusName)			task_0	Informational		
+Microsoft-Windows-User Device Registration	233	0	task_0233(UInt32 StatusCode, Int32 ErrorCode, UnicodeString StatusName)			task_0	Error		
 Microsoft-Windows-User Device Registration	234	0	task_0234(UInt32 ErrorCode)			task_0	Error		
 Microsoft-Windows-User Device Registration	235	0	task_0235(UInt32 ErrorCode)			task_0	Error		
 Microsoft-Windows-User Device Registration	236	0	task_0236(UInt32 ErrorCode)			task_0	Error		
@@ -52,13 +52,19 @@ Microsoft-Windows-User Device Registration	237	0	task_0237(UInt32 ErrorCode)			t
 Microsoft-Windows-User Device Registration	238	0	task_0238(UInt32 ErrorCode)			task_0	Informational		
 Microsoft-Windows-User Device Registration	239	0	task_0239(Int32 ExitCode, Int32 JoinType, UnicodeString JoinTypeSymbolicName, UnicodeString TenantId, UnicodeString UPN)			task_0	Error		
 Microsoft-Windows-User Device Registration	240	0	task_0240(Int32 ExitCode, Int32 JoinRequestType, UnicodeString JoinRequestTypeSymbolicName)			task_0	Error		
-Microsoft-Windows-User Device Registration	241	0	task_0241(UnicodeString KspSessionID)			task_0	Error		
+Microsoft-Windows-User Device Registration	241	0	task_0241(UnicodeString KspSessionID)			task_0	Informational		
+Microsoft-Windows-User Device Registration	242	0	task_0242(UnicodeString Group, SID UserSID)			task_0	Informational		
+Microsoft-Windows-User Device Registration	243	0	task_0243(UnicodeString Group, SID UserSID)			task_0	Informational		
+Microsoft-Windows-User Device Registration	244	0	task_0244(Int32 ExitCode)			task_0	Error		
+Microsoft-Windows-User Device Registration	245	0	task_0245(Int32 ExitCode)			task_0	Error		
+Microsoft-Windows-User Device Registration	246	0	task_0246(UInt32 ErrorCode, UnicodeString SourceId, UnicodeString DefaultPath, Int32 LocationType, UnicodeString LocationTypeName)			task_0	Error		
+Microsoft-Windows-User Device Registration	247	0	task_0247(Int32 ExitCode)			task_0	Warning		
 Microsoft-Windows-User Device Registration	300	0	task_0300(GUID KeyId, UnicodeString UPN, UnicodeString Attestation, UnicodeString ClientRequestId, UnicodeString ServerRequestId, UnicodeString ServerResponse)			task_0	Informational		
 Microsoft-Windows-User Device Registration	301	0	task_0301(Int32 ExitCode, UnicodeString ClientRequestId, UnicodeString ServerRequestId, UnicodeString ErrorCode, UnicodeString ServerErrorMessage, UnicodeString RecommendedClientResponse, UnicodeString ServerResponse)			task_0	Error		
 Microsoft-Windows-User Device Registration	302	0	task_0302(UnicodeString Email, UnicodeString AuthToken)			task_0	Informational		
 Microsoft-Windows-User Device Registration	303	0	task_0303(Int32 ExitCode, UnicodeString Email, UnicodeString AuthToken)			task_0	Error		
-Microsoft-Windows-User Device Registration	304	0	task_0304(Int32 ExitCode, UnicodeString ServerErrorMessage, UnicodeString TenantName)			task_0	Error		
-Microsoft-Windows-User Device Registration	305	0	task_0305(Int32 ExitCode, UnicodeString ServerErrorMessage, UnicodeString TenantType)			task_0	Error		
+Microsoft-Windows-User Device Registration	304	0	task_0304(Int32 ExitCode, UnicodeString ServerErrorMessage, UnicodeString TenantType, UnicodeString JoinType, UnicodeString DebugOutput)			task_0	Error		
+Microsoft-Windows-User Device Registration	305	0	task_0305(Int32 ExitCode, UnicodeString ServerErrorMessage, UnicodeString TenantType, UnicodeString TenantName)			task_0	Error		
 Microsoft-Windows-User Device Registration	306	0	task_0306()			task_0	Informational		
 Microsoft-Windows-User Device Registration	307	0	task_0307(Int32 ExitCode)			task_0	Error		
 Microsoft-Windows-User Device Registration	308	0	task_0308(UnicodeString UserSID)			task_0	Warning		
@@ -79,6 +85,7 @@ Microsoft-Windows-User Device Registration	323	0	task_0323(UnicodeString Account
 Microsoft-Windows-User Device Registration	324	0	task_0324(Int32 RequestStatus, UnicodeString RequestStatusSymbolicName, UInt32 ProviderErrorCode, UnicodeString ProviderErrorMessage, Int32 ErrorCode, UnicodeString CorrelationId)			task_0	Error		
 Microsoft-Windows-User Device Registration	325	0	task_0325(UnicodeString CorrelationId)			task_0	Informational		
 Microsoft-Windows-User Device Registration	326	0	task_0326(Int32 ErrorCode)			task_0	Error		
+Microsoft-Windows-User Device Registration	327	0	task_0327(UnicodeString UserSid, Int32 ErrorCode)			task_0	Warning		
 Microsoft-Windows-User Device Registration	328	0	task_0328(UnicodeString UserSid, Int32 ErrorCode)			task_0	Error		
 Microsoft-Windows-User Device Registration	329	0	task_0329(UnicodeString AccountProvider, UnicodeString Scope, UnicodeString Client, UnicodeString Authority, UnicodeString Resource, UnicodeString CorrelationId)			task_0	Informational		
 Microsoft-Windows-User Device Registration	330	0	task_0330(UnicodeString AzureADTenantName, UnicodeString EnterpriseDrsName)			task_0	Error		
@@ -87,11 +94,11 @@ Microsoft-Windows-User Device Registration	332	0	task_0332()			task_0	Warning
 Microsoft-Windows-User Device Registration	333	0	task_0333()			task_0	Warning		
 Microsoft-Windows-User Device Registration	334	0	task_0334()			task_0	Warning		
 Microsoft-Windows-User Device Registration	335	0	task_0335()			task_0	Informational		
-Microsoft-Windows-User Device Registration	336	0	task_0336(UInt32 dwInternetStatus, UInt64 dwResult, UInt32 dwError)			task_0	Informational		
-Microsoft-Windows-User Device Registration	337	0	task_0337(UInt32 dwInternetStatus, UInt64 dwResult, UInt32 dwError)			task_0	Error		
+Microsoft-Windows-User Device Registration	336	0	task_0336(UInt32 dwInternetStatus, UInt64 dwResult, UInt32 dwError, UnicodeString InternetStatus, UnicodeString Result)			task_0	Informational		
+Microsoft-Windows-User Device Registration	337	0	task_0337(UInt32 dwInternetStatus, UInt64 dwResult, UInt32 dwError, UnicodeString InternetStatus, UnicodeString Result)			task_0	Error		
 Microsoft-Windows-User Device Registration	338	0	task_0338(UInt32 ProxyCount)			task_0	Informational		
 Microsoft-Windows-User Device Registration	339	0	task_0339(UnicodeString fProxy, UnicodeString fBypass, UInt32 INTERNET_SCHEME, UnicodeString pwszProxy, UInt32 ProxyPort)			task_0	Informational		
-Microsoft-Windows-User Device Registration	340	0	task_0340(UInt32 dwInternetStatus, UInt64 dwResult, UInt32 dwError)			task_0	Error		
+Microsoft-Windows-User Device Registration	340	0	task_0340(UInt32 dwInternetStatus, UInt64 dwResult, UInt32 dwError, UnicodeString InternetStatus, UnicodeString Result)			task_0	Error		
 Microsoft-Windows-User Device Registration	341	0	task_0341(UInt32 ErrorCode)			task_0	Error		
 Microsoft-Windows-User Device Registration	342	0	task_0342(UnicodeString UserSid, UnicodeString IdpDomain, UnicodeString TenantDomain, Int32 ErrorCode)			task_0	Error		
 Microsoft-Windows-User Device Registration	343	0	task_0343(UnicodeString UserSid, Int32 ErrorCode)			task_0	Error		
@@ -121,7 +128,7 @@ Microsoft-Windows-User Device Registration	366	0	task_0366(UnicodeString Resourc
 Microsoft-Windows-User Device Registration	367	0	task_0367(UnicodeString Properties)			task_0	Informational		
 Microsoft-Windows-User Device Registration	368	0	task_0368(UnicodeString Properties)			task_0	Informational		
 Microsoft-Windows-User Device Registration	369	0	task_0369(UnicodeString Message)			task_0	Informational		
-Microsoft-Windows-User Device Registration	370	0	task_0370(Int32 ExitCode, UnicodeString ServerErrorMessage, UnicodeString TenantName)			task_0	Error		
+Microsoft-Windows-User Device Registration	370	0	task_0370(Int32 ExitCode, UnicodeString ServerErrorMessage, UnicodeString TenantType, UnicodeString JoinType, UnicodeString DebugOutput)			task_0	Error		
 Microsoft-Windows-User Device Registration	371	0	task_0371()			task_0	Informational		
 Microsoft-Windows-User Device Registration	372	0	task_0372(UnicodeString KeyId, UnicodeString UPN, UnicodeString RequestId, UnicodeString Time, UnicodeString ServerResponse)			task_0	Informational		
 Microsoft-Windows-User Device Registration	373	0	task_0373(Int32 ExitCode, UnicodeString RequestId, UnicodeString Time, UInt32 HttpStatus, UnicodeString ErrorCode, UnicodeString ErrorSubCode, UnicodeString ServerErrorMessage, UnicodeString ServerResponse)			task_0	Error		
@@ -140,6 +147,7 @@ Microsoft-Windows-User Device Registration	385	0	task_0385(UnicodeString KeyName
 Microsoft-Windows-User Device Registration	386	0	task_0386(UnicodeString KeyName, Int32 KeyStatus, UnicodeString KeyStatusSymbolicName)			task_0	Informational		
 Microsoft-Windows-User Device Registration	387	0	task_0387(UInt32 ExitCode)			task_0	Warning		
 Microsoft-Windows-User Device Registration	388	0	task_0388(UnicodeString APIName, Int32 ExitCode)			task_0	Informational		
+Microsoft-Windows-User Device Registration	389	0	task_0389()			task_0	Informational		
 Microsoft-Windows-User Device Registration	500	0	task_0500(UnicodeString Message)			task_0	Informational		
 Microsoft-Windows-User Device Registration	501	0	task_0501(UnicodeString Message)			task_0	Warning		
 Microsoft-Windows-User Device Registration	502	0	task_0502(UnicodeString Message)			task_0	Error		

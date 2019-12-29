@@ -72,6 +72,12 @@ Microsoft-Windows-UIAutomationCore	241	0	CUIAutomation_PollForPotentialSupported
 Microsoft-Windows-UIAutomationCore	242	0	CUIAutomation_PollForPotentialSupportedPropertiesStop()	Stop	PerfInstrumentation	CUIAutomation_PollForPotentialSupportedProperties	Informational		
 Microsoft-Windows-UIAutomationCore	243	0	CUIAutomation_RemoveEventHandlerStart()	Start	PerfInstrumentation	CUIAutomation_RemoveEventHandler	Informational		
 Microsoft-Windows-UIAutomationCore	244	0	CUIAutomation_RemoveEventHandlerStop()	Stop	PerfInstrumentation	CUIAutomation_RemoveEventHandler	Informational		
+Microsoft-Windows-UIAutomationCore	245	0	CUIAutomation_CreateEventHandlerGroupStart()	Start	PerfInstrumentation	CUIAutomation_CreateEventHandlerGroup	Informational		
+Microsoft-Windows-UIAutomationCore	246	0	CUIAutomation_CreateEventHandlerGroupStop()	Stop	PerfInstrumentation	CUIAutomation_CreateEventHandlerGroup	Informational		
+Microsoft-Windows-UIAutomationCore	247	0	CUIAutomation_AddEventHandlerGroupStart()	Start	PerfInstrumentation	CUIAutomation_AddEventHandlerGroup	Informational		
+Microsoft-Windows-UIAutomationCore	248	0	CUIAutomation_AddEventHandlerGroupStop()	Stop	PerfInstrumentation	CUIAutomation_AddEventHandlerGroup	Informational		
+Microsoft-Windows-UIAutomationCore	249	0	CUIAutomation_RemoveEventHandlerGroupStart()	Start	PerfInstrumentation	CUIAutomation_RemoveEventHandlerGroup	Informational		
+Microsoft-Windows-UIAutomationCore	250	0	CUIAutomation_RemoveEventHandlerGroupStop()	Stop	PerfInstrumentation	CUIAutomation_RemoveEventHandlerGroup	Informational		
 Microsoft-Windows-UIAutomationCore	301	0	CAutomationElement_BuildUpdatedCacheStart()	Start	PerfInstrumentation	CAutomationElement_BuildUpdatedCache	Informational		
 Microsoft-Windows-UIAutomationCore	302	0	CAutomationElement_BuildUpdatedCacheStop()	Stop	PerfInstrumentation	CAutomationElement_BuildUpdatedCache	Informational		
 Microsoft-Windows-UIAutomationCore	303	0	CAutomationElement_FindAllStart()	Start	PerfInstrumentation	CAutomationElement_FindAll	Informational		
@@ -148,9 +154,48 @@ Microsoft-Windows-UIAutomationCore	505	0	RichEditProxy_GetVisibleRangeStart()	St
 Microsoft-Windows-UIAutomationCore	506	0	RichEditProxy_GetVisibleRangeStop()	Stop	PerfInstrumentation	RichEditProxy_GetVisibleRange	Informational		
 Microsoft-Windows-UIAutomationCore	507	0	EditProxy_NextWordStart()	Start	PerfInstrumentation	EditProxy_NextWord	Informational		
 Microsoft-Windows-UIAutomationCore	508	0	EditProxy_NextWordStop()	Stop	PerfInstrumentation	EditProxy_NextWord	Informational		
-Microsoft-Windows-UIAutomationCore	509	0	ClientConnection_CallWithReturnStart(UnicodeString MethodName)	Start	PerfInstrumentation	ClientConnection_CallWithReturn	Informational		
-Microsoft-Windows-UIAutomationCore	510	0	ClientConnection_CallWithReturnStop(UnicodeString MethodName)	Stop	PerfInstrumentation	ClientConnection_CallWithReturn	Informational		
+Microsoft-Windows-UIAutomationCore	509	0	ClientConnection_CallWithReturnStart(UnicodeString MethodName, UInt32 ProcessId, UInt64 Duration, UInt32 RequestedTimeout, Boolean useAutomation8TimeoutBehavior)	Start	PerfInstrumentation	ClientConnection_CallWithReturn	Informational		
+Microsoft-Windows-UIAutomationCore	510	0	ClientConnection_CallWithReturnStop(UnicodeString MethodName, UInt32 ProcessId, UInt64 Duration, UInt32 RequestedTimeout, Boolean useAutomation8TimeoutBehavior)	Stop	PerfInstrumentation	ClientConnection_CallWithReturn	Informational		
 Microsoft-Windows-UIAutomationCore	511	0	CSelectionPattern_GetCurrentSelectionStart()	Start	PerfInstrumentation	CSelectionPattern_GetCurrentSelection	Informational		
 Microsoft-Windows-UIAutomationCore	512	0	CSelectionPattern_GetCurrentSelectionStop()	Stop	PerfInstrumentation	CSelectionPattern_GetCurrentSelection	Informational		
 Microsoft-Windows-UIAutomationCore	513	0	HandleWinEventStart(UnicodeString Method, HexInt32 HWND, UnicodeString WindowClassName, HexInt32 EventId, HexInt32 ObjectId, UInt32 ChildId)	Start	PerfInstrumentation	HandleWinEvent	Informational		
 Microsoft-Windows-UIAutomationCore	514	0	HandleWinEventStop(UnicodeString Method, HexInt32 HWND, UnicodeString WindowClassName, HexInt32 EventId, HexInt32 ObjectId, UInt32 ChildId)	Stop	PerfInstrumentation	HandleWinEvent	Informational		
+Microsoft-Windows-UIAutomationCore	515	0	CoalesceWinEvent(UnicodeString Method, HexInt32 HWND, UnicodeString WindowClassName, HexInt32 EventId, UInt32 CoalescedEvents)		PerfInstrumentation	CoalesceWinEvent	Informational		
+Microsoft-Windows-UIAutomationCore	603	0	IA2TextRange_CloneStart()	Start	PerfInstrumentation	IA2TextRange_Clone	Informational		
+Microsoft-Windows-UIAutomationCore	604	0	IA2TextRange_CloneStop()	Stop	PerfInstrumentation	IA2TextRange_Clone	Informational		
+Microsoft-Windows-UIAutomationCore	605	0	IA2TextRange_CompareStart()	Start	PerfInstrumentation	IA2TextRange_Compare	Informational		
+Microsoft-Windows-UIAutomationCore	606	0	IA2TextRange_CompareStop()	Stop	PerfInstrumentation	IA2TextRange_Compare	Informational		
+Microsoft-Windows-UIAutomationCore	607	0	IA2TextRange_CompareEndpointsStart()	Start	PerfInstrumentation	IA2TextRange_CompareEndpoints	Informational		
+Microsoft-Windows-UIAutomationCore	608	0	IA2TextRange_CompareEndpointsStop()	Stop	PerfInstrumentation	IA2TextRange_CompareEndpoints	Informational		
+Microsoft-Windows-UIAutomationCore	609	0	IA2TextRange_ExpandToEnclosingUnitStart()	Start	PerfInstrumentation	IA2TextRange_ExpandToEnclosingUnit	Informational		
+Microsoft-Windows-UIAutomationCore	610	0	IA2TextRange_ExpandToEnclosingUnitStop()	Stop	PerfInstrumentation	IA2TextRange_ExpandToEnclosingUnit	Informational		
+Microsoft-Windows-UIAutomationCore	611	0	IA2TextRange_GetAttributeValueStart()	Start	PerfInstrumentation	IA2TextRange_GetAttributeValue	Informational		
+Microsoft-Windows-UIAutomationCore	612	0	IA2TextRange_GetAttributeValueStop()	Stop	PerfInstrumentation	IA2TextRange_GetAttributeValue	Informational		
+Microsoft-Windows-UIAutomationCore	613	0	IA2TextRange_GetEnclosingElementStart()	Start	PerfInstrumentation	IA2TextRange_GetEnclosingElement	Informational		
+Microsoft-Windows-UIAutomationCore	614	0	IA2TextRange_GetEnclosingElementStop()	Stop	PerfInstrumentation	IA2TextRange_GetEnclosingElement	Informational		
+Microsoft-Windows-UIAutomationCore	615	0	IA2TextRange_GetTextStart()	Start	PerfInstrumentation	IA2TextRange_GetText	Informational		
+Microsoft-Windows-UIAutomationCore	616	0	IA2TextRange_GetTextStop()	Stop	PerfInstrumentation	IA2TextRange_GetText	Informational		
+Microsoft-Windows-UIAutomationCore	617	0	IA2TextRange_MoveStart()	Start	PerfInstrumentation	IA2TextRange_Move	Informational		
+Microsoft-Windows-UIAutomationCore	618	0	IA2TextRange_MoveStop()	Stop	PerfInstrumentation	IA2TextRange_Move	Informational		
+Microsoft-Windows-UIAutomationCore	619	0	IA2TextRange_MoveEndpointByUnitStart()	Start	PerfInstrumentation	IA2TextRange_MoveEndpointByUnit	Informational		
+Microsoft-Windows-UIAutomationCore	620	0	IA2TextRange_MoveEndpointByUnitStop()	Stop	PerfInstrumentation	IA2TextRange_MoveEndpointByUnit	Informational		
+Microsoft-Windows-UIAutomationCore	621	0	IA2TextRange_MoveEndpointByRangeStart()	Start	PerfInstrumentation	IA2TextRange_MoveEndpointByRange	Informational		
+Microsoft-Windows-UIAutomationCore	622	0	IA2TextRange_MoveEndpointByRangeStop()	Stop	PerfInstrumentation	IA2TextRange_MoveEndpointByRange	Informational		
+Microsoft-Windows-UIAutomationCore	623	0	IA2TextRange_GetChildrenStart()	Start	PerfInstrumentation	IA2TextRange_GetChildren	Informational		
+Microsoft-Windows-UIAutomationCore	624	0	IA2TextRange_GetChildrenStop()	Stop	PerfInstrumentation	IA2TextRange_GetChildren	Informational		
+Microsoft-Windows-UIAutomationCore	625	0	IA2TextRange_FindAttributeStart()	Start	PerfInstrumentation	IA2TextRange_FindAttribute	Informational		
+Microsoft-Windows-UIAutomationCore	626	0	IA2TextRange_FindAttributeStop()	Stop	PerfInstrumentation	IA2TextRange_FindAttribute	Informational		
+Microsoft-Windows-UIAutomationCore	627	0	IA2TextRange_FindTextStart()	Start	PerfInstrumentation	IA2TextRange_FindText	Informational		
+Microsoft-Windows-UIAutomationCore	628	0	IA2TextRange_FindTextStop()	Stop	PerfInstrumentation	IA2TextRange_FindText	Informational		
+Microsoft-Windows-UIAutomationCore	629	0	IA2TextRange_GetBoundingRectanglesStart()	Start	PerfInstrumentation	IA2TextRange_GetBoundingRectangles	Informational		
+Microsoft-Windows-UIAutomationCore	630	0	IA2TextRange_GetBoundingRectanglesStop()	Stop	PerfInstrumentation	IA2TextRange_GetBoundingRectangles	Informational		
+Microsoft-Windows-UIAutomationCore	631	0	IA2TextRange_SelectStart()	Start	PerfInstrumentation	IA2TextRange_Select	Informational		
+Microsoft-Windows-UIAutomationCore	632	0	IA2TextRange_SelectStop()	Stop	PerfInstrumentation	IA2TextRange_Select	Informational		
+Microsoft-Windows-UIAutomationCore	633	0	IA2TextRange_AddToSelectionStart()	Start	PerfInstrumentation	IA2TextRange_AddToSelection	Informational		
+Microsoft-Windows-UIAutomationCore	634	0	IA2TextRange_AddToSelectionStop()	Stop	PerfInstrumentation	IA2TextRange_AddToSelection	Informational		
+Microsoft-Windows-UIAutomationCore	635	0	IA2TextRange_RemoveFromSelectionStart()	Start	PerfInstrumentation	IA2TextRange_RemoveFromSelection	Informational		
+Microsoft-Windows-UIAutomationCore	636	0	IA2TextRange_RemoveFromSelectionStop()	Stop	PerfInstrumentation	IA2TextRange_RemoveFromSelection	Informational		
+Microsoft-Windows-UIAutomationCore	637	0	IA2TextRange_ScrollIntoViewStart()	Start	PerfInstrumentation	IA2TextRange_ScrollIntoView	Informational		
+Microsoft-Windows-UIAutomationCore	638	0	IA2TextRange_ScrollIntoViewStop()	Stop	PerfInstrumentation	IA2TextRange_ScrollIntoView	Informational		
+Microsoft-Windows-UIAutomationCore	701	0	ClientConnectionTimeout(UnicodeString ProcessName, HexInt32 HWND, UnicodeString WindowClassName, UnicodeString RequestedMethod, UInt32 RequestedTimeout)		UiaConnectionTimeout PerfInstrumentation	ClientConnectionTimeout	Informational		
+Microsoft-Windows-UIAutomationCore	702	0	EventOverflow(UnicodeString ProcessName, HexInt32 HWND, UnicodeString WindowClassName, UInt32 TotalEvents, HexInt32 EventId, UInt32 EventCount)		UiaEventOverflow PerfInstrumentation	EventOverflow	Informational		

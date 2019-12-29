@@ -1,0 +1,9 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-MF-FrameServer	2	0	FrameServerFsProxySetOutputTypeStart(UInt32 PinId, AnsiString MediaType)	Start		FrameServerFsProxySetOutputType	Informational		
+Microsoft-Windows-MF-FrameServer	3	0	FrameServerFsProxySetOutputTypeStop(HexInt32 hr)	Stop		FrameServerFsProxySetOutputType	Informational		
+Microsoft-Windows-MF-FrameServer	4	0	FrameServerFsProxyD3dManagerStart(UnicodeString D3dDesc, HexInt64 LUID, UInt32 VendorId, UInt32 DeviceId, UInt32 SubSysId)	Start		FrameServerFsProxyD3dManager	Informational		
+Microsoft-Windows-MF-FrameServer	5	0	FrameServerFsProxyD3dManagerStop(HexInt32 hr)	Stop		FrameServerFsProxyD3dManager	Informational		
+Microsoft-Windows-MF-FrameServer	6	0	string.FrameServerFsProxyInitializationStart(UnicodeString SymbolicLink, UInt32 Devices, UInt32 Streams, UInt32 StreamType, HexInt32 hr)	Start		string.FrameServerFsProxyInitialization	Informational		
+Microsoft-Windows-MF-FrameServer	7	0	string.FrameServerFsProxyInitializationStop(UnicodeString SymbolicLink, UInt32 Devices, UInt32 Streams, UInt32 StreamType, HexInt32 hr)	Stop		string.FrameServerFsProxyInitialization	Informational		
+Microsoft-Windows-MF-FrameServer	8	0	string.FrameServerFsClientCreateSampleStart(UInt32 StreamId, UInt64 TimeStamp, UInt32 Duration, UInt32 MemoryType)	Start		string.FrameServerFsClientCreateSample	Informational		
+Microsoft-Windows-MF-FrameServer	9	0	string.FrameServerFsClientCreateSampleStart9(HexInt32 hr)	Start		string.FrameServerFsClientCreateSample	Informational		

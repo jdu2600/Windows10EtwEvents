@@ -205,7 +205,7 @@ Microsoft-IE	211	0	Mshtml_MsPerformance_Mark(UnicodeString Name)		primarynav	Msh
 Microsoft-IE	212	0	Mshtml_MsPerformance_Measure(UnicodeString Name, UnicodeString StartMark, UnicodeString EndMark, UInt64 Duration)		primarynav	Mshtml_MsPerformance_Measure	Always		
 Microsoft-IE	213	0	Mshtml_AttachIDispImage(UInt64 Object, UInt64 Value)		subsystem	Mshtml_AttachIDispImage	Always		
 Microsoft-IE	214	0	Mshtml_DetachIDispImage(UInt64 Object, UInt64 Value)		subsystem	Mshtml_DetachIDispImage	Always		
-Microsoft-IE	215	0	Mshtml_LowPriMethodCall_Watchdog()		subsystem	Mshtml_LowPriMethodCall_Watchdog	Always		
+Microsoft-IE	215	0	Mshtml_LowPriMethodCall_Watchdog()		paintbeat	Mshtml_LowPriMethodCall_Watchdog	Always		
 Microsoft-IE	216	0	Mshtml_MediaEngine_Created(UInt32 MediaEngineID)		mediaengine	Mshtml_MediaEngine_Created	Always		
 Microsoft-IE	217	0	Mshtml_MediaEngine_PlayStart(UInt32 MediaEngineID)	Start	mediaengine	Mshtml_MediaEngine_Play	Always		
 Microsoft-IE	218	0	Mshtml_MediaEngine_PlayStop(UInt32 MediaEngineID)	Stop	mediaengine	Mshtml_MediaEngine_Play	Always		
@@ -626,7 +626,7 @@ Microsoft-IE	748	0	Mshtml_CSP_AddPolicyStop(Pointer CContentSecurityPolicy, UInt
 Microsoft-IE	749	0	Mshtml_CSP_CheckPolicyStart(Pointer CContentSecurityPolicy, UInt32 ResourceDirectiveType)	Start	mshtml	Mshtml_CSP_CheckPolicy	Always		
 Microsoft-IE	750	0	Mshtml_CSP_CheckPolicyStop(Pointer CContentSecurityPolicy, UInt32 ResourceDirectiveType, Boolean Allowed)	Stop	mshtml	Mshtml_CSP_CheckPolicy	Always		
 Microsoft-IE	751	0	EdgeHTML_Webview_AppPermissionResponse(UnicodeString URL, UInt32 PermissionType, UInt32 PermissionState, Boolean IsPrimaryResponse)		mshtml	EdgeHTML_Webview_AppPermissionResponse	Always		
-Microsoft-IE	752	0	Mshtml_Download_Initiator(UnicodeString DownloadedURL, Pointer BindInfo, Pointer CHtmPre, Pointer CPre, Pointer CDoc, Pointer CWindow, UnicodeString WindowURL, UnicodeString URL, UInt32 Line, UInt32 Offset, Boolean Speculative, Boolean LookAhead, Boolean PreParserRestarted, UInt32 Context, UInt32 Initiator, UInt32 Source, UInt32 LookAheadCount)		mshtml	Mshtml_Download_Initiator	Always		
+Microsoft-IE	752	0	Mshtml_Download_Initiator(UnicodeString DownloadedURL, Pointer BindInfo, Pointer CHtmPre, Pointer CPre, Pointer CDoc, Pointer CWindow, UnicodeString WindowURL, UnicodeString URL, UInt32 Line, UInt32 Offset, Boolean Speculative, Boolean LookAhead, Boolean PreParserRestarted, UInt32 Context, UInt32 Initiator, UInt32 Source, UInt32 LookAheadCount)		mshtml httpdiag	Mshtml_Download_Initiator	Always		
 Microsoft-IE	753	0	Mshtml_CrossCDoc_NodeAdoptionAttempt(UInt32 PID, UInt32 TID, UnicodeString SourceUrl, UnicodeString TargetUrl, UnicodeString Func)		mshtml	Mshtml_CrossCDoc_NodeAdoptionAttempt	Always		
 Microsoft-IE	754	0	Mshtml_Ortc_Candidate_GatheringStart(Pointer ThisPtr)	Start	mshtml	Mshtml_Ortc_Candidate_Gathering	Always		
 Microsoft-IE	755	0	Mshtml_Ortc_Candidate_GatheringStop(Pointer ThisPtr)	Stop	mshtml	Mshtml_Ortc_Candidate_Gathering	Always		
@@ -729,3 +729,7 @@ Microsoft-IE	863	0	Edgehtml_Extensions_WrxMessageStart(Binary To, Binary From, U
 Microsoft-IE	864	0	Edgehtml_Extensions_WrxMessage(UInt32 Result)		extensions	Edgehtml_Extensions_WrxMessage	Always		
 Microsoft-IE	865	0	Edgehtml_Extensions_WrxMessageStop()	Stop	extensions	Edgehtml_Extensions_WrxMessage	Always		
 Microsoft-IE	866	0	Mshtml_Container_Size(Pointer Container, UInt32 Capacity, UInt32 InUse)		containers	Mshtml_Container_Size	Always		
+Microsoft-IE	867	0	Mshtml_AlignedBeat_Timer_Beat(UInt64 Object, UInt64 Value)		paintbeat	Mshtml_AlignedBeat_Timer_Beat	Always		
+Microsoft-IE	868	0	Mshtml_AlignedBeat_VSync_Beat(UInt64 Object, UInt64 Value)		paintbeat	Mshtml_AlignedBeat_VSync_Beat	Always		
+Microsoft-IE	869	0	Edgehtml_Extensions_Script_ExecutionStart(UnicodeString ExtensionId, UInt32 ScriptType, UnicodeString CorrelationId)	Start	mshtml extensions	Edgehtml_Extensions_Script_Execution	Always		
+Microsoft-IE	870	0	Edgehtml_Extensions_Script_ExecutionStop(UnicodeString ExtensionId, UInt32 ScriptType, Double ScriptExecutionTime, UnicodeString CorrelationId)	Stop	mshtml extensions	Edgehtml_Extensions_Script_Execution	Always		

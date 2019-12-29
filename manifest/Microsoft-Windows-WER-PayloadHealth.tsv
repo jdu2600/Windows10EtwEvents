@@ -1,0 +1,5 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-WER-PayloadHealth	1	0	WER_PAYLOAD_HEALTH(UInt32 UploadDuration, UInt64 PayloadSize, UnicodeString Protocol, UnicodeString Stage, UInt64 BytesUploaded, UnicodeString ServerName)			WER_PAYLOAD_HEALTH	Informational		
+Microsoft-Windows-WER-PayloadHealth	2	0	WER_PAYLOAD_HEALTH2(UInt32 HttpExchangeResult, UInt32 UploadDuration, UInt64 PayloadSize, UnicodeString Protocol, UnicodeString Stage, UInt32 RequestStatusCode, UInt64 BytesUploaded, UnicodeString ServerName, UInt32 TransportHr)			WER_PAYLOAD_HEALTH	Informational		
+Microsoft-Windows-WER-PayloadHealth	3	0	WER_PAYLOAD_HEALTH3(UInt32 HttpExchangeResult, UInt32 LastBlockId, UInt64 TotalBytesUploaded)			WER_PAYLOAD_HEALTH	Informational		
+Microsoft-Windows-WER-PayloadHealth	4	0	WER_PAYLOAD_HEALTH4(UInt32 HttpExchangeResult, UInt32 LastBlockId, UInt64 TotalBytesUploaded)			WER_PAYLOAD_HEALTH	Informational		

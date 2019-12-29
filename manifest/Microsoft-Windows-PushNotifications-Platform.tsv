@@ -59,7 +59,7 @@ Microsoft-Windows-PushNotifications-Platform	1015	0	task_01015(UInt32 Notificati
 Microsoft-Windows-PushNotifications-Platform	1016	0	task_01016(UInt32 NetworkCost, Boolean Costly)		wpnconn	task_0	Informational		
 Microsoft-Windows-PushNotifications-Platform	1017	0	task_01017(UInt32 DateSource, FILETIME BillingCycle)		wpnconn	task_0	Informational		
 Microsoft-Windows-PushNotifications-Platform	1018	0	task_01018()		wpnconn	task_0	Informational		
-Microsoft-Windows-PushNotifications-Platform	1019	0	task_01019(UInt32 Status, UInt32 SessionId, UInt32 CurrentSessionId)		wpnconn	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1019	0	task_01019(UInt32 Status)		wpnconn	task_0	Informational		
 Microsoft-Windows-PushNotifications-Platform	1020	0	ConnectionEstablishment1020(UInt32 Status)		wpnconn wpnperf_FirstCloudNotification wpnperf_FirstCloudNotificationWithCloudImage wpntroubleshoot wpndebug_connectivity wpndebug_connectivity_isConnected	ConnectionEstablishment	Error		
 Microsoft-Windows-PushNotifications-Platform	1021	0	task_01021(Int32 ErrorCode)		wpnconn wpntroubleshoot wpndebug_connectivity wpndebug_connectivity_isConnected	task_0	Error		
 Microsoft-Windows-PushNotifications-Platform	1022	0	task_01022()		wpnconn wpntroubleshoot wpndebug_connectivity wpndebug_connectivity_isConnected	task_0	Informational		
@@ -102,11 +102,11 @@ Microsoft-Windows-PushNotifications-Platform	1217	0	ConnectionEstablishmentStart
 Microsoft-Windows-PushNotifications-Platform	1218	0	ConnectionEstablishmentStop1218(UInt32 ConnectionType, Int32 ErrorCode)	Stop	wpnperf_FirstCloudNotification wpnperf_FirstCloudNotificationWithCloudImage wnptrans	ConnectionEstablishment	Informational		
 Microsoft-Windows-PushNotifications-Platform	1219	0	task_01219(UInt32 Bytes, UInt32 ConnectionType)		wnptrans	task_0	Informational		
 Microsoft-Windows-PushNotifications-Platform	1220	0	task_01220(UInt32 Bytes, UInt32 ConnectionType)		wnptrans	task_0	Informational		
-Microsoft-Windows-PushNotifications-Platform	1223	0	task_01223(AnsiString Verb, UInt32 TrID, AnsiString Namespace, UInt32 Bytes, Binary Payload, UInt32 ConnectionType)		wnptrans wpndebug_connectivity wpndebug_connectivity_isConnected	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	1223	0	task_01223(AnsiString Verb, UInt32 TrID, AnsiString Namespace, AnsiString CorrelationVector, UInt32 Bytes, Binary Payload, UInt32 ConnectionType)		wnptrans wpndebug_connectivity wpndebug_connectivity_isConnected	task_0	Verbose		
 Microsoft-Windows-PushNotifications-Platform	1224	0	task_01224(UInt32 Bytes, Binary Payload, UInt32 ConnectionType)		wnptrans	task_0	Verbose		
-Microsoft-Windows-PushNotifications-Platform	1225	0	task_01225(AnsiString Verb, UInt32 TrID, AnsiString Namespace, UInt32 Bytes, Binary Payload, UInt32 ConnectionType)		wnptrans wpndebug_connectivity wpndebug_connectivity_isConnected	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	1225	0	task_01225(AnsiString Verb, UInt32 TrID, AnsiString Namespace, AnsiString CorrelationVector, UInt32 Bytes, Binary Payload, UInt32 ConnectionType)		wnptrans wpndebug_connectivity wpndebug_connectivity_isConnected	task_0	Verbose		
 Microsoft-Windows-PushNotifications-Platform	1226	0	task_01226(UInt32 Bytes, Binary Payload, UInt32 ConnectionType)		wnptrans	task_0	Verbose		
-Microsoft-Windows-PushNotifications-Platform	1227	0	task_01227(AnsiString Verb, UInt32 TrID, AnsiString Namespace, UInt32 Bytes, Binary Payload, UInt32 ConnectionType)		wnptrans	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1227	0	task_01227(AnsiString Verb, UInt32 TrID, AnsiString Namespace, AnsiString CorrelationVector, UInt32 Bytes, Binary Payload, UInt32 ConnectionType)		wnptrans	task_0	Informational		
 Microsoft-Windows-PushNotifications-Platform	1228	0	task_01228(UInt32 ErrorCode)		wnptrans	task_0	Informational		
 Microsoft-Windows-PushNotifications-Platform	1229	0	task_01229(UInt32 ErrorCode)		wnptrans	task_0	Informational		
 Microsoft-Windows-PushNotifications-Platform	1230	0	task_01230(UInt32 ErrorCode)		wnptrans	task_0	Informational		
@@ -146,8 +146,8 @@ Microsoft-Windows-PushNotifications-Platform	1263	0	task_01263(AnsiString Device
 Microsoft-Windows-PushNotifications-Platform	1264	0	task_01264(AnsiString DeviceId, UInt64 UserId, UInt32 Error)		wnptrans	task_0	Informational		
 Microsoft-Windows-PushNotifications-Platform	1265	0	task_01265(AnsiString DeviceId, UInt64 UserId, UInt32 Error)		wnptrans	task_0	Informational		
 Microsoft-Windows-PushNotifications-Platform	1266	0	task_01266(AnsiString DeviceId, UInt64 OldUserId, UInt64 NewUserId, UInt32 Error)		wnptrans	task_0	Informational		
-Microsoft-Windows-PushNotifications-Platform	1267	0	task_01267(AnsiString Verb, UInt32 TrID, AnsiString Namespace, UInt32 Bytes, Binary Payload, UInt32 ConnectionType)		wnptrans wpndebug_connectivity wpndebug_connectivity_isConnected	task_0	Verbose		
-Microsoft-Windows-PushNotifications-Platform	1268	0	task_01268(AnsiString Verb, UInt32 TrID, AnsiString Namespace, UInt32 Bytes, Binary Payload, UInt32 ConnectionType)		wnptrans wpndebug_connectivity wpndebug_connectivity_isConnected	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	1267	0	task_01267(AnsiString Verb, UInt32 TrID, AnsiString Namespace, AnsiString CorrelationVector, UInt32 Bytes, Binary Payload, UInt32 ConnectionType)		wnptrans wpndebug_connectivity wpndebug_connectivity_isConnected	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	1268	0	task_01268(AnsiString Verb, UInt32 TrID, AnsiString Namespace, AnsiString CorrelationVector, UInt32 Bytes, Binary Payload, UInt32 ConnectionType)		wnptrans wpndebug_connectivity wpndebug_connectivity_isConnected	task_0	Verbose		
 Microsoft-Windows-PushNotifications-Platform	1300	0	task_01300()		wpnprv	task_0	Informational		
 Microsoft-Windows-PushNotifications-Platform	1301	0	task_01301()		wpnprv	task_0	Informational		
 Microsoft-Windows-PushNotifications-Platform	1302	0	task_01302(Int32 ErrorCode, Int64 InitCount)		wpnprv	task_0	Informational		

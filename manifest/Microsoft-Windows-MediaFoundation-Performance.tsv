@@ -21,7 +21,7 @@ Microsoft-Windows-MediaFoundation-Performance	4006	0	EvrPresent(AnsiString tag, 
 Microsoft-Windows-MediaFoundation-Performance	4007	0	EvrMonitorEstimate(AnsiString tag, Pointer object, UInt32 screenHeight, Int32 frameHeightx1000, Int32 frameRatex1000)			EvrMonitorEstimate	Informational		
 Microsoft-Windows-MediaFoundation-Performance	4008	0	EvrSleep(AnsiString tag, Pointer object, Pointer hThread, UInt8 sleepType, Int32 width, Int32 height, HexInt32 format, UInt32 retryCount)			EvrSleep	Informational		
 Microsoft-Windows-MediaFoundation-Performance	4009	0	DataDrop(AnsiString tag, Pointer object, UInt8 dataType, Int64 sampleTime, UInt32 bytesDropped, HexInt32 dropReasons)			DataDrop	Informational		
-Microsoft-Windows-MediaFoundation-Performance	4010	0	Clock(AnsiString tag, Pointer object, Int64 time)			Clock	Verbose		
+Microsoft-Windows-MediaFoundation-Performance	4010	0	Clock(AnsiString tag, Pointer object, Int64 time)		HighCostEvent	Clock	Verbose		
 Microsoft-Windows-MediaFoundation-Performance	4011	0	PredictedVideoSampleTime(AnsiString tag, Pointer object, Int64 time)			PredictedVideoSampleTime	Informational		
 Microsoft-Windows-MediaFoundation-Performance	4012	0	NewStream(AnsiString tag, Pointer object, UInt8 streamType)			NewStream	Informational		
 Microsoft-Windows-MediaFoundation-Performance	4013	0	MediaTypeChange(AnsiString tag, Pointer object, Pointer stream, UInt32 byteCount, Binary type)			MediaTypeChange	Informational		

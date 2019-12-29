@@ -2,23 +2,28 @@ provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channe
 Microsoft-Windows-CloudStore	1	0	task_0(UnicodeString ProcessName, UInt32 Type, UInt32 ErrorCode, AnsiString File, UInt32 LineNumber)			task_0	Error		
 Microsoft-Windows-CloudStore	1000	0	task_01000(GUID SchemaProvider)			task_0	Informational		
 Microsoft-Windows-CloudStore	1001	0	task_01001(UInt32 ProviderCount)			task_0	Informational		
-Microsoft-Windows-CloudStore	2001	0	task_02001(UInt16 FieldId, UInt32 BondDataType)			task_0	Warning		
-Microsoft-Windows-CloudStore	2004	0	task_02004(AnsiString CorrelationVector, AnsiString QualifiedTypeName, UInt64 OriginalVersion, UInt32 OriginalSize, Binary OriginalData, UInt64 TheirsVersion, UInt32 TheirsSize, Binary TheirsData, UInt64 YoursVersion, UInt32 YoursSize, Binary YoursData)			task_0	Informational		
-Microsoft-Windows-CloudStore	2006	0	task_02006(AnsiString CorrelationVector, AnsiString QualifiedTypeName, UInt64 Version, UInt32 Size, Binary Data)			task_0	Informational		
-Microsoft-Windows-CloudStore	2007	0	task_02007(UInt64 Index)			task_0	Warning		
-Microsoft-Windows-CloudStore	2008	0	task_02008(AnsiString QualifiedTypeName, UInt64 OriginalVersion, UInt64 TheirsVersion, UInt64 YoursVersion, UInt64 ResolvedVersion)			task_0	Warning		
-Microsoft-Windows-CloudStore	2009	0	task_02009(UnicodeString QualifiedTypeName)			task_0	Error		
+Microsoft-Windows-CloudStore	2001	0	task_02001(UInt16 FieldId, UInt32 BondDataType)			task_0	Error		
+Microsoft-Windows-CloudStore	2004	0	task_02004(AnsiString CorrelationVector, AnsiString QualifiedTypeName, UInt32 SchemaSize, Binary Schema, Boolean ForceLastWriterWins, UInt64 OriginalVersion, Boolean OriginalTombstoned, UInt32 OriginalSize, Binary OriginalData, UInt64 TheirsVersion, Boolean TheirsTombstoned, UInt32 TheirsSize, Binary TheirsData, UInt64 YoursVersion, Boolean YoursTombstoned, UInt32 YoursSize, Binary YoursData, UInt64 ResolvedVersion, Boolean ResolvedTombstoned, UInt32 ResolvedSize, Binary ResolvedData)			task_0	Informational		
+Microsoft-Windows-CloudStore	2007	0	task_02007(UInt64 Index)			task_0	Error		
+Microsoft-Windows-CloudStore	2008	0	task_02008(AnsiString QualifiedTypeName, UInt64 OriginalVersion, UInt64 TheirsVersion, UInt64 YoursVersion, UInt64 ResolvedVersion)			task_0	Error		
+Microsoft-Windows-CloudStore	2009	0	task_02009(AnsiString QualifiedTypeName, AnsiString Base64String)			task_0	Error		
+Microsoft-Windows-CloudStore	2010	0	task_02010(AnsiString QualifiedTypeName)			task_0	Error		
+Microsoft-Windows-CloudStore	2011	0	task_02011(AnsiString QualifiedTypeName, UInt32 Size, Binary Data)			task_0	Error		
+Microsoft-Windows-CloudStore	2012	0	task_02012(AnsiString QualifiedTypeName)			task_0	Error		
+Microsoft-Windows-CloudStore	2013	0	task_02013(AnsiString QualifiedTypeName, AnsiString Base64String)			task_0	Error		
 Microsoft-Windows-CloudStore	3002	0	task_03002(AnsiString Id, UInt64 Version)			task_0	Informational		
 Microsoft-Windows-CloudStore	3003	0	task_03003(AnsiString Id, UInt64 Version, UInt64 Size)			task_0	Informational		
 Microsoft-Windows-CloudStore	3004	0	task_03004(AnsiString Id)			task_0	Informational		
-Microsoft-Windows-CloudStore	3005	0	task_03005(AnsiString Id, UInt32 ErrorCode)			task_0	Warning		
+Microsoft-Windows-CloudStore	3005	0	task_03005(AnsiString Id, UInt32 ErrorCode)			task_0	Error		
 Microsoft-Windows-CloudStore	3006	0	task_03006(AnsiString Id, UInt32 ErrorCode)			task_0	Warning		
 Microsoft-Windows-CloudStore	3007	0	task_03007(AnsiString CorrelationVector, AnsiString Id, UInt64 Version, UInt32 Size, Binary Data)			task_0	Informational		
 Microsoft-Windows-CloudStore	3008	0	task_03008(AnsiString CorrelationVector, AnsiString Id, UInt64 Version, UInt32 Size, Binary Data)			task_0	Informational		
 Microsoft-Windows-CloudStore	3013	0	task_03013(AnsiString Id, UInt32 ErrorCode)			task_0	Warning		
 Microsoft-Windows-CloudStore	3014	0	task_03014(AnsiString Id, UInt64 TheirsVersion, UInt64 YoursVersion)			task_0	Informational		
 Microsoft-Windows-CloudStore	3015	0	task_03015(AnsiString CorrelationVector, AnsiString Id, UInt64 Version, UInt32 Size, Binary Data)			task_0	Error		
-Microsoft-Windows-CloudStore	3016	0	task_03016(AnsiString Id)			task_0	Warning		
-Microsoft-Windows-CloudStore	3017	0	task_03017(UnicodeString ObjectName, UnicodeString CurrentAcl, UnicodeString ExpectedAcl)			task_0	Warning		
+Microsoft-Windows-CloudStore	3017	0	task_03017(UnicodeString ObjectName, UnicodeString CurrentAcl, UnicodeString ExpectedAcl)			task_0	Informational		
+Microsoft-Windows-CloudStore	3018	0	task_03018()			task_0	Informational		
+Microsoft-Windows-CloudStore	3019	0	task_03019()			task_0	Informational		
+Microsoft-Windows-CloudStore	3020	0	task_03020(AnsiString CorrelationVector, UInt16 ActivitiesCount)			task_0	Informational		
 Microsoft-Windows-CloudStore	10000	0	task_010000()			task_0	Informational		
 Microsoft-Windows-CloudStore	10001	0	task_010001()			task_0	Informational		

@@ -10,7 +10,7 @@ Microsoft-Windows-Kernel-Boot	8	0	ImageHashCheck(UnicodeString ImageName)		keywo
 Microsoft-Windows-Kernel-Boot	9	0	task_09(UInt32 DriveNumber)		keyword_200000000000	task_0	Warning		
 Microsoft-Windows-Kernel-Boot	10	0	task_010(UInt64 FwStartPage, UInt64 FwPageCount, UInt32 FwMemoryType, UInt32 FwMemoryAttributes, UInt64 BlStartPage, UInt64 BlPageCount, UInt32 BlMemoryType, UInt32 BlMemoryAttributes)		keyword_200000000000	task_0	Error		
 Microsoft-Windows-Kernel-Boot	11	0	PreBoot(UInt64 PreBootMgrTime)			PreBoot	Informational		
-Microsoft-Windows-Kernel-Boot	12	0	task_012(UnicodeString UefiVariableName, UInt32 Size, UInt32 Status)			task_0	Informational		
+Microsoft-Windows-Kernel-Boot	12	0	SecureBootVariableUsage(UnicodeString UefiVariableName, UInt32 Size, UInt32 Status)			SecureBootVariableUsage	Informational		
 Microsoft-Windows-Kernel-Boot	13	0	task_013(GUID ApplicationGuid, UInt32 Element)		keyword_200000000000	task_0	Warning		
 Microsoft-Windows-Kernel-Boot	14	0	task_014(UInt32 Status)			task_0	Informational		
 Microsoft-Windows-Kernel-Boot	15	0	task_015(UInt32 Status)			task_0	Informational		
@@ -52,8 +52,8 @@ Microsoft-Windows-Kernel-Boot	46	0	RetrieveDriverListTime(UInt64 RetrieveDriverL
 Microsoft-Windows-Kernel-Boot	47	0	LoadDrivers(UInt64 LoadDriversTime)			LoadDrivers	Informational		
 Microsoft-Windows-Kernel-Boot	48	0	LoadHive(UnicodeString Path, UInt64 LoadHiveTime)			LoadHive	Informational		
 Microsoft-Windows-Kernel-Boot	49	0	SiPolicyFailure(UnicodeString ImageName, UInt32 SiPolicyStatus)			SiPolicyFailure	Error		
-Microsoft-Windows-Kernel-Boot	50	0	task_050(UInt32 CachedCopyStatus, UInt32 UnsealingCachedCopyStatus, UInt32 KeyGenerationAndSaveStatus, UInt32 SealingStatus, UInt32 TpmPcrMask, UInt32 ProtectorAssistedUnsealStatus, UInt32 ProtectorAssistedResealStatus, UInt32 ProtectorSealUpdateStatus, UInt32 TpmCounterOpStatus, UInt32 TpmCounterCreateStatus)			task_0	Error		
-Microsoft-Windows-Kernel-Boot	51	0	task_051(UInt32 CachedCopyStatus, UInt32 UnsealingCachedCopyStatus, UInt32 KeyGenerationAndSaveStatus, UInt32 SealingStatus, UInt32 TpmPcrMask, UInt32 ProtectorAssistedUnsealStatus, UInt32 ProtectorAssistedResealStatus, UInt32 ProtectorSealUpdateStatus, UInt32 TpmCounterOpStatus, UInt32 TpmCounterCreateStatus)			task_0	Informational		
+Microsoft-Windows-Kernel-Boot	50	0	VsmLKeyProvisioningStatus(UInt32 CachedCopyStatus, UInt32 UnsealingCachedCopyStatus, UInt32 KeyGenerationAndSaveStatus, UInt32 SealingStatus, UInt32 TpmPcrMask, UInt32 ProtectorAssistedUnsealStatus, UInt32 ProtectorAssistedResealStatus, UInt32 ProtectorSealUpdateStatus, UInt32 TpmCounterOpStatus, UInt32 TpmCounterCreateStatus)			VsmLKeyProvisioningStatus	Error		
+Microsoft-Windows-Kernel-Boot	51	0	VsmLKeyProvisioningStatus51(UInt32 CachedCopyStatus, UInt32 UnsealingCachedCopyStatus, UInt32 KeyGenerationAndSaveStatus, UInt32 SealingStatus, UInt32 TpmPcrMask, UInt32 ProtectorAssistedUnsealStatus, UInt32 ProtectorAssistedResealStatus, UInt32 ProtectorSealUpdateStatus, UInt32 TpmCounterOpStatus, UInt32 TpmCounterCreateStatus)			VsmLKeyProvisioningStatus	Informational		
 Microsoft-Windows-Kernel-Boot	52	0	BootAppLoadTime(GUID ApplicationIdentifier, UInt64 ApplicationLoadTime)			BootAppLoadTime	Informational		
 Microsoft-Windows-Kernel-Boot	53	0	BootApplicationExecution(GUID ApplicationIdentifier, UInt64 ApplicationExecutionTime)			BootApplicationExecution	Informational		
 Microsoft-Windows-Kernel-Boot	54	0	task_054(UInt32 Status, UnicodeString FileName)			task_0	Error		
@@ -73,6 +73,11 @@ Microsoft-Windows-Kernel-Boot	67	0	MeasuredLaunchNoSinitAcm(UInt32 Status)	NoSin
 Microsoft-Windows-Kernel-Boot	68	0	MeasuredLaunchInvalidTxtHeapBiosDataSize(UInt64 BiosDataSize)	InvalidTxtHeapBiosDataSize	keyword_80000000000	MeasuredLaunch	Error		
 Microsoft-Windows-Kernel-Boot	69	0	MeasuredLaunchMleHeaderTooOld(UInt32 AcmMinMleHeaderVer, UInt32 MleHeaderVersion)	MleHeaderTooOld	keyword_80000000000	MeasuredLaunch	Error		
 Microsoft-Windows-Kernel-Boot	70	0	MeasuredLaunchComputePmrRangesFailure(UInt32 Status)	ComputePmrRangesFailure	keyword_80000000000	MeasuredLaunch	Error		
+Microsoft-Windows-Kernel-Boot	71	0	FileOpenOpenFailure(UInt32 DeviceID, UnicodeString FileName, UInt32 Status)	OpenFailure		FileOpen	Warning		
+Microsoft-Windows-Kernel-Boot	72	0	MeasuredLaunchPrepareLcpFailure(UInt32 Status)	PrepareLcpFailure	keyword_80000000000	MeasuredLaunch	Error		
+Microsoft-Windows-Kernel-Boot	73	0	MeasuredLaunchTxtRejectedFirmwareAcm(UInt32 TxtStatus)	TxtRejectedFirmwareAcm		MeasuredLaunch	Informational		
+Microsoft-Windows-Kernel-Boot	74	0	VsmLKeyProvisioningStatus74(UInt32 CachedCopyStatus, UInt32 KeyGenerationStatus, UInt32 SealAndSaveStatus, UInt32 UEFIKeysStatus)			VsmLKeyProvisioningStatus	Error		
+Microsoft-Windows-Kernel-Boot	75	0	VsmLKeyProvisioningStatus75(UInt32 CachedCopyStatus, UInt32 KeyGenerationStatus, UInt32 SealAndSaveStatus, UInt32 UEFIKeysStatus)			VsmLKeyProvisioningStatus	Informational		
 Microsoft-Windows-Kernel-Boot	100	0	InitializeLibraryStart()	Start	SoftRestart	InitializeLibrary	Informational		
 Microsoft-Windows-Kernel-Boot	100	1	InitializeLibraryStart_V1(Boolean Secure)	Start	SoftRestart	InitializeLibrary	Informational		
 Microsoft-Windows-Kernel-Boot	101	0	InitializeLibraryStop(UInt32 Status)	Stop	SoftRestart	InitializeLibrary	Informational		
@@ -100,7 +105,7 @@ Microsoft-Windows-Kernel-Boot	120	0	BuildKernelMemoryMapStart()	Start	SoftRestar
 Microsoft-Windows-Kernel-Boot	121	0	BuildKernelMemoryMapStop(UInt32 Status)	Stop	SoftRestart	BuildKernelMemoryMap	Informational		
 Microsoft-Windows-Kernel-Boot	122	0	GetMemoryMapStart(UInt32 Type, UInt32 Flags, UInt32 BufferSize)	Start	SoftRestart	GetMemoryMap	Informational		
 Microsoft-Windows-Kernel-Boot	123	0	GetMemoryMapStop(UInt32 Status, UInt32 DataSize, UInt32 BufferSize)	Stop	SoftRestart	GetMemoryMap	Informational		
-Microsoft-Windows-Kernel-Boot	124	0	task_0124(UInt8 Phase, UInt32 Status)		keyword_80000000000 keyword_400000000000	task_0	Error		
+Microsoft-Windows-Kernel-Boot	124	0	VsmPolicyFailure(UInt8 Phase, UInt32 Status)		keyword_80000000000 keyword_400000000000	VsmPolicyFailure	Error		
 Microsoft-Windows-Kernel-Boot	126	0	AllocatePhysicalPagesForMdlStart(UInt64 LowAddress, UInt64 HighAddress, UInt64 SkipBytes, UInt64 TotalBytes, UInt32 CacheType, UInt32 Flags)	Start	SoftRestart PhysicalMemory	AllocatePhysicalPagesForMdl	Informational		
 Microsoft-Windows-Kernel-Boot	127	0	AllocatePhysicalPagesForMdlStop(Pointer Mdl)	Stop	SoftRestart PhysicalMemory	AllocatePhysicalPagesForMdl	Informational		
 Microsoft-Windows-Kernel-Boot	128	0	ExecuteTransitionStart(FILETIME StartTime)	Start	SoftRestart	ExecuteTransition	Informational		
@@ -158,8 +163,22 @@ Microsoft-Windows-Kernel-Boot	179	0	GetFirmwareInformation(UInt32 Status)		SoftR
 Microsoft-Windows-Kernel-Boot	180	0	VerifyBootEntry(UInt32 Status)		SoftRestart	VerifyBootEntry	Error		
 Microsoft-Windows-Kernel-Boot	200	0	TpmCommandResponse(UInt32 CommandCode, UInt32 ResponseCode, UInt64 ResponseMilliseconds)			TpmCommandResponse	Informational		
 Microsoft-Windows-Kernel-Boot	201	0	TpmCommandResponse201(UInt32 CommandCode, UInt32 ResponseCode, UInt64 ResponseMilliseconds, UInt32 CommandSize, Binary CommandData, UInt32 ResponseSize, Binary ResponseData)			TpmCommandResponse	Informational		
-Microsoft-Windows-Kernel-Boot	202	0	TpmSubmitError(UInt32 CommandCode, UInt32 ErrorCode, UInt64 ResponseMilliseconds)			TpmSubmitError	Error		
-Microsoft-Windows-Kernel-Boot	203	0	TpmSubmitError203(UInt32 CommandCode, UInt32 ErrorCode, UInt64 ResponseMilliseconds, UInt32 CommandSize, Binary CommandData)			TpmSubmitError	Error		
+Microsoft-Windows-Kernel-Boot	202	0	TpmSubmitError(UInt32 CommandCode, UInt32 ErrorCode, UInt64 ResponseMilliseconds)		keyword_80000000000	TpmSubmitError	Error		
+Microsoft-Windows-Kernel-Boot	203	0	TpmSubmitError203(UInt32 CommandCode, UInt32 ErrorCode, UInt64 ResponseMilliseconds, UInt32 CommandSize, Binary CommandData)		keyword_80000000000	TpmSubmitError	Error		
 Microsoft-Windows-Kernel-Boot	204	0	TpmBitLockerUsage(UInt32 FveGlobalDataFlags)			TpmBitLockerUsage	Error		
 Microsoft-Windows-Kernel-Boot	205	0	EFICapsuleCreationStart()	Start	SoftRestart	EFICapsuleCreation	Informational		
 Microsoft-Windows-Kernel-Boot	206	0	EFICapsuleCreationStop(UInt32 Status)	Stop	SoftRestart	EFICapsuleCreation	Informational		
+Microsoft-Windows-Kernel-Boot	207	0	BootSIInitStatus(UInt32 Phase, UInt32 StatusCode, UInt32 EnvironmentState)	InitStatus		BootSI	Informational		
+Microsoft-Windows-Kernel-Boot	208	0	BootSIEnterInsecureState(UInt32 InitState, UInt32 StatusCode, UInt64 FailureAddress, UInt64 ReferenceAddress, UInt32 ReasonCode)	EnterInsecureState	keyword_80000000000	BootSI	Error		
+Microsoft-Windows-Kernel-Boot	209	0	BootSIDrtmSvnCheck(UInt32 SvnCounterId, UInt32 StatusCode, UInt32 SvnValue, UInt32 PrevSvnValue)	DrtmSvnCheck		BootSI	Error		
+Microsoft-Windows-Kernel-Boot	210	0	MeasuredLaunchSinitPerformance(UInt64 SinitStartTime, UInt64 SinitEndTime)	SinitPerformance		MeasuredLaunch	Informational		
+Microsoft-Windows-Kernel-Boot	211	0	MiniFilterStartFailure(UInt32 Status)		SoftRestart	MiniFilterStartFailure	Error		
+Microsoft-Windows-Kernel-Boot	212	0	FileModification(UInt16 PathLength, UnicodeString Path)		SoftRestart	FileModification	Informational		
+Microsoft-Windows-Kernel-Boot	213	0	RegistryModification(UInt16 PathLength, UnicodeString Path)		SoftRestart	RegistryModification	Informational		
+Microsoft-Windows-Kernel-Boot	214	0	SoftRebootStart(Boolean TryComplete)	Start	SoftRestart	SoftReboot	Informational		
+Microsoft-Windows-Kernel-Boot	215	0	SoftRebootStop(UInt32 Status)	Stop	SoftRestart	SoftReboot	Informational		
+Microsoft-Windows-Kernel-Boot	216	0	SoftRebootStart216()	Start	SoftRestart	SoftReboot	Informational		
+Microsoft-Windows-Kernel-Boot	217	0	SoftRebootStop217(UInt32 Status)	Stop	SoftRestart	SoftReboot	Informational		
+Microsoft-Windows-Kernel-Boot	218	0	SoftReboot(UnicodeString Function, UInt32 Status, UInt32 Checkpoint)		SoftRestart MemoryPreservation	SoftReboot	Error		
+Microsoft-Windows-Kernel-Boot	219	0	MeasuredLaunchTxtInformation(UInt8 AcmDateDay, UInt8 AcmDateMonth, UInt16 AcmDateYear)	TxtInformation		MeasuredLaunch	Informational		
+Microsoft-Windows-Kernel-Boot	220	0	MeasuredLaunchTxtNotSupported(UInt32 TxtStatus)	TxtNotSupported		MeasuredLaunch	Informational		

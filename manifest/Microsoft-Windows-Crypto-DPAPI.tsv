@@ -12,3 +12,6 @@ Microsoft-Windows-Crypto-DPAPI	8195	0	MasterKeyOperation8195()		ETW_TASK_MASTERK
 Microsoft-Windows-Crypto-DPAPI	8196	0	MasterKeyOperation8196()		ETW_TASK_MASTERKEY_OPERATION	MasterKeyOperation	Error		
 Microsoft-Windows-Crypto-DPAPI	8197	0	DataProtectionOperation(HexInt32 Status, UInt32 ReasonForFailure)		ETW_TASK_DATAPROTECTION_OPERATION	DataProtectionOperation	Error		
 Microsoft-Windows-Crypto-DPAPI	8198	0	DataProtectionOperation8198(HexInt32 Status, UInt32 ReasonForFailure)		ETW_TASK_DATAPROTECTION_OPERATION	DataProtectionOperation	Error		
+Microsoft-Windows-Crypto-DPAPI	8199	0	MasterKeyOperation8199(Binary CredKeyIdentifier, UnicodeString UserName, SID UserSid)		ETW_TASK_MASTERKEY_OPERATION	MasterKeyOperation	Informational		
+Microsoft-Windows-Crypto-DPAPI	12289	0	CredentialKeyOperation(Binary CredKeyIdentifier, UnicodeString UserName, SID UserSid)		ETW_TASK_CREDKEY_OPERATION	CredentialKeyOperation	Informational		
+Microsoft-Windows-Crypto-DPAPI	12290	0	CredentialKeyOperation12290()		ETW_TASK_CREDKEY_OPERATION	CredentialKeyOperation	Informational		

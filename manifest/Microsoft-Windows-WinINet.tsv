@@ -2,29 +2,29 @@ provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channe
 Microsoft-Windows-WinINet	101	0	WININET_ROOT_HANDLE_CREATED(Pointer HINTERNET, UInt16 _UserAgentLength, AnsiString UserAgent, UInt16 _AccessTypeLength, AnsiString AccessType, UInt16 _ProxyListLength, AnsiString ProxyList, UInt16 _ProxyBypassListLength, AnsiString ProxyBypassList, UInt32 Flags)		WININET_KEYWORD_HANDLES	WININET_ROOT_HANDLE_CREATED	Informational		
 Microsoft-Windows-WinINet	102	0	WININET_OPEN_URL_HANDLE_CREATED(Pointer ConnectionHandle, Pointer ParentHandle, UInt16 _URLLength, AnsiString URL, UInt16 _HeadersLength, AnsiString Headers, UInt32 Flags)		WININET_KEYWORD_HANDLES	WININET_OPEN_URL_HANDLE_CREATED	Informational		
 Microsoft-Windows-WinINet	103	0	WININET_CONNECT_HANDLE_CREATED(Pointer ConnectionHandle, Pointer ParentHandle, UInt16 _ServerNameLength, AnsiString ServerName, UInt32 ServerPort, UInt16 _ServiceLength, AnsiString Service, UInt32 Flags)		WININET_KEYWORD_HANDLES	WININET_CONNECT_HANDLE_CREATED	Informational		
-Microsoft-Windows-WinINet	104	0	WININET_HTTP_REQUEST_HANDLE_CREATED(Pointer ConnectionHandle, Pointer ParentHandle, UInt16 _VerbLength, AnsiString Verb, UInt16 _ObjectNameLength, AnsiString ObjectName, UInt16 _VersionLength, AnsiString Version, UInt32 _ReferrerLength, AnsiString Referrer, UInt16 _AcceptTypesLength, AnsiString AcceptTypes, UInt32 Flags)		WININET_KEYWORD_HANDLES	WININET_HTTP_REQUEST_HANDLE_CREATED	Informational		
-Microsoft-Windows-WinINet	105	0	WININET_HANDLE_CLOSED(Pointer HINTERNET)		WININET_KEYWORD_HANDLES	WININET_HANDLE_CLOSED	Informational		
+Microsoft-Windows-WinINet	104	0	WININET_HTTP_REQUEST_HANDLE_CREATED(Pointer ConnectionHandle, Pointer ParentHandle, UInt16 _VerbLength, AnsiString Verb, UInt16 _ObjectNameLength, AnsiString ObjectName, UInt16 _VersionLength, AnsiString Version, UInt32 _ReferrerLength, AnsiString Referrer, UInt16 _AcceptTypesLength, AnsiString AcceptTypes, UInt32 Flags)		WININET_KEYWORD_HANDLES WININET_KEYWORD_HTTPDIAG	WININET_HTTP_REQUEST_HANDLE_CREATED	Informational		
+Microsoft-Windows-WinINet	105	0	WININET_HANDLE_CLOSED(Pointer HINTERNET)		WININET_KEYWORD_HANDLES WININET_KEYWORD_HTTPDIAG	WININET_HANDLE_CLOSED	Informational		
 Microsoft-Windows-WinINet	106	0	WININET_HANDLE_CREATE_FAILED(Pointer HINTERNET, UInt32 Error)		WININET_KEYWORD_HANDLES	WININET_HANDLE_CREATE_FAILED	Error		
 Microsoft-Windows-WinINet	107	0	WININET_HANDLE_CLOSE_FAILED(Pointer HINTERNET, UInt32 Error)		WININET_KEYWORD_HANDLES	WININET_HANDLE_CLOSE_FAILED	Error		
-Microsoft-Windows-WinINet	108	0	WININET_HTTP_REQUEST_HANDLE_CREATED108(Pointer ConnectionHandle, UInt16 _ServerNameLength, AnsiString ServerName, UInt32 ServerPort, UInt16 _ServiceLength, AnsiString Service)		WININET_KEYWORD_HANDLES	WININET_HTTP_REQUEST_HANDLE_CREATED	Informational		
+Microsoft-Windows-WinINet	108	0	WININET_HTTP_REQUEST_HANDLE_CREATED108(Pointer ConnectionHandle, UInt16 _ServerNameLength, AnsiString ServerName, UInt32 ServerPort, UInt16 _ServiceLength, AnsiString Service)		WININET_KEYWORD_HANDLES WININET_KEYWORD_HTTPDIAG	WININET_HTTP_REQUEST_HANDLE_CREATED	Informational		
 Microsoft-Windows-WinINet	200	0	WININET_HTTP_REQUESTStart(Pointer HINTERNET)	Start	WININET_KEYWORD_HTTP	WININET_HTTP_REQUEST	Informational		
-Microsoft-Windows-WinINet	200	1	WININET_HTTP_REQUESTStart_V1(Pointer HINTERNET, Pointer Context)	Start	WININET_KEYWORD_HTTP	WININET_HTTP_REQUEST	Informational		
-Microsoft-Windows-WinINet	201	0	WININET_HTTP_REQUESTStop(Pointer RequestHandle, Pointer SocketHandle, UInt16 _VerbLength, AnsiString Verb, Boolean Cookie)	Stop	WININET_KEYWORD_HTTP	WININET_HTTP_REQUEST	Informational		
+Microsoft-Windows-WinINet	200	1	WININET_HTTP_REQUESTStart_V1(Pointer HINTERNET, Pointer Context)	Start	WININET_KEYWORD_HTTP WININET_KEYWORD_HTTPDIAG	WININET_HTTP_REQUEST	Informational		
+Microsoft-Windows-WinINet	201	0	WININET_HTTP_REQUESTStop(Pointer RequestHandle, Pointer SocketHandle, UInt16 _VerbLength, AnsiString Verb, Boolean Cookie)	Stop	WININET_KEYWORD_HTTP WININET_KEYWORD_HTTPDIAG	WININET_HTTP_REQUEST	Informational		
 Microsoft-Windows-WinINet	202	0	WININET_HTTP_REQUESTFail(Pointer Handle, UInt32 Error)	Fail	WININET_KEYWORD_HTTP WININET_KEYWORD_AOAC	WININET_HTTP_REQUEST	Error		
-Microsoft-Windows-WinINet	203	0	WININET_HTTP_RESPONSEStop(Int32 ResponseCode, Pointer RequestHandle, Pointer SocketHandle, UInt16 _VerbLength, AnsiString Verb, UInt16 _ContentLengthStrLength, AnsiString ContentLength)	Stop	WININET_KEYWORD_HTTP	WININET_HTTP_RESPONSE	Informational		
+Microsoft-Windows-WinINet	203	0	WININET_HTTP_RESPONSEStop(Int32 ResponseCode, Pointer RequestHandle, Pointer SocketHandle, UInt16 _VerbLength, AnsiString Verb, UInt16 _ContentLengthStrLength, AnsiString ContentLength)	Stop	WININET_KEYWORD_HTTP WININET_KEYWORD_HTTPDIAG	WININET_HTTP_RESPONSE	Informational		
 Microsoft-Windows-WinINet	204	0	WININET_HTTP_RESPONSEFail(Pointer Handle, UInt32 Error)	Fail	WININET_KEYWORD_HTTP WININET_KEYWORD_AOAC	WININET_HTTP_RESPONSE	Informational		
 Microsoft-Windows-WinINet	205	0	WININET_HTTP_CONNECTION_CLOSED(Pointer ConnectionHandle, Pointer SocketHandle, UInt16 _ReasonLength, AnsiString Reason)		WININET_KEYWORD_HTTP	WININET_HTTP_CONNECTION_CLOSED	Informational		
 Microsoft-Windows-WinINet	206	0	WININET_KEEP_ALIVE_CONNECTION_REUSED(Pointer ConnectionHandle, Pointer SocketHandle)		WININET_KEYWORD_HTTP	WININET_KEEP_ALIVE_CONNECTION_REUSED	Informational		
 Microsoft-Windows-WinINet	207	0	WININET_KEEP_ALIVE_CONNECTION_POOLED(Pointer ConnectionHandle, Pointer SocketHandle)		WININET_KEYWORD_HTTP	WININET_KEEP_ALIVE_CONNECTION_POOLED	Informational		
 Microsoft-Windows-WinINet	208	0	WININET_KEEP_ALIVE_CONNECTION_CLOSED(Pointer ConnectionHandle, Pointer SocketHandle)		WININET_KEYWORD_HTTP	WININET_KEEP_ALIVE_CONNECTION_CLOSED	Informational		
-Microsoft-Windows-WinINet	209	0	WININET_HTTP_RESPONSE_BODY_RECEIVED(Pointer RequestHandle)		WININET_KEYWORD_HTTP	WININET_HTTP_RESPONSE_BODY_RECEIVED	Informational		
-Microsoft-Windows-WinINet	210	0	WININET_REQUEST_HEADER(Pointer RequestHandle, UInt16 Length, AnsiString Headers)		WININET_KEYWORD_HTTP keyword_20000000000	WININET_REQUEST_HEADER	Verbose		
-Microsoft-Windows-WinINet	211	0	WININET_RESPONSE_HEADER(Pointer RequestHandle, UInt16 Length, AnsiString Headers)		WININET_KEYWORD_HTTP keyword_20000000000	WININET_RESPONSE_HEADER	Verbose		
+Microsoft-Windows-WinINet	209	0	WININET_HTTP_RESPONSE_BODY_RECEIVED(Pointer RequestHandle)		WININET_KEYWORD_HTTP WININET_KEYWORD_HTTPDIAG	WININET_HTTP_RESPONSE_BODY_RECEIVED	Informational		
+Microsoft-Windows-WinINet	210	0	WININET_REQUEST_HEADER(Pointer RequestHandle, UInt16 Length, AnsiString Headers)		WININET_KEYWORD_HTTP WININET_KEYWORD_HTTPDIAG keyword_20000000000	WININET_REQUEST_HEADER	Verbose		
+Microsoft-Windows-WinINet	211	0	WININET_RESPONSE_HEADER(Pointer RequestHandle, UInt16 Length, AnsiString Headers)		WININET_KEYWORD_HTTP WININET_KEYWORD_HTTPDIAG keyword_20000000000	WININET_RESPONSE_HEADER	Verbose		
 Microsoft-Windows-WinINet	212	0	WININET_REQUEST_HEADER_OPTIONAL(Pointer RequestHandle, UInt16 Length, AnsiString Headers)		WININET_KEYWORD_HTTP keyword_20000000000	WININET_REQUEST_HEADER_OPTIONAL	Verbose		
 Microsoft-Windows-WinINet	213	0	WININET_HTTP_RESPONSE_BODY_READ_ERROR(Pointer RequestHandle, UInt32 Error)		WININET_KEYWORD_HTTP WININET_KEYWORD_AOAC	WININET_HTTP_RESPONSE_BODY_READ_ERROR	Informational		
-Microsoft-Windows-WinINet	301	0	WININET_TCP_CONNECTIONStart(UInt16 _ServerNameLength, AnsiString ServerName, Pointer ConnectionHandle, Pointer SocketHandle, UInt32 LocalPort)	Start	WININET_KEYWORD_CONNECTION	WININET_TCP_CONNECTION	Informational		
+Microsoft-Windows-WinINet	301	0	WININET_TCP_CONNECTIONStart(UInt16 _ServerNameLength, AnsiString ServerName, Pointer ConnectionHandle, Pointer SocketHandle, UInt32 LocalPort)	Start	WININET_KEYWORD_CONNECTION WININET_KEYWORD_HTTPDIAG	WININET_TCP_CONNECTION	Informational		
 Microsoft-Windows-WinINet	302	0	WININET_TCP_CONNECTIONFail(UInt16 _ServerNameLength, AnsiString ServerName, Pointer ConnectionHandle, UInt32 Error)	Fail	WININET_KEYWORD_CONNECTION WININET_KEYWORD_AOAC	WININET_TCP_CONNECTION	Error		
-Microsoft-Windows-WinINet	303	0	WININET_TCP_CONNECTIONStop(Pointer SocketHandle)	Stop	WININET_KEYWORD_CONNECTION	WININET_TCP_CONNECTION	Informational		
+Microsoft-Windows-WinINet	303	0	WININET_TCP_CONNECTIONStop(Pointer SocketHandle)	Stop	WININET_KEYWORD_CONNECTION WININET_KEYWORD_HTTPDIAG	WININET_TCP_CONNECTION	Informational		
 Microsoft-Windows-WinINet	304	0	WININET_DNS_QUERYStart(UInt16 _HostNameLength, AnsiString HostName, Pointer RequestHandle)	Start	WININET_KEYWORD_CONNECTION	WININET_DNS_QUERY	Informational		
 Microsoft-Windows-WinINet	305	0	WININET_DNS_QUERYStop(UInt16 _HostNameLength, AnsiString HostName, Pointer RequestHandle, UInt16 _AddressListLength, AnsiString AddressList)	Stop	WININET_KEYWORD_CONNECTION	WININET_DNS_QUERY	Informational		
 Microsoft-Windows-WinINet	306	0	WININET_DNS_QUERYFail(UInt16 _HostNameLength, AnsiString HostName, Pointer RequestHandle, UInt32 Error)	Fail	WININET_KEYWORD_CONNECTION WININET_KEYWORD_AOAC	WININET_DNS_QUERY	Error		
@@ -61,8 +61,8 @@ Microsoft-Windows-WinINet	603	0	WININET_AUTH_CLIENT_SETS_PASSWORD(Pointer Reques
 Microsoft-Windows-WinINet	604	0	WININET_AUTH_USING_CACHED_CREDS(Pointer RequestHandle, Boolean IsProxy)		WININET_KEYWORD_AUTH	WININET_AUTH_USING_CACHED_CREDS	Informational		
 Microsoft-Windows-WinINet	605	0	WININET_AUTH_USING_DEFAULT_CREDS(Pointer RequestHandle, Boolean IsProxy)		WININET_KEYWORD_AUTH	WININET_AUTH_USING_DEFAULT_CREDS	Informational		
 Microsoft-Windows-WinINet	606	0	WININET_AUTH_CLIENT_ADD_HEADERS(Pointer RequestHandle, UInt16 _SchemeLength, AnsiString Scheme, Boolean IsProxy)		WININET_KEYWORD_AUTH	WININET_AUTH_CLIENT_ADD_HEADERS	Informational		
-Microsoft-Windows-WinINet	701	0	WININET_HTTPS_NEGOTIATIONStart(Pointer RequestHandle)	Start	WININET_KEYWORD_HTTPS	WININET_HTTPS_NEGOTIATION	Informational		
-Microsoft-Windows-WinINet	702	0	WININET_HTTPS_NEGOTIATIONStop(Pointer RequestHandle)	Stop	WININET_KEYWORD_HTTPS	WININET_HTTPS_NEGOTIATION	Informational		
+Microsoft-Windows-WinINet	701	0	WININET_HTTPS_NEGOTIATIONStart(Pointer RequestHandle)	Start	WININET_KEYWORD_HTTPS WININET_KEYWORD_HTTPDIAG	WININET_HTTPS_NEGOTIATION	Informational		
+Microsoft-Windows-WinINet	702	0	WININET_HTTPS_NEGOTIATIONStop(Pointer RequestHandle)	Stop	WININET_KEYWORD_HTTPS WININET_KEYWORD_HTTPDIAG	WININET_HTTPS_NEGOTIATION	Informational		
 Microsoft-Windows-WinINet	703	0	WININET_HTTPS_NEGOTIATIONFail(Pointer RequestHandle, UInt32 Error)	Fail	WININET_KEYWORD_HTTPS WININET_KEYWORD_AOAC	WININET_HTTPS_NEGOTIATION	Error		
 Microsoft-Windows-WinINet	704	0	WININET_HTTPS_SERVER_CERT_ERROR(Pointer RequestHandle, UInt32 Error)		WININET_KEYWORD_HTTPS WININET_KEYWORD_AOAC	WININET_HTTPS_SERVER_CERT_ERROR	Error		
 Microsoft-Windows-WinINet	705	0	WININET_HTTPS_SERVER_CERT_VALIDATED(Pointer RequestHandle, UInt16 _CertHashLength, AnsiString CertHash, UInt32 WarningFlags)		WININET_KEYWORD_HTTPS	WININET_HTTPS_SERVER_CERT_VALIDATED	Informational		
@@ -123,29 +123,29 @@ Microsoft-Windows-WinINet	1008	0	Wininet_SendRequestStop(Pointer Request, UInt32
 Microsoft-Windows-WinINet	1009	0	Wininet_OfflineCacheLookup(Pointer Request)		WININET_KEYWORD_IE	Wininet_OfflineCacheLookup	Informational		
 Microsoft-Windows-WinINet	1011	0	Wininet_OfflineCacheHit(Pointer Request)		WININET_KEYWORD_IE	Wininet_OfflineCacheHit	Informational		
 Microsoft-Windows-WinINet	1013	0	Wininet_OfflineCacheMiss(Pointer Request)		WININET_KEYWORD_IE	Wininet_OfflineCacheMiss	Informational		
-Microsoft-Windows-WinINet	1015	0	Wininet_PreNet_CacheLookup(Pointer Request)		WININET_KEYWORD_IE	Wininet_PreNet_CacheLookup	Informational		
-Microsoft-Windows-WinINet	1017	0	Wininet_PreNet_CacheHit(Pointer Request)		WININET_KEYWORD_IE	Wininet_PreNet_CacheHit	Informational		
-Microsoft-Windows-WinINet	1019	0	Wininet_PreNet_CacheMiss(Pointer Request)		WININET_KEYWORD_IE	Wininet_PreNet_CacheMiss	Informational		
+Microsoft-Windows-WinINet	1015	0	Wininet_PreNet_CacheLookup(Pointer Request)		WININET_KEYWORD_IE WININET_KEYWORD_HTTPDIAG	Wininet_PreNet_CacheLookup	Informational		
+Microsoft-Windows-WinINet	1017	0	Wininet_PreNet_CacheHit(Pointer Request)		WININET_KEYWORD_IE WININET_KEYWORD_HTTPDIAG	Wininet_PreNet_CacheHit	Informational		
+Microsoft-Windows-WinINet	1019	0	Wininet_PreNet_CacheMiss(Pointer Request)		WININET_KEYWORD_IE WININET_KEYWORD_HTTPDIAG	Wininet_PreNet_CacheMiss	Informational		
 Microsoft-Windows-WinINet	1021	0	Wininet_PostNet_CacheLookup(Pointer Request)		WININET_KEYWORD_IE	Wininet_PostNet_CacheLookup	Informational		
-Microsoft-Windows-WinINet	1023	0	Wininet_PostNet_CacheHit(Pointer Request)		WININET_KEYWORD_IE	Wininet_PostNet_CacheHit	Informational		
+Microsoft-Windows-WinINet	1023	0	Wininet_PostNet_CacheHit(Pointer Request)		WININET_KEYWORD_IE WININET_KEYWORD_HTTPDIAG	Wininet_PostNet_CacheHit	Informational		
 Microsoft-Windows-WinINet	1025	0	Wininet_PostNet_CacheMiss(Pointer Request)		WININET_KEYWORD_IE	Wininet_PostNet_CacheMiss	Informational		
 Microsoft-Windows-WinINet	1027	0	Wininet_AutodialIfNotLocalHostStart(Pointer Request, AnsiString HostName)	Start	WININET_KEYWORD_IE	Wininet_AutodialIfNotLocalHost	Informational		
 Microsoft-Windows-WinINet	1028	0	Wininet_AutodialIfNotLocalHostStop(Pointer Request)	Stop	WININET_KEYWORD_IE	Wininet_AutodialIfNotLocalHost	Informational		
-Microsoft-Windows-WinINet	1029	0	Wininet_ResolveHostStart(Pointer Request, AnsiString HostName)	Start	WININET_KEYWORD_IE	Wininet_ResolveHost	Informational		
-Microsoft-Windows-WinINet	1030	0	Wininet_ResolveHostStop(Pointer Request, AnsiString HostName)	Stop	WININET_KEYWORD_IE	Wininet_ResolveHost	Informational		
-Microsoft-Windows-WinINet	1031	0	Wininet_SendRequest_Main(Pointer Request, UInt32 Size)		WININET_KEYWORD_IE	Wininet_SendRequest_Main	Informational		
+Microsoft-Windows-WinINet	1029	0	Wininet_ResolveHostStart(Pointer Request, AnsiString HostName)	Start	WININET_KEYWORD_IE WININET_KEYWORD_HTTPDIAG	Wininet_ResolveHost	Informational		
+Microsoft-Windows-WinINet	1030	0	Wininet_ResolveHostStop(Pointer Request, AnsiString HostName)	Stop	WININET_KEYWORD_IE WININET_KEYWORD_HTTPDIAG	Wininet_ResolveHost	Informational		
+Microsoft-Windows-WinINet	1031	0	Wininet_SendRequest_Main(Pointer Request, UInt32 Size)		WININET_KEYWORD_IE WININET_KEYWORD_HTTPDIAG	Wininet_SendRequest_Main	Informational		
 Microsoft-Windows-WinINet	1033	0	Wininet_SendRequest_Extra(Pointer Request, UInt32 Size)		WININET_KEYWORD_IE	Wininet_SendRequest_Extra	Informational		
 Microsoft-Windows-WinINet	1035	0	Wininet_SendRequest_CRLF(Pointer Request, UInt32 Size)		WININET_KEYWORD_IE	Wininet_SendRequest_CRLF	Informational		
-Microsoft-Windows-WinINet	1037	0	Wininet_ReadData(Pointer Request, UInt32 Size)		WININET_KEYWORD_IE	Wininet_ReadData	Informational		
+Microsoft-Windows-WinINet	1037	0	Wininet_ReadData(Pointer Request, UInt32 Size)		WININET_KEYWORD_IE WININET_KEYWORD_HTTPDIAG	Wininet_ReadData	Informational		
 Microsoft-Windows-WinINet	1039	0	Wininet_ReadDataPostReceiveBuf(Pointer Request, UInt32 Size)		WININET_KEYWORD_IE	Wininet_ReadDataPostReceiveBuf	Informational		
-Microsoft-Windows-WinINet	1041	0	Wininet_SendRequest_PostReceiveBuf(Pointer Request, UInt32 Size)		WININET_KEYWORD_IE	Wininet_SendRequest_PostReceiveBuf	Informational		
+Microsoft-Windows-WinINet	1041	0	Wininet_SendRequest_PostReceiveBuf(Pointer Request, UInt32 Size)		WININET_KEYWORD_IE WININET_KEYWORD_HTTPDIAG	Wininet_SendRequest_PostReceiveBuf	Informational		
 Microsoft-Windows-WinINet	1043	0	Wininet_DrainResponsePostReceiveBuf(Pointer Request, UInt32 Size)		WININET_KEYWORD_IE	Wininet_DrainResponsePostReceiveBuf	Informational		
-Microsoft-Windows-WinINet	1045	0	Wininet_ConnectStart(Pointer Request)	Start	WININET_KEYWORD_IE	Wininet_Connect	Informational		
+Microsoft-Windows-WinINet	1045	0	Wininet_ConnectStart(Pointer Request)	Start	WININET_KEYWORD_IE WININET_KEYWORD_HTTPDIAG	Wininet_Connect	Informational		
 Microsoft-Windows-WinINet	1046	0	Wininet_ConnectStop(Pointer Request, UInt32 Socket)	Stop	WININET_KEYWORD_IE	Wininet_Connect	Informational		
-Microsoft-Windows-WinINet	1046	1	Wininet_ConnectStop_V1(Pointer Request, UInt32 Socket, UInt32 Protocol, UInt32 LocalAddressLength, Binary LocalAddress, UInt32 RemoteAddressLength, Binary RemoteAddress)	Stop	WININET_KEYWORD_IE	Wininet_Connect	Informational		
+Microsoft-Windows-WinINet	1046	1	Wininet_ConnectStop_V1(Pointer Request, UInt32 Socket, UInt32 Protocol, UInt32 LocalAddressLength, Binary LocalAddress, UInt32 RemoteAddressLength, Binary RemoteAddress)	Stop	WININET_KEYWORD_IE WININET_KEYWORD_HTTPDIAG	Wininet_Connect	Informational		
 Microsoft-Windows-WinINet	1047	0	Wininet_LookupConnectionStart(Pointer Request)	Start	WININET_KEYWORD_IE	Wininet_LookupConnection	Informational		
 Microsoft-Windows-WinINet	1048	0	Wininet_LookupConnectionStop(Pointer Request, UInt32 Socket)	Stop	WININET_KEYWORD_IE	Wininet_LookupConnection	Informational		
-Microsoft-Windows-WinINet	1049	0	Wininet_Redirect(Pointer Request, AnsiString AddressName)		WININET_KEYWORD_IE	Wininet_Redirect	Informational		
+Microsoft-Windows-WinINet	1049	0	Wininet_Redirect(Pointer Request, AnsiString AddressName)		WININET_KEYWORD_IE WININET_KEYWORD_HTTPDIAG	Wininet_Redirect	Informational		
 Microsoft-Windows-WinINet	1051	0	Wininet_GetaddrinfoStart(UInt32 Flags, AnsiString AddressName)	Start	WININET_KEYWORD_IE	Wininet_Getaddrinfo	Informational		
 Microsoft-Windows-WinINet	1052	0	Wininet_GetaddrinfoStop(UInt32 error, UInt32 Flags, AnsiString AddressName)	Stop	WININET_KEYWORD_IE	Wininet_Getaddrinfo	Informational		
 Microsoft-Windows-WinINet	1053	0	Wininet_DHCP_I252WPADStart(UInt32 Order, AnsiString AddressName)	Start	WININET_KEYWORD_IE	Wininet_DHCP_I252WPAD	Informational		
@@ -154,12 +154,12 @@ Microsoft-Windows-WinINet	1055	0	Wininet_SelectStart(Pointer Request, UInt32 Fla
 Microsoft-Windows-WinINet	1056	0	Wininet_SelectStop(Pointer Request, UInt32 Flags)	Stop	WININET_KEYWORD_IE	Wininet_Select	Informational		
 Microsoft-Windows-WinINet	1057	0	Wininet_UsageLogRequest(AnsiString URL, AnsiString Verb, AnsiString RequestHeaders, AnsiString ResponseHeaders, UInt32 Status, UInt32 UsageLogRequestCache)		keyword_20000000000	Wininet_UsageLogRequest	Informational		
 Microsoft-Windows-WinINet	1058	0	Wininet_UsageLogScavenge(AnsiString URL)		keyword_20000000000	Wininet_UsageLogScavenge	Informational		
-Microsoft-Windows-WinINet	1059	0	Wininet_SocketConnectStart(Pointer Request, UInt32 Socket, UInt32 SourcePort, UInt32 RemoteAddressIndex)	Start	WININET_KEYWORD_IE	Wininet_SocketConnect	Informational		
-Microsoft-Windows-WinINet	1060	0	Wininet_SocketConnectStop(Pointer Request, UInt32 Socket)	Stop	WININET_KEYWORD_IE	Wininet_SocketConnect	Informational		
+Microsoft-Windows-WinINet	1059	0	Wininet_SocketConnectStart(Pointer Request, UInt32 Socket, UInt32 SourcePort, UInt32 RemoteAddressIndex)	Start	WININET_KEYWORD_IE WININET_KEYWORD_HTTPDIAG	Wininet_SocketConnect	Informational		
+Microsoft-Windows-WinINet	1060	0	Wininet_SocketConnectStop(Pointer Request, UInt32 Socket)	Stop	WININET_KEYWORD_IE WININET_KEYWORD_HTTPDIAG	Wininet_SocketConnect	Informational		
 Microsoft-Windows-WinINet	1061	0	Wininet_AppCacheLookupStart(UnicodeString URL)	Start	WININET_KEYWORD_IE	Wininet_AppCacheLookup	Informational		
 Microsoft-Windows-WinINet	1062	0	Wininet_AppCacheLookupStop(UnicodeString ManifestURL)	Stop	WININET_KEYWORD_IE	Wininet_AppCacheLookup	Informational		
 Microsoft-Windows-WinINet	1063	0	Wininet_RequestPrioritySet(Pointer Request, Int32 OldPriority, Int32 NewPriority)		WININET_KEYWORD_IE	Wininet_RequestPrioritySet	Informational		
-Microsoft-Windows-WinINet	1064	0	WININET_STREAM_DATA_INDICATED(Pointer RequestHandle, UInt32 StreamId, UInt32 Size, Boolean Headers)		WININET_KEYWORD_IE	WININET_STREAM_DATA_INDICATED	Informational		
+Microsoft-Windows-WinINet	1064	0	WININET_STREAM_DATA_INDICATED(Pointer RequestHandle, UInt32 StreamId, UInt32 Size, Boolean Headers)		WININET_KEYWORD_IE WININET_KEYWORD_HTTPDIAG	WININET_STREAM_DATA_INDICATED	Informational		
 Microsoft-Windows-WinINet	1065	0	Wininet_SecurityContextStart(Pointer Context, AnsiString HostName, UInt32 NegotiationCount, UInt32 Socket)	Start	WININET_KEYWORD_IE	Wininet_SecurityContext	Informational		
 Microsoft-Windows-WinINet	1066	0	Wininet_SecurityContextStop(Pointer Context, AnsiString HostName, UInt32 NegotiationCount, UInt32 Socket, UInt32 Status)	Stop	WININET_KEYWORD_IE	Wininet_SecurityContext	Informational		
 Microsoft-Windows-WinINet	1067	0	Wininet_SocketReceiveDelayStart(Pointer Request, UInt32 Socket)	Start	WININET_KEYWORD_IE	Wininet_SocketReceiveDelay	Informational		

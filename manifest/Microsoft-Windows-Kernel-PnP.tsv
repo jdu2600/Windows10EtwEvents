@@ -4,6 +4,7 @@ Microsoft-Windows-Kernel-PnP	201	0	BootStartStop()	Stop	Performance	BootStart	In
 Microsoft-Windows-Kernel-PnP	202	0	SystemStart()	Start	Performance	SystemStart	Informational		
 Microsoft-Windows-Kernel-PnP	203	0	SystemStartStop()	Stop	Performance	SystemStart	Informational		
 Microsoft-Windows-Kernel-PnP	204	0	OsLoader(UInt64 OSLoaderStart, UInt64 OSLoaderEnd)		Performance	OsLoader	Informational		
+Microsoft-Windows-Kernel-PnP	204	1	OsLoader_V1(UInt64 OSLoaderStart, UInt64 OSLoaderEnd, UInt64 PreloadEndTime, UInt64 TcbLoaderStartTime, UInt64 LoadHypervisorTime, UInt64 LaunchHypervisorTime, UInt64 LoadVsmTime, UInt64 LaunchVsmTime)		Performance	OsLoader	Informational		
 Microsoft-Windows-Kernel-PnP	205	0	EarlyLaunchAntiMalwareStart(UInt16 ElamDriverNameLength, UnicodeString ElamDriverName)	Start	Performance	EarlyLaunchAntiMalware	Informational		
 Microsoft-Windows-Kernel-PnP	206	0	EarlyLaunchAntiMalwareStop(UInt16 ElamDriverNameLength, UnicodeString ElamDriverName)	Stop	Performance	EarlyLaunchAntiMalware	Informational		
 Microsoft-Windows-Kernel-PnP	207	0	EarlyLaunchAntiMalwareStart207(UInt32 ElamStatus)	Start	Performance	EarlyLaunchAntiMalware	Informational		

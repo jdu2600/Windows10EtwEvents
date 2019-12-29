@@ -1,30 +1,58 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
 Microsoft-Windows-Perflib	1000	0	task_0PCODE_192pcode_192(UnicodeString param1, UnicodeString param2)	opcode_192		task_0	Always		
+Microsoft-Windows-Perflib	1000	1	task_0_V1(UnicodeString User, UnicodeString Module)			task_0	Error		
 Microsoft-Windows-Perflib	1001	0	task_0PCODE_192pcode_1921001(UnicodeString param1, UnicodeString param2, UInt32 __binLength, Binary binary)	opcode_192		task_0	Always		
+Microsoft-Windows-Perflib	1001	1	task_01001_V1(UnicodeString Library, UnicodeString Service, UInt32 Size)			task_0	Error		
 Microsoft-Windows-Perflib	1002	0	task_0PCODE_192pcode_1921002(UnicodeString param1, UnicodeString param2)	opcode_192		task_0	Always		
+Microsoft-Windows-Perflib	1002	1	task_01002_V1(UnicodeString Library, UnicodeString Service)			task_0	Error		
 Microsoft-Windows-Perflib	1003	0	task_0PCODE_192pcode_1921003(UnicodeString param1, UnicodeString param2, UInt32 __binLength, Binary binary)	opcode_192		task_0	Always		
+Microsoft-Windows-Perflib	1003	1	task_01003_V1(UnicodeString Library, UnicodeString Service, UInt32 ObjectCount)			task_0	Error		
 Microsoft-Windows-Perflib	1004	0	task_0PCODE_192pcode_1921004(UnicodeString param1, UnicodeString param2, UInt32 __binLength, Binary binary)	opcode_192		task_0	Always		
+Microsoft-Windows-Perflib	1004	1	task_01004_V1(UnicodeString Library, UnicodeString Service, UInt32 ObjectIndex)			task_0	Error		
 Microsoft-Windows-Perflib	1005	0	task_0PCODE_192pcode_1921005(UnicodeString param1, UnicodeString param2, UnicodeString param3, UInt32 __binLength, Binary binary)	opcode_192		task_0	Always		
+Microsoft-Windows-Perflib	1005	1	task_01005_V1(AnsiString ProcName, UnicodeString Library, UnicodeString Service, UInt32 Win32Error)			task_0	Error		
 Microsoft-Windows-Perflib	1006	0	task_0PCODE_192pcode_1921006(UnicodeString param1, UnicodeString param2, UnicodeString param3, UInt32 __binLength, Binary binary)	opcode_192		task_0	Always		
+Microsoft-Windows-Perflib	1006	1	task_01006_V1(AnsiString ProcName, UnicodeString Library, UnicodeString Service, UInt32 Win32Error)			task_0	Error		
 Microsoft-Windows-Perflib	1007	0	task_0PCODE_192pcode_1921007(UnicodeString param1, UnicodeString param2, UnicodeString param3, UInt32 __binLength, Binary binary)	opcode_192		task_0	Always		
+Microsoft-Windows-Perflib	1007	1	task_01007_V1(AnsiString ProcName, UnicodeString Library, UnicodeString Service, UInt32 Win32Error)			task_0	Error		
 Microsoft-Windows-Perflib	1008	0	task_0PCODE_192pcode_1921008(UnicodeString param1, UnicodeString param2, UInt32 __binLength, Binary binary)	opcode_192		task_0	Always		
+Microsoft-Windows-Perflib	1008	1	task_01008_V1(UnicodeString Service, UnicodeString Library, UInt32 Win32Error)			task_0	Warning		
 Microsoft-Windows-Perflib	1009	0	task_0PCODE_192pcode_1921009(UnicodeString param1, UnicodeString param2, UInt32 __binLength, Binary binary)	opcode_192		task_0	Always		
+Microsoft-Windows-Perflib	1009	1	task_01009_V1(UnicodeString Library, UnicodeString Service, UInt32 ExceptionCode, Pointer ExceptionAddress)			task_0	Error		
 Microsoft-Windows-Perflib	1010	0	task_0PCODE_192pcode_1921010(UnicodeString param1, UnicodeString param2, UInt32 __binLength, Binary binary)	opcode_192		task_0	Always		
+Microsoft-Windows-Perflib	1010	1	task_01010_V1(UnicodeString Library, UnicodeString Service, UInt32 ExceptionCode, Pointer ExceptionAddress)			task_0	Error		
 Microsoft-Windows-Perflib	1011	0	task_0PCODE_192pcode_1921011(UnicodeString param1, UnicodeString param2, UInt32 __binLength, Binary binary)	opcode_192		task_0	Always		
+Microsoft-Windows-Perflib	1011	1	task_01011_V1(UnicodeString Library, UnicodeString Service, UInt32 ExceptionCode, Pointer ExceptionAddress)			task_0	Error		
 Microsoft-Windows-Perflib	1013	0	task_0PCODE_192pcode_1921013(UnicodeString param1, UnicodeString param2, UInt32 __binLength, Binary binary)	opcode_192		task_0	Always		
+Microsoft-Windows-Perflib	1013	1	task_01013_V1(UnicodeString Library, UnicodeString Service, UInt32 Size)			task_0	Error		
+Microsoft-Windows-Perflib	1014	1	task_01014_V1(UnicodeString Service, UnicodeString Library, UInt32 Win32Error)			task_0	Warning		
 Microsoft-Windows-Perflib	1015	0	task_0PCODE_192pcode_1921015(UnicodeString param1, UnicodeString param2, UInt32 __binLength, Binary binary)	opcode_192		task_0	Always		
+Microsoft-Windows-Perflib	1015	1	task_01015_V1(UnicodeString Service, UnicodeString Library)			task_0	Warning		
 Microsoft-Windows-Perflib	1016	0	task_0PCODE_128pcode_128(UnicodeString param1, UnicodeString param2, UInt32 __binLength, Binary binary)	opcode_128		task_0	Always		
+Microsoft-Windows-Perflib	1016	1	task_01016_V1(UnicodeString Library, UnicodeString Service, Pointer Buffer, UInt32 BytesLeft)			task_0	Warning		
 Microsoft-Windows-Perflib	1017	0	task_0PCODE_192pcode_1921017(UnicodeString param1)	opcode_192		task_0	Always		
+Microsoft-Windows-Perflib	1017	1	task_01017_V1(UnicodeString Service)			task_0	Error		
 Microsoft-Windows-Perflib	1018	0	task_0PCODE_192pcode_1921018(UnicodeString param1)	opcode_192		task_0	Always		
+Microsoft-Windows-Perflib	1018	1	task_01018_V1(UnicodeString Service)			task_0	Error		
 Microsoft-Windows-Perflib	1019	0	task_0PCODE_192pcode_1921019(UnicodeString param1, UnicodeString param2, UInt32 __binLength, Binary binary)	opcode_192		task_0	Always		
+Microsoft-Windows-Perflib	1019	1	task_01019_V1(UnicodeString Library, UnicodeString Service, UInt32 ObjectIndex)			task_0	Error		
 Microsoft-Windows-Perflib	1020	0	task_0PCODE_192pcode_1921020(UnicodeString param1, UnicodeString param2, UInt32 __binLength, Binary binary)	opcode_192		task_0	Always		
+Microsoft-Windows-Perflib	1020	1	task_01020_V1(UnicodeString Library, UnicodeString Service, UInt32 BufferSize, UInt32 RequiredSize)			task_0	Error		
 Microsoft-Windows-Perflib	1021	0	task_0PCODE_192pcode_1921021(UnicodeString param1, UInt32 __binLength, Binary binary)	opcode_192		task_0	Always		
+Microsoft-Windows-Perflib	1021	1	task_01021_V1(UnicodeString Library, UInt32 Win32Error)			task_0	Error		
 Microsoft-Windows-Perflib	1022	0	task_0PCODE_192pcode_1921022(UnicodeString param1, UInt32 __binLength, Binary binary)	opcode_192		task_0	Always		
+Microsoft-Windows-Perflib	1022	1	task_01022_V1(UnicodeString Library, UInt32 Win32Error)			task_0	Error		
 Microsoft-Windows-Perflib	1023	0	task_0PCODE_192pcode_1921023(UnicodeString param1, UInt32 __binLength, Binary binary)	opcode_192		task_0	Always		
+Microsoft-Windows-Perflib	1023	1	task_01023_V1(UnicodeString Library, UInt32 Win32Error)			task_0	Error		
 Microsoft-Windows-Perflib	2000	0	task_0PCODE_128pcode_1282000(UnicodeString param1, UnicodeString param2, UInt32 __binLength, Binary binary)	opcode_128		task_0	Always		
+Microsoft-Windows-Perflib	2000	1	task_02000_V1(UnicodeString Library, UnicodeString Service, UInt32 BytesLeft, UInt32 BytesAvailable)			task_0	Warning		
 Microsoft-Windows-Perflib	2001	0	task_0PCODE_128pcode_1282001(UnicodeString param1, UInt32 __binLength, Binary binary)	opcode_128		task_0	Always		
+Microsoft-Windows-Perflib	2001	1	task_02001_V1(UnicodeString Service, UInt32 Win32Error, UInt32 NTSTATUS)			task_0	Warning		
 Microsoft-Windows-Perflib	2002	0	task_0PCODE_128pcode_1282002(UnicodeString param1, UnicodeString param2)	opcode_128		task_0	Always		
+Microsoft-Windows-Perflib	2002	1	task_02002_V1(UnicodeString Service, UnicodeString Library)			task_0	Error		
 Microsoft-Windows-Perflib	2003	0	task_0PCODE_128pcode_1282003(UnicodeString param1, UnicodeString param2)	opcode_128		task_0	Always		
+Microsoft-Windows-Perflib	2003	1	task_02003_V1(UnicodeString Library, UnicodeString Service)			task_0	Warning		
 Microsoft-Windows-Perflib	3002	0	task_0PCODE_192pcode_1923002()	opcode_192		task_0	Always		
+Microsoft-Windows-Perflib	3002	1	task_03002_V1()			task_0	Error		
 Microsoft-Windows-Perflib	3003	0	task_0PCODE_192pcode_1923003(UnicodeString param1, UnicodeString param2)	opcode_192		task_0	Always		
-Microsoft-Windows-Perflib	3004	0	task_0PCODE_192pcode_1923004(UnicodeString param1, UnicodeString param2)	opcode_192		task_0	Always		
+Microsoft-Windows-Perflib	3003	1	task_03003_V1(AnsiString ProcName, UnicodeString Service)			task_0	Error		

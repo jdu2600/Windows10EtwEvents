@@ -1,9 +1,13 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
 Microsoft-Windows-DeviceUpdateAgent	100	0	task_0(UnicodeString Prop_SessionId)			task_0	Informational		
+Microsoft-Windows-DeviceUpdateAgent	100	1	task_0_V1(UnicodeString Prop_SessionId, UnicodeString Prop_UpdateId, UnicodeString Prop_FlightId)			task_0	Informational		
 Microsoft-Windows-DeviceUpdateAgent	101	0	task_0101(UInt32 HRESULT)			task_0	Error		
+Microsoft-Windows-DeviceUpdateAgent	101	1	task_0101_V1(UnicodeString Prop_UpdateId, UnicodeString Prop_FlightId, UInt32 HRESULT)			task_0	Error		
 Microsoft-Windows-DeviceUpdateAgent	200	0	task_0200(UInt32 HRESULT)			task_0	Error		
+Microsoft-Windows-DeviceUpdateAgent	200	1	task_0200_V1(UnicodeString Prop_ProductId, UnicodeString Prop_ProductVersion, UInt32 HRESULT)			task_0	Error		
 Microsoft-Windows-DeviceUpdateAgent	201	0	task_0201(UInt32 Prop_NumFiles, UInt64 Prop_RequestSize)			task_0	Informational		
 Microsoft-Windows-DeviceUpdateAgent	300	0	task_0300(UInt32 HRESULT)			task_0	Error		
+Microsoft-Windows-DeviceUpdateAgent	300	1	task_0300_V1(UnicodeString Prop_ProductId, UnicodeString Prop_ProductVersion, UInt32 HRESULT)			task_0	Error		
 Microsoft-Windows-DeviceUpdateAgent	301	0	task_0301(UInt32 Win32Error, UnicodeString Prop_UnicodeString)			task_0	Error		
 Microsoft-Windows-DeviceUpdateAgent	302	0	task_0302(UInt32 Win32Error, UnicodeString Prop_UnicodeString)			task_0	Error		
 Microsoft-Windows-DeviceUpdateAgent	303	0	task_0303(UInt32 Win32Error, UnicodeString Prop_UnicodeString)			task_0	Error		
@@ -20,3 +24,4 @@ Microsoft-Windows-DeviceUpdateAgent	800	0	task_0800(UInt32 HRESULT)			task_0	Err
 Microsoft-Windows-DeviceUpdateAgent	801	0	task_0801(UnicodeString Prop_ProductId, UnicodeString Prop_ProductVersion)			task_0	Informational		
 Microsoft-Windows-DeviceUpdateAgent	802	0	task_0802(UnicodeString Prop_ProductId, UnicodeString Prop_ProductVersion, UInt32 Prop_MissingUpdates, UInt32 Prop_MissingDrivers, UInt32 Prop_UnpublishedDrivers, UInt32 Prop_PublishedDrivers, UInt32 Prop_AnalysisErrorDrivers)			task_0	Error		
 Microsoft-Windows-DeviceUpdateAgent	900	0	task_0900(UInt32 HRESULT)			task_0	Error		
+Microsoft-Windows-DeviceUpdateAgent	1000	0	task_01000(UnicodeString Prop_ProductId, UnicodeString Prop_Version1, UnicodeString Prop_Version2)			task_0	Error		

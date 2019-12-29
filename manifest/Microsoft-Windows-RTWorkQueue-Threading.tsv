@@ -50,3 +50,7 @@ Microsoft-Windows-RTWorkQueue-Threading	4513	0	Platform:Shutdown_WorkQueueStop(P
 Microsoft-Windows-RTWorkQueue-Threading	4514	0	WorkQueue:RunLimitStart(Pointer WorkQueuePointer, UInt32 WorkQueueID, UInt32 TaskGroup)	Start		WorkQueue:RunLimit	Verbose		
 Microsoft-Windows-RTWorkQueue-Threading	4515	0	WorkQueue:RunLimitStop(Pointer WorkQueuePointer, UInt32 WorkQueueID, UInt32 TaskGroup)	Stop		WorkQueue:RunLimit	Verbose		
 Microsoft-Windows-RTWorkQueue-Threading	4516	0	WorkQueue:RunLimit(Pointer WorkQueuePointer, UInt32 WorkQueueID, UInt32 TaskGroup)		Telemetry	WorkQueue:RunLimit	Verbose		
+Microsoft-Windows-RTWorkQueue-Threading	4517	0	TaskGroupStart(Pointer TaskGroup)	Start		TaskGroup	Verbose		
+Microsoft-Windows-RTWorkQueue-Threading	4518	0	TaskGroupStop(Pointer TaskGroup)	Stop		TaskGroup	Verbose		
+Microsoft-Windows-RTWorkQueue-Threading	4519	0	TaskGroup(Pointer TaskGroup, UInt32 RefCount)		Telemetry	TaskGroup	Verbose		
+Microsoft-Windows-RTWorkQueue-Threading	4520	0	TaskGroup4520(UInt32 ObjectCount)		Telemetry	TaskGroup	Verbose		

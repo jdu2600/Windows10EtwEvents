@@ -8,10 +8,10 @@ Microsoft-Windows-WindowsUpdateClient	20	0	WindowsUpdateAgentInstallation20(HexI
 Microsoft-Windows-WindowsUpdateClient	20	1	WindowsUpdateAgentInstallation20_V1(HexInt32 errorCode, UnicodeString updateTitle, GUID updateGuid, UInt32 updateRevisionNumber, GUID serviceGuid)	Installation	install failure	WindowsUpdateAgent	Error		
 Microsoft-Windows-WindowsUpdateClient	21	0	AutomaticUpdatesReboot(UnicodeString updatelist)	Reboot	reboot	AutomaticUpdates	Informational		
 Microsoft-Windows-WindowsUpdateClient	22	0	AutomaticUpdatesReboot22(UnicodeString restarttime, UnicodeString updatelist)	Reboot	reboot	AutomaticUpdates	Informational		
-Microsoft-Windows-WindowsUpdateClient	23	0	WindowsUpdateAgentUninstallation(UnicodeString updateTitle, GUID updateGuid, UInt32 updateRevisionNumber)	Uninstallation	install success	WindowsUpdateAgent	Informational		
-Microsoft-Windows-WindowsUpdateClient	23	1	WindowsUpdateAgentUninstallation_V1(UnicodeString updateTitle, GUID updateGuid, UInt32 updateRevisionNumber, GUID serviceGuid)	Uninstallation	install success	WindowsUpdateAgent	Informational		
-Microsoft-Windows-WindowsUpdateClient	24	0	WindowsUpdateAgentUninstallation24(HexInt32 errorCode, UnicodeString updatelist, GUID updateGuid, UInt32 updateRevisionNumber)	Uninstallation	install failure	WindowsUpdateAgent	Error		
-Microsoft-Windows-WindowsUpdateClient	24	1	WindowsUpdateAgentUninstallation24_V1(HexInt32 errorCode, UnicodeString updatelist, GUID updateGuid, UInt32 updateRevisionNumber, GUID serviceGuid)	Uninstallation	install failure	WindowsUpdateAgent	Error		
+Microsoft-Windows-WindowsUpdateClient	23	0	WindowsUpdateAgentUninstallation(UnicodeString updateTitle, GUID updateGuid, UInt32 updateRevisionNumber)	Uninstallation	success uninstall	WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	23	1	WindowsUpdateAgentUninstallation_V1(UnicodeString updateTitle, GUID updateGuid, UInt32 updateRevisionNumber, GUID serviceGuid)	Uninstallation	success uninstall	WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	24	0	WindowsUpdateAgentUninstallation24(HexInt32 errorCode, UnicodeString updatelist, GUID updateGuid, UInt32 updateRevisionNumber)	Uninstallation	failure uninstall	WindowsUpdateAgent	Error		
+Microsoft-Windows-WindowsUpdateClient	24	1	WindowsUpdateAgentUninstallation24_V1(HexInt32 errorCode, UnicodeString updatelist, GUID updateGuid, UInt32 updateRevisionNumber, GUID serviceGuid)	Uninstallation	failure uninstall	WindowsUpdateAgent	Error		
 Microsoft-Windows-WindowsUpdateClient	25	0	WindowsUpdateAgentCheckforUpdates(HexInt32 errorCode)	CheckforUpdates	detect failure	WindowsUpdateAgent	Error		
 Microsoft-Windows-WindowsUpdateClient	25	1	WindowsUpdateAgentCheckforUpdates_V1(HexInt32 errorCode, GUID serviceGuid)	CheckforUpdates	detect failure	WindowsUpdateAgent	Error		
 Microsoft-Windows-WindowsUpdateClient	26	0	WindowsUpdateAgentCheckforUpdates26(UInt32 updateCount)	CheckforUpdates	detect success	WindowsUpdateAgent	Informational		
@@ -45,3 +45,4 @@ Microsoft-Windows-WindowsUpdateClient	211	0	WindowsUpdateAgentStop(UInt32 pdcAct
 Microsoft-Windows-WindowsUpdateClient	212	1	WindowsUpdateAgentRevert212_V1(UnicodeString updateTitle, GUID updateGuid, UInt32 updateRevisionNumber, GUID serviceGuid)	Revert	success Revert	WindowsUpdateAgent	Informational		
 Microsoft-Windows-WindowsUpdateClient	213	0	WindowsUpdateAgentRevert(HexInt32 errorCode, UnicodeString updatelist, GUID updateGuid, UInt32 updateRevisionNumber)	Revert	failure Revert	WindowsUpdateAgent	Error		
 Microsoft-Windows-WindowsUpdateClient	214	0	WindowsUpdateAgentRevert214(UnicodeString updateTitle, GUID updateGuid, UInt32 updateRevisionNumber)	Revert	started Revert	WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	215	0	WindowsUpdateAgentUninstallation215(UnicodeString updateTitle, GUID updateGuid, UInt32 updateRevisionNumber)	Uninstallation	started uninstall	WindowsUpdateAgent	Informational		

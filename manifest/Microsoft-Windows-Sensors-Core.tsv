@@ -1,0 +1,74 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Sensors-Core	1001	0	SensorsCxInitializationTask(Pointer WdfDeviceInit)			SensorsCxInitializationTask	Error		
+Microsoft-Windows-Sensors-Core	1002	0	SensorsCxInitializationTask1002(Pointer WdfDevice)			SensorsCxInitializationTask	Error		
+Microsoft-Windows-Sensors-Core	1003	0	SensorsCxInitializationTask1003(Pointer WdfDevice, Boolean IsStateChangeSupported)			SensorsCxInitializationTask	Informational		
+Microsoft-Windows-Sensors-Core	1004	0	SensorsCxInitializationTask1004(Pointer WdfDevice, Boolean IsDriverPowerPolicyOwner)			SensorsCxInitializationTask	Informational		
+Microsoft-Windows-Sensors-Core	1005	0	SensorsCxInitializationTask1005(Pointer WdfDevice, Pointer SENSOROBJECT, GUID SensorType, GUID PersistentUniqueID)			SensorsCxInitializationTask	Informational		
+Microsoft-Windows-Sensors-Core	1006	0	SensorsCxInitializationTask1006(Pointer WdfDevice, Pointer SENSOROBJECT, GUID VendorDefinedSubType, GUID PersistentUniqueID)			SensorsCxInitializationTask	Informational		
+Microsoft-Windows-Sensors-Core	1007	0	SensorsCxInitializationTask1007(Pointer WdfDevice, Pointer SENSOROBJECT, GUID PersistentUniqueID)			SensorsCxInitializationTask	Error		
+Microsoft-Windows-Sensors-Core	1008	0	SensorsCxInitializationTask1008(Pointer WdfDevice, Pointer SENSOROBJECT, GUID SensorType, GUID PersistentUniqueID)			SensorsCxInitializationTask	Informational		
+Microsoft-Windows-Sensors-Core	1009	0	SensorsCxInitializationTask1009(Pointer SENSOROBJECT)			SensorsCxInitializationTask	Warning		
+Microsoft-Windows-Sensors-Core	1010	0	SensorsCxInitializationTask1010(Pointer WdfDevice, Pointer SENSOROBJECT, GUID FmtId, UInt32 Pid)			SensorsCxInitializationTask	Informational		
+Microsoft-Windows-Sensors-Core	1011	0	SensorsCxInitializationTask1011(Pointer WdfDevice, Pointer SENSOROBJECT, UInt32 IntervalMs)			SensorsCxInitializationTask	Error		
+Microsoft-Windows-Sensors-Core	1012	0	SensorsCxInitializationTask1012(Pointer WdfDevice, Pointer SENSOROBJECT, UInt32 IntervalMs)			SensorsCxInitializationTask	Error		
+Microsoft-Windows-Sensors-Core	1013	0	SensorsCxInitializationTask1013(Pointer WdfDevice, Pointer SENSOROBJECT, UInt32 MaxDataSize)			SensorsCxInitializationTask	Error		
+Microsoft-Windows-Sensors-Core	1014	0	SensorsCxInitializationTask1014(Pointer WdfDevice, Pointer SENSOROBJECT, UInt32 MaxDataSize)			SensorsCxInitializationTask	Error		
+Microsoft-Windows-Sensors-Core	1015	0	SensorsCxInitializationTask1015(Pointer WdfDevice, Pointer SENSOROBJECT, UInt32 BatchSize)			SensorsCxInitializationTask	Error		
+Microsoft-Windows-Sensors-Core	1016	0	SensorsCxInitializationTask1016()			SensorsCxInitializationTask	Error		
+Microsoft-Windows-Sensors-Core	1017	0	SensorsCxInitializationTask1017()			SensorsCxInitializationTask	Error		
+Microsoft-Windows-Sensors-Core	1018	0	SensorsCxInitializationTask1018()			SensorsCxInitializationTask	Error		
+Microsoft-Windows-Sensors-Core	1019	0	SensorsCxGetDataIntervalTask(Pointer WdfDevice, Pointer SENSOROBJECT, Pointer pIntervalMs, UInt32 NtStatus)			SensorsCxGetDataIntervalTask	Error		
+Microsoft-Windows-Sensors-Core	1020	0	SensorsCxSetDataIntervalTask(Pointer WdfDevice, Pointer SENSOROBJECT, UInt32 IntervalMs, UInt32 NtStatus)			SensorsCxSetDataIntervalTask	Error		
+Microsoft-Windows-Sensors-Core	1021	0	SensorsCxGetDataThresholdsTask(Pointer WdfDevice, Pointer SENSOROBJECT, Pointer pThresholds, Pointer pSize, UInt32 NtStatus)			SensorsCxGetDataThresholdsTask	Error		
+Microsoft-Windows-Sensors-Core	1022	0	SensorsCxSetDataThresholdsTask(Pointer WdfDevice, Pointer SENSOROBJECT, Pointer pThresholds, UInt32 NtStatus)			SensorsCxSetDataThresholdsTask	Error		
+Microsoft-Windows-Sensors-Core	1023	0	SensorsCxGetPropertiesTask(Pointer WdfDevice, Pointer SENSOROBJECT, Pointer pProperties, Pointer pSize, UInt32 NtStatus)			SensorsCxGetPropertiesTask	Error		
+Microsoft-Windows-Sensors-Core	1024	0	SensorsCxGetSupportedDatafieldsTask(Pointer WdfDevice, Pointer SENSOROBJECT, Pointer pProperties, Pointer pSize, UInt32 NtStatus)			SensorsCxGetSupportedDatafieldsTask	Error		
+Microsoft-Windows-Sensors-Core	1025	0	SensorsCxGetDatafieldPropertiesTask(Pointer WdfDevice, Pointer SENSOROBJECT, Pointer pDatafield, Pointer pProperties, Pointer pSize, UInt32 NtStatus)			SensorsCxGetDatafieldPropertiesTask	Error		
+Microsoft-Windows-Sensors-Core	1026	0	SensorsCxStartSensorTask(Pointer WdfDevice, Pointer SENSOROBJECT, UInt32 NtStatus)			SensorsCxStartSensorTask	Error		
+Microsoft-Windows-Sensors-Core	1027	0	SensorsCxStopSensorTask(Pointer WdfDevice, Pointer SENSOROBJECT, UInt32 NtStatus)			SensorsCxStopSensorTask	Error		
+Microsoft-Windows-Sensors-Core	1028	0	SensorsCxStartHistoryTask(Pointer WdfDevice, Pointer SENSOROBJECT, UInt32 NtStatus)			SensorsCxStartHistoryTask	Error		
+Microsoft-Windows-Sensors-Core	1029	0	SensorsCxStopHistoryTask(Pointer WdfDevice, Pointer SENSOROBJECT, UInt32 NtStatus)			SensorsCxStopHistoryTask	Error		
+Microsoft-Windows-Sensors-Core	1030	0	SensorsCxStartHistoryRetrievalTask(Pointer WdfDevice, Pointer SENSOROBJECT, Pointer pHistoryCollection, UInt32 Size, UInt32 NtStatus)			SensorsCxStartHistoryRetrievalTask	Error		
+Microsoft-Windows-Sensors-Core	1031	0	SensorsCxCancelHistoryRetrievalTask(Pointer WdfDevice, Pointer SENSOROBJECT, Pointer pBytesWritten, UInt32 NtStatus)			SensorsCxCancelHistoryRetrievalTask	Error		
+Microsoft-Windows-Sensors-Core	1032	0	SensorsCxClearHistoryTask(Pointer WdfDevice, Pointer SENSOROBJECT, UInt32 NtStatus)			SensorsCxClearHistoryTask	Error		
+Microsoft-Windows-Sensors-Core	1033	0	SensorsCxSetReportLatencyTask(Pointer WdfDevice, Pointer SENSOROBJECT, UInt32 ReportLatencyMs, UInt32 NtStatus)			SensorsCxSetReportLatencyTask	Error		
+Microsoft-Windows-Sensors-Core	1034	0	SensorsCxEnableWakeTask(Pointer WdfDevice, Pointer SENSOROBJECT, UInt32 NtStatus)			SensorsCxEnableWakeTask	Error		
+Microsoft-Windows-Sensors-Core	1035	0	SensorsCxDisableWakeTask(Pointer WdfDevice, Pointer SENSOROBJECT, UInt32 NtStatus)			SensorsCxDisableWakeTask	Error		
+Microsoft-Windows-Sensors-Core	1036	0	SensorsCxRundownTask(Pointer WdfDevice, Pointer SENSOROBJECT, GUID Type, GUID Category, GUID SubType, GUID PeristentUniqueId, UnicodeString Name, UnicodeString Model, UnicodeString Manufacturer)			SensorsCxRundownTask	Informational		
+Microsoft-Windows-Sensors-Core	1100	0	SensorsCxRundownTask1100(GUID PeristentUniqueId, UInt32 ProcessId, UInt32 ReportIntervalMs, UInt32 ReportLatencyMs, Boolean IsStreaming)			SensorsCxRundownTask	Informational		
+Microsoft-Windows-Sensors-Core	1101	0	SensorsDefaultDeviceSelectionTask(UnicodeString Interface)			SensorsDefaultDeviceSelectionTask	Informational		
+Microsoft-Windows-Sensors-Core	1102	0	SensorsDefaultDeviceSelectionTask1102(UnicodeString Interface)			SensorsDefaultDeviceSelectionTask	Informational		
+Microsoft-Windows-Sensors-Core	1103	0	SensorsDefaultDeviceSelectionTask1103(UnicodeString Interface)			SensorsDefaultDeviceSelectionTask	Informational		
+Microsoft-Windows-Sensors-Core	1104	0	SensorsDefaultDeviceSelectionTask1104(UnicodeString Interface)			SensorsDefaultDeviceSelectionTask	Informational		
+Microsoft-Windows-Sensors-Core	1105	0	SensorsDefaultDeviceSelectionTask1105(UnicodeString Interface, Float PowerUsage)			SensorsDefaultDeviceSelectionTask	Informational		
+Microsoft-Windows-Sensors-Core	1106	0	SensorsDefaultDeviceSelectionTask1106(UnicodeString Interface)			SensorsDefaultDeviceSelectionTask	Informational		
+Microsoft-Windows-Sensors-Core	1107	0	SensorsDefaultDeviceSelectionTask1107(UnicodeString Interface)			SensorsDefaultDeviceSelectionTask	Informational		
+Microsoft-Windows-Sensors-Core	1108	0	SensorsDefaultDeviceSelectionTask1108(UnicodeString Interface)			SensorsDefaultDeviceSelectionTask	Informational		
+Microsoft-Windows-Sensors-Core	1200	0	SensorsHidInitializationTask(Pointer WdfDevice, UInt16 Usage)			SensorsHidInitializationTask	Informational		
+Microsoft-Windows-Sensors-Core	1201	0	SensorsHidInitializationTask1201(Pointer WdfDevice, UInt16 Usage)			SensorsHidInitializationTask	Informational		
+Microsoft-Windows-Sensors-Core	1202	0	SensorsHidInitializationTask1202(Pointer WdfDevice, UInt16 SensorUsage, UInt8 ReportIdInCaps, UInt8 ReportIdInReport)			SensorsHidInitializationTask	Error		
+Microsoft-Windows-Sensors-Core	1203	0	SensorsHidInitializationTask1203(Pointer WdfDevice, UInt16 SensorUsage, UInt8 ReportId)			SensorsHidInitializationTask	Error		
+Microsoft-Windows-Sensors-Core	1204	0	SensorsHidInitializationTask1204(Pointer WdfDevice, UInt16 SensorUsage, UInt8 ReportId, UInt16 Usage)			SensorsHidInitializationTask	Warning		
+Microsoft-Windows-Sensors-Core	1205	0	SensorsHidInitializationTask1205(Pointer WdfDevice, UInt16 SensorUsage, UInt8 ReportId, UInt16 Usage, GUID fmtid, UInt32 pid)			SensorsHidInitializationTask	Informational		
+Microsoft-Windows-Sensors-Core	1206	0	SensorsHidInitializationTask1206(Pointer WdfDevice, UInt16 SensorUsage, UInt8 ReportId, UInt16 Usage, GUID fmtid, UInt32 pid)			SensorsHidInitializationTask	Informational		
+Microsoft-Windows-Sensors-Core	1207	0	SensorsHidInitializationTask1207(Pointer WdfDevice, UInt16 SensorUsage, UInt8 ReportId, UInt16 Usage, GUID fmtid, UInt32 pid)			SensorsHidInitializationTask	Informational		
+Microsoft-Windows-Sensors-Core	1208	0	SensorsHidInitializationTask1208(Pointer WdfDevice, UInt16 SensorUsage, UInt8 ReportId, UInt16 BitSize, UInt16 ExpectedBitSize, UInt16 ReportCount, UInt16 ExpectedReportCount, UInt16 Exponent, UInt16 ExpectedExponent)			SensorsHidInitializationTask	Warning		
+Microsoft-Windows-Sensors-Core	1209	0	SensorsHidInitializationTask1209(Pointer WdfDevice, UInt16 SensorUsage, UInt8 ReportId)			SensorsHidInitializationTask	Informational		
+Microsoft-Windows-Sensors-Core	1210	0	SensorsHidInitializationTask1210(Pointer WdfDevice, UInt16 SensorUsage, UInt8 ReportId)			SensorsHidInitializationTask	Error		
+Microsoft-Windows-Sensors-Core	1211	0	SensorsHidInitializationTask1211(Pointer WdfDevice, UInt16 SensorUsage, UInt8 ReportId)			SensorsHidInitializationTask	Informational		
+Microsoft-Windows-Sensors-Core	1212	0	SensorsHidInitializationTask1212(Pointer WdfDevice, UInt16 SensorUsage, UInt8 ReportId)			SensorsHidInitializationTask	Error		
+Microsoft-Windows-Sensors-Core	1213	0	SensorsHidInitializationTask1213(Pointer WdfDevice, UInt16 SensorUsage, UInt8 ReportId)			SensorsHidInitializationTask	Informational		
+Microsoft-Windows-Sensors-Core	1214	0	SensorsHidInitializationTask1214(Pointer WdfDevice, UInt16 SensorUsage, UInt8 ReportId)			SensorsHidInitializationTask	Error		
+Microsoft-Windows-Sensors-Core	1215	0	SensorsHidInitializationTask1215(Pointer WdfDevice, UInt16 SensorUsage, UInt8 ReportId)			SensorsHidInitializationTask	Informational		
+Microsoft-Windows-Sensors-Core	1216	0	SensorsHidInitializationTask1216(Pointer WdfDevice, UInt16 SensorUsage, UInt8 ReportId)			SensorsHidInitializationTask	Error		
+Microsoft-Windows-Sensors-Core	1217	0	SensorsHidInitializationTask1217(Pointer WdfDevice, UInt16 SensorUsage, UInt8 ReportId)			SensorsHidInitializationTask	Informational		
+Microsoft-Windows-Sensors-Core	1218	0	SensorsHidInitializationTask1218(Pointer WdfDevice, UInt16 SensorUsage, UInt8 ReportId)			SensorsHidInitializationTask	Informational		
+Microsoft-Windows-Sensors-Core	1219	0	SensorsHidInitializationTask1219(Pointer WdfDevice, UInt16 SensorUsage, UInt8 ReportId, Boolean IsWakeReportingStateSupported, Boolean IsWakePowerStateSupported)			SensorsHidInitializationTask	Informational		
+Microsoft-Windows-Sensors-Core	1220	0	SensorsHidReportParsingTask(Pointer WdfDevice, UInt8 ReportIdInReport)			SensorsHidReportParsingTask	Error		
+Microsoft-Windows-Sensors-Core	1221	0	SensorsHidGetInputReportTask(Pointer WdfDevice, UInt16 SensorUsage, UInt8 ReportId, UInt32 NtStatus)			SensorsHidGetInputReportTask	Error		
+Microsoft-Windows-Sensors-Core	1222	0	SensorsHidGetFeatureReportTask(Pointer WdfDevice, UInt16 SensorUsage, UInt8 ReportId, UInt32 NtStatus)			SensorsHidGetFeatureReportTask	Error		
+Microsoft-Windows-Sensors-Core	1223	0	SensorsHidSetFeatureReportTask(Pointer WdfDevice, UInt16 SensorUsage, UInt8 ReportId, UInt32 NtStatus)			SensorsHidSetFeatureReportTask	Error		
+Microsoft-Windows-Sensors-Core	1224	0	SensorsHidInitializationTask1224(Pointer WdfDevice, UInt16 SensorUsage, UInt8 ReportId)			SensorsHidInitializationTask	Error		
+Microsoft-Windows-Sensors-Core	1300	0	SensorServiceSdoCreateTask(UnicodeString Interface)			SensorServiceSdoCreateTask	Error		
+Microsoft-Windows-Sensors-Core	1301	0	SensorServiceSdoCreateTask1301(UnicodeString Interface)			SensorServiceSdoCreateTask	Error		
+Microsoft-Windows-Sensors-Core	1302	0	SensorServiceSdoRemoveTask(UnicodeString Interface)			SensorServiceSdoRemoveTask	Error		

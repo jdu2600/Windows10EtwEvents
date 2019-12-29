@@ -99,16 +99,9 @@ Microsoft-Windows-SettingSync	5690	0	task_05690(UnicodeString CollectionId, Unic
 Microsoft-Windows-SettingSync	5691	0	task_05691(UnicodeString CollectionId, UnicodeString SettingUnitId, UInt32 Operation, UInt32 HRESULT)			task_0	Error		
 Microsoft-Windows-SettingSync	5692	0	task_05692(UnicodeString CollectionId, UnicodeString SettingUnitId, UInt32 Operation, UInt32 HRESULT)			task_0	Error		
 Microsoft-Windows-SettingSync	5693	0	task_05693(UnicodeString CollectionId, UInt32 Value, UInt32 HRESULT)			task_0	Error		
-Microsoft-Windows-SettingSync	5701	0	task_05701(UInt32 HRESULT)			task_0	Informational		
-Microsoft-Windows-SettingSync	5702	0	task_05702(UInt32 HRESULT)			task_0	Informational		
-Microsoft-Windows-SettingSync	5703	0	task_05703()			task_0	Informational		
-Microsoft-Windows-SettingSync	5704	0	task_05704(UInt32 HRESULT)			task_0	Informational		
-Microsoft-Windows-SettingSync	5705	0	task_05705(Boolean Boolean)			task_0	Informational		
 Microsoft-Windows-SettingSync	5706	0	task_05706(UInt32 HRESULT)			task_0	Informational		
 Microsoft-Windows-SettingSync	5707	0	task_05707(UInt32 HRESULT)			task_0	Error		
 Microsoft-Windows-SettingSync	5708	0	task_05708(UnicodeString CollectionId, UInt32 HRESULT)			task_0	Warning		
-Microsoft-Windows-SettingSync	5711	0	task_05711(Boolean Boolean)			task_0	Informational		
-Microsoft-Windows-SettingSync	5712	0	task_05712()			task_0	Informational		
 Microsoft-Windows-SettingSync	5713	0	task_05713(UnicodeString Message, UInt32 HRESULT)			task_0	Error		
 Microsoft-Windows-SettingSync	5714	0	task_05714(UnicodeString Message, UInt32 HRESULT)			task_0	Error		
 Microsoft-Windows-SettingSync	5715	0	task_05715(UInt32 HRESULT)			task_0	Error		
@@ -253,8 +246,6 @@ Microsoft-Windows-SettingSync	6560	0	task_06560(UnicodeString SettingUnitId, Uni
 Microsoft-Windows-SettingSync	6561	0	task_06561(UnicodeString CollectionId)			task_0	Informational		
 Microsoft-Windows-SettingSync	6562	0	task_06562()			task_0	Verbose		
 Microsoft-Windows-SettingSync	6563	0	task_06563()			task_0	Verbose		
-Microsoft-Windows-SettingSync	6564	0	Debug_BackupMaintenanceStart()	Start		Debug_BackupMaintenance	Informational		
-Microsoft-Windows-SettingSync	6565	0	Debug_BackupMaintenanceStop()	Stop		Debug_BackupMaintenance	Informational		
 Microsoft-Windows-SettingSync	6566	0	Debug_WLRoamMaintenanceStop()	Stop		Debug_WLRoamMaintenance	Informational		
 Microsoft-Windows-SettingSync	6567	0	task_06567(UnicodeString CollectionId, UInt32 HRESULT)			task_0	Error		
 Microsoft-Windows-SettingSync	6568	0	task_06568(UnicodeString CollectionId, UInt32 HRESULT)			task_0	Error		
@@ -465,8 +456,6 @@ Microsoft-Windows-SettingSync	7177	0	Perf_AppSyncInstallAppStart()	Start	AppSync
 Microsoft-Windows-SettingSync	7178	0	Perf_AppSyncInstallAppStop(UInt32 HRESULT)	Stop	AppSync	Perf_AppSyncInstallApp	Informational		
 Microsoft-Windows-SettingSync	7179	0	Perf_AppSyncUninstallAppStart()	Start	AppSync	Perf_AppSyncUninstallApp	Informational		
 Microsoft-Windows-SettingSync	7180	0	Perf_AppSyncUninstallAppStop(UInt32 HRESULT)	Stop	AppSync	Perf_AppSyncUninstallApp	Informational		
-Microsoft-Windows-SettingSync	7181	0	Perf_OutOfQuotaDialogInvokeDialogStart()	Start	OutOfQuotaDialog	Perf_OutOfQuotaDialogInvokeDialog	Informational		
-Microsoft-Windows-SettingSync	7182	0	Perf_OutOfQuotaDialogInvokeDialogStop(UInt32 HRESULT)	Stop	OutOfQuotaDialog	Perf_OutOfQuotaDialogInvokeDialog	Informational		
 Microsoft-Windows-SettingSync	7183	0	Perf_WLRoamCheckIfBackupIsDisabledStart()	Start	RoamingSettings	Perf_WLRoamCheckIfBackupIsDisabled	Informational		
 Microsoft-Windows-SettingSync	7184	0	Perf_WLRoamCheckIfBackupIsDisabledStop(UInt32 HRESULT)	Stop	RoamingSettings	Perf_WLRoamCheckIfBackupIsDisabled	Informational		
 Microsoft-Windows-SettingSync	7185	0	Perf_AppSyncAppInstalledStart()	Start	AppSync	Perf_AppSyncAppInstalled	Informational		
@@ -475,8 +464,6 @@ Microsoft-Windows-SettingSync	7187	0	Perf_AppSyncAppUninstalledStart()	Start	App
 Microsoft-Windows-SettingSync	7188	0	Perf_AppSyncAppUninstalledStop(UnicodeString Message, UInt32 HRESULT)	Stop	AppSync	Perf_AppSyncAppUninstalled	Informational		
 Microsoft-Windows-SettingSync	7189	0	Perf_AppSyncRevertAppInstalledStart()	Start	AppSync	Perf_AppSyncRevertAppInstalled	Informational		
 Microsoft-Windows-SettingSync	7190	0	Perf_AppSyncRevertAppInstalledStop(UnicodeString Message, UInt32 HRESULT)	Stop	AppSync	Perf_AppSyncRevertAppInstalled	Informational		
-Microsoft-Windows-SettingSync	7191	0	Perf_CatastrophicRestoreFailureDialogInvokeDialogStart()	Start	CatastrophicRestoreFailureDialog	Perf_CatastrophicRestoreFailureDialogInvokeDialog	Informational		
-Microsoft-Windows-SettingSync	7192	0	Perf_CatastrophicRestoreFailureDialogInvokeDialogStop(UInt32 HRESULT)	Stop	CatastrophicRestoreFailureDialog	Perf_CatastrophicRestoreFailureDialogInvokeDialog	Informational		
 Microsoft-Windows-SettingSync	7193	0	Perf_WLRoamMoveBackupFolderForRestoreStart()	Start	RoamingSettings	Perf_WLRoamMoveBackupFolderForRestore	Informational		
 Microsoft-Windows-SettingSync	7194	0	Perf_WLRoamMoveBackupFolderForRestoreStop(UInt32 HRESULT)	Stop	RoamingSettings	Perf_WLRoamMoveBackupFolderForRestore	Informational		
 Microsoft-Windows-SettingSync	7195	0	Perf_WLRoamGetAppOsBackupFolderForMetadataStart()	Start	RoamingSettings	Perf_WLRoamGetAppOsBackupFolderForMetadata	Informational		

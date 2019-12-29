@@ -11,12 +11,12 @@ Microsoft-Windows-Wininit	9	0	ShutdownWindowsStart(UInt32 Flags)	Start	PerfInstr
 Microsoft-Windows-Wininit	10	0	ShutdownWindowsStop(UInt32 Win32Status)	Stop	PerfInstrumentation	ShutdownWindows	Informational		
 Microsoft-Windows-Wininit	11	0	task_0(UInt32 StringCount, UnicodeString String)			task_0	Warning		
 Microsoft-Windows-Wininit	12	0	task_012(UInt32 Level)			task_0	Informational		
-Microsoft-Windows-Wininit	13	0	task_013(UInt32 Level)			task_0	Informational		
+Microsoft-Windows-Wininit	13	0	task_013()			task_0	Informational		
 Microsoft-Windows-Wininit	14	0	task_014(UInt32 Config, UInt32 IsTestConfig)			task_0	Informational		
-Microsoft-Windows-Wininit	15	0	task_015(UInt32 Level)			task_0	Warning		
+Microsoft-Windows-Wininit	15	0	task_015()			task_0	Warning		
 Microsoft-Windows-Wininit	16	0	task_016(UInt32 Level)			task_0	Error		
 Microsoft-Windows-Wininit	17	0	task_017(UInt32 Level)			task_0	Error		
-Microsoft-Windows-Wininit	18	0	task_018(UInt32 Level)			task_0	Informational		
+Microsoft-Windows-Wininit	18	0	task_018()			task_0	Informational		
 Microsoft-Windows-Wininit	51	0	NtShutdownSystem()		PerfInstrumentation	NtShutdownSystem	Informational		
 Microsoft-Windows-Wininit	53	0	SentLogoffRequest(UInt32 SessionId, UInt32 Flags)		PerfInstrumentation	SentLogoffRequest	Informational		
 Microsoft-Windows-Wininit	55	0	ReceivedShutdownRequest(UInt32 SessionId, UInt32 IsRemote, UInt32 GracePeriod, UInt32 Flags, UInt32 Reason, UnicodeString Message)		PerfInstrumentation	ReceivedShutdownRequest	Informational		

@@ -21,8 +21,11 @@ Microsoft-Windows-MediaFoundation-Platform	19	0	MF_MFT_Hardware_Enumeration(Unic
 Microsoft-Windows-MediaFoundation-Platform	20	0	MF_MFT_Hardware_EnumerationStop(GUID Category)	Stop		MF_MFT_Hardware_Enumeration	Informational		
 Microsoft-Windows-MediaFoundation-Platform	21	0	OptimizationFlagsStart(UInt32 dwType, UInt32 dwConfig)	Start		OptimizationFlags	Informational		
 Microsoft-Windows-MediaFoundation-Platform	100	0	MediaFoundationPlatformStart(HexInt32 hr)	Start		MediaFoundationPlatform	Informational		
-Microsoft-Windows-MediaFoundation-Platform	101	0	MediaFoundationPlatform()			MediaFoundationPlatform	Informational		
-Microsoft-Windows-MediaFoundation-Platform	102	0	MediaFoundationPlatformStop(HexInt32 hr)	Stop		MediaFoundationPlatform	Informational		
+Microsoft-Windows-MediaFoundation-Platform	101	0	MediaFoundationPlatformShutdownStart()	Start		MediaFoundationPlatformShutdown	Informational		
+Microsoft-Windows-MediaFoundation-Platform	102	0	MediaFoundationPlatformShutdownStop(HexInt32 hr)	Stop		MediaFoundationPlatformShutdown	Informational		
+Microsoft-Windows-MediaFoundation-Platform	103	0	MediaFoundationGetConfigurationKey(Int32 Type, UnicodeString KeyName, Int32 lResult)			MediaFoundationGetConfigurationKey	Informational		
+Microsoft-Windows-MediaFoundation-Platform	104	0	MediaFoundationGetConfigurationValueDWORD(Int32 Type, UnicodeString KeyName, UnicodeString ValueName, Int32 lResult, Boolean QuerySize, UInt32 ValueDWORD)			MediaFoundationGetConfigurationValueDWORD	Informational		
+Microsoft-Windows-MediaFoundation-Platform	105	0	MediaFoundationGetConfigurationValueString(Int32 Type, UnicodeString KeyName, UnicodeString ValueName, Int32 lResult, Boolean QuerySize, UnicodeString ValueString)			MediaFoundationGetConfigurationValueString	Informational		
 Microsoft-Windows-MediaFoundation-Platform	200	0	MediaFoundationSourceResolverStart(Pointer Context, UnicodeString url, HexInt32 hr)	Start		MediaFoundationSourceResolver	Informational		
 Microsoft-Windows-MediaFoundation-Platform	201	0	MediaFoundationSourceResolverStart201(Pointer Context, UnicodeString clsid)	Start		MediaFoundationSourceResolver	Informational		
 Microsoft-Windows-MediaFoundation-Platform	202	0	MediaFoundationSourceResolver(Pointer Context, UnicodeString clsid)			MediaFoundationSourceResolver	Informational		

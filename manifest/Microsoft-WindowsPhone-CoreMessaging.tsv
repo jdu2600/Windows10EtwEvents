@@ -2,14 +2,14 @@ provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channe
 Microsoft-WindowsPhone-CoreMessaging	1000	0	ETW_Init(UInt32 hex)		Performance	ETW_Init	Verbose		
 Microsoft-WindowsPhone-CoreMessaging	1001	0	ETW_Uninit(UInt32 hex)		Performance	ETW_Uninit	Verbose		
 Microsoft-WindowsPhone-CoreMessaging	1050	0	System_OutOfMemory()		Error	System_OutOfMemory	Error		
-Microsoft-WindowsPhone-CoreMessaging	2900	0	CoreUIService_ServerThread_Started(UInt32 coreUIServiceType)		CoreUIService	CoreUIService_ServerThread_Started	Informational		
-Microsoft-WindowsPhone-CoreMessaging	2901	0	CoreUIService_ServerThread_Exiting(UInt32 coreUIServiceType)		CoreUIService	CoreUIService_ServerThread_Exiting	Informational		
-Microsoft-WindowsPhone-CoreMessaging	2902	0	CoreUIService_InitializeService(UInt32 coreUIServiceType)		CoreUIService	CoreUIService_InitializeService	Informational		
-Microsoft-WindowsPhone-CoreMessaging	2903	0	CoreUIService_UninitializeService(UInt32 coreUIServiceType)		CoreUIService	CoreUIService_UninitializeService	Informational		
-Microsoft-WindowsPhone-CoreMessaging	2904	0	CoreUIService_ServiceObjectCreated(UInt32 coreUIServiceType)		CoreUIService	CoreUIService_ServiceObjectCreated	Informational		
-Microsoft-WindowsPhone-CoreMessaging	2905	0	CoreUIService_ServiceObjectDestroyed(UInt32 coreUIServiceType)		CoreUIService	CoreUIService_ServiceObjectDestroyed	Informational		
-Microsoft-WindowsPhone-CoreMessaging	2906	0	CoreUIService_UpdateServiceStatus(UInt32 coreUIServiceType)		CoreUIService	CoreUIService_UpdateServiceStatus	Informational		
-Microsoft-WindowsPhone-CoreMessaging	2907	0	CoreUIService_ServiceObjectServiceMain(UInt32 coreUIServiceType)		CoreUIService	CoreUIService_ServiceObjectServiceMain	Informational		
+Microsoft-WindowsPhone-CoreMessaging	2900	0	CoreUIService_ServerThread_Started()		CoreUIService	CoreUIService_ServerThread_Started	Informational		
+Microsoft-WindowsPhone-CoreMessaging	2901	0	CoreUIService_ServerThread_Exiting()		CoreUIService	CoreUIService_ServerThread_Exiting	Informational		
+Microsoft-WindowsPhone-CoreMessaging	2902	0	CoreUIService_InitializeService()		CoreUIService	CoreUIService_InitializeService	Informational		
+Microsoft-WindowsPhone-CoreMessaging	2903	0	CoreUIService_UninitializeService()		CoreUIService	CoreUIService_UninitializeService	Informational		
+Microsoft-WindowsPhone-CoreMessaging	2904	0	CoreUIService_ServiceObjectCreated()		CoreUIService	CoreUIService_ServiceObjectCreated	Informational		
+Microsoft-WindowsPhone-CoreMessaging	2905	0	CoreUIService_ServiceObjectDestroyed()		CoreUIService	CoreUIService_ServiceObjectDestroyed	Informational		
+Microsoft-WindowsPhone-CoreMessaging	2906	0	CoreUIService_UpdateServiceStatus()		CoreUIService	CoreUIService_UpdateServiceStatus	Informational		
+Microsoft-WindowsPhone-CoreMessaging	2907	0	CoreUIService_ServiceObjectServiceMain()		CoreUIService	CoreUIService_ServiceObjectServiceMain	Informational		
 Microsoft-WindowsPhone-CoreMessaging	2908	0	CoreUIService_CoreUIServiceMain_UnknownService(UnicodeString pwsz)		CoreUIService	CoreUIService_CoreUIServiceMain_UnknownService	Informational		
 Microsoft-WindowsPhone-CoreMessaging	3100	0	Session_CoreUICreateStart()	Start	MessagingPerformance Session	Session_CoreUICreate	Verbose		
 Microsoft-WindowsPhone-CoreMessaging	3101	0	Session_CoreUICreateStop()	Stop	MessagingPerformance Session	Session_CoreUICreate	Verbose		
@@ -57,6 +57,8 @@ Microsoft-WindowsPhone-CoreMessaging	3412	0	RemoteRegistrarClient_CompleteCrossP
 Microsoft-WindowsPhone-CoreMessaging	3413	0	RemoteRegistrarClient_CompleteCrossProcConnectionStop()	Stop	MessagingPerformance RegistrarClient	RemoteRegistrarClient_CompleteCrossProcConnection	Verbose		
 Microsoft-WindowsPhone-CoreMessaging	3414	0	RemoteRegistrarClient_CrossProcClientDisconnectedStart()	Start	MessagingPerformance RegistrarClient	RemoteRegistrarClient_CrossProcClientDisconnected	Verbose		
 Microsoft-WindowsPhone-CoreMessaging	3415	0	RemoteRegistrarClient_CrossProcClientDisconnectedStop()	Stop	MessagingPerformance RegistrarClient	RemoteRegistrarClient_CrossProcClientDisconnected	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3416	0	RemoteRegistrarClient_FreeServerGroupIDForClientStart()	Start	MessagingPerformance RegistrarClient	RemoteRegistrarClient_FreeServerGroupIDForClient	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3417	0	RemoteRegistrarClient_FreeServerGroupIDForClientStop()	Stop	MessagingPerformance RegistrarClient	RemoteRegistrarClient_FreeServerGroupIDForClient	Verbose		
 Microsoft-WindowsPhone-CoreMessaging	3418	0	RemoteRegistrarClient_RegisterObjectStart(UnicodeString pwsz)	Start	MessagingPerformance RegistrarClient	RemoteRegistrarClient_RegisterObject	Verbose		
 Microsoft-WindowsPhone-CoreMessaging	3419	0	RemoteRegistrarClient_RegisterObjectStop()	Stop	MessagingPerformance RegistrarClient	RemoteRegistrarClient_RegisterObject	Verbose		
 Microsoft-WindowsPhone-CoreMessaging	3420	0	RemoteRegistrarClient_UnregisterObjectStart(UnicodeString pwsz)	Start	MessagingPerformance RegistrarClient	RemoteRegistrarClient_UnregisterObject	Verbose		

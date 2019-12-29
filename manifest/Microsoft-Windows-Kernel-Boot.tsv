@@ -78,6 +78,8 @@ Microsoft-Windows-Kernel-Boot	72	0	MeasuredLaunchPrepareLcpFailure(UInt32 Status
 Microsoft-Windows-Kernel-Boot	73	0	MeasuredLaunchTxtRejectedFirmwareAcm(UInt32 TxtStatus)	TxtRejectedFirmwareAcm		MeasuredLaunch	Informational		
 Microsoft-Windows-Kernel-Boot	74	0	VsmLKeyProvisioningStatus74(UInt32 CachedCopyStatus, UInt32 KeyGenerationStatus, UInt32 SealAndSaveStatus, UInt32 UEFIKeysStatus)			VsmLKeyProvisioningStatus	Error		
 Microsoft-Windows-Kernel-Boot	75	0	VsmLKeyProvisioningStatus75(UInt32 CachedCopyStatus, UInt32 KeyGenerationStatus, UInt32 SealAndSaveStatus, UInt32 UEFIKeysStatus)			VsmLKeyProvisioningStatus	Informational		
+Microsoft-Windows-Kernel-Boot	76	0	BootDebuggerEnabled()	Enabled		BootDebugger	Informational		
+Microsoft-Windows-Kernel-Boot	77	0	BootDebuggerInitFailure(UInt32 DebuggerStatus, UInt32 Status)	InitFailure		BootDebugger	Warning		
 Microsoft-Windows-Kernel-Boot	100	0	InitializeLibraryStart()	Start	SoftRestart	InitializeLibrary	Informational		
 Microsoft-Windows-Kernel-Boot	100	1	InitializeLibraryStart_V1(Boolean Secure)	Start	SoftRestart	InitializeLibrary	Informational		
 Microsoft-Windows-Kernel-Boot	101	0	InitializeLibraryStop(UInt32 Status)	Stop	SoftRestart	InitializeLibrary	Informational		
@@ -122,6 +124,7 @@ Microsoft-Windows-Kernel-Boot	138	0	MemoryPartitionRestoreStop(GUID Identifier, 
 Microsoft-Windows-Kernel-Boot	139	0	MemoryPartitionRestore(GUID Identifier, UInt32 Status)		SoftRestart MemoryPreservation	MemoryPartitionRestore	Error		
 Microsoft-Windows-Kernel-Boot	140	0	PersistMemoryPartitionStart(GUID Identifier)	Start	SoftRestart MemoryPreservation	PersistMemoryPartition	Informational		
 Microsoft-Windows-Kernel-Boot	141	0	PersistMemoryPartitionStop(GUID Identifier, UInt32 RunCount, UInt64 PageCount, UInt32 Status, UInt16 PartitionNameLength, UnicodeString PartitionName)	Stop	SoftRestart MemoryPreservation	PersistMemoryPartition	Informational		
+Microsoft-Windows-Kernel-Boot	141	1	PersistMemoryPartitionStop_V1(GUID Identifier, UInt32 RunCount, UInt64 PageCount, UInt32 IoSpaceRunCount, UInt64 IoSpacePageCount, UInt32 Status, UInt16 PartitionNameLength, UnicodeString PartitionName)	Stop	SoftRestart MemoryPreservation	PersistMemoryPartition	Informational		
 Microsoft-Windows-Kernel-Boot	142	0	RegisterLoader(UInt32 Status, UInt32 ActualSize, UInt32 ExpectedSize)		SoftRestart	RegisterLoader	Error		
 Microsoft-Windows-Kernel-Boot	143	0	MemoryPartitionsRestored(UInt32 Status)		SoftRestart MemoryPreservation	MemoryPartitionsRestored	Informational		
 Microsoft-Windows-Kernel-Boot	144	0	QueryStatisticsStart()	Start	SoftRestart	QueryStatistics	Informational		
@@ -132,6 +135,7 @@ Microsoft-Windows-Kernel-Boot	148	0	FreePersistedMemoryBlockStop(UInt32 Status)	
 Microsoft-Windows-Kernel-Boot	149	0	PrepareNotificationStart()	Start	SoftRestart	PrepareNotification	Informational		
 Microsoft-Windows-Kernel-Boot	150	0	PrepareNotificationStop(UInt32 Status)	Stop	SoftRestart	PrepareNotification	Informational		
 Microsoft-Windows-Kernel-Boot	151	0	PartitionInitialAddMemoryStart(UInt32 PartitionId, UInt32 RunCount, UInt64 PageCount)	Start	MemoryPartitions	PartitionInitialAddMemory	Informational		
+Microsoft-Windows-Kernel-Boot	151	1	PartitionInitialAddMemoryStart_V1(UInt32 PartitionId, UInt32 RunCount, UInt64 PageCount, Boolean IoSpaceMemory)	Start	MemoryPartitions	PartitionInitialAddMemory	Informational		
 Microsoft-Windows-Kernel-Boot	152	0	PartitionInitialAddMemoryStop(UInt32 Status)	Stop	MemoryPartitions	PartitionInitialAddMemory	Informational		
 Microsoft-Windows-Kernel-Boot	153	0	VsmPolicyEnablement(UInt32 Status, UInt32 EnableDisableReason, UInt32 VsmPolicy)			VsmPolicyEnablement	Informational		
 Microsoft-Windows-Kernel-Boot	154	0	BootPolicyMigration(UInt32 Status)			BootPolicyMigration	Informational		
@@ -161,6 +165,8 @@ Microsoft-Windows-Kernel-Boot	177	0	EfiVariableAccessGetEfiVariable(GUID VendorG
 Microsoft-Windows-Kernel-Boot	178	0	EfiVariableAccessSetEfiVariable(GUID VendorGuid, UnicodeString VariableName, UInt32 Attributes, UInt32 Status)	SetEfiVariable	EfiVariables	EfiVariableAccess	Informational		
 Microsoft-Windows-Kernel-Boot	179	0	GetFirmwareInformation(UInt32 Status)		SoftRestart	GetFirmwareInformation	Error		
 Microsoft-Windows-Kernel-Boot	180	0	VerifyBootEntry(UInt32 Status)		SoftRestart	VerifyBootEntry	Error		
+Microsoft-Windows-Kernel-Boot	181	0	RegisterFilter(UInt32 Status)		SoftRestart	RegisterFilter	Warning		
+Microsoft-Windows-Kernel-Boot	182	0	IoSpaceMemoryEnumerateFailure(UInt32 Status)	EnumerateFailure	SoftRestart	IoSpaceMemory	Error		
 Microsoft-Windows-Kernel-Boot	200	0	TpmCommandResponse(UInt32 CommandCode, UInt32 ResponseCode, UInt64 ResponseMilliseconds)			TpmCommandResponse	Informational		
 Microsoft-Windows-Kernel-Boot	201	0	TpmCommandResponse201(UInt32 CommandCode, UInt32 ResponseCode, UInt64 ResponseMilliseconds, UInt32 CommandSize, Binary CommandData, UInt32 ResponseSize, Binary ResponseData)			TpmCommandResponse	Informational		
 Microsoft-Windows-Kernel-Boot	202	0	TpmSubmitError(UInt32 CommandCode, UInt32 ErrorCode, UInt64 ResponseMilliseconds)		keyword_80000000000	TpmSubmitError	Error		
@@ -171,7 +177,7 @@ Microsoft-Windows-Kernel-Boot	206	0	EFICapsuleCreationStop(UInt32 Status)	Stop	S
 Microsoft-Windows-Kernel-Boot	207	0	BootSIInitStatus(UInt32 Phase, UInt32 StatusCode, UInt32 EnvironmentState)	InitStatus		BootSI	Informational		
 Microsoft-Windows-Kernel-Boot	208	0	BootSIEnterInsecureState(UInt32 InitState, UInt32 StatusCode, UInt64 FailureAddress, UInt64 ReferenceAddress, UInt32 ReasonCode)	EnterInsecureState	keyword_80000000000	BootSI	Error		
 Microsoft-Windows-Kernel-Boot	209	0	BootSIDrtmSvnCheck(UInt32 SvnCounterId, UInt32 StatusCode, UInt32 SvnValue, UInt32 PrevSvnValue)	DrtmSvnCheck		BootSI	Error		
-Microsoft-Windows-Kernel-Boot	210	0	MeasuredLaunchSinitPerformance(UInt64 SinitStartTime, UInt64 SinitEndTime)	SinitPerformance		MeasuredLaunch	Informational		
+Microsoft-Windows-Kernel-Boot	210	0	MeasuredLaunchSinitPerformance(UInt64 SinitTimeMs)	SinitPerformance		MeasuredLaunch	Informational		
 Microsoft-Windows-Kernel-Boot	211	0	MiniFilterStartFailure(UInt32 Status)		SoftRestart	MiniFilterStartFailure	Error		
 Microsoft-Windows-Kernel-Boot	212	0	FileModification(UInt16 PathLength, UnicodeString Path)		SoftRestart	FileModification	Informational		
 Microsoft-Windows-Kernel-Boot	213	0	RegistryModification(UInt16 PathLength, UnicodeString Path)		SoftRestart	RegistryModification	Informational		
@@ -182,3 +188,8 @@ Microsoft-Windows-Kernel-Boot	217	0	SoftRebootStop217(UInt32 Status)	Stop	SoftRe
 Microsoft-Windows-Kernel-Boot	218	0	SoftReboot(UnicodeString Function, UInt32 Status, UInt32 Checkpoint)		SoftRestart MemoryPreservation	SoftReboot	Error		
 Microsoft-Windows-Kernel-Boot	219	0	MeasuredLaunchTxtInformation(UInt8 AcmDateDay, UInt8 AcmDateMonth, UInt16 AcmDateYear)	TxtInformation		MeasuredLaunch	Informational		
 Microsoft-Windows-Kernel-Boot	220	0	MeasuredLaunchTxtNotSupported(UInt32 TxtStatus)	TxtNotSupported		MeasuredLaunch	Informational		
+Microsoft-Windows-Kernel-Boot	221	0	MeasuredLaunchDrtmDriversNotSupportVbs()	DrtmDriversNotSupportVbs		MeasuredLaunch	Error		
+Microsoft-Windows-Kernel-Boot	222	0	MeasuredLaunchPpamFailure(UInt32 TxtStatus, UInt64 Argument1, UInt64 Argument2)	PpamFailure		MeasuredLaunch	Error		
+Microsoft-Windows-Kernel-Boot	223	0	IoSpaceMemoryAllocationFailure(UInt32 Phase, UInt32 Status, UInt32 Tries, UInt32 RemainingNodesCount, Int16 RemainingNodes)	AllocationFailure		IoSpaceMemory	Error		
+Microsoft-Windows-Kernel-Boot	224	0	IoSpaceMemoryAllocation(UInt32 AllocatedRegions, UInt32 Tries)	Allocation		IoSpaceMemory	Informational		
+Microsoft-Windows-Kernel-Boot	225	0	task_0225()			task_0	Informational		

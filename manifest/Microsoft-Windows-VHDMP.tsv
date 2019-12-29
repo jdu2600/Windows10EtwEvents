@@ -10,6 +10,15 @@ Microsoft-Windows-VHDMP	8	0	task_08(UnicodeString VhdFileName, UInt32 Corruption
 Microsoft-Windows-VHDMP	9	0	task_09(UnicodeString VhdFileName)			task_0	Error		
 Microsoft-Windows-VHDMP	10	0	task_010(UnicodeString VhdFileName, UInt32 Status)			task_0	Error		
 Microsoft-Windows-VHDMP	11	0	task_011(UInt32 VhdIoType, UnicodeString VhdFileName, UInt32 Status)			task_0	Error		
+Microsoft-Windows-VHDMP	12	0	task_012(UInt32 Status, UnicodeString VhdFile, GUID VmId, UInt32 VhdType, UInt32 Version, UInt32 Flags, UInt32 AccessMask, UInt32 WriteDepth, Boolean GetInfoOnly, Boolean ReadOnly, Pointer HandleContext, Pointer VirtualDisk)			task_0	Informational		
+Microsoft-Windows-VHDMP	13	0	task_013(UInt32 Status, UnicodeString VhdFile, GUID VmId, UInt32 VhdType, UInt32 Version, UInt32 Flags, UInt32 AccessMask, UInt32 WriteDepth, Boolean GetInfoOnly, Boolean ReadOnly, Pointer HandleContext, Pointer VirtualDisk)			task_0	Error		
+Microsoft-Windows-VHDMP	14	0	task_014(Pointer HandleContext, Pointer VirtualDisk)			task_0	Informational		
+Microsoft-Windows-VHDMP	15	0	task_015(Pointer VirtualDisk)			task_0	Informational		
+Microsoft-Windows-VHDMP	16	0	task_016(Pointer VirtualDisk)			task_0	Informational		
+Microsoft-Windows-VHDMP	17	0	task_017(UnicodeString VhdFileName, UInt32 VhdDiskNumber)			task_0	Informational		
+Microsoft-Windows-VHDMP	18	0	task_018(UnicodeString VhdFileName, UInt32 VhdDiskNumber)			task_0	Informational		
+Microsoft-Windows-VHDMP	19	0	task_019(UnicodeString VhdFileName, GUID VhdInstanceId)			task_0	Informational		
+Microsoft-Windows-VHDMP	20	0	task_020(UnicodeString VhdFileName, GUID VhdInstanceId)			task_0	Informational		
 Microsoft-Windows-VHDMP	50	0	task_050(AnsiString VhdMetaOps, UnicodeString VhdFileName, UnicodeString TargetVhdFileName)			task_0	Informational		
 Microsoft-Windows-VHDMP	51	0	task_051(AnsiString VhdMetaOps, UnicodeString VhdFileName, UInt32 Status)			task_0	Informational		
 Microsoft-Windows-VHDMP	100	0	task_0100(UnicodeString VhdFile, GUID VmId, UInt32 VhdIoType, UInt32 Status)			task_0	Informational		

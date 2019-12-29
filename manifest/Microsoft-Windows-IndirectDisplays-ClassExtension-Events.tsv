@@ -1,9 +1,9 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-IndirectDisplays-ClassExtension-Events	1	0	AdapterInitAsync()	InitAsync	DdiCallbacks	Adapter	Informational		
+Microsoft-Windows-IndirectDisplays-ClassExtension-Events	1	0	AdapterInitAsync()	InitAsync	DdiCalls	Adapter	Informational		
 Microsoft-Windows-IndirectDisplays-ClassExtension-Events	2	0	AdapterInitFinished(Int64 IddAdapterLuid)	InitFinished	DdiCallbacks	Adapter	Informational		
 Microsoft-Windows-IndirectDisplays-ClassExtension-Events	3	0	AdapterCommit(Int64 IddAdapterLuid)	Commit	DdiCallbacks	Adapter	Informational		
-Microsoft-Windows-IndirectDisplays-ClassExtension-Events	4	0	AdapterUpdateMaxBandwidth(Int64 IddAdapterLuid, UInt64 Bandwidth)	UpdateMaxBandwidth	DdiCallbacks	Adapter	Informational		
-Microsoft-Windows-IndirectDisplays-ClassExtension-Events	5	0	AdapterDestroy(Int64 IddAdapterLuid)	Destroy	DdiCallbacks	Adapter	Informational		
+Microsoft-Windows-IndirectDisplays-ClassExtension-Events	4	0	AdapterUpdateMaxBandwidth(Int64 IddAdapterLuid, UInt64 Bandwidth)	UpdateMaxBandwidth	DdiCalls	Adapter	Informational		
+Microsoft-Windows-IndirectDisplays-ClassExtension-Events	5	0	AdapterDestroy(Int64 IddAdapterLuid)	Destroy	DdiCalls	Adapter	Informational		
 Microsoft-Windows-IndirectDisplays-ClassExtension-Events	6	0	MonitorCreate(Int64 IddAdapterLuid, UInt32 ConnectorIndex, UInt32 DescriptorType)	Create	DdiCalls	Monitor	Informational		
 Microsoft-Windows-IndirectDisplays-ClassExtension-Events	7	0	MonitorArrival(Int64 IddAdapterLuid, UInt32 ConnectorIndex)	Arrival	DdiCalls	Monitor	Informational		
 Microsoft-Windows-IndirectDisplays-ClassExtension-Events	8	0	MonitorCreate_2_13(Int64 IddAdapterLuid, UInt32 ConnectorIndex)	Create_2_13	DdiCalls	Monitor	Informational		
@@ -42,3 +42,5 @@ Microsoft-Windows-IndirectDisplays-ClassExtension-Events	40	0	DeviceParseMonitor
 Microsoft-Windows-IndirectDisplays-ClassExtension-Events	41	0	AdapterTraceCommitPaths(Int64 IddAdapterLuid, UInt32 PathIndex, UInt32 PathFlags, UInt32 Width, UInt32 Height)	TraceCommitPaths	DdiCallbacks	Adapter	Informational		
 Microsoft-Windows-IndirectDisplays-ClassExtension-Events	42	0	SwapChainReportFrameStatistics42(Pointer SwapChainPointer, UInt32 PresentationFrameNumber, UInt32 ReencodeNumber, UInt32 CurrentSlice, UInt32 StepIndex, UInt32 StepType, UInt64 QpcTime, UInt32 Data1, UInt32 Data2)	ReportFrameStatistics	DdiCallbacks	SwapChain	Informational		
 Microsoft-Windows-IndirectDisplays-ClassExtension-Events	43	0	MonitorOpmSetMftContext(Int64 IddAdapterLuid, UInt32 ConnectorIndex, Int64 MftContext)	OpmSetMftContext	DdiCallbacks	Monitor	Informational		
+Microsoft-Windows-IndirectDisplays-ClassExtension-Events	44	0	MonitorGetPhysicalSize(Int64 IddAdapterLuid, UInt32 ConnectorIndex, UInt32 PhysicalWidth, UInt32 PhysicalHeight)	GetPhysicalSize	DdiCallbacks	Monitor	Informational		
+Microsoft-Windows-IndirectDisplays-ClassExtension-Events	45	0	AdapterDisplayConfigUpdate(Int64 IddAdapterLuid, UInt32 PathIdx, UInt32 MonitorConnectorIndex, UInt32 Positionx, UInt32 Positiony, UInt32 ResolutionWidth, UInt32 ResolutionHeight, Float VSync, UInt32 VSyncDivider, UInt32 Rotation, UInt32 DPI, UInt32 PhysicalSizeWidth, UInt32 PhysicalSizeHeight)	DisplayConfigUpdate	DdiCalls	Adapter	Informational		

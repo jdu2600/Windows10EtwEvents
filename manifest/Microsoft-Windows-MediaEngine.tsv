@@ -23,7 +23,7 @@ Microsoft-Windows-MediaEngine	120	0	MediaFoundationPresentAtSleepStart(Pointer o
 Microsoft-Windows-MediaEngine	121	0	PerfTrack:MediaFoundationPlay(UInt64 object, UInt32 protected, UInt32 width, UInt32 height)			PerfTrack:MediaFoundationPlay	Informational		
 Microsoft-Windows-MediaEngine	123	0	PerfTrack:MediaFoundationPlayCancelled(UInt64 object, UInt32 protected, UInt32 width, UInt32 height)			PerfTrack:MediaFoundationPlayCancelled	Informational		
 Microsoft-Windows-MediaEngine	125	0	PerfTrack:FirstFrameAfterPlayPresented(UInt64 object, UInt32 protected, UInt32 width, UInt32 height)			PerfTrack:FirstFrameAfterPlayPresented	Informational		
-Microsoft-Windows-MediaEngine	127	0	MediaFoundationPresent_QueuedFrameStats(Pointer object, UInt32 Length, UInt32 MaxPresentLatency, UInt32 Queued, UInt32 QueuedWithRepeats, UInt32 EstimatedFramesNeeded, UInt32 Free, Int64 DeltaToTarget, Int64 SubmittedAheadDelta, Int64 TimeInQueue, Int64 MinLatency, Int32 MaxLatency, Int64 FramePeriod, Int64 sampleTime, Int64 TargetQPC, Int32 HistoryPresents, Int64 TimeToDeadline, UInt32 BufferIndex)			MediaFoundationPresent_QueuedFrameStats	Verbose		
+Microsoft-Windows-MediaEngine	127	0	MediaFoundationPresent_QueuedFrameStats(Pointer object, UInt32 Length, UInt32 MaxPresentLatency, UInt32 Queued, UInt32 QueuedWithRepeats, UInt32 EstimatedFramesNeeded, UInt32 Free, Int64 DeltaToTarget, Int64 SubmittedAheadDelta, Int64 TimeInQueue, Int64 MinLatency, Int32 MaxLatency, Int64 FramePeriod, Int64 sampleTime, Int64 TargetQPC, Int32 HistoryPresents, Int64 TimeToDeadline, UInt32 BufferIndex, UInt32 StateFlags)			MediaFoundationPresent_QueuedFrameStats	Verbose		
 Microsoft-Windows-MediaEngine	128	0	MediaFoundationSuspend(UInt32 id, Boolean paused)			MediaFoundationSuspend	Informational		
 Microsoft-Windows-MediaEngine	129	0	MediaFoundationRestore(UInt32 id, Boolean resumed)			MediaFoundationRestore	Informational		
 Microsoft-Windows-MediaEngine	130	0	MediaFoundationNotVisible(UInt32 id, Boolean thinning)			MediaFoundationNotVisible	Informational		
@@ -82,6 +82,7 @@ Microsoft-Windows-MediaEngine	183	0	MediaFoundationPresent_HistoryRecordStop(Poi
 Microsoft-Windows-MediaEngine	184	0	MediaEngineClearHistory(Pointer object, Int32 ListCount, Int32 Location)			MediaEngineClearHistory	Verbose		
 Microsoft-Windows-MediaEngine	185	0	MediaFoundationME_GetCurrentTimeStart(Pointer object)	Start		MediaFoundationME_GetCurrentTime	Verbose		
 Microsoft-Windows-MediaEngine	186	0	MediaFoundationME_GetCurrentTimeStop(Pointer object, Int64 now)	Stop		MediaFoundationME_GetCurrentTime	Verbose		
+Microsoft-Windows-MediaEngine	187	0	UpdateGPUDeadlineoperation(Pointer object, Pointer DXObject, UInt32 DXType, Int64 deadline, Int64 hnsDeltaFromNow)			UpdateGPUDeadlineoperation	Verbose		
 Microsoft-Windows-MediaEngine	200	0	EMENeedKey(UInt32 length, Binary data)			EMENeedKey	Informational		
 Microsoft-Windows-MediaEngine	201	0	EMEMediaKeys(UnicodeString keysystem, UnicodeString defaultCdmStorePath, UnicodeString inprivateCdmStorePath, Pointer object, UInt32 ErrorCode)			EMEMediaKeys	Informational		
 Microsoft-Windows-MediaEngine	202	0	EMEMediaKeySessionStart(UnicodeString sessionId, UnicodeString keySystem, UnicodeString type, UInt32 length, Binary data, UInt32 ErrorCode)	Start		EMEMediaKeySession	Informational		
@@ -97,8 +98,8 @@ Microsoft-Windows-MediaEngine	212	1	BatchingReason_V1(Pointer object, Boolean Ok
 Microsoft-Windows-MediaEngine	213	0	MediaFoundationSubtitleQueued(Pointer buffer, Int64 sampleTime, Int64 sampleDuration)			MediaFoundationSubtitleQueued	Verbose		
 Microsoft-Windows-MediaEngine	214	0	EngineEnded(UInt32 id)			EngineEnded	Informational		
 Microsoft-Windows-MediaEngine	215	0	MediaFoundationPresent_DelayStart(Pointer object)	Start		MediaFoundationPresent_Delay	Verbose		
-Microsoft-Windows-MediaEngine	216	0	PresentTimerStart(Pointer Object, UInt32 Period)	Start		PresentTimer	Verbose		
-Microsoft-Windows-MediaEngine	217	0	PresentTimerStop(Pointer Object, UInt32 Period)	Stop		PresentTimer	Verbose		
+Microsoft-Windows-MediaEngine	216	0	PresentTimerStart(Pointer Object, Int32 Period)	Start		PresentTimer	Verbose		
+Microsoft-Windows-MediaEngine	217	0	PresentTimerStop(Pointer Object, Int32 Period)	Stop		PresentTimer	Verbose		
 Microsoft-Windows-MediaEngine	218	0	PresentTimeCriticalStart(Pointer Object, Int64 TimeDelta)	Start		PresentTimeCritical	Verbose		
 Microsoft-Windows-MediaEngine	219	0	PresentTimeCriticalStop(Pointer Object, Int64 TimeDelta)	Stop		PresentTimeCritical	Verbose		
 Microsoft-Windows-MediaEngine	220	0	TimedTextDtvCCSampleDecodeTaskStart(Pointer object, Int64 SampleStartTime, Int64 SampleEndTime)	Start		TimedTextDtvCCSampleDecodeTask	Informational		

@@ -1,8 +1,6 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
 Microsoft-Windows-Dwm-Udwm	1	0	UdwmGraphicsStreamChangeStart(UInt32 flags)	Start	Udwm	UdwmGraphicsStreamChange	Informational		
 Microsoft-Windows-Dwm-Udwm	2	0	UdwmGraphicsStreamChangeStop(UInt32 flags)	Stop	Udwm	UdwmGraphicsStreamChange	Informational		
-Microsoft-Windows-Dwm-Udwm	3	0	UdwmProcessLPCMessageStart(UInt32 Enum)	Start	Udwm	UdwmProcessLPCMessage	Verbose		
-Microsoft-Windows-Dwm-Udwm	4	0	UdwmProcessLPCMessageStop(UInt32 Enum)	Stop	Udwm	UdwmProcessLPCMessage	Verbose		
 Microsoft-Windows-Dwm-Udwm	5	0	UdwmProcessModeChange(UInt32 Height, UInt32 Width, UInt32 Depth)		Udwm	UdwmProcessModeChange	Informational		
 Microsoft-Windows-Dwm-Udwm	6	0	UdwmEstablishTransportStart()	Start	Udwm	UdwmEstablishTransport	Informational		
 Microsoft-Windows-Dwm-Udwm	7	0	UdwmEstablishTransportStop()	Stop	Udwm	UdwmEstablishTransport	Informational		
@@ -41,10 +39,10 @@ Microsoft-Windows-Dwm-Udwm	5023	0	UdwmGlassSheetFadeOut()		Udwm	UdwmGlassSheetFa
 Microsoft-Windows-Dwm-Udwm	5024	0	UdwmGlassSheetFadeOut5024()		Udwm	UdwmGlassSheetFadeOut	Informational		
 Microsoft-Windows-Dwm-Udwm	5025	0	UdwmLoadThemeStart()	Start	Udwm	UdwmLoadTheme	Informational		
 Microsoft-Windows-Dwm-Udwm	5026	0	UdwmLoadThemeStop()	Stop	Udwm	UdwmLoadTheme	Informational		
-Microsoft-Windows-Dwm-Udwm	5027	0	UdwmDirectTouchDownAnimationStart(UInt32 PointerID)	Start	Udwm	UdwmDirectTouchDownAnimation	Informational		
-Microsoft-Windows-Dwm-Udwm	5028	0	UdwmDirectTouchDownAnimation()		Udwm	UdwmDirectTouchDownAnimation	Informational		
-Microsoft-Windows-Dwm-Udwm	5029	0	UdwmDirectTouchDownAnimationStop()	Stop	Udwm	UdwmDirectTouchDownAnimation	Informational		
-Microsoft-Windows-Dwm-Udwm	5030	0	UdwmTouchUpReceived(UInt32 PointerID)		Udwm	UdwmTouchUpReceived	Informational		
+Microsoft-Windows-Dwm-Udwm	5027	0	UdwmDirectTouchDownAnimationStart(UInt32 PointerID)	Start	Udwm UdwmInput	UdwmDirectTouchDownAnimation	Informational		
+Microsoft-Windows-Dwm-Udwm	5028	0	UdwmDirectTouchDownAnimation()		Udwm UdwmInput	UdwmDirectTouchDownAnimation	Informational		
+Microsoft-Windows-Dwm-Udwm	5029	0	UdwmDirectTouchDownAnimationStop()	Stop	Udwm UdwmInput	UdwmDirectTouchDownAnimation	Informational		
+Microsoft-Windows-Dwm-Udwm	5030	0	UdwmTouchUpReceived(UInt32 PointerID)		Udwm UdwmInput	UdwmTouchUpReceived	Informational		
 Microsoft-Windows-Dwm-Udwm	5031	0	UdwmContactStationaryVisualStart(UInt32 Enum)	Start	Udwm	UdwmContactStationaryVisual	Informational		
 Microsoft-Windows-Dwm-Udwm	5032	0	UdwmContactStationaryVisualStop(UInt32 Enum)	Stop	Udwm	UdwmContactStationaryVisual	Informational		
 Microsoft-Windows-Dwm-Udwm	5035	0	UdwmAnimationInitializationStart()	Start	Udwm	UdwmAnimationInitialization	Informational		
@@ -55,13 +53,13 @@ Microsoft-Windows-Dwm-Udwm	5047	0	UdwmPressTapVisualStart()	Start	Udwm	UdwmPress
 Microsoft-Windows-Dwm-Udwm	5048	0	UdwmPressTapVisualStop()	Stop	Udwm	UdwmPressTapVisual	Informational		
 Microsoft-Windows-Dwm-Udwm	5049	0	UdwmTetherVisualStart()	Start	Udwm	UdwmTetherVisual	Informational		
 Microsoft-Windows-Dwm-Udwm	5050	0	UdwmTetherVisualStop()	Stop	Udwm	UdwmTetherVisual	Informational		
-Microsoft-Windows-Dwm-Udwm	5051	0	UdwmPenPressHoldVisualStart(UInt32 flags)	Start	Udwm	UdwmPenPressHoldVisual	Informational		
-Microsoft-Windows-Dwm-Udwm	5052	0	UdwmPenPressHoldVisualStop(UInt32 flags)	Stop	Udwm	UdwmPenPressHoldVisual	Informational		
-Microsoft-Windows-Dwm-Udwm	5053	0	UdwmFlickVisualStart(UInt32 Enum)	Start	Udwm	UdwmFlickVisual	Informational		
-Microsoft-Windows-Dwm-Udwm	5054	0	UdwmFlickVisualStop(UInt32 Enum)	Stop	Udwm	UdwmFlickVisual	Informational		
-Microsoft-Windows-Dwm-Udwm	5055	0	UdwmTouchDragVisualStart(UInt32 PointerID)	Start	Udwm	UdwmTouchDragVisual	Informational		
-Microsoft-Windows-Dwm-Udwm	5056	0	UdwmTouchDragVisual()		Udwm	UdwmTouchDragVisual	Informational		
-Microsoft-Windows-Dwm-Udwm	5057	0	UdwmTouchDragVisualStop()	Stop	Udwm	UdwmTouchDragVisual	Informational		
+Microsoft-Windows-Dwm-Udwm	5051	0	UdwmPenPressHoldVisualStart(UInt32 flags)	Start	Udwm UdwmInput	UdwmPenPressHoldVisual	Informational		
+Microsoft-Windows-Dwm-Udwm	5052	0	UdwmPenPressHoldVisualStop(UInt32 flags)	Stop	Udwm UdwmInput	UdwmPenPressHoldVisual	Informational		
+Microsoft-Windows-Dwm-Udwm	5053	0	UdwmFlickVisualStart(UInt32 Enum)	Start	Udwm UdwmInput	UdwmFlickVisual	Informational		
+Microsoft-Windows-Dwm-Udwm	5054	0	UdwmFlickVisualStop(UInt32 Enum)	Stop	Udwm UdwmInput	UdwmFlickVisual	Informational		
+Microsoft-Windows-Dwm-Udwm	5055	0	UdwmTouchDragVisualStart(UInt32 PointerID)	Start	Udwm UdwmInput	UdwmTouchDragVisual	Informational		
+Microsoft-Windows-Dwm-Udwm	5056	0	UdwmTouchDragVisual()		Udwm UdwmInput	UdwmTouchDragVisual	Informational		
+Microsoft-Windows-Dwm-Udwm	5057	0	UdwmTouchDragVisualStop()	Stop	Udwm UdwmInput	UdwmTouchDragVisual	Informational		
 Microsoft-Windows-Dwm-Udwm	5058	0	UdwmTitleTextAligned(Int32 alignment)		Udwm	UdwmTitleTextAligned	Informational		
 Microsoft-Windows-Dwm-Udwm	5059	0	UdwmAnimationEngineStart(UInt32 AnimationID, Int32 StoryboardID, UInt32 TickCount)	Start	Udwm	UdwmAnimationEngine	Informational		
 Microsoft-Windows-Dwm-Udwm	5060	0	UdwmAnimationEngineStop(UInt32 AnimationID, Int32 StoryboardID, UInt32 TickCount)	Stop	Udwm	UdwmAnimationEngine	Informational		
@@ -78,8 +76,8 @@ Microsoft-Windows-Dwm-Udwm	5070	0	UdwmScreenRotationAnimationStop(UInt32 EventId
 Microsoft-Windows-Dwm-Udwm	5071	0	UdwmAnimationEngine(UInt32 AnimationID, Float x0, Float y0, Float x1, Float y1)		Udwm	UdwmAnimationEngine	Informational		
 Microsoft-Windows-Dwm-Udwm	5072	0	UdwmPenBarrelStart(UInt32 PointerID)	Start	Udwm	UdwmPenBarrel	Informational		
 Microsoft-Windows-Dwm-Udwm	5073	0	UdwmPenBarrelStop(UInt32 PointerID)	Stop	Udwm	UdwmPenBarrel	Informational		
-Microsoft-Windows-Dwm-Udwm	5074	0	UdwmIndirectTouchVisualStart(UInt32 PointerID, UInt32 Enum)	Start	Udwm	UdwmIndirectTouchVisual	Informational		
-Microsoft-Windows-Dwm-Udwm	5075	0	UdwmIndirectTouchVisualStop(UInt32 PointerID, UInt32 Enum)	Stop	Udwm	UdwmIndirectTouchVisual	Informational		
+Microsoft-Windows-Dwm-Udwm	5074	0	UdwmIndirectTouchVisualStart(UInt32 PointerID, UInt32 Enum)	Start	Udwm UdwmInput	UdwmIndirectTouchVisual	Informational		
+Microsoft-Windows-Dwm-Udwm	5075	0	UdwmIndirectTouchVisualStop(UInt32 PointerID, UInt32 Enum)	Stop	Udwm UdwmInput	UdwmIndirectTouchVisual	Informational		
 Microsoft-Windows-Dwm-Udwm	5076	0	UdwmStoryboard(UInt32 State, Int32 AnimationID)		Udwm	UdwmStoryboard	Informational		
 Microsoft-Windows-Dwm-Udwm	5077	0	UdwmGradientLoadStart()	Start	Udwm	UdwmGradientLoad	Informational		
 Microsoft-Windows-Dwm-Udwm	5078	0	UdwmGradientLoadStop()	Stop	Udwm	UdwmGradientLoad	Informational		
@@ -91,10 +89,10 @@ Microsoft-Windows-Dwm-Udwm	5083	0	UdwmAnimationComponent(Pointer hwnd, Int32 Sto
 Microsoft-Windows-Dwm-Udwm	5084	0	UdwmAnimationComponent5084(Pointer hwnd, Int32 StoryboardId, Int32 Target)		Udwm	UdwmAnimationComponent	Informational		
 Microsoft-Windows-Dwm-Udwm	5085	0	UdwmAnimationComponent5085(Pointer hwnd, Int32 StoryboardId, Int32 Target)		Udwm	UdwmAnimationComponent	Informational		
 Microsoft-Windows-Dwm-Udwm	5086	0	UdwmAnimationComponent5086(Pointer hwnd, Int32 StoryboardId, Int32 Target)		Udwm	UdwmAnimationComponent	Informational		
-Microsoft-Windows-Dwm-Udwm	5087	0	UdwmTouchPressHoldVisualStart(UInt32 Enum)	Start	Udwm	UdwmTouchPressHoldVisual	Informational		
-Microsoft-Windows-Dwm-Udwm	5088	0	UdwmTouchPressHoldVisualStop(UInt32 Enum)	Stop	Udwm	UdwmTouchPressHoldVisual	Informational		
+Microsoft-Windows-Dwm-Udwm	5087	0	UdwmTouchPressHoldVisualStart(UInt32 Enum)	Start	Udwm UdwmInput	UdwmTouchPressHoldVisual	Informational		
+Microsoft-Windows-Dwm-Udwm	5088	0	UdwmTouchPressHoldVisualStop(UInt32 Enum)	Stop	Udwm UdwmInput	UdwmTouchPressHoldVisual	Informational		
 Microsoft-Windows-Dwm-Udwm	5089	0	UdwmAnimatedTransitionVisual(Int32 StoryboardId, Int32 TargetId, Int32 BeginLeft, Int32 BeginTop, Int32 BeginRight, Int32 BeginBottom, Int32 EndLeft, Int32 EndTop, Int32 EndRight, Int32 EndBottom, Float BeginOpacity, Float EndOpacity, Float BeginDepth, Float EndDepth, UInt32 ResourceHandle, UInt32 StaggerOrder, UInt32 AnimationId)		Udwm	UdwmAnimatedTransitionVisual	Informational		
-Microsoft-Windows-Dwm-Udwm	5090	0	UdwmIndirectTouchVisual(UInt32 PointerID)		Udwm	UdwmIndirectTouchVisual	Informational		
+Microsoft-Windows-Dwm-Udwm	5090	0	UdwmIndirectTouchVisual(UInt32 PointerID)		Udwm UdwmInput	UdwmIndirectTouchVisual	Informational		
 Microsoft-Windows-Dwm-Udwm	5091	0	UdwmTransitionRequestStart(Int32 StoryboardID)	Start	Udwm	UdwmTransitionRequest	Informational		
 Microsoft-Windows-Dwm-Udwm	5092	0	UdwmTransitionRequestStop(Int32 StoryboardID)	Stop	Udwm	UdwmTransitionRequest	Informational		
 Microsoft-Windows-Dwm-Udwm	5093	0	UdwmTransitionRequest(Pointer hwnd, HexInt32 Target)		Udwm	UdwmTransitionRequest	Informational		

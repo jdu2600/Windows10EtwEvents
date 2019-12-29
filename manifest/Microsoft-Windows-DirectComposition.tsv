@@ -58,3 +58,9 @@ Microsoft-Windows-DirectComposition	56	0	VISUAL_SET_INPUTSINK(UInt64 visualAndCh
 Microsoft-Windows-DirectComposition	57	0	VISUAL_REDIRECT_MOUSE(UInt32 Channel, UInt32 visualHandle, UInt64 visualAndChannelHandle, Pointer windowHandle, UInt32 mouseConfigMask, UInt32 mouseConfigValues)		DCompInput	VISUAL_REDIRECT_MOUSE	Verbose		
 Microsoft-Windows-DirectComposition	58	0	INTERACTION_CONFIGURATION(UInt32 Channel, UInt32 interactionHandle, UInt64 interactionAndChannelHandle, UInt32 propertyId)		DCompInput	INTERACTION_CONFIGURATION	Verbose		
 Microsoft-Windows-DirectComposition	59	0	INTERACTION_CAPTURE_POINTER(UInt32 Channel, UInt32 interactionHandle, UInt64 interactionAndChannelHandle, UInt32 captureType, UInt32 pointerId, UInt64 pointerTimeStamp)		DCompInput	INTERACTION_CAPTURE_POINTER	Verbose		
+Microsoft-Windows-DirectComposition	60	0	FLIP_CONSUME_PRESENTStart()	Start	FlipManager	FLIP_CONSUME_PRESENT	Verbose		
+Microsoft-Windows-DirectComposition	61	0	FLIP_CONSUME_PRESENTStop(UInt32 result)	Stop	FlipManager	FLIP_CONSUME_PRESENT	Verbose		
+Microsoft-Windows-DirectComposition	62	0	FLIP_CONSUME_PRESENT_CALLOUTStart()	Start	FlipManager	FLIP_CONSUME_PRESENT_CALLOUT	Verbose		
+Microsoft-Windows-DirectComposition	63	0	FLIP_CONSUME_PRESENT_CALLOUTStop(UInt32 result)	Stop	FlipManager	FLIP_CONSUME_PRESENT_CALLOUT	Verbose		
+Microsoft-Windows-DirectComposition	64	0	FLIP_PRODUCE_PRESENTStart()	Start	FlipManager	FLIP_PRODUCE_PRESENT	Verbose		
+Microsoft-Windows-DirectComposition	65	0	FLIP_PRODUCE_PRESENTStop(UInt64 presentId, UInt32 result)	Stop	FlipManager	FLIP_PRODUCE_PRESENT	Verbose		

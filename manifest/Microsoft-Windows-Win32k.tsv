@@ -196,7 +196,7 @@ Microsoft-Windows-Win32k	197	0	PseudoDevCreationStop()	Stop	MessagePumpInternalA
 Microsoft-Windows-Win32k	198	0	TouchHWTimeStamp(Int32 ScanTime, Int32 dwTime, UInt64 QPC, Int32 XRawPosition, Int32 YRawPosition, Int32 XPredictedPosition, Int32 YPredictedPosition)		MessagePumpInternalAndInput	TouchHWTimeStamp	Informational		
 Microsoft-Windows-Win32k	199	0	PointerFrameCoalesce199(UInt16 wCursorId, UInt16 wPointerId, UInt32 dwReason)		PointerInput	PointerFrameCoalesce	Informational		
 Microsoft-Windows-Win32k	200	0	PointerFrameCoalesce200(UInt16 wCursorId, UInt16 wPointerId, UInt32 dwReason)		PointerInput	PointerFrameCoalesce	Informational		
-Microsoft-Windows-Win32k	201	0	TokenCompositionSurfaceObject(Pointer pToken, Pointer pCompositionSurfaceObject, UInt32 SwapChainIndex, UInt64 PresentCount, UInt64 CompositionSurfaceLuid, UInt64 BindId)		Updates Visualization	TokenCompositionSurfaceObject	Informational		
+Microsoft-Windows-Win32k	201	1	TokenCompositionSurfaceObject_V1(Pointer pToken, Pointer pCompositionSurfaceObject, UInt32 SwapChainIndex, UInt64 PresentCount, UInt64 CompositionSurfaceLuid, UInt64 BindId, UInt32 FlipInterval, UInt32 DestWidth, UInt32 DestHeight)		Updates Visualization	TokenCompositionSurfaceObject	Informational		
 Microsoft-Windows-Win32k	202	0	CompositionSurfaceObjectUpdate(Pointer pCompositionSurfaceObject, UInt32 SwapChainIndex)		Updates Visualization	CompositionSurfaceObjectUpdate	Informational		
 Microsoft-Windows-Win32k	203	0	QueueEventMessage(Int8 CallbackCount, Pointer pqmsg, Pointer pti, UInt32 dwQEvent, Pointer hwnd)		MessagePumpInternalAndInput	QueueEventMessage	Informational		
 Microsoft-Windows-Win32k	204	0	RetrieveQueueEventMessage(Int8 CallbackCount, Pointer pqmsg, Pointer pti, UInt32 dwQEvent, Pointer hwnd)		MessagePumpInternalAndInput	RetrieveQueueEventMessage	Informational		
@@ -297,11 +297,19 @@ Microsoft-Windows-Win32k	443	0	DCompResourceMapping(UInt32 Channel, UInt32 Inter
 Microsoft-Windows-Win32k	444	0	DCompResourcePropertyUpdate(UInt32 Channel, UInt32 InternalHandle, UInt32 ExternalHandle, UInt32 ResourceType, UInt32 PropertyId)		Updates Visualization	DCompResourcePropertyUpdate	Informational		
 Microsoft-Windows-Win32k	445	0	DCompCommandType(UInt32 CommandType, UInt64 status)		Updates Visualization	DCompCommandType	Informational		
 Microsoft-Windows-Win32k	446	0	DCompCommandsInBatch(UInt64 CommandsCount)		Updates Visualization	DCompCommandsInBatch	Informational		
-Microsoft-Windows-Win32k	447	0	HighWorkLoadBatchCountUpdatedSubmit(Int64 Submitted)		Updates Visualization	HighWorkLoadBatchCountUpdatedSubmit	Verbose		
-Microsoft-Windows-Win32k	448	0	HighWorkLoadBatchCountUpdatedConfirm(Int64 Pending, Int64 Submitted)		Updates Visualization	HighWorkLoadBatchCountUpdatedConfirm	Verbose		
-Microsoft-Windows-Win32k	449	0	HighWorkLoadBatchCountUpdatedPending(Int64 Pending)		Updates Visualization	HighWorkLoadBatchCountUpdatedPending	Verbose		
 Microsoft-Windows-Win32k	450	0	DCompCreateImplicitInteraction(UInt32 Channel, UInt32 VisualInternalHandle, UInt32 InteractionInternalHandle, UInt64 VisualInternalHandleAndChannel, UInt64 InteractionInternalHandleAndChannel, UInt32 ResourceType, Boolean DefaultInteraction, UnicodeString Reason)		DCompInput	DCompCreateImplicitInteraction	Informational		
 Microsoft-Windows-Win32k	451	0	DCompVisualSetInteraction(UInt32 Channel, UInt32 VisualInternalHandle, UInt32 InteractionInternalHandle, UInt64 VisualInternalHandleAndChannel, UInt64 InteractionInternalHandleAndChannel)		DCompInput	DCompVisualSetInteraction	Informational		
+Microsoft-Windows-Win32k	452	0	UserHandleOperationCreateHandle(Pointer HandleValue, UInt32 HandleType, UInt32 SessionId, UInt32 OwnerProcessId)	CreateHandle	keyword_20000000000	UserHandleOperation	Informational		
+Microsoft-Windows-Win32k	453	0	UserHandleOperationDestroyHandle(Pointer HandleValue, UInt32 HandleType, UInt32 SessionId, UInt32 OwnerProcessId)	DestroyHandle	keyword_20000000000	UserHandleOperation	Informational		
+Microsoft-Windows-Win32k	454	0	UserHandleOperationUpdateHandleOwner(Pointer HandleValue, UInt32 HandleType, UInt32 SessionId, UInt32 OwnerProcessId)	UpdateHandleOwner	keyword_20000000000	UserHandleOperation	Informational		
+Microsoft-Windows-Win32k	455	0	GdiHandleOperationCreateHandle(Pointer HandleValue, UInt32 HandleType, UInt32 SessionId, UInt32 OwnerProcessId)	CreateHandle	keyword_10000000000	GdiHandleOperation	Informational		
+Microsoft-Windows-Win32k	456	0	GdiHandleOperationDestroyHandle(Pointer HandleValue, UInt32 HandleType, UInt32 SessionId, UInt32 OwnerProcessId)	DestroyHandle	keyword_10000000000	GdiHandleOperation	Informational		
+Microsoft-Windows-Win32k	457	0	GdiHandleOperationUpdateHandleOwner(Pointer HandleValue, UInt32 HandleType, UInt32 SessionId, UInt32 OwnerProcessId)	UpdateHandleOwner	keyword_10000000000	GdiHandleOperation	Informational		
+Microsoft-Windows-Win32k	458	0	GdiHandleOperationTransformHandle(Pointer PreviousHandleValue, Pointer NewHandleValue, UInt32 HandleType, UInt32 SessionId, UInt32 OwnerProcessId)	TransformHandle	keyword_10000000000	GdiHandleOperation	Informational		
+Microsoft-Windows-Win32k	500	0	FlipManagerCompleteTokenStart(UInt64 PresentId)	Start	Updates	FlipManagerCompleteToken	Informational		
+Microsoft-Windows-Win32k	501	0	FlipManagerCompleteTokenStop(UInt64 PresentId)	Stop	Updates	FlipManagerCompleteToken	Informational		
+Microsoft-Windows-Win32k	502	0	FlipManagerTokenReleaseToFrameStart(UInt64 PresentId)	Start	Updates	FlipManagerTokenReleaseToFrame	Informational		
+Microsoft-Windows-Win32k	503	0	FlipManagerTokenReleaseToFrameStop(UInt64 PresentId, UInt32 TokenResult)	Stop	Updates	FlipManagerTokenReleaseToFrame	Informational		
 Microsoft-Windows-Win32k	1000	0	task_01000(UInt32 eventMin, UInt32 eventMax, UInt32 idEventProcess, UInt32 idEventThread, UInt32 Flags, Pointer HookInstance)		AuditApiCalls	task_0	Informational		
 Microsoft-Windows-Win32k	1001	0	task_01001(UInt32 ReturnValue)		AuditApiCalls	task_0	Informational		
 Microsoft-Windows-Win32k	1002	0	task_01002(UInt32 FilterType, UnicodeString pstrLib, Pointer hmod, Pointer pfnFilterProc, UInt32 ReturnValue)		AuditApiCalls	task_0	Informational		

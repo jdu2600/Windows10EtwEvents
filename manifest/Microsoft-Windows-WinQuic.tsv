@@ -1,0 +1,17 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-WinQuic	1	0	task_0(Pointer Connection, UInt32 IsServer)		ut:Connection	task_0	Informational		
+Microsoft-Windows-WinQuic	2	0	task_02(Pointer Connection)		ut:Connection	task_0	Informational		
+Microsoft-Windows-WinQuic	3	0	task_03(Pointer Connection)		ut:Connection	task_0	Informational		
+Microsoft-Windows-WinQuic	4	0	task_04(Pointer Connection, UInt32 State)		ut:Connection ut:Scheduling	task_0	Informational		
+Microsoft-Windows-WinQuic	5	0	task_05(Pointer Connection, UInt32 Type)		ut:Connection ut:Scheduling	task_0	Verbose		
+Microsoft-Windows-WinQuic	6	0	task_06(Pointer Connection, UInt32 Type)		ut:Connection ut:Scheduling	task_0	Verbose		
+Microsoft-Windows-WinQuic	7	0	task_07(Pointer Connection, UInt32 Type)		ut:Connection ut:Scheduling	task_0	Verbose		
+Microsoft-Windows-WinQuic	100	0	task_0100(Pointer Stream, Pointer Connection, UInt64 ID)		ut:Stream	task_0	Informational		
+Microsoft-Windows-WinQuic	101	0	task_0101(Pointer Stream)		ut:Stream	task_0	Informational		
+Microsoft-Windows-WinQuic	1000	0	task_01000(Pointer Connection, UInt64 BytesSent, UInt32 BytesInFlight, UInt32 BytesInFlightMax, UInt32 CongestionWindow, UInt32 SlowStartThreshold, UInt32 IsInRecovery, UInt64 ConnectionFlowControl, UInt64 StreamFlowControl, UInt64 IdealBytes, UInt64 PostedBytes, UInt32 SmoothedRtt)		ut:Connection ut:DataFlow	task_0	Verbose		
+Microsoft-Windows-WinQuic	1001	0	task_01001(Pointer Connection, AnsiString Reason)		ut:Connection ut:DataFlow	task_0	Informational		
+Microsoft-Windows-WinQuic	1002	0	task_01002(Pointer Connection, AnsiString Reason)		ut:Connection ut:DataFlow	task_0	Informational		
+Microsoft-Windows-WinQuic	1003	0	task_01003(Pointer Stream, AnsiString Reason)		ut:Stream ut:DataFlow	task_0	Informational		
+Microsoft-Windows-WinQuic	1004	0	task_01004(Pointer Stream, AnsiString Reason)		ut:Stream ut:DataFlow	task_0	Informational		
+Microsoft-Windows-WinQuic	1005	0	task_01005(Pointer Connection, UInt32 SlowStartThreshold, UInt32 K, UInt32 WindowMax, UInt32 WindowLastMax)		ut:Connection ut:DataFlow	task_0	Verbose		
+Microsoft-Windows-WinQuic	1006	0	task_01006(Pointer Connection)		ut:Connection ut:DataFlow	task_0	Verbose		

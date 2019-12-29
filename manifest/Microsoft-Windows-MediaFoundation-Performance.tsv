@@ -482,6 +482,8 @@ Microsoft-Windows-MediaFoundation-Performance	4471	0	MFMediaDeviceStreamSendSing
 Microsoft-Windows-MediaFoundation-Performance	4472	0	2D:Flush(Pointer Object, Pointer Sample, Int32 Free, Int32 Allocated, Int32 MinSampleCount)			2D:Flush	Informational		
 Microsoft-Windows-MediaFoundation-Performance	4473	0	Attributes_CopyAllItemsStart(Pointer SrcPtr, UInt32 Count, Pointer DstPtr)	Start		Attributes_CopyAllItems	Verbose		
 Microsoft-Windows-MediaFoundation-Performance	4474	0	Attributes_CopyAllItemsStop(Pointer SrcPtr, UInt32 HResult)	Stop		Attributes_CopyAllItems	Verbose		
+Microsoft-Windows-MediaFoundation-Performance	4475	0	DXGIMapSurfaceSleepStart(Pointer surface)	Start		DXGIMapSurfaceSleep	Verbose		
+Microsoft-Windows-MediaFoundation-Performance	4476	0	DXGIMapSurfaceSleepStop(Pointer surface)	Stop		DXGIMapSurfaceSleep	Verbose		
 Microsoft-Windows-MediaFoundation-Performance	4500	0	NetworkRIO_PendingSends(Pointer Object, Int32 PendingCount, UInt32 BytesSent)			NetworkRIO_PendingSends	Informational		
 Microsoft-Windows-MediaFoundation-Performance	4501	0	NetworkRIO_PendingSendsStart(Pointer Object, Int32 PendingCount, UInt32 BytesSent)	Start		NetworkRIO_PendingSends	Informational		
 Microsoft-Windows-MediaFoundation-Performance	4502	0	NetworkRIO_PendingSendsStop(Pointer Object, Int32 PendingCount, UInt32 BytesSent)	Stop		NetworkRIO_PendingSends	Informational		
@@ -505,3 +507,8 @@ Microsoft-Windows-MediaFoundation-Performance	4613	0	PreparePresentationStart()	
 Microsoft-Windows-MediaFoundation-Performance	4614	0	PreparePresentationStop(HexInt32 hr)	Stop		PreparePresentation	Informational		
 Microsoft-Windows-MediaFoundation-Performance	4615	0	MFMediaSinkwroteapackettostorageStart(Pointer object, UInt32 bytestowrite)	Start		MFMediaSinkwroteapackettostorage	Informational		
 Microsoft-Windows-MediaFoundation-Performance	4616	0	MFMediaSinkwroteapackettostorageStop(Pointer object, UInt32 byteswritten, UInt32 hrResult)	Stop		MFMediaSinkwroteapackettostorage	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4617	0	MFTDriverProcessInputStart(Pointer object, UInt32 StreamIndex, UInt32 StreamType, Int64 timestamp, Pointer sample, Int64 duration)	Start		MFTDriverProcessInput	Verbose		
+Microsoft-Windows-MediaFoundation-Performance	4618	0	MFTDriverProcessInputStop(Pointer object, UInt32 StreamIndex, UInt32 hrResult)	Stop		MFTDriverProcessInput	Verbose		
+Microsoft-Windows-MediaFoundation-Performance	4619	0	MFTDriverProcessOutputStart(Pointer object, UInt32 Index)	Start		MFTDriverProcessOutput	Verbose		
+Microsoft-Windows-MediaFoundation-Performance	4620	0	MFTDriverProcessOutputStop(Pointer object, UInt32 hrResult)	Stop		MFTDriverProcessOutput	Verbose		
+Microsoft-Windows-MediaFoundation-Performance	4621	0	MFTDriverProcessOutput(Pointer object, UInt32 StreamIndex, UInt32 StreamType, Int64 timestamp, Pointer sample, Int64 duration)			MFTDriverProcessOutput	Verbose		

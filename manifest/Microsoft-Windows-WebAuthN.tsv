@@ -31,6 +31,8 @@ Microsoft-Windows-WebAuthN	2101	0	CtapCommandStart2101(UInt32 RequestLength, Bin
 Microsoft-Windows-WebAuthN	2102	0	CtapCommandStop(UnicodeString Command, GUID TransactionId, UInt32 ResponseLength, Binary Response)	Stop	Ctap	CtapCommand			
 Microsoft-Windows-WebAuthN	2103	0	CtapCommandStop2103(UnicodeString Command, GUID TransactionId, HexInt32 Error, HexInt32 Win32Error)	Stop	Ctap	CtapCommand	Error		
 Microsoft-Windows-WebAuthN	2104	0	CtapDeviceInfoInformational(GUID TransactionId, UnicodeString ProviderName, UnicodeString DevicePath, UnicodeString Manufacturer, UnicodeString Product, GUID AAGuid, Boolean U2fProtocol)	Informational	Ctap	CtapDeviceInfo	Informational		
+Microsoft-Windows-WebAuthN	2105	0	CtapFunctionInformational(AnsiString Function, AnsiString Location, HexInt32 Error, HexInt32 Win32Error)	Informational	Ctap	CtapFunction	Warning		
+Microsoft-Windows-WebAuthN	2106	0	CtapFunctionInformational2106(UnicodeString Name, UnicodeString Value)	Informational	Ctap	CtapFunction	Informational		
 Microsoft-Windows-WebAuthN	2110	0	WNFCtapDeviceStateInfoInformational(HexInt32 Transport, HexInt32 WnfState, HexInt32 Error, HexInt32 Win32Error)	Informational	Ctap	WNFCtapDeviceStateInfo	Informational		
 Microsoft-Windows-WebAuthN	2111	0	WNFCtapDeviceChangeNotifyInfoInformational(HexInt32 Transport)	Informational	Ctap	WNFCtapDeviceChangeNotifyInfo	Informational		
 Microsoft-Windows-WebAuthN	2200	0	CtapUsbProviderThreadStart(GUID TransactionId)	Start	Ctap Usb	CtapUsbProviderThread	Informational		

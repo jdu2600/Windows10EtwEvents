@@ -25,4 +25,4 @@ Microsoft-Windows-Kernel-Acpi	19	0	PassiveCoolingConstraintRundown(UInt16 Therma
 Microsoft-Windows-Kernel-Acpi	20	0	DeviceReset(UInt16 DeviceBiosNameLength, UnicodeString DeviceBiosName, UInt16 DeviceResetType, UInt32 Status)		acpi:Diagnostic keyword_200000000000	DeviceReset	Informational		
 Microsoft-Windows-Kernel-Acpi	21	0	AcpiOverride(UInt16 AcpiOverrideType)		acpi:Diagnostic keyword_200000000000	AcpiOverride	Informational		
 Microsoft-Windows-Kernel-Acpi	22	0	AMLIError(UnicodeString Scope, UnicodeString Object, UInt32 Status)		acpi:Diagnostic	AMLIError	Error		
-Microsoft-Windows-Kernel-Acpi	23	0	FrequentAmlMethod(UInt16 AmlMethodNameLength, UnicodeString AmlMethodName, UInt32 Frequency)		acpi:Diagnostic	FrequentAmlMethod	Warning		
+Microsoft-Windows-Kernel-Acpi	23	0	FrequentAmlMethod(UInt16 AmlMethodNameLength, UnicodeString AmlMethodName, UInt64 Frequency)		acpi:Diagnostic	FrequentAmlMethod	Warning		

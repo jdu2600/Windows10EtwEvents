@@ -1,0 +1,12 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-WindowsPhone-UfxSynopsys	100	0	FailedNtStatus(AnsiString File, UInt32 Line, UInt32 Status)		Error	FailedNtStatus	Error		
+Microsoft-WindowsPhone-UfxSynopsys	101	0	RegisterRead(UInt32 Offset, UInt32 Value)		Registers	RegisterRead	Verbose		
+Microsoft-WindowsPhone-UfxSynopsys	102	0	RegisterWrite(UInt32 Offset, UInt32 Value)		Registers	RegisterWrite	Verbose		
+Microsoft-WindowsPhone-UfxSynopsys	200	0	Transfer(AnsiString Stage, Pointer Endpoint, UInt32 PhysicalEndpoint, Pointer Request, Pointer Transaction, UInt32 BytesRequested, UInt32 BytesProgrammed, UInt32 BytesTransferred, UInt32 SgProgrammed, UInt32 SgLength, UInt32 TrbProgrammed, UInt32 TrbLength)		Endpoint	Transfer	Informational		
+Microsoft-WindowsPhone-UfxSynopsys	201	0	Transfer201(Pointer Endpoint, UInt32 PhysicalEndpoint, UInt32 Index, UInt32 Word1, UInt32 Word2, UInt32 Word3, UInt32 Word4)		Endpoint	Transfer	Verbose		
+Microsoft-WindowsPhone-UfxSynopsys	202	0	Transfer202(AnsiString Name, Pointer Endpoint, UInt32 PhysicalEndpoint, UInt32 Command, UInt32 Parameter0, UInt32 Parameter1, UInt32 Parameter2)		Endpoint	Transfer	Verbose		
+Microsoft-WindowsPhone-UfxSynopsys	301	0	EndpointInformation(AnsiString fSynopsysEndpoint, UInt8 fSynopsysEndpointDescriptor)		Diagnostic	EndpointInformation	Informational		
+Microsoft-WindowsPhone-UfxSynopsys	302	0	ChargerDetectionError(UnicodeString fChargerDetectionErrorInfo)		Diagnostic	ChargerDetectionError	Error		
+Microsoft-WindowsPhone-UfxSynopsys	303	0	DeterminePortTypeFailed(UnicodeString fDeterminePortTypeFailed)		Diagnostic	DeterminePortTypeFailed	Error		
+Microsoft-WindowsPhone-UfxSynopsys	304	0	RegisterInformation(UInt32 Configuration, UInt32 Control, UInt32 EnabledEvents, UInt32 Status)		Diagnostic	RegisterInformation	Informational		
+Microsoft-WindowsPhone-UfxSynopsys	305	0	ConnectedStandbyInformation(Boolean ConnectedStandby, Boolean IdleResidency, UInt32 DevicePowerState, Boolean Connected, UInt32 UsbPortType, UInt32 UsbDeviceState)		Diagnostic	ConnectedStandbyInformation	Informational		

@@ -149,8 +149,8 @@ Microsoft-Windows-Kernel-Processor-Power	111	0	DeliveredPerfChange(UInt16 Group,
 Microsoft-Windows-Kernel-Processor-Power	111	1	DeliveredPerfChange_V1(UInt16 Group, UInt8 Number, UInt32 DeliveredPerformance, UInt64 DurationInUs)		PerfDiag	DeliveredPerfChange	Informational		
 Microsoft-Windows-Kernel-Processor-Power	111	2	DeliveredPerfChange_V2(UInt16 Group, UInt8 Number, UInt32 DeliveredPerformance, UInt64 DurationInUs, UInt32 DeliveredFrequency)		PerfDiag	DeliveredPerfChange	Informational		
 Microsoft-Windows-Kernel-Processor-Power	112	0	ParkSelection(UInt16 Group, Pointer Processors, Pointer OldPark, Pointer NewPark, Pointer OverUtilizedSet, Pointer IsolatedCores, UInt8 IdealUnparked, UInt8 UnparkCount, UInt32 ParkReason)		Algorithm	ParkSelection	Verbose		
-Microsoft-Windows-Kernel-Processor-Power	113	0	ProcessorEnergyCounter(UInt16 Group, UInt8 Number, UInt32 CounterId, HexInt64 CounterValue)		EnergyEstimation	ProcessorEnergyCounter	Verbose		
-Microsoft-Windows-Kernel-Processor-Power	114	0	PackageEnergyCounter(UInt32 CounterId, HexInt64 CounterValue)		EnergyEstimation	PackageEnergyCounter	Verbose		
+Microsoft-Windows-Kernel-Processor-Power	113	0	ProcessorEnergyCounter(UInt16 Group, UInt8 Number, UInt32 CounterId, UInt64 CounterValue)		EnergyEstimation	ProcessorEnergyCounter	Verbose		
+Microsoft-Windows-Kernel-Processor-Power	114	0	PackageEnergyCounter(UInt32 CounterId, UInt64 CounterValue)		EnergyEstimation	PackageEnergyCounter	Verbose		
 Microsoft-Windows-Kernel-Processor-Power	115	0	ProcessorPreVetoAccountingRundown(UInt16 Group, UInt8 Number, UInt32 StateIndex, UInt32 VetoCodeCount, Int16 Accounting)		Diag	ProcessorPreVetoAccountingRundown	Verbose		
 Microsoft-Windows-Kernel-Processor-Power	116	0	PlatformPreVetoAccountingRundown(UInt32 StateIndex, UInt32 VetoCodeCount, Int8 Accounting)		Diag	PlatformPreVetoAccountingRundown	Verbose		
 Microsoft-Windows-Kernel-Processor-Power	117	0	NotifyCpcHighest(UInt16 Group, UInt8 Number)		Diag	NotifyCpcHighest	Informational		
@@ -172,3 +172,7 @@ Microsoft-Windows-Kernel-Processor-Power	129	1	PepPerfDomainInfoRundown_V1(UInt3
 Microsoft-Windows-Kernel-Processor-Power	130	0	HgsUpdate()		Diag	HgsUpdate	Informational		
 Microsoft-Windows-Kernel-Processor-Power	131	0	ParkNodeClassRecordedStats(UInt16 Group, Pointer Affinity, UInt8 Class, UInt8 DistributeCores, UInt32 HistogramSize, UInt64 ConcurrencyHistogram)		Diag	ParkNodeClassRecordedStats	Verbose		
 Microsoft-Windows-Kernel-Processor-Power	132	0	ParkNodeParkHintChange(UInt16 Group, Pointer Affinity, Pointer ParkHint)		Diag	ParkNodeParkHintChange	Verbose		
+Microsoft-Windows-Kernel-Processor-Power	133	0	HiddenProcessorPerfRundown(UInt16 DomainMasterGroup, UInt8 DomainMasterNumber, UInt32 ProcessorId, UInt32 BiosCap, UInt32 ThermalCap)		Diag PerfDiag	HiddenProcessorPerfRundown	Informational		
+Microsoft-Windows-Kernel-Processor-Power	134	0	HiddenProcessorBiosCapChange(UInt16 DomainMasterGroup, UInt8 DomainMasterNumber, UInt32 ProcessorId, UInt32 Cap)		Diag	HiddenProcessorBiosCapChange	Informational		
+Microsoft-Windows-Kernel-Processor-Power	135	0	HiddenProcessorThermalCapChange(UInt16 DomainMasterGroup, UInt8 DomainMasterNumber, UInt32 ProcessorId, UInt32 Cap)		Diag	HiddenProcessorThermalCapChange	Informational		
+Microsoft-Windows-Kernel-Processor-Power	136	0	PerfStatesDegraded()			PerfStatesDegraded	Error		

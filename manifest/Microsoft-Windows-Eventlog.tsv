@@ -29,7 +29,8 @@ Microsoft-Windows-Eventlog	201	0	ServiceUsageAudit201(UnicodeString ChannelName,
 Microsoft-Windows-Eventlog	202	0	ServiceUsageAudit202(UnicodeString ChannelName, UnicodeString Query)		el:Audit	ServiceUsageAudit	Verbose		
 Microsoft-Windows-Eventlog	203	0	ServiceUsageAudit203(UInt8 ModuleNameLen, UnicodeString ModuleName)		el:Audit	ServiceUsageAudit	Verbose		
 Microsoft-Windows-Eventlog	204	0	ServiceUsageAudit204(UInt8 ModuleNameLen, UnicodeString ModuleName)		el:Audit	ServiceUsageAudit	Verbose		
-Microsoft-Windows-Eventlog	205	0	ServiceUsageAudit205(UInt8 ModuleNameLen, UnicodeString ModuleName)		el:Audit	ServiceUsageAudit	Verbose		
+Microsoft-Windows-Eventlog	205	1	ServiceUsageAudit205_V1(UInt8 ModuleNameLen, UnicodeString ModuleName)		el:Audit	ServiceUsageAudit	Verbose		
+Microsoft-Windows-Eventlog	205	2	ServiceUsageAudit205_V2(UInt8 ModuleNameLen, AnsiString ModuleName)		el:Audit	ServiceUsageAudit	Verbose		
 Microsoft-Windows-Eventlog	1100	0	Serviceshutdown()			Serviceshutdown	Informational		
 Microsoft-Windows-Eventlog	1101	0	Eventprocessing1101(UInt8 Reason)			Eventprocessing	Error		
 Microsoft-Windows-Eventlog	1102	0	Logclear1102(SID SubjectUserSid, UnicodeString SubjectUserName, UnicodeString SubjectDomainName, HexInt64 SubjectLogonId)			Logclear	Informational		

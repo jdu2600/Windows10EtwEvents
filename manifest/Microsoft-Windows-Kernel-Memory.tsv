@@ -15,3 +15,6 @@ Microsoft-Windows-Kernel-Memory	6	1	WorkingSetInSwapStart_V1(UInt32 ProcessId, H
 Microsoft-Windows-Kernel-Memory	7	0	WorkingSetInSwapStop(UInt32 ProcessId, HexInt32 Status)	Stop	KERNEL_MEM_KEYWORD_WS_SWAP	WorkingSetInSwap	Informational		
 Microsoft-Windows-Kernel-Memory	8	0	Acg(UInt32 AcgFlag)		KERNEL_MEM_KEYWORD_ACG	Acg	Informational		
 Microsoft-Windows-Kernel-Memory	9	0	WorkingSetInSwap(UInt32 ProcessId, HexInt32 Status)		KERNEL_MEM_KEYWORD_WS_SWAP	WorkingSetInSwap	Informational		
+Microsoft-Windows-Kernel-Memory	10	0	MdlAllocation(UInt64 DurationInMicroseconds, UInt64 TotalBytes, UInt64 LowAddress, UInt64 HighAddress, UInt64 SkipBytes, Pointer MemoryDescriptorList, UInt32 IdealNode, UInt32 Flags)		KERNEL_MEM_KEYWORD_PHYSICAL_ALLOC	MdlAllocation	Informational		
+Microsoft-Windows-Kernel-Memory	11	0	ContAllocation(UInt64 DurationInMicroseconds, UInt64 TotalBytes, UInt64 LowAddress, UInt64 HighAddress, UInt64 Boundary, UInt64 PhysicalAddress, Pointer MappedAddress, Boolean AllocatedFromPool, UInt32 ProtectionMask, UInt32 PreferredNode)		KERNEL_MEM_KEYWORD_PHYSICAL_ALLOC	ContAllocation	Informational		
+Microsoft-Windows-Kernel-Memory	12	0	MemInfoNode(UInt32 PartitionId, UInt32 Count, Int8 MemoryNodeInfo)		KERNEL_MEM_KEYWORD_MEMINFO_NODE	MemInfoNode	Informational		

@@ -12,3 +12,5 @@ Microsoft-Windows-Battery	10	0	BtpSet(Pointer Handle, UInt32 TripPoint)			BtpSet
 Microsoft-Windows-Battery	11	0	BtpRundown(Pointer Handle, UInt32 TripPoint)			BtpRundown	Informational		
 Microsoft-Windows-Battery	12	0	AcpiNotify(Pointer Handle, UInt32 Notification)			AcpiNotify	Informational		
 Microsoft-Windows-Battery	13	0	BatteryPercentRemaining(UInt32 RemainingPercentage, Int32 PercentageChange, UInt32 AcDc, UInt32 ElapsedTimeMs)			BatteryPercentRemaining	Informational		
+Microsoft-Windows-Battery	14	0	BatteryChargingWatchdogUpdated(Pointer Handle, UInt32 BatteryState, UInt32 WatchdogState, UInt32 WatchdogTimeout)			BatteryChargingWatchdogUpdated	Informational		
+Microsoft-Windows-Battery	15	0	BatteryChargingWatchdogRundown(Pointer Handle, UInt32 BatteryState, UInt32 WatchdogState, UInt32 WatchdogTimeout)			BatteryChargingWatchdogRundown	Informational		

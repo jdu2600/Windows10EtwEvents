@@ -82,6 +82,12 @@ Microsoft-Windows-NWiFi	10080	0	task_010080(GUID AdapterGuid, Int32 SessionId, I
 Microsoft-Windows-NWiFi	10081	0	task_010081(GUID AdapterGuid)		DisconnectedStandby	task_0	Informational		
 Microsoft-Windows-NWiFi	10082	0	task_010082(GUID AdapterGuid)		DisconnectedStandby	task_0	Informational		
 Microsoft-Windows-NWiFi	10083	0	task_010083(GUID AdapterGuid)		DisconnectedStandby	task_0	Informational		
+Microsoft-Windows-NWiFi	10084	0	task_010084(UnicodeString StatusAnnotation, UInt32 Status, UInt32 Context1)		AssocMgr ut:L2ConnectPath	task_0	Warning		
+Microsoft-Windows-NWiFi	10085	0	task_010085(UInt32 Status, UInt32 Initialized, UInt32 State, UInt32 Counter, UInt32 LocalSendConfirm, UInt32 PeerSendConfirm)		AssocMgr ut:L2ConnectPath	task_0	Warning		
+Microsoft-Windows-NWiFi	10086	0	task_010086(UnicodeString BufferAnnotation, UInt32 BufferLength)		AssocMgr ut:L2ConnectPath	task_0	Warning		
+Microsoft-Windows-NWiFi	10087	0	task_010087(UnicodeString LogLine)		AssocMgr ut:L2ConnectPath	task_0	Warning		
+Microsoft-Windows-NWiFi	10088	0	task_010088(AnsiString CommitFrameError, UInt32 CommitFrameSize, UInt32 MinCommitFrameSize, UInt32 AlgorithmNumber, UInt32 ExpectedAlgorithmNumber, UInt32 TransactionId, UInt32 ExpectedTransactionId)		AssocMgr ut:L2ConnectPath	task_0	Warning		
+Microsoft-Windows-NWiFi	10089	0	task_010089(UInt32 Status, UInt32 Context1)		AssocMgr ut:L2ConnectPath	task_0	Warning		
 Microsoft-Windows-NWiFi	20000	0	ConnecttosamenetworkonresumeStart(GUID InterfaceGuid)	Start		Connecttosamenetworkonresume	Informational		
 Microsoft-Windows-NWiFi	20001	0	ConnecttonetworkonresumeafterinterveningdisconnectStart(GUID InterfaceGuid)	Start		Connecttonetworkonresumeafterinterveningdisconnect	Informational		
 Microsoft-Windows-NWiFi	20002	0	ConnecttosamenetworkonresumeStop(GUID InterfaceGuid)	Stop		Connecttosamenetworkonresume	Informational		

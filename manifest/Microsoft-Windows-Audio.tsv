@@ -73,7 +73,7 @@ Microsoft-Windows-Audio	113	0	MidiRT:PerformAsynchronousI/OStart(Pointer object,
 Microsoft-Windows-Audio	114	0	MidiRT:PerformAsynchronousI/OStop(Pointer object, UInt32 hResult)	Stop		MidiRT:PerformAsynchronousI/O	Informational		
 Microsoft-Windows-Audio	115	0	CrossProcesspacketadded(Pointer CrossProcessInstance, UInt32 ReadIndex, UInt32 WriteIndexIndex, UInt32 FramesInPacket, UInt64 QPC)			CrossProcesspacketadded	Verbose		
 Microsoft-Windows-Audio	116	0	Pump:settingdeadline(Pointer PumpInstance, Int64 deadlineHns)			Pump:settingdeadline	Verbose		
-Microsoft-Windows-Audio	117	0	Pump:cancellingdeadline(Pointer PumpInstance)			Pump:cancellingdeadline	Informational		
+Microsoft-Windows-Audio	117	0	Pump:cancellingdeadline(Pointer PumpInstance)			Pump:cancellingdeadline	Verbose		
 Microsoft-Windows-Audio	118	0	Pump:misseddeadline!(Pointer PumpInstance, Int64 deadlineHns)			Pump:misseddeadline!	Informational		
 Microsoft-Windows-Audio	119	0	Pump:MultiMediamodeStart(Pointer PumpInstance)	Start		Pump:MultiMediamode	Verbose		
 Microsoft-Windows-Audio	120	0	Pump:MultiMediamodeStop(Pointer PumpInstance)	Stop		Pump:MultiMediamode	Verbose		
@@ -97,3 +97,20 @@ Microsoft-Windows-Audio	137	0	Pump:YieldStop(Pointer PumpInstance, UInt32 WakeCa
 Microsoft-Windows-Audio	138	0	Pump:ProcessStart(Pointer PumpInstance, UInt32 Phase)	Start		Pump:Process	Verbose		
 Microsoft-Windows-Audio	139	0	Pump:ProcessStop(Pointer PumpInstance)	Stop		Pump:Process	Verbose		
 Microsoft-Windows-Audio	140	0	Pump:ProcPassDuration(Pointer PumpInstance, Int64 WorkDuration, Int64 MaxWorkDuration)			Pump:ProcPassDuration	Verbose		
+Microsoft-Windows-Audio	141	0	AEObject(Pointer objInstance, UInt32 ucType)			AEObject	Informational		
+Microsoft-Windows-Audio	142	0	AEGlitch(Pointer objInstance, UInt32 ucType, Int64 WritePosition, UInt64 PlayPosition, UInt64 StreamPosition, UInt64 GlitchFrameCount)			AEGlitch	Verbose		
+Microsoft-Windows-Audio	143	0	AEDrop(Pointer objInstance, UInt64 SampleTime, UInt64 u64ByteCount)			AEDrop	Verbose		
+Microsoft-Windows-Audio	144	0	AECPUUsage(Pointer objInstance, UInt32 ucType)			AECPUUsage	Verbose		
+Microsoft-Windows-Audio	145	0	AEControl(Pointer objInstance, UInt32 ucType, UInt64 ProcessTime)			AEControl	Verbose		
+Microsoft-Windows-Audio	146	0	AEPosition(Pointer objInstance, UInt32 ucType, UInt64 WritePosition, UInt64 PlayPosition, UInt64 StreamPosition, UInt64 LoopPosition)			AEPosition	Verbose		
+Microsoft-Windows-Audio	147	0	AESecurity(Pointer objInstance)			AESecurity	Verbose		
+Microsoft-Windows-Audio	148	0	AEData(Pointer objInstance, UInt32 ucType, UInt64 Data1, UInt64 Data2, UInt64 Data3)			AEData	Verbose		
+Microsoft-Windows-Audio	149	0	AEIRP(Pointer objInstance, UInt32 ucType, UInt32 Index, UInt32 OutStandingCount, UInt64 FrameExtent)			AEIRP	Verbose		
+Microsoft-Windows-Audio	150	0	AEEndpoint(Pointer objInstance, UInt32 ucType, UInt64 PinHandle, UInt32 FormatTag, UInt32 SampleRate, UInt32 BitsPerSample, UInt32 Channels, UInt32 Period, UInt32 Latency, UInt32 BufferSize)			AEEndpoint	Verbose		
+Microsoft-Windows-Audio	151	0	AEInterpolator(Pointer objInstance, UInt32 ucType, UInt64 InterpolatedPlayPosition, UInt64 InterpolatedWritePosition, UInt64 RealPlayPosition, UInt64 RealWritePosition, Float SampleRate, Float FilteredError)			AEInterpolator	Verbose		
+Microsoft-Windows-Audio	152	0	AETimestamp(Pointer objInstance, UInt32 ucType, UInt64 Flag, UInt64 Padding, UInt64 QPCPos, UInt64 DevPos, UInt64 StrmPos)			AETimestamp	Verbose		
+Microsoft-Windows-Audio	153	0	AEPerformance(Pointer objInstance, UInt32 ucType, UInt64 Custom1, UInt64 Custom2)			AEPerformance	Verbose		
+Microsoft-Windows-Audio	154	0	AEGeneric(Pointer objInstance, UInt32 ucType, UInt64 u64Param1, UInt64 u64Param2, UInt64 u64Param3, UInt64 u64Param4, Float f64Param1, Float f64Param2, Float f64Param3, Float f64Param4)			AEGeneric	Verbose		
+Microsoft-Windows-Audio	155	0	AEMemory(Pointer objInstance, UInt32 ucType, Pointer hHeap, UInt32 ulInitial, UInt32 ulMin, UInt32 ulMax, UInt32 ulAllocCount, UInt32 ulExtendCount, UInt32 ulTotalAlloc)			AEMemory	Verbose		
+Microsoft-Windows-Audio	156	0	AEMemory_163(Pointer objInstance, UInt32 ucType, UInt64 u64Param1, UInt64 u64Param2, UInt64 u64Param3, UInt64 u64Param4)			AEMemory_163	Verbose		
+Microsoft-Windows-Audio	157	0	AEMemory_164(Pointer objInstance, UInt32 ucType, UInt64 u64Param1, UInt64 u64Param2, UInt64 u64Param3, UInt64 u64Param4)			AEMemory_164	Verbose		

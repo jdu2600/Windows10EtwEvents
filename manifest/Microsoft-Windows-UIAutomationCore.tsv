@@ -154,13 +154,30 @@ Microsoft-Windows-UIAutomationCore	505	0	RichEditProxy_GetVisibleRangeStart()	St
 Microsoft-Windows-UIAutomationCore	506	0	RichEditProxy_GetVisibleRangeStop()	Stop	PerfInstrumentation	RichEditProxy_GetVisibleRange	Informational		
 Microsoft-Windows-UIAutomationCore	507	0	EditProxy_NextWordStart()	Start	PerfInstrumentation	EditProxy_NextWord	Informational		
 Microsoft-Windows-UIAutomationCore	508	0	EditProxy_NextWordStop()	Stop	PerfInstrumentation	EditProxy_NextWord	Informational		
-Microsoft-Windows-UIAutomationCore	509	0	ClientConnection_CallWithReturnStart(UnicodeString MethodName, UInt32 ProcessId, UInt64 Duration, UInt32 RequestedTimeout, Boolean useAutomation8TimeoutBehavior)	Start	PerfInstrumentation	ClientConnection_CallWithReturn	Informational		
-Microsoft-Windows-UIAutomationCore	510	0	ClientConnection_CallWithReturnStop(UnicodeString MethodName, UInt32 ProcessId, UInt64 Duration, UInt32 RequestedTimeout, Boolean useAutomation8TimeoutBehavior)	Stop	PerfInstrumentation	ClientConnection_CallWithReturn	Informational		
+Microsoft-Windows-UIAutomationCore	509	0	ClientConnection_CallWithReturnStart(UnicodeString MethodName, UInt32 ProcessId, UInt32 ObjectReference, UInt64 Duration, UInt32 InstanceId)	Start	PerfInstrumentation	ClientConnection_CallWithReturn	Informational		
+Microsoft-Windows-UIAutomationCore	510	0	ClientConnection_CallWithReturnStop(UnicodeString MethodName, UInt32 ProcessId, UInt32 ObjectReference, UInt64 Duration, UInt32 InstanceId)	Stop	PerfInstrumentation	ClientConnection_CallWithReturn	Informational		
 Microsoft-Windows-UIAutomationCore	511	0	CSelectionPattern_GetCurrentSelectionStart()	Start	PerfInstrumentation	CSelectionPattern_GetCurrentSelection	Informational		
 Microsoft-Windows-UIAutomationCore	512	0	CSelectionPattern_GetCurrentSelectionStop()	Stop	PerfInstrumentation	CSelectionPattern_GetCurrentSelection	Informational		
 Microsoft-Windows-UIAutomationCore	513	0	HandleWinEventStart(UnicodeString Method, HexInt32 HWND, UnicodeString WindowClassName, HexInt32 EventId, HexInt32 ObjectId, UInt32 ChildId)	Start	PerfInstrumentation	HandleWinEvent	Informational		
 Microsoft-Windows-UIAutomationCore	514	0	HandleWinEventStop(UnicodeString Method, HexInt32 HWND, UnicodeString WindowClassName, HexInt32 EventId, HexInt32 ObjectId, UInt32 ChildId)	Stop	PerfInstrumentation	HandleWinEvent	Informational		
 Microsoft-Windows-UIAutomationCore	515	0	CoalesceWinEvent(UnicodeString Method, HexInt32 HWND, UnicodeString WindowClassName, HexInt32 EventId, UInt32 CoalescedEvents)		PerfInstrumentation	CoalesceWinEvent	Informational		
+Microsoft-Windows-UIAutomationCore	517	0	UiaProviderCalloutStart(UnicodeString MethodName, UInt32 Parameter1, UInt32 Parameter2)	Start	PerfInstrumentation	UiaProviderCallout	Informational		
+Microsoft-Windows-UIAutomationCore	518	0	UiaProviderCalloutStop(UnicodeString MethodName, UInt32 Parameter1, UInt32 Parameter2)	Stop	PerfInstrumentation	UiaProviderCallout	Informational		
+Microsoft-Windows-UIAutomationCore	519	0	MsaaProviderCalloutStart(UnicodeString MethodName, HexInt32 HWND)	Start	PerfInstrumentation	MsaaProviderCallout	Informational		
+Microsoft-Windows-UIAutomationCore	520	0	MsaaProviderCalloutStop(UnicodeString MethodName, HexInt32 HWND)	Stop	PerfInstrumentation	MsaaProviderCallout	Informational		
+Microsoft-Windows-UIAutomationCore	521	0	ClientConnection_DispatchToProviderStart(Boolean IsChannelConnection, UInt32 InstanceId)	Start	PerfInstrumentation	ClientConnection_DispatchToProvider	Informational		
+Microsoft-Windows-UIAutomationCore	522	0	ClientConnection_DispatchToProviderStop(Boolean IsChannelConnection, UInt32 InstanceId)	Stop	PerfInstrumentation	ClientConnection_DispatchToProvider	Informational		
+Microsoft-Windows-UIAutomationCore	523	0	ProcessIncomingRequestStart(UnicodeString MethodName, UInt32 ObjectReference, UInt32 InstanceId)	Start	PerfInstrumentation	ProcessIncomingRequest	Informational		
+Microsoft-Windows-UIAutomationCore	524	0	ProcessIncomingRequestStop(UnicodeString MethodName, UInt32 ObjectReference, UInt32 InstanceId)	Stop	PerfInstrumentation	ProcessIncomingRequest	Informational		
+Microsoft-Windows-UIAutomationCore	525	0	ProcessIncomingRequest_ContextChangeStart(UInt32 InstanceId)	Start	PerfInstrumentation	ProcessIncomingRequest_ContextChange	Informational		
+Microsoft-Windows-UIAutomationCore	526	0	ProcessIncomingRequest_ContextChangeStop(UInt32 InstanceId)	Stop	PerfInstrumentation	ProcessIncomingRequest_ContextChange	Informational		
+Microsoft-Windows-UIAutomationCore	527	0	ServerConnection_OnData_ForceFlush()		PerfInstrumentation	ServerConnection_OnData_ForceFlush	Informational		
+Microsoft-Windows-UIAutomationCore	528	0	ReleaseCollection_ObjectNotFound()		PerfInstrumentation	ReleaseCollection_ObjectNotFound	Informational		
+Microsoft-Windows-UIAutomationCore	529	0	ReleaseCollection_ReleaseObjects(UInt32 ObjectCount, Boolean IsCombinedWithOtherMethod)		PerfInstrumentation	ReleaseCollection_ReleaseObjects	Informational		
+Microsoft-Windows-UIAutomationCore	530	0	ReleaseCollection_IncompatibleContext()		PerfInstrumentation	ReleaseCollection_IncompatibleContext	Informational		
+Microsoft-Windows-UIAutomationCore	531	0	ClientConnection_StateChange(UnicodeString NewState)		PerfInstrumentation	ClientConnection_StateChange	Informational		
+Microsoft-Windows-UIAutomationCore	532	0	IsProcessFrozenCheckStart()	Start	PerfInstrumentation	IsProcessFrozenCheck	Informational		
+Microsoft-Windows-UIAutomationCore	533	0	IsProcessFrozenCheckStop()	Stop	PerfInstrumentation	IsProcessFrozenCheck	Informational		
 Microsoft-Windows-UIAutomationCore	603	0	IA2TextRange_CloneStart()	Start	PerfInstrumentation	IA2TextRange_Clone	Informational		
 Microsoft-Windows-UIAutomationCore	604	0	IA2TextRange_CloneStop()	Stop	PerfInstrumentation	IA2TextRange_Clone	Informational		
 Microsoft-Windows-UIAutomationCore	605	0	IA2TextRange_CompareStart()	Start	PerfInstrumentation	IA2TextRange_Compare	Informational		

@@ -52,6 +52,7 @@ Microsoft-Windows-DotNETRuntime	35	0	GCTriggered(UInt32 Reason, UInt16 ClrInstan
 Microsoft-Windows-DotNETRuntime	36	0	GCGCBulkRootCCW(UInt32 Count, UInt16 ClrInstanceID, Int8 Values)	GCBulkRootCCW	GCHeapDumpKeyword	GC	Informational		
 Microsoft-Windows-DotNETRuntime	37	0	GCGCBulkRCW(UInt32 Count, UInt16 ClrInstanceID, Int8 Values)	GCBulkRCW	GCHeapDumpKeyword	GC	Informational		
 Microsoft-Windows-DotNETRuntime	38	0	GCGCBulkRootStaticVar(UInt32 Count, UInt64 AppDomainID, UInt16 ClrInstanceID, UInt8 Values)	GCBulkRootStaticVar	GCHeapDumpKeyword	GC	Informational		
+Microsoft-Windows-DotNETRuntime	39	0	GCGCDynamicEvent(UnicodeString Name, UInt32 DataSize, Binary Data, UInt16 ClrInstanceID)	GCDynamicEvent	GCKeyword GCHandleKeyword GCHeapDumpKeyword GCSampledObjectAllocationHighKeyword GCHeapSurvivalAndMovementKeyword GCHeapCollectKeyword GCHeapAndTypeNamesKeyword GCSampledObjectAllocationLowKeyword	GC	Always		
 Microsoft-Windows-DotNETRuntime	40	0	WorkerThreadCreationV2Start(UInt32 WorkerThreadCount, UInt32 RetiredWorkerThreads)	Start	ThreadingKeyword	WorkerThreadCreationV2	Informational		
 Microsoft-Windows-DotNETRuntime	41	0	WorkerThreadCreationV2Stop(UInt32 WorkerThreadCount, UInt32 RetiredWorkerThreads)	Stop	ThreadingKeyword	WorkerThreadCreationV2	Informational		
 Microsoft-Windows-DotNETRuntime	42	0	WorkerThreadRetirementV2Start(UInt32 WorkerThreadCount, UInt32 RetiredWorkerThreads)	Start	ThreadingKeyword	WorkerThreadRetirementV2	Informational		
@@ -154,6 +155,7 @@ Microsoft-Windows-DotNETRuntime	202	0	GCMark(UInt32 HeapNum, UInt16 ClrInstanceI
 Microsoft-Windows-DotNETRuntime	203	2	GCGCJoin_V2(UInt32 Heap, UInt32 JoinTime, UInt32 JoinType, UInt16 ClrInstanceID, UInt32 JoinID)	GCJoin	GCKeyword	GC	Verbose		
 Microsoft-Windows-DotNETRuntime	204	3	GCPerHeapHistory_V3(UInt16 ClrInstanceID, Pointer FreeListAllocated, Pointer FreeListRejected, Pointer EndOfSegAllocated, Pointer CondemnedAllocated, Pointer PinnedAllocated, Pointer PinnedAllocatedAdvance, UInt32 RunningFreeListEfficiency, UInt32 CondemnReasons0, UInt32 CondemnReasons1, UInt32 CompactMechanisms, UInt32 ExpandMechanisms, UInt32 HeapIndex, Pointer ExtraGen0Commit, UInt32 Count, Pointer Values)	PerHeapHistory	GCKeyword	GC	Informational		
 Microsoft-Windows-DotNETRuntime	205	2	GCGlobalHeapHistory_V2(UInt64 FinalYoungestDesired, Int32 NumHeaps, UInt32 CondemnedGeneration, UInt32 Gen0ReductionCount, UInt32 Reason, UInt32 GlobalMechanisms, UInt16 ClrInstanceID, UInt32 PauseMode, UInt32 MemoryPressure)	GlobalHeapHistory	GCKeyword	GC	Informational		
+Microsoft-Windows-DotNETRuntime	206	0	GCGCLoaded(UnicodeString GCName, UInt16 ClrInstanceID)	GCLoaded	GCKeyword	GC	Informational		
 Microsoft-Windows-DotNETRuntime	240	0	DebugIPCEventStart()	Start	DebuggerKeyword	DebugIPCEvent	Informational		
 Microsoft-Windows-DotNETRuntime	241	0	DebugIPCEventStop()	Stop	DebuggerKeyword	DebugIPCEvent	Informational		
 Microsoft-Windows-DotNETRuntime	242	0	DebugExceptionProcessingStart()	Start	DebuggerKeyword	DebugExceptionProcessing	Informational		

@@ -139,7 +139,7 @@ Microsoft-Windows-Narrator	161	0	DetailedReadingDataStop()	Stop	PerfInstrumentat
 Microsoft-Windows-Narrator	162	0	EventQProcessStart(Int32 MessageType)	Start	PerfInstrumentation	EventQProcess	Informational		
 Microsoft-Windows-Narrator	163	0	EventQProcessStop(Int32 MessageType)	Stop	PerfInstrumentation	EventQProcess	Informational		
 Microsoft-Windows-Narrator	164	0	RebuildCacheStart()	Start	PerfInstrumentation	RebuildCache	Informational		
-Microsoft-Windows-Narrator	165	0	RebuildCacheStart165()	Start	PerfInstrumentation	RebuildCache	Informational		
+Microsoft-Windows-Narrator	165	0	RebuildCacheStop()	Stop	PerfInstrumentation	RebuildCache	Informational		
 Microsoft-Windows-Narrator	168	0	CancellationCheckStart()	Start	PerfInstrumentation	CancellationCheck	Informational		
 Microsoft-Windows-Narrator	169	0	CancellationCheckStop()	Stop	PerfInstrumentation	CancellationCheck	Informational		
 Microsoft-Windows-Narrator	170	0	UiaFocusEventReceivedStart(Int32 ElementAddress)	Start	PerfInstrumentation	UiaFocusEventReceived	Informational		
@@ -217,3 +217,6 @@ Microsoft-Windows-Narrator	247	0	ChunkGenerator_GenerateChunksStart()	Start	Perf
 Microsoft-Windows-Narrator	248	0	ChunkGenerator_GenerateChunksStop()	Stop	PerfInstrumentation	ChunkGenerator_GenerateChunks	Informational		
 Microsoft-Windows-Narrator	249	0	ChunkGenerator_GenerateSingleChunkStart()	Start	PerfInstrumentation	ChunkGenerator_GenerateSingleChunk	Informational		
 Microsoft-Windows-Narrator	250	0	ChunkGenerator_GenerateSingleChunkStop()	Stop	PerfInstrumentation	ChunkGenerator_GenerateSingleChunk	Informational		
+Microsoft-Windows-Narrator	251	0	NarratorProcessQueueTrigger(UnicodeString Trigger)		PerfInstrumentation	NarratorProcessQueueTrigger	Informational		
+Microsoft-Windows-Narrator	252	0	ControlTemplateReadingStart()	Start	PerfInstrumentation	ControlTemplateReading	Informational		
+Microsoft-Windows-Narrator	253	0	ControlTemplateReadingStop()	Stop	PerfInstrumentation	ControlTemplateReading	Informational		

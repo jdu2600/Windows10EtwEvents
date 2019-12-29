@@ -13,7 +13,7 @@ Microsoft-Windows-Hyper-V-Netvsc	11	0	RndisStatusChange11(UInt32 MiniportNameLen
 Microsoft-Windows-Hyper-V-Netvsc	12	0	RndisStatusChange12(UInt32 MiniportNameLen, UnicodeString MiniportName)			RndisStatusChange	Informational		
 Microsoft-Windows-Hyper-V-Netvsc	13	0	RndisStatusChange13(UInt32 MiniportNameLen, UnicodeString MiniportName)			RndisStatusChange	Informational		
 Microsoft-Windows-Hyper-V-Netvsc	14	0	RndisStatusChange14(UInt32 MiniportNameLen, UnicodeString MiniportName)			RndisStatusChange	Informational		
-Microsoft-Windows-Hyper-V-Netvsc	15	0	MicroportInit(UInt32 Status)			MicroportInit	Error		
+Microsoft-Windows-Hyper-V-Netvsc	15	0	MicroportInit(UInt32 MiniportNameLen, UnicodeString MiniportName, UInt32 Status, UInt32 UniqueEventValue)			MicroportInit	Error		
 Microsoft-Windows-Hyper-V-Netvsc	16	0	task_0(UInt32 Status, UInt32 Operation, UInt32 DropReason, UInt32 MiniportNameLen, UnicodeString MiniportName)			task_0	Error		
 Microsoft-Windows-Hyper-V-Netvsc	17	0	task_017(UInt32 Status, UInt32 DropReason)			task_0	Error		
 Microsoft-Windows-Hyper-V-Netvsc	18	0	task_018(UInt32 Status, UInt32 Direction, UInt32 DropReason, Pointer Pointer, UInt64 CorrelationId, UInt32 IfIndex)			task_0	Error		

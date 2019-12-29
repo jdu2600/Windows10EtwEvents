@@ -13,6 +13,8 @@ Microsoft-Windows-HelloForBusiness	3510	0	KeyRegistrationStart()	Start	Component
 Microsoft-Windows-HelloForBusiness	3520	0	DeviceUnlockStart(UnicodeString DeviceUnlockProvider, UnicodeString DeviceUnlockGroupA, UnicodeString DeviceUnlockGroupB)	Start	Internal	DeviceUnlock	Informational		
 Microsoft-Windows-HelloForBusiness	3525	0	HelloProvisioningStart3525()	Start	Internal	HelloProvisioning	Informational		
 Microsoft-Windows-HelloForBusiness	3555	0	ContainerCreationStart3555()	Start	Internal	ContainerCreation	Informational		
+Microsoft-Windows-HelloForBusiness	3601	0	ContainerDeletionStart()	Start	Internal	ContainerDeletion	Informational		
+Microsoft-Windows-HelloForBusiness	3611	0	ContainerDeletionStart3611()	Start	Internal	ContainerDeletion	Informational		
 Microsoft-Windows-HelloForBusiness	5000	0	task_0Informational(UnicodeString Manufacturer, UnicodeString Version, UInt32 Status)	Informational	Internal	task_0	Informational		
 Microsoft-Windows-HelloForBusiness	5001	0	task_0Informational5001(UInt32 CredentialType)	Informational	Internal	task_0	Informational		
 Microsoft-Windows-HelloForBusiness	5050	0	KeyCreationInformational(HexInt32 Result, UInt32 NumberOfAvailableKeys, UInt32 ElapsedTime)	Informational	Internal	KeyCreation	Informational		
@@ -25,6 +27,8 @@ Microsoft-Windows-HelloForBusiness	5204	0	PrerequisitesCheckInformational(UInt32
 Microsoft-Windows-HelloForBusiness	5225	0	KeyCreationInformational5225(UInt32 KeyProvider, HexInt32 Result)	Informational	Internal	KeyCreation	Informational		
 Microsoft-Windows-HelloForBusiness	5520	0	DeviceUnlockInformational()	Informational	Internal	DeviceUnlock	Informational		
 Microsoft-Windows-HelloForBusiness	5555	0	ContainerCreationInformational(UInt32 TpmSupport, UInt32 HardwarePolicy, Boolean IsTpm12Excluded, UInt32 TpmVersion, Boolean IsTpmFIPS, Boolean IsTpmLockedOut, Boolean IsKeyPregenPoolSatisfactory, UInt32 KeyProvider, HexInt32 Result)	Informational	Internal	ContainerCreation	Informational		
+Microsoft-Windows-HelloForBusiness	5601	0	ContainerDeletionInformational()	Informational	Internal	ContainerDeletion	Informational		
+Microsoft-Windows-HelloForBusiness	5602	0	ContainerDeletionInformational5602()	Informational	Internal	ContainerDeletion	Informational		
 Microsoft-Windows-HelloForBusiness	6010	0	KeyUseInformational(UnicodeString KeyName, UInt32 KeyUseCredUnavailableReason)	Informational	Internal	KeyUse	Warning		
 Microsoft-Windows-HelloForBusiness	6045	0	HelloProvisioningStop(HexInt32 Error, UInt32 ProcessingTime)	Stop	Internal	HelloProvisioning	Warning		
 Microsoft-Windows-HelloForBusiness	6055	0	ContainerCreationStop(HexInt32 Error, UInt32 ProcessingTime)	Stop	Internal	ContainerCreation	Warning		
@@ -34,6 +38,7 @@ Microsoft-Windows-HelloForBusiness	6209	0	PrerequisitesCheckInformational6209()	
 Microsoft-Windows-HelloForBusiness	6210	0	PrerequisitesCheckInformational6210()	Informational	Internal	PrerequisitesCheck	Warning		
 Microsoft-Windows-HelloForBusiness	6520	0	DeviceUnlockStop()	Stop	Internal	DeviceUnlock	Warning		
 Microsoft-Windows-HelloForBusiness	6525	0	HelloProvisioningStop6525(HexInt32 Error, UInt32 ProcessingTime)	Stop	Component	HelloProvisioning	Warning		
+Microsoft-Windows-HelloForBusiness	6611	0	ContainerDeletionStop()	Stop	Internal	ContainerDeletion	Warning		
 Microsoft-Windows-HelloForBusiness	7002	0	ContainerLoadInformational(GUID ContainerId, HexInt32 Error)	Informational	Internal	ContainerLoad	Error		
 Microsoft-Windows-HelloForBusiness	7025	0	ServiceStartInformational(UnicodeString ServiceName, HexInt32 Error)	Informational	Internal	ServiceStart	Error		
 Microsoft-Windows-HelloForBusiness	7030	0	task_0Informational7030(HexInt32 Error)	Informational	Internal	task_0	Error		
@@ -67,6 +72,10 @@ Microsoft-Windows-HelloForBusiness	7510	0	KeyRegistrationStop(HexInt32 Error)	St
 Microsoft-Windows-HelloForBusiness	7520	0	DeviceUnlockStop7520(UnicodeString ErrorText, HexInt32 Error, AnsiString CorrelationVector, UInt32 ProcessingTime)	Stop	Internal	DeviceUnlock	Error		
 Microsoft-Windows-HelloForBusiness	7525	0	HelloProvisioningStop7525(HexInt32 Error, UInt32 ProcessingTime)	Stop	Component	HelloProvisioning	Error		
 Microsoft-Windows-HelloForBusiness	7555	0	ContainerCreationStop7555(HexInt32 Error, UInt32 ProcessingTime)	Stop	Internal	ContainerCreation	Error		
+Microsoft-Windows-HelloForBusiness	7601	0	ContainerDeletionStop7601(HexInt32 Error, UInt32 ProcessingTime)	Stop	Internal	ContainerDeletion	Error		
+Microsoft-Windows-HelloForBusiness	7611	0	ContainerDeletionStop7611(HexInt32 Error)	Stop	Internal	ContainerDeletion	Error		
+Microsoft-Windows-HelloForBusiness	7621	0	CertificateEnrollmentInformational7621(HexInt32 Error)	Informational	Internal	CertificateEnrollment	Error		
+Microsoft-Windows-HelloForBusiness	7631	0	BiometricEnrollmentInformational(HexInt32 Error)	Informational	Internal	BiometricEnrollment	Error		
 Microsoft-Windows-HelloForBusiness	8002	0	ContainerLoadInformational8002(GUID ContainerId, UInt32 ContainerVersion, UInt32 KeyProvider, Boolean HasCachedLogonKey, UInt32 ContainerStatus)	Informational	Internal	ContainerLoad			
 Microsoft-Windows-HelloForBusiness	8025	0	ServiceStartInformational8025(UnicodeString ServiceName)	Informational	Internal	ServiceStart			
 Microsoft-Windows-HelloForBusiness	8030	0	task_0Informational8030()	Informational	Internal	task_0			
@@ -100,3 +109,7 @@ Microsoft-Windows-HelloForBusiness	8510	0	KeyRegistrationStop8510()	Stop	Compone
 Microsoft-Windows-HelloForBusiness	8520	0	DeviceUnlockStop8520(UInt32 ProcessingTime)	Stop	Internal	DeviceUnlock			
 Microsoft-Windows-HelloForBusiness	8525	0	HelloProvisioningStop8525(UInt32 ProcessingTime)	Stop	Component	HelloProvisioning			
 Microsoft-Windows-HelloForBusiness	8555	0	ContainerCreationStop8555(UInt32 ProcessingTime)	Stop	Internal	ContainerCreation			
+Microsoft-Windows-HelloForBusiness	8601	0	ContainerDeletionStop8601(UInt32 ProcessingTime)	Stop	Internal	ContainerDeletion			
+Microsoft-Windows-HelloForBusiness	8611	0	ContainerDeletionStop8611()	Stop	Internal	ContainerDeletion			
+Microsoft-Windows-HelloForBusiness	8621	0	CertificateEnrollmentInformational8621()	Informational	Internal	CertificateEnrollment			
+Microsoft-Windows-HelloForBusiness	8631	0	BiometricEnrollmentInformational8631()	Informational	Internal	BiometricEnrollment			

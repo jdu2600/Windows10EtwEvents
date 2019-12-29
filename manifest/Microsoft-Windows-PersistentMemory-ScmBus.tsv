@@ -6,4 +6,8 @@ Microsoft-Windows-PersistentMemory-ScmBus	4	1	task_04_V1(Pointer Irp, HexInt32 M
 Microsoft-Windows-PersistentMemory-ScmBus	5	1	task_05_V1(Pointer Irp, HexInt32 Status, Pointer DeviceObject)			task_0	Informational		
 Microsoft-Windows-PersistentMemory-ScmBus	6	1	task_06_V1(AnsiString CertificationArea, AnsiString FailureMessage)			task_0	Error		
 Microsoft-Windows-PersistentMemory-ScmBus	7	1	task_07_V1(AnsiString CertificationArea, AnsiString FailureMessage)			task_0	Warning		
-Microsoft-Windows-PersistentMemory-ScmBus	900	0	task_0(GUID DeviceGuid, AnsiString Message)			task_0	Always		
+Microsoft-Windows-PersistentMemory-ScmBus	8	1	task_08_V1(HexInt32 Status, HexInt32 ExtendedStatus, UInt32 Size, HexInt64 StartAddress, HexInt64 Length, HexInt64 RestartAddress, HexInt64 RestartLength, Boolean VolatileMemory, Boolean PersistentMemory, Boolean Overflow, UInt32 NumErrorRecords)			task_0	Verbose		
+Microsoft-Windows-PersistentMemory-ScmBus	101	1	task_0101_V1(HexInt32 NfitHandle, HexInt64 StartAddress, HexInt64 Length)			task_0	Error		
+Microsoft-Windows-PersistentMemory-ScmBus	215	0	task_0(GUID DeviceGuid, AnsiString Message)			task_0	Error		
+Microsoft-Windows-PersistentMemory-ScmBus	400	1	task_0400_V1(HexInt32 NfitHandle, UnicodeString Location, HexInt64 StartAddress, HexInt64 Length)			task_0	Error		
+Microsoft-Windows-PersistentMemory-ScmBus	900	0	task_0900(GUID DeviceGuid, AnsiString Message)			task_0	Always		

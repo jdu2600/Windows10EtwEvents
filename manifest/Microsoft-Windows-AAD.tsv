@@ -96,7 +96,7 @@ Microsoft-Windows-AAD	1140	0	AadCloudAPPluginOperationStart1140()	Start	Analytic
 Microsoft-Windows-AAD	1141	0	AadCloudAPPluginOperationStop1141(HexInt32 Status)	Stop	Analytic	AadCloudAPPluginOperation	Informational		
 Microsoft-Windows-AAD	1142	0	AadCloudAPPluginOperation1142(UnicodeString value)		Error Operational	AadCloudAPPluginOperation	Error		
 Microsoft-Windows-AAD	1143	0	AadCloudAPPluginOperation1143(Int32 value, UnicodeString CorrelationID)		Analytic	AadCloudAPPluginOperation	Informational		
-Microsoft-Windows-AAD	1144	0	AadCloudAPPluginOperation1144(UnicodeString value1, UnicodeString value2, UnicodeString value3)		Analytic	AadCloudAPPluginOperation	Informational		
+Microsoft-Windows-AAD	1144	0	AadCloudAPPluginOperation1144(Int32 value, UnicodeString Method, UnicodeString EndpointUri, UnicodeString CorrelationID)		Analytic	AadCloudAPPluginOperation	Informational		
 Microsoft-Windows-AAD	1145	0	AadCloudAPPluginOperation1145(UnicodeString value)		Analytic	AadCloudAPPluginOperation	Informational		
 Microsoft-Windows-AAD	1146	0	AadCloudAPPluginOperation1146(UInt64 NoOfTargets, UInt64 RequestType)		Analytic	AadCloudAPPluginOperation	Informational		
 Microsoft-Windows-AAD	1147	0	AadCloudAPPluginOperationStart1147()	Start	Analytic	AadCloudAPPluginOperation	Informational		
@@ -126,8 +126,8 @@ Microsoft-Windows-AAD	1204	0	AadCloudAPPluginOperationStart1204()	Start	Analytic
 Microsoft-Windows-AAD	1205	0	AadCloudAPPluginOperationStop1205(HexInt32 Status)	Stop	Analytic	AadCloudAPPluginOperation	Informational		
 Microsoft-Windows-AAD	1206	0	AadCloudAPPluginOperationStart1206()	Start	Analytic	AadCloudAPPluginOperation	Informational		
 Microsoft-Windows-AAD	1207	0	AadCloudAPPluginOperationStop1207(HexInt32 Status)	Stop	Analytic	AadCloudAPPluginOperation	Informational		
-Microsoft-Windows-AAD	1208	0	AadCloudAPPluginOperationStart1208(UnicodeString value)	Start	Analytic	AadCloudAPPluginOperation	Informational		
-Microsoft-Windows-AAD	1209	0	AadCloudAPPluginOperationStart1209(UnicodeString value)	Start	Analytic	AadCloudAPPluginOperation	Informational		
+Microsoft-Windows-AAD	1208	0	AadCloudAPPluginOperationStart1208(UnicodeString value1, UnicodeString value2)	Start	Analytic	AadCloudAPPluginOperation	Informational		
+Microsoft-Windows-AAD	1209	0	AadCloudAPPluginOperationStart1209(UnicodeString value1, UnicodeString value2)	Start	Analytic	AadCloudAPPluginOperation	Informational		
 Microsoft-Windows-AAD	1210	0	AadCloudAPPluginOperation1210(UnicodeString value)		Operational Warning	AadCloudAPPluginOperation	Warning		
 Microsoft-Windows-AAD	1211	0	AadCloudAPPluginOperation1211(HexInt32 Status)		Operational Warning	AadCloudAPPluginOperation	Warning		
 Microsoft-Windows-AAD	1212	0	AadCloudAPPluginOperation1212(HexInt32 Status, UnicodeString CorrelationID)		Operational Warning	AadCloudAPPluginOperation	Warning		
@@ -159,3 +159,4 @@ Microsoft-Windows-AAD	1237	0	AadCloudAPPluginOperation1237()		Operational	AadClo
 Microsoft-Windows-AAD	1238	0	AadCloudAPPluginOperation1238()		Analytic	AadCloudAPPluginOperation	Informational		
 Microsoft-Windows-AAD	1239	0	AadCloudAPPluginOperation1239()		Analytic	AadCloudAPPluginOperation	Informational		
 Microsoft-Windows-AAD	1240	0	AadCloudAPPluginOperation1240()		Analytic	AadCloudAPPluginOperation	Informational		
+Microsoft-Windows-AAD	1241	0	AadCloudAPPluginOperation1241(UnicodeString value)		Analytic Warning	AadCloudAPPluginOperation	Warning		

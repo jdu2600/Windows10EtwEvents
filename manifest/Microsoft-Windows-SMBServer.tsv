@@ -119,6 +119,7 @@ Microsoft-Windows-SMBServer	1038	0	task_01038(UInt32 FailureType, UInt16 DeviceN
 Microsoft-Windows-SMBServer	1039	0	task_01039(UInt32 NotificationType, UInt32 InterfaceIndex, UInt16 NdkOperationalState)		Nsi	task_0	Informational		
 Microsoft-Windows-SMBServer	1040	0	task_01040(UInt32 NotificationType, UInt32 InterfaceIndex)		Nsi	task_0	Informational		
 Microsoft-Windows-SMBServer	1041	0	task_01041(UInt32 FailureType, UInt32 RegistryValueNameLength, UnicodeString RegistryValueName)		Operational	task_0	Warning		
+Microsoft-Windows-SMBServer	1043	0	task_01043(UInt64 CloseOperationDurationInMillieconds, UInt32 TransportNameLength, UnicodeString TransportName, UInt8 EndpointShutdown, UInt8 EndpointRemoved)		Operational	task_0	Informational		
 Microsoft-Windows-SMBServer	1800	0	SSClusterCaFailure(UInt16 ServerNameLength, UnicodeString ServerName, UInt16 ShareNameLength, UnicodeString ShareName)		Operational	SSClusterCaFailure	Error		
 Microsoft-Windows-SMBServer	1801	0	SSRkfCaFailure(UInt16 ServerNameLength, UnicodeString ServerName, UInt16 ShareNameLength, UnicodeString ShareName, UInt32 Status)		Operational	SSRkfCaFailure	Error		
 Microsoft-Windows-SMBServer	1802	0	SrvNetGetNextIdFailure(UInt32 Status)		Operational	SrvNetGetNextIdFailure	Error		

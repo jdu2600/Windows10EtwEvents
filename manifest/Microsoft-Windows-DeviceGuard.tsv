@@ -1,4 +1,5 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-DeviceGuard	6000	0	task_0ManageCI(UnicodeString PolicyFilePath, HexInt32 ErrorCode)	ManageCI		task_0	Informational		
 Microsoft-Windows-DeviceGuard	7000	0	task_0DeviceGuard(UnicodeString VirtualizationBasedSecurity, UnicodeString SecureBoot, UnicodeString DmaProtection, UnicodeString HVCI, UnicodeString LSA, UnicodeString Reboot, HexInt32 Status)	DeviceGuard		task_0	Informational		
 Microsoft-Windows-DeviceGuard	7001	0	task_0DeviceGuard7001(HexInt32 Status, UnicodeString ErrorMessage)	DeviceGuard		task_0	Error		
 Microsoft-Windows-DeviceGuard	7002	0	task_0DeviceGuard7002(HexInt32 Status, UnicodeString ErrorMessage)	DeviceGuard		task_0	Error		

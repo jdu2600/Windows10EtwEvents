@@ -260,14 +260,25 @@ Microsoft-Windows-Win32k	404	0	TouchPadWMPointerProcessingStop()	Stop	MessagePum
 Microsoft-Windows-Win32k	405	0	TouchPadGesture()		MessagePumpInternalAndInput	TouchPadGesture	Informational		
 Microsoft-Windows-Win32k	406	0	CopyPointerInputFrameStart()	Start	MessagePumpInternalAndInput	CopyPointerInputFrame	Informational		
 Microsoft-Windows-Win32k	407	0	CopyPointerInputFrameStop()	Stop	MessagePumpInternalAndInput	CopyPointerInputFrame	Informational		
-Microsoft-Windows-Win32k	410	0	TouchPadLatencyModeProcessingStart()	Start		TouchPadLatencyModeProcessing	Informational		
-Microsoft-Windows-Win32k	411	0	TouchPadLatencyModeProcessingStop()	Stop		TouchPadLatencyModeProcessing	Informational		
+Microsoft-Windows-Win32k	410	0	LatencyModeProcessingStart()	Start		LatencyModeProcessing	Informational		
+Microsoft-Windows-Win32k	411	0	LatencyModeProcessingStop()	Stop		LatencyModeProcessing	Informational		
 Microsoft-Windows-Win32k	412	0	DCompBeginFrame(UInt64 hConnection, UInt32 SyncRefreshCount)		Updates	DCompBeginFrame	Informational		
 Microsoft-Windows-Win32k	413	0	TokenIndependentFlipSkipComplete(UInt32 SyncRefreshCount, UInt32 PresentCount, UInt64 CompositionSurfaceLuid, UInt64 BindId)		Updates	TokenIndependentFlipSkipComplete	Informational		
 Microsoft-Windows-Win32k	414	0	DwmManipulationFrameStart(UInt32 FrameId, UInt32 PointerCount)		Updates	DwmManipulationFrameStart	Informational		
 Microsoft-Windows-Win32k	415	0	DwmManipulationFrameRouted(UInt32 FrameId, UInt32 PointerCount)		Updates	DwmManipulationFrameRouted	Informational		
 Microsoft-Windows-Win32k	416	0	ExclusiveUserCritTelemetry(UInt64 AcquireQpcCounts, UInt32 AcquireTimeMs, UInt64 Token)			ExclusiveUserCritTelemetry	Informational		
 Microsoft-Windows-Win32k	417	0	SharedUserCritTelemetry(UInt64 AcquireQpcCounts, UInt32 AcquireTimeMs, UInt64 Token)			SharedUserCritTelemetry	Informational		
+Microsoft-Windows-Win32k	418	0	PowerDisplayChange418(Int32 Location)		win32Power	PowerDisplayChange	Informational		
+Microsoft-Windows-Win32k	419	0	PowerDisplayChange419(Int32 Location)		win32Power	PowerDisplayChange	Informational		
+Microsoft-Windows-Win32k	420	0	PowerDisplayChange420(Int32 Location)		win32Power	PowerDisplayChange	Informational		
+Microsoft-Windows-Win32k	421	0	PowerDisplayChange421(Int32 Location)		win32Power	PowerDisplayChange	Informational		
+Microsoft-Windows-Win32k	422	0	PowerDisplayChange422(Int32 Location)		win32Power	PowerDisplayChange	Informational		
+Microsoft-Windows-Win32k	423	0	PowerDisplayChange423(Int32 Location)		win32Power	PowerDisplayChange	Informational		
+Microsoft-Windows-Win32k	424	0	PowerDisplayChange424(Int32 Location)		win32Power	PowerDisplayChange	Informational		
+Microsoft-Windows-Win32k	425	0	PowerDisplayChange425(Int32 Location)		win32Power	PowerDisplayChange	Informational		
+Microsoft-Windows-Win32k	426	0	QueueNullPostMessage(UInt32 SourceProcessId, UInt32 SourceThreadId, AnsiString SourceProcessName, Pointer DestinationHwnd)		MessagePump NullMessages	QueueNullPostMessage	Informational		
+Microsoft-Windows-Win32k	427	0	SyscallFilterMessage(UInt32 SyscallNumber)			SyscallFilterMessage	Informational		
+Microsoft-Windows-Win32k	428	0	SPIBlockedByFiltering(UInt32 SPIAction)			SPIBlockedByFiltering	Informational		
 Microsoft-Windows-Win32k	1000	0	task_01000(UInt32 eventMin, UInt32 eventMax, UInt32 idEventProcess, UInt32 idEventThread, UInt32 Flags, Pointer HookInstance)		AuditApiCalls	task_0	Informational		
 Microsoft-Windows-Win32k	1001	0	task_01001(UInt32 ReturnValue)		AuditApiCalls	task_0	Informational		
 Microsoft-Windows-Win32k	10002	0	WindowLayoutChangeStop(UInt32 hWnd, UInt32 Packed_High_Height_Low_Width, UnicodeString PRAID, UnicodeString PackageFullName)	Stop		WindowLayoutChange	Informational		

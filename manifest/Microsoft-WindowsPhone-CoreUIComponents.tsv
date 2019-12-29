@@ -32,8 +32,8 @@ Microsoft-WindowsPhone-CoreUIComponents	1230	0	ForegroundTaskManagerResumeTaskSt
 Microsoft-WindowsPhone-CoreUIComponents	1231	0	ForegroundTaskManagerResumeTaskStop(UInt32 unParam, UInt32 appLayer)	Stop	NavigationPerformance ForegroundTaskManager keyword_200000000000	ForegroundTaskManagerResumeTask	Verbose		
 Microsoft-WindowsPhone-CoreUIComponents	1232	0	ForegroundTaskManagerPauseTaskStart(UInt32 unParam)	Start	NavigationPerformance ForegroundTaskManager	ForegroundTaskManagerPauseTask	Informational		
 Microsoft-WindowsPhone-CoreUIComponents	1233	0	ForegroundTaskManagerPauseTaskStop(UInt32 unParam)	Stop	NavigationPerformance ForegroundTaskManager	ForegroundTaskManagerPauseTask	Verbose		
-Microsoft-WindowsPhone-CoreUIComponents	1234	0	ForegroundTaskManagerCancelTaskStart(UInt32 unParam, Boolean fBool)	Start	NavigationPerformance ForegroundTaskManager keyword_200000000000	ForegroundTaskManagerCancelTask	Informational		
-Microsoft-WindowsPhone-CoreUIComponents	1235	0	ForegroundTaskManagerCancelTaskStop(UInt32 unParam, Boolean fBool)	Stop	NavigationPerformance ForegroundTaskManager keyword_200000000000	ForegroundTaskManagerCancelTask	Verbose		
+Microsoft-WindowsPhone-CoreUIComponents	1234	0	ForegroundTaskManagerCancelTaskStart(UInt32 unParam, Boolean fBool, UInt32 TaskCancellationType)	Start	NavigationPerformance ForegroundTaskManager keyword_200000000000	ForegroundTaskManagerCancelTask	Informational		
+Microsoft-WindowsPhone-CoreUIComponents	1235	0	ForegroundTaskManagerCancelTaskStop(UInt32 unParam, Boolean fBool, UInt32 TaskCancellationType)	Stop	NavigationPerformance ForegroundTaskManager keyword_200000000000	ForegroundTaskManagerCancelTask	Verbose		
 Microsoft-WindowsPhone-CoreUIComponents	1236	0	ForegroundTaskManagerAbortTaskStart(UInt32 unParam)	Start	NavigationPerformance ForegroundTaskManager keyword_200000000000	ForegroundTaskManagerAbortTask	Informational		
 Microsoft-WindowsPhone-CoreUIComponents	1237	0	ForegroundTaskManagerAbortTaskStop(UInt32 unParam)	Stop	NavigationPerformance ForegroundTaskManager keyword_200000000000	ForegroundTaskManagerAbortTask	Verbose		
 Microsoft-WindowsPhone-CoreUIComponents	1240	0	ForegroundTaskManagerGetApplicationDisplayNameStart()	Start	NavigationPerformance ForegroundTaskManager	ForegroundTaskManagerGetApplicationDisplayName	Verbose		
@@ -65,6 +65,7 @@ Microsoft-WindowsPhone-CoreUIComponents	1265	0	ForegroundTaskManagerLaunchTask(U
 Microsoft-WindowsPhone-CoreUIComponents	1266	0	ForegroundTaskManager1266(UInt32 unParam)		Error keyword_400000000000	ForegroundTaskManager	Warning		
 Microsoft-WindowsPhone-CoreUIComponents	1267	0	ForegroundTaskManager1267(UInt32 unParam)		Error keyword_400000000000	ForegroundTaskManager	Warning		
 Microsoft-WindowsPhone-CoreUIComponents	1268	0	ForegroundTaskManager1268(UInt32 unParam)		Error keyword_400000000000	ForegroundTaskManager	Warning		
+Microsoft-WindowsPhone-CoreUIComponents	1269	0	ForegroundTaskManager1269(UInt32 unParam, UInt32 TaskInstanceState, Int32 hresult)		ForegroundTaskManager	ForegroundTaskManager	Informational		
 Microsoft-WindowsPhone-CoreUIComponents	1281	0	Server(UInt32 unParam)		Server	Server	Informational		
 Microsoft-WindowsPhone-CoreUIComponents	1282	0	Server1282(UInt32 unParam)		Error Server keyword_80000000000	Server	Error		
 Microsoft-WindowsPhone-CoreUIComponents	1283	0	Server1283(UInt32 unParam)		Server	Server	Informational		
@@ -169,7 +170,7 @@ Microsoft-WindowsPhone-CoreUIComponents	1532	0	ServerTaskNSTRequestNavigateBack(
 Microsoft-WindowsPhone-CoreUIComponents	1533	0	ServerTask1533(UInt32 unParam, Boolean fBool1, Boolean fBool2)		ServerTask	ServerTask	Informational		
 Microsoft-WindowsPhone-CoreUIComponents	1534	0	ServerTask1534(UInt32 unParam, Boolean fBool1, Boolean fBool2)		ServerTask	ServerTask	Informational		
 Microsoft-WindowsPhone-CoreUIComponents	1535	1	ServerTaskNSTNavigationTimeoutStarted_V1(UInt32 unParam, UInt32 NavigationTimeoutEventType, UInt32 TimeoutModifierType, Int32 Param, UInt32 ServerTaskState1, UInt32 ServerTaskState2, Boolean IsModernApplication, UnicodeString ApplicationId)	NSTNavigationTimeoutStarted	ServerTask NavigationPerformanceTriggers	ServerTask	Informational		
-Microsoft-WindowsPhone-CoreUIComponents	1536	0	ServerTaskNSTNavigationTimeoutStopped(UInt32 unParam, UInt32 NavigationTimeoutEventType, UInt32 ServerTaskState1, UInt32 ServerTaskState2, UInt32 reason, UnicodeString pwsz)	NSTNavigationTimeoutStopped	ServerTask NavigationPerformanceTriggers keyword_400000000000	ServerTask	Informational		
+Microsoft-WindowsPhone-CoreUIComponents	1536	0	ServerTaskNSTNavigationTimeoutStopped(UInt32 unParam, UInt32 NavigationTimeoutEventType, UInt32 ServerTaskState1, UInt32 ServerTaskState2, UInt32 reason, UnicodeString pwsz)	NSTNavigationTimeoutStopped	ServerTask NavigationPerformanceTriggers keyword_200000000000	ServerTask	Informational		
 Microsoft-WindowsPhone-CoreUIComponents	1537	0	ServerTask1537(UInt32 unParam, UInt32 NavigationTimeoutEventType, UInt32 TimeoutModifierType, UInt32 ServerTaskState1, UInt32 ServerTaskState2, Boolean fBool, Boolean fBool2, Boolean fBool3, Boolean fBool4, UInt32 reason, UnicodeString pwsz)		ServerTask NavigationPerformanceTriggers keyword_400000000000	ServerTask	Warning		
 Microsoft-WindowsPhone-CoreUIComponents	1538	0	ServerTask1538(UInt32 unParam)		ServerTask	ServerTask	Warning		
 Microsoft-WindowsPhone-CoreUIComponents	1540	0	ServerTaskCreateStart()	Start	NavigationPerformance ServerTask keyword_200000000000	ServerTaskCreate	Verbose		
@@ -197,7 +198,7 @@ Microsoft-WindowsPhone-CoreUIComponents	1561	0	ServerTaskNSTCreateBasicView(UInt
 Microsoft-WindowsPhone-CoreUIComponents	1562	0	ServerTaskNSTSetRunning(UInt32 unParam, Boolean fBool)	NSTSetRunning	NavigationPerformance ServerTask keyword_200000000000	ServerTask	Warning		
 Microsoft-WindowsPhone-CoreUIComponents	1563	0	ServerTaskNSTSetIsExecManAware(UInt32 unParam, UInt32 unParam2, Boolean fBool)	NSTSetIsExecManAware	NavigationPerformance ServerTask keyword_200000000000	ServerTask	Warning		
 Microsoft-WindowsPhone-CoreUIComponents	1564	0	ServerTaskNSTSetCompleted(UInt32 unParam, Boolean fBool)	NSTSetCompleted	NavigationPerformance ServerTask keyword_200000000000	ServerTask	Warning		
-Microsoft-WindowsPhone-CoreUIComponents	1565	0	ServerTask1565(UInt32 unParam, UnicodeString pwsz, Boolean fBool1, Boolean fBool2, Boolean fBool3)		ServerTask	ServerTask	Warning		
+Microsoft-WindowsPhone-CoreUIComponents	1565	0	ServerTask1565(UInt32 unParam, UnicodeString pwsz, Boolean fBool1, Boolean fBool2, Boolean fBool3, UInt32 unParam2, UnicodeString pwsz2)		ServerTask keyword_400000000000	ServerTask	Warning		
 Microsoft-WindowsPhone-CoreUIComponents	1566	0	ServerTask1566(UInt32 unParam1, UInt32 unParam2, UInt32 unParam3, UInt32 unParam4, UInt32 unParam5, UInt32 unParam6, Boolean unParam7)		ServerTask	ServerTask	Informational		
 Microsoft-WindowsPhone-CoreUIComponents	1567	0	ServerTaskActivateStart(UInt32 unParam)	Start	NavigationPerformance ServerTask	ServerTaskActivate	Informational		
 Microsoft-WindowsPhone-CoreUIComponents	1568	0	ServerTaskActivateStart1568(UInt32 unParam)	Start	NavigationPerformance ServerTask	ServerTaskActivate	Informational		
@@ -210,6 +211,12 @@ Microsoft-WindowsPhone-CoreUIComponents	1574	0	ServerTask1574(UInt32 unParam, UI
 Microsoft-WindowsPhone-CoreUIComponents	1575	0	ServerTask1575(UInt32 unParam, UInt32 TaskRunningOptions)		ServerTask	ServerTask	Informational		
 Microsoft-WindowsPhone-CoreUIComponents	1576	0	ServerTask1576(UInt32 unParam1, Int32 unParam2, Int32 unParam3, Int32 unParam4, Int32 unParam5)		ServerTask	ServerTask	Informational		
 Microsoft-WindowsPhone-CoreUIComponents	1577	0	ServerTask1577(UInt32 unParam, UnicodeString pwsz, UnicodeString pwsz2, UInt32 hex)		ServerTask	ServerTask	Informational		
+Microsoft-WindowsPhone-CoreUIComponents	1578	0	ServerTaskNSTNavigationTimeoutStoppedTargetStateChange(UInt32 unParam, UInt32 ServerTaskState1, UInt32 ServerTaskState2, UInt32 reason, UnicodeString pwsz)	NSTNavigationTimeoutStoppedTargetStateChange	ServerTask NavigationPerformanceTriggers keyword_400000000000	ServerTask	Informational		
+Microsoft-WindowsPhone-CoreUIComponents	1579	0	ServerTask1579(UInt32 unParam, UInt32 ServerTaskState1, UInt32 ServerTaskState2, UInt32 reason, UnicodeString pwsz)		ServerTask NavigationPerformanceTriggers keyword_400000000000	ServerTask	Warning		
+Microsoft-WindowsPhone-CoreUIComponents	1580	0	ServerTask1580(UInt32 unParam, UInt64 unParam2, UInt64 unParam3)		ServerTask	ServerTask	Informational		
+Microsoft-WindowsPhone-CoreUIComponents	1581	0	ServerTask1581(UInt32 unParam, UInt32 TaskInstanceState, Int32 hresult)		ServerTask	ServerTask	Informational		
+Microsoft-WindowsPhone-CoreUIComponents	1582	0	ServerTask1582(UInt32 unParam, UInt32 ServerTaskState, UInt32 ServerTaskState2)		ServerTask	ServerTask	Informational		
+Microsoft-WindowsPhone-CoreUIComponents	1584	0	ServerTask1584(UInt32 unParam, UInt32 ServerTaskState, UInt32 ServerTaskState2)		ServerTask	ServerTask	Informational		
 Microsoft-WindowsPhone-CoreUIComponents	1601	0	ServerWindow(UInt32 unParam)		ServerWindow	ServerWindow	Informational		
 Microsoft-WindowsPhone-CoreUIComponents	1602	0	ServerWindow1602(UInt32 unParam)		ServerWindow	ServerWindow	Informational		
 Microsoft-WindowsPhone-CoreUIComponents	1610	0	NavigationServerWindowConstructStart(Pointer ptr)	Start	NavigationPerformance ServerWindow	NavigationServerWindowConstruct	Verbose		
@@ -383,7 +390,7 @@ Microsoft-WindowsPhone-CoreUIComponents	5001	0	ProxyMaterializePushedProxyStop(U
 Microsoft-WindowsPhone-CoreUIComponents	5004	0	ProxyPushNewProxyStart(UnicodeString pwsz, UInt32 unParam, UInt32 unParam2)	Start	MessagingPerformance Proxy	ProxyPushNewProxy	Verbose		
 Microsoft-WindowsPhone-CoreUIComponents	5005	0	ProxyPushNewProxyStop(UInt32 hex)	Stop	MessagingPerformance Proxy	ProxyPushNewProxy	Verbose		
 Microsoft-WindowsPhone-CoreUIComponents	5006	0	ProxyConnectExistingProxyStart(UInt32 unParam, UInt32 unParam2)	Start	MessagingPerformance Proxy	ProxyConnectExistingProxy	Verbose		
-Microsoft-WindowsPhone-CoreUIComponents	5007	0	ProxyConnectExistingProxyStop()	Stop	MessagingPerformance Proxy	ProxyConnectExistingProxy	Verbose		
+Microsoft-WindowsPhone-CoreUIComponents	5007	0	ProxyConnectExistingProxyStop(Boolean fBool)	Stop	MessagingPerformance Proxy	ProxyConnectExistingProxy	Verbose		
 Microsoft-WindowsPhone-CoreUIComponents	5008	0	ProxyInitializeConnectionStart(UnicodeString pwsz)	Start	MessagingPerformance Proxy	ProxyInitializeConnection	Verbose		
 Microsoft-WindowsPhone-CoreUIComponents	5009	0	ProxyInitializeConnectionStop()	Stop	MessagingPerformance Proxy	ProxyInitializeConnection	Verbose		
 Microsoft-WindowsPhone-CoreUIComponents	5010	0	ProxyPullProxyStart(UnicodeString pwsz, UInt32 unParam, UInt32 unParam2)	Start	MessagingPerformance Proxy	ProxyPullProxy	Verbose		
@@ -452,6 +459,11 @@ Microsoft-WindowsPhone-CoreUIComponents	7048	0	NavigationClientOnSipVisibilityCh
 Microsoft-WindowsPhone-CoreUIComponents	7049	0	NavigationClientActivate(UInt32 unParam)		NavigationClient	NavigationClientActivate	Informational		
 Microsoft-WindowsPhone-CoreUIComponents	7050	0	NavigationClientDeactivate(UInt32 unParam)		NavigationClient	NavigationClientDeactivate	Informational		
 Microsoft-WindowsPhone-CoreUIComponents	7051	0	NavigationClientPostConsolidated(UInt32 unParam)		NavigationClient	NavigationClientPostConsolidated	Informational		
+Microsoft-WindowsPhone-CoreUIComponents	7052	0	NavigationClientPresentationLoadingRaised(UInt32 unParam)		NavigationClient	NavigationClientPresentationLoadingRaised	Informational		
+Microsoft-WindowsPhone-CoreUIComponents	7053	0	NavigationClientPresentationLoadingComplete(UInt32 unParam)		NavigationClient	NavigationClientPresentationLoadingComplete	Informational		
+Microsoft-WindowsPhone-CoreUIComponents	7054	0	NavigationClientPresentationUnloadingRaised(UInt32 unParam)		NavigationClient	NavigationClientPresentationUnloadingRaised	Informational		
+Microsoft-WindowsPhone-CoreUIComponents	7055	0	NavigationClientPresentationUnloadingComplete(UInt32 unParam)		NavigationClient	NavigationClientPresentationUnloadingComplete	Informational		
+Microsoft-WindowsPhone-CoreUIComponents	7056	0	NavigationClientNavigateAwayCompleteFailed(UInt32 unParam, UInt32 unParam2)		NavigationClient	NavigationClientNavigateAwayCompleteFailed	Informational		
 Microsoft-WindowsPhone-CoreUIComponents	8000	0	SessionLayerSetVisibleSession(UInt32 appLayer, UInt32 unParam, UInt32 unParam2)		SessionLayer	SessionLayerSetVisibleSession	Informational		
 Microsoft-WindowsPhone-CoreUIComponents	8001	0	SessionLayerSetCurrentSession(UInt32 appLayer, UInt32 unParam, UInt32 unParam2)		SessionLayer	SessionLayerSetCurrentSession	Informational		
 Microsoft-WindowsPhone-CoreUIComponents	8002	0	SessionLayerSetVisibleTask(UInt32 appLayer, UInt32 unParam, UInt32 unParam2, UInt32 unParam3, UInt32 unParam4, Boolean unParam5)		SessionLayer	SessionLayerSetVisibleTask	Informational		
@@ -475,7 +487,7 @@ Microsoft-WindowsPhone-CoreUIComponents	8019	0	SessionLayerUpdateCurrentSession(
 Microsoft-WindowsPhone-CoreUIComponents	8020	0	SessionLayerUpdateCurrentTask(UInt32 appLayer, UInt32 unParam, UInt32 unParam2, Boolean fBool)		SessionLayer	SessionLayerUpdateCurrentTask	Informational		
 Microsoft-WindowsPhone-CoreUIComponents	8021	0	SessionLayerUpdateVisibleSession(UInt32 appLayer, UInt32 unParam, Boolean fBool)		SessionLayer	SessionLayerUpdateVisibleSession	Informational		
 Microsoft-WindowsPhone-CoreUIComponents	8022	0	SessionLayerUpdateVisibleTask(UInt32 appLayer, UInt32 unParam, UInt32 unParam2, UInt32 unParam3, Boolean fBool)		SessionLayer	SessionLayerUpdateVisibleTask	Informational		
-Microsoft-WindowsPhone-CoreUIComponents	8023	0	SessionLayerNavigateToView(UInt32 appLayer, UInt32 unParam, UInt32 targetState, UInt32 direction, UInt32 reason, UnicodeString pwsz)		NavigationPerformanceTriggers SessionLayer keyword_400000000000	SessionLayerNavigateToView	Informational		
+Microsoft-WindowsPhone-CoreUIComponents	8023	0	SessionLayerNavigateToView(UInt32 appLayer, UInt32 unParam, UInt32 currentState, UInt32 targetState, UInt32 direction, UInt32 reason, UnicodeString pwsz, Boolean firstActivation)		NavigationPerformanceTriggers SessionLayer keyword_400000000000	SessionLayerNavigateToView	Informational		
 Microsoft-WindowsPhone-CoreUIComponents	8100	0	ForegroundSessionLayerSetVisibleTask(UInt32 appLayer, UInt32 unParam, UInt32 unParam2, UInt32 unParam3, UInt32 unParam4, Boolean unParam5)		ForegroundSessionLayer	ForegroundSessionLayerSetVisibleTask	Informational		
 Microsoft-WindowsPhone-CoreUIComponents	8101	0	ForegroundSessionLayerHideVisibleTask(UInt32 appLayer, UInt32 unParam, UInt32 dir, UInt32 animtype, UInt32 animflags)		ForegroundSessionLayer	ForegroundSessionLayerHideVisibleTask	Informational		
 Microsoft-WindowsPhone-CoreUIComponents	8102	0	ForegroundSessionLayerShowVisibleTask(UInt32 appLayer, UInt32 unParam, UInt32 dir, UInt32 animtype, UInt32 animflags)		ForegroundSessionLayer	ForegroundSessionLayerShowVisibleTask	Informational		
@@ -524,7 +536,8 @@ Microsoft-WindowsPhone-CoreUIComponents	9037	0	ViewManager9037(UInt32 unParam)		
 Microsoft-WindowsPhone-CoreUIComponents	9038	0	ViewManager9038(UInt32 unParam, UInt32 unParam2)		Error ViewManager	ViewManager	Warning		
 Microsoft-WindowsPhone-CoreUIComponents	9039	0	ViewManager9039(UInt32 unParam)		Error ViewManager	ViewManager	Warning		
 Microsoft-WindowsPhone-CoreUIComponents	9040	0	ViewManager9040(UInt32 unParam, UInt32 unParam2)		Error ViewManager	ViewManager	Warning		
-Microsoft-WindowsPhone-CoreUIComponents	9500	0	ViewActivatorBrokerActivateModernStart(UInt32 hex, UInt32 unParam, UnicodeString pwsz, UnicodeString pwsz2, UInt32 ViewActivationFlags, UnicodeString pwsz3, UInt64 un64Param)	Start	ViewActivator keyword_400000000000	ViewActivatorBrokerActivateModern	Informational		
+Microsoft-WindowsPhone-CoreUIComponents	9041	0	ViewManagerNavigateToViewFailed(UInt32 unParam, UInt32 ViewNavigationLevel, Int32 hresult)	NavigateToViewFailed	ViewManager	ViewManager	Informational		
+Microsoft-WindowsPhone-CoreUIComponents	9500	0	ViewActivatorBrokerActivateModernStart(UInt32 hex, UInt32 unParam, UnicodeString pwsz, UnicodeString pwsz2, UInt32 ViewActivationFlags, UnicodeString pwsz3, UInt64 un64Param, UInt64 un64Param2)	Start	ViewActivator keyword_400000000000	ViewActivatorBrokerActivateModern	Informational		
 Microsoft-WindowsPhone-CoreUIComponents	9501	0	ViewActivatorBrokerActivateModernStop(UInt32 hex)	Stop	ViewActivator keyword_400000000000	ViewActivatorBrokerActivateModern	Informational		
 Microsoft-WindowsPhone-CoreUIComponents	9502	0	ViewActivatorBrokerActivateLegacyStart(UInt32 hex, UInt32 unParam, UnicodeString pwsz, UnicodeString pwsz2, UnicodeString pwsz3, UInt32 ViewActivationFlags)	Start	ViewActivator	ViewActivatorBrokerActivateLegacy	Informational		
 Microsoft-WindowsPhone-CoreUIComponents	9503	0	ViewActivatorBrokerActivateLegacyStop(UInt32 hex)	Stop	ViewActivator keyword_200000000000	ViewActivatorBrokerActivateLegacy	Informational		
@@ -533,10 +546,10 @@ Microsoft-WindowsPhone-CoreUIComponents	9505	0	ViewActivatorShellActivateLegacyS
 Microsoft-WindowsPhone-CoreUIComponents	9506	0	ViewActivatorNotifyBrokerActivateModernCompleted(UInt32 unParam, UInt32 unParam2, UInt32 hex, UInt32 reason, UnicodeString pwsz)		ViewActivator keyword_400000000000	ViewActivatorNotifyBrokerActivateModernCompleted	Informational		
 Microsoft-WindowsPhone-CoreUIComponents	9507	0	ViewActivatorGetPendingTaskInstanceId(UnicodeString pwsz, UnicodeString pwsz2, UInt32 unParam, UInt32 unParam2)		ViewActivator	ViewActivatorGetPendingTaskInstanceId	Informational		
 Microsoft-WindowsPhone-CoreUIComponents	9508	0	ViewActivatorDoPendingInitiateModernActivation(UInt32 hex, UInt32 unParam, UnicodeString pwsz, UnicodeString pwsz2, UInt32 unParam2, UnicodeString pwsz3)		ViewActivator	ViewActivatorDoPendingInitiateModernActivation	Informational		
-Microsoft-WindowsPhone-CoreUIComponents	9509	0	ViewActivatorPrepareActivationCleanupList(UnicodeString pwsz)		ViewActivator	ViewActivatorPrepareActivationCleanupList	Informational		
+Microsoft-WindowsPhone-CoreUIComponents	9509	0	ViewActivatorShouldWaitForCloseCompletion(UnicodeString pwsz, Boolean fBool)		ViewActivator	ViewActivatorShouldWaitForCloseCompletion	Informational		
 Microsoft-WindowsPhone-CoreUIComponents	9510	0	ViewActivatorAddActivationDataToActivationMap(UInt32 unParam, UnicodeString pwsz)		ViewActivator	ViewActivatorAddActivationDataToActivationMap	Informational		
-Microsoft-WindowsPhone-CoreUIComponents	9511	0	ViewActivatorAddTaskToCleanupMap(UInt32 unParam, UnicodeString pwsz)		ViewActivator	ViewActivatorAddTaskToCleanupMap	Informational		
-Microsoft-WindowsPhone-CoreUIComponents	9512	0	ViewActivatorRemoveTaskFromCleanupMap(UInt32 unParam, UnicodeString pwsz)		ViewActivator	ViewActivatorRemoveTaskFromCleanupMap	Informational		
+Microsoft-WindowsPhone-CoreUIComponents	9513	0	ViewManager9513(UInt32 unParam, Boolean fBool)		ViewManager	ViewManager	Informational		
+Microsoft-WindowsPhone-CoreUIComponents	9514	0	ViewManager9514(UInt32 unParam, UInt64 unParam2)		ViewManager	ViewManager	Informational		
 Microsoft-WindowsPhone-CoreUIComponents	9600	0	BasicViewAdapter()		BasicViewAdapter	BasicViewAdapter	Informational		
 Microsoft-WindowsPhone-CoreUIComponents	9601	0	BasicViewAdapter9601(UInt32 unParam)		BasicViewAdapter	BasicViewAdapter	Informational		
 Microsoft-WindowsPhone-CoreUIComponents	9602	0	BasicViewAdapter9602(UInt32 unParam)		BasicViewAdapter	BasicViewAdapter	Informational		

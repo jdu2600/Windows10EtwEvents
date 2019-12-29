@@ -251,6 +251,12 @@ Microsoft-Windows-AppModel-Exec	348	0	task_0348(UnicodeString AUMID, HexInt32 Er
 Microsoft-Windows-AppModel-Exec	349	0	task_0349(UnicodeString PsmKey, HexInt32 ErrorCode)		PLM ExecProductionCircular ExecDevPlatCircular	task_0	Error		
 Microsoft-Windows-AppModel-Exec	350	0	task_0350(UnicodeString AUMID, Pointer Hwnd, Int32 WindowChange, Boolean DeferredVisibility, HexInt32 ErrorCode)		PLM ExecProductionCircular ExecDevPlatCircular	task_0	Error		
 Microsoft-Windows-AppModel-Exec	351	0	task_0351(UnicodeString PsmKey, HexInt32 ErrorCode)		PLM ExecProductionCircular ExecDevPlatCircular	task_0	Error		
+Microsoft-Windows-AppModel-Exec	352	0	task_0352(UInt32 p1_UInt32)		PLM ExecDevPlatCircular	task_0	Informational		
+Microsoft-Windows-AppModel-Exec	353	0	task_0353(UInt32 p1_UInt32)		PLM ExecDevPlatCircular	task_0	Informational		
+Microsoft-Windows-AppModel-Exec	354	0	task_0354(UInt32 p1_UInt32)		PLM ExecDevPlatCircular	task_0	Informational		
+Microsoft-Windows-AppModel-Exec	355	0	task_0355(UInt32 p1_UInt32)		PLM ExecDevPlatCircular	task_0	Informational		
+Microsoft-Windows-AppModel-Exec	356	0	task_0356(UInt32 p1_UInt32)		PLM ExecDevPlatCircular	task_0	Informational		
+Microsoft-Windows-AppModel-Exec	357	0	task_0357(UInt32 p1_UInt32)		PLM ExecDevPlatCircular	task_0	Informational		
 Microsoft-Windows-AppModel-Exec	501	0	BackgroundManagerTrace(Pointer Message)		BM ExecDevPlatCircular	BackgroundManagerTrace	Informational		
 Microsoft-Windows-AppModel-Exec	502	0	BackgroundManagerTrace502(Pointer Message)		BM ExecDevPlatCircular	BackgroundManagerTrace	Verbose		
 Microsoft-Windows-AppModel-Exec	503	0	BackgroundManagerTrace503(Pointer Message)		BM ExecDevPlatCircular	BackgroundManagerTrace	Warning		
@@ -268,7 +274,9 @@ Microsoft-Windows-AppModel-Exec	514	0	BM_TerminateHost(GUID WorkItemId)		BM Exec
 Microsoft-Windows-AppModel-Exec	515	0	BackgroundManagerTrace515(GUID WorkItemId, GUID TaskInstanceId)		BM ExecProductionCircular ExecDevPlatCircular	BackgroundManagerTrace	Verbose		
 Microsoft-Windows-AppModel-Exec	516	0	BackgroundManagerTrace516(UInt32 CallbackId)		BM ExecProductionCircular ExecDevPlatCircular	BackgroundManagerTrace	Verbose		
 Microsoft-Windows-AppModel-Exec	517	0	BM_TryAcquireResourceSet(UnicodeString String, GUID WorkItemId, UInt32 CallBackId, UInt32 HRESULT)		BM ExecProductionCircular ExecDevPlatCircular	BM_TryAcquireResourceSet	Verbose		
+Microsoft-Windows-AppModel-Exec	517	1	BM_TryAcquireResourceSet_V1(UnicodeString String, GUID WorkItemId, UInt32 CallBackId, UInt32 HRESULT, UInt64 HostId, UInt64 ResourceSetId)		BM ExecProductionCircular ExecDevPlatCircular	BM_TryAcquireResourceSet	Verbose		
 Microsoft-Windows-AppModel-Exec	518	0	BM_TryAcquireHostResourceSet(UnicodeString String, UInt32 HRESULT)		BM ExecProductionCircular ExecDevPlatCircular	BM_TryAcquireHostResourceSet	Verbose		
+Microsoft-Windows-AppModel-Exec	518	1	BM_TryAcquireHostResourceSet_V1(UnicodeString String, UInt32 HRESULT, UInt64 HostId, UInt64 ResourceSetId)		BM ExecProductionCircular ExecDevPlatCircular	BM_TryAcquireHostResourceSet	Verbose		
 Microsoft-Windows-AppModel-Exec	519	0	BM_OnApplicationStateChanged(UnicodeString ApplicationId, UInt32 AppState, UInt32 HRESULT)		BM ExecProductionCircular ExecDevPlatCircular	BM_OnApplicationStateChanged	Verbose		
 Microsoft-Windows-AppModel-Exec	520	0	BM_OnAcquired(UInt32 CallbackId)		BM ExecProductionCircular ExecDevPlatCircular	BM_OnAcquired	Verbose		
 Microsoft-Windows-AppModel-Exec	521	0	BM_OnAcquiredIgnoredRequest(UInt32 CallbackId)		BM ExecProductionCircular ExecDevPlatCircular	BM_OnAcquiredIgnoredRequest	Verbose		
@@ -307,19 +315,25 @@ Microsoft-Windows-AppModel-Exec	553	0	BM_ShellSuspendStateChanged(UInt32 OldStat
 Microsoft-Windows-AppModel-Exec	554	0	BM_DPLKeyStateChanged(Boolean OldState, Boolean NewState)		BM ExecProductionCircular ExecDevPlatCircular	BM_DPLKeyStateChanged	Informational		
 Microsoft-Windows-AppModel-Exec	555	0	BM_DPLCancelWorkItem(GUID WorkItemId)		BM ExecProductionCircular ExecDevPlatCircular	BM_DPLCancelWorkItem	Informational		
 Microsoft-Windows-AppModel-Exec	556	0	BM_DPLDropWorkItem(GUID WorkItemId)		BM ExecProductionCircular ExecDevPlatCircular	BM_DPLDropWorkItem	Informational		
+Microsoft-Windows-AppModel-Exec	557	0	BM_ShellReadyBuffered(GUID WorkItemId)		BM ExecProductionCircular ExecDevPlatCircular	BM_ShellReadyBuffered	Informational		
+Microsoft-Windows-AppModel-Exec	558	0	BM_ShellReadyExempted(GUID WorkItemId)		BM ExecProductionCircular ExecDevPlatCircular	BM_ShellReadyExempted	Informational		
+Microsoft-Windows-AppModel-Exec	559	0	BM_ThermalThrottlingBuffered(GUID WorkItemId, UnicodeString PsmKey)		BM ExecProductionCircular ExecDevPlatCircular	BM_ThermalThrottlingBuffered	Informational		
 Microsoft-Windows-AppModel-Exec	600	0	AM_CreatingActivationPlugins(UInt32 HRESULT)		ExecProductionCircular ExecDevPlatCircular	AM_CreatingActivationPlugins	Error		
 Microsoft-Windows-AppModel-Exec	601	0	AM_CreatingActivationPlugins601(UInt32 HRESULT, GUID PluginClsid)		ExecProductionCircular ExecDevPlatCircular	AM_CreatingActivationPlugins	Error		
 Microsoft-Windows-AppModel-Exec	602	0	AM_CreatingActivationPlugins602(GUID PluginClsid)		ExecProductionCircular ExecDevPlatCircular	AM_CreatingActivationPlugins	Verbose		
-Microsoft-Windows-AppModel-Exec	700	0	BAM_AddPackage(UnicodeString PackageFullName, UnicodeString UserSid)		ExecProductionCircular ExecDevPlatCircular	BAM_AddPackage	Verbose		
-Microsoft-Windows-AppModel-Exec	701	0	BAM_RemovePackage(UnicodeString PackageFullName, UnicodeString UserSid)		ExecProductionCircular ExecDevPlatCircular	BAM_RemovePackage	Verbose		
+Microsoft-Windows-AppModel-Exec	603	0	task_0603(UInt32 HRESULT)		ExecProductionCircular ExecDevPlatCircular	task_0	Error		
+Microsoft-Windows-AppModel-Exec	604	0	task_0604(UInt32 HRESULT)		ExecProductionCircular ExecDevPlatCircular	task_0	Error		
+Microsoft-Windows-AppModel-Exec	605	0	task_0605(UInt32 HRESULT)		ExecProductionCircular ExecDevPlatCircular	task_0	Error		
+Microsoft-Windows-AppModel-Exec	700	0	BAM_AddPackage(UnicodeString Package, UnicodeString UserSid)		ExecProductionCircular ExecDevPlatCircular	BAM_AddPackage	Verbose		
+Microsoft-Windows-AppModel-Exec	701	0	BAM_RemovePackage(UnicodeString Package, UnicodeString UserSid)		ExecProductionCircular ExecDevPlatCircular	BAM_RemovePackage	Verbose		
 Microsoft-Windows-AppModel-Exec	702	0	BAM_AddApplication(UnicodeString AppUserModelId, UnicodeString UserSid)		ExecProductionCircular ExecDevPlatCircular	BAM_AddApplication	Verbose		
 Microsoft-Windows-AppModel-Exec	703	0	BAM_RemoveApplication(UnicodeString AppUserModelId, UnicodeString UserSid)		ExecProductionCircular ExecDevPlatCircular	BAM_RemoveApplication	Verbose		
-Microsoft-Windows-AppModel-Exec	704	0	BAM_AccessStateChanged(UnicodeString PackageFullName, UInt32 Old_AccessState, UInt32 New_AccessState, UnicodeString UserSid)		ExecProductionCircular ExecDevPlatCircular	BAM_AccessStateChanged	Verbose		
+Microsoft-Windows-AppModel-Exec	704	0	BAM_AccessStateChanged(UnicodeString Package, UInt32 Old_AccessState, UInt32 New_AccessState, UnicodeString UserSid)		ExecProductionCircular ExecDevPlatCircular keyword_400000000000	BAM_AccessStateChanged	Verbose		
 Microsoft-Windows-AppModel-Exec	705	0	BAM_RequestAccessAsync(UnicodeString AppUserModelId, UInt32 Returned_AccessState)		ExecProductionCircular ExecDevPlatCircular	BAM_RequestAccessAsync	Verbose		
 Microsoft-Windows-AppModel-Exec	706	0	BAM_GetStatus(UnicodeString AppUserModelId, UInt32 Returned_AccessState)		ExecProductionCircular ExecDevPlatCircular	BAM_GetStatus	Verbose		
 Microsoft-Windows-AppModel-Exec	707	0	BAM_RemoveAccess(UnicodeString AppUserModelId)		ExecProductionCircular ExecDevPlatCircular	BAM_RemoveAccess	Verbose		
 Microsoft-Windows-AppModel-Exec	708	0	BAM_SanitizePackage(UnicodeString PackageFullName, UInt32 HRESULT)		ExecProductionCircular ExecDevPlatCircular	BAM_SanitizePackage	Verbose		
-Microsoft-Windows-AppModel-Exec	709	0	BAM_SanitizePackageReregister(UnicodeString PackageFullName, UInt32 HRESULT)		ExecProductionCircular ExecDevPlatCircular	BAM_SanitizePackageReregister	Verbose		
+Microsoft-Windows-AppModel-Exec	709	0	BAM_SanitizePackageReregister(UnicodeString PackageFullName, UInt32 HRESULT)		ExecProductionCircular ExecDevPlatCircular keyword_200000000000	BAM_SanitizePackageReregister	Verbose		
 Microsoft-Windows-AppModel-Exec	710	0	BAM_SanitizePackageUnregister(UnicodeString PackageFullName, UInt32 HRESULT)		ExecProductionCircular ExecDevPlatCircular	BAM_SanitizePackageUnregister	Verbose		
 Microsoft-Windows-AppModel-Exec	750	0	LogTrace(UInt32 p1_UInt32, UInt32 p2_UInt32)		ExecMan ExecDevPlatCircular	LogTrace	Informational		
 Microsoft-Windows-AppModel-Exec	751	0	LogTrace751(UInt32 p1_UInt32, UInt32 p2_UInt32)		ExecMan ExecDevPlatCircular	LogTrace	Informational		
@@ -425,13 +439,14 @@ Microsoft-Windows-AppModel-Exec	921	0	task_0921(UInt64 p1_UInt64, UnicodeString 
 Microsoft-Windows-AppModel-Exec	922	0	task_0922(UInt64 p1_UInt64, UnicodeString p2_String)		PLM ExecDevPlatCircular	task_0	Informational		
 Microsoft-Windows-AppModel-Exec	923	0	task_0923(UnicodeString p1_String, UInt32 p2_UInt32)		PLM ExecProductionCircular ExecDevPlatCircular	task_0	Warning		
 Microsoft-Windows-AppModel-Exec	924	0	task_0924()		PLM ExecProductionCircular ExecDevPlatCircular	task_0	Informational		
+Microsoft-Windows-AppModel-Exec	925	0	task_0925(UInt64 p1_UInt64, UnicodeString p2_String, Boolean p3_Boolean)		PLM ExecDevPlatCircular	task_0	Informational		
 Microsoft-Windows-AppModel-Exec	1051	0	task_01051(UInt64 p1_UInt64, UnicodeString p2_String, UnicodeString p3_String, UInt32 p4_UInt32, UInt32 p5_UInt32)		ExecDevPlatCircular Activation	task_0	Informational		
 Microsoft-Windows-AppModel-Exec	1052	0	task_01052(UInt32 p1_UInt32, UInt32 p2_UInt32, UInt32 p3_UInt32)		ExecDevPlatCircular Activation	task_0	Informational		
 Microsoft-Windows-AppModel-Exec	1053	0	task_01053(UInt64 p1_UInt64, UnicodeString p2_String, UnicodeString p3_String, UInt32 p4_UInt32, Boolean p5_Boolean)		ExecDevPlatCircular Activation	task_0	Informational		
-Microsoft-Windows-AppModel-Exec	1054	0	task_01054(UInt32 p1_UInt32)		ExecProductionCircular ExecDevPlatCircular Activation	task_0	Informational		
+Microsoft-Windows-AppModel-Exec	1054	0	task_01054(UInt32 p1_UInt32)		ExecProductionCircular ExecSelfHostCircular ExecDevPlatCircular Activation	task_0	Informational		
 Microsoft-Windows-AppModel-Exec	1055	0	task_01055(UnicodeString p1_String, UInt32 p2_UInt32)		ExecDevPlatCircular Activation	task_0	Informational		
-Microsoft-Windows-AppModel-Exec	1056	0	task_01056(UInt32 p1_UInt32, UInt64 p2_UInt32, UInt32 p3_UInt32)		ExecProductionCircular ExecDevPlatCircular Activation	task_0	Informational		
-Microsoft-Windows-AppModel-Exec	1057	0	task_01057(UInt32 p1_UInt32, UInt32 p2_UInt32)		ExecProductionCircular ExecDevPlatCircular Activation	task_0	Informational		
+Microsoft-Windows-AppModel-Exec	1056	0	task_01056(UInt32 p1_UInt32, UInt64 p2_UInt32, UInt32 p3_UInt32)		ExecProductionCircular ExecSelfHostCircular ExecDevPlatCircular Activation	task_0	Informational		
+Microsoft-Windows-AppModel-Exec	1057	0	task_01057(UInt32 p1_UInt32, UInt32 p2_UInt32)		ExecProductionCircular ExecSelfHostCircular ExecDevPlatCircular Activation	task_0	Informational		
 Microsoft-Windows-AppModel-Exec	1058	0	task_01058(UInt32 p1_UInt32)		ExecDevPlatCircular Activation	task_0	Informational		
 Microsoft-Windows-AppModel-Exec	1059	0	task_01059()		ExecDevPlatCircular Activation	task_0	Informational		
 Microsoft-Windows-AppModel-Exec	1060	0	task_01060(UInt32 p1_UInt32)		ExecDevPlatCircular Activation	task_0	Informational		
@@ -440,6 +455,7 @@ Microsoft-Windows-AppModel-Exec	1062	0	task_01062(UInt32 p1_UInt32)		ExecDevPlat
 Microsoft-Windows-AppModel-Exec	1063	0	task_01063(UInt32 p1_UInt32)		ExecDevPlatCircular Activation	task_0	Informational		
 Microsoft-Windows-AppModel-Exec	1064	0	task_01064(UInt32 p1_UInt32)		ExecDevPlatCircular Activation	task_0	Informational		
 Microsoft-Windows-AppModel-Exec	1065	0	task_01065(UInt32 p1_UInt32)		ExecDevPlatCircular Activation	task_0	Informational		
+Microsoft-Windows-AppModel-Exec	1066	0	task_01066(UInt32 p1_UInt32)		ExecDevPlatCircular Activation	task_0	Informational		
 Microsoft-Windows-AppModel-Exec	1071	0	task_01071(UInt32 p1_UInt32, UInt32 p2_UInt32)		ExecDevPlatCircular Activation	task_0	Informational		
 Microsoft-Windows-AppModel-Exec	1072	0	task_01072(UInt32 p1_UInt32)		ExecDevPlatCircular Activation	task_0	Informational		
 Microsoft-Windows-AppModel-Exec	1073	0	task_01073(UnicodeString p1_String, UnicodeString p2_String, UInt32 p3_UInt32, GUID p4_activationType, UInt32 p5_UInt32, UInt32 p6_UInt32)		ExecProductionCircular ExecDevPlatCircular Activation	task_0	Informational		
@@ -459,93 +475,94 @@ Microsoft-Windows-AppModel-Exec	1086	0	task_01086(UInt32 TaskId, UInt32 State, U
 Microsoft-Windows-AppModel-Exec	1087	0	task_01087(UInt32 TaskId, UInt32 TaskId_2, UInt32 State, UInt32 HRESULT)		ExecProductionCircular ExecDevPlatCircular Activation	task_0	Informational		
 Microsoft-Windows-AppModel-Exec	1088	0	task_01088(UInt32 p1_UInt32, UInt32 p2_UInt32)		ExecProductionCircular ExecDevPlatCircular Activation	task_0	Critical		
 Microsoft-Windows-AppModel-Exec	1089	0	task_01089(UnicodeString p1_String, UnicodeString p2_String, UInt32 p3_UInt32)		ExecDevPlatCircular Activation	task_0	Informational		
-Microsoft-Windows-AppModel-Exec	1101	0	FM_RegisterCallback(UnicodeString p1_String, UInt32 p2_UInt32)		FM ExecDevPlatCircular	FM_RegisterCallback	Informational		
-Microsoft-Windows-AppModel-Exec	1102	0	FM_VacateForeground(UInt32 p1_AppLayer, UInt32 p2_UInt32)		FM ExecDevPlatCircular	FM_VacateForeground	Informational		
-Microsoft-Windows-AppModel-Exec	1103	0	FM_GenerateActivationInstanceId(UInt32 p1_UInt32)		FM ExecDevPlatCircular	FM_GenerateActivationInstanceId	Informational		
-Microsoft-Windows-AppModel-Exec	1104	0	FM_BeginActivationPrerequisitePhase(UInt32 p1_UInt32, UInt32 p2_AppLayer, UInt64 p3_UInt64, UnicodeString p4_String, UnicodeString p5_String)		FM ExecProductionCircular ExecDevPlatCircular	FM_BeginActivationPrerequisitePhase	Informational		
-Microsoft-Windows-AppModel-Exec	1105	0	FM_EndActivationPrerequisitePhase(UInt32 p1_UInt32, Boolean p2_Boolean)		FM ExecProductionCircular ExecDevPlatCircular	FM_EndActivationPrerequisitePhase	Informational		
-Microsoft-Windows-AppModel-Exec	1106	0	FM_BeginResume_RehydrationPhase(UInt32 p1_UInt32)		FM ExecDevPlatCircular	FM_BeginResume_RehydrationPhase	Informational		
-Microsoft-Windows-AppModel-Exec	1107	0	FM_EndResume_RehydrationPhase(UInt32 p1_UInt32, UInt32 p2_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_EndResume_RehydrationPhase	Informational		
-Microsoft-Windows-AppModel-Exec	1108	0	FM_BeginPostActivationPhase(UInt32 p1_UInt32)		FM ExecDevPlatCircular	FM_BeginPostActivationPhase	Informational		
-Microsoft-Windows-AppModel-Exec	1109	0	FM_EndPostActivationPhase(UInt32 p1_UInt32, UInt32 p2_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_EndPostActivationPhase	Informational		
-Microsoft-Windows-AppModel-Exec	1110	0	FM_BeginResumeActivation(UInt32 p1_UInt32, UInt32 p2_AppLayer, Boolean p3_Boolean)		FM ExecProductionCircular ExecDevPlatCircular	FM_BeginResumeActivation	Informational		
-Microsoft-Windows-AppModel-Exec	1111	0	FM_EndResumeActivation(UInt32 p1_UInt32, UInt32 p2_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_EndResumeActivation	Informational		
-Microsoft-Windows-AppModel-Exec	1112	0	FM_BeginResume_ActivationPhase(UInt32 p1_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_BeginResume_ActivationPhase	Informational		
-Microsoft-Windows-AppModel-Exec	1113	0	FM_EndResume_ActivationPhase(UInt32 p1_UInt32, UInt32 p2_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_EndResume_ActivationPhase	Informational		
-Microsoft-Windows-AppModel-Exec	1114	0	FM_BeginPauseActivation(UInt32 p1_UInt32)		FM ExecDevPlatCircular	FM_BeginPauseActivation	Informational		
-Microsoft-Windows-AppModel-Exec	1115	0	FM_EndPauseActivation(UInt32 p1_UInt32, Boolean p2_Boolean)		FM ExecProductionCircular ExecDevPlatCircular	FM_EndPauseActivation	Informational		
-Microsoft-Windows-AppModel-Exec	1116	0	FM_BeginCancelActivation(UInt32 p1_UInt32)		FM ExecDevPlatCircular	FM_BeginCancelActivation	Informational		
-Microsoft-Windows-AppModel-Exec	1117	0	FM_EndCancelActivation(UInt32 p1_UInt32, UInt32 p2_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_EndCancelActivation	Informational		
-Microsoft-Windows-AppModel-Exec	1118	0	FM_BeginAbortActivation(UInt32 p1_UInt32, UnicodeString p2_String, Boolean p3_Boolean)		FM ExecDevPlatCircular	FM_BeginAbortActivation	Informational		
-Microsoft-Windows-AppModel-Exec	1119	0	FM_EndAbortActivation(UInt32 p1_UInt32, UInt32 p2_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_EndAbortActivation	Informational		
-Microsoft-Windows-AppModel-Exec	1120	0	FM_BeginGetActivationProcessId(UInt32 p1_UInt32)		FM ExecDevPlatCircular	FM_BeginGetActivationProcessId	Informational		
-Microsoft-Windows-AppModel-Exec	1121	0	FM_EndGetActivationProcessId(UInt32 p1_UInt32, UInt32 p2_UInt32, UInt32 p3_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_EndGetActivationProcessId	Informational		
-Microsoft-Windows-AppModel-Exec	1122	0	FM_BeginSetForegroundActivationInstance(UInt32 p1_UInt32, UInt32 p2_AppLayer, Boolean p3_Boolean)		FM ExecDevPlatCircular	FM_BeginSetForegroundActivationInstance	Informational		
-Microsoft-Windows-AppModel-Exec	1123	0	FM_EndSetForegroundActivationInstance(UInt32 p1_UInt32, UInt32 p2_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_EndSetForegroundActivationInstance	Informational		
-Microsoft-Windows-AppModel-Exec	1124	0	FM_BeginSetForeground_ActivationPhase(UInt32 p1_UInt32)		FM ExecDevPlatCircular	FM_BeginSetForeground_ActivationPhase	Informational		
-Microsoft-Windows-AppModel-Exec	1125	0	FM_EndSetForeground_ActivationPhase(UInt32 p1_UInt32, UInt32 p2_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_EndSetForeground_ActivationPhase	Informational		
-Microsoft-Windows-AppModel-Exec	1126	0	FM_SetActivationDehydrationEligibility(UInt32 p1_UInt32, UInt32 p2_UInt32, UInt32 p3_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_SetActivationDehydrationEligibility	Informational		
-Microsoft-Windows-AppModel-Exec	1127	0	FM_OnActivationStateChanged(UInt32 ActivationId, UInt32 ActState, UInt32 HRESULT)		FM ExecProductionCircular ExecDevPlatCircular	FM_OnActivationStateChanged	Informational		
-Microsoft-Windows-AppModel-Exec	1128	0	FM_OnApplicationStateChanged(UnicodeString ApplicationId, UInt32 AppState, UInt32 HRESULT)		FM ExecProductionCircular ExecDevPlatCircular	FM_OnApplicationStateChanged	Informational		
-Microsoft-Windows-AppModel-Exec	1129	0	FM_IsValidActivationProcessId(UInt32 p1_UInt32, UInt32 p2_UInt32, Boolean p3_Boolean, UInt32 p4_UInt32)		FM ExecDevPlatCircular	FM_IsValidActivationProcessId	Informational		
-Microsoft-Windows-AppModel-Exec	1130	0	FM_GetForegroundProductId(Boolean p1_Boolean, GUID p2_GUID, UInt32 p3_UInt32)		FM ExecDevPlatCircular	FM_GetForegroundProductId	Informational		
-Microsoft-Windows-AppModel-Exec	1131	0	FM_GetProductIdFromProcessId(GUID p1_GUID, UInt32 p2_UInt32, UInt32 p3_UInt32)		FM ExecDevPlatCircular	FM_GetProductIdFromProcessId	Verbose		
-Microsoft-Windows-AppModel-Exec	1132	0	FM_DiscardFrozenNotification()		FM ExecDevPlatCircular	FM_DiscardFrozenNotification	Informational		
-Microsoft-Windows-AppModel-Exec	1133	0	FM_DehydrateApplication(UInt64 p1_UInt64, UnicodeString p2_String, UInt32 p3_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_DehydrateApplication	Informational		
-Microsoft-Windows-AppModel-Exec	1134	0	FM_BeginResumePrerequisitePhase(UInt32 p1_UInt32, UInt32 p2_AppLayer)		FM ExecDevPlatCircular	FM_BeginResumePrerequisitePhase	Informational		
-Microsoft-Windows-AppModel-Exec	1135	0	FM_EndResumePrerequisitePhase(UInt32 p1_UInt32, Boolean p2_Boolean)		FM ExecProductionCircular ExecDevPlatCircular	FM_EndResumePrerequisitePhase	Informational		
-Microsoft-Windows-AppModel-Exec	1136	0	FM_AcquireForegroundResource(UInt32 p1_UInt32, UnicodeString p2_String, UInt32 p3_UInt32, UInt32 p4_UInt32, Pointer pResSet, UInt32 p5_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_AcquireForegroundResource	Informational		
-Microsoft-Windows-AppModel-Exec	1137	0	FM_ForegroundResourceSetRevoked(UInt32 p1_UInt32, UInt32 p2_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_ForegroundResourceSetRevoked	Informational		
-Microsoft-Windows-AppModel-Exec	1138	0	FM_GenerateWatsonReport(UInt32 p1_UInt32, UnicodeString p2_String, UInt32 p3_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_GenerateWatsonReport	Informational		
-Microsoft-Windows-AppModel-Exec	1139	0	FM_TaskCompletionBatterySaverState(UInt32 p1_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_TaskCompletionBatterySaverState	Informational		
-Microsoft-Windows-AppModel-Exec	1140	0	FM_BeginTaskCompletionRevokeExemption(UInt32 p1_UInt32, UnicodeString p2_String, UInt32 p3_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_BeginTaskCompletionRevokeExemption	Informational		
-Microsoft-Windows-AppModel-Exec	1141	0	FM_ApplyTaskCompletionExemption(UInt32 p1_UInt32, UInt32 p2_UInt32, Boolean p3_Boolean, UInt32 p4_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_ApplyTaskCompletionExemption	Informational		
-Microsoft-Windows-AppModel-Exec	1142	0	FM_SetContinuation(UInt32 p1_UInt32)		FM ExecDevPlatCircular	FM_SetContinuation	Informational		
-Microsoft-Windows-AppModel-Exec	1143	0	FM_AbandonContinuation(UInt32 p1_UInt32, UInt32 p2_AppLayer)		FM ExecProductionCircular ExecDevPlatCircular	FM_AbandonContinuation	Informational		
-Microsoft-Windows-AppModel-Exec	1144	0	FM_PerformContinuation(UInt32 p1_UInt32, UInt32 p2_AppLayer)		FM ExecProductionCircular ExecDevPlatCircular	FM_PerformContinuation	Informational		
-Microsoft-Windows-AppModel-Exec	1145	0	FM_Shutdown(UInt32 p1_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_Shutdown	Informational		
-Microsoft-Windows-AppModel-Exec	1146	0	FM_PauseActivation(UInt32 p1_UInt32, UnicodeString p2_String, UnicodeString p3_String)		FM ExecDevPlatCircular	FM_PauseActivation	Informational		
-Microsoft-Windows-AppModel-Exec	1147	0	FM_BeginActivationBypass(UInt32 p1_UInt32)		FM ExecDevPlatCircular	FM_BeginActivationBypass	Informational		
-Microsoft-Windows-AppModel-Exec	1148	0	FM_EndActivationBypass(UInt32 p1_UInt32, UInt32 p2_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_EndActivationBypass	Informational		
-Microsoft-Windows-AppModel-Exec	1149	0	FM_BeginPostPausePendingResume(UInt32 p1_UInt32)		FM ExecDevPlatCircular	FM_BeginPostPausePendingResume	Informational		
-Microsoft-Windows-AppModel-Exec	1150	0	FM_EndPostPausePendingResume(UInt32 p1_UInt32, UInt32 p2_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_EndPostPausePendingResume	Informational		
-Microsoft-Windows-AppModel-Exec	1151	0	FM_ApplyResourceSet(Pointer pResSet, UInt32 p1_UInt32)		FM ExecDevPlatCircular	FM_ApplyResourceSet	Informational		
-Microsoft-Windows-AppModel-Exec	1152	0	FM_ApplyResourceSetType(UInt32 p1_UInt32, UInt64 p2_UInt64, UnicodeString p3_String, Pointer pResSet, UInt32 p4_UInt32)		FM ExecDevPlatCircular	FM_ApplyResourceSetType	Informational		
-Microsoft-Windows-AppModel-Exec	1153	0	FM_ApplyTerminal(Pointer pResSet, UInt32 p1_UInt32)		FM ExecDevPlatCircular	FM_ApplyTerminal	Informational		
-Microsoft-Windows-AppModel-Exec	1154	0	FM_RemoveInterruptiveUIAccess(Pointer pResSet, UInt32 p1_UInt32)		FM ExecDevPlatCircular	FM_RemoveInterruptiveUIAccess	Informational		
-Microsoft-Windows-AppModel-Exec	1155	0	FM_ResetInterruptiveUIAccess(Pointer pResSet, UInt32 p1_UInt32)		FM ExecDevPlatCircular	FM_ResetInterruptiveUIAccess	Informational		
-Microsoft-Windows-AppModel-Exec	1156	0	FM_OnRelease(UInt32 p1_UInt32, UInt32 p2_UInt32)		FM ExecDevPlatCircular	FM_OnRelease	Informational		
-Microsoft-Windows-AppModel-Exec	1157	0	FM_OnOutOfMemory(UInt32 p1_UInt32, UInt32 p2_UInt32)		FM ExecDevPlatCircular	FM_OnOutOfMemory	Informational		
-Microsoft-Windows-AppModel-Exec	1158	0	FM_CheckProcessBackgroundEligibility(UInt32 p1_UInt32, UInt32 p2_UInt32, UInt32 p3_UInt32)		FM ExecDevPlatCircular	FM_CheckProcessBackgroundEligibility	Informational		
-Microsoft-Windows-AppModel-Exec	1159	0	FM_ApplyTaskCompletion(UInt32 p1_UInt32, UInt32 p2_UInt32, UInt32 p3_UInt32)		FM ExecDevPlatCircular	FM_ApplyTaskCompletion	Informational		
-Microsoft-Windows-AppModel-Exec	1160	0	FM_RevokeTaskCompletion(UInt32 p1_UInt32, UInt32 p2_UInt32, UInt32 p3_UInt32)		FM ExecDevPlatCircular	FM_RevokeTaskCompletion	Informational		
-Microsoft-Windows-AppModel-Exec	1161	0	FM_RequestExtendedExecution(UInt32 p1_UInt32, UInt32 p2_UInt32, UInt32 p3_UInt32)		FM ExecDevPlatCircular	FM_RequestExtendedExecution	Informational		
-Microsoft-Windows-AppModel-Exec	1162	0	FM_RegisterForExtensionRevokedEvent(UInt32 p1_UInt32, UInt32 p2_UInt32, UInt64 p3_UInt64, UInt64 p4_UInt64)		FM ExecDevPlatCircular	FM_RegisterForExtensionRevokedEvent	Informational		
-Microsoft-Windows-AppModel-Exec	1163	0	FM_CompleteExtendedExecution(UInt32 p1_UInt32, Boolean p2_Boolean, UInt32 p3_UInt32)		FM ExecDevPlatCircular	FM_CompleteExtendedExecution	Informational		
-Microsoft-Windows-AppModel-Exec	1164	0	FM_RevokeSuspensionExtension(UInt64 p1_UInt64, UnicodeString p2_String, UInt32 p3_UInt32)		FM ExecDevPlatCircular	FM_RevokeSuspensionExtension	Informational		
-Microsoft-Windows-AppModel-Exec	1165	0	FM_NotifyPendingResourceSetTransition(UInt32 p1_UInt32, Pointer pResSet, UInt32 p3_UInt32)		FM ExecDevPlatCircular	FM_NotifyPendingResourceSetTransition	Informational		
-Microsoft-Windows-AppModel-Exec	1166	0	FM_ApplyTaskCompletionResourceSet(UnicodeString p0, Boolean p1, UInt32 p2)		FM ExecDevPlatCircular	FM_ApplyTaskCompletionResourceSet	Informational		
-Microsoft-Windows-AppModel-Exec	1167	0	FM_IsApplicationStateBackgroundEligibile(UInt64 p0, UnicodeString p1, Boolean p2)		FM ExecDevPlatCircular	FM_IsApplicationStateBackgroundEligibile	Informational		
-Microsoft-Windows-AppModel-Exec	1168	0	FM_RevokeTaskCompletionExemption(UnicodeString p1_String, UInt32 p2_UInt32)		FM ExecDevPlatCircular	FM_RevokeTaskCompletionExemption	Informational		
-Microsoft-Windows-AppModel-Exec	1169	0	FM_AllowBackgroundExecution(UInt64 p1_UInt64, UnicodeString p2_String, UInt32 p3_UInt32)		FM ExecDevPlatCircular	FM_AllowBackgroundExecution	Informational		
-Microsoft-Windows-AppModel-Exec	1170	0	FM_OnPackageEnergyStateChange(UnicodeString p1_String, UInt32 p2_UInt32, UInt32 p3_UInt32)		FM ExecDevPlatCircular	FM_OnPackageEnergyStateChange	Informational		
-Microsoft-Windows-AppModel-Exec	1171	0	FM_SetActivationImportanceVector(UInt32 p1_UInt32, UInt32 p2_UInt32, UInt32 p3_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_SetActivationImportanceVector	Informational		
-Microsoft-Windows-AppModel-Exec	1172	0	FM_NotifyWindowAdded(UInt32 p1_UInt32, UInt32 p2_UInt32, UInt32 p3_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_NotifyWindowAdded	Informational		
-Microsoft-Windows-AppModel-Exec	1173	0	FM_NotifyWindowRemoved(UInt32 p1_UInt32, UInt32 p2_UInt32, UInt32 p3_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_NotifyWindowRemoved	Informational		
-Microsoft-Windows-AppModel-Exec	1174	0	FM_LogoffUser(UInt64 p1_UInt64, UInt32 p2_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_LogoffUser	Informational		
-Microsoft-Windows-AppModel-Exec	1175	0	FM_UnregisterForExtensionRevokedEvent(UInt32 p1_UInt32, UInt32 p2_UInt32)		FM ExecDevPlatCircular	FM_UnregisterForExtensionRevokedEvent	Informational		
-Microsoft-Windows-AppModel-Exec	1176	0	FM_RegisterExtendedExecutionClient(UInt32 p1_UInt32, UInt32 p2_UInt32)		FM ExecDevPlatCircular	FM_RegisterExtendedExecutionClient	Informational		
-Microsoft-Windows-AppModel-Exec	1177	0	FM_UnregisterExtendedExecutionClient(UInt32 p1_UInt32, UInt32 p2_UInt32)		FM ExecDevPlatCircular	FM_UnregisterExtendedExecutionClient	Informational		
-Microsoft-Windows-AppModel-Exec	1178	0	FM_ActivationTimeoutPolicyChanged(UInt32 p1_UInt32, UInt32 p2_UInt32, UInt32 p3_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_ActivationTimeoutPolicyChanged	Informational		
-Microsoft-Windows-AppModel-Exec	1179	0	FM_OnConnectedStandbyStateChanged(UInt32 p1_UInt32)		FM ExecDevPlatCircular	FM_OnConnectedStandbyStateChanged	Informational		
-Microsoft-Windows-AppModel-Exec	1180	0	FM_ApplyResourceBoost(UInt64 p1_UInt64, UnicodeString p2_String, UInt32 p3_UInt32)		FM ExecDevPlatCircular	FM_ApplyResourceBoost	Informational		
-Microsoft-Windows-AppModel-Exec	1181	0	FM_ForegroundResourceSetAcquired(UInt32 p1_UInt32, UInt32 p2_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_ForegroundResourceSetAcquired	Informational		
-Microsoft-Windows-AppModel-Exec	1182	0	FM_ChildOnApplicationStateChangedEx(UInt64 Usercontext, UnicodeString ApplicationId, UInt32 AppState, UInt32 HRESULT)		FM ExecProductionCircular ExecDevPlatCircular	FM_ChildOnApplicationStateChangedEx	Informational		
-Microsoft-Windows-AppModel-Exec	1183	0	FM_ChildAcquireForegroundResource(UInt64 p1_UInt64, UnicodeString p2_String, Boolean p3_Boolean, UInt32 p4_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_ChildAcquireForegroundResource	Informational		
-Microsoft-Windows-AppModel-Exec	1184	0	FM_ChildOnAcquired(UInt32 p1_UInt32, UInt32 p2_UInt32)		FM ExecDevPlatCircular	FM_ChildOnAcquired	Informational		
-Microsoft-Windows-AppModel-Exec	1185	0	FM_ChildOnRelease(UInt32 p1_UInt32)		FM ExecDevPlatCircular	FM_ChildOnRelease	Informational		
-Microsoft-Windows-AppModel-Exec	1186	0	FM_ChildOnTimerExpired(UInt32 p1_UInt32)		FM ExecDevPlatCircular	FM_ChildOnTimerExpired	Informational		
-Microsoft-Windows-AppModel-Exec	1187	0	FM_SendActivationNotification(UInt32 p1_UInt32, UInt32 p2_UInt32)		FM ExecDevPlatCircular	FM_SendActivationNotification	Informational		
+Microsoft-Windows-AppModel-Exec	1100	0	FM_ApplyResourceSetType(UInt32 p1_UInt32, UInt64 p2_UInt64, UnicodeString p3_String, Pointer pResSet, UInt32 p4_UInt32)		FM ExecDevPlatCircular	FM_ApplyResourceSetType	Informational		
+Microsoft-Windows-AppModel-Exec	1101	0	FM_ApplyTerminal(UInt64 UserContext, UnicodeString PsmKey, Pointer pResSet, UInt32 HRESULT)		FM ExecDevPlatCircular	FM_ApplyTerminal	Informational		
+Microsoft-Windows-AppModel-Exec	1102	0	FM_RemoveInterruptiveUIAccess(UInt64 UserContext, UnicodeString PsmKey, Pointer pResSet, UInt32 HRESULT)		FM ExecDevPlatCircular	FM_RemoveInterruptiveUIAccess	Informational		
+Microsoft-Windows-AppModel-Exec	1103	0	FM_ResetInterruptiveUIAccess(UInt64 UserContext, UnicodeString PsmKey, Pointer pResSet, UInt32 HRESULT)		FM ExecDevPlatCircular	FM_ResetInterruptiveUIAccess	Informational		
+Microsoft-Windows-AppModel-Exec	1104	0	FM_OnRelease(UInt64 p1_UInt64, UnicodeString p2_String, UInt32 p3_UInt32, Boolean p4_Boolean, Boolean p5_Boolean, UInt32 p6_UInt32)		FM ExecDevPlatCircular	FM_OnRelease	Informational		
+Microsoft-Windows-AppModel-Exec	1105	0	FM_OnAcquired(UInt64 UserContext, UnicodeString PsmKey, Pointer pResSet, UInt32 HRESULT)		FM ExecDevPlatCircular	FM_OnAcquired	Informational		
+Microsoft-Windows-AppModel-Exec	1106	0	FM_OnOutOfMemory(UInt64 UserContext, UnicodeString PsmKey, Pointer pResSet, UInt32 HRESULT)		FM ExecDevPlatCircular	FM_OnOutOfMemory	Informational		
+Microsoft-Windows-AppModel-Exec	1107	0	FM_ApplyResourceBoost(UInt64 p1_UInt64, UnicodeString p2_String, UInt32 p3_UInt32)		FM ExecDevPlatCircular	FM_ApplyResourceBoost	Informational		
+Microsoft-Windows-AppModel-Exec	1108	0	FM_AcquireResourceSet(UInt32 p1_UInt32, UInt64 p2_UInt64, UnicodeString p3_String, UInt32 p3_UInt32)		FM ExecDevPlatCircular	FM_AcquireResourceSet	Informational		
+Microsoft-Windows-AppModel-Exec	1109	0	FM_ApplyResourceSet(UInt64 p1_UInt64, UnicodeString p2_String, UInt32 p3_UInt32)		FM ExecDevPlatCircular	FM_ApplyResourceSet	Informational		
+Microsoft-Windows-AppModel-Exec	1110	0	FM_ClearCachedResource(UInt64 p1_UInt64, UnicodeString p2_String)		FM ExecDevPlatCircular	FM_ClearCachedResource	Informational		
+Microsoft-Windows-AppModel-Exec	1111	0	FM_FireCachedResourceCallback(UInt64 p1_UInt64, UnicodeString p2_String)		FM ExecDevPlatCircular	FM_FireCachedResourceCallback	Informational		
+Microsoft-Windows-AppModel-Exec	1200	0	FM_ChildOnApplicationStateChangedEx(UInt64 UserContext, UnicodeString ApplicationId, UInt32 AppState, UInt32 HRESULT)		FM ExecProductionCircular ExecDevPlatCircular	FM_ChildOnApplicationStateChangedEx	Informational		
+Microsoft-Windows-AppModel-Exec	1201	0	FM_ChildAcquireForegroundResource(UInt64 p1_UInt64, UnicodeString p2_String, Boolean p3_Boolean)		FM ExecProductionCircular ExecDevPlatCircular	FM_ChildAcquireForegroundResource	Informational		
+Microsoft-Windows-AppModel-Exec	1202	0	FM_ChildOnResourceAcquired(UInt64 p1_UInt64, UnicodeString p2_String)		FM ExecDevPlatCircular	FM_ChildOnResourceAcquired	Informational		
+Microsoft-Windows-AppModel-Exec	1203	0	FM_ChildOnResourceTimerExpired(UInt64 p1_UInt64, UnicodeString p2_String)		FM ExecDevPlatCircular	FM_ChildOnResourceTimerExpired	Informational		
+Microsoft-Windows-AppModel-Exec	1250	0	FM_TaskCompletionBatterySaverState(UInt32 p1_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_TaskCompletionBatterySaverState	Informational		
+Microsoft-Windows-AppModel-Exec	1251	0	FM_BeginTaskCompletionRevokeExemption(UInt32 p1_UInt32, UnicodeString p2_String, UInt32 p3_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_BeginTaskCompletionRevokeExemption	Informational		
+Microsoft-Windows-AppModel-Exec	1252	0	FM_ApplyTaskCompletionExemption(UInt32 p1_UInt32, UInt32 p2_UInt32, Boolean p3_Boolean, UInt32 p4_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_ApplyTaskCompletionExemption	Informational		
+Microsoft-Windows-AppModel-Exec	1253	0	FM_CheckProcessBackgroundEligibility(UInt32 p1_UInt32, UInt32 p2_UInt32, UInt32 p3_UInt32)		FM ExecDevPlatCircular	FM_CheckProcessBackgroundEligibility	Informational		
+Microsoft-Windows-AppModel-Exec	1254	0	FM_ApplyTaskCompletion(UInt32 p1_UInt32, UInt32 p2_UInt32, UInt32 p3_UInt32)		FM ExecDevPlatCircular	FM_ApplyTaskCompletion	Informational		
+Microsoft-Windows-AppModel-Exec	1255	0	FM_RevokeTaskCompletion(UInt32 p1_UInt32, UInt32 p2_UInt32, UInt32 p3_UInt32)		FM ExecDevPlatCircular	FM_RevokeTaskCompletion	Informational		
+Microsoft-Windows-AppModel-Exec	1256	0	FM_RequestExtendedExecution(UInt32 p1_UInt32, UInt32 p2_UInt32, UInt32 p3_UInt32, UInt32 p4_UInt32)		FM ExecDevPlatCircular	FM_RequestExtendedExecution	Informational		
+Microsoft-Windows-AppModel-Exec	1257	0	FM_RegisterForExtensionRevokedEvent(UInt32 p1_UInt32, UInt32 p2_UInt32, UInt64 p3_UInt64, UInt64 p4_UInt64)		FM ExecDevPlatCircular	FM_RegisterForExtensionRevokedEvent	Informational		
+Microsoft-Windows-AppModel-Exec	1258	0	FM_CompleteExtendedExecution(UInt32 p1_UInt32, Boolean p2_Boolean, UInt32 p3_UInt32)		FM ExecDevPlatCircular	FM_CompleteExtendedExecution	Informational		
+Microsoft-Windows-AppModel-Exec	1259	0	FM_RevokeSuspensionExtension(UInt64 p1_UInt64, UnicodeString p2_String, UInt32 p3_UInt32)		FM ExecDevPlatCircular	FM_RevokeSuspensionExtension	Informational		
+Microsoft-Windows-AppModel-Exec	1260	0	FM_NotifyPendingResourceSetTransition(UInt32 p1_UInt32, Pointer pResSet, UInt32 p3_UInt32)		FM ExecDevPlatCircular	FM_NotifyPendingResourceSetTransition	Informational		
+Microsoft-Windows-AppModel-Exec	1261	0	FM_ApplyTaskCompletionResourceSet(UnicodeString p0, Boolean p1, UInt32 p2)		FM ExecDevPlatCircular	FM_ApplyTaskCompletionResourceSet	Informational		
+Microsoft-Windows-AppModel-Exec	1262	0	FM_IsApplicationStateBackgroundEligibile(UInt64 p1_UInt64, UnicodeString p2_String, Boolean p3_Boolean)		FM ExecDevPlatCircular	FM_IsApplicationStateBackgroundEligibile	Informational		
+Microsoft-Windows-AppModel-Exec	1263	0	FM_RevokeTaskCompletionExemption(UnicodeString p1_String, UInt32 p2_UInt32)		FM ExecDevPlatCircular	FM_RevokeTaskCompletionExemption	Informational		
+Microsoft-Windows-AppModel-Exec	1264	0	FM_AllowBackgroundExecution(UInt64 p1_UInt64, UnicodeString p2_String, UInt32 p3_UInt32, UInt32 p4_UInt32)		FM ExecDevPlatCircular	FM_AllowBackgroundExecution	Informational		
+Microsoft-Windows-AppModel-Exec	1265	0	FM_OnPackageEnergyStateChange(UnicodeString p1_String, UInt32 p2_UInt32, UInt32 p3_UInt32)		FM ExecDevPlatCircular	FM_OnPackageEnergyStateChange	Informational		
+Microsoft-Windows-AppModel-Exec	1266	0	FM_RegisterExtendedExecutionClient(UInt32 p1_UInt32, UInt32 p2_UInt32)		FM ExecDevPlatCircular	FM_RegisterExtendedExecutionClient	Informational		
+Microsoft-Windows-AppModel-Exec	1267	0	FM_UnregisterExtendedExecutionClient(UInt32 p1_UInt32, UInt32 p2_UInt32)		FM ExecDevPlatCircular	FM_UnregisterExtendedExecutionClient	Informational		
+Microsoft-Windows-AppModel-Exec	1268	0	FM_UnregisterForExtensionRevokedEvent(UInt32 p1_UInt32, UInt32 p2_UInt32)		FM ExecDevPlatCircular	FM_UnregisterForExtensionRevokedEvent	Informational		
+Microsoft-Windows-AppModel-Exec	1269	0	FM_ApplyTaskCompletionResource(UnicodeString p0, UInt32 p1, Boolean p2, UInt32 p3)		FM ExecDevPlatCircular	FM_ApplyTaskCompletionResource	Informational		
+Microsoft-Windows-AppModel-Exec	1270	0	FM_TCDeniedByEDPPolicy(UInt32 p1_UInt32, UInt32 p2_UInt32)		FM ExecDevPlatCircular	FM_TCDeniedByEDPPolicy	Informational		
+Microsoft-Windows-AppModel-Exec	1271	0	FM_IsForegroundApplication(UnicodeString p0, Boolean p1)		FM ExecDevPlatCircular	FM_IsForegroundApplication	Informational		
+Microsoft-Windows-AppModel-Exec	1400	0	FM_RegisterCallback(UnicodeString p1_String, UInt32 p2_UInt32)		FM ExecDevPlatCircular	FM_RegisterCallback	Informational		
+Microsoft-Windows-AppModel-Exec	1401	0	FM_GenerateActivationInstanceId(UInt32 p1_UInt32)		FM ExecDevPlatCircular	FM_GenerateActivationInstanceId	Informational		
+Microsoft-Windows-AppModel-Exec	1402	0	FM_BeginActivationPrerequisitePhase(UInt32 p1_UInt32, UInt64 p2_UInt64, UnicodeString p3_String, UnicodeString p4_String)		FM ExecProductionCircular ExecDevPlatCircular	FM_BeginActivationPrerequisitePhase	Informational		
+Microsoft-Windows-AppModel-Exec	1403	0	FM_EndActivationPrerequisitePhase(UInt32 p1_UInt32, Boolean p2_Boolean)		FM ExecProductionCircular ExecDevPlatCircular	FM_EndActivationPrerequisitePhase	Informational		
+Microsoft-Windows-AppModel-Exec	1404	0	FM_BeginResume_RehydrationPhase(UInt32 p1_UInt32)		FM ExecDevPlatCircular	FM_BeginResume_RehydrationPhase	Informational		
+Microsoft-Windows-AppModel-Exec	1405	0	FM_EndResume_RehydrationPhase(UInt32 p1_UInt32, UInt32 p2_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_EndResume_RehydrationPhase	Informational		
+Microsoft-Windows-AppModel-Exec	1406	0	FM_BeginResumeActivation(UInt32 p1_UInt32, Boolean p2_Boolean)		FM ExecProductionCircular ExecDevPlatCircular	FM_BeginResumeActivation	Informational		
+Microsoft-Windows-AppModel-Exec	1407	0	FM_EndResumeActivation(UInt32 p1_UInt32, UInt32 p2_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_EndResumeActivation	Informational		
+Microsoft-Windows-AppModel-Exec	1408	0	FM_BeginResume_ActivationPhase(UInt32 p1_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_BeginResume_ActivationPhase	Informational		
+Microsoft-Windows-AppModel-Exec	1409	0	FM_EndResume_ActivationPhase(UInt32 p1_UInt32, UInt32 p2_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_EndResume_ActivationPhase	Informational		
+Microsoft-Windows-AppModel-Exec	1410	0	FM_BeginPauseActivation(UInt32 p1_UInt32)		FM ExecDevPlatCircular	FM_BeginPauseActivation	Informational		
+Microsoft-Windows-AppModel-Exec	1411	0	FM_EndPauseActivation(UInt32 p1_UInt32, Boolean p2_Boolean)		FM ExecProductionCircular ExecDevPlatCircular	FM_EndPauseActivation	Informational		
+Microsoft-Windows-AppModel-Exec	1412	0	FM_BeginCancelActivation(UInt32 p1_UInt32)		FM ExecDevPlatCircular	FM_BeginCancelActivation	Informational		
+Microsoft-Windows-AppModel-Exec	1413	0	FM_EndCancelActivation(UInt32 p1_UInt32, UInt32 p2_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_EndCancelActivation	Informational		
+Microsoft-Windows-AppModel-Exec	1414	0	FM_BeginAbortActivation(UInt32 p1_UInt32, UnicodeString p2_String, Boolean p3_Boolean)		FM ExecDevPlatCircular	FM_BeginAbortActivation	Informational		
+Microsoft-Windows-AppModel-Exec	1415	0	FM_EndAbortActivation(UInt32 p1_UInt32, UInt32 p2_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_EndAbortActivation	Informational		
+Microsoft-Windows-AppModel-Exec	1416	0	FM_BeginGetActivationProcessId(UInt32 p1_UInt32)		FM ExecDevPlatCircular	FM_BeginGetActivationProcessId	Informational		
+Microsoft-Windows-AppModel-Exec	1417	0	FM_EndGetActivationProcessId(UInt32 p1_UInt32, UInt32 p2_UInt32, UInt32 p3_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_EndGetActivationProcessId	Informational		
+Microsoft-Windows-AppModel-Exec	1418	0	FM_BeginSetForegroundActivationInstance(UInt32 p1_UInt32, Boolean p2_Boolean)		FM ExecDevPlatCircular	FM_BeginSetForegroundActivationInstance	Informational		
+Microsoft-Windows-AppModel-Exec	1419	0	FM_EndSetForegroundActivationInstance(UInt32 p1_UInt32, UInt32 p2_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_EndSetForegroundActivationInstance	Informational		
+Microsoft-Windows-AppModel-Exec	1420	0	FM_SetActivationDehydrationEligibility(UInt32 p1_UInt32, UInt32 p2_UInt32, UInt32 p3_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_SetActivationDehydrationEligibility	Informational		
+Microsoft-Windows-AppModel-Exec	1421	0	FM_OnActivationStateChanged(UInt32 ActivationId, UInt32 ActState, UInt32 HRESULT)		FM ExecProductionCircular ExecDevPlatCircular	FM_OnActivationStateChanged	Informational		
+Microsoft-Windows-AppModel-Exec	1422	0	FM_OnApplicationStateChanged(UInt64 UserContext, UnicodeString ApplicationId, UInt32 AppState, UInt32 HRESULT)		FM ExecProductionCircular ExecDevPlatCircular	FM_OnApplicationStateChanged	Informational		
+Microsoft-Windows-AppModel-Exec	1423	0	FM_IsValidActivationProcessId(UInt32 p1_UInt32, UInt32 p2_UInt32, Boolean p3_Boolean, UInt32 p4_UInt32)		FM ExecDevPlatCircular	FM_IsValidActivationProcessId	Informational		
+Microsoft-Windows-AppModel-Exec	1424	0	FM_GetForegroundProductId(Boolean p1_Boolean, GUID p2_GUID, UInt32 p3_UInt32)		FM ExecDevPlatCircular	FM_GetForegroundProductId	Informational		
+Microsoft-Windows-AppModel-Exec	1425	0	FM_GetProductIdFromProcessId(GUID p1_GUID, UInt32 p2_UInt32, UInt32 p3_UInt32)		FM ExecDevPlatCircular	FM_GetProductIdFromProcessId	Verbose		
+Microsoft-Windows-AppModel-Exec	1426	0	FM_DiscardFrozenNotification()		FM ExecDevPlatCircular	FM_DiscardFrozenNotification	Informational		
+Microsoft-Windows-AppModel-Exec	1427	0	FM_DehydrateApplication(UInt64 p1_UInt64, UnicodeString p2_String, UInt32 p3_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_DehydrateApplication	Informational		
+Microsoft-Windows-AppModel-Exec	1428	0	FM_BeginResumePrerequisitePhase(UInt32 p1_UInt32)		FM ExecDevPlatCircular	FM_BeginResumePrerequisitePhase	Informational		
+Microsoft-Windows-AppModel-Exec	1429	0	FM_EndResumePrerequisitePhase(UInt32 p1_UInt32, Boolean p2_Boolean)		FM ExecProductionCircular ExecDevPlatCircular	FM_EndResumePrerequisitePhase	Informational		
+Microsoft-Windows-AppModel-Exec	1430	0	FM_GenerateWatsonReport(UInt32 p1_UInt32, UnicodeString p2_String, UInt32 p3_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_GenerateWatsonReport	Informational		
+Microsoft-Windows-AppModel-Exec	1431	0	FM_SetContinuation(UInt32 p1_UInt32)		FM ExecDevPlatCircular	FM_SetContinuation	Informational		
+Microsoft-Windows-AppModel-Exec	1432	0	FM_AbandonContinuation(UInt32 p1_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_AbandonContinuation	Informational		
+Microsoft-Windows-AppModel-Exec	1433	0	FM_PerformContinuation(UInt32 p1_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_PerformContinuation	Informational		
+Microsoft-Windows-AppModel-Exec	1434	0	FM_Shutdown(UInt32 p1_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_Shutdown	Informational		
+Microsoft-Windows-AppModel-Exec	1435	0	FM_PauseActivation(UInt32 p1_UInt32, UnicodeString p2_String, UnicodeString p3_String)		FM ExecDevPlatCircular	FM_PauseActivation	Informational		
+Microsoft-Windows-AppModel-Exec	1436	0	FM_BeginActivationBypass(UInt32 p1_UInt32)		FM ExecDevPlatCircular	FM_BeginActivationBypass	Informational		
+Microsoft-Windows-AppModel-Exec	1437	0	FM_EndActivationBypass(UInt32 p1_UInt32, UInt32 p2_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_EndActivationBypass	Informational		
+Microsoft-Windows-AppModel-Exec	1438	0	FM_BeginPostPausePendingResume(UInt32 p1_UInt32)		FM ExecDevPlatCircular	FM_BeginPostPausePendingResume	Informational		
+Microsoft-Windows-AppModel-Exec	1439	0	FM_EndPostPausePendingResume(UInt32 p1_UInt32, UInt32 p2_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_EndPostPausePendingResume	Informational		
+Microsoft-Windows-AppModel-Exec	1440	0	FM_SetActivationImportanceVector(UInt32 p1_UInt32, UInt32 p2_UInt32, UInt32 p3_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_SetActivationImportanceVector	Informational		
+Microsoft-Windows-AppModel-Exec	1441	0	FM_NotifyWindowAdded(UInt32 p1_UInt32, UInt32 p2_UInt32, UInt32 p3_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_NotifyWindowAdded	Informational		
+Microsoft-Windows-AppModel-Exec	1442	0	FM_NotifyWindowRemoved(UInt32 p1_UInt32, UInt32 p2_UInt32, UInt32 p3_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_NotifyWindowRemoved	Informational		
+Microsoft-Windows-AppModel-Exec	1443	0	FM_LogoffUser(UInt64 p1_UInt64, UInt32 p2_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_LogoffUser	Informational		
+Microsoft-Windows-AppModel-Exec	1444	0	FM_ActivationTimeoutPolicyChanged(UInt32 p1_UInt32, UInt32 p2_UInt32, UInt32 p3_UInt32)		FM ExecProductionCircular ExecDevPlatCircular	FM_ActivationTimeoutPolicyChanged	Informational		
+Microsoft-Windows-AppModel-Exec	1445	0	FM_OnConnectedStandbyStateChanged(UInt32 p1_UInt32)		FM ExecDevPlatCircular	FM_OnConnectedStandbyStateChanged	Informational		
+Microsoft-Windows-AppModel-Exec	1446	0	FM_SendActivationNotification(UInt32 p1_UInt32, UInt32 p2_UInt32)		FM ExecDevPlatCircular	FM_SendActivationNotification	Informational		
+Microsoft-Windows-AppModel-Exec	1447	0	FM_OnResourceAcquired(UInt64 p1_UInt64, UnicodeString p2_String, UInt32 p3_UInt32)		FM ExecDevPlatCircular	FM_OnResourceAcquired	Informational		
+Microsoft-Windows-AppModel-Exec	1448	0	FM_OnResourceTimerExpired(UInt64 p1_UInt64, UnicodeString p2_String, UInt32 p3_UInt32)		FM ExecDevPlatCircular	FM_OnResourceTimerExpired	Informational		
+Microsoft-Windows-AppModel-Exec	1449	0	FM_PostPausePendingActivation(UInt32 p1_UInt32, UInt32 p2_UInt32)		FM ExecDevPlatCircular	FM_PostPausePendingActivation	Informational		
 Microsoft-Windows-AppModel-Exec	2000	0	LogTrace2000(GUID WorkItemId, UnicodeString PsmKey, UInt32 ActivationAction, UInt32 HRESULT)		ExecProductionCircular ExecDevPlatCircular	LogTrace	Informational		
 Microsoft-Windows-AppModel-Exec	2001	0	LogTrace2001(GUID p0, UnicodeString p1, UInt32 p2)		ExecDevPlatCircular	LogTrace	Informational		
 Microsoft-Windows-AppModel-Exec	2002	0	LogTrace2002(GUID p0, UnicodeString p1, UInt32 p2)		ExecDevPlatCircular	LogTrace	Informational		
@@ -632,6 +649,7 @@ Microsoft-Windows-AppModel-Exec	3323	0	LogTrace3323(UInt32 p1_UInt32, UInt32 p2_
 Microsoft-Windows-AppModel-Exec	3324	0	LogTrace3324(UInt32 p1_UInt32, UInt32 p2_UInt32)		ExecMan ExecProductionCircular ExecDevPlatCircular	LogTrace	Informational		
 Microsoft-Windows-AppModel-Exec	3325	0	LogTrace3325(GUID p1_GUID, UInt32 p2_UInt32)		ExecMan ExecDevPlatCircular	LogTrace	Informational		
 Microsoft-Windows-AppModel-Exec	3326	0	LogTrace3326(GUID p1_GUID, UInt32 p2_UInt32, UInt32 p3_UInt32)		ExecMan ExecProductionCircular ExecDevPlatCircular	LogTrace	Informational		
+Microsoft-Windows-AppModel-Exec	3327	0	LogTrace3327(GUID p1_GUID, UInt32 p2_UInt32, UInt32 p3_UInt32)		ExecMan ExecProductionCircular ExecDevPlatCircular	LogTrace	Error		
 Microsoft-Windows-AppModel-Exec	3500	0	LogTrace3500(GUID p1_GUID, UInt32 p2_UInt32)		ExecMan ExecProductionCircular ExecDevPlatCircular	LogTrace	Informational		
 Microsoft-Windows-AppModel-Exec	3501	0	LogTrace3501(UInt32 p1_UInt32, UInt32 p2_UInt32, UInt32 p3_UInt32)		ExecMan ExecDevPlatCircular	LogTrace	Informational		
 Microsoft-Windows-AppModel-Exec	3502	0	LogTrace3502(UInt32 p1_UInt32)		ExecMan ExecProductionCircular ExecDevPlatCircular	LogTrace	Informational		
@@ -729,8 +747,9 @@ Microsoft-Windows-AppModel-Exec	3688	0	LogTrace3688(GUID p1_GUID)		ExecDevPlatCi
 Microsoft-Windows-AppModel-Exec	3689	0	LogTrace3689(GUID p1_GUID)		ExecProductionCircular ExecDevPlatCircular	LogTrace	Warning		
 Microsoft-Windows-AppModel-Exec	3690	0	LogTrace3690(GUID p1_GUID, UInt32 p2_UInt32)		ExecProductionCircular ExecDevPlatCircular	LogTrace	Informational		
 Microsoft-Windows-AppModel-Exec	3691	0	LogTrace3691(GUID p1_GUID, UInt32 p2_UInt32, UInt32 p3_UInt32, UInt32 p4_UInt32)		ExecProductionCircular ExecDevPlatCircular	LogTrace	Informational		
-Microsoft-Windows-AppModel-Exec	3692	0	LogTrace3692()		ExecProductionCircular ExecDevPlatCircular	LogTrace	Informational		
-Microsoft-Windows-AppModel-Exec	3693	0	LogTrace3693()		ExecProductionCircular ExecDevPlatCircular	LogTrace	Informational		
+Microsoft-Windows-AppModel-Exec	3692	0	LogTrace3692(GUID p1_GUID, UInt32 p2_UInt32)		ExecProductionCircular ExecDevPlatCircular	LogTrace	Informational		
+Microsoft-Windows-AppModel-Exec	3693	0	LogTrace3693(GUID p1_GUID, UInt32 p2_UInt32)		ExecProductionCircular ExecDevPlatCircular	LogTrace	Informational		
+Microsoft-Windows-AppModel-Exec	3694	0	LogTrace3694(GUID p1_GUID, UInt32 p2_UInt32)		ExecProductionCircular ExecDevPlatCircular	LogTrace	Error		
 Microsoft-Windows-AppModel-Exec	3699	0	LogTrace3699(UInt32 p1_UInt32)		ExecProductionCircular ExecDevPlatCircular	LogTrace	Error		
 Microsoft-Windows-AppModel-Exec	6100	0	task_06100(UInt32 p0, UnicodeString p1, UnicodeString p2)		ExecDevPlatCircular	task_0	Verbose		
 Microsoft-Windows-AppModel-Exec	6101	0	task_06101(UInt32 p0, UnicodeString p1, UInt32 p2, Boolean p3)		ExecDevPlatCircular	task_0	Informational		

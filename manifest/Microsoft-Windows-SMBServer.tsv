@@ -51,6 +51,7 @@ Microsoft-Windows-SMBServer	502	0	Smb2ConnectionTerminateStop(GUID ConnectionGUI
 Microsoft-Windows-SMBServer	550	0	Smb2SessionAllocateStart(GUID SessionGUID, GUID ConnectionGUID)	Start	Session	Smb2SessionAllocate	Informational		
 Microsoft-Windows-SMBServer	551	0	Smb2SessionAuthFailure(GUID SessionGUID, GUID ConnectionGUID, UInt32 Status)		Session	Smb2SessionAuthFailure	Informational		
 Microsoft-Windows-SMBServer	551	1	Smb2SessionAuthFailure_V1(GUID SessionGUID, GUID ConnectionGUID, HexInt32 Status, HexInt32 TranslatedStatus, UInt32 ClientAddressLength, Binary ClientAddress, HexInt64 SessionId, UInt16 UserNameLength, UnicodeString UserName, UInt16 ClientNameLength, UnicodeString ClientName)		Operational	Smb2SessionAuthFailure	Error		
+Microsoft-Windows-SMBServer	551	2	Smb2SessionAuthFailure_V2(GUID SessionGUID, GUID ConnectionGUID, HexInt32 Status, HexInt32 TranslatedStatus, UInt32 ClientAddressLength, Binary ClientAddress, HexInt64 SessionId, UInt16 UserNameLength, UnicodeString UserName, UInt16 ClientNameLength, UnicodeString ClientName, UnicodeString SPN, UInt32 SPNValidationPolicy)		Operational	Smb2SessionAuthFailure	Error		
 Microsoft-Windows-SMBServer	552	0	Smb2SessionAuthenticated(GUID SessionGUID, GUID ConnectionGUID, UInt16 UserNameLength, UnicodeString UserName, UInt16 DomainNameLength, UnicodeString DomainName)		Session	Smb2SessionAuthenticated	Informational		
 Microsoft-Windows-SMBServer	553	0	Smb2SessionBind(GUID SessionGUID, GUID ConnectionGUID, GUID BindingSessionGUID)		Session	Smb2SessionBind	Informational		
 Microsoft-Windows-SMBServer	554	0	Smb2SessionTerminateStop(GUID SessionGUID, UInt32 Reason)	Stop	Session	Smb2SessionTerminate	Informational		
@@ -95,6 +96,7 @@ Microsoft-Windows-SMBServer	1017	0	SrvHandleScavenge(Boolean DurableHandle, Bool
 Microsoft-Windows-SMBServer	1018	0	SrvSessionInvalidate(HexInt64 SessionId, HexInt32 Status, HexInt32 TranslatedStatus, HexInt32 TaskStatus, HexInt32 TranslatedTaskStatus)		Operational	SrvSessionInvalidate	Informational		
 Microsoft-Windows-SMBServer	1019	0	SrvFileInvalidate(GUID ResumeKey, HexInt32 Status, HexInt32 TranslatedStatus, HexInt32 TaskStatus, HexInt32 TranslatedTaskStatus)		Operational	SrvFileInvalidate	Informational		
 Microsoft-Windows-SMBServer	1020	0	SrvSlowFsOperation(UInt32 Command, GUID SessionGuid, HexInt64 SessionId, GUID ConnectionGuid, UInt16 UserNameLength, UnicodeString UserName, UInt16 ClientNameLength, UnicodeString ClientName, UInt16 ClientAddressLength, Binary ClientAddress, UInt16 ShareNameLength, UnicodeString ShareName, UInt16 FileNameLength, UnicodeString FileName, UInt64 DurationInMilliseconds, UInt64 ThresholdInMilliseconds)		Operational	SrvSlowFsOperation	Warning		
+Microsoft-Windows-SMBServer	1020	1	SrvSlowFsOperation_V1(UInt32 Command, GUID SessionGuid, HexInt64 SessionId, GUID ConnectionGuid, UInt16 UserNameLength, UnicodeString UserName, UInt16 ClientNameLength, UnicodeString ClientName, UInt16 ClientAddressLength, Binary ClientAddress, UInt16 ShareNameLength, UnicodeString ShareName, UInt16 FileNameLength, UnicodeString FileName, UInt64 DurationInMilliseconds, UInt64 ThresholdInMilliseconds, UInt32 CtlCode, UInt32 SubCode, UInt32 TunneledControl)		Operational	SrvSlowFsOperation	Warning		
 Microsoft-Windows-SMBServer	1021	0	SrvLmCompatibilityLevelNonDefault(UInt32 ConfiguredLmCompatibilityLevel, UInt32 DefaultLmCompatibilityLevel)		Operational	SrvLmCompatibilityLevelNonDefault	Informational		
 Microsoft-Windows-SMBServer	1022	0	SrvFileSharingFirewallRuleEnabled()		Operational	SrvFileSharingFirewallRuleEnabled	Informational		
 Microsoft-Windows-SMBServer	1023	0	SrvABESharesPresent()		Operational	SrvABESharesPresent	Informational		
@@ -107,9 +109,18 @@ Microsoft-Windows-SMBServer	1029	0	task_01029(UnicodeString CipherSuiteOrder)		O
 Microsoft-Windows-SMBServer	1030	0	task_01030(UInt16 ServerNameLength, UnicodeString ServerName, UInt16 ShareNameLength, UnicodeString ShareName, UInt16 FileNameLength, UnicodeString FileName, Boolean IsRead, HexInt32 Status)		Operational	task_0	Error		
 Microsoft-Windows-SMBServer	1031	0	task_01031(UInt32 Reason)		Operational	task_0	Warning		
 Microsoft-Windows-SMBServer	1032	0	task_01032(UInt32 Reason)		Operational	task_0	Error		
+Microsoft-Windows-SMBServer	1033	0	task_01033(UInt32 NotificationType, UInt16 InterfaceNameLength, UnicodeString InterfaceName)		Nsi	task_0	Informational		
+Microsoft-Windows-SMBServer	1034	0	task_01034(UInt32 FailureType, UInt32 InterfaceIndex, HexInt32 Error, UInt16 DeviceNameLength, UnicodeString DeviceName, UInt32 ExtraInformation)		Nsi	task_0	Error		
+Microsoft-Windows-SMBServer	1035	0	task_01035(UInt32 EndpointState, UInt32 InterfaceIndex, UInt16 TransportNameLength, UnicodeString TransportName)		Nsi	task_0	Informational		
+Microsoft-Windows-SMBServer	1036	0	task_01036(UInt32 InterfaceIndex, HexInt32 Error)		Nsi	task_0	Error		
+Microsoft-Windows-SMBServer	1037	0	task_01037(UInt32 FailureType, UInt32 InterfaceIndex, HexInt32 Error)		Nsi	task_0	Error		
+Microsoft-Windows-SMBServer	1038	0	task_01038(UInt32 FailureType, UInt16 DeviceNameLength, UnicodeString DeviceName, HexInt32 Error)		Nsi	task_0	Error		
+Microsoft-Windows-SMBServer	1039	0	task_01039(UInt32 NotificationType, UInt32 InterfaceIndex, UInt16 NdkOperationalState)		Nsi	task_0	Informational		
+Microsoft-Windows-SMBServer	1040	0	task_01040(UInt32 NotificationType, UInt32 InterfaceIndex)		Nsi	task_0	Informational		
 Microsoft-Windows-SMBServer	1800	0	SSClusterCaFailure(UInt16 ServerNameLength, UnicodeString ServerName, UInt16 ShareNameLength, UnicodeString ShareName)		Operational	SSClusterCaFailure	Error		
 Microsoft-Windows-SMBServer	1801	0	SSRkfCaFailure(UInt16 ServerNameLength, UnicodeString ServerName, UInt16 ShareNameLength, UnicodeString ShareName, UInt32 Status)		Operational	SSRkfCaFailure	Error		
 Microsoft-Windows-SMBServer	1802	0	SrvNetGetNextIdFailure(UInt32 Status)		Operational	SrvNetGetNextIdFailure	Error		
+Microsoft-Windows-SMBServer	1803	0	task_01803(UnicodeString DescriptorName)		Operational	task_0	Warning		
 Microsoft-Windows-SMBServer	2000	0	task_02000(UInt16 ReassembledEventID, UInt32 FragmentSize, Binary FragmentData)		keyword_40000000000	task_0	Informational		
 Microsoft-Windows-SMBServer	3000	0	task_03000(AnsiString ClientName)			task_0	Informational		
 Microsoft-Windows-SMBServer	40000	0	task_040000(UInt32 ConnectionType, UInt32 PeerAddressLength, Binary PeerAddress, UInt32 PacketSize, Binary PacketData)		keyword_40000000000	task_0	Informational		

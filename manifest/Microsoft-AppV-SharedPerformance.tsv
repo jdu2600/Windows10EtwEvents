@@ -1,0 +1,1197 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-AppV-SharedPerformance	31	1	Transportstreamrequestoperation_V1(UInt32 IntValue)			Transportstreamrequestoperation			
+Microsoft-AppV-SharedPerformance	104	1	Transportgetrequestoperation_V1(UInt32 IntValue)			Transportgetrequestoperation			
+Microsoft-AppV-SharedPerformance	1001	0	DeserializeManifestStart()	Start		DeserializeManifest			
+Microsoft-AppV-SharedPerformance	1002	0	DeserializeManifestStop()	Stop		DeserializeManifest			
+Microsoft-AppV-SharedPerformance	1005	0	DeserializePolicyStart()	Start		DeserializePolicy			
+Microsoft-AppV-SharedPerformance	1006	0	DeserializePolicyStop()	Stop		DeserializePolicy			
+Microsoft-AppV-SharedPerformance	1009	0	PublishEpStart()	Start		PublishEp			
+Microsoft-AppV-SharedPerformance	1010	0	PublishEpStop()	Stop		PublishEp			
+Microsoft-AppV-SharedPerformance	1012	0	UnpublishEpStart()	Start		UnpublishEp			
+Microsoft-AppV-SharedPerformance	1013	0	UnpublishEpStop()	Stop		UnpublishEp			
+Microsoft-AppV-SharedPerformance	1015	0	PublishPackageStart()	Start		PublishPackage			
+Microsoft-AppV-SharedPerformance	1016	0	PublishPackageStop()	Stop		PublishPackage			
+Microsoft-AppV-SharedPerformance	1019	0	UnpublishPackageStart()	Start		UnpublishPackage			
+Microsoft-AppV-SharedPerformance	1020	0	UnpublishPackageStop()	Stop		UnpublishPackage			
+Microsoft-AppV-SharedPerformance	1024	0	PackagingStart()	Start		Packaging			
+Microsoft-AppV-SharedPerformance	1025	0	PackagingStop()	Stop		Packaging			
+Microsoft-AppV-SharedPerformance	1028	0	Packaging_ManifestWriteStart()	Start		Packaging_ManifestWrite			
+Microsoft-AppV-SharedPerformance	1029	0	Packaging_ManifestWriteStop()	Stop		Packaging_ManifestWrite			
+Microsoft-AppV-SharedPerformance	1030	0	Packaging_ManifestWrite_ExtensionPointStart()	Start		Packaging_ManifestWrite_ExtensionPoint			
+Microsoft-AppV-SharedPerformance	1031	0	Packaging_ManifestWrite_ExtensionPointStop()	Stop		Packaging_ManifestWrite_ExtensionPoint			
+Microsoft-AppV-SharedPerformance	2001	1	CreatePackageMachinePolicyDocumentFromDefaultStart_V1()	Start		CreatePackageMachinePolicyDocumentFromDefault			
+Microsoft-AppV-SharedPerformance	2002	1	CreatePackageMachinePolicyDocumentFromDefaultStop_V1()	Stop		CreatePackageMachinePolicyDocumentFromDefault			
+Microsoft-AppV-SharedPerformance	2003	1	CreatePackageMachinePolicyDocumentFromXMLStart_V1()	Start		CreatePackageMachinePolicyDocumentFromXML			
+Microsoft-AppV-SharedPerformance	2004	1	CreatePackageMachinePolicyDocumentFromXMLStop_V1()	Stop		CreatePackageMachinePolicyDocumentFromXML			
+Microsoft-AppV-SharedPerformance	2005	1	CreatePackageMachinePolicyDocumentFromFileStart_V1()	Start		CreatePackageMachinePolicyDocumentFromFile			
+Microsoft-AppV-SharedPerformance	2006	1	CreatePackageMachinePolicyDocumentFromFileStop_V1()	Stop		CreatePackageMachinePolicyDocumentFromFile			
+Microsoft-AppV-SharedPerformance	2007	1	CreatePackageUserPolicyDocumentFromDefaultStart_V1()	Start		CreatePackageUserPolicyDocumentFromDefault			
+Microsoft-AppV-SharedPerformance	2008	1	CreatePackageUserPolicyDocumentFromDefaultStop_V1()	Stop		CreatePackageUserPolicyDocumentFromDefault			
+Microsoft-AppV-SharedPerformance	2009	1	CreatePackageUserPolicyDocumentFromXMLStart_V1()	Start		CreatePackageUserPolicyDocumentFromXML			
+Microsoft-AppV-SharedPerformance	2010	1	CreatePackageUserPolicyDocumentFromXMLStop_V1()	Stop		CreatePackageUserPolicyDocumentFromXML			
+Microsoft-AppV-SharedPerformance	2011	1	CreatePackageUserPolicyDocumentFromFileStart_V1()	Start		CreatePackageUserPolicyDocumentFromFile			
+Microsoft-AppV-SharedPerformance	2012	1	CreatePackageUserPolicyDocumentFromFileStop_V1()	Stop		CreatePackageUserPolicyDocumentFromFile			
+Microsoft-AppV-SharedPerformance	2021	1	CreatePackageGroupDescriptorDocumentFromXMLStart_V1()	Start		CreatePackageGroupDescriptorDocumentFromXML			
+Microsoft-AppV-SharedPerformance	2022	1	CreatePackageGroupDescriptorDocumentFromXMLStop_V1()	Stop		CreatePackageGroupDescriptorDocumentFromXML			
+Microsoft-AppV-SharedPerformance	2023	1	CreatePackageGroupDescriptorDocumentFromFileStart_V1()	Start		CreatePackageGroupDescriptorDocumentFromFile			
+Microsoft-AppV-SharedPerformance	2024	1	CreatePackageGroupDescriptorDocumentFromFileStop_V1()	Stop		CreatePackageGroupDescriptorDocumentFromFile			
+Microsoft-AppV-SharedPerformance	3001	1	CatalogStartupStart_V1()	Start		CatalogStartup			
+Microsoft-AppV-SharedPerformance	3002	1	CatalogStartupStop_V1()	Stop		CatalogStartup			
+Microsoft-AppV-SharedPerformance	3003	1	CreateMigrateMachineCatalogStart_V1()	Start		CreateMigrateMachineCatalog			
+Microsoft-AppV-SharedPerformance	3004	1	CreateMigrateMachineCatalogStop_V1()	Stop		CreateMigrateMachineCatalog			
+Microsoft-AppV-SharedPerformance	3005	1	GetMachineCatalogStart_V1()	Start		GetMachineCatalog			
+Microsoft-AppV-SharedPerformance	3006	1	GetMachineCatalogStop_V1()	Stop		GetMachineCatalog			
+Microsoft-AppV-SharedPerformance	3007	1	CatalogUserLogonStart_V1()	Start		CatalogUserLogon			
+Microsoft-AppV-SharedPerformance	3008	1	CatalogUserLogonStop_V1()	Stop		CatalogUserLogon			
+Microsoft-AppV-SharedPerformance	3009	1	CreateMigrateUserCatalogStart_V1()	Start		CreateMigrateUserCatalog			
+Microsoft-AppV-SharedPerformance	3010	1	CreateMigrateUserCatalogStop_V1()	Stop		CreateMigrateUserCatalog			
+Microsoft-AppV-SharedPerformance	3011	1	GetUserCatalogStart_V1()	Start		GetUserCatalog			
+Microsoft-AppV-SharedPerformance	3012	1	GetUserCatalogStop_V1()	Stop		GetUserCatalog			
+Microsoft-AppV-SharedPerformance	3013	1	ConfigurePackageStart_V1()	Start		ConfigurePackage			
+Microsoft-AppV-SharedPerformance	3014	1	ConfigurePackageStop_V1()	Stop		ConfigurePackage			
+Microsoft-AppV-SharedPerformance	3015	1	ConfigurePackageGetOldPackageDataStart_V1()	Start		ConfigurePackageGetOldPackageData			
+Microsoft-AppV-SharedPerformance	3016	1	ConfigurePackageGetOldPackageDataStop_V1()	Stop		ConfigurePackageGetOldPackageData			
+Microsoft-AppV-SharedPerformance	3017	1	ConfigurePackageFinalizeStart_V1()	Start		ConfigurePackageFinalize			
+Microsoft-AppV-SharedPerformance	3018	1	ConfigurePackageFinalizeStop_V1()	Stop		ConfigurePackageFinalize			
+Microsoft-AppV-SharedPerformance	3019	1	ConfigurePackageCompleteStart_V1()	Start		ConfigurePackageComplete			
+Microsoft-AppV-SharedPerformance	3020	1	ConfigurePackageCompleteStop_V1()	Stop		ConfigurePackageComplete			
+Microsoft-AppV-SharedPerformance	3021	1	PublishPackage_111Start_V1()	Start		PublishPackage_111			
+Microsoft-AppV-SharedPerformance	3022	1	PublishPackage_111Stop_V1()	Stop		PublishPackage_111			
+Microsoft-AppV-SharedPerformance	3023	1	PublishPackageGetOldPackageDataStart_V1()	Start		PublishPackageGetOldPackageData			
+Microsoft-AppV-SharedPerformance	3024	1	PublishPackageGetOldPackageDataStop_V1()	Stop		PublishPackageGetOldPackageData			
+Microsoft-AppV-SharedPerformance	3025	1	PublishPackageFinalizeStart_V1()	Start		PublishPackageFinalize			
+Microsoft-AppV-SharedPerformance	3026	1	PublishPackageFinalizeStop_V1()	Stop		PublishPackageFinalize			
+Microsoft-AppV-SharedPerformance	3027	1	PublishPackageUnpublishOldVersionStart_V1()	Start		PublishPackageUnpublishOldVersion			
+Microsoft-AppV-SharedPerformance	3028	1	PublishPackageUnpublishOldVersionStop_V1()	Stop		PublishPackageUnpublishOldVersion			
+Microsoft-AppV-SharedPerformance	3029	1	PublishPackageCompleteStart_V1()	Start		PublishPackageComplete			
+Microsoft-AppV-SharedPerformance	3030	1	PublishPackageCompleteStop_V1()	Stop		PublishPackageComplete			
+Microsoft-AppV-SharedPerformance	3031	1	ConfigurePackageGroupStart_V1()	Start		ConfigurePackageGroup			
+Microsoft-AppV-SharedPerformance	3032	1	ConfigurePackageGroupStop_V1()	Stop		ConfigurePackageGroup			
+Microsoft-AppV-SharedPerformance	3033	1	ConfigurePackageGroupGetOldGroupDataStart_V1()	Start		ConfigurePackageGroupGetOldGroupData			
+Microsoft-AppV-SharedPerformance	3034	1	ConfigurePackageGroupGetOldGroupDataStop_V1()	Stop		ConfigurePackageGroupGetOldGroupData			
+Microsoft-AppV-SharedPerformance	3035	1	ConfigurePackageGroupFinalizeStart_V1()	Start		ConfigurePackageGroupFinalize			
+Microsoft-AppV-SharedPerformance	3036	1	ConfigurePackageGroupFinalizeStop_V1()	Stop		ConfigurePackageGroupFinalize			
+Microsoft-AppV-SharedPerformance	3037	1	ConfigurePackageGroupCompleteStart_V1()	Start		ConfigurePackageGroupComplete			
+Microsoft-AppV-SharedPerformance	3038	1	ConfigurePackageGroupCompleteStop_V1()	Stop		ConfigurePackageGroupComplete			
+Microsoft-AppV-SharedPerformance	3039	1	PublishPackageGroupStart_V1()	Start		PublishPackageGroup			
+Microsoft-AppV-SharedPerformance	3040	1	PublishPackageGroupStop_V1()	Stop		PublishPackageGroup			
+Microsoft-AppV-SharedPerformance	3041	1	PublishPackageGroupGetOldGroupDataStart_V1()	Start		PublishPackageGroupGetOldGroupData			
+Microsoft-AppV-SharedPerformance	3042	1	PublishPackageGroupGetOldGroupDataStop_V1()	Stop		PublishPackageGroupGetOldGroupData			
+Microsoft-AppV-SharedPerformance	3043	1	PublishPackageGroupFinalizeStart_V1()	Start		PublishPackageGroupFinalize			
+Microsoft-AppV-SharedPerformance	3044	1	PublishPackageGroupFinalizeStop_V1()	Stop		PublishPackageGroupFinalize			
+Microsoft-AppV-SharedPerformance	3045	1	PublishPackageGroupUnpublishOldVersionStart_V1()	Start		PublishPackageGroupUnpublishOldVersion			
+Microsoft-AppV-SharedPerformance	3046	1	PublishPackageGroupUnpublishOldVersionStop_V1()	Stop		PublishPackageGroupUnpublishOldVersion			
+Microsoft-AppV-SharedPerformance	3047	1	PublishPackageGroupCompleteStart_V1()	Start		PublishPackageGroupComplete			
+Microsoft-AppV-SharedPerformance	3048	1	PublishPackageGroupCompleteStop_V1()	Stop		PublishPackageGroupComplete			
+Microsoft-AppV-SharedPerformance	3049	1	PublishFromServerStart_V1()	Start		PublishFromServer			
+Microsoft-AppV-SharedPerformance	3050	1	PublishFromServerStop_V1()	Stop		PublishFromServer			
+Microsoft-AppV-SharedPerformance	4000	0	Add_AppvPackageStart(UnicodeString str)	Start		Add_AppvPackage			
+Microsoft-AppV-SharedPerformance	4001	0	Add_AppvPackageStop(UnicodeString str)	Stop		Add_AppvPackage			
+Microsoft-AppV-SharedPerformance	4002	0	Remove_AppvPackageStart(GUID Guid)	Start		Remove_AppvPackage			
+Microsoft-AppV-SharedPerformance	4003	0	Remove_AppvPackageStop(GUID Guid)	Stop		Remove_AppvPackage			
+Microsoft-AppV-SharedPerformance	4004	0	Set_AppvPackageStart(GUID Guid)	Start		Set_AppvPackage			
+Microsoft-AppV-SharedPerformance	4005	0	Set_AppvPackageStop(GUID Guid)	Stop		Set_AppvPackage			
+Microsoft-AppV-SharedPerformance	4006	0	Publish_AppvPackageStart(GUID Guid)	Start		Publish_AppvPackage			
+Microsoft-AppV-SharedPerformance	4007	0	Publish_AppvPackageStop(GUID Guid)	Stop		Publish_AppvPackage			
+Microsoft-AppV-SharedPerformance	4008	0	Unpublish_AppvPackageStart(GUID Guid)	Start		Unpublish_AppvPackage			
+Microsoft-AppV-SharedPerformance	4009	0	Unpublish_AppvPackageStop(GUID Guid)	Stop		Unpublish_AppvPackage			
+Microsoft-AppV-SharedPerformance	4010	0	Get_AppvPackageStart(UnicodeString str)	Start		Get_AppvPackage			
+Microsoft-AppV-SharedPerformance	4011	0	Get_AppvPackageStop(UnicodeString str)	Stop		Get_AppvPackage			
+Microsoft-AppV-SharedPerformance	4012	0	Mount_AppvPackageStart(GUID Guid)	Start		Mount_AppvPackage			
+Microsoft-AppV-SharedPerformance	4013	0	Mount_AppvPackageStop(GUID Guid)	Stop		Mount_AppvPackage			
+Microsoft-AppV-SharedPerformance	4014	0	Repair_AppvPackageStart(GUID Guid)	Start		Repair_AppvPackage			
+Microsoft-AppV-SharedPerformance	4015	0	Repair_AppvPackageStop(GUID Guid)	Stop		Repair_AppvPackage			
+Microsoft-AppV-SharedPerformance	4016	0	Stop_AppvPackageStart(GUID Guid)	Start		Stop_AppvPackage			
+Microsoft-AppV-SharedPerformance	4017	0	Stop_AppvPackageStop(GUID Guid)	Stop		Stop_AppvPackage			
+Microsoft-AppV-SharedPerformance	4018	0	CancelMount_AppvPackageStart(GUID Guid)	Start		CancelMount_AppvPackage			
+Microsoft-AppV-SharedPerformance	4019	0	CancelMount_AppvPackageStop(GUID Guid)	Stop		CancelMount_AppvPackage			
+Microsoft-AppV-SharedPerformance	4020	0	Get_AppvPublishingServerStart()	Start		Get_AppvPublishingServer			
+Microsoft-AppV-SharedPerformance	4021	0	Get_AppvPublishingServerStop()	Stop		Get_AppvPublishingServer			
+Microsoft-AppV-SharedPerformance	4022	0	Add_AppvPublishingServerStart()	Start		Add_AppvPublishingServer			
+Microsoft-AppV-SharedPerformance	4023	0	Add_AppvPublishingServerStop()	Stop		Add_AppvPublishingServer			
+Microsoft-AppV-SharedPerformance	4024	0	Set_AppvPublishingServerStart()	Start		Set_AppvPublishingServer			
+Microsoft-AppV-SharedPerformance	4025	0	Set_AppvPublishingServerStop()	Stop		Set_AppvPublishingServer			
+Microsoft-AppV-SharedPerformance	4026	0	Remove_AppvPublishingServerStart()	Start		Remove_AppvPublishingServer			
+Microsoft-AppV-SharedPerformance	4027	0	Remove_AppvPublishingServerStop()	Stop		Remove_AppvPublishingServer			
+Microsoft-AppV-SharedPerformance	4028	0	Refresh_AppvPublishingServerStart()	Start		Refresh_AppvPublishingServer			
+Microsoft-AppV-SharedPerformance	4029	0	Refresh_AppvPublishingServerStop()	Stop		Refresh_AppvPublishingServer			
+Microsoft-AppV-SharedPerformance	4030	0	Add_AppvClientConnectionGroupStart()	Start		Add_AppvClientConnectionGroup			
+Microsoft-AppV-SharedPerformance	4031	0	Add_AppvClientConnectionGroupStop()	Stop		Add_AppvClientConnectionGroup			
+Microsoft-AppV-SharedPerformance	4032	0	Disable_AppvClientConnectionGroupStart()	Start		Disable_AppvClientConnectionGroup			
+Microsoft-AppV-SharedPerformance	4033	0	Disable_AppvClientConnectionGroupStop()	Stop		Disable_AppvClientConnectionGroup			
+Microsoft-AppV-SharedPerformance	4034	0	Enable_AppvClientConnectionGroupStart()	Start		Enable_AppvClientConnectionGroup			
+Microsoft-AppV-SharedPerformance	4035	0	Enable_AppvClientConnectionGroupStop()	Stop		Enable_AppvClientConnectionGroup			
+Microsoft-AppV-SharedPerformance	4036	0	Get_AppvClientConnectionGroupStart()	Start		Get_AppvClientConnectionGroup			
+Microsoft-AppV-SharedPerformance	4037	0	Get_AppvClientConnectionGroupStop()	Stop		Get_AppvClientConnectionGroup			
+Microsoft-AppV-SharedPerformance	4038	0	Mount_AppvClientConnectionGroupStart()	Start		Mount_AppvClientConnectionGroup			
+Microsoft-AppV-SharedPerformance	4039	0	Mount_AppvClientConnectionGroupStop()	Stop		Mount_AppvClientConnectionGroup			
+Microsoft-AppV-SharedPerformance	4040	0	Remove_AppvClientConnectionGroupStart()	Start		Remove_AppvClientConnectionGroup			
+Microsoft-AppV-SharedPerformance	4041	0	Remove_AppvClientConnectionGroupStop()	Stop		Remove_AppvClientConnectionGroup			
+Microsoft-AppV-SharedPerformance	4042	0	Repair_AppvClientConnectionGroupStart()	Start		Repair_AppvClientConnectionGroup			
+Microsoft-AppV-SharedPerformance	4043	0	Repair_AppvClientConnectionGroupStop()	Stop		Repair_AppvClientConnectionGroup			
+Microsoft-AppV-SharedPerformance	4044	0	Stop_AppvClientConnectionGroupStart()	Start		Stop_AppvClientConnectionGroup			
+Microsoft-AppV-SharedPerformance	4045	0	Stop_AppvClientConnectionGroupStop()	Stop		Stop_AppvClientConnectionGroup			
+Microsoft-AppV-SharedPerformance	4046	0	Get_AppvClientApplicationStart()	Start		Get_AppvClientApplication			
+Microsoft-AppV-SharedPerformance	4047	0	Get_AppvClientApplicationStop()	Stop		Get_AppvClientApplication			
+Microsoft-AppV-SharedPerformance	4048	0	Start_AppvVirtualProcessStart(UnicodeString str)	Start		Start_AppvVirtualProcess			
+Microsoft-AppV-SharedPerformance	4049	0	Start_AppvVirtualProcessStop(UnicodeString str)	Stop		Start_AppvVirtualProcess			
+Microsoft-AppV-SharedPerformance	4050	0	Get_AppvClientConfigurationStart()	Start		Get_AppvClientConfiguration			
+Microsoft-AppV-SharedPerformance	4051	0	Get_AppvClientConfigurationStop()	Stop		Get_AppvClientConfiguration			
+Microsoft-AppV-SharedPerformance	4052	0	Set_AppvClientConfigurationStart()	Start		Set_AppvClientConfiguration			
+Microsoft-AppV-SharedPerformance	4053	0	Set_AppvClientConfigurationStop()	Stop		Set_AppvClientConfiguration			
+Microsoft-AppV-SharedPerformance	4054	0	Send_AppvClientReportStart()	Start		Send_AppvClientReport			
+Microsoft-AppV-SharedPerformance	4055	0	Send_AppvClientReportStop()	Stop		Send_AppvClientReport			
+Microsoft-AppV-SharedPerformance	4056	0	Set_AppvClientModeStart()	Start		Set_AppvClientMode			
+Microsoft-AppV-SharedPerformance	4057	0	Set_AppvClientModeStop()	Stop		Set_AppvClientMode			
+Microsoft-AppV-SharedPerformance	4058	0	Get_AppvClientModeStart()	Start		Get_AppvClientMode			
+Microsoft-AppV-SharedPerformance	4059	0	Get_AppvClientModeStop()	Stop		Get_AppvClientMode			
+Microsoft-AppV-SharedPerformance	4060	0	Enable_AppVStart()	Start		Enable_AppV			
+Microsoft-AppV-SharedPerformance	4061	0	Enable_AppVStop()	Stop		Enable_AppV			
+Microsoft-AppV-SharedPerformance	4062	0	Disable_AppVStart()	Start		Disable_AppV			
+Microsoft-AppV-SharedPerformance	4063	0	Disable_AppVStop()	Stop		Disable_AppV			
+Microsoft-AppV-SharedPerformance	5001	1	ServiceStartupStart_V1()	Start		ServiceStartup			
+Microsoft-AppV-SharedPerformance	5002	1	ServiceStartupStop_V1()	Stop		ServiceStartup			
+Microsoft-AppV-SharedPerformance	5003	1	ControllerStartupStart_V1()	Start		ControllerStartup			
+Microsoft-AppV-SharedPerformance	5004	1	ControllerStartupStop_V1()	Stop		ControllerStartup			
+Microsoft-AppV-SharedPerformance	5005	1	ControllerRunStart_V1()	Start		ControllerRun			
+Microsoft-AppV-SharedPerformance	5006	1	ControllerRunStop_V1()	Stop		ControllerRun			
+Microsoft-AppV-SharedPerformance	5007	1	ServiceShutdownStart_V1()	Start		ServiceShutdown			
+Microsoft-AppV-SharedPerformance	5008	1	ServiceShutdownStop_V1()	Stop		ServiceShutdown			
+Microsoft-AppV-SharedPerformance	5009	1	ControllerStopStart_V1()	Start		ControllerStop			
+Microsoft-AppV-SharedPerformance	5010	1	ControllerStop_V1()	Stop		ControllerStop			
+Microsoft-AppV-SharedPerformance	5011	1	ControllerShutdownStart_V1()	Start		ControllerShutdown			
+Microsoft-AppV-SharedPerformance	5012	1	ControllerShutdownStop_V1()	Stop		ControllerShutdown			
+Microsoft-AppV-SharedPerformance	5013	1	ControllerUserLogonStart_V1(UInt32 SessionID)	Start		ControllerUserLogon			
+Microsoft-AppV-SharedPerformance	5014	1	ControllerUserLogonStop_V1(UInt32 SessionID)	Stop		ControllerUserLogon			
+Microsoft-AppV-SharedPerformance	5015	1	ControllerUserLogoffStart_V1(UInt32 SessionID)	Start		ControllerUserLogoff			
+Microsoft-AppV-SharedPerformance	5016	1	ControllerUserLogoffStop_V1(UInt32 SessionID)	Stop		ControllerUserLogoff			
+Microsoft-AppV-SharedPerformance	5017	1	QueueClientEventStart_V1(UInt32 ClientEvent)	Start		QueueClientEvent			
+Microsoft-AppV-SharedPerformance	5018	1	QueueClientEventStop_V1(UInt32 ClientEvent)	Stop		QueueClientEvent			
+Microsoft-AppV-SharedPerformance	6000	0	GetPackagesStart()	Start		GetPackages			
+Microsoft-AppV-SharedPerformance	6001	0	GetPackagesStop()	Stop		GetPackages			
+Microsoft-AppV-SharedPerformance	6002	0	GetPackagesStart6002(UnicodeString str1, GUID guid1, GUID guid2)	Start		GetPackages			
+Microsoft-AppV-SharedPerformance	6003	0	GetPackagesStop6003(UnicodeString str1, GUID guid1, GUID guid2)	Stop		GetPackages			
+Microsoft-AppV-SharedPerformance	6004	0	GetPackagesStart6004(UnicodeString str)	Start		GetPackages			
+Microsoft-AppV-SharedPerformance	6005	0	GetPackagesStop6005(UnicodeString str)	Stop		GetPackages			
+Microsoft-AppV-SharedPerformance	6006	0	GetConnectionGroupsStart()	Start		GetConnectionGroups			
+Microsoft-AppV-SharedPerformance	6007	0	GetConnectionGroupsStop()	Stop		GetConnectionGroups			
+Microsoft-AppV-SharedPerformance	6008	0	GetConnectionGroupsStart6008(UnicodeString str1, GUID guid1, GUID guid2)	Start		GetConnectionGroups			
+Microsoft-AppV-SharedPerformance	6009	0	GetConnectionGroupsStop6009(UnicodeString str1, GUID guid1, GUID guid2)	Stop		GetConnectionGroups			
+Microsoft-AppV-SharedPerformance	6010	0	GetConnectionGroupsStart6010(UnicodeString str)	Start		GetConnectionGroups			
+Microsoft-AppV-SharedPerformance	6011	0	GetConnectionGroupsStop6011(UnicodeString str)	Stop		GetConnectionGroups			
+Microsoft-AppV-SharedPerformance	6012	0	LoadStart()	Start		Load			
+Microsoft-AppV-SharedPerformance	6013	0	LoadStop()	Stop		Load			
+Microsoft-AppV-SharedPerformance	6014	0	LoadStart6014(UnicodeString str)	Start		Load			
+Microsoft-AppV-SharedPerformance	6015	0	LoadStop6015(UnicodeString str)	Stop		Load			
+Microsoft-AppV-SharedPerformance	6016	0	LoadStart6016(UnicodeString str)	Start		Load			
+Microsoft-AppV-SharedPerformance	6017	0	LoadStop6017(UnicodeString str)	Stop		Load			
+Microsoft-AppV-SharedPerformance	6018	0	CancelLoadStart()	Start		CancelLoad			
+Microsoft-AppV-SharedPerformance	6019	0	CancelLoadStop()	Stop		CancelLoad			
+Microsoft-AppV-SharedPerformance	6020	0	CancelLoadStart6020(UnicodeString str)	Start		CancelLoad			
+Microsoft-AppV-SharedPerformance	6021	0	CancelLoadStop6021(UnicodeString str)	Stop		CancelLoad			
+Microsoft-AppV-SharedPerformance	6022	0	CancelLoadStart6022(UnicodeString str)	Start		CancelLoad			
+Microsoft-AppV-SharedPerformance	6023	0	CancelLoadStop6023(UnicodeString str)	Stop		CancelLoad			
+Microsoft-AppV-SharedPerformance	6024	0	PublishingRefreshStart()	Start		PublishingRefresh			
+Microsoft-AppV-SharedPerformance	6025	0	PublishingRefreshStop()	Stop		PublishingRefresh			
+Microsoft-AppV-SharedPerformance	6026	0	PublishingRefreshStart6026(UnicodeString str)	Start		PublishingRefresh			
+Microsoft-AppV-SharedPerformance	6027	0	PublishingRefreshStop6027(UnicodeString str)	Stop		PublishingRefresh			
+Microsoft-AppV-SharedPerformance	6028	0	ReloadDataStart()	Start		ReloadData			
+Microsoft-AppV-SharedPerformance	6029	0	ReloadDataStop()	Stop		ReloadData			
+Microsoft-AppV-SharedPerformance	6030	0	GetConnectionGroups_407Start()	Start		GetConnectionGroups_407			
+Microsoft-AppV-SharedPerformance	6031	0	GetConnectionGroups_407Stop()	Stop		GetConnectionGroups_407			
+Microsoft-AppV-SharedPerformance	6032	0	GetConnectionGroups_407Start6032(UnicodeString str)	Start		GetConnectionGroups_407			
+Microsoft-AppV-SharedPerformance	6033	0	GetConnectionGroups_407Stop6033(UnicodeString str)	Stop		GetConnectionGroups_407			
+Microsoft-AppV-SharedPerformance	6034	0	GetConnectionGroups_407Start6034(UnicodeString str)	Start		GetConnectionGroups_407			
+Microsoft-AppV-SharedPerformance	6035	0	GetConnectionGroups_407Stop6035(UnicodeString str)	Stop		GetConnectionGroups_407			
+Microsoft-AppV-SharedPerformance	6036	0	LoadAllPackagesStart()	Start		LoadAllPackages			
+Microsoft-AppV-SharedPerformance	6037	0	LoadAllPackagesStop()	Stop		LoadAllPackages			
+Microsoft-AppV-SharedPerformance	6038	0	ToggleOnlineModeStart()	Start		ToggleOnlineMode			
+Microsoft-AppV-SharedPerformance	6039	0	ToggleOnlineModeStop()	Stop		ToggleOnlineMode			
+Microsoft-AppV-SharedPerformance	6040	0	ToggleOnlineModeStart6040(UnicodeString str)	Start		ToggleOnlineMode			
+Microsoft-AppV-SharedPerformance	6041	0	ToggleOnlineModeStop6041(UnicodeString str)	Stop		ToggleOnlineMode			
+Microsoft-AppV-SharedPerformance	6042	0	GetPublishingServersStart()	Start		GetPublishingServers			
+Microsoft-AppV-SharedPerformance	6043	0	GetPublishingServersStop()	Stop		GetPublishingServers			
+Microsoft-AppV-SharedPerformance	6044	0	GetPublishingServersStart6044(UnicodeString str)	Start		GetPublishingServers			
+Microsoft-AppV-SharedPerformance	6045	0	GetPublishingServersStop6045(UnicodeString str)	Stop		GetPublishingServers			
+Microsoft-AppV-SharedPerformance	6046	0	SetPackageIsInConnectionGroupStart()	Start		SetPackageIsInConnectionGroup			
+Microsoft-AppV-SharedPerformance	6047	0	SetPackageIsInConnectionGroupStop()	Stop		SetPackageIsInConnectionGroup			
+Microsoft-AppV-SharedPerformance	6048	0	GetConfigurationStart()	Start		GetConfiguration			
+Microsoft-AppV-SharedPerformance	6049	0	GetConfigurationStop()	Stop		GetConfiguration			
+Microsoft-AppV-SharedPerformance	6050	0	GetConfigurationStart6050(UnicodeString str)	Start		GetConfiguration			
+Microsoft-AppV-SharedPerformance	6051	0	GetConfigurationStop6051(UnicodeString str)	Stop		GetConfiguration			
+Microsoft-AppV-SharedPerformance	6052	0	SetConfigurationStart()	Start		SetConfiguration			
+Microsoft-AppV-SharedPerformance	6053	0	SetConfigurationStop()	Stop		SetConfiguration			
+Microsoft-AppV-SharedPerformance	7001	1	ConfigurePackageFinalize_509Start_V1()	Start		ConfigurePackageFinalize_509			
+Microsoft-AppV-SharedPerformance	7002	1	ConfigurePackageFinalize_509Stop_V1()	Stop		ConfigurePackageFinalize_509			
+Microsoft-AppV-SharedPerformance	7003	1	PublishPackageFinalize_510Start_V1()	Start		PublishPackageFinalize_510			
+Microsoft-AppV-SharedPerformance	7004	1	PublishPackageFinalize_510Stop_V1()	Stop		PublishPackageFinalize_510			
+Microsoft-AppV-SharedPerformance	7005	1	VirtualEnvironmentCreatedFinalizeStart_V1()	Start		VirtualEnvironmentCreatedFinalize			
+Microsoft-AppV-SharedPerformance	7006	1	VirtualEnvironmentCreatedFinalizeStop_V1()	Stop		VirtualEnvironmentCreatedFinalize			
+Microsoft-AppV-SharedPerformance	7007	1	VirtualProcessCreatedFinalizeStart_V1()	Start		VirtualProcessCreatedFinalize			
+Microsoft-AppV-SharedPerformance	7008	1	VirtualProcessCreatedFinalizeStop_V1()	Stop		VirtualProcessCreatedFinalize			
+Microsoft-AppV-SharedPerformance	7009	1	VirtualProcessTerminatedStart_V1()	Start		VirtualProcessTerminated			
+Microsoft-AppV-SharedPerformance	7010	1	VirtualProcessTerminatedStop_V1()	Stop		VirtualProcessTerminated			
+Microsoft-AppV-SharedPerformance	7011	1	VirtualEnvironmentTerminatedStart_V1()	Start		VirtualEnvironmentTerminated			
+Microsoft-AppV-SharedPerformance	7012	1	VirtualEnvironmentTerminatedStop_V1()	Stop		VirtualEnvironmentTerminated			
+Microsoft-AppV-SharedPerformance	7013	1	UnpublishPackage_507Start_V1()	Start		UnpublishPackage_507			
+Microsoft-AppV-SharedPerformance	7014	1	UnpublishPackage_507Stop_V1()	Stop		UnpublishPackage_507			
+Microsoft-AppV-SharedPerformance	7015	1	RemovePackageStart_V1()	Start		RemovePackage			
+Microsoft-AppV-SharedPerformance	7016	1	RemovePackageStop_V1()	Stop		RemovePackage			
+Microsoft-AppV-SharedPerformance	8001	1	NotifyFtaStart_V1()	Start		NotifyFta			
+Microsoft-AppV-SharedPerformance	8002	1	NotifyFtaStop_V1()	Stop		NotifyFta			
+Microsoft-AppV-SharedPerformance	8003	1	NotifyShortcutAddedStart_V1()	Start		NotifyShortcutAdded			
+Microsoft-AppV-SharedPerformance	8004	1	NotifyShortcutAddedStop_V1()	Stop		NotifyShortcutAdded			
+Microsoft-AppV-SharedPerformance	8005	1	NotifyShortcutRemovedStart_V1()	Start		NotifyShortcutRemoved			
+Microsoft-AppV-SharedPerformance	8006	1	NotifyShortcutRemovedStop_V1()	Stop		NotifyShortcutRemoved			
+Microsoft-AppV-SharedPerformance	8007	1	NotifyStopProxyStart_V1()	Start		NotifyStopProxy			
+Microsoft-AppV-SharedPerformance	8008	1	NotifyStopProxyStop_V1()	Stop		NotifyStopProxy			
+Microsoft-AppV-SharedPerformance	8009	1	NotifyCancelAllPendingStart_V1()	Start		NotifyCancelAllPending			
+Microsoft-AppV-SharedPerformance	8010	1	NotifyCancelAllPendingStop_V1()	Stop		NotifyCancelAllPending			
+Microsoft-AppV-SharedPerformance	8011	1	NotifyStartProxyStart_V1()	Start		NotifyStartProxy			
+Microsoft-AppV-SharedPerformance	8012	1	NotifyStartProxyStop_V1()	Stop		NotifyStartProxy			
+Microsoft-AppV-SharedPerformance	8013	1	NotifyShortcutUnpinStart_V1()	Start		NotifyShortcutUnpin			
+Microsoft-AppV-SharedPerformance	8014	1	NotifyShortcutUnpinStop_V1()	Stop		NotifyShortcutUnpin			
+Microsoft-AppV-SharedPerformance	8020	1	InitializeStart_V1()	Start		Initialize			
+Microsoft-AppV-SharedPerformance	8021	1	InitializeStop_V1()	Stop		Initialize			
+Microsoft-AppV-SharedPerformance	8022	1	InitializeISVStart_V1()	Start		InitializeISV			
+Microsoft-AppV-SharedPerformance	8023	1	InitializeISVStop_V1()	Stop		InitializeISV			
+Microsoft-AppV-SharedPerformance	8024	1	DeinitializeStart_V1()	Start		Deinitialize			
+Microsoft-AppV-SharedPerformance	8025	1	DeinitializeStop_V1()	Stop		Deinitialize			
+Microsoft-AppV-SharedPerformance	8030	1	StopStart_V1()	Start		Stop			
+Microsoft-AppV-SharedPerformance	8031	1	Stop_V1()	Stop		Stop			
+Microsoft-AppV-SharedPerformance	8032	1	UserLogonStart_V1(UnicodeString ustring)	Start		UserLogon			
+Microsoft-AppV-SharedPerformance	8033	1	UserLogonStop_V1(UnicodeString ustring)	Stop		UserLogon			
+Microsoft-AppV-SharedPerformance	8034	1	UserLogoffStart_V1(UnicodeString ustring)	Start		UserLogoff			
+Microsoft-AppV-SharedPerformance	8035	1	UserLogoffStop_V1(UnicodeString ustring)	Stop		UserLogoff			
+Microsoft-AppV-SharedPerformance	8036	1	HandleActivityStart_V1(UInt64 uint64, UInt32 uint32)	Start		HandleActivity			
+Microsoft-AppV-SharedPerformance	8037	1	HandleActivityStop_V1(UInt64 uint64, UInt32 uint32)	Stop		HandleActivity			
+Microsoft-AppV-SharedPerformance	8040	1	PublishPackage_1515Start_V1(UInt64 ActivityId)	Start		PublishPackage_1515			
+Microsoft-AppV-SharedPerformance	8041	1	PublishPackage_1515Stop_V1(UInt64 ActivityId)	Stop		PublishPackage_1515			
+Microsoft-AppV-SharedPerformance	8042	1	PublishPackageFinalize_1516Start_V1(UInt64 ActivityId)	Start		PublishPackageFinalize_1516			
+Microsoft-AppV-SharedPerformance	8043	1	PublishPackageFinalize_1516Stop_V1(UInt64 ActivityId)	Stop		PublishPackageFinalize_1516			
+Microsoft-AppV-SharedPerformance	8044	1	PublishPackageComplete_1517Start_V1(UInt64 ActivityId)	Start		PublishPackageComplete_1517			
+Microsoft-AppV-SharedPerformance	8045	1	PublishPackageComplete_1517Stop_V1(UInt64 ActivityId)	Stop		PublishPackageComplete_1517			
+Microsoft-AppV-SharedPerformance	8046	1	PublishPackageUndoStart_V1(UInt64 ActivityId)	Start		PublishPackageUndo			
+Microsoft-AppV-SharedPerformance	8047	1	PublishPackageUndoStop_V1(UInt64 ActivityId)	Stop		PublishPackageUndo			
+Microsoft-AppV-SharedPerformance	8048	1	UnpublishPackage_1519Start_V1(UInt64 ActivityId)	Start		UnpublishPackage_1519			
+Microsoft-AppV-SharedPerformance	8049	1	UnpublishPackage_1519Stop_V1(UInt64 ActivityId)	Stop		UnpublishPackage_1519			
+Microsoft-AppV-SharedPerformance	8050	1	ReintegratePackageStart_V1(UInt64 ActivityId)	Start		ReintegratePackage			
+Microsoft-AppV-SharedPerformance	8051	1	ReintegratePackageStop_V1(UInt64 ActivityId)	Stop		ReintegratePackage			
+Microsoft-AppV-SharedPerformance	8052	1	ReintegrateVirtualApplicationsStart_V1(UInt64 ActivityId)	Start		ReintegrateVirtualApplications			
+Microsoft-AppV-SharedPerformance	8053	1	ReintegrateVirtualApplicationsStop_V1(UInt64 ActivityId)	Stop		ReintegrateVirtualApplications			
+Microsoft-AppV-SharedPerformance	8060	1	TransactionExecuteStart_V1()	Start		TransactionExecute			
+Microsoft-AppV-SharedPerformance	8061	1	TransactionExecuteStop_V1()	Stop		TransactionExecute			
+Microsoft-AppV-SharedPerformance	8062	1	TransactionExecute_1523Start_V1()	Start		TransactionExecute_1523			
+Microsoft-AppV-SharedPerformance	8063	1	TransactionExecute_1523Stop_V1()	Stop		TransactionExecute_1523			
+Microsoft-AppV-SharedPerformance	8064	1	TransactionCompleteStart_V1()	Start		TransactionComplete			
+Microsoft-AppV-SharedPerformance	8065	1	TransactionCompleteStop_V1()	Stop		TransactionComplete			
+Microsoft-AppV-SharedPerformance	8066	1	TransactionUndoStart_V1()	Start		TransactionUndo			
+Microsoft-AppV-SharedPerformance	8067	1	TransactionUndoStop_V1()	Stop		TransactionUndo			
+Microsoft-AppV-SharedPerformance	8068	1	TransactionBeginCancelStart_V1()	Start		TransactionBeginCancel			
+Microsoft-AppV-SharedPerformance	8069	1	TransactionBeginCancelStop_V1()	Stop		TransactionBeginCancel			
+Microsoft-AppV-SharedPerformance	8070	1	TransactionEndCancelStart_V1()	Start		TransactionEndCancel			
+Microsoft-AppV-SharedPerformance	8071	1	TransactionEndCancelStop_V1()	Stop		TransactionEndCancel			
+Microsoft-AppV-SharedPerformance	8080	1	DeserializeExtensionsStart_V1()	Start		DeserializeExtensions			
+Microsoft-AppV-SharedPerformance	8081	1	DeserializeExtensionsStop_V1()	Stop		DeserializeExtensions			
+Microsoft-AppV-SharedPerformance	8082	1	DeserializeExtensionsFromManifestStart_V1()	Start		DeserializeExtensionsFromManifest			
+Microsoft-AppV-SharedPerformance	8083	1	DeserializeExtensionsFromManifestStop_V1()	Stop		DeserializeExtensionsFromManifest			
+Microsoft-AppV-SharedPerformance	8084	1	DeserializeExtensionsFromDepConfigStart_V1()	Start		DeserializeExtensionsFromDepConfig			
+Microsoft-AppV-SharedPerformance	8085	1	DeserializeExtensionsFromDepConfigStop_V1()	Stop		DeserializeExtensionsFromDepConfig			
+Microsoft-AppV-SharedPerformance	8086	1	DeserializeExtensionsFromUserConfigStart_V1()	Start		DeserializeExtensionsFromUserConfig			
+Microsoft-AppV-SharedPerformance	8087	1	DeserializeExtensionsFromUserConfigStop_V1()	Stop		DeserializeExtensionsFromUserConfig			
+Microsoft-AppV-SharedPerformance	8088	1	DeserializeExtensionsApplyPoliciesStart_V1()	Start		DeserializeExtensionsApplyPolicies			
+Microsoft-AppV-SharedPerformance	8089	1	DeserializeExtensionsApplyPoliciesStop_V1()	Stop		DeserializeExtensionsApplyPolicies			
+Microsoft-AppV-SharedPerformance	10001	1	IsvStartupStart_V1()	Start		IsvStartup			
+Microsoft-AppV-SharedPerformance	10002	1	IsvStartupStop_V1()	Stop		IsvStartup			
+Microsoft-AppV-SharedPerformance	10003	1	ControllerStartup_603Start_V1()	Start		ControllerStartup_603			
+Microsoft-AppV-SharedPerformance	10004	1	ControllerStartup_603Stop_V1()	Stop		ControllerStartup_603			
+Microsoft-AppV-SharedPerformance	10005	1	ControllerRun_604Start_V1()	Start		ControllerRun_604			
+Microsoft-AppV-SharedPerformance	10006	1	ControllerRun_604Stop_V1()	Stop		ControllerRun_604			
+Microsoft-AppV-SharedPerformance	10007	1	ControllerUserLogon_605Start_V1()	Start		ControllerUserLogon_605			
+Microsoft-AppV-SharedPerformance	10008	1	ControllerUserLogon_605Stop_V1()	Stop		ControllerUserLogon_605			
+Microsoft-AppV-SharedPerformance	10009	1	IsvShutdownStart_V1()	Start		IsvShutdown			
+Microsoft-AppV-SharedPerformance	10010	1	IsvShutdownStop_V1()	Stop		IsvShutdown			
+Microsoft-AppV-SharedPerformance	10011	1	ControllerUserLogoff_606Start_V1()	Start		ControllerUserLogoff_606			
+Microsoft-AppV-SharedPerformance	10012	1	ControllerUserLogoff_606Stop_V1()	Stop		ControllerUserLogoff_606			
+Microsoft-AppV-SharedPerformance	10013	1	ControllerStop_607Start_V1()	Start		ControllerStop_607			
+Microsoft-AppV-SharedPerformance	10014	1	ControllerStop_607Stop_V1()	Stop		ControllerStop_607			
+Microsoft-AppV-SharedPerformance	10015	1	ControllerShutdown_608Start_V1()	Start		ControllerShutdown_608			
+Microsoft-AppV-SharedPerformance	10016	1	ControllerShutdown_608Stop_V1()	Stop		ControllerShutdown_608			
+Microsoft-AppV-SharedPerformance	11001	1	ManifestCreateManifestDocumentFromDocumentStart_V1()	Start		ManifestCreateManifestDocumentFromDocument			
+Microsoft-AppV-SharedPerformance	11002	1	ManifestCreateManifestDocumentFromDocumentStop_V1()	Stop		ManifestCreateManifestDocumentFromDocument			
+Microsoft-AppV-SharedPerformance	11003	1	ManifestCreateManifestDocumentFromFileStart_V1()	Start		ManifestCreateManifestDocumentFromFile			
+Microsoft-AppV-SharedPerformance	11004	1	ManifestCreateManifestDocumentFromFileStop_V1()	Stop		ManifestCreateManifestDocumentFromFile			
+Microsoft-AppV-SharedPerformance	11005	1	ManifestCreateManifestDocumentFromXMLStart_V1()	Start		ManifestCreateManifestDocumentFromXML			
+Microsoft-AppV-SharedPerformance	11006	1	ManifestCreateManifestDocumentFromXMLStop_V1()	Stop		ManifestCreateManifestDocumentFromXML			
+Microsoft-AppV-SharedPerformance	11010	1	ManifestValidateAppXNamespaceStart_V1()	Start		ManifestValidateAppXNamespace			
+Microsoft-AppV-SharedPerformance	11011	1	ManifestValidateAppXNamespaceStop_V1()	Stop		ManifestValidateAppXNamespace			
+Microsoft-AppV-SharedPerformance	11012	1	ManifestValidateAppXNamespaceSaveStart_V1()	Start		ManifestValidateAppXNamespaceSave			
+Microsoft-AppV-SharedPerformance	11013	1	ManifestValidateAppXNamespaceSaveStop_V1()	Stop		ManifestValidateAppXNamespaceSave			
+Microsoft-AppV-SharedPerformance	11014	1	ManifestValidateAppXNamespaceCreateManifestReaderStart_V1()	Start		ManifestValidateAppXNamespaceCreateManifestReader			
+Microsoft-AppV-SharedPerformance	11015	1	ManifestValidateAppXNamespaceCreateManifestReaderStop_V1()	Stop		ManifestValidateAppXNamespaceCreateManifestReader			
+Microsoft-AppV-SharedPerformance	11020	1	ManifestValidateAppVNamespaceStart_V1()	Start		ManifestValidateAppVNamespace			
+Microsoft-AppV-SharedPerformance	11021	1	ManifestValidateAppVNamespaceStop_V1()	Stop		ManifestValidateAppVNamespace			
+Microsoft-AppV-SharedPerformance	11022	1	ManifestValidateAppVNamespaceApplyTransformCleanupAppXStart_V1()	Start		ManifestValidateAppVNamespaceApplyTransformCleanupAppX			
+Microsoft-AppV-SharedPerformance	11023	1	ManifestValidateAppVNamespaceApplyTransformCleanupAppXStop_V1()	Stop		ManifestValidateAppVNamespaceApplyTransformCleanupAppX			
+Microsoft-AppV-SharedPerformance	11024	1	ManifestValidateAppVNamespaceApplyTransformNormalizeStart_V1()	Start		ManifestValidateAppVNamespaceApplyTransformNormalize			
+Microsoft-AppV-SharedPerformance	11025	1	ManifestValidateAppVNamespaceApplyTransformNormalizeStop_V1()	Stop		ManifestValidateAppVNamespaceApplyTransformNormalize			
+Microsoft-AppV-SharedPerformance	11026	1	ManifestValidateAppVNamespaceApplySchemasStart_V1()	Start		ManifestValidateAppVNamespaceApplySchemas			
+Microsoft-AppV-SharedPerformance	11027	1	ManifestValidateAppVNamespaceApplySchemasStop_V1()	Stop		ManifestValidateAppVNamespaceApplySchemas			
+Microsoft-AppV-SharedPerformance	11030	1	ManifestValidateUsingClientConfigOnlyStart_V1()	Start		ManifestValidateUsingClientConfigOnly			
+Microsoft-AppV-SharedPerformance	11031	1	ManifestValidateUsingClientConfigOnlyStop_V1()	Stop		ManifestValidateUsingClientConfigOnly			
+Microsoft-AppV-SharedPerformance	11040	1	ManifestNormalizeManifestStart_V1()	Start		ManifestNormalizeManifest			
+Microsoft-AppV-SharedPerformance	11041	1	ManifestNormalizeManifestStop_V1()	Stop		ManifestNormalizeManifest			
+Microsoft-AppV-SharedPerformance	11042	1	ManifestPrepareOutputDocumentStart_V1()	Start		ManifestPrepareOutputDocument			
+Microsoft-AppV-SharedPerformance	11043	1	ManifestPrepareOutputDocumentStop_V1()	Stop		ManifestPrepareOutputDocument			
+Microsoft-AppV-SharedPerformance	12000	1	VEMgrDriverLoadStart_V1()	Start		VEMgrDriverLoad			
+Microsoft-AppV-SharedPerformance	12001	1	VEMgrDriverLoadStop_V1()	Stop		VEMgrDriverLoad			
+Microsoft-AppV-SharedPerformance	12002	1	VEMgrDriverUnloadStart_V1()	Start		VEMgrDriverUnload			
+Microsoft-AppV-SharedPerformance	12003	1	VEMgrDriverUnloadStop_V1()	Stop		VEMgrDriverUnload			
+Microsoft-AppV-SharedPerformance	12004	1	VEMgrAddPackageStart_V1()	Start		VEMgrAddPackage			
+Microsoft-AppV-SharedPerformance	12005	1	VEMgrAddPackageStop_V1()	Stop		VEMgrAddPackage			
+Microsoft-AppV-SharedPerformance	12006	1	VEMgrRemovePackageStart_V1()	Start		VEMgrRemovePackage			
+Microsoft-AppV-SharedPerformance	12007	1	VEMgrRemovePackageStop_V1()	Stop		VEMgrRemovePackage			
+Microsoft-AppV-SharedPerformance	12008	1	VEMgrAddUserStart_V1()	Start		VEMgrAddUser			
+Microsoft-AppV-SharedPerformance	12009	1	VEMgrAddUserStop_V1()	Stop		VEMgrAddUser			
+Microsoft-AppV-SharedPerformance	12010	1	VEMgrRemoveUserStart_V1()	Start		VEMgrRemoveUser			
+Microsoft-AppV-SharedPerformance	12011	1	VEMgrRemoveUserStop_V1()	Stop		VEMgrRemoveUser			
+Microsoft-AppV-SharedPerformance	12012	1	VEMgrProcessLaunchStart_V1(UInt32 pid)	Start		VEMgrProcessLaunch			
+Microsoft-AppV-SharedPerformance	12013	1	VEMgrProcessLaunchStop_V1(UInt32 pid)	Stop		VEMgrProcessLaunch			
+Microsoft-AppV-SharedPerformance	12014	1	VEMgrProcessShutdownStart_V1(UInt32 pid)	Start		VEMgrProcessShutdown			
+Microsoft-AppV-SharedPerformance	12015	1	VEMgrProcessShutdownStop_V1(UInt32 pid)	Stop		VEMgrProcessShutdown			
+Microsoft-AppV-SharedPerformance	12016	1	VEMgrLookupProcessStart_V1()	Start		VEMgrLookupProcess			
+Microsoft-AppV-SharedPerformance	12017	1	VEMgrLookupProcessStop_V1()	Stop		VEMgrLookupProcess			
+Microsoft-AppV-SharedPerformance	12018	1	VEMgrLookupProcessExStart_V1()	Start		VEMgrLookupProcessEx			
+Microsoft-AppV-SharedPerformance	12019	1	VEMgrLookupProcessExStop_V1()	Stop		VEMgrLookupProcessEx			
+Microsoft-AppV-SharedPerformance	12020	1	VEMgrProcessLaunchStart12020_V1(UInt32 pid)	Start		VEMgrProcessLaunch			
+Microsoft-AppV-SharedPerformance	12021	1	VEMgrProcessLaunchStop12021_V1(UInt32 pid)	Stop		VEMgrProcessLaunch			
+Microsoft-AppV-SharedPerformance	12022	1	VEMgrProcessShutdownStart12022_V1(UInt32 pid)	Start		VEMgrProcessShutdown			
+Microsoft-AppV-SharedPerformance	12023	1	VEMgrProcessShutdownStop12023_V1(UInt32 pid)	Stop		VEMgrProcessShutdown			
+Microsoft-AppV-SharedPerformance	12024	1	AddPackageGroupStart_V1()	Start		AddPackageGroup			
+Microsoft-AppV-SharedPerformance	12025	1	AddPackageGroupStop_V1()	Stop		AddPackageGroup	Always		
+Microsoft-AppV-SharedPerformance	12026	1	RemovePackageGroupStart_V1()	Start		RemovePackageGroup			
+Microsoft-AppV-SharedPerformance	12027	1	RemovePackageGroupStop_V1()	Stop		RemovePackageGroup			
+Microsoft-AppV-SharedPerformance	12028	1	JITVProcessStart_V1(UInt32 pid)	Start		JITVProcessStart			
+Microsoft-AppV-SharedPerformance	12029	1	JITVProcessStartStop_V1(UInt32 pid)	Stop		JITVProcessStart			
+Microsoft-AppV-SharedPerformance	12030	1	GlobalPublishingStart_V1()	Start		GlobalPublishing			
+Microsoft-AppV-SharedPerformance	12031	1	GlobalPublishingStop_V1()	Stop		GlobalPublishing			
+Microsoft-AppV-SharedPerformance	12032	1	GlobalUnpublishingStart_V1()	Start		GlobalUnpublishing			
+Microsoft-AppV-SharedPerformance	12033	1	GlobalUnpublishingStop_V1()	Stop		GlobalUnpublishing			
+Microsoft-AppV-SharedPerformance	13001	1	PreCreateStart_V1()	Start		PreCreate			
+Microsoft-AppV-SharedPerformance	13002	1	PreCreateStop_V1()	Stop		PreCreate			
+Microsoft-AppV-SharedPerformance	13003	1	PreCleanupStart_V1()	Start		PreCleanup			
+Microsoft-AppV-SharedPerformance	13004	1	PreCleanupStop_V1()	Stop		PreCleanup			
+Microsoft-AppV-SharedPerformance	13005	1	PreWriteStart_V1()	Start		PreWrite			
+Microsoft-AppV-SharedPerformance	13006	1	PreWriteStop_V1()	Stop		PreWrite			
+Microsoft-AppV-SharedPerformance	13007	1	PreDirectoryCtrlStart_V1()	Start		PreDirectoryCtrl			
+Microsoft-AppV-SharedPerformance	13008	1	PreDirectoryCtrlStop_V1()	Stop		PreDirectoryCtrl			
+Microsoft-AppV-SharedPerformance	13009	1	PreSetInfoStart_V1()	Start		PreSetInfo			
+Microsoft-AppV-SharedPerformance	13010	1	PreSetInfoStop_V1()	Stop		PreSetInfo			
+Microsoft-AppV-SharedPerformance	13011	1	PreSetSecurityStart_V1()	Start		PreSetSecurity			
+Microsoft-AppV-SharedPerformance	13012	1	PreSetSecurityStop_V1()	Stop		PreSetSecurity			
+Microsoft-AppV-SharedPerformance	13013	1	PreAcquireForSectionStart_V1()	Start		PreAcquireForSection			
+Microsoft-AppV-SharedPerformance	13014	1	PreAcquireForSectionStop_V1()	Stop		PreAcquireForSection			
+Microsoft-AppV-SharedPerformance	14001	1	ComponentStartupStart_V1(UInt32 Component)	Start		ComponentStartup			
+Microsoft-AppV-SharedPerformance	14002	1	ComponentStartupStop_V1(UInt32 Component)	Stop		ComponentStartup			
+Microsoft-AppV-SharedPerformance	14003	1	ComponentRunStart_V1(UInt32 Component)	Start		ComponentRun			
+Microsoft-AppV-SharedPerformance	14004	1	ComponentRunStop_V1(UInt32 Component)	Stop		ComponentRun			
+Microsoft-AppV-SharedPerformance	14005	1	ComponentStopStart_V1(UInt32 Component)	Start		ComponentStop			
+Microsoft-AppV-SharedPerformance	14006	1	ComponentStop_V1(UInt32 Component)	Stop		ComponentStop			
+Microsoft-AppV-SharedPerformance	14007	1	ComponentShutdownStart_V1(UInt32 Component)	Start		ComponentShutdown			
+Microsoft-AppV-SharedPerformance	14008	1	ComponentShutdownStop_V1(UInt32 Component)	Stop		ComponentShutdown			
+Microsoft-AppV-SharedPerformance	14009	1	ComponentUserLogonStart_V1(UInt32 Component)	Start		ComponentUserLogon			
+Microsoft-AppV-SharedPerformance	14010	1	ComponentUserLogonStop_V1(UInt32 Component)	Stop		ComponentUserLogon			
+Microsoft-AppV-SharedPerformance	14011	1	ComponentUserLogoffStart_V1(UInt32 Component)	Start		ComponentUserLogoff			
+Microsoft-AppV-SharedPerformance	14012	1	ComponentUserLogoffStop_V1(UInt32 Component)	Stop		ComponentUserLogoff			
+Microsoft-AppV-SharedPerformance	14013	1	ConfigurePackage_1007Start_V1()	Start		ConfigurePackage_1007			
+Microsoft-AppV-SharedPerformance	14014	1	ConfigurePackage_1007Stop_V1()	Stop		ConfigurePackage_1007			
+Microsoft-AppV-SharedPerformance	14015	1	ConfigurePackageComponentStart_V1(UInt32 Component)	Start		ConfigurePackageComponent			
+Microsoft-AppV-SharedPerformance	14016	1	ConfigurePackageComponentStop_V1(UInt32 Component)	Stop		ConfigurePackageComponent			
+Microsoft-AppV-SharedPerformance	14017	1	ConfigurePackageFinalize_1009Start_V1()	Start		ConfigurePackageFinalize_1009			
+Microsoft-AppV-SharedPerformance	14018	1	ConfigurePackageFinalize_1009Stop_V1()	Stop		ConfigurePackageFinalize_1009			
+Microsoft-AppV-SharedPerformance	14019	1	ConfigurePackageFinalizeComponentStart_V1(UInt32 Component)	Start		ConfigurePackageFinalizeComponent			
+Microsoft-AppV-SharedPerformance	14020	1	ConfigurePackageFinalizeComponentStop_V1(UInt32 Component)	Stop		ConfigurePackageFinalizeComponent			
+Microsoft-AppV-SharedPerformance	14021	1	ConfigurePackageComplete_1011Start_V1()	Start		ConfigurePackageComplete_1011			
+Microsoft-AppV-SharedPerformance	14022	1	ConfigurePackageComplete_1011Stop_V1()	Stop		ConfigurePackageComplete_1011			
+Microsoft-AppV-SharedPerformance	14023	1	ConfigurePackageCompleteComponentStart_V1(UInt32 Component)	Start		ConfigurePackageCompleteComponent			
+Microsoft-AppV-SharedPerformance	14024	1	ConfigurePackageCompleteComponentStop_V1(UInt32 Component)	Stop		ConfigurePackageCompleteComponent			
+Microsoft-AppV-SharedPerformance	14025	1	PublishPackage_1013Start_V1()	Start		PublishPackage_1013			
+Microsoft-AppV-SharedPerformance	14026	1	PublishPackage_1013Stop_V1()	Stop		PublishPackage_1013			
+Microsoft-AppV-SharedPerformance	14027	1	PublishPackageComponentStart_V1(UInt32 Component)	Start		PublishPackageComponent			
+Microsoft-AppV-SharedPerformance	14028	1	PublishPackageComponentStop_V1(UInt32 Component)	Stop		PublishPackageComponent			
+Microsoft-AppV-SharedPerformance	14029	1	PublishPackageFinalize_1015Start_V1()	Start		PublishPackageFinalize_1015			
+Microsoft-AppV-SharedPerformance	14030	1	PublishPackageFinalize_1015Stop_V1()	Stop		PublishPackageFinalize_1015			
+Microsoft-AppV-SharedPerformance	14031	1	PublishPackageFinalizeComponentStart_V1(UInt32 Component)	Start		PublishPackageFinalizeComponent			
+Microsoft-AppV-SharedPerformance	14032	1	PublishPackageFinalizeComponentStop_V1(UInt32 Component)	Stop		PublishPackageFinalizeComponent			
+Microsoft-AppV-SharedPerformance	14033	1	PublishPackageComplete_1017Start_V1()	Start		PublishPackageComplete_1017			
+Microsoft-AppV-SharedPerformance	14034	1	PublishPackageComplete_1017Stop_V1()	Stop		PublishPackageComplete_1017			
+Microsoft-AppV-SharedPerformance	14035	1	PublishPackageCompleteComponentStart_V1(UInt32 Component)	Start		PublishPackageCompleteComponent			
+Microsoft-AppV-SharedPerformance	14036	1	PublishPackageCompleteComponentStop_V1(UInt32 Component)	Stop		PublishPackageCompleteComponent			
+Microsoft-AppV-SharedPerformance	14037	1	ConfigurePackageGroup_1019Start_V1()	Start		ConfigurePackageGroup_1019			
+Microsoft-AppV-SharedPerformance	14038	1	ConfigurePackageGroup_1019Stop_V1()	Stop		ConfigurePackageGroup_1019			
+Microsoft-AppV-SharedPerformance	14039	1	ConfigurePackageGroupComponentStart_V1(UInt32 Component)	Start		ConfigurePackageGroupComponent			
+Microsoft-AppV-SharedPerformance	14040	1	ConfigurePackageGroupComponentStop_V1(UInt32 Component)	Stop		ConfigurePackageGroupComponent			
+Microsoft-AppV-SharedPerformance	14041	1	ConfigurePackageGroupFinalize_1021Start_V1()	Start		ConfigurePackageGroupFinalize_1021			
+Microsoft-AppV-SharedPerformance	14042	1	ConfigurePackageGroupFinalize_1021Stop_V1()	Stop		ConfigurePackageGroupFinalize_1021			
+Microsoft-AppV-SharedPerformance	14043	1	ConfigurePackageGroupFinalizeComponentStart_V1(UInt32 Component)	Start		ConfigurePackageGroupFinalizeComponent			
+Microsoft-AppV-SharedPerformance	14044	1	ConfigurePackageGroupFinalizeComponentStop_V1(UInt32 Component)	Stop		ConfigurePackageGroupFinalizeComponent			
+Microsoft-AppV-SharedPerformance	14045	1	ConfigurePackageGroupComplete_1023Start_V1()	Start		ConfigurePackageGroupComplete_1023			
+Microsoft-AppV-SharedPerformance	14046	1	ConfigurePackageGroupComplete_1023Stop_V1()	Stop		ConfigurePackageGroupComplete_1023			
+Microsoft-AppV-SharedPerformance	14047	1	ConfigurePackageGroupCompleteComponentStart_V1(UInt32 Component)	Start		ConfigurePackageGroupCompleteComponent			
+Microsoft-AppV-SharedPerformance	14048	1	ConfigurePackageGroupCompleteComponentStop_V1(UInt32 Component)	Stop		ConfigurePackageGroupCompleteComponent			
+Microsoft-AppV-SharedPerformance	14049	1	PublishPackageGroup_1025Start_V1()	Start		PublishPackageGroup_1025			
+Microsoft-AppV-SharedPerformance	14050	1	PublishPackageGroup_1025Stop_V1()	Stop		PublishPackageGroup_1025			
+Microsoft-AppV-SharedPerformance	14051	1	PublishPackageGroupComponentStart_V1(UInt32 Component)	Start		PublishPackageGroupComponent			
+Microsoft-AppV-SharedPerformance	14052	1	PublishPackageGroupComponentStop_V1(UInt32 Component)	Stop		PublishPackageGroupComponent			
+Microsoft-AppV-SharedPerformance	14053	1	PublishPackageGroupFinalize_1027Start_V1()	Start		PublishPackageGroupFinalize_1027			
+Microsoft-AppV-SharedPerformance	14054	1	PublishPackageGroupFinalize_1027Stop_V1()	Stop		PublishPackageGroupFinalize_1027			
+Microsoft-AppV-SharedPerformance	14055	1	PublishPackageGroupFinalizeComponentStart_V1(UInt32 Component)	Start		PublishPackageGroupFinalizeComponent			
+Microsoft-AppV-SharedPerformance	14056	1	PublishPackageGroupFinalizeComponentStop_V1(UInt32 Component)	Stop		PublishPackageGroupFinalizeComponent			
+Microsoft-AppV-SharedPerformance	14057	1	PublishPackageGroupComplete_1029Start_V1()	Start		PublishPackageGroupComplete_1029			
+Microsoft-AppV-SharedPerformance	14058	1	PublishPackageGroupComplete_1029Stop_V1()	Stop		PublishPackageGroupComplete_1029			
+Microsoft-AppV-SharedPerformance	14059	1	PublishPackageGroupCompleteComponentStart_V1(UInt32 Component)	Start		PublishPackageGroupCompleteComponent			
+Microsoft-AppV-SharedPerformance	14060	1	PublishPackageGroupCompleteComponentStop_V1(UInt32 Component)	Stop		PublishPackageGroupCompleteComponent			
+Microsoft-AppV-SharedPerformance	14061	1	CoordinateActivityStart_V1(UInt64 ActivityId)	Start		CoordinateActivity			
+Microsoft-AppV-SharedPerformance	14062	1	CoordinateActivityStop_V1(UInt64 ActivityId)	Stop		CoordinateActivity			
+Microsoft-AppV-SharedPerformance	15000	1	PackageConfig.ConfigurePackageStart_V1()	Start		PackageConfig.ConfigurePackage			
+Microsoft-AppV-SharedPerformance	15001	1	PackageConfig.ConfigurePackageStop_V1()	Stop		PackageConfig.ConfigurePackage			
+Microsoft-AppV-SharedPerformance	15002	1	PackageConfig.RemovePackageStart_V1()	Start		PackageConfig.RemovePackage			
+Microsoft-AppV-SharedPerformance	15003	1	PackageConfig.RemovePackageStop_V1()	Stop		PackageConfig.RemovePackage			
+Microsoft-AppV-SharedPerformance	15004	1	PackageConfig.AddUserPackageStart_V1()	Start		PackageConfig.AddUserPackage			
+Microsoft-AppV-SharedPerformance	15005	1	PackageConfig.AddUserPackageStop_V1()	Stop		PackageConfig.AddUserPackage			
+Microsoft-AppV-SharedPerformance	15006	1	PackageConfig.RemoveUserPackageStart_V1()	Start		PackageConfig.RemoveUserPackage			
+Microsoft-AppV-SharedPerformance	15007	1	PackageConfig.RemoveUserPackageStop_V1()	Stop		PackageConfig.RemoveUserPackage			
+Microsoft-AppV-SharedPerformance	15012	1	PackageConfig.GetUserCowMappingsStart_V1()	Start		PackageConfig.GetUserCowMappings			
+Microsoft-AppV-SharedPerformance	15013	1	PackageConfig.GetUserCowMappingsStop_V1()	Stop		PackageConfig.GetUserCowMappings			
+Microsoft-AppV-SharedPerformance	15014	1	PackageConfig.SendMappingsToDriverStart_V1()	Start		PackageConfig.SendMappingsToDriver			
+Microsoft-AppV-SharedPerformance	15015	1	PackageConfig.SendMappingsToDriverStop_V1()	Stop		PackageConfig.SendMappingsToDriver			
+Microsoft-AppV-SharedPerformance	15016	1	PackageConfig.ConfigurePackageGroupStart_V1()	Start		PackageConfig.ConfigurePackageGroup			
+Microsoft-AppV-SharedPerformance	15017	1	PackageConfig.ConfigurePackageGroupStop_V1()	Stop		PackageConfig.ConfigurePackageGroup			
+Microsoft-AppV-SharedPerformance	15018	1	PackageConfig.RemovePackageGroupStart_V1()	Start		PackageConfig.RemovePackageGroup			
+Microsoft-AppV-SharedPerformance	15019	1	PackageConfig.RemovePackageGroupStop_V1()	Stop		PackageConfig.RemovePackageGroup			
+Microsoft-AppV-SharedPerformance	15020	1	PackageConfig.PublishGlobalPackageStart_V1()	Start		PackageConfig.PublishGlobalPackage			
+Microsoft-AppV-SharedPerformance	15021	1	PackageConfig.PublishGlobalPackageStop_V1()	Stop		PackageConfig.PublishGlobalPackage			
+Microsoft-AppV-SharedPerformance	15022	1	PackageConfig.UnpublishGlobalPackageStart_V1()	Start		PackageConfig.UnpublishGlobalPackage			
+Microsoft-AppV-SharedPerformance	15023	1	PackageConfig.UnpublishGlobalPackageStop_V1()	Stop		PackageConfig.UnpublishGlobalPackage			
+Microsoft-AppV-SharedPerformance	16000	1	PublishingActivityStart_V1()	Start		PublishingActivity			
+Microsoft-AppV-SharedPerformance	16001	1	PublishingActivityStop_V1()	Stop		PublishingActivity			
+Microsoft-AppV-SharedPerformance	16020	1	DownloadpackagelistStart_V1()	Start		Downloadpackagelist			
+Microsoft-AppV-SharedPerformance	16021	1	DownloadpackagelistStop_V1()	Stop		Downloadpackagelist			
+Microsoft-AppV-SharedPerformance	16022	1	UnpublishpackagesStart_V1()	Start		Unpublishpackages			
+Microsoft-AppV-SharedPerformance	16023	1	UnpublishpackagesStop_V1()	Stop		Unpublishpackages			
+Microsoft-AppV-SharedPerformance	16024	1	RefreshpackagesStart_V1()	Start		Refreshpackages			
+Microsoft-AppV-SharedPerformance	16025	1	RefreshpackagesStop_V1()	Stop		Refreshpackages			
+Microsoft-AppV-SharedPerformance	16026	1	UnpublishGroupsStart_V1()	Start		UnpublishGroups			
+Microsoft-AppV-SharedPerformance	16027	1	UnpublishGroupsStop_V1()	Stop		UnpublishGroups			
+Microsoft-AppV-SharedPerformance	16028	1	RefreshGroupsStart_V1()	Start		RefreshGroups			
+Microsoft-AppV-SharedPerformance	16029	1	RefreshGroupsStop_V1()	Stop		RefreshGroups			
+Microsoft-AppV-SharedPerformance	16030	1	PublishapackageStart_V1()	Start		Publishapackage			
+Microsoft-AppV-SharedPerformance	16031	1	PublishapackageStop_V1()	Stop		Publishapackage			
+Microsoft-AppV-SharedPerformance	16032	1	ConfigureapackageStart_V1()	Start		Configureapackage			
+Microsoft-AppV-SharedPerformance	16033	1	ConfigureapackageStop_V1()	Stop		Configureapackage			
+Microsoft-AppV-SharedPerformance	16034	1	UnpublishapackageStart_V1()	Start		Unpublishapackage			
+Microsoft-AppV-SharedPerformance	16035	1	UnpublishapackageStop_V1()	Stop		Unpublishapackage			
+Microsoft-AppV-SharedPerformance	16036	1	PublishaGroupStart_V1()	Start		PublishaGroup			
+Microsoft-AppV-SharedPerformance	16037	1	PublishaGroupStop_V1()	Stop		PublishaGroup			
+Microsoft-AppV-SharedPerformance	16038	1	ConfigureaGroupStart_V1()	Start		ConfigureaGroup			
+Microsoft-AppV-SharedPerformance	16039	1	ConfigureaGroupStop_V1()	Stop		ConfigureaGroup			
+Microsoft-AppV-SharedPerformance	16040	1	UnpublishaGroupStart_V1()	Start		UnpublishaGroup			
+Microsoft-AppV-SharedPerformance	16041	1	UnpublishaGroupStop_V1()	Stop		UnpublishaGroup			
+Microsoft-AppV-SharedPerformance	16050	1	DownloadpolicyStart_V1()	Start		Downloadpolicy			
+Microsoft-AppV-SharedPerformance	16051	1	DownloadpolicyStop_V1()	Stop		Downloadpolicy			
+Microsoft-AppV-SharedPerformance	16052	1	DownloadpolicyStart16052_V1()	Start		Downloadpolicy			
+Microsoft-AppV-SharedPerformance	16053	1	DownloadpolicyStop16053_V1()	Stop		Downloadpolicy			
+Microsoft-AppV-SharedPerformance	17000	0	RegistryStagingservicestartruntimeStart()	Start		RegistryStagingservicestartruntime			
+Microsoft-AppV-SharedPerformance	17001	0	RegistryStagingservicestartruntimeStop()	Stop		RegistryStagingservicestartruntime			
+Microsoft-AppV-SharedPerformance	17002	0	RegistryStagingprocessstartruntimeStart()	Start		RegistryStagingprocessstartruntime			
+Microsoft-AppV-SharedPerformance	17003	0	RegistryStagingprocessstartruntimeStop()	Stop		RegistryStagingprocessstartruntime			
+Microsoft-AppV-SharedPerformance	17004	0	RegistryStagingservicestopruntimeStart()	Start		RegistryStagingservicestopruntime			
+Microsoft-AppV-SharedPerformance	17005	0	RegistryStagingservicestopruntimeStop()	Stop		RegistryStagingservicestopruntime			
+Microsoft-AppV-SharedPerformance	17006	0	RegistryStagingprocessstopruntimeStart()	Start		RegistryStagingprocessstopruntime			
+Microsoft-AppV-SharedPerformance	17007	0	RegistryStagingprocessstopruntimeStop()	Stop		RegistryStagingprocessstopruntime			
+Microsoft-AppV-SharedPerformance	17008	0	StagekeyondemandStart()	Start		Stagekeyondemand			
+Microsoft-AppV-SharedPerformance	17009	0	StagekeyondemandStop()	Stop		Stagekeyondemand			
+Microsoft-AppV-SharedPerformance	17010	0	StagekeyinthebackgroundStart()	Start		Stagekeyinthebackground			
+Microsoft-AppV-SharedPerformance	17011	0	StagekeyinthebackgroundStop()	Stop		Stagekeyinthebackground			
+Microsoft-AppV-SharedPerformance	17012	0	StageallpolicyXMLsStart()	Start		StageallpolicyXMLs			
+Microsoft-AppV-SharedPerformance	17013	0	StageallpolicyXMLsStop()	Stop		StageallpolicyXMLs			
+Microsoft-AppV-SharedPerformance	17014	0	StageallpackagesStart()	Start		Stageallpackages			
+Microsoft-AppV-SharedPerformance	17015	0	StageallpackagesStop()	Stop		Stageallpackages			
+Microsoft-AppV-SharedPerformance	17016	0	StageasinglepackageStart()	Start		Stageasinglepackage			
+Microsoft-AppV-SharedPerformance	17017	0	StageasinglepackageStop()	Stop		Stageasinglepackage			
+Microsoft-AppV-SharedPerformance	18000	0	EnumeratesettingchangesStart()	Start		Enumeratesettingchanges			
+Microsoft-AppV-SharedPerformance	18001	0	EnumeratesettingchangesStop()	Stop		Enumeratesettingchanges			
+Microsoft-AppV-SharedPerformance	18020	0	SendchangenotificationsStart()	Start		Sendchangenotifications			
+Microsoft-AppV-SharedPerformance	18021	0	SendchangenotificationsStop()	Stop		Sendchangenotifications			
+Microsoft-AppV-SharedPerformance	19000	1	Packaging_1401Start_V1()	Start		Packaging_1401			
+Microsoft-AppV-SharedPerformance	19001	1	Packaging_1401Stop_V1()	Stop		Packaging_1401			
+Microsoft-AppV-SharedPerformance	19002	1	ShellNotifyFtaAssocChangedStart_V1()	Start		ShellNotifyFtaAssocChanged			
+Microsoft-AppV-SharedPerformance	19003	1	ShellNotifyFtaAssocChangedStop_V1()	Stop		ShellNotifyFtaAssocChanged			
+Microsoft-AppV-SharedPerformance	20000	1	ReportingActivityStart_V1()	Start		ReportingActivity			
+Microsoft-AppV-SharedPerformance	20001	1	ReportingActivityStop_V1()	Stop		ReportingActivity			
+Microsoft-AppV-SharedPerformance	20002	1	VirtualEnvironmentCreatedActivityStart_V1()	Start		VirtualEnvironmentCreatedActivity			
+Microsoft-AppV-SharedPerformance	20003	1	VirtualEnvironmentCreatedActivityStop_V1()	Stop		VirtualEnvironmentCreatedActivity			
+Microsoft-AppV-SharedPerformance	20004	1	VirtualEnvironmentTerminatedActivityStart_V1()	Start		VirtualEnvironmentTerminatedActivity			
+Microsoft-AppV-SharedPerformance	20005	1	VirtualEnvironmentTerminatedActivityStop_V1()	Stop		VirtualEnvironmentTerminatedActivity			
+Microsoft-AppV-SharedPerformance	20006	1	VirtualProcessCreatedActivityStart_V1()	Start		VirtualProcessCreatedActivity			
+Microsoft-AppV-SharedPerformance	20007	1	VirtualProcessCreatedActivityStop_V1()	Stop		VirtualProcessCreatedActivity			
+Microsoft-AppV-SharedPerformance	20008	1	VirtualProcessCreatedActivity_1704Start_V1()	Start		VirtualProcessCreatedActivity_1704			
+Microsoft-AppV-SharedPerformance	20009	1	VirtualProcessCreatedActivity_1704Stop_V1()	Stop		VirtualProcessCreatedActivity_1704			
+Microsoft-AppV-SharedPerformance	20010	1	UploadReportingDataActivityStart_V1()	Start		UploadReportingDataActivity			
+Microsoft-AppV-SharedPerformance	20011	1	UploadReportingDataActivityStop_V1()	Stop		UploadReportingDataActivity			
+Microsoft-AppV-SharedPerformance	20012	1	SendReportingDataActivityStart_V1()	Start		SendReportingDataActivity			
+Microsoft-AppV-SharedPerformance	20013	1	SendReportingDataActivityStop_V1()	Stop		SendReportingDataActivity			
+Microsoft-AppV-SharedPerformance	20014	1	VirtualProcessLaunchFailureActivityStart_V1()	Start		VirtualProcessLaunchFailureActivity			
+Microsoft-AppV-SharedPerformance	20015	1	VirtualProcessLaunchFailureActivityStop_V1()	Stop		VirtualProcessLaunchFailureActivity			
+Microsoft-AppV-SharedPerformance	21000	1	Packaging_3600Start_V1()	Start		Packaging_3600			
+Microsoft-AppV-SharedPerformance	21001	1	Packaging_3600Stop_V1()	Stop		Packaging_3600			
+Microsoft-AppV-SharedPerformance	21002	1	ManifestReadingStart_V1()	Start		ManifestReading			
+Microsoft-AppV-SharedPerformance	21003	1	ManifestReadingStop_V1()	Stop		ManifestReading			
+Microsoft-AppV-SharedPerformance	21004	1	ManifestWritingStart_V1()	Start		ManifestWriting			
+Microsoft-AppV-SharedPerformance	21005	1	ManifestWritingStop_V1()	Stop		ManifestWriting			
+Microsoft-AppV-SharedPerformance	21006	1	ParsingShortcutFilesStart_V1()	Start		ParsingShortcutFiles			
+Microsoft-AppV-SharedPerformance	21007	1	ParsingShortcutFilesStop_V1()	Stop		ParsingShortcutFiles			
+Microsoft-AppV-SharedPerformance	21008	1	ParsingShortcutFilesSearchingForLinkFilesStart_V1()	Start		ParsingShortcutFilesSearchingForLinkFiles			
+Microsoft-AppV-SharedPerformance	21009	1	ParsingShortcutFilesSearchingForLinkFilesStop_V1()	Stop		ParsingShortcutFilesSearchingForLinkFiles			
+Microsoft-AppV-SharedPerformance	22000	1	ShellNotifyRpcServerStart_V1()	Start		ShellNotifyRpcServer			
+Microsoft-AppV-SharedPerformance	22001	1	ShellNotifyRpcServerStart22001_V1()	Start		ShellNotifyRpcServer			
+Microsoft-AppV-SharedPerformance	22002	1	ShellNotifyPathStart_V1()	Start		ShellNotifyPath			
+Microsoft-AppV-SharedPerformance	22003	1	ShellNotifyPathStop_V1()	Stop		ShellNotifyPath			
+Microsoft-AppV-SharedPerformance	22004	1	ShellNotifyAddShortcutStart_V1()	Start		ShellNotifyAddShortcut			
+Microsoft-AppV-SharedPerformance	22005	1	ShellNotifyAddShortcutStop_V1()	Stop		ShellNotifyAddShortcut			
+Microsoft-AppV-SharedPerformance	22006	1	ShellNotifyRemoveShortcutStart_V1()	Start		ShellNotifyRemoveShortcut			
+Microsoft-AppV-SharedPerformance	22007	1	ShellNotifyRemoveShortcutStop_V1()	Stop		ShellNotifyRemoveShortcut			
+Microsoft-AppV-SharedPerformance	22008	1	ShellNotifyUnpinShortcutStart_V1()	Start		ShellNotifyUnpinShortcut			
+Microsoft-AppV-SharedPerformance	22009	1	ShellNotifyUnpinShortcutStop_V1()	Stop		ShellNotifyUnpinShortcut			
+Microsoft-AppV-SharedPerformance	23000	1	Packaging_3700Start_V1()	Start		Packaging_3700			
+Microsoft-AppV-SharedPerformance	23001	1	Packaging_3700Stop_V1()	Stop		Packaging_3700			
+Microsoft-AppV-SharedPerformance	23002	1	PublishExtensionPointStart_V1()	Start		PublishExtensionPoint			
+Microsoft-AppV-SharedPerformance	23003	1	PublishExtensionPointStop_V1()	Stop		PublishExtensionPoint			
+Microsoft-AppV-SharedPerformance	23004	1	UnpublishPackage_3702Start_V1()	Start		UnpublishPackage_3702			
+Microsoft-AppV-SharedPerformance	23005	1	UnpublishPackage_3702Stop_V1()	Stop		UnpublishPackage_3702			
+Microsoft-AppV-SharedPerformance	23006	1	PublishPackage_3703Start_V1()	Start		PublishPackage_3703			
+Microsoft-AppV-SharedPerformance	23007	1	PublishPackage_3703Stop_V1()	Stop		PublishPackage_3703			
+Microsoft-AppV-SharedPerformance	23008	1	DeserializePolicy_3704Start_V1()	Start		DeserializePolicy_3704			
+Microsoft-AppV-SharedPerformance	23009	1	DeserializePolicy_3704Stop_V1()	Stop		DeserializePolicy_3704			
+Microsoft-AppV-SharedPerformance	23010	1	DeserializeManifest_3705Start_V1()	Start		DeserializeManifest_3705			
+Microsoft-AppV-SharedPerformance	23011	1	DeserializeManifest_3705Stop_V1()	Stop		DeserializeManifest_3705			
+Microsoft-AppV-SharedPerformance	23012	1	PackagingRegistryReadStart_V1()	Start		PackagingRegistryRead			
+Microsoft-AppV-SharedPerformance	23013	1	PackagingRegistryReadStop_V1()	Stop		PackagingRegistryRead			
+Microsoft-AppV-SharedPerformance	23014	1	PackagingBrowserStart_V1()	Start		PackagingBrowser			
+Microsoft-AppV-SharedPerformance	23015	1	PackagingBrowserStop_V1()	Stop		PackagingBrowser			
+Microsoft-AppV-SharedPerformance	23016	1	PackagingBrowserLocalMachineStart_V1()	Start		PackagingBrowserLocalMachine			
+Microsoft-AppV-SharedPerformance	23017	1	PackagingBrowserLocalMachineStop_V1()	Stop		PackagingBrowserLocalMachine			
+Microsoft-AppV-SharedPerformance	23018	1	PackagingBrowserCurrentUserStart_V1()	Start		PackagingBrowserCurrentUser			
+Microsoft-AppV-SharedPerformance	23019	1	PackagingBrowserCurrentUserStop_V1()	Stop		PackagingBrowserCurrentUser			
+Microsoft-AppV-SharedPerformance	23020	1	PackagingEmailStart_V1()	Start		PackagingEmail			
+Microsoft-AppV-SharedPerformance	23021	1	PackagingEmailStop_V1()	Stop		PackagingEmail			
+Microsoft-AppV-SharedPerformance	23022	1	PackagingEmailLocalMachineStart_V1()	Start		PackagingEmailLocalMachine			
+Microsoft-AppV-SharedPerformance	23023	1	PackagingEmailLocalMachineStop_V1()	Stop		PackagingEmailLocalMachine			
+Microsoft-AppV-SharedPerformance	23024	1	PackagingEmailCurrentUserStart_V1()	Start		PackagingEmailCurrentUser			
+Microsoft-AppV-SharedPerformance	23025	1	PackagingEmailCurrentUserStop_V1()	Stop		PackagingEmailCurrentUser			
+Microsoft-AppV-SharedPerformance	23026	1	PackagingMediaPlayerStart_V1()	Start		PackagingMediaPlayer			
+Microsoft-AppV-SharedPerformance	23027	1	PackagingMediaPlayerStop_V1()	Stop		PackagingMediaPlayer			
+Microsoft-AppV-SharedPerformance	23028	1	PackagingMediaPlayerLocalMachineStart_V1()	Start		PackagingMediaPlayerLocalMachine			
+Microsoft-AppV-SharedPerformance	23029	1	PackagingMediaPlayerLocalMachineStop_V1()	Stop		PackagingMediaPlayerLocalMachine			
+Microsoft-AppV-SharedPerformance	23030	1	PackagingMediaPlayerCurrentUserStart_V1()	Start		PackagingMediaPlayerCurrentUser			
+Microsoft-AppV-SharedPerformance	23031	1	PackagingMediaPlayerCurrentUserStop_V1()	Stop		PackagingMediaPlayerCurrentUser			
+Microsoft-AppV-SharedPerformance	23032	1	PackagingInstantMessagingStart_V1()	Start		PackagingInstantMessaging			
+Microsoft-AppV-SharedPerformance	23033	1	PackagingInstantMessagingStop_V1()	Stop		PackagingInstantMessaging			
+Microsoft-AppV-SharedPerformance	23034	1	PackagingInstantMessagingLocalMachine.Start_V1()	Start		PackagingInstantMessagingLocalMachine.			
+Microsoft-AppV-SharedPerformance	23035	1	PackagingInstantMessagingLocalMachine.Stop_V1()	Stop		PackagingInstantMessagingLocalMachine.			
+Microsoft-AppV-SharedPerformance	23036	1	PackagingInstantMessagingCurrentUserStart_V1()	Start		PackagingInstantMessagingCurrentUser			
+Microsoft-AppV-SharedPerformance	23037	1	PackagingInstantMessagingCurrentUserStop_V1()	Stop		PackagingInstantMessagingCurrentUser			
+Microsoft-AppV-SharedPerformance	23038	1	PackagingJavaVirtualMachineStart_V1()	Start		PackagingJavaVirtualMachine			
+Microsoft-AppV-SharedPerformance	23039	1	PackagingJavaVirtualMachineStop_V1()	Stop		PackagingJavaVirtualMachine			
+Microsoft-AppV-SharedPerformance	23040	1	PackagingJavaVirtualMachineLocalMachineStart_V1()	Start		PackagingJavaVirtualMachineLocalMachine			
+Microsoft-AppV-SharedPerformance	23041	1	PackagingJavaVirtualMachineLocalMachineStop_V1()	Stop		PackagingJavaVirtualMachineLocalMachine			
+Microsoft-AppV-SharedPerformance	23042	1	PackagingJavaVirtualMachineCurrentUserStart_V1()	Start		PackagingJavaVirtualMachineCurrentUser			
+Microsoft-AppV-SharedPerformance	23043	1	PackagingJavaVirtualMachineCurrentUserStop_V1()	Stop		PackagingJavaVirtualMachineCurrentUser			
+Microsoft-AppV-SharedPerformance	23044	1	Packaging_BindingStart_V1()	Start		Packaging_Binding			
+Microsoft-AppV-SharedPerformance	23045	1	Packaging_BindingStop_V1()	Stop		Packaging_Binding			
+Microsoft-AppV-SharedPerformance	23046	1	Packaging_ManifestWrite_3723Start_V1()	Start		Packaging_ManifestWrite_3723			
+Microsoft-AppV-SharedPerformance	23047	1	Packaging_ManifestWrite_3723Stop_V1()	Stop		Packaging_ManifestWrite_3723			
+Microsoft-AppV-SharedPerformance	23048	1	Packaging_ManifestWrite_ExtensionPoint_3724Start_V1()	Start		Packaging_ManifestWrite_ExtensionPoint_3724			
+Microsoft-AppV-SharedPerformance	23049	1	Packaging_ManifestWrite_ExtensionPoint_3724Stop_V1()	Stop		Packaging_ManifestWrite_ExtensionPoint_3724			
+Microsoft-AppV-SharedPerformance	23050	1	Packaging_ManifestWrite_BrowserStart_V1()	Start		Packaging_ManifestWrite_Browser			
+Microsoft-AppV-SharedPerformance	23051	1	Packaging_ManifestWrite_BrowserStop_V1()	Stop		Packaging_ManifestWrite_Browser			
+Microsoft-AppV-SharedPerformance	23052	1	Packaging_ManifestWrite_EmailStart_V1()	Start		Packaging_ManifestWrite_Email			
+Microsoft-AppV-SharedPerformance	23053	1	Packaging_ManifestWrite_EmailStop_V1()	Stop		Packaging_ManifestWrite_Email			
+Microsoft-AppV-SharedPerformance	23054	1	Packaging_ManifestWrite_MediaPlayerStart_V1()	Start		Packaging_ManifestWrite_MediaPlayer			
+Microsoft-AppV-SharedPerformance	23055	1	Packaging_ManifestWrite_MediaPlayerStop_V1()	Stop		Packaging_ManifestWrite_MediaPlayer			
+Microsoft-AppV-SharedPerformance	23056	1	Packaging_ManifestWrite_InstantMessagingStart_V1()	Start		Packaging_ManifestWrite_InstantMessaging			
+Microsoft-AppV-SharedPerformance	23057	1	Packaging_ManifestWrite_InstantMessagingStop_V1()	Stop		Packaging_ManifestWrite_InstantMessaging			
+Microsoft-AppV-SharedPerformance	23058	1	Packaging_ManifestWrite_JavaVirtualMachineStart_V1()	Start		Packaging_ManifestWrite_JavaVirtualMachine			
+Microsoft-AppV-SharedPerformance	23059	1	Packaging_ManifestWrite_JavaVirtualMachineStop_V1()	Stop		Packaging_ManifestWrite_JavaVirtualMachine			
+Microsoft-AppV-SharedPerformance	23060	1	Packaging_ManifestWrite_ClientBaseStart_V1()	Start		Packaging_ManifestWrite_ClientBase			
+Microsoft-AppV-SharedPerformance	23061	1	Packaging_ManifestWrite_ClientBaseStop_V1()	Stop		Packaging_ManifestWrite_ClientBase			
+Microsoft-AppV-SharedPerformance	23062	1	Packaging_ManifestWrite_InstallationInformationStart_V1()	Start		Packaging_ManifestWrite_InstallationInformation			
+Microsoft-AppV-SharedPerformance	23063	1	Packaging_ManifestWrite_InstallationInformationStop_V1()	Stop		Packaging_ManifestWrite_InstallationInformation			
+Microsoft-AppV-SharedPerformance	23064	1	Packaging_ManifestWrite_ShellCommandsStart_V1()	Start		Packaging_ManifestWrite_ShellCommands			
+Microsoft-AppV-SharedPerformance	23065	1	Packaging_ManifestWrite_ShellCommandsStop_V1()	Stop		Packaging_ManifestWrite_ShellCommands			
+Microsoft-AppV-SharedPerformance	23066	1	Packaging_ManifestWrite_MailToProtocolStart_V1()	Start		Packaging_ManifestWrite_MailToProtocol			
+Microsoft-AppV-SharedPerformance	23067	1	Packaging_ManifestWrite_MailToProtocolStop_V1()	Stop		Packaging_ManifestWrite_MailToProtocol			
+Microsoft-AppV-SharedPerformance	23068	1	Packaging_ManifestWrite_RegistrationCommandsStart_V1()	Start		Packaging_ManifestWrite_RegistrationCommands			
+Microsoft-AppV-SharedPerformance	23069	1	Packaging_ManifestWrite_RegistrationCommandsStop_V1()	Stop		Packaging_ManifestWrite_RegistrationCommands			
+Microsoft-AppV-SharedPerformance	23070	1	Packaging_ManifestWrite_OEMSettings.Start_V1()	Start		Packaging_ManifestWrite_OEMSettings.			
+Microsoft-AppV-SharedPerformance	23071	1	Packaging_ManifestWrite_OEMSettings.Stop_V1()	Stop		Packaging_ManifestWrite_OEMSettings.			
+Microsoft-AppV-SharedPerformance	23072	1	Publishing_UnpublishExtensionPointStart_V1()	Start		Publishing_UnpublishExtensionPoint			
+Microsoft-AppV-SharedPerformance	23073	1	Publishing_UnpublishExtensionPointStop_V1()	Stop		Publishing_UnpublishExtensionPoint			
+Microsoft-AppV-SharedPerformance	23074	1	PackagingDefaultClientsStart_V1()	Start		PackagingDefaultClients			
+Microsoft-AppV-SharedPerformance	23075	1	PackagingDefaultClientsStop_V1()	Stop		PackagingDefaultClients			
+Microsoft-AppV-SharedPerformance	23076	1	PackagingDefaultClientsLocalMachineStart_V1()	Start		PackagingDefaultClientsLocalMachine			
+Microsoft-AppV-SharedPerformance	23077	1	PackagingDefaultClientsLocalMachineStop_V1()	Stop		PackagingDefaultClientsLocalMachine			
+Microsoft-AppV-SharedPerformance	23078	1	PackagingDefaultClientsCurrentUserStart_V1()	Start		PackagingDefaultClientsCurrentUser			
+Microsoft-AppV-SharedPerformance	23079	1	PackagingDefaultClientsCurrentUserStop_V1()	Stop		PackagingDefaultClientsCurrentUser			
+Microsoft-AppV-SharedPerformance	24000	1	Packaging_3800Start_V1()	Start		Packaging_3800			
+Microsoft-AppV-SharedPerformance	24001	1	Packaging_3800Stop_V1()	Stop		Packaging_3800			
+Microsoft-AppV-SharedPerformance	24002	1	ManifestReadStart_V1()	Start		ManifestRead			
+Microsoft-AppV-SharedPerformance	24003	1	ManifestReadStop_V1()	Stop		ManifestRead			
+Microsoft-AppV-SharedPerformance	24004	1	PolicyReadStart_V1()	Start		PolicyRead			
+Microsoft-AppV-SharedPerformance	24005	1	PolicyReadStop_V1()	Stop		PolicyRead			
+Microsoft-AppV-SharedPerformance	24006	1	PublishingStart_V1()	Start		Publishing			
+Microsoft-AppV-SharedPerformance	24007	1	PublishingStop_V1()	Stop		Publishing			
+Microsoft-AppV-SharedPerformance	24008	1	UnpublishingStart_V1()	Start		Unpublishing			
+Microsoft-AppV-SharedPerformance	24009	1	UnpublishingStop_V1()	Stop		Unpublishing			
+Microsoft-AppV-SharedPerformance	24010	1	task_0_V1(UInt32 uint32)			task_0			
+Microsoft-AppV-SharedPerformance	24011	1	task_024011_V1(UInt32 uint32)			task_0			
+Microsoft-AppV-SharedPerformance	26000	1	IRP_MJ_CREATEtask.Start_V1()	Start		IRP_MJ_CREATEtask.			
+Microsoft-AppV-SharedPerformance	26001	1	IRP_MJ_CREATEtask.Stop_V1()	Stop		IRP_MJ_CREATEtask.			
+Microsoft-AppV-SharedPerformance	26010	1	IRP_MJ_READtask.Start_V1()	Start		IRP_MJ_READtask.			
+Microsoft-AppV-SharedPerformance	26011	1	IRP_MJ_READtask.Stop_V1()	Stop		IRP_MJ_READtask.			
+Microsoft-AppV-SharedPerformance	26020	1	Streamfaulttask.Start_V1()	Start		Streamfaulttask.			
+Microsoft-AppV-SharedPerformance	26021	1	Streamfaulttask.Stop_V1()	Stop		Streamfaulttask.			
+Microsoft-AppV-SharedPerformance	26030	2	Createfilemessagetask.Start_V2()	Start		Createfilemessagetask.			
+Microsoft-AppV-SharedPerformance	26031	2	Createfilemessagetask.Stop_V2()	Stop		Createfilemessagetask.			
+Microsoft-AppV-SharedPerformance	26040	2	Writefilemessagetask.Start_V2()	Start		Writefilemessagetask.			
+Microsoft-AppV-SharedPerformance	26041	2	Writefilemessagetask.Stop_V2()	Stop		Writefilemessagetask.			
+Microsoft-AppV-SharedPerformance	26050	2	loadfiletask.Start_V2()	Start		loadfiletask.			
+Microsoft-AppV-SharedPerformance	26051	2	loadfiletask.Stop_V2()	Stop		loadfiletask.			
+Microsoft-AppV-SharedPerformance	26060	2	Queryfileallocationmessagetask.Start_V2()	Start		Queryfileallocationmessagetask.			
+Microsoft-AppV-SharedPerformance	26061	2	Queryfileallocationmessagetask.Stop_V2()	Stop		Queryfileallocationmessagetask.			
+Microsoft-AppV-SharedPerformance	26070	1	Stagedirectorytask.Start_V1()	Start		Stagedirectorytask.			
+Microsoft-AppV-SharedPerformance	26071	1	Stagedirectorytask.Stop_V1()	Stop		Stagedirectorytask.			
+Microsoft-AppV-SharedPerformance	27000	1	StreamingManageractivityprocessing.Start_V1()	Start		StreamingManageractivityprocessing.			
+Microsoft-AppV-SharedPerformance	27001	1	StreamingManageractivityprocessing.Stop_V1()	Stop		StreamingManageractivityprocessing.			
+Microsoft-AppV-SharedPerformance	27002	1	StreamingManagerstartuptask.Start_V1()	Start		StreamingManagerstartuptask.			
+Microsoft-AppV-SharedPerformance	27003	1	StreamingManagerstartuptask.Stop_V1()	Stop		StreamingManagerstartuptask.			
+Microsoft-AppV-SharedPerformance	27004	1	StreamingManagerruntask.Start_V1()	Start		StreamingManagerruntask.			
+Microsoft-AppV-SharedPerformance	27005	1	StreamingManagerruntask.Stop_V1()	Stop		StreamingManagerruntask.			
+Microsoft-AppV-SharedPerformance	27006	1	StreamingManagerstoppingtask.Start_V1()	Start		StreamingManagerstoppingtask.			
+Microsoft-AppV-SharedPerformance	27007	1	StreamingManagerstoppingtask.Stop_V1()	Stop		StreamingManagerstoppingtask.			
+Microsoft-AppV-SharedPerformance	27008	1	StreamingManagershuttingdowntask.Start_V1()	Start		StreamingManagershuttingdowntask.			
+Microsoft-AppV-SharedPerformance	27009	1	StreamingManagershuttingdowntask.Stop_V1()	Stop		StreamingManagershuttingdowntask.			
+Microsoft-AppV-SharedPerformance	27010	1	UserLogon.Start_V1()	Start		UserLogon.			
+Microsoft-AppV-SharedPerformance	27011	1	UserLogon.Stop_V1()	Stop		UserLogon.			
+Microsoft-AppV-SharedPerformance	27012	1	Userlogoff.Start_V1()	Start		Userlogoff.			
+Microsoft-AppV-SharedPerformance	27013	1	Userlogoff.Stop_V1()	Stop		Userlogoff.			
+Microsoft-AppV-SharedPerformance	27014	1	HandleConfigurePackageStart_V1()	Start		HandleConfigurePackage			
+Microsoft-AppV-SharedPerformance	27015	1	HandleConfigurePackageStop_V1()	Stop		HandleConfigurePackage			
+Microsoft-AppV-SharedPerformance	27016	1	HandleConfigurePackageUndoStart_V1()	Start		HandleConfigurePackageUndo			
+Microsoft-AppV-SharedPerformance	27017	1	HandleConfigurePackageUndoStop_V1()	Stop		HandleConfigurePackageUndo			
+Microsoft-AppV-SharedPerformance	27018	1	HandleRemovePackageStart_V1()	Start		HandleRemovePackage			
+Microsoft-AppV-SharedPerformance	27019	1	HandleRemovePackageStop_V1()	Stop		HandleRemovePackage			
+Microsoft-AppV-SharedPerformance	27020	1	HandlePackageLoadActivityStart_V1()	Start		HandlePackageLoadActivity			
+Microsoft-AppV-SharedPerformance	27021	1	HandlePackageLoadActivityStop_V1()	Stop		HandlePackageLoadActivity			
+Microsoft-AppV-SharedPerformance	27022	1	HandleConfigurePackageLoadRangesActivityStart_V1()	Start		HandleConfigurePackageLoadRangesActivity			
+Microsoft-AppV-SharedPerformance	27023	1	HandleConfigurePackageLoadRangesActivityStop_V1()	Stop		HandleConfigurePackageLoadRangesActivity			
+Microsoft-AppV-SharedPerformance	27024	1	HandlePackageCancelLoadActivityStart_V1()	Start		HandlePackageCancelLoadActivity			
+Microsoft-AppV-SharedPerformance	27025	1	HandlePackageCancelLoadActivityStop_V1()	Stop		HandlePackageCancelLoadActivity			
+Microsoft-AppV-SharedPerformance	27026	1	Filterrequestsessionlookup.Start_V1()	Start		Filterrequestsessionlookup.			
+Microsoft-AppV-SharedPerformance	27027	1	Filterrequestsessionlookup.Stop_V1()	Stop		Filterrequestsessionlookup.			
+Microsoft-AppV-SharedPerformance	27030	1	HandleConfigurePackageGroupActivityStart_V1()	Start		HandleConfigurePackageGroupActivity			
+Microsoft-AppV-SharedPerformance	27031	1	HandleConfigurePackageGroupActivityStop_V1()	Stop		HandleConfigurePackageGroupActivity			
+Microsoft-AppV-SharedPerformance	27032	1	HandleRemovePackageGroupActivityStart_V1()	Start		HandleRemovePackageGroupActivity			
+Microsoft-AppV-SharedPerformance	27033	1	HandleRemovePackageGroupActivityStop_V1()	Stop		HandleRemovePackageGroupActivity			
+Microsoft-AppV-SharedPerformance	27034	1	HandleVirtualEnvironmentCreatedActivityStart_V1()	Start		HandleVirtualEnvironmentCreatedActivity			
+Microsoft-AppV-SharedPerformance	27035	1	HandleVirtualEnvironmentCreatedActivityStop_V1()	Stop		HandleVirtualEnvironmentCreatedActivity			
+Microsoft-AppV-SharedPerformance	27036	1	HandleVirtualEnvironmentCreatedCompleteActivityStart_V1()	Start		HandleVirtualEnvironmentCreatedCompleteActivity			
+Microsoft-AppV-SharedPerformance	27037	1	HandleVirtualEnvironmentCreatedCompleteActivityStop_V1()	Stop		HandleVirtualEnvironmentCreatedCompleteActivity			
+Microsoft-AppV-SharedPerformance	27038	1	HandleGetPackageBytesLoadedActivityStart_V1()	Start		HandleGetPackageBytesLoadedActivity			
+Microsoft-AppV-SharedPerformance	27039	1	HandleGetPackageBytesLoadedActivityStop_V1()	Stop		HandleGetPackageBytesLoadedActivity			
+Microsoft-AppV-SharedPerformance	27040	1	HandlePublishPackageCompleteActivityStart_V1()	Start		HandlePublishPackageCompleteActivity			
+Microsoft-AppV-SharedPerformance	27041	1	HandlePublishPackageCompleteActivityStop_V1()	Stop		HandlePublishPackageCompleteActivity			
+Microsoft-AppV-SharedPerformance	27042	1	HandleUnpublishPackageActivityStart_V1()	Start		HandleUnpublishPackageActivity			
+Microsoft-AppV-SharedPerformance	27043	1	HandleUnpublishPackageActivityStop_V1()	Stop		HandleUnpublishPackageActivity			
+Microsoft-AppV-SharedPerformance	27044	1	HandleGetPackageStreamingAttributesStart_V1()	Start		HandleGetPackageStreamingAttributes			
+Microsoft-AppV-SharedPerformance	27045	1	HandleGetPackageStreamingAttributesStop_V1()	Stop		HandleGetPackageStreamingAttributes			
+Microsoft-AppV-SharedPerformance	27046	1	HandleUnpublishPackageActivityStart27046_V1()	Start		HandleUnpublishPackageActivity			
+Microsoft-AppV-SharedPerformance	27047	1	HandleUnpublishPackageActivityStop27047_V1()	Stop		HandleUnpublishPackageActivity			
+Microsoft-AppV-SharedPerformance	27048	1	HandlePublishPackageActivityStart_V1()	Start		HandlePublishPackageActivity			
+Microsoft-AppV-SharedPerformance	27049	1	HandlePublishPackageActivityStop_V1()	Stop		HandlePublishPackageActivity			
+Microsoft-AppV-SharedPerformance	27051	1	HandlePublishPackageUndoActivityStart_V1()	Start		HandlePublishPackageUndoActivity			
+Microsoft-AppV-SharedPerformance	27052	1	HandlePublishPackageUndoActivityStop_V1()	Stop		HandlePublishPackageUndoActivity			
+Microsoft-AppV-SharedPerformance	27053	1	HandleVirtualEnvironmentTerminatedActivityStart_V1()	Start		HandleVirtualEnvironmentTerminatedActivity			
+Microsoft-AppV-SharedPerformance	27054	1	HandleVirtualEnvironmentTerminatedActivityStop_V1()	Stop		HandleVirtualEnvironmentTerminatedActivity			
+Microsoft-AppV-SharedPerformance	27055	1	HandleSettingChangedActivityStart_V1()	Start		HandleSettingChangedActivity			
+Microsoft-AppV-SharedPerformance	27056	1	HandleSettingChangedActivityStop_V1()	Stop		HandleSettingChangedActivity			
+Microsoft-AppV-SharedPerformance	27057	1	SessionConnectStart_V1()	Start		SessionConnect			
+Microsoft-AppV-SharedPerformance	27058	1	SessionConnectStop_V1()	Stop		SessionConnect			
+Microsoft-AppV-SharedPerformance	27059	1	PackageIndexInitializeStart_V1()	Start		PackageIndexInitialize			
+Microsoft-AppV-SharedPerformance	27060	1	PackageIndexInitializeStop_V1()	Stop		PackageIndexInitialize			
+Microsoft-AppV-SharedPerformance	27061	1	GetPackageGUIDsFromURLActivityStart_V1()	Start		GetPackageGUIDsFromURLActivity			
+Microsoft-AppV-SharedPerformance	27062	1	GetPackageGUIDsFromURLActivityStop_V1()	Stop		GetPackageGUIDsFromURLActivity			
+Microsoft-AppV-SharedPerformance	27063	1	FeatureBlockLoadStart_V1()	Start		FeatureBlockLoad			
+Microsoft-AppV-SharedPerformance	27064	1	FeatureBlockLoadStop_V1()	Stop		FeatureBlockLoad			
+Microsoft-AppV-SharedPerformance	28001	1	TransportrunrequestoperationStart_V1()	Start		Transportrunrequestoperation			
+Microsoft-AppV-SharedPerformance	28002	1	TransportrunrequestoperationStop_V1()	Stop		Transportrunrequestoperation			
+Microsoft-AppV-SharedPerformance	28011	1	TransportrunrequestoperationStart28011_V1()	Start		Transportrunrequestoperation			
+Microsoft-AppV-SharedPerformance	28012	1	TransportrunrequestoperationStop28012_V1()	Stop		Transportrunrequestoperation			
+Microsoft-AppV-SharedPerformance	28041	1	TransportStreamContentoperationStart_V1()	Start		TransportStreamContentoperation			
+Microsoft-AppV-SharedPerformance	28042	1	TransportStreamContentoperationStop_V1()	Stop		TransportStreamContentoperation			
+Microsoft-AppV-SharedPerformance	28051	1	TransportgetattributesoperationStart_V1()	Start		Transportgetattributesoperation			
+Microsoft-AppV-SharedPerformance	28052	1	TransportgetattributesoperationStop_V1()	Stop		Transportgetattributesoperation			
+Microsoft-AppV-SharedPerformance	28061	1	TransportrunrequestoperationStart28061_V1()	Start		Transportrunrequestoperation			
+Microsoft-AppV-SharedPerformance	28062	1	TransportrunrequestoperationStop28062_V1()	Stop		Transportrunrequestoperation			
+Microsoft-AppV-SharedPerformance	28071	1	TransportcancelrequestoperationStart_V1()	Start		Transportcancelrequestoperation			
+Microsoft-AppV-SharedPerformance	28072	1	TransportcancelrequestoperationStop_V1()	Stop		Transportcancelrequestoperation			
+Microsoft-AppV-SharedPerformance	28081	1	TransportcancelrequestoperationStart28081_V1()	Start		Transportcancelrequestoperation			
+Microsoft-AppV-SharedPerformance	28082	1	TransportcancelrequestoperationStop28082_V1()	Stop		Transportcancelrequestoperation			
+Microsoft-AppV-SharedPerformance	29000	1	HandleActivityTask.Start_V1()	Start		HandleActivityTask.			
+Microsoft-AppV-SharedPerformance	29001	1	HandleActivityTask.Stop_V1()	Stop		HandleActivityTask.			
+Microsoft-AppV-SharedPerformance	29002	1	AddProcessToVETask.Start_V1()	Start		AddProcessToVETask.			
+Microsoft-AppV-SharedPerformance	29003	1	AddProcessToVETask.Stop_V1()	Stop		AddProcessToVETask.			
+Microsoft-AppV-SharedPerformance	29004	1	RemoveProcessFromVETask.Start_V1()	Start		RemoveProcessFromVETask.			
+Microsoft-AppV-SharedPerformance	29005	1	RemoveProcessFromVETask.Stop_V1()	Stop		RemoveProcessFromVETask.			
+Microsoft-AppV-SharedPerformance	29006	1	NewVETask.Start_V1()	Start		NewVETask.			
+Microsoft-AppV-SharedPerformance	29007	1	NewVETask.Stop_V1()	Stop		NewVETask.			
+Microsoft-AppV-SharedPerformance	29008	1	TerminateVETask.Start_V1()	Start		TerminateVETask.			
+Microsoft-AppV-SharedPerformance	29009	1	TerminateVETask.Stop_V1()	Stop		TerminateVETask.			
+Microsoft-AppV-SharedPerformance	29010	1	InjectDllTask.Start_V1()	Start		InjectDllTask.			
+Microsoft-AppV-SharedPerformance	29011	1	InjectDllTask.Stop_V1()	Stop		InjectDllTask.			
+Microsoft-AppV-SharedPerformance	29012	1	StartSubsystemRuntimeTask.Start_V1()	Start		StartSubsystemRuntimeTask.			
+Microsoft-AppV-SharedPerformance	29013	1	StartSubsystemRuntimeTask.Stop_V1()	Stop		StartSubsystemRuntimeTask.			
+Microsoft-AppV-SharedPerformance	29014	1	StopSubsystemRuntimeTask.Start_V1()	Start		StopSubsystemRuntimeTask.			
+Microsoft-AppV-SharedPerformance	29015	1	StopSubsystemRuntimeTask.Stop_V1()	Stop		StopSubsystemRuntimeTask.			
+Microsoft-AppV-SharedPerformance	29016	1	StartupTask.Start_V1()	Start		StartupTask.			
+Microsoft-AppV-SharedPerformance	29017	1	StartupTask.Stop_V1()	Stop		StartupTask.			
+Microsoft-AppV-SharedPerformance	29018	1	RunTask.Start_V1()	Start		RunTask.			
+Microsoft-AppV-SharedPerformance	29019	1	RunTask.Stop_V1()	Stop		RunTask.			
+Microsoft-AppV-SharedPerformance	29020	1	StopTask.Start_V1()	Start		StopTask.			
+Microsoft-AppV-SharedPerformance	29021	1	StopTask.Stop_V1()	Stop		StopTask.			
+Microsoft-AppV-SharedPerformance	29022	1	ShutdownTask.Start_V1()	Start		ShutdownTask.			
+Microsoft-AppV-SharedPerformance	29023	1	ShutdownTask.Stop_V1()	Stop		ShutdownTask.			
+Microsoft-AppV-SharedPerformance	29024	1	Handleinjectdlltoachildprocess.Start_V1()	Start		Handleinjectdlltoachildprocess.			
+Microsoft-AppV-SharedPerformance	29025	1	Handleinjectdlltoachildprocess.Stop_V1()	Stop		Handleinjectdlltoachildprocess.			
+Microsoft-AppV-SharedPerformance	29026	1	InjectModuleIntoModuleTask.Start_V1()	Start		InjectModuleIntoModuleTask.			
+Microsoft-AppV-SharedPerformance	29027	1	InjectModuleIntoModuleTask.Stop_V1()	Stop		InjectModuleIntoModuleTask.			
+Microsoft-AppV-SharedPerformance	29028	1	VSC.StartSubsystemProcessRuntimesStart_V1()	Start		VSC.StartSubsystemProcessRuntimes			
+Microsoft-AppV-SharedPerformance	29029	1	VSC.StartSubsystemProcessRuntimesStop_V1()	Stop		VSC.StartSubsystemProcessRuntimes			
+Microsoft-AppV-SharedPerformance	29030	1	VSC.StopSubsystemProcessRuntimesStart_V1()	Start		VSC.StopSubsystemProcessRuntimes			
+Microsoft-AppV-SharedPerformance	29031	1	VSC.StopSubsystemProcessRuntimesStop_V1()	Stop		VSC.StopSubsystemProcessRuntimes			
+Microsoft-AppV-SharedPerformance	30001	1	Packaging_3900Start_V1()	Start		Packaging_3900			
+Microsoft-AppV-SharedPerformance	30002	1	Packaging_3900Stop_V1()	Stop		Packaging_3900			
+Microsoft-AppV-SharedPerformance	30003	1	ManifestRead_3901Start_V1()	Start		ManifestRead_3901			
+Microsoft-AppV-SharedPerformance	30004	1	ManifestRead_3901Stop_V1()	Stop		ManifestRead_3901			
+Microsoft-AppV-SharedPerformance	30005	1	PolicyRead_3902Start_V1()	Start		PolicyRead_3902			
+Microsoft-AppV-SharedPerformance	30006	1	PolicyRead_3902Stop_V1()	Stop		PolicyRead_3902			
+Microsoft-AppV-SharedPerformance	30007	1	Publishing_3903Start_V1()	Start		Publishing_3903			
+Microsoft-AppV-SharedPerformance	30008	1	Publishing_3903Stop_V1()	Stop		Publishing_3903			
+Microsoft-AppV-SharedPerformance	30009	1	Unpublishing_3904Start_V1()	Start		Unpublishing_3904			
+Microsoft-AppV-SharedPerformance	30010	1	Unpublishing_3904Stop_V1()	Stop		Unpublishing_3904			
+Microsoft-AppV-SharedPerformance	30012	1	task_030012_V1(UInt32 uint32)			task_0			
+Microsoft-AppV-SharedPerformance	30013	1	task_030013_V1(UInt32 uint32)			task_0			
+Microsoft-AppV-SharedPerformance	30501	1	Packaging_4000Start_V1()	Start		Packaging_4000			
+Microsoft-AppV-SharedPerformance	30502	1	Packaging_4000Stop_V1()	Stop		Packaging_4000			
+Microsoft-AppV-SharedPerformance	30503	1	ManifestRead_4001Start_V1()	Start		ManifestRead_4001			
+Microsoft-AppV-SharedPerformance	30504	1	ManifestRead_4001Stop_V1()	Stop		ManifestRead_4001			
+Microsoft-AppV-SharedPerformance	30505	1	PolicyRead_4002Start_V1()	Start		PolicyRead_4002			
+Microsoft-AppV-SharedPerformance	30506	1	PolicyRead_4002Stop_V1()	Stop		PolicyRead_4002			
+Microsoft-AppV-SharedPerformance	30507	1	Publishing_4003Start_V1()	Start		Publishing_4003			
+Microsoft-AppV-SharedPerformance	30508	1	Publishing_4003Stop_V1()	Stop		Publishing_4003			
+Microsoft-AppV-SharedPerformance	30509	1	Unpublishing_4004Start_V1()	Start		Unpublishing_4004			
+Microsoft-AppV-SharedPerformance	30510	1	Unpublishing_4004Stop_V1()	Stop		Unpublishing_4004			
+Microsoft-AppV-SharedPerformance	30512	1	task_030512_V1(UInt32 uint32)			task_0			
+Microsoft-AppV-SharedPerformance	30513	1	task_030513_V1(UInt32 uint32)			task_0			
+Microsoft-AppV-SharedPerformance	30601	1	Packaging_4100Start_V1()	Start		Packaging_4100			
+Microsoft-AppV-SharedPerformance	30602	1	Packaging_4100Stop_V1()	Stop		Packaging_4100			
+Microsoft-AppV-SharedPerformance	30603	1	ManifestRead_4101Start_V1()	Start		ManifestRead_4101			
+Microsoft-AppV-SharedPerformance	30604	1	ManifestRead_4101Stop_V1()	Stop		ManifestRead_4101			
+Microsoft-AppV-SharedPerformance	30605	1	PolicyRead_4102Start_V1()	Start		PolicyRead_4102			
+Microsoft-AppV-SharedPerformance	30606	1	PolicyRead_4102Stop_V1()	Stop		PolicyRead_4102			
+Microsoft-AppV-SharedPerformance	30607	1	Publishing_4103Start_V1()	Start		Publishing_4103			
+Microsoft-AppV-SharedPerformance	30608	1	Publishing_4103Stop_V1()	Stop		Publishing_4103			
+Microsoft-AppV-SharedPerformance	30609	1	Unpublishing_4104Start_V1()	Start		Unpublishing_4104			
+Microsoft-AppV-SharedPerformance	30610	1	Unpublishing_4104Stop_V1()	Stop		Unpublishing_4104			
+Microsoft-AppV-SharedPerformance	30611	1	ManifestSerializeStart_V1()	Start		ManifestSerialize			
+Microsoft-AppV-SharedPerformance	30612	1	ManifestSerializeStop_V1()	Stop		ManifestSerialize			
+Microsoft-AppV-SharedPerformance	30613	1	DeserializeManifest_4106Start_V1()	Start		DeserializeManifest_4106			
+Microsoft-AppV-SharedPerformance	30614	1	DeserializeManifest_4106Stop_V1()	Stop		DeserializeManifest_4106			
+Microsoft-AppV-SharedPerformance	30615	1	DeserializePolicy_4107Start_V1()	Start		DeserializePolicy_4107			
+Microsoft-AppV-SharedPerformance	30616	1	DeserializePolicy_4107Stop_V1()	Stop		DeserializePolicy_4107			
+Microsoft-AppV-SharedPerformance	30617	1	PublishPackage_4108Start_V1()	Start		PublishPackage_4108			
+Microsoft-AppV-SharedPerformance	30618	1	PublishPackage_4108Stop_V1()	Stop		PublishPackage_4108			
+Microsoft-AppV-SharedPerformance	30619	1	UnpublishPackage_4109Start_V1()	Start		UnpublishPackage_4109			
+Microsoft-AppV-SharedPerformance	30620	1	UnpublishPackage_4109Stop_V1()	Stop		UnpublishPackage_4109			
+Microsoft-AppV-SharedPerformance	30621	1	AssociateLowRightsStart_V1()	Start		AssociateLowRights			
+Microsoft-AppV-SharedPerformance	30622	1	AssociateLowRightsStop_V1()	Stop		AssociateLowRights			
+Microsoft-AppV-SharedPerformance	30630	1	task_030630_V1(UInt32 uint32)			task_0			
+Microsoft-AppV-SharedPerformance	30633	1	task_030633_V1(UInt32 uint32)			task_0			
+Microsoft-AppV-SharedPerformance	31000	1	VCOM.ServiceDllAttachStart_V1()	Start		VCOM.ServiceDllAttach			
+Microsoft-AppV-SharedPerformance	31001	1	VCOM.ServiceDllAttachStop_V1()	Stop		VCOM.ServiceDllAttach			
+Microsoft-AppV-SharedPerformance	31002	1	VCOM.ProcessDllAttachStart_V1()	Start		VCOM.ProcessDllAttach			
+Microsoft-AppV-SharedPerformance	31003	1	VCOM.ProcessDllAttachStop_V1()	Stop		VCOM.ProcessDllAttach			
+Microsoft-AppV-SharedPerformance	31004	1	VCOM.ServiceDllDetachStart_V1()	Start		VCOM.ServiceDllDetach			
+Microsoft-AppV-SharedPerformance	31005	1	VCOM.ServiceDllDetachStop_V1()	Stop		VCOM.ServiceDllDetach			
+Microsoft-AppV-SharedPerformance	31006	1	VCOM.ProcessDllDetachStart_V1()	Start		VCOM.ProcessDllDetach			
+Microsoft-AppV-SharedPerformance	31007	1	VCOM.ProcessDllDetachStop_V1()	Stop		VCOM.ProcessDllDetach			
+Microsoft-AppV-SharedPerformance	31008	1	VCOM.ServiceStartRuntimeStart_V1()	Start		VCOM.ServiceStartRuntime			
+Microsoft-AppV-SharedPerformance	31009	1	VCOM.ServiceStartRuntimeStop_V1()	Stop		VCOM.ServiceStartRuntime			
+Microsoft-AppV-SharedPerformance	31010	1	VCOM.ProcessStartRuntimeStart_V1()	Start		VCOM.ProcessStartRuntime			
+Microsoft-AppV-SharedPerformance	31011	1	VCOM.ProcessStartRuntimeStop_V1()	Stop		VCOM.ProcessStartRuntime			
+Microsoft-AppV-SharedPerformance	31012	1	VCOM.ServiceStopRuntimeStart_V1()	Start		VCOM.ServiceStopRuntime			
+Microsoft-AppV-SharedPerformance	31013	1	VCOM.ServiceStopRuntimeStop_V1()	Stop		VCOM.ServiceStopRuntime			
+Microsoft-AppV-SharedPerformance	31014	1	VCOM.ProcessStopRuntimeStart_V1()	Start		VCOM.ProcessStopRuntime			
+Microsoft-AppV-SharedPerformance	31015	1	VCOM.ProcessStopRuntimeStop_V1()	Stop		VCOM.ProcessStopRuntime			
+Microsoft-AppV-SharedPerformance	31016	1	VCOM.ServiceLoadGUIDMappingsStart_V1()	Start		VCOM.ServiceLoadGUIDMappings			
+Microsoft-AppV-SharedPerformance	31017	1	VCOM.ServiceLoadGUIDMappingsStop_V1()	Stop		VCOM.ServiceLoadGUIDMappings			
+Microsoft-AppV-SharedPerformance	31018	1	VCOM.ServiceStoreGUIDMappingsStart_V1()	Start		VCOM.ServiceStoreGUIDMappings			
+Microsoft-AppV-SharedPerformance	31019	1	VCOM.ServiceStoreGUIDMappingsStop_V1()	Stop		VCOM.ServiceStoreGUIDMappings			
+Microsoft-AppV-SharedPerformance	31020	1	VCOM.ProcessRetrievePoliciesStart_V1()	Start		VCOM.ProcessRetrievePolicies			
+Microsoft-AppV-SharedPerformance	31021	1	VCOM.ProcessRetrievePoliciesStop_V1()	Stop		VCOM.ProcessRetrievePolicies			
+Microsoft-AppV-SharedPerformance	31022	1	VCOM.ProcessApplyHooksStart_V1()	Start		VCOM.ProcessApplyHooks			
+Microsoft-AppV-SharedPerformance	31023	1	VCOM.ProcessApplyHooksStop_V1()	Stop		VCOM.ProcessApplyHooks			
+Microsoft-AppV-SharedPerformance	32000	1	VENV.ServiceDllAttachStart_V1()	Start		VENV.ServiceDllAttach			
+Microsoft-AppV-SharedPerformance	32001	1	VENV.ServiceDllAttachStop_V1()	Stop		VENV.ServiceDllAttach			
+Microsoft-AppV-SharedPerformance	32002	1	VENV.ProcessDllAttachStart_V1()	Start		VENV.ProcessDllAttach			
+Microsoft-AppV-SharedPerformance	32003	1	VENV.ProcessDllAttachStop_V1()	Stop		VENV.ProcessDllAttach			
+Microsoft-AppV-SharedPerformance	32004	1	VENV.ServiceDllDetachStart_V1()	Start		VENV.ServiceDllDetach			
+Microsoft-AppV-SharedPerformance	32005	1	VENV.ServiceDllDetachStop_V1()	Stop		VENV.ServiceDllDetach			
+Microsoft-AppV-SharedPerformance	32006	1	VENV.ProcessDllDetachStart_V1()	Start		VENV.ProcessDllDetach			
+Microsoft-AppV-SharedPerformance	32007	1	VENV.ProcessDllDetachStop_V1()	Stop		VENV.ProcessDllDetach			
+Microsoft-AppV-SharedPerformance	32008	1	VENV.ServiceStartRuntimeStart_V1()	Start		VENV.ServiceStartRuntime			
+Microsoft-AppV-SharedPerformance	32009	1	VENV.ServiceStartRuntimeStop_V1()	Stop		VENV.ServiceStartRuntime			
+Microsoft-AppV-SharedPerformance	32010	1	VENV.ProcessStartRuntimeStart_V1()	Start		VENV.ProcessStartRuntime			
+Microsoft-AppV-SharedPerformance	32011	1	VENV.ProcessStartRuntimeStop_V1()	Stop		VENV.ProcessStartRuntime			
+Microsoft-AppV-SharedPerformance	32012	1	VENV.ServiceStopRuntimeStart_V1()	Start		VENV.ServiceStopRuntime			
+Microsoft-AppV-SharedPerformance	32013	1	VENV.ServiceStopRuntimeStop_V1()	Stop		VENV.ServiceStopRuntime			
+Microsoft-AppV-SharedPerformance	32014	1	VENV.ProcessStopRuntimeStart_V1()	Start		VENV.ProcessStopRuntime			
+Microsoft-AppV-SharedPerformance	32015	1	VENV.ProcessStopRuntimeStop_V1()	Stop		VENV.ProcessStopRuntime			
+Microsoft-AppV-SharedPerformance	32016	1	VENV.ServiceReadXMLStart_V1()	Start		VENV.ServiceReadXML			
+Microsoft-AppV-SharedPerformance	32017	1	VENV.ServiceReadXMLStop_V1()	Stop		VENV.ServiceReadXML			
+Microsoft-AppV-SharedPerformance	32018	1	VENV.ServiceLoadEnvVarListStart_V1()	Start		VENV.ServiceLoadEnvVarList			
+Microsoft-AppV-SharedPerformance	32019	1	VENV.ServiceLoadEnvVarListStop_V1()	Stop		VENV.ServiceLoadEnvVarList			
+Microsoft-AppV-SharedPerformance	32020	1	VENV.ProcessRetrieveEnvVarStart_V1()	Start		VENV.ProcessRetrieveEnvVar			
+Microsoft-AppV-SharedPerformance	32021	1	VENV.ProcessRetrieveEnvVarStop_V1()	Stop		VENV.ProcessRetrieveEnvVar			
+Microsoft-AppV-SharedPerformance	32022	1	VENV.ProcessWriteEnvVarStart_V1()	Start		VENV.ProcessWriteEnvVar			
+Microsoft-AppV-SharedPerformance	32023	1	VENV.ProcessWriteEnvVarStop_V1()	Stop		VENV.ProcessWriteEnvVar			
+Microsoft-AppV-SharedPerformance	32024	1	VENV.CreateProcessStart_V1()	Start		VENV.CreateProcess			
+Microsoft-AppV-SharedPerformance	32025	1	VENV.CreateProcessStop_V1()	Stop		VENV.CreateProcess			
+Microsoft-AppV-SharedPerformance	33000	1	VFONTS.ServiceDllAttachStart_V1()	Start		VFONTS.ServiceDllAttach			
+Microsoft-AppV-SharedPerformance	33001	1	VFONTS.ServiceDllAttachStop_V1()	Stop		VFONTS.ServiceDllAttach			
+Microsoft-AppV-SharedPerformance	33002	1	VFONTS.ProcessDllAttachStart_V1()	Start		VFONTS.ProcessDllAttach			
+Microsoft-AppV-SharedPerformance	33003	1	VFONTS.ProcessDllAttachStop_V1()	Stop		VFONTS.ProcessDllAttach			
+Microsoft-AppV-SharedPerformance	33004	1	VFONTS.ServiceDllDetachStart_V1()	Start		VFONTS.ServiceDllDetach			
+Microsoft-AppV-SharedPerformance	33005	1	VFONTS.ServiceDllDetachStop_V1()	Stop		VFONTS.ServiceDllDetach			
+Microsoft-AppV-SharedPerformance	33006	1	VFONTS.ProcessDllDetachStart_V1()	Start		VFONTS.ProcessDllDetach			
+Microsoft-AppV-SharedPerformance	33007	1	VFONTS.ProcessDllDetachStop_V1()	Stop		VFONTS.ProcessDllDetach			
+Microsoft-AppV-SharedPerformance	33008	1	VFONTS.ServiceStartRuntimeStart_V1()	Start		VFONTS.ServiceStartRuntime			
+Microsoft-AppV-SharedPerformance	33009	1	VFONTS.ServiceStartRuntimeStop_V1()	Stop		VFONTS.ServiceStartRuntime			
+Microsoft-AppV-SharedPerformance	33010	1	VFONTS.ProcessStartRuntimeStart_V1()	Start		VFONTS.ProcessStartRuntime			
+Microsoft-AppV-SharedPerformance	33011	1	VFONTS.ProcessStartRuntimeStop_V1()	Stop		VFONTS.ProcessStartRuntime			
+Microsoft-AppV-SharedPerformance	33012	1	VFONTS.ServiceStopRuntimeStart_V1()	Start		VFONTS.ServiceStopRuntime			
+Microsoft-AppV-SharedPerformance	33013	1	VFONTS.ServiceStopRuntimeStop_V1()	Stop		VFONTS.ServiceStopRuntime			
+Microsoft-AppV-SharedPerformance	33014	1	VFONTS.ProcessStopRuntimeStart_V1()	Start		VFONTS.ProcessStopRuntime			
+Microsoft-AppV-SharedPerformance	33015	1	VFONTS.ProcessStopRuntimeStop_V1()	Stop		VFONTS.ProcessStopRuntime			
+Microsoft-AppV-SharedPerformance	33016	1	VFONTS.ServiceLoadFontListStart_V1()	Start		VFONTS.ServiceLoadFontList			
+Microsoft-AppV-SharedPerformance	33017	1	VFONTS.ServiceLoadFontListStop_V1()	Stop		VFONTS.ServiceLoadFontList			
+Microsoft-AppV-SharedPerformance	33018	1	VFONTS.ProcessRetrieveFontsStart_V1()	Start		VFONTS.ProcessRetrieveFonts			
+Microsoft-AppV-SharedPerformance	33019	1	VFONTS.ProcessRetrieveFontsStop_V1()	Stop		VFONTS.ProcessRetrieveFonts			
+Microsoft-AppV-SharedPerformance	33020	1	VFONTS.ProcessInstallFontsStart_V1()	Start		VFONTS.ProcessInstallFonts			
+Microsoft-AppV-SharedPerformance	33021	1	VFONTS.ProcessInstallFontsStop_V1()	Stop		VFONTS.ProcessInstallFonts			
+Microsoft-AppV-SharedPerformance	34000	1	VFSservicestartruntimeStart_V1()	Start		VFSservicestartruntime			
+Microsoft-AppV-SharedPerformance	34001	1	VFSservicestartruntimeStop_V1()	Stop		VFSservicestartruntime			
+Microsoft-AppV-SharedPerformance	34002	1	VFSprocessstartruntimeStart_V1()	Start		VFSprocessstartruntime			
+Microsoft-AppV-SharedPerformance	34003	1	VFSprocessstartruntimeStop_V1()	Stop		VFSprocessstartruntime			
+Microsoft-AppV-SharedPerformance	34004	1	VFSservicestopruntimeStart_V1()	Start		VFSservicestopruntime			
+Microsoft-AppV-SharedPerformance	34005	1	VFSservicestopruntimeStop_V1()	Stop		VFSservicestopruntime			
+Microsoft-AppV-SharedPerformance	34006	1	VFSprocessstopruntimeStart_V1()	Start		VFSprocessstopruntime			
+Microsoft-AppV-SharedPerformance	34007	1	VFSprocessstopruntimeStop_V1()	Stop		VFSprocessstopruntime			
+Microsoft-AppV-SharedPerformance	34008	1	VFSprocessgetconfigurationStart_V1()	Start		VFSprocessgetconfiguration			
+Microsoft-AppV-SharedPerformance	34009	1	VFSprocessgetconfigurationStop_V1()	Stop		VFSprocessgetconfiguration			
+Microsoft-AppV-SharedPerformance	35000	1	VFScreatefileStart_V1()	Start		VFScreatefile			
+Microsoft-AppV-SharedPerformance	35001	1	VFScreatefileStop_V1()	Stop		VFScreatefile			
+Microsoft-AppV-SharedPerformance	35002	1	VFSclosehandleStart_V1()	Start		VFSclosehandle			
+Microsoft-AppV-SharedPerformance	35003	1	VFSclosehandleStop_V1()	Stop		VFSclosehandle			
+Microsoft-AppV-SharedPerformance	35004	1	VFSqueryattributesfileStart_V1()	Start		VFSqueryattributesfile			
+Microsoft-AppV-SharedPerformance	35005	1	VFSqueryattributesfileStop_V1()	Stop		VFSqueryattributesfile			
+Microsoft-AppV-SharedPerformance	35006	1	VFSqueryfullattributesfileStart_V1()	Start		VFSqueryfullattributesfile			
+Microsoft-AppV-SharedPerformance	35007	1	VFSqueryfullattributesfileStop_V1()	Stop		VFSqueryfullattributesfile			
+Microsoft-AppV-SharedPerformance	35008	1	VFSquerydirectoryfileStart_V1()	Start		VFSquerydirectoryfile			
+Microsoft-AppV-SharedPerformance	35009	1	VFSquerydirectoryfileStop_V1()	Stop		VFSquerydirectoryfile			
+Microsoft-AppV-SharedPerformance	35010	1	VFSdeletefileStart_V1()	Start		VFSdeletefile			
+Microsoft-AppV-SharedPerformance	35011	1	VFSdeletefileStop_V1()	Stop		VFSdeletefile			
+Microsoft-AppV-SharedPerformance	35012	1	VFSSetInformationFiledeleterequestStart_V1()	Start		VFSSetInformationFiledeleterequest			
+Microsoft-AppV-SharedPerformance	35013	1	VFSSetInformationFiledeleterequestStop_V1()	Stop		VFSSetInformationFiledeleterequest			
+Microsoft-AppV-SharedPerformance	35014	1	VFSSetInformationFilerenamerequestStart_V1()	Start		VFSSetInformationFilerenamerequest			
+Microsoft-AppV-SharedPerformance	35015	1	VFSSetInformationFilerenamerequestStop_V1()	Stop		VFSSetInformationFilerenamerequest			
+Microsoft-AppV-SharedPerformance	35016	1	VFSCreateActCtxArequestStart_V1()	Start		VFSCreateActCtxArequest			
+Microsoft-AppV-SharedPerformance	35017	1	VFSCreateActCtxArequestStop_V1()	Stop		VFSCreateActCtxArequest			
+Microsoft-AppV-SharedPerformance	35018	1	VFSCreateActCtxWrequestStart_V1()	Start		VFSCreateActCtxWrequest			
+Microsoft-AppV-SharedPerformance	35019	1	VFSCreateActCtxWrequestStop_V1()	Stop		VFSCreateActCtxWrequest			
+Microsoft-AppV-SharedPerformance	36001	1	Packaging_2801Start_V1()	Start		Packaging_2801			
+Microsoft-AppV-SharedPerformance	36002	1	Packaging_2801Stop_V1()	Stop		Packaging_2801			
+Microsoft-AppV-SharedPerformance	36003	1	ManifestWriteStart_V1()	Start		ManifestWrite			
+Microsoft-AppV-SharedPerformance	36004	1	ManifestWriteStop_V1()	Stop		ManifestWrite			
+Microsoft-AppV-SharedPerformance	36005	1	ManifestWrite_VirtualApplicationStart_V1()	Start		ManifestWrite_VirtualApplication			
+Microsoft-AppV-SharedPerformance	36006	1	ManifestWrite_VirtualApplicationStop_V1()	Stop		ManifestWrite_VirtualApplication			
+Microsoft-AppV-SharedPerformance	36010	1	Publishing_DeserializeManifestStart_V1()	Start		Publishing_DeserializeManifest			
+Microsoft-AppV-SharedPerformance	36011	1	Publishing_DeserializeManifestStop_V1()	Stop		Publishing_DeserializeManifest			
+Microsoft-AppV-SharedPerformance	36012	1	Publishing_PublishEPStart_V1()	Start		Publishing_PublishEP			
+Microsoft-AppV-SharedPerformance	36013	1	Publishing_PublishEPStop_V1()	Stop		Publishing_PublishEP			
+Microsoft-AppV-SharedPerformance	36014	1	Publishing_UnpublishEPStart_V1()	Start		Publishing_UnpublishEP			
+Microsoft-AppV-SharedPerformance	36015	1	Publishing_UnpublishEPStop_V1()	Stop		Publishing_UnpublishEP			
+Microsoft-AppV-SharedPerformance	36016	1	Publishing_PublishPackageStart_V1()	Start		Publishing_PublishPackage			
+Microsoft-AppV-SharedPerformance	36017	1	Publishing_PublishPackageStop_V1()	Stop		Publishing_PublishPackage			
+Microsoft-AppV-SharedPerformance	36018	1	Publishing_UnpublishPackageStart_V1()	Start		Publishing_UnpublishPackage			
+Microsoft-AppV-SharedPerformance	36019	1	Publishing_UnpublishPackageStop_V1()	Stop		Publishing_UnpublishPackage			
+Microsoft-AppV-SharedPerformance	37000	1	ActivityTask.VIRTMAN.Start_V1()	Start		ActivityTask.VIRTMAN.			
+Microsoft-AppV-SharedPerformance	37001	1	ActivityTask.VIRTMAN.Stop_V1()	Stop		ActivityTask.VIRTMAN.			
+Microsoft-AppV-SharedPerformance	37002	1	NotificationTask.VIRTMAN.Start_V1()	Start		NotificationTask.VIRTMAN.			
+Microsoft-AppV-SharedPerformance	37003	1	NotificationTask.VIRTMAN.Stop_V1()	Stop		NotificationTask.VIRTMAN.			
+Microsoft-AppV-SharedPerformance	37004	1	StartupTask.VIRTMAN.Start_V1()	Start		StartupTask.VIRTMAN.			
+Microsoft-AppV-SharedPerformance	37005	1	StartupTask.VIRTMAN.Stop_V1()	Stop		StartupTask.VIRTMAN.			
+Microsoft-AppV-SharedPerformance	37006	1	RunTask.VIRTMAN.Start_V1()	Start		RunTask.VIRTMAN.			
+Microsoft-AppV-SharedPerformance	37007	1	RunTask.VIRTMAN.Stop_V1()	Stop		RunTask.VIRTMAN.			
+Microsoft-AppV-SharedPerformance	37008	1	StopTask.VIRTMAN.Start_V1()	Start		StopTask.VIRTMAN.			
+Microsoft-AppV-SharedPerformance	37009	1	StopTask.VIRTMAN.Stop_V1()	Stop		StopTask.VIRTMAN.			
+Microsoft-AppV-SharedPerformance	37010	1	ShutdownTask.VIRTMAN.Start_V1()	Start		ShutdownTask.VIRTMAN.			
+Microsoft-AppV-SharedPerformance	37011	1	ShutdownTask.VIRTMAN.Stop_V1()	Stop		ShutdownTask.VIRTMAN.			
+Microsoft-AppV-SharedPerformance	37012	1	InjectNotificationTask.VIRTMAN.Start_V1()	Start		InjectNotificationTask.VIRTMAN.			
+Microsoft-AppV-SharedPerformance	37013	1	InjectNotificationTask.VIRTMAN.Stop_V1()	Stop		InjectNotificationTask.VIRTMAN.			
+Microsoft-AppV-SharedPerformance	37014	1	PublishRoamingTask.VIRTMAN.Start_V1()	Start		PublishRoamingTask.VIRTMAN.			
+Microsoft-AppV-SharedPerformance	37015	1	PublishRoamingTask.VIRTMAN.Stop_V1()	Stop		PublishRoamingTask.VIRTMAN.			
+Microsoft-AppV-SharedPerformance	38000	1	VObjects.ServiceDllAttachStart_V1()	Start		VObjects.ServiceDllAttach			
+Microsoft-AppV-SharedPerformance	38001	1	VObjects.ServiceDllAttachStop_V1()	Stop		VObjects.ServiceDllAttach			
+Microsoft-AppV-SharedPerformance	38002	1	VObjects.ProcessDllAttachStart_V1()	Start		VObjects.ProcessDllAttach			
+Microsoft-AppV-SharedPerformance	38003	1	VObjects.ProcessDllAttachStop_V1()	Stop		VObjects.ProcessDllAttach			
+Microsoft-AppV-SharedPerformance	38004	1	VObjects.ServiceDllDetachStart_V1()	Start		VObjects.ServiceDllDetach			
+Microsoft-AppV-SharedPerformance	38005	1	VObjects.ServiceDllDetachStop_V1()	Stop		VObjects.ServiceDllDetach			
+Microsoft-AppV-SharedPerformance	38006	1	VObjects.ProcessDllDetachStart_V1()	Start		VObjects.ProcessDllDetach			
+Microsoft-AppV-SharedPerformance	38007	1	VObjects.ProcessDllDetachStop_V1()	Stop		VObjects.ProcessDllDetach			
+Microsoft-AppV-SharedPerformance	38008	1	VObjects.ServiceStartRuntimeStart_V1()	Start		VObjects.ServiceStartRuntime			
+Microsoft-AppV-SharedPerformance	38009	1	VObjects.ServiceStartRuntimeStop_V1()	Stop		VObjects.ServiceStartRuntime			
+Microsoft-AppV-SharedPerformance	38010	1	VObjects.ProcessStartRuntimeStart_V1()	Start		VObjects.ProcessStartRuntime			
+Microsoft-AppV-SharedPerformance	38011	1	VObjects.ProcessStartRuntimeStop_V1()	Stop		VObjects.ProcessStartRuntime			
+Microsoft-AppV-SharedPerformance	38012	1	VObjects.ServiceStopRuntimeStart_V1()	Start		VObjects.ServiceStopRuntime			
+Microsoft-AppV-SharedPerformance	38013	1	VObjects.ServiceStopRuntimeStop_V1()	Stop		VObjects.ServiceStopRuntime			
+Microsoft-AppV-SharedPerformance	38014	1	VObjects.ProcessStopRuntimeStart_V1()	Start		VObjects.ProcessStopRuntime			
+Microsoft-AppV-SharedPerformance	38015	1	VObjects.ProcessStopRuntimeStop_V1()	Stop		VObjects.ProcessStopRuntime			
+Microsoft-AppV-SharedPerformance	38016	1	VObjects.ServiceLoadExclusionsStart_V1()	Start		VObjects.ServiceLoadExclusions			
+Microsoft-AppV-SharedPerformance	38017	1	VObjects.ServiceLoadExclusionsStop_V1()	Stop		VObjects.ServiceLoadExclusions			
+Microsoft-AppV-SharedPerformance	38018	1	VObjects.ProcessRetrieveExclusionsStart_V1()	Start		VObjects.ProcessRetrieveExclusions			
+Microsoft-AppV-SharedPerformance	38019	1	VObjects.ProcessRetrieveExclusionsStop_V1()	Stop		VObjects.ProcessRetrieveExclusions			
+Microsoft-AppV-SharedPerformance	38020	1	VObjects.ServiceReadXMLStart_V1()	Start		VObjects.ServiceReadXML			
+Microsoft-AppV-SharedPerformance	38021	1	VObjects.ServiceReadXMLStop_V1()	Stop		VObjects.ServiceReadXML			
+Microsoft-AppV-SharedPerformance	38022	1	VObjects.ProcessInitializeExclusionsStart_V1()	Start		VObjects.ProcessInitializeExclusions			
+Microsoft-AppV-SharedPerformance	38023	1	VObjects.ProcessInitializeExclusionsStop_V1()	Stop		VObjects.ProcessInitializeExclusions			
+Microsoft-AppV-SharedPerformance	38024	1	VObjects.ProcessApplyHooksStart_V1()	Start		VObjects.ProcessApplyHooks			
+Microsoft-AppV-SharedPerformance	38025	1	VObjects.ProcessApplyHooksStop_V1()	Stop		VObjects.ProcessApplyHooks			
+Microsoft-AppV-SharedPerformance	38026	1	VObjects.ProcessMapNameStart_V1()	Start		VObjects.ProcessMapName			
+Microsoft-AppV-SharedPerformance	38027	1	VObjects.ProcessMapNameStop_V1()	Stop		VObjects.ProcessMapName			
+Microsoft-AppV-SharedPerformance	39000	0	VReg.ServiceStartRuntimeStart()	Start		VReg.ServiceStartRuntime			
+Microsoft-AppV-SharedPerformance	39001	0	VReg.ServiceStartRuntimeStop()	Stop		VReg.ServiceStartRuntime			
+Microsoft-AppV-SharedPerformance	39002	0	VReg.ProcessStartRuntimeStart()	Start		VReg.ProcessStartRuntime			
+Microsoft-AppV-SharedPerformance	39003	0	VReg.ProcessStartRuntimeStop()	Stop		VReg.ProcessStartRuntime			
+Microsoft-AppV-SharedPerformance	39004	0	VReg.ServiceStopRuntimeStart()	Start		VReg.ServiceStopRuntime			
+Microsoft-AppV-SharedPerformance	39005	0	VReg.ServiceStopRuntimeStop()	Stop		VReg.ServiceStopRuntime			
+Microsoft-AppV-SharedPerformance	39006	0	VReg.ProcessStopRuntimeStart()	Start		VReg.ProcessStopRuntime			
+Microsoft-AppV-SharedPerformance	39007	0	VReg.ProcessStopRuntimeStop()	Stop		VReg.ProcessStopRuntime			
+Microsoft-AppV-SharedPerformance	40000	0	VReg.CreateKeyStart()	Start		VReg.CreateKey			
+Microsoft-AppV-SharedPerformance	40001	0	VReg.CreateKeyStop()	Stop		VReg.CreateKey			
+Microsoft-AppV-SharedPerformance	40002	0	VReg.OpenKeyStart()	Start		VReg.OpenKey			
+Microsoft-AppV-SharedPerformance	40003	0	VReg.OpenKeyStop()	Stop		VReg.OpenKey			
+Microsoft-AppV-SharedPerformance	40004	0	VReg.EnumKeyStart()	Start		VReg.EnumKey			
+Microsoft-AppV-SharedPerformance	40005	0	VReg.EnumKeyStop()	Stop		VReg.EnumKey			
+Microsoft-AppV-SharedPerformance	40006	0	VReg.QueryKeyStart()	Start		VReg.QueryKey			
+Microsoft-AppV-SharedPerformance	40007	0	VReg.QueryKeyStop()	Stop		VReg.QueryKey			
+Microsoft-AppV-SharedPerformance	40008	0	VReg.SetInformationKeyStart()	Start		VReg.SetInformationKey			
+Microsoft-AppV-SharedPerformance	40009	0	VReg.SetInformationKeyStop()	Stop		VReg.SetInformationKey			
+Microsoft-AppV-SharedPerformance	40010	0	VReg.DeleteKeyStart()	Start		VReg.DeleteKey			
+Microsoft-AppV-SharedPerformance	40011	0	VReg.DeleteKeyStop()	Stop		VReg.DeleteKey			
+Microsoft-AppV-SharedPerformance	40012	0	VReg.RenameKeyStart()	Start		VReg.RenameKey			
+Microsoft-AppV-SharedPerformance	40013	0	VReg.RenameKeyStop()	Stop		VReg.RenameKey			
+Microsoft-AppV-SharedPerformance	40014	0	VReg.FlushKeyStart()	Start		VReg.FlushKey			
+Microsoft-AppV-SharedPerformance	40015	0	VReg.FlushKeyStop()	Stop		VReg.FlushKey			
+Microsoft-AppV-SharedPerformance	40016	0	VReg.NotifyChangeKeyStart()	Start		VReg.NotifyChangeKey			
+Microsoft-AppV-SharedPerformance	40017	0	VReg.NotifyChangeKeyStop()	Stop		VReg.NotifyChangeKey			
+Microsoft-AppV-SharedPerformance	40018	0	VReg.NotifyChangeMultipleKeysStart()	Start		VReg.NotifyChangeMultipleKeys			
+Microsoft-AppV-SharedPerformance	40019	0	VReg.NotifyChangeMultipleKeysStop()	Stop		VReg.NotifyChangeMultipleKeys			
+Microsoft-AppV-SharedPerformance	40020	0	VReg.EnumValueStart()	Start		VReg.EnumValue			
+Microsoft-AppV-SharedPerformance	40021	0	VReg.EnumValueStop()	Stop		VReg.EnumValue			
+Microsoft-AppV-SharedPerformance	40022	0	VReg.QueryValueStart()	Start		VReg.QueryValue			
+Microsoft-AppV-SharedPerformance	40023	0	VReg.QueryValueStop()	Stop		VReg.QueryValue			
+Microsoft-AppV-SharedPerformance	40024	0	VReg.QueryMultipleValuesStart()	Start		VReg.QueryMultipleValues			
+Microsoft-AppV-SharedPerformance	40025	0	VReg.QueryMultipleValuesStop()	Stop		VReg.QueryMultipleValues			
+Microsoft-AppV-SharedPerformance	40026	0	VReg.SetValueStart()	Start		VReg.SetValue			
+Microsoft-AppV-SharedPerformance	40027	0	VReg.SetValueStop()	Stop		VReg.SetValue			
+Microsoft-AppV-SharedPerformance	40028	0	VReg.DeleteValueStart()	Start		VReg.DeleteValue			
+Microsoft-AppV-SharedPerformance	40029	0	VReg.DeleteValueStop()	Stop		VReg.DeleteValue			
+Microsoft-AppV-SharedPerformance	40030	0	VReg.CloseKeyStart()	Start		VReg.CloseKey			
+Microsoft-AppV-SharedPerformance	40031	0	VReg.CloseKeyStop()	Stop		VReg.CloseKey			
+Microsoft-AppV-SharedPerformance	40032	0	VReg.QuerySecurityStart()	Start		VReg.QuerySecurity			
+Microsoft-AppV-SharedPerformance	40033	0	VReg.QuerySecurityStop()	Stop		VReg.QuerySecurity			
+Microsoft-AppV-SharedPerformance	40034	0	VReg.SetSecurityStart()	Start		VReg.SetSecurity			
+Microsoft-AppV-SharedPerformance	40035	0	VReg.SetSecurityStop()	Stop		VReg.SetSecurity			
+Microsoft-AppV-SharedPerformance	40036	0	VReg.QueryObjectStart()	Start		VReg.QueryObject			
+Microsoft-AppV-SharedPerformance	40037	0	VReg.QueryObjectStop()	Stop		VReg.QueryObject			
+Microsoft-AppV-SharedPerformance	40038	0	VReg.DuplicateObjectStart()	Start		VReg.DuplicateObject			
+Microsoft-AppV-SharedPerformance	40039	0	VReg.DuplicateObjectStop()	Stop		VReg.DuplicateObject			
+Microsoft-AppV-SharedPerformance	41000	1	VServices.ServiceDllAttachStart_V1()	Start		VServices.ServiceDllAttach			
+Microsoft-AppV-SharedPerformance	41001	1	VServices.ServiceDllAttachStop_V1()	Stop		VServices.ServiceDllAttach			
+Microsoft-AppV-SharedPerformance	41002	1	VServices.ProcessDllAttachStart_V1()	Start		VServices.ProcessDllAttach			
+Microsoft-AppV-SharedPerformance	41003	1	VServices.ProcessDllAttachStop_V1()	Stop		VServices.ProcessDllAttach			
+Microsoft-AppV-SharedPerformance	41004	1	VServices.ServiceDllDetachStart_V1()	Start		VServices.ServiceDllDetach			
+Microsoft-AppV-SharedPerformance	41005	1	VServices.ServiceDllDetachStop_V1()	Stop		VServices.ServiceDllDetach			
+Microsoft-AppV-SharedPerformance	41006	1	VServices.ProcessDllDetachStart_V1()	Start		VServices.ProcessDllDetach			
+Microsoft-AppV-SharedPerformance	41007	1	VServices.ProcessDllDetachStop_V1()	Stop		VServices.ProcessDllDetach			
+Microsoft-AppV-SharedPerformance	41008	1	VServices.ServiceStartRuntimeStart_V1()	Start		VServices.ServiceStartRuntime			
+Microsoft-AppV-SharedPerformance	41009	1	VServices.ServiceStartRuntimeStop_V1()	Stop		VServices.ServiceStartRuntime			
+Microsoft-AppV-SharedPerformance	41010	1	VServices.ProcessStartRuntimeStart_V1()	Start		VServices.ProcessStartRuntime			
+Microsoft-AppV-SharedPerformance	41011	1	VServices.ProcessStartRuntimeStop_V1()	Stop		VServices.ProcessStartRuntime			
+Microsoft-AppV-SharedPerformance	41012	1	VServices.ServiceStopRuntimeStart_V1()	Start		VServices.ServiceStopRuntime			
+Microsoft-AppV-SharedPerformance	41013	1	VServices.ServiceStopRuntimeStop_V1()	Stop		VServices.ServiceStopRuntime			
+Microsoft-AppV-SharedPerformance	41014	1	VServices.ProcessStopRuntimeStart_V1()	Start		VServices.ProcessStopRuntime			
+Microsoft-AppV-SharedPerformance	41015	1	VServices.ProcessStopRuntimeStop_V1()	Stop		VServices.ProcessStopRuntime			
+Microsoft-AppV-SharedPerformance	41016	1	VServices.ServiceAutoStartServicesStart_V1()	Start		VServices.ServiceAutoStartServices			
+Microsoft-AppV-SharedPerformance	41017	1	VServices.ServiceAutoStartServicesStop_V1()	Stop		VServices.ServiceAutoStartServices			
+Microsoft-AppV-SharedPerformance	41018	1	VServices.ProcessRetrievePoliciesStart_V1()	Start		VServices.ProcessRetrievePolicies			
+Microsoft-AppV-SharedPerformance	41019	1	VServices.ProcessRetrievePoliciesStop_V1()	Stop		VServices.ProcessRetrievePolicies			
+Microsoft-AppV-SharedPerformance	41020	1	VServices.ProcessApplyHooksStart_V1()	Start		VServices.ProcessApplyHooks			
+Microsoft-AppV-SharedPerformance	41021	1	VServices.ProcessApplyHooksStop_V1()	Stop		VServices.ProcessApplyHooks			
+Microsoft-AppV-SharedPerformance	42000	1	VShell.StartupRuntimeStart_V1()	Start		VShell.StartupRuntime			
+Microsoft-AppV-SharedPerformance	42001	1	VShell.StartupRuntimeStop_V1()	Stop		VShell.StartupRuntime			
+Microsoft-AppV-SharedPerformance	42002	1	VShell.ShutdownRuntimeStart_V1()	Start		VShell.ShutdownRuntime			
+Microsoft-AppV-SharedPerformance	42003	1	VShell.ShutdownRuntimeStop_V1()	Stop		VShell.ShutdownRuntime			
+Microsoft-AppV-SharedPerformance	42004	1	VShell.StartupProcessRuntimeStart_V1()	Start		VShell.StartupProcessRuntime			
+Microsoft-AppV-SharedPerformance	42005	1	VShell.StartupProcessRuntimeStop_V1()	Stop		VShell.StartupProcessRuntime			
+Microsoft-AppV-SharedPerformance	42006	1	VShell.ShutdownProcessRuntimeStart_V1()	Start		VShell.ShutdownProcessRuntime			
+Microsoft-AppV-SharedPerformance	42007	1	VShell.ShutdownProcessRuntimeStop_V1()	Stop		VShell.ShutdownProcessRuntime			
+Microsoft-AppV-SharedPerformance	42008	1	VShell.SetAppUserModelIDStart_V1()	Start		VShell.SetAppUserModelID			
+Microsoft-AppV-SharedPerformance	42009	1	VShell.SetAppUserModelIDStop_V1()	Stop		VShell.SetAppUserModelID			
+Microsoft-AppV-SharedPerformance	43002	1	task_0Start43002_V1()	Start		task_0			
+Microsoft-AppV-SharedPerformance	43003	1	task_0Stop43003_V1()	Stop		task_0			
+Microsoft-AppV-SharedPerformance	43007	1	task_0Start43007_V1()	Start		task_0			
+Microsoft-AppV-SharedPerformance	43008	1	task_0Stop43008_V1()	Stop		task_0			
+Microsoft-AppV-SharedPerformance	43009	1	task_0Start43009_V1()	Start		task_0			
+Microsoft-AppV-SharedPerformance	43010	1	task_0Stop43010_V1()	Stop		task_0			
+Microsoft-AppV-SharedPerformance	43011	1	task_0Start43011_V1()	Start		task_0			
+Microsoft-AppV-SharedPerformance	43012	1	task_0Stop43012_V1()	Stop		task_0			
+Microsoft-AppV-SharedPerformance	43013	1	task_0Start43013_V1()	Start		task_0			
+Microsoft-AppV-SharedPerformance	43014	1	task_0Stop43014_V1()	Stop		task_0			
+Microsoft-AppV-SharedPerformance	43015	1	task_0Start43015_V1()	Start		task_0			
+Microsoft-AppV-SharedPerformance	43016	1	task_0Stop43016_V1()	Stop		task_0			
+Microsoft-AppV-SharedPerformance	43017	1	task_0Start43017_V1()	Start		task_0			
+Microsoft-AppV-SharedPerformance	43018	1	task_0Stop43018_V1()	Stop		task_0			
+Microsoft-AppV-SharedPerformance	43019	1	task_0Start43019_V1()	Start		task_0			
+Microsoft-AppV-SharedPerformance	43020	1	task_0Stop43020_V1()	Stop		task_0			
+Microsoft-AppV-SharedPerformance	43021	1	task_0Start43021_V1()	Start		task_0			
+Microsoft-AppV-SharedPerformance	43022	1	task_0Stop43022_V1()	Stop		task_0			
+Microsoft-AppV-SharedPerformance	43023	1	task_0Start43023_V1()	Start		task_0			
+Microsoft-AppV-SharedPerformance	43024	1	task_0Stop43024_V1()	Stop		task_0			
+Microsoft-AppV-SharedPerformance	43025	1	task_0Start43025_V1()	Start		task_0			
+Microsoft-AppV-SharedPerformance	43026	1	task_0Stop43026_V1()	Stop		task_0			
+Microsoft-AppV-SharedPerformance	43027	1	task_0Start43027_V1()	Start		task_0			
+Microsoft-AppV-SharedPerformance	43028	1	task_0Stop43028_V1()	Stop		task_0			
+Microsoft-AppV-SharedPerformance	43029	1	task_0Start43029_V1()	Start		task_0			
+Microsoft-AppV-SharedPerformance	43030	1	task_0Stop43030_V1()	Stop		task_0			
+Microsoft-AppV-SharedPerformance	43031	1	task_0Start43031_V1()	Start		task_0			
+Microsoft-AppV-SharedPerformance	43032	1	task_0Stop43032_V1()	Stop		task_0			
+Microsoft-AppV-SharedPerformance	43033	1	task_0Start43033_V1()	Start		task_0			
+Microsoft-AppV-SharedPerformance	43034	1	task_0Stop43034_V1()	Stop		task_0			
+Microsoft-AppV-SharedPerformance	43035	1	task_0Start43035_V1()	Start		task_0			
+Microsoft-AppV-SharedPerformance	43036	1	task_0Stop43036_V1()	Stop		task_0			
+Microsoft-AppV-SharedPerformance	43042	1	task_0Start43042_V1()	Start		task_0			
+Microsoft-AppV-SharedPerformance	43043	1	task_0Stop43043_V1()	Stop		task_0			
+Microsoft-AppV-SharedPerformance	43044	1	task_0Start43044_V1()	Start		task_0			
+Microsoft-AppV-SharedPerformance	43045	1	task_0Stop43045_V1()	Stop		task_0			
+Microsoft-AppV-SharedPerformance	43046	1	task_0Start43046_V1()	Start		task_0			
+Microsoft-AppV-SharedPerformance	43047	1	task_0Stop43047_V1()	Stop		task_0			
+Microsoft-AppV-SharedPerformance	43048	1	task_0Start43048_V1()	Start		task_0			
+Microsoft-AppV-SharedPerformance	43049	1	task_0Stop43049_V1()	Stop		task_0			
+Microsoft-AppV-SharedPerformance	43050	1	task_0Start43050_V1()	Start		task_0			
+Microsoft-AppV-SharedPerformance	43051	1	task_0Stop43051_V1()	Stop		task_0			
+Microsoft-AppV-SharedPerformance	43057	1	task_0Start43057_V1()	Start		task_0			
+Microsoft-AppV-SharedPerformance	43058	1	task_0Stop43058_V1()	Stop		task_0			
+Microsoft-AppV-SharedPerformance	43059	1	task_0Start43059_V1()	Start		task_0			
+Microsoft-AppV-SharedPerformance	43060	1	task_0Stop43060_V1()	Stop		task_0			
+Microsoft-AppV-SharedPerformance	43061	1	task_0Start43061_V1()	Start		task_0			
+Microsoft-AppV-SharedPerformance	43062	1	task_0Stop43062_V1()	Stop		task_0			
+Microsoft-AppV-SharedPerformance	43063	1	task_0Start43063_V1()	Start		task_0			
+Microsoft-AppV-SharedPerformance	43064	1	task_0Stop43064_V1()	Stop		task_0			
+Microsoft-AppV-SharedPerformance	43065	1	task_0Start43065_V1()	Start		task_0			
+Microsoft-AppV-SharedPerformance	43066	1	task_0Stop43066_V1()	Stop		task_0			
+Microsoft-AppV-SharedPerformance	43067	1	task_0Start43067_V1()	Start		task_0			
+Microsoft-AppV-SharedPerformance	43068	1	task_0Stop43068_V1()	Stop		task_0			
+Microsoft-AppV-SharedPerformance	43069	1	task_0Start43069_V1()	Start		task_0			
+Microsoft-AppV-SharedPerformance	43070	1	task_0Stop43070_V1()	Stop		task_0			
+Microsoft-AppV-SharedPerformance	43071	1	task_0Start43071_V1()	Start		task_0			
+Microsoft-AppV-SharedPerformance	43072	1	task_0Stop43072_V1()	Stop		task_0			
+Microsoft-AppV-SharedPerformance	43073	1	task_0Start43073_V1()	Start		task_0			
+Microsoft-AppV-SharedPerformance	43074	1	task_0Stop43074_V1()	Stop		task_0			
+Microsoft-AppV-SharedPerformance	43075	1	task_0Start43075_V1()	Start		task_0			
+Microsoft-AppV-SharedPerformance	43076	1	task_0Stop43076_V1()	Stop		task_0			
+Microsoft-AppV-SharedPerformance	43078	1	DeserializeManifest_4300Start_V1()	Start		DeserializeManifest_4300			
+Microsoft-AppV-SharedPerformance	43079	1	DeserializeManifest_4300Stop_V1()	Stop		DeserializeManifest_4300			
+Microsoft-AppV-SharedPerformance	43082	1	DeserializePolicy.Start_V1()	Start		DeserializePolicy.			
+Microsoft-AppV-SharedPerformance	43083	1	DeserializePolicy.Stop_V1()	Stop		DeserializePolicy.			
+Microsoft-AppV-SharedPerformance	43086	1	PublishPackage_4302Start_V1()	Start		PublishPackage_4302			
+Microsoft-AppV-SharedPerformance	43087	1	PublishPackage_4302Stop_V1()	Stop		PublishPackage_4302			
+Microsoft-AppV-SharedPerformance	43090	1	UnpublishPackage_4303Start_V1()	Start		UnpublishPackage_4303			
+Microsoft-AppV-SharedPerformance	43091	1	UnpublishPackage_4303Stop_V1()	Stop		UnpublishPackage_4303			
+Microsoft-AppV-SharedPerformance	43094	1	PublishExtensionPoint_4304Start_V1()	Start		PublishExtensionPoint_4304			
+Microsoft-AppV-SharedPerformance	43095	1	PublishExtensionPoint_4304Stop_V1()	Stop		PublishExtensionPoint_4304			
+Microsoft-AppV-SharedPerformance	43097	1	UnpublishExtensionPointStart_V1()	Start		UnpublishExtensionPoint			
+Microsoft-AppV-SharedPerformance	43098	1	UnpublishExtensionPointStop_V1()	Stop		UnpublishExtensionPoint			
+Microsoft-AppV-SharedPerformance	43099	1	task_0Start43099_V1()	Start		task_0			
+Microsoft-AppV-SharedPerformance	43100	1	task_0Stop43100_V1()	Stop		task_0			
+Microsoft-AppV-SharedPerformance	43101	1	task_0Start43101_V1()	Start		task_0			
+Microsoft-AppV-SharedPerformance	43102	1	task_0Stop43102_V1()	Stop		task_0			
+Microsoft-AppV-SharedPerformance	43103	1	task_0Start43103_V1()	Start		task_0			
+Microsoft-AppV-SharedPerformance	43104	1	task_0Stop43104_V1()	Stop		task_0			
+Microsoft-AppV-SharedPerformance	43105	1	task_0Start43105_V1()	Start		task_0			
+Microsoft-AppV-SharedPerformance	43106	1	task_0Stop43106_V1()	Stop		task_0			
+Microsoft-AppV-SharedPerformance	45000	1	LoggingStart_V1()	Start		Logging			
+Microsoft-AppV-SharedPerformance	45001	1	LoggingStop_V1()	Stop		Logging			
+Microsoft-AppV-SharedPerformance	46000	0	task_0Start()	Start		task_0			
+Microsoft-AppV-SharedPerformance	46001	0	task_0Stop()	Stop		task_0			
+Microsoft-AppV-SharedPerformance	46002	0	task_0Start46002()	Start		task_0			
+Microsoft-AppV-SharedPerformance	46003	0	task_0Stop46003()	Stop		task_0			
+Microsoft-AppV-SharedPerformance	46004	0	task_0Start46004()	Start		task_0			
+Microsoft-AppV-SharedPerformance	46005	0	task_0Stop46005()	Stop		task_0			
+Microsoft-AppV-SharedPerformance	46006	0	task_0Start46006()	Start		task_0			
+Microsoft-AppV-SharedPerformance	46007	0	task_0Stop46007()	Stop		task_0			
+Microsoft-AppV-SharedPerformance	46008	0	task_0Start46008()	Start		task_0			
+Microsoft-AppV-SharedPerformance	46009	0	task_0Stop46009()	Stop		task_0			
+Microsoft-AppV-SharedPerformance	46010	0	task_0Start46010()	Start		task_0			
+Microsoft-AppV-SharedPerformance	46011	0	task_0Stop46011()	Stop		task_0			
+Microsoft-AppV-SharedPerformance	46012	0	InstallAssemblyStart(UnicodeString ustring)	Start		InstallAssembly			
+Microsoft-AppV-SharedPerformance	46013	0	InstallAssemblyStop(UnicodeString ustring)	Stop		InstallAssembly			
+Microsoft-AppV-SharedPerformance	46014	0	IsAssemblyInstalledStart(UnicodeString ustring)	Start		IsAssemblyInstalled			
+Microsoft-AppV-SharedPerformance	46015	0	IsAssemblyInstalledStop(UnicodeString ustring)	Stop		IsAssemblyInstalled			
+Microsoft-AppV-SharedPerformance	46016	0	DeserializeExtensionPointsStart(UnicodeString ustring)	Start		DeserializeExtensionPoints			
+Microsoft-AppV-SharedPerformance	46017	0	DeserializeExtensionPointsStop(UnicodeString ustring)	Stop		DeserializeExtensionPoints			
+Microsoft-AppV-SharedPerformance	46018	0	PublishPackage_4503Start()	Start		PublishPackage_4503			
+Microsoft-AppV-SharedPerformance	46019	0	PublishPackage_4503Stop()	Stop		PublishPackage_4503			
+Microsoft-AppV-SharedPerformance	47000	1	ShellExtensionsPackagingStart_V1()	Start		ShellExtensionsPackaging			
+Microsoft-AppV-SharedPerformance	47001	1	ShellExtensionsPackagingStop_V1()	Stop		ShellExtensionsPackaging			
+Microsoft-AppV-SharedPerformance	47002	1	ShellExtensionsManifestWriteStart_V1()	Start		ShellExtensionsManifestWrite			
+Microsoft-AppV-SharedPerformance	47003	1	ShellExtensionsManifestWriteStop_V1()	Stop		ShellExtensionsManifestWrite			
+Microsoft-AppV-SharedPerformance	47004	1	ShellExtensionsPublishing_DeserializeManifestStart_V1()	Start		ShellExtensionsPublishing_DeserializeManifest			
+Microsoft-AppV-SharedPerformance	47005	1	ShellExtensionsPublishing_DeserializeManifestStop_V1()	Stop		ShellExtensionsPublishing_DeserializeManifest			
+Microsoft-AppV-SharedPerformance	47006	1	ShellExtensionsPublishing_DeserializePolicyStart_V1()	Start		ShellExtensionsPublishing_DeserializePolicy			
+Microsoft-AppV-SharedPerformance	47007	1	ShellExtensionsPublishing_DeserializePolicyStop_V1()	Stop		ShellExtensionsPublishing_DeserializePolicy			
+Microsoft-AppV-SharedPerformance	47008	1	ShellExtensionsPublishing_PublishEPStart_V1()	Start		ShellExtensionsPublishing_PublishEP			
+Microsoft-AppV-SharedPerformance	47009	1	ShellExtensionsPublishing_PublishEPStop_V1()	Stop		ShellExtensionsPublishing_PublishEP			
+Microsoft-AppV-SharedPerformance	47010	1	ShellExtensionsPublishing_UnpublishEPStart_V1()	Start		ShellExtensionsPublishing_UnpublishEP			
+Microsoft-AppV-SharedPerformance	47011	1	ShellExtensionsPublishing_UnpublishEPStop_V1()	Stop		ShellExtensionsPublishing_UnpublishEP			
+Microsoft-AppV-SharedPerformance	47012	1	ShellExtensionsPublishing_PublishPackageStart_V1()	Start		ShellExtensionsPublishing_PublishPackage			
+Microsoft-AppV-SharedPerformance	47013	1	ShellExtensionsPublishing_PublishPackageStop_V1()	Stop		ShellExtensionsPublishing_PublishPackage			
+Microsoft-AppV-SharedPerformance	47014	1	ShellExtensionsPublishing_UnpublishPackageStart_V1()	Start		ShellExtensionsPublishing_UnpublishPackage			
+Microsoft-AppV-SharedPerformance	47015	1	ShellExtensionsPublishing_UnpublishPackageStop_V1()	Stop		ShellExtensionsPublishing_UnpublishPackage			
+Microsoft-AppV-SharedPerformance	47016	1	ShellExtensionsPublishing_SendingAssocChangednotificationtoShellStart_V1()	Start		ShellExtensionsPublishing_SendingAssocChangednotificationtoShell			
+Microsoft-AppV-SharedPerformance	47017	1	ShellExtensionsPublishing_SendingAssocChangednotificationtoShellStop_V1()	Stop		ShellExtensionsPublishing_SendingAssocChangednotificationtoShell			
+Microsoft-AppV-SharedPerformance	50000	1	task_0Start50000_V1(UnicodeString Name)	Start		task_0	Informational		
+Microsoft-AppV-SharedPerformance	50001	1	task_0Stop50001_V1(UnicodeString Name)	Stop		task_0	Informational		
+Microsoft-AppV-SharedPerformance	65001	0	Generic.AppLaunchStart()	Start		Generic.AppLaunch			
+Microsoft-AppV-SharedPerformance	65002	0	Generic.AppLaunchStop()	Stop		Generic.AppLaunch			

@@ -61,6 +61,7 @@ Microsoft-Windows-XAML-Diagnostics	60	0	InvalidateMeasure(UInt64 ElementId, UInt
 Microsoft-Windows-XAML-Diagnostics	61	0	ElementAdded(UInt64 ElementId, UInt64 ParentId)			ElementAdded	Verbose		
 Microsoft-Windows-XAML-Diagnostics	62	0	ElementRemoved(UInt64 ElementId, UInt64 ParentId)			ElementRemoved	Verbose		
 Microsoft-Windows-XAML-Diagnostics	63	0	PropertyChanged(UInt64 ElementId, UInt64 ParentId, UnicodeString PropertyName, UInt32 PropertyEffect)			PropertyChanged	Verbose		
+Microsoft-Windows-XAML-Diagnostics	63	1	PropertyChanged_V1(UInt64 ElementId, UInt64 ParentId, UnicodeString PropertyName, UInt32 PropertyEffect, UInt64 ValueInt, UnicodeString ValueString, Double ValueDouble)			PropertyChanged	Verbose		
 Microsoft-Windows-XAML-Diagnostics	64	0	MeasureOverrideStart(UInt64 ElementId)	Start		MeasureOverride	Verbose		
 Microsoft-Windows-XAML-Diagnostics	65	0	MeasureOverrideStop(UInt64 ElementId)	Stop		MeasureOverride	Verbose		
 Microsoft-Windows-XAML-Diagnostics	66	0	ArrangeOverrideStart(UInt64 ElementId)	Start		ArrangeOverride	Verbose		
@@ -70,6 +71,7 @@ Microsoft-Windows-XAML-Diagnostics	69	0	SetAnimationStop(UInt64 ElementId, UInt6
 Microsoft-Windows-XAML-Diagnostics	70	0	ClearAnimationStart(UInt64 ElementId, UInt64 ParentId, UnicodeString PropertyName)	Start		ClearAnimation	Verbose		
 Microsoft-Windows-XAML-Diagnostics	71	0	ClearAnimationStop(UInt64 ElementId, UInt64 ParentId, UnicodeString PropertyName)	Stop		ClearAnimation	Verbose		
 Microsoft-Windows-XAML-Diagnostics	72	0	UpdateTargetBindingStart(UInt64 ElementId, UInt64 ParentId, UnicodeString PropertyName, UnicodeString ModelTypeName, UnicodeString ModelPropertyName)	Start		UpdateTargetBinding	Verbose		
+Microsoft-Windows-XAML-Diagnostics	72	1	UpdateTargetBindingStart_V1(UInt64 ElementId, UInt64 ParentId, UnicodeString PropertyName, UnicodeString ModelTypeName, UnicodeString ModelPropertyName, Boolean IsPropertyTemplateBound, UInt32 EffectiveSourceType)	Start		UpdateTargetBinding	Verbose		
 Microsoft-Windows-XAML-Diagnostics	73	0	UpdateTargetBindingStop(UInt64 ElementId, UInt64 ParentId, UnicodeString PropertyName)	Stop		UpdateTargetBinding	Verbose		
 Microsoft-Windows-XAML-Diagnostics	74	0	UpdateSourceBindingStart(UInt64 ElementId, UInt64 ParentId, UnicodeString PropertyName, UnicodeString ModelTypeName, UnicodeString ModelPropertyName)	Start		UpdateSourceBinding	Verbose		
 Microsoft-Windows-XAML-Diagnostics	75	0	UpdateSourceBindingStop(UInt64 ElementId, UInt64 ParentId, UnicodeString PropertyName)	Stop		UpdateSourceBinding	Verbose		
@@ -80,8 +82,13 @@ Microsoft-Windows-XAML-Diagnostics	79	0	TimedTextCueStart()	Start		TimedTextCue	
 Microsoft-Windows-XAML-Diagnostics	80	0	TimedTextCueStop()	Stop		TimedTextCue	Informational		
 Microsoft-Windows-XAML-Diagnostics	81	0	TimedTextTrackStart()	Start		TimedTextTrack	Informational		
 Microsoft-Windows-XAML-Diagnostics	82	0	TimedTextTrackStop()	Stop		TimedTextTrack	Informational		
-Microsoft-Windows-XAML-Diagnostics	83	0	ElementCreatedWithSource(UInt64 ElementId, UnicodeString FileURI, UInt32 LineNumber, UInt32 ColumnNumber)			ElementCreatedWithSource	Verbose		
-Microsoft-Windows-XAML-Diagnostics	84	0	ResourceDictionaryAddWithSource(UInt64 ResourceDictionaryId, UInt64 ResourceId, UnicodeString FileURI, UInt32 LineNumber, UInt32 ColumnNumber)			ResourceDictionaryAddWithSource	Verbose		
-Microsoft-Windows-XAML-Diagnostics	85	0	BeginStoryboardWithSource(UInt64 ElementId, UInt64 TargetElementId, UnicodeString FileURI, UInt32 LineNumber, UInt32 ColumnNumber)			BeginStoryboardWithSource	Verbose		
+Microsoft-Windows-XAML-Diagnostics	83	0	ElementCreatedWithSource(UInt64 ElementId, UnicodeString FileURI, UInt32 LineNumber, UInt32 ColumnNumber, UnicodeString FileHash)			ElementCreatedWithSource	Verbose		
+Microsoft-Windows-XAML-Diagnostics	83	1	ElementCreatedWithSource_V1(UInt64 ElementId, UnicodeString ClassName, UnicodeString FileURI, UInt32 LineNumber, UInt32 ColumnNumber, UnicodeString FileHash)			ElementCreatedWithSource	Verbose		
+Microsoft-Windows-XAML-Diagnostics	84	0	ResourceDictionaryAddWithSource(UInt64 ResourceDictionaryId, UInt64 ResourceId, UnicodeString FileURI, UInt32 LineNumber, UInt32 ColumnNumber, UnicodeString FileHash)			ResourceDictionaryAddWithSource	Verbose		
+Microsoft-Windows-XAML-Diagnostics	85	0	BeginStoryboardWithSource(UInt64 ElementId, UInt64 TargetElementId, UnicodeString FileURI, UInt32 LineNumber, UInt32 ColumnNumber, UnicodeString FileHash)			BeginStoryboardWithSource	Verbose		
 Microsoft-Windows-XAML-Diagnostics	86	0	FrameworkElementLoadingStart()	Start		FrameworkElementLoading	Verbose		
 Microsoft-Windows-XAML-Diagnostics	87	0	FrameworkElementLoadingStop()	Stop		FrameworkElementLoading	Verbose		
+Microsoft-Windows-XAML-Diagnostics	88	0	ImageSourceRelation(UInt64 ElementId, UInt64 ParentId, UnicodeString Name)			ImageSourceRelation	Verbose		
+Microsoft-Windows-XAML-Diagnostics	89	0	ElementAccessibility(UInt64 ElementId, UInt64 ParentId, UnicodeString Name, UnicodeString Type)			ElementAccessibility	Verbose		
+Microsoft-Windows-XAML-Diagnostics	90	0	ResourceUsingXName(UInt64 ElementId, UInt64 ParentId, UnicodeString Name, UnicodeString Type)			ResourceUsingXName	Verbose		
+Microsoft-Windows-XAML-Diagnostics	91	0	PeerCreated(UInt64 ElementId, UInt64 ParentId)			PeerCreated	Verbose		

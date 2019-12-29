@@ -38,12 +38,16 @@ Microsoft-Windows-MCCS-ActiveSyncProvider	330	0	task_0330(UnicodeString Prop_Str
 Microsoft-Windows-MCCS-ActiveSyncProvider	331	0	task_0331(UnicodeString Prop_String1, UInt32 Prop_Dword_1, UInt32 Prop_Dword_2)		CommsService	task_0	Warning		
 Microsoft-Windows-MCCS-ActiveSyncProvider	332	0	task_0332(UnicodeString Prop_String)		CommsService	task_0	Warning		
 Microsoft-Windows-MCCS-ActiveSyncProvider	333	0	task_0333(UnicodeString Prop_String1, UInt32 Prop_Dword1, UnicodeString Prop_String2, UInt32 Prop_Dword2, UnicodeString Prop_String3, UInt32 Prop_Dword3)		CommsService	task_0	Error		
+Microsoft-Windows-MCCS-ActiveSyncProvider	334	0	task_0334(UInt32 Prop_Dword_1, UnicodeString Prop_String1, UnicodeString Prop_String2)		CommsService keyword_400000000000	task_0	Warning		
+Microsoft-Windows-MCCS-ActiveSyncProvider	335	0	task_0335(UInt32 Prop_Dword_1, UnicodeString Prop_String1, UnicodeString Prop_String2, UInt32 Prop_Dword_2)		CommsService keyword_400000000000	task_0	Warning		
+Microsoft-Windows-MCCS-ActiveSyncProvider	336	0	task_0336(UInt32 Prop_Dword_1, UnicodeString Prop_String1, UnicodeString Prop_String2, UInt32 Prop_Dword_2)		CommsService keyword_400000000000	task_0	Warning		
 Microsoft-Windows-MCCS-ActiveSyncProvider	401	0	task_0401()		Warning	task_0	Warning		
 Microsoft-Windows-MCCS-ActiveSyncProvider	402	0	task_0402(Int32 Prop_ContentLengthBytes, AnsiString Prop_ContentChars)		Error	task_0	Error		
 Microsoft-Windows-MCCS-ActiveSyncProvider	403	0	task_0403()		Warning	task_0	Warning		
 Microsoft-Windows-MCCS-ActiveSyncProvider	421	0	task_0421(UnicodeString Prop_String, Int32 Prop_HResult)		Warning keyword_200000000000	task_0	Warning		
 Microsoft-Windows-MCCS-ActiveSyncProvider	422	0	task_0422(UnicodeString Prop_String, Int32 Prop_HResult)		Warning keyword_200000000000	task_0	Warning		
-Microsoft-Windows-MCCS-ActiveSyncProvider	423	0	task_0423(UInt32 Prop_Dword_1, UnicodeString Prop_String1, Int32 Prop_HResult)		CommsService	task_0	Informational		
+Microsoft-Windows-MCCS-ActiveSyncProvider	423	0	task_0423(UInt32 Prop_Dword_1, UnicodeString Prop_String1, HexInt32 Prop_Dword_2, Int32 Prop_HResult)		CommsService	task_0	Informational		
+Microsoft-Windows-MCCS-ActiveSyncProvider	424	0	task_0424(UInt32 Prop_Dword_1, UnicodeString Prop_String1, HexInt32 Prop_Dword_2, Int32 Prop_HResult)		CommsService	task_0	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	501	0	task_0501(HexInt32 Prop_Dword)		Error keyword_200000000000	task_0	Error		
 Microsoft-Windows-MCCS-ActiveSyncProvider	510	0	task_0510(UInt32 Prop_Length, UnicodeString Prop_String)		PeopleSync	task_0	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	511	0	task_0511(UnicodeString Prop_String)		PeopleSync	task_0	Informational		
@@ -259,3 +263,6 @@ Microsoft-Windows-MCCS-ActiveSyncProvider	852	0	task_0852(HexInt32 Prop_HRESULT,
 Microsoft-Windows-MCCS-ActiveSyncProvider	901	0	task_0901(HexInt32 Prop_Dword, HexInt32 Prop_HRESULT)		Error keyword_400000000000	task_0	Error		
 Microsoft-Windows-MCCS-ActiveSyncProvider	1001	0	task_01001(HexInt32 Prop_Dword)		StateTransition	task_0	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	1002	0	task_01002(HexInt32 Prop_Dword)		StateTransition	task_0	Informational		
+Microsoft-Windows-MCCS-ActiveSyncProvider	1010	0	task_01010(GUID Prop_Guid, HexInt32 Prop_HexInt32)		CommsService	task_0	Informational		
+Microsoft-Windows-MCCS-ActiveSyncProvider	1011	0	task_01011(GUID Prop_Guid, HexInt32 Prop_HexInt32)		CommsService	task_0	Informational		
+Microsoft-Windows-MCCS-ActiveSyncProvider	1021	0	task_01021(HexInt32 Prop_Dword)		CommsService	task_0	Warning		

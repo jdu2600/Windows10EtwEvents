@@ -22,3 +22,5 @@ Microsoft-Windows-Kernel-Acpi	17	0	ActiveCoolingConstraintRundown(UInt16 Thermal
 Microsoft-Windows-Kernel-Acpi	18	0	PassiveCoolingConstraint(UInt16 ThermalZoneDeviceInstanceLength, UnicodeString ThermalZoneDeviceInstance, UInt16 DeviceInstanceLength, UnicodeString DeviceInstance, UInt8 ThrottleLimit)		acpi:Thermal	PassiveCoolingConstraint	Informational		
 Microsoft-Windows-Kernel-Acpi	19	0	PassiveCoolingConstraintRundown(UInt16 ThermalZoneDeviceInstanceLength, UnicodeString ThermalZoneDeviceInstance, UInt16 DeviceInstanceLength, UnicodeString DeviceInstance, UInt8 ThrottleLimit)		acpi:Thermal	PassiveCoolingConstraintRundown	Informational		
 Microsoft-Windows-Kernel-Acpi	20	0	DeviceReset(UInt16 DeviceBiosNameLength, UnicodeString DeviceBiosName, UInt16 DeviceResetType, UInt32 Status)		acpi:Diagnostic keyword_200000000000	DeviceReset	Informational		
+Microsoft-Windows-Kernel-Acpi	21	0	AcpiOverride(UInt16 AcpiOverrideType)		acpi:Diagnostic keyword_200000000000	AcpiOverride	Informational		
+Microsoft-Windows-Kernel-Acpi	22	0	AMLIError(UnicodeString Scope, UnicodeString Object, UInt32 Status)		acpi:Diagnostic	AMLIError	Error		

@@ -384,6 +384,8 @@ Microsoft-Windows-Shell-Core	1710	0	ShellTask_ExecUnknown_InstallAppThreadStart(
 Microsoft-Windows-Shell-Core	1711	0	ShellTask_ExecUnknown_InstallAppThreadStop()	Stop	Shell	ShellTask_ExecUnknown_InstallAppThread	Informational		
 Microsoft-Windows-Shell-Core	1712	0	ShellTask_InvokeCommand_DoInvokeThreadStart()	Start	Shell	ShellTask_InvokeCommand_DoInvokeThread	Informational		
 Microsoft-Windows-Shell-Core	1713	0	ShellTask_InvokeCommand_DoInvokeThreadStop()	Stop	Shell	ShellTask_InvokeCommand_DoInvokeThread	Informational		
+Microsoft-Windows-Shell-Core	1714	0	ShellTask_ProfsvcPostBootReminder_ReminderThreadStart()	Start	Shell	ShellTask_ProfsvcPostBootReminder_ReminderThread	Informational		
+Microsoft-Windows-Shell-Core	1715	0	ShellTask_ProfsvcPostBootReminder_ReminderThreadStop()	Stop	Shell	ShellTask_ProfsvcPostBootReminder_ReminderThread	Informational		
 Microsoft-Windows-Shell-Core	2001	0	Browseui_CBrowserFrame_CreateInstanceStart()	Start	Shell	Browseui_CBrowserFrame_CreateInstance	Informational		
 Microsoft-Windows-Shell-Core	2002	0	Browseui_CBrowserFrame_CreateInstanceStop()	Stop	Shell	Browseui_CBrowserFrame_CreateInstance	Informational		
 Microsoft-Windows-Shell-Core	2003	0	Browseui_CBrowserFrame_CloseStart()	Start	Shell	Browseui_CBrowserFrame_Close	Informational		
@@ -1796,6 +1798,7 @@ Microsoft-Windows-Shell-Core	28003	0	Shell32_AppResolver_GetAppIDForWindowStart(
 Microsoft-Windows-Shell-Core	28004	0	Shell32_AppResolver_GetAppIDForWindowStop()	Stop	Shell	Shell32_AppResolver_GetAppIDForWindow	Informational		
 Microsoft-Windows-Shell-Core	28017	0	Shell32_AppResolver_ScanStart()	Start	Shell	Shell32_AppResolver_Scan	Informational		
 Microsoft-Windows-Shell-Core	28018	0	Shell32_AppResolver_ScanStop()	Stop	Shell	Shell32_AppResolver_Scan	Informational		
+Microsoft-Windows-Shell-Core	28019	0	Shell32_AppResolver_CacheCommitted()		Shell	Shell32_AppResolver_CacheCommitted	Informational		
 Microsoft-Windows-Shell-Core	28025	0	Shell32_AppResolverCache_DevTrace(UnicodeString psz)		Shell	Shell32_AppResolverCache_DevTrace	Informational		
 Microsoft-Windows-Shell-Core	28026	0	Shell32_AppResolverCache_ImportShortcut(UnicodeString AppID, UInt32 Code)		Shell	Shell32_AppResolverCache_ImportShortcut	Informational		
 Microsoft-Windows-Shell-Core	28027	0	Shell32_LauncherLayoutManager_ChangeNotify(UnicodeString AppID, Int32 Event)		Shell	Shell32_LauncherLayoutManager_ChangeNotify	Informational		
@@ -1810,7 +1813,6 @@ Microsoft-Windows-Shell-Core	28105	0	Shell32_WindowPropStore_ValueRemoved()		She
 Microsoft-Windows-Shell-Core	28107	0	Shell32_AppResolver_DualModeDisallowed(UnicodeString AppID, UInt32 Code)		Shell	Shell32_AppResolver_DualModeDisallowed	Informational		
 Microsoft-Windows-Shell-Core	28109	0	Shell32_RegistryPackageChangeListener_AppStateChange(UnicodeString AppID, UInt32 OldState, UInt32 NewState, UnicodeString PackageName, UInt32 Value)		Shell	Shell32_RegistryPackageChangeListener_AppStateChange	Informational		
 Microsoft-Windows-Shell-Core	28111	0	Shell32_RegistryPackageChangeListener_AppStateReset(UnicodeString AppID, UInt32 OldState, UInt32 NewState, UnicodeString PackageName)		Shell	Shell32_RegistryPackageChangeListener_AppStateReset	Informational		
-Microsoft-Windows-Shell-Core	28113	0	Shell32_AppResolverCache_OnChangeNotify(UnicodeString Filename, Int32 Event)		Shell	Shell32_AppResolverCache_OnChangeNotify	Informational		
 Microsoft-Windows-Shell-Core	28115	0	Shell32_AppResolverCache_AddShortcut(UnicodeString Name, UnicodeString AppID, UInt32 Flags)		Shell	Shell32_AppResolverCache_AddShortcut	Informational		
 Microsoft-Windows-Shell-Core	28116	0	Shell32_AppResolverCache_RemoveShortcut(UnicodeString Name, UnicodeString AppID, UInt32 Flags)		Shell	Shell32_AppResolverCache_RemoveShortcut	Informational		
 Microsoft-Windows-Shell-Core	28117	0	Shell32_AppResolverCache_UpdateShortcut(UnicodeString Name, UnicodeString AppID, UInt32 Flags)		Shell	Shell32_AppResolverCache_UpdateShortcut	Informational		
@@ -2367,4 +2369,13 @@ Microsoft-Windows-Shell-Core	62404	0	CloudExperienceHost_WebAppActivityStart(Uni
 Microsoft-Windows-Shell-Core	62405	0	CloudExperienceHost_WebAppActivityStop(UnicodeString Result)	Stop	Shell CloudExperienceHost	CloudExperienceHost_WebAppActivity	Informational		
 Microsoft-Windows-Shell-Core	62406	0	CloudExperienceHost_WebAppEvent1(UnicodeString Name)		Shell CloudExperienceHost	CloudExperienceHost_WebAppEvent1	Informational		
 Microsoft-Windows-Shell-Core	62407	0	CloudExperienceHost_WebAppEvent2(UnicodeString Name, UnicodeString Value)		Shell CloudExperienceHost	CloudExperienceHost_WebAppEvent2	Informational		
+Microsoft-Windows-Shell-Core	62408	0	Explorer_ExecutingPackagedStartupAppStart(UnicodeString Command)	Start	Shell StartupPerf keyword_200000000000	Explorer_ExecutingPackagedStartupApp	Informational		
+Microsoft-Windows-Shell-Core	62409	0	Explorer_ExecutingPackagedStartupAppStop(UInt32 PID, UnicodeString Command)	Stop	Shell StartupPerf keyword_200000000000	Explorer_ExecutingPackagedStartupApp	Informational		
+Microsoft-Windows-Shell-Core	62420	0	LogonTask_RestoreStart()	Start	Restore	LogonTask_Restore	Informational		
+Microsoft-Windows-Shell-Core	62421	0	LogonTask_RestoreStop(UInt32 ApplicableProfileCount)	Stop	Restore	LogonTask_Restore	Informational		
+Microsoft-Windows-Shell-Core	62422	0	LogonTask_Restore(UInt32 FormFactor, UnicodeString DeviceName, UnicodeString OEMName, UnicodeString HardwareId, UInt16 SystemDatewMonth, UInt16 SystemDatewDay, UInt16 SystemDatewYear, UInt16 SystemDatewHour, UInt16 SystemDatewMinute, UInt16 SystemDatewSecond)		Restore	LogonTask_Restore	Informational		
+Microsoft-Windows-Shell-Core	62423	0	LogonTask_Restore62423(UnicodeString HardwareId)		Restore	LogonTask_Restore	Informational		
+Microsoft-Windows-Shell-Core	62440	0	AppDefaults_UserChoiceHashMismatch(UnicodeString ExtOrUriScheme, UnicodeString ProgId, Boolean IsRoaming)			AppDefaults_UserChoiceHashMismatch	Informational		
+Microsoft-Windows-Shell-Core	62441	0	AppDefaults_ResetToRecommended(UnicodeString ProgId, UnicodeString ExtOrUriScheme)			AppDefaults_ResetToRecommended	Informational		
+Microsoft-Windows-Shell-Core	62442	0	AppDefaults_UpgradeToRecommendedApp(UnicodeString ProgId, UnicodeString CurrentDefaultProgId, UnicodeString ExtOrUriScheme)			AppDefaults_UpgradeToRecommendedApp	Informational		
 Microsoft-Windows-Shell-Core	63200	0	task_063200()		WDI	task_0	Informational		

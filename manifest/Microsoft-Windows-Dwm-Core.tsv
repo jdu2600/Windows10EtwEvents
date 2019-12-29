@@ -4,10 +4,10 @@ Microsoft-Windows-Dwm-Core	2	0	SCHEDULE_TIME(UInt64 m_tCurrent, UInt64 m_tElapse
 Microsoft-Windows-Dwm-Core	3	0	SCHEDULE_TUNINGPARAMS(UInt32 cThresholdGlitch, UInt32 cThresholdBudget, UInt32 cThresholdEarly, UInt32 cSamplesBeforeSpeedup)		DwmCore	SCHEDULE_TUNINGPARAMS	Informational		
 Microsoft-Windows-Dwm-Core	4	0	SCHEDULE_STATISTICS(UInt32 m_cPredictedGlitch, UInt32 m_cActualGlitch, UInt32 m_cOverBudget, UInt32 m_cEarly, UInt64 m_cSamplesRecorded)		DwmCore	SCHEDULE_STATISTICS	Informational		
 Microsoft-Windows-Dwm-Core	5	0	SCHEDULE_RATEINFO(UInt16 m_rateRefresh, UInt64 m_tPeriodRefresh, UInt64 m_qpcPeriodRefresh, UInt32 m_cRefreshesPerFrame, UInt32 m_rateCompose, UInt64 m_tPeriodFrame)		DwmCore	SCHEDULE_RATEINFO	Informational		
-Microsoft-Windows-Dwm-Core	6	0	SCHEDULE_WFVBStart()	Start	DwmCore	SCHEDULE_WFVB	Informational		
+Microsoft-Windows-Dwm-Core	6	0	SCHEDULE_WFVBStart()	Start	DwmCore DwmFrameRate	SCHEDULE_WFVB	Informational		
 Microsoft-Windows-Dwm-Core	7	0	SCHEDULE_WFVBStop()	Stop	DwmCore DwmFrameRate	SCHEDULE_WFVB	Informational		
 Microsoft-Windows-Dwm-Core	8	0	SCHEDULE_WFWStart()	Start	DwmCore DwmFrameRate	SCHEDULE_WFW	Informational		
-Microsoft-Windows-Dwm-Core	9	0	SCHEDULE_WFWStop(UInt32 workType)	Stop	DwmCore	SCHEDULE_WFW	Informational		
+Microsoft-Windows-Dwm-Core	9	0	SCHEDULE_WFWStop(UInt32 workType)	Stop	DwmCore DwmFrameRate	SCHEDULE_WFW	Informational		
 Microsoft-Windows-Dwm-Core	10	0	SCHEDULE_PROCESS_FRAMEStart()	Start	DwmCore FrameVisualization	SCHEDULE_PROCESS_FRAME	Informational		
 Microsoft-Windows-Dwm-Core	11	0	SCHEDULE_PROCESS_FRAME(UInt32 fRenderTime, UInt32 fPresentNeeded, UInt32 dwOutstandingPresents, UInt32 dwMaxOutstandingFrames)		DwmCore	SCHEDULE_PROCESS_FRAME	Informational		
 Microsoft-Windows-Dwm-Core	12	0	SCHEDULE_PROCESS_FRAMEStop()	Stop	DwmCore FrameVisualization	SCHEDULE_PROCESS_FRAME	Informational		
@@ -25,19 +25,17 @@ Microsoft-Windows-Dwm-Core	25	0	SCHEDULE_GLITCH_RECOVERY_ATTEMPT(UInt64 cRefresh
 Microsoft-Windows-Dwm-Core	26	0	SCHEDULE_RESETStart()	Start	DwmCore	SCHEDULE_RESET	Informational		
 Microsoft-Windows-Dwm-Core	27	0	SCHEDULE_RESETStop()	Stop	DwmCore	SCHEDULE_RESET	Informational		
 Microsoft-Windows-Dwm-Core	28	0	SCHEDULE_QPC_FAILURE()		DwmCore	SCHEDULE_QPC_FAILURE	Informational		
-Microsoft-Windows-Dwm-Core	29	0	ETWGUID_LAYEREVENTStart(UInt32 left, UInt32 top, UInt32 right, UInt32 bottom)	Start	DwmCore	ETWGUID_LAYEREVENT	Verbose		
-Microsoft-Windows-Dwm-Core	30	0	ETWGUID_LAYEREVENTStop(UInt32 left, UInt32 top, UInt32 right, UInt32 bottom)	Stop	DwmCore	ETWGUID_LAYEREVENT	Verbose		
-Microsoft-Windows-Dwm-Core	31	0	ETWGUID_LAYEREVENTStart31()	Start	DwmCore	ETWGUID_LAYEREVENT	Verbose		
-Microsoft-Windows-Dwm-Core	32	0	ETWGUID_LAYEREVENTStop32()	Stop	DwmCore	ETWGUID_LAYEREVENT	Verbose		
+Microsoft-Windows-Dwm-Core	29	0	ETWGUID_PUSH_INTERNAL_LAYER_EVENTStart(UInt32 left, UInt32 top, UInt32 right, UInt32 bottom)	Start	DwmCore	ETWGUID_PUSH_INTERNAL_LAYER_EVENT	Verbose		
+Microsoft-Windows-Dwm-Core	30	0	ETWGUID_PUSH_INTERNAL_LAYER_EVENTStop(UInt32 left, UInt32 top, UInt32 right, UInt32 bottom)	Stop	DwmCore	ETWGUID_PUSH_INTERNAL_LAYER_EVENT	Verbose		
+Microsoft-Windows-Dwm-Core	31	0	ETWGUID_POP_INTERNAL_LAYER_EVENTStart()	Start	DwmCore	ETWGUID_POP_INTERNAL_LAYER_EVENT	Verbose		
+Microsoft-Windows-Dwm-Core	32	0	ETWGUID_POP_INTERNAL_LAYER_EVENTStop()	Stop	DwmCore	ETWGUID_POP_INTERNAL_LAYER_EVENT	Verbose		
 Microsoft-Windows-Dwm-Core	33	0	ETWGUID_BITMAPCOPYEVENT(UInt32 width, UInt32 height, UInt32 dxgiFormat, UInt32 pixelSize)		DwmCore	ETWGUID_BITMAPCOPYEVENT	Informational		
 Microsoft-Windows-Dwm-Core	34	0	ETWGUID_COPYFRONTTOBACKBUFFEREVENTStart()	Start	DwmCore	ETWGUID_COPYFRONTTOBACKBUFFEREVENT	Verbose		
 Microsoft-Windows-Dwm-Core	35	0	ETWGUID_COPYFRONTTOBACKBUFFEREVENTStop(UInt32 invalidRegions, UInt32 pixelsCopied)	Stop	DwmCore	ETWGUID_COPYFRONTTOBACKBUFFEREVENT	Verbose		
 Microsoft-Windows-Dwm-Core	36	0	ETWGUID_BITMAPEVENT(UInt64 pBitmap, UInt32 width, UInt32 height)		DwmCore	ETWGUID_BITMAPEVENT	Informational		
-Microsoft-Windows-Dwm-Core	37	0	ETWGUID_LAYERStart()	Start	DwmCore	ETWGUID_LAYER	Verbose		
-Microsoft-Windows-Dwm-Core	38	0	ETWGUID_LAYERStop()	Stop	DwmCore	ETWGUID_LAYER	Verbose		
 Microsoft-Windows-Dwm-Core	39	0	ETWGUID_CLIPEVENT(Int32 left, Int32 top, Int32 right, Int32 bottom)		DwmCore	ETWGUID_CLIPEVENT	Verbose		
 Microsoft-Windows-Dwm-Core	40	0	ETWGUID_CLEAREVENTStart(Float left, Float top, Float right, Float bottom)	Start	DwmCore	ETWGUID_CLEAREVENT	Verbose		
-Microsoft-Windows-Dwm-Core	41	0	ETWGUID_CLEAREVENTStart41()	Start	DwmCore	ETWGUID_CLEAREVENT	Verbose		
+Microsoft-Windows-Dwm-Core	41	0	ETWGUID_CLEAREVENTStop()	Stop	DwmCore	ETWGUID_CLEAREVENT	Verbose		
 Microsoft-Windows-Dwm-Core	42	0	ETWGUID_DIRTYREGIONEVENT(UInt32 Id, Int32 Z, Float left, Float top, Float right, Float bottom)		DwmCore FrameVisualization	ETWGUID_DIRTYREGIONEVENT	Informational		
 Microsoft-Windows-Dwm-Core	43	0	ETWGUID_OCCLUSIONEVENTStart(UInt64 data, UInt32 Id)	Start	DwmCore	ETWGUID_OCCLUSIONEVENT	Informational		
 Microsoft-Windows-Dwm-Core	44	0	ETWGUID_OCCLUSIONEVENT(Int32 Z, Float left, Float top, Float right, Float bottom, UInt32 rectType)		DwmCore	ETWGUID_OCCLUSIONEVENT	Verbose		
@@ -156,10 +154,10 @@ Microsoft-Windows-Dwm-Core	159	0	PROCESS_VIRTUAL_SURFACE_UPDATE_EVENTStart()	Sta
 Microsoft-Windows-Dwm-Core	160	0	PROCESS_VIRTUAL_SURFACE_UPDATE_EVENTStop()	Stop	DwmCore	PROCESS_VIRTUAL_SURFACE_UPDATE_EVENT	Verbose		
 Microsoft-Windows-Dwm-Core	161	0	TELEMETRY_BATCH_LATENCY_EVENT(UInt64 QpcStart, UInt64 QpcMaximumDuration, UInt64 QpcActual, GUID AnimationScenarioGUID, UInt32 NumContacts, UnicodeString PackageName, UnicodeString AppUserModeId)		DwmCore	TELEMETRY_BATCH_LATENCY_EVENT	Informational		
 Microsoft-Windows-Dwm-Core	162	1	TELEMETRY_GLITCH_ANALYSIS_EVENT_V1(UnicodeString AnimationScenarioGUID, UInt32 PercentFramesGlitched, UInt32 TotalVSyncsDuringScenario, UInt32 GlitchesRecorded, UInt32 Delays)		DwmCore	TELEMETRY_GLITCH_ANALYSIS_EVENT	Informational		
-Microsoft-Windows-Dwm-Core	163	0	ETWGUID_LAYEREVENTStart163(UInt32 left, UInt32 top, UInt32 right, UInt32 bottom)	Start	DwmCore FrameVisualization	ETWGUID_LAYEREVENT	Verbose		
-Microsoft-Windows-Dwm-Core	164	0	ETWGUID_LAYEREVENTStop164(UInt32 left, UInt32 top, UInt32 right, UInt32 bottom)	Stop	DwmCore	ETWGUID_LAYEREVENT	Verbose		
-Microsoft-Windows-Dwm-Core	165	0	ETWGUID_LAYEREVENTStart165()	Start	DwmCore FrameVisualization	ETWGUID_LAYEREVENT	Verbose		
-Microsoft-Windows-Dwm-Core	166	0	ETWGUID_LAYEREVENTStop166()	Stop	DwmCore	ETWGUID_LAYEREVENT	Verbose		
+Microsoft-Windows-Dwm-Core	163	0	ETWGUID_PUSH_EXTERNAL_LAYER_EVENTStart(UInt32 left, UInt32 top, UInt32 right, UInt32 bottom)	Start	DwmCore FrameVisualization	ETWGUID_PUSH_EXTERNAL_LAYER_EVENT	Verbose		
+Microsoft-Windows-Dwm-Core	164	0	ETWGUID_PUSH_EXTERNAL_LAYER_EVENTStop(UInt32 left, UInt32 top, UInt32 right, UInt32 bottom)	Stop	DwmCore	ETWGUID_PUSH_EXTERNAL_LAYER_EVENT	Verbose		
+Microsoft-Windows-Dwm-Core	165	0	ETWGUID_POP_EXTERNAL_LAYER_EVENTStart()	Start	DwmCore FrameVisualization	ETWGUID_POP_EXTERNAL_LAYER_EVENT	Verbose		
+Microsoft-Windows-Dwm-Core	166	0	ETWGUID_POP_EXTERNAL_LAYER_EVENTStop()	Stop	DwmCore	ETWGUID_POP_EXTERNAL_LAYER_EVENT	Verbose		
 Microsoft-Windows-Dwm-Core	167	1	TELEMETRY_AGGREGATED_GLITCH_ANALYSIS_EVENT_V1(UnicodeString AnimationScenarioGUID, UInt32 TotalHits, UInt32 GlitchStatistics, UInt32 LatencyStatistics)		DwmCore	TELEMETRY_AGGREGATED_GLITCH_ANALYSIS_EVENT	Informational		
 Microsoft-Windows-Dwm-Core	168	1	ANIMATION_ANALYSIS_DEBUG_EVENT_V1(UnicodeString AnimationScenario, UInt32 ReferenceCount, UInt32 VSyncs, UInt32 GlitchesRecorded, UInt32 ScenarioIndex, UInt64 UniqueKey)		DwmCore	ANIMATION_ANALYSIS_DEBUG_EVENT	Verbose		
 Microsoft-Windows-Dwm-Core	169	0	SCHEDULE_RENDERTIME(UInt64 pFrame, UInt32 fRenderTime, UInt32 cFramesOutstanding, UInt32 cMaxFramesOutstanding)		FrameDrawInconsistencyInformation	SCHEDULE_RENDERTIME	Informational		
@@ -231,7 +229,7 @@ Microsoft-Windows-Dwm-Core	236	0	ETWGUID_D2DLAYERCREATEREASON(UInt32 layerCreate
 Microsoft-Windows-Dwm-Core	237	1	TELEMETRY_ANIMATION_PERFORMANCE_ANALYSIS_EVENT_V1(UInt64 cFrameStart, UInt64 cFrameStop, UInt32 PercentVsyncsMissed, UInt32 metrics1, UInt32 metrics2, UnicodeString AnimationScenario, UnicodeString ApplicationId, UInt32 ScenarioIndex)		DwmCore LowOverheadSmoothnessTracking	TELEMETRY_ANIMATION_PERFORMANCE_ANALYSIS_EVENT	Informational		
 Microsoft-Windows-Dwm-Core	238	0	ANIMATION_FIRST_FRAME_EVENT(UInt64 cFrameStart, UnicodeString AnimationScenario, UInt32 cFramesSinceCreate, UInt32 ScenarioIndex, UInt32 ScenarioDetailsHash, UnicodeString ScenarioDetails)		DwmCore LowOverheadSmoothnessTracking	ANIMATION_FIRST_FRAME_EVENT	Verbose		
 Microsoft-Windows-Dwm-Core	239	0	ANIMATION_LAST_FRAME_EVENT(UInt64 cFrameStart, UInt64 cFrameStop, UInt32 PercentVsyncsMissed, UInt32 VsyncCount, UInt64 VsyncCadenceInHz, UInt64 FrameRateInFps, UInt32 MaxFramePeriodInMS, UnicodeString AnimationScenario, UInt32 ScenarioIndex, UInt32 MaxVsyncsMissed, UInt32 TimeToFirstFrameInMS, UInt32 TimeFromInputToFirstFrameInMS, UInt32 IntendedDurationInMS, UInt32 ScenarioDetailsHash, UnicodeString ScenarioDetails, UnicodeString ApplicationId, UInt32 FrameGlitchesCount, UInt32 TotalVsyncsMissed)		DwmCore LowOverheadSmoothnessTracking	ANIMATION_LAST_FRAME_EVENT	Verbose		
-Microsoft-Windows-Dwm-Core	240	1	TELEMETRY_AGGREGATED_VSYNC_ANALYSIS_EVENT_V1(UnicodeString AnimationScenario, UInt32 TotalHits, UInt32 metrics1, UInt32 metrics2, UInt32 metrics3)		DwmCore LowOverheadSmoothnessTracking	TELEMETRY_AGGREGATED_VSYNC_ANALYSIS_EVENT	Informational		
+Microsoft-Windows-Dwm-Core	240	2	TELEMETRY_AGGREGATED_VSYNC_ANALYSIS_EVENT_V2(UnicodeString AnimationScenario, UInt32 TotalHits, UInt32 metrics1, UInt32 metrics2, UInt32 metrics3, UInt32 FPS)		DwmCore LowOverheadSmoothnessTracking	TELEMETRY_AGGREGATED_VSYNC_ANALYSIS_EVENT	Informational		
 Microsoft-Windows-Dwm-Core	241	0	ETWGUID_COPYFRONTTOBACKBUFFERDELTAEVENT(UInt32 invalidRegions, UInt32 pixelsCopied)		DwmCore	ETWGUID_COPYFRONTTOBACKBUFFERDELTAEVENT	Informational		
 Microsoft-Windows-Dwm-Core	242	0	SWAPCHAIN_BUFFERS(UInt32 nCount, UnicodeString DisplayName)		DwmCore	SWAPCHAIN_BUFFERS	Informational		
 Microsoft-Windows-Dwm-Core	243	0	SCHEDULE_SKIP_WFVB(UInt64 current, UInt64 qpcRefresh, UInt64 qpcFrequency, UInt64 diff, UInt64 qpcPeriodDisplay0, UInt32 currentVsync, UInt32 frameStartVsync, UInt32 fPreviousFrameConfirmed)		DwmCore	SCHEDULE_SKIP_WFVB	Informational		
@@ -300,3 +298,18 @@ Microsoft-Windows-Dwm-Core	307	0	PROCESS_VISUAL_EXPOSEStart(Pointer Visual, Int3
 Microsoft-Windows-Dwm-Core	308	0	PROCESS_VISUAL_EXPOSEStop(Pointer Visual, Int32 CoRenderID)	Stop	DwmCore	PROCESS_VISUAL_EXPOSE	Informational		
 Microsoft-Windows-Dwm-Core	309	0	SCHEDULE_GETFRAMERATE(UInt32 cDisplays, AnsiString rgRefrshrate)		DwmCore	SCHEDULE_GETFRAMERATE	Informational		
 Microsoft-Windows-Dwm-Core	310	0	ETWGUID_HW_PROTECTION_TEMPDISABLE(UInt32 fTemporaryDisable)		DwmCore	ETWGUID_HW_PROTECTION_TEMPDISABLE	Verbose		
+Microsoft-Windows-Dwm-Core	311	0	ENDFRAME_HW_CALLBACK_RENDERER_STATS(UInt32 NoAAFixupVertices, UInt32 AAFixup2DVertices, UInt32 AAFixup3DVertices, UInt32 HwCallbackRenderersProcessed, UInt32 HwCallbackDrawCallsProcessed, UInt32 HwMegaRectsAdded, UInt32 HwDrawListEntriesAdded, UInt32 SuperSets_SetStatesAvoided)		DwmCore	ENDFRAME_HW_CALLBACK_RENDERER_STATS	Informational		
+Microsoft-Windows-Dwm-Core	312	0	ENDFRAME_WARP_CALLBACK_RENDERER_STATS(UInt32 WarpCallbackRenderersProcessed, UInt32 WarpCallbackDrawCallsProcessed, UInt32 WarpDrawListEntriesAdded)		DwmCore	ENDFRAME_WARP_CALLBACK_RENDERER_STATS	Informational		
+Microsoft-Windows-Dwm-Core	313	0	ENDFRAME_PRIMITIVE_GROUP_STATS(UInt32 PrimitiveGroupToDrawListGeneratorCreated, UInt32 PrimitiveGroupToDrawListGeneratorCacheUpdated)		DwmCore	ENDFRAME_PRIMITIVE_GROUP_STATS	Informational		
+Microsoft-Windows-Dwm-Core	314	0	ENDFRAME_TESSELLATED_PRIMITIVES_STATS(UInt32 TessellatedRect_UnClipped, UInt32 TessellatedRect_AxisAlignedRectClip, UInt32 TessellatedRect_GeneralClip)		DwmCore	ENDFRAME_TESSELLATED_PRIMITIVES_STATS	Informational		
+Microsoft-Windows-Dwm-Core	315	0	ENDFRAME_HW_DRAWLIST_CACHE_STATS(UInt32 HwDrawListCachesInvalidated, UInt32 HwDrawListCachesUpdated)		DwmCore	ENDFRAME_HW_DRAWLIST_CACHE_STATS	Informational		
+Microsoft-Windows-Dwm-Core	316	0	ENDFRAME_WARP_DRAWLIST_CACHE_STATS(UInt32 WarpDrawListCachesInvalidated, UInt32 WarpDrawListCachesUpdated)		DwmCore	ENDFRAME_WARP_DRAWLIST_CACHE_STATS	Informational		
+Microsoft-Windows-Dwm-Core	317	0	PROCESS_EXPRESSIONSStart()	Start	DwmCore	PROCESS_EXPRESSIONS	Informational		
+Microsoft-Windows-Dwm-Core	318	0	PROCESS_EXPRESSIONSStop()	Stop	DwmCore	PROCESS_EXPRESSIONS	Informational		
+Microsoft-Windows-Dwm-Core	319	0	EXPRESSION_OUTPUTVALUEStart(Pointer Resource)	Start	DwmCore	EXPRESSION_OUTPUTVALUE	Verbose		
+Microsoft-Windows-Dwm-Core	320	0	EXPRESSION_OUTPUTVALUEStop(Pointer Resource)	Stop	DwmCore	EXPRESSION_OUTPUTVALUE	Verbose		
+Microsoft-Windows-Dwm-Core	321	0	MIDMANIPULATION_UPDATE_CAPTURE_MANIPULATION(Pointer Interaction, Pointer Visual, UInt32 pointerId, UInt32 frameId, UInt64 pointerTimeStamp)		DwmCore	MIDMANIPULATION_UPDATE_CAPTURE_MANIPULATION	Informational		
+Microsoft-Windows-Dwm-Core	322	0	CHANNELANIMATIONS_ACTIVE(UInt64 channelHandle, UInt64 processId, UInt64 numberOfDCompAnimationsActive, UInt64 numberOfWinRTAnimationsActive)		DwmCore AnimationScreenOff ProcessAttribution	CHANNELANIMATIONS_ACTIVE	Informational		
+Microsoft-Windows-Dwm-Core	323	0	CHANNELBATCHES_PROCESSED(UInt64 channelHandle, UInt64 processId, UInt64 numberOfBatchesProcessed)		DwmCore ProcessAttribution	CHANNELBATCHES_PROCESSED	Informational		
+Microsoft-Windows-Dwm-Core	324	0	ETWGUID_HW_PROTECTED_ENTITY_CHANGE(UInt32 OldCount, UInt32 NewCount)		DwmCore	ETWGUID_HW_PROTECTED_ENTITY_CHANGE	Verbose		
+Microsoft-Windows-Dwm-Core	325	0	EVTDESC_SCHEDULE_COMPOSITIONPASS(UInt32 fQueueDueToRoundTripRequest, UInt32 fAnimateUpdatesRequired, UInt32 fExpressionUpdatesRequired, UInt32 fCaptureBitsResponsePending, UInt32 fCoRenderHostUpdateRequired)		DwmCore	EVTDESC_SCHEDULE_COMPOSITIONPASS	Verbose		

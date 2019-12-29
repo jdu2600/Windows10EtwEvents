@@ -364,6 +364,7 @@ Microsoft-Windows-XAML	357	0	DecodeGreaterThanRenderSize(UInt64 ImageId, UInt32 
 Microsoft-Windows-XAML	358	0	DecodeSizeQueryStart()	Start	Images	DecodeSizeQuery	Verbose		
 Microsoft-Windows-XAML	359	0	DecodeSizeQueryStop()	Stop	Images	DecodeSizeQuery	Verbose		
 Microsoft-Windows-XAML	360	0	DecodeToRenderSizeStart(UInt64 ImageId, UnicodeString URI)	Start	Images	DecodeToRenderSize	Verbose		
+Microsoft-Windows-XAML	360	1	DecodeToRenderSizeStart_V1(UInt64 ImageId, UInt32 RenderWidth, UInt32 RenderHeight, UInt32 PreviousDecodeWidth, UInt32 PreviousDecodeHeight, UInt32 DecodeWidth, UInt32 DecodeHeight, UInt32 NativeWidth, UInt32 NativeHeight, UInt32 LayoutWidth, UInt32 LayoutHeight)	Start	Images	DecodeToRenderSize	Verbose		
 Microsoft-Windows-XAML	361	0	DecodeToRenderSizeStop(UInt64 ImageId, UnicodeString URI)	Stop	Images	DecodeToRenderSize	Verbose		
 Microsoft-Windows-XAML	362	0	ImageRequestDecodeStart(UInt64 ImageId, UnicodeString URI)	Start	Images	ImageRequestDecode	Verbose		
 Microsoft-Windows-XAML	363	0	ImageRequestDecodeStop(UInt64 ImageId, UnicodeString URI)	Stop	Images	ImageRequestDecode	Verbose		
@@ -381,11 +382,14 @@ Microsoft-Windows-XAML	374	0	ImageResetForSourceChangeStart(UInt64 ImageId, Unic
 Microsoft-Windows-XAML	375	0	ImageResetForSourceChangeStop(UInt64 ImageId, UnicodeString URI)	Stop	Images	ImageResetForSourceChange	Verbose		
 Microsoft-Windows-XAML	376	0	ImageUsesColorTransform()		Images	ImageUsesColorTransform	Informational		
 Microsoft-Windows-XAML	377	0	VirtualizationIsEnabledByModernPanelUsage(Boolean IsEnabled)		Controls	VirtualizationIsEnabledByModernPanelUsage	Informational		
+Microsoft-Windows-XAML	377	1	VirtualizationIsEnabledByModernPanelUsage_V1(Boolean IsEnabled, UInt64 ElementId, UnicodeString Name, UnicodeString ClassType, UnicodeString PropertyType)		Controls	VirtualizationIsEnabledByModernPanelUsage	Informational		
 Microsoft-Windows-XAML	378	0	VirtualizationIsEnabledByLayout(Boolean IsEnabled)		Controls	VirtualizationIsEnabledByLayout	Informational		
+Microsoft-Windows-XAML	378	1	VirtualizationIsEnabledByLayout_V1(Boolean IsEnabled, UInt64 ElementId, UnicodeString Name, UnicodeString ClassType, UnicodeString PropertyType)		Controls	VirtualizationIsEnabledByLayout	Informational		
 Microsoft-Windows-XAML	379	0	HubSectionCount(UInt32 CurrentSectionCount)		Controls	HubSectionCount	Informational		
 Microsoft-Windows-XAML	380	0	RenderToSurfaceStart()	Start	Rendering	RenderToSurface	Informational		
 Microsoft-Windows-XAML	381	0	RenderToSurfaceStop()	Stop	Rendering	RenderToSurface	Informational		
 Microsoft-Windows-XAML	382	0	DecodeToRenderSizeDisabled(UInt64 ImageId, UnicodeString Reason)		Images	DecodeToRenderSizeDisabled	Informational		
+Microsoft-Windows-XAML	382	1	DecodeToRenderSizeDisabled_V1(UInt64 ImageId, UnicodeString Reason, UInt32 ReasonKey)		Images	DecodeToRenderSizeDisabled	Informational		
 Microsoft-Windows-XAML	383	0	DmContentValuesUpdateStart(UInt64 ViewportId, UInt64 ContentId)	Start	Input	DmContentValuesUpdate	Informational		
 Microsoft-Windows-XAML	384	0	DmContentValuesUpdateStop(UInt64 ViewportId, UInt64 ContentId, UInt32 ContentType, Float TranslationX, Float TranslationY, Float ZoomFactor, Float ZoomFactorX, Float ZoomFactorY)	Stop	Input	DmContentValuesUpdate	Informational		
 Microsoft-Windows-XAML	385	0	DmCompositorContentValuesUpdateStart(UInt64 ViewportId, UInt64 ContentId)	Start	Input	DmCompositorContentValuesUpdate	Informational		
@@ -414,3 +418,33 @@ Microsoft-Windows-XAML	407	0	CompNodeOffset(Float translateX, Float translateY)	
 Microsoft-Windows-XAML	408	0	ManipulationTransformDestroyed(UInt64 address)		Input	ManipulationTransformDestroyed	Verbose		
 Microsoft-Windows-XAML	409	0	FaultInBehaviorStart(UnicodeString FaultInType)	Start	Parser	FaultInBehavior	Verbose		
 Microsoft-Windows-XAML	410	0	FaultInBehaviorStop()	Stop	Parser	FaultInBehavior	Verbose		
+Microsoft-Windows-XAML	411	0	MediaElementLegacyFullScreenStop(UInt64 Id, UInt32 IsFullScreen)	Stop	Media	MediaElementLegacyFullScreen	Informational		
+Microsoft-Windows-XAML	412	0	RecordDeviceAsLost()		Rendering	RecordDeviceAsLost	Informational		
+Microsoft-Windows-XAML	413	0	CompositorSetMedia(UInt64 ContentNodeId, UInt64 SwapchainHandle)		Media	CompositorSetMedia	Informational		
+Microsoft-Windows-XAML	414	0	CoreWebViewHostInvoke(UInt32 InvokeResult)			CoreWebViewHostInvoke	Informational		
+Microsoft-Windows-XAML	415	0	CheckForStaleDxgiDevice(UInt32 Result, Boolean SecondaryCheck)		Rendering	CheckForStaleDxgiDevice	Informational		
+Microsoft-Windows-XAML	416	0	RecursiveInvalidateMeasure(UnicodeString State)		Layout	RecursiveInvalidateMeasure	Informational		
+Microsoft-Windows-XAML	417	0	AccessKeyScopeBuilderConstructScopeStart()	Start	Input	AccessKeyScopeBuilderConstructScope	Informational		
+Microsoft-Windows-XAML	418	0	AccessKeyScopeBuilderConstructScopeStop()	Stop	Input	AccessKeyScopeBuilderConstructScope	Informational		
+Microsoft-Windows-XAML	419	0	AccessKeyScopeInvokeStart()	Start	Input	AccessKeyScopeInvoke	Informational		
+Microsoft-Windows-XAML	420	0	AccessKeyScopeInvokeStop()	Stop	Input	AccessKeyScopeInvoke	Informational		
+Microsoft-Windows-XAML	421	0	ReleaseGraphicsDeviceResourcesStart(Boolean ReleaseDcompDevice, Boolean IsDeviceLost)	Start	Rendering	ReleaseGraphicsDeviceResources	Verbose		
+Microsoft-Windows-XAML	422	0	ReleaseGraphicsDeviceResourcesStop()	Stop	Rendering	ReleaseGraphicsDeviceResources	Verbose		
+Microsoft-Windows-XAML	423	0	RebuildGraphicsDeviceResourcesStart()	Start	Rendering	RebuildGraphicsDeviceResources	Verbose		
+Microsoft-Windows-XAML	424	0	RebuildGraphicsDeviceResourcesStop()	Stop	Rendering	RebuildGraphicsDeviceResources	Verbose		
+Microsoft-Windows-XAML	425	0	AsyncImageDecoderFrameNotReady()		Images	AsyncImageDecoderFrameNotReady	Informational		
+Microsoft-Windows-XAML	426	0	PopulateStaticQuirkCacheStart()	Start		PopulateStaticQuirkCache	Informational		
+Microsoft-Windows-XAML	427	0	PopulateStaticQuirkCacheStop()	Stop		PopulateStaticQuirkCache	Informational		
+Microsoft-Windows-XAML	428	0	DCompAppendChild(UInt64 Parent, UInt64 Visual)			DCompAppendChild	Informational		
+Microsoft-Windows-XAML	429	0	CoreWebViewSetWindowlessFocus(Boolean setFocus, Boolean isProcessingTab, Boolean isShiftPressed)			CoreWebViewSetWindowlessFocus	Informational		
+Microsoft-Windows-XAML	430	0	DCompSnapshotBounds(UInt64 ElementId, Float Left, Float Top, Float Width, Float Height)			DCompSnapshotBounds	Informational		
+Microsoft-Windows-XAML	431	0	PageRotationSnapshotTaken()		Rendering	PageRotationSnapshotTaken	Informational		
+Microsoft-Windows-XAML	432	0	PageRotationAnimationStarted()		Rendering	PageRotationAnimationStarted	Informational		
+Microsoft-Windows-XAML	433	0	WindowSizeChanged(UInt32 Width, UInt32 Height)		Rendering	WindowSizeChanged	Informational		
+Microsoft-Windows-XAML	434	0	MockDCompDump(AnsiString value)		Rendering	MockDCompDump	Verbose		
+Microsoft-Windows-XAML	435	0	DecodeStreamForImage(UInt64 ImageId, UInt32 DecodeWidth, UInt32 DecodeHeight, UInt32 NaturalWidth, UInt32 NaturalHeight, Boolean RetrievedFromCache)		Images	DecodeStreamForImage	Verbose		
+Microsoft-Windows-XAML	436	0	ImageRequestDecode(UInt64 ImageId, UnicodeString URI, UnicodeString ImageState, UInt32 ImageStateKey, UInt32 Width, UInt32 Height)		Images	ImageRequestDecode	Verbose		
+Microsoft-Windows-XAML	437	0	MemoryUpdateAllocationDCompSurface(Int32 Size)		Core	MemoryUpdateAllocationDCompSurface	Verbose		
+Microsoft-Windows-XAML	438	0	MemoryUpdateAllocationSystemMemoryBits(Int32 Size)		Core	MemoryUpdateAllocationSystemMemoryBits	Verbose		
+Microsoft-Windows-XAML	439	0	MemoryReportPressureToGC(Int32 Size)		Core	MemoryReportPressureToGC	Verbose		
+Microsoft-Windows-XAML	440	0	ImageAnimationEnd()		Images	ImageAnimationEnd	Informational		

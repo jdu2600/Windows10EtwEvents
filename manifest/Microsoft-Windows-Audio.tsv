@@ -49,10 +49,6 @@ Microsoft-Windows-Audio	50	0	System_Effect_APO_Initialized(GUID APOCLSID, GUID A
 Microsoft-Windows-Audio	51	0	AudioSrv_EVT_VOLUME_LIMIT_CHANGED_ENTER(Pointer objectpointer)			AudioSrv_EVT_VOLUME_LIMIT_CHANGED_ENTER	Informational		
 Microsoft-Windows-Audio	52	0	AudioSrv_EVT_VOLUME_LIMIT_CHANGED_EXIT(Pointer objectpointer, UInt32 hr)			AudioSrv_EVT_VOLUME_LIMIT_CHANGED_EXIT	Informational		
 Microsoft-Windows-Audio	53	0	AudioSrv_EVT_VOLUME_LIMIT_PUBLISH_WNF_AVLC_STATE(Pointer objectpointer)			AudioSrv_EVT_VOLUME_LIMIT_PUBLISH_WNF_AVLC_STATE	Informational		
-Microsoft-Windows-Audio	54	0	AudioSrv_EVT_AUDIOSRV_PdcActivationAudioSrvcallsPdcActivationClientRegister(Pointer hPdcActivator, UInt32 ntStatus)	AudioSrvcallsPdcActivationClientRegister		AudioSrv_EVT_AUDIOSRV_PdcActivation	Informational		
-Microsoft-Windows-Audio	55	0	AudioSrv_EVT_AUDIOSRV_PdcActivationAudioSrvcallsPdcActivationClientUnregister(Pointer hPdcActivator, UInt32 ntStatus)	AudioSrvcallsPdcActivationClientUnregister		AudioSrv_EVT_AUDIOSRV_PdcActivation	Informational		
-Microsoft-Windows-Audio	56	0	AudioSrv_EVT_AUDIOSRV_PdcActivationAudioSrvcallsPdcActivationClientTakeTimerReference(Pointer hPdcActivator, UInt32 ntStatus)	AudioSrvcallsPdcActivationClientTakeTimerReference		AudioSrv_EVT_AUDIOSRV_PdcActivation	Informational		
-Microsoft-Windows-Audio	57	0	AudioSrv_EVT_AUDIOSRV_PdcActivationAudioSrvcallsPdcActivationClientReleaseTimerReference(Pointer hPdcActivator, UInt32 ntStatus)	AudioSrvcallsPdcActivationClientReleaseTimerReference		AudioSrv_EVT_AUDIOSRV_PdcActivation	Informational		
 Microsoft-Windows-Audio	58	0	AudioCore_EVT_MMDevAPIMMDevAPI:Defaultdevicechangedtriggered(UInt32 flow, UInt32 role, UInt32 TargetProcessId)	Defaultdevicechangedtriggered		AudioCore_EVT_MMDevAPI	Informational		
 Microsoft-Windows-Audio	59	0	AudioCore_EVT_MMDevAPIStart(Pointer object)	Start		AudioCore_EVT_MMDevAPI	Informational		
 Microsoft-Windows-Audio	60	0	AudioCore_EVT_MMDevAPIStop(Pointer object)	Stop		AudioCore_EVT_MMDevAPI	Informational		
@@ -75,12 +71,12 @@ Microsoft-Windows-Audio	111	0	MidiRT:PerformSynchronousI/OStart(Pointer object, 
 Microsoft-Windows-Audio	112	0	MidiRT:PerformSynchronousI/OStop(Pointer object, UInt32 hResult)	Stop		MidiRT:PerformSynchronousI/O	Informational		
 Microsoft-Windows-Audio	113	0	MidiRT:PerformAsynchronousI/OStart(Pointer object, UInt32 ioControlCode)	Start		MidiRT:PerformAsynchronousI/O	Informational		
 Microsoft-Windows-Audio	114	0	MidiRT:PerformAsynchronousI/OStop(Pointer object, UInt32 hResult)	Stop		MidiRT:PerformAsynchronousI/O	Informational		
-Microsoft-Windows-Audio	115	0	CrossProcesspacketadded(Pointer CrossProcessInstance, UInt32 ReadIndex, UInt32 WriteIndexIndex, UInt32 FramesInPacket, UInt64 QPC)			CrossProcesspacketadded	Informational		
-Microsoft-Windows-Audio	116	0	Pump:settingdeadline(Pointer PumpInstance, Int64 deadlineHns)			Pump:settingdeadline	Informational		
+Microsoft-Windows-Audio	115	0	CrossProcesspacketadded(Pointer CrossProcessInstance, UInt32 ReadIndex, UInt32 WriteIndexIndex, UInt32 FramesInPacket, UInt64 QPC)			CrossProcesspacketadded	Verbose		
+Microsoft-Windows-Audio	116	0	Pump:settingdeadline(Pointer PumpInstance, Int64 deadlineHns)			Pump:settingdeadline	Verbose		
 Microsoft-Windows-Audio	117	0	Pump:cancellingdeadline(Pointer PumpInstance)			Pump:cancellingdeadline	Informational		
 Microsoft-Windows-Audio	118	0	Pump:misseddeadline!(Pointer PumpInstance, Int64 deadlineHns)			Pump:misseddeadline!	Informational		
-Microsoft-Windows-Audio	119	0	Pump:MultiMediamodeStart(Pointer PumpInstance)	Start		Pump:MultiMediamode	Informational		
-Microsoft-Windows-Audio	120	0	Pump:MultiMediamodeStop(Pointer PumpInstance)	Stop		Pump:MultiMediamode	Informational		
+Microsoft-Windows-Audio	119	0	Pump:MultiMediamodeStart(Pointer PumpInstance)	Start		Pump:MultiMediamode	Verbose		
+Microsoft-Windows-Audio	120	0	Pump:MultiMediamodeStop(Pointer PumpInstance)	Stop		Pump:MultiMediamode	Verbose		
 Microsoft-Windows-Audio	121	0	EndpointCharacteristicsDiscoveryStart(UnicodeString EndpointId)	Start		EndpointCharacteristicsDiscovery	Informational		
 Microsoft-Windows-Audio	122	0	EndpointCharacteristicsDiscoveryStop(UnicodeString EndpointId, HexInt32 hr)	Stop		EndpointCharacteristicsDiscovery	Informational		
 Microsoft-Windows-Audio	123	0	GetMixFormatevaluationStart(UnicodeString EndpointId, UInt32 category, Boolean Raw, Boolean MatchFormat, UInt32 ConnectorType)	Start		GetMixFormatevaluation	Informational		

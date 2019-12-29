@@ -4,6 +4,7 @@ Events from all manifest-based and mof-based ETW providers across Windows 10 ver
 | Version | Events | Manifest Providers | MOF Providers | Unknown Providers |
 |---    |---        |---	|---	|---	|
 | 1511  | 43,319    | 811	| 195   | 24    |
+| 1607  | 45,569    | 830	| 193   | 23    |
 
 Useful references
 -----------------

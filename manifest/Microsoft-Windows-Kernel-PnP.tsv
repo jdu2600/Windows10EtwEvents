@@ -92,6 +92,8 @@ Microsoft-Windows-Kernel-PnP	803	0	ProcessDeviceStart(HexInt32 Phase, UnicodeStr
 Microsoft-Windows-Kernel-PnP	804	0	ProcessDeviceStartStop(HexInt32 Phase, UnicodeString Device)	Stop	Enumeration	ProcessDeviceStart	Informational		
 Microsoft-Windows-Kernel-PnP	805	0	ProcessDeviceRestart(HexInt32 Phase, UnicodeString Device)	Start	Enumeration	ProcessDeviceRestart	Informational		
 Microsoft-Windows-Kernel-PnP	806	0	ProcessDeviceRestartStop(HexInt32 Phase, UnicodeString Device)	Stop	Enumeration	ProcessDeviceRestart	Informational		
+Microsoft-Windows-Kernel-PnP	807	0	DeviceAddStart(UInt32 ServiceType, UInt16 DriverNameLength, UnicodeString DriverName, UnicodeString DeviceInstancePath)	Start	Enumeration	DeviceAdd	Informational		
+Microsoft-Windows-Kernel-PnP	808	0	DeviceAddStop(UInt32 Status)	Stop	Enumeration	DeviceAdd	Informational		
 Microsoft-Windows-Kernel-PnP	810	0	ReenumerateDeviceTree(UnicodeString Device, HexInt32 ReenumerateType)		Enumeration	ReenumerateDeviceTree	Informational		
 Microsoft-Windows-Kernel-PnP	811	0	ReenumerateDeviceTreeStart(UnicodeString Device, HexInt32 ReenumerateType)	Start	Enumeration	ReenumerateDeviceTree	Informational		
 Microsoft-Windows-Kernel-PnP	812	0	ReenumerateDeviceTreeStop(UnicodeString Device, HexInt32 ReenumerateType)	Stop	Enumeration	ReenumerateDeviceTree	Informational		

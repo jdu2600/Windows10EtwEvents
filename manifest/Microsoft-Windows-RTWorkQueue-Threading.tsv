@@ -13,8 +13,8 @@ Microsoft-Windows-RTWorkQueue-Threading	4474	0	WorkQueue:ExecutecallbackStart(Po
 Microsoft-Windows-RTWorkQueue-Threading	4475	0	WorkQueue:ExecutecallbackStop(Pointer WorkQueuePointer, UInt32 WorkQueueID, UInt32 BaseWorkQueueID, UInt32 ThreadID, Pointer AsyncResult, Pointer AsyncResultVTable, Boolean LongRunning)	Stop		WorkQueue:Executecallback	Verbose		
 Microsoft-Windows-RTWorkQueue-Threading	4476	0	WorkQueue:MMCSSTransitionStart(Pointer WorkQueuePointer, UInt32 WorkQueueID, UnicodeString Class, Int32 Priority, UInt32 TaskID)	Start		WorkQueue:MMCSSTransition	Verbose		
 Microsoft-Windows-RTWorkQueue-Threading	4477	0	WorkQueue:MMCSSTransitionStop(Pointer WorkQueuePointer, UInt32 WorkQueueID, UnicodeString Class, Int32 Priority, UInt32 TaskID)	Stop		WorkQueue:MMCSSTransition	Verbose		
-Microsoft-Windows-RTWorkQueue-Threading	4478	0	WorkQueue:UpdateDeadlinesStart(Pointer WorkQueuePointer, UInt32 WorkQueueID, UInt32 TaskID, Int64 PreviousDeadline, Int64 NextDeadline, Int32 lDelay_ms)	Start		WorkQueue:UpdateDeadlines	Verbose		
-Microsoft-Windows-RTWorkQueue-Threading	4479	0	WorkQueue:UpdateDeadlinesStop(Pointer WorkQueuePointer, UInt32 WorkQueueID, UInt32 TaskID, Int64 PreviousDeadline, Int64 NextDeadline, Int32 lDelay_ms)	Stop		WorkQueue:UpdateDeadlines	Verbose		
+Microsoft-Windows-RTWorkQueue-Threading	4478	0	WorkQueue:UpdateDeadlinesStart(Pointer WorkQueuePointer, UInt32 WorkQueueID, UInt32 TaskID, Int64 PreviousDeadline, Int64 NextDeadline, Int32 lDelay_ms, Int32 lPreDelay_ms)	Start		WorkQueue:UpdateDeadlines	Verbose		
+Microsoft-Windows-RTWorkQueue-Threading	4479	0	WorkQueue:UpdateDeadlinesStop(Pointer WorkQueuePointer, UInt32 WorkQueueID, UInt32 TaskID, Int64 PreviousDeadline, Int64 NextDeadline, Int32 lDelay_ms, Int32 lPreDelay_ms)	Stop		WorkQueue:UpdateDeadlines	Verbose		
 Microsoft-Windows-RTWorkQueue-Threading	4480	0	WorkQueue:AddDeadlineStart(Pointer WorkQueuePointer, UInt32 WorkQueueID, Pointer ItemPointer, Int64 GlobalDeadline, Int64 DeltaAhead_usec)	Start		WorkQueue:AddDeadline	Verbose		
 Microsoft-Windows-RTWorkQueue-Threading	4481	0	WorkQueue:AddDeadlineStop(Pointer WorkQueuePointer, UInt32 WorkQueueID, Pointer ItemPointer, Int64 GlobalDeadline, Int64 DeltaAhead_usec)	Stop		WorkQueue:AddDeadline	Verbose		
 Microsoft-Windows-RTWorkQueue-Threading	4482	0	WorkQueue:AddImmediateDeadlineStart(Pointer WorkQueuePointer, UInt32 WorkQueueID, Pointer ItemPointer, Int64 GlobalDeadline, Int64 DeltaAhead_usec)	Start		WorkQueue:AddImmediateDeadline	Verbose		
@@ -22,8 +22,8 @@ Microsoft-Windows-RTWorkQueue-Threading	4483	0	WorkQueue:AddImmediateDeadlineSto
 Microsoft-Windows-RTWorkQueue-Threading	4484	0	WorkQueue:DeadlineYieldStart(UInt32 WorkQueueID, UInt32 Yield)	Start		WorkQueue:DeadlineYield	Verbose		
 Microsoft-Windows-RTWorkQueue-Threading	4485	0	WorkQueue:DeadlineYieldStop(UInt32 WorkQueueID, UInt32 Yield)	Stop		WorkQueue:DeadlineYield	Verbose		
 Microsoft-Windows-RTWorkQueue-Threading	4486	0	WorkQueue:UpdateDeadlineQueue(Pointer WorkQueuePointer, UInt32 WorkQueueID, UInt32 TotalCount, UInt32 ImmediateCount, Int64 NextDeadline, Pointer ItemPointer)			WorkQueue:UpdateDeadlineQueue	Verbose		
-Microsoft-Windows-RTWorkQueue-Threading	4487	0	WorkQueue:LongRunningStart(UInt32 WorkQueueID)	Start		WorkQueue:LongRunning	Verbose		
-Microsoft-Windows-RTWorkQueue-Threading	4488	0	WorkQueue:LongRunningStop(UInt32 WorkQueueID)	Stop		WorkQueue:LongRunning	Verbose		
+Microsoft-Windows-RTWorkQueue-Threading	4487	0	WorkQueue:LongRunningStart(UInt32 WorkQueueID, UInt32 TaskGroupID)	Start		WorkQueue:LongRunning	Verbose		
+Microsoft-Windows-RTWorkQueue-Threading	4488	0	WorkQueue:LongRunningStop(UInt32 WorkQueueID, UInt32 TaskGroupID)	Stop		WorkQueue:LongRunning	Verbose		
 Microsoft-Windows-RTWorkQueue-Threading	4489	0	WorkQueue:StartTimer(Pointer WorkQueuePointer, UInt32 WorkQueueID, Pointer TimerPointer, Int64 Timeout, Boolean IsPeriodic)			WorkQueue:StartTimer	Verbose		
 Microsoft-Windows-RTWorkQueue-Threading	4490	0	WorkQueue:ExecuteTimer(Pointer WorkQueuePointer, UInt32 WorkQueueID, Pointer TimerPointer, Boolean IsPeriodic)			WorkQueue:ExecuteTimer	Verbose		
 Microsoft-Windows-RTWorkQueue-Threading	4493	0	UpdateSelectWorkQueuesCpuGroupMaskStart(UInt64 ProcessorGroup, UInt64 ProcessorMask)	Start		UpdateSelectWorkQueuesCpuGroupMask	Informational		
@@ -32,3 +32,9 @@ Microsoft-Windows-RTWorkQueue-Threading	4495	0	SubscribeCpuGroupMaskChangeWNF(UI
 Microsoft-Windows-RTWorkQueue-Threading	4496	0	UpdateWorkqueueCpuGroupMask(UInt32 dwWorkQueue, UnicodeString Class, UInt64 ProcessorGroup, UInt64 ProcessorMask)			UpdateWorkqueueCpuGroupMask	Informational		
 Microsoft-Windows-RTWorkQueue-Threading	4497	0	CpuGroupMaskChangeWnfCallback(UInt32 ChangeStamp, UInt32 CurChangeStamp, UInt64 ProcessorGroup, UInt64 ProcessorMask, UInt32 Length)			CpuGroupMaskChangeWnfCallback	Informational		
 Microsoft-Windows-RTWorkQueue-Threading	4498	0	SetThreadCpuGroupMask(Pointer pWorkQueue, UnicodeString Class, Int32 Priority, Int32 ThreadId, UInt64 CurProcessorGroup, UInt64 CurProcessorMask, UInt64 NewProcessorGroup, UInt64 NewProcessorMask, Int32 Status)			SetThreadCpuGroupMask	Informational		
+Microsoft-Windows-RTWorkQueue-Threading	4499	0	WorkQueue:QueueStart4499(Pointer WorkQueuePointer, Int32 WorkQueueID)	Start		WorkQueue:Queue	Verbose		
+Microsoft-Windows-RTWorkQueue-Threading	4500	0	WorkQueue:QueueStop4500(Pointer WorkQueuePointer, Int32 WorkQueueID)	Stop		WorkQueue:Queue	Verbose		
+Microsoft-Windows-RTWorkQueue-Threading	4501	0	WorkQueue:DebounceStart(Pointer WorkQueuePointer, UInt32 WorkQueueID, UInt32 TaskGroup)	Start		WorkQueue:Debounce	Verbose		
+Microsoft-Windows-RTWorkQueue-Threading	4502	0	WorkQueue:DebounceStop(Pointer WorkQueuePointer, UInt32 WorkQueueID, UInt32 TaskGroup)	Stop		WorkQueue:Debounce	Verbose		
+Microsoft-Windows-RTWorkQueue-Threading	4503	0	WorkQueue:BufferingStart(Pointer WorkQueuePointer, UInt32 WorkQueueID, UInt32 TaskGroup)	Start		WorkQueue:Buffering	Verbose		
+Microsoft-Windows-RTWorkQueue-Threading	4504	0	WorkQueue:BufferingStop(Pointer WorkQueuePointer, UInt32 WorkQueueID, UInt32 TaskGroup)	Stop		WorkQueue:Buffering	Verbose		

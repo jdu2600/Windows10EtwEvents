@@ -77,3 +77,7 @@ Microsoft-Windows-Direct3D11	1810	0	ID3D11VideoContext_VideoProcessorGetBehavior
 Microsoft-Windows-Direct3D11	1811	0	ID3D11VideoContext_VideoProcessorGetBehaviorHintsStop(UInt32 BehaviorHints, UInt32 m_Ret)	Stop		ID3D11VideoContext_VideoProcessorGetBehaviorHints	Always		
 Microsoft-Windows-Direct3D11	1812	0	CryptoSessionTeardownCount(Pointer pThis, Pointer pCryptoSession, UInt32 TeardownCount)			CryptoSessionTeardownCount	Always		
 Microsoft-Windows-Direct3D11	1813	0	RecoverTeardown(Pointer pThis, UInt32 TeardownCount, UInt32 Recover)			RecoverTeardown	Always		
+Microsoft-Windows-Direct3D11	1814	0	ID3D11VideoContext_VideoProcessorBltParameters(Pointer pThis, UInt32 SourceWidth, UInt32 SourceHeight, UInt32 SourceFormat, UInt32 SourceColorspace, UInt32 DestWidth, UInt32 DestHeight, UInt32 DestFormat, UInt32 DestColorspace, UInt32 Rotation)			ID3D11VideoContext_VideoProcessorBltParameters	Always		
+Microsoft-Windows-Direct3D11	1815	0	ID3D11VideoDevice_DestroyCryptoSessionStart(Pointer pCryptoSession)	Start		ID3D11VideoDevice_DestroyCryptoSession	Always		
+Microsoft-Windows-Direct3D11	1816	0	ID3D11VideoDevice_DestroyCryptoSessionStop(Pointer pCryptoSession)	Stop		ID3D11VideoDevice_DestroyCryptoSession	Always		
+Microsoft-Windows-Direct3D11	1817	0	ID3D11VideoContext_GetDataForNewHardwareKey(Pointer pThis, UInt32 TeardownCount, UInt32 Result)			ID3D11VideoContext_GetDataForNewHardwareKey	Always		

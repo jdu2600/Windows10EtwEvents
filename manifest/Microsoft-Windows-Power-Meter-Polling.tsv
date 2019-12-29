@@ -1,0 +1,7 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Power-Meter-Polling	1	0	PowerMeterRundown(Pointer MeterId, UInt64 DefaultSamplingPeriodInMs, UInt32 MeterNameLength, UnicodeString MeterName, UInt32 MeteredHardwareCount, UnicodeString MeteredHardwareName)			PowerMeterRundown	Informational		
+Microsoft-Windows-Power-Meter-Polling	2	0	EnergyMeterRundown(Pointer MeterId, UInt64 DefaultSamplingPeriodInMs, UInt32 ChannelNameLength, UnicodeString ChannelName)			EnergyMeterRundown	Informational		
+Microsoft-Windows-Power-Meter-Polling	3	0	PowerMeterData(Pointer MeterId, UInt32 Value)			PowerMeterData	Informational		
+Microsoft-Windows-Power-Meter-Polling	4	0	EnergyMeterData(Pointer MeterId, UInt64 AbsoluteEnergy, UInt64 AbsoluteTime)			EnergyMeterData	Informational		
+Microsoft-Windows-Power-Meter-Polling	5	0	SamplingPeriodRundown(UInt32 MeterType, UInt32 PeriodInMs)			SamplingPeriodRundown	Informational		
+Microsoft-Windows-Power-Meter-Polling	6	0	SamplingPeriodChange(UInt32 MeterType, UInt32 PeriodInMs)			SamplingPeriodChange	Informational		

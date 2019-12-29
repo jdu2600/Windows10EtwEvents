@@ -94,6 +94,10 @@ Microsoft-Windows-AppHost	1065	0	LayoutChangedStop()	Stop	WwaHost	LayoutChanged	
 Microsoft-Windows-AppHost	1066	0	ApplicationActivateEvent(UInt32 ToggleCount, UInt32 ToggleDetail, UnicodeString PackageFullName, UnicodeString AppID)		WwaHost	ApplicationActivateEvent	Informational		
 Microsoft-Windows-AppHost	1067	0	ByteCodeSourceMapping(UnicodeString FilePath)		WwaHost	ByteCodeSourceMapping	Informational		
 Microsoft-Windows-AppHost	1068	0	ByteCodeSourceMapping1068(UnicodeString FilePath)		WwaHost	ByteCodeSourceMapping	Informational		
+Microsoft-Windows-AppHost	1069	0	LeavingBackgroundStart()	Start	WwaHost	LeavingBackground	Informational		
+Microsoft-Windows-AppHost	1070	0	LeavingBackgroundStop()	Stop	WwaHost	LeavingBackground	Informational		
+Microsoft-Windows-AppHost	1071	0	EnteredBackgroundStart()	Start	WwaHost	EnteredBackground	Informational		
+Microsoft-Windows-AppHost	1072	0	EnteredBackgroundStop()	Stop	WwaHost	EnteredBackground	Informational		
 Microsoft-Windows-AppHost	10000	0	ApplicationTracing.ErrorAppHostApplicationError(UnicodeString DisplayName, UnicodeString ApplicationName, UnicodeString AppUserModelId, UnicodeString PackageFullName, Int32 ProcessId, UnicodeString Source, UnicodeString DocumentFile, Int32 Line, Int32 Column, Int32 MessageId, UnicodeString Message)	AppHostApplicationError	WWAHOST_APPLICATION_KEYWORD	ApplicationTracing.Error	Error		
 Microsoft-Windows-AppHost	10001	0	ApplicationTracing.WarningAppHostApplicationWarning(UnicodeString DisplayName, UnicodeString ApplicationName, UnicodeString AppUserModelId, UnicodeString PackageFullName, Int32 ProcessId, UnicodeString Source, UnicodeString DocumentFile, Int32 Line, Int32 Column, Int32 MessageId, UnicodeString Message)	AppHostApplicationWarning	WWAHOST_APPLICATION_KEYWORD	ApplicationTracing.Warning	Warning		
 Microsoft-Windows-AppHost	10002	0	ApplicationTracing.InformationalAppHostApplicationInformation(UnicodeString DisplayName, UnicodeString ApplicationName, UnicodeString AppUserModelId, UnicodeString PackageFullName, Int32 ProcessId, UnicodeString Source, UnicodeString DocumentFile, Int32 Line, Int32 Column, Int32 MessageId, UnicodeString Message)	AppHostApplicationInformation	WWAHOST_APPLICATION_KEYWORD	ApplicationTracing.Informational	Informational		
@@ -102,3 +106,5 @@ Microsoft-Windows-AppHost	10004	0	ApplicationTracing.InformationalAppHostApplica
 Microsoft-Windows-AppHost	10005	0	Activation.CompleteActivationStart()	Start	WwaHost	Activation.CompleteActivation	Informational		
 Microsoft-Windows-AppHost	10006	0	Activation.CompleteActivationStop()	Stop	WwaHost	Activation.CompleteActivation	Informational		
 Microsoft-Windows-AppHost	10007	0	DrawingAppHostInformation(UnicodeString Value)	AppHostInformation	WWAHOST_KEYWORD	Drawing	Informational		
+Microsoft-Windows-AppHost	10009	0	NavigationStart10009()	Start	WwaHost	Navigation	Informational		
+Microsoft-Windows-AppHost	10010	0	NavigationStop10010()	Stop	WwaHost	Navigation	Informational		

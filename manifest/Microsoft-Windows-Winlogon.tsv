@@ -85,6 +85,7 @@ Microsoft-Windows-Winlogon	5002	0	UserBootStop()	Stop	PerfDiagnostics	UserBoot	I
 Microsoft-Windows-Winlogon	5003	0	UserBoot(UInt32 SessionId)		PerfDiagnostics	UserBoot	Informational		
 Microsoft-Windows-Winlogon	5005	0	UserShellLaunch()		PerfDiagnostics	UserShellLaunch	Informational		
 Microsoft-Windows-Winlogon	5007	0	SystemBootStop(UInt32 SessionId)	Stop	PerfDiagnostics	SystemBoot	Informational		
+Microsoft-Windows-Winlogon	5007	1	SystemBootStop_V1(UInt32 SessionId, UInt32 ReadyBootTrainingCountSinceLastServicing)	Stop	PerfDiagnostics	SystemBoot	Informational		
 Microsoft-Windows-Winlogon	6000	0	task_0PCODE_128pcode_1286000()	opcode_128		task_0	Always		
 Microsoft-Windows-Winlogon	6001	0	ShutdownDiagnosticsStart(UInt32 Flags)	Start	PerfInstrumentation PerfDiagnostics	ShutdownDiagnostics	Informational		
 Microsoft-Windows-Winlogon	6001	0	task_0PCODE_128pcode_1286001()	opcode_128		task_0	Always		
@@ -105,7 +106,7 @@ Microsoft-Windows-Winlogon	6109	0	LogonStop(UInt32 Status)	Stop	PerfDiagnostics 
 Microsoft-Windows-Winlogon	6110	0	LogonStop6110()	Stop	PerfDiagnostics keyword_400000000000	Logon	Informational		
 Microsoft-Windows-Winlogon	6111	0	LogonStop6111()	Stop	PerfDiagnostics keyword_400000000000	Logon	Informational		
 Microsoft-Windows-Winlogon	6112	0	LogonStop6112()	Stop	PerfDiagnostics keyword_400000000000	Logon	Informational		
-Microsoft-Windows-Winlogon	6113	0	LockStart()	Start	PerfDiagnostics keyword_200000000000	Lock	Informational		
+Microsoft-Windows-Winlogon	6113	0	LockStart()	Start	PerfDiagnostics keyword_400000000000	Lock	Informational		
 Microsoft-Windows-Winlogon	6114	0	LockStop()	Stop	PerfDiagnostics	Lock	Informational		
 Microsoft-Windows-Winlogon	6115	0	LockStop6115()	Stop	PerfDiagnostics	Lock	Informational		
 Microsoft-Windows-Winlogon	6116	0	Logoff(UInt32 Duration, UInt32 ResolverData)		PerfDiagnostics keyword_400000000000	Logoff	Informational		

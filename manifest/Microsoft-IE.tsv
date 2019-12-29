@@ -627,9 +627,9 @@ Microsoft-IE	747	0	Mshtml_CSP_AddPolicyStart(Pointer CContentSecurityPolicy, UIn
 Microsoft-IE	748	0	Mshtml_CSP_AddPolicyStop(Pointer CContentSecurityPolicy, UInt32 PolicyType, Boolean Added)	Stop	mshtml	Mshtml_CSP_AddPolicy	Always		
 Microsoft-IE	749	0	Mshtml_CSP_CheckPolicyStart(Pointer CContentSecurityPolicy, UInt32 ResourceDirectiveType)	Start	mshtml	Mshtml_CSP_CheckPolicy	Always		
 Microsoft-IE	750	0	Mshtml_CSP_CheckPolicyStop(Pointer CContentSecurityPolicy, UInt32 ResourceDirectiveType, Boolean Allowed)	Stop	mshtml	Mshtml_CSP_CheckPolicy	Always		
-Microsoft-IE	751	0	EdgeHTML_Webview_AppPermissionResponse(UnicodeString URL, UInt32 PermissionType, UInt32 PermissionState, Boolean IsPrimaryResponse)		mshtml keyword_200000000000	EdgeHTML_Webview_AppPermissionResponse	Always		
+Microsoft-IE	751	0	EdgeHTML_Webview_AppPermissionResponse(UnicodeString URL, UInt32 PermissionType, UInt32 PermissionState, Boolean IsPrimaryResponse)		mshtml	EdgeHTML_Webview_AppPermissionResponse	Always		
 Microsoft-IE	752	0	Mshtml_Download_Initiator(UnicodeString DownloadedURL, Pointer BindInfo, Pointer CHtmPre, Pointer CPre, Pointer CDoc, Pointer CWindow, UnicodeString WindowURL, UnicodeString URL, UInt32 Line, UInt32 Offset, Boolean Speculative, Boolean LookAhead, Boolean PreParserRestarted, UInt32 Context, UInt32 Initiator, UInt32 Source, UInt32 LookAheadCount)		mshtml	Mshtml_Download_Initiator	Always		
-Microsoft-IE	753	0	Mshtml_CrossCDoc_NodeAdoptionAttempt(UInt32 PID, UInt32 TID, UnicodeString SourceUrl, UnicodeString TargetUrl, UnicodeString Func)		mshtml keyword_200000000000	Mshtml_CrossCDoc_NodeAdoptionAttempt	Always		
+Microsoft-IE	753	0	Mshtml_CrossCDoc_NodeAdoptionAttempt(UInt32 PID, UInt32 TID, UnicodeString SourceUrl, UnicodeString TargetUrl, UnicodeString Func)		mshtml	Mshtml_CrossCDoc_NodeAdoptionAttempt	Always		
 Microsoft-IE	754	0	Mshtml_Ortc_Candidate_GatheringStart(Pointer ThisPtr)	Start	mshtml	Mshtml_Ortc_Candidate_Gathering	Always		
 Microsoft-IE	755	0	Mshtml_Ortc_Candidate_GatheringStop(Pointer ThisPtr)	Stop	mshtml	Mshtml_Ortc_Candidate_Gathering	Always		
 Microsoft-IE	756	0	Mshtml_Ortc_Candidate_Gathering(Int32 HR, Pointer ThisPtr)		mshtml	Mshtml_Ortc_Candidate_Gathering	Always		
@@ -663,3 +663,14 @@ Microsoft-IE	783	0	Mshtml_Media_Capture_Sample_Requested(UInt64 SampleRequstedCo
 Microsoft-IE	784	0	Mshtml_Media_Capture_Sample_Delivered(UInt64 SampleRequstedCount, UInt64 SampleDeliveredCount, UInt64 SampleReceivedCount, UInt64 SampleDroppedCount, UInt32 TrackKind, Pointer ThisPtr)		mshtml	Mshtml_Media_Capture_Sample_Delivered	Always		
 Microsoft-IE	785	0	Mshtml_Media_Capture_Sample_Received(UInt64 SampleRequstedCount, UInt64 SampleDeliveredCount, UInt64 SampleReceivedCount, UInt64 SampleDroppedCount, UInt32 TrackKind, Pointer ThisPtr)		mshtml	Mshtml_Media_Capture_Sample_Received	Always		
 Microsoft-IE	786	0	Mshtml_Media_Capture_Sample_Dropped(UInt64 SampleRequstedCount, UInt64 SampleDeliveredCount, UInt64 SampleReceivedCount, UInt64 SampleDroppedCount, UInt32 TrackKind, Pointer ThisPtr)		mshtml	Mshtml_Media_Capture_Sample_Dropped	Always		
+Microsoft-IE	800	0	IndexedDBServerStart(UnicodeString MethodName)	Start		IndexedDBServer	Informational		
+Microsoft-IE	801	0	IndexedDBServerStop(UnicodeString MethodName, UInt32 HR)	Stop		IndexedDBServer	Informational		
+Microsoft-IE	802	0	IndexedDBServerStart802(UnicodeString MethodName)	Start		IndexedDBServer	Informational		
+Microsoft-IE	803	0	IndexedDBServerStop803(UnicodeString MethodName, UInt32 HR)	Stop		IndexedDBServer	Informational		
+Microsoft-IE	804	0	IndexedDBServer(UnicodeString Reason)			IndexedDBServer	Informational		
+Microsoft-IE	805	0	IndexedDBServer805(UnicodeString HandleType)			IndexedDBServer	Informational		
+Microsoft-IE	806	0	IndexedDBServer806(UInt32 HR)			IndexedDBServer	Informational		
+Microsoft-IE	807	0	IndexedDBServer807(UnicodeString ProcessName, UInt32 PID, UnicodeString FileName)			IndexedDBServer	Informational		
+Microsoft-IE	808	0	Mshtml_AlignedTimer_ProcessingStart(UInt64 CurrentRound, UInt64 CallsToProcess, UInt64 CurrentTimeMs)	Start	paintbeat	Mshtml_AlignedTimer_Processing	Always		
+Microsoft-IE	809	0	Mshtml_AlignedTimer_ProcessingStop(UInt64 CurrentRound, UInt64 CallsToProcess, UInt64 CurrentTimeMs)	Stop	paintbeat	Mshtml_AlignedTimer_Processing	Always		
+Microsoft-IE	810	2	Mshtml_AlignedTimer_Fire810_V2(Pointer Object, UInt32 TimerId, Int32 DeltaMs, Int32 PeriodMs, UInt64 CurrentTimeMs, HexInt32 Flags, Pointer Callback, Boolean Visibility, UInt32 TimerRound)		paintbeat	Mshtml_AlignedTimer_Fire	Always		

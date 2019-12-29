@@ -30,7 +30,7 @@ Microsoft-Windows-MediaFoundation-MFCaptureEngine	227	0	MFCaptureEnginePhotoXVPS
 Microsoft-Windows-MediaFoundation-MFCaptureEngine	228	0	MFCaptureEnginePhotoXVPStop(Pointer PhotoSink, UInt32 hrStatus)	Stop		MFCaptureEnginePhotoXVP	Informational		
 Microsoft-Windows-MediaFoundation-MFCaptureEngine	229	0	MFCaptureEnginePhotoSinkConfigureStart(Pointer PhotoSink, UInt32 hrStatus)	Start		MFCaptureEnginePhotoSinkConfigure	Informational		
 Microsoft-Windows-MediaFoundation-MFCaptureEngine	230	0	MFCaptureEnginePhotoSinkConfigureStop(Pointer PhotoSink, UInt32 hrStatus)	Stop		MFCaptureEnginePhotoSinkConfigure	Informational		
-Microsoft-Windows-MediaFoundation-MFCaptureEngine	231	0	MFCaptureEngineInitializationTask(Pointer CaptureEnginePointer, Pointer Source, Pointer RecordSink, Pointer PreviewSink, Pointer PhotoSink)			MFCaptureEngineInitializationTask	Informational		
+Microsoft-Windows-MediaFoundation-MFCaptureEngine	231	0	MFCaptureEngineInitializationTask(Pointer CaptureEnginePointer, Pointer Source, Pointer RecordSink, Pointer PreviewSink, Pointer PhotoSink, Pointer FrameReaderSink)			MFCaptureEngineInitializationTask	Informational		
 Microsoft-Windows-MediaFoundation-MFCaptureEngine	232	0	MFCaptureEnginesampleprobe(Pointer Sample, UInt64 SampleTimestamp, UInt64 RefTimestamp)			MFCaptureEnginesampleprobe	Informational		
 Microsoft-Windows-MediaFoundation-MFCaptureEngine	233	0	MFCaptureEnginesampleprobe233(Pointer Sample, UInt64 SampleTimestamp, UInt64 RefTimestamp)			MFCaptureEnginesampleprobe	Informational		
 Microsoft-Windows-MediaFoundation-MFCaptureEngine	234	0	MFCaptureEnginesampleprobe234(Pointer Sample, UInt64 SampleTimestamp, UInt64 RefTimestamp)			MFCaptureEnginesampleprobe	Informational		
@@ -73,3 +73,4 @@ Microsoft-Windows-MediaFoundation-MFCaptureEngine	270	0	MFCaptureEngineSinkTask2
 Microsoft-Windows-MediaFoundation-MFCaptureEngine	271	0	MFCaptureEngineSinkTask271(Pointer SinkPointer, Pointer SamplePointer, UInt32 SinkStreamIndex, UInt64 Timestamp, UInt64 RefTimestamp)			MFCaptureEngineSinkTask	Informational		
 Microsoft-Windows-MediaFoundation-MFCaptureEngine	272	0	MFCaptureEngine_DiskFull_Condition.TaskMessageStart(Pointer RecordSink, UInt32 ErrorCode)	Start		MFCaptureEngine_DiskFull_Condition.TaskMessage	Informational		
 Microsoft-Windows-MediaFoundation-MFCaptureEngine	273	0	MFCaptureEngine_DiskFull_Condition.TaskMessageStop(Pointer RecordSink, Pointer CaptureEngineObject)	Stop		MFCaptureEngine_DiskFull_Condition.TaskMessage	Informational		
+Microsoft-Windows-MediaFoundation-MFCaptureEngine	274	0	MFCaptureEngineSinkTask274(Pointer SinkPointer, Pointer SamplePointer, UInt32 SinkStreamIndex, UInt64 Timestamp, UInt64 RefTimestamp)			MFCaptureEngineSinkTask	Informational		

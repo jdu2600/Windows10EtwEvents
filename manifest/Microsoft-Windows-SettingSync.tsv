@@ -122,6 +122,7 @@ Microsoft-Windows-SettingSync	5722	0	task_05722(UnicodeString Message)			task_0	
 Microsoft-Windows-SettingSync	5723	0	task_05723(UnicodeString Message)			task_0	Informational		
 Microsoft-Windows-SettingSync	5724	0	task_05724(UnicodeString Collection, UInt32 OperationType)			task_0	Error		
 Microsoft-Windows-SettingSync	5725	0	task_05725(UnicodeString MetadataStorePath)			task_0	Informational		
+Microsoft-Windows-SettingSync	5726	0	task_05726(UnicodeString CollectionId, UInt32 HRESULT)			task_0	Informational		
 Microsoft-Windows-SettingSync	6001	0	task_06001(UnicodeString CollectionId, UInt32 HRESULT)			task_0	Informational		
 Microsoft-Windows-SettingSync	6002	0	task_06002(UnicodeString CollectionId, UInt32 HRESULT)			task_0	Informational		
 Microsoft-Windows-SettingSync	6003	0	task_06003(UnicodeString CollectionId, UInt32 HRESULT)			task_0	Informational		
@@ -280,6 +281,10 @@ Microsoft-Windows-SettingSync	6588	0	task_06588()			task_0	Informational
 Microsoft-Windows-SettingSync	6589	0	task_06589(UnicodeString CollectionId, UInt32 OperationType)			task_0	Informational		
 Microsoft-Windows-SettingSync	6590	0	task_06590(Boolean IsRoamingEnabled, UInt32 RoamingReasonCode, Boolean IsBackupEnabled, UInt32 BackupReasonCode, GUID ProviderId)			task_0	Informational		
 Microsoft-Windows-SettingSync	6591	0	task_06591(UnicodeString Message)			task_0	Informational		
+Microsoft-Windows-SettingSync	6592	0	task_06592(UnicodeString CollectionId, UnicodeString Direction, UnicodeString Priority, GUID OperationId)			task_0	Informational		
+Microsoft-Windows-SettingSync	6593	0	task_06593(GUID OperationId)			task_0	Informational		
+Microsoft-Windows-SettingSync	6594	0	task_06594(GUID OperationId)			task_0	Informational		
+Microsoft-Windows-SettingSync	6595	0	task_06595(GUID OperationId, UInt32 HRESULT)			task_0	Informational		
 Microsoft-Windows-SettingSync	7001	0	Perf_SettingProfileHandler_OnLoadStart()	Start	RoamingSettings	Perf_SettingProfileHandler_OnLoad	Informational		
 Microsoft-Windows-SettingSync	7002	0	Perf_SettingProfileHandler_OnLoadStop()	Stop	RoamingSettings	Perf_SettingProfileHandler_OnLoad	Informational		
 Microsoft-Windows-SettingSync	7003	0	Perf_MouseSettingHandler_GetUnitStart()	Start	RoamingSettings	Perf_MouseSettingHandler_GetUnit	Informational		

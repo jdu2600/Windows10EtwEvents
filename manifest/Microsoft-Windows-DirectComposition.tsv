@@ -41,7 +41,7 @@ Microsoft-Windows-DirectComposition	39	0	CAP_RELEASE_SURFACE(UInt64 Id, UInt32 W
 Microsoft-Windows-DirectComposition	40	0	BLOCK_FOR_EXCESSIVE_PENDINGStart(UInt64 Id)	Start	DCompDiagnostic DCompMemory	BLOCK_FOR_EXCESSIVE_PENDING	Verbose		
 Microsoft-Windows-DirectComposition	41	0	BLOCK_FOR_EXCESSIVE_PENDINGStop(UInt64 Id)	Stop	DCompDiagnostic DCompMemory	BLOCK_FOR_EXCESSIVE_PENDING	Verbose		
 Microsoft-Windows-DirectComposition	42	0	OFFER_RECLAIM(UInt64 Id, UInt32 Width, UInt32 Height)		DCompMemory OfferReclaim	OFFER_RECLAIM	Verbose		
-Microsoft-Windows-DirectComposition	43	0	OFFER_RECLAIM43(UInt64 Id, UInt32 Width, UInt32 Height, Boolean PixelsDiscarded)		DCompMemory OfferReclaim	OFFER_RECLAIM	Verbose		
+Microsoft-Windows-DirectComposition	43	0	OFFER_RECLAIM43(UInt64 Id, UInt32 Width, UInt32 Height, Boolean PixelsDiscarded, Boolean SurfaceInvalid)		DCompMemory OfferReclaim	OFFER_RECLAIM	Verbose		
 Microsoft-Windows-DirectComposition	44	0	CAP_MAXIMUMStart(UInt64 Id)	Start	DCompDiagnostic DCompMemory	CAP_MAXIMUM	Verbose		
 Microsoft-Windows-DirectComposition	45	0	CAP_MAXIMUMStop(UInt64 Id)	Stop	DCompDiagnostic DCompMemory	CAP_MAXIMUM	Verbose		
 Microsoft-Windows-DirectComposition	46	0	CREATE_SHARED_MEMORY_SECTION(UInt64 section, UInt32 size)		DCompDiagnostic DCompSharedMemory	CREATE_SHARED_MEMORY_SECTION	Verbose		

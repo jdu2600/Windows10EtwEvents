@@ -15,8 +15,12 @@ Microsoft-Windows-Kernel-EventTracing	11	1	SessionStop11_V1(GUID SessionGuid, UI
 Microsoft-Windows-Kernel-EventTracing	12	0	SessionConfigure(GUID SessionGuid, UInt32 LoggerMode, UnicodeString SessionName, UnicodeString LogFileName)	Configure	ETW_KEYWORD_SESSION	Session	Verbose		
 Microsoft-Windows-Kernel-EventTracing	13	0	SessionFlush(GUID SessionGuid, UInt32 LoggerMode, UnicodeString SessionName, UnicodeString LogFileName)	Flush	ETW_KEYWORD_SESSION	Session	Verbose		
 Microsoft-Windows-Kernel-EventTracing	14	0	ProviderEnable(GUID ProviderName, UnicodeString SessionName)	Enable	ETW_KEYWORD_PROVIDER	Provider	Verbose		
+Microsoft-Windows-Kernel-EventTracing	14	1	ProviderEnable_V1(GUID ProviderName, UnicodeString SessionName, UInt64 MatchAnyKeyword, UInt64 MatchAllKeyword, UInt32 EnableProperty, UInt8 Level)	Enable	ETW_KEYWORD_PROVIDER	Provider	Verbose		
 Microsoft-Windows-Kernel-EventTracing	15	0	ProviderDisable(GUID ProviderName, UnicodeString SessionName)	Disable	ETW_KEYWORD_PROVIDER	Provider	Verbose		
 Microsoft-Windows-Kernel-EventTracing	17	0	SessionConfigure17(GUID SessionGuid, UInt32 LoggerMode, UnicodeString SessionName, UnicodeString LogFileName)	Configure	ETW_KEYWORD_SESSION	Session	Verbose		
 Microsoft-Windows-Kernel-EventTracing	18	0	StackTraceUserModeStackTrace()	UserModeStackTrace		StackTrace	Informational		
 Microsoft-Windows-Kernel-EventTracing	19	0	LostEvent(GUID ProviderId, UInt32 StatusCode, UInt16 EventId, UnicodeString SessionName)		ETW_KEYWORD_LOST_EVENT	LostEvent	Error		
 Microsoft-Windows-Kernel-EventTracing	20	0	Session(GUID SessionGuid, UInt32 LoggerMode, UnicodeString SessionName, UnicodeString LogFileName, UInt32 MinimumBuffers, UInt32 MaximumBuffers, UInt32 BufferSize, UInt32 PeakBuffersCount, UInt32 CurrentBuffersCount, UInt32 FlushThreshold)		ETW_KEYWORD_SESSION	Session	Verbose		
+Microsoft-Windows-Kernel-EventTracing	21	0	SavePersistedLoggerStart_8_1()	Start_8_1	ETW_KEYWORD_SOFT_RESTART	SavePersistedLogger	Informational		
+Microsoft-Windows-Kernel-EventTracing	22	0	SavePersistedLoggerStop_8_2(UnicodeString FileName, UInt32 BufferSize, UInt32 BuffersPersisted, UInt32 BuffersWritten, UInt32 Status)	Stop_8_2	ETW_KEYWORD_SOFT_RESTART	SavePersistedLogger	Informational		
+Microsoft-Windows-Kernel-EventTracing	23	0	SavePersistedLogger(UnicodeString FileName, UInt32 BufferSize, UInt32 BuffersPersisted, UInt32 BuffersWritten, UInt32 Status)		ETW_KEYWORD_SOFT_RESTART	SavePersistedLogger	Error		

@@ -90,3 +90,5 @@ Microsoft-Windows-Winsock-AFD	4012	0	AfdRioCleanupBufferFreed(Pointer Buffer)	Fr
 Microsoft-Windows-Winsock-AFD	4013	0	AfdRioValidateBufferId(Pointer RegistrationDomain, Pointer RioState, UInt32 BufferId)		AFD_KW_RIO	AfdRioValidateBufferId	Warning		
 Microsoft-Windows-Winsock-AFD	4014	0	AfdRioRangeCheck(Pointer RegistrationDomain, Pointer RioState, Pointer Buffer, UInt32 BufferOffset, UInt32 BufferLength)		AFD_KW_RIO	AfdRioRangeCheck	Warning		
 Microsoft-Windows-Winsock-AFD	4015	0	AfdRioSendReceive(Pointer RioState, UInt32 BufferType, UInt32 SpecifiedLength, UInt32 RequiredLength)		AFD_KW_RIO	AfdRioSendReceive	Warning		
+Microsoft-Windows-Winsock-AFD	4016	0	AfdNrtCreateOpen(Pointer NameResolutionHandle, Pointer Process, UInt32 Status)	Open	AFD_KW_NRT	AfdNrtCreate	Informational		
+Microsoft-Windows-Winsock-AFD	4017	0	AfdNrtCloseClosed(Pointer NameResolutionHandle, Pointer Process)	Closed	AFD_KW_NRT	AfdNrtClose	Informational		

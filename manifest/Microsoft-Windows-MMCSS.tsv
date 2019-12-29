@@ -6,10 +6,11 @@ Microsoft-Windows-MMCSS	5	1	Service_Start_V1()			Service_Start	Informational
 Microsoft-Windows-MMCSS	6	1	Service_Stop_V1()			Service_Stop	Informational		
 Microsoft-Windows-MMCSS	7	1	Thread_Join_V1(UInt32 ThreadID, UInt8 MediumPriority, UInt8 LowPriority, UInt8 UberLowPriority, UnicodeString TaskName, UInt32 TaskIndex, UInt8 Category, UInt8 Flags)			Thread_Join	Informational		
 Microsoft-Windows-MMCSS	8	1	Thread_Leave_V1(UInt32 ThreadID, UInt8 OriginalBasePriority)			Thread_Leave	Informational		
-Microsoft-Windows-MMCSS	12	1	TaskIndex_Yield_V1(UInt32 TaskIndex, UInt32 Duration)			TaskIndex_Yield	Informational		
+Microsoft-Windows-MMCSS	12	1	TaskIndex_Yield_V1(UInt32 TaskIndex, UInt32 Duration, UInt32 PreDuration)			TaskIndex_Yield	Informational		
 Microsoft-Windows-MMCSS	13	1	TaskIndex_YieldCancel_V1(UInt32 TaskIndex)			TaskIndex_YieldCancel	Informational		
 Microsoft-Windows-MMCSS	14	1	Set_MultimediaMode_V1(UInt32 TaskIndex, UInt32 ThreadTag)			Set_MultimediaMode	Informational		
 Microsoft-Windows-MMCSS	15	1	TaskIndex_DeadlineExpired_V1(UInt32 TaskIndex)			TaskIndex_DeadlineExpired	Informational		
 Microsoft-Windows-MMCSS	16	1	TurboEngaged_V1(UInt32 TurboEngaged)			TurboEngaged	Informational		
 Microsoft-Windows-MMCSS	17	1	ThreadBufferingStart_V1(UInt32 ThreadID)	Start		ThreadBuffering	Informational		
 Microsoft-Windows-MMCSS	18	1	ThreadBufferingStop_V1(UInt32 ThreadID)	Stop		ThreadBuffering	Informational		
+Microsoft-Windows-MMCSS	19	1	TaskIndex_PreDeadlineExpired_V1(UInt32 TaskIndex)			TaskIndex_PreDeadlineExpired	Informational		

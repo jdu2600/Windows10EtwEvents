@@ -9,6 +9,51 @@ Microsoft-Windows-WinHttp	12	0	API(UInt64 ApiHandle, AnsiString Api)		Keyword.AP
 Microsoft-Windows-WinHttp	13	0	APIStop13(UInt64 ApiHandle, AnsiString Api, UInt32 Result)	Stop	Keyword.API	API	Verbose		
 Microsoft-Windows-WinHttp	14	0	APIStop14(UInt64 ApiHandle, AnsiString Api, UInt32 Result)	Stop	Keyword.API	API	Verbose		
 Microsoft-Windows-WinHttp	100	0	API100(Pointer hRequest, UInt32 AuthTargets, UInt32 AuthScheme, UnicodeString UserName, UnicodeString Password)		Keyword.API keyword_20000000000	API	Verbose		
+Microsoft-Windows-WinHttp	801	0	WINHTTP_AUTOPROXY_SEARCHStart(UInt16 _ConnectionNameLength, AnsiString ConnectionName, UInt32 DetectFlags)	Start	WINHTTP_KEYWORD_AUTOPROXY	WINHTTP_AUTOPROXY_SEARCH	Informational		
+Microsoft-Windows-WinHttp	801	1	WINHTTP_AUTOPROXY_SEARCHStart_V1(UInt16 _ConnectionNameLength, UnicodeString ConnectionName, UInt32 DetectFlags)	Start	WINHTTP_KEYWORD_AUTOPROXY	WINHTTP_AUTOPROXY_SEARCH	Informational		
+Microsoft-Windows-WinHttp	802	0	WINHTTP_AUTOPROXY_DHCPStart(UInt16 _InterfaceLength, AnsiString Interface)	Start	WINHTTP_KEYWORD_AUTOPROXY	WINHTTP_AUTOPROXY_DHCP	Verbose		
+Microsoft-Windows-WinHttp	802	1	WINHTTP_AUTOPROXY_DHCPStart_V1(UInt16 _InterfaceLength, UnicodeString Interface)	Start	WINHTTP_KEYWORD_AUTOPROXY	WINHTTP_AUTOPROXY_DHCP	Verbose		
+Microsoft-Windows-WinHttp	803	0	WINHTTP_AUTOPROXY_DHCPStop(UInt16 _InterfaceLength, AnsiString Interface, UInt16 _ConfigurationURLLength, AnsiString ConfigurationURL)	Stop	WINHTTP_KEYWORD_AUTOPROXY	WINHTTP_AUTOPROXY_DHCP	Verbose		
+Microsoft-Windows-WinHttp	803	1	WINHTTP_AUTOPROXY_DHCPStop_V1(UInt16 _InterfaceLength, UnicodeString Interface, UInt16 _ConfigurationURLLength, UnicodeString ConfigurationURL)	Stop	WINHTTP_KEYWORD_AUTOPROXY	WINHTTP_AUTOPROXY_DHCP	Verbose		
+Microsoft-Windows-WinHttp	804	0	WINHTTP_AUTOPROXY_DHCPFail(UInt16 _InterfaceLength, AnsiString Interface, UInt16 _ConfigurationURLLength, AnsiString ConfigurationURL, UInt32 Error)	Fail	WINHTTP_KEYWORD_AUTOPROXY	WINHTTP_AUTOPROXY_DHCP	Error		
+Microsoft-Windows-WinHttp	804	1	WINHTTP_AUTOPROXY_DHCPFail_V1(UInt16 _InterfaceLength, UnicodeString Interface, UInt16 _ConfigurationURLLength, UnicodeString ConfigurationURL, UInt32 Error)	Fail	WINHTTP_KEYWORD_AUTOPROXY	WINHTTP_AUTOPROXY_DHCP	Error		
+Microsoft-Windows-WinHttp	805	0	WINHTTP_AUTOPROXY_DNSStart(UInt32 DetectFlags)	Start	WINHTTP_KEYWORD_AUTOPROXY	WINHTTP_AUTOPROXY_DNS	Verbose		
+Microsoft-Windows-WinHttp	806	0	WINHTTP_AUTOPROXY_DNSStop(UInt16 _ConfigurationURLLength, AnsiString ConfigurationURL, UInt32 DetectFlags)	Stop	WINHTTP_KEYWORD_AUTOPROXY	WINHTTP_AUTOPROXY_DNS	Verbose		
+Microsoft-Windows-WinHttp	806	1	WINHTTP_AUTOPROXY_DNSStop_V1(UInt16 _ConfigurationURLLength, UnicodeString ConfigurationURL, UInt32 DetectFlags)	Stop	WINHTTP_KEYWORD_AUTOPROXY	WINHTTP_AUTOPROXY_DNS	Verbose		
+Microsoft-Windows-WinHttp	807	0	WINHTTP_AUTOPROXY_DNSFail(UInt32 DetectFlags, UInt32 Error)	Fail	WINHTTP_KEYWORD_AUTOPROXY	WINHTTP_AUTOPROXY_DNS	Error		
+Microsoft-Windows-WinHttp	808	0	WINHTTP_AUTOPROXY_SEARCHFail(UInt32 Error)	Fail	WINHTTP_KEYWORD_AUTOPROXY	WINHTTP_AUTOPROXY_SEARCH	Error		
+Microsoft-Windows-WinHttp	809	0	WINHTTP_AUTOPROXY_DOWNLOADStart(UInt16 _ConfigurationURLLength, AnsiString ConfigurationURL)	Start	WINHTTP_KEYWORD_AUTOPROXY	WINHTTP_AUTOPROXY_DOWNLOAD	Informational		
+Microsoft-Windows-WinHttp	809	1	WINHTTP_AUTOPROXY_DOWNLOADStart_V1(UInt16 _ConfigurationURLLength, UnicodeString ConfigurationURL)	Start	WINHTTP_KEYWORD_AUTOPROXY	WINHTTP_AUTOPROXY_DOWNLOAD	Informational		
+Microsoft-Windows-WinHttp	810	0	WINHTTP_AUTOPROXY_DOWNLOADStop(UInt16 _ConfigurationURLLength, AnsiString ConfigurationURL)	Stop	WINHTTP_KEYWORD_AUTOPROXY	WINHTTP_AUTOPROXY_DOWNLOAD	Informational		
+Microsoft-Windows-WinHttp	810	1	WINHTTP_AUTOPROXY_DOWNLOADStop_V1(UInt16 _ConfigurationURLLength, UnicodeString ConfigurationURL)	Stop	WINHTTP_KEYWORD_AUTOPROXY	WINHTTP_AUTOPROXY_DOWNLOAD	Informational		
+Microsoft-Windows-WinHttp	811	0	WINHTTP_AUTOPROXY_DOWNLOADFail(UInt16 _ConfigurationURLLength, AnsiString ConfigurationURL, UInt32 Error)	Fail	WINHTTP_KEYWORD_AUTOPROXY	WINHTTP_AUTOPROXY_DOWNLOAD	Error		
+Microsoft-Windows-WinHttp	811	1	WINHTTP_AUTOPROXY_DOWNLOADFail_V1(UInt16 _ConfigurationURLLength, UnicodeString ConfigurationURL, UInt32 Error)	Fail	WINHTTP_KEYWORD_AUTOPROXY	WINHTTP_AUTOPROXY_DOWNLOAD	Error		
+Microsoft-Windows-WinHttp	812	0	WINHTTP_AUTOPROXY_DOWNLOADFail812(UInt16 _ConfigurationURLLength, AnsiString ConfigurationURL, UInt16 _MIMETypeLength, AnsiString MIMEType, UInt32 Error)	Fail	WINHTTP_KEYWORD_AUTOPROXY	WINHTTP_AUTOPROXY_DOWNLOAD	Error		
+Microsoft-Windows-WinHttp	812	1	WINHTTP_AUTOPROXY_DOWNLOADFail812_V1(UInt16 _ConfigurationURLLength, UnicodeString ConfigurationURL, UInt16 _MIMETypeLength, UnicodeString MIMEType, UInt32 Error)	Fail	WINHTTP_KEYWORD_AUTOPROXY	WINHTTP_AUTOPROXY_DOWNLOAD	Error		
+Microsoft-Windows-WinHttp	813	0	WINHTTP_AUTOPROXY_FIND_INFO_FOR_URLStart(UInt16 _URLLength, AnsiString URL)	Start	WINHTTP_KEYWORD_AUTOPROXY	WINHTTP_AUTOPROXY_FIND_INFO_FOR_URL	Informational		
+Microsoft-Windows-WinHttp	813	1	WINHTTP_AUTOPROXY_FIND_INFO_FOR_URLStart_V1(UInt16 _URLLength, UnicodeString URL)	Start	WINHTTP_KEYWORD_AUTOPROXY	WINHTTP_AUTOPROXY_FIND_INFO_FOR_URL	Informational		
+Microsoft-Windows-WinHttp	814	0	WINHTTP_AUTOPROXY_FIND_INFO_FOR_URLStop(UInt16 _URLLength, AnsiString URL, UInt16 _ProxyStringLength, AnsiString ProxyString)	Stop	WINHTTP_KEYWORD_AUTOPROXY	WINHTTP_AUTOPROXY_FIND_INFO_FOR_URL	Informational		
+Microsoft-Windows-WinHttp	814	1	WINHTTP_AUTOPROXY_FIND_INFO_FOR_URLStop_V1(UInt16 _URLLength, UnicodeString URL, UInt16 _ProxyStringLength, UnicodeString ProxyString)	Stop	WINHTTP_KEYWORD_AUTOPROXY	WINHTTP_AUTOPROXY_FIND_INFO_FOR_URL	Informational		
+Microsoft-Windows-WinHttp	815	0	WINHTTP_AUTOPROXY_FIND_INFO_FOR_URLFail(UInt16 _URLLength, AnsiString URL, UInt32 Error)	Fail	WINHTTP_KEYWORD_AUTOPROXY	WINHTTP_AUTOPROXY_FIND_INFO_FOR_URL	Error		
+Microsoft-Windows-WinHttp	815	1	WINHTTP_AUTOPROXY_FIND_INFO_FOR_URLFail_V1(UInt16 _URLLength, UnicodeString URL, UInt32 Error)	Fail	WINHTTP_KEYWORD_AUTOPROXY	WINHTTP_AUTOPROXY_FIND_INFO_FOR_URL	Error		
+Microsoft-Windows-WinHttp	816	0	WINHTTP_BLOCKING_AUTOPROXY_DETERMINATIONStart()	Start	WINHTTP_KEYWORD_AUTOPROXY	WINHTTP_BLOCKING_AUTOPROXY_DETERMINATION	Informational		
+Microsoft-Windows-WinHttp	817	0	WINHTTP_BLOCKING_AUTOPROXY_DETERMINATIONStop()	Stop	WINHTTP_KEYWORD_AUTOPROXY	WINHTTP_BLOCKING_AUTOPROXY_DETERMINATION	Informational		
+Microsoft-Windows-WinHttp	818	0	WINHTTP_TRANSFER()		WINHTTP_KEYWORD_AUTOPROXY	WINHTTP_TRANSFER	Informational		
+Microsoft-Windows-WinHttp	819	0	WINHTTP_AUTOPROXY_SWPAD(UInt32 WPADNetworkDecision, UInt32 NetworkCount)		WINHTTP_KEYWORD_AUTOPROXY	WINHTTP_AUTOPROXY_SWPAD	Informational		
+Microsoft-Windows-WinHttp	820	0	WINHTTP_AUTOPROXY_PERFTRACK_HOST_IP_LOOKUPStart()	Start	WINHTTP_KEYWORD_AUTOPROXY	WINHTTP_AUTOPROXY_PERFTRACK_HOST_IP_LOOKUP	Informational		
+Microsoft-Windows-WinHttp	821	0	WINHTTP_AUTOPROXY_PERFTRACK_HOST_IP_LOOKUPStop()	Stop	WINHTTP_KEYWORD_AUTOPROXY	WINHTTP_AUTOPROXY_PERFTRACK_HOST_IP_LOOKUP	Informational		
+Microsoft-Windows-WinHttp	822	0	WINHTTP_AUTOPROXY_PERFTRACK_SWPAD_LOOKUPStart()	Start	WINHTTP_KEYWORD_AUTOPROXY	WINHTTP_AUTOPROXY_PERFTRACK_SWPAD_LOOKUP	Informational		
+Microsoft-Windows-WinHttp	823	0	WINHTTP_AUTOPROXY_PERFTRACK_SWPAD_LOOKUPStop()	Stop	WINHTTP_KEYWORD_AUTOPROXY	WINHTTP_AUTOPROXY_PERFTRACK_SWPAD_LOOKUP	Informational		
+Microsoft-Windows-WinHttp	824	0	WINHTTP_AUTOPROXY_PERFTRACK_KNOWN_DETECTIONStart()	Start	WINHTTP_KEYWORD_AUTOPROXY	WINHTTP_AUTOPROXY_PERFTRACK_KNOWN_DETECTION	Informational		
+Microsoft-Windows-WinHttp	825	0	WINHTTP_AUTOPROXY_PERFTRACK_KNOWN_DETECTIONStop()	Stop	WINHTTP_KEYWORD_AUTOPROXY	WINHTTP_AUTOPROXY_PERFTRACK_KNOWN_DETECTION	Informational		
+Microsoft-Windows-WinHttp	826	0	WINHTTP_AUTOPROXY_PERFTRACK_UNKNOWN_DETECTIONStart()	Start	WINHTTP_KEYWORD_AUTOPROXY	WINHTTP_AUTOPROXY_PERFTRACK_UNKNOWN_DETECTION	Informational		
+Microsoft-Windows-WinHttp	827	0	WINHTTP_AUTOPROXY_PERFTRACK_UNKNOWN_DETECTIONStop()	Stop	WINHTTP_KEYWORD_AUTOPROXY	WINHTTP_AUTOPROXY_PERFTRACK_UNKNOWN_DETECTION	Informational		
+Microsoft-Windows-WinHttp	828	0	WINHTTP_AUTOPROXY_PERFTRACK_SCRIPT_DOWNLOADStart()	Start	WINHTTP_KEYWORD_AUTOPROXY	WINHTTP_AUTOPROXY_PERFTRACK_SCRIPT_DOWNLOAD	Informational		
+Microsoft-Windows-WinHttp	829	0	WINHTTP_AUTOPROXY_PERFTRACK_SCRIPT_DOWNLOADStop()	Stop	WINHTTP_KEYWORD_AUTOPROXY	WINHTTP_AUTOPROXY_PERFTRACK_SCRIPT_DOWNLOAD	Informational		
+Microsoft-Windows-WinHttp	834	0	WINHTTP_AUTOPROXY_PERFTRACK_ALLStart(UInt32 UniqueId)	Start	WINHTTP_KEYWORD_AUTOPROXY	WINHTTP_AUTOPROXY_PERFTRACK_ALL	Informational		
+Microsoft-Windows-WinHttp	835	0	WINHTTP_AUTOPROXY_PERFTRACK_ALLStop(UInt32 UniqueId)	Stop	WINHTTP_KEYWORD_AUTOPROXY	WINHTTP_AUTOPROXY_PERFTRACK_ALL	Informational		
+Microsoft-Windows-WinHttp	1051	0	WinHTTP_GetaddrinfoStart(UInt32 Flags, AnsiString AddressName)	Start	WINHTTP_KEYWORD_AUTOPROXY	WinHTTP_Getaddrinfo	Informational		
+Microsoft-Windows-WinHttp	1052	0	WinHTTP_GetaddrinfoStop(UInt32 error, UInt32 Flags, AnsiString AddressName)	Stop	WINHTTP_KEYWORD_AUTOPROXY	WinHTTP_Getaddrinfo	Informational		
 Microsoft-Windows-WinHttp	12501	0	task_012501()			task_0	Always		
 Microsoft-Windows-WinHttp	12503	0	task_012503(UInt32 IdleTime)			task_0	Always		
 Microsoft-Windows-WinHttp	12506	0	task_012506(UnicodeString Functionname, UnicodeString Errortext, UnicodeString Errorcode)			task_0	Always		

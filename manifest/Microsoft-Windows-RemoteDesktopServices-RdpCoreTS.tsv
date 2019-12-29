@@ -20,6 +20,8 @@ Microsoft-Windows-RemoteDesktopServices-RdpCoreTS	68	0	RemoteFXmodule_4RCMProtoc
 Microsoft-Windows-RemoteDesktopServices-RdpCoreTS	69	0	RemoteFXmodule_4RCMProtocolImpl69(UnicodeString ModuleName)	RCMProtocolImpl		RemoteFXmodule_4	Informational		
 Microsoft-Windows-RemoteDesktopServices-RdpCoreTS	70	0	RemoteFXmodule_4RCMProtocolImpl70(UnicodeString DisplayDriverName)	RCMProtocolImpl		RemoteFXmodule_4	Informational		
 Microsoft-Windows-RemoteDesktopServices-RdpCoreTS	71	0	RemoteFXmodule_4RCMProtocolImpl71(UnicodeString ConnectionName, UnicodeString DisplayDriverName)	RCMProtocolImpl		RemoteFXmodule_4	Informational		
+Microsoft-Windows-RemoteDesktopServices-RdpCoreTS	72	0	RemoteFXmodule_4RCMProtocolImpl72(UnicodeString MethodName)	RCMProtocolImpl		RemoteFXmodule_4	Informational		
+Microsoft-Windows-RemoteDesktopServices-RdpCoreTS	73	0	RemoteFXmodule_4RCMProtocolImpl73(UInt32 Disabled)	RCMProtocolImpl		RemoteFXmodule_4	Informational		
 Microsoft-Windows-RemoteDesktopServices-RdpCoreTS	97	0	RemoteFXmodule_4ProtocolExchange(UnicodeString ComponentName, UInt32 ErrorCode)	ProtocolExchange		RemoteFXmodule_4	Warning		
 Microsoft-Windows-RemoteDesktopServices-RdpCoreTS	98	0	RemoteFXmodule_4EstablishConnection()	EstablishConnection		RemoteFXmodule_4	Informational		
 Microsoft-Windows-RemoteDesktopServices-RdpCoreTS	99	0	RemoteFXmodule_4EstablishConnection99(HexInt32 ResultCode)	EstablishConnection		RemoteFXmodule_4	Warning		
@@ -29,6 +31,8 @@ Microsoft-Windows-RemoteDesktopServices-RdpCoreTS	102	0	RemoteFXmodule_4CloseCon
 Microsoft-Windows-RemoteDesktopServices-RdpCoreTS	103	0	RemoteFXmodule_4CloseConnection103(UInt32 ReasonCode)	CloseConnection		RemoteFXmodule_4	Informational		
 Microsoft-Windows-RemoteDesktopServices-RdpCoreTS	104	0	RemoteFXmodule_4EstablishConnection104(UnicodeString TimezoneBiasHour)	EstablishConnection		RemoteFXmodule_4	Informational		
 Microsoft-Windows-RemoteDesktopServices-RdpCoreTS	105	0	RemoteFXmodule_4ProtocolExchange105()	ProtocolExchange		RemoteFXmodule_4	Warning		
+Microsoft-Windows-RemoteDesktopServices-RdpCoreTS	106	0	RemoteFXmodule_4CloseConnection106()	CloseConnection		RemoteFXmodule_4	Informational		
+Microsoft-Windows-RemoteDesktopServices-RdpCoreTS	107	0	RemoteFXmodule_4CloseConnection107()	CloseConnection		RemoteFXmodule_4	Informational		
 Microsoft-Windows-RemoteDesktopServices-RdpCoreTS	129	0	RemoteFXmodule_4NetworkBinding(UnicodeString TransportProtocolName, UInt16 Port)	NetworkBinding		RemoteFXmodule_4	Informational		
 Microsoft-Windows-RemoteDesktopServices-RdpCoreTS	130	0	RemoteFXmodule_4EstablishConnection130(UInt32 TunnelID)	EstablishConnection		RemoteFXmodule_4	Informational		
 Microsoft-Windows-RemoteDesktopServices-RdpCoreTS	131	0	RemoteFXmodule_4EstablishConnection131(UnicodeString ConnType, UnicodeString ClientIP)	EstablishConnection		RemoteFXmodule_4	Informational		
@@ -50,6 +54,11 @@ Microsoft-Windows-RemoteDesktopServices-RdpCoreTS	146	0	RemoteFXmodule_4Runtime1
 Microsoft-Windows-RemoteDesktopServices-RdpCoreTS	147	0	RemoteFXmodule_4Runtime147(HexInt32 Error)	Runtime		RemoteFXmodule_4	Error		
 Microsoft-Windows-RemoteDesktopServices-RdpCoreTS	148	0	RemoteFXmodule_4CloseConnection148(UnicodeString ChannelName, UInt32 TunnelID)	CloseConnection		RemoteFXmodule_4	Informational		
 Microsoft-Windows-RemoteDesktopServices-RdpCoreTS	149	0	RemoteFXmodule_4Runtime149(HexInt32 ErrorCode)	Runtime		RemoteFXmodule_4	Error		
+Microsoft-Windows-RemoteDesktopServices-RdpCoreTS	150	0	RemoteFXmodule_4Runtime150(UInt32 FlushTimeMs, UInt32 FlushIntervalMs)	Runtime		RemoteFXmodule_4	Informational		
+Microsoft-Windows-RemoteDesktopServices-RdpCoreTS	151	0	RemoteFXmodule_4Runtime151(UInt32 HistoryMs, UInt32 NumHeartbeats, UInt32 MaxRecentTimeNoPacketMs, UInt32 MaxTotalTimeNoDataMs, UInt32 MaxTotalTimeNoHeartbeatMs, UInt32 MaxTotalTimeNoPacketMs, UInt32 TimeNoLastPacketMs)	Runtime		RemoteFXmodule_4	Informational		
+Microsoft-Windows-RemoteDesktopServices-RdpCoreTS	152	0	RemoteFXmodule_4Runtime152(UInt32 TimestampMs, UInt32 NumHeartbeats, UInt32 LastDataPacketMs, UInt32 LastHeartbeatMs)	Runtime		RemoteFXmodule_4	Informational		
+Microsoft-Windows-RemoteDesktopServices-RdpCoreTS	153	0	RemoteFXmodule_4Runtime153(UnicodeString TLSVersion)	Runtime		RemoteFXmodule_4	Informational		
+Microsoft-Windows-RemoteDesktopServices-RdpCoreTS	154	0	RemoteFXmodule_4Runtime154(UnicodeString Message, HexInt32 Error)	Runtime		RemoteFXmodule_4	Error		
 Microsoft-Windows-RemoteDesktopServices-RdpCoreTS	161	0	RemoteFXmodule_4Runtime161(HexInt32 ErrorCode, UnicodeString ServerName)	Runtime		RemoteFXmodule_4	Error		
 Microsoft-Windows-RemoteDesktopServices-RdpCoreTS	162	0	RemoteFXmodule_4Runtime162(HexInt32 Version, UInt32 ClientMode, UInt32 AvcEnabled, UInt32 ProfileIdNum, UnicodeString ServerName)	Runtime		RemoteFXmodule_4	Informational		
 Microsoft-Windows-RemoteDesktopServices-RdpCoreTS	163	0	RemoteFXmodule_4Runtime163(UnicodeString ServerName)	Runtime		RemoteFXmodule_4	Informational		
@@ -65,5 +74,14 @@ Microsoft-Windows-RemoteDesktopServices-RdpCoreTS	194	0	RemoteFXmodule_4Runtime1
 Microsoft-Windows-RemoteDesktopServices-RdpCoreTS	195	0	RemoteFXmodule_4Runtime195(HexInt32 ErrorCode)	Runtime		RemoteFXmodule_4	Informational		
 Microsoft-Windows-RemoteDesktopServices-RdpCoreTS	225	0	RemoteFXmodule_4Runtime225(UnicodeString StateTransition, UInt32 PreviousState, UnicodeString PreviousStateName, UInt32 NewState, UnicodeString NewStateName, UInt32 Event, UnicodeString EventName)	Runtime		RemoteFXmodule_4	Informational		
 Microsoft-Windows-RemoteDesktopServices-RdpCoreTS	226	0	RemoteFXmodule_4Runtime226(UnicodeString StateTransition, UInt32 PreviousState, UnicodeString PreviousStateName, UInt32 NewState, UnicodeString NewStateName, UInt32 Event, UnicodeString EventName, HexInt32 ErrorCode)	Runtime		RemoteFXmodule_4	Warning		
+Microsoft-Windows-RemoteDesktopServices-RdpCoreTS	227	0	RemoteFXmodule_4Runtime227(UnicodeString Name, UInt32 Value, UnicodeString CustomLevel)	Runtime		RemoteFXmodule_4	Error		
+Microsoft-Windows-RemoteDesktopServices-RdpCoreTS	228	0	RemoteFXmodule_4Runtime228(UnicodeString ComponentName, UnicodeString Message, UInt32 ErrorCode)	Runtime		RemoteFXmodule_4	Warning		
+Microsoft-Windows-RemoteDesktopServices-RdpCoreTS	229	0	RemoteFXmodule_4Runtime229(UnicodeString Name, UnicodeString CustomLevel)	Runtime		RemoteFXmodule_4	Informational		
 Microsoft-Windows-RemoteDesktopServices-RdpCoreTS	257	0	RemoteFXmodule_4AdvancedRemoteAppEnabled()	AdvancedRemoteAppEnabled		RemoteFXmodule_4	Informational		
 Microsoft-Windows-RemoteDesktopServices-RdpCoreTS	258	0	RemoteFXmodule_4AdvancedRemoteAppNotEnabled()	AdvancedRemoteAppNotEnabled		RemoteFXmodule_4	Informational		
+Microsoft-Windows-RemoteDesktopServices-RdpCoreTS	289	0	RemoteFXmodule_4UDPReverseConnect(UnicodeString URL, UInt32 Port, UnicodeString ConnectionID)	UDPReverseConnect		RemoteFXmodule_4	Informational		
+Microsoft-Windows-RemoteDesktopServices-RdpCoreTS	290	0	RemoteFXmodule_4UDPReverseConnect290()	UDPReverseConnect		RemoteFXmodule_4	Informational		
+Microsoft-Windows-RemoteDesktopServices-RdpCoreTS	291	0	RemoteFXmodule_4UDPReverseConnect291(HexInt32 Error)	UDPReverseConnect		RemoteFXmodule_4	Informational		
+Microsoft-Windows-RemoteDesktopServices-RdpCoreTS	292	0	RemoteFXmodule_4UDPReverseConnect292()	UDPReverseConnect		RemoteFXmodule_4	Informational		
+Microsoft-Windows-RemoteDesktopServices-RdpCoreTS	293	0	RemoteFXmodule_4UDPReverseConnect293()	UDPReverseConnect		RemoteFXmodule_4	Informational		
+Microsoft-Windows-RemoteDesktopServices-RdpCoreTS	294	0	RemoteFXmodule_4UDPReverseConnect294()	UDPReverseConnect		RemoteFXmodule_4	Informational		

@@ -140,6 +140,7 @@ Microsoft-Windows-NDIS	10320	0	RefcountrundownStart(GUID IfGuid, UInt32 IfIndex,
 Microsoft-Windows-NDIS	10321	0	Refcountrundown(UInt64 NetLuid, UInt32 ComponentId, UInt32 RefcountValue)		Power LwtDiagnostic	Refcountrundown	Informational		
 Microsoft-Windows-NDIS	10322	0	RefcountrundownStop(UInt64 NetLuid, UInt32 StopFlags)	Stop	Power LwtDiagnostic	Refcountrundown	Informational		
 Microsoft-Windows-NDIS	10323	0	Power10323(UInt32 IfIndex, UInt64 IfLuid, UnicodeString PowerStateFrom, UnicodeString PowerStateTo, UInt64 IfInUnicastPackets, UInt64 IfOutUnicastPackets, UInt64 IfInMulticastPackets, UInt64 IfOutMulticastPackets, UInt64 IfInBroadcastPackets, UInt64 IfOutBroadcastPackets)		Power LwtDiagnostic	Power	Informational		
+Microsoft-Windows-NDIS	10324	0	Power10324(UInt8 ScenarioInstanceId, GUID ParentGuid, GUID BlockerGuid, Pointer PhysicalDeviceNode)		SleepStudy	Power	Informational		
 Microsoft-Windows-NDIS	10400	0	task_0(GUID IfGuid, UInt32 IfIndex, UInt64 IfLuid, UnicodeString AdapterName, UInt32 ResetReason, UInt32 ResetCount)			task_0	Warning		
 Microsoft-Windows-NDIS	60001	0	task_060001(UInt32 ErrorCode, UInt32 Location, UInt32 Context)			task_0	Error		
 Microsoft-Windows-NDIS	60002	0	task_060002(UInt32 WarningCode, UInt32 Location, UInt32 Context)			task_0	Warning		

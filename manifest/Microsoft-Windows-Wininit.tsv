@@ -26,4 +26,4 @@ Microsoft-Windows-Wininit	3003	0	task_0PCODE_128pcode_128()	opcode_128		task_0	A
 Microsoft-Windows-Wininit	3004	0	task_0PCODE_128pcode_1283004()	opcode_128		task_0	Always		
 Microsoft-Windows-Wininit	3005	0	task_0PCODE_192pcode_1923005()	opcode_192		task_0	Always		
 Microsoft-Windows-Wininit	6001	0	ShutdownDiagnosticsStart(UInt32 Flags)	Start	PerfInstrumentation PerfDiagnostics	ShutdownDiagnostics	Informational		
-Microsoft-Windows-Wininit	6002	0	PerfTrackFullShutdown(UInt32 ShutdownFlags, UInt64 UserSessionShutdownDuration, UInt64 SystemShutdownDuration, UInt64 FullShutdownDuration)		PerfInstrumentation	PerfTrackFullShutdown	Informational		
+Microsoft-Windows-Wininit	6002	1	PerfTrackFullShutdown_V1(UInt32 ShutdownFlags, UInt64 SystemShutdownDuration, UInt32 SkuHasLogoff)		PerfInstrumentation	PerfTrackFullShutdown	Informational		

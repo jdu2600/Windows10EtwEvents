@@ -2,18 +2,14 @@ provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channe
 Microsoft-Windows-Immersive-Shell	101	0	ImmersiveShellStartupStart(UInt32 Result)	Start	keyword_400000000000	ImmersiveShellStartup	Informational		
 Microsoft-Windows-Immersive-Shell	102	0	ImmersiveShellStartupStop(UInt32 Result)	Stop	keyword_400000000000	ImmersiveShellStartup	Informational		
 Microsoft-Windows-Immersive-Shell	105	0	ImmersiveShellShutdown()			ImmersiveShellShutdown	Informational		
-Microsoft-Windows-Immersive-Shell	111	0	ImmersiveShellComponentStartupStart(UInt32 TableEntryIndex, UInt32 InitalizationStep, UInt32 Result)	Start	keyword_200000000000	ImmersiveShellComponentStartup	Informational		
-Microsoft-Windows-Immersive-Shell	112	0	ImmersiveShellComponentStartupStop(UInt32 TableEntryIndex, UInt32 InitalizationStep, UInt32 Result)	Stop	keyword_200000000000	ImmersiveShellComponentStartup	Informational		
-Microsoft-Windows-Immersive-Shell	113	0	ImmersiveShellComponentShutdownStart(UInt32 TableEntryIndex, UInt32 InitalizationStep, UInt32 Result)	Start		ImmersiveShellComponentShutdown	Informational		
-Microsoft-Windows-Immersive-Shell	114	0	ImmersiveShellComponentShutdownStop(UInt32 TableEntryIndex, UInt32 InitalizationStep, UInt32 Result)	Stop		ImmersiveShellComponentShutdown	Informational		
+Microsoft-Windows-Immersive-Shell	111	0	ImmersiveShellComponentStartupStart(UInt32 TableEntryIndex, UInt32 InitalizationStep, UInt32 Result)	Start		ImmersiveShellComponentStartup	Informational		
+Microsoft-Windows-Immersive-Shell	112	0	ImmersiveShellComponentStartupStop(UInt32 TableEntryIndex, UInt32 InitalizationStep, UInt32 Result)	Stop		ImmersiveShellComponentStartup	Informational		
 Microsoft-Windows-Immersive-Shell	121	0	ImmersiveShellAppManagerModeNotificationStart(Int32 SystemModeFrom, Int32 SystemSubModeFrom, Int32 SystemModeTo, Int32 SystemSubModeTo)	Start		ImmersiveShellAppManagerModeNotification	Informational		
 Microsoft-Windows-Immersive-Shell	122	0	ImmersiveShellAppManagerModeNotificationStop(Int32 SystemModeFrom, Int32 SystemSubModeFrom, Int32 SystemModeTo, Int32 SystemSubModeTo)	Stop		ImmersiveShellAppManagerModeNotification	Informational		
 Microsoft-Windows-Immersive-Shell	123	0	ImmersiveShellAppManagerZbandNotificationStart(Int32 ZbandFrom, Int32 ZbandTo)	Start		ImmersiveShellAppManagerZbandNotification	Informational		
 Microsoft-Windows-Immersive-Shell	124	0	ImmersiveShellAppManagerZbandNotificationStop(Int32 ZbandFrom, Int32 ZbandTo)	Stop		ImmersiveShellAppManagerZbandNotification	Informational		
 Microsoft-Windows-Immersive-Shell	125	0	ImmersiveShellAppManagerZbandChangedStart(UInt32 ListenerIndex)	Start		ImmersiveShellAppManagerZbandChanged	Informational		
 Microsoft-Windows-Immersive-Shell	126	0	ImmersiveShellAppManagerZbandChangedStop(UInt32 ListenerIndex, UInt32 Result)	Stop		ImmersiveShellAppManagerZbandChanged	Informational		
-Microsoft-Windows-Immersive-Shell	131	0	ImmersiveShellAppManagerModeChangingStart(UInt32 ListenerIndex)	Start		ImmersiveShellAppManagerModeChanging	Informational		
-Microsoft-Windows-Immersive-Shell	132	0	ImmersiveShellAppManagerModeChangingStop(UInt32 ListenerIndex)	Stop		ImmersiveShellAppManagerModeChanging	Informational		
 Microsoft-Windows-Immersive-Shell	141	0	ImmersiveShellAppManagerModeChangedStart(UInt32 ListenerIndex)	Start		ImmersiveShellAppManagerModeChanged	Informational		
 Microsoft-Windows-Immersive-Shell	142	0	ImmersiveShellAppManagerModeChangedStop(UInt32 ListenerIndex)	Stop		ImmersiveShellAppManagerModeChanged	Informational		
 Microsoft-Windows-Immersive-Shell	145	0	ImmersiveShellAppManagerStartupStart()	Start		ImmersiveShellAppManagerStartup	Informational		
@@ -35,74 +31,26 @@ Microsoft-Windows-Immersive-Shell	166	0	ImmersiveShellAppIHMNotificationStop(Int
 Microsoft-Windows-Immersive-Shell	171	0	ImmersiveShellAppManagerApplicationStateChange(UnicodeString AppID, UInt32 ApplicationState, Boolean HasActionsMenu, UInt32 DesktopTabletModeState)		keyword_200000000000	ImmersiveShellAppManagerApplicationStateChange	Informational		
 Microsoft-Windows-Immersive-Shell	173	0	ImmersiveShellAppManagerWindowTitleChange(Int32 Window, UnicodeString Title)			ImmersiveShellAppManagerWindowTitleChange	Informational		
 Microsoft-Windows-Immersive-Shell	181	0	ImmersiveShellUIDrag(Int32 Left, Int32 Top, UnicodeString UIName)			ImmersiveShellUIDrag	Informational		
-Microsoft-Windows-Immersive-Shell	191	0	ImmersiveShellAppManagerOnShellHookMessageStart(Int32 Message, Pointer HWND)	Start		ImmersiveShellAppManagerOnShellHookMessage	Informational		
-Microsoft-Windows-Immersive-Shell	192	0	ImmersiveShellAppManagerOnShellHookMessageStop(Int32 Message, Pointer HWND)	Stop		ImmersiveShellAppManagerOnShellHookMessage	Informational		
-Microsoft-Windows-Immersive-Shell	201	0	ImmersiveGhostWindowStart(Int32 GhostWindow, Int32 ApplicationWindow, UnicodeString AppId)	Start	keyword_200000000000	ImmersiveGhostWindow	Informational		
-Microsoft-Windows-Immersive-Shell	202	0	ImmersiveGhostWindowStop(Int32 GhostWindow, Int32 ApplicationWindow, UnicodeString AppId)	Stop	keyword_200000000000	ImmersiveGhostWindow	Informational		
-Microsoft-Windows-Immersive-Shell	203	0	ImmersiveGhostWindow(Int32 GhostWindow, Int32 ApplicationWindow, UnicodeString AppId)		keyword_200000000000	ImmersiveGhostWindow	Informational		
-Microsoft-Windows-Immersive-Shell	204	0	ImmersiveGhostWindow204(Int32 GhostWindow, UInt32 GhostType)			ImmersiveGhostWindow	Informational		
-Microsoft-Windows-Immersive-Shell	1001	0	ImmersiveShellAppSpaceParseXMLStart(UnicodeString AppID, UInt32 NotificationID)	Start		ImmersiveShellAppSpaceParseXML	Informational		
-Microsoft-Windows-Immersive-Shell	1002	0	ImmersiveShellAppSpaceParseXMLStop(UnicodeString AppID, UInt32 NotificationID)	Stop		ImmersiveShellAppSpaceParseXML	Informational		
-Microsoft-Windows-Immersive-Shell	1003	0	ImmersiveShellAppSpaceParseXML(UnicodeString AppID, UInt32 NotificationID, UInt32 HRESULT, UnicodeString Node, Int32 Line, Int32 Position)		NotificationE2E wpndebug_TileParsingErrors wpndebug_ToastParsingErrors	ImmersiveShellAppSpaceParseXML	Error		
-Microsoft-Windows-Immersive-Shell	1004	0	TileXML_MissingTemplateForCurrentSize(UnicodeString AppID, UInt32 NotificationID)		NotificationE2E wpndebug_TileParsingErrors	TileXML_MissingTemplateForCurrentSize	Error		
-Microsoft-Windows-Immersive-Shell	1011	0	ImmersiveShellAppSpaceCreateLayoutStart()	Start		ImmersiveShellAppSpaceCreateLayout	Informational		
-Microsoft-Windows-Immersive-Shell	1012	0	ImmersiveShellAppSpaceCreateLayoutStop()	Stop		ImmersiveShellAppSpaceCreateLayout	Informational		
 Microsoft-Windows-Immersive-Shell	1013	0	TileXML_ProcessMRTResourceStop(UnicodeString ApplicationId, UInt32 NotificationId, UInt32 HRESULT, UnicodeString UnprocessedResourceString, UnicodeString ProcessedResourceString)	Stop		TileXML_ProcessMRTResource	Informational		
-Microsoft-Windows-Immersive-Shell	1014	0	TileXML_PayloadTooLarge(UnicodeString AppID, UInt32 NotificationID)		NotificationE2E wpndebug_TileParsingErrors wpndebug_ToastParsingErrors	TileXML_PayloadTooLarge	Error		
-Microsoft-Windows-Immersive-Shell	1015	0	TileXML_PayloadTooSmall(UnicodeString AppID, UInt32 NotificationID)		NotificationE2E wpndebug_TileParsingErrors wpndebug_ToastParsingErrors	TileXML_PayloadTooSmall	Error		
-Microsoft-Windows-Immersive-Shell	1016	0	TileXML_InvalidUnicodeFormat(UnicodeString AppID, UInt32 NotificationID)		NotificationE2E wpndebug_TileParsingErrors wpndebug_ToastParsingErrors	TileXML_InvalidUnicodeFormat	Error		
-Microsoft-Windows-Immersive-Shell	1017	0	TileXML_InvalidAttributes(UnicodeString AppID, UInt32 NotificationID)		NotificationE2E wpndebug_TileParsingErrors wpndebug_ToastParsingErrors	TileXML_InvalidAttributes	Error		
-Microsoft-Windows-Immersive-Shell	1018	0	TileXML_TagPresentTooManyTimes(UnicodeString ApplicationId, UInt32 NotificationId, UnicodeString BadNode)		NotificationE2E wpndebug_TileParsingErrors wpndebug_ToastParsingErrors	TileXML_TagPresentTooManyTimes	Error		
-Microsoft-Windows-Immersive-Shell	1019	0	TileXML_UnknownElement(UnicodeString ApplicationId, UInt32 NotificationId, UnicodeString BadNode)		NotificationE2E wpndebug_TileParsingErrors wpndebug_ToastParsingErrors	TileXML_UnknownElement	Error		
-Microsoft-Windows-Immersive-Shell	1020	0	TileXML_UnexpectedText(UnicodeString AppID, UInt32 NotificationID)		NotificationE2E wpndebug_TileParsingErrors wpndebug_ToastParsingErrors	TileXML_UnexpectedText	Error		
-Microsoft-Windows-Immersive-Shell	1021	0	TileXML_MoreThanOneVisualPresent(UnicodeString AppID, UInt32 NotificationID)		NotificationE2E wpndebug_TileParsingErrors wpndebug_ToastParsingErrors	TileXML_MoreThanOneVisualPresent	Error		
-Microsoft-Windows-Immersive-Shell	1022	0	TileXML_SemanticDuplicateIgnored(UnicodeString AppID, UInt32 NotificationID, UInt32 DuplicateNotificationID, UnicodeString ContentId)		NotificationE2E wpndebug_TileParsingErrors	TileXML_SemanticDuplicateIgnored	Error		
-Microsoft-Windows-Immersive-Shell	1023	0	TileXML_BadVersionOneTemplates(UnicodeString AppID, UInt32 NotificationID, UnicodeString TemplateName, UnicodeString FallbackName)		NotificationE2E wpndebug_TileParsingErrors wpndebug_ToastParsingErrors	TileXML_BadVersionOneTemplates	Error		
-Microsoft-Windows-Immersive-Shell	1024	0	TileXML_UsingFallback(UnicodeString AppID, UInt32 NotificationID, UnicodeString TemplateName, UnicodeString FallbackName)		NotificationE2E	TileXML_UsingFallback	Informational		
-Microsoft-Windows-Immersive-Shell	1025	0	TileXML_ResolvedTempateName(UnicodeString AppID, UInt32 NotificationID, UnicodeString TemplateName)		NotificationE2E	TileXML_ResolvedTempateName	Informational		
-Microsoft-Windows-Immersive-Shell	1026	0	TileXML_ResolveTempateNameFailed(UnicodeString AppID, UInt32 NotificationID, UnicodeString TemplateName, UnicodeString FallbackName)		NotificationE2E wpndebug_TileParsingErrors wpndebug_ToastParsingErrors	TileXML_ResolveTempateNameFailed	Error		
 Microsoft-Windows-Immersive-Shell	1027	0	TileXML_AllContentClipped(UnicodeString AppID, UInt32 NotificationID, UnicodeString TemplateName)		NotificationE2E wpndebug_TileParsingErrors	TileXML_AllContentClipped	Error		
 Microsoft-Windows-Immersive-Shell	1201	0	ImmersiveShellBadgeParseXMLStart(UnicodeString AppID, UInt32 NotificationID)	Start		ImmersiveShellBadgeParseXML	Informational		
 Microsoft-Windows-Immersive-Shell	1202	0	ImmersiveShellBadgeParseXMLStop(UnicodeString AppID, UInt32 NotificationID)	Stop		ImmersiveShellBadgeParseXML	Informational		
 Microsoft-Windows-Immersive-Shell	1203	0	ImmersiveShellBadgeParseXML(UnicodeString AppID, UInt32 NotificationID, UInt32 HRESULT, UnicodeString Node, Int32 Line, Int32 Position)		NotificationE2E	ImmersiveShellBadgeParseXML	Error		
-Microsoft-Windows-Immersive-Shell	1301	0	AppPositioner_LayoutChange()			AppPositioner_LayoutChange	Informational		
-Microsoft-Windows-Immersive-Shell	1302	0	AppPositioner_LayoutChangeStart()	Start		AppPositioner_LayoutChange	Informational		
-Microsoft-Windows-Immersive-Shell	1303	0	AppPositioner_LayoutChangeStop()	Stop		AppPositioner_LayoutChange	Informational		
-Microsoft-Windows-Immersive-Shell	1306	0	AppPositioner_AppSwitch(UInt32 Duration, UInt32 Flags, UnicodeString PackageFullName, UnicodeString AppUserModelId)			AppPositioner_AppSwitch	Informational		
-Microsoft-Windows-Immersive-Shell	1308	0	AppPositioner_WorkAreaChangedStart()	Start		AppPositioner_WorkAreaChanged	Informational		
-Microsoft-Windows-Immersive-Shell	1309	0	AppPositioner_WorkAreaChangedStop()	Stop		AppPositioner_WorkAreaChanged	Informational		
 Microsoft-Windows-Immersive-Shell	1310	0	AppLayoutItem(UnicodeString AppUserModelID, UInt32 Left, UInt32 Top, UInt32 Right, UInt32 Bottom)			AppLayoutItem	Informational		
-Microsoft-Windows-Immersive-Shell	1311	0	LayoutCache_LayoutAddedStart(UInt32 Type)	Start		LayoutCache_LayoutAdded	Informational		
-Microsoft-Windows-Immersive-Shell	1312	0	LayoutCache_LayoutAddedStop(UInt32 Type)	Stop		LayoutCache_LayoutAdded	Informational		
-Microsoft-Windows-Immersive-Shell	1313	0	LayoutCache_LayoutRemovedStart(UInt32 Type)	Start		LayoutCache_LayoutRemoved	Informational		
-Microsoft-Windows-Immersive-Shell	1314	0	LayoutCache_LayoutRemovedStop(UInt32 Type)	Stop		LayoutCache_LayoutRemoved	Informational		
 Microsoft-Windows-Immersive-Shell	1315	0	LayoutCache_LayoutShownStart()	Start		LayoutCache_LayoutShown	Informational		
 Microsoft-Windows-Immersive-Shell	1316	0	LayoutCache_LayoutShownStop()	Stop		LayoutCache_LayoutShown	Informational		
 Microsoft-Windows-Immersive-Shell	1317	0	SwitchToAppByIdWithArgumentsStart(UnicodeString AppUserModelId, UnicodeString Arguments, UnicodeString NotificationTargetId)	Start	keyword_400000000000	SwitchToAppByIdWithArguments	Informational		
 Microsoft-Windows-Immersive-Shell	1318	0	SwitchToAppByIdWithArgumentsStop(UnicodeString AppUserModelId, UnicodeString Arguments, UnicodeString NotificationTargetId, UInt32 HRESULT)	Stop	keyword_400000000000	SwitchToAppByIdWithArguments	Informational		
-Microsoft-Windows-Immersive-Shell	1319	0	TitleBar_Shown(UnicodeString AppUserModelID)			TitleBar_Shown	Informational		
-Microsoft-Windows-Immersive-Shell	1320	0	TitleBar_Hidden(UnicodeString AppUserModelID)			TitleBar_Hidden	Informational		
-Microsoft-Windows-Immersive-Shell	1321	0	ImmersiveAppZOrder_AppAdded(UnicodeString AppUserModelID, Int32 MonitorX, Int32 MonitorY)			ImmersiveAppZOrder_AppAdded	Informational		
-Microsoft-Windows-Immersive-Shell	1322	0	ImmersiveAppZOrder_AppRemoved(UnicodeString AppUserModelID, Int32 MonitorX, Int32 MonitorY)			ImmersiveAppZOrder_AppRemoved	Informational		
-Microsoft-Windows-Immersive-Shell	1323	0	ImmersiveAppZOrder_AppBecameTopmost(UnicodeString AppUserModelID, Int32 MonitorX, Int32 MonitorY)			ImmersiveAppZOrder_AppBecameTopmost	Informational		
-Microsoft-Windows-Immersive-Shell	1351	0	AppGutter_DragStart()	Start		AppGutter_Drag	Informational		
-Microsoft-Windows-Immersive-Shell	1352	0	AppGutter_DragStop()	Stop		AppGutter_Drag	Informational		
 Microsoft-Windows-Immersive-Shell	1401	0	BackstackManager_GetBackstackStart()	Start		BackstackManager_GetBackstack	Informational		
 Microsoft-Windows-Immersive-Shell	1402	0	BackstackManager_GetBackstack(UnicodeString AppUserModelID)			BackstackManager_GetBackstack	Informational		
 Microsoft-Windows-Immersive-Shell	1403	0	BackstackManager_GetBackstackStop()	Stop		BackstackManager_GetBackstack	Informational		
 Microsoft-Windows-Immersive-Shell	1405	0	BackstackManager_ClearBackstackStart()	Start		BackstackManager_ClearBackstack	Informational		
 Microsoft-Windows-Immersive-Shell	1406	0	BackstackManager_ClearBackstackStop()	Stop		BackstackManager_ClearBackstack	Informational		
 Microsoft-Windows-Immersive-Shell	1408	0	BackstackManager_RemoveApp(UnicodeString AppUserModelID)			BackstackManager_RemoveApp	Informational		
-Microsoft-Windows-Immersive-Shell	1451	0	SwitchModeManager_BeginMode()			SwitchModeManager_BeginMode	Informational		
-Microsoft-Windows-Immersive-Shell	1453	0	SwitchModeManager_EndMode()			SwitchModeManager_EndMode	Informational		
-Microsoft-Windows-Immersive-Shell	1455	0	SwitchModeManager_Switch(UnicodeString AppUserModelID, Int32 Location)			SwitchModeManager_Switch	Informational		
-Microsoft-Windows-Immersive-Shell	1456	0	SwitchModeView_DwellTimeout()			SwitchModeView_DwellTimeout	Informational		
-Microsoft-Windows-Immersive-Shell	1457	0	SwitchModeView_CloseDwellTimeoutExpired()			SwitchModeView_CloseDwellTimeoutExpired	Informational		
 Microsoft-Windows-Immersive-Shell	1460	0	DropFeedback_Show()			DropFeedback_Show	Informational		
 Microsoft-Windows-Immersive-Shell	1461	0	DropFeedback_Hide()			DropFeedback_Hide	Informational		
 Microsoft-Windows-Immersive-Shell	1462	0	DropFeedbackItem_Show(UInt32 ID, Int32 Left, Int32 Top, Int32 Right, Int32 Bottom)			DropFeedbackItem_Show	Informational		
 Microsoft-Windows-Immersive-Shell	1463	0	DropFeedbackItem_Update(UInt32 ID, Int32 Left, Int32 Top, Int32 Right, Int32 Bottom)			DropFeedbackItem_Update	Informational		
-Microsoft-Windows-Immersive-Shell	1464	0	DropFeedback_TargetChanged(UInt32 TargetID)			DropFeedback_TargetChanged	Informational		
 Microsoft-Windows-Immersive-Shell	1470	0	DragVisual_Show()			DragVisual_Show	Informational		
 Microsoft-Windows-Immersive-Shell	1471	0	DragVisual_AppChange()			DragVisual_AppChange	Informational		
 Microsoft-Windows-Immersive-Shell	1472	0	DragVisual_ModeChange()			DragVisual_ModeChange	Informational		
@@ -110,38 +58,12 @@ Microsoft-Windows-Immersive-Shell	1473	0	DragVisual_Hide()			DragVisual_Hide	Inf
 Microsoft-Windows-Immersive-Shell	1474	0	DragVisual_Destroy()			DragVisual_Destroy	Informational		
 Microsoft-Windows-Immersive-Shell	1476	0	DragVisual_TargetChanged()			DragVisual_TargetChanged	Informational		
 Microsoft-Windows-Immersive-Shell	1477	0	LauncherTip_ContextMenuHash(UInt32 HashValue, UnicodeString HashInput)			LauncherTip_ContextMenuHash	Informational		
-Microsoft-Windows-Immersive-Shell	1480	0	TipPreview_Show()			TipPreview_Show	Informational		
-Microsoft-Windows-Immersive-Shell	1481	0	TipPreview_Hide()			TipPreview_Hide	Informational		
-Microsoft-Windows-Immersive-Shell	1482	0	TipPreview_Update()			TipPreview_Update	Informational		
-Microsoft-Windows-Immersive-Shell	1485	0	SwitchList_Show()			SwitchList_Show	Informational		
-Microsoft-Windows-Immersive-Shell	1486	0	SwitchList_Hide()			SwitchList_Hide	Informational		
-Microsoft-Windows-Immersive-Shell	1487	0	SwitchList_Update()			SwitchList_Update	Informational		
-Microsoft-Windows-Immersive-Shell	1488	0	SwitchList_ShowPeek()			SwitchList_ShowPeek	Informational		
-Microsoft-Windows-Immersive-Shell	1490	0	StartTip_ChangeState(Boolean TeethShown, Int32 OldState, Int32 NewState)			StartTip_ChangeState	Informational		
-Microsoft-Windows-Immersive-Shell	1501	0	PlaybackManager_AdviseStart(UInt32 SessionId)	Start		PlaybackManager_Advise	Informational		
-Microsoft-Windows-Immersive-Shell	1502	0	PlaybackManager_AdviseStop(UInt32 Result, UInt32 SessionId, UInt32 QueueSize)	Stop		PlaybackManager_Advise	Informational		
-Microsoft-Windows-Immersive-Shell	1504	0	PlaybackManager_UnadviseStart(UInt32 SessionId)	Start		PlaybackManager_Unadvise	Informational		
-Microsoft-Windows-Immersive-Shell	1505	0	PlaybackManager_UnadviseStop(UInt32 Result, UInt32 SessionId, UInt32 QueueSize)	Stop		PlaybackManager_Unadvise	Informational		
-Microsoft-Windows-Immersive-Shell	1507	0	PlaybackManager_ChangeSessionStateStart(UInt32 SessionId)	Start		PlaybackManager_ChangeSessionState	Informational		
-Microsoft-Windows-Immersive-Shell	1508	0	PlaybackManager_ChangeSessionStateStop(UInt32 Result, UInt32 SessionId, UInt32 PreviousPlayState, UInt32 CurrentPlayState, UInt32 PreviousMuteState, UInt32 CurrentMuteState)	Stop		PlaybackManager_ChangeSessionState	Informational		
-Microsoft-Windows-Immersive-Shell	1509	0	PlaybackManager_DuckSession(UInt32 Result, UInt32 SessionId)			PlaybackManager_DuckSession	Informational		
-Microsoft-Windows-Immersive-Shell	1512	0	PlaybackManager_UnDuckSession(UInt32 Result, UInt32 SessionId)			PlaybackManager_UnDuckSession	Informational		
-Microsoft-Windows-Immersive-Shell	1516	0	PlaybackManager_AudioOnVolumeDuckSessionStart()	Start		PlaybackManager_AudioOnVolumeDuckSession	Informational		
-Microsoft-Windows-Immersive-Shell	1517	0	PlaybackManager_AudioOnVolumeDuckSessionStop()	Stop		PlaybackManager_AudioOnVolumeDuckSession	Informational		
-Microsoft-Windows-Immersive-Shell	1519	0	PlaybackManager_AudioOnVolumeUnDuckSessionStart()	Start		PlaybackManager_AudioOnVolumeUnDuckSession	Informational		
-Microsoft-Windows-Immersive-Shell	1520	0	PlaybackManager_AudioOnVolumeUnDuckSessionStop()	Stop		PlaybackManager_AudioOnVolumeUnDuckSession	Informational		
-Microsoft-Windows-Immersive-Shell	1522	0	PlaybackManager_InitializationStart()	Start		PlaybackManager_Initialization	Informational		
-Microsoft-Windows-Immersive-Shell	1523	0	PlaybackManager_InitializationStop(UInt32 Result)	Stop		PlaybackManager_Initialization	Informational		
-Microsoft-Windows-Immersive-Shell	1525	0	PlaybackManager_SendEventStart(UInt32 SessionId)	Start		PlaybackManager_SendEvent	Informational		
-Microsoft-Windows-Immersive-Shell	1526	0	PlaybackManager_SendEventStop(UInt32 Result, UInt32 SessionId)	Stop		PlaybackManager_SendEvent	Informational		
 Microsoft-Windows-Immersive-Shell	1601	0	AppsFolder_ParseDisplayNameStart(UnicodeString AppUserModelID)	Start		AppsFolder_ParseDisplayName	Informational		
 Microsoft-Windows-Immersive-Shell	1602	0	AppsFolder_ParseDisplayNameStop(UnicodeString AppUserModelID)	Stop		AppsFolder_ParseDisplayName	Informational		
 Microsoft-Windows-Immersive-Shell	1603	0	AppsFolder_EnumObjectsStart()	Start		AppsFolder_EnumObjects	Informational		
 Microsoft-Windows-Immersive-Shell	1604	0	AppsFolder_EnumObjectsStop()	Stop		AppsFolder_EnumObjects	Informational		
 Microsoft-Windows-Immersive-Shell	1605	0	AppsFolder_GetDetailsExStart()	Start		AppsFolder_GetDetailsEx	Informational		
 Microsoft-Windows-Immersive-Shell	1606	0	AppsFolder_GetDetailsExStop()	Stop		AppsFolder_GetDetailsEx	Informational		
-Microsoft-Windows-Immersive-Shell	1607	0	AppsFolder_MoveItemStart()	Start		AppsFolder_MoveItem	Informational		
-Microsoft-Windows-Immersive-Shell	1608	0	AppsFolder_MoveItemStop(UnicodeString ToMoveAppID, UnicodeString ReferenceAppID, UInt32 Flags)	Stop		AppsFolder_MoveItem	Informational		
 Microsoft-Windows-Immersive-Shell	1609	0	AppsFolder_GetPropertyStoreStart()	Start		AppsFolder_GetPropertyStore	Informational		
 Microsoft-Windows-Immersive-Shell	1610	0	AppsFolder_GetPropertyStoreStop()	Stop		AppsFolder_GetPropertyStore	Informational		
 Microsoft-Windows-Immersive-Shell	1611	0	AppsFolder_GetPropertyStoreForKeysStart()	Start		AppsFolder_GetPropertyStoreForKeys	Informational		
@@ -160,221 +82,15 @@ Microsoft-Windows-Immersive-Shell	1625	0	Launcher_Uninstall_StartingThread()			L
 Microsoft-Windows-Immersive-Shell	1626	0	AppsFolder_ImmersiveApp_OpenVerb1626(UnicodeString AppID, Int32 Result)			AppsFolder_ImmersiveApp_OpenVerb	Informational		
 Microsoft-Windows-Immersive-Shell	1627	0	Launcher_Uninstall_RemovePackageStart(UnicodeString Package, UInt32 Result)	Start		Launcher_Uninstall_RemovePackage	Informational		
 Microsoft-Windows-Immersive-Shell	1628	0	Launcher_Uninstall_RemovePackageStop(UnicodeString Package, UInt32 Result)	Stop		Launcher_Uninstall_RemovePackage	Informational		
-Microsoft-Windows-Immersive-Shell	1629	0	Launcher_Uninstall_DeleteShortcuts(UnicodeString Package, UInt32 Result)			Launcher_Uninstall_DeleteShortcuts	Informational		
 Microsoft-Windows-Immersive-Shell	1630	0	AppsFolder_ImmersiveApp_InstallRequest()			AppsFolder_ImmersiveApp_InstallRequest	Informational		
 Microsoft-Windows-Immersive-Shell	1631	0	AppsFolder_ImmersiveApp_InstallRequest1631(UnicodeString Package, UInt32 Result)			AppsFolder_ImmersiveApp_InstallRequest	Informational		
-Microsoft-Windows-Immersive-Shell	1701	0	ImmersiveShellToastManagerInitStart()	Start		ImmersiveShellToastManagerInit	Informational		
-Microsoft-Windows-Immersive-Shell	1702	0	ImmersiveShellToastManagerInitStop(UInt32 OperationStatus)	Stop		ImmersiveShellToastManagerInit	Informational		
-Microsoft-Windows-Immersive-Shell	1704	0	ImmersiveShellToastCreatePlatformSessionStart()	Start		ImmersiveShellToastCreatePlatformSession	Informational		
-Microsoft-Windows-Immersive-Shell	1705	0	ImmersiveShellToastCreatePlatformSessionStop(UInt32 OperationStatus)	Stop		ImmersiveShellToastCreatePlatformSession	Informational		
-Microsoft-Windows-Immersive-Shell	1707	0	ImmersiveShellToastSetStartPosition(Int32 XPosition, Int32 YPosition)			ImmersiveShellToastSetStartPosition	Informational		
-Microsoft-Windows-Immersive-Shell	1709	0	ImmersiveShellToastSetDisplayLimit(UInt32 DisplayLimit)			ImmersiveShellToastSetDisplayLimit	Informational		
-Microsoft-Windows-Immersive-Shell	1711	0	ImmersiveShellToastSetOpaqueStateDuration(UInt32 OpaqueStateDuration)			ImmersiveShellToastSetOpaqueStateDuration	Informational		
-Microsoft-Windows-Immersive-Shell	1713	0	ImmersiveShellToastSetSize(UInt32 ToastHeight, UInt32 ToastWidth)			ImmersiveShellToastSetSize	Informational		
-Microsoft-Windows-Immersive-Shell	1718	0	ImmersiveShellToastDataProcessingStart(UInt32 NotificationId, Boolean IsSpecialToast)	Start		ImmersiveShellToastDataProcessing	Informational		
-Microsoft-Windows-Immersive-Shell	1719	0	ImmersiveShellToastDataProcessingStop(UInt32 NotificationId, UInt32 OperationStatus, Boolean IsSpecialToast, UInt32 AppType)	Stop		ImmersiveShellToastDataProcessing	Informational		
-Microsoft-Windows-Immersive-Shell	1721	0	ImmersiveShellToastUIRenderingStart(UInt32 NotificationId, Boolean IsSpecialToast)	Start		ImmersiveShellToastUIRendering	Informational		
-Microsoft-Windows-Immersive-Shell	1722	0	ImmersiveShellToastUIRendering(UInt32 NotificationId, Int32 XPosition, Int32 YPosition)			ImmersiveShellToastUIRendering	Informational		
-Microsoft-Windows-Immersive-Shell	1723	0	ImmersiveShellToastUIRendering1723(UInt32 NotificationId, UInt32 DisplayIndex)			ImmersiveShellToastUIRendering	Informational		
-Microsoft-Windows-Immersive-Shell	1724	0	ImmersiveShellToastUIRenderingStop(UInt32 NotificationId, UInt32 OperationStatus, Boolean IsSpecialToast, UInt32 AppType)	Stop		ImmersiveShellToastUIRendering	Informational		
-Microsoft-Windows-Immersive-Shell	1726	0	ImmersiveShellToastMaxLimitReached(UInt32 NotificationId, Boolean IsSpecialToast)			ImmersiveShellToastMaxLimitReached	Informational		
-Microsoft-Windows-Immersive-Shell	1728	0	ImmersiveShellToastOpaqueStateStart(UInt32 NotificationId, Boolean IsSpecialToast)	Start		ImmersiveShellToastOpaqueState	Informational		
-Microsoft-Windows-Immersive-Shell	1729	0	ImmersiveShellToastOpaqueStateStop(UInt32 NotificationId, Boolean IsSpecialToast)	Stop		ImmersiveShellToastOpaqueState	Informational		
-Microsoft-Windows-Immersive-Shell	1731	0	ImmersiveShellToastDecayStateStart(UInt32 NotificationId, Boolean IsSpecialToast)	Start		ImmersiveShellToastDecayState	Informational		
-Microsoft-Windows-Immersive-Shell	1732	0	ImmersiveShellToastDecayStateStop(UInt32 NotificationId, Boolean IsSpecialToast)	Stop		ImmersiveShellToastDecayState	Informational		
-Microsoft-Windows-Immersive-Shell	1734	0	ImmersiveShellToastWorkingStateStart(UInt32 NotificationId, Boolean IsSpecialToast)	Start		ImmersiveShellToastWorkingState	Informational		
-Microsoft-Windows-Immersive-Shell	1735	0	ImmersiveShellToastWorkingStateStop(UInt32 NotificationId, Boolean IsSpecialToast)	Stop		ImmersiveShellToastWorkingState	Informational		
-Microsoft-Windows-Immersive-Shell	1737	0	ImmersiveShellToastActivateStart(UInt32 NotificationId, Boolean IsSpecialToast, UInt32 AppType)	Start		ImmersiveShellToastActivate	Informational		
-Microsoft-Windows-Immersive-Shell	1738	0	ImmersiveShellToastUIRendering1738(UInt32 NotificationId, UInt32 OperationStatus, Boolean IsSpecialToast, UInt32 AppType)			ImmersiveShellToastUIRendering	Error		
-Microsoft-Windows-Immersive-Shell	1740	0	ImmersiveShellToastDismiss(UInt32 NotificationId, Boolean IsSpecialToast)			ImmersiveShellToastDismiss	Informational		
-Microsoft-Windows-Immersive-Shell	1742	0	ImmersiveShellToastRemoveDisplayStart(UInt32 NotificationId, Boolean IsSpecialToast)	Start		ImmersiveShellToastRemoveDisplay	Informational		
-Microsoft-Windows-Immersive-Shell	1743	0	ImmersiveShellToastRemoveDisplayStop(UInt32 NotificationId, Boolean IsSpecialToast)	Stop		ImmersiveShellToastRemoveDisplay	Informational		
-Microsoft-Windows-Immersive-Shell	1745	0	ImmersiveShellToastWorkingUIEnabled(UInt32 NotificationId, Boolean IsSpecialToast)			ImmersiveShellToastWorkingUIEnabled	Informational		
-Microsoft-Windows-Immersive-Shell	1747	0	ImmersiveShellToastRearrangeLayoutStart(Int32 XPosition, Int32 YPosition)	Start		ImmersiveShellToastRearrangeLayout	Informational		
-Microsoft-Windows-Immersive-Shell	1748	0	ImmersiveShellToastRearrangeLayoutStop()	Stop		ImmersiveShellToastRearrangeLayout	Informational		
-Microsoft-Windows-Immersive-Shell	1749	0	ImmersiveShellToastDataProcessing(UInt32 NotificationId, UInt32 OperationStatus, Boolean IsSpecialToast, UInt32 AppType)			ImmersiveShellToastDataProcessing	Informational		
-Microsoft-Windows-Immersive-Shell	1750	0	ImmersiveShellToastDataProcessing1750(UInt32 NotificationId, UInt32 OperationStatus, Boolean IsSpecialToast, UInt32 AppType)			ImmersiveShellToastDataProcessing	Informational		
-Microsoft-Windows-Immersive-Shell	1751	0	ImmersiveShellToastDataProcessing1751(UInt32 NotificationId, UInt32 OperationStatus, Boolean IsSpecialToast, UInt32 AppType)		wpndebug_ToastParsingErrors	ImmersiveShellToastDataProcessing	Error		
-Microsoft-Windows-Immersive-Shell	1752	0	ImmersiveShellToastDataProcessing1752(UInt32 NotificationId, UInt32 OperationStatus, Boolean IsSpecialToast, UInt32 AppType)			ImmersiveShellToastDataProcessing	Informational		
-Microsoft-Windows-Immersive-Shell	1754	0	ImmersiveShellToastAudio(UInt32 NotificationId, UnicodeString FilePath, Boolean IsSpecialToast)			ImmersiveShellToastAudio	Informational		
-Microsoft-Windows-Immersive-Shell	1755	0	ImmersiveShellToastAudio1755(UInt32 NotificationId, UnicodeString FilePath, UInt32 PlayingNotificationId)			ImmersiveShellToastAudio	Informational		
-Microsoft-Windows-Immersive-Shell	1756	0	ImmersiveShellToastAudio1756(UInt32 NotificationId, Boolean IsSpecialToast)			ImmersiveShellToastAudio	Informational		
-Microsoft-Windows-Immersive-Shell	1757	0	ImmersiveShellToastAudio1757(UInt32 NotificationId, Boolean IsSpecialToast)			ImmersiveShellToastAudio	Informational		
-Microsoft-Windows-Immersive-Shell	1758	0	ImmersiveShellToastAudio1758(UInt32 NotificationId, Boolean IsSpecialToast)			ImmersiveShellToastAudio	Informational		
-Microsoft-Windows-Immersive-Shell	1759	0	ImmersiveShellToastUIRendering1759(UInt32 NotificationId, UInt32 DisplayIndex)			ImmersiveShellToastUIRendering	Informational		
-Microsoft-Windows-Immersive-Shell	1760	0	ImmersiveShellToastUIRendering1760(UInt32 NotificationId, Boolean IsSpecialToast)			ImmersiveShellToastUIRendering	Informational		
-Microsoft-Windows-Immersive-Shell	1761	0	ImmersiveShellToastUIRendering1761(UInt32 NotificationId, Boolean IsSpecialToast)			ImmersiveShellToastUIRendering	Informational		
-Microsoft-Windows-Immersive-Shell	1762	0	ImmersiveShellToastUIRendering1762(UInt32 NotificationId, Boolean IsSpecialToast)			ImmersiveShellToastUIRendering	Informational		
-Microsoft-Windows-Immersive-Shell	1763	0	ImmersiveShellToastUIRendering1763(UInt32 NotificationId, Boolean IsSpecialToast)			ImmersiveShellToastUIRendering	Informational		
-Microsoft-Windows-Immersive-Shell	1764	0	ImmersiveShellToastUIRendering1764(UInt32 NotificationId, Boolean IsSpecialToast)			ImmersiveShellToastUIRendering	Informational		
-Microsoft-Windows-Immersive-Shell	1765	0	ImmersiveShellToastUIRendering1765(UInt32 NotificationId, Boolean IsSpecialToast)			ImmersiveShellToastUIRendering	Informational		
-Microsoft-Windows-Immersive-Shell	1766	0	ImmersiveShellToastDataProcessing1766(UInt32 NotificationId, UInt32 OperationStatus, UnicodeString Node, Int32 Line, Int32 Position, Boolean IsSpecialToast, UInt32 AppType, UnicodeString Payload)			ImmersiveShellToastDataProcessing	Error		
-Microsoft-Windows-Immersive-Shell	1767	0	ImmersiveShellToastActivate(UInt32 OperationStatus)			ImmersiveShellToastActivate	Error		
-Microsoft-Windows-Immersive-Shell	1768	0	ImmersiveShellToastUIRendering1768(UInt32 NotificationId, Boolean IsSpecialToast)			ImmersiveShellToastUIRendering	Informational		
-Microsoft-Windows-Immersive-Shell	1769	0	ImmersiveShellToastUIRendering1769(UInt32 NotificationId)			ImmersiveShellToastUIRendering	Informational		
-Microsoft-Windows-Immersive-Shell	1770	0	ImmersiveShellToastUIRendering1770(UInt32 NotificationId)			ImmersiveShellToastUIRendering	Informational		
-Microsoft-Windows-Immersive-Shell	1772	0	ImmersiveShellToastFadeInAnimationStart(UInt32 NotificationId, Boolean IsSpecialToast)	Start		ImmersiveShellToastFadeInAnimation	Informational		
-Microsoft-Windows-Immersive-Shell	1773	0	ImmersiveShellToastFadeInAnimationStop(UInt32 NotificationId, Boolean IsSpecialToast)	Stop		ImmersiveShellToastFadeInAnimation	Informational		
-Microsoft-Windows-Immersive-Shell	1775	0	ImmersiveShellToastFadeOutAnimationStart(UInt32 NotificationId, Boolean IsSpecialToast)	Start		ImmersiveShellToastFadeOutAnimation	Informational		
-Microsoft-Windows-Immersive-Shell	1776	0	ImmersiveShellToastFadeOutAnimationStop(UInt32 NotificationId, Boolean IsSpecialToast)	Stop		ImmersiveShellToastFadeOutAnimation	Informational		
-Microsoft-Windows-Immersive-Shell	1778	0	ImmersiveShellToastEntryAnimationStart(UInt32 NotificationId, Boolean IsSpecialToast)	Start		ImmersiveShellToastEntryAnimation	Informational		
-Microsoft-Windows-Immersive-Shell	1779	0	ImmersiveShellToastEntryAnimationStop(UInt32 NotificationId, Boolean IsSpecialToast)	Stop		ImmersiveShellToastEntryAnimation	Informational		
-Microsoft-Windows-Immersive-Shell	1781	0	ImmersiveShellToastExitAnimationStart(UInt32 NotificationId, Boolean IsSpecialToast)	Start		ImmersiveShellToastExitAnimation	Informational		
-Microsoft-Windows-Immersive-Shell	1782	0	ImmersiveShellToastExitAnimationStop(UInt32 NotificationId, Boolean IsSpecialToast)	Stop		ImmersiveShellToastExitAnimation	Informational		
-Microsoft-Windows-Immersive-Shell	1784	0	ImmersiveShellToastRepositionAnimationStart(UInt32 NotificationId, Boolean IsSpecialToast)	Start		ImmersiveShellToastRepositionAnimation	Informational		
-Microsoft-Windows-Immersive-Shell	1785	0	ImmersiveShellToastRepositionAnimationStop(UInt32 NotificationId, Boolean IsSpecialToast)	Stop		ImmersiveShellToastRepositionAnimation	Informational		
-Microsoft-Windows-Immersive-Shell	1787	0	ImmersiveShellToastTapUpAnimationStart(UInt32 NotificationId, Boolean IsSpecialToast)	Start		ImmersiveShellToastTapUpAnimation	Informational		
-Microsoft-Windows-Immersive-Shell	1788	0	ImmersiveShellToastTapUpAnimationStop(UInt32 NotificationId, Boolean IsSpecialToast)	Stop		ImmersiveShellToastTapUpAnimation	Informational		
-Microsoft-Windows-Immersive-Shell	1790	0	ImmersiveShellToastTapDownAnimationStart(UInt32 NotificationId, Boolean IsSpecialToast)	Start		ImmersiveShellToastTapDownAnimation	Informational		
-Microsoft-Windows-Immersive-Shell	1791	0	ImmersiveShellToastTapDownAnimationStop(UInt32 NotificationId, Boolean IsSpecialToast)	Stop		ImmersiveShellToastTapDownAnimation	Informational		
-Microsoft-Windows-Immersive-Shell	1792	0	ImmersiveShellToastUIRendering1792(UInt32 NotificationId)			ImmersiveShellToastUIRendering	Informational		
-Microsoft-Windows-Immersive-Shell	1793	0	ImmersiveShellToastUIRendering1793(UInt32 OutgoingNotificationId, UInt32 IncomingNotificationId, UInt32 CancelStatus)			ImmersiveShellToastUIRendering	Informational		
-Microsoft-Windows-Immersive-Shell	1794	0	ImmersiveShellToastUIRendering1794(UInt32 NotificationId)			ImmersiveShellToastUIRendering	Informational		
-Microsoft-Windows-Immersive-Shell	1800	0	TileNotifications_CreateSession(UInt32 Result)			TileNotifications_CreateSession	Informational		
-Microsoft-Windows-Immersive-Shell	1803	0	TileNotifications_UpdateSession(UInt32 Result, UnicodeString IDList)			TileNotifications_UpdateSession	Informational		
-Microsoft-Windows-Immersive-Shell	1806	0	TileNotifications_CloseSession(UInt32 Result)			TileNotifications_CloseSession	Informational		
-Microsoft-Windows-Immersive-Shell	1809	0	TileNotifications_SessionNotificationArrived(UInt32 Count)			TileNotifications_SessionNotificationArrived	Informational		
-Microsoft-Windows-Immersive-Shell	1812	0	TileNotifications_RequestNotification(UInt32 Result, UnicodeString IDList)			TileNotifications_RequestNotification	Informational		
-Microsoft-Windows-Immersive-Shell	1815	0	TileNotifications_RequestNotificationArrived(UInt32 Count)			TileNotifications_RequestNotificationArrived	Informational		
-Microsoft-Windows-Immersive-Shell	1818	0	TileNotifications_NotificationSinkCalled(UnicodeString AppID, UInt32 NotificationID, UnicodeString Payload)			TileNotifications_NotificationSinkCalled	Verbose		
-Microsoft-Windows-Immersive-Shell	1821	0	TileNotifications_RequestResource(UnicodeString AppID, UInt32 NotificationID, UnicodeString ResourceIDList, UnicodeString URLList)			TileNotifications_RequestResource	Informational		
-Microsoft-Windows-Immersive-Shell	1824	0	TileNotifications_ResourceArrived(UInt32 Count)			TileNotifications_ResourceArrived	Informational		
-Microsoft-Windows-Immersive-Shell	1827	0	TileNotifications_ResourceSinkCalled(UnicodeString AppID, UInt32 NotificationID, UnicodeString Payload)			TileNotifications_ResourceSinkCalled	Verbose		
 Microsoft-Windows-Immersive-Shell	1830	0	TileNotifications_PauseNotifications(UInt32 Result, UnicodeString AppID)		NotificationE2E	TileNotifications_PauseNotifications	Informational		
 Microsoft-Windows-Immersive-Shell	1833	0	TileNotifications_ResumeNotifications(UInt32 Result, UnicodeString AppID)		NotificationE2E	TileNotifications_ResumeNotifications	Informational		
-Microsoft-Windows-Immersive-Shell	1836	0	TileNotifications_FailedInstall(UnicodeString TileID, UInt32 Result)			TileNotifications_FailedInstall	Informational		
-Microsoft-Windows-Immersive-Shell	1839	0	TileNotifications_BadgeNumber(UnicodeString AppID, UInt32 NotificationID, UInt32 Value)			TileNotifications_BadgeNumber	Informational		
-Microsoft-Windows-Immersive-Shell	1840	0	TileNotifications_BadgeGlyph(UnicodeString AppID, UInt32 NotificationID, UInt32 Value)			TileNotifications_BadgeGlyph	Informational		
-Microsoft-Windows-Immersive-Shell	1843	0	TileNotifications_ClearNotifications(UnicodeString AppID, UInt32 NotificationType)		NotificationE2E	TileNotifications_ClearNotifications	Informational		
 Microsoft-Windows-Immersive-Shell	1844	0	Tiles_MRT(UnicodeString Language)			Tiles_MRT	Informational		
 Microsoft-Windows-Immersive-Shell	1845	0	Tiles_MRT1845(UnicodeString Language, UInt32 Result)			Tiles_MRT	Informational		
-Microsoft-Windows-Immersive-Shell	1846	0	Tiles_MRT1846(UInt32 DPIContext, UInt32 Theme, UnicodeString Path, UnicodeString DPIs)			Tiles_MRT	Informational		
-Microsoft-Windows-Immersive-Shell	1847	0	Tiles_MRT1847(UInt32 DPIContext, UInt32 Theme, UnicodeString Path, UnicodeString DPIs, UInt32 Result)			Tiles_MRT	Informational		
-Microsoft-Windows-Immersive-Shell	1849	0	TilesNotifications_AnimationScheduling(UnicodeString AppID)			TilesNotifications_AnimationScheduling	Informational		
-Microsoft-Windows-Immersive-Shell	1850	0	TilesNotifications_AnimationScheduling1850(UnicodeString AppID, UInt32 NotificationID)			TilesNotifications_AnimationScheduling	Informational		
-Microsoft-Windows-Immersive-Shell	1852	0	TileNotifications_QueryNotificationsEnabledStart()	Start		TileNotifications_QueryNotificationsEnabled	Informational		
-Microsoft-Windows-Immersive-Shell	1853	0	TileNotifications_QueryNotificationsEnabledStop()	Stop		TileNotifications_QueryNotificationsEnabled	Informational		
-Microsoft-Windows-Immersive-Shell	1854	0	TileNotifications_NotificationEnabledResult(UnicodeString AppID, Boolean Enabled)			TileNotifications_NotificationEnabledResult	Informational		
-Microsoft-Windows-Immersive-Shell	1855	0	TileNotifications_NotificationCapableResult(UnicodeString AppID, Boolean Enabled)			TileNotifications_NotificationCapableResult	Informational		
-Microsoft-Windows-Immersive-Shell	1856	0	TileNotifications_ImageDownloadEnabled()			TileNotifications_ImageDownloadEnabled	Informational		
-Microsoft-Windows-Immersive-Shell	1857	0	TileNotifications_ImageDownloadDisabled()			TileNotifications_ImageDownloadDisabled	Informational		
 Microsoft-Windows-Immersive-Shell	1858	0	TileNotifications_InitializeWPNFailure(UInt32 HRESULT)			TileNotifications_InitializeWPNFailure	Error		
-Microsoft-Windows-Immersive-Shell	1859	0	TileNotifications_FallbackWPNObjectsInUse()			TileNotifications_FallbackWPNObjectsInUse	Informational		
-Microsoft-Windows-Immersive-Shell	1860	0	TileNotifications_NotificationExpiryTime(UnicodeString AppID, UInt32 NotificationID, UInt32 FileTimeHigh, UInt32 FileTimeLow)			TileNotifications_NotificationExpiryTime	Informational		
-Microsoft-Windows-Immersive-Shell	1861	0	TileNotifications_DelayNotificationArrival(UnicodeString AppID, UInt32 NotificationID)			TileNotifications_DelayNotificationArrival	Informational		
-Microsoft-Windows-Immersive-Shell	1862	0	TileNotificatons_EnabledForApp(UnicodeString AppID)			TileNotificatons_EnabledForApp	Informational		
-Microsoft-Windows-Immersive-Shell	1863	0	TileNotificatons_DisabledForApp(UnicodeString AppID)			TileNotificatons_DisabledForApp	Informational		
 Microsoft-Windows-Immersive-Shell	1864	0	TileNotifications_ImageDownloadFailed(UnicodeString AppID, UInt32 NotificationID)		NotificationE2E	TileNotifications_ImageDownloadFailed	Error		
 Microsoft-Windows-Immersive-Shell	1865	0	TileNotifications_PresentNotificationFailed(UnicodeString ApplicationID, UInt32 NotificationID, UInt32 HRESULT)		NotificationE2E	TileNotifications_PresentNotificationFailed	Error		
-Microsoft-Windows-Immersive-Shell	1900	0	ActionSpacePane_CharmBarShowStart()	Start		ActionSpacePane_CharmBarShow	Informational		
-Microsoft-Windows-Immersive-Shell	1901	0	ActionSpacePane_CharmBarShowStop(UnicodeString AppID, Boolean Snapped, Boolean HasWin8WindowingBehavior)	Stop		ActionSpacePane_CharmBarShow	Informational		
-Microsoft-Windows-Immersive-Shell	1902	0	ActionSpacePane_CharmBarHideStart()	Start		ActionSpacePane_CharmBarHide	Informational		
-Microsoft-Windows-Immersive-Shell	1903	0	ActionSpacePane_CharmBarHideStop()	Stop		ActionSpacePane_CharmBarHide	Informational		
-Microsoft-Windows-Immersive-Shell	1904	0	ActionSpacePane_CharmBarPositionStart()	Start		ActionSpacePane_CharmBarPosition	Informational		
-Microsoft-Windows-Immersive-Shell	1905	0	ActionSpacePane_CharmBarPositionStop()	Stop		ActionSpacePane_CharmBarPosition	Informational		
-Microsoft-Windows-Immersive-Shell	1906	0	ActionSpacePane_CharmBarUpdateStart(UInt32 Count, UInt32 CountEnabled)	Start		ActionSpacePane_CharmBarUpdate	Informational		
-Microsoft-Windows-Immersive-Shell	1907	0	ActionSpacePane_CharmBarUpdateStop(UInt32 Count, UInt32 CountEnabled)	Stop		ActionSpacePane_CharmBarUpdate	Informational		
-Microsoft-Windows-Immersive-Shell	1908	0	ActionSpacePane_CharmActivateStart(UInt32 CharmID)	Start		ActionSpacePane_CharmActivate	Informational		
-Microsoft-Windows-Immersive-Shell	1909	0	ActionSpacePane_CharmActivateStop(UInt32 CharmID)	Stop		ActionSpacePane_CharmActivate	Informational		
-Microsoft-Windows-Immersive-Shell	1916	0	ActionSpacePane_CharmBarHardwareButtonEventStart()	Start		ActionSpacePane_CharmBarHardwareButtonEvent	Informational		
-Microsoft-Windows-Immersive-Shell	1917	0	ActionSpacePane_CharmBarHardwareButtonEventStop(UInt32 Result)	Stop		ActionSpacePane_CharmBarHardwareButtonEvent	Informational		
-Microsoft-Windows-Immersive-Shell	1918	0	ActionSpacePane_CharmMenuShowStart()	Start		ActionSpacePane_CharmMenuShow	Informational		
-Microsoft-Windows-Immersive-Shell	1919	0	ActionSpacePane_CharmMenuShowStop()	Stop		ActionSpacePane_CharmMenuShow	Informational		
-Microsoft-Windows-Immersive-Shell	1920	0	ActionSpacePane_CharmMenuHideStart()	Start		ActionSpacePane_CharmMenuHide	Informational		
-Microsoft-Windows-Immersive-Shell	1921	0	ActionSpacePane_CharmMenuHideStop()	Stop		ActionSpacePane_CharmMenuHide	Informational		
-Microsoft-Windows-Immersive-Shell	1955	0	ActionSpacePaneStartup(UInt32 FlowID)			ActionSpacePaneStartup	Informational		
-Microsoft-Windows-Immersive-Shell	1956	0	ActionSpacePaneStartup1956()			ActionSpacePaneStartup	Informational		
-Microsoft-Windows-Immersive-Shell	1965	0	ActionSpacePaneDismissStop()	Stop		ActionSpacePaneDismiss	Informational		
-Microsoft-Windows-Immersive-Shell	2000	0	Grid_Controller_PerformRealizationStart()	Start		Grid_Controller_PerformRealization	Informational		
-Microsoft-Windows-Immersive-Shell	2001	0	Grid_Controller_PerformRealizationStop(Int32 Region1Begin, Int32 Region1End, Int32 Region2Begin, Int32 Region2End, UInt32 RealizedCount, UInt32 VisibleCount)	Stop		Grid_Controller_PerformRealization	Informational		
-Microsoft-Windows-Immersive-Shell	2002	0	Grid_Controller_RealizeTileStart(UnicodeString AppID)	Start		Grid_Controller_RealizeTile	Informational		
-Microsoft-Windows-Immersive-Shell	2003	0	Grid_Controller_RealizeTileStop(UnicodeString AppID)	Stop		Grid_Controller_RealizeTile	Informational		
-Microsoft-Windows-Immersive-Shell	2004	0	Grid_Controller_UnrealizeTileStart(UnicodeString AppID)	Start		Grid_Controller_UnrealizeTile	Informational		
-Microsoft-Windows-Immersive-Shell	2005	0	Grid_Controller_UnrealizeTileStop(UnicodeString AppID)	Stop		Grid_Controller_UnrealizeTile	Informational		
-Microsoft-Windows-Immersive-Shell	2006	0	Grid_Layout_UpdateLayoutStart()	Start		Grid_Layout_UpdateLayout	Informational		
-Microsoft-Windows-Immersive-Shell	2007	0	Grid_Layout_UpdateLayoutStop()	Stop		Grid_Layout_UpdateLayout	Informational		
-Microsoft-Windows-Immersive-Shell	2008	0	Grid_Layout_AddItemStart(UnicodeString AppID)	Start		Grid_Layout_AddItem	Informational		
-Microsoft-Windows-Immersive-Shell	2009	0	Grid_Layout_AddItemStop(UnicodeString AppID)	Stop		Grid_Layout_AddItem	Informational		
-Microsoft-Windows-Immersive-Shell	2010	0	Grid_Layout_RemoveItemStart(UnicodeString AppID)	Start		Grid_Layout_RemoveItem	Informational		
-Microsoft-Windows-Immersive-Shell	2011	0	Grid_Layout_RemoveItemStop(UnicodeString AppID)	Stop		Grid_Layout_RemoveItem	Informational		
-Microsoft-Windows-Immersive-Shell	2012	0	Grid_Layout_GetItemDataStart(UnicodeString AppID)	Start		Grid_Layout_GetItemData	Informational		
-Microsoft-Windows-Immersive-Shell	2013	0	Grid_Layout_GetItemDataStop(UnicodeString AppID)	Stop		Grid_Layout_GetItemData	Informational		
-Microsoft-Windows-Immersive-Shell	2014	0	Grid_View_SetSizeStart()	Start		Grid_View_SetSize	Informational		
-Microsoft-Windows-Immersive-Shell	2015	0	Grid_View_SetSizeStop()	Stop		Grid_View_SetSize	Informational		
-Microsoft-Windows-Immersive-Shell	2016	0	Grid_View_UpdateGroupBoundsStart(UInt64 GroupID)	Start		Grid_View_UpdateGroupBounds	Informational		
-Microsoft-Windows-Immersive-Shell	2017	0	Grid_View_UpdateGroupBoundsStop(UInt64 GroupID)	Stop		Grid_View_UpdateGroupBounds	Informational		
-Microsoft-Windows-Immersive-Shell	2018	0	Grid_View_UpdateTileStart(UnicodeString AppID)	Start		Grid_View_UpdateTile	Informational		
-Microsoft-Windows-Immersive-Shell	2019	0	Grid_View_UpdateTileStop(UnicodeString AppID)	Stop		Grid_View_UpdateTile	Informational		
-Microsoft-Windows-Immersive-Shell	2020	0	Grid_View_OnTileNavigationStart(Int32 Direction, UnicodeString OldAppID, UnicodeString NewAppID)	Start		Grid_View_OnTileNavigation	Informational		
-Microsoft-Windows-Immersive-Shell	2021	0	Grid_View_OnTileNavigationStop(Int32 Direction, UnicodeString OldAppID, UnicodeString NewAppID)	Stop		Grid_View_OnTileNavigation	Informational		
-Microsoft-Windows-Immersive-Shell	2022	0	Grid_View_OnResizeStart()	Start		Grid_View_OnResize	Informational		
-Microsoft-Windows-Immersive-Shell	2023	0	Grid_View_OnResizeStop()	Stop		Grid_View_OnResize	Informational		
-Microsoft-Windows-Immersive-Shell	2024	0	Grid_View_OnScrolledStart(Int32 XOffset)	Start		Grid_View_OnScrolled	Informational		
-Microsoft-Windows-Immersive-Shell	2025	0	Grid_View_OnScrolledStop()	Stop		Grid_View_OnScrolled	Informational		
-Microsoft-Windows-Immersive-Shell	2026	0	Grid_Controller_OnTileActivatedStart(UnicodeString AppID, UnicodeString ActivationParameters)	Start		Grid_Controller_OnTileActivated	Informational		
-Microsoft-Windows-Immersive-Shell	2027	0	Grid_Controller_OnTileActivatedStop(UnicodeString AppID, UnicodeString ActivationParameters)	Stop		Grid_Controller_OnTileActivated	Informational		
-Microsoft-Windows-Immersive-Shell	2028	0	Grid_Tile_Painted(UnicodeString AppID)			Grid_Tile_Painted	Informational		
-Microsoft-Windows-Immersive-Shell	2036	0	Grid_Model_Failed(UnicodeString AppID, GUID PropertyKeyFmtid, UInt32 PropertyKeyPid, UInt32 Result)			Grid_Model_Failed	Error		
-Microsoft-Windows-Immersive-Shell	2037	0	Grid_View_TileUIFactory_CreateTileElement_Failed(UnicodeString AppID, UInt32 Result)		NotificationE2E	Grid_View_TileUIFactory_CreateTileElement_Failed	Error		
-Microsoft-Windows-Immersive-Shell	2038	0	Grid_View_TileUIFactory_UpdateTileElement_Failed(UnicodeString AppID, UInt32 Result)		NotificationE2E	Grid_View_TileUIFactory_UpdateTileElement_Failed	Error		
-Microsoft-Windows-Immersive-Shell	2039	0	Grid_Model_Item_EnumerationStart()	Start		Grid_Model_Item_Enumeration	Informational		
-Microsoft-Windows-Immersive-Shell	2040	0	Grid_Model_Item_EnumerationStop(UInt32 Count)	Stop		Grid_Model_Item_Enumeration	Informational		
-Microsoft-Windows-Immersive-Shell	2041	0	Grid_Controller_ExecuteTileVerbStart(UnicodeString AppID, UnicodeString Verb)	Start		Grid_Controller_ExecuteTileVerb	Informational		
-Microsoft-Windows-Immersive-Shell	2042	0	Grid_Controller_ExecuteTileVerbStop(UnicodeString AppID, UnicodeString Verb)	Stop		Grid_Controller_ExecuteTileVerb	Informational		
-Microsoft-Windows-Immersive-Shell	2043	0	Grid_TileActivationTask_ExecuteItemStart(UnicodeString AppID, UnicodeString Verb)	Start		Grid_TileActivationTask_ExecuteItem	Informational		
-Microsoft-Windows-Immersive-Shell	2044	0	Grid_TileActivationTask_ExecuteItemStop()	Stop		Grid_TileActivationTask_ExecuteItem	Informational		
-Microsoft-Windows-Immersive-Shell	2045	0	Grid_Host_SetItemCollectionStart()	Start		Grid_Host_SetItemCollection	Informational		
-Microsoft-Windows-Immersive-Shell	2046	0	Grid_Host_SetItemCollectionStop()	Stop		Grid_Host_SetItemCollection	Informational		
-Microsoft-Windows-Immersive-Shell	2047	0	Grid_Host_VisibleRealized()			Grid_Host_VisibleRealized	Informational		
-Microsoft-Windows-Immersive-Shell	2048	0	Grid_Model_SetRealizedTilesStart(UInt32 Count)	Start		Grid_Model_SetRealizedTiles	Informational		
-Microsoft-Windows-Immersive-Shell	2049	0	Grid_Model_SetRealizedTilesStop()	Stop		Grid_Model_SetRealizedTiles	Informational		
-Microsoft-Windows-Immersive-Shell	2050	0	Grid_TileContextMenuProvider_CreateMenuStart()	Start		Grid_TileContextMenuProvider_CreateMenu	Informational		
-Microsoft-Windows-Immersive-Shell	2051	0	Grid_TileContextMenuProvider_CreateMenuStop()	Stop		Grid_TileContextMenuProvider_CreateMenu	Informational		
-Microsoft-Windows-Immersive-Shell	2052	0	Grid_Controller_MoveItemStart(UnicodeString RearrangingAppID, UnicodeString UnderAppID, UInt32 MoveLocation)	Start		Grid_Controller_MoveItem	Informational		
-Microsoft-Windows-Immersive-Shell	2053	0	Grid_Controller_MoveItemStop(UnicodeString RearrangingAppID, UnicodeString UnderAppID, UInt32 MoveLocation)	Stop		Grid_Controller_MoveItem	Informational		
-Microsoft-Windows-Immersive-Shell	2054	0	Grid_TileRearrange_RearrangeStart()	Start		Grid_TileRearrange_RearrangeStart	Informational		
-Microsoft-Windows-Immersive-Shell	2055	0	Grid_TileRearrange_RearrangeStartStop()	Stop		Grid_TileRearrange_RearrangeStart	Informational		
-Microsoft-Windows-Immersive-Shell	2056	0	Grid_TileRearrange_RearrangeMoveStart()	Start		Grid_TileRearrange_RearrangeMove	Informational		
-Microsoft-Windows-Immersive-Shell	2057	0	Grid_TileRearrange_RearrangeMoveStop()	Stop		Grid_TileRearrange_RearrangeMove	Informational		
-Microsoft-Windows-Immersive-Shell	2058	0	Grid_View_FirstPageStart()	Start		Grid_View_FirstPage	Informational		
-Microsoft-Windows-Immersive-Shell	2059	0	Grid_View_FirstPageStop()	Stop		Grid_View_FirstPage	Informational		
-Microsoft-Windows-Immersive-Shell	2060	0	Grid_View_PrefetchStart()	Start		Grid_View_Prefetch	Informational		
-Microsoft-Windows-Immersive-Shell	2061	0	Grid_View_PrefetchStop()	Stop		Grid_View_Prefetch	Informational		
-Microsoft-Windows-Immersive-Shell	2062	0	Grid_View_OnTileTickledStart(UnicodeString AppID)	Start		Grid_View_OnTileTickled	Informational		
-Microsoft-Windows-Immersive-Shell	2063	0	Grid_View_OnTileTickledStop(UnicodeString AppID)	Stop		Grid_View_OnTileTickled	Informational		
-Microsoft-Windows-Immersive-Shell	2064	0	Grid_View_OnAutoTickleStart()	Start		Grid_View_OnAutoTickle	Informational		
-Microsoft-Windows-Immersive-Shell	2065	0	Grid_View_OnAutoTickleStop(Int32 PeekCount, Int32 TickleCount)	Stop		Grid_View_OnAutoTickle	Informational		
-Microsoft-Windows-Immersive-Shell	2066	0	Grid_View_VisibleTilesHighQuality()			Grid_View_VisibleTilesHighQuality	Informational		
-Microsoft-Windows-Immersive-Shell	2068	0	Grid_View_AreTicklesPresentStart()	Start		Grid_View_AreTicklesPresent	Informational		
-Microsoft-Windows-Immersive-Shell	2069	0	Grid_View_AreTicklesPresentStop(UInt32 Result)	Stop		Grid_View_AreTicklesPresent	Informational		
-Microsoft-Windows-Immersive-Shell	2070	0	Grid_Controller_ToggleTileSizeStart()	Start		Grid_Controller_ToggleTileSize	Informational		
-Microsoft-Windows-Immersive-Shell	2071	0	Grid_Controller_ToggleTileSizeStop()	Stop		Grid_Controller_ToggleTileSize	Informational		
-Microsoft-Windows-Immersive-Shell	2072	0	Grid_Model_Failed2072(UnicodeString AppID)			Grid_Model_Failed	Error		
-Microsoft-Windows-Immersive-Shell	2073	0	Grid_Model_Failed2073()			Grid_Model_Failed	Error		
-Microsoft-Windows-Immersive-Shell	2074	0	Grid_GroupRearrange_RearrangeStart()	Start		Grid_GroupRearrange_RearrangeStart	Informational		
-Microsoft-Windows-Immersive-Shell	2075	0	Grid_GroupRearrange_RearrangeStartStop()	Stop		Grid_GroupRearrange_RearrangeStart	Informational		
-Microsoft-Windows-Immersive-Shell	2076	0	Grid_GroupRearrange_RearrangeCancelStart()	Start		Grid_GroupRearrange_RearrangeCancel	Informational		
-Microsoft-Windows-Immersive-Shell	2077	0	Grid_GroupRearrange_RearrangeCancelStop()	Stop		Grid_GroupRearrange_RearrangeCancel	Informational		
-Microsoft-Windows-Immersive-Shell	2078	0	Grid_GroupRearrange_RearrangeCompleteStart()	Start		Grid_GroupRearrange_RearrangeComplete	Informational		
-Microsoft-Windows-Immersive-Shell	2079	0	Grid_GroupRearrange_RearrangeCompleteStop()	Stop		Grid_GroupRearrange_RearrangeComplete	Informational		
-Microsoft-Windows-Immersive-Shell	2080	0	Grid_GroupRearrange_RearrangeMoveStart()	Start		Grid_GroupRearrange_RearrangeMove	Informational		
-Microsoft-Windows-Immersive-Shell	2081	0	Grid_GroupRearrange_RearrangeMoveStop()	Stop		Grid_GroupRearrange_RearrangeMove	Informational		
-Microsoft-Windows-Immersive-Shell	2082	0	Grid_ShareFromLauncher_SharePreflightStart()	Start		Grid_ShareFromLauncher_SharePreflight	Informational		
-Microsoft-Windows-Immersive-Shell	2083	0	Grid_ShareFromLauncher_SharePreflightStop()	Stop		Grid_ShareFromLauncher_SharePreflight	Informational		
-Microsoft-Windows-Immersive-Shell	2084	0	Grid_Tile_Verb_Invoked()			Grid_Tile_Verb_Invoked	Informational		
-Microsoft-Windows-Immersive-Shell	2085	0	Grid_Tile_Verb_Invoked2085()			Grid_Tile_Verb_Invoked	Informational		
-Microsoft-Windows-Immersive-Shell	2088	0	Grid_CollectionEvent(UInt32 Version, UInt32 State)			Grid_CollectionEvent	Informational		
-Microsoft-Windows-Immersive-Shell	2089	0	Grid_CollectionEvent2089(UInt32 Version, UInt32 CountType, UInt32 HRESULT)			Grid_CollectionEvent	Informational		
-Microsoft-Windows-Immersive-Shell	2090	0	Grid_CollectionEvent2090(UInt32 Version, UInt32 Index, UInt32 Count, UInt32 ChangeIndexType)			Grid_CollectionEvent	Informational		
-Microsoft-Windows-Immersive-Shell	2091	0	Grid_CollectionEvent2091(UInt32 Version, UInt32 Index, UInt32 Count, UInt32 ChangeIndexType)			Grid_CollectionEvent	Informational		
-Microsoft-Windows-Immersive-Shell	2092	0	Grid_CollectionEvent2092()			Grid_CollectionEvent	Informational		
-Microsoft-Windows-Immersive-Shell	2093	0	Grid_CollectionEvent2093()			Grid_CollectionEvent	Informational		
-Microsoft-Windows-Immersive-Shell	2094	0	Grid_CollectionEvent2094(UInt32 ItemChangedType)			Grid_CollectionEvent	Informational		
-Microsoft-Windows-Immersive-Shell	2095	0	Grid_Model_Failed2095(UnicodeString AppID, UInt32 Result)			Grid_Model_Failed	Error		
-Microsoft-Windows-Immersive-Shell	2096	0	Grid_Model_Failed2096(UnicodeString AppID, UInt32 Result)			Grid_Model_Failed	Error		
-Microsoft-Windows-Immersive-Shell	2097	0	Grid_View_PerformTickle(UInt32 Count)			Grid_View_PerformTickle	Informational		
-Microsoft-Windows-Immersive-Shell	2098	0	Grid_View_PerformPeek(UInt32 Count)			Grid_View_PerformPeek	Informational		
-Microsoft-Windows-Immersive-Shell	2099	0	Grid_Tile_Verb_RemoveContentTile(UnicodeString AppUserModelID)			Grid_Tile_Verb_RemoveContentTile	Informational		
 Microsoft-Windows-Immersive-Shell	2100	0	Picker_PickerLaunched(UInt32 PickerType, UInt32 Mode)			Picker_PickerLaunched	Informational		
 Microsoft-Windows-Immersive-Shell	2102	0	Picker_PickerReady()			Picker_PickerReady	Error		
 Microsoft-Windows-Immersive-Shell	2104	0	Picker_NavigationStart()			Picker_NavigationStart	Error		
@@ -389,8 +105,6 @@ Microsoft-Windows-Immersive-Shell	2117	0	Picker_BusyState_ShownStop()	Stop		Pick
 Microsoft-Windows-Immersive-Shell	2118	0	Picker_WaitForApplicationsStart()	Start		Picker_WaitForApplications	Informational		
 Microsoft-Windows-Immersive-Shell	2119	0	Picker_WaitForApplicationsStop()	Stop		Picker_WaitForApplications	Informational		
 Microsoft-Windows-Immersive-Shell	2120	0	Picker_Application_Signalled()			Picker_Application_Signalled	Informational		
-Microsoft-Windows-Immersive-Shell	2122	0	Picker_JumpBar_HomeGroupAvailableCheckStart()	Start		Picker_JumpBar_HomeGroupAvailableCheck	Informational		
-Microsoft-Windows-Immersive-Shell	2123	0	Picker_JumpBar_HomeGroupAvailableCheckStop(Boolean Available)	Stop		Picker_JumpBar_HomeGroupAvailableCheck	Informational		
 Microsoft-Windows-Immersive-Shell	2124	0	Picker_LocationLabel_Updated()			Picker_LocationLabel_Updated	Informational		
 Microsoft-Windows-Immersive-Shell	2126	0	PerfTrack_Picker_NavigateLocal_ResponsiveStart()	Start		PerfTrack_Picker_NavigateLocal_Responsive	Informational		
 Microsoft-Windows-Immersive-Shell	2127	0	PerfTrack_Picker_NavigateLocal_ResponsiveStop()	Stop		PerfTrack_Picker_NavigateLocal_Responsive	Informational		
@@ -408,10 +122,6 @@ Microsoft-Windows-Immersive-Shell	2138	0	PerfTrack_Picker_Launch_Save_Tile_Respo
 Microsoft-Windows-Immersive-Shell	2139	0	PerfTrack_Picker_Launch_Save_Tile_ResponsiveStop()	Stop		PerfTrack_Picker_Launch_Save_Tile_Responsive	Informational		
 Microsoft-Windows-Immersive-Shell	2140	0	PerfTrack_Picker_Launch_Save_Tile_ViewCompleteStart(UnicodeString AppID, UnicodeString PackageName)	Start		PerfTrack_Picker_Launch_Save_Tile_ViewComplete	Informational		
 Microsoft-Windows-Immersive-Shell	2141	0	PerfTrack_Picker_Launch_Save_Tile_ViewCompleteStop(UInt32 TotalCount)	Stop		PerfTrack_Picker_Launch_Save_Tile_ViewComplete	Informational		
-Microsoft-Windows-Immersive-Shell	2142	0	FileOpenPickerUI_AddFileStart(UnicodeString Id)	Start		FileOpenPickerUI_AddFile	Informational		
-Microsoft-Windows-Immersive-Shell	2143	0	FileOpenPickerUI_AddFileStop(UInt32 Result)	Stop		FileOpenPickerUI_AddFile	Informational		
-Microsoft-Windows-Immersive-Shell	2144	0	FileOpenPickerUI_RemoveFileStart(UnicodeString Id)	Start		FileOpenPickerUI_RemoveFile	Informational		
-Microsoft-Windows-Immersive-Shell	2145	0	FileOpenPickerUI_RemoveFileStop()	Stop		FileOpenPickerUI_RemoveFile	Informational		
 Microsoft-Windows-Immersive-Shell	2146	0	PerfTrack_Picker_NavigateHG_ResponsiveStart()	Start		PerfTrack_Picker_NavigateHG_Responsive	Informational		
 Microsoft-Windows-Immersive-Shell	2147	0	PerfTrack_Picker_NavigateHG_ResponsiveStop()	Stop		PerfTrack_Picker_NavigateHG_Responsive	Informational		
 Microsoft-Windows-Immersive-Shell	2148	0	PerfTrack_Picker_NavigateHG_ViewCompleteStart()	Start		PerfTrack_Picker_NavigateHG_ViewComplete	Informational		
@@ -420,15 +130,7 @@ Microsoft-Windows-Immersive-Shell	2150	0	PerfTrack_Picker_NavigateUNC_Responsive
 Microsoft-Windows-Immersive-Shell	2151	0	PerfTrack_Picker_NavigateUNC_ResponsiveStop()	Stop		PerfTrack_Picker_NavigateUNC_Responsive	Informational		
 Microsoft-Windows-Immersive-Shell	2152	0	PerfTrack_Picker_NavigateUNC_ViewCompleteStart()	Start		PerfTrack_Picker_NavigateUNC_ViewComplete	Informational		
 Microsoft-Windows-Immersive-Shell	2153	0	PerfTrack_Picker_NavigateUNC_ViewCompleteStop(UInt32 TotalCount)	Stop		PerfTrack_Picker_NavigateUNC_ViewComplete	Informational		
-Microsoft-Windows-Immersive-Shell	2154	0	PerfTrack_Picker_Launch_Thumbnail_FirstPage(UInt32 Duration, UInt32 VisibleCount)			PerfTrack_Picker_Launch_Thumbnail_FirstPage	Informational		
-Microsoft-Windows-Immersive-Shell	2155	0	PerfTrack_Picker_Launch_Tile_FirstPage(UInt32 Duration, UInt32 VisibleCount)			PerfTrack_Picker_Launch_Tile_FirstPage	Informational		
-Microsoft-Windows-Immersive-Shell	2156	0	PerfTrack_Picker_Launch_Save_Tile_FirstPage(UInt32 Duration, UInt32 VisibleCount)			PerfTrack_Picker_Launch_Save_Tile_FirstPage	Informational		
-Microsoft-Windows-Immersive-Shell	2157	0	PerfTrack_Picker_NavigateLocal_FirstPage(UInt32 Duration, UInt32 VisibleCount, UInt32 PickerMode)			PerfTrack_Picker_NavigateLocal_FirstPage	Informational		
-Microsoft-Windows-Immersive-Shell	2158	0	PerfTrack_Picker_NavigateHG_FirstPage(UInt32 Duration, UInt32 VisibleCount, UInt32 PickerMode)			PerfTrack_Picker_NavigateHG_FirstPage	Informational		
-Microsoft-Windows-Immersive-Shell	2159	0	PerfTrack_Picker_NavigateUNC_FirstPage(UInt32 Duration, UInt32 VisibleCount, UInt32 PickerMode)			PerfTrack_Picker_NavigateUNC_FirstPage	Informational		
 Microsoft-Windows-Immersive-Shell	2160	0	Picker_AppInstanceView_HostedApplication()			Picker_AppInstanceView_HostedApplication	Informational		
-Microsoft-Windows-Immersive-Shell	2161	0	Picker_AppInstanceView_HostedApplication2161()			Picker_AppInstanceView_HostedApplication	Informational		
-Microsoft-Windows-Immersive-Shell	2162	0	Picker_AppInstanceView_HostedApplication2162(UnicodeString AppUserModelId, UnicodeString ContractID)			Picker_AppInstanceView_HostedApplication	Informational		
 Microsoft-Windows-Immersive-Shell	2163	0	Picker_AppInstanceView_Closing(Boolean IsCancelled)			Picker_AppInstanceView_Closing	Informational		
 Microsoft-Windows-Immersive-Shell	2164	0	Picker_AppInstanceView_Commit()			Picker_AppInstanceView_Commit	Informational		
 Microsoft-Windows-Immersive-Shell	2165	0	Picker_AppInstanceView_StartFileUpdate()			Picker_AppInstanceView_StartFileUpdate	Informational		
@@ -447,9 +149,6 @@ Microsoft-Windows-Immersive-Shell	2177	0	Picker_CachedFileUpdater_FileUpdateRequ
 Microsoft-Windows-Immersive-Shell	2178	0	Picker_CachedFileUpdater_FileUpdateRequestStop(UInt32 Status)	Stop		Picker_CachedFileUpdater_FileUpdateRequest	Informational		
 Microsoft-Windows-Immersive-Shell	2179	0	Picker_FileSavePickerUI_FileNameChanged(UnicodeString FileName)			Picker_FileSavePickerUI_FileNameChanged	Informational		
 Microsoft-Windows-Immersive-Shell	2180	0	Picker_FileSavePickerUI_TargetFileRequest()			Picker_FileSavePickerUI_TargetFileRequest	Informational		
-Microsoft-Windows-Immersive-Shell	2181	0	Picker_FileSavePickerUI_TargetFileRequest2181()			Picker_FileSavePickerUI_TargetFileRequest	Informational		
-Microsoft-Windows-Immersive-Shell	2182	0	Picker_FileSavePickerUI_TargetFileRequestStart(UnicodeString FileName)	Start		Picker_FileSavePickerUI_TargetFileRequest	Informational		
-Microsoft-Windows-Immersive-Shell	2183	0	Picker_FileSavePickerUI_TargetFileRequestStop(Boolean FileIsUpdated)	Stop		Picker_FileSavePickerUI_TargetFileRequest	Informational		
 Microsoft-Windows-Immersive-Shell	2184	0	Picker_FileOpenPickerUI_ClosingStart()	Start		Picker_FileOpenPickerUI_Closing	Informational		
 Microsoft-Windows-Immersive-Shell	2185	0	Picker_FileOpenPickerUI_ClosingStop()	Stop		Picker_FileOpenPickerUI_Closing	Informational		
 Microsoft-Windows-Immersive-Shell	2200	0	SharingManager_InitSharingStart()	Start		SharingManager_InitSharing	Informational		
@@ -462,18 +161,12 @@ Microsoft-Windows-Immersive-Shell	2206	0	SharingManager_GetSharableItemDataStart
 Microsoft-Windows-Immersive-Shell	2207	0	SharingManager_GetSharableItemDataStop(UInt32 Result)	Stop		SharingManager_GetSharableItemData	Informational		
 Microsoft-Windows-Immersive-Shell	2208	0	SharingManager_SelectSharableItemStart(UInt32 Index, UInt32 AppItemCount)	Start		SharingManager_SelectSharableItem	Informational		
 Microsoft-Windows-Immersive-Shell	2209	0	SharingManager_SelectSharableItemStop(UInt32 Result)	Stop		SharingManager_SelectSharableItem	Informational		
-Microsoft-Windows-Immersive-Shell	2210	0	SharingManager_GetAppTargetCountStart()	Start		SharingManager_GetAppTargetCount	Informational		
-Microsoft-Windows-Immersive-Shell	2211	0	SharingManager_GetAppTargetCountStop(UInt32 TargetCount)	Stop		SharingManager_GetAppTargetCount	Informational		
-Microsoft-Windows-Immersive-Shell	2212	0	SharingManager_GetAppTargetStart(UInt32 Index)	Start		SharingManager_GetAppTarget	Informational		
-Microsoft-Windows-Immersive-Shell	2213	0	SharingManager_GetAppTargetStop(UInt32 Result)	Stop		SharingManager_GetAppTarget	Informational		
 Microsoft-Windows-Immersive-Shell	2214	0	SharingManager_GetQuickShareTargetCountStart()	Start		SharingManager_GetQuickShareTargetCount	Informational		
 Microsoft-Windows-Immersive-Shell	2215	0	SharingManager_GetQuickShareTargetCountStop(UInt32 TargetCount)	Stop		SharingManager_GetQuickShareTargetCount	Informational		
 Microsoft-Windows-Immersive-Shell	2216	0	SharingManager_GetQuickShareTargetStart(UInt32 Index)	Start		SharingManager_GetQuickShareTarget	Informational		
 Microsoft-Windows-Immersive-Shell	2217	0	SharingManager_GetQuickShareTargetStop(UInt32 Result)	Stop		SharingManager_GetQuickShareTarget	Informational		
 Microsoft-Windows-Immersive-Shell	2218	0	SharingManager_ActivateTargetStart()	Start		SharingManager_ActivateTarget	Informational		
 Microsoft-Windows-Immersive-Shell	2219	0	SharingManager_ActivateTargetStop(UInt32 Result)	Stop		SharingManager_ActivateTarget	Informational		
-Microsoft-Windows-Immersive-Shell	2220	0	SharingManager_TransferDataStart()	Start		SharingManager_TransferData	Informational		
-Microsoft-Windows-Immersive-Shell	2221	0	SharingManager_TransferDataStop(UInt32 Result)	Stop		SharingManager_TransferData	Informational		
 Microsoft-Windows-Immersive-Shell	2222	0	SharingTargetCallback_DoneTransferStart()	Start		SharingTargetCallback_DoneTransfer	Informational		
 Microsoft-Windows-Immersive-Shell	2223	0	SharingTargetCallback_DoneTransferStop(UInt32 Result)	Stop		SharingTargetCallback_DoneTransfer	Informational		
 Microsoft-Windows-Immersive-Shell	2224	0	QuickShareTargetList_SaveQuickShareTargetStart()	Start		QuickShareTargetList_SaveQuickShareTarget	Informational		
@@ -482,19 +175,13 @@ Microsoft-Windows-Immersive-Shell	2226	0	SharingTargetAppList_QueryTargetsStart(
 Microsoft-Windows-Immersive-Shell	2227	0	SharingTargetAppList_QueryTargetsStop(UInt32 Result)	Stop		SharingTargetAppList_QueryTargets	Informational		
 Microsoft-Windows-Immersive-Shell	2228	0	QuickShareTargetList_QueryTargetsStart()	Start		QuickShareTargetList_QueryTargets	Informational		
 Microsoft-Windows-Immersive-Shell	2229	0	QuickShareTargetList_QueryTargetsStop(UInt32 Result)	Stop		QuickShareTargetList_QueryTargets	Informational		
-Microsoft-Windows-Immersive-Shell	2230	0	Share_InvalidPlatform(UInt32 Result)			Share_InvalidPlatform	Informational		
-Microsoft-Windows-Immersive-Shell	2231	0	Share_BGThreadFailure(UInt32 Result)			Share_BGThreadFailure	Informational		
 Microsoft-Windows-Immersive-Shell	2232	0	Share_ShowFailure(UInt32 Result)			Share_ShowFailure	Informational		
-Microsoft-Windows-Immersive-Shell	2233	0	Share_NoSourceItems(UInt32 Result)			Share_NoSourceItems	Informational		
-Microsoft-Windows-Immersive-Shell	2234	0	Share_EnumSourceItemsFailure(UInt32 Result)			Share_EnumSourceItemsFailure	Informational		
 Microsoft-Windows-Immersive-Shell	2235	0	Share_LoadDUIFailure(UInt32 Result)			Share_LoadDUIFailure	Informational		
 Microsoft-Windows-Immersive-Shell	2236	0	Share_ShowErrorUI(UInt32 Result)			Share_ShowErrorUI	Informational		
 Microsoft-Windows-Immersive-Shell	2238	0	Share_InitUIStart()	Start		Share_InitUI	Informational		
 Microsoft-Windows-Immersive-Shell	2239	0	Share_InitUIStop()	Stop		Share_InitUI	Informational		
 Microsoft-Windows-Immersive-Shell	2240	0	Share_TransitionContentStart()	Start		Share_TransitionContent	Informational		
 Microsoft-Windows-Immersive-Shell	2241	0	Share_TransitionContentStop()	Stop		Share_TransitionContent	Informational		
-Microsoft-Windows-Immersive-Shell	2242	0	Share_SpeedBumpToMainView()			Share_SpeedBumpToMainView	Informational		
-Microsoft-Windows-Immersive-Shell	2243	0	Share_MainViewToSpeedBump()			Share_MainViewToSpeedBump	Informational		
 Microsoft-Windows-Immersive-Shell	2244	0	Share_RunningSharesToView()			Share_RunningSharesToView	Informational		
 Microsoft-Windows-Immersive-Shell	2245	0	Share_ViewToRunningShares()			Share_ViewToRunningShares	Informational		
 Microsoft-Windows-Immersive-Shell	2246	0	PerfTrack_Share_ShowFlowStart()	Start		PerfTrack_Share_ShowFlow	Informational		
@@ -522,41 +209,22 @@ Microsoft-Windows-Immersive-Shell	2268	0	SharingManager_RetrieveSourceAppNameSta
 Microsoft-Windows-Immersive-Shell	2269	0	SharingManager_RetrieveSourceAppNameStop(UInt32 Result)	Stop		SharingManager_RetrieveSourceAppName	Informational		
 Microsoft-Windows-Immersive-Shell	2270	0	SharingManager_RetrieveAppListingUriStart()	Start		SharingManager_RetrieveAppListingUri	Informational		
 Microsoft-Windows-Immersive-Shell	2271	0	SharingManager_RetrieveAppListingUriStop(UInt32 Result)	Stop		SharingManager_RetrieveAppListingUri	Informational		
-Microsoft-Windows-Immersive-Shell	2300	0	Launcher_InitializeStart(UInt32 WindowScaleFactor, UInt32 StartTileScaleFactor)	Start		Launcher_Initialize	Informational		
-Microsoft-Windows-Immersive-Shell	2301	0	Launcher_InitializeStop(UInt32 WindowScaleFactor, UInt32 StartTileScaleFactor)	Stop		Launcher_Initialize	Informational		
 Microsoft-Windows-Immersive-Shell	2302	0	Launcher_Apps_ShowStart(UInt32 ShowMethod)	Start		Launcher_Apps_Show	Informational		
 Microsoft-Windows-Immersive-Shell	2303	0	Launcher_Apps_ShowStop(UInt32 ShowMethod)	Stop		Launcher_Apps_Show	Informational		
-Microsoft-Windows-Immersive-Shell	2304	0	Launcher_EscPressed()			Launcher_EscPressed	Informational		
 Microsoft-Windows-Immersive-Shell	2305	0	Launcher_Apps_HideStart()	Start		Launcher_Apps_Hide	Informational		
 Microsoft-Windows-Immersive-Shell	2306	0	Launcher_Apps_HideStop()	Stop		Launcher_Apps_Hide	Informational		
-Microsoft-Windows-Immersive-Shell	2307	0	Launcher_Apps_OpenSearch()			Launcher_Apps_OpenSearch	Informational		
-Microsoft-Windows-Immersive-Shell	2309	0	Launcher_Apps_CloseSearch()			Launcher_Apps_CloseSearch	Informational		
 Microsoft-Windows-Immersive-Shell	2313	0	Launcher_OnSearchStart()	Start		Launcher_OnSearch	Informational		
 Microsoft-Windows-Immersive-Shell	2314	0	Launcher_OnSearchStop()	Stop		Launcher_OnSearch	Informational		
 Microsoft-Windows-Immersive-Shell	2315	0	Launcher_Apps_ViewChangeStart(UnicodeString ViewFromGuid, UnicodeString ViewToGuid)	Start		Launcher_Apps_ViewChange	Informational		
 Microsoft-Windows-Immersive-Shell	2316	0	Launcher_Apps_ViewChangeStop()	Stop		Launcher_Apps_ViewChange	Informational		
-Microsoft-Windows-Immersive-Shell	2317	0	Launcher_ViewActivated(UnicodeString ViewGuid)			Launcher_ViewActivated	Informational		
-Microsoft-Windows-Immersive-Shell	2318	0	Launcher_TileDroppedStart()	Start		Launcher_TileDropped	Informational		
-Microsoft-Windows-Immersive-Shell	2319	0	Launcher_Apps_ViewChangeStop2319()	Stop		Launcher_Apps_ViewChange	Informational		
-Microsoft-Windows-Immersive-Shell	2322	0	Launcher_ViewPicker_VisiblityChanged(Boolean IsVisible)			Launcher_ViewPicker_VisiblityChanged	Informational		
 Microsoft-Windows-Immersive-Shell	2324	0	Launcher_Apps_SwitchToAllAppsViewFromStart()	Start		Launcher_Apps_SwitchToAllAppsViewFromStart	Informational		
 Microsoft-Windows-Immersive-Shell	2325	0	Launcher_Apps_SwitchToAllAppsViewFromStartStop(UInt32 RenderedTileCount, UInt32 RealizedTileCount)	Stop		Launcher_Apps_SwitchToAllAppsViewFromStart	Informational		
 Microsoft-Windows-Immersive-Shell	2326	0	PerfTrack_DesktopToLauncherTransitionStart()	Start		PerfTrack_DesktopToLauncherTransition	Informational		
 Microsoft-Windows-Immersive-Shell	2327	0	PerfTrack_DesktopToLauncherTransitionStop(UInt32 NumOfVisibleTiles)	Stop		PerfTrack_DesktopToLauncherTransition	Informational		
-Microsoft-Windows-Immersive-Shell	2328	0	Launcher_Apps_Show()			Launcher_Apps_Show	Informational		
-Microsoft-Windows-Immersive-Shell	2329	0	Launcher_Login()			Launcher_Login	Informational		
-Microsoft-Windows-Immersive-Shell	2330	0	Launcher_Apps_Show2330()			Launcher_Apps_Show	Informational		
-Microsoft-Windows-Immersive-Shell	2331	0	Launcher_Apps_Show2331()			Launcher_Apps_Show	Informational		
-Microsoft-Windows-Immersive-Shell	2332	0	Launcher_RefreshContentsStart(Boolean IsDPIChange)	Start		Launcher_RefreshContents	Informational		
-Microsoft-Windows-Immersive-Shell	2333	0	Launcher_RefreshContentsStop(Boolean IsDPIChange)	Stop		Launcher_RefreshContents	Informational		
-Microsoft-Windows-Immersive-Shell	2334	0	Launcher_ResetDUserDevice()			Launcher_ResetDUserDevice	Informational		
 Microsoft-Windows-Immersive-Shell	2335	0	Launcher_ScenarioStart(UInt32 ScenarioId, UnicodeString ScenarioName)	Start		Launcher_Scenario	Informational		
 Microsoft-Windows-Immersive-Shell	2336	0	Launcher_ScenarioStop(UInt32 ScenarioId, UnicodeString ScenarioName)	Stop		Launcher_Scenario	Informational		
 Microsoft-Windows-Immersive-Shell	2356	0	Launcher_OrientationChangeStart()	Start		Launcher_OrientationChange	Informational		
 Microsoft-Windows-Immersive-Shell	2357	0	Launcher_OrientationChangeStop()	Stop		Launcher_OrientationChange	Informational		
-Microsoft-Windows-Immersive-Shell	2358	0	Launcher_ClearTiles()			Launcher_ClearTiles	Informational		
-Microsoft-Windows-Immersive-Shell	2359	0	Launcher_ClearTiles2359()			Launcher_ClearTiles	Informational		
-Microsoft-Windows-Immersive-Shell	2360	0	Launcher_BackgroundColorChange(UInt32 Mode)			Launcher_BackgroundColorChange	Informational		
 Microsoft-Windows-Immersive-Shell	2361	0	Launcher_Dismiss_Explicit_ToDesktopStart()	Start		Launcher_Dismiss_Explicit_ToDesktop	Informational		
 Microsoft-Windows-Immersive-Shell	2362	0	Launcher_Dismiss_Explicit_ToDesktopStop(UInt32 HowDismiss)	Stop		Launcher_Dismiss_Explicit_ToDesktop	Informational		
 Microsoft-Windows-Immersive-Shell	2363	0	Launcher_Dismiss_Explicit_ToImmersiveModeStart()	Start		Launcher_Dismiss_Explicit_ToImmersiveMode	Informational		
@@ -565,86 +233,36 @@ Microsoft-Windows-Immersive-Shell	2365	0	Launcher_Show_FromImmersiveModeStart()	
 Microsoft-Windows-Immersive-Shell	2366	0	Launcher_Show_FromImmersiveModeStop()	Stop		Launcher_Show_FromImmersiveMode	Informational		
 Microsoft-Windows-Immersive-Shell	2368	0	Launcher_Apps_SwitchToStartViewFromAllAppsViewStart()	Start		Launcher_Apps_SwitchToStartViewFromAllAppsView	Informational		
 Microsoft-Windows-Immersive-Shell	2369	0	Launcher_Apps_SwitchToStartViewFromAllAppsViewStop()	Stop		Launcher_Apps_SwitchToStartViewFromAllAppsView	Informational		
-Microsoft-Windows-Immersive-Shell	2370	0	Launcher_Dismiss_Explicit_ToDesktop_FirstStart()	Start		Launcher_Dismiss_Explicit_ToDesktop_First	Informational		
 Microsoft-Windows-Immersive-Shell	2373	0	PerfTrack_AppSearch_ViewCompleteStart()	Start		PerfTrack_AppSearch_ViewComplete	Informational		
 Microsoft-Windows-Immersive-Shell	2374	0	PerfTrack_AppSearch_ViewCompleteStop()	Stop		PerfTrack_AppSearch_ViewComplete	Informational		
-Microsoft-Windows-Immersive-Shell	2375	0	PerfTrack_FSA_SearchStart()	Start		PerfTrack_FSA_Search	Informational		
-Microsoft-Windows-Immersive-Shell	2376	0	PerfTrack_FSA_SearchStop(UInt32 ItemsInView, UInt32 TotalCount)	Stop		PerfTrack_FSA_Search	Informational		
-Microsoft-Windows-Immersive-Shell	2377	0	PerfTrack_CMS_SearchStart()	Start		PerfTrack_CMS_Search	Informational		
-Microsoft-Windows-Immersive-Shell	2378	0	PerfTrack_CMS_SearchStop(UInt32 ItemsInView, UInt32 TotalCount)	Stop		PerfTrack_CMS_Search	Informational		
-Microsoft-Windows-Immersive-Shell	2379	0	Launcher_ActiveZbandChangedStart(Int32 ZbandFrom, Int32 ZbandTo)	Start		Launcher_ActiveZbandChanged	Informational		
-Microsoft-Windows-Immersive-Shell	2380	0	Launcher_ActiveZbandChangedStop(Int32 ZbandFrom, Int32 ZbandTo)	Stop		Launcher_ActiveZbandChanged	Informational		
-Microsoft-Windows-Immersive-Shell	2381	0	Launcher_RequestTileBitmap(Boolean Succeeded)			Launcher_RequestTileBitmap	Informational		
 Microsoft-Windows-Immersive-Shell	2382	0	PerfTrack_AppSearch_ViewCompleteStop2382()	Stop		PerfTrack_AppSearch_ViewComplete	Informational		
-Microsoft-Windows-Immersive-Shell	2383	0	Launcher_HideDwmTransitionTimerStart(UInt32 Duration)	Start		Launcher_HideDwmTransitionTimer	Informational		
-Microsoft-Windows-Immersive-Shell	2384	0	Launcher_HideDwmTransitionTimerStop()	Stop		Launcher_HideDwmTransitionTimer	Informational		
-Microsoft-Windows-Immersive-Shell	2385	0	Launcher_HideStart()	Start		Launcher_Hide	Informational		
-Microsoft-Windows-Immersive-Shell	2386	0	Launcher_HideStop()	Stop		Launcher_Hide	Informational		
-Microsoft-Windows-Immersive-Shell	2387	0	LauncherApps_OnShowingStart()	Start		LauncherApps_OnShowing	Informational		
-Microsoft-Windows-Immersive-Shell	2388	0	LauncherApps_OnShowingStop()	Stop		LauncherApps_OnShowing	Informational		
-Microsoft-Windows-Immersive-Shell	2389	0	LauncherApps_OnHiddenStart(Boolean RequestedDWMTransition)	Start		LauncherApps_OnHidden	Informational		
-Microsoft-Windows-Immersive-Shell	2390	0	LauncherApps_OnHiddenStop()	Stop		LauncherApps_OnHidden	Informational		
-Microsoft-Windows-Immersive-Shell	2391	0	LauncherApps_ResetToDefaultViewStart()	Start		LauncherApps_ResetToDefaultView	Informational		
-Microsoft-Windows-Immersive-Shell	2392	0	LauncherApps_ResetToDefaultViewStop()	Stop		LauncherApps_ResetToDefaultView	Informational		
-Microsoft-Windows-Immersive-Shell	2393	0	LauncherApps_ResetToDefaultView()			LauncherApps_ResetToDefaultView	Informational		
-Microsoft-Windows-Immersive-Shell	2396	0	LauncherApps_SearchQueryChanged()			LauncherApps_SearchQueryChanged	Informational		
-Microsoft-Windows-Immersive-Shell	2397	0	LauncherApps_SearchQuerySubmitted()			LauncherApps_SearchQuerySubmitted	Informational		
-Microsoft-Windows-Immersive-Shell	2398	0	PerfTrack_FSA_SearchStop2398()	Stop		PerfTrack_FSA_Search	Informational		
-Microsoft-Windows-Immersive-Shell	2399	0	PerfTrack_CMS_SearchStop2399()	Stop		PerfTrack_CMS_Search	Informational		
 Microsoft-Windows-Immersive-Shell	2450	1	PerfTrack_PLM_SuspendApplicationStart_V1(UnicodeString PsmKey)	Start	PLMComponent keyword_200000000000	PerfTrack_PLM_SuspendApplication	Informational		
 Microsoft-Windows-Immersive-Shell	2451	1	PerfTrack_PLM_SuspendApplicationStop_V1(UnicodeString PsmKey, UnicodeString PackageFullName, UnicodeString AppUserModelId, UInt32 Packed_Hi_RequestedTimeoutExtensionMs16_Flags11_Crashed1_Throttled1_EnforceTimeout1_IsChild1_TimedOut1_Lo, UInt32 Packed_Hi_ModeSwitchesToUnthrottledCount2_IoOpportunityTime100Ms10_CpuReadyTime100Ms10_CpuRunningTime100Ms10_Lo)	Stop	PLMComponent keyword_200000000000	PerfTrack_PLM_SuspendApplication	Informational		
 Microsoft-Windows-Immersive-Shell	2453	0	PLM_UserLogoff()		PLMComponent	PLM_UserLogoff	Always		
 Microsoft-Windows-Immersive-Shell	2454	0	PLM_ConnectedStandby()		PLMComponent	PLM_ConnectedStandby	Always		
-Microsoft-Windows-Immersive-Shell	2455	0	PLM_TerminationPolicyStart()	Start	PLMComponent	PLM_TerminationPolicy	Informational		
-Microsoft-Windows-Immersive-Shell	2456	0	PLM_TerminationPolicyStop()	Stop	PLMComponent	PLM_TerminationPolicy	Informational		
-Microsoft-Windows-Immersive-Shell	2457	0	PLM_PagedOutPolicyStart()	Start	PLMComponent	PLM_PagedOutPolicy	Informational		
-Microsoft-Windows-Immersive-Shell	2458	0	PLM_PagedOutPolicyStop()	Stop	PLMComponent	PLM_PagedOutPolicy	Informational		
-Microsoft-Windows-Immersive-Shell	2459	0	PLM_ApplicationHangStart(UnicodeString ApplicationUserModelId, UInt32 HungProcessId)	Start	PLMComponent	PLM_ApplicationHang	Informational		
-Microsoft-Windows-Immersive-Shell	2460	0	PLM_ApplicationHangStop(UnicodeString ApplicationUserModelId, UInt32 HungProcessId)	Stop	PLMComponent LwNetDiag	PLM_ApplicationHang	Informational		
-Microsoft-Windows-Immersive-Shell	2461	0	PLM_ApplicationHangStop2461(UnicodeString ApplicationUserModelId, UInt32 HungProcessId)	Stop	PLMComponent LwNetDiag	PLM_ApplicationHang	Informational		
-Microsoft-Windows-Immersive-Shell	2462	0	PLM_ApplicationHangStop2462(UnicodeString ApplicationUserModelId, UInt32 HungProcessId)	Stop	PLMComponent	PLM_ApplicationHang	Informational		
 Microsoft-Windows-Immersive-Shell	2463	1	PerfTrack_PLM_ResumeApplicationStart_V1(UnicodeString PsmKey)	Start	PLMComponent keyword_200000000000	PerfTrack_PLM_ResumeApplication	Informational		
-Microsoft-Windows-Immersive-Shell	2464	0	PerfTrack_PLM_ResumeApplicationStop(UnicodeString PackageFullName, UnicodeString AppUserModelId, UInt32 PackedResumeDurationsMs_HiWordAppLoWordPackage, UInt32 Flags)	Stop	PLMComponent	PerfTrack_PLM_ResumeApplication	Informational		
 Microsoft-Windows-Immersive-Shell	2464	1	PerfTrack_PLM_ResumeApplicationStop_V1(UnicodeString PsmKey, UnicodeString PackageFullName, UnicodeString AppUserModelId, UInt32 PackedResumeDurationsMs_HiWordAppLoWordPackage, UInt32 Flags)	Stop	PLMComponent keyword_200000000000	PerfTrack_PLM_ResumeApplication	Informational		
 Microsoft-Windows-Immersive-Shell	2468	0	PLM_MemoryPolicy(UnicodeString PsmKey, UInt32 Reason, UInt32 HiFlags_LoAppCount, UInt32 HiThreshold_LoCurrentMetric, UInt32 SumOfPrivateWsOrSumOfSwapUsageOrPrivateModifiedSize)		PLMComponent	PLM_MemoryPolicy	Informational		
-Microsoft-Windows-Immersive-Shell	2471	0	PerfTrack_PLM_SuspendApplication(UnicodeString PsmKey, UInt32 ExemptionType)		PLMComponent	PerfTrack_PLM_SuspendApplication	Informational		
 Microsoft-Windows-Immersive-Shell	2472	0	PerfTrack_PLM_ResumeApplication(UnicodeString PsmKey, UInt32 ResumeReason)		PLMComponent keyword_200000000000	PerfTrack_PLM_ResumeApplication	Informational		
 Microsoft-Windows-Immersive-Shell	2473	0	PLM_ApplicationStateChange(UnicodeString PsmKey, UInt32 OldState, UInt32 NewState)		PLMComponent	PLM_ApplicationStateChange	Informational		
 Microsoft-Windows-Immersive-Shell	2474	0	PLM_PSM_WakeCounterChange(UnicodeString PsmKey, UInt32 UserRequest, UInt32 ExecutionRequest, UInt32 KernelRequest)		PLMComponent	PLM_PSM_WakeCounterChange	Informational		
-Microsoft-Windows-Immersive-Shell	2475	0	PLM_MemoryPolicy2475(UInt64 InUseMiB, UInt64 CommitChargeMiB, UInt32 AppsInSessionCount, UInt64 TerminationPolicyInUseThresholdMiB, UInt64 TerminationPolicyCommitChargeHardThresholdMiB, UInt64 TerminationPolicyCommitChargeSoftThresholdMiB, UInt32 TerminationPolicyCommitChargeSoftThresholdAppCount, UInt64 EmptyPolicyInUseThresholdMiB, Boolean IsInDisconnectedSession, UInt32 SessionID)		PLMComponent	PLM_MemoryPolicy	Informational		
-Microsoft-Windows-Immersive-Shell	2476	0	PLM_MemoryPolicy2476(UnicodeString PsmKey, UInt64 PrivateWorkingSetSizeMiB, UInt32 SwapFlag, Boolean IsInBackStack, UInt32 SessionID)		PLMComponent	PLM_MemoryPolicy	Verbose		
-Microsoft-Windows-Immersive-Shell	2477	0	PLM_MemoryPolicy2477(UnicodeString PsmKey, UInt32 TerminationExemption, UInt32 SessionID)		PLMComponent	PLM_MemoryPolicy	Verbose		
-Microsoft-Windows-Immersive-Shell	2478	0	PLM_MemoryPolicy2478(UnicodeString PsmKey, UInt64 MemorySizeMiB, Boolean IsInBackStack, UInt64 Score, UInt64 HiddenTimeSeconds, Boolean IsClipboardOwner, UInt32 SessionID)		PLMComponent	PLM_MemoryPolicy	Verbose		
-Microsoft-Windows-Immersive-Shell	2478	1	PLM_MemoryPolicy2478_V1(UnicodeString PsmKey, UInt32 MemorySizeMiB, UInt32 UseProbability, Boolean IsInBackStack, UInt64 Score, UInt32 HiddenTimeSeconds, Boolean IsClipboardOwner, UInt32 SessionID)		PLMComponent	PLM_MemoryPolicy	Verbose		
-Microsoft-Windows-Immersive-Shell	2479	0	PLM_MemoryPolicy2479(UnicodeString PsmKey, UInt64 MemorySizeMiB, UInt32 ScoreHighPart, UInt64 ScoreLowPart, UInt32 SessionID)		PLMComponent LwNetDiag	PLM_MemoryPolicy	Informational		
-Microsoft-Windows-Immersive-Shell	2479	1	PLM_MemoryPolicy2479_V1(UnicodeString PsmKey, UInt32 MemorySizeMiB, UInt32 UseProbability, UInt32 Tier, UInt32 AdjustedSize, UInt32 SessionID)		PLMComponent LwNetDiag	PLM_MemoryPolicy	Informational		
 Microsoft-Windows-Immersive-Shell	2480	0	PLM_TerminateApp_APIStart(UnicodeString AppUserModelId, UInt32 Flags)	Start	PLMComponent	PLM_TerminateApp_API	Informational		
 Microsoft-Windows-Immersive-Shell	2481	0	PLM_TerminateApp_APIStop(UnicodeString AppUserModelId, UInt32 PendingTaskCompletions, Boolean DeferredTerminate, UInt32 Result)	Stop	PLMComponent	PLM_TerminateApp_API	Informational		
 Microsoft-Windows-Immersive-Shell	2482	0	PLM_TerminateAppStart(UnicodeString PsmKey)	Start	PLMComponent keyword_200000000000	PLM_TerminateApp	Informational		
 Microsoft-Windows-Immersive-Shell	2483	0	PLM_TerminateAppStop(UnicodeString PsmKey)	Stop	PLMComponent keyword_200000000000	PLM_TerminateApp	Informational		
-Microsoft-Windows-Immersive-Shell	2484	1	PerfTrack_PLM_SuspendApplication2484_V1(UnicodeString PsmKey)		PLMComponent LwNetDiag	PerfTrack_PLM_SuspendApplication	Error		
-Microsoft-Windows-Immersive-Shell	2485	1	PLM_MemoryPolicy2485_V1(UnicodeString PsmKey)		PLMComponent	PLM_MemoryPolicy	Informational		
-Microsoft-Windows-Immersive-Shell	2486	1	PLM_ApplicationLaunch2486_V1(UnicodeString PsmKey)		PLMComponent LwNetDiag	PLM_ApplicationLaunch	Error		
-Microsoft-Windows-Immersive-Shell	2487	0	PLM_MemoryPolicyStart(UInt32 SessionID)	Start	PLMComponent	PLM_MemoryPolicy	Informational		
-Microsoft-Windows-Immersive-Shell	2488	0	PLM_MemoryPolicyStop(UInt32 SessionID)	Stop	PLMComponent	PLM_MemoryPolicy	Informational		
-Microsoft-Windows-Immersive-Shell	2489	0	PLM_MemoryPolicy2489(UnicodeString PsmKey, UInt32 PackageState, UInt64 PrivateWorkingSetMiB, UInt64 TotalWorkingSetMiB, UInt64 CommitMiB, UInt64 SwapUsageMiB, Boolean IsInVisualBackStack, Boolean IsInPLMBackStack, UInt32 TimeSinceHiddenSeconds, UInt32 SwapFlag, UInt32 SessionID)		PLMComponentCostly	PLM_MemoryPolicy	Informational		
-Microsoft-Windows-Immersive-Shell	2490	0	PLM_MemoryPolicy2490(UInt32 Reason, UInt32 SessionID)		PLMComponent	PLM_MemoryPolicy	Informational		
+Microsoft-Windows-Immersive-Shell	2484	1	PerfTrack_PLM_SuspendApplication_V1(UnicodeString PsmKey)		PLMComponent LwNetDiag	PerfTrack_PLM_SuspendApplication	Error		
+Microsoft-Windows-Immersive-Shell	2486	1	PLM_ApplicationLaunch_V1(UnicodeString PsmKey)		PLMComponent LwNetDiag	PLM_ApplicationLaunch	Error		
 Microsoft-Windows-Immersive-Shell	2491	0	PLM_TaskCompletion(UInt32 TaskCompletionType, UnicodeString PackageFullName)		PLMComponent	PLM_TaskCompletion	Informational		
 Microsoft-Windows-Immersive-Shell	2492	0	PLM_TaskCompletion2492(UInt32 TaskCompletionType, UnicodeString PackageFullName)		PLMComponent	PLM_TaskCompletion	Informational		
 Microsoft-Windows-Immersive-Shell	2493	0	PLM_ConnectedStandby2493()		PLMComponent	PLM_ConnectedStandby	Informational		
 Microsoft-Windows-Immersive-Shell	2494	0	PLM_ConnectedStandby2494()		PLMComponent	PLM_ConnectedStandby	Informational		
 Microsoft-Windows-Immersive-Shell	2495	0	PLM_ConnectedStandby2495(UInt32 PresentNonBlockingTaskCompletions)		PLMComponent	PLM_ConnectedStandby	Informational		
-Microsoft-Windows-Immersive-Shell	2496	0	PLM_MemoryPolicy2496(UnicodeString PsmKey, UInt32 HRESULT, UInt32 Exemption, UInt32 SessionID)		PLMComponent LwNetDiag	PLM_MemoryPolicy	Informational		
-Microsoft-Windows-Immersive-Shell	2497	1	PLM_MemoryPolicy2497_V1(UnicodeString PsmKey)		PLMComponent	PLM_MemoryPolicy	Verbose		
-Microsoft-Windows-Immersive-Shell	2498	1	PLM_MemoryPolicy2498_V1(UnicodeString PsmKey)		PLMComponent	PLM_MemoryPolicy	Verbose		
 Microsoft-Windows-Immersive-Shell	2499	0	PerfTrack_PLM_WakeOnRPC(UInt32 Wakes, UnicodeString PsmKey)		PLMComponent	PerfTrack_PLM_WakeOnRPC	Informational		
 Microsoft-Windows-Immersive-Shell	2500	0	UserTile_Flyout_LaunchStart()	Start		UserTile_Flyout_Launch	Informational		
 Microsoft-Windows-Immersive-Shell	2501	0	UserTile_Flyout_LaunchStop()	Stop		UserTile_Flyout_Launch	Informational		
 Microsoft-Windows-Immersive-Shell	2504	0	PerfTrack_UserSwitchingStart()	Start		PerfTrack_UserSwitching	Informational		
 Microsoft-Windows-Immersive-Shell	2601	0	Settings_SettingsLaunchStart()	Start		Settings_SettingsLaunch	Informational		
 Microsoft-Windows-Immersive-Shell	2602	0	Settings_SettingsLaunchStop()	Stop		Settings_SettingsLaunch	Informational		
-Microsoft-Windows-Immersive-Shell	2604	0	Settings_SettingsLoadSysElementsStart()	Start		Settings_SettingsLoadSysElements	Informational		
-Microsoft-Windows-Immersive-Shell	2605	0	Settings_SettingsLoadSysElementsStop()	Stop		Settings_SettingsLoadSysElements	Informational		
 Microsoft-Windows-Immersive-Shell	2607	0	Settings_SettingsLoadAppWidgetsBGStart()	Start		Settings_SettingsLoadAppWidgetsBG	Informational		
 Microsoft-Windows-Immersive-Shell	2608	0	Settings_SettingsLoadAppWidgetsBG(UInt32 Result)			Settings_SettingsLoadAppWidgetsBG	Informational		
 Microsoft-Windows-Immersive-Shell	2609	0	Settings_SettingsLoadAppWidgetsBGStop()	Stop		Settings_SettingsLoadAppWidgetsBG	Informational		
@@ -670,104 +288,21 @@ Microsoft-Windows-Immersive-Shell	2683	0	Settings_Launch_PermissionsStop()	Stop	
 Microsoft-Windows-Immersive-Shell	2685	0	Settings_Launch_RateAndReviewStart()	Start		Settings_Launch_RateAndReview	Informational		
 Microsoft-Windows-Immersive-Shell	2686	0	Settings_Launch_RateAndReviewStop()	Stop		Settings_Launch_RateAndReview	Informational		
 Microsoft-Windows-Immersive-Shell	2688	0	Settings_Flow_Broker_ShowStart()	Start		Settings_Flow_Broker_Show	Informational		
-Microsoft-Windows-Immersive-Shell	2689	0	Settings_Flow_Broker_Show()			Settings_Flow_Broker_Show	Informational		
 Microsoft-Windows-Immersive-Shell	2690	0	Settings_Flow_Broker_ShowStop(UInt32 Result)	Stop		Settings_Flow_Broker_Show	Informational		
 Microsoft-Windows-Immersive-Shell	2691	0	Settings_Launch_AccountsStart()	Start		Settings_Launch_Accounts	Informational		
 Microsoft-Windows-Immersive-Shell	2692	0	Settings_Launch_AccountsStop()	Stop		Settings_Launch_Accounts	Informational		
 Microsoft-Windows-Immersive-Shell	2694	0	Settings_Launch_PrivacyPolicyStart()	Start		Settings_Launch_PrivacyPolicy	Informational		
 Microsoft-Windows-Immersive-Shell	2695	0	Settings_Launch_PrivacyPolicyStop()	Stop		Settings_Launch_PrivacyPolicy	Informational		
-Microsoft-Windows-Immersive-Shell	2701	0	FlyoutAnimationStart(UInt32 AnimationFlags)	Start		FlyoutAnimation	Informational		
-Microsoft-Windows-Immersive-Shell	2702	0	FlyoutAnimationStop()	Stop		FlyoutAnimation	Informational		
-Microsoft-Windows-Immersive-Shell	2711	0	FlyoutStartupStart()	Start		FlyoutStartup	Informational		
-Microsoft-Windows-Immersive-Shell	2712	0	FlyoutStartup(Boolean IsImmersive)			FlyoutStartup	Informational		
-Microsoft-Windows-Immersive-Shell	2713	0	FlyoutStartupStop()	Stop		FlyoutStartup	Informational		
-Microsoft-Windows-Immersive-Shell	2715	0	FlyoutDisplayScenarioStart()	Start		FlyoutDisplayScenario	Informational		
-Microsoft-Windows-Immersive-Shell	2716	0	FlyoutDisplayScenarioStop()	Stop		FlyoutDisplayScenario	Informational		
-Microsoft-Windows-Immersive-Shell	2722	0	FlyoutDismiss()			FlyoutDismiss	Informational		
-Microsoft-Windows-Immersive-Shell	2723	0	FlyoutDismissStart()	Start		FlyoutDismiss	Informational		
-Microsoft-Windows-Immersive-Shell	2724	0	FlyoutDismiss2724(Pointer HWND)			FlyoutDismiss	Informational		
-Microsoft-Windows-Immersive-Shell	2725	0	FlyoutDismissStop()	Stop		FlyoutDismiss	Informational		
-Microsoft-Windows-Immersive-Shell	2731	0	FlyoutReflowStart(Pointer HWND)	Start		FlyoutReflow	Informational		
-Microsoft-Windows-Immersive-Shell	2732	0	FlyoutReflowStop()	Stop		FlyoutReflow	Informational		
-Microsoft-Windows-Immersive-Shell	2733	0	FlyoutReflow(Pointer HWND)			FlyoutReflow	Informational		
-Microsoft-Windows-Immersive-Shell	2781	0	FlyoutPositioning(UInt32 FinalSide)			FlyoutPositioning	Informational		
-Microsoft-Windows-Immersive-Shell	2782	0	FlyoutPositioning2782(Int32 Left, Int32 Top, Int32 Right, Int32 Bottom)			FlyoutPositioning	Informational		
-Microsoft-Windows-Immersive-Shell	2791	0	FlyoutGeneral(UInt32 HRESULT)			FlyoutGeneral	Error		
-Microsoft-Windows-Immersive-Shell	2792	0	FlyoutGeneral2792()			FlyoutGeneral	Informational		
-Microsoft-Windows-Immersive-Shell	2801	0	TileUI_Bind_Notification_To_Template(UnicodeString TemplateName, UnicodeString Error, UnicodeString Token, Int32 Line)		NotificationE2E	TileUI_Bind_Notification_To_Template	Error		
-Microsoft-Windows-Immersive-Shell	2802	0	TileUI_Bind_Notification_To_Template2802(UnicodeString ApplicationId, UInt32 NotificationId, UnicodeString TemplateName)		NotificationE2E	TileUI_Bind_Notification_To_Template	Error		
-Microsoft-Windows-Immersive-Shell	2803	0	TileUI_Bind_Notification_To_Template2803(UnicodeString ApplicationId, UInt32 NotificationId, UnicodeString TemplateName, UnicodeString ContentType, UInt32 ContentId)		NotificationE2E	TileUI_Bind_Notification_To_Template	Error		
-Microsoft-Windows-Immersive-Shell	2804	0	TileUI_DesktopKeystoneColorComputationStart()	Start		TileUI_DesktopKeystoneColorComputation	Informational		
-Microsoft-Windows-Immersive-Shell	2805	0	TileUI_DesktopKeystoneColorComputationStop()	Stop		TileUI_DesktopKeystoneColorComputation	Informational		
 Microsoft-Windows-Immersive-Shell	2806	0	TileUI_TileActivatedEvent_Fired(UnicodeString ApplicationId, UnicodeString ActivationParameters)			TileUI_TileActivatedEvent_Fired	Informational		
-Microsoft-Windows-Immersive-Shell	2807	0	TileUI_TileRearrangeEvent_Fired(UnicodeString ApplicationId, UInt32 Action)			TileUI_TileRearrangeEvent_Fired	Informational		
-Microsoft-Windows-Immersive-Shell	2808	0	TileUI_AutoTickleHandlerStart()	Start		TileUI_AutoTickleHandler	Informational		
-Microsoft-Windows-Immersive-Shell	2809	0	TileUI_AutoTickleHandlerStop()	Stop		TileUI_AutoTickleHandler	Informational		
-Microsoft-Windows-Immersive-Shell	2810	0	TileUI_AutoTickleHandler(UInt32 Interval, UInt32 TolerableDelay, UInt32 Mode, Boolean MonitorOn)			TileUI_AutoTickleHandler	Informational		
-Microsoft-Windows-Immersive-Shell	2811	0	TileUI_AutoTickleHandler2811()			TileUI_AutoTickleHandler	Informational		
-Microsoft-Windows-Immersive-Shell	2812	0	TileUI_ExpiryHandlerStart()	Start		TileUI_ExpiryHandler	Informational		
-Microsoft-Windows-Immersive-Shell	2813	0	TileUI_ExpiryHandlerStop()	Stop		TileUI_ExpiryHandler	Informational		
-Microsoft-Windows-Immersive-Shell	2814	0	TileUI_ExpiryHandler(UInt32 FILETIMEHigh, UInt32 FILETIMELow, UInt32 TolerableDelay, UInt32 Mode, Boolean MonitorOn)			TileUI_ExpiryHandler	Informational		
-Microsoft-Windows-Immersive-Shell	2815	0	TileUI_ExpiryHandler2815()			TileUI_ExpiryHandler	Informational		
-Microsoft-Windows-Immersive-Shell	2816	0	TileUI_Change_NotificationStart(UnicodeString ApplicationId, UInt32 NotificationId, UInt32 PeekPosition)	Start		TileUI_Change_Notification	Informational		
-Microsoft-Windows-Immersive-Shell	2817	0	TileUI_Change_NotificationStop(UnicodeString ApplicationId, UInt32 NotificationId)	Stop		TileUI_Change_Notification	Informational		
-Microsoft-Windows-Immersive-Shell	2818	0	AppSpaceLoadTaskSuccess(UnicodeString AppID, UInt32 NotificationID)			AppSpaceLoadTaskSuccess	Informational		
-Microsoft-Windows-Immersive-Shell	2819	0	RegisterTile(UnicodeString AppID)			RegisterTile	Informational		
-Microsoft-Windows-Immersive-Shell	2820	0	TileNotified(UnicodeString AppID, UInt32 NotificationID)		NotificationE2E	TileNotified	Informational		
-Microsoft-Windows-Immersive-Shell	2821	0	TileUI_Change_Notification_AutoTickleStart(UnicodeString ApplicationId, UInt32 NotificationId, UInt32 PeekPosition)	Start		TileUI_Change_Notification_AutoTickle	Informational		
-Microsoft-Windows-Immersive-Shell	2822	0	TileUI_Change_Notification_AutoTickleStop(UnicodeString ApplicationId, UInt32 NotificationId)	Stop		TileUI_Change_Notification_AutoTickle	Informational		
 Microsoft-Windows-Immersive-Shell	2823	0	Tile_ImageLoad_WrongFormat(UnicodeString AppID, UInt32 NotificationID)		NotificationE2E wpndebug_LocalImageErrors	Tile_ImageLoad_WrongFormat	Error		
 Microsoft-Windows-Immersive-Shell	2824	0	Tile_ImageLoad_BadSize(UnicodeString AppID, UInt32 NotificationID)		NotificationE2E wpndebug_LocalImageErrors	Tile_ImageLoad_BadSize	Error		
 Microsoft-Windows-Immersive-Shell	2825	0	Tile_ImageLoad_BadPath(UnicodeString AppID, UInt32 NotificationID)		NotificationE2E wpndebug_LocalImageErrors	Tile_ImageLoad_BadPath	Error		
-Microsoft-Windows-Immersive-Shell	2826	0	Tile_ImageLoad_IncorrectDPIOrTheme(UnicodeString AppID, UInt32 NotificationID)		NotificationE2E wpndebug_LocalImageErrors	Tile_ImageLoad_IncorrectDPIOrTheme	Error		
 Microsoft-Windows-Immersive-Shell	2827	0	Tile_ImageLoad_BadProtocol(UnicodeString AppID, UInt32 NotificationID)		NotificationE2E wpndebug_LocalImageErrors	Tile_ImageLoad_BadProtocol	Error		
-Microsoft-Windows-Immersive-Shell	2828	0	TileUI_VisibleNotificationExpired(UnicodeString AppID, UInt32 NotificationID)		NotificationE2E	TileUI_VisibleNotificationExpired	Error		
 Microsoft-Windows-Immersive-Shell	2829	0	Tile_ImageLoad_Success(UnicodeString AppID, UInt32 NotificationID)		NotificationE2E	Tile_ImageLoad_Success	Informational		
-Microsoft-Windows-Immersive-Shell	2830	0	TileUI_RetryRealizationHandlerStart()	Start		TileUI_RetryRealizationHandler	Informational		
-Microsoft-Windows-Immersive-Shell	2831	0	TileUI_RetryRealizationHandlerStop()	Stop		TileUI_RetryRealizationHandler	Informational		
-Microsoft-Windows-Immersive-Shell	2832	0	TileUI_RetryRealizationHandler(UInt32 FILETIMEHigh, UInt32 FILETIMELow, UInt32 TolerableDelay, UInt32 Mode, Boolean MonitorOn)			TileUI_RetryRealizationHandler	Informational		
-Microsoft-Windows-Immersive-Shell	2833	0	TileUI_RetryRealizationHandler2833()			TileUI_RetryRealizationHandler	Informational		
-Microsoft-Windows-Immersive-Shell	2834	0	TileUI_AutoPeek_AnimationStart(UnicodeString ApplicationId, UInt32 NotificationId, UInt32 PeekPosition)	Start		TileUI_AutoPeek_Animation	Informational		
-Microsoft-Windows-Immersive-Shell	2835	0	TileUI_AutoPeek_AnimationStop(UnicodeString ApplicationId, UInt32 NotificationId, UInt32 PeekPosition)	Stop		TileUI_AutoPeek_Animation	Informational		
 Microsoft-Windows-Immersive-Shell	2836	0	TileUI_CrossSlide()			TileUI_CrossSlide	Informational		
-Microsoft-Windows-Immersive-Shell	2837	0	Tile_OnAppSpaceLoadSuccess(UnicodeString AppID, UInt32 NotificationID)			Tile_OnAppSpaceLoadSuccess	Informational		
-Microsoft-Windows-Immersive-Shell	2838	0	Tile_OnAppSpaceLoadFailure(UnicodeString ApplicationID, UInt32 NotificationID, UInt32 HRESULT)		NotificationE2E	Tile_OnAppSpaceLoadFailure	Error		
-Microsoft-Windows-Immersive-Shell	2839	0	Tile_MarkNotificationIDAsKnownBad(UnicodeString AppID, UInt32 NotificationID)		NotificationE2E	Tile_MarkNotificationIDAsKnownBad	Informational		
-Microsoft-Windows-Immersive-Shell	2840	0	Tile_TickleEnabled(UnicodeString AppID)			Tile_TickleEnabled	Informational		
-Microsoft-Windows-Immersive-Shell	2841	0	Tile_TickleDisabled(UnicodeString AppID)			Tile_TickleDisabled	Informational		
-Microsoft-Windows-Immersive-Shell	2842	0	TileUI_Animation_Completion_Failure(UnicodeString ApplicationId, UInt32 NotificationId, UInt32 HRESULT)			TileUI_Animation_Completion_Failure	Error		
-Microsoft-Windows-Immersive-Shell	2843	0	Tile_ClearBadge(UnicodeString ApplicationId, UInt32 HRESULT)			Tile_ClearBadge	Informational		
-Microsoft-Windows-Immersive-Shell	2844	0	Tile_DefaultAppSpaceXML(UnicodeString AppID, UnicodeString Payload)			Tile_DefaultAppSpaceXML	Informational		
-Microsoft-Windows-Immersive-Shell	2845	0	Tile_StaticTileDataFactory(UInt32 Result, UnicodeString AppID, UInt32 NotificationID)			Tile_StaticTileDataFactory	Informational		
-Microsoft-Windows-Immersive-Shell	2848	0	Tile_LiveTileDataProvider_UpdateTile(UInt32 Result, UnicodeString AppID, UInt32 TILE_SIMILARITY)			Tile_LiveTileDataProvider_UpdateTile	Informational		
-Microsoft-Windows-Immersive-Shell	2849	0	Tile_Square70x70_FallbackTo150x150(UnicodeString AppID)			Tile_Square70x70_FallbackTo150x150	Informational		
 Microsoft-Windows-Immersive-Shell	2850	0	Tile_ImageLoad_FileName(UnicodeString AppID, UnicodeString EncodedFilePath)		NotificationE2E	Tile_ImageLoad_FileName	Informational		
-Microsoft-Windows-Immersive-Shell	2901	0	TDBN_CreateViewStart()	Start		TDBN_CreateView	Informational		
-Microsoft-Windows-Immersive-Shell	2902	0	TDBN_CreateViewStop()	Stop		TDBN_CreateView	Informational		
-Microsoft-Windows-Immersive-Shell	2904	0	TDBN_NotifyItem_AddModifyStart()	Start		TDBN_NotifyItem_AddModify	Informational		
-Microsoft-Windows-Immersive-Shell	2905	0	TDBN_NotifyItem_AddModifyStop()	Stop		TDBN_NotifyItem_AddModify	Informational		
-Microsoft-Windows-Immersive-Shell	2907	0	TDBN_RepositionStart()	Start		TDBN_Reposition	Informational		
-Microsoft-Windows-Immersive-Shell	2908	0	TDBN_RepositionStop()	Stop		TDBN_Reposition	Informational		
-Microsoft-Windows-Immersive-Shell	2910	0	TDBN_NotifyItem_DeleteStart()	Start		TDBN_NotifyItem_Delete	Informational		
-Microsoft-Windows-Immersive-Shell	2911	0	TDBN_NotifyItem_DeleteStop()	Stop		TDBN_NotifyItem_Delete	Informational		
-Microsoft-Windows-Immersive-Shell	2913	0	TDBN_NotifyHandleStart()	Start		TDBN_NotifyHandle	Informational		
-Microsoft-Windows-Immersive-Shell	2914	0	TDBN_NotifyHandleStop()	Stop		TDBN_NotifyHandle	Informational		
-Microsoft-Windows-Immersive-Shell	2916	0	TDBN_TimeDate_UpdateStart()	Start		TDBN_TimeDate_Update	Informational		
-Microsoft-Windows-Immersive-Shell	2917	0	TDBN_TimeDate_UpdateStop()	Stop		TDBN_TimeDate_Update	Informational		
-Microsoft-Windows-Immersive-Shell	2919	0	TDBN_ShutdownStart()	Start		TDBN_Shutdown	Informational		
-Microsoft-Windows-Immersive-Shell	2920	0	TDBN_ShutdownStop()	Stop		TDBN_Shutdown	Informational		
-Microsoft-Windows-Immersive-Shell	2922	0	TDBN_AudioFlyout_ShutdownStart()	Start		TDBN_AudioFlyout_Shutdown	Informational		
-Microsoft-Windows-Immersive-Shell	2923	0	TDBN_AudioFlyout_ShutdownStop()	Stop		TDBN_AudioFlyout_Shutdown	Informational		
 Microsoft-Windows-Immersive-Shell	2924	0	TDBN_AudioFlyout_DisplayStart()	Start		TDBN_AudioFlyout_Display	Informational		
-Microsoft-Windows-Immersive-Shell	2925	0	TDBN_ShowStart()	Start		TDBN_Show	Informational		
-Microsoft-Windows-Immersive-Shell	2926	0	TDBN_ShowStop()	Stop		TDBN_Show	Informational		
-Microsoft-Windows-Immersive-Shell	2928	0	TDBN_HideStart()	Start		TDBN_Hide	Informational		
-Microsoft-Windows-Immersive-Shell	2929	0	TDBN_HideStop()	Stop		TDBN_Hide	Informational		
 Microsoft-Windows-Immersive-Shell	2930	0	TDBN_AudioFlyout_DisplayStop()	Stop		TDBN_AudioFlyout_Display	Informational		
-Microsoft-Windows-Immersive-Shell	2931	0	TDBN_PrepareForShowStart()	Start		TDBN_PrepareForShow	Informational		
-Microsoft-Windows-Immersive-Shell	2932	0	TDBN_PrepareForShowStop()	Stop		TDBN_PrepareForShow	Informational		
-Microsoft-Windows-Immersive-Shell	2934	0	TDBN_PrepareForHideStart()	Start		TDBN_PrepareForHide	Informational		
-Microsoft-Windows-Immersive-Shell	2935	0	TDBN_PrepareForHideStop()	Stop		TDBN_PrepareForHide	Informational		
 Microsoft-Windows-Immersive-Shell	3000	0	Watermark_Register_Licensing_Event_Error(UInt32 Result)			Watermark_Register_Licensing_Event_Error	Error		
 Microsoft-Windows-Immersive-Shell	3001	0	Watermark_Window_Creation_Error(UInt32 Result)			Watermark_Window_Creation_Error	Error		
 Microsoft-Windows-Immersive-Shell	3002	0	Watermark_GenuineImage_Load_Error(UInt32 Result)			Watermark_GenuineImage_Load_Error	Error		
@@ -782,8 +317,6 @@ Microsoft-Windows-Immersive-Shell	3105	0	AutoPlay_DialogThreadStart()	Start		Aut
 Microsoft-Windows-Immersive-Shell	3106	0	AutoPlay_DialogThreadStop()	Stop		AutoPlay_DialogThread	Informational		
 Microsoft-Windows-Immersive-Shell	3107	0	AutoPlay_DialogNoContentThreadStart()	Start		AutoPlay_DialogNoContentThread	Informational		
 Microsoft-Windows-Immersive-Shell	3108	0	AutoPlay_DialogNoContentThreadStop()	Stop		AutoPlay_DialogNoContentThread	Informational		
-Microsoft-Windows-Immersive-Shell	3109	0	AutoPlay_Prompt_VisibleStart()	Start		AutoPlay_Prompt_Visible	Informational		
-Microsoft-Windows-Immersive-Shell	3110	0	AutoPlay_Prompt_VisibleStop()	Stop		AutoPlay_Prompt_Visible	Informational		
 Microsoft-Windows-Immersive-Shell	3111	0	AutoPlay_Broker_DeviceStart()	Start		AutoPlay_Broker_Device	Informational		
 Microsoft-Windows-Immersive-Shell	3112	0	AutoPlay_Broker_DeviceStop()	Stop		AutoPlay_Broker_Device	Informational		
 Microsoft-Windows-Immersive-Shell	3113	0	AutoPlay_Calculate_Response_TimeStart()	Start		AutoPlay_Calculate_Response_Time	Informational		
@@ -803,16 +336,8 @@ Microsoft-Windows-Immersive-Shell	3203	0	EdgeUi_Invoke_Discrete(UInt32 EdgeUiCom
 Microsoft-Windows-Immersive-Shell	3204	0	EdgeUi_Invoke_Continuous_ExtendedStart(UInt32 EdgeUiComponent)			EdgeUi_Invoke_Continuous_ExtendedStart	Informational		
 Microsoft-Windows-Immersive-Shell	3205	0	EdgeUi_Invoke_Mouse_HitSingleEdge(UInt32 EdgeUiComponent)			EdgeUi_Invoke_Mouse_HitSingleEdge	Informational		
 Microsoft-Windows-Immersive-Shell	3206	0	EdgeUi_Inputs_Layout_Complete()			EdgeUi_Inputs_Layout_Complete	Informational		
-Microsoft-Windows-Immersive-Shell	4001	0	AssociationLaunch_FileLaunchStart()	Start		AssociationLaunch_FileLaunch	Informational		
-Microsoft-Windows-Immersive-Shell	4002	0	AssociationLaunch_FileLaunchStop()	Stop		AssociationLaunch_FileLaunch	Informational		
-Microsoft-Windows-Immersive-Shell	4004	0	AssociationLaunch_ProtocolLaunchStart()	Start		AssociationLaunch_ProtocolLaunch	Informational		
-Microsoft-Windows-Immersive-Shell	4005	0	AssociationLaunch_ProtocolLaunchStop()	Stop		AssociationLaunch_ProtocolLaunch	Informational		
 Microsoft-Windows-Immersive-Shell	4007	0	AssociationLaunch_ServerInitializationStart()	Start		AssociationLaunch_ServerInitialization	Informational		
 Microsoft-Windows-Immersive-Shell	4008	0	AssociationLaunch_ServerInitializationStop()	Stop		AssociationLaunch_ServerInitialization	Informational		
-Microsoft-Windows-Immersive-Shell	4011	0	AssociationLaunch_FileLaunch_OpenWithStart()	Start		AssociationLaunch_FileLaunch_OpenWith	Informational		
-Microsoft-Windows-Immersive-Shell	4012	0	AssociationLaunch_FileLaunch_OpenWithStop(UInt32 HRESULT)	Stop		AssociationLaunch_FileLaunch_OpenWith	Informational		
-Microsoft-Windows-Immersive-Shell	4013	0	AssociationLaunch_ProtocolLaunch_OpenWithStart()	Start		AssociationLaunch_ProtocolLaunch_OpenWith	Informational		
-Microsoft-Windows-Immersive-Shell	4014	0	AssociationLaunch_ProtocolLaunch_OpenWithStop(UInt32 HRESULT)	Stop		AssociationLaunch_ProtocolLaunch_OpenWith	Informational		
 Microsoft-Windows-Immersive-Shell	4015	0	AssociationLaunch_FileLaunch_UnsupportedFileExtension(UnicodeString UriSchemeOrFileExtension)			AssociationLaunch_FileLaunch_UnsupportedFileExtension	Error		
 Microsoft-Windows-Immersive-Shell	4016	0	AssociationLaunch_FileLaunch_MissingFileExtension()			AssociationLaunch_FileLaunch_MissingFileExtension	Error		
 Microsoft-Windows-Immersive-Shell	4017	0	AssociationLaunch_FileLaunch_DesktopAppsDisabled()			AssociationLaunch_FileLaunch_DesktopAppsDisabled	Error		
@@ -823,106 +348,21 @@ Microsoft-Windows-Immersive-Shell	4021	0	AssociationLaunch_UriLaunch_MissingFile
 Microsoft-Windows-Immersive-Shell	4022	0	AssociationLaunch_UriLaunch_LocalZoneBlocked(UnicodeString UriSchemeOrFileExtension)			AssociationLaunch_UriLaunch_LocalZoneBlocked	Error		
 Microsoft-Windows-Immersive-Shell	4023	0	AssociationLaunch_UriLaunch_MissingIntranetCapability(UnicodeString UriSchemeOrFileExtension)			AssociationLaunch_UriLaunch_MissingIntranetCapability	Error		
 Microsoft-Windows-Immersive-Shell	4024	0	AssociationLaunch_UriLaunch_UntrustedFileBlocked(UnicodeString UriSchemeOrFileExtension)			AssociationLaunch_UriLaunch_UntrustedFileBlocked	Error		
-Microsoft-Windows-Immersive-Shell	4200	0	Tickle_Cache_EntryAddedStart(UnicodeString AppID)	Start		Tickle_Cache_EntryAdded	Informational		
-Microsoft-Windows-Immersive-Shell	4201	0	Tickle_Cache_EntryAddedStop(UnicodeString EntryIDString, UInt32 EntryID, UInt32 Result)	Stop		Tickle_Cache_EntryAdded	Informational		
-Microsoft-Windows-Immersive-Shell	4206	0	Tickle_Cache_IndexExpired(UInt32 EntryID, UInt32 Index)			Tickle_Cache_IndexExpired	Informational		
-Microsoft-Windows-Immersive-Shell	4208	0	Tickle_Cache_PaintFromCacheStart(UnicodeString AppID, UInt32 NotificationID)	Start		Tickle_Cache_PaintFromCache	Informational		
-Microsoft-Windows-Immersive-Shell	4209	0	Tickle_Cache_PaintFromCacheStop(UnicodeString AppID, UInt32 NotificationID, UInt32 EntryID, UInt32 Result)	Stop		Tickle_Cache_PaintFromCache	Informational		
-Microsoft-Windows-Immersive-Shell	4210	0	Tickle_Cache_SetFreezeAutoTickleStart(UInt32 EntryID)	Start		Tickle_Cache_SetFreezeAutoTickle	Informational		
-Microsoft-Windows-Immersive-Shell	4211	0	Tickle_Cache_SetFreezeAutoTickleStop(UInt32 EntryID, UInt32 Result)	Stop		Tickle_Cache_SetFreezeAutoTickle	Informational		
-Microsoft-Windows-Immersive-Shell	4212	0	TileDataProvider_UpdateTickleTile(UnicodeString AppID, UInt32 NotificationID)			TileDataProvider_UpdateTickleTile	Informational		
-Microsoft-Windows-Immersive-Shell	4214	0	Tickle_Cache_CopyToCacheStart(UnicodeString AppID, UInt32 NotificationID)	Start		Tickle_Cache_CopyToCache	Informational		
-Microsoft-Windows-Immersive-Shell	4215	0	Tickle_Cache_CopyToCacheStop(UnicodeString EntryIDString, UInt32 NotificationId, UInt32 EntryID, UInt32 Index)	Stop		Tickle_Cache_CopyToCache	Informational		
-Microsoft-Windows-Immersive-Shell	4300	0	ImmersiveMonitorAddedStart(UInt32 MonitorIdentity)	Start		ImmersiveMonitorAdded	Informational		
-Microsoft-Windows-Immersive-Shell	4301	0	ImmersiveMonitorAddedStop(UInt32 MonitorIdentity)	Stop		ImmersiveMonitorAdded	Informational		
-Microsoft-Windows-Immersive-Shell	4302	0	ImmersiveMonitorAddedStart4302(UInt32 MonitorIdentity)	Start		ImmersiveMonitorAdded	Informational		
-Microsoft-Windows-Immersive-Shell	4303	0	ImmersiveMonitorAddedStop4303(UInt32 MonitorIdentity)	Stop		ImmersiveMonitorAdded	Informational		
+Microsoft-Windows-Immersive-Shell	4302	0	ImmersiveMonitorAddedStart(UInt32 MonitorIdentity)	Start		ImmersiveMonitorAdded	Informational		
 Microsoft-Windows-Immersive-Shell	4312	0	ImmersiveMonitorHandleDisplayChangeStart(UInt32 MonitorIdentity)	Start		ImmersiveMonitorHandleDisplayChange	Informational		
 Microsoft-Windows-Immersive-Shell	4313	0	ImmersiveMonitorHandleDisplayChangeStop(UInt32 MonitorIdentity)	Stop		ImmersiveMonitorHandleDisplayChange	Informational		
-Microsoft-Windows-Immersive-Shell	4314	0	ImmersiveMonitorHandleDisplayChangeStart4314(UInt32 MonitorIdentity)	Start		ImmersiveMonitorHandleDisplayChange	Informational		
-Microsoft-Windows-Immersive-Shell	4315	0	ImmersiveMonitorHandleDisplayChangeStop4315(UInt32 MonitorIdentity)	Stop		ImmersiveMonitorHandleDisplayChange	Informational		
 Microsoft-Windows-Immersive-Shell	4316	0	ImmersiveMonitorConnectObjectStart(UInt32 MonitorIdentity)	Start		ImmersiveMonitorConnectObject	Informational		
 Microsoft-Windows-Immersive-Shell	4317	0	ImmersiveMonitorConnectObjectStop(UInt32 MonitorIdentity)	Stop		ImmersiveMonitorConnectObject	Informational		
 Microsoft-Windows-Immersive-Shell	4318	0	ImmersiveMonitorReconcileMonitorsStart()	Start		ImmersiveMonitorReconcileMonitors	Informational		
 Microsoft-Windows-Immersive-Shell	4319	0	ImmersiveMonitorReconcileMonitorsStop()	Stop		ImmersiveMonitorReconcileMonitors	Informational		
 Microsoft-Windows-Immersive-Shell	4320	0	ImmersiveMonitorReconcileMonitors(UInt32 Result)			ImmersiveMonitorReconcileMonitors	Error		
-Microsoft-Windows-Immersive-Shell	4321	0	ImmersiveMonitorSetStart()	Start		ImmersiveMonitorSet	Informational		
-Microsoft-Windows-Immersive-Shell	4322	0	ImmersiveMonitorSetStop()	Stop		ImmersiveMonitorSet	Informational		
-Microsoft-Windows-Immersive-Shell	4323	0	ImmersiveMonitorMoveStart()	Start		ImmersiveMonitorMove	Informational		
-Microsoft-Windows-Immersive-Shell	4324	0	ImmersiveMonitorMoveStop()	Stop		ImmersiveMonitorMove	Informational		
 Microsoft-Windows-Immersive-Shell	4325	0	ImmersiveMonitorCreatePerMonitorComponents(UInt32 MonitorIdentity, Pointer HMonitor, UInt32 Left, UInt32 Top)			ImmersiveMonitorCreatePerMonitorComponents	Informational		
 Microsoft-Windows-Immersive-Shell	4326	0	ImmersiveMonitorDestroyPerMonitorComponents(UInt32 MonitorIdentity, Pointer HMonitor, UInt32 Left, UInt32 Top)			ImmersiveMonitorDestroyPerMonitorComponents	Informational		
-Microsoft-Windows-Immersive-Shell	4500	0	Semantic_Zoom_ChangeStart(Float PreviousSemanticFactor, Float NewSemanticFactor)	Start		Semantic_Zoom_Change	Informational		
-Microsoft-Windows-Immersive-Shell	4501	0	Semantic_Zoom_ChangeStop()	Stop		Semantic_Zoom_Change	Informational		
-Microsoft-Windows-Immersive-Shell	4502	0	Zoom_Factor_Set(Float PreviousZoomFactor, Float NewZoomFactor, Float panX, Float panY, Float centerX, Float centerY, Boolean isInertia)			Zoom_Factor_Set	Informational		
-Microsoft-Windows-Immersive-Shell	4503	0	PerfTrack_Semantic_Swap_Start(UInt32 RealizedTiles, UInt32 VisibleTiles, UInt32 IsZoomIn)	Start		PerfTrack_Semantic_Swap_Start	Informational		
-Microsoft-Windows-Immersive-Shell	4504	0	PerfTrack_Semantic_Swap_Stop(UInt32 RealizedTiles, UInt32 VisibleTiles, UInt32 IsZoomIn)	Stop		PerfTrack_Semantic_Swap_Stop	Informational		
-Microsoft-Windows-Immersive-Shell	4612	0	StartView_Cache_GetLogoBitmapStart(UInt32 CacheID)	Start		StartView_Cache_GetLogoBitmap	Informational		
-Microsoft-Windows-Immersive-Shell	4613	0	StartView_Cache_GetLogoBitmapStop(UInt32 CacheID, Boolean Valid, UInt32 HRESULT)	Stop		StartView_Cache_GetLogoBitmap	Informational		
-Microsoft-Windows-Immersive-Shell	4614	0	StartView_Cache_CopyToCacheStart(UnicodeString AppID, UInt32 NotificationID)	Start		StartView_Cache_CopyToCache	Informational		
-Microsoft-Windows-Immersive-Shell	4615	0	StartView_Cache_CopyToCacheStop(UnicodeString AppID, UInt32 NotificationID, UInt32 CacheID, UInt32 HRESULT)	Stop		StartView_Cache_CopyToCache	Informational		
-Microsoft-Windows-Immersive-Shell	4616	0	StartView_Cache_CopyBetweenCachesStart(UnicodeString AppID, UInt32 NotificationID)	Start		StartView_Cache_CopyBetweenCaches	Informational		
-Microsoft-Windows-Immersive-Shell	4617	0	StartView_Cache_CopyBetweenCachesStop(UnicodeString AppID, UInt32 NotificationID, UInt32 SrcID, UInt32 DestID)	Stop		StartView_Cache_CopyBetweenCaches	Informational		
-Microsoft-Windows-Immersive-Shell	4618	0	StartView_Cache_CopyToCachesStart(UnicodeString AppID, UInt32 NotificationID)	Start		StartView_Cache_CopyToCaches	Informational		
-Microsoft-Windows-Immersive-Shell	4619	0	StartView_Cache_CopyToCachesStop(UnicodeString ApplicationID, UInt32 NotificationID, UInt32 HRESULT)	Stop		StartView_Cache_CopyToCaches	Informational		
-Microsoft-Windows-Immersive-Shell	4620	0	StartView_Cache_AddEntryStart(UnicodeString AppID)	Start		StartView_Cache_AddEntry	Informational		
-Microsoft-Windows-Immersive-Shell	4621	0	StartView_Cache_AddEntryStop(UnicodeString AppID, UInt32 CacheID, UInt32 HRESULT)	Stop		StartView_Cache_AddEntry	Informational		
-Microsoft-Windows-Immersive-Shell	4622	0	StartView_Cache_GetEntryIDStart(UnicodeString AppID)	Start		StartView_Cache_GetEntryID	Informational		
-Microsoft-Windows-Immersive-Shell	4623	0	StartView_Cache_GetEntryIDStop(UnicodeString AppID, UInt32 CacheID, UInt32 HRESULT)	Stop		StartView_Cache_GetEntryID	Informational		
-Microsoft-Windows-Immersive-Shell	4624	0	StartView_Cache_UpdateDataCRCStart(UInt32 CacheID)	Start		StartView_Cache_UpdateDataCRC	Informational		
-Microsoft-Windows-Immersive-Shell	4625	0	StartView_Cache_UpdateDataCRCStop(UInt32 CacheID, UInt32 HRESULT, UInt64 CRCBefore, UInt64 CRCAfter)	Stop		StartView_Cache_UpdateDataCRC	Informational		
-Microsoft-Windows-Immersive-Shell	4626	0	StartView_Cache_ResetDataStart(UInt32 CacheID)	Start		StartView_Cache_ResetData	Informational		
-Microsoft-Windows-Immersive-Shell	4627	0	StartView_Cache_ResetDataStop(UInt32 CacheID, UInt32 HRESULT)	Stop		StartView_Cache_ResetData	Informational		
-Microsoft-Windows-Immersive-Shell	4628	0	StartView_Cache_GetBitmapStart(UInt32 CacheID)	Start		StartView_Cache_GetBitmap	Informational		
-Microsoft-Windows-Immersive-Shell	4629	0	StartView_Cache_GetBitmapStop(UInt32 CacheID, Boolean Valid, UInt32 HRESULT)	Stop		StartView_Cache_GetBitmap	Informational		
-Microsoft-Windows-Immersive-Shell	4630	0	Tiles_Cache_CreateDataFileStart(UnicodeString Filename)	Start		Tiles_Cache_CreateDataFile	Informational		
-Microsoft-Windows-Immersive-Shell	4631	0	Tiles_Cache_CreateDataFileStop(UInt32 HRESULT)	Stop		Tiles_Cache_CreateDataFile	Informational		
-Microsoft-Windows-Immersive-Shell	4632	0	Tiles_Cache_OpenDataFileStart(UnicodeString Filename)	Start		Tiles_Cache_OpenDataFile	Informational		
-Microsoft-Windows-Immersive-Shell	4633	0	Tiles_Cache_OpenDataFileStop(UInt32 HRESULT)	Stop		Tiles_Cache_OpenDataFile	Informational		
-Microsoft-Windows-Immersive-Shell	4634	0	Tiles_Cache_TestDataCRCStart(UInt32 CacheID)	Start		Tiles_Cache_TestDataCRC	Informational		
-Microsoft-Windows-Immersive-Shell	4635	0	Tiles_Cache_TestDataCRCStop(UInt32 CacheID, UInt32 HRESULT)	Stop		Tiles_Cache_TestDataCRC	Informational		
-Microsoft-Windows-Immersive-Shell	4636	0	Tiles_Cache_HeaderFull(UInt32 HRESULT)		NotificationE2E	Tiles_Cache_HeaderFull	Error		
-Microsoft-Windows-Immersive-Shell	4637	0	Tiles_Cache_DiskFull(UInt32 AttemptedFileSize, UInt32 HRESULT)		NotificationE2E	Tiles_Cache_DiskFull	Error		
-Microsoft-Windows-Immersive-Shell	4638	0	Tiles_Cache_ReorderTaskFiredStart()	Start		Tiles_Cache_ReorderTaskFired	Informational		
-Microsoft-Windows-Immersive-Shell	4639	0	Tiles_Cache_ReorderTaskFiredStop(UInt32 HRESULT)	Stop		Tiles_Cache_ReorderTaskFired	Informational		
-Microsoft-Windows-Immersive-Shell	4640	0	Tiles_Cache_IdleTaskCreateStart()	Start		Tiles_Cache_IdleTaskCreate	Informational		
-Microsoft-Windows-Immersive-Shell	4641	0	Tiles_Cache_IdleTaskCreateStop(UInt32 HRESULT)	Stop		Tiles_Cache_IdleTaskCreate	Informational		
-Microsoft-Windows-Immersive-Shell	4642	0	Tiles_Cache_IdleTaskUpdateStart(Boolean Valid)	Start		Tiles_Cache_IdleTaskUpdate	Informational		
-Microsoft-Windows-Immersive-Shell	4643	0	Tiles_Cache_IdleTaskUpdateStop(UInt32 HRESULT)	Stop		Tiles_Cache_IdleTaskUpdate	Informational		
-Microsoft-Windows-Immersive-Shell	4644	0	StartView_Cache_PreLoadStart(UInt32 CountIDs)	Start		StartView_Cache_PreLoad	Informational		
-Microsoft-Windows-Immersive-Shell	4645	0	StartView_Cache_PreLoadStop(UInt32 HRESULT)	Stop		StartView_Cache_PreLoad	Informational		
-Microsoft-Windows-Immersive-Shell	4646	0	Tickle_Cache_PreLoadStart(UInt32 CountIDs)	Start		Tickle_Cache_PreLoad	Informational		
-Microsoft-Windows-Immersive-Shell	4647	0	Tickle_Cache_PreLoadStop(UInt32 HRESULT)	Stop		Tickle_Cache_PreLoad	Informational		
-Microsoft-Windows-Immersive-Shell	4650	0	Logo_Cache_GetLogoBitmapStart(UInt32 CacheID)	Start		Logo_Cache_GetLogoBitmap	Informational		
-Microsoft-Windows-Immersive-Shell	4651	0	Logo_Cache_GetLogoBitmapStop(UInt32 CacheID, Boolean Valid, UInt32 HRESULT)	Stop		Logo_Cache_GetLogoBitmap	Informational		
-Microsoft-Windows-Immersive-Shell	4652	0	Logo_Cache_AddEntryStart(UnicodeString AppID)	Start		Logo_Cache_AddEntry	Informational		
-Microsoft-Windows-Immersive-Shell	4653	0	Logo_Cache_AddEntryStop(UnicodeString AppID, UInt32 CacheID, UInt32 HRESULT)	Stop		Logo_Cache_AddEntry	Informational		
-Microsoft-Windows-Immersive-Shell	4654	0	Logo_Cache_GetEntryIDStart(UnicodeString AppID)	Start		Logo_Cache_GetEntryID	Informational		
-Microsoft-Windows-Immersive-Shell	4655	0	Logo_Cache_GetEntryIDStop(UnicodeString AppID, UInt32 CacheID, UInt32 HRESULT)	Stop		Logo_Cache_GetEntryID	Informational		
-Microsoft-Windows-Immersive-Shell	4656	0	Logo_Cache_UpdateDataCRCStart(UInt32 CacheID)	Start		Logo_Cache_UpdateDataCRC	Informational		
-Microsoft-Windows-Immersive-Shell	4657	0	Logo_Cache_UpdateDataCRCStop(UInt32 CacheID, UInt32 HRESULT, UInt64 CRCBefore, UInt64 CRCAfter)	Stop		Logo_Cache_UpdateDataCRC	Informational		
-Microsoft-Windows-Immersive-Shell	4658	0	Logo_Cache_PreLoadStart(UInt32 CountIDs)	Start		Logo_Cache_PreLoad	Informational		
-Microsoft-Windows-Immersive-Shell	4659	0	Logo_Cache_PreLoadStop(UInt32 HRESULT)	Stop		Logo_Cache_PreLoad	Informational		
-Microsoft-Windows-Immersive-Shell	4660	0	Tiles_Cache_UpdateEntryCRCStart(UInt32 CacheID)	Start		Tiles_Cache_UpdateEntryCRC	Informational		
-Microsoft-Windows-Immersive-Shell	4661	0	Tiles_Cache_UpdateEntryCRCStop(UInt32 CacheID, UInt32 HRESULT, UInt64 CRCBefore, UInt64 CRCAfter)	Stop		Tiles_Cache_UpdateEntryCRC	Informational		
-Microsoft-Windows-Immersive-Shell	4662	0	Tiles_Cache_TestEntryCRCStart(UInt32 CacheID)	Start		Tiles_Cache_TestEntryCRC	Informational		
-Microsoft-Windows-Immersive-Shell	4663	0	Tiles_Cache_TestEntryCRCStop(UInt32 CacheID, UInt32 HRESULT)	Stop		Tiles_Cache_TestEntryCRC	Informational		
-Microsoft-Windows-Immersive-Shell	4664	0	StartView_Cache_PaintToBitmapStart(UInt32 CacheID, Boolean Valid, UInt32 Width, UInt32 Height)	Start		StartView_Cache_PaintToBitmap	Informational		
-Microsoft-Windows-Immersive-Shell	4665	0	StartView_Cache_PaintToBitmapStop(UInt32 CacheID, UInt32 HRESULT)	Stop		StartView_Cache_PaintToBitmap	Informational		
-Microsoft-Windows-Immersive-Shell	4666	0	Tiles_Cache_Manager_CreateInstanceStart(UInt32 CacheID, Boolean Valid)	Start		Tiles_Cache_Manager_CreateInstance	Informational		
-Microsoft-Windows-Immersive-Shell	4667	0	Tiles_Cache_Manager_CreateInstanceStop(UInt32 CacheID, Boolean Valid)	Stop		Tiles_Cache_Manager_CreateInstance	Informational		
 Microsoft-Windows-Immersive-Shell	4668	0	Tiles_Cache_Data_CRC_Failure(UInt32 EntryID)		NotificationE2E	Tiles_Cache_Data_CRC_Failure	Error		
 Microsoft-Windows-Immersive-Shell	4669	0	Tiles_Cache_Entry_CRC_Failure(UInt32 EntryID)		NotificationE2E	Tiles_Cache_Entry_CRC_Failure	Error		
-Microsoft-Windows-Immersive-Shell	4670	0	StartView_Cache_UsePreviousCloudScaleFactor(UInt32 CacheID, UInt32 ScaleFactor)			StartView_Cache_UsePreviousCloudScaleFactor	Informational		
-Microsoft-Windows-Immersive-Shell	4671	0	Tickle_Cache_UsePreviousCloudScaleFactor(UInt32 CacheID, UInt32 Index, UInt32 ScaleFactor)			Tickle_Cache_UsePreviousCloudScaleFactor	Informational		
-Microsoft-Windows-Immersive-Shell	4672	0	Tiles_Cache_ReorderFailure(UInt32 HRESULT)			Tiles_Cache_ReorderFailure	Error		
-Microsoft-Windows-Immersive-Shell	4673	0	Tiles_Cache_Logo_ReorderFailure(UInt32 HRESULT)			Tiles_Cache_Logo_ReorderFailure	Error		
-Microsoft-Windows-Immersive-Shell	4674	0	Tiles_Cache_InOrderCheck(UInt32 CacheType, Boolean NeedsReorder)			Tiles_Cache_InOrderCheck	Informational		
-Microsoft-Windows-Immersive-Shell	4675	0	Tiles_Cache_Logo_Precaching(UInt32 HRESULT, UInt32 NumberOfLogosPrecached, UInt32 NumberOfAppsExamined)			Tiles_Cache_Logo_Precaching	Informational		
-Microsoft-Windows-Immersive-Shell	4676	0	Tiles_Cache_Start_Timer_To_Enable_Idle_Task(UInt32 Reason)			Tiles_Cache_Start_Timer_To_Enable_Idle_Task	Informational		
 Microsoft-Windows-Immersive-Shell	4677	0	Tiles_Cache_Remap_Failed(UInt32 HRESULT)			Tiles_Cache_Remap_Failed	Error		
-Microsoft-Windows-Immersive-Shell	5901	1	PerfTrack_AppActivation_ActivateStart_V1(UnicodeString AppID, UnicodeString PackageMoniker, UnicodeString SqmableContractID, UnicodeString ExeName, UInt32 PreviousExecutionState)	Start	keyword_200000000000	PerfTrack_AppActivation_Activate	Informational		
-Microsoft-Windows-Immersive-Shell	5902	1	PerfTrack_AppActivation_ActivateStop_V1(UnicodeString AppID, UnicodeString PackageMoniker, UnicodeString SqmableContractID, UnicodeString ExeName, UInt32 PreviousExecutionState)	Stop	keyword_200000000000	PerfTrack_AppActivation_Activate	Informational		
+Microsoft-Windows-Immersive-Shell	5901	1	PerfTrack_AppActivation_ActivateStart_V1(UnicodeString AppID, UnicodeString PackageMoniker, UnicodeString SqmableContractID, UnicodeString ExeName, UInt32 PreviousExecutionState)	Start		PerfTrack_AppActivation_Activate	Informational		
+Microsoft-Windows-Immersive-Shell	5902	1	PerfTrack_AppActivation_ActivateStop_V1(UnicodeString AppID, UnicodeString PackageMoniker, UnicodeString SqmableContractID, UnicodeString ExeName, UInt32 PreviousExecutionState)	Stop		PerfTrack_AppActivation_Activate	Informational		
 Microsoft-Windows-Immersive-Shell	5903	0	AppActivation_ActivateApplicationForContractStart()	Start		AppActivation_ActivateApplicationForContract	Informational		
 Microsoft-Windows-Immersive-Shell	5904	0	AppActivation_ActivateApplicationForContractStop()	Stop		AppActivation_ActivateApplicationForContract	Informational		
 Microsoft-Windows-Immersive-Shell	5905	0	AppActivation_ActivateApplicationForContractByAppIDStart()	Start		AppActivation_ActivateApplicationForContractByAppID	Informational		
@@ -937,7 +377,6 @@ Microsoft-Windows-Immersive-Shell	5917	0	AppActivation_SplashScreenFactoried(UIn
 Microsoft-Windows-Immersive-Shell	5919	0	AppActivation_PackageActivationSettings(UInt32 PackageActivationSettings)			AppActivation_PackageActivationSettings	Informational		
 Microsoft-Windows-Immersive-Shell	5921	0	AppActivation_ErrorDialogDisplayed(UnicodeString AppId, UInt32 ErrorCode, GUID DialogId)			AppActivation_ErrorDialogDisplayed	Informational		
 Microsoft-Windows-Immersive-Shell	5922	0	AppActivation_ErrorDialogDismissed(UnicodeString AppId, UInt32 ErrorCode, GUID DialogId, UInt32 DismissMethod)			AppActivation_ErrorDialogDismissed	Informational		
-Microsoft-Windows-Immersive-Shell	5923	0	AppActivation_LicenseRemediation(UnicodeString PackageFullName, UInt32 ErrorCode, UInt32 PackageOrigin, UInt32 TamperLicenseError, Boolean PreviouslyAttempted)			AppActivation_LicenseRemediation	Informational		
 Microsoft-Windows-Immersive-Shell	5924	0	AppActivation_RPCTimeout(UnicodeString AppId, UInt32 TimeOutPeriod)			AppActivation_RPCTimeout	Informational		
 Microsoft-Windows-Immersive-Shell	5925	0	AppActivation_RPCTimeout5925(UnicodeString AppId)			AppActivation_RPCTimeout	Informational		
 Microsoft-Windows-Immersive-Shell	5926	0	AppActivation_RPCTimeout5926(UnicodeString AppId)			AppActivation_RPCTimeout	Informational		
@@ -952,7 +391,6 @@ Microsoft-Windows-Immersive-Shell	5953	0	AppActivation_Log_MultiplePackages(Unic
 Microsoft-Windows-Immersive-Shell	5954	0	AppActivation_Log_UACDisabled(UnicodeString AppId, UnicodeString ContractId)			AppActivation_Log_UACDisabled	Error		
 Microsoft-Windows-Immersive-Shell	5955	0	AppActivation_Log_FullAdmin(UnicodeString AppId, UnicodeString ContractId)			AppActivation_Log_FullAdmin	Error		
 Microsoft-Windows-Immersive-Shell	5956	0	AppActivation_Log_Elevated(UnicodeString AppId, UnicodeString ContractId)			AppActivation_Log_Elevated	Error		
-Microsoft-Windows-Immersive-Shell	5957	0	AppActivation_Log_MonitorResolution(UnicodeString AppId, UnicodeString ContractId)			AppActivation_Log_MonitorResolution	Error		
 Microsoft-Windows-Immersive-Shell	5958	0	AppActivation_Log_DWMDisabled(UnicodeString AppId, UnicodeString ContractId)			AppActivation_Log_DWMDisabled	Error		
 Microsoft-Windows-Immersive-Shell	5959	0	AppActivation_Log_TimedOut(UnicodeString AppId, UnicodeString ContractId)			AppActivation_Log_TimedOut	Error		
 Microsoft-Windows-Immersive-Shell	5960	0	AppActivation_Log_Remediation(UnicodeString AppId, UnicodeString ContractId, UInt32 ErrorCode, UInt32 PackageState)			AppActivation_Log_Remediation	Error		
@@ -963,8 +401,6 @@ Microsoft-Windows-Immersive-Shell	5964	0	AppActivation_Log_AppManagerNotRunning(
 Microsoft-Windows-Immersive-Shell	5965	0	AppActivation_AppSpinupStep(UnicodeString AppId, UnicodeString ContractId, UInt32 ErrorCode)			AppActivation_AppSpinupStep	Informational		
 Microsoft-Windows-Immersive-Shell	5966	0	AppActivation_AppSpinupStep5966(UnicodeString AppId, UnicodeString ContractId, UInt32 ErrorCode)			AppActivation_AppSpinupStep	Informational		
 Microsoft-Windows-Immersive-Shell	5967	0	AppActivation_AppSpinupStep5967(UnicodeString AppId, UnicodeString ContractId, UInt32 ProcessId)			AppActivation_AppSpinupStep	Informational		
-Microsoft-Windows-Immersive-Shell	5968	0	AppActivation_DualModeFixup(UnicodeString ActivatedAppId, UnicodeString DefaultBrowserAppId)			AppActivation_DualModeFixup	Informational		
-Microsoft-Windows-Immersive-Shell	5969	0	AppActivation_DualModeFixup5969(UnicodeString AppId, UInt32 ErrorCode)			AppActivation_DualModeFixup	Informational		
 Microsoft-Windows-Immersive-Shell	5970	0	AppActivation_Log_RemediationBinaryInformation(UnicodeString AppId, UnicodeString ContractId, UInt32 ErrorCode, UnicodeString FailedBinary)			AppActivation_Log_RemediationBinaryInformation	Error		
 Microsoft-Windows-Immersive-Shell	5971	0	AppActivation_Log_RemediationBinaryInformation5971(UnicodeString AppId, UnicodeString ContractId, UInt32 ErrorCode, UnicodeString FailedBinary)			AppActivation_Log_RemediationBinaryInformation	Error		
 Microsoft-Windows-Immersive-Shell	5972	0	AppActivation_Log_RemediationBinaryInformation5972(UnicodeString AppId, UnicodeString ContractId, UInt32 ErrorCode, UnicodeString FailedBinary)			AppActivation_Log_RemediationBinaryInformation	Error		
@@ -986,37 +422,6 @@ Microsoft-Windows-Immersive-Shell	5987	0	AppActivation_Log_GenericFailure5987(Un
 Microsoft-Windows-Immersive-Shell	5988	0	AppActivation_Log_GenericFailure5988(UnicodeString AppId, UnicodeString ContractId, Int32 ErrorCode)			AppActivation_Log_GenericFailure	Error		
 Microsoft-Windows-Immersive-Shell	5989	0	AppActivation_Log_GenericFailure5989(UnicodeString AppId, UnicodeString ContractId, Int32 ErrorCode)			AppActivation_Log_GenericFailure	Error		
 Microsoft-Windows-Immersive-Shell	5990	0	AppActivation_Log_GenericFailure5990(UnicodeString AppId, UnicodeString ContractId, Int32 ErrorCode)			AppActivation_Log_GenericFailure	Error		
-Microsoft-Windows-Immersive-Shell	6010	0	SearchPane_WindowCreationStart()	Start		SearchPane_WindowCreation	Informational		
-Microsoft-Windows-Immersive-Shell	6011	0	SearchPane_WindowCreationStop()	Stop		SearchPane_WindowCreation	Informational		
-Microsoft-Windows-Immersive-Shell	6012	0	SearchPane_ShowStart()	Start		SearchPane_Show	Informational		
-Microsoft-Windows-Immersive-Shell	6013	0	SearchPane_ShowStop()	Stop		SearchPane_Show	Informational		
-Microsoft-Windows-Immersive-Shell	6014	0	SearchPane_HideStart()	Start		SearchPane_Hide	Informational		
-Microsoft-Windows-Immersive-Shell	6015	0	SearchPane_HideStop()	Stop		SearchPane_Hide	Informational		
-Microsoft-Windows-Immersive-Shell	6020	0	SearchPane_QueryChanged()			SearchPane_QueryChanged	Informational		
-Microsoft-Windows-Immersive-Shell	6021	0	SearchPane_SubmitSearch()			SearchPane_SubmitSearch	Informational		
-Microsoft-Windows-Immersive-Shell	6022	0	SearchPane_SearchButton_Pressed()			SearchPane_SearchButton_Pressed	Informational		
-Microsoft-Windows-Immersive-Shell	6023	0	SearchPane_ClearButton_Pressed()			SearchPane_ClearButton_Pressed	Informational		
-Microsoft-Windows-Immersive-Shell	6024	0	SearchPane_SearchBoxFocused()			SearchPane_SearchBoxFocused	Informational		
-Microsoft-Windows-Immersive-Shell	6025	0	SearchPane_ResultSuggestionInvoked()			SearchPane_ResultSuggestionInvoked	Informational		
-Microsoft-Windows-Immersive-Shell	6026	0	SearchPane_SystemScopeClicked()			SearchPane_SystemScopeClicked	Informational		
-Microsoft-Windows-Immersive-Shell	6050	0	SearchPane_TypeAhead_SetSuggestionsStart()	Start		SearchPane_TypeAhead_SetSuggestions	Informational		
-Microsoft-Windows-Immersive-Shell	6051	0	SearchPane_TypeAhead_SetSuggestionsStop()	Stop		SearchPane_TypeAhead_SetSuggestions	Informational		
-Microsoft-Windows-Immersive-Shell	6052	0	SearchPane_TypeAhead_AppendSuggestionsStart()	Start		SearchPane_TypeAhead_AppendSuggestions	Informational		
-Microsoft-Windows-Immersive-Shell	6053	0	SearchPane_TypeAhead_AppendSuggestionsStop()	Stop		SearchPane_TypeAhead_AppendSuggestions	Informational		
-Microsoft-Windows-Immersive-Shell	6060	0	SearchPane_AppList_PopulateStart()	Start		SearchPane_AppList_Populate	Informational		
-Microsoft-Windows-Immersive-Shell	6061	0	SearchPane_AppList_PopulateStop()	Stop		SearchPane_AppList_Populate	Informational		
-Microsoft-Windows-Immersive-Shell	6070	0	SearchPane_Counts_CurrentView_Provided()			SearchPane_Counts_CurrentView_Provided	Informational		
-Microsoft-Windows-Immersive-Shell	6071	0	SearchPane_Counts_TasksCancelled()			SearchPane_Counts_TasksCancelled	Informational		
-Microsoft-Windows-Immersive-Shell	6072	0	SearchPane_Counts_Displayed()			SearchPane_Counts_Displayed	Informational		
-Microsoft-Windows-Immersive-Shell	6073	0	SearchPane_Counts_Cleared()			SearchPane_Counts_Cleared	Informational		
-Microsoft-Windows-Immersive-Shell	6080	0	SearchPane_Counts_Apps_TaskStart()	Start		SearchPane_Counts_Apps_Task	Informational		
-Microsoft-Windows-Immersive-Shell	6081	0	SearchPane_Counts_Apps_TaskStop()	Stop		SearchPane_Counts_Apps_Task	Informational		
-Microsoft-Windows-Immersive-Shell	6082	0	SearchPane_Counts_Settings_TaskStart()	Start		SearchPane_Counts_Settings_Task	Informational		
-Microsoft-Windows-Immersive-Shell	6083	0	SearchPane_Counts_Settings_TaskStop()	Stop		SearchPane_Counts_Settings_Task	Informational		
-Microsoft-Windows-Immersive-Shell	6084	0	SearchPane_Counts_Files_TaskStart()	Start		SearchPane_Counts_Files_Task	Informational		
-Microsoft-Windows-Immersive-Shell	6085	0	SearchPane_Counts_Files_TaskStop()	Stop		SearchPane_Counts_Files_Task	Informational		
-Microsoft-Windows-Immersive-Shell	6086	0	SearchPane_ClientInitializedStart()	Start		SearchPane_ClientInitialized	Informational		
-Microsoft-Windows-Immersive-Shell	6087	0	SearchPane_ClientInitializedStop()	Stop		SearchPane_ClientInitialized	Informational		
 Microsoft-Windows-Immersive-Shell	6200	0	AccessibilityDocking_GetAvailableSizeStart()	Start		AccessibilityDocking_GetAvailableSize	Informational		
 Microsoft-Windows-Immersive-Shell	6201	0	AccessibilityDocking_GetAvailableSizeStop()	Stop		AccessibilityDocking_GetAvailableSize	Informational		
 Microsoft-Windows-Immersive-Shell	6202	0	AccessibilityDocking_ReserveDockingSpaceStart()	Start		AccessibilityDocking_ReserveDockingSpace	Informational		
@@ -1027,22 +432,10 @@ Microsoft-Windows-Immersive-Shell	6206	0	AccessibilityDocking_UndockWindowStart(
 Microsoft-Windows-Immersive-Shell	6207	0	AccessibilityDocking_UndockWindowStop()	Stop		AccessibilityDocking_UndockWindow	Informational		
 Microsoft-Windows-Immersive-Shell	6208	0	AccessibilityDocking_QueryWorkAreaStart()	Start		AccessibilityDocking_QueryWorkArea	Informational		
 Microsoft-Windows-Immersive-Shell	6209	0	AccessibilityDocking_QueryWorkAreaStop()	Stop		AccessibilityDocking_QueryWorkArea	Informational		
-Microsoft-Windows-Immersive-Shell	6250	0	SplashScreen_ShownStart()	Start		SplashScreen_Shown	Informational		
-Microsoft-Windows-Immersive-Shell	6251	0	SplashScreen_ShownStop()	Stop		SplashScreen_Shown	Informational		
 Microsoft-Windows-Immersive-Shell	6252	0	SplashScreen_ImageLoadStart(UnicodeString FilePath)	Start		SplashScreen_ImageLoad	Informational		
 Microsoft-Windows-Immersive-Shell	6253	0	SplashScreen_ImageLoadStop()	Stop		SplashScreen_ImageLoad	Informational		
 Microsoft-Windows-Immersive-Shell	6256	0	SplashScreen_ActivationStart()	Start		SplashScreen_Activation	Informational		
 Microsoft-Windows-Immersive-Shell	6257	0	SplashScreen_ActivationStop()	Stop		SplashScreen_Activation	Informational		
-Microsoft-Windows-Immersive-Shell	6258	0	PerfTrack_SplashScreen_FirstResponseStart(UInt32 Key, UnicodeString AppId, UnicodeString PackageName, UnicodeString ContractId)	Start		PerfTrack_SplashScreen_FirstResponse	Informational		
-Microsoft-Windows-Immersive-Shell	6259	0	PerfTrack_SplashScreen_FirstResponseStop(UInt32 Key, UnicodeString AppId, UnicodeString PackageName, UnicodeString ContractId, UInt32 SplashScreenShown)	Stop		PerfTrack_SplashScreen_FirstResponse	Informational		
-Microsoft-Windows-Immersive-Shell	6260	0	PerfTrack_SplashScreen_AppShownStart(UInt32 Key, UnicodeString AppId, UnicodeString PackageName, UnicodeString ContractId)	Start	keyword_200000000000	PerfTrack_SplashScreen_AppShown	Informational		
-Microsoft-Windows-Immersive-Shell	6261	0	PerfTrack_SplashScreen_AppShownStop(UInt32 Key, UnicodeString AppId, UnicodeString PackageName, UnicodeString ContractId, UInt32 SplashScreenShown)	Stop	keyword_200000000000	PerfTrack_SplashScreen_AppShown	Informational		
-Microsoft-Windows-Immersive-Shell	6262	0	SplashScreen_LoadContent(UnicodeString ImagePath, UnicodeString AppName, UInt32 Color, Boolean ReadError)			SplashScreen_LoadContent	Informational		
-Microsoft-Windows-Immersive-Shell	6264	0	SplashScreen_AttemptSwitch(HexInt32 HRESULT, UnicodeString AppId, UInt32 Key)			SplashScreen_AttemptSwitch	Informational		
-Microsoft-Windows-Immersive-Shell	6265	0	PerfTrack_SplashScreen_AppShownStop6265(UInt32 Key, UnicodeString AppId, UnicodeString PackageName, UnicodeString ContractId, UInt32 SplashScreenShown)	Stop		PerfTrack_SplashScreen_AppShown	Informational		
-Microsoft-Windows-Immersive-Shell	6301	0	DockedAppManager_Layout()			DockedAppManager_Layout	Informational		
-Microsoft-Windows-Immersive-Shell	6351	0	DockedAppBar_VisibilityChange()			DockedAppBar_VisibilityChange	Informational		
-Microsoft-Windows-Immersive-Shell	6352	0	DockedAppBar_VisibilityChange6352()			DockedAppBar_VisibilityChange	Informational		
 Microsoft-Windows-Immersive-Shell	6400	0	AppList_PopulateElementWithExtensionTilesStart()	Start		AppList_PopulateElementWithExtensionTiles	Informational		
 Microsoft-Windows-Immersive-Shell	6401	0	AppList_PopulateElementWithExtensionTilesStop()	Stop		AppList_PopulateElementWithExtensionTiles	Informational		
 Microsoft-Windows-Immersive-Shell	6402	0	AppList_CreateExtensionListStart()	Start		AppList_CreateExtensionList	Informational		
@@ -1061,27 +454,7 @@ Microsoft-Windows-Immersive-Shell	6501	0	WPNSettings_PermissionsUI(UnicodeString
 Microsoft-Windows-Immersive-Shell	6502	0	WPNSettings_PermissionsUI6502(UnicodeString AppUserModelID, Boolean SettingValue)			WPNSettings_PermissionsUI	Informational		
 Microsoft-Windows-Immersive-Shell	6503	0	WPNSettings_PermissionsUI6503(UnicodeString AppUserModelID, Boolean SettingValue)			WPNSettings_PermissionsUI	Informational		
 Microsoft-Windows-Immersive-Shell	6506	0	WPNSettings_PermissionsUI6506(UnicodeString AppUserModelID, UnicodeString PackageFamilyName)			WPNSettings_PermissionsUI	Informational		
-Microsoft-Windows-Immersive-Shell	6509	0	LockScreenToast_UserSession()			LockScreenToast_UserSession	Informational		
-Microsoft-Windows-Immersive-Shell	6510	0	LockScreenToast_UserSession6510(UInt32 NotificationId, Boolean IsSpecialToast)			LockScreenToast_UserSession	Informational		
-Microsoft-Windows-Immersive-Shell	6511	0	LockScreenToast_UserSession6511(UInt32 NotificationId, Boolean IsSpecialToast)			LockScreenToast_UserSession	Informational		
-Microsoft-Windows-Immersive-Shell	6512	0	LockScreenToast_UserSession6512(UInt32 NotificationId, Boolean IsSpecialToast)			LockScreenToast_UserSession	Informational		
-Microsoft-Windows-Immersive-Shell	6513	0	LockScreenToast_UserSession6513(UInt32 NotificationId, Boolean IsSpecialToast)			LockScreenToast_UserSession	Informational		
-Microsoft-Windows-Immersive-Shell	6514	0	LockScreenToast_UserSession6514(UInt32 NotificationId, Boolean IsSpecialToast)			LockScreenToast_UserSession	Informational		
-Microsoft-Windows-Immersive-Shell	6515	0	LockScreenToast_UserSession6515(UInt32 NotificationId, Boolean IsSpecialToast)			LockScreenToast_UserSession	Informational		
-Microsoft-Windows-Immersive-Shell	6516	0	LockScreenToast_UserSession6516(UInt32 NotificationId, Boolean IsSpecialToast)			LockScreenToast_UserSession	Informational		
-Microsoft-Windows-Immersive-Shell	6517	0	LockScreenToast_UserSession6517()			LockScreenToast_UserSession	Informational		
-Microsoft-Windows-Immersive-Shell	6519	0	LockScreenToast_LockScreenSession()			LockScreenToast_LockScreenSession	Informational		
-Microsoft-Windows-Immersive-Shell	6520	0	LockScreenToast_LockScreenSession6520()			LockScreenToast_LockScreenSession	Informational		
-Microsoft-Windows-Immersive-Shell	6521	0	LockScreenToast_LockScreenSession6521(UInt32 NotificationId, Boolean IsSpecialToast)			LockScreenToast_LockScreenSession	Informational		
-Microsoft-Windows-Immersive-Shell	6522	0	LockScreenToast_LockScreenSession6522(UInt32 NotificationId, Boolean IsSpecialToast)			LockScreenToast_LockScreenSession	Informational		
-Microsoft-Windows-Immersive-Shell	6523	0	LockScreenToast_LockScreenSession6523(UInt32 NotificationId, Boolean IsSpecialToast)			LockScreenToast_LockScreenSession	Informational		
-Microsoft-Windows-Immersive-Shell	6524	0	LockScreenToast_LockScreenSession6524()			LockScreenToast_LockScreenSession	Informational		
-Microsoft-Windows-Immersive-Shell	6525	0	LockScreenToast_LockScreenSession6525(UInt32 NotificationId, Boolean IsSpecialToast)			LockScreenToast_LockScreenSession	Informational		
-Microsoft-Windows-Immersive-Shell	6526	0	LockScreenToast_LockScreenSession6526(UInt32 NotificationId, Boolean IsSpecialToast)			LockScreenToast_LockScreenSession	Informational		
-Microsoft-Windows-Immersive-Shell	6527	0	LockScreenToast_LockScreenSession6527(UInt32 NotificationId, Boolean IsSpecialToast)			LockScreenToast_LockScreenSession	Informational		
-Microsoft-Windows-Immersive-Shell	6531	0	ImmersiveShellToastDataProcessing6531(UInt32 NotificationId, Boolean IsSpecialToast)			ImmersiveShellToastDataProcessing	Informational		
 Microsoft-Windows-Immersive-Shell	6601	0	ConnectCharm_PrintStart(UInt32 SessionID, UnicodeString DeviceInstanceID)	Start		ConnectCharm_Print	Informational		
-Microsoft-Windows-Immersive-Shell	6602	0	ConnectCharm_PrintStop(UInt32 SessionID, UnicodeString DeviceInstanceID)	Stop		ConnectCharm_Print	Informational		
 Microsoft-Windows-Immersive-Shell	6606	0	ConnectCharm_PrintTargetsEnumStart(UInt32 DeviceCount)	Start		ConnectCharm_PrintTargetsEnum	Informational		
 Microsoft-Windows-Immersive-Shell	6607	0	ConnectCharm_PrintTargetsEnumStop(UInt32 DeviceCount)	Stop		ConnectCharm_PrintTargetsEnum	Informational		
 Microsoft-Windows-Immersive-Shell	6611	0	ConnectCharm_PlayStart(UnicodeString DeviceInstanceID)	Start		ConnectCharm_Play	Informational		
@@ -1106,14 +479,6 @@ Microsoft-Windows-Immersive-Shell	6653	0	ConnectCharm_DisplayHierarchyUIStart()	
 Microsoft-Windows-Immersive-Shell	6654	0	ConnectCharm_DisplayHierarchyUIStop()	Stop		ConnectCharm_DisplayHierarchyUI	Informational		
 Microsoft-Windows-Immersive-Shell	6690	0	ConnectCharm_PrintSourceEvaluate(UnicodeString AppId)			ConnectCharm_PrintSourceEvaluate	Warning		
 Microsoft-Windows-Immersive-Shell	6691	0	ConnectCharm_PlaytoSourceEvaluate(UnicodeString AppId)			ConnectCharm_PlaytoSourceEvaluate	Warning		
-Microsoft-Windows-Immersive-Shell	6700	0	ImmersiveLauncherSettingsFlyout_ShowStart()	Start		ImmersiveLauncherSettingsFlyout_Show	Informational		
-Microsoft-Windows-Immersive-Shell	6701	0	ImmersiveLauncherSettingsFlyout_ShowStop()	Stop		ImmersiveLauncherSettingsFlyout_Show	Informational		
-Microsoft-Windows-Immersive-Shell	6706	0	ImmersiveLauncherSettingsFlyout_ClearTiles()			ImmersiveLauncherSettingsFlyout_ClearTiles	Informational		
-Microsoft-Windows-Immersive-Shell	6708	0	ImmersiveLauncherUninstallFlyout_Uninstall(UInt32 UninstallMode)			ImmersiveLauncherUninstallFlyout_Uninstall	Informational		
-Microsoft-Windows-Immersive-Shell	6710	0	SecondaryTile_APIInvokedStart(UInt32 ApiType, Int32 X, Int32 Y, Int32 Width, Int32 Height, Int32 Placement)	Start		SecondaryTile_APIInvoked	Informational		
-Microsoft-Windows-Immersive-Shell	6711	0	SecondaryTile_APIInvokedStop(UInt32 HRESULT)	Stop		SecondaryTile_APIInvoked	Informational		
-Microsoft-Windows-Immersive-Shell	6712	0	SecondaryTile_APIOperationStart(UInt32 ApiType)	Start		SecondaryTile_APIOperation	Informational		
-Microsoft-Windows-Immersive-Shell	6713	0	SecondaryTile_APIOperationStop(UInt32 HRESULT)	Stop		SecondaryTile_APIOperation	Informational		
 Microsoft-Windows-Immersive-Shell	6714	0	SecondaryTile_FlyoutDisplayedStart(UInt32 ApiType)	Start		SecondaryTile_FlyoutDisplayed	Informational		
 Microsoft-Windows-Immersive-Shell	6715	0	SecondaryTile_FlyoutDisplayedStop(UInt32 HRESULT)	Stop		SecondaryTile_FlyoutDisplayed	Informational		
 Microsoft-Windows-Immersive-Shell	6716	0	SecondaryTile_FlyoutReadyToDisplay(UInt32 ApiType)			SecondaryTile_FlyoutReadyToDisplay	Informational		
@@ -1122,19 +487,6 @@ Microsoft-Windows-Immersive-Shell	6720	0	ImmersiveOpenWithUI_CreateAndShowStart(
 Microsoft-Windows-Immersive-Shell	6721	0	ImmersiveOpenWithUI_CreateAndShowStop()	Stop		ImmersiveOpenWithUI_CreateAndShow	Informational		
 Microsoft-Windows-Immersive-Shell	6722	0	ImmersiveOpenWithUI_Mode(UInt32 NumApp, Boolean SetDefault)			ImmersiveOpenWithUI_Mode	Informational		
 Microsoft-Windows-Immersive-Shell	6723	0	ImmersiveOpenWithUI_InvokeApp()			ImmersiveOpenWithUI_InvokeApp	Informational		
-Microsoft-Windows-Immersive-Shell	6724	0	ImmersiveOpenWithUI_InvokeWMIS()			ImmersiveOpenWithUI_InvokeWMIS	Informational		
-Microsoft-Windows-Immersive-Shell	6725	0	ImmersiveOpenWithUI_InvokeAppStore()			ImmersiveOpenWithUI_InvokeAppStore	Informational		
-Microsoft-Windows-Immersive-Shell	6751	0	ImmersiveLauncherGroupNameFlyout_Show()			ImmersiveLauncherGroupNameFlyout_Show	Informational		
-Microsoft-Windows-Immersive-Shell	6752	0	ImmersiveLauncherGroupNameFlyout_GroupName()			ImmersiveLauncherGroupNameFlyout_GroupName	Informational		
-Microsoft-Windows-Immersive-Shell	6760	0	AppBar_Select_TileStart()	Start		AppBar_Select_Tile	Informational		
-Microsoft-Windows-Immersive-Shell	6761	0	AppBar_Select_TileStop()	Stop		AppBar_Select_Tile	Informational		
-Microsoft-Windows-Immersive-Shell	6762	0	AppBar_Select_GroupStart()	Start		AppBar_Select_Group	Informational		
-Microsoft-Windows-Immersive-Shell	6763	0	AppBar_Select_GroupStop()	Stop		AppBar_Select_Group	Informational		
-Microsoft-Windows-Immersive-Shell	6764	0	AppBar_Execute_CommandStart()	Start		AppBar_Execute_Command	Informational		
-Microsoft-Windows-Immersive-Shell	6765	0	AppBar_Execute_CommandStop()	Stop		AppBar_Execute_Command	Informational		
-Microsoft-Windows-Immersive-Shell	6766	0	AppBar_Update_Buttons(UInt64 CurrentVerbSet)			AppBar_Update_Buttons	Informational		
-Microsoft-Windows-Immersive-Shell	6767	0	AppBar_ShowStart()	Start		AppBar_Show	Informational		
-Microsoft-Windows-Immersive-Shell	6768	0	AppBar_ShowStop()	Stop		AppBar_Show	Informational		
 Microsoft-Windows-Immersive-Shell	6820	0	LockScreen_AddInvokedStart()	Start		LockScreen_AddInvoked	Informational		
 Microsoft-Windows-Immersive-Shell	6821	0	LockScreen_AddInvokedStop(UInt32 HRESULT)	Stop		LockScreen_AddInvoked	Informational		
 Microsoft-Windows-Immersive-Shell	6822	0	LockScreen_AddOperationStart()	Start		LockScreen_AddOperation	Informational		
@@ -1144,10 +496,7 @@ Microsoft-Windows-Immersive-Shell	6825	0	LockScreen_AddDialogDisplayedStop()	Sto
 Microsoft-Windows-Immersive-Shell	6826	0	LockScreen_AddContentionFlyoutDisplayedStart()	Start		LockScreen_AddContentionFlyoutDisplayed	Informational		
 Microsoft-Windows-Immersive-Shell	6827	0	LockScreen_AddContentionFlyoutDisplayedStop(UInt32 HRESULT)	Stop		LockScreen_AddContentionFlyoutDisplayed	Informational		
 Microsoft-Windows-Immersive-Shell	6828	0	task_0()			task_0	Informational		
-Microsoft-Windows-Immersive-Shell	6840	0	SecondaryTile_FlyoutShowingStart(UInt32 ApiType)	Start		SecondaryTile_FlyoutShowing	Informational		
 Microsoft-Windows-Immersive-Shell	6841	0	SecondaryTile_FlyoutShowingStop(UInt32 ApiType)	Stop		SecondaryTile_FlyoutShowing	Informational		
-Microsoft-Windows-Immersive-Shell	6842	0	SecondaryTile_DiskOperationStart(UInt32 ApiType)	Start		SecondaryTile_DiskOperation	Informational		
-Microsoft-Windows-Immersive-Shell	6843	0	SecondaryTile_DiskOperationStop(UInt32 ApiType)	Stop		SecondaryTile_DiskOperation	Informational		
 Microsoft-Windows-Immersive-Shell	6844	0	SecondaryTile_FlyoutFlipViewButtonPressStart()	Start		SecondaryTile_FlyoutFlipViewButtonPress	Informational		
 Microsoft-Windows-Immersive-Shell	6845	0	SecondaryTile_FlyoutFlipViewButtonPressStop()	Stop		SecondaryTile_FlyoutFlipViewButtonPress	Informational		
 Microsoft-Windows-Immersive-Shell	6850	0	SecondaryTileQuota_CheckQuotaUsageStart()	Start		SecondaryTileQuota_CheckQuotaUsage	Informational		
@@ -1158,67 +507,8 @@ Microsoft-Windows-Immersive-Shell	6854	0	SecondaryTileQuota_EnforceQuota(UInt32 
 Microsoft-Windows-Immersive-Shell	6855	0	SecondaryTileQuota_CleanupOrphanFilesStart(UInt32 NumOrphanFiles)	Start		SecondaryTileQuota_CleanupOrphanFiles	Informational		
 Microsoft-Windows-Immersive-Shell	6856	0	SecondaryTileQuota_CleanupOrphanFilesStop(UInt32 HRESULT, UInt32 BytesReclaimed)	Stop		SecondaryTileQuota_CleanupOrphanFiles	Informational		
 Microsoft-Windows-Immersive-Shell	6857	0	SecondaryTileQuota_CleanupOrphanFiles(UInt32 HRESULT, UnicodeString Path, UInt32 Size, Boolean Visible)			SecondaryTileQuota_CleanupOrphanFiles	Informational		
-Microsoft-Windows-Immersive-Shell	6860	0	ImmersiveLauncherPersonalizeFlyout_ShowStart()	Start		ImmersiveLauncherPersonalizeFlyout_Show	Informational		
-Microsoft-Windows-Immersive-Shell	6861	0	ImmersiveLauncherPersonalizeFlyout_ShowStop()	Stop		ImmersiveLauncherPersonalizeFlyout_Show	Informational		
-Microsoft-Windows-Immersive-Shell	6862	0	ImmersiveLauncherPersonalizeFlyout_PrimaryColorApplied()			ImmersiveLauncherPersonalizeFlyout_PrimaryColorApplied	Informational		
-Microsoft-Windows-Immersive-Shell	6863	0	ImmersiveLauncherPersonalizeFlyout_AccentColorApplied()			ImmersiveLauncherPersonalizeFlyout_AccentColorApplied	Informational		
-Microsoft-Windows-Immersive-Shell	6864	0	ImmersiveLauncherPersonalizeFlyout_MRUColorPop()			ImmersiveLauncherPersonalizeFlyout_MRUColorPop	Informational		
-Microsoft-Windows-Immersive-Shell	6865	0	ImmersiveLauncherPersonalizeFlyout_MRUColorPush()			ImmersiveLauncherPersonalizeFlyout_MRUColorPush	Informational		
-Microsoft-Windows-Immersive-Shell	6866	0	ImmersiveLauncherPersonalizeFlyout_SwatchUpdateStart()	Start		ImmersiveLauncherPersonalizeFlyout_SwatchUpdate	Informational		
-Microsoft-Windows-Immersive-Shell	6867	0	ImmersiveLauncherPersonalizeFlyout_SwatchUpdateStop()	Stop		ImmersiveLauncherPersonalizeFlyout_SwatchUpdate	Informational		
-Microsoft-Windows-Immersive-Shell	6868	0	ImmersiveLauncherPersonalizeFlyout_SliderThumbUpdateStart()	Start		ImmersiveLauncherPersonalizeFlyout_SliderThumbUpdate	Informational		
-Microsoft-Windows-Immersive-Shell	6869	0	ImmersiveLauncherPersonalizeFlyout_SliderThumbUpdateStop()	Stop		ImmersiveLauncherPersonalizeFlyout_SliderThumbUpdate	Informational		
-Microsoft-Windows-Immersive-Shell	6870	0	ImmersiveLauncherPersonalizeFlyout_ApplySystemColorsStart()	Start		ImmersiveLauncherPersonalizeFlyout_ApplySystemColors	Informational		
-Microsoft-Windows-Immersive-Shell	6871	0	ImmersiveLauncherPersonalizeFlyout_ApplySystemColorsStop()	Stop		ImmersiveLauncherPersonalizeFlyout_ApplySystemColors	Informational		
-Microsoft-Windows-Immersive-Shell	6872	0	ImmersiveLauncherPersonalizeFlyout_PrimarySliderPositionChanged(UInt32 HueIndex)			ImmersiveLauncherPersonalizeFlyout_PrimarySliderPositionChanged	Informational		
-Microsoft-Windows-Immersive-Shell	6873	0	ImmersiveLauncherPersonalizeFlyout_PrimarySwatchIndexSelected(UInt32 SwatchIndex)			ImmersiveLauncherPersonalizeFlyout_PrimarySwatchIndexSelected	Informational		
-Microsoft-Windows-Immersive-Shell	6874	0	ImmersiveLauncherPersonalizeFlyout_AccentSliderPositionChanged(UInt32 HueIndex)			ImmersiveLauncherPersonalizeFlyout_AccentSliderPositionChanged	Informational		
-Microsoft-Windows-Immersive-Shell	6875	0	ImmersiveLauncherPersonalizeFlyout_AccentSwatchIndexSelected(UInt32 SwatchIndex)			ImmersiveLauncherPersonalizeFlyout_AccentSwatchIndexSelected	Informational		
-Microsoft-Windows-Immersive-Shell	6876	0	ImmersiveLauncherPersonalizeFlyout_BackgroundSelected(UInt32 BackgroundId)			ImmersiveLauncherPersonalizeFlyout_BackgroundSelected	Informational		
-Microsoft-Windows-Immersive-Shell	6877	0	ImmersiveLauncherPersonalizeFlyout_BackgroundIndexSelected(Int32 BackgroundIndex)			ImmersiveLauncherPersonalizeFlyout_BackgroundIndexSelected	Informational		
-Microsoft-Windows-Immersive-Shell	7002	0	Grid_Host_ReloadStateForThemeOrDPITransitionStart(UInt32 WindowScaleFactor, UInt32 StartTileScaleFactor)	Start		Grid_Host_ReloadStateForThemeOrDPITransition	Informational		
-Microsoft-Windows-Immersive-Shell	7003	0	Grid_Host_ReloadStateForThemeOrDPITransitionStop(UInt32 WindowScaleFactor, UInt32 StartTileScaleFactor)	Stop		Grid_Host_ReloadStateForThemeOrDPITransition	Informational		
-Microsoft-Windows-Immersive-Shell	7004	0	Grid_Selected_Item_Count_ChangedStart(UInt32 Count)	Start		Grid_Selected_Item_Count_Changed	Informational		
-Microsoft-Windows-Immersive-Shell	7005	0	Grid_Selected_Item_Count_ChangedStop(UInt32 Count)	Stop		Grid_Selected_Item_Count_Changed	Informational		
-Microsoft-Windows-Immersive-Shell	7006	0	Grid_Host_ViewTransition_UpdateType(UInt32 Type)			Grid_Host_ViewTransition_UpdateType	Informational		
-Microsoft-Windows-Immersive-Shell	7008	0	Grid_Controller_PostPaintStart(UInt32 ModelRealizationPhase, UInt32 Operations)	Start		Grid_Controller_PostPaint	Informational		
-Microsoft-Windows-Immersive-Shell	7009	0	Grid_Controller_PostPaintStop()	Stop		Grid_Controller_PostPaint	Informational		
-Microsoft-Windows-Immersive-Shell	7010	0	Grid_Controller_ScheduleFullRealizationStart(UInt32 ModelRealizationPhase)	Start		Grid_Controller_ScheduleFullRealization	Informational		
-Microsoft-Windows-Immersive-Shell	7011	0	Grid_Controller_ScheduleFullRealizationStop(UInt32 ModelRealizationPhase)	Stop		Grid_Controller_ScheduleFullRealization	Informational		
-Microsoft-Windows-Immersive-Shell	7012	0	Grid_Controller_ContentTransitionStart(UInt32 ModelRealizationPhase)	Start		Grid_Controller_ContentTransition	Informational		
-Microsoft-Windows-Immersive-Shell	7013	0	Grid_Controller_ContentTransitionStop(UInt32 ModelRealizationPhase)	Stop		Grid_Controller_ContentTransition	Informational		
-Microsoft-Windows-Immersive-Shell	7014	0	Grid_Controller_ContentTransitionStart7014(UInt32 ModelRealizationPhase)	Start		Grid_Controller_ContentTransition	Informational		
-Microsoft-Windows-Immersive-Shell	7015	0	Grid_Controller_ContentTransitionStop7015()	Stop		Grid_Controller_ContentTransition	Informational		
-Microsoft-Windows-Immersive-Shell	7016	0	Grid_Host_OnTileCountAvailable(UInt32 Count)			Grid_Host_OnTileCountAvailable	Informational		
-Microsoft-Windows-Immersive-Shell	7018	0	Grid_Controller_UpdateAtlasHints(UInt32 AtlasWidth, UInt32 AtlasHeight, UInt32 SquareTileWidth, UInt32 SquareTileHeight, UInt32 WideTileWidth, UInt32 WideTileHeight, UInt32 AppTileWidth, UInt32 AppTileHeight, UInt32 SettingsTileWidth, UInt32 SettingsTileHeight, UInt32 FileTileWidth, UInt32 FileTileHeight)			Grid_Controller_UpdateAtlasHints	Informational		
-Microsoft-Windows-Immersive-Shell	7019	0	Grid_Controller_Failure(UInt32 Result)			Grid_Controller_Failure	Error		
-Microsoft-Windows-Immersive-Shell	7020	0	Grid_Model_Failed7020(UnicodeString AppID, UInt32 Result)			Grid_Model_Failed	Error		
-Microsoft-Windows-Immersive-Shell	7021	0	Grid_Find_In_Start(UInt32 Result)	Start		Grid_Find_In_Start	Informational		
-Microsoft-Windows-Immersive-Shell	7022	0	Grid_Find_In_StartStop(UInt32 Result)	Stop		Grid_Find_In_Start	Informational		
-Microsoft-Windows-Immersive-Shell	7023	0	Grid_Pin_To_Start(UInt32 Result)	Start		Grid_Pin_To_Start	Informational		
-Microsoft-Windows-Immersive-Shell	7024	0	Grid_Pin_To_StartStop(UInt32 Result)	Stop		Grid_Pin_To_Start	Informational		
-Microsoft-Windows-Immersive-Shell	7025	0	Grid_Optimization_Suppress_UIAStart()	Start		Grid_Optimization_Suppress_UIA	Informational		
-Microsoft-Windows-Immersive-Shell	7026	0	Grid_Optimization_Suppress_UIAStop()	Stop		Grid_Optimization_Suppress_UIA	Informational		
-Microsoft-Windows-Immersive-Shell	7027	0	Grid_View_EditMode_EnterStart()	Start		Grid_View_EditMode_Enter	Informational		
-Microsoft-Windows-Immersive-Shell	7028	0	Grid_View_EditMode_EnterStop()	Stop		Grid_View_EditMode_Enter	Informational		
-Microsoft-Windows-Immersive-Shell	7029	0	Grid_AllApps_Sort_ChangeStart(UInt32 OldSort, UInt32 NewSort)	Start		Grid_AllApps_Sort_Change	Informational		
-Microsoft-Windows-Immersive-Shell	7030	0	Grid_AllApps_Sort_ChangeStop()	Stop		Grid_AllApps_Sort_Change	Informational		
-Microsoft-Windows-Immersive-Shell	7031	0	Grid_AllApps_Self_RevealStart()	Start		Grid_AllApps_Self_Reveal	Informational		
-Microsoft-Windows-Immersive-Shell	7032	0	Grid_AllApps_Self_RevealStop()	Stop		Grid_AllApps_Self_Reveal	Informational		
-Microsoft-Windows-Immersive-Shell	7033	0	Grid_View_EditMode_ExitStart()	Start		Grid_View_EditMode_Exit	Informational		
-Microsoft-Windows-Immersive-Shell	7034	0	Grid_View_EditMode_ExitStop()	Stop		Grid_View_EditMode_Exit	Informational		
-Microsoft-Windows-Immersive-Shell	7035	0	Grid_View_EditMode_EnterStop7035()	Stop		Grid_View_EditMode_Enter	Informational		
-Microsoft-Windows-Immersive-Shell	7036	0	Grid_View_EditMode_ExitStop7036()	Stop		Grid_View_EditMode_Exit	Informational		
-Microsoft-Windows-Immersive-Shell	7037	0	Grid_Content_AnimationStart()	Start		Grid_Content_Animation	Informational		
-Microsoft-Windows-Immersive-Shell	7038	0	Grid_Content_AnimationStop()	Stop		Grid_Content_Animation	Informational		
 Microsoft-Windows-Immersive-Shell	7039	0	Launcher_Apps_SwitchToAllAppsViewFromSearchStart()	Start		Launcher_Apps_SwitchToAllAppsViewFromSearch	Informational		
 Microsoft-Windows-Immersive-Shell	7040	0	Launcher_Apps_SwitchToAllAppsViewFromSearchStop(UInt32 RenderedTileCount, UInt32 RealizedTileCount)	Stop		Launcher_Apps_SwitchToAllAppsViewFromSearch	Informational		
-Microsoft-Windows-Immersive-Shell	7041	0	Grid_View_NameGroupMode()			Grid_View_NameGroupMode	Informational		
-Microsoft-Windows-Immersive-Shell	7042	0	Grid_View_NameGroupMode7042()			Grid_View_NameGroupMode	Informational		
-Microsoft-Windows-Immersive-Shell	7100	0	ImmersiveLauncherHelpFlyout_ShowStart()	Start		ImmersiveLauncherHelpFlyout_Show	Informational		
-Microsoft-Windows-Immersive-Shell	7101	0	ImmersiveLauncherHelpFlyout_ShowStop()	Stop		ImmersiveLauncherHelpFlyout_Show	Informational		
-Microsoft-Windows-Immersive-Shell	7120	0	ImmersiveLauncherUninstallFlyout_RemoveTilesFromUIStart(UnicodeString PackageFullName)	Start		ImmersiveLauncherUninstallFlyout_RemoveTilesFromUI	Informational		
-Microsoft-Windows-Immersive-Shell	7121	0	ImmersiveLauncherUninstallFlyout_RemoveTilesFromUIStop()	Stop		ImmersiveLauncherUninstallFlyout_RemoveTilesFromUI	Informational		
 Microsoft-Windows-Immersive-Shell	7130	0	LockscreenApplications_LoadPopupStart()	Start		LockscreenApplications_LoadPopup	Informational		
 Microsoft-Windows-Immersive-Shell	7131	0	LockscreenApplications_LoadPopupStop()	Stop		LockscreenApplications_LoadPopup	Informational		
 Microsoft-Windows-Immersive-Shell	7150	0	ConnectedSearch_Settings_UseConnectedSearch()			ConnectedSearch_Settings_UseConnectedSearch	Informational		
@@ -1272,7 +562,6 @@ Microsoft-Windows-Immersive-Shell	7197	0	ConnectedSearch_LogParsingErrorBGStart(
 Microsoft-Windows-Immersive-Shell	7198	0	ConnectedSearch_LogParsingErrorBGStop()	Stop		ConnectedSearch_LogParsingErrorBG	Informational		
 Microsoft-Windows-Immersive-Shell	7199	0	ConnectedSearch_LogParsingErrorEvent(UInt32 Result, UnicodeString ImpressionGUID, UInt32 ErrorCode, UnicodeString Url, UnicodeString HBT)			ConnectedSearch_LogParsingErrorEvent	Verbose		
 Microsoft-Windows-Immersive-Shell	7200	0	ConnectedSearch_SetActiveImpression(UInt32 Result, UnicodeString ImpressionGUID)			ConnectedSearch_SetActiveImpression	Informational		
-Microsoft-Windows-Immersive-Shell	7201	0	ConnectedSearch_ServiceLoadStart()	Start		ConnectedSearch_ServiceLoad	Informational		
 Microsoft-Windows-Immersive-Shell	7202	0	ConnectedSearch_ServiceLoadStop()	Stop		ConnectedSearch_ServiceLoad	Informational		
 Microsoft-Windows-Immersive-Shell	7203	0	ConnectedSearch_ServiceLoad()			ConnectedSearch_ServiceLoad	Verbose		
 Microsoft-Windows-Immersive-Shell	7204	0	ConnectedSearch_SetActiveImpression7204(UnicodeString DroppedAPIcall)			ConnectedSearch_SetActiveImpression	Warning		
@@ -1291,7 +580,6 @@ Microsoft-Windows-Immersive-Shell	7216	0	ConnectedSearch_AuthenticationStart()	S
 Microsoft-Windows-Immersive-Shell	7217	0	ConnectedSearch_AuthenticationStop()	Stop		ConnectedSearch_Authentication	Informational		
 Microsoft-Windows-Immersive-Shell	7218	0	ConnectedSearch_AuthenticationSuccess()			ConnectedSearch_AuthenticationSuccess	Informational		
 Microsoft-Windows-Immersive-Shell	7219	0	ConnectedSearch_AuthenticationFailure(UInt32 ErrorResult)			ConnectedSearch_AuthenticationFailure	Error		
-Microsoft-Windows-Immersive-Shell	7220	0	ConnectedSearch_AuthenticationLocalAccount()			ConnectedSearch_AuthenticationLocalAccount	Informational		
 Microsoft-Windows-Immersive-Shell	7221	0	ConnectedSearch_HTTPRequestFailure(UInt32 ErrorResult)			ConnectedSearch_HTTPRequestFailure	Informational		
 Microsoft-Windows-Immersive-Shell	7222	0	ConnectedSearch_LogLocalClickStart()	Start		ConnectedSearch_LogLocalClick	Informational		
 Microsoft-Windows-Immersive-Shell	7223	0	ConnectedSearch_LogLocalClickStop(UInt32 ErrorResult)	Stop		ConnectedSearch_LogLocalClick	Informational		
@@ -1328,7 +616,6 @@ Microsoft-Windows-Immersive-Shell	7256	0	ConnectedSearch_LogScrollPayload(Unicod
 Microsoft-Windows-Immersive-Shell	7257	0	ConnectedSearch_LogLayoutPayload(UnicodeString JSON)			ConnectedSearch_LogLayoutPayload	Informational		
 Microsoft-Windows-Immersive-Shell	7258	0	ConnectedSearch_UnauthenticationStart()	Start		ConnectedSearch_Unauthentication	Informational		
 Microsoft-Windows-Immersive-Shell	7259	0	ConnectedSearch_UnauthenticationStop()	Stop		ConnectedSearch_Unauthentication	Informational		
-Microsoft-Windows-Immersive-Shell	7260	0	ConnectedSearch_UnauthenticationSuccess()			ConnectedSearch_UnauthenticationSuccess	Informational		
 Microsoft-Windows-Immersive-Shell	7261	0	ConnectedSearch_UnauthenticationFailure(UInt32 ErrorResult)			ConnectedSearch_UnauthenticationFailure	Error		
 Microsoft-Windows-Immersive-Shell	7262	0	ConnectedSearch_UnauthenticationSuccessAllCookiesCleared()			ConnectedSearch_UnauthenticationSuccessAllCookiesCleared	Informational		
 Microsoft-Windows-Immersive-Shell	7263	0	ConnectedSearch_AuthenticationGettingTokenFailure(UInt32 ErrorResult)			ConnectedSearch_AuthenticationGettingTokenFailure	Error		
@@ -1359,29 +646,8 @@ Microsoft-Windows-Immersive-Shell	7290	0	ConnectedSearch_RetryTimerScheduled()		
 Microsoft-Windows-Immersive-Shell	7291	0	ConnectedSearch_RetryTimerCallback()			ConnectedSearch_RetryTimerCallback	Verbose		
 Microsoft-Windows-Immersive-Shell	7292	0	ConnectedSearch_ErrorInstDroppedRetry()			ConnectedSearch_ErrorInstDroppedRetry	Verbose		
 Microsoft-Windows-Immersive-Shell	7293	0	ConnectedSearch_ErrorInstDroppedOverflow(UnicodeString ImpressionGUID, UInt64 Timestamp, UInt32 ErrorCode, UnicodeString Url, UnicodeString HBT)			ConnectedSearch_ErrorInstDroppedOverflow	Verbose		
-Microsoft-Windows-Immersive-Shell	7300	0	MotionBackground_SceneInitializationStart(Int32 Width, Int32 Height, Int32 Plateau)	Start		MotionBackground_SceneInitialization	Informational		
-Microsoft-Windows-Immersive-Shell	7301	0	MotionBackground_SceneInitializationStop(UInt32 HRESULT)	Stop		MotionBackground_SceneInitialization	Informational		
-Microsoft-Windows-Immersive-Shell	7302	0	MotionBackground_SceneInitialization(UnicodeString Path, UInt32 HRESULT)			MotionBackground_SceneInitialization	Informational		
-Microsoft-Windows-Immersive-Shell	7303	0	MotionBackground_SceneInitialization7303(Pointer ResourceID, Pointer ResourceType, UInt32 HRESULT)			MotionBackground_SceneInitialization	Informational		
-Microsoft-Windows-Immersive-Shell	7304	0	MotionBackground_ColorizeAssetStart(UInt32 Asset, UInt32 Color)	Start		MotionBackground_ColorizeAsset	Informational		
-Microsoft-Windows-Immersive-Shell	7305	0	MotionBackground_ColorizeAssetStop()	Stop		MotionBackground_ColorizeAsset	Informational		
-Microsoft-Windows-Immersive-Shell	7306	0	MotionBackground_RecomputeStart()	Start		MotionBackground_Recompute	Informational		
-Microsoft-Windows-Immersive-Shell	7307	0	MotionBackground_RecomputeStop()	Stop		MotionBackground_Recompute	Informational		
-Microsoft-Windows-Immersive-Shell	7308	0	MotionBackground_ContentTransformState(Pointer ContentTransform, Int32 BusyUntil)			MotionBackground_ContentTransformState	Informational		
-Microsoft-Windows-Immersive-Shell	7309	0	MotionBackground_IdentifyObject(UInt32 Identifier, UInt32 ParentIdentifier, Pointer ObjectPointer)			MotionBackground_IdentifyObject	Informational		
-Microsoft-Windows-Immersive-Shell	7310	0	MotionBackground_IdentifyObject7310(UInt32 Identifier, UInt32 ParentIdentifier, Pointer ObjectPointer)			MotionBackground_IdentifyObject	Informational		
-Microsoft-Windows-Immersive-Shell	7311	0	MotionBackground_IdentifyObject7311(UInt32 Identifier, UInt32 ParentIdentifier, Pointer ObjectPointer)			MotionBackground_IdentifyObject	Informational		
-Microsoft-Windows-Immersive-Shell	7312	0	MotionBackground_IdentifyObject7312(UInt32 Identifier, UInt32 ParentIdentifier, Pointer ObjectPointer)			MotionBackground_IdentifyObject	Informational		
-Microsoft-Windows-Immersive-Shell	7313	0	MotionBackground_IdentifyObject7313(UInt32 Identifier, UInt32 ParentIdentifier, Pointer ObjectPointer)			MotionBackground_IdentifyObject	Informational		
-Microsoft-Windows-Immersive-Shell	7314	0	MotionBackground_Trigger(Float Delta, Float Current, Boolean Vertical)			MotionBackground_Trigger	Informational		
-Microsoft-Windows-Immersive-Shell	7315	0	MotionBackground_Trigger7315()			MotionBackground_Trigger	Informational		
-Microsoft-Windows-Immersive-Shell	7320	0	MotionBackground_ColorizeStart()	Start		MotionBackground_Colorize	Informational		
-Microsoft-Windows-Immersive-Shell	7321	0	MotionBackground_ColorizeStop()	Stop		MotionBackground_Colorize	Informational		
-Microsoft-Windows-Immersive-Shell	7322	0	MotionBackground_AssociateTransform(UInt32 Identifier, Pointer OwnerPointer, Pointer OwnedPointer)			MotionBackground_AssociateTransform	Informational		
-Microsoft-Windows-Immersive-Shell	7323	0	MotionBackground_Recompute(Pointer Resource, UInt32 Property, Float ComputedValue)			MotionBackground_Recompute	Informational		
 Microsoft-Windows-Immersive-Shell	7380	0	WallpaperBackground_SceneInitializationStart(Int32 Left, Int32 Top, Int32 Right, Int32 Bottom)	Start		WallpaperBackground_SceneInitialization	Informational		
 Microsoft-Windows-Immersive-Shell	7381	0	WallpaperBackground_SceneInitializationStop(UInt32 HRESULT)	Stop		WallpaperBackground_SceneInitialization	Informational		
-Microsoft-Windows-Immersive-Shell	7382	0	WallpaperBackground_UpdateOpacity(Float Position, Float Opacity)			WallpaperBackground_UpdateOpacity	Informational		
 Microsoft-Windows-Immersive-Shell	7400	0	ConnectedSearch_LogTemplateFallbackPayload(UnicodeString JSON)			ConnectedSearch_LogTemplateFallbackPayload	Informational		
 Microsoft-Windows-Immersive-Shell	7401	0	ConnectedSearch_LogTemplateFallbackStart()	Start		ConnectedSearch_LogTemplateFallback	Informational		
 Microsoft-Windows-Immersive-Shell	7402	0	ConnectedSearch_LogTemplateFallbackStop(UInt32 ErrorResult)	Stop		ConnectedSearch_LogTemplateFallback	Informational		
@@ -1432,7 +698,6 @@ Microsoft-Windows-Immersive-Shell	7446	0	ConnectedSearch_BlockingTemplateDownloa
 Microsoft-Windows-Immersive-Shell	7447	0	ConnectedSearch_BlockingTemplateDownloadStop(UInt32 ErrorResult)	Stop		ConnectedSearch_BlockingTemplateDownload	Informational		
 Microsoft-Windows-Immersive-Shell	7448	0	ConnectedSearch_LogPerfTemplateRequestStart()	Start		ConnectedSearch_LogPerfTemplateRequest	Informational		
 Microsoft-Windows-Immersive-Shell	7449	0	ConnectedSearch_LogPerfTemplateRequestStop(UInt32 ErrorResult)	Stop		ConnectedSearch_LogPerfTemplateRequest	Informational		
-Microsoft-Windows-Immersive-Shell	7450	0	ConnectedSearch_LogPerfTemplateRequest(UInt64 AggregateTime, UInt64 StartTime, UInt64 StopTime)			ConnectedSearch_LogPerfTemplateRequest	Verbose		
 Microsoft-Windows-Immersive-Shell	7451	0	ConnectedSearch_LogPerfImagesLoading()			ConnectedSearch_LogPerfImagesLoading	Informational		
 Microsoft-Windows-Immersive-Shell	7452	0	ConnectedSearch_LogPrefetchImagesCompleteStart()	Start		ConnectedSearch_LogPrefetchImagesComplete	Informational		
 Microsoft-Windows-Immersive-Shell	7453	0	ConnectedSearch_LogPrefetchImagesCompleteStop(UInt32 ErrorResult)	Stop		ConnectedSearch_LogPrefetchImagesComplete	Informational		
@@ -1440,38 +705,23 @@ Microsoft-Windows-Immersive-Shell	7454	0	ConnectedSearch_LogPerfColdStart()			Co
 Microsoft-Windows-Immersive-Shell	7455	0	ConnectedSearch_Settings_MeteredConnection7455()			ConnectedSearch_Settings_MeteredConnection	Informational		
 Microsoft-Windows-Immersive-Shell	7456	0	ConnectedSearch_Settings_MeteredConnection7456(UInt32 ChangeTo, UInt32 ErrorResult)			ConnectedSearch_Settings_MeteredConnection	Informational		
 Microsoft-Windows-Immersive-Shell	7457	0	ConnectedSearch_SetTracingData(UInt32 Result, UnicodeString ImpressionGUID)			ConnectedSearch_SetTracingData	Informational		
-Microsoft-Windows-Immersive-Shell	7458	0	ConnectedSearch_ClearImpressionData(UInt32 ErrorResult)			ConnectedSearch_ClearImpressionData	Informational		
 Microsoft-Windows-Immersive-Shell	7459	0	Perftrack_ConnectedSearch_PageLoadWithImagesStart()	Start		Perftrack_ConnectedSearch_PageLoadWithImages	Informational		
 Microsoft-Windows-Immersive-Shell	7460	0	Perftrack_ConnectedSearch_PageLoadWithImagesStop(UnicodeString Scope)	Stop		Perftrack_ConnectedSearch_PageLoadWithImages	Informational		
 Microsoft-Windows-Immersive-Shell	7461	0	Perftrack_ConnectedSearch_PageLoadWithImagesStop7461(UnicodeString Scope)	Stop		Perftrack_ConnectedSearch_PageLoadWithImages	Informational		
 Microsoft-Windows-Immersive-Shell	7462	0	ConnectedSearch_SetScope(UInt32 Result, UnicodeString ImpressionGUID)			ConnectedSearch_SetScope	Informational		
 Microsoft-Windows-Immersive-Shell	7701	0	ImmersiveApplicationManagerForegroundBoost(Pointer ApplicationWindow, UInt32 PID, UnicodeString AppID, Boolean PriorityForeground, Pointer SystemWindow)			ImmersiveApplicationManagerForegroundBoost	Informational		
-Microsoft-Windows-Immersive-Shell	7703	0	ImmersiveApplicationManagerShowViewActivationPreference(UnicodeString SourceAppId, UnicodeString TargetAppId, UInt32 SourceGlomId, UInt32 TargetGlomId, UInt32 SourceRequestedVisibility, UInt32 TargetRequestedVisibility)			ImmersiveApplicationManagerShowViewActivationPreference	Informational		
 Microsoft-Windows-Immersive-Shell	8002	0	ActionsFramework_Contacts_MRU_InitializeStart()	Start		ActionsFramework_Contacts_MRU_Initialize	Informational		
 Microsoft-Windows-Immersive-Shell	8003	0	ActionsFramework_Contacts_MRU_InitializeStop()	Stop		ActionsFramework_Contacts_MRU_Initialize	Informational		
 Microsoft-Windows-Immersive-Shell	8005	0	ActionsFramework_Contacts_MRU_UpdateStart()	Start		ActionsFramework_Contacts_MRU_Update	Informational		
 Microsoft-Windows-Immersive-Shell	8006	0	ActionsFramework_Contacts_MRU_UpdateStop()	Stop		ActionsFramework_Contacts_MRU_Update	Informational		
 Microsoft-Windows-Immersive-Shell	8009	0	AppointmentActions_AddAppointment(UnicodeString ReportedError)			AppointmentActions_AddAppointment	Error		
 Microsoft-Windows-Immersive-Shell	8010	0	AppointmentActions_RemoveAppointment(UnicodeString ReportedError)			AppointmentActions_RemoveAppointment	Error		
-Microsoft-Windows-Immersive-Shell	8011	0	ContactManager_ShowContactCard(UInt32 HRESULT)			ContactManager_ShowContactCard	Error		
-Microsoft-Windows-Immersive-Shell	8012	0	ContactManager_ShowContactCard8012(UInt32 HRESULT)			ContactManager_ShowContactCard	Error		
-Microsoft-Windows-Immersive-Shell	8013	0	ContactManager_ShowContactCard8013(UInt32 HRESULT)			ContactManager_ShowContactCard	Error		
-Microsoft-Windows-Immersive-Shell	8014	0	ContactManager_ShowContactCard8014(UInt32 HRESULT)			ContactManager_ShowContactCard	Error		
-Microsoft-Windows-Immersive-Shell	8015	0	ContactManager_ShowContactCard8015(UInt32 HRESULT)			ContactManager_ShowContactCard	Error		
-Microsoft-Windows-Immersive-Shell	8016	0	ContactManager_ShowContactCard8016(UnicodeString ContactId, UnicodeString PropertyKey, UnicodeString PropertyValue)			ContactManager_ShowContactCard	Error		
-Microsoft-Windows-Immersive-Shell	8017	0	ContactManager_ShowContactCard8017()			ContactManager_ShowContactCard	Informational		
-Microsoft-Windows-Immersive-Shell	8019	0	ContactManager_ShowContactCardStart()	Start		ContactManager_ShowContactCard	Informational		
-Microsoft-Windows-Immersive-Shell	8020	0	ContactManager_ShowContactCardStop()	Stop		ContactManager_ShowContactCard	Informational		
-Microsoft-Windows-Immersive-Shell	8023	0	ContactManager_ShowContactCard8023(UInt32 HRESULT)			ContactManager_ShowContactCard	Error		
-Microsoft-Windows-Immersive-Shell	8024	0	ContactManager_ShowContactCard8024(UInt32 NumberOfContacts, UnicodeString ContactId)			ContactManager_ShowContactCard	Warning		
 Microsoft-Windows-Immersive-Shell	8025	0	AppointmentActions_ExecuteAction(UnicodeString ActionType, UInt32 HRESULT)			AppointmentActions_ExecuteAction	Error		
 Microsoft-Windows-Immersive-Shell	8027	0	AppointmentActions_ReplaceAppointment(UnicodeString ReportedError)			AppointmentActions_ReplaceAppointment	Error		
 Microsoft-Windows-Immersive-Shell	8028	0	ContactManager_InitializeActionControlsStart()	Start		ContactManager_InitializeActionControls	Informational		
 Microsoft-Windows-Immersive-Shell	8029	0	ContactManager_InitializeActionControlsStop()	Stop		ContactManager_InitializeActionControls	Informational		
 Microsoft-Windows-Immersive-Shell	8030	0	ContactsProvider_QueryContactServiceInformationStart()	Start		ContactsProvider_QueryContactServiceInformation	Informational		
 Microsoft-Windows-Immersive-Shell	8031	0	ContactsProvider_QueryContactServiceInformationStop()	Stop		ContactsProvider_QueryContactServiceInformation	Informational		
-Microsoft-Windows-Immersive-Shell	8202	0	BackStackMusicPlay_PreLaunchStart(UnicodeString AppId)	Start		BackStackMusicPlay_PreLaunch	Informational		
-Microsoft-Windows-Immersive-Shell	8203	0	BackStackMusicPlay_PreLaunchStop(UnicodeString AppId)	Stop		BackStackMusicPlay_PreLaunch	Informational		
 Microsoft-Windows-Immersive-Shell	8205	0	BackStackMusicPlay_Invoke_MusicSuggestion(UnicodeString PackageId, UnicodeString ActivatableClassId, UnicodeString Verb)			BackStackMusicPlay_Invoke_MusicSuggestion	Informational		
 Microsoft-Windows-Immersive-Shell	8207	0	BackStackMusicPlay_Mark_Interactive(UnicodeString AppId)			BackStackMusicPlay_Mark_Interactive	Informational		
 Microsoft-Windows-Immersive-Shell	8209	0	BackStackMusicPlay_Show_MTC_UI(UnicodeString AppId)			BackStackMusicPlay_Show_MTC_UI	Informational		
@@ -1484,27 +734,12 @@ Microsoft-Windows-Immersive-Shell	8220	0	BackStackMusicPlay_Playback_Started()		
 Microsoft-Windows-Immersive-Shell	8222	0	BackStackMusicPlay_Mark_NonInteractive(UnicodeString AppId)			BackStackMusicPlay_Mark_NonInteractive	Informational		
 Microsoft-Windows-Immersive-Shell	9950	0	TWinUICreateInstance_SxS(UnicodeString CallerModule, UnicodeString ObjectModule, UnicodeString CLSID)			TWinUICreateInstance_SxS	Informational		
 Microsoft-Windows-Immersive-Shell	9951	0	DllGetClassObject_SxS(UnicodeString SxSModule, UnicodeString CLSID)			DllGetClassObject_SxS	Informational		
-Microsoft-Windows-Immersive-Shell	9980	0	LauncherApps_SearchClearButtonPressed()			LauncherApps_SearchClearButtonPressed	Informational		
-Microsoft-Windows-Immersive-Shell	9981	0	LauncherApps_SearchBoxFocused()			LauncherApps_SearchBoxFocused	Informational		
 Microsoft-Windows-Immersive-Shell	10000	0	WindowLayoutChangeStart(UInt32 hWnd)	Start		WindowLayoutChange	Informational		
 Microsoft-Windows-Immersive-Shell	11100	0	PLM_PriorityChanged(UnicodeString PsmKey, UInt32 Priority)		PLMComponent	PLM_PriorityChanged	Informational		
-Microsoft-Windows-Immersive-Shell	11101	0	PLM_PriorityChangedStart(UnicodeString PsmKey, UInt32 TimerType, UInt32 ExpirationTimeMs)	Start	PLMComponent	PLM_PriorityChanged	Informational		
-Microsoft-Windows-Immersive-Shell	11102	0	PLM_PriorityChangedStop(UnicodeString PsmKey, UInt32 TimerType, UInt32 CpuRunningTimeMs, UInt32 CpuReadyTimeMs, UInt32 IoOpportunityTimeMs, UInt32 IoNonLowIdleTimeMs, UInt32 IoAllPrioritiesIdleTimeMs, UInt32 ExpirationTimeInWallClockModeMs, UInt32 CpuRunningBudgetMs, UInt32 OpportunityBudgetMs, UInt32 IoNonLowReadCount, UInt32 IoNonLowWriteCount, UInt32 IoNonLowFlushCount, UInt32 IoAllPrioritiesReadCount, UInt32 IoAllPrioritiesWriteCount, UInt32 IoAllPrioritiesFlushCount)	Stop	PLMComponent	PLM_PriorityChanged	Informational		
-Microsoft-Windows-Immersive-Shell	11103	0	PLM_PriorityChanged11103(UnicodeString PsmKey, UInt32 TimerType, UInt32 CpuRunningTimeMs, UInt32 CpuReadyTimeMs, UInt32 IoOpportunityTimeMs, UInt32 IoNonLowIdleTimeMs, UInt32 IoAllPrioritiesIdleTimeMs, UInt32 ExpirationTimeMs, UInt32 CpuRunningBudgetMs, UInt32 OpportunityBudgetMs, UInt32 IoNonLowReadCount, UInt32 IoNonLowWriteCount, UInt32 IoNonLowFlushCount, UInt32 IoAllPrioritiesReadCount, UInt32 IoAllPrioritiesWriteCount, UInt32 IoAllPrioritiesFlushCount)		PLMComponent	PLM_PriorityChanged	Informational		
-Microsoft-Windows-Immersive-Shell	11104	0	PLM_GpuThrottling(UnicodeString PsmKey, UInt32 Mode, Boolean IsSimulated)		PLMComponent	PLM_GpuThrottling	Informational		
-Microsoft-Windows-Immersive-Shell	11105	0	PLM_GpuThrottling11105(UnicodeString PsmKey, Boolean SetPause)		PLMComponent	PLM_GpuThrottling	Informational		
-Microsoft-Windows-Immersive-Shell	11106	0	PLM_PriorityChanged11106(UnicodeString PsmKey, UInt32 TimerType, UInt32 ExpirationTimeMs, Boolean SetPause)		PLMComponent	PLM_PriorityChanged	Informational		
-Microsoft-Windows-Immersive-Shell	11107	0	PLM_GpuThrottling11107(UnicodeString PsmKey, UInt32 DurationMs, UInt32 TotalPausedDurationMs, UInt32 TransitionsIntoPausedCount, UInt32 TotalInterferenceCount)		PLMComponent	PLM_GpuThrottling	Informational		
-Microsoft-Windows-Immersive-Shell	11108	0	PLM_ApplicationLaunch(UnicodeString PsmKey, UnicodeString PackageFullName, UnicodeString AppUserModelId, UInt32 Flags, UInt32 TerminateReason)		PLMComponent	PLM_ApplicationLaunch	Informational		
-Microsoft-Windows-Immersive-Shell	11109	0	PLM_ApplicationLaunch11109(UnicodeString PsmKey, UnicodeString PackageFullName, UnicodeString AppUserModelId, UInt32 TerminateReason, UnicodeString ContractId, UInt32 TerminatedDurationSeconds, UInt32 Flags)		PLMComponent	PLM_ApplicationLaunch	Informational		
 Microsoft-Windows-Immersive-Shell	11110	0	PLM_TerminateApp(UnicodeString PsmKey, UnicodeString PackageFullName, UnicodeString AppUserModelId, UInt32 Flags, UInt32 TerminateReason)		PLMComponent	PLM_TerminateApp	Informational		
 Microsoft-Windows-Immersive-Shell	11111	0	PLM_StartUp_PsmRegisterFailure(UInt32 NTSTATUS)		PLMComponent	PLM_StartUp_PsmRegisterFailure	Error		
-Microsoft-Windows-Immersive-Shell	11112	0	PLM_TerminateApp11112(UnicodeString PsmKey, UnicodeString PackageFullName, UnicodeString AppUserModelId, UInt32 Flags, UInt32 RelaunchTerminationDurationMs, UInt32 TerminateReason)		PLMComponent	PLM_TerminateApp	Informational		
-Microsoft-Windows-Immersive-Shell	11113	0	PerfTrack_PLM_SuspendApplication11113(UnicodeString PsmKey, UnicodeString PackageFullName, UnicodeString AppUserModelId, UInt32 Flags, UInt32 TotalSuspendDurationMs, UInt32 FrameworkQuiesceDurationMs, UInt32 RequestedTimeoutExtensionMs, UInt32 AppQuiesceDurationMs)		PLMComponent	PerfTrack_PLM_SuspendApplication	Informational		
-Microsoft-Windows-Immersive-Shell	11114	0	PLM_ApplicationLaunch11114(UnicodeString PsmKey, UnicodeString PackageFullName, UnicodeString AppUserModelId, UInt32 Flags)		PLMComponent	PLM_ApplicationLaunch	Informational		
 Microsoft-Windows-Immersive-Shell	11115	0	PLM_QuiesceHangReport(UnicodeString PsmKey)		PLMComponent	PLM_QuiesceHangReport	Informational		
 Microsoft-Windows-Immersive-Shell	11116	0	PLM_ActivationHangReport(UnicodeString PsmKey)		PLMComponent	PLM_ActivationHangReport	Informational		
-Microsoft-Windows-Immersive-Shell	11117	0	PLM_ApplicationHangStop11117(Pointer HWND, UInt32 Source, UnicodeString PsmKey, UInt32 ReportDeniedReason)	Stop	PLMComponent	PLM_ApplicationHang	Informational		
 Microsoft-Windows-Immersive-Shell	11118	0	PerfTrack_PLM_ResumeApplication_EndToEndStart(UnicodeString PsmKey)	Start	PLMComponent	PerfTrack_PLM_ResumeApplication_EndToEnd	Informational		
 Microsoft-Windows-Immersive-Shell	11119	0	PerfTrack_PLM_ResumeApplication_EndToEndStop(UnicodeString PsmKey, UnicodeString PackageFullName, UnicodeString AppUserModelId, UInt32 PackedResumeDurationsMs_HiWordAppLoWordPackage, UInt32 Flags)	Stop	PLMComponent	PerfTrack_PLM_ResumeApplication_EndToEnd	Informational		
 Microsoft-Windows-Immersive-Shell	11120	0	PLM_ExecutionReasonStart(UnicodeString PsmKey, UInt32 ExecutionReason)	Start	PLMComponent	PLM_ExecutionReason	Informational		
@@ -1533,24 +768,4 @@ Microsoft-Windows-Immersive-Shell	11304	0	LockScreenCallBroker_EndCallStop(GUID 
 Microsoft-Windows-Immersive-Shell	11305	0	LockScreenCallBroker_AppLaunched(GUID ConnectionGUID, UnicodeString AppID, UnicodeString AppArguments, Boolean AppAlreadyRunning)		LockScreenCallBroker	LockScreenCallBroker_AppLaunched	Informational		
 Microsoft-Windows-Immersive-Shell	11306	0	LockScreenCallBroker_VisualsChanged(GUID ConnectionGUID, Pointer NewHWND, Boolean NewHWNDIsSplashScreen, Boolean CrossFaded)		LockScreenCallBroker	LockScreenCallBroker_VisualsChanged	Informational		
 Microsoft-Windows-Immersive-Shell	11307	0	LockScreenCallBroker_CallTitleChanged(GUID ConnectionGUID, UnicodeString NewName)		LockScreenCallBroker	LockScreenCallBroker_CallTitleChanged	Informational		
-Microsoft-Windows-Immersive-Shell	11308	0	LockScreenCallBroker_SetCallViewStateToLockScreen(GUID ConnectionGUID, Pointer ImmersiveApp)		LockScreenCallBroker	LockScreenCallBroker_SetCallViewStateToLockScreen	Informational		
-Microsoft-Windows-Immersive-Shell	11309	0	LockScreenCallBroker_SetCallViewStateToNormal(GUID ConnectionGUID, Pointer ImmersiveApp)		LockScreenCallBroker	LockScreenCallBroker_SetCallViewStateToNormal	Informational		
-Microsoft-Windows-Immersive-Shell	11321	0	StartButton_Visual_StateChangeStart(Int32 OldState, Int32 NewState)	Start		StartButton_Visual_StateChange	Informational		
-Microsoft-Windows-Immersive-Shell	11322	0	StartButton_Visual_StateChangeStop(Int32 OldState, Int32 NewState)	Stop		StartButton_Visual_StateChange	Informational		
-Microsoft-Windows-Immersive-Shell	11323	0	StartButton_Visual_AnimationStart(Int32 AnimationType)	Start		StartButton_Visual_Animation	Informational		
-Microsoft-Windows-Immersive-Shell	11324	0	StartButton_Visual_AnimationStop(Int32 AnimationType)	Stop		StartButton_Visual_Animation	Informational		
-Microsoft-Windows-Immersive-Shell	11501	0	DesktopSwitchManager_GhostWindow_VisibleStart()	Start		DesktopSwitchManager_GhostWindow_Visible	Informational		
-Microsoft-Windows-Immersive-Shell	11502	0	DesktopSwitchManager_GhostWindow_VisibleStop()	Stop		DesktopSwitchManager_GhostWindow_Visible	Informational		
-Microsoft-Windows-Immersive-Shell	11511	0	DesktopSwitchManager_Task_MinimizeWindows_ReadyStart()	Start		DesktopSwitchManager_Task_MinimizeWindows_Ready	Informational		
-Microsoft-Windows-Immersive-Shell	11512	0	DesktopSwitchManager_Task_MinimizeWindows_ReadyStop()	Stop		DesktopSwitchManager_Task_MinimizeWindows_Ready	Informational		
-Microsoft-Windows-Immersive-Shell	11515	0	DesktopSwitchManager_Task_MinimizeWindows_UnreadyStart()	Start		DesktopSwitchManager_Task_MinimizeWindows_Unready	Informational		
-Microsoft-Windows-Immersive-Shell	11516	0	DesktopSwitchManager_Task_MinimizeWindows_UnreadyStop()	Stop		DesktopSwitchManager_Task_MinimizeWindows_Unready	Informational		
-Microsoft-Windows-Immersive-Shell	11521	0	DesktopSwitchManager_Task_EmptyPages_ReadyStart()	Start		DesktopSwitchManager_Task_EmptyPages_Ready	Informational		
-Microsoft-Windows-Immersive-Shell	11522	0	DesktopSwitchManager_Task_EmptyPages_ReadyStop()	Stop		DesktopSwitchManager_Task_EmptyPages_Ready	Informational		
-Microsoft-Windows-Immersive-Shell	11525	0	DesktopSwitchManager_Task_EmptyPages_UnreadyStart()	Start		DesktopSwitchManager_Task_EmptyPages_Unready	Informational		
-Microsoft-Windows-Immersive-Shell	11526	0	DesktopSwitchManager_Task_EmptyPages_UnreadyStop()	Stop		DesktopSwitchManager_Task_EmptyPages_Unready	Informational		
-Microsoft-Windows-Immersive-Shell	11531	0	DesktopSwitchManager_Task_DesktopIcons_ReadyStart()	Start		DesktopSwitchManager_Task_DesktopIcons_Ready	Informational		
-Microsoft-Windows-Immersive-Shell	11532	0	DesktopSwitchManager_Task_DesktopIcons_ReadyStop()	Stop		DesktopSwitchManager_Task_DesktopIcons_Ready	Informational		
-Microsoft-Windows-Immersive-Shell	11535	0	DesktopSwitchManager_Task_DesktopIcons_UnreadyStart()	Start		DesktopSwitchManager_Task_DesktopIcons_Unready	Informational		
-Microsoft-Windows-Immersive-Shell	11536	0	DesktopSwitchManager_Task_DesktopIcons_UnreadyStop()	Stop		DesktopSwitchManager_Task_DesktopIcons_Unready	Informational		
 Microsoft-Windows-Immersive-Shell	11537	0	ExperienceManager_ShellExperienceHost_Killed()			ExperienceManager_ShellExperienceHost_Killed	Informational		

@@ -1,2 +1,3 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
 Microsoft-Windows-EDP-Audit-Regular	201	0	task_0(SID UserId, UnicodeString Policy, UnicodeString Justification, UnicodeString SourceEnterpriseId, UnicodeString SourceAppName, UnicodeString DestinationEnterpriseId, UnicodeString DestinationAppName, UnicodeString DataInfo)		EDP_Audit_Keyword_DataCopied	task_0	Informational		
+Microsoft-Windows-EDP-Audit-Regular	301	0	task_0301(SID UserId, UnicodeString Policy, UnicodeString Object, UInt32 Action, UnicodeString SourceName, UnicodeString SourceEnterpriseId, UnicodeString DestinationName, UnicodeString DestinationEnterpriseId, UnicodeString ApplicationName)		EDP_Audit_Keyword_ApplicationGenerated	task_0	Informational		

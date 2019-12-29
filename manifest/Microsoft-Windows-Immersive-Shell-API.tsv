@@ -1,79 +1,4 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-Immersive-Shell-API	1601	0	ItemStateStore_GetItemStart(UnicodeString AppUserModelID)	Start		ItemStateStore_GetItem	Informational		
-Microsoft-Windows-Immersive-Shell-API	1602	0	ItemStateStore_GetItemStop(UnicodeString AppUserModelID)	Stop		ItemStateStore_GetItem	Informational		
-Microsoft-Windows-Immersive-Shell-API	1603	0	ItemStateStore_EnumItemsStart()	Start		ItemStateStore_EnumItems	Informational		
-Microsoft-Windows-Immersive-Shell-API	1604	0	ItemStateStore_EnumItemsStop()	Stop		ItemStateStore_EnumItems	Informational		
-Microsoft-Windows-Immersive-Shell-API	1605	0	ItemStateStore_ModifyStart()	Start		ItemStateStore_Modify	Informational		
-Microsoft-Windows-Immersive-Shell-API	1606	0	ItemStateStore_ModifyStop()	Stop		ItemStateStore_Modify	Informational		
-Microsoft-Windows-Immersive-Shell-API	1607	0	ItemStateStore_AppendNewItemStart(UnicodeString AppUserModelID)	Start		ItemStateStore_AppendNewItem	Informational		
-Microsoft-Windows-Immersive-Shell-API	1608	0	ItemStateStore_AppendNewItemStop(UnicodeString AppUserModelID)	Stop		ItemStateStore_AppendNewItem	Informational		
-Microsoft-Windows-Immersive-Shell-API	1609	0	ItemStateStore_MoveItemAfterStart(UnicodeString AppUserModelIDToMove, UnicodeString AppUserModelIDToInsertAfter)	Start		ItemStateStore_MoveItemAfter	Informational		
-Microsoft-Windows-Immersive-Shell-API	1610	0	ItemStateStore_MoveItemAfterStop(UnicodeString AppUserModelIDToMove, UnicodeString AppUserModelIDToInsertAfter)	Stop		ItemStateStore_MoveItemAfter	Informational		
-Microsoft-Windows-Immersive-Shell-API	1611	0	ItemStateStore_MoveGroupStart(UnicodeString AppUserModelIDInGroupToMove, UnicodeString AppUserModelIDOfGroupReference)	Start		ItemStateStore_MoveGroup	Informational		
-Microsoft-Windows-Immersive-Shell-API	1612	0	ItemStateStore_MoveGroupStop(UnicodeString AppUserModelIDInGroupToMove, UnicodeString AppUserModelIDOfGroupReference)	Stop		ItemStateStore_MoveGroup	Informational		
-Microsoft-Windows-Immersive-Shell-API	1613	0	ItemStateStore_CommitStart()	Start		ItemStateStore_Commit	Informational		
-Microsoft-Windows-Immersive-Shell-API	1614	0	ItemStateStore_CommitStop()	Stop		ItemStateStore_Commit	Informational		
-Microsoft-Windows-Immersive-Shell-API	1615	0	ItemStateStore_RemoveItemStart(UnicodeString AppUserModelID)	Start		ItemStateStore_RemoveItem	Informational		
-Microsoft-Windows-Immersive-Shell-API	1616	0	ItemStateStore_RemoveItemStop(UnicodeString AppUserModelID)	Stop		ItemStateStore_RemoveItem	Informational		
-Microsoft-Windows-Immersive-Shell-API	1617	0	ItemStateStore_PurgeRemovedItemsStart(UInt32 IsAutomaticCleanup)	Start		ItemStateStore_PurgeRemovedItems	Informational		
-Microsoft-Windows-Immersive-Shell-API	1618	0	ItemStateStore_PurgeRemovedItemsStop(UInt32 IsAutomaticCleanup)	Stop		ItemStateStore_PurgeRemovedItems	Informational		
-Microsoft-Windows-Immersive-Shell-API	1619	0	ItemStateStore_PurgeRemovedItems(UnicodeString AppUserModelID)			ItemStateStore_PurgeRemovedItems	Informational		
-Microsoft-Windows-Immersive-Shell-API	1621	0	ItemStateStore_EnsureCacheStart()	Start		ItemStateStore_EnsureCache	Informational		
-Microsoft-Windows-Immersive-Shell-API	1622	0	ItemStateStore_EnsureCacheStop()	Stop		ItemStateStore_EnsureCache	Informational		
-Microsoft-Windows-Immersive-Shell-API	1623	0	ItemStateStore_EnsureCache()			ItemStateStore_EnsureCache	Informational		
-Microsoft-Windows-Immersive-Shell-API	1624	0	ItemStateStore_EnsureCache1624()			ItemStateStore_EnsureCache	Informational		
-Microsoft-Windows-Immersive-Shell-API	1625	0	ItemStateStore_LoadStart(UnicodeString FileName)	Start		ItemStateStore_Load	Informational		
-Microsoft-Windows-Immersive-Shell-API	1626	0	ItemStateStore_LoadStop(UnicodeString FileName, UInt32 Result)	Stop		ItemStateStore_Load	Informational		
-Microsoft-Windows-Immersive-Shell-API	1627	0	ItemStateStore_Load(UnicodeString FileName)			ItemStateStore_Load	Informational		
-Microsoft-Windows-Immersive-Shell-API	1629	0	ItemStateStore_SaveStart(UnicodeString FileName)	Start		ItemStateStore_Save	Informational		
-Microsoft-Windows-Immersive-Shell-API	1630	0	ItemStateStore_SaveStop(UnicodeString FileName, UInt32 Result)	Stop		ItemStateStore_Save	Informational		
-Microsoft-Windows-Immersive-Shell-API	1631	0	ItemStateStore_Save(UnicodeString FileName)			ItemStateStore_Save	Informational		
-Microsoft-Windows-Immersive-Shell-API	1633	0	ItemStateStore_StoreBackupStart()	Start		ItemStateStore_StoreBackup	Informational		
-Microsoft-Windows-Immersive-Shell-API	1634	0	ItemStateStore_StoreBackupStop()	Stop		ItemStateStore_StoreBackup	Informational		
-Microsoft-Windows-Immersive-Shell-API	1635	0	ItemStateStore_RebalanceStart()	Start		ItemStateStore_Rebalance	Informational		
-Microsoft-Windows-Immersive-Shell-API	1636	0	ItemStateStore_RebalanceStop()	Stop		ItemStateStore_Rebalance	Informational		
-Microsoft-Windows-Immersive-Shell-API	1637	0	ItemStateStore_Rebalance(GUID SqmSessionGuid, UInt32 SqmID, UInt32 SqmType, UInt32 SqmDWORDDatapointValue)			ItemStateStore_Rebalance	Informational		
-Microsoft-Windows-Immersive-Shell-API	1638	0	ItemStateStore_ChangeItemTileSizeStart(UnicodeString AppID, UInt32 ValueToSet)	Start		ItemStateStore_ChangeItemTileSize	Informational		
-Microsoft-Windows-Immersive-Shell-API	1639	0	ItemStateStore_ChangeItemTileSizeStop()	Stop		ItemStateStore_ChangeItemTileSize	Informational		
-Microsoft-Windows-Immersive-Shell-API	1640	0	ItemStateStore_ChangeItemViewStart(UnicodeString AppID, UInt32 ValueToSet)	Start		ItemStateStore_ChangeItemView	Informational		
-Microsoft-Windows-Immersive-Shell-API	1641	0	ItemStateStore_ChangeItemViewStop()	Stop		ItemStateStore_ChangeItemView	Informational		
-Microsoft-Windows-Immersive-Shell-API	1642	0	ItemStateStore_ChangeItemAppStateStart(UnicodeString AppID, UInt32 ValueToSet)	Start		ItemStateStore_ChangeItemAppState	Informational		
-Microsoft-Windows-Immersive-Shell-API	1643	0	ItemStateStore_ChangeItemAppStateStop()	Stop		ItemStateStore_ChangeItemAppState	Informational		
-Microsoft-Windows-Immersive-Shell-API	1644	0	ItemStateStore_ReplaceItemStart(UnicodeString PreviousAppID, UnicodeString NewAppID, UInt32 TileSize, UInt32 AppState)	Start		ItemStateStore_ReplaceItem	Informational		
-Microsoft-Windows-Immersive-Shell-API	1645	0	ItemStateStore_ReplaceItemStop()	Stop		ItemStateStore_ReplaceItem	Informational		
-Microsoft-Windows-Immersive-Shell-API	1646	0	ItemStateStore_SetGroupNameStart(UnicodeString AppID, UnicodeString Name)	Start		ItemStateStore_SetGroupName	Informational		
-Microsoft-Windows-Immersive-Shell-API	1647	0	ItemStateStore_SetGroupNameStop()	Stop		ItemStateStore_SetGroupName	Informational		
-Microsoft-Windows-Immersive-Shell-API	1648	0	ItemStateStore_EnforceCapOnItemTileSizeStart(UnicodeString AppID, UInt32 ValueToSet)	Start		ItemStateStore_EnforceCapOnItemTileSize	Informational		
-Microsoft-Windows-Immersive-Shell-API	1649	0	ItemStateStore_EnforceCapOnItemTileSizeStop()	Stop		ItemStateStore_EnforceCapOnItemTileSize	Informational		
-Microsoft-Windows-Immersive-Shell-API	1650	0	task_0(UInt32 OldValue, UInt32 NewValue)			task_0	Informational		
-Microsoft-Windows-Immersive-Shell-API	1651	0	ItemStateStore_Commit()			ItemStateStore_Commit	Informational		
-Microsoft-Windows-Immersive-Shell-API	1652	0	ItemStateStore_Commit1652()			ItemStateStore_Commit	Informational		
-Microsoft-Windows-Immersive-Shell-API	1653	0	ItemStateStore_UpdateGroupInfoStart(UnicodeString AppUserModelID)	Start		ItemStateStore_UpdateGroupInfo	Informational		
-Microsoft-Windows-Immersive-Shell-API	1654	0	ItemStateStore_UpdateGroupInfoStop(UnicodeString AppUserModelID)	Stop		ItemStateStore_UpdateGroupInfo	Informational		
-Microsoft-Windows-Immersive-Shell-API	1655	0	ItemStateStore_GetGroupInfoStart(UnicodeString AppUserModelID)	Start		ItemStateStore_GetGroupInfo	Informational		
-Microsoft-Windows-Immersive-Shell-API	1656	0	ItemStateStore_GetGroupInfoStop(UnicodeString AppUserModelID)	Stop		ItemStateStore_GetGroupInfo	Informational		
-Microsoft-Windows-Immersive-Shell-API	1657	0	Publisher_PublishStart(UnicodeString Scenario)	Start		Publisher_Publish	Informational		
-Microsoft-Windows-Immersive-Shell-API	1658	0	Publisher_PublishStop(UInt32 Result, UInt32 FailedAttempts)	Stop		Publisher_Publish	Informational		
-Microsoft-Windows-Immersive-Shell-API	1659	0	Publisher_RequestPublishStart(UInt32 Scenario)	Start		Publisher_RequestPublish	Informational		
-Microsoft-Windows-Immersive-Shell-API	1660	0	Publisher_RequestPublishStop(UInt32 Result)	Stop		Publisher_RequestPublish	Informational		
-Microsoft-Windows-Immersive-Shell-API	1661	0	Publisher_LoadRemoteLayout(UInt32 Result)			Publisher_LoadRemoteLayout	Informational		
-Microsoft-Windows-Immersive-Shell-API	1662	0	Publisher_Merge(UInt32 Result)			Publisher_Merge	Informational		
-Microsoft-Windows-Immersive-Shell-API	1663	0	Publisher_UpdateStart(UInt32 ItemCount, UInt32 GroupCount)	Start		Publisher_Update	Informational		
-Microsoft-Windows-Immersive-Shell-API	1664	0	Publisher_UpdateStop(UInt32 Result)	Stop		Publisher_Update	Informational		
-Microsoft-Windows-Immersive-Shell-API	1665	0	Publisher_Commit(UInt32 Result, Boolean LowPriority)			Publisher_Commit	Informational		
-Microsoft-Windows-Immersive-Shell-API	1666	0	Publisher_LoadStateStore(UInt32 Result)			Publisher_LoadStateStore	Informational		
-Microsoft-Windows-Immersive-Shell-API	1670	0	TileNotificatons_EnabledForApp_DataLayer(UnicodeString AppID)			TileNotificatons_EnabledForApp_DataLayer	Informational		
-Microsoft-Windows-Immersive-Shell-API	1671	0	TileNotificatons_DisabledForApp_DataLayer(UnicodeString AppID)			TileNotificatons_DisabledForApp_DataLayer	Informational		
-Microsoft-Windows-Immersive-Shell-API	1672	0	Publisher_Merge1672(Boolean CloudPriorityModeEnabled)			Publisher_Merge	Informational		
-Microsoft-Windows-Immersive-Shell-API	1800	0	AppLayoutItem(UnicodeString AppID, UnicodeString PackageFullName, UInt32 TileSize, UInt32 ShortcutLocation, UInt32 TileType, UInt32 TileOrder)		ElizaPrototype	AppLayoutItem	Informational		
-Microsoft-Windows-Immersive-Shell-API	1802	0	AppLaunch(UnicodeString AppID, UnicodeString PackageFullName, UInt32 ShortcutLocation)		ElizaPrototype	AppLaunch	Informational		
-Microsoft-Windows-Immersive-Shell-API	1804	0	AppSurfaceResize(UInt32 widthMenu, UInt32 heightMenu, UInt32 widthMonitor, UInt32 heightMonitor, UInt32 widthGrid, UInt32 heightGrid, UInt32 monitorDPI, UInt32 monitorPPI)		ElizaPrototype	AppSurfaceResize	Informational		
-Microsoft-Windows-Immersive-Shell-API	1961	0	ActionSpacePaneDismissStart()	Start		ActionSpacePaneDismiss	Informational		
-Microsoft-Windows-Immersive-Shell-API	1962	0	ActionSpacePaneDismiss()			ActionSpacePaneDismiss	Informational		
-Microsoft-Windows-Immersive-Shell-API	1963	0	ActionSpacePaneDismiss1963()			ActionSpacePaneDismiss	Informational		
-Microsoft-Windows-Immersive-Shell-API	1964	0	ActionSpacePaneDismiss1964(Pointer HWNDDestroyed)			ActionSpacePaneDismiss	Informational		
-Microsoft-Windows-Immersive-Shell-API	1971	0	ActionSpacePaneReflowStart()	Start		ActionSpacePaneReflow	Informational		
-Microsoft-Windows-Immersive-Shell-API	1972	0	ActionSpacePaneReflowStop()	Stop		ActionSpacePaneReflow	Informational		
 Microsoft-Windows-Immersive-Shell-API	2000	0	CoreApplicationActivationStart()	Start		CoreApplicationActivation	Informational		
 Microsoft-Windows-Immersive-Shell-API	2001	0	CoreApplicationActivationStop()	Stop		CoreApplicationActivation	Informational		
 Microsoft-Windows-Immersive-Shell-API	2002	0	CoreApplicationSuspensionStart()	Start		CoreApplicationSuspension	Informational		
@@ -96,13 +21,23 @@ Microsoft-Windows-Immersive-Shell-API	2018	0	CoreApplicationResumeHandlersStart(
 Microsoft-Windows-Immersive-Shell-API	2019	0	CoreApplicationResumeHandlersStop()	Stop		CoreApplicationResumeHandlers	Informational		
 Microsoft-Windows-Immersive-Shell-API	2020	0	CoreApplicationCreateNewViewStart()	Start		CoreApplicationCreateNewView	Informational		
 Microsoft-Windows-Immersive-Shell-API	2021	0	CoreApplicationCreateNewViewStop()	Stop		CoreApplicationCreateNewView	Informational		
+Microsoft-Windows-Immersive-Shell-API	2022	0	CoreApplicationEnteredBackgroundStart()	Start		CoreApplicationEnteredBackground	Informational		
+Microsoft-Windows-Immersive-Shell-API	2023	0	CoreApplicationEnteredBackgroundStop()	Stop		CoreApplicationEnteredBackground	Informational		
+Microsoft-Windows-Immersive-Shell-API	2024	0	CoreApplicationEnteredBackgroundDispatchStart()	Start		CoreApplicationEnteredBackgroundDispatch	Informational		
+Microsoft-Windows-Immersive-Shell-API	2025	0	CoreApplicationEnteredBackgroundDispatchStop()	Stop		CoreApplicationEnteredBackgroundDispatch	Informational		
+Microsoft-Windows-Immersive-Shell-API	2026	0	CoreApplicationLeavingBackgroundStart()	Start		CoreApplicationLeavingBackground	Informational		
+Microsoft-Windows-Immersive-Shell-API	2027	0	CoreApplicationLeavingBackgroundStop()	Stop		CoreApplicationLeavingBackground	Informational		
+Microsoft-Windows-Immersive-Shell-API	2028	0	CoreApplicationLeavingBackgroundDispatchStart()	Start		CoreApplicationLeavingBackgroundDispatch	Informational		
+Microsoft-Windows-Immersive-Shell-API	2029	0	CoreApplicationLeavingBackgroundDispatchStop()	Stop		CoreApplicationLeavingBackgroundDispatch	Informational		
 Microsoft-Windows-Immersive-Shell-API	2041	0	CoreApplicationPsmDoStateChange(UInt32 QuiesceBool)			CoreApplicationPsmDoStateChange	Informational		
 Microsoft-Windows-Immersive-Shell-API	2042	0	CoreApplicationQuiescePsmBlockUnblockASTA(UInt32 BlockUnblockBool, UInt32 ThreadId)			CoreApplicationQuiescePsmBlockUnblockASTA	Informational		
-Microsoft-Windows-Immersive-Shell-API	2043	0	CoreApplicationResumePsmBlockUnblockASTA(UInt32 BlockUnblockBool, UInt32 ThreadId)			CoreApplicationResumePsmBlockUnblockASTA	Informational		
 Microsoft-Windows-Immersive-Shell-API	2044	0	CoreApplicationQuiesceWaitForAppResume(UInt32 ThreadId)			CoreApplicationQuiesceWaitForAppResume	Informational		
 Microsoft-Windows-Immersive-Shell-API	2045	0	CoreApplicationViewInitializationProcessAndThread(UInt32 IsMainView, UInt32 Pid, UInt32 ThreadId)			CoreApplicationViewInitializationProcessAndThread	Informational		
 Microsoft-Windows-Immersive-Shell-API	2046	0	CoreApplicationSuspendingDeferralStart()	Start	Deferral	CoreApplicationSuspendingDeferral	Informational		
 Microsoft-Windows-Immersive-Shell-API	2047	0	CoreApplicationSuspendingDeferralStop()	Stop	Deferral	CoreApplicationSuspendingDeferral	Informational		
+Microsoft-Windows-Immersive-Shell-API	2048	0	CoreApplicationEnteredBackground()			CoreApplicationEnteredBackground	Informational		
+Microsoft-Windows-Immersive-Shell-API	2049	0	CoreApplicationLeavingBackground()			CoreApplicationLeavingBackground	Informational		
+Microsoft-Windows-Immersive-Shell-API	2050	0	CoreApplicationInvalidEventInProgress()			CoreApplicationInvalidEventInProgress	Informational		
 Microsoft-Windows-Immersive-Shell-API	2101	0	ImmersiveSettingsPane_ShowStart()	Start		ImmersiveSettingsPane_Show	Informational		
 Microsoft-Windows-Immersive-Shell-API	2102	0	ImmersiveSettingsPane_ShowStop(UInt32 Result)	Stop		ImmersiveSettingsPane_Show	Informational		
 Microsoft-Windows-Immersive-Shell-API	2104	0	ImmersiveSettingsPane_DispatchCommandStart()	Start		ImmersiveSettingsPane_DispatchCommand	Informational		
@@ -114,32 +49,6 @@ Microsoft-Windows-Immersive-Shell-API	2111	0	ImmersiveSettingsPane_RequestComman
 Microsoft-Windows-Immersive-Shell-API	2112	0	ImmersiveSettingsPane_RequestCommandsStop()	Stop		ImmersiveSettingsPane_RequestCommands	Informational		
 Microsoft-Windows-Immersive-Shell-API	2114	0	ImmersiveSettingsPane_CommandsRequestedEventHandler()			ImmersiveSettingsPane_CommandsRequestedEventHandler	Informational		
 Microsoft-Windows-Immersive-Shell-API	2115	0	ImmersiveSettingsPane_CommandsRequestedEventHandler2115()			ImmersiveSettingsPane_CommandsRequestedEventHandler	Informational		
-Microsoft-Windows-Immersive-Shell-API	2116	0	ImmersiveAccountsSettingsPane_ShowStart()	Start		ImmersiveAccountsSettingsPane_Show	Informational		
-Microsoft-Windows-Immersive-Shell-API	2117	0	ImmersiveAccountsSettingsPane_ShowStop(UInt32 Result)	Stop		ImmersiveAccountsSettingsPane_Show	Informational		
-Microsoft-Windows-Immersive-Shell-API	2118	0	ImmersiveAccountsSettingsPane_DispatchProviderCommandStart()	Start		ImmersiveAccountsSettingsPane_DispatchProviderCommand	Informational		
-Microsoft-Windows-Immersive-Shell-API	2119	0	ImmersiveAccountsSettingsPane_DispatchProviderCommand()			ImmersiveAccountsSettingsPane_DispatchProviderCommand	Informational		
-Microsoft-Windows-Immersive-Shell-API	2120	0	ImmersiveAccountsSettingsPane_DispatchProviderCommandStop(UInt32 Result)	Stop		ImmersiveAccountsSettingsPane_DispatchProviderCommand	Informational		
-Microsoft-Windows-Immersive-Shell-API	2121	0	ImmersiveAccountsSettingsPane_DispatchAccountCommandStart()	Start		ImmersiveAccountsSettingsPane_DispatchAccountCommand	Informational		
-Microsoft-Windows-Immersive-Shell-API	2122	0	ImmersiveAccountsSettingsPane_DispatchAccountCommand()			ImmersiveAccountsSettingsPane_DispatchAccountCommand	Informational		
-Microsoft-Windows-Immersive-Shell-API	2123	0	ImmersiveAccountsSettingsPane_DispatchAccountCommandStop(UInt32 Result)	Stop		ImmersiveAccountsSettingsPane_DispatchAccountCommand	Informational		
-Microsoft-Windows-Immersive-Shell-API	2124	0	ImmersiveAccountsSettingsPane_DispatchCredentialCommandStart()	Start		ImmersiveAccountsSettingsPane_DispatchCredentialCommand	Informational		
-Microsoft-Windows-Immersive-Shell-API	2125	0	ImmersiveAccountsSettingsPane_DispatchCredentialCommand()			ImmersiveAccountsSettingsPane_DispatchCredentialCommand	Informational		
-Microsoft-Windows-Immersive-Shell-API	2126	0	ImmersiveAccountsSettingsPane_DispatchCredentialCommandStop(UInt32 Result)	Stop		ImmersiveAccountsSettingsPane_DispatchCredentialCommand	Informational		
-Microsoft-Windows-Immersive-Shell-API	2127	0	ImmersiveAccountsSettingsPane_DispatchCommandStart()	Start		ImmersiveAccountsSettingsPane_DispatchCommand	Informational		
-Microsoft-Windows-Immersive-Shell-API	2128	0	ImmersiveAccountsSettingsPane_DispatchCommand()			ImmersiveAccountsSettingsPane_DispatchCommand	Informational		
-Microsoft-Windows-Immersive-Shell-API	2129	0	ImmersiveAccountsSettingsPane_DispatchCommandStop(UInt32 Result)	Stop		ImmersiveAccountsSettingsPane_DispatchCommand	Informational		
-Microsoft-Windows-Immersive-Shell-API	2130	0	ImmersiveAccountsSettingsPane_QueryProviderCommandsStart()	Start		ImmersiveAccountsSettingsPane_QueryProviderCommands	Informational		
-Microsoft-Windows-Immersive-Shell-API	2131	0	ImmersiveAccountsSettingsPane_QueryProviderCommandsStop()	Stop		ImmersiveAccountsSettingsPane_QueryProviderCommands	Informational		
-Microsoft-Windows-Immersive-Shell-API	2132	0	ImmersiveAccountsSettingsPane_QueryAccountCommandsStart()	Start		ImmersiveAccountsSettingsPane_QueryAccountCommands	Informational		
-Microsoft-Windows-Immersive-Shell-API	2133	0	ImmersiveAccountsSettingsPane_QueryAccountCommandsStop()	Stop		ImmersiveAccountsSettingsPane_QueryAccountCommands	Informational		
-Microsoft-Windows-Immersive-Shell-API	2134	0	ImmersiveAccountsSettingsPane_QueryCredentialCommandsStart()	Start		ImmersiveAccountsSettingsPane_QueryCredentialCommands	Informational		
-Microsoft-Windows-Immersive-Shell-API	2135	0	ImmersiveAccountsSettingsPane_QueryCredentialCommandsStop()	Stop		ImmersiveAccountsSettingsPane_QueryCredentialCommands	Informational		
-Microsoft-Windows-Immersive-Shell-API	2136	0	ImmersiveAccountsSettingsPane_QueryCommandsStart()	Start		ImmersiveAccountsSettingsPane_QueryCommands	Informational		
-Microsoft-Windows-Immersive-Shell-API	2137	0	ImmersiveAccountsSettingsPane_QueryCommandsStop()	Stop		ImmersiveAccountsSettingsPane_QueryCommands	Informational		
-Microsoft-Windows-Immersive-Shell-API	2138	0	ImmersiveAccountsSettingsPane_RequestCommandsStart()	Start		ImmersiveAccountsSettingsPane_RequestCommands	Informational		
-Microsoft-Windows-Immersive-Shell-API	2139	0	ImmersiveAccountsSettingsPane_RequestCommandsStop()	Stop		ImmersiveAccountsSettingsPane_RequestCommands	Informational		
-Microsoft-Windows-Immersive-Shell-API	2140	0	ImmersiveAccountsSettingsPane_CommandsRequestedEventHandler()			ImmersiveAccountsSettingsPane_CommandsRequestedEventHandler	Informational		
-Microsoft-Windows-Immersive-Shell-API	2141	0	ImmersiveAccountsSettingsPane_CommandsRequestedEventHandler2141()			ImmersiveAccountsSettingsPane_CommandsRequestedEventHandler	Informational		
 Microsoft-Windows-Immersive-Shell-API	6000	0	SearchPane_API_GetForCurrentViewStart()	Start		SearchPane_API_GetForCurrentView	Informational		
 Microsoft-Windows-Immersive-Shell-API	6001	0	SearchPane_API_GetForCurrentViewStop()	Stop		SearchPane_API_GetForCurrentView	Informational		
 Microsoft-Windows-Immersive-Shell-API	6002	0	SearchPane_API_TypeAhead_AsyncImageDownloadStart()	Start		SearchPane_API_TypeAhead_AsyncImageDownload	Informational		
@@ -148,7 +57,6 @@ Microsoft-Windows-Immersive-Shell-API	6004	0	SearchPane_API_TypeAhead_DeferralCo
 Microsoft-Windows-Immersive-Shell-API	6005	0	SearchPane_API_TypeAhead_DeferralCompleteStop()	Stop		SearchPane_API_TypeAhead_DeferralComplete	Informational		
 Microsoft-Windows-Immersive-Shell-API	6200	0	DataTransferManager_API_AppReturnDataStart()	Start		DataTransferManager_API_AppReturnData	Informational		
 Microsoft-Windows-Immersive-Shell-API	6201	0	DataTransferManager_API_AppReturnDataStop(UnicodeString AppID)	Stop		DataTransferManager_API_AppReturnData	Informational		
-Microsoft-Windows-Immersive-Shell-API	6202	0	PerfTrack_ShareCharm_TimeToAppStart()	Start		PerfTrack_ShareCharm_TimeToApp	Informational		
 Microsoft-Windows-Immersive-Shell-API	6203	0	PerfTrack_ShareCharm_TimeToAppStop(UInt32 HWND, UnicodeString AppID)	Stop		PerfTrack_ShareCharm_TimeToApp	Informational		
 Microsoft-Windows-Immersive-Shell-API	6300	0	LaunchAsyncStart()	Start		LaunchAsync	Informational		
 Microsoft-Windows-Immersive-Shell-API	6301	0	LaunchAsyncStop()	Stop		LaunchAsync	Informational		

@@ -28,7 +28,7 @@ Microsoft-Windows-NWiFi	10025	0	task_010025(Pointer ContextHandle, GUID AdapterG
 Microsoft-Windows-NWiFi	10026	0	task_010026(Pointer ContextHandle, GUID AdapterGuid, UInt32 Status)		RSNA LwtDiagnostic ut:Configuration	task_0	Error		
 Microsoft-Windows-NWiFi	10027	0	task_010027(UInt32 FrameSequence, Binary SrcMAC, Binary DestMAC, UInt32 Status)		AuthUpcall ut:ReceivePath ut:Authentication	task_0	Informational		
 Microsoft-Windows-NWiFi	10028	0	task_010028(Pointer ContextHandle, GUID AdapterGuid, Binary SrcMAC, Binary DestMAC)		IODisp ut:SendPath ut:Authentication	task_0	Informational		
-Microsoft-Windows-NWiFi	10029	0	task_010029(Pointer Adapter, UInt32 OID, UInt32 PowerState)		NDISReq ut:Configuration	task_0	Error		
+Microsoft-Windows-NWiFi	10029	0	task_010029(Pointer Adapter, UInt32 OID, UInt32 PowerState, Boolean bBlockOidsDueToLowPowerState)		NDISReq ut:Configuration	task_0	Error		
 Microsoft-Windows-NWiFi	10030	0	task_010030(Pointer Adapter, UInt32 OID, UInt32 Status)		NDISReq ut:Configuration	task_0	Error		
 Microsoft-Windows-NWiFi	10031	0	task_010031(Pointer Adapter, UInt32 OID, UInt32 Status)		NDISReq ut:Configuration	task_0	Informational		
 Microsoft-Windows-NWiFi	10032	0	task_010032(Pointer Adapter, UInt32 OID, UInt32 Status)		NDISReq ut:Configuration	task_0	Informational		
@@ -71,7 +71,7 @@ Microsoft-Windows-NWiFi	10069	0	StoppingdevicenetworkatIMdriverStart(GUID Interf
 Microsoft-Windows-NWiFi	10070	0	StoppingdevicenetworkatIMdriverStop(GUID InterfaceGuid, Pointer ContextHandle, AnsiString MAC, AnsiString SSID)	Stop	SOFTAP	StoppingdevicenetworkatIMdriver	Informational		
 Microsoft-Windows-NWiFi	10071	0	StoppingdevicenetworkatIMdriverStop10071(GUID InterfaceGuid, UInt32 ErrorCode, Pointer ContextHandle, AnsiString MAC, AnsiString SSID)	Stop	SOFTAP	StoppingdevicenetworkatIMdriver	Informational		
 Microsoft-Windows-NWiFi	10072	0	task_010072(UInt32 PowerMgmtMode, Boolean PowerMgmtModeSupported, GUID AdapterGuid, Binary MAC, AnsiString SSID)		PowerMgmt	task_0	Informational		
-Microsoft-Windows-NWiFi	10073	0	EnterLowPowerState(GUID AdapterGuid, Boolean Halted)		SleepResume Telemetry	EnterLowPowerState	Informational		
+Microsoft-Windows-NWiFi	10073	0	EnterLowPowerState(GUID AdapterGuid, Boolean Halted, UInt32 NewPowerState)		SleepResume Telemetry	EnterLowPowerState	Informational		
 Microsoft-Windows-NWiFi	10074	0	LeaveLowPowerState(GUID AdapterGuid)		SleepResume Telemetry	LeaveLowPowerState	Informational		
 Microsoft-Windows-NWiFi	20000	0	ConnecttosamenetworkonresumeStart(GUID InterfaceGuid)	Start		Connecttosamenetworkonresume	Informational		
 Microsoft-Windows-NWiFi	20001	0	ConnecttonetworkonresumeafterinterveningdisconnectStart(GUID InterfaceGuid)	Start		Connecttonetworkonresumeafterinterveningdisconnect	Informational		

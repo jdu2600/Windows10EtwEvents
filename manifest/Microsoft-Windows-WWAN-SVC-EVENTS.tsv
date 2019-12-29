@@ -66,22 +66,22 @@ Microsoft-Windows-WWAN-SVC-EVENTS	7905	0	AccountManagementStop7905()	Stop	MbaeUp
 Microsoft-Windows-WWAN-SVC-EVENTS	8001	0	USSD(GUID InterfaceGuid, UInt32 RequestType, UInt8 DataCodingScheme, UInt8 StringLength)			USSD	Informational		
 Microsoft-Windows-WWAN-SVC-EVENTS	8002	0	USSD8002(GUID InterfaceGuid, UInt32 EventType, UInt32 SessionState, UInt8 DataCodingScheme, UInt8 StringLength)			USSD	Informational		
 Microsoft-Windows-WWAN-SVC-EVENTS	8003	0	USSD8003(GUID InterfaceGuid, UInt32 EventCode)			USSD	Informational		
-Microsoft-Windows-WWAN-SVC-EVENTS	10001	0	WWANServiceStartupStart(UInt8 CurrentOrNextState, UInt32 Location, UInt32 Context, GUID InterfaceGuid)	Start	keyword_200000000000	WWANServiceStartup	Informational		
-Microsoft-Windows-WWAN-SVC-EVENTS	10002	0	WWANServiceStartupStop(UInt8 CurrentOrNextState, UInt32 Location, UInt32 Context, GUID InterfaceGuid)	Stop	keyword_200000000000	WWANServiceStartup	Informational		
-Microsoft-Windows-WWAN-SVC-EVENTS	10011	0	WWANServiceShutdownStart(UInt8 CurrentOrNextState, UInt32 Location, UInt32 Context, GUID InterfaceGuid)	Start	keyword_200000000000	WWANServiceShutdown	Informational		
-Microsoft-Windows-WWAN-SVC-EVENTS	10012	0	WWANServiceShutdownStop(UInt8 CurrentOrNextState, UInt32 Location, UInt32 Context, GUID InterfaceGuid)	Stop	keyword_200000000000	WWANServiceShutdown	Informational		
-Microsoft-Windows-WWAN-SVC-EVENTS	10021	0	InterfaceInitializationTaskStart(UInt8 CurrentOrNextState, UInt32 Location, UInt32 Context, GUID InterfaceGuid)	Start	keyword_200000000000	InterfaceInitializationTask	Informational		
-Microsoft-Windows-WWAN-SVC-EVENTS	10022	0	InterfaceInitializationTaskStop(UInt8 CurrentOrNextState, UInt32 Location, UInt32 Context, GUID InterfaceGuid)	Stop	keyword_200000000000	InterfaceInitializationTask	Informational		
-Microsoft-Windows-WWAN-SVC-EVENTS	10031	0	RegisterTaskStart(UInt8 CurrentOrNextState, UInt32 Location, UInt32 Context, GUID InterfaceGuid)	Start	ut:L2ConnectPath keyword_200000000000	RegisterTask	Informational		
-Microsoft-Windows-WWAN-SVC-EVENTS	10032	0	RegisterTaskStop(UInt8 CurrentOrNextState, UInt32 Location, UInt32 Context, GUID InterfaceGuid)	Stop	ut:L2ConnectPath keyword_200000000000	RegisterTask	Informational		
-Microsoft-Windows-WWAN-SVC-EVENTS	10061	0	ConnectTaskStart(UInt8 CurrentOrNextState, UInt32 Location, UInt32 Context, GUID InterfaceGuid)	Start	ut:L2ConnectPath keyword_200000000000	ConnectTask	Informational		
-Microsoft-Windows-WWAN-SVC-EVENTS	10062	0	ConnectTaskStop(UInt8 CurrentOrNextState, UInt32 Location, UInt32 Context, GUID InterfaceGuid)	Stop	ut:L2ConnectPath keyword_200000000000	ConnectTask	Informational		
-Microsoft-Windows-WWAN-SVC-EVENTS	10071	0	ScanTaskStart(UInt8 CurrentOrNextState, UInt32 Location, UInt32 Context, GUID InterfaceGuid)	Start	keyword_200000000000	ScanTask	Informational		
-Microsoft-Windows-WWAN-SVC-EVENTS	10072	0	ScanTaskStop(UInt8 CurrentOrNextState, UInt32 Location, UInt32 Context, GUID InterfaceGuid)	Stop	keyword_200000000000	ScanTask	Informational		
-Microsoft-Windows-WWAN-SVC-EVENTS	10081	0	WWANServiceStartup_9Start(UInt8 CurrentOrNextState, UInt32 Location, UInt32 Context, GUID InterfaceGuid)	Start	keyword_200000000000	WWANServiceStartup_9	Informational		
-Microsoft-Windows-WWAN-SVC-EVENTS	10082	0	WWANServiceStartup_9Stop(UInt8 CurrentOrNextState, UInt32 Location, UInt32 Context, GUID InterfaceGuid)	Stop	keyword_200000000000	WWANServiceStartup_9	Informational		
-Microsoft-Windows-WWAN-SVC-EVENTS	10091	0	WWANServiceSuspendStart(UInt8 CurrentOrNextState, UInt32 Location, UInt32 Context, GUID InterfaceGuid)	Start	keyword_200000000000	WWANServiceSuspend	Informational		
-Microsoft-Windows-WWAN-SVC-EVENTS	10092	0	WWANServiceSuspendStop(UInt8 CurrentOrNextState, UInt32 Location, UInt32 Context, GUID InterfaceGuid)	Stop	keyword_200000000000	WWANServiceSuspend	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	10001	0	WWANServiceStartupStart()	Start	keyword_200000000000	WWANServiceStartup	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	10002	0	WWANServiceStartupStop()	Stop	keyword_200000000000	WWANServiceStartup	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	10011	0	WWANServiceShutdownStart()	Start	keyword_200000000000	WWANServiceShutdown	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	10012	0	WWANServiceShutdownStop()	Stop	keyword_200000000000	WWANServiceShutdown	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	10021	0	InterfaceInitializationTaskStart()	Start	keyword_200000000000	InterfaceInitializationTask	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	10022	0	InterfaceInitializationTaskStop()	Stop	keyword_200000000000	InterfaceInitializationTask	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	10031	0	RegisterTaskStart()	Start	ut:L2ConnectPath keyword_200000000000	RegisterTask	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	10032	0	RegisterTaskStop()	Stop	ut:L2ConnectPath keyword_200000000000	RegisterTask	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	10061	0	ConnectTaskStart()	Start	ut:L2ConnectPath keyword_200000000000	ConnectTask	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	10062	0	ConnectTaskStop()	Stop	ut:L2ConnectPath keyword_200000000000	ConnectTask	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	10071	0	ScanTaskStart()	Start	keyword_200000000000	ScanTask	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	10072	0	ScanTaskStop()	Stop	keyword_200000000000	ScanTask	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	10081	0	WWANServiceStartup_9Start()	Start	keyword_200000000000	WWANServiceStartup_9	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	10082	0	WWANServiceStartup_9Stop()	Stop	keyword_200000000000	WWANServiceStartup_9	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	10091	0	WWANServiceSuspendStart()	Start	keyword_200000000000	WWANServiceSuspend	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	10092	0	WWANServiceSuspendStop()	Stop	keyword_200000000000	WWANServiceSuspend	Informational		
 Microsoft-Windows-WWAN-SVC-EVENTS	11001	1	task_0OID_Handling_V1(GUID InterfaceGuid, UInt32 RequestId, UInt32 WwanStatus, UInt32 DeviceType, UInt32 CellularClass, UInt32 VoiceClass, UInt32 SimClass, UInt32 DataClass, UnicodeString CustomDataClass, UInt32 BandClass, UnicodeString CustomBandClass, UInt32 SmsCaps, UInt32 ControlCaps, UnicodeString DeviceId, UnicodeString Manufacturer, UnicodeString Model, UnicodeString FirmwareInfo, UInt32 MaxActivatedContexts, UInt32 AuthAlgoCaps)	OID_Handling	LwtDiagnostic WwanOid keyword_400000000000	task_0	Informational		
 Microsoft-Windows-WWAN-SVC-EVENTS	11002	1	task_0OID_Handling11002_V1(GUID InterfaceGuid, UInt32 RequestId, UInt32 ReadyState, UInt32 EmergencyMode, UnicodeString SubscriberId, UnicodeString SimIccId)	OID_Handling	LwtDiagnostic WwanOid keyword_400000000000	task_0	Informational		
 Microsoft-Windows-WWAN-SVC-EVENTS	11003	1	task_0OID_Handling11003_V1(GUID InterfaceGuid, UInt32 RequestId, UInt32 WwanStatus, UInt32 HwRadioState, UInt32 SwRadioState)	OID_Handling	LwtDiagnostic WwanOid keyword_400000000000	task_0	Informational		

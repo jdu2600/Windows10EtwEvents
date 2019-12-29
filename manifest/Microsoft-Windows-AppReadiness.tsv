@@ -39,6 +39,10 @@ Microsoft-Windows-AppReadiness	227	0	AppReadiness_User_ProcessTasks227(UnicodeSt
 Microsoft-Windows-AppReadiness	228	0	AppReadiness_User_ProcessTasks228(UnicodeString Task, Double Elapsed)		User keyword_400000000000	AppReadiness_User_ProcessTasks	Informational		
 Microsoft-Windows-AppReadiness	229	0	AppReadiness_User_ProcessTasks229(UnicodeString TaskId, UInt32 Priority)		User keyword_400000000000	AppReadiness_User_ProcessTasks	Informational		
 Microsoft-Windows-AppReadiness	230	0	AppReadiness_User_ProcessTasks230()		User keyword_400000000000	AppReadiness_User_ProcessTasks	Informational		
+Microsoft-Windows-AppReadiness	231	0	AppReadiness_User_ProcessTasksStart231()	Start	User keyword_400000000000	AppReadiness_User_ProcessTasks	Informational		
+Microsoft-Windows-AppReadiness	232	0	AppReadiness_User_ProcessTasksStop232(UInt32 ExitCode)	Stop	User keyword_400000000000	AppReadiness_User_ProcessTasks	Informational		
+Microsoft-Windows-AppReadiness	233	0	AppReadiness_User_ProcessTasksStart233()	Start	User keyword_400000000000	AppReadiness_User_ProcessTasks	Informational		
+Microsoft-Windows-AppReadiness	234	0	AppReadiness_User_ProcessTasksStop234(UInt32 ExitCode)	Stop	User keyword_400000000000	AppReadiness_User_ProcessTasks	Informational		
 Microsoft-Windows-AppReadiness	300	0	AppReadiness_ExecuteTaskStart(UnicodeString User, UnicodeString TaskId)	Start	Tasks	AppReadiness_ExecuteTask	Informational		
 Microsoft-Windows-AppReadiness	301	0	AppReadiness_ExecuteTaskStop(UnicodeString User, UnicodeString TaskId, Int32 Result, Double Duration)	Stop	Tasks	AppReadiness_ExecuteTask	Informational		
 Microsoft-Windows-AppReadiness	302	0	AppReadiness_ExecuteTaskStart302(UnicodeString User, UnicodeString GroupId)	Start	Tasks	AppReadiness_ExecuteTask	Informational		

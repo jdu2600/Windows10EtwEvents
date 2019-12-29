@@ -1,10 +1,13 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
 Microsoft-Windows-UserDataAccess-UnifiedStore	1	0	task_0(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		Error keyword_200000000000	task_0	Error		
 Microsoft-Windows-UserDataAccess-UnifiedStore	2	0	task_02(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		Warning keyword_200000000000	task_0	Warning		
+Microsoft-Windows-UserDataAccess-UnifiedStore	50	0	task_050(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		Unified_Store	task_0	Informational		
 Microsoft-Windows-UserDataAccess-UnifiedStore	101	0	task_0101(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		Error StateTransition	task_0	Error		
 Microsoft-Windows-UserDataAccess-UnifiedStore	102	0	task_0102(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		Warning StateTransition	task_0	Warning		
 Microsoft-Windows-UserDataAccess-UnifiedStore	1000	0	Trace(Pointer Message)		debug	Trace	Verbose		
 Microsoft-Windows-UserDataAccess-UnifiedStore	2000	0	task_02000(HexInt32 Arg1, UInt32 Arg2, UInt32 Arg3)		keyword_400000000000	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UnifiedStore	2001	0	task_02001(UInt32 Prop_Handle, Int32 Prop_INT)		keyword_400000000000	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UnifiedStore	2002	0	task_02002(UnicodeString Arg1, UInt64 Arg2, UInt64 Arg3)		keyword_400000000000	task_0	Warning		
 Microsoft-Windows-UserDataAccess-UnifiedStore	3000	0	task_03000()		Unified_Store	task_0	Informational		
 Microsoft-Windows-UserDataAccess-UnifiedStore	3001	0	task_03001(UInt64 Prop_UInt64, UInt32 Prop_Hex_UInt32)		Unified_Store Warning	task_0	Warning		
 Microsoft-Windows-UserDataAccess-UnifiedStore	3002	0	task_03002(HexInt32 Arg1, HexInt32 Arg2, HexInt32 Arg3)		Unified_Store Warning	task_0	Warning		
@@ -56,6 +59,8 @@ Microsoft-Windows-UserDataAccess-UnifiedStore	3048	0	task_03048(Int32 P1_HResult
 Microsoft-Windows-UserDataAccess-UnifiedStore	3049	0	task_03049(UInt32 Prop_Handle, UInt32 Prop_HRESULT, UInt32 Prop_UINT)		Unified_Store StateTransition	task_0	Critical		
 Microsoft-Windows-UserDataAccess-UnifiedStore	3050	0	task_03050(UInt32 Prop_Prop1, UInt32 Prop_Prop2)		Unified_Store StateTransition	task_0	Informational		
 Microsoft-Windows-UserDataAccess-UnifiedStore	3051	0	task_03051(UInt32 Prop_Prop1, UInt32 Prop_Prop2)		Unified_Store StateTransition	task_0	Critical		
+Microsoft-Windows-UserDataAccess-UnifiedStore	3052	0	task_03052()		Error StateTransition keyword_400000000000	task_0	Critical		
+Microsoft-Windows-UserDataAccess-UnifiedStore	3053	0	task_03053()		Error StateTransition keyword_400000000000	task_0	Critical		
 Microsoft-Windows-UserDataAccess-UnifiedStore	3070	0	task_03070(HexInt32 Arg1, HexInt32 Arg2, UInt32 Arg3, UInt32 Arg4, UInt32 Arg5, UInt32 Arg6, HexInt64 Arg7)		Unified_Store ChangeTracking	task_0	Informational		
 Microsoft-Windows-UserDataAccess-UnifiedStore	3071	0	task_03071(HexInt32 Arg1, HexInt32 Arg2, HexInt32 Arg3, HexInt32 Arg4, UInt32 Arg5)		Unified_Store ChangeTracking	task_0	Informational		
 Microsoft-Windows-UserDataAccess-UnifiedStore	3072	0	task_03072(HexInt32 Arg1, HexInt32 Arg2, Boolean Arg3)		Unified_Store ChangeTracking	task_0	Informational		

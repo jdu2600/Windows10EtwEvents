@@ -1,0 +1,280 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-AppV-Client	1	1	ClientStartupStart_V1()	Start	Startup	ClientStartup	Informational		
+Microsoft-AppV-Client	2	1	ClientShutdownStop_V1()	Stop	Shutdown	ClientShutdown	Informational		
+Microsoft-AppV-Client	3	1	ClientStartupStart3_V1(UnicodeString Item, UInt32 Error)	Start	Startup	ClientStartup	Error		
+Microsoft-AppV-Client	4	1	ClientStartupStart4_V1(UInt32 Error)	Start	Startup Logon	ClientStartup	Error		
+Microsoft-AppV-Client	5	1	UserLogonStart_V1(UInt32 ErrorHigh, UInt32 ErrorLow)	Start	Logon	UserLogon	Error		
+Microsoft-AppV-Client	6	1	UserLogoffStop_V1(UInt32 ErrorHigh, UInt32 ErrorLow)	Stop	Logoff	UserLogoff	Error		
+Microsoft-AppV-Client	7	1	APIRequestSend_V1(Int32 Error)	Send	API	APIRequest	Error		
+Microsoft-AppV-Client	8	1	UserLogonStart8_V1(UInt32 ErrorHigh, UInt32 ErrorLow)	Start	Logon	UserLogon	Error		
+Microsoft-AppV-Client	9	1	APIRequest9_V1(UInt32 CurrentImpersonationLevel)		API	APIRequest	Error		
+Microsoft-AppV-Client	10	1	APIRequest10_V1()		API	APIRequest	Error		
+Microsoft-AppV-Client	11	1	ClientStartup_V1(UInt32 ErrorHigh, UInt32 ErrorLow)		Startup	ClientStartup	Warning		
+Microsoft-AppV-Client	12	1	ClientShutdown_V1(UInt32 ErrorHigh, UInt32 ErrorLow)		Shutdown	ClientShutdown	Warning		
+Microsoft-AppV-Client	13	0	APIRequest(Int32 Error)			APIRequest	Warning		
+Microsoft-AppV-Client	14	1	ClientStartupStart14_V1()	Start	Startup	ClientStartup	Error		
+Microsoft-AppV-Client	15	1	ClientStartupStart15_V1()	Start	Startup	ClientStartup	Error		
+Microsoft-AppV-Client	101	1	APIRequestStart_V1(UnicodeString Item)	Start		APIRequest	Informational		
+Microsoft-AppV-Client	102	1	APIRequestStop_V1(UnicodeString Name, Int32 HResult)	Stop		APIRequest	Informational		
+Microsoft-AppV-Client	1001	1	ClientShutdownStop1001_V1(UInt32 ErrorHigh, UInt32 ErrorLow)	Stop	Shutdown	ClientShutdown	Error		
+Microsoft-AppV-Client	1002	1	ConfigurePackage_V1(GUID Package, GUID Version, UnicodeString Folder)		Publishing	ConfigurePackage	Informational		
+Microsoft-AppV-Client	1003	1	PublishPackage_V1(GUID Package, GUID Version)		Publishing	PublishPackage	Informational		
+Microsoft-AppV-Client	1004	1	PublishPackage1004_V1(GUID Package, GUID Version)		Publishing	PublishPackage	Informational		
+Microsoft-AppV-Client	1005	1	UnpublishPackage_V1(GUID Package, GUID Version)		Publishing	UnpublishPackage	Informational		
+Microsoft-AppV-Client	1006	1	UnpublishPackage1006_V1(GUID Package, GUID Version)		Publishing	UnpublishPackage	Informational		
+Microsoft-AppV-Client	1007	1	RemovePackage_V1(GUID Package, GUID Version)		Publishing	RemovePackage	Informational		
+Microsoft-AppV-Client	1008	1	ConfigurePackage1008_V1(GUID Package, GUID Version, UnicodeString Folder, UInt32 ErrorHigh, UInt32 ErrorLow)		Publishing	ConfigurePackage	Error		
+Microsoft-AppV-Client	1009	1	ConfigureVirtualApplicationConnectionGroup_V1(GUID PackageGroup, GUID Version)		Publishing	ConfigureVirtualApplicationConnectionGroup	Informational		
+Microsoft-AppV-Client	1010	1	ConfigureVirtualApplicationConnectionGroup1010_V1(GUID PackageGroup, GUID Version, UInt32 ErrorHigh, UInt32 ErrorLow)		Publishing	ConfigureVirtualApplicationConnectionGroup	Error		
+Microsoft-AppV-Client	1011	1	PublishVirtualApplicationConnectionGroup_V1(GUID PackageGroup, GUID Version)		Publishing	PublishVirtualApplicationConnectionGroup	Informational		
+Microsoft-AppV-Client	1012	1	PublishVirtualApplicationConnectionGroup1012_V1(GUID PackageGroup, GUID Version)		Publishing	PublishVirtualApplicationConnectionGroup	Informational		
+Microsoft-AppV-Client	1013	1	UnpublishVirtualApplicationConnectionGroup_V1(GUID PackageGroup, GUID Version)		Publishing	UnpublishVirtualApplicationConnectionGroup	Informational		
+Microsoft-AppV-Client	1014	1	UnpublishVirtualApplicationConnectionGroup1014_V1(GUID PackageGroup, GUID Version)		Publishing	UnpublishVirtualApplicationConnectionGroup	Informational		
+Microsoft-AppV-Client	1015	1	RemoveVirtualApplicationConnectionGroup_V1(GUID PackageGroup, GUID Version)		Publishing	RemoveVirtualApplicationConnectionGroup	Informational		
+Microsoft-AppV-Client	1016	1	UnpublishPackage1016_V1(GUID Package, GUID Version)		Publishing	UnpublishPackage	Error		
+Microsoft-AppV-Client	1017	1	RemovePackage1017_V1(GUID Package, GUID Version)		Publishing	RemovePackage	Error		
+Microsoft-AppV-Client	1018	1	UnpublishPackage1018_V1(GUID Package, GUID Version, UInt64 ActivityID)		Publishing	UnpublishPackage	Error		
+Microsoft-AppV-Client	1019	1	UnpublishPackage1019_V1(GUID Package, GUID Version, UInt64 ActivityID)		Publishing	UnpublishPackage	Error		
+Microsoft-AppV-Client	1020	1	RemovePackage1020_V1(GUID Package, GUID Version, UInt64 ActivityID)		Publishing	RemovePackage	Error		
+Microsoft-AppV-Client	1021	1	UnpublishVirtualApplicationConnectionGroup1021_V1(GUID ConnectionGroup, GUID Version, UInt64 ActivityID)		Publishing	UnpublishVirtualApplicationConnectionGroup	Error		
+Microsoft-AppV-Client	1022	1	UnpublishVirtualApplicationConnectionGroup1022_V1(GUID ConnectionGroup, GUID Version, UInt64 ActivityID)		Publishing	UnpublishVirtualApplicationConnectionGroup	Error		
+Microsoft-AppV-Client	1023	1	RemoveVirtualApplicationConnectionGroup1023_V1(GUID ConnectionGroup, GUID Version, UInt64 ActivityID)		Publishing	RemoveVirtualApplicationConnectionGroup	Error		
+Microsoft-AppV-Client	1024	1	ConfigurePackage1024_V1(GUID Package, GUID Version)		Publishing	ConfigurePackage	Error		
+Microsoft-AppV-Client	1025	1	ConfigurePackage1025_V1(GUID Package, GUID Version)		Publishing	ConfigurePackage	Error		
+Microsoft-AppV-Client	1026	1	ConfigurePackage1026_V1(GUID Package, GUID Version)		Publishing	ConfigurePackage	Error		
+Microsoft-AppV-Client	1027	1	ConfigurePackage1027_V1(GUID Id, GUID Version, UnicodeString Path)		Publishing	ConfigurePackage	Error		
+Microsoft-AppV-Client	1028	1	ConfigurePackage1028_V1(GUID Id, GUID Version, UnicodeString Path)		Publishing	ConfigurePackage	Error		
+Microsoft-AppV-Client	1029	1	ConfigurePackage1029_V1(GUID Package, GUID Version)		Publishing	ConfigurePackage	Error		
+Microsoft-AppV-Client	1030	1	ConfigurePackage1030_V1(GUID Package, GUID Version)		Publishing	ConfigurePackage	Error		
+Microsoft-AppV-Client	1031	1	PublishPackage1031_V1(GUID Package, GUID Version)		Publishing	PublishPackage	Error		
+Microsoft-AppV-Client	1032	1	PublishPackage1032_V1(GUID Package, GUID Version)		Publishing	PublishPackage	Error		
+Microsoft-AppV-Client	1033	1	PublishPackage1033_V1(GUID Id, GUID Version, UnicodeString Path)		Publishing	PublishPackage	Error		
+Microsoft-AppV-Client	1034	1	PublishPackage1034_V1(GUID Id, GUID Version, UnicodeString Path)		Publishing	PublishPackage	Error		
+Microsoft-AppV-Client	1035	1	PublishPackage1035_V1(GUID Package, GUID Version)		Publishing	PublishPackage	Error		
+Microsoft-AppV-Client	1036	1	PublishPackage1036_V1(GUID Package, GUID Version)		Publishing	PublishPackage	Error		
+Microsoft-AppV-Client	1037	1	UnpublishPackage1037_V1(GUID Package, GUID Version)		Publishing	UnpublishPackage	Error		
+Microsoft-AppV-Client	1038	1	UnpublishPackage1038_V1(GUID Package, GUID Version)		Publishing	UnpublishPackage	Error		
+Microsoft-AppV-Client	1039	1	RemovePackage1039_V1(GUID Package, GUID Version)		Publishing	RemovePackage	Error		
+Microsoft-AppV-Client	1040	1	RemovePackage1040_V1(GUID Package, GUID Version)		Publishing	RemovePackage	Error		
+Microsoft-AppV-Client	1041	1	RepairPackage_V1(GUID Package, GUID Version)		Publishing	RepairPackage	Error		
+Microsoft-AppV-Client	1042	1	RepairPackage1042_V1(GUID Package, GUID Version)		Publishing	RepairPackage	Error		
+Microsoft-AppV-Client	1043	1	ConfigureVirtualApplicationConnectionGroup1043_V1(GUID Id, GUID Version, UnicodeString Path)		Publishing	ConfigureVirtualApplicationConnectionGroup	Error		
+Microsoft-AppV-Client	1044	1	ConfigureVirtualApplicationConnectionGroup1044_V1(GUID ConnectionGroup, GUID GroupVersion, GUID Package, GUID PackageVersion)		Publishing	ConfigureVirtualApplicationConnectionGroup	Error		
+Microsoft-AppV-Client	1045	1	ConfigureVirtualApplicationConnectionGroup1045_V1(GUID Id, GUID Version, UnicodeString Path)		Publishing	ConfigureVirtualApplicationConnectionGroup	Error		
+Microsoft-AppV-Client	1046	1	ConfigureVirtualApplicationConnectionGroup1046_V1(GUID ConnectionGroup, GUID Version)		Publishing	ConfigureVirtualApplicationConnectionGroup	Error		
+Microsoft-AppV-Client	1047	1	PublishVirtualApplicationConnectionGroup1047_V1(GUID ConnectionGroup, GUID Version)		Publishing	PublishVirtualApplicationConnectionGroup	Error		
+Microsoft-AppV-Client	1048	1	PublishVirtualApplicationConnectionGroup1048_V1(GUID ConnectionGroup, GUID GroupVersion, GUID Package, GUID PackageVersion)		Publishing	PublishVirtualApplicationConnectionGroup	Error		
+Microsoft-AppV-Client	1049	1	PublishVirtualApplicationConnectionGroup1049_V1(GUID ConnectionGroup, GUID Version)		Publishing	PublishVirtualApplicationConnectionGroup	Error		
+Microsoft-AppV-Client	1050	1	UnpublishVirtualApplicationConnectionGroup1050_V1(GUID ConnectionGroup, GUID Version)		Publishing	UnpublishVirtualApplicationConnectionGroup	Error		
+Microsoft-AppV-Client	1051	1	UnpublishVirtualApplicationConnectionGroup1051_V1(GUID ConnectionGroup, GUID Version)		Publishing	UnpublishVirtualApplicationConnectionGroup	Error		
+Microsoft-AppV-Client	1052	1	RemoveVirtualApplicationConnectionGroup1052_V1(GUID ConnectionGroup, GUID Version)		Publishing	RemoveVirtualApplicationConnectionGroup	Error		
+Microsoft-AppV-Client	1053	1	RemoveVirtualApplicationConnectionGroup1053_V1(GUID ConnectionGroup, GUID Version)		Publishing	RemoveVirtualApplicationConnectionGroup	Error		
+Microsoft-AppV-Client	1054	1	RepairVirtualApplicationConnectionGroup_V1(GUID ConnectionGroup, GUID Version)		Publishing	RepairVirtualApplicationConnectionGroup	Error		
+Microsoft-AppV-Client	1055	1	UnpublishPackage1055_V1(GUID Package, GUID Version, UInt64 ActivityID)		Publishing	UnpublishPackage	Informational		
+Microsoft-AppV-Client	1056	1	UnpublishPackage1056_V1(GUID Package, GUID Version, UInt64 ActivityID)		Publishing	UnpublishPackage	Informational		
+Microsoft-AppV-Client	1057	1	UnpublishPackage1057_V1(GUID Package, GUID Version)		Publishing	UnpublishPackage	Informational		
+Microsoft-AppV-Client	1058	1	UnpublishVirtualApplicationConnectionGroup1058_V1(GUID Package, GUID Version)		Publishing	UnpublishVirtualApplicationConnectionGroup	Informational		
+Microsoft-AppV-Client	1059	1	UnpublishPackage1059_V1(GUID Package, GUID Version)		Publishing	UnpublishPackage	Informational		
+Microsoft-AppV-Client	1060	1	UnpublishVirtualApplicationConnectionGroup1060_V1(GUID Package, GUID Version)		Publishing	UnpublishVirtualApplicationConnectionGroup	Informational		
+Microsoft-AppV-Client	1061	1	UnpublishVirtualApplicationConnectionGroup1061_V1(GUID Package, GUID Version, UInt64 ActivityID)		Publishing	UnpublishVirtualApplicationConnectionGroup	Informational		
+Microsoft-AppV-Client	1062	1	UnpublishVirtualApplicationConnectionGroup1062_V1(GUID Package, GUID Version, UInt64 ActivityID)		Publishing	UnpublishVirtualApplicationConnectionGroup	Informational		
+Microsoft-AppV-Client	1063	1	PublishPackage1063_V1(GUID Package, GUID Version, UInt64 ActivityID)		Publishing	PublishPackage	Error		
+Microsoft-AppV-Client	1064	1	PublishPackage1064_V1(GUID Package, GUID Version, UInt64 ActivityID)		Publishing	PublishPackage	Error		
+Microsoft-AppV-Client	1065	1	PublishVirtualApplicationConnectionGroup1065_V1(GUID ConnectionGroup, GUID Version, UInt64 ActivityID)		Publishing	PublishVirtualApplicationConnectionGroup	Error		
+Microsoft-AppV-Client	1066	1	PublishVirtualApplicationConnectionGroup1066_V1(GUID ConnectionGroup, GUID Version, UInt64 ActivityID)		Publishing	PublishVirtualApplicationConnectionGroup	Error		
+Microsoft-AppV-Client	1067	1	PublishPackage1067_V1(GUID Package, GUID Version, UInt64 ActivityID)		Publishing	PublishPackage	Informational		
+Microsoft-AppV-Client	1068	1	PublishPackage1068_V1(GUID Package, GUID Version, UInt64 ActivityID)		Publishing	PublishPackage	Informational		
+Microsoft-AppV-Client	1069	1	PublishVirtualApplicationConnectionGroup1069_V1(GUID Package, GUID Version, UInt64 ActivityID)		Publishing	PublishVirtualApplicationConnectionGroup	Informational		
+Microsoft-AppV-Client	1070	1	PublishVirtualApplicationConnectionGroup1070_V1(GUID Package, GUID Version, UInt64 ActivityID)		Publishing	PublishVirtualApplicationConnectionGroup	Informational		
+Microsoft-AppV-Client	1071	1	PublishPackage1071_V1(GUID Package, GUID Version)		Publishing	PublishPackage	Informational		
+Microsoft-AppV-Client	1072	1	PublishVirtualApplicationConnectionGroup1072_V1(GUID Package, GUID Version)		Publishing	PublishVirtualApplicationConnectionGroup	Informational		
+Microsoft-AppV-Client	1073	1	PublishPackage1073_V1(GUID Package, GUID Version)		Publishing	PublishPackage	Error		
+Microsoft-AppV-Client	1074	1	RemovePackage1074_V1(GUID Package, GUID Version, UInt64 ActivityID)		Publishing	RemovePackage	Error		
+Microsoft-AppV-Client	1075	1	RemoveVirtualApplicationConnectionGroup1075_V1(GUID ConnectionGroup, GUID Version, UInt64 ActivityID)		Publishing	RemoveVirtualApplicationConnectionGroup	Error		
+Microsoft-AppV-Client	1076	1	PublishPackage1076_V1(UnicodeString StringParam, UInt32 ErrorHigh, UInt32 ErrorLow)		Publishing	PublishPackage	Error		
+Microsoft-AppV-Client	1077	1	PublishPackage1077_V1(GUID Package, GUID Version, UInt32 ErrorHigh, UInt32 ErrorLow)		Publishing	PublishPackage	Error		
+Microsoft-AppV-Client	1078	1	PublishPackage1078_V1(GUID PackageId, GUID PackageVersion, GUID GroupId, GUID GroupVersion)		Publishing	PublishPackage	Warning		
+Microsoft-AppV-Client	1079	1	ConfigurePackage1079_V1(GUID Package, GUID Version, UInt32 ErrorHigh, UInt32 ErrorLow)		Publishing	ConfigurePackage	Error		
+Microsoft-AppV-Client	1080	1	RemovePackage1080_V1(GUID Package, GUID Version, UInt32 ErrorHigh, UInt32 ErrorLow)		Publishing	RemovePackage	Error		
+Microsoft-AppV-Client	1082	1	PublishPackage1082_V1(GUID Package, GUID Version, UInt32 ErrorHigh, UInt32 ErrorLow)		Publishing	PublishPackage	Error		
+Microsoft-AppV-Client	1083	1	UnpublishPackage1083_V1(GUID Package, GUID Version, UInt32 ErrorHigh, UInt32 ErrorLow)		Publishing	UnpublishPackage	Error		
+Microsoft-AppV-Client	2001	1	UserLogon_V1(UnicodeString LastFolder, UnicodeString ReqFolder, Int32 Error)		Startup Logon Catalog	UserLogon	Error		
+Microsoft-AppV-Client	2002	1	UserLogon2002_V1(UnicodeString LastFolder, UnicodeString ReqFolder, Int32 Error)		Startup Logon Catalog	UserLogon	Warning		
+Microsoft-AppV-Client	2003	1	UserLogon2003_V1(UnicodeString LastFolder, UnicodeString ReqFolder)		Startup Logon Catalog	UserLogon	Warning		
+Microsoft-AppV-Client	2004	1	task_0_V1(UInt32 ErrorHigh, UInt32 ErrorLow)		Startup Catalog	task_0	Error		
+Microsoft-AppV-Client	2005	1	ClientStartup2005_V1(GUID Package, GUID Version)		Startup Catalog	ClientStartup	Error		
+Microsoft-AppV-Client	2006	1	ClientStartup2006_V1(GUID Package, GUID Version)		Startup Catalog	ClientStartup	Error		
+Microsoft-AppV-Client	3001	1	Impersonation/DeimpersonationStop_V1(UInt32 ErrorHigh, UInt32 ErrorLow)	Stop	Common	Impersonation/Deimpersonation	Critical		
+Microsoft-AppV-Client	3002	1	Impersonation/DeimpersonationStop3002_V1(UInt32 ErrorHigh, UInt32 ErrorLow)	Stop	Common	Impersonation/Deimpersonation	Critical		
+Microsoft-AppV-Client	4001	1	ExecuteEmbeddedScripts_V1(UInt32 ScriptScope, UnicodeString EventType, UnicodeString CommandLine, UInt32 Error)		EmbeddedScripting	ExecuteEmbeddedScripts	Error		
+Microsoft-AppV-Client	4002	1	ExecuteEmbeddedScripts4002_V1(UInt64 Timeout, UInt32 ScriptScope, UnicodeString EventType, UnicodeString CommandLine)		EmbeddedScripting	ExecuteEmbeddedScripts	Error		
+Microsoft-AppV-Client	4004	1	ExecuteEmbeddedScripts4004_V1(UInt32 ScriptScope, GUID Package, UnicodeString EventType, UnicodeString UserSid, UnicodeString CommandLine)		EmbeddedScripting	ExecuteEmbeddedScripts	Informational		
+Microsoft-AppV-Client	4005	1	ExecuteEmbeddedScripts4005_V1(UInt32 ScriptScope, GUID Package, UnicodeString EventType)		EmbeddedScripting	ExecuteEmbeddedScripts	Informational		
+Microsoft-AppV-Client	4006	1	ExecuteEmbeddedScripts4006_V1(GUID tGuid, UnicodeString tString, UInt32 ErrorHigh, UInt32 ErrorLow)		EmbeddedScripting	ExecuteEmbeddedScripts	Error		
+Microsoft-AppV-Client	4007	1	ExecuteEmbeddedScripts4007_V1(UInt32 ErrorHigh, UInt32 ErrorLow)		EmbeddedScripting	ExecuteEmbeddedScripts	Error		
+Microsoft-AppV-Client	4008	1	ExecuteEmbeddedScripts4008_V1(UInt64 Timeout, UInt32 ScriptScope, UnicodeString EventType, UnicodeString CommandLine)		EmbeddedScripting	ExecuteEmbeddedScripts	Warning		
+Microsoft-AppV-Client	4009	1	ExecuteEmbeddedScripts4009_V1(UInt32 ScriptScope, UnicodeString EventType, UnicodeString CommandLine, UInt32 Error)		EmbeddedScripting	ExecuteEmbeddedScripts	Error		
+Microsoft-AppV-Client	4010	1	ExecuteEmbeddedScripts4010_V1(UInt32 ScriptScope, UnicodeString EventType, UnicodeString CommandLine, UInt32 Error)		EmbeddedScripting	ExecuteEmbeddedScripts	Warning		
+Microsoft-AppV-Client	4011	1	ExecuteEmbeddedScripts4011_V1()		EmbeddedScripting	ExecuteEmbeddedScripts	Warning		
+Microsoft-AppV-Client	5001	1	VirtualFileSystemRedirection_V1()		VFS	VirtualFileSystemRedirection	Informational		
+Microsoft-AppV-Client	5002	1	VirtualFileSystemRedirection5002_V1()		VFS	VirtualFileSystemRedirection	Informational		
+Microsoft-AppV-Client	5003	1	VirtualFileSystemRedirection5003_V1(UnicodeString Item)		VFS	VirtualFileSystemRedirection	Informational		
+Microsoft-AppV-Client	6001	1	ConfigureVirtualServices_V1(GUID Package, GUID Version, UInt32 ErrorHigh, UInt32 ErrorLow)		VirtualServices	ConfigureVirtualServices	Error		
+Microsoft-AppV-Client	6002	1	ConfigureVirtualServices6002_V1(UnicodeString Item)		VirtualServices	ConfigureVirtualServices	Error		
+Microsoft-AppV-Client	6006	1	ConfigureVirtualServices6006_V1(UnicodeString Item1, UnicodeString Item2)		VirtualServices	ConfigureVirtualServices	Error		
+Microsoft-AppV-Client	6007	1	ConfigureVirtualServices6007_V1(UnicodeString Item1, UnicodeString Item2)		VirtualServices	ConfigureVirtualServices	Error		
+Microsoft-AppV-Client	6008	1	ConfigureVirtualServices6008_V1(UnicodeString Item1, UnicodeString Item2)		VirtualServices	ConfigureVirtualServices	Error		
+Microsoft-AppV-Client	6009	1	ConfigureVirtualServices6009_V1(UInt32 Error)		VirtualServices	ConfigureVirtualServices	Error		
+Microsoft-AppV-Client	6010	1	ConfigureVirtualServices6010_V1(UnicodeString Item)		VirtualServices	ConfigureVirtualServices	Informational		
+Microsoft-AppV-Client	6011	1	ConfigureVirtualServices6011_V1(UnicodeString Item)		VirtualServices	ConfigureVirtualServices	Error		
+Microsoft-AppV-Client	6012	1	ConfigureVirtualServices6012_V1(UnicodeString Item)		VirtualServices	ConfigureVirtualServices	Error		
+Microsoft-AppV-Client	6013	1	ConfigureVirtualServices6013_V1()		VirtualServices	ConfigureVirtualServices	Error		
+Microsoft-AppV-Client	6014	1	ConfigureVirtualServices6014_V1()		VirtualServices	ConfigureVirtualServices	Error		
+Microsoft-AppV-Client	6015	1	ConfigureVirtualServices6015_V1(UnicodeString Item)		VirtualServices	ConfigureVirtualServices	Warning		
+Microsoft-AppV-Client	6016	1	ConfigureVirtualServices6016_V1()		VirtualServices	ConfigureVirtualServices	Error		
+Microsoft-AppV-Client	7001	1	SettingChanges_V1(UInt32 Error)		Settings	SettingChanges	Error		
+Microsoft-AppV-Client	8001	1	ParseDynamicConfigurationFile_V1(UInt32 Error, UnicodeString Reason, Int64 line, Int64 column, Int64 offset)		DynamicConfiguration	ParseDynamicConfigurationFile	Error		
+Microsoft-AppV-Client	8002	1	ParseDynamicConfigurationFile8002_V1(Int32 Error, UnicodeString Reason)		DynamicConfiguration	ParseDynamicConfigurationFile	Error		
+Microsoft-AppV-Client	8003	1	ConfigureVirtualApplicationConnectionGroup8003_V1(GUID Package, GUID Version)		DynamicConfiguration	ConfigureVirtualApplicationConnectionGroup	Error		
+Microsoft-AppV-Client	8004	1	ConfigureVirtualApplicationConnectionGroup8004_V1(GUID Package, GUID Version)		DynamicConfiguration	ConfigureVirtualApplicationConnectionGroup	Error		
+Microsoft-AppV-Client	8005	1	ConfigureVirtualApplicationConnectionGroup8005_V1(UnicodeString StringParam, UInt32 ErrorHigh, UInt32 ErrorLow)		DynamicConfiguration	ConfigureVirtualApplicationConnectionGroup	Error		
+Microsoft-AppV-Client	8006	1	ConfigureVirtualApplicationConnectionGroup8006_V1(GUID Package, GUID Version, UInt32 ErrorHigh, UInt32 ErrorLow)		DynamicConfiguration	ConfigureVirtualApplicationConnectionGroup	Error		
+Microsoft-AppV-Client	8007	1	ConfigureVirtualApplicationConnectionGroup8007_V1(GUID Package, GUID Version, UInt32 ErrorHigh, UInt32 ErrorLow)		DynamicConfiguration	ConfigureVirtualApplicationConnectionGroup	Error		
+Microsoft-AppV-Client	8008	1	ConfigureVirtualApplicationConnectionGroup8008_V1(GUID Package, GUID Version, UInt32 ErrorHigh, UInt32 ErrorLow)		DynamicConfiguration	ConfigureVirtualApplicationConnectionGroup	Error		
+Microsoft-AppV-Client	8009	1	ConfigureVirtualApplicationConnectionGroup8009_V1(GUID Package, GUID Version, UInt32 ErrorHigh, UInt32 ErrorLow)		DynamicConfiguration	ConfigureVirtualApplicationConnectionGroup	Error		
+Microsoft-AppV-Client	8010	1	ConfigureVirtualApplicationConnectionGroup8010_V1(GUID Package, GUID Version, UInt32 ErrorHigh, UInt32 ErrorLow)		DynamicConfiguration	ConfigureVirtualApplicationConnectionGroup	Error		
+Microsoft-AppV-Client	8011	1	ConfigureVirtualApplicationConnectionGroup8011_V1(GUID Package, GUID Version, UInt32 ErrorHigh, UInt32 ErrorLow)		DynamicConfiguration	ConfigureVirtualApplicationConnectionGroup	Error		
+Microsoft-AppV-Client	8012	1	ConfigureVirtualApplicationConnectionGroup8012_V1(GUID ConnectionGroup, GUID GroupVersion, GUID Package, GUID PackageVersion)		DynamicConfiguration	ConfigureVirtualApplicationConnectionGroup	Error		
+Microsoft-AppV-Client	8013	1	ConfigureVirtualApplicationConnectionGroup8013_V1(GUID ConnectionGroup, GUID Version, UInt32 ErrorHigh, UInt32 ErrorLow, UnicodeString Sid)		DynamicConfiguration	ConfigureVirtualApplicationConnectionGroup	Warning		
+Microsoft-AppV-Client	8014	1	ConfigureVirtualApplicationConnectionGroup8014_V1(GUID ConnectionGroup, GUID Version, UInt32 ErrorHigh, UInt32 ErrorLow, UnicodeString Sid)		DynamicConfiguration	ConfigureVirtualApplicationConnectionGroup	Warning		
+Microsoft-AppV-Client	8015	1	ConfigurePackage8015_V1(GUID Package, GUID Version, UInt32 ErrorHigh, UInt32 ErrorLow)		DynamicConfiguration	ConfigurePackage	Error		
+Microsoft-AppV-Client	9001	1	PowerShellInvoke_V1(UnicodeString Command, UnicodeString ErrorWarning)		ClientManagement	PowerShellInvoke	Error		
+Microsoft-AppV-Client	9002	1	PowerShellInvoke9002_V1(UnicodeString Command, UnicodeString ErrorWarning)		ClientManagement	PowerShellInvoke	Warning		
+Microsoft-AppV-Client	9003	1	PSObjectGetPropertyValue_V1()		ClientManagement	PSObjectGetPropertyValue	Error		
+Microsoft-AppV-Client	9004	1	PSObjectGetPropertyValue9004_V1()		ClientManagement	PSObjectGetPropertyValue	Error		
+Microsoft-AppV-Client	9005	1	PSObjectGetPropertyValue9005_V1()		ClientManagement	PSObjectGetPropertyValue	Error		
+Microsoft-AppV-Client	9006	1	PSObjectGetPropertyValue9006_V1()		ClientManagement	PSObjectGetPropertyValue	Error		
+Microsoft-AppV-Client	9007	1	PSObjectInvokeMethod_V1()		ClientManagement	PSObjectInvokeMethod	Error		
+Microsoft-AppV-Client	9008	1	PSObjectInvokeMethod9008_V1()		ClientManagement	PSObjectInvokeMethod	Error		
+Microsoft-AppV-Client	9009	1	PowershellProcess_V1(UnicodeString Item)		ClientManagement	PowershellProcess	Error		
+Microsoft-AppV-Client	9010	1	PowershellProcess9010_V1(UnicodeString Item)		ClientManagement	PowershellProcess	Error		
+Microsoft-AppV-Client	9012	1	PSObjectGetPropertyValue9012_V1()		ClientManagement	PSObjectGetPropertyValue	Error		
+Microsoft-AppV-Client	10001	1	SubsystemStartup_V1(UInt32 PID, GUID Package, GUID Version, UnicodeString SubsystemName, UInt32 ErrorHigh, UInt32 ErrorLow)		Subsystems	SubsystemStartup	Error		
+Microsoft-AppV-Client	10002	1	ClientStartup10002_V1(UInt32 Value)		Subsystems	ClientStartup	Error		
+Microsoft-AppV-Client	11002	1	PublishPackage11002_V1(UnicodeString Item, UInt32 Error)		ClientCoExistence	PublishPackage	Error		
+Microsoft-AppV-Client	11003	1	UnpublishPackage11003_V1(UnicodeString Item, UInt32 Error)		ClientCoExistence	UnpublishPackage	Error		
+Microsoft-AppV-Client	11004	1	PublishPackage11004_V1(GUID Package)		ClientCoExistence	PublishPackage	Warning		
+Microsoft-AppV-Client	11005	1	PublishPackage11005_V1(UnicodeString Item)		ClientCoExistence	PublishPackage	Informational		
+Microsoft-AppV-Client	11006	1	UnpublishPackage11006_V1(UnicodeString Item)		ClientCoExistence	UnpublishPackage	Informational		
+Microsoft-AppV-Client	11007	1	PublishPackage11007_V1(GUID Package, UInt32 ErrorHigh, UInt32 ErrorLow)		ClientCoExistence	PublishPackage	Error		
+Microsoft-AppV-Client	11008	1	PublishPackage11008_V1(GUID Package, UInt32 ErrorHigh, UInt32 ErrorLow)		ClientCoExistence	PublishPackage	Error		
+Microsoft-AppV-Client	11009	1	PublishPackage11009_V1(UnicodeString Item, UInt32 Error)		ClientCoExistence	PublishPackage	Error		
+Microsoft-AppV-Client	11010	1	PublishPackage11010_V1(UnicodeString Item)		ClientCoExistence	PublishPackage	Warning		
+Microsoft-AppV-Client	11011	1	PublishPackage11011_V1(UnicodeString Item, UInt32 Error)		ClientCoExistence	PublishPackage	Warning		
+Microsoft-AppV-Client	11012	1	PublishPackage11012_V1(UnicodeString Item, UInt32 Error)		ClientCoExistence	PublishPackage	Informational		
+Microsoft-AppV-Client	12001	1	VirtualEnvironmentStart_V1(GUID PackageGroup, GUID Version)	Start	VREG	VirtualEnvironmentStart	Error		
+Microsoft-AppV-Client	13001	1	UserStateDeletion_V1(GUID Package)		VFS	UserStateDeletion	Informational		
+Microsoft-AppV-Client	13002	1	UserStateDeletion13002_V1(GUID Package, UInt32 ErrorHigh, UInt32 ErrorLow)		VFS	UserStateDeletion	Error		
+Microsoft-AppV-Client	13003	1	ApplicationLaunch_V1(UnicodeString ProcessName, GUID Package, UInt32 Pid, UInt32 ErrorHigh, UInt32 ErrorLow)		VirtualAppLaunch	ApplicationLaunch	Error		
+Microsoft-AppV-Client	13004	1	ConfigurePackage13004_V1(UnicodeString Item1, UnicodeString Item2)		VFS	ConfigurePackage	Error		
+Microsoft-AppV-Client	13005	1	PublishPackage13005_V1(UInt32 ErrorHigh, UInt32 ErrorLow)		VFS	PublishPackage	Error		
+Microsoft-AppV-Client	13006	1	PublishVirtualApplicationConnectionGroup13006_V1(UInt32 ErrorHigh, UInt32 ErrorLow)		VFS	PublishVirtualApplicationConnectionGroup	Error		
+Microsoft-AppV-Client	13007	1	ApplicationLaunch13007_V1(UnicodeString Item)		VirtualAppLaunch	ApplicationLaunch	Warning		
+Microsoft-AppV-Client	14001	1	BackgroundStreaming_V1()		Streaming	BackgroundStreaming	Informational		
+Microsoft-AppV-Client	14002	1	BackgroundStreaming14002_V1()		Streaming	BackgroundStreaming	Informational		
+Microsoft-AppV-Client	14003	1	BackgroundStreaming14003_V1()		Streaming	BackgroundStreaming	Error		
+Microsoft-AppV-Client	14004	1	BackgroundStreaming14004_V1()		Streaming	BackgroundStreaming	Warning		
+Microsoft-AppV-Client	14005	1	BackgroundStreaming14005_V1(UInt64 ErrorHigh, UInt64 ErrorLow)		Streaming	BackgroundStreaming	Warning		
+Microsoft-AppV-Client	14006	1	BackgroundStreaming14006_V1()		Streaming	BackgroundStreaming	Warning		
+Microsoft-AppV-Client	14007	1	BackgroundStreaming14007_V1()		Streaming	BackgroundStreaming	Informational		
+Microsoft-AppV-Client	14008	1	BackgroundStreaming14008_V1()		Streaming	BackgroundStreaming	Informational		
+Microsoft-AppV-Client	14009	1	Streaming_V1()		Streaming	Streaming	Warning		
+Microsoft-AppV-Client	14010	1	ConfigurePackage14010_V1(GUID Package, GUID Version, UnicodeString Folder)		Publishing	ConfigurePackage	Error		
+Microsoft-AppV-Client	14011	1	ConfigurePackage14011_V1(GUID Package, GUID Version)		Publishing	ConfigurePackage	Error		
+Microsoft-AppV-Client	14012	1	ConfigurePackage14012_V1(GUID Package, GUID Version)		Publishing	ConfigurePackage	Error		
+Microsoft-AppV-Client	14013	1	ConfigurePackage14013_V1(GUID Package, GUID Version)		Publishing	ConfigurePackage	Error		
+Microsoft-AppV-Client	14014	1	ConfigurePackage14014_V1(GUID Package, GUID Version)		Publishing	ConfigurePackage	Error		
+Microsoft-AppV-Client	14015	1	ConfigurePackage14015_V1(GUID Package, GUID Version, UnicodeString Folder)		Publishing	ConfigurePackage	Error		
+Microsoft-AppV-Client	14016	1	Streaming14016_V1(GUID Package, GUID Version)		Streaming	Streaming	Error		
+Microsoft-AppV-Client	14017	1	Streaming14017_V1(GUID Package, GUID Version, UInt32 Hresult)		Streaming	Streaming	Error		
+Microsoft-AppV-Client	14018	1	Streaming14018_V1(GUID Package, GUID Version)		Streaming	Streaming	Error		
+Microsoft-AppV-Client	14019	1	Streaming14019_V1(GUID Package, GUID Version)		Streaming	Streaming	Warning		
+Microsoft-AppV-Client	14020	1	ConfigurePackage14020_V1(GUID Package, GUID Version)		Publishing	ConfigurePackage	Error		
+Microsoft-AppV-Client	14021	1	Streaming14021_V1(GUID tGuid, UnicodeString tString, Int32 HResult)		Streaming	Streaming	Error		
+Microsoft-AppV-Client	14022	1	Streaming14022_V1(Int32 Error)		Streaming	Streaming	Critical		
+Microsoft-AppV-Client	14023	1	Streaming14023_V1(UnicodeString File, Pointer Pid)		Streaming	Streaming	Informational		
+Microsoft-AppV-Client	14024	1	Streaming14024_V1(UnicodeString File, Pointer Pid, UnicodeString Sid)		Streaming	Streaming	Informational		
+Microsoft-AppV-Client	14025	1	BackgroundStreaming14025_V1()		Streaming	BackgroundStreaming	Informational		
+Microsoft-AppV-Client	14026	1	BackgroundStreaming14026_V1()		Streaming	BackgroundStreaming	Informational		
+Microsoft-AppV-Client	14027	1	BackgroundStreaming14027_V1()		Streaming	BackgroundStreaming	Informational		
+Microsoft-AppV-Client	14028	1	BackgroundStreaming14028_V1()		Streaming	BackgroundStreaming	Informational		
+Microsoft-AppV-Client	15001	1	ConnecttoAppVClientService_V1(UInt64 ErrorHigh, UInt64 ErrorLow)		ClientStreamingUX	ConnecttoAppVClientService	Error		
+Microsoft-AppV-Client	15002	1	ConnecttoAppVClientService15002_V1(Int32 HResult)		ClientStreamingUX	ConnecttoAppVClientService	Error		
+Microsoft-AppV-Client	15003	1	StopPackageorConnectionGroup_V1(GUID VirtualEnvironmentId, GUID VirtualEnvironmentVersion, UInt64 ErrorHigh, UInt64 ErrorLow)		ClientStreamingUX	StopPackageorConnectionGroup	Error		
+Microsoft-AppV-Client	16001	1	VirtualEnvironmentStart16001_V1(GUID PackageGroup, GUID Version)		VOBJ	VirtualEnvironmentStart	Error		
+Microsoft-AppV-Client	16002	1	VirtualEnvironmentStart16002_V1(GUID PackageGroup, GUID Version)		VOBJ	VirtualEnvironmentStart	Error		
+Microsoft-AppV-Client	16003	1	PublishVirtualApplicationConnectionGroup16003_V1(GUID PackageGroup, GUID Version, UInt32 ErrorHigh, UInt32 ErrorLow)		VOBJ	PublishVirtualApplicationConnectionGroup	Error		
+Microsoft-AppV-Client	16004	1	PublishPackage16004_V1(GUID PackageId, GUID PackageVersion, GUID GroupId, GUID GroupVersion, UInt32 ErrorHigh, UInt32 ErrorLow)		VOBJ	PublishPackage	Error		
+Microsoft-AppV-Client	17001	1	UploadReportingData_V1(UnicodeString Item, UInt32 Error)		Reporting	UploadReportingData	Warning		
+Microsoft-AppV-Client	17002	1	UploadReportingData17002_V1(UnicodeString StringParam, UInt32 ErrorHigh, UInt32 ErrorLow)		Reporting	UploadReportingData	Error		
+Microsoft-AppV-Client	17003	1	CreateReportingData_V1(UInt32 ErrorHigh, UInt32 ErrorLow)		Reporting	CreateReportingData	Error		
+Microsoft-AppV-Client	17004	1	CreateReportingData17004_V1(UInt32 ErrorHigh, UInt32 ErrorLow)		Reporting	CreateReportingData	Warning		
+Microsoft-AppV-Client	17005	1	CreateReportingData17005_V1()		Reporting	CreateReportingData	Informational		
+Microsoft-AppV-Client	17006	1	UploadReportingData17006_V1(UInt32 ErrorHigh, UInt32 ErrorLow)		Reporting	UploadReportingData	Error		
+Microsoft-AppV-Client	17007	1	CreateReportingData17007_V1(UInt32 ErrorHigh, UInt32 ErrorLow)		Reporting	CreateReportingData	Error		
+Microsoft-AppV-Client	17008	1	CreateReportingData17008_V1(UInt32 ErrorHigh, UInt32 ErrorLow)		Reporting	CreateReportingData	Error		
+Microsoft-AppV-Client	17009	1	CreateReportingData17009_V1(UInt32 ErrorHigh, UInt32 ErrorLow)		Reporting	CreateReportingData	Error		
+Microsoft-AppV-Client	17010	1	CreateReportingData17010_V1(UInt32 ErrorHigh, UInt32 ErrorLow)		Reporting	CreateReportingData	Error		
+Microsoft-AppV-Client	17011	1	UploadReportingData17011_V1(UInt32 ErrorHigh, UInt32 ErrorLow)		Reporting	UploadReportingData	Warning		
+Microsoft-AppV-Client	17012	1	CreateReportingData17012_V1(UInt32 ErrorHigh, UInt32 ErrorLow)		Reporting	CreateReportingData	Error		
+Microsoft-AppV-Client	18001	1	ApplicationLaunch18001_V1(UnicodeString Item)		VirtualAppLaunch	ApplicationLaunch	Error		
+Microsoft-AppV-Client	18002	1	ApplicationLaunch18002_V1(UnicodeString Item)		VirtualAppLaunch	ApplicationLaunch	Error		
+Microsoft-AppV-Client	18003	1	ApplicationLaunch18003_V1(UnicodeString Item)		VirtualAppLaunch	ApplicationLaunch	Error		
+Microsoft-AppV-Client	18004	1	ApplicationLaunch18004_V1(UnicodeString Item1, UnicodeString Item2)		VirtualAppLaunch	ApplicationLaunch	Error		
+Microsoft-AppV-Client	18005	1	ApplicationLaunch18005_V1(UnicodeString StringParam1, UnicodeString StringParam2, UInt32 ErrorHigh, UInt32 ErrorLow)		VirtualAppLaunch	ApplicationLaunch	Error		
+Microsoft-AppV-Client	18006	1	ApplicationLaunch18006_V1(GUID ConnectionGroup, GUID GroupVersion, GUID Package, GUID PackageVersion)		VirtualAppLaunch	ApplicationLaunch	Error		
+Microsoft-AppV-Client	19001	1	PublishingRefresh_V1(UnicodeString String, Boolean Flag)		PublishingRefresh	PublishingRefresh	Informational		
+Microsoft-AppV-Client	19002	1	PublishingRefresh19002_V1(UnicodeString String, Boolean Flag, UInt32 ErrorHigh, UInt32 ErrorLow)		PublishingRefresh	PublishingRefresh	Informational		
+Microsoft-AppV-Client	19010	1	PublishingRefresh19010_V1(UInt64 ErrorHigh, UInt64 ErrorLow)		PublishingRefresh	PublishingRefresh	Informational		
+Microsoft-AppV-Client	19011	1	PublishingRefresh19011_V1(UInt64 ErrorHigh, UInt64 ErrorLow)		PublishingRefresh	PublishingRefresh	Error		
+Microsoft-AppV-Client	19101	1	PublishingRefresh19101_V1(UInt64 ErrorHigh, UInt64 ErrorLow)		PublishingRefresh	PublishingRefresh	Error		
+Microsoft-AppV-Client	19102	1	PublishingRefresh19102_V1(UnicodeString StringParam, UInt32 ErrorHigh, UInt32 ErrorLow)		PublishingRefresh	PublishingRefresh	Error		
+Microsoft-AppV-Client	19103	1	PublishingRefresh19103_V1(UInt64 ErrorHigh, UInt64 ErrorLow)		PublishingRefresh	PublishingRefresh	Error		
+Microsoft-AppV-Client	19104	1	PublishingRefresh19104_V1(UInt32 Value1, UInt32 Value2)		PublishingRefresh	PublishingRefresh	Error		
+Microsoft-AppV-Client	19105	1	PublishingRefresh19105_V1(UInt32 Value1, UInt32 Value2)		PublishingRefresh	PublishingRefresh	Error		
+Microsoft-AppV-Client	19106	1	PublishingRefresh19106_V1(UInt32 Value1, UInt32 Value2)		PublishingRefresh	PublishingRefresh	Error		
+Microsoft-AppV-Client	19107	1	PublishingRefresh19107_V1(UInt32 Value1, UInt32 Value2)		PublishingRefresh	PublishingRefresh	Error		
+Microsoft-AppV-Client	19108	1	PublishingRefresh19108_V1(GUID Guid1, GUID Guid2, GUID Guid3)		PublishingRefresh	PublishingRefresh	Error		
+Microsoft-AppV-Client	19201	1	PublishingRefresh19201_V1(UnicodeString Item)		PublishingRefresh	PublishingRefresh	Error		
+Microsoft-AppV-Client	19202	1	PublishingRefresh19202_V1(UnicodeString StringParam, UInt32 ErrorHigh, UInt32 ErrorLow)		PublishingRefresh	PublishingRefresh	Error		
+Microsoft-AppV-Client	19203	1	PublishingRefresh19203_V1(UnicodeString StringParam, UInt32 ErrorHigh, UInt32 ErrorLow)		PublishingRefresh	PublishingRefresh	Error		
+Microsoft-AppV-Client	19204	1	PublishingRefresh19204_V1(UnicodeString Item)		PublishingRefresh	PublishingRefresh	Error		
+Microsoft-AppV-Client	19205	1	PublishingRefresh19205_V1(UnicodeString StringParam, UInt32 ErrorHigh, UInt32 ErrorLow)		PublishingRefresh	PublishingRefresh	Error		
+Microsoft-AppV-Client	19301	1	PublishingRefresh19301_V1(GUID Package, GUID Version, UInt32 ErrorHigh, UInt32 ErrorLow)		PublishingRefresh	PublishingRefresh	Error		
+Microsoft-AppV-Client	19302	1	PublishingRefresh19302_V1(GUID Package, GUID Version, UInt32 ErrorHigh, UInt32 ErrorLow)		PublishingRefresh	PublishingRefresh	Error		
+Microsoft-AppV-Client	19303	1	PublishingRefresh19303_V1(GUID Package, GUID Version, UInt32 ErrorHigh, UInt32 ErrorLow)		PublishingRefresh	PublishingRefresh	Error		
+Microsoft-AppV-Client	19304	1	PublishingRefresh19304_V1(GUID Package, GUID Version, UInt32 ErrorHigh, UInt32 ErrorLow)		PublishingRefresh	PublishingRefresh	Error		
+Microsoft-AppV-Client	19401	1	PublishingRefresh19401_V1(UInt32 Value, UInt32 ErrorHigh, UInt32 ErrorLow)		PublishingRefresh	PublishingRefresh	Error		
+Microsoft-AppV-Client	19402	1	PublishingRefresh19402_V1(UInt32 Value, UnicodeString String)		PublishingRefresh	PublishingRefresh	Error		
+Microsoft-AppV-Client	19403	1	PublishingRefresh19403_V1(UInt32 Value)		PublishingRefresh	PublishingRefresh	Error		
+Microsoft-AppV-Client	19404	1	PublishingRefresh19404_V1(UInt32 Value)		PublishingRefresh	PublishingRefresh	Error		
+Microsoft-AppV-Client	19405	1	PublishingRefresh19405_V1(UInt32 Value1, UInt32 Value2)		PublishingRefresh	PublishingRefresh	Error		
+Microsoft-AppV-Client	19406	1	PublishingRefresh19406_V1(UInt32 Value1, UInt32 Value2)		PublishingRefresh	PublishingRefresh	Error		
+Microsoft-AppV-Client	19407	1	PublishingRefresh19407_V1(UInt32 Value1, UInt32 Value2)		PublishingRefresh	PublishingRefresh	Error		
+Microsoft-AppV-Client	19408	1	PublishingRefresh19408_V1(UnicodeString Item1, UnicodeString Item2)		PublishingRefresh	PublishingRefresh	Warning		
+Microsoft-AppV-Client	19501	1	PublishingRefresh19501_V1(UnicodeString Item)		PublishingRefresh	PublishingRefresh	Informational		
+Microsoft-AppV-Client	19502	1	PublishingRefresh19502_V1(UnicodeString Item)		PublishingRefresh	PublishingRefresh	Error		
+Microsoft-AppV-Client	19801	1	PublishingRefresh19801_V1(UInt64 ErrorHigh, UInt64 ErrorLow)		PublishingRefresh	PublishingRefresh	Error		
+Microsoft-AppV-Client	19802	1	PublishingRefresh19802_V1(UnicodeString String, Boolean Flag1, Boolean Flag2, UInt32 ErrorHigh, UInt32 ErrorLow)		PublishingRefresh	PublishingRefresh	Error		
+Microsoft-AppV-Client	19803	1	PublishingRefresh19803_V1(UnicodeString String, Boolean Flag1, Boolean Flag2, UInt32 ErrorHigh, UInt32 ErrorLow)		PublishingRefresh	PublishingRefresh	Error		
+Microsoft-AppV-Client	19804	1	PublishingRefresh19804_V1()		PublishingRefresh	PublishingRefresh	Informational		
+Microsoft-AppV-Client	19805	1	PublishingRefresh19805_V1(UInt64 ErrorHigh, UInt64 ErrorLow)		PublishingRefresh	PublishingRefresh	Error		
+Microsoft-AppV-Client	20001	1	PublishVirtualApplicationConnectionGroup20001_V1(GUID PackageGroup, GUID Version, UInt32 ErrorHigh, UInt32 ErrorLow)		DynamicConfiguration	PublishVirtualApplicationConnectionGroup	Error		
+Microsoft-AppV-Client	20002	1	PublishPackage20002_V1(GUID PackageId, GUID PackageVersion, GUID GroupId, GUID GroupVersion, UInt32 ErrorHigh, UInt32 ErrorLow)		DynamicConfiguration	PublishPackage	Error		
+Microsoft-AppV-Client	20101	1	PublishPackage20101_V1(GUID PackageId, GUID PackageVersion, GUID GroupId, GUID GroupVersion, UInt32 ErrorHigh, UInt32 ErrorLow)		DynamicConfiguration	PublishPackage	Error		
+Microsoft-AppV-Client	21001	1	Integration_V1(UInt32 ErrorHigh, UInt32 ErrorLow)		Integration	Integration	Error		
+Microsoft-AppV-Client	21002	1	Integration21002_V1()		Integration	Integration	Informational		
+Microsoft-AppV-Client	22001	1	SidebySide_V1(UnicodeString Item1, UnicodeString Item2)		SxS	SidebySide	Warning		
+Microsoft-AppV-Client	23001	1	Streaming23001_V1()		Streaming	Streaming	Error		
+Microsoft-AppV-Client	24001	1	Enable/DisableAppv_V1(Int32 Error)		AppManagementConfiguration	Enable/DisableAppv	Error		
+Microsoft-AppV-Client	24002	1	Enable/DisableAppv24002_V1(Int32 Error)		AppManagementConfiguration	Enable/DisableAppv	Error		

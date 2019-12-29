@@ -4,3 +4,5 @@ Multimedia-HEVCDECODER	1	0	MFT_ProcessInputStop()	Stop		MFT_ProcessInput	Verbose
 Multimedia-HEVCDECODER	2	0	MFT_ProcessOutputStart()	Start		MFT_ProcessOutput	Verbose		
 Multimedia-HEVCDECODER	3	0	MFT_ProcessOutputStop()	Stop		MFT_ProcessOutput	Verbose		
 Multimedia-HEVCDECODER	4	0	MFT_NotifySampleLag(Int64 SampleLag)			MFT_NotifySampleLag	Verbose		
+Multimedia-HEVCDECODER	5	0	MFT_AllocateTextureStart(GUID DecoderGUID, Pointer DecoderInstance, UInt32 NumSurfaces, UInt32 Width, UInt32 Height, UInt32 RenderTarget, UInt32 D3DFormat)	Start		MFT_AllocateTexture	Verbose		
+Multimedia-HEVCDECODER	6	0	MFT_AllocateTextureStop(GUID DecoderGUID, Pointer DecoderInstance, UInt32 NumSurfaces, UInt32 Width, UInt32 Height, UInt32 RenderTarget, UInt32 D3DFormat)	Stop		MFT_AllocateTexture	Verbose		

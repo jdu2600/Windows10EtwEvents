@@ -1,16 +1,8 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-LiveId	1001	0	LiveSspOperationStart()	Start	Analytic keyword_400000000000	LiveSspOperation	Informational		
-Microsoft-Windows-LiveId	1002	0	LiveSspOperationStop(HexInt32 Status)	Stop	Analytic keyword_400000000000	LiveSspOperation	Informational		
-Microsoft-Windows-LiveId	1003	0	LiveSspOperationStart1003()	Start	Analytic keyword_400000000000	LiveSspOperation	Informational		
-Microsoft-Windows-LiveId	1004	0	LiveSspOperationStop1004(Boolean ServiceCalled, HexInt32 Status)	Stop	Analytic keyword_400000000000	LiveSspOperation	Informational		
 Microsoft-Windows-LiveId	1005	0	IdentityProviderOperationStart()	Start	Analytic	IdentityProviderOperation	Informational		
 Microsoft-Windows-LiveId	1006	0	IdentityProviderOperationStop(Int32 Result)	Stop	Analytic	IdentityProviderOperation	Informational		
 Microsoft-Windows-LiveId	1007	0	IdentityProviderOperationStart1007()	Start	Analytic	IdentityProviderOperation	Informational		
 Microsoft-Windows-LiveId	1008	0	IdentityProviderOperationStop1008(Int32 Result)	Stop	Analytic	IdentityProviderOperation	Informational		
-Microsoft-Windows-LiveId	1009	0	LiveSspOperationStart1009()	Start	Analytic keyword_400000000000	LiveSspOperation	Informational		
-Microsoft-Windows-LiveId	1010	0	LiveSspOperationStop1010(Int32 Result)	Stop	Analytic keyword_400000000000	LiveSspOperation	Informational		
-Microsoft-Windows-LiveId	1011	0	LiveSspOperationStart1011()	Start	Analytic keyword_400000000000	LiveSspOperation	Informational		
-Microsoft-Windows-LiveId	1012	0	LiveSspOperationStop1012(HexInt32 Status)	Stop	Analytic keyword_400000000000	LiveSspOperation	Informational		
 Microsoft-Windows-LiveId	1013	0	WLIDServiceOperationStart()	Start	Analytic	WLIDServiceOperation	Informational		
 Microsoft-Windows-LiveId	1014	0	WLIDServiceOperationStop(UInt32 NoOfTargets, UInt32 RequestType)	Stop	Analytic	WLIDServiceOperation	Informational		
 Microsoft-Windows-LiveId	1015	0	LiveIdModernAPIOperationStart()	Start	Analytic	LiveIdModernAPIOperation	Informational		
@@ -186,18 +178,6 @@ Microsoft-Windows-LiveId	9013	0	task_09013(AnsiString FileName, AnsiString Funct
 Microsoft-Windows-LiveId	9014	0	task_09014(AnsiString FunctionName, Int32 ErrorCode)		Function Warning WlidProv	task_0	Warning		
 Microsoft-Windows-LiveId	9015	0	task_09015(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		WlidProv	task_0	Verbose		
 Microsoft-Windows-LiveId	9016	0	task_09016(AnsiString FileName, UInt32 LineNumber, AnsiString description)		WlidProv	task_0	Verbose		
-Microsoft-Windows-LiveId	9017	0	UserIdKeyManagerOperationStart()	Start	Analytic keyword_400000000000	UserIdKeyManagerOperation	Informational		
-Microsoft-Windows-LiveId	9018	0	UserIdKeyManagerOperationStop(Int32 Result)	Stop	Analytic keyword_400000000000	UserIdKeyManagerOperation	Informational		
-Microsoft-Windows-LiveId	9019	0	UserIdKeyManagerOperationStart9019()	Start	Analytic keyword_400000000000	UserIdKeyManagerOperation	Informational		
-Microsoft-Windows-LiveId	9020	0	UserIdKeyManagerOperationStop9020(Int32 Result)	Stop	Analytic keyword_400000000000	UserIdKeyManagerOperation	Informational		
-Microsoft-Windows-LiveId	9021	0	UserIdKeyManagerOperationStart9021()	Start	Analytic keyword_400000000000	UserIdKeyManagerOperation	Informational		
-Microsoft-Windows-LiveId	9022	0	UserIdKeyManagerOperationStop9022(Int32 Result)	Stop	Analytic keyword_400000000000	UserIdKeyManagerOperation	Informational		
-Microsoft-Windows-LiveId	9023	0	UserIdKeyManagerOperationStart9023()	Start	Analytic keyword_400000000000	UserIdKeyManagerOperation	Informational		
-Microsoft-Windows-LiveId	9024	0	UserIdKeyManagerOperationStop9024(Int32 Result)	Stop	Analytic keyword_400000000000	UserIdKeyManagerOperation	Informational		
-Microsoft-Windows-LiveId	9025	0	UserIdKeyManagerOperationStart9025()	Start	Analytic keyword_400000000000	UserIdKeyManagerOperation	Informational		
-Microsoft-Windows-LiveId	9026	0	UserIdKeyManagerOperationStop9026(Int32 Result)	Stop	Analytic keyword_400000000000	UserIdKeyManagerOperation	Informational		
-Microsoft-Windows-LiveId	9027	0	UserIdKeyManagerOperationStart9027()	Start	Analytic keyword_400000000000	UserIdKeyManagerOperation	Informational		
-Microsoft-Windows-LiveId	9028	0	UserIdKeyManagerOperationStop9028(Int32 Result)	Stop	Analytic keyword_400000000000	UserIdKeyManagerOperation	Informational		
 Microsoft-Windows-LiveId	9100	0	task_09100(UnicodeString value)		WlidProv Credentials	task_0	Verbose		
 Microsoft-Windows-LiveId	10000	0	task_010000(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		Critical WlidBho	task_0	Critical		
 Microsoft-Windows-LiveId	10001	0	task_010001(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		Error WlidBho	task_0	Error		

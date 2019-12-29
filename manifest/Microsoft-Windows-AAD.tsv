@@ -96,7 +96,7 @@ Microsoft-Windows-AAD	1140	0	AadCloudAPPluginOperationStart1140()	Start	Analytic
 Microsoft-Windows-AAD	1141	0	AadCloudAPPluginOperationStop1141(HexInt32 Status)	Stop	Analytic	AadCloudAPPluginOperation	Informational		
 Microsoft-Windows-AAD	1142	0	AadCloudAPPluginOperation1142(UnicodeString value)		Error Operational	AadCloudAPPluginOperation	Error		
 Microsoft-Windows-AAD	1143	0	AadCloudAPPluginOperation1143(Int32 value, UnicodeString CorrelationID)		Analytic	AadCloudAPPluginOperation	Informational		
-Microsoft-Windows-AAD	1144	0	AadCloudAPPluginOperation1144(UnicodeString value1, UnicodeString value2)		Analytic	AadCloudAPPluginOperation	Informational		
+Microsoft-Windows-AAD	1144	0	AadCloudAPPluginOperation1144(UnicodeString value1, UnicodeString value2, UnicodeString value3)		Analytic	AadCloudAPPluginOperation	Informational		
 Microsoft-Windows-AAD	1145	0	AadCloudAPPluginOperation1145(UnicodeString value)		Analytic	AadCloudAPPluginOperation	Informational		
 Microsoft-Windows-AAD	1146	0	AadCloudAPPluginOperation1146(UInt64 NoOfTargets, UInt64 RequestType)		Analytic	AadCloudAPPluginOperation	Informational		
 Microsoft-Windows-AAD	1147	0	AadCloudAPPluginOperationStart1147()	Start	Analytic	AadCloudAPPluginOperation	Informational		
@@ -131,3 +131,21 @@ Microsoft-Windows-AAD	1209	0	AadCloudAPPluginOperationStart1209(UnicodeString va
 Microsoft-Windows-AAD	1210	0	AadCloudAPPluginOperation1210(UnicodeString value)		Operational Warning	AadCloudAPPluginOperation	Warning		
 Microsoft-Windows-AAD	1211	0	AadCloudAPPluginOperation1211(HexInt32 Status)		Operational Warning	AadCloudAPPluginOperation	Warning		
 Microsoft-Windows-AAD	1212	0	AadCloudAPPluginOperation1212(HexInt32 Status, UnicodeString CorrelationID)		Operational Warning	AadCloudAPPluginOperation	Warning		
+Microsoft-Windows-AAD	1213	0	WamExtensionOperationStart()	Start	Analytic	WamExtensionOperation	Informational		
+Microsoft-Windows-AAD	1214	0	WamExtensionOperationStop()	Stop	Analytic	WamExtensionOperation	Informational		
+Microsoft-Windows-AAD	1215	0	WamExtensionOperationStop1215(Int32 Result)	Stop	Error Operational	WamExtensionOperation	Error		
+Microsoft-Windows-AAD	1216	0	WamExtensionOperationStart1216(Int32 Result, UnicodeString Target)	Start	Analytic	WamExtensionOperation	Informational		
+Microsoft-Windows-AAD	1217	0	AadCloudAPPluginOperation1217(UnicodeString value1, UnicodeString value2, UnicodeString value3)		Analytic	AadCloudAPPluginOperation	Informational		
+Microsoft-Windows-AAD	1218	0	AuthHelperStart()	Start	Analytic	AuthHelper	Informational		
+Microsoft-Windows-AAD	1219	0	AuthHelperStop(HexInt32 Status)	Stop	Analytic	AuthHelper	Informational		
+Microsoft-Windows-AAD	1220	0	AuthHelperStart1220()	Start	Analytic	AuthHelper	Informational		
+Microsoft-Windows-AAD	1221	0	AuthHelperStop1221(HexInt32 Status)	Stop	Analytic	AuthHelper	Informational		
+Microsoft-Windows-AAD	1222	0	AuthHelperStart1222()	Start	Analytic	AuthHelper	Informational		
+Microsoft-Windows-AAD	1223	0	AuthHelperStop1223(HexInt32 Status)	Stop	Analytic	AuthHelper	Informational		
+Microsoft-Windows-AAD	1224	0	AuthHelperStart1224()	Start	Analytic	AuthHelper	Informational		
+Microsoft-Windows-AAD	1225	0	AuthHelperStop1225(HexInt32 Status)	Stop	Analytic	AuthHelper	Informational		
+Microsoft-Windows-AAD	1226	0	AuthHelperStart1226()	Start	Analytic	AuthHelper	Informational		
+Microsoft-Windows-AAD	1227	0	AuthHelperStop1227(HexInt32 Status)	Stop	Analytic	AuthHelper	Informational		
+Microsoft-Windows-AAD	1228	0	AuthHelperStart1228()	Start	Analytic	AuthHelper	Informational		
+Microsoft-Windows-AAD	1229	0	AuthHelperStop1229(HexInt32 Status)	Stop	Analytic	AuthHelper	Informational		
+Microsoft-Windows-AAD	1230	0	AuthHelper(UnicodeString API, UInt32 Result)		Error Operational	AuthHelper	Error		

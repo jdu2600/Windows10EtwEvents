@@ -60,3 +60,5 @@ Microsoft-Windows-UserModePowerService	53	0	RundownOverlaySuspendReason(UInt32 R
 Microsoft-Windows-UserModePowerService	54	0	OverlaySuspendResume(UInt32 Reason, Boolean Suspend)			OverlaySuspendResume	Informational		
 Microsoft-Windows-UserModePowerService	55	0	OverrideDllSettingsUpdate()			OverrideDllSettingsUpdate	Informational		
 Microsoft-Windows-UserModePowerService	56	0	OverrideDllPowerSetting(GUID SchemeGuid, GUID SubgroupGuid, GUID SettingGuid, UInt32 Flags, UInt32 DataType, UInt32 DataSize, Binary Data, GUID ProfileGuid)			OverrideDllPowerSetting	Informational		
+Microsoft-Windows-UserModePowerService	57	0	AdaptiveStandbyStart(UInt32 Reason)	Start	AdaptiveStandby	AdaptiveStandby	Informational		
+Microsoft-Windows-UserModePowerService	58	0	AdaptiveStandbyStop(UInt32 Reason)	Stop	AdaptiveStandby	AdaptiveStandby	Informational		

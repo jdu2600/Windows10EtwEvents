@@ -30,6 +30,9 @@ Microsoft-Windows-MF	28	0	task_0(UnicodeString DeviceStreamName, UInt32 DeviceSt
 Microsoft-Windows-MF	29	0	task_029(UnicodeString DeviceStreamName, UInt32 DeviceStreamId, UInt32 MFTStreamId, UInt32 DriverQueueDepth)			task_0	Informational		
 Microsoft-Windows-MF	30	0	task_030(UnicodeString DeviceStreamName, UInt32 DeviceStreamId, UInt32 MFTStreamId, Pointer samplePointer, UInt64 DriverTimeStamp, UInt64 SystemTimeStamp, UInt64 SampleCompletionNumber, AnsiString FlagTimeStamp, AnsiString StreamName)			task_0	Informational		
 Microsoft-Windows-MF	31	0	MediaFoundationDevproxyPhotoConfirmation(Pointer SamplePtr)			MediaFoundationDevproxyPhotoConfirmation	Informational		
+Microsoft-Windows-MF	32	0	MediaFoundationDevproxyDMFTNotificationStart(Pointer SamplePtr)	Start		MediaFoundationDevproxyDMFTNotification	Informational		
+Microsoft-Windows-MF	33	0	MediaFoundationDevproxyDMFTNotificationStop(Pointer SamplePtr)	Stop		MediaFoundationDevproxyDMFTNotification	Informational		
+Microsoft-Windows-MF	34	0	MediaFoundationDevproxyDMFTNotificationInit(Pointer SamplePtr)			MediaFoundationDevproxyDMFTNotificationInit	Informational		
 Microsoft-Windows-MF	1000	0	MediaFoundationLoadTopologyStart()	Start		MediaFoundationLoadTopology	Informational		
 Microsoft-Windows-MF	1001	0	MediaFoundationLoadTopologyStop(HexInt32 hr)	Stop		MediaFoundationLoadTopology	Informational		
 Microsoft-Windows-MF	1002	0	MediaFoundationLoadTopology(UnicodeString CLSID, HexInt32 hr)			MediaFoundationLoadTopology	Informational		
@@ -74,6 +77,8 @@ Microsoft-Windows-MF	1133	0	MediaFoundationAsyncWrapperRunningStop(Pointer Wrapp
 Microsoft-Windows-MF	1134	0	MediaFoundationAsyncWrapperSetWorkQueue(Pointer WrapperPtr, UInt32 WorkQueueID)			MediaFoundationAsyncWrapperSetWorkQueue	Verbose		
 Microsoft-Windows-MF	1135	0	MediaFoundationAsyncWrapperStart(Pointer ObjectPtr, Pointer MFTPtr)	Start		MediaFoundationAsyncWrapper	Verbose		
 Microsoft-Windows-MF	1136	0	MediaFoundationAsyncWrapperStop(Pointer ObjectPtr, Pointer MFTPtr)	Stop		MediaFoundationAsyncWrapper	Verbose		
+Microsoft-Windows-MF	1137	0	MediaFoundationAsyncWrapperDeadlineStart(Pointer WrapperPtr, UInt32 WorkQueueID, UInt64 DeadlineHNS)	Start		MediaFoundationAsyncWrapperDeadline	Verbose		
+Microsoft-Windows-MF	1138	0	MediaFoundationAsyncWrapperDeadlineStop(Pointer WrapperPtr, UInt32 WorkQueueID)	Stop		MediaFoundationAsyncWrapperDeadline	Verbose		
 Microsoft-Windows-MF	1150	0	MediaFoundationVideoFrameConstrict(UInt64 bandwidthInPixels)			MediaFoundationVideoFrameConstrict	Verbose		
 Microsoft-Windows-MF	1151	0	MediaFoundationOPMFail(HexInt32 hr)			MediaFoundationOPMFail	Error		
 Microsoft-Windows-MF	1200	0	task_01200(UInt32 ComponentType, UInt32 SettingType, Int32 Result)			task_0	Informational		

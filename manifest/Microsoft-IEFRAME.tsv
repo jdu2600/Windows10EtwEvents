@@ -290,8 +290,8 @@ Microsoft-IEFRAME	425	0	ImageStore_Activity_SingleImage(UInt32 PID, UnicodeStrin
 Microsoft-IEFRAME	426	0	ImageStore_Activity_ImageTotal(UInt32 PID, UnicodeString ActivityType, UnicodeString ImageKey, UInt32 TotalNumber)		imagestore	ImageStore_Activity_ImageTotal	Always		
 Microsoft-IEFRAME	427	0	Browseui_TabSuspension_Suspend(UInt32 PID, Boolean Suspending, UInt32 ResumeReason)		tabhydration	Browseui_TabSuspension_Suspend	Always		
 Microsoft-IEFRAME	428	0	Browseui_TabSuspension_Unuspend(UInt32 PID, Boolean Suspending, UInt32 ResumeReason)		tabhydration	Browseui_TabSuspension_Unuspend	Always		
-Microsoft-IEFRAME	429	0	Iso_Dependencies_AddDependency(UInt32 Target, UInt32 TargetPID, UInt32 Dependent, UInt32 DependentPID, UInt32 Flags)		tabhydration	Iso_Dependencies_AddDependency	Always		
-Microsoft-IEFRAME	430	0	Iso_Dependencies_RemoveDependency(UInt32 Target, UInt32 TargetPID, UInt32 Dependent, UInt32 DependentPID, UInt32 Flags)		tabhydration	Iso_Dependencies_RemoveDependency	Always		
+Microsoft-IEFRAME	429	0	Iso_Dependencies_AddDependency(UInt32 Target, UInt32 TargetPID, UInt32 Dependent, UInt32 DependentPID, UInt32 Flags, UInt32 Reason)		tabhydration	Iso_Dependencies_AddDependency	Always		
+Microsoft-IEFRAME	430	0	Iso_Dependencies_RemoveDependency(UInt32 Target, UInt32 TargetPID, UInt32 Dependent, UInt32 DependentPID, UInt32 Flags, UInt32 Reason)		tabhydration	Iso_Dependencies_RemoveDependency	Always		
 Microsoft-IEFRAME	431	0	DataModel_QueryEntry(UInt32 QueryID)		primarynav	DataModel_QueryEntry	Always		
 Microsoft-IEFRAME	432	0	Bing_Suggestions_ServiceRequest(UInt32 QueryID)		bingsuggestions	Bing_Suggestions_ServiceRequest	Always		
 Microsoft-IEFRAME	433	0	Bing_Suggestions_ServiceResponse(UInt32 QueryID)		bingsuggestions	Bing_Suggestions_ServiceResponse	Always		

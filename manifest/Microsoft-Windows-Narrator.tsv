@@ -101,8 +101,6 @@ Microsoft-Windows-Narrator	121	0	TextEventPreprocessingStart()	Start	PerfInstrum
 Microsoft-Windows-Narrator	122	0	TextEventPreprocessingStop()	Stop	PerfInstrumentation	TextEventPreprocessing	Informational		
 Microsoft-Windows-Narrator	123	0	InitializeTextPatternStateStart(Int32 EventId)	Start	PerfInstrumentation	InitializeTextPatternState	Informational		
 Microsoft-Windows-Narrator	124	0	InitializeTextPatternStateStop(Int32 EventId)	Stop	PerfInstrumentation	InitializeTextPatternState	Informational		
-Microsoft-Windows-Narrator	125	0	CheckTextEventDeltaStart(Int32 EventId)	Start	PerfInstrumentation	CheckTextEventDelta	Informational		
-Microsoft-Windows-Narrator	126	0	CheckTextEventDeltaStop(Int32 EventId)	Stop	PerfInstrumentation	CheckTextEventDelta	Informational		
 Microsoft-Windows-Narrator	127	0	GenerateTextEventTextChangeStart(Int32 EventId)	Start	PerfInstrumentation	GenerateTextEventTextChange	Informational		
 Microsoft-Windows-Narrator	128	0	GenerateTextEventTextChangeStop(Int32 EventId)	Stop	PerfInstrumentation	GenerateTextEventTextChange	Informational		
 Microsoft-Windows-Narrator	129	0	TextEventParentUpdateStart(Int32 EventId)	Start	PerfInstrumentation	TextEventParentUpdate	Informational		
@@ -206,3 +204,4 @@ Microsoft-Windows-Narrator	234	0	NarratorInitializeStop()	Stop	PerfInstrumentati
 Microsoft-Windows-Narrator	235	0	NarratorRunStart()	Start	PerfInstrumentation	NarratorRun	Informational		
 Microsoft-Windows-Narrator	236	0	NarratorShortcutDisabled()		PerfInstrumentation	NarratorShortcutDisabled	Informational		
 Microsoft-Windows-Narrator	237	0	NarratorAlreadyRunning()		PerfInstrumentation	NarratorAlreadyRunning	Informational		
+Microsoft-Windows-Narrator	238	0	NarratorQueueState(UnicodeString EventType)		PerfInstrumentation	NarratorQueueState	Informational		

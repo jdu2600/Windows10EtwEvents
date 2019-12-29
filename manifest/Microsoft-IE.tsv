@@ -725,3 +725,7 @@ Microsoft-IE	859	0	JScript_Parse_Script(Pointer Element, UInt32 Zero)		jscript	J
 Microsoft-IE	860	0	Mshtml_Canvas_CommandListStart(Pointer CommandList, UInt32 NumCommands, UInt32 BytesUsed)	Start	subsystem composition	Mshtml_Canvas_CommandList	Always		
 Microsoft-IE	861	0	Mshtml_Canvas_CommandListStop()	Stop	subsystem composition	Mshtml_Canvas_CommandList	Always		
 Microsoft-IE	862	0	Mshtml_Canvas_CommandList(UInt32 FlushReason)		subsystem composition	Mshtml_Canvas_CommandList	Always		
+Microsoft-IE	863	0	Edgehtml_Extensions_WrxMessageStart(Binary To, Binary From, UInt32 PayloadSize, UInt32 Header)	Start	extensions	Edgehtml_Extensions_WrxMessage	Always		
+Microsoft-IE	864	0	Edgehtml_Extensions_WrxMessage(UInt32 Result)		extensions	Edgehtml_Extensions_WrxMessage	Always		
+Microsoft-IE	865	0	Edgehtml_Extensions_WrxMessageStop()	Stop	extensions	Edgehtml_Extensions_WrxMessage	Always		
+Microsoft-IE	866	0	Mshtml_Container_Size(Pointer Container, UInt32 Capacity, UInt32 InUse)		containers	Mshtml_Container_Size	Always		

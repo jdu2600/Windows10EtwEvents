@@ -7,13 +7,14 @@ Microsoft-Windows-MediaFoundation-MFReadWrite	4	0	SourceReader_ReadSampleStart(P
 Microsoft-Windows-MediaFoundation-MFReadWrite	5	0	SourceReader_ReadSampleStop(Pointer Object, UInt32 ErrorCode, UInt32 ActualStreamIndex, UInt32 StreamFlags, Pointer Sample, UInt64 Timestamp, UInt64 Duration, UInt32 Size, Boolean Discontinuity, Boolean CleanPoint)	Stop		SourceReader_ReadSample	Informational		
 Microsoft-Windows-MediaFoundation-MFReadWrite	6	0	SourceReader_FlushStart(Pointer Object, UInt32 StreamIndex)	Start		SourceReader_Flush	Informational		
 Microsoft-Windows-MediaFoundation-MFReadWrite	7	0	SourceReader_FlushStop(Pointer Object, UInt32 StreamIndex)	Stop		SourceReader_Flush	Informational		
-Microsoft-Windows-MediaFoundation-MFReadWrite	8	0	SourceReader_RequestSample(Pointer Object)			SourceReader_RequestSample	Informational		
 Microsoft-Windows-MediaFoundation-MFReadWrite	9	0	SourceReader_MediaSourceEvent(Pointer Object, UInt32 EventType, UInt32 ErrorCode)			SourceReader_MediaSourceEvent	Informational		
 Microsoft-Windows-MediaFoundation-MFReadWrite	10	0	SourceReader_MediaStreamEvent(Pointer Object, UInt32 StreamIndex, UInt32 EventType, UInt32 ErrorCode)			SourceReader_MediaStreamEvent	Informational		
 Microsoft-Windows-MediaFoundation-MFReadWrite	11	0	SourceReader_Error(Pointer Object, UInt32 ErrorCode)			SourceReader_Error	Error		
 Microsoft-Windows-MediaFoundation-MFReadWrite	12	0	SourceReader_CapturePluginCreated(Pointer Object, UInt32 StreamIndex, Pointer MFT, GUID CLSID, Pointer vtable)			SourceReader_CapturePluginCreated	Informational		
 Microsoft-Windows-MediaFoundation-MFReadWrite	13	0	SourceReader_TransformChange()			SourceReader_TransformChange	Informational		
 Microsoft-Windows-MediaFoundation-MFReadWrite	14	0	SourceReader_Error14(Pointer Object, UInt32 StreamIndex, UInt32 ErrorCode)			SourceReader_Error	Error		
+Microsoft-Windows-MediaFoundation-MFReadWrite	15	0	SourceReader_RequestSampleStart(Pointer Object, UInt64 RequestCounter, UInt32 StreamIndex)	Start		SourceReader_RequestSample	Informational		
+Microsoft-Windows-MediaFoundation-MFReadWrite	16	0	SourceReader_RequestSampleStop(Pointer Object, UInt64 RequestCounter, UInt32 StreamIndex)	Stop		SourceReader_RequestSample	Informational		
 Microsoft-Windows-MediaFoundation-MFReadWrite	100	0	SinkWriter_SetInputMediaTypeStart(Pointer Object, UInt32 StreamIndex, GUID MajorType, GUID Subtype)	Start		SinkWriter_SetInputMediaType	Informational		
 Microsoft-Windows-MediaFoundation-MFReadWrite	101	0	SinkWriter_SetInputMediaTypeStop(Pointer Object, UInt32 StreamIndex, UInt32 ErrorCode)	Stop		SinkWriter_SetInputMediaType	Informational		
 Microsoft-Windows-MediaFoundation-MFReadWrite	102	0	SinkWriter_BeginWriting(Pointer Object)			SinkWriter_BeginWriting	Informational		

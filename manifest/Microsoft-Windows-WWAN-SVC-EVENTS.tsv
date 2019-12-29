@@ -1,7 +1,14 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-WWAN-SVC-EVENTS	1001	0	task_0(GUID InterfaceGuid, UInt32 ErrorCode, UInt32 Location, UInt32 Context)			task_0	Error		
-Microsoft-Windows-WWAN-SVC-EVENTS	1002	0	task_01002(GUID InterfaceGuid, UInt32 WarningCode, UInt32 Location, UInt32 Context)			task_0	Warning		
+Microsoft-Windows-WWAN-SVC-EVENTS	1001	0	task_0(AnsiString FunctionCall, UnicodeString Message)			task_0	Error		
+Microsoft-Windows-WWAN-SVC-EVENTS	1002	0	task_01002(AnsiString FunctionCall, UnicodeString Message)			task_0	Warning		
 Microsoft-Windows-WWAN-SVC-EVENTS	1003	0	task_01003(UnicodeString FunctionCall, UnicodeString Method, UInt32 ErrorCode)			task_0	Error		
+Microsoft-Windows-WWAN-SVC-EVENTS	1004	0	task_01004(AnsiString FunctionCall, UnicodeString Message)			task_0	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	1005	0	task_01005(AnsiString FunctionCall, UnicodeString Message)			task_0	Verbose		
+Microsoft-Windows-WWAN-SVC-EVENTS	1006	0	task_01006(AnsiString FunctionCall, GUID InterfaceGuid, UnicodeString Message)			task_0	Error		
+Microsoft-Windows-WWAN-SVC-EVENTS	1007	0	task_01007(AnsiString FunctionCall, GUID InterfaceGuid, UnicodeString Message)			task_0	Warning		
+Microsoft-Windows-WWAN-SVC-EVENTS	1008	0	task_01008(AnsiString FunctionCall, GUID InterfaceGuid, UnicodeString Message)			task_0	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	1009	0	task_01009(AnsiString FunctionCall, GUID InterfaceGuid, UnicodeString Message)			task_0	Verbose		
+Microsoft-Windows-WWAN-SVC-EVENTS	1010	0	task_01010(Int32 hresult, UInt32 wilFailureType, AnsiString moduleName, AnsiString fileName, UInt32 lineNumber, UnicodeString message)		LwtDiagnostic keyword_800000000000	task_0	Error		
 Microsoft-Windows-WWAN-SVC-EVENTS	2001	0	task_02001()			task_0	Informational		
 Microsoft-Windows-WWAN-SVC-EVENTS	2002	0	task_02002()			task_0	Informational		
 Microsoft-Windows-WWAN-SVC-EVENTS	2003	0	task_02003(GUID InterfaceGuid, UnicodeString InterfaceDescription, UInt32 ModemCreationCount)		LwtDiagnostic InterfaceEnum ut:L2ConnectPath	task_0	Informational		
@@ -49,7 +56,7 @@ Microsoft-Windows-WWAN-SVC-EVENTS	6102	0	task_0Start(GUID InterfaceGuid)	Start		
 Microsoft-Windows-WWAN-SVC-EVENTS	6103	0	task_0Stop(GUID InterfaceGuid, UInt32 ConnectInformationFlags, UInt32 APIErrorCode, UInt32 NetworkErrorCode, UnicodeString HardwareId)	Stop		task_0	Informational		
 Microsoft-Windows-WWAN-SVC-EVENTS	6104	0	task_0Stop6104(GUID InterfaceGuid)	Stop		task_0	Informational		
 Microsoft-Windows-WWAN-SVC-EVENTS	7000	0	AccountManagement(UInt32 error, Int32 hresult)			AccountManagement	Critical		
-Microsoft-Windows-WWAN-SVC-EVENTS	7001	0	AccountManagement7001(UnicodeString mbnInterface, UnicodeString propname, UInt32 error, Int32 hresult)			AccountManagement	Error		
+Microsoft-Windows-WWAN-SVC-EVENTS	7001	0	AccountManagement7001(UnicodeString mbnInterface, UnicodeString propname, UInt32 error, Int32 hresult)			AccountManagement	Verbose		
 Microsoft-Windows-WWAN-SVC-EVENTS	7002	0	AccountManagement7002(UnicodeString mbnInterface, Int32 cellularClass)			AccountManagement	Warning		
 Microsoft-Windows-WWAN-SVC-EVENTS	7003	0	AccountManagement7003()			AccountManagement	Error		
 Microsoft-Windows-WWAN-SVC-EVENTS	7004	0	AccountManagement7004()			AccountManagement	Informational		
@@ -112,7 +119,7 @@ Microsoft-Windows-WWAN-SVC-EVENTS	11017	1	task_0OID_Handling11017_V1(GUID Interf
 Microsoft-Windows-WWAN-SVC-EVENTS	11018	1	task_0OID_Handling11018_V1(GUID InterfaceGuid, UInt32 RequestId, GUID DeviceServiceGuid, UInt32 WwanDeviceServiceResponse, UInt32 ModemNumber, UInt32 ExecutorID)	OID_Handling	LwtDiagnostic WwanOid keyword_400000000000	task_0	Informational		
 Microsoft-Windows-WWAN-SVC-EVENTS	11019	1	task_0OID_Handling11019_V1(GUID InterfaceGuid, UInt32 RequestId, GUID DeviceServiceGuid, UInt32 WwanDeviceServiceResponse, UInt32 MaxContextCount)	OID_Handling	LwtDiagnostic WwanOid keyword_400000000000	task_0	Informational		
 Microsoft-Windows-WWAN-SVC-EVENTS	11020	1	task_0OID_Handling11020_V1(GUID InterfaceGuid, UInt32 RequestId, GUID DeviceServiceGuid, UInt32 WwanDeviceServiceResponse, UInt32 Executors, UInt32 ActiveExecutors, UInt32 ActiveDataExecutors)	OID_Handling	LwtDiagnostic WwanOid keyword_400000000000	task_0	Informational		
-Microsoft-Windows-WWAN-SVC-EVENTS	11021	1	task_0OID_Handling11021_V1(GUID InterfaceGuid, UInt32 RequestId, UInt32 WwanStatus, UInt32 ModemConfigMode, UInt32 ModemConfigState, UInt32 ModemConfigReason, UInt32 PreviousConfigID, UInt32 CurrentConfigID, UInt32 DefaultOrNot)	OID_Handling	LwtDiagnostic WwanOid keyword_400000000000	task_0	Informational		
+Microsoft-Windows-WWAN-SVC-EVENTS	11021	1	task_0OID_Handling11021_V1(GUID InterfaceGuid, UInt32 RequestId, UInt32 WwanStatus, UInt32 ModemConfigMode, UInt32 ModemConfigState, UInt32 ModemConfigReason, UInt32 PreviousConfigIDLen, AnsiString PreviousConfigID, UInt32 CurrentConfigIDLen, AnsiString CurrentConfigID, UInt32 IsCurrentConfigDefault)	OID_Handling	LwtDiagnostic WwanOid keyword_400000000000	task_0	Informational		
 Microsoft-Windows-WWAN-SVC-EVENTS	11022	1	task_0OID_Handling11022_V1(GUID InterfaceGuid, UInt32 RequestId, UInt32 WwanStatus, UInt32 DeviceType, UInt32 CellularClass, UInt32 VoiceClass, UInt32 SimClass, UInt32 DataClass, UnicodeString CustomDataClass, UInt32 BandClass, UnicodeString CustomBandClass, UInt32 SmsCaps, UInt32 ControlCaps, UnicodeString DeviceId, UnicodeString Manufacturer, UnicodeString Model, UnicodeString FirmwareInfo, UInt32 MaxActivatedContexts, UInt32 AuthAlgoCaps, UInt32 ExecutorID, UInt32 OptServiceCaps)	OID_Handling	LwtDiagnostic WwanOid InterfaceEnum keyword_400000000000	task_0	Informational		
 Microsoft-Windows-WWAN-SVC-EVENTS	11101	1	task_0OID_Handling11101_V1(GUID InterfaceGuid, UInt32 RequestId, UInt32 OID, UInt32 cbPayload, Binary Payload, UInt32 ErrorCode)	OID_Handling	LwtDiagnostic WwanOid keyword_400000000000	task_0	Informational		
 Microsoft-Windows-WWAN-SVC-EVENTS	11102	1	task_0OID_Handling11102_V1(GUID InterfaceGuid, UInt32 RequestId, UInt32 OID, UInt32 cbPayload, Binary Payload, UInt32 ErrorCode)	OID_Handling	LwtDiagnostic WwanOid keyword_400000000000	task_0	Informational		
@@ -147,4 +154,5 @@ Microsoft-Windows-WWAN-SVC-EVENTS	12253	0	WWANConnectionConnectionProfile12253(G
 Microsoft-Windows-WWAN-SVC-EVENTS	12300	0	task_012300(GUID InterfaceGuid, Int32 ModemIndex, Int32 ExecutorIndex, UInt32 RequestId, UInt32 ModemType, AnsiString Operation)		LwtDiagnostic WwanUICC keyword_400000000000	task_0	Informational		
 Microsoft-Windows-WWAN-SVC-EVENTS	12301	0	task_012301(GUID InterfaceGuid, Int32 ModemIndex, Int32 ExecutorIndex, Int32 RequestId, UInt32 ModemType, AnsiString FailedOperation, UInt32 ErrorCode)		LwtDiagnostic WwanUICC keyword_400000000000	task_0	Error		
 Microsoft-Windows-WWAN-SVC-EVENTS	12302	0	task_012302(GUID InterfaceGuid, Int32 ModemIndex, Int32 ExecutorIndex, Int32 RequestId, UInt32 CommandType)		LwtDiagnostic WwanUICC keyword_400000000000	task_0	Informational		
-Microsoft-Windows-WWAN-SVC-EVENTS	12303	0	task_012303(GUID InterfaceGuid, Int32 ModemIndex, Int32 ExecutorIndex, Int32 RequestId, UInt32 CommandType, AnsiString FailedOperation, UInt32 ErrorCode)		LwtDiagnostic WwanUICC keyword_400000000000	task_0	Error		
+Microsoft-Windows-WWAN-SVC-EVENTS	12303	0	task_012303(GUID InterfaceGuid, Int32 ModemIndex, Int32 ExecutorIndex, Int32 RequestId, UInt32 CommandType)		LwtDiagnostic WwanUICC keyword_400000000000	task_0	Error		
+Microsoft-Windows-WWAN-SVC-EVENTS	12400	0	task_012400(GUID InterfaceGuid, Int32 ModemIndex, Int32 ExecutorIndex, Int32 RequestId, UInt32 CommandType)		keyword_400000000000	task_0	Error		

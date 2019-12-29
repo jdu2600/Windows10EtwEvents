@@ -160,3 +160,177 @@ Microsoft-Windows-WinINet	1061	0	Wininet_AppCacheLookupStart(UnicodeString URL)	
 Microsoft-Windows-WinINet	1062	0	Wininet_AppCacheLookupStop(UnicodeString ManifestURL)	Stop	WININET_KEYWORD_IE	Wininet_AppCacheLookup	Informational		
 Microsoft-Windows-WinINet	1063	0	Wininet_RequestPrioritySet(Pointer Request, Int32 OldPriority, Int32 NewPriority)		WININET_KEYWORD_IE	Wininet_RequestPrioritySet	Informational		
 Microsoft-Windows-WinINet	1064	0	WININET_STREAM_DATA_INDICATED(Pointer RequestHandle, UInt32 StreamId, UInt32 Size, Boolean Headers)		WININET_KEYWORD_IE	WININET_STREAM_DATA_INDICATED	Informational		
+Microsoft-Windows-WinINet	1065	0	Wininet_SecurityContextStart(Pointer Context, AnsiString HostName, UInt32 NegotiationCount, UInt32 Socket)	Start	WININET_KEYWORD_IE	Wininet_SecurityContext	Informational		
+Microsoft-Windows-WinINet	1066	0	Wininet_SecurityContextStop(Pointer Context, AnsiString HostName, UInt32 NegotiationCount, UInt32 Socket, UInt32 Status)	Stop	WININET_KEYWORD_IE	Wininet_SecurityContext	Informational		
+Microsoft-Windows-WinINet	1067	0	Wininet_SocketReceiveDelayStart(Pointer Request, UInt32 Socket)	Start	WININET_KEYWORD_IE	Wininet_SocketReceiveDelay	Informational		
+Microsoft-Windows-WinINet	1068	0	Wininet_SocketReceiveDelayStop(Pointer Request, UInt32 Socket)	Stop	WININET_KEYWORD_IE	Wininet_SocketReceiveDelay	Informational		
+Microsoft-Windows-WinINet	1069	0	Wininet_FileIOStart(Pointer Handle, UInt32 Operation, UInt32 ClientType, UInt32 ThreadInfoUIType, Boolean IsSync)	Start	WININET_KEYWORD_IE	Wininet_FileIO	Informational		
+Microsoft-Windows-WinINet	1070	0	Wininet_FileIOStop(Pointer Handle, UInt32 Operation, UInt32 ClientType, UInt32 ThreadInfoUIType, Boolean IsSync)	Stop	WININET_KEYWORD_IE	Wininet_FileIO	Informational		
+Microsoft-Windows-WinINet	1071	0	Wininet_FileIOStart1071(Pointer Handle, UInt32 Operation, UInt32 ClientType, UInt32 ThreadInfoUIType, Boolean IsSync, UInt32 DataLength)	Start	WININET_KEYWORD_IE	Wininet_FileIO	Informational		
+Microsoft-Windows-WinINet	1072	0	Wininet_FileIOStop1072(Pointer Handle, UInt32 Operation, UInt32 ClientType, UInt32 ThreadInfoUIType, Boolean IsSync)	Stop	WININET_KEYWORD_IE	Wininet_FileIO	Informational		
+Microsoft-Windows-WinINet	1073	0	Wininet_AppCacheHandleStart(Pointer Object, UnicodeString Url, UnicodeString LocalFileName)	Start	WININET_KEYWORD_IE	Wininet_AppCacheHandle	Informational		
+Microsoft-Windows-WinINet	1074	0	Wininet_AppCacheHandleStop(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_AppCacheHandle	Informational		
+Microsoft-Windows-WinINet	1075	0	Wininet_AppCacheHandleStart1075(Pointer Object, Pointer Handle, UnicodeString Url)	Start	WININET_KEYWORD_IE	Wininet_AppCacheHandle	Informational		
+Microsoft-Windows-WinINet	1076	0	Wininet_AppCacheHandleStop1076(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_AppCacheHandle	Informational		
+Microsoft-Windows-WinINet	1077	0	Wininet_AppCacheHandleStart1077(Pointer Object, Pointer Handle, UnicodeString Url)	Start	WININET_KEYWORD_IE	Wininet_AppCacheHandle	Informational		
+Microsoft-Windows-WinINet	1078	0	Wininet_AppCacheHandleStop1078(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_AppCacheHandle	Informational		
+Microsoft-Windows-WinINet	1079	0	Wininet_AppCacheHandleStart1079(Pointer Object, UInt32 DataSize)	Start	WININET_KEYWORD_IE	Wininet_AppCacheHandle	Informational		
+Microsoft-Windows-WinINet	1080	0	Wininet_AppCacheHandleStop1080(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_AppCacheHandle	Informational		
+Microsoft-Windows-WinINet	1081	0	Wininet_AppCacheHandleStart1081(Pointer Object)	Start	WININET_KEYWORD_IE	Wininet_AppCacheHandle	Informational		
+Microsoft-Windows-WinINet	1082	0	Wininet_AppCacheHandleStop1082(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_AppCacheHandle	Informational		
+Microsoft-Windows-WinINet	1083	0	Wininet_AppCacheHandleStart1083(Pointer Object, UnicodeString Url)	Start	WININET_KEYWORD_IE	Wininet_AppCacheHandle	Informational		
+Microsoft-Windows-WinINet	1084	0	Wininet_AppCacheHandleStop1084(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_AppCacheHandle	Informational		
+Microsoft-Windows-WinINet	1085	0	Wininet_AppCacheHandleStart1085(Pointer Object)	Start	WININET_KEYWORD_IE	Wininet_AppCacheHandle	Informational		
+Microsoft-Windows-WinINet	1086	0	Wininet_AppCacheHandleStop1086(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_AppCacheHandle	Informational		
+Microsoft-Windows-WinINet	1087	0	Wininet_AppCacheHandleStart1087(Pointer Object)	Start	WININET_KEYWORD_IE	Wininet_AppCacheHandle	Informational		
+Microsoft-Windows-WinINet	1088	0	Wininet_AppCacheHandleStop1088(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_AppCacheHandle	Informational		
+Microsoft-Windows-WinINet	1089	0	Wininet_AppCacheServerContainerStart(Pointer Object, Pointer Handle, UnicodeString Directory, Boolean IsIEAppContainer)	Start	WININET_KEYWORD_IE	Wininet_AppCacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1090	0	Wininet_AppCacheServerContainerStop(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_AppCacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1091	0	Wininet_AppCacheServerContainerStart1091(Pointer Object)	Start	WININET_KEYWORD_IE	Wininet_AppCacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1092	0	Wininet_AppCacheServerContainerStop1092(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_AppCacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1093	0	Wininet_AppCacheServerContainerStart1093(Pointer Object)	Start	WININET_KEYWORD_IE	Wininet_AppCacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1094	0	Wininet_AppCacheServerContainerStop1094(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_AppCacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1095	0	Wininet_AppCacheServerContainerStart1095(Pointer Object, UnicodeString Url)	Start	WININET_KEYWORD_IE	Wininet_AppCacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1096	0	Wininet_AppCacheServerContainerStop1096(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_AppCacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1097	0	Wininet_AppCacheServerContainerStart1097(Pointer Object, UnicodeString Url)	Start	WININET_KEYWORD_IE	Wininet_AppCacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1098	0	Wininet_AppCacheServerContainerStop1098(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_AppCacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1099	0	Wininet_AppCacheServerContainerStart1099(Pointer Object, UnicodeString Url, UInt32 Flags)	Start	WININET_KEYWORD_IE	Wininet_AppCacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1100	0	Wininet_AppCacheServerContainerStop1100(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_AppCacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1101	0	Wininet_AppCacheServerContainerStart1101(Pointer Object, UnicodeString MasterUrl, UnicodeString ManifestURL, UInt32 DataSize, UInt32 EntryType, UInt32 HeaderSize)	Start	WININET_KEYWORD_IE	Wininet_AppCacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1102	0	Wininet_AppCacheServerContainerStop1102(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_AppCacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1103	0	Wininet_AppCacheServerContainerStart1103(Pointer Object)	Start	WININET_KEYWORD_IE	Wininet_AppCacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1104	0	Wininet_AppCacheServerContainerStop1104(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_AppCacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1105	0	Wininet_AppCacheServerContainerStart1105(Pointer Object)	Start	WININET_KEYWORD_IE	Wininet_AppCacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1106	0	Wininet_AppCacheServerContainerStop1106(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_AppCacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1107	0	Wininet_AppCacheServerContainerStart1107(Pointer Object)	Start	WININET_KEYWORD_IE	Wininet_AppCacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1108	0	Wininet_AppCacheServerContainerStop1108(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_AppCacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1109	0	Wininet_AppCacheServerContainerStart1109(Pointer Object)	Start	WININET_KEYWORD_IE	Wininet_AppCacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1110	0	Wininet_AppCacheServerContainerStop1110(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_AppCacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1111	0	Wininet_BlobServerContainerStart(Pointer Object, Pointer Handle, UnicodeString Directory)	Start	WININET_KEYWORD_IE	Wininet_BlobServerContainer	Informational		
+Microsoft-Windows-WinINet	1112	0	Wininet_BlobServerContainerStop(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_BlobServerContainer	Informational		
+Microsoft-Windows-WinINet	1113	0	Wininet_BlobServerContainerStart1113(Pointer Object)	Start	WININET_KEYWORD_IE	Wininet_BlobServerContainer	Informational		
+Microsoft-Windows-WinINet	1114	0	Wininet_BlobServerContainerStop1114(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_BlobServerContainer	Informational		
+Microsoft-Windows-WinINet	1115	0	Wininet_BlobServerContainerStart1115(Pointer Object)	Start	WININET_KEYWORD_IE	Wininet_BlobServerContainer	Informational		
+Microsoft-Windows-WinINet	1116	0	Wininet_BlobServerContainerStop1116(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_BlobServerContainer	Informational		
+Microsoft-Windows-WinINet	1117	0	Wininet_BlobServerContainerStart1117(Pointer Object, UnicodeString Url)	Start	WININET_KEYWORD_IE	Wininet_BlobServerContainer	Informational		
+Microsoft-Windows-WinINet	1118	0	Wininet_BlobServerContainerStop1118(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_BlobServerContainer	Informational		
+Microsoft-Windows-WinINet	1119	0	Wininet_BlobServerContainerStart1119(Pointer Object, UnicodeString Url)	Start	WININET_KEYWORD_IE	Wininet_BlobServerContainer	Informational		
+Microsoft-Windows-WinINet	1120	0	Wininet_BlobServerContainerStop1120(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_BlobServerContainer	Informational		
+Microsoft-Windows-WinINet	1121	0	Wininet_BlobServerContainerStart1121(Pointer Object, UnicodeString Url)	Start	WININET_KEYWORD_IE	Wininet_BlobServerContainer	Informational		
+Microsoft-Windows-WinINet	1122	0	Wininet_BlobServerContainerStop1122(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_BlobServerContainer	Informational		
+Microsoft-Windows-WinINet	1123	0	Wininet_BlobServerContainerStart1123(Pointer Object)	Start	WININET_KEYWORD_IE	Wininet_BlobServerContainer	Informational		
+Microsoft-Windows-WinINet	1124	0	Wininet_BlobServerContainerStop1124(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_BlobServerContainer	Informational		
+Microsoft-Windows-WinINet	1125	0	Wininet_CacheClientBloomFilterStart(Pointer Handle)	Start	WININET_KEYWORD_IE	Wininet_CacheClientBloomFilter	Informational		
+Microsoft-Windows-WinINet	1126	0	Wininet_CacheClientBloomFilterStop(UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_CacheClientBloomFilter	Informational		
+Microsoft-Windows-WinINet	1127	0	Wininet_CacheClientBloomFilterStart1127()	Start	WININET_KEYWORD_IE	Wininet_CacheClientBloomFilter	Informational		
+Microsoft-Windows-WinINet	1128	0	Wininet_CacheClientBloomFilterStop1128()	Stop	WININET_KEYWORD_IE	Wininet_CacheClientBloomFilter	Informational		
+Microsoft-Windows-WinINet	1129	0	Wininet_CookieServerContainerStart(Pointer Object, Pointer Handle, UnicodeString Directory)	Start	WININET_KEYWORD_IE	Wininet_CookieServerContainer	Informational		
+Microsoft-Windows-WinINet	1130	0	Wininet_CookieServerContainerStop(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_CookieServerContainer	Informational		
+Microsoft-Windows-WinINet	1131	0	Wininet_CookieServerContainerStart1131(Pointer Object)	Start	WININET_KEYWORD_IE	Wininet_CookieServerContainer	Informational		
+Microsoft-Windows-WinINet	1132	0	Wininet_CookieServerContainerStop1132(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_CookieServerContainer	Informational		
+Microsoft-Windows-WinINet	1133	0	Wininet_CookieServerContainerStart1133(Pointer Object, UnicodeString MinimizedRDomain)	Start	WININET_KEYWORD_IE	Wininet_CookieServerContainer	Informational		
+Microsoft-Windows-WinINet	1134	0	Wininet_CookieServerContainerStop1134(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_CookieServerContainer	Informational		
+Microsoft-Windows-WinINet	1135	0	Wininet_CookieServerContainerStart1135(Pointer Object)	Start	WININET_KEYWORD_IE	Wininet_CookieServerContainer	Informational		
+Microsoft-Windows-WinINet	1136	0	Wininet_CookieServerContainerStop1136(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_CookieServerContainer	Informational		
+Microsoft-Windows-WinINet	1137	0	Wininet_CookieServerContainerStart1137(Pointer Object, Int64 Hash, UInt32 OperationCount)	Start	WININET_KEYWORD_IE	Wininet_CookieServerContainer	Informational		
+Microsoft-Windows-WinINet	1138	0	Wininet_CookieServerContainerStop1138(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_CookieServerContainer	Informational		
+Microsoft-Windows-WinINet	1139	0	Wininet_CookieServerContainerStart1139(Pointer Object)	Start	WININET_KEYWORD_IE	Wininet_CookieServerContainer	Informational		
+Microsoft-Windows-WinINet	1140	0	Wininet_CookieServerContainerStop1140(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_CookieServerContainer	Informational		
+Microsoft-Windows-WinINet	1141	0	Wininet_CacheClientCountersStart(Pointer Object, Pointer Handle)	Start	WININET_KEYWORD_IE	Wininet_CacheClientCounters	Informational		
+Microsoft-Windows-WinINet	1142	0	Wininet_CacheClientCountersStop(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_CacheClientCounters	Informational		
+Microsoft-Windows-WinINet	1143	0	Wininet_DependencyServerContainerStart(Pointer Object, UnicodeString Url, UInt32 BlobSize)	Start	WININET_KEYWORD_IE	Wininet_DependencyServerContainer	Informational		
+Microsoft-Windows-WinINet	1144	0	Wininet_DependencyServerContainerStop(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_DependencyServerContainer	Informational		
+Microsoft-Windows-WinINet	1145	0	Wininet_DependencyServerContainerStart1145(Pointer Object, UnicodeString Url)	Start	WININET_KEYWORD_IE	Wininet_DependencyServerContainer	Informational		
+Microsoft-Windows-WinINet	1146	0	Wininet_DependencyServerContainerStop1146(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_DependencyServerContainer	Informational		
+Microsoft-Windows-WinINet	1147	0	Wininet_DependencyServerContainerStart1147(Pointer Object)	Start	WININET_KEYWORD_IE	Wininet_DependencyServerContainer	Informational		
+Microsoft-Windows-WinINet	1148	0	Wininet_DependencyServerContainerStop1148(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_DependencyServerContainer	Informational		
+Microsoft-Windows-WinINet	1149	0	Wininet_DependencyServerContainerStart1149(Pointer Object, Pointer Handle, Boolean IsCreateContainer, UnicodeString Directory)	Start	WININET_KEYWORD_IE	Wininet_DependencyServerContainer	Informational		
+Microsoft-Windows-WinINet	1150	0	Wininet_DependencyServerContainerStop1150(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_DependencyServerContainer	Informational		
+Microsoft-Windows-WinINet	1151	0	Wininet_DependencyServerContainerStart1151(Pointer Object)	Start	WININET_KEYWORD_IE	Wininet_DependencyServerContainer	Informational		
+Microsoft-Windows-WinINet	1152	0	Wininet_DependencyServerContainerStop1152(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_DependencyServerContainer	Informational		
+Microsoft-Windows-WinINet	1153	0	Wininet_HstsServerContainerStart(Pointer Object, Pointer Handle, UnicodeString Directory)	Start	WININET_KEYWORD_IE	Wininet_HstsServerContainer	Informational		
+Microsoft-Windows-WinINet	1154	0	Wininet_HstsServerContainerStop(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_HstsServerContainer	Informational		
+Microsoft-Windows-WinINet	1155	0	Wininet_HstsServerContainerStart1155(Pointer Object)	Start	WININET_KEYWORD_IE	Wininet_HstsServerContainer	Informational		
+Microsoft-Windows-WinINet	1156	0	Wininet_HstsServerContainerStop1156(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_HstsServerContainer	Informational		
+Microsoft-Windows-WinINet	1157	0	Wininet_HstsServerContainerStart1157(Pointer Object, UnicodeString MinimizedRDomain, Int64 Hash)	Start	WININET_KEYWORD_IE	Wininet_HstsServerContainer	Informational		
+Microsoft-Windows-WinINet	1158	0	Wininet_HstsServerContainerStop1158(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_HstsServerContainer	Informational		
+Microsoft-Windows-WinINet	1159	0	Wininet_HstsServerContainerStart1159(Pointer Object, Int64 Hash, UInt32 HstsEntryCount)	Start	WININET_KEYWORD_IE	Wininet_HstsServerContainer	Informational		
+Microsoft-Windows-WinINet	1160	0	Wininet_HstsServerContainerStop1160(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_HstsServerContainer	Informational		
+Microsoft-Windows-WinINet	1161	0	Wininet_HstsServerContainerStart1161(Pointer Object)	Start	WININET_KEYWORD_IE	Wininet_HstsServerContainer	Informational		
+Microsoft-Windows-WinINet	1162	0	Wininet_HstsServerContainerStop1162(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_HstsServerContainer	Informational		
+Microsoft-Windows-WinINet	1163	0	Wininet_CacheServerConnectionStart(Pointer Object)	Start	WININET_KEYWORD_IE	Wininet_CacheServerConnection	Informational		
+Microsoft-Windows-WinINet	1164	0	Wininet_CacheServerConnectionStop(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_CacheServerConnection	Informational		
+Microsoft-Windows-WinINet	1165	0	Wininet_CacheServerConnectionStart1165(Pointer Object, Pointer Handle)	Start	WININET_KEYWORD_IE	Wininet_CacheServerConnection	Informational		
+Microsoft-Windows-WinINet	1166	0	Wininet_CacheServerConnectionStop1166(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_CacheServerConnection	Informational		
+Microsoft-Windows-WinINet	1167	0	Wininet_CacheServerEntryEnumStart(Pointer Object)	Start	WININET_KEYWORD_IE	Wininet_CacheServerEntryEnum	Informational		
+Microsoft-Windows-WinINet	1168	0	Wininet_CacheServerEntryEnumStop(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_CacheServerEntryEnum	Informational		
+Microsoft-Windows-WinINet	1169	0	Wininet_CacheServerEntryEnumStart1169(Pointer Object, Pointer Handle, UInt32 Filter, Int64 GroupId)	Start	WININET_KEYWORD_IE	Wininet_CacheServerEntryEnum	Informational		
+Microsoft-Windows-WinINet	1170	0	Wininet_CacheServerEntryEnumStop1170(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_CacheServerEntryEnum	Informational		
+Microsoft-Windows-WinINet	1171	0	Wininet_CacheServerEntryEnumStart1171(Pointer Object)	Start	WININET_KEYWORD_IE	Wininet_CacheServerEntryEnum	Informational		
+Microsoft-Windows-WinINet	1172	0	Wininet_CacheServerEntryEnumStop1172(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_CacheServerEntryEnum	Informational		
+Microsoft-Windows-WinINet	1173	0	Wininet_CacheServerContainerStart(Pointer Object, UInt32 EntryMaxAge)	Start	WININET_KEYWORD_IE	Wininet_CacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1174	0	Wininet_CacheServerContainerStop(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_CacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1175	0	Wininet_CacheServerContainerStart1175(Pointer Object, UInt32 Type, UInt32 Flags, UnicodeString Url, UnicodeString Redirect, UnicodeString Filename, UnicodeString Extension)	Start	WININET_KEYWORD_IE	Wininet_CacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1176	0	Wininet_CacheServerContainerStop1176(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_CacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1177	0	Wininet_CacheServerContainerStart1177(Pointer Object, UnicodeString Url, Boolean ValidateCreationTime)	Start	WININET_KEYWORD_IE	Wininet_CacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1178	0	Wininet_CacheServerContainerStop1178(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_CacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1179	0	Wininet_CacheServerContainerStart1179(Pointer Object, UnicodeString Url, UInt32 Flags)	Start	WININET_KEYWORD_IE	Wininet_CacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1180	0	Wininet_CacheServerContainerStop1180(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_CacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1181	0	Wininet_CacheServerContainerStart1181(Pointer Object)	Start	WININET_KEYWORD_IE	Wininet_CacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1182	0	Wininet_CacheServerContainerStop1182(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_CacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1183	0	Wininet_CacheServerContainerStart1183(Pointer Object, UnicodeString Url)	Start	WININET_KEYWORD_IE	Wininet_CacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1184	0	Wininet_CacheServerContainerStop1184(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_CacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1185	0	Wininet_CacheServerContainerStart1185(Pointer Object, UnicodeString Url, UInt32 Type)	Start	WININET_KEYWORD_IE	Wininet_CacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1186	0	Wininet_CacheServerContainerStop1186(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_CacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1187	0	Wininet_CacheServerContainerStart1187(Pointer Object, UnicodeString Url)	Start	WININET_KEYWORD_IE	Wininet_CacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1188	0	Wininet_CacheServerContainerStop1188(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_CacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1189	0	Wininet_CacheServerContainerStart1189(Pointer Object, UnicodeString Url, UInt32 Fields)	Start	WININET_KEYWORD_IE	Wininet_CacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1190	0	Wininet_CacheServerContainerStop1190(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_CacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1191	0	Wininet_CacheServerContainerStart1191(Pointer Object)	Start	WININET_KEYWORD_IE	Wininet_CacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1192	0	Wininet_CacheServerContainerStop1192(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_CacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1193	0	Wininet_CacheServerContainerStart1193(Pointer Object)	Start	WININET_KEYWORD_IE	Wininet_CacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1194	0	Wininet_CacheServerContainerStop1194(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_CacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1195	0	Wininet_CacheServerContainerStart1195(Pointer Object, Int64 Limit)	Start	WININET_KEYWORD_IE	Wininet_CacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1196	0	Wininet_CacheServerContainerStop1196(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_CacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1197	0	Wininet_CacheServerContainerStart1197(Pointer Object, UInt32 Factor, UInt32 Filter)	Start	WININET_KEYWORD_IE	Wininet_CacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1198	0	Wininet_CacheServerContainerStop1198(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_CacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1199	0	Wininet_CacheServerContainerStart1199(Pointer Object)	Start	WININET_KEYWORD_IE	Wininet_CacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1200	0	Wininet_CacheServerContainerStop1200(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_CacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1201	0	Wininet_CacheServerContainerStart1201(Pointer Object)	Start	WININET_KEYWORD_IE	Wininet_CacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1202	0	Wininet_CacheServerContainerStop1202(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_CacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1203	0	Wininet_CacheServerContainerStart1203(Pointer Object, UnicodeString Filename)	Start	WININET_KEYWORD_IE	Wininet_CacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1204	0	Wininet_CacheServerContainerStop1204(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_CacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1205	0	Wininet_CacheServerContainerStart1205(Pointer Object, UInt32 Flags)	Start	WININET_KEYWORD_IE	Wininet_CacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1206	0	Wininet_CacheServerContainerStop1206(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_CacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1207	0	Wininet_CacheServerContainerStart1207(Pointer Object, Int64 GroupId, UInt32 Flags)	Start	WININET_KEYWORD_IE	Wininet_CacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1208	0	Wininet_CacheServerContainerStop1208(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_CacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1209	0	Wininet_CacheServerContainerStart1209(Pointer Object)	Start	WININET_KEYWORD_IE	Wininet_CacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1210	0	Wininet_CacheServerContainerStop1210(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_CacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1211	0	Wininet_CacheServerContainerStart1211(Pointer Object, Int64 GroupId)	Start	WININET_KEYWORD_IE	Wininet_CacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1212	0	Wininet_CacheServerContainerStop1212(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_CacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1213	0	Wininet_CacheServerContainerStart1213(Pointer Object, Int64 GroupId, UInt32 Flags)	Start	WININET_KEYWORD_IE	Wininet_CacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1214	0	Wininet_CacheServerContainerStop1214(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_CacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1215	0	Wininet_CacheServerContainerStart1215(Pointer Object, UnicodeString Url, Int64 GroupId, UInt32 Flags)	Start	WININET_KEYWORD_IE	Wininet_CacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1216	0	Wininet_CacheServerContainerStop1216(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_CacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1217	0	Wininet_CacheServerContainerStart1217(Pointer Object, Pointer Handle, UnicodeString Name, UnicodeString Directory, UInt32 Flags, Int64 Limit, UInt32 EntryMaxAge)	Start	WININET_KEYWORD_IE	Wininet_CacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1218	0	Wininet_CacheServerContainerStop1218(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_CacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1219	0	Wininet_CacheServerContainerStart1219(Pointer Object)	Start	WININET_KEYWORD_IE	Wininet_CacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1220	0	Wininet_CacheServerContainerStop1220(Pointer Object, UInt32 HResult)	Stop	WININET_KEYWORD_IE	Wininet_CacheServerContainer	Informational		
+Microsoft-Windows-WinINet	1221	0	Wininet_UrlCacheContainerStart(Int64 TargetSize, UInt32 Filter)	Start	WININET_KEYWORD_IE	Wininet_UrlCacheContainer	Informational		
+Microsoft-Windows-WinINet	1222	0	Wininet_UrlCacheContainerStop(Int64 TargetSize, UInt32 Filter)	Stop	WININET_KEYWORD_IE	Wininet_UrlCacheContainer	Informational		
+Microsoft-Windows-WinINet	1223	0	Wininet_UrlCacheContainerStart1223()	Start	WININET_KEYWORD_IE	Wininet_UrlCacheContainer	Informational		
+Microsoft-Windows-WinINet	1224	0	Wininet_UrlCacheContainerStop1224()	Stop	WININET_KEYWORD_IE	Wininet_UrlCacheContainer	Informational		
+Microsoft-Windows-WinINet	1225	0	Wininet_UrlCacheContainerStart1225()	Start	WININET_KEYWORD_IE	Wininet_UrlCacheContainer	Informational		
+Microsoft-Windows-WinINet	1226	0	Wininet_UrlCacheContainerStop1226()	Stop	WININET_KEYWORD_IE	Wininet_UrlCacheContainer	Informational		
+Microsoft-Windows-WinINet	1227	0	Wininet_UrlCacheContainerStart1227(UnicodeString Name, UnicodeString Prefix, UnicodeString Directory, UnicodeString RootPath, Int64 Limit, UInt32 Options)	Start	WININET_KEYWORD_IE	Wininet_UrlCacheContainer	Informational		
+Microsoft-Windows-WinINet	1228	0	Wininet_UrlCacheContainerStop1228(UnicodeString Name, UnicodeString Prefix, UnicodeString Directory, UnicodeString RootPath, Int64 Limit, UInt32 Options)	Stop	WININET_KEYWORD_IE	Wininet_UrlCacheContainer	Informational		
+Microsoft-Windows-WinINet	1229	0	Wininet_UrlCacheContainerStart1229(UnicodeString Name, UnicodeString RootPath)	Start	WININET_KEYWORD_IE	Wininet_UrlCacheContainer	Informational		
+Microsoft-Windows-WinINet	1230	0	Wininet_UrlCacheContainerStop1230(UnicodeString Name, UnicodeString RootPath)	Stop	WININET_KEYWORD_IE	Wininet_UrlCacheContainer	Informational		
+Microsoft-Windows-WinINet	1231	0	Wininet_UrlCacheContainerStart1231(UnicodeString RootPath)	Start	WININET_KEYWORD_IE	Wininet_UrlCacheContainer	Informational		
+Microsoft-Windows-WinINet	1232	0	Wininet_UrlCacheContainerStop1232(UnicodeString RootPath)	Stop	WININET_KEYWORD_IE	Wininet_UrlCacheContainer	Informational		
+Microsoft-Windows-WinINet	1233	0	Wininet_UrlCacheContainerStart1233(UInt32 LimitType, Int64 Limit)	Start	WININET_KEYWORD_IE	Wininet_UrlCacheContainer	Informational		
+Microsoft-Windows-WinINet	1234	0	Wininet_UrlCacheContainerStop1234(UInt32 LimitType, Int64 Limit)	Stop	WININET_KEYWORD_IE	Wininet_UrlCacheContainer	Informational		
+Microsoft-Windows-WinINet	1235	0	Wininet_UrlCacheContainerStart1235(UInt32 LimitType)	Start	WININET_KEYWORD_IE	Wininet_UrlCacheContainer	Informational		
+Microsoft-Windows-WinINet	1236	0	Wininet_UrlCacheContainerStop1236(UInt32 LimitType)	Stop	WININET_KEYWORD_IE	Wininet_UrlCacheContainer	Informational		
+Microsoft-Windows-WinINet	1237	0	Wininet_UrlCacheContainerStart1237()	Start	WININET_KEYWORD_IE	Wininet_UrlCacheContainer	Informational		
+Microsoft-Windows-WinINet	1238	0	Wininet_UrlCacheContainerStop1238()	Stop	WININET_KEYWORD_IE	Wininet_UrlCacheContainer	Informational		

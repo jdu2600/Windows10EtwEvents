@@ -467,7 +467,7 @@ Microsoft-Windows-MediaFoundation-Performance	4456	0	AudioLowLatency(AnsiString 
 Microsoft-Windows-MediaFoundation-Performance	4457	0	MFMediaSourcesamplereceived4457(Pointer object, UInt32 StreamIndex, UInt64 SampleTimestamp)			MFMediaSourcesamplereceived	Informational		
 Microsoft-Windows-MediaFoundation-Performance	4458	0	AudioStarvation4458(AnsiString tag, Pointer object, UInt64 byteCount, UInt64 totalByteCount)			AudioStarvation	Informational		
 Microsoft-Windows-MediaFoundation-Performance	4459	0	AudioRender4459(AnsiString tag, Pointer object, Boolean isRetryWorkItem)			AudioRender	Informational		
-Microsoft-Windows-MediaFoundation-Performance	4460	0	DXGIMapSurfaceStart(Pointer surface)	Start		DXGIMapSurface	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4460	0	DXGIMapSurfaceStart(Pointer surface, UInt32 uSubresource, UInt32 Type, UInt32 Flags)	Start		DXGIMapSurface	Informational		
 Microsoft-Windows-MediaFoundation-Performance	4461	0	DXGIMapSurfaceStop(Pointer surface)	Stop		DXGIMapSurface	Informational		
 Microsoft-Windows-MediaFoundation-Performance	4462	0	AudioRender4462(Boolean isLosigHardwareResource)			AudioRender	Informational		
 Microsoft-Windows-MediaFoundation-Performance	4463	0	AudioRender4463(Boolean IsGoingOn)			AudioRender	Informational		
@@ -480,6 +480,8 @@ Microsoft-Windows-MediaFoundation-Performance	4469	0	MFMediaDeviceSourceStartTas
 Microsoft-Windows-MediaFoundation-Performance	4470	0	MFMediaDeviceSourceStartTaskStop(Pointer object)	Stop		MFMediaDeviceSourceStartTask	Informational		
 Microsoft-Windows-MediaFoundation-Performance	4471	0	MFMediaDeviceStreamSendSinglePhotoTriggerToKSTask(Pointer object, UInt32 dwStreamID, UInt32 uiPinID)			MFMediaDeviceStreamSendSinglePhotoTriggerToKSTask	Informational		
 Microsoft-Windows-MediaFoundation-Performance	4472	0	2D:Flush(Pointer Object, Pointer Sample, Int32 Free, Int32 Allocated, Int32 MinSampleCount)			2D:Flush	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4473	0	Attributes_CopyAllItemsStart(Pointer SrcPtr, UInt32 Count, Pointer DstPtr)	Start		Attributes_CopyAllItems	Verbose		
+Microsoft-Windows-MediaFoundation-Performance	4474	0	Attributes_CopyAllItemsStop(Pointer SrcPtr, UInt32 HResult)	Stop		Attributes_CopyAllItems	Verbose		
 Microsoft-Windows-MediaFoundation-Performance	4500	0	NetworkRIO_PendingSends(Pointer Object, Int32 PendingCount, UInt32 BytesSent)			NetworkRIO_PendingSends	Informational		
 Microsoft-Windows-MediaFoundation-Performance	4501	0	NetworkRIO_PendingSendsStart(Pointer Object, Int32 PendingCount, UInt32 BytesSent)	Start		NetworkRIO_PendingSends	Informational		
 Microsoft-Windows-MediaFoundation-Performance	4502	0	NetworkRIO_PendingSendsStop(Pointer Object, Int32 PendingCount, UInt32 BytesSent)	Stop		NetworkRIO_PendingSends	Informational		

@@ -57,7 +57,7 @@ Microsoft-Windows-Runtime-Media	307	0	WinRTTranscode_TaskStart(Pointer Object)	S
 Microsoft-Windows-Runtime-Media	308	0	WinRTTranscode_TaskStop(Pointer Object, Int32 ErrorCode)	Stop	keyword_400000000000	WinRTTranscode_Task	Informational		
 Microsoft-Windows-Runtime-Media	309	0	WinRTTranscode_PrepareTranscode_TaskStart(Pointer Object)	Start	keyword_400000000000	WinRTTranscode_PrepareTranscode_Task	Informational		
 Microsoft-Windows-Runtime-Media	310	0	WinRTTranscode_PrepareTranscode_TaskStop(Pointer Object, Int32 ErrorCode)	Stop	keyword_400000000000	WinRTTranscode_PrepareTranscode_Task	Informational		
-Microsoft-Windows-Runtime-Media	311	0	WinRTTranscode_Task311(Pointer Transcode, Boolean Remuxing)		keyword_400000000000	WinRTTranscode_Task	Informational		
+Microsoft-Windows-Runtime-Media	311	0	WinRTTranscode_Task311(Pointer transcode, Boolean remuxing)		keyword_400000000000	WinRTTranscode_Task	Informational		
 Microsoft-Windows-Runtime-Media	312	0	WinRTCaptureEngineSetStreamMediaTypeAsyncTaskStart(Pointer WinRTCaptureEngine, Pointer AsyncOp, UInt32 OpStatus)	Start	keyword_800000000000	WinRTCaptureEngineSetStreamMediaTypeAsyncTask	Informational		
 Microsoft-Windows-Runtime-Media	313	0	WinRTCaptureEngineSetStreamMediaTypeAsyncTaskStop(Pointer WinRTCaptureEngine, Pointer AsyncOp, UInt32 OpStatus)	Stop	keyword_800000000000	WinRTCaptureEngineSetStreamMediaTypeAsyncTask	Informational		
 Microsoft-Windows-Runtime-Media	314	0	WindowsMediaCaptureDeviceThermalstatuschangedeventtaskcompleted(Pointer MediaCapture, UInt32 ThermalStatus)		keyword_800000000000	WindowsMediaCaptureDeviceThermalstatuschangedeventtaskcompleted	Informational		
@@ -78,3 +78,10 @@ Microsoft-Windows-Runtime-Media	601	0	AdaptiveMediaSourcebufferfilltaskStop(Poin
 Microsoft-Windows-Runtime-Media	602	0	AdaptiveMediaSourcebufferdraintaskStart(Pointer AdaptiveMediaSource, Pointer SourceBufferManager, Int64 BufferLevel)	Start	keyword_100000000000	AdaptiveMediaSourcebufferdraintask	Informational		
 Microsoft-Windows-Runtime-Media	603	0	AdaptiveMediaSourcebufferdraintaskStop(Pointer AdaptiveMediaSource, Pointer SourceBufferManager, Int64 BufferLevel)	Stop	keyword_100000000000	AdaptiveMediaSourcebufferdraintask	Informational		
 Microsoft-Windows-Runtime-Media	604	0	AdaptiveMediaSourcebufferlevelchanged(Pointer AdaptiveMediaSource, Pointer SourceBufferManager, Int64 BufferLevel)		keyword_100000000000	AdaptiveMediaSourcebufferlevelchanged	Informational		
+Microsoft-Windows-Runtime-Media	605	0	AdaptiveMediaSourceHTTPRequestStart(Pointer AdaptiveMediaSource)	Start	keyword_100000000000	AdaptiveMediaSourceHTTPRequest	Informational		
+Microsoft-Windows-Runtime-Media	606	0	AdaptiveMediaSourceHTTPRequestStop(Pointer AdaptiveMediaSource)	Stop	keyword_100000000000	AdaptiveMediaSourceHTTPRequest	Informational		
+Microsoft-Windows-Runtime-Media	607	0	AdaptiveMediaSourceHTTPRequestHeaderStart(Pointer AdaptiveMediaSource)	Start	keyword_100000000000	AdaptiveMediaSourceHTTPRequestHeader	Informational		
+Microsoft-Windows-Runtime-Media	608	0	AdaptiveMediaSourceHTTPRequestHeaderStop(Pointer AdaptiveMediaSource)	Stop	keyword_100000000000	AdaptiveMediaSourceHTTPRequestHeader	Informational		
+Microsoft-Windows-Runtime-Media	609	0	AdaptiveMediaSourceDownloadStart(Pointer AdaptiveMediaSource)	Start	keyword_100000000000	AdaptiveMediaSourceDownload	Informational		
+Microsoft-Windows-Runtime-Media	610	0	AdaptiveMediaSourceDownloadStop(Pointer AdaptiveMediaSource, Int32 StopReason)	Stop	keyword_100000000000	AdaptiveMediaSourceDownload	Informational		
+Microsoft-Windows-Runtime-Media	611	0	AdaptiveMediaSourceDownload(Pointer AdaptiveMediaSource, Int64 BytesTransferred, Int64 BytesTotal)		keyword_100000000000	AdaptiveMediaSourceDownload	Informational		

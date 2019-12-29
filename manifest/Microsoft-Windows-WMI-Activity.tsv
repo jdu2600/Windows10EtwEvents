@@ -2,7 +2,7 @@ provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channe
 Microsoft-Windows-WMI-Activity	1	0	task_0(UInt32 GroupOperationId, UInt32 OperationId, UnicodeString Operation, UnicodeString ClientMachine, UnicodeString User, UInt32 ClientProcessId, UnicodeString NamespaceName)			task_0	Informational		
 Microsoft-Windows-WMI-Activity	2	0	task_02(UInt32 GroupOperationId, UnicodeString Operation, UnicodeString ProviderName, UnicodeString ProviderGuid, UnicodeString Path)			task_0	Informational		
 Microsoft-Windows-WMI-Activity	3	0	task_03(UInt32 OperationId)			task_0	Informational		
-Microsoft-Windows-WMI-Activity	11	0	task_011(UnicodeString CorrelationId, UInt32 GroupOperationId, UInt32 OperationId, UnicodeString Operation, UnicodeString ClientMachine, UnicodeString User, UInt32 ClientProcessId, UnicodeString NamespaceName)			task_0	Informational		
+Microsoft-Windows-WMI-Activity	11	0	task_011(UnicodeString CorrelationId, UInt32 GroupOperationId, UInt32 OperationId, UnicodeString Operation, UnicodeString ClientMachine, UnicodeString ClientMachineFQDN, UnicodeString User, UInt32 ClientProcessId, UInt64 ClientProcessCreationTime, UnicodeString NamespaceName, Boolean IsLocal)			task_0	Informational		
 Microsoft-Windows-WMI-Activity	12	0	task_012(UInt32 GroupOperationId, UnicodeString Operation, UInt32 HostId, UnicodeString ProviderName, UnicodeString ProviderGuid, UnicodeString Path)			task_0	Informational		
 Microsoft-Windows-WMI-Activity	13	0	task_013(UInt32 OperationId, HexInt32 ResultCode)			task_0	Informational		
 Microsoft-Windows-WMI-Activity	14	0	task_014(UInt32 OperationId, UnicodeString Operation, UInt32 Channel, UnicodeString Message)			task_0	Informational		
@@ -10,9 +10,10 @@ Microsoft-Windows-WMI-Activity	15	0	task_015(UInt32 OperationId, UnicodeString O
 Microsoft-Windows-WMI-Activity	16	0	task_016(UInt32 OperationId, UnicodeString Operation, HexInt32 ErrorId, UnicodeString Message)			task_0	Informational		
 Microsoft-Windows-WMI-Activity	17	0	task_017(UnicodeString CorrelationId, UInt32 ProcessId, UnicodeString Protocol, UnicodeString Operation, UnicodeString User, UnicodeString Namespace)			task_0	Informational		
 Microsoft-Windows-WMI-Activity	18	0	task_018(UnicodeString ConsumerType, UnicodeString PossibleCause)			task_0	Informational		
-Microsoft-Windows-WMI-Activity	19	0	task_019(UInt32 OperationID, UnicodeString Operation)			task_0	Informational		
-Microsoft-Windows-WMI-Activity	20	0	task_020(UInt32 OperationID, UnicodeString Operation, UInt32 Flags)			task_0	Informational		
+Microsoft-Windows-WMI-Activity	19	0	task_019(UInt32 OperationID, UnicodeString Operation, UInt32 ClientProcessId, UnicodeString ClientMachineFQDN, UInt64 ClientProcessCreationTime, Boolean IsLocal)			task_0	Informational		
+Microsoft-Windows-WMI-Activity	20	0	task_020(UInt32 OperationID, UnicodeString Operation, UInt32 Flags, UInt32 ClientProcessId, UnicodeString ClientMachineFQDN, UInt64 ClientProcessCreationTime, Boolean IsLocal)			task_0	Informational		
 Microsoft-Windows-WMI-Activity	21	0	task_021(UnicodeString ConsumerType, UnicodeString PossibleCause)			task_0	Informational		
+Microsoft-Windows-WMI-Activity	22	0	task_022(UnicodeString CorrelationId, UInt32 GroupOperationId, UInt32 OperationId, UnicodeString ClassName, UnicodeString MethodName, UnicodeString ImplementationClass, UnicodeString ClientMachine, UnicodeString ClientMachineFQDN, UnicodeString User, UInt32 ClientProcessId, UInt64 ClientProcessCreationTime, UnicodeString NamespaceName, Boolean IsLocal)			task_0	Informational		
 Microsoft-Windows-WMI-Activity	50	0	task_050()			task_0	Informational		
 Microsoft-Windows-WMI-Activity	100	0	task_0100(UnicodeString ComponentName, UnicodeString MessageDetail, UnicodeString FileName)			task_0	Always		
 Microsoft-Windows-WMI-Activity	101	0	task_0101(UnicodeString ComponentName, HexInt32 ErrorId, UnicodeString ErrorDetail, UnicodeString FileName)			task_0	Error		

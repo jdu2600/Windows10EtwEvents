@@ -43,6 +43,9 @@ Microsoft-Windows-Security-Kerberos	107	0	task_0107(UnicodeString ExpectedDomain
 Microsoft-Windows-Security-Kerberos	108	0	task_0108(UnicodeString ServerName, UInt32 ServerPort, UnicodeString ServerVdir, UInt32 ErrorCode, UInt32 Status)			task_0	Error		
 Microsoft-Windows-Security-Kerberos	109	0	task_0109(UnicodeString Proxy, UnicodeString ProxyBypass, UInt32 ProxyEpoch, UInt32 SupportedSchemes, UInt32 FirstScheme, Boolean DigestCredInitialized, UnicodeString DigestCredDomainAndUserName, UInt32 DigestCredEpoch, Boolean BasicCredInitialized, UnicodeString BasicCredDomainAndUserName, UInt32 BasicCredEpoch)			task_0	Error		
 Microsoft-Windows-Security-Kerberos	200	0	task_0200(UnicodeString TargetDomain, UInt32 ErrorCode)			task_0	Warning		
+Microsoft-Windows-Security-Kerberos	201	0	task_0201(UnicodeString TargetName, UnicodeString UserName, UnicodeString DomainName, UInt32 CallerPID, UnicodeString ProcessName, HexInt64 ClientLUID, UnicodeString ClientUserName, UnicodeString ClientDomainName, UnicodeString MechanismOID)			task_0	Warning		
+Microsoft-Windows-Security-Kerberos	202	0	task_0202(UnicodeString TargetName, UnicodeString UserName, UnicodeString DomainName, UInt32 CallerPID, UnicodeString ProcessName, HexInt64 ClientLUID, UnicodeString ClientUserName, UnicodeString ClientDomainName, UnicodeString MechanismOID)			task_0	Warning		
+Microsoft-Windows-Security-Kerberos	203	0	task_0203()			task_0	Warning		
 Microsoft-Windows-Security-Kerberos	300	0	task_0300(UnicodeString DomainController, UnicodeString TargetDomain)			task_0	Informational		
 Microsoft-Windows-Security-Kerberos	301	0	task_0301(UnicodeString Target)			task_0	Informational		
 Microsoft-Windows-Security-Kerberos	302	0	task_0302(UnicodeString DomainController, UnicodeString TargetDomain, UInt32 DesiredFlags, UInt32 CacheFlags, UInt32 ErrorCode)			task_0	Informational		

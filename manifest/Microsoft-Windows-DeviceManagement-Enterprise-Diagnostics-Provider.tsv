@@ -67,7 +67,7 @@ Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider	208	0	task_02
 Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider	209	0	task_0209(HexInt32 HRESULT)			task_0	Informational		
 Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider	210	0	task_0210(HexInt32 HRESULT)			task_0	Informational		
 Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider	211	0	task_0211(UnicodeString Message1, UnicodeString Message2, HexInt32 HexInt1)			task_0	Warning		
-Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider	212	0	task_0212(HexInt32 HRESULT)			task_0	Warning		
+Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider	212	0	task_0212(HexInt32 HRESULT1, HexInt32 HRESULT2)			task_0	Warning		
 Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider	301	0	task_0301(UnicodeString Message1, HexInt32 HRESULT)			task_0	Error		
 Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider	302	0	task_0302(UnicodeString Message1, HexInt32 HRESULT)			task_0	Error		
 Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider	303	0	task_0303(UnicodeString Message1, HexInt32 HRESULT)			task_0	Error		
@@ -148,6 +148,8 @@ Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider	855	0	task_08
 Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider	856	0	task_0856(UnicodeString Message1, UnicodeString Message2, UnicodeString Message3, UInt32 UInt1, UInt32 UInt2, HexInt32 HRESULT)			task_0	Error		
 Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider	857	0	task_0857(UnicodeString Message1, UnicodeString Message2, UnicodeString Message3, UInt32 UInt1, UInt32 UInt2, HexInt32 HRESULT)			task_0	Error		
 Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider	858	0	task_0858(UnicodeString Message1, UnicodeString Message2, HexInt32 HexInt1, HexInt32 HexInt2, HexInt32 HexInt3, HexInt32 HRESULT)			task_0	Error		
+Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider	859	0	task_0859(UnicodeString Message1, UnicodeString Message2, UnicodeString Message3, UInt32 UInt1, HexInt32 HRESULT)			task_0	Error		
+Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider	860	0	task_0860(UnicodeString Message1, UnicodeString Message2, UnicodeString Message3)			task_0	Informational		
 Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider	900	0	task_0900(UnicodeString Message1, HexInt32 HRESULT)			task_0	Error		
 Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider	901	0	task_0901(UnicodeString Message1, HexInt32 HRESULT)			task_0	Error		
 Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider	902	0	task_0902(HexInt32 HRESULT)			task_0	Error		
@@ -271,3 +273,27 @@ Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider	2109	0	task_0
 Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider	2110	0	task_02110(UnicodeString Message1, HexInt32 HRESULT)			task_0	Warning		
 Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider	2111	0	task_02111(UnicodeString Message1, HexInt32 HRESULT)			task_0	Informational		
 Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider	2112	0	task_02112(UnicodeString Message1, HexInt32 HRESULT)			task_0	Informational		
+Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider	2200	0	task_02200(UnicodeString Message1)			task_0	Informational		
+Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider	2201	0	task_02201(UnicodeString Message1, HexInt32 HRESULT)			task_0	Error		
+Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider	2202	0	task_02202(UnicodeString Message1)			task_0	Informational		
+Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider	2203	0	task_02203(UnicodeString Message1, HexInt32 HRESULT)			task_0	Error		
+Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider	2204	0	task_02204(UnicodeString Message1, HexInt32 HRESULT)			task_0	Informational		
+Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider	2205	0	task_02205(UnicodeString Message1)			task_0	Informational		
+Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider	2206	0	task_02206(UnicodeString Message1)			task_0	Informational		
+Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider	2207	0	task_02207()			task_0	Informational		
+Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider	2208	0	task_02208(UnicodeString Message1, HexInt32 HexInt1, HexInt32 HRESULT)			task_0	Informational		
+Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider	2209	0	task_02209(UnicodeString Message1, UnicodeString Message2)			task_0	Informational		
+Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider	2210	0	task_02210(UnicodeString Message1, UnicodeString Message2, HexInt32 HRESULT)			task_0	Informational		
+Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider	2211	0	task_02211(UnicodeString Message1, UnicodeString Message2)			task_0	Informational		
+Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider	2212	0	task_02212(UnicodeString Message1, UnicodeString Message2)			task_0	Informational		
+Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider	2213	0	task_02213(UnicodeString Message1, UnicodeString Message2, HexInt32 HRESULT)			task_0	Informational		
+Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider	2214	0	task_02214(UnicodeString Message1, UnicodeString Message2, HexInt32 HRESULT)			task_0	Informational		
+Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider	2215	0	task_02215()			task_0	Informational		
+Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider	2216	0	task_02216(HexInt32 HexInt1)			task_0	Informational		
+Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider	2217	0	task_02217()			task_0	Informational		
+Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider	2218	0	task_02218()			task_0	Informational		
+Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider	2219	0	task_02219(UnicodeString Message1, HexInt32 HRESULT)			task_0	Informational		
+Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider	2220	0	task_02220(HexInt32 HexInt1)			task_0	Informational		
+Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider	2221	0	task_02221(UnicodeString Message1)			task_0	Informational		
+Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider	2222	0	task_02222()			task_0	Informational		
+Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider	2223	0	task_02223(UnicodeString Message1)			task_0	Informational		

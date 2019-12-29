@@ -77,6 +77,11 @@ Microsoft-Windows-AppReadiness	322	0	AppReadiness_ExecuteTaskStop322(HexInt32 Ex
 Microsoft-Windows-AppReadiness	323	0	AppReadiness_ExecuteTaskStart323()	Start	Tasks	AppReadiness_ExecuteTask	Informational		
 Microsoft-Windows-AppReadiness	324	0	AppReadiness_ExecuteTaskStop324(HexInt32 ExitCode)	Stop	Tasks	AppReadiness_ExecuteTask	Informational		
 Microsoft-Windows-AppReadiness	325	0	AppReadiness_ExecuteTaskStop325(HexInt32 ExitCode)	Stop	Tasks keyword_400000000000	AppReadiness_ExecuteTask	Error		
+Microsoft-Windows-AppReadiness	326	0	AppReadiness_ExecuteTaskStart326()	Start	Tasks	AppReadiness_ExecuteTask	Informational		
+Microsoft-Windows-AppReadiness	327	0	AppReadiness_ExecuteTaskStop327(HexInt32 ExitCode)	Stop	Tasks	AppReadiness_ExecuteTask	Informational		
+Microsoft-Windows-AppReadiness	328	0	AppReadiness_ExecuteTaskStart328()	Start	Tasks	AppReadiness_ExecuteTask	Informational		
+Microsoft-Windows-AppReadiness	329	0	AppReadiness_ExecuteTaskStop329(HexInt32 ExitCode)	Stop	Tasks	AppReadiness_ExecuteTask	Informational		
+Microsoft-Windows-AppReadiness	330	0	AppReadiness_ExecuteTaskStop330(HexInt32 ExitCode)	Stop	Tasks keyword_400000000000	AppReadiness_ExecuteTask	Error		
 Microsoft-Windows-AppReadiness	1001	0	AppReadiness_Api_InstallStart(UnicodeString User, UInt32 ProcessId)	Start	Api	AppReadiness_Api_Install	Informational		
 Microsoft-Windows-AppReadiness	1002	0	AppReadiness_Api_InstallStop(UnicodeString User, UInt32 ProcessId, Int32 Result)	Stop	Api	AppReadiness_Api_Install	Informational		
 Microsoft-Windows-AppReadiness	1003	0	AppReadiness_Api_RemoveStart(UnicodeString User, UInt32 ProcessId)	Start	Api	AppReadiness_Api_Remove	Informational		
@@ -156,3 +161,9 @@ Microsoft-Windows-AppReadiness	5040	0	AppReadiness_TimelineStart5040(UnicodeStri
 Microsoft-Windows-AppReadiness	5041	0	AppReadiness_TimelineStop5041(UnicodeString UserId, UnicodeString PackageFamilyName, UnicodeString ActivityId)	Stop	Timeline	AppReadiness_Timeline	Informational		
 Microsoft-Windows-AppReadiness	5042	0	AppReadiness_TimelineStart5042(UnicodeString UserId, UnicodeString PackageFamilyName, UnicodeString ActivityId)	Start	Timeline	AppReadiness_Timeline	Informational		
 Microsoft-Windows-AppReadiness	5043	0	AppReadiness_TimelineStop5043(UnicodeString UserId, UnicodeString PackageFamilyName, UnicodeString ActivityId)	Stop	Timeline	AppReadiness_Timeline	Informational		
+Microsoft-Windows-AppReadiness	5044	0	AppReadiness_ExecuteTask5044(UnicodeString User, Int32 Result)		Tasks	AppReadiness_ExecuteTask	Error		
+Microsoft-Windows-AppReadiness	5045	0	AppReadiness_ExecuteTask5045(UnicodeString User, Int32 Result)		Tasks	AppReadiness_ExecuteTask	Error		
+Microsoft-Windows-AppReadiness	5046	0	AppReadiness_ExecuteTask5046(UnicodeString User)		Tasks	AppReadiness_ExecuteTask	Informational		
+Microsoft-Windows-AppReadiness	5047	0	AppReadiness_ExecuteTask5047(UnicodeString User)		Tasks	AppReadiness_ExecuteTask	Informational		
+Microsoft-Windows-AppReadiness	5048	0	AppReadiness_TimelineStart5048(UnicodeString UserId, UnicodeString PackageFamilyName, UnicodeString ActivityId)	Start	Timeline	AppReadiness_Timeline	Informational		
+Microsoft-Windows-AppReadiness	5049	0	AppReadiness_TimelineStop5049(UnicodeString UserId, UnicodeString PackageFamilyName, UnicodeString ActivityId)	Stop	Timeline	AppReadiness_Timeline	Informational		

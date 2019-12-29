@@ -40,6 +40,7 @@ Microsoft-Windows-PushNotifications-Platform	38	0	task_038(Int32 ErrorCode)		wpn
 Microsoft-Windows-PushNotifications-Platform	39	0	task_039(Int32 ErrorCode)		wpnplat wpntroubleshoot	task_0	Informational		
 Microsoft-Windows-PushNotifications-Platform	40	0	task_040(Int32 ErrorCode, UInt32 PdcType, UInt32 PdcScenario, Int64 PdcNetRefCount, Int64 PdcPlatRefCount)		wpnplat wpntroubleshoot	task_0	Informational		
 Microsoft-Windows-PushNotifications-Platform	41	0	task_041(Int32 ErrorCode, UInt32 PdcType, Int64 PdcNetRefCount, Int64 PdcPlatRefCount)		wpnplat wpntroubleshoot	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	42	0	task_042(Boolean GroupPolicyValue, Boolean MDMPolicyValue)		wpnplat wpntroubleshoot wpndebug_connectivity	task_0	Informational		
 Microsoft-Windows-PushNotifications-Platform	1000	0	task_01000(GUID CLSID, Boolean Enabled, UInt32 Flags)		wpnconn	task_0	Informational		
 Microsoft-Windows-PushNotifications-Platform	1001	0	task_01001(GUID CLSID, UInt32 Flags, Int32 ErrorCode)		wpnconn	task_0	Informational		
 Microsoft-Windows-PushNotifications-Platform	1002	0	task_01002(GUID CLSID, UInt32 Flags, Int32 ErrorCode)		wpnconn	task_0	Informational		
@@ -64,6 +65,7 @@ Microsoft-Windows-PushNotifications-Platform	1021	0	task_01021(Int32 ErrorCode)	
 Microsoft-Windows-PushNotifications-Platform	1022	0	task_01022()		wpnconn wpntroubleshoot wpndebug_connectivity wpndebug_connectivity_isConnected	task_0	Informational		
 Microsoft-Windows-PushNotifications-Platform	1023	0	task_01023(UnicodeString WorkItemName)		wpnconn wpntroubleshoot wpndebug_connectivity wpndebug_connectivity_isConnected	task_0	Informational		
 Microsoft-Windows-PushNotifications-Platform	1024	0	task_01024(Boolean WasConnected)		wpnconn wpntroubleshoot wpndebug_connectivity wpndebug_connectivity_isConnected	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	1025	0	task_01025(UnicodeString PowerEventType, Boolean IsEnabled)		wpnconn	task_0	Informational		
 Microsoft-Windows-PushNotifications-Platform	1100	0	task_01100(UInt64 UserId, UInt32 UserType, AnsiString FeatureSet, AnsiString AuthType, UInt32 AuthPayloadSize, Binary AuthPayload, UInt32 BindPayloadSize, Binary BindPayload)		wpnprv	task_0	Informational		
 Microsoft-Windows-PushNotifications-Platform	1101	0	task_01101(UInt32 Error)		wpnprv wpndebug_connectivity wpndebug_connectivity_error	task_0	Informational		
 Microsoft-Windows-PushNotifications-Platform	1102	0	task_01102(Int32 TransactionId, AnsiString ChannelId, AnsiString PackageFullName, UInt32 Properties, UInt32 CommandSize, Binary Command, AnsiString Namespace, UInt64 ContextId, UInt32 PayloadSize, Binary Payload, UInt64 UserId)		wpnprv	task_0	Informational		
@@ -370,4 +372,8 @@ Microsoft-Windows-PushNotifications-Platform	3141	0	AFCRemoveNotificationUsingAc
 Microsoft-Windows-PushNotifications-Platform	3142	0	task_03142()		wpnui	task_0	Informational		
 Microsoft-Windows-PushNotifications-Platform	3143	0	AFCRemoveNotificationUsingActivity3143()		wpnui	AFCRemoveNotificationUsingActivity	Informational		
 Microsoft-Windows-PushNotifications-Platform	3144	0	task_03144()		wpnui	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	3145	0	task_03145(Int32 Error, AnsiString Message)		wpnui	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	3146	0	task_03146(Int32 Error, AnsiString Message)		wpnui	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	3147	0	task_03147(Int32 Error, AnsiString Message)		wpnui	task_0	Informational		
+Microsoft-Windows-PushNotifications-Platform	3148	0	task_03148(Int32 Error, AnsiString Message)		wpnui	task_0	Informational		
 Microsoft-Windows-PushNotifications-Platform	10000	0	task_010000(UnicodeString debugString)		wpndbg	task_0	Verbose		

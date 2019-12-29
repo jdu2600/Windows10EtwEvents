@@ -1,6 +1,10 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
 Microsoft-Windows-Install-Agent	2000	0	InstallServiceModuleLoaded(UnicodeString ProcessName, UnicodeString ModuleName, UnicodeString BuildName)		Messages	InstallServiceModuleLoaded	Informational		
-Microsoft-Windows-Install-Agent	2001	0	ServiceVerbose(UnicodeString Message, AnsiString Function, Int32 ErrorCode, AnsiString Source, UInt32 LineNumber)	Verbose	Messages	Service	Verbose		
-Microsoft-Windows-Install-Agent	2002	0	ServiceInfo(UnicodeString Message, AnsiString Function, Int32 ErrorCode, AnsiString Source, UInt32 LineNumber)	Info	Messages	Service	Informational		
-Microsoft-Windows-Install-Agent	2003	0	ServiceWarning(UnicodeString Message, AnsiString Function, Int32 ErrorCode, AnsiString Source, UInt32 LineNumber)	Warning	Messages	Service	Warning		
-Microsoft-Windows-Install-Agent	2004	0	ServiceError(UnicodeString Message, AnsiString Function, Int32 ErrorCode, AnsiString Source, UInt32 LineNumber)	Error	Messages	Service	Error		
+Microsoft-Windows-Install-Agent	2001	0	Service(Old)Verbose(UnicodeString Message, AnsiString Function, Int32 ErrorCode, AnsiString Source, UInt32 LineNumber)	Verbose	OldMessages	Service(Old)	Verbose		
+Microsoft-Windows-Install-Agent	2002	0	Service(Old)Info(UnicodeString Message, AnsiString Function, Int32 ErrorCode, AnsiString Source, UInt32 LineNumber)	Info	OldMessages	Service(Old)	Informational		
+Microsoft-Windows-Install-Agent	2003	0	Service(Old)Warning(UnicodeString Message, AnsiString Function, Int32 ErrorCode, AnsiString Source, UInt32 LineNumber)	Warning	OldMessages	Service(Old)	Warning		
+Microsoft-Windows-Install-Agent	2004	0	Service(Old)Error(UnicodeString Message, AnsiString Function, Int32 ErrorCode, AnsiString Source, UInt32 LineNumber)	Error	OldMessages	Service(Old)	Error		
+Microsoft-Windows-Install-Agent	2005	0	ServiceVerbose(UnicodeString Message, AnsiString Function, Int32 ErrorCode, AnsiString Source, UInt32 LineNumber, AnsiString CorrelationVector, UnicodeString ProductId)	Verbose	Messages	Service	Verbose		
+Microsoft-Windows-Install-Agent	2006	0	ServiceInfo(UnicodeString Message, AnsiString Function, Int32 ErrorCode, AnsiString Source, UInt32 LineNumber, AnsiString CorrelationVector, UnicodeString ProductId)	Info	Messages	Service	Informational		
+Microsoft-Windows-Install-Agent	2007	0	ServiceWarning(UnicodeString Message, AnsiString Function, Int32 ErrorCode, AnsiString Source, UInt32 LineNumber, AnsiString CorrelationVector, UnicodeString ProductId)	Warning	Messages	Service	Warning		
+Microsoft-Windows-Install-Agent	2008	0	ServiceError(UnicodeString Message, AnsiString Function, Int32 ErrorCode, AnsiString Source, UInt32 LineNumber, AnsiString CorrelationVector, UnicodeString ProductId)	Error	Messages	Service	Error		

@@ -1,48 +1,48 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-XAML-Diagnostics	1	0	InputEventStart()	Start		InputEvent	Verbose		
-Microsoft-Windows-XAML-Diagnostics	2	0	InputEventStop()	Stop		InputEvent	Verbose		
-Microsoft-Windows-XAML-Diagnostics	3	0	TappedStart(UInt64 RegisterdOn, UInt32 PointerDeviceType, UInt64 OriginalSource)	Start		Tapped	Verbose		
-Microsoft-Windows-XAML-Diagnostics	4	0	TappedStop(Boolean Handled)	Stop		Tapped	Verbose		
-Microsoft-Windows-XAML-Diagnostics	5	0	DoubleTappedStart(UInt64 RegisterdOn, UInt32 PointerDeviceType, UInt64 OriginalSource)	Start		DoubleTapped	Verbose		
-Microsoft-Windows-XAML-Diagnostics	6	0	DoubleTappedStop(Boolean Handled)	Stop		DoubleTapped	Verbose		
-Microsoft-Windows-XAML-Diagnostics	7	0	HoldingStart(UInt64 RegisterdOn, UInt32 PointerDeviceType, UInt64 OriginalSource)	Start		Holding	Verbose		
-Microsoft-Windows-XAML-Diagnostics	8	0	HoldingStop(Boolean Handled)	Stop		Holding	Verbose		
-Microsoft-Windows-XAML-Diagnostics	9	0	RightTappedStart(UInt64 RegisterdOn, UInt32 PointerDeviceType, UInt64 OriginalSource)	Start		RightTapped	Verbose		
-Microsoft-Windows-XAML-Diagnostics	10	0	RightTappedStop(Boolean Handled)	Stop		RightTapped	Verbose		
-Microsoft-Windows-XAML-Diagnostics	11	0	PointerPressedStart(UInt64 RegisterdOn, UInt32 PointerDeviceType, UInt64 OriginalSource)	Start		PointerPressed	Verbose		
-Microsoft-Windows-XAML-Diagnostics	13	0	PointerPressedStop(Boolean Handled)	Stop		PointerPressed	Verbose		
-Microsoft-Windows-XAML-Diagnostics	14	0	PointerMovedStart(UInt64 RegisterdOn, UInt32 PointerDeviceType, UInt64 OriginalSource)	Start		PointerMoved	Verbose		
-Microsoft-Windows-XAML-Diagnostics	15	0	PointerMovedStop(Boolean Handled)	Stop		PointerMoved	Verbose		
-Microsoft-Windows-XAML-Diagnostics	16	0	PointerReleasedStart(UInt64 RegisterdOn, UInt32 PointerDeviceType, UInt64 OriginalSource)	Start		PointerReleased	Verbose		
-Microsoft-Windows-XAML-Diagnostics	17	0	PointerReleasedStop(Boolean Handled)	Stop		PointerReleased	Verbose		
-Microsoft-Windows-XAML-Diagnostics	18	0	PointerEnteredStart(UInt64 RegisterdOn, UInt32 PointerDeviceType, UInt64 OriginalSource)	Start		PointerEntered	Verbose		
-Microsoft-Windows-XAML-Diagnostics	19	0	PointerEnteredStop(Boolean Handled)	Stop		PointerEntered	Verbose		
-Microsoft-Windows-XAML-Diagnostics	20	0	PointerExitedStart(UInt64 RegisterdOn, UInt32 PointerDeviceType, UInt64 OriginalSource)	Start		PointerExited	Verbose		
-Microsoft-Windows-XAML-Diagnostics	21	0	PointerExitedStop(Boolean Handled)	Stop		PointerExited	Verbose		
-Microsoft-Windows-XAML-Diagnostics	22	0	PointerCaptureLostStart(UInt64 RegisterdOn, UInt32 PointerDeviceType, UInt64 OriginalSource)	Start		PointerCaptureLost	Verbose		
-Microsoft-Windows-XAML-Diagnostics	23	0	PointerCaptureLostStop(Boolean Handled)	Stop		PointerCaptureLost	Verbose		
-Microsoft-Windows-XAML-Diagnostics	24	0	PointerCanceledStart(UInt64 RegisterdOn, UInt32 PointerDeviceType, UInt64 OriginalSource)	Start		PointerCanceled	Verbose		
-Microsoft-Windows-XAML-Diagnostics	25	0	PointerCanceledStop(Boolean Handled)	Stop		PointerCanceled	Verbose		
-Microsoft-Windows-XAML-Diagnostics	26	0	PointerWheelChangedStart(UInt64 RegisterdOn, UInt32 PointerDeviceType, UInt64 OriginalSource)	Start		PointerWheelChanged	Verbose		
-Microsoft-Windows-XAML-Diagnostics	27	0	PointerWheelChangedStop(Boolean Handled)	Stop		PointerWheelChanged	Verbose		
-Microsoft-Windows-XAML-Diagnostics	28	0	DragEnterStart(UInt64 RegisterdOn, UInt64 OriginalSource)	Start		DragEnter	Verbose		
-Microsoft-Windows-XAML-Diagnostics	29	0	DragEnterStop(Boolean Handled)	Stop		DragEnter	Verbose		
-Microsoft-Windows-XAML-Diagnostics	30	0	DragLeaveStart(UInt64 RegisterdOn, UInt64 OriginalSource)	Start		DragLeave	Verbose		
-Microsoft-Windows-XAML-Diagnostics	31	0	DragLeaveStop(Boolean Handled)	Stop		DragLeave	Verbose		
-Microsoft-Windows-XAML-Diagnostics	32	0	DragOverStart(UInt64 RegisterdOn, UInt64 OriginalSource)	Start		DragOver	Verbose		
-Microsoft-Windows-XAML-Diagnostics	33	0	DragOverStop(Boolean Handled)	Stop		DragOver	Verbose		
-Microsoft-Windows-XAML-Diagnostics	34	0	DropStart(UInt64 RegisterdOn, UInt64 OriginalSource)	Start		Drop	Verbose		
-Microsoft-Windows-XAML-Diagnostics	35	0	DropStop(Boolean Handled)	Stop		Drop	Verbose		
-Microsoft-Windows-XAML-Diagnostics	36	0	ManipulationStartingStart(UInt64 RegisterdOn, UInt64 OriginalSource, UInt64 Container, UInt32 Mode)	Start		ManipulationStarting	Verbose		
-Microsoft-Windows-XAML-Diagnostics	37	0	ManipulationStartingStop(Boolean Handled)	Stop		ManipulationStarting	Verbose		
-Microsoft-Windows-XAML-Diagnostics	38	0	ManipulationInertiaStartingStart(UInt64 RegisterdOn, UInt64 OriginalSource, UInt64 Container)	Start		ManipulationInertiaStarting	Verbose		
-Microsoft-Windows-XAML-Diagnostics	39	0	ManipulationInertiaStartingStop(Boolean Handled)	Stop		ManipulationInertiaStarting	Verbose		
-Microsoft-Windows-XAML-Diagnostics	40	0	ManipulationStartedStart(UInt64 RegisterdOn, UInt64 OriginalSource, UInt64 Container)	Start		ManipulationStarted	Verbose		
-Microsoft-Windows-XAML-Diagnostics	41	0	ManipulationStartedStop(Boolean Handled)	Stop		ManipulationStarted	Verbose		
-Microsoft-Windows-XAML-Diagnostics	42	0	ManipulationDeltaStart(UInt64 RegisterdOn, UInt64 OriginalSource, UInt64 Container, Boolean IsInertial)	Start		ManipulationDelta	Verbose		
-Microsoft-Windows-XAML-Diagnostics	43	0	ManipulationDeltaStop(Boolean Handled)	Stop		ManipulationDelta	Verbose		
-Microsoft-Windows-XAML-Diagnostics	44	0	ManipulationCompletedStart(UInt64 RegisterdOn, UInt64 OriginalSource, UInt64 Container, Boolean IsInertial)	Start		ManipulationCompleted	Verbose		
-Microsoft-Windows-XAML-Diagnostics	45	0	ManipulationCompletedStop(Boolean Handled)	Stop		ManipulationCompleted	Verbose		
+Microsoft-Windows-XAML-Diagnostics	1	0	InputEventStart()	Start	Input	InputEvent	Verbose		
+Microsoft-Windows-XAML-Diagnostics	2	0	InputEventStop()	Stop	Input	InputEvent	Verbose		
+Microsoft-Windows-XAML-Diagnostics	3	0	TappedStart(UInt64 RegisterdOn, UInt32 PointerDeviceType, UInt64 OriginalSource)	Start	Input	Tapped	Verbose		
+Microsoft-Windows-XAML-Diagnostics	4	0	TappedStop(Boolean Handled)	Stop	Input	Tapped	Verbose		
+Microsoft-Windows-XAML-Diagnostics	5	0	DoubleTappedStart(UInt64 RegisterdOn, UInt32 PointerDeviceType, UInt64 OriginalSource)	Start	Input	DoubleTapped	Verbose		
+Microsoft-Windows-XAML-Diagnostics	6	0	DoubleTappedStop(Boolean Handled)	Stop	Input	DoubleTapped	Verbose		
+Microsoft-Windows-XAML-Diagnostics	7	0	HoldingStart(UInt64 RegisterdOn, UInt32 PointerDeviceType, UInt64 OriginalSource)	Start	Input	Holding	Verbose		
+Microsoft-Windows-XAML-Diagnostics	8	0	HoldingStop(Boolean Handled)	Stop	Input	Holding	Verbose		
+Microsoft-Windows-XAML-Diagnostics	9	0	RightTappedStart(UInt64 RegisterdOn, UInt32 PointerDeviceType, UInt64 OriginalSource)	Start	Input	RightTapped	Verbose		
+Microsoft-Windows-XAML-Diagnostics	10	0	RightTappedStop(Boolean Handled)	Stop	Input	RightTapped	Verbose		
+Microsoft-Windows-XAML-Diagnostics	11	0	PointerPressedStart(UInt64 RegisterdOn, UInt32 PointerDeviceType, UInt64 OriginalSource)	Start	Input	PointerPressed	Verbose		
+Microsoft-Windows-XAML-Diagnostics	13	0	PointerPressedStop(Boolean Handled)	Stop	Input	PointerPressed	Verbose		
+Microsoft-Windows-XAML-Diagnostics	14	0	PointerMovedStart(UInt64 RegisterdOn, UInt32 PointerDeviceType, UInt64 OriginalSource)	Start	Input	PointerMoved	Verbose		
+Microsoft-Windows-XAML-Diagnostics	15	0	PointerMovedStop(Boolean Handled)	Stop	Input	PointerMoved	Verbose		
+Microsoft-Windows-XAML-Diagnostics	16	0	PointerReleasedStart(UInt64 RegisterdOn, UInt32 PointerDeviceType, UInt64 OriginalSource)	Start	Input	PointerReleased	Verbose		
+Microsoft-Windows-XAML-Diagnostics	17	0	PointerReleasedStop(Boolean Handled)	Stop	Input	PointerReleased	Verbose		
+Microsoft-Windows-XAML-Diagnostics	18	0	PointerEnteredStart(UInt64 RegisterdOn, UInt32 PointerDeviceType, UInt64 OriginalSource)	Start	Input	PointerEntered	Verbose		
+Microsoft-Windows-XAML-Diagnostics	19	0	PointerEnteredStop(Boolean Handled)	Stop	Input	PointerEntered	Verbose		
+Microsoft-Windows-XAML-Diagnostics	20	0	PointerExitedStart(UInt64 RegisterdOn, UInt32 PointerDeviceType, UInt64 OriginalSource)	Start	Input	PointerExited	Verbose		
+Microsoft-Windows-XAML-Diagnostics	21	0	PointerExitedStop(Boolean Handled)	Stop	Input	PointerExited	Verbose		
+Microsoft-Windows-XAML-Diagnostics	22	0	PointerCaptureLostStart(UInt64 RegisterdOn, UInt32 PointerDeviceType, UInt64 OriginalSource)	Start	Input	PointerCaptureLost	Verbose		
+Microsoft-Windows-XAML-Diagnostics	23	0	PointerCaptureLostStop(Boolean Handled)	Stop	Input	PointerCaptureLost	Verbose		
+Microsoft-Windows-XAML-Diagnostics	24	0	PointerCanceledStart(UInt64 RegisterdOn, UInt32 PointerDeviceType, UInt64 OriginalSource)	Start	Input	PointerCanceled	Verbose		
+Microsoft-Windows-XAML-Diagnostics	25	0	PointerCanceledStop(Boolean Handled)	Stop	Input	PointerCanceled	Verbose		
+Microsoft-Windows-XAML-Diagnostics	26	0	PointerWheelChangedStart(UInt64 RegisterdOn, UInt32 PointerDeviceType, UInt64 OriginalSource)	Start	Input	PointerWheelChanged	Verbose		
+Microsoft-Windows-XAML-Diagnostics	27	0	PointerWheelChangedStop(Boolean Handled)	Stop	Input	PointerWheelChanged	Verbose		
+Microsoft-Windows-XAML-Diagnostics	28	0	DragEnterStart(UInt64 RegisterdOn, UInt64 OriginalSource)	Start	Input	DragEnter	Verbose		
+Microsoft-Windows-XAML-Diagnostics	29	0	DragEnterStop(Boolean Handled)	Stop	Input	DragEnter	Verbose		
+Microsoft-Windows-XAML-Diagnostics	30	0	DragLeaveStart(UInt64 RegisterdOn, UInt64 OriginalSource)	Start	Input	DragLeave	Verbose		
+Microsoft-Windows-XAML-Diagnostics	31	0	DragLeaveStop(Boolean Handled)	Stop	Input	DragLeave	Verbose		
+Microsoft-Windows-XAML-Diagnostics	32	0	DragOverStart(UInt64 RegisterdOn, UInt64 OriginalSource)	Start	Input	DragOver	Verbose		
+Microsoft-Windows-XAML-Diagnostics	33	0	DragOverStop(Boolean Handled)	Stop	Input	DragOver	Verbose		
+Microsoft-Windows-XAML-Diagnostics	34	0	DropStart(UInt64 RegisterdOn, UInt64 OriginalSource)	Start	Input	Drop	Verbose		
+Microsoft-Windows-XAML-Diagnostics	35	0	DropStop(Boolean Handled)	Stop	Input	Drop	Verbose		
+Microsoft-Windows-XAML-Diagnostics	36	0	ManipulationStartingStart(UInt64 RegisterdOn, UInt64 OriginalSource, UInt64 Container, UInt32 Mode)	Start	Input	ManipulationStarting	Verbose		
+Microsoft-Windows-XAML-Diagnostics	37	0	ManipulationStartingStop(Boolean Handled)	Stop	Input	ManipulationStarting	Verbose		
+Microsoft-Windows-XAML-Diagnostics	38	0	ManipulationInertiaStartingStart(UInt64 RegisterdOn, UInt64 OriginalSource, UInt64 Container)	Start	Input	ManipulationInertiaStarting	Verbose		
+Microsoft-Windows-XAML-Diagnostics	39	0	ManipulationInertiaStartingStop(Boolean Handled)	Stop	Input	ManipulationInertiaStarting	Verbose		
+Microsoft-Windows-XAML-Diagnostics	40	0	ManipulationStartedStart(UInt64 RegisterdOn, UInt64 OriginalSource, UInt64 Container)	Start	Input	ManipulationStarted	Verbose		
+Microsoft-Windows-XAML-Diagnostics	41	0	ManipulationStartedStop(Boolean Handled)	Stop	Input	ManipulationStarted	Verbose		
+Microsoft-Windows-XAML-Diagnostics	42	0	ManipulationDeltaStart(UInt64 RegisterdOn, UInt64 OriginalSource, UInt64 Container, Boolean IsInertial)	Start	Input	ManipulationDelta	Verbose		
+Microsoft-Windows-XAML-Diagnostics	43	0	ManipulationDeltaStop(Boolean Handled)	Stop	Input	ManipulationDelta	Verbose		
+Microsoft-Windows-XAML-Diagnostics	44	0	ManipulationCompletedStart(UInt64 RegisterdOn, UInt64 OriginalSource, UInt64 Container, Boolean IsInertial)	Start	Input	ManipulationCompleted	Verbose		
+Microsoft-Windows-XAML-Diagnostics	45	0	ManipulationCompletedStop(Boolean Handled)	Stop	Input	ManipulationCompleted	Verbose		
 Microsoft-Windows-XAML-Diagnostics	54	0	AppBarOpenStart(UInt32 AppBarType)	Start		AppBarOpen	Verbose		
 Microsoft-Windows-XAML-Diagnostics	55	0	AppBarOpenStop()	Stop		AppBarOpen	Verbose		
 Microsoft-Windows-XAML-Diagnostics	56	0	AppBarClosedStart(UInt32 AppBarType)	Start		AppBarClosed	Verbose		
@@ -85,3 +85,16 @@ Microsoft-Windows-XAML-Diagnostics	89	0	ElementAccessibility(UInt64 ElementId, U
 Microsoft-Windows-XAML-Diagnostics	90	0	ResourceUsingXName(UInt64 ElementId, UInt64 ParentId, UnicodeString Name, UnicodeString Type)			ResourceUsingXName	Verbose		
 Microsoft-Windows-XAML-Diagnostics	91	0	PeerCreated(UInt64 ElementId, UInt64 ParentId)			PeerCreated	Verbose		
 Microsoft-Windows-XAML-Diagnostics	92	0	CueRemoved()			CueRemoved	Informational		
+Microsoft-Windows-XAML-Diagnostics	93	0	DesignerActivationStart()	Start	DesignerAppManager	DesignerActivation	Informational		
+Microsoft-Windows-XAML-Diagnostics	94	0	DesignerActivationStop(UInt32 Result, UInt32 ProcessId)	Stop	DesignerAppManager	DesignerActivation	Informational		
+Microsoft-Windows-XAML-Diagnostics	95	0	DesignerAppViewClose(UInt32 Result, UInt32 ViewId)		DesignerAppManager	DesignerAppViewClose	Informational		
+Microsoft-Windows-XAML-Diagnostics	96	0	UpdateViewSize(UInt32 ViewId, Float Width, Float Height)		DesignerAppManager	UpdateViewSize	Informational		
+Microsoft-Windows-XAML-Diagnostics	97	0	UpdateViewState(UInt32 ViewId, UnicodeString State)		DesignerAppManager	UpdateViewState	Informational		
+Microsoft-Windows-XAML-Diagnostics	98	0	SetHostedApp()		DesignerAppManager	SetHostedApp	Informational		
+Microsoft-Windows-XAML-Diagnostics	99	0	SetHostedAppWindow(Int32 ViewId)		DesignerAppManager	SetHostedAppWindow	Informational		
+Microsoft-Windows-XAML-Diagnostics	100	0	AssociateActivationContext(UInt32 Context, UInt32 ViewId)		DesignerAppManager	AssociateActivationContext	Informational		
+Microsoft-Windows-XAML-Diagnostics	101	0	AppWindowReadyForPresentation()		DesignerAppManager	AppWindowReadyForPresentation	Informational		
+Microsoft-Windows-XAML-Diagnostics	102	0	InitializeStop(UnicodeString AppId)	Stop	DesignerAppManager	Initialize	Informational		
+Microsoft-Windows-XAML-Diagnostics	103	0	GetActivationContextStop(UInt32 Context, UInt32 ViewId)	Stop	DesignerAppManager	GetActivationContext	Informational		
+Microsoft-Windows-XAML-Diagnostics	104	0	UnusedTextFormatterDeleted()			UnusedTextFormatterDeleted	Informational		
+Microsoft-Windows-XAML-Diagnostics	105	0	TextFormatterCreated()			TextFormatterCreated	Informational		

@@ -1,2 +1,150 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-Media-Protection-PlayReady-Performance	1	0	UpdateOutputDataBufferQueue(AnsiString Function, Pointer CMFTAsyncSimpleBase_ptr, UInt32 NewCount)			UpdateOutputDataBufferQueue	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	1	0	UpdateOutputDataBufferQueue(Pointer CMFTAsyncSimpleBase_ptr, UInt32 NewCount)			UpdateOutputDataBufferQueue	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	2	0	MFTStateStoppedStart(Pointer CMFTAsyncSimpleBase_ptr)	Start		MFTStateStopped	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	3	0	MFTStateStoppedStop(Pointer CMFTAsyncSimpleBase_ptr)	Stop		MFTStateStopped	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	4	0	MFTStateFeedInputStart(Pointer CMFTAsyncSimpleBase_ptr)	Start		MFTStateFeedInput	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	5	0	MFTStateFeedInputStop(Pointer CMFTAsyncSimpleBase_ptr)	Stop		MFTStateFeedInput	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	6	0	MFTStateGetOutputStart(Pointer CMFTAsyncSimpleBase_ptr)	Start		MFTStateGetOutput	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	7	0	MFTStateGetOutputStop(Pointer CMFTAsyncSimpleBase_ptr)	Stop		MFTStateGetOutput	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	8	0	MFTStateShutdownStart(Pointer CMFTAsyncSimpleBase_ptr)	Start		MFTStateShutdown	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	9	0	MFTStateShutdownStop(Pointer CMFTAsyncSimpleBase_ptr)	Stop		MFTStateShutdown	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	10	0	MFTStateWaitingForStateChangeStart(Pointer CMFTAsyncSimpleBase_ptr)	Start		MFTStateWaitingForStateChange	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	11	0	MFTStateWaitingForStateChangeStop(Pointer CMFTAsyncSimpleBase_ptr)	Stop		MFTStateWaitingForStateChange	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	12	0	MFTStateWaitingForLicenseWithPendingPolicyStart(Pointer CMFTAsyncSimpleBase_ptr)	Start		MFTStateWaitingForLicenseWithPendingPolicy	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	13	0	MFTStateWaitingForLicenseWithPendingPolicyStop(Pointer CMFTAsyncSimpleBase_ptr)	Stop		MFTStateWaitingForLicenseWithPendingPolicy	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	14	0	MFTStateWaitingForReleaseRenewResourcesStart(Pointer CMFTAsyncSimpleBase_ptr)	Start		MFTStateWaitingForReleaseRenewResources	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	15	0	MFTStateWaitingForReleaseRenewResourcesStop(Pointer CMFTAsyncSimpleBase_ptr)	Stop		MFTStateWaitingForReleaseRenewResources	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	16	0	MFTStateWaitingForPolicyNotificationStart(Pointer CMFTAsyncSimpleBase_ptr)	Start		MFTStateWaitingForPolicyNotification	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	17	0	MFTStateWaitingForPolicyNotificationStop(Pointer CMFTAsyncSimpleBase_ptr)	Stop		MFTStateWaitingForPolicyNotification	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	18	0	MFTStateWaitingForReaquireResourcesMessageStart(Pointer CMFTAsyncSimpleBase_ptr)	Start		MFTStateWaitingForReaquireResourcesMessage	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	19	0	MFTStateWaitingForReaquireResourcesMessageStop(Pointer CMFTAsyncSimpleBase_ptr)	Stop		MFTStateWaitingForReaquireResourcesMessage	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	20	0	OemTeeProxyMethodInvokeStart(UInt32 FunctionMapOEMValue)	Start		OemTeeProxyMethodInvoke	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	21	0	OemTeeProxyMethodInvokeStop(UInt32 FunctionMapOEMValue)	Stop		OemTeeProxyMethodInvoke	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	22	0	HrSendHttpAsyncDomainJoinStart(Pointer Object, UInt32 HResult)	Start		HrSendHttpAsyncDomainJoin	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	23	0	HrSendHttpAsyncDomainJoinStop(Pointer Object, UInt32 HResult)	Stop		HrSendHttpAsyncDomainJoin	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	24	0	HrSendHttpAsyncDomainLeaveStart(Pointer Object, UInt32 HResult)	Start		HrSendHttpAsyncDomainLeave	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	25	0	HrSendHttpAsyncDomainLeaveStop(Pointer Object, UInt32 HResult)	Stop		HrSendHttpAsyncDomainLeave	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	26	0	HrSendHttpAsyncLicenseAcqStart(Pointer Object, UInt32 HResult)	Start		HrSendHttpAsyncLicenseAcq	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	27	0	HrSendHttpAsyncLicenseAcqStop(Pointer Object, UInt32 HResult)	Stop		HrSendHttpAsyncLicenseAcq	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	28	0	HrSendHttpAsyncLicenseAcqAckStart(Pointer Object, UInt32 HResult)	Start		HrSendHttpAsyncLicenseAcqAck	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	29	0	HrSendHttpAsyncLicenseAcqAckStop(Pointer Object, UInt32 HResult)	Stop		HrSendHttpAsyncLicenseAcqAck	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	30	0	HrSendHttpAsyncMeterDataReportStart(Pointer Object, UInt32 HResult)	Start		HrSendHttpAsyncMeterDataReport	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	31	0	HrSendHttpAsyncMeterDataReportStop(Pointer Object, UInt32 HResult)	Stop		HrSendHttpAsyncMeterDataReport	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	32	0	HrSendHttpAsyncSecureStopStart(Pointer Object, UInt32 HResult)	Start		HrSendHttpAsyncSecureStop	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	33	0	HrSendHttpAsyncSecureStop(Pointer Object, UInt32 HResult)	Stop		HrSendHttpAsyncSecureStop	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	34	0	HrSendHttpIndividualizationStart(Pointer Object, UInt32 HResult)	Start		HrSendHttpIndividualization	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	35	0	HrSendHttpIndividualizationStop(Pointer Object, UInt32 HResult)	Stop		HrSendHttpIndividualization	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	36	0	HrSendHttpRevocationRequestStart(Pointer Object, UInt32 HResult)	Start		HrSendHttpRevocationRequest	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	37	0	HrSendHttpRevocationRequestStop(Pointer Object, UInt32 HResult)	Stop		HrSendHttpRevocationRequest	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	38	0	DecryptAESSampleStart(Pointer Object, UInt32 HResult)	Start		DecryptAESSample	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	39	0	DecryptAESSampleStop(Pointer Object, UInt32 HResult)	Stop		DecryptAESSample	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	40	0	DecryptCocktailSampleStart(Pointer Object, UInt32 HResult)	Start		DecryptCocktailSample	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	41	0	DecryptCocktailSampleStop(Pointer Object, UInt32 HResult)	Stop		DecryptCocktailSample	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	42	0	CBlackboxWithTEEInitStart(Pointer Object, UInt32 HResult)	Start		CBlackboxWithTEEInit	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	43	0	CBlackboxWithTEEInitStop(Pointer Object, UInt32 HResult)	Stop		CBlackboxWithTEEInit	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	44	0	CBlackboxWithTEESecureCorePreInitStart(Pointer Object, UInt32 HResult)	Start		CBlackboxWithTEESecureCorePreInit	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	45	0	CBlackboxWithTEESecureCorePreInitStop(Pointer Object, UInt32 HResult)	Stop		CBlackboxWithTEESecureCorePreInit	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	46	0	CBlackboxWithTEESecureCoreInitStart(Pointer Object, UInt32 HResult)	Start		CBlackboxWithTEESecureCoreInit	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	47	0	CBlackboxWithTEESecureCoreInitStop(Pointer Object, UInt32 HResult)	Stop		CBlackboxWithTEESecureCoreInit	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	48	0	CBlackboxWithTEESecureCoreReInitStart(Pointer Object, UInt32 HResult)	Start		CBlackboxWithTEESecureCoreReInit	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	49	0	CBlackboxWithTEESecureCoreReInitStop(Pointer Object, UInt32 HResult)	Stop		CBlackboxWithTEESecureCoreReInit	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	50	0	CBlackboxWithTEEStorePasswordCallbackStart(Pointer Object, UInt32 HResult)	Start		CBlackboxWithTEEStorePasswordCallback	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	51	0	CBlackboxWithTEEStorePasswordCallbackStop(Pointer Object, UInt32 HResult)	Stop		CBlackboxWithTEEStorePasswordCallback	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	52	0	CBlackboxWithTEEEnsureInitedStart(Pointer Object, UInt32 HResult)	Start		CBlackboxWithTEEEnsureInited	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	53	0	CBlackboxWithTEEEnsureInitedStop(Pointer Object, UInt32 HResult)	Stop		CBlackboxWithTEEEnsureInited	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	54	0	CBlackboxWithTEEPrepareSampleProtectionKeyStart(Pointer Object, UInt32 HResult)	Start		CBlackboxWithTEEPrepareSampleProtectionKey	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	55	0	CBlackboxWithTEEPrepareSampleProtectionKeyStop(Pointer Object, UInt32 HResult)	Stop		CBlackboxWithTEEPrepareSampleProtectionKey	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	56	0	CBlackboxWithTEEGetCertificateStart(Pointer Object, UInt32 HResult)	Start		CBlackboxWithTEEGetCertificate	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	57	0	CBlackboxWithTEEGetCertificateStop(Pointer Object, UInt32 HResult)	Stop		CBlackboxWithTEEGetCertificate	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	58	0	CBlackboxWithTEEGetBinaryCertificateChainStart(Pointer Object, UInt32 HResult)	Start		CBlackboxWithTEEGetBinaryCertificateChain	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	59	0	CBlackboxWithTEEGetBinaryCertificateChainStop(Pointer Object, UInt32 HResult)	Stop		CBlackboxWithTEEGetBinaryCertificateChain	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	60	0	CBlackboxWithTEECreateDecryptorStart(Pointer Object, UInt32 HResult)	Start		CBlackboxWithTEECreateDecryptor	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	61	0	CBlackboxWithTEECreateDecryptorStop(Pointer Object, UInt32 HResult)	Stop		CBlackboxWithTEECreateDecryptor	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	62	0	CBlackboxWithTEESignStart(Pointer Object, UInt32 HResult)	Start		CBlackboxWithTEESign	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	63	0	CBlackboxWithTEESignStop(Pointer Object, UInt32 HResult)	Stop		CBlackboxWithTEESign	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	64	0	CBlackboxWithTEEPrepareDomainPrivateKeysForStorageStart(Pointer Object, UInt32 HResult)	Start		CBlackboxWithTEEPrepareDomainPrivateKeysForStorage	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	65	0	CBlackboxWithTEEPrepareDomainPrivateKeysForStorageStop(Pointer Object, UInt32 HResult)	Stop		CBlackboxWithTEEPrepareDomainPrivateKeysForStorage	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	66	0	CBlackboxWithTEERefreshIMFCPDStart(Pointer Object, UInt32 HResult)	Start		CBlackboxWithTEERefreshIMFCPD	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	67	0	CBlackboxWithTEERefreshIMFCPDStop(Pointer Object, UInt32 HResult)	Stop		CBlackboxWithTEERefreshIMFCPD	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	68	0	CBlackboxWithTEEProcessLicenseToStoreStart(Pointer Object, UInt32 HResult)	Start		CBlackboxWithTEEProcessLicenseToStore	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	69	0	CBlackboxWithTEEProcessLicenseToStoreStop(Pointer Object, UInt32 HResult)	Stop		CBlackboxWithTEEProcessLicenseToStore	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	70	0	CBlackboxWithTEEDeleteLicenseLKBStart(Pointer Object, UInt32 HResult)	Start		CBlackboxWithTEEDeleteLicenseLKB	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	71	0	CBlackboxWithTEEDeleteLicenseLKBStop(Pointer Object, UInt32 HResult)	Stop		CBlackboxWithTEEDeleteLicenseLKB	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	72	0	CBlackboxWithTEEPrepareProvisioningChallengeForNetworkStart(Pointer Object, UInt32 HResult)	Start		CBlackboxWithTEEPrepareProvisioningChallengeForNetwork	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	73	0	CBlackboxWithTEEPrepareProvisioningChallengeForNetworkStop(Pointer Object, UInt32 HResult)	Stop		CBlackboxWithTEEPrepareProvisioningChallengeForNetwork	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	74	0	CBlackboxWithTEEPrepareBootstrapProvisioningChallengeForNetworkStart(Pointer Object, UInt32 HResult)	Start		CBlackboxWithTEEPrepareBootstrapProvisioningChallengeForNetwork	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	75	0	CBlackboxWithTEEPrepareBootstrapProvisioningChallengeForNetworkStop(Pointer Object, UInt32 HResult)	Stop		CBlackboxWithTEEPrepareBootstrapProvisioningChallengeForNetwork	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	76	0	CBlackboxWithTEEParseProvisioningResponseFromNetworkStart(Pointer Object, UInt32 HResult)	Start		CBlackboxWithTEEParseProvisioningResponseFromNetwork	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	77	0	CBlackboxWithTEEParseProvisioningResponseFromNetworkStop(Pointer Object, UInt32 HResult)	Stop		CBlackboxWithTEEParseProvisioningResponseFromNetwork	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	78	0	CBlackboxWithTEEGenerateBootstrapChallengeStart(Pointer Object, UInt32 HResult)	Start		CBlackboxWithTEEGenerateBootstrapChallenge	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	79	0	CBlackboxWithTEEGenerateBootstrapChallengeStop(Pointer Object, UInt32 HResult)	Stop		CBlackboxWithTEEGenerateBootstrapChallenge	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	80	0	CBlackboxWithTEEProcessBootstrapResponseStart(Pointer Object, UInt32 HResult)	Start		CBlackboxWithTEEProcessBootstrapResponse	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	81	0	CBlackboxWithTEEProcessBootstrapResponseStop(Pointer Object, UInt32 HResult)	Stop		CBlackboxWithTEEProcessBootstrapResponse	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	82	0	CBlackboxWithTEEGenerateProvisioningRequestStart(Pointer Object, UInt32 HResult)	Start		CBlackboxWithTEEGenerateProvisioningRequest	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	83	0	CBlackboxWithTEEGenerateProvisioningRequestStop(Pointer Object, UInt32 HResult)	Stop		CBlackboxWithTEEGenerateProvisioningRequest	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	84	0	CBlackboxWithTEEProcessProvisioningResponseStart(Pointer Object, UInt32 HResult)	Start		CBlackboxWithTEEProcessProvisioningResponse	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	85	0	CBlackboxWithTEEProcessProvisioningResponseStop(Pointer Object, UInt32 HResult)	Stop		CBlackboxWithTEEProcessProvisioningResponse	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	86	0	CBlackboxWithTEEGetVersionInformationStart(Pointer Object, UInt32 HResult)	Start		CBlackboxWithTEEGetVersionInformation	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	87	0	CBlackboxWithTEEGetVersionInformationStop(Pointer Object, UInt32 HResult)	Stop		CBlackboxWithTEEGetVersionInformation	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	88	0	CBlackboxWithTEECheckIfTEEFunctionSupportedStart(Pointer Object, UInt32 HResult)	Start		CBlackboxWithTEECheckIfTEEFunctionSupported	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	89	0	CBlackboxWithTEECheckIfTEEFunctionSupportedStop(Pointer Object, UInt32 HResult)	Stop		CBlackboxWithTEECheckIfTEEFunctionSupported	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	90	0	CBlackboxWithTEEIsSystemPropertySetStart(Pointer Object, Boolean Flag)	Start		CBlackboxWithTEEIsSystemPropertySet	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	91	0	CBlackboxWithTEEIsSystemPropertySetStop(Pointer Object, Boolean Flag)	Stop		CBlackboxWithTEEIsSystemPropertySet	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	92	0	CBlackboxWithTEEGetReIndivReasonStart(Pointer Object, UInt32 HResult)	Start		CBlackboxWithTEEGetReIndivReason	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	93	0	CBlackboxWithTEEGetReIndivReasonStop(Pointer Object, UInt32 HResult)	Stop		CBlackboxWithTEEGetReIndivReason	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	94	0	CBlackboxWithTEEGenerateNonceStart(Pointer Object, UInt32 HResult)	Start		CBlackboxWithTEEGenerateNonce	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	95	0	CBlackboxWithTEEGenerateNonceStop(Pointer Object, UInt32 HResult)	Stop		CBlackboxWithTEEGenerateNonce	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	96	0	CBlackboxWithTEECreateGlobalStorePasswordStart(Pointer Object, UInt32 HResult)	Start		CBlackboxWithTEECreateGlobalStorePassword	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	97	0	CBlackboxWithTEECreateGlobalStorePasswordStop(Pointer Object, UInt32 HResult)	Stop		CBlackboxWithTEECreateGlobalStorePassword	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	98	0	CBlackboxWithTEECreateLicenseStateStorePasswordStart(Pointer Object, UInt32 HResult)	Start		CBlackboxWithTEECreateLicenseStateStorePassword	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	99	0	CBlackboxWithTEECreateLicenseStateStorePasswordStop(Pointer Object, UInt32 HResult)	Stop		CBlackboxWithTEECreateLicenseStateStorePassword	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	100	0	CreateSampleAndBufferUsingPool(UInt32 Arg1, UInt32 Arg2)			CreateSampleAndBufferUsingPool	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	101	0	CreateSampleAndBufferUsingPool101(UInt32 Arg1, UInt32 Arg2, UInt32 Arg3, UInt32 Arg4)			CreateSampleAndBufferUsingPool	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	102	0	MFTProcessingLoopStateWaitingForStart(Pointer CMFTAsyncSimpleBase_ptr)	Start		MFTProcessingLoopStateWaitingForStart	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	103	0	MFTProcessingLoopStateWaitingForStartStop(Pointer CMFTAsyncSimpleBase_ptr)	Stop		MFTProcessingLoopStateWaitingForStart	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	104	0	MFTProcessingLoopStateOtherItemsInQueueStartInternalStart(Pointer CMFTAsyncSimpleBase_ptr)	Start		MFTProcessingLoopStateOtherItemsInQueueStartInternal	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	105	0	MFTProcessingLoopStateOtherItemsInQueueStartInternalStop(Pointer CMFTAsyncSimpleBase_ptr)	Stop		MFTProcessingLoopStateOtherItemsInQueueStartInternal	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	106	0	MFTProcessingLoopStateResolveWaitingState100msRetryStart(Pointer CMFTAsyncSimpleBase_ptr)	Start		MFTProcessingLoopStateResolveWaitingState100msRetry	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	107	0	MFTProcessingLoopStateResolveWaitingState100msRetryStop(Pointer CMFTAsyncSimpleBase_ptr)	Stop		MFTProcessingLoopStateResolveWaitingState100msRetry	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	108	0	MFTProcessingLoopStateOtherItemsInQueueAfterStateChangedStart(Pointer CMFTAsyncSimpleBase_ptr)	Start		MFTProcessingLoopStateOtherItemsInQueueAfterStateChanged	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	109	0	MFTProcessingLoopStateOtherItemsInQueueAfterStateChangedStop(Pointer CMFTAsyncSimpleBase_ptr)	Stop		MFTProcessingLoopStateOtherItemsInQueueAfterStateChanged	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	110	0	MFTProcessingLoopStateAStateChangeStart(Pointer CMFTAsyncSimpleBase_ptr)	Start		MFTProcessingLoopStateAStateChange	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	111	0	MFTProcessingLoopStateAStateChangeStop(Pointer CMFTAsyncSimpleBase_ptr)	Stop		MFTProcessingLoopStateAStateChange	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	112	0	CBlackboxConstructorStart(Pointer Object, UInt32 HResult)	Start		CBlackboxConstructor	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	113	0	CBlackboxConstructorStop(Pointer Object, UInt32 HResult)	Stop		CBlackboxConstructor	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	114	0	CBlackboxSecureCoreInitStart(Pointer Object, UInt32 HResult)	Start		CBlackboxSecureCoreInit	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	115	0	CBlackboxSecureCoreInitStop(Pointer Object, UInt32 HResult)	Stop		CBlackboxSecureCoreInit	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	116	0	CBlackboxGetCertificateStart(Pointer Object, UInt32 HResult)	Start		CBlackboxGetCertificate	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	117	0	CBlackboxGetCertificateStop(Pointer Object, UInt32 HResult)	Stop		CBlackboxGetCertificate	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	118	0	CBlackboxGetBinaryCertificateChainStart(Pointer Object, UInt32 HResult)	Start		CBlackboxGetBinaryCertificateChain	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	119	0	CBlackboxGetBinaryCertificateChainStop(Pointer Object, UInt32 HResult)	Stop		CBlackboxGetBinaryCertificateChain	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	120	0	CBlackboxHashValueStart(Pointer Object, UInt32 HResult)	Start		CBlackboxHashValue	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	121	0	CBlackboxHashValueStop(Pointer Object, UInt32 HResult)	Stop		CBlackboxHashValue	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	122	0	CBlackboxCreateDecryptorStart(Pointer Object, UInt32 HResult)	Start		CBlackboxCreateDecryptor	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	123	0	CBlackboxCreateDecryptorStop(Pointer Object, UInt32 HResult)	Stop		CBlackboxCreateDecryptor	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	124	0	CBlackboxSignStart(Pointer Object, UInt32 HResult)	Start		CBlackboxSign	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	125	0	CBlackboxSignStop(Pointer Object, UInt32 HResult)	Stop		CBlackboxSign	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	126	0	CBlackboxPrepareDomainPrivateKeysForStorageStart(Pointer Object, UInt32 HResult)	Start		CBlackboxPrepareDomainPrivateKeysForStorage	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	127	0	CBlackboxPrepareDomainPrivateKeysForStorageStop(Pointer Object, UInt32 HResult)	Stop		CBlackboxPrepareDomainPrivateKeysForStorage	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	128	0	CBlackboxSafeReleaseKeyStart(Pointer Object, UInt32 HResult)	Start		CBlackboxSafeReleaseKey	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	129	0	CBlackboxSafeReleaseKeyStop(Pointer Object, UInt32 HResult)	Stop		CBlackboxSafeReleaseKey	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	130	0	CBlackboxGenerateNonceStart(Pointer Object, UInt32 HResult)	Start		CBlackboxGenerateNonce	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	131	0	CBlackboxGenerateNonceStop(Pointer Object, UInt32 HResult)	Stop		CBlackboxGenerateNonce	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	132	0	CBlackboxCreateGlobalStorePasswordStart(Pointer Object, UInt32 HResult)	Start		CBlackboxCreateGlobalStorePassword	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	133	0	CBlackboxCreateGlobalStorePasswordStop(Pointer Object, UInt32 HResult)	Stop		CBlackboxCreateGlobalStorePassword	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	134	0	CBlackboxCreateLicenseStateStorePasswordStart(Pointer Object, UInt32 HResult)	Start		CBlackboxCreateLicenseStateStorePassword	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	135	0	CBlackboxCreateLicenseStateStorePasswordStop(Pointer Object, UInt32 HResult)	Stop		CBlackboxCreateLicenseStateStorePassword	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	136	0	ProcessSampleStart(Pointer CMFTAsyncSimpleBase_ptr)	Start		ProcessSample	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	137	0	ProcessSampleStop(Pointer CMFTAsyncSimpleBase_ptr, UInt32 HResult)	Stop		ProcessSample	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	138	0	LockitStart(Pointer CMFTAsyncSimpleBase_lock)	Start		Lockit	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	139	0	LockitStop(Pointer CMFTAsyncSimpleBase_lock)	Stop		Lockit	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	140	0	AcquireStateLockStart(Pointer CMFTAsyncSimpleBase_AcquireStateLock)	Start		AcquireStateLock	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	141	0	AcquireStateLockStop(Pointer CMFTAsyncSimpleBase_AcquireStateLock)	Stop		AcquireStateLock	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	142	0	ProcessOutputStart(Pointer CMFTAsyncSimpleBase_ProcessOutput)	Start		ProcessOutput	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	143	0	ProcessOutputStop(Pointer CMFTAsyncSimpleBase_ProcessOutput)	Stop		ProcessOutput	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	144	0	OutputLockStart(Pointer CMFTAsyncSimpleBase_OutputLock)	Start		OutputLock	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	145	0	OutputLockStop(Pointer CMFTAsyncSimpleBase_OutputLock)	Stop		OutputLock	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	146	0	AcquireOutputLockStart(Pointer CMFTAsyncSimpleBase_AcquireOutputLock)	Start		AcquireOutputLock	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	147	0	AcquireOutputLockStop(Pointer CMFTAsyncSimpleBase_AcquireOutputLock)	Stop		AcquireOutputLock	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	148	0	StateLockStart(Pointer CMFTAsyncSimpleBase_StateLock)	Start		StateLock	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	149	0	StateLockStop(Pointer CMFTAsyncSimpleBase_StateLock)	Stop		StateLock	Verbose		

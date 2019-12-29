@@ -29,6 +29,9 @@ Microsoft-Windows-MediaFoundation-Platform	202	0	MediaFoundationSourceResolver(P
 Microsoft-Windows-MediaFoundation-Platform	203	0	MediaFoundationSourceResolver203(Pointer Context, HexInt32 hr)			MediaFoundationSourceResolver	Informational		
 Microsoft-Windows-MediaFoundation-Platform	204	0	MediaFoundationSourceResolver204(Pointer Context, HexInt32 hr)			MediaFoundationSourceResolver	Informational		
 Microsoft-Windows-MediaFoundation-Platform	205	0	MediaFoundationSourceResolverStop(Pointer Context, UnicodeString url, HexInt32 hr)	Stop		MediaFoundationSourceResolver	Informational		
+Microsoft-Windows-MediaFoundation-Platform	206	0	MediaFoundationTraceFailure(Pointer Context, Int32 Line, HexInt32 hr, AnsiString function)			MediaFoundationTraceFailure	Informational		
+Microsoft-Windows-MediaFoundation-Platform	207	0	MediaFoundationByteStreamOnInputStream_ReadStart(Pointer stream, Int64 offset, Int32 length, Pointer buffer)	Start		MediaFoundationByteStreamOnInputStream_Read	Verbose		
+Microsoft-Windows-MediaFoundation-Platform	208	0	MediaFoundationByteStreamOnInputStream_ReadStop(Pointer stream, Int32 length, Pointer buffer, HexInt32 hr)	Stop		MediaFoundationByteStreamOnInputStream_Read	Verbose		
 Microsoft-Windows-MediaFoundation-Platform	300	0	MediaFoundationMFTEnumStart(HexInt32 flags, GUID Category, GUID inputType, GUID inputSubtype, GUID outputType, GUID outputSubtype)	Start		MediaFoundationMFTEnum	Informational		
 Microsoft-Windows-MediaFoundation-Platform	301	0	MediaFoundationMFTEnum(UnicodeString clsid)			MediaFoundationMFTEnum	Informational		
 Microsoft-Windows-MediaFoundation-Platform	302	0	MediaFoundationMFTEnum302(UnicodeString string)			MediaFoundationMFTEnum	Informational		

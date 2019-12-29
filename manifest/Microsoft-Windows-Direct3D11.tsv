@@ -84,3 +84,6 @@ Microsoft-Windows-Direct3D11	1817	0	ID3D11VideoContext_GetDataForNewHardwareKey(
 Microsoft-Windows-Direct3D11	1818	0	ID3D11VideoContext_SubmitDecoderBuffers1Start(Pointer pThis, Pointer pDecoder, UInt32 NumBuffers, UInt8 pBufferDescTID_D3D11_VIDEO_DECODER_BUFFER_DESC1)	Start		ID3D11VideoContext_SubmitDecoderBuffers1	Always		
 Microsoft-Windows-Direct3D11	1819	0	ID3D11VideoContext_SubmitDecoderBuffers1Stop(UInt32 m_Ret)	Stop		ID3D11VideoContext_SubmitDecoderBuffers1	Always		
 Microsoft-Windows-Direct3D11	1820	0	JournalEntry(UInt32 Index, HexInt32 Code, UInt32 ThreadId, AnsiString Message)		Devices JournalEntries	JournalEntry	Always		
+Microsoft-Windows-Direct3D11	1821	0	IDXGIResource_CreateSharedHandle(UInt32 hKMResource, Pointer hUMSharedResource, UnicodeString Name)		Resources	IDXGIResource_CreateSharedHandle	Always		
+Microsoft-Windows-Direct3D11	1822	0	ID3D11VideoDevice_NegotiateCryptoSessionKeyExchangeMTStart(Pointer pThis, Pointer pCryptoSession)	Start		ID3D11VideoDevice_NegotiateCryptoSessionKeyExchangeMT	Always		
+Microsoft-Windows-Direct3D11	1823	0	ID3D11VideoDevice_NegotiateCryptoSessionKeyExchangeMTStop(UInt32 m_Ret)	Stop		ID3D11VideoDevice_NegotiateCryptoSessionKeyExchangeMT	Always		

@@ -6,6 +6,7 @@ Microsoft-Windows-Eventlog	23	0	Servicestartup23(UInt32 ErrorCode, UnicodeString
 Microsoft-Windows-Eventlog	25	0	Servicestartup25(UnicodeString ChannelPath)		el:Availability	Servicestartup	Informational		
 Microsoft-Windows-Eventlog	26	0	Servicestartup26(UnicodeString ChannelPath)		el:Availability	Servicestartup	Informational		
 Microsoft-Windows-Eventlog	27	0	Servicestartup27(UInt32 ErrorCode, UnicodeString ChannelPath, UnicodeString NewLogFilePath)		el:Availability el:Settings	Servicestartup	Warning		
+Microsoft-Windows-Eventlog	27	1	Servicestartup27_V1(UInt32 ErrorCode, UnicodeString ChannelPath, UnicodeString FailedLogFilePath, UnicodeString NewLogFilePath)		el:Availability el:Settings	Servicestartup	Warning		
 Microsoft-Windows-Eventlog	28	0	Servicestartup28(UInt32 ErrorCode, UnicodeString ChannelPath)		el:Availability el:Settings	Servicestartup	Warning		
 Microsoft-Windows-Eventlog	29	0	task_0(UInt32 ErrorCode, UnicodeString ChannelPath)		el:Availability	task_0	Critical		
 Microsoft-Windows-Eventlog	30	0	Servicestartup30(UInt32 ErrorCode, UnicodeString ChannelPath, GUID PublisherGuid)		el:Availability	Servicestartup	Error		

@@ -62,6 +62,17 @@ Microsoft-Windows-Kernel-Boot	56	0	task_056(UInt32 Status)		keyword_80000000000	
 Microsoft-Windows-Kernel-Boot	57	0	task_057(UInt32 TpmSrkProvisioningStatus)			task_0	Error		
 Microsoft-Windows-Kernel-Boot	58	0	task_058(UInt64 TpmSrkProvisioningTime)			task_0	Informational		
 Microsoft-Windows-Kernel-Boot	59	0	task_059(UInt32 TpmBindingProvisioningStatus)			task_0	Error		
+Microsoft-Windows-Kernel-Boot	60	0	InvalidNfitTable()			InvalidNfitTable	Warning		
+Microsoft-Windows-Kernel-Boot	61	0	MeasuredLaunchTxtLaunchPrepared(UInt64 PmrLowBase, UInt64 PmrLowSize, UInt64 PmrHighBase, UInt64 PmrHighSize, Boolean FirmwareProvidedAcm)	TxtLaunchPrepared	keyword_80000000000	MeasuredLaunch	Informational		
+Microsoft-Windows-Kernel-Boot	62	0	MeasuredLaunchPreviousTxtError(UInt32 TxtErrorCode)	PreviousTxtError	keyword_80000000000	MeasuredLaunch	Error		
+Microsoft-Windows-Kernel-Boot	63	0	MeasuredLaunchInvalidTxtSinitRange(UInt64 Base, UInt64 Size)	InvalidTxtSinitRange	keyword_80000000000	MeasuredLaunch	Error		
+Microsoft-Windows-Kernel-Boot	64	0	MeasuredLaunchInvalidTxtHeapRange(UInt64 Base, UInt64 Size)	InvalidTxtHeapRange	keyword_80000000000	MeasuredLaunch	Error		
+Microsoft-Windows-Kernel-Boot	65	0	MeasuredLaunchMleLoadFailure(UInt32 Status)	MleLoadFailure	keyword_80000000000	MeasuredLaunch	Error		
+Microsoft-Windows-Kernel-Boot	66	0	MeasuredLaunchMissingRsdpTable(UInt32 Status)	MissingRsdpTable	keyword_80000000000	MeasuredLaunch	Error		
+Microsoft-Windows-Kernel-Boot	67	0	MeasuredLaunchNoSinitAcm(UInt32 Status)	NoSinitAcm	keyword_80000000000	MeasuredLaunch	Error		
+Microsoft-Windows-Kernel-Boot	68	0	MeasuredLaunchInvalidTxtHeapBiosDataSize(UInt64 BiosDataSize)	InvalidTxtHeapBiosDataSize	keyword_80000000000	MeasuredLaunch	Error		
+Microsoft-Windows-Kernel-Boot	69	0	MeasuredLaunchMleHeaderTooOld(UInt32 AcmMinMleHeaderVer, UInt32 MleHeaderVersion)	MleHeaderTooOld	keyword_80000000000	MeasuredLaunch	Error		
+Microsoft-Windows-Kernel-Boot	70	0	MeasuredLaunchComputePmrRangesFailure(UInt32 Status)	ComputePmrRangesFailure	keyword_80000000000	MeasuredLaunch	Error		
 Microsoft-Windows-Kernel-Boot	100	0	InitializeLibraryStart()	Start	SoftRestart	InitializeLibrary	Informational		
 Microsoft-Windows-Kernel-Boot	100	1	InitializeLibraryStart_V1(Boolean Secure)	Start	SoftRestart	InitializeLibrary	Informational		
 Microsoft-Windows-Kernel-Boot	101	0	InitializeLibraryStop(UInt32 Status)	Stop	SoftRestart	InitializeLibrary	Informational		
@@ -150,3 +161,5 @@ Microsoft-Windows-Kernel-Boot	201	0	TpmCommandResponse201(UInt32 CommandCode, UI
 Microsoft-Windows-Kernel-Boot	202	0	TpmSubmitError(UInt32 CommandCode, UInt32 ErrorCode, UInt64 ResponseMilliseconds)			TpmSubmitError	Error		
 Microsoft-Windows-Kernel-Boot	203	0	TpmSubmitError203(UInt32 CommandCode, UInt32 ErrorCode, UInt64 ResponseMilliseconds, UInt32 CommandSize, Binary CommandData)			TpmSubmitError	Error		
 Microsoft-Windows-Kernel-Boot	204	0	TpmBitLockerUsage(UInt32 FveGlobalDataFlags)			TpmBitLockerUsage	Error		
+Microsoft-Windows-Kernel-Boot	205	0	EFICapsuleCreationStart()	Start	SoftRestart	EFICapsuleCreation	Informational		
+Microsoft-Windows-Kernel-Boot	206	0	EFICapsuleCreationStop(UInt32 Status)	Stop	SoftRestart	EFICapsuleCreation	Informational		

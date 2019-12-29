@@ -4,11 +4,11 @@ Microsoft-Windows-WorkFolders	1	0	task_01()			task_0	Informational
 Microsoft-Windows-WorkFolders	2	0	task_02(UnicodeString LocalFolder, UnicodeString ServerURI, UnicodeString ServerPartnershipId)			task_0	Informational		
 Microsoft-Windows-WorkFolders	3	0	task_03(UnicodeString LocalFolder, UnicodeString ServerURI, UnicodeString ServerPartnershipId)			task_0	Informational		
 Microsoft-Windows-WorkFolders	4	0	task_04(UnicodeString LocalFolder, UnicodeString ServerURI, UnicodeString ServerPartnershipId)			task_0	Informational		
-Microsoft-Windows-WorkFolders	5	0	task_05(UnicodeString SyncUrl, Boolean AutoProvision)			task_0	Informational		
-Microsoft-Windows-WorkFolders	6	0	task_06(UnicodeString DiscoveryUrl, UnicodeString ServerUrl)			task_0	Informational		
-Microsoft-Windows-WorkFolders	7	0	task_07(UnicodeString PartnershipId, UnicodeString PartnershipType, UnicodeString DiscoveryUrl, UnicodeString ServerUrl)			task_0	Informational		
+Microsoft-Windows-WorkFolders	5	0	task_05(UnicodeString SyncUrl, Boolean AutoProvision, Int32 GhostingPolicy)			task_0	Informational		
+Microsoft-Windows-WorkFolders	6	0	task_06(UnicodeString DiscoveryUrl, UnicodeString ServerUrl, Int32 GhostingPolicy)			task_0	Informational		
+Microsoft-Windows-WorkFolders	7	0	task_07(UnicodeString PartnershipId, UnicodeString PartnershipType, UnicodeString DiscoveryUrl, UnicodeString ServerUrl, Int32 GhostingPolicy)			task_0	Informational		
 Microsoft-Windows-WorkFolders	8	0	task_08()			task_0	Informational		
-Microsoft-Windows-WorkFolders	9	0	task_09(UnicodeString DiscoveryUrl, UnicodeString ServerUrl, Boolean ConfiguredByPolicy)			task_0	Informational		
+Microsoft-Windows-WorkFolders	9	0	task_09(UnicodeString DiscoveryUrl, UnicodeString ServerUrl, Boolean ConfiguredByPolicy, Int32 GhostingPolicy)			task_0	Informational		
 Microsoft-Windows-WorkFolders	10	0	task_010(UnicodeString HResultStr, Int32 HResult)			task_0	Error		
 Microsoft-Windows-WorkFolders	11	0	task_011(UnicodeString HResultStr, Int32 HResult)			task_0	Error		
 Microsoft-Windows-WorkFolders	12	0	task_012(UnicodeString HResultStr, Int32 HResult)			task_0	Error		
@@ -51,6 +51,18 @@ Microsoft-Windows-WorkFolders	2012	0	task_02012(UnicodeString ItemName, GUID Syn
 Microsoft-Windows-WorkFolders	2013	0	task_02013(Boolean ConcurrencyConflict, UnicodeString SourceItemName, GUID SourceSyncGID, UnicodeString DestinationItemName, GUID DestinationSyncGID, UnicodeString DataWinner, UnicodeString NamespaceWinner, UnicodeString AttributesWinner, UnicodeString TieBreakerWinner)			task_0	Informational		
 Microsoft-Windows-WorkFolders	2014	0	task_02014(UnicodeString LocalReplicaRoot)			task_0	Informational		
 Microsoft-Windows-WorkFolders	2015	0	task_02015(UnicodeString LocalReplicaRoot, UnicodeString HResultStr, Int32 HResult)			task_0	Warning		
+Microsoft-Windows-WorkFolders	2016	0	task_02016(UnicodeString FileName)			task_0	Informational		
+Microsoft-Windows-WorkFolders	2017	0	task_02017(UnicodeString FileName, UnicodeString HResultStr, Int32 HResult)			task_0	Error		
+Microsoft-Windows-WorkFolders	2018	0	task_02018(UnicodeString FileName)			task_0	Informational		
+Microsoft-Windows-WorkFolders	2019	0	task_02019(UnicodeString FileName)			task_0	Informational		
+Microsoft-Windows-WorkFolders	2020	0	task_02020(UnicodeString FileName, UnicodeString HResultStr, Int32 HResult)			task_0	Error		
+Microsoft-Windows-WorkFolders	2021	0	task_02021(UnicodeString FileName)			task_0	Informational		
+Microsoft-Windows-WorkFolders	2022	0	task_02022(UnicodeString FileName, UnicodeString HResultStr, Int32 HResult)			task_0	Error		
+Microsoft-Windows-WorkFolders	2023	0	task_02023(UnicodeString FileName)			task_0	Informational		
+Microsoft-Windows-WorkFolders	2024	0	task_02024()			task_0	Informational		
+Microsoft-Windows-WorkFolders	2025	0	task_02025()			task_0	Informational		
+Microsoft-Windows-WorkFolders	2026	0	task_02026(UnicodeString FileName)			task_0	Informational		
+Microsoft-Windows-WorkFolders	2027	0	task_02027(UnicodeString FileName, UnicodeString HResultStr, Int32 HResult)			task_0	Error		
 Microsoft-Windows-WorkFolders	2100	0	task_02100(UnicodeString LocalReplicaRoot, UnicodeString HResultStr, Int32 HResult)			task_0	Error		
 Microsoft-Windows-WorkFolders	2101	0	task_02101(UnicodeString SyncPartnershipId)			task_0	Informational		
 Microsoft-Windows-WorkFolders	2102	0	task_02102(UnicodeString SyncPartnershipId)			task_0	Informational		
@@ -68,6 +80,10 @@ Microsoft-Windows-WorkFolders	2113	0	task_02113(UnicodeString ItemName, GUID Syn
 Microsoft-Windows-WorkFolders	2114	0	task_02114(UnicodeString ItemName, GUID SyncGID, UnicodeString Action, UnicodeString HResultStr, Int32 HResult)			task_0	Warning		
 Microsoft-Windows-WorkFolders	2115	0	task_02115(UnicodeString DatabasePath, UnicodeString HResultStr, Int32 HResult)			task_0	Error		
 Microsoft-Windows-WorkFolders	2116	0	task_02116(UnicodeString DatabasePath, UnicodeString HResultStr, Int32 HResult)			task_0	Error		
+Microsoft-Windows-WorkFolders	2117	0	task_02117(UnicodeString DatabasePath, UnicodeString HResultStr, Int32 HResult)			task_0	Error		
+Microsoft-Windows-WorkFolders	2118	0	task_02118(UnicodeString HResultStr, Int32 HResult)			task_0	Error		
+Microsoft-Windows-WorkFolders	2119	0	task_02119(UnicodeString DatabasePath, UnicodeString HResultStr, Int32 HResult)			task_0	Error		
+Microsoft-Windows-WorkFolders	2120	0	task_02120(UnicodeString DatabasePath, UnicodeString HResultStr, Int32 HResult)			task_0	Error		
 Microsoft-Windows-WorkFolders	8000	0	SyncPartnershipStart(UnicodeString LocalReplicaRoot)	Start	SyncPartnership	SyncPartnership	Informational		
 Microsoft-Windows-WorkFolders	8001	0	SyncPartnershipChangeUpdateStart(UnicodeString LocalReplicaRoot)	ChangeUpdateStart	SyncPartnership	SyncPartnership	Informational		
 Microsoft-Windows-WorkFolders	8002	0	SyncPartnershipDownloadStart(UnicodeString LocalReplicaRoot)	DownloadStart	SyncPartnership	SyncPartnership	Informational		
@@ -81,6 +97,14 @@ Microsoft-Windows-WorkFolders	8009	0	SyncPartnershipChangeBatchApplyStart(Unicod
 Microsoft-Windows-WorkFolders	8010	0	SyncPartnershipKnowledgeDownloadStart(UnicodeString ServerPartnershipId)	KnowledgeDownloadStart	SyncPartnership	SyncPartnership	Informational		
 Microsoft-Windows-WorkFolders	8011	0	SyncPartnershipChangeBatchGenStart(UnicodeString LocalReplicaRoot)	ChangeBatchGenStart	SyncPartnership	SyncPartnership	Informational		
 Microsoft-Windows-WorkFolders	8012	0	SyncPartnershipUploadTransferStart(UnicodeString ServerPartnershipId)	UploadTransferStart	SyncPartnership	SyncPartnership	Informational		
+Microsoft-Windows-WorkFolders	8013	0	SyncPartnership()		SyncPartnership	SyncPartnership	Informational		
+Microsoft-Windows-WorkFolders	8014	0	SyncPartnership8014()		SyncPartnership	SyncPartnership	Informational		
+Microsoft-Windows-WorkFolders	8015	0	SyncPartnership8015(UnicodeString LocalReplicaRoot)		SyncPartnership	SyncPartnership	Informational		
+Microsoft-Windows-WorkFolders	8016	0	SyncPartnership8016(UnicodeString LocalReplicaRoot)		SyncPartnership	SyncPartnership	Informational		
+Microsoft-Windows-WorkFolders	8017	0	SyncPartnership8017()		SyncPartnership	SyncPartnership	Informational		
+Microsoft-Windows-WorkFolders	8018	0	SyncPartnership8018()		SyncPartnership	SyncPartnership	Informational		
+Microsoft-Windows-WorkFolders	8019	0	SyncPartnership8019(UnicodeString LocalReplicaRoot)		SyncPartnership	SyncPartnership	Informational		
+Microsoft-Windows-WorkFolders	8020	0	SyncPartnership8020(UnicodeString LocalReplicaRoot)		SyncPartnership	SyncPartnership	Informational		
 Microsoft-Windows-WorkFolders	9001	0	task_09001(UInt32 hc_stateid, UnicodeString Application)			task_0	Informational		
 Microsoft-Windows-WorkFolders	9002	0	task_09002(UInt32 hc_stateid, UnicodeString Application)			task_0	Informational		
 Microsoft-Windows-WorkFolders	9003	0	task_09003(UInt32 hc_stateid, UnicodeString Application)			task_0	Informational		

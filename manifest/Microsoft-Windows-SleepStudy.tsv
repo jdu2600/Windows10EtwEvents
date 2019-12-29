@@ -2,3 +2,4 @@ provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channe
 Microsoft-Windows-SleepStudy	1	0	ScenarioBlocker(UInt8 ScenarioInstanceId, GUID ParentGuid, UInt32 BlockerNameLength, UnicodeString BlockerName, GUID BlockerGuid, UInt64 ActiveTime)		sleepstudy	ScenarioBlocker	Informational		
 Microsoft-Windows-SleepStudy	2	0	ScenarioBlockerData(UInt8 ScenarioInstanceId, UInt32 DataCount, Int8 Data)		sleepstudy	ScenarioBlockerData	Informational		
 Microsoft-Windows-SleepStudy	3	0	TopOffendersPerfTrack(UInt32 ActiveTimeAndCommonData, UInt32 TopLevelActiveTime, UnicodeString BlockerHierarchyLevel1, UnicodeString BlockerHierarchyLevel2, UnicodeString BlockerHierarchyLevel3)			TopOffendersPerfTrack	Informational		
+Microsoft-Windows-SleepStudy	4	0	SubsystemContextInfo(UInt32 DataCount, AnsiString Data)		sleepstudy	SubsystemContextInfo	Informational		

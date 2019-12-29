@@ -10,8 +10,8 @@ Microsoft-Windows-Diagnosis-AdvancedTaskManager	5200	0	PerfTrack_TM8_LaunchStart
 Microsoft-Windows-Diagnosis-AdvancedTaskManager	5201	0	PerfTrack_TM8_LaunchStop()	Stop		PerfTrack_TM8_Launch	Informational		
 Microsoft-Windows-Diagnosis-AdvancedTaskManager	5202	0	PerfTrack_TM8_TabSwitchStart(UInt32 TabId)	Start		PerfTrack_TM8_TabSwitch	Informational		
 Microsoft-Windows-Diagnosis-AdvancedTaskManager	5203	0	PerfTrack_TM8_TabSwitchStop(UInt32 TabId)	Stop		PerfTrack_TM8_TabSwitch	Informational		
-Microsoft-Windows-Diagnosis-AdvancedTaskManager	5204	0	PerfTrack_TM8_KillProcessStart(UnicodeString ProcessOrPackageName)	Start		PerfTrack_TM8_KillProcess	Informational		
-Microsoft-Windows-Diagnosis-AdvancedTaskManager	5205	0	PerfTrack_TM8_KillProcessStop(UnicodeString ProcessOrPackageName)	Stop		PerfTrack_TM8_KillProcess	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5204	0	PerfTrack_TM8_KillProcessStart(UnicodeString ProcessOrPackageName, UnicodeString Version, UInt32 TimeDateStamp, UInt32 ProcessId)	Start		PerfTrack_TM8_KillProcess	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5205	0	PerfTrack_TM8_KillProcessStop(UnicodeString ProcessOrPackageName, UnicodeString Version, UInt32 TimeDateStamp, UInt32 ProcessId)	Stop		PerfTrack_TM8_KillProcess	Informational		
 Microsoft-Windows-Diagnosis-AdvancedTaskManager	5301	0	TM8_Window_LaunchStart()	Start	ui	TM8_Window_Launch	Informational		
 Microsoft-Windows-Diagnosis-AdvancedTaskManager	5302	0	TM8_Window_LaunchStop()	Stop	ui	TM8_Window_Launch	Informational		
 Microsoft-Windows-Diagnosis-AdvancedTaskManager	5303	0	Monitor_SetupStart()	Start	ui	Monitor_Setup	Informational		

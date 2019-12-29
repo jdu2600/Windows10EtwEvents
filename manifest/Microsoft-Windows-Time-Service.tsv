@@ -34,7 +34,7 @@ Microsoft-Windows-Time-Service	32	0	task_032(UnicodeString ErrorMessage)			task_
 Microsoft-Windows-Time-Service	33	0	task_033(UnicodeString SystemTimeChangeSeconds)			task_0	Warning		
 Microsoft-Windows-Time-Service	34	0	task_034(Int64 SystemTimeChangeSeconds, UInt32 MaxSystemTimeChangeSeconds, UnicodeString TimeSource)			task_0	Error		
 Microsoft-Windows-Time-Service	35	0	task_035(UnicodeString TimeSource)			task_0	Informational		
-Microsoft-Windows-Time-Service	36	0	task_036(UInt32 UnsynchronizedTimeSeconds)			task_0	Warning		
+Microsoft-Windows-Time-Service	36	0	task_036(UInt32 UnsynchronizedTimeSeconds, UInt32 TimeRemainingToSetLocalClockFreeRunningSeconds)			task_0	Warning		
 Microsoft-Windows-Time-Service	37	0	task_037(UnicodeString TimeSource)			task_0	Informational		
 Microsoft-Windows-Time-Service	38	0	task_038(UnicodeString TimeSource)			task_0	Warning		
 Microsoft-Windows-Time-Service	39	0	task_039()			task_0	Warning		
@@ -82,3 +82,4 @@ Microsoft-Windows-Time-Service	154	0	task_0154()			task_0	Always
 Microsoft-Windows-Time-Service	156	0	task_0156(UInt32 ClientRID, UnicodeString DomainPeer)			task_0	Warning		
 Microsoft-Windows-Time-Service	157	0	task_0157(UnicodeString ClientAddress)			task_0	Warning		
 Microsoft-Windows-Time-Service	158	0	task_0158(UnicodeString TimeProvider)			task_0	Informational		
+Microsoft-Windows-Time-Service	159	0	task_0159(UnicodeString ErrorMessage)			task_0	Warning		

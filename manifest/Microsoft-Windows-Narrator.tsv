@@ -6,6 +6,7 @@ Microsoft-Windows-Narrator	4	0	ScrapeWindowStop()	Stop	PerfInstrumentation	Scrap
 Microsoft-Windows-Narrator	5	0	InitiateSpeakingStart(Int32 Channel, UnicodeString SpokenText)	Start	PerfInstrumentation	InitiateSpeaking	Informational		
 Microsoft-Windows-Narrator	6	0	InitiateSpeakingStop(Int32 Channel, UnicodeString SpokenText)	Stop	PerfInstrumentation	InitiateSpeaking	Informational		
 Microsoft-Windows-Narrator	7	0	CancelSpeaking(UnicodeString CancelledMessage)		PerfInstrumentation	CancelSpeaking	Informational		
+Microsoft-Windows-Narrator	9	0	ModeChange(Int32 NewMode)		PerfInstrumentation	ModeChange	Informational		
 Microsoft-Windows-Narrator	11	0	NarratorCommandGeneratedStart(Int32 Command)	Start	PerfInstrumentation	NarratorCommandGenerated	Informational		
 Microsoft-Windows-Narrator	12	0	NarratorCommandGeneratedStop(Int32 Command)	Stop	PerfInstrumentation	NarratorCommandGenerated	Informational		
 Microsoft-Windows-Narrator	15	0	NarratorCursorUpdated(UnicodeString AutomationContext)		PerfInstrumentation	NarratorCursorUpdated	Informational		
@@ -15,15 +16,31 @@ Microsoft-Windows-Narrator	20	0	NarratorCheckSAPIVoicesStop()	Stop	PerfInstrumen
 Microsoft-Windows-Narrator	21	0	KeyEchoGenerateEvent(UnicodeString SpokenText)		PerfInstrumentation	KeyEchoGenerateEvent	Informational		
 Microsoft-Windows-Narrator	23	0	LaunchSearchAndSelectStart()	Start	PerfInstrumentation	LaunchSearchAndSelect	Informational		
 Microsoft-Windows-Narrator	24	0	LaunchSearchAndSelectStop()	Stop	PerfInstrumentation	LaunchSearchAndSelect	Informational		
+Microsoft-Windows-Narrator	25	0	QueueAppEvent(Int32 Priority, UnicodeString EventClass, Int32 Parameter)		PerfInstrumentation	QueueAppEvent	Informational		
 Microsoft-Windows-Narrator	27	0	AppClose()		PerfInstrumentation	AppClose	Informational		
 Microsoft-Windows-Narrator	29	0	SetProgressBarHandlerStart()	Start	PerfInstrumentation	SetProgressBarHandler	Informational		
 Microsoft-Windows-Narrator	30	0	SetProgressBarHandlerStop()	Stop	PerfInstrumentation	SetProgressBarHandler	Informational		
+Microsoft-Windows-Narrator	31	0	TouchModeSwitch(Int32 IsWindowActive)		PerfInstrumentation	TouchModeSwitch	Informational		
 Microsoft-Windows-Narrator	33	0	ConsoleUpdated()		PerfInstrumentation	ConsoleUpdated	Informational		
+Microsoft-Windows-Narrator	35	0	OSKToggled(Int32 CurrentOSKState)		PerfInstrumentation	OSKToggled	Informational		
 Microsoft-Windows-Narrator	37	0	ScreenRotated(Int32 CurrentOrientation)		PerfInstrumentation	ScreenRotated	Informational		
+Microsoft-Windows-Narrator	39	0	TaskbarIsFlashing()		PerfInstrumentation	TaskbarIsFlashing	Informational		
+Microsoft-Windows-Narrator	41	0	ExplorerStateChange(Int32 CurrentState)		PerfInstrumentation	ExplorerStateChange	Informational		
 Microsoft-Windows-Narrator	43	0	ProcessFocusChangeStart()	Start	PerfInstrumentation	ProcessFocusChange	Informational		
 Microsoft-Windows-Narrator	44	0	ProcessFocusChangeStop(Int32 EventCancelled, Int32 EventId)	Stop	PerfInstrumentation	ProcessFocusChange	Informational		
+Microsoft-Windows-Narrator	45	0	ToggleSelectionMode(Int32 SeletionModeEnabled)		PerfInstrumentation	ToggleSelectionMode	Informational		
+Microsoft-Windows-Narrator	47	0	ProcessNarratorCommandStart(Int32 Command)	Start	PerfInstrumentation	ProcessNarratorCommand	Informational		
+Microsoft-Windows-Narrator	48	0	ProcessNarratorCommandStop(Int32 Command)	Stop	PerfInstrumentation	ProcessNarratorCommand	Informational		
 Microsoft-Windows-Narrator	49	0	SAPISpeechComplete()		PerfInstrumentation	SAPISpeechComplete	Informational		
 Microsoft-Windows-Narrator	50	0	NarratorPlaySound(Int32 SoundResourceId)		PerfInstrumentation	NarratorPlaySound	Informational		
+Microsoft-Windows-Narrator	51	0	EventQueued(UnicodeString EventType, Int32 EventId, Int32 Priority)		PerfInstrumentation	EventQueued	Informational		
+Microsoft-Windows-Narrator	52	0	ProcessInputEventStart(UnicodeString EventType, Int32 EventId)	Start	PerfInstrumentation	ProcessInputEvent	Informational		
+Microsoft-Windows-Narrator	53	0	NarratorGetElementFromPointStart(Int32 EventId)	Start	PerfInstrumentation	NarratorGetElementFromPoint	Informational		
+Microsoft-Windows-Narrator	54	0	NarratorGetElementFromPointStop(Int32 EventId)	Stop	PerfInstrumentation	NarratorGetElementFromPoint	Informational		
+Microsoft-Windows-Narrator	55	0	InvestigateUpdateTextPatternStart(Int32 EventId)	Start	PerfInstrumentation	InvestigateUpdateTextPattern	Informational		
+Microsoft-Windows-Narrator	56	0	InvestigateUpdateTextPatternStop(Int32 EventId)	Stop	PerfInstrumentation	InvestigateUpdateTextPattern	Informational		
+Microsoft-Windows-Narrator	57	0	TextPatternUpdateCursorStart(Int32 EventId)	Start	PerfInstrumentation	TextPatternUpdateCursor	Informational		
+Microsoft-Windows-Narrator	58	0	TextPatternUpdateCursorStop(Int32 EventId)	Stop	PerfInstrumentation	TextPatternUpdateCursor	Informational		
 Microsoft-Windows-Narrator	59	0	SetFocusStart(Int32 EventId)	Start	PerfInstrumentation	SetFocus	Informational		
 Microsoft-Windows-Narrator	60	0	RenderFocusStart(Int32 EventId)	Start	PerfInstrumentation	RenderFocus	Informational		
 Microsoft-Windows-Narrator	61	0	RenderFocusStop(Int32 EventId)	Stop	PerfInstrumentation	RenderFocus	Informational		
@@ -31,8 +48,17 @@ Microsoft-Windows-Narrator	62	0	TextQueued(Int32 EventId)		PerfInstrumentation	T
 Microsoft-Windows-Narrator	63	0	HighlightCursorStart(Int32 EventId)	Start	PerfInstrumentation	HighlightCursor	Informational		
 Microsoft-Windows-Narrator	64	0	HighlightCursorStop(Int32 EventId)	Stop	PerfInstrumentation	HighlightCursor	Informational		
 Microsoft-Windows-Narrator	65	0	SetFocusStop(Int32 WasCanceled, Int32 EventId)	Stop	PerfInstrumentation	SetFocus	Informational		
+Microsoft-Windows-Narrator	66	0	ProcessInputEventStop(UnicodeString EventType, Int32 EventId)	Stop	PerfInstrumentation	ProcessInputEvent	Informational		
 Microsoft-Windows-Narrator	67	0	TextDequeued(Int32 EventId)		PerfInstrumentation	TextDequeued	Informational		
 Microsoft-Windows-Narrator	68	0	SapiTextSpeak(UnicodeString SpokenText)		PerfInstrumentation	SapiTextSpeak	Informational		
+Microsoft-Windows-Narrator	69	0	NavigationOriginIdStart(Int32 EventId)	Start	PerfInstrumentation	NavigationOriginId	Informational		
+Microsoft-Windows-Narrator	70	0	NavigationOriginIdStop(Int32 EventId)	Stop	PerfInstrumentation	NavigationOriginId	Informational		
+Microsoft-Windows-Narrator	71	0	NavigationTargetIdStart(Int32 EventId)	Start	PerfInstrumentation	NavigationTargetId	Informational		
+Microsoft-Windows-Narrator	72	0	NavigationTargetIdStop(Int32 EventId)	Stop	PerfInstrumentation	NavigationTargetId	Informational		
+Microsoft-Windows-Narrator	74	0	UiaFocusVerificationStart(Int32 ElementAddress)	Start	PerfInstrumentation	UiaFocusVerification	Informational		
+Microsoft-Windows-Narrator	75	0	UiaFocusVerificationStop(Int32 ElementAddress)	Stop	PerfInstrumentation	UiaFocusVerification	Informational		
+Microsoft-Windows-Narrator	76	0	UiaSecondFocusVerificationStart(Int32 EventId)	Start	PerfInstrumentation	UiaSecondFocusVerification	Informational		
+Microsoft-Windows-Narrator	77	0	UiaSecondFocusVerificationStop(Int32 EventId)	Stop	PerfInstrumentation	UiaSecondFocusVerification	Informational		
 Microsoft-Windows-Narrator	78	0	CheckContextStart(Int32 EventId)	Start	PerfInstrumentation	CheckContext	Informational		
 Microsoft-Windows-Narrator	79	0	CheckContextStop(Int32 EventId)	Stop	PerfInstrumentation	CheckContext	Informational		
 Microsoft-Windows-Narrator	82	0	InitializeGlobalsStart()	Start	PerfInstrumentation	InitializeGlobals	Informational		
@@ -49,6 +75,8 @@ Microsoft-Windows-Narrator	92	0	ShutdownMonitorsStart()	Start	PerfInstrumentatio
 Microsoft-Windows-Narrator	93	0	ShutdownMonitorsStop()	Stop	PerfInstrumentation	ShutdownMonitors	Informational		
 Microsoft-Windows-Narrator	94	0	ClearWindowTreeCacheStart()	Start	PerfInstrumentation	ClearWindowTreeCache	Informational		
 Microsoft-Windows-Narrator	95	0	ClearWindowTreeCacheStop()	Stop	PerfInstrumentation	ClearWindowTreeCache	Informational		
+Microsoft-Windows-Narrator	98	0	ClearEventQueueStart()	Start	PerfInstrumentation	ClearEventQueue	Informational		
+Microsoft-Windows-Narrator	99	0	ClearEventQueueStop()	Stop	PerfInstrumentation	ClearEventQueue	Informational		
 Microsoft-Windows-Narrator	100	0	ShutdownComponentsStart()	Start	PerfInstrumentation	ShutdownComponents	Informational		
 Microsoft-Windows-Narrator	101	0	ShutdownComponentsStop()	Stop	PerfInstrumentation	ShutdownComponents	Informational		
 Microsoft-Windows-Narrator	102	0	ShutdownUiaStart()	Start	PerfInstrumentation	ShutdownUia	Informational		
@@ -57,21 +85,69 @@ Microsoft-Windows-Narrator	104	0	GetTargetTextPatternElementStart(Int32 EventId)
 Microsoft-Windows-Narrator	105	0	GetTargetTextPatternElementStop(Int32 EventId)	Stop	PerfInstrumentation	GetTargetTextPatternElement	Informational		
 Microsoft-Windows-Narrator	106	0	TextPatternCommandExecutionStart(Int32 EventId)	Start	PerfInstrumentation	TextPatternCommandExecution	Informational		
 Microsoft-Windows-Narrator	107	0	TextPatternCommandExecutionStop(Int32 EventId)	Stop	PerfInstrumentation	TextPatternCommandExecution	Informational		
+Microsoft-Windows-Narrator	108	0	FindNextOrPreviousHeaderStart(Int32 EventId)	Start	PerfInstrumentation	FindNextOrPreviousHeader	Informational		
+Microsoft-Windows-Narrator	109	0	FindNextOrPreviousHeaderStart109(Int32 EventId)	Start	PerfInstrumentation	FindNextOrPreviousHeader	Informational		
 Microsoft-Windows-Narrator	110	0	FindActionElementStart(Int32 EventId)	Start	PerfInstrumentation	FindActionElement	Informational		
 Microsoft-Windows-Narrator	111	0	FindActionElementStop(Int32 EventId)	Stop	PerfInstrumentation	FindActionElement	Informational		
+Microsoft-Windows-Narrator	112	0	DetermineActionSequenceStart(Int32 EventId)	Start	PerfInstrumentation	DetermineActionSequence	Informational		
+Microsoft-Windows-Narrator	113	0	DetermineActionSequenceStop(Int32 EventId)	Stop	PerfInstrumentation	DetermineActionSequence	Informational		
 Microsoft-Windows-Narrator	114	0	ExecuteActionStart(Int32 EventId)	Start	PerfInstrumentation	ExecuteAction	Informational		
 Microsoft-Windows-Narrator	115	0	ExecuteActionStop(Int32 EventId)	Stop	PerfInstrumentation	ExecuteAction	Informational		
 Microsoft-Windows-Narrator	116	0	CalculateEchoCharacterStart()	Start	PerfInstrumentation	CalculateEchoCharacter	Informational		
 Microsoft-Windows-Narrator	117	0	CalculateEchoCharacterStop()	Stop	PerfInstrumentation	CalculateEchoCharacter	Informational		
 Microsoft-Windows-Narrator	118	0	CheckShouldEchoCharacterStart(Int32 EventId)	Start	PerfInstrumentation	CheckShouldEchoCharacter	Informational		
 Microsoft-Windows-Narrator	119	0	CheckShouldEchoCharacterStop(Int32 EventId)	Stop	PerfInstrumentation	CheckShouldEchoCharacter	Informational		
+Microsoft-Windows-Narrator	121	0	TextEventPreprocessingStart()	Start	PerfInstrumentation	TextEventPreprocessing	Informational		
+Microsoft-Windows-Narrator	122	0	TextEventPreprocessingStop()	Stop	PerfInstrumentation	TextEventPreprocessing	Informational		
+Microsoft-Windows-Narrator	123	0	InitializeTextPatternStateStart(Int32 EventId)	Start	PerfInstrumentation	InitializeTextPatternState	Informational		
+Microsoft-Windows-Narrator	124	0	InitializeTextPatternStateStop(Int32 EventId)	Stop	PerfInstrumentation	InitializeTextPatternState	Informational		
+Microsoft-Windows-Narrator	125	0	CheckTextEventDeltaStart(Int32 EventId)	Start	PerfInstrumentation	CheckTextEventDelta	Informational		
+Microsoft-Windows-Narrator	126	0	CheckTextEventDeltaStop(Int32 EventId)	Stop	PerfInstrumentation	CheckTextEventDelta	Informational		
+Microsoft-Windows-Narrator	127	0	GenerateTextEventTextChangeStart(Int32 EventId)	Start	PerfInstrumentation	GenerateTextEventTextChange	Informational		
+Microsoft-Windows-Narrator	128	0	GenerateTextEventTextChangeStop(Int32 EventId)	Stop	PerfInstrumentation	GenerateTextEventTextChange	Informational		
+Microsoft-Windows-Narrator	129	0	TextEventParentUpdateStart(Int32 EventId)	Start	PerfInstrumentation	TextEventParentUpdate	Informational		
+Microsoft-Windows-Narrator	130	0	TextEventParentUpdateStop(Int32 EventId)	Stop	PerfInstrumentation	TextEventParentUpdate	Informational		
 Microsoft-Windows-Narrator	131	0	UpdateNarratorContextStart(Int32 EventId)	Start	PerfInstrumentation	UpdateNarratorContext	Informational		
 Microsoft-Windows-Narrator	132	0	UpdateNarratorContextStop(Int32 EventId)	Stop	PerfInstrumentation	UpdateNarratorContext	Informational		
+Microsoft-Windows-Narrator	133	0	ElementTextGenerationStart(Int32 EventId)	Start	PerfInstrumentation	ElementTextGeneration	Informational		
+Microsoft-Windows-Narrator	134	0	ElementTextGenerationStop(Int32 EventId)	Stop	PerfInstrumentation	ElementTextGeneration	Informational		
+Microsoft-Windows-Narrator	135	0	GenerateTextPatternTextStart(Int32 EventId)	Start	PerfInstrumentation	GenerateTextPatternText	Informational		
+Microsoft-Windows-Narrator	136	0	GenerateTextPatternTextStop(Int32 EventId)	Stop	PerfInstrumentation	GenerateTextPatternText	Informational		
+Microsoft-Windows-Narrator	137	0	FindTextPatternActionElementStart(Int32 EventId)	Start	PerfInstrumentation	FindTextPatternActionElement	Informational		
+Microsoft-Windows-Narrator	138	0	FindTextPatternActionElementStop(Int32 EventId)	Stop	PerfInstrumentation	FindTextPatternActionElement	Informational		
+Microsoft-Windows-Narrator	139	0	InternalGetTextPatternUnitChangeStart(Int32 EventId)	Start	PerfInstrumentation	InternalGetTextPatternUnitChange	Informational		
+Microsoft-Windows-Narrator	140	0	InternalGetTextPatternUnitChangeStop(Int32 EventId)	Stop	PerfInstrumentation	InternalGetTextPatternUnitChange	Informational		
+Microsoft-Windows-Narrator	141	0	SaveCharactersAroundTextCursorStart(Int32 EventId)	Start	PerfInstrumentation	SaveCharactersAroundTextCursor	Informational		
+Microsoft-Windows-Narrator	142	0	SaveCharactersAroundTextCursorStop(Int32 EventId)	Stop	PerfInstrumentation	SaveCharactersAroundTextCursor	Informational		
+Microsoft-Windows-Narrator	143	0	GenerateNonDegenerateTextChangeStart(Int32 EventId)	Start	PerfInstrumentation	GenerateNonDegenerateTextChange	Informational		
+Microsoft-Windows-Narrator	144	0	GenerateNonDegenerateTextChangeStop(Int32 EventId)	Stop	PerfInstrumentation	GenerateNonDegenerateTextChange	Informational		
+Microsoft-Windows-Narrator	145	0	ShutdownFocusMonitorStart()	Start	PerfInstrumentation	ShutdownFocusMonitor	Informational		
+Microsoft-Windows-Narrator	146	0	ShutdownFocusMonitorStop()	Stop	PerfInstrumentation	ShutdownFocusMonitor	Informational		
+Microsoft-Windows-Narrator	147	0	ShutdownMouseMonitorStart()	Start	PerfInstrumentation	ShutdownMouseMonitor	Informational		
+Microsoft-Windows-Narrator	148	0	ShutdownMouseMonitorStop()	Stop	PerfInstrumentation	ShutdownMouseMonitor	Informational		
+Microsoft-Windows-Narrator	149	0	ShutdownTouchMonitorStart()	Start	PerfInstrumentation	ShutdownTouchMonitor	Informational		
+Microsoft-Windows-Narrator	150	0	ShutdownTouchMonitorStop()	Stop	PerfInstrumentation	ShutdownTouchMonitor	Informational		
 Microsoft-Windows-Narrator	151	0	ShutdownCommandGeneratorStart()	Start	PerfInstrumentation	ShutdownCommandGenerator	Informational		
 Microsoft-Windows-Narrator	152	0	ShutdownCommandGeneratorStop()	Stop	PerfInstrumentation	ShutdownCommandGenerator	Informational		
+Microsoft-Windows-Narrator	153	0	ShutdownSystemMonitorStart()	Start	PerfInstrumentation	ShutdownSystemMonitor	Informational		
+Microsoft-Windows-Narrator	154	0	ShutdownSystemMonitorStop()	Stop	PerfInstrumentation	ShutdownSystemMonitor	Informational		
 Microsoft-Windows-Narrator	155	0	UpdateSoftFocus(UnicodeString AutomationContext)		PerfInstrumentation	UpdateSoftFocus	Informational		
-Microsoft-Windows-Narrator	166	0	IsInprocEnabledStart()	Start	PerfInstrumentation	IsInprocEnabled	Informational		
-Microsoft-Windows-Narrator	167	0	IsInprocEnabledStop()	Stop	PerfInstrumentation	IsInprocEnabled	Informational		
+Microsoft-Windows-Narrator	156	0	BreakChunkIntoFormatsStart(Int32 EventId)	Start	PerfInstrumentation	BreakChunkIntoFormats	Informational		
+Microsoft-Windows-Narrator	157	0	BreakChunkIntoFormatsStop(Int32 EventId)	Stop	PerfInstrumentation	BreakChunkIntoFormats	Informational		
+Microsoft-Windows-Narrator	158	0	GetFormatReadingStart(Int32 EventId)	Start	PerfInstrumentation	GetFormatReading	Informational		
+Microsoft-Windows-Narrator	159	0	GetFormatReadingStop(Int32 EventId)	Stop	PerfInstrumentation	GetFormatReading	Informational		
+Microsoft-Windows-Narrator	160	0	DetailedReadingDataStart()	Start	PerfInstrumentation	DetailedReadingData	Informational		
+Microsoft-Windows-Narrator	161	0	DetailedReadingDataStop()	Stop	PerfInstrumentation	DetailedReadingData	Informational		
+Microsoft-Windows-Narrator	162	0	EventQProcessStart(Int32 MessageType)	Start	PerfInstrumentation	EventQProcess	Informational		
+Microsoft-Windows-Narrator	163	0	EventQProcessStop(Int32 MessageType)	Stop	PerfInstrumentation	EventQProcess	Informational		
+Microsoft-Windows-Narrator	164	0	RebuildCacheStart()	Start	PerfInstrumentation	RebuildCache	Informational		
+Microsoft-Windows-Narrator	165	0	RebuildCacheStart165()	Start	PerfInstrumentation	RebuildCache	Informational		
+Microsoft-Windows-Narrator	168	0	CancellationCheckStart()	Start	PerfInstrumentation	CancellationCheck	Informational		
+Microsoft-Windows-Narrator	169	0	CancellationCheckStop()	Stop	PerfInstrumentation	CancellationCheck	Informational		
+Microsoft-Windows-Narrator	170	0	UiaFocusEventReceivedStart(Int32 ElementAddress)	Start	PerfInstrumentation	UiaFocusEventReceived	Informational		
+Microsoft-Windows-Narrator	171	0	UiaFocusEventReceivedStop(Int32 ElementAddress)	Stop	PerfInstrumentation	UiaFocusEventReceived	Informational		
+Microsoft-Windows-Narrator	172	0	FocusProcessingEnqueuedStart()	Start	PerfInstrumentation	FocusProcessingEnqueued	Informational		
+Microsoft-Windows-Narrator	173	0	FocusProcessingEnqueuedStop()	Stop	PerfInstrumentation	FocusProcessingEnqueued	Informational		
 Microsoft-Windows-Narrator	174	0	NarratorPerformanceScenarioStart(Int32 NarratorPerfScenario)	Start	PerfInstrumentation	NarratorPerformanceScenario	Informational		
 Microsoft-Windows-Narrator	175	0	NarratorPerformanceScenarioStop(Int32 NarratorPerfScenario)	Stop	PerfInstrumentation	NarratorPerformanceScenario	Informational		
 Microsoft-Windows-Narrator	176	0	IsElementInPeripheralUIStart()	Start	PerfInstrumentation	IsElementInPeripheralUI	Informational		
@@ -84,8 +160,30 @@ Microsoft-Windows-Narrator	182	0	IsElementOnSoftKeyboardStart()	Start	PerfInstru
 Microsoft-Windows-Narrator	183	0	IsElementOnSoftKeyboardStop()	Stop	PerfInstrumentation	IsElementOnSoftKeyboard	Informational		
 Microsoft-Windows-Narrator	186	0	HandleNavigationCommandStart(Int32 Command)	Start	PerfInstrumentation	HandleNavigationCommand	Informational		
 Microsoft-Windows-Narrator	187	0	HandleNavigationCommandStop(Int32 Command)	Stop	PerfInstrumentation	HandleNavigationCommand	Informational		
+Microsoft-Windows-Narrator	188	0	ProcessTextPatternCommandStart()	Start	PerfInstrumentation	ProcessTextPatternCommand	Informational		
+Microsoft-Windows-Narrator	189	0	ProcessTextPatternCommandStop()	Stop	PerfInstrumentation	ProcessTextPatternCommand	Informational		
+Microsoft-Windows-Narrator	190	0	JumpToHeadingStart()	Start	PerfInstrumentation	JumpToHeading	Informational		
+Microsoft-Windows-Narrator	191	0	JumpToHeadingStop()	Stop	PerfInstrumentation	JumpToHeading	Informational		
+Microsoft-Windows-Narrator	194	0	PlaceCaretStart()	Start	PerfInstrumentation	PlaceCaret	Informational		
+Microsoft-Windows-Narrator	195	0	PlaceCaretStop()	Stop	PerfInstrumentation	PlaceCaret	Informational		
+Microsoft-Windows-Narrator	196	0	ProcessSelectionChangeStart()	Start	PerfInstrumentation	ProcessSelectionChange	Informational		
+Microsoft-Windows-Narrator	197	0	ProcessSelectionChangeStop()	Stop	PerfInstrumentation	ProcessSelectionChange	Informational		
+Microsoft-Windows-Narrator	200	0	ProcessDegenerateSelectionStart()	Start	PerfInstrumentation	ProcessDegenerateSelection	Informational		
+Microsoft-Windows-Narrator	201	0	ProcessDegenerateSelectionStop()	Stop	PerfInstrumentation	ProcessDegenerateSelection	Informational		
+Microsoft-Windows-Narrator	202	0	GenerateContinuousReadingSegmentStart()	Start	PerfInstrumentation	GenerateContinuousReadingSegment	Informational		
+Microsoft-Windows-Narrator	203	0	GenerateContinuousReadingSegmentStop()	Stop	PerfInstrumentation	GenerateContinuousReadingSegment	Informational		
+Microsoft-Windows-Narrator	204	0	GetNextChunkStart()	Start	PerfInstrumentation	GetNextChunk	Informational		
+Microsoft-Windows-Narrator	205	0	GetNextChunkStop()	Stop	PerfInstrumentation	GetNextChunk	Informational		
+Microsoft-Windows-Narrator	206	0	IsPlaceCaretPositionStart()	Start	PerfInstrumentation	IsPlaceCaretPosition	Informational		
+Microsoft-Windows-Narrator	207	0	IsPlaceCaretPositionStop()	Stop	PerfInstrumentation	IsPlaceCaretPosition	Informational		
+Microsoft-Windows-Narrator	208	0	UiaAutomationEventHandlerStart()	Start	PerfInstrumentation	UiaAutomationEventHandler	Informational		
+Microsoft-Windows-Narrator	209	0	UiaAutomationEventHandlerStop()	Stop	PerfInstrumentation	UiaAutomationEventHandler	Informational		
 Microsoft-Windows-Narrator	210	0	ProcessHookMessageStart()	Start	PerfInstrumentation	ProcessHookMessage	Informational		
 Microsoft-Windows-Narrator	211	0	ProcessHookMessageStop()	Stop	PerfInstrumentation	ProcessHookMessage	Informational		
+Microsoft-Windows-Narrator	212	0	AutomationEventProcessingEnqueuedStart()	Start	PerfInstrumentation	AutomationEventProcessingEnqueued	Informational		
+Microsoft-Windows-Narrator	213	0	AutomationEventProcessingEnqueuedStop()	Stop	PerfInstrumentation	AutomationEventProcessingEnqueued	Informational		
+Microsoft-Windows-Narrator	214	0	TextSelectionChangedEventProcessingStart()	Start	PerfInstrumentation	TextSelectionChangedEventProcessing	Informational		
+Microsoft-Windows-Narrator	215	0	TextSelectionChangedEventProcessingStop()	Stop	PerfInstrumentation	TextSelectionChangedEventProcessing	Informational		
 Microsoft-Windows-Narrator	216	0	SAPIOneCoreSSMLProcessingStart()	Start	PerfInstrumentation	SAPIOneCoreSSMLProcessing	Informational		
 Microsoft-Windows-Narrator	217	0	SAPIOneCoreSSMLProcessingStop()	Stop	PerfInstrumentation	SAPIOneCoreSSMLProcessing	Informational		
 Microsoft-Windows-Narrator	218	0	SAPIOneCorePopulateAudioStart()	Start	PerfInstrumentation	SAPIOneCorePopulateAudio	Informational		
@@ -95,3 +193,10 @@ Microsoft-Windows-Narrator	221	0	CacheSessionStop(Int32 HitCount, Int32 MissCoun
 Microsoft-Windows-Narrator	222	0	SAPIOneCorePopulateAudio()		PerfInstrumentation	SAPIOneCorePopulateAudio	Informational		
 Microsoft-Windows-Narrator	223	0	NarratorTouchInterpretationStart()	Start	PerfInstrumentation	NarratorTouchInterpretation	Informational		
 Microsoft-Windows-Narrator	224	0	NarratorTouchInterpretationStop()	Stop	PerfInstrumentation	NarratorTouchInterpretation	Informational		
+Microsoft-Windows-Narrator	225	0	ProcessTextSegmentStart()	Start	PerfInstrumentation	ProcessTextSegment	Informational		
+Microsoft-Windows-Narrator	226	0	ProcessTextSegmentStop()	Stop	PerfInstrumentation	ProcessTextSegment	Informational		
+Microsoft-Windows-Narrator	227	0	ContinuousReadingModeStart()	Start	PerfInstrumentation	ContinuousReadingMode	Informational		
+Microsoft-Windows-Narrator	228	0	ContinuousReadingModeStop()	Stop	PerfInstrumentation	ContinuousReadingMode	Informational		
+Microsoft-Windows-Narrator	229	0	ProgressiveRenderStart(Int32 GroupNumber)	Start	PerfInstrumentation	ProgressiveRender	Informational		
+Microsoft-Windows-Narrator	230	0	ProgressiveRenderStop(Int32 GroupNumber)	Stop	PerfInstrumentation	ProgressiveRender	Informational		
+Microsoft-Windows-Narrator	231	0	AudioPlayBackCompleted()		PerfInstrumentation	AudioPlayBackCompleted	Informational		

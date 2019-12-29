@@ -73,6 +73,9 @@ Microsoft-Windows-NWiFi	10071	0	StoppingdevicenetworkatIMdriverStop10071(GUID In
 Microsoft-Windows-NWiFi	10072	0	task_010072(UInt32 PowerMgmtMode, Boolean PowerMgmtModeSupported, GUID AdapterGuid, Binary MAC, AnsiString SSID)		PowerMgmt	task_0	Informational		
 Microsoft-Windows-NWiFi	10073	0	EnterLowPowerState(GUID AdapterGuid, Boolean Halted, UInt32 NewPowerState)		SleepResume Telemetry	EnterLowPowerState	Informational		
 Microsoft-Windows-NWiFi	10074	0	LeaveLowPowerState(GUID AdapterGuid)		SleepResume Telemetry	LeaveLowPowerState	Informational		
+Microsoft-Windows-NWiFi	10075	0	task_010075(Pointer ContextHandle, GUID AdapterGuid, UInt32 Status)		AssocMgr	task_0	Informational		
+Microsoft-Windows-NWiFi	10076	0	task_010076(Pointer ContextHandle, GUID AdapterGuid, UInt32 Status)		AssocMgr	task_0	Informational		
+Microsoft-Windows-NWiFi	10077	0	task_010077(GUID AdapterGuid, Int32 TxUnicastCount, Int32 RxUnicastCount, Int32 TxBroadcastCount, Int32 RxBroadcastCount, Int32 TxMulticastCount, Int32 RxMulticastCount, UInt64 TimeDiffMs)		AssocMgr	task_0	Informational		
 Microsoft-Windows-NWiFi	20000	0	ConnecttosamenetworkonresumeStart(GUID InterfaceGuid)	Start		Connecttosamenetworkonresume	Informational		
 Microsoft-Windows-NWiFi	20001	0	ConnecttonetworkonresumeafterinterveningdisconnectStart(GUID InterfaceGuid)	Start		Connecttonetworkonresumeafterinterveningdisconnect	Informational		
 Microsoft-Windows-NWiFi	20002	0	ConnecttosamenetworkonresumeStop(GUID InterfaceGuid)	Stop		Connecttosamenetworkonresume	Informational		

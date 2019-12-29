@@ -21,8 +21,8 @@ Microsoft-Windows-AAD	1020	0	AadCloudAPPluginOperationStart1020()	Start	Analytic
 Microsoft-Windows-AAD	1021	0	AadCloudAPPluginOperation1021(Int32 Status)		Analytic	AadCloudAPPluginOperation	Informational		
 Microsoft-Windows-AAD	1022	0	AadCloudAPPluginOperationStart1022(UnicodeString value)	Start	Analytic	AadCloudAPPluginOperation	Informational		
 Microsoft-Windows-AAD	1023	0	AadCloudAPPluginOperationStart1023(UnicodeString value)	Start	Analytic	AadCloudAPPluginOperation	Informational		
-Microsoft-Windows-AAD	1024	0	AadCloudAPPluginOperation1024(Int32 value)		Analytic	AadCloudAPPluginOperation	Error		
-Microsoft-Windows-AAD	1025	0	AadCloudAPPluginOperation1025(Int32 value, UnicodeString Method, UnicodeString EndpointUri, UnicodeString CorrelationID)		Analytic	AadCloudAPPluginOperation	Error		
+Microsoft-Windows-AAD	1024	0	AadCloudAPPluginOperation1024(Int32 value)		Error Operational	AadCloudAPPluginOperation	Error		
+Microsoft-Windows-AAD	1025	0	AadCloudAPPluginOperation1025(Int32 value, UnicodeString Method, UnicodeString EndpointUri, UnicodeString CorrelationID)		Error Operational	AadCloudAPPluginOperation	Error		
 Microsoft-Windows-AAD	1026	0	AadCloudAPPluginOperation1026(Int32 value, UnicodeString CorrelationID)		Analytic	AadCloudAPPluginOperation	Informational		
 Microsoft-Windows-AAD	1027	0	AadCloudAPPluginOperationStart1027()	Start	Analytic	AadCloudAPPluginOperation	Informational		
 Microsoft-Windows-AAD	1028	0	AadCloudAPPluginOperationStart1028()	Start	Analytic	AadCloudAPPluginOperation	Informational		
@@ -68,7 +68,7 @@ Microsoft-Windows-AAD	1112	0	AadAadtbOperation1112(UInt32 Error, UnicodeString E
 Microsoft-Windows-AAD	1113	0	AadAadtbOperation1113(UInt32 OperationCode, UnicodeString OperationMessage, UnicodeString AdditionalInformation)		Analytic	AadAadtbOperation	Informational		
 Microsoft-Windows-AAD	1114	0	AadAadtbOperation1114(UInt32 Error, UnicodeString ErrorMessage, UnicodeString AdditionalInformation)		Analytic Warning	AadAadtbOperation	Warning		
 Microsoft-Windows-AAD	1115	0	AadAadtbOperation1115(UInt32 Error, UnicodeString ErrorMessage, UnicodeString AdditionalInformation)		Error Analytic	AadAadtbOperation	Error		
-Microsoft-Windows-AAD	1116	0	AadCloudAPPluginOperation1116(HexInt32 Status, UnicodeString CorrelationID)		Analytic Warning	AadCloudAPPluginOperation	Warning		
+Microsoft-Windows-AAD	1116	0	AadCloudAPPluginOperation1116(HexInt32 Status, UnicodeString CorrelationID)		Operational Warning	AadCloudAPPluginOperation	Warning		
 Microsoft-Windows-AAD	1117	0	AadCloudAPPluginOperation1117(HexInt32 Status, UnicodeString CorrelationID)		Error Operational	AadCloudAPPluginOperation	Error		
 Microsoft-Windows-AAD	1118	0	AadCloudAPPluginOperation1118(HexInt32 Status, UnicodeString CorrelationID)		Error Operational	AadCloudAPPluginOperation	Error		
 Microsoft-Windows-AAD	1119	0	AadCloudAPPluginOperation1119(UnicodeString Response, Int32 Status)		Analytic	AadCloudAPPluginOperation	Informational		
@@ -104,3 +104,21 @@ Microsoft-Windows-AAD	1148	0	AadCloudAPPluginOperationStop1148(HexInt32 Status)	
 Microsoft-Windows-AAD	1149	0	AadCloudAPPluginOperationStart1149()	Start	Analytic	AadCloudAPPluginOperation	Informational		
 Microsoft-Windows-AAD	1150	0	AadCloudAPPluginOperationStop1150(HexInt32 Status)	Stop	Analytic	AadCloudAPPluginOperation	Informational		
 Microsoft-Windows-AAD	1151	0	AadCloudAPPluginOperation1151(HexInt32 Status)		Error Operational	AadCloudAPPluginOperation	Error		
+Microsoft-Windows-AAD	1152	0	AadCloudAPPluginOperation1152(Int32 Result)		Error Operational	AadCloudAPPluginOperation	Error		
+Microsoft-Windows-AAD	1153	0	AadCloudAPPluginOperation1153(UnicodeString value)		Error Operational	AadCloudAPPluginOperation	Error		
+Microsoft-Windows-AAD	1154	0	AadCloudAPPluginOperation1154(Int32 seconds, UnicodeString URI)		Analytic	AadCloudAPPluginOperation	Informational		
+Microsoft-Windows-AAD	1155	0	AadCloudAPPluginOperation1155(HexInt32 Status, UnicodeString CorrelationID)		Operational Warning	AadCloudAPPluginOperation	Warning		
+Microsoft-Windows-AAD	1156	0	AadCloudAPPluginOperation1156(HexInt32 Status, FILETIME ExpiryTime, UnicodeString PasswordChangeURI)		Analytic	AadCloudAPPluginOperation	Informational		
+Microsoft-Windows-AAD	1157	0	AadCloudAPPluginOperationStart1157()	Start	Analytic	AadCloudAPPluginOperation	Informational		
+Microsoft-Windows-AAD	1158	0	AadCloudAPPluginOperationStop1158(HexInt32 Status)	Stop	Analytic	AadCloudAPPluginOperation	Informational		
+Microsoft-Windows-AAD	1159	0	AadCloudAPPluginOperationStop1159(HexInt32 Status)	Stop	Operational Warning	AadCloudAPPluginOperation	Warning		
+Microsoft-Windows-AAD	1160	0	AadCloudAPPluginOperation1160(HexInt32 Status, UnicodeString CorrelationID)		Error Operational	AadCloudAPPluginOperation	Error		
+Microsoft-Windows-AAD	1161	0	AadCloudAPPluginOperation1161(HexInt32 Status, UnicodeString CorrelationID)		Error Operational	AadCloudAPPluginOperation	Error		
+Microsoft-Windows-AAD	1162	0	AadCloudAPPluginOperation1162(HexInt32 Status, UnicodeString CorrelationID)		Error Operational	AadCloudAPPluginOperation	Error		
+Microsoft-Windows-AAD	1163	0	AadCloudAPPluginOperation1163(HexInt32 Status, UnicodeString CorrelationID)		Error Operational	AadCloudAPPluginOperation	Error		
+Microsoft-Windows-AAD	1164	0	AadCloudAPPluginOperation1164(HexInt32 Status, UnicodeString CorrelationID)		Error Operational	AadCloudAPPluginOperation	Error		
+Microsoft-Windows-AAD	1165	0	AadCloudAPPluginOperation1165(HexInt32 Status, UnicodeString CorrelationID)		Error Operational	AadCloudAPPluginOperation	Error		
+Microsoft-Windows-AAD	1200	0	BrowserCoreOperationStart()	Start	Analytic	BrowserCoreOperation	Informational		
+Microsoft-Windows-AAD	1201	0	BrowserCoreOperationStop()	Stop	Analytic	BrowserCoreOperation	Informational		
+Microsoft-Windows-AAD	1202	0	BrowserCoreOperationStop1202(Int32 Result)	Stop	Error Operational	BrowserCoreOperation	Error		
+Microsoft-Windows-AAD	1203	0	BrowserCoreOperation(Int32 Result, AnsiString FunctionName)		Error Operational	BrowserCoreOperation	Error		

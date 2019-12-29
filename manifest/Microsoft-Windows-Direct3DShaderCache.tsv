@@ -1,0 +1,47 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Direct3DShaderCache	1	0	ShaderCacheStart(Pointer Cache, UInt32 Type, UInt32 Flags)	Start	Objects	ShaderCache	Always		
+Microsoft-Windows-Direct3DShaderCache	2	0	ShaderCacheStop(Pointer Cache, UInt32 Type, UInt32 Flags)	Stop	Objects	ShaderCache	Always		
+Microsoft-Windows-Direct3DShaderCache	3	0	ShaderCacheDCStart(Pointer Cache, UInt32 Type, UInt32 Flags)	DC_Start	Objects	ShaderCache	Always		
+Microsoft-Windows-Direct3DShaderCache	4	0	CreateShaderCacheStart(UInt32 Flags, UInt32 ExternalFileVersion, UnicodeString Filename, UInt32 FileCreateDisposition, UInt32 Mode, UInt32 MaximumInMemoryCacheSizeBytes, UInt32 MaximumInMemoryCacheEntries, UInt32 MaximumWriteQueueBytes, UInt32 MaximumWriteQueueNumEntries, UInt32 MaximumValueFileSizeBytes)	Start	APIs Profiling	CreateShaderCache	Always		
+Microsoft-Windows-Direct3DShaderCache	5	0	CreateShaderCacheStop(Int32 Return, Pointer Cache)	Stop	APIs Profiling	CreateShaderCache	Always		
+Microsoft-Windows-Direct3DShaderCache	6	0	DestroyShaderCacheStart(Pointer Cache)	Start	APIs Profiling	DestroyShaderCache	Always		
+Microsoft-Windows-Direct3DShaderCache	7	0	DestroyShaderCacheStop()	Stop	APIs Profiling	DestroyShaderCache	Always		
+Microsoft-Windows-Direct3DShaderCache	8	0	FindValueStart(Pointer Cache, UInt32 NumKeyParts, UInt8 KeyParts, Binary PrecomputedHash)	Start	APIs Profiling	FindValue	Always		
+Microsoft-Windows-Direct3DShaderCache	9	0	FindValueStop(Int32 Return, Pointer FoundValue, UInt32 FoundValueSize)	Stop	APIs Profiling	FindValue	Always		
+Microsoft-Windows-Direct3DShaderCache	10	0	AddValueStart(Pointer Cache, UInt32 NumKeyParts, UInt16 KeyParts, Binary PrecomputedHash, Pointer Value, UInt32 ValueSize)	Start	APIs Profiling	AddValue	Always		
+Microsoft-Windows-Direct3DShaderCache	11	0	AddValueStop(Int32 Return)	Stop	APIs Profiling	AddValue	Always		
+Microsoft-Windows-Direct3DShaderCache	12	0	FreeFoundValueStart(Pointer Value, UInt32 ValueSize)	Start	APIs Profiling	FreeFoundValue	Always		
+Microsoft-Windows-Direct3DShaderCache	13	0	FreeFoundValueStop()	Stop	APIs Profiling	FreeFoundValue	Always		
+Microsoft-Windows-Direct3DShaderCache	14	0	FlushStart(Pointer Cache)	Start	APIs Profiling	Flush	Always		
+Microsoft-Windows-Direct3DShaderCache	15	0	FlushStop(Int32 Return)	Stop	APIs Profiling	Flush	Always		
+Microsoft-Windows-Direct3DShaderCache	101	0	UWPSuspend()		Events Profiling	UWPSuspend	Informational		
+Microsoft-Windows-Direct3DShaderCache	102	0	L1Full(UInt32 NumEntries, UInt64 CurrentMemoryUsage, UInt64 MemoryBudget)		Events	L1Full	Warning		
+Microsoft-Windows-Direct3DShaderCache	103	0	L1AddStart(UInt32 NumEntries, UInt64 CurrentMemoryUsage, UInt32 DeltaSize)	Start	Events	L1Add	Informational		
+Microsoft-Windows-Direct3DShaderCache	104	0	L1AddStop(UInt32 NumEntries, UInt64 CurrentMemoryUsage)	Stop	Events	L1Add	Verbose		
+Microsoft-Windows-Direct3DShaderCache	105	0	L1TrimStart(UInt32 NumEntries, UInt64 CurrentMemoryUsage)	Start	Events	L1Trim	Informational		
+Microsoft-Windows-Direct3DShaderCache	106	0	L1TrimStop(UInt32 NumEntries, UInt64 CurrentMemoryUsage, UInt64 MemoryBudget)	Stop	Events	L1Trim	Informational		
+Microsoft-Windows-Direct3DShaderCache	107	0	L1Free(UInt32 NumEntries, UInt64 CurrentMemoryUsage, UInt32 DeltaSize)		Events	L1Free	Verbose		
+Microsoft-Windows-Direct3DShaderCache	108	0	L1Clear(UInt32 NumEntries, UInt64 CurrentMemoryUsage, UInt64 MemoryBudget)		Events	L1Clear	Informational		
+Microsoft-Windows-Direct3DShaderCache	109	0	IndexFileGrow(UInt32 TotalPages, UInt64 TotalSize)		Events	IndexFileGrow	Informational		
+Microsoft-Windows-Direct3DShaderCache	110	0	InitIndexFile(UnicodeString Filename, UInt32 FileCreateDisposition)		Events	InitIndexFile	Warning		
+Microsoft-Windows-Direct3DShaderCache	111	0	ClearIndexFile()		Events	ClearIndexFile	Informational		
+Microsoft-Windows-Direct3DShaderCache	112	0	FileError(UInt32 LastError, UInt32 FileType, UInt32 FileOp)		Events	FileError	Error		
+Microsoft-Windows-Direct3DShaderCache	113	0	DoubleAdd()		Events	DoubleAdd	Error		
+Microsoft-Windows-Direct3DShaderCache	114	0	DoubleAdd114()		Events	DoubleAdd	Error		
+Microsoft-Windows-Direct3DShaderCache	115	0	L1Full115()		Events	L1Full	Error		
+Microsoft-Windows-Direct3DShaderCache	116	0	CRCFailure()		Events	CRCFailure	Critical		
+Microsoft-Windows-Direct3DShaderCache	117	0	CRCFailure117()		Events	CRCFailure	Critical		
+Microsoft-Windows-Direct3DShaderCache	118	0	GuardFileError()		Events	GuardFileError	Error		
+Microsoft-Windows-Direct3DShaderCache	119	0	GuardFileError119()		Events	GuardFileError	Warning		
+Microsoft-Windows-Direct3DShaderCache	120	0	L2Full(UInt64 CurrentFileSize, UInt64 CurrentWriteQueueSize, UInt64 MaximimFileSize, UInt32 NewValueSize)		Events	L2Full	Error		
+Microsoft-Windows-Direct3DShaderCache	121	0	L2WriteQueueFull(UInt64 CurrentFileSize, UInt64 CurrentWriteQueueSize, UInt64 MaximimWriteQueueSize, UInt32 NewValueSize)		Events	L2WriteQueueFull	Informational		
+Microsoft-Windows-Direct3DShaderCache	122	0	L2WriteQueueAdd(UInt64 CurrentFileSize, UInt64 CurrentWriteQueueSize, UInt64 MaximimWriteQueueSize, UInt32 NewValueSize)		Events	L2WriteQueueAdd	Informational		
+Microsoft-Windows-Direct3DShaderCache	123	0	L2WriteQueueTooSmall(UInt64 CurrentFileSize, UInt64 CurrentWriteQueueSize, UInt64 MaximimWriteQueueSize, UInt32 NewValueSize)		Events	L2WriteQueueTooSmall	Warning		
+Microsoft-Windows-Direct3DShaderCache	124	0	L2ReadLock(UInt32 NumMappedValues, UInt64 MappedMemoryUsage)		Events	L2ReadLock	Informational		
+Microsoft-Windows-Direct3DShaderCache	125	0	L2ReadUnlock(UInt32 NumMappedValues, UInt64 MappedMemoryUsage)		Events	L2ReadUnlock	Informational		
+Microsoft-Windows-Direct3DShaderCache	126	0	HashCollision()		Events	HashCollision	Critical		
+Microsoft-Windows-Direct3DShaderCache	501	0	FileWriteStart(UInt32 FileType, UInt64 NumBytes)	Start	Profiling	FileWrite	Informational		
+Microsoft-Windows-Direct3DShaderCache	502	0	FileWriteStop(UInt32 FileType, UInt64 NumBytes)	Stop	Profiling	FileWrite	Informational		
+Microsoft-Windows-Direct3DShaderCache	503	0	FileReadStart(UInt32 FileType, UInt64 NumBytes)	Start	Profiling	FileRead	Informational		
+Microsoft-Windows-Direct3DShaderCache	504	0	FileReadStop(UInt32 FileType, UInt64 NumBytes)	Stop	Profiling	FileRead	Informational		
+Microsoft-Windows-Direct3DShaderCache	2001	0	StatisticsTelemetry(Boolean UTCReplace_AppSessionGuid, UInt32 NumLookups, UInt32 NumCacheHits, UInt32 NumL1Hits, UInt32 NumL1HitsInCacheFromAdd, UInt32 NumAddRequests, UInt32 NumFailedAdds, UInt64 FailedAddTotalSize, UInt32 MaxInMemoryEntries, UInt32 MaxInMemorySize, UInt32 NumDiskEntries, UInt64 IndexFileSize, UInt64 ValueFileSize, Boolean HadCRCFailure, UInt32 NumHashCollisions, UInt64 TotalKeySize, UInt64 TotalValueSize, Double AverageKeySize, Double AverageValueSize, UInt32 MaxKeySize, UInt32 MaxValueSize, Double TotalFindTime, Double TotalAddTime, Double AverageFindTime, Double AverageAddTime, Double MaxFindTime, Double MaxAddTime, Double InitializationTime, Boolean DesiredOpen, Boolean SuccessfulOpen)		Events keyword_400000000000	StatisticsTelemetry	Informational		

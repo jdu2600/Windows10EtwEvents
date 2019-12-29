@@ -40,6 +40,7 @@ Microsoft-Windows-DXGI	65	0	SetHardwareProtectionOnSwapChainBuffer(Pointer pIDXG
 Microsoft-Windows-DXGI	66	0	ReCreateSwapChainBufferForHardwareProtection(Pointer pIDXGISwapChain, Boolean Enabled)		Events	ReCreateSwapChainBufferForHardwareProtection	Always		
 Microsoft-Windows-DXGI	67	0	SetHardwareProtectionFailure(Pointer pIDXGISwapchain, UInt32 Result)		Events	SetHardwareProtectionFailure	Always		
 Microsoft-Windows-DXGI	68	0	CheckOverlayColorSpaceSupport(Pointer pIDXGIOutput, UInt32 Format, UInt32 ColorSpace, UInt32 OutputFlags, UInt32 Result)		Events	CheckOverlayColorSpaceSupport	Always		
+Microsoft-Windows-DXGI	69	0	SetColorSpace1(Pointer pIDXGISwapchain, UInt32 ColorSpace)		Events	SetColorSpace1	Always		
 Microsoft-Windows-DXGI	80	0	CreateDXGIFactoryStart(GUID riid, Pointer ppFactory)	Start		CreateDXGIFactory	Always		
 Microsoft-Windows-DXGI	81	0	CreateDXGIFactoryStop(UInt32 m_Ret)	Stop		CreateDXGIFactory	Always		
 Microsoft-Windows-DXGI	104	0	IDXGIAdapter_QueryInterfaceStart(Pointer pThis, GUID riid, Pointer ppvObject)	Start		IDXGIAdapter_QueryInterface	Always		

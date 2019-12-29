@@ -34,6 +34,7 @@ Microsoft-Windows-Biometrics	1109	0	WBioSrvc1109(UnicodeString BiometricSensor, 
 Microsoft-Windows-Biometrics	1110	0	WBioSrvc1110(UnicodeString BiometricSensor, HexInt32 ErrorCode)			WBioSrvc	Informational		
 Microsoft-Windows-Biometrics	1111	0	WBioSrvc1111(UnicodeString BiometricSensor, HexInt32 ErrorCode)			WBioSrvc	Informational		
 Microsoft-Windows-Biometrics	1112	0	WBioSrvc1112(UnicodeString BiometricSensor, UnicodeString SensorAdapter, UnicodeString EngineAdapter, UnicodeString StorageAdapter, GUID DatabaseID, UInt32 SensorMode, UInt32 SensorPool, UInt32 IsolationLevel, UnicodeString IsolationSensorAdapter, UnicodeString IsolationEngineAdapter, UnicodeString IsolationStorageAdapter, UInt32 Component, HexInt32 ErrorCode)			WBioSrvc	Informational		
+Microsoft-Windows-Biometrics	1113	0	WBioSrvc1113(UnicodeString ModulePath)			WBioSrvc	Informational		
 Microsoft-Windows-Biometrics	1400	0	BioCredProv(UnicodeString Username)			BioCredProv	Verbose		
 Microsoft-Windows-Biometrics	1401	0	BioCredProv1401(HexInt32 ErrorCode)			BioCredProv	Error		
 Microsoft-Windows-Biometrics	1402	0	BioCredProv1402(UnicodeString Username)			BioCredProv	Verbose		
@@ -55,12 +56,15 @@ Microsoft-Windows-Biometrics	1513	0	BioCredProv1513(UnicodeString SID, UnicodeSt
 Microsoft-Windows-Biometrics	1514	0	BioCredProv1514()			BioCredProv	Informational		
 Microsoft-Windows-Biometrics	1515	0	BioCredProv1515(UnicodeString SID, UnicodeString Username)			BioCredProv	Informational		
 Microsoft-Windows-Biometrics	1516	0	BioCredProv1516(HexInt32 ErrorCode)			BioCredProv	Informational		
-Microsoft-Windows-Biometrics	1600	0	WBioSrvc1600(HexInt32 ErrorCode)			WBioSrvc	Error		
+Microsoft-Windows-Biometrics	1600	0	WBioSrvc1600(HexInt32 ErrorCode)			WBioSrvc	Informational		
 Microsoft-Windows-Biometrics	1601	0	WBioSrvc1601()			WBioSrvc	Informational		
-Microsoft-Windows-Biometrics	1700	0	WBioSrvc1700(UnicodeString SID, UnicodeString Username, HexInt32 Type)			WBioSrvc	Informational		
-Microsoft-Windows-Biometrics	1701	0	WBioSrvc1701(UnicodeString SID, UnicodeString Username, HexInt32 Type, HexInt32 ErrorCode)			WBioSrvc	Error		
-Microsoft-Windows-Biometrics	1702	0	WBioSrvc1702(UnicodeString SID, UnicodeString Username, HexInt32 Type)			WBioSrvc	Informational		
-Microsoft-Windows-Biometrics	1703	0	WBioSrvc1703(UnicodeString SID, UnicodeString Username, HexInt32 Type, HexInt32 ErrorCode)			WBioSrvc	Error		
+Microsoft-Windows-Biometrics	1602	0	WBioSrvc1602(UnicodeString BiometricSensor, UnicodeString SourceStorageAdapter, GUID SourceDatabaseID, UnicodeString TargetStorageAdapter, GUID TargetDatabaseID, UInt32 IsolationLevel, UnicodeString TargetIsolationStorageAdapter, HexInt32 ErrorCode)			WBioSrvc	Error		
+Microsoft-Windows-Biometrics	1603	0	WBioSrvc1603(UnicodeString BiometricSensor, UnicodeString SourceStorageAdapter, GUID SourceDatabaseID, UnicodeString TargetStorageAdapter, GUID TargetDatabaseID, UInt32 IsolationLevel, UnicodeString TargetIsolationStorageAdapter, HexInt32 ErrorCode)			WBioSrvc	Informational		
+Microsoft-Windows-Biometrics	1604	0	WBioSrvc1604(HexInt32 ErrorCode)			WBioSrvc	Error		
+Microsoft-Windows-Biometrics	1700	0	WBioSrvc1700(UnicodeString SID, UnicodeString Username, UInt32 Type)			WBioSrvc	Informational		
+Microsoft-Windows-Biometrics	1701	0	WBioSrvc1701(UnicodeString SID, UnicodeString Username, UInt32 Type, HexInt32 ErrorCode)			WBioSrvc	Error		
+Microsoft-Windows-Biometrics	1702	0	WBioSrvc1702(UnicodeString SID, UnicodeString Username, UInt32 Type)			WBioSrvc	Informational		
+Microsoft-Windows-Biometrics	1703	0	WBioSrvc1703(UnicodeString SID, UnicodeString Username, UInt32 Type, HexInt32 ErrorCode)			WBioSrvc	Error		
 Microsoft-Windows-Biometrics	7000	0	WBioSrvcStart()	Start		WBioSrvc	Informational		
 Microsoft-Windows-Biometrics	7001	0	WBioSrvcStop()	Stop		WBioSrvc	Informational		
 Microsoft-Windows-Biometrics	7002	0	WBioSrvcStart7002()	Start		WBioSrvc	Informational		

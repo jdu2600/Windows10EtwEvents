@@ -12,3 +12,9 @@ Microsoft-Windows-DVD	11	0	NavPumpWaitStop(Pointer Object, Int32 WakeIndex, Int3
 Microsoft-Windows-DVD	12	0	NavSendEventNotification(Pointer Object, Int32 Type, Int32 Param1, Int32 Param2)			NavSendEventNotification	Verbose		
 Microsoft-Windows-DVD	13	0	NavDomainChange(Pointer Object, Int32 Domain, Int32 VTSN)			NavDomainChange	Verbose		
 Microsoft-Windows-DVD	14	0	NavSendErrorNotification(Pointer Object, Int32 Param1, Int32 Param2)			NavSendErrorNotification	Verbose		
+Microsoft-Windows-DVD	15	0	NavStartStreamingStart(Pointer Object)	Start		NavStartStreaming	Verbose		
+Microsoft-Windows-DVD	16	0	NavStartStreamingStop(Pointer Object)	Stop		NavStartStreaming	Verbose		
+Microsoft-Windows-DVD	17	0	NavCreateFileStart(Pointer Object, UnicodeString Filename)	Start		NavCreateFile	Verbose		
+Microsoft-Windows-DVD	18	0	NavCreateFileStop(Pointer Object, Int32 hr)	Stop		NavCreateFile	Verbose		
+Microsoft-Windows-DVD	19	0	NavMutexLockStart(Pointer Object)	Start		NavMutexLock	Verbose		
+Microsoft-Windows-DVD	20	0	NavMutexLockStop(Pointer Object)	Stop		NavMutexLock	Verbose		

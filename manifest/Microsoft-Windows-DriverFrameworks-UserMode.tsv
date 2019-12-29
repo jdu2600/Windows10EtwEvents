@@ -1,6 +1,8 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
 Microsoft-Windows-DriverFrameworks-UserMode	1000	1	Startupofthedrivermanagerservice.Start_V1(UnicodeString Version)	Start		Startupofthedrivermanagerservice.	Informational		
+Microsoft-Windows-DriverFrameworks-UserMode	1000	2	Startupofthedrivermanagerservice.Start_V2()	Start		Startupofthedrivermanagerservice.	Informational		
 Microsoft-Windows-DriverFrameworks-UserMode	1001	1	Startupofthedrivermanagerservice.Stop_V1(UnicodeString Version, UInt32 Error)	Stop		Startupofthedrivermanagerservice.	Critical		
+Microsoft-Windows-DriverFrameworks-UserMode	1001	2	Startupofthedrivermanagerservice.Stop_V2(UInt32 Error)	Stop		Startupofthedrivermanagerservice.	Critical		
 Microsoft-Windows-DriverFrameworks-UserMode	1002	1	Startupofthedrivermanagerservice.Stop1002_V1()	Stop		Startupofthedrivermanagerservice.	Informational		
 Microsoft-Windows-DriverFrameworks-UserMode	1003	1	Creationofanewdriverhostprocess.Start_V1(GUID LifetimeId, UnicodeString HostGuid, UnicodeString InstanceId)	Start		Creationofanewdriverhostprocess.	Informational		
 Microsoft-Windows-DriverFrameworks-UserMode	1004	1	Creationofanewdriverhostprocess.Stop_V1(GUID LifetimeId, UInt32 FinalStatus)	Stop		Creationofanewdriverhostprocess.	Informational		

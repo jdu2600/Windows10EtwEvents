@@ -511,8 +511,6 @@ Microsoft-IE	622	0	Mshtml_CDoc_OnUserVisibilityChangedStart(Boolean Visible, Boo
 Microsoft-IE	623	0	Mshtml_CDoc_OnUserVisibilityChangedStop(Boolean Visible, Boolean IsDocInvisible)	Stop	mshtml	Mshtml_CDoc_OnUserVisibilityChanged	Always		
 Microsoft-IE	624	0	Mshtml_SetStyle(UInt64 ElementDDTId, UnicodeString StyleProperty, UnicodeString NewValue)		verbose	Mshtml_SetStyle	Always		
 Microsoft-IE	637	0	Mshtml_CGarbageTracker_CollectGarbage(Pointer CGarbageTracker, UInt32 ResourceType, UInt32 Reason, UInt32 RequestedGCType, UInt32 GCType)		mshtml	Mshtml_CGarbageTracker_CollectGarbage	Always		
-Microsoft-IE	638	0	Mshtml_CDoc_PrepareForResizeStart()	Start	mshtml	Mshtml_CDoc_PrepareForResize	Always		
-Microsoft-IE	639	0	Mshtml_CDoc_PrepareForResizeStop()	Stop	mshtml	Mshtml_CDoc_PrepareForResize	Always		
 Microsoft-IE	640	0	Mshtml_CDoc_HostPaintUpdateNotificationStart(Pointer CDoc, Pointer PrimaryCMarkup, UInt32 SourceContext)	Start	mshtml	Mshtml_CDoc_HostPaintUpdateNotification	Always		
 Microsoft-IE	641	0	Mshtml_CDoc_HostPaintUpdateNotificationStop(Pointer CDoc, Pointer PrimaryCMarkup, UInt32 SourceContext)	Stop	mshtml	Mshtml_CDoc_HostPaintUpdateNotification	Always		
 Microsoft-IE	642	0	Mshtml_CDoc_HostPaintUpdateNotification_IgnoredRequest(Pointer CDoc, Pointer PrimaryCMarkup, UInt32 SourceContext)		mshtml	Mshtml_CDoc_HostPaintUpdateNotification_IgnoredRequest	Always		
@@ -663,14 +661,64 @@ Microsoft-IE	783	0	Mshtml_Media_Capture_Sample_Requested(UInt64 SampleRequstedCo
 Microsoft-IE	784	0	Mshtml_Media_Capture_Sample_Delivered(UInt64 SampleRequstedCount, UInt64 SampleDeliveredCount, UInt64 SampleReceivedCount, UInt64 SampleDroppedCount, UInt32 TrackKind, Pointer ThisPtr)		mshtml	Mshtml_Media_Capture_Sample_Delivered	Always		
 Microsoft-IE	785	0	Mshtml_Media_Capture_Sample_Received(UInt64 SampleRequstedCount, UInt64 SampleDeliveredCount, UInt64 SampleReceivedCount, UInt64 SampleDroppedCount, UInt32 TrackKind, Pointer ThisPtr)		mshtml	Mshtml_Media_Capture_Sample_Received	Always		
 Microsoft-IE	786	0	Mshtml_Media_Capture_Sample_Dropped(UInt64 SampleRequstedCount, UInt64 SampleDeliveredCount, UInt64 SampleReceivedCount, UInt64 SampleDroppedCount, UInt32 TrackKind, Pointer ThisPtr)		mshtml	Mshtml_Media_Capture_Sample_Dropped	Always		
-Microsoft-IE	800	0	IndexedDBServerStart(UnicodeString MethodName)	Start		IndexedDBServer	Informational		
-Microsoft-IE	801	0	IndexedDBServerStop(UnicodeString MethodName, UInt32 HR)	Stop		IndexedDBServer	Informational		
-Microsoft-IE	802	0	IndexedDBServerStart802(UnicodeString MethodName)	Start		IndexedDBServer	Informational		
-Microsoft-IE	803	0	IndexedDBServerStop803(UnicodeString MethodName, UInt32 HR)	Stop		IndexedDBServer	Informational		
-Microsoft-IE	804	0	IndexedDBServer(UnicodeString Reason)			IndexedDBServer	Informational		
-Microsoft-IE	805	0	IndexedDBServer805(UnicodeString HandleType)			IndexedDBServer	Informational		
-Microsoft-IE	806	0	IndexedDBServer806(UInt32 HR)			IndexedDBServer	Informational		
-Microsoft-IE	807	0	IndexedDBServer807(UnicodeString ProcessName, UInt32 PID, UnicodeString FileName)			IndexedDBServer	Informational		
+Microsoft-IE	787	0	Mshtml_CStorage787(UnicodeString Domain)		mshtml	Mshtml_CStorage	Always		
+Microsoft-IE	800	0	WebPlatStorageServerStart(UnicodeString MethodName)	Start		WebPlatStorageServer	Informational		
+Microsoft-IE	801	0	WebPlatStorageServerStop(UnicodeString MethodName, UInt32 HR)	Stop		WebPlatStorageServer	Informational		
+Microsoft-IE	802	0	WebPlatStorageServerStart802(UnicodeString MethodName)	Start		WebPlatStorageServer	Informational		
+Microsoft-IE	803	0	WebPlatStorageServerStop803(UnicodeString MethodName, UInt32 HR)	Stop		WebPlatStorageServer	Informational		
+Microsoft-IE	804	0	WebPlatStorageServer(UnicodeString Reason)			WebPlatStorageServer	Informational		
+Microsoft-IE	805	0	WebPlatStorageServer805(UnicodeString HandleType)			WebPlatStorageServer	Informational		
+Microsoft-IE	806	0	WebPlatStorageServer806(UInt32 HR)			WebPlatStorageServer	Informational		
+Microsoft-IE	807	0	WebPlatStorageServer807(UnicodeString ProcessName, UInt32 PID, UnicodeString FileName)			WebPlatStorageServer	Informational		
 Microsoft-IE	808	0	Mshtml_AlignedTimer_ProcessingStart(UInt64 CurrentRound, UInt64 CallsToProcess, UInt64 CurrentTimeMs)	Start	paintbeat	Mshtml_AlignedTimer_Processing	Always		
 Microsoft-IE	809	0	Mshtml_AlignedTimer_ProcessingStop(UInt64 CurrentRound, UInt64 CallsToProcess, UInt64 CurrentTimeMs)	Stop	paintbeat	Mshtml_AlignedTimer_Processing	Always		
 Microsoft-IE	810	2	Mshtml_AlignedTimer_Fire810_V2(Pointer Object, UInt32 TimerId, Int32 DeltaMs, Int32 PeriodMs, UInt64 CurrentTimeMs, HexInt32 Flags, Pointer Callback, Boolean Visibility, UInt32 TimerRound)		paintbeat	Mshtml_AlignedTimer_Fire	Always		
+Microsoft-IE	811	0	Mshtml_CBase_AddPrivateRef(Pointer JsVarInstance, Pointer ThisPointer, UInt32 SSN, UInt32 RefAfterChange)		privaterefcount	Mshtml_CBase_AddPrivateRef	Always		
+Microsoft-IE	812	0	Mshtml_CBase_ReleasePrivateRef(Pointer JsVarInstance, Pointer ThisPointer, UInt32 SSN, UInt32 RefAfterChange)		privaterefcount	Mshtml_CBase_ReleasePrivateRef	Always		
+Microsoft-IE	813	0	Mshtml_CBase_AddInternalRef(Pointer JsVarInstance, Pointer ThisPointer, UInt32 SSN, UInt32 RefAfterChange)		internalrefcount	Mshtml_CBase_AddInternalRef	Always		
+Microsoft-IE	814	0	Mshtml_CBase_ReleaseInternalRef(Pointer JsVarInstance, Pointer ThisPointer, UInt32 SSN, UInt32 RefAfterChange)		internalrefcount	Mshtml_CBase_ReleaseInternalRef	Always		
+Microsoft-IE	815	0	Mshtml_CBase_AddSubRef(Pointer JsVarInstance, Pointer ThisPointer, UInt32 SSN, UInt32 RefAfterChange)		subrefcount	Mshtml_CBase_AddSubRef	Always		
+Microsoft-IE	816	0	Mshtml_CBase_ReleaseSubRef(Pointer JsVarInstance, Pointer ThisPointer, UInt32 SSN, UInt32 RefAfterChange)		subrefcount	Mshtml_CBase_ReleaseSubRef	Always		
+Microsoft-IE	817	0	WebPlatStorageServer_Handle(UInt8 StorageCategory, UInt32 HandleType, Pointer Handle)			WebPlatStorageServer_Handle	Informational		
+Microsoft-IE	818	0	WebPlatStorageServer_Handle818(UInt8 StorageCategory, UInt32 HandleType, Pointer Handle)			WebPlatStorageServer_Handle	Informational		
+Microsoft-IE	819	0	WebPlatStorageServer_Handle819(UInt8 StorageCategory, UInt32 HandleType, Pointer Handle)			WebPlatStorageServer_Handle	Informational		
+Microsoft-IE	820	0	WebPlatStorageServer_RPC_MethodStart(UInt8 StorageCategory, UInt32 Method)	Start		WebPlatStorageServer_RPC_Method	Informational		
+Microsoft-IE	821	0	WebPlatStorageServer_RPC_MethodStop(UInt8 StorageCategory, UInt32 Method, UInt32 HR)	Stop		WebPlatStorageServer_RPC_Method	Informational		
+Microsoft-IE	822	0	Mshtml_Gwnd_TaskStart(AnsiString TaskName, Pointer ObjectPointer, UInt32 DelayTime)	Start	gwnd	Mshtml_Gwnd_Task	Always		
+Microsoft-IE	823	0	Mshtml_Gwnd_TaskStop(AnsiString TaskName, UInt32 ScriptExecutionTime, Boolean IsIgnoredInTelemetry)	Stop	gwnd	Mshtml_Gwnd_Task	Always		
+Microsoft-IE	824	0	Mshtml_Gwnd_Task_Queued(AnsiString TaskName, Pointer ObjectPointer)		gwnd	Mshtml_Gwnd_Task_Queued	Always		
+Microsoft-IE	825	0	Mshtml_Input_TaskStart(AnsiString TaskName, Pointer ObjectPointer, UInt32 DelayTime)	Start	gwnd	Mshtml_Input_Task	Always		
+Microsoft-IE	826	0	Mshtml_Input_TaskStop(AnsiString TaskName, UInt32 ScriptExecutionTime, Boolean IsIgnoredInTelemetry)	Stop	gwnd	Mshtml_Input_Task	Always		
+Microsoft-IE	827	0	Mshtml_Aligned_RAF_Fire(Pointer WindowObject)		paintbeat	Mshtml_Aligned_RAF_Fire	Always		
+Microsoft-IE	828	0	Mshtml_Aligned_RAF_Enabled(Pointer WindowObject)		paintbeat	Mshtml_Aligned_RAF_Enabled	Always		
+Microsoft-IE	829	0	Mshtml_Aligned_RAF_Disabled(Pointer WindowObject)		paintbeat	Mshtml_Aligned_RAF_Disabled	Always		
+Microsoft-IE	830	0	Mshtml_Query_App_Link_Support_TaskStart(UnicodeString URL)	Start	mshtml	Mshtml_Query_App_Link_Support_Task	Always		
+Microsoft-IE	831	0	Mshtml_Query_App_Link_Support_TaskStop(UnicodeString URL)	Stop	mshtml	Mshtml_Query_App_Link_Support_Task	Always		
+Microsoft-IE	832	0	Mshtml_Launch_Uri_Async_Task(UnicodeString URL)		mshtml	Mshtml_Launch_Uri_Async_Task	Always		
+Microsoft-IE	833	0	Mshtml_EventLoop_QueueSentinel(Int32 Priority)		gwnd	Mshtml_EventLoop_QueueSentinel	Always		
+Microsoft-IE	834	0	Mshtml_EventLoop_OnSentinelFired(Int32 Priority, Int32 NestingLevel)		gwnd	Mshtml_EventLoop_OnSentinelFired	Always		
+Microsoft-IE	835	0	Mshtml_EventLoop_RunReadiedTasksStart(Int32 TaskQueueIndex, Int32 NestingLevel, UInt64 TaskConsideredReadyTimeInUs)	Start	gwnd	Mshtml_EventLoop_RunReadiedTasks	Always		
+Microsoft-IE	836	0	Mshtml_EventLoop_RunReadiedTasksStop(Int32 TaskQueueIndex, Int32 NestingLevel, UInt64 TaskConsideredReadyTimeInUs)	Stop	gwnd	Mshtml_EventLoop_RunReadiedTasks	Always		
+Microsoft-IE	837	0	Mshtml_EventLoop_PerformMicrotaskCheckpointStart(Boolean IsPerformingMicrotaskCheckpoint)	Start	gwnd	Mshtml_EventLoop_PerformMicrotaskCheckpoint	Always		
+Microsoft-IE	838	0	Mshtml_EventLoop_PerformMicrotaskCheckpointStop(Boolean IsPerformingMicrotaskCheckpoint)	Stop	gwnd	Mshtml_EventLoop_PerformMicrotaskCheckpoint	Always		
+Microsoft-IE	839	0	Mshtml_EventLoop_YieldTaskExecution(Int32 TaskQueueIndex, Int32 PendingTaskCount)		gwnd	Mshtml_EventLoop_YieldTaskExecution	Always		
+Microsoft-IE	840	0	Mshtml_WebRTC_Ice_Connection_State(UnicodeString State, Pointer ThisPtr)		mshtml	Mshtml_WebRTC_Ice_Connection_State	Always		
+Microsoft-IE	841	0	Mshtml_WebRTC_Ice_Gathering_State(UnicodeString State, Pointer ThisPtr)		mshtml	Mshtml_WebRTC_Ice_Gathering_State	Always		
+Microsoft-IE	842	0	Mshtml_WebRTC_Signaling_State(UnicodeString State, Pointer ThisPtr)		mshtml	Mshtml_WebRTC_Signaling_State	Always		
+Microsoft-IE	843	0	Mshtml_WebRTC_Gathered_Ice_Candidate(UnicodeString Candidate, UnicodeString Mid, UInt16 SdpMLineIndex, Pointer ThisPtr)		mshtml	Mshtml_WebRTC_Gathered_Ice_Candidate	Always		
+Microsoft-IE	844	0	Mshtml_WebRTC_Add_Ice_Candidate(UnicodeString Candidate, UnicodeString Mid, UInt16 SdpMLineIndex, Pointer ThisPtr)		mshtml	Mshtml_WebRTC_Add_Ice_Candidate	Always		
+Microsoft-IE	845	0	Mshtml_ElementFromPointCache_Hit(Pointer WindowObject, Float X, Float Y, Int32 Flags, Pointer DocumentObject, Boolean RelativeToLayoutViewport, Boolean SameMarkup, Boolean ClipToViewport)		mshtml	Mshtml_ElementFromPointCache_Hit	Always		
+Microsoft-IE	846	0	Mshtml_ElementFromPointCache_Miss(Pointer WindowObject, Float X, Float Y, Int32 Flags, Pointer DocumentObject, Boolean RelativeToLayoutViewport, Boolean SameMarkup, Boolean ClipToViewport)		mshtml	Mshtml_ElementFromPointCache_Miss	Always		
+Microsoft-IE	847	0	Mshtml_PowerStateController_Register(Pointer CPowerStateController, Pointer CDoc)		mshtml	Mshtml_PowerStateController_Register	Always		
+Microsoft-IE	848	0	Mshtml_PowerStateController_Unregister(Pointer CPowerStateController, Pointer CDoc)		mshtml	Mshtml_PowerStateController_Unregister	Always		
+Microsoft-IE	849	0	Mshtml_PowerStateController_Visible(Pointer CPowerStateController, Pointer CDoc)		mshtml	Mshtml_PowerStateController_Visible	Always		
+Microsoft-IE	850	0	Mshtml_PowerStateController_Invisible(Pointer CPowerStateController, Pointer CDoc)		mshtml	Mshtml_PowerStateController_Invisible	Always		
+Microsoft-IE	851	0	Mshtml_PowerStateController_LowPowerState(Pointer CPowerStateController, Pointer CDoc)		mshtml	Mshtml_PowerStateController_LowPowerState	Always		
+Microsoft-IE	852	0	Mshtml_PowerStateController_NormalPowerState(Pointer CPowerStateController, Pointer CDoc)		mshtml	Mshtml_PowerStateController_NormalPowerState	Always		
+Microsoft-IE	853	0	Mshtml_EventLoop_MessageGroupCallbackRePost()		gwnd	Mshtml_EventLoop_MessageGroupCallbackRePost	Always		
+Microsoft-IE	854	0	Mshtml_EventLoop_MessageGroupCallbackStop(Boolean AllowExecution)		gwnd	Mshtml_EventLoop_MessageGroupCallbackStop	Always		
+Microsoft-IE	855	0	Mshtml_EventLoop_MessageGroupEnable()		gwnd	Mshtml_EventLoop_MessageGroupEnable	Always		
+Microsoft-IE	856	0	Mshtml_EventLoop_MessageGroupAlreadyQueued()		gwnd	Mshtml_EventLoop_MessageGroupAlreadyQueued	Always		
+Microsoft-IE	857	0	Mshtml_EventLoop_DriveRegularTasksFromLow(Boolean CancelledLowPri)		gwnd	Mshtml_EventLoop_DriveRegularTasksFromLow	Always		
+Microsoft-IE	858	0	Mshtml_EventLoop_DriveRegularTasks()		gwnd	Mshtml_EventLoop_DriveRegularTasks	Always		
+Microsoft-IE	859	0	JScript_Parse_Script(Pointer Element, UInt32 Zero)		jscript	JScript_Parse_Script	Always		

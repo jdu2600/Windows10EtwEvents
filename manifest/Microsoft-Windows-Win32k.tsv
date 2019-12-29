@@ -146,7 +146,7 @@ Microsoft-Windows-Win32k	147	0	PointerUpdateSetTargetWindowsStart()	Start	Pointe
 Microsoft-Windows-Win32k	148	0	PointerUpdateSetTargetWindowsStop()	Stop	PointerInput	PointerUpdateSetTargetWindows	Verbose		
 Microsoft-Windows-Win32k	149	0	InputQueueNoRemoveLockerStop(Int8 CallbackCount, Pointer pQueue, UInt32 ownerThread)	Stop	MessagePumpInternalAndInput	InputQueueNoRemoveLocker	Informational		
 Microsoft-Windows-Win32k	150	0	InputQueueLockedPeekRecursionStop(Int8 CallbackCount, Pointer pQueue, UInt32 ownerThread)	Stop	MessagePumpInternalAndInput	InputQueueLockedPeekRecursion	Informational		
-Microsoft-Windows-Win32k	151	0	DCompCommitBatch(UInt32 channelHandle, Pointer pBatch, UInt32 batchID)		Updates	DCompCommitBatch	Informational		
+Microsoft-Windows-Win32k	151	0	DCompCommitBatch(UInt32 channelHandle, Pointer pBatch, UInt32 batchID)		Updates Visualization	DCompCommitBatch	Informational		
 Microsoft-Windows-Win32k	152	0	DelegateInputUserCallbackStart(Int8 CallbackCount, Pointer pqmsg, Boolean WindowDelegated, Boolean WasWindowDelegated, Boolean Delegated, Boolean WasDelegated, Boolean Processed, Boolean fDelayedFree, Pointer hwnd, Pointer WParam, Pointer LParam, UInt32 message, UInt32 inputReadyTimeMs)	Start	MessagePumpInternalAndInput	DelegateInputUserCallback	Informational		
 Microsoft-Windows-Win32k	153	0	DelegateInputUserCallbackStop(Int8 CallbackCount, Pointer pqmsg, Boolean WindowDelegated, Boolean WasWindowDelegated, Boolean Delegated, Boolean WasDelegated, Boolean Processed, Boolean fDelayedFree, Pointer hwnd, Pointer WParam, Pointer LParam, UInt32 message, UInt32 inputReadyTimeMs)	Stop	MessagePumpInternalAndInput	DelegateInputUserCallback	Informational		
 Microsoft-Windows-Win32k	154	0	DelegatedInputWorkerStart(Int8 CallbackCount, Pointer pqmsg, Boolean WindowDelegated, Boolean WasWindowDelegated, Boolean Delegated, Boolean WasDelegated, Boolean Processed, Boolean fDelayedFree, Pointer hwnd, Pointer WParam, Pointer LParam, UInt32 message, UInt32 inputReadyTimeMs, UInt32 hdfResponse)	Start	MessagePumpInternalAndInput	DelegatedInputWorker	Informational		
@@ -157,7 +157,7 @@ Microsoft-Windows-Win32k	158	0	PointerMessageGenerationStop(UInt16 wCursorId, UI
 Microsoft-Windows-Win32k	159	0	PointerFrameCoalesce(UInt16 wCursorId, UInt16 wPointerId, UInt32 dwReason)		PointerInput	PointerFrameCoalesce	Informational		
 Microsoft-Windows-Win32k	160	0	SmoothRotationStart(UInt32 Orientation, Boolean SensorOriginated, UInt32 ActiveProcessId)	Start	UIUnresponsiveness AutoRotation	SmoothRotation	Informational		
 Microsoft-Windows-Win32k	161	0	SmoothRotationStop(UInt32 Orientation, Boolean SensorOriginated)	Stop	UIUnresponsiveness AutoRotation	SmoothRotation	Informational		
-Microsoft-Windows-Win32k	162	0	DCompGetBatch(Pointer pBatch)		Updates	DCompGetBatch	Informational		
+Microsoft-Windows-Win32k	162	0	DCompGetBatch(Pointer pBatch)		Updates Visualization	DCompGetBatch	Informational		
 Microsoft-Windows-Win32k	163	0	ExclusiveUserCrit(UInt64 AcquireQpcCounts, UInt32 AcquireTimeMs, UInt64 Token)		Contention	ExclusiveUserCrit	Informational		
 Microsoft-Windows-Win32k	164	0	ExclusiveUserCrit164(UInt64 AcquireQpcCounts, UInt32 AcquireTimeMs, UInt64 Token)		Contention	ExclusiveUserCrit	Informational		
 Microsoft-Windows-Win32k	165	0	SharedUserCrit(UInt64 AcquireQpcCounts, UInt32 AcquireTimeMs, UInt64 Token)		Contention	SharedUserCrit	Informational		
@@ -196,8 +196,8 @@ Microsoft-Windows-Win32k	197	0	PseudoDevCreationStop()	Stop	MessagePumpInternalA
 Microsoft-Windows-Win32k	198	0	TouchHWTimeStamp(Int32 ScanTime, Int32 dwTime, UInt64 QPC, Int32 XRawPosition, Int32 YRawPosition, Int32 XPredictedPosition, Int32 YPredictedPosition)		MessagePumpInternalAndInput	TouchHWTimeStamp	Informational		
 Microsoft-Windows-Win32k	199	0	PointerFrameCoalesce199(UInt16 wCursorId, UInt16 wPointerId, UInt32 dwReason)		PointerInput	PointerFrameCoalesce	Informational		
 Microsoft-Windows-Win32k	200	0	PointerFrameCoalesce200(UInt16 wCursorId, UInt16 wPointerId, UInt32 dwReason)		PointerInput	PointerFrameCoalesce	Informational		
-Microsoft-Windows-Win32k	201	0	TokenCompositionSurfaceObject(Pointer pToken, Pointer pCompositionSurfaceObject, UInt32 SwapChainIndex, UInt64 PresentCount, UInt64 CompositionSurfaceLuid, UInt64 BindId)		Updates	TokenCompositionSurfaceObject	Informational		
-Microsoft-Windows-Win32k	202	0	CompositionSurfaceObjectUpdate(Pointer pCompositionSurfaceObject, UInt32 SwapChainIndex)		Updates	CompositionSurfaceObjectUpdate	Informational		
+Microsoft-Windows-Win32k	201	0	TokenCompositionSurfaceObject(Pointer pToken, Pointer pCompositionSurfaceObject, UInt32 SwapChainIndex, UInt64 PresentCount, UInt64 CompositionSurfaceLuid, UInt64 BindId)		Updates Visualization	TokenCompositionSurfaceObject	Informational		
+Microsoft-Windows-Win32k	202	0	CompositionSurfaceObjectUpdate(Pointer pCompositionSurfaceObject, UInt32 SwapChainIndex)		Updates Visualization	CompositionSurfaceObjectUpdate	Informational		
 Microsoft-Windows-Win32k	203	0	QueueEventMessage(Int8 CallbackCount, Pointer pqmsg, Pointer pti, UInt32 dwQEvent, Pointer hwnd)		MessagePumpInternalAndInput	QueueEventMessage	Informational		
 Microsoft-Windows-Win32k	204	0	RetrieveQueueEventMessage(Int8 CallbackCount, Pointer pqmsg, Pointer pti, UInt32 dwQEvent, Pointer hwnd)		MessagePumpInternalAndInput	RetrieveQueueEventMessage	Informational		
 Microsoft-Windows-Win32k	205	0	ForegroundWindowFullScreenStart()	Start	UIUnresponsiveness AutoRotation	ForegroundWindowFullScreen	Informational		
@@ -268,17 +268,33 @@ Microsoft-Windows-Win32k	414	0	DwmManipulationFrameStart(UInt32 FrameId, UInt32 
 Microsoft-Windows-Win32k	415	0	DwmManipulationFrameRouted(UInt32 FrameId, UInt32 PointerCount)		Updates	DwmManipulationFrameRouted	Informational		
 Microsoft-Windows-Win32k	416	0	ExclusiveUserCritTelemetry(UInt64 AcquireQpcCounts, UInt32 AcquireTimeMs, UInt64 Token)			ExclusiveUserCritTelemetry	Informational		
 Microsoft-Windows-Win32k	417	0	SharedUserCritTelemetry(UInt64 AcquireQpcCounts, UInt32 AcquireTimeMs, UInt64 Token)			SharedUserCritTelemetry	Informational		
-Microsoft-Windows-Win32k	418	0	PowerDisplayChange418(Int32 Location)		win32Power	PowerDisplayChange	Informational		
-Microsoft-Windows-Win32k	419	0	PowerDisplayChange419(Int32 Location)		win32Power	PowerDisplayChange	Informational		
-Microsoft-Windows-Win32k	420	0	PowerDisplayChange420(Int32 Location)		win32Power	PowerDisplayChange	Informational		
-Microsoft-Windows-Win32k	421	0	PowerDisplayChange421(Int32 Location)		win32Power	PowerDisplayChange	Informational		
-Microsoft-Windows-Win32k	422	0	PowerDisplayChange422(Int32 Location)		win32Power	PowerDisplayChange	Informational		
-Microsoft-Windows-Win32k	423	0	PowerDisplayChange423(Int32 Location)		win32Power	PowerDisplayChange	Informational		
-Microsoft-Windows-Win32k	424	0	PowerDisplayChange424(Int32 Location)		win32Power	PowerDisplayChange	Informational		
-Microsoft-Windows-Win32k	425	0	PowerDisplayChange425(Int32 Location)		win32Power	PowerDisplayChange	Informational		
+Microsoft-Windows-Win32k	418	0	PowerDisplayChangeStart(Int32 Location)	Start	win32Power	PowerDisplayChange	Informational		
+Microsoft-Windows-Win32k	419	0	PowerDisplayChangeStop(Int32 Location)	Stop	win32Power	PowerDisplayChange	Informational		
+Microsoft-Windows-Win32k	420	0	PowerDisplayChangeStart420(Int32 Location)	Start	win32Power	PowerDisplayChange	Informational		
+Microsoft-Windows-Win32k	421	0	PowerDisplayChangeStop421(Int32 Location)	Stop	win32Power	PowerDisplayChange	Informational		
+Microsoft-Windows-Win32k	422	0	PowerDisplayChangeStart422(Int32 Location)	Start	win32Power	PowerDisplayChange	Informational		
+Microsoft-Windows-Win32k	423	0	PowerDisplayChangeStop423(Int32 Location)	Stop	win32Power	PowerDisplayChange	Informational		
+Microsoft-Windows-Win32k	424	0	PowerDisplayChangeStart424(Int32 Location)	Start	win32Power	PowerDisplayChange	Informational		
+Microsoft-Windows-Win32k	425	0	PowerDisplayChangeStop425(Int32 Location)	Stop	win32Power	PowerDisplayChange	Informational		
 Microsoft-Windows-Win32k	426	0	QueueNullPostMessage(UInt32 SourceProcessId, UInt32 SourceThreadId, AnsiString SourceProcessName, Pointer DestinationHwnd)		MessagePump NullMessages	QueueNullPostMessage	Informational		
-Microsoft-Windows-Win32k	427	0	SyscallFilterMessage(UInt32 SyscallNumber)			SyscallFilterMessage	Informational		
+Microsoft-Windows-Win32k	427	0	SyscallFilterMessage(AnsiString SyscallName, UnicodeString AppContainerSid, UnicodeString ProcessCommandLine)			SyscallFilterMessage	Informational		
 Microsoft-Windows-Win32k	428	0	SPIBlockedByFiltering(UInt32 SPIAction)			SPIBlockedByFiltering	Informational		
+Microsoft-Windows-Win32k	429	0	PowerWatchdogStart(UInt64 Instance, UInt32 WatchdogType)	Start	win32Power	PowerWatchdog	Informational		
+Microsoft-Windows-Win32k	430	0	PowerWatchdogStop(UInt64 Instance)	Stop	win32Power	PowerWatchdog	Informational		
+Microsoft-Windows-Win32k	431	0	PowerRequestStart(Int32 CalloutType, UInt32 Status)	Start	win32Power	PowerRequest	Informational		
+Microsoft-Windows-Win32k	432	0	PowerRequestStop(Int32 CalloutType, UInt32 Status)	Stop	win32Power	PowerRequest	Informational		
+Microsoft-Windows-Win32k	433	0	PowerRequestStart433(Int32 PowerTaskState, UInt32 Status)	Start	win32Power	PowerRequest	Informational		
+Microsoft-Windows-Win32k	434	0	PowerRequestStop434(Int32 PowerTaskState, UInt32 Status)	Stop	win32Power	PowerRequest	Informational		
+Microsoft-Windows-Win32k	435	0	PowerRequestStart435(Int32 EventNumber, UInt64 Code, UInt32 Status)	Start	win32Power	PowerRequest	Informational		
+Microsoft-Windows-Win32k	436	0	PowerRequestStop436(Int32 EventNumber, UInt64 Code, UInt32 Status)	Stop	win32Power	PowerRequest	Informational		
+Microsoft-Windows-Win32k	437	0	PowerRequestStart437(UInt64 Address, Int32 EventNumber, UInt64 Code)	Start	win32Power	PowerRequest	Informational		
+Microsoft-Windows-Win32k	438	0	PowerRequest(UInt64 Address, UInt32 Status)		win32Power	PowerRequest	Informational		
+Microsoft-Windows-Win32k	439	0	PowerRequest439(UInt64 Address, UInt32 Status)		win32Power	PowerRequest	Informational		
+Microsoft-Windows-Win32k	440	0	PowerRequestStop440(UInt64 Address, UInt32 Status)	Stop	win32Power	PowerRequest	Informational		
+Microsoft-Windows-Win32k	441	0	PowerRequestStart441(Boolean NeedWaitForRit, Boolean NeedPowerOnGdi)	Start	win32Power	PowerRequest	Informational		
+Microsoft-Windows-Win32k	442	0	PowerRequestStop442()	Stop	win32Power	PowerRequest	Informational		
+Microsoft-Windows-Win32k	443	0	DCompResourceMapping(UInt32 Channel, UInt32 InternalHandle, UInt32 ExternalHandle, UInt32 ResourceType)		DCompDetails	DCompResourceMapping	Informational		
+Microsoft-Windows-Win32k	444	0	DCompResourcePropertyUpdate(UInt32 Channel, UInt32 InternalHandle, UInt32 ExternalHandle, UInt32 ResourceType, UInt32 PropertyId)		Updates Visualization	DCompResourcePropertyUpdate	Informational		
 Microsoft-Windows-Win32k	1000	0	task_01000(UInt32 eventMin, UInt32 eventMax, UInt32 idEventProcess, UInt32 idEventThread, UInt32 Flags, Pointer HookInstance)		AuditApiCalls	task_0	Informational		
 Microsoft-Windows-Win32k	1001	0	task_01001(UInt32 ReturnValue)		AuditApiCalls	task_0	Informational		
 Microsoft-Windows-Win32k	10002	0	WindowLayoutChangeStop(UInt32 hWnd, UInt32 Packed_High_Height_Low_Width, UnicodeString PRAID, UnicodeString PackageFullName)	Stop		WindowLayoutChange	Informational		

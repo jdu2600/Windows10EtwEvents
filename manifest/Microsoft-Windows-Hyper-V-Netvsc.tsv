@@ -19,6 +19,15 @@ Microsoft-Windows-Hyper-V-Netvsc	17	0	task_017(UInt32 Status, UInt32 DropReason)
 Microsoft-Windows-Hyper-V-Netvsc	34	0	PdApi(Pointer ClientContext)			PdApi	Informational		
 Microsoft-Windows-Hyper-V-Netvsc	35	0	PdApi35(UInt32 Status, Pointer ClientContext)			PdApi	Error		
 Microsoft-Windows-Hyper-V-Netvsc	36	0	PdApi36(Pointer ClientContext)			PdApi	Informational		
-Microsoft-Windows-Hyper-V-Netvsc	37	0	NdkOpenAdapter(UInt32 Status, UInt32 failureReason)			NdkOpenAdapter	Error		
-Microsoft-Windows-Hyper-V-Netvsc	38	0	NdkPnPEvent(UInt32 Status, UInt32 failureReason)			NdkPnPEvent	Error		
+Microsoft-Windows-Hyper-V-Netvsc	37	0	NdkOpenAdapter(UInt32 Status, UInt32 failureReason, UInt32 MiniportNameLen, UnicodeString MiniportName)			NdkOpenAdapter	Error		
+Microsoft-Windows-Hyper-V-Netvsc	38	0	NdkPnPEvent(UInt32 Status, UInt32 NetEvent, UInt32 failureReason, UInt32 MiniportNameLen, UnicodeString MiniportName)			NdkPnPEvent	Error		
 Microsoft-Windows-Hyper-V-Netvsc	39	0	VfBindAdapter(UInt32 Status, UInt32 failureReason)			VfBindAdapter	Error		
+Microsoft-Windows-Hyper-V-Netvsc	40	0	task_040(UInt32 Task, UInt32 MemoryRequired)			task_0	Error		
+Microsoft-Windows-Hyper-V-Netvsc	41	0	task_041(UInt32 Status, Boolean RequestHandled, UInt32 IfIndex, UInt32 MiniportNameLen, UnicodeString MiniportName, UInt32 VfAdapterNameLen, UnicodeString VfAdapterName)			task_0	Informational		
+Microsoft-Windows-Hyper-V-Netvsc	42	0	task_042(UInt32 Status, Boolean RequestHandled, UInt32 IfIndex, UInt32 MiniportNameLen, UnicodeString MiniportName, UInt32 VfAdapterNameLen, UnicodeString VfAdapterName)			task_0	Error		
+Microsoft-Windows-Hyper-V-Netvsc	43	0	task_043(UInt32 Status, UInt32 NetEvent, UInt32 failureReason, UInt32 MiniportNameLen, UnicodeString MiniportName)			task_0	Informational		
+Microsoft-Windows-Hyper-V-Netvsc	44	0	task_044(UInt32 Status, Boolean NdkEnabled, UInt32 MiniportNameLen, UnicodeString MiniportName)			task_0	Informational		
+Microsoft-Windows-Hyper-V-Netvsc	45	0	task_045(UInt32 Status, Boolean NdkEnabled, UInt32 MiniportNameLen, UnicodeString MiniportName)			task_0	Error		
+Microsoft-Windows-Hyper-V-Netvsc	46	0	task_046(UInt32 VfAdapterNameLen, UnicodeString VfAdapterName)			task_0	Informational		
+Microsoft-Windows-Hyper-V-Netvsc	47	0	task_047(UInt32 VfAdapterNameLen, UnicodeString VfAdapterName)			task_0	Informational		
+Microsoft-Windows-Hyper-V-Netvsc	48	0	task_048(UInt32 VfAdapterNameLen, UnicodeString VfAdapterName)			task_0	Warning		

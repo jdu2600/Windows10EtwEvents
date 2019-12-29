@@ -2,15 +2,15 @@ provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channe
 Microsoft-Windows-SENSE	1	0	task_0(UnicodeString parameter)			task_0	Informational		
 Microsoft-Windows-SENSE	2	0	task_02()			task_0	Informational		
 Microsoft-Windows-SENSE	3	0	task_03(HexInt32 HRESULT)			task_0	Error		
-Microsoft-Windows-SENSE	4	0	task_04(UnicodeString parameter)			task_0	Informational		
-Microsoft-Windows-SENSE	5	0	task_05(UnicodeString parameter)			task_0	Warning		
+Microsoft-Windows-SENSE	4	0	task_04(UInt64 UInt1, UnicodeString Message1)			task_0	Informational		
+Microsoft-Windows-SENSE	5	0	task_05(UInt64 UInt1, UnicodeString Message1, Int32 Int1)			task_0	Error		
 Microsoft-Windows-SENSE	6	0	task_06()			task_0	Error		
 Microsoft-Windows-SENSE	7	0	task_07(UnicodeString parameter)			task_0	Error		
-Microsoft-Windows-SENSE	8	0	task_08(HexInt32 HRESULT)			task_0	Error		
+Microsoft-Windows-SENSE	8	0	task_08()			task_0	Error		
 Microsoft-Windows-SENSE	9	0	task_09(HexInt32 HRESULT)			task_0	Error		
 Microsoft-Windows-SENSE	10	0	task_010(HexInt32 HRESULT)			task_0	Error		
 Microsoft-Windows-SENSE	11	0	task_011()			task_0	Informational		
-Microsoft-Windows-SENSE	12	0	task_012()			task_0	Error		
+Microsoft-Windows-SENSE	12	0	task_012(UnicodeString parameter1, UnicodeString parameter2)			task_0	Error		
 Microsoft-Windows-SENSE	13	0	task_013(UnicodeString parameter)			task_0	Informational		
 Microsoft-Windows-SENSE	14	0	task_014(HexInt32 HRESULT)			task_0	Error		
 Microsoft-Windows-SENSE	15	0	task_015(UnicodeString parameter)			task_0	Error		
@@ -21,24 +21,76 @@ Microsoft-Windows-SENSE	20	0	task_020(HexInt32 HRESULT)			task_0	Error
 Microsoft-Windows-SENSE	25	0	task_025(HexInt32 HRESULT)			task_0	Error		
 Microsoft-Windows-SENSE	26	0	task_026(HexInt32 HRESULT)			task_0	Error		
 Microsoft-Windows-SENSE	27	0	task_027(HexInt32 HRESULT)			task_0	Error		
-Microsoft-Windows-SENSE	28	0	task_028(HexInt32 HRESULT)			task_0	Error		
-Microsoft-Windows-SENSE	29	0	task_029(UnicodeString parameter)			task_0	Error		
+Microsoft-Windows-SENSE	28	0	task_028(HexInt32 HRESULT, Int32 diskSizeQuotaValue, Int32 dailyUploadQuotaValue)			task_0	Error		
+Microsoft-Windows-SENSE	29	0	task_029(Int32 errorType, HexInt32 HRESULT, UnicodeString description)			task_0	Error		
 Microsoft-Windows-SENSE	30	0	task_030(HexInt32 HRESULT)			task_0	Error		
 Microsoft-Windows-SENSE	31	0	task_031(HexInt32 HRESULT)			task_0	Error		
 Microsoft-Windows-SENSE	32	0	task_032(HexInt32 HRESULT)			task_0	Error		
 Microsoft-Windows-SENSE	33	0	task_033(HexInt32 HRESULT)			task_0	Error		
-Microsoft-Windows-SENSE	34	0	task_034(HexInt32 HRESULT)			task_0	Error		
-Microsoft-Windows-SENSE	35	0	task_035(HexInt32 HRESULT)			task_0	Error		
-Microsoft-Windows-SENSE	36	0	task_036(HexInt32 HRESULT)			task_0	Informational		
+Microsoft-Windows-SENSE	36	0	task_036(HexInt32 HRESULT, Int32 diskSizeQuotaValue, Int32 dailyUploadQuotaValue)			task_0	Informational		
 Microsoft-Windows-SENSE	37	0	task_037(UnicodeString module, Int32 quotaValue, UnicodeString quotaValueUnit, Int32 percentageValue)			task_0	Informational		
-Microsoft-Windows-SENSE	38	0	task_038(UInt16 pollingInterval, Boolean meteredConnectionState, Boolean internetAvailabilityState, Boolean freeNetworkAvailabilityState)			task_0	Informational		
-Microsoft-Windows-SENSE	39	0	task_039(UInt16 pollingInterval, Boolean meteredConnectionState, Boolean internetAvailabilityState, Boolean freeNetworkAvailabilityState)			task_0	Informational		
-Microsoft-Windows-SENSE	40	0	task_040(UInt16 pollingInterval, UInt8 powerStateChangeType)			task_0	Informational		
-Microsoft-Windows-SENSE	41	0	task_041(UInt16 pollingInterval, UInt8 powerStateChangeType)			task_0	Informational		
+Microsoft-Windows-SENSE	38	0	task_038(UInt16 pollingInterval, Boolean meteredConnectionState, Boolean internetAvailabilityState, Boolean freeNetworkAvailabilityState, Boolean proxyDefined)			task_0	Informational		
+Microsoft-Windows-SENSE	39	0	task_039(UInt16 pollingInterval, Boolean meteredConnectionState, Boolean internetAvailabilityState, Boolean freeNetworkAvailabilityState, Boolean proxyDefined)			task_0	Informational		
+Microsoft-Windows-SENSE	40	0	task_040(UInt16 pollingInterval, Boolean acPowerState, Boolean batterySavingState, Boolean batteryLowState, Boolean batteryCriticalState)			task_0	Informational		
+Microsoft-Windows-SENSE	41	0	task_041(UInt16 pollingInterval, Boolean acPowerState, Boolean batterySavingState, Boolean batteryLowState, Boolean batteryCriticalState)			task_0	Informational		
 Microsoft-Windows-SENSE	42	0	task_042(AnsiString Component, UnicodeString Operation, AnsiString ExceptionType, AnsiString ExceptionMessage)			task_0	Error		
-Microsoft-Windows-SENSE	43	0	task_043(AnsiString Component, UnicodeString Operation, AnsiString ExceptionType, HexInt32 ExceptionErrorCode, UnicodeString ExceptionMessage)			task_0	Error		
+Microsoft-Windows-SENSE	43	0	task_043(AnsiString Component, UnicodeString Operation, AnsiString ExceptionType, HexInt32 ExceptionErrorCode, AnsiString ExceptionMessage)			task_0	Error		
 Microsoft-Windows-SENSE	44	0	task_044()			task_0	Informational		
 Microsoft-Windows-SENSE	45	0	task_045(UnicodeString TraceSessionName, HexInt32 HRESULT)			task_0	Error		
 Microsoft-Windows-SENSE	46	0	task_046(UnicodeString TraceSessionName, HexInt32 HRESULT)			task_0	Error		
 Microsoft-Windows-SENSE	47	0	task_047()			task_0	Informational		
 Microsoft-Windows-SENSE	48	0	task_048(UnicodeString ProviderId, UnicodeString TraceSessionName, HexInt32 ErrorCode)			task_0	Warning		
+Microsoft-Windows-SENSE	49	0	task_049(UnicodeString Version, UInt16 Status, HexInt64 HRESULT, UnicodeString ErrorMessage)			task_0	Warning		
+Microsoft-Windows-SENSE	50	0	task_050(UnicodeString parameter)			task_0	Informational		
+Microsoft-Windows-SENSE	51	0	task_051(UnicodeString parameter1, UnicodeString parameter2)			task_0	Warning		
+Microsoft-Windows-SENSE	52	0	task_052(UnicodeString parameter1, UnicodeString parameter2)			task_0	Warning		
+Microsoft-Windows-SENSE	53	0	task_053(UnicodeString parameter)			task_0	Informational		
+Microsoft-Windows-SENSE	54	0	task_054(HexInt32 Value1, HexInt32 Value2, UnicodeString Value3)			task_0	Informational		
+Microsoft-Windows-SENSE	55	0	task_055(HexInt32 HRESULT)			task_0	Error		
+Microsoft-Windows-SENSE	56	0	task_056(HexInt32 HRESULT)			task_0	Error		
+Microsoft-Windows-SENSE	57	0	task_057()		Trigger	task_0	Informational		
+Microsoft-Windows-SENSE	59	0	task_059(UnicodeString parameter)			task_0	Informational		
+Microsoft-Windows-SENSE	60	0	task_060(UnicodeString CommandName, HexInt64 HRESULT)			task_0	Warning		
+Microsoft-Windows-SENSE	61	0	task_061(UnicodeString SasUri, Int16 CompressionLevel)			task_0	Error		
+Microsoft-Windows-SENSE	62	0	task_062(HexInt32 HRESULT)			task_0	Error		
+Microsoft-Windows-SENSE	63	0	task_063(UnicodeString ServiceName, Int16 ActualStartType, Int16 ExpectedStartType, HexInt32 ErrorCode)			task_0	Warning		
+Microsoft-Windows-SENSE	64	0	task_064(UnicodeString ServiceName, HexInt32 ErrorCode)			task_0	Warning		
+Microsoft-Windows-SENSE	65	0	task_065(HexInt32 HRESULT)			task_0	Warning		
+Microsoft-Windows-SENSE	66	0	task_066(UnicodeString parameter)			task_0	Informational		
+Microsoft-Windows-SENSE	67	0	task_067(UInt64 UInt1, UInt64 UInt2, UInt64 UInt3, UnicodeString Message1, Int32 Int1)			task_0	Warning		
+Microsoft-Windows-SENSE	68	0	task_068(UnicodeString ServiceName, Int16 ActualStartType, Int16 ExpectedStartType)			task_0	Warning		
+Microsoft-Windows-SENSE	69	0	task_069(UnicodeString parameter)			task_0	Warning		
+Microsoft-Windows-SENSE	70	0	task_070(UInt32 UInt1)			task_0	Warning		
+Microsoft-Windows-SENSE	71	0	task_071(UnicodeString parameter)			task_0	Informational		
+Microsoft-Windows-SENSE	1800	0	task_01800(UInt32 UInt1, UnicodeString Message1)			task_0	Verbose		
+Microsoft-Windows-SENSE	1801	0	task_01801(UInt32 UInt1, UnicodeString Message1, HexInt32 HRESULT)			task_0	Error		
+Microsoft-Windows-SENSE	1802	0	task_01802(UInt32 UInt1, UnicodeString Message1, HexInt32 HRESULT)			task_0	Informational		
+Microsoft-Windows-SENSE	1803	0	task_01803(UnicodeString Message1, Boolean Boolean1)			task_0	Verbose		
+Microsoft-Windows-SENSE	1804	0	task_01804(UnicodeString Message1, Boolean Boolean1)			task_0	Verbose		
+Microsoft-Windows-SENSE	1805	0	task_01805(UInt32 UInt1)			task_0	Verbose		
+Microsoft-Windows-SENSE	1806	0	task_01806(UInt32 UInt1, Boolean Boolean1)			task_0	Verbose		
+Microsoft-Windows-SENSE	1807	0	task_01807(UInt64 onboardingBlobHash, Boolean isDefaultOnboardingBlob, UInt32 onboardingState, Boolean isDefaultOnboardingState)			task_0	Verbose		
+Microsoft-Windows-SENSE	1808	0	task_01808(UInt64 offboardingBlobHash, Boolean isDefaultOffboardingBlob)			task_0	Verbose		
+Microsoft-Windows-SENSE	1809	0	task_01809(UInt32 UInt1, Boolean Boolean1)			task_0	Verbose		
+Microsoft-Windows-SENSE	1810	0	task_01810()			task_0	Verbose		
+Microsoft-Windows-SENSE	1811	0	task_01811(HexInt32 HRESULT)			task_0	Verbose		
+Microsoft-Windows-SENSE	1812	0	task_01812(HexInt32 HRESULT)			task_0	Verbose		
+Microsoft-Windows-SENSE	1813	0	task_01813()			task_0	Verbose		
+Microsoft-Windows-SENSE	1814	0	task_01814(HexInt32 HRESULT)			task_0	Verbose		
+Microsoft-Windows-SENSE	1815	0	task_01815(UInt32 previousSampleCollectionValue, Boolean IsDefault, UInt32 newSampleSharing, HexInt32 HRESULT)			task_0	Verbose		
+Microsoft-Windows-SENSE	1816	0	task_01816(HexInt32 HRESULT)			task_0	Verbose		
+Microsoft-Windows-SENSE	1817	0	task_01817(HexInt32 HRESULT)			task_0	Verbose		
+Microsoft-Windows-SENSE	1818	0	task_01818(UInt32 UInt1, UnicodeString Message1)			task_0	Verbose		
+Microsoft-Windows-SENSE	1819	0	task_01819(UInt32 UInt1, UnicodeString Message1, HexInt32 HRESULT)			task_0	Error		
+Microsoft-Windows-SENSE	1820	0	task_01820(UInt32 UInt1, UnicodeString Message1, HexInt32 HRESULT)			task_0	Informational		
+Microsoft-Windows-SENSE	1821	0	task_01821(UInt32 UInt1)			task_0	Verbose		
+Microsoft-Windows-SENSE	1822	0	task_01822(UnicodeString previousLatencyMode, Boolean IsDefault, UnicodeString newLatencyMode, HexInt32 HRESULT)			task_0	Verbose		
+Microsoft-Windows-SENSE	1823	0	task_01823(UInt32 UInt1, UnicodeString Message1, Boolean Boolean1)			task_0	Verbose		
+Microsoft-Windows-SENSE	1824	0	task_01824(UnicodeString Message1, Boolean Boolean1)			task_0	Verbose		
+Microsoft-Windows-SENSE	1825	0	task_01825(UInt32 UInt1, UInt32 UInt2)			task_0	Error		
+Microsoft-Windows-SENSE	1826	0	task_01826(UnicodeString Message1, HexInt32 HRESULT)			task_0	Verbose		
+Microsoft-Windows-SENSE	1827	0	task_01827(Boolean isServiceRunningAlready, UInt64 previousOnboardingBlobHash, Boolean isDefaultOnboardingBlob, UInt32 onboardingState, Boolean isDefaultOnboardingState, UInt64 newOnboardingBlobHash)			task_0	Verbose		
+Microsoft-Windows-SENSE	1828	0	task_01828(Boolean isServiceRunning, UInt64 previousOffboardingBlobHash, Boolean isDefaultOffboardingBlob, UInt32 onboardingState, Boolean isDefaultOnboardingState, UInt64 newOffboardingBlobHash)			task_0	Verbose		
+Microsoft-Windows-SENSE	1829	0	task_01829(UInt32 requestedValue, UInt32 minimumAllowedValue, UInt32 maximumAllowedValue)			task_0	Error		
+Microsoft-Windows-SENSE	1830	0	task_01830(UInt32 UInt1)			task_0	Error		
+Microsoft-Windows-SENSE	1831	0	task_01831()			task_0	Warning		

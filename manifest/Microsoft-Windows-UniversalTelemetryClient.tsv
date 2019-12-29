@@ -1,7 +1,7 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-UniversalTelemetryClient	1	0	Tenant_Register(UnicodeString IKey, UInt32 DiskSizeInMb, UInt32 DailyUploadQuotaInMb, UInt32 HRESULT)		Tenant	Tenant_Register	Informational		
+Microsoft-Windows-UniversalTelemetryClient	1	0	Tenant_Register(UnicodeString IKey, UInt32 DiskSizeInBytes, UInt32 DailyUploadQuotaInBytes, UInt32 HRESULT)		Tenant	Tenant_Register	Informational		
 Microsoft-Windows-UniversalTelemetryClient	2	0	Tenant_Unregister(UnicodeString IKey, UInt32 HRESULT)		Tenant	Tenant_Unregister	Informational		
-Microsoft-Windows-UniversalTelemetryClient	3	0	Tenant_UpdateDailyUploadQuota(UnicodeString IKey, UInt32 DailyUploadQuotaInMb, UInt32 HRESULT)		Tenant	Tenant_UpdateDailyUploadQuota	Informational		
+Microsoft-Windows-UniversalTelemetryClient	3	0	Tenant_UpdateDailyUploadQuota(UnicodeString IKey, UInt32 DailyUploadQuotaInBytes, UInt32 HRESULT)		Tenant	Tenant_UpdateDailyUploadQuota	Informational		
 Microsoft-Windows-UniversalTelemetryClient	20	0	Upload_UrlChanged(UnicodeString Url)		Upload	Upload_UrlChanged	Informational		
 Microsoft-Windows-UniversalTelemetryClient	21	0	Upload_ConnectionError(UInt32 HRESULT)		Upload	Upload_ConnectionError	Informational		
 Microsoft-Windows-UniversalTelemetryClient	22	0	Upload_SevilleBandwidthMonitor_TierChange(UInt64 BytesUploadedSoFar, UInt64 BytesAllowed, UInt32 PercentageUsed, UInt32 NewTier, UInt32 OldTier)		Upload	Upload_SevilleBandwidthMonitor_TierChange	Informational		

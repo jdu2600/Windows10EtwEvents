@@ -647,12 +647,12 @@ Microsoft-Windows-Shell-Core	9666	0	Explorer_WriteDataForOEMApp_ShellTaskStop()	
 Microsoft-Windows-Shell-Core	9699	0	Explorer_Startup_InitializeDesktopStop()	Stop	Shell WDI	Explorer_Startup_InitializeDesktop	Informational		
 Microsoft-Windows-Shell-Core	9701	0	Explorer_ProcessRunOnceExStart()	Start	Shell StartupPerf	Explorer_ProcessRunOnceEx	Informational		
 Microsoft-Windows-Shell-Core	9702	0	Explorer_ProcessRunOnceExStop()	Stop	Shell StartupPerf	Explorer_ProcessRunOnceEx	Informational		
-Microsoft-Windows-Shell-Core	9703	0	Explorer_ProcessRunOnceStart()	Start	Shell StartupPerf keyword_200000000000	Explorer_ProcessRunOnce	Informational		
-Microsoft-Windows-Shell-Core	9704	0	Explorer_ProcessRunOnceStop()	Stop	Shell StartupPerf keyword_200000000000	Explorer_ProcessRunOnce	Informational		
-Microsoft-Windows-Shell-Core	9705	0	Explorer_EnumeratingRunKeyStart(UnicodeString KeyName)	Start	Shell StartupPerf keyword_200000000000	Explorer_EnumeratingRunKey	Informational		
-Microsoft-Windows-Shell-Core	9706	0	Explorer_EnumeratingRunKeyStop(UnicodeString KeyName)	Stop	Shell StartupPerf keyword_200000000000	Explorer_EnumeratingRunKey	Informational		
-Microsoft-Windows-Shell-Core	9707	0	Explorer_ExecutingFromRunKeyStart(UnicodeString Command)	Start	Shell StartupPerf keyword_200000000000	Explorer_ExecutingFromRunKey	Informational		
-Microsoft-Windows-Shell-Core	9708	0	Explorer_ExecutingFromRunKeyStop(UInt32 PID, UnicodeString Command)	Stop	Shell StartupPerf keyword_200000000000	Explorer_ExecutingFromRunKey	Informational		
+Microsoft-Windows-Shell-Core	9703	0	Explorer_ProcessRunOnceStart()	Start	Shell StartupPerf	Explorer_ProcessRunOnce	Informational		
+Microsoft-Windows-Shell-Core	9704	0	Explorer_ProcessRunOnceStop()	Stop	Shell StartupPerf	Explorer_ProcessRunOnce	Informational		
+Microsoft-Windows-Shell-Core	9705	0	Explorer_EnumeratingRunKeyStart(UnicodeString KeyName)	Start	Shell StartupPerf	Explorer_EnumeratingRunKey	Informational		
+Microsoft-Windows-Shell-Core	9706	0	Explorer_EnumeratingRunKeyStop(UnicodeString KeyName)	Stop	Shell StartupPerf	Explorer_EnumeratingRunKey	Informational		
+Microsoft-Windows-Shell-Core	9707	0	Explorer_ExecutingFromRunKeyStart(UnicodeString Command)	Start	Shell StartupPerf	Explorer_ExecutingFromRunKey	Informational		
+Microsoft-Windows-Shell-Core	9708	0	Explorer_ExecutingFromRunKeyStop(UInt32 PID, UnicodeString Command)	Stop	Shell StartupPerf	Explorer_ExecutingFromRunKey	Informational		
 Microsoft-Windows-Shell-Core	9709	0	Explorer_ExecutingFromRunKeyAsJobStart(UnicodeString Command)	Start	Shell StartupPerf	Explorer_ExecutingFromRunKeyAsJob	Informational		
 Microsoft-Windows-Shell-Core	9710	0	Explorer_ExecutingFromRunKeyAsJobStop(UInt32 PID, UnicodeString Command)	Stop	Shell StartupPerf	Explorer_ExecutingFromRunKeyAsJob	Informational		
 Microsoft-Windows-Shell-Core	9711	0	Explorer_ExecutingFromStartupMenuStart(UnicodeString Command)	Start	Shell StartupPerf	Explorer_ExecutingFromStartupMenu	Informational		
@@ -1773,8 +1773,8 @@ Microsoft-Windows-Shell-Core	27224	0	PerfTrack_FilterMenu_FilterSuggestFinalStop
 Microsoft-Windows-Shell-Core	27226	0	PerfTrack_Taskbar_Launch_ExplorerStop()	Stop	Shell WDI	PerfTrack_Taskbar_Launch_Explorer	Informational		
 Microsoft-Windows-Shell-Core	27227	0	PerfTrack_StartPane_TopMatchReadyStop27227()	Stop	Shell	PerfTrack_StartPane_TopMatchReady	Informational		
 Microsoft-Windows-Shell-Core	27229	0	PerfTrack_Explorer_Templates_SearchIndexedViewStop(UInt32 BrowserId, UInt32 ItemCount)	Stop	Shell WDI	PerfTrack_Explorer_Templates_SearchIndexedView	Informational		
-Microsoft-Windows-Shell-Core	27230	0	PerfTrack_Explorer_ExplorerStartToDesktopReadyStart()	Start	Shell WDI	PerfTrack_Explorer_ExplorerStartToDesktopReady	Informational		
-Microsoft-Windows-Shell-Core	27231	0	PerfTrack_Explorer_ExplorerStartToDesktopReadyStop()	Stop	Shell WDI	PerfTrack_Explorer_ExplorerStartToDesktopReady	Informational		
+Microsoft-Windows-Shell-Core	27230	0	PerfTrack_Explorer_ExplorerStartToDesktopReadyStart()	Start	Shell WDI LogonPerformance	PerfTrack_Explorer_ExplorerStartToDesktopReady	Informational		
+Microsoft-Windows-Shell-Core	27231	0	PerfTrack_Explorer_ExplorerStartToDesktopReadyStop()	Stop	Shell WDI LogonPerformance	PerfTrack_Explorer_ExplorerStartToDesktopReady	Informational		
 Microsoft-Windows-Shell-Core	27233	0	PerfTrack_HomeGroup_PublishedItem_PageCompleteStop(UInt32 BrowserId, UInt32 ItemCount)	Stop	Shell WDI	PerfTrack_HomeGroup_PublishedItem_PageComplete	Informational		
 Microsoft-Windows-Shell-Core	27234	0	Delayed_Filter_Contents()		Shell	Delayed_Filter_Contents	Informational		
 Microsoft-Windows-Shell-Core	27235	0	PerfTrack_Explorer_Invoke_CancelledStop()	Stop	Shell	PerfTrack_Explorer_Invoke_Cancelled	Informational		
@@ -2002,14 +2002,14 @@ Microsoft-Windows-Shell-Core	60715	0	Shell32_CDesktopWallpaper_AutoDecision(Bool
 Microsoft-Windows-Shell-Core	60716	0	Shell32_CDesktopWallpaper_WallpaperPosition(UInt32 uPicturePosition, UnicodeString pszFilePath)		Shell	Shell32_CDesktopWallpaper_WallpaperPosition	Informational		
 Microsoft-Windows-Shell-Core	60751	0	Shell32_ActiveSetupStart()	Start	Shell ActiveSetup keyword_200000000000	Shell32_ActiveSetup	Informational		
 Microsoft-Windows-Shell-Core	60752	0	Shell32_ActiveSetupStop()	Stop	Shell ActiveSetup keyword_200000000000	Shell32_ActiveSetup	Informational		
-Microsoft-Windows-Shell-Core	60753	0	Shell32_ActiveSetup_RunInstallUninstallStubsWorkerStart(UnicodeString pszBranchToRun)	Start	Shell ActiveSetup keyword_200000000000	Shell32_ActiveSetup_RunInstallUninstallStubsWorker	Informational		
-Microsoft-Windows-Shell-Core	60754	0	Shell32_ActiveSetup_RunInstallUninstallStubsWorkerStop(UnicodeString pszBranchToRun)	Stop	Shell ActiveSetup keyword_200000000000	Shell32_ActiveSetup_RunInstallUninstallStubsWorker	Informational		
-Microsoft-Windows-Shell-Core	60755	0	Shell32_ActiveSetup_RunOneInstallStubStart(UnicodeString pszKeyName, Boolean activeSetupDisabled, Boolean allowTaskOverride, Boolean taskEnabled)	Start	Shell ActiveSetup keyword_200000000000	Shell32_ActiveSetup_RunOneInstallStub	Informational		
-Microsoft-Windows-Shell-Core	60756	0	Shell32_ActiveSetup_RunOneInstallStubStop(UnicodeString pszKeyName, Boolean activeSetupDisabled, Boolean allowTaskOverride, Boolean taskEnabled)	Stop	Shell ActiveSetup keyword_200000000000	Shell32_ActiveSetup_RunOneInstallStub	Informational		
-Microsoft-Windows-Shell-Core	60757	0	Shell32_ActiveSetup_RunPendingGPOsStart()	Start	Shell ActiveSetup keyword_200000000000	Shell32_ActiveSetup_RunPendingGPOs	Informational		
-Microsoft-Windows-Shell-Core	60758	0	Shell32_ActiveSetup_RunPendingGPOsStop()	Stop	Shell ActiveSetup keyword_200000000000	Shell32_ActiveSetup_RunPendingGPOs	Informational		
-Microsoft-Windows-Shell-Core	60759	0	Shell32_ActiveSetup_RunSetupCommandStart(UnicodeString pszPathName)	Start	Shell ActiveSetup keyword_200000000000	Shell32_ActiveSetup_RunSetupCommand	Informational		
-Microsoft-Windows-Shell-Core	60760	0	Shell32_ActiveSetup_RunSetupCommandStop(UnicodeString pszPathName)	Stop	Shell ActiveSetup keyword_200000000000	Shell32_ActiveSetup_RunSetupCommand	Informational		
+Microsoft-Windows-Shell-Core	60753	0	Shell32_ActiveSetup_RunInstallUninstallStubsWorkerStart(UnicodeString pszBranchToRun)	Start	Shell ActiveSetup	Shell32_ActiveSetup_RunInstallUninstallStubsWorker	Informational		
+Microsoft-Windows-Shell-Core	60754	0	Shell32_ActiveSetup_RunInstallUninstallStubsWorkerStop(UnicodeString pszBranchToRun)	Stop	Shell ActiveSetup	Shell32_ActiveSetup_RunInstallUninstallStubsWorker	Informational		
+Microsoft-Windows-Shell-Core	60755	0	Shell32_ActiveSetup_RunOneInstallStubStart(UnicodeString pszKeyName, Boolean activeSetupDisabled, Boolean allowTaskOverride, Boolean taskEnabled)	Start	Shell ActiveSetup	Shell32_ActiveSetup_RunOneInstallStub	Informational		
+Microsoft-Windows-Shell-Core	60756	0	Shell32_ActiveSetup_RunOneInstallStubStop(UnicodeString pszKeyName, Boolean activeSetupDisabled, Boolean allowTaskOverride, Boolean taskEnabled)	Stop	Shell ActiveSetup	Shell32_ActiveSetup_RunOneInstallStub	Informational		
+Microsoft-Windows-Shell-Core	60757	0	Shell32_ActiveSetup_RunPendingGPOsStart()	Start	Shell ActiveSetup	Shell32_ActiveSetup_RunPendingGPOs	Informational		
+Microsoft-Windows-Shell-Core	60758	0	Shell32_ActiveSetup_RunPendingGPOsStop()	Stop	Shell ActiveSetup	Shell32_ActiveSetup_RunPendingGPOs	Informational		
+Microsoft-Windows-Shell-Core	60759	0	Shell32_ActiveSetup_RunSetupCommandStart(UnicodeString pszPathName)	Start	Shell ActiveSetup	Shell32_ActiveSetup_RunSetupCommand	Informational		
+Microsoft-Windows-Shell-Core	60760	0	Shell32_ActiveSetup_RunSetupCommandStop(UnicodeString pszPathName)	Stop	Shell ActiveSetup	Shell32_ActiveSetup_RunSetupCommand	Informational		
 Microsoft-Windows-Shell-Core	60801	0	ShellLib_DUIControls_CandidateList_Show()		Controls	ShellLib_DUIControls_CandidateList_Show	Informational		
 Microsoft-Windows-Shell-Core	60802	0	ShellLib_DUIControls_CandidateList_Hide()		Controls	ShellLib_DUIControls_CandidateList_Hide	Informational		
 Microsoft-Windows-Shell-Core	60803	0	ShellLib_DUIControls_CandidateList_DataSourceChanged(UInt32 Value)		Controls	ShellLib_DUIControls_CandidateList_DataSourceChanged	Informational		
@@ -2049,6 +2049,8 @@ Microsoft-Windows-Shell-Core	60910	0	ShellTask_ExecAssoc_ZoneCheckFileStop60910(
 Microsoft-Windows-Shell-Core	60911	0	ShellTask_ExecAssoc_ZoneCheckFileStop60911(UnicodeString psz)	Stop	Shell	ShellTask_ExecAssoc_ZoneCheckFile	Informational		
 Microsoft-Windows-Shell-Core	60912	0	task_060912(UInt32 Index)		Shell	task_0	Informational		
 Microsoft-Windows-Shell-Core	60913	0	task_0Stop()	Stop	Shell	task_0	Informational		
+Microsoft-Windows-Shell-Core	60914	0	ShellTask_Download_SafeOpenPromptForShellExec(UInt32 HRESULT)		Shell	ShellTask_Download_SafeOpenPromptForShellExec	Informational		
+Microsoft-Windows-Shell-Core	60915	0	ShellTask_SmartScreen_CheckReputation(Int32 EnumValue)		Shell	ShellTask_SmartScreen_CheckReputation	Informational		
 Microsoft-Windows-Shell-Core	61001	0	Shell32_UnknownFileDialog_CreateStart()	Start	Shell	Shell32_UnknownFileDialog_Create	Informational		
 Microsoft-Windows-Shell-Core	61002	0	Shell32_UnknownFileDialog_CreateStop()	Stop	Shell	Shell32_UnknownFileDialog_Create	Informational		
 Microsoft-Windows-Shell-Core	61003	0	Shell32_DefaultAssociationsProfileHandler_OnCreate_OEMStart()	Start	Shell	Shell32_DefaultAssociationsProfileHandler_OnCreate_OEM	Informational		
@@ -2378,4 +2380,6 @@ Microsoft-Windows-Shell-Core	62423	0	LogonTask_Restore62423(UnicodeString Hardwa
 Microsoft-Windows-Shell-Core	62440	0	AppDefaults_UserChoiceHashMismatch(UnicodeString ExtOrUriScheme, UnicodeString ProgId, Boolean IsRoaming)			AppDefaults_UserChoiceHashMismatch	Informational		
 Microsoft-Windows-Shell-Core	62441	0	AppDefaults_ResetToRecommended(UnicodeString ProgId, UnicodeString ExtOrUriScheme)			AppDefaults_ResetToRecommended	Informational		
 Microsoft-Windows-Shell-Core	62442	0	AppDefaults_UpgradeToRecommendedApp(UnicodeString ProgId, UnicodeString CurrentDefaultProgId, UnicodeString ExtOrUriScheme)			AppDefaults_UpgradeToRecommendedApp	Informational		
+Microsoft-Windows-Shell-Core	62443	0	AppDefaults_Info(UnicodeString Info)			AppDefaults_Info	Informational		
+Microsoft-Windows-Shell-Core	62460	0	OOBEHealth_Progress(Int32 DataVersion, UInt64 HealthStateFlags, UInt64 CensusFlags, UInt64 SecondsSinceBoot, UnicodeString TrackingInfo)		Shell OOBEHealth	OOBEHealth_Progress	Informational		
 Microsoft-Windows-Shell-Core	63200	0	task_063200()		WDI	task_0	Informational		

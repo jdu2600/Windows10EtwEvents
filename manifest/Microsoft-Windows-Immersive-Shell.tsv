@@ -28,7 +28,7 @@ Microsoft-Windows-Immersive-Shell	163	0	ImmersiveShellIHMNotificationStart163(Po
 Microsoft-Windows-Immersive-Shell	164	0	ImmersiveShellIHMNotificationStop164()	Stop		ImmersiveShellIHMNotification	Informational		
 Microsoft-Windows-Immersive-Shell	165	0	ImmersiveShellAppIHMNotificationStart(Int32 NotificationType, Pointer FocusedHWND, Int32 IHMPosition_left, Int32 IHMPosition_top, Int32 IHMPosition_right, Int32 IHMPosition_bottom)	Start		ImmersiveShellAppIHMNotification	Informational		
 Microsoft-Windows-Immersive-Shell	166	0	ImmersiveShellAppIHMNotificationStop(Int32 NotificationType, Pointer FocusedHWND, Int32 IHMPosition_left, Int32 IHMPosition_top, Int32 IHMPosition_right, Int32 IHMPosition_bottom)	Stop		ImmersiveShellAppIHMNotification	Informational		
-Microsoft-Windows-Immersive-Shell	171	0	ImmersiveShellAppManagerApplicationStateChange(UnicodeString AppID, UInt32 ApplicationState, Boolean HasActionsMenu, UInt32 DesktopTabletModeState)		keyword_200000000000	ImmersiveShellAppManagerApplicationStateChange	Informational		
+Microsoft-Windows-Immersive-Shell	171	0	ImmersiveShellAppManagerApplicationStateChange(UnicodeString AppID, UInt32 ApplicationState, Boolean HasActionsMenu, UInt32 DesktopTabletModeState)			ImmersiveShellAppManagerApplicationStateChange	Informational		
 Microsoft-Windows-Immersive-Shell	173	0	ImmersiveShellAppManagerWindowTitleChange(Int32 Window, UnicodeString Title)			ImmersiveShellAppManagerWindowTitleChange	Informational		
 Microsoft-Windows-Immersive-Shell	181	0	ImmersiveShellUIDrag(Int32 Left, Int32 Top, UnicodeString UIName)			ImmersiveShellUIDrag	Informational		
 Microsoft-Windows-Immersive-Shell	1013	0	TileXML_ProcessMRTResourceStop(UnicodeString ApplicationId, UInt32 NotificationId, UInt32 HRESULT, UnicodeString UnprocessedResourceString, UnicodeString ProcessedResourceString)	Stop		TileXML_ProcessMRTResource	Informational		
@@ -39,8 +39,8 @@ Microsoft-Windows-Immersive-Shell	1203	0	ImmersiveShellBadgeParseXML(UnicodeStri
 Microsoft-Windows-Immersive-Shell	1310	0	AppLayoutItem(UnicodeString AppUserModelID, UInt32 Left, UInt32 Top, UInt32 Right, UInt32 Bottom)			AppLayoutItem	Informational		
 Microsoft-Windows-Immersive-Shell	1315	0	LayoutCache_LayoutShownStart()	Start		LayoutCache_LayoutShown	Informational		
 Microsoft-Windows-Immersive-Shell	1316	0	LayoutCache_LayoutShownStop()	Stop		LayoutCache_LayoutShown	Informational		
-Microsoft-Windows-Immersive-Shell	1317	0	SwitchToAppByIdWithArgumentsStart(UnicodeString AppUserModelId, UnicodeString Arguments, UnicodeString NotificationTargetId)	Start	keyword_400000000000	SwitchToAppByIdWithArguments	Informational		
-Microsoft-Windows-Immersive-Shell	1318	0	SwitchToAppByIdWithArgumentsStop(UnicodeString AppUserModelId, UnicodeString Arguments, UnicodeString NotificationTargetId, UInt32 HRESULT)	Stop	keyword_400000000000	SwitchToAppByIdWithArguments	Informational		
+Microsoft-Windows-Immersive-Shell	1317	0	SwitchToAppByIdWithArgumentsStart(UnicodeString AppUserModelId, UnicodeString Arguments, UnicodeString NotificationTargetId)	Start		SwitchToAppByIdWithArguments	Informational		
+Microsoft-Windows-Immersive-Shell	1318	0	SwitchToAppByIdWithArgumentsStop(UnicodeString AppUserModelId, UnicodeString Arguments, UnicodeString NotificationTargetId, UInt32 HRESULT)	Stop		SwitchToAppByIdWithArguments	Informational		
 Microsoft-Windows-Immersive-Shell	1401	0	BackstackManager_GetBackstackStart()	Start		BackstackManager_GetBackstack	Informational		
 Microsoft-Windows-Immersive-Shell	1402	0	BackstackManager_GetBackstack(UnicodeString AppUserModelID)			BackstackManager_GetBackstack	Informational		
 Microsoft-Windows-Immersive-Shell	1403	0	BackstackManager_GetBackstackStop()	Stop		BackstackManager_GetBackstack	Informational		
@@ -68,13 +68,13 @@ Microsoft-Windows-Immersive-Shell	1609	0	AppsFolder_GetPropertyStoreStart()	Star
 Microsoft-Windows-Immersive-Shell	1610	0	AppsFolder_GetPropertyStoreStop()	Stop		AppsFolder_GetPropertyStore	Informational		
 Microsoft-Windows-Immersive-Shell	1611	0	AppsFolder_GetPropertyStoreForKeysStart()	Start		AppsFolder_GetPropertyStoreForKeys	Informational		
 Microsoft-Windows-Immersive-Shell	1612	0	AppsFolder_GetPropertyStoreForKeysStop(UInt32 StoreType)	Stop		AppsFolder_GetPropertyStoreForKeys	Informational		
-Microsoft-Windows-Immersive-Shell	1613	0	AppsFolder_ImmersiveApp_OpenVerbStart()	Start	keyword_400000000000	AppsFolder_ImmersiveApp_OpenVerb	Informational		
-Microsoft-Windows-Immersive-Shell	1614	0	AppsFolder_ImmersiveApp_OpenVerbStop(UnicodeString ApplicationId, UnicodeString Arguments)	Stop	keyword_400000000000	AppsFolder_ImmersiveApp_OpenVerb	Informational		
+Microsoft-Windows-Immersive-Shell	1613	0	AppsFolder_ImmersiveApp_OpenVerbStart()	Start		AppsFolder_ImmersiveApp_OpenVerb	Informational		
+Microsoft-Windows-Immersive-Shell	1614	0	AppsFolder_ImmersiveApp_OpenVerbStop(UnicodeString ApplicationId, UnicodeString Arguments)	Stop		AppsFolder_ImmersiveApp_OpenVerb	Informational		
 Microsoft-Windows-Immersive-Shell	1615	0	AppsFolderItemState_NotifyChange(UnicodeString AppID, Int32 Event)			AppsFolderItemState_NotifyChange	Informational		
 Microsoft-Windows-Immersive-Shell	1617	0	AppsFolder_DualModeVerbStart()	Start		AppsFolder_DualModeVerb	Informational		
 Microsoft-Windows-Immersive-Shell	1618	0	AppsFolder_DualModeVerbStop(UnicodeString ApplicationId, UnicodeString Arguments)	Stop		AppsFolder_DualModeVerb	Informational		
 Microsoft-Windows-Immersive-Shell	1619	0	AppsFolder_DualModeVerb(UInt32 AHE_TYPE, UInt32 HRESULT)			AppsFolder_DualModeVerb	Informational		
-Microsoft-Windows-Immersive-Shell	1621	0	AppsFolder_ImmersiveApp_OpenVerb(UnicodeString ApplicationId, UInt32 ExecutionState, UInt32 AppState, Int32 Result)		keyword_400000000000	AppsFolder_ImmersiveApp_OpenVerb	Informational		
+Microsoft-Windows-Immersive-Shell	1621	0	AppsFolder_ImmersiveApp_OpenVerb(UnicodeString ApplicationId, UInt32 ExecutionState, UInt32 AppState, Int32 Result)			AppsFolder_ImmersiveApp_OpenVerb	Informational		
 Microsoft-Windows-Immersive-Shell	1622	0	AppsFolderItemState_Enqueue(UInt32 Operation, UnicodeString TargetAppID, UnicodeString RefAppID, UInt32 ModifyFlags, UInt32 ViewOrSize, UnicodeString GroupName)			AppsFolderItemState_Enqueue	Informational		
 Microsoft-Windows-Immersive-Shell	1623	0	AppsFolderItemState_Commit(UInt32 ItemsToProcess, Boolean StartTask, UInt32 HRESULT)			AppsFolderItemState_Commit	Informational		
 Microsoft-Windows-Immersive-Shell	1624	0	AppsFolderItemState_DoCommit(UInt32 ItemsToProcess, Boolean Retry, UInt32 FailedAttempts, UInt32 HRESULT)			AppsFolderItemState_DoCommit	Informational		
@@ -377,11 +377,11 @@ Microsoft-Windows-Immersive-Shell	5917	0	AppActivation_SplashScreenFactoried(UIn
 Microsoft-Windows-Immersive-Shell	5919	0	AppActivation_PackageActivationSettings(UInt32 PackageActivationSettings)			AppActivation_PackageActivationSettings	Informational		
 Microsoft-Windows-Immersive-Shell	5921	0	AppActivation_ErrorDialogDisplayed(UnicodeString AppId, UInt32 ErrorCode, GUID DialogId)			AppActivation_ErrorDialogDisplayed	Informational		
 Microsoft-Windows-Immersive-Shell	5922	0	AppActivation_ErrorDialogDismissed(UnicodeString AppId, UInt32 ErrorCode, GUID DialogId, UInt32 DismissMethod)			AppActivation_ErrorDialogDismissed	Informational		
-Microsoft-Windows-Immersive-Shell	5924	0	AppActivation_RPCTimeout(UnicodeString AppId, UInt32 TimeOutPeriod)			AppActivation_RPCTimeout	Informational		
-Microsoft-Windows-Immersive-Shell	5925	0	AppActivation_RPCTimeout5925(UnicodeString AppId)			AppActivation_RPCTimeout	Informational		
-Microsoft-Windows-Immersive-Shell	5926	0	AppActivation_RPCTimeout5926(UnicodeString AppId)			AppActivation_RPCTimeout	Informational		
-Microsoft-Windows-Immersive-Shell	5927	0	AppActivation_RPCTimeout_WaitStart(UnicodeString AppId)	Start		AppActivation_RPCTimeout_Wait	Informational		
-Microsoft-Windows-Immersive-Shell	5928	0	AppActivation_RPCTimeout_WaitStop(UnicodeString AppId, UInt32 WaitSignal)	Stop		AppActivation_RPCTimeout_Wait	Informational		
+Microsoft-Windows-Immersive-Shell	5924	0	AppActivation_RPCTimeout(UnicodeString PsmKey, UInt32 TimeOutPeriod)			AppActivation_RPCTimeout	Informational		
+Microsoft-Windows-Immersive-Shell	5925	0	AppActivation_RPCTimeout5925(UnicodeString PsmKey)			AppActivation_RPCTimeout	Informational		
+Microsoft-Windows-Immersive-Shell	5926	0	AppActivation_RPCTimeout5926(UnicodeString PsmKey)			AppActivation_RPCTimeout	Informational		
+Microsoft-Windows-Immersive-Shell	5927	0	AppActivation_RPCTimeout_WaitStart(UnicodeString PsmKey)	Start		AppActivation_RPCTimeout_Wait	Informational		
+Microsoft-Windows-Immersive-Shell	5928	0	AppActivation_RPCTimeout_WaitStop(UnicodeString PsmKey, UInt32 WaitSignal)	Stop		AppActivation_RPCTimeout_Wait	Informational		
 Microsoft-Windows-Immersive-Shell	5929	0	AppActivation_ActivateApplicationForComponentUIByAUMIDStart()	Start		AppActivation_ActivateApplicationForComponentUIByAUMID	Informational		
 Microsoft-Windows-Immersive-Shell	5930	0	AppActivation_ActivateApplicationForComponentUIByAUMIDStop()	Stop		AppActivation_ActivateApplicationForComponentUIByAUMID	Informational		
 Microsoft-Windows-Immersive-Shell	5950	0	AppActivation_Log_Success(UnicodeString AppId, UnicodeString ContractId)			AppActivation_Log_Success	Informational		

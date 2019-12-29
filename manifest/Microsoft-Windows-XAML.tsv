@@ -104,15 +104,11 @@ Microsoft-Windows-XAML	102	0	SubmitFrameStop()	Stop	Rendering	SubmitFrame	Inform
 Microsoft-Windows-XAML	103	0	DownloadRequestStart()	Start	Detailed	DownloadRequest	Verbose		
 Microsoft-Windows-XAML	104	0	DownloadRequestStop()	Stop	Detailed	DownloadRequest	Verbose		
 Microsoft-Windows-XAML	105	0	SetMaximumFrameLatency(UInt32 FrameCount)		Rendering	SetMaximumFrameLatency	Informational		
-Microsoft-Windows-XAML	106	0	PrimitiveCompositionUpdatePrimitivesStart()	Start	Rendering	PrimitiveCompositionUpdatePrimitives	Informational		
-Microsoft-Windows-XAML	107	0	PrimitiveCompositionUpdatePrimitivesStop(UInt32 UpdatedPrimitives, UInt32 UpdatedInvisiblePrimitives, UInt32 UpdatedGeometryGeneratedPrimitives, UInt32 UpdatedRegularPrimitives, UInt32 UpdatedGeometryGeneratedVertexCount)	Stop	Rendering	PrimitiveCompositionUpdatePrimitives	Informational		
 Microsoft-Windows-XAML	108	0	PrimitiveCompositionDrawStart()	Start	Rendering	PrimitiveCompositionDraw	Informational		
 Microsoft-Windows-XAML	109	0	PrimitiveCompositionDrawStop(UInt32 BatchCount, UInt32 PrimitivesDrawn, UInt32 GeometryGeneratedPrimitivesDrawn, UInt32 GeometryGeneratedVerticesDrawn)	Stop	Rendering	PrimitiveCompositionDraw	Informational		
 Microsoft-Windows-XAML	110	0	PrimitiveCompositionUpdateSurfacesStart()	Start	Rendering	PrimitiveCompositionUpdateSurfaces	Informational		
 Microsoft-Windows-XAML	111	0	PrimitiveCompositionUpdateSurfacesStop()	Stop	Rendering	PrimitiveCompositionUpdateSurfaces	Informational		
-Microsoft-Windows-XAML	112	0	RenderThreadRenderStart()	Start	Rendering	RenderThreadRender	Informational		
 Microsoft-Windows-XAML	113	0	RenderThreadRender(UInt64 FrameId)		Rendering	RenderThreadRender	Informational		
-Microsoft-Windows-XAML	114	0	RenderThreadRenderStop()	Stop	Rendering	RenderThreadRender	Informational		
 Microsoft-Windows-XAML	115	0	RenderThreadFrameStart()	Start	Rendering	RenderThreadFrame	Informational		
 Microsoft-Windows-XAML	116	0	RenderThreadFrameStop()	Stop	Rendering	RenderThreadFrame	Informational		
 Microsoft-Windows-XAML	117	0	RenderThreadDoNotWait()		Rendering	RenderThreadDoNotWait	Informational		
@@ -120,10 +116,6 @@ Microsoft-Windows-XAML	118	0	RenderThreadWaitForVBlankStart()	Start	Rendering	Re
 Microsoft-Windows-XAML	119	0	RenderThreadWaitForVBlankStop()	Stop	Rendering	RenderThreadWaitForVBlank	Informational		
 Microsoft-Windows-XAML	120	0	RenderThreadWaitForWorkStart()	Start	Rendering	RenderThreadWaitForWork	Informational		
 Microsoft-Windows-XAML	121	0	RenderThreadWaitForWorkStop()	Stop	Rendering	RenderThreadWaitForWork	Informational		
-Microsoft-Windows-XAML	122	0	RenderThreadTickStart()	Start	Rendering	RenderThreadTick	Informational		
-Microsoft-Windows-XAML	123	0	RenderThreadTickStop()	Stop	Rendering	RenderThreadTick	Informational		
-Microsoft-Windows-XAML	124	0	PrimitiveCompositionTreeWalkStart()	Start	Rendering	PrimitiveCompositionTreeWalk	Informational		
-Microsoft-Windows-XAML	125	0	PrimitiveCompositionTreeWalkStop()	Stop	Rendering	PrimitiveCompositionTreeWalk	Informational		
 Microsoft-Windows-XAML	126	0	PrimitiveCompositionEnsureHardwareResourcesStart()	Start	Rendering	PrimitiveCompositionEnsureHardwareResources	Informational		
 Microsoft-Windows-XAML	127	0	PrimitiveCompositionEnsureHardwareResourcesStop()	Stop	Rendering	PrimitiveCompositionEnsureHardwareResources	Informational		
 Microsoft-Windows-XAML	128	0	PrimitiveCompositionGenerateInstancesStart()	Start	Rendering	PrimitiveCompositionGenerateInstances	Informational		
@@ -267,8 +259,6 @@ Microsoft-Windows-XAML	261	1	SubmitNotifyWindowLayoutCompleted_V1(UInt64 Window)
 Microsoft-Windows-XAML	262	0	ProcessNotifyWindowLayoutCompleted(UInt32 ApplicationViewState)		Rendering	ProcessNotifyWindowLayoutCompleted	Verbose		
 Microsoft-Windows-XAML	262	1	ProcessNotifyWindowLayoutCompleted_V1(UInt64 Window)		Rendering	ProcessNotifyWindowLayoutCompleted	Verbose		
 Microsoft-Windows-XAML	263	0	RenderThreadSkipFrameNotDirty()		Rendering	RenderThreadSkipFrameNotDirty	Informational		
-Microsoft-Windows-XAML	264	0	RenderThreadTimeManagerTickStart()	Start	Rendering	RenderThreadTimeManagerTick	Informational		
-Microsoft-Windows-XAML	265	0	RenderThreadTimeManagerTickStop()	Stop	Rendering	RenderThreadTimeManagerTick	Informational		
 Microsoft-Windows-XAML	266	0	PrimitiveCompositionTextureUpdateStart(UInt64 SourceSurface, UInt64 DestinationSurface, UInt32 UpdateType, UInt32 SourceX, UInt32 SourceY, UInt32 SourceWidth, UInt32 SourceHeight, UInt32 TargetOffsetX, UInt32 TargetOffsetY, UInt64 Pixels, UInt32 BitDepth)	Start	Rendering	PrimitiveCompositionTextureUpdate	Verbose		
 Microsoft-Windows-XAML	267	0	PrimitiveCompositionTextureUpdateStop()	Stop	Rendering	PrimitiveCompositionTextureUpdate	Verbose		
 Microsoft-Windows-XAML	268	0	UIThreadSoftwareRasterizeWaitStart()	Start	Rendering	UIThreadSoftwareRasterizeWait	Verbose		
@@ -277,8 +267,6 @@ Microsoft-Windows-XAML	270	0	UIThreadTextRasterizeWaitStart()	Start	Rendering	UI
 Microsoft-Windows-XAML	271	0	UIThreadTextRasterizeWaitStop()	Stop	Rendering	UIThreadTextRasterizeWait	Verbose		
 Microsoft-Windows-XAML	272	0	UIThreadWaitGPUWorkStart()	Start	Rendering	UIThreadWaitGPUWork	Verbose		
 Microsoft-Windows-XAML	273	0	UIThreadWaitGPUWorkStop()	Stop	Rendering	UIThreadWaitGPUWork	Verbose		
-Microsoft-Windows-XAML	274	0	DmTickStart()	Start	Input	DmTick	Informational		
-Microsoft-Windows-XAML	275	0	DmTickStop()	Stop	Input	DmTick	Informational		
 Microsoft-Windows-XAML	276	0	PrimitiveCompositionTexture8BitExpandStart()	Start	DComp	PrimitiveCompositionTexture8BitExpand	Verbose		
 Microsoft-Windows-XAML	277	0	PrimitiveCompositionTexture8BitExpandStop(UInt64 SourceSurface, UInt64 DestinationSurface, UInt32 UpdateType, UInt32 SourceX, UInt32 SourceY, UInt32 SourceWidth, UInt32 SourceHeight, UInt32 TargetOffsetX, UInt32 TargetOffsetY, UInt64 Pixels, UInt32 BitDepth)	Stop	DComp	PrimitiveCompositionTexture8BitExpand	Verbose		
 Microsoft-Windows-XAML	278	0	DCompInsertChild(UInt64 ParentDCompVisual, UInt64 ChildDCompVisual, UInt64 PreviousSiblingDCompVisual)		DComp	DCompInsertChild	Verbose		
@@ -441,10 +429,37 @@ Microsoft-Windows-XAML	430	0	DCompSnapshotBounds(UInt64 ElementId, Float Left, F
 Microsoft-Windows-XAML	431	0	PageRotationSnapshotTaken()		Rendering	PageRotationSnapshotTaken	Informational		
 Microsoft-Windows-XAML	432	0	PageRotationAnimationStarted()		Rendering	PageRotationAnimationStarted	Informational		
 Microsoft-Windows-XAML	433	0	WindowSizeChanged(UInt32 Width, UInt32 Height)		Rendering	WindowSizeChanged	Informational		
-Microsoft-Windows-XAML	434	0	MockDCompDump(AnsiString value)		Rendering	MockDCompDump	Verbose		
+Microsoft-Windows-XAML	434	0	MockDCompDump(AnsiString value, UInt32 CRC, UInt32 chunk, UInt32 numChunks)		Rendering	MockDCompDump	Verbose		
 Microsoft-Windows-XAML	435	0	DecodeStreamForImage(UInt64 ImageId, UInt32 DecodeWidth, UInt32 DecodeHeight, UInt32 NaturalWidth, UInt32 NaturalHeight, Boolean RetrievedFromCache)		Images	DecodeStreamForImage	Verbose		
 Microsoft-Windows-XAML	436	0	ImageRequestDecode(UInt64 ImageId, UnicodeString URI, UnicodeString ImageState, UInt32 ImageStateKey, UInt32 Width, UInt32 Height)		Images	ImageRequestDecode	Verbose		
 Microsoft-Windows-XAML	437	0	MemoryUpdateAllocationDCompSurface(Int32 Size)		Core	MemoryUpdateAllocationDCompSurface	Verbose		
 Microsoft-Windows-XAML	438	0	MemoryUpdateAllocationSystemMemoryBits(Int32 Size)		Core	MemoryUpdateAllocationSystemMemoryBits	Verbose		
 Microsoft-Windows-XAML	439	0	MemoryReportPressureToGC(Int32 Size)		Core	MemoryReportPressureToGC	Verbose		
 Microsoft-Windows-XAML	440	0	ImageAnimationEnd()		Images	ImageAnimationEnd	Informational		
+Microsoft-Windows-XAML	441	0	CCoreServicesSetWindowVisibility(Boolean Value)		Rendering	CCoreServicesSetWindowVisibility	Informational		
+Microsoft-Windows-XAML	442	0	CCoreServicesStartSoftSuspendTimer()		Rendering	CCoreServicesStartSoftSuspendTimer	Informational		
+Microsoft-Windows-XAML	443	0	CCoreServicesStopSoftSuspendTimer()		Rendering	CCoreServicesStopSoftSuspendTimer	Informational		
+Microsoft-Windows-XAML	444	0	CCoreServicesOnSuspend(Boolean Value)		Rendering	CCoreServicesOnSuspend	Informational		
+Microsoft-Windows-XAML	445	0	CCoreServicesOnResume()		Rendering	CCoreServicesOnResume	Informational		
+Microsoft-Windows-XAML	446	0	RequestFrameReason(Int32 RequestInMS, Int32 NextTickIntervalInMS, UInt32 Reason, UInt32 TotalReasons)		Rendering	RequestFrameReason	Informational		
+Microsoft-Windows-XAML	447	0	OfferableSoftwareBitmapAlloc(UInt64 Id, UInt32 Width, UInt32 Height)		Images	OfferableSoftwareBitmapAlloc	Informational		
+Microsoft-Windows-XAML	448	0	OfferableSoftwareBitmapFree(UInt64 Id)		Images	OfferableSoftwareBitmapFree	Informational		
+Microsoft-Windows-XAML	449	0	KeyTipsVisualChanging()		Input	KeyTipsVisualChanging	Informational		
+Microsoft-Windows-XAML	450	0	FailureEncountered(UInt64 Id, UInt32 HR)		Stackwalk	FailureEncountered	Informational		
+Microsoft-Windows-XAML	451	0	ApiPropertySetValueStart(UInt64 ElementId)	Start	ApiCall	ApiPropertySetValue			
+Microsoft-Windows-XAML	452	0	ApiPropertySetValueStop(UInt64 Id, UInt16 PropertyIndex)	Stop	ApiCall	ApiPropertySetValue			
+Microsoft-Windows-XAML	453	0	ApiPropertyGetValueStart(UInt64 ElementId)	Start	ApiCall	ApiPropertyGetValue			
+Microsoft-Windows-XAML	454	0	ApiPropertyGetValueStop(UInt64 Id, UInt16 PropertyIndex)	Stop	ApiCall	ApiPropertyGetValue			
+Microsoft-Windows-XAML	455	0	ApiFunctionCallStart(UInt64 Id, UInt16 MethodIndex)	Start	ApiCall	ApiFunctionCall			
+Microsoft-Windows-XAML	456	0	ApiFunctionCallStop(UInt64 Id, UInt32 HR)	Stop	ApiCall	ApiFunctionCall			
+Microsoft-Windows-XAML	457	0	ThemeChangedStart()	Start	Core	ThemeChanged	Informational		
+Microsoft-Windows-XAML	458	0	ThemeChangedStop()	Stop	Core	ThemeChanged	Informational		
+Microsoft-Windows-XAML	459	0	WrapHwndStart()	Start	Appmodel	WrapHwnd	Informational		
+Microsoft-Windows-XAML	460	0	WrapHwndStop()	Stop	Appmodel	WrapHwnd	Informational		
+Microsoft-Windows-XAML	461	0	InitializeTextStart()	Start	Text	InitializeText	Informational		
+Microsoft-Windows-XAML	462	0	InitializeTextStop()	Stop	Text	InitializeText	Informational		
+Microsoft-Windows-XAML	463	0	CreateResourceManagerStart()	Start	Core	CreateResourceManager	Informational		
+Microsoft-Windows-XAML	464	0	CreateResourceManagerStop()	Stop	Core	CreateResourceManager	Informational		
+Microsoft-Windows-XAML	465	0	TickPausedAnimation(UInt64 TargetId, UnicodeString TargetName, UnicodeString TargetProperty)		Animation	TickPausedAnimation	Informational		
+Microsoft-Windows-XAML	466	0	BindEnterpriseId(UInt64 ElementId, UnicodeString Name)		Images	BindEnterpriseId	Informational		
+Microsoft-Windows-XAML	467	0	RenderTargetBitmapFallback(UInt64 Id, UInt32 Reason)		Images	RenderTargetBitmapFallback	Informational		

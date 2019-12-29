@@ -63,13 +63,20 @@ Microsoft-Windows-AppModel-Runtime	63	0	task_063(UInt32 ErrorCode, UnicodeString
 Microsoft-Windows-AppModel-Runtime	64	0	task_064(UInt32 ErrorCode, UnicodeString Resource)		Process	task_0	Error		
 Microsoft-Windows-AppModel-Runtime	65	0	task_065(UInt32 ErrorCode, UnicodeString PackageFullName)		Process	task_0	Error		
 Microsoft-Windows-AppModel-Runtime	66	0	task_066(UInt32 ErrorCode, UnicodeString PackageFullName, SID User)		Process	task_0	Error		
-Microsoft-Windows-AppModel-Runtime	67	0	task_067(UInt32 ErrorCode, UnicodeString PackageFullName, UInt32 DesiredStatus, UInt32 CurrentStatus)		Process keyword_400000000000	task_0	Error		
-Microsoft-Windows-AppModel-Runtime	68	0	task_068(UnicodeString PackageFullName, UInt32 DesiredStatus, UInt32 CurrentStatus)		Process keyword_400000000000	task_0	Informational		
-Microsoft-Windows-AppModel-Runtime	69	0	task_069(UInt32 ErrorCode, UnicodeString PackageFullName, SID User, UInt32 DesiredStatus, UInt32 CurrentStatus)		Process keyword_400000000000	task_0	Error		
-Microsoft-Windows-AppModel-Runtime	70	0	task_070(UnicodeString PackageFullName, SID User, UInt32 DesiredStatus, UInt32 CurrentStatus)		Process keyword_400000000000	task_0	Informational		
-Microsoft-Windows-AppModel-Runtime	71	0	task_071(UInt32 ErrorCode, UnicodeString Context)		Process keyword_400000000000	task_0	Error		
+Microsoft-Windows-AppModel-Runtime	67	0	task_067(UInt32 ErrorCode, UnicodeString PackageFullName, UInt32 DesiredStatus, UInt32 CurrentStatus)		Process	task_0	Error		
+Microsoft-Windows-AppModel-Runtime	68	0	task_068(UnicodeString PackageFullName, UInt32 DesiredStatus, UInt32 CurrentStatus)		Process	task_0	Informational		
+Microsoft-Windows-AppModel-Runtime	69	0	task_069(UInt32 ErrorCode, UnicodeString PackageFullName, SID User, UInt32 DesiredStatus, UInt32 CurrentStatus)		Process	task_0	Error		
+Microsoft-Windows-AppModel-Runtime	70	0	task_070(UnicodeString PackageFullName, SID User, UInt32 DesiredStatus, UInt32 CurrentStatus)		Process	task_0	Informational		
+Microsoft-Windows-AppModel-Runtime	71	0	task_071(UInt32 ErrorCode, UnicodeString Context)		Process	task_0	Error		
 Microsoft-Windows-AppModel-Runtime	72	0	task_072()		Process	task_0	Informational		
 Microsoft-Windows-AppModel-Runtime	73	0	task_073(UnicodeString PackageFullName, UInt32 ErrorCode, UnicodeString ErrorMessage)		Process	task_0	Error		
+Microsoft-Windows-AppModel-Runtime	74	0	task_074(UnicodeString FileName, Int32 ErrorCode, UnicodeString Type, UInt32 ProcessId)		Process	task_0	Error		
+Microsoft-Windows-AppModel-Runtime	75	0	task_075(UnicodeString PackageFullName, HexInt32 ErrorCode)		Process	task_0	Error		
+Microsoft-Windows-AppModel-Runtime	76	0	task_076(UnicodeString PackageFullName, UnicodeString Key, UnicodeString Subkey, HexInt32 ErrorCode)		Process	task_0	Error		
+Microsoft-Windows-AppModel-Runtime	77	0	task_077(UnicodeString PackageFullName, UnicodeString Key, UnicodeString Subkey, HexInt32 ErrorCode)		Process	task_0	Error		
+Microsoft-Windows-AppModel-Runtime	78	0	task_078(UnicodeString PackageFullName, UnicodeString Key, UnicodeString Subkey, HexInt32 ErrorCode)		Process	task_0	Error		
+Microsoft-Windows-AppModel-Runtime	79	0	task_079(UnicodeString PackageFamilyName, HexInt32 ErrorCode)		Process keyword_200000000000	task_0	Critical		
+Microsoft-Windows-AppModel-Runtime	80	0	task_080(UnicodeString PackageFamilyName, HexInt32 ErrorCode)		Process keyword_200000000000	task_0	Critical		
 Microsoft-Windows-AppModel-Runtime	101	0	AppContainerCreationStart(UnicodeString AppContainerName)	Start	AppContainer	AppContainerCreation	Informational		
 Microsoft-Windows-AppModel-Runtime	102	0	AppContainerCreationStop(UInt32 ErrorCode, UnicodeString Context)	Stop	AppContainer	AppContainerCreation	Informational		
 Microsoft-Windows-AppModel-Runtime	103	0	AppContainerDeletionStart(UnicodeString AppContainerName)	Start	AppContainer	AppContainerDeletion	Informational		
@@ -99,3 +106,23 @@ Microsoft-Windows-AppModel-Runtime	126	0	AppIntegrityProcessCreationStop(UInt32 
 Microsoft-Windows-AppModel-Runtime	127	0	AppIntegrityInAppValidatePackageStart(UnicodeString PackageFullName)	Start	Process	AppIntegrityInAppValidatePackage	Informational		
 Microsoft-Windows-AppModel-Runtime	128	0	AppIntegrityInAppValidatePackageStop(UInt32 ErrorCode, UnicodeString PackageFullName)	Stop	Process	AppIntegrityInAppValidatePackage	Informational		
 Microsoft-Windows-AppModel-Runtime	129	0	FirewallAppContainerCreationStop129(UnicodeString AppContainerName)	Stop	AppContainer	FirewallAppContainerCreation	Informational		
+Microsoft-Windows-AppModel-Runtime	130	0	RestrictedAppContainerUpdateCapabilitiesStart(UnicodeString AppContainerName)	Start	AppContainer	RestrictedAppContainerUpdateCapabilities	Informational		
+Microsoft-Windows-AppModel-Runtime	131	0	RestrictedAppContainerUpdateCapabilitiesStop(UInt32 ErrorCode, UnicodeString Context)	Stop	AppContainer	RestrictedAppContainerUpdateCapabilities	Informational		
+Microsoft-Windows-AppModel-Runtime	201	0	task_0201(UInt32 ProcessID, UnicodeString PackageName, UnicodeString ImageName, UnicodeString ApplicationName, UnicodeString Message)		DesktopAppXProcess	task_0	Informational		
+Microsoft-Windows-AppModel-Runtime	202	0	task_0202(UnicodeString PackageName, UnicodeString ImageName, UnicodeString ApplicationName, UInt32 ErrorCode, UnicodeString Message)		DesktopAppXProcess	task_0	Error		
+Microsoft-Windows-AppModel-Runtime	203	0	task_0203(UnicodeString PackageName, UnicodeString ImageName, UnicodeString ApplicationName, UInt32 ErrorCode, UnicodeString Message)		DesktopAppXProcess	task_0	Error		
+Microsoft-Windows-AppModel-Runtime	204	0	task_0204(UnicodeString PackageName, UnicodeString ImageName, UnicodeString ApplicationName, UInt32 ErrorCode, UnicodeString Message)		DesktopAppXProcess	task_0	Error		
+Microsoft-Windows-AppModel-Runtime	205	0	task_0205(UnicodeString PackageName, UnicodeString ImageName, UnicodeString ApplicationName, UInt32 ErrorCode, UnicodeString Message)		DesktopAppXProcess	task_0	Error		
+Microsoft-Windows-AppModel-Runtime	206	0	task_0206(UnicodeString PackageName, UnicodeString ImageName, UnicodeString ApplicationName, UInt32 ErrorCode, UnicodeString Message)		DesktopAppXProcess	task_0	Error		
+Microsoft-Windows-AppModel-Runtime	207	0	task_0207(UnicodeString PackageName, UnicodeString ImageName, UnicodeString ApplicationName, UInt32 ErrorCode, UnicodeString Message)		DesktopAppXProcess	task_0	Error		
+Microsoft-Windows-AppModel-Runtime	208	0	task_0208(UnicodeString PackageName, UnicodeString ImageName, UnicodeString ApplicationName, UInt32 ErrorCode, UnicodeString Message)		DesktopAppXProcess	task_0	Error		
+Microsoft-Windows-AppModel-Runtime	209	0	task_0209(UnicodeString PackageName, UnicodeString ImageName, UnicodeString ApplicationName, UInt32 ErrorCode, UnicodeString Message)		DesktopAppXProcess	task_0	Error		
+Microsoft-Windows-AppModel-Runtime	210	0	task_0210(UnicodeString PackageName, UnicodeString ContainerName, UnicodeString ContainerId)		DesktopAppXContainer	task_0	Informational		
+Microsoft-Windows-AppModel-Runtime	211	0	task_0211(UInt32 ProcessID, UnicodeString PackageName, UnicodeString ContainerId)		DesktopAppXContainer	task_0	Informational		
+Microsoft-Windows-AppModel-Runtime	212	0	task_0212(UInt32 ErrorCode, UInt32 ProcessID, UnicodeString PackageName, UnicodeString ContainerId)		DesktopAppXContainer	task_0	Error		
+Microsoft-Windows-AppModel-Runtime	213	0	task_0213(UInt32 ErrorCode, UnicodeString PackageName, UnicodeString ContainerName)		DesktopAppXContainer	task_0	Error		
+Microsoft-Windows-AppModel-Runtime	214	0	task_0214(UInt32 ErrorCode, UnicodeString PackageName, UnicodeString ContainerName)		DesktopAppXContainer	task_0	Error		
+Microsoft-Windows-AppModel-Runtime	215	0	task_0215(UInt32 ErrorCode, UnicodeString PackageName, UnicodeString ContainerName)		DesktopAppXContainer	task_0	Error		
+Microsoft-Windows-AppModel-Runtime	216	0	task_0216(UInt32 ErrorCode, UnicodeString PackageName, UnicodeString ContainerName)		DesktopAppXContainer	task_0	Error		
+Microsoft-Windows-AppModel-Runtime	217	0	task_0217(UnicodeString PackageName, UnicodeString ContainerId)		DesktopAppXContainer	task_0	Informational		
+Microsoft-Windows-AppModel-Runtime	218	0	task_0218(UInt32 CleanupContainerErrorCode, UInt32 MakeTemporaryErrorCode, UnicodeString PackageName, UnicodeString ContainerId)		DesktopAppXContainer	task_0	Informational		

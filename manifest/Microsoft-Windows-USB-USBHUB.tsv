@@ -1,7 +1,7 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
 Microsoft-Windows-USB-USBHUB	1	0	USBHubAdd(UInt8 fid_USBHUB_HC, Int64 fid_USBHUB_Hub, Binary fid_USBHUB_Hub_State, Pointer fid_USB_HubDescriptor)	Add	Diagnostics keyword_400000000000	USBHub	Informational		
 Microsoft-Windows-USB-USBHUB	2	0	USBHubRemove(AnsiString fid_USBHUB_HC, Int32 fid_USBHUB_Hub)	Remove	Diagnostics keyword_400000000000	USBHub	Informational		
-Microsoft-Windows-USB-USBHUB	3	0	USBHubInformation(UInt8 fid_USBHUB_HC, Int64 fid_USBHUB_Hub, Binary fid_USBHUB_Hub_State, Pointer fid_USB_HubDescriptor)	Information	Diagnostics keyword_400000000000	USBHub	Informational		
+Microsoft-Windows-USB-USBHUB	3	0	USBHubInformation(UInt8 fid_USBHUB_HC, Int64 fid_USBHUB_Hub, Binary fid_USBHUB_Hub_State, Pointer fid_USB_HubDescriptor)	Information	Diagnostics	USBHub	Informational		
 Microsoft-Windows-USB-USBHUB	10	0	USBHubEnumerateStart(UInt8 fid_USBHUB_HC, Int64 fid_USBHUB_Hub, UInt32 fid_PortNumber, UInt32 fid_Status)	Start	Diagnostics keyword_400000000000	USBHubEnumerate	Informational		
 Microsoft-Windows-USB-USBHUB	11	0	USBHubEnumerateError(UInt8 fid_USBHUB_HC, Int64 fid_USBHUB_Hub, UInt32 fid_PortNumber, UInt32 fid_Status)	Error	Diagnostics keyword_400000000000	USBHubEnumerate	Error		
 Microsoft-Windows-USB-USBHUB	12	0	USBHubEnumerateError12(UInt8 fid_USBHUB_HC, Int64 fid_USBHUB_Hub, UInt32 fid_PortNumber, UInt32 fid_Status)	Error	Diagnostics keyword_400000000000	USBHubEnumerate	Error		
@@ -34,11 +34,11 @@ Microsoft-Windows-USB-USBHUB	39	0	USBHubEnumerateComplete(UInt8 fid_USBHUB_HC, I
 Microsoft-Windows-USB-USBHUB	40	0	USBHubResetRecoveryStart(UInt8 fid_USBHUB_HC, Int64 fid_USBHUB_Hub, UInt32 fid_PortNumber, UInt32 fid_Status)	Start	Diagnostics	USBHubResetRecovery	Informational		
 Microsoft-Windows-USB-USBHUB	41	0	USBHubResetRecoveryQueue(UInt8 fid_USBHUB_HC, Int64 fid_USBHUB_Hub, UInt32 fid_PortNumber, UInt32 fid_Status)	Queue	Diagnostics	USBHubResetRecovery	Warning		
 Microsoft-Windows-USB-USBHUB	49	0	USBHubResetRecoveryComplete(UInt8 fid_USBHUB_HC, Int64 fid_USBHUB_Hub, UInt32 fid_PortNumber, UInt32 fid_Status)	Complete	Diagnostics	USBHubResetRecovery	Informational		
-Microsoft-Windows-USB-USBHUB	50	0	USBHubSuspendStart(UInt8 fid_USBHUB_HC, Int64 fid_USBHUB_Hub, UInt32 fid_PortNumber, UInt32 fid_Status)	Start	Diagnostics keyword_400000000000	USBHubSuspend	Informational		
+Microsoft-Windows-USB-USBHUB	50	0	USBHubSuspendStart(UInt8 fid_USBHUB_HC, Int64 fid_USBHUB_Hub, UInt32 fid_PortNumber, UInt32 fid_Status)	Start	Diagnostics	USBHubSuspend	Informational		
 Microsoft-Windows-USB-USBHUB	51	0	USBHubSuspendInformation(UInt8 fid_USBHUB_HC, Int64 fid_USBHUB_Hub, UInt32 fid_PortNumber, UInt32 fid_Status)	Information	Diagnostics	USBHubSuspend	Informational		
-Microsoft-Windows-USB-USBHUB	59	0	USBHubSuspendComplete(UInt8 fid_USBHUB_HC, Int64 fid_USBHUB_Hub, UInt32 fid_PortNumber, UInt32 fid_Status)	Complete	Diagnostics keyword_400000000000	USBHubSuspend	Informational		
-Microsoft-Windows-USB-USBHUB	60	0	USBHubResumeStart(UInt8 fid_USBHUB_HC, Int64 fid_USBHUB_Hub, UInt32 fid_PortNumber, UInt32 fid_Status)	Start	Diagnostics keyword_400000000000	USBHubResume	Informational		
-Microsoft-Windows-USB-USBHUB	61	0	USBHubResumeComplete(UInt8 fid_USBHUB_HC, Int64 fid_USBHUB_Hub, UInt32 fid_PortNumber, UInt32 fid_Status)	Complete	Diagnostics keyword_400000000000	USBHubResume	Informational		
+Microsoft-Windows-USB-USBHUB	59	0	USBHubSuspendComplete(UInt8 fid_USBHUB_HC, Int64 fid_USBHUB_Hub, UInt32 fid_PortNumber, UInt32 fid_Status)	Complete	Diagnostics	USBHubSuspend	Informational		
+Microsoft-Windows-USB-USBHUB	60	0	USBHubResumeStart(UInt8 fid_USBHUB_HC, Int64 fid_USBHUB_Hub, UInt32 fid_PortNumber, UInt32 fid_Status)	Start	Diagnostics	USBHubResume	Informational		
+Microsoft-Windows-USB-USBHUB	61	0	USBHubResumeComplete(UInt8 fid_USBHUB_HC, Int64 fid_USBHUB_Hub, UInt32 fid_PortNumber, UInt32 fid_Status)	Complete	Diagnostics	USBHubResume	Informational		
 Microsoft-Windows-USB-USBHUB	62	0	USBHubResumeInformation(UInt8 fid_USBHUB_HC, Int64 fid_USBHUB_Hub, UInt32 fid_PortNumber, UInt32 fid_Status)	Information	Diagnostics	USBHubResume	Informational		
 Microsoft-Windows-USB-USBHUB	63	0	USBHubResumeInformation63(UInt8 fid_USBHUB_HC, Int64 fid_USBHUB_Hub, UInt32 fid_PortNumber, UInt32 fid_Status)	Information	Diagnostics	USBHubResume	Informational		
 Microsoft-Windows-USB-USBHUB	64	0	USBHubResumeInformation64(UInt8 fid_USBHUB_HC, Int64 fid_USBHUB_Hub, UInt32 fid_PortNumber, UInt32 fid_Status)	Information	Diagnostics	USBHubResume	Informational		
@@ -51,7 +51,7 @@ Microsoft-Windows-USB-USBHUB	83	0	USBHubPortInformation83(UInt8 fid_USBHUB_HC, I
 Microsoft-Windows-USB-USBHUB	84	0	USBHubPortInformation84(UInt8 fid_USBHUB_HC, Int64 fid_USBHUB_Hub, UInt32 fid_PortNumber, UInt32 fid_Status)	Information	Diagnostics keyword_400000000000	USBHubPortInformation	Informational		
 Microsoft-Windows-USB-USBHUB	100	0	USBDeviceAdd(UInt8 fid_USBHUB_HC, Int64 fid_USBHUB_Device, GUID fid_USBHUB_Device_State, Pointer fid_DeviceDescriptor)	Add	Diagnostics keyword_400000000000	USBDevice	Informational		
 Microsoft-Windows-USB-USBHUB	101	0	USBDeviceRemove(AnsiString fid_USBHUB_HC, Int32 fid_USBHUB_Device)	Remove	keyword_400000000000	USBDevice	Informational		
-Microsoft-Windows-USB-USBHUB	102	0	USBDeviceInformation(UInt8 fid_USBHUB_HC, Int64 fid_USBHUB_Device, GUID fid_USBHUB_Device_State, Pointer fid_DeviceDescriptor)	Information	Diagnostics keyword_400000000000	USBDevice	Informational		
+Microsoft-Windows-USB-USBHUB	102	0	USBDeviceInformation(UInt8 fid_USBHUB_HC, Int64 fid_USBHUB_Device, GUID fid_USBHUB_Device_State, Pointer fid_DeviceDescriptor)	Information	Diagnostics	USBDevice	Informational		
 Microsoft-Windows-USB-USBHUB	103	0	USBDeviceInformation103(Int8 fid_USBHUB_HC, UInt32 fid_USBHUB_Device, UnicodeString fid_DeviceDescription)	Information	Diagnostics keyword_400000000000	USBDevice	Informational		
 Microsoft-Windows-USB-USBHUB	110	0	USBDeviceStartDispatch(Int8 fid_USBHUB_HC, UInt32 fid_USBHUB_Device, UInt32 fid_Status)	Dispatch	Diagnostics	USBDeviceStart	Informational		
 Microsoft-Windows-USB-USBHUB	111	0	USBDeviceStartError(Int8 fid_USBHUB_HC, UInt32 fid_USBHUB_Device, UInt32 fid_Status)	Error	Diagnostics keyword_400000000000	USBDeviceStart	Error		

@@ -1,0 +1,13 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Power-CAD	100	0	Trace(UnicodeString Message)		Trace	Trace	Informational		
+Microsoft-Windows-Power-CAD	101	0	Error(AnsiString Function, UInt32 Line, HexInt32 ErrorCode)		Error	Error	Error		
+Microsoft-Windows-Power-CAD	201	0	Notify(UInt32 PowerSourceId, UInt32 MaxChargeCurrent, UInt32 PowerSourceInformation, UInt32 PowerSourceStatus, GUID ChargerId)		Notify	Notify	Informational		
+Microsoft-Windows-Power-CAD	202	0	Notify202(UInt32 PowerSourceId, UInt32 MaxChargeCurrent, UInt32 PowerSourceInformation, UInt32 PowerSourceStatus, GUID ChargerId)		Notify	Notify	Informational		
+Microsoft-Windows-Power-CAD	203	0	Notify203(UInt32 PowerSourceId, UInt32 MaxChargeCurrent, UInt32 PowerSourceInformation, UInt32 PowerSourceStatus, GUID ChargerId)		Notify	Notify	Informational		
+Microsoft-Windows-Power-CAD	204	0	Notify204(UInt32 PowerSourceId)		Notify	Notify	Informational		
+Microsoft-Windows-Power-CAD	205	0	Notify205(UInt32 PowerSourceId, UInt32 SourceOnline)		Notify	Notify	Informational		
+Microsoft-Windows-Power-CAD	206	0	Notify206(UInt32 Capacity, UInt32 FullChargedCapacity, UInt32 Voltage, Int32 Rate)		Notify	Notify	Informational		
+Microsoft-Windows-Power-CAD	207	0	Notify207(UInt32 Size, UInt32 BatteryTag, UInt32 InformationLevel, UInt32 ChargingSourceType, UInt32 VaData)		Notify	Notify	Informational		
+Microsoft-Windows-Power-CAD	208	0	Notify208(UInt32 BatteryTag, UInt32 InformationLevel, UInt32 ChargingSourceType, UInt32 Status)		Notify	Notify	Informational		
+Microsoft-Windows-Power-CAD	209	0	Notify209(UInt32 PowerSourceId, UInt16 Version, UInt32 Flags, UInt32 MaxCurrent, UInt32 Voltage, UInt32 PortType, UInt64 PortId, UInt32 PowerSourceInformation, GUID OemCharger)		Notify	Notify	Informational		
+Microsoft-Windows-Power-CAD	210	0	Notify210(UInt32 Size, UInt32 BatteryTag, UInt32 InformationLevel, UInt32 ChargingSourceType, UInt32 Reserved, UInt32 Flags, UInt32 MaxCurrent, UInt32 Voltage, UInt32 PortType, UInt64 PortId, Pointer PowerSourceInformation, GUID OemCharger)		Notify	Notify	Informational		

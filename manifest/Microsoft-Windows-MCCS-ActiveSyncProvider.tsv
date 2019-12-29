@@ -1,21 +1,17 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-MCCS-ActiveSyncProvider	1	0	task_0(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		Error keyword_400000000000	task_0	Error		
+Microsoft-Windows-MCCS-ActiveSyncProvider	1	0	task_0(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		Error	task_0	Error		
 Microsoft-Windows-MCCS-ActiveSyncProvider	2	0	task_02(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		Warning	task_0	Warning		
-Microsoft-Windows-MCCS-ActiveSyncProvider	101	0	task_0101(UnicodeString Prop_String, Int32 Prop_HResult)		Warning keyword_200000000000	task_0	Warning		
-Microsoft-Windows-MCCS-ActiveSyncProvider	102	0	task_0102(UnicodeString Prop_String, Int32 Prop_HResult)		Warning keyword_200000000000	task_0	Warning		
-Microsoft-Windows-MCCS-ActiveSyncProvider	103	0	task_0103(UnicodeString Prop_String, Int32 Prop_HResult)		Warning keyword_200000000000	task_0	Warning		
-Microsoft-Windows-MCCS-ActiveSyncProvider	201	0	task_0201()		Warning keyword_200000000000	task_0	Warning		
+Microsoft-Windows-MCCS-ActiveSyncProvider	101	0	task_0101(UnicodeString Prop_String, Int32 Prop_HResult)		Warning	task_0	Warning		
+Microsoft-Windows-MCCS-ActiveSyncProvider	102	0	task_0102(UnicodeString Prop_String, Int32 Prop_HResult)		Warning	task_0	Warning		
+Microsoft-Windows-MCCS-ActiveSyncProvider	103	0	task_0103(UnicodeString Prop_String, Int32 Prop_HResult)		Warning	task_0	Warning		
+Microsoft-Windows-MCCS-ActiveSyncProvider	201	0	task_0201()		Warning	task_0	Warning		
 Microsoft-Windows-MCCS-ActiveSyncProvider	301	0	task_0301(HexInt32 Prop_Dword1, UInt32 Prop_Dword2, UInt32 Prop_Dword3)		CommsService	task_0	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	302	0	task_0302(HexInt32 Prop_Dword)		CommsService	task_0	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	303	0	task_0303(HexInt32 Prop_Dword)		CommsService	task_0	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	304	0	task_0304(HexInt32 Prop_Dword1, AnsiString Prop_String1, UnicodeString Prop_String2, UInt32 Prop_Dword2, UInt32 Prop_Dword3, UInt32 Prop_Dword4, UInt32 Prop_Status)		CommsService	task_0	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	305	0	task_0305(HexInt32 Prop_Dword)		CommsService	task_0	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	306	0	task_0306(HexInt32 Prop_Dword, HexInt32 Prop_HRESULT)		CommsService	task_0	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	307	0	task_0307(HexInt32 Prop_Dword)		CommsService	task_0	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	308	0	task_0308(UnicodeString Prop_String_1, UnicodeString Prop_String_2, UnicodeString Prop_String_3)		CommsService	task_0	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	309	0	task_0309(HexInt32 Prop_Dword_1, UnicodeString Prop_String, UInt32 Prop_Dword_2, UInt32 Prop_Dword_3, Boolean Prop_Bool)		CommsService	task_0	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	310	0	task_0310(HexInt32 Prop_Dword_1, UnicodeString Prop_String, UInt32 Prop_Dword_2, UInt32 Prop_Dword_3)		CommsService	task_0	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	311	0	task_0311(HexInt32 Prop_Dword)		Warning	task_0	Warning		
 Microsoft-Windows-MCCS-ActiveSyncProvider	312	0	task_0312(UnicodeString Prop_String1, UInt32 Prop_Dword_1)		CommsService	task_0	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	313	0	task_0313(UnicodeString Prop_String1, UInt32 Prop_Dword_1)		CommsService	task_0	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	314	0	task_0314(UnicodeString Prop_String1, UInt32 Prop_Dword_1, UInt32 Prop_Dword_2)		CommsService	task_0	Informational		
@@ -38,17 +34,16 @@ Microsoft-Windows-MCCS-ActiveSyncProvider	330	0	task_0330(UnicodeString Prop_Str
 Microsoft-Windows-MCCS-ActiveSyncProvider	331	0	task_0331(UnicodeString Prop_String1, UInt32 Prop_Dword_1, UInt32 Prop_Dword_2)		CommsService	task_0	Warning		
 Microsoft-Windows-MCCS-ActiveSyncProvider	332	0	task_0332(UnicodeString Prop_String)		CommsService	task_0	Warning		
 Microsoft-Windows-MCCS-ActiveSyncProvider	333	0	task_0333(UnicodeString Prop_String1, UInt32 Prop_Dword1, UnicodeString Prop_String2, UInt32 Prop_Dword2, UnicodeString Prop_String3, UInt32 Prop_Dword3)		CommsService	task_0	Error		
-Microsoft-Windows-MCCS-ActiveSyncProvider	334	0	task_0334(UInt32 Prop_Dword_1, UnicodeString Prop_String1, UnicodeString Prop_String2)		CommsService keyword_400000000000	task_0	Warning		
-Microsoft-Windows-MCCS-ActiveSyncProvider	335	0	task_0335(UInt32 Prop_Dword_1, UnicodeString Prop_String1, UnicodeString Prop_String2, UInt32 Prop_Dword_2)		CommsService keyword_400000000000	task_0	Warning		
-Microsoft-Windows-MCCS-ActiveSyncProvider	336	0	task_0336(UInt32 Prop_Dword_1, UnicodeString Prop_String1, UnicodeString Prop_String2, UInt32 Prop_Dword_2)		CommsService keyword_400000000000	task_0	Warning		
+Microsoft-Windows-MCCS-ActiveSyncProvider	334	0	task_0334(UInt32 Prop_Dword_1, UnicodeString Prop_String1, UnicodeString Prop_String2)		CommsService	task_0	Warning		
+Microsoft-Windows-MCCS-ActiveSyncProvider	335	0	task_0335(UInt32 Prop_Dword_1, UnicodeString Prop_String1, UnicodeString Prop_String2, UInt32 Prop_Dword_2)		CommsService	task_0	Warning		
+Microsoft-Windows-MCCS-ActiveSyncProvider	336	0	task_0336(UInt32 Prop_Dword_1, UnicodeString Prop_String1, UnicodeString Prop_String2, UInt32 Prop_Dword_2)		CommsService	task_0	Warning		
 Microsoft-Windows-MCCS-ActiveSyncProvider	401	0	task_0401()		Warning	task_0	Warning		
 Microsoft-Windows-MCCS-ActiveSyncProvider	402	0	task_0402(Int32 Prop_ContentLengthBytes, AnsiString Prop_ContentChars)		Error	task_0	Error		
 Microsoft-Windows-MCCS-ActiveSyncProvider	403	0	task_0403()		Warning	task_0	Warning		
-Microsoft-Windows-MCCS-ActiveSyncProvider	421	0	task_0421(UnicodeString Prop_String, Int32 Prop_HResult)		Warning keyword_200000000000	task_0	Warning		
-Microsoft-Windows-MCCS-ActiveSyncProvider	422	0	task_0422(UnicodeString Prop_String, Int32 Prop_HResult)		Warning keyword_200000000000	task_0	Warning		
+Microsoft-Windows-MCCS-ActiveSyncProvider	421	0	task_0421(UnicodeString Prop_String, Int32 Prop_HResult)		Warning	task_0	Warning		
+Microsoft-Windows-MCCS-ActiveSyncProvider	422	0	task_0422(UnicodeString Prop_String, Int32 Prop_HResult)		Warning	task_0	Warning		
 Microsoft-Windows-MCCS-ActiveSyncProvider	423	0	task_0423(UInt32 Prop_Dword_1, UnicodeString Prop_String1, HexInt32 Prop_Dword_2, Int32 Prop_HResult)		CommsService	task_0	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	424	0	task_0424(UInt32 Prop_Dword_1, UnicodeString Prop_String1, HexInt32 Prop_Dword_2, Int32 Prop_HResult)		CommsService	task_0	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	501	0	task_0501(HexInt32 Prop_Dword)		Error keyword_200000000000	task_0	Error		
+Microsoft-Windows-MCCS-ActiveSyncProvider	501	0	task_0501(HexInt32 Prop_Dword)		Error	task_0	Error		
 Microsoft-Windows-MCCS-ActiveSyncProvider	510	0	task_0510(UInt32 Prop_Length, UnicodeString Prop_String)		PeopleSync	task_0	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	511	0	task_0511(UnicodeString Prop_String)		PeopleSync	task_0	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	512	0	task_0512(UnicodeString Prop_String_1, UnicodeString Prop_String_2)		PeopleSync	task_0	Informational		
@@ -79,8 +74,6 @@ Microsoft-Windows-MCCS-ActiveSyncProvider	536	0	task_0536(UnicodeString Prop_Str
 Microsoft-Windows-MCCS-ActiveSyncProvider	537	0	task_0537(UInt32 Prop_Dword_1, UInt32 Prop_Dword_2, UInt32 Prop_Dword_3)		PeopleSync	task_0	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	538	0	task_0538(UnicodeString Prop_String)		PeopleSync	task_0	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	551	0	task_0551(UInt32 Prop_Dword_1, UInt32 Prop_Dword_2)		Error	task_0	Error		
-Microsoft-Windows-MCCS-ActiveSyncProvider	600	0	SPERF_TAG_SYNC_SESSIONStart()	Start	Performance	SPERF_TAG_SYNC_SESSION	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	601	0	SPERF_TAG_SYNC_SESSIONStop()	Stop	Performance	SPERF_TAG_SYNC_SESSION	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	602	0	SPERF_TAG_SYNC_ENGINEStart()	Start	Performance	SPERF_TAG_SYNC_ENGINE	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	603	0	SPERF_TAG_SYNC_ENGINEStop()	Stop	Performance	SPERF_TAG_SYNC_ENGINE	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	604	0	SPERF_TAG_GET_SERVER_CHANGE_CNTStart()	Start	Performance	SPERF_TAG_GET_SERVER_CHANGE_CNT	Informational		
@@ -103,8 +96,6 @@ Microsoft-Windows-MCCS-ActiveSyncProvider	620	0	SPERF_TAG_SESSION_BEGINSYNCStart
 Microsoft-Windows-MCCS-ActiveSyncProvider	621	0	SPERF_TAG_SESSION_BEGINSYNCStop()	Stop	Performance	SPERF_TAG_SESSION_BEGINSYNC	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	622	0	SPERF_TAG_PROCESSRESPONSEStart()	Start	Performance	SPERF_TAG_PROCESSRESPONSE	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	623	0	SPERF_TAG_PROCESSRESPONSEStop()	Stop	Performance	SPERF_TAG_PROCESSRESPONSE	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	624	0	SPERF_TAG_DETERMINE_CHANGESStart()	Start	Performance	SPERF_TAG_DETERMINE_CHANGES	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	625	0	SPERF_TAG_DETERMINE_CHANGESStop()	Stop	Performance	SPERF_TAG_DETERMINE_CHANGES	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	626	0	SPERF_TAG_PIM_CHANGECOUNTStart()	Start	Performance	SPERF_TAG_PIM_CHANGECOUNT	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	627	0	SPERF_TAG_PIM_CHANGECOUNTStop()	Stop	Performance	SPERF_TAG_PIM_CHANGECOUNT	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	628	0	SPERF_TAG_GET_SYNC_CMDStart()	Start	Performance	SPERF_TAG_GET_SYNC_CMD	Informational		
@@ -117,124 +108,38 @@ Microsoft-Windows-MCCS-ActiveSyncProvider	634	0	SPERF_TAG_WRITE_STOREStart()	Sta
 Microsoft-Windows-MCCS-ActiveSyncProvider	635	0	SPERF_TAG_WRITE_STOREStop()	Stop	Performance	SPERF_TAG_WRITE_STORE	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	636	0	SPERF_TAG_GET_NAMEDPROPIDStart()	Start	Performance	SPERF_TAG_GET_NAMEDPROPID	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	637	0	SPERF_TAG_GET_NAMEDPROPIDStop()	Stop	Performance	SPERF_TAG_GET_NAMEDPROPID	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	638	0	SPERF_TAG_MSGSTORE_GETIDSStart()	Start	Performance	SPERF_TAG_MSGSTORE_GETIDS	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	639	0	SPERF_TAG_MSGSTORE_GETIDSStop()	Stop	Performance	SPERF_TAG_MSGSTORE_GETIDS	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	640	0	SPERF_TAG_SYNC_MAILWATCHERStart()	Start	Performance	SPERF_TAG_SYNC_MAILWATCHER	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	641	0	SPERF_TAG_SYNC_MAILWATCHERStop()	Stop	Performance	SPERF_TAG_SYNC_MAILWATCHER	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	642	0	SPERF_TAG_PIM_ITEMSAVEStart()	Start	Performance	SPERF_TAG_PIM_ITEMSAVE	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	643	0	SPERF_TAG_PIM_ITEMSAVEStop()	Stop	Performance	SPERF_TAG_PIM_ITEMSAVE	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	644	0	SPERF_TAG_PIM_SETPROPERTYStart()	Start	Performance	SPERF_TAG_PIM_SETPROPERTY	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	645	0	SPERF_TAG_PIM_SETPROPERTYStop()	Stop	Performance	SPERF_TAG_PIM_SETPROPERTY	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	646	0	SPERF_TAG_SYNC_SRVCMDStart(HexInt32 Prop_Dword)	Start	Performance	SPERF_TAG_SYNC_SRVCMD	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	647	0	SPERF_TAG_SYNC_SRVCMDStop(HexInt32 Prop_Dword)	Stop	Performance	SPERF_TAG_SYNC_SRVCMD	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	654	0	SPERF_TAG_INBOXStart()	Start	Performance	SPERF_TAG_INBOX	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	655	0	SPERF_TAG_INBOXStop()	Stop	Performance	SPERF_TAG_INBOX	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	656	0	SPERF_TAG_CONTACTSStart()	Start	Performance	SPERF_TAG_CONTACTS	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	657	0	SPERF_TAG_CONTACTSStop()	Stop	Performance	SPERF_TAG_CONTACTS	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	658	0	SPERF_TAG_CALENDARStart()	Start	Performance	SPERF_TAG_CALENDAR	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	659	0	SPERF_TAG_CALENDARStop()	Stop	Performance	SPERF_TAG_CALENDAR	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	660	0	SPERF_TAG_TASKSStart()	Start	Performance	SPERF_TAG_TASKS	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	661	0	SPERF_TAG_TASKSStop()	Stop	Performance	SPERF_TAG_TASKS	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	662	0	SPERF_TAG_SYNC_MEETING_REQUESTSStart()	Start	Performance	SPERF_TAG_SYNC_MEETING_REQUESTS	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	663	0	SPERF_TAG_SYNC_MEETING_REQUESTSStop()	Stop	Performance	SPERF_TAG_SYNC_MEETING_REQUESTS	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	664	0	SPERF_TAG_SEND_MAILStart()	Start	Performance	SPERF_TAG_SEND_MAIL	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	665	0	SPERF_TAG_SEND_MAILStop()	Stop	Performance	SPERF_TAG_SEND_MAIL	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	666	0	SPERF_TAG_CONVERT_TO_MIMEStart()	Start	Performance	SPERF_TAG_CONVERT_TO_MIME	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	667	0	SPERF_TAG_CONVERT_TO_MIMEStop()	Stop	Performance	SPERF_TAG_CONVERT_TO_MIME	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	668	0	SPERF_TAG_SMART_REPLYStart()	Start	Performance	SPERF_TAG_SMART_REPLY	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	669	0	SPERF_TAG_SMART_REPLYStop()	Stop	Performance	SPERF_TAG_SMART_REPLY	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	670	0	SPERF_TAG_GET_ATTACHMENTSStart()	Start	Performance	SPERF_TAG_GET_ATTACHMENTS	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	671	0	SPERF_TAG_GET_ATTACHMENTSStop()	Stop	Performance	SPERF_TAG_GET_ATTACHMENTS	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	672	0	SPERF_TAG_GET_ONE_ATTACHMENTStart()	Start	Performance	SPERF_TAG_GET_ONE_ATTACHMENT	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	673	0	SPERF_TAG_GET_ONE_ATTACHMENTStop()	Stop	Performance	SPERF_TAG_GET_ONE_ATTACHMENT	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	674	0	SPERF_TAG_GET_DEVICE_CHANGE_CNTStart()	Start	Performance	SPERF_TAG_GET_DEVICE_CHANGE_CNT	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	675	0	SPERF_TAG_GET_DEVICE_CHANGE_CNTStop()	Stop	Performance	SPERF_TAG_GET_DEVICE_CHANGE_CNT	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	676	0	SPERF_TAG_GET_FETCH_IDSStart()	Start	Performance	SPERF_TAG_GET_FETCH_IDS	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	677	0	SPERF_TAG_GET_FETCH_IDSStop()	Stop	Performance	SPERF_TAG_GET_FETCH_IDS	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	678	0	SPERF_TAG_PURGE_CONTACTSStart()	Start	Performance	SPERF_TAG_PURGE_CONTACTS	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	679	0	SPERF_TAG_PURGE_CONTACTSStop()	Stop	Performance	SPERF_TAG_PURGE_CONTACTS	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	680	0	SPERF_TAG_PURGE_CALENDARStart()	Start	Performance	SPERF_TAG_PURGE_CALENDAR	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	681	0	SPERF_TAG_PURGE_CALENDARStop()	Stop	Performance	SPERF_TAG_PURGE_CALENDAR	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	682	0	SPERF_TAG_PURGE_TASKSStart()	Start	Performance	SPERF_TAG_PURGE_TASKS	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	683	0	SPERF_TAG_PURGE_TASKSStop()	Stop	Performance	SPERF_TAG_PURGE_TASKS	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	684	0	SPERF_TAG_PURGE_INBOXStart()	Start	Performance	SPERF_TAG_PURGE_INBOX	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	685	0	SPERF_TAG_PURGE_INBOXStop()	Stop	Performance	SPERF_TAG_PURGE_INBOX	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	686	0	SPERF_TAG_PURGE_NOTESStart()	Start	Performance	SPERF_TAG_PURGE_NOTES	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	687	0	SPERF_TAG_PURGE_NOTESStop()	Stop	Performance	SPERF_TAG_PURGE_NOTES	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	688	0	SPERF_TAG_PURGE_SMSStart()	Start	Performance	SPERF_TAG_PURGE_SMS	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	689	0	SPERF_TAG_PURGE_SMSStop()	Stop	Performance	SPERF_TAG_PURGE_SMS	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	690	0	SPERF_TAG_UPDATE_TRANSPORTStart()	Start	Performance	SPERF_TAG_UPDATE_TRANSPORT	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	691	0	SPERF_TAG_UPDATE_TRANSPORTStop()	Stop	Performance	SPERF_TAG_UPDATE_TRANSPORT	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	692	0	SPERF_TAG_GET_NEXT_CHANGEStart()	Start	Performance	SPERF_TAG_GET_NEXT_CHANGE	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	693	0	SPERF_TAG_GET_NEXT_CHANGEStop()	Stop	Performance	SPERF_TAG_GET_NEXT_CHANGE	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	694	0	SPERF_TAG_POOM_LOGONStart()	Start	Performance	SPERF_TAG_POOM_LOGON	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	695	0	SPERF_TAG_POOM_LOGONStop()	Stop	Performance	SPERF_TAG_POOM_LOGON	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	696	0	SPERF_TAG_POOM_LOGOFFStart()	Start	Performance	SPERF_TAG_POOM_LOGOFF	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	697	0	SPERF_TAG_POOM_LOGOFFStop()	Stop	Performance	SPERF_TAG_POOM_LOGOFF	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	698	0	SPERF_TAG_SYNC_ONE_WNDStart()	Start	Performance	SPERF_TAG_SYNC_ONE_WND	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	699	0	SPERF_TAG_SYNC_ONE_WNDStop()	Stop	Performance	SPERF_TAG_SYNC_ONE_WND	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	700	0	SPERF_TAG_SYNC_NEW_SRC_NEXTStart()	Start	Performance	SPERF_TAG_SYNC_NEW_SRC_NEXT	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	701	0	SPERF_TAG_SYNC_NEW_SRC_NEXTStop()	Stop	Performance	SPERF_TAG_SYNC_NEW_SRC_NEXT	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	702	0	SPERF_TAG_FOLDER_DELETE_CALLBACKStart()	Start	Performance	SPERF_TAG_FOLDER_DELETE_CALLBACK	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	703	0	SPERF_TAG_FOLDER_DELETE_CALLBACKStop()	Stop	Performance	SPERF_TAG_FOLDER_DELETE_CALLBACK	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	704	0	SPERF_TAG_ALL_STORES_EMPTYStart()	Start	Performance	SPERF_TAG_ALL_STORES_EMPTY	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	705	0	SPERF_TAG_ALL_STORES_EMPTYStop()	Stop	Performance	SPERF_TAG_ALL_STORES_EMPTY	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	706	0	SPERF_TAG_COMPACT_HEAPStart()	Start	Performance	SPERF_TAG_COMPACT_HEAP	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	707	0	SPERF_TAG_COMPACT_HEAPStop()	Stop	Performance	SPERF_TAG_COMPACT_HEAP	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	708	0	SPERF_TAG_PINGStart()	Start	Performance	SPERF_TAG_PING	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	709	0	SPERF_TAG_PINGStop()	Stop	Performance	SPERF_TAG_PING	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	710	0	SPERF_TAG_REMOTE_FETCH_SVCStart()	Start	Performance	SPERF_TAG_REMOTE_FETCH_SVC	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	711	0	SPERF_TAG_REMOTE_FETCH_SVCStop()	Stop	Performance	SPERF_TAG_REMOTE_FETCH_SVC	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	712	0	SPERF_TAG_FETCH_SERVICEStart()	Start	Performance	SPERF_TAG_FETCH_SERVICE	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	713	0	SPERF_TAG_FETCH_SERVICEStop()	Stop	Performance	SPERF_TAG_FETCH_SERVICE	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	714	0	SPERF_TAG_FETCH_DOCINFOStart()	Start	Performance	SPERF_TAG_FETCH_DOCINFO	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	715	0	SPERF_TAG_FETCH_DOCINFOStop()	Stop	Performance	SPERF_TAG_FETCH_DOCINFO	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	716	0	SPERF_TAG_FETCH_SENDRECVStart()	Start	Performance	SPERF_TAG_FETCH_SENDRECV	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	717	0	SPERF_TAG_FETCH_SENDRECVStop()	Stop	Performance	SPERF_TAG_FETCH_SENDRECV	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	718	0	SPERF_TAG_SEARCH_FALLBACKStart()	Start	Performance	SPERF_TAG_SEARCH_FALLBACK	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	719	0	SPERF_TAG_SEARCH_FALLBACKStop()	Stop	Performance	SPERF_TAG_SEARCH_FALLBACK	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	720	0	SPERF_TAG_SERVERSYNC_INITStart()	Start	Performance	SPERF_TAG_SERVERSYNC_INIT	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	721	0	SPERF_TAG_SERVERSYNC_INITStop()	Stop	Performance	SPERF_TAG_SERVERSYNC_INIT	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	722	0	SPERF_TAG_SYNC_RECIPIENT_INFOStart()	Start	Performance	SPERF_TAG_SYNC_RECIPIENT_INFO	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	723	0	SPERF_TAG_SYNC_RECIPIENT_INFOStop()	Stop	Performance	SPERF_TAG_SYNC_RECIPIENT_INFO	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	724	0	SPERF_TAG_HTTP_SENDREQUESTStart()	Start	Performance	SPERF_TAG_HTTP_SENDREQUEST	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	725	0	SPERF_TAG_HTTP_SENDREQUESTStop()	Stop	Performance	SPERF_TAG_HTTP_SENDREQUEST	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	726	0	SPERF_TAG_HTTP_GETRESPONSEStart()	Start	Performance	SPERF_TAG_HTTP_GETRESPONSE	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	727	0	SPERF_TAG_HTTP_GETRESPONSEStop()	Stop	Performance	SPERF_TAG_HTTP_GETRESPONSE	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	728	0	SPERF_TAG_UI_SYNCALLStart()	Start	Performance	SPERF_TAG_UI_SYNCALL	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	729	0	SPERF_TAG_UI_SYNCALLStop()	Stop	Performance	SPERF_TAG_UI_SYNCALL	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	730	0	SPERF_TAG_UI_SYNCSTOPStart()	Start	Performance	SPERF_TAG_UI_SYNCSTOP	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	731	0	SPERF_TAG_UI_SYNCSTOP()	Stop	Performance	SPERF_TAG_UI_SYNCSTOP	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	732	0	SPERF_TAG_AUTODISCOVERStart()	Start	Performance	SPERF_TAG_AUTODISCOVER	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	733	0	SPERF_TAG_AUTODISCOVERStop()	Stop	Performance	SPERF_TAG_AUTODISCOVER	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	734	0	SPERF_TAG_CSP_SESSIONStart()	Start	Performance	SPERF_TAG_CSP_SESSION	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	735	0	SPERF_TAG_CSP_SESSIONStop()	Stop	Performance	SPERF_TAG_CSP_SESSION	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	736	0	SPERF_TAG_CSP_PUREStart()	Start	Performance	SPERF_TAG_CSP_PURE	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	737	0	SPERF_TAG_CSP_PUREStop()	Stop	Performance	SPERF_TAG_CSP_PURE	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	738	0	SPERF_TAG_CSP_LOAD_DSStart()	Start	Performance	SPERF_TAG_CSP_LOAD_DS	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	739	0	SPERF_TAG_CSP_LOAD_DSStop()	Stop	Performance	SPERF_TAG_CSP_LOAD_DS	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	740	0	SPERF_TAG_CSP_VALIDATEStart()	Start	Performance	SPERF_TAG_CSP_VALIDATE	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	741	0	SPERF_TAG_CSP_VALIDATEStop()	Stop	Performance	SPERF_TAG_CSP_VALIDATE	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	742	0	SPERF_TAG_CSP_SAVEStart()	Start	Performance	SPERF_TAG_CSP_SAVE	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	743	0	SPERF_TAG_CSP_SAVEStop()	Stop	Performance	SPERF_TAG_CSP_SAVE	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	744	0	SPERF_TAG_AA_SAVEStart()	Start	Performance	SPERF_TAG_AA_SAVE	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	745	0	SPERF_TAG_AA_SAVEStop()	Stop	Performance	SPERF_TAG_AA_SAVE	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	746	0	SPERF_TAG_AA_LOADStart()	Start	Performance	SPERF_TAG_AA_LOAD	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	747	0	SPERF_TAG_AA_LOADStop()	Stop	Performance	SPERF_TAG_AA_LOAD	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	748	0	SPERF_TAG_AA_PROCESSStart()	Start	Performance	SPERF_TAG_AA_PROCESS	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	749	0	SPERF_TAG_AA_PROCESSStop()	Stop	Performance	SPERF_TAG_AA_PROCESS	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	750	0	SPERF_TAG_FTCH_SESSIONStart()	Start	Performance	SPERF_TAG_FTCH_SESSION	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	751	0	SPERF_TAG_FTCH_SESSIONStop()	Stop	Performance	SPERF_TAG_FTCH_SESSION	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	752	0	SYNC_CMD_INVALIDStart()	Start	Performance	SYNC_CMD_INVALID	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	753	0	SYNC_CMD_INVALIDStop()	Stop	Performance	SYNC_CMD_INVALID	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	754	0	SPERF_TAG_PEOPLE_MERGEStart()	Start	Performance	SPERF_TAG_PEOPLE_MERGE	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	755	0	SPERF_TAG_PEOPLE_MERGEStop()	Stop	Performance	SPERF_TAG_PEOPLE_MERGE	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	756	0	SPERF_TAG_PERSONS_MERGEStart()	Start	Performance	SPERF_TAG_PERSONS_MERGE	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	757	0	SPERF_TAG_PERSONS_MERGEStop()	Stop	Performance	SPERF_TAG_PERSONS_MERGE	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	758	0	SPERF_TAG_LINKS_MERGEStart()	Start	Performance	SPERF_TAG_LINKS_MERGE	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	759	0	SPERF_TAG_LINKS_MERGEStop()	Stop	Performance	SPERF_TAG_LINKS_MERGE	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	760	0	SPERF_TAG_PURGE_OBSOLETE_PERSONS_AND_LINKSStart()	Start	Performance	SPERF_TAG_PURGE_OBSOLETE_PERSONS_AND_LINKS	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	761	0	SPERF_TAG_PURGE_OBSOLETE_PERSONS_AND_LINKSStop()	Stop	Performance	SPERF_TAG_PURGE_OBSOLETE_PERSONS_AND_LINKS	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	762	0	SPERF_TAG_FORGET_IRRELEVANT_PEOPLE_CHANGESStart()	Start	Performance	SPERF_TAG_FORGET_IRRELEVANT_PEOPLE_CHANGES	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	763	0	SPERF_TAG_FORGET_IRRELEVANT_PEOPLE_CHANGESStop()	Stop	Performance	SPERF_TAG_FORGET_IRRELEVANT_PEOPLE_CHANGES	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	764	0	SPERF_TAG_GET_PEOPLE_CHANGE_BATCHStart()	Start	Performance	SPERF_TAG_GET_PEOPLE_CHANGE_BATCH	Informational		
@@ -243,13 +148,7 @@ Microsoft-Windows-MCCS-ActiveSyncProvider	766	0	SPERF_TAG_MERGE_PERSONS_CHANGE_B
 Microsoft-Windows-MCCS-ActiveSyncProvider	767	0	SPERF_TAG_MERGE_PERSONS_CHANGE_BATCHStop()	Stop	Performance	SPERF_TAG_MERGE_PERSONS_CHANGE_BATCH	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	768	0	SPERF_TAG_MERGE_LINKS_CHANGE_BATCHStart()	Start	Performance	SPERF_TAG_MERGE_LINKS_CHANGE_BATCH	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	769	0	SPERF_TAG_MERGE_LINKS_CHANGE_BATCHStop()	Stop	Performance	SPERF_TAG_MERGE_LINKS_CHANGE_BATCH	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	770	0	SPERF_TAG_FETCH_AND_PROCESS_ONE_ATTACHMENT_BATCHStart()	Start	Performance	SPERF_TAG_FETCH_AND_PROCESS_ONE_ATTACHMENT_BATCH	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	771	0	SPERF_TAG_FETCH_AND_PROCESS_ONE_ATTACHMENT_BATCHStop()	Stop	Performance	SPERF_TAG_FETCH_AND_PROCESS_ONE_ATTACHMENT_BATCH	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	772	0	SPERF_TAG_FETCH_ONE_ATTACHMENT_BATCHStart()	Start	Performance	SPERF_TAG_FETCH_ONE_ATTACHMENT_BATCH	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	773	0	SPERF_TAG_FETCH_ONE_ATTACHMENT_BATCHStop()	Stop	Performance	SPERF_TAG_FETCH_ONE_ATTACHMENT_BATCH	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	800	0	task_0800(UInt32 Prop_Dword_1, UInt32 Prop_Dword_2)		CommsService	task_0	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	801	0	task_0801(HexInt32 Prop_Dword)		CommsService	task_0	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	802	0	task_0802(HexInt32 Prop_Dword)		CommsService	task_0	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	803	0	task_0803(HexInt32 Prop_Dword, HexInt32 Prop_HRESULT)		Warning	task_0	Warning		
 Microsoft-Windows-MCCS-ActiveSyncProvider	804	0	task_0804(HexInt32 Prop_Dword)		CommsService	task_0	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	805	0	task_0805(HexInt32 Prop_Dword)		CommsService	task_0	Informational		
@@ -260,9 +159,7 @@ Microsoft-Windows-MCCS-ActiveSyncProvider	809	0	task_0809(HexInt32 Prop_Dword)		
 Microsoft-Windows-MCCS-ActiveSyncProvider	850	0	task_0850(HexInt32 Prop_Dword, HexInt32 Prop_HRESULT)		CommsService	task_0	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	851	0	task_0851(UInt64 Prop_Ulong, HexInt32 Prop_Hex)		CommsService	task_0	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	852	0	task_0852(HexInt32 Prop_HRESULT, UnicodeString Prop_String1, HexInt32 Prop_Dword)		CommsService	task_0	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	901	0	task_0901(HexInt32 Prop_Dword, HexInt32 Prop_HRESULT)		Error keyword_400000000000	task_0	Error		
-Microsoft-Windows-MCCS-ActiveSyncProvider	1001	0	task_01001(HexInt32 Prop_Dword)		StateTransition	task_0	Informational		
-Microsoft-Windows-MCCS-ActiveSyncProvider	1002	0	task_01002(HexInt32 Prop_Dword)		StateTransition	task_0	Informational		
+Microsoft-Windows-MCCS-ActiveSyncProvider	901	0	task_0901(HexInt32 Prop_Dword, HexInt32 Prop_HRESULT)		Error	task_0	Error		
 Microsoft-Windows-MCCS-ActiveSyncProvider	1010	0	task_01010(GUID Prop_Guid, HexInt32 Prop_HexInt32)		CommsService	task_0	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	1011	0	task_01011(GUID Prop_Guid, HexInt32 Prop_HexInt32)		CommsService	task_0	Informational		
 Microsoft-Windows-MCCS-ActiveSyncProvider	1021	0	task_01021(HexInt32 Prop_Dword)		CommsService	task_0	Warning		

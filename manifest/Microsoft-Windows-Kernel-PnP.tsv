@@ -74,15 +74,15 @@ Microsoft-Windows-Kernel-PnP	421	0	task_0421(UnicodeString DeviceInstanceId, GUI
 Microsoft-Windows-Kernel-PnP	430	0	task_0430(UnicodeString DeviceInstanceId)			task_0	Informational		
 Microsoft-Windows-Kernel-PnP	440	0	task_0440(UnicodeString DeviceInstanceId, UnicodeString LastDeviceInstanceId, GUID ClassGuid, UnicodeString LocationPath, HexInt64 MigrationRank, Boolean Present, HexInt32 Status)			task_0	Informational		
 Microsoft-Windows-Kernel-PnP	441	0	task_0441(UnicodeString DeviceInstanceId, UnicodeString LastDeviceInstanceId, GUID ClassGuid, UnicodeString LocationPath, HexInt64 MigrationRank, Boolean Present, HexInt32 Status)			task_0	Error		
-Microsoft-Windows-Kernel-PnP	500	0	DevQuery_QueryProcessingQueryStart(Pointer QueryAddress, UInt32 ProcessId, UnicodeString ObjectType, UnicodeString QueryType, UnicodeString ObjectId, UnicodeString QueryFlags, UnicodeString PreferredLanguages, UnicodeString RequestedProperties, UnicodeString FilterExpression)	QueryStart	DevQuery	DevQuery_QueryProcessing	Informational		
+Microsoft-Windows-Kernel-PnP	500	0	DevQuery_QueryProcessingQueryStart(Pointer QueryAddress, UInt32 ProcessId, UnicodeString ObjectType, UnicodeString QueryType, UnicodeString ObjectId, UnicodeString QueryFlags, UnicodeString PreferredLanguages, UnicodeString RequestedProperties, UnicodeString FilterExpression)	QueryStart	DevQuery ObjectLists	DevQuery_QueryProcessing	Informational		
 Microsoft-Windows-Kernel-PnP	501	0	DevQuery_QueryProcessingProcessingStart(Pointer QueryAddress)	ProcessingStart	DevQuery	DevQuery_QueryProcessing	Informational		
 Microsoft-Windows-Kernel-PnP	502	0	DevQuery_QueryProcessingProcessingStop(Pointer QueryAddress)	ProcessingStop	DevQuery	DevQuery_QueryProcessing	Informational		
-Microsoft-Windows-Kernel-PnP	503	0	DevQuery_QueryProcessingQueryStop(Pointer QueryAddress)	QueryStop	DevQuery	DevQuery_QueryProcessing	Informational		
+Microsoft-Windows-Kernel-PnP	503	0	DevQuery_QueryProcessingQueryStop(Pointer QueryAddress)	QueryStop	DevQuery ObjectLists	DevQuery_QueryProcessing	Informational		
 Microsoft-Windows-Kernel-PnP	600	0	DriverOverride(HexInt32 HardwareConfigurationId, UnicodeString Driver, HexInt32 StartType)			DriverOverride	Informational		
-Microsoft-Windows-Kernel-PnP	700	0	CfgMgr_DeviceListStart(UnicodeString Filter, UnicodeString FilterBy, Boolean OnlyPresent)	Start	CfgMgr	CfgMgr_DeviceList	Informational		
-Microsoft-Windows-Kernel-PnP	701	0	CfgMgr_DeviceListStop(HexInt32 Result)	Stop	CfgMgr	CfgMgr_DeviceList	Informational		
-Microsoft-Windows-Kernel-PnP	702	0	CfgMgr_DeviceInterfaceListStart(GUID Class, UnicodeString Device, Boolean OnlyPresent)	Start	CfgMgr	CfgMgr_DeviceInterfaceList	Informational		
-Microsoft-Windows-Kernel-PnP	703	0	CfgMgr_DeviceInterfaceListStop(HexInt32 Result)	Stop	CfgMgr	CfgMgr_DeviceInterfaceList	Informational		
+Microsoft-Windows-Kernel-PnP	700	0	CfgMgr_DeviceListStart(UnicodeString Filter, UnicodeString FilterBy, Boolean OnlyPresent)	Start	CfgMgr ObjectLists	CfgMgr_DeviceList	Informational		
+Microsoft-Windows-Kernel-PnP	701	0	CfgMgr_DeviceListStop(HexInt32 Result)	Stop	CfgMgr ObjectLists	CfgMgr_DeviceList	Informational		
+Microsoft-Windows-Kernel-PnP	702	0	CfgMgr_DeviceInterfaceListStart(GUID Class, UnicodeString Device, Boolean OnlyPresent)	Start	CfgMgr ObjectLists	CfgMgr_DeviceInterfaceList	Informational		
+Microsoft-Windows-Kernel-PnP	703	0	CfgMgr_DeviceInterfaceListStop(HexInt32 Result)	Stop	CfgMgr ObjectLists	CfgMgr_DeviceInterfaceList	Informational		
 Microsoft-Windows-Kernel-PnP	704	0	CfgMgr_QueryRemoveStart(HexInt32 QueryRemoveType, UnicodeString Device)	Start	CfgMgr	CfgMgr_QueryRemove	Informational		
 Microsoft-Windows-Kernel-PnP	705	0	CfgMgr_QueryRemoveStop(UnicodeString Device)	Stop	CfgMgr	CfgMgr_QueryRemove	Informational		
 Microsoft-Windows-Kernel-PnP	800	0	ProcessNewDeviceStart(Pointer DeviceNode)	Start	Enumeration	ProcessNewDevice	Informational		

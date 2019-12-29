@@ -14,6 +14,8 @@ Microsoft-AppV-Client	12	1	ClientShutdown_V1(UInt32 ErrorHigh, UInt32 ErrorLow)	
 Microsoft-AppV-Client	13	0	APIRequest(Int32 Error)			APIRequest	Warning		
 Microsoft-AppV-Client	14	1	ClientStartupStart14_V1()	Start	Startup	ClientStartup	Error		
 Microsoft-AppV-Client	15	1	ClientStartupStart15_V1()	Start	Startup	ClientStartup	Error		
+Microsoft-AppV-Client	16	1	ClientStartupStart16_V1(UnicodeString StringParam, UInt32 ErrorHigh, UInt32 ErrorLow)	Start	Startup	ClientStartup	Error		
+Microsoft-AppV-Client	17	1	ClientStartupStart17_V1(UnicodeString StringParam1, UnicodeString StringParam2, UInt32 ErrorHigh, UInt32 ErrorLow)	Start	Startup	ClientStartup	Error		
 Microsoft-AppV-Client	101	1	APIRequestStart_V1(UnicodeString Item)	Start		APIRequest	Informational		
 Microsoft-AppV-Client	102	1	APIRequestStop_V1(UnicodeString Name, Int32 HResult)	Stop		APIRequest	Informational		
 Microsoft-AppV-Client	1001	1	ClientShutdownStop1001_V1(UInt32 ErrorHigh, UInt32 ErrorLow)	Stop	Shutdown	ClientShutdown	Error		
@@ -148,6 +150,7 @@ Microsoft-AppV-Client	8012	1	ConfigureVirtualApplicationConnectionGroup8012_V1(G
 Microsoft-AppV-Client	8013	1	ConfigureVirtualApplicationConnectionGroup8013_V1(GUID ConnectionGroup, GUID Version, UInt32 ErrorHigh, UInt32 ErrorLow, UnicodeString Sid)		DynamicConfiguration	ConfigureVirtualApplicationConnectionGroup	Warning		
 Microsoft-AppV-Client	8014	1	ConfigureVirtualApplicationConnectionGroup8014_V1(GUID ConnectionGroup, GUID Version, UInt32 ErrorHigh, UInt32 ErrorLow, UnicodeString Sid)		DynamicConfiguration	ConfigureVirtualApplicationConnectionGroup	Warning		
 Microsoft-AppV-Client	8015	1	ConfigurePackage8015_V1(GUID Package, GUID Version, UInt32 ErrorHigh, UInt32 ErrorLow)		DynamicConfiguration	ConfigurePackage	Error		
+Microsoft-AppV-Client	8016	1	ConfigurePackage8016_V1(UnicodeString tString, GUID PackageId, GUID PackageVersion)		DynamicConfiguration	ConfigurePackage	Warning		
 Microsoft-AppV-Client	9001	1	PowerShellInvoke_V1(UnicodeString Command, UnicodeString ErrorWarning)		ClientManagement	PowerShellInvoke	Error		
 Microsoft-AppV-Client	9002	1	PowerShellInvoke9002_V1(UnicodeString Command, UnicodeString ErrorWarning)		ClientManagement	PowerShellInvoke	Warning		
 Microsoft-AppV-Client	9003	1	PSObjectGetPropertyValue_V1()		ClientManagement	PSObjectGetPropertyValue	Error		
@@ -180,6 +183,11 @@ Microsoft-AppV-Client	13004	1	ConfigurePackage13004_V1(UnicodeString Item1, Unic
 Microsoft-AppV-Client	13005	1	PublishPackage13005_V1(UInt32 ErrorHigh, UInt32 ErrorLow)		VFS	PublishPackage	Error		
 Microsoft-AppV-Client	13006	1	PublishVirtualApplicationConnectionGroup13006_V1(UInt32 ErrorHigh, UInt32 ErrorLow)		VFS	PublishVirtualApplicationConnectionGroup	Error		
 Microsoft-AppV-Client	13007	1	ApplicationLaunch13007_V1(UnicodeString Item)		VirtualAppLaunch	ApplicationLaunch	Warning		
+Microsoft-AppV-Client	13008	1	ApplicationLaunch13008_V1(UInt64 ErrorHigh, UInt64 ErrorLow, UInt64 ProcessID, GUID PackageId, GUID PackageVersion)		VirtualAppLaunch	ApplicationLaunch	Error		
+Microsoft-AppV-Client	13009	1	ApplicationLaunch13009_V1(GUID Package, GUID Version, UInt32 ErrorHigh, UInt32 ErrorLow)		VirtualAppLaunch	ApplicationLaunch	Error		
+Microsoft-AppV-Client	13010	1	ApplicationLaunch13010_V1(GUID Package, GUID Version, UInt32 ErrorHigh, UInt32 ErrorLow)		VirtualAppLaunch	ApplicationLaunch	Error		
+Microsoft-AppV-Client	13011	1	ApplicationLaunch13011_V1(GUID Package, GUID Version)		VirtualAppLaunch	ApplicationLaunch	Error		
+Microsoft-AppV-Client	13012	1	ApplicationLaunch13012_V1(GUID ConnectionGroup, GUID Version)		VirtualAppLaunch	ApplicationLaunch	Error		
 Microsoft-AppV-Client	14001	1	BackgroundStreaming_V1()		Streaming	BackgroundStreaming	Informational		
 Microsoft-AppV-Client	14002	1	BackgroundStreaming14002_V1()		Streaming	BackgroundStreaming	Informational		
 Microsoft-AppV-Client	14003	1	BackgroundStreaming14003_V1()		Streaming	BackgroundStreaming	Error		
@@ -208,6 +216,7 @@ Microsoft-AppV-Client	14025	1	BackgroundStreaming14025_V1()		Streaming	Backgroun
 Microsoft-AppV-Client	14026	1	BackgroundStreaming14026_V1()		Streaming	BackgroundStreaming	Informational		
 Microsoft-AppV-Client	14027	1	BackgroundStreaming14027_V1()		Streaming	BackgroundStreaming	Informational		
 Microsoft-AppV-Client	14028	1	BackgroundStreaming14028_V1()		Streaming	BackgroundStreaming	Informational		
+Microsoft-AppV-Client	14029	1	Streaming14029_V1(UnicodeString Item)		Streaming	Streaming	Error		
 Microsoft-AppV-Client	15001	1	ConnecttoAppVClientService_V1(UInt64 ErrorHigh, UInt64 ErrorLow)		ClientStreamingUX	ConnecttoAppVClientService	Error		
 Microsoft-AppV-Client	15002	1	ConnecttoAppVClientService15002_V1(Int32 HResult)		ClientStreamingUX	ConnecttoAppVClientService	Error		
 Microsoft-AppV-Client	15003	1	StopPackageorConnectionGroup_V1(GUID VirtualEnvironmentId, GUID VirtualEnvironmentVersion, UInt64 ErrorHigh, UInt64 ErrorLow)		ClientStreamingUX	StopPackageorConnectionGroup	Error		

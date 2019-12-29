@@ -18,6 +18,9 @@ Microsoft-Windows-AppModel-State	16	0	task_016(UnicodeString PackageString, Unic
 Microsoft-Windows-AppModel-State	17	0	task_017(UnicodeString PackageString, UnicodeString UserSid, Int32 Error)			task_0	Informational		
 Microsoft-Windows-AppModel-State	18	0	task_018(UnicodeString InformationalString)			task_0	Informational		
 Microsoft-Windows-AppModel-State	19	0	task_019(UnicodeString ErrorString, Int32 Error)			task_0	Error		
+Microsoft-Windows-AppModel-State	20	0	task_020(UnicodeString Operation, UnicodeString PackageFamily, Int32 OperationError)			task_0	Warning		
+Microsoft-Windows-AppModel-State	21	0	task_021(UnicodeString Operation, UnicodeString PackageFamily, Int32 OperationError, Int32 RepairTriggerError)			task_0	Warning		
+Microsoft-Windows-AppModel-State	22	0	task_022(UnicodeString FolderPath, Int32 Error)			task_0	Warning		
 Microsoft-Windows-AppModel-State	50	0	AppModel.Task.State.WriteSettingStart()	Start	Structured	AppModel.Task.State.WriteSetting	Informational		
 Microsoft-Windows-AppModel-State	51	0	AppModel.Task.State.WriteSettingStop()	Stop	Structured	AppModel.Task.State.WriteSetting	Informational		
 Microsoft-Windows-AppModel-State	60	0	AppModel.Task.State.ReadSettingStart()	Start	Structured	AppModel.Task.State.ReadSetting	Informational		

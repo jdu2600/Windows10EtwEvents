@@ -103,3 +103,8 @@ Microsoft-Windows-MF	1307	0	MFDS_StateStart(Pointer Object, Int32 State)	Start		
 Microsoft-Windows-MF	1308	0	MFDS_StateStop(Pointer Object, Int32 State)	Stop		MFDS_State	Verbose		
 Microsoft-Windows-MF	1310	0	SrcPrefetchFillBufferStart(Pointer Object)	Start		SrcPrefetchFillBuffer	Verbose		
 Microsoft-Windows-MF	1311	0	SrcPrefetchFillBufferStop(Pointer Object)	Stop		SrcPrefetchFillBuffer	Verbose		
+Microsoft-Windows-MF	1312	0	SrcStreamEOSState(Pointer Object, Int32 StreamID, Int32 Oldstate, Int32 Newstate)			SrcStreamEOSState	Verbose		
+Microsoft-Windows-MF	1313	0	SrcStreamNeedMoreSamples(Pointer Object, Int32 UseSampleBasedBuffering, Float Rate, Int32 IsEOS, Int32 UnprocessedSamples, Int32 Prerolled)			SrcStreamNeedMoreSamples	Verbose		
+Microsoft-Windows-MF	1314	0	SrcPrefetchTimeoutStart(Pointer Object)	Start		SrcPrefetchTimeout	Verbose		
+Microsoft-Windows-MF	1315	0	SrcPrefetchTimeoutStop(Pointer Object)	Stop		SrcPrefetchTimeout	Verbose		
+Microsoft-Windows-MF	1316	0	SrcPrefetchTimeout(Pointer Object)			SrcPrefetchTimeout	Verbose		

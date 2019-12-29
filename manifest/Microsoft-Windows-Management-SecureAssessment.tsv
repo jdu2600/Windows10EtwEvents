@@ -1,5 +1,6 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
 Microsoft-Windows-Management-SecureAssessment	100	0	task_0(HexInt32 ErrorCode, AnsiString Function, UInt32 LineNumber)		SecureAssessment	task_0	Error		
+Microsoft-Windows-Management-SecureAssessment	101	0	task_0101(UnicodeString ProcessName, Boolean TerminationResult)		SecureAssessment	task_0	Informational		
 Microsoft-Windows-Management-SecureAssessment	200	0	Lockdown(Boolean Enable, Boolean CurrentlyEnabled)		SecureAssessment	Lockdown	Informational		
 Microsoft-Windows-Management-SecureAssessment	201	0	Lockdown201(Boolean NewContextCreated)		SecureAssessment	Lockdown	Informational		
 Microsoft-Windows-Management-SecureAssessment	202	0	Lockdown202(UnicodeString EnrollmentID)		SecureAssessment	Lockdown	Informational		

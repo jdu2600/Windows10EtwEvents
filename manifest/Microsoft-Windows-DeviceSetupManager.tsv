@@ -17,6 +17,8 @@ Microsoft-Windows-DeviceSetupManager	122	0	task_0122()			task_0	Warning
 Microsoft-Windows-DeviceSetupManager	123	0	task_0123(Int32 Prop_Seconds, UnicodeString Prop_DeviceId)			task_0	Warning		
 Microsoft-Windows-DeviceSetupManager	124	0	task_0124(UnicodeString Prop_PackageId, UnicodeString Prop_DeviceInstanceId, Int64 Prop_MilliSeconds)			task_0	Informational		
 Microsoft-Windows-DeviceSetupManager	125	0	task_0125(UnicodeString Prop_DevnodeId)			task_0	Warning		
+Microsoft-Windows-DeviceSetupManager	126	0	task_0126(UnicodeString Prop_DeviceInstanceId, UnicodeString Prop_PackageId)			task_0	Informational		
+Microsoft-Windows-DeviceSetupManager	127	0	task_0127(UnicodeString Prop_SoftwareName, UnicodeString Prop_DeviceInstanceId, UInt64 Prop_InstallTime)			task_0	Informational		
 Microsoft-Windows-DeviceSetupManager	130	0	task_0130(UnicodeString Prop_MetadataPackageId, GUID Prop_ContainerId, Int64 Prop_StageTimeMilliSeconds)			task_0	Informational		
 Microsoft-Windows-DeviceSetupManager	131	0	task_0131(UnicodeString Prop_ContainerId, UInt32 HRESULT)			task_0	Error		
 Microsoft-Windows-DeviceSetupManager	150	0	task_0150(UnicodeString Prop_DeviceName, GUID Prop_ContainerId)			task_0	Informational		
@@ -35,6 +37,7 @@ Microsoft-Windows-DeviceSetupManager	230	0	task_0230(UnicodeString Prop_Containe
 Microsoft-Windows-DeviceSetupManager	231	0	task_0231(UnicodeString Prop_ContainerId, UnicodeString Prop_PackageId)			task_0	Informational		
 Microsoft-Windows-DeviceSetupManager	232	0	task_0232(UnicodeString Prop_ContainerId, UnicodeString Prop_PackageId)			task_0	Warning		
 Microsoft-Windows-DeviceSetupManager	233	0	task_0233(UnicodeString Prop_ContainerId, UnicodeString Prop_PackageId)			task_0	Warning		
+Microsoft-Windows-DeviceSetupManager	234	0	task_0234(UnicodeString Prop_DevnodeId, Int64 Prop_MilliSeconds)			task_0	Informational		
 Microsoft-Windows-DeviceSetupManager	300	0	task_0DeviceUxReady(UnicodeString Prop_ContainerId)	DeviceUxReady		task_0	Informational		
 Microsoft-Windows-DeviceSetupManager	301	0	task_0DeviceSetupComplete(UnicodeString Prop_ContainerId)	DeviceSetupComplete		task_0	Informational		
 Microsoft-Windows-DeviceSetupManager	302	0	task_0302(UnicodeString Prop_ContainerId, UnicodeString Prop_ServiceInfoNamespace, UnicodeString Prop_CultureCode)			task_0	Informational		
@@ -48,7 +51,13 @@ Microsoft-Windows-DeviceSetupManager	406	0	InstallDriverTaskStart(UnicodeString 
 Microsoft-Windows-DeviceSetupManager	407	0	InstallDriverTaskStop(UnicodeString Prop_DevnodeId, UInt32 HRESULT)	Stop		InstallDriverTask	Informational		
 Microsoft-Windows-DeviceSetupManager	408	0	MetadataInstallTaskStart(UnicodeString Prop_ContainerId)	Start		MetadataInstallTask	Informational		
 Microsoft-Windows-DeviceSetupManager	409	0	MetadataInstallTaskStop(UnicodeString Prop_ContainerId)	Stop		MetadataInstallTask	Informational		
+Microsoft-Windows-DeviceSetupManager	410	0	InstallDriverUpdateTaskStart(UnicodeString Prop_DevnodeId)	Start		InstallDriverUpdateTask	Informational		
+Microsoft-Windows-DeviceSetupManager	411	0	InstallDriverUpdateTaskStop(UnicodeString Prop_DevnodeId, UInt32 HRESULT)	Stop		InstallDriverUpdateTask	Informational		
+Microsoft-Windows-DeviceSetupManager	412	0	InstallSoftwareStart(UnicodeString Prop_DevnodeId)	Start		InstallSoftware	Informational		
+Microsoft-Windows-DeviceSetupManager	413	0	InstallSoftwareStop(UnicodeString Prop_DevnodeId)	Stop		InstallSoftware	Informational		
 Microsoft-Windows-DeviceSetupManager	7710	0	SearchWindowsUpdateStart()	Start		SearchWindowsUpdate	Informational		
 Microsoft-Windows-DeviceSetupManager	7711	0	SearchWindowsUpdateStop()	Stop		SearchWindowsUpdate	Informational		
 Microsoft-Windows-DeviceSetupManager	7712	0	DownloadFromWindowsUpdateStart()	Start		DownloadFromWindowsUpdate	Informational		
 Microsoft-Windows-DeviceSetupManager	7713	0	DownloadFromWindowsUpdateStop()	Stop		DownloadFromWindowsUpdate	Informational		
+Microsoft-Windows-DeviceSetupManager	7714	0	InstallFromWindowsUpdateStart()	Start		InstallFromWindowsUpdate	Informational		
+Microsoft-Windows-DeviceSetupManager	7715	0	InstallFromWindowsUpdateStop()	Stop		InstallFromWindowsUpdate	Informational		

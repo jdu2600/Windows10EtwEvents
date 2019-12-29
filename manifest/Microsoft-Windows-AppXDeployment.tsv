@@ -1,6 +1,5 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-AppXDeployment	301	0	AppXDeployment.Task.Client.Deployment(UnicodeString FileName)		AppXDeployment keyword_400000000000	AppXDeployment.Task.Client.Deployment	Informational		
-Microsoft-Windows-AppXDeployment	302	0	AppXDeployment.Task.Client.Deployment302(UnicodeString ServiceName, HexInt32 ErrorCode)		AppXDeployment keyword_400000000000	AppXDeployment.Task.Client.Deployment	Error		
+Microsoft-Windows-AppXDeployment	302	0	AppXDeployment.Task.Client.Deployment(UnicodeString ServiceName, HexInt32 ErrorCode)		AppXDeployment keyword_400000000000	AppXDeployment.Task.Client.Deployment	Error		
 Microsoft-Windows-AppXDeployment	303	0	AppXDeployment.Task.Client.Deployment303(UnicodeString ServiceName, HexInt32 ErrorCode)		AppXDeployment	AppXDeployment.Task.Client.Deployment	Warning		
 Microsoft-Windows-AppXDeployment	304	0	AppXDeployment.Task.Client.Deployment304(UInt32 RecoveryType)		AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational		
 Microsoft-Windows-AppXDeployment	305	0	AppXDeployment.Task.Client.Deployment305(HexInt32 ErrorCode)		AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational		
@@ -18,6 +17,11 @@ Microsoft-Windows-AppXDeployment	316	0	task_0316(UnicodeString FileName, HexInt3
 Microsoft-Windows-AppXDeployment	317	0	task_0317(UnicodeString FileName, Int32 ExceptionCode)		APPMODEL_RUNTIME_DMR_KEYWORD	task_0	Error		
 Microsoft-Windows-AppXDeployment	318	0	task_0318(UnicodeString FileName, Int32 ErrorCode, UInt64 Size, Pointer HeaderAddr, UnicodeString ApplicationUserModelId, UInt32 ProcessId)		APPMODEL_RUNTIME_DMR_KEYWORD	task_0	Error		
 Microsoft-Windows-AppXDeployment	319	0	task_0319(UnicodeString FileName, Int32 ErrorCode, UInt64 Size, Pointer HeaderAddr, UInt32 ProcessId)		APPMODEL_RUNTIME_DMR_KEYWORD	task_0	Error		
+Microsoft-Windows-AppXDeployment	320	0	AppXDeployment.Task.Client.Deployment320(UnicodeString PackageName, UnicodeString UserSid, HexInt32 ErrorCode)		AppXDeployment	AppXDeployment.Task.Client.Deployment	Error		
+Microsoft-Windows-AppXDeployment	321	0	AppXDeployment.Task.Client.Deployment321(UnicodeString PackageName, HexInt32 ErrorCode)		AppXDeployment	AppXDeployment.Task.Client.Deployment	Error		
+Microsoft-Windows-AppXDeployment	322	0	AppXDeployment.Task.Client.Deployment322(UnicodeString PackageName, HexInt32 ErrorCode)		AppXDeployment	AppXDeployment.Task.Client.Deployment	Error		
+Microsoft-Windows-AppXDeployment	323	0	AppXDeployment.Task.Client.Deployment323(UnicodeString PackageName, UnicodeString UserSid, HexInt32 ErrorCode)		AppXDeployment	AppXDeployment.Task.Client.Deployment	Error		
+Microsoft-Windows-AppXDeployment	324	0	task_0324(UnicodeString FileName, Int32 ErrorCode, UnicodeString Type, UInt32 ProcessId)		APPMODEL_RUNTIME_DMR_KEYWORD	task_0	Error		
 Microsoft-Windows-AppXDeployment	1001	0	AppXDeployment.Task.Client.ServiceStartupStart()	Start	AppXDeployment	AppXDeployment.Task.Client.ServiceStartup	Informational		
 Microsoft-Windows-AppXDeployment	1002	0	AppXDeployment.Task.Client.ServiceStartup()		AppXDeployment	AppXDeployment.Task.Client.ServiceStartup	Informational		
 Microsoft-Windows-AppXDeployment	1003	0	AppXDeployment.Task.Client.ServiceStartupStop()	Stop	AppXDeployment	AppXDeployment.Task.Client.ServiceStartup	Informational		

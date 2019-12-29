@@ -43,14 +43,6 @@ Microsoft-Windows-XAML-Diagnostics	42	0	ManipulationDeltaStart(UInt64 RegisterdO
 Microsoft-Windows-XAML-Diagnostics	43	0	ManipulationDeltaStop(Boolean Handled)	Stop		ManipulationDelta	Verbose		
 Microsoft-Windows-XAML-Diagnostics	44	0	ManipulationCompletedStart(UInt64 RegisterdOn, UInt64 OriginalSource, UInt64 Container, Boolean IsInertial)	Start		ManipulationCompleted	Verbose		
 Microsoft-Windows-XAML-Diagnostics	45	0	ManipulationCompletedStop(Boolean Handled)	Stop		ManipulationCompleted	Verbose		
-Microsoft-Windows-XAML-Diagnostics	46	0	KeyUpHandlerStart(UInt64 RegisterdOn, UInt32 KeyCode, UInt64 OriginalSource)	Start		KeyUpHandler	Verbose		
-Microsoft-Windows-XAML-Diagnostics	47	0	KeyUpHandlerStop(Boolean Handled)	Stop		KeyUpHandler	Verbose		
-Microsoft-Windows-XAML-Diagnostics	48	0	KeyDownHandlerStart(UInt64 RegisterdOn, UInt32 KeyCode, UInt64 OriginalSource)	Start		KeyDownHandler	Verbose		
-Microsoft-Windows-XAML-Diagnostics	49	0	KeyDownHandlerStop(Boolean Handled)	Stop		KeyDownHandler	Verbose		
-Microsoft-Windows-XAML-Diagnostics	50	0	KeyUpStart()	Start		KeyUp	Verbose		
-Microsoft-Windows-XAML-Diagnostics	51	0	KeyUpStop()	Stop		KeyUp	Verbose		
-Microsoft-Windows-XAML-Diagnostics	52	0	KeyDownStart()	Start		KeyDown	Verbose		
-Microsoft-Windows-XAML-Diagnostics	53	0	KeyDownStop()	Stop		KeyDown	Verbose		
 Microsoft-Windows-XAML-Diagnostics	54	0	AppBarOpenStart(UInt32 AppBarType)	Start		AppBarOpen	Verbose		
 Microsoft-Windows-XAML-Diagnostics	55	0	AppBarOpenStop()	Stop		AppBarOpen	Verbose		
 Microsoft-Windows-XAML-Diagnostics	56	0	AppBarClosedStart(UInt32 AppBarType)	Start		AppBarClosed	Verbose		
@@ -92,3 +84,4 @@ Microsoft-Windows-XAML-Diagnostics	88	0	ImageSourceRelation(UInt64 ElementId, UI
 Microsoft-Windows-XAML-Diagnostics	89	0	ElementAccessibility(UInt64 ElementId, UInt64 ParentId, UnicodeString Name, UnicodeString Type)			ElementAccessibility	Verbose		
 Microsoft-Windows-XAML-Diagnostics	90	0	ResourceUsingXName(UInt64 ElementId, UInt64 ParentId, UnicodeString Name, UnicodeString Type)			ResourceUsingXName	Verbose		
 Microsoft-Windows-XAML-Diagnostics	91	0	PeerCreated(UInt64 ElementId, UInt64 ParentId)			PeerCreated	Verbose		
+Microsoft-Windows-XAML-Diagnostics	92	0	CueRemoved()			CueRemoved	Informational		

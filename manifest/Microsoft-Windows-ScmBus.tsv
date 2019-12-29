@@ -1,9 +1,0 @@
-provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-ScmBus	1	1	task_01_V1(UInt64 StartAddress, UInt64 Size)			task_0	Informational		
-Microsoft-Windows-ScmBus	2	1	task_02_V1(Pointer Irp, HexInt32 MajorFunction, HexInt32 MinorFunction, HexInt32 Parameter, Pointer DeviceObject)			task_0	Informational		
-Microsoft-Windows-ScmBus	3	1	task_03_V1(Pointer Irp, HexInt32 Status, Pointer DeviceObject)			task_0	Informational		
-Microsoft-Windows-ScmBus	4	1	task_04_V1(Pointer Irp, HexInt32 MinorFunction, HexInt32 Type, Pointer DeviceObject)			task_0	Informational		
-Microsoft-Windows-ScmBus	5	1	task_05_V1(Pointer Irp, HexInt32 Status, Pointer DeviceObject)			task_0	Informational		
-Microsoft-Windows-ScmBus	6	1	task_06_V1(AnsiString CertificationArea, AnsiString FailureMessage)			task_0	Error		
-Microsoft-Windows-ScmBus	7	1	task_07_V1(AnsiString CertificationArea, AnsiString FailureMessage)			task_0	Warning		
-Microsoft-Windows-ScmBus	900	0	task_0(GUID DeviceGuid, AnsiString Message)			task_0	Always		

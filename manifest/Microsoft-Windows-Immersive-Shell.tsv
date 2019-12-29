@@ -84,6 +84,7 @@ Microsoft-Windows-Immersive-Shell	1627	0	Launcher_Uninstall_RemovePackageStart(U
 Microsoft-Windows-Immersive-Shell	1628	0	Launcher_Uninstall_RemovePackageStop(UnicodeString Package, UInt32 Result)	Stop		Launcher_Uninstall_RemovePackage	Informational		
 Microsoft-Windows-Immersive-Shell	1630	0	AppsFolder_ImmersiveApp_InstallRequest()			AppsFolder_ImmersiveApp_InstallRequest	Informational		
 Microsoft-Windows-Immersive-Shell	1631	0	AppsFolder_ImmersiveApp_InstallRequest1631(UnicodeString Package, UInt32 Result)			AppsFolder_ImmersiveApp_InstallRequest	Informational		
+Microsoft-Windows-Immersive-Shell	1632	0	AppsFolder_LaunchImmersiveApp_Failure(UnicodeString ApplicationId, UnicodeString FailedOperation, Int32 Result)			AppsFolder_LaunchImmersiveApp_Failure	Error		
 Microsoft-Windows-Immersive-Shell	1830	0	TileNotifications_PauseNotifications(UInt32 Result, UnicodeString AppID)		NotificationE2E	TileNotifications_PauseNotifications	Informational		
 Microsoft-Windows-Immersive-Shell	1833	0	TileNotifications_ResumeNotifications(UInt32 Result, UnicodeString AppID)		NotificationE2E	TileNotifications_ResumeNotifications	Informational		
 Microsoft-Windows-Immersive-Shell	1844	0	Tiles_MRT(UnicodeString Language)			Tiles_MRT	Informational		
@@ -361,8 +362,8 @@ Microsoft-Windows-Immersive-Shell	4326	0	ImmersiveMonitorDestroyPerMonitorCompon
 Microsoft-Windows-Immersive-Shell	4668	0	Tiles_Cache_Data_CRC_Failure(UInt32 EntryID)		NotificationE2E	Tiles_Cache_Data_CRC_Failure	Error		
 Microsoft-Windows-Immersive-Shell	4669	0	Tiles_Cache_Entry_CRC_Failure(UInt32 EntryID)		NotificationE2E	Tiles_Cache_Entry_CRC_Failure	Error		
 Microsoft-Windows-Immersive-Shell	4677	0	Tiles_Cache_Remap_Failed(UInt32 HRESULT)			Tiles_Cache_Remap_Failed	Error		
-Microsoft-Windows-Immersive-Shell	5901	1	PerfTrack_AppActivation_ActivateStart_V1(UnicodeString AppID, UnicodeString PackageMoniker, UnicodeString SqmableContractID, UnicodeString ExeName, UInt32 PreviousExecutionState)	Start		PerfTrack_AppActivation_Activate	Informational		
-Microsoft-Windows-Immersive-Shell	5902	1	PerfTrack_AppActivation_ActivateStop_V1(UnicodeString AppID, UnicodeString PackageMoniker, UnicodeString SqmableContractID, UnicodeString ExeName, UInt32 PreviousExecutionState)	Stop		PerfTrack_AppActivation_Activate	Informational		
+Microsoft-Windows-Immersive-Shell	5901	1	PerfTrack_AppActivation_ActivateStart_V1(UnicodeString AppID, UnicodeString PackageMoniker, UnicodeString SqmableContractID, UnicodeString ExeName, UInt32 PreviousExecutionState, UInt32 Opportunistic)	Start		PerfTrack_AppActivation_Activate	Informational		
+Microsoft-Windows-Immersive-Shell	5902	1	PerfTrack_AppActivation_ActivateStop_V1(UnicodeString AppID, UnicodeString PackageMoniker, UnicodeString SqmableContractID, UnicodeString ExeName, UInt32 PreviousExecutionState, UInt32 Opportunistic)	Stop		PerfTrack_AppActivation_Activate	Informational		
 Microsoft-Windows-Immersive-Shell	5903	0	AppActivation_ActivateApplicationForContractStart()	Start		AppActivation_ActivateApplicationForContract	Informational		
 Microsoft-Windows-Immersive-Shell	5904	0	AppActivation_ActivateApplicationForContractStop()	Stop		AppActivation_ActivateApplicationForContract	Informational		
 Microsoft-Windows-Immersive-Shell	5905	0	AppActivation_ActivateApplicationForContractByAppIDStart()	Start		AppActivation_ActivateApplicationForContractByAppID	Informational		
@@ -394,7 +395,7 @@ Microsoft-Windows-Immersive-Shell	5956	0	AppActivation_Log_Elevated(UnicodeStrin
 Microsoft-Windows-Immersive-Shell	5958	0	AppActivation_Log_DWMDisabled(UnicodeString AppId, UnicodeString ContractId)			AppActivation_Log_DWMDisabled	Error		
 Microsoft-Windows-Immersive-Shell	5959	0	AppActivation_Log_TimedOut(UnicodeString AppId, UnicodeString ContractId)			AppActivation_Log_TimedOut	Error		
 Microsoft-Windows-Immersive-Shell	5960	0	AppActivation_Log_Remediation(UnicodeString AppId, UnicodeString ContractId, UInt32 ErrorCode, UInt32 PackageState)			AppActivation_Log_Remediation	Error		
-Microsoft-Windows-Immersive-Shell	5961	0	AppActivation_Log_GenericFailure(UnicodeString AppId, UnicodeString ContractId, Int32 ErrorCode)			AppActivation_Log_GenericFailure	Error		
+Microsoft-Windows-Immersive-Shell	5961	0	AppActivation_Log_GenericFailure(UnicodeString AppId, Int32 ErrorCode, UInt32 PhaseFlags)			AppActivation_Log_GenericFailure	Error		
 Microsoft-Windows-Immersive-Shell	5962	0	AppActivation_Log_GenericFailure5962(Int32 ErrorCode)			AppActivation_Log_GenericFailure	Error		
 Microsoft-Windows-Immersive-Shell	5963	0	AppActivation_Log_DisabledByPolicy(UnicodeString AppId, UnicodeString ContractId)			AppActivation_Log_DisabledByPolicy	Error		
 Microsoft-Windows-Immersive-Shell	5964	0	AppActivation_Log_AppManagerNotRunning(UnicodeString AppId, UnicodeString ContractId)			AppActivation_Log_AppManagerNotRunning	Error		
@@ -768,4 +769,3 @@ Microsoft-Windows-Immersive-Shell	11304	0	LockScreenCallBroker_EndCallStop(GUID 
 Microsoft-Windows-Immersive-Shell	11305	0	LockScreenCallBroker_AppLaunched(GUID ConnectionGUID, UnicodeString AppID, UnicodeString AppArguments, Boolean AppAlreadyRunning)		LockScreenCallBroker	LockScreenCallBroker_AppLaunched	Informational		
 Microsoft-Windows-Immersive-Shell	11306	0	LockScreenCallBroker_VisualsChanged(GUID ConnectionGUID, Pointer NewHWND, Boolean NewHWNDIsSplashScreen, Boolean CrossFaded)		LockScreenCallBroker	LockScreenCallBroker_VisualsChanged	Informational		
 Microsoft-Windows-Immersive-Shell	11307	0	LockScreenCallBroker_CallTitleChanged(GUID ConnectionGUID, UnicodeString NewName)		LockScreenCallBroker	LockScreenCallBroker_CallTitleChanged	Informational		
-Microsoft-Windows-Immersive-Shell	11537	0	ExperienceManager_ShellExperienceHost_Killed()			ExperienceManager_ShellExperienceHost_Killed	Informational		

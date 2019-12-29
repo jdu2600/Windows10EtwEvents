@@ -110,6 +110,7 @@ Microsoft-Windows-Iphlpsvc-Trace	5065	0	task_05065(UnicodeString InterfaceName, 
 Microsoft-Windows-Iphlpsvc-Trace	5066	0	task_05066(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Informational		
 Microsoft-Windows-Iphlpsvc-Trace	5067	0	task_05067(Pointer ClientContext, UnicodeString TargetAddress)		iphttps	task_0	Informational		
 Microsoft-Windows-Iphlpsvc-Trace	5068	0	task_05068(Pointer Value)		iphttps	task_0	Informational		
+Microsoft-Windows-Iphlpsvc-Trace	5069	0	task_05069(UnicodeString Action)		iphttps	task_0	Informational		
 Microsoft-Windows-Iphlpsvc-Trace	5100	0	task_05100(UInt32 AddrLength, Binary ClientIP, UnicodeString QuestionName, UnicodeString QueryReceiveInterface, UnicodeString QuerySendInterface, UInt32 DnsStatus)		dns64	task_0	Informational		
 Microsoft-Windows-Iphlpsvc-Trace	5101	0	task_05101(UInt32 AddrLength, Binary ClientIP, UnicodeString QuestionName, UnicodeString QueryReceiveInterface, UnicodeString QuerySendInterface, UInt32 DnsStatus)		dns64	task_0	Informational		
 Microsoft-Windows-Iphlpsvc-Trace	5102	0	task_05102(UInt32 AddrLength, Binary ClientIP, UnicodeString QuestionName, UInt32 TranslatedIPv4Address)		dns64	task_0	Informational		
@@ -144,19 +145,10 @@ Microsoft-Windows-Iphlpsvc-Trace	5130	0	task_05130(Pointer Object, UnicodeString
 Microsoft-Windows-Iphlpsvc-Trace	5131	0	task_05131(Pointer Object, UnicodeString Message, UInt32 Value)		dns64	task_0	Verbose		
 Microsoft-Windows-Iphlpsvc-Trace	5132	0	task_05132(Pointer Object, UnicodeString Message, UInt32 Value)		dns64	task_0	Verbose		
 Microsoft-Windows-Iphlpsvc-Trace	5133	0	task_05133(Pointer Object, UnicodeString Message, UInt32 Value)		dns64	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5200	0	task_05200(UnicodeString Action)		CPVerbose	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5201	0	task_05201(UnicodeString Action)		CPStart	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5202	0	task_05202(UnicodeString Action)		CPEnd	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5203	0	task_05203(UnicodeString Action)		CPFailures	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5300	0	task_05300(UnicodeString Action)		HA	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5301	0	task_05301(UnicodeString Action, UInt32 Status)		HA	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5302	0	task_05302(UInt32 Count)		HA	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5303	0	task_05303(UInt32 Count)		HA	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5304	0	task_05304(GUID NetworkID)		HA	task_0	Informational		
 Microsoft-Windows-Iphlpsvc-Trace	5401	0	task_05401(UnicodeString Reason, UInt32 Event)		PROXYMGR	task_0	Informational		
 Microsoft-Windows-Iphlpsvc-Trace	5402	0	task_05402(UnicodeString Reason, UInt32 Event)		PROXYMGR	task_0	Informational		
 Microsoft-Windows-Iphlpsvc-Trace	5403	0	task_05403(UnicodeString Action, UInt32 Status)		PROXYMGR	task_0	Error		
-Microsoft-Windows-Iphlpsvc-Trace	5404	0	task_05404(UnicodeString Action)		PROXYMGR	task_0	Error		
+Microsoft-Windows-Iphlpsvc-Trace	5404	0	task_05404(UnicodeString Action)		PROXYMGR	task_0	Informational		
 Microsoft-Windows-Iphlpsvc-Trace	5501	0	task_05501(UInt32 SiteSelectionMethod, UnicodeString SiteName, UnicodeString IphttpsProfileName, UInt32 TeredoServerIp, UInt32 AddrLength, Binary SiteIpv6Address, UnicodeString AdSiteName, UnicodeString CorporateRanges)		damultisite	task_0	Informational		
 Microsoft-Windows-Iphlpsvc-Trace	5502	0	task_05502(UnicodeString AdSiteName, UInt32 Status)		damultisite	task_0	Informational		
 Microsoft-Windows-Iphlpsvc-Trace	5503	0	task_05503(UInt32 AddrLength, Binary Prefix, UInt32 PrefixLength, UInt32 Status)		damultisite	task_0	Informational		
@@ -174,4 +166,13 @@ Microsoft-Windows-Iphlpsvc-Trace	5515	0	task_05515(UnicodeString SiteUrl, UInt32
 Microsoft-Windows-Iphlpsvc-Trace	5516	0	task_05516(UnicodeString Action)		damultisite	task_0	Verbose		
 Microsoft-Windows-Iphlpsvc-Trace	5517	0	task_05517(UnicodeString SiteUrl, UInt32 ErrorCode, UInt32 HttpStatus, UInt64 Timestamp)		damultisite	task_0	Verbose		
 Microsoft-Windows-Iphlpsvc-Trace	5518	0	task_05518(Pointer Object, UnicodeString Message, UInt32 Value)		damultisite	task_0	Verbose		
+Microsoft-Windows-Iphlpsvc-Trace	5519	0	task_05519(UnicodeString Action)		damultisite	task_0	Informational		
+Microsoft-Windows-Iphlpsvc-Trace	5550	0	task_05550(UnicodeString Action)		isatap	task_0	Informational		
+Microsoft-Windows-Iphlpsvc-Trace	5600	0	task_05600(UnicodeString Action)		sixto4	task_0	Informational		
 Microsoft-Windows-Iphlpsvc-Trace	5607	0	task_05607(UnicodeString SiteName, UInt64 Delay)		damultisite	task_0	Informational		
+Microsoft-Windows-Iphlpsvc-Trace	5650	0	task_05650(UnicodeString Action)		common	task_0	Informational		
+Microsoft-Windows-Iphlpsvc-Trace	5651	0	task_05651(UnicodeString Action)		common	task_0	Error		
+Microsoft-Windows-Iphlpsvc-Trace	5652	0	task_05652(UnicodeString Action)		functionentry	task_0	Informational		
+Microsoft-Windows-Iphlpsvc-Trace	5653	0	task_05653(UnicodeString Action)		servicefsm	task_0	Informational		
+Microsoft-Windows-Iphlpsvc-Trace	5654	0	task_05654(UnicodeString Action)		refcount	task_0	Informational		
+Microsoft-Windows-Iphlpsvc-Trace	5655	0	task_05655(UnicodeString Action)		portproxy	task_0	Informational		

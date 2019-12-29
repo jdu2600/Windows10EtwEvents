@@ -6,6 +6,7 @@ Events from all manifest-based and mof-based ETW providers across Windows 10 ver
 | 1511  | 43,319    | 811	| 195   | 24    |
 | 1607  | 45,569    | 830	| 193   | 23    |
 | 1703  | 46,532    | 842	| 194   | 31    |
+| 1709  | 47,687    | 854	| 193   | 28    |
 
 Useful references
 -----------------

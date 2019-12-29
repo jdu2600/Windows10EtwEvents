@@ -118,15 +118,15 @@ Microsoft-Windows-NDIS	10201	0	ReceiveThrottling10201(UInt32 NetLuidIndex, UInt3
 Microsoft-Windows-NDIS	10202	0	ReceiveThrottling10202(UInt32 NetLuidIndex)		ReceiveThrottling	ReceiveThrottling	Informational		
 Microsoft-Windows-NDIS	10203	0	ReceiveThrottling10203(UInt32 NetLuidIndex, UInt64 Duration, UInt32 NumberOfNbls)		ReceiveThrottling	ReceiveThrottling	Informational		
 Microsoft-Windows-NDIS	10204	0	ReceiveThrottling10204(UInt32 NetLuidIndex, UInt32 CurrentProcessorIndex, UInt32 NumberOfNetBufferLists, UInt32 ProcessingDurationMilliseconds, UInt32 PreviousLimit, UInt32 NewLimit, UInt32 IndividualMeasurement, UInt32 CummulativeMeasurement)		ReceiveThrottling	ReceiveThrottling	Informational		
-Microsoft-Windows-NDIS	10300	0	Power10300(UInt32 NetLuidIndex)		Power	Power	Informational		
-Microsoft-Windows-NDIS	10301	0	Power10301(UInt32 NetLuidIndex, UInt32 NdisStatusCode)		Power	Power	Informational		
-Microsoft-Windows-NDIS	10302	0	Power10302(UInt32 NetLuidIndex, UInt32 ResumeReason)		Power	Power	Informational		
+Microsoft-Windows-NDIS	10300	0	Power10300(UInt32 NetLuidIndex)		Power LwtDiagnostic	Power	Informational		
+Microsoft-Windows-NDIS	10301	0	Power10301(UInt32 NetLuidIndex, UInt32 NdisStatusCode)		Power LwtDiagnostic	Power	Informational		
+Microsoft-Windows-NDIS	10302	0	Power10302(UInt32 NetLuidIndex, UInt32 ResumeReason)		Power LwtDiagnostic	Power	Informational		
 Microsoft-Windows-NDIS	10303	0	Power10303(UInt64 InterfaceLuid, UInt32 ComponentId, UInt32 ComponentRefCount, UInt32 InterfaceRefCount)		Power LwtDiagnostic	Power	Informational		
 Microsoft-Windows-NDIS	10304	0	Power10304(UInt64 InterfaceLuid, UInt32 ComponentId, UInt32 ComponentRefCount, UInt32 InterfaceRefCount)		Power LwtDiagnostic	Power	Informational		
 Microsoft-Windows-NDIS	10305	0	Power10305(UInt64 IfLuid, UInt32 WakeReason)		Power LwtDiagnostic	Power	Informational		
-Microsoft-Windows-NDIS	10306	0	Power10306(GUID IfGuid, UInt32 IfIndex, UInt64 IfLuid)		Power	Power	Informational		
+Microsoft-Windows-NDIS	10306	0	Power10306(GUID IfGuid, UInt32 IfIndex, UInt64 IfLuid)		Power LwtDiagnostic	Power	Informational		
 Microsoft-Windows-NDIS	10307	0	Power10307(GUID IfGuid, UInt32 IfIndex, UInt64 IfLuid, UInt32 Status)		Power LwtDiagnostic	Power	Informational		
-Microsoft-Windows-NDIS	10308	0	Power10308(GUID IfGuid, UInt32 IfIndex, UInt64 IfLuid)		Power	Power	Informational		
+Microsoft-Windows-NDIS	10308	0	Power10308(GUID IfGuid, UInt32 IfIndex, UInt64 IfLuid)		Power LwtDiagnostic	Power	Informational		
 Microsoft-Windows-NDIS	10309	0	Power10309(GUID IfGuid, UInt32 IfIndex, UInt64 IfLuid, UInt32 Status)		Power LwtDiagnostic	Power	Informational		
 Microsoft-Windows-NDIS	10310	0	Power10310(GUID IfGuid, UInt32 IfIndex, UInt64 IfLuid)		Power LwtDiagnostic	Power	Informational		
 Microsoft-Windows-NDIS	10311	0	PnP10311(GUID IfGuid, UInt32 IfIndex, UInt64 IfLuid, UnicodeString AdapterName, UInt32 MiniportEventEnum)		PnP Init Power LwtDiagnostic	PnP	Informational		
@@ -141,6 +141,7 @@ Microsoft-Windows-NDIS	10321	0	Refcountrundown(UInt64 NetLuid, UInt32 ComponentI
 Microsoft-Windows-NDIS	10322	0	RefcountrundownStop(UInt64 NetLuid, UInt32 StopFlags)	Stop	Power LwtDiagnostic	Refcountrundown	Informational		
 Microsoft-Windows-NDIS	10323	0	Power10323(UInt32 IfIndex, UInt64 IfLuid, UnicodeString PowerStateFrom, UnicodeString PowerStateTo, UInt64 IfInUnicastPackets, UInt64 IfOutUnicastPackets, UInt64 IfInMulticastPackets, UInt64 IfOutMulticastPackets, UInt64 IfInBroadcastPackets, UInt64 IfOutBroadcastPackets)		Power LwtDiagnostic	Power	Informational		
 Microsoft-Windows-NDIS	10324	0	Power10324(UInt8 ScenarioInstanceId, GUID ParentGuid, GUID BlockerGuid, Pointer PhysicalDeviceNode)		SleepStudy	Power	Informational		
+Microsoft-Windows-NDIS	10325	0	Power10325(GUID IfGuid, UInt32 WakePacketSize, Binary WakePacketPayload)		Power LwtDiagnostic keyword_20000000000	Power	Verbose		
 Microsoft-Windows-NDIS	10400	0	task_0(GUID IfGuid, UInt32 IfIndex, UInt64 IfLuid, UnicodeString AdapterName, UInt32 ResetReason, UInt32 ResetCount)			task_0	Warning		
 Microsoft-Windows-NDIS	60001	0	task_060001(UInt32 ErrorCode, UInt32 Location, UInt32 Context)			task_0	Error		
 Microsoft-Windows-NDIS	60002	0	task_060002(UInt32 WarningCode, UInt32 Location, UInt32 Context)			task_0	Warning		

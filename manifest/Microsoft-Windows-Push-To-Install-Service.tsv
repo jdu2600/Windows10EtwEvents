@@ -1,0 +1,7 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Push-To-Install-Service	6001	0	PushToInstallService(UnicodeString Message, AnsiString Function, Int32 ErrorCode, AnsiString Source, UInt32 LineNumber)		PushToInstallService	PushToInstallService	Error		
+Microsoft-Windows-Push-To-Install-Service	6002	0	PushToInstallService_6002(UnicodeString Message, UInt32 LineNumber, UnicodeString FileName, UnicodeString Function, UnicodeString ExceptionDetails)		PushToInstallService	PushToInstallService_6002	Warning		
+Microsoft-Windows-Push-To-Install-Service	6003	0	PushToInstallService_6003(UnicodeString Message, AnsiString Function, Int32 ErrorCode, AnsiString Source, UInt32 LineNumber)		PushToInstallService	PushToInstallService_6003	Warning		
+Microsoft-Windows-Push-To-Install-Service	6004	0	PushToInstallService_6004(UnicodeString Message, AnsiString Function, Int32 ErrorCode, AnsiString Source, UInt32 LineNumber)		PushToInstallService	PushToInstallService_6004	Informational		
+Microsoft-Windows-Push-To-Install-Service	6005	0	PushToInstallService_6005(UnicodeString Message, AnsiString Function, Int32 ErrorCode, AnsiString Source, UInt32 LineNumber)		PushToInstallService	PushToInstallService_6005	Verbose		
+Microsoft-Windows-Push-To-Install-Service	6006	0	PTIModuleLoaded(UnicodeString ProcessName, UnicodeString ModuleName, UnicodeString BuildName)		Messages	PTIModuleLoaded	Informational		

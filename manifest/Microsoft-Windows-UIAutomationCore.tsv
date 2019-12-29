@@ -1,8 +1,9 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-UIAutomationCore	1	0	Error_ProviderErrors(UnicodeString Method, UInt32 Hresult, UnicodeString Details, UnicodeString SourceHwnd, UnicodeString Provider)			Error_ProviderErrors	Informational		
-Microsoft-Windows-UIAutomationCore	2	0	Error_IAccessibleErrors(UnicodeString Method, UInt32 Hresult, UnicodeString Details, UnicodeString SourceHwnd, UnicodeString Provider)			Error_IAccessibleErrors	Informational		
+Microsoft-Windows-UIAutomationCore	1	0	Error_ProviderErrors(UnicodeString Method, HexInt32 Hresult, UnicodeString Details, UnicodeString SourceHwnd, UnicodeString Provider)			Error_ProviderErrors	Informational		
+Microsoft-Windows-UIAutomationCore	2	0	Error_IAccessibleErrors(UnicodeString Method, HexInt32 Hresult, UnicodeString Details, UnicodeString SourceHwnd, UnicodeString Provider)			Error_IAccessibleErrors	Informational		
 Microsoft-Windows-UIAutomationCore	3	0	Error_OtherErrors(UnicodeString Method, UInt32 ErrorCode, UnicodeString Details)			Error_OtherErrors	Informational		
 Microsoft-Windows-UIAutomationCore	4	0	Error_ClientApiErrors(UnicodeString Method, UnicodeString Parameter, UnicodeString Details)			Error_ClientApiErrors	Informational		
+Microsoft-Windows-UIAutomationCore	5	0	Error_ProcessErrors(UnicodeString Method, UInt32 Win32Error, HexInt32 HRESULT, UInt32 ProcessId, UnicodeString Details)			Error_ProcessErrors	Informational		
 Microsoft-Windows-UIAutomationCore	101	0	UIAutomationCoreAPI_UiaClientsAreListeningStart()	Start	PerfInstrumentation	UIAutomationCoreAPI_UiaClientsAreListening	Informational		
 Microsoft-Windows-UIAutomationCore	102	0	UIAutomationCoreAPI_UiaClientsAreListeningStop()	Stop	PerfInstrumentation	UIAutomationCoreAPI_UiaClientsAreListening	Informational		
 Microsoft-Windows-UIAutomationCore	103	0	UIAutomationCoreAPI_UiaDisconnectAllProvidersStart()	Start	PerfInstrumentation	UIAutomationCoreAPI_UiaDisconnectAllProviders	Informational		
@@ -145,7 +146,9 @@ Microsoft-Windows-UIAutomationCore	505	0	RichEditProxy_GetVisibleRangeStart()	St
 Microsoft-Windows-UIAutomationCore	506	0	RichEditProxy_GetVisibleRangeStop()	Stop	PerfInstrumentation	RichEditProxy_GetVisibleRange	Informational		
 Microsoft-Windows-UIAutomationCore	507	0	EditProxy_NextWordStart()	Start	PerfInstrumentation	EditProxy_NextWord	Informational		
 Microsoft-Windows-UIAutomationCore	508	0	EditProxy_NextWordStop()	Stop	PerfInstrumentation	EditProxy_NextWord	Informational		
-Microsoft-Windows-UIAutomationCore	509	0	ClientConnection_CallWithReturnStart()	Start	PerfInstrumentation	ClientConnection_CallWithReturn	Informational		
-Microsoft-Windows-UIAutomationCore	510	0	ClientConnection_CallWithReturnStop()	Stop	PerfInstrumentation	ClientConnection_CallWithReturn	Informational		
+Microsoft-Windows-UIAutomationCore	509	0	ClientConnection_CallWithReturnStart(UnicodeString MethodName)	Start	PerfInstrumentation	ClientConnection_CallWithReturn	Informational		
+Microsoft-Windows-UIAutomationCore	510	0	ClientConnection_CallWithReturnStop(UnicodeString MethodName)	Stop	PerfInstrumentation	ClientConnection_CallWithReturn	Informational		
 Microsoft-Windows-UIAutomationCore	511	0	CSelectionPattern_GetCurrentSelectionStart()	Start	PerfInstrumentation	CSelectionPattern_GetCurrentSelection	Informational		
 Microsoft-Windows-UIAutomationCore	512	0	CSelectionPattern_GetCurrentSelectionStop()	Stop	PerfInstrumentation	CSelectionPattern_GetCurrentSelection	Informational		
+Microsoft-Windows-UIAutomationCore	513	0	UIAutomationProviderApi_UiaReturnCrossMachineConnectionInfoStart()	Start	PerfInstrumentation	UIAutomationProviderApi_UiaReturnCrossMachineConnectionInfo	Informational		
+Microsoft-Windows-UIAutomationCore	514	0	UIAutomationProviderApi_UiaReturnCrossMachineConnectionInfoStop()	Stop	PerfInstrumentation	UIAutomationProviderApi_UiaReturnCrossMachineConnectionInfo	Informational		

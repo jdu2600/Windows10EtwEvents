@@ -1,8 +1,8 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
 Microsoft-Windows-Sysprep	1001	0	RunRegistryDllsStart(UnicodeString BasePath, UnicodeString Phase)	Start	keyPerformance keySysprep	RunRegistryDlls	Informational		
 Microsoft-Windows-Sysprep	1002	0	RunRegistryDllsStop(UInt32 ErrorCode)	Stop	keyPerformance keySysprep	RunRegistryDlls	Informational		
-Microsoft-Windows-Sysprep	2001	0	CallExternalProviderFunctionStart(UnicodeString DllName, AnsiString FunctionName, UInt32 ErrorCode)	Start	keyPerformance keySysprep	CallExternalProviderFunction	Informational		
-Microsoft-Windows-Sysprep	2002	0	CallExternalProviderFunctionStop(UnicodeString DllName, AnsiString FunctionName, UInt32 ErrorCode)	Stop	keyPerformance keySysprep	CallExternalProviderFunction	Informational		
+Microsoft-Windows-Sysprep	2001	0	CallExternalProviderFunctionStart(UnicodeString DllName, AnsiString FunctionName, UInt32 ErrorCode)	Start	keyPerformance keySysprep keyword_400000000000	CallExternalProviderFunction	Informational		
+Microsoft-Windows-Sysprep	2002	0	CallExternalProviderFunctionStop(UnicodeString DllName, AnsiString FunctionName, UInt32 ErrorCode)	Stop	keyPerformance keySysprep keyword_400000000000	CallExternalProviderFunction	Informational		
 Microsoft-Windows-Sysprep	3001	0	Loadactionmeta_datafileStart(UnicodeString ActionFilePath)	Start	keyPerformance keySysprep	Loadactionmeta_datafile	Informational		
 Microsoft-Windows-Sysprep	3002	0	Loadactionmeta_datafileStop(UnicodeString ActionFilePath)	Stop	keyPerformance keySysprep	Loadactionmeta_datafile	Informational		
 Microsoft-Windows-Sysprep	4001	0	CreatelistofactionsforacomponentStart(UnicodeString ComponentName)	Start	keyPerformance keySysprep	Createlistofactionsforacomponent	Informational		

@@ -6,7 +6,7 @@ Microsoft-Windows-AppReadiness	100	0	AppReadiness_Service_LifetimeStart()	Start	
 Microsoft-Windows-AppReadiness	101	0	AppReadiness_Service_LifetimeStop()	Stop	Service	AppReadiness_Service_Lifetime	Informational		
 Microsoft-Windows-AppReadiness	102	0	AppReadiness_Service_ThreadStart()	Start	Service	AppReadiness_Service_Thread	Informational		
 Microsoft-Windows-AppReadiness	103	0	AppReadiness_Service_ThreadStop()	Stop	Service	AppReadiness_Service_Thread	Informational		
-Microsoft-Windows-AppReadiness	104	0	AppReadiness_Service(UInt32 Status, UInt32 ExitCode)		Service	AppReadiness_Service	Informational		
+Microsoft-Windows-AppReadiness	104	0	AppReadiness_Service(UInt32 Status, HexInt32 ExitCode)		Service	AppReadiness_Service	Informational		
 Microsoft-Windows-AppReadiness	105	0	AppReadiness_Service105(Boolean IsIdle, UnicodeString Reason)		Service	AppReadiness_Service	Informational		
 Microsoft-Windows-AppReadiness	106	0	AppReadiness_Service106(UnicodeString User)		Service	AppReadiness_Service	Informational		
 Microsoft-Windows-AppReadiness	107	0	AppReadiness_Service107(UnicodeString User)		Service	AppReadiness_Service	Informational		
@@ -41,13 +41,16 @@ Microsoft-Windows-AppReadiness	228	0	AppReadiness_User_ProcessTasks228(UnicodeSt
 Microsoft-Windows-AppReadiness	229	0	AppReadiness_User_ProcessTasks229(UnicodeString TaskId, UInt32 Priority)		User	AppReadiness_User_ProcessTasks	Informational		
 Microsoft-Windows-AppReadiness	230	0	AppReadiness_User_ProcessTasks230()		User	AppReadiness_User_ProcessTasks	Informational		
 Microsoft-Windows-AppReadiness	231	0	AppReadiness_User_ProcessTasksStart231()	Start	User	AppReadiness_User_ProcessTasks	Informational		
-Microsoft-Windows-AppReadiness	232	0	AppReadiness_User_ProcessTasksStop232(UInt32 ExitCode)	Stop	User	AppReadiness_User_ProcessTasks	Informational		
+Microsoft-Windows-AppReadiness	232	0	AppReadiness_User_ProcessTasksStop232(HexInt32 ExitCode)	Stop	User	AppReadiness_User_ProcessTasks	Informational		
 Microsoft-Windows-AppReadiness	233	0	AppReadiness_User_ProcessTasksStart233()	Start	User	AppReadiness_User_ProcessTasks	Informational		
-Microsoft-Windows-AppReadiness	234	0	AppReadiness_User_ProcessTasksStop234(UInt32 ExitCode)	Stop	User	AppReadiness_User_ProcessTasks	Informational		
+Microsoft-Windows-AppReadiness	234	0	AppReadiness_User_ProcessTasksStop234(HexInt32 ExitCode)	Stop	User	AppReadiness_User_ProcessTasks	Informational		
 Microsoft-Windows-AppReadiness	235	0	AppReadiness_User_ProcessTasksStart235()	Start	Tasks	AppReadiness_User_ProcessTasks	Informational		
-Microsoft-Windows-AppReadiness	236	0	AppReadiness_User_ProcessTasksStop236(UInt32 ExitCode)	Stop	Tasks	AppReadiness_User_ProcessTasks	Informational		
+Microsoft-Windows-AppReadiness	236	0	AppReadiness_User_ProcessTasksStop236(HexInt32 ExitCode)	Stop	Tasks	AppReadiness_User_ProcessTasks	Informational		
 Microsoft-Windows-AppReadiness	237	0	AppReadiness_User_ProcessTasksStart237()	Start	Tasks	AppReadiness_User_ProcessTasks	Informational		
-Microsoft-Windows-AppReadiness	238	0	AppReadiness_User_ProcessTasksStop238(UInt32 ExitCode)	Stop	Tasks	AppReadiness_User_ProcessTasks	Informational		
+Microsoft-Windows-AppReadiness	238	0	AppReadiness_User_ProcessTasksStop238(HexInt32 ExitCode)	Stop	Tasks	AppReadiness_User_ProcessTasks	Informational		
+Microsoft-Windows-AppReadiness	239	0	AppReadiness_User_ProcessTasksStop239(HexInt32 ExitCode)	Stop	Tasks keyword_400000000000	AppReadiness_User_ProcessTasks	Error		
+Microsoft-Windows-AppReadiness	240	0	AppReadiness_User_ProcessTasks240(UnicodeString User, UnicodeString TaskId, UInt32 TaskCount)		Tasks	AppReadiness_User_ProcessTasks	Informational		
+Microsoft-Windows-AppReadiness	241	0	AppReadiness_User_ProcessTasks241(UnicodeString User, UnicodeString TaskId, UInt32 TaskCount)		Tasks	AppReadiness_User_ProcessTasks	Informational		
 Microsoft-Windows-AppReadiness	300	0	AppReadiness_ExecuteTaskStart(UnicodeString User, UnicodeString TaskId)	Start	Tasks	AppReadiness_ExecuteTask	Informational		
 Microsoft-Windows-AppReadiness	301	0	AppReadiness_ExecuteTaskStop(UnicodeString User, UnicodeString TaskId, Int32 Result, Double Duration)	Stop	Tasks	AppReadiness_ExecuteTask	Informational		
 Microsoft-Windows-AppReadiness	302	0	AppReadiness_ExecuteTaskStart302(UnicodeString User, UnicodeString GroupId)	Start	Tasks	AppReadiness_ExecuteTask	Informational		
@@ -70,9 +73,10 @@ Microsoft-Windows-AppReadiness	318	0	AppReadiness_PreRegister_PackageStop(Unicod
 Microsoft-Windows-AppReadiness	319	0	AppReadiness_PreRegister_Package(UnicodeString PackageId, Int32 Result)		Tasks	AppReadiness_PreRegister_Package	Error		
 Microsoft-Windows-AppReadiness	320	0	AppReadiness_ExecuteTask320(UnicodeString Key, UInt32 Result)		Tasks keyword_400000000000	AppReadiness_ExecuteTask	Error		
 Microsoft-Windows-AppReadiness	321	0	AppReadiness_ExecuteTaskStart321()	Start	Tasks	AppReadiness_ExecuteTask	Informational		
-Microsoft-Windows-AppReadiness	322	0	AppReadiness_ExecuteTaskStop322(UInt32 ExitCode)	Stop	Tasks	AppReadiness_ExecuteTask	Informational		
+Microsoft-Windows-AppReadiness	322	0	AppReadiness_ExecuteTaskStop322(HexInt32 ExitCode)	Stop	Tasks	AppReadiness_ExecuteTask	Informational		
 Microsoft-Windows-AppReadiness	323	0	AppReadiness_ExecuteTaskStart323()	Start	Tasks	AppReadiness_ExecuteTask	Informational		
-Microsoft-Windows-AppReadiness	324	0	AppReadiness_ExecuteTaskStop324(UInt32 ExitCode)	Stop	Tasks	AppReadiness_ExecuteTask	Informational		
+Microsoft-Windows-AppReadiness	324	0	AppReadiness_ExecuteTaskStop324(HexInt32 ExitCode)	Stop	Tasks	AppReadiness_ExecuteTask	Informational		
+Microsoft-Windows-AppReadiness	325	0	AppReadiness_ExecuteTaskStop325(HexInt32 ExitCode)	Stop	Tasks keyword_400000000000	AppReadiness_ExecuteTask	Error		
 Microsoft-Windows-AppReadiness	1001	0	AppReadiness_Api_InstallStart(UnicodeString User, UInt32 ProcessId)	Start	Api	AppReadiness_Api_Install	Informational		
 Microsoft-Windows-AppReadiness	1002	0	AppReadiness_Api_InstallStop(UnicodeString User, UInt32 ProcessId, Int32 Result)	Stop	Api	AppReadiness_Api_Install	Informational		
 Microsoft-Windows-AppReadiness	1003	0	AppReadiness_Api_RemoveStart(UnicodeString User, UInt32 ProcessId)	Start	Api	AppReadiness_Api_Remove	Informational		

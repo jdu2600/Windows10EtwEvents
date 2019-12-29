@@ -1,0 +1,36 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-IE-SmartScreen	1	0	CacheCheckStart(UnicodeString URL)	Start		CacheCheck	Informational		
+Microsoft-Windows-IE-SmartScreen	2	0	CacheCheckStop(UnicodeString URL)	Stop		CacheCheck	Informational		
+Microsoft-Windows-IE-SmartScreen	3	0	DatCheckStart(UnicodeString URL)	Start		DatCheck	Informational		
+Microsoft-Windows-IE-SmartScreen	4	0	DatCheckStop(UnicodeString URL)	Stop		DatCheck	Informational		
+Microsoft-Windows-IE-SmartScreen	5	0	URSCallStart(UInt32 ReqType)	Start		URSCall	Informational		
+Microsoft-Windows-IE-SmartScreen	6	0	URSCallStop(UInt32 ReqType)	Stop		URSCall	Informational		
+Microsoft-Windows-IE-SmartScreen	7	0	TelemetryCheckStart(UInt32 ReqType)	Start		TelemetryCheck	Informational		
+Microsoft-Windows-IE-SmartScreen	8	0	TelemetryCheckStop(UInt32 ReqType)	Stop		TelemetryCheck	Informational		
+Microsoft-Windows-IE-SmartScreen	9	0	CacheCheck(UnicodeString URL, Boolean CacheExist)		functionality	CacheCheck	Informational		
+Microsoft-Windows-IE-SmartScreen	10	0	DatCheck(UnicodeString URL, Boolean DatExist)		functionality	DatCheck	Informational		
+Microsoft-Windows-IE-SmartScreen	11	0	URSCall(UInt32 numElements, UnicodeString DefaultLangId, UnicodeString lastOverrideToken, UnicodeString newOverrideToken)		functionality	URSCall	Informational		
+Microsoft-Windows-IE-SmartScreen	12	0	URSCall12(UnicodeString URL, UnicodeString RawURL, UnicodeString UrlType, UnicodeString ReqType, UnicodeString HostIP)		functionality	URSCall	Informational		
+Microsoft-Windows-IE-SmartScreen	13	0	URSCall13(UnicodeString URL, UnicodeString RawURL, UnicodeString UrlType, UnicodeString ReqType, UnicodeString HostIP)		functionality	URSCall	Informational		
+Microsoft-Windows-IE-SmartScreen	14	0	URSCall14(UnicodeString URL, UnicodeString Categories, UInt32 HC, UInt32 PC)		functionality	URSCall	Informational		
+Microsoft-Windows-IE-SmartScreen	15	0	TelemetryCheck(UnicodeString GUID, UnicodeString DV, UnicodeString FV, UnicodeString OSV, UnicodeString BrowserLang, UnicodeString ReportType, UnicodeString ClientID, UnicodeString TopURL, UnicodeString RawTopURL, UnicodeString TopReferURL, UnicodeString RawTopReferURL, UnicodeString HostIP, UnicodeString Threats, UInt32 FramesCount, UnicodeString WhyString)		functionality	TelemetryCheck	Informational		
+Microsoft-Windows-IE-SmartScreen	16	0	TelemetryCheck16(UnicodeString FrameURL, UnicodeString RawFrameURL, UnicodeString FramePCL, UnicodeString FrameTricks, UnicodeString Framekeywords, UnicodeString FrameUrlType, UnicodeString FrameIP, UnicodeString Signature)		functionality	TelemetryCheck	Informational		
+Microsoft-Windows-IE-SmartScreen	17	0	TelemetryCheck17(UnicodeString FrameURL, UnicodeString RawFrameURL, UnicodeString FramePCL, UnicodeString FrameTricks, UnicodeString Framekeywords, UnicodeString FrameUrlType, UnicodeString FrameIP, UnicodeString Signature)		functionality	TelemetryCheck	Informational		
+Microsoft-Windows-IE-SmartScreen	18	0	URLReputationCheck(UnicodeString URL, UnicodeString Categories, UInt32 HC, UInt32 PC)		functionality	URLReputationCheck	Informational		
+Microsoft-Windows-IE-SmartScreen	19	0	URLReputationCheck19(UnicodeString URL, Double PCL, UInt32 THREAT, UnicodeString Heuristic)		functionality	URLReputationCheck	Informational		
+Microsoft-Windows-IE-SmartScreen	20	0	URLReputationCheck20(UnicodeString URL, Double PCL, UInt32 THREAT, UnicodeString Heuristic, Boolean HasAnyInputFields, Boolean HasPasswordField)		functionality	URLReputationCheck	Informational		
+Microsoft-Windows-IE-SmartScreen	21	0	URLReputationCheck21(UnicodeString URL, UInt32 LinksCount, UInt32 TopTargetCount)		functionality	URLReputationCheck	Informational		
+Microsoft-Windows-IE-SmartScreen	22	0	URLReputationCheck22(UnicodeString URL, UnicodeString CanonURL)		functionality	URLReputationCheck	Informational		
+Microsoft-Windows-IE-SmartScreen	23	0	URSCall23(UnicodeString Info, UnicodeString XML)		functionality	URSCall	Informational		
+Microsoft-Windows-IE-SmartScreen	24	0	URSCall24(UnicodeString Info, UnicodeString XML)		functionality	URSCall	Informational		
+Microsoft-Windows-IE-SmartScreen	25	0	URSCall25(UnicodeString Info, UnicodeString XML)		functionality	URSCall	Informational		
+Microsoft-Windows-IE-SmartScreen	26	0	URSCall26(UnicodeString Info, UnicodeString XML)		functionality	URSCall	Informational		
+Microsoft-Windows-IE-SmartScreen	27	0	TelemetryCheck27(UnicodeString Info, UnicodeString XML)		functionality	TelemetryCheck	Informational		
+Microsoft-Windows-IE-SmartScreen	28	0	TelemetryCheck28(UnicodeString Info, UnicodeString XML)		functionality	TelemetryCheck	Informational		
+Microsoft-Windows-IE-SmartScreen	29	0	TelemetryCheck29(UnicodeString Info, UnicodeString XML)		functionality	TelemetryCheck	Informational		
+Microsoft-Windows-IE-SmartScreen	30	0	TelemetryCheck30(UnicodeString Info, UnicodeString XML)		functionality	TelemetryCheck	Informational		
+Microsoft-Windows-IE-SmartScreen	31	0	URLReputationCheck31(UnicodeString URL, UInt32 FinalHRESULT, UInt32 THREAT, UInt32 UrsStatus, Boolean AllUrlsFoundInDat, UnicodeString BlockedUrl, Boolean IsBlockedUrlTopFrame, UInt64 BlockedUrlCategories, UnicodeString UrlFetchState)		functionality	URLReputationCheck	Informational		
+Microsoft-Windows-IE-SmartScreen	32	0	URLReputationCheck32(UnicodeString Info, UnicodeString URL)		functionality	URLReputationCheck	Informational		
+Microsoft-Windows-IE-SmartScreen	33	0	FeedbackCall(UnicodeString Info, UnicodeString XML)		functionality	FeedbackCall	Informational		
+Microsoft-Windows-IE-SmartScreen	34	0	TelemetryCheck34(UnicodeString FrameURL, UnicodeString ScriptSource)		functionality	TelemetryCheck	Informational		
+Microsoft-Windows-IE-SmartScreen	1100	0	task_0(UnicodeString Uri, UnicodeString ReferrerUri, UnicodeString RedirectUri, UInt32 CallingProcessId, UInt64 CallingProcessCreationTime, UnicodeString RequestId, UnicodeString FinalResult)		info	task_0	Informational		

@@ -93,6 +93,7 @@ Microsoft-Windows-XAML	91	0	BitmapCacheDestroyed(UInt64 CacheId)		CachedComposit
 Microsoft-Windows-XAML	92	0	BitmapCacheUpdated(UInt64 CacheId, UInt32 X, UInt32 Y, UInt32 UpdateWidth, UInt32 UpdateHeight, UInt32 SurfaceWidth, UInt32 SurfaceHeight)		CachedComposition	BitmapCacheUpdated	Verbose		
 Microsoft-Windows-XAML	93	0	RenderWalkStart()	Start	Rendering	RenderWalk	Informational		
 Microsoft-Windows-XAML	94	0	RenderWalkStop()	Stop	Rendering	RenderWalk	Informational		
+Microsoft-Windows-XAML	94	1	RenderWalkStop_V1(Int32 Visited, Int32 Rendered)	Stop	Rendering	RenderWalk	Informational		
 Microsoft-Windows-XAML	95	0	CaptureDrawFrame(UnicodeString ElementName)		Rendering	CaptureDrawFrame	Informational		
 Microsoft-Windows-XAML	96	0	FindBackgroundPrimitiveStart()	Start	Rendering	FindBackgroundPrimitive	Informational		
 Microsoft-Windows-XAML	97	0	FindBackgroundPrimitiveStop()	Stop	Rendering	FindBackgroundPrimitive	Informational		
@@ -463,3 +464,80 @@ Microsoft-Windows-XAML	464	0	CreateResourceManagerStop()	Stop	Core	CreateResourc
 Microsoft-Windows-XAML	465	0	TickPausedAnimation(UInt64 TargetId, UnicodeString TargetName, UnicodeString TargetProperty)		Animation	TickPausedAnimation	Informational		
 Microsoft-Windows-XAML	466	0	BindEnterpriseId(UInt64 ElementId, UnicodeString Name)		Images	BindEnterpriseId	Informational		
 Microsoft-Windows-XAML	467	0	RenderTargetBitmapFallback(UInt64 Id, UInt32 Reason)		Images	RenderTargetBitmapFallback	Informational		
+Microsoft-Windows-XAML	468	0	ReferenceTrackingCompletedStop(Int32 Objects, Int32 Sources, Int32 Targets, Int32 Unreachable)	Stop	Core	ReferenceTrackingCompleted	Informational		
+Microsoft-Windows-XAML	469	0	ReferenceTrackerCollected(Int32 ID)		Core	ReferenceTrackerCollected	Verbose		
+Microsoft-Windows-XAML	470	0	ReferenceTrackingCleanup(Int32 Objects, Int32 Attempts, Int32 Completed)		Core	ReferenceTrackingCleanup	Informational		
+Microsoft-Windows-XAML	471	0	ThreadedJobQueueShutdownWaitStart(UInt64 Id)	Start	Core	ThreadedJobQueueShutdownWait	Verbose		
+Microsoft-Windows-XAML	472	0	ThreadedJobQueueShutdownWaitStop(UInt64 Id, UInt32 HR)	Stop	Core	ThreadedJobQueueShutdownWait	Verbose		
+Microsoft-Windows-XAML	473	0	ThreadedJobQueueSubmitJob(UInt64 ParentId, UInt64 ChildId)		Core	ThreadedJobQueueSubmitJob	Verbose		
+Microsoft-Windows-XAML	474	0	ThreadedJobQueueUpdateExternalRef(UInt64 Id, UInt64 Value)		Core	ThreadedJobQueueUpdateExternalRef	Verbose		
+Microsoft-Windows-XAML	475	0	ThreadedJobQueueThreadLifetimeStart(UInt64 Id)	Start	Core	ThreadedJobQueueThreadLifetime	Verbose		
+Microsoft-Windows-XAML	476	0	ThreadedJobQueueThreadLifetimeStop(UInt64 Id)	Stop	Core	ThreadedJobQueueThreadLifetime	Verbose		
+Microsoft-Windows-XAML	477	0	ThreadedJobQueueInactivity(UInt64 Id)		Core	ThreadedJobQueueInactivity	Verbose		
+Microsoft-Windows-XAML	478	0	ThreadedJobQueueJobStart(UInt64 ParentId, UInt64 ChildId)	Start	Core	ThreadedJobQueueJob	Verbose		
+Microsoft-Windows-XAML	479	0	ThreadedJobQueueJobStop(UInt64 ParentId, UInt64 ChildId)	Stop	Core	ThreadedJobQueueJob	Verbose		
+Microsoft-Windows-XAML	480	0	ThreadedJobQueueWaitStart(UInt64 Id)	Start	Core	ThreadedJobQueueWait	Verbose		
+Microsoft-Windows-XAML	481	0	ThreadedJobQueueWaitStop(UInt64 Id)	Stop	Core	ThreadedJobQueueWait	Verbose		
+Microsoft-Windows-XAML	482	0	DownloadRequestQueue(UInt64 Id, UnicodeString Value)		Images	DownloadRequestQueue	Informational		
+Microsoft-Windows-XAML	483	0	DownloadRequestBindingStart(UInt64 Id)	Start	Images	DownloadRequestBinding	Informational		
+Microsoft-Windows-XAML	484	0	DownloadRequestBindingStop(UInt64 Id, UInt32 HR)	Stop	Images	DownloadRequestBinding	Informational		
+Microsoft-Windows-XAML	485	0	DownloadRequestDataAvailable(UInt64 Id, Int32 Size)		Images	DownloadRequestDataAvailable	Informational		
+Microsoft-Windows-XAML	486	0	XYFocusWalkStart(UnicodeString Direction)	Start	Input	XYFocusWalk	Informational		
+Microsoft-Windows-XAML	487	0	XYFocusWalkStop()	Stop	Input	XYFocusWalk	Informational		
+Microsoft-Windows-XAML	488	0	XYFocusNotFound(UInt64 ElementId, UnicodeString Direction)		Input	XYFocusNotFound	Informational		
+Microsoft-Windows-XAML	489	0	SetupCCCStart(Int32 ItemIndex)	Start	Controls	SetupCCC	Informational		
+Microsoft-Windows-XAML	490	0	SetupCCCStop()	Stop	Controls	SetupCCC	Informational		
+Microsoft-Windows-XAML	491	0	IndividualSizeChangedStart()	Start	Layout	IndividualSizeChanged	Informational		
+Microsoft-Windows-XAML	492	0	IndividualSizeChangedStop(UInt64 ElementId)	Stop	Layout	IndividualSizeChanged	Informational		
+Microsoft-Windows-XAML	493	0	RaiseLoadedEventStart(UInt64 ElementId)	Start	Core	RaiseLoadedEvent	Verbose		
+Microsoft-Windows-XAML	494	0	RaiseLoadedEventStop()	Stop	Core	RaiseLoadedEvent	Verbose		
+Microsoft-Windows-XAML	495	0	RaiseAllLoadedEventsStart()	Start	Core	RaiseAllLoadedEvents	Informational		
+Microsoft-Windows-XAML	496	0	RaiseAllLoadedEventsStop()	Stop	Core	RaiseAllLoadedEvents	Informational		
+Microsoft-Windows-XAML	497	0	UpdateFocusStart()	Start	Input	UpdateFocus	Informational		
+Microsoft-Windows-XAML	498	0	UpdateFocusStop(UInt64 ElementId)	Stop	Input	UpdateFocus	Informational		
+Microsoft-Windows-XAML	499	0	GetSoundPlayerServiceStart()	Start	Core	GetSoundPlayerService	Informational		
+Microsoft-Windows-XAML	500	0	GetSoundPlayerServiceStop()	Stop	Core	GetSoundPlayerService	Informational		
+Microsoft-Windows-XAML	501	0	PlaySoundStart()	Start	Core	PlaySound	Informational		
+Microsoft-Windows-XAML	502	0	PlaySoundStop()	Stop	Core	PlaySound	Informational		
+Microsoft-Windows-XAML	503	0	GenerateItemsStart()	Start	Core	GenerateItems	Informational		
+Microsoft-Windows-XAML	504	0	GenerateItemsStop()	Stop	Core	GenerateItems	Informational		
+Microsoft-Windows-XAML	505	0	GenerateMCContainerStart(Int32 ItemIndex)	Start	Core	GenerateMCContainer	Informational		
+Microsoft-Windows-XAML	506	0	GenerateMCContainerStop()	Stop	Core	GenerateMCContainer	Informational		
+Microsoft-Windows-XAML	507	0	PlaceElementStart(Int32 ItemIndex)	Start	Core	PlaceElement	Informational		
+Microsoft-Windows-XAML	508	0	PlaceElementStop()	Stop	Core	PlaceElement	Informational		
+Microsoft-Windows-XAML	509	0	UIThreadCallbackStart()	Start	Core	UIThreadCallback	Verbose		
+Microsoft-Windows-XAML	510	0	UIThreadCallbackStop()	Stop	Core	UIThreadCallback	Verbose		
+Microsoft-Windows-XAML	511	0	CancelTransitionsStart()	Start	Rendering	CancelTransitions	Informational		
+Microsoft-Windows-XAML	512	0	CancelTransitionsStop()	Stop	Rendering	CancelTransitions	Informational		
+Microsoft-Windows-XAML	513	0	ReleaseQueueCleanupStart()	Start	Core	ReleaseQueueCleanup	Informational		
+Microsoft-Windows-XAML	514	0	ReleaseQueueCleanupStop()	Stop	Core	ReleaseQueueCleanup	Informational		
+Microsoft-Windows-XAML	515	0	FindTrackerTargetsStart()	Start	Core	FindTrackerTargets	Verbose		
+Microsoft-Windows-XAML	516	0	FindTrackerTargetsStop()	Stop	Core	FindTrackerTargets	Verbose		
+Microsoft-Windows-XAML	517	0	ReferenceTrackingCompletedStart()	Start	Core	ReferenceTrackingCompleted	Informational		
+Microsoft-Windows-XAML	518	0	ReferenceTrackingStartedStart()	Start	Core	ReferenceTrackingStarted	Informational		
+Microsoft-Windows-XAML	519	0	ReferenceTrackingStartedStop()	Stop	Core	ReferenceTrackingStarted	Informational		
+Microsoft-Windows-XAML	520	0	CheckAutomaticAutomationChangesStart()	Start	Core	CheckAutomaticAutomationChanges	Informational		
+Microsoft-Windows-XAML	521	0	CheckAutomaticAutomationChangesStop()	Stop	Core	CheckAutomaticAutomationChanges	Informational		
+Microsoft-Windows-XAML	522	0	CheckAutomaticAutomationChangesPopupStart()	Start	Core	CheckAutomaticAutomationChangesPopup	Informational		
+Microsoft-Windows-XAML	523	0	CheckAutomaticAutomationChangesPopupStop()	Stop	Core	CheckAutomaticAutomationChangesPopup	Informational		
+Microsoft-Windows-XAML	524	0	KeyUpHandlerStart(UInt64 RegisteredOn, UInt32 KeyCode, UInt64 OriginalSource)	Start		KeyUpHandler	Verbose		
+Microsoft-Windows-XAML	525	0	KeyUpHandlerStop(Boolean Handled)	Stop		KeyUpHandler	Verbose		
+Microsoft-Windows-XAML	526	0	KeyDownHandlerStart(UInt64 RegisteredOn, UInt32 KeyCode, UInt64 OriginalSource)	Start		KeyDownHandler	Verbose		
+Microsoft-Windows-XAML	527	0	KeyDownHandlerStop(Boolean Handled)	Stop		KeyDownHandler	Verbose		
+Microsoft-Windows-XAML	528	0	KeyUpStart(UInt32 KeyCode, UInt32 RepeatCount)	Start		KeyUp	Informational		
+Microsoft-Windows-XAML	529	0	KeyUpStop(UInt32 KeyCode, UInt32 RepeatCount)	Stop		KeyUp	Informational		
+Microsoft-Windows-XAML	530	0	KeyDownStart(UInt32 KeyCode, UInt32 RepeatCount, UInt32 CountBeforeSubmitFrame)	Start		KeyDown	Informational		
+Microsoft-Windows-XAML	531	0	KeyDownStop(UInt32 KeyCode, UInt32 RepeatCount, UInt32 CountBeforeSubmitFrame)	Stop		KeyDown	Informational		
+Microsoft-Windows-XAML	532	0	KeyEventStart()	Start		KeyEvent	Verbose		
+Microsoft-Windows-XAML	533	0	KeyEventStop()	Stop		KeyEvent	Verbose		
+Microsoft-Windows-XAML	534	0	OnLaunchedProtectedStart()	Start		OnLaunchedProtected	Informational		
+Microsoft-Windows-XAML	535	0	OnLaunchedProtectedStop()	Stop		OnLaunchedProtected	Informational		
+Microsoft-Windows-XAML	536	0	OnActivatedStart()	Start		OnActivated	Informational		
+Microsoft-Windows-XAML	537	0	OnActivatedStop()	Stop		OnActivated	Informational		
+Microsoft-Windows-XAML	538	0	RenderElementStart(UInt64 ElementId)	Start		RenderElement	Verbose		
+Microsoft-Windows-XAML	539	0	RenderElementStop()	Stop		RenderElement	Verbose		
+Microsoft-Windows-XAML	540	0	HWCompNodeUpdateStart(UInt64 ElementId)	Start		HWCompNodeUpdate	Verbose		
+Microsoft-Windows-XAML	541	0	HWCompNodeUpdateStop()	Stop		HWCompNodeUpdate	Verbose		
+Microsoft-Windows-XAML	542	0	XYFocusEnteredStart(UnicodeString Direction)	Start	Input	XYFocusEntered	Informational		
+Microsoft-Windows-XAML	543	0	XYFocusEnteredStop()	Stop	Input	XYFocusEntered	Informational		
+Microsoft-Windows-XAML	544	0	XYFocusCandidateCacheHit(UnicodeString Direction)		Input	XYFocusCandidateCacheHit	Informational		

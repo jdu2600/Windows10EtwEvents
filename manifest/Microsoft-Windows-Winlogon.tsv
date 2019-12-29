@@ -86,6 +86,7 @@ Microsoft-Windows-Winlogon	5003	0	UserBoot(UInt32 SessionId)		PerfDiagnostics	Us
 Microsoft-Windows-Winlogon	5005	0	UserShellLaunch()		PerfDiagnostics	UserShellLaunch	Informational		
 Microsoft-Windows-Winlogon	5007	0	SystemBootStop(UInt32 SessionId)	Stop	PerfDiagnostics	SystemBoot	Informational		
 Microsoft-Windows-Winlogon	5007	1	SystemBootStop_V1(UInt32 SessionId, UInt32 ReadyBootTrainingCountSinceLastServicing)	Stop	PerfDiagnostics	SystemBoot	Informational		
+Microsoft-Windows-Winlogon	5007	2	SystemBootStop_V2(UInt32 SessionId, UInt32 ReadyBootTrainingCountSinceLastServicing, UInt32 SyncPrefetchErrorCode, UInt32 SyncPrefetchDurationMs)	Stop	PerfDiagnostics	SystemBoot	Informational		
 Microsoft-Windows-Winlogon	6000	0	task_0PCODE_128pcode_1286000()	opcode_128		task_0	Always		
 Microsoft-Windows-Winlogon	6001	0	ShutdownDiagnosticsStart(UInt32 Flags)	Start	PerfInstrumentation PerfDiagnostics	ShutdownDiagnostics	Informational		
 Microsoft-Windows-Winlogon	6001	0	task_0PCODE_128pcode_1286001()	opcode_128		task_0	Always		

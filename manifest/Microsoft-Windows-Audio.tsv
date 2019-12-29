@@ -91,4 +91,4 @@ Microsoft-Windows-Audio	131	0	StreamCreationCreatedSaDevice()	CreatedSaDevice		S
 Microsoft-Windows-Audio	132	0	StreamCreationConnectedStreamGrouptoSaDevice()	ConnectedStreamGrouptoSaDevice		StreamCreation	Informational		
 Microsoft-Windows-Audio	133	0	CreateDeviceEndpointInstancetaskStart(UnicodeString EndpointId, UInt32 ConnectorType)	Start		CreateDeviceEndpointInstancetask	Informational		
 Microsoft-Windows-Audio	134	0	CreateDeviceEndpointInstancetaskStop()	Stop		CreateDeviceEndpointInstancetask	Informational		
-Microsoft-Windows-Audio	135	0	Pump:CorrectPosition(Pointer PumpInstance, UInt64 SampleIndex, UInt64 OrigProcessingStart, UInt64 NewProcessingStart, UInt64 TimeDelta, UInt32 SampleDelta, UInt64 DevicePeriod, UInt64 WindowWidth_ms)			Pump:CorrectPosition	Verbose		
+Microsoft-Windows-Audio	135	0	Pump:CorrectPosition(Pointer PumpInstance, UInt64 SampleIndex, UInt64 OrigProcessingStart, UInt64 NewProcessingStart, Int64 StartCorrection, UInt64 TimeDelta, UInt32 SampleDelta, UInt64 DevicePeriod, UInt64 ActualDevicePeriod, UInt64 WindowWidth_ms)			Pump:CorrectPosition	Verbose		

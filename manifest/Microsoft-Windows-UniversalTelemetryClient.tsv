@@ -6,6 +6,7 @@ Microsoft-Windows-UniversalTelemetryClient	20	0	Upload_UrlChanged(UnicodeString 
 Microsoft-Windows-UniversalTelemetryClient	21	0	Upload_ConnectionError(UInt32 HRESULT)		Upload	Upload_ConnectionError	Informational		
 Microsoft-Windows-UniversalTelemetryClient	22	0	Upload_SevilleBandwidthMonitor_TierChange(UInt64 BytesUploadedSoFar, UInt64 BytesAllowed, UInt32 PercentageUsed, UInt32 NewTier, UInt32 OldTier)		Upload	Upload_SevilleBandwidthMonitor_TierChange	Informational		
 Microsoft-Windows-UniversalTelemetryClient	23	0	Upload_SevilleEventStorage_TierChange(UInt32 PercentageFullInEachRingBuffer)		Upload	Upload_SevilleEventStorage_TierChange	Informational		
+Microsoft-Windows-UniversalTelemetryClient	24	0	Upload_UnconfiguredDynamicRegion(UnicodeString Region)		Upload	Upload_UnconfiguredDynamicRegion	Warning		
 Microsoft-Windows-UniversalTelemetryClient	50	0	Service_ServiceStart(UInt32 Status)		Service	Service_ServiceStart	Informational		
 Microsoft-Windows-UniversalTelemetryClient	55	0	Service_InternetAvailable(Boolean State)		Service	Service_InternetAvailable	Informational		
 Microsoft-Windows-UniversalTelemetryClient	56	0	Service_FreeNetworkAvailable(Boolean State)		Service	Service_FreeNetworkAvailable	Informational		
@@ -13,3 +14,4 @@ Microsoft-Windows-UniversalTelemetryClient	60	0	Service_OnBatteryPower(Boolean S
 Microsoft-Windows-UniversalTelemetryClient	61	0	Service_OnBatterySaver(Boolean State)		Service	Service_OnBatterySaver	Informational		
 Microsoft-Windows-UniversalTelemetryClient	62	0	Service_InConnectedStandby(Boolean State)		Service	Service_InConnectedStandby	Informational		
 Microsoft-Windows-UniversalTelemetryClient	63	0	Service_PowerLimitExceeded(Boolean State)		Service	Service_PowerLimitExceeded	Informational		
+Microsoft-Windows-UniversalTelemetryClient	64	0	Service_OptInLevelChange(UInt32 OldInfo, UInt32 NewInfo, Int32 SettingAuthority)		Service	Service_OptInLevelChange	Informational		

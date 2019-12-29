@@ -74,6 +74,7 @@ Microsoft-Windows-Kernel-PnP	421	0	task_0421(UnicodeString DeviceInstanceId, GUI
 Microsoft-Windows-Kernel-PnP	430	0	task_0430(UnicodeString DeviceInstanceId)			task_0	Informational		
 Microsoft-Windows-Kernel-PnP	440	0	task_0440(UnicodeString DeviceInstanceId, UnicodeString LastDeviceInstanceId, GUID ClassGuid, UnicodeString LocationPath, HexInt64 MigrationRank, Boolean Present, HexInt32 Status)			task_0	Informational		
 Microsoft-Windows-Kernel-PnP	441	0	task_0441(UnicodeString DeviceInstanceId, UnicodeString LastDeviceInstanceId, GUID ClassGuid, UnicodeString LocationPath, HexInt64 MigrationRank, Boolean Present, HexInt32 Status)			task_0	Error		
+Microsoft-Windows-Kernel-PnP	442	0	task_0442(UnicodeString DeviceInstanceId, UnicodeString LastDeviceInstanceId, GUID ClassGuid, UnicodeString LocationPath, HexInt64 MigrationRank, Boolean Present, HexInt32 Status)			task_0	Warning		
 Microsoft-Windows-Kernel-PnP	500	0	DevQuery_QueryProcessingQueryStart(Pointer QueryAddress, UInt32 ProcessId, UnicodeString ObjectType, UnicodeString QueryType, UnicodeString ObjectId, UnicodeString QueryFlags, UnicodeString PreferredLanguages, UnicodeString RequestedProperties, UnicodeString FilterExpression)	QueryStart	DevQuery ObjectLists	DevQuery_QueryProcessing	Informational		
 Microsoft-Windows-Kernel-PnP	501	0	DevQuery_QueryProcessingProcessingStart(Pointer QueryAddress)	ProcessingStart	DevQuery	DevQuery_QueryProcessing	Informational		
 Microsoft-Windows-Kernel-PnP	502	0	DevQuery_QueryProcessingProcessingStop(Pointer QueryAddress)	ProcessingStop	DevQuery	DevQuery_QueryProcessing	Informational		
@@ -100,6 +101,12 @@ Microsoft-Windows-Kernel-PnP	812	0	ReenumerateDeviceTreeStop(UnicodeString Devic
 Microsoft-Windows-Kernel-PnP	813	0	ReenumerateDeviceOnly(UnicodeString Device)		Enumeration	ReenumerateDeviceOnly	Informational		
 Microsoft-Windows-Kernel-PnP	814	0	ReenumerateDeviceOnlyStart(UnicodeString Device)	Start	Enumeration	ReenumerateDeviceOnly	Informational		
 Microsoft-Windows-Kernel-PnP	815	0	ReenumerateDeviceOnlyStop(UnicodeString Device)	Stop	Enumeration	ReenumerateDeviceOnly	Informational		
+Microsoft-Windows-Kernel-PnP	816	0	ConfigureDevice(UnicodeString Device, HexInt32 RequestType)		DeviceConfig	ConfigureDevice	Informational		
+Microsoft-Windows-Kernel-PnP	817	0	ConfigureDeviceStart(UnicodeString Device, HexInt32 RequestType)	Start	DeviceConfig	ConfigureDevice	Informational		
+Microsoft-Windows-Kernel-PnP	818	0	ConfigureDeviceStop(UnicodeString Device, HexInt32 RequestType, UInt32 Status)	Stop	DeviceConfig	ConfigureDevice	Informational		
+Microsoft-Windows-Kernel-PnP	819	0	GenericDeviceAction(UnicodeString Device, HexInt32 RequestType)		Enumeration	GenericDeviceAction	Informational		
+Microsoft-Windows-Kernel-PnP	820	0	GenericDeviceActionStart(UnicodeString Device, HexInt32 RequestType)	Start	Enumeration	GenericDeviceAction	Informational		
+Microsoft-Windows-Kernel-PnP	821	0	GenericDeviceActionStop(UnicodeString Device, HexInt32 RequestType, UInt32 Status)	Stop	Enumeration	GenericDeviceAction	Informational		
 Microsoft-Windows-Kernel-PnP	830	0	DeviceRemoval(UnicodeString Device)		Enumeration	DeviceRemoval	Informational		
 Microsoft-Windows-Kernel-PnP	831	0	DeviceRemovalStart(UnicodeString Device)	Start	Enumeration	DeviceRemoval	Informational		
 Microsoft-Windows-Kernel-PnP	832	0	DeviceRemovalStop(UnicodeString Device)	Stop	Enumeration	DeviceRemoval	Informational		

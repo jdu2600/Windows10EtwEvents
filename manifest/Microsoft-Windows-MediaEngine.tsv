@@ -23,7 +23,7 @@ Microsoft-Windows-MediaEngine	120	0	MediaFoundationPresentAtSleepStart(Pointer o
 Microsoft-Windows-MediaEngine	121	0	PerfTrack:MediaFoundationPlay(UInt64 object, UInt32 protected, UInt32 width, UInt32 height)			PerfTrack:MediaFoundationPlay	Informational		
 Microsoft-Windows-MediaEngine	123	0	PerfTrack:MediaFoundationPlayCancelled(UInt64 object, UInt32 protected, UInt32 width, UInt32 height)			PerfTrack:MediaFoundationPlayCancelled	Informational		
 Microsoft-Windows-MediaEngine	125	0	PerfTrack:FirstFrameAfterPlayPresented(UInt64 object, UInt32 protected, UInt32 width, UInt32 height)			PerfTrack:FirstFrameAfterPlayPresented	Informational		
-Microsoft-Windows-MediaEngine	127	0	MediaFoundationPresent_QueuedFrameStats(Pointer object, UInt32 Length, UInt32 Queued, UInt32 QueuedWithRepeats, UInt32 EstimatedFramesNeeded, UInt32 Free, Int64 DeltaToTarget, Int64 SubmittedAheadDelta, Int64 TimeInQueue, Int64 MinLatency, Int32 MaxLatency, Int64 FramePeriod, Int64 sampleTime, Int64 TargetQPC, Int32 HistoryPresents, Int64 TimeToDeadline, UInt32 BufferIndex)			MediaFoundationPresent_QueuedFrameStats	Verbose		
+Microsoft-Windows-MediaEngine	127	0	MediaFoundationPresent_QueuedFrameStats(Pointer object, UInt32 Length, UInt32 MaxPresentLatency, UInt32 Queued, UInt32 QueuedWithRepeats, UInt32 EstimatedFramesNeeded, UInt32 Free, Int64 DeltaToTarget, Int64 SubmittedAheadDelta, Int64 TimeInQueue, Int64 MinLatency, Int32 MaxLatency, Int64 FramePeriod, Int64 sampleTime, Int64 TargetQPC, Int32 HistoryPresents, Int64 TimeToDeadline, UInt32 BufferIndex)			MediaFoundationPresent_QueuedFrameStats	Verbose		
 Microsoft-Windows-MediaEngine	128	0	MediaFoundationSuspend(UInt32 id, Boolean paused)			MediaFoundationSuspend	Informational		
 Microsoft-Windows-MediaEngine	129	0	MediaFoundationRestore(UInt32 id, Boolean resumed)			MediaFoundationRestore	Informational		
 Microsoft-Windows-MediaEngine	130	0	MediaFoundationNotVisible(UInt32 id, Boolean thinning)			MediaFoundationNotVisible	Informational		
@@ -72,6 +72,7 @@ Microsoft-Windows-MediaEngine	173	0	MediaFoundationPresent_ProcessFlipMode(Point
 Microsoft-Windows-MediaEngine	174	0	MediaFoundationPresent_ShiftSample(Pointer object, Int64 QPCtarget_us, Int64 Delta_us, Int64 AverageLateness_us)			MediaFoundationPresent_ShiftSample	Verbose		
 Microsoft-Windows-MediaEngine	175	0	MinLatencyDoneoperation(Pointer object, Int64 TimeRemaining)			MinLatencyDoneoperation	Verbose		
 Microsoft-Windows-MediaEngine	176	0	MediaFoundationMirrorVideo(Pointer object, Int32 old, Int32 new, UInt32 hr)			MediaFoundationMirrorVideo	Verbose		
+Microsoft-Windows-MediaEngine	177	0	UpdateDeadlineoperation(Pointer object, Int64 deadline, Int64 hnsDeltaFromNow)			UpdateDeadlineoperation	Verbose		
 Microsoft-Windows-MediaEngine	200	0	EMENeedKey(UInt32 length, Binary data)			EMENeedKey	Informational		
 Microsoft-Windows-MediaEngine	201	0	EMEMediaKeys(UnicodeString keysystem, UnicodeString defaultCdmStorePath, UnicodeString inprivateCdmStorePath, Pointer object, UInt32 ErrorCode)			EMEMediaKeys	Informational		
 Microsoft-Windows-MediaEngine	202	0	EMEMediaKeySessionStart(UnicodeString sessionId, UnicodeString keySystem, UnicodeString type, UInt32 length, Binary data, UInt32 ErrorCode)	Start		EMEMediaKeySession	Informational		
@@ -83,7 +84,7 @@ Microsoft-Windows-MediaEngine	207	0	EMEKeyMessageStart207(UnicodeString sessionI
 Microsoft-Windows-MediaEngine	208	0	EMEKeysAttribute(Pointer object)			EMEKeysAttribute	Informational		
 Microsoft-Windows-MediaEngine	209	0	ContentEnablerStart(GUID enabletype, UInt32 ErrorCode)	Start		ContentEnabler	Informational		
 Microsoft-Windows-MediaEngine	210	0	ContentEnablerStop(UInt32 ErrorCode)	Stop		ContentEnabler	Informational		
-Microsoft-Windows-MediaEngine	212	1	BatchingReason_V1(Pointer object, Boolean Ok, Int32 Bits, Int32 FullScreenPercent, Int32 FullScreenThreshold)			BatchingReason	Verbose		
+Microsoft-Windows-MediaEngine	212	1	BatchingReason_V1(Pointer object, Boolean Ok, Int32 Bits, Int32 FullScreenPercent, Int32 FullScreenThreshold, UInt32 Format, Int32 LengthOverride)			BatchingReason	Verbose		
 Microsoft-Windows-MediaEngine	213	0	MediaFoundationSubtitleQueued(Pointer buffer, Int64 sampleTime, Int64 sampleDuration)			MediaFoundationSubtitleQueued	Verbose		
 Microsoft-Windows-MediaEngine	214	0	EngineEnded(UInt32 id)			EngineEnded	Informational		
 Microsoft-Windows-MediaEngine	215	0	MediaFoundationPresent_Delay(Pointer object, UInt32 Delay, Int64 TimeToDeadline, UInt32 Location)			MediaFoundationPresent_Delay	Verbose		
@@ -147,3 +148,5 @@ Microsoft-Windows-MediaEngine	272	0	WindowResizeOptimizationStart(Pointer object
 Microsoft-Windows-MediaEngine	273	0	WindowResizeOptimizationStop(Pointer object)	Stop		WindowResizeOptimization	Verbose		
 Microsoft-Windows-MediaEngine	274	0	ProcessIdleEDRTasksStart(Pointer Object)	Start		ProcessIdleEDRTasks	Verbose		
 Microsoft-Windows-MediaEngine	275	0	ProcessIdleEDRTasksStop(Pointer Object)	Stop		ProcessIdleEDRTasks	Verbose		
+Microsoft-Windows-MediaEngine	276	0	ProcessPolicyEventStart(Pointer Object)	Start		ProcessPolicyEvent	Verbose		
+Microsoft-Windows-MediaEngine	277	0	ProcessPolicyEventStop(Pointer Object)	Stop		ProcessPolicyEvent	Verbose		

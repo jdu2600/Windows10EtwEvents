@@ -446,6 +446,10 @@ Microsoft-Windows-MediaFoundation-Performance	4431	0	FieldOfUseValidateStop(Ansi
 Microsoft-Windows-MediaFoundation-Performance	4432	0	CaptureSourceStart(AnsiString tag, Pointer object, HexInt64 duration)			CaptureSourceStart	Informational		
 Microsoft-Windows-MediaFoundation-Performance	4433	0	CaptureSourceReadyQueueEmpty(AnsiString tag, Pointer object, HexInt64 duration)			CaptureSourceReadyQueueEmpty	Informational		
 Microsoft-Windows-MediaFoundation-Performance	4434	0	CaptureSourceReadyQueueFull(AnsiString tag, Pointer object, HexInt64 duration)			CaptureSourceReadyQueueFull	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4437	0	DXGIBufferStart(Pointer Buffer, UInt32 Width, UInt32 Height, UInt32 Format)	Start		DXGIBuffer	Verbose		
+Microsoft-Windows-MediaFoundation-Performance	4438	0	DXGIBufferStop(Pointer Buffer)	Stop		DXGIBuffer	Verbose		
+Microsoft-Windows-MediaFoundation-Performance	4439	0	DXGIBufferUnknownStart(Pointer Buffer, GUID GUID, Pointer Unknown)	Start		DXGIBufferUnknown	Verbose		
+Microsoft-Windows-MediaFoundation-Performance	4440	0	DXGIBufferUnknownStop(Pointer Buffer, GUID GUID, Pointer Unknown)	Stop		DXGIBufferUnknown	Verbose		
 Microsoft-Windows-MediaFoundation-Performance	4441	0	2D:CreateStart(Pointer Pointer, Int32 Length, Int32 Type, Int32 Max)	Start		2D:Create	Informational		
 Microsoft-Windows-MediaFoundation-Performance	4442	0	2D:CreateStop(Pointer Pointer, Int32 Length, Int32 Type, Int32 Max)	Stop		2D:Create	Informational		
 Microsoft-Windows-MediaFoundation-Performance	4443	0	2D:AllocatebufferStart(Pointer Pointer, Pointer ParentQueuePointer, Int32 Free, Int32 Allocated)	Start		2D:Allocatebuffer	Informational		
@@ -475,10 +479,13 @@ Microsoft-Windows-MediaFoundation-Performance	4468	0	MFCopyImageStop(Pointer Src
 Microsoft-Windows-MediaFoundation-Performance	4469	0	MFMediaDeviceSourceStartTaskStart(Pointer object)	Start		MFMediaDeviceSourceStartTask	Informational		
 Microsoft-Windows-MediaFoundation-Performance	4470	0	MFMediaDeviceSourceStartTaskStop(Pointer object)	Stop		MFMediaDeviceSourceStartTask	Informational		
 Microsoft-Windows-MediaFoundation-Performance	4471	0	MFMediaDeviceStreamSendSinglePhotoTriggerToKSTask(Pointer object, UInt32 dwStreamID, UInt32 uiPinID)			MFMediaDeviceStreamSendSinglePhotoTriggerToKSTask	Informational		
-Microsoft-Windows-MediaFoundation-Performance	4472	0	2D:Create_602(Pointer Object, Pointer Sample, Int32 Free, Int32 Allocated, Int32 MinSampleCount)			2D:Create_602	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4472	0	2D:Flush(Pointer Object, Pointer Sample, Int32 Free, Int32 Allocated, Int32 MinSampleCount)			2D:Flush	Informational		
 Microsoft-Windows-MediaFoundation-Performance	4500	0	NetworkRIO_PendingSends(Pointer Object, Int32 PendingCount, UInt32 BytesSent)			NetworkRIO_PendingSends	Informational		
 Microsoft-Windows-MediaFoundation-Performance	4501	0	NetworkRIO_PendingSendsStart(Pointer Object, Int32 PendingCount, UInt32 BytesSent)	Start		NetworkRIO_PendingSends	Informational		
 Microsoft-Windows-MediaFoundation-Performance	4502	0	NetworkRIO_PendingSendsStop(Pointer Object, Int32 PendingCount, UInt32 BytesSent)	Stop		NetworkRIO_PendingSends	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4503	0	NetworkRIO_PendingReceives(Pointer Object, Int32 PendingReceives, UInt32 BytesReceived)			NetworkRIO_PendingReceives	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4504	0	NetworkRIO_PendingReceivesStart(Pointer Object, Int32 PendingReceives, UInt32 BytesReceived)	Start		NetworkRIO_PendingReceives	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4505	0	NetworkRIO_PendingReceivesStart4505(Pointer Object, Int32 PendingReceives, UInt32 BytesReceived)	Start		NetworkRIO_PendingReceives	Informational		
 Microsoft-Windows-MediaFoundation-Performance	4600	0	MFContentProtectionDeviceCreateStarttaskStart(GUID system)	Start		MFContentProtectionDeviceCreateStarttask	Informational		
 Microsoft-Windows-MediaFoundation-Performance	4601	0	MFContentProtectionDeviceCreateStarttaskStop(Pointer object, UInt32 hrResult)	Stop		MFContentProtectionDeviceCreateStarttask	Informational		
 Microsoft-Windows-MediaFoundation-Performance	4602	0	MFIsContentProtectionDeviceSupportedStarttaskStart(GUID system)	Start		MFIsContentProtectionDeviceSupportedStarttask	Informational		

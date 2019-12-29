@@ -116,13 +116,25 @@ Microsoft-Windows-AppxPackagingOM	226	0	ManifestParseManifest226(HexInt32 errorC
 Microsoft-Windows-AppxPackagingOM	227	0	ManifestParseManifest227(HexInt32 errorCode, UInt32 lineNumber, UInt32 columnNumber)	ParseManifest		Manifest	Error		
 Microsoft-Windows-AppxPackagingOM	228	0	ManifestParseManifest228(HexInt32 errorCode, UInt32 lineNumber, UInt32 columnNumber)	ParseManifest		Manifest	Error		
 Microsoft-Windows-AppxPackagingOM	229	0	ContentGroupMapParseCGM(HexInt32 errorCode, UInt32 lineNumber, UInt32 columnNumber, UnicodeString reason)	ParseCGM		ContentGroupMap	Error		
-Microsoft-Windows-AppxPackagingOM	230	0	ContentGroupMapParseCGM230(HexInt32 errorCode, UInt32 lineNumber, UInt32 columnNumber)	ParseCGM		ContentGroupMap	Error		
-Microsoft-Windows-AppxPackagingOM	300	0	AppXPackaging.Task.PackageWriterStart(Boolean zipMode, UnicodeString hashMethod)	Start		AppXPackaging.Task.PackageWriter	Informational		
-Microsoft-Windows-AppxPackagingOM	301	0	AppXPackaging.Task.PackageWriterStop()	Stop		AppXPackaging.Task.PackageWriter	Informational		
-Microsoft-Windows-AppxPackagingOM	302	0	AppXPackaging.Task.PackageWriter.AddPayloadFileStart(UnicodeString fileName, UnicodeString contentType, UInt32 compressionOption)	Start		AppXPackaging.Task.PackageWriter.AddPayloadFile	Informational		
-Microsoft-Windows-AppxPackagingOM	303	0	AppXPackaging.Task.PackageWriter.AddPayloadFileStop()	Stop		AppXPackaging.Task.PackageWriter.AddPayloadFile	Informational		
-Microsoft-Windows-AppxPackagingOM	304	0	AppXPackaging.Task.PackageWriter.CloseStart()	Start		AppXPackaging.Task.PackageWriter.Close	Informational		
-Microsoft-Windows-AppxPackagingOM	305	0	AppXPackaging.Task.PackageWriter.CloseStop()	Stop		AppXPackaging.Task.PackageWriter.Close	Informational		
+Microsoft-Windows-AppxPackagingOM	230	0	ManifestParseManifest230(HexInt32 errorCode, UInt32 lineNumber, UInt32 columnNumber)	ParseManifest		Manifest	Error		
+Microsoft-Windows-AppxPackagingOM	231	0	ManifestParseManifest231(HexInt32 errorCode, UInt32 lineNumber, UInt32 columnNumber)	ParseManifest		Manifest	Error		
+Microsoft-Windows-AppxPackagingOM	232	0	ManifestParseManifest232(UInt32 lineNumber, UInt32 columnNumber, UnicodeString ignoredElement, UnicodeString xpathToRequiredChildElement)	ParseManifest		Manifest	Warning		
+Microsoft-Windows-AppxPackagingOM	233	0	ManifestParseManifest233(HexInt32 errorCode, UInt32 lineNumber, UInt32 columnNumber, UnicodeString extensionCategoryName, UnicodeString attributeName)	ParseManifest		Manifest	Error		
+Microsoft-Windows-AppxPackagingOM	234	0	ManifestParseManifest234(HexInt32 errorCode, UInt32 lineNumber, UInt32 columnNumber)	ParseManifest		Manifest	Error		
+Microsoft-Windows-AppxPackagingOM	235	0	Bundlemanifest235(HexInt32 errorCode, UnicodeString fileName, UnicodeString packageFullName)			Bundlemanifest	Error		
+Microsoft-Windows-AppxPackagingOM	236	0	ManifestParseManifest236(HexInt32 errorCode, UInt32 lineNumber, UInt32 columnNumber)	ParseManifest		Manifest	Error		
+Microsoft-Windows-AppxPackagingOM	237	0	AppInstaller(HexInt32 errorCode, UInt32 lineNumber, UInt32 columnNumber, UnicodeString reason)			AppInstaller	Error		
+Microsoft-Windows-AppxPackagingOM	238	0	AppInstaller238(HexInt32 errorCode, UnicodeString reason)			AppInstaller	Error		
+Microsoft-Windows-AppxPackagingOM	239	0	AppInstaller239(HexInt32 errorCode)			AppInstaller	Error		
+Microsoft-Windows-AppxPackagingOM	240	0	ManifestParseManifest240(HexInt32 errorCode, UInt32 lineNumber, UInt32 columnNumber)	ParseManifest		Manifest	Error		
+Microsoft-Windows-AppxPackagingOM	241	0	ManifestParseManifest241(HexInt32 errorCode, UInt32 lineNumber, UInt32 columnNumber, UnicodeString value)	ParseManifest		Manifest	Error		
+Microsoft-Windows-AppxPackagingOM	242	0	ManifestParseManifest242(HexInt32 errorCode, UInt32 lineNumber, UInt32 columnNumber, UnicodeString value)	ParseManifest		Manifest	Error		
+Microsoft-Windows-AppxPackagingOM	300	0	AppXPackaging.Task.PackageWriterStart(Boolean zipMode, UnicodeString hashMethod)	Start	keyword_400000000000	AppXPackaging.Task.PackageWriter	Informational		
+Microsoft-Windows-AppxPackagingOM	301	0	AppXPackaging.Task.PackageWriterStop(UInt64 fileCount, UInt64 totalSize)	Stop	keyword_400000000000	AppXPackaging.Task.PackageWriter	Informational		
+Microsoft-Windows-AppxPackagingOM	302	0	AppXPackaging.Task.PackageWriter.AddPayloadFileStart(UnicodeString fileName, UnicodeString contentType, UInt32 compressionOption)	Start	keyword_400000000000	AppXPackaging.Task.PackageWriter.AddPayloadFile	Informational		
+Microsoft-Windows-AppxPackagingOM	303	0	AppXPackaging.Task.PackageWriter.AddPayloadFileStop()	Stop	keyword_400000000000	AppXPackaging.Task.PackageWriter.AddPayloadFile	Informational		
+Microsoft-Windows-AppxPackagingOM	304	0	AppXPackaging.Task.PackageWriter.CloseStart()	Start	keyword_400000000000	AppXPackaging.Task.PackageWriter.Close	Informational		
+Microsoft-Windows-AppxPackagingOM	305	0	AppXPackaging.Task.PackageWriter.CloseStop()	Stop	keyword_400000000000	AppXPackaging.Task.PackageWriter.Close	Informational		
 Microsoft-Windows-AppxPackagingOM	306	0	AppXPackaging.Task.PackageReader.CreateStart()	Start		AppXPackaging.Task.PackageReader.Create	Informational		
 Microsoft-Windows-AppxPackagingOM	307	0	AppXPackaging.Task.PackageReader.CreateStop()	Stop		AppXPackaging.Task.PackageReader.Create	Informational		
 Microsoft-Windows-AppxPackagingOM	308	0	AppXPackaging.Task.PackageReader.CacheFileStart(UnicodeString fileName, UInt64 size, UInt32 compressionOption)	Start		AppXPackaging.Task.PackageReader.CacheFile	Informational		
@@ -155,12 +167,12 @@ Microsoft-Windows-AppxPackagingOM	362	0	AppXPackaging.Task.Manifest.LookupCapabi
 Microsoft-Windows-AppxPackagingOM	363	0	AppXPackaging.Task.Manifest.LookupCapabilityDisplayNameStop(SID capabilitySid, HexInt32 result)	Stop		AppXPackaging.Task.Manifest.LookupCapabilityDisplayName	Informational		
 Microsoft-Windows-AppxPackagingOM	364	0	AppXPackaging.Task.BlockMap.FileValidateHashStart()	Start		AppXPackaging.Task.BlockMap.FileValidateHash	Informational		
 Microsoft-Windows-AppxPackagingOM	365	0	AppXPackaging.Task.BlockMap.FileValidateHashStop()	Stop		AppXPackaging.Task.BlockMap.FileValidateHash	Informational		
-Microsoft-Windows-AppxPackagingOM	366	0	AppXPackaging.Task.BundleWriterStart()	Start		AppXPackaging.Task.BundleWriter	Informational		
-Microsoft-Windows-AppxPackagingOM	367	0	AppXPackaging.Task.BundleWriterStop()	Stop		AppXPackaging.Task.BundleWriter	Informational		
-Microsoft-Windows-AppxPackagingOM	368	0	AppXPackaging.Task.BundleWriter.AddPayloadPackageStart()	Start		AppXPackaging.Task.BundleWriter.AddPayloadPackage	Informational		
-Microsoft-Windows-AppxPackagingOM	369	0	AppXPackaging.Task.BundleWriter.AddPayloadPackageStop()	Stop		AppXPackaging.Task.BundleWriter.AddPayloadPackage	Informational		
-Microsoft-Windows-AppxPackagingOM	370	0	AppXPackaging.Task.BundleWriter.CloseStart()	Start		AppXPackaging.Task.BundleWriter.Close	Informational		
-Microsoft-Windows-AppxPackagingOM	371	0	AppXPackaging.Task.BundleWriter.CloseStop()	Stop		AppXPackaging.Task.BundleWriter.Close	Informational		
+Microsoft-Windows-AppxPackagingOM	366	0	AppXPackaging.Task.BundleWriterStart()	Start	keyword_400000000000	AppXPackaging.Task.BundleWriter	Informational		
+Microsoft-Windows-AppxPackagingOM	367	0	AppXPackaging.Task.BundleWriterStop()	Stop	keyword_400000000000	AppXPackaging.Task.BundleWriter	Informational		
+Microsoft-Windows-AppxPackagingOM	368	0	AppXPackaging.Task.BundleWriter.AddPayloadPackageStart()	Start	keyword_400000000000	AppXPackaging.Task.BundleWriter.AddPayloadPackage	Informational		
+Microsoft-Windows-AppxPackagingOM	369	0	AppXPackaging.Task.BundleWriter.AddPayloadPackageStop()	Stop	keyword_400000000000	AppXPackaging.Task.BundleWriter.AddPayloadPackage	Informational		
+Microsoft-Windows-AppxPackagingOM	370	0	AppXPackaging.Task.BundleWriter.CloseStart()	Start	keyword_400000000000	AppXPackaging.Task.BundleWriter.Close	Informational		
+Microsoft-Windows-AppxPackagingOM	371	0	AppXPackaging.Task.BundleWriter.CloseStop()	Stop	keyword_400000000000	AppXPackaging.Task.BundleWriter.Close	Informational		
 Microsoft-Windows-AppxPackagingOM	372	0	AppXPackaging.Task.Signature.AppxBundleSipIsFileSupportedStart()	Start		AppXPackaging.Task.Signature.AppxBundleSipIsFileSupported	Informational		
 Microsoft-Windows-AppxPackagingOM	373	0	AppXPackaging.Task.Signature.AppxBundleSipIsFileSupportedStop()	Stop		AppXPackaging.Task.Signature.AppxBundleSipIsFileSupported	Informational		
 Microsoft-Windows-AppxPackagingOM	374	0	AppXPackaging.Task.Signature.AppxBundleSipGetSignatureStart()	Start		AppXPackaging.Task.Signature.AppxBundleSipGetSignature	Informational		
@@ -211,3 +223,9 @@ Microsoft-Windows-AppxPackagingOM	420	0	AppXPackaging.Task.Signature.EappxBundle
 Microsoft-Windows-AppxPackagingOM	421	0	AppXPackaging.Task.Signature.EappxBundleSipCreateIndirectDataStop()	Stop		AppXPackaging.Task.Signature.EappxBundleSipCreateIndirectData	Informational		
 Microsoft-Windows-AppxPackagingOM	422	0	AppXPackaging.Task.Signature.EappxBundleSipVerifyIndirectDataStart()	Start		AppXPackaging.Task.Signature.EappxBundleSipVerifyIndirectData	Informational		
 Microsoft-Windows-AppxPackagingOM	423	0	AppXPackaging.Task.Signature.EappxBundleSipVerifyIndirectDataStop()	Stop		AppXPackaging.Task.Signature.EappxBundleSipVerifyIndirectData	Informational		
+Microsoft-Windows-AppxPackagingOM	424	0	AppXPackaging.Task.PackageWriter.AddPayloadFilesStart(UInt64 fileCount)	Start	keyword_400000000000	AppXPackaging.Task.PackageWriter.AddPayloadFiles	Informational		
+Microsoft-Windows-AppxPackagingOM	425	0	AppXPackaging.Task.PackageWriter.AddPayloadFilesStop()	Stop	keyword_400000000000	AppXPackaging.Task.PackageWriter.AddPayloadFiles	Informational		
+Microsoft-Windows-AppxPackagingOM	426	0	AppXPackaging.Task.PackageWriter.ProcessPayloadFileStart(UnicodeString fileName, UnicodeString contentType, UInt32 compressionOption)	Start	keyword_400000000000	AppXPackaging.Task.PackageWriter.ProcessPayloadFile	Informational		
+Microsoft-Windows-AppxPackagingOM	427	0	AppXPackaging.Task.PackageWriter.ProcessPayloadFileStop()	Stop	keyword_400000000000	AppXPackaging.Task.PackageWriter.ProcessPayloadFile	Informational		
+Microsoft-Windows-AppxPackagingOM	428	0	AppXPackaging.Task.BundleWriter.AddPackageReferenceStart()	Start		AppXPackaging.Task.BundleWriter.AddPackageReference	Informational		
+Microsoft-Windows-AppxPackagingOM	429	0	AppXPackaging.Task.BundleWriter.AddPackageReferenceStop()	Stop		AppXPackaging.Task.BundleWriter.AddPackageReference	Informational		

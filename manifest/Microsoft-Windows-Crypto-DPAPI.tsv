@@ -1,6 +1,9 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
 Microsoft-Windows-Crypto-DPAPI	1	0	MasterKeyOperation(GUID MasterKeyGUID, UnicodeString UserStorage)		ETW_TASK_MASTERKEY_OPERATION	MasterKeyOperation	Informational		
 Microsoft-Windows-Crypto-DPAPI	2	0	MasterKeyOperation2(UnicodeString MasterKeyGUID, UnicodeString UserStorage)		ETW_TASK_MASTERKEY_OPERATION	MasterKeyOperation	Informational		
+Microsoft-Windows-Crypto-DPAPI	3	0	MasterKeyOperation3(GUID MasterKeyGUID, Boolean Success, HexInt32 LastError, HexInt32 MasterKeyDisposition)		ETW_TASK_MASTERKEY_OPERATION	MasterKeyOperation	Informational		
+Microsoft-Windows-Crypto-DPAPI	4	0	MasterKeyOperation4(HexInt32 Status)		ETW_TASK_MASTERKEY_OPERATION	MasterKeyOperation	Informational		
+Microsoft-Windows-Crypto-DPAPI	5	0	MasterKeyOperation5()		ETW_TASK_MASTERKEY_OPERATION	MasterKeyOperation	Informational		
 Microsoft-Windows-Crypto-DPAPI	4097	0	BackUpServiceOperation()		ETW_TASK_BACKUPSERVICE_OPERATION	BackUpServiceOperation	Informational		
 Microsoft-Windows-Crypto-DPAPI	4098	0	BackUpServiceOperation4098()		ETW_TASK_BACKUPSERVICE_OPERATION	BackUpServiceOperation	Informational		
 Microsoft-Windows-Crypto-DPAPI	8193	0	MasterKeyOperation8193(HexInt32 Status)		ETW_TASK_MASTERKEY_OPERATION	MasterKeyOperation	Error		

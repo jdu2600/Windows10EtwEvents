@@ -1,3 +1,20 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
 Microsoft-Windows-RTWorkQueue-Extended	1	0	WorkQueue:QueueExtended(Pointer AsyncResult, Pointer AsyncResultVTable)			WorkQueue:QueueExtended	Informational		
 Microsoft-Windows-RTWorkQueue-Extended	2	0	WorkQueue:ExtendedLongRunning(UInt32 WorkQueueID, UInt32 RefCount)			WorkQueue:ExtendedLongRunning	Verbose		
+Microsoft-Windows-RTWorkQueue-Extended	3	0	WorkQueue:ExtendedInvalidUsageAttempt(Pointer Platform, UInt32 WorkQueueID, UInt32 WorkPrivateIndex)			WorkQueue:ExtendedInvalidUsageAttempt	Verbose		
+Microsoft-Windows-RTWorkQueue-Extended	4	0	WorkQueue:ExtendedInvalidCallbackAttempt(Pointer Platform, Pointer Callback, UInt32 WorkQueueID)			WorkQueue:ExtendedInvalidCallbackAttempt	Verbose		
+Microsoft-Windows-RTWorkQueue-Extended	5	0	WorkQueue:PlatformRefStart(Pointer object)	Start		WorkQueue:PlatformRef	Verbose		
+Microsoft-Windows-RTWorkQueue-Extended	6	0	WorkQueue:PlatformRefStop(Pointer object)	Stop		WorkQueue:PlatformRef	Verbose		
+Microsoft-Windows-RTWorkQueue-Extended	7	0	WorkQueue:PlatformRefStop7(Pointer object, Int32 Count)	Stop		WorkQueue:PlatformRef	Verbose		
+Microsoft-Windows-RTWorkQueue-Extended	8	0	WorkQueue:RTLockStart(UInt32 WorkQueueID)	Start		WorkQueue:RTLock	Verbose		
+Microsoft-Windows-RTWorkQueue-Extended	9	0	WorkQueue:RTLockStop(UInt32 WorkQueueID)	Stop		WorkQueue:RTLock	Verbose		
+Microsoft-Windows-RTWorkQueue-Extended	10	0	WorkQueue:SetAVModeStart(Pointer handle, UInt32 Mode)	Start		WorkQueue:SetAVMode	Verbose		
+Microsoft-Windows-RTWorkQueue-Extended	11	0	WorkQueue:SetAVModeStop(Pointer handle, UInt32 Mode)	Stop		WorkQueue:SetAVMode	Verbose		
+Microsoft-Windows-RTWorkQueue-Extended	12	0	WorkQueue:RTLockAcquireStart(UInt32 WorkQueueID)	Start		WorkQueue:RTLockAcquire	Verbose		
+Microsoft-Windows-RTWorkQueue-Extended	13	0	WorkQueue:RTLockAcquireStop(UInt32 WorkQueueID)	Stop		WorkQueue:RTLockAcquire	Verbose		
+Microsoft-Windows-RTWorkQueue-Extended	14	0	WorkQueue:TimerCallbackStart(Pointer workqueue, UInt32 WorkQueueID, UInt32 Mode)	Start		WorkQueue:TimerCallback	Verbose		
+Microsoft-Windows-RTWorkQueue-Extended	15	0	WorkQueue:TimerCallbackStop(Pointer workqueue, UInt32 WorkQueueID, UInt32 Mode)	Stop		WorkQueue:TimerCallback	Verbose		
+Microsoft-Windows-RTWorkQueue-Extended	16	0	WorkQueue:TimerMode(Pointer WorkQueuePointer, UInt32 WorkQueueID, UInt32 OldMode, UInt32 NewMode)			WorkQueue:TimerMode	Verbose		
+Microsoft-Windows-RTWorkQueue-Extended	17	0	WorkQueue:TimerSet(Pointer WorkQueuePointer, UInt32 WorkQueueID, UInt32 Mode, UInt32 Delta)			WorkQueue:TimerSet	Verbose		
+Microsoft-Windows-RTWorkQueue-Extended	18	0	WorkQueue:TimerResChangeStart(Pointer workqueue, UInt32 WorkQueueID, UInt32 Resolution)	Start		WorkQueue:TimerResChange	Verbose		
+Microsoft-Windows-RTWorkQueue-Extended	19	0	WorkQueue:TimerResChangeStop(Pointer workqueue, UInt32 WorkQueueID, UInt32 Resolution)	Stop		WorkQueue:TimerResChange	Verbose		

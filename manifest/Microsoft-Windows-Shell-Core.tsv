@@ -2057,8 +2057,6 @@ Microsoft-Windows-Shell-Core	61003	0	Shell32_DefaultAssociationsProfileHandler_O
 Microsoft-Windows-Shell-Core	61004	0	Shell32_DefaultAssociationsProfileHandler_OnCreate_OEMStop(Int32 HRESULT)	Stop	Shell	Shell32_DefaultAssociationsProfileHandler_OnCreate_OEM	Informational		
 Microsoft-Windows-Shell-Core	61005	0	Shell32_DefaultAssociationsProfileHandler_OnLoad_GroupPolicyStart()	Start	Shell	Shell32_DefaultAssociationsProfileHandler_OnLoad_GroupPolicy	Informational		
 Microsoft-Windows-Shell-Core	61006	0	Shell32_DefaultAssociationsProfileHandler_OnLoad_GroupPolicyStop(Int32 HRESULT)	Stop	Shell	Shell32_DefaultAssociationsProfileHandler_OnLoad_GroupPolicy	Informational		
-Microsoft-Windows-Shell-Core	61007	0	Shell32_DefaultAssociationsProfileHandler_OnLoad_CheckConnectedStart()	Start	Shell	Shell32_DefaultAssociationsProfileHandler_OnLoad_CheckConnected	Informational		
-Microsoft-Windows-Shell-Core	61008	0	Shell32_DefaultAssociationsProfileHandler_OnLoad_CheckConnectedStop(Int32 HRESULT)	Stop	Shell	Shell32_DefaultAssociationsProfileHandler_OnLoad_CheckConnected	Informational		
 Microsoft-Windows-Shell-Core	61201	0	Shell32_SyncIntegration_Manager_InitializeStart()	Start	Shell	Shell32_SyncIntegration_Manager_Initialize	Informational		
 Microsoft-Windows-Shell-Core	61202	0	Shell32_SyncIntegration_Manager_InitializeStop()	Stop	Shell	Shell32_SyncIntegration_Manager_Initialize	Informational		
 Microsoft-Windows-Shell-Core	61203	0	Shell32_SyncIntegration_Manager_Initialize()		Shell	Shell32_SyncIntegration_Manager_Initialize	Informational		
@@ -2377,9 +2375,9 @@ Microsoft-Windows-Shell-Core	62420	0	LogonTask_RestoreStart()	Start	Restore	Logo
 Microsoft-Windows-Shell-Core	62421	0	LogonTask_RestoreStop(UInt32 ApplicableProfileCount)	Stop	Restore	LogonTask_Restore	Informational		
 Microsoft-Windows-Shell-Core	62422	0	LogonTask_Restore(UInt32 FormFactor, UnicodeString DeviceName, UnicodeString OEMName, UnicodeString HardwareId, UInt16 SystemDatewMonth, UInt16 SystemDatewDay, UInt16 SystemDatewYear, UInt16 SystemDatewHour, UInt16 SystemDatewMinute, UInt16 SystemDatewSecond)		Restore	LogonTask_Restore	Informational		
 Microsoft-Windows-Shell-Core	62423	0	LogonTask_Restore62423(UnicodeString HardwareId)		Restore	LogonTask_Restore	Informational		
-Microsoft-Windows-Shell-Core	62440	0	AppDefaults_UserChoiceHashMismatch(UnicodeString ExtOrUriScheme, UnicodeString ProgId, Boolean IsRoaming)			AppDefaults_UserChoiceHashMismatch	Informational		
+Microsoft-Windows-Shell-Core	62440	0	AppDefaults_UserChoiceHashMismatch(UnicodeString ExtOrUriScheme, UnicodeString ProgId)			AppDefaults_UserChoiceHashMismatch	Informational		
 Microsoft-Windows-Shell-Core	62441	0	AppDefaults_ResetToRecommended(UnicodeString ProgId, UnicodeString ExtOrUriScheme)			AppDefaults_ResetToRecommended	Informational		
 Microsoft-Windows-Shell-Core	62442	0	AppDefaults_UpgradeToRecommendedApp(UnicodeString ProgId, UnicodeString CurrentDefaultProgId, UnicodeString ExtOrUriScheme)			AppDefaults_UpgradeToRecommendedApp	Informational		
 Microsoft-Windows-Shell-Core	62443	0	AppDefaults_Info(UnicodeString Info)			AppDefaults_Info	Informational		
-Microsoft-Windows-Shell-Core	62460	0	OOBEHealth_Progress(Int32 DataVersion, UInt64 HealthStateFlags, UInt64 CensusFlags, UInt64 SecondsSinceBoot, UnicodeString TrackingInfo)		Shell OOBEHealth	OOBEHealth_Progress	Informational		
+Microsoft-Windows-Shell-Core	62460	0	OOBEHealth_Progress(Int32 DataVersion, UInt64 HealthStateFlags, UInt64 CensusFlags, UInt64 SecondsSinceBoot, UnicodeString ImageIdentifier, UnicodeString TrackingInfo)		Shell OOBEHealth	OOBEHealth_Progress	Informational		
 Microsoft-Windows-Shell-Core	63200	0	task_063200()		WDI	task_0	Informational		

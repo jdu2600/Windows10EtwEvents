@@ -20,7 +20,7 @@ Microsoft-Windows-ESE	118	0	ESE_IOREQHeapEnqueue_Trace(UInt64 iFile, UInt64 ibOf
 Microsoft-Windows-ESE	119	0	ESE_IOREQHeapDequeue_Trace(UInt64 iFile, UInt64 ibOffset, UInt32 cbData, UInt32 tidAlloc, UInt32 fHeapA, UInt32 fWrite, UInt32 Iorp, UInt32 Iors, UInt32 Ioru, UInt32 Iorf, UInt32 grbitQos, UInt64 cmsecTimeInQueue, UInt32 UserFileType, UInt64 UserFileID)		IO	ESE_IOREQHeapDequeue_Trace	Informational		
 Microsoft-Windows-ESE	120	0	ESE_IOCompletion_Trace(UInt64 iFile, UInt32 fMultiIor, UInt8 fWrite, UInt32 UserId, UInt8 OperationId, UInt8 OperationType, UInt8 ClientType, UInt8 Flags, UInt32 CorrelationId, UInt8 Iorp, UInt8 Iors, UInt8 Iort, UInt8 Ioru, UInt8 Iorf, UInt8 ParentObjectClass, UInt64 ibOffset, UInt32 cbTransfer, UInt32 error, UInt32 qosHighestFirst, UInt64 cmsecIOElapsed, UInt32 dtickCompletionDelay, UInt32 tidAlloc, UInt32 UserFileType, UInt64 UserFileID, UInt32 fmfFile)		IO	ESE_IOCompletion_Trace	Informational		
 Microsoft-Windows-ESE	121	0	ESE_LogStall_Trace()		LOG	ESE_LogStall_Trace	Warning		
-Microsoft-Windows-ESE	122	0	ESE_LogFlush_Trace(Int32 lgenData, UInt32 ibLogData, UInt32 cbLogData)		LOG	ESE_LogFlush_Trace	Informational		
+Microsoft-Windows-ESE	122	0	ESE_LogWrite_Trace(Int32 lgenData, UInt32 ibLogData, UInt32 cbLogData)		LOG	ESE_LogWrite_Trace	Informational		
 Microsoft-Windows-ESE	123	0	ESE_EventLogInfo_Trace(UnicodeString szTrace)		Trace	ESE_EventLogInfo_Trace	Informational		
 Microsoft-Windows-ESE	124	0	ESE_EventLogWarn_Trace(UnicodeString szTrace)		Trace	ESE_EventLogWarn_Trace	Warning		
 Microsoft-Windows-ESE	125	0	ESE_EventLogError_Trace(UnicodeString szTrace)		Trace	ESE_EventLogError_Trace	Error		
@@ -50,7 +50,7 @@ Microsoft-Windows-ESE	148	0	ESE_CachePage_Trace(UInt32 tick, UInt32 ifmp, UInt32
 Microsoft-Windows-ESE	149	0	ESE_MarkPageAsSuperCold_Trace(UInt32 tick, UInt32 ifmp, UInt32 pgno)		BF BFRESMGR	ESE_MarkPageAsSuperCold_Trace	Verbose		
 Microsoft-Windows-ESE	150	0	ESE_CacheMissLatency_Trace(UInt32 ifmp, UInt32 pgno, UInt32 UserId, UInt8 OperationId, UInt8 OperationType, UInt8 ClientType, UInt8 Flags, UInt32 CorrelationId, UInt8 Iorp, UInt8 Iors, UInt8 Iort, UInt8 Ioru, UInt8 Iorf, UInt8 ParentObjectClass, UInt64 Usec)		Performance BF	ESE_CacheMissLatency_Trace	Informational		
 Microsoft-Windows-ESE	151	0	ESE_BTreePrereadPageRequest_Trace(UInt32 ifmp, UInt32 pgno, UInt32 UserId, UInt8 OperationId, UInt8 OperationType, UInt8 ClientType, UInt8 Flags, UInt32 CorrelationId, UInt8 Iorp, UInt8 Iors, UInt8 Iort, UInt8 Ioru, UInt8 Iorf, UInt8 ParentObjectClass, UInt8 Ignored)		Performance	ESE_BTreePrereadPageRequest_Trace	Informational		
-Microsoft-Windows-ESE	152	0	ESE_DiskFlushFileBuffers_Trace(UnicodeString szFileName, UInt32 iofr, UInt64 cioreqFileFlushing, UInt64 usFfb)		IO	ESE_DiskFlushFileBuffers_Trace	Informational		
+Microsoft-Windows-ESE	152	0	ESE_DiskFlushFileBuffers_Trace(UInt32 Disk, UnicodeString szFileName, UInt32 iofr, UInt64 cioreqFileFlushing, UInt64 usFfb)		IO	ESE_DiskFlushFileBuffers_Trace	Informational		
 Microsoft-Windows-ESE	200	0	ESE_tagNull_Trace(AnsiString szTrace)		JETTraceTag	ESE_tagNull_Trace	Verbose		
 Microsoft-Windows-ESE	201	0	ESE_tagInformation_Trace(AnsiString szTrace)		JETTraceTag	ESE_tagInformation_Trace	Informational		
 Microsoft-Windows-ESE	202	0	ESE_tagErrors_Trace(AnsiString szTrace)		JETTraceTag	ESE_tagErrors_Trace	Informational		

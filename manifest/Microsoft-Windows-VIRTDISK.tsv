@@ -1,0 +1,11 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-VIRTDISK	1	0	Openvirtualdisk.Start(UnicodeString VhdFileName, UInt32 VhdVirtualStorageType)	Start		Openvirtualdisk.	Informational		
+Microsoft-Windows-VIRTDISK	2	0	Openvirtualdisk.Stop(Pointer VhdHandle, UInt32 VhdStatus)	Stop		Openvirtualdisk.	Informational		
+Microsoft-Windows-VIRTDISK	3	0	Attachvirtualdisk.Start(Pointer VhdHandle)	Start		Attachvirtualdisk.	Informational		
+Microsoft-Windows-VIRTDISK	4	0	Attachvirtualdisk.Stop(UInt32 VhdStatus)	Stop		Attachvirtualdisk.	Informational		
+Microsoft-Windows-VIRTDISK	5	0	Detachvirtualdisk.Start(Pointer VhdHandle)	Start		Detachvirtualdisk.	Informational		
+Microsoft-Windows-VIRTDISK	6	0	Detachvirtualdisk.Stop(UInt32 VhdStatus)	Stop		Detachvirtualdisk.	Informational		
+Microsoft-Windows-VIRTDISK	1000	0	task_0(UnicodeString TraceData, UnicodeString VmName, UnicodeString VmId, UInt32 StackFrameCount, Pointer StackFrame, UInt32 ModuleCount, Int32 Module)			task_0	Informational		
+Microsoft-Windows-VIRTDISK	1001	0	task_01001(UnicodeString TraceData, UnicodeString VmName, UnicodeString VmId, UInt32 StackFrameCount, Pointer StackFrame, UInt32 ModuleCount, Int32 Module)			task_0	Warning		
+Microsoft-Windows-VIRTDISK	1002	0	task_01002(UnicodeString TraceData, UnicodeString VmName, UnicodeString VmId, UInt32 StackFrameCount, Pointer StackFrame, UInt32 ModuleCount, Int32 Module)			task_0	Error		
+Microsoft-Windows-VIRTDISK	1003	0	task_01003(UnicodeString TraceData, UnicodeString VmName, UnicodeString VmId, UInt32 StackFrameCount, Pointer StackFrame, UInt32 ModuleCount, Int32 Module)			task_0	Critical		

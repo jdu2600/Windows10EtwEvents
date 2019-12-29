@@ -32,9 +32,21 @@ Microsoft-Windows-RTWorkQueue-Threading	4495	0	SubscribeCpuGroupMaskChangeWNF(UI
 Microsoft-Windows-RTWorkQueue-Threading	4496	0	UpdateWorkqueueCpuGroupMask(UInt32 dwWorkQueue, UnicodeString Class, UInt64 ProcessorGroup, UInt64 ProcessorMask)			UpdateWorkqueueCpuGroupMask	Informational		
 Microsoft-Windows-RTWorkQueue-Threading	4497	0	CpuGroupMaskChangeWnfCallback(UInt32 ChangeStamp, UInt32 CurChangeStamp, UInt64 ProcessorGroup, UInt64 ProcessorMask, UInt32 Length)			CpuGroupMaskChangeWnfCallback	Informational		
 Microsoft-Windows-RTWorkQueue-Threading	4498	0	SetThreadCpuGroupMask(Pointer pWorkQueue, UnicodeString Class, Int32 Priority, Int32 ThreadId, UInt64 CurProcessorGroup, UInt64 CurProcessorMask, UInt64 NewProcessorGroup, UInt64 NewProcessorMask, Int32 Status)			SetThreadCpuGroupMask	Informational		
-Microsoft-Windows-RTWorkQueue-Threading	4499	0	WorkQueue:QueueStart4499(Pointer WorkQueuePointer, Int32 WorkQueueID)	Start		WorkQueue:Queue	Verbose		
-Microsoft-Windows-RTWorkQueue-Threading	4500	0	WorkQueue:QueueStop4500(Pointer WorkQueuePointer, Int32 WorkQueueID)	Stop		WorkQueue:Queue	Verbose		
+Microsoft-Windows-RTWorkQueue-Threading	4499	0	WorkQueue:NotificationStart(Pointer WorkQueuePointer, Int32 WorkQueueID)	Start		WorkQueue:Notification	Verbose		
+Microsoft-Windows-RTWorkQueue-Threading	4500	0	WorkQueue:NotificationStop(Pointer WorkQueuePointer, Int32 WorkQueueID)	Stop		WorkQueue:Notification	Verbose		
 Microsoft-Windows-RTWorkQueue-Threading	4501	0	WorkQueue:DebounceStart(Pointer WorkQueuePointer, UInt32 WorkQueueID, UInt32 TaskGroup)	Start		WorkQueue:Debounce	Verbose		
 Microsoft-Windows-RTWorkQueue-Threading	4502	0	WorkQueue:DebounceStop(Pointer WorkQueuePointer, UInt32 WorkQueueID, UInt32 TaskGroup)	Stop		WorkQueue:Debounce	Verbose		
 Microsoft-Windows-RTWorkQueue-Threading	4503	0	WorkQueue:BufferingStart(Pointer WorkQueuePointer, UInt32 WorkQueueID, UInt32 TaskGroup)	Start		WorkQueue:Buffering	Verbose		
 Microsoft-Windows-RTWorkQueue-Threading	4504	0	WorkQueue:BufferingStop(Pointer WorkQueuePointer, UInt32 WorkQueueID, UInt32 TaskGroup)	Stop		WorkQueue:Buffering	Verbose		
+Microsoft-Windows-RTWorkQueue-Threading	4505	0	Platform:AllocIndexStart(Pointer Platform, Int32 WorkQueueID, Int32 Index)	Start		Platform:AllocIndex	Verbose		
+Microsoft-Windows-RTWorkQueue-Threading	4506	0	Platform:AllocIndexStop(Pointer Platform, Int32 WorkQueueID, Int32 Index)	Stop		Platform:AllocIndex	Verbose		
+Microsoft-Windows-RTWorkQueue-Threading	4507	0	Platform:InitStart(Pointer Platform)	Start		Platform:Init	Verbose		
+Microsoft-Windows-RTWorkQueue-Threading	4508	0	Platform:InitStop(Pointer Platform)	Stop		Platform:Init	Verbose		
+Microsoft-Windows-RTWorkQueue-Threading	4509	0	Platform:ShutdownStart(Pointer Platform)	Start	Telemetry	Platform:Shutdown	Informational		
+Microsoft-Windows-RTWorkQueue-Threading	4510	0	Platform:ShutdownStop(Pointer Platform)	Stop	Telemetry	Platform:Shutdown	Informational		
+Microsoft-Windows-RTWorkQueue-Threading	4511	0	Platform:Shutdown(Pointer Platform)		DiagTrack	Platform:Shutdown	Warning		
+Microsoft-Windows-RTWorkQueue-Threading	4512	0	Platform:Shutdown_WorkQueueStart(Pointer Platform, Int32 WorkQueue, Int32 Index)	Start		Platform:Shutdown_WorkQueue	Verbose		
+Microsoft-Windows-RTWorkQueue-Threading	4513	0	Platform:Shutdown_WorkQueueStop(Pointer Platform, Int32 WorkQueue, Int32 Index)	Stop		Platform:Shutdown_WorkQueue	Verbose		
+Microsoft-Windows-RTWorkQueue-Threading	4514	0	WorkQueue:RunLimitStart(Pointer WorkQueuePointer, UInt32 WorkQueueID, UInt32 TaskGroup)	Start		WorkQueue:RunLimit	Verbose		
+Microsoft-Windows-RTWorkQueue-Threading	4515	0	WorkQueue:RunLimitStop(Pointer WorkQueuePointer, UInt32 WorkQueueID, UInt32 TaskGroup)	Stop		WorkQueue:RunLimit	Verbose		
+Microsoft-Windows-RTWorkQueue-Threading	4516	0	WorkQueue:RunLimit(Pointer WorkQueuePointer, UInt32 WorkQueueID, UInt32 TaskGroup)		Telemetry	WorkQueue:RunLimit	Verbose		

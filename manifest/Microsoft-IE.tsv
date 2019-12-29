@@ -202,7 +202,7 @@ Microsoft-IE	208	0	Mshtml_AlignedBeat_VSync(UInt64 Object, UInt64 Value)		paintb
 Microsoft-IE	209	0	Mshtml_AlignedBeat_VSyncStatus(UInt64 Object, UInt64 Value)		paintbeat	Mshtml_AlignedBeat_VSyncStatus	Always		
 Microsoft-IE	210	0	Mshtml_MsPerformance_FullyLoaded()		primarynav	Mshtml_MsPerformance_FullyLoaded	Always		
 Microsoft-IE	211	0	Mshtml_MsPerformance_Mark(UnicodeString Name)		primarynav	Mshtml_MsPerformance_Mark	Always		
-Microsoft-IE	212	0	Mshtml_MsPerformance_Measure(UnicodeString Name, UnicodeString StartMark, UnicodeString EndMark, UInt64 Duration)		verbose	Mshtml_MsPerformance_Measure	Always		
+Microsoft-IE	212	0	Mshtml_MsPerformance_Measure(UnicodeString Name, UnicodeString StartMark, UnicodeString EndMark, UInt64 Duration)		primarynav	Mshtml_MsPerformance_Measure	Always		
 Microsoft-IE	213	0	Mshtml_AttachIDispImage(UInt64 Object, UInt64 Value)		subsystem	Mshtml_AttachIDispImage	Always		
 Microsoft-IE	214	0	Mshtml_DetachIDispImage(UInt64 Object, UInt64 Value)		subsystem	Mshtml_DetachIDispImage	Always		
 Microsoft-IE	215	0	Mshtml_LowPriMethodCall_Watchdog()		subsystem	Mshtml_LowPriMethodCall_Watchdog	Always		
@@ -722,3 +722,6 @@ Microsoft-IE	856	0	Mshtml_EventLoop_MessageGroupAlreadyQueued()		gwnd	Mshtml_Eve
 Microsoft-IE	857	0	Mshtml_EventLoop_DriveRegularTasksFromLow(Boolean CancelledLowPri)		gwnd	Mshtml_EventLoop_DriveRegularTasksFromLow	Always		
 Microsoft-IE	858	0	Mshtml_EventLoop_DriveRegularTasks()		gwnd	Mshtml_EventLoop_DriveRegularTasks	Always		
 Microsoft-IE	859	0	JScript_Parse_Script(Pointer Element, UInt32 Zero)		jscript	JScript_Parse_Script	Always		
+Microsoft-IE	860	0	Mshtml_Canvas_CommandListStart(Pointer CommandList, UInt32 NumCommands, UInt32 BytesUsed)	Start	subsystem composition	Mshtml_Canvas_CommandList	Always		
+Microsoft-IE	861	0	Mshtml_Canvas_CommandListStop()	Stop	subsystem composition	Mshtml_Canvas_CommandList	Always		
+Microsoft-IE	862	0	Mshtml_Canvas_CommandList(UInt32 FlushReason)		subsystem composition	Mshtml_Canvas_CommandList	Always		

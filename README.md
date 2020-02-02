@@ -12,6 +12,12 @@ Events from all manifest-based and mof-based ETW providers across Windows 10 ver
 | 1903  | 49,734    | 867	| 187   | 24    |
 | 1909  | 49,773    | 868	| 187   | 24    |
 
+Want the data in a different format?
+------------------------------------
+Roberto Rodriguez [@Cyb3rWard0g](https://twitter.com/Cyb3rWard0g)
+ * https://github.com/hunters-forge/OSSEM/tree/master/data_dictionaries/windows/etw/json - JSON
+ * https://github.com/hunters-forge/OSSEM/tree/yaml/data_dictionaries/yaml/windows - YAML
+
 Useful references
 -----------------
 Microsoft

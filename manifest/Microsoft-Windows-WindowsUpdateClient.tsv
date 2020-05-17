@@ -46,3 +46,6 @@ Microsoft-Windows-WindowsUpdateClient	212	1	WindowsUpdateAgentRevert212_V1(Unico
 Microsoft-Windows-WindowsUpdateClient	213	0	WindowsUpdateAgentRevert(HexInt32 errorCode, UnicodeString updatelist, GUID updateGuid, UInt32 updateRevisionNumber)	Revert	failure Revert	WindowsUpdateAgent	Error		
 Microsoft-Windows-WindowsUpdateClient	214	0	WindowsUpdateAgentRevert214(UnicodeString updateTitle, GUID updateGuid, UInt32 updateRevisionNumber)	Revert	started Revert	WindowsUpdateAgent	Informational		
 Microsoft-Windows-WindowsUpdateClient	215	0	WindowsUpdateAgentUninstallation215(UnicodeString updateTitle, GUID updateGuid, UInt32 updateRevisionNumber)	Uninstallation	started uninstall	WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	216	1	WindowsUpdateAgentCommit216_V1(UnicodeString updateTitle, GUID updateGuid, UInt32 updateRevisionNumber, GUID serviceGuid)	Commit	success Commit	WindowsUpdateAgent	Informational		
+Microsoft-Windows-WindowsUpdateClient	217	0	WindowsUpdateAgentCommit(HexInt32 errorCode, UnicodeString updatelist, GUID updateGuid, UInt32 updateRevisionNumber)	Commit	failure Commit	WindowsUpdateAgent	Error		
+Microsoft-Windows-WindowsUpdateClient	218	0	WindowsUpdateAgentCommit218(UnicodeString updateTitle, GUID updateGuid, UInt32 updateRevisionNumber)	Commit	started Commit	WindowsUpdateAgent	Informational		

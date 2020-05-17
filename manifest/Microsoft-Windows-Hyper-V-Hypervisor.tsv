@@ -6,6 +6,7 @@ Microsoft-Windows-Hyper-V-Hypervisor	5	0	task_05()		keyword_400000000000	task_0	
 Microsoft-Windows-Hyper-V-Hypervisor	10	0	task_010(HexInt64 Error)		keyword_400000000000	task_0	Informational		
 Microsoft-Windows-Hyper-V-Hypervisor	11	0	task_011(HexInt64 Error)		keyword_400000000000	task_0	Informational		
 Microsoft-Windows-Hyper-V-Hypervisor	12	0	task_012(HexInt64 ProcessorFeatures, HexInt64 XsaveFeatures, UInt32 CLFlushSize)			task_0	Informational		
+Microsoft-Windows-Hyper-V-Hypervisor	12	1	task_012_V1(UInt8 BankCount, HexInt64 ProcessorFeatures, HexInt64 XsaveFeatures, UInt32 CLFlushSize)			task_0	Informational		
 Microsoft-Windows-Hyper-V-Hypervisor	13	0	task_013()		keyword_400000000000	task_0	Warning		
 Microsoft-Windows-Hyper-V-Hypervisor	20	0	task_020(HexInt32 ErrorCode)		keyword_400000000000	task_0	Error		
 Microsoft-Windows-Hyper-V-Hypervisor	26	0	task_026(HexInt64 BalStatus, HexInt32 Error)		keyword_400000000000	task_0	Error		
@@ -54,9 +55,29 @@ Microsoft-Windows-Hyper-V-Hypervisor	152	0	task_0152(UnicodeString ImageName, He
 Microsoft-Windows-Hyper-V-Hypervisor	153	0	task_0153(UnicodeString ImageName)		keyword_400000000000	task_0	Warning		
 Microsoft-Windows-Hyper-V-Hypervisor	154	0	task_0154(Int64 MaxDelta, Int64 MinDelta)		keyword_400000000000	task_0	Error		
 Microsoft-Windows-Hyper-V-Hypervisor	155	0	task_0155(HexInt64 ProcessorFeatures, HexInt64 XsaveFeatures, UInt32 CLFlushSize)			task_0	Informational		
+Microsoft-Windows-Hyper-V-Hypervisor	155	1	task_0155_V1(UInt8 BankCount, HexInt64 ProcessorFeatures, HexInt64 XsaveFeatures, UInt32 CLFlushSize)			task_0	Informational		
 Microsoft-Windows-Hyper-V-Hypervisor	156	0	task_0156(Boolean NotAffectedRdclNo, Boolean NotAffectedAtom, Boolean CacheFlushSupported, Boolean SmtEnabled, Boolean ParentHypervisorFlushes, Boolean DisabledLoadOption, Boolean Enabled, Boolean CacheFlushNeeded)		keyword_400000000000	task_0	Informational		
+Microsoft-Windows-Hyper-V-Hypervisor	156	1	task_0156_V1(UInt32 InitialAllocationNumaPolicy)			task_0	Informational		
 Microsoft-Windows-Hyper-V-Hypervisor	157	0	task_0157()		keyword_400000000000	task_0	Warning		
+Microsoft-Windows-Hyper-V-Hypervisor	158	0	task_0158(UInt8 CurrentVersion, UInt8 MinVersion, UInt8 MaxVersion)		keyword_400000000000	task_0	Error		
+Microsoft-Windows-Hyper-V-Hypervisor	159	0	task_0159()		keyword_400000000000	task_0	Error		
+Microsoft-Windows-Hyper-V-Hypervisor	160	0	task_0160()		keyword_400000000000	task_0	Informational		
+Microsoft-Windows-Hyper-V-Hypervisor	161	0	task_0161()		keyword_400000000000	task_0	Warning		
+Microsoft-Windows-Hyper-V-Hypervisor	162	0	task_0162(HexInt32 NtStatus)		keyword_400000000000	task_0	Error		
+Microsoft-Windows-Hyper-V-Hypervisor	163	0	task_0163(UInt32 Processor)			task_0	Error		
+Microsoft-Windows-Hyper-V-Hypervisor	164	0	task_0164(UInt32 Processor)			task_0	Error		
+Microsoft-Windows-Hyper-V-Hypervisor	165	0	task_0165(Boolean NotAffectedMdsNo, Boolean NotAffectedAtom, Boolean MdClearSupported, Boolean BufferFlushNeeded)		keyword_400000000000	task_0	Informational		
 Microsoft-Windows-Hyper-V-Hypervisor	8451	0	task_08451(HexInt64 Error)		keyword_400000000000	task_0	Error		
+Microsoft-Windows-Hyper-V-Hypervisor	12288	0	RegisterInterface(UInt32 FailurePhase, UInt32 NtStatus)			RegisterInterface	Error		
+Microsoft-Windows-Hyper-V-Hypervisor	12289	0	HvldrIoctl(UInt64 AuxData, UInt32 NtStatus)			HvldrIoctl	Error		
+Microsoft-Windows-Hyper-V-Hypervisor	12290	0	RemoteHypercall(UInt64 AuxData, UInt32 NtStatus)			RemoteHypercall	Error		
+Microsoft-Windows-Hyper-V-Hypervisor	12291	0	HvldrCreatePartition(UInt64 PartitionId, UInt32 NtStatus, UInt64 AuxiliaryData)			HvldrCreatePartition	Error		
+Microsoft-Windows-Hyper-V-Hypervisor	12292	0	RegisterPartitionId(UInt64 PartitionId, UInt32 NtStatus, UInt64 AuxiliaryData)			RegisterPartitionId	Error		
+Microsoft-Windows-Hyper-V-Hypervisor	12293	0	HvldrDeletePartition(UInt64 PartitionId, UInt32 NtStatus, UInt64 AuxiliaryData)			HvldrDeletePartition	Error		
+Microsoft-Windows-Hyper-V-Hypervisor	12294	0	HvldrDepositMemory(UInt64 PartitionId, UInt32 NtStatus, UInt64 AuxiliaryData)			HvldrDepositMemory	Error		
+Microsoft-Windows-Hyper-V-Hypervisor	12295	0	HvldrMapGpaPages(UInt64 PartitionId, UInt32 NtStatus, UInt64 AuxiliaryData)			HvldrMapGpaPages	Error		
+Microsoft-Windows-Hyper-V-Hypervisor	12296	0	HvldrUnmapGpaSpace(UInt64 PartitionId, UInt32 NtStatus, UInt64 AuxiliaryData)			HvldrUnmapGpaSpace	Error		
+Microsoft-Windows-Hyper-V-Hypervisor	12297	0	HvldrNumaDistributedAllocation(HexInt64 TotalSystemPages, HexInt32 TotalPagesRequested, UInt32 Policy, UInt32 ProximityDomainCount, UInt32 AllocationPass, UInt32 ProximityDomainIndex, HexInt32 ProximityDomainId, HexInt64 TotalDomainPages, HexInt32 PagesRequested, HexInt64 BalStatus, HexInt32 PagesAllocated)			HvldrNumaDistributedAllocation	Informational		
 Microsoft-Windows-Hyper-V-Hypervisor	12550	0	task_012550(HexInt32 Msr, UInt8 IsWrite, HexInt64 MsrValue, UInt16 AccessStatus, HexInt64 Pc, HexInt64 ImageBase, HexInt32 ImageChecksum, HexInt32 ImageTimestamp, AnsiString ImageName)		keyword_400000000000	task_0	Warning		
 Microsoft-Windows-Hyper-V-Hypervisor	16641	0	task_016641(UInt64 PartitionId)			task_0	Informational		
 Microsoft-Windows-Hyper-V-Hypervisor	16642	0	task_016642(UInt64 PartitionId)			task_0	Informational		

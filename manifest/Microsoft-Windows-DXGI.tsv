@@ -44,7 +44,7 @@ Microsoft-Windows-DXGI	69	0	SetColorSpace1(Pointer pIDXGISwapchain, UInt32 Color
 Microsoft-Windows-DXGI	70	0	JournalEntry(UInt32 Index, HexInt32 Code, UInt32 ThreadId, AnsiString Message)		Events JournalEntries	JournalEntry	Always		
 Microsoft-Windows-DXGI	71	0	BindBackBuffersToDwm(Pointer pIDXGISwapchain, UInt8 BackbufferCount, Pointer BackbufferHandles)		Events	BindBackBuffersToDwm	Always		
 Microsoft-Windows-DXGI	72	0	UnBindBackBuffersFromDwm(Pointer pIDXGISwapchain, Boolean KeepExistingContent)		Events	UnBindBackBuffersFromDwm	Always		
-Microsoft-Windows-DXGI	73	0	Factory(Pointer pIDXGIFactory, Boolean ReparentingOccurred, UInt32 DecidingFactor, AnsiString Message)		Events	Factory	Always		
+Microsoft-Windows-DXGI	73	0	Factory(Pointer pIDXGIFactory, Boolean ReparentingOccurred, UInt32 DecidingFactor, UInt32 GpuPreference, UInt32 Message)		Events	Factory	Always		
 Microsoft-Windows-DXGI	74	0	SwapChain(Pointer pIDXGISwapchain, Pointer m_pPreferredOutput, UInt32 NewSyncInterval)		Events	SwapChain	Always		
 Microsoft-Windows-DXGI	80	0	CreateDXGIFactoryStart(GUID riid, Pointer ppFactory)	Start		CreateDXGIFactory	Always		
 Microsoft-Windows-DXGI	81	0	CreateDXGIFactoryStop(UInt32 m_Ret)	Stop		CreateDXGIFactory	Always		

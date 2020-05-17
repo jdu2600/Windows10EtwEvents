@@ -160,20 +160,8 @@ Microsoft-Windows-WMP	317	0	WORDWHEELStop(UnicodeString Value1, UInt32 Value2)	S
 Microsoft-Windows-WMP	318	0	WORDWHEELStop318()	Stop	mediaplayer	WORDWHEEL	Informational		
 Microsoft-Windows-WMP	323	0	HME_SERVER_CONTAINER_UPDATE_IDSStart()	Start	mediaplayer	HME_SERVER_CONTAINER_UPDATE_IDS	Informational		
 Microsoft-Windows-WMP	324	0	HME_SERVER_CONTAINER_UPDATE_IDSStop()	Stop	mediaplayer	HME_SERVER_CONTAINER_UPDATE_IDS	Informational		
-Microsoft-Windows-WMP	325	0	RME_CLIENT_ENUMERATE_LIBRARIES_REQUESTStart(UnicodeString URL)	Start	mediaplayer	RME_CLIENT_ENUMERATE_LIBRARIES_REQUEST	Informational		
-Microsoft-Windows-WMP	326	0	RME_CLIENT_ENUMERATE_LIBRARIES_RESPONSEStop(UnicodeString URL, UInt32 HRESULT)	Stop	mediaplayer	RME_CLIENT_ENUMERATE_LIBRARIES_RESPONSE	Informational		
-Microsoft-Windows-WMP	327	0	RME_CLIENT_CURRENT_BANDWIDTH_ESTIMATEStart(UInt32 Bandwidth)	Start	mediaplayer	RME_CLIENT_CURRENT_BANDWIDTH_ESTIMATE	Informational		
-Microsoft-Windows-WMP	328	0	RME_CLIENT_CURRENT_BANDWIDTHStart(UInt32 Bandwidth)	Start	mediaplayer	RME_CLIENT_CURRENT_BANDWIDTH	Informational		
-Microsoft-Windows-WMP	350	0	RME_CLIENT_RESOLVE_SERVER_URL_REQUESTStart(UnicodeString URL)	Start	mediaplayer	RME_CLIENT_RESOLVE_SERVER_URL_REQUEST	Informational		
-Microsoft-Windows-WMP	351	0	RME_CLIENT_RESOLVE_SERVER_URL_RESPONSEStop(UnicodeString URL, UInt32 HRESULT)	Stop	mediaplayer	RME_CLIENT_RESOLVE_SERVER_URL_RESPONSE	Informational		
-Microsoft-Windows-WMP	352	0	RME_CLIENT_LIBRARY_METADATA_REQUESTStart(UnicodeString URL)	Start	mediaplayer	RME_CLIENT_LIBRARY_METADATA_REQUEST	Informational		
-Microsoft-Windows-WMP	353	0	RME_CLIENT_LIBRARY_METADATA_RESPONSEStop(UInt32 Offset, UInt32 RequestedCount, UInt32 ResponseCount, UInt32 TotalCount, UInt32 HRESULT)	Stop	mediaplayer	RME_CLIENT_LIBRARY_METADATA_RESPONSE	Informational		
-Microsoft-Windows-WMP	354	0	RME_CLIENT_ESTIMATE_BITRATE_BEGINStart()	Start	mediaplayer	RME_CLIENT_ESTIMATE_BITRATE_BEGIN	Informational		
-Microsoft-Windows-WMP	355	0	RME_CLIENT_ESTIMATE_BITRATE_ENDStop()	Stop	mediaplayer	RME_CLIENT_ESTIMATE_BITRATE_END	Informational		
 Microsoft-Windows-WMP	356	0	HME_SERVER_EXECUTE_QUERYStart(UnicodeString ContainerID, UnicodeString Query)	Start	mediaplayer	HME_SERVER_EXECUTE_QUERY	Informational		
 Microsoft-Windows-WMP	357	0	HME_SERVER_EXECUTE_QUERYStop(UnicodeString ContainerID, UnicodeString Query, UInt32 HRESULT)	Stop	mediaplayer	HME_SERVER_EXECUTE_QUERY	Informational		
-Microsoft-Windows-WMP	358	0	HME_RME_CLIENT_CONSUME_METADATA_RESPONSE_BEGINStart(UnicodeString ID)	Start	mediaplayer	HME_RME_CLIENT_CONSUME_METADATA_RESPONSE_BEGIN	Informational		
-Microsoft-Windows-WMP	359	0	HME_RME_CLIENT_CONSUME_METADATA_RESPONSE_ENDStop(UnicodeString ID)	Stop	mediaplayer	HME_RME_CLIENT_CONSUME_METADATA_RESPONSE_END	Informational		
 Microsoft-Windows-WMP	360	0	HME_SERVER_UPDATEOBJECTStart(UnicodeString DeviceID, UnicodeString ObjectID)	Start	mediaplayer	HME_SERVER_UPDATEOBJECT	Informational		
 Microsoft-Windows-WMP	361	0	HME_SERVER_UPDATEOBJECTStop(UnicodeString DeviceID, UnicodeString ObjectID, UInt32 HRESULT)	Stop	mediaplayer	HME_SERVER_UPDATEOBJECT	Informational		
 Microsoft-Windows-WMP	362	0	HME_CLIENT_UPDATE_METADATAStart(UnicodeString ID, UInt32 Item, UInt32 Atom)	Start	mediaplayer	HME_CLIENT_UPDATE_METADATA	Informational		
@@ -181,9 +169,6 @@ Microsoft-Windows-WMP	363	0	HME_CLIENT_UPDATE_METADATAStop(UnicodeString ID, UIn
 Microsoft-Windows-WMP	364	0	HME_SERVER_ONLINE_OFFLINE(UnicodeString ServerUDN, Boolean Offline)		mediaplayer	HME_SERVER_ONLINE_OFFLINE	Informational		
 Microsoft-Windows-WMP	365	0	HME_SERVER_MAGIC_PACKET_SENT(UnicodeString ID)		mediaplayer	HME_SERVER_MAGIC_PACKET_SENT	Informational		
 Microsoft-Windows-WMP	366	0	HME_SERVER_WAKEUP_FAILED(UnicodeString ID)		mediaplayer	HME_SERVER_WAKEUP_FAILED	Informational		
-Microsoft-Windows-WMP	367	0	RME_CLIENT_LIVE_MACHINE_DISCOVERYStart(UnicodeString ID)	Start	mediaplayer	RME_CLIENT_LIVE_MACHINE_DISCOVERY	Informational		
-Microsoft-Windows-WMP	368	0	RME_CLIENT_LIVE_MACHINE_DISCOVERYStop(UnicodeString ID)	Stop	mediaplayer	RME_CLIENT_LIVE_MACHINE_DISCOVERY	Informational		
-Microsoft-Windows-WMP	369	0	RME_CLIENT_ON_LIVE_MACHINE_DISCOVERY(UnicodeString DeviceID, UnicodeString ObjectID)		mediaplayer	RME_CLIENT_ON_LIVE_MACHINE_DISCOVERY	Informational		
 Microsoft-Windows-WMP	370	0	HME_EnableSharingStart(Pointer IWMMediaLibrary, Boolean EnableSharing, Boolean UpdateACLs, UInt32 HRESULT)	Start	mediaplayer	HME_EnableSharing	Informational		
 Microsoft-Windows-WMP	371	0	HME_EnableSharingStop(Pointer IWMMediaLibrary, Boolean EnableSharing, Boolean UpdateACLs, UInt32 HRESULT)	Stop	mediaplayer	HME_EnableSharing	Informational		
 Microsoft-Windows-WMP	372	0	HME_UPnPDiscoveryBeginStart(Boolean IgnoreUPnPDiscovery, UInt32 HRESULT)	Start	mediaplayer	HME_UPnPDiscoveryBegin	Informational		
@@ -201,8 +186,6 @@ Microsoft-Windows-WMP	383	0	HME_InitCDSThreadStart(UnicodeString UDN, Pointer IU
 Microsoft-Windows-WMP	384	0	HME_InitCDSThreadStop(UnicodeString UDN, Pointer IUPnPDevice, UInt32 HRESULT)	Stop	mediaplayer	HME_InitCDSThread	Informational		
 Microsoft-Windows-WMP	385	0	HME_InitCDSStart(UnicodeString UDN, Pointer IUPnPDevice)	Start	mediaplayer	HME_InitCDS	Informational		
 Microsoft-Windows-WMP	386	0	HME_InitCDSStop(UnicodeString UDN, Pointer IUPnPDevice, Pointer IHMEService, UInt32 HRESULT)	Stop	mediaplayer	HME_InitCDS	Informational		
-Microsoft-Windows-WMP	387	0	RME_CreateDeviceFinderStart()	Start	mediaplayer	RME_CreateDeviceFinder	Informational		
-Microsoft-Windows-WMP	388	0	RME_CreateDeviceFinderStop(Pointer RMEDeviceFinder, UInt32 HRESULT)	Stop	mediaplayer	RME_CreateDeviceFinder	Informational		
 Microsoft-Windows-WMP	389	0	HME_ServiceAddedStart(Pointer IHMEService, UInt32 HRESULT)	Start	mediaplayer	HME_ServiceAdded	Informational		
 Microsoft-Windows-WMP	390	0	HME_ServiceAdded(Pointer IHMEService, UnicodeString UDN)		mediaplayer	HME_ServiceAdded	Informational		
 Microsoft-Windows-WMP	391	0	HME_ServiceAddedStop(Pointer IHMEService, UInt32 HRESULT)	Stop	mediaplayer	HME_ServiceAdded	Informational		
@@ -239,11 +222,8 @@ Microsoft-Windows-WMP	427	0	CONFIGURE_STREAMING_MENU_ACTIONStart()	Start	mediapl
 Microsoft-Windows-WMP	428	0	CONFIGURE_STREAMING_MENU_ACTIONStop(UInt32 result)	Stop	mediaplayer	CONFIGURE_STREAMING_MENU_ACTION	Informational		
 Microsoft-Windows-WMP	429	0	RECEIVE_MEDIA_MENU_ACTIONStart()	Start	mediaplayer	RECEIVE_MEDIA_MENU_ACTION	Informational		
 Microsoft-Windows-WMP	430	0	RECEIVE_MEDIA_MENU_ACTIONStop(UInt32 result)	Stop	mediaplayer	RECEIVE_MEDIA_MENU_ACTION	Informational		
-Microsoft-Windows-WMP	431	0	CONFIGURE_RME_MENU_ACTIONStart()	Start	mediaplayer	CONFIGURE_RME_MENU_ACTION	Informational		
-Microsoft-Windows-WMP	432	0	CONFIGURE_RME_MENU_ACTIONStop(UInt32 result)	Stop	mediaplayer	CONFIGURE_RME_MENU_ACTION	Informational		
 Microsoft-Windows-WMP	433	0	STREAMING_MENU_RENDER_ACTIONStart()	Start	mediaplayer	STREAMING_MENU_RENDER_ACTION	Informational		
 Microsoft-Windows-WMP	434	0	STREAMING_MENU_RENDER_ACTIONStop(UInt32 result)	Stop	mediaplayer	STREAMING_MENU_RENDER_ACTION	Informational		
-Microsoft-Windows-WMP	435	0	STREAMING_MENUITEM_RME_CHECKSTATE_ACTION(Boolean IsChecked)		mediaplayer	STREAMING_MENUITEM_RME_CHECKSTATE_ACTION	Informational		
 Microsoft-Windows-WMP	436	0	STREAMING_MENUITEM_RECEIVEMEDIA_CHECKSTATE(Boolean IsChecked)		mediaplayer	STREAMING_MENUITEM_RECEIVEMEDIA_CHECKSTATE	Informational		
 Microsoft-Windows-WMP	437	0	STREAMING_MENUITEM_AUTOALLOWDEVICES_CHECKSTATE(Boolean IsChecked)		mediaplayer	STREAMING_MENUITEM_AUTOALLOWDEVICES_CHECKSTATE	Informational		
 Microsoft-Windows-WMP	438	0	ALLOW_ALL_DEVICES_MENU_ACTIONStart()	Start	mediaplayer	ALLOW_ALL_DEVICES_MENU_ACTION	Informational		

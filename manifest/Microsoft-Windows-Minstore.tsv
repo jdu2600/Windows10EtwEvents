@@ -11,6 +11,8 @@ Microsoft-Windows-Minstore	22	1	AllocationAllocationrange_V1(Boolean IsMetadata,
 Microsoft-Windows-Minstore	23	1	ForwardProgressLogtailadvance_V1(UInt32 Pending, UInt32 Amount, HexInt64 Lsn1, HexInt64 Lsn2, HexInt64 Lsn3)	Logtailadvance		ForwardProgress	Informational		
 Microsoft-Windows-Minstore	24	1	ForwardProgressLogpulselazywriter_V1(UInt32 Pending, UInt32 Amount, HexInt64 Lsn1, HexInt64 Lsn2, HexInt64 Lsn3)	Logpulselazywriter		ForwardProgress	Informational		
 Microsoft-Windows-Minstore	25	1	AllocationContainermove_V1(UInt32 SourceTier, UInt32 TargetTier, HexInt64 SourceStartOfRange, HexInt64 SourceCountOfRange, HexInt64 TargetPhysicalOffset, UInt32 SsdFillRatio, UInt32 HddFillRatio, Boolean IsTargetReserved, HexInt64 DestageAllocationCount, Boolean FailedSsdDestage)	Containermove		Allocation	Informational		
+Microsoft-Windows-Minstore	26	1	LogRedoLogskipreplay_V1(HexInt32 Status)	Logskipreplay		LogRedo	Warning		
+Microsoft-Windows-Minstore	27	1	LogRedoLogreplayfailure_V1(HexInt32 Status)	Logreplayfailure		LogRedo	Error		
 Microsoft-Windows-Minstore	50	1	ContentionBucketreadcollision_V1(HexInt64 IdHigh, HexInt64 IdLow, HexInt64 Lcn, HexInt32 Level)	Bucketreadcollision		Contention	Informational		
 Microsoft-Windows-Minstore	51	1	ContentionBucketlockcollision_V1(HexInt64 IdHigh, HexInt64 IdLow, HexInt64 Lcn, HexInt32 Level)	Bucketlockcollision		Contention	Informational		
 Microsoft-Windows-Minstore	52	1	ContentionBucketcowcollision_V1(HexInt64 IdHigh, HexInt64 IdLow, HexInt64 Lcn, HexInt32 Level)	Bucketcowcollision		Contention	Informational		

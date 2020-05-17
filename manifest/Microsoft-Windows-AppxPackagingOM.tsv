@@ -152,6 +152,26 @@ Microsoft-Windows-AppxPackagingOM	262	0	ManifestParseManifest262(HexInt32 errorC
 Microsoft-Windows-AppxPackagingOM	263	0	ManifestParseManifest263(HexInt32 errorCode, UInt32 lineNumber, UInt32 columnNumber, UnicodeString extensionCategoryName, UnicodeString attributeName)	ParseManifest		Manifest	Error		
 Microsoft-Windows-AppxPackagingOM	264	0	ManifestParseManifest264(HexInt32 errorCode, UInt32 lineNumber, UInt32 columnNumber)	ParseManifest		Manifest	Error		
 Microsoft-Windows-AppxPackagingOM	265	0	ManifestParseManifest265(HexInt32 errorCode, UInt32 lineNumber, UInt32 columnNumber, UnicodeString attributeName, UnicodeString attributeValue, UInt32 attributeLength, UnicodeString buildVersion)	ParseManifest		Manifest	Error		
+Microsoft-Windows-AppxPackagingOM	266	0	ManifestParseManifest266(HexInt32 errorCode, UInt32 lineNumber, UInt32 columnNumber, UnicodeString attributeName, UnicodeString attributeValue, UnicodeString secondAttributeName, UnicodeString elementName)	ParseManifest		Manifest	Error		
+Microsoft-Windows-AppxPackagingOM	267	0	ManifestParseManifest267(HexInt32 errorCode, UInt32 lineNumber, UInt32 columnNumber, UnicodeString value)	ParseManifest		Manifest	Error		
+Microsoft-Windows-AppxPackagingOM	268	0	ManifestParseManifest268(HexInt32 errorCode, UInt32 lineNumber, UInt32 columnNumber, UnicodeString attributeName1, UnicodeString attributeName2, UnicodeString elementName)	ParseManifest		Manifest	Error		
+Microsoft-Windows-AppxPackagingOM	269	0	ManifestParseManifest269(HexInt32 errorCode, UInt32 lineNumber, UInt32 columnNumber)	ParseManifest		Manifest	Error		
+Microsoft-Windows-AppxPackagingOM	270	0	ManifestParseManifest270(HexInt32 errorCode, UInt32 lineNumber, UInt32 columnNumber)	ParseManifest		Manifest	Error		
+Microsoft-Windows-AppxPackagingOM	271	0	ManifestParseManifest271(HexInt32 errorCode, UInt32 lineNumber, UInt32 columnNumber)	ParseManifest		Manifest	Error		
+Microsoft-Windows-AppxPackagingOM	272	0	ManifestParseManifest272(HexInt32 errorCode, UInt32 lineNumber, UInt32 columnNumber, UnicodeString extensionCategoryName, UnicodeString attributeName)	ParseManifest		Manifest	Error		
+Microsoft-Windows-AppxPackagingOM	273	0	ManifestParseManifest273(HexInt32 errorCode, UInt32 lineNumber, UInt32 columnNumber)	ParseManifest		Manifest	Error		
+Microsoft-Windows-AppxPackagingOM	274	0	ManifestParseManifest274(HexInt32 errorCode, UInt32 lineNumber, UInt32 columnNumber)	ParseManifest		Manifest	Error		
+Microsoft-Windows-AppxPackagingOM	275	0	ManifestParseManifest275(HexInt32 errorCode, UInt32 lineNumber, UInt32 columnNumber, UnicodeString value)	ParseManifest		Manifest	Error		
+Microsoft-Windows-AppxPackagingOM	276	0	ManifestParseManifest276(HexInt32 errorCode, UInt32 lineNumber, UInt32 columnNumber)	ParseManifest		Manifest	Error		
+Microsoft-Windows-AppxPackagingOM	277	0	ManifestParseManifest277(HexInt32 errorCode, UInt32 lineNumber, UInt32 columnNumber, UnicodeString value)	ParseManifest		Manifest	Error		
+Microsoft-Windows-AppxPackagingOM	278	0	ManifestParseManifest278(HexInt32 errorCode, UInt32 lineNumber, UInt32 columnNumber, UnicodeString extensionCategoryName, UnicodeString attributeName)	ParseManifest		Manifest	Error		
+Microsoft-Windows-AppxPackagingOM	279	0	ManifestParseManifest279(UnicodeString namespace)	ParseManifest		Manifest	Warning		
+Microsoft-Windows-AppxPackagingOM	280	0	ManifestParseManifest280(HexInt32 errorCode, UInt32 lineNumber, UInt32 columnNumber)	ParseManifest		Manifest	Warning		
+Microsoft-Windows-AppxPackagingOM	281	0	ManifestParseManifest281(HexInt32 errorCode, UInt32 lineNumber, UInt32 columnNumber)	ParseManifest		Manifest	Warning		
+Microsoft-Windows-AppxPackagingOM	282	0	ManifestParseManifest282(HexInt32 errorCode, UInt32 lineNumber, UInt32 columnNumber)	ParseManifest		Manifest	Warning		
+Microsoft-Windows-AppxPackagingOM	283	0	Bundlemanifest283(HexInt32 errorCode)			Bundlemanifest	Error		
+Microsoft-Windows-AppxPackagingOM	284	0	Bundlemanifest284(HexInt32 errorCode, UInt32 lineNumber, UInt32 columnNumber, UnicodeString mainPackageName, UnicodeString mainPackagePublisher)			Bundlemanifest	Error		
+Microsoft-Windows-AppxPackagingOM	285	0	ManifestParseManifest285(HexInt32 errorCode, UInt32 lineNumber, UInt32 columnNumber)	ParseManifest		Manifest	Error		
 Microsoft-Windows-AppxPackagingOM	300	0	AppXPackaging.Task.PackageWriterStart(Boolean zipMode, UnicodeString hashMethod)	Start	keyword_400000000000	AppXPackaging.Task.PackageWriter	Informational		
 Microsoft-Windows-AppxPackagingOM	301	0	AppXPackaging.Task.PackageWriterStop(UInt64 fileCount, UInt64 totalSize)	Stop	keyword_400000000000	AppXPackaging.Task.PackageWriter	Informational		
 Microsoft-Windows-AppxPackagingOM	302	0	AppXPackaging.Task.PackageWriter.AddPayloadFileStart(UnicodeString fileName, UnicodeString contentType, UInt32 compressionOption)	Start	keyword_400000000000	AppXPackaging.Task.PackageWriter.AddPayloadFile	Informational		
@@ -252,3 +272,4 @@ Microsoft-Windows-AppxPackagingOM	426	0	AppXPackaging.Task.PackageWriter.Process
 Microsoft-Windows-AppxPackagingOM	427	0	AppXPackaging.Task.PackageWriter.ProcessPayloadFileStop()	Stop	keyword_400000000000	AppXPackaging.Task.PackageWriter.ProcessPayloadFile	Informational		
 Microsoft-Windows-AppxPackagingOM	428	0	AppXPackaging.Task.BundleWriter.AddPackageReferenceStart()	Start		AppXPackaging.Task.BundleWriter.AddPackageReference	Informational		
 Microsoft-Windows-AppxPackagingOM	429	0	AppXPackaging.Task.BundleWriter.AddPackageReferenceStop()	Stop		AppXPackaging.Task.BundleWriter.AddPackageReference	Informational		
+Microsoft-Windows-AppxPackagingOM	430	0	Bundlemanifest430(HexInt32 errorCode, UnicodeString fileName, UnicodeString packageFullName)			Bundlemanifest	Error		

@@ -72,11 +72,11 @@ Microsoft-Windows-Audio	112	0	MidiRT:PerformSynchronousI/OStop(Pointer object, U
 Microsoft-Windows-Audio	113	0	MidiRT:PerformAsynchronousI/OStart(Pointer object, UInt32 ioControlCode)	Start		MidiRT:PerformAsynchronousI/O	Informational		
 Microsoft-Windows-Audio	114	0	MidiRT:PerformAsynchronousI/OStop(Pointer object, UInt32 hResult)	Stop		MidiRT:PerformAsynchronousI/O	Informational		
 Microsoft-Windows-Audio	115	0	CrossProcesspacketadded(Pointer CrossProcessInstance, UInt32 ReadIndex, UInt32 WriteIndexIndex, UInt32 FramesInPacket, UInt64 QPC)			CrossProcesspacketadded	Verbose		
-Microsoft-Windows-Audio	116	0	Pump:settingdeadline(Pointer PumpInstance, Int64 deadlineHns)			Pump:settingdeadline	Verbose		
-Microsoft-Windows-Audio	117	0	Pump:cancellingdeadline(Pointer PumpInstance)			Pump:cancellingdeadline	Verbose		
-Microsoft-Windows-Audio	118	0	Pump:misseddeadline!(Pointer PumpInstance, Int64 deadlineHns)			Pump:misseddeadline!	Informational		
-Microsoft-Windows-Audio	119	0	Pump:MultiMediamodeStart(Pointer PumpInstance)	Start		Pump:MultiMediamode	Verbose		
-Microsoft-Windows-Audio	120	0	Pump:MultiMediamodeStop(Pointer PumpInstance)	Stop		Pump:MultiMediamode	Verbose		
+Microsoft-Windows-Audio	116	1	Pump:settingdeadline_V1(Pointer PumpInstance, Int64 Hns, Boolean success)			Pump:settingdeadline	Verbose		
+Microsoft-Windows-Audio	117	1	Pump:cancellingdeadline_V1(Pointer PumpInstance, Int64 Hns, Boolean success)			Pump:cancellingdeadline	Verbose		
+Microsoft-Windows-Audio	118	1	Pump:misseddeadline!_V1(Pointer PumpInstance, Int64 Hns, Boolean success)			Pump:misseddeadline!	Informational		
+Microsoft-Windows-Audio	119	1	Pump:MultiMediamodeStart_V1(Pointer PumpInstance, Int64 Hns, Boolean success)	Start		Pump:MultiMediamode	Verbose		
+Microsoft-Windows-Audio	120	1	Pump:MultiMediamodeStop_V1(Pointer PumpInstance, Int64 Hns, Boolean success)	Stop		Pump:MultiMediamode	Verbose		
 Microsoft-Windows-Audio	121	0	EndpointCharacteristicsDiscoveryStart(UnicodeString EndpointId)	Start		EndpointCharacteristicsDiscovery	Informational		
 Microsoft-Windows-Audio	122	0	EndpointCharacteristicsDiscoveryStop(UnicodeString EndpointId, HexInt32 hr)	Stop		EndpointCharacteristicsDiscovery	Informational		
 Microsoft-Windows-Audio	123	0	GetMixFormatevaluationStart(UnicodeString EndpointId, UInt32 category, Boolean Raw, Boolean MatchFormat, UInt32 ConnectorType)	Start		GetMixFormatevaluation	Informational		
@@ -114,3 +114,6 @@ Microsoft-Windows-Audio	154	0	AEGeneric(Pointer objInstance, UInt32 ucType, UInt
 Microsoft-Windows-Audio	155	0	AEMemory(Pointer objInstance, UInt32 ucType, Pointer hHeap, UInt32 ulInitial, UInt32 ulMin, UInt32 ulMax, UInt32 ulAllocCount, UInt32 ulExtendCount, UInt32 ulTotalAlloc)			AEMemory	Verbose		
 Microsoft-Windows-Audio	156	0	AEMemory_163(Pointer objInstance, UInt32 ucType, UInt64 u64Param1, UInt64 u64Param2, UInt64 u64Param3, UInt64 u64Param4)			AEMemory_163	Verbose		
 Microsoft-Windows-Audio	157	0	AEMemory_164(Pointer objInstance, UInt32 ucType, UInt64 u64Param1, UInt64 u64Param2, UInt64 u64Param3, UInt64 u64Param4)			AEMemory_164	Verbose		
+Microsoft-Windows-Audio	158	0	SetCurrentTimeStamp(Pointer objInstance, UInt32 AEPositionFlag, UInt32 EndpointFlags, UInt64 PaddingFrames, UInt64 Qpc, UInt64 DevicePosition, UInt64 StreamPosition)			SetCurrentTimeStamp	Verbose		
+Microsoft-Windows-Audio	159	0	Writinghistorypacket(Pointer objInstance, UInt32 FrameCount, UInt32 ApoBufferFlags, UInt64 Qpc)			Writinghistorypacket	Verbose		
+Microsoft-Windows-Audio	160	0	Signalpumppasscompletion(Pointer objInstance, UInt32 ClientProcessId, Pointer EventHandle)			Signalpumppasscompletion	Verbose		

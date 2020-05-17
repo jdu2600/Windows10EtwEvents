@@ -63,6 +63,7 @@ Microsoft-Windows-MF	1026	0	MediaFoundationMediaProcStreamRequestSample_ProcessS
 Microsoft-Windows-MF	1027	0	MediaFoundationMediaProcStreamRequestSample_ProcessStop(Pointer MPStream, UInt32 Node, UInt32 Index, UInt32 SampleCount, UInt32 hr)	Stop		MediaFoundationMediaProcStreamRequestSample_Process	Verbose		
 Microsoft-Windows-MF	1028	0	MediaProc:SourceNode_ProcessSampleStart(Pointer object, Pointer node, UInt32 OutputIndex)	Start		MediaProc:SourceNode_ProcessSample	Verbose		
 Microsoft-Windows-MF	1029	0	MediaProc:SourceNode_ProcessSampleStop(Pointer object, Pointer node, UInt32 result)	Stop		MediaProc:SourceNode_ProcessSample	Verbose		
+Microsoft-Windows-MF	1030	0	MediaFoundationMFTopo_MFT_Inserted(Boolean IsHWMFT, GUID DecoderGUID)			MediaFoundationMFTopo_MFT_Inserted	Verbose		
 Microsoft-Windows-MF	1098	0	MediaFoundationOPMPoll(GUID fromtype)			MediaFoundationOPMPoll	Verbose		
 Microsoft-Windows-MF	1099	0	MediaFoundationOPMPoll_1099(Boolean exitPolling)			MediaFoundationOPMPoll_1099	Verbose		
 Microsoft-Windows-MF	1100	0	MediaFoundationIMFInputTrustAuthority_RequestAccess(UInt32 stream, UInt32 action, Boolean enablerReturned, HexInt32 hr)			MediaFoundationIMFInputTrustAuthority_RequestAccess	Verbose		
@@ -107,7 +108,6 @@ Microsoft-Windows-MF	1140	0	MediaFoundationAsyncWrapperLoopRunningStop(Pointer W
 Microsoft-Windows-MF	1141	0	MediaFoundationAsyncWrapperCompactedoutput(Pointer WrapperPtr, UInt64 SampleTimestamp, UInt64 Duration0, UInt64 Duration1, UInt64 DurationResult)			MediaFoundationAsyncWrapperCompactedoutput	Verbose		
 Microsoft-Windows-MF	1145	0	MediaFoundationAsyncWrapperProcessInputStart(Pointer WrapperPtr, UInt32 StreamID, Pointer SamplePtr, UInt64 SampleTimestamp, UInt64 Duration, UInt32 InputQueueLength, UInt32 ShatterInputSamples, UInt32 BufferCount)	Start		MediaFoundationAsyncWrapperProcessInput	Verbose		
 Microsoft-Windows-MF	1146	0	MediaFoundationAsyncWrapperProcessInputStop(Pointer WrapperPtr, UInt32 StreamID, Pointer SamplePtr, UInt32 InputQueueLength, UInt32 hr)	Stop		MediaFoundationAsyncWrapperProcessInput	Verbose		
-Microsoft-Windows-MF	1147	0	MediaFoundationAsyncWrapperProcessInput(Pointer WrapperPtr, UInt32 StreamID, UInt32 BufferIndex, UInt64 Timestamp, UInt64 Duration)			MediaFoundationAsyncWrapperProcessInput	Verbose		
 Microsoft-Windows-MF	1150	0	MediaFoundationVideoFrameConstrict(UInt64 bandwidthInPixels)			MediaFoundationVideoFrameConstrict	Verbose		
 Microsoft-Windows-MF	1151	0	MediaFoundationOPMFail(HexInt32 hr)			MediaFoundationOPMFail	Error		
 Microsoft-Windows-MF	1160	0	MediaFoundationPMPServerProxy_LaunchedProcess(UInt32 ProcessID)			MediaFoundationPMPServerProxy_LaunchedProcess	Informational		

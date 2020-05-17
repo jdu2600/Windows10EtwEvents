@@ -87,3 +87,5 @@ Microsoft-Windows-Direct3D11	1820	0	JournalEntry(UInt32 Index, HexInt32 Code, UI
 Microsoft-Windows-Direct3D11	1821	0	IDXGIResource_CreateSharedHandle(UInt32 hKMResource, Pointer hUMSharedResource, UnicodeString Name)		Resources	IDXGIResource_CreateSharedHandle	Always		
 Microsoft-Windows-Direct3D11	1822	0	ID3D11VideoDevice_NegotiateCryptoSessionKeyExchangeMTStart(Pointer pThis, Pointer pCryptoSession)	Start		ID3D11VideoDevice_NegotiateCryptoSessionKeyExchangeMT	Always		
 Microsoft-Windows-Direct3D11	1823	0	ID3D11VideoDevice_NegotiateCryptoSessionKeyExchangeMTStop(UInt32 m_Ret)	Stop		ID3D11VideoDevice_NegotiateCryptoSessionKeyExchangeMT	Always		
+Microsoft-Windows-Direct3D11	1824	0	ID3D11TrackedWorkload_Processed(Pointer pThis, UInt32 beginIndex, UInt32 endIndex, UInt32 gpuDuration)			ID3D11TrackedWorkload_Processed	Always		
+Microsoft-Windows-Direct3D11	1825	0	ID3D11TrackedWorkload_Completed(Pointer pThis, UInt32 Index, UInt64 Timestamp)			ID3D11TrackedWorkload_Completed	Always		

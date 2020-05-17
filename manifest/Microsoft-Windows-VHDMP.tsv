@@ -1,24 +1,38 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-VHDMP	1	0	task_0(UnicodeString VhdFileName, UInt32 VhdDiskNumber)			task_0	Informational		
-Microsoft-Windows-VHDMP	2	0	task_02(UnicodeString VhdFileName, UInt32 VhdDiskNumber)			task_0	Informational		
-Microsoft-Windows-VHDMP	3	0	task_03(UnicodeString VhdFileName, UInt32 Status)			task_0	Error		
-Microsoft-Windows-VHDMP	4	0	task_04(UnicodeString VhdFileName)			task_0	Error		
-Microsoft-Windows-VHDMP	5	0	task_05(AnsiString VhdMetaOps, UnicodeString VhdFileName, UInt32 Status)			task_0	Error		
+Microsoft-Windows-VHDMP	1	0	SurfaceVirtualDiskStop(UnicodeString VhdFileName, UInt32 VhdDiskNumber, Pointer VirtualDisk)	Stop	Activity	SurfaceVirtualDisk	Informational		
+Microsoft-Windows-VHDMP	2	0	UnsurfaceVirtualDiskStop(UnicodeString VhdFileName, UInt32 VhdDiskNumber, Pointer VirtualDisk)	Stop	Activity	UnsurfaceVirtualDisk	Informational		
+Microsoft-Windows-VHDMP	3	0	SurfaceVirtualDiskStop3(UnicodeString VhdFileName, UInt32 Status, Pointer VirtualDisk)	Stop	Activity	SurfaceVirtualDisk	Error		
+Microsoft-Windows-VHDMP	4	0	SurfaceVirtualDiskStop4(UnicodeString VhdFileName, Pointer VirtualDisk)	Stop	Activity	SurfaceVirtualDisk	Error		
+Microsoft-Windows-VHDMP	5	0	task_0(AnsiString VhdMetaOps, UnicodeString VhdFileName, UInt32 Status)			task_0	Error		
 Microsoft-Windows-VHDMP	6	0	task_06(UInt32 VhdIoType, UnicodeString VhdFileName, UInt32 Status)			task_0	Error		
 Microsoft-Windows-VHDMP	7	0	task_07(GUID ParentLastWriteGUID, GUID ExpectedParentLastWriteGUID1, GUID ExpectedParentLastWriteGUID2, UnicodeString VhdFileName)			task_0	Error		
 Microsoft-Windows-VHDMP	8	0	task_08(UnicodeString VhdFileName, UInt32 CorruptionReason)			task_0	Error		
 Microsoft-Windows-VHDMP	9	0	task_09(UnicodeString VhdFileName)			task_0	Error		
 Microsoft-Windows-VHDMP	10	0	task_010(UnicodeString VhdFileName, UInt32 Status)			task_0	Error		
 Microsoft-Windows-VHDMP	11	0	task_011(UInt32 VhdIoType, UnicodeString VhdFileName, UInt32 Status)			task_0	Error		
-Microsoft-Windows-VHDMP	12	0	task_012(UInt32 Status, UnicodeString VhdFile, GUID VmId, UInt32 VhdType, UInt32 Version, UInt32 Flags, UInt32 AccessMask, UInt32 WriteDepth, Boolean GetInfoOnly, Boolean ReadOnly, Pointer HandleContext, Pointer VirtualDisk)			task_0	Informational		
-Microsoft-Windows-VHDMP	13	0	task_013(UInt32 Status, UnicodeString VhdFile, GUID VmId, UInt32 VhdType, UInt32 Version, UInt32 Flags, UInt32 AccessMask, UInt32 WriteDepth, Boolean GetInfoOnly, Boolean ReadOnly, Pointer HandleContext, Pointer VirtualDisk)			task_0	Error		
-Microsoft-Windows-VHDMP	14	0	task_014(Pointer HandleContext, Pointer VirtualDisk)			task_0	Informational		
+Microsoft-Windows-VHDMP	12	0	VirtualDiskHandleCreateStop(UInt32 Status, UnicodeString VhdFile, GUID VmId, UInt32 VhdType, UInt32 Version, UInt32 Flags, UInt32 AccessMask, UInt32 WriteDepth, Boolean GetInfoOnly, Boolean ReadOnly, Pointer HandleContext, Pointer VirtualDisk, Pointer FileObject)	Stop	Activity	VirtualDiskHandleCreate	Informational		
+Microsoft-Windows-VHDMP	13	0	VirtualDiskHandleCreateStop13(UInt32 Status, UnicodeString VhdFile, GUID VmId, UInt32 VhdType, UInt32 Version, UInt32 Flags, UInt32 AccessMask, UInt32 WriteDepth, Boolean GetInfoOnly, Boolean ReadOnly, Pointer HandleContext, Pointer VirtualDisk, Pointer FileObject)	Stop	Activity	VirtualDiskHandleCreate	Error		
+Microsoft-Windows-VHDMP	14	0	VirtualDiskHandleCloseStop(Pointer HandleContext, Pointer VirtualDisk)	Stop		VirtualDiskHandleClose	Informational		
 Microsoft-Windows-VHDMP	15	0	task_015(Pointer VirtualDisk)			task_0	Informational		
 Microsoft-Windows-VHDMP	16	0	task_016(Pointer VirtualDisk)			task_0	Informational		
-Microsoft-Windows-VHDMP	17	0	task_017(UnicodeString VhdFileName, UInt32 VhdDiskNumber)			task_0	Informational		
-Microsoft-Windows-VHDMP	18	0	task_018(UnicodeString VhdFileName, UInt32 VhdDiskNumber)			task_0	Informational		
-Microsoft-Windows-VHDMP	19	0	task_019(UnicodeString VhdFileName, GUID VhdInstanceId)			task_0	Informational		
-Microsoft-Windows-VHDMP	20	0	task_020(UnicodeString VhdFileName, GUID VhdInstanceId)			task_0	Informational		
+Microsoft-Windows-VHDMP	17	0	SurfaceVirtualDiskStop17(UnicodeString VhdFileName, UInt32 VhdDiskNumber, Pointer VirtualDisk)	Stop	Activity	SurfaceVirtualDisk	Informational		
+Microsoft-Windows-VHDMP	18	0	UnsurfaceVirtualDiskStop18(UnicodeString VhdFileName, UInt32 VhdDiskNumber, Pointer VirtualDisk)	Stop	Activity	UnsurfaceVirtualDisk	Informational		
+Microsoft-Windows-VHDMP	19	0	SurfaceVirtualDiskStop19(UnicodeString VhdFileName, GUID VhdInstanceId)	Stop	Activity	SurfaceVirtualDisk	Informational		
+Microsoft-Windows-VHDMP	20	0	UnsurfaceVirtualDiskStop20(UnicodeString VhdFileName, GUID VhdInstanceId)	Stop	Activity	UnsurfaceVirtualDisk	Informational		
+Microsoft-Windows-VHDMP	21	0	VirtualDiskHandleCreateStart(Pointer FileObject)	Start	Activity	VirtualDiskHandleCreate	Informational		
+Microsoft-Windows-VHDMP	22	0	FilewrapperHandleCreateStart(UnicodeString VhdFileName, UInt32 DesiredAccess)	Start	Activity	FilewrapperHandleCreate	Informational		
+Microsoft-Windows-VHDMP	23	0	FilewrapperHandleCreateStop(UnicodeString VhdFileName, UInt32 Status)	Stop	Activity	FilewrapperHandleCreate	Informational		
+Microsoft-Windows-VHDMP	24	0	FilewrapperHandleCreateStop24(UnicodeString VhdFileName, UInt32 Status)	Stop	Activity	FilewrapperHandleCreate	Informational		
+Microsoft-Windows-VHDMP	25	0	SurfaceVirtualDiskStart(UnicodeString VhdFileName, Pointer VirtualDisk)	Start	Activity	SurfaceVirtualDisk	Informational		
+Microsoft-Windows-VHDMP	26	0	UnsurfaceVirtualDiskStart(Pointer VirtualDisk)	Start	Activity	UnsurfaceVirtualDisk	Informational		
+Microsoft-Windows-VHDMP	27	0	FilewrapperHandleCreate_1204Start(UnicodeString VhdFileName, UInt32 DesiredAccess)	Start	Activity	FilewrapperHandleCreate_1204	Informational		
+Microsoft-Windows-VHDMP	28	0	FilewrapperHandleCreate_1204Stop(UnicodeString VhdFileName, UInt32 Status)	Stop	Activity	FilewrapperHandleCreate_1204	Informational		
+Microsoft-Windows-VHDMP	29	0	task_029(UInt32 VhdIoType, UnicodeString VhdFileName, UInt32 Status)			task_0	Informational		
+Microsoft-Windows-VHDMP	30	0	VirtualDiskHandleCloseStop30(Pointer HandleContext, Pointer VirtualDisk)	Stop	Activity	VirtualDiskHandleClose	Informational		
+Microsoft-Windows-VHDMP	31	0	CleanupBackingStoreStart(UnicodeString VhdFileName)	Start	Activity	CleanupBackingStore	Informational		
+Microsoft-Windows-VHDMP	32	0	CleanupBackingStoreStop(UnicodeString VhdFileName)	Stop	Activity	CleanupBackingStore	Informational		
+Microsoft-Windows-VHDMP	33	0	CleanupBackingStoreFlushStart(UnicodeString VhdFileName)	Start	Activity	CleanupBackingStoreFlush	Informational		
+Microsoft-Windows-VHDMP	34	0	CleanupBackingStoreFlushStop(UnicodeString VhdFileName)	Stop	Activity	CleanupBackingStoreFlush	Informational		
 Microsoft-Windows-VHDMP	50	0	task_050(AnsiString VhdMetaOps, UnicodeString VhdFileName, UnicodeString TargetVhdFileName)			task_0	Informational		
 Microsoft-Windows-VHDMP	51	0	task_051(AnsiString VhdMetaOps, UnicodeString VhdFileName, UInt32 Status)			task_0	Informational		
 Microsoft-Windows-VHDMP	100	0	task_0100(UnicodeString VhdFile, GUID VmId, UInt32 VhdIoType, UInt32 Status)			task_0	Informational		
@@ -48,7 +62,7 @@ Microsoft-Windows-VHDMP	211	0	task_0211(UnicodeString LogFileName, UInt32 Status
 Microsoft-Windows-VHDMP	212	0	task_0212(UnicodeString LogFileName, UInt32 Status)			task_0	Error		
 Microsoft-Windows-VHDMP	213	0	task_0213(UnicodeString LogFileName, UInt32 Status)			task_0	Error		
 Microsoft-Windows-VHDMP	214	0	task_0214(UnicodeString LogFileName, UnicodeString VhdFileName, UInt32 Status, UInt64 VHDFileTime, UInt64 LogFileTime)			task_0	Error		
-Microsoft-Windows-VHDMP	1001	0	IOrequestStartinganIO.(UnicodeString VhdId, UInt32 VhdIoType, UInt32 VhdSrbType, UInt64 Offset, UInt32 Length)	StartinganIO.		IOrequest	Verbose		
-Microsoft-Windows-VHDMP	1002	0	IOrequestCompletinganIO.(UnicodeString VhdId, UInt32 VhdIoType, UInt32 VhdSrbType, UInt64 Offset, UInt32 Length)	CompletinganIO.		IOrequest	Verbose		
-Microsoft-Windows-VHDMP	1010	0	task_01010(UnicodeString VhdFile, GUID VmId, UInt32 VhdIoType, UInt32 VhdSrbType, UInt64 Offset, UInt32 Length, UInt32 Status)			task_0	Verbose		
-Microsoft-Windows-VHDMP	1011	0	task_01011(UnicodeString VhdFile, GUID VmId, UInt32 VhdIoType, UInt32 VhdSrbType, UInt64 Offset, UInt32 Length, UInt32 Status)			task_0	Verbose		
+Microsoft-Windows-VHDMP	1001	0	IOrequestStartinganIO.(UnicodeString VhdId, UInt32 VhdIoType, UInt32 VhdSrbType, UInt64 Offset, UInt32 Length)	StartinganIO.	IO	IOrequest	Verbose		
+Microsoft-Windows-VHDMP	1002	0	IOrequestCompletinganIO.(UnicodeString VhdId, UInt32 VhdIoType, UInt32 VhdSrbType, UInt64 Offset, UInt32 Length)	CompletinganIO.	IO	IOrequest	Verbose		
+Microsoft-Windows-VHDMP	1010	0	task_01010(UnicodeString VhdFile, GUID VmId, UInt32 VhdIoType, UInt32 VhdSrbType, UInt64 Offset, UInt32 Length, UInt32 Status)		IO	task_0	Verbose		
+Microsoft-Windows-VHDMP	1011	0	task_01011(UnicodeString VhdFile, GUID VmId, UInt32 VhdIoType, UInt32 VhdSrbType, UInt64 Offset, UInt32 Length, UInt32 Status)		IO	task_0	Verbose		

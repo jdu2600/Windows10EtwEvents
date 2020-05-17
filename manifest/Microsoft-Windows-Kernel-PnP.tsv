@@ -118,3 +118,13 @@ Microsoft-Windows-Kernel-PnP	850	0	AssignResourcesStart(UnicodeString Device)	St
 Microsoft-Windows-Kernel-PnP	851	0	AssignResourcesStop(UnicodeString Device)	Stop	Enumeration	AssignResources	Informational		
 Microsoft-Windows-Kernel-PnP	852	0	RebalanceStart(UInt16 DeviceInstanceLength, UnicodeString DeviceInstance)	Start	Enumeration	Rebalance	Informational		
 Microsoft-Windows-Kernel-PnP	853	0	RebalanceStop(UInt16 DeviceInstanceLength, UnicodeString DeviceInstance, UInt32 Status)	Stop	Enumeration	Rebalance	Informational		
+Microsoft-Windows-Kernel-PnP	900	0	WatchdogTriggeredStart(HexInt64 ThreadId, UnicodeString DeviceInstanceId, UnicodeString ServiceName, UInt64 ElapsedTimeMs)	Start		WatchdogTriggered	Warning		
+Microsoft-Windows-Kernel-PnP	901	0	WatchdogTriggeredStop(HexInt64 ThreadId, UnicodeString DeviceInstanceId, UnicodeString ServiceName, UInt64 ElapsedTimeMs)	Stop		WatchdogTriggered	Informational		
+Microsoft-Windows-Kernel-PnP	902	0	WatchdogTriggeredStart902(HexInt64 ThreadId, UnicodeString DeviceInstanceId, UnicodeString ServiceName, UInt64 ElapsedTimeMs)	Start		WatchdogTriggered	Warning		
+Microsoft-Windows-Kernel-PnP	903	0	WatchdogTriggeredStop903(HexInt64 ThreadId, UnicodeString DeviceInstanceId, UnicodeString ServiceName, UInt64 ElapsedTimeMs)	Stop		WatchdogTriggered	Informational		
+Microsoft-Windows-Kernel-PnP	904	0	WatchdogTriggeredStart904(HexInt64 ThreadId, UnicodeString DeviceInstanceId, UnicodeString ServiceName, UInt64 ElapsedTimeMs)	Start		WatchdogTriggered	Warning		
+Microsoft-Windows-Kernel-PnP	905	0	WatchdogTriggeredStop905(HexInt64 ThreadId, UnicodeString DeviceInstanceId, UnicodeString ServiceName, UInt64 ElapsedTimeMs)	Stop		WatchdogTriggered	Informational		
+Microsoft-Windows-Kernel-PnP	906	0	WatchdogTriggeredStart906(HexInt64 ThreadId, UnicodeString DeviceInstanceId, UnicodeString DriverName, UInt64 ElapsedTimeMs)	Start		WatchdogTriggered	Warning		
+Microsoft-Windows-Kernel-PnP	907	0	WatchdogTriggeredStop907(HexInt64 ThreadId, UnicodeString DeviceInstanceId, UnicodeString DriverName, UInt64 ElapsedTimeMs)	Stop		WatchdogTriggered	Informational		
+Microsoft-Windows-Kernel-PnP	908	0	WatchdogTriggeredStart908(HexInt64 ThreadId, UnicodeString DeviceInstanceId, UnicodeString DriverName, UInt64 ElapsedTimeMs)	Start		WatchdogTriggered	Warning		
+Microsoft-Windows-Kernel-PnP	909	0	WatchdogTriggeredStop909(HexInt64 ThreadId, UnicodeString DeviceInstanceId, UnicodeString DriverName, UInt64 ElapsedTimeMs)	Stop		WatchdogTriggered	Informational		

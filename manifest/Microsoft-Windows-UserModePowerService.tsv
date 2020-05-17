@@ -53,6 +53,7 @@ Microsoft-Windows-UserModePowerService	45	3	AdaptiveStandbyStandbyBudgetAction_V
 Microsoft-Windows-UserModePowerService	46	0	AdaptiveStandbyStandbyBudgetReset(UInt32 ActualTimeRange, UInt32 RemainingBatteryPercentage)	StandbyBudgetReset	AdaptiveStandby	AdaptiveStandby	Informational		
 Microsoft-Windows-UserModePowerService	47	0	AdaptiveStandbySrumFailure(UInt32 Action, UInt32 Error)	SrumFailure	AdaptiveStandby	AdaptiveStandby	Informational		
 Microsoft-Windows-UserModePowerService	48	0	GpuAdapterCount(UInt8 Id, UInt8 GpuCount)		KwSleepStudy	GpuAdapterCount	Informational		
+Microsoft-Windows-UserModePowerService	48	1	GpuAdapterCount_V1(UInt8 Id, UInt8 GpuCount, UInt64 IdV2)		KwSleepStudy	GpuAdapterCount	Informational		
 Microsoft-Windows-UserModePowerService	49	0	RundownOverlaySchemePowerSetting(GUID OverlaySchemeGuid, GUID SubgroupGuid, GUID SettingGuid, UInt32 Flags, UInt32 ValueIndex, UInt32 Type, UInt32 DataSize, Binary Data)			RundownOverlaySchemePowerSetting	Informational		
 Microsoft-Windows-UserModePowerService	50	0	RundownActualOverlayPowerScheme(GUID SchemeGuid)			RundownActualOverlayPowerScheme	Informational		
 Microsoft-Windows-UserModePowerService	50	1	RundownActualOverlayPowerScheme_V1(GUID SchemeGuid, Boolean AcOverlay)			RundownActualOverlayPowerScheme	Informational		

@@ -11,18 +11,20 @@ Microsoft-Windows-PersistentMemory-PmemDisk	106	0	task_0106(GUID PersistentMemor
 Microsoft-Windows-PersistentMemory-PmemDisk	107	0	task_0107(GUID PersistentMemoryDiskGuid, UInt32 DeviceNumber, Pointer Irp, HexInt32 Status)		IOCTL	task_0	Informational		
 Microsoft-Windows-PersistentMemory-PmemDisk	108	0	task_0108(GUID PersistentMemoryDiskGuid, UInt32 DeviceNumber, Pointer Irp, HexInt32 MinorFunction, HexInt32 Type, Pointer DeviceObject)		PnP	task_0	Informational		
 Microsoft-Windows-PersistentMemory-PmemDisk	109	0	task_0109(GUID PersistentMemoryDiskGuid, UInt32 DeviceNumber, Pointer Irp, HexInt32 Status)		PnP	task_0	Informational		
-Microsoft-Windows-PersistentMemory-PmemDisk	202	0	task_0202(GUID PersistentMemoryDiskGuid, AnsiString VendorId, AnsiString ProductId, AnsiString SerialNumber, UInt32 Reason, UInt32 Status)			task_0	Critical		
-Microsoft-Windows-PersistentMemory-PmemDisk	203	0	task_0203(GUID PersistentMemoryDiskGuid, AnsiString VendorId, AnsiString ProductId, AnsiString SerialNumber)			task_0	Informational		
-Microsoft-Windows-PersistentMemory-PmemDisk	204	0	task_0204(GUID PersistentMemoryDiskGuid, AnsiString VendorId, AnsiString ProductId, AnsiString SerialNumber)			task_0	Error		
-Microsoft-Windows-PersistentMemory-PmemDisk	205	0	task_0205(GUID PersistentMemoryDiskGuid, AnsiString VendorId, AnsiString ProductId, AnsiString SerialNumber)			task_0	Error		
-Microsoft-Windows-PersistentMemory-PmemDisk	206	0	task_0206(GUID LogicalPersistentMemoryDiskGuid, AnsiString VendorId, AnsiString ProductId, AnsiString SerialNumber, GUID PhysicalNvdimmGuid, UInt32 NfitHandle, UInt32 NvdimmHealthStatus)			task_0	Informational		
-Microsoft-Windows-PersistentMemory-PmemDisk	207	0	task_0207(GUID PersistentMemoryDiskGuid, AnsiString VendorId, AnsiString ProductId, AnsiString SerialNumber)			task_0	Critical		
-Microsoft-Windows-PersistentMemory-PmemDisk	209	0	task_0209(GUID PersistentMemoryDiskGuid, AnsiString VendorId, AnsiString ProductId, AnsiString SerialNumber)			task_0	Critical		
-Microsoft-Windows-PersistentMemory-PmemDisk	211	0	task_0211(GUID PersistentMemoryDiskGuid, AnsiString VendorId, AnsiString ProductId, AnsiString SerialNumber)			task_0	Informational		
-Microsoft-Windows-PersistentMemory-PmemDisk	212	0	task_0212(GUID PersistentMemoryDiskGuid, AnsiString VendorId, AnsiString ProductId, AnsiString SerialNumber)			task_0	Warning		
-Microsoft-Windows-PersistentMemory-PmemDisk	213	0	task_0213(GUID PersistentMemoryDiskGuid, AnsiString VendorId, AnsiString ProductId, AnsiString SerialNumber)			task_0	Critical		
-Microsoft-Windows-PersistentMemory-PmemDisk	214	0	task_0214(GUID PersistentMemoryDiskGuid, AnsiString VendorId, AnsiString ProductId, AnsiString SerialNumber)			task_0	Critical		
-Microsoft-Windows-PersistentMemory-PmemDisk	215	0	task_0215(GUID PersistentMemoryDiskGuid, AnsiString Message)			task_0	Error		
+Microsoft-Windows-PersistentMemory-PmemDisk	202	2	task_0202_V2(GUID PersistentMemoryDiskGuid, AnsiString VendorId, AnsiString ProductId, AnsiString SerialNumber, UInt32 InterleaveSetSize, AnsiString InterleaveSet, UInt32 Reason, UInt32 Status)			task_0	Critical		
+Microsoft-Windows-PersistentMemory-PmemDisk	203	2	task_0203_V2(GUID PersistentMemoryDiskGuid, AnsiString VendorId, AnsiString ProductId, AnsiString SerialNumber, UInt32 InterleaveSetSize, AnsiString InterleaveSet)			task_0	Informational		
+Microsoft-Windows-PersistentMemory-PmemDisk	204	2	task_0204_V2(GUID PersistentMemoryDiskGuid, AnsiString VendorId, AnsiString ProductId, AnsiString SerialNumber, UInt32 InterleaveSetSize, AnsiString InterleaveSet)			task_0	Error		
+Microsoft-Windows-PersistentMemory-PmemDisk	205	2	task_0205_V2(GUID PersistentMemoryDiskGuid, AnsiString VendorId, AnsiString ProductId, AnsiString SerialNumber, UInt32 InterleaveSetSize, AnsiString InterleaveSet)			task_0	Error		
+Microsoft-Windows-PersistentMemory-PmemDisk	206	2	task_0206_V2(GUID PersistentMemoryDiskGuid, AnsiString VendorId, AnsiString ProductId, AnsiString SerialNumber, GUID PhysicalNvdimmGuid, UInt32 NfitHandle, UInt32 NvdimmHealthStatus)			task_0	Informational		
+Microsoft-Windows-PersistentMemory-PmemDisk	207	2	task_0207_V2(GUID PersistentMemoryDiskGuid, AnsiString VendorId, AnsiString ProductId, AnsiString SerialNumber, UInt32 InterleaveSetSize, AnsiString InterleaveSet)			task_0	Critical		
+Microsoft-Windows-PersistentMemory-PmemDisk	209	2	task_0209_V2(GUID PersistentMemoryDiskGuid, AnsiString VendorId, AnsiString ProductId, AnsiString SerialNumber, UInt32 InterleaveSetSize, AnsiString InterleaveSet)			task_0	Critical		
+Microsoft-Windows-PersistentMemory-PmemDisk	210	3	task_0210_V3(GUID PersistentMemoryDiskGuid, AnsiString VendorId, AnsiString ProductId, AnsiString SerialNumber, UInt32 InterleaveSetSize, AnsiString InterleaveSet, UInt32 OldBadMemoryRangesCount, UInt32 NewBadMemoryRangesCount)			task_0	Error		
+Microsoft-Windows-PersistentMemory-PmemDisk	211	2	task_0211_V2(GUID PersistentMemoryDiskGuid, AnsiString VendorId, AnsiString ProductId, AnsiString SerialNumber, UInt32 InterleaveSetSize, AnsiString InterleaveSet)			task_0	Informational		
+Microsoft-Windows-PersistentMemory-PmemDisk	212	2	task_0212_V2(GUID PersistentMemoryDiskGuid, AnsiString VendorId, AnsiString ProductId, AnsiString SerialNumber, UInt32 InterleaveSetSize, AnsiString InterleaveSet)			task_0	Warning		
+Microsoft-Windows-PersistentMemory-PmemDisk	213	2	task_0213_V2(GUID PersistentMemoryDiskGuid, AnsiString VendorId, AnsiString ProductId, AnsiString SerialNumber, UInt32 InterleaveSetSize, AnsiString InterleaveSet)			task_0	Critical		
+Microsoft-Windows-PersistentMemory-PmemDisk	214	2	task_0214_V2(GUID PersistentMemoryDiskGuid, AnsiString VendorId, AnsiString ProductId, AnsiString SerialNumber, UInt32 InterleaveSetSize, AnsiString InterleaveSet)			task_0	Critical		
+Microsoft-Windows-PersistentMemory-PmemDisk	215	1	task_0215_V1(GUID PersistentMemoryDiskGuid, AnsiString Message)			task_0	Error		
+Microsoft-Windows-PersistentMemory-PmemDisk	216	0	task_0216(GUID PersistentMemoryDiskGuid, AnsiString VendorId, AnsiString ProductId, AnsiString SerialNumber, UInt32 NtStatus)			task_0	Error		
 Microsoft-Windows-PersistentMemory-PmemDisk	300	0	task_0300(GUID PersistentMemoryDiskGuid)			task_0	Error		
 Microsoft-Windows-PersistentMemory-PmemDisk	301	0	task_0301(GUID PersistentMemoryDiskGuid)			task_0	Informational		
 Microsoft-Windows-PersistentMemory-PmemDisk	302	0	task_0302(GUID PersistentMemoryDiskGuid)			task_0	Error		

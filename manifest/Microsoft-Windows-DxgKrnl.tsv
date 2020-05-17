@@ -159,7 +159,7 @@ Microsoft-Windows-DxgKrnl	173	0	PresentHistoryStop(Pointer hAdapter, Pointer Tok
 Microsoft-Windows-DxgKrnl	174	0	ACPIEvent(UInt32 Id)		Base	ACPIEvent	Always		
 Microsoft-Windows-DxgKrnl	175	1	DmaPacketStart_V1(Pointer hContext, Pointer hQueuePacketContext, UInt32 PacketType, UInt64 uliSubmissionId, UInt32 ulQueueSubmitSequence, Pointer pDmaBuffer, UInt32 QuantumStatus)	Start	Base	DmaPacket	Always		
 Microsoft-Windows-DxgKrnl	176	0	DmaPacketStop(Pointer hContext, UInt32 PacketType, UInt64 uliCompletionId, UInt32 ulQueueSubmitSequence, Boolean bPreempted)	Stop	Base	DmaPacket	Always		
-Microsoft-Windows-DxgKrnl	177	1	DmaPacket_V1(Pointer hContext, UInt32 PacketType, UInt64 uliCompletionId, UInt32 ulQueueSubmitSequence, UInt32 InterruptType, UInt32 QuantumStatus, UInt64 FaultedVirtualAddress, UInt32 PageFaultFlags, Pointer FaultedProcessHandle)		Base	DmaPacket	Always		
+Microsoft-Windows-DxgKrnl	177	1	DmaPacket177_V1(Pointer hContext, UInt32 PacketType, UInt64 uliCompletionId, UInt32 ulQueueSubmitSequence, UInt32 InterruptType, UInt32 QuantumStatus, UInt64 FaultedVirtualAddress, UInt32 PageFaultFlags, Pointer FaultedProcessHandle)		Base	DmaPacket	Always		
 Microsoft-Windows-DxgKrnl	178	1	QueuePacketStart_V1(Pointer hContext, UInt32 PacketType, UInt32 SubmitSequence, UInt64 DmaBufferSize, UInt32 AllocationListSize, UInt32 PatchLocationListSize, Boolean bPresent, Pointer hDmaBuffer, Pointer pQueuePacket, UInt64 ProgressFenceValue)	Start	Base	QueuePacket	Always		
 Microsoft-Windows-DxgKrnl	179	0	QueuePacket(Pointer hContext, UInt32 PacketType, UInt32 SubmitSequence)		Base	QueuePacket	Always		
 Microsoft-Windows-DxgKrnl	180	1	QueuePacketStop_V1(Pointer hContext, UInt32 PacketType, UInt32 SubmitSequence, Boolean bPreempted, Boolean bTimeouted, Pointer pQueuePacket)	Stop	Base	QueuePacket	Always		
@@ -253,7 +253,7 @@ Microsoft-Windows-DxgKrnl	269	0	RuntimePowerManagement269(Pointer AdapterHandle,
 Microsoft-Windows-DxgKrnl	270	0	RuntimePowerManagement270(Pointer AdapterHandle, UInt32 State)		DxgKrnl_Power	RuntimePowerManagement	Always		
 Microsoft-Windows-DxgKrnl	271	0	DxgkSetPresenterViewMode(Boolean NewValue, Boolean Optimized)		Base	DxgkSetPresenterViewMode	Always		
 Microsoft-Windows-DxgKrnl	272	0	DxgkCbIndicateChildStatus(Pointer FunctionalDeviceObject, UInt32 ChildUid, UInt32 Type, Boolean Connected, UInt32 MiracastMonitorType)		Base Miracast	DxgkCbIndicateChildStatus	Always		
-Microsoft-Windows-DxgKrnl	273	1	VSyncDPCMultiPlane_V1(Pointer pDxgAdapter, UInt32 PlaneCount, UInt64 PresentIdOrPhysicalAddress, UInt32 VidPnSourceId, UInt32 FrameNumber, UInt32 FlipEntryCount, UInt64 FlipSubmitSequence)		Base	VSyncDPCMultiPlane	Always		
+Microsoft-Windows-DxgKrnl	273	2	VSyncDPCMultiPlane_V2(Pointer pDxgAdapter, UInt32 PlaneCount, UInt64 PresentIdOrPhysicalAddress, UInt32 VidPnSourceId, UInt32 FrameNumber, UInt32 FlipEntryCount, UInt64 FlipSubmitSequence, UInt32 FlipQueues, UInt32 FlipQueueIntervalTarget)		Base	VSyncDPCMultiPlane	Always		
 Microsoft-Windows-DxgKrnl	274	0	TotalBytesResidentInSegment(Pointer DxgAdapter, UInt32 SegmentId, UInt64 TotalBytesResident)		Base	TotalBytesResidentInSegment	Always		
 Microsoft-Windows-DxgKrnl	275	0	Brightness(Pointer DeviceObject, UInt32 OldBrightness, UInt32 NewBrightness, UInt32 Result)		Base	Brightness	Always		
 Microsoft-Windows-DxgKrnl	276	0	BacklightOptimizationLevel(Pointer DeviceObject, UInt32 OldOptimizationLevel, UInt32 NewOptimizationLevel, UInt32 Result)		Base	BacklightOptimizationLevel	Always		
@@ -365,7 +365,7 @@ Microsoft-Windows-DxgKrnl	382	0	HSyncDPCMultiPlane(Pointer pDxgAdapter, UInt32 P
 Microsoft-Windows-DxgKrnl	383	0	MultiPlaneOverlayDisable(Pointer pDxgAdapter, UInt32 VidPnSourceId, UInt32 SessionId)		Base	MultiPlaneOverlayDisable	Always		
 Microsoft-Windows-DxgKrnl	384	0	ContextHasNegativeQuantum(UInt32 NodeOrdinal, Pointer hContext, Int64 DefaultQuantum, Int64 RemainingQuantum, UInt64 LastRunningTimeCalculatedAt, Int64 LastRunningTime)		Base	ContextHasNegativeQuantum	Always		
 Microsoft-Windows-DxgKrnl	385	0	SelectingContextWithNegativeQuantum(UInt32 NodeOrdinal, Boolean YieldPriorityLevel, Pointer hContext, Int64 DefaultQuantum, Int64 RemainingQuantum, UInt64 LastRunningTimeCalculatedAt, Int64 LastRunningTime)		Base	SelectingContextWithNegativeQuantum	Always		
-Microsoft-Windows-DxgKrnl	386	3	MMIOFlipMultiPlaneOverlay3_V3(Pointer pDxgAdapter, UInt32 VidPnSourceId, UInt32 PlaneCount, UInt64 PresentId, UInt32 InputFlags, UInt32 OutputFlags, Int32 PostCompositionSrcRectleft, Int32 PostCompositionSrcRectright, Int32 PostCompositionSrcRecttop, Int32 PostCompositionSrcRectbottom, Int32 PostCompositionDstRectleft, Int32 PostCompositionDstRectright, Int32 PostCompositionDstRecttop, Int32 PostCompositionDstRectbottom, Boolean HDRMetaDataSpecified, UInt32 HDRMetaDataType, Boolean FlipDoNotFlip)		Base	MMIOFlipMultiPlaneOverlay3	Always		
+Microsoft-Windows-DxgKrnl	386	4	MMIOFlipMultiPlaneOverlay3_V4(Pointer pDxgAdapter, UInt32 VidPnSourceId, UInt32 PlaneCount, UInt64 PresentId, UInt32 InputFlags, UInt32 OutputFlags, Int32 PostCompositionSrcRectleft, Int32 PostCompositionSrcRectright, Int32 PostCompositionSrcRecttop, Int32 PostCompositionSrcRectbottom, Int32 PostCompositionDstRectleft, Int32 PostCompositionDstRectright, Int32 PostCompositionDstRecttop, Int32 PostCompositionDstRectbottom, Boolean HDRMetaDataSpecified, UInt32 HDRMetaDataType, Boolean FlipDoNotFlip, Int32 FlipIntervalTarget)		Base	MMIOFlipMultiPlaneOverlay3	Always		
 Microsoft-Windows-DxgKrnl	387	0	DestroyPeriodicFrameNotification(Pointer pVidSchSyncObject, UInt32 VidPnSourceID, UInt64 TimeOffset, UInt64 RefreshPeriod, UInt32 NotificationID, Pointer hNotification, Pointer pHighResolutionTimer)		GPUScheduler	DestroyPeriodicFrameNotification	Always		
 Microsoft-Windows-DxgKrnl	388	0	VGPUEtwSessionStart()	Start	VirtualGpu	VGPUEtwSession	Always		
 Microsoft-Windows-DxgKrnl	389	0	VGPUEtwSessionStop(GUID SessionGuid)	Stop	VirtualGpu	VGPUEtwSession	Always		
@@ -427,6 +427,25 @@ Microsoft-Windows-DxgKrnl	444	0	TrackedWorkloadDescriptor(UInt64 Id, UInt32 Dead
 Microsoft-Windows-DxgKrnl	445	1	CreateVirtualGpu_V1(Pointer pDxgAdapter, UInt32 VirtualFunctionIndex, Boolean bSecure, UInt32 Status, UInt32 FailureType)		Base	CreateVirtualGpu	Error		
 Microsoft-Windows-DxgKrnl	446	1	CreateVirtualGpu446_V1(Pointer pDxgAdapter, UInt32 VirtualFunctionIndex, Boolean bSecure, UInt32 Status, UInt32 FailureType)		Base	CreateVirtualGpu	Always		
 Microsoft-Windows-DxgKrnl	447	1	CreateVirtualGpuStop_V1(Pointer pDxgAdapter, UInt32 VirtualFunctionIndex, Boolean bSecure, UInt32 Status, UInt32 FailureType)	Stop	Base	CreateVirtualGpu	Always		
+Microsoft-Windows-DxgKrnl	448	0	TrackedWorkloadDeadlineMissed(UInt64 Id, UInt64 CurrentTime, UInt32 CurrentPowerLevel, UInt64 SubmissionTime, UInt64 RequestedDeadline, UInt64 CompletionDeadline)		DxgKrnl_Power	TrackedWorkloadDeadlineMissed	Always		
+Microsoft-Windows-DxgKrnl	449	0	TrackedWorkloadSetPowerLevel(Pointer hContext, UInt32 CurrentPowerLevel, UInt32 TargetPowerLevel)		DxgKrnl_Power	TrackedWorkloadSetPowerLevel	Always		
+Microsoft-Windows-DxgKrnl	450	0	DmaPacket(Pointer hHwQueue, UInt64 ProgressFenceValue, Pointer pDmaBuffer, UInt32 ntStatus, UInt32 NumberOfQueuedPendingFlip)		Base	DmaPacket	Always		
+Microsoft-Windows-DxgKrnl	451	0	DmaPacket451(Pointer hHwQueue, UInt64 ProgressFenceValue)		Base	DmaPacket	Always		
+Microsoft-Windows-DxgKrnl	452	0	SchedulingLogContextStateChange(Pointer hContext, UInt32 NewContextState)		HardwareSchedulingLog	SchedulingLogContextStateChange	Always		
+Microsoft-Windows-DxgKrnl	453	0	OpenVirtualGpu(Pointer pDxgAdapter, UInt32 VirtualFunctionIndex, UInt32 Status, UInt32 FailureType)		Base	OpenVirtualGpu	Error		
+Microsoft-Windows-DxgKrnl	454	0	OpenVirtualGpu454(Pointer pDxgAdapter, UInt32 VirtualFunctionIndex, UInt32 Status, UInt32 FailureType)		Base	OpenVirtualGpu	Always		
+Microsoft-Windows-DxgKrnl	455	0	OpenVirtualGpuStop(Pointer pDxgAdapter, UInt32 VirtualFunctionIndex, UInt32 Status, UInt32 FailureType)	Stop	Base	OpenVirtualGpu	Always		
+Microsoft-Windows-DxgKrnl	456	0	DxgkAddDeviceStart(Pointer pDeviceObject, UnicodeString Message, UnicodeString BucketingString, UnicodeString DescriptionString, UInt32 Status)	Start	DriverEvents	DxgkAddDevice	Error		
+Microsoft-Windows-DxgKrnl	457	0	DxgkStartDeviceStart(Pointer pDeviceObject, UnicodeString Message, UnicodeString BucketingString, UnicodeString DescriptionString, UInt32 Status)	Start	DriverEvents	DxgkStartDevice	Error		
+Microsoft-Windows-DxgKrnl	458	0	DdiControlInterrupt2(UInt32 VidPnSourceId, UInt32 VsyncState)		Base	DdiControlInterrupt2	Always		
+Microsoft-Windows-DxgKrnl	459	1	RuntimePowerManagement459_V1(Pointer AdapterHandle, Boolean SupportRuntimePowerManagement)		DxgKrnl_Power	RuntimePowerManagement	Always		
+Microsoft-Windows-DxgKrnl	460	1	RuntimePowerManagement460_V1(Pointer AdapterHandle, UInt32 ntStatus, UInt32 NumberOfComponents)		DxgKrnl_Power	RuntimePowerManagement	Always		
+Microsoft-Windows-DxgKrnl	461	0	RenderGdi(Pointer DxgContext, UInt64 DmaBufferVirtualAddress, UInt32 AllocationCount)		Base	RenderGdi	Always		
+Microsoft-Windows-DxgKrnl	462	0	SignalSynchronizationObjectImmediate(UInt32 Flags, Pointer Object, UInt64 MonitoredFenceValue)		Base	SignalSynchronizationObjectImmediate	Always		
+Microsoft-Windows-DxgKrnl	463	0	VirtualGpuGuestEvent(Pointer pDxgAdapter, UInt32 VirtualFunctionIndex, UInt32 Status, UInt32 Scenario, UInt32 EventId, UInt64 data1, UInt64 data2)		Base	VirtualGpuGuestEvent	Error		
+Microsoft-Windows-DxgKrnl	464	0	VirtualGpuGuestEvent464(Pointer pDxgAdapter, UInt32 VirtualFunctionIndex, UInt32 Status, UInt32 Scenario, UInt32 EventId, UInt64 data1, UInt64 data2)		Base	VirtualGpuGuestEvent	Always		
+Microsoft-Windows-DxgKrnl	465	1	BddFallback_V1(UInt32 Status, Boolean bGPUpv, UInt32 Stage, UInt32 SessionType, UInt32 SessionId)		Base	BddFallback	Error		
+Microsoft-Windows-DxgKrnl	466	0	RenderGdiAlloc(Pointer DxgAllocation, Pointer DriverHandle, UInt32 WriteOperation, UInt64 GpuVirtualAddress)		Base	RenderGdiAlloc	Always		
 Microsoft-Windows-DxgKrnl	1000	0	DxgkDdiMiracastQueryCapsStart(Pointer MiniportContext, UInt32 MaxChunkPrivateDriverDataSize, UInt32 MiracastCaps, UInt32 ReturnStatus)	Start	Miracast	DxgkDdiMiracastQueryCaps	Always		
 Microsoft-Windows-DxgKrnl	1001	0	DxgkDdiMiracastQueryCapsStop(Pointer MiniportContext, UInt32 MaxChunkPrivateDriverDataSize, UInt32 MiracastCaps, UInt32 ReturnStatus)	Stop	Miracast	DxgkDdiMiracastQueryCaps	Always		
 Microsoft-Windows-DxgKrnl	1002	0	DxgkDdiMiracastCreateContextStart(Pointer MiniportContext, Pointer MiracastContext, UInt32 TargetId, UInt32 ReturnStatus)	Start	Miracast	DxgkDdiMiracastCreateContext	Always		
@@ -545,6 +564,9 @@ Microsoft-Windows-DxgKrnl	1114	0	DripsBlockerTracking_AddActiveTime(UInt32 Entry
 Microsoft-Windows-DxgKrnl	1115	0	CSAccountingInProgressStart()	Start	DxgKrnl_Power	CSAccountingInProgress	Always		
 Microsoft-Windows-DxgKrnl	1116	0	CSAccountingInProgressStop()	Stop	DxgKrnl_Power	CSAccountingInProgress	Always		
 Microsoft-Windows-DxgKrnl	1117	0	DripsBlockerTracking_AddD0LagTime(UInt32 Entry, UInt32 Activation, UInt32 DAM, AnsiString ProcessName, UnicodeString Reason, UInt32 TimeInMS)		DxgKrnl_Power	DripsBlockerTracking_AddD0LagTime	Always		
+Microsoft-Windows-DxgKrnl	1118	0	RemoteVSyncAddMapping(UInt64 AdapterLuid, UInt32 TargetId, Pointer GuestEvent, Pointer VmBusChannel, UInt32 Status)		VirtualGpu	RemoteVSyncAddMapping	Always		
+Microsoft-Windows-DxgKrnl	1119	0	RemoteVSyncRemoveMapping(UInt64 AdapterLuid, UInt32 TargetId, Pointer GuestEvent, Pointer VmBusChannel)		VirtualGpu	RemoteVSyncRemoveMapping	Always		
+Microsoft-Windows-DxgKrnl	1120	0	RemoteVSyncTrigger(UInt64 AdapterLuid, UInt32 TargetId, Pointer GuestEvent, Pointer VmBusChannel)		VirtualGpu	RemoteVSyncTrigger	Always		
 Microsoft-Windows-DxgKrnl	10000	0	PerfTrack_DMM_Hotplug_Monitor_Set_VideoModeStart(UInt32 PerfTrack_Uniqueness_Id)	Start	DxgKrnl	PerfTrack_DMM_Hotplug_Monitor_Set_VideoMode	Informational		
 Microsoft-Windows-DxgKrnl	10001	0	PerfTrack_DMM_Hotplug_Monitor_Set_VideoModeStop(UInt32 PerfTrack_Uniqueness_Id)	Stop	DxgKrnl	PerfTrack_DMM_Hotplug_Monitor_Set_VideoMode	Informational		
 Microsoft-Windows-DxgKrnl	10002	0	PerfTrack_DMM_Hotplug_Monitor_Set_VideoModeStop10002(UInt32 PerfTrack_Uniqueness_Id)	Stop	DxgKrnl	PerfTrack_DMM_Hotplug_Monitor_Set_VideoMode	Informational		

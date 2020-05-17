@@ -17,15 +17,21 @@ Microsoft-Windows-SMBClient	30111	0	task_030111(Pointer MidWindow, UInt32 Curren
 Microsoft-Windows-SMBClient	30112	0	task_030112(UInt16 ServerNameLength, UnicodeString ServerName, Pointer MidWindow)		Smb_Perf	task_0	Verbose		
 Microsoft-Windows-SMBClient	30113	0	task_030113(UInt32 Status, Pointer VcEndpoint)		Smb_Perf	task_0	Verbose		
 Microsoft-Windows-SMBClient	30114	0	task_030114(UInt32 Status, Pointer VcEndpoint)		Smb_Perf	task_0	Verbose		
-Microsoft-Windows-SMBClient	30203	0	task_030203(UInt32 RemoteAddressLength, Binary RemoteAddress, Pointer VcEndpoint, Pointer Socket)		Networking_Perf	task_0	Informational		
-Microsoft-Windows-SMBClient	30204	0	task_030204(Pointer VcEndpoint, Pointer Socket, UInt32 Status)		Networking_Perf	task_0	Informational		
-Microsoft-Windows-SMBClient	30205	0	task_030205(Pointer VcEndpoint, Pointer Socket, Pointer SendMdl, UInt32 SendLength)		Networking_Perf	task_0	Verbose		
-Microsoft-Windows-SMBClient	30206	0	task_030206(Pointer VcEndpoint, Pointer Socket, Pointer SendMdl, UInt32 SendLength, UInt32 Status)		Networking_Perf	task_0	Verbose		
-Microsoft-Windows-SMBClient	30207	0	task_030207(Pointer VcEndpoint, Pointer Socket, Pointer SendMdl, UInt32 SendLength)		Networking_Perf	task_0	Verbose		
-Microsoft-Windows-SMBClient	30208	0	task_030208(Pointer VcEndpoint, Pointer Socket, Pointer SendMdl, UInt32 SendLength, UInt32 Status)		Networking_Perf	task_0	Verbose		
+Microsoft-Windows-SMBClient	30203	0	task_030203(UInt32 RemoteAddressLength, Binary RemoteAddress, Pointer VcEndpoint, Pointer Socket, UInt32 ConnectionType)		Networking_Perf	task_0	Informational		
+Microsoft-Windows-SMBClient	30203	2	task_030203_V2(UInt32 RemoteAddressLength, Binary RemoteAddress, Pointer VcEndpoint, Pointer Socket, UInt32 ConnectionType)		Networking_Perf	task_0	Informational		
+Microsoft-Windows-SMBClient	30204	0	task_030204(Pointer VcEndpoint, Pointer Socket, UInt32 Status, UInt32 ConnectionType)		Networking_Perf	task_0	Informational		
+Microsoft-Windows-SMBClient	30204	2	task_030204_V2(Pointer VcEndpoint, Pointer Socket, UInt32 Status, UInt32 ConnectionType)		Networking_Perf	task_0	Informational		
+Microsoft-Windows-SMBClient	30205	0	task_030205(Pointer VcEndpoint, Pointer Socket, Pointer SendMdl, UInt32 SendLength, UInt32 ConnectionType)		Networking_Perf	task_0	Verbose		
+Microsoft-Windows-SMBClient	30205	2	task_030205_V2(Pointer VcEndpoint, Pointer Socket, Pointer SendMdl, UInt32 SendLength, UInt32 ConnectionType)		Networking_Perf	task_0	Verbose		
+Microsoft-Windows-SMBClient	30206	0	task_030206(Pointer VcEndpoint, Pointer Socket, Pointer SendMdl, UInt32 SendLength, UInt32 Status, UInt32 ConnectionType)		Networking_Perf	task_0	Verbose		
+Microsoft-Windows-SMBClient	30206	2	task_030206_V2(Pointer VcEndpoint, Pointer Socket, Pointer SendMdl, UInt32 SendLength, UInt32 Status, UInt32 ConnectionType)		Networking_Perf	task_0	Verbose		
+Microsoft-Windows-SMBClient	30207	0	task_030207(Pointer VcEndpoint, Pointer Socket, Pointer SendMdl, UInt32 SendLength, UInt32 ConnectionType)		Networking_Perf	task_0	Verbose		
+Microsoft-Windows-SMBClient	30207	2	task_030207_V2(Pointer VcEndpoint, Pointer Socket, Pointer SendMdl, UInt32 SendLength, UInt32 ConnectionType)		Networking_Perf	task_0	Verbose		
+Microsoft-Windows-SMBClient	30208	0	task_030208(Pointer VcEndpoint, Pointer Socket, Pointer SendMdl, UInt32 SendLength, UInt32 Status, UInt32 ConnectionType)		Networking_Perf	task_0	Verbose		
+Microsoft-Windows-SMBClient	30208	2	task_030208_V2(Pointer VcEndpoint, Pointer Socket, Pointer SendMdl, UInt32 SendLength, UInt32 Status, UInt32 ConnectionType)		Networking_Perf	task_0	Verbose		
 Microsoft-Windows-SMBClient	30209	0	task_030209(Pointer VcEndpoint, Pointer Socket, Pointer Smb2Fobx, UInt32 Status)		Networking_Perf	task_0	Informational		
-Microsoft-Windows-SMBClient	30210	0	task_030210(Pointer VcEndpoint, Pointer Socket, Pointer SendMdl, UInt32 SendLength, UInt32 Status)		Networking_Perf	task_0	Informational		
-Microsoft-Windows-SMBClient	30211	0	task_030211(Pointer VcEndpoint, Pointer Socket, Pointer SendMdl, UInt32 SendLength, UInt32 Status)		Networking_Perf	task_0	Informational		
+Microsoft-Windows-SMBClient	30210	0	task_030210(Pointer VcEndpoint, Pointer Socket, Pointer SendMdl, UInt32 SendLength, UInt32 Status, UInt32 ConnectionType)		Networking_Perf	task_0	Informational		
+Microsoft-Windows-SMBClient	30211	0	task_030211(Pointer VcEndpoint, Pointer Socket, Pointer SendMdl, UInt32 SendLength, UInt32 Status, UInt32 ConnectionType)		Networking_Perf	task_0	Informational		
 Microsoft-Windows-SMBClient	30401	0	task_030401(Pointer SessionEntry, UInt16 ServerNameLength, UnicodeString ServerName)		Smb_Info	task_0	Error		
 Microsoft-Windows-SMBClient	30402	0	task_030402(Pointer SessionEntry, UInt16 ServerNameLength, UnicodeString ServerName)		Smb_Info	task_0	Error		
 Microsoft-Windows-SMBClient	30403	0	task_030403(Pointer Fcb, Pointer SrvOpen)		Smb_Info	task_0	Informational		
@@ -62,6 +68,7 @@ Microsoft-Windows-SMBClient	30802	0	task_030802(UInt32 Reason, UInt32 Status, UI
 Microsoft-Windows-SMBClient	30803	0	task_030803(UInt32 Reason, UInt32 Status, UInt16 ServerNameLength, UnicodeString ServerName, UInt32 AddressLength, Binary Address, UInt32 ConnectionType)		Smb_Connectivity	task_0	Error		
 Microsoft-Windows-SMBClient	30803	2	task_030803_V2(UInt32 Reason, UInt32 Status, UInt16 ServerNameLength, UnicodeString ServerName, UInt32 AddressLength, Binary RemoteAddress, Binary LocalAddress, UInt16 InstanceNameLength, UnicodeString InstanceName, UInt32 ConnectionType)		Smb_Connectivity	task_0	Error		
 Microsoft-Windows-SMBClient	30804	0	task_030804(UInt32 Reason, UInt32 Status, UInt16 ServerNameLength, UnicodeString ServerName, UInt32 AddressLength, Binary Address, UInt32 ConnectionType)		Smb_Connectivity	task_0	Error		
+Microsoft-Windows-SMBClient	30804	2	task_030804_V2(UInt32 Reason, UInt32 Status, UInt16 InstanceNameLength, UnicodeString InstanceName, UInt16 ServerNameLength, UnicodeString ServerName, UInt32 AddressLength, Binary Address, UInt32 ConnectionType, UInt32 InterfaceId)		Smb_Connectivity	task_0	Error		
 Microsoft-Windows-SMBClient	30805	2	task_030805_V2(UInt32 Status, UInt64 SessionId, UInt32 TreeId, UInt16 ServerNameLength, UnicodeString ServerName, UInt32 AddressLength, Binary Address)		Smb_Connectivity	task_0	Warning		
 Microsoft-Windows-SMBClient	30806	2	task_030806_V2(UInt32 Status, UInt64 SessionId, UInt32 TreeId, UInt16 ServerNameLength, UnicodeString ServerName, UInt32 AddressLength, Binary Address)		Smb_Connectivity	task_0	Informational		
 Microsoft-Windows-SMBClient	30807	2	task_030807_V2(UInt32 Status, UInt64 SessionId, UInt32 TreeId, UInt16 ServerNameLength, UnicodeString ServerName, UInt32 AddressLength, Binary Address)		Smb_Connectivity	task_0	Warning		

@@ -29,8 +29,8 @@ Microsoft-Windows-Narrator	41	0	ExplorerStateChange(Int32 CurrentState)		PerfIns
 Microsoft-Windows-Narrator	43	0	ProcessFocusChangeStart()	Start	PerfInstrumentation	ProcessFocusChange	Informational		
 Microsoft-Windows-Narrator	44	0	ProcessFocusChangeStop(Int32 EventCancelled, Int32 EventId)	Stop	NarratorStartup PerfInstrumentation	ProcessFocusChange	Informational		
 Microsoft-Windows-Narrator	45	0	ToggleSelectionMode(Int32 SeletionModeEnabled)		PerfInstrumentation	ToggleSelectionMode	Informational		
-Microsoft-Windows-Narrator	47	0	ProcessNarratorCommandStart(Int32 Command)	Start	PerfInstrumentation	ProcessNarratorCommand	Informational		
-Microsoft-Windows-Narrator	48	0	ProcessNarratorCommandStop(Int32 Command)	Stop	PerfInstrumentation	ProcessNarratorCommand	Informational		
+Microsoft-Windows-Narrator	47	0	ProcessNarratorCommandStart(Int32 CommandId, UnicodeString CommandName)	Start	PerfInstrumentation	ProcessNarratorCommand	Informational		
+Microsoft-Windows-Narrator	48	0	ProcessNarratorCommandStop(Int32 CommandId, UnicodeString CommandName)	Stop	PerfInstrumentation	ProcessNarratorCommand	Informational		
 Microsoft-Windows-Narrator	49	0	SAPISpeechComplete()		PerfInstrumentation	SAPISpeechComplete	Informational		
 Microsoft-Windows-Narrator	50	0	NarratorPlaySound(Int32 SoundResourceId)		PerfInstrumentation	NarratorPlaySound	Informational		
 Microsoft-Windows-Narrator	51	0	EventQueued(UnicodeString EventType, Int32 EventId, Int32 Priority)		PerfInstrumentation	EventQueued	Informational		
@@ -174,8 +174,8 @@ Microsoft-Windows-Narrator	204	0	GetNextChunkStart()	Start	PerfInstrumentation	G
 Microsoft-Windows-Narrator	205	0	GetNextChunkStop()	Stop	PerfInstrumentation	GetNextChunk	Informational		
 Microsoft-Windows-Narrator	206	0	IsPlaceCaretPositionStart()	Start	PerfInstrumentation	IsPlaceCaretPosition	Informational		
 Microsoft-Windows-Narrator	207	0	IsPlaceCaretPositionStop()	Stop	PerfInstrumentation	IsPlaceCaretPosition	Informational		
-Microsoft-Windows-Narrator	208	0	UiaAutomationEventHandlerStart()	Start	PerfInstrumentation	UiaAutomationEventHandler	Informational		
-Microsoft-Windows-Narrator	209	0	UiaAutomationEventHandlerStop()	Stop	PerfInstrumentation	UiaAutomationEventHandler	Informational		
+Microsoft-Windows-Narrator	208	0	UiaEventHandlerStart(UnicodeString EventType, UnicodeString HandlerObject)	Start	PerfInstrumentation	UiaEventHandler	Informational		
+Microsoft-Windows-Narrator	209	0	UiaEventHandlerStop()	Stop	PerfInstrumentation	UiaEventHandler	Informational		
 Microsoft-Windows-Narrator	210	0	ProcessHookMessageStart()	Start	PerfInstrumentation	ProcessHookMessage	Informational		
 Microsoft-Windows-Narrator	211	0	ProcessHookMessageStop()	Stop	PerfInstrumentation	ProcessHookMessage	Informational		
 Microsoft-Windows-Narrator	212	0	AutomationEventProcessingEnqueuedStart()	Start	PerfInstrumentation	AutomationEventProcessingEnqueued	Informational		
@@ -220,3 +220,9 @@ Microsoft-Windows-Narrator	250	0	ChunkGenerator_GenerateSingleChunkStop()	Stop	P
 Microsoft-Windows-Narrator	251	0	NarratorProcessQueueTrigger(UnicodeString Trigger)		PerfInstrumentation	NarratorProcessQueueTrigger	Informational		
 Microsoft-Windows-Narrator	252	0	ControlTemplateReadingStart()	Start	PerfInstrumentation	ControlTemplateReading	Informational		
 Microsoft-Windows-Narrator	253	0	ControlTemplateReadingStop()	Stop	PerfInstrumentation	ControlTemplateReading	Informational		
+Microsoft-Windows-Narrator	254	0	GenerateAudioStreamStart()	Start	PerfInstrumentation	GenerateAudioStream	Informational		
+Microsoft-Windows-Narrator	255	0	GenerateAudioStreamStop(Boolean IsCachedStream, Boolean IsCancelled, Int32 TextLength)	Stop	PerfInstrumentation	GenerateAudioStream	Informational		
+Microsoft-Windows-Narrator	256	0	NarratorLayoutTableDetectionStart(Int32 EventId)	Start	PerfInstrumentation	NarratorLayoutTableDetection	Informational		
+Microsoft-Windows-Narrator	257	0	NarratorLayoutTableDetectionStop(Int32 EventId)	Stop	PerfInstrumentation	NarratorLayoutTableDetection	Informational		
+Microsoft-Windows-Narrator	258	0	NarratorIsInterestingElementStart(Int32 EventId)	Start	PerfInstrumentation	NarratorIsInterestingElement	Informational		
+Microsoft-Windows-Narrator	259	0	NarratorIsInterestingElementStop(Int32 EventId)	Stop	PerfInstrumentation	NarratorIsInterestingElement	Informational		

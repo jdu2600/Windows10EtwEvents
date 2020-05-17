@@ -251,7 +251,7 @@ Microsoft-Windows-Win32k	257	0	DitMmcssWorkStop()	Stop	MessagePumpInternalAndInp
 Microsoft-Windows-Win32k	258	0	FocusedProcessChangeGained(UInt32 SessionId, UInt32 NewProcessId, FILETIME NewProcessCreateTime)		UserActivity	FocusedProcessChangeGained	Informational		
 Microsoft-Windows-Win32k	259	0	FocusedProcessChangeLost(UInt32 SessionId, UInt32 OldProcessId, FILETIME OldProcessCreateTime)		UserActivity	FocusedProcessChangeLost	Informational		
 Microsoft-Windows-Win32k	260	0	FontLoadAttempt(UnicodeString SourceProcessName, UInt32 SourceType, UnicodeString FontSourcePath, Boolean Blocked)		Fonts	FontLoadAttempt	Informational		
-Microsoft-Windows-Win32k	301	0	TokenStateChanged(Pointer pCompositionSurfaceObject, UInt32 SwapChainIndex, UInt32 PresentCount, UInt64 FenceValue, UInt32 NewState, Boolean IndependentFlip, Boolean SkipIndependentFlip, UInt64 CompositionSurfaceLuid, UInt64 BindId)		Updates	TokenStateChanged	Informational		
+Microsoft-Windows-Win32k	301	1	TokenStateChanged_V1(Pointer pCompositionSurfaceObject, UInt32 SwapChainIndex, UInt32 PresentCount, UInt64 FenceValue, UInt32 NewState, Boolean IndependentFlip, Boolean SkipIndependentFlip, UInt64 CompositionSurfaceLuid, UInt64 BindId, Boolean EarlyComposition)		Updates	TokenStateChanged	Informational		
 Microsoft-Windows-Win32k	400	0	DCompDeferBatch(UInt32 channelHandle, Pointer pBatch, UInt32 batchID, UInt64 submissionTime, UInt64 submissionDeadline, UInt32 deferReason)		Updates	DCompDeferBatch	Informational		
 Microsoft-Windows-Win32k	401	0	TouchPadHIDProcessingStart()	Start	MessagePumpInternalAndInput	TouchPadHIDProcessing	Informational		
 Microsoft-Windows-Win32k	402	0	TouchPadHIDProcessingStop()	Stop	MessagePumpInternalAndInput	TouchPadHIDProcessing	Informational		
@@ -306,12 +306,16 @@ Microsoft-Windows-Win32k	455	0	GdiHandleOperationCreateHandle(Pointer HandleValu
 Microsoft-Windows-Win32k	456	0	GdiHandleOperationDestroyHandle(Pointer HandleValue, UInt32 HandleType, UInt32 SessionId, UInt32 OwnerProcessId)	DestroyHandle	keyword_10000000000	GdiHandleOperation	Informational		
 Microsoft-Windows-Win32k	457	0	GdiHandleOperationUpdateHandleOwner(Pointer HandleValue, UInt32 HandleType, UInt32 SessionId, UInt32 OwnerProcessId)	UpdateHandleOwner	keyword_10000000000	GdiHandleOperation	Informational		
 Microsoft-Windows-Win32k	458	0	GdiHandleOperationTransformHandle(Pointer PreviousHandleValue, Pointer NewHandleValue, UInt32 HandleType, UInt32 SessionId, UInt32 OwnerProcessId)	TransformHandle	keyword_10000000000	GdiHandleOperation	Informational		
+Microsoft-Windows-Win32k	459	0	WriteClipboard(UInt32 Pid, FILETIME ProcessCreateTime)		keyword_40000000000	WriteClipboard	Informational		
+Microsoft-Windows-Win32k	460	0	WriteClipboard460(UInt32 Pid, FILETIME ProcessCreateTime)		keyword_40000000000	WriteClipboard	Informational		
+Microsoft-Windows-Win32k	461	0	DwmVisRgnUpdate(Pointer hwnd, Pointer hwndParent, UInt32 visRgnType, Boolean changed)		Rendering	DwmVisRgnUpdate	Informational		
+Microsoft-Windows-Win32k	462	0	DwmVisRgnDirty(Pointer hwnd, Pointer hwndParent)		Rendering	DwmVisRgnDirty	Informational		
 Microsoft-Windows-Win32k	500	0	FlipManagerCompleteTokenStart(UInt64 PresentId)	Start	Updates	FlipManagerCompleteToken	Informational		
 Microsoft-Windows-Win32k	501	0	FlipManagerCompleteTokenStop(UInt64 PresentId)	Stop	Updates	FlipManagerCompleteToken	Informational		
 Microsoft-Windows-Win32k	502	0	FlipManagerTokenReleaseToFrameStart(UInt64 PresentId)	Start	Updates	FlipManagerTokenReleaseToFrame	Informational		
 Microsoft-Windows-Win32k	503	0	FlipManagerTokenReleaseToFrameStop(UInt64 PresentId, UInt32 TokenResult)	Stop	Updates	FlipManagerTokenReleaseToFrame	Informational		
 Microsoft-Windows-Win32k	1000	0	task_01000(UInt32 eventMin, UInt32 eventMax, UInt32 idEventProcess, UInt32 idEventThread, UInt32 Flags, Pointer HookInstance)		AuditApiCalls	task_0	Informational		
-Microsoft-Windows-Win32k	1001	0	task_01001(UInt32 ReturnValue)		AuditApiCalls	task_0	Informational		
+Microsoft-Windows-Win32k	1001	0	task_01001(UInt32 ReturnValue, UInt16 UsagePage, UInt16 Usage, UInt32 Flags, Pointer hwndTarget, Pointer ThreadStartAddress, FILETIME ThreadCreateTime, UInt32 ThreadId, UInt32 cWindows, UInt32 cVisWindows, UInt64 ThreadInfoFlags, UInt32 ProcessId, FILETIME ProcessCreateTime, UInt64 ProcessStartKey, UnicodeString ThreadStartAddressMappedModuleName, UInt32 ThreadStartAddressQueryResult, Pointer ThreadStartAddressVadAllocationBase, UInt32 ThreadStartAddressVadAllocationProtect, UInt32 ThreadStartAddressVadRegionType, Pointer ThreadStartAddressVadRegionSize, UInt32 ThreadStartAddressVadProtect)		AuditApiCalls	task_0	Informational		
 Microsoft-Windows-Win32k	1002	0	task_01002(UInt32 FilterType, UnicodeString pstrLib, Pointer hmod, Pointer pfnFilterProc, UInt32 ReturnValue)		AuditApiCalls	task_0	Informational		
 Microsoft-Windows-Win32k	1003	0	task_01003(UInt32 PID, UInt32 MsSinceLastKeyEvent, UInt32 BackgroundCallCount)		AuditApiCalls	task_0	Informational		
 Microsoft-Windows-Win32k	2000	0	task_02000(UInt32 Flags, UInt32 ProcessId, FILETIME ProcessCreateTime, UInt64 ProcessStartKey)		ProcessInfo	task_0	Informational		

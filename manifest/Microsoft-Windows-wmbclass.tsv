@@ -1,0 +1,45 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-wmbclass	1	0	task_0(UnicodeString DeviceObject)			task_0	Informational		
+Microsoft-Windows-wmbclass	2	0	task_02(UInt32 Instance)			task_0	Informational		
+Microsoft-Windows-wmbclass	3	0	task_03(UInt32 Instance)			task_0	Informational		
+Microsoft-Windows-wmbclass	4	0	task_04(UInt32 Instance, UInt32 Status)			task_0	Informational		
+Microsoft-Windows-wmbclass	5	0	task_05(UInt32 Instance, UInt32 Status)			task_0	Informational		
+Microsoft-Windows-wmbclass	6	0	task_06(UInt32 Instance)			task_0	Informational		
+Microsoft-Windows-wmbclass	7	0	task_07(UInt32 Instance, UInt32 Status)			task_0	Informational		
+Microsoft-Windows-wmbclass	8	0	task_08(UInt32 Instance)			task_0	Informational		
+Microsoft-Windows-wmbclass	9	0	task_09(UInt32 Instance, UInt32 Status)			task_0	Informational		
+Microsoft-Windows-wmbclass	10	0	task_010(UInt32 Instance)			task_0	Informational		
+Microsoft-Windows-wmbclass	11	0	task_011(UInt32 Instance, UInt32 Status)			task_0	Informational		
+Microsoft-Windows-wmbclass	12	0	task_012(UInt32 Instance, UInt32 Status)			task_0	Informational		
+Microsoft-Windows-wmbclass	13	0	task_013(UInt32 Instance, UInt32 Status)			task_0	Informational		
+Microsoft-Windows-wmbclass	14	0	task_014(UInt32 Instance, UInt32 Status)			task_0	Informational		
+Microsoft-Windows-wmbclass	15	0	task_015(UInt32 Instance, Pointer Request, UInt32 OID, AnsiString OIDname, Pointer RequestId, Pointer RequestHandle, UInt32 Type, UInt32 InformationLength)			task_0	Informational		
+Microsoft-Windows-wmbclass	16	0	task_016(UInt32 Instance, Pointer Request, UInt32 Status)			task_0	Informational		
+Microsoft-Windows-wmbclass	17	0	task_017(UInt32 Instance, Pointer Request, UInt32 OID, AnsiString OIDname, Pointer RequestId, Pointer RequestHandle, UInt32 Type, UInt32 BytesUsed, UInt32 BytesNeeded, UInt32 Status)			task_0	Informational		
+Microsoft-Windows-wmbclass	18	0	task_018(UInt32 Instance, Pointer Request, UInt32 OID, AnsiString OIDname, Pointer RequestId, Pointer RequestHandle, UInt32 Type, UInt32 BytesUsed, UInt32 BytesNeeded, UInt32 Status)			task_0	Informational		
+Microsoft-Windows-wmbclass	19	0	task_019(UInt32 Instance, UInt32 Status, Pointer RequestId, Pointer RequestHandle, UInt32 BufferSize)			task_0	Informational		
+Microsoft-Windows-wmbclass	20	0	task_020(UInt32 Instance, Pointer NBL)			task_0	Informational		
+Microsoft-Windows-wmbclass	21	0	task_021(UInt32 Instance, Pointer NBL, UInt32 Status)			task_0	Informational		
+Microsoft-Windows-wmbclass	100	0	task_0100(UInt32 Instance, UInt8 Class, UInt8 SubClass, UInt8 Protocol, UInt8 Configs)			task_0	Informational		
+Microsoft-Windows-wmbclass	101	0	task_0101(UInt32 Instance)			task_0	Informational		
+Microsoft-Windows-wmbclass	102	0	task_0102(UInt32 Instance, UInt8 ECMFuncDescpresent, UInt8 NCMFuncDescpresent, UInt8 MBIMFuncDescpresent)			task_0	Informational		
+Microsoft-Windows-wmbclass	103	0	task_0103(UInt32 Instance)			task_0	Informational		
+Microsoft-Windows-wmbclass	104	0	task_0104(UInt32 Instance, UInt8 bInterfaceNumber, UInt8 bInterfaceClass, UInt8 bInterfaceSubClass, UInt8 bInterfaceProtocol, UInt8 bAlternateSetting, UInt8 bNumEndPoints)			task_0	Informational		
+Microsoft-Windows-wmbclass	105	0	task_0105(UInt32 Instance, UInt32 BytesRead)			task_0	Informational		
+Microsoft-Windows-wmbclass	106	0	task_0106(UInt32 Instance, UInt8 bmRequestType, UInt8 bNotificationCode, UInt16 wValue, UInt16 wIndex, UInt16 wLength)			task_0	Informational		
+Microsoft-Windows-wmbclass	107	0	task_0107(UInt32 Instance, UInt32 Status, UInt32 UsdbStatus)			task_0	Informational		
+Microsoft-Windows-wmbclass	108	0	task_0108(UInt32 Instance, UInt32 MessageType, UInt32 MessageLength, UInt32 MessageTransactionId, UInt32 TotalFragments, UInt32 CurrentFragment, GUID ServiceId, UInt32 CID, UInt32 CommandType, UInt32 InfoLength)			task_0	Informational		
+Microsoft-Windows-wmbclass	109	0	task_0109(UInt32 Instance, UInt32 MessageType, UInt32 MessageLength, UInt32 MessageTransactionId, UInt32 TotalFragments, UInt32 CurrentFragment, GUID ServiceId, UInt32 CID, UInt32 Status, UInt32 InfoLength)			task_0	Informational		
+Microsoft-Windows-wmbclass	110	0	task_0110(UInt32 Instance, UInt32 Status, Boolean ToHost, UInt8 Request, UInt32 Length)			task_0	Error		
+Microsoft-Windows-wmbclass	111	0	task_0111(UInt32 Instance, UInt32 Status)			task_0	Error		
+Microsoft-Windows-wmbclass	112	0	task_0112(UInt32 Instance, UInt32 Status)			task_0	Error		
+Microsoft-Windows-wmbclass	113	0	task_0113(UInt32 Instance, UInt32 Status)			task_0	Error		
+Microsoft-Windows-wmbclass	114	0	task_0114(UInt32 Instance, UInt32 ErrorCode, UInt32 TransactionId, GUID ServiceId, UInt32 CommandId, AnsiString CommandName)			task_0	Error		
+Microsoft-Windows-wmbclass	115	0	task_0115(UInt32 Instance, UInt32 ErrorCode, UInt32 TransactionId, GUID ServiceId, UInt32 CommandId, AnsiString CommandName)			task_0	Error		
+Microsoft-Windows-wmbclass	116	0	task_0116(UInt32 Instance, UInt32 ErrorCode)			task_0	Error		
+Microsoft-Windows-wmbclass	117	0	task_0117(UInt32 CallerRequestId, UInt32 DriverRequestId, GUID ServiceId, AnsiString CommandName, UInt32 CommandId, UInt32 InBufferSize, Binary Payload)			task_0	Informational		
+Microsoft-Windows-wmbclass	118	0	task_0118(UInt32 CallerRequestId, UInt32 DriverRequestId, GUID ServiceId, AnsiString CommandName, UInt32 CommandId, UInt32 InBufferSize, Binary Payload, UInt32 NdisStatus)			task_0	Informational		
+Microsoft-Windows-wmbclass	119	0	task_0119(AnsiString ResponseType, UInt32 CallerRequestId, UInt32 DriverRequestId, GUID ServiceId, AnsiString CommandName, UInt32 CommandId, UInt32 DeviceStatus, UInt32 NdisStatus, UInt32 BufferSize, Binary Payload)			task_0	Informational		
+Microsoft-Windows-wmbclass	120	0	task_0120(AnsiString FriendlyName, UInt32 IfIndex, Binary MacAddress, GUID NetCfgId, Boolean RadioOff, UInt64 MaxLinkSpeed, UInt64 CurrentLinkSpeed, UInt64 UplinkSpeed, UInt64 DownlinkSpeed, UInt32 AvailableDataClass, Boolean AvailableDataClassValid, UInt32 AdapterSupportedCellularClass, UInt32 AdapterCurrentCellularClass, UInt64 GenXmitFramesOk, UInt64 GenXmitFramesDiscard, UInt64 GenReceiveFramesOk, UInt64 GenReceiveFramesDiscard, UInt32 MaxActivatedContexts, UInt32 ActivePortCount, UInt32 RefCount, UInt32 PendingRequestCount)			task_0	Informational		
+Microsoft-Windows-wmbclass	121	0	task_0121(UInt32 PortNumber, Boolean Connected, UInt32 ConnectionId, Int32 SessionId, UInt32 RefCount)			task_0	Informational		
+Microsoft-Windows-wmbclass	122	0	task_0122(UInt32 Instance, GUID DeviceId)			task_0	Informational		

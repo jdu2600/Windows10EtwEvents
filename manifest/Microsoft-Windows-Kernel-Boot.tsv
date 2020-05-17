@@ -78,8 +78,10 @@ Microsoft-Windows-Kernel-Boot	72	0	MeasuredLaunchPrepareLcpFailure(UInt32 Status
 Microsoft-Windows-Kernel-Boot	73	0	MeasuredLaunchTxtRejectedFirmwareAcm(UInt32 TxtStatus)	TxtRejectedFirmwareAcm		MeasuredLaunch	Informational		
 Microsoft-Windows-Kernel-Boot	74	0	VsmLKeyProvisioningStatus74(UInt32 CachedCopyStatus, UInt32 KeyGenerationStatus, UInt32 SealAndSaveStatus, UInt32 UEFIKeysStatus)			VsmLKeyProvisioningStatus	Error		
 Microsoft-Windows-Kernel-Boot	75	0	VsmLKeyProvisioningStatus75(UInt32 CachedCopyStatus, UInt32 KeyGenerationStatus, UInt32 SealAndSaveStatus, UInt32 UEFIKeysStatus)			VsmLKeyProvisioningStatus	Informational		
-Microsoft-Windows-Kernel-Boot	76	0	BootDebuggerEnabled()	Enabled		BootDebugger	Informational		
-Microsoft-Windows-Kernel-Boot	77	0	BootDebuggerInitFailure(UInt32 DebuggerStatus, UInt32 Status)	InitFailure		BootDebugger	Warning		
+Microsoft-Windows-Kernel-Boot	76	0	BootDebuggerBdEnabled()	BdEnabled		BootDebugger	Informational		
+Microsoft-Windows-Kernel-Boot	77	0	BootDebuggerBdInitFailure(UInt32 DebuggerStatus, UInt32 Status)	BdInitFailure		BootDebugger	Warning		
+Microsoft-Windows-Kernel-Boot	78	0	KernelDebuggerKdInitFailure(UInt32 DebuggerStatus, UInt32 Status)	KdInitFailure		KernelDebugger	Warning		
+Microsoft-Windows-Kernel-Boot	79	0	KernelDebuggerKdEnabled()	KdEnabled		KernelDebugger	Informational		
 Microsoft-Windows-Kernel-Boot	100	0	InitializeLibraryStart()	Start	SoftRestart	InitializeLibrary	Informational		
 Microsoft-Windows-Kernel-Boot	100	1	InitializeLibraryStart_V1(Boolean Secure)	Start	SoftRestart	InitializeLibrary	Informational		
 Microsoft-Windows-Kernel-Boot	101	0	InitializeLibraryStop(UInt32 Status)	Stop	SoftRestart	InitializeLibrary	Informational		
@@ -116,11 +118,14 @@ Microsoft-Windows-Kernel-Boot	130	0	MemoryMapRundown(UInt32 SequenceNumber, UInt
 Microsoft-Windows-Kernel-Boot	131	0	MemoryMapRundownStart()	Start	MemoryMapRundown	MemoryMapRundown	Informational		
 Microsoft-Windows-Kernel-Boot	132	0	MemoryMapRundownStop(UInt32 DescriptorCount)	Stop	MemoryMapRundown	MemoryMapRundown	Informational		
 Microsoft-Windows-Kernel-Boot	133	0	PhysicalPageAllocationFailure(HexInt32 Status, UInt64 PageCount, UInt32 MemoryType, UInt32 Attributes, UInt64 LowAddress, UInt64 HighAddress)		SoftRestart PhysicalMemory	PhysicalPageAllocationFailure	Error		
+Microsoft-Windows-Kernel-Boot	133	1	PhysicalPageAllocationFailure_V1(HexInt32 Status, UInt64 PageCount, UInt32 MemoryType, UInt32 Attributes, UInt64 LowAddress, UInt64 HighAddress, UInt32 Alignment, UInt32 ProximityId)		SoftRestart PhysicalMemory	PhysicalPageAllocationFailure	Error		
 Microsoft-Windows-Kernel-Boot	134	0	WaitForPartitionsRestoredStart()	Start	SoftRestart	WaitForPartitionsRestored	Informational		
 Microsoft-Windows-Kernel-Boot	135	0	WaitForPartitionsRestoredStop()	Stop	SoftRestart	WaitForPartitionsRestored	Informational		
 Microsoft-Windows-Kernel-Boot	136	0	CleanupPageDatabase(UInt32 Status, UInt64 OutstandingCount)		SoftRestart MemoryPreservation	CleanupPageDatabase	Error		
+Microsoft-Windows-Kernel-Boot	136	1	CleanupPageDatabase_V1(UInt32 Status, UInt64 OutstandingCount, UInt32 ApplicationsCount, GUID Applications)		SoftRestart MemoryPreservation	CleanupPageDatabase	Error		
 Microsoft-Windows-Kernel-Boot	137	0	MemoryPartitionRestoreStart(GUID Identifier, UInt32 PartitionId)	Start	SoftRestart MemoryPreservation	MemoryPartitionRestore	Informational		
 Microsoft-Windows-Kernel-Boot	138	0	MemoryPartitionRestoreStop(GUID Identifier, UInt64 PartitionPageCount, UInt64 AllocatedBlockCount, UInt64 AllocatedRunCount, UInt64 AllocatedPageCount, UInt32 Status)	Stop	SoftRestart MemoryPreservation	MemoryPartitionRestore	Informational		
+Microsoft-Windows-Kernel-Boot	138	1	MemoryPartitionRestoreStop_V1(GUID Identifier, UInt64 PartitionPageCount, UInt32 Status)	Stop	SoftRestart MemoryPreservation	MemoryPartitionRestore	Informational		
 Microsoft-Windows-Kernel-Boot	139	0	MemoryPartitionRestore(GUID Identifier, UInt32 Status)		SoftRestart MemoryPreservation	MemoryPartitionRestore	Error		
 Microsoft-Windows-Kernel-Boot	140	0	PersistMemoryPartitionStart(GUID Identifier)	Start	SoftRestart MemoryPreservation	PersistMemoryPartition	Informational		
 Microsoft-Windows-Kernel-Boot	141	0	PersistMemoryPartitionStop(GUID Identifier, UInt32 RunCount, UInt64 PageCount, UInt32 Status, UInt16 PartitionNameLength, UnicodeString PartitionName)	Stop	SoftRestart MemoryPreservation	PersistMemoryPartition	Informational		
@@ -154,6 +159,7 @@ Microsoft-Windows-Kernel-Boot	166	0	CreateDevices(UInt32 Status)		SoftRestart	Cr
 Microsoft-Windows-Kernel-Boot	167	0	SoftRestartHostCapability(UInt32 Status)		SoftRestart	SoftRestartHostCapability	Error		
 Microsoft-Windows-Kernel-Boot	168	0	EnumerateEnclavePages(UInt32 Status)		SoftRestart	EnumerateEnclavePages	Error		
 Microsoft-Windows-Kernel-Boot	169	0	InitializeMeasurementContext(UInt32 Status)		SoftRestart	InitializeMeasurementContext	Error		
+Microsoft-Windows-Kernel-Boot	169	1	InitializeMeasurementContextInitializationFailure_V1(UInt32 Status, UInt32 FailurePoint)	InitializationFailure	SoftRestart	InitializeMeasurementContext	Error		
 Microsoft-Windows-Kernel-Boot	170	0	KsrMeasurement(UInt32 Status)		SoftRestart	KsrMeasurement	Error		
 Microsoft-Windows-Kernel-Boot	171	0	TpmMeasurement(UInt32 Status)		SoftRestart	TpmMeasurement	Error		
 Microsoft-Windows-Kernel-Boot	172	0	CloseMeasurementLog(UInt32 Status)		SoftRestart	CloseMeasurementLog	Error		
@@ -167,6 +173,8 @@ Microsoft-Windows-Kernel-Boot	179	0	GetFirmwareInformation(UInt32 Status)		SoftR
 Microsoft-Windows-Kernel-Boot	180	0	VerifyBootEntry(UInt32 Status)		SoftRestart	VerifyBootEntry	Error		
 Microsoft-Windows-Kernel-Boot	181	0	RegisterFilter(UInt32 Status)		SoftRestart	RegisterFilter	Warning		
 Microsoft-Windows-Kernel-Boot	182	0	IoSpaceMemoryEnumerateFailure(UInt32 Status)	EnumerateFailure	SoftRestart	IoSpaceMemory	Error		
+Microsoft-Windows-Kernel-Boot	183	0	BadMemoryPagesListInitializationFailure(UInt32 Status)	ListInitializationFailure	SoftRestart	BadMemoryPages	Error		
+Microsoft-Windows-Kernel-Boot	184	0	InitializeMeasurementContextMeasurementsDisabled(UInt32 DisableReason, UInt32 TcgLogStatus)	MeasurementsDisabled	SoftRestart	InitializeMeasurementContext	Warning		
 Microsoft-Windows-Kernel-Boot	200	0	TpmCommandResponse(UInt32 CommandCode, UInt32 ResponseCode, UInt64 ResponseMilliseconds)			TpmCommandResponse	Informational		
 Microsoft-Windows-Kernel-Boot	201	0	TpmCommandResponse201(UInt32 CommandCode, UInt32 ResponseCode, UInt64 ResponseMilliseconds, UInt32 CommandSize, Binary CommandData, UInt32 ResponseSize, Binary ResponseData)			TpmCommandResponse	Informational		
 Microsoft-Windows-Kernel-Boot	202	0	TpmSubmitError(UInt32 CommandCode, UInt32 ErrorCode, UInt64 ResponseMilliseconds)		keyword_80000000000	TpmSubmitError	Error		
@@ -192,4 +200,17 @@ Microsoft-Windows-Kernel-Boot	221	0	MeasuredLaunchDrtmDriversNotSupportVbs()	Drt
 Microsoft-Windows-Kernel-Boot	222	0	MeasuredLaunchPpamFailure(UInt32 TxtStatus, UInt64 Argument1, UInt64 Argument2)	PpamFailure		MeasuredLaunch	Error		
 Microsoft-Windows-Kernel-Boot	223	0	IoSpaceMemoryAllocationFailure(UInt32 Phase, UInt32 Status, UInt32 Tries, UInt32 RemainingNodesCount, Int16 RemainingNodes)	AllocationFailure		IoSpaceMemory	Error		
 Microsoft-Windows-Kernel-Boot	224	0	IoSpaceMemoryAllocation(UInt32 AllocatedRegions, UInt32 Tries)	Allocation		IoSpaceMemory	Informational		
-Microsoft-Windows-Kernel-Boot	225	0	task_0225()			task_0	Informational		
+Microsoft-Windows-Kernel-Boot	225	0	VsmBootNoSecretsMode()			VsmBootNoSecretsMode	Informational		
+Microsoft-Windows-Kernel-Boot	226	0	FinalizeMemoryMapStart()	Start	SoftRestart	FinalizeMemoryMap	Informational		
+Microsoft-Windows-Kernel-Boot	227	0	FinalizeMemoryMapStop()	Stop	SoftRestart	FinalizeMemoryMap	Informational		
+Microsoft-Windows-Kernel-Boot	228	0	FinalizeMemoryMapStop228(UInt32 Status)	Stop	SoftRestart	FinalizeMemoryMap	Error		
+Microsoft-Windows-Kernel-Boot	229	0	RegisterHvloaderPersistenceInterface(UInt32 Status)		SoftRestart	RegisterHvloaderPersistenceInterface	Error		
+Microsoft-Windows-Kernel-Boot	230	0	LoadHvloaderForPersistence(UInt32 Status)		SoftRestart	LoadHvloaderForPersistence	Error		
+Microsoft-Windows-Kernel-Boot	231	0	BootMenuTimerCanceled(UInt32 KeyType, UInt32 Code)		keyword_80000000000	BootMenuTimerCanceled	Informational		
+Microsoft-Windows-Kernel-Boot	232	0	MemoryPartitionFreeUnusedMemoryStart()	Start	SoftRestart MemoryPreservation	MemoryPartitionFreeUnusedMemory	Informational		
+Microsoft-Windows-Kernel-Boot	233	0	MemoryPartitionFreeUnusedMemoryStop()	Stop	SoftRestart MemoryPreservation	MemoryPartitionFreeUnusedMemory	Informational		
+Microsoft-Windows-Kernel-Boot	234	0	MemoryPartitionRestoreStats(GUID Identifier, UInt32 PartitionId, UInt64 AllocatedBlockCount, UInt64 AllocatedRunCount, UInt64 AllocatedPageCount, UInt32 Status)		SoftRestart MemoryPreservation	MemoryPartitionRestoreStats	Informational		
+Microsoft-Windows-Kernel-Boot	235	0	BootTpmTpmInit(UInt32 StatusCode, UInt32 Position)	TpmInit	keyword_80000000000	BootTpm	Error		
+Microsoft-Windows-Kernel-Boot	236	0	MeasuredLaunchSmmLevelCheck(UInt32 TxtStatus, UInt32 PolicyLevel, UInt64 Argument1, UInt64 Argument2)	SmmLevelCheck		MeasuredLaunch	Informational		
+Microsoft-Windows-Kernel-Boot	237	0	MemoryMirroringNotSupported(UInt32 MirrorStatus)	NotSupported		MemoryMirroring	Error		
+Microsoft-Windows-Kernel-Boot	238	0	EfiTimeZoneInformation(Int16 EfiTimeZoneBias, UInt8 EfiDaylightFlags)			EfiTimeZoneInformation	Informational		

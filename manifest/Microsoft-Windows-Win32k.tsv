@@ -310,6 +310,7 @@ Microsoft-Windows-Win32k	459	0	WriteClipboard(UInt32 Pid, FILETIME ProcessCreate
 Microsoft-Windows-Win32k	460	0	WriteClipboard460(UInt32 Pid, FILETIME ProcessCreateTime)		keyword_40000000000	WriteClipboard	Informational		
 Microsoft-Windows-Win32k	461	0	DwmVisRgnUpdate(Pointer hwnd, Pointer hwndParent, UInt32 visRgnType, Boolean changed)		Rendering	DwmVisRgnUpdate	Informational		
 Microsoft-Windows-Win32k	462	0	DwmVisRgnDirty(Pointer hwnd, Pointer hwndParent)		Rendering	DwmVisRgnDirty	Informational		
+Microsoft-Windows-Win32k	463	0	ReadClipboard(UInt32 CallerPid, FILETIME CallerProcessCreateTime, UInt32 OwnerPid, FILETIME OwnerProcessCreateTime, UInt32 ClipboardSequenceNumber)		keyword_80000000000	ReadClipboard	Informational		
 Microsoft-Windows-Win32k	500	0	FlipManagerCompleteTokenStart(UInt64 PresentId)	Start	Updates	FlipManagerCompleteToken	Informational		
 Microsoft-Windows-Win32k	501	0	FlipManagerCompleteTokenStop(UInt64 PresentId)	Stop	Updates	FlipManagerCompleteToken	Informational		
 Microsoft-Windows-Win32k	502	0	FlipManagerTokenReleaseToFrameStart(UInt64 PresentId)	Start	Updates	FlipManagerTokenReleaseToFrame	Informational		

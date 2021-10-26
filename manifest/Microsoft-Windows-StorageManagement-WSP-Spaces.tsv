@@ -1,6 +1,6 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
 Microsoft-Windows-StorageManagement-WSP-Spaces	2000	0	task_0(UnicodeString SubsystemID, UnicodeString SubsystemURI, UnicodeString Username, UInt32 ErrorCode, UnicodeString ErrorString)			task_0	Error		
-Microsoft-Windows-StorageManagement-WSP-Spaces	2001	0	task_02001()			task_0	Warning		
+Microsoft-Windows-StorageManagement-WSP-Spaces	2001	0	task_02001(HexInt32 ErrorCode)			task_0	Warning		
 Microsoft-Windows-StorageManagement-WSP-Spaces	2002	0	task_02002()			task_0	Informational		
 Microsoft-Windows-StorageManagement-WSP-Spaces	2003	0	task_02003(UnicodeString ClassName, UnicodeString MethodName, UnicodeString ObjectId, UInt32 ErrorCode)			task_0	Error		
 Microsoft-Windows-StorageManagement-WSP-Spaces	2004	0	task_02004(UnicodeString Message)			task_0	Warning		
@@ -9,3 +9,13 @@ Microsoft-Windows-StorageManagement-WSP-Spaces	2006	0	task_02006(UnicodeString C
 Microsoft-Windows-StorageManagement-WSP-Spaces	2007	0	task_02007(UnicodeString ClassName, UInt32 ErrorCode)			task_0	Error		
 Microsoft-Windows-StorageManagement-WSP-Spaces	2008	0	task_02008(UnicodeString ClassName, UnicodeString MethodName, UnicodeString ObjectId, UInt32 ErrorCode)			task_0	Error		
 Microsoft-Windows-StorageManagement-WSP-Spaces	2009	0	task_02009(UnicodeString ComputerName, UInt32 ErrorCode, UInt32 SecondaryErrorCode)			task_0	Error		
+Microsoft-Windows-StorageManagement-WSP-Spaces	2010	1	task_02010_V1(UInt32 LoadTime_msecs, UInt32 MI_Result)			task_0	Informational		
+Microsoft-Windows-StorageManagement-WSP-Spaces	2011	1	task_02011_V1(UnicodeString ClusterName)			task_0	Informational		
+Microsoft-Windows-StorageManagement-WSP-Spaces	2012	1	task_02012_V1(UnicodeString ClusterName, UInt32 InitializationPhase, HexInt32 HRESULT)			task_0	Error		
+Microsoft-Windows-StorageManagement-WSP-Spaces	2013	1	task_02013_V1(UnicodeString Node, UInt32 NodeState)			task_0	Informational		
+Microsoft-Windows-StorageManagement-WSP-Spaces	2014	1	task_02014_V1(UnicodeString Node)			task_0	Informational		
+Microsoft-Windows-StorageManagement-WSP-Spaces	2015	1	task_02015_V1(UnicodeString Node)			task_0	Informational		
+Microsoft-Windows-StorageManagement-WSP-Spaces	2016	1	task_02016_V1(UnicodeString Node)			task_0	Warning		
+Microsoft-Windows-StorageManagement-WSP-Spaces	2017	1	task_02017_V1(UInt32 ControlCode, UnicodeString ControlCodeName, UInt64 Runtime_msecs)			task_0	Warning		
+Microsoft-Windows-StorageManagement-WSP-Spaces	2018	1	task_02018_V1(UInt32 ControlCode, UnicodeString ControlCodeName, UInt64 Runtime_msecs)			task_0	Warning		
+Microsoft-Windows-StorageManagement-WSP-Spaces	2019	1	task_02019_V1(UInt32 ControlCode, UnicodeString ControlCodeName, UnicodeString Nodes, UnicodeString UnresponsiveNodes)			task_0	Warning		

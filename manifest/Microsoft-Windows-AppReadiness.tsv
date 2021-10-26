@@ -13,6 +13,7 @@ Microsoft-Windows-AppReadiness	107	0	AppReadiness_Service107(UnicodeString User)
 Microsoft-Windows-AppReadiness	108	0	AppReadiness_PackageChangeStart(UInt32 Source)	Start	Service	AppReadiness_PackageChange	Informational		
 Microsoft-Windows-AppReadiness	109	0	AppReadiness_PackageChangeStop(UInt32 Source, Int32 Result)	Stop	Service	AppReadiness_PackageChange	Informational		
 Microsoft-Windows-AppReadiness	110	0	AppReadiness_Service110(UInt32 ReferencesLeaked, UInt32 ShutdownDelayMsec)		Service	AppReadiness_Service	Warning		
+Microsoft-Windows-AppReadiness	111	0	AppReadiness_Service_Lifetime(Int32 Result)		Service	AppReadiness_Service_Lifetime	Warning		
 Microsoft-Windows-AppReadiness	200	0	AppReadiness_User_ProcessTasksStart(UnicodeString User)	Start	User	AppReadiness_User_ProcessTasks	Informational		
 Microsoft-Windows-AppReadiness	201	0	AppReadiness_User_ProcessTasksStop(UnicodeString User)	Stop	User	AppReadiness_User_ProcessTasks	Informational		
 Microsoft-Windows-AppReadiness	205	0	AppReadiness_User_ProcessTasks(UnicodeString User, UInt32 NumPackages, UnicodeString PackageInfo)		User	AppReadiness_User_ProcessTasks	Informational		

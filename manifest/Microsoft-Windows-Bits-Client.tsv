@@ -5,9 +5,11 @@ Microsoft-Windows-Bits-Client	2	0	task_0Suspend(GUID JobGuid, UnicodeString Titl
 Microsoft-Windows-Bits-Client	3	0	task_0(UnicodeString string, UnicodeString string2, UnicodeString string3)			task_0	Informational		
 Microsoft-Windows-Bits-Client	3	1	task_0_V1(UnicodeString jobTitle, GUID jobId, UnicodeString jobOwner)			task_0	Informational		
 Microsoft-Windows-Bits-Client	3	2	task_0_V2(UnicodeString jobTitle, GUID jobId, UnicodeString jobOwner, UnicodeString processPath, UInt32 processId)			task_0	Informational		
+Microsoft-Windows-Bits-Client	3	3	task_0_V3(UnicodeString jobTitle, GUID jobId, UnicodeString jobOwner, UnicodeString processPath, UInt32 processId, UInt64 ClientProcessStartKey)			task_0	Informational		
 Microsoft-Windows-Bits-Client	4	0	task_04(UnicodeString User, UnicodeString jobTitle, GUID jobId, UnicodeString jobOwner, UInt64 fileCount)			task_0	Informational		
 Microsoft-Windows-Bits-Client	4	1	task_04_V1(UnicodeString User, UnicodeString jobTitle, GUID jobId, UnicodeString jobOwner, UInt64 fileCount, UInt64 bytesTransferred, UInt64 bytesTransferredFromPeer)			task_0	Informational		
 Microsoft-Windows-Bits-Client	5	0	task_05(UnicodeString User, UnicodeString jobTitle, GUID jobId, UnicodeString jobOwner, UInt64 fileCount)			task_0	Informational		
+Microsoft-Windows-Bits-Client	5	1	task_05_V1(UnicodeString User, UnicodeString jobTitle, GUID jobId, UnicodeString jobOwner, UInt64 fileCount)			task_0	Informational		
 Microsoft-Windows-Bits-Client	10	0	peerneighborlist(server)_listeningforclientsStart()	Start		peerneighborlist(server)_listeningforclients	Informational		
 Microsoft-Windows-Bits-Client	11	0	peerneighborlist(server)_listeningforclientsStop(UInt32 ErrorCode)	Stop		peerneighborlist(server)_listeningforclients	Error		
 Microsoft-Windows-Bits-Client	12	0	peerneighborlist(server)_listeningforclientsStop12()	Stop		peerneighborlist(server)_listeningforclients	Informational		
@@ -99,10 +101,12 @@ Microsoft-Windows-Bits-Client	311	0	task_0311(GUID JobId, UnicodeString JobName,
 Microsoft-Windows-Bits-Client	312	0	task_0312(UInt32 ErrorCode)			task_0	Warning		
 Microsoft-Windows-Bits-Client	313	0	task_0313(UInt32 ErrorCode)			task_0	Warning		
 Microsoft-Windows-Bits-Client	16384	0	task_016384(GUID Id, UnicodeString Title, UnicodeString Owner, UnicodeString User)			task_0	Informational		
+Microsoft-Windows-Bits-Client	16384	1	task_016384_V1(GUID Id, UnicodeString Title, UnicodeString Owner, UnicodeString User, UInt32 processId, UInt64 ClientProcessStartKey)			task_0	Informational		
 Microsoft-Windows-Bits-Client	16385	0	task_016385(GUID Id, UnicodeString Title, UnicodeString FileList)			task_0	Warning		
 Microsoft-Windows-Bits-Client	16386	0	task_016386(GUID Id, UnicodeString Title, UnicodeString FileList)			task_0	Warning		
 Microsoft-Windows-Bits-Client	16387	0	task_016387(GUID Id, UnicodeString Title, UnicodeString Owner, UnicodeString PropertyName)			task_0	Informational		
 Microsoft-Windows-Bits-Client	16388	0	task_016388(GUID Id, UnicodeString Title, UnicodeString Owner, UnicodeString User)			task_0	Informational		
+Microsoft-Windows-Bits-Client	16388	1	task_016388_V1(GUID Id, UnicodeString Title, UnicodeString Owner, UnicodeString User, UInt32 processId, UInt64 ClientProcessStartKey)			task_0	Informational		
 Microsoft-Windows-Bits-Client	16389	0	task_016389(GUID Id, UnicodeString Title, UnicodeString Owner, UInt32 DayCount)			task_0	Informational		
 Microsoft-Windows-Bits-Client	16390	0	task_016390(GUID Id, UnicodeString Title, UnicodeString Owner, UInt32 RetryWaitTime)			task_0	Warning		
 Microsoft-Windows-Bits-Client	16391	0	task_016391()			task_0	Error		
@@ -116,6 +120,7 @@ Microsoft-Windows-Bits-Client	16398	0	task_016398(UnicodeString entityName, UInt
 Microsoft-Windows-Bits-Client	16400	0	task_016400(UnicodeString entityName, UInt32 currentSize, UInt32 currentLimit)			task_0	Error		
 Microsoft-Windows-Bits-Client	16401	0	task_016401(UnicodeString entityName, UInt32 currentSize, UInt32 currentLimit)			task_0	Error		
 Microsoft-Windows-Bits-Client	16402	0	task_016402(UnicodeString entityName, UInt32 currentSize, UInt32 currentLimit)			task_0	Error		
+Microsoft-Windows-Bits-Client	16403	0	task_016403(UnicodeString User, UnicodeString jobTitle, GUID jobId, UnicodeString jobOwner, UInt64 fileCount, UnicodeString RemoteName, UnicodeString LocalName, UInt32 processId, UInt64 ClientProcessStartKey)			task_0	Informational		
 Microsoft-Windows-Bits-Client	16404	0	task_016404(UnicodeString function, UInt32 line, UInt32 hr)			task_0	Error		
 Microsoft-Windows-Bits-Client	16405	0	task_016405(UnicodeString Key, UnicodeString SubKeyOrValueName)			task_0	Error		
 Microsoft-Windows-Bits-Client	17005	0	task_017005(UnicodeString string, UnicodeString string2, UnicodeString string3)			task_0	Error		

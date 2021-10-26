@@ -34,7 +34,16 @@ Matt Graeber [@mattifestation](https://twitter.com/mattifestation)
  * https://github.com/mattifestation/WindowsEventLogMetadata
  * https://gist.github.com/mattifestation/04e8299d8bc97ef825affe733310f7bd - NiftyETWProviders.json
  * https://gist.github.com/mattifestation/edbac1614694886c8ef4583149f53658 - TLGMetadataParser.psm1
+
+Nasreddine Bencherchali [@nasbench](https://twitter.com/nas_bench)
+ * https://github.com/nasbench/ETW-Resources#blogs--research-httpsnasbenchmediumcom
+ * https://github.com/nasbench/ETW-Resources - XML manifests
  
+Pat H [@pathtofile](https://twitter.com/pathtofile)
+ * https://blog.tofile.dev/categories/#etw
+ * https://github.com/pathtofile/Sealighter
+ * https://github.com/pathtofile/SealighterTI
+
 Zac Brown [@zacbrown](https://twitter.com/zacbrown)
  * https://zacbrown.org/2017/04/11/hidden-treasure-intrusion-detection-with-etw-part-1
  * https://zacbrown.org/2017/05/9/hidden-treasure-intrusion-detection-with-etw-part-2

@@ -1,32 +1,32 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
 Schannel	36864	0	task_0()			task_0	Informational		
 Schannel	36865	0	task_036865(UnicodeString ModuleName, HexInt32 Error)			task_0	Error		
-Schannel	36867	0	task_036867(UnicodeString Type, UInt32 __binLength, Binary binaryData)			task_0	Informational		
+Schannel	36867	0	task_036867(UInt32 CallerProcessId, UnicodeString CallerProcessImageName, UnicodeString Type, UInt32 __binLength, Binary binaryData)			task_0	Informational		
 Schannel	36868	0	task_036868(UnicodeString Type, UnicodeString CSPName, UInt32 CSPType, UnicodeString KeyName, UnicodeString KeyType, HexInt32 KeyFlags, UInt32 __binLength, Binary EncodedCert)			task_0	Informational		
-Schannel	36869	0	task_036869(UnicodeString Type, UInt32 __binLength, Binary binaryData)			task_0	Error		
-Schannel	36870	0	task_036870(UnicodeString Type, HexInt32 ErrorCode, UInt32 ErrorStatus)			task_0	Error		
-Schannel	36871	0	task_036871(UnicodeString Type, UInt32 ErrorState)			task_0	Error		
-Schannel	36872	0	task_036872(UnicodeString Type, HexInt32 ErrorCode, HexInt32 CertFlags, UInt32 __binLength, Binary CredContext)			task_0	Error		
-Schannel	36873	0	task_036873()			task_0	Error		
-Schannel	36874	0	task_036874(UnicodeString Protocol)			task_0	Error		
-Schannel	36875	0	task_036875()			task_0	Warning		
-Schannel	36876	0	task_036876(HexInt32 ErrorCode, UInt32 __binLength, Binary pCertificateContext)			task_0	Error		
-Schannel	36877	0	task_036877(HexInt32 ErrorCode, UInt32 __binLength, Binary pCertificateContext)			task_0	Warning		
-Schannel	36878	0	task_036878(HexInt32 ErrorCode, UInt32 __binLength, Binary pCertificateContext)			task_0	Warning		
-Schannel	36879	0	task_036879(HexInt32 ErrorCode, UInt32 __binLength, Binary pCertificateContext)			task_0	Warning		
+Schannel	36869	0	task_036869(UInt32 CallerProcessId, UnicodeString CallerProcessImageName, UnicodeString Type, UInt32 __binLength, Binary binaryData)			task_0	Error		
+Schannel	36870	0	task_036870(UInt32 CallerProcessId, UnicodeString CallerProcessImageName, UnicodeString Type, HexInt32 ErrorCode, UInt32 ErrorStatus)			task_0	Error		
+Schannel	36871	0	task_036871(UInt32 CallerProcessId, UnicodeString CallerProcessImageName, UnicodeString Type, UInt32 ErrorState)			task_0	Error		
+Schannel	36872	0	task_036872(UInt32 CallerProcessId, UnicodeString CallerProcessImageName, UnicodeString Type, HexInt32 ErrorCode, HexInt32 CertFlags, UInt32 __binLength, Binary CredContext)			task_0	Error		
+Schannel	36873	0	task_036873(UInt32 CallerProcessId, UnicodeString CallerProcessImageName)			task_0	Error		
+Schannel	36874	0	task_036874(UInt32 CallerProcessId, UnicodeString CallerProcessImageName, UnicodeString Protocol)			task_0	Error		
+Schannel	36875	0	task_036875(UInt32 CallerProcessId, UnicodeString CallerProcessImageName)			task_0	Warning		
+Schannel	36876	0	task_036876(UInt32 CallerProcessId, UnicodeString CallerProcessImageName, HexInt32 ErrorCode, UInt32 __binLength, Binary pCertificateContext)			task_0	Error		
+Schannel	36877	0	task_036877(UInt32 CallerProcessId, UnicodeString CallerProcessImageName, HexInt32 ErrorCode, UInt32 __binLength, Binary pCertificateContext)			task_0	Warning		
+Schannel	36878	0	task_036878(UInt32 CallerProcessId, UnicodeString CallerProcessImageName, HexInt32 ErrorCode, UInt32 __binLength, Binary pCertificateContext)			task_0	Warning		
+Schannel	36879	0	task_036879(UInt32 CallerProcessId, UnicodeString CallerProcessImageName, HexInt32 ErrorCode, UInt32 __binLength, Binary pCertificateContext)			task_0	Warning		
 Schannel	36880	0	task_036880(UnicodeString Type, UnicodeString Protocol, HexInt32 CipherSuite, UInt32 ExchangeStrength, Pointer ContextHandle, UnicodeString TargetName, UnicodeString LocalCertSubjectName, UnicodeString RemoteCertSubjectName)			task_0	Informational		
-Schannel	36881	0	task_036881(UInt32 __binLength, Binary certificateContext)			task_0	Error		
-Schannel	36882	0	task_036882(UInt32 __binLength, Binary certificateContext)			task_0	Error		
-Schannel	36883	0	task_036883(UInt32 __binLength, Binary certificateContext)			task_0	Error		
-Schannel	36884	0	task_036884(UnicodeString Name, UInt32 __binLength, Binary certificateContext)			task_0	Error		
-Schannel	36885	0	task_036885()			task_0	Warning		
-Schannel	36886	0	task_036886()			task_0	Warning		
-Schannel	36887	0	task_036887(UInt32 AlertDesc)			task_0	Informational		
-Schannel	36888	0	task_036888(UInt32 AlertDesc, UInt32 ErrorState, UnicodeString TargetName)			task_0	Informational		
-Schannel	36889	0	task_036889(UnicodeString Type, HexInt32 ErrorCode, UInt32 __binLength, Binary CredContext)			task_0	Error		
-Schannel	36896	0	task_036896()			task_0	Warning		
-Schannel	36897	0	task_036897()			task_0	Warning		
-Schannel	36898	0	task_036898()			task_0	Informational		
-Schannel	36899	0	task_036899()			task_0	Informational		
-Schannel	36912	0	task_036912(UnicodeString Path)			task_0	Error		
+Schannel	36881	0	task_036881(UInt32 CallerProcessId, UnicodeString CallerProcessImageName, UInt32 __binLength, Binary certificateContext)			task_0	Error		
+Schannel	36882	0	task_036882(UInt32 CallerProcessId, UnicodeString CallerProcessImageName, UInt32 __binLength, Binary certificateContext)			task_0	Error		
+Schannel	36883	0	task_036883(UInt32 CallerProcessId, UnicodeString CallerProcessImageName, UInt32 __binLength, Binary certificateContext)			task_0	Error		
+Schannel	36884	0	task_036884(UInt32 CallerProcessId, UnicodeString CallerProcessImageName, UnicodeString Name, UInt32 __binLength, Binary certificateContext)			task_0	Error		
+Schannel	36885	0	task_036885(UInt32 CallerProcessId, UnicodeString CallerProcessImageName)			task_0	Warning		
+Schannel	36886	0	task_036886(UInt32 CallerProcessId, UnicodeString CallerProcessImageName)			task_0	Warning		
+Schannel	36887	0	task_036887(UInt32 CallerProcessId, UnicodeString CallerProcessImageName, UInt32 AlertDesc)			task_0	Informational		
+Schannel	36888	0	task_036888(UInt32 CallerProcessId, UnicodeString CallerProcessImageName, UInt32 AlertDesc, UInt32 ErrorState, UnicodeString TargetName)			task_0	Informational		
+Schannel	36889	0	task_036889(UInt32 CallerProcessId, UnicodeString CallerProcessImageName, UnicodeString Type, HexInt32 ErrorCode, UInt32 __binLength, Binary CredContext)			task_0	Error		
+Schannel	36896	0	task_036896(UInt32 CallerProcessId, UnicodeString CallerProcessImageName)			task_0	Warning		
+Schannel	36897	0	task_036897(UInt32 CallerProcessId, UnicodeString CallerProcessImageName)			task_0	Warning		
+Schannel	36898	0	task_036898(UInt32 CallerProcessId, UnicodeString CallerProcessImageName)			task_0	Informational		
+Schannel	36899	0	task_036899(UInt32 CallerProcessId, UnicodeString CallerProcessImageName)			task_0	Informational		
+Schannel	36912	0	task_036912(UInt32 CallerProcessId, UnicodeString CallerProcessImageName, UnicodeString Path)			task_0	Error		
 Schannel	36928	0	task_036928(UnicodeString FailureReason, UnicodeString OCSPResponderURL, FILETIME ThisUpdate, FILETIME NextUpdate, UInt32 __binLength, Binary Certificate)			task_0	Error		

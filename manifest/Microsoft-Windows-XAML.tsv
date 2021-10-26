@@ -254,11 +254,11 @@ Microsoft-Windows-XAML	256	0	OfferSystemMemorySurface(UnicodeString State)		Rend
 Microsoft-Windows-XAML	257	0	ReclaimSystemMemorySurface(UnicodeString State)		Rendering	ReclaimSystemMemorySurface	Informational		
 Microsoft-Windows-XAML	258	0	VirtualSurfaceImageSourceUpdatePriority(UInt32 HighPriority)		Rendering	VirtualSurfaceImageSourceUpdatePriority	Verbose		
 Microsoft-Windows-XAML	259	0	CoreWindowResizeFired(UInt32 ApplicationViewState)		Rendering	CoreWindowResizeFired	Verbose		
-Microsoft-Windows-XAML	260	0	SubmitNotifyWindowResized(UInt32 ApplicationViewState)		Rendering	SubmitNotifyWindowResized	Verbose		
-Microsoft-Windows-XAML	261	0	SubmitNotifyWindowLayoutCompleted(UInt32 ApplicationViewState)		Rendering	SubmitNotifyWindowLayoutCompleted	Verbose		
-Microsoft-Windows-XAML	261	1	SubmitNotifyWindowLayoutCompleted_V1(UInt64 Window)		Rendering	SubmitNotifyWindowLayoutCompleted	Verbose		
-Microsoft-Windows-XAML	262	0	ProcessNotifyWindowLayoutCompleted(UInt32 ApplicationViewState)		Rendering	ProcessNotifyWindowLayoutCompleted	Verbose		
-Microsoft-Windows-XAML	262	1	ProcessNotifyWindowLayoutCompleted_V1(UInt64 Window)		Rendering	ProcessNotifyWindowLayoutCompleted	Verbose		
+Microsoft-Windows-XAML	260	0	SubmitNotifyWindowResized(UInt32 ApplicationViewState)		Rendering	SubmitNotifyWindowResized	Informational		
+Microsoft-Windows-XAML	261	0	SubmitNotifyWindowLayoutCompleted(UInt32 ApplicationViewState)		Rendering	SubmitNotifyWindowLayoutCompleted	Informational		
+Microsoft-Windows-XAML	261	1	SubmitNotifyWindowLayoutCompleted_V1(UInt64 Window)		Rendering	SubmitNotifyWindowLayoutCompleted	Informational		
+Microsoft-Windows-XAML	262	0	ProcessNotifyWindowLayoutCompleted(UInt32 ApplicationViewState)		Rendering	ProcessNotifyWindowLayoutCompleted	Informational		
+Microsoft-Windows-XAML	262	1	ProcessNotifyWindowLayoutCompleted_V1(UInt64 Window)		Rendering	ProcessNotifyWindowLayoutCompleted	Informational		
 Microsoft-Windows-XAML	263	0	RenderThreadSkipFrameNotDirty()		Rendering	RenderThreadSkipFrameNotDirty	Informational		
 Microsoft-Windows-XAML	266	0	PrimitiveCompositionTextureUpdateStart(UInt64 SourceSurface, UInt64 DestinationSurface, UInt32 UpdateType, UInt32 SourceX, UInt32 SourceY, UInt32 SourceWidth, UInt32 SourceHeight, UInt32 TargetOffsetX, UInt32 TargetOffsetY, UInt64 Pixels, UInt32 BitDepth)	Start	Rendering	PrimitiveCompositionTextureUpdate	Verbose		
 Microsoft-Windows-XAML	267	0	PrimitiveCompositionTextureUpdateStop()	Stop	Rendering	PrimitiveCompositionTextureUpdate	Verbose		
@@ -417,10 +417,10 @@ Microsoft-Windows-XAML	417	0	AccessKeyScopeBuilderConstructScopeStart()	Start	In
 Microsoft-Windows-XAML	418	0	AccessKeyScopeBuilderConstructScopeStop()	Stop	Input	AccessKeyScopeBuilderConstructScope	Informational		
 Microsoft-Windows-XAML	419	0	AccessKeyScopeInvokeStart()	Start	Input	AccessKeyScopeInvoke	Informational		
 Microsoft-Windows-XAML	420	0	AccessKeyScopeInvokeStop()	Stop	Input	AccessKeyScopeInvoke	Informational		
-Microsoft-Windows-XAML	421	0	ReleaseGraphicsDeviceResourcesStart(Boolean ReleaseDcompDevice, Boolean IsDeviceLost)	Start	Rendering	ReleaseGraphicsDeviceResources	Verbose		
-Microsoft-Windows-XAML	422	0	ReleaseGraphicsDeviceResourcesStop()	Stop	Rendering	ReleaseGraphicsDeviceResources	Verbose		
-Microsoft-Windows-XAML	423	0	RebuildGraphicsDeviceResourcesStart()	Start	Rendering	RebuildGraphicsDeviceResources	Verbose		
-Microsoft-Windows-XAML	424	0	RebuildGraphicsDeviceResourcesStop()	Stop	Rendering	RebuildGraphicsDeviceResources	Verbose		
+Microsoft-Windows-XAML	421	0	ReleaseGraphicsDeviceResourcesStart(Boolean ReleaseDcompDevice, Boolean IsDeviceLost)	Start	Rendering	ReleaseGraphicsDeviceResources	Informational		
+Microsoft-Windows-XAML	422	0	ReleaseGraphicsDeviceResourcesStop()	Stop	Rendering	ReleaseGraphicsDeviceResources	Informational		
+Microsoft-Windows-XAML	423	0	RebuildGraphicsDeviceResourcesStart()	Start	Rendering	RebuildGraphicsDeviceResources	Informational		
+Microsoft-Windows-XAML	424	0	RebuildGraphicsDeviceResourcesStop()	Stop	Rendering	RebuildGraphicsDeviceResources	Informational		
 Microsoft-Windows-XAML	425	0	AsyncImageDecoderFrameNotReady()		Images	AsyncImageDecoderFrameNotReady	Informational		
 Microsoft-Windows-XAML	426	0	PopulateStaticQuirkCacheStart()	Start		PopulateStaticQuirkCache	Informational		
 Microsoft-Windows-XAML	427	0	PopulateStaticQuirkCacheStop()	Stop		PopulateStaticQuirkCache	Informational		
@@ -579,3 +579,4 @@ Microsoft-Windows-XAML	579	0	CachedBoundsStats579(UInt32 RecalculatedCount, UInt
 Microsoft-Windows-XAML	580	0	CachedBoundsStats580(UInt32 RecalculatedCount, UInt32 ReusedCount)		Input	CachedBoundsStats	Informational		
 Microsoft-Windows-XAML	581	0	CreateViewportInteraction(Pointer UIElement, Boolean OnRootVisual)		Input	CreateViewportInteraction	Informational		
 Microsoft-Windows-XAML	582	0	SetViewportInteraction(Pointer UIElement, Pointer Interaction)		Input	SetViewportInteraction	Informational		
+Microsoft-Windows-XAML	583	0	UIThreadSchedulerState(UInt32 OldState, UInt32 NewState)		Core	UIThreadSchedulerState	Informational		

@@ -3,7 +3,9 @@ Microsoft-Windows-Immersive-Shell	101	0	ImmersiveShellStartupStart(UInt32 Result
 Microsoft-Windows-Immersive-Shell	102	0	ImmersiveShellStartupStop(UInt32 Result)	Stop	keyword_400000000000	ImmersiveShellStartup	Informational		
 Microsoft-Windows-Immersive-Shell	105	0	ImmersiveShellShutdown()			ImmersiveShellShutdown	Informational		
 Microsoft-Windows-Immersive-Shell	111	0	ImmersiveShellComponentStartupStart(UInt32 TableEntryIndex, UInt32 InitalizationStep, UInt32 Result)	Start		ImmersiveShellComponentStartup	Informational		
+Microsoft-Windows-Immersive-Shell	111	1	ImmersiveShellComponentStartupStart_V1(GUID ComponentClsid, UInt32 InitalizationStep, UInt32 Result)	Start		ImmersiveShellComponentStartup	Informational		
 Microsoft-Windows-Immersive-Shell	112	0	ImmersiveShellComponentStartupStop(UInt32 TableEntryIndex, UInt32 InitalizationStep, UInt32 Result)	Stop		ImmersiveShellComponentStartup	Informational		
+Microsoft-Windows-Immersive-Shell	112	1	ImmersiveShellComponentStartupStop_V1(GUID ComponentClsid, UInt32 InitalizationStep, UInt32 Result)	Stop		ImmersiveShellComponentStartup	Informational		
 Microsoft-Windows-Immersive-Shell	121	0	ImmersiveShellAppManagerModeNotificationStart(Int32 SystemModeFrom, Int32 SystemSubModeFrom, Int32 SystemModeTo, Int32 SystemSubModeTo)	Start		ImmersiveShellAppManagerModeNotification	Informational		
 Microsoft-Windows-Immersive-Shell	122	0	ImmersiveShellAppManagerModeNotificationStop(Int32 SystemModeFrom, Int32 SystemSubModeFrom, Int32 SystemModeTo, Int32 SystemSubModeTo)	Stop		ImmersiveShellAppManagerModeNotification	Informational		
 Microsoft-Windows-Immersive-Shell	123	0	ImmersiveShellAppManagerZbandNotificationStart(Int32 ZbandFrom, Int32 ZbandTo)	Start		ImmersiveShellAppManagerZbandNotification	Informational		

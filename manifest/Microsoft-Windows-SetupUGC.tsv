@@ -1,7 +1,7 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-SetupUGC	1001	0	RunSetupUGCStart(UnicodeString CommandLine)	Start	keyPerformance	RunSetupUGC	Informational		
-Microsoft-Windows-SetupUGC	1002	0	RunSetupUGCStop(UInt32 ErrorCode)	Stop	keyPerformance	RunSetupUGC	Informational		
-Microsoft-Windows-SetupUGC	2001	0	RunningProcessorsforPassStart(UnicodeString Pass)	Start	keyPerformance	RunningProcessorsforPass	Informational		
-Microsoft-Windows-SetupUGC	2002	0	RunningProcessorsforPassStop(UInt32 ErrorCode)	Stop	keyPerformance	RunningProcessorsforPass	Informational		
-Microsoft-Windows-SetupUGC	3001	0	RunningProcessorStart(UnicodeString Processor)	Start	keyPerformance	RunningProcessor	Informational		
-Microsoft-Windows-SetupUGC	3002	0	RunningProcessorStop(UInt32 ErrorCode)	Stop	keyPerformance	RunningProcessor	Informational		
+Microsoft-Windows-SetupUGC	1001	0	RunSetupUGCStart(UnicodeString CommandLine)	Start	keyPerformance keyword_800000000000	RunSetupUGC	Informational		
+Microsoft-Windows-SetupUGC	1002	0	RunSetupUGCStop(UInt32 ErrorCode)	Stop	keyPerformance keyword_800000000000	RunSetupUGC	Informational		
+Microsoft-Windows-SetupUGC	2001	0	RunningProcessorsforPassStart(UnicodeString Pass)	Start	keyPerformance keyword_400000000000	RunningProcessorsforPass	Informational		
+Microsoft-Windows-SetupUGC	2002	0	RunningProcessorsforPassStop(UInt32 ErrorCode)	Stop	keyPerformance keyword_400000000000	RunningProcessorsforPass	Informational		
+Microsoft-Windows-SetupUGC	3001	0	RunningProcessorStart(UnicodeString Processor)	Start	keyPerformance keyword_400000000000	RunningProcessor	Informational		
+Microsoft-Windows-SetupUGC	3002	0	RunningProcessorStop(UInt32 ErrorCode)	Stop	keyPerformance keyword_400000000000	RunningProcessor	Informational		

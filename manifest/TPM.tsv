@@ -14,4 +14,9 @@ TPM	23	0	task_023(UnicodeString UserSID)			task_0	Error
 TPM	24	0	task_024(UInt32 statusEnabled, UInt32 statusActive)			task_0	Informational		
 TPM	25	0	task_025(HexInt32 locationCode, UInt32 Data)			task_0	Error		
 TPM	26	0	task_026(HexInt32 locationCode)			task_0	Error		
-TPM	27	0	task_027(HexInt32 locationCode, HexInt32 TPM_PT_MANUFACTURER, HexInt32 TPM_PT_VENDOR_STRING_1, HexInt32 TPM_PT_VEDNOR_STRING_2, HexInt32 TPM_PT_VEDNOR_STRING_3, HexInt32 TPM_PT_VEDNOR_STRING_4, HexInt32 TPM_PT_VEDNOR_TPM_TYPE, HexInt32 TPM_PT_FIRMWARE_VERSION_1, HexInt32 TPM_PT_FIRMWARE_VERSION_2, UInt16 DataSize, UInt8 GetTestResult_Data)			task_0	Error		
+TPM	27	0	task_027(HexInt32 locationCode, HexInt32 TPM_PT_MANUFACTURER, HexInt32 TPM_PT_VENDOR_STRING_1, HexInt32 TPM_PT_VENDOR_STRING_2, HexInt32 TPM_PT_VENDOR_STRING_3, HexInt32 TPM_PT_VENDOR_STRING_4, HexInt32 TPM_PT_VENDOR_TPM_TYPE, HexInt32 TPM_PT_FIRMWARE_VERSION_1, HexInt32 TPM_PT_FIRMWARE_VERSION_2, UInt16 DataSize, UInt8 GetTestResult_Data)			task_0	Error		
+TPM	28	0	task_028(UInt32 SrkSymKeyPolicyValue, UInt32 TpmAes256Capability, UInt32 ActualSymBitsUsed, UInt32 SrkAsymKeyPolicyValue, UInt32 TpmRsa3kCapability, UInt32 ActualAsymBitsUsed)			task_0	Informational		
+TPM	29	0	task_029(UInt32 SrkSymKeyPolicyValue, UInt32 TpmAes256Capability, UInt32 ActualSymBitsUsed, UInt32 SrkAsymKeyPolicyValue, UInt32 TpmRsa3kCapability, UInt32 ActualAsymBitsUsed)			task_0	Error		
+TPM	30	0	task_030(HexInt32 locationCode, UInt32 resetCountBefore, UInt32 restartCountBefore, UInt32 resetCountAfter, UInt32 restartCountAfter)			task_0	Warning		
+TPM	31	0	task_031(UnicodeString functionName, UInt32 status)			task_0	Informational		
+TPM	32	0	task_032(UnicodeString description, UInt32 status)			task_0	Error		

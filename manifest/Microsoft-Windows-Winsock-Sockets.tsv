@@ -1,0 +1,17 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Winsock-Sockets	1	0	SockCreateStart()	Start	WINSOCK_API_BOUNDARY WINSOCK_SOCKET_LIFETIME	SockCreate	Verbose		
+Microsoft-Windows-Winsock-Sockets	2	0	SockCreateStop(HexInt32 ErrorCode, Pointer Socket, UInt32 AddressFamily, UInt32 SocketType, UInt32 Protocol, UInt32 ProcessId, HexInt32 FailurePoint)	Stop	WINSOCK_API_BOUNDARY WINSOCK_SOCKET_LIFETIME	SockCreate	Informational		
+Microsoft-Windows-Winsock-Sockets	3	0	SockCloseStart()	Start	WINSOCK_API_BOUNDARY WINSOCK_SOCKET_LIFETIME	SockClose	Verbose		
+Microsoft-Windows-Winsock-Sockets	4	0	SockCloseStop(HexInt32 ErrorCode, Pointer Socket, Boolean IsProviderSocket, HexInt32 FailurePoint)	Stop	WINSOCK_API_BOUNDARY WINSOCK_SOCKET_LIFETIME	SockClose	Informational		
+Microsoft-Windows-Winsock-Sockets	5	0	SockAcceptStart()	Start	WINSOCK_API_BOUNDARY WINSOCK_SOCKET_LIFETIME	SockAccept	Verbose		
+Microsoft-Windows-Winsock-Sockets	6	0	SockAcceptStop(HexInt32 ErrorCode, Pointer SocketAccepted, Pointer SocketListening, UInt32 ProcessId, HexInt32 FailurePoint)	Stop	WINSOCK_API_BOUNDARY WINSOCK_SOCKET_LIFETIME	SockAccept	Informational		
+Microsoft-Windows-Winsock-Sockets	7	0	SockSetOptStart()	Start	WINSOCK_API_BOUNDARY WINSOCK_SOCKET_CONFIG	SockSetOpt	Verbose		
+Microsoft-Windows-Winsock-Sockets	8	0	SockSetOptStop(HexInt32 ErrorCode, Pointer Socket, Int32 Level, Int32 OptName, UInt32 OptLen, Binary OptVal, HexInt32 FailurePoint)	Stop	WINSOCK_API_BOUNDARY WINSOCK_SOCKET_CONFIG	SockSetOpt	Informational		
+Microsoft-Windows-Winsock-Sockets	9	0	SockConnectStart()	Start	WINSOCK_API_BOUNDARY WINSOCK_SOCKET_CONFIG	SockConnect	Verbose		
+Microsoft-Windows-Winsock-Sockets	10	0	SockConnectStop(HexInt32 ErrorCode, Pointer Socket, UInt32 AddressLength, Binary Address, HexInt32 FailurePoint)	Stop	WINSOCK_API_BOUNDARY WINSOCK_SOCKET_CONFIG	SockConnect	Informational		
+Microsoft-Windows-Winsock-Sockets	11	0	SockBindStart()	Start	WINSOCK_API_BOUNDARY WINSOCK_SOCKET_CONFIG	SockBind	Verbose		
+Microsoft-Windows-Winsock-Sockets	12	0	SockBindStop(HexInt32 ErrorCode, Pointer Socket, UInt32 AddressLength, Binary Address, HexInt32 FailurePoint)	Stop	WINSOCK_API_BOUNDARY WINSOCK_SOCKET_CONFIG	SockBind	Informational		
+Microsoft-Windows-Winsock-Sockets	13	0	SockGetOptStart()	Start	WINSOCK_API_BOUNDARY WINSOCK_SOCKET_CONFIG	SockGetOpt	Verbose		
+Microsoft-Windows-Winsock-Sockets	14	0	SockGetOptStop(HexInt32 ErrorCode, Pointer Socket, Int32 Level, Int32 OptName, UInt32 OptLen, Binary OptVal, HexInt32 FailurePoint)	Stop	WINSOCK_API_BOUNDARY WINSOCK_SOCKET_CONFIG	SockGetOpt	Informational		
+Microsoft-Windows-Winsock-Sockets	15	0	SockListenStart()	Start	WINSOCK_API_BOUNDARY WINSOCK_SOCKET_CONFIG	SockListen	Verbose		
+Microsoft-Windows-Winsock-Sockets	16	0	SockListenStop(HexInt32 ErrorCode, Pointer Socket, Int32 Backlog, HexInt32 FailurePoint)	Stop	WINSOCK_API_BOUNDARY WINSOCK_SOCKET_CONFIG	SockListen	Informational		

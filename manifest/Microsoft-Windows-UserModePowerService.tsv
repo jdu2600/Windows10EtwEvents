@@ -2,7 +2,9 @@ provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channe
 Microsoft-Windows-UserModePowerService	1	0	RundownPlatformRole(UInt32 PlatformRole)			RundownPlatformRole	Informational		
 Microsoft-Windows-UserModePowerService	2	0	RundownPowerScheme(GUID SchemeGuid)			RundownPowerScheme	Informational		
 Microsoft-Windows-UserModePowerService	3	0	RundownAcPowerSetting(GUID SubgroupGuid, GUID SettingGuid, UInt32 ValueIndex, UInt32 Type, UInt32 DataSize, Binary Data)			RundownAcPowerSetting	Informational		
+Microsoft-Windows-UserModePowerService	3	1	RundownAcPowerSetting_V1(GUID SubgroupGuid, GUID SettingGuid, UInt32 ValueIndex, UInt32 Type, UInt32 DataSize, Binary Data, UInt32 Altitude)			RundownAcPowerSetting	Informational		
 Microsoft-Windows-UserModePowerService	4	0	RundownDcPowerSetting(GUID SubgroupGuid, GUID SettingGuid, UInt32 ValueIndex, UInt32 Type, UInt32 DataSize, Binary Data)			RundownDcPowerSetting	Informational		
+Microsoft-Windows-UserModePowerService	4	1	RundownDcPowerSetting_V1(GUID SubgroupGuid, GUID SettingGuid, UInt32 ValueIndex, UInt32 Type, UInt32 DataSize, Binary Data, UInt32 Altitude)			RundownDcPowerSetting	Informational		
 Microsoft-Windows-UserModePowerService	5	0	AdaptiveDimTimeout(UInt32 Timeout)			AdaptiveDimTimeout	Informational		
 Microsoft-Windows-UserModePowerService	7	0	task_0(UnicodeString Name)			task_0	Informational		
 Microsoft-Windows-UserModePowerService	8	0	RundownBatteryInformation(UnicodeString DeviceName, UnicodeString ManufacturerName, UInt8 ManufactureDay, UInt8 ManufactureMonth, UInt16 ManufactureYear, UnicodeString SerialNumber, UInt32 Capabilities, UInt8 Technology, Binary Pad, AnsiString Chemistry, UInt32 DesignCapacity, UInt32 FullChargeCapacity, UInt32 DefaultAlert1, UInt32 DefaultAlert2, UInt32 CriticalBias, UInt32 CycleCount, UInt32 GranularityScaleCount, SID GranularityScale, UnicodeString UniqueId)			RundownBatteryInformation	Informational		
@@ -16,6 +18,7 @@ Microsoft-Windows-UserModePowerService	15	0	RundownOverrideConfiguration(UInt32 
 Microsoft-Windows-UserModePowerService	16	0	RundownOverridePowerSetting(GUID SchemeGuid, GUID SubgroupGuid, GUID SettingGuid, UInt32 Flags, UInt32 DataType, UInt32 DataSize, Binary Data)			RundownOverridePowerSetting	Informational		
 Microsoft-Windows-UserModePowerService	16	1	RundownOverridePowerSetting_V1(GUID SchemeGuid, GUID SubgroupGuid, GUID SettingGuid, UInt32 Flags, UInt32 DataType, UInt32 DataSize, Binary Data, GUID ProfileGuid)			RundownOverridePowerSetting	Informational		
 Microsoft-Windows-UserModePowerService	17	0	RundownPowerProfileSetting(GUID ProfileGuid, GUID SubgroupGuid, GUID SettingGuid, GUID SchemePersonalityGuid, UInt32 Flags, UInt32 ValueIndex, UInt32 Type, UInt32 DataSize, Binary Data)			RundownPowerProfileSetting	Informational		
+Microsoft-Windows-UserModePowerService	17	1	RundownPowerProfileSetting_V1(GUID ProfileGuid, GUID SubgroupGuid, GUID SettingGuid, GUID SchemePersonalityGuid, UInt32 Flags, UInt32 ValueIndex, UInt32 Type, UInt32 DataSize, Binary Data, UInt32 Altitude)			RundownPowerProfileSetting	Informational		
 Microsoft-Windows-UserModePowerService	18	0	EnergyMeterData(Pointer MeterId, UInt64 AbsoluteEnergy, UInt64 AbsoluteTime)		EnergyMeter	EnergyMeterData	Informational		
 Microsoft-Windows-UserModePowerService	19	0	EnergyMeterMetaData(Pointer MeterId, UInt64 SamplingPeriod, UInt32 ChannelNameLength, UnicodeString ChannelName)		EnergyMeter	EnergyMeterMetaData	Informational		
 Microsoft-Windows-UserModePowerService	22	0	ProvEngineTurnApply(UInt32 Turn)			ProvEngineTurnApply	Informational		
@@ -55,6 +58,7 @@ Microsoft-Windows-UserModePowerService	47	0	AdaptiveStandbySrumFailure(UInt32 Ac
 Microsoft-Windows-UserModePowerService	48	0	GpuAdapterCount(UInt8 Id, UInt8 GpuCount)		KwSleepStudy	GpuAdapterCount	Informational		
 Microsoft-Windows-UserModePowerService	48	1	GpuAdapterCount_V1(UInt8 Id, UInt8 GpuCount, UInt64 IdV2)		KwSleepStudy	GpuAdapterCount	Informational		
 Microsoft-Windows-UserModePowerService	49	0	RundownOverlaySchemePowerSetting(GUID OverlaySchemeGuid, GUID SubgroupGuid, GUID SettingGuid, UInt32 Flags, UInt32 ValueIndex, UInt32 Type, UInt32 DataSize, Binary Data)			RundownOverlaySchemePowerSetting	Informational		
+Microsoft-Windows-UserModePowerService	49	1	RundownOverlaySchemePowerSetting_V1(GUID OverlaySchemeGuid, GUID SubgroupGuid, GUID SettingGuid, UInt32 Flags, UInt32 ValueIndex, UInt32 Type, UInt32 DataSize, Binary Data, UInt32 Altitude)			RundownOverlaySchemePowerSetting	Informational		
 Microsoft-Windows-UserModePowerService	50	0	RundownActualOverlayPowerScheme(GUID SchemeGuid)			RundownActualOverlayPowerScheme	Informational		
 Microsoft-Windows-UserModePowerService	50	1	RundownActualOverlayPowerScheme_V1(GUID SchemeGuid, Boolean AcOverlay)			RundownActualOverlayPowerScheme	Informational		
 Microsoft-Windows-UserModePowerService	51	0	OverlayPowerSchemeChanged(UnicodeString ProcessPath, UInt32 ProcessPid, GUID OldSchemeGuid, GUID NewSchemeGuid)			OverlayPowerSchemeChanged	Informational		

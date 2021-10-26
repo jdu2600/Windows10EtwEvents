@@ -4,8 +4,8 @@ Microsoft-Windows-Direct3DShaderCache	2	0	ShaderCacheStop(Pointer Cache, UInt32 
 Microsoft-Windows-Direct3DShaderCache	3	0	ShaderCacheDCStart(Pointer Cache, UInt32 Type, UInt32 Flags)	DC_Start	Objects	ShaderCache	Always		
 Microsoft-Windows-Direct3DShaderCache	4	0	CreateShaderCacheStart(UInt32 Flags, GUID GUID, UnicodeString Filename, UInt32 FileCreateDisposition, UInt32 Mode, UInt32 MaximumInMemoryCacheSizeBytes, UInt32 MaximumInMemoryCacheEntries, UInt32 MaximumWriteQueueBytes, UInt32 MaximumWriteQueueNumEntries, UInt32 MaximumValueFileSizeBytes)	Start	APIs Profiling	CreateShaderCache	Always		
 Microsoft-Windows-Direct3DShaderCache	5	0	CreateShaderCacheStop(Int32 Return, Pointer Cache)	Stop	APIs Profiling	CreateShaderCache	Always		
-Microsoft-Windows-Direct3DShaderCache	6	0	DestroyShaderCacheStart(Pointer Cache)	Start	APIs Profiling	DestroyShaderCache	Always		
-Microsoft-Windows-Direct3DShaderCache	7	0	DestroyShaderCacheStop()	Stop	APIs Profiling	DestroyShaderCache	Always		
+Microsoft-Windows-Direct3DShaderCache	6	0	DestroyShaderCacheStart(Pointer Cache, Boolean DeleteFiles)	Start	APIs Profiling	DestroyShaderCache	Always		
+Microsoft-Windows-Direct3DShaderCache	7	0	DestroyShaderCacheStop(Int32 Return)	Stop	APIs Profiling	DestroyShaderCache	Always		
 Microsoft-Windows-Direct3DShaderCache	8	0	FindValueStart(Pointer Cache, UInt32 NumKeyParts, UInt8 KeyParts, Binary PrecomputedHash)	Start	APIs Profiling	FindValue	Always		
 Microsoft-Windows-Direct3DShaderCache	9	0	FindValueStop(Int32 Return, Pointer FoundValue, UInt32 FoundValueSize)	Stop	APIs Profiling	FindValue	Always		
 Microsoft-Windows-Direct3DShaderCache	10	0	AddValueStart(Pointer Cache, UInt32 NumKeyParts, UInt16 KeyParts, Binary PrecomputedHash, Pointer Value, UInt32 ValueSize)	Start	APIs Profiling	AddValue	Always		
@@ -14,6 +14,8 @@ Microsoft-Windows-Direct3DShaderCache	12	0	FreeFoundValueStart(Pointer Value, UI
 Microsoft-Windows-Direct3DShaderCache	13	0	FreeFoundValueStop()	Stop	APIs Profiling	FreeFoundValue	Always		
 Microsoft-Windows-Direct3DShaderCache	14	0	FlushStart(Pointer Cache)	Start	APIs Profiling	Flush	Always		
 Microsoft-Windows-Direct3DShaderCache	15	0	FlushStop(Int32 Return)	Stop	APIs Profiling	Flush	Always		
+Microsoft-Windows-Direct3DShaderCache	16	0	ClearStart(Pointer Cache)	Start	APIs Profiling	Clear	Always		
+Microsoft-Windows-Direct3DShaderCache	17	0	ClearStop(Int32 Return)	Stop	APIs Profiling	Clear	Always		
 Microsoft-Windows-Direct3DShaderCache	101	0	UWPSuspend()		Events Profiling	UWPSuspend	Informational		
 Microsoft-Windows-Direct3DShaderCache	102	0	L1Full(UInt32 NumEntries, UInt64 CurrentMemoryUsage, UInt64 MemoryBudget)		Events	L1Full	Warning		
 Microsoft-Windows-Direct3DShaderCache	103	0	L1AddStart(UInt32 NumEntries, UInt64 CurrentMemoryUsage, UInt32 DeltaSize)	Start	Events	L1Add	Informational		

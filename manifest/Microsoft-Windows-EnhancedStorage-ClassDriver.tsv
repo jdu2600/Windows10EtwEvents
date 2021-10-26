@@ -1,0 +1,7 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-EnhancedStorage-ClassDriver	101	1	task_0_V1(UInt32 PortNumber, UInt8 PathID, UInt8 TargetID, UInt8 LUN, GUID ClassDeviceGuid, UInt8 DeviceType, UInt8 OldState, UInt8 NewState)			task_0	Informational		
+Microsoft-Windows-EnhancedStorage-ClassDriver	102	1	task_0102_V1(UInt32 PortNumber, UInt8 PathID, UInt8 TargetID, UInt8 LUN, GUID ClassDeviceGuid, UnicodeString Command, HexInt32 Status, UnicodeString Parameter1Name, UInt64 Parameter1Value, UnicodeString Parameter2Name, UInt64 Parameter2Value, UnicodeString Parameter3Name, UInt64 Parameter3Value, UnicodeString Parameter4Name, UInt64 Parameter4Value)			task_0	Warning		
+Microsoft-Windows-EnhancedStorage-ClassDriver	103	1	task_0103_V1(UInt32 PortNumber, UInt8 PathID, UInt8 TargetID, UInt8 LUN, GUID ClassDeviceGuid, UInt8 DeviceType, UInt8 DeviceState)			task_0	Error		
+Microsoft-Windows-EnhancedStorage-ClassDriver	104	1	task_0104_V1(UInt32 PortNumber, UInt8 PathID, UInt8 TargetID, UInt8 LUN, GUID ClassDeviceGuid, UInt8 DeviceType, UInt8 DeviceState)			task_0	Informational		
+Microsoft-Windows-EnhancedStorage-ClassDriver	105	1	task_0105_V1(UInt32 PortNumber, UInt8 PathID, UInt8 TargetID, UInt8 LUN, GUID ClassDeviceGuid, UInt8 DeviceType, UInt8 DeviceState)			task_0	Informational		
+Microsoft-Windows-EnhancedStorage-ClassDriver	106	1	task_0106_V1(UInt32 PortNumber, UInt8 PathID, UInt8 TargetID, UInt8 LUN, GUID ClassDeviceGuid, UInt8 DevicePdoCaps)			task_0	Informational		

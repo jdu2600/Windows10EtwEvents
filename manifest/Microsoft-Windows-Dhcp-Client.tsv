@@ -9,6 +9,38 @@ Microsoft-Windows-Dhcp-Client	1006	0	AddressConfigurationStateEventAutoconfigura
 Microsoft-Windows-Dhcp-Client	1007	0	AddressConfigurationStateEventAutoconfigurationSuccess(UInt32 HWLength, Binary HWAddress, UInt32 Address)	AutoconfigurationSuccess		AddressConfigurationStateEvent	Informational		
 Microsoft-Windows-Dhcp-Client	1008	0	AddressConfigurationStateEventInitNetworkInterfaceFailed(UInt32 StatusCode)	InitNetworkInterfaceFailed		AddressConfigurationStateEvent	Error		
 Microsoft-Windows-Dhcp-Client	1018	0	AddressConfigurationStateEventDhcpv6InitFailed(UInt32 StatusCode)	Dhcpv6InitFailed		AddressConfigurationStateEvent	Error		
+Microsoft-Windows-Dhcp-Client	1019	0	task_0(UnicodeString AdapterName)			task_0	Informational		
+Microsoft-Windows-Dhcp-Client	1020	0	task_01020(UnicodeString AdapterName)			task_0	Informational		
+Microsoft-Windows-Dhcp-Client	1021	0	task_01021()			task_0	Informational		
+Microsoft-Windows-Dhcp-Client	1022	0	task_01022(UInt32 Address, UnicodeString AdapterName, UInt32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-Dhcp-Client	1023	0	task_01023(UInt32 Address, UnicodeString AdapterName, UInt32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-Dhcp-Client	1024	0	task_01024(UnicodeString AdapterName)			task_0	Informational		
+Microsoft-Windows-Dhcp-Client	1025	0	task_01025(UnicodeString AdapterName, UInt32 TimeToWaitLeft)			task_0	Informational		
+Microsoft-Windows-Dhcp-Client	1026	0	task_01026(UnicodeString AdapterName, UInt32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-Dhcp-Client	1027	0	task_01027(UnicodeString AdapterName)			task_0	Informational		
+Microsoft-Windows-Dhcp-Client	1028	0	task_01028(UnicodeString AdapterName)			task_0	Informational		
+Microsoft-Windows-Dhcp-Client	1029	0	task_01029(UnicodeString AdapterName)			task_0	Informational		
+Microsoft-Windows-Dhcp-Client	1030	0	task_01030(UnicodeString AdapterName, HexInt64 InterfaceLUID)			task_0	Informational		
+Microsoft-Windows-Dhcp-Client	1031	0	task_01031(UnicodeString AdapterName)			task_0	Informational		
+Microsoft-Windows-Dhcp-Client	1032	0	task_01032(UnicodeString AdapterName)			task_0	Informational		
+Microsoft-Windows-Dhcp-Client	1033	0	task_01033(UnicodeString AdapterName, UInt32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-Dhcp-Client	1034	0	task_01034(UnicodeString AdapterName, UInt32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-Dhcp-Client	1035	0	AddressConfigurationStateEventRouteAdded(UInt32 Address1, UInt32 Address2, UInt32 Address3, UInt32 Address4)	RouteAdded		AddressConfigurationStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	1036	0	AddressConfigurationStateEventRouteDeleted(UInt32 Address1, UInt32 Address2, UInt32 Address3, UInt32 Address4)	RouteDeleted		AddressConfigurationStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	1037	0	task_01037(UnicodeString AdapterName)			task_0	Informational		
+Microsoft-Windows-Dhcp-Client	1038	0	task_01038(UnicodeString AdapterName)			task_0	Informational		
+Microsoft-Windows-Dhcp-Client	1039	0	task_01039(UnicodeString AdapterName)			task_0	Informational		
+Microsoft-Windows-Dhcp-Client	1040	0	task_01040(UInt32 Address)			task_0	Informational		
+Microsoft-Windows-Dhcp-Client	1041	0	task_01041(UInt32 Address)			task_0	Informational		
+Microsoft-Windows-Dhcp-Client	1042	0	task_01042(UInt32 Address)			task_0	Informational		
+Microsoft-Windows-Dhcp-Client	1043	0	task_01043(UInt32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-Dhcp-Client	1044	0	task_01044(UInt32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-Dhcp-Client	1045	0	task_01045(UInt32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-Dhcp-Client	1046	0	task_01046()			task_0	Informational		
+Microsoft-Windows-Dhcp-Client	1047	0	task_01047(UInt32 ErrorCode, UInt32 ConfigNameType)			task_0	Informational		
+Microsoft-Windows-Dhcp-Client	1048	0	task_01048(UnicodeString AdapterName, UInt32 Address, UInt32 Flags, UInt32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-Dhcp-Client	1049	0	task_01049(UnicodeString AdapterName, UInt32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-Dhcp-Client	1050	0	task_01050(UInt32 ErrorCode)			task_0	Informational		
 Microsoft-Windows-Dhcp-Client	50001	0	MediaStateEventMediaConnect(UInt32 InterfaceId)	MediaConnect		MediaStateEvent	Informational		
 Microsoft-Windows-Dhcp-Client	50002	0	MediaStateEventMediaDisconnect(UInt32 InterfaceId)	MediaDisconnect		MediaStateEvent	Informational		
 Microsoft-Windows-Dhcp-Client	50003	0	MediaStateEventMediaReconnect(UInt32 InterfaceId)	MediaReconnect		MediaStateEvent	Informational		
@@ -54,8 +86,8 @@ Microsoft-Windows-Dhcp-Client	50053	0	ProtocolStateEventNetworkError(UInt32 Inte
 Microsoft-Windows-Dhcp-Client	50055	0	AddressConfigurationStateEventGatewayReachable(UInt32 Address, UInt32 InterfaceId)	GatewayReachable		AddressConfigurationStateEvent	Informational		
 Microsoft-Windows-Dhcp-Client	50056	0	AddressConfigurationStateEventGatewayUnreachable(UInt32 InterfaceId)	GatewayUnreachable		AddressConfigurationStateEvent	Error		
 Microsoft-Windows-Dhcp-Client	50058	0	AddressConfigurationStateEventSuccessfulLease()	SuccessfulLease		AddressConfigurationStateEvent	Informational		
-Microsoft-Windows-Dhcp-Client	50059	0	AddressConfigurationStateEventRouteAdded(UnicodeString Str1, UnicodeString Str2, UnicodeString Str3, UnicodeString Str4)	RouteAdded		AddressConfigurationStateEvent	Informational		
-Microsoft-Windows-Dhcp-Client	50060	0	AddressConfigurationStateEventRouteDeleted(UnicodeString Str1, UnicodeString Str2, UnicodeString Str3, UnicodeString Str4)	RouteDeleted		AddressConfigurationStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50059	0	AddressConfigurationStateEventRouteAdded50059(UnicodeString Str1, UnicodeString Str2, UnicodeString Str3, UnicodeString Str4)	RouteAdded		AddressConfigurationStateEvent	Informational		
+Microsoft-Windows-Dhcp-Client	50060	0	AddressConfigurationStateEventRouteDeleted50060(UnicodeString Str1, UnicodeString Str2, UnicodeString Str3, UnicodeString Str4)	RouteDeleted		AddressConfigurationStateEvent	Informational		
 Microsoft-Windows-Dhcp-Client	50061	0	ProtocolStateEventOfferReceivedForDiagnostics(UInt32 InterfaceId)	OfferReceivedForDiagnostics		ProtocolStateEvent	Informational		
 Microsoft-Windows-Dhcp-Client	50062	0	AddressConfigurationStateEventStartGatewayReachabilityTest(UInt32 Address, UInt32 InterfaceId)	StartGatewayReachabilityTest		AddressConfigurationStateEvent	Informational		
 Microsoft-Windows-Dhcp-Client	50063	0	AddressConfigurationStateEventNLANotified(UInt32 InterfaceId)	NLANotified		AddressConfigurationStateEvent	Informational		

@@ -67,7 +67,7 @@ Microsoft-Windows-BitLocker-API	813	0	task_0813(UnicodeString VariableName)			ta
 Microsoft-Windows-BitLocker-API	814	0	task_0814()			task_0	Warning		
 Microsoft-Windows-BitLocker-API	815	0	task_0815()			task_0	Warning		
 Microsoft-Windows-BitLocker-API	816	0	task_0816()			task_0	Warning		
-Microsoft-Windows-BitLocker-API	817	0	task_0817(UInt32 PCRBitmap, UInt32 PCRBitmapSource, UInt32 PCRValuesSize, Binary PCRValues, UInt32 FilteredTcgLogSize, Binary FilteredTcgLog)			task_0	Informational		
+Microsoft-Windows-BitLocker-API	817	0	task_0817(UInt32 PCRBitmap, UInt32 PCRBitmapSource, UInt32 PCRValuesSize, Binary PCRValues, UInt32 FilteredTcgLogSize, Binary FilteredTcgLog, UInt16 TpmSrkAesStrengthInBits)			task_0	Informational		
 Microsoft-Windows-BitLocker-API	818	0	task_0818(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, Int32 ErrorCode)			task_0	Warning		
 Microsoft-Windows-BitLocker-API	819	0	task_0819(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, Int32 ErrorCode)			task_0	Error		
 Microsoft-Windows-BitLocker-API	820	0	task_0820(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, Int32 ErrorCode)			task_0	Error		
@@ -84,7 +84,7 @@ Microsoft-Windows-BitLocker-API	830	0	task_0830()			task_0	Warning
 Microsoft-Windows-BitLocker-API	831	0	task_0831(Int32 JsonErrorCode, UnicodeString LocalizedJsonError)			task_0	Error		
 Microsoft-Windows-BitLocker-API	832	0	task_0832(Int32 ErrorCode)			task_0	Warning		
 Microsoft-Windows-BitLocker-API	833	0	task_0833()			task_0	Warning		
-Microsoft-Windows-BitLocker-API	834	0	task_0834(UInt32 PCRBitmap, UInt32 PCRBitmapSource, UInt32 PCRValuesSize, Binary PCRValues, UInt32 FilteredTcgLogSize, Binary FilteredTcgLog)			task_0	Informational		
+Microsoft-Windows-BitLocker-API	834	0	task_0834(UInt32 PCRBitmap, UInt32 PCRBitmapSource, UInt32 PCRValuesSize, Binary PCRValues, UInt32 FilteredTcgLogSize, Binary FilteredTcgLog, UInt16 TpmSrkAesStrengthInBits)			task_0	Informational		
 Microsoft-Windows-BitLocker-API	835	0	task_0835()			task_0	Warning		
 Microsoft-Windows-BitLocker-API	836	0	task_0836()			task_0	Warning		
 Microsoft-Windows-BitLocker-API	837	0	task_0837()			task_0	Warning		
@@ -97,7 +97,7 @@ Microsoft-Windows-BitLocker-API	843	0	task_0843(GUID IdentificationGUID, SYSTEMT
 Microsoft-Windows-BitLocker-API	844	0	task_0844(Int32 ErrorCode)			task_0	Error		
 Microsoft-Windows-BitLocker-API	845	0	task_0845(UnicodeString VolumeMountPoint, GUID ProtectorGUID, GUID TraceGUID)			task_0	Informational		
 Microsoft-Windows-BitLocker-API	846	0	task_0846(UnicodeString VolumeMountPoint, GUID TraceGUID, Int32 ErrorCode)			task_0	Error		
-Microsoft-Windows-BitLocker-API	847	0	task_0847(Int32 JsonErrorCode, UnicodeString LocalizedJsonError)			task_0	Error		
+Microsoft-Windows-BitLocker-API	847	0	task_0847(UnicodeString JsonRequestId, UnicodeString JsonTime, UnicodeString JsonErrorCode, UnicodeString JsonSubCode, UnicodeString JsonMessage)			task_0	Error		
 Microsoft-Windows-BitLocker-API	848	0	task_0848(Int32 ErrorCode)			task_0	Error		
 Microsoft-Windows-BitLocker-API	849	0	task_0849(Int32 ErrorCode)			task_0	Error		
 Microsoft-Windows-BitLocker-API	850	0	task_0850(Int32 ErrorCode)			task_0	Informational		
@@ -142,3 +142,25 @@ Microsoft-Windows-BitLocker-API	4120	0	task_04120()			task_0	Error
 Microsoft-Windows-BitLocker-API	4121	0	task_04121()			task_0	Error		
 Microsoft-Windows-BitLocker-API	4122	0	task_04122(UnicodeString LocalizedText)			task_0	Informational		
 Microsoft-Windows-BitLocker-API	4123	0	task_04123(UnicodeString VolumeMountPoint, UnicodeString ProtectorGUIDs, GUID TraceGUID)			task_0	Informational		
+Microsoft-Windows-BitLocker-API	4124	0	task_04124()			task_0	Informational		
+Microsoft-Windows-BitLocker-API	4125	0	task_04125(HexInt32 Data)			task_0	Informational		
+Microsoft-Windows-BitLocker-API	4126	0	task_04126(HexInt32 Data1, HexInt32 Data2)			task_0	Informational		
+Microsoft-Windows-BitLocker-API	4127	0	task_04127(HexInt32 Data)			task_0	Informational		
+Microsoft-Windows-BitLocker-API	4128	0	task_04128(HexInt32 Data1, HexInt32 Data2)			task_0	Informational		
+Microsoft-Windows-BitLocker-API	4129	0	task_04129(UnicodeString HSTIImplID, HexInt32 Data1, HexInt32 Data2)			task_0	Informational		
+Microsoft-Windows-BitLocker-API	4130	0	task_04130(UnicodeString HSTIImplID, HexInt32 Data)			task_0	Informational		
+Microsoft-Windows-BitLocker-API	4131	0	task_04131(UnicodeString HSTIImplID, Boolean BoolData)			task_0	Informational		
+Microsoft-Windows-BitLocker-API	4132	0	task_04132(UnicodeString HSTIImplID, Boolean BoolData)			task_0	Error		
+Microsoft-Windows-BitLocker-API	4133	0	task_04133()			task_0	Error		
+Microsoft-Windows-BitLocker-API	4134	0	task_04134(UnicodeString HSTIImplID)			task_0	Warning		
+Microsoft-Windows-BitLocker-API	4135	0	task_04135(Boolean BoolData)			task_0	Informational		
+Microsoft-Windows-BitLocker-API	4136	0	task_04136(UInt32 SecFeatureIndex, UInt8 Data)			task_0	Error		
+Microsoft-Windows-BitLocker-API	4137	0	task_04137(UnicodeString HSTIImplID, UnicodeString ProviderErrorMsg)			task_0	Error		
+Microsoft-Windows-BitLocker-API	4138	0	task_04138(Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-BitLocker-API	4139	0	task_04139(Int32 ErrorCode)			task_0	Error		
+Microsoft-Windows-BitLocker-API	4140	0	task_04140(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-BitLocker-API	4141	0	task_04141(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, Int32 ErrorCode)			task_0	Error		
+Microsoft-Windows-BitLocker-API	4142	0	task_04142(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, UInt32 BinaryDataSize, Binary BinaryData)			task_0	Informational		
+Microsoft-Windows-BitLocker-API	4143	0	task_04143(Int32 ErrorCode)			task_0	Error		
+Microsoft-Windows-BitLocker-API	4144	0	task_04144(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, UInt32 BinaryDataSize, Binary BinaryData)			task_0	Informational		
+Microsoft-Windows-BitLocker-API	4145	0	task_04145(Int32 ErrorCode)			task_0	Error		

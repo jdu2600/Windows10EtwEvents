@@ -6,7 +6,6 @@ Microsoft-WindowsPhone-CoreMessaging	2900	0	CoreUIService_ServerThread_Started()
 Microsoft-WindowsPhone-CoreMessaging	2901	0	CoreUIService_ServerThread_Exiting()		CoreUIService	CoreUIService_ServerThread_Exiting	Informational		
 Microsoft-WindowsPhone-CoreMessaging	2902	0	CoreUIService_InitializeService()		CoreUIService	CoreUIService_InitializeService	Informational		
 Microsoft-WindowsPhone-CoreMessaging	2903	0	CoreUIService_UninitializeService()		CoreUIService	CoreUIService_UninitializeService	Informational		
-Microsoft-WindowsPhone-CoreMessaging	2904	0	CoreUIService_ServiceObjectCreated()		CoreUIService	CoreUIService_ServiceObjectCreated	Informational		
 Microsoft-WindowsPhone-CoreMessaging	2905	0	CoreUIService_ServiceObjectDestroyed()		CoreUIService	CoreUIService_ServiceObjectDestroyed	Informational		
 Microsoft-WindowsPhone-CoreMessaging	2906	0	CoreUIService_UpdateServiceStatus()		CoreUIService	CoreUIService_UpdateServiceStatus	Informational		
 Microsoft-WindowsPhone-CoreMessaging	2907	0	CoreUIService_ServiceObjectServiceMain()		CoreUIService	CoreUIService_ServiceObjectServiceMain	Informational		
@@ -30,7 +29,7 @@ Microsoft-WindowsPhone-CoreMessaging	3222	0	Dispatcher_CallDispatchCallbackStart
 Microsoft-WindowsPhone-CoreMessaging	3223	0	Dispatcher_CallDispatchCallbackStop(UInt64 unParam)	Stop	MessagingPerformance Dispatcher	Dispatcher_CallDispatchCallback	Verbose		
 Microsoft-WindowsPhone-CoreMessaging	3224	0	Adapter_ScheduleDispatch(UInt32 unParam, UInt32 UserPriority)		MessagingPerformance Dispatcher	Adapter_ScheduleDispatch	Verbose		
 Microsoft-WindowsPhone-CoreMessaging	3225	0	Adapter_HostModeRunStart(UInt32 RunMode, Boolean fBool)	Start	MessagingPerformance Dispatcher	Adapter_HostModeRun	Verbose		
-Microsoft-WindowsPhone-CoreMessaging	3226	0	Adapter_HostModeRunStop(Int32 param)	Stop	MessagingPerformance Dispatcher	Adapter_HostModeRun	Verbose		
+Microsoft-WindowsPhone-CoreMessaging	3226	0	Adapter_HostModeRunStop()	Stop	MessagingPerformance Dispatcher	Adapter_HostModeRun	Verbose		
 Microsoft-WindowsPhone-CoreMessaging	3227	0	Adapter_OnUserDispatchStart(UInt32 UserPriority)	Start	MessagingPerformance Dispatcher	Adapter_OnUserDispatch	Verbose		
 Microsoft-WindowsPhone-CoreMessaging	3228	0	Adapter_OnUserDispatchStop(Boolean fBool)	Stop	MessagingPerformance Dispatcher	Adapter_OnUserDispatch	Verbose		
 Microsoft-WindowsPhone-CoreMessaging	3229	0	Adapter_IntegratedLoopWaitStart()	Start	MessagingPerformance Dispatcher	Adapter_IntegratedLoopWait	Verbose		
@@ -73,8 +72,6 @@ Microsoft-WindowsPhone-CoreMessaging	3430	0	RemoteRegistrarClient_GetOrCreateRev
 Microsoft-WindowsPhone-CoreMessaging	3431	0	RemoteRegistrarClient_GetOrCreateReverseConnectionPortIDStop()	Stop	MessagingPerformance RegistrarClient	RemoteRegistrarClient_GetOrCreateReverseConnectionPortID	Verbose		
 Microsoft-WindowsPhone-CoreMessaging	3432	0	RemoteRegistrarClient_UnregisterReverseConnectionPortStart()	Start	MessagingPerformance RegistrarClient	RemoteRegistrarClient_UnregisterReverseConnectionPort	Verbose		
 Microsoft-WindowsPhone-CoreMessaging	3433	0	RemoteRegistrarClient_UnregisterReverseConnectionPortStop()	Stop	MessagingPerformance RegistrarClient	RemoteRegistrarClient_UnregisterReverseConnectionPort	Verbose		
-Microsoft-WindowsPhone-CoreMessaging	3434	0	RemoteRegistrarClient_FindConversationServerStart(UnicodeString pwsz)	Start	MessagingPerformance RegistrarClient	RemoteRegistrarClient_FindConversationServer	Verbose		
-Microsoft-WindowsPhone-CoreMessaging	3435	0	RemoteRegistrarClient_FindConversationServerStop()	Stop	MessagingPerformance RegistrarClient	RemoteRegistrarClient_FindConversationServer	Verbose		
 Microsoft-WindowsPhone-CoreMessaging	3436	0	RemoteRegistrarClient_RegisterConversationStart(UnicodeString pwsz)	Start	MessagingPerformance RegistrarClient	RemoteRegistrarClient_RegisterConversation	Verbose		
 Microsoft-WindowsPhone-CoreMessaging	3437	0	RemoteRegistrarClient_RegisterConversationStop()	Stop	MessagingPerformance RegistrarClient	RemoteRegistrarClient_RegisterConversation	Verbose		
 Microsoft-WindowsPhone-CoreMessaging	3438	0	RemoteRegistrarClient_ReleaseConversationServerStart(UnicodeString pwsz, UInt32 unParam)	Start	MessagingPerformance RegistrarClient	RemoteRegistrarClient_ReleaseConversationServer	Verbose		
@@ -115,17 +112,12 @@ Microsoft-WindowsPhone-CoreMessaging	4052	0	Messaging_AlpcFlushStart(UInt32 Exte
 Microsoft-WindowsPhone-CoreMessaging	4053	0	Messaging_AlpcFlushStop(UInt32 ExternalPriority, UInt32 unParam, UInt32 unParam2)	Stop	MessagingPerformance Messaging	Messaging_AlpcFlush	Verbose		
 Microsoft-WindowsPhone-CoreMessaging	4054	0	Messaging_AlpcReceiveStart()	Start	MessagingPerformance Messaging	Messaging_AlpcReceive	Verbose		
 Microsoft-WindowsPhone-CoreMessaging	4055	0	Messaging_AlpcReceiveStop(UInt32 unParam, UInt32 unParam2, UInt32 unParam3, UInt32 unParam4)	Stop	MessagingPerformance Messaging	Messaging_AlpcReceive	Verbose		
-Microsoft-WindowsPhone-CoreMessaging	5050	0	Formatting_MessageMethodStart(UnicodeString pwsz)	Start	MessagingPerformance Formatting	Formatting_MessageMethod	Verbose		
-Microsoft-WindowsPhone-CoreMessaging	5051	0	Formatting_MessageMethodStop()	Stop	MessagingPerformance Formatting	Formatting_MessageMethod	Verbose		
 Microsoft-WindowsPhone-CoreMessaging	7000	0	SelfHostInfo_ObjectRegistered(UnicodeString pwsz, UInt32 RegisteredObjectType, UInt32 RegistrarScope, UInt32 hex, UInt32 hex2, UInt32 hex3)		keyword_40000000000	SelfHostInfo_ObjectRegistered	Informational		
 Microsoft-WindowsPhone-CoreMessaging	7001	0	SelfHostInfo_ObjectRevoked(UnicodeString pwsz, UInt32 RegisteredObjectType, UInt32 RegistrarScope, UInt32 hex, UInt32 hex2, UInt32 hex3, Boolean fBool)		keyword_40000000000	SelfHostInfo_ObjectRevoked	Informational		
 Microsoft-WindowsPhone-CoreMessaging	7002	0	SelfHostInfo_ConnectionSevered(UInt32 hex, UInt32 hex2, GUID guid)		keyword_40000000000	SelfHostInfo_ConnectionSevered	Informational		
 Microsoft-WindowsPhone-CoreMessaging	7003	0	SelfHostInfo_OutOfConversationPeerHandles(UnicodeString pwsz)		keyword_40000000000	SelfHostInfo_OutOfConversationPeerHandles	Informational		
 Microsoft-WindowsPhone-CoreMessaging	7004	0	SelfHostInfo_MaxConversationClientsConnected(UnicodeString pwsz)		keyword_40000000000	SelfHostInfo_MaxConversationClientsConnected	Informational		
 Microsoft-WindowsPhone-CoreMessaging	7005	0	SelfHostInfo_UniquenessProtectedUs(UInt32 hex, UInt32 hex2, UInt32 hex3)		keyword_40000000000	SelfHostInfo_UniquenessProtectedUs	Informational		
-Microsoft-WindowsPhone-CoreMessaging	7006	0	SelfHostInfo_MaxUniquenessHit(UInt32 hex)		keyword_40000000000	SelfHostInfo_MaxUniquenessHit	Informational		
-Microsoft-WindowsPhone-CoreMessaging	7007	0	SelfHostInfo_SlotPassedOver(UInt32 hex, UInt32 hex2)		keyword_40000000000	SelfHostInfo_SlotPassedOver	Informational		
-Microsoft-WindowsPhone-CoreMessaging	7008	0	SelfHostInfo_HIdentityAllocatorGrown(UInt32 hex, UInt32 hex2)		keyword_40000000000	SelfHostInfo_HIdentityAllocatorGrown	Informational		
 Microsoft-WindowsPhone-CoreMessaging	8000	0	IoCompletionPort(Pointer ptr1, Pointer ptr2, Pointer ptr3)		MessagingPerformance	IoCompletionPort	Informational		
 Microsoft-WindowsPhone-CoreMessaging	8001	0	IoCompletionPort8001(Pointer ptr1, Pointer ptr2, Pointer ptr3, UInt32 hex)		MessagingPerformance	IoCompletionPort	Error		
 Microsoft-WindowsPhone-CoreMessaging	8002	0	IoCompletionPort8002(Pointer ptr, UInt32 hex, Boolean fBool1, Boolean fBool2)		MessagingPerformance	IoCompletionPort	Informational		
@@ -139,5 +131,4 @@ Microsoft-WindowsPhone-CoreMessaging	20001	0	SelfHostError_ObjectNotFound(Unicod
 Microsoft-WindowsPhone-CoreMessaging	20002	0	SelfHostError_ConnectionFailed(UInt32 hex, UInt32 hex2, GUID guid)		keyword_80000000000	SelfHostError_ConnectionFailed	Error		
 Microsoft-WindowsPhone-CoreMessaging	20003	0	SelfHostError_DisconnectClient(UInt32 hex, UInt32 hex2)		keyword_80000000000	SelfHostError_DisconnectClient	Error		
 Microsoft-WindowsPhone-CoreMessaging	20004	0	SelfHostError_AlpcConnectionFailed(UnicodeString pwsz, Int32 hresult)		keyword_80000000000	SelfHostError_AlpcConnectionFailed	Error		
-Microsoft-WindowsPhone-CoreMessaging	20005	0	SelfHostError_ConversationNotFound(UnicodeString pwsz)		keyword_80000000000	SelfHostError_ConversationNotFound	Error		
 Microsoft-WindowsPhone-CoreMessaging	20006	0	SelfHostError_ConversationPeerSoftBlocked(UInt32 hex, UInt32 hex2, UnicodeString pwsz)		keyword_80000000000	SelfHostError_ConversationPeerSoftBlocked	Error		

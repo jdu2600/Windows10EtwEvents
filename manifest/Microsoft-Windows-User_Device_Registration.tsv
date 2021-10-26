@@ -57,7 +57,7 @@ Microsoft-Windows-User Device Registration	242	0	task_0242(UnicodeString Group, 
 Microsoft-Windows-User Device Registration	243	0	task_0243(UnicodeString Group, SID UserSID)			task_0	Informational		
 Microsoft-Windows-User Device Registration	244	0	task_0244(Int32 ExitCode)			task_0	Error		
 Microsoft-Windows-User Device Registration	245	0	task_0245(Int32 ExitCode)			task_0	Error		
-Microsoft-Windows-User Device Registration	246	0	task_0246(UInt32 ErrorCode, UnicodeString SourceId, UnicodeString DefaultPath, Int32 LocationType, UnicodeString LocationTypeName)			task_0	Error		
+Microsoft-Windows-User Device Registration	246	0	task_0246(HexInt32 ErrorCode, UnicodeString SourceId, UnicodeString DefaultPath, Int32 LocationType, UnicodeString LocationTypeName)			task_0	Error		
 Microsoft-Windows-User Device Registration	247	0	task_0247(Int32 ExitCode)			task_0	Warning		
 Microsoft-Windows-User Device Registration	248	0	task_0248(Int32 ExitCode, UnicodeString Attribute, UnicodeString TenantId, UnicodeString DeviceId, Int32 JoinType, UnicodeString JoinTypeName)			task_0	Error		
 Microsoft-Windows-User Device Registration	249	0	task_0249(Int32 ExitCode, UnicodeString Attribute, UnicodeString TenantId, UnicodeString DeviceId, Int32 JoinType, UnicodeString JoinTypeName, UnicodeString RequestId)			task_0	Error		
@@ -133,9 +133,9 @@ Microsoft-Windows-User Device Registration	354	0	task_0354(Int32 ExitCode, UInt3
 Microsoft-Windows-User Device Registration	355	0	task_0355(UnicodeString Upn, UnicodeString TenantId, UnicodeString Authority, UnicodeString Resource, Int32 ExitCode)			task_0	Informational		
 Microsoft-Windows-User Device Registration	356	0	task_0356(UnicodeString UPN, UnicodeString TenantId, Int32 ExitCode)			task_0	Error		
 Microsoft-Windows-User Device Registration	357	0	task_0357(UnicodeString Sid, UnicodeString TenantId)			task_0	Informational		
-Microsoft-Windows-User Device Registration	358	0	task_0358(UnicodeString Message, UnicodeString DeviceIsJoined, UnicodeString AADPrt, UnicodeString NgcPolicyEnabled, UnicodeString NgcPostLogonProvisioningEnabled, UnicodeString NgcHardwarePolicyMet, UnicodeString UserIsRemote, UnicodeString LogonCertRequired, UnicodeString MachinePolicySource)			task_0	Informational		
+Microsoft-Windows-User Device Registration	358	0	task_0358(UnicodeString Message, UnicodeString DeviceIsJoined, UnicodeString AADPrt, UnicodeString NgcPolicyEnabled, UnicodeString NgcPostLogonProvisioningEnabled, UnicodeString NgcHardwarePolicyMet, UnicodeString UserIsRemote, UnicodeString LogonCertRequired, UnicodeString MachinePolicySource, UnicodeString UseCloudTrust, UnicodeString CloudTgt)			task_0	Informational		
 Microsoft-Windows-User Device Registration	359	0	task_0359(Int32 ExitCode, UnicodeString Method)			task_0	Error		
-Microsoft-Windows-User Device Registration	360	0	task_0360(UnicodeString Message, UnicodeString DeviceIsJoined, UnicodeString AADPrt, UnicodeString NgcPolicyEnabled, UnicodeString NgcPostLogonProvisioningEnabled, UnicodeString NgcHardwarePolicyMet, UnicodeString UserIsRemote, UnicodeString LogonCertRequired, UnicodeString MachinePolicySource)			task_0	Warning		
+Microsoft-Windows-User Device Registration	360	0	task_0360(UnicodeString Message, UnicodeString DeviceIsJoined, UnicodeString AADPrt, UnicodeString NgcPolicyEnabled, UnicodeString NgcPostLogonProvisioningEnabled, UnicodeString NgcHardwarePolicyMet, UnicodeString UserIsRemote, UnicodeString LogonCertRequired, UnicodeString MachinePolicySource, UnicodeString UseCloudTrust, UnicodeString CloudTgt)			task_0	Warning		
 Microsoft-Windows-User Device Registration	361	0	task_0361(UnicodeString Message, UnicodeString DeviceIsJoined, UnicodeString AADPrt, UnicodeString NgcPolicyEnabled, UnicodeString NgcPostLogonProvisioningEnabled, UnicodeString NgcHardwarePolicyMet, UnicodeString UserIsRemote, UnicodeString LogonCertRequired, UnicodeString MDMCertEnrollmentReady, UnicodeString MachinePolicySource)			task_0	Warning		
 Microsoft-Windows-User Device Registration	362	0	task_0362(UnicodeString Message, UnicodeString DeviceIsJoined, UnicodeString AADPrt, UnicodeString NgcPolicyEnabled, UnicodeString NgcPostLogonProvisioningEnabled, UnicodeString NgcHardwarePolicyMet, UnicodeString UserIsRemote, UnicodeString LogonCertRequired, UnicodeString ADFSRaReady, UnicodeString RATemplateReady, UnicodeString ADFSPrtPresent, UnicodeString MachinePolicySource)			task_0	Warning		
 Microsoft-Windows-User Device Registration	363	0	task_0363(GUID KeyId, UInt64 AttLevel, UInt64 AikStatus, UInt64 KeyType, UnicodeString KeyName, UnicodeString IdpDomain, UnicodeString TenantId, UnicodeString UserEmail)			task_0	Warning		
@@ -183,6 +183,9 @@ Microsoft-Windows-User Device Registration	404	0	task_0404()			task_0	Error
 Microsoft-Windows-User Device Registration	405	0	task_0405(Int32 ErrorCode, UnicodeString CorrelationId, UnicodeString AdditionalDetails)			task_0	Warning		
 Microsoft-Windows-User Device Registration	406	0	task_0406(Int32 ExitCode, UnicodeString EnrollmentId)			task_0	Warning		
 Microsoft-Windows-User Device Registration	407	0	task_0407(UnicodeString EnrollmentId)			task_0	Informational		
+Microsoft-Windows-User Device Registration	408	0	task_0408()			task_0	Warning		
+Microsoft-Windows-User Device Registration	409	0	task_0409()			task_0	Warning		
+Microsoft-Windows-User Device Registration	410	0	task_0410()			task_0	Warning		
 Microsoft-Windows-User Device Registration	500	0	task_0500(UnicodeString Message)			task_0	Informational		
 Microsoft-Windows-User Device Registration	501	0	task_0501(UnicodeString Message)			task_0	Warning		
 Microsoft-Windows-User Device Registration	502	0	task_0502(UnicodeString Message)			task_0	Error		

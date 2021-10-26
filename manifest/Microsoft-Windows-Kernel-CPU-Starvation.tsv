@@ -1,0 +1,5 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Kernel-CPU-Starvation	1	0	DPCSoftTimeoutSingleDPCSoftTimeoutReached(Pointer DpcRoutineKey, UInt32 ThreadID, UInt32 CpuNumber, UInt32 TickCount, UInt32 SoftTimeoutTicks, UInt16 ModuleNameLength, UnicodeString ModuleName)	SingleDPCSoftTimeoutReached	DpcSoftTimeout	DPCSoftTimeout	Warning		
+Microsoft-Windows-Kernel-CPU-Starvation	2	0	DPCSoftTimeoutCumulativeDPCSoftTimeoutReached(UInt32 ThreadID, UInt32 CpuNumber, UInt32 CumulativeTickCount, UInt32 CumulativeSoftTimeoutTicks)	CumulativeDPCSoftTimeoutReached	DpcSoftTimeout	DPCSoftTimeout	Warning		
+Microsoft-Windows-Kernel-CPU-Starvation	3	0	DPCProfilingDPCProfilingThresholdReached(UInt32 ThreadID, UInt32 CpuNumber, UInt32 DpcSequenceNumber, UInt32 ThresholdTicks, UInt8 Cumulative)	DPCProfilingThresholdReached	DpcProfiling	DPCProfiling	Warning		
+Microsoft-Windows-Kernel-CPU-Starvation	4	0	DPCProfilingDPCProfilingStackCapture(UInt32 DpcSequenceNumber, UInt32 Tick)	DPCProfilingStackCapture	DpcProfiling	DPCProfiling	Warning		

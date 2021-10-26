@@ -64,3 +64,12 @@ Microsoft-Windows-DirectComposition	62	0	FLIP_CONSUME_PRESENT_CALLOUTStart()	Sta
 Microsoft-Windows-DirectComposition	63	0	FLIP_CONSUME_PRESENT_CALLOUTStop(UInt32 result)	Stop	FlipManager	FLIP_CONSUME_PRESENT_CALLOUT	Verbose		
 Microsoft-Windows-DirectComposition	64	0	FLIP_PRODUCE_PRESENTStart()	Start	FlipManager	FLIP_PRODUCE_PRESENT	Verbose		
 Microsoft-Windows-DirectComposition	65	0	FLIP_PRODUCE_PRESENTStop(UInt64 presentId, UInt32 result)	Stop	FlipManager	FLIP_PRODUCE_PRESENT	Verbose		
+Microsoft-Windows-DirectComposition	66	0	ANIMATION_ENDED(UInt32 eventType, UInt32 resourceHandle, UInt32 callbackId)		DCompAnimationTelemetry	ANIMATION_ENDED	Verbose		
+Microsoft-Windows-DirectComposition	67	0	REGISTERANIMATIONTARGET(UInt32 objectHandle, UInt32 propertyHandle, UInt32 animatorResourceHandle, UInt32 animatorCallbackId)		DCompAnimationTelemetry	REGISTERANIMATIONTARGET	Verbose		
+Microsoft-Windows-DirectComposition	68	0	EXPRESSIONANIMATOR_INIT(UInt64 expressionAnimatorInstance, UInt64 nodesBuffer, UInt64 cacheBuffer, UInt64 cacheBufferParam)		DCompAnimationTelemetry	EXPRESSIONANIMATOR_INIT	Verbose		
+Microsoft-Windows-DirectComposition	69	0	EXPRESSIONANIMATOR_RELEASE_RESOURCES(UInt64 expressionAnimatorInstance, UInt64 nodesBuffer, UInt64 cacheBuffer)		DCompAnimationTelemetry	EXPRESSIONANIMATOR_RELEASE_RESOURCES	Verbose		
+Microsoft-Windows-DirectComposition	70	0	SHAREALLOCATIONBASE_ONMARSHALERRELEASE(UInt64 instance)		DCompAnimationTelemetry	SHAREALLOCATIONBASE_ONMARSHALERRELEASE	Verbose		
+Microsoft-Windows-DirectComposition	71	0	SHAREALLOCATIONBASE_DISPOSEONDELAYEDDESTRUCTION(UInt64 instance)		DCompAnimationTelemetry	SHAREALLOCATIONBASE_DISPOSEONDELAYEDDESTRUCTION	Verbose		
+Microsoft-Windows-DirectComposition	72	0	DELEGATEDINKTRAIL_COOKIEPUSHED(Pointer CookieTracker, UInt32 CookieValue)			DELEGATEDINKTRAIL_COOKIEPUSHED	Verbose		
+Microsoft-Windows-DirectComposition	73	0	DELEGATEDINKTRAIL_REMOVETRAILPOINTS(Pointer InkTrail, UInt32 GenerationId, UInt32 LookupId)			DELEGATEDINKTRAIL_REMOVETRAILPOINTS	Verbose		
+Microsoft-Windows-DirectComposition	74	0	DELEGATEDINKTRAIL_STARTNEWTRAIL(Pointer InkTrail, UInt32 PrevGenerationId, Float Color_R, Float Color_G, Float Color_B, Float Color_A)			DELEGATEDINKTRAIL_STARTNEWTRAIL	Verbose		

@@ -5,7 +5,7 @@ Microsoft-Windows-RTWorkQueue-Extended	3	0	WorkQueue:ExtendedInvalidUsageAttempt
 Microsoft-Windows-RTWorkQueue-Extended	4	0	WorkQueue:ExtendedInvalidCallbackAttempt(Pointer Platform, Pointer Callback, UInt32 WorkQueueID)			WorkQueue:ExtendedInvalidCallbackAttempt	Verbose		
 Microsoft-Windows-RTWorkQueue-Extended	5	0	WorkQueue:PlatformRefStart(Pointer object)	Start		WorkQueue:PlatformRef	Verbose		
 Microsoft-Windows-RTWorkQueue-Extended	6	0	WorkQueue:PlatformRefStop(Pointer object)	Stop		WorkQueue:PlatformRef	Verbose		
-Microsoft-Windows-RTWorkQueue-Extended	7	0	WorkQueue:PlatformRefStop7(Pointer object, Int32 Count)	Stop		WorkQueue:PlatformRef	Verbose		
+Microsoft-Windows-RTWorkQueue-Extended	7	0	WorkQueue:PlatformRef(Pointer object, Int32 Count)			WorkQueue:PlatformRef	Verbose		
 Microsoft-Windows-RTWorkQueue-Extended	8	0	WorkQueue:RTLockStart(UInt32 WorkQueueID)	Start		WorkQueue:RTLock	Verbose		
 Microsoft-Windows-RTWorkQueue-Extended	9	0	WorkQueue:RTLockStop(UInt32 WorkQueueID)	Stop		WorkQueue:RTLock	Verbose		
 Microsoft-Windows-RTWorkQueue-Extended	10	0	WorkQueue:SetAVModeStart(Pointer handle, UInt32 Mode)	Start		WorkQueue:SetAVMode	Verbose		
@@ -18,3 +18,6 @@ Microsoft-Windows-RTWorkQueue-Extended	16	0	WorkQueue:TimerMode(Pointer WorkQueu
 Microsoft-Windows-RTWorkQueue-Extended	17	0	WorkQueue:TimerSet(Pointer WorkQueuePointer, UInt32 WorkQueueID, UInt32 Mode, UInt32 Delta)			WorkQueue:TimerSet	Verbose		
 Microsoft-Windows-RTWorkQueue-Extended	18	0	WorkQueue:TimerResChangeStart(Pointer workqueue, UInt32 WorkQueueID, UInt32 Resolution)	Start		WorkQueue:TimerResChange	Verbose		
 Microsoft-Windows-RTWorkQueue-Extended	19	0	WorkQueue:TimerResChangeStop(Pointer workqueue, UInt32 WorkQueueID, UInt32 Resolution)	Stop		WorkQueue:TimerResChange	Verbose		
+Microsoft-Windows-RTWorkQueue-Extended	20	0	WorkQueue:LockStart(Pointer workqueue)	Start		WorkQueue:Lock	Verbose		
+Microsoft-Windows-RTWorkQueue-Extended	21	0	WorkQueue:LockStop(Pointer workqueue)	Stop		WorkQueue:Lock	Verbose		
+Microsoft-Windows-RTWorkQueue-Extended	22	0	WorkQueue:Lock(Pointer workqueue, UInt32 ExtRefCount, UInt32 IntRefCount)			WorkQueue:Lock	Verbose		

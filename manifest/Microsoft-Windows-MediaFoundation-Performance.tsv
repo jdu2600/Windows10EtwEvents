@@ -512,3 +512,15 @@ Microsoft-Windows-MediaFoundation-Performance	4618	0	MFTDriverProcessInputStop(P
 Microsoft-Windows-MediaFoundation-Performance	4619	0	MFTDriverProcessOutputStart(Pointer object, UInt32 Index)	Start		MFTDriverProcessOutput	Verbose		
 Microsoft-Windows-MediaFoundation-Performance	4620	0	MFTDriverProcessOutputStop(Pointer object, UInt32 hrResult)	Stop		MFTDriverProcessOutput	Verbose		
 Microsoft-Windows-MediaFoundation-Performance	4621	0	MFTDriverProcessOutput(Pointer object, UInt32 StreamIndex, UInt32 StreamType, Int64 timestamp, Pointer sample, Int64 duration)			MFTDriverProcessOutput	Verbose		
+Microsoft-Windows-MediaFoundation-Performance	4622	0	MFTWICDecoderProxyActivationStart(Pointer object)	Start		MFTWICDecoderProxyActivation	Verbose		
+Microsoft-Windows-MediaFoundation-Performance	4623	0	MFTWICDecoderProxyActivationStop(Pointer object, Pointer MFTobject, UInt32 hrResult)	Stop		MFTWICDecoderProxyActivation	Verbose		
+Microsoft-Windows-MediaFoundation-Performance	4624	0	MFTWICDecoderProxyGetPreviewStart(Pointer object)	Start		MFTWICDecoderProxyGetPreview	Verbose		
+Microsoft-Windows-MediaFoundation-Performance	4625	0	MFTWICDecoderProxyGetPreviewStop(Pointer object, Pointer BitmapSourceProxyobject, UInt32 hrResult)	Stop		MFTWICDecoderProxyGetPreview	Verbose		
+Microsoft-Windows-MediaFoundation-Performance	4626	0	MFTWICDecoderProxyGetThumbnailStart(Pointer object)	Start		MFTWICDecoderProxyGetThumbnail	Verbose		
+Microsoft-Windows-MediaFoundation-Performance	4627	0	MFTWICDecoderProxyGetThumbnailStop(Pointer object, Pointer BitmapSourceProxyobject, UInt32 hrResult)	Stop		MFTWICDecoderProxyGetThumbnail	Verbose		
+Microsoft-Windows-MediaFoundation-Performance	4628	0	MFTWICDecoderProxyGetFrameStart(Pointer object)	Start		MFTWICDecoderProxyGetFrame	Verbose		
+Microsoft-Windows-MediaFoundation-Performance	4629	0	MFTWICDecoderProxyGetFrameStop(Pointer object, Pointer BitmapSourceProxyobject, UInt32 hrResult)	Stop		MFTWICDecoderProxyGetFrame	Verbose		
+Microsoft-Windows-MediaFoundation-Performance	4630	0	MFTWICBitmapSourceProxyGetThumbnailStart(Pointer object, UInt32 FrameIndex)	Start		MFTWICBitmapSourceProxyGetThumbnail	Verbose		
+Microsoft-Windows-MediaFoundation-Performance	4631	0	MFTWICBitmapSourceProxyGetThumbnailStop(Pointer object, Pointer BitmapSourceProxyobject, UInt32 hrResult)	Stop		MFTWICBitmapSourceProxyGetThumbnail	Verbose		
+Microsoft-Windows-MediaFoundation-Performance	4632	0	MFTWICBitmapSourceProxyCopyPixelsStart(Pointer object, Int32 RectX, Int32 RectY, Int32 RectWidth, Int32 RectHeight)	Start		MFTWICBitmapSourceProxyCopyPixels	Verbose		
+Microsoft-Windows-MediaFoundation-Performance	4633	0	MFTWICBitmapSourceProxyCopyPixelsStop(Pointer object, Int64 CachedRectLeft, Int64 CachedRectTop, Int64 CachedRectRight, Int64 CachedRectBottom)	Stop		MFTWICBitmapSourceProxyCopyPixels	Verbose		

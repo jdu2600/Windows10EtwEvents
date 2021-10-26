@@ -1,7 +1,4 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-Diagnostics-PerfTrack	112	0	GenericScenario_WDIInit()		PerfTrackStatus	GenericScenario_WDIInit	Informational		
-Microsoft-Windows-Diagnostics-PerfTrack	113	0	GenericScenario_WDIUnload()		PerfTrackStatus	GenericScenario_WDIUnload	Informational		
-Microsoft-Windows-Diagnostics-PerfTrack	115	0	GenericScenario_AllocatedInstance()		PerfTrackStatus	GenericScenario_AllocatedInstance	Informational		
 Microsoft-Windows-Diagnostics-PerfTrack	200	0	PerfPipe_TraceCapture_StartEnd(Int64 StartTimeStamp, GUID StartProviderId, UInt16 StartEventId, UInt8 StartEventVersion, Int64 StopTimeStamp, GUID StopProviderId, UInt16 StopEventId, UInt8 StopEventVersion, GUID ScenarioId, UInt32 SqmId, UInt32 Duration, UInt32 RuleId)		PerfTrackStatus	PerfPipe_TraceCapture_StartEnd	Informational		
 Microsoft-Windows-Diagnostics-PerfTrack	218	0	PerfPipe_TraceCapture_Trigger(Int64 TriggerTimeStamp, GUID TriggerProviderId, UInt16 TriggerEventId, UInt8 TriggerEventVersion, GUID ScenarioId, UInt32 SqmId, UInt32 Duration, UInt32 RuleId)		PerfTrackStatus	PerfPipe_TraceCapture_Trigger	Informational		
 Microsoft-Windows-Diagnostics-PerfTrack	500	0	SqmLogger_AddToScenarioStream(UInt32 CanAddToScenarioStream, UInt32 ScenarioId, UInt32 ScenarioDuration, UInt32 ScenarioPackedContext, UInt32 MoshTimeValue, UnicodeString ScenarioMetadata)		SQMStatus	SqmLogger_AddToScenarioStream	Informational		

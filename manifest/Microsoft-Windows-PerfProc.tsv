@@ -1,18 +1,9 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-PerfProc	1000	0	task_0PCODE_128pcode_128()	opcode_128		task_0	Always		
-Microsoft-Windows-PerfProc	1001	0	task_0PCODE_192pcode_192()	opcode_192		task_0	Always		
-Microsoft-Windows-PerfProc	1001	1	task_0_V1()			task_0	Error		
-Microsoft-Windows-PerfProc	2000	0	task_0PCODE_192pcode_1922000()	opcode_192		task_0	Always		
-Microsoft-Windows-PerfProc	2001	0	task_0PCODE_192pcode_1922001()	opcode_192		task_0	Always		
-Microsoft-Windows-PerfProc	2001	1	task_02001_V1(UInt32 Win32Error)			task_0	Error		
-Microsoft-Windows-PerfProc	2002	0	task_0PCODE_128pcode_1282002()	opcode_128		task_0	Always		
+Microsoft-Windows-PerfProc	1001	1	task_0_V1()			task_0	Warning		
+Microsoft-Windows-PerfProc	2001	1	task_02001_V1(UInt32 Win32Error)			task_0	Warning		
 Microsoft-Windows-PerfProc	2002	1	task_02002_V1(UnicodeString Message, UInt32 Win32Error)			task_0	Warning		
-Microsoft-Windows-PerfProc	2003	0	task_0PCODE_128pcode_1282003()	opcode_128		task_0	Always		
 Microsoft-Windows-PerfProc	2003	1	task_02003_V1(UnicodeString Message, UInt32 Win32Error)			task_0	Warning		
-Microsoft-Windows-PerfProc	2004	0	task_0PCODE_128pcode_1282004()	opcode_128		task_0	Always		
 Microsoft-Windows-PerfProc	2004	1	task_02004_V1(UnicodeString Message, UInt32 Win32Error)			task_0	Warning		
-Microsoft-Windows-PerfProc	2005	0	task_0PCODE_128pcode_1282005()	opcode_128		task_0	Always		
 Microsoft-Windows-PerfProc	2005	1	task_02005_V1(UnicodeString Message, UInt32 Win32Error)			task_0	Warning		
-Microsoft-Windows-PerfProc	2006	0	task_0PCODE_128pcode_1282006()	opcode_128		task_0	Always		
-Microsoft-Windows-PerfProc	2006	1	task_02006_V1()			task_0	Error		
-Microsoft-Windows-PerfProc	8192	1	task_08192_V1(UInt32 Win32Error)			task_0	Error		
+Microsoft-Windows-PerfProc	2006	1	task_02006_V1()			task_0	Warning		
+Microsoft-Windows-PerfProc	8192	1	task_08192_V1(UInt32 Win32Error)			task_0	Warning		

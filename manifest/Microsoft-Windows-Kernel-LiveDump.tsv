@@ -1,10 +1,9 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
 Microsoft-Windows-Kernel-LiveDump	1	0	LiveDumpCaptureDumpDataAPIAPIStart()	APIStart		LiveDumpCaptureDumpDataAPI	Informational		
-Microsoft-Windows-Kernel-LiveDump	2	0	LiveDumpCaptureDumpDataAPIAPIEnd(UInt32 NTStatus)	APIEnd		LiveDumpCaptureDumpDataAPI	Informational		
 Microsoft-Windows-Kernel-LiveDump	3	0	LiveDumpCaptureDumpDataAPIDumpFileWriteStart()	DumpFileWriteStart		LiveDumpCaptureDumpDataAPI	Informational		
-Microsoft-Windows-Kernel-LiveDump	4	0	LiveDumpCaptureDumpDataAPIDumpFileWriteEnd(UInt32 NTStatus, UInt64 TotalBytes, UInt64 HeaderBytes, UInt64 PrimaryDataBytes, UInt64 SecondaryDataBytes)	DumpFileWriteEnd		LiveDumpCaptureDumpDataAPI	Informational		
+Microsoft-Windows-Kernel-LiveDump	4	1	LiveDumpCaptureDumpDataAPIDumpFileWriteEnd_V1(UInt32 NTStatus, UInt64 TotalBytes, UInt64 HeaderBytes, UInt64 PrimaryDataBytes, UInt64 SecondaryDataBytes, UInt64 DumpWriteDuration_ms)	DumpFileWriteEnd		LiveDumpCaptureDumpDataAPI	Informational		
 Microsoft-Windows-Kernel-LiveDump	5	0	LiveDumpCaptureDumpDataAPIBufferAllocationData()	BufferAllocationData		LiveDumpCaptureDumpDataAPI	Informational		
-Microsoft-Windows-Kernel-LiveDump	101	0	SizingWorkflowMirroringStart()	MirroringStart		SizingWorkflow	Informational		
+Microsoft-Windows-Kernel-LiveDump	101	1	SizingWorkflowMirroringStart_V1()	MirroringStart		SizingWorkflow	Informational		
 Microsoft-Windows-Kernel-LiveDump	102	0	SizingWorkflowMirroringPhase0End()	MirroringPhase0End		SizingWorkflow	Informational		
 Microsoft-Windows-Kernel-LiveDump	103	0	SizingWorkflowMirroringPhase1End()	MirroringPhase1End		SizingWorkflow	Informational		
 Microsoft-Windows-Kernel-LiveDump	104	0	SizingWorkflowSystemQuiesceStart()	SystemQuiesceStart		SizingWorkflow	Informational		
@@ -18,14 +17,14 @@ Microsoft-Windows-Kernel-LiveDump	109	0	SizingWorkflowRemovePagesCallbacks109()	
 Microsoft-Windows-Kernel-LiveDump	110	0	SizingWorkflowRemovePagesCallbacks110(AnsiString CallbackIdentifier)	RemovePagesCallbacks		SizingWorkflow	Informational		
 Microsoft-Windows-Kernel-LiveDump	111	0	SizingWorkflowRemovePagesCallbacks111(AnsiString CallbackIdentifier)	RemovePagesCallbacks		SizingWorkflow	Informational		
 Microsoft-Windows-Kernel-LiveDump	112	0	SizingWorkflowRemovePagesCallbacks112(AnsiString CallbackIdentifier, UInt32 NTStatus)	RemovePagesCallbacks		SizingWorkflow	Informational		
-Microsoft-Windows-Kernel-LiveDump	113	1	SizingWorkflowBufferEstimationData113_V1(UInt64 EstimatedPageCount, UInt64 AllocatedPageCount, UInt64 LimitDumpFileSize, UInt64 DumpFileSizeLimitInBytes, UInt64 DumpFileSizeLimitReached)	BufferEstimationData		SizingWorkflow	Informational		
+Microsoft-Windows-Kernel-LiveDump	113	1	SizingWorkflowBufferEstimationData113_V1(UInt64 EstimatedPageCount, UInt64 AllocatedPageCount, UInt32 LimitDumpFileSize, UInt64 DumpFileSizeLimitInBytes, UInt32 DumpFileSizeLimitReached)	BufferEstimationData		SizingWorkflow	Informational		
 Microsoft-Windows-Kernel-LiveDump	114	0	SizingWorkflowBufferEstimationData114(UInt32 NTStatus)	BufferEstimationData		SizingWorkflow	Informational		
-Microsoft-Windows-Kernel-LiveDump	115	0	SizingWorkflowBufferAllocationData115(UInt64 BufferAllocationScheme, UInt32 NTStatus)	BufferAllocationData		SizingWorkflow	Informational		
-Microsoft-Windows-Kernel-LiveDump	116	0	SizingWorkflowBufferAllocationData116(UInt64 BufferAllocationScheme, UInt32 NTStatus)	BufferAllocationData		SizingWorkflow	Informational		
+Microsoft-Windows-Kernel-LiveDump	115	1	SizingWorkflowBufferAllocationData115_V1(UInt32 NTStatus)	BufferAllocationData		SizingWorkflow	Informational		
+Microsoft-Windows-Kernel-LiveDump	116	1	SizingWorkflowBufferAllocationData116_V1(UInt32 NTStatus)	BufferAllocationData		SizingWorkflow	Informational		
 Microsoft-Windows-Kernel-LiveDump	117	0	SizingWorkflowCaptureProcessorContext(UInt64 Duration_ms)	CaptureProcessorContext		SizingWorkflow	Informational		
 Microsoft-Windows-Kernel-LiveDump	118	0	SizingWorkflowMarkRequiredDumpData(UInt64 MarkRequiredDumpDataDuration_ms)	MarkRequiredDumpData		SizingWorkflow	Informational		
 Microsoft-Windows-Kernel-LiveDump	119	0	SizingWorkflowMarkImportantDumpData(UInt64 MarkImportantDumpDataDuration_ms)	MarkImportantDumpData		SizingWorkflow	Informational		
-Microsoft-Windows-Kernel-LiveDump	120	0	SizingWorkflowPopulateBitmapForDump(UInt64 PopulateBitmapForDumpDuration_ms, UInt64 RemoveSystemCacheFromDumpDuration_ms, UInt64 MemoryEstimationDuration_ms, UInt64 SystemQuiescedDuration_ms, UInt64 EndMirroringPhasesDuration_ms, UInt64 TotalMirrorPhysicalMemoryCallbackDuration_ms, UInt64 TotalMirrorPhysicalMemoryCallbackBytes)	PopulateBitmapForDump		SizingWorkflow	Informational		
+Microsoft-Windows-Kernel-LiveDump	120	0	SizingWorkflowPopulateBitmapForDump(UInt64 PopulateBitmapForDumpDuration_ms, UInt64 RemoveSystemCacheFromDumpDuration_ms)	PopulateBitmapForDump		SizingWorkflow	Informational		
 Microsoft-Windows-Kernel-LiveDump	121	0	SizingWorkflowCorralProcessors(UInt64 CorralDuration_ms, UInt64 DisableInterruptsDuration_ms, UInt64 SaveSupervisorStateDuration_ms, UInt64 SuspendClockTimerDuration_ms)	CorralProcessors		SizingWorkflow	Informational		
 Microsoft-Windows-Kernel-LiveDump	122	0	SizingWorkflowUncorralProcessors(UInt64 UncorralDuration_ms, UInt64 EnableInterruptsDuration_ms, UInt64 RestoreSupervisorStateDuration_ms, UInt64 ResumeClockTimerDuration_ms)	UncorralProcessors		SizingWorkflow	Informational		
 Microsoft-Windows-Kernel-LiveDump	123	0	SizingWorkflowMmDuplicateMemoryFailure(UInt32 NTStatus, UInt64 MirrorInProgress)	MmDuplicateMemoryFailure		SizingWorkflow	Informational		
@@ -39,7 +38,7 @@ Microsoft-Windows-Kernel-LiveDump	157	0	CapturePagesWorkflowCopyingMemoryPagesEn
 Microsoft-Windows-Kernel-LiveDump	158	0	CapturePagesWorkflowCaptureProcessorContext(UInt64 Duration_ms)	CaptureProcessorContext		CapturePagesWorkflow	Informational		
 Microsoft-Windows-Kernel-LiveDump	159	0	CapturePagesWorkflowMarkRequiredDumpData(UInt64 MarkRequiredDumpDataDuration_ms)	MarkRequiredDumpData		CapturePagesWorkflow	Informational		
 Microsoft-Windows-Kernel-LiveDump	160	0	CapturePagesWorkflowMarkImportantDumpData(UInt64 MarkImportantDumpDataDuration_ms)	MarkImportantDumpData		CapturePagesWorkflow	Informational		
-Microsoft-Windows-Kernel-LiveDump	161	0	CapturePagesWorkflowPopulateBitmapForDump(UInt64 PopulateBitmapForDumpDuration_ms, UInt64 RemoveSystemCacheFromDumpDuration_ms, UInt64 MemoryEstimationDuration_ms, UInt64 SystemQuiescedDuration_ms, UInt64 EndMirroringPhasesDuration_ms, UInt64 TotalMirrorPhysicalMemoryCallbackDuration_ms, UInt64 TotalMirrorPhysicalMemoryCallbackBytes)	PopulateBitmapForDump		CapturePagesWorkflow	Informational		
+Microsoft-Windows-Kernel-LiveDump	161	0	CapturePagesWorkflowPopulateBitmapForDump(UInt64 PopulateBitmapForDumpDuration_ms, UInt64 RemoveSystemCacheFromDumpDuration_ms)	PopulateBitmapForDump		CapturePagesWorkflow	Informational		
 Microsoft-Windows-Kernel-LiveDump	162	0	CapturePagesWorkflowHvlCollectLiveDump(UInt64 Duration_ms)	HvlCollectLiveDump		CapturePagesWorkflow	Informational		
 Microsoft-Windows-Kernel-LiveDump	163	0	CapturePagesWorkflowGenerateIptSecondaryData(UInt64 Duration_ms)	GenerateIptSecondaryData		CapturePagesWorkflow	Informational		
 Microsoft-Windows-Kernel-LiveDump	164	0	CapturePagesWorkflowDumpDataBuffering(UInt64 Duration_ms)	DumpDataBuffering		CapturePagesWorkflow	Informational		
@@ -48,8 +47,9 @@ Microsoft-Windows-Kernel-LiveDump	166	0	CapturePagesWorkflowUncorralProcessors(U
 Microsoft-Windows-Kernel-LiveDump	167	0	CapturePagesWorkflowCaptureMemoryPages(UInt64 MemoryCaptureDuration_ms, UInt64 SystemQuiescedDuration_ms, UInt64 EndMirroringPhasesDuration_ms, UInt64 TotalMirrorPhysicalMemoryCallbackDuration_ms, UInt64 TotalMirrorPhysicalMemoryCallbackBytes, UInt64 HvlCollectLivedumpDuration_ms, UInt64 DumpDataBufferingDuration_ms)	CaptureMemoryPages		CapturePagesWorkflow	Informational		
 Microsoft-Windows-Kernel-LiveDump	168	0	CapturePagesWorkflowMmDuplicateMemoryFailure(UInt32 NTStatus, UInt64 MirrorInProgress)	MmDuplicateMemoryFailure		CapturePagesWorkflow	Informational		
 Microsoft-Windows-Kernel-LiveDump	201	0	LiveDumpWriteDeferredDumpDataAPIAPIStart()	APIStart		LiveDumpWriteDeferredDumpDataAPI	Informational		
-Microsoft-Windows-Kernel-LiveDump	202	0	LiveDumpWriteDeferredDumpDataAPIAPIEnd(UInt32 NTStatus)	APIEnd		LiveDumpWriteDeferredDumpDataAPI	Informational		
 Microsoft-Windows-Kernel-LiveDump	203	0	LiveDumpWriteDeferredDumpDataAPIDumpFileWriteStart()	DumpFileWriteStart		LiveDumpWriteDeferredDumpDataAPI	Informational		
-Microsoft-Windows-Kernel-LiveDump	204	0	LiveDumpWriteDeferredDumpDataAPIDumpFileWriteEnd(UInt32 NTStatus, UInt64 TotalBytes, UInt64 HeaderBytes, UInt64 PrimaryDataBytes, UInt64 SecondaryDataBytes)	DumpFileWriteEnd		LiveDumpWriteDeferredDumpDataAPI	Informational		
+Microsoft-Windows-Kernel-LiveDump	204	1	LiveDumpWriteDeferredDumpDataAPIDumpFileWriteEnd_V1(UInt32 NTStatus, UInt64 TotalBytes, UInt64 HeaderBytes, UInt64 PrimaryDataBytes, UInt64 SecondaryDataBytes, UInt64 DumpWriteDuration_ms)	DumpFileWriteEnd		LiveDumpWriteDeferredDumpDataAPI	Informational		
 Microsoft-Windows-Kernel-LiveDump	251	0	LiveDumpDiscardDeferredDumpDataAPIAPIStart()	APIStart		LiveDumpDiscardDeferredDumpDataAPI	Informational		
-Microsoft-Windows-Kernel-LiveDump	252	0	LiveDumpDiscardDeferredDumpDataAPIAPIEnd(UInt32 NTStatus)	APIEnd		LiveDumpDiscardDeferredDumpDataAPI	Informational		
+Microsoft-Windows-Kernel-LiveDump	271	0	LiveDumpPolicyPolicyOperationFailed(AnsiString OperationType)	PolicyOperationFailed		LiveDumpPolicy	Informational		
+Microsoft-Windows-Kernel-LiveDump	272	0	LiveDumpPolicyPolicyValueChanged(UInt32 PolicyValue, UInt32 NTStatus)	PolicyValueChanged		LiveDumpPolicy	Informational		
+Microsoft-Windows-Kernel-LiveDump	273	0	LiveDumpPolicyLiveDumpdisabledonboot(UInt32 PolicyValue)	LiveDumpdisabledonboot		LiveDumpPolicy	Informational		

@@ -99,7 +99,7 @@ Microsoft-WindowsPhone-LocationServiceProvider	406	0	CompositePE406(UInt32 PeNam
 Microsoft-WindowsPhone-LocationServiceProvider	407	0	CompositePE407(UInt32 SessionType, Boolean IsSupportsNativePT, Boolean IsSupportsNativeDT, Boolean IsSupportsRequest)		Selfhost CompositePe	CompositePE	Informational		
 Microsoft-WindowsPhone-LocationServiceProvider	500	0	Geolocation(Pointer GeolocationClass, UInt32 SessionType, UInt32 AgeValue, UInt32 AccuracyValue, UInt32 RequestParameter)		Selfhost FixSession ClientApi	Geolocation	Informational		
 Microsoft-WindowsPhone-LocationServiceProvider	501	0	Geolocation501(Pointer GeolocationClass, HexInt32 Status)		Selfhost FixSession ClientApi	Geolocation	Informational		
-Microsoft-WindowsPhone-LocationServiceProvider	502	0	Geolocation502(Pointer GeolocationClass, HexInt32 PositionStatus, Double Latitude, Double Longitude, UInt32 HorizontalAccuracy, HexInt32 Status)		Selfhost Position FixSession ClientApi	Geolocation	Informational		
+Microsoft-WindowsPhone-LocationServiceProvider	502	0	Geolocation502(Pointer GeolocationClass, HexInt32 PositionStatus, Double Latitude, Double Longitude, Double HorizontalAccuracy, HexInt32 Status)		Selfhost Position FixSession ClientApi	Geolocation	Informational		
 Microsoft-WindowsPhone-LocationServiceProvider	503	0	Geolocation503(Pointer Geolocator, HexInt32 Status)		Selfhost Position FixSession ClientApi	Geolocation	Informational		
 Microsoft-WindowsPhone-LocationServiceProvider	504	0	Geolocation504(Int32 State)		ClientApi	Geolocation	Verbose		
 Microsoft-WindowsPhone-LocationServiceProvider	525	0	Geofencing(UInt32 Index, Double Latitude, Double Longitude, Double Radius, UInt64 StartTime, UInt64 Duration, UInt64 DwellTime, Boolean SingleUse)		Selfhost ClientApi	Geofencing	Informational		

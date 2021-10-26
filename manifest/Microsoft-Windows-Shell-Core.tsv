@@ -1122,12 +1122,8 @@ Microsoft-Windows-Shell-Core	18639	0	Shell32_PSC_Explorer_Template_ChangeStart()
 Microsoft-Windows-Shell-Core	18640	0	Shell32_PSC_Explorer_Template_ChangeStop()	Stop	Shell	Shell32_PSC_Explorer_Template_Change	Informational		
 Microsoft-Windows-Shell-Core	18641	0	Shell32_SHGetFolderLocationStart()	Start	APICalls	Shell32_SHGetFolderLocation	Informational		
 Microsoft-Windows-Shell-Core	18642	0	Shell32_SHGetFolderLocationStop()	Stop	APICalls	Shell32_SHGetFolderLocation	Informational		
-Microsoft-Windows-Shell-Core	18643	0	Shell32_SHGetFolderLocationExStart()	Start	APICalls	Shell32_SHGetFolderLocationEx	Informational		
-Microsoft-Windows-Shell-Core	18644	0	Shell32_SHGetFolderLocationExStop()	Stop	APICalls	Shell32_SHGetFolderLocationEx	Informational		
 Microsoft-Windows-Shell-Core	18645	0	Shell32_SHGetFolderPathStart()	Start	APICalls	Shell32_SHGetFolderPath	Informational		
 Microsoft-Windows-Shell-Core	18646	0	Shell32_SHGetFolderPathStop()	Stop	APICalls	Shell32_SHGetFolderPath	Informational		
-Microsoft-Windows-Shell-Core	18647	0	Shell32_SHGetFolderPathExStart()	Start	APICalls	Shell32_SHGetFolderPathEx	Informational		
-Microsoft-Windows-Shell-Core	18648	0	Shell32_SHGetFolderPathExStop()	Stop	APICalls	Shell32_SHGetFolderPathEx	Informational		
 Microsoft-Windows-Shell-Core	18649	0	Shell32_SHSetFolderPathStart()	Start	APICalls	Shell32_SHSetFolderPath	Informational		
 Microsoft-Windows-Shell-Core	18650	0	Shell32_SHSetFolderPathStop()	Stop	APICalls	Shell32_SHSetFolderPath	Informational		
 Microsoft-Windows-Shell-Core	18653	0	Shell32_DefView_Keydown()		Shell	Shell32_DefView_Keydown	Informational		
@@ -2373,8 +2369,8 @@ Microsoft-Windows-Shell-Core	62420	0	LogonTask_RestoreStart()	Start	Restore	Logo
 Microsoft-Windows-Shell-Core	62421	0	LogonTask_RestoreStop(UInt32 ApplicableProfileCount)	Stop	Restore	LogonTask_Restore	Informational		
 Microsoft-Windows-Shell-Core	62422	0	LogonTask_Restore(UInt32 FormFactor, UnicodeString DeviceName, UnicodeString OEMName, UnicodeString HardwareId, UInt16 SystemDatewMonth, UInt16 SystemDatewDay, UInt16 SystemDatewYear, UInt16 SystemDatewHour, UInt16 SystemDatewMinute, UInt16 SystemDatewSecond)		Restore	LogonTask_Restore	Informational		
 Microsoft-Windows-Shell-Core	62423	0	LogonTask_Restore62423(UnicodeString HardwareId)		Restore	LogonTask_Restore	Informational		
-Microsoft-Windows-Shell-Core	62440	0	AppDefaults_UserChoiceHashMismatch(UnicodeString ExtOrUriScheme, UnicodeString ProgId)			AppDefaults_UserChoiceHashMismatch	Informational		
-Microsoft-Windows-Shell-Core	62441	0	AppDefaults_ResetToRecommended(UnicodeString ProgId, UnicodeString ExtOrUriScheme)			AppDefaults_ResetToRecommended	Informational		
+Microsoft-Windows-Shell-Core	62440	0	AppDefaults_UserChoiceHashMismatch(UnicodeString ExtOrUriScheme, UnicodeString ProgId, UnicodeString UserSid, UnicodeString HashInRegistry, UnicodeString ComputedHash, UInt16 SystemDatewYear, UInt16 SystemDatewMonth, UInt16 SystemDatewDayOfWeek, UInt16 SystemDatewDay, UInt16 SystemDatewHour, UInt16 SystemDatewMinute)			AppDefaults_UserChoiceHashMismatch	Informational		
+Microsoft-Windows-Shell-Core	62441	0	AppDefaults_ResetToRecommended(UnicodeString ProgId, UnicodeString ExtOrUriScheme, UnicodeString CurrentDefaultProgId, Boolean ShouldToast)			AppDefaults_ResetToRecommended	Informational		
 Microsoft-Windows-Shell-Core	62442	0	AppDefaults_UpgradeToRecommendedApp(UnicodeString ProgId, UnicodeString CurrentDefaultProgId, UnicodeString ExtOrUriScheme)			AppDefaults_UpgradeToRecommendedApp	Informational		
 Microsoft-Windows-Shell-Core	62443	0	AppDefaults_Info(UnicodeString Info)			AppDefaults_Info	Informational		
 Microsoft-Windows-Shell-Core	62460	0	OOBEHealth_Progress(Int32 DataVersion, UInt64 HealthStateFlags, UInt64 CensusFlags, UInt64 SecondsSinceBoot, UnicodeString ImageIdentifier, UnicodeString TrackingInfo)		Shell OOBEHealth	OOBEHealth_Progress	Informational		

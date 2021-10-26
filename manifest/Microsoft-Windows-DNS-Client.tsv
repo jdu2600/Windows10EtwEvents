@@ -2,6 +2,7 @@ provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channe
 Microsoft-Windows-DNS-Client	1000	0	DnsNoServerConfigV4(UInt32 Location, UInt32 Context)			DnsNoServerConfigV4	Informational		
 Microsoft-Windows-DNS-Client	1001	0	DnsServerForInterface(UnicodeString Interface, UInt32 TotalServerCount, UInt32 Index, UInt8 DynamicAddress, UInt32 AddressLength, Binary Address)			DnsServerForInterface	Informational		
 Microsoft-Windows-DNS-Client	1002	0	DnsServerQueryChange(UnicodeString Interface, UInt32 AddressLength, Binary Address)			DnsServerQueryChange	Informational		
+Microsoft-Windows-DNS-Client	1002	1	DnsServerQueryChange_V1(UnicodeString Interface, UInt32 AddressLength, Binary Address, UInt32 ClientPID)			DnsServerQueryChange	Informational		
 Microsoft-Windows-DNS-Client	1003	0	DnsServerValidationSuccess(UInt32 AddressLength, Binary Address)			DnsServerValidationSuccess	Informational		
 Microsoft-Windows-DNS-Client	1005	0	DnsServerValidationFailure(UInt32 AddressLength, Binary Address)			DnsServerValidationFailure	Error		
 Microsoft-Windows-DNS-Client	1007	0	DnsMissingPrimarySuffix(UInt32 ErrorCode, UInt32 Location, UInt32 Context)			DnsMissingPrimarySuffix	Error		
@@ -11,21 +12,33 @@ Microsoft-Windows-DNS-Client	1010	0	DnsNonMatchingSuffixSystem(UnicodeString Dns
 Microsoft-Windows-DNS-Client	1011	0	DnsHostFileError(UInt32 ErrorCode, UInt32 Location, UInt32 Context)			DnsHostFileError	Error		
 Microsoft-Windows-DNS-Client	1012	0	DnsHostFileErrorSystem(UInt32 ErrorCode, UInt32 Location, UInt32 Context)		ut:DnsAutoLogKeyword	DnsHostFileErrorSystem	Error		
 Microsoft-Windows-DNS-Client	1013	0	DnsAllServersTimeout(UnicodeString QueryName, UInt32 AddressLength, Binary Address)			DnsAllServersTimeout	Error		
+Microsoft-Windows-DNS-Client	1013	1	DnsAllServersTimeout_V1(UnicodeString QueryName, UInt32 AddressLength, Binary Address, UInt32 ClientPID)			DnsAllServersTimeout	Error		
 Microsoft-Windows-DNS-Client	1014	0	DnsAllServersTimeoutSystem(UnicodeString QueryName, UInt32 AddressLength, Binary Address)		ut:DnsAutoLogKeyword	DnsAllServersTimeoutSystem	Warning		
+Microsoft-Windows-DNS-Client	1014	1	DnsAllServersTimeoutSystem_V1(UnicodeString QueryName, UInt32 AddressLength, Binary Address, UInt32 ClientPID)		ut:DnsAutoLogKeyword	DnsAllServersTimeoutSystem	Warning		
 Microsoft-Windows-DNS-Client	1015	0	DnsServerTimeout(UnicodeString QueryName, UInt32 AddressLength, Binary Address)			DnsServerTimeout	Informational		
+Microsoft-Windows-DNS-Client	1015	1	DnsServerTimeout_V1(UnicodeString QueryName, UInt32 AddressLength, Binary Address, UInt32 ClientPID)			DnsServerTimeout	Informational		
 Microsoft-Windows-DNS-Client	1016	0	DnsNameError(UnicodeString QueryName, UInt32 AddressLength, Binary Address)			DnsNameError	Informational		
+Microsoft-Windows-DNS-Client	1016	1	DnsNameError_V1(UnicodeString QueryName, UInt32 AddressLength, Binary Address, UInt32 ClientPID)			DnsNameError	Informational		
 Microsoft-Windows-DNS-Client	1017	0	DnsAuthoritativeResponse(UnicodeString QueryName, UInt32 AddressLength, Binary Address)			DnsAuthoritativeResponse	Informational		
+Microsoft-Windows-DNS-Client	1017	1	DnsAuthoritativeResponse_V1(UnicodeString QueryName, UInt32 AddressLength, Binary Address, UInt32 ClientPID)			DnsAuthoritativeResponse	Informational		
 Microsoft-Windows-DNS-Client	1018	0	DnsLinkLocal(UnicodeString QueryName, UInt32 AddressLength, Binary Address, UInt32 DnsAddressLength, Binary DnsAddress)			DnsLinkLocal	Informational		
+Microsoft-Windows-DNS-Client	1018	1	DnsLinkLocal_V1(UnicodeString QueryName, UInt32 AddressLength, Binary Address, UInt32 DnsAddressLength, Binary DnsAddress, UInt32 ClientPID)			DnsLinkLocal	Informational		
 Microsoft-Windows-DNS-Client	1019	0	DnsNoServerConfigV6(UInt32 Location, UInt32 Context)			DnsNoServerConfigV6	Informational		
 Microsoft-Windows-DNS-Client	1020	0	DnsReadPolicyTable(UnicodeString KeyName, UInt32 DnsSecValidationRequired, UInt32 DnsQueryOverIPSec, UInt32 DnsEncryption, UnicodeString DirectAccessServerList, UInt32 RemoteIPSEC, UInt32 RemoteEncryption, UInt32 ProxyType, UnicodeString ProxyName)		ut:PolicyTable	DnsReadPolicyTable	Informational		
 Microsoft-Windows-DNS-Client	1021	0	DnsMatchPolicyInfo(UnicodeString QueryName, UnicodeString KeyName, UInt32 DnsSecValidationRequired, UInt32 DnsQueryOverIPSec, UInt32 DnsEncryption, UnicodeString DirectAccessServerList, UInt32 ProxyType, UnicodeString ProxyName)		ut:PolicyTable	DnsMatchPolicyInfo	Informational		
 Microsoft-Windows-DNS-Client	1022	0	DnsSecureNoFallback(UnicodeString QueryName)		ut:PolicyTable	DnsSecureNoFallback	Informational		
+Microsoft-Windows-DNS-Client	1022	1	DnsSecureNoFallback_V1(UnicodeString QueryName, UInt32 ClientPID)		ut:PolicyTable	DnsSecureNoFallback	Informational		
 Microsoft-Windows-DNS-Client	1023	0	DnsPolicySystemReadError(UnicodeString RuleName, UInt32 ErrorCode)		ut:DnsAutoLogKeyword	DnsPolicySystemReadError	Error		
 Microsoft-Windows-DNS-Client	1024	0	DnsQueryBadXid(UnicodeString QueryName, UInt32 AddressLength, Binary Address)			DnsQueryBadXid	Informational		
+Microsoft-Windows-DNS-Client	1024	1	DnsQueryBadXid_V1(UnicodeString QueryName, UInt32 AddressLength, Binary Address, UInt32 ClientPID)			DnsQueryBadXid	Informational		
 Microsoft-Windows-DNS-Client	1025	0	DnsQueryInvalidServerIp(UnicodeString QueryName, UInt32 AddressLength, Binary Address)			DnsQueryInvalidServerIp	Informational		
+Microsoft-Windows-DNS-Client	1025	1	DnsQueryInvalidServerIp_V1(UnicodeString QueryName, UInt32 AddressLength, Binary Address, UInt32 ClientPID)			DnsQueryInvalidServerIp	Informational		
 Microsoft-Windows-DNS-Client	1026	0	DnsQueryInvalidQuestion(UnicodeString QueryName, UnicodeString ResponseQuestion, UInt32 AddressLength, Binary Address)			DnsQueryInvalidQuestion	Informational		
+Microsoft-Windows-DNS-Client	1026	1	DnsQueryInvalidQuestion_V1(UnicodeString QueryName, UnicodeString ResponseQuestion, UInt32 AddressLength, Binary Address, UInt32 ClientPID)			DnsQueryInvalidQuestion	Informational		
 Microsoft-Windows-DNS-Client	1027	0	task_0(UnicodeString QueryName)		ut:PolicyTable	task_0	Informational		
+Microsoft-Windows-DNS-Client	1027	1	task_0_V1(UnicodeString QueryName, UInt32 ClientPID)		ut:PolicyTable	task_0	Informational		
 Microsoft-Windows-DNS-Client	1028	0	DnsMatchPolicyInfo1028(UnicodeString QueryName, UnicodeString KeyName, UInt32 DnsSecValidationRequired, UInt32 DnsQueryOverIPSec, UInt32 DnsEncryption, UnicodeString DirectAccessServerList, UInt32 ProxyType, UnicodeString ProxyName, UnicodeString GenericServerList, UInt32 IdnConfig)		ut:PolicyTable	DnsMatchPolicyInfo	Informational		
+Microsoft-Windows-DNS-Client	1028	1	DnsMatchPolicyInfo1028_V1(UnicodeString QueryName, UnicodeString KeyName, UInt32 DnsSecValidationRequired, UInt32 DnsQueryOverIPSec, UInt32 DnsEncryption, UnicodeString DirectAccessServerList, UInt32 ProxyType, UnicodeString ProxyName, UnicodeString GenericServerList, UInt32 IdnConfig, UInt32 ClientPID)		ut:PolicyTable	DnsMatchPolicyInfo	Informational		
 Microsoft-Windows-DNS-Client	3000	0	task_03000(UnicodeString QueryName, UInt32 QueryType, UInt64 QueryOptions)		ut:PerfCheckPoints	task_0	Informational		
 Microsoft-Windows-DNS-Client	3001	0	task_03001(UInt32 Status)		ut:PerfCheckPoints	task_0	Informational		
 Microsoft-Windows-DNS-Client	3002	0	task_03002(UnicodeString QueryName, UInt32 QueryType, UInt64 QueryOptions)		ut:PerfCheckPoints	task_0	Informational		
@@ -36,16 +49,27 @@ Microsoft-Windows-DNS-Client	3006	0	task_03006(UnicodeString QueryName, UInt32 Q
 Microsoft-Windows-DNS-Client	3007	0	task_03007(UnicodeString QueryName)			task_0	Informational		
 Microsoft-Windows-DNS-Client	3008	0	task_03008(UnicodeString QueryName, UInt32 QueryType, UInt64 QueryOptions, UInt32 QueryStatus, UnicodeString QueryResults)			task_0	Informational		
 Microsoft-Windows-DNS-Client	3009	0	task_03009(UnicodeString QueryName, UInt32 IsParallelNetworkQuery, UInt32 NetworkIndex, UInt32 InterfaceCount, UnicodeString AdapterName, UnicodeString LocalAddress, UnicodeString DNSServerAddress)			task_0	Informational		
+Microsoft-Windows-DNS-Client	3009	1	task_03009_V1(UnicodeString QueryName, UInt32 IsParallelNetworkQuery, UInt32 NetworkIndex, UInt32 InterfaceCount, UnicodeString AdapterName, UnicodeString LocalAddress, UnicodeString DNSServerAddress, UInt32 ClientPID)			task_0	Informational		
 Microsoft-Windows-DNS-Client	3010	0	task_03010(UnicodeString QueryName, UInt32 QueryType, UnicodeString DnsServerIpAddress)			task_0	Informational		
+Microsoft-Windows-DNS-Client	3010	1	task_03010_V1(UnicodeString QueryName, UInt32 QueryType, UnicodeString DnsServerIpAddress, UInt32 ClientPID)			task_0	Informational		
 Microsoft-Windows-DNS-Client	3011	0	task_03011(UnicodeString QueryName, UInt32 QueryType, UnicodeString DnsServerIpAddress, UInt32 ResponseStatus)			task_0	Informational		
+Microsoft-Windows-DNS-Client	3011	1	task_03011_V1(UnicodeString QueryName, UInt32 QueryType, UnicodeString DnsServerIpAddress, UInt32 ResponseStatus, UInt32 ClientPID)			task_0	Informational		
 Microsoft-Windows-DNS-Client	3012	0	task_03012(UnicodeString QueryName, UInt32 NetworkIndex, UInt32 InterfaceCount, UnicodeString AdapterName, UnicodeString LocalAddress)			task_0	Informational		
+Microsoft-Windows-DNS-Client	3012	1	task_03012_V1(UnicodeString QueryName, UInt32 NetworkIndex, UInt32 InterfaceCount, UnicodeString AdapterName, UnicodeString LocalAddress, UInt32 ClientPID)			task_0	Informational		
 Microsoft-Windows-DNS-Client	3013	0	task_03013(UnicodeString QueryName, UInt32 Status, UnicodeString QueryResults)			task_0	Informational		
+Microsoft-Windows-DNS-Client	3013	1	task_03013_V1(UnicodeString QueryName, UInt32 Status, UnicodeString QueryResults, UInt32 ClientPID)			task_0	Informational		
 Microsoft-Windows-DNS-Client	3014	0	task_03014(UnicodeString QueryName)			task_0	Informational		
+Microsoft-Windows-DNS-Client	3014	1	task_03014_V1(UnicodeString QueryName, UInt32 ClientPID)			task_0	Informational		
 Microsoft-Windows-DNS-Client	3015	0	task_03015(UnicodeString QueryName)			task_0	Informational		
 Microsoft-Windows-DNS-Client	3016	0	task_03016(UnicodeString QueryName, UInt32 QueryType, UInt64 QueryOptions, UInt32 InterfaceIndex)			task_0	Informational		
+Microsoft-Windows-DNS-Client	3016	1	task_03016_V1(UnicodeString QueryName, UInt32 QueryType, UInt64 QueryOptions, UInt32 InterfaceIndex, UInt32 ClientPID)			task_0	Informational		
 Microsoft-Windows-DNS-Client	3018	0	task_03018(UnicodeString QueryName, UInt32 QueryType, UInt64 QueryOptions, UInt32 Status, UnicodeString QueryResults)			task_0	Informational		
+Microsoft-Windows-DNS-Client	3018	1	task_03018_V1(UnicodeString QueryName, UInt32 QueryType, UInt64 QueryOptions, UInt32 Status, UnicodeString QueryResults, UInt32 ClientPID)			task_0	Informational		
 Microsoft-Windows-DNS-Client	3019	0	task_03019(UnicodeString QueryName, UInt32 QueryType, UInt32 InterfaceIndex, UInt32 NetworkIndex)			task_0	Informational		
+Microsoft-Windows-DNS-Client	3019	1	task_03019_V1(UnicodeString QueryName, UInt32 QueryType, UInt32 InterfaceIndex, UInt32 NetworkIndex, UInt32 ClientPID)			task_0	Informational		
 Microsoft-Windows-DNS-Client	3020	0	task_03020(UnicodeString QueryName, UInt32 QueryType, UInt32 NetworkIndex, UInt32 InterfaceIndex, UInt32 Status, UnicodeString QueryResults)			task_0	Informational		
+Microsoft-Windows-DNS-Client	3020	1	task_03020_V1(UnicodeString QueryName, UInt32 QueryType, UInt32 NetworkIndex, UInt32 InterfaceIndex, UInt32 Status, UnicodeString QueryResults, UInt32 ClientPID)			task_0	Informational		
+Microsoft-Windows-DNS-Client	3023	0	task_03023(UnicodeString OperationName, UnicodeString Name, UInt32 Flag, UInt32 ClientPID)			task_0	Informational		
 Microsoft-Windows-DNS-Client	8001	0	DnsGenericError(UInt32 ErrorCode)		ut:DnsAutoLogKeyword	DnsGenericError	Error		
 Microsoft-Windows-DNS-Client	8002	0	DnsGenericError8002(UInt32 ErrorCode)		ut:DnsAutoLogKeyword	DnsGenericError	Error		
 Microsoft-Windows-DNS-Client	8003	0	DnsRegistration(UnicodeString AdapterName, UnicodeString HostName, UnicodeString AdapterSuffixName, UnicodeString DnsServerList, UnicodeString SentUpdateServer, UnicodeString Ipaddress, UInt32 ErrorCode)			DnsRegistration	Warning		
@@ -84,6 +108,8 @@ Microsoft-Windows-DNS-Client	8035	0	DnsRegistration8035(UnicodeString AdapterNam
 Microsoft-Windows-DNS-Client	8036	0	DnsRegistration8036(UnicodeString AdapterName, UnicodeString HostName, UnicodeString AdapterSuffixName, UnicodeString DnsServerList, UnicodeString SentUpdateServer, UnicodeString Ipaddress, UInt32 ErrorCode)			DnsRegistration	Warning		
 Microsoft-Windows-DNS-Client	8037	0	DnsRegistration8037(UnicodeString AdapterName, UnicodeString HostName, UnicodeString AdapterSuffixName, UnicodeString DnsServerList, UnicodeString SentUpdateServer, UnicodeString Ipaddress, UInt32 ErrorCode)			DnsRegistration	Warning		
 Microsoft-Windows-DNS-Client	8038	0	DnsRegistration8038(UnicodeString AdapterName, UnicodeString HostName, UnicodeString AdapterSuffixName, UnicodeString DnsServerList, UnicodeString SentUpdateServer, UnicodeString Ipaddress, UInt32 ErrorCode)			DnsRegistration	Warning		
+Microsoft-Windows-DNS-Client	8040	0	DnsInterception(UnicodeString DllName)			DnsInterception	Warning		
+Microsoft-Windows-DNS-Client	8042	0	DnsInterception8042(UnicodeString DllName)			DnsInterception	Error		
 Microsoft-Windows-DNS-Client	60004	0	DnsNetError(UInt32 ErrorCode, UInt32 Location, UInt32 Context)			DnsNetError	Error		
 Microsoft-Windows-DNS-Client	60005	0	DnsNetWarning(UInt32 WarningCode, UInt32 Location, UInt32 Context)			DnsNetWarning	Warning		
 Microsoft-Windows-DNS-Client	60006	0	DnsStateTransition(UInt8 NextState, UInt32 Context)			DnsStateTransition	Informational		

@@ -1,20 +1,38 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-PerfNet	1000	0	task_0PCODE_128pcode_128()	opcode_128		task_0	Always		
-Microsoft-Windows-PerfNet	1000	1	task_0_V1(UInt32 Win32Error)			task_0	Error		
-Microsoft-Windows-PerfNet	1001	0	task_0PCODE_192pcode_192()	opcode_192		task_0	Always		
-Microsoft-Windows-PerfNet	1001	1	task_01001_V1()			task_0	Error		
-Microsoft-Windows-PerfNet	2000	0	task_0PCODE_192pcode_1922000()	opcode_192		task_0	Always		
-Microsoft-Windows-PerfNet	2000	1	task_02000_V1(UInt32 Win32Error)			task_0	Error		
-Microsoft-Windows-PerfNet	2001	0	task_0PCODE_192pcode_1922001()	opcode_192		task_0	Always		
-Microsoft-Windows-PerfNet	2001	1	task_02001_V1(UInt32 Win32Error)			task_0	Error		
-Microsoft-Windows-PerfNet	2001	2	task_02001_V2(UInt32 NTSTATUS)			task_0	Error		
-Microsoft-Windows-PerfNet	2002	0	task_0PCODE_192pcode_1922002()	opcode_192		task_0	Always		
-Microsoft-Windows-PerfNet	2002	1	task_02002_V1(UInt32 NTSTATUS)			task_0	Error		
-Microsoft-Windows-PerfNet	2003	0	task_0PCODE_192pcode_1922003()	opcode_192		task_0	Always		
-Microsoft-Windows-PerfNet	2003	1	task_02003_V1(UInt32 NTSTATUS)			task_0	Error		
-Microsoft-Windows-PerfNet	2004	0	task_0PCODE_192pcode_1922004()	opcode_192		task_0	Always		
-Microsoft-Windows-PerfNet	2004	1	task_02004_V1(UInt32 NTSTATUS)			task_0	Error		
-Microsoft-Windows-PerfNet	2005	0	task_0PCODE_192pcode_1922005()	opcode_192		task_0	Always		
-Microsoft-Windows-PerfNet	2005	1	task_02005_V1(UInt32 NTSTATUS, UInt32 IOCompletionNTSTATUS)			task_0	Error		
-Microsoft-Windows-PerfNet	2006	0	task_0PCODE_192pcode_1922006()	opcode_192		task_0	Always		
-Microsoft-Windows-PerfNet	2006	1	task_02006_V1(UInt32 NTSTATUS, UInt32 IOCompletionNTSTATUS)			task_0	Error		
+Microsoft-Windows-PerfNet	1000	1	task_0_V1(UInt32 Win32Error)		Debug	task_0	Warning		
+Microsoft-Windows-PerfNet	1001	1	task_01001_V1()		Debug	task_0	Warning		
+Microsoft-Windows-PerfNet	2000	1	task_02000_V1(UInt32 Win32Error)		Debug	task_0	Warning		
+Microsoft-Windows-PerfNet	2001	1	task_02001_V1(UInt32 Win32Error)		Debug	task_0	Warning		
+Microsoft-Windows-PerfNet	2001	2	task_02001_V2(UInt32 NTSTATUS)		Debug	task_0	Warning		
+Microsoft-Windows-PerfNet	2002	1	task_02002_V1(UInt32 NTSTATUS)		Debug	task_0	Warning		
+Microsoft-Windows-PerfNet	2003	1	task_02003_V1(UInt32 NTSTATUS)		Debug	task_0	Warning		
+Microsoft-Windows-PerfNet	2004	1	task_02004_V1(UInt32 NTSTATUS)		Debug	task_0	Warning		
+Microsoft-Windows-PerfNet	2005	1	task_02005_V1(UInt32 NTSTATUS, UInt32 IOCompletionNTSTATUS)		Debug	task_0	Warning		
+Microsoft-Windows-PerfNet	2006	1	task_02006_V1(UInt32 NTSTATUS, UInt32 IOCompletionNTSTATUS)		Debug	task_0	Warning		
+Microsoft-Windows-PerfNet	2007	1	task_02007_V1()		Debug	task_0	Warning		
+Microsoft-Windows-PerfNet	3000	1	task_03000_V1()		Debug	task_0	Verbose		
+Microsoft-Windows-PerfNet	3099	1	task_03099_V1()		Debug	task_0	Informational		
+Microsoft-Windows-PerfNet	3100	1	task_03100_V1(UnicodeString ValueName)		Debug	task_0	Verbose		
+Microsoft-Windows-PerfNet	3101	1	task_03101_V1()		Debug	task_0	Warning		
+Microsoft-Windows-PerfNet	3102	1	task_03102_V1()		Debug	task_0	Verbose		
+Microsoft-Windows-PerfNet	3103	1	task_03103_V1(UInt32 Available, UInt32 Required)		Debug	task_0	Warning		
+Microsoft-Windows-PerfNet	3199	1	task_03199_V1()		Debug	task_0	Informational		
+Microsoft-Windows-PerfNet	3200	1	task_03200_V1()		Debug	task_0	Verbose		
+Microsoft-Windows-PerfNet	4000	1	task_04000_V1()		Debug	task_0	Verbose		
+Microsoft-Windows-PerfNet	4001	1	task_04001_V1()		Debug	task_0	Error		
+Microsoft-Windows-PerfNet	4002	1	task_04002_V1()		Debug	task_0	Verbose		
+Microsoft-Windows-PerfNet	4010	1	task_04010_V1(UInt32 Error)		Debug	task_0	Warning		
+Microsoft-Windows-PerfNet	4099	1	task_04099_V1()		Debug	task_0	Informational		
+Microsoft-Windows-PerfNet	4100	1	task_04100_V1(UnicodeString ValueName)		Debug	task_0	Verbose		
+Microsoft-Windows-PerfNet	4105	1	task_04105_V1(UInt32 Status)		Debug	task_0	Informational		
+Microsoft-Windows-PerfNet	4106	1	task_04106_V1()		Debug	task_0	Warning		
+Microsoft-Windows-PerfNet	4108	1	task_04108_V1(UInt32 Status)		Debug	task_0	Error		
+Microsoft-Windows-PerfNet	4110	1	task_04110_V1(UInt32 Status)		Debug	task_0	Error		
+Microsoft-Windows-PerfNet	4111	1	task_04111_V1()		Debug	task_0	Verbose		
+Microsoft-Windows-PerfNet	4112	1	task_04112_V1(UInt32 Available, UInt32 Required)		Debug	task_0	Warning		
+Microsoft-Windows-PerfNet	4113	1	task_04113_V1(UInt32 Status)		Debug	task_0	Error		
+Microsoft-Windows-PerfNet	4114	1	task_04114_V1()		Debug	task_0	Verbose		
+Microsoft-Windows-PerfNet	4116	1	task_04116_V1(UInt32 Available, UInt32 Required)		Debug	task_0	Warning		
+Microsoft-Windows-PerfNet	4121	1	task_04121_V1()		Debug	task_0	Warning		
+Microsoft-Windows-PerfNet	4199	1	task_04199_V1()		Debug	task_0	Informational		
+Microsoft-Windows-PerfNet	4200	1	task_04200_V1()		Debug	task_0	Verbose		

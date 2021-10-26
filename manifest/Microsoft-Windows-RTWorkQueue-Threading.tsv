@@ -24,7 +24,7 @@ Microsoft-Windows-RTWorkQueue-Threading	4485	0	WorkQueue:DeadlineYieldStop(UInt3
 Microsoft-Windows-RTWorkQueue-Threading	4486	0	WorkQueue:UpdateDeadlineQueue(Pointer WorkQueuePointer, UInt32 WorkQueueID, UInt32 TotalCount, UInt32 ImmediateCount, Int64 NextDeadline, Pointer ItemPointer)			WorkQueue:UpdateDeadlineQueue	Verbose		
 Microsoft-Windows-RTWorkQueue-Threading	4487	0	WorkQueue:LongRunningStart(UInt32 WorkQueueID, UInt32 TaskGroupID)	Start		WorkQueue:LongRunning	Verbose		
 Microsoft-Windows-RTWorkQueue-Threading	4488	0	WorkQueue:LongRunningStop(UInt32 WorkQueueID, UInt32 TaskGroupID)	Stop		WorkQueue:LongRunning	Verbose		
-Microsoft-Windows-RTWorkQueue-Threading	4489	0	WorkQueue:StartTimer(Pointer WorkQueuePointer, UInt32 WorkQueueID, Pointer TimerPointer, Int64 Timeout, Boolean IsPeriodic)			WorkQueue:StartTimer	Verbose		
+Microsoft-Windows-RTWorkQueue-Threading	4489	1	WorkQueue:StartTimer_V1(Pointer WorkQueuePointer, UInt32 WorkQueueID, Pointer TimerPointer, Int64 Timeout, Boolean IsPeriodic, UInt32 Tolerance_ms)			WorkQueue:StartTimer	Verbose		
 Microsoft-Windows-RTWorkQueue-Threading	4490	0	WorkQueue:ExecuteTimer(Pointer WorkQueuePointer, UInt32 WorkQueueID, Pointer TimerPointer, Boolean IsPeriodic)			WorkQueue:ExecuteTimer	Verbose		
 Microsoft-Windows-RTWorkQueue-Threading	4493	0	UpdateSelectWorkQueuesCpuGroupMaskStart(UInt64 ProcessorGroup, UInt64 ProcessorMask)	Start		UpdateSelectWorkQueuesCpuGroupMask	Informational		
 Microsoft-Windows-RTWorkQueue-Threading	4494	0	UpdateSelectWorkQueuesCpuGroupMaskStop(UInt64 ProcessorGroup, UInt64 ProcessorMask, UInt32 hResult)	Stop		UpdateSelectWorkQueuesCpuGroupMask	Informational		
@@ -55,3 +55,5 @@ Microsoft-Windows-RTWorkQueue-Threading	4518	0	TaskGroupStop(Pointer TaskGroup)	
 Microsoft-Windows-RTWorkQueue-Threading	4519	0	TaskGroup(Pointer TaskGroup, UInt32 RefCount)		Telemetry	TaskGroup	Verbose		
 Microsoft-Windows-RTWorkQueue-Threading	4520	0	TaskGroup4520(UInt32 ObjectCount)		Telemetry	TaskGroup	Verbose		
 Microsoft-Windows-RTWorkQueue-Threading	4521	0	TaskGroup4521(Pointer TaskGroup, UInt32 TaskID)		Telemetry	TaskGroup	Verbose		
+Microsoft-Windows-RTWorkQueue-Threading	4522	0	Platform:Init(Pointer Platform)			Platform:Init	Informational		
+Microsoft-Windows-RTWorkQueue-Threading	4523	0	Platform:ShutdownStop4523(Pointer Platform)	Stop		Platform:Shutdown	Informational		

@@ -1,7 +1,12 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-StorageManagement	1	0	task_0(UnicodeString Message, AnsiString FileName, UInt32 LineNumber)		EnterExit	task_0	Informational		
-Microsoft-Windows-StorageManagement	2	0	task_02(UnicodeString Message, HexInt32 ErrorCode, AnsiString FileName, UInt32 LineNumber)			task_0	Error		
-Microsoft-Windows-StorageManagement	3	0	task_03(UnicodeString Message, AnsiString FileName, UInt32 LineNumber)			task_0	Informational		
-Microsoft-Windows-StorageManagement	4	0	task_04(UnicodeString ClassName, UnicodeString MethodName, UInt32 ErrorCode, UnicodeString MessageString)			task_0	Error		
-Microsoft-Windows-StorageManagement	5	0	task_05(UnicodeString ClassName, UnicodeString MethodName, UInt32 ErrorCode)			task_0	Error		
-Microsoft-Windows-StorageManagement	6	0	task_06(UInt32 ErrorCode)			task_0	Error		
+Microsoft-Windows-StorageManagement	1	1	task_0_V1(UnicodeString Message, AnsiString FileName, UInt32 LineNumber)		EnterExit	task_0	Informational		
+Microsoft-Windows-StorageManagement	2	1	task_02_V1(UnicodeString Message, HexInt32 ErrorCode, AnsiString FileName, UInt32 LineNumber)			task_0	Error		
+Microsoft-Windows-StorageManagement	3	1	task_03_V1(UnicodeString Message, AnsiString FileName, UInt32 LineNumber)			task_0	Informational		
+Microsoft-Windows-StorageManagement	4	1	task_04_V1(UnicodeString ClassName, UnicodeString MethodName, UInt32 ErrorCode, UnicodeString MessageString)			task_0	Error		
+Microsoft-Windows-StorageManagement	5	1	task_05_V1(UnicodeString ClassName, UnicodeString MethodName, UInt32 ErrorCode)			task_0	Error		
+Microsoft-Windows-StorageManagement	6	2	task_06_V2(UInt32 ErrorCode, UnicodeString Operation)			task_0	Error		
+Microsoft-Windows-StorageManagement	7	1	task_07_V1(UInt32 StartTime_msecs)			task_0	Informational		
+Microsoft-Windows-StorageManagement	8	1	task_08_V1(UInt32 LoadTime_msecs)			task_0	Informational		
+Microsoft-Windows-StorageManagement	9	1	task_09_V1(UnicodeString ClassName, UInt32 ResultCount, UInt32 OperationTime_msecs)			task_0	Informational		
+Microsoft-Windows-StorageManagement	10	1	task_010_V1(UnicodeString ClassName, UInt32 OperationTime_msecs)			task_0	Informational		
+Microsoft-Windows-StorageManagement	11	1	task_011_V1(UnicodeString ClassName, UnicodeString MethodName, UInt32 OperationTime_msecs)			task_0	Informational		

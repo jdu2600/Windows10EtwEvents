@@ -25,9 +25,9 @@ Microsoft-Windows-ESE	122	0	ESE_LogWrite_Trace(Int32 lgenData, UInt32 ibLogData,
 Microsoft-Windows-ESE	123	0	ESE_EventLogInfo_Trace(UnicodeString szTrace)		Trace	ESE_EventLogInfo_Trace	Informational		
 Microsoft-Windows-ESE	124	0	ESE_EventLogWarn_Trace(UnicodeString szTrace)		Trace	ESE_EventLogWarn_Trace	Warning		
 Microsoft-Windows-ESE	125	0	ESE_EventLogError_Trace(UnicodeString szTrace)		Trace	ESE_EventLogError_Trace	Error		
-Microsoft-Windows-ESE	126	0	ESE_TimerQueueSchedule_Trace(Pointer pfnTask, Pointer pvTaskContext, Pointer dwContext, UInt32 dtickDelay, UInt32 dtickPeriod)		Task	ESE_TimerQueueSchedule_Trace	Verbose		
-Microsoft-Windows-ESE	127	0	ESE_TimerQueueRun_Trace(Pointer pfnTask, Pointer pvTaskContext, Pointer dwContext, UInt64 cRuns)		Task	ESE_TimerQueueRun_Trace	Verbose		
-Microsoft-Windows-ESE	128	0	ESE_TimerQueueCancel_Trace(Pointer pfnTask, Pointer pvTaskContext)		Task	ESE_TimerQueueCancel_Trace	Verbose		
+Microsoft-Windows-ESE	126	0	ESE_TimerQueueScheduleDeprecated_Trace()		Task	ESE_TimerQueueScheduleDeprecated_Trace	Verbose		
+Microsoft-Windows-ESE	127	0	ESE_TimerQueueRunDeprecated_Trace()		Task	ESE_TimerQueueRunDeprecated_Trace	Verbose		
+Microsoft-Windows-ESE	128	0	ESE_TimerQueueCancelDeprecated_Trace()		Task	ESE_TimerQueueCancelDeprecated_Trace	Verbose		
 Microsoft-Windows-ESE	129	0	ESE_TimerTaskSchedule_Trace(Pointer posttTimerHandle, Pointer pfnTask, Pointer pvTaskGroupContext, Pointer pvRuntimeContext, UInt32 dtickMinDelay, UInt32 dtickSlopDelay)		Task	ESE_TimerTaskSchedule_Trace	Verbose		
 Microsoft-Windows-ESE	130	0	ESE_TimerTaskRun_Trace(Pointer posttTimerHandle, Pointer pfnTask, Pointer pvTaskGroupContext, Pointer pvRuntimeContext, UInt64 cRuns)		Task	ESE_TimerTaskRun_Trace	Verbose		
 Microsoft-Windows-ESE	131	0	ESE_TimerTaskCancel_Trace(Pointer posttTimerHandle, Pointer pfnTask, Pointer pvTaskGroupContext)		Task	ESE_TimerTaskCancel_Trace	Verbose		
@@ -74,7 +74,8 @@ Microsoft-Windows-ESE	171	0	ESE_IOThreadIssueStart_Trace()		IO	ESE_IOThreadIssue
 Microsoft-Windows-ESE	172	0	ESE_IOThreadIssuedDisk_Trace(UInt32 dwDiskId, UInt8 fFromCompletion, Int64 ipass, Int32 err, UInt32 cioProcessed, UInt64 usRuntime)		IO	ESE_IOThreadIssuedDisk_Trace	Informational		
 Microsoft-Windows-ESE	173	0	ESE_IOThreadIssueProcessedIO_Trace(Int32 err, UInt32 cDisksProcessed, UInt64 usRuntime)		IO	ESE_IOThreadIssueProcessedIO_Trace	Informational		
 Microsoft-Windows-ESE	174	0	ESE_IOIoreqCompletion_Trace(UInt8 fWrite, UInt64 iFile, UInt64 ibOffset, UInt32 cbData, UInt32 dwDiskNumber, UInt32 tidAlloc, UInt64 qos, UInt32 iIoreq, UInt32 err, UInt64 usCompletionDelay)		IO StallLatencies	ESE_IOIoreqCompletion_Trace	Informational		
-Microsoft-Windows-ESE	175	0	ESE_CacheMemoryUsage_Trace(UnicodeString wszFilename, UInt8 tce, UInt32 dwEngineFileType, UInt64 dwEngineFileId, UInt64 cbMemory)		SubstrateTelemetry	ESE_CacheMemoryUsage_Trace	Informational		
+Microsoft-Windows-ESE	175	0	ESE_CacheMemoryUsage_Trace(UnicodeString wszFilename, UInt8 tce, UInt32 dwEngineFileType, UInt64 dwEngineFileId, UInt64 cbMemory, UInt32 cmsecReferenceIntervalMax)		SubstrateTelemetry	ESE_CacheMemoryUsage_Trace	Informational		
+Microsoft-Windows-ESE	176	0	ESE_CacheSetLgposModify_Trace(UInt32 tick, UInt32 ifmp, UInt32 pgno, UInt64 lgposModify)		BF BFRESMGR	ESE_CacheSetLgposModify_Trace	Verbose		
 Microsoft-Windows-ESE	200	0	ESE_tagNull_Trace(AnsiString szTrace)		JETTraceTag	ESE_tagNull_Trace	Verbose		
 Microsoft-Windows-ESE	201	0	ESE_tagInformation_Trace(AnsiString szTrace)		JETTraceTag	ESE_tagInformation_Trace	Informational		
 Microsoft-Windows-ESE	202	0	ESE_tagErrors_Trace(AnsiString szTrace)		JETTraceTag	ESE_tagErrors_Trace	Informational		
@@ -130,4 +131,8 @@ Microsoft-Windows-ESE	251	0	ESE_tagVersionAndStagingChecks_Trace(AnsiString szTr
 Microsoft-Windows-ESE	252	0	ESE_tagFile_Trace(AnsiString szTrace)		JETTraceTag	ESE_tagFile_Trace	Verbose		
 Microsoft-Windows-ESE	253	0	ESE_tagFlushFileBuffers_Trace(AnsiString szTrace)		JETTraceTag	ESE_tagFlushFileBuffers_Trace	Verbose		
 Microsoft-Windows-ESE	254	0	ESE_tagCheckpointUpdate_Trace(AnsiString szTrace)		JETTraceTag	ESE_tagCheckpointUpdate_Trace	Verbose		
+Microsoft-Windows-ESE	255	0	ESE_tagDiagnostics_Trace(AnsiString szTrace)		JETTraceTag	ESE_tagDiagnostics_Trace	Verbose		
+Microsoft-Windows-ESE	256	0	ESE_tagBlockCache_Trace(AnsiString szTrace)		JETTraceTag	ESE_tagBlockCache_Trace	Verbose		
+Microsoft-Windows-ESE	257	0	ESE_tagRBS_Trace(AnsiString szTrace)		JETTraceTag	ESE_tagRBS_Trace	Verbose		
+Microsoft-Windows-ESE	258	0	ESE_tagRBSCleaner_Trace(AnsiString szTrace)		JETTraceTag	ESE_tagRBSCleaner_Trace	Verbose		
 Microsoft-Windows-ESE	5000	0	task_0(UInt8 TableClass, UInt16 OrigSize, UInt16 XpressSize, UInt16 Xpress9Size, UInt32 usecXpressTime, UInt32 usecXpress9Time, Double ShannonEntropy, Double ChiSquared)		CompressExp	task_0	Verbose		

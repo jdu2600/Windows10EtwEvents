@@ -12,7 +12,7 @@ Microsoft-Windows-Hyper-V-VID	1110	0	task_01110(Int64 Parameter0, Int64 Paramete
 Microsoft-Windows-Hyper-V-VID	1111	0	task_01111(Int64 Parameter0, Int64 Parameter1, Int64 Parameter2)			task_0	Error		
 Microsoft-Windows-Hyper-V-VID	3000	0	task_03000(UnicodeString PartitionId, Int64 Parameter0)			task_0	Informational		
 Microsoft-Windows-Hyper-V-VID	5001	0	VID_reservepagesStart(Int64 Parameter0, Int64 Parameter1)	Start	VMK_HYPERV_PERF_OUTER VMK_HYPERV_PERF	VID_reservepages	Informational		
-Microsoft-Windows-Hyper-V-VID	5002	0	VID_reservepagesStop(Int64 Parameter0, Int64 Parameter1, Int64 Parameter2, Int64 Parameter3, Int64 Parameter4, Int64 Parameter5, Int64 Parameter6)	Stop	VMK_HYPERV_PERF_OUTER VMK_HYPERV_PERF	VID_reservepages	Informational		
+Microsoft-Windows-Hyper-V-VID	5002	0	VID_reservepagesStop(Int64 Parameter0, Int64 Parameter1, Int64 Parameter2, Int64 Parameter3, Int64 Parameter4, Int64 Parameter5, Int64 Parameter6, Int64 Parameter7, Int64 Parameter8)	Stop	VMK_HYPERV_PERF_OUTER VMK_HYPERV_PERF	VID_reservepages	Informational		
 Microsoft-Windows-Hyper-V-VID	5003	0	VID_reservepagesStart5003(Int64 Parameter0, Int64 Parameter1)	Start	VMK_HYPERV_PERF_INNER VMK_HYPERV_PERF	VID_reservepages	Informational		
 Microsoft-Windows-Hyper-V-VID	5004	0	VID_reservepagesStop5004(Int64 Parameter0, Int64 Parameter1, Int64 Parameter2)	Stop	VMK_HYPERV_PERF_INNER VMK_HYPERV_PERF	VID_reservepages	Informational		
 Microsoft-Windows-Hyper-V-VID	5005	0	VID_reservepagesStart5005(Int64 Parameter0, Int64 Parameter1)	Start	VMK_HYPERV_PERF_INNER VMK_HYPERV_PERF	VID_reservepages	Informational		
@@ -43,13 +43,13 @@ Microsoft-Windows-Hyper-V-VID	5033	0	VID_creatememoryblockStart(Int64 Parameter0
 Microsoft-Windows-Hyper-V-VID	5034	0	VID_creatememoryblockStop(Int64 Parameter0, Int64 Parameter1, Int64 Parameter2)	Stop	VMK_HYPERV_PERF_INNER VMK_HYPERV_PERF	VID_creatememoryblock	Informational		
 Microsoft-Windows-Hyper-V-VID	5035	0	VID_unballoonpagesStart5035(Int64 Parameter0, Int64 Parameter1, Int64 Parameter2)	Start	VMK_HYPERV_PERF_INNER VMK_HYPERV_PERF	VID_unballoonpages	Informational		
 Microsoft-Windows-Hyper-V-VID	5036	0	VID_unballoonpagesStop5036(Int64 Parameter0, Int64 Parameter1, Int64 Parameter2, Int64 Parameter3)	Stop	VMK_HYPERV_PERF_INNER VMK_HYPERV_PERF	VID_unballoonpages	Informational		
-Microsoft-Windows-Hyper-V-VID	5037	0	task_05037(HexInt64 PhysicalAddress, UInt8 PlatformDirected)			task_0	Warning		
-Microsoft-Windows-Hyper-V-VID	5038	0	task_05038(HexInt64 PhysicalAddress, UInt8 PlatformDirected, UnicodeString PartitionFriendlyName, UnicodeString PartitionName, UInt8 Consumed)			task_0	Critical		
-Microsoft-Windows-Hyper-V-VID	5039	0	task_05039(HexInt64 PhysicalAddress, UInt8 PlatformDirected, UnicodeString PartitionFriendlyName, UnicodeString PartitionName, UInt8 Consumed)			task_0	Critical		
-Microsoft-Windows-Hyper-V-VID	5040	0	task_05040(HexInt64 PhysicalAddress, UInt8 PlatformDirected)			task_0	Warning		
-Microsoft-Windows-Hyper-V-VID	5041	0	task_05041(HexInt64 PhysicalAddress, UInt8 PlatformDirected)			task_0	Informational		
-Microsoft-Windows-Hyper-V-VID	5042	0	task_05042(HexInt64 PhysicalAddress, UInt8 PlatformDirected, UnicodeString PartitionFriendlyName, UnicodeString PartitionName, UInt8 Consumed)			task_0	Warning		
-Microsoft-Windows-Hyper-V-VID	5043	0	task_05043(HexInt64 PhysicalAddress, UInt8 PlatformDirected, UnicodeString PartitionFriendlyName, UnicodeString PartitionName, UInt8 Consumed)			task_0	Warning		
+Microsoft-Windows-Hyper-V-VID	5037	0	task_05037(HexInt64 PhysicalAddress, UInt8 Flags)			task_0	Warning		
+Microsoft-Windows-Hyper-V-VID	5038	0	task_05038(HexInt64 PhysicalAddress, UInt8 Flags, UnicodeString PartitionFriendlyName, UnicodeString PartitionName, UInt8 Consumed)			task_0	Critical		
+Microsoft-Windows-Hyper-V-VID	5039	0	task_05039(HexInt64 PhysicalAddress, UInt8 Flags, UnicodeString PartitionFriendlyName, UnicodeString PartitionName, UInt8 Consumed)			task_0	Critical		
+Microsoft-Windows-Hyper-V-VID	5040	0	task_05040(HexInt64 PhysicalAddress, UInt8 Flags)			task_0	Warning		
+Microsoft-Windows-Hyper-V-VID	5041	0	task_05041(HexInt64 PhysicalAddress, UInt8 Flags)			task_0	Informational		
+Microsoft-Windows-Hyper-V-VID	5042	0	task_05042(HexInt64 PhysicalAddress, UInt8 Flags, UnicodeString PartitionFriendlyName, UnicodeString PartitionName, UInt8 Consumed)			task_0	Warning		
+Microsoft-Windows-Hyper-V-VID	5043	0	task_05043(HexInt64 PhysicalAddress, UInt8 Flags, UnicodeString PartitionFriendlyName, UnicodeString PartitionName, UInt8 Consumed)			task_0	Warning		
 Microsoft-Windows-Hyper-V-VID	5044	0	task_05044(UnicodeString PartitionId, Int64 Parameter0)			task_0	Error		
 Microsoft-Windows-Hyper-V-VID	5045	0	task_05045(UnicodeString PartitionId, Int64 Parameter0)			task_0	Error		
 Microsoft-Windows-Hyper-V-VID	5046	0	VMT_VID_ALLOCATE_PARTITION_NODE_PAGESStart(UInt64 LowAddress, UInt64 HighAddress, UInt64 SkipBytes, UInt64 TotalBytes, UInt32 CacheType, UInt8 NodeIndex, UInt32 Flags, Pointer MemoryPartition, GUID PartitionGuid)	Start	VMK_ALLOCATE_PAGES	VMT_VID_ALLOCATE_PARTITION_NODE_PAGES	Informational		
@@ -57,10 +57,10 @@ Microsoft-Windows-Hyper-V-VID	5047	0	VMT_VID_ALLOCATE_PARTITION_NODE_PAGESStop(P
 Microsoft-Windows-Hyper-V-VID	5048	0	VMT_VID_MEMORY_BLOCK_PERSISTStart(UInt64 MbpArraySize, GUID PartitionGuid)	Start	VMK_MEMORY_BLOCK	VMT_VID_MEMORY_BLOCK_PERSIST	Informational		
 Microsoft-Windows-Hyper-V-VID	5049	0	VMT_VID_MEMORY_BLOCK_PERSISTStop(UInt64 Status)	Stop	VMK_MEMORY_BLOCK	VMT_VID_MEMORY_BLOCK_PERSIST	Informational		
 Microsoft-Windows-Hyper-V-VID	5050	0	VMT_VID_MEMORY_BLOCK_RESTOREStart(HexInt64 PageCountToBack, UInt64 KsrBlockId, GUID PartitionGuid)	Start	VMK_MEMORY_BLOCK	VMT_VID_MEMORY_BLOCK_RESTORE	Informational		
-Microsoft-Windows-Hyper-V-VID	5051	0	VMT_VID_MEMORY_BLOCK_RESTOREStop(UInt64 MbpArraySize, UInt32 KsrRunCount, UInt64 Status)	Stop	VMK_MEMORY_BLOCK	VMT_VID_MEMORY_BLOCK_RESTORE	Informational		
+Microsoft-Windows-Hyper-V-VID	5051	0	VMT_VID_MEMORY_BLOCK_RESTOREStop(UInt64 MbpArraySize, UInt64 Status)	Stop	VMK_MEMORY_BLOCK	VMT_VID_MEMORY_BLOCK_RESTORE	Informational		
 Microsoft-Windows-Hyper-V-VID	5052	0	VMT_KSR_MEMORY_BLOCK_PERSISTStart(UInt32 KsrMemoryRunCount, GUID PartitionGuid)	Start	VMK_MEMORY_BLOCK	VMT_KSR_MEMORY_BLOCK_PERSIST	Informational		
 Microsoft-Windows-Hyper-V-VID	5053	0	VMT_KSR_MEMORY_BLOCK_PERSISTStop(UInt64 Status)	Stop	VMK_MEMORY_BLOCK	VMT_KSR_MEMORY_BLOCK_PERSIST	Informational		
-Microsoft-Windows-Hyper-V-VID	5054	0	VMT_VID_MEMORY_BLOCK_PHU_TEARDOWNStart(UInt64 MbpArraySize, UInt32 KsrRunCount, GUID PartitionGuid)	Start	VMK_MEMORY_BLOCK	VMT_VID_MEMORY_BLOCK_PHU_TEARDOWN	Informational		
+Microsoft-Windows-Hyper-V-VID	5054	0	VMT_VID_MEMORY_BLOCK_PHU_TEARDOWNStart(UInt64 MbpArraySize, GUID PartitionGuid)	Start	VMK_MEMORY_BLOCK	VMT_VID_MEMORY_BLOCK_PHU_TEARDOWN	Informational		
 Microsoft-Windows-Hyper-V-VID	5055	0	VMT_VID_MEMORY_BLOCK_PHU_TEARDOWNStop()	Stop	VMK_MEMORY_BLOCK	VMT_VID_MEMORY_BLOCK_PHU_TEARDOWN	Informational		
 Microsoft-Windows-Hyper-V-VID	5056	0	VMT_VID_PARTITION_PERSISTStart(GUID PartitionGuid)	Start	VMK_PARTITION	VMT_VID_PARTITION_PERSIST	Informational		
 Microsoft-Windows-Hyper-V-VID	5057	0	VMT_VID_PARTITION_PERSISTStop(UInt64 Status)	Stop	VMK_PARTITION	VMT_VID_PARTITION_PERSIST	Informational		
@@ -78,12 +78,12 @@ Microsoft-Windows-Hyper-V-VID	5068	0	VID_createDAXfilebackedmemoryblockStart(Int
 Microsoft-Windows-Hyper-V-VID	5069	0	VID_createDAXfilebackedmemoryblockStop(Int64 Parameter0, Int64 Parameter1, Int64 Parameter2)	Stop	VMK_HYPERV_PERF_INNER VMK_HYPERV_PERF	VID_createDAXfilebackedmemoryblock	Informational		
 Microsoft-Windows-Hyper-V-VID	5070	0	VMT_VID_EPFStart(Int64 Parameter0, Int64 Parameter1)	Start	VMK_HYPERV_PERF_INNER VMK_HYPERV_PERF	VMT_VID_EPF	Informational		
 Microsoft-Windows-Hyper-V-VID	5071	0	VMT_VID_EPFStop(Int64 Parameter0, Int64 Parameter1, Int64 Parameter2)	Stop	VMK_HYPERV_PERF_INNER VMK_HYPERV_PERF	VMT_VID_EPF	Informational		
-Microsoft-Windows-Hyper-V-VID	5072	0	task_05072(HexInt64 TotalPages, UInt8 PlatformDirected)			task_0	Warning		
-Microsoft-Windows-Hyper-V-VID	5073	0	task_05073(HexInt64 PhysicalAddress, UInt8 PlatformDirected, UnicodeString PartitionFriendlyName, UnicodeString PartitionName, UInt8 Consumed)			task_0	Critical		
-Microsoft-Windows-Hyper-V-VID	5074	0	task_05074(HexInt64 PhysicalAddress, UInt8 PlatformDirected, UnicodeString PartitionFriendlyName, UnicodeString PartitionName, UInt8 Consumed)			task_0	Critical		
-Microsoft-Windows-Hyper-V-VID	5075	0	task_05075(HexInt64 PhysicalAddress, UInt8 PlatformDirected, UnicodeString PartitionFriendlyName, UnicodeString PartitionName, UInt8 Consumed)			task_0	Critical		
-Microsoft-Windows-Hyper-V-VID	5076	0	task_05076(HexInt64 PhysicalAddress, UInt8 PlatformDirected)			task_0	Warning		
-Microsoft-Windows-Hyper-V-VID	5077	0	task_05077(HexInt64 TotalPages, UInt8 PlatformDirected, UnicodeString PartitionFriendlyName, UnicodeString PartitionName, UInt8 Consumed)			task_0	Warning		
+Microsoft-Windows-Hyper-V-VID	5072	0	task_05072(HexInt64 TotalPages, UInt8 Flags)			task_0	Warning		
+Microsoft-Windows-Hyper-V-VID	5073	0	task_05073(HexInt64 PhysicalAddress, UInt8 Flags, UnicodeString PartitionFriendlyName, UnicodeString PartitionName, UInt8 Consumed)			task_0	Critical		
+Microsoft-Windows-Hyper-V-VID	5074	0	task_05074(HexInt64 PhysicalAddress, UInt8 Flags, UnicodeString PartitionFriendlyName, UnicodeString PartitionName, UInt8 Consumed)			task_0	Critical		
+Microsoft-Windows-Hyper-V-VID	5075	0	task_05075(HexInt64 PhysicalAddress, UInt8 Flags, UnicodeString PartitionFriendlyName, UnicodeString PartitionName, UInt8 Consumed)			task_0	Critical		
+Microsoft-Windows-Hyper-V-VID	5076	0	task_05076(HexInt64 PhysicalAddress, UInt8 Flags)			task_0	Warning		
+Microsoft-Windows-Hyper-V-VID	5077	0	task_05077(HexInt64 TotalPages, UInt8 Flags, UnicodeString PartitionFriendlyName, UnicodeString PartitionName, UInt8 Consumed)			task_0	Warning		
 Microsoft-Windows-Hyper-V-VID	5078	0	task_05078(GUID PartitionGuid, UInt64 Parameter1)			task_0	Informational		
 Microsoft-Windows-Hyper-V-VID	5079	0	task_05079(GUID PartitionGuid, UnicodeString Parameter1)			task_0	Informational		
 Microsoft-Windows-Hyper-V-VID	5080	0	task_05080(GUID PartitionGuid, UInt32 Parameter1)			task_0	Informational		
@@ -102,3 +102,13 @@ Microsoft-Windows-Hyper-V-VID	5092	0	task_05092(Int64 Parameter0)			task_0	Error
 Microsoft-Windows-Hyper-V-VID	5093	0	task_05093(Int64 Parameter0)			task_0	Error		
 Microsoft-Windows-Hyper-V-VID	5094	0	task_05094(Int64 Parameter0, Int64 Parameter1)			task_0	Error		
 Microsoft-Windows-Hyper-V-VID	5095	0	task_05095(GUID PartitionGuid, UnicodeString PartitionName, UInt8 PinBackingPages, UInt8 DeferredCommit, UInt8 PrivateCompressionStore, UInt8 HotHints, UInt8 ColdHints, UInt8 ColdDiscardHints, UInt8 EnlightenedPageFaults, UInt8 BackingPageSizeType, UInt64 FaultClusterSizeInPages, UInt64 DirectMapFaultClusterSizeInPages)			task_0	Informational		
+Microsoft-Windows-Hyper-V-VID	5096	0	task_05096(Int64 Parameter0, Int64 Parameter1)			task_0	Error		
+Microsoft-Windows-Hyper-V-VID	5097	0	task_05097(Int64 Parameter0, Int64 Parameter1, Int64 Parameter2)			task_0	Error		
+Microsoft-Windows-Hyper-V-VID	5098	0	task_05098(Int64 Parameter0)			task_0	Error		
+Microsoft-Windows-Hyper-V-VID	5099	0	task_05099(Int64 Parameter0, Int64 Parameter1)			task_0	Error		
+Microsoft-Windows-Hyper-V-VID	5100	0	task_05100(Int64 Parameter0, Int64 Parameter1)			task_0	Error		
+Microsoft-Windows-Hyper-V-VID	5101	0	task_05101(Int64 Parameter0)			task_0	Error		
+Microsoft-Windows-Hyper-V-VID	5102	0	task_05102(Int64 Parameter0, Int64 Parameter1)			task_0	Error		
+Microsoft-Windows-Hyper-V-VID	5103	0	task_05103(Int64 Parameter0)			task_0	Error		
+Microsoft-Windows-Hyper-V-VID	5104	0	task_05104(UnicodeString PartitionId, Int64 Parameter0)			task_0	Error		
+Microsoft-Windows-Hyper-V-VID	5105	0	task_05105(UnicodeString PartitionId, Int64 Parameter0)			task_0	Error		

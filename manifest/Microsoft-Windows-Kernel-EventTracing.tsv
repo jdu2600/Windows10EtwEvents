@@ -34,3 +34,11 @@ Microsoft-Windows-Kernel-EventTracing	26	0	EnableInfo(GUID GUID, UInt8 Index, UI
 Microsoft-Windows-Kernel-EventTracing	27	0	Provider(GUID ProviderGUID, GUID GroupGUID, UInt16 Flags, UInt8 EnableMask, UInt8 GroupEnableMask, UInt32 ProcessId)		ETW_KEYWORD_PROVIDER ETW_KEYWORD_CAPTURE_STATE	Provider	Verbose		
 Microsoft-Windows-Kernel-EventTracing	28	0	ProviderSetProviderTraits(GUID ProviderGuid, UInt32 ErrorCode)	SetProviderTraits	ETW_KEYWORD_PROVIDER ETW_KEYWORD_REGISTRATION ETW_KEYWORD_GROUP	Provider	Error		
 Microsoft-Windows-Kernel-EventTracing	29	0	ProviderJoinProviderGroup(GUID ProviderGuid, GUID ProviderGroupGuid)	JoinProviderGroup	ETW_KEYWORD_PROVIDER ETW_KEYWORD_REGISTRATION ETW_KEYWORD_GROUP	Provider	Verbose		
+Microsoft-Windows-Kernel-EventTracing	30	0	Provider30(GUID ProviderGuid, UnicodeString SessionName, UInt32 ProcessId, UInt32 Status)		ETW_KEYWORD_PROVIDER ETW_KEYWORD_REGISTRATION	Provider	Verbose		
+Microsoft-Windows-Kernel-EventTracing	31	0	LostTraceLoggingEvent(GUID ProviderId, UInt32 StatusCode, AnsiString EventName, UnicodeString SessionName)		ETW_KEYWORD_LOST_EVENT	LostTraceLoggingEvent	Error		
+Microsoft-Windows-Kernel-EventTracing	32	0	Provider32(GUID ProviderGuid, UnicodeString SessionName, UInt32 ProcessId, UInt32 Status)		ETW_KEYWORD_SESSION ETW_KEYWORD_PROVIDER	Provider	Warning		
+Microsoft-Windows-Kernel-EventTracing	33	0	LostWPPEvent(GUID MessageGuid, UInt16 MessageNumber, UInt32 StatusCode, UnicodeString SessionName)		ETW_KEYWORD_LOST_EVENT	LostWPPEvent	Error		
+Microsoft-Windows-Kernel-EventTracing	34	0	LostSystemEvent(UInt16 HookId, UInt32 StatusCode, UnicodeString SessionName)		ETW_KEYWORD_LOST_EVENT	LostSystemEvent	Error		
+Microsoft-Windows-Kernel-EventTracing	35	0	Session35(UInt64 LoggerSlotsUsed)		ETW_KEYWORD_SESSION	Session	Error		
+Microsoft-Windows-Kernel-EventTracing	40	0	ProviderEnable40(GUID ProviderName, UnicodeString SessionName, UInt64 MatchAnyKeyword, UInt64 MatchAllKeyword, UInt32 EnableProperty, UInt8 Level)	Enable	ETW_KEYWORD_PROVIDER ETW_KEYWORD_ENABLEMENT	Provider	Verbose		
+Microsoft-Windows-Kernel-EventTracing	41	0	ProviderDisable41(GUID ProviderName, UnicodeString SessionName)	Disable	ETW_KEYWORD_PROVIDER ETW_KEYWORD_ENABLEMENT	Provider	Verbose		

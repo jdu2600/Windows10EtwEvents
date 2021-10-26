@@ -27,6 +27,7 @@ Microsoft-Windows-Kernel-PnP	222	0	DeviceEnumStop(UInt16 DriverNameLength, Unico
 Microsoft-Windows-Kernel-PnP	223	0	DeviceEjectStart(UInt16 DriverNameLength, UnicodeString DriverName)	Start	DeviceEject	DeviceEject	Informational		
 Microsoft-Windows-Kernel-PnP	224	0	DeviceEjectStop(UInt16 DriverNameLength, UnicodeString DriverName, UInt32 Status, UInt16 FailureNameLength, UnicodeString FailureName, UInt32 Version)	Stop	DeviceEject	DeviceEject	Informational		
 Microsoft-Windows-Kernel-PnP	225	0	DeviceEject(UInt32 ProcessId, UInt16 ProcessNameLength, UnicodeString ProcessName, UInt16 DeviceInstanceLength, UnicodeString DeviceInstance)			DeviceEject	Warning		
+Microsoft-Windows-Kernel-PnP	225	1	DeviceEject_V1(UInt32 ProcessId, UInt16 ProcessNameLength, UnicodeString ProcessName, UInt16 DeviceInstanceLength, UnicodeString DeviceInstance, UInt16 CommandLineLength, UnicodeString CommandLine)			DeviceEject	Warning		
 Microsoft-Windows-Kernel-PnP	226	0	DriverInitStart(UInt16 DriverNameLength, UnicodeString DriverName)	Start	Performance DriverInit	DriverInit	Informational		
 Microsoft-Windows-Kernel-PnP	227	0	DriverInitStop(UInt16 DriverNameLength, UnicodeString DriverName, UInt32 Status)	Stop	Performance DriverInit	DriverInit	Informational		
 Microsoft-Windows-Kernel-PnP	228	0	task_0(UInt32 SqmType, GUID SqmSessionGuid, SID SqmSid, UInt32 SqmWindowsSessionId, UInt32 SqmSessionFlags)			task_0	Informational		
@@ -128,3 +129,52 @@ Microsoft-Windows-Kernel-PnP	906	0	WatchdogTriggeredStart906(HexInt64 ThreadId, 
 Microsoft-Windows-Kernel-PnP	907	0	WatchdogTriggeredStop907(HexInt64 ThreadId, UnicodeString DeviceInstanceId, UnicodeString DriverName, UInt64 ElapsedTimeMs)	Stop		WatchdogTriggered	Informational		
 Microsoft-Windows-Kernel-PnP	908	0	WatchdogTriggeredStart908(HexInt64 ThreadId, UnicodeString DeviceInstanceId, UnicodeString DriverName, UInt64 ElapsedTimeMs)	Start		WatchdogTriggered	Warning		
 Microsoft-Windows-Kernel-PnP	909	0	WatchdogTriggeredStop909(HexInt64 ThreadId, UnicodeString DeviceInstanceId, UnicodeString DriverName, UInt64 ElapsedTimeMs)	Stop		WatchdogTriggered	Informational		
+Microsoft-Windows-Kernel-PnP	1000	0	task_01000(UnicodeString DeviceInstanceId, UInt32 VetoType, UnicodeString VetoName)			task_0	Warning		
+Microsoft-Windows-Kernel-PnP	1010	0	task_01010(UnicodeString DeviceInstanceId, UInt32 DeviceCount)			task_0	Informational		
+Microsoft-Windows-Kernel-PnP	1011	0	task_01011(UnicodeString DeviceInstanceId, UInt32 DeviceCount)			task_0	Warning		
+Microsoft-Windows-Kernel-PnP	1020	0	task_01020(UnicodeString DeviceInstanceId, UnicodeString ServiceName, UInt32 DeviceCount, UInt32 Phase, UnicodeString SubtreeRootInstanceId, Boolean SubtreeIncludesRoot, Boolean RebalanceDueToDynamicPartitioning, UInt32 RebalanceReason, UInt8 ConflictResourceType, UInt64 DurationInMs)			task_0	Informational		
+Microsoft-Windows-Kernel-PnP	1021	0	task_01021(UnicodeString DeviceInstanceId, UnicodeString ServiceName, UInt32 DeviceCount, UInt32 Phase, UnicodeString SubtreeRootInstanceId, Boolean SubtreeIncludesRoot, Boolean RebalanceDueToDynamicPartitioning, UInt32 RebalanceReason, UInt8 ConflictResourceType, UInt32 RebalanceFailure, UInt32 VetoReason, UnicodeString VetoNodeInstanceId, UInt64 DurationInMs)			task_0	Warning		
+Microsoft-Windows-Kernel-PnP	1030	0	task_01030(UnicodeString Device)			task_0	Informational		
+Microsoft-Windows-Kernel-PnP	1031	0	task_01031(UnicodeString Device)			task_0	Informational		
+Microsoft-Windows-Kernel-PnP	1040	0	task_0Start1040(UnicodeString DeviceInstanceId, UInt32 Flags)	Start		task_0	Informational		
+Microsoft-Windows-Kernel-PnP	1041	0	task_0Stop1041(UInt16 DeviceInstanceLength, UnicodeString DeviceInstance, UInt32 Status, UInt32 VetoType, UInt16 VetoNameLength, UnicodeString VetoName)	Stop		task_0	Informational		
+Microsoft-Windows-Kernel-PnP	1050	0	task_01050(UnicodeString ParentDeviceInstancePath, UnicodeString InstanceId, HexInt32 Status)			task_0	Warning		
+Microsoft-Windows-Kernel-PnP	1100	0	SwDevice_IrpCreateStart()	Start	SwDevice	SwDevice_IrpCreate	Informational		
+Microsoft-Windows-Kernel-PnP	1101	0	SwDevice_IrpCreateStop(HexInt32 Status)	Stop	SwDevice	SwDevice_IrpCreate	Informational		
+Microsoft-Windows-Kernel-PnP	1102	0	SwDevice_KernelCreateStart(UnicodeString EnumeratorName, UnicodeString InstanceId, UnicodeString ParentDeviceInstanceId)	Start	SwDevice	SwDevice_KernelCreate	Informational		
+Microsoft-Windows-Kernel-PnP	1103	0	SwDevice_KernelCreateStop(UnicodeString EnumeratorName, UnicodeString InstanceId, UnicodeString ParentDeviceInstanceId, HexInt32 Status)	Stop	SwDevice	SwDevice_KernelCreate	Informational		
+Microsoft-Windows-Kernel-PnP	1104	0	task_01104(UnicodeString EnumeratorName, UnicodeString InstanceId, UnicodeString ParentDeviceInstanceId, HexInt32 CapabilityFlags, UnicodeString DeviceDescription, UnicodeString DeviceLocation, UInt32 NumProperties)		SwDevice	task_0	Informational		
+Microsoft-Windows-Kernel-PnP	1105	0	task_01105(UnicodeString DeviceId, UnicodeString InstanceId)		SwDevice	task_0	Informational		
+Microsoft-Windows-Kernel-PnP	1106	0	task_01106(UnicodeString DeviceId, UnicodeString InstanceId)		SwDevice	task_0	Informational		
+Microsoft-Windows-Kernel-PnP	1107	0	task_01107(UnicodeString DeviceId, UnicodeString InstanceId, Boolean RemovedFromBus, Boolean HasPrimaryDeviceObject)		SwDevice	task_0	Informational		
+Microsoft-Windows-Kernel-PnP	1108	0	SwDevice_InstanceTable_Add(UnicodeString DeviceId, UnicodeString InstanceId, Boolean AlreadyExists)		SwDevice	SwDevice_InstanceTable_Add	Informational		
+Microsoft-Windows-Kernel-PnP	1109	0	SwDevice_InstanceTable_Remove(UnicodeString DeviceId, UnicodeString InstanceId)		SwDevice	SwDevice_InstanceTable_Remove	Informational		
+Microsoft-Windows-Kernel-PnP	1110	0	SwDevice_DeviceEnumeratedStart(UnicodeString DeviceId, UnicodeString InstanceId, UnicodeString DeviceInstancePath)	Start	SwDevice	SwDevice_DeviceEnumerated	Informational		
+Microsoft-Windows-Kernel-PnP	1111	0	SwDevice_DeviceEnumeratedStop(UnicodeString DeviceId, UnicodeString InstanceId, HexInt32 Status)	Stop	SwDevice	SwDevice_DeviceEnumerated	Informational		
+Microsoft-Windows-Kernel-PnP	1120	0	SwDevice_RelationAddStart(UnicodeString DeviceId, UnicodeString InstanceId, UnicodeString ParentDeviceInstanceId)	Start	SwDevice	SwDevice_RelationAdd	Informational		
+Microsoft-Windows-Kernel-PnP	1121	0	SwDevice_RelationAddStop(UnicodeString DeviceId, UnicodeString InstanceId, UnicodeString ParentDeviceInstanceId, HexInt32 Status)	Stop	SwDevice	SwDevice_RelationAdd	Informational		
+Microsoft-Windows-Kernel-PnP	1122	0	SwDevice_RelationRemove(UnicodeString DeviceId, UnicodeString InstanceId, UnicodeString ParentDeviceInstanceId)		SwDevice	SwDevice_RelationRemove	Informational		
+Microsoft-Windows-Kernel-PnP	1130	0	SwDevice_LifetimeChangeStart(UnicodeString DeviceId, UnicodeString InstanceId)	Start	SwDevice	SwDevice_LifetimeChange	Informational		
+Microsoft-Windows-Kernel-PnP	1131	0	SwDevice_LifetimeChangeStop(UnicodeString DeviceId, UnicodeString InstanceId, HexInt32 Status)	Stop	SwDevice	SwDevice_LifetimeChange	Informational		
+Microsoft-Windows-Kernel-PnP	1132	0	SwDevice_LifetimeChange(UnicodeString DeviceId, UnicodeString InstanceId, UInt32 OldLifetime, UInt32 NewLifetime)		SwDevice	SwDevice_LifetimeChange	Informational		
+Microsoft-Windows-Kernel-PnP	1140	0	SwDevice_RegisterInterfaceStart(UnicodeString DeviceId, UnicodeString InstanceId)	Start	SwDevice	SwDevice_RegisterInterface	Informational		
+Microsoft-Windows-Kernel-PnP	1141	0	SwDevice_RegisterInterfaceStop(UnicodeString DeviceId, UnicodeString InstanceId, HexInt32 Status)	Stop	SwDevice	SwDevice_RegisterInterface	Informational		
+Microsoft-Windows-Kernel-PnP	1142	0	SwDevice_RegisterInterface(UnicodeString DeviceId, UnicodeString InstanceId, UnicodeString SymbolicLink)		SwDevice	SwDevice_RegisterInterface	Informational		
+Microsoft-Windows-Kernel-PnP	1143	0	SwDevice_SetInterfaceState(UnicodeString DeviceId, UnicodeString InstanceId, UnicodeString SymbolicLink, Boolean Enable)		SwDevice	SwDevice_SetInterfaceState	Informational		
+Microsoft-Windows-Kernel-PnP	1144	0	SwDevice_SetInterfaceStateStart(UnicodeString DeviceId, UnicodeString InstanceId)	Start	SwDevice	SwDevice_SetInterfaceState	Informational		
+Microsoft-Windows-Kernel-PnP	1145	0	SwDevice_SetInterfaceStateStop(UnicodeString DeviceId, UnicodeString InstanceId, HexInt32 Status)	Stop	SwDevice	SwDevice_SetInterfaceState	Informational		
+Microsoft-Windows-Kernel-PnP	1150	0	SwDevice_SetDevicePropertyStart(UnicodeString DeviceId, UnicodeString InstanceId)	Start	SwDevice	SwDevice_SetDeviceProperty	Informational		
+Microsoft-Windows-Kernel-PnP	1151	0	SwDevice_SetDevicePropertyStop(UnicodeString DeviceId, UnicodeString InstanceId, HexInt32 Status)	Stop	SwDevice	SwDevice_SetDeviceProperty	Informational		
+Microsoft-Windows-Kernel-PnP	1160	0	SwDevice_SetInterfacePropertyStart(UnicodeString DeviceId, UnicodeString InstanceId)	Start	SwDevice	SwDevice_SetInterfaceProperty	Informational		
+Microsoft-Windows-Kernel-PnP	1161	0	SwDevice_SetInterfacePropertyStop(UnicodeString DeviceId, UnicodeString InstanceId, HexInt32 Status)	Stop	SwDevice	SwDevice_SetInterfaceProperty	Informational		
+Microsoft-Windows-Kernel-PnP	1170	0	SwDevice_IrpCloseStart(UnicodeString DeviceId, UnicodeString InstanceId)	Start	SwDevice	SwDevice_IrpClose	Informational		
+Microsoft-Windows-Kernel-PnP	1171	0	SwDevice_IrpCloseStop(UnicodeString DeviceId, UnicodeString InstanceId, Boolean DeviceClosed)	Stop	SwDevice	SwDevice_IrpClose	Informational		
+Microsoft-Windows-Kernel-PnP	1172	0	SwDevice_KernelCloseStart(UnicodeString ParentDeviceInstanceId, UnicodeString EnumeratorName, UnicodeString InstanceId)	Start	SwDevice	SwDevice_KernelClose	Informational		
+Microsoft-Windows-Kernel-PnP	1173	0	SwDevice_KernelCloseStop(UnicodeString ParentDeviceInstanceId, UnicodeString EnumeratorName, UnicodeString InstanceId, HexInt32 Status)	Stop	SwDevice	SwDevice_KernelClose	Informational		
+Microsoft-Windows-Kernel-PnP	1174	0	SwDevice_CloseDescendants(UnicodeString ParentDeviceInstanceId)		SwDevice	SwDevice_CloseDescendants	Informational		
+Microsoft-Windows-Kernel-PnP	1175	0	SwDevice_CloseDevice(UnicodeString DeviceId, UnicodeString InstanceId)		SwDevice	SwDevice_CloseDevice	Informational		
+Microsoft-Windows-Kernel-PnP	1176	0	SwDevice_ProcessRemove(UnicodeString DeviceId, UnicodeString InstanceId, UnicodeString DeviceInstanceId, Boolean KeepActive, HexInt32 SwDeviceFlags, HexInt32 DeviceExtensionFlags)		SwDevice	SwDevice_ProcessRemove	Informational		
+Microsoft-Windows-Kernel-PnP	1177	0	SwDevice_ProcessParentRemove(UnicodeString DeviceId, UnicodeString InstanceId, UnicodeString DeviceInstanceId, UnicodeString ParentDeviceInstanceId, HexInt32 SwDeviceFlags, HexInt32 DeviceExtensionFlags)		SwDevice	SwDevice_ProcessParentRemove	Informational		
+Microsoft-Windows-Kernel-PnP	1190	0	SwDevice_GetChildPdoStart(UnicodeString DeviceId, UnicodeString InstanceId, UnicodeString ParentDeviceInstanceId, HexInt32 SwDeviceFlags)	Start	SwDevice	SwDevice_GetChildPdo	Informational		
+Microsoft-Windows-Kernel-PnP	1191	0	SwDevice_GetChildPdoStop(UnicodeString DeviceId, UnicodeString InstanceId, Boolean PdoReported, Boolean NewPdo)	Stop	SwDevice	SwDevice_GetChildPdo	Informational		
+Microsoft-Windows-Kernel-PnP	1192	0	SwDevice_GetChildPdo(UnicodeString DeviceId, UnicodeString InstanceId, UInt32 SkipCount)		SwDevice	SwDevice_GetChildPdo	Informational		

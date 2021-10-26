@@ -33,6 +33,8 @@ Microsoft-Windows-VHDMP	31	0	CleanupBackingStoreStart(UnicodeString VhdFileName)
 Microsoft-Windows-VHDMP	32	0	CleanupBackingStoreStop(UnicodeString VhdFileName)	Stop	Activity	CleanupBackingStore	Informational		
 Microsoft-Windows-VHDMP	33	0	CleanupBackingStoreFlushStart(UnicodeString VhdFileName)	Start	Activity	CleanupBackingStoreFlush	Informational		
 Microsoft-Windows-VHDMP	34	0	CleanupBackingStoreFlushStop(UnicodeString VhdFileName)	Stop	Activity	CleanupBackingStoreFlush	Informational		
+Microsoft-Windows-VHDMP	35	0	UnsurfaceVirtualDiskStop35(UnicodeString VhdFileName, UInt32 VhdDiskNumber, Pointer VirtualDisk)	Stop	Activity	UnsurfaceVirtualDisk	Informational		
+Microsoft-Windows-VHDMP	36	0	task_036(UnicodeString VhdFile, GUID VmId, UInt32 Status)		Activity	task_0	Informational		
 Microsoft-Windows-VHDMP	50	0	task_050(AnsiString VhdMetaOps, UnicodeString VhdFileName, UnicodeString TargetVhdFileName)			task_0	Informational		
 Microsoft-Windows-VHDMP	51	0	task_051(AnsiString VhdMetaOps, UnicodeString VhdFileName, UInt32 Status)			task_0	Informational		
 Microsoft-Windows-VHDMP	100	0	task_0100(UnicodeString VhdFile, GUID VmId, UInt32 VhdIoType, UInt32 Status)			task_0	Informational		

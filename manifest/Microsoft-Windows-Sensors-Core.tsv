@@ -35,6 +35,10 @@ Microsoft-Windows-Sensors-Core	1033	0	SensorsCxSetReportLatencyTask(Pointer WdfD
 Microsoft-Windows-Sensors-Core	1034	0	SensorsCxEnableWakeTask(Pointer WdfDevice, Pointer SENSOROBJECT, UInt32 NtStatus)			SensorsCxEnableWakeTask	Error		
 Microsoft-Windows-Sensors-Core	1035	0	SensorsCxDisableWakeTask(Pointer WdfDevice, Pointer SENSOROBJECT, UInt32 NtStatus)			SensorsCxDisableWakeTask	Error		
 Microsoft-Windows-Sensors-Core	1036	0	SensorsCxRundownTask(Pointer WdfDevice, Pointer SENSOROBJECT, GUID Type, GUID Category, GUID SubType, GUID PeristentUniqueId, UnicodeString Name, UnicodeString Model, UnicodeString Manufacturer)			SensorsCxRundownTask	Informational		
+Microsoft-Windows-Sensors-Core	1037	0	SensorsCxSensorSubscriberOpenTask(GUID Type, GUID PeristentUniqueId, UInt32 ProcessId, UInt32 NtStatus)			SensorsCxSensorSubscriberOpenTask	Informational		
+Microsoft-Windows-Sensors-Core	1038	0	SensorsCxSensorSubscriberCloseTask(GUID Type, GUID PeristentUniqueId, UInt32 ProcessId, UInt32 NtStatus)			SensorsCxSensorSubscriberCloseTask	Informational		
+Microsoft-Windows-Sensors-Core	1039	0	SensorsCxSensorSubscriberStartTask(GUID Type, GUID PeristentUniqueId, UInt32 ProcessId, UInt32 ReportIntervalMs, UInt32 ReportLatencyMs, Boolean IsStreaming, UInt32 NtStatus)			SensorsCxSensorSubscriberStartTask	Informational		
+Microsoft-Windows-Sensors-Core	1040	0	SensorsCxSensorSubscriberStopTask(GUID Type, GUID PeristentUniqueId, UInt32 ProcessId, UInt32 NtStatus)			SensorsCxSensorSubscriberStopTask	Informational		
 Microsoft-Windows-Sensors-Core	1100	0	SensorsCxRundownTask1100(GUID PeristentUniqueId, UInt32 ProcessId, UInt32 ReportIntervalMs, UInt32 ReportLatencyMs, Boolean IsStreaming)			SensorsCxRundownTask	Informational		
 Microsoft-Windows-Sensors-Core	1101	0	SensorsDefaultDeviceSelectionTask(UnicodeString Interface)			SensorsDefaultDeviceSelectionTask	Informational		
 Microsoft-Windows-Sensors-Core	1102	0	SensorsDefaultDeviceSelectionTask1102(UnicodeString Interface)			SensorsDefaultDeviceSelectionTask	Informational		
@@ -72,3 +76,9 @@ Microsoft-Windows-Sensors-Core	1224	0	SensorsHidInitializationTask1224(Pointer W
 Microsoft-Windows-Sensors-Core	1300	0	SensorServiceSdoCreateTask(UnicodeString Interface)			SensorServiceSdoCreateTask	Error		
 Microsoft-Windows-Sensors-Core	1301	0	SensorServiceSdoCreateTask1301(UnicodeString Interface)			SensorServiceSdoCreateTask	Error		
 Microsoft-Windows-Sensors-Core	1302	0	SensorServiceSdoRemoveTask(UnicodeString Interface)			SensorServiceSdoRemoveTask	Error		
+Microsoft-Windows-Sensors-Core	1401	0	SensorServiceHuPrSelectedSensorTask(UnicodeString Interface, UnicodeString FriendlyName)			SensorServiceHuPrSelectedSensorTask	Informational		
+Microsoft-Windows-Sensors-Core	1402	0	SensorServiceHuPrSensorStartTask(UnicodeString Interface, UInt32 AbsoluteDistanceThreshold)			SensorServiceHuPrSensorStartTask	Informational		
+Microsoft-Windows-Sensors-Core	1403	0	SensorServiceHuPrSensorStopTask(UnicodeString Interface)			SensorServiceHuPrSensorStopTask	Informational		
+Microsoft-Windows-Sensors-Core	1404	0	SensorServiceHuPrSensorDataTask(UnicodeString Interface, Boolean IsValid, Boolean IsPresent, UInt32 DetectedDistance)			SensorServiceHuPrSensorDataTask	Informational		
+Microsoft-Windows-Sensors-Core	1405	0	SensorServiceHuPrWakeOrLockSignalTask(UnicodeString SignalType)			SensorServiceHuPrWakeOrLockSignalTask	Informational		
+Microsoft-Windows-Sensors-Core	1406	0	SensorServiceHuPrUserSettingsChangedTask(UnicodeString Setting, UnicodeString OldValue, UnicodeString NewValue)			SensorServiceHuPrUserSettingsChangedTask	Informational		

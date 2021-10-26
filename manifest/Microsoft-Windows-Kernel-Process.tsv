@@ -39,3 +39,4 @@ Microsoft-Windows-Kernel-Process	23	0	JobServerSiloStart23(GUID ContainerID, UIn
 Microsoft-Windows-Kernel-Process	24	0	JobServerSiloStartStop(GUID ContainerID, UInt32 JobID, UInt32 Status, UnicodeString MonitorName)	Stop	WINEVENT_KEYWORD_JOB_SILO	JobServerSiloStart	Informational		
 Microsoft-Windows-Kernel-Process	25	0	JobServerSiloStart25(GUID ContainerID, UInt32 JobID, UnicodeString MonitorName)	Start	WINEVENT_KEYWORD_JOB_SILO	JobServerSiloStart	Informational		
 Microsoft-Windows-Kernel-Process	26	0	JobServerSiloStartStop26(GUID ContainerID, UInt32 JobID, UnicodeString MonitorName)	Stop	WINEVENT_KEYWORD_JOB_SILO	JobServerSiloStart	Informational		
+Microsoft-Windows-Kernel-Process	27	0	ProcessInPrivateSet(UnicodeString ProcessName, UInt32 ProcessID)		WINEVENT_KEYWORD_PROCESS	ProcessInPrivateSet	Informational		

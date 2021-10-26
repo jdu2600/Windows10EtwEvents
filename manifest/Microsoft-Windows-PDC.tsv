@@ -17,31 +17,31 @@ Microsoft-Windows-PDC	15	0	NotificationCallback(UInt32 Status)		notifications	No
 Microsoft-Windows-PDC	16	0	NotificationMessage(Pointer Client, Pointer Message, UInt32 Control, UInt32 Status, UInt32 PdcSequence)		notifications CsDiag	NotificationMessage	Always		
 Microsoft-Windows-PDC	17	0	ActivatorReceive(Pointer Client, UInt32 SendReceive)		activators	ActivatorReceive	Always		
 Microsoft-Windows-PDC	18	0	ActivatorSend(Pointer Client, UInt32 SendReceive)		activators	ActivatorSend	Always		
-Microsoft-Windows-PDC	19	0	ResiliencyClient(Pointer Client, Pointer Port, UInt32 ResiliencyType, UInt64 References, UInt32 TransactionId, UInt32 CurrentState, UInt32 NextState)		clients	ResiliencyClient	Always		
-Microsoft-Windows-PDC	20	0	ResiliencyMessage(Pointer Message, UInt32 TransactionId, UInt32 ClientState, UInt32 ClientStatus)		clients	ResiliencyMessage	Always		
+Microsoft-Windows-PDC	19	0	ResiliencyClient(Pointer Client, Pointer Port, UInt32 ResiliencyType, UInt64 References, UInt32 TransactionId, UInt32 CurrentState, UInt32 NextState, UInt32 PrefixLength, UnicodeString Prefix)		clients	ResiliencyClient	Always		
+Microsoft-Windows-PDC	20	0	ResiliencyMessage(Pointer Message, UInt32 TransactionId, UInt32 ClientState, UInt32 ClientStatus, Boolean SendMessage, Boolean UserModeMessage)		clients	ResiliencyMessage	Always		
 Microsoft-Windows-PDC	21	0	ResiliencyReceive(Pointer Client, UInt32 SendReceive)		clients	ResiliencyReceive	Always		
 Microsoft-Windows-PDC	22	0	ResiliencySend(Pointer Client, UInt32 SendReceive)		clients	ResiliencySend	Always		
 Microsoft-Windows-PDC	23	0	ResiliencyReference(Pointer ActivatorToken, Pointer Client, UInt32 ReferenceDereference)		clients CsDiag	ResiliencyReference	Always		
 Microsoft-Windows-PDC	24	0	ResiliencyDereference(Pointer ActivatorToken, Pointer Client, UInt32 ReferenceDereference)		clients CsDiag	ResiliencyDereference	Always		
-Microsoft-Windows-PDC	25	0	CsEnterPhase(UInt32 Phase, UInt32 Status)		Cs CsDiag	CsEnterPhase	Always		
-Microsoft-Windows-PDC	26	0	CsExitPhase(UInt32 Phase, UInt32 Status)		Cs CsDiag	CsExitPhase	Always		
+Microsoft-Windows-PDC	25	0	CsEnterPhase(UInt32 Phase, UInt32 Status)		CsDiag CsVerbose	CsEnterPhase	Always		
+Microsoft-Windows-PDC	26	0	CsExitPhase(UInt32 Phase, UInt32 Status)		CsDiag CsVerbose	CsExitPhase	Always		
 Microsoft-Windows-PDC	27	0	CsDisplayState(UInt32 On)		Cs	CsDisplayState	Always		
-Microsoft-Windows-PDC	28	0	CsMonitorRequestEnter(UInt32 On, UInt32 Console)		Cs	CsMonitorRequestEnter	Always		
-Microsoft-Windows-PDC	29	0	CsMonitorRequestExit(UInt32 At, UInt32 Status)		Cs	CsMonitorRequestExit	Always		
-Microsoft-Windows-PDC	30	0	CsMonitorContext(UInt32 ConnectedSessionCount, UInt32 ConsoleSessionId, UInt32 SessionId, UInt32 OnRequestCurrent, UInt32 OnRequestProcessed, UInt32 OffRequestCurrent, UInt32 OffRequestProcessed)		Cs	CsMonitorContext	Always		
-Microsoft-Windows-PDC	30	1	CsMonitorContext_V1(UInt32 ConnectedSessionCount, UInt32 ConsoleSessionId, UInt32 SessionId, UInt32 OnRequestCurrent, UInt32 OnRequestProcessed, UInt32 OffRequestCurrent, UInt32 OffRequestProcessed, Boolean BlockingActive, UInt32 BlockingScenarioCount, UInt32 BlockingEscapeCount, UInt32 BlockingPowerPressCount)		Cs	CsMonitorContext	Always		
-Microsoft-Windows-PDC	31	0	CsMonitorHandler(UInt32 At)		Cs CsDiag	CsMonitorHandler	Always		
+Microsoft-Windows-PDC	28	0	CsMonitorRequestEnter(UInt32 On, UInt32 Console)		CsVerbose	CsMonitorRequestEnter	Always		
+Microsoft-Windows-PDC	29	0	CsMonitorRequestExit(UInt32 At, UInt32 Status)		CsVerbose	CsMonitorRequestExit	Always		
+Microsoft-Windows-PDC	30	0	CsMonitorContext(UInt32 ConnectedSessionCount, UInt32 ConsoleSessionId, UInt32 SessionId, UInt32 OnRequestCurrent, UInt32 OnRequestProcessed, UInt32 OffRequestCurrent, UInt32 OffRequestProcessed)		CsVerbose	CsMonitorContext	Always		
+Microsoft-Windows-PDC	30	1	CsMonitorContext_V1(UInt32 ConnectedSessionCount, UInt32 ConsoleSessionId, UInt32 SessionId, UInt32 OnRequestCurrent, UInt32 OnRequestProcessed, UInt32 OffRequestCurrent, UInt32 OffRequestProcessed, Boolean BlockingActive, UInt32 BlockingScenarioCount, UInt32 BlockingEscapeCount, UInt32 BlockingPowerPressCount)		CsVerbose	CsMonitorContext	Always		
+Microsoft-Windows-PDC	31	0	CsMonitorHandler(UInt32 At)		CsDiag CsVerbose	CsMonitorHandler	Always		
 Microsoft-Windows-PDC	32	0	CsMonitorControl()		Cs	CsMonitorControl	Always		
-Microsoft-Windows-PDC	33	0	CsPowerButtonHandler()		Cs	CsPowerButtonHandler	Always		
-Microsoft-Windows-PDC	34	0	CsPowerButtonConsumed()		Cs CsDiag	CsPowerButtonConsumed	Always		
-Microsoft-Windows-PDC	35	0	CsDisplayNotification()		Cs CsDiag	CsDisplayNotification	Always		
-Microsoft-Windows-PDC	36	0	CsEnterExit(UInt32 At)		Cs	CsEnterExit	Always		
-Microsoft-Windows-PDC	37	0	CsEnableInput()		Cs	CsEnableInput	Always		
-Microsoft-Windows-PDC	38	0	CsDisableInput()		Cs	CsDisableInput	Always		
-Microsoft-Windows-PDC	39	0	CsSuspendResumeHandler(UInt32 Suspend)		Cs	CsSuspendResumeHandler	Always		
-Microsoft-Windows-PDC	40	0	CsSessionConnect(UInt32 SessionId, UInt32 Console, UInt32 Connected)		Cs	CsSessionConnect	Always		
-Microsoft-Windows-PDC	41	0	CsConnectionEvent()		Cs	CsConnectionEvent	Always		
-Microsoft-Windows-PDC	42	0	PdcInit(UInt32 AoAc, UInt32 Status)		Cs	PdcInit	Always		
+Microsoft-Windows-PDC	33	0	CsPowerButtonHandler()		CsVerbose	CsPowerButtonHandler	Always		
+Microsoft-Windows-PDC	34	0	CsPowerButtonConsumed()		CsDiag CsVerbose	CsPowerButtonConsumed	Always		
+Microsoft-Windows-PDC	35	0	CsDisplayNotification()		CsDiag CsVerbose	CsDisplayNotification	Always		
+Microsoft-Windows-PDC	36	0	CsEnterExit(UInt32 At)		CsVerbose	CsEnterExit	Always		
+Microsoft-Windows-PDC	37	0	CsEnableInput()		CsVerbose	CsEnableInput	Always		
+Microsoft-Windows-PDC	38	0	CsDisableInput()		CsVerbose	CsDisableInput	Always		
+Microsoft-Windows-PDC	39	0	CsSuspendResumeHandler(UInt32 Suspend)		CsVerbose	CsSuspendResumeHandler	Always		
+Microsoft-Windows-PDC	40	0	CsSessionConnect(UInt32 SessionId, UInt32 Console, UInt32 Connected)		CsVerbose	CsSessionConnect	Always		
+Microsoft-Windows-PDC	41	0	CsConnectionEvent()		CsVerbose	CsConnectionEvent	Always		
+Microsoft-Windows-PDC	42	0	PdcInit(UInt32 AoAc, UInt32 Status)		CsVerbose	PdcInit	Always		
 Microsoft-Windows-PDC	43	0	SuspendResumeRegistration(Pointer Process, UInt32 Session, Pointer Client, UInt32 PdcId, UInt32 Status)		suspendresume	SuspendResumeRegistration	Always		
 Microsoft-Windows-PDC	44	0	SuspendResumeDeregistration(Pointer Process, UInt32 Session, Pointer Client, UInt32 PdcId, UInt32 Status)		suspendresume	SuspendResumeDeregistration	Always		
 Microsoft-Windows-PDC	45	0	SuspendResumeReceive(Pointer Client, UInt32 SendReceive)		suspendresume	SuspendResumeReceive	Always		
@@ -66,15 +66,16 @@ Microsoft-Windows-PDC	63	0	EnterConnectedStandbyEnd(UInt32 DisableInputToPLMEntr
 Microsoft-Windows-PDC	64	0	ExitFromConnectedStandbyStart(UInt32 ExitReason)		Cs CsDiag	ExitFromConnectedStandbyStart	Informational		
 Microsoft-Windows-PDC	64	1	ExitFromConnectedStandbyStart_V1()		Cs CsDiag	ExitFromConnectedStandbyStart	Informational		
 Microsoft-Windows-PDC	65	0	ExitFromConnectedStandbyEnd(UInt32 ResiliencyExitToLowPowerEpochEntry, UInt32 ResiliencyExitToDAMEntry, UInt32 ResiliencyExitToPLMEntry, UInt32 PhaseTimesResiliencyAndResiliencyNotification, UInt32 PhaseTimesLowPowerAndDam, UInt32 PhaseTimesPlmAndPresence, UInt32 PhaseTimesConnectionAndMaintenanceAndScreenOn, UInt32 CsDuration)		Cs CsDiag sleepstudy	ExitFromConnectedStandbyEnd	Informational		
-Microsoft-Windows-PDC	66	0	AbortConnectedStandbyStart()		Cs	AbortConnectedStandbyStart	Informational		
-Microsoft-Windows-PDC	67	0	AbortConnectedStandbyEnd()		Cs	AbortConnectedStandbyEnd	Informational		
-Microsoft-Windows-PDC	68	0	PdcStateChange(UInt32 NewState, UInt32 OldState)		Cs	PdcStateChange	Always		
-Microsoft-Windows-PDC	69	0	PdcScreenOffRequest(UInt32 Status)		Cs	PdcScreenOffRequest	Always		
-Microsoft-Windows-PDC	70	0	PdcScreenOffDisabled()		Cs	PdcScreenOffDisabled	Always		
+Microsoft-Windows-PDC	65	1	ExitFromConnectedStandbyEnd_V1(UInt32 ResiliencyExitToLowPowerEpochEntry, UInt32 ResiliencyExitToDAMEntry, UInt32 ResiliencyExitToPLMEntry, UInt32 PhaseTimesResiliencyAndResiliencyNotification, UInt32 PhaseTimesLowPowerAndDam, UInt32 PhaseTimesPlmAndPresence, UInt32 PhaseTimesConnectionAndMaintenanceAndScreenOn, UInt32 CsDuration, UInt64 ScenarioInstanceId)		Cs CsDiag sleepstudy	ExitFromConnectedStandbyEnd	Informational		
+Microsoft-Windows-PDC	66	0	AbortConnectedStandbyStart()		CsVerbose	AbortConnectedStandbyStart	Informational		
+Microsoft-Windows-PDC	67	0	AbortConnectedStandbyEnd()		CsVerbose	AbortConnectedStandbyEnd	Informational		
+Microsoft-Windows-PDC	68	0	PdcStateChange(UInt32 NewState, UInt32 OldState)		CsVerbose	PdcStateChange	Always		
+Microsoft-Windows-PDC	69	0	PdcScreenOffRequest(UInt32 Status)		CsVerbose	PdcScreenOffRequest	Always		
+Microsoft-Windows-PDC	70	0	PdcScreenOffDisabled()		CsVerbose	PdcScreenOffDisabled	Always		
 Microsoft-Windows-PDC	71	0	ActivatorRegistrationRundown(Pointer Client, UInt32 PdcId, UInt32 ResiliencyClientCount, UInt16 ResiliencyContext, UInt32 ClientNameLength, UnicodeString ClientName)		activators CsDiag	ActivatorRegistrationRundown	Always		
 Microsoft-Windows-PDC	72	0	NotificationRegistrationRundown(Pointer Client, UInt32 PdcId, UInt32 Type, UInt32 ClientNameLength, UnicodeString ClientName)		notifications CsDiag	NotificationRegistrationRundown	Always		
 Microsoft-Windows-PDC	73	0	ResiliencyClientRegistrationRundown(Pointer Client, UInt64 ClientReferences, UInt32 CurrentState, UInt32 Type)		clients CsDiag	ResiliencyClientRegistrationRundown	Always		
-Microsoft-Windows-PDC	74	0	CsFilterInput()		Cs	CsFilterInput	Always		
+Microsoft-Windows-PDC	74	0	CsFilterInput()		CsVerbose	CsFilterInput	Always		
 Microsoft-Windows-PDC	75	0	TaskRegistration(Pointer Client, UInt32 PdcId, UInt32 Status, UInt32 ClientNameLength, UnicodeString ClientName)		tasks	TaskRegistration	Always		
 Microsoft-Windows-PDC	76	0	TaskDeregistration(Pointer Client, UInt32 PdcId, UInt32 Status)		tasks	TaskDeregistration	Always		
 Microsoft-Windows-PDC	77	0	TaskMessage(Pointer Message, UInt32 StatusActive)		tasks	TaskMessage	Always		
@@ -103,8 +104,9 @@ Microsoft-Windows-PDC	98	0	SpmScenarioAccountingRundown(Pointer Scenario, UInt64
 Microsoft-Windows-PDC	99	0	SpmClientControlStateChange(UInt32 PdcId, UInt8 PreviousState, UInt8 NextState)		SPM	SpmClientControlStateChange	Always		
 Microsoft-Windows-PDC	100	0	SpmClientControlStateRundown(UInt32 PdcId, UInt32 ReferenceCount, UInt32 ClientNameLength, UnicodeString ClientName)		SPM	SpmClientControlStateRundown	Always		
 Microsoft-Windows-PDC	101	0	PhaseAccounting(UInt32 DataCount, AnsiString Data)		sleepstudy	PhaseAccounting	Informational		
+Microsoft-Windows-PDC	101	1	PhaseAccounting_V1(UInt32 DataCount, Int8 Data, UInt64 ScenarioInstanceId)		sleepstudy	PhaseAccounting	Informational		
 Microsoft-Windows-PDC	102	0	ClientVerboseRundown(UInt32 ClientId, UInt32 ClientFlags, UInt32 ClientNameLength, UnicodeString ClientName)		sleepstudy	ClientVerboseRundown	Informational		
-Microsoft-Windows-PDC	103	0	ActivatorActiveTooLong(UInt32 TimeContinuouslyActive, UInt32 ClientIdAndActivityTypeAndOnAc, UInt32 UserClientProcess)		activators Cs CsDiag	ActivatorActiveTooLong	Informational		
+Microsoft-Windows-PDC	103	0	ActivatorActiveTooLong(UInt32 TimeContinuouslyActive, UInt32 ClientIdAndActivityTypeAndOnAc, UInt32 UserClientProcess)		activators CsDiag CsVerbose	ActivatorActiveTooLong	Informational		
 Microsoft-Windows-PDC	104	0	SpmScenarioAccountingSnapshot(Pointer Scenario, UInt64 DripsTimeInUs, UInt64 DripsTranstions, UInt64 PlatformIdleTimeInUs, UInt64 PlatformIdleTranstions, UInt32 StateCount, Int32 States)		sleepstudy	SpmScenarioAccountingSnapshot	Always		
 Microsoft-Windows-PDC	105	0	SpmScenarioActivityRundown(Pointer Scenario, UInt64 ActiveCount, UInt64 MaxActiveTime, UInt64 MinActiveTime, UInt64 TotalActiveTime)		SPM	SpmScenarioActivityRundown	Informational		
 Microsoft-Windows-PDC	106	0	PpmProfileClientRegistration(Pointer Client, UInt32 PdcId, GUID ProfileGuid, UInt32 Status, UInt32 ClientNameLength, UnicodeString ClientName)		SPM	PpmProfileClientRegistration	Always		
@@ -118,18 +120,18 @@ Microsoft-Windows-PDC	113	0	PDCV2ActivationClientDeactivate(UInt32 ClientId, UIn
 Microsoft-Windows-PDC	114	0	PDCV2ActivationClientUnregister(UInt32 ClientId, UInt32 Status, UInt32 PdcVersion, UInt32 ModuleNameLength, UnicodeString ModuleName)		PdcClient	PDCV2ActivationClientUnregister	Always		
 Microsoft-Windows-PDC	115	0	PDCV2ActivationClientCallback(UInt32 ClientId, UInt32 TaskNameLength, UnicodeString TaskName, UInt32 SubTaskLength, UnicodeString SubTaskName, UInt32 CallbackReason, UInt32 ActivationCount, UInt32 ActivationsUpCounter, UInt64 ActivationDuration, UInt32 Status, Pointer ActivationHandle, UInt32 RenewalUpCounter, UInt32 PdcVersion, UInt32 ModuleNameLength, UnicodeString ModuleName, UInt32 BrokeredForPID)		PdcClient	PDCV2ActivationClientCallback	Always		
 Microsoft-Windows-PDC	116	0	PDCV2ActivationClientSetBrokeredProcessID(UInt32 ClientId, UInt32 TaskNameLength, UnicodeString TaskName, UInt32 SubTaskLength, UnicodeString SubTaskName, UInt32 ExpectedMaximumDuration, UInt32 ActivationCount, UInt32 ActivationsUpCounter, UInt64 ActivationDuration, UInt32 RenewalUpCounter, UInt32 BrokeredForPID, UInt32 Status, Pointer ActivationHandle, UInt32 ModuleNameLength, UnicodeString ModuleName)		PdcClient	PDCV2ActivationClientSetBrokeredProcessID	Always		
-Microsoft-Windows-PDC	117	0	PDCSignalClassWakeDetails(UInt8 ScenarioInstanceId, UInt32 RequestType, UInt32 Reason, GUID ClassId, GUID ProviderId, UInt32 DiagStringLength, UnicodeString DiagString)		Cs CsDiag sleepstudy PdcClient	PDCSignalClassWakeDetails	Informational		
-Microsoft-Windows-PDC	117	1	PDCSignalClassWakeDetails_V1(UInt8 ScenarioInstanceId, UInt32 RequestType, UInt32 Reason, GUID ClassId, GUID ProviderId, UInt32 DiagStringLength, UnicodeString DiagString, UInt64 ScenarioInstanceIdV2)		Cs CsDiag sleepstudy PdcClient	PDCSignalClassWakeDetails	Informational		
-Microsoft-Windows-PDC	118	0	PDCSignalClassMonitorOffDetails(UInt8 ScenarioInstanceId, UInt32 RequestType, UInt32 Reason, GUID ClassId, GUID ProviderId, UInt32 DiagStringLength, UnicodeString DiagString)		Cs CsDiag sleepstudy PdcClient	PDCSignalClassMonitorOffDetails	Informational		
-Microsoft-Windows-PDC	118	1	PDCSignalClassMonitorOffDetails_V1(UInt8 ScenarioInstanceId, UInt32 RequestType, UInt32 Reason, GUID ClassId, GUID ProviderId, UInt32 DiagStringLength, UnicodeString DiagString, UInt64 ScenarioInstanceIdV2)		Cs CsDiag sleepstudy PdcClient	PDCSignalClassMonitorOffDetails	Informational		
-Microsoft-Windows-PDC	119	0	PdcPhaseReferenced(UInt8 Phase, Int32 CountChange, Int32 ReferenceCount, Boolean WasWorkItemQueued)		Cs CsDiag	PdcPhaseReferenced	Always		
-Microsoft-Windows-PDC	120	0	PdcPhaseDereferenced(UInt8 Phase, Int32 CountChange, Int32 ReferenceCount, Boolean WasWorkItemQueued)		Cs CsDiag	PdcPhaseDereferenced	Always		
-Microsoft-Windows-PDC	121	0	PdcTargetPhaseSelected(UInt8 PreviousTargetPhase, UInt8 NewTargetPhase, UInt8 CurrentPhase)		Cs CsDiag	PdcTargetPhaseSelected	Always		
-Microsoft-Windows-PDC	122	0	PdcTargetPhaseReached(UInt8 Phase)		Cs CsDiag	PdcTargetPhaseReached	Always		
-Microsoft-Windows-PDC	123	0	PdcPhaseNotificationsStateChanged(UInt8 Phase, UInt8 PreviousState, UInt8 NewState)		Cs CsDiag	PdcPhaseNotificationsStateChanged	Always		
-Microsoft-Windows-PDC	124	0	PdcPhaseRundown(UInt8 Phase, Int32 ReferenceCount, Boolean IsHandlerEngaged, UInt8 NotificationsState, UInt32 NotificationsStatus, UInt32 PdcSequenceId, UInt32 EntryWaitTimeInSeconds, UInt32 EntryWatchdogTimeoutInSeconds)		Cs CsDiag	PdcPhaseRundown	Always		
-Microsoft-Windows-PDC	125	0	PdcPhaseAccountingRundown(UInt8 Phase, UInt32 EngageCount, UInt64 EngageHandlerTotalTime, UInt64 EngageHandlerNotificationsTotalTime, UInt32 DisengageCount, UInt64 DisengageHandlerTotalTime, UInt64 DisengageHandlerNotificationsTotalTime, UInt64 PhaseTotalTime)		Cs CsDiag	PdcPhaseAccountingRundown	Always		
-Microsoft-Windows-PDC	126	0	PdcPhaseNotificationCallback(UInt8 CurrentPhase, UInt8 CurrentPhaseNotificationsState, UInt32 CurrentPhaseNotificationsStatus, UInt32 CurrentPhasePdcSequence, UInt32 CallbackStatus, UInt32 CallbackPdcSequence)		Cs CsDiag	PdcPhaseNotificationCallback	Always		
+Microsoft-Windows-PDC	117	0	PDCSignalClassWakeDetails(UInt8 ScenarioInstanceId, UInt32 RequestType, UInt32 Reason, GUID ClassId, GUID ProviderId, UInt32 DiagStringLength, UnicodeString DiagString)		CsDiag sleepstudy PdcClient CsVerbose	PDCSignalClassWakeDetails	Informational		
+Microsoft-Windows-PDC	117	1	PDCSignalClassWakeDetails_V1(UInt8 ScenarioInstanceId, UInt32 RequestType, UInt32 Reason, GUID ClassId, GUID ProviderId, UInt32 DiagStringLength, UnicodeString DiagString, UInt64 ScenarioInstanceIdV2)		CsDiag sleepstudy PdcClient CsVerbose	PDCSignalClassWakeDetails	Informational		
+Microsoft-Windows-PDC	118	0	PDCSignalClassMonitorOffDetails(UInt8 ScenarioInstanceId, UInt32 RequestType, UInt32 Reason, GUID ClassId, GUID ProviderId, UInt32 DiagStringLength, UnicodeString DiagString)		CsDiag sleepstudy PdcClient CsVerbose	PDCSignalClassMonitorOffDetails	Informational		
+Microsoft-Windows-PDC	118	1	PDCSignalClassMonitorOffDetails_V1(UInt8 ScenarioInstanceId, UInt32 RequestType, UInt32 Reason, GUID ClassId, GUID ProviderId, UInt32 DiagStringLength, UnicodeString DiagString, UInt64 ScenarioInstanceIdV2)		CsDiag sleepstudy PdcClient CsVerbose	PDCSignalClassMonitorOffDetails	Informational		
+Microsoft-Windows-PDC	119	0	PdcPhaseReferenced(UInt8 Phase, Int32 CountChange, Int32 ReferenceCount, Boolean WasWorkItemQueued)		CsDiag CsVerbose	PdcPhaseReferenced	Always		
+Microsoft-Windows-PDC	120	0	PdcPhaseDereferenced(UInt8 Phase, Int32 CountChange, Int32 ReferenceCount, Boolean WasWorkItemQueued)		CsDiag CsVerbose	PdcPhaseDereferenced	Always		
+Microsoft-Windows-PDC	121	0	PdcTargetPhaseSelected(UInt8 PreviousTargetPhase, UInt8 NewTargetPhase, UInt8 CurrentPhase)		CsDiag CsVerbose	PdcTargetPhaseSelected	Always		
+Microsoft-Windows-PDC	122	0	PdcTargetPhaseReached(UInt8 Phase)		CsDiag CsVerbose	PdcTargetPhaseReached	Always		
+Microsoft-Windows-PDC	123	0	PdcPhaseNotificationsStateChanged(UInt8 Phase, UInt8 PreviousState, UInt8 NewState)		CsDiag CsVerbose	PdcPhaseNotificationsStateChanged	Always		
+Microsoft-Windows-PDC	124	0	PdcPhaseRundown(UInt8 Phase, Int32 ReferenceCount, Boolean IsHandlerEngaged, UInt8 NotificationsState, UInt32 NotificationsStatus, UInt32 PdcSequenceId, UInt32 EntryWaitTimeInSeconds, UInt32 EntryWatchdogTimeoutInSeconds)		CsDiag CsVerbose	PdcPhaseRundown	Always		
+Microsoft-Windows-PDC	125	0	PdcPhaseAccountingRundown(UInt8 Phase, UInt32 EngageCount, UInt64 EngageHandlerTotalTime, UInt64 EngageHandlerNotificationsTotalTime, UInt32 DisengageCount, UInt64 DisengageHandlerTotalTime, UInt64 DisengageHandlerNotificationsTotalTime, UInt64 PhaseTotalTime)		CsDiag CsVerbose	PdcPhaseAccountingRundown	Always		
+Microsoft-Windows-PDC	126	0	PdcPhaseNotificationCallback(UInt8 CurrentPhase, UInt8 CurrentPhaseNotificationsState, UInt32 CurrentPhaseNotificationsStatus, UInt32 CurrentPhasePdcSequence, UInt32 CallbackStatus, UInt32 CallbackPdcSequence)		CsDiag CsVerbose	PdcPhaseNotificationCallback	Always		
 Microsoft-Windows-PDC	127	0	PdcSIdleUpdateNotification(Boolean SystemIdle)			PdcSIdleUpdateNotification	Always		
 Microsoft-Windows-PDC	128	0	PdcInvalidArgumentToFunction(UInt32 FunctionNameLength, UnicodeString FunctionName, UInt32 ArgumentNameLength, UnicodeString ArgumentName)			PdcInvalidArgumentToFunction	Always		
 Microsoft-Windows-PDC	129	0	SpmScenarioCreate(Pointer Scenario, UInt32 Status)		SPM	SpmScenarioCreate	Informational		

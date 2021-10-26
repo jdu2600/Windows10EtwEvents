@@ -1,0 +1,42 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-MapControls	12	0	MosThread_CreateInstanceStart()	Start	Performance Map	MosThread_CreateInstance	Informational		
+Microsoft-Windows-MapControls	13	0	MosThread_CreateInstanceStop()	Stop	Performance Map	MosThread_CreateInstance	Informational		
+Microsoft-Windows-MapControls	14	0	MosThread_InitializeMosStart()	Start	Performance Map	MosThread_InitializeMos	Informational		
+Microsoft-Windows-MapControls	15	0	MosThread_InitializeMosStop()	Stop	Performance Map	MosThread_InitializeMos	Informational		
+Microsoft-Windows-MapControls	5001	0	RouterAdapter_InitStart(Int32 Id)	Start	Performance Queries	RouterAdapter_Init	Informational		
+Microsoft-Windows-MapControls	5002	0	RouterAdapter_InitStop(Int32 Id)	Stop	Performance Queries	RouterAdapter_Init	Informational		
+Microsoft-Windows-MapControls	5003	0	RouterAdapter_UninitStart(Int32 Id)	Start	Performance Queries	RouterAdapter_Uninit	Informational		
+Microsoft-Windows-MapControls	5004	0	RouterAdapter_UninitStop(Int32 Id)	Stop	Performance Queries	RouterAdapter_Uninit	Informational		
+Microsoft-Windows-MapControls	5005	0	RouterAdapter_CalculateRoute(Int32 Id, Double FromLatitude, Double FromLongitude, Double ToLatitude, Double ToLongitude, Int32 WaypointCount, Int32 TravelMode, Int32 RouteOptimization, Int32 StartHeadingInDegrees)		Queries	RouterAdapter_CalculateRoute	Informational		
+Microsoft-Windows-MapControls	5006	0	RouterAdapter_CalculateRouteStart(Int32 Id)	Start	Performance Queries	RouterAdapter_CalculateRoute	Informational		
+Microsoft-Windows-MapControls	5009	0	RouterAdapter_OnRouteDone(Int32 Id, Int32 HRESULT)		Queries	RouterAdapter_OnRouteDone	Informational		
+Microsoft-Windows-MapControls	5010	0	RouterAdapter_OnRouteDoneStop(Int32 Id, Int32 HRESULT)	Stop	Performance Queries	RouterAdapter_OnRouteDone	Informational		
+Microsoft-Windows-MapControls	5011	0	RouterAdapter_Cancel(Int32 Id)		Performance Queries	RouterAdapter_Cancel	Informational		
+Microsoft-Windows-MapControls	5012	0	RouterAdapter_OnRouteProgress(Int32 Id, Int32 DWPercent)		Queries	RouterAdapter_OnRouteProgress	Informational		
+Microsoft-Windows-MapControls	5020	0	Route_Initialize(Int32 LengthInMeters, Int32 DurationInSeconds, Int32 DurationWithoutTrafficInSeconds, Int32 GeometryCoordinatesCount, Int32 LegCount)		Queries	Route_Initialize	Verbose		
+Microsoft-Windows-MapControls	5021	0	RouteLeg_Initialize(Int32 LengthInMeters, Int32 DurationInSeconds, Int32 DurationWithoutTrafficInSeconds, Int32 GeometryCoordinatesCount, Int32 ManeuverCount)		Queries	RouteLeg_Initialize	Verbose		
+Microsoft-Windows-MapControls	5022	0	RouteManeuver_Initialize(Int32 DistanceInMetersToNext, Int32 ManeuverType, Int32 TrafficCircleExitNumber, UnicodeString InstructionText)		Queries	RouteManeuver_Initialize	Verbose		
+Microsoft-Windows-MapControls	5023	0	Route_Serialize(Int32 Hr, Int32 LegCount)		Serialization	Route_Serialize	Informational		
+Microsoft-Windows-MapControls	5024	0	Route_Deserialize(Int32 Hr, Int32 LegCount)		Serialization	Route_Deserialize	Informational		
+Microsoft-Windows-MapControls	5025	0	Route_SerializeStart()	Start	Performance Serialization	Route_Serialize	Informational		
+Microsoft-Windows-MapControls	5026	0	Route_DeserializeStop()	Stop	Performance Serialization	Route_Deserialize	Informational		
+Microsoft-Windows-MapControls	5027	0	Route_DeserializeStart()	Start	Performance Serialization	Route_Deserialize	Informational		
+Microsoft-Windows-MapControls	5028	0	Route_DeserializeStop5028()	Stop	Performance Serialization	Route_Deserialize	Informational		
+Microsoft-Windows-MapControls	11001	0	PointerEvent()		Touch	PointerEvent	Informational		
+Microsoft-Windows-MapControls	11002	0	PointerEvent11002()		Touch	PointerEvent	Informational		
+Microsoft-Windows-MapControls	11003	0	PointerEvent11003()		Touch	PointerEvent	Informational		
+Microsoft-Windows-MapControls	11004	0	PointerEvent11004()		Touch	PointerEvent	Informational		
+Microsoft-Windows-MapControls	11042	0	JupiterMapOverlay(Int32 dipX, Int32 dipY)			JupiterMapOverlay	Informational		
+Microsoft-Windows-MapControls	11043	0	JupiterMapOverlay11043(Int32 dipX, Int32 dipY)			JupiterMapOverlay	Informational		
+Microsoft-Windows-MapControls	11044	0	JupiterMapOverlay11044(Int32 dipX, Int32 dipY)			JupiterMapOverlay	Informational		
+Microsoft-Windows-MapControls	11045	0	JupiterMapOverlayStart()	Start		JupiterMapOverlay	Informational		
+Microsoft-Windows-MapControls	11046	0	JupiterMapOverlayStop()	Stop		JupiterMapOverlay	Informational		
+Microsoft-Windows-MapControls	11047	0	JupiterMapOverlay11047()			JupiterMapOverlay	Informational		
+Microsoft-Windows-MapControls	11048	0	JupiterMapOverlay11048()			JupiterMapOverlay	Informational		
+Microsoft-Windows-MapControls	11049	0	NoOutstandingMapControls()		Map	NoOutstandingMapControls	Informational		
+Microsoft-Windows-MapControls	13001	0	Map_Authentication(UnicodeString MapServiceTokenValue)		MapAuthentication	Map_Authentication	Informational		
+Microsoft-Windows-MapControls	13002	0	Map_Authentication13002(UnicodeString MapServiceTokenValue)		MapAuthentication	Map_Authentication	Informational		
+Microsoft-Windows-MapControls	13003	0	Map_Authentication13003(UnicodeString MapServiceTokenValue)		MapAuthentication	Map_Authentication	Informational		
+Microsoft-Windows-MapControls	13004	0	Map_Authentication13004(UnicodeString MapServiceTokenValue)		MapAuthentication	Map_Authentication	Informational		
+Microsoft-Windows-MapControls	13005	0	Map_Authentication13005(Int32 BingKeyValidationStatus)		MapAuthentication	Map_Authentication	Informational		
+Microsoft-Windows-MapControls	13006	0	Map_Finder(UnicodeString MapServiceTokenValue)		MapFinder	Map_Finder	Informational		

@@ -1,0 +1,139 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Quic	1	0	task_0Global(UInt32 PartitionCount, UInt32 DatapathFeatures)	Global	ut:LowVolume	task_0	Informational		
+Microsoft-Quic	2	0	task_0Global2()	Global	ut:LowVolume	task_0	Informational		
+Microsoft-Quic	3	0	task_0Global3()	Global	ut:LowVolume	task_0	Informational		
+Microsoft-Quic	4	0	task_0Global4()	Global	ut:LowVolume	task_0	Informational		
+Microsoft-Quic	5	0	task_0Global5()	Global	ut:LowVolume	task_0	Informational		
+Microsoft-Quic	6	0	task_0Global6(AnsiString Desc, UInt64 ByteCount)	Global	ut:LowVolume	task_0	Warning		
+Microsoft-Quic	7	0	task_0Global7(UInt32 PartitionCount, UInt32 DatapathFeatures)	Global	ut:LowVolume	task_0	Informational		
+Microsoft-Quic	8	0	task_0Global8(AnsiString ErrStr)	Global	ut:LowVolume	task_0	Error		
+Microsoft-Quic	9	0	task_0Global9(UInt32 Status, AnsiString ErrStr)	Global	ut:LowVolume	task_0	Error		
+Microsoft-Quic	10	0	task_0Global10(UInt32 Line, AnsiString File, AnsiString Expression)	Global	ut:LowVolume	task_0	Error		
+Microsoft-Quic	11	0	task_0Global11(UInt32 Type, Pointer Handle)	Global	ut:Api	task_0	Verbose		
+Microsoft-Quic	12	0	task_0Global12()	Global	ut:Api	task_0	Verbose		
+Microsoft-Quic	13	0	task_0Global13(UInt32 Status)	Global	ut:Api	task_0	Verbose		
+Microsoft-Quic	14	0	task_0Global14()	Global	ut:Api	task_0	Verbose		
+Microsoft-Quic	15	0	task_0Global15(UInt16 PerfCountersLength, Binary PerfCounters)	Global	ut:LowVolume	task_0	Informational		
+Microsoft-Quic	16	0	task_0Global16(UInt8 Value)	Global	ut:LowVolume	task_0	Informational		
+Microsoft-Quic	1024	0	task_0Registration(Pointer Registration, AnsiString AppName)	Registration	ut:Registration ut:LowVolume	task_0	Informational		
+Microsoft-Quic	1025	0	task_0Registration1025(Pointer Registration)	Registration	ut:Registration ut:LowVolume	task_0	Informational		
+Microsoft-Quic	1026	0	task_0Registration1026(Pointer Registration)	Registration	ut:Registration ut:LowVolume	task_0	Informational		
+Microsoft-Quic	1027	0	task_0Registration1027(Pointer Registration, AnsiString AppName)	Registration	ut:Registration ut:LowVolume	task_0	Informational		
+Microsoft-Quic	1028	0	task_0Registration1028(Pointer Registration, AnsiString ErrStr)	Registration	ut:Registration ut:LowVolume	task_0	Error		
+Microsoft-Quic	1029	0	task_0Registration1029(Pointer Registration, UInt32 Status, AnsiString ErrStr)	Registration	ut:Registration ut:LowVolume	task_0	Error		
+Microsoft-Quic	1030	0	task_0Registration1030(Pointer Registration, UInt32 Flags, UInt64 ErrorCode)	Registration	ut:Registration ut:LowVolume	task_0	Informational		
+Microsoft-Quic	2048	0	task_0Worker(Pointer Worker, UInt16 IdealProcessor, Pointer Owner)	Worker	ut:Worker ut:LowVolume	task_0	Informational		
+Microsoft-Quic	2049	0	task_0Worker2049(Pointer Worker)	Worker	ut:Worker ut:LowVolume	task_0	Informational		
+Microsoft-Quic	2050	0	task_0Worker2050(Pointer Worker)	Worker	ut:Worker ut:LowVolume	task_0	Informational		
+Microsoft-Quic	2051	0	task_0Worker2051(Pointer Worker, UInt8 IsActive, UInt32 Arg)	Worker	ut:Worker ut:Scheduling ut:LowVolume	task_0	Verbose		
+Microsoft-Quic	2052	0	task_0Worker2052(Pointer Worker, UInt32 QueueDelay)	Worker	ut:Worker ut:Scheduling ut:LowVolume	task_0	Verbose		
+Microsoft-Quic	2053	0	task_0Worker2053(Pointer Worker)	Worker	ut:Worker ut:LowVolume	task_0	Informational		
+Microsoft-Quic	2054	0	task_0Worker2054(Pointer Worker)	Worker	ut:Worker ut:LowVolume	task_0	Informational		
+Microsoft-Quic	2055	0	task_0Worker2055(Pointer Worker, AnsiString ErrStr)	Worker	ut:Worker ut:LowVolume	task_0	Error		
+Microsoft-Quic	2056	0	task_0Worker2056(Pointer Worker, UInt32 Status, AnsiString ErrStr)	Worker	ut:Worker ut:LowVolume	task_0	Error		
+Microsoft-Quic	3072	0	task_0Configuration(Pointer Configuration, Pointer Registration)	Configuration	ut:Configuration ut:LowVolume	task_0	Informational		
+Microsoft-Quic	3073	0	task_0Configuration3073(Pointer Configuration)	Configuration	ut:Configuration ut:LowVolume	task_0	Informational		
+Microsoft-Quic	3074	0	task_0Configuration3074(Pointer Configuration)	Configuration	ut:Configuration ut:LowVolume	task_0	Informational		
+Microsoft-Quic	3076	0	task_0Configuration3076(Pointer Configuration, Pointer Registration)	Configuration	ut:Configuration ut:LowVolume	task_0	Informational		
+Microsoft-Quic	3077	0	task_0Configuration3077(Pointer Configuration, AnsiString ErrStr)	Configuration	ut:Configuration ut:LowVolume	task_0	Error		
+Microsoft-Quic	3078	0	task_0Configuration3078(Pointer Configuration, UInt32 Status, AnsiString ErrStr)	Configuration	ut:Configuration ut:LowVolume	task_0	Error		
+Microsoft-Quic	4096	0	task_0Listener(Pointer Listener, Pointer Registration)	Listener	ut:Listener ut:LowVolume	task_0	Informational		
+Microsoft-Quic	4097	0	task_0Listener4097(Pointer Listener)	Listener	ut:Listener ut:LowVolume	task_0	Informational		
+Microsoft-Quic	4098	0	task_0Listener4098(Pointer Listener, Pointer Binding, UInt8 AddrLength, Binary Addr)	Listener	ut:Listener ut:LowVolume	task_0	Informational		
+Microsoft-Quic	4099	0	task_0Listener4099(Pointer Listener)	Listener	ut:Listener ut:LowVolume	task_0	Informational		
+Microsoft-Quic	4100	0	task_0Listener4100(Pointer Listener, Pointer Registration)	Listener	ut:Listener ut:LowVolume	task_0	Informational		
+Microsoft-Quic	4101	0	task_0Listener4101(Pointer Listener, AnsiString ErrStr)	Listener	ut:Listener ut:LowVolume	task_0	Error		
+Microsoft-Quic	4102	0	task_0Listener4102(Pointer Listener, UInt32 Status, AnsiString ErrStr)	Listener	ut:Listener ut:LowVolume	task_0	Error		
+Microsoft-Quic	5120	0	task_0Connection(Pointer Connection, UInt32 IsServer, UInt64 CorrelationId)	Connection	ut:Connection ut:LowVolume	task_0	Informational		
+Microsoft-Quic	5121	0	task_0Connection5121(Pointer Connection)	Connection	ut:Connection ut:LowVolume	task_0	Informational		
+Microsoft-Quic	5122	0	task_0Connection5122(Pointer Connection)	Connection	ut:Connection ut:LowVolume	task_0	Informational		
+Microsoft-Quic	5123	0	task_0Connection5123(Pointer Connection, UInt32 State)	Connection	ut:Connection ut:Scheduling	task_0	Informational		
+Microsoft-Quic	5124	0	task_0Connection5124(Pointer Connection, UInt32 Type)	Connection	ut:Connection ut:Scheduling	task_0	Verbose		
+Microsoft-Quic	5125	0	task_0Connection5125(Pointer Connection, UInt32 Type)	Connection	ut:Connection ut:Scheduling	task_0	Verbose		
+Microsoft-Quic	5126	0	task_0Connection5126(Pointer Connection, UInt32 Type)	Connection	ut:Connection ut:Scheduling	task_0	Verbose		
+Microsoft-Quic	5127	0	task_0Connection5127(Pointer Connection, UInt8 AddrLength, Binary Addr)	Connection	ut:Connection ut:LowVolume	task_0	Informational		
+Microsoft-Quic	5128	0	task_0Connection5128(Pointer Connection, UInt8 AddrLength, Binary Addr)	Connection	ut:Connection ut:LowVolume	task_0	Informational		
+Microsoft-Quic	5129	0	task_0Connection5129(Pointer Connection, UInt8 AddrLength, Binary Addr)	Connection	ut:Connection ut:LowVolume	task_0	Informational		
+Microsoft-Quic	5130	0	task_0Connection5130(Pointer Connection, UInt8 AddrLength, Binary Addr)	Connection	ut:Connection ut:LowVolume	task_0	Informational		
+Microsoft-Quic	5131	0	task_0Connection5131(Pointer Connection, Pointer Worker)	Connection	ut:Connection ut:Scheduling	task_0	Informational		
+Microsoft-Quic	5132	0	task_0Connection5132(Pointer Connection)	Connection	ut:Connection ut:LowVolume	task_0	Informational		
+Microsoft-Quic	5133	0	task_0Connection5133(Pointer Connection, Pointer Registration)	Connection	ut:Connection ut:LowVolume	task_0	Informational		
+Microsoft-Quic	5134	0	task_0Connection5134(Pointer Connection, Pointer Registration)	Connection	ut:Connection ut:LowVolume	task_0	Verbose		
+Microsoft-Quic	5135	0	task_0Connection5135(Pointer Connection, UInt64 ErrorCode, UInt8 IsRemoteShutdown, UInt8 IsQuicStatus)	Connection	ut:Connection ut:LowVolume	task_0	Informational		
+Microsoft-Quic	5136	0	task_0Connection5136(Pointer Connection, UInt64 ErrorCode, UInt8 IsRemoteShutdown)	Connection	ut:Connection ut:LowVolume	task_0	Informational		
+Microsoft-Quic	5137	0	task_0Connection5137(Pointer Connection)	Connection	ut:Connection ut:LowVolume	task_0	Verbose		
+Microsoft-Quic	5138	0	task_0Connection5138(Pointer Connection)	Connection	ut:Connection ut:LowVolume	task_0	Verbose		
+Microsoft-Quic	5139	0	task_0Connection5139(Pointer Connection, UInt32 Value)	Connection	ut:Connection ut:LowVolume	task_0	Informational		
+Microsoft-Quic	5140	0	task_0Connection5140(Pointer Connection, UInt64 BytesSent, UInt32 BytesInFlight, UInt32 BytesInFlightMax, UInt32 CongestionWindow, UInt32 SlowStartThreshold, UInt64 ConnectionFlowControl, UInt64 IdealBytes, UInt64 PostedBytes, UInt32 SmoothedRtt)	Connection	ut:Connection ut:DataFlow	task_0	Verbose		
+Microsoft-Quic	5141	0	task_0Connection5141(Pointer Connection, UInt8 ReasonFlags)	Connection	ut:Connection ut:DataFlow	task_0	Informational		
+Microsoft-Quic	5142	0	task_0Connection5142(Pointer Connection, UInt64 BytesReceived)	Connection	ut:Connection ut:DataFlow	task_0	Verbose		
+Microsoft-Quic	5143	0	task_0Connection5143(Pointer Connection, UInt32 SlowStartThreshold, UInt32 K, UInt32 WindowMax, UInt32 WindowLastMax)	Connection	ut:Connection ut:DataFlow	task_0	Verbose		
+Microsoft-Quic	5144	0	task_0Connection5144(Pointer Connection)	Connection	ut:Connection ut:DataFlow	task_0	Verbose		
+Microsoft-Quic	5145	0	task_0Connection5145(Pointer Connection)	Connection	ut:Connection ut:DataFlow ut:LowVolume	task_0	Informational		
+Microsoft-Quic	5146	0	task_0Connection5146(Pointer Connection)	Connection	ut:Connection ut:DataFlow	task_0	Informational		
+Microsoft-Quic	5147	0	task_0Connection5147(Pointer Connection, UInt32 IsServer, UInt64 CorrelationId)	Connection	ut:Connection ut:LowVolume	task_0	Informational		
+Microsoft-Quic	5148	0	task_0Connection5148(Pointer Connection, UInt64 SequenceNumber, UInt8 CidLength, Binary Cid)	Connection	ut:Connection ut:LowVolume	task_0	Verbose		
+Microsoft-Quic	5149	0	task_0Connection5149(Pointer Connection, UInt64 SequenceNumber, UInt8 CidLength, Binary Cid)	Connection	ut:Connection ut:LowVolume	task_0	Verbose		
+Microsoft-Quic	5150	0	task_0Connection5150(Pointer Connection, UInt64 SequenceNumber, UInt8 CidLength, Binary Cid)	Connection	ut:Connection ut:LowVolume	task_0	Verbose		
+Microsoft-Quic	5151	0	task_0Connection5151(Pointer Connection, UInt64 SequenceNumber, UInt8 CidLength, Binary Cid)	Connection	ut:Connection ut:LowVolume	task_0	Verbose		
+Microsoft-Quic	5152	0	task_0Connection5152(Pointer Connection, UInt8 Type, UInt32 DelayMs, UInt16 ProbeCount)	Connection	ut:Connection	task_0	Informational		
+Microsoft-Quic	5153	0	task_0Connection5153(Pointer Connection)	Connection	ut:Connection	task_0	Informational		
+Microsoft-Quic	5154	0	task_0Connection5154(Pointer Owner, UInt8 LocalAddrLength, Binary LocalAddr, UInt8 RemoteAddrLength, Binary RemoteAddr, AnsiString Reason)	Connection	ut:Connection ut:Packet	task_0	Informational		
+Microsoft-Quic	5155	0	task_0Connection5155(Pointer Owner, UInt64 Value, UInt8 LocalAddrLength, Binary LocalAddr, UInt8 RemoteAddrLength, Binary RemoteAddr, AnsiString Reason)	Connection	ut:Connection ut:Packet	task_0	Informational		
+Microsoft-Quic	5156	0	task_0Connection5156(Pointer Connection, AnsiString ErrStr)	Connection	ut:Connection ut:LowVolume	task_0	Error		
+Microsoft-Quic	5157	0	task_0Connection5157(Pointer Connection, UInt32 Status, AnsiString ErrStr)	Connection	ut:Connection ut:LowVolume	task_0	Error		
+Microsoft-Quic	5158	0	task_0Connection5158(Pointer Connection)	Connection	ut:Connection ut:LowVolume	task_0	Informational		
+Microsoft-Quic	5159	0	task_0Connection5159(Pointer Connection, UInt8 IsLocallyInitiated)	Connection	ut:Connection ut:LowVolume	task_0	Informational		
+Microsoft-Quic	5160	0	task_0Connection5160(Pointer Connection, UInt32 SmoothedRtt, UInt32 CongestionCount, UInt32 PersistentCongestionCount, UInt64 SendTotalBytes, UInt64 RecvTotalBytes)	Connection	ut:Connection ut:LowVolume	task_0	Informational		
+Microsoft-Quic	5161	0	task_0Connection5161(Pointer Connection, UInt8 Value)	Connection	ut:Connection	task_0	Informational		
+Microsoft-Quic	5162	0	task_0Connection5162(Pointer Connection, UInt8 NewValue)	Connection	ut:Connection ut:LowVolume	task_0	Verbose		
+Microsoft-Quic	5163	0	task_0Connection5163(Pointer Connection, UInt8 NewValue)	Connection	ut:Connection ut:LowVolume	task_0	Verbose		
+Microsoft-Quic	5164	0	task_0Connection5164(Pointer Owner, UInt64 Number, UInt8 Type, UInt16 Length)	Connection	ut:Connection ut:Packet	task_0	Verbose		
+Microsoft-Quic	5165	0	task_0Connection5165(Pointer Owner, UInt64 Number, UInt8 Type, UInt16 Length)	Connection	ut:Connection ut:Packet	task_0	Verbose		
+Microsoft-Quic	5166	0	task_0Connection5166(Pointer Owner, UInt64 Number, UInt8 Type, UInt8 Reason)	Connection	ut:Connection ut:Packet	task_0	Verbose		
+Microsoft-Quic	5167	0	task_0Connection5167(Pointer Owner, UInt64 Number, UInt8 Type)	Connection	ut:Connection ut:Packet	task_0	Verbose		
+Microsoft-Quic	5168	0	task_0Connection5168(Pointer Connection, AnsiString Message)	Connection	ut:Connection ut:Log	task_0	Error		
+Microsoft-Quic	5169	0	task_0Connection5169(Pointer Connection, AnsiString Message)	Connection	ut:Connection ut:Log	task_0	Warning		
+Microsoft-Quic	5170	0	task_0Connection5170(Pointer Connection, AnsiString Message)	Connection	ut:Connection ut:Log	task_0	Informational		
+Microsoft-Quic	5171	0	task_0Connection5171(Pointer Connection, AnsiString Message)	Connection	ut:Connection ut:Log	task_0	Verbose		
+Microsoft-Quic	5172	0	task_0Connection5172(Pointer Connection, UInt32 Type)	Connection	ut:Connection ut:Scheduling	task_0	Verbose		
+Microsoft-Quic	5173	0	task_0Connection5173(Pointer Connection, UInt64 StreamFlowControl, UInt64 StreamSendWindow)	Connection	ut:Connection ut:DataFlow	task_0	Verbose		
+Microsoft-Quic	5174	0	task_0Connection5174(Pointer Connection, UInt64 SendTotalPackets, UInt64 SendSuspectedLostPackets, UInt64 SendSpuriousLostPackets, UInt64 RecvTotalPackets, UInt64 RecvReorderedPackets, UInt64 RecvDroppedPackets, UInt64 RecvDuplicatePackets, UInt64 RecvDecryptionFailures)	Connection	ut:Connection ut:LowVolume	task_0	Informational		
+Microsoft-Quic	5175	0	task_0Connection5175(Pointer Connection)	Connection	ut:Connection	task_0	Informational		
+Microsoft-Quic	5176	0	task_0Connection5176(Pointer Connection, UInt8 VnlLength, Binary Vnl)	Connection	ut:Connection ut:LowVolume	task_0	Informational		
+Microsoft-Quic	5177	0	task_0Connection5177(Pointer Connection, UInt8 VnlLength, Binary Vnl)	Connection	ut:Connection ut:LowVolume	task_0	Informational		
+Microsoft-Quic	5178	0	task_0Connection5178(Pointer Connection, UInt8 VnlLength, Binary Vnl)	Connection	ut:Connection ut:LowVolume	task_0	Informational		
+Microsoft-Quic	6144	0	task_0Stream(Pointer Stream, Pointer Connection, UInt64 ID, UInt8 IsLocalOwned)	Stream	ut:Stream ut:LowVolume	task_0	Informational		
+Microsoft-Quic	6145	0	task_0Stream6145(Pointer Stream)	Stream	ut:Stream ut:LowVolume	task_0	Informational		
+Microsoft-Quic	6146	0	task_0Stream6146(Pointer Stream, UInt8 ReasonFlags)	Stream	ut:Stream ut:DataFlow	task_0	Informational		
+Microsoft-Quic	6147	0	task_0Stream6147(Pointer Stream, Pointer Connection, UInt64 ID, UInt8 IsLocalOwned)	Stream	ut:Stream ut:LowVolume	task_0	Informational		
+Microsoft-Quic	6148	0	task_0Stream6148(Pointer Stream, UInt8 State)	Stream	ut:Stream ut:LowVolume	task_0	Informational		
+Microsoft-Quic	6149	0	task_0Stream6149(Pointer Stream, UInt8 State)	Stream	ut:Stream ut:LowVolume	task_0	Informational		
+Microsoft-Quic	6150	0	task_0Stream6150(Pointer Stream, AnsiString ErrStr)	Stream	ut:Stream ut:LowVolume	task_0	Error		
+Microsoft-Quic	6151	0	task_0Stream6151(Pointer Stream, UInt32 Status, AnsiString ErrStr)	Stream	ut:Stream ut:LowVolume	task_0	Error		
+Microsoft-Quic	6152	0	task_0Stream6152(Pointer Stream, AnsiString Message)	Stream	ut:Stream ut:Log	task_0	Error		
+Microsoft-Quic	6153	0	task_0Stream6153(Pointer Stream, AnsiString Message)	Stream	ut:Stream ut:Log	task_0	Warning		
+Microsoft-Quic	6154	0	task_0Stream6154(Pointer Stream, AnsiString Message)	Stream	ut:Stream ut:Log	task_0	Informational		
+Microsoft-Quic	6155	0	task_0Stream6155(Pointer Stream, AnsiString Message)	Stream	ut:Stream ut:Log	task_0	Verbose		
+Microsoft-Quic	7168	0	task_0Binding(Pointer Binding, Pointer Socket, UInt8 LocalAddrLength, Binary LocalAddr, UInt8 RemoteAddrLength, Binary RemoteAddr)	Binding	ut:Binding ut:LowVolume	task_0	Informational		
+Microsoft-Quic	7169	0	task_0Binding7169(Pointer Binding, Pointer Socket, UInt8 LocalAddrLength, Binary LocalAddr, UInt8 RemoteAddrLength, Binary RemoteAddr)	Binding	ut:Binding ut:LowVolume	task_0	Informational		
+Microsoft-Quic	7170	0	task_0Binding7170(Pointer Binding)	Binding	ut:Binding ut:LowVolume	task_0	Informational		
+Microsoft-Quic	7171	0	task_0Binding7171(Pointer Binding)	Binding	ut:Binding ut:LowVolume	task_0	Verbose		
+Microsoft-Quic	7172	0	task_0Binding7172(Pointer Owner, UInt8 LocalAddrLength, Binary LocalAddr, UInt8 RemoteAddrLength, Binary RemoteAddr, AnsiString Reason)	Binding	ut:Binding ut:Packet	task_0	Informational		
+Microsoft-Quic	7173	0	task_0Binding7173(Pointer Owner, UInt64 Value, UInt8 LocalAddrLength, Binary LocalAddr, UInt8 RemoteAddrLength, Binary RemoteAddr, AnsiString Reason)	Binding	ut:Binding ut:Packet	task_0	Informational		
+Microsoft-Quic	7174	0	task_0Binding7174(Pointer Binding, AnsiString ErrStr)	Binding	ut:Binding ut:LowVolume	task_0	Error		
+Microsoft-Quic	7175	0	task_0Binding7175(Pointer Binding, UInt32 Status, AnsiString ErrStr)	Binding	ut:Binding ut:LowVolume	task_0	Error		
+Microsoft-Quic	7176	0	task_0Binding7176(Pointer Binding, UInt32 Type)	Binding	ut:Binding ut:Scheduling	task_0	Verbose		
+Microsoft-Quic	8192	0	task_0Connection8192(Pointer Connection, AnsiString ErrStr)	Connection	ut:TLS ut:LowVolume	task_0	Error		
+Microsoft-Quic	8193	0	task_0Connection8193(Pointer Connection, UInt32 Status, AnsiString ErrStr)	Connection	ut:TLS ut:LowVolume	task_0	Error		
+Microsoft-Quic	8194	0	task_0Connection8194(Pointer Connection, AnsiString Message)	Connection	ut:TLS	task_0	Verbose		
+Microsoft-Quic	9217	0	task_0Datapath(Pointer UdpBinding, UInt32 TotalSize, UInt8 BufferCount, UInt16 SegmentSize, UInt8 RemoteAddrLength, Binary RemoteAddr, UInt8 LocalAddrLength, Binary LocalAddr)	Datapath	ut:UDP ut:DataFlow	task_0	Verbose		
+Microsoft-Quic	9218	0	task_0Datapath9218(Pointer UdpBinding, UInt32 TotalSize, UInt16 SegmentSize, UInt8 LocalAddrLength, Binary LocalAddr, UInt8 RemoteAddrLength, Binary RemoteAddr)	Datapath	ut:UDP ut:DataFlow	task_0	Verbose		
+Microsoft-Quic	9219	0	task_0Datapath9219(Pointer UdpBinding, AnsiString ErrStr)	Datapath	ut:UDP ut:LowVolume	task_0	Error		
+Microsoft-Quic	9220	0	task_0Datapath9220(Pointer UdpBinding, UInt32 Status, AnsiString ErrStr)	Datapath	ut:UDP ut:LowVolume	task_0	Error		
+Microsoft-Quic	9221	0	task_0Datapath9221(Pointer UdpBinding, UInt8 LocalAddrLength, Binary LocalAddr, UInt8 RemoteAddrLength, Binary RemoteAddr)	Datapath	ut:UDP ut:LowVolume	task_0	Informational		
+Microsoft-Quic	9222	0	task_0Datapath9222(Pointer UdpBinding)	Datapath	ut:UDP ut:LowVolume	task_0	Informational		
+Microsoft-Quic	10240	0	task_0Global10240(AnsiString Message)	Global	ut:Log	task_0	Error		
+Microsoft-Quic	10241	0	task_0Global10241(AnsiString Message)	Global	ut:Log	task_0	Warning		
+Microsoft-Quic	10242	0	task_0Global10242(AnsiString Message)	Global	ut:Log	task_0	Informational		
+Microsoft-Quic	10243	0	task_0Global10243(AnsiString Message)	Global	ut:Log	task_0	Verbose		

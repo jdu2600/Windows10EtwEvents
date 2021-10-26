@@ -24,6 +24,7 @@ Microsoft-Windows-HelloForBusiness	5062	0	PINRecoveryInformational5062(SID UserS
 Microsoft-Windows-HelloForBusiness	5063	0	PINRecoveryInformational5063(SID UserSid)	Informational	Internal	PINRecovery	Informational		
 Microsoft-Windows-HelloForBusiness	5064	0	PINRecoveryInformational5064()	Informational	Internal	PINRecovery	Informational		
 Microsoft-Windows-HelloForBusiness	5204	0	PrerequisitesCheckInformational(UInt32 CertificateEnrollmentMethod, Boolean CertificateRequired)	Informational	Internal	PrerequisitesCheck	Informational		
+Microsoft-Windows-HelloForBusiness	5205	0	PrerequisitesCheckInformational5205(UInt32 CertificateEnrollmentMethod, Boolean CertificateRequired, Boolean UseCloudTrust, Boolean HasCloudTgt)	Informational	Internal	PrerequisitesCheck	Informational		
 Microsoft-Windows-HelloForBusiness	5225	0	KeyCreationInformational5225(UInt32 KeyProvider, HexInt32 Result)	Informational	Internal	KeyCreation	Informational		
 Microsoft-Windows-HelloForBusiness	5520	0	DeviceUnlockInformational()	Informational	Internal	DeviceUnlock	Informational		
 Microsoft-Windows-HelloForBusiness	5555	0	ContainerCreationInformational(UInt32 TpmSupport, UInt32 HardwarePolicy, Boolean IsTpm12Excluded, UInt32 TpmVersion, Boolean IsTpmFIPS, Boolean IsTpmLockedOut, Boolean IsKeyPregenPoolSatisfactory, UInt32 KeyProvider, HexInt32 Result)	Informational	Internal	ContainerCreation	Informational		
@@ -36,6 +37,7 @@ Microsoft-Windows-HelloForBusiness	6065	0	HelloProvisioningStop6065(UnicodeStrin
 Microsoft-Windows-HelloForBusiness	6066	0	CertificateEnrollmentStop(HexInt32 Error, UInt32 ProcessingTime)	Stop	Internal	CertificateEnrollment	Warning		
 Microsoft-Windows-HelloForBusiness	6209	0	PrerequisitesCheckInformational6209()	Informational	Internal	PrerequisitesCheck	Warning		
 Microsoft-Windows-HelloForBusiness	6210	0	PrerequisitesCheckInformational6210()	Informational	Internal	PrerequisitesCheck	Warning		
+Microsoft-Windows-HelloForBusiness	6441	0	QueryPolicyInformational()	Informational	Internal	QueryPolicy	Warning		
 Microsoft-Windows-HelloForBusiness	6520	0	DeviceUnlockStop()	Stop	Internal	DeviceUnlock	Warning		
 Microsoft-Windows-HelloForBusiness	6525	0	HelloProvisioningStop6525(HexInt32 Error, UInt32 ProcessingTime)	Stop	Component	HelloProvisioning	Warning		
 Microsoft-Windows-HelloForBusiness	6611	0	ContainerDeletionStop()	Stop	Internal	ContainerDeletion	Warning		

@@ -99,16 +99,16 @@ Microsoft-Windows-Search-Core	94	0	Backoff_PendingNotificationsCheck(UInt32 Pend
 Microsoft-Windows-Search-Core	95	0	Backoff_AllowNewItemsCheck(UInt32 LastIndexNewItemReason, UInt32 IndexNewItemReason, UInt32 BackoffReason)		Backoff	Backoff_AllowNewItemsCheck	Informational		
 Microsoft-Windows-Search-Core	96	0	Backoff_State(UInt32 BackoffReason, UInt32 IndexNewItemReason, UInt32 AllReasons, UInt32 FeatureDisabled, UInt32 PowerSetting, Boolean BackoffRecoveryIsON, Boolean ProcessNotifications, Boolean BackOffOnPendingNotifications, UInt32 PendingHiPriNotifications, Boolean BackOffOnPowerSetting, Boolean XPScreenSaverAndNoBattery, Boolean Merging)		Backoff	Backoff_State	Informational		
 Microsoft-Windows-Search-Core	97	0	ProtocolHostObjConstructor()		Service	ProtocolHostObjConstructor	Informational		
-Microsoft-Windows-Search-Core	98	0	ProtocolHostObjInit(UInt32 ProcessID, UnicodeString SID, Boolean IsProcessWow64)		Service	ProtocolHostObjInit	Informational		
-Microsoft-Windows-Search-Core	99	0	ProtocolHostTerminating(UInt32 ProcessID, UnicodeString SID, Boolean IsProcessWow64)		Service	ProtocolHostTerminating	Informational		
-Microsoft-Windows-Search-Core	100	0	ProtocolHostStarted(UInt32 ProcessID, UnicodeString SID, Boolean IsProcessWow64)		Service	ProtocolHostStarted	Informational		
-Microsoft-Windows-Search-Core	101	0	ProtocolHostStopped(UInt32 ProcessID, UnicodeString SID, Boolean IsProcessWow64)		Service	ProtocolHostStopped	Informational		
-Microsoft-Windows-Search-Core	102	0	ProtocolHostKilled(UInt32 ProcessID, UnicodeString SID, Boolean IsProcessWow64)		Service	ProtocolHostKilled	Informational		
-Microsoft-Windows-Search-Core	103	0	ProtocolHostStoppedAlready(UInt32 ProcessID, UnicodeString SID, Boolean IsProcessWow64)		Service	ProtocolHostStoppedAlready	Informational		
-Microsoft-Windows-Search-Core	104	0	ProtocolHostTerminatingInDestructor(UInt32 ProcessID, UnicodeString SID, Boolean IsProcessWow64)		Service	ProtocolHostTerminatingInDestructor	Informational		
-Microsoft-Windows-Search-Core	105	0	ProtocolHostKilledInDestructor(UInt32 ProcessID, UnicodeString SID, Boolean IsProcessWow64)		Service	ProtocolHostKilledInDestructor	Informational		
-Microsoft-Windows-Search-Core	106	0	ProtocolHostStoppedInDestructor(UInt32 ProcessID, UnicodeString SID, Boolean IsProcessWow64)		Service	ProtocolHostStoppedInDestructor	Informational		
-Microsoft-Windows-Search-Core	107	0	ProtocolHostObjDestructor(UInt32 ProcessID, UnicodeString SID, Boolean IsProcessWow64)		Service	ProtocolHostObjDestructor	Informational		
+Microsoft-Windows-Search-Core	98	0	ProtocolHostObjInit(UInt32 ProcessID, UnicodeString SID, UInt16 Architecture)		Service	ProtocolHostObjInit	Informational		
+Microsoft-Windows-Search-Core	99	0	ProtocolHostTerminating(UInt32 ProcessID, UnicodeString SID, UInt16 Architecture)		Service	ProtocolHostTerminating	Informational		
+Microsoft-Windows-Search-Core	100	0	ProtocolHostStarted(UInt32 ProcessID, UnicodeString SID, UInt16 Architecture)		Service	ProtocolHostStarted	Informational		
+Microsoft-Windows-Search-Core	101	0	ProtocolHostStopped(UInt32 ProcessID, UnicodeString SID, UInt16 Architecture)		Service	ProtocolHostStopped	Informational		
+Microsoft-Windows-Search-Core	102	0	ProtocolHostKilled(UInt32 ProcessID, UnicodeString SID, UInt16 Architecture)		Service	ProtocolHostKilled	Informational		
+Microsoft-Windows-Search-Core	103	0	ProtocolHostStoppedAlready(UInt32 ProcessID, UnicodeString SID, UInt16 Architecture)		Service	ProtocolHostStoppedAlready	Informational		
+Microsoft-Windows-Search-Core	104	0	ProtocolHostTerminatingInDestructor(UInt32 ProcessID, UnicodeString SID, UInt16 Architecture)		Service	ProtocolHostTerminatingInDestructor	Informational		
+Microsoft-Windows-Search-Core	105	0	ProtocolHostKilledInDestructor(UInt32 ProcessID, UnicodeString SID, UInt16 Architecture)		Service	ProtocolHostKilledInDestructor	Informational		
+Microsoft-Windows-Search-Core	106	0	ProtocolHostStoppedInDestructor(UInt32 ProcessID, UnicodeString SID, UInt16 Architecture)		Service	ProtocolHostStoppedInDestructor	Informational		
+Microsoft-Windows-Search-Core	107	0	ProtocolHostObjDestructor(UInt32 ProcessID, UnicodeString SID, UInt16 Architecture)		Service	ProtocolHostObjDestructor	Informational		
 Microsoft-Windows-Search-Core	108	0	ProtocolHostNameConflict_FailedToKill(UInt32 ProcessID, UnicodeString SID)		Service	ProtocolHostNameConflict_FailedToKill	Error		
 Microsoft-Windows-Search-Core	109	0	ProtocolHostNameConflict_Killed(UInt32 ProcessID, UnicodeString SID)		Service	ProtocolHostNameConflict_Killed	Informational		
 Microsoft-Windows-Search-Core	110	0	ProtocolHostNameConflict_Killing(UInt32 ProcessID, UnicodeString SID)		Service	ProtocolHostNameConflict_Killing	Informational		

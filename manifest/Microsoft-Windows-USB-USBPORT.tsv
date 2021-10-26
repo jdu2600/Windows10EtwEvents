@@ -1,7 +1,7 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
 Microsoft-Windows-USB-USBPORT	1	0	HostControllerAdd(UnicodeString fid_USBPORT_HC)	Add	Diagnostic PowerDiagnostics keyword_400000000000	HostController	Informational		
 Microsoft-Windows-USB-USBPORT	2	0	HostControllerRemoval(UnicodeString fid_USBPORT_HC)	Removal	Diagnostic PowerDiagnostics keyword_400000000000	HostController	Informational		
-Microsoft-Windows-USB-USBPORT	3	0	HostControllerInformation(UInt16 fid_USBPORT_HC, Double fid_USBPORT_HC_Idle_Status, UnicodeString fid_USBPORT_HC_Pdo_Name, UInt32 fid_RunTimePmSetupStatus, UInt32 fid_DevicePowerState, AnsiString fid_AcpiInstanceId)	Information	Diagnostic PowerDiagnostics keyword_400000000000	HostController	Informational		
+Microsoft-Windows-USB-USBPORT	3	0	HostControllerInformation(UInt16 fid_USBPORT_HC, Double fid_USBPORT_HC_Idle_Status, UnicodeString fid_USBPORT_HC_Pdo_Name, UInt32 fid_RunTimePmSetupStatus, UInt32 fid_DevicePowerState, AnsiString fid_AcpiInstanceId)	Information	Diagnostic PowerDiagnostics	HostController	Informational		
 Microsoft-Windows-USB-USBPORT	4	0	HostControllerStart(UnicodeString fid_USBPORT_HC)	Start	Diagnostic PowerDiagnostics	HostController	Informational		
 Microsoft-Windows-USB-USBPORT	5	0	HostControllerStop(UnicodeString fid_USBPORT_HC)	Stop	Diagnostic PowerDiagnostics	HostController	Informational		
 Microsoft-Windows-USB-USBPORT	6	0	HostControllerSuspend(UnicodeString fid_USBPORT_HC)	Suspend	Diagnostic PowerDiagnostics	HostController	Informational		
@@ -172,3 +172,4 @@ Microsoft-Windows-USB-USBPORT	3088	0	MiniportResumeCompletewithError3088(Int16 f
 Microsoft-Windows-USB-USBPORT	3089	0	RunTimePowerManagementRunTimePMTransition(AnsiString fid_USBPORT_HC, UInt32 fid_RunTimePmEvent)	RunTimePMTransition	Diagnostic	RunTimePowerManagement	Informational		
 Microsoft-Windows-USB-USBPORT	3090	0	ArmcontrollerforwakeDispatch(Int8 fid_USBPORT_HC, Pointer fid_IRP_Ptr, UInt32 fid_Status)	Dispatch	Diagnostic	Armcontrollerforwake	Informational		
 Microsoft-Windows-USB-USBPORT	3091	0	ArmcontrollerforwakeComplete(Int8 fid_USBPORT_HC, Pointer fid_IRP_Ptr, UInt32 fid_Status)	Complete	Diagnostic	Armcontrollerforwake	Informational		
+Microsoft-Windows-USB-USBPORT	3092	0	HostControllerInformation3092(AnsiString fid_USBPORT_HC, UInt32 fid_NakReloadCount)	Information	Diagnostic	HostController	Informational		

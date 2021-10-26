@@ -6,6 +6,8 @@ Microsoft-Windows-Services	104	0	StartingGroupStop(UnicodeString GroupName)	Stop
 Microsoft-Windows-Services	105	0	ServiceStatusChange(UInt32 ExecutionPhase, UInt32 CurrentState, UInt32 StartType, UInt32 PID, UnicodeString ServiceName, UnicodeString ImageName)	StatusChange	Performance	ServiceStatusChange	Informational		
 Microsoft-Windows-Services	106	0	PerfCriticalAutostart()	Start	Performance	PerfCriticalAutostart	Informational		
 Microsoft-Windows-Services	107	0	PerfCriticalAutostartStop()	Stop	Performance	PerfCriticalAutostart	Informational		
+Microsoft-Windows-Services	108	0	WaitForLsaStart()	Start	Performance	WaitForLsa	Informational		
+Microsoft-Windows-Services	109	0	WaitForLsaStop()	Stop	Performance	WaitForLsa	Informational		
 Microsoft-Windows-Services	200	0	SendControl(UnicodeString ServiceName, UnicodeString DisplayName, UInt32 ControlCode, UInt64 ClientProcessStartKey, UInt32 ClientProcessId, UInt32 ParentProcessId)		Control	SendControl	Informational		
 Microsoft-Windows-Services	201	0	ServiceConfigChange(UnicodeString ServiceName, UInt32 NewStartType, UInt64 ClientProcessStartKey, UInt32 ClientProcessId, UInt32 ParentProcessId)		ConfigChange	ServiceConfigChange	Informational		
 Microsoft-Windows-Services	202	0	ServiceConfigChange202(UnicodeString ServiceName, UnicodeString NewValueName, UInt64 ClientProcessStartKey, UInt32 ClientProcessId, UInt32 ParentProcessId)		ConfigChange	ServiceConfigChange	Informational		

@@ -18,3 +18,16 @@ Microsoft-Windows-DVD	17	0	NavCreateFileStart(Pointer Object, UnicodeString File
 Microsoft-Windows-DVD	18	0	NavCreateFileStop(Pointer Object, Int32 hr)	Stop		NavCreateFile	Verbose		
 Microsoft-Windows-DVD	19	0	NavMutexLockStart(Pointer Object)	Start		NavMutexLock	Verbose		
 Microsoft-Windows-DVD	20	0	NavMutexLockStop(Pointer Object)	Stop		NavMutexLock	Verbose		
+Microsoft-Windows-DVD	21	0	NavSpinDownStart(UInt16 DriveLetter)	Start		NavSpinDown	Verbose		
+Microsoft-Windows-DVD	22	0	NavSpinDownStop(UInt32 hr)	Stop		NavSpinDown	Verbose		
+Microsoft-Windows-DVD	23	0	NavCheckRegionStart(Pointer Object, UInt32 CSSEnabled, UInt32 DiskRegionMask, UInt32 DecoderRegionMask, UInt32 SystemRegionMask)	Start		NavCheckRegion	Verbose		
+Microsoft-Windows-DVD	24	0	NavCheckRegionStop(Pointer Object, UInt32 hr)	Stop		NavCheckRegion	Verbose		
+Microsoft-Windows-DVD	25	0	NavNegotiateDiscKeyStart(Pointer Object)	Start		NavNegotiateDiscKey	Verbose		
+Microsoft-Windows-DVD	26	0	NavNegotiateDiscKeyStop(Pointer Object, UInt32 hr)	Stop		NavNegotiateDiscKey	Verbose		
+Microsoft-Windows-DVD	27	0	NavSetCurrentLatency(Pointer Object, UInt32 old, UInt32 attempted, UInt32 new)			NavSetCurrentLatency	Verbose		
+Microsoft-Windows-DVD	28	0	NavNegotiateTitleKeyStart(Pointer Object, UInt32 FileSizeInBlocks, UInt32 FileOffsetHint, UInt32 IgnoreKeyFailures)	Start		NavNegotiateTitleKey	Verbose		
+Microsoft-Windows-DVD	29	0	NavNegotiateTitleKeyStop(Pointer Object, UInt32 hr)	Stop		NavNegotiateTitleKey	Verbose		
+Microsoft-Windows-DVD	30	0	NavNegotiateTitleKeyStreamStart(Pointer Object, UInt32 StreamID, UInt32 Sector)	Start		NavNegotiateTitleKeyStream	Verbose		
+Microsoft-Windows-DVD	31	0	NavNegotiateTitleKeyStreamStop(Pointer Object, UInt32 StreamID, UInt32 hr)	Stop		NavNegotiateTitleKeyStream	Verbose		
+Microsoft-Windows-DVD	32	0	NavDriveIOCTLStart(Pointer Object, UInt32 Func, UInt32 In, UInt32 Out)	Start		NavDriveIOCTL	Verbose		
+Microsoft-Windows-DVD	33	0	NavDriveIOCTLStop(Pointer Object, UInt32 hr, UInt32 actualLen)	Stop		NavDriveIOCTL	Verbose		

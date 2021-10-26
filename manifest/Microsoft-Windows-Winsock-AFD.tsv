@@ -92,3 +92,5 @@ Microsoft-Windows-Winsock-AFD	4014	0	AfdRioRangeCheck(Pointer RegistrationDomain
 Microsoft-Windows-Winsock-AFD	4015	0	AfdRioSendReceive(Pointer RioState, UInt32 BufferType, UInt32 SpecifiedLength, UInt32 RequiredLength)		AFD_KW_RIO	AfdRioSendReceive	Warning		
 Microsoft-Windows-Winsock-AFD	4016	0	AfdNrtCreateOpen(Pointer NameResolutionHandle, Pointer Process, UInt32 Status)	Open	AFD_KW_NRT	AfdNrtCreate	Informational		
 Microsoft-Windows-Winsock-AFD	4017	0	AfdNrtCloseClosed(Pointer NameResolutionHandle, Pointer Process)	Closed	AFD_KW_NRT	AfdNrtClose	Informational		
+Microsoft-Windows-Winsock-AFD	4018	0	AfdRioNotifyCq(UInt32 EnterExit, UInt32 Location, Pointer Process, Pointer RegDomain, Pointer Cq, UInt32 Status)		AFD_KW_RIO	AfdRioNotifyCq	Verbose		
+Microsoft-Windows-Winsock-AFD	4019	0	AfdAcceptPause(UInt32 EnterExit, UInt32 Location, Pointer Process, Pointer Endpoint, UInt8 PauseUnPause, Int32 TLBacklogCount)			AfdAcceptPause	Informational		

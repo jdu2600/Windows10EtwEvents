@@ -53,9 +53,19 @@ namespace DumpRegisteredEtwProviders
             Directory.CreateDirectory(mofOutputDir);
             Directory.CreateDirectory(unknownOutputDir);
 
-            var product = Registry.GetValue(@"HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion", "ProductName", "").ToString();
-            var release = Registry.GetValue(@"HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion", "ReleaseId", "").ToString();
-            var build = Registry.GetValue(@"HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion", "BuildLabEx", "").ToString();
+            var cvKey = @"HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion";
+            var product = Registry.GetValue(cvKey, "ProductName", "").ToString();
+            // ReleaseId froze at "2009"; DisplayVersion carries the real release (e.g. "22H2").
+            // Fall back to ReleaseId for older builds that predate DisplayVersion.
+            var release = Registry.GetValue(cvKey, "DisplayVersion", "").ToString();
+            if (string.IsNullOrEmpty(release)) { release = Registry.GetValue(cvKey, "ReleaseId", "").ToString(); }
+            var build = Registry.GetValue(cvKey, "BuildLabEx", "").ToString();
+            // ProductName stays "Windows 10" on Windows 11 - correct it for builds >= 22000.
+            var currentBuild = Registry.GetValue(cvKey, "CurrentBuildNumber", "0").ToString();
+            if (int.TryParse(currentBuild, out var buildNumber) && buildNumber >= 22000)
+            {
+                product = product.Replace("Windows 10", "Windows 11");
+            }
             using (var windowsVersionFile = new StreamWriter(Path.Combine(outputDir, "version.txt")))
             {
                 windowsVersionFile.WriteLine($"{product} {release} ({build})");
@@ -104,6 +114,10 @@ namespace DumpRegisteredEtwProviders
                             manifestXML = manifestXML.Replace("<Value>", "&lt;Value&gt;");
                             manifestXML = manifestXML.Replace("<Integer>", "&lt;Integer&gt;");
                             manifestXML = manifestXML.Replace("<Quoted String>", "&lt;Quoted String&gt;");
+                        }
+                        if (name == "Microsoft-Windows-SMBClient")
+                        {
+                            manifestXML = manifestXML.Replace("<server:transport>", "&lt;server:transport&gt;");
                         }
                         if (name == "Microsoft-Windows-Ntfs")
                         {

@@ -24,3 +24,9 @@ Microsoft-Windows-MediaFoundation-MSVProc	121	0	MSVideoProcessoftMFT_ConfigureIn
 Microsoft-Windows-MediaFoundation-MSVProc	122	0	MSVideoProcessoftMFT_ConfigureOutputHDRMetadata(Pointer MSVProcObj, Float RedPrimaryX, Float RedPrimaryY, Float GreenPrimaryX, Float GreenPrimaryY, Float BluePrimaryX, Float BluePrimaryY, Float WhitePrimaryX, Float WhitePrimaryY, UInt32 MaxLuminance, UInt32 MinLuminance)			MSVideoProcessoftMFT_ConfigureOutputHDRMetadata	Verbose		
 Microsoft-Windows-MediaFoundation-MSVProc	123	0	MSVideoProcessorMFT_ConstrictionResizerStart(HexInt32 fourCC, UInt32 srcWidth, UInt32 srcHeight, UInt32 dstWidth, UInt32 dstHeight)	Start		MSVideoProcessorMFT_ConstrictionResizer	Verbose		
 Microsoft-Windows-MediaFoundation-MSVProc	124	0	MSVideoProcessorMFT_ConstrictionResizerStop()	Stop		MSVideoProcessorMFT_ConstrictionResizer	Verbose		
+Microsoft-Windows-MediaFoundation-MSVProc	125	0	EffectWrapper_ProcessFrameStart(Pointer object)	Start		EffectWrapper_ProcessFrame	Verbose		
+Microsoft-Windows-MediaFoundation-MSVProc	126	0	EffectWrapper_ProcessFrameStop(Pointer object)	Stop		EffectWrapper_ProcessFrame	Verbose		
+Microsoft-Windows-MediaFoundation-MSVProc	127	0	EffectWrapper_StartStreamingStart(Pointer object)	Start		EffectWrapper_StartStreaming	Verbose		
+Microsoft-Windows-MediaFoundation-MSVProc	128	0	EffectWrapper_StartStreamingStop(Pointer object)	Stop		EffectWrapper_StartStreaming	Verbose		
+Microsoft-Windows-MediaFoundation-MSVProc	129	0	EffectWrapper_SetTypesStart(Pointer object, UInt32 flags)	Start		EffectWrapper_SetTypes	Verbose		
+Microsoft-Windows-MediaFoundation-MSVProc	130	0	EffectWrapper_SetTypesStop(Pointer object, HexInt32 hr)	Stop		EffectWrapper_SetTypes	Verbose		

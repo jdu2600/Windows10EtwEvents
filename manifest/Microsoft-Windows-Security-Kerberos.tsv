@@ -47,7 +47,14 @@ Microsoft-Windows-Security-Kerberos	201	0	task_0201(UnicodeString TargetName, Un
 Microsoft-Windows-Security-Kerberos	202	0	task_0202(UnicodeString TargetName, UnicodeString UserName, UnicodeString DomainName, UInt32 CallerPID, UnicodeString ProcessName, HexInt64 ClientLUID, UnicodeString ClientUserName, UnicodeString ClientDomainName, UnicodeString MechanismOID)			task_0	Warning		
 Microsoft-Windows-Security-Kerberos	203	0	task_0203()			task_0	Warning		
 Microsoft-Windows-Security-Kerberos	204	0	task_0204()			task_0	Warning		
+Microsoft-Windows-Security-Kerberos	205	0	task_0205(UnicodeString Algorithm)			task_0	Warning		
+Microsoft-Windows-Security-Kerberos	206	0	task_0206(UnicodeString Algorithm)			task_0	Warning		
+Microsoft-Windows-Security-Kerberos	207	0	task_0207(UnicodeString Algorithm)			task_0	Error		
+Microsoft-Windows-Security-Kerberos	208	0	task_0208(UnicodeString ClientAlgorithms, UnicodeString KdcAlgorithms)			task_0	Error		
 Microsoft-Windows-Security-Kerberos	300	0	task_0300(UnicodeString DomainController, UnicodeString TargetDomain)			task_0	Informational		
 Microsoft-Windows-Security-Kerberos	301	0	task_0301(UnicodeString Target)			task_0	Informational		
 Microsoft-Windows-Security-Kerberos	302	0	task_0302(UnicodeString DomainController, UnicodeString TargetDomain, UInt32 DesiredFlags, UInt32 CacheFlags, UInt32 ErrorCode)			task_0	Informational		
 Microsoft-Windows-Security-Kerberos	303	0	task_0303(UInt32 LuidHighPart, UInt32 LuidLowPart, UnicodeString DomainName, UnicodeString UserName, Boolean UpdateCurrent, Boolean UpdateOld, Boolean Refresh, UnicodeString LastFileTime, UnicodeString CurrentFileTime)			task_0	Informational		
+Microsoft-Windows-Security-Kerberos	304	0	task_0304()			task_0	Warning		
+Microsoft-Windows-Security-Kerberos	305	0	task_0305(UnicodeString ProcessName, UnicodeString SvchostTag)			task_0	Error		
+Microsoft-Windows-Security-Kerberos	306	0	task_0306(UnicodeString ProcessName, UnicodeString SvchostTag)			task_0	Error		

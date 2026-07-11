@@ -83,6 +83,7 @@ Microsoft-Windows-Kernel-Boot	77	0	BootDebuggerBdInitFailure(UInt32 DebuggerStat
 Microsoft-Windows-Kernel-Boot	78	0	KernelDebuggerKdInitFailure(UInt32 DebuggerStatus, UInt32 Status)	KdInitFailure		KernelDebugger	Warning		
 Microsoft-Windows-Kernel-Boot	79	0	KernelDebuggerKdEnabled()	KdEnabled		KernelDebugger	Informational		
 Microsoft-Windows-Kernel-Boot	80	1	VsmLKeyProvisioningStatus80_V1(UInt8 IsFasrCertPresent, UInt32 ValidateFasrCertSignatureStatus, UInt32 BootmgrAuthorityEventCount, UInt8 VerifiedMicrosoftAuthority, UInt32 ValidateFasrPcrValuesStatus, Int32 PcrMismatchIndex, UInt32 FasrCertSize, Binary FasrCertWithoutSignature, UInt32 FasrSignatureSize, Binary FasrSignature)			VsmLKeyProvisioningStatus	Informational		
+Microsoft-Windows-Kernel-Boot	81	0	task_081()			task_0	Informational		
 Microsoft-Windows-Kernel-Boot	100	0	InitializeLibraryStart()	Start	SoftRestart	InitializeLibrary	Informational		
 Microsoft-Windows-Kernel-Boot	100	1	InitializeLibraryStart_V1(Boolean Secure)	Start	SoftRestart	InitializeLibrary	Informational		
 Microsoft-Windows-Kernel-Boot	101	0	InitializeLibraryStop(UInt32 Status)	Stop	SoftRestart	InitializeLibrary	Informational		
@@ -214,6 +215,7 @@ Microsoft-Windows-Kernel-Boot	230	0	LoadHvloaderForPersistence(UInt32 Status)		S
 Microsoft-Windows-Kernel-Boot	231	0	BootMenuTimerCanceled(UInt32 KeyType, UInt32 Code)		keyword_80000000000	BootMenuTimerCanceled	Informational		
 Microsoft-Windows-Kernel-Boot	232	0	MemoryPartitionFreeUnusedMemoryStart()	Start	SoftRestart MemoryPreservation	MemoryPartitionFreeUnusedMemory	Informational		
 Microsoft-Windows-Kernel-Boot	233	0	MemoryPartitionFreeUnusedMemoryStop()	Stop	SoftRestart MemoryPreservation	MemoryPartitionFreeUnusedMemory	Informational		
+Microsoft-Windows-Kernel-Boot	233	1	MemoryPartitionFreeUnusedMemoryStop_V1(UInt64 RangeCount, UInt64 PageCount, UInt64 MarkedAsBadRegularPages, UInt64 MarkedAsBadIoSpacePages, UInt64 MarkErrorsCount)	Stop	SoftRestart MemoryPreservation	MemoryPartitionFreeUnusedMemory	Informational		
 Microsoft-Windows-Kernel-Boot	234	0	MemoryPartitionRestoreStats(GUID Identifier, UInt32 PartitionId, UInt64 AllocatedBlockCount, UInt64 AllocatedRunCount, UInt64 AllocatedPageCount, UInt32 Status)		SoftRestart MemoryPreservation	MemoryPartitionRestoreStats	Informational		
 Microsoft-Windows-Kernel-Boot	235	0	BootTpmTpmInit(UInt32 StatusCode, UInt32 Position)	TpmInit	keyword_80000000000	BootTpm	Error		
 Microsoft-Windows-Kernel-Boot	236	0	MeasuredLaunchSmmLevelCheck(UInt32 TxtStatus, UInt32 PolicyLevel, UInt64 Argument1, UInt64 Argument2)	SmmLevelCheck		MeasuredLaunch	Informational		
@@ -223,6 +225,7 @@ Microsoft-Windows-Kernel-Boot	238	1	EfiTimeZoneInformation_V1(Int16 EfiTimeZoneB
 Microsoft-Windows-Kernel-Boot	239	0	MemoryAllocationBlMmAllocationFailure(UInt64 Pages, UInt32 MemoryType, UInt32 Attributes, UInt32 Alignment, UInt32 Status, UInt64 RangeMinimum, UInt64 RangeMaximum, UInt32 RangeFlags)	BlMmAllocationFailure		MemoryAllocation	Warning		
 Microsoft-Windows-Kernel-Boot	240	0	FinalizeNotificationStart()	Start	SoftRestart	FinalizeNotification	Informational		
 Microsoft-Windows-Kernel-Boot	241	0	FinalizeNotificationStop(UInt32 Status)	Stop	SoftRestart	FinalizeNotification	Informational		
+Microsoft-Windows-Kernel-Boot	241	1	FinalizeNotificationStop_V1(UInt32 Status, AnsiString Tag)	Stop	SoftRestart	FinalizeNotification	Informational		
 Microsoft-Windows-Kernel-Boot	242	0	MeasuredLaunchSmmIsolation(UInt32 IsolationLevel)	SmmIsolation		MeasuredLaunch	Informational		
 Microsoft-Windows-Kernel-Boot	243	0	MemoryMirroringEnabled(UInt32 MirrorPercentage)	Enabled		MemoryMirroring	Informational		
 Microsoft-Windows-Kernel-Boot	244	0	MeasuredLaunchTxtSmmIsolationPerf(UInt64 GetCapabilityTime, UInt64 GetResourcesTime, UInt64 ResourcesValidationTime)	TxtSmmIsolationPerf		MeasuredLaunch	Informational		
@@ -235,3 +238,17 @@ Microsoft-Windows-Kernel-Boot	250	0	SlabAllocationFailure(UInt64 PageCount, UInt
 Microsoft-Windows-Kernel-Boot	251	0	QuerySystemInformationFailure(UInt32 InformationClass, UInt32 Status)		SoftRestart	QuerySystemInformationFailure	Error		
 Microsoft-Windows-Kernel-Boot	252	0	BootmgrBltDisplayMenu()			BootmgrBltDisplayMenu	Informational		
 Microsoft-Windows-Kernel-Boot	253	0	HotPatchHotPatchApplyFailure(UInt32 FailurePoint, UInt32 Status, UInt16 HotPatchPathLength, UnicodeString HotPatchPath)	HotPatchApplyFailure	keyword_80000000000	HotPatch	Error		
+Microsoft-Windows-Kernel-Boot	254	0	GetPerformanceOptions(UInt32 Status)		SoftRestart	GetPerformanceOptions	Error		
+Microsoft-Windows-Kernel-Boot	255	0	SnapshotPolicy(UInt32 Status)		SoftRestart	SnapshotPolicy	Error		
+Microsoft-Windows-Kernel-Boot	256	0	task_0256()			task_0	Informational		
+Microsoft-Windows-Kernel-Boot	257	0	LoadEarlyDumpSupportBuildImagePathFailure(UnicodeString ModulePath, UInt32 Status)	BuildImagePathFailure		LoadEarlyDumpSupport	Error		
+Microsoft-Windows-Kernel-Boot	258	0	LoadEarlyDumpSupportLoadModuleFailure(UnicodeString ModulePath, UInt32 Status)	LoadModuleFailure		LoadEarlyDumpSupport	Error		
+Microsoft-Windows-Kernel-Boot	259	0	LoadEarlyDumpSupport()			LoadEarlyDumpSupport	Informational		
+Microsoft-Windows-Kernel-Boot	260	0	LoadEarlyDumpSupportEarlyDumpNotSupported()	EarlyDumpNotSupported		LoadEarlyDumpSupport	Warning		
+Microsoft-Windows-Kernel-Boot	261	0	PrepareNotificationVeto(UInt32 Status, AnsiString Tag)	Veto		PrepareNotification	Error		
+Microsoft-Windows-Kernel-Boot	262	0	FinalizeNotificationVeto(UInt32 Status, AnsiString Tag)	Veto		FinalizeNotification	Error		
+Microsoft-Windows-Kernel-Boot	263	0	LoadEarlyDumpSupportEarlyDumpDisabled()	EarlyDumpDisabled		LoadEarlyDumpSupport	Informational		
+Microsoft-Windows-Kernel-Boot	264	0	LoadEarlyDumpSupportQueryEarlyDumpInitFailure(UInt32 Status)	QueryEarlyDumpInitFailure		LoadEarlyDumpSupport	Warning		
+Microsoft-Windows-Kernel-Boot	265	0	LoadEarlyDumpSupportQueryDumpFileNameFailure(UInt32 Status)	QueryDumpFileNameFailure		LoadEarlyDumpSupport	Warning		
+Microsoft-Windows-Kernel-Boot	266	0	LoadEarlyDumpSupportDumpFileNameMismatch(UnicodeString HostDumpFileName, UnicodeString TargetDumpFileName)	DumpFileNameMismatch		LoadEarlyDumpSupport	Warning		
+Microsoft-Windows-Kernel-Boot	267	0	LoadEarlyDumpSupportGetDriverListFailure(UInt32 Status)	GetDriverListFailure		LoadEarlyDumpSupport	Error		

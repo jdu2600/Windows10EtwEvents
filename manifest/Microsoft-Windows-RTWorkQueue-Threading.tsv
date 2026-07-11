@@ -57,3 +57,5 @@ Microsoft-Windows-RTWorkQueue-Threading	4520	0	TaskGroup4520(UInt32 ObjectCount)
 Microsoft-Windows-RTWorkQueue-Threading	4521	0	TaskGroup4521(Pointer TaskGroup, UInt32 TaskID)		Telemetry	TaskGroup	Verbose		
 Microsoft-Windows-RTWorkQueue-Threading	4522	0	Platform:Init(Pointer Platform)			Platform:Init	Informational		
 Microsoft-Windows-RTWorkQueue-Threading	4523	0	Platform:ShutdownStop4523(Pointer Platform)	Stop		Platform:Shutdown	Informational		
+Microsoft-Windows-RTWorkQueue-Threading	4524	0	WorkQueue:GetMMCSSFailure(Pointer WorkQueuePointer, UInt32 WorkQueueID, Pointer rtStatePointer, HexInt32 hr)			WorkQueue:GetMMCSSFailure	Verbose		
+Microsoft-Windows-RTWorkQueue-Threading	4525	0	WorkQueue:MMCSSTransition(Pointer WorkQueuePointer, UInt32 WorkQueueID, UInt32 TaskID, UInt32 RegCount)			WorkQueue:MMCSSTransition	Verbose		

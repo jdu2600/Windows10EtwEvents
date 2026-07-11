@@ -24,3 +24,6 @@ Microsoft-Windows-Crypto-DPAPI	8206	0	CredentialHistoryFileOperation()		ETW_TASK
 Microsoft-Windows-Crypto-DPAPI	8207	0	DiagnosticFileCheck8207()		ETW_TASK_DIAGNOSTICFILE_CHECK	DiagnosticFileCheck	Error		
 Microsoft-Windows-Crypto-DPAPI	12289	0	CredentialKeyOperation(Binary CredKeyIdentifier, UnicodeString UserName, SID UserSid)		ETW_TASK_CREDKEY_OPERATION	CredentialKeyOperation	Informational		
 Microsoft-Windows-Crypto-DPAPI	12290	0	CredentialKeyOperation12290()		ETW_TASK_CREDKEY_OPERATION	CredentialKeyOperation	Informational		
+Microsoft-Windows-Crypto-DPAPI	16385	0	DPAPIDefInformationTaskMessage(UnicodeString OperationType, UnicodeString DataDescription, GUID MasterKeyGUID, UInt32 Flags, UInt32 ProtectionFlags, UInt32 ReturnValue, UInt64 CallerProcessStartKey, UInt32 CallerProcessID, UInt64 CallerProcessCreationTime, UInt32 PlainTextDataSize)		ETW_TASK_DEF_INFORMATION	DPAPIDefInformationTaskMessage	Informational		
+Microsoft-Windows-Crypto-DPAPI	16386	0	DPAPIMasterKeyBackup(Boolean fLegacy, Boolean fWeakCrypt, UInt32 dwFallbackLastError, UInt32 dwEncryptLastError, UInt32 dwRestoreLastError)		ETW_TASK_RC4_FALLBACK	DPAPIMasterKeyBackup	Informational		
+Microsoft-Windows-Crypto-DPAPI	16387	0	DPAPIMasterKeyBackup_256(Boolean fLegacy, Boolean fWeakCrypt, UInt32 dwLastError)		ETW_TASK_MASTER_KEY_BACKUP	DPAPIMasterKeyBackup_256	Informational		

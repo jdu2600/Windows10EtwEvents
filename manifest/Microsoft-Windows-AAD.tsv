@@ -120,7 +120,7 @@ Microsoft-Windows-AAD	1164	0	AadCloudAPPluginOperation1164(HexInt32 Status, Unic
 Microsoft-Windows-AAD	1165	0	AadCloudAPPluginOperation1165(HexInt32 Status, UnicodeString CorrelationID)		Error Operational	AadCloudAPPluginOperation	Error		
 Microsoft-Windows-AAD	1200	0	BrowserCoreOperationStart()	Start	Analytic	BrowserCoreOperation	Informational		
 Microsoft-Windows-AAD	1201	0	BrowserCoreOperationStop()	Stop	Analytic	BrowserCoreOperation	Informational		
-Microsoft-Windows-AAD	1202	0	BrowserCoreOperationStop1202(Int32 Result)	Stop	Error Operational	BrowserCoreOperation	Error		
+Microsoft-Windows-AAD	1202	0	BrowserCoreOperationStop1202(Int32 Result, UnicodeString ErrorMessage)	Stop	Error Operational	BrowserCoreOperation	Error		
 Microsoft-Windows-AAD	1203	0	BrowserCoreOperation(Int32 Result, AnsiString FunctionName)		Error Operational	BrowserCoreOperation	Error		
 Microsoft-Windows-AAD	1204	0	AadCloudAPPluginOperationStart1204()	Start	Analytic	AadCloudAPPluginOperation	Informational		
 Microsoft-Windows-AAD	1205	0	AadCloudAPPluginOperationStop1205(HexInt32 Status)	Stop	Analytic	AadCloudAPPluginOperation	Informational		
@@ -176,3 +176,8 @@ Microsoft-Windows-AAD	1254	0	AadCloudAPPluginOperation1254(UnicodeString value)	
 Microsoft-Windows-AAD	1255	0	AadCloudAPPluginOperation1255(UInt32 NoOfTargets, UInt32 RequestType)		Analytic	AadCloudAPPluginOperation	Informational		
 Microsoft-Windows-AAD	1256	0	AadCloudAPPluginOperation1256(Int32 Result, UnicodeString Target)		Operational Warning	AadCloudAPPluginOperation	Warning		
 Microsoft-Windows-AAD	1257	0	AadCloudAPPluginOperationStart1257(UnicodeString value1, UnicodeString value2)	Start	Analytic	AadCloudAPPluginOperation	Informational		
+Microsoft-Windows-AAD	1258	0	AadCloudAPPluginOperationStart1258(UnicodeString value1, UnicodeString value2)	Start	Analytic	AadCloudAPPluginOperation	Informational		
+Microsoft-Windows-AAD	1259	0	AadCloudAPPluginOperation1259(Int32 Result, UnicodeString Target)		Operational Warning	AadCloudAPPluginOperation	Warning		
+Microsoft-Windows-AAD	1260	0	AuthHelperStart1260()	Start	Analytic	AuthHelper	Informational		
+Microsoft-Windows-AAD	1261	0	AuthHelperStop1261(HexInt32 Status)	Stop	Analytic	AuthHelper	Informational		
+Microsoft-Windows-AAD	1262	0	AadCloudAPPluginOperation1262(HexInt32 Status)		Operational Warning	AadCloudAPPluginOperation	Warning		

@@ -94,3 +94,4 @@ Microsoft-Windows-Winsock-AFD	4016	0	AfdNrtCreateOpen(Pointer NameResolutionHand
 Microsoft-Windows-Winsock-AFD	4017	0	AfdNrtCloseClosed(Pointer NameResolutionHandle, Pointer Process)	Closed	AFD_KW_NRT	AfdNrtClose	Informational		
 Microsoft-Windows-Winsock-AFD	4018	0	AfdRioNotifyCq(UInt32 EnterExit, UInt32 Location, Pointer Process, Pointer RegDomain, Pointer Cq, UInt32 Status)		AFD_KW_RIO	AfdRioNotifyCq	Verbose		
 Microsoft-Windows-Winsock-AFD	4019	0	AfdAcceptPause(UInt32 EnterExit, UInt32 Location, Pointer Process, Pointer Endpoint, UInt8 PauseUnPause, Int32 TLBacklogCount)			AfdAcceptPause	Informational		
+Microsoft-Windows-Winsock-AFD	4020	0	AfdRioValidateBufferSharing(Pointer RegistrationDomain, Pointer RioState, UInt32 BufferId, UInt32 BufferSharingType)		AFD_KW_RIO	AfdRioValidateBufferSharing	Warning		

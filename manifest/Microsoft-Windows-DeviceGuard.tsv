@@ -4,6 +4,7 @@ Microsoft-Windows-DeviceGuard	6001	0	task_0ManageCI6001(UnicodeString TokenID, U
 Microsoft-Windows-DeviceGuard	6002	0	task_0ManageCI6002(UnicodeString Token, GUID TenantID, UInt32 Type, UInt32 TBS256Count, UInt32 TBS384Count, UInt32 TBS512Count)	ManageCI		task_0	Informational		
 Microsoft-Windows-DeviceGuard	6003	0	task_0ManageCI6003(UnicodeString Token, UnicodeString HashAlgo, UInt32 TbsHashLen, Binary TbsHash)	ManageCI		task_0	Informational		
 Microsoft-Windows-DeviceGuard	7000	0	task_0DeviceGuard(UnicodeString VirtualizationBasedSecurity, UnicodeString SecureBoot, UnicodeString DmaProtection, UnicodeString HVCI, UnicodeString LSA, UnicodeString Reboot, HexInt32 Status)	DeviceGuard		task_0	Informational		
+Microsoft-Windows-DeviceGuard	7000	1	task_0DeviceGuard_V1(UnicodeString VirtualizationBasedSecurity, UnicodeString SecureBoot, UnicodeString DmaProtection, UnicodeString HVCI, UnicodeString LSA, UInt32 KernelShadowStacks, UnicodeString Reboot, HexInt32 Status)	DeviceGuard		task_0	Informational		
 Microsoft-Windows-DeviceGuard	7001	0	task_0DeviceGuard7001(HexInt32 Status, UnicodeString ErrorMessage)	DeviceGuard		task_0	Error		
 Microsoft-Windows-DeviceGuard	7002	0	task_0DeviceGuard7002(HexInt32 Status, UnicodeString ErrorMessage)	DeviceGuard		task_0	Error		
 Microsoft-Windows-DeviceGuard	7010	0	task_0DeviceGuard7010(UnicodeString SiPolicy, UnicodeString PolicyFilePath, UnicodeString Reboot, HexInt32 Status)	DeviceGuard		task_0	Informational		

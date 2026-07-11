@@ -1,0 +1,12 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Watchdog-Events	100	0	LogAssert(Pointer ReturnAddress, UInt32 LogEntry, UInt32 Level, UInt64 Param1, UInt64 Param2, UInt64 Param3, UInt64 Param4, UInt64 Param5)		WdLogAssert	LogAssert	Always		
+Microsoft-Windows-Watchdog-Events	101	0	LogError(Pointer ReturnAddress, UInt32 LogEntry, UInt32 Level, UInt64 Param1, UInt64 Param2, UInt64 Param3, UInt64 Param4, UInt64 Param5)		WdLogError	LogError	Always		
+Microsoft-Windows-Watchdog-Events	102	0	LogWarning(Pointer ReturnAddress, UInt32 LogEntry, UInt32 Level, UInt64 Param1, UInt64 Param2, UInt64 Param3, UInt64 Param4, UInt64 Param5)		WdLogWarning	LogWarning	Always		
+Microsoft-Windows-Watchdog-Events	103	0	LogEvent(Pointer ReturnAddress, UInt32 LogEntry, UInt32 Level, UInt64 Param1, UInt64 Param2, UInt64 Param3, UInt64 Param4, UInt64 Param5)		WdLogEvent	LogEvent	Always		
+Microsoft-Windows-Watchdog-Events	104	0	LogTrace(Pointer ReturnAddress, UInt32 LogEntry, UInt32 Level, UInt64 Param1, UInt64 Param2, UInt64 Param3, UInt64 Param4, UInt64 Param5)		WdLogTrace	LogTrace	Always		
+Microsoft-Windows-Watchdog-Events	105	0	LogLowResource(Pointer ReturnAddress, UInt32 LogEntry, UInt32 Level, UInt64 Param1, UInt64 Param2, UInt64 Param3, UInt64 Param4, UInt64 Param5)		WdLogLowResource	LogLowResource	Always		
+Microsoft-Windows-Watchdog-Events	106	0	LogDmmEvent(Pointer ReturnAddress, UInt32 LogEntry, UInt32 Level, UInt64 Param1, UInt64 Param2, UInt64 Param3, UInt64 Param4, UInt64 Param5)		WdLogDmmEvent	LogDmmEvent	Always		
+Microsoft-Windows-Watchdog-Events	107	0	LogPresentTokenEvent(Pointer ReturnAddress, UInt32 LogEntry, UInt32 Level, UInt64 Param1, UInt64 Param2, UInt64 Param3, UInt64 Param4, UInt64 Param5)		WdLogPresentTokenEvent	LogPresentTokenEvent	Always		
+Microsoft-Windows-Watchdog-Events	108	0	LogPower(Pointer ReturnAddress, UInt32 LogEntry, UInt32 Level, UInt64 Param1, UInt64 Param2, UInt64 Param3, UInt64 Param4, UInt64 Param5)		WdLogPower	LogPower	Always		
+Microsoft-Windows-Watchdog-Events	109	0	LogDebug(Pointer ReturnAddress, UInt32 LogEntry, UInt32 Level, UInt64 Param1, UInt64 Param2, UInt64 Param3, UInt64 Param4, UInt64 Param5)		WdLogDebug	LogDebug	Always		
+Microsoft-Windows-Watchdog-Events	110	0	LogUnknown(Pointer ReturnAddress, UInt32 LogEntry, UInt32 Level, UInt64 Param1, UInt64 Param2, UInt64 Param3, UInt64 Param4, UInt64 Param5)		WdLogUnknown	LogUnknown	Always		

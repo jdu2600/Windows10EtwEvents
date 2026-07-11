@@ -1,4 +1,13 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
 Microsoft-Windows-Kernel-Dump	1	0	CrashDumpPolicyPolicyOperationFailed(AnsiString OperationType)	PolicyOperationFailed		CrashDumpPolicy	Informational		
 Microsoft-Windows-Kernel-Dump	2	0	CrashDumpPolicyPolicyValueChanged(UInt32 PolicyValue, UInt32 NTStatus)	PolicyValueChanged		CrashDumpPolicy	Informational		
-Microsoft-Windows-Kernel-Dump	3	0	CrashDumpPolicyCrashDumpdisabledonboot(UInt32 PolicyValue)	CrashDumpdisabledonboot		CrashDumpPolicy	Informational		
+Microsoft-Windows-Kernel-Dump	3	0	CrashDumpPolicyCrashDumpDisabledOnBoot(UInt32 PolicyValue)	CrashDumpDisabledOnBoot		CrashDumpPolicy	Informational		
+Microsoft-Windows-Kernel-Dump	4	0	CrashDumpConfigDumpDisableFailed(UInt32 NTStatus)	DumpDisableFailed		CrashDumpConfig	Warning		
+Microsoft-Windows-Kernel-Dump	5	0	CrashDumpConfigDumpInitializationFailed.(UInt32 NTStatus)	DumpInitializationFailed.		CrashDumpConfig	Warning		
+Microsoft-Windows-Kernel-Dump	6	0	CrashDumpConfigDumpLoadDriverFailed.(UInt32 NTStatus)	DumpLoadDriverFailed.		CrashDumpConfig	Warning		
+Microsoft-Windows-Kernel-Dump	7	0	CrashDumpConfigDumpStackInitializationFailed(UInt32 NTStatus)	DumpStackInitializationFailed		CrashDumpConfig	Warning		
+Microsoft-Windows-Kernel-Dump	8	0	CrashDumpConfigFreeDumpStackFailed(UInt32 NTStatus)	FreeDumpStackFailed		CrashDumpConfig	Warning		
+Microsoft-Windows-Kernel-Dump	9	0	CrashDumpConfigLoadDumpStackFailed(UInt32 NTStatus)	LoadDumpStackFailed		CrashDumpConfig	Warning		
+Microsoft-Windows-Kernel-Dump	10	0	CrashDumpConfigDumpDisabled()	DumpDisabled		CrashDumpConfig	Informational		
+Microsoft-Windows-Kernel-Dump	11	0	CrashDumpConfigDumpReconfigured(UInt32 NTStatus)	DumpReconfigured		CrashDumpConfig	Informational		
+Microsoft-Windows-Kernel-Dump	12	0	DumpConfigDumpdisabledforcefully(UInt32 ForceDumpDisabled)	Dumpdisabledforcefully		DumpConfig	Informational		

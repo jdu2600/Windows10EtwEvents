@@ -162,3 +162,17 @@ Microsoft-Windows-Media-Protection-PlayReady-Performance	160	0	CDRMMemoryCacheDR
 Microsoft-Windows-Media-Protection-PlayReady-Performance	161	0	CDRMMemoryCacheDRM_FREEStop(Pointer CDRMMemoryCacheDRM_FREE_ptr)	Stop		CDRMMemoryCacheDRM_FREE	Verbose		
 Microsoft-Windows-Media-Protection-PlayReady-Performance	162	0	CDRMMemoryCacheClearFreeListStart(Pointer CDRMMemoryCacheClearFreeList_ptr)	Start		CDRMMemoryCacheClearFreeList	Verbose		
 Microsoft-Windows-Media-Protection-PlayReady-Performance	163	0	CDRMMemoryCacheClearFreeListStop(Pointer CDRMMemoryCacheClearFreeList_ptr)	Stop		CDRMMemoryCacheClearFreeList	Verbose		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	164	0	GenerateChallengeStart(Pointer CMSPRLAContentEnabler_ptr)	Start		GenerateChallenge	Informational		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	165	0	GenerateChallengeStop(Pointer CMSPRLAContentEnabler_ptr)	Stop		GenerateChallenge	Informational		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	166	0	ProcessResponseStart(Pointer CMSPRLAContentEnabler_ptr)	Start		ProcessResponse	Informational		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	167	0	ProcessResponseStop(Pointer CMSPRLAContentEnabler_ptr)	Stop		ProcessResponse	Informational		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	168	0	MoveToNewDecryptorOrCreatePendingPolicyStart(Pointer CMSPRMFDecrypterTransform_ptr, UInt32 Reason)	Start		MoveToNewDecryptorOrCreatePendingPolicy	Informational		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	169	0	MoveToNewDecryptorOrCreatePendingPolicyStop(Pointer CMSPRMFDecrypterTransform_ptr, UInt32 Reason)	Stop		MoveToNewDecryptorOrCreatePendingPolicy	Informational		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	170	0	WaitForPendingPolicyStart(Pointer CMSPRMFDecrypterTransform_ptr)	Start		WaitForPendingPolicy	Informational		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	171	0	WaitForPendingPolicyStop(Pointer CMSPRMFDecrypterTransform_ptr)	Stop		WaitForPendingPolicy	Informational		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	172	0	UpdateMFMSPRDecryptorStart(Pointer CMSPRMFDecrypterTransform_ptr)	Start		UpdateMFMSPRDecryptor	Informational		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	173	0	UpdateMFMSPRDecryptorStop(Pointer CMSPRMFDecrypterTransform_ptr)	Stop		UpdateMFMSPRDecryptor	Informational		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	174	0	KeyRotationStart(Pointer CMSPRMFDecrypterTransform_ptr)	Start		KeyRotation	Informational		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	175	0	KeyRotationStop(Pointer CMSPRMFDecrypterTransform_ptr, Boolean PolicyChanged)	Stop		KeyRotation	Informational		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	176	0	FindLicenseStart(Pointer CMSPRMFDecrypterTransform_ptr)	Start		FindLicense	Informational		
+Microsoft-Windows-Media-Protection-PlayReady-Performance	177	0	FindLicenseStop(Pointer CMSPRMFDecrypterTransform_ptr)	Stop		FindLicense	Informational		

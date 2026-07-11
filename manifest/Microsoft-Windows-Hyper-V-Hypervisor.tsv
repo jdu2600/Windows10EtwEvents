@@ -48,12 +48,6 @@ Microsoft-Windows-Hyper-V-Hypervisor	97	0	task_097(HexInt32 CPU, HexInt64 LeafNu
 Microsoft-Windows-Hyper-V-Hypervisor	129	0	task_0129(Boolean HardwarePresent, Boolean HardwareEnabled, HexInt64 Policy, HexInt64 EnabledFeatures, HexInt64 InternalInfo, HexInt64 Problems, HexInt64 AdditionalInfo)		keyword_400000000000	task_0	Informational		
 Microsoft-Windows-Hyper-V-Hypervisor	130	0	task_0130()			task_0	Warning		
 Microsoft-Windows-Hyper-V-Hypervisor	131	0	task_0131(HexInt64 Problems)		keyword_400000000000	task_0	Error		
-Microsoft-Windows-Hyper-V-Hypervisor	144	0	task_0144(HexInt64 DeviceId, UInt64 PartitionId)		keyword_400000000000	task_0	Warning		
-Microsoft-Windows-Hyper-V-Hypervisor	145	0	task_0145(HexInt64 DeviceId, UInt64 PartitionId)		keyword_400000000000	task_0	Error		
-Microsoft-Windows-Hyper-V-Hypervisor	146	0	task_0146(HexInt64 DeviceId, UInt64 PartitionId)		keyword_400000000000	task_0	Error		
-Microsoft-Windows-Hyper-V-Hypervisor	147	0	task_0147(UInt8 IoApicId)		keyword_400000000000	task_0	Error		
-Microsoft-Windows-Hyper-V-Hypervisor	148	0	task_0148(HexInt64 DeviceId, HexInt64 UnitBaseAddress, UInt64 PartitionId)		keyword_400000000000	task_0	Error		
-Microsoft-Windows-Hyper-V-Hypervisor	149	0	task_0149(HexInt64 DeviceId, UInt64 PartitionId)		keyword_400000000000	task_0	Error		
 Microsoft-Windows-Hyper-V-Hypervisor	152	0	task_0152(UnicodeString ImageName, HexInt32 Status)		keyword_400000000000	task_0	Warning		
 Microsoft-Windows-Hyper-V-Hypervisor	153	0	task_0153(UnicodeString ImageName)		keyword_400000000000	task_0	Warning		
 Microsoft-Windows-Hyper-V-Hypervisor	154	0	task_0154(Int64 MaxDelta, Int64 MinDelta)		keyword_400000000000	task_0	Error		
@@ -94,6 +88,15 @@ Microsoft-Windows-Hyper-V-Hypervisor	12301	0	HvldrGetMtrrs(UInt64 AuxData, UInt3
 Microsoft-Windows-Hyper-V-Hypervisor	12302	0	HvldrGetPlatformCaps(HexInt64 BalStatus)			HvldrGetPlatformCaps	Error		
 Microsoft-Windows-Hyper-V-Hypervisor	12303	0	HvldrHsrInUse(Boolean HsrInUse, UInt32 Reason)			HvldrHsrInUse	Informational		
 Microsoft-Windows-Hyper-V-Hypervisor	12304	0	HvldrConfigureIommuLiveHandoff(UInt64 AuxData, UInt32 NtStatus)			HvldrConfigureIommuLiveHandoff	Informational		
+Microsoft-Windows-Hyper-V-Hypervisor	12305	0	HvldrGetIdleStateConfig(UInt64 AuxData, UInt32 NtStatus)			HvldrGetIdleStateConfig	Warning		
+Microsoft-Windows-Hyper-V-Hypervisor	12306	0	HvldrGetVpRegisters(UInt64 AuxData, UInt32 NtStatus)			HvldrGetVpRegisters	Error		
+Microsoft-Windows-Hyper-V-Hypervisor	12307	0	HvldrGetLogicalProcessorProperty(UInt64 AuxData, UInt32 NtStatus)			HvldrGetLogicalProcessorProperty	Error		
+Microsoft-Windows-Hyper-V-Hypervisor	12308	0	HvldrDisableHypervisor(UInt64 AuxData, UInt32 NtStatus)			HvldrDisableHypervisor	Informational		
+Microsoft-Windows-Hyper-V-Hypervisor	12309	0	HvldrDisableHypervisor12309(UInt64 AuxData, UInt32 NtStatus)			HvldrDisableHypervisor	Informational		
+Microsoft-Windows-Hyper-V-Hypervisor	12310	0	HvldrPrepareProtoHypervisor(UInt64 AuxData, UInt32 NtStatus)			HvldrPrepareProtoHypervisor	Informational		
+Microsoft-Windows-Hyper-V-Hypervisor	12311	0	HvldrImageLoadInfo(UnicodeString ImageName, UInt32 Checksum, UInt32 Timestamp, UInt32 NtStatus)			HvldrImageLoadInfo	Informational		
+Microsoft-Windows-Hyper-V-Hypervisor	12312	0	HvldrReadHvRegister(UInt64 AuxData, UInt32 NtStatus)			HvldrReadHvRegister	Error		
+Microsoft-Windows-Hyper-V-Hypervisor	12313	0	HvldrProcessInterruptControllers(UInt64 AuxData, UInt32 NtStatus)			HvldrProcessInterruptControllers	Error		
 Microsoft-Windows-Hyper-V-Hypervisor	12550	0	task_012550(HexInt32 Msr, UInt8 IsWrite, HexInt64 MsrValue, UInt16 AccessStatus, HexInt64 Pc, HexInt64 ImageBase, HexInt32 ImageChecksum, HexInt32 ImageTimestamp, AnsiString ImageName)		keyword_400000000000	task_0	Warning		
 Microsoft-Windows-Hyper-V-Hypervisor	16641	0	task_016641(UInt64 PartitionId)			task_0	Informational		
 Microsoft-Windows-Hyper-V-Hypervisor	16642	0	task_016642(UInt64 PartitionId)			task_0	Informational		

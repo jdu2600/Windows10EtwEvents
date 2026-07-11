@@ -149,6 +149,7 @@ Microsoft-Windows-NDIS	10402	0	Power10402(GUID IfGuid, UInt32 Flags, UInt32 Supp
 Microsoft-Windows-NDIS	10500	0	Init10500(UInt32 SupportFlags)		Init	Init	Warning		
 Microsoft-Windows-NDIS	10501	0	Init10501(UInt8 ObjectType, Pointer ObjectHandle, UInt32 SupportFlags)		Init	Init	Warning		
 Microsoft-Windows-NDIS	10502	0	Alloc(UInt32 State, GUID NetworkInterfaceGuid, UInt32 QueueId, UInt32 VPortId, UInt32 NumaNode, UInt32 AllocationSize, UInt64 AllocationTime, UInt64 AllocationTimeThreshold)		Alloc	Alloc	Warning		
+Microsoft-Windows-NDIS	10503	0	Init10503(GUID MiniportStack, CountedUtf16String DriverServiceName, UInt32 OriginalFlags, UInt32 EffectiveFlags)		Init	Init	Informational		
 Microsoft-Windows-NDIS	60001	0	task_060001(UInt32 ErrorCode, UInt32 Location, UInt32 Context)			task_0	Error		
 Microsoft-Windows-NDIS	60002	0	task_060002(UInt32 WarningCode, UInt32 Location, UInt32 Context)			task_0	Warning		
 Microsoft-Windows-NDIS	60003	0	task_060003(UInt8 NextState, UInt32 Context)		keyword_200000000000	task_0	Informational		

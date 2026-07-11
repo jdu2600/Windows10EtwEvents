@@ -1,3 +1,8 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
 Microsoft-Windows-Crashdump	1	1	ResumecapablesettingsOpCodeResumeCapable_V1(Boolean ResumeCapable, UInt32 ReasonCodes)	OpCodeResumeCapable	Config	Resumecapablesettings	Informational		
-Microsoft-Windows-Crashdump	2	1	RransfersizesettingsOpCodeTransferSizes_V1(UInt32 Minimum, UInt32 Maximum)	OpCodeTransferSizes	Config	Rransfersizesettings	Informational		
+Microsoft-Windows-Crashdump	2	1	TransfersizesettingsOpCodeTransferSizes_V1(UInt32 Minimum, UInt32 Maximum)	OpCodeTransferSizes	Config	Transfersizesettings	Informational		
+Microsoft-Windows-Crashdump	3	1	CreatedumpfilesettingsOpCodeCreateDumpFile_V1(Boolean IoSpaceEnabled, UInt64 PhysicalMemorySizeInBytes, UInt64 DumpFileSizeInBytes, UInt64 CreateDumpFileDurationInMs)	OpCodeCreateDumpFile	Config	Createdumpfilesettings	Informational		
+Microsoft-Windows-Crashdump	4	0	EarlyCrashDumpPrepareFailure(UInt32 Status, UInt32 FailurePoint)	PrepareFailure	EarlyCrashDump	EarlyCrashDump	Warning		
+Microsoft-Windows-Crashdump	5	0	EarlyCrashDumpInitializationFailure(UInt32 Status)	InitializationFailure	EarlyCrashDump	EarlyCrashDump	Error		
+Microsoft-Windows-Crashdump	6	0	EarlyCrashDumpInitialized()	Initialized	EarlyCrashDump	EarlyCrashDump	Informational		
+Microsoft-Windows-Crashdump	7	0	EarlyCrashDumpSupported()	Supported	EarlyCrashDump	EarlyCrashDump	Informational		

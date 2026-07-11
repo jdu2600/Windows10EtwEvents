@@ -27,7 +27,7 @@ Microsoft-Windows-Dwm-Core	34	0	ETWGUID_COPYFRONTTOBACKBUFFEREVENTStart()	Start	
 Microsoft-Windows-Dwm-Core	35	0	ETWGUID_COPYFRONTTOBACKBUFFEREVENTStop(UInt32 invalidRegions, UInt32 pixelsCopied)	Stop	Composition	ETWGUID_COPYFRONTTOBACKBUFFEREVENT	Verbose		
 Microsoft-Windows-Dwm-Core	40	0	ETWGUID_CLEAREVENTStart(Float left, Float top, Float right, Float bottom)	Start	Composition	ETWGUID_CLEAREVENT	Verbose		
 Microsoft-Windows-Dwm-Core	41	0	ETWGUID_CLEAREVENTStop()	Stop	Composition	ETWGUID_CLEAREVENT	Verbose		
-Microsoft-Windows-Dwm-Core	42	0	ETWGUID_DIRTYREGIONEVENT(UInt32 Id, Int32 Z, Float left, Float top, Float right, Float bottom)		FrameVisualization	ETWGUID_DIRTYREGIONEVENT	Informational		
+Microsoft-Windows-Dwm-Core	42	0	ETWGUID_DIRTYREGIONEVENT(UInt32 Id, Int32 Z, Float left, Float top, Float right, Float bottom)		Composition	ETWGUID_DIRTYREGIONEVENT	Informational		
 Microsoft-Windows-Dwm-Core	43	0	ETWGUID_OCCLUSIONEVENTStart(UInt64 data, UInt32 Id)	Start	Composition	ETWGUID_OCCLUSIONEVENT	Informational		
 Microsoft-Windows-Dwm-Core	44	0	ETWGUID_OCCLUSIONEVENT(Int32 Z, Float left, Float top, Float right, Float bottom, UInt32 rectType)		Composition	ETWGUID_OCCLUSIONEVENT	Verbose		
 Microsoft-Windows-Dwm-Core	45	0	ETWGUID_OCCLUSIONEVENTStop(UInt64 data, UInt32 Id)	Stop	Composition	ETWGUID_OCCLUSIONEVENT	Informational		
@@ -310,9 +310,13 @@ Microsoft-Windows-Dwm-Core	455	0	Pinning_D3DUnpinStart(UInt32 BufferCount)	Start
 Microsoft-Windows-Dwm-Core	456	0	Pinning_D3DUnpinStop(UInt32 hr)	Stop	Composition Overlays	Pinning_D3DUnpin	Informational		
 Microsoft-Windows-Dwm-Core	457	0	Pinning_OutstandingUnpinCount(UInt64 surfaceLuid, UInt32 count)		Composition Overlays	Pinning_OutstandingUnpinCount	Informational		
 Microsoft-Windows-Dwm-Core	458	0	CompSurfInfo_BindingStart(UInt64 surfaceLuid, UInt64 bindId)	Start	Composition Overlays	CompSurfInfo_Binding	Informational		
-Microsoft-Windows-Dwm-Core	459	0	CompSurfInfo_BindingStop(UInt32 BindingType, UInt32 BufferCount, Boolean homogeneous)	Stop	Composition Overlays	CompSurfInfo_Binding	Informational		
+Microsoft-Windows-Dwm-Core	459	0	CompSurfInfo_BindingStop(UInt32 BindingType, UInt32 BufferCount)	Stop	Composition Overlays	CompSurfInfo_Binding	Informational		
 Microsoft-Windows-Dwm-Core	460	0	CompSurfInfo_ForceUpdateRealizationStart(UInt64 surfaceLuid, UInt64 bindId, UInt32 flipIndex)	Start	Composition Overlays	CompSurfInfo_ForceUpdateRealization	Informational		
 Microsoft-Windows-Dwm-Core	461	0	CompSurfInfo_ForceUpdateRealizationStop(Boolean applied)	Stop	Composition Overlays	CompSurfInfo_ForceUpdateRealization	Informational		
 Microsoft-Windows-Dwm-Core	462	0	CustomDurationIterationResultStop(UInt32 IterationDuration, UInt32 AcceptableError, UInt32 ClosestSmallerDuration, UInt32 ClosestLargerDuration)	Stop	Composition Overlays	CustomDurationIterationResult	Informational		
-Microsoft-Windows-Dwm-Core	464	0	CompSurfInfo_ScanoutIncompatible(UInt32 Reason)		Composition Overlays	CompSurfInfo_ScanoutIncompatible	Informational		
+Microsoft-Windows-Dwm-Core	463	0	CompSurfInfo_ScanoutIncompatible(UInt32 Reason)		Composition Overlays	CompSurfInfo_ScanoutIncompatible	Informational		
+Microsoft-Windows-Dwm-Core	464	0	CompositionSwapchain_CommitFrameStatistics(Pointer flipConsumer, UInt64 contentId, UInt64 CompositionFrameId, UInt64 PresentId)		Composition	CompositionSwapchain_CommitFrameStatistics	Informational		
 Microsoft-Windows-Dwm-Core	465	0	CompSurfInfo_ReuseRealization(UInt64 UniqueId)		Composition Overlays	CompSurfInfo_ReuseRealization	Informational		
+Microsoft-Windows-Dwm-Core	466	0	Windowed_Dx_Blt_Consumed(UInt64 hWnd, UInt64 displayAdapterLuid, UInt64 renderAdapterLuid, UInt32 vidPnSourceId, UInt32 vidPnTargetId, UInt32 uniqueId, Int32 bltRect)		Composition	Windowed_Dx_Blt_Consumed	Informational		
+Microsoft-Windows-Dwm-Core	467	0	Windowed_Dx_Flip_Consumed(UInt64 hWnd, UInt64 displayAdapterLuid, UInt64 renderAdapterLuid, UInt32 vidPnSourceId, UInt32 vidPnTargetId, UInt32 uniqueId, UInt64 surfaceLuid, UInt64 bindId, UInt32 presentCount, UInt64 flipRect)		Composition	Windowed_Dx_Flip_Consumed	Informational		
+Microsoft-Windows-Dwm-Core	468	0	Dx_Flip_Consumed(UInt64 displayAdapterLuid, UInt64 renderAdapterLuid, UInt32 vidPnSourceId, UInt32 vidPnTargetId, UInt32 uniqueId, UInt64 surfaceLuid, UInt64 bindId, UInt32 presentCount, Int64 flipRect)		Composition	Dx_Flip_Consumed	Informational		

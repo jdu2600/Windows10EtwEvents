@@ -74,7 +74,7 @@ Microsoft-Windows-ESE	171	0	ESE_IOThreadIssueStart_Trace()		IO	ESE_IOThreadIssue
 Microsoft-Windows-ESE	172	0	ESE_IOThreadIssuedDisk_Trace(UInt32 dwDiskId, UInt8 fFromCompletion, Int64 ipass, Int32 err, UInt32 cioProcessed, UInt64 usRuntime)		IO	ESE_IOThreadIssuedDisk_Trace	Informational		
 Microsoft-Windows-ESE	173	0	ESE_IOThreadIssueProcessedIO_Trace(Int32 err, UInt32 cDisksProcessed, UInt64 usRuntime)		IO	ESE_IOThreadIssueProcessedIO_Trace	Informational		
 Microsoft-Windows-ESE	174	0	ESE_IOIoreqCompletion_Trace(UInt8 fWrite, UInt64 iFile, UInt64 ibOffset, UInt32 cbData, UInt32 dwDiskNumber, UInt32 tidAlloc, UInt64 qos, UInt32 iIoreq, UInt32 err, UInt64 usCompletionDelay)		IO StallLatencies	ESE_IOIoreqCompletion_Trace	Informational		
-Microsoft-Windows-ESE	175	0	ESE_CacheMemoryUsage_Trace(UnicodeString wszFilename, UInt8 tce, UInt32 dwEngineFileType, UInt64 dwEngineFileId, UInt64 cbMemory, UInt32 cmsecReferenceIntervalMax)		SubstrateTelemetry	ESE_CacheMemoryUsage_Trace	Informational		
+Microsoft-Windows-ESE	175	0	ESE_CacheMemoryUsage_Trace(UnicodeString wszFilename, UInt8 tce, UInt32 dwEngineFileType, UInt64 dwEngineFileId, UInt64 cbMemory, UInt32 cmsecReferenceIntervalMax, UInt64 cbDirty)		SubstrateTelemetry	ESE_CacheMemoryUsage_Trace	Informational		
 Microsoft-Windows-ESE	176	0	ESE_CacheSetLgposModify_Trace(UInt32 tick, UInt32 ifmp, UInt32 pgno, UInt64 lgposModify)		BF BFRESMGR	ESE_CacheSetLgposModify_Trace	Verbose		
 Microsoft-Windows-ESE	200	0	ESE_tagNull_Trace(AnsiString szTrace)		JETTraceTag	ESE_tagNull_Trace	Verbose		
 Microsoft-Windows-ESE	201	0	ESE_tagInformation_Trace(AnsiString szTrace)		JETTraceTag	ESE_tagInformation_Trace	Informational		

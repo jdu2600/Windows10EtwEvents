@@ -1,22 +1,24 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-TPM	2	0	task_0(HexInt32 locationCode, UInt32 Data)			task_0	Error		
-TPM	12	0	task_012(HexInt32 locationCode, UInt32 Data)			task_0	Error		
-TPM	14	0	task_014(HexInt32 locationCode, UInt32 Data)			task_0	Error		
-TPM	15	0	task_015(HexInt32 locationCode, UInt32 Data)			task_0	Error		
-TPM	16	0	task_016(HexInt32 locationCode, UInt32 Data)			task_0	Error		
-TPM	17	0	task_017(HexInt32 locationCode, UInt32 TpmCommandOrdinal, UInt32 TpmResponseCode)			task_0	Informational		
-TPM	18	0	task_018(HexInt32 locationCode, UInt32 Data)			task_0	Informational		
-TPM	19	0	task_019(HexInt32 locationCode, UInt32 Data1, UInt32 Data2)			task_0	Error		
-TPM	20	0	task_020(HexInt32 locationCode, UInt32 Data)			task_0	Informational		
+TPM	2	0	task_0(HexInt32 driverFile, UInt32 lineNumber, UInt32 Data)			task_0	Error		
+TPM	12	0	task_012(HexInt32 driverFile, UInt32 lineNumber, UInt32 Data)			task_0	Error		
+TPM	14	0	task_014(HexInt32 driverFile, UInt32 lineNumber, UInt32 Data)			task_0	Error		
+TPM	15	0	task_015(HexInt32 driverFile, UInt32 lineNumber, UInt32 Data)			task_0	Error		
+TPM	16	0	task_016(HexInt32 driverFile, UInt32 lineNumber, UInt32 Data)			task_0	Error		
+TPM	17	0	task_017(HexInt32 driverFile, UInt32 lineNumber, UInt32 TpmCommandOrdinal, UInt32 TpmResponseCode)			task_0	Informational		
+TPM	18	0	task_018(HexInt32 driverFile, UInt32 lineNumber, UInt32 Data)			task_0	Informational		
+TPM	19	0	task_019(HexInt32 driverFile, UInt32 lineNumber, UInt32 Data1, UInt32 Data2)			task_0	Error		
+TPM	20	0	task_020(HexInt32 driverFile, UInt32 lineNumber, UInt32 Data)			task_0	Informational		
 TPM	21	0	task_021(UnicodeString UserSID, UnicodeString ProcessPath)			task_0	Error		
-TPM	22	0	task_022(HexInt32 locationCode, UInt32 Data)			task_0	Error		
+TPM	22	0	task_022(HexInt32 driverFile, UInt32 lineNumber, UInt32 Data)			task_0	Error		
 TPM	23	0	task_023(UnicodeString UserSID)			task_0	Error		
 TPM	24	0	task_024(UInt32 statusEnabled, UInt32 statusActive)			task_0	Informational		
-TPM	25	0	task_025(HexInt32 locationCode, UInt32 Data)			task_0	Error		
-TPM	26	0	task_026(HexInt32 locationCode)			task_0	Error		
-TPM	27	0	task_027(HexInt32 locationCode, HexInt32 TPM_PT_MANUFACTURER, HexInt32 TPM_PT_VENDOR_STRING_1, HexInt32 TPM_PT_VENDOR_STRING_2, HexInt32 TPM_PT_VENDOR_STRING_3, HexInt32 TPM_PT_VENDOR_STRING_4, HexInt32 TPM_PT_VENDOR_TPM_TYPE, HexInt32 TPM_PT_FIRMWARE_VERSION_1, HexInt32 TPM_PT_FIRMWARE_VERSION_2, UInt16 DataSize, UInt8 GetTestResult_Data)			task_0	Error		
+TPM	25	0	task_025(HexInt32 driverFile, UInt32 lineNumber, UInt32 Data)			task_0	Error		
+TPM	26	0	task_026(HexInt32 driverFile, UInt32 lineNumber)			task_0	Error		
+TPM	27	0	task_027(HexInt32 driverFile, UInt32 lineNumber, HexInt32 TPM_PT_MANUFACTURER, HexInt32 TPM_PT_VENDOR_STRING_1, HexInt32 TPM_PT_VENDOR_STRING_2, HexInt32 TPM_PT_VENDOR_STRING_3, HexInt32 TPM_PT_VENDOR_STRING_4, HexInt32 TPM_PT_VENDOR_TPM_TYPE, HexInt32 TPM_PT_FIRMWARE_VERSION_1, HexInt32 TPM_PT_FIRMWARE_VERSION_2, UInt16 DataSize, UInt8 GetTestResult_Data)			task_0	Error		
 TPM	28	0	task_028(UInt32 SrkSymKeyPolicyValue, UInt32 TpmAes256Capability, UInt32 ActualSymBitsUsed, UInt32 SrkAsymKeyPolicyValue, UInt32 TpmRsa3kCapability, UInt32 ActualAsymBitsUsed)			task_0	Informational		
 TPM	29	0	task_029(UInt32 SrkSymKeyPolicyValue, UInt32 TpmAes256Capability, UInt32 ActualSymBitsUsed, UInt32 SrkAsymKeyPolicyValue, UInt32 TpmRsa3kCapability, UInt32 ActualAsymBitsUsed)			task_0	Error		
-TPM	30	0	task_030(HexInt32 locationCode, UInt32 resetCountBefore, UInt32 restartCountBefore, UInt32 resetCountAfter, UInt32 restartCountAfter)			task_0	Warning		
+TPM	30	0	task_030(HexInt32 driverFile, UInt32 lineNumber, UInt32 resetCountBefore, UInt32 restartCountBefore, UInt32 resetCountAfter, UInt32 restartCountAfter)			task_0	Warning		
 TPM	31	0	task_031(UnicodeString functionName, UInt32 status)			task_0	Informational		
 TPM	32	0	task_032(UnicodeString description, UInt32 status)			task_0	Error		
+TPM	33	0	task_033(HexInt32 driverFile, UInt32 lineNumber, UnicodeString Requester)			task_0	Informational		
+TPM	34	0	task_034(HexInt32 driverFile, UInt32 lineNumber, UnicodeString Requester)			task_0	Informational		

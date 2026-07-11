@@ -12,6 +12,7 @@ Microsoft-Windows-EnhancedStorage-EhStorTcgDrv	10	0	DriverTcgLib(AnsiString Desc
 Microsoft-Windows-EnhancedStorage-EhStorTcgDrv	11	0	DriverTcgLib11(AnsiString Description, HexInt32 SiloCommand, HexInt32 SiloStatus, HexInt64 TCGInvokingID, HexInt64 TCGMethodID)	TcgLib		Driver	Error		
 Microsoft-Windows-EnhancedStorage-EhStorTcgDrv	12	0	DriverGeneral12(HexInt32 Capabilities, HexInt64 KeyProtectionMechanism, UInt32 MaxBandCount, UInt32 BandMetadataSize)	General		Driver	Informational		
 Microsoft-Windows-EnhancedStorage-EhStorTcgDrv	13	0	DriverGeneral13(UInt32 BandID, UInt32 Authorize, HexInt32 Status)	General		Driver	Informational		
+Microsoft-Windows-EnhancedStorage-EhStorTcgDrv	14	0	DriverTcgLib14(AnsiString Description, UInt64 Param1, UInt64 Param2, UInt64 Param3, UInt64 Param4)	TcgLib		Driver	Error		
 Microsoft-Windows-EnhancedStorage-EhStorTcgDrv	100	0	DriverGeneral100(AnsiString Context, HexInt32 Param1, HexInt32 Param2, HexInt32 Param3, HexInt32 Param4)	General		Driver	Informational		
 Microsoft-Windows-EnhancedStorage-EhStorTcgDrv	101	0	DriverGeneral101(AnsiString Context, HexInt32 Param1, HexInt32 Param2, HexInt32 Param3, HexInt32 Param4)	General		Driver	Warning		
 Microsoft-Windows-EnhancedStorage-EhStorTcgDrv	102	0	DriverGeneral102(AnsiString Context, HexInt32 Param1, HexInt32 Param2, HexInt32 Param3, HexInt32 Param4)	General		Driver	Error		
@@ -47,3 +48,5 @@ Microsoft-Windows-EnhancedStorage-EhStorTcgDrv	228	0	IoctlRelinquishSiloStart(An
 Microsoft-Windows-EnhancedStorage-EhStorTcgDrv	229	0	IoctlRelinquishSiloStop(AnsiString Context, HexInt64 Param1, HexInt64 Param2, HexInt64 Param3, HexInt64 Param4)	Stop		IoctlRelinquishSilo	Informational		
 Microsoft-Windows-EnhancedStorage-EhStorTcgDrv	230	0	IoctlSetSidStart(AnsiString Context, HexInt64 Param1, HexInt64 Param2, HexInt64 Param3, HexInt64 Param4)	Start		IoctlSetSid	Informational		
 Microsoft-Windows-EnhancedStorage-EhStorTcgDrv	231	0	IoctlSetSidStop(AnsiString Context, HexInt64 Param1, HexInt64 Param2, HexInt64 Param3, HexInt64 Param4)	Stop		IoctlSetSid	Informational		
+Microsoft-Windows-EnhancedStorage-EhStorTcgDrv	232	0	IoctlEraseAllBandsStart(AnsiString Context, HexInt64 Param1, HexInt64 Param2, HexInt64 Param3, HexInt64 Param4)	Start		IoctlEraseAllBands	Informational		
+Microsoft-Windows-EnhancedStorage-EhStorTcgDrv	233	0	IoctlEraseAllBandsStop(AnsiString Context, HexInt64 Param1, HexInt64 Param2, HexInt64 Param3, HexInt64 Param4)	Stop		IoctlEraseAllBands	Informational		

@@ -136,3 +136,5 @@ Microsoft-Windows-PDC	127	0	PdcSIdleUpdateNotification(Boolean SystemIdle)			Pdc
 Microsoft-Windows-PDC	128	0	PdcInvalidArgumentToFunction(UInt32 FunctionNameLength, UnicodeString FunctionName, UInt32 ArgumentNameLength, UnicodeString ArgumentName)			PdcInvalidArgumentToFunction	Always		
 Microsoft-Windows-PDC	129	0	SpmScenarioCreate(Pointer Scenario, UInt32 Status)		SPM	SpmScenarioCreate	Informational		
 Microsoft-Windows-PDC	130	0	SpmScenarioDelete(Pointer Scenario, UInt32 Status)		SPM	SpmScenarioDelete	Informational		
+Microsoft-Windows-PDC	131	0	GroupEnable(UInt32 GroupId, Boolean Enable, Boolean Updated)		PdcGroup	GroupEnable	Informational		
+Microsoft-Windows-PDC	132	0	GroupRequest(UInt32 GroupId, Int32 RequestCount, Boolean Updated)		PdcGroup	GroupRequest	Informational		

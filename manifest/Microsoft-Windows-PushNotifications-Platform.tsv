@@ -1,5 +1,5 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-PushNotifications-Platform	1	0	task_0(UnicodeString FileName, UnicodeString FunctionName, Int32 LineNumber, UInt32 ErrorCode)		wpndbg	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	1	0	task_0(UnicodeString FileName, UnicodeString FunctionName, Int32 LineNumber, UInt32 ErrorCode, UnicodeString ErrorMessage)		wpndbg	task_0	Verbose		
 Microsoft-Windows-PushNotifications-Platform	2	0	PlatformBootUp()		wpnplat wpnperf_FirstCloudNotification wpnperf_FirstCloudNotificationWithCloudImage	PlatformBootUp	Informational		
 Microsoft-Windows-PushNotifications-Platform	3	0	PlatformShutdown()		wpnplat wpnperf_Shutdown	PlatformShutdown	Informational		
 Microsoft-Windows-PushNotifications-Platform	4	0	task_04()		wpnplat	task_0	Informational		
@@ -17,7 +17,7 @@ Microsoft-Windows-PushNotifications-Platform	15	0	task_015(UInt16 CountApplicati
 Microsoft-Windows-PushNotifications-Platform	16	0	task_016()		wpnplat	task_0	Verbose		
 Microsoft-Windows-PushNotifications-Platform	17	0	task_017()		wpnplat	task_0	Verbose		
 Microsoft-Windows-PushNotifications-Platform	18	0	task_018()		wpnplat	task_0	Verbose		
-Microsoft-Windows-PushNotifications-Platform	19	0	task_019(UnicodeString FileName, UnicodeString FunctionName, Int32 LineNumber, UInt32 ErrorCode)		wpndbg	task_0	Verbose		
+Microsoft-Windows-PushNotifications-Platform	19	0	task_019(UnicodeString FileName, UnicodeString FunctionName, Int32 LineNumber, UInt32 ErrorCode, UnicodeString ErrorMessage)		wpndbg	task_0	Verbose		
 Microsoft-Windows-PushNotifications-Platform	20	0	task_020(UnicodeString FilePath, UInt32 ErrorCode)		wpndbg	task_0	Verbose		
 Microsoft-Windows-PushNotifications-Platform	21	0	ProcessTileUpdateSettingsStart(UInt32 CountInboxApps, UInt32 CountPreinstallApps)	Start	wpnplat	ProcessTileUpdateSettings	Informational		
 Microsoft-Windows-PushNotifications-Platform	22	0	ProcessTileUpdateSettingsStop()	Stop	wpnplat	ProcessTileUpdateSettings	Informational		

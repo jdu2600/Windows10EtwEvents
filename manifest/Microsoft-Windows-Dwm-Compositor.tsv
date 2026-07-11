@@ -1,0 +1,18 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Dwm-Compositor	1	0	WaitForWork_Start()	Start	Frame PresentMon	WaitForWork_Start	Informational		
+Microsoft-Windows-Dwm-Compositor	2	0	WaitForWork_Stop(UInt32 hr, Boolean Batches, Boolean Tokens, Boolean CompositionTimer, Boolean OcclusionEvent)	Stop	Frame PresentMon	WaitForWork_Stop	Informational		
+Microsoft-Windows-Dwm-Compositor	3	0	WaitForVerticalBlank_Start(UInt32 targetVSync, AnsiString targetId)	Start	Frame PresentMon	WaitForVerticalBlank_Start	Informational		
+Microsoft-Windows-Dwm-Compositor	4	0	WaitForVerticalBlank_Stop(Boolean waitFailed, Boolean earlyStart, UInt32 hr, Boolean timedOut, UInt32 timeoutMs)	Stop	Frame PresentMon	WaitForVerticalBlank_Stop	Informational		
+Microsoft-Windows-Dwm-Compositor	5	0	UpdateAnimations_Start()	Start	Frame	UpdateAnimations_Start	Informational		
+Microsoft-Windows-Dwm-Compositor	6	0	UpdateAnimations_Stop(UInt32 updatedAnimationCount)	Stop	Frame	UpdateAnimations_Stop	Informational		
+Microsoft-Windows-Dwm-Compositor	7	0	Present_MPO(UInt8 targetId, UInt32 hr, UInt32 presentedPlaneCount, Boolean desktopPlaneEnabled)		Frame PresentMon	Present_MPO	Informational		
+Microsoft-Windows-Dwm-Compositor	8	0	Present_DFlip(UInt16 targetId, UInt32 hr, UInt64 surfaceLuid, UInt64 bindId, UInt64 realizationIndex, UInt32 presentCount)		Frame PresentMon	Present_DFlip	Informational		
+Microsoft-Windows-Dwm-Compositor	9	0	Present_Legacy(Int8 targetId, UInt32 hr, UInt32 presentFlags)		Frame PresentMon	Present_Legacy	Informational		
+Microsoft-Windows-Dwm-Compositor	10	0	Present_OverlayPlane(UInt64 surfaceLuid, UInt64 bindId, UInt64 realizationIndex, UInt32 presentCount, UInt32 Enabled, UInt32 PlaneIndex, UInt32 Flags, Boolean srcRect, FILETIME dstRect, HexInt64 clipRect, UInt32 Rotation, UInt32 Blend, UInt32 ColorSpace)		Frame PresentMon	Present_OverlayPlane	Informational		
+Microsoft-Windows-Dwm-Compositor	11	0	TargetStats_Ready(Float targetId, Boolean ready, UInt32 outstandingPresents, Boolean forceParallelMode, UInt64 timeSinceLastPresent, UInt64 idealStartTime, UInt64 nextFrameStartTime, UInt64 currentTime, UInt64 timePresented, UInt64 vBlankDuration, UInt64 vBlankTime)		Frame PresentMon	TargetStats_Ready	Informational		
+Microsoft-Windows-Dwm-Compositor	12	0	UpdateExpressions_Start()	Start	Frame	UpdateExpressions_Start	Informational		
+Microsoft-Windows-Dwm-Compositor	13	0	UpdateExpressions_Stop(UInt32 expressionCalculatedCount, UInt32 tracedExpressionsCalculatedCount, UInt32 activeExpressionCount, UInt32 suspendedAnimationsCount)	Stop	Frame	UpdateExpressions_Stop	Informational		
+Microsoft-Windows-Dwm-Compositor	14	0	CleanTrees_Start()	Start	Frame CleanTrees	CleanTrees_Start	Informational		
+Microsoft-Windows-Dwm-Compositor	15	0	CleanTrees_Stop(UInt32 hr, UInt32 dirtyTreeCount, UInt64 treeLockWaitTimeUs, UInt32 desktopDirtyRectCount, Int16 desktopDirtyRects)	Stop	Frame CleanTrees	CleanTrees_Stop	Informational		
+Microsoft-Windows-Dwm-Compositor	16	0	BeginFrame(UInt32 hr, UInt64 frameId, UInt64 targetTime, UInt32 syncRefreshTarget, UInt64 batchSubmissionDeadline)		Frame PresentMon	BeginFrame	Informational		
+Microsoft-Windows-Dwm-Compositor	17	0	ConfirmFrame(UInt32 hr, UInt64 frameId, UInt32 targetCount, UInt8 targetIdAndStats)		Frame PresentMon	ConfirmFrame	Informational		

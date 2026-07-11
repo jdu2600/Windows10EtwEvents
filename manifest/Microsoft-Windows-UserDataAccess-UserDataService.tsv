@@ -1,0 +1,163 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-UserDataAccess-UserDataService	1	0	task_0(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		Error keyword_200000000000	task_0	Error		
+Microsoft-Windows-UserDataAccess-UserDataService	2	0	task_02(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		Warning keyword_400000000000	task_0	Warning		
+Microsoft-Windows-UserDataAccess-UserDataService	3	0	Trace(Pointer Message)		debug	Trace	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	101	0	task_0101(UnicodeString path, Pointer handle)		Warning	task_0	Warning		
+Microsoft-Windows-UserDataAccess-UserDataService	102	0	task_0102(Pointer handle)		UserDataService	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	103	0	task_0103(Pointer handle)		UserDataService	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	104	0	task_0104(GUID AppOwnershipId, GUID StoreAppOwnershipId)		UserDataService	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	105	0	task_0105(Boolean Prop_Boolean_1)		UserDataService	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	106	0	task_0106(UInt32 Prop_UInt_1, UInt32 Prop_UInt_2, UInt32 Prop_UInt_3, UInt32 Prop_UInt_4)		Warning keyword_400000000000	task_0	Warning		
+Microsoft-Windows-UserDataAccess-UserDataService	107	0	task_0107(Int32 P1_HResult)		Warning keyword_400000000000	task_0	Warning		
+Microsoft-Windows-UserDataAccess-UserDataService	108	0	task_0108(Int32 P1_HResult)		Warning keyword_400000000000	task_0	Warning		
+Microsoft-Windows-UserDataAccess-UserDataService	201	0	task_0201(Pointer handle, UInt32 maxnotify)		UserDataService	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	202	0	task_0202(Pointer handle, UInt32 requested, UInt32 returned, UInt32 remaining, Boolean missed)		UserDataService	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	203	0	task_0203(Pointer handle, UInt32 readyCount, Boolean lost)		UserDataService StateTransition	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	204	0	task_0204(Pointer handle, UInt32 type, UInt32 id)		UserDataService StateTransition	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	205	0	task_0205(UInt32 id, FILETIME starttime)		UserDataService StateTransition	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	206	0	task_0206(Pointer handle, UInt32 requested, UInt32 returned, UInt32 remaining, Boolean missed)		UserDataService StateTransition	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	301	0	task_0301(Pointer handle, UInt32 type, UInt32 id)		UserDataService	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	302	0	task_0302(Pointer handle, UInt32 type, UInt32 id)		UserDataService	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	303	0	task_0303(Pointer handle, UInt32 type, UInt32 id)		UserDataService	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	304	0	task_0304(Pointer handle)		UserDataService StateTransition	task_0	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	305	0	task_0305(Pointer handle)		UserDataService StateTransition	task_0	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	308	0	task_0308(UInt32 Prop_UInt_1, UInt32 Prop_UInt_2, UInt32 Prop_UInt_3)		Error UserDataService	task_0	Error		
+Microsoft-Windows-UserDataAccess-UserDataService	400	0	task_0400(Pointer handle)		UserDataService StateTransition	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	401	0	task_0401(Pointer handle)		UserDataService StateTransition	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	402	0	task_0402(UInt32 Prop_UInt_1, UInt32 Prop_UInt_2, UInt32 Prop_UInt_3, UInt32 Prop_UInt_4)		UserDataService CalendarSearch StateTransition	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	403	0	task_0403(UInt64 Prop_ULong, UInt32 Prop_UInt)		UserDataService StateTransition	task_0	Warning		
+Microsoft-Windows-UserDataAccess-UserDataService	404	0	task_0404(UInt64 Prop_ULong)		UserDataService StateTransition keyword_400000000000	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	405	0	task_0405(UInt32 Prop_UInt_1, UInt32 Prop_UInt_2, UInt32 Prop_UInt_3)		UserDataService CalendarSearch	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	406	0	task_0406(UInt32 Prop_UInt_1, UInt32 Prop_UInt_2)		UserDataService CalendarSearch	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	407	0	task_0407(Boolean Prop_Boolean_1, Boolean Prop_Boolean_2)		UserDataService	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	501	0	task_0501(UInt32 Prop_UInt_1, UInt32 Prop_UInt_2, UInt32 Prop_UInt_3, UInt32 Prop_UInt_4)		UserDataService StateTransition	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	502	0	task_0502(UnicodeString remoteId)		UserDataService StateTransition	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	503	0	task_0503(UnicodeString remoteId, UInt32 operationId, UInt32 requestAmnt, UInt32 providedAmnt, UInt32 qualifyingAmnt)		UserDataService StateTransition	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	504	0	task_0504(UnicodeString deepLink)		UserDataService StateTransition	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	505	0	task_0505(UnicodeString deepLink)		UserDataService StateTransition	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	602	0	task_0602()		UserDataService StateTransition	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	700	0	task_0700(Pointer handle)		UserDataService StateTransition	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	701	0	task_0701(Pointer handle)		UserDataService StateTransition	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	702	0	task_0702(UInt32 EventType, UInt32 ItemType)			task_0	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	705	0	task_0705(UInt32 ActivationStatus)		UserDataService StateTransition	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	706	0	task_0706(UInt32 ActivationStatus)		Error	task_0	Error		
+Microsoft-Windows-UserDataAccess-UserDataService	707	0	task_0707(UnicodeString TelString)		UserDataService StateTransition	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	708	0	task_0708(UnicodeString TelString, UInt32 RcsCapabilityBits)		UserDataService StateTransition	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	711	0	task_0711(Pointer handle)		UserDataService StateTransition	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	712	0	task_0712(Pointer handle)		UserDataService StateTransition	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	713	0	task_0713(UnicodeString RcsChatId, Boolean isGroup, UnicodeString TelString, Boolean isComposing)			task_0	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	714	0	task_0714(Pointer handle)		UserDataService StateTransition	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	715	0	task_0715(Pointer handle)		UserDataService StateTransition	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	716	0	task_0716(Pointer handle)		UserDataService StateTransition	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	717	0	task_0717(Pointer handle)		UserDataService StateTransition	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	718	0	task_0718(UInt32 serviceType, Boolean isSupported)			task_0	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	719	0	task_0719(UnicodeString AppPackageFamilyName)		UserDataService	task_0	Warning		
+Microsoft-Windows-UserDataAccess-UserDataService	720	0	task_0720()			task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	721	0	task_0721()			task_0	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	722	0	task_0722()			task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	723	0	task_0723()			task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	724	0	task_0724()			task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	725	0	task_0725()		UserDataService	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	726	0	task_0726()		UserDataService	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	727	0	task_0727()		UserDataService	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	728	0	task_0728()		UserDataService	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	729	0	task_0729()		UserDataService	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	730	0	task_0730()		UserDataService	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	731	0	task_0731()		UserDataService	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	732	0	task_0732()		UserDataService	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	733	0	task_0733()		UserDataService	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	735	0	task_0735(UInt64 Prop_ULong)		UserDataService	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	736	0	task_0736(UInt64 Prop_ULong)		UserDataService	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	737	0	task_0737()		UserDataService	task_0	Warning		
+Microsoft-Windows-UserDataAccess-UserDataService	738	0	task_0738()		UserDataService	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	739	0	task_0739()		UserDataService	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	740	0	task_0740()		UserDataService	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	741	0	task_0741(UInt64 Prop_ULong)		UserDataService	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	742	0	task_0742()		UserDataService	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	743	0	task_0743()		UserDataService	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	744	0	task_0744(UInt32 Prop_UInt_1, UInt32 Prop_UInt_2)		UserDataService	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	745	0	task_0745(Int32 P1_HResult)		UserDataService	task_0	Warning		
+Microsoft-Windows-UserDataAccess-UserDataService	746	0	task_0746(Int32 P1_HResult)		UserDataService	task_0	Warning		
+Microsoft-Windows-UserDataAccess-UserDataService	747	0	task_0747(Int32 P1_HResult)		UserDataService	task_0	Warning		
+Microsoft-Windows-UserDataAccess-UserDataService	748	0	task_0748(Int32 P1_HResult)		UserDataService	task_0	Warning		
+Microsoft-Windows-UserDataAccess-UserDataService	749	0	task_0749(Int32 P1_HResult, UInt64 Prop_ULong)		UserDataService	task_0	Warning		
+Microsoft-Windows-UserDataAccess-UserDataService	750	0	task_0750(Int32 P1_HResult, UInt64 Prop_ULong)		UserDataService	task_0	Warning		
+Microsoft-Windows-UserDataAccess-UserDataService	751	0	task_0751(Int32 P1_HResult)		UserDataService	task_0	Warning		
+Microsoft-Windows-UserDataAccess-UserDataService	752	0	task_0752(UInt64 Prop_ULong)		UserDataService	task_0	Warning		
+Microsoft-Windows-UserDataAccess-UserDataService	753	0	task_0753()		UserDataService StateTransition	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	754	0	task_0754()		UserDataService	task_0	Warning		
+Microsoft-Windows-UserDataAccess-UserDataService	755	0	task_0755()		UserDataService	task_0	Warning		
+Microsoft-Windows-UserDataAccess-UserDataService	756	0	task_0756()		UserDataService	task_0	Warning		
+Microsoft-Windows-UserDataAccess-UserDataService	757	0	task_0757()		UserDataService	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	758	0	task_0758()		UserDataService	task_0	Warning		
+Microsoft-Windows-UserDataAccess-UserDataService	759	0	task_0759(UnicodeString P1_UnicodeString)		UserDataService	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	760	0	task_0760()		UserDataService	task_0	Warning		
+Microsoft-Windows-UserDataAccess-UserDataService	761	0	task_0761()		UserDataService	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	762	0	task_0762(Pointer handle)		UserDataService StateTransition	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	763	0	task_0763(Pointer handle)		UserDataService StateTransition	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	764	0	task_0764()			task_0	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	800	0	task_0800()		UserDataService StateTransition	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	1000	0	Udm_IntializedSecurityInfoStart()	Start	Performance	Udm_IntializedSecurityInfo	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1001	0	Udm_IntializedSecurityInfoStop()	Stop	Performance	Udm_IntializedSecurityInfo	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1002	0	Udm_OpenSessionStart()	Start	Performance	Udm_OpenSession	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1003	0	Udm_OpenSessionStop()	Stop	Performance	Udm_OpenSession	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1004	0	Udm_OpenCallHistorySessionStart()	Start	Performance	Udm_OpenCallHistorySession	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1005	0	Udm_OpenCallHistorySessionStop()	Stop	Performance	Udm_OpenCallHistorySession	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1100	0	Calendar_UpdateCalendarObjectsStart()	Start	Performance	Calendar_UpdateCalendarObjects	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1101	0	Calendar_UpdateCalendarObjectsStop()	Stop	Performance	Calendar_UpdateCalendarObjects	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1104	0	Calendar_GetConflictInfoStart()	Start	Performance	Calendar_GetConflictInfo	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1105	0	Calendar_GetConflictInfoStop()	Stop	Performance	Calendar_GetConflictInfo	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1106	0	Calendar_RespondMeetingRequestStart()	Start	Performance	Calendar_RespondMeetingRequest	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1107	0	Calendar_RespondMeetingRequestStop()	Stop	Performance	Calendar_RespondMeetingRequest	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1108	0	Calendar_ProposeNewTimeStart()	Start	Performance	Calendar_ProposeNewTime	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1109	0	Calendar_ProposeNewTimeStop()	Stop	Performance	Calendar_ProposeNewTime	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1110	0	Calendar_CreateForwardMessageStart()	Start	Performance	Calendar_CreateForwardMessage	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1111	0	Calendar_CreateForwardMessageStop()	Stop	Performance	Calendar_CreateForwardMessage	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1112	0	Calendar_GetChangedAppointmentsSinceStart()	Start	Performance	Calendar_GetChangedAppointmentsSince	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1113	0	Calendar_GetChangedAppointmentsSinceStop()	Stop	Performance	Calendar_GetChangedAppointmentsSince	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1114	0	Calendar_GetCalendarStoreEnumStart()	Start	Performance	Calendar_GetCalendarStoreEnum	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1115	0	Calendar_GetCalendarStoreEnumStop()	Stop	Performance	Calendar_GetCalendarStoreEnum	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1116	0	Calendar_GetCalendarEnumStart()	Start	Performance	Calendar_GetCalendarEnum	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1117	0	Calendar_GetCalendarEnumStop()	Stop	Performance	Calendar_GetCalendarEnum	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1118	0	Calendar_GetAppointmentEnumStart()	Start	Performance	Calendar_GetAppointmentEnum	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1119	0	Calendar_GetAppointmentEnumStop()	Stop	Performance	Calendar_GetAppointmentEnum	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1120	0	Calendar_EnumMultiDayStart()	Start	Performance	Calendar_EnumMultiDay	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1121	0	Calendar_EnumMultiDayStop()	Stop	Performance	Calendar_EnumMultiDay	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1122	0	Calendar_EnumSingleInstanceStart()	Start	Performance	Calendar_EnumSingleInstance	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1123	0	Calendar_EnumSingleInstanceStop()	Stop	Performance	Calendar_EnumSingleInstance	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1124	0	Calendar_EnumRecurringStart()	Start	Performance	Calendar_EnumRecurring	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1125	0	Calendar_EnumRecurringStop()	Stop	Performance	Calendar_EnumRecurring	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1126	0	Calendar_Search_OpenStart()	Start	Performance	Calendar_Search_Open	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1127	0	Calendar_Search_OpenStop()	Stop	Performance	Calendar_Search_Open	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1128	0	Calendar_Search_FetchStart()	Start	Performance	Calendar_Search_Fetch	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1129	0	Calendar_Search_FetchStop()	Stop	Performance	Calendar_Search_Fetch	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1200	0	Meeting_CreateOrModifyAppointmentStart()	Start	Performance	Meeting_CreateOrModifyAppointment	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1201	0	Meeting_CreateOrModifyAppointmentStop()	Stop	Performance	Meeting_CreateOrModifyAppointment	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1202	0	Meeting_GetStreamPropertyStart()	Start	Performance	Meeting_GetStreamProperty	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1203	0	Meeting_GetStreamPropertyStop()	Stop	Performance	Meeting_GetStreamProperty	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1204	0	task_01204(AnsiString AppName, AnsiString AccessedString)		APICall	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	1205	0	task_01205(AnsiString AppName, AnsiString AccessedString)		APICall	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	1206	0	Chat_GetChatConversationPropertiesStart()	Start	Performance	Chat_GetChatConversationProperties	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1207	0	Chat_GetChatConversationPropertiesStop()	Stop	Performance	Chat_GetChatConversationProperties	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1208	0	Chat_GetMessageAttachmentsStart()	Start	Performance	Chat_GetMessageAttachments	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1209	0	Chat_GetMessageAttachmentsStop()	Stop	Performance	Chat_GetMessageAttachments	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1210	0	Chat_GetMessageParticipantsStart()	Start	Performance	Chat_GetMessageParticipants	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1211	0	Chat_GetMessageParticipantsStop()	Stop	Performance	Chat_GetMessageParticipants	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1212	0	Chat_ChatOperationContext_GetMessagePropertiesStart()	Start	Performance	Chat_ChatOperationContext_GetMessageProperties	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1213	0	Chat_ChatOperationContext_GetMessagePropertiesStop()	Stop	Performance	Chat_ChatOperationContext_GetMessageProperties	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1214	0	Chat_ChatOperationContext_ModifyConversationItemStart()	Start	Performance	Chat_ChatOperationContext_ModifyConversationItem	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1215	0	Chat_ChatOperationContext_ModifyConversationItemStop()	Stop	Performance	Chat_ChatOperationContext_ModifyConversationItem	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1216	0	Chat_ChatOperationContext_ModifyItemStart()	Start	Performance	Chat_ChatOperationContext_ModifyItem	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1217	0	Chat_ChatOperationContext_ModifyItemStop()	Stop	Performance	Chat_ChatOperationContext_ModifyItem	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1218	0	User_DataModel_ServiceStart()	Start	Performance	User_DataModel_Service	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1219	0	User_DataModel_ServiceStop()	Stop	Performance	User_DataModel_Service	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1220	0	Chat_DataModel_ServiceStart()	Start	Performance	Chat_DataModel_Service	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	1221	0	Chat_DataModel_ServiceStop()	Stop	Performance	Chat_DataModel_Service	Verbose		
+Microsoft-Windows-UserDataAccess-UserDataService	2001	0	task_02001(Boolean Prop_Boolean_1, Boolean Prop_Boolean_2)		StaleDataCleanup keyword_400000000000	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	2002	0	task_02002()		StaleDataCleanup	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	2003	0	task_02003(UInt32 Prop_UInt_1, UInt32 Prop_UInt_2, UInt32 Prop_UInt_3, UInt32 Prop_UInt_4, UInt32 Prop_UInt_5)		StaleDataCleanup	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	2004	0	task_02004(UInt32 Prop_Prop)		StaleDataCleanup	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	2005	0	task_02005(UInt32 Prop_UInt_1, UInt32 Prop_UInt_2, UInt32 Prop_UInt_3, UInt32 Prop_UInt_4, UInt32 Prop_UInt_5)		StaleDataCleanup	task_0	Informational		
+Microsoft-Windows-UserDataAccess-UserDataService	2006	0	task_02006(UnicodeString AppId, UInt32 AppDataCleanupReason)		Error keyword_400000000000	task_0	Error		
+Microsoft-Windows-UserDataAccess-UserDataService	2007	0	task_02007(UnicodeString AppId, UInt32 AppDataCleanupReason)		Error keyword_400000000000	task_0	Error		
+Microsoft-Windows-UserDataAccess-UserDataService	2008	0	task_02008(UnicodeString P1_UnicodeString)		Error keyword_400000000000	task_0	Error		

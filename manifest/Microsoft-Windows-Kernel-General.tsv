@@ -3,6 +3,7 @@ Microsoft-Windows-Kernel-General	1	0	task_0(FILETIME NewTime, FILETIME OldTime)	
 Microsoft-Windows-Kernel-General	1	1	SystemTimeChange_V1(FILETIME NewTime, FILETIME OldTime, UInt32 Reason)		KERNEL_GENERAL_KEYWORD_TIME	SystemTimeChange	Informational		
 Microsoft-Windows-Kernel-General	1	2	SystemTimeChange_V2(FILETIME NewTime, FILETIME OldTime, UInt32 Reason, UnicodeString ProcessName, UInt32 ProcessID)		KERNEL_GENERAL_KEYWORD_TIME	SystemTimeChange	Informational		
 Microsoft-Windows-Kernel-General	1	3	SystemTimeChange_V3(FILETIME NewTime, FILETIME OldTime, UInt32 Reason, UnicodeString ProcessName, UInt32 ProcessID, FILETIME CmosTime, Int32 TimeZoneBias, Boolean RealTimeIsUniversal, Boolean SystemInCmosMode)		KERNEL_GENERAL_KEYWORD_TIME	SystemTimeChange	Informational		
+Microsoft-Windows-Kernel-General	1	4	SystemTimeChange_V4(FILETIME NewTime, FILETIME OldTime, Int64 TimeDeltaInMs, UInt32 Reason, UnicodeString ProcessName, UInt32 ProcessID, FILETIME CmosTime, Int32 TimeZoneBias, Boolean RealTimeIsUniversal, Boolean SystemInCmosMode)		KERNEL_GENERAL_KEYWORD_TIME	SystemTimeChange	Informational		
 Microsoft-Windows-Kernel-General	2	0	task_02()			task_0	Informational		
 Microsoft-Windows-Kernel-General	3	0	task_03()			task_0	Informational		
 Microsoft-Windows-Kernel-General	4	0	task_04()			task_0	Informational		
@@ -25,4 +26,5 @@ Microsoft-Windows-Kernel-General	20	0	LeapSecondDataUpdate(UInt32 UpdateReason, 
 Microsoft-Windows-Kernel-General	21	0	LeapSecondDataParseFailure(UInt32 FailureResult)		KERNEL_GENERAL_KEYWORD_TIME	LeapSecondDataParseFailure	Warning		
 Microsoft-Windows-Kernel-General	22	0	TimeZoneBiasChange(Int32 NewBias, Int32 OldBias)		KERNEL_GENERAL_KEYWORD_TIME	TimeZoneBiasChange	Informational		
 Microsoft-Windows-Kernel-General	23	0	VsmPerformanceData(UInt64 VsmCleanupTime, UInt64 Mark0, UInt64 Mark1, UInt64 Mark2, UInt64 Mark3, UInt64 Mark4, UInt64 Mark5, UInt64 Mark6, UInt64 Mark7)		BootPerformance	VsmPerformanceData	Informational		
+Microsoft-Windows-Kernel-General	23	1	VsmPerformanceData_V1(UInt64 VsmCleanupTime, UInt64 Mark0, UInt64 Mark1, UInt64 Mark2, UInt64 Mark3, UInt64 Mark4, UInt64 Mark5, UInt64 Mark6, UInt64 Mark7, UInt64 VsmCleanupTimeFrequency)		BootPerformance	VsmPerformanceData	Informational		
 Microsoft-Windows-Kernel-General	24	0	TimeZoneInformationRefresh(UInt32 ExitReason, Int32 CurrentBias, UInt32 CurrentTimeZoneID, UInt8 TimeZoneInfoCacheUpdated, UInt8 FirstRefresh)		KERNEL_GENERAL_KEYWORD_TIME	TimeZoneInformationRefresh	Informational		

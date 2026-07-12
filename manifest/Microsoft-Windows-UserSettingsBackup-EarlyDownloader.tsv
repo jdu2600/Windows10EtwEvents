@@ -1,0 +1,13 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-UserSettingsBackup-EarlyDownloader	1	0	task_0(UInt32 Type, UInt32 ErrorCode, UnicodeString Message, AnsiString File, UInt32 LineNumber)			task_0	Error		
+Microsoft-Windows-UserSettingsBackup-EarlyDownloader	2	0	task_02(UnicodeString Message, AnsiString File, UInt32 LineNumber)			task_0	Warning		
+Microsoft-Windows-UserSettingsBackup-EarlyDownloader	3	0	task_03(UnicodeString Message, AnsiString File, UInt32 LineNumber)			task_0	Informational		
+Microsoft-Windows-UserSettingsBackup-EarlyDownloader	4	0	task_04(AnsiString ContextTag, Int32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-UserSettingsBackup-EarlyDownloader	5	0	task_05()			task_0	Informational		
+Microsoft-Windows-UserSettingsBackup-EarlyDownloader	6	0	task_06(AnsiString OverallResult)			task_0	Informational		
+Microsoft-Windows-UserSettingsBackup-EarlyDownloader	7	0	task_07(UnicodeString DownloadUnitIdTypeName, UnicodeString DownloadUnitIdCollectionName, Boolean DownloadUnitIdIsPerDevice, AnsiString CorrelationVector, UnicodeString DownloadRequestUri)			task_0	Informational		
+Microsoft-Windows-UserSettingsBackup-EarlyDownloader	8	0	task_08(UnicodeString DownloadAssetIdName, UnicodeString DownloadAssetUriName, AnsiString CorrelationVector, UnicodeString DownloadRequestUri)			task_0	Informational		
+Microsoft-Windows-UserSettingsBackup-EarlyDownloader	15	0	task_015(UnicodeString Uri, AnsiString CorrelationVector, UInt32 Size, UnicodeString Response)			task_0	Warning		
+Microsoft-Windows-UserSettingsBackup-EarlyDownloader	105	0	task_0105(UnicodeString ActivityId, UnicodeString FilePath, UInt64 Version, UInt64 Size)			task_0	Informational		
+Microsoft-Windows-UserSettingsBackup-EarlyDownloader	107	0	task_0107(UnicodeString DownloadAssetIdName, UnicodeString DownloadAssetUriName, UnicodeString FilePath, UInt32 Size)			task_0	Informational		
+Microsoft-Windows-UserSettingsBackup-EarlyDownloader	109	0	task_0109(UnicodeString Uri, AnsiString CorrelationVector, UnicodeString Response, Int32 ErrorCode)			task_0	Warning		

@@ -102,26 +102,32 @@ Microsoft-Windows-SENSE	107	0	task_0107(UInt64 UInt2)			task_0	Error
 Microsoft-Windows-SENSE	108	0	task_0108(Int32 phase, UnicodeString newVersion, UnicodeString message)			task_0	Informational		
 Microsoft-Windows-SENSE	109	0	task_0109(Int32 phase, UnicodeString newVersion, UnicodeString message, HexInt32 HRESULT)			task_0	Error		
 Microsoft-Windows-SENSE	110	0	task_0110()			task_0	Warning		
-Microsoft-Windows-SENSE	300	0	task_0300()			task_0	Informational		
-Microsoft-Windows-SENSE	301	0	task_0301()			task_0	Informational		
-Microsoft-Windows-SENSE	302	0	task_0302(UnicodeString parameter)			task_0	Informational		
-Microsoft-Windows-SENSE	303	0	task_0303(UnicodeString Message1, HexInt32 HRESULT)			task_0	Error		
-Microsoft-Windows-SENSE	304	0	task_0304(UInt32 UInt1, UnicodeString Message1)			task_0	Informational		
-Microsoft-Windows-SENSE	305	0	task_0305(UInt32 UInt1)			task_0	Informational		
-Microsoft-Windows-SENSE	306	0	task_0306(UInt32 UInt1, UnicodeString Message1)			task_0	Informational		
+Microsoft-Windows-SENSE	111	0	task_0111(HexInt32 HRESULT)			task_0	Warning		
+Microsoft-Windows-SENSE	112	0	task_0112(HexInt32 HRESULT)			task_0	Error		
+Microsoft-Windows-SENSE	113	0	task_0113()			task_0	Informational		
+Microsoft-Windows-SENSE	114	0	task_0114()			task_0	Error		
+Microsoft-Windows-SENSE	115	0	task_0115()			task_0	Informational		
+Microsoft-Windows-SENSE	116	0	task_0116()			task_0	Error		
+Microsoft-Windows-SENSE	117	0	task_0117(UnicodeString Message1, HexInt32 HRESULT)			task_0	Error		
 Microsoft-Windows-SENSE	307	0	task_0307(HexInt32 HRESULT)			task_0	Error		
 Microsoft-Windows-SENSE	308	0	task_0308(UnicodeString Message1, HexInt32 HRESULT)			task_0	Error		
+Microsoft-Windows-SENSE	309	0	task_0309(UInt32 UInt1, UnicodeString Message1)			task_0	Error		
 Microsoft-Windows-SENSE	400	0	task_0400(HexInt32 HRESULT)			task_0	Error		
 Microsoft-Windows-SENSE	401	0	task_0401(HexInt32 HRESULT)			task_0	Error		
 Microsoft-Windows-SENSE	402	0	task_0402(HexInt32 HRESULT)			task_0	Error		
 Microsoft-Windows-SENSE	403	0	task_0403()			task_0	Informational		
 Microsoft-Windows-SENSE	404	0	task_0404()			task_0	Informational		
-Microsoft-Windows-SENSE	405	0	task_0405(UnicodeString requestType, HexInt32 HRESULT, Int32 errorCode)			task_0	Informational		
-Microsoft-Windows-SENSE	406	0	task_0406(UnicodeString requestType, HexInt32 HRESULT, Int32 errorCode)			task_0	Informational		
-Microsoft-Windows-SENSE	407	0	task_0407(HexInt32 HRESULT)			task_0	Informational		
+Microsoft-Windows-SENSE	405	0	task_0405(UnicodeString requestType, HexInt32 HRESULT, Int32 errorCode)			task_0	Error		
+Microsoft-Windows-SENSE	406	0	task_0406(UnicodeString requestType, HexInt32 HRESULT, Int32 errorCode)			task_0	Error		
+Microsoft-Windows-SENSE	407	0	task_0407(HexInt32 HRESULT)			task_0	Error		
 Microsoft-Windows-SENSE	408	0	task_0408(UnicodeString Message1, HexInt32 HRESULT)			task_0	Error		
 Microsoft-Windows-SENSE	409	0	task_0409(HexInt32 HRESULT)			task_0	Error		
 Microsoft-Windows-SENSE	410	0	task_0410()			task_0	Informational		
+Microsoft-Windows-SENSE	411	0	task_0411()			task_0	Informational		
+Microsoft-Windows-SENSE	412	0	task_0412()			task_0	Informational		
+Microsoft-Windows-SENSE	414	0	task_0414()			task_0	Informational		
+Microsoft-Windows-SENSE	500	0	task_0500(UInt32 UInt1, UnicodeString Message1, HexInt32 HRESULT)			task_0	Error		
+Microsoft-Windows-SENSE	501	0	task_0501(UInt32 UInt1, UnicodeString Message1)			task_0	Informational		
 Microsoft-Windows-SENSE	1800	0	task_01800(UInt32 UInt1, UnicodeString Message1)			task_0	Verbose		
 Microsoft-Windows-SENSE	1801	0	task_01801(UInt32 UInt1, UnicodeString Message1, HexInt32 HRESULT)			task_0	Error		
 Microsoft-Windows-SENSE	1802	0	task_01802(UInt32 UInt1, UnicodeString Message1, HexInt32 HRESULT)			task_0	Informational		
@@ -163,3 +169,6 @@ Microsoft-Windows-SENSE	1837	0	task_01837(UnicodeString previousCriticalityValue
 Microsoft-Windows-SENSE	1838	0	task_01838(UInt32 requestedValue, UInt32 minimumAllowedValue, UInt32 maximumAllowedValue)			task_0	Error		
 Microsoft-Windows-SENSE	1839	0	task_01839(UnicodeString previousIdMethodValue, Boolean IsDefault, UInt32 newIdMethodValue, HexInt32 HRESULT)			task_0	Verbose		
 Microsoft-Windows-SENSE	1840	0	task_01840(UInt32 requestedValue, UInt32 minimumAllowedValue, UInt32 maximumAllowedValue)			task_0	Error		
+Microsoft-Windows-SENSE	1841	0	task_01841(UnicodeString Message1, Boolean Boolean1)			task_0	Verbose		
+Microsoft-Windows-SENSE	1842	0	task_01842(UnicodeString Message1, HexInt32 HRESULT)			task_0	Verbose		
+Microsoft-Windows-SENSE	1843	0	task_01843(UInt32 UInt1, UInt32 UInt2)			task_0	Error		

@@ -252,3 +252,7 @@ Microsoft-Windows-Kernel-Boot	264	0	LoadEarlyDumpSupportQueryEarlyDumpInitFailur
 Microsoft-Windows-Kernel-Boot	265	0	LoadEarlyDumpSupportQueryDumpFileNameFailure(UInt32 Status)	QueryDumpFileNameFailure		LoadEarlyDumpSupport	Warning		
 Microsoft-Windows-Kernel-Boot	266	0	LoadEarlyDumpSupportDumpFileNameMismatch(UnicodeString HostDumpFileName, UnicodeString TargetDumpFileName)	DumpFileNameMismatch		LoadEarlyDumpSupport	Warning		
 Microsoft-Windows-Kernel-Boot	267	0	LoadEarlyDumpSupportGetDriverListFailure(UInt32 Status)	GetDriverListFailure		LoadEarlyDumpSupport	Error		
+Microsoft-Windows-Kernel-Boot	273	0	SecureBootMitigations(UInt32 BcdOption)			SecureBootMitigations	Warning		
+Microsoft-Windows-Kernel-Boot	274	0	BootSIBootmgrSvnCheck(UInt32 SvnValue, UInt32 PrevSvnValue)	BootmgrSvnCheck	keyword_80000000000	BootSI	Error		
+Microsoft-Windows-Kernel-Boot	276	0	SecureBootMitigations276(HexInt64 Version)			SecureBootMitigations	Informational		
+Microsoft-Windows-Kernel-Boot	277	0	SecureBootMitigations277(HexInt64 Version)			SecureBootMitigations	Informational		

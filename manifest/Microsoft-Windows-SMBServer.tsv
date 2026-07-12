@@ -132,6 +132,7 @@ Microsoft-Windows-SMBServer	1048	0	task_01048(UInt16 Smb2Command, UInt64 Acquire
 Microsoft-Windows-SMBServer	1049	0	task_01049(UInt16 CertSubjectNameLength, UnicodeString CertSubjectName, UInt16 CertThumbprintLength, UnicodeString CertThumbprint, FILETIME Expiring)		Operational	task_0	Error		
 Microsoft-Windows-SMBServer	1050	0	task_01050(UInt32 InterfaceID, UInt32 NumberOfEndpointsFound, UInt32 NumberOfEndpointsClosed)		Nsi	task_0	Informational		
 Microsoft-Windows-SMBServer	1051	0	task_01051(UInt32 ClientCipherSuiteOrderLength, UnicodeString ClientCipherSuiteOrder, UInt32 ServerCipherSuiteOrderLength, UnicodeString ServerCipherSuiteOrder)		Operational	task_0	Error		
+Microsoft-Windows-SMBServer	1051	2	task_01051_V2(UInt32 ClientCipherSuiteOrderLength, UnicodeString ClientCipherSuiteOrder, UInt32 ServerCipherSuiteOrderLength, UnicodeString ServerCipherSuiteOrder, UInt16 ClientCipherCount, UInt16 LoggedClientCipherCount, UInt16 ClientCipherOrder)		Operational	task_0	Error		
 Microsoft-Windows-SMBServer	1800	0	SSClusterCaFailure(UInt16 ServerNameLength, UnicodeString ServerName, UInt16 ShareNameLength, UnicodeString ShareName)		Operational	SSClusterCaFailure	Error		
 Microsoft-Windows-SMBServer	1801	0	SSRkfCaFailure(UInt16 ServerNameLength, UnicodeString ServerName, UInt16 ShareNameLength, UnicodeString ShareName, UInt32 Status)		Operational	SSRkfCaFailure	Error		
 Microsoft-Windows-SMBServer	1802	0	SrvNetGetNextIdFailure(UInt32 Status)		Operational	SrvNetGetNextIdFailure	Error		

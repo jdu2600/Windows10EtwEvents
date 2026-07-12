@@ -183,7 +183,7 @@ Microsoft-Windows-MediaEngine	287	0	FrameNotPresentedTask(Pointer object, Int64 
 Microsoft-Windows-MediaEngine	288	0	PresentedContentPresentationHandlerTask(Pointer Object, Pointer ResourceManagerObject)			PresentedContentPresentationHandlerTask	Verbose		
 Microsoft-Windows-MediaEngine	289	0	PresentedContentPresentationHandler_ResourcesAllocatedTask(Pointer object, UInt32 Format, UInt32 Width, UInt32 Height, UInt32 bufferCount, UInt32 MiscFlags)			PresentedContentPresentationHandler_ResourcesAllocatedTask	Verbose		
 Microsoft-Windows-MediaEngine	290	0	PresentedContentPresentationHandler_BindTask(Pointer object, UInt32 bufferCount, UInt32 Format, UInt32 colorSpaceType, UInt32 isHWProtected, UInt32 width, UInt32 height)			PresentedContentPresentationHandler_BindTask	Verbose		
-Microsoft-Windows-MediaEngine	291	2	PresentedContentPresentationHandler_PresentSubmittedTask_V2(Pointer object, Int64 presentId, Int64 sampleTime, Int64 targetTime, Int64 timeRemainingInQueue, Int64 submittedAhead_us, Int64 nowvsQPCus, Int64 QueuedFrames)			PresentedContentPresentationHandler_PresentSubmittedTask	Verbose		
+Microsoft-Windows-MediaEngine	291	3	PresentedContentPresentationHandler_PresentSubmittedTask_V3(Pointer object, Int64 presentId, Int64 sampleTime, Int64 targetTime, Int64 timeRemainingInQueue, Int64 submittedAhead_us, Int64 nowvsQPCus, Int64 QueuedFrames, Boolean IsDirectPresentation)			PresentedContentPresentationHandler_PresentSubmittedTask	Verbose		
 Microsoft-Windows-MediaEngine	292	0	SplitMultiBufferTask(Pointer object, UInt32 dwOldIndex, UInt32 dwNewIndex, Boolean Changed)			SplitMultiBufferTask	Verbose		
 Microsoft-Windows-MediaEngine	293	0	RemoveEntireChunkTask(Pointer object, UInt32 dwEndIndex, Boolean fRemoveEntireChunk)			RemoveEntireChunkTask	Verbose		
 Microsoft-Windows-MediaEngine	294	0	DisplayUniquenessChange(Pointer object, UInt64 Old, UInt64 New, Boolean RealDisplayChange)			DisplayUniquenessChange	Verbose		
@@ -225,7 +225,7 @@ Microsoft-Windows-MediaEngine	334	1	MediaFoundationPresentedContentRegisterWakeF
 Microsoft-Windows-MediaEngine	335	0	MediaFoundationPresentedContentRegisterWakeFenceStop(Pointer object)	Stop		MediaFoundationPresentedContentRegisterWakeFence	Verbose		
 Microsoft-Windows-MediaEngine	336	0	PresentedContentPresentationHandler_InitializeQueueingModeTask(Pointer object, Int32 QueueingMode, Int64 LWM, Int64 HWM, Boolean LwmOverride, Int32 SteadyStateQueueingMode)			PresentedContentPresentationHandler_InitializeQueueingModeTask	Verbose		
 Microsoft-Windows-MediaEngine	350	1	MediaFoundationTriggeredGlitchTelemetryTrackerStart_V1(Pointer object, Int32 MainEventType)	Start	DiagTrack	MediaFoundationTriggeredGlitchTelemetryTracker	Verbose		
-Microsoft-Windows-MediaEngine	351	1	MediaFoundationTriggeredGlitchTelemetryTrackerStop_V1(Pointer object, Int32 MainEventType, Int64 Duration)	Stop	Telemetry	MediaFoundationTriggeredGlitchTelemetryTracker	Verbose		
+Microsoft-Windows-MediaEngine	351	2	MediaFoundationTriggeredGlitchTelemetryTrackerStop_V2(Pointer object, Int32 MainEventType, Int64 Duration, Int32 GlitchCount, Int32 DisplayGlitchCount, Int32 SeenEventTypes)	Stop	Telemetry	MediaFoundationTriggeredGlitchTelemetryTracker	Verbose		
 Microsoft-Windows-MediaEngine	360	1	MediaFoundationTrackLeakedStats_V1(Pointer object, Int32 Count)		DiagTrack	MediaFoundationTrackLeakedStats	Verbose		
 Microsoft-Windows-MediaEngine	361	0	IsEdrEnabledCheckStart(Pointer Object)	Start		IsEdrEnabledCheck	Verbose		
 Microsoft-Windows-MediaEngine	362	0	IsEdrEnabledCheckStop(Pointer Object)	Stop		IsEdrEnabledCheck	Verbose		
@@ -235,3 +235,12 @@ Microsoft-Windows-MediaEngine	365	0	HandleClockStart(Pointer Object)	Start		Hand
 Microsoft-Windows-MediaEngine	366	0	HandleClockStartStop(Pointer Object)	Stop		HandleClockStart	Verbose		
 Microsoft-Windows-MediaEngine	367	0	HandlePrerollStart(Pointer Object)	Start		HandlePreroll	Verbose		
 Microsoft-Windows-MediaEngine	368	0	HandlePrerollStop(Pointer Object)	Stop		HandlePreroll	Verbose		
+Microsoft-Windows-MediaEngine	369	0	MediaFoundationPlaybackStallDetectedTask(Pointer object)		Telemetry	MediaFoundationPlaybackStallDetectedTask	Verbose		
+Microsoft-Windows-MediaEngine	370	0	MediaFoundationPlaybackStallDetectionTaskStart(Pointer object)	Start		MediaFoundationPlaybackStallDetectionTask	Verbose		
+Microsoft-Windows-MediaEngine	371	0	MediaFoundationPlaybackStallDetectionTaskStop(Pointer object)	Stop		MediaFoundationPlaybackStallDetectionTask	Verbose		
+Microsoft-Windows-MediaEngine	378	0	MediaFoundationNotVisibleStart(Pointer object)	Start		MediaFoundationNotVisible	Verbose		
+Microsoft-Windows-MediaEngine	379	0	MediaFoundationNotVisibleStop(Pointer object)	Stop		MediaFoundationNotVisible	Verbose		
+Microsoft-Windows-MediaEngine	380	0	PresentedContentPresentationHandler_FakePresentSubmittedTask(Pointer object, Int64 targetQPC, Int64 deltaToTarget, Int64 HWM, Int64 LWM)			PresentedContentPresentationHandler_FakePresentSubmittedTask	Verbose		
+Microsoft-Windows-MediaEngine	381	0	MediaFoundationFrameRateDetection(Pointer object)			MediaFoundationFrameRateDetection	Verbose		
+Microsoft-Windows-MediaEngine	382	0	MediaFoundationFrameRateDetectionStart(Pointer object)	Start		MediaFoundationFrameRateDetection	Verbose		
+Microsoft-Windows-MediaEngine	383	0	MediaFoundationFrameRateDetectionStop(Pointer object)	Stop		MediaFoundationFrameRateDetection	Verbose		

@@ -87,6 +87,15 @@ Microsoft-Windows-WebAuthN	2325	0	CtapNfcSwitchToU2FInformational(GUID Transacti
 Microsoft-Windows-WebAuthN	2326	0	CtapNfcSendMessageInformational2326(GUID TransactionId, AnsiString Action, UnicodeString Reader)	Informational	Ctap Nfc	CtapNfcSendMessage	Informational		
 Microsoft-Windows-WebAuthN	2327	0	CtapNfcSCardTransmitRequestInformational(GUID TransactionId, UnicodeString Reader, UInt32 RequestLength, Binary Request, UInt32 ResponseLength, Binary Response, UInt16 ApduStatus)	Informational	Ctap Nfc	CtapNfcSCardTransmitRequest	Verbose		
 Microsoft-Windows-WebAuthN	2328	0	CtapNfcSCardTransmitRequestInformational2328(GUID TransactionId, UnicodeString Reader, UInt32 RequestLength, Binary Request, UInt32 ResponseLength, Binary Response, UInt16 ApduStatus, HexInt32 Error, HexInt32 Win32Error)	Informational	Ctap Nfc	CtapNfcSCardTransmitRequest	Error		
+Microsoft-Windows-WebAuthN	2329	0	CtapHybridProcessCtapCommandRequestCallbackStart(GUID TransactionId)	Start	Ctap Hybrid	CtapHybridProcessCtapCommandRequestCallback	Informational		
+Microsoft-Windows-WebAuthN	2330	0	CtapHybridProcessCtapCommandRequestCallbackStop(GUID TransactionId)	Stop	Ctap Hybrid	CtapHybridProcessCtapCommandRequestCallback			
+Microsoft-Windows-WebAuthN	2331	0	CtapHybridProcessCtapCommandRequestCallbackStop2331(GUID TransactionId, HexInt32 Error, Int32 HResult)	Stop	Ctap Hybrid	CtapHybridProcessCtapCommandRequestCallback	Error		
+Microsoft-Windows-WebAuthN	2332	0	CtapHybridWriteMessageInformational(UInt32 MessageLength, Binary Message)	Informational	Ctap Hybrid	CtapHybridWriteMessage	Verbose		
+Microsoft-Windows-WebAuthN	2333	0	CtapHybridReadMessageInformational(UInt32 MessageLength, Binary Message)	Informational	Ctap Hybrid	CtapHybridReadMessage	Verbose		
+Microsoft-Windows-WebAuthN	2334	0	CtapHybridProtocolSetupStart(GUID TransactionId)	Start	Ctap Hybrid	CtapHybridProtocolSetup	Informational		
+Microsoft-Windows-WebAuthN	2335	0	CtapHybridProtocolSetupStop(GUID TransactionId, AnsiString Action, HexInt32 Error, Int32 HResult)	Stop	Ctap Hybrid	CtapHybridProtocolSetup			
+Microsoft-Windows-WebAuthN	2336	0	CtapHybridProtocolSetupStop2336(GUID TransactionId, AnsiString Action, HexInt32 Error, Int32 HResult)	Stop	Ctap Hybrid	CtapHybridProtocolSetup	Error		
+Microsoft-Windows-WebAuthN	2337	0	CtapHybridLinkedDeviceSavedInformational(Boolean value, HexInt32 Error, Int32 HResult)	Informational	Ctap Hybrid	CtapHybridLinkedDeviceSaved	Informational		
 Microsoft-Windows-WebAuthN	2400	0	CtapTestProviderThreadStart(GUID TransactionId)	Start	Ctap Test	CtapTestProviderThread	Informational		
 Microsoft-Windows-WebAuthN	2401	0	CtapTestProviderThreadStop(GUID TransactionId)	Stop	Ctap Test	CtapTestProviderThread			
 Microsoft-Windows-WebAuthN	2402	0	CtapTestProviderThreadStop2402(GUID TransactionId, HexInt32 Error, HexInt32 Win32Error)	Stop	Ctap Test	CtapTestProviderThread	Error		

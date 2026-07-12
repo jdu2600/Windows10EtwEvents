@@ -16,6 +16,7 @@ Microsoft-Windows-Eventlog	100	0	Eventprocessing(UInt32 ErrorCode, UInt16 EventI
 Microsoft-Windows-Eventlog	102	0	Eventprocessing102(UInt32 ErrorCode, UInt16 EventID, UnicodeString PublisherName, GUID PublisherGuid, UInt32 ProcessID)		el:Availability	Eventprocessing	Error		
 Microsoft-Windows-Eventlog	103	0	Eventprocessing103(UInt8 Reason, UnicodeString SessionName)			Eventprocessing	Error		
 Microsoft-Windows-Eventlog	104	0	Logclear(UnicodeString SubjectUserName, UnicodeString SubjectDomainName, UnicodeString Channel, UnicodeString BackupPath)			Logclear	Informational		
+Microsoft-Windows-Eventlog	104	1	Logclear_V1(UnicodeString SubjectUserName, UnicodeString SubjectDomainName, UnicodeString Channel, UnicodeString BackupPath, UInt32 ClientProcessId, UInt64 ClientProcessStartKey)			Logclear	Informational		
 Microsoft-Windows-Eventlog	105	0	Logautomaticbackup(UnicodeString Channel, UnicodeString BackupPath)			Logautomaticbackup	Informational		
 Microsoft-Windows-Eventlog	106	0	task_0106(UnicodeString Channel)		el:Availability	task_0	Error		
 Microsoft-Windows-Eventlog	107	0	task_0107(UInt32 ErrorCode, UnicodeString ProviderName, GUID PublisherGuid)			task_0	Error		
@@ -34,6 +35,7 @@ Microsoft-Windows-Eventlog	205	2	ServiceUsageAudit205_V2(UInt8 ModuleNameLen, An
 Microsoft-Windows-Eventlog	1100	0	Serviceshutdown()			Serviceshutdown	Informational		
 Microsoft-Windows-Eventlog	1101	0	Eventprocessing1101(UInt8 Reason)			Eventprocessing	Error		
 Microsoft-Windows-Eventlog	1102	0	Logclear1102(SID SubjectUserSid, UnicodeString SubjectUserName, UnicodeString SubjectDomainName, HexInt64 SubjectLogonId)			Logclear	Informational		
+Microsoft-Windows-Eventlog	1102	1	Logclear1102_V1(SID SubjectUserSid, UnicodeString SubjectUserName, UnicodeString SubjectDomainName, HexInt64 SubjectLogonId, UInt32 ClientProcessId, UInt64 ClientProcessStartKey)			Logclear	Informational		
 Microsoft-Windows-Eventlog	1103	0	Eventprocessing1103(UInt32 PercentFull)			Eventprocessing	Informational		
 Microsoft-Windows-Eventlog	1104	0	Eventprocessing1104()			Eventprocessing	Error		
 Microsoft-Windows-Eventlog	1105	0	Logautomaticbackup1105(UnicodeString Channel, UnicodeString BackupPath)			Logautomaticbackup	Informational		

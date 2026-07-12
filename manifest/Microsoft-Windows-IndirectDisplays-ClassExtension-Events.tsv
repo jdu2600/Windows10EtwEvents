@@ -1,7 +1,7 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
 Microsoft-Windows-IndirectDisplays-ClassExtension-Events	1	0	AdapterInitAsync()		DdiCalls	AdapterInitAsync	Always		
 Microsoft-Windows-IndirectDisplays-ClassExtension-Events	2	0	AdapterInitFinished(UInt64 IddAdapterLuid)		DdiCallbacks	AdapterInitFinished	Always		
-Microsoft-Windows-IndirectDisplays-ClassExtension-Events	3	0	AdapterCommit(UInt64 IddAdapterLuid)		DdiCallbacks	AdapterCommit	Always		
+Microsoft-Windows-IndirectDisplays-ClassExtension-Events	3	0	AdapterCommitStart(UInt64 IddAdapterLuid, UInt32 PathCount)	Start	DdiCallbacks	AdapterCommit	Always		
 Microsoft-Windows-IndirectDisplays-ClassExtension-Events	4	0	AdapterUpdateMaxBandwidth(UInt64 IddAdapterLuid, UInt64 Bandwidth)		DdiCalls	AdapterUpdateMaxBandwidth	Always		
 Microsoft-Windows-IndirectDisplays-ClassExtension-Events	5	0	AdapterDestroy(UInt64 IddAdapterLuid)		DdiCalls	AdapterDestroy	Always		
 Microsoft-Windows-IndirectDisplays-ClassExtension-Events	6	0	MonitorCreate(UInt64 IddAdapterLuid, UInt32 ConnectorIndex, UInt32 DescriptorType)		DdiCalls	MonitorCreate	Always		
@@ -34,21 +34,34 @@ Microsoft-Windows-IndirectDisplays-ClassExtension-Events	32	0	OpmGetInformation(
 Microsoft-Windows-IndirectDisplays-ClassExtension-Events	33	0	OpmConfigureProtectedOutput()		DdiCallbacks	OpmConfigureProtectedOutput	Always		
 Microsoft-Windows-IndirectDisplays-ClassExtension-Events	34	0	OpmDestroyProtectedOutput()		DdiCallbacks	OpmDestroyProtectedOutput	Always		
 Microsoft-Windows-IndirectDisplays-ClassExtension-Events	35	0	ProcessDdiStart()	Start	DdiCalls	ProcessDdi	Always		
-Microsoft-Windows-IndirectDisplays-ClassExtension-Events	36	0	MonitTraceTargetModes(Boolean Valid, UInt64 IddAdapterLuid, UInt32 ConnectorIndex, UInt32 TargetModeIndex, UInt64 PixelRate, Float VSync, UInt32 ActiveWidth, UInt32 ActiveHeight, UInt64 RequiredBandwidth)		DdiCallbacks	MonitTraceTargetModes	Always		
-Microsoft-Windows-IndirectDisplays-ClassExtension-Events	37	0	MonitorTraceMonitorModes(Boolean Valid, UInt64 IddAdapterLuid, UInt32 ConnectorIndex, UInt32 MonitorModeIndex, UInt64 PixelRate, Float VSync, UInt32 ActiveWidth, UInt32 ActiveHeight, UInt16 VSyncDivider, UInt64 RequiredBandwidth)		DdiCallbacks	MonitorTraceMonitorModes	Always		
+Microsoft-Windows-IndirectDisplays-ClassExtension-Events	36	0	MonitorTraceTargetModes(Boolean Valid, UInt64 IddAdapterLuid, UInt32 ConnectorIndex, UInt32 TargetModeIndex, UInt64 PixelRate, Float VSync, UInt32 ActiveWidth, UInt32 ActiveHeight, UInt64 RequiredBandwidth, UInt32 RgbBitsPerComponent)		DdiCallbacks	MonitorTraceTargetModes	Always		
+Microsoft-Windows-IndirectDisplays-ClassExtension-Events	37	0	MonitorTraceMonitorModes(Boolean Valid, UInt64 IddAdapterLuid, UInt32 ConnectorIndex, UInt32 MonitorModeIndex, UInt64 PixelRate, Float VSync, UInt32 ActiveWidth, UInt32 ActiveHeight, UInt16 VSyncDivider, UInt64 RequiredBandwidth, UInt32 RgbBitsPerComponent, Boolean Preferred)		DdiCallbacks	MonitorTraceMonitorModes	Always		
 Microsoft-Windows-IndirectDisplays-ClassExtension-Events	38	0	WatchdogStart()	Start	DdiCallbacks	Watchdog	Always		
 Microsoft-Windows-IndirectDisplays-ClassExtension-Events	39	0	WatchdogStop()	Stop	DdiCallbacks	Watchdog	Always		
 Microsoft-Windows-IndirectDisplays-ClassExtension-Events	40	0	DeviceParseMonitorDescription()		DdiCallbacks	DeviceParseMonitorDescription	Always		
-Microsoft-Windows-IndirectDisplays-ClassExtension-Events	41	0	AdapterCommitPaths(UInt64 IddAdapterLuid, UInt32 PathIndex, UInt32 PathFlags, UInt32 Width, UInt32 Height)		DdiCallbacks	AdapterCommitPaths	Always		
+Microsoft-Windows-IndirectDisplays-ClassExtension-Events	41	0	AdapterCommitPaths(UInt64 IddAdapterLuid, UInt32 PathIndex, UInt32 MonitorConnectorIndex, UInt32 PathFlags, UInt32 Width, UInt32 Height, UInt32 ColorSpace, UInt32 RgbBitsPerComponent)		DdiCallbacks	AdapterCommitPaths	Always		
 Microsoft-Windows-IndirectDisplays-ClassExtension-Events	42	0	SwapchainReportFrameStatisticsStep(Pointer SwapChainPointer, UInt32 PresentationFrameNumber, UInt32 ReencodeNumber, UInt32 CurrentSlice, UInt32 StepIndex, UInt32 StepType, UInt64 QpcTime, UInt32 Data1, UInt32 Data2)		DdiCallbacks	SwapchainReportFrameStatisticsStep	Always		
 Microsoft-Windows-IndirectDisplays-ClassExtension-Events	43	0	MonitorOpmSetMftContext(UInt64 IddAdapterLuid, UInt32 ConnectorIndex, UInt64 MftContext)		DdiCallbacks	MonitorOpmSetMftContext	Always		
 Microsoft-Windows-IndirectDisplays-ClassExtension-Events	44	0	MonitorGetPhysicalSize(UInt64 IddAdapterLuid, UInt32 ConnectorIndex, UInt32 PhysicalWidth, UInt32 PhysicalHeight)		DdiCallbacks	MonitorGetPhysicalSize	Always		
-Microsoft-Windows-IndirectDisplays-ClassExtension-Events	45	0	AdapterDisplayConfigUpdate(UInt64 IddAdapterLuid, UInt32 PathIdx, UInt32 MonitorConnectorIndex, UInt32 Positionx, UInt32 Positiony, UInt32 ResolutionWidth, UInt32 ResolutionHeight, Float VSync, UInt32 VSyncDivider, UInt32 Rotation, UInt32 DPI, UInt32 PhysicalSizeWidth, UInt32 PhysicalSizeHeight, UInt64 HostAdapterLuid, UInt32 HostVidPnTargetId)		DdiCalls	AdapterDisplayConfigUpdate	Always		
+Microsoft-Windows-IndirectDisplays-ClassExtension-Events	45	0	AdapterDisplayConfigUpdatePath(UInt64 IddAdapterLuid, UInt32 PathIndex, UInt32 MonitorConnectorIndex, HexInt32 Flags, Int32 Positionx, Int32 Positiony, UInt32 ResolutionWidth, UInt32 ResolutionHeight, Float VSync, UInt32 VSyncDivider, UInt32 Rotation, UInt32 ColorMode, UInt32 DPI, UInt32 PhysicalSizeWidth, UInt32 PhysicalSizeHeight, UInt32 ColorimetryFlags, UInt64 HostAdapterLuid, UInt32 HostVidPnTargetId)		DdiCalls	AdapterDisplayConfigUpdatePath	Always		
 Microsoft-Windows-IndirectDisplays-ClassExtension-Events	46	0	SwapchainInSystemMemory(Pointer SwapChainPointer)		DdiCallbacks	SwapchainInSystemMemory	Always		
 Microsoft-Windows-IndirectDisplays-ClassExtension-Events	47	0	SwapchainReleaseAndAcquireSystemBuffer(Pointer SwapChainPointer, UInt64 WddmAdapterLuid, UInt32 VidPnTargetId)		DdiCallbacks	SwapchainReleaseAndAcquireSystemBuffer	Always		
 Microsoft-Windows-IndirectDisplays-ClassExtension-Events	48	0	SwapchainGetPhysicallyContiguousAddress(Pointer SwapChainPointer)		DdiCallbacks	SwapchainGetPhysicallyContiguousAddress	Always		
 Microsoft-Windows-IndirectDisplays-ClassExtension-Events	49	0	SwapchainDriverFrameProcessingTaskStart(Pointer SwapChainPointer, UInt64 WddmAdapterLuid, UInt32 VidPnTargetId, UInt32 FrameNumber, UInt64 FramePresentQpcTime, UInt32 DirtyRectCount)	Start	DdiCallbacks	SwapchainDriverFrameProcessingTask	Always		
 Microsoft-Windows-IndirectDisplays-ClassExtension-Events	50	0	SwapchainDriverFrameProcessingTaskStop(Pointer SwapChainPointer, UInt64 WddmAdapterLuid, UInt32 VidPnTargetId, UInt32 FrameNumber, UInt64 DriverProcessingTimeInMicroseconds, UInt64 DriverProcessingTimeStartQpc, UInt64 DriverProcessingTimeStopQpc, UInt64 QPCFrequency)	Stop	DdiCallbacks	SwapchainDriverFrameProcessingTask	Always		
 Microsoft-Windows-IndirectDisplays-ClassExtension-Events	51	0	ProcessDdiStop()	Stop	DdiCalls	ProcessDdi	Always		
-Microsoft-Windows-IndirectDisplays-ClassExtension-Events	52	0	ProcessKernelRequestStart()	Start	DdiCalls	ProcessKernelRequest	Always		
+Microsoft-Windows-IndirectDisplays-ClassExtension-Events	52	0	ProcessKernelRequestStart(UInt32 KernelEventId)	Start	DdiCalls	ProcessKernelRequest	Always		
 Microsoft-Windows-IndirectDisplays-ClassExtension-Events	53	0	ProcessKernelRequestStop()	Stop	DdiCalls	ProcessKernelRequest	Always		
+Microsoft-Windows-IndirectDisplays-ClassExtension-Events	54	0	SwapchainReleaseAndAcquireBuffer2(Pointer SwapChainPointer, UInt64 WddmAdapterLuid, UInt32 VidPnTargetId)		DdiCallbacks	SwapchainReleaseAndAcquireBuffer2	Always		
+Microsoft-Windows-IndirectDisplays-ClassExtension-Events	55	0	DeviceParseMonitorDescription2()		DdiCallbacks	DeviceParseMonitorDescription2	Always		
+Microsoft-Windows-IndirectDisplays-ClassExtension-Events	56	0	MonitorQueryTargetModes2(UInt64 IddAdapterLuid, UInt32 ConnectorIndex, UInt32 InputModeCount)		DdiCallbacks	MonitorQueryTargetModes2	Always		
+Microsoft-Windows-IndirectDisplays-ClassExtension-Events	57	0	MonitorUpdateModes2(UInt64 IddAdapterLuid, UInt32 ConnectorIndex)		DdiCallbacks	MonitorUpdateModes2	Always		
+Microsoft-Windows-IndirectDisplays-ClassExtension-Events	58	0	AdapterQueryTargetInfo(UInt64 IddAdapterLuid, UInt32 TargetId, UInt32 TargetCaps)		DdiCallbacks	AdapterQueryTargetInfo	Always		
+Microsoft-Windows-IndirectDisplays-ClassExtension-Events	59	0	MonitorSetDefaultHdrMetaData(UInt64 IddAdapterLuid, UInt32 ConnectorIndex)		DdiCallbacks	MonitorSetDefaultHdrMetaData	Always		
+Microsoft-Windows-IndirectDisplays-ClassExtension-Events	60	0	AdapterDisplayConfigUpdateStart(UInt64 IddAdapterLuid, UInt32 PathCount)	Start	DdiCalls	AdapterDisplayConfigUpdate	Always		
+Microsoft-Windows-IndirectDisplays-ClassExtension-Events	61	0	CommitVidPnStart(UInt64 KmdAdapterHandle, UInt32 AffectedSourceId)	Start	DdiCalls	CommitVidPn	Always		
+Microsoft-Windows-IndirectDisplays-ClassExtension-Events	62	0	CommitVidPnStop(UInt64 KmdAdapterHandle)	Stop	DdiCalls	CommitVidPn	Always		
+Microsoft-Windows-IndirectDisplays-ClassExtension-Events	63	0	SetTimingsStart(UInt64 KmdAdapterHandle, UInt32 PathCount)	Start	DdiCallbacks	SetTimings	Always		
+Microsoft-Windows-IndirectDisplays-ClassExtension-Events	64	0	SetTimingsStop(UInt64 KmdAdapterHandle)	Stop	DdiCallbacks	SetTimings	Always		
+Microsoft-Windows-IndirectDisplays-ClassExtension-Events	65	0	AdapterCommitStop(UInt64 IddAdapterLuid, UInt32 PathCount)	Stop	DdiCallbacks	AdapterCommit	Always		
+Microsoft-Windows-IndirectDisplays-ClassExtension-Events	66	0	AdapterDisplayConfigUpdateStop(UInt64 IddAdapterLuid)	Stop	DdiCalls	AdapterDisplayConfigUpdate	Always		

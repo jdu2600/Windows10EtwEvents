@@ -475,7 +475,7 @@ Microsoft-Windows-MediaFoundation-Performance	4464	0	AudioRender4464(UInt32 Soun
 Microsoft-Windows-MediaFoundation-Performance	4465	0	AudioRender4465(Boolean status)			AudioRender	Informational		
 Microsoft-Windows-MediaFoundation-Performance	4466	0	AudioRender4466(AnsiString tag, Pointer object, UInt64 BufferDuration)			AudioRender	Informational		
 Microsoft-Windows-MediaFoundation-Performance	4467	0	MFCopyImageStart(Pointer SrcPtr, Pointer DstPtr, Int32 Width, Int32 Height)	Start		MFCopyImage	Informational		
-Microsoft-Windows-MediaFoundation-Performance	4468	0	MFCopyImageStop(Pointer SrcPtr, Pointer DstPtr, UInt32 ReturnCode)	Stop		MFCopyImage	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4468	1	MFCopyImageStop_V1(Pointer SrcPtr, Pointer DstPtr, UInt32 ReturnCode, UInt32 PathTaken)	Stop		MFCopyImage	Informational		
 Microsoft-Windows-MediaFoundation-Performance	4469	0	MFMediaDeviceSourceStartTaskStart(Pointer object)	Start		MFMediaDeviceSourceStartTask	Informational		
 Microsoft-Windows-MediaFoundation-Performance	4470	0	MFMediaDeviceSourceStartTaskStop(Pointer object)	Stop		MFMediaDeviceSourceStartTask	Informational		
 Microsoft-Windows-MediaFoundation-Performance	4471	0	MFMediaDeviceStreamSendSinglePhotoTriggerToKSTask(Pointer object, UInt32 dwStreamID, UInt32 uiPinID)			MFMediaDeviceStreamSendSinglePhotoTriggerToKSTask	Informational		
@@ -484,6 +484,8 @@ Microsoft-Windows-MediaFoundation-Performance	4473	0	Attributes_CopyAllItemsStar
 Microsoft-Windows-MediaFoundation-Performance	4474	0	Attributes_CopyAllItemsStop(Pointer SrcPtr, UInt32 HResult)	Stop		Attributes_CopyAllItems	Verbose		
 Microsoft-Windows-MediaFoundation-Performance	4475	0	DXGIMapSurfaceSleepStart(Pointer surface)	Start		DXGIMapSurfaceSleep	Verbose		
 Microsoft-Windows-MediaFoundation-Performance	4476	0	DXGIMapSurfaceSleepStop(Pointer surface)	Stop		DXGIMapSurfaceSleep	Verbose		
+Microsoft-Windows-MediaFoundation-Performance	4477	0	DXGIUnmapSurfaceStart(Pointer surface, UInt32 uSubresource)	Start		DXGIUnmapSurface	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4478	0	DXGIUnmapSurfaceStop(Pointer surface)	Stop		DXGIUnmapSurface	Informational		
 Microsoft-Windows-MediaFoundation-Performance	4500	0	NetworkRIO_PendingSends(Pointer Object, Int32 PendingCount, UInt32 BytesSent)			NetworkRIO_PendingSends	Informational		
 Microsoft-Windows-MediaFoundation-Performance	4501	0	NetworkRIO_PendingSendsStart(Pointer Object, Int32 PendingCount, UInt32 BytesSent)	Start		NetworkRIO_PendingSends	Informational		
 Microsoft-Windows-MediaFoundation-Performance	4502	0	NetworkRIO_PendingSendsStop(Pointer Object, Int32 PendingCount, UInt32 BytesSent)	Stop		NetworkRIO_PendingSends	Informational		

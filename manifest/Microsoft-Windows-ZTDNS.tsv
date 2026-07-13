@@ -1,0 +1,9 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-ZTDNS	1	0	Task_ClassifyOpcode_Classify(UInt32 LocalAddressLength, Binary LocalAddress, UInt32 LocalPort, UInt32 RemoteAddressLength, Binary RemoteAddress, UInt32 RemotePort, UInt32 Protocol, UInt64 ProcessId, UnicodeString ProcessPath, UInt32 PermitType, UnicodeString PermitInfo, UnicodeString ServiceName)	Opcode_Classify	Keyword_Classify_Permit	Task_Classify	Informational		
+Microsoft-Windows-ZTDNS	2	0	Task_ClassifyOpcode_Classify2(UInt32 LocalAddressLength, Binary LocalAddress, UInt32 LocalPort, UInt32 RemoteAddressLength, Binary RemoteAddress, UInt32 RemotePort, UInt32 Protocol, UInt64 ProcessId, UnicodeString ProcessPath, UnicodeString ServiceName)	Opcode_Classify	Keyword_Classify_Block	Task_Classify	Informational		
+Microsoft-Windows-ZTDNS	3	0	Task_NotifyOpcode_Notify(UInt64 ProcessId, UnicodeString ProcessPath)	Opcode_Notify	Keyword_Trusted_Servers_Update	Task_Notify	Informational		
+Microsoft-Windows-ZTDNS	4	0	Task_NotifyOpcode_Notify4(UInt32 ExceptionsUpdateType, UnicodeString ExceptionName, UInt64 ProcessId, UnicodeString ProcessPath)	Opcode_Notify	Keyword_Exceptions_Removal	Task_Notify	Informational		
+Microsoft-Windows-ZTDNS	5	0	Task_NotifyOpcode_Notify5(UInt32 ExceptionsUpdateType, UnicodeString ExceptionName, UInt64 ProcessId, UnicodeString ProcessPath)	Opcode_Notify	Keyword_Exceptions_Addition	Task_Notify	Informational		
+Microsoft-Windows-ZTDNS	6	0	Task_NotifyOpcode_Notify6(UInt32 ServiceState, UInt64 ProcessId, UnicodeString ProcessPath)	Opcode_Notify	Keyword_State_Update	Task_Notify	Informational		
+Microsoft-Windows-ZTDNS	7	0	Task_NotifyOpcode_Notify7(UInt32 Status)	Opcode_Notify	Keyword_Service_Start	Task_Notify	Informational		
+Microsoft-Windows-ZTDNS	8	0	Task_NotifyOpcode_Notify8(UInt32 Status)	Opcode_Notify	Keyword_Service_Stop	Task_Notify	Informational		

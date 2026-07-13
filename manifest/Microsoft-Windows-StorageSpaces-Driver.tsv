@@ -30,6 +30,9 @@ Microsoft-Windows-StorageSpaces-Driver	400	0	task_0400(GUID Id, Int32 Path, Unic
 Microsoft-Windows-StorageSpaces-Driver	401	0	task_0401(GUID Id, Int32 Path, UnicodeString EnclosureManufacturer, UnicodeString EnclosureModel, UnicodeString EnclosureSerial, UnicodeString EnclosureRevision)			task_0	Informational		
 Microsoft-Windows-StorageSpaces-Driver	402	0	task_0402(GUID Id, UInt32 OldHealth, UInt32 NewHealth, UnicodeString EnclosureManufacturer, UnicodeString EnclosureModel, UnicodeString EnclosureSerial, UnicodeString EnclosureRevision)			task_0	Warning		
 Microsoft-Windows-StorageSpaces-Driver	403	0	task_0403(UInt32 Status, UnicodeString EnclosureManufacturer, UnicodeString EnclosureModel, UnicodeString EnclosureSerial, UnicodeString EnclosureRevision)			task_0	Error		
+Microsoft-Windows-StorageSpaces-Driver	404	0	task_0404(GUID Id, UnicodeString EnclosureManufacturer, UnicodeString EnclosureModel, UnicodeString EnclosureSerial, UnicodeString EnclosureRevision, UInt8 Operation, UInt32 Length, UInt32 Status, UInt32 Retries, UInt8 SrbStatus, UInt8 SenseKey, UInt8 AdditionalSenseCode, UInt8 AdditionalSenseCodeQualifier)			task_0	Informational		
+Microsoft-Windows-StorageSpaces-Driver	405	0	task_0405(GUID Id, UnicodeString EnclosureManufacturer, UnicodeString EnclosureModel, UnicodeString EnclosureSerial, UnicodeString EnclosureRevision, UInt32 Status, UInt32 PageBytes, Binary PageData)			task_0	Error		
+Microsoft-Windows-StorageSpaces-Driver	406	0	task_0406(GUID Id, UnicodeString EnclosureManufacturer, UnicodeString EnclosureModel, UnicodeString EnclosureSerial, UnicodeString EnclosureRevision, UInt32 DescirptorBytes, Binary DescirptorData, UInt32 Line, UInt32 Status)			task_0	Error		
 Microsoft-Windows-StorageSpaces-Driver	501	0	task_0501()		Ksr	task_0	Informational		
 Microsoft-Windows-StorageSpaces-Driver	502	0	task_0502(UInt32 Status)		Ksr	task_0	Error		
 Microsoft-Windows-StorageSpaces-Driver	503	0	task_0503(GUID Id, UInt32 Length)		Ksr	task_0	Error		
@@ -40,9 +43,12 @@ Microsoft-Windows-StorageSpaces-Driver	507	0	task_0507(UInt64 BlockId, UInt32 St
 Microsoft-Windows-StorageSpaces-Driver	508	0	task_0508(GUID Id, UInt32 Status)		Ksr	task_0	Error		
 Microsoft-Windows-StorageSpaces-Driver	509	0	task_0509(GUID Id, UInt32 Status)		Ksr	task_0	Error		
 Microsoft-Windows-StorageSpaces-Driver	510	0	task_0510(GUID Id, UInt32 Status)		Ksr	task_0	Error		
+Microsoft-Windows-StorageSpaces-Driver	511	0	task_0511(GUID Id)		Ksr	task_0	Informational		
+Microsoft-Windows-StorageSpaces-Driver	512	0	task_0512(GUID Id)		Ksr	task_0	Informational		
+Microsoft-Windows-StorageSpaces-Driver	513	0	task_0513(GUID Id)		Ksr	task_0	Informational		
 Microsoft-Windows-StorageSpaces-Driver	1000	0	task_01000(GUID Id, AnsiString Function, UInt32 Line, UInt32 Status)			task_0	Error		
 Microsoft-Windows-StorageSpaces-Driver	1001	0	task_01001(GUID PoolId, UInt32 Transaction, UInt64 SequenceNumber)			task_0	Informational		
-Microsoft-Windows-StorageSpaces-Driver	1002	0	task_01002(GUID PoolId, UInt32 Transaction, UInt32 Status, UInt64 SequenceNumber)			task_0	Informational		
+Microsoft-Windows-StorageSpaces-Driver	1002	0	task_01002(GUID PoolId, UInt32 Transaction, UInt32 Status, UInt64 SequenceNumber, UInt64 DispatchTransactionDurationIn100Ns, UInt64 PrepareCommitDurationIn100Ns, UInt64 CommitTransactionDurationIn100Ns, UInt64 CommitDevicesDurationIn100Ns)			task_0	Informational		
 Microsoft-Windows-StorageSpaces-Driver	1003	0	task_01003(GUID SpaceId, UInt32 Transaction, UInt64 SequenceNumber)			task_0	Informational		
 Microsoft-Windows-StorageSpaces-Driver	1004	0	task_01004(GUID SpaceId, UInt32 Transaction, UInt32 Status, UInt64 SequenceNumber)			task_0	Informational		
 Microsoft-Windows-StorageSpaces-Driver	1005	0	task_01005(UInt32 Code)			task_0	Informational		
@@ -56,8 +62,9 @@ Microsoft-Windows-StorageSpaces-Driver	1012	0	task_01012(GUID ConfigId, UInt32 S
 Microsoft-Windows-StorageSpaces-Driver	1013	0	task_01013(GUID Id, UInt64 SpaceOffset, UInt32 ColumnToReallocate, UInt32 CopyToReallocate, UInt32 ColumnMissingFdInfo, UInt32 CopyMissingFdInfo)			task_0	Error		
 Microsoft-Windows-StorageSpaces-Driver	1017	0	task_01017(UInt64 Duration, HexInt32 Frame0, HexInt32 Frame1, HexInt32 Frame2, HexInt32 Frame3)			task_0	Informational		
 Microsoft-Windows-StorageSpaces-Driver	1018	0	task_01018(UInt64 Duration, HexInt32 Frame0, HexInt32 Frame1, HexInt32 Frame2, HexInt32 Frame3)			task_0	Informational		
+Microsoft-Windows-StorageSpaces-Driver	1019	2	task_01019_V2(GUID SpaceId, UInt32 LogType, UInt32 Copy, UInt32 Lsn, UInt32 Status, UInt32 ExtendedStatus)			task_0	Informational		
 Microsoft-Windows-StorageSpaces-Driver	1020	0	task_01020(GUID Id, UnicodeString Manufacturer, UnicodeString Model, UnicodeString Serial, UnicodeString Revision, UInt32 DriveCount, Int32 DriveIoSummary)			task_0	Informational		
-Microsoft-Windows-StorageSpaces-Driver	1021	0	task_01021(GUID PoolId, GUID SpaceId, UInt64 DurationInUs)			task_0	Informational		
+Microsoft-Windows-StorageSpaces-Driver	1021	1	task_01021_V1(GUID PoolId, GUID SpaceId, UInt64 DurationInUs, UInt64 PoolSequenceNumber)			task_0	Informational		
 Microsoft-Windows-StorageSpaces-Driver	1022	0	task_01022(GUID PoolId, GUID SpaceId, UInt64 AttachedDurationInUs, UInt64 DetachDurationInUs, UInt32 DetachReason, UInt32 Status)			task_0	Informational		
 Microsoft-Windows-StorageSpaces-Driver	1023	0	task_01023(GUID SpaceId, UInt32 NumberOfEntries, UInt32 Limit)			task_0	Warning		
 Microsoft-Windows-StorageSpaces-Driver	1024	0	task_01024(GUID SpaceId, UInt32 Limit)			task_0	Informational		
@@ -79,19 +86,31 @@ Microsoft-Windows-StorageSpaces-Driver	1039	0	task_01039(GUID SpaceId, UInt32 Lo
 Microsoft-Windows-StorageSpaces-Driver	1040	0	task_01040(GUID SpaceId, UInt32 Operation, UInt32 Status)			task_0	Error		
 Microsoft-Windows-StorageSpaces-Driver	1041	0	task_01041(GUID SpaceId, UInt32 Operation, UInt32 Status)			task_0	Error		
 Microsoft-Windows-StorageSpaces-Driver	1042	0	task_01042(GUID SpaceId, UInt32 Operation, UInt8 Function, UInt64 Offset, UInt32 Length, UInt32 Status)			task_0	Error		
-Microsoft-Windows-StorageSpaces-Driver	1043	0	task_01043(GUID SpaceId, UInt32 Status, UInt32 UsedLineCount, UInt32 ReservedLineCount, UInt32 SynchronizingCount, UInt32 ActiveCheckpoint, UInt32 StartSlot, UInt32 EndSlot, Boolean Wrap, UInt64 SequenceNumber)			task_0	Informational		
+Microsoft-Windows-StorageSpaces-Driver	1043	0	task_01043(GUID SpaceId, UInt32 Status, UInt32 UsedLineCount, UInt32 ReservedLineCount, UInt32 SynchronizingCount, UInt32 ReplayCount, UInt32 ActiveCheckpoint, UInt32 StartSlot, UInt32 EndSlot, Boolean Wrap, UInt64 SequenceNumber)			task_0	Informational		
 Microsoft-Windows-StorageSpaces-Driver	1044	0	task_01044(GUID SpaceId, UInt32 Status, UInt32 ActiveCheckpoint, UInt32 StartSlot, UInt32 EndSlot, Boolean Wrap, UInt64 SequenceNumber)			task_0	Informational		
+Microsoft-Windows-StorageSpaces-Driver	1045	0	task_01045(UInt32 Count, UInt32 Status)			task_0	Informational		
+Microsoft-Windows-StorageSpaces-Driver	1046	0	task_01046(GUID SpaceId, UInt32 NumberOfBitmaps, UInt32 SstLength, Binary Sst)			task_0	Informational		
+Microsoft-Windows-StorageSpaces-Driver	1047	0	task_01047(GUID Id, UInt32 Status)			task_0	Error		
+Microsoft-Windows-StorageSpaces-Driver	1048	0	task_01048(GUID SpaceId, UInt32 NumberOfBitmaps, UInt32 SstLength, Binary Sst)			task_0	Informational		
+Microsoft-Windows-StorageSpaces-Driver	1049	0	task_01049(GUID Id)			task_0	Informational		
+Microsoft-Windows-StorageSpaces-Driver	1050	0	task_01050(GUID SpaceId, UInt64 ReserveBytesWritten)			task_0	Informational		
+Microsoft-Windows-StorageSpaces-Driver	1051	0	task_01051(GUID SpaceId, UInt32 Status, UInt64 ReserveBytesWritten)			task_0	Error		
+Microsoft-Windows-StorageSpaces-Driver	1052	0	task_01052(GUID SpaceId, UInt64 SlabOffset, UInt32 Column, UInt32 SourceCopy, UInt32 Status, UInt32 BitMapSize, Binary BitMap)			task_0	Informational		
 Microsoft-Windows-StorageSpaces-Driver	1100	0	task_01100(GUID StoreId, UInt32 TotalPaths, UInt32 PresentPaths, UInt64 Sequence, GUID PrimaryPathId, UInt64 DurationInUs)			task_0	Informational		
-Microsoft-Windows-StorageSpaces-Driver	1101	0	task_01101(GUID StoreId, UInt32 Status)			task_0	Error		
-Microsoft-Windows-StorageSpaces-Driver	1102	0	task_01102(GUID StoreId, GUID PathId, UInt32 Flags)			task_0	Informational		
+Microsoft-Windows-StorageSpaces-Driver	1101	0	task_01101(GUID StoreId, UInt32 Status, UInt32 PresentPaths, UInt32 ReadStatuses, UInt64 Sequences, UInt16 StoreStates)			task_0	Error		
+Microsoft-Windows-StorageSpaces-Driver	1102	0	task_01102(GUID StoreId, UInt32 PresentPaths, GUID PathId, UInt32 Flags, UInt64 Sequence, UInt16 State)			task_0	Informational		
 Microsoft-Windows-StorageSpaces-Driver	1103	0	task_01103(GUID StoreId, GUID PathId)			task_0	Informational		
 Microsoft-Windows-StorageSpaces-Driver	1104	0	task_01104(GUID StoreId, GUID PathId)			task_0	Informational		
 Microsoft-Windows-StorageSpaces-Driver	1105	0	task_01105(GUID Id1, GUID Id2, UInt32 Status)			task_0	Error		
 Microsoft-Windows-StorageSpaces-Driver	1106	0	task_01106(GUID Id1, GUID Id2, UInt32 Status)			task_0	Error		
 Microsoft-Windows-StorageSpaces-Driver	1107	0	task_01107(GUID StoreId, UInt32 TotalPaths, UInt32 PresentPaths, UInt64 Sequence, UInt32 TransactionStatus, UInt32 WitnessStatus)			task_0	Error		
 Microsoft-Windows-StorageSpaces-Driver	1108	0	task_01108(GUID StoreId, UInt32 TotalPaths, UInt32 PresentPaths, UInt64 Sequence, UInt32 WitnessStatus, UInt64 WitnessSequence)			task_0	Error		
+Microsoft-Windows-StorageSpaces-Driver	1600	0	task_01600(GUID PathId)			task_0	Informational		
+Microsoft-Windows-StorageSpaces-Driver	1601	0	task_01601(GUID PathId, UInt32 Status)			task_0	Error		
+Microsoft-Windows-StorageSpaces-Driver	1602	0	task_01602(GUID PathId)			task_0	Informational		
 Microsoft-Windows-StorageSpaces-Driver	2100	0	task_02100(GUID SpaceId, UInt32 LogType, UInt64 UsedBytes)		Log	task_0	Informational		
 Microsoft-Windows-StorageSpaces-Driver	2101	0	task_02101(GUID SpaceId, UInt32 LogType, UInt64 Lsn, UInt32 Length, UInt8 Reason)		Log	task_0	Informational		
 Microsoft-Windows-StorageSpaces-Driver	2102	0	task_02102(GUID SpaceId, UInt32 LogType, UInt32 StartLsn, UInt32 Lsn)		Log	task_0	Informational		
 Microsoft-Windows-StorageSpaces-Driver	2103	0	task_02103(GUID SpaceId, UInt32 LogType, UInt64 Lsn, UInt32 Length, UInt8 Reason)		Log	task_0	Informational		
 Microsoft-Windows-StorageSpaces-Driver	2104	0	task_02104(GUID SpaceId, UInt32 LogType, UInt32 StartLsn, UInt32 Lsn)		Log	task_0	Informational		
+Microsoft-Windows-StorageSpaces-Driver	2105	0	task_02105(GUID Id, UInt64 SlabOffset, UInt32 Column, UInt32 CopiesMask, UInt64 Offset, UInt32 Length, UInt32 Granularity, UInt64 StaleMask, UInt32 StaleBytes)		Repair	task_0	Informational		

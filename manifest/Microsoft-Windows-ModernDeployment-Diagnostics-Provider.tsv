@@ -126,9 +126,10 @@ Microsoft-Windows-ModernDeployment-Diagnostics-Provider	314	0	task_0314()			task
 Microsoft-Windows-ModernDeployment-Diagnostics-Provider	315	0	task_0315(HexInt32 HRESULT)			task_0	Error		
 Microsoft-Windows-ModernDeployment-Diagnostics-Provider	316	0	task_0316(UInt32 UInt1)			task_0	Informational		
 Microsoft-Windows-ModernDeployment-Diagnostics-Provider	317	0	task_0317(UInt32 UInt1)			task_0	Informational		
-Microsoft-Windows-ModernDeployment-Diagnostics-Provider	318	0	task_0318(HexInt32 HRESULT, UnicodeString Message1, UInt32 Uint1)			task_0	Informational		
-Microsoft-Windows-ModernDeployment-Diagnostics-Provider	319	0	task_0319(HexInt32 HRESULT, UnicodeString Message1, UInt32 Uint1)			task_0	Informational		
+Microsoft-Windows-ModernDeployment-Diagnostics-Provider	318	0	task_0318(HexInt32 HRESULT, UnicodeString Message1, UInt32 Uint1, UnicodeString Message2)			task_0	Informational		
+Microsoft-Windows-ModernDeployment-Diagnostics-Provider	319	0	task_0319(HexInt32 HRESULT, UnicodeString Message1, UInt32 Uint1, UInt32 Uint2)			task_0	Informational		
 Microsoft-Windows-ModernDeployment-Diagnostics-Provider	320	0	task_0320(UnicodeString Message1)			task_0	Informational		
+Microsoft-Windows-ModernDeployment-Diagnostics-Provider	321	0	task_0321(UInt32 Uint1, UInt32 Uint2, UnicodeString Message1, UnicodeString Message2, UInt32 Uint3)			task_0	Informational		
 Microsoft-Windows-ModernDeployment-Diagnostics-Provider	350	0	task_0350(HexInt32 HRESULT, UnicodeString Message1)			task_0	Error		
 Microsoft-Windows-ModernDeployment-Diagnostics-Provider	351	0	task_0351(UnicodeString Message1)			task_0	Informational		
 Microsoft-Windows-ModernDeployment-Diagnostics-Provider	352	0	task_0352(HexInt32 HRESULT)			task_0	Error		
@@ -137,6 +138,26 @@ Microsoft-Windows-ModernDeployment-Diagnostics-Provider	354	0	task_0354()			task
 Microsoft-Windows-ModernDeployment-Diagnostics-Provider	355	0	task_0355(HexInt32 HRESULT, UnicodeString Message1)			task_0	Error		
 Microsoft-Windows-ModernDeployment-Diagnostics-Provider	356	0	task_0356(HexInt32 HRESULT)			task_0	Error		
 Microsoft-Windows-ModernDeployment-Diagnostics-Provider	357	0	task_0357()			task_0	Informational		
+Microsoft-Windows-ModernDeployment-Diagnostics-Provider	400	0	task_0400(UInt32 ChangeType, HexInt32 DisplayPageResult, HexInt32 AgentResult, HexInt32 OverallResult)			task_0	Informational		
+Microsoft-Windows-ModernDeployment-Diagnostics-Provider	401	0	task_0401(HexInt32 DisplayPageResult, HexInt32 AgentResult, HexInt32 OverallResult, UInt32 ConsecutiveHostFailures, UInt32 ConsecutiveAgentFailures)			task_0	Informational		
+Microsoft-Windows-ModernDeployment-Diagnostics-Provider	402	0	task_0402(Int32 Int1)			task_0	Informational		
+Microsoft-Windows-ModernDeployment-Diagnostics-Provider	403	0	task_0403(UnicodeString Message1, UnicodeString Message2, UnicodeString Message3, Int32 Int1)			task_0	Informational		
+Microsoft-Windows-ModernDeployment-Diagnostics-Provider	404	0	task_0404(UnicodeString Message1, UnicodeString Message2, UnicodeString Message3, Int32 Int1)			task_0	Informational		
+Microsoft-Windows-ModernDeployment-Diagnostics-Provider	405	0	task_0405(UnicodeString Message1, UnicodeString Message2, UnicodeString Message3, UnicodeString Message4, Int32 Int1, HexInt32 HRESULT)			task_0	Informational		
+Microsoft-Windows-ModernDeployment-Diagnostics-Provider	406	0	task_0406(UnicodeString Message1, UnicodeString Message2, UnicodeString Message3, UnicodeString Message4, Int32 Int1, HexInt32 HRESULT)			task_0	Error		
+Microsoft-Windows-ModernDeployment-Diagnostics-Provider	407	0	task_0407(UnicodeString Message1, UnicodeString Message2, UnicodeString Message3, UnicodeString Message4, Int32 Int1, HexInt32 HRESULT)			task_0	Error		
+Microsoft-Windows-ModernDeployment-Diagnostics-Provider	408	0	task_0408(UnicodeString Message1, UnicodeString Message2, UnicodeString Message3, UnicodeString Message4, Int32 Int1, HexInt32 HRESULT)			task_0	Warning		
+Microsoft-Windows-ModernDeployment-Diagnostics-Provider	409	0	task_0409(HexInt32 HRESULT)			task_0	Error		
+Microsoft-Windows-ModernDeployment-Diagnostics-Provider	410	0	task_0410()			task_0	Informational		
+Microsoft-Windows-ModernDeployment-Diagnostics-Provider	411	0	task_0411(HexInt32 HRESULT, UnicodeString Message1)			task_0	Error		
+Microsoft-Windows-ModernDeployment-Diagnostics-Provider	412	0	task_0412(Int32 Int1)			task_0	Informational		
+Microsoft-Windows-ModernDeployment-Diagnostics-Provider	413	0	task_0413(HexInt32 HRESULT)			task_0	Informational		
+Microsoft-Windows-ModernDeployment-Diagnostics-Provider	414	0	task_0414()			task_0	Informational		
+Microsoft-Windows-ModernDeployment-Diagnostics-Provider	415	0	task_0415()			task_0	Informational		
+Microsoft-Windows-ModernDeployment-Diagnostics-Provider	416	0	task_0416()			task_0	Informational		
+Microsoft-Windows-ModernDeployment-Diagnostics-Provider	417	0	task_0417(UnicodeString Message1, UInt32 Uint1)			task_0	Warning		
+Microsoft-Windows-ModernDeployment-Diagnostics-Provider	418	0	task_0418(UInt32 Uint1, UInt32 Uint2)			task_0	Warning		
+Microsoft-Windows-ModernDeployment-Diagnostics-Provider	419	0	task_0419(HexInt32 HRESULT)			task_0	Error		
 Microsoft-Windows-ModernDeployment-Diagnostics-Provider	500	0	task_0500(HexInt32 HRESULT, UnicodeString Message1)			task_0	Warning		
 Microsoft-Windows-ModernDeployment-Diagnostics-Provider	501	0	task_0501(HexInt32 HRESULT, UnicodeString Message1, UnicodeString Message2)			task_0	Error		
 Microsoft-Windows-ModernDeployment-Diagnostics-Provider	502	0	task_0502(HexInt32 HRESULT, UnicodeString Message1, UnicodeString Message2)			task_0	Error		
@@ -215,3 +236,4 @@ Microsoft-Windows-ModernDeployment-Diagnostics-Provider	1524	0	task_01524(Unicod
 Microsoft-Windows-ModernDeployment-Diagnostics-Provider	1525	0	task_01525(Int32 Int1, UnicodeString Message1)			task_0	Error		
 Microsoft-Windows-ModernDeployment-Diagnostics-Provider	1526	0	task_01526(UInt32 Uint1, UInt32 Uint2)			task_0	Error		
 Microsoft-Windows-ModernDeployment-Diagnostics-Provider	1527	0	task_01527(UnicodeString Message1)			task_0	Error		
+Microsoft-Windows-ModernDeployment-Diagnostics-Provider	1700	0	task_01700(UnicodeString Message1, UInt32 Uint1, UInt32 Uint2, UnicodeString Message2, UnicodeString Message3)			task_0	Informational		

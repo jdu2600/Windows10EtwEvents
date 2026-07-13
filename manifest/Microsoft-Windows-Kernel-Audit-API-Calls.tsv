@@ -1,6 +1,7 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
 Microsoft-Windows-Kernel-Audit-API-Calls	1	0	task_0(Pointer NotifyRoutineAddress, UInt32 ReturnCode)			task_0	Informational		
 Microsoft-Windows-Kernel-Audit-API-Calls	2	0	task_02(UInt32 TargetProcessId, UInt32 ReturnCode)			task_0	Informational		
+Microsoft-Windows-Kernel-Audit-API-Calls	2	1	task_02_V1(UInt32 TargetProcessId, UInt32 ReturnCode, UInt64 TargetProcessStartKey, FILETIME TargetProcessCreationTime)			task_0	Informational		
 Microsoft-Windows-Kernel-Audit-API-Calls	3	0	task_03(UnicodeString LinkSourceName, UnicodeString LinkTargetName, UInt32 DesiredAccess, UInt32 ReturnCode)			task_0	Informational		
 Microsoft-Windows-Kernel-Audit-API-Calls	4	0	task_04(UInt32 ReturnCode)			task_0	Informational		
 Microsoft-Windows-Kernel-Audit-API-Calls	5	0	task_05(UInt32 TargetProcessId, UInt32 DesiredAccess, UInt32 ReturnCode)			task_0	Informational		

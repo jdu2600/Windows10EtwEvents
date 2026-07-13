@@ -1,26 +1,26 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
 Microsoft-Windows-WLAN-AutoConfig	4000	0	task_0Start()	Start		task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	4001	0	task_0Stop()	Stop		task_0	Informational		
-Microsoft-Windows-WLAN-AutoConfig	4002	0	task_0(UInt32 ErrorCode)		Telemetry	task_0	Error		
-Microsoft-Windows-WLAN-AutoConfig	4003	0	task_04003(UInt32 Event, HexInt32 ErrorCode, UInt32 ChangeReason, UInt32 IpFamily)		Telemetry	task_0	Warning		
+Microsoft-Windows-WLAN-AutoConfig	4002	0	task_0(UInt32 ErrorCode)			task_0	Error		
+Microsoft-Windows-WLAN-AutoConfig	4003	0	task_04003(UInt32 Event, HexInt32 ErrorCode, UInt32 ChangeReason, UInt32 IpFamily)			task_0	Warning		
 Microsoft-Windows-WLAN-AutoConfig	8000	0	AcmConnectionStart_24010_189(GUID InterfaceGuid, UnicodeString InterfaceDescription, UnicodeString ConnectionMode, UnicodeString ProfileName, UnicodeString SSID, UnicodeString BSSType, Pointer ConnectionId)	Start_24010_189	WlanConnect LwtDiagnostic	AcmConnection	Informational		
-Microsoft-Windows-WLAN-AutoConfig	8001	0	AcmConnectionSuccess(GUID InterfaceGuid, UnicodeString InterfaceDescription, UnicodeString ConnectionMode, UnicodeString ProfileName, UnicodeString SSID, UnicodeString BSSType, UnicodeString PHYType, UnicodeString AuthenticationAlgorithm, UnicodeString CipherAlgorithm, UInt32 OnexEnabled, Pointer ConnectionId, Boolean NonBroadcast)	Success	WlanConnect LwtDiagnostic Telemetry	AcmConnection	Informational		
-Microsoft-Windows-WLAN-AutoConfig	8002	0	AcmConnectionFailure(GUID InterfaceGuid, UnicodeString InterfaceDescription, UnicodeString ConnectionMode, UnicodeString ProfileName, UnicodeString SSID, UnicodeString BSSType, UnicodeString FailureReason, UInt32 ReasonCode, Pointer ConnectionId, Int32 RSSI)	Failure	WlanConnect LwtDiagnostic Telemetry	AcmConnection	Error		
-Microsoft-Windows-WLAN-AutoConfig	8003	0	AcmConnectionDisconnect(GUID InterfaceGuid, UnicodeString InterfaceDescription, UnicodeString ConnectionMode, UnicodeString ProfileName, UnicodeString SSID, UnicodeString BSSType, UnicodeString Reason, Pointer ConnectionId, UInt32 ReasonCode)	Disconnect	WlanConnect LwtDiagnostic Measures	AcmConnection	Informational		
-Microsoft-Windows-WLAN-AutoConfig	8004	0	task_08004(UnicodeString InterfaceDescription, GUID InterfaceGuid, UnicodeString SSIDs, UnicodeString ProfileName, UnicodeString ConnectionMode, UnicodeString BSSType, UnicodeString FailureReason, UInt32 BlockTime, UInt32 ReasonCode, Pointer ConnectionId)		LwtDiagnostic Telemetry	task_0	Error		
+Microsoft-Windows-WLAN-AutoConfig	8001	0	AcmConnectionSuccess(GUID InterfaceGuid, UnicodeString InterfaceDescription, UnicodeString ConnectionMode, UnicodeString ProfileName, UnicodeString SSID, UnicodeString BSSType, UnicodeString PHYType, UnicodeString AuthenticationAlgorithm, UnicodeString CipherAlgorithm, UInt32 OnexEnabled, Pointer ConnectionId, Boolean NonBroadcast)	Success	WlanConnect LwtDiagnostic	AcmConnection	Informational		
+Microsoft-Windows-WLAN-AutoConfig	8002	0	AcmConnectionFailure(GUID InterfaceGuid, UnicodeString InterfaceDescription, UnicodeString ConnectionMode, UnicodeString ProfileName, UnicodeString SSID, UnicodeString BSSType, UnicodeString FailureReason, UInt32 ReasonCode, Pointer ConnectionId, Int32 RSSI)	Failure	WlanConnect LwtDiagnostic	AcmConnection	Error		
+Microsoft-Windows-WLAN-AutoConfig	8003	0	AcmConnectionDisconnect(GUID InterfaceGuid, UnicodeString InterfaceDescription, UnicodeString ConnectionMode, UnicodeString ProfileName, UnicodeString SSID, UnicodeString BSSType, UnicodeString Reason, Pointer ConnectionId, UInt32 ReasonCode)	Disconnect	WlanConnect LwtDiagnostic	AcmConnection	Informational		
+Microsoft-Windows-WLAN-AutoConfig	8004	0	task_08004(UnicodeString InterfaceDescription, GUID InterfaceGuid, UnicodeString SSIDs, UnicodeString ProfileName, UnicodeString ConnectionMode, UnicodeString BSSType, UnicodeString FailureReason, UInt32 BlockTime, UInt32 ReasonCode, Pointer ConnectionId)		LwtDiagnostic	task_0	Error		
 Microsoft-Windows-WLAN-AutoConfig	8005	0	StartthedevicenetworkStart(GUID InterfaceGuid, AnsiString SSID)	Start	SOFTAP	Startthedevicenetwork	Informational		
 Microsoft-Windows-WLAN-AutoConfig	8006	0	StartthedevicenetworkStop(GUID InterfaceGuid, AnsiString SSID)	Stop	SOFTAP	Startthedevicenetwork	Informational		
 Microsoft-Windows-WLAN-AutoConfig	8007	0	StartthedevicenetworkStop8007(GUID InterfaceGuid, UInt32 ErrorCode, UnicodeString ErrorMsg, AnsiString SSID)	Stop	SOFTAP	Startthedevicenetwork	Error		
 Microsoft-Windows-WLAN-AutoConfig	8008	0	StopthedevicenetworkStart(GUID InterfaceGuid, AnsiString SSID)	Start	SOFTAP	Stopthedevicenetwork	Informational		
 Microsoft-Windows-WLAN-AutoConfig	8009	0	StopthedevicenetworkStop(GUID InterfaceGuid, AnsiString SSID)	Stop	SOFTAP	Stopthedevicenetwork	Informational		
 Microsoft-Windows-WLAN-AutoConfig	8010	0	StopthedevicenetworkStop8010(GUID InterfaceGuid, UInt32 ErrorCode, UnicodeString ErrorMsg, AnsiString SSID)	Stop	SOFTAP	Stopthedevicenetwork	Error		
-Microsoft-Windows-WLAN-AutoConfig	8011	0	AcmConnection(GUID InterfaceGuid, UnicodeString InterfaceDescription, UnicodeString ProfileName, UnicodeString SSID, UInt32 BSSType)		WlanConnect Telemetry	AcmConnection	Informational		
-Microsoft-Windows-WLAN-AutoConfig	8012	0	AcmConnection8012(GUID InterfaceGuid, UnicodeString InterfaceDescription)		WlanConnect Telemetry	AcmConnection	Informational		
-Microsoft-Windows-WLAN-AutoConfig	10000	0	task_010000(UnicodeString ExtensibleModulePath, UInt32 ErrorCode)		Telemetry	task_0	Error		
+Microsoft-Windows-WLAN-AutoConfig	8011	0	AcmConnection(GUID InterfaceGuid, UnicodeString InterfaceDescription, UnicodeString ProfileName, UnicodeString SSID, UInt32 BSSType)		WlanConnect	AcmConnection	Informational		
+Microsoft-Windows-WLAN-AutoConfig	8012	0	AcmConnection8012(GUID InterfaceGuid, UnicodeString InterfaceDescription)		WlanConnect	AcmConnection	Informational		
+Microsoft-Windows-WLAN-AutoConfig	10000	0	task_010000(UnicodeString ExtensibleModulePath, UInt32 ErrorCode)			task_0	Error		
 Microsoft-Windows-WLAN-AutoConfig	10001	0	task_010001(UnicodeString ExtensibleModulePath)			task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	10002	0	task_010002(UnicodeString ExtensibleModulePath)			task_0	Warning		
-Microsoft-Windows-WLAN-AutoConfig	10003	0	task_010003(UnicodeString ExtensibleModulePath)		Telemetry	task_0	Error		
-Microsoft-Windows-WLAN-AutoConfig	10004	0	task_010004(UnicodeString ExtensibleModulePath)		Telemetry	task_0	Warning		
+Microsoft-Windows-WLAN-AutoConfig	10003	0	task_010003(UnicodeString ExtensibleModulePath)			task_0	Error		
+Microsoft-Windows-WLAN-AutoConfig	10004	0	task_010004(UnicodeString ExtensibleModulePath)			task_0	Warning		
 Microsoft-Windows-WLAN-AutoConfig	11000	0	MsmAssociationStart_24011_193(UnicodeString Adapter, GUID DeviceGuid, UnicodeString LocalMac, UnicodeString SSID, UnicodeString BSSType, UnicodeString Auth, UnicodeString Cipher, UInt32 OnexEnabled, UnicodeString IhvConnectivitySetting, Pointer ConnectionId)	Start_24011_193	WlanConnect LwtDiagnostic	MsmAssociation	Informational		
 Microsoft-Windows-WLAN-AutoConfig	11001	0	MsmAssociationSuccess_24011_194(UnicodeString Adapter, GUID DeviceGuid, UnicodeString LocalMac, UnicodeString SSID, UnicodeString BSSType, Pointer ConnectionId, Boolean MgmtFrameProtection)	Success_24011_194	WlanConnect LwtDiagnostic	MsmAssociation	Informational		
 Microsoft-Windows-WLAN-AutoConfig	11002	0	MsmAssociationFailure_24011_195(UnicodeString Adapter, GUID DeviceGuid, UnicodeString LocalMac, UnicodeString SSID, UnicodeString BSSType, UnicodeString FailureReason, UInt32 ReasonCode, UInt32 Dot11StatusCode, Pointer ConnectionId, Int32 RSSI)	Failure_24011_195	WlanConnect LwtDiagnostic	MsmAssociation	Error		
@@ -49,23 +49,23 @@ Microsoft-Windows-WLAN-AutoConfig	13103	0	ConnectionCost13103()		LwtDiagnostic	C
 Microsoft-Windows-WLAN-AutoConfig	14000	0	task_014000(GUID InterfaceGuid, UnicodeString InterfaceDescription, Boolean Connected)		IntfContext LwtDiagnostic	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	14001	0	task_014001(GUID InterfaceGuid, UnicodeString InterfaceDescription, Boolean Joined)		IntfContext	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	14002	0	task_014002(GUID InterfaceGuid, UnicodeString InterfaceDescription, Boolean Enabled)		IntfContext ut:Configuration	task_0	Informational		
-Microsoft-Windows-WLAN-AutoConfig	14003	0	task_014003(GUID InterfaceGuid, UnicodeString InterfaceDescription, Boolean Enabled, UInt32 Result)		IntfContext Telemetry ut:Configuration	task_0	Informational		
+Microsoft-Windows-WLAN-AutoConfig	14003	0	task_014003(GUID InterfaceGuid, UnicodeString InterfaceDescription, Boolean Enabled, UInt32 Result)		IntfContext ut:Configuration	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	14004	0	task_014004(GUID InterfaceGuid, UnicodeString InterfaceDescription, UInt32 BSSType)		IntfContext ut:Configuration	task_0	Informational		
-Microsoft-Windows-WLAN-AutoConfig	14005	0	task_014005(GUID InterfaceGuid, UnicodeString InterfaceDescription, UInt32 PHY, UInt32 RadioState, UInt32 Result, UInt32 PHYCount)		IntfContext LwtDiagnostic Telemetry ut:Configuration	task_0	Informational		
+Microsoft-Windows-WLAN-AutoConfig	14005	0	task_014005(GUID InterfaceGuid, UnicodeString InterfaceDescription, UInt32 PHY, UInt32 RadioState, UInt32 Result, UInt32 PHYCount)		IntfContext LwtDiagnostic ut:Configuration	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	14006	0	task_014006(GUID InterfaceGuid, UnicodeString InterfaceDescription)		IntfContext	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	14007	0	task_014007(GUID InterfaceGuid, UnicodeString InterfaceDescription)		IntfContext	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	14008	0	task_014008(GUID InterfaceGuid, UnicodeString InterfaceDescription, UInt32 PowerSetting)		IntfContext LwtDiagnostic ut:Configuration	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	14009	0	task_014009(GUID InterfaceGuid, UnicodeString InterfaceDescription, Pointer ConnectionId)		IntfContext LwtDiagnostic ut:Configuration	task_0	Informational		
-Microsoft-Windows-WLAN-AutoConfig	14010	0	task_014010(GUID InterfaceGuid, UnicodeString InterfaceDescription)		IntfContext LwtDiagnostic Telemetry	task_0	Informational		
-Microsoft-Windows-WLAN-AutoConfig	14011	0	task_014011(GUID InterfaceGuid, UnicodeString InterfaceDescription, UInt32 PHY, UInt32 SoftwareState, UInt32 HardwareState, UInt32 PHYCount)		IntfContext LwtDiagnostic Telemetry ut:Configuration	task_0	Informational		
+Microsoft-Windows-WLAN-AutoConfig	14010	0	task_014010(GUID InterfaceGuid, UnicodeString InterfaceDescription)		IntfContext LwtDiagnostic	task_0	Informational		
+Microsoft-Windows-WLAN-AutoConfig	14011	0	task_014011(GUID InterfaceGuid, UnicodeString InterfaceDescription, UInt32 PHY, UInt32 SoftwareState, UInt32 HardwareState, UInt32 PHYCount)		IntfContext LwtDiagnostic ut:Configuration	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	14012	0	task_014012(GUID InterfaceGuid, UnicodeString InterfaceDescription)		IntfContext	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	14013	0	task_014013(GUID InterfaceGuid, UnicodeString InterfaceDescription, UnicodeString Profile)		IntfContext ut:Configuration	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	14014	0	task_014014(GUID InterfaceGuid, UnicodeString InterfaceDescription, UInt32 ConnectionResetReason)		IntfContext	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	14015	0	task_014015(GUID InterfaceGuid, UnicodeString InterfaceDescription, UInt32 OpMode, UInt32 Result)		IntfContext ut:Configuration	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	14016	0	task_014016(GUID InterfaceGuid, UnicodeString InterfaceDescription, UInt32 ConnectionMode, UInt32 Flags, UnicodeString Profile, Pointer ConnectionId)		IntfContext ut:L2ConnectPath	task_0	Informational		
-Microsoft-Windows-WLAN-AutoConfig	14017	0	task_014017(GUID InterfaceGuid, UnicodeString InterfaceDescription)		IntfContext Telemetry ut:L2ConnectPath	task_0	Informational		
-Microsoft-Windows-WLAN-AutoConfig	14018	0	task_014018(UInt32 ErrorCode, UInt32 Location, UInt32 Context, GUID InterfaceGuid, UnicodeString InterfaceDescription)		IntfContext Telemetry ut:L2ConnectPath	task_0	Error		
-Microsoft-Windows-WLAN-AutoConfig	14019	0	task_014019(GUID InterfaceGuid, UnicodeString InterfaceDescription)		IntfContext Telemetry ut:L2ConnectPath	task_0	Informational		
+Microsoft-Windows-WLAN-AutoConfig	14017	0	task_014017(GUID InterfaceGuid, UnicodeString InterfaceDescription)		IntfContext ut:L2ConnectPath	task_0	Informational		
+Microsoft-Windows-WLAN-AutoConfig	14018	0	task_014018(UInt32 ErrorCode, UInt32 Location, UInt32 Context, GUID InterfaceGuid, UnicodeString InterfaceDescription)		IntfContext ut:L2ConnectPath	task_0	Error		
+Microsoft-Windows-WLAN-AutoConfig	14019	0	task_014019(GUID InterfaceGuid, UnicodeString InterfaceDescription)		IntfContext ut:L2ConnectPath	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	14020	0	task_014020(GUID InterfaceGuid, UnicodeString InterfaceDescription)		IntfContext ut:L2ConnectPath	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	14021	0	task_014021(GUID InterfaceGuid, UnicodeString InterfaceDescription, Pointer ConnectionId, UInt32 Status, Boolean Adhoc)		IntfContext ut:L2ConnectPath ut:ClosePath	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	14022	0	task_014022(GUID InterfaceGuid, UnicodeString InterfaceDescription)		IntfContext ut:ClosePath	task_0	Informational		
@@ -75,10 +75,10 @@ Microsoft-Windows-WLAN-AutoConfig	14025	0	task_014025(GUID InterfaceGuid, Unicod
 Microsoft-Windows-WLAN-AutoConfig	14026	0	task_014026(GUID InterfaceGuid, UnicodeString InterfaceDescription, Boolean Result)		IntfContext	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	14027	0	task_014027(GUID InterfaceGuid, UnicodeString InterfaceDescription, UnicodeString Profile, UInt32 HealthCheckResult)		IntfContext	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	14028	0	task_014028(GUID InterfaceGuid, UnicodeString InterfaceDescription, UnicodeString OldProfileName, UnicodeString NewProfileName)		IntfContext ut:Configuration	task_0	Informational		
-Microsoft-Windows-WLAN-AutoConfig	14029	0	task_014029(GUID InterfaceGuid, UnicodeString InterfaceDescription)		IntfContext Telemetry	task_0	Informational		
+Microsoft-Windows-WLAN-AutoConfig	14029	0	task_014029(GUID InterfaceGuid, UnicodeString InterfaceDescription)		IntfContext	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	14030	0	task_014030(GUID InterfaceGuid, UnicodeString InterfaceDescription, UInt32 OpMode)		IntfContext	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	14031	0	task_014031(GUID InterfaceGuid, UInt32 Type)		IntfMgr	task_0	Informational		
-Microsoft-Windows-WLAN-AutoConfig	14032	0	task_014032(UInt32 ErrorCode, UInt32 Location, UInt32 Context, GUID InterfaceGuid, UnicodeString InterfaceDescription)		IntfMgr Telemetry	task_0	Error		
+Microsoft-Windows-WLAN-AutoConfig	14032	0	task_014032(UInt32 ErrorCode, UInt32 Location, UInt32 Context, GUID InterfaceGuid, UnicodeString InterfaceDescription)		IntfMgr	task_0	Error		
 Microsoft-Windows-WLAN-AutoConfig	14033	0	task_014033(GUID InterfaceGuid, UnicodeString InterfaceDescription)		IntfMgr	task_0	Warning		
 Microsoft-Windows-WLAN-AutoConfig	14034	0	task_014034(UnicodeString DeviceGuid, UnicodeString FriendlyName)		IntfMgr	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	14035	0	task_014035(UnicodeString SSID)		IntfMgr	task_0	Informational		
@@ -124,19 +124,19 @@ Microsoft-Windows-WLAN-AutoConfig	14074	0	task_014074(GUID InterfaceGuid, Boolea
 Microsoft-Windows-WLAN-AutoConfig	14075	0	task_014075(Boolean IsAutoConnectEnabled, UInt32 AutoConnectProfileCount, UInt32 AutoConnectFilterControl, Boolean IsManualConnectEnabled, UInt32 ManualConnectProfileCount, UInt32 ManualConnectFilterControl, UnicodeString InterfaceDescription)		State	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	14076	0	task_014076(Boolean IsAutoConnectEnabled, Boolean IsManualConnectEnabled, UnicodeString InterfaceDescription, UInt32 ConnectivityBlockReason)		State	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	20000	0	task_020000(GUID InterfaceGuid, UnicodeString InterfaceDescription, Pointer Session)		MSM ut:L2ConnectPath	task_0	Informational		
-Microsoft-Windows-WLAN-AutoConfig	20001	0	task_020001(GUID InterfaceGuid, UnicodeString InterfaceDescription)		MSM Telemetry ut:ClosePath	task_0	Informational		
+Microsoft-Windows-WLAN-AutoConfig	20001	0	task_020001(GUID InterfaceGuid, UnicodeString InterfaceDescription)		MSM ut:ClosePath	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	20002	0	task_020002(GUID InterfaceGuid, UnicodeString InterfaceDescription)		MSM	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	20003	0	task_020003(GUID InterfaceGuid, UnicodeString InterfaceDescription)		MSM ut:Authentication	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	20004	0	task_020004(UInt32 Reason, Pointer Session, Boolean AdHocFormed)		MSM ut:L2ConnectPath	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	20005	0	task_020005(GUID InterfaceGuid, UnicodeString InterfaceDescription, UInt32 Status, UInt32 AssocStatus)		MSM ut:Authentication	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	20006	0	task_020006(GUID InterfaceGuid, UnicodeString InterfaceDescription, UInt32 CurrState, UInt32 EventId)		MSM	task_0	Informational		
-Microsoft-Windows-WLAN-AutoConfig	20007	0	task_020007(GUID InterfaceGuid, UnicodeString InterfaceDescription, UInt32 CurrState, UInt32 NewState)		MSM Telemetry	task_0	Informational		
+Microsoft-Windows-WLAN-AutoConfig	20007	0	task_020007(GUID InterfaceGuid, UnicodeString InterfaceDescription, UInt32 CurrState, UInt32 NewState)		MSM	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	20008	0	task_020008(GUID InterfaceGuid, UnicodeString InterfaceDescription)		MSM ut:L2ConnectPath	task_0	Error		
 Microsoft-Windows-WLAN-AutoConfig	20009	0	task_020009(GUID InterfaceGuid, UnicodeString InterfaceDescription, UInt32 Quality)		MSM ut:Authentication	task_0	Informational		
-Microsoft-Windows-WLAN-AutoConfig	20010	0	task_020010(GUID InterfaceGuid, UnicodeString InterfaceDescription, Binary BSSID)		MSM Telemetry ut:Authentication	task_0	Informational		
-Microsoft-Windows-WLAN-AutoConfig	20011	0	task_020011(GUID InterfaceGuid, UnicodeString InterfaceDescription, Binary BSSID)		MSM Telemetry ut:Authentication	task_0	Informational		
+Microsoft-Windows-WLAN-AutoConfig	20010	0	task_020010(GUID InterfaceGuid, UnicodeString InterfaceDescription, Binary BSSID)		MSM ut:Authentication	task_0	Informational		
+Microsoft-Windows-WLAN-AutoConfig	20011	0	task_020011(GUID InterfaceGuid, UnicodeString InterfaceDescription, Binary BSSID)		MSM ut:Authentication	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	20012	0	task_020012(GUID InterfaceGuid, UnicodeString InterfaceDescription)		MSM ut:Authentication	task_0	Informational		
-Microsoft-Windows-WLAN-AutoConfig	20013	0	task_020013(UInt32 ErrorCode, UInt32 Location, UInt32 Context, GUID InterfaceGuid, UnicodeString InterfaceDescription)		MSM Telemetry ut:Authentication	task_0	Error		
+Microsoft-Windows-WLAN-AutoConfig	20013	0	task_020013(UInt32 ErrorCode, UInt32 Location, UInt32 Context, GUID InterfaceGuid, UnicodeString InterfaceDescription)		MSM ut:Authentication	task_0	Error		
 Microsoft-Windows-WLAN-AutoConfig	20014	0	task_020014(GUID InterfaceGuid, UnicodeString InterfaceDescription, UInt32 PacketType)		MSM ut:Authentication	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	20015	0	task_020015(UInt32 Reason, UInt32 Error)		MSM ut:Authentication	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	20016	0	task_020016(GUID InterfaceGuid, UnicodeString InterfaceDescription, UInt32 Length, Pointer Handle)		MSM ut:Authentication	task_0	Informational		
@@ -149,19 +149,19 @@ Microsoft-Windows-WLAN-AutoConfig	20022	0	task_020022(GUID InterfaceGuid)		MSM k
 Microsoft-Windows-WLAN-AutoConfig	20023	0	task_020023(GUID InterfaceGuid, UInt32 Status)		MSM keyword_400000000000	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	20024	0	task_020024(GUID InterfaceGuid, UInt32 Count)		MSM keyword_400000000000	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	20025	0	task_020025(UnicodeString Ssid, UInt32 BssidCount, UInt32 AuthAlgoId, UInt32 CipherAlgoId, UInt32 Rssi)		MSM keyword_400000000000	task_0	Informational		
-Microsoft-Windows-WLAN-AutoConfig	21001	0	task_021001(UInt32 AdapterId, GUID InterfaceGuid, Binary LocalAddr, UnicodeString FriendlyName, UInt32 PKMIDs, Boolean FourWayOffloadSupported, Boolean SafeModeSupported, Boolean SafeModeCertified)		MSMSEC Telemetry ut:Authentication	task_0	Informational		
+Microsoft-Windows-WLAN-AutoConfig	21001	0	task_021001(UInt32 AdapterId, GUID InterfaceGuid, Binary LocalAddr, UnicodeString FriendlyName, UInt32 PKMIDs, Boolean FourWayOffloadSupported, Boolean SafeModeSupported, Boolean SafeModeCertified)		MSMSEC ut:Authentication	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	21002	0	task_021002(UInt32 AdapterId, GUID InterfaceGuid, UInt32 OldState, UInt32 NewState)		MSMSEC ut:Authentication	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	21003	0	task_021003(UInt32 AdapterId, GUID InterfaceGuid)		MSMSEC ut:Authentication	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	21004	0	task_021004(UInt32 AdapterId, GUID InterfaceGuid, UInt32 AuthAlgoId, UInt32 CipherAlgoId, Boolean OneXEnabled, Boolean UICancelled)		MSMSEC ut:Authentication	task_0	Error		
 Microsoft-Windows-WLAN-AutoConfig	21005	0	task_021005(UInt32 AdapterId, GUID InterfaceGuid)		MSMSEC ut:Authentication	task_0	Error		
 Microsoft-Windows-WLAN-AutoConfig	21006	0	task_021006(UInt32 AdapterId, GUID InterfaceGuid, UInt32 ResponseType)		MSMSEC ut:Authentication	task_0	Informational		
-Microsoft-Windows-WLAN-AutoConfig	21007	0	task_021007(UInt32 AdapterId, GUID InterfaceGuid, UInt32 SessionId, UInt32 PortId, Binary PeerAddr, UInt32 Context)		MSMSEC Telemetry ut:Authentication	task_0	Informational		
+Microsoft-Windows-WLAN-AutoConfig	21007	0	task_021007(UInt32 AdapterId, GUID InterfaceGuid, UInt32 SessionId, UInt32 PortId, Binary PeerAddr, UInt32 Context)		MSMSEC ut:Authentication	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	21008	0	task_021008(UInt32 AdapterId, GUID InterfaceGuid, UInt32 SessionId, UInt32 PortId, Binary PeerAddr, UInt32 Context)		MSMSEC ut:Authentication	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	21009	0	task_021009(UInt32 ErrorCode, UInt32 Location, UInt32 Context)		MSMSEC ut:Authentication	task_0	Warning		
 Microsoft-Windows-WLAN-AutoConfig	21010	0	task_021010(UInt32 AdapterId, GUID InterfaceGuid, UInt32 SessionId, UInt32 PortId, Binary LocalAddr, Binary PeerAddr, UInt32 OldState, UInt32 NewState)		MSMSEC ut:Authentication	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	21011	0	task_021011(UInt32 AdapterId, GUID InterfaceGuid, UInt32 SessionId, UInt32 PortId, Binary PeerAddr, UInt32 Context)		MSMSEC ut:Authentication	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	21012	0	task_021012(UInt32 SessionId, UInt32 OldState, UInt32 NewState)		MSMSEC ut:Authentication	task_0	Informational		
-Microsoft-Windows-WLAN-AutoConfig	21013	0	task_021013(UInt32 SessionId, UInt32 Reason, UInt32 Error)		MSMSEC Telemetry ut:Authentication	task_0	Error		
+Microsoft-Windows-WLAN-AutoConfig	21013	0	task_021013(UInt32 SessionId, UInt32 Reason, UInt32 Error)		MSMSEC ut:Authentication	task_0	Error		
 Microsoft-Windows-WLAN-AutoConfig	21014	0	task_021014(UInt32 SessionId)		MSMSEC ut:Authentication	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	21015	0	task_021015(UInt32 AdapterId, GUID InterfaceGuid, UInt32 SessionId, UInt32 PortId, Binary LocalAddr, Binary PeerAddr, UInt32 OldState, UInt32 NewState)		MSMSEC ut:Authentication	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	21016	0	task_021016(UInt32 AdapterId, GUID InterfaceGuid, UInt32 SessionId, UInt32 PortId, Binary LocalAddr, Binary PeerAddr, UInt32 Timeout)		MSMSEC ut:Authentication keyword_40000000000	task_0	Informational		
@@ -177,7 +177,7 @@ Microsoft-Windows-WLAN-AutoConfig	21025	0	task_021025(UInt32 PortId, Binary Peer
 Microsoft-Windows-WLAN-AutoConfig	21026	0	task_021026(Binary PeerAddr, UInt32 EtherType, UInt32 Size, UInt32 Context)		MSMSEC ut:Authentication keyword_40000000000	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	21027	0	task_021027(UInt32 SessionId, GUID PageClsId, UInt32 RequestType)		MSMSEC ut:Authentication	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	21028	0	task_021028(UInt32 AdapterId, GUID InterfaceGuid, Binary LocalAddr, UnicodeString SSID)		MSMSEC ut:Authentication	task_0	Informational		
-Microsoft-Windows-WLAN-AutoConfig	21029	0	task_021029(UInt32 AdapterId, GUID InterfaceGuid)		MSMSEC Telemetry ut:Authentication	task_0	Informational		
+Microsoft-Windows-WLAN-AutoConfig	21029	0	task_021029(UInt32 AdapterId, GUID InterfaceGuid)		MSMSEC ut:Authentication	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	21030	0	task_021030(UInt32 AdapterId, GUID InterfaceGuid, Binary PeerAddr)		MSMSEC ut:Authentication	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	21031	0	task_021031(UInt32 AdapterId, GUID InterfaceGuid, Binary PeerAddr)		MSMSEC ut:Authentication	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	21032	0	task_021032(UInt32 AdapterId, GUID InterfaceGuid, Binary PeerAddr, UInt32 EtherType, UInt32 Size, UInt32 Context)		MSMSEC ut:Authentication keyword_40000000000	task_0	Informational		
@@ -192,7 +192,7 @@ Microsoft-Windows-WLAN-AutoConfig	21040	0	task_021040(UInt32 ErrorCode, UInt32 L
 Microsoft-Windows-WLAN-AutoConfig	21041	0	task_021041()		MSMSEC ut:Authentication ut:Global	task_0	Error		
 Microsoft-Windows-WLAN-AutoConfig	21042	0	task_021042(UInt32 AdapterId, GUID InterfaceGuid, UInt32 SessionId, UInt32 OldState, UInt32 NewState)		MSMSEC ut:Authentication	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	21043	0	task_021043(UInt32 AdapterId, GUID InterfaceGuid, UInt32 SessionId, UInt32 PortId, Binary LocalAddr, Binary PeerAddr, UInt32 Timeout)		MSMSEC ut:Authentication	task_0	Informational		
-Microsoft-Windows-WLAN-AutoConfig	21044	0	task_021044(UInt32 SessionId, UInt32 Reason, UInt32 Error)		MSMSEC Telemetry ut:Authentication	task_0	Error		
+Microsoft-Windows-WLAN-AutoConfig	21044	0	task_021044(UInt32 SessionId, UInt32 Reason, UInt32 Error)		MSMSEC ut:Authentication	task_0	Error		
 Microsoft-Windows-WLAN-AutoConfig	21045	0	task_021045(UInt32 SessionId)		MSMSEC ut:Authentication	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	21046	0	task_021046(UInt32 AdapterId, GUID InterfaceGuid, UInt32 SessionId, UInt32 PortId, Binary LocalAddr, Binary PeerAddr, Boolean RapidRekey)		MSMSEC ut:Authentication ut:Global	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	21047	0	task_021047(UInt32 AdapterId, GUID InterfaceGuid, UInt32 SessionId, UInt32 PortId, Binary LocalAddr, Binary PeerAddr, UInt32 Timeout)		MSMSEC ut:Authentication	task_0	Informational		
@@ -204,7 +204,7 @@ Microsoft-Windows-WLAN-AutoConfig	21052	0	task_021052(UInt32 AdapterId, GUID Int
 Microsoft-Windows-WLAN-AutoConfig	21053	0	task_021053(UInt32 AdapterId, GUID InterfaceGuid, UInt32 SessionId, UInt32 PortId, Binary LocalAddr, Binary PeerAddr, UInt32 Timeout)		MSMSEC ut:Authentication keyword_40000000000	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	21054	0	task_021054(UInt32 AdapterId, GUID InterfaceGuid, UInt32 SessionId, UInt32 PortId, Binary LocalAddr, Binary PeerAddr, UInt32 Timeout)		MSMSEC ut:Authentication keyword_40000000000	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	21055	0	task_021055(UInt32 AdapterId, GUID InterfaceGuid, UInt32 SessionId, UInt32 PortId, Binary LocalAddr, Binary PeerAddr, Boolean FastRoam)		MSMSEC ut:Authentication	task_0	Informational		
-Microsoft-Windows-WLAN-AutoConfig	21056	0	task_021056(UInt32 ErrorCode, UInt32 Location, UInt32 Context)		MSMSEC Telemetry ut:Authentication	task_0	Error		
+Microsoft-Windows-WLAN-AutoConfig	21056	0	task_021056(UInt32 ErrorCode, UInt32 Location, UInt32 Context)		MSMSEC ut:Authentication	task_0	Error		
 Microsoft-Windows-WLAN-AutoConfig	21057	0	task_021057(UInt32 AdapterId, GUID InterfaceGuid, UInt32 SessionId, UInt32 PortId, Binary LocalAddr, Binary PeerAddr, UInt32 OldState, UInt32 NewState)		MSMSEC ut:Authentication	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	21058	0	task_021058(UInt32 AdapterId, GUID InterfaceGuid, UInt32 SessionId, UInt32 PortId, Binary LocalAddr, Binary PeerAddr, UInt32 Timeout)		MSMSEC ut:Authentication	task_0	Informational		
 Microsoft-Windows-WLAN-AutoConfig	21059	0	task_021059(UInt32 AdapterId, GUID InterfaceGuid, UInt32 SessionId, UInt32 PortId, Binary LocalAddr, Binary PeerAddr, UInt32 Timeout)		MSMSEC ut:Authentication keyword_40000000000	task_0	Informational		
@@ -244,7 +244,7 @@ Microsoft-Windows-WLAN-AutoConfig	30102	0	Perftrack_WfdPairStart(UInt32 RequestI
 Microsoft-Windows-WLAN-AutoConfig	30103	0	Perftrack_WfdPairStop(UInt32 RequestId, UInt32 WFDPairReturnCode)	Stop		Perftrack_WfdPair	Informational		
 Microsoft-Windows-WLAN-AutoConfig	30104	0	WLANConnecttonetworkStop(GUID InterfaceGuid)	Stop		WLANConnecttonetwork	Informational		
 Microsoft-Windows-WLAN-AutoConfig	30105	0	task_030105(UInt32 ReturnValue, UInt32 ReasonCode)			task_0	Error		
-Microsoft-Windows-WLAN-AutoConfig	40001	0	AcmConnection40001(GUID InterfaceGuid, UnicodeString InterfaceDescription, UInt32 ConnectionMode, UnicodeString SSID, UInt32 BSSType, UInt32 AuthAlgo, UInt32 CipherAlgo, UInt32 OnexEnabled, UInt32 IHVBitmap, Boolean NonBroadcast, UnicodeString PeerMAC, UInt32 WLANStatusCode, UInt32 DetailedStatusCode, UInt32 AssocDuration, UInt32 AssocRestartCount, UInt32 AuthDuration, UInt32 AuthRestartCount, UnicodeString DeviceID, UnicodeString DriverVersion, UnicodeString DriverService, Int32 RSSI, Int32 SignalQualityPercentage, Int32 Channel, Int32 InterferingAPCount, Int32 TotalVisibleAPCount, UnicodeString APPhyType, Int32 APMaxChannelWidth, AnsiString APDescription, AnsiString APManufacturer, AnsiString APModelName, AnsiString APModelNum, UInt32 DetailedStatusCodeOnRoam, Int32 RxRate, Int32 TxRate, Int32 EAPType, UnicodeString OneXAuthMode, Boolean HotSpot20IEPresent, UnicodeString DeviceMfg, Int32 ProfileTypeUsed, UInt32 SystemRandomizationStatus, UInt32 ProfileRandomizationStatus, UInt64 ConnectionFlags, SYSTEMTIME DriverDate)		LwtDiagnostic Measures	AcmConnection	Informational		
+Microsoft-Windows-WLAN-AutoConfig	40001	0	AcmConnection40001(GUID InterfaceGuid, UnicodeString InterfaceDescription, UInt32 ConnectionMode, UnicodeString SSID, UInt32 BSSType, UInt32 AuthAlgo, UInt32 CipherAlgo, UInt32 OnexEnabled, UInt32 IHVBitmap, Boolean NonBroadcast, UnicodeString PeerMAC, UInt32 WLANStatusCode, UInt32 DetailedStatusCode, UInt32 AssocDuration, UInt32 AssocRestartCount, UInt32 AuthDuration, UInt32 AuthRestartCount, UnicodeString DeviceID, UnicodeString DriverVersion, UnicodeString DriverService, Int32 RSSI, Int32 SignalQualityPercentage, Int32 Channel, Int32 InterferingAPCount, Int32 TotalVisibleAPCount, UnicodeString APPhyType, Int32 APMaxChannelWidth, AnsiString APDescription, AnsiString APManufacturer, AnsiString APModelName, AnsiString APModelNum, UInt32 DetailedStatusCodeOnRoam, Int32 RxRate, Int32 TxRate, Int32 EAPType, UnicodeString OneXAuthMode, Boolean HotSpot20IEPresent, UnicodeString DeviceMfg, Int32 ProfileTypeUsed, UInt32 SystemRandomizationStatus, UInt32 ProfileRandomizationStatus, UInt64 ConnectionFlags, SYSTEMTIME DriverDate)		LwtDiagnostic	AcmConnection	Informational		
 Microsoft-Windows-WLAN-AutoConfig	40002	0	AcmConnection40002(GUID InterfaceGuid, UInt32 DisconnectExtensions, UInt32 RoamExtensions, UInt32 SuspectDurationMs, Boolean BssidChanged, UInt32 DetectionLinkQuality, UInt32 CurrentLinkQuality, Int32 MacTxUnicastCount, Int32 MacRxUnicastCount, Int32 MacRxMulticastCount, Int32 MacRxUnicastDecryptSuccess, Int32 MacRxUnicastDecryptFailure, Int32 PhyTxFailedCount, Int32 PhyTxFrameCount, Int32 PhyTxRetryCount, Int32 PhyRxFrameCount, Int32 PhyRxFcsErrorCount, UInt32 CurrentTxRate, UInt32 CurrentRxRate)		LwtDiagnostic	AcmConnection	Informational		
 Microsoft-Windows-WLAN-AutoConfig	40003	0	AcmConnection40003(GUID InterfaceGuid, UInt32 DiagnosticStatsDifferenceTrigger, Int32 MacTxUnicastCount, Int32 MacRxUnicastCount, Int32 MacRxMulticastCount, Int32 MacRxUnicastDecryptSuccess, Int32 MacRxUnicastDecryptFailure, Int32 PhyTxFailedCount, Int32 PhyTxFrameCount, Int32 PhyTxRetryCount, Int32 PhyRxFrameCount, Int32 PhyRxFcsErrorCount, UInt64 TimeDiffMs)		LwtDiagnostic	AcmConnection	Informational		
 Microsoft-Windows-WLAN-AutoConfig	60001	0	task_060001(UInt32 ErrorCode, UInt32 Location, UInt32 Context)			task_0	Error		

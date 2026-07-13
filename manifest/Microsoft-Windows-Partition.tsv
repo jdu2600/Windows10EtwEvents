@@ -4,4 +4,13 @@ Microsoft-Windows-Partition	1002	0	task_01002(UInt32 DiskNumber, UInt32 ControlC
 Microsoft-Windows-Partition	1003	0	task_01003(Pointer Process, UInt64 IncrementEnergy, UInt64 SrvTime, UInt64 EndByteOffset, UInt32 IoSize, UInt8 LastIdleState, UInt8 IsRandom)		power	task_0	Informational		
 Microsoft-Windows-Partition	1004	0	task_01004(Pointer Process, UInt64 IncrementEnergy, UInt64 IdleTime, UInt8 LastIdleState)		power	task_0	Informational		
 Microsoft-Windows-Partition	1005	0	task_01005(UInt64 LocalLastCompTime, UInt64 SharedLastCompTime, UInt64 CompTime)		power	task_0	Informational		
-Microsoft-Windows-Partition	1007	0	task_01007(UInt32 SpStatus, UInt32 OperationStatus, UInt32 WnfStatus)			task_0	Informational		
+Microsoft-Windows-Partition	1007	0	task_01007(UInt32 DiskNumber, UInt32 HiddenPartitionsCount, UInt32 HiddenPartitions)			task_0	Informational		
+Microsoft-Windows-Partition	1008	0	task_01008(UInt32 DiskNumber, UInt32 PartitionNumber)			task_0	Informational		
+Microsoft-Windows-Partition	1009	0	task_01009(UInt32 DiskNumber, UInt32 PartitionNumber)			task_0	Informational		
+Microsoft-Windows-Partition	5000	0	task_05000(UInt32 DiskNumber, HexInt32 Flags, HexInt32 Status, AnsiString Caller)			task_0	Informational		
+Microsoft-Windows-Partition	5001	0	task_05001(UInt32 DiskNumber, HexInt32 Flags, UInt32 Iteration)			task_0	Informational		
+Microsoft-Windows-Partition	5002	0	task_05002(UInt32 DiskNumber)			task_0	Informational		
+Microsoft-Windows-Partition	5003	0	task_05003(UInt32 DiskNumber, Pointer Irp)			task_0	Informational		
+Microsoft-Windows-Partition	5004	0	task_05004(UInt32 DiskNumber, Pointer Irp, HexInt32 Status)			task_0	Informational		
+Microsoft-Windows-Partition	5005	0	task_05005(UInt32 DiskNumber, Pointer Irp)			task_0	Informational		
+Microsoft-Windows-Partition	5006	0	task_05006(UInt32 DiskNumber, Pointer Irp)			task_0	Informational		

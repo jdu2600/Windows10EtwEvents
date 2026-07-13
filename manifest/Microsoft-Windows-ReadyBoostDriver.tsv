@@ -3,7 +3,7 @@ Microsoft-Windows-ReadyBoostDriver	1	2	StoreReadStart_V2(UInt64 ByteOffset, Poin
 Microsoft-Windows-ReadyBoostDriver	2	1	StoreReadStop_V1(Pointer Irp, UInt32 Status)	Stop	StoreOps	StoreRead	Informational		
 Microsoft-Windows-ReadyBoostDriver	3	2	StoreAdd_V2(UInt64 DataKey, Pointer DataMgr, UInt32 StoreOffset, UInt16 CompressedSize, UInt16 Flags)		StoreOps	StoreAdd	Informational		
 Microsoft-Windows-ReadyBoostDriver	4	1	StoreRemove_V1(UInt64 DataKey, Pointer DataMgr, UInt32 StoreOffset)		StoreOps	StoreRemove	Informational		
-Microsoft-Windows-ReadyBoostDriver	6	1	StoreDelete_V1(Pointer StoreKey)		StoreOps	StoreDelete	Informational		
+Microsoft-Windows-ReadyBoostDriver	6	1	StoreDelete_V1(Pointer StoreKey)		StoreSummary	StoreDelete	Informational		
 Microsoft-Windows-ReadyBoostDriver	8	1	VolumeMapRundown_V1(UInt16 VolumeId, UInt16 VolumeNameLength, UnicodeString VolumePath)		StoreOps	VolumeMapRundown	Informational		
 Microsoft-Windows-ReadyBoostDriver	9	1	VolumeMapCreate_V1(UInt16 VolumeId, UInt16 VolumeNameLength, UnicodeString VolumePath)		StoreOps	VolumeMapCreate	Informational		
 Microsoft-Windows-ReadyBoostDriver	10	1	VolumeMapRemove_V1(UInt16 VolumeId, UInt16 VolumeNameLength, UnicodeString VolumePath)		StoreOps	VolumeMapRemove	Informational		

@@ -24,7 +24,7 @@ Microsoft-Windows-Hyper-V-Netvsc	35	0	PdApi35(UInt32 Status, Pointer ClientConte
 Microsoft-Windows-Hyper-V-Netvsc	36	0	PdApi36(Pointer ClientContext)			PdApi	Informational		
 Microsoft-Windows-Hyper-V-Netvsc	37	0	NdkOpenAdapter(UInt32 Status, UInt32 failureReason, UInt32 MiniportNameLen, UnicodeString MiniportName)			NdkOpenAdapter	Error		
 Microsoft-Windows-Hyper-V-Netvsc	38	0	NdkPnPEvent(UInt32 Status, UInt32 NetEvent, UInt32 failureReason, UInt32 MiniportNameLen, UnicodeString MiniportName)			NdkPnPEvent	Error		
-Microsoft-Windows-Hyper-V-Netvsc	39	0	VfBindAdapter(UInt32 Status, UInt32 failureReason)			VfBindAdapter	Error		
+Microsoft-Windows-Hyper-V-Netvsc	39	0	VfBindAdapter(UInt32 Status, UInt32 failureReason, UInt32 VfSerialNumber, UInt32 LowestIfIndex, UInt32 MiniportNameLen, UnicodeString MiniportName)			VfBindAdapter	Error		
 Microsoft-Windows-Hyper-V-Netvsc	40	0	task_040(UInt32 Task, UInt32 MemoryRequired)			task_0	Error		
 Microsoft-Windows-Hyper-V-Netvsc	41	0	task_041(UInt32 Status, Boolean RequestHandled, UInt32 IfIndex, UInt32 MiniportNameLen, UnicodeString MiniportName, UInt32 VfAdapterNameLen, UnicodeString VfAdapterName)			task_0	Informational		
 Microsoft-Windows-Hyper-V-Netvsc	42	0	task_042(UInt32 Status, Boolean RequestHandled, UInt32 IfIndex, UInt32 MiniportNameLen, UnicodeString MiniportName, UInt32 VfAdapterNameLen, UnicodeString VfAdapterName)			task_0	Error		
@@ -35,3 +35,28 @@ Microsoft-Windows-Hyper-V-Netvsc	46	0	task_046(UInt32 VfAdapterNameLen, UnicodeS
 Microsoft-Windows-Hyper-V-Netvsc	47	0	task_047(UInt32 VfAdapterNameLen, UnicodeString VfAdapterName)			task_0	Informational		
 Microsoft-Windows-Hyper-V-Netvsc	48	0	task_048(UInt32 VfAdapterNameLen, UnicodeString VfAdapterName)			task_0	Warning		
 Microsoft-Windows-Hyper-V-Netvsc	49	0	task_049(UInt32 Status)			task_0	Error		
+Microsoft-Windows-Hyper-V-Netvsc	50	0	VfBindAdapter50(UInt32 VfSerialNumber, UInt32 LowestIfIndex, UInt32 NdkState, UInt32 MiniportNameLen, UnicodeString MiniportName)			VfBindAdapter	Informational		
+Microsoft-Windows-Hyper-V-Netvsc	51	0	task_051(UInt32 Status, UInt32 VfSerialNumber, UInt32 failureReason)			task_0	Error		
+Microsoft-Windows-Hyper-V-Netvsc	52	0	task_052(UInt32 VfSerialNumber, UInt32 VfAdapterNameLen, UnicodeString VfAdapterName)			task_0	Informational		
+Microsoft-Windows-Hyper-V-Netvsc	53	0	task_053(UInt32 Status, UInt32 VfSerialNumber, UInt8 VmDataPathActive, UInt32 VfAdapterNameLen, UnicodeString VfAdapterName, UInt32 MiniportNameLen, UnicodeString MiniportName)			task_0	Error		
+Microsoft-Windows-Hyper-V-Netvsc	54	0	task_054(UInt32 VfSerialNumber, UInt8 VmDataPathActive, UInt32 VfAdapterNameLen, UnicodeString VfAdapterName, UInt32 MiniportNameLen, UnicodeString MiniportName)			task_0	Informational		
+Microsoft-Windows-Hyper-V-Netvsc	55	0	task_055(UInt32 Status, UInt32 VfSerialNumber)			task_0	Error		
+Microsoft-Windows-Hyper-V-Netvsc	56	0	task_056(UInt32 VfSerialNumber, UInt32 VfAdapterNameLen, UnicodeString VfAdapterName)			task_0	Informational		
+Microsoft-Windows-Hyper-V-Netvsc	57	0	task_057(UInt32 Status, UInt32 VfSerialNumber, UInt32 LowestIfIndex, UInt32 MiniportNameLen, UnicodeString MiniportName)			task_0	Error		
+Microsoft-Windows-Hyper-V-Netvsc	58	0	task_058(UInt32 VfSerialNumber, UInt32 LowestIfIndex, UInt32 MiniportNameLen, UnicodeString MiniportName)			task_0	Informational		
+Microsoft-Windows-Hyper-V-Netvsc	59	0	task_059(UnicodeString MiniportName, UInt32 VfSerialNumber, Boolean VfAssociated, Boolean VfDatapathActive, Binary VfMacAddress)			task_0	Informational		
+Microsoft-Windows-Hyper-V-Netvsc	60	0	task_060(Binary VfMacAddress, Boolean VfDatapathActive, Binary RequestMacAddress, UInt32 Status)			task_0	Error		
+Microsoft-Windows-Hyper-V-Netvsc	61	0	task_061(UInt32 IoctlControlCode, UInt32 Status)			task_0	Error		
+Microsoft-Windows-Hyper-V-Netvsc	62	0	task_062(UInt32 IoControlCode)			task_0	Informational		
+Microsoft-Windows-Hyper-V-Netvsc	63	0	task_063(UInt32 IoControlCode, UInt32 IoctlVersion, UInt32 Status, UInt32 IoctlInputElementCount)			task_0	Informational		
+Microsoft-Windows-Hyper-V-Netvsc	64	0	task_064(Pointer Pointer, UInt32 Status)			task_0	Error		
+Microsoft-Windows-Hyper-V-Netvsc	65	0	task_065(Pointer Pointer, UInt32 Status)			task_0	Error		
+Microsoft-Windows-Hyper-V-Netvsc	66	0	task_066(UInt32 IoctlCode, UInt32 Status)			task_0	Informational		
+Microsoft-Windows-Hyper-V-Netvsc	67	0	task_067(Binary VfMacAddress, UInt32 Status)			task_0	Informational		
+Microsoft-Windows-Hyper-V-Netvsc	68	0	task_068(Binary VfMacAddress, UInt32 Status)			task_0	Error		
+Microsoft-Windows-Hyper-V-Netvsc	69	0	task_069(UInt32 Status)			task_0	Error		
+Microsoft-Windows-Hyper-V-Netvsc	70	0	task_070(UnicodeString VfLocationPath, UInt32 Status)			task_0	Informational		
+Microsoft-Windows-Hyper-V-Netvsc	71	0	task_071(Binary VfMacAddress, UInt32 Status)			task_0	Informational		
+Microsoft-Windows-Hyper-V-Netvsc	72	0	task_072(Binary VfMacAddress, UInt32 Status)			task_0	Warning		
+Microsoft-Windows-Hyper-V-Netvsc	73	0	task_073(UInt32 Status)			task_0	Informational		
+Microsoft-Windows-Hyper-V-Netvsc	74	0	task_074(UInt32 Status, UInt32 UniqueEventValue)			task_0	Error		

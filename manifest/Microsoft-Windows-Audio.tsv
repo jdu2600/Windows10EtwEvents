@@ -72,11 +72,11 @@ Microsoft-Windows-Audio	112	0	MidiRT:PerformSynchronousI/OStop(Pointer object, U
 Microsoft-Windows-Audio	113	0	MidiRT:PerformAsynchronousI/OStart(Pointer object, UInt32 ioControlCode)	Start		MidiRT:PerformAsynchronousI/O	Informational		
 Microsoft-Windows-Audio	114	0	MidiRT:PerformAsynchronousI/OStop(Pointer object, UInt32 hResult)	Stop		MidiRT:PerformAsynchronousI/O	Informational		
 Microsoft-Windows-Audio	115	0	CrossProcesspacketadded(Pointer CrossProcessInstance, UInt32 ReadIndex, UInt32 WriteIndexIndex, UInt32 FramesInPacket, UInt64 QPC)			CrossProcesspacketadded	Verbose		
-Microsoft-Windows-Audio	116	1	Pump:settingdeadline_V1(Pointer PumpInstance, Int64 Hns, Boolean success)			Pump:settingdeadline	Verbose		
-Microsoft-Windows-Audio	117	1	Pump:cancellingdeadline_V1(Pointer PumpInstance, Int64 Hns, Boolean success)			Pump:cancellingdeadline	Verbose		
-Microsoft-Windows-Audio	118	1	Pump:misseddeadline!_V1(Pointer PumpInstance, Int64 Hns, Boolean success)			Pump:misseddeadline!	Informational		
-Microsoft-Windows-Audio	119	1	Pump:MultiMediamodeStart_V1(Pointer PumpInstance, Int64 Hns, Boolean success)	Start		Pump:MultiMediamode	Verbose		
-Microsoft-Windows-Audio	120	1	Pump:MultiMediamodeStop_V1(Pointer PumpInstance, Int64 Hns, Boolean success)	Stop		Pump:MultiMediamode	Verbose		
+Microsoft-Windows-Audio	116	3	Pump:settingdeadline_V3(Pointer PumpInstance, UInt32 TaskGroup, Int64 SoftDeadlineHns, Int64 HardDeadlineHns, Boolean success)			Pump:settingdeadline	Verbose		
+Microsoft-Windows-Audio	117	2	Pump:cancellingdeadline_V2(Pointer PumpInstance, UInt32 TaskGroup, Int64 Hns, Boolean success)			Pump:cancellingdeadline	Verbose		
+Microsoft-Windows-Audio	118	2	Pump:misseddeadline!_V2(Pointer PumpInstance, UInt32 TaskGroup, Int64 Hns, Boolean success)			Pump:misseddeadline!	Informational		
+Microsoft-Windows-Audio	119	2	Pump:MultiMediamodeStart_V2(Pointer PumpInstance, UInt32 TaskGroup, Int64 Hns, Boolean success)	Start		Pump:MultiMediamode	Verbose		
+Microsoft-Windows-Audio	120	2	Pump:MultiMediamodeStop_V2(Pointer PumpInstance, UInt32 TaskGroup, Int64 Hns, Boolean success)	Stop		Pump:MultiMediamode	Verbose		
 Microsoft-Windows-Audio	121	0	EndpointCharacteristicsDiscoveryStart(UnicodeString EndpointId)	Start		EndpointCharacteristicsDiscovery	Informational		
 Microsoft-Windows-Audio	122	0	EndpointCharacteristicsDiscoveryStop(UnicodeString EndpointId, HexInt32 hr)	Stop		EndpointCharacteristicsDiscovery	Informational		
 Microsoft-Windows-Audio	123	0	GetMixFormatevaluationStart(UnicodeString EndpointId, UInt32 category, Boolean Raw, Boolean MatchFormat, UInt32 ConnectorType)	Start		GetMixFormatevaluation	Informational		
@@ -100,7 +100,6 @@ Microsoft-Windows-Audio	140	0	Pump:ProcPassDuration(Pointer PumpInstance, Int64 
 Microsoft-Windows-Audio	141	0	AEObject(Pointer objInstance, UInt32 ucType)			AEObject	Informational		
 Microsoft-Windows-Audio	142	0	AEGlitch(Pointer objInstance, UInt32 ucType, Int64 WritePosition, UInt64 PlayPosition, UInt64 StreamPosition, UInt64 GlitchFrameCount)			AEGlitch	Verbose		
 Microsoft-Windows-Audio	143	0	AEDrop(Pointer objInstance, UInt64 SampleTime, UInt64 u64ByteCount)			AEDrop	Verbose		
-Microsoft-Windows-Audio	144	0	AECPUUsage(Pointer objInstance, UInt32 ucType)			AECPUUsage	Verbose		
 Microsoft-Windows-Audio	145	0	AEControl(Pointer objInstance, UInt32 ucType, UInt64 ProcessTime)			AEControl	Verbose		
 Microsoft-Windows-Audio	146	0	AEPosition(Pointer objInstance, UInt32 ucType, UInt64 WritePosition, UInt64 PlayPosition, UInt64 StreamPosition, UInt64 LoopPosition)			AEPosition	Verbose		
 Microsoft-Windows-Audio	147	0	AESecurity(Pointer objInstance)			AESecurity	Verbose		
@@ -118,3 +117,22 @@ Microsoft-Windows-Audio	158	0	SetCurrentTimeStamp(Pointer objInstance, UInt32 AE
 Microsoft-Windows-Audio	159	0	Writinghistorypacket(Pointer objInstance, UInt32 FrameCount, UInt32 ApoBufferFlags, UInt64 Qpc)			Writinghistorypacket	Verbose		
 Microsoft-Windows-Audio	160	0	Signalpumppasscompletion(Pointer objInstance, UInt32 ClientProcessId, Pointer EventHandle)			Signalpumppasscompletion	Verbose		
 Microsoft-Windows-Audio	161	0	Pump:Processingpassskipped(Pointer objInstance, Int64 DurationToProcess)			Pump:Processingpassskipped	Verbose		
+Microsoft-Windows-Audio	162	0	Pump:GetCurrentPaddingStart(Pointer PumpInstance)	Start		Pump:GetCurrentPadding	Verbose		
+Microsoft-Windows-Audio	163	0	Pump:GetCurrentPaddingStop(Pointer PumpInstance, UInt64 CurrentPadding, UInt64 DurationToProcess)	Stop		Pump:GetCurrentPadding	Verbose		
+Microsoft-Windows-Audio	164	1	AEAPOCalcInputFramesStart_V1(Pointer objInstance, GUID APO_CLSID)	Start		AEAPOCalcInputFrames	Verbose		
+Microsoft-Windows-Audio	165	0	AEAPOCalcInputFramesStop(Pointer objInstance, GUID APO_CLSID)	Stop		AEAPOCalcInputFrames	Verbose		
+Microsoft-Windows-Audio	166	0	AEAPOProcessStart(Pointer objInstance, GUID APO_CLSID)	Start		AEAPOProcess	Verbose		
+Microsoft-Windows-Audio	167	0	AEAPOProcessStop(Pointer objInstance, GUID APO_CLSID)	Stop		AEAPOProcess	Verbose		
+Microsoft-Windows-Audio	168	0	Pump:MultiMediamodeskippedStart(Pointer PumpInstance, UInt32 TaskGroup, Int64 Hns, Boolean success)	Start		Pump:MultiMediamodeskipped	Verbose		
+Microsoft-Windows-Audio	169	0	Pump:MultiMediamodeskippedStop(Pointer PumpInstance, UInt32 TaskGroup, Int64 Hns, Boolean success)	Stop		Pump:MultiMediamodeskipped	Verbose		
+Microsoft-Windows-Audio	170	0	Pump:TimedSpinStart(Pointer PumpInstance, UInt32 Duration)	Start		Pump:TimedSpin	Verbose		
+Microsoft-Windows-Audio	171	0	Pump:TimedSpinStop(Pointer PumpInstance, UInt32 Duration)	Stop		Pump:TimedSpin	Verbose		
+Microsoft-Windows-Audio	172	0	Pump:AttachtoMMCSSStart(UInt32 TaskGroupID, UInt32 threadID)	Start		Pump:AttachtoMMCSS	Verbose		
+Microsoft-Windows-Audio	173	0	Pump:AttachtoMMCSSStop(UInt32 TaskGroupID, UInt32 threadID)	Stop		Pump:AttachtoMMCSS	Verbose		
+Microsoft-Windows-Audio	174	0	Pump:InitRTMode(Pointer objInstance, UInt32 RTMode, Boolean ProAudio, UInt32 PumpQueueID, UInt32 PumpTaskID, UInt32 APOQueueID, UInt32 APOTaskID)			Pump:InitRTMode	Verbose		
+Microsoft-Windows-Audio	175	0	Pump:CreateLocalWorkQueue(Pointer objInstance, UInt32 QueueID, UInt32 TaskID)			Pump:CreateLocalWorkQueue	Verbose		
+Microsoft-Windows-Audio	176	0	Pump:GetAPOWorkqueue(Pointer objInstance, UInt32 RTMode, UInt32 APOQueueID, UInt32 APOTaskID)			Pump:GetAPOWorkqueue	Verbose		
+Microsoft-Windows-Audio	177	0	EVT_Console_Locked_task(UInt32 SessionId, Boolean ConsoleLocked, Boolean ChangeInLockStatus)			EVT_Console_Locked_task	Informational		
+Microsoft-Windows-Audio	178	0	EVT_GlobalUser_Presence_task(UInt32 SessionId)			EVT_GlobalUser_Presence_task	Informational		
+Microsoft-Windows-Audio	179	0	EVT_Session_Display_State_task(UInt32 SessionId, Boolean SessionDisplayOn, Boolean ChangeInSessionDisplayStatus)			EVT_Session_Display_State_task	Informational		
+Microsoft-Windows-Audio	180	0	EVT_Po_AudioStandby_Request_task(UInt32 AudioStandbyPolicy)			EVT_Po_AudioStandby_Request_task	Informational		

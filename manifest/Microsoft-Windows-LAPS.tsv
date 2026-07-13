@@ -20,8 +20,8 @@ Microsoft-Windows-LAPS	10017	0	task_010017(HexInt32 Data1)			task_0	Error
 Microsoft-Windows-LAPS	10018	0	task_010018()			task_0	Informational		
 Microsoft-Windows-LAPS	10019	0	task_010019(UnicodeString Data1, HexInt32 Data2, HexInt32 Data3)			task_0	Error		
 Microsoft-Windows-LAPS	10020	0	task_010020(UnicodeString Data1, HexInt32 Data2)			task_0	Informational		
-Microsoft-Windows-LAPS	10021	0	task_010021(UnicodeString PolicySource, UnicodeString BackupDirectory, UnicodeString AdminAccountName, Int32 PasswordAgeDays, Int32 PasswordComplexity, Int32 PasswordLength, Int32 PasswordExpirationProtectionEnabled, Int32 PasswordEncryptionEnabled, UnicodeString PasswordEncryptionTargetPrincipal, Int32 PasswordEncryptionHistorySize, Int32 BackupDSRMPassword, Int32 PostAuthResetDelay, HexInt32 PostAuthActions)			task_0	Informational		
-Microsoft-Windows-LAPS	10022	0	task_010022(UnicodeString PolicySource, UnicodeString BackupDirectory, UnicodeString AdminAccountName, Int32 PasswordAgeDays, Int32 PasswordComplexity, Int32 PasswordLength, Int32 PostAuthResetDelay, HexInt32 PostAuthActions)			task_0	Informational		
+Microsoft-Windows-LAPS	10021	0	task_010021(UnicodeString PolicySource, UnicodeString BackupDirectory, UnicodeString AdminAccountName, Int32 PasswordAgeDays, Int32 PasswordComplexity, Int32 PasswordLength, Int32 PasswordExpirationProtectionEnabled, Int32 PasswordEncryptionEnabled, UnicodeString PasswordEncryptionTargetPrincipal, Int32 PasswordEncryptionHistorySize, Int32 BackupDSRMPassword, Int32 PostAuthResetDelay, HexInt32 PostAuthActions, Int32 AutomaticAccountManagementEnabled, UnicodeString AutomaticAccountManagementTarget, UnicodeString AutomaticAccountManagementNameOrPrefix, Int32 AutomaticAccountManagementEnableAccount, Int32 AutomaticAccountManagementRandomizeName)			task_0	Informational		
+Microsoft-Windows-LAPS	10022	0	task_010022(UnicodeString PolicySource, UnicodeString BackupDirectory, UnicodeString AdminAccountName, Int32 PasswordAgeDays, Int32 PasswordComplexity, Int32 PasswordLength, Int32 PostAuthResetDelay, HexInt32 PostAuthActions, Int32 AutomaticAccountManagementEnabled, UnicodeString AutomaticAccountManagementTarget, UnicodeString AutomaticAccountManagementNameOrPrefix, Int32 AutomaticAccountManagementEnableAccount, Int32 AutomaticAccountManagementRandomizeName)			task_0	Informational		
 Microsoft-Windows-LAPS	10023	0	task_010023(UnicodeString PolicySource, UnicodeString BackupDirectory, UnicodeString AdminAccountName, Int32 PasswordAgeDays, Int32 PasswordComplexity, Int32 PasswordLength, Int32 PasswordExpirationProtectionEnabled)			task_0	Informational		
 Microsoft-Windows-LAPS	10024	0	task_010024()			task_0	Informational		
 Microsoft-Windows-LAPS	10025	0	task_010025(HexInt32 Data1)			task_0	Error		
@@ -72,4 +72,40 @@ Microsoft-Windows-LAPS	10069	0	task_010069()			task_0	Informational
 Microsoft-Windows-LAPS	10070	0	task_010070()			task_0	Informational		
 Microsoft-Windows-LAPS	10071	0	task_010071()			task_0	Informational		
 Microsoft-Windows-LAPS	10072	0	task_010072(HexInt32 Data1)			task_0	Error		
+Microsoft-Windows-LAPS	10073	0	task_010073(UnicodeString Data1, UnicodeString Data2)			task_0	Informational		
+Microsoft-Windows-LAPS	10074	0	task_010074(UnicodeString Data1, UnicodeString Data2)			task_0	Informational		
+Microsoft-Windows-LAPS	10075	0	task_010075(UnicodeString Data1, UnicodeString Data2)			task_0	Error		
+Microsoft-Windows-LAPS	10076	0	task_010076(UnicodeString Data1, UnicodeString Data2)			task_0	Warning		
+Microsoft-Windows-LAPS	10077	0	task_010077(Int32 Data1, UnicodeString Data2, UnicodeString Data3)			task_0	Informational		
+Microsoft-Windows-LAPS	10078	0	task_010078(Int32 ExecEnvId, Int32 State, Int32 SessionId, UnicodeString SessionName, UnicodeString HostName, UnicodeString UserName, UnicodeString DomainName, UnicodeString FarmName)			task_0	Informational		
+Microsoft-Windows-LAPS	10079	0	task_010079(Int32 ExecEnvId, Int32 State, Int32 SessionId, UnicodeString SessionName, UnicodeString HostName, UnicodeString UserName, UnicodeString DomainName, UnicodeString FarmName, Int32 Error)			task_0	Error		
+Microsoft-Windows-LAPS	10080	0	task_010080(Int32 Data1)			task_0	Informational		
+Microsoft-Windows-LAPS	10081	0	task_010081()			task_0	Informational		
+Microsoft-Windows-LAPS	10082	0	task_010082(Int32 ExecEnvId, Int32 State, Int32 SessionId, UnicodeString SessionName, UnicodeString HostName, UnicodeString UserName, UnicodeString DomainName, UnicodeString FarmName)			task_0	Informational		
+Microsoft-Windows-LAPS	10083	0	task_010083(Int32 ExecEnvId, Int32 State, Int32 SessionId, UnicodeString SessionName, UnicodeString HostName, UnicodeString UserName, UnicodeString DomainName, UnicodeString FarmName, Int32 Error)			task_0	Error		
+Microsoft-Windows-LAPS	10084	0	task_010084(Int32 Data1)			task_0	Informational		
+Microsoft-Windows-LAPS	10085	0	task_010085(HexInt64 SessionId, UnicodeString ClientComputerName, UnicodeString ClientUserName, Int64 NumOpens, Int32 SecondsIdle, Int32 SecondsExisted, UnicodeString ServerName)			task_0	Informational		
+Microsoft-Windows-LAPS	10086	0	task_010086(HexInt64 SessionId, UnicodeString ClientComputerName, UnicodeString ClientUserName, Int64 NumOpens, Int32 SecondsIdle, Int32 SecondsExisted, UnicodeString ServerName, Int32 Error)			task_0	Informational		
+Microsoft-Windows-LAPS	10087	0	task_010087(Int32 Data1)			task_0	Informational		
+Microsoft-Windows-LAPS	10088	0	task_010088(UnicodeString Data1, Int32 Data2, UnicodeString Data3, UnicodeString Data4)			task_0	Informational		
+Microsoft-Windows-LAPS	10089	0	task_010089(UnicodeString Data1, Int32 Data2, UnicodeString Data3, UnicodeString Data4, HexInt32 Data5)			task_0	Error		
+Microsoft-Windows-LAPS	10090	0	task_010090(UnicodeString Data1, UnicodeString Data2)			task_0	Informational		
+Microsoft-Windows-LAPS	10091	0	task_010091(UnicodeString Data1, UnicodeString Data2)			task_0	Informational		
+Microsoft-Windows-LAPS	10092	0	task_010092(UnicodeString Data1)			task_0	Warning		
+Microsoft-Windows-LAPS	10093	0	task_010093(UnicodeString Data1, UnicodeString Data2, UnicodeString Data3)			task_0	Informational		
+Microsoft-Windows-LAPS	10094	0	task_010094(UnicodeString Data1, UnicodeString Data2, UnicodeString Data3, HexInt32 Data4)			task_0	Error		
+Microsoft-Windows-LAPS	10095	0	task_010095(UnicodeString Data1, UnicodeString Data2, HexInt32 Data3)			task_0	Error		
+Microsoft-Windows-LAPS	10096	0	task_010096(UnicodeString Data1, UnicodeString Data2, HexInt32 Data3)			task_0	Error		
+Microsoft-Windows-LAPS	10097	0	task_010097(UnicodeString Data1, UnicodeString Data2)			task_0	Informational		
+Microsoft-Windows-LAPS	10098	0	task_010098(UnicodeString Data1, UnicodeString Data2, HexInt32 Data3)			task_0	Error		
+Microsoft-Windows-LAPS	10099	0	task_010099(UnicodeString Data1, UnicodeString Data2, UnicodeString Data3)			task_0	Informational		
+Microsoft-Windows-LAPS	10100	0	task_010100(UnicodeString Data1, HexInt32 Data2)			task_0	Error		
+Microsoft-Windows-LAPS	10101	0	task_010101(UnicodeString LAPSManagedAccountName, UnicodeString LAPSManagedAccountSid, UnicodeString ClientName, UnicodeString ClientAddress, Int32 ClientProcessID, UnicodeString ClientProcessExe)			task_0	Warning		
+Microsoft-Windows-LAPS	10102	0	task_010102(UnicodeString LAPSManagedAccountName, UnicodeString LAPSManagedAccountSid, UnicodeString ClientName, UnicodeString ClientAddress, Int32 ClientProcessID, UnicodeString ClientProcessExe)			task_0	Warning		
+Microsoft-Windows-LAPS	10103	0	task_010103(UnicodeString LAPSManagedAccountName, UnicodeString LAPSManagedAccountSid, UnicodeString ClientName, UnicodeString ClientAddress, Int32 ClientProcessID, UnicodeString ClientProcessExe)			task_0	Warning		
+Microsoft-Windows-LAPS	10104	0	task_010104(UnicodeString LAPSManagedAccountName, UnicodeString LAPSManagedAccountSid, UnicodeString ClientName, UnicodeString ClientAddress, Int32 ClientProcessID, UnicodeString ClientProcessExe)			task_0	Warning		
+Microsoft-Windows-LAPS	10105	0	task_010105(HexInt32 Data1)			task_0	Warning		
+Microsoft-Windows-LAPS	10106	0	task_010106()			task_0	Informational		
+Microsoft-Windows-LAPS	10107	0	task_010107(HexInt32 Data1)			task_0	Error		
+Microsoft-Windows-LAPS	10108	0	task_010108()			task_0	Warning		
 Microsoft-Windows-LAPS	20000	0	task_020000()			task_0	Warning		

@@ -1,8 +1,9 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-Kernel-LiveDump	1	0	LiveDumpCaptureDumpDataAPIAPIStart()	APIStart		LiveDumpCaptureDumpDataAPI	Informational		
+Microsoft-Windows-Kernel-LiveDump	1	1	LiveDumpCaptureDumpDataAPIAPIStart_V1(UInt64 ControlFlags, UInt64 AddPagesControl)	APIStart		LiveDumpCaptureDumpDataAPI	Informational		
 Microsoft-Windows-Kernel-LiveDump	3	0	LiveDumpCaptureDumpDataAPIDumpFileWriteStart()	DumpFileWriteStart		LiveDumpCaptureDumpDataAPI	Informational		
 Microsoft-Windows-Kernel-LiveDump	4	1	LiveDumpCaptureDumpDataAPIDumpFileWriteEnd_V1(UInt32 NTStatus, UInt64 TotalBytes, UInt64 HeaderBytes, UInt64 PrimaryDataBytes, UInt64 SecondaryDataBytes, UInt64 DumpWriteDuration_ms)	DumpFileWriteEnd		LiveDumpCaptureDumpDataAPI	Informational		
 Microsoft-Windows-Kernel-LiveDump	5	0	LiveDumpCaptureDumpDataAPIBufferAllocationData()	BufferAllocationData		LiveDumpCaptureDumpDataAPI	Informational		
+Microsoft-Windows-Kernel-LiveDump	6	0	SizingWorkflow(UnicodeString LiveDumpEventDescription, UnicodeString Parameter1Name, UInt64 Parameter1Value, UnicodeString Parameter2Name, UInt64 Parameter2Value, UnicodeString Parameter3Name, UInt64 Parameter3Value, UnicodeString Parameter4Name, UInt64 Parameter4Value, UnicodeString Parameter5Name, UInt64 Parameter5Value, UnicodeString Parameter6Name, UInt64 Parameter6Value, UnicodeString Parameter7Name, UInt64 Parameter7Value, UnicodeString Parameter8Name, UInt64 Parameter8Value)			SizingWorkflow	Informational		
 Microsoft-Windows-Kernel-LiveDump	101	1	SizingWorkflowMirroringStart_V1()	MirroringStart		SizingWorkflow	Informational		
 Microsoft-Windows-Kernel-LiveDump	102	0	SizingWorkflowMirroringPhase0End()	MirroringPhase0End		SizingWorkflow	Informational		
 Microsoft-Windows-Kernel-LiveDump	103	0	SizingWorkflowMirroringPhase1End()	MirroringPhase1End		SizingWorkflow	Informational		

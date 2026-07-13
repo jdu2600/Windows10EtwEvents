@@ -129,6 +129,13 @@ Microsoft-Windows-DNS-Client	8037	0	DnsRegistration8037(UnicodeString AdapterNam
 Microsoft-Windows-DNS-Client	8038	0	DnsRegistration8038(UnicodeString AdapterName, UnicodeString HostName, UnicodeString AdapterSuffixName, UnicodeString DnsServerList, UnicodeString SentUpdateServer, UnicodeString Ipaddress, UInt32 ErrorCode)			DnsRegistration	Warning		
 Microsoft-Windows-DNS-Client	8040	0	DnsInterception(UnicodeString DllName)			DnsInterception	Warning		
 Microsoft-Windows-DNS-Client	8042	0	DnsInterception8042(UnicodeString DllName)			DnsInterception	Error		
+Microsoft-Windows-DNS-Client	8043	0	task_08043(UnicodeString Server, UnicodeString NameQuery, UnicodeString InterfaceName, UnicodeString Template, UInt32 ClientPID)			task_0	Informational		
+Microsoft-Windows-DNS-Client	8044	0	task_08044(UnicodeString Server, UnicodeString NameQuery, UnicodeString InterfaceName, UnicodeString Hostname, UInt32 ClientPID)			task_0	Informational		
+Microsoft-Windows-DNS-Client	8045	0	task_08045(UnicodeString Server, UnicodeString TemplateName, UInt32 StatusCode)			task_0	Informational		
+Microsoft-Windows-DNS-Client	8046	0	task_08046(UnicodeString Server, UnicodeString TemplateName, UInt32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-DNS-Client	8047	0	task_08047(UnicodeString Server, UnicodeString Hostname, UInt32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-DNS-Client	8048	0	task_08048(UnicodeString Server, UnicodeString Template, UnicodeString Error, UInt64 ErrorBits)			task_0	Error		
+Microsoft-Windows-DNS-Client	8049	0	task_08049(UnicodeString Server, UnicodeString Hostname, UnicodeString Error, UInt64 ErrorBits)			task_0	Error		
 Microsoft-Windows-DNS-Client	60004	0	DnsNetError(UInt32 ErrorCode, UInt32 Location, UInt32 Context)			DnsNetError	Error		
 Microsoft-Windows-DNS-Client	60005	0	DnsNetWarning(UInt32 WarningCode, UInt32 Location, UInt32 Context)			DnsNetWarning	Warning		
 Microsoft-Windows-DNS-Client	60006	0	DnsStateTransition(UInt8 NextState, UInt32 Context)			DnsStateTransition	Informational		

@@ -36,6 +36,7 @@ Microsoft-Windows-Hyper-V-Hypervisor	61	0	task_061()		keyword_400000000000	task_
 Microsoft-Windows-Hyper-V-Hypervisor	62	0	task_062()		keyword_400000000000	task_0	Error		
 Microsoft-Windows-Hyper-V-Hypervisor	63	0	task_063(HexInt32 Phase)		keyword_400000000000	task_0	Error		
 Microsoft-Windows-Hyper-V-Hypervisor	64	0	task_064()		keyword_400000000000	task_0	Error		
+Microsoft-Windows-Hyper-V-Hypervisor	65	0	task_065(HexInt64 BalStatus, UInt32 BalInternalError, UInt16 Line, UInt32 MemoryRangesCount, Int16 MemoryRanges)		keyword_400000000000	task_0	Error		
 Microsoft-Windows-Hyper-V-Hypervisor	80	0	task_080(HexInt32 NtStatus)		keyword_400000000000	task_0	Error		
 Microsoft-Windows-Hyper-V-Hypervisor	81	0	task_081()		keyword_400000000000	task_0	Error		
 Microsoft-Windows-Hyper-V-Hypervisor	82	0	task_082()		keyword_400000000000	task_0	Error		
@@ -97,6 +98,10 @@ Microsoft-Windows-Hyper-V-Hypervisor	12310	0	HvldrPrepareProtoHypervisor(UInt64 
 Microsoft-Windows-Hyper-V-Hypervisor	12311	0	HvldrImageLoadInfo(UnicodeString ImageName, UInt32 Checksum, UInt32 Timestamp, UInt32 NtStatus)			HvldrImageLoadInfo	Informational		
 Microsoft-Windows-Hyper-V-Hypervisor	12312	0	HvldrReadHvRegister(UInt64 AuxData, UInt32 NtStatus)			HvldrReadHvRegister	Error		
 Microsoft-Windows-Hyper-V-Hypervisor	12313	0	HvldrProcessInterruptControllers(UInt64 AuxData, UInt32 NtStatus)			HvldrProcessInterruptControllers	Error		
+Microsoft-Windows-Hyper-V-Hypervisor	12314	0	HvldrHsrMirroringInUse(Boolean HsrInUse, UInt32 Reason)			HvldrHsrMirroringInUse	Informational		
+Microsoft-Windows-Hyper-V-Hypervisor	12315	0	HvldrDebugMsg(AnsiString LoadOptions)			HvldrDebugMsg	Error		
+Microsoft-Windows-Hyper-V-Hypervisor	12316	0	HvldrDebugMsg12316(AnsiString LoadOptions)			HvldrDebugMsg	Warning		
+Microsoft-Windows-Hyper-V-Hypervisor	12317	0	HvldrFailureLocation(AnsiString BaseLocation, UInt32 Line, HexInt64 BalStatus, UInt64 AuxData)			HvldrFailureLocation	Error		
 Microsoft-Windows-Hyper-V-Hypervisor	12550	0	task_012550(HexInt32 Msr, UInt8 IsWrite, HexInt64 MsrValue, UInt16 AccessStatus, HexInt64 Pc, HexInt64 ImageBase, HexInt32 ImageChecksum, HexInt32 ImageTimestamp, AnsiString ImageName)		keyword_400000000000	task_0	Warning		
 Microsoft-Windows-Hyper-V-Hypervisor	16641	0	task_016641(UInt64 PartitionId)			task_0	Informational		
 Microsoft-Windows-Hyper-V-Hypervisor	16642	0	task_016642(UInt64 PartitionId)			task_0	Informational		

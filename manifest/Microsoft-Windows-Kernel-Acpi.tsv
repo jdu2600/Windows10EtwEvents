@@ -28,3 +28,14 @@ Microsoft-Windows-Kernel-Acpi	20	0	DeviceReset(UInt16 DeviceBiosNameLength, Unic
 Microsoft-Windows-Kernel-Acpi	21	0	AcpiOverride(UInt16 AcpiOverrideType)		acpi:Diagnostic keyword_200000000000	AcpiOverride	Informational		
 Microsoft-Windows-Kernel-Acpi	22	0	AMLIError(UnicodeString Scope, UnicodeString Object, UInt32 Status)		acpi:Diagnostic	AMLIError	Error		
 Microsoft-Windows-Kernel-Acpi	23	0	FrequentAmlMethod(UInt16 AmlMethodNameLength, UnicodeString AmlMethodName, UInt64 Frequency)		acpi:Diagnostic	FrequentAmlMethod	Warning		
+Microsoft-Windows-Kernel-Acpi	24	0	ButtonNotification(UInt16 ButtonDeviceInstanceLength, UnicodeString ButtonDeviceInstance, HexInt32 Capabilities, HexInt32 EventMask)		acpi:Diagnostic	ButtonNotification	Informational		
+Microsoft-Windows-Kernel-Acpi	25	0	ButtonIrpCompletion(UInt16 ButtonDeviceInstanceLength, UnicodeString ButtonDeviceInstance, HexInt32 EventMask, UInt64 Irp)		acpi:Diagnostic	ButtonIrpCompletion	Informational		
+Microsoft-Windows-Kernel-Acpi	26	0	PccSubspaceRundown(UInt32 Type34SupportEnabled, UInt32 SubspaceId, UInt8 Type, UInt8 State, UInt8 InterruptSupported, UInt8 InterruptFlags, UInt32 GSIV, UInt32 NominalLatency, UInt32 AdvertisedNominalLatency, UInt32 MaxPeriodicAccessRate, UInt32 MinRequestTurnaroundTime, UInt32 InitFailure, UInt32 EjectFailure, UInt32 WDTimeoutCount, UInt32 WDTimerAttributes, UInt64 SharedRegionPhysicalAddress, UInt32 SharedRegionLength, UInt32 RegisterCount, SID Registers)		acpi:PCC	PccSubspaceRundown	Informational		
+Microsoft-Windows-Kernel-Acpi	27	0	PccEjectSubspace(UInt32 SubspaceId, UInt8 Type, UInt32 Result, UInt32 EjectFailure, UInt32 InitFailure)		acpi:PCC	PccEjectSubspace	Informational		
+Microsoft-Windows-Kernel-Acpi	28	0	PccAcquireSubspace(UInt32 SubspaceId, UInt8 PrevState, UInt8 NewState, UInt32 SyncAcquire, UInt32 Result)		acpi:PCC	PccAcquireSubspace	Informational		
+Microsoft-Windows-Kernel-Acpi	29	0	PccReleaseSubspace(UInt32 SubspaceId, UInt8 PrevState, UInt8 NewState, UInt32 Result)		acpi:PCC	PccReleaseSubspace	Informational		
+Microsoft-Windows-Kernel-Acpi	30	0	PccExecuteCommand(UInt32 SubspaceId, UInt8 Command, UInt8 PrevState, UInt8 NewState, UInt64 DelayTimeInUs, UInt32 Result)		acpi:PCC	PccExecuteCommand	Informational		
+Microsoft-Windows-Kernel-Acpi	31	0	PccCommandComplete(UInt32 SubspaceId, UInt8 Command, UInt32 CommandInProgress, UInt8 PrevState, UInt8 NewState, UInt64 Error, UInt32 Result)		acpi:PCC	PccCommandComplete	Informational		
+Microsoft-Windows-Kernel-Acpi	32	0	PccCommandTimeout(UInt32 SubspaceId, UInt32 AccumulatedFailureCount)		acpi:PCC	PccCommandTimeout	Informational		
+Microsoft-Windows-Kernel-Acpi	33	0	PccPlatformInterrupt(UInt32 GSIV)		acpi:PCC	PccPlatformInterrupt	Informational		
+Microsoft-Windows-Kernel-Acpi	34	0	S4DsmEvaluationFailed(UInt32 Status)		acpi:Diagnostic	S4DsmEvaluationFailed	Informational		

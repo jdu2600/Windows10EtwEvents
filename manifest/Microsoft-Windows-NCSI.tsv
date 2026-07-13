@@ -30,7 +30,6 @@ Microsoft-Windows-NCSI	4024	0	CorporateConnectivityDetectionStop4024(GUID Interf
 Microsoft-Windows-NCSI	4025	0	ProxyDetectionStart()	Start	LwtDiagnostic keyword_200000000000	ProxyDetection	Informational		
 Microsoft-Windows-NCSI	4026	0	ProxyDetectionStop(UInt32 ErrorCode, UInt8 Source)	Stop	LwtDiagnostic keyword_200000000000	ProxyDetection	Informational		
 Microsoft-Windows-NCSI	4027	0	InternetConnectivityDetection(GUID InterfaceGuid, UInt32 Family)		ut:L3ConnectPath	InternetConnectivityDetection	Informational		
-Microsoft-Windows-NCSI	4028	0	Inside/Outsidedetectionverification()		NlaDiagnostics	Inside/Outsidedetectionverification	Warning		
 Microsoft-Windows-NCSI	4029	0	Suspectstate(GUID InterfaceGuid, UInt64 IfLuid, UInt32 Family, UInt8 SuspectStateReason)		keyword_200000000000	Suspectstate	Informational		
 Microsoft-Windows-NCSI	4030	0	Suspectstate4030(GUID InterfaceGuid, UInt64 IfLuid, UInt32 Family)		keyword_200000000000	Suspectstate	Informational		
 Microsoft-Windows-NCSI	4031	0	Suspectstate4031(GUID InterfaceGuid, UInt64 IfLuid, UInt32 Family)		keyword_200000000000	Suspectstate	Informational		
@@ -49,7 +48,7 @@ Microsoft-Windows-NCSI	4043	0	task_04043(GUID InterfaceGuid, UInt64 IfLuid, UInt
 Microsoft-Windows-NCSI	4044	0	task_04044(Boolean ShouldPassivePollRun, Boolean WasPassivePollRunning, Boolean IsPassivePollAllowed, Boolean ClientPresent, Boolean UserPresent, Boolean NetworkQuietMode, UInt32 DeadUserPollCount, UInt32 DeadNetPollCountV4, UInt32 DeadNetPollCountV6)		LwtDiagnostic	task_0	Informational		
 Microsoft-Windows-NCSI	4045	0	task_04045(GUID InterfaceGuid, UInt64 IfLuid, UInt32 Family, Boolean NetReady)		LwtDiagnostic	task_0	Informational		
 Microsoft-Windows-NCSI	4046	0	task_04046(GUID InterfaceGuid, UInt64 IfLuid, UInt32 Family, Boolean HasCorporateConnectivity)		LwtDiagnostic	task_0	Informational		
-Microsoft-Windows-NCSI	4047	0	task_04047(GUID InterfaceGuid, UInt64 IfLuid, UInt32 Family, UInt32 IpAddressLength, Binary IpAddress, UInt32 MacAddressLength, Binary MacAddress, Boolean KnownProxyless, Boolean KnownHotspot, Boolean KnownOppInternet, Boolean KnownProxiedOppInternet)		LwtDiagnostic	task_0	Informational		
+Microsoft-Windows-NCSI	4047	0	task_04047(GUID InterfaceGuid, UInt64 IfLuid, UInt32 Family, UInt32 IpAddressLength, Binary IpAddress, UInt32 MacAddressLength, Binary MacAddress, Boolean KnownHotspot, Boolean KnownOppInternet, Boolean KnownProxiedOppInternet)		LwtDiagnostic	task_0	Informational		
 Microsoft-Windows-NCSI	4048	0	task_04048(GUID InterfaceGuid, UInt64 IfLuid, UInt32 Family, Boolean HasNextHopToInternet, UInt32 NextHopAddressLength, Binary NextHopAddress)		LwtDiagnostic	task_0	Informational		
 Microsoft-Windows-NCSI	4049	0	task_04049(GUID InterfaceGuid, UInt64 IfLuid, UInt32 Family, Boolean HasPreferredAddress, UInt32 AddressSuffixOrigins)		LwtDiagnostic	task_0	Informational		
 Microsoft-Windows-NCSI	4050	0	task_04050(GUID InterfaceGuid, UInt64 IfLuid, UInt32 Family, Boolean HasPreferredGlobalAddress, UInt32 AddressSuffixOrigins)		LwtDiagnostic	task_0	Informational		

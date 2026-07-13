@@ -40,9 +40,16 @@ Microsoft-Windows-CloudStore	3032	0	task_03032(AnsiString Type, Int32 Translated
 Microsoft-Windows-CloudStore	3033	0	task_03033(Int32 TranslatedErrorCode, Boolean IsProfileUpdate, AnsiString ProfileCollection, AnsiString ProfileInstance, AnsiString SchemaCollection, AnsiString Cv)			task_0	Error		
 Microsoft-Windows-CloudStore	4000	0	task_04000(AnsiString BackupProfileId, UnicodeString ProcessName, Boolean IsDelete, AnsiString Cv)			task_0	Informational		
 Microsoft-Windows-CloudStore	4001	0	task_04001(AnsiString TypeName, Int32 StatusCode, AnsiString Cv)			task_0	Error		
-Microsoft-Windows-CloudStore	4002	0	task_04002(UnicodeString BackupProfileId, UnicodeString RestoreProfileId, UnicodeString DeviceDisplayName, AnsiString Cv)			task_0	Error		
-Microsoft-Windows-CloudStore	4003	0	task_04003(Int32 StatusCode, Int32 Stage, AnsiString Cv)			task_0	Error		
+Microsoft-Windows-CloudStore	4002	0	task_04002(UnicodeString BackupProfileId, UnicodeString RestoreProfileId, UnicodeString DeviceDisplayName, AnsiString Cv, AnsiString TypeName)			task_0	Informational		
+Microsoft-Windows-CloudStore	4003	0	task_04003(Int32 StatusCode, Int32 Stage, AnsiString Cv, AnsiString TypeName)			task_0	Error		
 Microsoft-Windows-CloudStore	4004	0	task_04004(UInt64 Elapsed, UInt32 UpdateCount, UnicodeString LastSource, UnicodeString LastTarget)			task_0	Warning		
 Microsoft-Windows-CloudStore	4005	0	task_04005(UInt64 Elapsed, UInt32 UpdateCount)			task_0	Informational		
+Microsoft-Windows-CloudStore	4006	0	task_04006(UnicodeString Target, Boolean Enabled, Boolean Forced)			task_0	Informational		
+Microsoft-Windows-CloudStore	4007	0	task_04007(UnicodeString Target, Boolean Enabled, Boolean Forced, Int32 ErrorCode)			task_0	Warning		
+Microsoft-Windows-CloudStore	4008	0	task_04008(UnicodeString RestorePartitionId, UnicodeString BackupPartitionId)			task_0	Informational		
+Microsoft-Windows-CloudStore	4009	0	task_04009(UnicodeString RestorePartitionId, UnicodeString BackupPartitionId, Int32 ErrorCode)			task_0	Error		
+Microsoft-Windows-CloudStore	4010	0	task_04010(UnicodeString Path, AnsiString Id)			task_0	Informational		
+Microsoft-Windows-CloudStore	4011	0	task_04011(UnicodeString Path, AnsiString Id)			task_0	Informational		
+Microsoft-Windows-CloudStore	4012	0	task_04012(AnsiString TypeName, Int32 ErrorCode, Int32 Stage)			task_0	Informational		
 Microsoft-Windows-CloudStore	10000	0	task_010000()			task_0	Informational		
 Microsoft-Windows-CloudStore	10001	0	task_010001()			task_0	Informational		

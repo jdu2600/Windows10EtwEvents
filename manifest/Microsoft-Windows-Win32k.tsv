@@ -97,8 +97,6 @@ Microsoft-Windows-Win32k	97	0	TouchTargetingWindowHitTestStop()	Stop	MessagePump
 Microsoft-Windows-Win32k	98	0	TouchTargetingPointerTargetStart()	Start	MessagePumpInternalAndInput	TouchTargetingPointerTarget	Informational		
 Microsoft-Windows-Win32k	99	0	TouchTargetingPointerTargetStop()	Stop	MessagePumpInternalAndInput	TouchTargetingPointerTarget	Informational		
 Microsoft-Windows-Win32k	100	0	MessageInjectionInjectTouchEvent(Int8 CallbackCount)	InjectTouchEvent	MessagePumpInternalAndInput	MessageInjection	Informational		
-Microsoft-Windows-Win32k	102	0	task_0(UInt32 SessionId, UInt32 cLineWidth, Int16 TimerStatisticsThreshold, UInt32 cElements, UInt16 TimerStatisticsInfo)		TimerSurvey	task_0	Informational		
-Microsoft-Windows-Win32k	103	0	task_0103(AnsiString ProcName, UnicodeString ClassName, UnicodeString WindowName, UInt32 uId, UInt32 uElapse, UInt32 uType)		TimerSurvey	task_0	Informational		
 Microsoft-Windows-Win32k	104	0	ContactVisualizationStart()	Start	UserActivity Rendering	ContactVisualization	Informational		
 Microsoft-Windows-Win32k	105	0	ContactVisualizationStop()	Stop	UserActivity Rendering	ContactVisualization	Informational		
 Microsoft-Windows-Win32k	106	0	TouchTargetingOffset(Int32 ptOffsetX, Int32 ptOffsetY, Int32 pointerId, Int32 cursorId)		MessagePumpInternalAndInput	TouchTargetingOffset	Informational		
@@ -146,7 +144,7 @@ Microsoft-Windows-Win32k	147	0	PointerUpdateSetTargetWindowsStart()	Start	Pointe
 Microsoft-Windows-Win32k	148	0	PointerUpdateSetTargetWindowsStop()	Stop	PointerInput	PointerUpdateSetTargetWindows	Verbose		
 Microsoft-Windows-Win32k	149	0	InputQueueNoRemoveLockerStop(Int8 CallbackCount, Pointer pQueue, UInt32 ownerThread)	Stop	MessagePumpInternalAndInput	InputQueueNoRemoveLocker	Informational		
 Microsoft-Windows-Win32k	150	0	InputQueueLockedPeekRecursionStop(Int8 CallbackCount, Pointer pQueue, UInt32 ownerThread)	Stop	MessagePumpInternalAndInput	InputQueueLockedPeekRecursion	Informational		
-Microsoft-Windows-Win32k	151	0	DCompCommitBatch(UInt32 channelHandle, Pointer pBatch, UInt32 batchID)		Updates Visualization	DCompCommitBatch	Informational		
+Microsoft-Windows-Win32k	151	0	DCompCommitBatch(UInt32 channelHandle, Pointer pBatch, UInt32 batchID, Boolean isNinja)		Updates Visualization	DCompCommitBatch	Informational		
 Microsoft-Windows-Win32k	152	0	DelegateInputUserCallbackStart(Int8 CallbackCount, Pointer pqmsg, Boolean WindowDelegated, Boolean WasWindowDelegated, Boolean Delegated, Boolean WasDelegated, Boolean Processed, Boolean fDelayedFree, Pointer hwnd, Pointer WParam, Pointer LParam, UInt32 message, UInt32 inputReadyTimeMs)	Start	MessagePumpInternalAndInput	DelegateInputUserCallback	Informational		
 Microsoft-Windows-Win32k	153	0	DelegateInputUserCallbackStop(Int8 CallbackCount, Pointer pqmsg, Boolean WindowDelegated, Boolean WasWindowDelegated, Boolean Delegated, Boolean WasDelegated, Boolean Processed, Boolean fDelayedFree, Pointer hwnd, Pointer WParam, Pointer LParam, UInt32 message, UInt32 inputReadyTimeMs)	Stop	MessagePumpInternalAndInput	DelegateInputUserCallback	Informational		
 Microsoft-Windows-Win32k	154	0	DelegatedInputWorkerStart(Int8 CallbackCount, Pointer pqmsg, Boolean WindowDelegated, Boolean WasWindowDelegated, Boolean Delegated, Boolean WasDelegated, Boolean Processed, Boolean fDelayedFree, Pointer hwnd, Pointer WParam, Pointer LParam, UInt32 message, UInt32 inputReadyTimeMs, UInt32 hdfResponse)	Start	MessagePumpInternalAndInput	DelegatedInputWorker	Informational		
@@ -262,7 +260,7 @@ Microsoft-Windows-Win32k	406	0	CopyPointerInputFrameStart()	Start	MessagePumpInt
 Microsoft-Windows-Win32k	407	0	CopyPointerInputFrameStop()	Stop	MessagePumpInternalAndInput	CopyPointerInputFrame	Informational		
 Microsoft-Windows-Win32k	410	0	LatencyModeProcessingStart()	Start		LatencyModeProcessing	Informational		
 Microsoft-Windows-Win32k	411	0	LatencyModeProcessingStop()	Stop		LatencyModeProcessing	Informational		
-Microsoft-Windows-Win32k	412	0	DCompBeginFrame(UInt64 hConnection, UInt32 SyncRefreshCount)		Updates	DCompBeginFrame	Informational		
+Microsoft-Windows-Win32k	412	0	DCompBeginFrame(UInt64 hConnection, UInt64 targetTime)		Updates	DCompBeginFrame	Informational		
 Microsoft-Windows-Win32k	413	0	TokenIndependentFlipSkipComplete(UInt32 SyncRefreshCount, UInt32 PresentCount, UInt64 CompositionSurfaceLuid, UInt64 BindId)		Updates	TokenIndependentFlipSkipComplete	Informational		
 Microsoft-Windows-Win32k	414	0	DwmManipulationFrameStart(UInt32 FrameId, UInt32 PointerCount)		Updates	DwmManipulationFrameStart	Informational		
 Microsoft-Windows-Win32k	415	0	DwmManipulationFrameRouted(UInt32 FrameId, UInt32 PointerCount)		Updates	DwmManipulationFrameRouted	Informational		
@@ -311,23 +309,23 @@ Microsoft-Windows-Win32k	460	0	WriteClipboard460(UInt32 Pid, FILETIME ProcessCre
 Microsoft-Windows-Win32k	461	0	DwmVisRgnUpdate(Pointer hwnd, Pointer hwndParent, UInt32 visRgnType, Boolean changed)		Rendering	DwmVisRgnUpdate	Informational		
 Microsoft-Windows-Win32k	462	0	DwmVisRgnDirty(Pointer hwnd, Pointer hwndParent)		Rendering	DwmVisRgnDirty	Informational		
 Microsoft-Windows-Win32k	463	0	ReadClipboard(UInt32 CallerPid, FILETIME CallerProcessCreateTime, UInt32 OwnerPid, FILETIME OwnerProcessCreateTime, UInt32 ClipboardSequenceNumber)		keyword_80000000000	ReadClipboard	Informational		
-Microsoft-Windows-Win32k	500	0	FlipManagerCompleteTokenStart(UInt32 FlipManagerId, UInt64 PresentId, Boolean IFlip, Boolean IFlipCompleted, Boolean RequestDwmConfirm, Boolean RequestDwmExit, Boolean IndependentFlipCandidate)	Start	Updates	FlipManagerCompleteToken	Informational		
+Microsoft-Windows-Win32k	500	0	FlipManagerCompleteTokenStart(UInt32 FlipManagerId, UInt64 PresentId, Boolean IFlip, Boolean IFlipCompleted, Boolean ConvertedToNonIflip, Boolean RequestDwmConfirm, Boolean RequestDwmExit, Boolean IndependentFlipCandidate)	Start	Updates	FlipManagerCompleteToken	Informational		
 Microsoft-Windows-Win32k	501	0	FlipManagerCompleteTokenStop(UInt64 PresentId)	Stop	Updates	FlipManagerCompleteToken	Informational		
 Microsoft-Windows-Win32k	502	0	FlipManagerTokenReleaseToFrameStart(UInt32 FlipManagerId, UInt64 PresentId)	Start	Updates	FlipManagerTokenReleaseToFrame	Informational		
 Microsoft-Windows-Win32k	503	0	FlipManagerTokenReleaseToFrameStop(UInt32 FlipManagerId, UInt64 PresentId)	Stop	Updates	FlipManagerTokenReleaseToFrame	Informational		
 Microsoft-Windows-Win32k	504	0	FlipManagerPresentConfirmed(UInt32 FlipManagerId, UInt64 PresentId)		Updates	FlipManagerPresentConfirmed	Informational		
 Microsoft-Windows-Win32k	505	0	FlipManagerPresentSignaled(UInt32 FlipManagerId, UInt64 PresentId, Boolean Skipped)		Updates	FlipManagerPresentSignaled	Informational		
-Microsoft-Windows-Win32k	506	0	FlipManagerPresentPosted(UInt32 FlipManagerId, UInt64 PresentId, UInt64 PresentAtTimeHns, UInt64 CurrentTimeHns, UInt64 PresentAtTimeMinusCurrentTimeHns)		Updates	FlipManagerPresentPosted	Informational		
+Microsoft-Windows-Win32k	506	0	FlipManagerPresentPosted(UInt32 FlipManagerId, UInt64 PresentId, UInt64 PresentAtTimeHns, UInt64 CurrentTimeHns, Int64 PresentAtTimeMinusCurrentTimeHns)		Updates	FlipManagerPresentPosted	Informational		
 Microsoft-Windows-Win32k	507	0	FlipManagerProducerSetContent(UInt32 FlipManagerId, Pointer ContentResource, Pointer BufferResource, UInt32 BufferIndex)		Updates	FlipManagerProducerSetContent	Informational		
 Microsoft-Windows-Win32k	508	0	FlipManagerBufferAvailable(UInt32 FlipManagerId, Pointer BufferResource, Boolean available)		Updates	FlipManagerBufferAvailable	Informational		
 Microsoft-Windows-Win32k	509	0	FlipManagerAddBuffer(UInt32 FlipManagerId, Pointer BufferResource, Pointer hVidMmGlobalAlloc)		Updates	FlipManagerAddBuffer	Informational		
 Microsoft-Windows-Win32k	510	0	FlipManagerRemoveBuffer(UInt32 FlipManagerId, Pointer BufferResource)		Updates	FlipManagerRemoveBuffer	Informational		
-Microsoft-Windows-Win32k	511	0	FlipManagerContentRebind(Pointer Content, UInt64 LUID, UInt64 BindId, Boolean Displayable, Boolean Decode, UInt32 BufferCount)		Updates	FlipManagerContentRebind	Informational		
+Microsoft-Windows-Win32k	511	0	FlipManagerContentRebind(Pointer Content, UInt64 LUID, UInt64 BindId, Boolean Displayable, UInt32 BufferCount)		Updates	FlipManagerContentRebind	Informational		
 Microsoft-Windows-Win32k	512	0	FlipManagerPresentProcessed(UInt32 FlipManagerId, UInt64 PresentId, UInt64 FrameId, UInt64 PresentAtTimeHns, UInt64 FrameTimeHns, UInt64 MaxAcceptableTargetTimeHns, Int64 PresentTimeMinusFrameTimeHns)		Updates	FlipManagerPresentProcessed	Informational		
 Microsoft-Windows-Win32k	513	0	FlipManagerPresentDeferred(UInt32 FlipManagerId, UInt64 PresentId, UInt64 FrameId, UInt64 PresentAtTimeHns, UInt64 FrameTimeHns, UInt64 MaxAcceptableTargetTimeHns, Int64 PresentTimeMinusFrameTimeHns)		Updates	FlipManagerPresentDeferred	Informational		
 Microsoft-Windows-Win32k	514	0	FlipManagerPresentCanceled(UInt32 FlipManagerId, UInt64 PresentId, UInt64 FrameId, UInt64 PresentAtTimeHns, UInt64 FrameTimeHns, UInt64 MaxAcceptableTargetTimeHns, Int64 PresentTimeMinusFrameTimeHns)		Updates	FlipManagerPresentCanceled	Informational		
 Microsoft-Windows-Win32k	515	0	FlipManagerPresentIFlipSubmitted(UInt32 FlipManagerId, UInt64 PresentId, Boolean WasCanceled)		Updates	FlipManagerPresentIFlipSubmitted	Informational		
-Microsoft-Windows-Win32k	516	0	FlipManagerPresentIFlipCompleted(UInt32 FlipManagerId, UInt64 PresentId, Boolean Notify, Boolean WasCanceled)		Updates	FlipManagerPresentIFlipCompleted	Informational		
+Microsoft-Windows-Win32k	516	0	FlipManagerPresentIFlipCompleted(UInt32 FlipManagerId, UInt64 PresentId, Boolean Notify, Boolean WasCanceled, UInt64 CompletedQpc, UInt64 DurationQpc)		Updates	FlipManagerPresentIFlipCompleted	Informational		
 Microsoft-Windows-Win32k	517	0	FlipManagerPresentQueueDepth(UInt32 FlipManagerId, UInt64 PresentQueueDepth)		Updates	FlipManagerPresentQueueDepth	Informational		
 Microsoft-Windows-Win32k	518	0	FlipManagerBindingStart(Pointer ContentResource)	Start	Updates	FlipManagerBinding	Informational		
 Microsoft-Windows-Win32k	519	0	FlipManagerBinding(Pointer BufferResource, UInt32 Index)		Updates	FlipManagerBinding	Informational		
@@ -346,7 +344,8 @@ Microsoft-Windows-Win32k	531	0	FlipManagerUpdateExpectedConsumerPresentId(UInt32
 Microsoft-Windows-Win32k	532	0	FlipManagerPresentSkipped(UInt32 FlipManagerId, UInt64 PresentId, UInt64 FrameId, UInt64 PresentAtTimeHns, UInt64 FrameTimeHns, UInt64 MaxAcceptableTargetTimeHns, Int64 PresentTimeMinusFrameTimeHns)		Updates	FlipManagerPresentSkipped	Informational		
 Microsoft-Windows-Win32k	533	0	FlipManagerRemoveContent(UInt32 FlipManagerId, Pointer ContentResource)		Updates	FlipManagerRemoveContent	Informational		
 Microsoft-Windows-Win32k	534	0	FlipManagerPresentIFlipPurgePreviousPresents(UInt32 FlipManagerId, UInt64 PresentId)		Updates	FlipManagerPresentIFlipPurgePreviousPresents	Informational		
-Microsoft-Windows-Win32k	1000	0	task_01000(UInt32 eventMin, UInt32 eventMax, UInt32 idEventProcess, UInt32 idEventThread, UInt32 Flags, Pointer HookInstance)		AuditApiCalls	task_0	Informational		
+Microsoft-Windows-Win32k	535	0	FlipManagerDiscardPresentAfterDestroy(UInt32 FlipManagerId, UInt64 PresentId)		Updates	FlipManagerDiscardPresentAfterDestroy	Informational		
+Microsoft-Windows-Win32k	1000	0	task_0(UInt32 eventMin, UInt32 eventMax, UInt32 idEventProcess, UInt32 idEventThread, UInt32 Flags, Pointer HookInstance)		AuditApiCalls	task_0	Informational		
 Microsoft-Windows-Win32k	1001	0	task_01001(UInt32 ReturnValue, UInt16 UsagePage, UInt16 Usage, UInt32 Flags, Pointer hwndTarget, Pointer ThreadStartAddress, FILETIME ThreadCreateTime, UInt32 ThreadId, UInt32 cWindows, UInt32 cVisWindows, UInt64 ThreadInfoFlags, UInt32 ProcessId, FILETIME ProcessCreateTime, UInt64 ProcessStartKey, UnicodeString ThreadStartAddressMappedModuleName, UInt32 ThreadStartAddressQueryResult, Pointer ThreadStartAddressVadAllocationBase, UInt32 ThreadStartAddressVadAllocationProtect, UInt32 ThreadStartAddressVadRegionType, Pointer ThreadStartAddressVadRegionSize, UInt32 ThreadStartAddressVadProtect)		AuditApiCalls	task_0	Informational		
 Microsoft-Windows-Win32k	1002	0	task_01002(UInt32 FilterType, UnicodeString pstrLib, Pointer hmod, Pointer pfnFilterProc, UInt32 ReturnValue)		AuditApiCalls	task_0	Informational		
 Microsoft-Windows-Win32k	1003	0	task_01003(UInt32 PID, UInt32 MsSinceLastKeyEvent, UInt32 BackgroundCallCount)		AuditApiCalls	task_0	Informational		

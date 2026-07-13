@@ -1,2 +1,5 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-PCI	10	0	AspmErrataRundown()		Diag	AspmErrataRundown	Informational		
+Microsoft-Windows-PCI	1	0	Log(HexInt64 Category, HexInt32 Rid, UInt8 Secondary, UInt64 PreciseTime, UInt64 Qpc, UnicodeString Message)		PciDiag	Log	Informational		
+Microsoft-Windows-PCI	2	0	Log2(HexInt64 Category, HexInt32 Rid, UInt8 Secondary, UInt64 PreciseTime, UInt64 Qpc, UnicodeString Message)		PciDiag	Log	Warning		
+Microsoft-Windows-PCI	3	0	Log3(HexInt64 Category, HexInt32 Rid, UInt8 Secondary, UInt64 PreciseTime, UInt64 Qpc, UnicodeString Message)		PciDiag	Log	Error		
+Microsoft-Windows-PCI	10	0	AspmErrataRundown()		PciDiag	AspmErrataRundown	Informational		

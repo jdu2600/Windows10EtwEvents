@@ -3,7 +3,7 @@ Microsoft-Windows-MF	1	0	MediaFoundationDevproxyQueueBuffersToDevice(UInt32 Stre
 Microsoft-Windows-MF	2	0	MediaFoundationDevproxySendBuffersToDeviceStart(Pointer AsyncTaskPointer, UInt32 StreamID, Pointer BufferPointer, Pointer PinPointer, Pointer ParentPointer)	Start		MediaFoundationDevproxySendBuffersToDevice	Informational		
 Microsoft-Windows-MF	3	0	MediaFoundationDevproxySendBuffersToDeviceStop(Pointer AsyncTaskPointer, UInt32 StreamID, Pointer BufferPointer, Pointer PinPointer, Pointer ParentPointer)	Stop		MediaFoundationDevproxySendBuffersToDevice	Informational		
 Microsoft-Windows-MF	4	0	MediaFoundationDevproxyProcessInput(UInt32 StreamID, Pointer SamplePtr)			MediaFoundationDevproxyProcessInput	Informational		
-Microsoft-Windows-MF	5	0	MediaFoundationDevproxyOutputMETransformHaveOutput(UInt32 StreamID, UInt32 ReadySampleCount, Pointer Sample, UInt64 SampleTime)	METransformHaveOutput		MediaFoundationDevproxyOutput	Informational		
+Microsoft-Windows-MF	5	1	MediaFoundationDevproxyOutputMETransformHaveOutput_V1(UInt32 StreamID, UInt32 ReadySampleCount, Pointer Sample, UInt64 SampleTime, UInt64 now, UInt64 Delta_us)	METransformHaveOutput		MediaFoundationDevproxyOutput	Informational		
 Microsoft-Windows-MF	6	0	MediaFoundationDevproxyOutputDevproxyProcessOutput(UInt32 OutputBufferCount, Pointer OutputSamplesPtr)	DevproxyProcessOutput		MediaFoundationDevproxyOutput	Informational		
 Microsoft-Windows-MF	7	0	MediaFoundationDevproxySetInputTypeStart(AnsiString MediaType)	Start		MediaFoundationDevproxySetInputType	Informational		
 Microsoft-Windows-MF	8	0	MediaFoundationDevproxySetInputTypeStop(AnsiString MediaType)	Stop		MediaFoundationDevproxySetInputType	Informational		
@@ -108,6 +108,8 @@ Microsoft-Windows-MF	1140	0	MediaFoundationAsyncWrapperLoopRunningStop(Pointer W
 Microsoft-Windows-MF	1141	0	MediaFoundationAsyncWrapperCompactedoutput(Pointer WrapperPtr, UInt64 SampleTimestamp, UInt64 Duration0, UInt64 Duration1, UInt64 DurationResult)			MediaFoundationAsyncWrapperCompactedoutput	Verbose		
 Microsoft-Windows-MF	1145	0	MediaFoundationAsyncWrapperProcessInputStart(Pointer WrapperPtr, UInt32 StreamID, Pointer SamplePtr, UInt64 SampleTimestamp, UInt64 Duration, UInt32 InputQueueLength, UInt32 ShatterInputSamples, UInt32 BufferCount)	Start		MediaFoundationAsyncWrapperProcessInput	Verbose		
 Microsoft-Windows-MF	1146	0	MediaFoundationAsyncWrapperProcessInputStop(Pointer WrapperPtr, UInt32 StreamID, Pointer SamplePtr, UInt32 InputQueueLength, UInt32 hr)	Stop		MediaFoundationAsyncWrapperProcessInput	Verbose		
+Microsoft-Windows-MF	1147	2	MultisampleExpand_V2(UInt32 BufferIndex, UInt64 Timestamp, UInt64 Duration)			MultisampleExpand	Verbose		
+Microsoft-Windows-MF	1148	2	MultisampleCompact_V2(UInt32 BufferCount, UInt64 Timestamp, UInt64 OrigDuration, UInt64 AddDuration, UInt64 NewDuration)			MultisampleCompact	Verbose		
 Microsoft-Windows-MF	1150	0	MediaFoundationVideoFrameConstrict(UInt64 bandwidthInPixels)			MediaFoundationVideoFrameConstrict	Verbose		
 Microsoft-Windows-MF	1151	0	MediaFoundationOPMFail(HexInt32 hr)			MediaFoundationOPMFail	Error		
 Microsoft-Windows-MF	1160	0	MediaFoundationPMPServerProxy_LaunchedProcess(UInt32 ProcessID)			MediaFoundationPMPServerProxy_LaunchedProcess	Informational		
@@ -159,3 +161,4 @@ Microsoft-Windows-MF	1423	0	MediaFoundationDeviceMFTProcessOutput(Pointer Object
 Microsoft-Windows-MF	1424	0	MediaFoundationDeviceMFTMErrorThrown(HexInt32 hr)			MediaFoundationDeviceMFTMErrorThrown	Informational		
 Microsoft-Windows-MF	1425	0	DeviceMFTMDeviceTransformSetOutputTypeStart(UInt32 PinId, AnsiString MediaType, UInt32 PinState)	Start		DeviceMFTMDeviceTransformSetOutputType	Informational		
 Microsoft-Windows-MF	1426	0	DeviceMFTMDeviceTransformSetOutputTypeStop(HexInt32 hr)	Stop		DeviceMFTMDeviceTransformSetOutputType	Informational		
+Microsoft-Windows-MF	1427	0	DeviceMFTMDeviceTransformOutputSample(Pointer DMFTPtr, UInt32 StreamId, UInt64 Timestamp, UInt64 Duration, UInt64 CaptureTimestamp, Boolean CaptureTimestampPresent, Int64 CaptureDelta)			DeviceMFTMDeviceTransformOutputSample	Informational		

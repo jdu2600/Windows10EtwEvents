@@ -119,8 +119,8 @@ Microsoft-Windows-AAD	1163	0	AadCloudAPPluginOperation1163(HexInt32 Status, Unic
 Microsoft-Windows-AAD	1164	0	AadCloudAPPluginOperation1164(HexInt32 Status, UnicodeString CorrelationID)		Error Operational	AadCloudAPPluginOperation	Error		
 Microsoft-Windows-AAD	1165	0	AadCloudAPPluginOperation1165(HexInt32 Status, UnicodeString CorrelationID)		Error Operational	AadCloudAPPluginOperation	Error		
 Microsoft-Windows-AAD	1200	0	BrowserCoreOperationStart()	Start	Analytic	BrowserCoreOperation	Informational		
-Microsoft-Windows-AAD	1201	0	BrowserCoreOperationStop()	Stop	Analytic	BrowserCoreOperation	Informational		
-Microsoft-Windows-AAD	1202	0	BrowserCoreOperationStop1202(Int32 Result, UnicodeString ErrorMessage)	Stop	Error Operational	BrowserCoreOperation	Error		
+Microsoft-Windows-AAD	1201	0	BrowserCoreOperationStop(UnicodeString Method, UnicodeString CorrelationID)	Stop	Analytic	BrowserCoreOperation	Informational		
+Microsoft-Windows-AAD	1202	0	BrowserCoreOperationStop1202(Int32 Result, UnicodeString ErrorMessage, UnicodeString Method, UnicodeString CorrelationID)	Stop	Error Operational	BrowserCoreOperation	Error		
 Microsoft-Windows-AAD	1203	0	BrowserCoreOperation(Int32 Result, AnsiString FunctionName)		Error Operational	BrowserCoreOperation	Error		
 Microsoft-Windows-AAD	1204	0	AadCloudAPPluginOperationStart1204()	Start	Analytic	AadCloudAPPluginOperation	Informational		
 Microsoft-Windows-AAD	1205	0	AadCloudAPPluginOperationStop1205(HexInt32 Status)	Stop	Analytic	AadCloudAPPluginOperation	Informational		
@@ -157,7 +157,7 @@ Microsoft-Windows-AAD	1235	0	AadCloudAPPluginOperation1235(HexInt32 Status, Unic
 Microsoft-Windows-AAD	1236	0	AadCloudAPPluginOperation1236()		Analytic	AadCloudAPPluginOperation	Informational		
 Microsoft-Windows-AAD	1237	0	AadCloudAPPluginOperation1237()		Operational	AadCloudAPPluginOperation	Informational		
 Microsoft-Windows-AAD	1238	0	AadCloudAPPluginOperation1238()		Analytic	AadCloudAPPluginOperation	Informational		
-Microsoft-Windows-AAD	1239	0	AadCloudAPPluginOperation1239()		Analytic	AadCloudAPPluginOperation	Informational		
+Microsoft-Windows-AAD	1239	0	AadCloudAPPluginOperation1239(UnicodeString value)		Analytic	AadCloudAPPluginOperation	Informational		
 Microsoft-Windows-AAD	1240	0	AadCloudAPPluginOperation1240()		Analytic	AadCloudAPPluginOperation	Informational		
 Microsoft-Windows-AAD	1241	0	AadCloudAPPluginOperation1241(UnicodeString value)		Operational	AadCloudAPPluginOperation	Informational		
 Microsoft-Windows-AAD	1242	0	AadCloudAPPluginOperation1242()		Analytic	AadCloudAPPluginOperation	Informational		
@@ -181,3 +181,25 @@ Microsoft-Windows-AAD	1259	0	AadCloudAPPluginOperation1259(Int32 Result, Unicode
 Microsoft-Windows-AAD	1260	0	AuthHelperStart1260()	Start	Analytic	AuthHelper	Informational		
 Microsoft-Windows-AAD	1261	0	AuthHelperStop1261(HexInt32 Status)	Stop	Analytic	AuthHelper	Informational		
 Microsoft-Windows-AAD	1262	0	AadCloudAPPluginOperation1262(HexInt32 Status)		Operational Warning	AadCloudAPPluginOperation	Warning		
+Microsoft-Windows-AAD	1263	0	BrowserCoreOperation1263(UnicodeString PairwiseID, AnsiString FunctionName)		Operational Warning	BrowserCoreOperation	Warning		
+Microsoft-Windows-AAD	1264	0	AadCloudAPPluginOperation1264(Int32 KeyType, UnicodeString ClientId, UnicodeString Resource, UnicodeString Scope)		Analytic	AadCloudAPPluginOperation	Informational		
+Microsoft-Windows-AAD	1265	0	WamExtensionOperationStart1265()	Start	Analytic	WamExtensionOperation	Informational		
+Microsoft-Windows-AAD	1266	0	WamExtensionOperationStop1266()	Stop	Analytic	WamExtensionOperation	Informational		
+Microsoft-Windows-AAD	1267	0	WamExtensionOperationStop1267(Int32 Result)	Stop	Error Operational	WamExtensionOperation	Error		
+Microsoft-Windows-AAD	1268	0	WamExtensionOperationStart1268(UnicodeString Stage)	Start	Analytic	WamExtensionOperation	Informational		
+Microsoft-Windows-AAD	1269	0	WamExtensionOperationStop1269(UnicodeString Stage)	Stop	Analytic	WamExtensionOperation	Informational		
+Microsoft-Windows-AAD	1270	0	WamExtensionOperationStop1270(UnicodeString Stage, Int32 Result)	Stop	Error Operational	WamExtensionOperation	Error		
+Microsoft-Windows-AAD	1271	0	AadCloudAPPluginOperation1271(UnicodeString CorrelationID)		Analytic	AadCloudAPPluginOperation	Informational		
+Microsoft-Windows-AAD	1272	0	AadCloudAPPluginOperation1272(Int32 KeyType, UnicodeString ClientId, UnicodeString Resource, UnicodeString Scope, Int32 KeyTestResult)		Analytic	AadCloudAPPluginOperation	Informational		
+Microsoft-Windows-AAD	1273	0	AadCloudAPPluginOperation1273(Int32 KeyType, UnicodeString ClientId, UnicodeString Resource, UnicodeString Scope)		Analytic	AadCloudAPPluginOperation	Informational		
+Microsoft-Windows-AAD	1274	0	AadCloudAPPluginOperation1274(Int32 KeyType, UnicodeString ClientId, UnicodeString Resource, UnicodeString Scope)		Analytic	AadCloudAPPluginOperation	Informational		
+Microsoft-Windows-AAD	1275	0	AadCloudAPPluginOperation1275(Int32 KeyType, UnicodeString ClientId, UnicodeString Resource, UnicodeString Scope)		Analytic	AadCloudAPPluginOperation	Informational		
+Microsoft-Windows-AAD	1276	0	AadCloudAPPluginOperation1276(Int32 ClaimsCount)		Analytic	AadCloudAPPluginOperation	Informational		
+Microsoft-Windows-AAD	1277	0	AadCloudAPPluginOperation1277(Int32 Result)		Error Operational	AadCloudAPPluginOperation	Error		
+Microsoft-Windows-AAD	1278	0	AadCloudAPPluginOperation1278()		Operational Warning	AadCloudAPPluginOperation	Warning		
+Microsoft-Windows-AAD	1279	0	AadCloudAPPluginOperation1279(Int32 KeyType, Int32 JoinType, UnicodeString TenantId)		Analytic Warning	AadCloudAPPluginOperation	Warning		
+Microsoft-Windows-AAD	1280	0	AadCloudAPPluginOperation1280(UnicodeString RollReason)		Operational	AadCloudAPPluginOperation	Informational		
+Microsoft-Windows-AAD	1281	0	AadCloudAPPluginOperation1281(UnicodeString Key)		Analytic	AadCloudAPPluginOperation	Informational		
+Microsoft-Windows-AAD	1282	0	WamExtensionOperation(UnicodeString PropertyName)		Error Operational	WamExtensionOperation	Error		
+Microsoft-Windows-AAD	1283	0	AadCloudAPPluginOperation1283(UnicodeString RegistryLocation, UnicodeString RegistryValueName, HexInt32 Value)		Analytic Warning	AadCloudAPPluginOperation	Warning		
+Microsoft-Windows-AAD	1284	0	AadCloudAPPluginOperation1284(Int32 KeyType, UnicodeString ClientId, UnicodeString Resource, UnicodeString Scope)		Analytic	AadCloudAPPluginOperation	Informational		

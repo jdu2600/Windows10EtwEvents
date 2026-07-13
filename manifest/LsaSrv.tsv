@@ -30,7 +30,14 @@ LsaSrv	6152	0	task_06152(UnicodeString TrustName)			task_0	Warning
 LsaSrv	6153	0	task_06153(UnicodeString TrustName, HexInt32 ErrorCodeHex, UInt32 ErrorCode)			task_0	Warning		
 LsaSrv	6154	0	task_06154()			task_0	Warning		
 LsaSrv	6155	0	task_06155(UnicodeString PackageName)			task_0	Warning		
-LsaSrv	6156	0	task_06156(UInt32 HardwareChecks, UInt32 ADDomainJoin, UInt32 AADDomainJoin)			task_0	Informational		
+LsaSrv	6156	0	task_06156(UInt32 HardwareChecks, UInt32 ADDomainJoin, UInt32 AADDomainJoin, UInt32 IsLicensed, UInt32 DomainController)			task_0	Informational		
+LsaSrv	6157	0	task_06157(UnicodeString TrustName)			task_0	Informational		
+LsaSrv	6158	0	task_06158(UInt32 Status)			task_0	Error		
+LsaSrv	6160	0	task_06160(UInt32 Status)			task_0	Error		
+LsaSrv	6161	0	task_06161(UInt32 Config, UInt32 IsTestConfig, UInt32 AutoEnabled)			task_0	Informational		
+LsaSrv	6162	0	task_06162()			task_0	Informational		
+LsaSrv	6163	0	task_06163()			task_0	Informational		
+LsaSrv	6164	0	task_06164()			task_0	Warning		
 LsaSrv	6182	0	task_06182(HexInt64 TargetLogonId, UnicodeString AccountName, UnicodeString DomainName)			task_0	Warning		
 LsaSrv	6225	0	LSALogonStart()	Start		LSALogon	Informational		
 LsaSrv	6226	0	LSALogonStop()	Stop		LSALogon	Informational		

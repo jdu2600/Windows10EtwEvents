@@ -24,3 +24,11 @@ Microsoft-Windows-Dwm-Compositor	25	0	ClockBoostChanged(Boolean clockBoost)		Fra
 Microsoft-Windows-Dwm-Compositor	26	0	SwapChain_DurationChanged(UInt64 displayAdapterLuid, UInt32 vidPnSourceId, UInt32 vidPnTargetId, UInt64 duration, UInt32 vBlankMultiplier, UInt64 iFlipApprovedDuration)		Frame PresentMon	SwapChain_DurationChanged	Informational		
 Microsoft-Windows-Dwm-Compositor	27	0	ConnectedStandbyStateChanged(UInt32 ConnectedStandbyState)		Frame	ConnectedStandbyStateChanged	Informational		
 Microsoft-Windows-Dwm-Compositor	28	0	MonitorPowerStateChanged(UInt32 MonitorPowerState)		Frame	MonitorPowerStateChanged	Informational		
+Microsoft-Windows-Dwm-Compositor	29	0	Pinning_Start(UInt32 resourceCount)	Start	Frame	Pinning_Start	Informational		
+Microsoft-Windows-Dwm-Compositor	30	0	Pinning_Stop(UInt32 hr)	Stop	Frame	Pinning_Stop	Informational		
+Microsoft-Windows-Dwm-Compositor	31	0	UnPinning_Start(UInt32 resourceCount)	Start	Frame	UnPinning_Start	Informational		
+Microsoft-Windows-Dwm-Compositor	32	0	UnPinning_Stop(UInt32 hr)	Stop	Frame	UnPinning_Stop	Informational		
+Microsoft-Windows-Dwm-Compositor	33	0	ResourcePinned(UInt64 surfaceLuid, UInt32 realizationIndex, UInt64 uniqueId, Boolean alreadyPinned)		Frame	ResourcePinned	Informational		
+Microsoft-Windows-Dwm-Compositor	34	0	ResourcePendingUnPin(UInt64 displayAdapterLuid, UInt32 vidPnSourceId, UInt32 presentCount, UInt64 surfaceLuid, UInt32 realizationIndex, UInt64 uniqueId)		Frame	ResourcePendingUnPin	Informational		
+Microsoft-Windows-Dwm-Compositor	35	0	ResourceReadyToUnPin(Boolean ready, UInt64 displayAdapterLuid, UInt32 vidPnSourceId, UInt32 completedPresentCount, UInt64 surfaceLuid, UInt32 realizationIndex, UInt64 uniqueId)		Frame	ResourceReadyToUnPin	Informational		
+Microsoft-Windows-Dwm-Compositor	36	0	ResourceUnPinned(UInt64 surfaceLuid, UInt32 realizationIndex, UInt64 uniqueId)		Frame	ResourceUnPinned	Informational		

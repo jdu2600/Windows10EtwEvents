@@ -141,6 +141,11 @@ Microsoft-Windows-BitLocker-API	886	0	task_0886(Int32 ErrorCode, GUID IdentityGU
 Microsoft-Windows-BitLocker-API	887	0	task_0887(GUID VolumeGUID)			task_0	Error		
 Microsoft-Windows-BitLocker-API	888	0	task_0888(GUID VolumeGUID)			task_0	Error		
 Microsoft-Windows-BitLocker-API	889	0	task_0889(UInt32 Pcr, UInt32 PostBootLockEventPCRBitmap)			task_0	Error		
+Microsoft-Windows-BitLocker-API	890	0	task_0890(UInt32 CountTpmBindings, UInt64 TpmBindingsTotalSizeTpmDatumsOnly, UInt64 TpmBindingsTotalSizeIncludingDigestDatums, UInt8 CensusData)			task_0	Informational		
+Microsoft-Windows-BitLocker-API	891	0	task_0891(Int32 ErrorCode, UInt64 USN, UInt32 Scenario, UnicodeString VolumeMountPoint)			task_0	Informational		
+Microsoft-Windows-BitLocker-API	892	0	task_0892(UInt32 PCRBitmap, UInt32 PCRBitmapSource, UInt32 PCRValuesSize, Binary PCRValues, AnsiString FilteredLog, UInt16 TpmSrkAesStrengthInBits, UInt32 ExcludedPcrsBitmap)			task_0	Informational		
+Microsoft-Windows-BitLocker-API	893	0	task_0893(UInt32 PCRBitmap, UInt32 PCRBitmapSource, UInt32 PCRValuesSize, Binary PCRValues, AnsiString FilteredLog, UInt16 TpmSrkAesStrengthInBits, UInt32 ExcludedPcrsBitmap)			task_0	Informational		
+Microsoft-Windows-BitLocker-API	896	0	task_0896(UInt32 ExcludedPcrsBitmap, UInt32 PcrProfile)			task_0	Warning		
 Microsoft-Windows-BitLocker-API	4096	0	task_04096(Int32 ErrorCode)			task_0	Error		
 Microsoft-Windows-BitLocker-API	4097	0	task_0Start()	Start		task_0	Informational		
 Microsoft-Windows-BitLocker-API	4098	0	task_0Stop()	Stop		task_0	Informational		

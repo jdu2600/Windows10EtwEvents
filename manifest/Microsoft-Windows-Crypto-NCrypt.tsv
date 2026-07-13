@@ -24,3 +24,4 @@ Microsoft-Windows-Crypto-NCrypt	22	0	KeyManagementDeleteKeyTask(UnicodeString Pr
 Microsoft-Windows-Crypto-NCrypt	23	0	KeyManagementWriteKeyTask23(AnsiString KeyName, UnicodeString KeyFileName, UnicodeString ProcessName)		ETW_KEYMGMT_KEYWORD_WRITE_KEY	KeyManagementWriteKeyTask	Informational		
 Microsoft-Windows-Crypto-NCrypt	24	0	KeyManagementDeleteKeyTask24(AnsiString KeyName, UnicodeString KeyFileName, UnicodeString ProcessName)		ETW_KEYMGMT_KEYWORD_DELETE_KEY	KeyManagementDeleteKeyTask	Informational		
 Microsoft-Windows-Crypto-NCrypt	25	0	VBSKeyIsolationoperation25(UnicodeString Status)		ETW_KEYWORD_KEYGUARD_INFO	VBSKeyIsolationoperation	Informational		
+Microsoft-Windows-Crypto-NCrypt	26	0	VBSKeyIsolationoperation26(Int64 LsaIsoLaunchAttempted, HexInt32 Status, Int64 TotalAttemptedRestarts, Int64 TotalSuccessfulRestarts, Int64 CanBeEnabled)		ETW_KEYWORD_KEYGUARD_INFO	VBSKeyIsolationoperation	Informational		

@@ -1,0 +1,97 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-MPTF	1	0	CoreConfigurationParseError(UInt16 RowCount, UInt32 ErrorLineLength, UnicodeString ErrorLine)		Critical MPTFCore	CoreConfigurationParseError	Error		
+Microsoft-Windows-MPTF	2	0	CoreConfigurationReadError(UInt32 Status)		Critical MPTFCore	CoreConfigurationReadError	Error		
+Microsoft-Windows-MPTF	3	0	CoreConfigurationAlgorithmError(UInt32 Row, UInt8 Base, UInt8 Interface, UInt8 Parameters, UInt8 Memory)		Critical MPTFCore	CoreConfigurationAlgorithmError	Error		
+Microsoft-Windows-MPTF	4	0	CoreConfigurationInterfaceError(UInt32 Row, UInt8 Base, UInt8 Parameters, UInt8 Memory)		Critical MPTFCore	CoreConfigurationInterfaceError	Error		
+Microsoft-Windows-MPTF	5	0	CoreConfigurationDeviceError(UInt8 Interfaces, UInt8 Algorithms)		Critical MPTFCore	CoreConfigurationDeviceError	Error		
+Microsoft-Windows-MPTF	6	0	CoreInterfaceEvent(UInt32 EventLogType, UInt32 Input, UInt32 Output, UInt32 ErrorCode)		Critical MPTFCore	CoreInterfaceEvent	Error		
+Microsoft-Windows-MPTF	7	0	CoreClientEvent(UInt32 EventLogType, Pointer TargetHandle, UInt32 ErrorCode)		Diagnostic MPTFCore	CoreClientEvent	Informational		
+Microsoft-Windows-MPTF	8	0	CoreClientError(UInt32 EventLogType, Pointer TargetHandle, UInt32 ErrorCode)		Critical MPTFCore	CoreClientError	Error		
+Microsoft-Windows-MPTF	9	0	CoreDStateEvent(UInt32 EventLogType)		Diagnostic MPTFCore	CoreDStateEvent	Informational		
+Microsoft-Windows-MPTF	10	0	CoreTimerEvent(UInt32 EventLogType, Pointer TargetHandle, UInt32 Input, UInt32 Output, UInt32 State)		Diagnostic MPTFCore	CoreTimerEvent	Informational		
+Microsoft-Windows-MPTF	11	0	CoreDataEvent(UInt32 EventLogType, UInt32 Type, UInt32 Instance, UInt32 value)		Critical MPTFCore	CoreDataEvent	Error		
+Microsoft-Windows-MPTF	12	0	CoreListEvent(UInt32 EventLogType)		Critical MPTFCore	CoreListEvent	Error		
+Microsoft-Windows-MPTF	13	0	CoreChannelEvent(UInt32 EventLogType)		Critical MPTFCore	CoreChannelEvent	Error		
+Microsoft-Windows-MPTF	14	0	ProcessingConfigurationEvent(UInt16 ModuleIndex, UInt16 InputCount, UInt16 VirtualNodeCount, UInt16 OutputCount)		Diagnostic MPTFCore	ProcessingConfigurationEvent	Informational		
+Microsoft-Windows-MPTF	15	0	ProcessingStateEvent(UInt8 Enabled)		Diagnostic MPTFCore	ProcessingStateEvent	Informational		
+Microsoft-Windows-MPTF	16	0	ProcessingTimerStateEvent(UInt8 Enabled)		Diagnostic MPTFCore	ProcessingTimerStateEvent	Informational		
+Microsoft-Windows-MPTF	17	0	ProcessingRegistrationEvent(UInt16 ModuleIndex, UInt32 Direction, UInt32 ChannelType, UInt32 ChannelInstance)		Diagnostic MPTFCore	ProcessingRegistrationEvent	Informational		
+Microsoft-Windows-MPTF	18	0	ProcessingUnregistrationEvent(UInt16 ModuleIndex, UInt32 Direction, UInt32 ChannelType, UInt32 ChannelInstance)		Diagnostic MPTFCore	ProcessingUnregistrationEvent	Informational		
+Microsoft-Windows-MPTF	19	0	ProcessingTooSlowEvent(UInt16 ModuleIndex, UInt32 DelayInMs)		Critical MPTFCore	ProcessingTooSlowEvent	Warning		
+Microsoft-Windows-MPTF	20	0	ProcessingInputStormEvent(UInt32 DelayInMs)		Critical MPTFCore	ProcessingInputStormEvent	Warning		
+Microsoft-Windows-MPTF	21	0	ProcessingTimerResetEvent(UInt32 DelayInMs)		Critical MPTFCore	ProcessingTimerResetEvent	Error		
+Microsoft-Windows-MPTF	1000	0	DmfModuleDataEnqueued(UInt32 ClientRefStringLength, UnicodeString ClientRefString, UInt16 DataCount, UInt8 Data)		Verbose MPTFDmfModule	DmfModuleDataEnqueued	Informational		
+Microsoft-Windows-MPTF	1001	0	DmfModuleDataUpdated(UInt32 ClientRefStringLength, UnicodeString ClientRefString, UInt16 DataCount, UInt8 Data)		Diagnostic MPTFDmfModule	DmfModuleDataUpdated	Informational		
+Microsoft-Windows-MPTF	1002	0	DmfModuleDataRundown(UInt32 ClientRefStringLength, UnicodeString ClientRefString, UInt16 DataCount, UInt8 Data)		Critical MPTFDmfModule	DmfModuleDataRundown	Informational		
+Microsoft-Windows-MPTF	1003	0	DmfModuleStatusEnqueued(UInt32 ClientRefStringLength, UnicodeString ClientRefString, UInt16 StatusCount, UInt8 Status)		Verbose MPTFDmfModule	DmfModuleStatusEnqueued	Informational		
+Microsoft-Windows-MPTF	1004	0	DmfModuleStatusUpdated(UInt32 ClientRefStringLength, UnicodeString ClientRefString, UInt16 StatusCount, UInt8 Status)		Diagnostic MPTFDmfModule	DmfModuleStatusUpdated	Informational		
+Microsoft-Windows-MPTF	1005	0	DmfModuleStatusRundown(UInt32 ClientRefStringLength, UnicodeString ClientRefString, UInt16 StatusCount, UInt8 Status)		Critical MPTFDmfModule	DmfModuleStatusRundown	Informational		
+Microsoft-Windows-MPTF	1006	0	DmfModuleCapabilityEnqueued(UInt32 ClientRefStringLength, UnicodeString ClientRefString, UInt16 CapabilityCount, UInt8 Capabilities)		Verbose MPTFDmfModule	DmfModuleCapabilityEnqueued	Informational		
+Microsoft-Windows-MPTF	1007	0	DmfModuleCapabilityUpdated(UInt32 ClientRefStringLength, UnicodeString ClientRefString, UInt16 CapabilityCount, UInt8 Capabilities)		Diagnostic MPTFDmfModule	DmfModuleCapabilityUpdated	Informational		
+Microsoft-Windows-MPTF	1008	0	DmfModuleCapabilityRundown(UInt32 ClientRefStringLength, UnicodeString ClientRefString, UInt16 CapabilityCount, UInt8 Capabilities)		Critical MPTFDmfModule	DmfModuleCapabilityRundown	Informational		
+Microsoft-Windows-MPTF	1009	0	DmfModuleProcessingAlgorithm(UInt16 Type, UInt16 AlgorithmId, UInt16 Stage, UInt16 Domain, UInt16 DomainMultiplier, UInt16 IsTimerEvent, UInt16 InputCount, UInt16 OutputCount, UInt16 IdleCycles)		Verbose MPTFDmfModule	DmfModuleProcessingAlgorithm	Informational		
+Microsoft-Windows-MPTF	2000	0	MSTSTemperatureReadRequest(UInt32 Status, Boolean CompleteRequest, FILETIME UpdateTime, FILETIME ExpirationTime, UInt32 Timeout, UInt32 LowTemperature, UInt32 HighTemperature, UInt32 BytesWritten)		Performance TemperatureSensor	MSTSTemperatureReadRequest	Informational		
+Microsoft-Windows-MPTF	2001	0	MSTSTemperatureNotification(UInt32 Status, Boolean CompleteRequest, FILETIME CurrentTime, FILETIME ExpirationTime, UInt32 LowTemperature, UInt32 HighTemperature, UInt32 Temperature, UInt32 BytesWritten)		Performance TemperatureSensor	MSTSTemperatureNotification	Informational		
+Microsoft-Windows-MPTF	2002	0	MSTSQueryDsmSupport(UInt32 Status, HexInt32 DsmSupportBitmask, UInt32 DsmState)		Diagnostic TemperatureSensor	MSTSQueryDsmSupport	Informational		
+Microsoft-Windows-MPTF	2500	0	TfThermalReadIrpReceived(UInt32 ThermalDeviceId, UInt64 RequestToken, UInt32 Timeout, UInt32 LowTemperature, UInt32 HighTemperature)		Diagnostic ThermalFilter	TfThermalReadIrpReceived	Informational		
+Microsoft-Windows-MPTF	2501	0	TfThermalReadIrpComplete(UInt32 ThermalDeviceId, UInt32 RequestType, UInt64 RequestToken, UInt32 Status, UInt32 Timeout, UInt32 LowTemperature, UInt32 HighTemperature, UInt32 ReturnedTemperature)		Diagnostic ThermalFilter	TfThermalReadIrpComplete	Informational		
+Microsoft-Windows-MPTF	2502	0	TfThermalReadAggregateThresholds(UInt32 ThermalDeviceId, UInt32 PendingRequestCount, UInt32 Timeout, UInt32 LowTemperature, UInt32 HighTemperature)		Diagnostic ThermalFilter	TfThermalReadAggregateThresholds	Informational		
+Microsoft-Windows-MPTF	2503	0	TfThermalReadRequestSent(UInt32 ThermalDeviceId, UInt32 Status, UInt32 Timeout, UInt32 LowTemperature, UInt32 HighTemperature)		Diagnostic ThermalFilter	TfThermalReadRequestSent	Informational		
+Microsoft-Windows-MPTF	2504	0	TfRundown(UInt32 BiosNameLength, UnicodeString BiosName, Int32 DeviceId, UInt32 Capabilities, UInt32 CheckMode, UInt32 ThermalReadRetryCount, UInt32 ThermalReadFailure, UInt32 CurrentTemperature)		Diagnostic ThermalFilter	TfRundown	Informational		
+Microsoft-Windows-MPTF	2505	0	TfSystemEvent(UInt32 BiosNameLength, UnicodeString BiosName, Int32 DeviceId, UInt32 Capabilities)		Critical ThermalFilter	TfSystemEvent	Informational		
+Microsoft-Windows-MPTF	3000	0	MscioQueryInput(UInt64 DeviceHandle, Int32 FunctionId, UInt32 Value, HexInt32 ErrorCode, UInt32 Status)		Diagnostic CustomizedIO	MscioQueryInput	Informational		
+Microsoft-Windows-MPTF	3001	0	MscioSendOutput(UInt64 DeviceHandle, Int32 FunctionId, UInt32 Value, UInt32 Status)		Diagnostic CustomizedIO	MscioSendOutput	Informational		
+Microsoft-Windows-MPTF	3002	0	MscioQueryDsmSupport(UInt64 DeviceHandle, GUID DsmGuid, HexInt32 DsmSupportBitmask, UInt32 DsmState, UInt32 Status)		Diagnostic CustomizedIO	MscioQueryDsmSupport	Informational		
+Microsoft-Windows-MPTF	3003	0	MscioQuerySignal(UInt64 DeviceHandle, UInt32 FunctionId, UInt32 Value, UInt32 DsmState, UInt32 ErrorCode)		Diagnostic CustomizedIO	MscioQuerySignal	Informational		
+Microsoft-Windows-MPTF	3004	0	MscioSendSignal(UInt64 DeviceHandle, UInt32 FunctionId, UInt32 Value, UInt32 DsmState, UInt32 ErrorCode)		Diagnostic CustomizedIO	MscioSendSignal	Informational		
+Microsoft-Windows-MPTF	3005	0	MscioRundown(UInt32 BiosNameLength, UnicodeString BiosName, UInt64 DeviceHandle, UInt32 SupportedInputs, UInt32 InputState, UInt32 InputErrors, UInt32 SupportedOutputs, UInt32 OutputState, UInt32 OutputErrors)		Diagnostic CustomizedIO	MscioRundown	Informational		
+Microsoft-Windows-MPTF	3006	0	MscioSystemEvent(UInt32 BiosNameLength, UnicodeString BiosName, UInt32 SupportedInputs, UInt32 SupportedOutputs)		Critical CustomizedIO	MscioSystemEvent	Informational		
+Microsoft-Windows-MPTF	10000	0	ThermalPolicyDriver(GUID ChannelType, UInt16 ChannelInstance, Int32 InvalidValue)		Critical MPTFThermalPolicy	ThermalPolicyDriver	Error		
+Microsoft-Windows-MPTF	10001	0	ThermalPolicyDriver10001(GUID ChannelType, UInt16 ChannelInstance, Int32 InvalidValue)		Critical MPTFThermalPolicy	ThermalPolicyDriver	Error		
+Microsoft-Windows-MPTF	10002	0	ThermalPolicyDriver10002(GUID ChannelType, UInt16 ChannelInstance, Int32 InvalidValue)		Critical MPTFThermalPolicy	ThermalPolicyDriver	Error		
+Microsoft-Windows-MPTF	10003	0	ThermalPolicyDriver10003(GUID ChannelType, UInt16 ChannelInstance, Int32 InvalidValue)		Critical MPTFThermalPolicy	ThermalPolicyDriver	Error		
+Microsoft-Windows-MPTF	10004	0	ThermalPolicyDriver10004(GUID ChannelType, UInt16 ChannelInstance, Int32 Minimum, Int32 Maximum)		Critical MPTFThermalPolicy	ThermalPolicyDriver	Error		
+Microsoft-Windows-MPTF	10005	0	ThermalPolicyDriver10005(GUID ChannelType, UInt16 ChannelInstance, Int32 Minimum, Int32 Maximum, Int32 Default)		Critical MPTFThermalPolicy	ThermalPolicyDriver	Error		
+Microsoft-Windows-MPTF	10006	0	ThermalPolicyDriver10006(GUID ChannelType, UInt16 ChannelInstance, Int32 Expected, Int32 Actual)		Critical MPTFThermalPolicy	ThermalPolicyDriver	Error		
+Microsoft-Windows-MPTF	10007	0	ThermalPolicyDriver10007(GUID ChannelType, UInt16 ChannelInstance, Int32 InvalidValue)		Critical MPTFThermalPolicy	ThermalPolicyDriver	Error		
+Microsoft-Windows-MPTF	10008	0	ThermalPolicyDriver10008(GUID ChannelType, UInt16 ChannelInstance, Int32 Expected, Int32 Actual)		Critical MPTFThermalPolicy	ThermalPolicyDriver	Error		
+Microsoft-Windows-MPTF	10009	0	ThermalPolicyDriver10009(GUID ChannelType, UInt16 ChannelInstance, Int32 Minimum, Int32 Maximum)		Critical MPTFThermalPolicy	ThermalPolicyDriver	Error		
+Microsoft-Windows-MPTF	10010	0	ThermalPolicyDriver10010(GUID ChannelType, UInt16 ChannelInstance, Int32 InvalidValue)		Critical MPTFThermalPolicy	ThermalPolicyDriver	Error		
+Microsoft-Windows-MPTF	10011	0	ThermalPolicyDriver10011(UInt32 NamedChannelType, UInt32 ActualChannelCount, UInt32 MaxChannelCount)		Critical MPTFThermalPolicy	ThermalPolicyDriver	Error		
+Microsoft-Windows-MPTF	10012	0	ThermalPolicyDriver10012(UInt32 NamedChannelType, GUID ChannelType, UInt16 ChannelInstance, AnsiString BiosName, Int32 MaxBiosNameLength)		Critical MPTFThermalPolicy	ThermalPolicyDriver	Error		
+Microsoft-Windows-MPTF	10013	0	ThermalPolicyDriver10013(UInt32 NamedChannelType, GUID ChannelType, UInt16 ChannelInstance)		Critical MPTFThermalPolicy	ThermalPolicyDriver	Error		
+Microsoft-Windows-MPTF	10014	0	ThermalPolicyDriver10014(GUID ChannelType, UInt16 ChannelInstance, UInt32 NtStatusError)		Critical MPTFThermalPolicy	ThermalPolicyDriver	Error		
+Microsoft-Windows-MPTF	10015	0	ThermalPolicyDriver10015(UInt32 NtStatusError)		Critical MPTFThermalPolicy	ThermalPolicyDriver	Error		
+Microsoft-Windows-MPTF	10016	0	ThermalPolicyDriver10016(UInt32 NtStatusError)		Critical MPTFThermalPolicy	ThermalPolicyDriver	Error		
+Microsoft-Windows-MPTF	10017	0	ThermalPolicyDriver10017(UInt32 NamedChannelType, GUID ChannelType, UInt16 ChannelInstance, Int32 Value, UInt32 NtStatusError)		Diagnostic MPTFThermalPolicy	ThermalPolicyDriver	Warning		
+Microsoft-Windows-MPTF	10018	0	ThermalPolicyDriver10018(GUID ChannelType, UInt16 ChannelInstance, UInt32 NtStatusError)		Diagnostic MPTFThermalPolicy	ThermalPolicyDriver	Warning		
+Microsoft-Windows-MPTF	10019	0	ThermalPolicyDriver10019(GUID ChannelType, UInt16 ChannelInstance, UInt32 NtStatusError)		Diagnostic MPTFThermalPolicy	ThermalPolicyDriver	Warning		
+Microsoft-Windows-MPTF	10020	0	ThermalPolicyDriver10020(UInt32 NamedChannelType, GUID ChannelType, UInt16 ChannelInstance, Boolean Value)		Diagnostic MPTFThermalPolicy	ThermalPolicyDriver	Informational		
+Microsoft-Windows-MPTF	10021	0	ThermalPolicyDriver10021()		Diagnostic MPTFThermalPolicy	ThermalPolicyDriver	Informational		
+Microsoft-Windows-MPTF	10022	0	ThermalPolicyDriver10022(UInt32 Count, UInt32 Length)		Diagnostic MPTFThermalPolicy	ThermalPolicyDriver	Warning		
+Microsoft-Windows-MPTF	10023	0	ThermalPolicyDriver10023(UInt16 Type, UInt16 DataLength)		Diagnostic MPTFThermalPolicy	ThermalPolicyDriver	Warning		
+Microsoft-Windows-MPTF	10024	0	ThermalPolicyDriver10024(UInt32 State)		Diagnostic MPTFThermalPolicy	ThermalPolicyDriver	Warning		
+Microsoft-Windows-MPTF	10500	0	PowerLimitClientStateChange(UInt32 NewState, UInt32 PreviousState, UInt32 Status)		Diagnostic MPTFPowerLimitClient	PowerLimitClientStateChange	Informational		
+Microsoft-Windows-MPTF	10501	0	PowerLimitConfigurationFormatError(UnicodeString ErrorType, UInt32 TotalValidConfiguration)		Critical MPTFPowerLimitClient	PowerLimitConfigurationFormatError	Error		
+Microsoft-Windows-MPTF	10502	0	PowerLimitConfigurationValueError(UnicodeString ErrorType, UInt32 Version, UInt32 DefaultValue, UInt32 MaxValue, UInt32 MinValue, UInt32 DomainId, UInt32 Type, UInt32 IsTimeParameter, AnsiString BiosName, UInt32 TotalValidConfiguration)		Critical MPTFPowerLimitClient	PowerLimitConfigurationValueError	Error		
+Microsoft-Windows-MPTF	10503	0	PowerLimitGenericError(UInt32 ErrorStatus, UnicodeString ErrorType)		Critical MPTFPowerLimitClient	PowerLimitGenericError	Error		
+Microsoft-Windows-MPTF	10504	0	PowerLimitClaimInterface(UInt32 ClaimInterface, UInt32 Status, AnsiString BiosName)		Diagnostic MPTFPowerLimitClient	PowerLimitClaimInterface	Informational		
+Microsoft-Windows-MPTF	10505	0	PowerLimitSetPowerError(UInt32 Status, AnsiString BiosName, UInt32 DeviceIndex)		Critical MPTFPowerLimitClient	PowerLimitSetPowerError	Error		
+Microsoft-Windows-MPTF	11000	0	PowerSourceClientFailure(UInt32 ErrorCode, UInt32 Status)		Critical MPTFPowerSourceClient	PowerSourceClientFailure	Error		
+Microsoft-Windows-MPTF	11001	0	PowerSourceClientStateChange(UInt32 NewState, UInt32 PreviousState)		Diagnostic MPTFPowerSourceClient	PowerSourceClientStateChange	Informational		
+Microsoft-Windows-MPTF	11500	0	CustomizedIOClientGenericError(UInt32 ErrorStatus, UInt32 ErrorType)		Critical MPTFCustomizedIOSignalClient	CustomizedIOClientGenericError	Error		
+Microsoft-Windows-MPTF	11501	0	CustomizedIOSignalClientInputConfig(Int32 ConfigVersion, Int32 PollingStartValue, Int32 TimerTriggerHysteresis, Int32 PollingIntervalMs, Int32 DefaultPollingTimerMs, Int32 MaxValue, Int32 MinValue, Int32 FunctionId, AnsiString BiosName)		Diagnostic MPTFCustomizedIOSignalClient	CustomizedIOSignalClientInputConfig	Informational		
+Microsoft-Windows-MPTF	11502	0	CustomizedIOSignalClientOutputConfig(Int32 ConfigVersion, Int32 MaxValue, Int32 MinValue, Int32 DefaultValue, Int32 FunctionId, AnsiString BiosName)		Diagnostic MPTFCustomizedIOSignalClient	CustomizedIOSignalClientOutputConfig	Informational		
+Microsoft-Windows-MPTF	11503	0	CustomizedIOSignalClientChannelCount(UInt32 InputChannelCount, UInt32 OutputChannelCount)		Diagnostic MPTFCustomizedIOSignalClient	CustomizedIOSignalClientChannelCount	Informational		
+Microsoft-Windows-MPTF	11504	0	CustomizedIOSignalClientInputFailure(Int32 ChannelIndex, UInt32 FunctionId, AnsiString BiosName, UInt32 ErrorCode)		Critical MPTFCustomizedIOSignalClient	CustomizedIOSignalClientInputFailure	Error		
+Microsoft-Windows-MPTF	11505	0	CustomizedIOSignalClientArrivalRemoval(AnsiString BiosName, UInt32 IoTargetState)		Diagnostic MPTFCustomizedIOSignalClient	CustomizedIOSignalClientArrivalRemoval	Informational		
+Microsoft-Windows-MPTF	11506	0	CustomizedIOSignalClientInputChannelMessage(UInt32 FunctionId, AnsiString BiosName, UInt32 TimerState)		Diagnostic MPTFCustomizedIOSignalClient	CustomizedIOSignalClientInputChannelMessage	Informational		
+Microsoft-Windows-MPTF	12000	0	MptfServiceLoadError(GUID ChannelType, UInt16 ChannelInstance, Int32 ErrorCode)		Critical MptfGenericService	MptfServiceLoadError	Error		
+Microsoft-Windows-MPTF	12001	0	MptfServiceInitialized(GUID ChannelType, UInt16 ChannelInstance)		Diagnostic MptfGenericService	MptfServiceInitialized	Informational		
+Microsoft-Windows-MPTF	12002	0	MptfServicePublishError(GUID ChannelType, UInt16 ChannelInstance, Int32 ErrorCode)		Critical MptfGenericService	MptfServicePublishError	Error		
+Microsoft-Windows-MPTF	12003	0	MptfServiceValuePublished(GUID ChannelType, UInt16 ChannelInstance, Int32 Value)		Diagnostic MptfGenericService	MptfServiceValuePublished	Informational		
+Microsoft-Windows-MPTF	12004	0	MptfServiceRundown(GUID ChannelType, UInt16 ChannelInstance, Int32 Value)		Diagnostic MptfGenericService	MptfServiceRundown	Informational		
+Microsoft-Windows-MPTF	12005	0	MptfServiceStartInitiated(GUID ChannelType, UInt16 ChannelInstance, Boolean ThreadJoinable, Boolean HasValue)		Diagnostic MptfGenericService	MptfServiceStartInitiated	Informational		
+Microsoft-Windows-MPTF	12006	0	MptfServiceStarted(GUID ChannelType, UInt16 ChannelInstance, Boolean Hasvalue, Boolean ForcePublish)		Diagnostic MptfGenericService	MptfServiceStarted	Informational		
+Microsoft-Windows-MPTF	12007	0	MptfServiceStopInitiated(GUID ChannelType, UInt16 ChannelInstance, Boolean ThreadJoinable)		Diagnostic MptfGenericService	MptfServiceStopInitiated	Informational		
+Microsoft-Windows-MPTF	12008	0	MptfServiceStopped(GUID ChannelType, UInt16 ChannelInstance)		Diagnostic MptfGenericService	MptfServiceStopped	Informational		

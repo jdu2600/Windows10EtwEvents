@@ -38,6 +38,9 @@ LsaSrv	6161	0	task_06161(UInt32 Config, UInt32 IsTestConfig, UInt32 AutoEnabled)
 LsaSrv	6162	0	task_06162()			task_0	Informational		
 LsaSrv	6163	0	task_06163()			task_0	Informational		
 LsaSrv	6164	0	task_06164()			task_0	Warning		
+LsaSrv	6165	0	task_06165(UInt32 CredGuardRunning, UInt32 VbsSecretValidity)			task_0	Warning		
+LsaSrv	6166	0	task_06166(UInt32 CredGuardRunning, UInt32 GroupPolicyStatus, UInt32 MachineSecretSource, UInt32 VbsSecretValidity)			task_0	Informational		
+LsaSrv	6167	0	task_06167()			task_0	Error		
 LsaSrv	6182	0	task_06182(HexInt64 TargetLogonId, UnicodeString AccountName, UnicodeString DomainName)			task_0	Warning		
 LsaSrv	6225	0	LSALogonStart()	Start		LSALogon	Informational		
 LsaSrv	6226	0	LSALogonStop()	Stop		LSALogon	Informational		

@@ -428,3 +428,5 @@ Microsoft-Windows-Kernel-Power	597	0	PowerLimitExtensionRundown(Pointer Token, U
 Microsoft-Windows-Kernel-Power	598	0	PowerLimitExtensionUpdate(Pointer Token, UInt32 LimitCount, Int8 Values)		po:Thermal	PowerLimitExtensionUpdate	Informational		
 Microsoft-Windows-Kernel-Power	599	0	EnergySaverStateV2(Int32 State, Int32 Reason)		po:Scenario po:Performance po:PerformanceLight	EnergySaverStateV2	Informational		
 Microsoft-Windows-Kernel-Power	600	0	SetHiberFileFailure(UInt32 Status, UInt32 FailurePoint)		po:Diagnostic	SetHiberFileFailure	Informational		
+Microsoft-Windows-Kernel-Power	601	0	HibernateRevoked(UInt32 MinSVN, UInt32 HiberrsmSVN, UInt32 HiberrsmOSVersion)		po:Diagnostic	HibernateRevoked	Warning		
+Microsoft-Windows-Kernel-Power	602	0	ModernStandbyNotification(UInt32 PrevState, UInt32 TargetState, UInt32 Promoted, UInt32 Entered, GUID SettingGuid, UInt32 NewSettingValue)		po:Diagnostic po:Thermal	ModernStandbyNotification	Informational		

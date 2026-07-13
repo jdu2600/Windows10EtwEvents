@@ -111,12 +111,29 @@ Microsoft-Windows-SENSE	116	0	task_0116()			task_0	Error
 Microsoft-Windows-SENSE	117	0	task_0117(UnicodeString Message1, HexInt32 HRESULT)			task_0	Error		
 Microsoft-Windows-SENSE	118	0	task_0118(Int32 phase, UnicodeString newVersion, UnicodeString message)			task_0	Informational		
 Microsoft-Windows-SENSE	119	0	task_0119(HexInt32 HRESULT)			task_0	Error		
+Microsoft-Windows-SENSE	120	0	task_0120(UnicodeString parameter)			task_0	Informational		
+Microsoft-Windows-SENSE	121	0	task_0121(UnicodeString message)			task_0	Informational		
+Microsoft-Windows-SENSE	122	0	task_0122(Int32 phase, UnicodeString newVersion, UnicodeString message, HexInt32 HRESULT)			task_0	Warning		
+Microsoft-Windows-SENSE	123	0	task_0123(UnicodeString valueName1, UnicodeString value1, UnicodeString valueName2, UnicodeString value2, UnicodeString message, HexInt32 HRESULT)			task_0	Error		
+Microsoft-Windows-SENSE	124	0	task_0124()			task_0	Informational		
+Microsoft-Windows-SENSE	125	0	task_0125()			task_0	Informational		
+Microsoft-Windows-SENSE	126	0	task_0126(HexInt32 HRESULT)			task_0	Error		
+Microsoft-Windows-SENSE	127	0	task_0127(HexInt32 HRESULT)			task_0	Error		
+Microsoft-Windows-SENSE	128	0	task_0128()			task_0	Informational		
+Microsoft-Windows-SENSE	129	0	task_0129()			task_0	Informational		
+Microsoft-Windows-SENSE	130	0	task_0130(UnicodeString CommandType, UnicodeString PolicyHash, UInt64 TimeStamp)			task_0	Informational		
+Microsoft-Windows-SENSE	131	0	task_0131(UnicodeString CommandType, UnicodeString PolicyHash, UInt64 TimeStamp)			task_0	Informational		
+Microsoft-Windows-SENSE	132	0	task_0132(UnicodeString CommandType, UnicodeString PolicyHash, UInt64 TimeStamp, HexInt32 HRESULT, UnicodeString ErrorMessage)			task_0	Error		
+Microsoft-Windows-SENSE	133	0	task_0133(UnicodeString CommandType, UInt64 TimeStamp)			task_0	Informational		
+Microsoft-Windows-SENSE	134	0	task_0134(UnicodeString BlobSha256)			task_0	Warning		
+Microsoft-Windows-SENSE	135	0	task_0135(UnicodeString BlobEpoch, UnicodeString BlobSha256)			task_0	Error		
 Microsoft-Windows-SENSE	307	0	task_0307(HexInt32 HRESULT)			task_0	Error		
 Microsoft-Windows-SENSE	308	0	task_0308(UnicodeString Message1, HexInt32 HRESULT)			task_0	Error		
-Microsoft-Windows-SENSE	309	0	task_0309(UInt32 UInt1, UnicodeString Message1)			task_0	Error		
+Microsoft-Windows-SENSE	309	0	task_0309(UInt32 UInt1, UnicodeString Message1, UnicodeString providerName)			task_0	Error		
+Microsoft-Windows-SENSE	310	0	task_0310(HexInt32 HRESULT)			task_0	Error		
 Microsoft-Windows-SENSE	400	0	task_0400(HexInt32 HRESULT)			task_0	Error		
 Microsoft-Windows-SENSE	401	0	task_0401(HexInt32 HRESULT)			task_0	Error		
-Microsoft-Windows-SENSE	402	0	task_0402(HexInt32 HRESULT)			task_0	Error		
+Microsoft-Windows-SENSE	402	0	task_0402(UnicodeString Message1, HexInt32 HRESULT)			task_0	Error		
 Microsoft-Windows-SENSE	403	0	task_0403()			task_0	Informational		
 Microsoft-Windows-SENSE	404	0	task_0404()			task_0	Informational		
 Microsoft-Windows-SENSE	405	0	task_0405(UnicodeString requestType, HexInt32 HRESULT, Int32 errorCode)			task_0	Error		
@@ -128,7 +145,11 @@ Microsoft-Windows-SENSE	410	0	task_0410()			task_0	Informational
 Microsoft-Windows-SENSE	411	0	task_0411()			task_0	Informational		
 Microsoft-Windows-SENSE	412	0	task_0412()			task_0	Informational		
 Microsoft-Windows-SENSE	414	0	task_0414()			task_0	Informational		
-Microsoft-Windows-SENSE	416	0	task_0416(UnicodeString parameter)			task_0	Informational		
+Microsoft-Windows-SENSE	415	0	task_0415()			task_0	Informational		
+Microsoft-Windows-SENSE	417	0	task_0417()			task_0	Informational		
+Microsoft-Windows-SENSE	418	0	task_0418()			task_0	Informational		
+Microsoft-Windows-SENSE	419	0	task_0419()			task_0	Informational		
+Microsoft-Windows-SENSE	420	0	task_0420()			task_0	Informational		
 Microsoft-Windows-SENSE	500	0	task_0500(UInt32 UInt1, UnicodeString Message1, HexInt32 HRESULT)			task_0	Error		
 Microsoft-Windows-SENSE	501	0	task_0501(UInt32 UInt1, UnicodeString Message1)			task_0	Informational		
 Microsoft-Windows-SENSE	1800	0	task_01800(UInt32 UInt1, UnicodeString Message1)			task_0	Verbose		

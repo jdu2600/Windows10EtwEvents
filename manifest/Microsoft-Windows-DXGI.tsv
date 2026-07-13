@@ -48,6 +48,7 @@ Microsoft-Windows-DXGI	73	0	Factory(Pointer pIDXGIFactory, Boolean ReparentingOc
 Microsoft-Windows-DXGI	74	0	SwapChain(Pointer pIDXGISwapchain, Pointer m_pPreferredOutput, UInt32 NewSyncInterval)		Events	SwapChain	Always		
 Microsoft-Windows-DXGI	75	0	LoadEffects(UnicodeString EffectsModuleName, UInt16 NumLoadedEffects)		Events	LoadEffects	Always		
 Microsoft-Windows-DXGI	76	0	CreateEffect(UInt16 EffectType, GUID EffectId, AnsiString Version, UInt16 Reason, HexInt32 HResult)		Events	CreateEffect	Always		
+Microsoft-Windows-DXGI	77	0	DynamicSwitch(Boolean ShouldSwitch, UInt32 DecisionFactor)		Events	DynamicSwitch	Always		
 Microsoft-Windows-DXGI	80	0	CreateDXGIFactoryStart(GUID riid, Pointer ppFactory)	Start		CreateDXGIFactory	Always		
 Microsoft-Windows-DXGI	81	0	CreateDXGIFactoryStop(UInt32 m_Ret)	Stop		CreateDXGIFactory	Always		
 Microsoft-Windows-DXGI	104	0	IDXGIAdapter_QueryInterfaceStart(Pointer pThis, GUID riid, Pointer ppvObject)	Start		IDXGIAdapter_QueryInterface	Always		

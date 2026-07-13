@@ -327,3 +327,8 @@ Microsoft-Windows-Dwm-Core	473	0	CompositionSwapchain_NewFrameStatisticsInstance
 Microsoft-Windows-Dwm-Core	474	0	DCOMPEVENT_BEGIN_DUPLICATE(UInt32 sourceChannel, UInt32 sourceResource, UInt32 destChannel, UInt32 resourceType, UInt64 sourceResourcePointer)		DwmInput	DCOMPEVENT_BEGIN_DUPLICATE	Verbose		
 Microsoft-Windows-Dwm-Core	475	0	VISUALTREEREMOTING_SKIP_RENDER_ON_SERVER()		Composition	VISUALTREEREMOTING_SKIP_RENDER_ON_SERVER	Informational		
 Microsoft-Windows-Dwm-Core	476	0	Dx_DirectFlip_Consumed(UInt64 displayAdapterLuid, UInt64 renderAdapterLuid, UInt32 vidPnSourceId, UInt32 vidPnTargetId, UInt32 uniqueId, UInt64 surfaceLuid, UInt64 bindId, UInt32 presentCount, UInt32 DirectFlipMode, UInt32 presentFlags, UInt32 syncInterval)		Composition	Dx_DirectFlip_Consumed	Informational		
+Microsoft-Windows-Dwm-Core	477	0	CompSurfInfo_NotifyWaitForFlipAway(UInt64 surfaceLuid)		Composition	CompSurfInfo_NotifyWaitForFlipAway	Informational		
+Microsoft-Windows-Dwm-Core	478	0	FlipAwayFenceCreate(UInt64 fenceId, UInt64 displayAdapterLuid, UInt32 vidPnSourceId, UInt32 planeIndex)		Composition	FlipAwayFenceCreate	Informational		
+Microsoft-Windows-Dwm-Core	479	0	FlipAwayFenceDestroy(UInt64 fenceId)		Composition	FlipAwayFenceDestroy	Informational		
+Microsoft-Windows-Dwm-Core	480	0	IssuePlaneFlipAwaySignal(UInt32 planeIndex, UInt64 fenceId, UInt64 signalValue)		Composition	IssuePlaneFlipAwaySignal	Informational		
+Microsoft-Windows-Dwm-Core	481	0	D2DBitmapFastCrossAdapterCopy(UInt32 UpdateLeft, UInt32 UpdateTop, UInt32 UpdateRight, UInt32 UpdateBottom, UInt64 sourceAdapterLuid, UInt64 destAdapterLuid)		Composition	D2DBitmapFastCrossAdapterCopy	Informational		

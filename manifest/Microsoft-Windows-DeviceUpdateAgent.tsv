@@ -23,5 +23,8 @@ Microsoft-Windows-DeviceUpdateAgent	700	0	task_0700(UInt32 HRESULT)			task_0	Err
 Microsoft-Windows-DeviceUpdateAgent	800	0	task_0800(UInt32 HRESULT)			task_0	Error		
 Microsoft-Windows-DeviceUpdateAgent	801	0	task_0801(UnicodeString Prop_ProductId, UnicodeString Prop_ProductVersion)			task_0	Informational		
 Microsoft-Windows-DeviceUpdateAgent	802	0	task_0802(UnicodeString Prop_ProductId, UnicodeString Prop_ProductVersion, UInt32 Prop_MissingUpdates, UInt32 Prop_MissingDrivers, UInt32 Prop_UnpublishedDrivers, UInt32 Prop_PublishedDrivers, UInt32 Prop_AnalysisErrorDrivers)			task_0	Error		
+Microsoft-Windows-DeviceUpdateAgent	803	0	task_0803(UnicodeString Prop_ProductId, UnicodeString Prop_ProductVersion, UInt32 HRESULT)			task_0	Warning		
+Microsoft-Windows-DeviceUpdateAgent	804	0	task_0804(UnicodeString Prop_DeviceInstancePath, UnicodeString Prop_DriverPackageId, UInt32 Prop_ProblemCode)			task_0	Warning		
+Microsoft-Windows-DeviceUpdateAgent	805	0	task_0805(UnicodeString Prop_DeviceInstancePath, UnicodeString Prop_DriverPackageId, UInt32 Prop_InstallError)			task_0	Warning		
 Microsoft-Windows-DeviceUpdateAgent	900	0	task_0900(UInt32 HRESULT)			task_0	Error		
 Microsoft-Windows-DeviceUpdateAgent	1000	0	task_01000(UnicodeString Prop_ProductId, UnicodeString Prop_Version1, UnicodeString Prop_Version2)			task_0	Error		

@@ -314,7 +314,7 @@ Microsoft-Windows-Win32k	501	0	FlipManagerCompleteTokenStop(UInt64 PresentId)	St
 Microsoft-Windows-Win32k	502	0	FlipManagerTokenReleaseToFrameStart(UInt32 FlipManagerId, UInt64 PresentId)	Start	Updates	FlipManagerTokenReleaseToFrame	Informational		
 Microsoft-Windows-Win32k	503	0	FlipManagerTokenReleaseToFrameStop(UInt32 FlipManagerId, UInt64 PresentId)	Stop	Updates	FlipManagerTokenReleaseToFrame	Informational		
 Microsoft-Windows-Win32k	504	0	FlipManagerPresentConfirmed(UInt32 FlipManagerId, UInt64 PresentId)		Updates	FlipManagerPresentConfirmed	Informational		
-Microsoft-Windows-Win32k	505	0	FlipManagerPresentSignaled(UInt32 FlipManagerId, UInt64 PresentId, Boolean Skipped)		Updates	FlipManagerPresentSignaled	Informational		
+Microsoft-Windows-Win32k	505	0	FlipManagerPresentSignaled(UInt32 FlipManagerId, UInt64 SignalValue, Boolean Skipped, UInt32 Status)		Updates	FlipManagerPresentSignaled	Informational		
 Microsoft-Windows-Win32k	506	0	FlipManagerPresentPosted(UInt32 FlipManagerId, UInt64 PresentId, UInt64 PresentAtTimeHns, UInt64 CurrentTimeHns, Int64 PresentAtTimeMinusCurrentTimeHns)		Updates	FlipManagerPresentPosted	Informational		
 Microsoft-Windows-Win32k	507	0	FlipManagerProducerSetContent(UInt32 FlipManagerId, Pointer ContentResource, Pointer BufferResource, UInt32 BufferIndex)		Updates	FlipManagerProducerSetContent	Informational		
 Microsoft-Windows-Win32k	508	0	FlipManagerBufferAvailable(UInt32 FlipManagerId, Pointer BufferResource, Boolean available)		Updates	FlipManagerBufferAvailable	Informational		
@@ -345,6 +345,10 @@ Microsoft-Windows-Win32k	532	0	FlipManagerPresentSkipped(UInt32 FlipManagerId, U
 Microsoft-Windows-Win32k	533	0	FlipManagerRemoveContent(UInt32 FlipManagerId, Pointer ContentResource)		Updates	FlipManagerRemoveContent	Informational		
 Microsoft-Windows-Win32k	534	0	FlipManagerPresentIFlipPurgePreviousPresents(UInt32 FlipManagerId, UInt64 PresentId)		Updates	FlipManagerPresentIFlipPurgePreviousPresents	Informational		
 Microsoft-Windows-Win32k	535	0	FlipManagerDiscardPresentAfterDestroy(UInt32 FlipManagerId, UInt64 PresentId)		Updates	FlipManagerDiscardPresentAfterDestroy	Informational		
+Microsoft-Windows-Win32k	536	0	FlipManagerWaitForFrameRenderingComplete(UInt32 FlipManagerId, UInt64 PresentId, UInt64 FrameId, UInt32 Status)		Updates	FlipManagerWaitForFrameRenderingComplete	Informational		
+Microsoft-Windows-Win32k	537	0	FlipManagerWaitForFrameFlipAway(UInt32 FlipManagerId, UInt64 adapterLuid, UInt64 fenceValue, UInt32 Status)		Updates	FlipManagerWaitForFrameFlipAway	Informational		
+Microsoft-Windows-Win32k	538	0	FlipManagerFlipAwayFenceCreate(UInt64 fenceId, UInt64 displayAdapterLuid)		Updates	FlipManagerFlipAwayFenceCreate	Informational		
+Microsoft-Windows-Win32k	539	0	FlipManagerFlipAwayFenceDestroy(UInt64 fenceId, UInt64 displayAdapterLuid)		Updates	FlipManagerFlipAwayFenceDestroy	Informational		
 Microsoft-Windows-Win32k	1000	0	task_0(UInt32 eventMin, UInt32 eventMax, UInt32 idEventProcess, UInt32 idEventThread, UInt32 Flags, Pointer HookInstance)		AuditApiCalls	task_0	Informational		
 Microsoft-Windows-Win32k	1001	0	task_01001(UInt32 ReturnValue, UInt16 UsagePage, UInt16 Usage, UInt32 Flags, Pointer hwndTarget, Pointer ThreadStartAddress, FILETIME ThreadCreateTime, UInt32 ThreadId, UInt32 cWindows, UInt32 cVisWindows, UInt64 ThreadInfoFlags, UInt32 ProcessId, FILETIME ProcessCreateTime, UInt64 ProcessStartKey, UnicodeString ThreadStartAddressMappedModuleName, UInt32 ThreadStartAddressQueryResult, Pointer ThreadStartAddressVadAllocationBase, UInt32 ThreadStartAddressVadAllocationProtect, UInt32 ThreadStartAddressVadRegionType, Pointer ThreadStartAddressVadRegionSize, UInt32 ThreadStartAddressVadProtect)		AuditApiCalls	task_0	Informational		
 Microsoft-Windows-Win32k	1002	0	task_01002(UInt32 FilterType, UnicodeString pstrLib, Pointer hmod, Pointer pfnFilterProc, UInt32 ReturnValue)		AuditApiCalls	task_0	Informational		

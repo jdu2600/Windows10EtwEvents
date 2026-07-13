@@ -72,7 +72,7 @@ Microsoft-Windows-MediaEngine	173	2	MediaFoundationPresent_ProcessFlipMode_V2(Po
 Microsoft-Windows-MediaEngine	174	1	MediaFoundationPresent_RealtimeShift_Sample_V1(Pointer object, Int64 QPCtarget_us, Int64 Delta_us, Int64 AverageLateness_us, Int64 Correction_us)			MediaFoundationPresent_RealtimeShift_Sample	Verbose		
 Microsoft-Windows-MediaEngine	175	0	MinLatencyDoneoperation(Pointer object, Int64 TimeRemaining)			MinLatencyDoneoperation	Verbose		
 Microsoft-Windows-MediaEngine	176	0	MediaFoundationMirrorVideo(Pointer object, Int32 old, Int32 new, UInt32 hr)			MediaFoundationMirrorVideo	Verbose		
-Microsoft-Windows-MediaEngine	177	0	UpdateDeadlineoperation(Pointer object, Int64 deadline, Int64 hnsDeltaFromNow)			UpdateDeadlineoperation	Verbose		
+Microsoft-Windows-MediaEngine	177	1	UpdateDeadlineoperation_V1(Pointer object, Int32 WorkQueueID, Int32 VideoBranchWorkQueueID, Int64 deadline, Int64 hnsDeltaFromNow)			UpdateDeadlineoperation	Verbose		
 Microsoft-Windows-MediaEngine	178	0	MediaEngineGetEngineStatisticsStart(UInt32 id, UInt32 Type)	Start		MediaEngineGetEngineStatistics	Verbose		
 Microsoft-Windows-MediaEngine	179	0	MediaEngineGetEngineStatisticsStop(UInt32 id, HexInt32 hr)	Stop		MediaEngineGetEngineStatistics	Verbose		
 Microsoft-Windows-MediaEngine	180	0	SVRRequestSample(Pointer object, UInt32 RequestsPending, UInt32 FrameQueueCount)			SVRRequestSample	Verbose		
@@ -93,6 +93,7 @@ Microsoft-Windows-MediaEngine	194	1	MediaFoundationPresent_RealtimeShift_Status_
 Microsoft-Windows-MediaEngine	195	1	MediaFoundationPresent_Flush_V1(Pointer object)			MediaFoundationPresent_Flush	Verbose		
 Microsoft-Windows-MediaEngine	196	0	MediaFoundationUpdateVideoStart(Pointer object)	Start		MediaFoundationUpdateVideo	Verbose		
 Microsoft-Windows-MediaEngine	197	0	MediaFoundationUpdateVideoStop(Pointer object)	Stop		MediaFoundationUpdateVideo	Verbose		
+Microsoft-Windows-MediaEngine	198	0	TransferDeadlineoperation(Pointer object, Pointer target, Pointer hDeadline, Pointer hVideoDeadline, Int64 GPUdeadline, Int64 GPUDeadlineDeltaFromNow_us)			TransferDeadlineoperation	Verbose		
 Microsoft-Windows-MediaEngine	200	0	EMENeedKey(UInt32 length, Binary data)			EMENeedKey	Informational		
 Microsoft-Windows-MediaEngine	201	0	EMEMediaKeys(UnicodeString keysystem, UnicodeString defaultCdmStorePath, UnicodeString inprivateCdmStorePath, Pointer object, UInt32 ErrorCode)			EMEMediaKeys	Informational		
 Microsoft-Windows-MediaEngine	202	0	EMEMediaKeySessionStart(UnicodeString sessionId, UnicodeString keySystem, UnicodeString type, UInt32 length, Binary data, UInt32 ErrorCode)	Start		EMEMediaKeySession	Informational		
@@ -181,7 +182,7 @@ Microsoft-Windows-MediaEngine	285	0	LongCallDetected(Pointer Object, UInt32 Call
 Microsoft-Windows-MediaEngine	286	0	CallMarshalingSlotsFull(Pointer Object)			CallMarshalingSlotsFull	Informational		
 Microsoft-Windows-MediaEngine	287	0	FrameNotPresentedTask(Pointer object, Int64 Timestamp)			FrameNotPresentedTask	Informational		
 Microsoft-Windows-MediaEngine	288	0	PresentedContentPresentationHandlerTask(Pointer Object, Pointer ResourceManagerObject)			PresentedContentPresentationHandlerTask	Verbose		
-Microsoft-Windows-MediaEngine	289	0	PresentedContentPresentationHandler_ResourcesAllocatedTask(Pointer object, UInt32 Format, UInt32 Width, UInt32 Height, UInt32 bufferCount, UInt32 MiscFlags)			PresentedContentPresentationHandler_ResourcesAllocatedTask	Verbose		
+Microsoft-Windows-MediaEngine	289	1	PresentedContentPresentationHandler_ResourcesAvailableTask_V1(Pointer object, UInt32 Count)			PresentedContentPresentationHandler_ResourcesAvailableTask	Verbose		
 Microsoft-Windows-MediaEngine	290	0	PresentedContentPresentationHandler_BindTask(Pointer object, UInt32 bufferCount, UInt32 Format, UInt32 colorSpaceType, UInt32 isHWProtected, UInt32 width, UInt32 height)			PresentedContentPresentationHandler_BindTask	Verbose		
 Microsoft-Windows-MediaEngine	291	3	PresentedContentPresentationHandler_PresentSubmittedTask_V3(Pointer object, Int64 presentId, Int64 sampleTime, Int64 targetTime, Int64 timeRemainingInQueue, Int64 submittedAhead_us, Int64 nowvsQPCus, Int64 QueuedFrames, Boolean IsDirectPresentation)			PresentedContentPresentationHandler_PresentSubmittedTask	Verbose		
 Microsoft-Windows-MediaEngine	292	0	SplitMultiBufferTask(Pointer object, UInt32 dwOldIndex, UInt32 dwNewIndex, Boolean Changed)			SplitMultiBufferTask	Verbose		
@@ -197,7 +198,7 @@ Microsoft-Windows-MediaEngine	301	0	PresentedContentPresentationHandler_HWMTask(
 Microsoft-Windows-MediaEngine	302	0	PresentedContentPresentationHandler_RetiredResourceTask(Pointer object, Int64 PresentRetiredCount, Int64 RemainingInFlightResourceCount, Int64 FenceValue, Int64 FrameReturnedTimeDelta_us)			PresentedContentPresentationHandler_RetiredResourceTask	Verbose		
 Microsoft-Windows-MediaEngine	303	0	MediaFoundationTelemetryassertStart()	Start		MediaFoundationTelemetryassert	Verbose		
 Microsoft-Windows-MediaEngine	304	0	MediaFoundationTelemetryassertStop()	Stop		MediaFoundationTelemetryassert	Verbose		
-Microsoft-Windows-MediaEngine	305	0	MediaFoundationPresentedContentAsyncCallbackStart(Pointer object, Int32 AsyncCallbackType)	Start		MediaFoundationPresentedContentAsyncCallback	Verbose		
+Microsoft-Windows-MediaEngine	305	1	MediaFoundationPresentedContentAsyncCallbackStart_V1(Pointer object, Int32 AsyncCallbackType, Int32 WorkQueueId)	Start		MediaFoundationPresentedContentAsyncCallback	Verbose		
 Microsoft-Windows-MediaEngine	306	0	MediaFoundationPresentedContentAsyncCallbackStop(Pointer object, Int32 AsyncCallbackType)	Stop		MediaFoundationPresentedContentAsyncCallback	Verbose		
 Microsoft-Windows-MediaEngine	307	6	PresentedContentPresentationHandlerCompletedCompTask_V6(Pointer object, Int64 AdapterLuid, Int32 VidPnSrc, Int64 uniqueId, Int64 CompID, Int64 PresentID, Int32 OutputIndex, Int32 FragmentCount, Int32 ScanoutType, Int32 CompletedOutputs, Int32 NumOutputs, Int32 CompositionLatency, Int64 targetQPC, Int64 displayedQPC, Int64 deltaQPC_ns, Int64 dwmSmoothedTargetQPC, Int64 deltaDwmTargetQPC_ns, Int64 deltaSmoothedJitter_ns, Int64 minCompositionDelay_ns, Int64 framePeriod_ns)			PresentedContentPresentationHandlerCompletedCompTask	Verbose		
 Microsoft-Windows-MediaEngine	308	5	PresentedContentPresentationHandlerCompletedCompTaskStart_V5(Pointer object, Int32 PendingCompositioncount, Int64 CompositionFrameId, Int64 targetQPC_hns, Int64 presentID, Int32 OutputCount, Int64 AdapterLuid0, Int32 VidPnSrc0, Int64 uniqueId0, Int64 AdapterLuid1, Int32 VidPnSrc1, Int64 uniqueId1)	Start		PresentedContentPresentationHandlerCompletedCompTask	Verbose		
@@ -210,7 +211,9 @@ Microsoft-Windows-MediaEngine	315	0	PresentedContent_DrainAsyncPresentsTaskStop(
 Microsoft-Windows-MediaEngine	316	0	MediaFoundationPresentedContentD3DFenceStart(Pointer object)	Start		MediaFoundationPresentedContentD3DFence	Verbose		
 Microsoft-Windows-MediaEngine	317	0	MediaFoundationPresentedContentD3DFenceStop(Pointer object)	Stop		MediaFoundationPresentedContentD3DFence	Verbose		
 Microsoft-Windows-MediaEngine	318	0	PresentedContent_FlushTask(Pointer object)			PresentedContent_FlushTask	Verbose		
+Microsoft-Windows-MediaEngine	319	1	MediaFoundationPresentedContentAsyncCallbackCreateSerializerStart_V1(Pointer object, Int32 SerializerWorkQueueId, Int32 WorkQueueId)	Start		MediaFoundationPresentedContentAsyncCallbackCreateSerializer	Verbose		
 Microsoft-Windows-MediaEngine	320	2	MFMediaEngine_DriverVersionTask_V2(Pointer object, HexInt32 VendorId, HexInt32 DeviceId, UInt16 Ver0, UInt16 Ver1, UInt16 Ver2, UInt16 Ver3, UInt32 HWS_SupportedLevel, Boolean HWS_Enabled, UInt32 HWFQ_SupportedLevel, Boolean HWFQ_Enabled, Boolean Displayables_Supported)			MFMediaEngine_DriverVersionTask	Verbose		
+Microsoft-Windows-MediaEngine	321	1	MediaFoundationPresentedContentAsyncCallbackCreateSerializerStop_V1(Pointer object, Int32 SerializerWorkQueueId)	Stop		MediaFoundationPresentedContentAsyncCallbackCreateSerializer	Verbose		
 Microsoft-Windows-MediaEngine	322	0	PresentedContent_RetryPresentStart(Pointer object, Int64 RetryPresentTimerKey)	Start		PresentedContent_RetryPresent	Verbose		
 Microsoft-Windows-MediaEngine	323	0	PresentedContent_RetryPresentStop(Pointer object, Int64 RetryPresentTimerKey)	Stop		PresentedContent_RetryPresent	Verbose		
 Microsoft-Windows-MediaEngine	324	2	PresentedContent_ConfigurationState_V2(Pointer object, Boolean ForceXVP, Boolean SupportsDisplayables, Boolean ForceDisabled)			PresentedContent_ConfigurationState	Verbose		
@@ -227,8 +230,18 @@ Microsoft-Windows-MediaEngine	334	1	MediaFoundationPresentedContentRegisterWakeF
 Microsoft-Windows-MediaEngine	335	1	MediaFoundationPresentedContentRegisterWakeFenceStop_V1(Pointer object)	Stop		MediaFoundationPresentedContentRegisterWakeFence	Verbose		
 Microsoft-Windows-MediaEngine	336	0	PresentedContentPresentationHandler_InitializeQueueingModeTask(Pointer object, Int32 QueueingMode, Int64 LWM, Int64 HWM, Boolean LwmOverride, Int32 SteadyStateQueueingMode)			PresentedContentPresentationHandler_InitializeQueueingModeTask	Verbose		
 Microsoft-Windows-MediaEngine	337	0	PresentedContentPresentationHandlerMonitorEnumTask(Pointer object, Int32 index, Int32 TotalMonitors, Int64 AdapterLuid, Int32 VidPnSrc, Int64 uniqueId, Int32 width, Int32 height, Int64 vsyncDuration, Boolean IsPrimary, Boolean IsTimingDisplay)			PresentedContentPresentationHandlerMonitorEnumTask	Verbose		
+Microsoft-Windows-MediaEngine	341	0	OnFrameQueuedStart(Pointer Object)	Start		OnFrameQueued	Verbose		
+Microsoft-Windows-MediaEngine	342	0	OnFrameQueuedStop(Pointer Object)	Stop		OnFrameQueued	Verbose		
+Microsoft-Windows-MediaEngine	343	0	OnFrameQueued(Pointer Object, Int32 WorkQueue, Int32 CallbackWorkQueue)			OnFrameQueued	Verbose		
+Microsoft-Windows-MediaEngine	344	0	PresentedContentPresentationHandler_ResourcesAllocateTask(Pointer object, UInt32 Format, UInt32 Width, UInt32 Height, UInt32 bufferCount, UInt32 MiscFlags)			PresentedContentPresentationHandler_ResourcesAllocateTask	Verbose		
+Microsoft-Windows-MediaEngine	345	0	PresentedContentPresentationHandler_QueuedResourceTaskStart(Pointer object, Boolean IsDirectPresentation, UInt64 QPC, UInt64 PresentId, Pointer DXGIResource)	Start		PresentedContentPresentationHandler_QueuedResourceTask	Verbose		
+Microsoft-Windows-MediaEngine	346	0	PresentedContentPresentationHandler_QueuedResourceTaskStop(Pointer object, Boolean IsDirectPresentation, UInt64 QPC, UInt64 PresentId, Pointer DXGIResource)	Stop		PresentedContentPresentationHandler_QueuedResourceTask	Verbose		
+Microsoft-Windows-MediaEngine	347	0	PresentedContentPresentationHandler_ResourcesRegisteredTask(Pointer object, UInt32 Count, UInt32 Operation)			PresentedContentPresentationHandler_ResourcesRegisteredTask	Verbose		
 Microsoft-Windows-MediaEngine	350	1	MediaFoundationTriggeredGlitchTelemetryTrackerStart_V1(Pointer object, Int32 MainEventType)	Start	DiagTrack	MediaFoundationTriggeredGlitchTelemetryTracker	Verbose		
 Microsoft-Windows-MediaEngine	351	2	MediaFoundationTriggeredGlitchTelemetryTrackerStop_V2(Pointer object, Int32 MainEventType, Int64 Duration, Int32 GlitchCount, Int32 DisplayGlitchCount, Int32 SeenEventTypes)	Stop	Telemetry	MediaFoundationTriggeredGlitchTelemetryTracker	Verbose		
+Microsoft-Windows-MediaEngine	352	0	PresentedContentPresentationHandler_ResourcesDeferredTask(Pointer object, UInt32 Count)			PresentedContentPresentationHandler_ResourcesDeferredTask	Verbose		
+Microsoft-Windows-MediaEngine	353	0	PresentedContentPresentationHandler_ResourcesDeferredTaskStart(Pointer object)	Start		PresentedContentPresentationHandler_ResourcesDeferredTask	Verbose		
+Microsoft-Windows-MediaEngine	354	0	PresentedContentPresentationHandler_ResourcesDeferredTaskStop(Pointer object)	Stop		PresentedContentPresentationHandler_ResourcesDeferredTask	Verbose		
 Microsoft-Windows-MediaEngine	360	1	MediaFoundationTrackLeakedStats_V1(Pointer object, Int32 Count)		DiagTrack	MediaFoundationTrackLeakedStats	Verbose		
 Microsoft-Windows-MediaEngine	361	0	IsEdrEnabledCheckStart(Pointer Object)	Start		IsEdrEnabledCheck	Verbose		
 Microsoft-Windows-MediaEngine	362	0	IsEdrEnabledCheckStop(Pointer Object)	Stop		IsEdrEnabledCheck	Verbose		
@@ -255,4 +268,8 @@ Microsoft-Windows-MediaEngine	382	0	MediaFoundationFrameRateDetectionStart(Point
 Microsoft-Windows-MediaEngine	383	0	MediaFoundationFrameRateDetectionStop(Pointer object)	Stop		MediaFoundationFrameRateDetection	Verbose		
 Microsoft-Windows-MediaEngine	384	0	MediaFoundationFrameRateDetectionUpdate(Pointer object, Int64 Duration, Int32 Count, Int32 MinCount, Int64 Delta)			MediaFoundationFrameRateDetectionUpdate	Verbose		
 Microsoft-Windows-MediaEngine	385	0	MediaFoundationFrameRateDetectionReset(Pointer object, Int64 Duration, Int32 Count, Int32 MinCount, Int64 Delta)			MediaFoundationFrameRateDetectionReset	Verbose		
-Microsoft-Windows-MediaEngine	386	0	PresentedContentPresentationHandlerDeferRealtimeDeadlineTask(Pointer object, Int64 Timestamp, Int64 AvgFrameDuration, Int64 framePeriod, Int64 delta)			PresentedContentPresentationHandlerDeferRealtimeDeadlineTask	Verbose		
+Microsoft-Windows-MediaEngine	386	1	PresentedContentPresentationHandlerDeferRealtimeDeadlineTask_V1(Pointer object, Int64 Timestamp, Int64 AvgFrameDuration, Int64 displayFramePeriod, Int64 delta, Int64 timestamp_Ahead_us, Int64 timestamp_shift_Ahead_us)			PresentedContentPresentationHandlerDeferRealtimeDeadlineTask	Verbose		
+Microsoft-Windows-MediaEngine	390	0	SVRGPUDeadlinePriority(Pointer object, Boolean Changed, Int32 Priority, Int64 Deadline_us, Int64 TimeToDeadline_us, HexInt32 hr)			SVRGPUDeadlinePriority	Verbose		
+Microsoft-Windows-MediaEngine	391	0	MediaFoundationTriggeredPendingPresentStatLargeSizeTrackerStart(Pointer object)	Start	DiagTrack	MediaFoundationTriggeredPendingPresentStatLargeSizeTracker	Verbose		
+Microsoft-Windows-MediaEngine	392	0	MediaFoundationTriggeredPendingPresentStatLargeSizeTrackerStop(Pointer object)	Stop	Telemetry	MediaFoundationTriggeredPendingPresentStatLargeSizeTracker	Verbose		
+Microsoft-Windows-MediaEngine	393	0	EDRStateChanged2Task(Boolean Enabled, Boolean IsAC, Boolean IsHDRDisabledOnBattery, Boolean IsLowerScreenBrightnessActive, Boolean IsBrightnessPolicyActive, UInt32 ContentMaxLuminance, UInt32 DisplayMaxLuminance, Boolean EnableHDRForPlayback)			EDRStateChanged2Task	Verbose		

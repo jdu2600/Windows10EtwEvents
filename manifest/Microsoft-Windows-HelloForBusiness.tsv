@@ -32,6 +32,9 @@ Microsoft-Windows-HelloForBusiness	5520	0	Multi_FactorUnlockInformational()	Info
 Microsoft-Windows-HelloForBusiness	5555	0	ContainerCreationInformational(UInt32 TpmSupport, UInt32 HardwarePolicy, Boolean IsTpm12Excluded, UInt32 TpmVersion, Boolean IsTpmFIPS, Boolean IsTpmLockedOut, Boolean IsKeyPregenPoolSatisfactory, UInt32 KeyProvider, HexInt32 Result)	Informational	Internal	ContainerCreation	Informational		
 Microsoft-Windows-HelloForBusiness	5601	0	ContainerDeletionInformational()	Informational	Internal	ContainerDeletion	Informational		
 Microsoft-Windows-HelloForBusiness	5602	0	ContainerDeletionInformational5602()	Informational	Internal	ContainerDeletion	Informational		
+Microsoft-Windows-HelloForBusiness	5641	0	KeyUpdateInformational(UInt32 KeyProvider, UInt32 KeyType, UnicodeString KeyName)	Informational	Internal	KeyUpdate	Informational		
+Microsoft-Windows-HelloForBusiness	5701	0	ProtectorDiskIOInformational(HexInt32 Hr, Boolean PinProtector, Boolean BioProtector, Boolean SecureBioProtector, Boolean RecoveryProtector, Boolean PrebootProtector)	Informational	Internal	ProtectorDiskIO	Informational		
+Microsoft-Windows-HelloForBusiness	5702	0	ProtectorDiskIOInformational5702(HexInt32 Hr, Boolean PinProtector, Boolean BioProtector, Boolean SecureBioProtector, Boolean RecoveryProtector, Boolean PrebootProtector)	Informational	Internal	ProtectorDiskIO	Informational		
 Microsoft-Windows-HelloForBusiness	6010	0	KeyUseInformational(UnicodeString KeyName, UInt32 KeyUseCredUnavailableReason)	Informational	Internal	KeyUse	Warning		
 Microsoft-Windows-HelloForBusiness	6045	0	HelloProvisioningStop(HexInt32 Error, UInt32 ProcessingTime)	Stop	Internal	HelloProvisioning	Warning		
 Microsoft-Windows-HelloForBusiness	6055	0	ContainerCreationStop(HexInt32 Error, UInt32 ProcessingTime)	Stop	Internal	ContainerCreation	Warning		
@@ -81,6 +84,8 @@ Microsoft-Windows-HelloForBusiness	7601	0	ContainerDeletionStop7601(HexInt32 Err
 Microsoft-Windows-HelloForBusiness	7611	0	ContainerDeletionStop7611(HexInt32 Error)	Stop	Internal	ContainerDeletion	Error		
 Microsoft-Windows-HelloForBusiness	7621	0	CertificateEnrollmentInformational7621(HexInt32 Error)	Informational	Internal	CertificateEnrollment	Error		
 Microsoft-Windows-HelloForBusiness	7631	0	BiometricEnrollmentInformational(HexInt32 Error)	Informational	Internal	BiometricEnrollment	Error		
+Microsoft-Windows-HelloForBusiness	7701	0	ProtectorUseInformational()	Informational	Internal	ProtectorUse	Error		
+Microsoft-Windows-HelloForBusiness	7703	0	PolicyEnforcementStop()	Stop	Internal	PolicyEnforcement	Error		
 Microsoft-Windows-HelloForBusiness	8002	0	ContainerLoadInformational8002(GUID ContainerId, UInt32 ContainerVersion, UInt32 KeyProvider, Boolean HasCachedLogonKey, UInt32 ContainerStatus)	Informational	Internal	ContainerLoad			
 Microsoft-Windows-HelloForBusiness	8025	0	ServiceStartInformational8025(UnicodeString ServiceName)	Informational	Internal	ServiceStart			
 Microsoft-Windows-HelloForBusiness	8030	0	task_0Informational8030()	Informational	Internal	task_0			

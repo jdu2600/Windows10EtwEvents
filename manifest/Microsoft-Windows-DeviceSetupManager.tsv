@@ -9,6 +9,9 @@ Microsoft-Windows-DeviceSetupManager	41	0	task_041(UInt32 Prop_ServerSelection)	
 Microsoft-Windows-DeviceSetupManager	42	0	task_042(UInt32 Prop_ServerSelection, HexInt32 HRESULT)			task_0	Error		
 Microsoft-Windows-DeviceSetupManager	43	0	task_043()			task_0	Informational		
 Microsoft-Windows-DeviceSetupManager	44	0	task_044(UInt32 Prop_ServerSelection)			task_0	Informational		
+Microsoft-Windows-DeviceSetupManager	50	0	task_050(UInt8 Prop_TaskEnablement)			task_0	Informational		
+Microsoft-Windows-DeviceSetupManager	51	0	task_051()			task_0	Informational		
+Microsoft-Windows-DeviceSetupManager	52	0	task_052(UInt32 Prop_DriverRecoveryRequest)			task_0	Informational		
 Microsoft-Windows-DeviceSetupManager	100	0	task_0100(UInt32 Prop_CoreServiceMode, Int64 Prop_Event_Window_Seconds)			task_0	Informational		
 Microsoft-Windows-DeviceSetupManager	101	0	task_0101(Int64 Prop_UpTime_Seconds, Int64 Prop_WorkTime_MilliSeconds)			task_0	Informational		
 Microsoft-Windows-DeviceSetupManager	102	0	task_0102()			task_0	Informational		
@@ -38,6 +41,9 @@ Microsoft-Windows-DeviceSetupManager	132	0	task_0132(UnicodeString Prop_Containe
 Microsoft-Windows-DeviceSetupManager	133	0	task_0133(UnicodeString Prop_PackageId, UnicodeString Prop_ContainerId, HexInt32 HRESULT)			task_0	Error		
 Microsoft-Windows-DeviceSetupManager	134	0	task_0134(UnicodeString Prop_ContainerId, UnicodeString Prop_PackageId)			task_0	Informational		
 Microsoft-Windows-DeviceSetupManager	135	0	task_0135(UnicodeString Prop_ContainerId)			task_0	Informational		
+Microsoft-Windows-DeviceSetupManager	136	0	task_0136(UnicodeString Prop_PackageId)			task_0	Warning		
+Microsoft-Windows-DeviceSetupManager	137	0	task_0137(UnicodeString Prop_PackageId, HexInt32 Error)			task_0	Warning		
+Microsoft-Windows-DeviceSetupManager	138	0	task_0138(UnicodeString Prop_PackageId, UInt8 Prop_IsLegacySigCheckForFile1, UnicodeString Prop_FileName1, HexInt32 HRESULT1, UInt8 Prop_IsLegacySigCheckForFile2, UnicodeString Prop_FileName2, HexInt32 HRESULT2)			task_0	Warning		
 Microsoft-Windows-DeviceSetupManager	150	0	task_0150(UnicodeString Prop_DeviceName, GUID Prop_ContainerId)			task_0	Informational		
 Microsoft-Windows-DeviceSetupManager	151	0	task_0151(UnicodeString Prop_DeviceName, GUID Prop_ContainerId)			task_0	Error		
 Microsoft-Windows-DeviceSetupManager	152	0	task_0152(UnicodeString Prop_DeviceName, GUID Prop_ContainerId, HexInt32 HRESULT)			task_0	Error		

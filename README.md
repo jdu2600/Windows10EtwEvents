@@ -18,6 +18,7 @@ Events from all manifest-based and mof-based ETW providers across Windows 10 ver
 | 22H2  | 52,807    | 884	| 186   | 18    |
 | 23H2  | 53,144    | 893	| 186   | 18    |
 | 24H2  | 54,295    | 889	| 182   | 24    |
+| 25H2  | 54,874    | 894	| 182   | 26    |
 
 Want the data in a different format?
 ------------------------------------

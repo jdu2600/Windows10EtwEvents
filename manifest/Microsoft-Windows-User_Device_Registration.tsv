@@ -27,7 +27,7 @@ Microsoft-Windows-User Device Registration	211	0	task_0211(UnicodeString Group, 
 Microsoft-Windows-User Device Registration	212	0	task_0212(UInt32 ErrorCode, UnicodeString Operation, UnicodeString Path)			task_0	Informational		
 Microsoft-Windows-User Device Registration	213	0	task_0213(UInt32 NtStatus)			task_0	Informational		
 Microsoft-Windows-User Device Registration	214	0	task_0214(AnsiString PackageName, UInt32 NtStatus)			task_0	Informational		
-Microsoft-Windows-User Device Registration	215	0	task_0215(UInt32 PackageId, AnsiString PackageName, UInt32 NtStatus)			task_0	Informational		
+Microsoft-Windows-User Device Registration	215	0	task_0215(UInt32 PackageId, AnsiString PackageName, UnicodeString PackageMessage, UInt32 NtStatus)			task_0	Informational		
 Microsoft-Windows-User Device Registration	216	0	task_0216(UnicodeString FunctionName, UnicodeString ParameterName)			task_0	Informational		
 Microsoft-Windows-User Device Registration	217	0	task_0217(SID SID, UInt32 ErrorCode)			task_0	Informational		
 Microsoft-Windows-User Device Registration	218	0	task_0218(UnicodeString Email)			task_0	Error		
@@ -85,6 +85,11 @@ Microsoft-Windows-User Device Registration	270	0	task_0270(Int32 ExitCode, Int32
 Microsoft-Windows-User Device Registration	271	0	task_0271(Int32 JoinType, UnicodeString JoinTypeName, UnicodeString TenantId, UnicodeString DeviceId, UnicodeString UserSid, UnicodeString AuthToken, UnicodeString RequestId)			task_0	Informational		
 Microsoft-Windows-User Device Registration	272	0	task_0272(Int32 JoinType, UnicodeString JoinTypeName, UnicodeString TenantId, UnicodeString DeviceId, UnicodeString UserSid, UnicodeString RequestId, Int32 HttpStatus, UnicodeString ServerTime)			task_0	Informational		
 Microsoft-Windows-User Device Registration	273	0	task_0273(Int32 ExitCode, Int32 JoinType, UnicodeString JoinTypeName, UnicodeString TenantId, UnicodeString DeviceId, UnicodeString UserSid, UnicodeString RequestId, Int32 HttpStatus, UnicodeString ServerTime, UnicodeString ServerMessage, UnicodeString ResponseBody, UnicodeString ErrorCode, UnicodeString ErrorSubcode)			task_0	Error		
+Microsoft-Windows-User Device Registration	274	0	task_0274(Int32 ExitCode, UnicodeString KerbEndpoint, UnicodeString Realm, UnicodeString KdcProxyServer, UnicodeString LocalGpoModified)			task_0	Warning		
+Microsoft-Windows-User Device Registration	275	0	task_0275(Int32 ExitCode)			task_0	Warning		
+Microsoft-Windows-User Device Registration	276	0	task_0276(UnicodeString ExpectedProxyEnabled, UnicodeString ExpectedNoRevocationCheck, UnicodeString ExpectedProxyServer, UnicodeString ActualProxyEnabled, UnicodeString ActualNoRevocationCheck, UnicodeString ActualProxyServer)			task_0	Warning		
+Microsoft-Windows-User Device Registration	277	0	task_0277(UnicodeString KerbEndpoint, UnicodeString Realm, UnicodeString ProxyEnabled, UnicodeString NoRevocationCheck, UnicodeString ProxyServer)			task_0	Informational		
+Microsoft-Windows-User Device Registration	278	0	task_0278(UnicodeString ProxyEnabled, UnicodeString NoRevocationCheck, UnicodeString ProxyServer)			task_0	Informational		
 Microsoft-Windows-User Device Registration	300	0	task_0300(GUID KeyId, UnicodeString UPN, UnicodeString Attestation, UnicodeString ClientRequestId, UnicodeString ServerRequestId, UnicodeString ServerResponse)			task_0	Informational		
 Microsoft-Windows-User Device Registration	301	0	task_0301(Int32 ExitCode, UnicodeString ClientRequestId, UnicodeString ServerRequestId, UnicodeString ErrorCode, UnicodeString ServerErrorMessage, UnicodeString RecommendedClientResponse, UnicodeString ServerResponse)			task_0	Error		
 Microsoft-Windows-User Device Registration	302	0	task_0302(UnicodeString Email, UnicodeString AuthToken)			task_0	Informational		

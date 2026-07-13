@@ -99,3 +99,21 @@ Microsoft-Windows-WebAuthN	2337	0	CtapHybridLinkedDeviceSavedInformational(Boole
 Microsoft-Windows-WebAuthN	2400	0	CtapTestProviderThreadStart(GUID TransactionId)	Start	Ctap Test	CtapTestProviderThread	Informational		
 Microsoft-Windows-WebAuthN	2401	0	CtapTestProviderThreadStop(GUID TransactionId)	Stop	Ctap Test	CtapTestProviderThread			
 Microsoft-Windows-WebAuthN	2402	0	CtapTestProviderThreadStop2402(GUID TransactionId, HexInt32 Error, HexInt32 Win32Error)	Stop	Ctap Test	CtapTestProviderThread	Error		
+Microsoft-Windows-WebAuthN	5002	0	SyncInformational()	Informational	SyncedProvider	Sync	Informational		
+Microsoft-Windows-WebAuthN	5009	0	LocalStoreInformational(GUID StorageID, SID UserSid)	Informational	SyncedProvider	LocalStore	Informational		
+Microsoft-Windows-WebAuthN	5010	0	SyncStateInformational(UInt32 SyncState)	Informational	SyncedProvider	SyncState	Informational		
+Microsoft-Windows-WebAuthN	6006	0	TrustGroupInformational()	Informational	SyncedProvider	TrustGroup	Warning		
+Microsoft-Windows-WebAuthN	6007	0	LocalStoreInformational6007()	Informational	SyncedProvider	LocalStore	Warning		
+Microsoft-Windows-WebAuthN	6011	0	TrustedDeviceInformational()	Informational	SyncedProvider	TrustedDevice	Warning		
+Microsoft-Windows-WebAuthN	7000	0	KeyRotationStop(HexInt32 Error)	Stop	SyncedProvider	KeyRotation	Error		
+Microsoft-Windows-WebAuthN	7001	0	SyncStop(UInt32 OperationType, UInt32 PropertyType, UnicodeString BackupId, AnsiString CorrelationVector, HexInt32 Error)	Stop	SyncedProvider	Sync	Error		
+Microsoft-Windows-WebAuthN	7003	0	TrustedDeviceStop(HexInt32 Error)	Stop	SyncedProvider	TrustedDevice	Error		
+Microsoft-Windows-WebAuthN	7004	0	TrustedDeviceStop7004(HexInt32 Error)	Stop	SyncedProvider	TrustedDevice	Error		
+Microsoft-Windows-WebAuthN	7005	0	TrustedDeviceStop7005(HexInt32 Error)	Stop	SyncedProvider	TrustedDevice	Error		
+Microsoft-Windows-WebAuthN	7008	0	LocalStoreStop(UInt32 OperationType, UInt32 PropertyType, UnicodeString BackupId, AnsiString CorrelationVector, HexInt32 Error)	Stop	SyncedProvider	LocalStore	Error		
+Microsoft-Windows-WebAuthN	8000	0	KeyRotationInformational(UInt32 EncryptionKeyType)	Informational	SyncedProvider	KeyRotation			
+Microsoft-Windows-WebAuthN	8001	0	SyncInformational8001(UInt32 OperationType, UInt32 PropertyType, UnicodeString BackupId, AnsiString CorrelationVector)	Informational	SyncedProvider	Sync			
+Microsoft-Windows-WebAuthN	8003	0	TrustedDeviceInformational8003(UInt32 DeviceID)	Informational	SyncedProvider	TrustedDevice			
+Microsoft-Windows-WebAuthN	8004	0	TrustedDeviceInformational8004(UInt32 DeviceID)	Informational	SyncedProvider	TrustedDevice			
+Microsoft-Windows-WebAuthN	8005	0	TrustedDeviceInformational8005(UInt32 DeviceID)	Informational	SyncedProvider	TrustedDevice			
+Microsoft-Windows-WebAuthN	8008	0	LocalStoreInformational8008(UInt32 OperationType, UInt32 PropertyType, UnicodeString BackupId, AnsiString CorrelationVector)	Informational	SyncedProvider	LocalStore			

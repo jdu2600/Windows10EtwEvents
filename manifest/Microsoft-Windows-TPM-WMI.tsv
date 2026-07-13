@@ -24,15 +24,26 @@ Microsoft-Windows-TPM-WMI	1038	0	task_01038(UnicodeString Path)			task_0	Informa
 Microsoft-Windows-TPM-WMI	1039	0	task_01039(UnicodeString Path)			task_0	Informational		
 Microsoft-Windows-TPM-WMI	1040	0	task_01040(UnicodeString Path)			task_0	Error		
 Microsoft-Windows-TPM-WMI	1041	0	task_01041(UnicodeString Json)			task_0	Informational		
+Microsoft-Windows-TPM-WMI	1042	0	task_01042()			task_0	Informational		
+Microsoft-Windows-TPM-WMI	1043	0	task_01043()			task_0	Informational		
+Microsoft-Windows-TPM-WMI	1044	0	task_01044()			task_0	Informational		
+Microsoft-Windows-TPM-WMI	1045	0	task_01045()			task_0	Informational		
 Microsoft-Windows-TPM-WMI	1281	0	task_01281()			task_0	Informational		
 Microsoft-Windows-TPM-WMI	1282	0	task_01282()			task_0	Informational		
+Microsoft-Windows-TPM-WMI	1283	0	task_01283()			task_0	Informational		
+Microsoft-Windows-TPM-WMI	1284	0	task_01284(UInt32 Millisecondstaken)			task_0	Informational		
+Microsoft-Windows-TPM-WMI	1285	0	task_01285(UInt32 Millisecondstaken, Int32 ErrorCode)			task_0	Informational		
 Microsoft-Windows-TPM-WMI	1537	0	task_01537(UnicodeString HealthAttestationServer)			task_0	Informational		
 Microsoft-Windows-TPM-WMI	1538	0	task_01538(UnicodeString HealthAttestationServer, Int32 HResult)			task_0	Warning		
 Microsoft-Windows-TPM-WMI	1539	0	task_01539(UnicodeString HealthAttestationServer, Int32 HTTPStatus, UnicodeString ServerResponse)			task_0	Warning		
 Microsoft-Windows-TPM-WMI	1793	0	task_01793()			task_0	Informational		
 Microsoft-Windows-TPM-WMI	1794	0	task_01794()			task_0	Error		
-Microsoft-Windows-TPM-WMI	1795	0	task_01795(Int32 HResult)			task_0	Error		
-Microsoft-Windows-TPM-WMI	1796	0	task_01796(Int32 HResult)			task_0	Error		
+Microsoft-Windows-TPM-WMI	1795	1	task_01795_V1(Int32 HResult)			task_0	Error		
+Microsoft-Windows-TPM-WMI	1795	2	task_01795_V2(Int32 HResult, Int32 UpdateType)			task_0	Error		
+Microsoft-Windows-TPM-WMI	1796	1	task_01796_V1(Int32 HResult)			task_0	Error		
+Microsoft-Windows-TPM-WMI	1796	2	task_01796_V2(Int32 HResult, Int32 UpdateType)			task_0	Error		
 Microsoft-Windows-TPM-WMI	1797	0	task_01797()			task_0	Error		
 Microsoft-Windows-TPM-WMI	1798	0	task_01798()			task_0	Error		
 Microsoft-Windows-TPM-WMI	1799	0	task_01799()			task_0	Informational		
+Microsoft-Windows-TPM-WMI	1800	1	task_01800_V1(Int32 RebootReason)			task_0	Warning		
+Microsoft-Windows-TPM-WMI	1800	2	task_01800_V2(Int32 UpdateType)			task_0	Warning		

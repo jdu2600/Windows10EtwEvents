@@ -349,6 +349,7 @@ Windows Kernel Trace	{90cbdc39-4a3e-11d1-84f4-0000f80464e3}	98	3	FltIoCompletion
 Windows Kernel Trace	{90cbdc39-4a3e-11d1-84f4-0000f80464e3}	99	3	FltIoCompletion(Object InitialTime, UInt32 RoutineAddr, UInt32 FileObject, UInt32 FileContext, UInt32 IrpPtr, UInt32 CallbackDataPtr, UInt32 MajorFunction)		
 Windows Kernel Trace	{90cbdc39-4a3e-11d1-84f4-0000f80464e3}	100	3	FltIoFailure(UInt32 RoutineAddr, UInt32 FileObject, UInt32 FileContext, UInt32 IrpPtr, UInt32 CallbackDataPtr, UInt32 MajorFunction, UInt32 Status)		
 Windows Kernel Trace	{90cbdc39-4a3e-11d1-84f4-0000f80464e3}	101	3	FltIoFailure(UInt32 RoutineAddr, UInt32 FileObject, UInt32 FileContext, UInt32 IrpPtr, UInt32 CallbackDataPtr, UInt32 MajorFunction, UInt32 Status)		
+Windows Kernel Trace	{99134383-5248-43fc-834b-529454e75df3}	32	2	LbrRecord_V2(UInt64 TimeStamp, UInt32 ProcessId, UInt32 ThreadId, UInt32 Options, Object Entries)		
 Windows Kernel Trace	{9a280ac0-c8e0-11d1-84e2-00c04fb998a2}	10	0	TcpIp_V0_TypeGroup1(Object daddr, Object saddr, Object dport, Object sport, UInt32 size, UInt32 PID)		
 Windows Kernel Trace	{9a280ac0-c8e0-11d1-84e2-00c04fb998a2}	10	1	TcpIp_V1_Send(UInt32 PID, UInt32 size, Object daddr, Object saddr, Object dport, Object sport, UInt32 startime, UInt32 endtime, UInt32 connid, UInt32 seqnum)		
 Windows Kernel Trace	{9a280ac0-c8e0-11d1-84e2-00c04fb998a2}	10	2	TcpIp_SendIPV4(UInt32 PID, UInt32 size, Object daddr, Object saddr, Object dport, Object sport, UInt32 startime, UInt32 endtime, UInt32 seqnum, UInt32 connid)		

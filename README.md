@@ -20,18 +20,31 @@ Events from all manifest-based and mof-based ETW providers across Windows 10 ver
 | 24H2  | 54,295    | 889	| 182   | 24    |
 | 25H2  | 54,874    | 894	| 182   | 26    |
 
-Want the data in a different format?
-------------------------------------
-Roberto Rodriguez [@Cyb3rWard0g](https://twitter.com/Cyb3rWard0g)
- * https://github.com/hunters-forge/OSSEM/tree/master/data_dictionaries/windows/etw/json - JSON
- * https://github.com/hunters-forge/OSSEM/tree/yaml/data_dictionaries/yaml/windows - YAML
-
 Useful references
 -----------------
+
+* https://github.com/jdu2600/API-To-ETW
+* https://github.com/jdu2600/ETW-PPL-Tester
+
 Microsoft
- * https://docs.microsoft.com/en-us/windows/win32/etw/event-metadata-overview
+ * https://learn.microsoft.com/en-us/windows/win32/etw/event-metadata-overview
  * https://github.com/microsoft/perfview
  * https://github.com/microsoft/krabsetw
+
+Nedim Šabić [@arch_rabbit](https://twitter.com/arch_rabbit)
+ * https://github.com/rabbitstack/fibratus
+
+ Origin [@originhq](https://twitter.com/originhq)
+ * https://www.originhq.com/research/securitytrace-etw-ppl
+ * https://www.originhq.com/Closing%20the%20Execution%20Gap.pdf
+
+Philipp Schmied [@CaptnBanana](https://twitter.com/CaptnBanana), Sebastian Feldmann [@thefLinkk](https://twitter.com/thefLinkk) and Dominik Phillips
+ * https://github.com/threathunters-io/kassandra_x33fcon_2026
+ * [Building an ETW Based Sysmon Replacement From Scratch](https://www.x33fcon.com/slides/x33fcon24_-_Sebastian_Feldmann_and_Philipp_Schmied_-_Busting_Redteam_Trends_with_Style_-_Lessons_Learned_from_Building_an_ETW_based_Sysmon_Replacement_from_Scratch.pdf), x33fcon 2024
+
+Elastic Security Labs [@elasticseclabs](https://twitter.com/elasticseclabs)
+* https://www.elastic.co/security-labs/kernel-etw-best-etw
+* https://www.elastic.co/security-labs/doubling-down-etw-callstacks
 
 Matt Graeber [@mattifestation](https://twitter.com/mattifestation)
  * https://medium.com/palantir/tampering-with-windows-event-tracing-background-offense-and-defense-4be7ac62ac63
@@ -65,3 +78,11 @@ Pavel Yosifovich [@zodiacon](https://twitter.com/zodiacon)
 
 Elias Bachaalany [@0xeb](https://twitter.com/0xeb)
  * https://github.com/lallousx86/WinTools/tree/master/WEPExplorer
+
+ Bruce Dawson
+ * https://randomascii.wordpress.com/2015/09/24/etw-central/
+
+Geoff Chappell
+ * https://www.geoffchappell.com/studies/windows/win32/advapi32/api/etw/
+ * https://www.geoffchappell.com/studies/windows/km/ntoskrnl/inc/api/ntwmi/perfinfo_groupmask.htm
+ * https://www.geoffchappell.com/studies/windows/km/ntoskrnl/inc/api/ntwmi/wmi_trace_packet/hookid.htm

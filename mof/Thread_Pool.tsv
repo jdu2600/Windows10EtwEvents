@@ -1,21 +1,21 @@
 provider	category	event_id	version	event(fields)	event_type	description
-Thread Pool	{c861d0e2-a2c1-4d36-9f9c-970bab943a12}	32	2	TP_V2_CBEnqueue(UInt32 PoolId, UInt32 TaskId, UInt32 CallbackFunction, UInt32 CallbackContext, UInt32 SubProcessTag)		
-Thread Pool	{c861d0e2-a2c1-4d36-9f9c-970bab943a12}	33	2	TP_V2_CBDequeue(UInt32 TaskId)		
-Thread Pool	{c861d0e2-a2c1-4d36-9f9c-970bab943a12}	33	3	TPCBDequeue(UInt32 PoolId, UInt32 TaskId, UInt32 CallbackFunction, UInt32 CallbackContext, UInt32 SubProcessTag)		
-Thread Pool	{c861d0e2-a2c1-4d36-9f9c-970bab943a12}	34	2	TP_V2_CBEnqueue(UInt32 PoolId, UInt32 TaskId, UInt32 CallbackFunction, UInt32 CallbackContext, UInt32 SubProcessTag)		
-Thread Pool	{c861d0e2-a2c1-4d36-9f9c-970bab943a12}	35	2	TP_V2_CBDequeue(UInt32 TaskId)		
-Thread Pool	{c861d0e2-a2c1-4d36-9f9c-970bab943a12}	35	3	TPCBDequeue(UInt32 PoolId, UInt32 TaskId, UInt32 CallbackFunction, UInt32 CallbackContext, UInt32 SubProcessTag)		
-Thread Pool	{c861d0e2-a2c1-4d36-9f9c-970bab943a12}	36	2	TP_V2_CBCancel(UInt32 TaskId, UInt32 CancelCount)		
-Thread Pool	{c861d0e2-a2c1-4d36-9f9c-970bab943a12}	36	3	TPCBCancel(UInt32 PoolId, UInt32 TaskId, UInt32 CallbackFunction, UInt32 CallbackContext, UInt32 SubProcessTag, UInt32 CancelCount)		
-Thread Pool	{c861d0e2-a2c1-4d36-9f9c-970bab943a12}	37	2	TP_V2_PoolCreateClose(UInt32 PoolId)		
-Thread Pool	{c861d0e2-a2c1-4d36-9f9c-970bab943a12}	38	2	TP_V2_PoolCreateClose(UInt32 PoolId)		
-Thread Pool	{c861d0e2-a2c1-4d36-9f9c-970bab943a12}	39	2	TP_V2_ThreadSet(UInt32 PoolId, UInt32 ThreadNum)		
-Thread Pool	{c861d0e2-a2c1-4d36-9f9c-970bab943a12}	40	2	TP_V2_ThreadSet(UInt32 PoolId, UInt32 ThreadNum)		
-Thread Pool	{c861d0e2-a2c1-4d36-9f9c-970bab943a12}	41	2	TP_V2_WTNodeSwitch(UInt32 PoolId, UInt32 CurrentNode, UInt32 NextNode, UInt16 CurrentGroup, UInt16 NextGroup, UInt32 CurrentWorkerCount, UInt32 NextWorkerCount)		
-Thread Pool	{c861d0e2-a2c1-4d36-9f9c-970bab943a12}	42	2	TP_V2_TimerSet(UInt64 DueTime, UInt32 SubQueue, UInt32 Timer, UInt32 Period, UInt32 WindowLength, UInt32 Absolute)		
-Thread Pool	{c861d0e2-a2c1-4d36-9f9c-970bab943a12}	43	2	TP_V2_TimerCancelled(UInt32 SubQueue, UInt32 Timer)		
-Thread Pool	{c861d0e2-a2c1-4d36-9f9c-970bab943a12}	44	2	TP_V2_TimerSetNtTimer(UInt64 DueTime, UInt32 SubQueue, UInt32 TolerableDelay)		
-Thread Pool	{c861d0e2-a2c1-4d36-9f9c-970bab943a12}	45	2	TP_V2_TimerExpirationGroup(UInt32 SubQueue)		
-Thread Pool	{c861d0e2-a2c1-4d36-9f9c-970bab943a12}	46	2	TP_V2_TimerExpirationGroup(UInt32 SubQueue)		
-Thread Pool	{c861d0e2-a2c1-4d36-9f9c-970bab943a12}	47	2	TP_V2_TimerExpirationGroup(UInt32 SubQueue)		
-Thread Pool	{c861d0e2-a2c1-4d36-9f9c-970bab943a12}	48	2	TP_V2_TimerExpiration(UInt64 DueTime, UInt32 SubQueue, UInt32 Timer, UInt32 Period, UInt32 WindowLength)		
+Thread Pool	{c861d0e2-a2c1-4d36-9f9c-970bab943a12}	32	2	ThreadPool_CBEnqueue_V2(UInt32 PoolId, UInt32 TaskId, UInt32 CallbackFunction, UInt32 CallbackContext, UInt32 SubProcessTag)	CBEnqueue	Thread Pool Callback Enqueue Start
+Thread Pool	{c861d0e2-a2c1-4d36-9f9c-970bab943a12}	33	2	ThreadPool_CBDequeue_V2(UInt32 TaskId)	CBDequeue	Thread Pool Callback Dequeue Stop
+Thread Pool	{c861d0e2-a2c1-4d36-9f9c-970bab943a12}	33	3	ThreadPool_CBDequeue_V3(UInt32 PoolId, UInt32 TaskId, UInt32 CallbackFunction, UInt32 CallbackContext, UInt32 SubProcessTag)	CBDequeue	Thread Pool Callback Dequeue Stop
+Thread Pool	{c861d0e2-a2c1-4d36-9f9c-970bab943a12}	34	2	ThreadPool_CBStart_V2(UInt32 PoolId, UInt32 TaskId, UInt32 CallbackFunction, UInt32 CallbackContext, UInt32 SubProcessTag)	CBStart	Thread Pool Callback Enqueue Start
+Thread Pool	{c861d0e2-a2c1-4d36-9f9c-970bab943a12}	35	2	ThreadPool_CBStop_V2(UInt32 TaskId)	CBStop	Thread Pool Callback Dequeue Stop
+Thread Pool	{c861d0e2-a2c1-4d36-9f9c-970bab943a12}	35	3	ThreadPool_CBStop_V3(UInt32 PoolId, UInt32 TaskId, UInt32 CallbackFunction, UInt32 CallbackContext, UInt32 SubProcessTag)	CBStop	Thread Pool Callback Dequeue Stop
+Thread Pool	{c861d0e2-a2c1-4d36-9f9c-970bab943a12}	36	2	ThreadPool_CBCancel_V2(UInt32 TaskId, UInt32 CancelCount)	CBCancel	Thread Pool Callback Cancel
+Thread Pool	{c861d0e2-a2c1-4d36-9f9c-970bab943a12}	36	3	ThreadPool_CBCancel_V3(UInt32 PoolId, UInt32 TaskId, UInt32 CallbackFunction, UInt32 CallbackContext, UInt32 SubProcessTag, UInt32 CancelCount)	CBCancel	Thread Pool Callback Cancel
+Thread Pool	{c861d0e2-a2c1-4d36-9f9c-970bab943a12}	37	2	ThreadPool_PoolCreate_V2(UInt32 PoolId)	PoolCreate	Thread Pool Pool Create Close
+Thread Pool	{c861d0e2-a2c1-4d36-9f9c-970bab943a12}	38	2	ThreadPool_PoolClose_V2(UInt32 PoolId)	PoolClose	Thread Pool Pool Create Close
+Thread Pool	{c861d0e2-a2c1-4d36-9f9c-970bab943a12}	39	2	ThreadPool_ThreadMinSet_V2(UInt32 PoolId, UInt32 ThreadNum)	ThreadMinSet	Thread Pool Thread Set
+Thread Pool	{c861d0e2-a2c1-4d36-9f9c-970bab943a12}	40	2	ThreadPool_ThreadMaxSet_V2(UInt32 PoolId, UInt32 ThreadNum)	ThreadMaxSet	Thread Pool Thread Set
+Thread Pool	{c861d0e2-a2c1-4d36-9f9c-970bab943a12}	41	2	ThreadPool_WTNodeSwitch_V2(UInt32 PoolId, UInt32 CurrentNode, UInt32 NextNode, UInt16 CurrentGroup, UInt16 NextGroup, UInt32 CurrentWorkerCount, UInt32 NextWorkerCount)	WTNodeSwitch	Thread Pool Worker Thread NUMA Node Switch
+Thread Pool	{c861d0e2-a2c1-4d36-9f9c-970bab943a12}	42	2	ThreadPool_TimerSet_V2(UInt64 DueTime, UInt32 SubQueue, UInt32 Timer, UInt32 Period, UInt32 WindowLength, UInt32 Absolute)	TimerSet	Thread Pool Timer Set
+Thread Pool	{c861d0e2-a2c1-4d36-9f9c-970bab943a12}	43	2	ThreadPool_TimerCancelled_V2(UInt32 SubQueue, UInt32 Timer)	TimerCancelled	Thread Pool Timer Cancelled
+Thread Pool	{c861d0e2-a2c1-4d36-9f9c-970bab943a12}	44	2	ThreadPool_TimerSetNtTimer_V2(UInt64 DueTime, UInt32 SubQueue, UInt32 TolerableDelay)	TimerSetNtTimer	Thread Pool Timer Set Nt Timer
+Thread Pool	{c861d0e2-a2c1-4d36-9f9c-970bab943a12}	45	2	ThreadPool_TimerCancelNtTimer_V2(UInt32 SubQueue)	TimerCancelNtTimer	Thread Pool Timer Expiration Group
+Thread Pool	{c861d0e2-a2c1-4d36-9f9c-970bab943a12}	46	2	ThreadPool_TimerExpirationBegin_V2(UInt32 SubQueue)	TimerExpirationBegin	Thread Pool Timer Expiration Group
+Thread Pool	{c861d0e2-a2c1-4d36-9f9c-970bab943a12}	47	2	ThreadPool_TimerExpirationEnd_V2(UInt32 SubQueue)	TimerExpirationEnd	Thread Pool Timer Expiration Group
+Thread Pool	{c861d0e2-a2c1-4d36-9f9c-970bab943a12}	48	2	ThreadPool_TimerExpiration_V2(UInt64 DueTime, UInt32 SubQueue, UInt32 Timer, UInt32 Period, UInt32 WindowLength)	TimerExpiration	Thread Pool Timer Expiration

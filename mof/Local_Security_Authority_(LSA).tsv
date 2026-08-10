@@ -37,11 +37,11 @@ Local Security Authority (LSA)	{2306fe3a-dbf6-11d2-9244-006008269001}	1	0	OpenPo
 Local Security Authority (LSA)	{2306fe3a-dbf6-11d2-9244-006008269001}	2	0	OpenPolicy_End()	End	OpenPolicy
 Local Security Authority (LSA)	{2306fe3b-dbf6-11d2-9244-006008269001}	1	0	Close_Start()	Start	Close
 Local Security Authority (LSA)	{2306fe3b-dbf6-11d2-9244-006008269001}	2	0	Close_End()	End	Close
-Local Security Authority (LSA)	{2484dc26-49d3-4085-a6e4-4972115cb3c0}	1	0	MSLSA_LookupIsolatedNameInTrustedDomains_TypeGroup1(String IsolatedName, String ClientNetworkAddress)		LookupIsolatedNameInTrustedDomains_TypeGroup1
-Local Security Authority (LSA)	{2484dc26-49d3-4085-a6e4-4972115cb3c0}	2	0	MSLSA_LookupIsolatedNameInTrustedDomains_TypeGroup1(String IsolatedName, String ClientNetworkAddress)		LookupIsolatedNameInTrustedDomains_TypeGroup1
-Local Security Authority (LSA)	{3d2c9e3e-bb19-4617-8489-cabb9787de7d}	1	0	SetForestTrustInfo_Start()	Start	SetForestTrustInfo
-Local Security Authority (LSA)	{3d2c9e3e-bb19-4617-8489-cabb9787de7d}	2	0	SetForestTrustInfo_End()	End	SetForestTrustInfo
+Local Security Authority (LSA)	{2484dc26-49d3-4085-a6e4-4972115cb3c0}	1	0	LookupIsolatedNameInTrustedDomains_Start(String IsolatedName, String ClientNetworkAddress)	Start	LookupIsolatedNameInTrustedDomains_TypeGroup1
+Local Security Authority (LSA)	{2484dc26-49d3-4085-a6e4-4972115cb3c0}	2	0	LookupIsolatedNameInTrustedDomains_End(String IsolatedName, String ClientNetworkAddress)	End	LookupIsolatedNameInTrustedDomains_TypeGroup1
+Local Security Authority (LSA)	{3d2c9e3e-bb19-4617-8489-cabb9787de7d}	1	0	OpTrustedDomByName_Start()	Start	SetForestTrustInfo
+Local Security Authority (LSA)	{3d2c9e3e-bb19-4617-8489-cabb9787de7d}	2	0	OpTrustedDomByName_End()	End	SetForestTrustInfo
 Local Security Authority (LSA)	{cc85922e-db41-11d2-9244-006008269001}	1	0	QuerySecret_Start()	Start	QuerySecret
 Local Security Authority (LSA)	{cc85922e-db41-11d2-9244-006008269001}	2	0	QuerySecret_End()	End	QuerySecret
-Local Security Authority (LSA)	{e28ee0eb-6181-49df-b859-2f3fd289a2d1}	1	0	QueryForestTrustInfo_Start()	Start	QueryForestTrustInfo
-Local Security Authority (LSA)	{e28ee0eb-6181-49df-b859-2f3fd289a2d1}	2	0	QueryForestTrustInfo_End()	End	QueryForestTrustInfo
+Local Security Authority (LSA)	{e28ee0eb-6181-49df-b859-2f3fd289a2d1}	1	0	OpTrustedDomByName_Start()	Start	QueryForestTrustInfo
+Local Security Authority (LSA)	{e28ee0eb-6181-49df-b859-2f3fd289a2d1}	2	0	OpTrustedDomByName_End()	End	QueryForestTrustInfo

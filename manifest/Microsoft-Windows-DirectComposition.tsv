@@ -62,7 +62,7 @@ Microsoft-Windows-DirectComposition	63	0	FLIP_CONSUME_PRESENT_CALLOUTStop(UInt32
 Microsoft-Windows-DirectComposition	64	0	FLIP_PRODUCE_PRESENTStart()	Start	FlipManager	FLIP_PRODUCE_PRESENT	Verbose		
 Microsoft-Windows-DirectComposition	65	0	FLIP_PRODUCE_PRESENTStop(UInt64 presentId, UInt32 result)	Stop	FlipManager	FLIP_PRODUCE_PRESENT	Verbose		
 Microsoft-Windows-DirectComposition	66	0	ANIMATION_ENDED(UInt32 eventType, UInt32 resourceHandle, UInt32 callbackId)		DCompAnimationTelemetry	ANIMATION_ENDED	Verbose		
-Microsoft-Windows-DirectComposition	67	0	REGISTERANIMATIONTARGET(UInt32 objectHandle, UInt32 propertyHandle, UInt32 animatorResourceHandle, UInt32 animatorCallbackId)		DCompAnimationTelemetry	REGISTERANIMATIONTARGET	Verbose		
+Microsoft-Windows-DirectComposition	67	0	REGISTERANIMATIONTARGET(UInt32 objectHandle, UInt32 propertyId, UInt32 animatorResourceHandle, UInt32 animatorCallbackId)		DCompAnimationTelemetry	REGISTERANIMATIONTARGET	Verbose		
 Microsoft-Windows-DirectComposition	68	0	EXPRESSIONANIMATOR_INIT(UInt64 expressionAnimatorInstance, UInt64 nodesBuffer, UInt64 cacheBuffer, UInt64 cacheBufferParam)		DCompAnimationTelemetry	EXPRESSIONANIMATOR_INIT	Verbose		
 Microsoft-Windows-DirectComposition	69	0	EXPRESSIONANIMATOR_RELEASE_RESOURCES(UInt64 expressionAnimatorInstance, UInt64 nodesBuffer, UInt64 cacheBuffer)		DCompAnimationTelemetry	EXPRESSIONANIMATOR_RELEASE_RESOURCES	Verbose		
 Microsoft-Windows-DirectComposition	70	0	SHAREALLOCATIONBASE_ONMARSHALERRELEASE(UInt64 instance)		DCompAnimationTelemetry	SHAREALLOCATIONBASE_ONMARSHALERRELEASE	Verbose		
@@ -71,3 +71,13 @@ Microsoft-Windows-DirectComposition	72	0	DELEGATEDINKTRAIL_COOKIEPUSHED(Pointer 
 Microsoft-Windows-DirectComposition	73	0	DELEGATEDINKTRAIL_REMOVETRAILPOINTS(Pointer InkTrail, UInt32 GenerationId, UInt32 LookupId)			DELEGATEDINKTRAIL_REMOVETRAILPOINTS	Verbose		
 Microsoft-Windows-DirectComposition	74	0	DELEGATEDINKTRAIL_STARTNEWTRAIL(Pointer InkTrail, UInt32 PrevGenerationId, Float Color_R, Float Color_G, Float Color_B, Float Color_A)			DELEGATEDINKTRAIL_STARTNEWTRAIL	Verbose		
 Microsoft-Windows-DirectComposition	75	0	WINCOMP_EFFECT_CREATE(UInt32 channelHandle, UInt32 resourceHandle, AnsiString Graph)		DCompBasic	WINCOMP_EFFECT_CREATE	Verbose		
+Microsoft-Windows-DirectComposition	76	0	CompositionTextures_GetAvailableFence(Pointer pCompositionTexture, Pointer pID3D11Fence, UInt64 fenceValue)		CompositionTextures	CompositionTextures_GetAvailableFence	Verbose		
+Microsoft-Windows-DirectComposition	77	0	CompositionTextures_DeviceTextureManager_Create(Pointer pDeviceTextureManager, Pointer pID3D11Device5)		CompositionTextures	CompositionTextures_DeviceTextureManager_Create	Verbose		
+Microsoft-Windows-DirectComposition	78	0	CompositionTextures_DeviceTextureManager_Destroy(Pointer pDeviceTextureManager)		CompositionTextures	CompositionTextures_DeviceTextureManager_Destroy	Verbose		
+Microsoft-Windows-DirectComposition	79	0	CompositionTextures_CompositionTexture_Create(Pointer pCompositionTexture, Pointer pDeviceTextureManager, Pointer pID3D11Resource)		CompositionTextures	CompositionTextures_CompositionTexture_Create	Verbose		
+Microsoft-Windows-DirectComposition	80	0	CompositionTextures_CompositionTexture_Destroy(Pointer pCompositionTexture)		CompositionTextures	CompositionTextures_CompositionTexture_Destroy	Verbose		
+Microsoft-Windows-DirectComposition	81	0	CompositionTextures_IncrementBindings(Pointer pCompositionTexture, UInt32 bindingCount)		CompositionTextures	CompositionTextures_IncrementBindings	Verbose		
+Microsoft-Windows-DirectComposition	82	0	CompositionTextures_DecrementBindings(Pointer pCompositionTexture, UInt32 bindingCount)		CompositionTextures	CompositionTextures_DecrementBindings	Verbose		
+Microsoft-Windows-DirectComposition	83	0	CompositionTextures_Available(Pointer pCompositionTexture)		CompositionTextures	CompositionTextures_Available	Verbose		
+Microsoft-Windows-DirectComposition	84	0	CompositionTextures_Unavailable(Pointer pCompositionTexture)		CompositionTextures	CompositionTextures_Unavailable	Verbose		
+Microsoft-Windows-DirectComposition	85	0	CompositionTextures_SignalValueUpdate(Pointer pCompositionTexture, Int64 oldSignalValue, Int64 newSignalValue, UInt32 surfaceBindings)		CompositionTextures	CompositionTextures_SignalValueUpdate	Verbose		

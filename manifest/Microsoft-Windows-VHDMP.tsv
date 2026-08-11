@@ -79,7 +79,7 @@ Microsoft-Windows-VHDMP	301	0	task_0301(UnicodeString VhdFile, UnicodeString IoT
 Microsoft-Windows-VHDMP	302	0	task_0302(UnicodeString VhdFile, UInt64 MaxLatencyMs, UInt16 IoType, UnicodeString IoTypeStr, UInt32 IoSize, UInt64 LatencyMs)		Statistics	task_0	Warning		
 Microsoft-Windows-VHDMP	303	0	task_0303(UnicodeString VhdFile, UInt64 MaxLatencyMs, UInt16 IoType, UnicodeString IoTypeStr, UInt64 LatencyMs)		Statistics	task_0	Warning		
 Microsoft-Windows-VHDMP	304	0	task_0304(UnicodeString VhdFile, UInt64 MaxLatencyMs, Boolean PersistentReserveIn, UInt32 IoSize, UInt64 LatencyMs)		Statistics	task_0	Warning		
-Microsoft-Windows-VHDMP	1001	0	IOrequestStartinganIO.(UnicodeString VhdId, UInt32 VhdIoType, UInt32 VhdSrbType, UInt64 Offset, UInt32 Length)	StartinganIO.	IO	IOrequest	Verbose		
-Microsoft-Windows-VHDMP	1002	0	IOrequestCompletinganIO.(UnicodeString VhdId, UInt32 VhdIoType, UInt32 VhdSrbType, UInt64 Offset, UInt32 Length)	CompletinganIO.	IO	IOrequest	Verbose		
+Microsoft-Windows-VHDMP	1001	0	IOrequestStartinganIO.(UnicodeString VhdId, UInt32 VhdIoType, UInt32 VhdSrbType, UInt64 Offset, UInt32 Length, UInt32 Status)	StartinganIO.	IO	IOrequest	Verbose		
+Microsoft-Windows-VHDMP	1002	0	IOrequestCompletinganIO.(UnicodeString VhdId, UInt32 VhdIoType, UInt32 VhdSrbType, UInt64 Offset, UInt32 Length, UInt32 Status)	CompletinganIO.	IO	IOrequest	Verbose		
 Microsoft-Windows-VHDMP	1010	0	task_01010(UnicodeString VhdFile, GUID VmId, UInt32 VhdIoType, UInt32 VhdSrbType, UInt64 Offset, UInt32 Length, UInt32 Status)		IO	task_0	Verbose		
 Microsoft-Windows-VHDMP	1011	0	task_01011(UnicodeString VhdFile, GUID VmId, UInt32 VhdIoType, UInt32 VhdSrbType, UInt64 Offset, UInt32 Length, UInt32 Status)		IO	task_0	Verbose		

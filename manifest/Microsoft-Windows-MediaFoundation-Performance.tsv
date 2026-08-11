@@ -486,6 +486,10 @@ Microsoft-Windows-MediaFoundation-Performance	4475	0	DXGIMapSurfaceSleepStart(Po
 Microsoft-Windows-MediaFoundation-Performance	4476	0	DXGIMapSurfaceSleepStop(Pointer surface)	Stop		DXGIMapSurfaceSleep	Verbose		
 Microsoft-Windows-MediaFoundation-Performance	4477	0	DXGIUnmapSurfaceStart(Pointer surface, UInt32 uSubresource)	Start		DXGIUnmapSurface	Informational		
 Microsoft-Windows-MediaFoundation-Performance	4478	0	DXGIUnmapSurfaceStop(Pointer surface)	Stop		DXGIUnmapSurface	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4479	0	2D:Copy2DStart(Pointer Pointer, Int32 Direction, Int32 Width, Int32 Height, Int32 Format, Int32 Length)	Start		2D:Copy2D	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4480	0	2D:Copy2DStop(Pointer Pointer, Int32 Direction, Int32 Width, Int32 Height, Int32 Format, Int32 Length)	Stop		2D:Copy2D	Informational		
+Microsoft-Windows-MediaFoundation-Performance	4481	0	DXGIManagerStart(Pointer Manager)	Start		DXGIManager	Verbose		
+Microsoft-Windows-MediaFoundation-Performance	4482	0	DXGIManagerStop(Pointer Manager)	Stop		DXGIManager	Verbose		
 Microsoft-Windows-MediaFoundation-Performance	4483	0	DXGISetPriority(Pointer Manager, Pointer Device, Boolean Changed, Int32 Priority, HexInt32 hr)			DXGISetPriority	Verbose		
 Microsoft-Windows-MediaFoundation-Performance	4500	0	NetworkRIO_PendingSends(Pointer Object, Int32 PendingCount, UInt32 BytesSent)			NetworkRIO_PendingSends	Informational		
 Microsoft-Windows-MediaFoundation-Performance	4501	0	NetworkRIO_PendingSendsStart(Pointer Object, Int32 PendingCount, UInt32 BytesSent)	Start		NetworkRIO_PendingSends	Informational		

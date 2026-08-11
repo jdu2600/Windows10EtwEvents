@@ -19,8 +19,8 @@ Microsoft-Windows-RTWorkQueue-Threading	4480	1	WorkQueue:AddDeadlineStart_V1(Poi
 Microsoft-Windows-RTWorkQueue-Threading	4481	1	WorkQueue:AddDeadlineStop_V1(Pointer WorkQueuePointer, UInt32 WorkQueueID, Pointer ItemPointer, UInt32 ItemID, Int64 GlobalDeadline, Int64 DeltaAhead_usec)	Stop		WorkQueue:AddDeadline	Verbose		
 Microsoft-Windows-RTWorkQueue-Threading	4482	1	WorkQueue:AddImmediateDeadlineStart_V1(Pointer WorkQueuePointer, UInt32 WorkQueueID, Pointer ItemPointer, UInt32 ItemID, Int64 GlobalDeadline, Int64 DeltaAhead_usec)	Start		WorkQueue:AddImmediateDeadline	Verbose		
 Microsoft-Windows-RTWorkQueue-Threading	4483	1	WorkQueue:AddImmediateDeadlineStop_V1(Pointer WorkQueuePointer, UInt32 WorkQueueID, Pointer ItemPointer, UInt32 ItemID, Int64 GlobalDeadline, Int64 DeltaAhead_usec)	Stop		WorkQueue:AddImmediateDeadline	Verbose		
-Microsoft-Windows-RTWorkQueue-Threading	4484	0	WorkQueue:DeadlineYieldStart(UInt32 WorkQueueID, UInt32 Yield)	Start		WorkQueue:DeadlineYield	Verbose		
-Microsoft-Windows-RTWorkQueue-Threading	4485	0	WorkQueue:DeadlineYieldStop(UInt32 WorkQueueID, UInt32 Yield)	Stop		WorkQueue:DeadlineYield	Verbose		
+Microsoft-Windows-RTWorkQueue-Threading	4484	1	WorkQueue:DeadlineYieldStart_V1(UInt32 WorkQueueID, UInt32 TaskID, UInt32 Yield, Int32 llDelay)	Start		WorkQueue:DeadlineYield	Verbose		
+Microsoft-Windows-RTWorkQueue-Threading	4485	1	WorkQueue:DeadlineYieldStop_V1(UInt32 WorkQueueID, UInt32 TaskID)	Stop		WorkQueue:DeadlineYield	Verbose		
 Microsoft-Windows-RTWorkQueue-Threading	4486	2	WorkQueue:UpdateDeadlineQueue_V2(Pointer WorkQueuePointer, UInt32 WorkQueueID, UInt32 TotalCount, UInt32 ImmediateCount, Int64 NextDeadline, Pointer ItemPointer, UInt32 ItemID, Int64 NextDeadline_RelToNow_us, Int64 NextDeadline_AddTimeRelNow_us)			WorkQueue:UpdateDeadlineQueue	Verbose		
 Microsoft-Windows-RTWorkQueue-Threading	4487	0	WorkQueue:LongRunningStart(UInt32 WorkQueueID, UInt32 TaskGroupID)	Start		WorkQueue:LongRunning	Verbose		
 Microsoft-Windows-RTWorkQueue-Threading	4488	0	WorkQueue:LongRunningStop(UInt32 WorkQueueID, UInt32 TaskGroupID)	Stop		WorkQueue:LongRunning	Verbose		
@@ -61,5 +61,3 @@ Microsoft-Windows-RTWorkQueue-Threading	4522	0	Platform:Init(Pointer Platform)		
 Microsoft-Windows-RTWorkQueue-Threading	4523	0	Platform:ShutdownStop4523(Pointer Platform)	Stop		Platform:Shutdown	Informational		
 Microsoft-Windows-RTWorkQueue-Threading	4524	0	WorkQueue:GetMMCSSFailure(Pointer WorkQueuePointer, UInt32 WorkQueueID, Pointer rtStatePointer, HexInt32 hr)			WorkQueue:GetMMCSSFailure	Verbose		
 Microsoft-Windows-RTWorkQueue-Threading	4525	0	WorkQueue:MMCSSTransition(Pointer WorkQueuePointer, UInt32 WorkQueueID, UInt32 TaskID, UInt32 RegCount)			WorkQueue:MMCSSTransition	Verbose		
-Microsoft-Windows-RTWorkQueue-Threading	4526	0	WorkQueue:DeadlineYieldStart4526(UInt32 WorkQueueID, UInt32 TaskID, UInt32 Yield, Int32 llDelay)	Start		WorkQueue:DeadlineYield	Verbose		
-Microsoft-Windows-RTWorkQueue-Threading	4527	0	WorkQueue:DeadlineYieldStop4527(UInt32 WorkQueueID, UInt32 TaskID)	Stop		WorkQueue:DeadlineYield	Verbose		

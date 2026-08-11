@@ -45,6 +45,7 @@ Microsoft-Windows-Direct3D11	43	0	CommandListStop(Pointer pID3D11DeviceContext, 
 Microsoft-Windows-Direct3D11	44	0	CommandListDCStart(Pointer pID3D11DeviceContext, Pointer pID3D11CommandList)	DC_Start	CommandLists	CommandList	Always		
 Microsoft-Windows-Direct3D11	45	0	CustomDriverMarker(UInt64 InsertionAPISequenceNumber, Pointer pID3D11DeviceContext, UInt32 hContext, Int32 Index, Int32 StringIndex, UnicodeString MarkerDescription)		DriverCustomMarkers	CustomDriverMarker	Always		
 Microsoft-Windows-Direct3D11	46	0	CustomDriverMarker46(Pointer pID3D11Device, Int32 StringIndex, UnicodeString Description)		DriverCustomMarkers	CustomDriverMarker	Always		
+Microsoft-Windows-Direct3D11	161	0	Device161(UInt32 LUIDHigh, Int32 LUIDLow, UInt8 SingleAdapterHybridMode)		Devices	Device	Always		
 Microsoft-Windows-Direct3D11	1714	0	IDXGIDevice2_OfferResourcesStart(Pointer pThis, UInt32 NumResources, Pointer ppResources, UInt32 Priority)	Start		IDXGIDevice2_OfferResources	Always		
 Microsoft-Windows-Direct3D11	1715	0	IDXGIDevice2_OfferResourcesStop(UInt32 m_Ret)	Stop		IDXGIDevice2_OfferResources	Always		
 Microsoft-Windows-Direct3D11	1716	0	IDXGIDevice2_ReclaimResourcesStart(Pointer pThis, UInt32 NumResources, Pointer ppResources, UInt32 NumDiscardedResources, UInt32 pDiscarded)	Start		IDXGIDevice2_ReclaimResources	Always		

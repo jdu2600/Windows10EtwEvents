@@ -19,6 +19,8 @@ Microsoft-Windows-HelloForBusiness	5000	0	task_0Informational(UnicodeString Manu
 Microsoft-Windows-HelloForBusiness	5001	0	task_0Informational5001(UnicodeString UserName, SID UserSid, UInt32 CredentialType, UInt32 DeploymentType)	Informational	Internal	task_0	Informational		
 Microsoft-Windows-HelloForBusiness	5002	0	task_0Informational5002(HexInt32 GestureType, UInt32 GestureSubtype)	Informational	Internal	task_0	Informational		
 Microsoft-Windows-HelloForBusiness	5003	0	PolicyEnforcementInformational(SID UserSid, UInt32 NgcEnabledPolicyState, UInt32 EnabledPolicySource, UInt32 DeploymentType, UInt32 CredentialType, UInt32 PinMinLength, UInt32 PinMaxLength, UInt32 PinUppercase, UInt32 PinLowercase, UInt32 PinDigits, UInt32 PinSpecial, Boolean PinAllowSequences, Boolean PinHistory, Boolean PinExpiration, UInt32 PinRecoveryPolicyState, Boolean TPMRequired, UInt32 HardwarePolicy, Boolean MultifactorUnlock)	Informational	Internal	PolicyEnforcement	Informational		
+Microsoft-Windows-HelloForBusiness	5004	0	PolicyEnforcementInformational5004(SID UserSid, UInt32 NgcEnabledPolicyState)	Informational	Internal	PolicyEnforcement	Informational		
+Microsoft-Windows-HelloForBusiness	5005	0	PolicyEnforcementInformational5005(SID UserSid, UInt32 NgcEnabledPolicyState, UInt32 EnabledPolicySource, UInt32 DeploymentType)	Informational	Internal	PolicyEnforcement	Informational		
 Microsoft-Windows-HelloForBusiness	5050	0	KeyCreationInformational(HexInt32 Result, UInt32 NumberOfAvailableKeys, UInt32 ElapsedTime)	Informational	Internal	KeyCreation	Informational		
 Microsoft-Windows-HelloForBusiness	5060	0	PINRecoveryInformational(UInt32 PinRecoveryPolicyState, SID UserSid)	Informational	Internal	PINRecovery	Informational		
 Microsoft-Windows-HelloForBusiness	5061	0	PINRecoveryInformational5061()	Informational	Internal	PINRecovery	Informational		
@@ -85,7 +87,6 @@ Microsoft-Windows-HelloForBusiness	7611	0	ContainerDeletionStop7611(HexInt32 Err
 Microsoft-Windows-HelloForBusiness	7621	0	CertificateEnrollmentInformational7621(HexInt32 Error)	Informational	Internal	CertificateEnrollment	Error		
 Microsoft-Windows-HelloForBusiness	7631	0	BiometricEnrollmentInformational(HexInt32 Error)	Informational	Internal	BiometricEnrollment	Error		
 Microsoft-Windows-HelloForBusiness	7701	0	ProtectorUseInformational()	Informational	Internal	ProtectorUse	Error		
-Microsoft-Windows-HelloForBusiness	7703	0	PolicyEnforcementStop()	Stop	Internal	PolicyEnforcement	Error		
 Microsoft-Windows-HelloForBusiness	8002	0	ContainerLoadInformational8002(GUID ContainerId, UInt32 ContainerVersion, UInt32 KeyProvider, Boolean HasCachedLogonKey, UInt32 ContainerStatus)	Informational	Internal	ContainerLoad			
 Microsoft-Windows-HelloForBusiness	8025	0	ServiceStartInformational8025(UnicodeString ServiceName)	Informational	Internal	ServiceStart			
 Microsoft-Windows-HelloForBusiness	8030	0	task_0Informational8030()	Informational	Internal	task_0			

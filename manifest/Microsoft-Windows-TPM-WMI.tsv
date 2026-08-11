@@ -15,6 +15,7 @@ Microsoft-Windows-TPM-WMI	1029	0	task_01029(HexInt32 ErrorCode)			task_0	Informa
 Microsoft-Windows-TPM-WMI	1030	0	task_01030()			task_0	Informational		
 Microsoft-Windows-TPM-WMI	1031	0	task_01031(HexInt32 ErrorCode)			task_0	Informational		
 Microsoft-Windows-TPM-WMI	1032	0	task_01032()			task_0	Error		
+Microsoft-Windows-TPM-WMI	1032	2	task_01032_V2(UnicodeString UpdateType)			task_0	Error		
 Microsoft-Windows-TPM-WMI	1033	0	task_01033(UnicodeString Path)			task_0	Error		
 Microsoft-Windows-TPM-WMI	1034	0	task_01034()			task_0	Informational		
 Microsoft-Windows-TPM-WMI	1035	0	task_01035()			task_0	Informational		
@@ -28,6 +29,8 @@ Microsoft-Windows-TPM-WMI	1042	0	task_01042()			task_0	Informational
 Microsoft-Windows-TPM-WMI	1043	0	task_01043()			task_0	Informational		
 Microsoft-Windows-TPM-WMI	1044	0	task_01044()			task_0	Informational		
 Microsoft-Windows-TPM-WMI	1045	0	task_01045()			task_0	Informational		
+Microsoft-Windows-TPM-WMI	1046	0	task_01046(UInt16 FilesCount, UnicodeString Files)			task_0	Informational		
+Microsoft-Windows-TPM-WMI	1047	0	task_01047(UnicodeString FileName, UInt32 ErrorCode)			task_0	Warning		
 Microsoft-Windows-TPM-WMI	1281	0	task_01281()			task_0	Informational		
 Microsoft-Windows-TPM-WMI	1282	0	task_01282()			task_0	Informational		
 Microsoft-Windows-TPM-WMI	1283	0	task_01283()			task_0	Informational		
@@ -40,10 +43,17 @@ Microsoft-Windows-TPM-WMI	1793	0	task_01793()			task_0	Informational
 Microsoft-Windows-TPM-WMI	1794	0	task_01794()			task_0	Error		
 Microsoft-Windows-TPM-WMI	1795	1	task_01795_V1(Int32 HResult)			task_0	Error		
 Microsoft-Windows-TPM-WMI	1795	2	task_01795_V2(Int32 HResult, Int32 UpdateType)			task_0	Error		
+Microsoft-Windows-TPM-WMI	1795	4	task_01795_V4(Int32 HResult, UnicodeString UpdateType, UnicodeString DeviceAttributes, UnicodeString BucketId, UnicodeString BucketConfidenceLevel)			task_0	Error		
 Microsoft-Windows-TPM-WMI	1796	1	task_01796_V1(Int32 HResult)			task_0	Error		
 Microsoft-Windows-TPM-WMI	1796	2	task_01796_V2(Int32 HResult, Int32 UpdateType)			task_0	Error		
+Microsoft-Windows-TPM-WMI	1796	3	task_01796_V3(UnicodeString UpdateType, Int32 HResult)			task_0	Error		
 Microsoft-Windows-TPM-WMI	1797	0	task_01797()			task_0	Error		
 Microsoft-Windows-TPM-WMI	1798	0	task_01798()			task_0	Error		
 Microsoft-Windows-TPM-WMI	1799	0	task_01799()			task_0	Informational		
 Microsoft-Windows-TPM-WMI	1800	1	task_01800_V1(Int32 RebootReason)			task_0	Warning		
 Microsoft-Windows-TPM-WMI	1800	2	task_01800_V2(Int32 UpdateType)			task_0	Warning		
+Microsoft-Windows-TPM-WMI	1800	3	task_01800_V3(UnicodeString UpdateType)			task_0	Warning		
+Microsoft-Windows-TPM-WMI	1801	2	task_01801_V2(UnicodeString DeviceAttributes, UnicodeString BucketId, UnicodeString BucketConfidenceLevel, UnicodeString UpdateType)			task_0	Error		
+Microsoft-Windows-TPM-WMI	1802	1	task_01802_V1(UnicodeString UpdateType, UnicodeString DeviceAttributes, UnicodeString BucketId, UnicodeString BucketConfidenceLevel, UnicodeString SkipReason)			task_0	Error		
+Microsoft-Windows-TPM-WMI	1803	1	task_01803_V1(UnicodeString DeviceAttributes, UnicodeString BucketId, UnicodeString BucketConfidenceLevel)			task_0	Error		
+Microsoft-Windows-TPM-WMI	1808	2	task_01808_V2(UnicodeString DeviceAttributes, UnicodeString BucketId, UnicodeString BucketConfidenceLevel, UnicodeString UpdateType)			task_0	Informational		

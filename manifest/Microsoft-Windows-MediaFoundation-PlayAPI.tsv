@@ -1,93 +1,94 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-MediaFoundation-PlayAPI	0	0	MFPlayStart(Pointer Object, UnicodeString URL, Boolean StartPlayback, HexInt32 Options, Pointer Callback, Pointer HWND)	Start		MFPlay	Informational		
-Microsoft-Windows-MediaFoundation-PlayAPI	1	0	MFPlayStop(Pointer Object, UInt32 ErrorCode)	Stop		MFPlay	Informational		
-Microsoft-Windows-MediaFoundation-PlayAPI	2	0	MFPlayObjectconstructed(Pointer Object)	Objectconstructed		MFPlay	Informational		
-Microsoft-Windows-MediaFoundation-PlayAPI	3	0	MFPlayObjectdestroyed(Pointer Object, UInt32 ErrorCode)	Objectdestroyed		MFPlay	Informational		
-Microsoft-Windows-MediaFoundation-PlayAPI	4	0	MFPlayObjectconstructed4(Pointer Object)	Objectconstructed		MFPlay	Informational		
-Microsoft-Windows-MediaFoundation-PlayAPI	5	0	MFPlayObjectdestroyed5(Pointer Object, UInt32 ErrorCode)	Objectdestroyed		MFPlay	Informational		
-Microsoft-Windows-MediaFoundation-PlayAPI	6	0	MFPlayStart6(Pointer Object)	Start		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	7	0	MFPlayStop7(Pointer Object, UInt32 ErrorCode)	Stop		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	8	0	MFPlayStart8(Pointer Object)	Start		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	9	0	MFPlayStop9(Pointer Object, UInt32 ErrorCode)	Stop		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	10	0	MFPlayStart10(Pointer Object)	Start		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	11	0	MFPlayStop11(Pointer Object, UInt32 ErrorCode)	Stop		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	12	0	MFPlayStart12(Pointer Object, Int32 Frames)	Start		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	13	0	MFPlayStop13(Pointer Object, UInt32 ErrorCode)	Stop		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	14	0	MFPlayStart14(Pointer Object, GUID PositionType, UInt32 PositionValueSize, Binary PositionValue)	Start		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	15	0	MFPlayStop15(Pointer Object, UInt32 ErrorCode)	Stop		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	16	0	MFPlayStart16(Pointer Object, GUID PositionType)	Start		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	17	0	MFPlayStop17(Pointer Object, UInt32 ErrorCode, UInt32 PositionValueSize, Binary PositionValue)	Stop		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	18	0	MFPlayStart18(Pointer Object, GUID PositionType)	Start		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	19	0	MFPlayStop19(Pointer Object, UInt32 ErrorCode, UInt32 DurationValueSize, Binary DurationValue)	Stop		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	20	0	MFPlayStart20(Pointer Object, Float Rate)	Start		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	20	1	MFPlayStart20_V1(Pointer Object, Float Rate, Boolean Thin)	Start		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	21	0	MFPlayStop21(Pointer Object, UInt32 ErrorCode)	Stop		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	22	0	MFPlayStart22(Pointer Object)	Start		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	23	0	MFPlayStop23(Pointer Object, UInt32 ErrorCode, Float Rate)	Stop		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	24	0	MFPlayStart24(Pointer Object)	Start		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	25	0	MFPlayStop25(Pointer Object, UInt32 ErrorCode, Int32 State)	Stop		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	26	0	MFPlayStart26(Pointer Object, UInt64 TimeIn100ns, Pointer UserData)	Start		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	27	0	MFPlayStop27(Pointer Object, Pointer CancelCookiePtr, UInt32 ErrorCode)	Stop		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	28	0	MFPlayStart28(Pointer Object, UnicodeString URL, Boolean Synchronous, Pointer UserData)	Start		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	29	0	MFPlayStop29(Pointer Object, UInt32 ErrorCode, Pointer MediaItem)	Stop		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	30	0	MFPlayStart30(Pointer Object, Pointer SourceObject, Boolean Synchronous, Pointer UserData)	Start		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	31	0	MFPlayStop31(Pointer Object, UInt32 ErrorCode, Pointer MediaItem)	Stop		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	32	0	MFPlayStart32(Pointer Object, Pointer MediaItem)	Start		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	33	0	MFPlayStop33(Pointer Object, UInt32 ErrorCode)	Stop		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	34	0	MFPlayStart34(Pointer Object)	Start		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	35	0	MFPlayStop35(Pointer Object, UInt32 ErrorCode)	Stop		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	36	0	MFPlayStart36(Pointer Object)	Start		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	37	0	MFPlayStop37(Pointer Object, UInt32 ErrorCode, Pointer MediaItem)	Stop		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	38	0	MFPlayStart38(Pointer Object)	Start		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	39	0	MFPlayStop39(Pointer Object, UInt32 ErrorCode, Float Volume)	Stop		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	40	0	MFPlayStart40(Pointer Object, Float Volume)	Start		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	41	0	MFPlayStop41(Pointer Object, UInt32 ErrorCode)	Stop		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	42	0	MFPlayStart42(Pointer Object)	Start		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	43	0	MFPlayStop43(Pointer Object, UInt32 ErrorCode, Float Balance)	Stop		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	44	0	MFPlayStart44(Pointer Object, Float Balance)	Start		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	45	0	MFPlayStop45(Pointer Object, UInt32 ErrorCode)	Stop		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	46	0	MFPlayStart46(Pointer Object)	Start		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	47	0	MFPlayStop47(Pointer Object, UInt32 ErrorCode, UInt32 VideoSizeSize, Binary VideoSize, UInt32 AspectSizeSize, Binary AspectSize)	Stop		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	48	0	MFPlayStart48(Pointer Object)	Start		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	49	0	MFPlayStop49(Pointer Object, UInt32 ErrorCode, UInt32 MinSizeSize, Binary MinSize, UInt32 MaxSizeSize, Binary MaxSize)	Stop		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	50	0	MFPlayStart50(Pointer Object, Float Left, Float Top, Float Right, Float Bottom)	Start		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	51	0	MFPlayStop51(Pointer Object, UInt32 ErrorCode)	Stop		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	52	0	MFPlayStart52(Pointer Object)	Start		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	53	0	MFPlayStop53(Pointer Object, UInt32 ErrorCode, Float Left, Float Top, Float Right, Float Bottom)	Stop		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	54	0	MFPlayStart54(Pointer Object, UInt32 AspectRatioFlags)	Start		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	55	0	MFPlayStop55(Pointer Object, UInt32 ErrorCode)	Stop		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	56	0	MFPlayStart56(Pointer Object)	Start		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	57	0	MFPlayStop57(Pointer Object, UInt32 ErrorCode, UInt32 AspectRatioFlags)	Stop		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	58	0	MFPlayStart58(Pointer Object)	Start		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	59	0	MFPlayStop59(Pointer Object, UInt32 ErrorCode, Pointer HWND)	Stop		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	60	0	MFPlayStart60(Pointer Object)	Start		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	61	0	MFPlayStop61(Pointer Object, UInt32 ErrorCode)	Stop		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	62	0	MFPlayStart62(Pointer Object, UInt32 ColorRGB)	Start		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	63	0	MFPlayStop63(Pointer Object, UInt32 ErrorCode)	Stop		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	64	0	MFPlayStart64(Pointer Object)	Start		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	65	0	MFPlayStop65(Pointer Object, UInt32 ErrorCode, UInt32 ColorRGB)	Stop		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	66	0	MFPlayStart66(Pointer Object, Pointer Effect, Boolean Optional)	Start		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	67	0	MFPlayStop67(Pointer Object, UInt32 ErrorCode)	Stop		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	68	0	MFPlayStart68(Pointer Object, Pointer Effect)	Start		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	69	0	MFPlayStop69(Pointer Object, UInt32 ErrorCode)	Stop		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	70	0	MFPlayStart70(Pointer Object)	Start		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	71	0	MFPlayStop71(Pointer Object, UInt32 ErrorCode)	Stop		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	72	0	MFPlayStart72(Pointer Object)	Start		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	73	0	MFPlayStop73(Pointer Object, UInt32 ErrorCode)	Stop		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	74	0	MFPlayStart74(Pointer Object, GUID StartPositionType, UInt32 StartPositionSize, Binary StartPosition, GUID StopPositionType, UInt32 StopPositionSize, Binary StopPosition)	Start		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	75	0	MFPlayStop75(Pointer Object, UInt32 ErrorCode)	Stop		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	76	0	MFPlayStart76(Pointer Object, UInt32 StreamIndex, Boolean Select)	Start		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	77	0	MFPlayStop77(Pointer Object, UInt32 ErrorCode)	Stop		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	78	0	MFPlayStart78(Pointer Object, Pointer CancelCookiePtrPtr)	Start		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	79	0	MFPlayStop79(Pointer Object, UInt32 ErrorCode)	Stop		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	80	0	MFPlayStart80(Pointer Object)	Start		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	81	0	MFPlayStop81(Pointer Object, UInt32 ErrorCode, Boolean Mute)	Stop		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	82	0	MFPlayStart82(Pointer Object, Boolean Mute)	Start		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	83	0	MFPlayStop83(Pointer Object, UInt32 ErrorCode)	Stop		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	84	0	MFPlayStart84(Pointer Object)	Start		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	85	0	MFPlayStop85(Pointer Object, UInt32 ErrorCode, Boolean ForwardDirection, Float SlowestRate, Float FastestRate)	Stop		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	500	0	MFPlay(Pointer Object, Pointer EventCookie)			MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	501	0	MFPlayStart501(Pointer Object, Pointer EventCookie, UInt32 EventType, UInt32 ErrorCode)	Start		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	502	0	MFPlayStop502(Pointer Object, Pointer EventCookie)	Stop		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	503	0	MFPlayStart503(Pointer Object, UInt32 Options)	Start		MFPlay	Verbose		
-Microsoft-Windows-MediaFoundation-PlayAPI	504	0	MFPlayStop504(Pointer Object, UInt32 ErrorCode)	Stop		MFPlay	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	0	0	MFPlay_MFPCreateMediaPlayer_TaskStart(Pointer Object, UnicodeString URL, Boolean StartPlayback, HexInt32 Options, Pointer Callback, Pointer HWND)	Start		MFPlay_MFPCreateMediaPlayer_Task	Informational		
+Microsoft-Windows-MediaFoundation-PlayAPI	1	0	MFPlay_MFPCreateMediaPlayer_TaskStop(Pointer Object, UInt32 ErrorCode)	Stop		MFPlay_MFPCreateMediaPlayer_Task	Informational		
+Microsoft-Windows-MediaFoundation-PlayAPI	2	0	MFPlay_Player_Construct_TaskObjectconstructed(Pointer Object)	Objectconstructed		MFPlay_Player_Construct_Task	Informational		
+Microsoft-Windows-MediaFoundation-PlayAPI	3	0	MFPlay_Player_Destruct_TaskObjectdestroyed(Pointer Object, UInt32 ErrorCode)	Objectdestroyed		MFPlay_Player_Destruct_Task	Informational		
+Microsoft-Windows-MediaFoundation-PlayAPI	4	0	MFPlay_Item_Construct_TaskObjectconstructed(Pointer Object)	Objectconstructed		MFPlay_Item_Construct_Task	Informational		
+Microsoft-Windows-MediaFoundation-PlayAPI	5	0	MFPlay_Item_Destruct_TaskObjectdestroyed(Pointer Object, UInt32 ErrorCode)	Objectdestroyed		MFPlay_Item_Destruct_Task	Informational		
+Microsoft-Windows-MediaFoundation-PlayAPI	6	0	MFPlay_Player_Play_TaskStart(Pointer Object)	Start		MFPlay_Player_Play_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	7	0	MFPlay_Player_Play_TaskStop(Pointer Object, UInt32 ErrorCode)	Stop		MFPlay_Player_Play_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	8	0	MFPlay_Player_Pause_TaskStart(Pointer Object)	Start		MFPlay_Player_Pause_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	9	0	MFPlay_Player_Pause_TaskStop(Pointer Object, UInt32 ErrorCode)	Stop		MFPlay_Player_Pause_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	10	0	MFPlay_Player_Stop_TaskStart(Pointer Object)	Start		MFPlay_Player_Stop_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	11	0	MFPlay_Player_Stop_TaskStop(Pointer Object, UInt32 ErrorCode)	Stop		MFPlay_Player_Stop_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	12	0	MFPlay_Player_FrameStep_TaskStart(Pointer Object, Int32 Frames)	Start		MFPlay_Player_FrameStep_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	13	0	MFPlay_Player_FrameStep_TaskStop(Pointer Object, UInt32 ErrorCode)	Stop		MFPlay_Player_FrameStep_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	14	1	MFPlay_Player_SetPosition_TaskStart_V1(Pointer Object, GUID PositionType, Int64 Position)	Start		MFPlay_Player_SetPosition_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	15	0	MFPlay_Player_SetPosition_TaskStop(Pointer Object, UInt32 ErrorCode)	Stop		MFPlay_Player_SetPosition_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	16	0	MFPlay_Player_GetPosition_TaskStart(Pointer Object, GUID PositionType)	Start		MFPlay_Player_GetPosition_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	17	1	MFPlay_Player_GetPosition_TaskStop_V1(Pointer Object, UInt32 ErrorCode, Int64 Position)	Stop		MFPlay_Player_GetPosition_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	18	0	MFPlay_Player_GetDuration_TaskStart(Pointer Object, GUID PositionType)	Start		MFPlay_Player_GetDuration_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	19	1	MFPlay_Player_GetDuration_TaskStop_V1(Pointer Object, UInt32 ErrorCode, Int64 Duration)	Stop		MFPlay_Player_GetDuration_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	20	0	MFPlay_Player_SetRate_TaskStart(Pointer Object, Float Rate)	Start		MFPlay_Player_SetRate_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	21	0	MFPlay_Player_SetRate_TaskStop(Pointer Object, UInt32 ErrorCode)	Stop		MFPlay_Player_SetRate_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	22	0	MFPlay_Player_GetRate_TaskStart(Pointer Object)	Start		MFPlay_Player_GetRate_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	23	0	MFPlay_Player_GetRate_TaskStop(Pointer Object, UInt32 ErrorCode, Float Rate)	Stop		MFPlay_Player_GetRate_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	24	0	MFPlay_Player_GetState_TaskStart(Pointer Object)	Start		MFPlay_Player_GetState_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	25	0	MFPlay_Player_GetState_TaskStop(Pointer Object, UInt32 ErrorCode, Int32 State)	Stop		MFPlay_Player_GetState_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	26	0	MFPlay_Player_SetTimer_TaskStart(Pointer Object, UInt64 TimeIn100ns, Pointer UserData)	Start		MFPlay_Player_SetTimer_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	27	0	MFPlay_Player_SetTimer_TaskStop(Pointer Object, Pointer CancelCookiePtr, UInt32 ErrorCode)	Stop		MFPlay_Player_SetTimer_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	28	0	MFPlay_Player_CreateMediaItemFromURL_TaskStart(Pointer Object, UnicodeString URL, Boolean Synchronous, Pointer UserData)	Start		MFPlay_Player_CreateMediaItemFromURL_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	29	0	MFPlay_Player_CreateMediaItemFromURL_TaskStop(Pointer Object, UInt32 ErrorCode, Pointer MediaItem)	Stop		MFPlay_Player_CreateMediaItemFromURL_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	30	0	MFPlay_Player_CreateMediaItemFromObject_TaskStart(Pointer Object, Pointer SourceObject, Boolean Synchronous, Pointer UserData)	Start		MFPlay_Player_CreateMediaItemFromObject_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	31	0	MFPlay_Player_CreateMediaItemFromObject_TaskStop(Pointer Object, UInt32 ErrorCode, Pointer MediaItem)	Stop		MFPlay_Player_CreateMediaItemFromObject_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	32	0	MFPlay_Player_SetMediaItem_TaskStart(Pointer Object, Pointer MediaItem)	Start		MFPlay_Player_SetMediaItem_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	33	0	MFPlay_Player_SetMediaItem_TaskStop(Pointer Object, UInt32 ErrorCode)	Stop		MFPlay_Player_SetMediaItem_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	34	0	MFPlay_Player_ClearMediaItem_TaskStart(Pointer Object)	Start		MFPlay_Player_ClearMediaItem_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	35	0	MFPlay_Player_ClearMediaItem_TaskStop(Pointer Object, UInt32 ErrorCode)	Stop		MFPlay_Player_ClearMediaItem_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	36	0	MFPlay_Player_GetMediaItem_TaskStart(Pointer Object)	Start		MFPlay_Player_GetMediaItem_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	37	0	MFPlay_Player_GetMediaItem_TaskStop(Pointer Object, UInt32 ErrorCode, Pointer MediaItem)	Stop		MFPlay_Player_GetMediaItem_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	38	0	MFPlay_Player_GetVolume_TaskStart(Pointer Object)	Start		MFPlay_Player_GetVolume_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	39	0	MFPlay_Player_GetVolume_TaskStop(Pointer Object, UInt32 ErrorCode, Float Volume)	Stop		MFPlay_Player_GetVolume_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	40	0	MFPlay_Player_SetVolume_TaskStart(Pointer Object, Float Volume)	Start		MFPlay_Player_SetVolume_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	41	0	MFPlay_Player_SetVolume_TaskStop(Pointer Object, UInt32 ErrorCode)	Stop		MFPlay_Player_SetVolume_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	42	0	MFPlay_Player_GetBalance_TaskStart(Pointer Object)	Start		MFPlay_Player_GetBalance_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	43	0	MFPlay_Player_GetBalance_TaskStop(Pointer Object, UInt32 ErrorCode, Float Balance)	Stop		MFPlay_Player_GetBalance_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	44	0	MFPlay_Player_SetBalance_TaskStart(Pointer Object, Float Balance)	Start		MFPlay_Player_SetBalance_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	45	0	MFPlay_Player_SetBalance_TaskStop(Pointer Object, UInt32 ErrorCode)	Stop		MFPlay_Player_SetBalance_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	46	0	MFPlay_Player_GetNativeVideoSize_TaskStart(Pointer Object)	Start		MFPlay_Player_GetNativeVideoSize_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	47	1	MFPlay_Player_GetNativeVideoSize_TaskStop_V1(Pointer Object, UInt32 ErrorCode, Int32 VideoSizeX, Int32 VideoSizeY, Int32 AspectSizeX, Int32 AspectSizeY)	Stop		MFPlay_Player_GetNativeVideoSize_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	48	0	MFPlay_Player_GetIdealVideoSize_TaskStart(Pointer Object)	Start		MFPlay_Player_GetIdealVideoSize_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	49	1	MFPlay_Player_GetIdealVideoSize_TaskStop_V1(Pointer Object, UInt32 ErrorCode, Int32 MinSizeX, Int32 MinSizeY, Int32 MaxSizeX, Int32 MaxSizeY)	Stop		MFPlay_Player_GetIdealVideoSize_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	50	0	MFPlay_Player_SetVideoSourceRect_TaskStart(Pointer Object, Float Left, Float Top, Float Right, Float Bottom)	Start		MFPlay_Player_SetVideoSourceRect_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	51	0	MFPlay_Player_SetVideoSourceRect_TaskStop(Pointer Object, UInt32 ErrorCode)	Stop		MFPlay_Player_SetVideoSourceRect_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	52	0	MFPlay_Player_GetVideoSourceRect_TaskStart(Pointer Object)	Start		MFPlay_Player_GetVideoSourceRect_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	53	0	MFPlay_Player_GetVideoSourceRect_TaskStop(Pointer Object, UInt32 ErrorCode, Float Left, Float Top, Float Right, Float Bottom)	Stop		MFPlay_Player_GetVideoSourceRect_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	54	0	MFPlay_Player_SetAspectRatioMode_TaskStart(Pointer Object, UInt32 AspectRatioFlags)	Start		MFPlay_Player_SetAspectRatioMode_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	55	0	MFPlay_Player_SetAspectRatioMode_TaskStop(Pointer Object, UInt32 ErrorCode)	Stop		MFPlay_Player_SetAspectRatioMode_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	56	0	MFPlay_Player_GetAspectRatioMode_TaskStart(Pointer Object)	Start		MFPlay_Player_GetAspectRatioMode_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	57	0	MFPlay_Player_GetAspectRatioMode_TaskStop(Pointer Object, UInt32 ErrorCode, UInt32 AspectRatioFlags)	Stop		MFPlay_Player_GetAspectRatioMode_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	58	0	MFPlay_Player_GetVideoWindow_TaskStart(Pointer Object)	Start		MFPlay_Player_GetVideoWindow_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	59	0	MFPlay_Player_GetVideoWindow_TaskStop(Pointer Object, UInt32 ErrorCode, Pointer HWND)	Stop		MFPlay_Player_GetVideoWindow_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	60	0	MFPlay_Player_UpdateVideo_TaskStart(Pointer Object)	Start		MFPlay_Player_UpdateVideo_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	61	0	MFPlay_Player_UpdateVideo_TaskStop(Pointer Object, UInt32 ErrorCode)	Stop		MFPlay_Player_UpdateVideo_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	62	0	MFPlay_Player_SetBorderColor_TaskStart(Pointer Object, UInt32 ColorRGB)	Start		MFPlay_Player_SetBorderColor_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	63	0	MFPlay_Player_SetBorderColor_TaskStop(Pointer Object, UInt32 ErrorCode)	Stop		MFPlay_Player_SetBorderColor_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	64	0	MFPlay_Player_GetBorderColor_TaskStart(Pointer Object)	Start		MFPlay_Player_GetBorderColor_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	65	0	MFPlay_Player_GetBorderColor_TaskStop(Pointer Object, UInt32 ErrorCode, UInt32 ColorRGB)	Stop		MFPlay_Player_GetBorderColor_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	66	0	MFPlay_Player_InsertEffect_TaskStart(Pointer Object, Pointer Effect, Boolean Optional)	Start		MFPlay_Player_InsertEffect_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	67	0	MFPlay_Player_InsertEffect_TaskStop(Pointer Object, UInt32 ErrorCode)	Stop		MFPlay_Player_InsertEffect_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	68	0	MFPlay_Player_RemoveEffect_TaskStart(Pointer Object, Pointer Effect)	Start		MFPlay_Player_RemoveEffect_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	69	0	MFPlay_Player_RemoveEffect_TaskStop(Pointer Object, UInt32 ErrorCode)	Stop		MFPlay_Player_RemoveEffect_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	70	0	MFPlay_Player_RemoveAllEffects_TaskStart(Pointer Object)	Start		MFPlay_Player_RemoveAllEffects_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	71	0	MFPlay_Player_RemoveAllEffects_TaskStop(Pointer Object, UInt32 ErrorCode)	Stop		MFPlay_Player_RemoveAllEffects_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	72	0	MFPlay_Player_Shutdown_TaskStart(Pointer Object)	Start		MFPlay_Player_Shutdown_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	73	0	MFPlay_Player_Shutdown_TaskStop(Pointer Object, UInt32 ErrorCode)	Stop		MFPlay_Player_Shutdown_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	74	1	MFPlay_Item_SetStartStopPosition_TaskStart_V1(Pointer Object, Int64 StartPosition, Int64 StopPosition)	Start		MFPlay_Item_SetStartStopPosition_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	75	0	MFPlay_Item_SetStartStopPosition_TaskStop(Pointer Object, UInt32 ErrorCode)	Stop		MFPlay_Item_SetStartStopPosition_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	76	0	MFPlay_Item_SetStreamSelection_TaskStart(Pointer Object, UInt32 StreamIndex, Boolean Select)	Start		MFPlay_Item_SetStreamSelection_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	77	0	MFPlay_Item_SetStreamSelection_TaskStop(Pointer Object, UInt32 ErrorCode)	Stop		MFPlay_Item_SetStreamSelection_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	78	0	MFPlay_Player_CancelTimer_TaskStart(Pointer Object, Pointer CancelCookiePtrPtr)	Start		MFPlay_Player_CancelTimer_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	79	0	MFPlay_Player_CancelTimer_TaskStop(Pointer Object, UInt32 ErrorCode)	Stop		MFPlay_Player_CancelTimer_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	80	0	MFPlay_Player_GetMute_TaskStart(Pointer Object)	Start		MFPlay_Player_GetMute_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	81	0	MFPlay_Player_GetMute_TaskStop(Pointer Object, UInt32 ErrorCode, Boolean Mute)	Stop		MFPlay_Player_GetMute_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	82	0	MFPlay_Player_SetMute_TaskStart(Pointer Object, Boolean Mute)	Start		MFPlay_Player_SetMute_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	83	0	MFPlay_Player_SetMute_TaskStop(Pointer Object, UInt32 ErrorCode)	Stop		MFPlay_Player_SetMute_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	84	0	MFPlay_Player_GetSupportedRates_TaskStart(Pointer Object)	Start		MFPlay_Player_GetSupportedRates_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	85	0	MFPlay_Player_GetSupportedRates_TaskStop(Pointer Object, UInt32 ErrorCode, Boolean ForwardDirection, Float SlowestRate, Float FastestRate)	Stop		MFPlay_Player_GetSupportedRates_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	101	1	MFPlay_Player_SetRateEx_TaskStart_V1(Pointer Object, Float Rate, Boolean Thin)	Start		MFPlay_Player_SetRateEx_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	102	0	MFPlay_Player_SetRateEx_TaskStop(Pointer Object, UInt32 ErrorCode)	Stop		MFPlay_Player_SetRateEx_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	500	0	MFPlay_Player_Callback_Fired_Task(Pointer Object, Pointer EventCookie)			MFPlay_Player_Callback_Fired_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	501	0	MFPlay_Player_Callback_TaskStart(Pointer Object, Pointer EventCookie, UInt32 EventType, UInt32 ErrorCode)	Start		MFPlay_Player_Callback_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	502	0	MFPlay_Player_Callback_TaskStop(Pointer Object, Pointer EventCookie)	Stop		MFPlay_Player_Callback_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	503	0	MFPlay_Player_UpdatePMPCreationOptions_TaskStart(Pointer Object, UInt32 Options)	Start		MFPlay_Player_UpdatePMPCreationOptions_Task	Verbose		
+Microsoft-Windows-MediaFoundation-PlayAPI	504	0	MFPlay_Player_UpdatePMPCreationOptions_TaskStop(Pointer Object, UInt32 ErrorCode)	Stop		MFPlay_Player_UpdatePMPCreationOptions_Task	Verbose		

@@ -15,10 +15,11 @@ Microsoft-Windows-RTWorkQueue-Extended	13	0	WorkQueue:RTLockAcquireStop(UInt32 W
 Microsoft-Windows-RTWorkQueue-Extended	14	0	WorkQueue:TimerCallbackStart(Pointer workqueue, UInt32 WorkQueueID, UInt32 Mode)	Start		WorkQueue:TimerCallback	Verbose		
 Microsoft-Windows-RTWorkQueue-Extended	15	0	WorkQueue:TimerCallbackStop(Pointer workqueue, UInt32 WorkQueueID, UInt32 Mode)	Stop		WorkQueue:TimerCallback	Verbose		
 Microsoft-Windows-RTWorkQueue-Extended	16	0	WorkQueue:TimerMode(Pointer WorkQueuePointer, UInt32 WorkQueueID, UInt32 OldMode, UInt32 NewMode)			WorkQueue:TimerMode	Verbose		
-Microsoft-Windows-RTWorkQueue-Extended	17	0	WorkQueue:TimerSet(Pointer WorkQueuePointer, UInt32 WorkQueueID, UInt32 Mode, UInt32 Delta)			WorkQueue:TimerSet	Verbose		
+Microsoft-Windows-RTWorkQueue-Extended	17	1	WorkQueue:TimerSet_V1(Pointer WorkQueuePointer, UInt32 WorkQueueID, UInt32 Mode, UInt32 Delta, UInt32 FeatureMode)			WorkQueue:TimerSet	Verbose		
 Microsoft-Windows-RTWorkQueue-Extended	18	0	WorkQueue:TimerResChangeStart(Pointer workqueue, UInt32 WorkQueueID, UInt32 Resolution)	Start		WorkQueue:TimerResChange	Verbose		
 Microsoft-Windows-RTWorkQueue-Extended	19	0	WorkQueue:TimerResChangeStop(Pointer workqueue, UInt32 WorkQueueID, UInt32 Resolution)	Stop		WorkQueue:TimerResChange	Verbose		
 Microsoft-Windows-RTWorkQueue-Extended	20	0	WorkQueue:LockStart(Pointer workqueue)	Start		WorkQueue:Lock	Verbose		
 Microsoft-Windows-RTWorkQueue-Extended	21	0	WorkQueue:LockStop(Pointer workqueue)	Stop		WorkQueue:Lock	Verbose		
 Microsoft-Windows-RTWorkQueue-Extended	22	0	WorkQueue:Lock(Pointer workqueue, UInt32 ExtRefCount, UInt32 IntRefCount)			WorkQueue:Lock	Verbose		
+Microsoft-Windows-RTWorkQueue-Extended	23	0	WorkQueue:TimerSetFail(Pointer WorkQueuePointer, UInt32 WorkQueueID, Pointer Handle, Int32 NtError, Int32 DurationMS, UInt32 ToleranceMS, UInt32 FeatureMode)			WorkQueue:TimerSetFail	Verbose		
 Microsoft-Windows-RTWorkQueue-Extended	24	0	WorkQueue:ExtendedMismatchedCallbackQueues(Pointer Platform, Pointer Callback, UInt32 WorkQueueID, UInt32 CallbackWorkQueueID)			WorkQueue:ExtendedMismatchedCallbackQueues	Verbose		

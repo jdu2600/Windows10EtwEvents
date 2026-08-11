@@ -38,6 +38,7 @@ Microsoft-Windows-WebAuthN	2103	0	CtapCommandStop2103(UnicodeString Command, GUI
 Microsoft-Windows-WebAuthN	2104	0	CtapDeviceInfoInformational(GUID TransactionId, UnicodeString ProviderName, UnicodeString DevicePath, UnicodeString Manufacturer, UnicodeString Product, GUID AAGuid, Boolean U2fProtocol)	Informational	Ctap	CtapDeviceInfo	Informational		
 Microsoft-Windows-WebAuthN	2105	0	CtapFunctionInformational(AnsiString Function, AnsiString Location, HexInt32 Error, HexInt32 Win32Error)	Informational	Ctap	CtapFunction	Warning		
 Microsoft-Windows-WebAuthN	2106	0	CtapFunctionInformational2106(UnicodeString Name, UnicodeString Value)	Informational	Ctap	CtapFunction	Informational		
+Microsoft-Windows-WebAuthN	2107	0	CtapFunctionInformational2107()	Informational	Ctap	CtapFunction	Error		
 Microsoft-Windows-WebAuthN	2110	0	WNFCtapDeviceStateInfoInformational(HexInt32 Transport, HexInt32 WnfState, HexInt32 Error, HexInt32 Win32Error)	Informational	Ctap	WNFCtapDeviceStateInfo	Informational		
 Microsoft-Windows-WebAuthN	2111	0	WNFCtapDeviceChangeNotifyInfoInformational(HexInt32 Transport)	Informational	Ctap	WNFCtapDeviceChangeNotifyInfo	Informational		
 Microsoft-Windows-WebAuthN	2200	0	CtapUsbProviderThreadStart(GUID TransactionId)	Start	Ctap Usb	CtapUsbProviderThread	Informational		
@@ -105,12 +106,19 @@ Microsoft-Windows-WebAuthN	5010	0	SyncStateInformational(UInt32 SyncState)	Infor
 Microsoft-Windows-WebAuthN	6006	0	TrustGroupInformational()	Informational	SyncedProvider	TrustGroup	Warning		
 Microsoft-Windows-WebAuthN	6007	0	LocalStoreInformational6007()	Informational	SyncedProvider	LocalStore	Warning		
 Microsoft-Windows-WebAuthN	6011	0	TrustedDeviceInformational()	Informational	SyncedProvider	TrustedDevice	Warning		
+Microsoft-Windows-WebAuthN	6250	0	CredentialMetadataFieldMissingInformational(UnicodeString PluginClsId)	Informational	PluginProvider	CredentialMetadataFieldMissing	Warning		
+Microsoft-Windows-WebAuthN	6251	0	GetKCMUVKeyInformational(UnicodeString PluginClsId, UnicodeString KeyName, UInt32 NumKeysFound)	Informational	PluginProvider	GetKCMUVKey	Warning		
 Microsoft-Windows-WebAuthN	7000	0	KeyRotationStop(HexInt32 Error)	Stop	SyncedProvider	KeyRotation	Error		
 Microsoft-Windows-WebAuthN	7001	0	SyncStop(UInt32 OperationType, UInt32 PropertyType, UnicodeString BackupId, AnsiString CorrelationVector, HexInt32 Error)	Stop	SyncedProvider	Sync	Error		
 Microsoft-Windows-WebAuthN	7003	0	TrustedDeviceStop(HexInt32 Error)	Stop	SyncedProvider	TrustedDevice	Error		
 Microsoft-Windows-WebAuthN	7004	0	TrustedDeviceStop7004(HexInt32 Error)	Stop	SyncedProvider	TrustedDevice	Error		
 Microsoft-Windows-WebAuthN	7005	0	TrustedDeviceStop7005(HexInt32 Error)	Stop	SyncedProvider	TrustedDevice	Error		
 Microsoft-Windows-WebAuthN	7008	0	LocalStoreStop(UInt32 OperationType, UInt32 PropertyType, UnicodeString BackupId, AnsiString CorrelationVector, HexInt32 Error)	Stop	SyncedProvider	LocalStore	Error		
+Microsoft-Windows-WebAuthN	7251	0	GetKCMUVKeyInformational7251(UnicodeString PluginClsId, UnicodeString KeyName, HexInt32 Error, Int32 HResult)	Informational	PluginProvider	GetKCMUVKey	Error		
+Microsoft-Windows-WebAuthN	7252	0	PluginGetLockStatusInformational(UnicodeString PluginClsId, HexInt32 Error, Int32 HResult)	Informational	PluginProvider	PluginGetLockStatus	Error		
+Microsoft-Windows-WebAuthN	7253	0	PluginMakeCredentialInformational(UnicodeString PluginClsId, HexInt32 Error, Int32 HResult)	Informational	PluginProvider	PluginMakeCredential	Error		
+Microsoft-Windows-WebAuthN	7254	0	PluginGetAssertionInformational(UnicodeString PluginClsId, HexInt32 Error, Int32 HResult)	Informational	PluginProvider	PluginGetAssertion	Error		
+Microsoft-Windows-WebAuthN	7255	0	PluginCancelOperationInformational(UnicodeString PluginClsId, HexInt32 Error, Int32 HResult)	Informational	PluginProvider	PluginCancelOperation	Error		
 Microsoft-Windows-WebAuthN	8000	0	KeyRotationInformational(UInt32 EncryptionKeyType)	Informational	SyncedProvider	KeyRotation			
 Microsoft-Windows-WebAuthN	8001	0	SyncInformational8001(UInt32 OperationType, UInt32 PropertyType, UnicodeString BackupId, AnsiString CorrelationVector)	Informational	SyncedProvider	Sync			
 Microsoft-Windows-WebAuthN	8003	0	TrustedDeviceInformational8003(UInt32 DeviceID)	Informational	SyncedProvider	TrustedDevice			

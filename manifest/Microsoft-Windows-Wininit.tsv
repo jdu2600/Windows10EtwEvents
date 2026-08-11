@@ -17,7 +17,7 @@ Microsoft-Windows-Wininit	15	0	task_015()			task_0	Warning
 Microsoft-Windows-Wininit	16	0	task_016(UInt32 Level)			task_0	Error		
 Microsoft-Windows-Wininit	17	0	task_017(UInt32 Level)			task_0	Error		
 Microsoft-Windows-Wininit	18	0	task_018()			task_0	Informational		
-Microsoft-Windows-Wininit	19	0	task_019(Int32 HRESULT, Boolean NewLatchTimerNeeded, Boolean NewLatchTimerWaitingSystemUpdateCompletion, Boolean PreviousLatchTimerExistsButDisabled, Boolean PolicyFileExists)			task_0	Informational		
+Microsoft-Windows-Wininit	19	0	task_019(Int32 HRESULT, Boolean NewLatchTimerNeeded, Boolean NewLatchTimerWaitingSystemUpdateCompletion, Boolean PreviousLatchTimerExistsButDisabled, UInt64 LKeyPkgIdCounterValue, Boolean PolicyFileExists, UInt64 LKeyPkgId, UInt16 UnlatchedLKeyUnsealPolicyFileVersion, UInt64 UnlatchedLKeyUnsealPolicyPolicyVersion)			task_0	Informational		
 Microsoft-Windows-Wininit	20	0	task_020(UInt32 win32Error, FILETIME ftStartTime, UInt64 ullDelay, FILETIME ftDueTime, UInt64 PolicyVersion)			task_0	Informational		
 Microsoft-Windows-Wininit	21	0	task_021(Int32 HRESULT, Boolean PreviousTimerPresent, FILETIME ftStartTime, UInt64 ullDelay, UInt64 PolicyVersion, Boolean fAttemptedRecoveryIncrementCounterSucceeded, Boolean fPreviousLatchTimerInvalid, Boolean fPolicyFileExists)			task_0	Informational		
 Microsoft-Windows-Wininit	22	0	task_022(Int32 HRESULT, UInt64 Counter, UInt64 PendingLKeyPkgId, UInt64 PendingPolicyVersion, Boolean CounterIncremented)			task_0	Informational		
@@ -28,6 +28,7 @@ Microsoft-Windows-Wininit	26	0	task_026(Int32 HRESULT, Boolean BootStlEnforced, 
 Microsoft-Windows-Wininit	51	0	NtShutdownSystem()		PerfInstrumentation	NtShutdownSystem	Informational		
 Microsoft-Windows-Wininit	53	0	SentLogoffRequest(UInt32 SessionId, UInt32 Flags)		PerfInstrumentation	SentLogoffRequest	Informational		
 Microsoft-Windows-Wininit	55	0	ReceivedShutdownRequest(UInt32 SessionId, UInt32 IsRemote, UInt32 GracePeriod, UInt32 Flags, UInt32 Reason, UnicodeString Message)		PerfInstrumentation	ReceivedShutdownRequest	Informational		
+Microsoft-Windows-Wininit	100	0	task_0100()			task_0	Informational		
 Microsoft-Windows-Wininit	1001	0	task_0PCODE_64pcode_64()	opcode_64		task_0	Always		
 Microsoft-Windows-Wininit	1015	0	task_0PCODE_192pcode_192()	opcode_192		task_0	Always		
 Microsoft-Windows-Wininit	3002	0	task_0PCODE_192pcode_1923002()	opcode_192		task_0	Always		

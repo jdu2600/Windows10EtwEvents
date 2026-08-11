@@ -1,7 +1,10 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
 Microsoft-Windows-BitLocker-API	513	0	task_0(GUID ProtectorGUID, GUID VolumeGUID)			task_0	Informational		
+Microsoft-Windows-BitLocker-API	513	1	task_0_V1(GUID ProtectorGUID, GUID VolumeGUID, UnicodeString ProcessDetail)			task_0	Informational		
 Microsoft-Windows-BitLocker-API	514	0	task_0514(GUID ProtectorGUID, HexInt32 ErrorCode, GUID VolumeGUID)			task_0	Warning		
+Microsoft-Windows-BitLocker-API	514	1	task_0514_V1(GUID ProtectorGUID, HexInt32 ErrorCode, GUID VolumeGUID, UnicodeString ProcessDetail)			task_0	Warning		
 Microsoft-Windows-BitLocker-API	515	0	task_0515(GUID ProtectorGUID, GUID VolumeGUID)			task_0	Informational		
+Microsoft-Windows-BitLocker-API	515	1	task_0515_V1(GUID ProtectorGUID, GUID VolumeGUID, UnicodeString ProcessDetail)			task_0	Informational		
 Microsoft-Windows-BitLocker-API	516	0	task_0516(GUID ProtectorGUID, UnicodeString Thumbprint, GUID VolumeGUID)			task_0	Informational		
 Microsoft-Windows-BitLocker-API	517	0	task_0517(GUID ProtectorGUID, UnicodeString Thumbprint, GUID VolumeGUID)			task_0	Informational		
 Microsoft-Windows-BitLocker-API	518	0	task_0518(HexInt32 ErrorCode, UnicodeString Thumbprint, GUID VolumeGUID)			task_0	Warning		
@@ -19,15 +22,23 @@ Microsoft-Windows-BitLocker-API	529	0	task_0529(GUID VolumeGUID)			task_0	Error
 Microsoft-Windows-BitLocker-API	530	0	task_0530(GUID VolumeGUID)			task_0	Error		
 Microsoft-Windows-BitLocker-API	531	0	task_0531(GUID VolumeGUID)			task_0	Error		
 Microsoft-Windows-BitLocker-API	532	0	task_0532(GUID VolumeGUID)			task_0	Error		
+Microsoft-Windows-BitLocker-API	533	0	task_0533(UnicodeString VolumeMountPoint, GUID ProvisioningScenarioGuid, UnicodeString ServiceName, UnicodeString ProcessDetail)			task_0	Informational		
+Microsoft-Windows-BitLocker-API	534	0	task_0534(UnicodeString VolumeMountPoint, GUID ProvisioningScenarioGuid, Int32 ErrorCode, UnicodeString ServiceName, UnicodeString ProcessDetail)			task_0	Warning		
+Microsoft-Windows-BitLocker-API	535	0	task_0535(UnicodeString VolumeMountPoint, GUID ProvisioningScenarioGuid, UnicodeString ServiceName, UnicodeString ProcessDetail)			task_0	Informational		
+Microsoft-Windows-BitLocker-API	536	0	task_0536(UnicodeString VolumeMountPoint, GUID ProvisioningScenarioGuid, Int32 ErrorCode, UnicodeString ServiceName, UnicodeString ProcessDetail)			task_0	Warning		
 Microsoft-Windows-BitLocker-API	768	0	task_0768(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, UInt16 AlgorithmType)			task_0	Informational		
 Microsoft-Windows-BitLocker-API	769	0	task_0769(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, UInt16 AlgorithmType)			task_0	Informational		
 Microsoft-Windows-BitLocker-API	770	0	task_0770(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Warning		
 Microsoft-Windows-BitLocker-API	771	0	task_0771(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Warning		
 Microsoft-Windows-BitLocker-API	772	0	task_0772(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, UInt16 AlgorithmType)			task_0	Informational		
 Microsoft-Windows-BitLocker-API	773	0	task_0773(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Warning		
+Microsoft-Windows-BitLocker-API	773	1	task_0773_V1(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, UInt16 ClearKeyScenario, UnicodeString ServiceName, UnicodeString ProcessDetail)			task_0	Warning		
 Microsoft-Windows-BitLocker-API	774	0	task_0774(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Informational		
+Microsoft-Windows-BitLocker-API	774	1	task_0774_V1(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, GUID ProtectorGUID, UInt16 ClearKeyScenario, UnicodeString ServiceName, UnicodeString ProcessDetail)			task_0	Informational		
 Microsoft-Windows-BitLocker-API	775	0	task_0775(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, GUID ProtectorGUID, HexInt32 ProtectorType)			task_0	Informational		
+Microsoft-Windows-BitLocker-API	775	1	task_0775_V1(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, GUID ProtectorGUID, HexInt32 ProtectorType, UnicodeString ProcessDetail)			task_0	Informational		
 Microsoft-Windows-BitLocker-API	776	0	task_0776(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, GUID ProtectorGUID)			task_0	Informational		
+Microsoft-Windows-BitLocker-API	776	1	task_0776_V1(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, GUID ProtectorGUID, UnicodeString ProcessDetail)			task_0	Informational		
 Microsoft-Windows-BitLocker-API	777	0	BitLockerPINModificationTask(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, GUID ProtectorGUID)			BitLockerPINModificationTask	Informational		
 Microsoft-Windows-BitLocker-API	778	0	task_0778(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Warning		
 Microsoft-Windows-BitLocker-API	779	0	task_0779(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Warning		
@@ -35,8 +46,11 @@ Microsoft-Windows-BitLocker-API	780	0	task_0780(GUID IdentificationGUID, Unicode
 Microsoft-Windows-BitLocker-API	781	0	task_0781(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Informational		
 Microsoft-Windows-BitLocker-API	782	0	task_0782(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, GUID ProtectorGUID, HexInt32 ProtectorType)			task_0	Informational		
 Microsoft-Windows-BitLocker-API	783	0	task_0783(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, GUID ProtectorGUID)			task_0	Informational		
+Microsoft-Windows-BitLocker-API	783	1	task_0783_V1(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, GUID ProtectorGUID, UnicodeString ProcessDetail)			task_0	Informational		
 Microsoft-Windows-BitLocker-API	784	0	task_0784(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, GUID ProtectorGUID)			task_0	Informational		
+Microsoft-Windows-BitLocker-API	784	1	task_0784_V1(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, GUID ProtectorGUID, UnicodeString ProcessDetail)			task_0	Informational		
 Microsoft-Windows-BitLocker-API	785	0	task_0785(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, GUID ProtectorGUID)			task_0	Error		
+Microsoft-Windows-BitLocker-API	785	1	task_0785_V1(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, GUID ProtectorGUID, UnicodeString ProcessDetail)			task_0	Error		
 Microsoft-Windows-BitLocker-API	786	0	task_0786(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Informational		
 Microsoft-Windows-BitLocker-API	787	0	task_0787(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Warning		
 Microsoft-Windows-BitLocker-API	788	0	task_0788(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Informational		
@@ -145,7 +159,13 @@ Microsoft-Windows-BitLocker-API	890	0	task_0890(UInt32 CountTpmBindings, UInt64 
 Microsoft-Windows-BitLocker-API	891	0	task_0891(Int32 ErrorCode, UInt64 USN, UInt32 Scenario, UnicodeString VolumeMountPoint)			task_0	Informational		
 Microsoft-Windows-BitLocker-API	892	0	task_0892(UInt32 PCRBitmap, UInt32 PCRBitmapSource, UInt32 PCRValuesSize, Binary PCRValues, AnsiString FilteredLog, UInt16 TpmSrkAesStrengthInBits, UInt32 ExcludedPcrsBitmap)			task_0	Informational		
 Microsoft-Windows-BitLocker-API	893	0	task_0893(UInt32 PCRBitmap, UInt32 PCRBitmapSource, UInt32 PCRValuesSize, Binary PCRValues, AnsiString FilteredLog, UInt16 TpmSrkAesStrengthInBits, UInt32 ExcludedPcrsBitmap)			task_0	Informational		
+Microsoft-Windows-BitLocker-API	894	0	task_0894(HexInt32 PcrProfile, GUID ScenarioId, UnicodeString VolumeName)			task_0	Informational		
+Microsoft-Windows-BitLocker-API	895	0	task_0895(UInt32 ExistingPcrProfile, GUID ExistingScenarioId, UInt32 NewPcrProfile, GUID NewScenarioId, UnicodeString VolumeName, HexInt32 ErrorCode)			task_0	Error		
 Microsoft-Windows-BitLocker-API	896	0	task_0896(UInt32 ExcludedPcrsBitmap, UInt32 PcrProfile)			task_0	Warning		
+Microsoft-Windows-BitLocker-API	897	0	task_0897(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, GUID ProtectorGUID, UnicodeString BackendName)			task_0	Informational		
+Microsoft-Windows-BitLocker-API	898	0	task_0898(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, Int32 ErrorCode, UnicodeString BackendName)			task_0	Error		
+Microsoft-Windows-BitLocker-API	899	0	task_0899(UInt32 Pcr)			task_0	Warning		
+Microsoft-Windows-BitLocker-API	900	0	task_0900(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, Int32 ErrorCode)			task_0	Informational		
 Microsoft-Windows-BitLocker-API	4096	0	task_04096(Int32 ErrorCode)			task_0	Error		
 Microsoft-Windows-BitLocker-API	4097	0	task_0Start()	Start		task_0	Informational		
 Microsoft-Windows-BitLocker-API	4098	0	task_0Stop()	Stop		task_0	Informational		
@@ -197,3 +217,4 @@ Microsoft-Windows-BitLocker-API	4144	0	task_04144(GUID IdentificationGUID, Unico
 Microsoft-Windows-BitLocker-API	4145	0	task_04145(Int32 ErrorCode)			task_0	Error		
 Microsoft-Windows-BitLocker-API	4146	0	task_04146(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Informational		
 Microsoft-Windows-BitLocker-API	4147	0	task_04147(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Informational		
+Microsoft-Windows-BitLocker-API	4148	0	task_04148(UnicodeString VolumeMountPoint, GUID ProvisioningScenarioGuid, HexInt64 PrecheckInfoBitmask, UnicodeString ServiceName, UnicodeString ProcessDetail)			task_0	Informational		

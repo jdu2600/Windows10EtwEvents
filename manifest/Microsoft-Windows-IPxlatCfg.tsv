@@ -12,3 +12,10 @@ Microsoft-Windows-IPxlatCfg	1011	0	task_01011(AnsiString InfoString, UInt32 MTU)
 Microsoft-Windows-IPxlatCfg	1101	0	task_0Start(UInt64 InterfaceLuid, UInt32 Metric, Binary RemotePrefix, UInt32 RemotePrefixLength, Binary LocalPrefix, UInt32 LocalPrefixLength)	Start		task_0	Informational		
 Microsoft-Windows-IPxlatCfg	1102	0	task_0Stop(UInt64 InterfaceLuid, UInt32 Metric, Binary RemotePrefix, UInt32 RemotePrefixLength, Binary LocalPrefix, UInt32 LocalPrefixLength)	Stop		task_0	Informational		
 Microsoft-Windows-IPxlatCfg	1103	0	task_01103(UInt64 InterfaceLuid, Binary Prefix, UInt32 PrefixLength)			task_0	Informational		
+Microsoft-Windows-IPxlatCfg	1104	0	task_01104(UnicodeString Message)			task_0	Informational		
+Microsoft-Windows-IPxlatCfg	1105	0	task_01105(UnicodeString ErrorMessage, UInt32 ErrorCode)			task_0	Error		
+Microsoft-Windows-IPxlatCfg	1106	0	task_0Start1106(UInt32 TriggerSource, UInt64 InterfaceLuid, UInt32 Metric, UInt32 RemotePrefixLengthBytes, Binary RemotePrefix, UInt32 RemotePrefixLengthBits, UInt32 LocalPrefixLengthBytes, Binary LocalPrefix, UInt32 LocalPrefixLengthBits)	Start		task_0	Informational		
+Microsoft-Windows-IPxlatCfg	1107	0	task_0Stop1107(UInt32 TriggerSource, UInt64 InterfaceLuid, UInt32 Metric, UInt32 RemotePrefixLengthBytes, Binary RemotePrefix, UInt32 RemotePrefixLengthBits, UInt32 LocalPrefixLengthBytes, Binary LocalPrefix, UInt32 LocalPrefixLengthBits)	Stop		task_0	Informational		
+Microsoft-Windows-IPxlatCfg	1108	0	task_01108(UInt64 InterfaceLuid, UInt32 RemotePrefixLengthBytes, Binary RemotePrefix, UInt32 RemotePrefixLengthBits, UInt32 RemotePrefixLifetimeSeconds, UInt32 RemotePrefixOrigin)			task_0	Informational		
+Microsoft-Windows-IPxlatCfg	1109	0	task_0Start1109(UInt64 InterfaceLuid, UInt32 RemotePrefixLengthBytes, Binary RemotePrefix, UInt32 RemotePrefixLengthBits, UInt32 SyntheticIPv6AddressLengthBytes, Binary SyntheticIPv6Address, UInt32 SyntheticIPv4Address)	Start		task_0	Informational		
+Microsoft-Windows-IPxlatCfg	1110	0	task_0Stop1110(UInt64 InterfaceLuid)	Stop		task_0	Informational		

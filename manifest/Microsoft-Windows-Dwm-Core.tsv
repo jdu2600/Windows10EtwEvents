@@ -128,7 +128,7 @@ Microsoft-Windows-Dwm-Core	217	0	OVERLAY_CHECKOCCLUSION(UInt64 hCompSurf, Int32 
 Microsoft-Windows-Dwm-Core	218	0	OVERLAY_CHECKSUPPORTStart(Int32 fHardwareCheck, Int32 NumPlanes)	Start	Overlays	OVERLAY_CHECKSUPPORT	Verbose		
 Microsoft-Windows-Dwm-Core	219	0	OVERLAY_CHECKSUPPORT(UInt64 hResource, UInt32 Flags, Int32 SrcRectLeft, Int32 SrcRectTop, Int32 SrcRectRight, Int32 SrcRectBottom, Int32 DstRectLeft, Int32 DstRectTop, Int32 DstRectRight, Int32 DstRectBottom, Int32 ClipRectLeft, Int32 ClipRectTop, Int32 ClipRectRight, Int32 ClipRectBottom, UInt32 Rotation, UInt32 Blend, UInt32 ColorSpace)		Overlays	OVERLAY_CHECKSUPPORT	Verbose		
 Microsoft-Windows-Dwm-Core	220	0	OVERLAY_CHECKSUPPORTStop(Int32 fSupported)	Stop	Overlays	OVERLAY_CHECKSUPPORT	Verbose		
-Microsoft-Windows-Dwm-Core	221	0	OVERLAY_CANDIDATECOLLECTIONStart(Int32 fOverlayEnabled, Int32 fHardwareCursorEnabled)	Start	Overlays	OVERLAY_CANDIDATECOLLECTION	Verbose		
+Microsoft-Windows-Dwm-Core	221	2	OVERLAY_CANDIDATECOLLECTIONStart_V2(Int32 updateMPOConfig, Int32 addedCursorInCurrentFrame)	Start	Overlays	OVERLAY_CANDIDATECOLLECTION	Verbose		
 Microsoft-Windows-Dwm-Core	222	0	OVERLAY_CANDIDATECOLLECTIONStop(Int32 fNeedFullRender)	Stop	Overlays	OVERLAY_CANDIDATECOLLECTION	Verbose		
 Microsoft-Windows-Dwm-Core	223	0	OVERLAY_PRESENTStart(Int32 cPlanes)	Start	Overlays	OVERLAY_PRESENT	Verbose		
 Microsoft-Windows-Dwm-Core	224	0	OVERLAY_PRESENT(UInt64 hResource, UInt32 Enabled, UInt32 PlaneIndex, UInt32 Flags, Int32 SrcRectLeft, Int32 SrcRectTop, Int32 SrcRectRight, Int32 SrcRectBottom, Int32 DstRectLeft, Int32 DstRectTop, Int32 DstRectRight, Int32 DstRectBottom, Int32 ClipRectLeft, Int32 ClipRectTop, Int32 ClipRectRight, Int32 ClipRectBottom, UInt32 Rotation, UInt32 Blend, UInt32 ColorSpace)		Overlays	OVERLAY_PRESENT	Verbose		
@@ -204,13 +204,6 @@ Microsoft-Windows-Dwm-Core	333	0	ETWGUID_VISUAL_RENDERCONTENT(Pointer Visual, Fl
 Microsoft-Windows-Dwm-Core	334	0	ETWGUID_DIRTY_ADDRECT(Pointer Visual, Int32 Z, Float left, Float top, Float right, Float bottom)		FrameVisualization	ETWGUID_DIRTY_ADDRECT	Verbose		
 Microsoft-Windows-Dwm-Core	335	0	ETWGUID_VISUAL_RENDERCONTENT335()		FrameVisualizationExtra	ETWGUID_VISUAL_RENDERCONTENT	Verbose		
 Microsoft-Windows-Dwm-Core	336	0	ADVANCED_DIRECTFLIP_NORESTORE_RECORDCANDIDATE(UInt64 surfaceLuid, Int32 OverdrawRectangleCount, Int32 OverdrawBoundsLeft, Int32 OverdrawBoundsTop, Int32 OverdrawBoundsRight, Int32 OverdrawBoundsBottom)		Overlays	ADVANCED_DIRECTFLIP_NORESTORE_RECORDCANDIDATE	Verbose		
-Microsoft-Windows-Dwm-Core	342	0	HOLOGRAPHICCLIENT_TEXTUREUPDATECOUNT(UInt64 TotalUpdateCount, UInt64 SuccessfulUpdateCount, UInt64 SuccessfulTotalGap, UInt64 PendingCount)		DwmHolographic	HOLOGRAPHICCLIENT_TEXTUREUPDATECOUNT	Informational		
-Microsoft-Windows-Dwm-Core	343	0	HOLOGRAPHICCLIENT_TEXTUREUPDATEWAITFAILED(UInt64 TotalUpdateCount, UInt64 SuccessCount, UInt64 PendingCount, UInt32 WaitResult)		DwmHolographic	HOLOGRAPHICCLIENT_TEXTUREUPDATEWAITFAILED	Informational		
-Microsoft-Windows-Dwm-Core	344	0	HOLOGRAPHICINTEROPTARGET_RENDER(UInt64 TotalRenderCount, UInt64 TotalPostCount)		DwmHolographic	HOLOGRAPHICINTEROPTARGET_RENDER	Informational		
-Microsoft-Windows-Dwm-Core	345	0	HOLOGRAPHICINTEROPTARGET_WAITONINCOMINGFAILED(UInt64 TotalRenderCount, UInt64 TotalPostCount, UInt64 WaitIndex)		DwmHolographic	HOLOGRAPHICINTEROPTARGET_WAITONINCOMINGFAILED	Informational		
-Microsoft-Windows-Dwm-Core	346	0	HOLOGRAPHICINTEROPTARGET_SYNCPOSTED()		DwmHolographic	HOLOGRAPHICINTEROPTARGET_SYNCPOSTED	Informational		
-Microsoft-Windows-Dwm-Core	347	0	HOLOGRAPHICINTEROPTARGET_RENDERCOMPLETE(UInt64 TotalRenderCount, UInt64 TotalPosts, UInt64 RenderPostGap, UInt64 PendingImageCount)		DwmHolographic	HOLOGRAPHICINTEROPTARGET_RENDERCOMPLETE	Informational		
-Microsoft-Windows-Dwm-Core	348	0	HOLOGRAPHICINTEROPTARGET_TIMEINQUEUE(Float TimeInQueue)		DwmHolographic	HOLOGRAPHICINTEROPTARGET_TIMEINQUEUE	Informational		
 Microsoft-Windows-Dwm-Core	349	0	SHADERS_EFFECT_COMPILEStart(Pointer pCompilationTask)	Start	Composition	SHADERS_EFFECT_COMPILE	Verbose		
 Microsoft-Windows-Dwm-Core	350	0	SHADERS_EFFECT_COMPILEStop(Pointer pCompilationTask)	Stop	Composition	SHADERS_EFFECT_COMPILE	Verbose		
 Microsoft-Windows-Dwm-Core	351	0	SHADERS_D3DSHADER_LINKStart()	Start	Composition	SHADERS_D3DSHADER_LINK	Verbose		

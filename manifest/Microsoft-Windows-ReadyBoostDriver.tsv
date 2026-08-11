@@ -30,3 +30,8 @@ Microsoft-Windows-ReadyBoostDriver	30	1	ReadyBootCacheOp_V1(Pointer Key, UInt32 
 Microsoft-Windows-ReadyBoostDriver	31	1	HbdrvIrpTag_V1(UInt64 VolumeOffset, UInt32 Length, UInt8 Read, UInt16 Priority, UInt8 PartialBmpHit)		StoreDiag	HbdrvIrpTag	Informational		
 Microsoft-Windows-ReadyBoostDriver	32	0	SyncCallStart(Pointer Key)	Start	ReadyBoot	SyncCall	Informational		
 Microsoft-Windows-ReadyBoostDriver	33	0	SyncCallStop(Pointer Key, UInt32 Flags)	Stop	ReadyBoot	SyncCall	Informational		
+Microsoft-Windows-ReadyBoostDriver	34	0	StoreCompactionCheck(Pointer DataMgr, UInt32 CompactionState, UInt32 IdleState, UInt32 Result, UInt32 EmptySpace, UInt32 EmptyLimit, UInt32 UsedSpace, UInt32 RegionsInUse, HexInt32 EligiblelPriorityBitmap)		StoreCompaction	StoreCompactionCheck	Informational		
+Microsoft-Windows-ReadyBoostDriver	35	0	StoreCompactionQueue(Pointer DataMgr, UInt32 Action)		StoreCompaction	StoreCompactionQueue	Informational		
+Microsoft-Windows-ReadyBoostDriver	36	0	StoreCompactionStart(Pointer DataMgr, Boolean EmergencyCompaction)	Start	StoreCompaction	StoreCompaction	Informational		
+Microsoft-Windows-ReadyBoostDriver	37	0	StoreCompactionStop(Pointer DataMgr, Boolean EmergencyCompaction, HexInt32 Status)	Stop	StoreCompaction	StoreCompaction	Informational		
+Microsoft-Windows-ReadyBoostDriver	38	0	StoreCompactRegions(Pointer DataMgr, UInt32 SourceRegionIndex, UInt32 TargetRegionIndex, UInt32 Priority, UInt32 PagesMoved, Boolean SwitchedTargetRegion, HexInt32 Status)		StoreCompaction	StoreCompactRegions	Informational		

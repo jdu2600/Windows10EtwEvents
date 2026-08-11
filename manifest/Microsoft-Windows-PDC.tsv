@@ -22,7 +22,9 @@ Microsoft-Windows-PDC	20	0	ResiliencyMessage(Pointer Message, UInt32 Transaction
 Microsoft-Windows-PDC	21	0	ResiliencyReceive(Pointer Client, UInt32 SendReceive)		clients	ResiliencyReceive	Always		
 Microsoft-Windows-PDC	22	0	ResiliencySend(Pointer Client, UInt32 SendReceive)		clients	ResiliencySend	Always		
 Microsoft-Windows-PDC	23	0	ResiliencyReference(Pointer ActivatorToken, Pointer Client, UInt32 ReferenceDereference)		clients CsDiag	ResiliencyReference	Always		
+Microsoft-Windows-PDC	23	1	ResiliencyReference_V1(Pointer ActivatorToken, Pointer Client, UInt32 ReferenceDereference, UInt64 RequestedExecutionGroups, UInt64 EnabledExecutionGroups, UInt32 Status)		clients CsDiag	ResiliencyReference	Always		
 Microsoft-Windows-PDC	24	0	ResiliencyDereference(Pointer ActivatorToken, Pointer Client, UInt32 ReferenceDereference)		clients CsDiag	ResiliencyDereference	Always		
+Microsoft-Windows-PDC	24	1	ResiliencyDereference_V1(Pointer ActivatorToken, Pointer Client, UInt32 ReferenceDereference, UInt64 RequestedExecutionGroups, UInt64 EnabledExecutionGroups, UInt32 Status)		clients CsDiag	ResiliencyDereference	Always		
 Microsoft-Windows-PDC	25	0	CsEnterPhase(UInt32 Phase, UInt32 Status)		CsDiag CsVerbose	CsEnterPhase	Always		
 Microsoft-Windows-PDC	26	0	CsExitPhase(UInt32 Phase, UInt32 Status)		CsDiag CsVerbose	CsExitPhase	Always		
 Microsoft-Windows-PDC	27	0	CsDisplayState(UInt32 On)		Cs	CsDisplayState	Always		
@@ -75,6 +77,7 @@ Microsoft-Windows-PDC	70	0	PdcScreenOffDisabled()		CsVerbose	PdcScreenOffDisable
 Microsoft-Windows-PDC	71	0	ActivatorRegistrationRundown(Pointer Client, UInt32 PdcId, UInt32 ResiliencyClientCount, UInt16 ResiliencyContext, UInt32 ClientNameLength, UnicodeString ClientName)		activators CsDiag	ActivatorRegistrationRundown	Always		
 Microsoft-Windows-PDC	72	0	NotificationRegistrationRundown(Pointer Client, UInt32 PdcId, UInt32 Type, UInt32 ClientNameLength, UnicodeString ClientName)		notifications CsDiag	NotificationRegistrationRundown	Always		
 Microsoft-Windows-PDC	73	0	ResiliencyClientRegistrationRundown(Pointer Client, UInt64 ClientReferences, UInt32 CurrentState, UInt32 Type)		clients CsDiag	ResiliencyClientRegistrationRundown	Always		
+Microsoft-Windows-PDC	73	1	ResiliencyClientRegistrationRundown_V1(Pointer Client, UInt64 ClientReferences, UInt32 CurrentState, UInt32 Type, UInt64 EnabledExecutionGroups, UInt64 PendingExecutionGroups, UInt32 RequestedExecutionGroupCountsLength, UInt32 RequestedExecutionGroupCounts)		clients CsDiag	ResiliencyClientRegistrationRundown	Always		
 Microsoft-Windows-PDC	74	0	CsFilterInput()		CsVerbose	CsFilterInput	Always		
 Microsoft-Windows-PDC	75	0	TaskRegistration(Pointer Client, UInt32 PdcId, UInt32 Status, UInt32 ClientNameLength, UnicodeString ClientName)		tasks	TaskRegistration	Always		
 Microsoft-Windows-PDC	76	0	TaskDeregistration(Pointer Client, UInt32 PdcId, UInt32 Status)		tasks	TaskDeregistration	Always		
@@ -140,3 +143,9 @@ Microsoft-Windows-PDC	131	0	GroupEnable(UInt32 GroupId, Boolean Enable, Boolean 
 Microsoft-Windows-PDC	132	0	GroupRequest(UInt32 GroupId, Int32 RequestCount, Boolean Updated)		PdcGroup	GroupRequest	Informational		
 Microsoft-Windows-PDC	133	0	ClientPolicyRundown(UInt32 PolicyNameLength, UnicodeString PolicyName, Boolean PolicyActive, UInt32 ClientRevocationCount, UInt8 ClientRevocationPolicy)		ClientPolicy	ClientPolicyRundown	Informational		
 Microsoft-Windows-PDC	134	0	ClientPolicyRuleStatusChange(UInt32 PolicyNameLength, UnicodeString PolicyName, Boolean PolicyActive)		ClientPolicy	ClientPolicyRuleStatusChange	Informational		
+Microsoft-Windows-PDC	135	0	ResiliencyClientCallback(Pointer Client, UInt32 Type, UInt32 TransactionId, UInt64 NextExecutionGroups, UInt64 PreviousExecutionGroups, UInt64 NextExecutionScenarios, UInt64 PreviousExecutionScenarios, UInt64 Flags)		clients CsDiag	ResiliencyClientCallback	Informational		
+Microsoft-Windows-PDC	136	0	ResiliencyClientCallbackComplete(Pointer Client, UInt32 Type, UInt32 TransactionId, UInt64 EnabledExecutionGroups, UInt64 PendingExecutionGroups, UInt64 EnabledExecutionScenarios, UInt64 PendingExecutionScenarios)		clients CsDiag	ResiliencyClientCallbackComplete	Informational		
+Microsoft-Windows-PDC	137	0	ResiliencyScenarioBudgetChange(UInt32 ResiliencyScenario, UInt64 ScenarioBudget, UInt64 CurrentTime)		CsDiag ClientPolicy	ResiliencyScenarioBudgetChange	Informational		
+Microsoft-Windows-PDC	138	0	ResiliencyScenarioMaskChange(UInt64 NewScenarioMask)		CsDiag ClientPolicy	ResiliencyScenarioMaskChange	Informational		
+Microsoft-Windows-PDC	139	0	ResiliencyScenarioActivationCountChange(UInt32 ResiliencyScenario, Boolean Activation, UInt32 ActivationCount)		CsDiag ClientPolicy	ResiliencyScenarioActivationCountChange	Informational		
+Microsoft-Windows-PDC	140	0	ResiliencyScenarioResourceChange(UInt64 NewResourceMask)		CsDiag ClientPolicy	ResiliencyScenarioResourceChange	Informational		

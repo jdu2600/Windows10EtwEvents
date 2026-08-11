@@ -27,3 +27,8 @@ Microsoft-Windows-Privacy-Auditing	1024	0	PackageDeprovisioned(UnicodeString Use
 Microsoft-Windows-Privacy-Auditing	1025	0	InvalidConsent(UnicodeString UserSid, UnicodeString AppPackageFamilyName, UnicodeString Capability, UnicodeString Justification)			InvalidConsent	Informational		
 Microsoft-Windows-Privacy-Auditing	1026	0	SettingsDatabaseRecovery(HexInt32 RuntimeVersion, UnicodeString ContextString, HexInt32 HResult)			SettingsDatabaseRecovery	Warning		
 Microsoft-Windows-Privacy-Auditing	1027	0	SettingsDatabaseRecovery1027(HexInt32 RuntimeVersion, UnicodeString ContextString, HexInt32 HResult)			SettingsDatabaseRecovery	Error		
+Microsoft-Windows-Privacy-Auditing	1028	0	SettingsDatabaseMajorVersionMismatch(HexInt32 RuntimeMajorVersion, HexInt32 DatabaseMajorVersion)			SettingsDatabaseMajorVersionMismatch	Error		
+Microsoft-Windows-Privacy-Auditing	1029	0	SettingsDatabaseCreation(HexInt32 DatabaseVersion, HexInt32 HResult)			SettingsDatabaseCreation	Informational		
+Microsoft-Windows-Privacy-Auditing	1030	0	SettingsDatabaseCreation1030(HexInt32 DatabaseVersion, HexInt32 HResult)			SettingsDatabaseCreation	Error		
+Microsoft-Windows-Privacy-Auditing	1031	0	SettingsDatabaseMigration(HexInt32 OldDatabaseVersion, HexInt32 NewDatabaseVersion, HexInt32 HResult)			SettingsDatabaseMigration	Informational		
+Microsoft-Windows-Privacy-Auditing	1032	0	SettingsDatabaseMigration1032(HexInt32 OldDatabaseVersion, HexInt32 NewDatabaseVersion, HexInt32 HResult)			SettingsDatabaseMigration	Error		

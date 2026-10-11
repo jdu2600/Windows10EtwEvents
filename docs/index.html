@@ -1,0 +1,616 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Windows ETW Events</title>
+<meta name="description" content="Searchable browser for every manifest-based and MOF-based ETW event in Windows.">
+<style>
+  :root {
+    --bg: #ffffff; --bg-alt: #f6f8fa; --bg-hover: #eef2f6; --border: #d8dee4;
+    --text: #1f2328; --muted: #656d76; --accent: #0969da; --accent-bg: #ddf4ff;
+    --mark: #fff8c5;
+    --lvl-critical: #a40e26; --lvl-error: #cf222e; --lvl-warning: #9a6700;
+    --lvl-info: #1f2328; --lvl-verbose: #656d76;
+    --mono: ui-monospace, SFMono-Regular, "Cascadia Mono", Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0d1117; --bg-alt: #161b22; --bg-hover: #1c2330; --border: #30363d;
+      --text: #e6edf3; --muted: #8d96a0; --accent: #4493f8; --accent-bg: #102a4c;
+      --mark: #4d3d00;
+      --lvl-critical: #ff7b72; --lvl-error: #f85149; --lvl-warning: #d29922;
+      --lvl-info: #e6edf3; --lvl-verbose: #8d96a0;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; }
+  body {
+    background: var(--bg); color: var(--text);
+    font: 14px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    display: flex; flex-direction: column;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  header {
+    display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 16px;
+    padding: 12px 16px; border-bottom: 1px solid var(--border); background: var(--bg-alt);
+  }
+  header h1 { font-size: 18px; margin: 0; }
+  #winver { width: auto; max-width: 100%; font-weight: 600; align-self: center; }
+  .loading { opacity: .5; pointer-events: none; }
+  header .meta { color: var(--muted); font-size: 13px; }
+  header .links { margin-left: auto; font-size: 13px; }
+  .layout { flex: 1; display: flex; min-height: 0; min-width: 0; }
+  aside {
+    width: 320px; flex-shrink: 0; display: flex; flex-direction: column;
+    border-right: 1px solid var(--border); background: var(--bg-alt); min-height: 0;
+  }
+  aside .controls { padding: 12px; display: flex; flex-direction: column; gap: 8px; border-bottom: 1px solid var(--border); }
+  input[type=search], select {
+    width: 100%; padding: 6px 8px; font: inherit; color: var(--text);
+    background: var(--bg); border: 1px solid var(--border); border-radius: 6px;
+  }
+  input[type=search]:focus, select:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+  .tabs { display: flex; gap: 4px; }
+  .tabs button {
+    flex: 1; padding: 4px 6px; font: inherit; font-size: 12px; cursor: pointer;
+    color: var(--muted); background: transparent; border: 1px solid var(--border); border-radius: 6px;
+  }
+  .tabs button[aria-pressed=true] { color: var(--accent); background: var(--accent-bg); border-color: var(--accent); }
+  #providerList { list-style: none; margin: 0; padding: 4px 0; overflow-y: auto; flex: 1; }
+  #providerList li {
+    display: flex; gap: 8px; padding: 3px 12px; cursor: pointer; font-size: 13px;
+    border-left: 3px solid transparent;
+  }
+  #providerList li:hover { background: var(--bg-hover); }
+  #providerList li.selected { background: var(--accent-bg); border-left-color: var(--accent); }
+  #providerList .name { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  #providerList .count { color: var(--muted); font-variant-numeric: tabular-nums; }
+  .badge {
+    display: inline-block; padding: 0 6px; border-radius: 10px; font-size: 11px;
+    border: 1px solid var(--border); color: var(--muted); white-space: nowrap;
+  }
+  main { flex: 1; display: flex; flex-direction: column; min-width: 0; min-height: 0; }
+  .toolbar {
+    display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+    padding: 12px 16px; border-bottom: 1px solid var(--border);
+  }
+  .toolbar input[type=search] { flex: 1 1 280px; width: auto; }
+  .toolbar select { width: auto; flex: 0 1 200px; min-width: 0; max-width: 100%; }
+  .checks { flex-basis: 100%; display: flex; flex-wrap: wrap; gap: 4px 20px; font-size: 13px; }
+  .checks label { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; user-select: none; }
+  .checks input { margin: 0; accent-color: var(--accent); }
+  .results.compact .c-ver, .results.compact .c-op, .results.compact .c-task { display: none; }
+  .results.nokw .c-lvl, .results.nokw .c-kw { display: none; }
+  .since {
+    display: inline-block; margin-left: 6px; padding: 0 5px; border: 1px solid var(--border); border-radius: 8px;
+    font: 10.5px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-weight: normal;
+    color: var(--muted); white-space: nowrap; vertical-align: 1px; cursor: help;
+  }
+  .since.hit { background: var(--mark); color: var(--text); border-color: transparent; }
+  /* "when added" tags need the wrapped, one-field-per-line layout */
+  .results.noblame .since, .results.nowrap .since { display: none; }
+  .checks label.disabled { opacity: .5; cursor: default; }
+  .results.nowrap td { white-space: nowrap; overflow-wrap: normal; }
+  .results.nowrap td.prov { max-width: none; }
+  .results.nowrap .sig .fields { display: inline; padding-left: 0; }
+  .results.nowrap .sig br { display: none; }
+  .results.nowrap .kw { flex-wrap: nowrap; }
+  .summary { padding: 8px 16px; color: var(--muted); font-size: 13px; display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: baseline; }
+  .summary strong { color: var(--text); }
+  .summary button, .linklike {
+    font: inherit; font-size: 12px; color: var(--accent); background: none; border: none; padding: 0; cursor: pointer;
+  }
+  .results { flex: 1; overflow: auto; min-height: 0; }
+  table { border-collapse: collapse; width: 100%; }
+  th {
+    position: sticky; top: 0; background: var(--bg-alt); text-align: left; font-weight: 600;
+    font-size: 12px; color: var(--muted); padding: 6px 10px; border-bottom: 1px solid var(--border); white-space: nowrap;
+  }
+  td { padding: 6px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  tbody tr:hover { background: var(--bg-hover); }
+  td.num { font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
+  td.prov { max-width: 240px; min-width: 11em; overflow-wrap: anywhere; font-size: 13px; }
+  td.c-op { min-width: 7em; }
+  td.c-task { min-width: 10em; }
+  td.prov a { color: var(--text); }
+  td.prov a:hover { color: var(--accent); }
+  .sig { font-family: var(--mono); font-size: 12.5px; overflow-wrap: anywhere; }
+  .sig .ev { font-weight: 600; }
+  .sig .fields { display: block; color: var(--muted); padding-left: 1.5em; }
+  .sig .fields .ty { opacity: .75; }
+  .sig .fields .fn { color: var(--text); }
+  .sig .fields .f { white-space: nowrap; }
+  .kw { display: flex; flex-wrap: wrap; gap: 3px; }
+  .kw .badge { cursor: pointer; }
+  .kw .badge:hover { border-color: var(--accent); color: var(--accent); }
+  .lvl-Critical { color: var(--lvl-critical); font-weight: 600; }
+  .lvl-Error { color: var(--lvl-error); }
+  .lvl-Warning { color: var(--lvl-warning); }
+  .lvl-Verbose { color: var(--lvl-verbose); }
+  td.small { font-size: 13px; overflow-wrap: anywhere; }
+  td.lvl { white-space: nowrap; }
+  td.desc { font-size: 13px; color: var(--muted); }
+  mark { background: var(--mark); color: inherit; border-radius: 2px; }
+  .more { padding: 16px; text-align: center; }
+  .more button {
+    font: inherit; padding: 6px 16px; cursor: pointer; color: var(--text);
+    background: var(--bg-alt); border: 1px solid var(--border); border-radius: 6px;
+  }
+  .empty { padding: 32px 16px; color: var(--muted); text-align: center; }
+  .provider-head { padding: 12px 16px 0; }
+  .provider-head h2 { margin: 0; font-size: 16px; overflow-wrap: anywhere; }
+  .provider-head .meta { color: var(--muted); font-size: 13px; display: flex; flex-wrap: wrap; gap: 4px 12px; margin-top: 2px; }
+  #menuToggle { display: none; }
+  @media (max-width: 760px) {
+    .layout { flex-direction: column; }
+    aside { width: 100%; max-height: 45vh; border-right: none; border-bottom: 1px solid var(--border); }
+    aside.collapsed #providerList, aside.collapsed .controls > :not(#menuToggle) { display: none; }
+    #menuToggle { display: block; }
+    #menuToggle {
+      font: inherit; padding: 6px; cursor: pointer; color: var(--text);
+      background: var(--bg); border: 1px solid var(--border); border-radius: 6px;
+    }
+    header .links { margin-left: 0; }
+    header .meta { overflow-wrap: anywhere; }
+    .toolbar select { flex: 1 1 140px; }
+    /* stack each event as a card */
+    thead { display: none; }
+    table, tbody, tr, td { display: block; width: 100%; }
+    tr { padding: 8px 16px; border-bottom: 1px solid var(--border); }
+    td { border: none; padding: 2px 0; text-align: left !important; max-width: none !important; }
+    td[data-label]:not(:empty)::before {
+      content: attr(data-label) ': '; color: var(--muted); font-size: 12px;
+    }
+    td:empty, td[data-label]:has(> .kw:empty) { display: none; }
+    td.prov { font-weight: 600; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Windows ETW Events</h1>
+  <select id="winver" aria-label="Windows version"></select>
+  <span class="meta" id="version">Loading…</span>
+  <span class="links"><a href="https://github.com/jdu2600/Windows10EtwEvents">GitHub repository</a> · by <a href="https://jdu2600.github.io" rel="author">jdu2600</a></span>
+</header>
+<div class="layout">
+  <aside id="sidebar" class="collapsed">
+    <div class="controls">
+      <button id="menuToggle" type="button">Providers ▾</button>
+      <input type="search" id="providerFilter" placeholder="Filter providers…" aria-label="Filter providers">
+      <div class="tabs" role="group" aria-label="Provider type">
+        <button type="button" data-kind="" aria-pressed="true">All</button>
+        <button type="button" data-kind="manifest" aria-pressed="false">Manifest</button>
+        <button type="button" data-kind="mof" aria-pressed="false">MOF</button>
+        <button type="button" data-kind="unknown" aria-pressed="false">Unknown</button>
+      </div>
+    </div>
+    <ul id="providerList"></ul>
+  </aside>
+  <main>
+    <div class="toolbar">
+      <input type="search" id="q" placeholder="Search events, fields, tasks, keywords… (e.g. ProcessStart ImageName)" aria-label="Search events">
+      <select id="level" aria-label="Level"><option value="">Any level</option></select>
+      <select id="keyword" aria-label="Keyword"><option value="">Any keyword</option></select>
+      <select id="added" aria-label="Added in"><option value="">Added in any version</option></select>
+      <div class="checks">
+        <label><input type="checkbox" id="latestOnly" checked> Latest versions only</label>
+        <label><input type="checkbox" id="compact"> Hide Version, Opcode &amp; Task</label>
+        <label><input type="checkbox" id="hideKw"> Hide Level &amp; Keywords</label>
+        <label><input type="checkbox" id="wrap" checked> Wrap lines</label>
+        <label id="blameLabel"><input type="checkbox" id="blame" checked> Show history</label>
+      </div>
+    </div>
+    <div id="providerHead" class="provider-head" hidden></div>
+    <div class="summary" id="summary"></div>
+    <div class="results" id="results"></div>
+  </main>
+</div>
+<script>
+'use strict';
+const REPO = 'https://github.com/jdu2600/Windows10EtwEvents/blob/';
+const PAGE = 200;
+const KIND_LABEL = { manifest: 'Manifest', mof: 'MOF', unknown: 'Unknown' };
+
+let DATA, EVENTS = [], VERSIONS = [], LATEST_COUNT = [];
+const CACHE = new Map();
+const state = {
+  ver: '', provider: null, pendingProvider: null, kind: '', q: '', level: '', keyword: '', added: '', pfilter: '',
+  old: false, compact: false, nokw: false, nowrap: false, noblame: false,
+};
+let shown = 0, matches = [], view = null, HL = null;
+
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const fmt = n => n.toLocaleString('en-US');
+
+// --- state <-> URL hash ---------------------------------------------------
+// providers are identified by name, plus kind when a manifest and a MOF provider share the name
+function findProvider(want) {
+  if (!want) return null;
+  let i = DATA.providers.findIndex(p => p[0] === want.name && (!want.kind || p[1] === want.kind));
+  if (i < 0) i = DATA.providers.findIndex(p => p[0] === want.name);
+  return i < 0 ? null : i;
+}
+function providerRef(i) {
+  const [name, kind] = DATA.providers[i];
+  return { name, kind };
+}
+function readHash() {
+  const h = new URLSearchParams(location.hash.slice(1));
+  state.pendingProvider = h.get('provider') ? { name: h.get('provider'), kind: h.get('pkind') } : null;
+  state.ver = h.get('ver') || '';
+  state.kind = h.get('kind') || '';
+  state.q = h.get('q') || '';
+  state.level = h.get('level') || '';
+  state.keyword = h.get('keyword') || '';
+  state.added = h.get('added') || '';
+  state.old = h.get('old') === '1';
+  state.compact = h.get('compact') === '1';
+  state.nokw = h.get('nokw') === '1';
+  state.nowrap = h.get('nowrap') === '1';
+  state.noblame = h.get('noblame') === '1';
+}
+function hashString(overrides = {}) {
+  const s = { ...state, ...overrides };
+  const h = new URLSearchParams();
+  if (s.ver && VERSIONS.length && s.ver !== VERSIONS[0].id) h.set('ver', s.ver);
+  if (s.provider !== null && DATA) {
+    const { name, kind } = providerRef(s.provider);
+    h.set('provider', name);
+    if (DATA.providers.some((p, i) => i !== s.provider && p[0] === name)) h.set('pkind', kind);
+  }
+  if (s.kind) h.set('kind', s.kind);
+  if (s.q) h.set('q', s.q);
+  if (s.level) h.set('level', s.level);
+  if (s.keyword) h.set('keyword', s.keyword);
+  if (s.added) h.set('added', s.added);
+  if (s.old) h.set('old', '1');
+  if (s.compact) h.set('compact', '1');
+  if (s.nokw) h.set('nokw', '1');
+  if (s.nowrap) h.set('nowrap', '1');
+  if (s.noblame) h.set('noblame', '1');
+  return h.toString();
+}
+function writeHash() {
+  const s = hashString();
+  history.replaceState(null, '', s ? '#' + s : location.pathname + location.search);
+}
+
+// --- data ------------------------------------------------------------------
+function prepare(DATA) {
+  const EVENTS = [];
+  for (const r of DATA.manifest) {
+    const [p, id, ver, sig, opcode, keywords, task, level, channel, message, since, fsince] = r;
+    EVENTS.push({ p, id, ver, sig, opcode, keywords: keywords ? keywords.split(' ') : [], task, level, channel, message, since, fsince, kind: 'manifest' });
+  }
+  for (const r of DATA.mof) {
+    const [p, id, ver, sig, opcode, category, description, since, fsince] = r;
+    EVENTS.push({ p, id, ver, sig, opcode, keywords: [], task: description, level: '', category, since, fsince, kind: 'mof' });
+  }
+  for (const e of EVENTS) {
+    // fsince: [[field index, version id], ...] for fields that arrived after the event id first appeared
+    e.fsince = new Map(e.fsince || []);
+    e.added = new Set([e.since, ...e.fsince.values()]);
+    e.hay = [DATA.providers[e.p][0], e.id, e.sig, e.opcode, e.task, e.keywords.join(' '), e.level, e.channel || '', e.message || '', e.category || '']
+      .join('\t').toLowerCase();
+  }
+  // an event is "latest" if no other event with the same provider/category/id has a higher version
+  const maxVer = new Map(), key = e => e.p + '|' + (e.category || '') + '|' + e.id;
+  for (const e of EVENTS) maxVer.set(key(e), Math.max(maxVer.get(key(e)) ?? -1, e.ver));
+  const LATEST_COUNT = DATA.providers.map(() => 0);
+  for (const e of EVENTS) if ((e.latest = e.ver === maxVer.get(key(e)))) LATEST_COUNT[e.p]++;
+  return { DATA, EVENTS, LATEST_COUNT };
+}
+
+// load a Windows version's bundle (cached), keeping the selected provider if it exists there.
+// Resolves true once that version is current; false if it failed or a later load superseded it.
+let loadSeq = 0, loading = 0;
+async function loadVersion(id) {
+  const seq = ++loadSeq;
+  const v = VERSIONS.find(v => v.id === id) || VERSIONS[0];
+  const want = state.provider !== null && DATA ? providerRef(state.provider) : state.pendingProvider;
+  if (!CACHE.has(v.id)) {
+    document.body.classList.toggle('loading', ++loading > 0);
+    try {
+      const r = await fetch('data/' + v.file + (v.hash ? '?h=' + v.hash : ''));
+      if (!r.ok) throw new Error(r.status + ' ' + r.statusText);
+      CACHE.set(v.id, prepare(await r.json()));
+    } catch (err) {
+      if (seq === loadSeq) {
+        $('winver').value = DATA ? state.ver : v.id; // back to the version still on screen
+        showError(err, v.label);
+      }
+      return false;
+    } finally {
+      document.body.classList.toggle('loading', --loading > 0);
+    }
+  }
+  if (seq !== loadSeq) return false;
+  ({ DATA, EVENTS, LATEST_COUNT } = CACHE.get(v.id));
+  state.ver = v.id;
+  state.pendingProvider = null;
+  state.provider = findProvider(want);
+  $('winver').value = v.id;
+  const counts = { manifest: 0, mof: 0, unknown: 0 };
+  for (const p of DATA.providers) counts[p[1]]++;
+  $('version').textContent = `${fmt(EVENTS.length)} events · ` +
+    `${fmt(counts.manifest)} manifest, ${fmt(counts.mof)} MOF, ${fmt(counts.unknown)} unknown providers`;
+  $('winver').title = DATA.version; // full build string, e.g. "Windows 11 Pro 26H1 (28000.1.amd64fre...)"
+  return true;
+}
+function showError(err, what = 'the event data') {
+  $('summary').innerHTML = '';
+  $('results').innerHTML = `<div class="empty">Could not load ${esc(what)} (${esc(err.message)}).<br>` +
+    'Run <code>python docs/build_data.py</code> and serve the docs/ folder over HTTP.</div>';
+}
+
+// --- sidebar ---------------------------------------------------------------
+function renderProviders() {
+  if (!DATA) return;
+  const f = state.pfilter.toLowerCase();
+  const items = [];
+  DATA.providers.forEach((p, i) => {
+    if (state.kind && p[1] !== state.kind) return;
+    if (f && !p[0].toLowerCase().includes(f)) return;
+    items.push(`<li data-i="${i}" class="${i === state.provider ? 'selected' : ''}" title="${esc(p[0])}">` +
+      `<span class="name">${esc(p[0])}</span><span class="count">${p[1] === 'unknown' ? '—' : fmt(state.old ? p[3] : LATEST_COUNT[i])}</span></li>`);
+  });
+  $('providerList').innerHTML = items.join('') || '<li class="empty">No providers match</li>';
+}
+
+// --- filters ---------------------------------------------------------------
+function scopeEvents() {
+  return EVENTS.filter(e =>
+    (state.provider === null || e.p === state.provider) &&
+    (!state.kind || e.kind === state.kind) &&
+    (state.old || e.latest));
+}
+function fillSelect(sel, values, current, label) {
+  const opts = [`<option value="">${label}</option>`];
+  for (const [v, n] of values) opts.push(`<option value="${esc(v)}">${esc(v)} (${fmt(n)})</option>`);
+  if (current && !values.some(([v]) => v === current)) opts.push(`<option value="${esc(current)}">${esc(current)}</option>`);
+  sel.innerHTML = opts.join('');
+  sel.value = current;
+}
+// the versions an event row counts as "added in". With every event version listed, only the version that
+// introduced it (fields arrive with a new event version). With latest versions only, the introducing version
+// may be hidden, so the latest one also counts for each of its fields' versions.
+function addedIn(e) {
+  return state.old ? new Set([e.since]) : e.added;
+}
+function renderFilterOptions(scope) {
+  const levels = new Map(), kws = new Map();
+  for (const e of scope) {
+    if (e.level) levels.set(e.level, (levels.get(e.level) || 0) + 1);
+    for (const k of e.keywords) kws.set(k, (kws.get(k) || 0) + 1);
+  }
+  const order = ['Always', 'Critical', 'Error', 'Warning', 'Informational', 'Verbose'];
+  fillSelect($('level'), [...levels].sort((a, b) => order.indexOf(a[0]) - order.indexOf(b[0])), state.level, 'Any level');
+  fillSelect($('keyword'), [...kws].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])), state.keyword, 'Any keyword');
+  const added = new Map();
+  for (const e of scope) for (const v of addedIn(e)) added.set(v, (added.get(v) || 0) + 1);
+  fillSelect($('added'), VERSIONS.filter(v => added.has(v.id)).map(v => [v.id, added.get(v.id)]), state.added, 'Added in any version');
+  for (const o of $('added').options) if (o.value) o.textContent = o.textContent.replace(o.value, 'Added in ' + VLABEL(o.value).replace(/^Windows /, 'Win'));
+}
+
+// --- results ---------------------------------------------------------------
+function terms() { return state.q.toLowerCase().split(/\s+/).filter(Boolean); }
+// match against the raw text, then escape each piece, so terms can never split an HTML entity
+function highlight(text) {
+  text = String(text);
+  if (!HL) return esc(text);
+  return text.split(HL).map((part, i) => i % 2 ? `<mark>${esc(part)}</mark>` : esc(part)).join('');
+}
+// --- "blame": the Windows version each event version / field first appeared in ---
+const VLABEL = id => (VERSIONS.find(v => v.id === id) || { label: id }).label;
+function sinceTag(id, what, style = '') {
+  if (!id) return '';
+  const oldest = VERSIONS[VERSIONS.length - 1].id === id;
+  const text = (oldest ? '≤' : '') + VLABEL(id).replace(/^Windows /, 'Win');
+  const title = oldest ? `${what} is in the oldest snapshot here (${VLABEL(id)}), so it may be older`
+    : `${what} first appeared in ${VLABEL(id)}`;
+  return `<span class="since${state.added === id ? ' hit' : ''}" style="${style}" title="${esc(title)}">${esc(text)}</span>`;
+}
+function renderSig(sig, e) {
+  const m = /^([^(]*)\((.*)\)$/.exec(sig);
+  const evTag = sinceTag(e.since, `${m ? m[1] : sig} (version ${e.ver})`);
+  if (!m) return `<span class="sig"><span class="ev">${highlight(sig)}</span>${evTag}</span>`;
+  const parts = m[2] ? m[2].split(', ') : [];
+  const fields = parts.map((f, i) => {
+    const sp = f.lastIndexOf(' ');
+    const name = f.slice(sp + 1);
+    const tag = e.fsince.has(i) ? sinceTag(e.fsince.get(i), `Field ${name}`) : '';
+    // one unbreakable line per field: type, name, comma, then its tag
+    return '<span class="f">' + (sp < 0 ? `<span class="fn">${highlight(f)}</span>`
+      : `<span class="ty">${highlight(f.slice(0, sp))}</span> <span class="fn">${highlight(name)}</span>`) +
+      (i < parts.length - 1 ? ',' : '') + tag + '</span>';
+  });
+  return `<span class="sig"><span class="ev">${highlight(m[1])}</span>${evTag}(` +
+    (fields.length ? `<span class="fields">${fields.join('<br> ')}</span>` : '') + `)</span>`;
+}
+function tsvLink(i) {
+  const p = DATA.providers[i];
+  return REPO + DATA.ref + '/' + p[1] + '/' + encodeURIComponent(p[2]);
+}
+
+function renderProviderHead() {
+  const head = $('providerHead');
+  if (state.provider === null) { head.hidden = true; return; }
+  const p = DATA.providers[state.provider];
+  head.hidden = false;
+  head.innerHTML = `<h2>${esc(p[0])}</h2><div class="meta"><span class="badge">${KIND_LABEL[p[1]]}</span>` +
+    (p[1] === 'unknown' ? '<span>Registered provider with no published manifest or MOF schema.</span>'
+      : `<span>${fmt(state.old ? p[3] : LATEST_COUNT[state.provider])} events` +
+        (state.old || LATEST_COUNT[state.provider] === p[3] ? '' : ` (${fmt(p[3])} including old versions)`) + '</span>') +
+    `<span>since ${sinceTag(p[4], 'This provider', 'margin-left:0')}</span>` +
+    `<a href="${tsvLink(state.provider)}">View TSV</a>` +
+    '<button type="button" id="clearProvider" class="linklike">Show all providers</button></div>';
+  $('clearProvider').onclick = () => { state.provider = null; update(); };
+}
+
+function rowHtml(e) {
+  const p = DATA.providers[e.p];
+  const kw = e.keywords.map(k => `<span class="badge" data-kw="${esc(k)}">${highlight(k)}</span>`).join('');
+  return '<tr>' +
+    (view.showProv ? `<td class="prov"><a href="#${esc(hashString({ provider: e.p, keyword: '' }))}" data-p="${e.p}">${highlight(p[0])}</a>` +
+      (e.kind === 'mof' ? ' <span class="badge">MOF</span>' : '') + '</td>' : '') +
+    `<td class="num" data-label="ID">${highlight(e.id)}</td><td class="num c-ver" data-label="Version">${e.ver}</td>` +
+    `<td>${renderSig(e.sig, e)}</td>` +
+    `<td class="small c-op" data-label="${e.kind === 'mof' ? 'Event type' : 'Opcode'}">${highlight(e.opcode)}</td>` +
+    `<td class="small c-task ${e.kind === 'mof' ? 'desc' : ''}" data-label="${e.kind === 'mof' ? 'Description' : 'Task'}">${highlight(e.task)}` +
+      (e.kind === 'mof' && e.category ? `<div class="sig" style="opacity:.7">${esc(e.category)}</div>` : '') + '</td>' +
+    (view.anyManifest ? `<td class="c-kw" data-label="Keywords"><div class="kw">${kw}</div></td><td class="small lvl c-lvl lvl-${esc(e.level)}" data-label="Level">${esc(e.level)}</td>` : '') +
+    (view.anyChannel ? `<td class="small" data-label="Channel">${esc(e.channel || '')}</td>` : '') +
+    (view.anyMessage ? `<td class="small" data-label="Message">${highlight(e.message || '')}</td>` : '') +
+    '</tr>';
+}
+// append the next page of rows to the table already on screen
+function showMore(count) {
+  const next = Math.min(shown + count, matches.length);
+  $('rows').insertAdjacentHTML('beforeend', matches.slice(shown, next).map(rowHtml).join(''));
+  shown = next;
+  const left = matches.length - shown;
+  $('moreBox').innerHTML = left > 0
+    ? `<div class="more"><button type="button" id="more">Show ${fmt(Math.min(PAGE * 5, left))} more of ${fmt(left)} remaining</button></div>`
+    : '';
+  if (left > 0) $('more').onclick = () => showMore(PAGE * 5);
+}
+
+function render() {
+  if (!DATA) return;
+  const scope = scopeEvents();
+  renderFilterOptions(scope);
+  const ts = terms();
+  HL = ts.length ? new RegExp('(' + ts.map(t => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|') + ')', 'gi') : null;
+  matches = scope.filter(e =>
+    (!state.level || e.level === state.level) &&
+    (!state.keyword || e.keywords.includes(state.keyword)) &&
+    (!state.added || addedIn(e).has(state.added)) &&
+    ts.every(t => e.hay.includes(t)));
+
+  const providersHit = new Set(matches.map(e => e.p)).size;
+  const filtered = ts.length || state.level || state.keyword || state.added;
+  $('summary').innerHTML = `<span><strong>${fmt(matches.length)}</strong> events` +
+    (state.provider === null ? ` across <strong>${fmt(providersHit)}</strong> providers` : '') + `</span>` +
+    (filtered ? '<button type="button" id="clearFilters" class="linklike">Clear filters</button>' : '');
+  if (filtered) $('clearFilters').onclick = () => {
+    state.q = state.level = state.keyword = state.added = ''; $('q').value = ''; update();
+  };
+
+  const results = $('results');
+  if (!matches.length) {
+    const p = state.provider !== null && DATA.providers[state.provider];
+    results.innerHTML = `<div class="empty">${p && p[1] === 'unknown' ? 'No event schema is available for this provider.' : 'No events match.'}</div>`;
+    return;
+  }
+  const anyMof = matches.some(e => e.kind === 'mof'), anyManifest = matches.some(e => e.kind === 'manifest');
+  view = {
+    showProv: state.provider === null, anyManifest,
+    anyChannel: matches.some(e => e.channel), anyMessage: matches.some(e => e.message),
+  };
+  results.innerHTML = '<table><thead><tr>' +
+    (view.showProv ? '<th>Provider</th>' : '') +
+    '<th style="text-align:right">ID</th><th class="c-ver">Ver</th><th>Event(fields)</th>' +
+    `<th class="c-op">${anyMof && !anyManifest ? 'Event type' : 'Opcode'}</th>` +
+    `<th class="c-task">${anyMof && !anyManifest ? 'Description' : anyMof ? 'Task / Description' : 'Task'}</th>` +
+    (anyManifest ? '<th class="c-kw">Keywords</th><th class="c-lvl">Level</th>' : '') +
+    (view.anyChannel ? '<th>Channel</th>' : '') + (view.anyMessage ? '<th>Message</th>' : '') +
+    '</tr></thead><tbody id="rows"></tbody></table><div id="moreBox"></div>';
+  shown = 0;
+  showMore(PAGE);
+}
+
+// display-only toggles: [checkbox id, state key (also the .results class), checkbox is ticked when state is]
+const DISPLAY = [['compact', 'compact', true], ['hideKw', 'nokw', true], ['wrap', 'nowrap', false], ['blame', 'noblame', false]];
+function syncDisplay() {
+  for (const [id, key, checkedWhen] of DISPLAY) {
+    $(id).checked = state[key] === checkedWhen;
+    $('results').classList.toggle(key, state[key]);
+  }
+  // "when added" tags only make sense with one field per line
+  $('blame').disabled = state.nowrap;
+  $('blameLabel').classList.toggle('disabled', state.nowrap);
+  $('blameLabel').title = state.nowrap ? 'Turn on Wrap lines to show history' : '';
+}
+
+function update() {
+  if (!DATA) return;
+  writeHash();
+  document.querySelectorAll('.tabs button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.kind === state.kind)));
+  $('latestOnly').checked = !state.old;
+  syncDisplay();
+  renderProviders();
+  renderProviderHead();
+  render();
+}
+
+// --- wiring ----------------------------------------------------------------
+function debounce(fn, ms) { let t; return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); }; }
+const switchTo = id => loadVersion(id).then(ok => { if (ok) update(); });
+
+function wire() {
+  $('q').addEventListener('input', debounce(e => { state.q = e.target.value.trim(); writeHash(); render(); }, 150));
+  $('level').addEventListener('change', e => { state.level = e.target.value; writeHash(); render(); });
+  $('keyword').addEventListener('change', e => { state.keyword = e.target.value; writeHash(); render(); });
+  $('added').addEventListener('change', e => { state.added = e.target.value; writeHash(); render(); });
+  $('latestOnly').addEventListener('change', e => { state.old = !e.target.checked; update(); });
+  for (const [id, key, checkedWhen] of DISPLAY) {
+    $(id).addEventListener('change', e => { state[key] = e.target.checked === checkedWhen; writeHash(); syncDisplay(); });
+  }
+  $('providerFilter').addEventListener('input', debounce(e => { state.pfilter = e.target.value; renderProviders(); }, 100));
+  document.querySelectorAll('.tabs button').forEach(b => b.addEventListener('click', () => {
+    state.kind = b.dataset.kind;
+    if (state.provider !== null && state.kind && DATA && DATA.providers[state.provider][1] !== state.kind) state.provider = null;
+    update();
+  }));
+  $('providerList').addEventListener('click', e => {
+    const li = e.target.closest('li[data-i]');
+    if (!li) return;
+    const i = +li.dataset.i;
+    state.provider = state.provider === i ? null : i;
+    state.keyword = '';
+    $('sidebar').classList.add('collapsed');
+    update();
+    $('results').scrollTop = 0;
+  });
+  $('results').addEventListener('click', e => {
+    const a = e.target.closest('a[data-p]');
+    if (a) {
+      if (e.button !== 0 || e.ctrlKey || e.metaKey || e.shiftKey || e.altKey) return; // let the browser open a new tab/window
+      e.preventDefault();
+      state.provider = +a.dataset.p; state.keyword = ''; update(); $('results').scrollTop = 0;
+      return;
+    }
+    const kw = e.target.closest('[data-kw]');
+    if (kw) { state.keyword = kw.dataset.kw; writeHash(); render(); }
+  });
+  $('menuToggle').addEventListener('click', () => $('sidebar').classList.toggle('collapsed'));
+  $('winver').addEventListener('change', e => switchTo(e.target.value));
+  window.addEventListener('hashchange', () => {
+    state.provider = null; readHash(); $('q').value = state.q;
+    switchTo(state.ver);
+  });
+}
+
+fetch('data/versions.json', { cache: 'no-cache' }) // always revalidate: it names the current bundle hashes
+  .then(r => { if (!r.ok) throw new Error(r.status + ' ' + r.statusText); return r.json(); })
+  .catch(err => { $('version').textContent = ''; showError(err, 'the version list'); throw null; })
+  .then(versions => {
+    VERSIONS = versions;
+    $('winver').innerHTML = VERSIONS.map(v => `<option value="${esc(v.id)}" title="${esc(v.build)}">${esc(v.label)}</option>`).join('');
+    readHash();
+    $('q').value = state.q;
+    wire(); // before loading, so a failed load can still be recovered from with the version picker
+    return switchTo(state.ver);
+  })
+  .catch(err => {
+    if (err === null) return; // already reported
+    console.error(err);
+    $('results').innerHTML = `<div class="empty">Something went wrong showing the events (${esc(err.message)}).</div>`;
+  });
+</script>
+</body>
+</html>

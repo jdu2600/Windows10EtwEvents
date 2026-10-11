@@ -1,6 +1,8 @@
 # Windows 10 ETW Events
 Events from all manifest-based and mof-based ETW providers across Windows 10 versions
 
+**[Browse and search the events online](https://jdu2600.github.io/Windows10EtwEvents/)** (built from [`docs/`](docs/))
+
 | Version | Events | Manifest Providers | MOF Providers | Unknown Providers |
 |---    |---        |---	|---	|---	|
 | 1511  | 43,319    | 811	| 195   | 24    |

@@ -240,12 +240,38 @@ namespace DumpRegisteredEtwProviders
 
 
                 // no manifest and no MOF...
+                // TDH could not decode this provider, but the Event Log API can often still read its
+                // events - see EventLogMetadata. Those rows are a best-effort reconstruction, so they
+                // stay in unknown/ alongside the TDH status that put them there (unknown/README.md).
                 if (!foundProviderDetails)
                 {
+                    var tdhStatus = EventLogMetadata.DescribeStatus(EventLogMetadata.TdhStatus(provider));
+                    var events = new System.Collections.Generic.List<ReconstructedEvent>();
+                    try
+                    {
+                        events = EventLogMetadata.GetEvents(name);
+                    }
+                    catch (Exception e)
+                    {
+                        Console.WriteLine($"EVENTLOG METADATA FAILURE - name={name} error={e.Message}");
+                    }
+
                     using (var tsv_file = new StreamWriter(Path.Combine(unknownOutputDir, tsvFilename)))
                     {
-                        tsv_file.WriteLine($"provider");
-                        tsv_file.WriteLine(name);
+                        if (events.Count == 0)
+                        {
+                            // keep the provider name in the first row - docs/build_data.py reads it from there
+                            tsv_file.WriteLine($"provider\ttdh_status");
+                            tsv_file.WriteLine($"{name}\t{tdhStatus}");
+                        }
+                        else
+                        {
+                            tsv_file.WriteLine($"provider\tevent_id\tversion\tevent(fields)\topcode\tkeywords\ttask\tlevel\tevtlog_channel\tevtlog_message\ttdh_status");
+                            foreach (var evt in events)
+                            {
+                                tsv_file.WriteLine($"{name}\t{evt.Id}\t{evt.Version}\t{evt.Signature}\t{evt.Opcode}\t{evt.Keywords}\t{evt.Task}\t{evt.Level}\t{evt.Channel}\t{evt.Message}\t{tdhStatus}");
+                            }
+                        }
                     }
                 }
             }

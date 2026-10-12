@@ -1,5 +1,4 @@
-﻿using Microsoft.Diagnostics.Tracing.Session;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Management;
@@ -267,14 +266,9 @@ namespace EtwManifestParsing
 
             // the provider name is usually in the Description Qualifier for the EventTrace class (but not always?)
             // and the keywords are properties for the EventTrace class
-            // but we can already get both of these easily from Microsoft.Diagnostics.Tracing
-            manifest.ProviderName = TraceEventProviders.GetProviderName(provider);
-            manifest.Keywords = TraceEventProviders.GetProviderKeywords(provider).Select(info => new EtwKeyword
-            {
-                Name = info.Name,
-                Mask = info.Value,
-                Message = info.Description
-            }).ToArray();
+            // but we can already get both of these easily from TDH
+            manifest.ProviderName = TdhManifestReader.GetProviderName(provider);
+            manifest.Keywords = TdhManifestReader.GetProviderKeywords(provider).ToArray();
 
             // event details are in the grandchildren of the top-level (EventTrace) provider class
             // WMI EventTrace children ~ a versioned category grouping

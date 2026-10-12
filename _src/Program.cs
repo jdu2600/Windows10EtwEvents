@@ -2,8 +2,6 @@
 using System.IO;
 using System.Linq;
 using System.Xml;
-using Microsoft.Diagnostics.Tracing.Parsers;
-using Microsoft.Diagnostics.Tracing.Session;
 using Microsoft.Win32;
 
 using EtwManifestParsing;  // https://github.com/zodiacon/EtwExplorer/tree/master/EtwManifestParsing
@@ -18,17 +16,11 @@ namespace DumpRegisteredEtwProviders
             /*
              * output all ETW events in a single line 'grep-able' format per provider
              * 
-             * Microsoft.Diagnostics.Tracing does the heavy lifting and provides us with a (partial) ETW manifest,
-             * but lallousx86's WEPExplorer provides improved metadata for providers that are also 
+             * TdhManifestReader reads each registered provider's events straight from TDH (this used to be
+             * TraceEvent's GetManifestForRegisteredProvider - see TdhManifestReader for why it isn't),
+             * but lallousx86's WEPExplorer provides improved metadata for providers that are also
              * Eventlog Providers (i.e. channel, message template).
              * Unfortunately it it doesn't output event names, so we need to combine both.
-             * 
-             * This ticket would remove the need for the dependency on WEPExplorer -
-             * https://github.com/microsoft/perfview/issues/1067
-             *
-             * And these two tickets would improve the quality of the generated manifest XML
-             * https://github.com/microsoft/perfview/issues/1068
-             * https://github.com/microsoft/perfview/issues/1069
              *
              * For convenience, I also use the manifest parsing code from EtwExplorer.
              * And was about to contribute back my MOF parsing code.
@@ -71,9 +63,10 @@ namespace DumpRegisteredEtwProviders
                 windowsVersionFile.WriteLine($"{product} {release} ({build})");
             }
 
-            foreach (var provider in TraceEventProviders.GetPublishedProviders())
+            foreach (var entry in TdhManifestReader.GetPublishedProviders())
             {
-                var name = TraceEventProviders.GetProviderName(provider);
+                var provider = entry.Key;
+                var name = entry.Value;
 
                 // use the provider name as the output filename, but...
                 // ':' is not a valid filename character - use a dash instead
@@ -84,53 +77,17 @@ namespace DumpRegisteredEtwProviders
                 EtwManifest manifest = null;
 
                 // is this is manifest-based provider?
-                string manifestXML = string.Empty;
                 try
                 {
-                    manifestXML = RegisteredTraceEventParser.GetManifestForRegisteredProvider(provider);
+                    manifest = TdhManifestReader.GetManifest(provider, name);
+                }
+                catch (ApplicationException) { }       // TDH has no events for it
+                catch (InvalidOperationException) { }  // TDH listed keywords but could not return them
 
+                if (manifest != null)
+                {
                     using (var tsvFile = new StreamWriter(Path.Combine(manifestOutputDir, tsvFilename)))
                     {
-                        // Summary:
-                        //     Given a provider GUID that has been registered with the operating system, get
-                        //     a string representing the ETW manifest for that provider. Note that this manifest
-                        //     is not as rich as the original source manifest because some information is not
-                        //     actually compiled into the binary manifest that is registered with the OS.
-
-                        // a few hacky escaping fixes so that we can parse the xml...
-                        if (name == "Microsoft-Windows-AppXDeployment-Server")
-                        {
-                            manifestXML = manifestXML.Replace("\"any\"", "&quot;any&quot;");
-                        }
-                        if (name == "Microsoft-Windows-GroupPolicy")
-                        {
-                            manifestXML = manifestXML.Replace("\"No loopback mode\"", "&quot;No loopback mode&quot;");
-                            manifestXML = manifestXML.Replace("\"Merge\"", "&quot;Merge&quot;");
-                            manifestXML = manifestXML.Replace("\"Replace\"", "&quot;Replace&quot;");
-                        }
-                        if (name == "Microsoft-Windows-NetworkProvider")
-                        {
-                            manifestXML = manifestXML.Replace("<Property>", "&lt;Property&gt;");
-                            manifestXML = manifestXML.Replace("<Value>", "&lt;Value&gt;");
-                            manifestXML = manifestXML.Replace("<Integer>", "&lt;Integer&gt;");
-                            manifestXML = manifestXML.Replace("<Quoted String>", "&lt;Quoted String&gt;");
-                        }
-                        if (name == "Microsoft-Windows-SMBClient")
-                        {
-                            manifestXML = manifestXML.Replace("<server:transport>", "&lt;server:transport&gt;");
-                        }
-                        if (name == "Microsoft-Windows-Ntfs")
-                        {
-                            manifestXML = manifestXML.Replace("\"CHKDSK /SCAN\"", "&quot;CHKDSK /SCAN&quot;");
-                            manifestXML = manifestXML.Replace("\"CHKDSK /SPOTFIX\"", "&quot;CHKDSK /SPOTFIX&quot;");
-                            manifestXML = manifestXML.Replace("\"CHKDSK /F\"", "&quot;CHKDSK /F&quot;");
-                            manifestXML = manifestXML.Replace("\"REPAIR-VOLUME <drive:> -SCAN\"", "&quot;REPAIR-VOLUME &lt;drive:&gt; -SCAN&quot;");
-                            manifestXML = manifestXML.Replace("\"REPAIR-VOLUME <drive:>\"", "&quot;REPAIR-VOLUME &lt;drive:&gt;&quot;");
-                            manifestXML = manifestXML.Replace("<unknown>", "&lt;unknown&gt;");
-                        }
-
-                        manifest = ManifestParser.Parse(manifestXML);
-
                         foundProviderDetails = true;
 
                         tsvFile.WriteLine($"provider\tevent_id\tversion\tevent(fields)\topcode\tkeywords\ttask\tlevel\tevtlog_channel\tevtlog_message");
@@ -183,19 +140,6 @@ namespace DumpRegisteredEtwProviders
                             etwEvent = etwEvent.Replace("&quot;", "\"").Replace("&lt;", "<").Replace("&gt;", ">");
                             tsvFile.WriteLine(etwEvent);
                         }
-                    }
-                }
-                catch (Exception e)
-                {
-                    if (manifestXML.Length != 0)
-                    {
-                        var errorFilename = "ERROR_Manifest.xml";
-                        Console.WriteLine($"MANIFEST PARSE FAILURE - name={name} size={manifestXML.Length} file={errorFilename}");
-                        using (var errorFile = new StreamWriter(Path.Combine(outputDir, errorFilename)))
-                        {
-                            errorFile.WriteLine(manifestXML);
-                        }
-                        throw e;
                     }
                 }
 

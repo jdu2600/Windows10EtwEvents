@@ -73,27 +73,18 @@ namespace EtwManifestParsing
             foreach (var entry in byName)
                 byGuid[entry.Value] = entry.Key;
             _providers = byGuid.ToList();
-            _names = byGuid;
             return _providers;
         }
 
         private static List<KeyValuePair<Guid, string>> _providers;
-        private static Dictionary<Guid, string> _names;
-
-        /// <summary>The provider's registered name, or its GUID as a string if TDH doesn't know it.</summary>
-        public static string GetProviderName(Guid provider)
-        {
-            GetPublishedProviders();
-            return _names.TryGetValue(provider, out var name) ? name : provider.ToString();
-        }
 
         /// <summary>
-        /// The provider's keywords (TdhEnumerateProviderFieldInformation). None if TDH has no field
-        /// information for it; throws if TDH reports some but then fails to return them.
+        /// The provider's keywords as (mask, name), from TdhEnumerateProviderFieldInformation. None if
+        /// TDH has no field information for it; throws if TDH reports some but then fails to return them.
         /// </summary>
-        public static List<EtwKeyword> GetProviderKeywords(Guid provider)
+        private static List<KeyValuePair<ulong, string>> GetProviderKeywords(Guid provider)
         {
-            var keywords = new List<EtwKeyword>();
+            var keywords = new List<KeyValuePair<ulong, string>>();
             var size = 0;
             if (TdhEnumerateProviderFieldInformation(ref provider, EventKeywordInformation, IntPtr.Zero, ref size) != ERROR_INSUFFICIENT_BUFFER)
                 return keywords;
@@ -110,13 +101,9 @@ namespace EtwManifestParsing
                 for (var i = 0; i < count; i++)
                 {
                     var entry = 8 + i * 16;
-                    var descriptionOffset = Marshal.ReadInt32(buffer, entry + 4);
-                    keywords.Add(new EtwKeyword
-                    {
-                        Name = Marshal.PtrToStringUni(buffer + Marshal.ReadInt32(buffer, entry)),
-                        Message = descriptionOffset != 0 ? Marshal.PtrToStringUni(buffer + descriptionOffset) : string.Empty,
-                        Mask = (ulong)Marshal.ReadInt64(buffer, entry + 8),
-                    });
+                    keywords.Add(new KeyValuePair<ulong, string>(
+                        (ulong)Marshal.ReadInt64(buffer, entry + 8),
+                        Marshal.PtrToStringUni(buffer + Marshal.ReadInt32(buffer, entry))));
                 }
             }
             finally
@@ -131,14 +118,14 @@ namespace EtwManifestParsing
         /// Every event TDH can decode for this provider. Throws ApplicationException if there are none -
         /// which is how a provider ends up in unknown/.
         /// </summary>
-        public static EtwManifest GetManifest(Guid provider, string providerName)
+        public static EtwManifest GetManifest(Guid provider)
         {
             // TraceEvent compared against 1000000000000 (decimal), not a bit position - kept as is.
             var keywords = new SortedDictionary<ulong, string>();
             foreach (var keyword in GetProviderKeywords(provider))
             {
-                if (keyword.Mask < 1000000000000UL)
-                    keywords[keyword.Mask] = MakeLegalIdentifier(keyword.Name);
+                if (keyword.Key < 1000000000000UL)
+                    keywords[keyword.Key] = MakeLegalIdentifier(keyword.Value);
             }
 
             var taskNames = new Dictionary<string, int>();
@@ -212,14 +199,10 @@ namespace EtwManifestParsing
             if (events.Count == 0)
                 throw new ApplicationException($"Could not find provider with at GUID of {provider}");
 
-            return new EtwManifest(string.Empty)
+            return new EtwManifest
             {
-                ProviderGuid = provider,
-                ProviderName = providerName,
-                ProviderSymbol = Regex.Replace(providerName, @"[^\w]", ""),
                 Events = events.Values.SelectMany(e => e).ToArray(),
                 Templates = templates.ToArray(),
-                Keywords = keywords.Select(k => new EtwKeyword { Name = k.Value, Mask = k.Key }).ToArray(),
             };
         }
 

@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
-
-namespace EtwManifestParsing {
+﻿namespace EtwManifestParsing {
 	public sealed class EtwTemplateData {
 		public string Name { get; set; }
 		public string Type { get; set; }
@@ -20,14 +13,6 @@ namespace EtwManifestParsing {
             Id = id;
             Items = items;
         }
-
-        internal EtwTemplate(XElement element) {
-			Id = (string)element.Attribute("tid");
-			Items = element.DescendantNodes().OfType<XElement>().Select(node => new EtwTemplateData {
-				Name = (string)node.Attribute("name"),
-				Type = ((string)node.Attribute("inType")).Substring(4)
-			}).ToArray();
-		}
 
         public override string ToString() => $"{Id} {Items.Length} template items";
 	}

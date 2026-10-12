@@ -79,7 +79,7 @@ namespace DumpRegisteredEtwProviders
                 // is this is manifest-based provider?
                 try
                 {
-                    manifest = TdhManifestReader.GetManifest(provider, name);
+                    manifest = TdhManifestReader.GetManifest(provider);
                 }
                 catch (ApplicationException) { }       // TDH has no events for it
                 catch (InvalidOperationException) { }  // TDH listed keywords but could not return them

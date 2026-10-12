@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Management;
 using System.Text.RegularExpressions;
-using System.Xml.Linq;
 
 namespace EtwManifestParsing
 {
@@ -35,89 +34,6 @@ namespace EtwManifestParsing
         // Built once - the query takes ~1s, and we are asked about every registered provider,
         // the vast majority of which are manifest-based and have no MOF here at all.
         private static Dictionary<Guid, ManagementClass> _providerClasses;
-
-        public static EtwManifest Parse(XElement element)
-        {
-            var manifest = new EtwManifest(element.ToString());
-            try
-            {
-                var ns = element.GetDefaultNamespace();
-
-                var stringTable = element.Descendants(ns + "stringTable").FirstOrDefault();
-                if (stringTable != null)
-                {
-                    var strings = stringTable.DescendantNodes().OfType<XElement>().ToArray();
-                    var table = new Dictionary<string, string>(strings.Length);
-                    Array.ForEach(strings, node => { try { table.Add((string)node.Attribute("id"), (string)node.Attribute("value")); } catch { } });
-                    manifest.StringTable = table;
-                }
-
-                var providerElement = element.Descendants(ns + "provider").First();
-                manifest.ProviderName = (string)providerElement.Attribute("name");
-                manifest.ProviderSymbol = (string)providerElement.Attribute("symbol");
-                manifest.ProviderGuid = Guid.Parse((string)providerElement.Attribute("guid"));
-
-                var events = from node in element.Descendants(ns + "event")
-                             let level = GetString(node.Attribute("level"))
-                             select new EtwEvent
-                             {
-                                 Value = (int)node.Attribute("value"),
-                                 Symbol = (string)node.Attribute("symbol"),
-                                 Level = level.Substring(level.IndexOf(':') + 1),
-                                 Opcode = GetString(node.Attribute("opcode")),
-                                 Version = (int)node.Attribute("version"),
-                                 Template = (string)node.Attribute("template"),
-                                 Keyword = (string)node.Attribute("keywords"),
-                                 Task = (string)node.Attribute("task")
-                             };
-
-                manifest.Events = events.ToArray();
-
-                var keywords = element.Descendants(ns + "keyword").Select(node => new EtwKeyword
-                {
-                    Name = (string)node.Attribute("name"),
-                    Mask = ulong.Parse(((string)node.Attribute("mask")).Substring(2), System.Globalization.NumberStyles.HexNumber),
-                    Message = GetMessageString(manifest, (string)node.Attribute("message"))
-                });
-
-                manifest.Keywords = keywords.ToArray();
-
-                var templates = element.Descendants(ns + "template").Select(node => new EtwTemplate(node));
-                manifest.Templates = templates.ToArray();
-
-                var tasks = element.Descendants(ns + "task").Select(node => new EtwTask(node, manifest));
-                manifest.Tasks = tasks.ToArray();
-
-                return manifest;
-            }
-            catch (Exception ex)
-            {
-                throw new ApplicationException("Failed to parse manifest XML", ex);
-            }
-        }
-
-        private static string GetString(XAttribute attribute)
-        {
-            if (attribute == null)
-                return string.Empty;
-            var value = (string)attribute;
-            return value.Substring(value.IndexOf(':') + 1);
-        }
-
-        private static string GetMessageString(EtwManifest manifest, string message)
-        {
-            if (message.StartsWith("$"))
-            {
-                message = message.Substring(9, message.Length - 10);
-                return manifest.GetString(message);
-            }
-            return message;
-        }
-
-        public static EtwManifest Parse(string xml)
-        {
-            return Parse(XElement.Parse(xml));
-        }
 
         /// <summary>Reads a qualifier that may be declared as a scalar or an array.</summary>
         private static string[] ToStringArray(object value)
@@ -254,21 +170,12 @@ namespace EtwManifestParsing
             if (!ProviderClasses().TryGetValue(provider, out var providerClass))
                 throw new ApplicationException($"Provider {provider} has no corresponding EventTrace class in WMI Repository"); // not found
 
-            var manifest = new EtwManifest(string.Empty)
-            {
-                ProviderGuid = provider,
-                ProviderSymbol = (string)providerClass["__CLASS"]
-            };
+            var manifest = new EtwManifest();
+
 
             var events = new SortedDictionary<string, EtwEvent>();
             var templates = new List<EtwTemplate>();
-            var stringTable = new Dictionary<string, string>();
 
-            // the provider name is usually in the Description Qualifier for the EventTrace class (but not always?)
-            // and the keywords are properties for the EventTrace class
-            // but we can already get both of these easily from TDH
-            manifest.ProviderName = TdhManifestReader.GetProviderName(provider);
-            manifest.Keywords = TdhManifestReader.GetProviderKeywords(provider).ToArray();
 
             // event details are in the grandchildren of the top-level (EventTrace) provider class
             // WMI EventTrace children ~ a versioned category grouping
@@ -329,8 +236,6 @@ namespace EtwManifestParsing
                         else if (qd.Value.GetType() == typeof(String) && qd.Name.ToLower() == "description")
                             description = (string)qd.Value;
                     }
-                    if (!string.IsNullOrEmpty(categoryDescription))
-                        stringTable.Add(template, categoryDescription);
 
                     // EventType -> id(s), in declaration order. This list is NOT sorted:
                     // EventTypeName pairs with it by position, so reordering here would
@@ -413,7 +318,6 @@ namespace EtwManifestParsing
 
             manifest.Events = events.Values.ToArray();
             manifest.Templates = templates.ToArray();
-            manifest.StringTable = stringTable;
 
             return manifest;
         }

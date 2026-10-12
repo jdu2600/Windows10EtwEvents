@@ -1,13 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace EtwManifestParsing {
-	public enum EventLevel {
-	}
-
+﻿namespace EtwManifestParsing {
 	public sealed class EtwEvent {
 		public int Value { get; internal set; }
 		public string Symbol { get; internal set; }

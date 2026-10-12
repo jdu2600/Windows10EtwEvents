@@ -26,8 +26,7 @@ namespace EtwManifestParsing
     /// TdhGetAllEventsInformation returns each event's own TRACE_EVENT_INFO, so it is asked about
     /// every version, gaps and all.
     ///
-    /// Names follow TraceEvent (task + opcode) where the manifest names the task. Otherwise they
-    /// are Event_&lt;id&gt;[_&lt;opcode&gt;][_&lt;severity&gt;][_V&lt;version&gt;].
+    /// Names come from EventNamer.
     /// </remarks>
     public static class TdhManifestReader
     {
@@ -125,89 +124,21 @@ namespace EtwManifestParsing
             foreach (var keyword in GetProviderKeywords(provider))
             {
                 if (keyword.Key < 1000000000000UL)
-                    keywords[keyword.Key] = MakeLegalIdentifier(keyword.Value);
+                    keywords[keyword.Key] = EventNamer.MakeLegalIdentifier(keyword.Value);
             }
 
-            var taskNames = new Dictionary<string, int>();
-            var opcodeNames = new Dictionary<string, int>();
-            var eventNames = new Dictionary<string, int>();
+            var namer = new EventNamer();
             var templates = new List<EtwTemplate>();
             // grouped by event id (as the manifest XML was), in the order TDH returned them
             var events = new SortedDictionary<int, List<EtwEvent>>();
 
-            var classicNames = new Dictionary<string, uint>();
-
             foreach (var info in GetAllEventsInformation(provider))
             {
-                // Event Log-era events keep their 32-bit message id - Severity|C|R|Facility|Code - and
-                // the manifest compiler packs it into the descriptor: Id = bits 0-15, Version = bits
-                // 16-23, Opcode = bits 24-31 (the full id is stored alongside). Unpack it, as wevtapi
-                // does and as the event log records these events: the code as the id, version 0, no
-                // opcode, and the severity in the name.
-                var classic = (info.Keyword & EventlogClassicKeyword) != 0;
-                var messageId = ((uint)info.Opcode << 24) | ((uint)info.Version << 16) | (uint)info.Id;
-                var version = classic ? 0 : info.Version;
-                var opcodeValue = classic ? 0 : info.Opcode;
-
-                // Task name, unique per task value
-                var taskName = info.TaskName != null ? MakeLegalIdentifier(info.TaskName) : $"task_{info.Task}";
-                if (taskNames.TryGetValue(taskName, out var taskForName) && taskForName != info.Task)
-                    taskName = $"{taskName}_{info.Task}";
-                taskNames[taskName] = info.Task;
-
-                // Opcode name, unique per opcode value
-                var opcodeName = string.Empty;
-                if (opcodeValue != 0)
-                    opcodeName = info.OpcodeName != null ? MakeLegalIdentifier(info.OpcodeName) : $"opcode_{opcodeValue}";
-                if (opcodeNames.TryGetValue(opcodeName, out var opcodeForName) && opcodeForName != opcodeValue)
-                    opcodeName = $"{(info.OpcodeName == null ? "opcode" : opcodeName)}_{info.Task}_{opcodeValue}";
-                opcodeNames[opcodeName] = opcodeValue;
-
-                string eventName;
-                if (info.TaskName != null)
-                {
-                    // A named task: TraceEvent's task + opcode, unique per event id
-                    eventName = taskName;
-                    if (!taskName.EndsWith(opcodeName, StringComparison.OrdinalIgnoreCase))
-                        eventName += Capitalize(opcodeName);
-                    if (eventNames.TryGetValue(eventName, out var idForName) && idForName != info.Id)
-                        eventName += info.Id;
-                }
-                else
-                {
-                    // No task name, so nothing better than the id - Event_43007_Start, like the
-                    // Task_Opcode names of the MOF providers
-                    eventName = $"Event_{info.Id}";
-                    if (opcodeValue != 0)
-                        eventName += "_" + (info.OpcodeName != null ? opcodeName : $"Opcode{opcodeValue}");
-                }
-                eventNames[eventName] = info.Id;
-
-                if (classic)
-                {
-                    var severity = (int)(messageId >> 30);
-                    if (severity != 0)
-                        eventName += "_" + SeverityNames[severity];
-                    // Two classic events can share a code and a severity in different facilities.
-                    if (classicNames.TryGetValue(eventName, out var other) && other != messageId)
-                        eventName += $"_Facility{(messageId >> 16) & 0xFFF:X}";
-                    classicNames[eventName] = messageId;
-                }
-
-                var symbol = version > 0 ? $"{eventName}_V{version}" : eventName;
-
-                // The manifest opcode attribute was "win:<name>" for the reserved opcodes (< 10), and
-                // just the name otherwise. ManifestParser kept what followed the first ':'.
-                var opcode = string.Empty;
-                if (opcodeValue == DataCollectionStart)
-                    opcode = "DC_Start";
-                else if (opcodeValue == DataCollectionStop)
-                    opcode = "DC_Stop";
-                else if (opcodeValue != 0 && opcodeValue < 10)
-                    opcode = opcodeName;
-                else if (opcodeValue != 0)
-                    opcode = opcodeName.Substring(opcodeName.IndexOf(':') + 1);
-
+                // A classic event's descriptor is its packed message id - see EventNamer.
+                uint? classicMessageId = null;
+                if ((info.Keyword & EventNamer.EventlogClassicKeyword) != 0)
+                    classicMessageId = ((uint)info.Opcode << 24) | ((uint)info.Version << 16) | (uint)info.Id;
+                var names = namer.Name(info.Id, info.Version, info.Task, info.TaskName, info.Opcode, info.OpcodeName, classicMessageId);
                 string templateId = null;
                 if (info.Fields.Length != 0)
                 {
@@ -221,12 +152,12 @@ namespace EtwManifestParsing
                 sameId.Add(new EtwEvent
                 {
                     Value = info.Id,
-                    Symbol = symbol,
-                    Version = version,
-                    Opcode = opcode,
+                    Symbol = names.Symbol,
+                    Version = names.Version,
+                    Opcode = names.Opcode,
                     Level = info.Level <= LevelNames.Length - 1 ? LevelNames[info.Level] : string.Empty,
                     Keyword = KeywordString(keywords, info.Keyword),
-                    Task = taskName,
+                    Task = names.Task,
                     Template = templateId,
                 });
             }
@@ -244,14 +175,8 @@ namespace EtwManifestParsing
         // TraceEventLevel names, as published
         private static readonly string[] LevelNames = { "Always", "Critical", "Error", "Warning", "Informational", "Verbose" };
 
-        // the top two bits of an Event Log message id
-        private static readonly string[] SeverityNames = { "Success", "Informational", "Warning", "Error" };
 
-        // win:EventlogClassic - set on every event that keeps an Event Log message id
-        private const ulong EventlogClassicKeyword = 0x80000000000000UL;
 
-        private const int DataCollectionStart = 3;
-        private const int DataCollectionStop = 4;
 
         /// <summary>Space-separated names for keyword bits 0-47; unnamed bits become keyword_&lt;hex&gt;.</summary>
         private static string KeywordString(SortedDictionary<ulong, string> keywords, ulong keywordSet)
@@ -268,22 +193,6 @@ namespace EtwManifestParsing
             }
 
             return names.Count == 0 ? null : string.Join(" ", names);
-        }
-
-        private static string MakeLegalIdentifier(string name)
-        {
-            return name.Replace(" ", "").Replace("-", "_");
-        }
-
-        /// <summary>
-        /// "opcodeError" -> "OpcodeError". (TraceEvent's version returned
-        /// name.Substring(1).ToUpper() + name.Substring(1), i.e. "PCODEERRORpcodeError".)
-        /// </summary>
-        private static string Capitalize(string name)
-        {
-            if (name.Length == 0 || char.IsUpper(name[0]))
-                return name;
-            return char.ToUpper(name[0]) + name.Substring(1);
         }
 
         /// <summary>The parts of one TRACE_EVENT_INFO that the tsvs use.</summary>

@@ -2,10 +2,12 @@
 
 These providers are registered with Windows, but no event schema could be read for them:
 
-* TDH (`tdh.dll`) will not parse their events. [TraceEvent](https://www.nuget.org/packages/Microsoft.Diagnostics.Tracing.TraceEvent), which produces the `manifest/` data, decodes providers through TDH.
+* TDH (`tdh.dll`) will not parse their events. The `manifest/` data is read straight from TDH: [`TdhGetAllEventsInformation`](https://learn.microsoft.com/windows/win32/etw/tdhgetalleventsinformation), asked about every event version, returns nothing for these providers.
 * There is no MOF class for them in the WMI repository, which is where the `mof/` data comes from.
 
 Where the Event Log API (`wevtapi.dll`) can still read the provider's `WEVT_TEMPLATE` resource, the events are reconstructed from that on a best-effort basis. Those rows stay here rather than in `manifest/`. They don't count towards the event totals or appear in the event browser.
+
+Captures made with TraceEvent 2.0.48 also list `Volsnap` and `Microsoft-Windows-CertificateServicesClient-CertEnroll` here. TDH reads both, but TraceEvent stopped scanning event versions at the first gap, and these providers' events sit at version 6 and 90 (see [Event Log message ids](#event-log-message-ids)). They are in `manifest/` now.
 
 ## File format
 
@@ -27,24 +29,28 @@ Microsoft-Windows-WinML	3	0	NameStart3(Pointer pNet, UInt32 WinMLNetNameSize, An
 
 Captures from before `tdh_status` was added list only the provider name.
 
-Reconstructed rows differ from the `manifest/` rows in these ways:
+Reconstructed rows are named by the same rules as `manifest/`: task + opcode where the manifest names the task (`NameStart3`), otherwise `Event_<id>[_<opcode>][_<severity>][_V<version>]` (`Event_2`). They differ from the `manifest/` rows in these ways:
 
-* **Names are the manifest's symbolic names.** TDH names tasks, opcodes and levels with their localized display strings, but those strings are usually what is missing. So WinML's task is `Name` (its real `name=` attribute) and its opcodes are `win:Start`/`win:Stop`. Event symbols are then built the same way TraceEvent builds them: task + opcode, a numeric suffix to keep them unique, and `_V<n>` for versions above 0.
+* **The names going into those rules are the manifest's symbolic names.** TDH names tasks and opcodes with their localized display strings, but those strings are usually what is missing here. So WinML's task is `Name` (its real `name=` attribute) and its opcodes are `win:Start`/`win:Stop`.
 * **`evtlog_message` is filled in only when the message string still resolves.** For the MUI-missing providers it's usually empty.
-* **Event Log-era providers use 32-bit message ids**, `Severity|Facility|Code` (e.g. Volsnap's `0xC0060018`). `event_id` is the low 16 bits. That's what an ETW event descriptor carries and what Event Viewer shows as the Event ID.
+
+### Event Log message ids
+
+Event Log-era events (keyword `win:EventlogClassic`) keep a 32-bit message id, `Severity|C|R|Facility|Code` (e.g. Volsnap's `0xC0060001`). The manifest compiler packs it into the ETW event descriptor: the code becomes the id, the low byte of the facility the version, and the top byte (severity, C, R and the facility's high bits) the opcode. The full id is stored alongside.
+
+Both folders publish these events as the Event Log records them: the code as `event_id`, version 0, no opcode, and the severity in the name. `0xC0060001` is `Event_1_Error`, not version 6 with opcode 192. Two events that share a code, like MSDTC's `0x8000D01A` and `0xC000D01A`, become `Event_53274_Warning` and `Event_53274_Error`.
 
 ## tdh_status
 
-This is the result of [`TdhEnumerateManifestProviderEvents`](https://learn.microsoft.com/windows/win32/api/tdh/nf-tdh-tdhenumeratemanifestproviderevents) for the provider's GUID, called with no buffer. On success, TDH asks for a buffer (`ERROR_INSUFFICIENT_BUFFER`). Any other value is the reason TDH can't give you the provider's events.
+This is the result of [`TdhEnumerateManifestProviderEvents`](https://learn.microsoft.com/windows/win32/api/tdh/nf-tdh-tdhenumeratemanifestproviderevents) for the provider's GUID, called with no buffer: TDH's own account of why it has no events.
 
 | tdh_status | What is actually wrong | Events recovered? |
 |---|---|---|
 | `ERROR_MUI_FILE_NOT_FOUND` | The resource file is language-neutral, but its `.mui` satellite was never shipped. | Yes |
-| `ERROR_INVALID_OPERATION` | The manifest declares no events (with one exception, CertEnroll). | Usually none to recover |
+| `ERROR_EMPTY` | The manifest declares no events. | Nothing to recover |
 | `ERROR_RESOURCE_TYPE_NOT_FOUND` | The resource file has no `WEVT_TEMPLATE` resource. | No |
 | `ERROR_FILE_NOT_FOUND` | The resource file doesn't exist. | No |
 | `ERROR_INVALID_DATA` | The resource file's manifest doesn't contain this provider. | No |
-| `ERROR_INSUFFICIENT_BUFFER` | Nothing on the TDH side. TraceEvent missed the events. | Yes |
 
 The examples below were observed on Windows 11 build 26200.
 
@@ -55,7 +61,8 @@ The resource file has a `WEVT_TEMPLATE` and an `MUI` resource. The `MUI` resourc
 TDH resolves a provider's strings (task, opcode, level and keyword names) together with its schema. It also sends even an explicitly loaded binary through the MUI loader. When the satellite is missing, every TDH call for the provider fails:
 
 * enumeration returns `ERROR_MUI_FILE_NOT_FOUND`;
-* per-event lookups (`TdhGetManifestEventInformation`, `TdhGetEventInformation`) return `ERROR_NOT_FOUND`, for every event id. Brute-forcing ids doesn't help.
+* per-event lookups (`TdhGetManifestEventInformation`, `TdhGetEventInformation`) return `ERROR_NOT_FOUND`, for every event id. Brute-forcing ids doesn't help;
+* `TdhGetAllEventsInformation` returns `ERROR_MUI_FILE_NOT_FOUND` for version 0 and `ERROR_NOT_FOUND` for every other version.
 
 There is no partial result. Stripping the `MUI` resource from a copy of the binary only changes the error. The copy has no message table, so it fails with `ERROR_RESOURCE_TYPE_NOT_FOUND`. Adding an empty message table then fails with `ERROR_MR_MID_NOT_FOUND` on the first missing string.
 
@@ -65,11 +72,11 @@ Example: `Microsoft-Windows-WinML` is registered to `%SystemRoot%\system32\WinML
 
 To decode these events with TDH in your own consumer, you have to fake the schema. Rebuild a manifest XML from the Event Log metadata and load it with `TdhLoadManifest`. A loaded XML manifest takes precedence over the broken registration. A binary loaded with `TdhLoadManifestFromBinary` does not.
 
-### ERROR_INVALID_OPERATION
+### ERROR_EMPTY
 
-The provider's manifest declares no events. Its `WEVT_TEMPLATE` has channels, keywords, levels and so on, but no `EVNT` element. For example, `ddisplay.dll` contains `CHAN PRVA OPCO LEVL TASK KEYW` only. These are registered for their channels or keywords, or the events are logged by a different provider. There is nothing to recover.
+TDH says the provider's manifest defines no events, and on Windows 11 26200 that's true for every provider here. Its `WEVT_TEMPLATE` has channels, keywords, levels and so on, but no `EVNT` element. For example, `ddisplay.dll` contains `CHAN PRVA OPCO LEVL TASK KEYW` only. These are registered for their channels or keywords, or the events are logged by a different provider. There is nothing to recover.
 
-The exception is `Microsoft-Windows-CertificateServicesClient-CertEnroll`. It does declare 80 events, all with 32-bit Event Log message ids (facility `0x25A`). TDH's documented enumeration still returns `ERROR_INVALID_OPERATION` for it, and we don't know why. The Event Log API reads all 80 events, so they are reconstructed here. See [ERROR_INSUFFICIENT_BUFFER](#error_insufficient_buffer) for why TraceEvent also misses it.
+`Microsoft-Windows-CertificateServicesClient-CertEnroll` also gets `ERROR_EMPTY`, although it declares 80 events. `TdhGetAllEventsInformation` returns them, so it is in `manifest/`; why the enumeration disagrees is unknown.
 
 ### ERROR_RESOURCE_TYPE_NOT_FOUND
 
@@ -87,16 +94,3 @@ The resource file exists and has a `WEVT_TEMPLATE`, but that template doesn't co
 * `Microsoft-Windows-Privacy-Auditing-DiagnosticData` and `-TailoredExperiences` are registered to `diagtrack.dll`, whose manifest only contains `{6489b27f-…}` and `{030f2f57-…}`.
 
 The Event Log API fails the same way, so nothing can be recovered from the registered file.
-
-### ERROR_INSUFFICIENT_BUFFER
-
-TDH *can* read this manifest. `ERROR_INSUFFICIENT_BUFFER` is the normal "give me a buffer" answer. These providers are here because of a TraceEvent 2.0.48 bug, not a TDH failure.
-
-`RegisteredTraceEventParser.GetManifestForRegisteredProvider` doesn't use `TdhEnumerateManifestProviderEvents`. Instead, it calls [`TdhGetAllEventsInformation`](https://learn.microsoft.com/windows/win32/etw/tdhgetalleventsinformation) once per event version, from 0 up to 255, and stops at the first `ERROR_NOT_FOUND` after version 0. That function is exported from `tdh.dll` but isn't declared in any SDK header. Its documentation doesn't say how the version in `pEvent` selects events, and TraceEvent's scan assumes versions are contiguous from 0.
-
-Event Log-era manifests with 32-bit message ids break that assumption. TDH files their events under a "version" equal to the low byte of the id's facility, so TraceEvent's scan stops before reaching them:
-
-* `Volsnap`'s ids are `0x?006xxxx`, so its 62 events are only returned at version 6.
-* CertEnroll's ids are `0x?25Axxxx`, so its events are only returned at version 90.
-
-Current TraceEvent releases use `TdhEnumerateManifestProviderEvents` instead, which does read Volsnap.

@@ -6,10 +6,10 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Xml.Linq;
 
-namespace DumpRegisteredEtwProviders
+namespace EtwManifestParsing
 {
     /// <summary>One event, already rendered into the columns of a manifest tsv row.</summary>
-    class ReconstructedEvent
+    public class ReconstructedEvent
     {
         public int Id;
         public int Version;
@@ -23,7 +23,7 @@ namespace DumpRegisteredEtwProviders
     }
 
     /// <summary>
-    /// Best-effort event metadata for providers that TDH (and therefore TraceEvent) cannot decode.
+    /// Best-effort event metadata for providers that TDH cannot decode.
     /// </summary>
     /// <remarks>
     /// TDH resolves a registered publisher through its resource file AND its localized strings, and
@@ -37,11 +37,11 @@ namespace DumpRegisteredEtwProviders
     /// ProviderMetadata.Events formats every event's message while enumerating, so one missing
     /// string throws away the whole provider - the exact failure we are working around.
     /// </remarks>
-    static class EventLogMetadata
+    public static class EventLogMetadata
     {
         /// <summary>
-        /// The status TDH gives for this provider's manifest. ERROR_INSUFFICIENT_BUFFER (122) means
-        /// TDH could read it; anything else is why TraceEvent produced nothing.
+        /// The status TdhEnumerateManifestProviderEvents gives for this provider's manifest - TDH's own
+        /// account of why it has no events (ERROR_INSUFFICIENT_BUFFER (122) would mean it has some).
         /// </summary>
         public static int TdhStatus(Guid provider)
         {
@@ -62,7 +62,7 @@ namespace DumpRegisteredEtwProviders
             { 13, "ERROR_INVALID_DATA" },
             { 122, "ERROR_INSUFFICIENT_BUFFER" },
             { 1813, "ERROR_RESOURCE_TYPE_NOT_FOUND" },
-            { 4306, "ERROR_INVALID_OPERATION" },
+            { 4306, "ERROR_EMPTY" },
             { 15100, "ERROR_MUI_FILE_NOT_FOUND" },
         };
 
@@ -71,11 +71,10 @@ namespace DumpRegisteredEtwProviders
         /// Log API cannot open the publisher either.
         /// </summary>
         /// <remarks>
-        /// Names follow TraceEvent's GetManifestForRegisteredProvider so that these rows read like
-        /// the manifest/ ones - task + opcode, _V suffix, Always..Verbose, keyword_N for unnamed
-        /// bits. The difference is that TraceEvent names things with their localized display
-        /// strings, which is precisely what is missing here, so these use the manifest's symbolic
-        /// names instead (task "Name" and opcode "win:Start" for WinML).
+        /// Names come from EventNamer, as in manifest/, and the other columns are rendered the same
+        /// way (Always..Verbose, keyword_N for unnamed bits). The difference is that TDH names tasks
+        /// and opcodes with their localized display strings - precisely what is missing here - so
+        /// these use the manifest's symbolic names instead (task "Name" and opcode "win:Start" for WinML).
         /// </remarks>
         public static List<ReconstructedEvent> GetEvents(string providerName)
         {
@@ -91,9 +90,7 @@ namespace DumpRegisteredEtwProviders
                 var keywords = ReadTable(pm, EvtPublisherMetadataKeywords, EvtPublisherMetadataKeywordName, EvtPublisherMetadataKeywordValue);
                 var channels = ReadChannels(pm);
 
-                var taskNames = new Dictionary<string, int>();
-                var opcodeNames = new Dictionary<string, int>();
-                var eventNames = new Dictionary<string, int>();
+                var namer = new EventNamer();
 
                 var en = EvtOpenEventMetadataEnum(pm, 0);
                 if (en == IntPtr.Zero)
@@ -105,10 +102,10 @@ namespace DumpRegisteredEtwProviders
                     {
                         try
                         {
-                            // Event Log-era manifests (Volsnap, CertEnroll) use 32-bit message ids -
-                            // Severity|Facility|Code, e.g. 0xC0060018. An ETW descriptor only carries the
-                            // low 16 bits, which is also what Event Viewer shows as the Event ID.
-                            var id = (int)(GetUInt32(em, EventMetadataEventID) & 0xFFFF);
+                            // wevtapi reports a classic event's full 32-bit message id as its id, with
+                            // version and opcode 0 - see EventNamer.
+                            var fullId = GetUInt32(em, EventMetadataEventID);
+                            var id = (int)(fullId & 0xFFFF);
                             var version = (int)GetUInt32(em, EventMetadataEventVersion);
                             var channel = (int)GetUInt32(em, EventMetadataEventChannel);
                             var level = (int)GetUInt32(em, EventMetadataEventLevel);
@@ -118,43 +115,24 @@ namespace DumpRegisteredEtwProviders
                             var messageId = GetUInt32(em, EventMetadataEventMessageID);
                             var template = GetString(em, EventMetadataEventTemplate);
 
+                            var taskName = tasks.TryGetValue((ulong)task, out var t) ? t : null;
+
                             // Opcodes are stored per task: the low word is the task, the high word the opcode.
-                            var taskName = tasks.TryGetValue((ulong)task, out var t) ? LegalIdentifier(t) : $"task_{task}";
-                            if (taskNames.TryGetValue(taskName, out var taskForName) && taskForName != task)
-                                taskName = $"{taskName}_{task}";
-                            taskNames[taskName] = task;
+                            string opcodeName = null;
+                            var opcodeKey = (ulong)(uint)opcode << 16;
+                            if (opcode != 0 && (opcodes.TryGetValue(opcodeKey | (uint)task, out var o) || opcodes.TryGetValue(opcodeKey, out o)))
+                                opcodeName = o.Substring(o.IndexOf(':') + 1);
 
-                            var opcodeName = string.Empty;
-                            if (opcode != 0)
-                            {
-                                var opcodeKey = (ulong)(uint)opcode << 16;
-                                if (opcodes.TryGetValue(opcodeKey | (uint)task, out var o) || opcodes.TryGetValue(opcodeKey, out o))
-                                    opcodeName = LegalIdentifier(o.Substring(o.IndexOf(':') + 1));
-                                else
-                                    opcodeName = $"opcode_{opcode}";
-
-                                if (opcodeNames.TryGetValue(opcodeName, out var opcodeForName) && opcodeForName != opcode)
-                                    opcodeName = $"{opcodeName}_{task}_{opcode}";
-                                opcodeNames[opcodeName] = opcode;
-                            }
-
-                            var eventName = taskName.EndsWith(opcodeName, StringComparison.OrdinalIgnoreCase)
-                                ? taskName
-                                : taskName + Capitalize(opcodeName);
-                            if (eventNames.TryGetValue(eventName, out var idForName) && idForName != id)
-                                eventName += id;
-                            eventNames[eventName] = id;
-
-                            var symbol = version > 0 ? $"{eventName}_V{version}" : eventName;
-
+                            var classic = (keyword & EventNamer.EventlogClassicKeyword) != 0;
+                            var names = namer.Name(id, version, task, taskName, opcode, opcodeName, classic ? fullId : (uint?)null);
                             result.Add(new ReconstructedEvent
                             {
                                 Id = id,
-                                Version = version,
-                                Signature = $"{symbol}({Fields(template)})",
-                                Opcode = opcodeName,
+                                Version = names.Version,
+                                Signature = $"{names.Symbol}({Fields(template)})",
+                                Opcode = names.Opcode,
                                 Keywords = KeywordString(keywords, keyword),
-                                Task = taskName,
+                                Task = names.Task,
                                 Level = level <= LevelNames.Length - 1 ? LevelNames[level] : string.Empty,
                                 Channel = channels.TryGetValue(channel, out var c) ? c : string.Empty,
                                 Message = FormatMessage(pm, messageId),
@@ -208,7 +186,7 @@ namespace DumpRegisteredEtwProviders
             return string.Join(", ", fields);
         }
 
-        /// <summary>Keyword names for bits 0-47; bits 48-63 are reserved (channels etc.) and skipped, as TraceEvent does.</summary>
+        /// <summary>Keyword names for bits 0-47; bits 48-63 are reserved (channels etc.) and skipped, as in manifest/.</summary>
         private static string KeywordString(Dictionary<ulong, string> keywords, ulong keywordSet)
         {
             var names = new List<string>();
@@ -218,8 +196,8 @@ namespace DumpRegisteredEtwProviders
                 if ((keyword & keywordSet) == 0)
                     continue;
                 // symbolic keyword names can contain spaces ("ioctl create query"), which would make
-                // this space-separated list ambiguous - TraceEvent strips them too
-                names.Add(keywords.TryGetValue(keyword, out var name) ? LegalIdentifier(name) : $"keyword_{keyword:x}");
+                // this space-separated list ambiguous - TdhManifestReader strips them too
+                names.Add(keywords.TryGetValue(keyword, out var name) ? EventNamer.MakeLegalIdentifier(name) : $"keyword_{keyword:x}");
             }
 
             return string.Join(" ", names);
@@ -242,16 +220,6 @@ namespace DumpRegisteredEtwProviders
             }
 
             return buffer.ToString().Trim().Replace("\r", @"\r").Replace("\n", @"\n").Replace("\t", @"\t");
-        }
-
-        private static string LegalIdentifier(string name)
-        {
-            return name.Replace(" ", "").Replace("-", "_");
-        }
-
-        private static string Capitalize(string name)
-        {
-            return name.Length == 0 || char.IsUpper(name[0]) ? name : char.ToUpper(name[0]) + name.Substring(1);
         }
 
         /// <summary>value -> symbolic name, for one of the publisher's task/opcode/keyword tables.</summary>

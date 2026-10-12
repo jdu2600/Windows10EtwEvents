@@ -209,10 +209,11 @@ namespace EtwManifestParsing
         /// </summary>
         /// <remarks>
         /// Asking about every version, rather than only those TdhEnumerateManifestProviderEvents
-        /// lists, is not just simpler: that enumeration misses events. It never lists
-        /// Microsoft-AppV-Client-StreamingUX event 9 (versions 22-24) or Microsoft-Windows-MSMPEG2VDEC
-        /// event 13 (version 12), and for CertEnroll it reports ERROR_EMPTY (no events),
-        /// whose packed message ids put its events at version 90.
+        /// lists, is not just simpler: that enumeration misses events. It walks the provider's
+        /// versions upward from 0 and gives up after 11 empty versions in a row, so it never lists
+        /// Microsoft-AppV-Client-StreamingUX's events at versions 22-24 (the previous version with
+        /// events is 1) or Microsoft-Windows-MSMPEG2VDEC's at version 12 (after 0), and for CertEnroll,
+        /// whose packed message ids put every event at version 90, it reports ERROR_EMPTY.
         /// </remarks>
         private static IEnumerable<EventInfo> GetAllEventsInformation(Guid provider)
         {

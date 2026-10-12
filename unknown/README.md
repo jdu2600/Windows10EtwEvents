@@ -76,7 +76,7 @@ To decode these events with TDH in your own consumer, you have to fake the schem
 
 TDH says the provider's manifest defines no events, and on Windows 11 26200 that's true for every provider here. Its `WEVT_TEMPLATE` has channels, keywords, levels and so on, but no `EVNT` element. For example, `ddisplay.dll` contains `CHAN PRVA OPCO LEVL TASK KEYW` only. These are registered for their channels or keywords, or the events are logged by a different provider. There is nothing to recover.
 
-`Microsoft-Windows-CertificateServicesClient-CertEnroll` also gets `ERROR_EMPTY`, although it declares 80 events. `TdhGetAllEventsInformation` returns them, so it is in `manifest/`; why the enumeration disagrees is unknown.
+`Microsoft-Windows-CertificateServicesClient-CertEnroll` also gets `ERROR_EMPTY`, although it declares 80 events. The enumeration walks event versions upward from 0 and gives up after 11 empty versions in a row, and CertEnroll's events are all at version 90 (the low byte of facility `0x25A`), so it finds none. `TdhGetAllEventsInformation`, asked about every version, returns them, so CertEnroll is in `manifest/`.
 
 ### ERROR_RESOURCE_TYPE_NOT_FOUND
 

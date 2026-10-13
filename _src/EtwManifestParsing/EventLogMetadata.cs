@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using Microsoft.Win32;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Xml.Linq;
@@ -12,6 +13,7 @@ namespace EtwManifestParsing
     public class ReconstructedEvent
     {
         public int Id;
+        public uint EventLogId; // the full 32-bit message id of a classic event, otherwise Id
         public int Version;
         public string Signature; // Symbol(Type Name, ...)
         public string Opcode;
@@ -23,7 +25,8 @@ namespace EtwManifestParsing
     }
 
     /// <summary>
-    /// Best-effort event metadata for providers that TDH cannot decode.
+    /// Event metadata from the Event Log API (wevtapi): the channel and message of every manifest provider's
+    /// events, and all of the events of providers that TDH cannot decode.
     /// </summary>
     /// <remarks>
     /// TDH resolves a registered publisher through its resource file AND its localized strings, and
@@ -49,13 +52,24 @@ namespace EtwManifestParsing
             return TdhEnumerateManifestProviderEvents(ref provider, IntPtr.Zero, ref size);
         }
 
-        /// <summary>The winerror.h name, e.g. "ERROR_MUI_FILE_NOT_FOUND" - or the bare code if it is not one we know.</summary>
-        public static string DescribeStatus(int status)
+        /// <summary>
+        /// The provider's ResourceFileName exactly as registered under WINEVT\Publishers, environment
+        /// variables unexpanded - or empty if it isn't a registered publisher. When TDH fails with
+        /// ERROR_FILE_NOT_FOUND this is usually the reason: a path that doesn't exist or can't be expanded.
+        /// </summary>
+        public static string RegisteredResourceFile(Guid provider)
         {
+            using (var key = Registry.LocalMachine.OpenSubKey($@"SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Publishers\{{{provider}}}"))
+                return key?.GetValue("ResourceFileName", null, RegistryValueOptions.DoNotExpandEnvironmentNames) as string ?? string.Empty;
+        }
+
+        /// <summary>The winerror.h name, e.g. "ERROR_MUI_FILE_NOT_FOUND" - or the bare code if it is not one we know.</summary>
+        public static string DescribeStatus(int status)        {
             return StatusNames.TryGetValue(status, out var name) ? name : status.ToString();
         }
 
-        // Every status seen across the unknown/ providers. unknown/README.md explains each one.
+        // Every status seen across the unknown/ providers (unknown/README.md explains each one), and the
+        // errors seen formatting event messages.
         private static readonly Dictionary<int, string> StatusNames = new Dictionary<int, string>
         {
             { 2, "ERROR_FILE_NOT_FOUND" },
@@ -64,6 +78,7 @@ namespace EtwManifestParsing
             { 1813, "ERROR_RESOURCE_TYPE_NOT_FOUND" },
             { 4306, "ERROR_EMPTY" },
             { 15100, "ERROR_MUI_FILE_NOT_FOUND" },
+            { 15105, "ERROR_MUI_FILE_NOT_LOADED" },
         };
 
         /// <summary>
@@ -128,6 +143,7 @@ namespace EtwManifestParsing
                             result.Add(new ReconstructedEvent
                             {
                                 Id = id,
+                                EventLogId = fullId,
                                 Version = names.Version,
                                 Signature = $"{names.Symbol}({Fields(template)})",
                                 Opcode = names.Opcode,
@@ -203,7 +219,12 @@ namespace EtwManifestParsing
             return string.Join(" ", names);
         }
 
-        /// <summary>The event message, or empty - for these providers it is usually the missing string.</summary>
+        /// <summary>
+        /// The event's message template, empty if it declares none, or &lt;ERROR_NAME&gt; if it declares one
+        /// that cannot be loaded (ERROR_MUI_FILE_NOT_LOADED when the .mui satellite is missing). The
+        /// brackets keep an error from passing for a message: some real messages are bare identifiers
+        /// (MSDTC 0xC000D01A's is XACT_E_LOGFULL).
+        /// </summary>
         private static string FormatMessage(IntPtr pm, uint messageId)
         {
             if (messageId == uint.MaxValue)
@@ -212,11 +233,21 @@ namespace EtwManifestParsing
             var buffer = new StringBuilder(4096);
             if (!EvtFormatMessage(pm, IntPtr.Zero, messageId, 0, IntPtr.Zero, EvtFormatMessageId, buffer.Capacity, buffer, out var used))
             {
-                if (Marshal.GetLastWin32Error() != ERROR_INSUFFICIENT_BUFFER)
-                    return string.Empty;
-                buffer = new StringBuilder(used);
-                if (!EvtFormatMessage(pm, IntPtr.Zero, messageId, 0, IntPtr.Zero, EvtFormatMessageId, buffer.Capacity, buffer, out used))
-                    return string.Empty;
+                var error = Marshal.GetLastWin32Error();
+                if (error == ERROR_INSUFFICIENT_BUFFER)
+                {
+                    buffer = new StringBuilder(used);
+                    error = EvtFormatMessage(pm, IntPtr.Zero, messageId, 0, IntPtr.Zero, EvtFormatMessageId, buffer.Capacity, buffer, out used)
+                        ? 0
+                        : Marshal.GetLastWin32Error();
+                }
+                if (error != 0)
+                {
+                    // wevtapi reports some failures as HRESULT_FROM_WIN32(code)
+                    if (((uint)error & 0xFFFF0000) == 0x80070000)
+                        error &= 0xFFFF;
+                    return $"<{DescribeStatus(error)}>";
+                }
             }
 
             return buffer.ToString().Trim().Replace("\r", @"\r").Replace("\n", @"\n").Replace("\t", @"\t");

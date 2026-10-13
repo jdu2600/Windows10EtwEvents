@@ -158,6 +158,7 @@ namespace EtwManifestParsing
                     Level = info.Level <= LevelNames.Length - 1 ? LevelNames[info.Level] : string.Empty,
                     Keyword = KeywordString(keywords, info.Keyword),
                     Task = names.Task,
+                    EventLogId = classicMessageId ?? (uint)info.Id,
                     Template = templateId,
                 });
             }

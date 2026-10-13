@@ -10,13 +10,13 @@ namespace EtwManifestParsing
     /// </summary>
     /// <remarks>
     /// Where the manifest names the task, events keep TraceEvent's task + opcode names. Otherwise
-    /// they are Event_&lt;id&gt;[_&lt;opcode&gt;][_&lt;severity&gt;][_V&lt;version&gt;], like the
-    /// Task_Opcode names of the MOF providers.
+    /// they are Event_&lt;id&gt;[_&lt;opcode&gt;][_V&lt;version&gt;], like the Task_Opcode names of the MOF
+    /// providers - or Message_0x&lt;message id&gt; for an Event Log-era event. These match PerfView #2483.
     ///
     /// Event Log-era events (win:EventlogClassic) keep a 32-bit message id - Severity|C|R|Facility|Code -
     /// and the manifest compiler packs it into the descriptor: Id = bits 0-15, Version = bits 16-23,
     /// Opcode = bits 24-31 (the full id is stored alongside). They are named as wevtapi and the event
-    /// log present them: the code as the id, version 0, no opcode, and the severity in the name.
+    /// log present them: the code as the id, version 0 and no opcode, named by the whole message id.
     ///
     /// Names depend on the events named before them (to keep them unique), so use one EventNamer per
     /// provider and feed it the events in a stable order.
@@ -76,6 +76,12 @@ namespace EtwManifestParsing
                 if (_eventNames.TryGetValue(eventName, out var idForName) && idForName != id)
                     eventName += id;
             }
+            else if (classicMessageId.HasValue)
+            {
+                // A classic event is identified by its whole message id - unique, and it keeps the
+                // severity and facility that the code alone drops (as in PerfView #2483)
+                eventName = $"Message_0x{classicMessageId.Value:X8}";
+            }
             else
             {
                 eventName = $"Event_{id}";
@@ -84,16 +90,13 @@ namespace EtwManifestParsing
             }
             _eventNames[eventName] = id;
 
-            if (classicMessageId.HasValue)
+            if (classicMessageId.HasValue && taskName != null)
             {
-                var messageId = classicMessageId.Value;
-                var severity = (int)(messageId >> 30);
-                if (severity != 0)
-                    eventName += "_" + SeverityNames[severity];
-                // Two classic events can share a code and a severity in different facilities.
-                if (_classicNames.TryGetValue(eventName, out var other) && other != messageId)
-                    eventName += $"_Facility{(messageId >> 16) & 0xFFF:X}";
-                _classicNames[eventName] = messageId;
+                // A classic event with a named task (none seen so far) is named like any other; its
+                // message id keeps it unique if another classic event has the same name.
+                if (_classicNames.TryGetValue(eventName, out var other) && other != classicMessageId.Value)
+                    eventName += $"_Message_0x{classicMessageId.Value:X8}";
+                _classicNames[eventName] = classicMessageId.Value;
             }
 
             // The manifest opcode attribute was "win:<name>" for the reserved opcodes (< 10), and just
@@ -134,8 +137,6 @@ namespace EtwManifestParsing
             return char.ToUpper(name[0]) + name.Substring(1);
         }
 
-        // the top two bits of an Event Log message id
-        private static readonly string[] SeverityNames = { "Success", "Informational", "Warning", "Error" };
 
         private const int DataCollectionStart = 3;
         private const int DataCollectionStop = 4;

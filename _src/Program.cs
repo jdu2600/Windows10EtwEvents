@@ -1,11 +1,10 @@
-﻿using System;
+using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Xml;
 using Microsoft.Win32;
 
 using EtwManifestParsing;  // https://github.com/zodiacon/EtwExplorer/tree/master/EtwManifestParsing
-using WinTools;            // https://github.com/lallousx86/WinTools/tree/master/WEPExplorer
 
 namespace DumpRegisteredEtwProviders
 {
@@ -17,24 +16,13 @@ namespace DumpRegisteredEtwProviders
              * output all ETW events in a single line 'grep-able' format per provider
              * 
              * TdhManifestReader reads each registered provider's events straight from TDH (this used to be
-             * TraceEvent's GetManifestForRegisteredProvider - see TdhManifestReader for why it isn't),
-             * but lallousx86's WEPExplorer provides improved metadata for providers that are also
-             * Eventlog Providers (i.e. channel, message template).
-             * Unfortunately it it doesn't output event names, so we need to combine both.
+             * TraceEvent's GetManifestForRegisteredProvider - see TdhManifestReader for why it isn't), and
+             * EventLogMetadata adds what only the Event Log API (wevtapi) has: each event's channel and
+             * message template - and all of the events of providers whose manifest TDH cannot decode.
              *
              * For convenience, I also use the manifest parsing code from EtwExplorer.
              * And was about to contribute back my MOF parsing code.
              */
-
-            /*
-             * you need to separately build WEPExplorer and copy cli.exe to your working directory
-             * https://github.com/lallousx86/WinTools/tree/master/WEPExplorer
-             */
-            var useWEPExplorer = File.Exists(WinTools.Cli.CLI_PATH);
-            if (!useWEPExplorer)
-            {
-                Console.WriteLine($"{Cli.CLI_PATH} from WEPExplorer is missing - Eventlog provider data will be incomplete");
-            }
 
             var outputDir = "output";
             var manifestOutputDir = Path.Combine(outputDir, "manifest");
@@ -76,6 +64,17 @@ namespace DumpRegisteredEtwProviders
                 bool foundProviderDetails = false;
                 EtwManifest manifest = null;
 
+                // what the Event Log API says about the provider's events - none if it isn't a publisher
+                var eventLogEvents = new List<ReconstructedEvent>();
+                try
+                {
+                    eventLogEvents = EventLogMetadata.GetEvents(name);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine($"EVENTLOG METADATA FAILURE - name={name} error={e.Message}");
+                }
+
                 // is this is manifest-based provider?
                 try
                 {
@@ -86,6 +85,11 @@ namespace DumpRegisteredEtwProviders
 
                 if (manifest != null)
                 {
+                    // channel and message by the id and version the Event Log API knows each event by
+                    var eventLogDetails = new Dictionary<string, ReconstructedEvent>();
+                    foreach (var eventLogEvent in eventLogEvents)
+                        eventLogDetails[$"{eventLogEvent.EventLogId}/{eventLogEvent.Version}"] = eventLogEvent;
+
                     using (var tsvFile = new StreamWriter(Path.Combine(manifestOutputDir, tsvFilename)))
                     {
                         foundProviderDetails = true;
@@ -107,38 +111,8 @@ namespace DumpRegisteredEtwProviders
                             }
                             catch (InvalidOperationException) { } // no fields
 
-
-                            var Channel = string.Empty;
-                            var Message = string.Empty;
-                            if (useWEPExplorer)
-                            {
-                                // add channel and message from WEPExplorer (if available)
-                                var xmlNode = WEPExplorer.GetProviderMetadataXml(name);
-                                try
-                                {
-                                    if (xmlNode != null && xmlNode.HasChildNodes)
-                                    {
-                                        foreach (XmlNode xnEvent in xmlNode.SelectNodes($"/{WEPExplorer.XML_PROVIDERS}/{WEPExplorer.XML_PROVIDER}/{WEPExplorer.XML_EVENT_METADATA}/{WEPExplorer.XML_EVENT}[{WEPExplorer.XML_ID}={evt.Value}][{WEPExplorer.XML_VERSION}={evt.Version}]"))
-                                        {
-                                            Channel = WEPExplorer.xnGetText(xnEvent, WEPExplorer.XML_CHANNEL);
-                                            Message = WEPExplorer.xnGetText(xnEvent, WEPExplorer.XML_MESSAGE).Replace("\r", @"\r").Replace("\n", @"\n");
-                                        }
-                                    }
-                                }
-                                catch
-                                {
-                                    var errorFilename = "ERROR_WEPExplorer.xml";
-                                    Console.WriteLine($"WEPExplorer XML PARSE FAILURE - name={name} file={errorFilename}");
-                                    using (var errorFile = new StreamWriter(Path.Combine(outputDir, errorFilename)))
-                                    {
-                                        errorFile.WriteLine(xmlNode.OuterXml);
-                                    }
-                                }
-                            }
-
-                            var etwEvent = $"{name}\t{evt.Value}\t{evt.Version}\t{evt.Symbol}({fields})\t{evt.Opcode}\t{evt.Keyword}\t{evt.Task}\t{evt.Level}\t{Channel}\t{Message}";
-                            etwEvent = etwEvent.Replace("&quot;", "\"").Replace("&lt;", "<").Replace("&gt;", ">");
-                            tsvFile.WriteLine(etwEvent);
+                            eventLogDetails.TryGetValue($"{evt.EventLogId}/{evt.Version}", out var details);
+                            tsvFile.WriteLine($"{name}\t{evt.Value}\t{evt.Version}\t{evt.Symbol}({fields})\t{evt.Opcode}\t{evt.Keyword}\t{evt.Task}\t{evt.Level}\t{details?.Channel}\t{details?.Message}");
                         }
                     }
                 }
@@ -183,38 +157,31 @@ namespace DumpRegisteredEtwProviders
                 }
 
 
-                // no manifest and no MOF...
-                // TDH could not decode this provider, but the Event Log API can often still read its
-                // events - see EventLogMetadata. Those rows are a best-effort reconstruction, so they
-                // stay in unknown/ alongside the TDH status that put them there (unknown/README.md).
+                // no manifest TDH can decode and no MOF...
                 if (!foundProviderDetails)
                 {
-                    var tdhStatus = EventLogMetadata.DescribeStatus(EventLogMetadata.TdhStatus(provider));
-                    var events = new System.Collections.Generic.List<ReconstructedEvent>();
-                    try
+                    if (eventLogEvents.Count != 0)
                     {
-                        events = EventLogMetadata.GetEvents(name);
+                        // ...but the Event Log API reads the same manifest: TDH failed on something else, such as
+                        // a missing .mui satellite (unknown/README.md). These are complete manifest providers.
+                        using (var tsv_file = new StreamWriter(Path.Combine(manifestOutputDir, tsvFilename)))
+                        {
+                            tsv_file.WriteLine($"provider\tevent_id\tversion\tevent(fields)\topcode\tkeywords\ttask\tlevel\tevtlog_channel\tevtlog_message");
+                            foreach (var evt in eventLogEvents)
+                            {
+                                tsv_file.WriteLine($"{name}\t{evt.Id}\t{evt.Version}\t{evt.Signature}\t{evt.Opcode}\t{evt.Keywords}\t{evt.Task}\t{evt.Level}\t{evt.Channel}\t{evt.Message}");
+                            }
+                        }
                     }
-                    catch (Exception e)
+                    else
                     {
-                        Console.WriteLine($"EVENTLOG METADATA FAILURE - name={name} error={e.Message}");
-                    }
-
-                    using (var tsv_file = new StreamWriter(Path.Combine(unknownOutputDir, tsvFilename)))
-                    {
-                        if (events.Count == 0)
+                        // TDH's reason, and the manifest it was registered with
+                        var tdhStatus = EventLogMetadata.DescribeStatus(EventLogMetadata.TdhStatus(provider));
+                        using (var tsv_file = new StreamWriter(Path.Combine(unknownOutputDir, tsvFilename)))
                         {
                             // keep the provider name in the first row - docs/build_data.py reads it from there
-                            tsv_file.WriteLine($"provider\ttdh_status");
-                            tsv_file.WriteLine($"{name}\t{tdhStatus}");
-                        }
-                        else
-                        {
-                            tsv_file.WriteLine($"provider\tevent_id\tversion\tevent(fields)\topcode\tkeywords\ttask\tlevel\tevtlog_channel\tevtlog_message\ttdh_status");
-                            foreach (var evt in events)
-                            {
-                                tsv_file.WriteLine($"{name}\t{evt.Id}\t{evt.Version}\t{evt.Signature}\t{evt.Opcode}\t{evt.Keywords}\t{evt.Task}\t{evt.Level}\t{evt.Channel}\t{evt.Message}\t{tdhStatus}");
-                            }
+                            tsv_file.WriteLine($"provider\ttdh_status\tresource_file");
+                            tsv_file.WriteLine($"{name}\t{tdhStatus}\t{EventLogMetadata.RegisteredResourceFile(provider)}");
                         }
                     }
                 }

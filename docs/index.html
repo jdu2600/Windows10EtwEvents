@@ -138,6 +138,8 @@
   .lvl-Verbose { color: var(--lvl-verbose); }
   td.small { font-size: 13px; overflow-wrap: anywhere; }
   td.lvl { white-space: nowrap; }
+  /* the Unknown view's TDH status: as wide as the status, never split, the rest goes to the file path */
+  th.status, td.status { width: 1%; white-space: nowrap; }
   td.desc { font-size: 13px; color: var(--muted); }
   mark { background: var(--mark); color: inherit; border-radius: 2px; }
   .more { padding: 16px; text-align: center; }
@@ -172,6 +174,7 @@
     }
     td:empty, td[data-label]:has(> .kw:empty) { display: none; }
     td.prov { font-weight: 600; }
+    td.status { width: 100%; }
   }
 </style>
 </head>
@@ -222,7 +225,9 @@ const REPO = 'https://github.com/jdu2600/Windows10EtwEvents/blob/';
 const PAGE = 200;
 const KIND_LABEL = { manifest: 'Manifest', mof: 'MOF', unknown: 'Unknown' };
 
-let DATA, EVENTS = [], VERSIONS = [], LATEST_COUNT = [];
+let DATA, EVENTS = [], VERSIONS = [], LATEST_COUNT = [], UNKNOWN = new Map();
+// what each tdh_status means
+const UNKNOWN_README = 'https://github.com/jdu2600/Windows10EtwEvents/blob/main/unknown/README.md';
 const CACHE = new Map();
 const state = {
   ver: '', provider: null, pendingProvider: null, kind: '', q: '', level: '', keyword: '', added: '', pfilter: '',
@@ -319,7 +324,9 @@ function prepare(DATA) {
   for (const e of EVENTS) maxVer.set(key(e), Math.max(maxVer.get(key(e)) ?? -1, e.ver));
   const LATEST_COUNT = DATA.providers.map(() => 0);
   for (const e of EVENTS) if ((e.latest = e.ver === maxVer.get(key(e)))) LATEST_COUNT[e.p]++;
-  return { DATA, EVENTS, LATEST_COUNT };
+  // provider index -> { status, file } for the unknown providers (both empty in older captures)
+  const UNKNOWN = new Map((DATA.unknown || []).map(([p, status, file]) => [p, { status, file }]));
+  return { DATA, EVENTS, LATEST_COUNT, UNKNOWN };
 }
 
 // load a Windows version's bundle (cached), keeping the selected provider if it exists there.
@@ -346,7 +353,7 @@ async function loadVersion(id) {
     }
   }
   if (seq !== loadSeq) return false;
-  ({ DATA, EVENTS, LATEST_COUNT } = CACHE.get(v.id));
+  ({ DATA, EVENTS, LATEST_COUNT, UNKNOWN } = CACHE.get(v.id));
   state.ver = v.id;
   state.pendingProvider = null;
   state.provider = findProvider(want);
@@ -453,13 +460,46 @@ function tsvLink(i) {
   return REPO + DATA.ref + '/' + p[1] + '/' + encodeURIComponent(p[2]);
 }
 
+// a tdh_status, linked to the README section explaining it
+function statusLink(status) {
+  return status
+    ? `<a href="${UNKNOWN_README}#${encodeURIComponent(status.toLowerCase())}" title="What ${esc(status)} means for this provider">${highlight(status)}</a>`
+    : '<span title="Not recorded in this capture">—</span>';
+}
+
+// the Unknown tab with no provider selected: why each unknown provider has no events
+function renderUnknown(ts) {
+  const rows = [];
+  for (const [i, why] of UNKNOWN) {
+    const p = DATA.providers[i];
+    const hay = [p[0], why.status, why.file].join('\t').toLowerCase();
+    if (!ts.every(t => hay.includes(t))) continue;
+    rows.push(`<tr><td class="prov"><a href="#${esc(hashString({ provider: i, keyword: '' }))}" data-p="${i}">${highlight(p[0])}</a></td>` +
+      `<td class="small status" data-label="TDH status">${statusLink(why.status)}</td>` +
+      `<td class="small" data-label="Registered resource file">${highlight(why.file)}</td></tr>`);
+  }
+  const recorded = [...UNKNOWN.values()].some(why => why.status);
+  $('summary').innerHTML = `<span><strong>${fmt(rows.length)}</strong> unknown providers</span>` +
+    (recorded ? '' : '<span>This capture predates the TDH status and resource file columns.</span>') +
+    (ts.length ? '<button type="button" id="clearFilters" class="linklike">Clear filters</button>' : '');
+  if (ts.length) $('clearFilters').onclick = () => { state.q = ''; $('q').value = ''; update(); };
+  $('results').innerHTML = rows.length
+    ? '<table><thead><tr><th>Provider</th><th class="status">TDH status</th><th>Registered resource file</th></tr></thead>' +
+      `<tbody>${rows.join('')}</tbody></table>`
+    : '<div class="empty">No unknown providers match.</div>';
+}
+
 function renderProviderHead() {
   const head = $('providerHead');
   if (state.provider === null) { head.hidden = true; return; }
   const p = DATA.providers[state.provider];
   head.hidden = false;
+  const why = p[1] === 'unknown' && UNKNOWN.get(state.provider);
   head.innerHTML = `<h2>${esc(p[0])}</h2><div class="meta"><span class="badge">${KIND_LABEL[p[1]]}</span>` +
-    (p[1] === 'unknown' ? '<span>Registered provider with no published manifest or MOF schema.</span>'
+    (p[1] === 'unknown' ? (why && why.status
+        ? `<span>TDH status: ${statusLink(why.status)}</span>` +
+          `<span title="The ResourceFileName it is registered with">${why.file ? esc(why.file) : 'no registered resource file'}</span>`
+        : '<span>Registered provider with no published manifest or MOF schema.</span>')
       : `<span>${fmt(state.old ? p[3] : LATEST_COUNT[state.provider])} events` +
         (state.old || LATEST_COUNT[state.provider] === p[3] ? '' : ` (${fmt(p[3])} including old versions)`) + '</span>') +
     `<span>since ${sinceTag(p[4], 'This provider', 'margin-left:0')}</span>` +
@@ -502,6 +542,8 @@ function render() {
   renderFilterOptions(scope);
   const ts = terms();
   HL = ts.length ? new RegExp('(' + ts.map(t => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|') + ')', 'gi') : null;
+  // unknown providers have no events to list - show why instead
+  if (state.kind === 'unknown' && state.provider === null && UNKNOWN.size) { matches = []; renderUnknown(ts); return; }
   matches = scope.filter(e =>
     (!state.level || e.level === state.level) &&
     (!state.keyword || e.keywords.includes(state.keyword)) &&

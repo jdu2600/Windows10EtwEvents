@@ -68,10 +68,12 @@ def build(source):
     providers = []  # [name, kind, tsv file name, event count]
     manifest = []  # [provider index, id, version, event(fields), opcode, keywords, task, level, channel, message]
     mof = []  # [provider index, id, version, event(fields), event_type, category, description]
+    unknown = []  # [provider index, tdh_status, resource_file] - empty in captures that predate those columns
     paths = source.files()
     for path, text in zip(paths, source.read(paths)):
         kind, name = path.split('/', 1)
-        rows = [line.split('\t') for line in text.splitlines()[1:] if line]
+        lines = text.splitlines()
+        rows = [line.split('\t') for line in lines[1:] if line]
         providers.append([rows[0][0] if rows else name[:-4], kind, name, 0 if kind == 'unknown' else len(rows)])
         p = len(providers) - 1
         for c in rows:
@@ -79,7 +81,13 @@ def build(source):
                 manifest.append([p, int(c[1]), int(c[2])] + c[3:10])
             elif kind == 'mof':
                 mof.append([p, int(c[2]), int(c[3]), c[4], c[5], c[1], c[6]])
-    return {'version': source.version(), 'ref': source.ref, 'providers': providers, 'manifest': manifest, 'mof': mof}
+        if kind == 'unknown':
+            header = lines[0].split('\t') if lines else []
+            row = rows[0] if rows else []
+            column = lambda n: row[header.index(n)] if n in header and header.index(n) < len(row) else ''
+            unknown.append([p, column('tdh_status'), column('resource_file')])
+    return {'version': source.version(), 'ref': source.ref, 'providers': providers, 'manifest': manifest, 'mof': mof,
+            'unknown': unknown}
 
 
 def short_name(version):

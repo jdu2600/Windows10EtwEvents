@@ -83,6 +83,13 @@
   .checks input { margin: 0; accent-color: var(--accent); }
   .results.compact .c-ver, .results.compact .c-op, .results.compact .c-task { display: none; }
   .results.nokw .c-lvl, .results.nokw .c-kw { display: none; }
+  .results.nomsg .c-chan, .results.nomsg .c-msg { display: none; }
+  /* a search term found only in a hidden column */
+  .hidden-hit {
+    display: inline-block; margin-left: 6px; padding: 0 5px; border-radius: 8px; background: var(--mark);
+    font: 10.5px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; white-space: nowrap; vertical-align: 1px; cursor: help;
+  }
+  .hidden-hit-note { color: var(--muted); }
   .since {
     display: inline-block; margin-left: 6px; padding: 0 5px; border: 1px solid var(--border); border-radius: 8px;
     font: 10.5px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-weight: normal;
@@ -199,6 +206,7 @@
         <label><input type="checkbox" id="latestOnly" checked> Latest versions only</label>
         <label><input type="checkbox" id="compact"> Hide Version, Opcode &amp; Task</label>
         <label><input type="checkbox" id="hideKw"> Hide Level &amp; Keywords</label>
+        <label><input type="checkbox" id="hideMsg"> Hide Channel &amp; Message</label>
         <label><input type="checkbox" id="wrap" checked> Wrap lines</label>
         <label id="blameLabel"><input type="checkbox" id="blame" checked> Show history</label>
       </div>
@@ -218,7 +226,7 @@ let DATA, EVENTS = [], VERSIONS = [], LATEST_COUNT = [];
 const CACHE = new Map();
 const state = {
   ver: '', provider: null, pendingProvider: null, kind: '', q: '', level: '', keyword: '', added: '', pfilter: '',
-  old: false, compact: false, nokw: false, nowrap: false, noblame: false,
+  old: false, compact: false, nokw: false, nomsg: false, nowrap: false, noblame: false,
 };
 let shown = 0, matches = [], view = null, HL = null;
 
@@ -250,6 +258,7 @@ function readHash() {
   state.old = h.get('old') === '1';
   state.compact = h.get('compact') === '1';
   state.nokw = h.get('nokw') === '1';
+  state.nomsg = h.get('nomsg') === '1';
   state.nowrap = h.get('nowrap') === '1';
   state.noblame = h.get('noblame') === '1';
 }
@@ -270,6 +279,7 @@ function hashString(overrides = {}) {
   if (s.old) h.set('old', '1');
   if (s.compact) h.set('compact', '1');
   if (s.nokw) h.set('nokw', '1');
+  if (s.nomsg) h.set('nomsg', '1');
   if (s.nowrap) h.set('nowrap', '1');
   if (s.noblame) h.set('noblame', '1');
   return h.toString();
@@ -294,8 +304,15 @@ function prepare(DATA) {
     // fsince: [[field index, version id], ...] for fields that arrived after the event id first appeared
     e.fsince = new Map(e.fsince || []);
     e.added = new Set([e.since, ...e.fsince.values()]);
-    e.hay = [DATA.providers[e.p][0], e.id, e.sig, e.opcode, e.task, e.keywords.join(' '), e.level, e.channel || '', e.message || '', e.category || '']
-      .join('\t').toLowerCase();
+    // the columns that can be hidden are kept apart, so a match only in a hidden one can be pointed out
+    e.seen = [DATA.providers[e.p][0], e.id, e.sig].join('\t').toLowerCase();
+    e.cols = {
+      op: e.opcode, task: [e.task, e.category || ''].join(' '), kw: e.keywords.join(' '), lvl: e.level,
+      chan: e.channel || '', msg: e.message || '',
+    };
+    e.colHay = {};
+    for (const c in e.cols) e.colHay[c] = String(e.cols[c]).toLowerCase();
+    e.hay = [e.seen, ...Object.values(e.colHay)].join('\t');
   }
   // an event is "latest" if no other event with the same provider/category/id has a higher version
   const maxVer = new Map(), key = e => e.p + '|' + (e.category || '') + '|' + e.id;
@@ -458,13 +475,13 @@ function rowHtml(e) {
     (view.showProv ? `<td class="prov"><a href="#${esc(hashString({ provider: e.p, keyword: '' }))}" data-p="${e.p}">${highlight(p[0])}</a>` +
       (e.kind === 'mof' ? ' <span class="badge">MOF</span>' : '') + '</td>' : '') +
     `<td class="num" data-label="ID">${highlight(e.id)}</td><td class="num c-ver" data-label="Version">${e.ver}</td>` +
-    `<td>${renderSig(e.sig, e)}</td>` +
+    `<td>${renderSig(e.sig, e)}<span class="hits">${hintHtml(e)}</span></td>` +
     `<td class="small c-op" data-label="${e.kind === 'mof' ? 'Event type' : 'Opcode'}">${highlight(e.opcode)}</td>` +
     `<td class="small c-task ${e.kind === 'mof' ? 'desc' : ''}" data-label="${e.kind === 'mof' ? 'Description' : 'Task'}">${highlight(e.task)}` +
       (e.kind === 'mof' && e.category ? `<div class="sig" style="opacity:.7">${esc(e.category)}</div>` : '') + '</td>' +
     (view.anyManifest ? `<td class="c-kw" data-label="Keywords"><div class="kw">${kw}</div></td><td class="small lvl c-lvl lvl-${esc(e.level)}" data-label="Level">${esc(e.level)}</td>` : '') +
-    (view.anyChannel ? `<td class="small" data-label="Channel">${esc(e.channel || '')}</td>` : '') +
-    (view.anyMessage ? `<td class="small" data-label="Message">${highlight(e.message || '')}</td>` : '') +
+    (view.anyChannel ? `<td class="small c-chan" data-label="Channel">${highlight(e.channel || '')}</td>` : '') +
+    (view.anyMessage ? `<td class="small c-msg" data-label="Message">${highlight(e.message || '')}</td>` : '') +
     '</tr>';
 }
 // append the next page of rows to the table already on screen
@@ -490,11 +507,13 @@ function render() {
     (!state.keyword || e.keywords.includes(state.keyword)) &&
     (!state.added || addedIn(e).has(state.added)) &&
     ts.every(t => e.hay.includes(t)));
+  const hiddenCount = markHiddenHits();
 
   const providersHit = new Set(matches.map(e => e.p)).size;
   const filtered = ts.length || state.level || state.keyword || state.added;
   $('summary').innerHTML = `<span><strong>${fmt(matches.length)}</strong> events` +
     (state.provider === null ? ` across <strong>${fmt(providersHit)}</strong> providers` : '') + `</span>` +
+    `<span class="hidden-hit-note" id="hiddenNote">${hiddenNoteText(hiddenCount)}</span>` +
     (filtered ? '<button type="button" id="clearFilters" class="linklike">Clear filters</button>' : '');
   if (filtered) $('clearFilters').onclick = () => {
     state.q = state.level = state.keyword = state.added = ''; $('q').value = ''; update();
@@ -517,19 +536,53 @@ function render() {
     `<th class="c-op">${anyMof && !anyManifest ? 'Event type' : 'Opcode'}</th>` +
     `<th class="c-task">${anyMof && !anyManifest ? 'Description' : anyMof ? 'Task / Description' : 'Task'}</th>` +
     (anyManifest ? '<th class="c-kw">Keywords</th><th class="c-lvl">Level</th>' : '') +
-    (view.anyChannel ? '<th>Channel</th>' : '') + (view.anyMessage ? '<th>Message</th>' : '') +
+    (view.anyChannel ? '<th class="c-chan">Channel</th>' : '') + (view.anyMessage ? '<th class="c-msg">Message</th>' : '') +
     '</tr></thead><tbody id="rows"></tbody></table><div id="moreBox"></div>';
   shown = 0;
   showMore(PAGE);
 }
 
+// --- search terms found only in hidden columns ---------------------------------
+// the searchable columns each display toggle hides, and their headings (manifest, MOF)
+const HIDES = { compact: ['op', 'task'], nokw: ['kw', 'lvl'], nomsg: ['chan', 'msg'] };
+const COLUMN = { op: ['Opcode', 'Event type'], task: ['Task', 'Description'], kw: ['Keywords'], lvl: ['Level'], chan: ['Channel'], msg: ['Message'] };
+const hiddenColumns = () => Object.keys(HIDES).filter(k => state[k]).flatMap(k => HIDES[k]);
+// e.hits: the hidden columns holding a search term that nothing visible in the row holds
+function markHiddenHits() {
+  const ts = terms(), hidden = hiddenColumns();
+  let count = 0;
+  for (const e of matches) {
+    const hits = new Set();
+    for (const t of ts) {
+      if (e.seen.includes(t) || Object.keys(e.colHay).some(c => !hidden.includes(c) && e.colHay[c].includes(t))) continue;
+      for (const c of hidden) if (e.colHay[c].includes(t)) hits.add(c);
+    }
+    e.hits = [...hits];
+    if (e.hits.length) count++;
+  }
+  return count;
+}
+const hiddenNoteText = n => n ? `${fmt(n)} ${n === 1 ? 'matches' : 'match'} only in hidden columns` : '';
+function hintHtml(e) {
+  return (e.hits || []).map(c =>
+    `<span class="hidden-hit" title="${esc(e.cols[c])}">in ${COLUMN[c][e.kind === 'mof' && COLUMN[c][1] ? 1 : 0]}</span>`).join('');
+}
+// a display toggle changes which columns are hidden: redo the hints in place, keeping the rows shown
+function refreshHints() {
+  if (!DATA) return;
+  const count = markHiddenHits();
+  document.querySelectorAll('#rows tr').forEach((tr, i) => { tr.querySelector('.hits').innerHTML = hintHtml(matches[i]); });
+  if ($('hiddenNote')) $('hiddenNote').textContent = hiddenNoteText(count);
+}
+
 // display-only toggles: [checkbox id, state key (also the .results class), checkbox is ticked when state is]
-const DISPLAY = [['compact', 'compact', true], ['hideKw', 'nokw', true], ['wrap', 'nowrap', false], ['blame', 'noblame', false]];
+const DISPLAY = [['compact', 'compact', true], ['hideKw', 'nokw', true], ['hideMsg', 'nomsg', true], ['wrap', 'nowrap', false], ['blame', 'noblame', false]];
 function syncDisplay() {
   for (const [id, key, checkedWhen] of DISPLAY) {
     $(id).checked = state[key] === checkedWhen;
     $('results').classList.toggle(key, state[key]);
   }
+  refreshHints();
   // "when added" tags only make sense with one field per line
   $('blame').disabled = state.nowrap;
   $('blameLabel').classList.toggle('disabled', state.nowrap);

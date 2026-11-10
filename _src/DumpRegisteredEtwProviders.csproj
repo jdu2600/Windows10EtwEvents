@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>DumpRegisteredEtwProviders</RootNamespace>
     <AssemblyName>DumpRegisteredEtwProviders</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -58,6 +58,10 @@
       <Project>{8a9bf640-39f0-4c33-896c-da83dd1dfbf6}</Project>
       <Name>EtwManifestParsing</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <!-- .NET 4.6 reference assemblies (4.6 is what Windows 10 1507 ships), so building doesn't need the 4.6 targeting pack -->
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

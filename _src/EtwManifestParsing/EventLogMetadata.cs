@@ -77,6 +77,7 @@ namespace EtwManifestParsing
             { 122, "ERROR_INSUFFICIENT_BUFFER" },
             { 1813, "ERROR_RESOURCE_TYPE_NOT_FOUND" },
             { 4306, "ERROR_EMPTY" },
+            { 15033, "ERROR_EVT_MESSAGE_LOCALE_NOT_FOUND" },
             { 15100, "ERROR_MUI_FILE_NOT_FOUND" },
             { 15105, "ERROR_MUI_FILE_NOT_LOADED" },
         };
@@ -241,13 +242,16 @@ namespace EtwManifestParsing
                         ? 0
                         : Marshal.GetLastWin32Error();
                 }
+                // wevtapi reports some failures as HRESULT_FROM_WIN32(code)
+                if (((uint)error & 0xFFFF0000) == 0x80070000)
+                    error &= 0xFFFF;
+                // We pass no values, so a message with inserts (%1) can't be resolved. Windows 11 returns the
+                // template with them left in; older releases (seen on 1803) fill the buffer the same way but
+                // also fail with ERROR_EVT_UNRESOLVED_VALUE_INSERT - the template is still what we want.
+                if (error == ERROR_EVT_UNRESOLVED_VALUE_INSERT || error == ERROR_EVT_UNRESOLVED_PARAMETER_INSERT)
+                    error = 0;
                 if (error != 0)
-                {
-                    // wevtapi reports some failures as HRESULT_FROM_WIN32(code)
-                    if (((uint)error & 0xFFFF0000) == 0x80070000)
-                        error &= 0xFFFF;
                     return $"<{DescribeStatus(error)}>";
-                }
             }
 
             return buffer.ToString().Trim().Replace("\r", @"\r").Replace("\n", @"\n").Replace("\t", @"\t");
@@ -367,6 +371,8 @@ namespace EtwManifestParsing
         private static string GetString(IntPtr em, int id) => GetProperty((int s, IntPtr b, out int u) => EvtGetEventMetadataProperty(em, id, 0, s, b, out u)).String;
 
         private const int ERROR_INSUFFICIENT_BUFFER = 122;
+        private const int ERROR_EVT_UNRESOLVED_VALUE_INSERT = 15029;
+        private const int ERROR_EVT_UNRESOLVED_PARAMETER_INSERT = 15030;
 
         // EVT_VARIANT_TYPE
         private const uint EvtVarTypeNull = 0;

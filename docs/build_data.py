@@ -1,7 +1,8 @@
 """Bundle the manifest/, mof/ and unknown/ TSVs into docs/data/ for the GitHub Pages event browser.
 
-Every Windows version in the git history gets its own docs/data/<version>.json, using the last commit
-whose version.txt names that version. The working tree is used for the current version.
+Every Windows release in the git history gets its own docs/data/<release>.json, using the last commit
+whose version.txt names that release (e.g. 10-1809), whatever its edition or build. The working tree
+is used for the current release.
 docs/data/versions.json lists them, newest first.
 
 Usage: python docs/build_data.py [repo_root] [out_dir]
@@ -93,10 +94,13 @@ def build(source):
 def short_name(version):
     # "Windows 10 Enterprise 21H1 19043.928 (...)" -> ("Windows 10 21H1", "10-21H1")
     # "Windows 10 Enterprise LTSC 2019 (...)"      -> ("Windows 10 2019", "10-2019")
+    # "Windows 10 Enterprise 2009 (...)"          -> ("Windows 10 20H2", "10-20H2")
     m = re.match(r'Windows (\d+)\b.*?\b(\d\dH\d|\d{4})\b', version)
     if not m:
         return version, re.sub(r'\W+', '_', version).strip('_')
-    return f'Windows {m.group(1)} {m.group(2)}', f'{m.group(1)}-{m.group(2)}'
+    # 20H2's ReleaseId is 2009; captures from before the generator read DisplayVersion say 2009
+    release = '20H2' if m.group(1) == '10' and m.group(2) == '2009' else m.group(2)
+    return f'Windows {m.group(1)} {release}', f'{m.group(1)}-{release}'
 
 
 def field_names(sig):
@@ -130,20 +134,22 @@ def annotate(data, slug):
 
 
 def snapshots():
-    """Yield (source) for every Windows version, oldest first, ending with the working tree."""
-    current = WorkingTree().version()
+    """Yield (source) for every Windows release, oldest first, ending with the working tree."""
+    current = short_name(WorkingTree().version())[1]
     try:
         commits = git('log', '--reverse', '--format=%H', '--first-parent', 'HEAD').split()
     except (OSError, subprocess.CalledProcessError):
         commits = []  # not a git checkout: just the working tree
-    last = {}  # version.txt contents -> last commit carrying it (so later fix-ups are included)
+    # release slug -> last commit carrying it, so a later fix-up or a recapture of the same release
+    # (different edition or build in version.txt) supersedes the earlier one
+    last = {}
     for commit in commits:
         try:
-            last[Commit(commit).version()] = commit
+            last[short_name(Commit(commit).version())[1]] = commit
         except subprocess.CalledProcessError:
             pass  # no version.txt yet
-    for v, commit in last.items():  # dicts keep first-seen order, i.e. oldest version first
-        if v != current:
+    for slug, commit in last.items():  # dicts keep first-seen order, i.e. oldest release first
+        if slug != current:
             yield Commit(commit)
     yield WorkingTree()
 

@@ -9,3 +9,4 @@ Microsoft-Windows-WUSA	7	0	Event_7(UnicodeString UpdateTitle, UnicodeString Comm
 Microsoft-Windows-WUSA	8	0	Event_8(UnicodeString UpdateTitle, UInt32 ErrorCode, UnicodeString ErrorString, UnicodeString CommandLine)			task_0	Error	Setup	Windows update %1 could not be uninstalled because of error %2 "%3" (Command line: "%4")
 Microsoft-Windows-WUSA	9	0	Event_9(UnicodeString UpdateTitle, UnicodeString CommandLine)			task_0	Warning	Setup	Windows update %1 requires a computer restart to finish uninstalling. (Command line: "%2")
 Microsoft-Windows-WUSA	10	0	Event_10(UnicodeString UpdateTitle, UnicodeString CommandLine)			task_0	Informational	Setup	This computer will restart to finish uninstalling Windows update %1 (Command line: "%2")
+Microsoft-Windows-WUSA	11	0	Event_11(UnicodeString CommandLine)			task_0	Error	Setup	This operation cannot be completed. You must install the baseline update(s) before you can install this update. (Command line: "%1")

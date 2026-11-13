@@ -21,6 +21,7 @@ Microsoft-Quic	19	0	Event_19_Global(UInt32 PartitionCount)	Global	ut:LowVolume	t
 Microsoft-Quic	20	0	Event_20_Global(UInt32 DatapathFeatures)	Global	ut:LowVolume	task_0	Informational		[data] Initialized, DatapathFeatures=%1
 Microsoft-Quic	21	0	Event_21_Global(UInt32 PartitionCount)	Global	ut:LowVolume	task_0	Informational		[ lib] Rundown, PartitionCount=%1
 Microsoft-Quic	22	0	Event_22_Global(UInt32 DatapathFeatures)	Global	ut:LowVolume	task_0	Informational		[data] Rundown, DatapathFeatures=%1
+Microsoft-Quic	23	0	Event_23_Global()	Global	ut:LowVolume	task_0	Informational		[ lib] Initialized
 Microsoft-Quic	1024	0	Event_1024_Registration(Pointer Registration, AnsiString AppName)	Registration	ut:Registration ut:LowVolume	task_0	Informational		[ reg][%1] Created, AppName=%2
 Microsoft-Quic	1025	0	Event_1025_Registration(Pointer Registration)	Registration	ut:Registration ut:LowVolume	task_0	Informational		[ reg][%1] Destroyed
 Microsoft-Quic	1026	0	Event_1026_Registration(Pointer Registration)	Registration	ut:Registration ut:LowVolume	task_0	Informational		[ reg][%1] Cleaning up
@@ -28,6 +29,8 @@ Microsoft-Quic	1027	0	Event_1027_Registration(Pointer Registration, AnsiString A
 Microsoft-Quic	1028	0	Event_1028_Registration(Pointer Registration, AnsiString ErrStr)	Registration	ut:Registration ut:LowVolume	task_0	Error		[ reg][%1] ERROR, %2.
 Microsoft-Quic	1029	0	Event_1029_Registration(Pointer Registration, UInt32 Status, AnsiString ErrStr)	Registration	ut:Registration ut:LowVolume	task_0	Error		[ reg][%1] ERROR, %2, %3.
 Microsoft-Quic	1030	0	Event_1030_Registration(Pointer Registration, UInt32 Flags, UInt64 ErrorCode)	Registration	ut:Registration ut:LowVolume	task_0	Informational		[ reg][%1] Shutting down connections, Flags=%2, ErrorCode=%3
+Microsoft-Quic	1031	0	Event_1031_Registration(Pointer Registration, AnsiString AppName, UInt32 ExecProfile)	Registration	ut:Registration ut:LowVolume	task_0	Informational		[ reg][%1] Created, AppName=%2, ExecProfile=%3
+Microsoft-Quic	1032	0	Event_1032_Registration(Pointer Registration, AnsiString AppName, UInt32 ExecProfile)	Registration	ut:Registration ut:LowVolume	task_0	Informational		[ reg][%1] Rundown, AppName=%2, ExecProfile=%3
 Microsoft-Quic	2048	0	Event_2048_Worker(Pointer Worker, UInt16 IdealProcessor, Pointer Owner)	Worker	ut:Worker ut:LowVolume	task_0	Informational		[wrkr][%1] Created, IdealProc=%2 Owner=%3
 Microsoft-Quic	2049	0	Event_2049_Worker(Pointer Worker)	Worker	ut:Worker ut:LowVolume	task_0	Informational		[wrkr][%1] Start
 Microsoft-Quic	2050	0	Event_2050_Worker(Pointer Worker)	Worker	ut:Worker ut:LowVolume	task_0	Informational		[wrkr][%1] Stop
@@ -74,8 +77,8 @@ Microsoft-Quic	5140	0	Event_5140_Connection(Pointer Connection, UInt64 BytesSent
 Microsoft-Quic	5141	0	Event_5141_Connection(Pointer Connection, UInt8 ReasonFlags)	Connection	ut:Connection ut:DataFlow	task_0	Informational		[conn][%1] Send Blocked Flags: %2
 Microsoft-Quic	5142	0	Event_5142_Connection(Pointer Connection, UInt64 BytesReceived)	Connection	ut:Connection ut:DataFlow	task_0	Verbose		[conn][%1] IN: BytesRecv=%2
 Microsoft-Quic	5143	0	Event_5143_Connection(Pointer Connection, UInt32 SlowStartThreshold, UInt32 K, UInt32 WindowMax, UInt32 WindowLastMax)	Connection	ut:Connection ut:DataFlow	task_0	Verbose		[conn][%1] CUBIC: SlowStartThreshold=%2 K=%3 WindowMax=%4 WindowLastMax=%5
-Microsoft-Quic	5144	0	Event_5144_Connection(Pointer Connection)	Connection	ut:Connection ut:DataFlow	task_0	Verbose		[conn][%1] Congestion event
-Microsoft-Quic	5145	0	Event_5145_Connection(Pointer Connection)	Connection	ut:Connection ut:DataFlow ut:LowVolume	task_0	Informational		[conn][%1] Persistent congestion event
+Microsoft-Quic	5144	0	Event_5144_Connection(Pointer Connection)	Connection	ut:Connection ut:DataFlow ut:LowVolume	task_0	Informational		[conn][%1] Congestion event
+Microsoft-Quic	5145	0	Event_5145_Connection(Pointer Connection)	Connection	ut:Connection ut:DataFlow ut:LowVolume	task_0	Error		[conn][%1] Persistent congestion event
 Microsoft-Quic	5146	0	Event_5146_Connection(Pointer Connection)	Connection	ut:Connection ut:DataFlow	task_0	Informational		[conn][%1] Recovery complete
 Microsoft-Quic	5147	0	Event_5147_Connection(Pointer Connection, UInt32 IsServer, UInt64 CorrelationId)	Connection	ut:Connection ut:LowVolume	task_0	Informational		[conn][%1] Rundown, IsServer=%2, CorrelationId=%3
 Microsoft-Quic	5148	0	Event_5148_Connection(Pointer Connection, UInt64 SequenceNumber, UInt8 CidLength, Binary Cid)	Connection	ut:Connection ut:RPS ut:LowVolume	task_0	Verbose		[conn][%1] (SeqNum=%2) New Source CID: %4
@@ -90,8 +93,8 @@ Microsoft-Quic	5156	0	Event_5156_Connection(Pointer Connection, AnsiString ErrSt
 Microsoft-Quic	5157	0	Event_5157_Connection(Pointer Connection, UInt32 Status, AnsiString ErrStr)	Connection	ut:Connection ut:LowVolume	task_0	Error		[conn][%1] ERROR, %2, %3.
 Microsoft-Quic	5158	0	Event_5158_Connection(Pointer Connection)	Connection	ut:Connection ut:LowVolume	task_0	Informational		[conn][%1] New packet keys created successfully.
 Microsoft-Quic	5159	0	Event_5159_Connection(Pointer Connection, UInt8 IsLocallyInitiated)	Connection	ut:Connection ut:LowVolume	task_0	Informational		[conn][%1] Key phase change (locally initiated=%2).
-Microsoft-Quic	5160	0	Event_5160_Connection(Pointer Connection, UInt32 SmoothedRtt, UInt32 CongestionCount, UInt32 PersistentCongestionCount, UInt64 SendTotalBytes, UInt64 RecvTotalBytes, UInt32 CongestionWindow)	Connection	ut:Connection ut:LowVolume	task_0	Informational		[conn][%1] STATS: SRtt=%2 CongestionCount=%3 PersistentCongestionCount=%4 SendTotalBytes=%5 RecvTotalBytes=%6 CongestionWindow=%7
-Microsoft-Quic	5161	0	Event_5161_Connection(Pointer Connection, UInt8 Value)	Connection	ut:Connection	task_0	Informational		[conn][%1] Shutdown complete, PeerFailedToAcknowledged=%2.
+Microsoft-Quic	5160	0	Event_5160_Connection(Pointer Connection, UInt32 SmoothedRtt, UInt32 CongestionCount, UInt32 PersistentCongestionCount, UInt64 SendTotalBytes, UInt64 RecvTotalBytes, UInt32 CongestionWindow, AnsiString Cc)	Connection	ut:Connection ut:LowVolume	task_0	Informational		[conn][%1] STATS: SRtt=%2 CongestionCount=%3 PersistentCongestionCount=%4 SendTotalBytes=%5 RecvTotalBytes=%6 CongestionWindow=%7 Cc=%8
+Microsoft-Quic	5161	0	Event_5161_Connection(Pointer Connection, UInt8 Value)	Connection	ut:Connection ut:LowVolume	task_0	Informational		[conn][%1] Shutdown complete, PeerFailedToAcknowledged=%2.
 Microsoft-Quic	5162	0	Event_5162_Connection(Pointer Connection, UInt8 NewValue)	Connection	ut:Connection ut:LowVolume	task_0	Verbose		[conn][%1] Read Key Updated, %2.
 Microsoft-Quic	5163	0	Event_5163_Connection(Pointer Connection, UInt8 NewValue)	Connection	ut:Connection ut:LowVolume	task_0	Verbose		[conn][%1] Write Key Updated, %2.
 Microsoft-Quic	5164	0	Event_5164_Connection(Pointer Owner, UInt64 Number, UInt8 Type, UInt16 Length)	Connection	ut:Connection ut:Packet	task_0	Verbose		[conn][%1][TX][%2] %3 (%4 bytes)
@@ -106,16 +109,25 @@ Microsoft-Quic	5172	0	Event_5172_Connection(Pointer Connection, UInt32 Type)	Con
 Microsoft-Quic	5173	0	Event_5173_Connection(Pointer Connection, UInt64 StreamFlowControl, UInt64 StreamSendWindow)	Connection	ut:Connection ut:DataFlow	task_0	Verbose		[conn][%1] OUT: StreamFC=%2 StreamSendWindow=%3
 Microsoft-Quic	5174	0	Event_5174_Connection(Pointer Connection, UInt64 SendTotalPackets, UInt64 SendSuspectedLostPackets, UInt64 SendSpuriousLostPackets, UInt64 RecvTotalPackets, UInt64 RecvReorderedPackets, UInt64 RecvDroppedPackets, UInt64 RecvDuplicatePackets, UInt64 RecvDecryptionFailures)	Connection	ut:Connection ut:LowVolume	task_0	Informational		[conn][%1] STATS: SendTotalPackets=%2 SendSuspectedLostPackets=%3 SendSpuriousLostPackets=%4 RecvTotalPackets=%5 RecvReorderedPackets=%6 RecvDroppedPackets=%7 RecvDuplicatePackets=%8 RecvDecryptionFailures=%9
 Microsoft-Quic	5175	0	Event_5175_Connection(Pointer Connection)	Connection	ut:Connection	task_0	Informational		[conn][%1] Server app accepted resumption ticket
-Microsoft-Quic	5176	0	Event_5176_Connection(Pointer Connection, UInt8 VnlLength, Binary Vnl)	Connection	ut:Connection ut:LowVolume	task_0	Informational		[conn][%1] VerInfo Other Versions List: %3
+Microsoft-Quic	5176	0	Event_5176_Connection(Pointer Connection, UInt8 VnlLength, Binary Vnl)	Connection	ut:Connection ut:LowVolume	task_0	Informational		[conn][%1] VerInfo Available Versions List: %3
 Microsoft-Quic	5177	0	Event_5177_Connection(Pointer Connection, UInt8 VnlLength, Binary Vnl)	Connection	ut:Connection ut:LowVolume	task_0	Informational		[conn][%1] Client VI Received Version List: %3
 Microsoft-Quic	5178	0	Event_5178_Connection(Pointer Connection, UInt8 VnlLength, Binary Vnl)	Connection	ut:Connection ut:LowVolume	task_0	Informational		[conn][%1] Server VI Supported Version List: %3
-Microsoft-Quic	5179	0	Event_5179_Connection(Pointer Connection)	Connection	ut:Connection ut:DataFlow	task_0	Verbose		[conn][%1] Spurious congestion event
+Microsoft-Quic	5179	0	Event_5179_Connection(Pointer Connection)	Connection	ut:Connection ut:DataFlow ut:LowVolume	task_0	Informational		[conn][%1] Spurious congestion event
 Microsoft-Quic	5180	0	Event_5180_Connection(Pointer Connection, UInt8 AddrLength, Binary Addr)	Connection	ut:Connection ut:LowVolume	task_0	Error		[conn][%1] No Listener for IP address: %3
 Microsoft-Quic	5181	0	Event_5181_Connection(Pointer Connection, UInt8 AlpnLength, Binary Alpn)	Connection	ut:Connection ut:LowVolume	task_0	Error		[conn][%1] No listener matching ALPN: %3
 Microsoft-Quic	5182	0	Event_5182_Connection(Pointer Connection, UInt32 Value)	Connection	ut:Connection ut:DataFlow	task_0	Verbose		[conn][%1] Flushing Send. Allowance=%2 bytes
 Microsoft-Quic	5183	0	Event_5183_Connection(Pointer Connection, UInt8 Type, UInt64 Delay)	Connection	ut:Connection ut:Scheduling	task_0	Verbose		[conn][%1] Setting %2, delay=%3 us
 Microsoft-Quic	5184	0	Event_5184_Connection(Pointer Connection, UInt8 Type)	Connection	ut:Connection ut:Scheduling	task_0	Verbose		[conn][%1] Canceling %2
 Microsoft-Quic	5185	0	Event_5185_Connection(Pointer Connection, UInt8 Type)	Connection	ut:Connection ut:Scheduling	task_0	Verbose		[conn][%1] %2 expired
+Microsoft-Quic	5186	0	Event_5186_Connection(Pointer Connection, UInt32 BbrState, UInt32 RecoveryState, UInt32 CongestionWindow, UInt32 BytesInFlight, UInt32 BytesInFlightMax, UInt64 EstMinRtt, UInt64 EstBw, UInt32 IsAppLimited)	Connection	ut:Connection ut:DataFlow	task_0	Verbose		[conn][%1] BBR: State=%2 RState=%3 CongestionWindow=%4 BytesInFlight=%5 BytesInFlightMax=%6 MinRttEst=%7 EstBw=%8 AppLimited=%9
+Microsoft-Quic	5187	0	Event_5187_Connection(Pointer Connection, UInt32 IsCapable)	Connection	ut:Connection ut:LowVolume	task_0	Informational		[conn][%1] Ecn: IsCapable=%2
+Microsoft-Quic	5188	0	Event_5188_Connection(Pointer Connection, UInt32 EncryptLevel, UInt64 EcnEctCounter, UInt64 EcnCeCounter, UInt64 NumPacketsSentWithEct, Int64 EctCeDeltaSum, UInt8 State)	Connection	ut:Connection ut:LowVolume	task_0	Informational		[conn][%1][%2] ECN failed: EctCnt %3 CeCnt %4 TxEct %5 DeltaSum %6 State %7
+Microsoft-Quic	5189	0	Event_5189_Connection(Pointer Connection, UInt8 IsEcn)	Connection	ut:Connection ut:DataFlow ut:LowVolume	task_0	Informational		[conn][%1] Congestion event IsEcn=%2
+Microsoft-Quic	5190	0	Event_5190_Connection(Pointer Connection, UInt32 SmoothedRtt, UInt32 CongestionCount, UInt32 PersistentCongestionCount, UInt64 SendTotalBytes, UInt64 RecvTotalBytes, UInt32 CongestionWindow, AnsiString Cc, UInt32 EcnCongestionCount)	Connection	ut:Connection ut:LowVolume	task_0	Informational		[conn][%1] STATS: SRtt=%2 CongestionCount=%3 PersistentCongestionCount=%4 SendTotalBytes=%5 RecvTotalBytes=%6 CongestionWindow=%7 Cc=%8 EcnCongestionCount=%8
+Microsoft-Quic	5191	0	Event_5191_Connection(Pointer Connection, UInt32 HyStartState, UInt32 CongestionWindow, UInt32 SlowStartThreshold)	Connection	ut:Connection ut:DataFlow	task_0	Informational		[conn][%1] HyStart: State=%2 CongestionWindow=%3 SlowStartThreshold=%4
+Microsoft-Quic	5192	0	Event_5192_Connection(Pointer Connection, UInt32 Count, UInt32 Count2)	Connection	ut:Connection ut:DataFlow	task_0	Informational		[conn][%1] Recv %2 UDP datagrams, %3 bytes
+Microsoft-Quic	5193	0	Event_5193_Connection(Pointer Connection, UInt64 BytesSent, UInt32 BytesInFlight, UInt32 CongestionWindow, UInt64 ConnectionFlowControl, UInt64 IdealBytes, UInt64 PostedBytes, UInt64 SmoothedRtt, UInt64 OneWayDelay)	Connection	ut:Connection ut:DataFlow	task_0	Verbose		[conn][%1] OUT: BytesSent=%2 InFlight=%3 CWnd=%4 ConnFC=%5 ISB=%6 PostedBytes=%7 SRtt=%8 1Way=%9
+Microsoft-Quic	5194	0	Event_5194_Connection(Pointer Connection, UInt64 SmoothedRtt, UInt32 CongestionCount, UInt32 PersistentCongestionCount, UInt64 SendTotalBytes, UInt64 RecvTotalBytes, UInt32 CongestionWindow, AnsiString Cc, UInt32 EcnCongestionCount)	Connection	ut:Connection ut:LowVolume	task_0	Informational		[conn][%1] STATS: SRtt=%2 CongestionCount=%3 PersistentCongestionCount=%4 SendTotalBytes=%5 RecvTotalBytes=%6 CongestionWindow=%7 Cc=%8 EcnCongestionCount=%8
 Microsoft-Quic	6144	0	Event_6144_Stream(Pointer Stream, Pointer Connection, UInt64 ID, UInt8 IsLocalOwned)	Stream	ut:Stream ut:RPS ut:LowVolume	task_0	Informational		[strm][%1] Created, Conn=%2 ID=%3 IsLocal=%4
 Microsoft-Quic	6145	0	Event_6145_Stream(Pointer Stream)	Stream	ut:Stream ut:RPS ut:LowVolume	task_0	Informational		[strm][%1] Destroyed
 Microsoft-Quic	6146	0	Event_6146_Stream(Pointer Stream, UInt8 ReasonFlags)	Stream	ut:Stream ut:DataFlow	task_0	Informational		[strm][%1] Send Blocked Flags: %2
@@ -154,6 +166,9 @@ Microsoft-Quic	9219	0	Event_9219_Datapath(Pointer UdpBinding, AnsiString ErrStr)
 Microsoft-Quic	9220	0	Event_9220_Datapath(Pointer UdpBinding, UInt32 Status, AnsiString ErrStr)	Datapath	ut:UDP ut:LowVolume	task_0	Error		[data][%1] ERROR, %2, %3.
 Microsoft-Quic	9221	0	Event_9221_Datapath(Pointer UdpBinding, UInt8 LocalAddrLength, Binary LocalAddr, UInt8 RemoteAddrLength, Binary RemoteAddr)	Datapath	ut:UDP ut:LowVolume	task_0	Informational		[data][%1] Created, local=%3, remote=%5
 Microsoft-Quic	9222	0	Event_9222_Datapath(Pointer UdpBinding)	Datapath	ut:UDP ut:LowVolume	task_0	Informational		[data][%1] Destroyed
+Microsoft-Quic	9223	0	Event_9223_Datapath(Pointer UdpBinding, UInt8 LocalAddrLength, Binary LocalAddr, UInt8 RemoteAddrLength, Binary RemoteAddr)	Datapath	ut:UDP ut:LowVolume	task_0	Informational		[data][%1] Querying route, local=%3, remote=%5
+Microsoft-Quic	9224	0	Event_9224_Datapath(Pointer UdpBinding, UInt8 LocalAddrLength, Binary LocalAddr)	Datapath	ut:UDP ut:LowVolume	task_0	Informational		[data][%1] Query route result: %3
+Microsoft-Quic	9225	0	Event_9225_Datapath(Pointer UdpBinding, UInt32 SegmentSize, UInt8 TcpFlags, UInt8 RemoteAddrLength, Binary RemoteAddr, UInt8 LocalAddrLength, Binary LocalAddr)	Datapath	ut:UDP ut:LowVolume	task_0	Informational		[data][%1] Send %2 bytes TCP control packet Flags=%3 Dst=%5 Src=%7
 Microsoft-Quic	10240	0	Event_10240_Global(AnsiString Message)	Global	ut:Log	task_0	Error		%1
 Microsoft-Quic	10241	0	Event_10241_Global(AnsiString Message)	Global	ut:Log	task_0	Warning		%1
 Microsoft-Quic	10242	0	Event_10242_Global(AnsiString Message)	Global	ut:Log	task_0	Informational		%1

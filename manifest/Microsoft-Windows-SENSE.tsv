@@ -109,6 +109,8 @@ Microsoft-Windows-SENSE	114	0	Event_114()			task_0	Error	Microsoft-Windows-SENSE
 Microsoft-Windows-SENSE	115	0	Event_115()			task_0	Informational	Microsoft-Windows-SENSE/Operational	MsSecWfp.sys kernel service has successfully started.
 Microsoft-Windows-SENSE	116	0	Event_116()			task_0	Error	Microsoft-Windows-SENSE/Operational	MsSecWfp.sys kernel service failed to start.
 Microsoft-Windows-SENSE	117	0	Event_117(UnicodeString Message1, HexInt32 HRESULT)			task_0	Error	Microsoft-Windows-SENSE/Operational	%1: Failed to modify service object trust label. Failure code: %2
+Microsoft-Windows-SENSE	118	0	Event_118(Int32 phase, UnicodeString newVersion, UnicodeString message)			task_0	Informational	Microsoft-Windows-SENSE/Operational	Update phase:%1, new platform version: %2, success message: %3
+Microsoft-Windows-SENSE	119	0	Event_119(HexInt32 HRESULT)			task_0	Error	Microsoft-Windows-SENSE/Operational	Windows Defender Advanced Threat Protection service failed to remove its failure actions. Failure code: %1
 Microsoft-Windows-SENSE	307	0	Event_307(HexInt32 HRESULT)			task_0	Error	Microsoft-Windows-SENSE/Operational	Failed to update driver permissions Failure code: %1
 Microsoft-Windows-SENSE	308	0	Event_308(UnicodeString Message1, HexInt32 HRESULT)			task_0	Error	Microsoft-Windows-SENSE/Operational	Failed to ACL on Folder %1 Failure code: %2
 Microsoft-Windows-SENSE	309	0	Event_309(UInt32 UInt1, UnicodeString Message1)			task_0	Error	Microsoft-Windows-SENSE/Operational	Windows Defender Advanced Threat Protection Network Detection and Response failed to subscribe to event id %1 of event log channel: %2. Event data will not be collected until next reboot.
@@ -126,6 +128,7 @@ Microsoft-Windows-SENSE	410	0	Event_410()			task_0	Informational	Microsoft-Windo
 Microsoft-Windows-SENSE	411	0	Event_411()			task_0	Informational	Microsoft-Windows-SENSE/Operational	Cyber telemetry upload has been suspended for Windows Defender Advanced Threat Protection service due to invalid/expired token.
 Microsoft-Windows-SENSE	412	0	Event_412()			task_0	Informational	Microsoft-Windows-SENSE/Operational	Cyber telemetry upload been resumed for Windows Defender Advanced Threat Protection service due to newly refreshed token.
 Microsoft-Windows-SENSE	414	0	Event_414()			task_0	Informational	Microsoft-Windows-SENSE/Operational	Key rotation of Windows Defender Advanced Threat Protection service completed.
+Microsoft-Windows-SENSE	416	0	Event_416(UnicodeString parameter)			task_0	Informational	Microsoft-Windows-SENSE/Operational	EventTraker Event data: (%1)
 Microsoft-Windows-SENSE	500	0	Event_500(UInt32 UInt1, UnicodeString Message1, HexInt32 HRESULT)			task_0	Error	Microsoft-Windows-SENSE/Operational	Windows Defender Advanced Threat Protection orchestrator failed to perform: %1. Identifier: %2. HRESULT: %3.
 Microsoft-Windows-SENSE	501	0	Event_501(UInt32 UInt1, UnicodeString Message1)			task_0	Informational	Microsoft-Windows-SENSE/Operational	Windows Defender Advanced Threat Protection orchestrator performed: %1 successfully. Identifier: %2.
 Microsoft-Windows-SENSE	1800	0	Event_1800(UInt32 UInt1, UnicodeString Message1)			task_0	Verbose	Microsoft-Windows-SENSE/Operational	CSP: Get Node's Value. NodeId: (%1), TokenName: (%2).

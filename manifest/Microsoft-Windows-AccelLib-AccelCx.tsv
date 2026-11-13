@@ -1,0 +1,3 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-AccelLib-AccelCx	1	0	Event_1(UInt32 HardwareType, UInt32 HardwareSubtype, UnicodeString InstanceId, UInt32 NumaNode, UInt32 AcceleratorCountOnThisNode)		keyword_800000000000	task_0	Informational	Microsoft-Windows-AccelLib-AccelCx/Operational	AccelCx Accelerator Added. Type %1, SubType %2, InstanceId %3, NumaNode %4, AcceleratorCountOnThisNode %5
+Microsoft-Windows-AccelLib-AccelCx	2	0	Event_2(UInt32 HardwareType, UInt32 HardwareSubtype, UnicodeString InstanceId, UInt32 NumaNode)		keyword_800000000000	task_0	Informational	Microsoft-Windows-AccelLib-AccelCx/Operational	AccelCx Accelerator Removed. Type %1, SubType %2, InstanceId %3, NumaNode %4

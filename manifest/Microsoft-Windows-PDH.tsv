@@ -1,5 +1,6 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
 Microsoft-Windows-PDH	1000	0	Event_1000(UnicodeString Message, UInt32 NativeError, UInt32 Line, AnsiString OdbcApi)		Debug	task_0	Error	Application	ODBC operation %4 failed (native error %2!S!): %1!S!
+Microsoft-Windows-PDH	1000	1	Event_1000_V1(AnsiString Message, UInt32 NativeError, UInt32 Line, AnsiString OdbcApi)		Debug	task_0	Informational	Application	ODBC operation %4 failed (native error %2!S!): %1!S!
 Microsoft-Windows-PDH	3040	0	Message_0xC0000BE0()			task_0	Always		Call to SQLAllocStmt failed with %1.
 Microsoft-Windows-PDH	3041	0	Message_0xC0000BE1()			task_0	Always		Call to SQLAllocConnect failed with %1.
 Microsoft-Windows-PDH	3042	0	Message_0xC0000BE2()			task_0	Always		Call to SQLExecDirect failed with %1.

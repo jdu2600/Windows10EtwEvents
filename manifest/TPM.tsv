@@ -22,3 +22,4 @@ TPM	31	0	Event_31(UnicodeString functionName, UInt32 status)			task_0	Informatio
 TPM	32	0	Event_32(UnicodeString description, UInt32 status)			task_0	Error	System	Encountered an error calling TpmApi.
 TPM	33	0	Event_33(HexInt32 driverFile, UInt32 lineNumber, UnicodeString Requester)			task_0	Informational	System	The Trusted Platform Module (TPM) has been cleared as requested by %3. Keys previously created in the storage and endorsement hierarchies will no longer work.
 TPM	34	0	Event_34(HexInt32 driverFile, UInt32 lineNumber, UnicodeString Requester)			task_0	Informational	System	A PPI request to clear the Trusted Platform Module (TPM) has been requested by %3.
+TPM	35	0	Event_35(HexInt32 driverFile, UInt32 lineNumber, UInt32 Data1, UInt32 Data2)			task_0	Informational	System	The TPM base register address is a non-standard address.

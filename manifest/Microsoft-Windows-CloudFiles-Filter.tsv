@@ -1,0 +1,5 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-CloudFiles-Filter	1	0	Event_1(UnicodeString ErrorMsg, HexInt32 NTStatus)			task_0	Error	Microsoft-Windows-CloudFiles-Filter/Operational	CLDFLT driver entry failed. Error message: %1, Error code: %2
+Microsoft-Windows-CloudFiles-Filter	2	0	Event_2()			task_0	Informational	Microsoft-Windows-CloudFiles-Filter/Operational	CLDFLT registration succeeded
+Microsoft-Windows-CloudFiles-Filter	3	0	Event_3(HexInt32 NTStatus, UInt16 VolumeNameLength, UnicodeString VolumeName)			task_0	Error	Microsoft-Windows-CloudFiles-Filter/Operational	CLDFLT failed to attach to volume '%3' with error message: %1
+Microsoft-Windows-CloudFiles-Filter	4	0	Event_4()			task_0	Informational	Microsoft-Windows-CloudFiles-Filter/Operational	CLDFLT unload succeeded

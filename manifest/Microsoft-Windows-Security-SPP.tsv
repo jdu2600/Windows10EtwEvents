@@ -31,8 +31,10 @@ Microsoft-Windows-Security-SPP	1013	0	Message_0x400003F5()			task_0	Always		Acqu
 Microsoft-Windows-Security-SPP	1014	0	Message_0xC00003F6()			task_0	Always		Acquisition of End User License failed. %1\r\nSku Id=%2
 Microsoft-Windows-Security-SPP	1015	0	Message_0x800003F7()			task_0	Always		Detailed HRESULT. Returned hr=%1, Original hr=%2
 Microsoft-Windows-Security-SPP	1016	0	Message_0x400003F8()			task_0	Always		Proof of Purchase installed successfully. \r\nACID=%1\r\nPKeyId=%2
+Microsoft-Windows-Security-SPP	1016	0	Message_0x800003F8()			task_0	Always		Grace timer notification failed hr=%1
 Microsoft-Windows-Security-SPP	1017	0	Message_0x800003F9()			task_0	Always		Installation of the Proof of Purchase failed. %1\r\nPartial Pkey=%2\r\nACID=%3\r\nDetailed Error[%4]
 Microsoft-Windows-Security-SPP	1018	0	Message_0x400003FA()			task_0	Always		Proof of Purchase removed successfully. \r\nACID=%1\r\nPKeyId=%2
+Microsoft-Windows-Security-SPP	1018	0	Message_0x800003FA()			task_0	Always		Grace timer creation result %1.
 Microsoft-Windows-Security-SPP	1019	0	Message_0x800003FB()			task_0	Always		Removal of the Proof of Purchase failed. %1\r\nACID=%2\r\nPKeyId=%3
 Microsoft-Windows-Security-SPP	1020	0	Message_0x800003FC()			task_0	Always		Proxy Execution Key has failed to load. %1\r\nProxy Execution Policy=%2
 Microsoft-Windows-Security-SPP	1022	0	Message_0x800003FE()			task_0	Always		The system has been tampered. %1
@@ -88,6 +90,12 @@ Microsoft-Windows-Security-SPP	8212	0	Message_0xC0002014()			task_0	Always		Rear
 Microsoft-Windows-Security-SPP	8213	0	Message_0xC0002015()			task_0	Always		Activation Object cannot be retrieved from Active Directory.\r\nError Code = %1\r\nKms Id = %2
 Microsoft-Windows-Security-SPP	8214	0	Message_0xC0002016()			task_0	Always		Active Directory Activation Object is not usable.\r\nError Code = %1\r\nKms Id = %2\r\nAO Name = %3\r\nAO DN = %4
 Microsoft-Windows-Security-SPP	8215	0	Message_0xC0002017()			task_0	Always		Active Directory Activation has failed.\r\nError Code = %1\r\nSku Id = %2
+Microsoft-Windows-Security-SPP	8216	0	Message_0xC0002018()			task_0	Always		HCI Marker has failed verification. Error Code = %1
+Microsoft-Windows-Security-SPP	8217	0	Message_0xC0002019()			task_0	Always		HCI Marker has bad data. Error Code = %1
+Microsoft-Windows-Security-SPP	8218	0	Message_0xC000201A()			task_0	Always		Failed ot retrieve HCI Marker . Error Code = %1
+Microsoft-Windows-Security-SPP	8219	0	Message_0xC000201B()			task_0	Always		OEM OA Binding failed . Error Code = %1
+Microsoft-Windows-Security-SPP	8220	0	Message_0xC000201C()			task_0	Always		OEM OA Binding extraction failed . Error Code = %1
+Microsoft-Windows-Security-SPP	8221	0	Message_0xC000201D()			task_0	Always		OEM OA Binding decode failed . Error Code = %1
 Microsoft-Windows-Security-SPP	8224	0	Message_0x40002020()			task_0	Always		Existing scheduler data could not be found.  The schedule will be re-evaluated.
 Microsoft-Windows-Security-SPP	8225	0	Message_0x40002021()			task_0	Always		The existing scheduler data does not match the expected data.  The schedule will be re-evaluated.\r\nReason:%1
 Microsoft-Windows-Security-SPP	8226	0	Message_0x40002022()			task_0	Always		The existing scheduler data is incomplete.  The schedule will be re-evaluated.\r\nReason:%1
@@ -120,12 +128,17 @@ Microsoft-Windows-Security-SPP	16386	0	Message_0x40004002()			task_0	Always		Suc
 Microsoft-Windows-Security-SPP	16387	0	Message_0xC0004003()			task_0	Always		Failed to run task %2\%3. Error Code: %1.
 Microsoft-Windows-Security-SPP	16388	0	Message_0x40004004()			task_0	Always		The current time is %1 : %2.
 Microsoft-Windows-Security-SPP	16388	0	Message_0xC0004004()			task_0	Always		Authorized upgrade for PID: %1.
+Microsoft-Windows-Security-SPP	16389	0	Message_0x40004005()			task_0	Always		Grace timer has expired. Hr = %1
 Microsoft-Windows-Security-SPP	16389	0	Message_0xC0004005()			task_0	Always		Downlevel Genuine Ticket successfully deposited.
 Microsoft-Windows-Security-SPP	16390	0	Message_0xC0004006()			task_0	Informational		Updated policy %1 with value of %2 from Clip.
 Microsoft-Windows-Security-SPP	16391	0	Message_0xC0004007()			task_0	Informational		Downlevel Genuine Ticket deposit failed.
 Microsoft-Windows-Security-SPP	16392	0	Message_0xC0004008()			task_0	Always		Downlevel consumption failed.
 Microsoft-Windows-Security-SPP	16393	0	Message_0xC0004009()			task_0	Always		Downlevel Migration failed.
 Microsoft-Windows-Security-SPP	16394	0	Message_0xC000400A()			task_0	Always		Offline downlevel migration succeeded.
+Microsoft-Windows-Security-SPP	16395	0	Message_0xC000400B()			task_0	Always		Operation status %2 with return code %1.
+Microsoft-Windows-Security-SPP	16396	0	Message_0xC000400C()			task_0	Always		You are on an inactivated device.
+Microsoft-Windows-Security-SPP	16397	0	Message_0xC000400D()			task_0	Always		Device is in grace period for %1 minutes more.
+Microsoft-Windows-Security-SPP	16398	0	Message_0xC000400E()			task_0	Always		Error occured during grace period %1 at %2.
 Microsoft-Windows-Security-SPP	20481	0	Message_0xC0005001()			task_0	Informational		Health check initiated.
 Microsoft-Windows-Security-SPP	20482	0	Message_0xC0005002()			task_0	Informational		Health check passed.
 Microsoft-Windows-Security-SPP	20483	0	Message_0xC0005003()			task_0	Error		Tamper detected: \r\n ScanNeutralFiles = %1, ScanMuiFiles: %2
@@ -135,3 +148,6 @@ Microsoft-Windows-Security-SPP	20486	0	Message_0xC0005006()			task_0	Information
 Microsoft-Windows-Security-SPP	20487	0	Message_0xC0005007()			task_0	Error		Genuine validation failure: \r\n hr = %1
 Microsoft-Windows-Security-SPP	20488	0	Message_0xC0005008()			task_0	Informational		Genuine validation data collection started.
 Microsoft-Windows-Security-SPP	20489	0	Message_0xC0005009()			task_0	Informational		Genuine validation data collection ended.
+Microsoft-Windows-Security-SPP	20490	0	Message_0xC000500A()			task_0	Error		Grace timer initialization failed.
+Microsoft-Windows-Security-SPP	20491	0	Message_0xC000500B()			task_0	Informational		Grace timer previously created.
+Microsoft-Windows-Security-SPP	20492	0	Message_0xC000500C()			task_0	Informational		Grace period terminated with code %1.

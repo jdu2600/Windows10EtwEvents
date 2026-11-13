@@ -142,5 +142,6 @@ Microsoft-Windows-EFS	4415	0	Event_4415(UInt32 FileNumber, UInt32 LineNumber, Un
 Microsoft-Windows-EFS	4416	0	Event_4416(UInt32 FileNumber, UInt32 LineNumber, UnicodeString Param1, HexInt32 Param2)			task_0	Error	Microsoft-Windows-EFS/Debug	%1.%2: Complete: %3. Code: %4.
 Microsoft-Windows-EFS	4417	0	Event_4417(UInt32 FileNumber, UInt32 LineNumber, UnicodeString Param1, HexInt32 Param2)			task_0	Error	Microsoft-Windows-EFS/Debug	%1.%2: Leave: %3. Code: %4.
 Microsoft-Windows-EFS	4418	0	Event_4418(UInt32 FileNumber, UInt32 LineNumber, HexInt32 ErrorCode)			task_0	Error	Application	%1.%2: EFS service failed to provision RMS for Windows Information Protection. Error code: %3.
+Microsoft-Windows-EFS	4419	0	Event_4419(HexInt32 ThreadId, AnsiString File, UInt32 LineNumber, HexInt32 HRESULT, UnicodeString Message)			task_0	Error	Microsoft-Windows-EFS/Debug	Thread %1: %2, Line %3, HRESULT %4, Message: '%5'
 Microsoft-Windows-EFS	7000	0	Event_7000(UnicodeString Reason)			task_0	Error	Application	Machine role cannot be determined. %1
 Microsoft-Windows-EFS	7002	0	Event_7002(UnicodeString Reason)			task_0	Error	Application	Default group policy object cannot be created. %1

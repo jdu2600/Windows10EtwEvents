@@ -34,7 +34,6 @@ Microsoft-Windows-LiveId	2025	0	WLIDServiceOperation2025(UnicodeString Operation
 Microsoft-Windows-LiveId	2026	0	Event_2026(UnicodeString PointType, UnicodeString AppName, UnicodeString ModuleName, UnicodeString ModuleVersion, AnsiString FileName, AnsiString FunctionName, UInt32 LineNumber, Int32 ErrorCode)		Telemetry	task_0	Informational	Microsoft-Windows-LiveId/Analytic	Generic telemetry trigger event.\r\nPointType: %1\r\nAppName: %2\r\nModuleName: %3\r\nModuleVersion: %4\r\nFileName: %5\r\nFunctionName: %6\r\nLineNumber: %7\r\nErrorCode: %8
 Microsoft-Windows-LiveId	2027	0	Event_2027(UnicodeString cid)		Telemetry	task_0	Informational	Microsoft-Windows-LiveId/Analytic	User specific telemetry trigger event for CID %1.
 Microsoft-Windows-LiveId	2028	0	Event_2028(AnsiString FunctionName, Int32 ErrorCode)		Telemetry Error	task_0	Error	Microsoft-Windows-LiveId/Operational	ErrorVerifier in function %1 encountered unexpected error code (%2).
-Microsoft-Windows-LiveId	2029	0	Event_2029(AnsiString FileName, AnsiString FunctionName, UInt32 LineNumber, AnsiString Expression)		Telemetry Error keyword_400000000000	task_0	Error	Microsoft-Windows-LiveId/Operational	Assertion failure for expression (%4) in function %2 @%1_%3.
 Microsoft-Windows-LiveId	3000	0	Event_3000(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		Critical LiveSsp	task_0	Critical		%3 @%1_%2
 Microsoft-Windows-LiveId	3001	0	Event_3001(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		Error LiveSsp	task_0	Error		%3 @%1_%2
 Microsoft-Windows-LiveId	3002	0	Event_3002(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		Warning LiveSsp	task_0	Warning		%3 @%1_%2
@@ -109,7 +108,7 @@ Microsoft-Windows-LiveId	6102	0	Event_6102(UnicodeString value)		WlidSvc Credent
 Microsoft-Windows-LiveId	6103	0	Event_6103(UnicodeString value)		WlidSvc Credentials	task_0	Informational		RemoveCachedAuthInfo Deleting item for target [%1] from CredMan.
 Microsoft-Windows-LiveId	6104	0	Event_6104(Int32 value)		WlidSvc Credentials	task_0	Informational		RemoveCachedAuthInfo ALL Deleting [%1] items from CredMan.
 Microsoft-Windows-LiveId	6105	0	Event_6105(Int32 value)		WlidSvc Credentials	task_0	Informational		RemovePersistedTokens Deleting item for target [%1] from CredMan.
-Microsoft-Windows-LiveId	6112	0	Event_6112(UnicodeString value1, AnsiString value2)		WlidSvc Credentials	task_0	Informational		
+Microsoft-Windows-LiveId	6112	0	Event_6112(UnicodeString value1, AnsiString value2)		WlidSvc Credentials	task_0	Informational		CredMan activity skipped. Credential not changed for [WindowsLive:(token):name=%1;serviceuri=%2
 Microsoft-Windows-LiveId	6113	0	Event_6113(AnsiString FunctionName, UInt32 ErrorCode)		Error Operational WlidSvc RPC	task_0	Error		
 Microsoft-Windows-LiveId	6114	0	Event_6114(UInt32 RequestType, AnsiString cid, UInt32 ErrorCode, AnsiString MachineEnvironment)		Error Operational WlidSvc SOAP	task_0	Error		
 Microsoft-Windows-LiveId	6115	0	Event_6115(AnsiString Value)		WlidSvc SOAP	task_0	Informational		

@@ -1,0 +1,11 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-VIRTDISK	1	0	Openvirtualdisk.Start(UnicodeString VhdFileName, UInt32 VhdVirtualStorageType)	Start		Openvirtualdisk.	Informational	Microsoft-Windows-VIRTDISK-Analytic	Opening backing store %1 as type %2.
+Microsoft-Windows-VIRTDISK	2	0	Openvirtualdisk.Stop(Pointer VhdHandle, UInt32 VhdStatus)	Stop		Openvirtualdisk.	Informational	Microsoft-Windows-VIRTDISK-Analytic	Opened backing store, returning handle %1, status %2.
+Microsoft-Windows-VIRTDISK	3	0	Attachvirtualdisk.Start(Pointer VhdHandle)	Start		Attachvirtualdisk.	Informational	Microsoft-Windows-VIRTDISK-Analytic	Attaching using handle %1.
+Microsoft-Windows-VIRTDISK	4	0	Attachvirtualdisk.Stop(UInt32 VhdStatus)	Stop		Attachvirtualdisk.	Informational	Microsoft-Windows-VIRTDISK-Analytic	Attached with status %1.
+Microsoft-Windows-VIRTDISK	5	0	Detachvirtualdisk.Start(Pointer VhdHandle)	Start		Detachvirtualdisk.	Informational	Microsoft-Windows-VIRTDISK-Analytic	Detaching using handle %1.
+Microsoft-Windows-VIRTDISK	6	0	Detachvirtualdisk.Stop(UInt32 VhdStatus)	Stop		Detachvirtualdisk.	Informational	Microsoft-Windows-VIRTDISK-Analytic	Detached with status %1.
+Microsoft-Windows-VIRTDISK	1000	0	Event_1000(UnicodeString TraceData, UnicodeString VmName, UnicodeString VmId, UInt32 StackFrameCount, Pointer StackFrame, UInt32 ModuleCount, Int32 Module)			task_0	Informational	Microsoft-Windows-VIRTDISK-Analytic	%1
+Microsoft-Windows-VIRTDISK	1001	0	Event_1001(UnicodeString TraceData, UnicodeString VmName, UnicodeString VmId, UInt32 StackFrameCount, Pointer StackFrame, UInt32 ModuleCount, Int32 Module)			task_0	Warning	Microsoft-Windows-VIRTDISK-Analytic	%1
+Microsoft-Windows-VIRTDISK	1002	0	Event_1002(UnicodeString TraceData, UnicodeString VmName, UnicodeString VmId, UInt32 StackFrameCount, Pointer StackFrame, UInt32 ModuleCount, Int32 Module)			task_0	Error	Microsoft-Windows-VIRTDISK-Analytic	%1
+Microsoft-Windows-VIRTDISK	1003	0	Event_1003(UnicodeString TraceData, UnicodeString VmName, UnicodeString VmId, UInt32 StackFrameCount, Pointer StackFrame, UInt32 ModuleCount, Int32 Module)			task_0	Critical	Microsoft-Windows-VIRTDISK-Analytic	%1

@@ -9,14 +9,18 @@ Microsoft-Windows-Telephony-VoipRT	103	0	Event_103(UInt32 Prop_HexInt32)		VoipCa
 Microsoft-Windows-Telephony-VoipRT	104	0	Event_104(UnicodeString Prop_UnicodeString_1, UnicodeString Prop_UnicodeString_2)		VoipCallCoordinator	task_0	Informational		Made DSS token %1 for file %2
 Microsoft-Windows-Telephony-VoipRT	105	0	Event_105(UInt32 Prop_HexInt32, GUID Prop_Guid)		VoipCallCoordinator	task_0	Informational		Outgoing Video call upgrade call: %1, Call upgrade Guid: %2
 Microsoft-Windows-Telephony-VoipRT	106	0	Event_106(UInt32 Prop_HexInt32)		VoipCallCoordinator	task_0	Informational		New incoming upgrade video call %1
+Microsoft-Windows-Telephony-VoipRT	107	0	Event_107(UInt32 Prop_HexInt32)		VoipCallCoordinator	task_0	Informational		New accepted VoIP call %1
 Microsoft-Windows-Telephony-VoipRT	120	0	Event_120(UInt32 Prop_HexInt32)		VoipPhoneCall	task_0	Informational		Invoking AcceptIncoming for VoIP call %1
 Microsoft-Windows-Telephony-VoipRT	121	0	Event_121(UInt32 Prop_HexInt32)		VoipPhoneCall	task_0	Informational		Invoking RejectIncoming for VoIP call %1
 Microsoft-Windows-Telephony-VoipRT	122	0	Event_122(UInt32 Prop_HexInt32)		VoipPhoneCall	task_0	Informational		Invoking Hold for VoIP call %1
 Microsoft-Windows-Telephony-VoipRT	123	0	Event_123(UInt32 Prop_HexInt32)		VoipPhoneCall	task_0	Informational		Invoking Unhold for VoIP call %1
 Microsoft-Windows-Telephony-VoipRT	124	0	Event_124(UInt32 Prop_HexInt32)		VoipPhoneCall	task_0	Informational		Invoking End for VoIP call %1
+Microsoft-Windows-Telephony-VoipRT	125	0	Event_125(UInt32 Prop_HexInt32)		VoipPhoneCall	task_0	Informational		TryShowAppUI succeeded for call %1
 Microsoft-Windows-Telephony-VoipRT	200	0	IncomingCallStart()	Start	Performance	IncomingCall	Verbose		
 Microsoft-Windows-Telephony-VoipRT	201	0	StartCallStart()	Start	Performance	StartCall	Verbose		
 Microsoft-Windows-Telephony-VoipRT	202	0	StartCallStop()	Stop	Performance	StartCall	Verbose		
 Microsoft-Windows-Telephony-VoipRT	203	0	EndCallStart()	Start	Performance	EndCall	Verbose		
 Microsoft-Windows-Telephony-VoipRT	206	0	ProcessMuteStateNotificationStart()	Start	Performance	ProcessMuteStateNotification	Verbose		
 Microsoft-Windows-Telephony-VoipRT	207	0	ProcessMuteStateNotificationStart207()	Start	Performance	ProcessMuteStateNotification	Verbose		
+Microsoft-Windows-Telephony-VoipRT	208	0	NewAcceptedCallStart()	Start	Performance	NewAcceptedCall	Verbose		
+Microsoft-Windows-Telephony-VoipRT	209	0	NewAcceptedCallStop()	Stop	Performance	NewAcceptedCall	Verbose		

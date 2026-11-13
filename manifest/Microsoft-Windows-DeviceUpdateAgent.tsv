@@ -1,0 +1,20 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-DeviceUpdateAgent	100	0	Event_100(UnicodeString Prop_SessionId)			task_0	Informational	Microsoft-Windows-DeviceUpdateAgent/Operational	A new deployment session was created with session ID %1
+Microsoft-Windows-DeviceUpdateAgent	101	0	Event_101(UInt32 HRESULT)			task_0	Error	Microsoft-Windows-DeviceUpdateAgent/Operational	Failed to create a new deployment session with error %1
+Microsoft-Windows-DeviceUpdateAgent	200	0	Event_200(UInt32 HRESULT)			task_0	Error	Microsoft-Windows-DeviceUpdateAgent/Operational	Failed to generate a list of files to download with error %1
+Microsoft-Windows-DeviceUpdateAgent	201	0	Event_201(UInt32 Prop_NumFiles, UInt64 Prop_RequestSize)			task_0	Informational	Microsoft-Windows-DeviceUpdateAgent/Operational	Requesting %1 files with total size %2
+Microsoft-Windows-DeviceUpdateAgent	300	0	Event_300(UInt32 HRESULT)			task_0	Error	Microsoft-Windows-DeviceUpdateAgent/Operational	Failed to install updates with error %1
+Microsoft-Windows-DeviceUpdateAgent	301	0	Event_301(UInt32 Win32Error, UnicodeString Prop_UnicodeString)			task_0	Error	Microsoft-Windows-DeviceUpdateAgent/Operational	Update '%2' encountered install error %1
+Microsoft-Windows-DeviceUpdateAgent	302	0	Event_302(UInt32 Win32Error, UnicodeString Prop_UnicodeString)			task_0	Error	Microsoft-Windows-DeviceUpdateAgent/Operational	Update '%2' encountered import error %1
+Microsoft-Windows-DeviceUpdateAgent	303	0	Event_303(UInt32 Win32Error, UnicodeString Prop_UnicodeString)			task_0	Error	Microsoft-Windows-DeviceUpdateAgent/Operational	Update '%2' should have already existed on the machine, but was missing.  Error = %1
+Microsoft-Windows-DeviceUpdateAgent	304	0	Event_304(UnicodeString Prop_Id)			task_0	Informational	Microsoft-Windows-DeviceUpdateAgent/Operational	Installation of update set '%1' requires the system to be rebooted
+Microsoft-Windows-DeviceUpdateAgent	305	0	Event_305(UnicodeString Prop_Id)			task_0	Informational	Microsoft-Windows-DeviceUpdateAgent/Operational	Installation of update '%1' requires the system to be rebooted
+Microsoft-Windows-DeviceUpdateAgent	306	0	Event_306(UnicodeString Prop_SetId, UInt32 Prop_SuccessfulUpdates, UInt32 Prop_TotalUpdates, UInt64 Prop_ElapsedMilliseconds)			task_0	Informational	Microsoft-Windows-DeviceUpdateAgent/Operational	Installation of update set '%1' is complete.  %2 updates out of %3 updates were successfully installed in %4 milliseconds
+Microsoft-Windows-DeviceUpdateAgent	307	0	Event_307(UnicodeString Prop_ProductId, UnicodeString Prop_ProductVersion)			task_0	Informational	Microsoft-Windows-DeviceUpdateAgent/Operational	Updated product '%1' to version '%2'
+Microsoft-Windows-DeviceUpdateAgent	400	0	Event_400(UInt32 HRESULT)			task_0	Error	Microsoft-Windows-DeviceUpdateAgent/Operational	Failed to commit updates with error %1
+Microsoft-Windows-DeviceUpdateAgent	500	0	Event_500(UInt32 HRESULT)			task_0	Error	Microsoft-Windows-DeviceUpdateAgent/Operational	Failed to clean up updates with error %1
+Microsoft-Windows-DeviceUpdateAgent	600	0	Event_600(UInt32 HRESULT)			task_0	Error	Microsoft-Windows-DeviceUpdateAgent/Operational	Failed to cancel updates with error %1
+Microsoft-Windows-DeviceUpdateAgent	601	0	Event_601(UInt32 HRESULT)			task_0	Informational	Microsoft-Windows-DeviceUpdateAgent/Operational	Updates were cancelled with reason %1
+Microsoft-Windows-DeviceUpdateAgent	700	0	Event_700(UInt32 HRESULT)			task_0	Error	Microsoft-Windows-DeviceUpdateAgent/Operational	
+Microsoft-Windows-DeviceUpdateAgent	800	0	Event_800(UInt32 HRESULT)			task_0	Error	Microsoft-Windows-DeviceUpdateAgent/Operational	
+Microsoft-Windows-DeviceUpdateAgent	900	0	Event_900(UInt32 HRESULT)			task_0	Error	Microsoft-Windows-DeviceUpdateAgent/Operational	

@@ -253,6 +253,11 @@ Microsoft-Windows-Telephony-PhoneProviders	377	0	Event_377(Pointer Prop_Ptr1, Po
 Microsoft-Windows-Telephony-PhoneProviders	378	0	Event_378(Pointer Prop_Ptr, UInt32 Prop_UINT)		StateTransition	task_0	Informational		[VoipLine#%1] Calling CancelVoipRtcTask(%2)
 Microsoft-Windows-Telephony-PhoneProviders	379	0	Event_379(Pointer Prop_Ptr, UInt32 Prop_UINT)		StateTransition	task_0	Informational		[VoipLine#%1] Calling NotifyVoipActivityCompleted(%2)
 Microsoft-Windows-Telephony-PhoneProviders	380	0	Event_380(UnicodeString Prop_UnicodeString)		StateTransition	task_0	Informational		CallerId Prefix updated.  Updated number is %1.
+Microsoft-Windows-Telephony-PhoneProviders	381	0	Event_381(Pointer Prop_Ptr, UInt32 Prop_UINT)		StateTransition	task_0	Informational		LineFactory->NewAcceptedCall(%1, %2)
+Microsoft-Windows-Telephony-PhoneProviders	382	0	Event_382(Pointer Prop_Ptr, UInt32 Prop_UINT)		StateTransition	task_0	Informational		LineFactory->ShowAppUI(%1, %2)
+Microsoft-Windows-Telephony-PhoneProviders	383	0	Event_383(UInt32 Prop_UINT)		Error	task_0	Error		LineFactory->BackgroundVoipRestrictedCapabilityCheckFailed(%1)
+Microsoft-Windows-Telephony-PhoneProviders	384	0	Event_384(UInt32 Prop_UINT1, UInt32 Prop_UINT2)		VoipLine	task_0	Informational		Launching Voip app to show UI: VoipApp CallId: %1; Controller callId: %2
+Microsoft-Windows-Telephony-PhoneProviders	385	0	Event_385(UInt32 Prop_UINT)		Error	task_0	Error		LineFactory->BackgroundVoipRestrictedCapabilityCheckAccessDenied(%1)
 Microsoft-Windows-Telephony-PhoneProviders	1000	0	StartCallStart()	Start	Performance	StartCall	Verbose		
 Microsoft-Windows-Telephony-PhoneProviders	1010	0	IncomingCallStart()	Start	Performance	IncomingCall	Verbose		
 Microsoft-Windows-Telephony-PhoneProviders	1050	0	IncomingCallStop()	Stop	Performance	IncomingCall	Verbose		

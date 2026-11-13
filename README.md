@@ -34,12 +34,14 @@ Microsoft
  * https://github.com/microsoft/perfview
  * https://github.com/microsoft/krabsetw
 
-Nedim Šabić [@arch_rabbit](https://twitter.com/arch_rabbit)
- * https://github.com/rabbitstack/fibratus
-
  Origin [@originhq](https://twitter.com/originhq)
+ * https://github.com/originsec/etw-rs
+ * https://www.originhq.com/research/introducing-etw-rs
  * https://www.originhq.com/research/securitytrace-etw-ppl
  * https://www.originhq.com/Closing%20the%20Execution%20Gap.pdf
+
+Nedim Šabić [@arch_rabbit](https://twitter.com/arch_rabbit)
+ * https://github.com/rabbitstack/fibratus
 
 Philipp Schmied [@CaptnBanana](https://twitter.com/CaptnBanana), Sebastian Feldmann [@thefLinkk](https://twitter.com/thefLinkk) and Dominik Phillips
  * https://github.com/threathunters-io/kassandra_x33fcon_2026

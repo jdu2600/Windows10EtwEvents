@@ -1,34 +1,34 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-IdCtrls	5001	0	task_0(UnicodeString URL)			task_0	Error		
-Microsoft-Windows-IdCtrls	5002	0	task_05002(UnicodeString URL)			task_0	Error		
-Microsoft-Windows-IdCtrls	5003	0	task_05003(UnicodeString URL, UnicodeString TargetFrameName, UInt32 StatusCode)			task_0	Error		
-Microsoft-Windows-IdCtrls	5004	0	task_05004(UnicodeString URL, UnicodeString ReferrerUrl, UInt32 Flags)			task_0	Error		
-Microsoft-Windows-IdCtrls	5005	0	task_05005(UInt32 WizardID, UnicodeString URL, UInt32 HRESULT)			task_0	Error		
-Microsoft-Windows-IdCtrls	5006	0	task_05006(UnicodeString Method, UInt32 HRESULT)			task_0	Error		
-Microsoft-Windows-IdCtrls	5007	0	task_05007(UnicodeString Method, UnicodeString String, UInt32 HRESULT)			task_0	Error		
-Microsoft-Windows-IdCtrls	5008	0	task_05008(UInt32 DISPID, UInt32 ArgErr, UInt32 HRESULT)			task_0	Error		
-Microsoft-Windows-IdCtrls	5009	0	task_05009(UInt32 SecurityProblem, UInt32 HRESULT)			task_0	Error		
-Microsoft-Windows-IdCtrls	5010	0	task_05010(UInt32 WizardID, UInt32 HRESULT)			task_0	Error		
-Microsoft-Windows-IdCtrls	5011	0	task_05011(UnicodeString URL, UInt32 Action, UInt32 Policy, UInt32 HRESULT)			task_0	Informational		
-Microsoft-Windows-IdCtrls	5012	0	task_05012(GUID CLSID, UnicodeString URL)			task_0	Informational		
-Microsoft-Windows-IdCtrls	5013	0	task_05013(GUID CLSID, UnicodeString URL)			task_0	Informational		
-Microsoft-Windows-IdCtrls	5014	0	task_05014(GUID CLSID, UnicodeString URL)			task_0	Informational		
-Microsoft-Windows-IdCtrls	5015	0	task_05015(GUID CLSID, UnicodeString URL)			task_0	Informational		
-Microsoft-Windows-IdCtrls	5016	0	task_05016(GUID CLSID, UnicodeString URL)			task_0	Informational		
-Microsoft-Windows-IdCtrls	5017	0	task_05017(UnicodeString URL)			task_0	Informational		
-Microsoft-Windows-IdCtrls	5018	0	task_05018(UnicodeString URL)			task_0	Informational		
-Microsoft-Windows-IdCtrls	5019	0	task_05019(UnicodeString URL)			task_0	Informational		
-Microsoft-Windows-IdCtrls	5020	0	task_05020(UnicodeString URL)			task_0	Informational		
-Microsoft-Windows-IdCtrls	5021	0	task_05021(UInt32 cx, UInt32 cy)			task_0	Informational		
-Microsoft-Windows-IdCtrls	5022	0	task_05022(UnicodeString Method)			task_0	Informational		
-Microsoft-Windows-IdCtrls	5023	0	task_05023(UnicodeString Method, UnicodeString String)			task_0	Informational		
-Microsoft-Windows-IdCtrls	5024	0	task_05024(UnicodeString Method, UnicodeString String, UInt32 HRESULT)			task_0	Informational		
-Microsoft-Windows-IdCtrls	5025	0	task_05025()			task_0	Informational		
-Microsoft-Windows-IdCtrls	5026	0	task_05026()			task_0	Informational		
-Microsoft-Windows-IdCtrls	5027	0	task_05027(UnicodeString Method, UnicodeString String, UnicodeString ExtendedString, UInt32 HRESULT)			task_0	Error		
-Microsoft-Windows-IdCtrls	7001	0	Perf_IdControl_CreateControlStart()	Start	IdentityWizard	Perf_IdControl_CreateControl	Informational		
-Microsoft-Windows-IdCtrls	7002	0	Perf_IdControl_CreateControlStop()	Stop	IdentityWizard	Perf_IdControl_CreateControl	Informational		
-Microsoft-Windows-IdCtrls	7003	0	Perf_IdControl_GetInitialURLStart()	Start	IdentityWizard	Perf_IdControl_GetInitialURL	Informational		
-Microsoft-Windows-IdCtrls	7004	0	Perf_IdControl_GetInitialURLStop()	Stop	IdentityWizard	Perf_IdControl_GetInitialURL	Informational		
-Microsoft-Windows-IdCtrls	7005	0	Perf_IdControl_NavigateStart()	Start	IdentityWizard	Perf_IdControl_Navigate	Informational		
-Microsoft-Windows-IdCtrls	7006	0	Perf_IdControl_NavigateStop()	Stop	IdentityWizard	Perf_IdControl_Navigate	Informational		
+Microsoft-Windows-IdCtrls	5001	0	Event_5001(UnicodeString URL)			task_0	Error	Microsoft-Windows-IdCtrls/Operational	Cannot navigate to a non SSL URL - %1.
+Microsoft-Windows-IdCtrls	5002	0	Event_5002(UnicodeString URL)			task_0	Error	Microsoft-Windows-IdCtrls/Operational	Invalid web page on document complete from %1.
+Microsoft-Windows-IdCtrls	5003	0	Event_5003(UnicodeString URL, UnicodeString TargetFrameName, UInt32 StatusCode)			task_0	Error	Microsoft-Windows-IdCtrls/Operational	Failed to navigate on %1 for TargetFrameName %2. (StatusCode %3)
+Microsoft-Windows-IdCtrls	5004	0	Event_5004(UnicodeString URL, UnicodeString ReferrerUrl, UInt32 Flags)			task_0	Error	Microsoft-Windows-IdCtrls/Operational	Blocked a popup window from %1 for ReferrerUrl %2. (Flags %3)
+Microsoft-Windows-IdCtrls	5005	0	Event_5005(UInt32 WizardID, UnicodeString URL, UInt32 HRESULT)			task_0	Error	Microsoft-Windows-IdCtrls/Operational	Failed to navigate on wizard ID %1 through URL - %2. (Result %3)
+Microsoft-Windows-IdCtrls	5006	0	Event_5006(UnicodeString Method, UInt32 HRESULT)			task_0	Error	Microsoft-Windows-IdCtrls/Operational	Failed to execute [%1]. (Result %2)
+Microsoft-Windows-IdCtrls	5007	0	Event_5007(UnicodeString Method, UnicodeString String, UInt32 HRESULT)			task_0	Error	Microsoft-Windows-IdCtrls/Operational	Failed to execute [%1] for [%2]. (Result %3)
+Microsoft-Windows-IdCtrls	5008	0	Event_5008(UInt32 DISPID, UInt32 ArgErr, UInt32 HRESULT)			task_0	Error	Microsoft-Windows-IdCtrls/Operational	Failed to invoke command in host for DISPID %1 on parameter %2. (Result %3)
+Microsoft-Windows-IdCtrls	5009	0	Event_5009(UInt32 SecurityProblem, UInt32 HRESULT)			task_0	Error	Microsoft-Windows-IdCtrls/Operational	Failed to navigate due to security problem %1. (Result %2)
+Microsoft-Windows-IdCtrls	5010	0	Event_5010(UInt32 WizardID, UInt32 HRESULT)			task_0	Error	Microsoft-Windows-IdCtrls/Operational	Failed to Get alternative URL for Wizard ID %1. (Result %2)
+Microsoft-Windows-IdCtrls	5011	0	Event_5011(UnicodeString URL, UInt32 Action, UInt32 Policy, UInt32 HRESULT)			task_0	Informational	Microsoft-Windows-IdCtrls/Operational	Security manager handle URL %1 action %2 as policy %3. (Result %4)
+Microsoft-Windows-IdCtrls	5012	0	Event_5012(GUID CLSID, UnicodeString URL)			task_0	Informational	Microsoft-Windows-IdCtrls/Operational	Security manager allow ActiveX control for CLSID %1. (URL %2)
+Microsoft-Windows-IdCtrls	5013	0	Event_5013(GUID CLSID, UnicodeString URL)			task_0	Informational	Microsoft-Windows-IdCtrls/Operational	Security manager disallow ActiveX control for CLSID %1. (URL %2)
+Microsoft-Windows-IdCtrls	5014	0	Event_5014(GUID CLSID, UnicodeString URL)			task_0	Informational	Microsoft-Windows-IdCtrls/Operational	QueryCustomPolicy(ObjectSafety) default action for CLSID %1. (URL %2)
+Microsoft-Windows-IdCtrls	5015	0	Event_5015(GUID CLSID, UnicodeString URL)			task_0	Informational	Microsoft-Windows-IdCtrls/Operational	QueryCustomPolicy(ObjectSafety) disallowed for CLSID %1. (URL %2)
+Microsoft-Windows-IdCtrls	5016	0	Event_5016(GUID CLSID, UnicodeString URL)			task_0	Informational	Microsoft-Windows-IdCtrls/Operational	QueryCustomPolicy(ObjectSafety) default action for GUID %1. (URL %2)
+Microsoft-Windows-IdCtrls	5017	0	Event_5017(UnicodeString URL)			task_0	Informational	Microsoft-Windows-IdCtrls/Operational	Before navigate to %1.
+Microsoft-Windows-IdCtrls	5018	0	Event_5018(UnicodeString URL)			task_0	Informational	Microsoft-Windows-IdCtrls/Operational	Navigate completed on %1.
+Microsoft-Windows-IdCtrls	5019	0	Event_5019(UnicodeString URL)			task_0	Informational	Microsoft-Windows-IdCtrls/Operational	Document completed on %1.
+Microsoft-Windows-IdCtrls	5020	0	Event_5020(UnicodeString URL)			task_0	Informational	Microsoft-Windows-IdCtrls/Operational	Navigate Redirected to %1.
+Microsoft-Windows-IdCtrls	5021	0	Event_5021(UInt32 cx, UInt32 cy)			task_0	Informational	Microsoft-Windows-IdCtrls/Operational	Window resized to cx: %1, cy: %2.
+Microsoft-Windows-IdCtrls	5022	0	Event_5022(UnicodeString Method)			task_0	Informational	Microsoft-Windows-IdCtrls/Operational	Succeeded on executing [%1].
+Microsoft-Windows-IdCtrls	5023	0	Event_5023(UnicodeString Method, UnicodeString String)			task_0	Informational	Microsoft-Windows-IdCtrls/Operational	Succeeded on executing [%1] for [%2].
+Microsoft-Windows-IdCtrls	5024	0	Event_5024(UnicodeString Method, UnicodeString String, UInt32 HRESULT)			task_0	Informational	Microsoft-Windows-IdCtrls/Operational	Executed [%1] for [%2]. (Result %3)
+Microsoft-Windows-IdCtrls	5025	0	Event_5025()			task_0	Informational	Microsoft-Windows-IdCtrls/Operational	Showing browser window
+Microsoft-Windows-IdCtrls	5026	0	Event_5026()			task_0	Informational	Microsoft-Windows-IdCtrls/Operational	Showing progress window
+Microsoft-Windows-IdCtrls	5027	0	Event_5027(UnicodeString Method, UnicodeString String, UnicodeString ExtendedString, UInt32 HRESULT)			task_0	Error	Microsoft-Windows-IdCtrls/Operational	Failed to execute [%1] for [%2]. Extended error text: %3. (Result %4)
+Microsoft-Windows-IdCtrls	7001	0	Perf_IdControl_CreateControlStart()	Start	IdentityWizard	Perf_IdControl_CreateControl	Informational	Microsoft-Windows-IdCtrls/Analytic	
+Microsoft-Windows-IdCtrls	7002	0	Perf_IdControl_CreateControlStop()	Stop	IdentityWizard	Perf_IdControl_CreateControl	Informational	Microsoft-Windows-IdCtrls/Analytic	
+Microsoft-Windows-IdCtrls	7003	0	Perf_IdControl_GetInitialURLStart()	Start	IdentityWizard	Perf_IdControl_GetInitialURL	Informational	Microsoft-Windows-IdCtrls/Analytic	
+Microsoft-Windows-IdCtrls	7004	0	Perf_IdControl_GetInitialURLStop()	Stop	IdentityWizard	Perf_IdControl_GetInitialURL	Informational	Microsoft-Windows-IdCtrls/Analytic	
+Microsoft-Windows-IdCtrls	7005	0	Perf_IdControl_NavigateStart()	Start	IdentityWizard	Perf_IdControl_Navigate	Informational	Microsoft-Windows-IdCtrls/Analytic	
+Microsoft-Windows-IdCtrls	7006	0	Perf_IdControl_NavigateStop()	Stop	IdentityWizard	Perf_IdControl_Navigate	Informational	Microsoft-Windows-IdCtrls/Analytic	

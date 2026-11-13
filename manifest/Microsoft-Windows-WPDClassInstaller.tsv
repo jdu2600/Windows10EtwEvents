@@ -1,34 +1,33 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-WPDClassInstaller	100	0	DriverPerformanceStart(UInt32 InstallFunctionCode, UnicodeString InstallFunctionName)	Start		DriverPerformance	Informational		
-Microsoft-Windows-WPDClassInstaller	101	0	DriverPerformanceStop(UInt32 InstallFunctionCode, UnicodeString InstallFunctionName, UInt32 ReturnCode)	Stop		DriverPerformance	Informational		
-Microsoft-Windows-WPDClassInstaller	102	0	DriverPerformanceStart102(UnicodeString DevicePath)	Start		DriverPerformance	Informational		
-Microsoft-Windows-WPDClassInstaller	103	0	DriverPerformanceStop103(UnicodeString DevicePath, UInt32 ReturnCode)	Stop		DriverPerformance	Informational		
-Microsoft-Windows-WPDClassInstaller	104	0	DriverPerformanceStart104(UnicodeString DevicePath)	Start		DriverPerformance	Informational		
-Microsoft-Windows-WPDClassInstaller	105	0	DriverPerformanceStop105(UnicodeString DevicePath, UInt32 ReturnCode)	Stop		DriverPerformance	Informational		
-Microsoft-Windows-WPDClassInstaller	200	0	DriverPerformance()			DriverPerformance	Informational		
-Microsoft-Windows-WPDClassInstaller	201	0	DeviceMetadataRetrieval(UnicodeString DevicePath, UnicodeString MetadataLocaleName, GUID MetadataContentId)			DeviceMetadataRetrieval	Informational		
-Microsoft-Windows-WPDClassInstaller	202	0	DeviceMetadataRetrieval202(UnicodeString DevicePath, UnicodeString MetadataLocaleName, GUID MetadataContentId, UInt32 ReturnCode)			DeviceMetadataRetrieval	Informational		
-Microsoft-Windows-WPDClassInstaller	203	0	DeviceMetadataRetrieval203(UnicodeString DevicePath, UnicodeString MetadataLocaleName, GUID MetadataContentId, UInt32 ReturnCode)			DeviceMetadataRetrieval	Informational		
-Microsoft-Windows-WPDClassInstaller	204	0	DeviceMetadataRetrieval204(UnicodeString DevicePath, UInt32 ReturnCode)			DeviceMetadataRetrieval	Informational		
-Microsoft-Windows-WPDClassInstaller	205	0	DeviceMetadataRetrieval205(UnicodeString DevicePath, UnicodeString ServicePath)			DeviceMetadataRetrieval	Informational		
-Microsoft-Windows-WPDClassInstaller	206	0	DeviceMetadataRetrieval206(UnicodeString MetadataLocaleName, GUID MetadataContentId)			DeviceMetadataRetrieval	Informational		
-Microsoft-Windows-WPDClassInstaller	207	0	DriverPerformance207(UnicodeString PolicyName, UnicodeString UserAccountName, UnicodeString DeviceName, UnicodeString ClassName, UnicodeString ClassGuid, UnicodeString HardwareIds, UnicodeString InstanceId, UnicodeString BusTypeGuid, UnicodeString EventSource)			DriverPerformance	Informational		
-Microsoft-Windows-WPDClassInstaller	24576	1	task_0PCODE_64pcode_64_V1()	opcode_64		task_0	Always		
-Microsoft-Windows-WPDClassInstaller	24577	1	task_0PCODE_64pcode_6424577_V1()	opcode_64		task_0	Always		
-Microsoft-Windows-WPDClassInstaller	24578	1	task_0PCODE_64pcode_6424578_V1()	opcode_64		task_0	Always		
-Microsoft-Windows-WPDClassInstaller	24579	1	task_0PCODE_64pcode_6424579_V1()	opcode_64		task_0	Always		
-Microsoft-Windows-WPDClassInstaller	24580	1	task_0PCODE_64pcode_6424580_V1()	opcode_64		task_0	Always		
-Microsoft-Windows-WPDClassInstaller	24581	1	task_0PCODE_64pcode_6424581_V1()	opcode_64		task_0	Always		
-Microsoft-Windows-WPDClassInstaller	24582	1	task_0PCODE_64pcode_6424582_V1()	opcode_64		task_0	Always		
-Microsoft-Windows-WPDClassInstaller	24583	1	task_0PCODE_64pcode_6424583_V1()	opcode_64		task_0	Always		
-Microsoft-Windows-WPDClassInstaller	24584	1	task_0PCODE_64pcode_6424584_V1()	opcode_64		task_0	Always		
-Microsoft-Windows-WPDClassInstaller	24585	1	task_0PCODE_64pcode_6424585_V1()	opcode_64		task_0	Always		
-Microsoft-Windows-WPDClassInstaller	24832	1	task_0PCODE_128pcode_128_V1()	opcode_128		task_0	Always		
-Microsoft-Windows-WPDClassInstaller	25088	1	task_0PCODE_192pcode_192_V1()	opcode_192		task_0	Always		
-Microsoft-Windows-WPDClassInstaller	25089	1	task_0PCODE_192pcode_19225089_V1()	opcode_192		task_0	Always		
-Microsoft-Windows-WPDClassInstaller	25090	1	task_0PCODE_192pcode_19225090_V1()	opcode_192		task_0	Always		
-Microsoft-Windows-WPDClassInstaller	25091	1	task_0PCODE_192pcode_19225091_V1()	opcode_192		task_0	Always		
-Microsoft-Windows-WPDClassInstaller	25092	1	task_0PCODE_192pcode_19225092_V1()	opcode_192		task_0	Always		
-Microsoft-Windows-WPDClassInstaller	25093	1	task_0PCODE_192pcode_19225093_V1()	opcode_192		task_0	Always		
-Microsoft-Windows-WPDClassInstaller	25094	1	task_0PCODE_192pcode_19225094_V1()	opcode_192		task_0	Always		
-Microsoft-Windows-WPDClassInstaller	25095	1	task_0PCODE_192pcode_19225095_V1()	opcode_192		task_0	Always		
+Microsoft-Windows-WPDClassInstaller	100	0	DriverPerformanceStart(UInt32 InstallFunctionCode, UnicodeString InstallFunctionName)	Start		DriverPerformance	Informational	Microsoft-Windows-WPD-ClassInstaller/Analytic	WPD device installation function (%1, %2) begin.
+Microsoft-Windows-WPDClassInstaller	101	0	DriverPerformanceStop(UInt32 InstallFunctionCode, UnicodeString InstallFunctionName, UInt32 ReturnCode)	Stop		DriverPerformance	Informational	Microsoft-Windows-WPD-ClassInstaller/Analytic	WPD device installation function (%1, %2) end with this return code (%3).
+Microsoft-Windows-WPDClassInstaller	102	0	DriverPerformanceStart102(UnicodeString DevicePath)	Start		DriverPerformance	Informational	Microsoft-Windows-WPD-ClassInstaller/Analytic	WPD device metadata retrieval for device %1 begin
+Microsoft-Windows-WPDClassInstaller	103	0	DriverPerformanceStop103(UnicodeString DevicePath, UInt32 ReturnCode)	Stop		DriverPerformance	Informational	Microsoft-Windows-WPD-ClassInstaller/Analytic	WPD device metadata retrieval for device %1 end with this return code (%2).
+Microsoft-Windows-WPDClassInstaller	104	0	DriverPerformanceStart104(UnicodeString DevicePath)	Start		DriverPerformance	Informational	Microsoft-Windows-WPD-ClassInstaller/Analytic	WPD device metadata retrieval for device %1 begin
+Microsoft-Windows-WPDClassInstaller	105	0	DriverPerformanceStop105(UnicodeString DevicePath, UInt32 ReturnCode)	Stop		DriverPerformance	Informational	Microsoft-Windows-WPD-ClassInstaller/Analytic	WPD device metadata retrieval for device %1 end with this return code (%2).
+Microsoft-Windows-WPDClassInstaller	200	0	DriverPerformance()			DriverPerformance	Informational	Microsoft-Windows-WPD-ClassInstaller/Operational	Device marked for reinstallation on subsequent connect.
+Microsoft-Windows-WPDClassInstaller	201	0	DeviceMetadataRetrieval(UnicodeString DevicePath, UnicodeString MetadataLocaleName, GUID MetadataContentId)			DeviceMetadataRetrieval	Informational	Microsoft-Windows-WPD-ClassInstaller/Operational	%1: Transfer of metadata (%2, %3) succeeded.
+Microsoft-Windows-WPDClassInstaller	202	0	DeviceMetadataRetrieval202(UnicodeString DevicePath, UnicodeString MetadataLocaleName, GUID MetadataContentId, UInt32 ReturnCode)			DeviceMetadataRetrieval	Informational	Microsoft-Windows-WPD-ClassInstaller/Operational	%1: Transfer of metadata (%2, %3) skipped. Error code %4.
+Microsoft-Windows-WPDClassInstaller	203	0	DeviceMetadataRetrieval203(UnicodeString DevicePath, UnicodeString MetadataLocaleName, GUID MetadataContentId, UInt32 ReturnCode)			DeviceMetadataRetrieval	Informational	Microsoft-Windows-WPD-ClassInstaller/Operational	%1: Transfer of metadata (%2, %3) failed. Error code %4.
+Microsoft-Windows-WPDClassInstaller	204	0	DeviceMetadataRetrieval204(UnicodeString DevicePath, UInt32 ReturnCode)			DeviceMetadataRetrieval	Informational	Microsoft-Windows-WPD-ClassInstaller/Operational	%1: Transfer of metadata failed as the Device Metadata Service could not be accessed. Error code %2.
+Microsoft-Windows-WPDClassInstaller	205	0	DeviceMetadataRetrieval205(UnicodeString DevicePath, UnicodeString ServicePath)			DeviceMetadataRetrieval	Informational	Microsoft-Windows-WPD-ClassInstaller/Operational	%1: Successfully opened the Device Metadata Service to retrieve metadata: %2.
+Microsoft-Windows-WPDClassInstaller	206	0	DeviceMetadataRetrieval206(UnicodeString MetadataLocaleName, GUID MetadataContentId)			DeviceMetadataRetrieval	Informational	Microsoft-Windows-WPD-ClassInstaller/Operational	Transfer of metadata (%1, %2) is skipped because the metadata already exists on the system.
+Microsoft-Windows-WPDClassInstaller	24576	0	Message_0x40016000()			task_0	Always		Drivers were successfully installed for device %1.
+Microsoft-Windows-WPDClassInstaller	24577	0	Message_0x40016001()			task_0	Always		Media player and imaging program compatibility layers were successfully registered for device %1. Layer bits %2 were requested, layer bits %3 were registered.
+Microsoft-Windows-WPDClassInstaller	24578	0	Message_0x40016002()			task_0	Always		Autoplay was successfully registered for device %1.
+Microsoft-Windows-WPDClassInstaller	24579	0	Message_0x40016003()			task_0	Always		Autoplay registration was skipped for device %1.
+Microsoft-Windows-WPDClassInstaller	24580	0	Message_0x40016004()			task_0	Always		%1: Drivers for %2 device(s) were successfully uninstalled while migrating a dual-mode mass storage class device to Media Transfer Protocol (MTP).
+Microsoft-Windows-WPDClassInstaller	24581	0	Message_0x40016005()			task_0	Always		%1: Drivers for %2 device(s) were successfully uninstalled while migrating a Media Transfer Protocol (MTP) device.
+Microsoft-Windows-WPDClassInstaller	24582	0	Message_0x40016006()			task_0	Always		%1: Drivers for %2 device(s) were successfully uninstalled while migrating a Media Transfer Protocol (MTP) device, including any devices that were connected and active.
+Microsoft-Windows-WPDClassInstaller	24583	0	Message_0x40016007()			task_0	Always		%1: Drivers for %2 device(s) were successfully uninstalled while migrating a Picture Transfer Protocol (PTP) device.
+Microsoft-Windows-WPDClassInstaller	24584	0	Message_0x40016008()			task_0	Always		%1: Drivers for %2 device(s) were successfully uninstalled while migrating a Picture Transfer Protocol (PTP) device, including any devices that were connected and active.
+Microsoft-Windows-WPDClassInstaller	24585	0	Message_0x40016009()			task_0	Always		%1: Drivers were successfully migrated after Plug and Play was enumerated again.
+Microsoft-Windows-WPDClassInstaller	24832	0	Message_0x80016100()			task_0	Always		%1: This version of Windows does not support Windows Portable Device drivers, so the drivers were not installed.
+Microsoft-Windows-WPDClassInstaller	25088	0	Message_0xC0016200()			task_0	Always		It was not possible to install drivers for the device %1. Error code %2.
+Microsoft-Windows-WPDClassInstaller	25089	0	Message_0xC0016201()			task_0	Always		It was not possible to access the device (%1) after installing drivers. Error code %2.
+Microsoft-Windows-WPDClassInstaller	25090	0	Message_0xC0016202()			task_0	Always		It was not possible to register media player and imaging program layers for the device %1. Error code %2.
+Microsoft-Windows-WPDClassInstaller	25091	0	Message_0xC0016203()			task_0	Always		It was not possible to register autoplay for device %1. Error code %2.
+Microsoft-Windows-WPDClassInstaller	25092	0	Message_0xC0016204()			task_0	Always		%1 failed to uninstall drivers when migrating dual-mode devices from mass storage class to Media Transfer Protocol (MTP). Error code %2.
+Microsoft-Windows-WPDClassInstaller	25093	0	Message_0xC0016205()			task_0	Always		%1 failed to uninstall drivers for single-protocol Media Transfer Protocol (MTP) devices. Error %2.
+Microsoft-Windows-WPDClassInstaller	25094	0	Message_0xC0016206()			task_0	Always		%1 failed to uninstall drivers for single-protocol Picture Transfer Protocol (PTP) devices. Error %2.
+Microsoft-Windows-WPDClassInstaller	25095	0	Message_0xC0016207()			task_0	Always		%1: It was not possible to enumerate Plug and Play again after drivers were migrated. Error code %2.

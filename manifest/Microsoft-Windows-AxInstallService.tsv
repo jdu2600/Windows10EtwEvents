@@ -1,13 +1,13 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-AxInstallService	1	0	task_0(UnicodeString Message)		ZonePolicy	task_0	Informational		
-Microsoft-Windows-AxInstallService	2	0	task_02(UnicodeString Message)		ZonePolicy	task_0	Error		
-Microsoft-Windows-AxInstallService	3	0	task_03(UnicodeString Message)		Download	task_0	Informational		
-Microsoft-Windows-AxInstallService	4	0	task_04(UnicodeString Message)		Download	task_0	Error		
-Microsoft-Windows-AxInstallService	5	0	task_05(UnicodeString Message)		UrlCache	task_0	Informational		
-Microsoft-Windows-AxInstallService	6	0	task_06(UnicodeString Message)		UrlCache	task_0	Error		
-Microsoft-Windows-AxInstallService	7	0	task_07(UnicodeString Message)		General	task_0	Informational		
-Microsoft-Windows-AxInstallService	8	0	task_08(UnicodeString Message)		General	task_0	Error		
-Microsoft-Windows-AxInstallService	4097	0	task_04097(UnicodeString URL, UnicodeString HostName)			task_0	Error		
-Microsoft-Windows-AxInstallService	4098	0	task_04098(UnicodeString URL, UnicodeString HostName)			task_0	Informational		
-Microsoft-Windows-AxInstallService	4099	0	task_04099(UnicodeString URL, UnicodeString HostName)			task_0	Error		
-Microsoft-Windows-AxInstallService	4100	0	task_04100(UnicodeString URL, UnicodeString HostName)			task_0	Error		
+Microsoft-Windows-AxInstallService	1	0	Event_1(UnicodeString Message)		ZonePolicy	task_0	Informational	Microsoft-Windows-AxInstallService/Log	%1
+Microsoft-Windows-AxInstallService	2	0	Event_2(UnicodeString Message)		ZonePolicy	task_0	Error	Microsoft-Windows-AxInstallService/Log	%1
+Microsoft-Windows-AxInstallService	3	0	Event_3(UnicodeString Message)		Download	task_0	Informational	Microsoft-Windows-AxInstallService/Log	%1
+Microsoft-Windows-AxInstallService	4	0	Event_4(UnicodeString Message)		Download	task_0	Error	Microsoft-Windows-AxInstallService/Log	%1
+Microsoft-Windows-AxInstallService	5	0	Event_5(UnicodeString Message)		UrlCache	task_0	Informational	Microsoft-Windows-AxInstallService/Log	%1
+Microsoft-Windows-AxInstallService	6	0	Event_6(UnicodeString Message)		UrlCache	task_0	Error	Microsoft-Windows-AxInstallService/Log	%1
+Microsoft-Windows-AxInstallService	7	0	Event_7(UnicodeString Message)		General	task_0	Informational	Microsoft-Windows-AxInstallService/Log	%1
+Microsoft-Windows-AxInstallService	8	0	Event_8(UnicodeString Message)		General	task_0	Error	Microsoft-Windows-AxInstallService/Log	%1
+Microsoft-Windows-AxInstallService	4097	0	Event_4097(UnicodeString URL, UnicodeString HostName)			task_0	Error	Application	Attempt to install control %1 failed. The host URL %2 is not in policy
+Microsoft-Windows-AxInstallService	4098	0	Event_4098(UnicodeString URL, UnicodeString HostName)			task_0	Informational	Application	The ActiveX control %1 from host URL %2 passed all policy checks.
+Microsoft-Windows-AxInstallService	4099	0	Event_4099(UnicodeString URL, UnicodeString HostName)			task_0	Error	Application	Attempt to install control %1 failed. The policy settings for host URL %2 do not allow the control to be installed
+Microsoft-Windows-AxInstallService	4100	0	Event_4100(UnicodeString URL, UnicodeString HostName)			task_0	Error	Application	Failed to download control %1 from host URL %2

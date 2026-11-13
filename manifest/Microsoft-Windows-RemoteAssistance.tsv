@@ -1,52 +1,52 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-RemoteAssistance	1	0	task_0(UnicodeString FuncName)		keyword_400000000000	task_0	Verbose		
-Microsoft-Windows-RemoteAssistance	2	0	task_02(UnicodeString FuncName)		keyword_400000000000	task_0	Verbose		
-Microsoft-Windows-RemoteAssistance	3	0	task_0Stop(UnicodeString file, UInt32 line, UnicodeString function, UInt32 error)	Stop	keyword_400000000000	task_0	Critical		
-Microsoft-Windows-RemoteAssistance	4	0	task_04(UnicodeString file, UInt32 line, UnicodeString function, UInt32 error)		keyword_400000000000	task_0	Error		
-Microsoft-Windows-RemoteAssistance	5	0	task_05(UnicodeString file, UInt32 line, UnicodeString Condition)		keyword_400000000000	task_0	Verbose		
-Microsoft-Windows-RemoteAssistance	6	0	task_06(UnicodeString file, UInt32 line, UInt32 Condition)		keyword_400000000000	task_0	Verbose		
-Microsoft-Windows-RemoteAssistance	7	0	task_07(UInt32 line, UnicodeString File)		keyword_400000000000	task_0	Verbose		
-Microsoft-Windows-RemoteAssistance	8	0	task_08(UInt32 line, UnicodeString File)		keyword_400000000000	task_0	Verbose		
-Microsoft-Windows-RemoteAssistance	9	0	task_09(UnicodeString FuncName)		keyword_400000000000	task_0	Error		
-Microsoft-Windows-RemoteAssistance	10	0	task_010()			task_0	Error		
-Microsoft-Windows-RemoteAssistance	11	0	task_011()			task_0	Critical		
-Microsoft-Windows-RemoteAssistance	12	0	task_012()			task_0	Error		
-Microsoft-Windows-RemoteAssistance	13	0	task_013(UnicodeString FuncName)			task_0	Verbose		
-Microsoft-Windows-RemoteAssistance	14	0	task_014()			task_0	Verbose		
-Microsoft-Windows-RemoteAssistance	15	0	task_015()			task_0	Verbose		
-Microsoft-Windows-RemoteAssistance	16	0	task_016()			task_0	Verbose		
-Microsoft-Windows-RemoteAssistance	17	0	task_017()			task_0	Verbose		
-Microsoft-Windows-RemoteAssistance	17	1	task_017_V1(UnicodeString FuncName)			task_0	Verbose		
-Microsoft-Windows-RemoteAssistance	18	0	task_018()			task_0	Verbose		
-Microsoft-Windows-RemoteAssistance	19	0	task_019()			task_0	Verbose		
-Microsoft-Windows-RemoteAssistance	20	0	task_020()			task_0	Verbose		
-Microsoft-Windows-RemoteAssistance	21	0	task_021()			task_0	Verbose		
-Microsoft-Windows-RemoteAssistance	22	0	task_022()			task_0	Verbose		
-Microsoft-Windows-RemoteAssistance	23	0	task_023()			task_0	Verbose		
-Microsoft-Windows-RemoteAssistance	24	0	task_024()			task_0	Verbose		
-Microsoft-Windows-RemoteAssistance	25	0	task_025(UInt32 Code)			task_0	Verbose		
-Microsoft-Windows-RemoteAssistance	26	0	task_026()			task_0	Verbose		
-Microsoft-Windows-RemoteAssistance	27	0	task_027()			task_0	Verbose		
-Microsoft-Windows-RemoteAssistance	28	0	task_028()			task_0	Verbose		
-Microsoft-Windows-RemoteAssistance	29	0	task_029(UnicodeString FuncName)			task_0	Verbose		
-Microsoft-Windows-RemoteAssistance	30	0	task_030()			task_0	Verbose		
-Microsoft-Windows-RemoteAssistance	31	0	task_031()			task_0	Verbose		
-Microsoft-Windows-RemoteAssistance	32	0	task_032()			task_0	Verbose		
-Microsoft-Windows-RemoteAssistance	33	0	task_033(UnicodeString FuncName)			task_0	Verbose		
-Microsoft-Windows-RemoteAssistance	34	0	task_034(UnicodeString FuncName)			task_0	Verbose		
-Microsoft-Windows-RemoteAssistance	35	0	task_035(UnicodeString FuncName)			task_0	Verbose		
-Microsoft-Windows-RemoteAssistance	36	0	task_036(UnicodeString FuncName)			task_0	Verbose		
-Microsoft-Windows-RemoteAssistance	37	0	task_037(UnicodeString FuncName)			task_0	Verbose		
-Microsoft-Windows-RemoteAssistance	38	0	task_038(UnicodeString FuncName)			task_0	Verbose		
-Microsoft-Windows-RemoteAssistance	39	0	task_039(UnicodeString FuncName)			task_0	Error		
-Microsoft-Windows-RemoteAssistance	40	0	task_040()		keyword_400000000000	task_0	Verbose		
-Microsoft-Windows-RemoteAssistance	41	0	task_041()		keyword_400000000000	task_0	Verbose		
-Microsoft-Windows-RemoteAssistance	42	0	task_042(UnicodeString FuncName)		keyword_400000000000	task_0	Verbose		
-Microsoft-Windows-RemoteAssistance	43	0	task_043(UInt32 Code)		keyword_400000000000	task_0	Verbose		
-Microsoft-Windows-RemoteAssistance	44	0	task_044(UnicodeString FuncName)		keyword_400000000000	task_0	Verbose		
-Microsoft-Windows-RemoteAssistance	45	0	task_045(UnicodeString FuncName)		keyword_400000000000	task_0	Verbose		
-Microsoft-Windows-RemoteAssistance	46	0	task_046(UnicodeString FuncName)		keyword_400000000000	task_0	Verbose		
-Microsoft-Windows-RemoteAssistance	47	0	task_047(UnicodeString FuncName)		keyword_400000000000	task_0	Verbose		
-Microsoft-Windows-RemoteAssistance	100	0	task_0100(UInt32 Code)			task_0	Verbose		
-Microsoft-Windows-RemoteAssistance	101	0	task_0101(UInt32 Code)		keyword_400000000000	task_0	Verbose		
-Microsoft-Windows-RemoteAssistance	102	0	task_0102(UnicodeString FuncName)		keyword_400000000000	task_0	Verbose		
+Microsoft-Windows-RemoteAssistance	1	0	Event_1(UnicodeString FuncName)		keyword_400000000000	task_0	Verbose	Microsoft-Windows-RemoteAssistance/Tracing	Entering function %1
+Microsoft-Windows-RemoteAssistance	2	0	Event_2(UnicodeString FuncName)		keyword_400000000000	task_0	Verbose	Microsoft-Windows-RemoteAssistance/Tracing	Leaving function %1
+Microsoft-Windows-RemoteAssistance	3	0	Event_3_Stop(UnicodeString file, UInt32 line, UnicodeString function, UInt32 error)	Stop	keyword_400000000000	task_0	Critical	Application	Application will terminate, a critical error was detected in %1 Line %2 Function %3
+Microsoft-Windows-RemoteAssistance	4	0	Event_4(UnicodeString file, UInt32 line, UnicodeString function, UInt32 error)		keyword_400000000000	task_0	Error	Microsoft-Windows-RemoteAssistance/Tracing	Hit exception block of code at %1 Line %2 in function %3
+Microsoft-Windows-RemoteAssistance	5	0	Event_5(UnicodeString file, UInt32 line, UnicodeString Condition)		keyword_400000000000	task_0	Verbose	Microsoft-Windows-RemoteAssistance/Tracing	Branching on Line:%2 File:%1 with the string %3
+Microsoft-Windows-RemoteAssistance	6	0	Event_6(UnicodeString file, UInt32 line, UInt32 Condition)		keyword_400000000000	task_0	Verbose	Microsoft-Windows-RemoteAssistance/Tracing	Switching on Line:%2 File:%1 with the value %3
+Microsoft-Windows-RemoteAssistance	7	0	Event_7(UInt32 line, UnicodeString File)		keyword_400000000000	task_0	Verbose	Microsoft-Windows-RemoteAssistance/Tracing	Entering conditional block at Line:%1 File:%2
+Microsoft-Windows-RemoteAssistance	8	0	Event_8(UInt32 line, UnicodeString File)		keyword_400000000000	task_0	Verbose	Microsoft-Windows-RemoteAssistance/Tracing	Exiting conditional block at Line:%1 File:%2
+Microsoft-Windows-RemoteAssistance	9	0	Event_9(UnicodeString FuncName)		keyword_400000000000	task_0	Error	Microsoft-Windows-RemoteAssistance/Admin	There was a problem interacting with COM object %1.  An outdated version might be installed, or the component might not be installed at all.
+Microsoft-Windows-RemoteAssistance	10	0	Event_10()			task_0	Error	Microsoft-Windows-RemoteAssistance/Admin	A user tried to use Remote Assistance and send an invitation for help through their default email client, but Remote Assistance failed to successfully send the invitation.  It is possible the email client configured as the default client does not support SMAPI calls, or that the email client is improperly configured.  It is also possible that the user closed the email client without sending the message.
+Microsoft-Windows-RemoteAssistance	11	0	Event_11()			task_0	Critical	Microsoft-Windows-RemoteAssistance/Admin	A user opened a Remote Assistance invitation, but the invitation was closed due to too many bad password attempts to connect to the machine.
+Microsoft-Windows-RemoteAssistance	12	0	Event_12()			task_0	Error	Microsoft-Windows-RemoteAssistance/Admin	A user tried to use Remote Assistance, group policy requires a session log to be maintained, and a session log couldn't be created.  Remote Assistance was terminated.  Check the disk to see if there are problems with the disk or if it is full.
+Microsoft-Windows-RemoteAssistance	13	0	Event_13(UnicodeString FuncName)			task_0	Verbose	Microsoft-Windows-RemoteAssistance/Operational	Remote Assistance started with:    %1    as the command line parameters.
+Microsoft-Windows-RemoteAssistance	14	0	Event_14()			task_0	Verbose	Microsoft-Windows-RemoteAssistance/Operational	A Remote Assistance Invitation was successfully opened.
+Microsoft-Windows-RemoteAssistance	15	0	Event_15()			task_0	Verbose	Microsoft-Windows-RemoteAssistance/Operational	An RDP connection was successfully made.
+Microsoft-Windows-RemoteAssistance	16	0	Event_16()			task_0	Verbose	Microsoft-Windows-RemoteAssistance/Operational	The Remote Assistance password was verified.  The Remote Assistance session has begun.
+Microsoft-Windows-RemoteAssistance	17	0	Event_17()			task_0	Verbose	Microsoft-Windows-RemoteAssistance/Operational	The Remote Assistance password provided was incorrect.  The RDP session was terminated.
+Microsoft-Windows-RemoteAssistance	17	1	Event_17_V1(UnicodeString FuncName)			task_0	Verbose	Microsoft-Windows-RemoteAssistance/Operational	The Remote Assistance password provided was incorrect.  The RDP session was terminated, IP address of the connecting machine is %1
+Microsoft-Windows-RemoteAssistance	18	0	Event_18()			task_0	Verbose	Microsoft-Windows-RemoteAssistance/Operational	The Remote Assistance session was disconnected remotely.
+Microsoft-Windows-RemoteAssistance	19	0	Event_19()			task_0	Verbose	Microsoft-Windows-RemoteAssistance/Operational	The Remote Assistance session was disconnected locally.
+Microsoft-Windows-RemoteAssistance	20	0	Event_20()			task_0	Verbose	Microsoft-Windows-RemoteAssistance/Operational	The Remote Assistance invitation was closed, any information concerning it given out is now invalid.
+Microsoft-Windows-RemoteAssistance	21	0	Event_21()			task_0	Verbose	Microsoft-Windows-RemoteAssistance/Operational	The helper is sharing control.
+Microsoft-Windows-RemoteAssistance	22	0	Event_22()			task_0	Verbose	Microsoft-Windows-RemoteAssistance/Operational	The helper can now view the screen.
+Microsoft-Windows-RemoteAssistance	23	0	Event_23()			task_0	Verbose	Microsoft-Windows-RemoteAssistance/Operational	Remote Assistance detected that it didn't restore the background and screen settings before shutting down.  An attempt was made to restore these settings.
+Microsoft-Windows-RemoteAssistance	24	0	Event_24()			task_0	Verbose	Microsoft-Windows-RemoteAssistance/Operational	The time limit of offered invitations has been reached.
+Microsoft-Windows-RemoteAssistance	25	0	Event_25(UInt32 Code)			task_0	Verbose	Microsoft-Windows-RemoteAssistance/Operational	User setting value currently applied is %1
+Microsoft-Windows-RemoteAssistance	26	0	Event_26()			task_0	Verbose	Microsoft-Windows-RemoteAssistance/Operational	The system or GP settings do not allow an Remote Assistance invitation to be created.  This action has been blocked by the application.
+Microsoft-Windows-RemoteAssistance	27	0	Event_27()			task_0	Verbose	Microsoft-Windows-RemoteAssistance/Operational	The system or GP settings do not allow a helper to share control.  This action has been blocked by the application.
+Microsoft-Windows-RemoteAssistance	28	0	Event_28()			task_0	Verbose	Microsoft-Windows-RemoteAssistance/Operational	The Windows firewall has been checked and it appears that it is configured so that it will stop Remote Assistance from working.
+Microsoft-Windows-RemoteAssistance	29	0	Event_29(UnicodeString FuncName)			task_0	Verbose	Microsoft-Windows-RemoteAssistance/Operational	The error message:    %1    has been shown to the user.
+Microsoft-Windows-RemoteAssistance	30	0	Event_30()			task_0	Verbose	Microsoft-Windows-RemoteAssistance/Operational	Remote Assistance has ended.
+Microsoft-Windows-RemoteAssistance	31	0	Event_31()			task_0	Verbose	Microsoft-Windows-RemoteAssistance/Operational	Remote Assistance COM server has started.
+Microsoft-Windows-RemoteAssistance	32	0	Event_32()			task_0	Verbose	Microsoft-Windows-RemoteAssistance/Operational	Remote Assistance COM server has ended.
+Microsoft-Windows-RemoteAssistance	33	0	Event_33(UnicodeString FuncName)			task_0	Verbose	Microsoft-Windows-RemoteAssistance/Operational	The Remote Assistance ticket contained the following IP addresses: %1
+Microsoft-Windows-RemoteAssistance	34	0	Event_34(UnicodeString FuncName)			task_0	Verbose	Microsoft-Windows-RemoteAssistance/Operational	A PNRP Node was created at the following address: %1
+Microsoft-Windows-RemoteAssistance	35	0	Event_35(UnicodeString FuncName)			task_0	Verbose	Microsoft-Windows-RemoteAssistance/Operational	The following PNRP clouds were detected: %1
+Microsoft-Windows-RemoteAssistance	36	0	Event_36(UnicodeString FuncName)			task_0	Verbose	Microsoft-Windows-RemoteAssistance/Operational	A PNRP Node was released at the following address: %1
+Microsoft-Windows-RemoteAssistance	37	0	Event_37(UnicodeString FuncName)			task_0	Verbose	Microsoft-Windows-RemoteAssistance/Operational	Started looking for PNRP node with the following address: %1
+Microsoft-Windows-RemoteAssistance	38	0	Event_38(UnicodeString FuncName)			task_0	Verbose	Microsoft-Windows-RemoteAssistance/Operational	Stopped looking for PNRP node, address: %1
+Microsoft-Windows-RemoteAssistance	39	0	Event_39(UnicodeString FuncName)			task_0	Error	Microsoft-Windows-RemoteAssistance/Admin	There was a problem interacting with the PNRP service.  This component might not be installed correctly. The error code received was: %1
+Microsoft-Windows-RemoteAssistance	40	0	Event_40()		keyword_400000000000	task_0	Verbose	Microsoft-Windows-RemoteAssistance/Operational	Diagnosis Repro Attempt resulted in a success.
+Microsoft-Windows-RemoteAssistance	41	0	Event_41()		keyword_400000000000	task_0	Verbose	Microsoft-Windows-RemoteAssistance/Operational	Diagnosis Repro Attempt resulted in a failure.
+Microsoft-Windows-RemoteAssistance	42	0	Event_42(UnicodeString FuncName)		keyword_400000000000	task_0	Verbose	Microsoft-Windows-RemoteAssistance/Tracing	Current time on NTP Server: %1
+Microsoft-Windows-RemoteAssistance	43	0	Event_43(UInt32 Code)		keyword_400000000000	task_0	Verbose	Microsoft-Windows-RemoteAssistance/Tracing	Remote Assistance troubleshooting rejected problem %1.
+Microsoft-Windows-RemoteAssistance	44	0	Event_44(UnicodeString FuncName)		keyword_400000000000	task_0	Verbose	Microsoft-Windows-RemoteAssistance/Operational	Remote Assistance troubleshooting has confirmed the problem: %1.
+Microsoft-Windows-RemoteAssistance	45	0	Event_45(UnicodeString FuncName)		keyword_400000000000	task_0	Verbose	Microsoft-Windows-RemoteAssistance/Operational	Remote Assistance troubleshooting is starting to repair the identified problem: %1.
+Microsoft-Windows-RemoteAssistance	46	0	Event_46(UnicodeString FuncName)		keyword_400000000000	task_0	Verbose	Microsoft-Windows-RemoteAssistance/Operational	Remote Assistance troubleshooting successfully repaired the problem: %1.
+Microsoft-Windows-RemoteAssistance	47	0	Event_47(UnicodeString FuncName)		keyword_400000000000	task_0	Verbose	Microsoft-Windows-RemoteAssistance/Operational	Remote Assistance troubleshooting failed to repair the problem: %1.
+Microsoft-Windows-RemoteAssistance	100	0	Event_100(UInt32 Code)			task_0	Verbose	Microsoft-Windows-RemoteAssistance/Tracing	Remote OS Type : %1.
+Microsoft-Windows-RemoteAssistance	101	0	Event_101(UInt32 Code)		keyword_400000000000	task_0	Verbose	Microsoft-Windows-RemoteAssistance/Tracing	Remote Assistance connection attempt failed with error code: %1.
+Microsoft-Windows-RemoteAssistance	102	0	Event_102(UnicodeString FuncName)		keyword_400000000000	task_0	Verbose	Microsoft-Windows-RemoteAssistance/Tracing	Remote Assistance reproduced the problem and created following ticket to verify the problem: %1.

@@ -1,5 +1,2 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-StorageManagement-WSP-Host	1000	2	task_01000_V2(UnicodeString ProviderName, UnicodeString ProviderDLL, UInt32 ErrorCode, UInt32 LoadPhase)			task_0	Warning		
-Microsoft-Windows-StorageManagement-WSP-Host	1001	1	task_0_V1(UnicodeString ProviderName, UnicodeString ProviderDLL)			task_0	Informational		
-Microsoft-Windows-StorageManagement-WSP-Host	1002	1	task_01002_V1()			task_0	Informational		
-Microsoft-Windows-StorageManagement-WSP-Host	1003	1	task_01003_V1()			task_0	Informational		
+Microsoft-Windows-StorageManagement-WSP-Host	1000	0	Event_1000(UnicodeString ProviderName, UnicodeString ProviderDLL, UInt32 ErrorCode, UInt32 LoadPhase)			task_0	Critical	Microsoft-Windows-StorageManagement/Operational	A Windows Storage Provider failed to load.\r\n\r\nProvider:\t\t%1\r\nProvider DLL:\t%2\r\nError Code:\t%3\r\nLoad Phase:\t%4\r\n\r\nThis failure is indicative of a bad installation, or a missing or corrupt DLL.

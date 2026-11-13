@@ -1,44 +1,44 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1	0	task_0(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		Error	task_0	Error		
-Microsoft-Windows-UserDataAccess-PimIndexMaintenance	2	0	task_02(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		Warning	task_0	Warning		
+Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1	0	Event_1(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		Error	task_0	Error		Error: %1 Location: %2 Line Number: %3
+Microsoft-Windows-UserDataAccess-PimIndexMaintenance	2	0	Event_2(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		Warning	task_0	Warning		Error Propagated: %1 Location: %2 Line Number: %3
 Microsoft-Windows-UserDataAccess-PimIndexMaintenance	3	0	Trace(Pointer Message)		debug	Trace	Verbose		
-Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1000	0	task_01000(AnsiString Prop_FUNC_AnsiString, UInt32 Prop_LINE_UInt32, Int32 Prop_Hr_Int32)		PimIndexMaintenance	task_0	Error		
-Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1001	0	task_01001()		PimIndexMaintenance	task_0	Verbose		
-Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1002	0	task_01002()		PimIndexMaintenance	task_0	Verbose		
-Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1003	0	task_01003()		PimIndexMaintenance	task_0	Verbose		
-Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1004	0	task_01004()		PimIndexMaintenance	task_0	Verbose		
-Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1005	0	task_01005()		PimIndexMaintenance	task_0	Verbose		
-Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1006	0	task_01006()		PimIndexMaintenance	task_0	Verbose		
-Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1007	0	task_01007()		PimIndexMaintenance	task_0	Verbose		
-Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1008	0	task_01008()		PimIndexMaintenance	task_0	Verbose		
-Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1009	0	task_01009(UInt32 PROP_UInt32_1, UInt32 PROP_UInt32_2)		PimIndexMaintenance	task_0	Informational		
-Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1010	0	task_01010(Int32 Prop_Hr_UInt32)		PimIndexMaintenance	task_0	Error		
-Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1011	0	task_01011()		PimIndexMaintenance	task_0	Informational		
-Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1012	0	task_01012(UInt32 PROP_UInt32, Int32 Prop_Hr_UInt32)		PimIndexMaintenance	task_0	Error		
-Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1013	0	task_01013(UInt32 PROP_UInt32, Int32 Prop_Hr_UInt32)		PimIndexMaintenance	task_0	Error		
-Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1014	0	task_01014(Int32 Prop_Hr_UInt32)		PimIndexMaintenance	task_0	Error		
-Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1015	0	task_01015(UInt32 PROP_FILE_uint)		PimIndexMaintenance	task_0	Verbose		
-Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1017	0	task_01017(UInt32 PROP_UInt32_1, UInt32 PROP_UInt32_2)		PimIndexMaintenance	task_0	Verbose		
-Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1018	0	task_01018(UInt32 PROP_FILE_uint)		PimIndexMaintenance	task_0	Informational		
-Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1022	0	task_01022()		PimIndexMaintenance	task_0	Verbose		
-Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1023	0	task_01023(UInt32 PROP_UInt32_1, UInt32 PROP_UInt32_2, UInt32 PROP_UInt32_3, UInt32 PROP_UInt32_4, UInt32 PROP_UInt32_5)		PimIndexMaintenance	task_0	Verbose		
-Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1024	0	task_01024(UInt32 PROP_FILE_uint)		PimIndexMaintenance Warning	task_0	Warning		
-Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1025	0	task_01025()		PimIndexMaintenance Warning	task_0	Warning		
-Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1026	0	task_01026()		PimIndexMaintenance Warning	task_0	Warning		
-Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1027	0	task_01027()		PimIndexMaintenance	task_0	Informational		
-Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1028	0	task_01028(UInt32 PROP_FILE_uint)		PimIndexMaintenance	task_0	Informational		
-Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1029	0	task_01029(UInt32 PROP_FILE_uint)		PimIndexMaintenance Warning	task_0	Warning		
-Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1030	0	task_01030(UInt32 PROP_UInt32_1, UInt32 PROP_UInt32_2)		PimIndexMaintenance	task_0	Informational		
-Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1031	0	task_01031(UInt32 PROP_UInt32, Int32 Prop_Hr_UInt32)		PimIndexMaintenance	task_0	Error		
-Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1032	0	task_01032(UInt32 PROP_FILE_uint)		PimIndexMaintenance	task_0	Informational		
-Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1033	0	task_01033(UInt32 PROP_ByteCount, Binary PROP_Bytes)		PimIndexMaintenance	task_0	Informational		
-Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1034	0	task_01034()		PimIndexMaintenance	task_0	Informational		
-Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1035	0	task_01035()		PimIndexMaintenance	task_0	Informational		
-Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1040	0	task_01040(GUID App, Int32 Result)		PimIndexMaintenance	task_0	Informational		
-Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1041	0	task_01041(UInt32 Prop_Prop)		PimIndexMaintenance StateTransition	task_0	Informational		
-Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1042	0	task_01042(UInt32 Prop_Prop)		PimIndexMaintenance StateTransition	task_0	Informational		
-Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1043	0	task_01043(AnsiString P1_String)		PimIndexMaintenance StateTransition	task_0	Informational		
-Microsoft-Windows-UserDataAccess-PimIndexMaintenance	2000	0	THREAD_PREPStart()	Start	Performance PimIndexMaintenance	THREAD_PREP	Informational		
+Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1000	0	Event_1000(AnsiString Prop_FUNC_AnsiString, UInt32 Prop_LINE_UInt32, Int32 Prop_Hr_Int32)		PimIndexMaintenance	task_0	Error		PimIndexMaintenance::%1: Failed at line %2 with HR: %3
+Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1001	0	Event_1001()		PimIndexMaintenance	task_0	Verbose		PimIndexMaintenance::Starting to process store changes
+Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1002	0	Event_1002()		PimIndexMaintenance	task_0	Verbose		PimIndexMaintenance::Done processing store changes
+Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1003	0	Event_1003()		PimIndexMaintenance	task_0	Verbose		PimIndexMaintenance::Starting to process folder changes
+Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1004	0	Event_1004()		PimIndexMaintenance	task_0	Verbose		PimIndexMaintenance::Done processing folder changes
+Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1005	0	Event_1005()		PimIndexMaintenance	task_0	Verbose		PimIndexMaintenance::Starting to handle store count changes
+Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1006	0	Event_1006()		PimIndexMaintenance	task_0	Verbose		PimIndexMaintenance::Done processing store count changes
+Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1007	0	Event_1007()		PimIndexMaintenance	task_0	Verbose		PimIndexMaintenance::Starting sync session to collect changes
+Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1008	0	Event_1008()		PimIndexMaintenance	task_0	Verbose		PimIndexMaintenance::Ending sync session
+Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1009	0	Event_1009(UInt32 PROP_UInt32_1, UInt32 PROP_UInt32_2)		PimIndexMaintenance	task_0	Informational		PimIndexMaintenance::Enumerated %1 contacts to update aggregate for in store %2.
+Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1010	0	Event_1010(Int32 Prop_Hr_UInt32)		PimIndexMaintenance	task_0	Error		PimIndexMaintenance::Error getting next change, Error = %1
+Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1011	0	Event_1011()		PimIndexMaintenance	task_0	Informational		PimIndexMaintenance::Rebuilding indexes
+Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1012	0	Event_1012(UInt32 PROP_UInt32, Int32 Prop_Hr_UInt32)		PimIndexMaintenance	task_0	Error		PimIndexMaintenance::Unexpected event code %1 found in thread proc with last error %2
+Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1013	0	Event_1013(UInt32 PROP_UInt32, Int32 Prop_Hr_UInt32)		PimIndexMaintenance	task_0	Error		PimIndexMaintenance::Could not get new info about item changed in stage %1 with hr %2
+Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1014	0	Event_1014(Int32 Prop_Hr_UInt32)		PimIndexMaintenance	task_0	Error		PimIndexMaintenance::Could not get old info about item changed with hr %1
+Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1015	0	Event_1015(UInt32 PROP_FILE_uint)		PimIndexMaintenance	task_0	Verbose		PimIndexMaintenance::AddSyncPartner adding partner for store %1
+Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1017	0	Event_1017(UInt32 PROP_UInt32_1, UInt32 PROP_UInt32_2)		PimIndexMaintenance	task_0	Verbose		PimIndexMaintenance::Aggregate processed on store delete: ID: %1 Components: %2
+Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1018	0	Event_1018(UInt32 PROP_FILE_uint)		PimIndexMaintenance	task_0	Informational		PimIndexMaintenance::Rebuilding indexes finished- aggregates processed: %1
+Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1022	0	Event_1022()		PimIndexMaintenance	task_0	Verbose		PimIndexMaintenance::Received transition to user idle message in thread proc
+Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1023	0	Event_1023(UInt32 PROP_UInt32_1, UInt32 PROP_UInt32_2, UInt32 PROP_UInt32_3, UInt32 PROP_UInt32_4, UInt32 PROP_UInt32_5)		PimIndexMaintenance	task_0	Verbose		PimIndexMaintenance::Saw power state change with message %1 and flags %2
+Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1024	0	Event_1024(UInt32 PROP_FILE_uint)		PimIndexMaintenance Warning	task_0	Warning		PimIndexMaintenance::Initialization Failure. Delaying for %1 mins.
+Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1025	0	Event_1025()		PimIndexMaintenance Warning	task_0	Warning		PimIndexMaintenance::Service is already running.
+Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1026	0	Event_1026()		PimIndexMaintenance Warning	task_0	Warning		PimIndexMaintenance::Service aborted due to invalid parameter.
+Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1027	0	Event_1027()		PimIndexMaintenance	task_0	Informational		PimIndexMaintenance::OnEvent saw a lost notification.
+Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1028	0	Event_1028(UInt32 PROP_FILE_uint)		PimIndexMaintenance	task_0	Informational		PimIndexMaintenance::OnEvent saw a store create/delete, event = %1.
+Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1029	0	Event_1029(UInt32 PROP_FILE_uint)		PimIndexMaintenance Warning	task_0	Warning		PimIndexMaintenance::HandleAdd on deleted item, Id = %1.
+Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1030	0	Event_1030(UInt32 PROP_UInt32_1, UInt32 PROP_UInt32_2)		PimIndexMaintenance	task_0	Informational		PimIndexMaintenance::Processing %1 contacts in store %2.
+Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1031	0	Event_1031(UInt32 PROP_UInt32, Int32 Prop_Hr_UInt32)		PimIndexMaintenance	task_0	Error		PimIndexMaintenance::Failed to process contact %1 image: %2
+Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1032	0	Event_1032(UInt32 PROP_FILE_uint)		PimIndexMaintenance	task_0	Informational		PimIndexMaintenance::Processing contact %1 image
+Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1033	0	Event_1033(UInt32 PROP_ByteCount, Binary PROP_Bytes)		PimIndexMaintenance	task_0	Informational		PimIndexMaintenance::Processing contact: version (size: %1, data: %2)
+Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1034	0	Event_1034()		PimIndexMaintenance	task_0	Informational		Attempting to restore store and folder settings
+Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1035	0	Event_1035()		PimIndexMaintenance	task_0	Informational		Settings restore timeout has been reached
+Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1040	0	Event_1040(GUID App, Int32 Result)		PimIndexMaintenance	task_0	Informational		Removing application store %1 (%2 from package manager)
+Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1041	0	Event_1041(UInt32 Prop_Prop)		PimIndexMaintenance StateTransition	task_0	Informational		Rundown index filter %1
+Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1042	0	Event_1042(UInt32 Prop_Prop)		PimIndexMaintenance StateTransition	task_0	Informational		Rundown search provider %1
+Microsoft-Windows-UserDataAccess-PimIndexMaintenance	1043	0	Event_1043(AnsiString P1_String)		PimIndexMaintenance StateTransition	task_0	Informational		Startup Update: %1
+Microsoft-Windows-UserDataAccess-PimIndexMaintenance	2000	0	THREAD_PREPStart()	Start	Performance PimIndexMaintenance	THREAD_PREP	Informational		PimIndexMaintenance::Service started
 Microsoft-Windows-UserDataAccess-PimIndexMaintenance	2001	0	THREAD_PREPStop()	Stop	Performance	THREAD_PREP	Informational		
 Microsoft-Windows-UserDataAccess-PimIndexMaintenance	2002	0	ON_BOOTStart()	Start	Performance	ON_BOOT	Informational		
 Microsoft-Windows-UserDataAccess-PimIndexMaintenance	2003	0	ON_BOOTStop()	Stop	Performance	ON_BOOT	Informational		
@@ -74,6 +74,10 @@ Microsoft-Windows-UserDataAccess-PimIndexMaintenance	2032	0	AUTO_LINK_PHONE_CORR
 Microsoft-Windows-UserDataAccess-PimIndexMaintenance	2033	0	AUTO_LINK_PHONE_CORROBORATIONStop()	Stop	Performance	AUTO_LINK_PHONE_CORROBORATION	Verbose		
 Microsoft-Windows-UserDataAccess-PimIndexMaintenance	2034	0	AUTO_LINK_EMAIL_CORROBORATIONStart()	Start	Performance	AUTO_LINK_EMAIL_CORROBORATION	Verbose		
 Microsoft-Windows-UserDataAccess-PimIndexMaintenance	2035	0	AUTO_LINK_EMAIL_CORROBORATIONStop()	Stop	Performance	AUTO_LINK_EMAIL_CORROBORATION	Verbose		
-Microsoft-Windows-UserDataAccess-PimIndexMaintenance	7001	0	task_07001()		IndexFilter	task_0	Verbose		
-Microsoft-Windows-UserDataAccess-PimIndexMaintenance	7002	0	task_07002()		IndexFilter	task_0	Verbose		
-Microsoft-Windows-UserDataAccess-PimIndexMaintenance	7003	0	task_07003(UInt32 PROP_UInt32_1, UInt32 PROP_UInt32_2)		Error IndexFilter	task_0	Error		
+Microsoft-Windows-UserDataAccess-PimIndexMaintenance	7001	0	Event_7001()		IndexFilter	task_0	Verbose		IndexFilter IndexSource initialization starting
+Microsoft-Windows-UserDataAccess-PimIndexMaintenance	7002	0	Event_7002()		IndexFilter	task_0	Verbose		IndexFilter IndexSource initialization done
+Microsoft-Windows-UserDataAccess-PimIndexMaintenance	7003	0	Event_7003(UInt32 PROP_UInt32_1, UInt32 PROP_UInt32_2)		Error IndexFilter	task_0	Error		Data Source and Index generations mismatch (store.vol: %1, PimIndex.vol: %2)
+Microsoft-Windows-UserDataAccess-PimIndexMaintenance	8001	0	Event_8001()		StaleDataCleanup	task_0	Informational		Starting the knowledge defragmentation task for all sync partners
+Microsoft-Windows-UserDataAccess-PimIndexMaintenance	8002	0	Event_8002(UInt32 PROP_UInt32_1, UInt32 PROP_UInt32_2, UInt32 PROP_UInt32_3, UInt32 PROP_UInt32_4, UInt32 PROP_UInt32_5)		StaleDataCleanup	task_0	Informational		Finished the knowledge defragmentation task. Examined %1 stores and %2 partners out of which defragmentation succeeded for %3, partially succeeded for %4 and failed for %5.
+Microsoft-Windows-UserDataAccess-PimIndexMaintenance	8003	0	Event_8003(UInt32 Prop_Prop)		StaleDataCleanup	task_0	Informational		Starting the knowledge defragmentation task for all sync partners associated with store %1
+Microsoft-Windows-UserDataAccess-PimIndexMaintenance	8004	0	Event_8004(UInt32 PROP_UInt32_1, UInt32 PROP_UInt32_2, UInt32 PROP_UInt32_3, UInt32 PROP_UInt32_4, UInt32 PROP_UInt32_5)		StaleDataCleanup	task_0	Informational		Finished the knowledge defragmentation task for all sync partners associated with store %1. Examined %2 partners out of which defragmentation succeeded for %3, partially succeeded for %4 and failed for %5.

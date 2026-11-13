@@ -1,70 +1,49 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-LsaSrv	100	0	task_0(UnicodeString PackageName, UnicodeString UserName, UnicodeString DomainName, UnicodeString ServerName, UInt32 ProtectedUser, HexInt32 ErrorCode)			task_0	Error		
-LsaSrv	200	0	task_0200(UnicodeString UserName, UnicodeString DomainName, HexInt64 LogonId, SYSTEMTIME LogoffTime, UInt32 PID, UnicodeString Program, UnicodeString PrincipalName, UnicodeString ServerName, UnicodeString PackageName, UnicodeString CallType, HexInt32 ErrorCode)			task_0	Warning		
-LsaSrv	300	0	task_0300(SID TargetUserSid, UnicodeString TargetUserName, UnicodeString TargetDomainName, HexInt64 TargetLogonId, GUID TargetLogonGuid, UInt32 EventOrginal, UInt32 EventCountTotal, UnicodeString SidList)			task_0	Informational		
-LsaSrv	301	0	task_0301(SID TargetUserSid, UnicodeString TargetUserName, UnicodeString TargetDomainName, HexInt64 TargetLogonId, GUID TargetLogonGuid, UInt32 LogonType, UInt32 EventIdx, UInt32 EventCountTotal, UnicodeString UserClaims, UnicodeString DeviceClaims)			task_0	Informational		
-LsaSrv	302	0	task_0302(SID UserSid, HexInt64 LogonId, UnicodeString AuthorityName, UnicodeString AccountName, UInt32 Elapse)			task_0	Informational		
-LsaSrv	303	0	task_0303(UnicodeString PackageName, UnicodeString UserName, UnicodeString DomainName, UInt32 ProtectedUser)			task_0	Informational		
-LsaSrv	320	0	task_0320(UnicodeString UserName, UnicodeString DomainName)			task_0	Informational		
-LsaSrv	321	0	task_0321(UnicodeString Error)			task_0	Informational		
-LsaSrv	322	0	task_0322()			task_0	Informational		
-LsaSrv	5000	0	task_05000(UnicodeString Package, UInt32 __binLength, Binary Exception)			task_0	Error		
-LsaSrv	6027	0	task_06027(UnicodeString Secret, UInt32 __binLength, Binary status)			task_0	Error		
-LsaSrv	6033	0	task_06033(UnicodeString Client)			task_0	Error		
-LsaSrv	6035	0	task_06035(SID SID)			task_0	Warning		
-LsaSrv	6036	0	task_06036(UnicodeString PID, UnicodeString Program)			task_0	Warning		
-LsaSrv	6037	0	task_06037(UnicodeString PID, UnicodeString Program, UnicodeString TargetName)			task_0	Warning		
-LsaSrv	6038	0	task_06038()			task_0	Warning		
-LsaSrv	6039	0	task_06039()			task_0	Informational		
-LsaSrv	6040	0	task_06040(UnicodeString Package, UnicodeString TargetName)			task_0	Warning		
-LsaSrv	6041	0	task_06041(UnicodeString TargetName, UnicodeString TargetVersion)			task_0	Error		
-LsaSrv	6144	0	task_06144()			task_0	Informational		
-LsaSrv	6145	0	task_06145(UnicodeString MissingCAPDNs)			task_0	Critical		
-LsaSrv	6146	0	task_06146(UnicodeString Error, UnicodeString CAPEName, UnicodeString CAPEDesc)			task_0	Error		
-LsaSrv	6147	0	task_06147()			task_0	Warning		
-LsaSrv	6148	0	task_06148()			task_0	Informational		
-LsaSrv	6149	0	task_06149()			task_0	Warning		
-LsaSrv	6150	0	task_06150(UnicodeString TrustName)			task_0	Informational		
-LsaSrv	6151	0	task_06151(UnicodeString TrustName)			task_0	Warning		
-LsaSrv	6152	0	task_06152(UnicodeString TrustName)			task_0	Warning		
-LsaSrv	6153	0	task_06153(UnicodeString TrustName, HexInt32 ErrorCodeHex, UInt32 ErrorCode)			task_0	Warning		
-LsaSrv	6154	0	task_06154()			task_0	Warning		
-LsaSrv	6155	0	task_06155(UnicodeString PackageName)			task_0	Warning		
-LsaSrv	6156	0	task_06156(UInt32 HardwareChecks, UInt32 ADDomainJoin, UInt32 AADDomainJoin, UInt32 IsLicensed, UInt32 DomainController)			task_0	Informational		
-LsaSrv	6157	0	task_06157(UnicodeString TrustName)			task_0	Informational		
-LsaSrv	6158	0	task_06158(UInt32 Status)			task_0	Error		
-LsaSrv	6160	0	task_06160(UInt32 Status)			task_0	Error		
-LsaSrv	6161	0	task_06161(UInt32 Config, UInt32 IsTestConfig, UInt32 AutoEnabled)			task_0	Informational		
-LsaSrv	6162	0	task_06162()			task_0	Informational		
-LsaSrv	6163	0	task_06163()			task_0	Informational		
-LsaSrv	6164	0	task_06164()			task_0	Warning		
-LsaSrv	6165	0	task_06165(UInt32 CredGuardRunning, UInt32 VbsSecretValidity)			task_0	Warning		
-LsaSrv	6166	0	task_06166(UInt32 CredGuardRunning, UInt32 GroupPolicyStatus, UInt32 MachineSecretSource, UInt32 VbsSecretValidity)			task_0	Informational		
-LsaSrv	6167	0	task_06167()			task_0	Error		
-LsaSrv	6182	0	task_06182(HexInt64 TargetLogonId, UnicodeString AccountName, UnicodeString DomainName)			task_0	Warning		
-LsaSrv	6225	0	LSALogonStart()	Start		LSALogon	Informational		
-LsaSrv	6226	0	LSALogonStop()	Stop		LSALogon	Informational		
-LsaSrv	6227	0	LSASID_NameLookupStart()	Start		LSASID_NameLookup	Informational		
-LsaSrv	6228	0	LSASID_NameLookupStop()	Stop		LSASID_NameLookup	Informational		
-LsaSrv	6229	0	LSASID_NameLookupStart6229()	Start		LSASID_NameLookup	Informational		
-LsaSrv	6230	0	LSASID_NameLookupStop6230()	Stop		LSASID_NameLookup	Informational		
-LsaSrv	6231	0	SecurityPackageManagerStart()	Start		SecurityPackageManager	Informational		
-LsaSrv	6232	0	SecurityPackageManagerStop()	Stop		SecurityPackageManager	Informational		
-LsaSrv	32773	0	task_032773(UnicodeString Domain, UnicodeString TargetDomain, UInt32 __binLength, Binary status)			task_0	Warning		
-LsaSrv	32774	0	task_032774(UnicodeString Domain, UnicodeString TargetDomain, UInt32 __binLength, Binary status)			task_0	Warning		
-LsaSrv	32775	0	task_032775(UnicodeString Domain, UnicodeString TargetDomain, UInt32 __binLength, Binary status)			task_0	Warning		
-LsaSrv	32777	0	task_032777()			task_0	Warning		
-LsaSrv	32779	0	task_032779(GUID SubCategoryGuid)		WPDBusEnumStartTrigger	task_0	Informational		
-LsaSrv	32780	0	task_032780(HexInt32 Status)			task_0	Warning		
-LsaSrv	40960	0	task_040960(UnicodeString Target, UnicodeString Protocol, UnicodeString Error)			task_0	Warning		
-LsaSrv	40961	0	task_040961(UnicodeString Target)			task_0	Warning		
-LsaSrv	40962	0	task_040962(UnicodeString Target, UnicodeString Protocol)			task_0	Warning		
-LsaSrv	40964	0	task_040964()			task_0	Warning		
-LsaSrv	40965	0	task_040965(UnicodeString Target, UnicodeString Protocol)			task_0	Informational		
-LsaSrv	40966	0	task_040966(UnicodeString Protocol)			task_0	Informational		
-LsaSrv	40967	0	task_040967(UnicodeString Protocol)			task_0	Informational		
-LsaSrv	40968	0	task_040968()			task_0	Warning		
-LsaSrv	40969	0	task_040969(UnicodeString Protocol)			task_0	Informational		
-LsaSrv	45056	0	task_045056()			task_0	Warning		
-LsaSrv	45057	0	task_045057(UnicodeString Username, UnicodeString Package, UnicodeString Error)			task_0	Informational		
-LsaSrv	45058	0	task_045058(UnicodeString UserName, SYSTEMTIME TimeStamp)			task_0	Informational		
+LsaSrv	100	0	Event_100(UnicodeString PackageName, UnicodeString UserName, UnicodeString DomainName, UnicodeString ServerName, UInt32 ProtectedUser, HexInt32 ErrorCode)			task_0	Error	Microsoft-Windows-LSA/Operational	The security package does not cache the credentials needed to authenticate to the server.\r\n\r\nPackage Name:\t%1\r\nUser Name:\t%2\r\nDomain Name:\t%3\r\nServer Name:\t%4\r\nProtected User:\t%5\r\nError Code:\t%6
+LsaSrv	200	0	Event_200(UnicodeString UserName, UnicodeString DomainName, HexInt64 LogonId, SYSTEMTIME LogoffTime, UInt32 PID, UnicodeString Program, UnicodeString PrincipalName, UnicodeString ServerName, UnicodeString PackageName, UnicodeString CallType, HexInt32 ErrorCode)			task_0	Warning	Microsoft-Windows-LSA/Operational	A security package received a network logon request after the logoff completed.\r\n\r\nUser Name:\t%1\r\nDomain Name:\t%2\r\nLogon ID:\t%3\r\nLogoff Time:\t%4\r\nPID:\t%5\r\nProgram:\t%6\r\nPrincipal Name:\t%7\r\nServer Name:\t%8\r\nPackage Name:\t%9\r\nCall Type:\t%10\r\nError Code:\t%11
+LsaSrv	300	0	Event_300(SID TargetUserSid, UnicodeString TargetUserName, UnicodeString TargetDomainName, HexInt64 TargetLogonId, GUID TargetLogonGuid, UInt32 EventOrginal, UInt32 EventCountTotal, UnicodeString SidList)			task_0	Informational	Microsoft-Windows-LSA/Operational	Groups assigned to a new logon.\r\n\r\nNew Logon:\r\n\tSecurity ID:\t\t%1\r\n\tAccount Name:\t\t%2\r\n\tAccount Domain:\t\t%3\r\n\tLogon ID:\t\t%4\r\n\tLogon GUID:\t\t%5\r\n\r\nEvent in sequence:\t\t%6 of %7\r\n\r\nGroup Membership:\t\t%8
+LsaSrv	301	0	Event_301(SID TargetUserSid, UnicodeString TargetUserName, UnicodeString TargetDomainName, HexInt64 TargetLogonId, GUID TargetLogonGuid, UInt32 LogonType, UInt32 EventIdx, UInt32 EventCountTotal, UnicodeString UserClaims, UnicodeString DeviceClaims)			task_0	Informational	Microsoft-Windows-LSA/Operational	Claims assigned to a new logon.\r\n\r\nNew Logon:\r\n\tSecurity ID:\t\t%1\r\n\tAccount Name:\t\t%2\r\n\tAccount Domain:\t\t%3\r\n\tLogon ID:\t\t%4\r\n\tLogon GUID:\t\t%5\r\n\r\n\r\n\tLogon Type:\t\t%6\r\n\r\n\r\n\r\nEvent in sequence:\t\t%7 of %8\r\n\r\nUser Claims:\t\t%9\r\n\r\nDevice Claims:\t\t%10\r\n\r\nThis event is generated when a new logon session is created and the user token associated with it contains user and/or device claims. The New Logon fields indicate the account that was logged on. If all the user and device claims in the user token cannot be accommodated in a single event, multiple such events are generated. The Event in sequence field indicates how many more events are generated for this logon session. Each user or device claim is represented in the following format:\r\n\r\n\tClaimID ClaimTypeID : Value1, Value2 … \r\n\r\nThe common claim types are: 0 (Invalid Type), 1 (64-bit Integer, 2 (Unsigned 64-bit Integer), 3 (String), 4 (FQBN), 5 (SID), 6 (Boolean) and 16 (Blob). If the claim value exceeds the max allowed length then the string is terminated by ...
+LsaSrv	302	0	Event_302(SID UserSid, HexInt64 LogonId, UnicodeString AuthorityName, UnicodeString AccountName, UInt32 Elapse)			task_0	Informational	Microsoft-Windows-LSA/Operational	User %1 logged off notification is received.\r\n\r\nLogonId:\t%2\r\nAuthorityName:\t%3\r\nAccountName:\t%4\r\nTimeout:\t%5 seconds
+LsaSrv	303	0	Event_303(UnicodeString PackageName, UnicodeString UserName, UnicodeString DomainName, UInt32 ProtectedUser)			task_0	Informational	Microsoft-Windows-LSA/Operational	The security package does not cache the user's sign on credentials.\r\n\r\nPackage Name:\t%1\r\nUser Name:\t%2\r\nDomain Name:\t%3\r\nProtected User:\t%4
+LsaSrv	320	0	Event_320(UnicodeString UserName, UnicodeString DomainName)			task_0	Informational	Microsoft-Windows-LSA/Operational	Automatic restart sign on successfully configured the autologon credentials for:\r\n\r\n\tAccount Name:\t\t%1\r\n\tAccount Domain:\t\t%2
+LsaSrv	321	0	Event_321(UnicodeString Error)			task_0	Informational	Microsoft-Windows-LSA/Operational	Automatic restart sign on failed to configure the autologon credentials with error:\r\n\r\n%1
+LsaSrv	322	0	Event_322()			task_0	Informational	Microsoft-Windows-LSA/Operational	Automatic restart sign on successfully deleted autologon credentials from LSA memory
+LsaSrv	5000	0	Event_5000(UnicodeString Package, UInt32 __binLength, Binary Exception)			task_0	Error	System	The security package %1 generated an exception. The exception information is the data.
+LsaSrv	6027	0	Event_6027(UnicodeString Secret, UInt32 __binLength, Binary status)			task_0	Error	System	Could not upgrade the global secret %1. Please check the status of all services in the system.
+LsaSrv	6033	0	Event_6033(UnicodeString Client)			task_0	Error	System	An anonymous session connected from %1 has attempted to open an LSA policy handle on this machine. The attempt was rejected with STATUS_ACCESS_DENIED to prevent leaking security sensitive information to the anonymous caller.\r\n The application that made this attempt needs to be fixed. Please contact the application vendor. As a temporary workaround, this security measure can be disabled by setting the \HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\TurnOffAnonymousBlock DWORD value to 1.\r\n This message will be logged at most once a day.
+LsaSrv	6035	0	Event_6035(SID SID)			task_0	Warning	System	During a logon attempt, the user's security context accumulated too many security IDs. This is a very unusual situation. Remove the user from some global or local groups to reduce the number of security IDs to incorporate into the security context.\r\nUser's SID is %1\r\nIf this is the Administrator account, logging on in safe mode will enable Administrator to log on by automatically restricting group memberships.
+LsaSrv	6036	0	Event_6036(UnicodeString PID, UnicodeString Program)			task_0	Warning	System	The program %2, with the assigned Process ID %1, supplied a NULL or empty target name for the pszTargetName parameter when calling the InitializeSecurityContext API to initiate an outbound NTLM security context. This is a security risk when mutual authentication is required.\r\n \r\n To help protect against a malicious attack, make your code more secure. To do this, change the program so that it specifies a target name in the pszTargetName parameter field, and then recompile the code.
+LsaSrv	6037	0	Event_6037(UnicodeString PID, UnicodeString Program, UnicodeString TargetName)			task_0	Warning	System	The program %2, with the assigned process ID %1, could not authenticate locally by using the target name %3. The target name used is not valid. A target name should refer to one of the local computer names, for example, the DNS host name.\r\n \r\n Try a different target name.
+LsaSrv	6038	0	Event_6038()			task_0	Warning	System	Microsoft Windows Server has detected that NTLM authentication is presently being used between clients and this server. This event occurs once per boot of the server on the first time a client uses NTLM with this server.\r\n \r\nNTLM is a weaker authentication mechanism. Please check:\r\n \r\n      Which applications are using NTLM authentication?\r\n      Are there configuration issues preventing the use of stronger authentication such as Kerberos authentication?\r\n      If NTLM must be supported, is Extended Protection configured?\r\n \r\nDetails on how to complete these checks can be found at http://go.microsoft.com/fwlink/?LinkId=225699.
+LsaSrv	6039	0	Event_6039()			task_0	Informational	System	Microsoft Windows Server has detected that NTLM authentication is being used between clients and this server. This event occurs once per boot of the server on the first time a client uses NTLM with this server.\r\n \r\nNTLM is a weaker authentication mechanism. Please check:\r\n \r\n      Which applications are using NTLM authentication?\r\n      Are there configuration issue preventing the use stronger authentication such as Kerberos authentication?\r\n      If NTLM must be supported, is Extended Protection configured?\r\n \r\nDetails on how to complete these checks can be found at http://go.microsoft.com/fwlink/?LinkId=225699.
+LsaSrv	6040	0	Event_6040(UnicodeString Package, UnicodeString TargetName)			task_0	Warning	System	An authentication request for package %1 was rejected because the target information was invalid.  The authentication request did not match the target name of %2.
+LsaSrv	6144	0	Event_6144()			task_0	Informational	System	A secret object private to LSA was queried by a client. This object was returned in encrypted format for security reasons.
+LsaSrv	6145	0	Event_6145(UnicodeString MissingCAPDNs)			task_0	Critical	System	An error occurred while retrieving new Central Access Policies for this machine.\r\n\r\nCould not retrieve policies for the following DNs:\r\n%1
+LsaSrv	6146	0	Event_6146(UnicodeString Error, UnicodeString CAPEName, UnicodeString CAPEDesc)			task_0	Error	System	An error occurred while processing new Central Access Policies for this machine. Validation failed for the following Central Access Rule referenced by one or more of the Central Access Policies:\r\n\r\n\tError:\t\t%1\r\n\r\n\tName:\t\t%2\r\n\tDescription:\t%3
+LsaSrv	6182	0	Event_6182(HexInt64 TargetLogonId, UnicodeString AccountName, UnicodeString DomainName)			task_0	Warning	Microsoft-Windows-LSA/Diagnostic	LogonSession alive after interactive user logoff. Indicates a possible token leak in one of the services. \r\nLogon ID:%1\r\nAccount Name:%2\r\nDomain Name:%3
+LsaSrv	6225	0	LSALogonStart()	Start		LSALogon	Informational	Microsoft-Windows-LSA/Performance	
+LsaSrv	6226	0	LSALogonStop()	Stop		LSALogon	Informational	Microsoft-Windows-LSA/Performance	
+LsaSrv	6227	0	LSASID_NameLookupStart()	Start		LSASID_NameLookup	Informational	Microsoft-Windows-LSA/Performance	
+LsaSrv	6228	0	LSASID_NameLookupStop()	Stop		LSASID_NameLookup	Informational	Microsoft-Windows-LSA/Performance	
+LsaSrv	6229	0	LSASID_NameLookupStart6229()	Start		LSASID_NameLookup	Informational	Microsoft-Windows-LSA/Performance	
+LsaSrv	6230	0	LSASID_NameLookupStop6230()	Stop		LSASID_NameLookup	Informational	Microsoft-Windows-LSA/Performance	
+LsaSrv	6231	0	SecurityPackageManagerStart()	Start		SecurityPackageManager	Informational	Microsoft-Windows-LSA/Performance	
+LsaSrv	6232	0	SecurityPackageManagerStop()	Stop		SecurityPackageManager	Informational	Microsoft-Windows-LSA/Performance	
+LsaSrv	32773	0	Event_32773(UnicodeString Domain, UnicodeString TargetDomain, UInt32 __binLength, Binary status)			task_0	Warning	System	A lookup request was made that required connectivity to a domain controller in domain %1. The LSA was unable to find a domain controller in the domain and thus failed the request. Please check connectivity and secure channel setup from this domain controller to the domain %2.
+LsaSrv	32774	0	Event_32774(UnicodeString Domain, UnicodeString TargetDomain, UInt32 __binLength, Binary status)			task_0	Warning	System	A lookup request was made that required connectivity to the domain controller %1. The local LSA was unable to contact the LSA on the remote domain controller. Please check connectivity and secure channel setup from this domain controller to the domain controller %2.
+LsaSrv	32775	0	Event_32775(UnicodeString Domain, UnicodeString TargetDomain, UInt32 __binLength, Binary status)			task_0	Warning	System	A lookup request was made that required the lookup services on the remote domain controller %1. The remote domain controller failed the request thus the local LSA failed the original lookup request. Please check connectivity and secure channel setup from this domain controller to the domain controller %2.
+LsaSrv	32777	0	Event_32777()			task_0	Warning	System	The LSA was unable to register its RPC interface over the TCP/IP interface. Please make sure that the protocol is properly installed.
+LsaSrv	32779	0	Event_32779(GUID SubCategoryGuid)		WPDBusEnumStartTrigger	task_0	Informational		
+LsaSrv	32780	0	Event_32780(HexInt32 Status)			task_0	Warning	System	The LSA was unable to notify UBPM during startup with status %1.
+LsaSrv	40960	0	Event_40960(UnicodeString Target, UnicodeString Protocol, UnicodeString Error)			task_0	Warning	System	The Security System detected an authentication error for the server %1. The failure code from authentication protocol %2 was %3.
+LsaSrv	40961	0	Event_40961(UnicodeString Target)			task_0	Warning	System	The Security System could not establish a secured connection with the server %1. No authentication protocol was available.
+LsaSrv	40962	0	Event_40962(UnicodeString Target, UnicodeString Protocol)			task_0	Warning	System	The Security System was unable to authenticate to the server %1 because the server has completed the authentication, but the client authentication protocol %2 has not.
+LsaSrv	40964	0	Event_40964()			task_0	Warning	System	The Security System received an authentication attempt with an unknown authentication protocol. The request has failed.
+LsaSrv	40965	0	Event_40965(UnicodeString Target, UnicodeString Protocol)			task_0	Informational	System	The Security System has selected %2 for the authentication protocol to server %1.
+LsaSrv	40966	0	Event_40966(UnicodeString Protocol)			task_0	Informational	System	The Security System has received an authentication attempt, and determined that the protocol %1 preferred by the client is acceptable.
+LsaSrv	40967	0	Event_40967(UnicodeString Protocol)			task_0	Informational	System	The Security System has received an authentication request directly for authentication protocol %1.
+LsaSrv	40968	0	Event_40968()			task_0	Warning	System	The Security System has received an authentication request that could not be decoded. The request has failed.
+LsaSrv	40969	0	Event_40969(UnicodeString Protocol)			task_0	Informational	System	The Security System has received an authentication attempt, and determined that the protocol %1 is the common protocol.
+LsaSrv	45056	0	Event_45056()			task_0	Warning	System	Logon cache was disabled. Intermittent authentication failures may result during periods of network latency or interrupts. Please contact your system administrator.
+LsaSrv	45057	0	Event_45057(UnicodeString Username, UnicodeString Package, UnicodeString Error)			task_0	Informational	System	A failed logon attempt has caused a logon cache entry for user %1 to be deleted. The authentication package was %2, and the error message was %3.
+LsaSrv	45058	0	Event_45058(UnicodeString UserName, SYSTEMTIME TimeStamp)			task_0	Informational	System	A logon cache entry for user %1 was the oldest entry and was removed. The timestamp of this entry was %2.

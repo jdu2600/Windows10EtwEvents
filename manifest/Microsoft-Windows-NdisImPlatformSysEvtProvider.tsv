@@ -1,8 +1,8 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-NdisImPlatformSysEvtProvider	16993	0	task_0PCODE_128pcode_128(UnicodeString Team, UnicodeString Status)	opcode_128		task_0	Always		
-Microsoft-Windows-NdisImPlatformSysEvtProvider	16994	0	task_0PCODE_128pcode_12816994(UnicodeString Member, UnicodeString Status)	opcode_128		task_0	Always		
-Microsoft-Windows-NdisImPlatformSysEvtProvider	16995	0	task_0PCODE_128pcode_12816995(UnicodeString TeamNic, UnicodeString Status)	opcode_128		task_0	Always		
-Microsoft-Windows-NdisImPlatformSysEvtProvider	16996	0	task_0PCODE_128pcode_12816996(UnicodeString TeamNic, UnicodeString Team, UnicodeString Status)	opcode_128		task_0	Always		
-Microsoft-Windows-NdisImPlatformSysEvtProvider	16997	0	task_0PCODE_128pcode_12816997(UnicodeString Member, UnicodeString TeamNic, UnicodeString Status)	opcode_128		task_0	Always		
-Microsoft-Windows-NdisImPlatformSysEvtProvider	16998	0	task_0PCODE_128pcode_12816998(UnicodeString Member, UnicodeString TeamNic, UnicodeString Status)	opcode_128		task_0	Always		
-Microsoft-Windows-NdisImPlatformSysEvtProvider	16999	0	task_0PCODE_128pcode_12816999(UnicodeString Status)	opcode_128		task_0	Always		
+Microsoft-Windows-NdisImPlatformSysEvtProvider	16993	0	Message_0x80004261(UnicodeString Team, UnicodeString Status)			task_0	Always		Creating Team %1 failed. Status = %2.
+Microsoft-Windows-NdisImPlatformSysEvtProvider	16994	0	Message_0x80004262(UnicodeString Member, UnicodeString Status)			task_0	Always		Binding to Member Adapter %1 failed. Status = %2.
+Microsoft-Windows-NdisImPlatformSysEvtProvider	16995	0	Message_0x80004263(UnicodeString TeamNic, UnicodeString Status)			task_0	Always		TeamNic %1 failed to initialize. Status = %2.
+Microsoft-Windows-NdisImPlatformSysEvtProvider	16996	0	Message_0x80004264(UnicodeString TeamNic, UnicodeString Team, UnicodeString Status)			task_0	Always		Creating TeamNic %1 for Team %2 failed. Status = %3.
+Microsoft-Windows-NdisImPlatformSysEvtProvider	16997	0	Message_0x80004265(UnicodeString Member, UnicodeString TeamNic, UnicodeString Status)			task_0	Always		Allocating port for Member %1 on TeamNic %2 failed. Status = %3.
+Microsoft-Windows-NdisImPlatformSysEvtProvider	16998	0	Message_0x80004266(UnicodeString Member, UnicodeString TeamNic, UnicodeString Status)			task_0	Always		Creating internal binding between Member %1 and TeamNic %2 failed. Status = %3.
+Microsoft-Windows-NdisImPlatformSysEvtProvider	16999	0	Message_0x80004267(UnicodeString Status)			task_0	Always		NdisImPlatform(LBFO) driver failed to load. Status = %1.

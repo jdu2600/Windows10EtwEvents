@@ -1,0 +1,17 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Security-IdentityListener	0	0	Event_0(UInt32 Number)			task_0	Informational	Microsoft-Windows-Security-IdentityListener/Operational	Successfully imported %1 identities
+Microsoft-Windows-Security-IdentityListener	1	0	Event_1(UInt32 LastError)			task_0	Error	Microsoft-Windows-Security-IdentityListener/Operational	Failed to importidentities. Error code: %1
+Microsoft-Windows-Security-IdentityListener	2	0	Event_2(SID Sid)			task_0	Informational	Microsoft-Windows-Security-IdentityListener/Operational	Successfully added %1 to homeusers group.
+Microsoft-Windows-Security-IdentityListener	3	0	Event_3(SID Sid)			task_0	Error	Microsoft-Windows-Security-IdentityListener/Operational	Failed to add %1 to homeusers group.
+Microsoft-Windows-Security-IdentityListener	4	0	Event_4(SID Sid)			task_0	Informational	Microsoft-Windows-Security-IdentityListener/Operational	Successfully deleted %1 from homeusers group.
+Microsoft-Windows-Security-IdentityListener	5	0	Event_5(SID Sid)			task_0	Error	Microsoft-Windows-Security-IdentityListener/Operational	Failed to delete %1 from homeusers group.
+Microsoft-Windows-Security-IdentityListener	6	0	Event_6(UnicodeString psz)			task_0	Informational	Microsoft-Windows-Security-IdentityListener/Operational	Machine certificate with %1 name was created successfully.
+Microsoft-Windows-Security-IdentityListener	7	0	Event_7(UInt32 LastError)			task_0	Error	Microsoft-Windows-Security-IdentityListener/Operational	Failed to create Machine certificate. Error code %1
+Microsoft-Windows-Security-IdentityListener	8	0	Event_8(UnicodeString psz)			task_0	Informational	Microsoft-Windows-Security-IdentityListener/Operational	Certificate was successfully imported for machine %1.
+Microsoft-Windows-Security-IdentityListener	9	0	Event_9(UnicodeString RemoteMachineName, UInt32 Errorcode)			task_0	Error	Microsoft-Windows-Security-IdentityListener/Operational	Importing certificate for machine %1 failed with error code %2.
+Microsoft-Windows-Security-IdentityListener	10	0	Event_10(GUID ProviderGUID, UnicodeString IdentityUID, UnicodeString IdentityDisplayName)			task_0	Informational	Microsoft-Windows-Security-IdentityListener/Operational	Importing Identity (Provider GUID: %1)  Identity UID: %2 [%3].
+Microsoft-Windows-Security-IdentityListener	11	0	Event_11(UInt32 LastError)			task_0	Error	Microsoft-Windows-Security-IdentityListener/Operational	Failed to remove remote identities from the ILR cache. Error code %1
+Microsoft-Windows-Security-IdentityListener	12	0	Event_12()			task_0	Informational	Microsoft-Windows-Security-IdentityListener/Operational	Machine certificates were deleted successfully.
+Microsoft-Windows-Security-IdentityListener	13	0	Event_13(UInt32 LastError)			task_0	Error	Microsoft-Windows-Security-IdentityListener/Operational	Failed to delete machine certificates. Error code %1
+Microsoft-Windows-Security-IdentityListener	14	0	Event_14(UnicodeString psz)			task_0	Error	Microsoft-Windows-Security-IdentityListener/Operational	Handle the remote machine %1 departure event.
+Microsoft-Windows-Security-IdentityListener	15	0	Event_15(UnicodeString RemoteMachineName, UInt32 Errorcode)			task_0	Error	Microsoft-Windows-Security-IdentityListener/Operational	Failed to handle the remote machine %1 departure event. Error code %2

@@ -1,19 +1,19 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-XAudio2	16	0	Initialize(Pointer Instance, HexInt32 Processors)			Initialize	Informational		
-Microsoft-Windows-XAudio2	17	0	Initialize17()			Initialize	Error		
-Microsoft-Windows-XAudio2	32	0	Shutdown(Pointer Pointer)			Shutdown	Informational		
-Microsoft-Windows-XAudio2	33	0	Shutdown33(UInt32 SourceVoiceCount, UInt32 SubmixVoiceCount, UInt32 MasteringVoiceCount)			Shutdown	Warning		
-Microsoft-Windows-XAudio2	48	0	SubmixVoiceCreate(Pointer Address, UInt32 ProcessingStage, UInt32 Channels, UInt32 SampleRate)	Create		SubmixVoice	Verbose		
-Microsoft-Windows-XAudio2	49	0	SubmixVoiceCreate49(UInt32 OriginalHz, UInt32 NewHz, UInt32 Quantum)	Create		SubmixVoice	Warning		
-Microsoft-Windows-XAudio2	64	0	MasteringVoiceCreate(Pointer Address, UInt32 Channels, UInt32 SampleRate, UnicodeString RendererId)	Create		MasteringVoice	Verbose		
-Microsoft-Windows-XAudio2	65	0	MasteringVoiceCreate65(UInt32 OriginalHz, UInt32 NewHz, UInt32 Quantum)	Create		MasteringVoice	Warning		
-Microsoft-Windows-XAudio2	66	0	MasteringVoiceCreate66(Pointer Address, UInt32 Channels, UInt32 SampleRate, UnicodeString RendererId)	Create		MasteringVoice	Informational		
-Microsoft-Windows-XAudio2	67	0	MasteringVoiceCreate67(UnicodeString DeviceId, UnicodeString EndpointId)	Create		MasteringVoice	Verbose		
-Microsoft-Windows-XAudio2	80	0	task_0(Int32 hr)			task_0	Critical		
-Microsoft-Windows-XAudio2	96	0	ProcessingPerformanceWarning(Float Time, UInt32 Callback)	PerformanceWarning		Processing	Warning		
-Microsoft-Windows-XAudio2	97	0	ProcessingPerformanceWarning97(Float Value)	PerformanceWarning		Processing	Warning		
-Microsoft-Windows-XAudio2	98	0	ProcessingPerformanceWarning98(UInt32 Value)	PerformanceWarning		Processing	Warning		
-Microsoft-Windows-XAudio2	99	0	SourceVoicePerformanceWarning(Pointer Pointer)	PerformanceWarning		SourceVoice	Warning		
-Microsoft-Windows-XAudio2	112	0	ProcessingStart()	Start		Processing	Informational		
-Microsoft-Windows-XAudio2	128	0	ProcessingStop()	Stop		Processing	Informational		
-Microsoft-Windows-XAudio2	256	0	Processing(UInt32 MinimumCyclesPerQuantum, UInt32 MaximumCyclesPerQuantum, UInt32 GlitchesSinceEngineStarted, Float CpuUsage, UInt32 LatencyInSamples, UInt32 TotalMemoryUsage, UInt32 ActiveSourceVoices, UInt32 TotalSourceVoices, UInt32 ActiveSubmixVoices, UInt32 ActiveResamplers, UInt32 ActiveMatrixMixers)			Processing			
+Microsoft-Windows-XAudio2	16	0	Initialize(Pointer Instance, HexInt32 Processors)			Initialize	Informational	Microsoft-Windows-XAudio2/Debug	XAudio2 initialized at %1 on processor(s) %2
+Microsoft-Windows-XAudio2	17	0	Initialize17()			Initialize	Error	Microsoft-Windows-XAudio2/Debug	CPU does not meet minimum requirement
+Microsoft-Windows-XAudio2	32	0	Shutdown(Pointer Pointer)			Shutdown	Informational	Microsoft-Windows-XAudio2/Debug	XAudio2 at %1 destroyed
+Microsoft-Windows-XAudio2	33	0	Shutdown33(UInt32 SourceVoiceCount, UInt32 SubmixVoiceCount, UInt32 MasteringVoiceCount)			Shutdown	Warning	Microsoft-Windows-XAudio2/Debug	Cleaned up %1 source voices, %2 submix voices and %3 mastering voices
+Microsoft-Windows-XAudio2	48	0	SubmixVoiceCreate(Pointer Address, UInt32 ProcessingStage, UInt32 Channels, UInt32 SampleRate)	Create		SubmixVoice	Verbose	Microsoft-Windows-XAudio2/Debug	Submix voice created at %1: processing stage = %2, channels = %3, sample rate = %4Hz
+Microsoft-Windows-XAudio2	49	0	SubmixVoiceCreate49(UInt32 OriginalHz, UInt32 NewHz, UInt32 Quantum)	Create		SubmixVoice	Warning	Microsoft-Windows-XAudio2/Debug	Sample rate %1Hz adjusted to %2Hz (submix rates must be multiples of %3 on this platform)
+Microsoft-Windows-XAudio2	64	0	MasteringVoiceCreate(Pointer Address, UInt32 Channels, UInt32 SampleRate, UnicodeString RendererId)	Create		MasteringVoice	Verbose	Microsoft-Windows-XAudio2/Debug	Mastering voice created at %1: channels = %2, sample rate = %3Hz, output to %4
+Microsoft-Windows-XAudio2	65	0	MasteringVoiceCreate65(UInt32 OriginalHz, UInt32 NewHz, UInt32 Quantum)	Create		MasteringVoice	Warning	Microsoft-Windows-XAudio2/Debug	Sample rate %1Hz adjusted to %2Hz (mastering rates must be multiples of %3 on this platform)
+Microsoft-Windows-XAudio2	66	0	MasteringVoiceCreate66(Pointer Address, UInt32 Channels, UInt32 SampleRate, UnicodeString RendererId)	Create		MasteringVoice	Informational	Microsoft-Windows-XAudio2/Debug	Mastering voice at %1 connected to %4 device at %3Hz, %2 channels
+Microsoft-Windows-XAudio2	67	0	MasteringVoiceCreate67(UnicodeString DeviceId, UnicodeString EndpointId)	Create		MasteringVoice	Verbose	Microsoft-Windows-XAudio2/Debug	Supplied device interface ID(%1) converted to endpoint ID (%2)
+Microsoft-Windows-XAudio2	80	0	Event_80(Int32 hr)			task_0	Critical	Microsoft-Windows-XAudio2/Debug	XAudio2 critical error: %1; the XAudio2 engine should be released and re-created
+Microsoft-Windows-XAudio2	96	0	ProcessingPerformanceWarning(Float Time, UInt32 Callback)	PerformanceWarning		Processing	Warning	Microsoft-Windows-XAudio2/Debug	Spent %1ms in %2 callbacks
+Microsoft-Windows-XAudio2	97	0	ProcessingPerformanceWarning97(Float Value)	PerformanceWarning		Processing	Warning	Microsoft-Windows-XAudio2/Debug	Spent %1ms in audio thread; XAudio2 possibly overloaded
+Microsoft-Windows-XAudio2	98	0	ProcessingPerformanceWarning98(UInt32 Value)	PerformanceWarning		Processing	Warning	Microsoft-Windows-XAudio2/Debug	Glitch at output sample %1
+Microsoft-Windows-XAudio2	99	0	SourceVoicePerformanceWarning(Pointer Pointer)	PerformanceWarning		SourceVoice	Warning	Microsoft-Windows-XAudio2/Debug	Voice at %1 starved: no more source buffers are available, but no end-of-stream marker was received
+Microsoft-Windows-XAudio2	112	0	ProcessingStart()	Start		Processing	Informational	Microsoft-Windows-XAudio2/Debug	XAudio2 engine started
+Microsoft-Windows-XAudio2	128	0	ProcessingStop()	Stop		Processing	Informational	Microsoft-Windows-XAudio2/Debug	XAudio2 engine stopped
+Microsoft-Windows-XAudio2	256	0	Processing(UInt32 MinimumCyclesPerQuantum, UInt32 MaximumCyclesPerQuantum, UInt32 GlitchesSinceEngineStarted, Float CpuUsage, UInt32 LatencyInSamples, UInt32 TotalMemoryUsage, UInt32 ActiveSourceVoices, UInt32 TotalSourceVoices, UInt32 ActiveSubmixVoices, UInt32 ActiveResamplers, UInt32 ActiveMatrixMixers)			Processing		Microsoft-Windows-XAudio2/Performance	MinimumCyclesPerQuantum: %1 MaximumCyclesPerQuantum: %2 GlitchesSinceEngineStarted: %3 CpuUsage: %4 TotalMemoryUsage: %5 ActiveSourceVoices: %6 TotalSourceVoices: %7 ActiveSubmixVoices: %8 ActiveResamplers: %9 ActiveMatrixMixers: %10

@@ -1,9 +1,9 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-User Profiles General	69	0	task_0(UnicodeString SourceFile, UnicodeString SourceTimestamp, UnicodeString DestinationFile, UnicodeString DestinationTimestamp)			task_0	Warning		
-Microsoft-Windows-User Profiles General	77	0	task_077(UnicodeString EffectiveSid, UInt32 Location, UInt32 Code)			task_0	Informational		
-Microsoft-Windows-User Profiles General	1006	0	task_01006(UnicodeString FileName, UInt64 FileSizeInKb, UnicodeString SourceLocation, UnicodeString DestinationLocation, UInt64 CopyTimeInSec)			task_0	Informational		
-Microsoft-Windows-User Profiles General	1007	0	task_01007(UnicodeString SourceFile, UnicodeString SourceTimestamp, UnicodeString DestinationFile, UnicodeString DestinationTimestamp)			task_0	Warning		
-Microsoft-Windows-User Profiles General	1509	0	task_01509(UnicodeString Source, UnicodeString Target, UnicodeString Error)			task_0	Warning		
-Microsoft-Windows-User Profiles General	1534	0	task_01534()			task_0	Warning		
-Microsoft-Windows-User Profiles General	1600	0	task_01600(UnicodeString Source, UnicodeString Target)			task_0	Warning		
-Microsoft-Windows-User Profiles General	1601	0	task_01601(UnicodeString Source, UnicodeString Target)			task_0	Warning		
+Microsoft-Windows-User Profiles General	69	0	Event_69(UnicodeString SourceFile, UnicodeString SourceTimestamp, UnicodeString DestinationFile, UnicodeString DestinationTimestamp)			task_0	Warning	Microsoft-Windows-User Profile Service/Operational	%1 which has timestamp %2 was not copied to %3 which has timestamp %4 since it is older than the file it would be overwriting.
+Microsoft-Windows-User Profiles General	77	0	Event_77(UnicodeString EffectiveSid, UInt32 Location, UInt32 Code)			task_0	Informational	Microsoft-Windows-User Profile Service/Operational	
+Microsoft-Windows-User Profiles General	1006	0	Event_1006(UnicodeString FileName, UInt64 FileSizeInKb, UnicodeString SourceLocation, UnicodeString DestinationLocation, UInt64 CopyTimeInSec)			task_0	Informational	Microsoft-Windows-User Profile Service/Diagnostic	File %1 of size %2 kilobytes copied from %3 to %4 in %5 seconds.
+Microsoft-Windows-User Profiles General	1007	0	Event_1007(UnicodeString SourceFile, UnicodeString SourceTimestamp, UnicodeString DestinationFile, UnicodeString DestinationTimestamp)			task_0	Warning	Microsoft-Windows-User Profile Service/Diagnostic	%1 which has timestamp %2 was not copied to %3 which has timestamp %4 since it is older than the file it would be overwriting.
+Microsoft-Windows-User Profiles General	1509	0	Event_1509(UnicodeString Source, UnicodeString Target, UnicodeString Error)			task_0	Warning	Application	Windows cannot copy file %1 to location %2. This error may be caused by network problems or insufficient security rights. \r\n\r\n DETAIL - %3
+Microsoft-Windows-User Profiles General	1534	0	Event_1534()			task_0	Warning	Application	There are too many profile copy errors. Refer to the previous events for details. Windows will not log any additional copy errors for this copy process.
+Microsoft-Windows-User Profiles General	1600	0	Event_1600(UnicodeString Source, UnicodeString Target)			task_0	Warning	Application	Windows cannot copy profile from %1 to %2, you do not have enough disk space.
+Microsoft-Windows-User Profiles General	1601	0	Event_1601(UnicodeString Source, UnicodeString Target)			task_0	Warning	Application	Windows cannot copy profile from %1 to %2, you have exceeded the profile quota.

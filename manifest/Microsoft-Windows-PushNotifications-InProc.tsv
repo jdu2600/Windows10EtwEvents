@@ -1,11 +1,11 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-PushNotifications-InProc	1	0	task_0(UnicodeString FileName, UnicodeString FunctionName, Int32 LineNumber, UInt32 ErrorCode, UnicodeString ErrorMessage)			task_0	Error		
-Microsoft-Windows-PushNotifications-InProc	2	0	task_02()			task_0	Informational		
-Microsoft-Windows-PushNotifications-InProc	3	0	task_03()			task_0	Informational		
-Microsoft-Windows-PushNotifications-InProc	100	0	task_0100(UnicodeString PackageFamilyName)			task_0	Informational		
-Microsoft-Windows-PushNotifications-InProc	101	0	task_0101(UnicodeString PackageFamilyName, UnicodeString AppUserModelId, Boolean SettingValue)			task_0	Informational		
-Microsoft-Windows-PushNotifications-InProc	102	0	task_0102(UnicodeString PackageFamilyName, UInt32 NumApps)			task_0	Informational		
-Microsoft-Windows-PushNotifications-InProc	103	0	task_0103(UnicodeString PackageFamilyName, UnicodeString AppUserModelId, Boolean SettingValue)			task_0	Informational		
-Microsoft-Windows-PushNotifications-InProc	104	0	task_0104(UnicodeString PackageFamilyName, UnicodeString AppUserModelId)			task_0	Informational		
-Microsoft-Windows-PushNotifications-InProc	105	0	task_0105(UnicodeString PackageFamilyName, UnicodeString AppUserModelId)			task_0	Informational		
-Microsoft-Windows-PushNotifications-InProc	106	0	task_0106(UnicodeString PackageFamilyName, UInt32 NumApps)			task_0	Informational		
+Microsoft-Windows-PushNotifications-InProc	1	0	Event_1(UnicodeString FileName, UnicodeString FunctionName, Int32 LineNumber, UInt32 ErrorCode)			task_0	Error	Microsoft-Windows-PushNotification-InProc/Debug	WpnInPrc has encountered an error in file %1, function %2, line %3: %4.
+Microsoft-Windows-PushNotifications-InProc	2	0	Event_2()			task_0	Informational	Microsoft-Windows-PushNotification-InProc/Debug	WpnInPrc has been loaded.
+Microsoft-Windows-PushNotifications-InProc	3	0	Event_3()			task_0	Informational	Microsoft-Windows-PushNotification-InProc/Debug	WpnInPrc has been unloaded.
+Microsoft-Windows-PushNotifications-InProc	100	0	Event_100(UnicodeString PackageFamilyName)			task_0	Informational	Microsoft-Windows-PushNotification-InProc/Debug	Setting Handler has been initalized with Package Family: %1.
+Microsoft-Windows-PushNotifications-InProc	101	0	Event_101(UnicodeString PackageFamilyName, UnicodeString AppUserModelId, Boolean SettingValue)			task_0	Informational	Microsoft-Windows-PushNotification-InProc/Debug	Setting Unit created with Package Family: %1, AppUserModelId: %2, SettingValue: %3.
+Microsoft-Windows-PushNotifications-InProc	102	0	Event_102(UnicodeString PackageFamilyName, UInt32 NumApps)			task_0	Informational	Microsoft-Windows-PushNotification-InProc/Debug	%2 Setting Units created for Package Family: %1.
+Microsoft-Windows-PushNotifications-InProc	103	0	Event_103(UnicodeString PackageFamilyName, UnicodeString AppUserModelId, Boolean SettingValue)			task_0	Informational	Microsoft-Windows-PushNotification-InProc/Debug	Setting Units applied for Package Family: %1, AppUserModelId: %2, SettingValue: %3.
+Microsoft-Windows-PushNotifications-InProc	104	0	Event_104(UnicodeString PackageFamilyName, UnicodeString AppUserModelId)			task_0	Informational	Microsoft-Windows-PushNotification-InProc/Debug	Polling Setting Units applied for Package Family: %1, AppUserModelId: %2
+Microsoft-Windows-PushNotifications-InProc	105	0	Event_105(UnicodeString PackageFamilyName, UnicodeString AppUserModelId)			task_0	Informational	Microsoft-Windows-PushNotification-InProc/Debug	Polling Setting Unit Created for Package Family: %1, AppUserModelId: %2
+Microsoft-Windows-PushNotifications-InProc	106	0	Event_106(UnicodeString PackageFamilyName, UInt32 NumApps)			task_0	Informational	Microsoft-Windows-PushNotification-InProc/Debug	%2 Polling Setting Units created for Package Family: %1.

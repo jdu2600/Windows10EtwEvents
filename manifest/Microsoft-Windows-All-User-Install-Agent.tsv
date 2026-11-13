@@ -1,11 +1,11 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-All-User-Install-Agent	1287	0	task_0(UnicodeString Param1)			task_0	Informational		
-Microsoft-Windows-All-User-Install-Agent	1288	0	task_01288(UnicodeString PackageMoniker, UnicodeString UserSid, HexInt32 Error)			task_0	Error		
-Microsoft-Windows-All-User-Install-Agent	1300	0	task_01300(UnicodeString UserSid, HexInt32 Error, Int32 location)			task_0	Error		
-Microsoft-Windows-All-User-Install-Agent	1301	0	task_01301(UnicodeString Param1)			task_0	Informational		
-Microsoft-Windows-All-User-Install-Agent	1302	0	task_01302(Int32 NumberOfPackages, UnicodeString UserSid)			task_0	Informational		
-Microsoft-Windows-All-User-Install-Agent	1303	0	task_01303(UnicodeString UserSid, HexInt32 Error)			task_0	Error		
-Microsoft-Windows-All-User-Install-Agent	1304	0	task_01304(UnicodeString Package, UnicodeString UserSid)			task_0	Informational		
-Microsoft-Windows-All-User-Install-Agent	1305	0	task_01305(UnicodeString Package, HexInt32 Error)			task_0	Error		
-Microsoft-Windows-All-User-Install-Agent	1306	0	task_01306(UnicodeString Package, HexInt32 Error)			task_0	Informational		
-Microsoft-Windows-All-User-Install-Agent	1307	0	task_01307(UnicodeString Package)			task_0	Informational		
+Microsoft-Windows-All-User-Install-Agent	1287	0	Event_1287(UnicodeString Param1)			task_0	Informational	Microsoft-Windows-All-User-Install-Agent/Admin	A profile deletion triggered the Windows All-User Install Agent to uninstall all packages for the user profile %1.
+Microsoft-Windows-All-User-Install-Agent	1288	0	Event_1288(UnicodeString PackageMoniker, UnicodeString UserSid, HexInt32 Error)			task_0	Error	Microsoft-Windows-All-User-Install-Agent/Admin	The Windows All-User Install Agent could not remove %1 packages during the profile deletion of the user profile %2. The error code is %3.
+Microsoft-Windows-All-User-Install-Agent	1300	0	Event_1300(UnicodeString UserSid, HexInt32 Error, Int32 location)			task_0	Error	Microsoft-Windows-All-User-Install-Agent/Admin	The Windows All-User Install Agent could not delete the registered packages after the profile was deleted for user SID %1. Error code: %2.  Additional information: %3.
+Microsoft-Windows-All-User-Install-Agent	1301	0	Event_1301(UnicodeString Param1)			task_0	Informational	Microsoft-Windows-All-User-Install-Agent/Admin	The Windows All-User Install Agent detected an attempt to delete a temporary or mandatory profile for user SID %1. Package information for the user will be reset.
+Microsoft-Windows-All-User-Install-Agent	1302	0	Event_1302(Int32 NumberOfPackages, UnicodeString UserSid)			task_0	Informational	Microsoft-Windows-All-User-Install-Agent/Admin	The Windows All-User Install Agent will delete %1 packages for user SID %2 because the profile was deleted.
+Microsoft-Windows-All-User-Install-Agent	1303	0	Event_1303(UnicodeString UserSid, HexInt32 Error)			task_0	Error	Microsoft-Windows-All-User-Install-Agent/Admin	The Windows All-User Install Agent could not retrieve a list of packages for user SID %1. The error code is %2.
+Microsoft-Windows-All-User-Install-Agent	1304	0	Event_1304(UnicodeString Package, UnicodeString UserSid)			task_0	Informational	Microsoft-Windows-All-User-Install-Agent/Admin	The Windows All-User Install Agent will delete package %1 for user SID %2 because the profile was deleted.
+Microsoft-Windows-All-User-Install-Agent	1305	0	Event_1305(UnicodeString Package, HexInt32 Error)			task_0	Error	Microsoft-Windows-All-User-Install-Agent/Admin	GetApplicability API failed to determine status of package %1. The error code is %2.
+Microsoft-Windows-All-User-Install-Agent	1306	0	Event_1306(UnicodeString Package, HexInt32 Error)			task_0	Informational	Microsoft-Windows-All-User-Install-Agent/Admin	GetApplicability API has determined that package %1 is either NotInstallable or RequiresReinstall. The detail code is %2.
+Microsoft-Windows-All-User-Install-Agent	1307	0	Event_1307(UnicodeString Package)			task_0	Informational	Microsoft-Windows-All-User-Install-Agent/Admin	Dependent Package %1 is already installed, registration will be skipped.

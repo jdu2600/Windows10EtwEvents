@@ -1,11 +1,11 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-CertificateServicesClient	1	0	task_0()			task_0	Informational		
-Microsoft-Windows-CertificateServicesClient	2	0	task_02()			task_0	Informational		
-Microsoft-Windows-CertificateServicesClient	3	0	task_03()			task_0	Informational		
-Microsoft-Windows-CertificateServicesClient	4	0	task_04()			task_0	Informational		
-Microsoft-Windows-CertificateServicesClient	501	0	task_0501(UnicodeString Parameter)			task_0	Warning		
-Microsoft-Windows-CertificateServicesClient	502	0	task_0502(UInt32 ErrorCode)			task_0	Warning		
-Microsoft-Windows-CertificateServicesClient	1001	0	task_01001(UnicodeString ProviderName, UInt32 ErrorCode)			task_0	Error		
-Microsoft-Windows-CertificateServicesClient	1002	0	task_01002(UnicodeString ProviderName, UInt32 ErrorCode)			task_0	Error		
-Microsoft-Windows-CertificateServicesClient	1003	0	task_01003(UInt32 Flags, UInt32 ErrorCode)			task_0	Error		
-Microsoft-Windows-CertificateServicesClient	1004	0	task_01004(UnicodeString ProviderName, UInt32 ErrorCode)			task_0	Error		
+Microsoft-Windows-CertificateServicesClient	1	0	Event_1()			task_0	Informational	Application	Certificate Services Client has been started successfully.
+Microsoft-Windows-CertificateServicesClient	2	0	Event_2()			task_0	Informational	Application	Certificate Services Client has been stopped.
+Microsoft-Windows-CertificateServicesClient	3	0	Event_3()			task_0	Informational	Application	Certificate Services Client has detected network connectivity.
+Microsoft-Windows-CertificateServicesClient	4	0	Event_4()			task_0	Informational	Application	Certificate Services Client has detected network dis-connectivity.
+Microsoft-Windows-CertificateServicesClient	501	0	Event_501(UnicodeString Parameter)			task_0	Warning	Application	Certificate Services Client is triggered with bad parameters: %1.
+Microsoft-Windows-CertificateServicesClient	502	0	Event_502(UInt32 ErrorCode)			task_0	Warning	Application	Certificate Services Client failed to register Group Policy notifications. Error code: %1.
+Microsoft-Windows-CertificateServicesClient	1001	0	Event_1001(UnicodeString ProviderName, UInt32 ErrorCode)			task_0	Error	Application	Certificate Services Client failed to load Provider %1. Error code %2.
+Microsoft-Windows-CertificateServicesClient	1002	0	Event_1002(UnicodeString ProviderName, UInt32 ErrorCode)			task_0	Error	Application	Certificate Services Client cannot find the required interface in Provider %1. Error code %2.
+Microsoft-Windows-CertificateServicesClient	1003	0	Event_1003(UInt32 Flags, UInt32 ErrorCode)			task_0	Error	Application	Certificate Services Client  failed to invoke the Providers in response to event %1. Error code %2.
+Microsoft-Windows-CertificateServicesClient	1004	0	Event_1004(UnicodeString ProviderName, UInt32 ErrorCode)			task_0	Error	Application	Certificate Services Client Provider %1 raised an exception. Exception code %2.

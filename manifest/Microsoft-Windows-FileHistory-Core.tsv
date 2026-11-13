@@ -1,8 +1,8 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-FileHistory-Core	100	0	task_0(UInt32 hc_stateid, UnicodeString ProtectedUpToTime)			task_0	Informational		
-Microsoft-Windows-FileHistory-Core	200	0	task_0200(UInt32 HighLevelHr, UInt32 LowLevelHr, UnicodeString ConfigFilePath)			task_0	Error		
-Microsoft-Windows-FileHistory-Core	201	0	task_0201(UInt32 Hr, UnicodeString ConfigFilePath)			task_0	Error		
-Microsoft-Windows-FileHistory-Core	202	0	task_0202(UInt32 Hr, UnicodeString ConfigFilePath)			task_0	Warning		
-Microsoft-Windows-FileHistory-Core	203	0	task_0203(UInt32 Hr, UnicodeString ConfigFilePath)			task_0	Error		
-Microsoft-Windows-FileHistory-Core	204	0	task_0204(UInt32 Hr, UnicodeString ConfigFilePath)			task_0	Warning		
-Microsoft-Windows-FileHistory-Core	205	0	task_0205(UnicodeString Message)			task_0	Always		
+Microsoft-Windows-FileHistory-Core	100	0	Event_100(UInt32 hc_stateid, UnicodeString ProtectedUpToTime)			task_0	Informational	Microsoft-Windows-FileHistory-Core/WHC	File History operational state has changed
+Microsoft-Windows-FileHistory-Core	200	0	Event_200(UInt32 HighLevelHr, UInt32 LowLevelHr, UnicodeString ConfigFilePath)			task_0	Error	Microsoft-Windows-FileHistory-Engine/BackupLog	Unable to start a backup cycle for configuration %3
+Microsoft-Windows-FileHistory-Core	201	0	Event_201(UInt32 Hr, UnicodeString ConfigFilePath)			task_0	Error	Microsoft-Windows-FileHistory-Engine/BackupLog	Unable to scan user libraries for changes and perform backup of modified files for configuration %2
+Microsoft-Windows-FileHistory-Core	202	0	Event_202(UInt32 Hr, UnicodeString ConfigFilePath)			task_0	Warning	Microsoft-Windows-FileHistory-Engine/BackupLog	Unusual condition was encountered during scanning user libraries for changes and performing backup of modified files for configuration %2
+Microsoft-Windows-FileHistory-Core	203	0	Event_203(UInt32 Hr, UnicodeString ConfigFilePath)			task_0	Error	Microsoft-Windows-FileHistory-Engine/BackupLog	Unable to finish a backup cycle for configuration %2
+Microsoft-Windows-FileHistory-Core	204	0	Event_204(UInt32 Hr, UnicodeString ConfigFilePath)			task_0	Warning	Microsoft-Windows-FileHistory-Engine/BackupLog	Unusual condition was encountered during finalization of a backup cycle for configuration %2
+Microsoft-Windows-FileHistory-Core	205	0	Event_205(UnicodeString Message)			task_0	Always	Microsoft-Windows-FileHistory-Engine/BackupLog	Some files could not be restored. Please manually restore them using File History (%1).

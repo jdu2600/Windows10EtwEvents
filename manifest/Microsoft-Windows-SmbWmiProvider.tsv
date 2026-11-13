@@ -1,4 +1,3 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-SmbWmiProvider	0	0	task_0(UnicodeString FunctionName, UInt32 MiError, UInt32 Win32Error)			task_0	Error		
-Microsoft-Windows-SmbWmiProvider	1	0	task_01(UnicodeString Message)			task_0	Error		
-Microsoft-Windows-SmbWmiProvider	2	0	task_02(UnicodeString Message)			task_0	Informational		
+Microsoft-Windows-SmbWmiProvider	0	0	Event_0(UnicodeString FunctionName, UInt32 MiError, UInt32 Win32Error)			task_0	Error	SmbWmiAnalytic	Function %1 returned MI error %2 Win32 Error %3
+Microsoft-Windows-SmbWmiProvider	1	0	Event_1(UnicodeString Message)			task_0	Error	SmbWmiAnalytic	%1

@@ -1,3 +1,3 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-NetworkBridge	2001	0	DebugTrace(AnsiString _DebugString)	DebugTrace	KeywordDebugTrace	DebugTrace	Informational		
-Microsoft-Windows-NetworkBridge	3001	0	task_0()			task_0	Error		
+Microsoft-Windows-NetworkBridge	2001	0	DebugTrace(AnsiString _DebugString)	DebugTrace	KeywordDebugTrace	DebugTrace	Informational	Microsoft-Windows-NetworkBridge/Diagnostic	%1
+Microsoft-Windows-NetworkBridge	3001	0	Event_3001()			task_0	Error	System	Network Bridge:  Detected a router that is not DHCP compliant. This can cause connectivity issues on the machine. If the problem persists, please replace the router or configure static IP addresses

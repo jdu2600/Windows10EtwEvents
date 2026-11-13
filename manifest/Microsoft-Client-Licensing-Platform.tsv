@@ -1,62 +1,44 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Client-Licensing-Platform	1	0	Service_InitStart()	Start	SERVICE_PERF_KEYWORD	Service_Init	Informational		
-Microsoft-Client-Licensing-Platform	2	0	Service_InitStop()	Stop	SERVICE_PERF_KEYWORD	Service_Init	Informational		
-Microsoft-Client-Licensing-Platform	3	0	Service_StopStart()	Start	SERVICE_PERF_KEYWORD	Service_Stop	Informational		
-Microsoft-Client-Licensing-Platform	4	0	Service_Stop()	Stop	SERVICE_PERF_KEYWORD	Service_Stop	Informational		
-Microsoft-Client-Licensing-Platform	7	0	Service_CallStart()	Start	SERVICE_PERF_KEYWORD	Service_Call	Informational		
-Microsoft-Client-Licensing-Platform	8	0	Service_CallStop()	Stop	SERVICE_PERF_KEYWORD	Service_Call	Informational		
-Microsoft-Client-Licensing-Platform	9	0	Service_CallStart9()	Start	SERVICE_PERF_KEYWORD	Service_Call	Informational		
-Microsoft-Client-Licensing-Platform	10	0	Service_CallStop10()	Stop	SERVICE_PERF_KEYWORD	Service_Call	Informational		
-Microsoft-Client-Licensing-Platform	11	0	Service_CallStart11()	Start	SERVICE_PERF_KEYWORD	Service_Call	Informational		
-Microsoft-Client-Licensing-Platform	12	0	Service_CallStop12()	Stop	SERVICE_PERF_KEYWORD	Service_Call	Informational		
-Microsoft-Client-Licensing-Platform	13	0	Service_CallStart13()	Start	SERVICE_PERF_KEYWORD	Service_Call	Informational		
-Microsoft-Client-Licensing-Platform	14	0	Service_CallStop14()	Stop	SERVICE_PERF_KEYWORD	Service_Call	Informational		
-Microsoft-Client-Licensing-Platform	15	0	Service_CallStart15()	Start	SERVICE_PERF_KEYWORD	Service_Call	Informational		
-Microsoft-Client-Licensing-Platform	16	0	Service_CallStop16()	Stop	SERVICE_PERF_KEYWORD	Service_Call	Informational		
-Microsoft-Client-Licensing-Platform	17	0	Service_CallStart17()	Start	SERVICE_PERF_KEYWORD	Service_Call	Informational		
-Microsoft-Client-Licensing-Platform	18	0	Service_CallStop18()	Stop	SERVICE_PERF_KEYWORD	Service_Call	Informational		
-Microsoft-Client-Licensing-Platform	19	0	Service_CallStart19(Int32 ID)	Start	SERVICE_PERF_KEYWORD	Service_Call	Informational		
-Microsoft-Client-Licensing-Platform	20	0	Service_CallStop20(Int32 ID)	Stop	SERVICE_PERF_KEYWORD	Service_Call	Informational		
-Microsoft-Client-Licensing-Platform	100	0	task_0(UnicodeString Data)		SERVICE_KEYWORD	task_0	Informational		
-Microsoft-Client-Licensing-Platform	101	0	task_0101(UnicodeString Data)		SERVICE_KEYWORD	task_0	Informational		
-Microsoft-Client-Licensing-Platform	102	0	task_0102()		SERVICE_KEYWORD	task_0	Informational		
-Microsoft-Client-Licensing-Platform	103	0	task_0103(UInt32 HRESULT)		SERVICE_KEYWORD	task_0	Error		
-Microsoft-Client-Licensing-Platform	104	0	task_0104(UnicodeString Data)		SERVICE_KEYWORD	task_0	Warning		
-Microsoft-Client-Licensing-Platform	106	0	task_0106(UnicodeString PackageName, UnicodeString UserId, UnicodeString LicenseId, UnicodeString AssociateId)		SERVICE_KEYWORD	task_0	Informational		
-Microsoft-Client-Licensing-Platform	107	0	task_0107(UnicodeString Data)		SERVICE_KEYWORD	task_0	Informational		
-Microsoft-Client-Licensing-Platform	110	0	task_0110(Int32 Type, UInt32 HRESULT)		SERVICE_KEYWORD	task_0	Error		
-Microsoft-Client-Licensing-Platform	111	0	task_0111(UnicodeString LicenseId, Int32 Type, UnicodeString PackageName, UnicodeString UserId, UInt32 HRESULT)		SERVICE_KEYWORD	task_0	Error		
-Microsoft-Client-Licensing-Platform	112	0	task_0112(UnicodeString LicenseId, Int32 Type, UnicodeString PackageName, UnicodeString UserId, UInt32 HRESULT)		SERVICE_KEYWORD	task_0	Error		
-Microsoft-Client-Licensing-Platform	113	0	task_0113(UnicodeString LicenseId, Int32 Type, UnicodeString PackageName, UnicodeString UserId, UInt32 HRESULT)		SERVICE_KEYWORD	task_0	Error		
-Microsoft-Client-Licensing-Platform	114	0	task_0114(UnicodeString LicenseId, Int32 Type, UnicodeString PackageName, UnicodeString UserId, UInt32 HRESULT)		SERVICE_KEYWORD	task_0	Error		
-Microsoft-Client-Licensing-Platform	115	0	task_0115(UnicodeString PackageName, UnicodeString UserId, Int32 Type, UnicodeString LicenseId, UnicodeString AssociateId)		SERVICE_KEYWORD	task_0	Informational		
-Microsoft-Client-Licensing-Platform	116	0	task_0116(UnicodeString PackageName, UnicodeString UserId, UnicodeString LicenseId, UnicodeString AssociateId)		SERVICE_KEYWORD	task_0	Informational		
-Microsoft-Client-Licensing-Platform	117	0	task_0117(UnicodeString PackageName, UnicodeString UserId, UnicodeString LicenseId, UnicodeString AssociateId)		SERVICE_KEYWORD	task_0	Informational		
-Microsoft-Client-Licensing-Platform	118	0	task_0118(UnicodeString LicenseId, UnicodeString AssociateId, UnicodeString DeviceId)		SERVICE_KEYWORD	task_0	Informational		
-Microsoft-Client-Licensing-Platform	119	0	task_0119(UnicodeString LicenseId, Int32 Type)		SERVICE_KEYWORD	task_0	Informational		
-Microsoft-Client-Licensing-Platform	120	0	task_0120(UnicodeString LicenseId, Int32 Type, UnicodeString PackageName, UnicodeString UserId, UInt32 HRESULT)		SERVICE_KEYWORD	task_0	Error		
-Microsoft-Client-Licensing-Platform	121	0	task_0121(UInt32 opId, UnicodeString Caller)		SERVICE_KEYWORD	task_0	Error		
-Microsoft-Client-Licensing-Platform	150	0	task_0150(UInt32 HRESULT)		SERVICE_KEYWORD	task_0	Informational		
-Microsoft-Client-Licensing-Platform	151	0	task_0151(UnicodeString Data)		SERVICE_KEYWORD	task_0	Informational		
-Microsoft-Client-Licensing-Platform	152	0	task_0152()		SERVICE_KEYWORD	task_0	Informational		
-Microsoft-Client-Licensing-Platform	153	0	task_0153()		SERVICE_KEYWORD	task_0	Informational		
-Microsoft-Client-Licensing-Platform	154	0	task_0154()		SERVICE_KEYWORD	task_0	Informational		
-Microsoft-Client-Licensing-Platform	155	0	task_0155()		SERVICE_KEYWORD	task_0	Informational		
-Microsoft-Client-Licensing-Platform	156	0	task_0156()		SERVICE_KEYWORD	task_0	Informational		
-Microsoft-Client-Licensing-Platform	157	0	task_0157(UnicodeString PackageName, UnicodeString LicenseId)		SERVICE_KEYWORD	task_0	Informational		
-Microsoft-Client-Licensing-Platform	158	0	task_0158(UnicodeString PackageName, UnicodeString LicenseId, UInt32 HRESULT)		SERVICE_KEYWORD	task_0	Informational		
-Microsoft-Client-Licensing-Platform	159	0	task_0159(UnicodeString PackageName, UnicodeString LicenseId)		SERVICE_KEYWORD	task_0	Informational		
-Microsoft-Client-Licensing-Platform	160	0	task_0160(UnicodeString PackageName, UnicodeString LicenseId, Int32 Type)		SERVICE_KEYWORD	task_0	Informational		
-Microsoft-Client-Licensing-Platform	161	0	task_0161(Int32 Edition, UnicodeString PKey, UInt32 HRESULT)		SERVICE_KEYWORD	task_0	Informational		
-Microsoft-Client-Licensing-Platform	170	0	task_0170(UnicodeString Namespace, UnicodeString VariableName, UnicodeString AssociateId)		SERVICE_KEYWORD	task_0	Informational		
-Microsoft-Client-Licensing-Platform	171	0	task_0171(UnicodeString Namespace, UnicodeString VariableName, UInt32 HRESULT)		SERVICE_KEYWORD	task_0	Warning		
-Microsoft-Client-Licensing-Platform	172	0	task_0172(UnicodeString Arguments, UInt32 HRESULT)		SERVICE_KEYWORD	task_0	Informational		
-Microsoft-Client-Licensing-Platform	173	0	task_0173(UInt32 HRESULT)		SERVICE_KEYWORD	task_0	Informational		
-Microsoft-Client-Licensing-Platform	174	0	task_0174(UInt32 HRESULT)		SERVICE_KEYWORD	task_0	Informational		
-Microsoft-Client-Licensing-Platform	175	0	task_0175(UnicodeString Data)		SERVICE_KEYWORD	task_0	Informational		
-Microsoft-Client-Licensing-Platform	176	0	task_0176(UnicodeString SystemTime, Int32 Kind, UInt32 HRESULT, UnicodeString Stage)		SERVICE_KEYWORD	task_0	Informational		
-Microsoft-Client-Licensing-Platform	177	0	task_0177(UnicodeString Data)		SERVICE_KEYWORD	task_0	Informational		
-Microsoft-Client-Licensing-Platform	178	0	task_0178(UnicodeString SystemTime, UInt32 HRESULT, UnicodeString Stage)		SERVICE_KEYWORD	task_0	Informational		
-Microsoft-Client-Licensing-Platform	179	0	task_0179(UInt32 HRESULT, UnicodeString Stage)		SERVICE_KEYWORD	task_0	Informational		
-Microsoft-Client-Licensing-Platform	180	0	task_0180(UnicodeString State, UnicodeString Msg)		SERVICE_KEYWORD	task_0	Informational		
-Microsoft-Client-Licensing-Platform	181	0	task_0181(UnicodeString State, UInt32 HRESULT, UnicodeString Msg)		SERVICE_KEYWORD	task_0	Informational		
+Microsoft-Client-Licensing-Platform	1	0	Service_InitStart()	Start	SERVICE_PERF_KEYWORD	Service_Init	Informational	Microsoft-Client-Licensing-Platform/Diagnostic	[Service] Inititialize started
+Microsoft-Client-Licensing-Platform	2	0	Service_InitStop()	Stop	SERVICE_PERF_KEYWORD	Service_Init	Informational	Microsoft-Client-Licensing-Platform/Diagnostic	[Service] Initialize complete
+Microsoft-Client-Licensing-Platform	3	0	Service_StopStart()	Start	SERVICE_PERF_KEYWORD	Service_Stop	Informational	Microsoft-Client-Licensing-Platform/Diagnostic	[Service] Shutdown started
+Microsoft-Client-Licensing-Platform	4	0	Service_Stop()	Stop	SERVICE_PERF_KEYWORD	Service_Stop	Informational	Microsoft-Client-Licensing-Platform/Diagnostic	[Service] Shutdown complete
+Microsoft-Client-Licensing-Platform	7	0	Service_CallStart()	Start	SERVICE_PERF_KEYWORD	Service_Call	Informational	Microsoft-Client-Licensing-Platform/Diagnostic	[ServiceCall] IFS
+Microsoft-Client-Licensing-Platform	8	0	Service_CallStop()	Stop	SERVICE_PERF_KEYWORD	Service_Call	Informational	Microsoft-Client-Licensing-Platform/Diagnostic	[ServiceCall] IFD
+Microsoft-Client-Licensing-Platform	9	0	Service_CallStart9()	Start	SERVICE_PERF_KEYWORD	Service_Call	Informational	Microsoft-Client-Licensing-Platform/Diagnostic	[ServiceCall] IFS
+Microsoft-Client-Licensing-Platform	10	0	Service_CallStop10()	Stop	SERVICE_PERF_KEYWORD	Service_Call	Informational	Microsoft-Client-Licensing-Platform/Diagnostic	[ServiceCall] IFD
+Microsoft-Client-Licensing-Platform	11	0	Service_CallStart11()	Start	SERVICE_PERF_KEYWORD	Service_Call	Informational	Microsoft-Client-Licensing-Platform/Diagnostic	[ServiceCall] IFS
+Microsoft-Client-Licensing-Platform	12	0	Service_CallStop12()	Stop	SERVICE_PERF_KEYWORD	Service_Call	Informational	Microsoft-Client-Licensing-Platform/Diagnostic	[ServiceCall] IFD
+Microsoft-Client-Licensing-Platform	13	0	Service_CallStart13()	Start	SERVICE_PERF_KEYWORD	Service_Call	Informational	Microsoft-Client-Licensing-Platform/Diagnostic	[ServiceCall] IFS
+Microsoft-Client-Licensing-Platform	14	0	Service_CallStop14()	Stop	SERVICE_PERF_KEYWORD	Service_Call	Informational	Microsoft-Client-Licensing-Platform/Diagnostic	[ServiceCall] IFD
+Microsoft-Client-Licensing-Platform	15	0	Service_CallStart15()	Start	SERVICE_PERF_KEYWORD	Service_Call	Informational	Microsoft-Client-Licensing-Platform/Diagnostic	[ServiceCall] IFS
+Microsoft-Client-Licensing-Platform	16	0	Service_CallStop16()	Stop	SERVICE_PERF_KEYWORD	Service_Call	Informational	Microsoft-Client-Licensing-Platform/Diagnostic	[ServiceCall] IFD
+Microsoft-Client-Licensing-Platform	17	0	Service_CallStart17()	Start	SERVICE_PERF_KEYWORD	Service_Call	Informational	Microsoft-Client-Licensing-Platform/Diagnostic	[ServiceCall] IFS
+Microsoft-Client-Licensing-Platform	18	0	Service_CallStop18()	Stop	SERVICE_PERF_KEYWORD	Service_Call	Informational	Microsoft-Client-Licensing-Platform/Diagnostic	[ServiceCall] IFD
+Microsoft-Client-Licensing-Platform	19	0	Service_CallStart19(Int32 ID)	Start	SERVICE_PERF_KEYWORD	Service_Call	Informational	Microsoft-Client-Licensing-Platform/Diagnostic	[ServiceCall] Execute start for id: %1
+Microsoft-Client-Licensing-Platform	20	0	Service_CallStop20(Int32 ID)	Stop	SERVICE_PERF_KEYWORD	Service_Call	Informational	Microsoft-Client-Licensing-Platform/Diagnostic	[ServiceCall] Execute done for id: %1
+Microsoft-Client-Licensing-Platform	100	0	Event_100(UnicodeString Data)		SERVICE_KEYWORD	task_0	Informational	Microsoft-Client-Licensing-Platform/Admin	ClipSVC service is starting.  Caller: %1
+Microsoft-Client-Licensing-Platform	101	0	Event_101(UnicodeString Data)		SERVICE_KEYWORD	task_0	Informational	Microsoft-Client-Licensing-Platform/Admin	ClipSVC service is running.  Version %1
+Microsoft-Client-Licensing-Platform	102	0	Event_102()		SERVICE_KEYWORD	task_0	Informational	Microsoft-Client-Licensing-Platform/Admin	ClipSVC service has shutdown.
+Microsoft-Client-Licensing-Platform	103	0	Event_103(UInt32 HRESULT)		SERVICE_KEYWORD	task_0	Error	Microsoft-Client-Licensing-Platform/Admin	ClipSVC service initialization failed - result code: %1
+Microsoft-Client-Licensing-Platform	104	0	Event_104(UnicodeString Data)		SERVICE_KEYWORD	task_0	Warning	Microsoft-Client-Licensing-Platform/Admin	ClipSVC was restarted while there is a pending rearm reboot required.  Caller: %1
+Microsoft-Client-Licensing-Platform	106	0	Event_106(UnicodeString PackageName, UnicodeString UserId, UnicodeString LicenseId, UnicodeString AssociateId)		SERVICE_KEYWORD	task_0	Informational	Microsoft-Client-Licensing-Platform/Admin	License successfully uninstalled for package %1 (user %2), license Id %3, file Id %4
+Microsoft-Client-Licensing-Platform	107	0	Event_107(UnicodeString Data)		SERVICE_KEYWORD	task_0	Informational	Microsoft-Client-Licensing-Platform/Admin	License successfully uninstalled for file Id %1
+Microsoft-Client-Licensing-Platform	110	0	Event_110(Int32 Type, UInt32 HRESULT)		SERVICE_KEYWORD	task_0	Error	Microsoft-Client-Licensing-Platform/Admin	License install failed for license type: %1\r\nResult code: %2
+Microsoft-Client-Licensing-Platform	111	0	Event_111(UnicodeString LicenseId, Int32 Type, UnicodeString PackageName, UnicodeString UserId, UInt32 HRESULT)		SERVICE_KEYWORD	task_0	Error	Microsoft-Client-Licensing-Platform/Admin	License install failed for license Id %1\r\nType: %2\r\nPackage (if available): %3\r\nUser Id (if available): %4\r\nResult code: %5
+Microsoft-Client-Licensing-Platform	112	0	Event_112(UnicodeString LicenseId, Int32 Type, UnicodeString PackageName, UnicodeString UserId, UInt32 HRESULT)		SERVICE_KEYWORD	task_0	Error	Microsoft-Client-Licensing-Platform/Admin	License install storage failed for license Id %1\r\nType: %2\r\nPackage (if available): %3\r\nUser Id(if available): %4\r\nResult code: %5
+Microsoft-Client-Licensing-Platform	115	0	Event_115(UnicodeString PackageName, UnicodeString UserId, Int32 Type, UnicodeString LicenseId, UnicodeString AssociateId)		SERVICE_KEYWORD	task_0	Informational	Microsoft-Client-Licensing-Platform/Admin	License successfully installed for package %1.\r\nUser Id (if available): %2\r\nType: %3\r\nLicense Id: %4\r\nAssociate Id: %5
+Microsoft-Client-Licensing-Platform	116	0	Event_116(UnicodeString PackageName, UnicodeString UserId, UnicodeString LicenseId, UnicodeString AssociateId)		SERVICE_KEYWORD	task_0	Informational	Microsoft-Client-Licensing-Platform/Admin	Application license successfully installed.\r\nPackage: %1\r\nUser Id (if available): %2\r\nLicense Id: %3\r\nAssociate Id: %4
+Microsoft-Client-Licensing-Platform	117	0	Event_117(UnicodeString PackageName, UnicodeString UserId, UnicodeString LicenseId, UnicodeString AssociateId)		SERVICE_KEYWORD	task_0	Informational	Microsoft-Client-Licensing-Platform/Admin	Lease successfully installed.\r\nLicense Id: %3\r\nAssociate Id: %4\r\nPackage (if available): %1\r\nUserId (if available): %2
+Microsoft-Client-Licensing-Platform	118	0	Event_118(UnicodeString LicenseId, UnicodeString AssociateId, UnicodeString DeviceId)		SERVICE_KEYWORD	task_0	Informational	Microsoft-Client-Licensing-Platform/Admin	Device license successfully installed.\r\nLicense Id: %1\r\nAssociate Id: %2\r\nDevice Id: %3
+Microsoft-Client-Licensing-Platform	150	0	Event_150(UInt32 HRESULT)		SERVICE_KEYWORD	task_0	Informational	Microsoft-Client-Licensing-Platform/Admin	Clip service has been rearmed.  Result code: %1
+Microsoft-Client-Licensing-Platform	151	0	Event_151(UnicodeString Data)		SERVICE_KEYWORD	task_0	Informational	Microsoft-Client-Licensing-Platform/Admin	Failed to launch app %1 since no applicable licenses were found
+Microsoft-Client-Licensing-Platform	152	0	Event_152()		SERVICE_KEYWORD	task_0	Informational	Microsoft-Client-Licensing-Platform/Admin	The hardware ID in the device license is out of tolerance with the device ID
+Microsoft-Client-Licensing-Platform	153	0	Event_153()		SERVICE_KEYWORD	task_0	Informational	Microsoft-Client-Licensing-Platform/Admin	The hardware ID in the device license changed but still with in tolerance with the device hardware ID
+Microsoft-Client-Licensing-Platform	154	0	Event_154()		SERVICE_KEYWORD	task_0	Informational	Microsoft-Client-Licensing-Platform/Admin	The device license was updated with a different device ID
+Microsoft-Client-Licensing-Platform	155	0	Event_155()		SERVICE_KEYWORD	task_0	Informational	Microsoft-Client-Licensing-Platform/Admin	The device license was removed
+Microsoft-Client-Licensing-Platform	156	0	Event_156()		SERVICE_KEYWORD	task_0	Informational	Microsoft-Client-Licensing-Platform/Admin	The required device license could not not be found
+Microsoft-Client-Licensing-Platform	157	0	Event_157(UnicodeString PackageName, UnicodeString LicenseId)		SERVICE_KEYWORD	task_0	Informational	Microsoft-Client-Licensing-Platform/Admin	The license with Id %2 has been archived successfully.  PFM if available: %1
+Microsoft-Client-Licensing-Platform	158	0	Event_158(UnicodeString PackageName, UnicodeString LicenseId, UInt32 HRESULT)		SERVICE_KEYWORD	task_0	Informational	Microsoft-Client-Licensing-Platform/Admin	The license with Id %2 was not able to be archived successfully.\r\nError code: %3\r\nPFM if available: %1
+Microsoft-Client-Licensing-Platform	159	0	Event_159(UnicodeString PackageName, UnicodeString LicenseId)		SERVICE_KEYWORD	task_0	Informational	Microsoft-Client-Licensing-Platform/Admin	The lease with Id %2 has been archived successfully.  PFM if available: %1
+Microsoft-Client-Licensing-Platform	160	0	Event_160(UnicodeString PackageName, UnicodeString LicenseId, Int32 Type)		SERVICE_KEYWORD	task_0	Informational	Microsoft-Client-Licensing-Platform/Admin	The license with Id %2 of type %3 has been archived successfully.  PFM if available: %1

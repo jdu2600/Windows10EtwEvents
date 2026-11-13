@@ -1,108 +1,84 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-Time-Service	1	0	task_0(UnicodeString TimeProvider, UnicodeString ErrorMessage)			task_0	Error		
-Microsoft-Windows-Time-Service	2	0	task_02(UnicodeString TimeProvider, UnicodeString ErrorMessage)			task_0	Warning		
-Microsoft-Windows-Time-Service	3	0	task_03(UnicodeString TimeProvider, UnicodeString ErrorMessage)			task_0	Informational		
-Microsoft-Windows-Time-Service	4	0	task_04(UnicodeString TimeProvider, UnicodeString ErrorMessage)			task_0	Error		
-Microsoft-Windows-Time-Service	5	0	task_05(UnicodeString TimeProvider, UnicodeString ErrorMessage)			task_0	Error		
-Microsoft-Windows-Time-Service	6	0	task_06(UnicodeString ErrorMessage)			task_0	Warning		
-Microsoft-Windows-Time-Service	7	0	task_07(UnicodeString TimeProvider, UnicodeString ErrorMessage)			task_0	Warning		
-Microsoft-Windows-Time-Service	8	0	task_08(UnicodeString TimeProvider, UnicodeString ErrorMessage)			task_0	Warning		
-Microsoft-Windows-Time-Service	9	0	task_09(UnicodeString TimeProvider, UnicodeString ErrorMessage)			task_0	Warning		
-Microsoft-Windows-Time-Service	10	0	task_010(UnicodeString TimeProvider, UnicodeString ErrorMessage)			task_0	Warning		
-Microsoft-Windows-Time-Service	11	0	task_011()			task_0	Warning		
-Microsoft-Windows-Time-Service	12	0	task_012()			task_0	Warning		
-Microsoft-Windows-Time-Service	13	0	task_013()			task_0	Warning		
-Microsoft-Windows-Time-Service	14	0	task_014(UnicodeString RetryMinutes)			task_0	Warning		
-Microsoft-Windows-Time-Service	15	0	task_015(UnicodeString ErrorMessage)			task_0	Warning		
-Microsoft-Windows-Time-Service	16	0	task_016(UnicodeString ManualPeer, UnicodeString ErrorMessage)			task_0	Warning		
-Microsoft-Windows-Time-Service	17	0	task_017(UnicodeString ManualPeer, UnicodeString ErrorMessage, UnicodeString RetryMinutes)			task_0	Warning		
-Microsoft-Windows-Time-Service	18	0	task_018(UnicodeString Domain, UnicodeString ErrorMessage, UnicodeString RetryMinutes)			task_0	Warning		
-Microsoft-Windows-Time-Service	19	0	task_019(UnicodeString LogFile, UnicodeString ErrorMessage)			task_0	Error		
-Microsoft-Windows-Time-Service	20	0	task_020(UnicodeString LogFile, UnicodeString ErrorMessage)			task_0	Error		
-Microsoft-Windows-Time-Service	21	0	task_021()			task_0	Error		
-Microsoft-Windows-Time-Service	22	0	task_022(UnicodeString Peer, UnicodeString ErrorMessage)			task_0	Warning		
-Microsoft-Windows-Time-Service	23	0	task_023(UnicodeString Peer, UnicodeString ErrorMessage)			task_0	Warning		
-Microsoft-Windows-Time-Service	24	0	task_024(UnicodeString DomainPeer, UnicodeString ErrorMessage)			task_0	Warning		
-Microsoft-Windows-Time-Service	25	0	task_025(UnicodeString DomainPeer, UnicodeString ErrorMessage)			task_0	Warning		
-Microsoft-Windows-Time-Service	26	0	task_026(UnicodeString DomainPeer)			task_0	Warning		
-Microsoft-Windows-Time-Service	27	0	task_027(UnicodeString DomainPeer)			task_0	Warning		
-Microsoft-Windows-Time-Service	28	0	task_028()			task_0	Warning		
-Microsoft-Windows-Time-Service	29	0	task_029(UnicodeString RetryMinutes)			task_0	Warning		
-Microsoft-Windows-Time-Service	30	0	task_030(UnicodeString ErrorMessage)			task_0	Warning		
-Microsoft-Windows-Time-Service	31	0	task_031()			task_0	Warning		
-Microsoft-Windows-Time-Service	32	0	task_032(UnicodeString ErrorMessage)			task_0	Warning		
-Microsoft-Windows-Time-Service	33	0	task_033(UnicodeString SystemTimeChangeSeconds)			task_0	Warning		
-Microsoft-Windows-Time-Service	34	0	task_034(Int64 SystemTimeChangeSeconds, UInt32 MaxSystemTimeChangeSeconds, UnicodeString TimeSource)			task_0	Error		
-Microsoft-Windows-Time-Service	35	0	task_035(UnicodeString TimeSource, UInt32 TimeSourceRefId, UInt32 CurrentStratumNumber)			task_0	Informational		
-Microsoft-Windows-Time-Service	36	0	task_036(UInt32 UnsynchronizedTimeSeconds, UInt32 TimeRemainingToSetLocalClockFreeRunningSeconds)			task_0	Warning		
-Microsoft-Windows-Time-Service	37	0	task_037(UnicodeString TimeSource)			task_0	Informational		
-Microsoft-Windows-Time-Service	38	0	task_038(UnicodeString TimeSource)			task_0	Warning		
-Microsoft-Windows-Time-Service	39	0	task_039()			task_0	Warning		
-Microsoft-Windows-Time-Service	40	0	task_040(UnicodeString TimeProvider, UnicodeString ErrorMessage)			task_0	Warning		
-Microsoft-Windows-Time-Service	41	0	task_041()			task_0	Warning		
-Microsoft-Windows-Time-Service	42	0	task_042()			task_0	Error		
-Microsoft-Windows-Time-Service	43	0	task_043(UnicodeString TimeProvider, UnicodeString ErrorMessage)			task_0	Warning		
-Microsoft-Windows-Time-Service	44	0	task_044(UnicodeString ErrorMessage)			task_0	Error		
-Microsoft-Windows-Time-Service	45	0	task_045(UnicodeString ErrorMessage)			task_0	Error		
-Microsoft-Windows-Time-Service	46	0	task_046(UnicodeString ErrorMessage)			task_0	Error		
-Microsoft-Windows-Time-Service	47	0	task_047(UnicodeString ManualPeer, UnicodeString ErrorMessage)			task_0	Warning		
-Microsoft-Windows-Time-Service	48	0	task_048(UnicodeString ManualPeer, UnicodeString ErrorMessage, UInt32 RetryMinutes)			task_0	Warning		
-Microsoft-Windows-Time-Service	49	0	task_049(UnicodeString ErrorMessage)			task_0	Warning		
-Microsoft-Windows-Time-Service	50	0	task_050(UInt32 TimeDifferenceMilliseconds, UInt32 TimeSampleSeconds)			task_0	Warning		
-Microsoft-Windows-Time-Service	51	0	task_051(UnicodeString Peer, UnicodeString TimeDifferenceSeconds, UInt32 TransmissionDelayMilliseconds)			task_0	Warning		
-Microsoft-Windows-Time-Service	52	0	task_052(Int64 TimeOffsetSeconds)			task_0	Warning		
-Microsoft-Windows-Time-Service	53	0	task_053(UnicodeString Peer)			task_0	Warning		
-Microsoft-Windows-Time-Service	54	0	task_054(UnicodeString ErrorMessage)			task_0	Error		
-Microsoft-Windows-Time-Service	129	0	task_0129(UnicodeString ErrorMessage, UInt32 RetryMinutes)			task_0	Warning		
-Microsoft-Windows-Time-Service	130	0	task_0130(UnicodeString ErrorMessage, UInt32 RetryMinutes, UnicodeString DomainPeer)			task_0	Warning		
-Microsoft-Windows-Time-Service	131	0	task_0131(UnicodeString ErrorMessage, UInt32 RetryMinutes, UnicodeString DomainPeer)			task_0	Warning		
-Microsoft-Windows-Time-Service	132	0	task_0132(UnicodeString ErrorMessage, UInt32 RetryMinutes, UnicodeString DomainPeer, UnicodeString TimeSource)			task_0	Warning		
-Microsoft-Windows-Time-Service	133	0	task_0133(UnicodeString ErrorMessage, UInt32 RetryMinutes)			task_0	Warning		
-Microsoft-Windows-Time-Service	134	0	task_0134(UnicodeString ErrorMessage, UInt32 RetryMinutes, UnicodeString DomainPeer)			task_0	Warning		
-Microsoft-Windows-Time-Service	135	0	task_0135(UnicodeString ErrorMessage, UInt32 RetryMinutes, UnicodeString DomainPeer, UnicodeString TimeSource)			task_0	Warning		
-Microsoft-Windows-Time-Service	136	0	task_0136(UnicodeString ErrorMessage, UInt32 RetryMinutes)			task_0	Warning		
-Microsoft-Windows-Time-Service	137	0	task_0137(UnicodeString ManualPeer)			task_0	Informational		
-Microsoft-Windows-Time-Service	138	0	task_0138(UnicodeString DomainPeer)			task_0	Informational		
-Microsoft-Windows-Time-Service	139	0	task_0139()			task_0	Informational		
-Microsoft-Windows-Time-Service	140	0	task_0140()			task_0	Warning		
-Microsoft-Windows-Time-Service	141	0	task_0141()			task_0	Warning		
-Microsoft-Windows-Time-Service	142	0	task_0142()			task_0	Warning		
-Microsoft-Windows-Time-Service	143	0	task_0143()			task_0	Informational		
-Microsoft-Windows-Time-Service	144	0	task_0144()			task_0	Warning		
-Microsoft-Windows-Time-Service	145	0	task_0145()			task_0	Warning		
-Microsoft-Windows-Time-Service	146	0	task_0146(UInt32 ChainingCountRequests, UInt32 ChainLoggingRate, UInt32 ChainingCountSuccess, UInt32 ChainingCountFailure)			task_0	Informational		
-Microsoft-Windows-Time-Service	147	0	task_0147()			task_0	Always		
-Microsoft-Windows-Time-Service	148	0	task_0148()			task_0	Always		
-Microsoft-Windows-Time-Service	149	0	task_0149()			task_0	Always		
-Microsoft-Windows-Time-Service	150	0	task_0150()			task_0	Always		
-Microsoft-Windows-Time-Service	151	0	task_0151()			task_0	Always		
-Microsoft-Windows-Time-Service	152	0	task_0152()			task_0	Always		
-Microsoft-Windows-Time-Service	153	0	task_0153()			task_0	Always		
-Microsoft-Windows-Time-Service	154	0	task_0154()			task_0	Always		
-Microsoft-Windows-Time-Service	156	0	task_0156(UInt32 ClientRID, UnicodeString DomainPeer)			task_0	Warning		
-Microsoft-Windows-Time-Service	157	0	task_0157(UnicodeString ClientAddress)			task_0	Warning		
-Microsoft-Windows-Time-Service	158	0	task_0158(UnicodeString TimeProvider)			task_0	Informational		
-Microsoft-Windows-Time-Service	159	0	task_0159(UnicodeString ErrorMessage)			task_0	Warning		
-Microsoft-Windows-Time-Service	257	0	task_0257(UnicodeString CurrentTimeUTC, UInt64 TickCount, UnicodeString Configuration, UnicodeString TimeProviders, UInt64 ClockRate)			task_0	Informational		
-Microsoft-Windows-Time-Service	258	0	task_0258(UnicodeString CurrentTimeUTC, UInt64 TickCount, UnicodeString ErrorMessage)			task_0	Informational		
-Microsoft-Windows-Time-Service	259	0	task_0259(UnicodeString AllNtpServers, UnicodeString ChosenReferenceNtpServer, UInt64 TickCount, UInt32 IFTSTMP)			task_0	Informational		
-Microsoft-Windows-Time-Service	260	0	task_0260(UnicodeString Configuration, UnicodeString TimeProviders, UInt64 LeapIndicator, UInt64 Stratum, UnicodeString Precision, UnicodeString RootDelay, UnicodeString RootDispersion, UnicodeString ReferenceId, UnicodeString LastSuccessfulSyncTime, UnicodeString Source, UInt64 PollInterval, UnicodeString PhaseOffset, UInt64 ClockRate, UInt64 StateMachine, UInt64 TimeSourceFlags, UInt64 ServerRole, UInt64 LastSyncError, UnicodeString TimeSinceLastGoodSync, UInt64 TickCount)			task_0	Informational		
-Microsoft-Windows-Time-Service	261	0	task_0261(UnicodeString NewTime, UnicodeString OldTime, UInt64 TickCount)			task_0	Informational		
-Microsoft-Windows-Time-Service	262	0	task_0262(UnicodeString AdjustmentPPM, UInt64 NewClockRate, UInt64 OldClockRate, UInt64 TickCount, UnicodeString MinReportedAdjustmentPPM)			task_0	Informational		
-Microsoft-Windows-Time-Service	263	0	task_0263(UnicodeString Configuration, UnicodeString TimeProviders, UInt64 TickCount)			task_0	Informational		
-Microsoft-Windows-Time-Service	264	0	task_0264(UnicodeString AllNtpServers, UInt64 TickCount)			task_0	Informational		
-Microsoft-Windows-Time-Service	265	0	task_0265(UnicodeString TimeSource, UnicodeString TimeSourceRefId, UInt32 LocalStratumNumber, UInt64 TickCount)			task_0	Informational		
-Microsoft-Windows-Time-Service	266	0	task_0266(UInt64 ReasonCode, UInt64 TickCount)			task_0	Informational		
-Microsoft-Windows-Time-Service	267	0	task_0267(UInt64 TickCount)			task_0	Informational		
-Microsoft-Windows-Time-Service	268	0	task_0268(UInt64 TickCount)			task_0	Informational		
-Microsoft-Windows-Time-Service	272	0	task_0272(UInt32 Enabled, UInt32 LeapSecondCount, Int32 CurrentUtcOffset, UInt32 RuntimeStateAndSettingsConsistent, UnicodeString NewestLeapSecondsList, UInt64 TickCount)			task_0	Informational		
-Microsoft-Windows-Time-Service	273	0	task_0273(UnicodeString Action, UnicodeString UtcTime, UnicodeString LocalTime, UnicodeString TimeProvider, UInt64 TickCount)			task_0	Informational		
-Microsoft-Windows-Time-Service	274	0	task_0274(UnicodeString Action, UnicodeString UtcTime, UnicodeString LocalTime, UnicodeString TimeProvider, UInt64 TickCount)			task_0	Warning		
-Microsoft-Windows-Time-Service	275	0	task_0275(UnicodeString UtcLeapSecondString, UnicodeString ErrorMessage, UInt64 TickCount)			task_0	Warning		
-Microsoft-Windows-Time-Service	276	0	task_0276(UnicodeString Action, UnicodeString UtcTime, UnicodeString LocalTime, UnicodeString TimeProvider, UInt64 TickCount)			task_0	Warning		
-Microsoft-Windows-Time-Service	279	0	task_0279(UInt64 TickCount)			task_0	Warning		
-Microsoft-Windows-Time-Service	280	0	task_0280(UInt32 RpcEndPointError)			task_0	Warning		
-Microsoft-Windows-Time-Service	281	0	task_0281(UnicodeString LastFrequencyErrorPPM, UnicodeString AvgFrequencyErrorPPM, UInt32 AvgFreqDurationMins, UnicodeString LastDailyDriftSeconds)			task_0	Informational		
-Microsoft-Windows-Time-Service	282	0	task_0282(UnicodeString AvgFrequencyErrorPPM, UInt32 AvgFreqDurationMins, UnicodeString AvgDailyDriftSeconds)			task_0	Warning		
-Microsoft-Windows-Time-Service	283	0	task_0283(UnicodeString ExpectedSystemTimeUTC, UnicodeString ActualSystemTimeUTC, UInt64 TickCount)			task_0	Warning		
-Microsoft-Windows-Time-Service	284	0	task_0284(UnicodeString SecureTimeMsg)			task_0	Informational		
+Microsoft-Windows-Time-Service	1	0	Event_1(UnicodeString TimeProvider, UnicodeString ErrorMessage)			task_0	Error	System	The time provider '%1' logged the following error: %2
+Microsoft-Windows-Time-Service	2	0	Event_2(UnicodeString TimeProvider, UnicodeString ErrorMessage)			task_0	Warning	System	The time provider '%1' logged the following warning: %2
+Microsoft-Windows-Time-Service	3	0	Event_3(UnicodeString TimeProvider, UnicodeString ErrorMessage)			task_0	Informational	System	The time provider '%1' logged the following message: %2
+Microsoft-Windows-Time-Service	4	0	Event_4(UnicodeString TimeProvider, UnicodeString ErrorMessage)			task_0	Error	System	The time provider '%1' failed to start due to the following error: %2
+Microsoft-Windows-Time-Service	5	0	Event_5(UnicodeString TimeProvider, UnicodeString ErrorMessage)			task_0	Error	System	The time provider '%1' returned the following error during shutdown: %2
+Microsoft-Windows-Time-Service	6	0	Event_6(UnicodeString ErrorMessage)			task_0	Warning	System	The time service encountered an error while reading its configuration from the registry, and will continue running with its previous configuration. The error was: %1
+Microsoft-Windows-Time-Service	7	0	Event_7(UnicodeString TimeProvider, UnicodeString ErrorMessage)			task_0	Warning	System	The time provider '%1' returned an error while updating its configuration. The error will be ignored. The error was: %2
+Microsoft-Windows-Time-Service	8	0	Event_8(UnicodeString TimeProvider, UnicodeString ErrorMessage)			task_0	Warning	System	The time provider '%1' returned an error when notified of a polling interval change. The error will be ignored. The error was: %2
+Microsoft-Windows-Time-Service	9	0	Event_9(UnicodeString TimeProvider, UnicodeString ErrorMessage)			task_0	Warning	System	The time provider '%1' returned an error when notified of a time jump. The error will be ignored. The error was: %2
+Microsoft-Windows-Time-Service	10	0	Event_10(UnicodeString TimeProvider, UnicodeString ErrorMessage)			task_0	Warning	System	The time provider '%1' returned an error when asked for time samples. The error will be ignored. The error was: %2
+Microsoft-Windows-Time-Service	11	0	Event_11()			task_0	Warning	System	Time Provider NtpClient: This machine is configured to use the domain hierarchy to determine its time source, but it is not a member of a domain. NtpClient will attempt to use an alternate configured external time source if available. If an external time source is not configured or used for this computer, you may choose to disable the NtpClient.
+Microsoft-Windows-Time-Service	12	0	Event_12()			task_0	Warning	System	Time Provider NtpClient: This machine is configured to use the domain hierarchy to determine its time source, but it is the AD PDC emulator for the domain at the root of the forest, so there is no machine above it in the domain hierarchy to use as a time source. It is recommended that you either configure a reliable time service in the root domain, or manually configure the AD PDC to synchronize with an external time source. Otherwise, this machine will function as the authoritative time source in the domain hierarchy. If an external time source is not configured or used for this computer, you may choose to disable the NtpClient.
+Microsoft-Windows-Time-Service	13	0	Event_13()			task_0	Warning	System	Time Provider NtpClient: This machine is configured to use the domain hierarchy to determine its time source, but the computer is joined to a Windows NT 4.0 domain. Windows NT 4.0 domain controllers do not have a time service and do not support domain hierarchy as a time source. NtpClient will attempt to use an alternate configured external time source if available. If an external time source is not configured or used for this computer, you may choose to disable the NtpClient.
+Microsoft-Windows-Time-Service	14	0	Event_14(UnicodeString RetryMinutes)			task_0	Warning	System	The time provider NtpClient was unable to find a domain controller to use as a time source. NtpClient will try again in %1 minutes.
+Microsoft-Windows-Time-Service	15	0	Event_15(UnicodeString ErrorMessage)			task_0	Warning	System	The time provider NtpClient was unable to find a domain controller to use as a time source.  NtpClient will fall back to the remaining configured time sources, if any are available. The error was: %1
+Microsoft-Windows-Time-Service	16	0	Event_16(UnicodeString ManualPeer, UnicodeString ErrorMessage)			task_0	Warning	System	Time Provider NtpClient: An unexpected error occurred during DNS lookup of the manually configured peer '%1'. This peer will not be used as a time source. The error was: %2
+Microsoft-Windows-Time-Service	17	0	Event_17(UnicodeString ManualPeer, UnicodeString ErrorMessage, UnicodeString RetryMinutes)			task_0	Warning	System	Time Provider NtpClient: An error occurred during DNS lookup of the manually configured peer '%1'. NtpClient will try the DNS lookup again in %3 minutes. The error was: %2
+Microsoft-Windows-Time-Service	18	0	Event_18(UnicodeString Domain, UnicodeString ErrorMessage, UnicodeString RetryMinutes)			task_0	Warning	System	The time provider NtpClient failed to establish a trust relationship between this computer and the %1 domain in order to securely synchronize time. NtpClient will try again in %3 minutes. The error was: %2
+Microsoft-Windows-Time-Service	19	0	Event_19(UnicodeString LogFile, UnicodeString ErrorMessage)			task_0	Error	System	Logging was requested, but the time service encountered an error while trying to set up the log file: %1. The error was: %2. Please make sure that 'Local Service' has permission to write to the file or directory.
+Microsoft-Windows-Time-Service	20	0	Event_20(UnicodeString LogFile, UnicodeString ErrorMessage)			task_0	Error	System	Logging was requested, but the time service encountered an error while trying to write to the log file: %1. The error was: %2
+Microsoft-Windows-Time-Service	21	0	Event_21()			task_0	Error	System	The time service is configured to use one or more input providers, however, none of the input providers are available. The time service has no source of accurate time.
+Microsoft-Windows-Time-Service	22	0	Event_22(UnicodeString Peer, UnicodeString ErrorMessage)			task_0	Warning	System	The time provider NtpServer encountered an error while digitally signing the NTP response for peer %1. NtpServer cannot provide secure (signed) time to the client and will ignore the request. The error was: %2
+Microsoft-Windows-Time-Service	23	0	Event_23(UnicodeString Peer, UnicodeString ErrorMessage)			task_0	Warning	System	The time provider NtpServer encountered an error while digitally signing the NTP response for symmetric peer %1. NtpServer cannot provide secure (signed) time to the peer and will not send a packet. The error was: %2
+Microsoft-Windows-Time-Service	24	0	Event_24(UnicodeString DomainPeer, UnicodeString ErrorMessage)			task_0	Warning	System	Time Provider NtpClient: No valid response has been received from domain controller %1 after 8 attempts to contact it. This domain controller will be discarded as a time source and NtpClient will attempt to discover a new domain controller from which to synchronize. The error was: %2
+Microsoft-Windows-Time-Service	25	0	Event_25(UnicodeString DomainPeer, UnicodeString ErrorMessage)			task_0	Warning	System	The time provider NtpClient cannot determine whether the response received from %1 has  a valid signature. The response will be ignored. The error was: %2
+Microsoft-Windows-Time-Service	26	0	Event_26(UnicodeString DomainPeer)			task_0	Warning	System	Time Provider NtpClient: The response received from domain controller %1 has a bad signature. The response may have been tampered with and will be ignored.
+Microsoft-Windows-Time-Service	27	0	Event_27(UnicodeString DomainPeer)			task_0	Warning	System	Time Provider NtpClient: The response received from domain controller %1 is missing the signature. The response may have been tampered with and will be ignored.
+Microsoft-Windows-Time-Service	28	0	Event_28()			task_0	Warning	System	The time provider NtpClient is configured to acquire time from one or more time sources, however none of the sources are accessible. NtpClient has no source of accurate time.
+Microsoft-Windows-Time-Service	29	0	Event_29(UnicodeString RetryMinutes)			task_0	Warning	System	The time provider NtpClient is configured to acquire time from one or more time sources, however none of the sources are currently accessible. No attempt to contact a source will be made for %1 minutes. NtpClient has no source of accurate time.
+Microsoft-Windows-Time-Service	30	0	Event_30(UnicodeString ErrorMessage)			task_0	Warning	System	The time service encountered an error while reading its configuration from the registry and cannot start. The error was: %1
+Microsoft-Windows-Time-Service	31	0	Event_31()			task_0	Warning	System	The time service discovered that the system time zone information was corrupted. Because many system components require valid time zone information, the time service has reset the system time zone to GMT. Use the Date/Time control panel to set the correct time zone.
+Microsoft-Windows-Time-Service	32	0	Event_32(UnicodeString ErrorMessage)			task_0	Warning	System	The time service discovered that the system time zone information was corrupted. The time service tried to reset the system time zone to GMT, but failed. The time service cannot start. The error was: %1
+Microsoft-Windows-Time-Service	33	0	Event_33(UnicodeString SystemTimeChangeSeconds)			task_0	Warning	System	The time service has jumped the local system clock by %1 seconds. This occurs when the time source and local system time are far enough apart that clock rate adjustments cannot be made to reach the time specified by the time source.
+Microsoft-Windows-Time-Service	34	0	Event_34(Int64 SystemTimeChangeSeconds, UInt32 MaxSystemTimeChangeSeconds, UnicodeString TimeSource)			task_0	Error	System	The time service has detected that the system time needs to be  changed by %1 seconds. The time service will not change the system time by more than %2 seconds. Verify that your time and time zone are correct, and that the time source %3 is working properly.
+Microsoft-Windows-Time-Service	35	0	Event_35(UnicodeString TimeSource)			task_0	Informational	System	The time service is now synchronizing the system time with the time source %1.
+Microsoft-Windows-Time-Service	36	0	Event_36(UInt32 UnsynchronizedTimeSeconds)			task_0	Warning	System	The time service has not synchronized the system time for %1 seconds because none of the time service providers provided a usable time stamp. The time service will not update the local system time until it is able to synchronize with a time source. If the local system is configured to act as a time server for clients, it will stop advertising as a time source to clients. The time service will continue to retry and sync time with its time sources. Check system event log for other W32time events for more details. Run 'w32tm /resync' to force an instant time synchronization.
+Microsoft-Windows-Time-Service	37	0	Event_37(UnicodeString TimeSource)			task_0	Informational	System	The time provider NtpClient is currently receiving valid time data from %1.
+Microsoft-Windows-Time-Service	38	0	Event_38(UnicodeString TimeSource)			task_0	Warning	System	The time provider NtpClient has not received response from server %1.
+Microsoft-Windows-Time-Service	39	0	Event_39()			task_0	Warning	System	The time service is unable to register for network configuration change events. This may occur when TCP/IP is not correctly configured. The time service will be unable to sync time from network providers, but will still use locally installed hardware provdiers, if any are available.
+Microsoft-Windows-Time-Service	40	0	Event_40(UnicodeString TimeProvider, UnicodeString ErrorMessage)			task_0	Warning	System	The time provider '%1' was stopped with error %2.
+Microsoft-Windows-Time-Service	41	0	Event_41()			task_0	Warning	System	The time service has been configured to use one or more input providers, however, none of the input providers are still running. The time service has no source of accurate time.
+Microsoft-Windows-Time-Service	42	0	Event_42()			task_0	Error	System	The time service attempted to create a named event which was already opened. This could be the result of an attempt to compromise your system's security.
+Microsoft-Windows-Time-Service	43	0	Event_43(UnicodeString TimeProvider, UnicodeString ErrorMessage)			task_0	Warning	System	The time provider '%1' returned an error when notified of a network configuration change. The error will be ignored. The error was: %2
+Microsoft-Windows-Time-Service	44	0	Event_44(UnicodeString ErrorMessage)			task_0	Error	System	The time provider NtpClient encountered an error and was forced to shut down. The error was: %1
+Microsoft-Windows-Time-Service	45	0	Event_45(UnicodeString ErrorMessage)			task_0	Error	System	The time provider NtpServer encountered an error and was forced to shut down. The error was: %1
+Microsoft-Windows-Time-Service	46	0	Event_46(UnicodeString ErrorMessage)			task_0	Error	System	The time service encountered an error and was forced to shut down. The error was: %1
+Microsoft-Windows-Time-Service	47	0	Event_47(UnicodeString ManualPeer, UnicodeString ErrorMessage)			task_0	Warning	System	Time Provider NtpClient: No valid response has been received from manually configured peer %1 after 8 attempts to contact it. This peer will be discarded as a time source and NtpClient will attempt to discover a new peer with this DNS name. The error was: %2
+Microsoft-Windows-Time-Service	48	0	Event_48(UnicodeString ManualPeer, UnicodeString ErrorMessage, UInt32 RetryMinutes)			task_0	Warning	System	Time Provider NtpClient: An error occurred during DNS lookup of the manually configured peer '%1'. NtpClient will continue to try the DNS lookup every %3 minutes. This message will not be logged again until a successful lookup of this manually configured peer occurs. The error was: %2
+Microsoft-Windows-Time-Service	49	0	Event_49(UnicodeString ErrorMessage)			task_0	Warning	System	The time provider NtpClient was unable to find a domain controller to use as a time source. NtpClient will continue trying to locate an AD DC every %1 minutes. This message will not be logged again until after a domain controller is found.
+Microsoft-Windows-Time-Service	50	0	Event_50(UInt32 TimeDifferenceMilliseconds, UInt32 TimeSampleSeconds)			task_0	Warning	System	The time service detected a time difference of greater than %1 milliseconds for %2 seconds. The time difference might be caused by synchronization with low-accuracy time sources or by suboptimal network conditions. The time service is no longer synchronized and cannot provide the time to other clients or update the system clock. When a valid time stamp is received from a time service provider, the time service will correct itself.
+Microsoft-Windows-Time-Service	51	0	Event_51(UnicodeString Peer, UnicodeString TimeDifferenceSeconds, UInt32 TransmissionDelayMilliseconds)			task_0	Warning	System	Time Provider NtpClient: The time sample received from peer %1 differs from the local time by %2 seconds. The observed transmission delay from the server was %3 milliseconds.
+Microsoft-Windows-Time-Service	52	0	Event_52(Int64 TimeOffsetSeconds)			task_0	Warning	System	The time service has set the time with offset %1 seconds.
+Microsoft-Windows-Time-Service	53	0	Event_53(UnicodeString Peer)			task_0	Warning	System	The time provider NtpClient fails sending request to server %1.
+Microsoft-Windows-Time-Service	54	0	Event_54(UnicodeString ErrorMessage)			task_0	Error	System	The time service encountered an error while refreshing its configuration in the registry and cannot start. The error was: %1
+Microsoft-Windows-Time-Service	129	0	Event_129(UnicodeString ErrorMessage, UInt32 RetryMinutes)			task_0	Warning	System	NtpClient was unable to set a domain peer to use as a time source because of discovery error. NtpClient will try again in %2 minutes and double the reattempt interval thereafter. The error was: %1
+Microsoft-Windows-Time-Service	130	0	Event_130(UnicodeString ErrorMessage, UInt32 RetryMinutes, UnicodeString DomainPeer)			task_0	Warning	System	NtpClient was unable to set a domain peer to use as a time source because of failure in establishing  a trust relationship between this computer and the '%3' domain in order to securely synchronize time. NtpClient will try again in %2 minutes and double the reattempt interval thereafter. The error was: %1
+Microsoft-Windows-Time-Service	131	0	Event_131(UnicodeString ErrorMessage, UInt32 RetryMinutes, UnicodeString DomainPeer)			task_0	Warning	System	NtpClient was unable to set a domain peer to use as a time source because of DNS resolution error on '%3'. NtpClient will try again in %2 minutes and double the reattempt interval thereafter. The error was: %1.
+Microsoft-Windows-Time-Service	132	0	Event_132(UnicodeString ErrorMessage, UInt32 RetryMinutes, UnicodeString DomainPeer, UnicodeString TimeSource)			task_0	Warning	System	NtpClient was unable to set a domain peer to use as a time source because of duplicate error on '%3'.  The same time source '%4' has been specified as manual peer in NtpServer. NtpClient will try again in %2 minutes and double the reattempt interval thereafter. The error was: %1
+Microsoft-Windows-Time-Service	133	0	Event_133(UnicodeString ErrorMessage, UInt32 RetryMinutes)			task_0	Warning	System	NtpClient was unable to set a domain peer to use a time source because of an unexpected error.  NtpClient will try again in %2 minutes and double the reattempt interval thereafter. The error was: %1
+Microsoft-Windows-Time-Service	134	0	Event_134(UnicodeString ErrorMessage, UInt32 RetryMinutes, UnicodeString DomainPeer)			task_0	Warning	System	NtpClient was unable to set a manual peer to use as a time source because of DNS resolution error on '%3'. NtpClient will try again in %2 minutes and double the reattempt interval thereafter. The error was: %1
+Microsoft-Windows-Time-Service	135	0	Event_135(UnicodeString ErrorMessage, UInt32 RetryMinutes, UnicodeString DomainPeer, UnicodeString TimeSource)			task_0	Warning	System	NtpClient was unable to set a manual peer to use as a time source because of duplicate error on '%3'. The same time source '%4' has been either specified as manual peer in NtpServer or selected as domain peer.  NtpClient will try again in %2 minutes and double the reattempt interval thereafter. The error was: %1
+Microsoft-Windows-Time-Service	136	0	Event_136(UnicodeString ErrorMessage, UInt32 RetryMinutes)			task_0	Warning	System	NtpClient was unable to set a manual peer to use as a time source because of an unexpected error. NtpClient will try again in %2 minutes and double the reattempt interval thereafter. The error was: %1
+Microsoft-Windows-Time-Service	137	0	Event_137(UnicodeString ManualPeer)			task_0	Informational	System	NtpClient succeeds in resolving manual peer %1 after a previous failure.
+Microsoft-Windows-Time-Service	138	0	Event_138(UnicodeString DomainPeer)			task_0	Informational	System	NtpClient succeeds in resolving domain peer %1 after a previous failure.
+Microsoft-Windows-Time-Service	139	0	Event_139()			task_0	Informational	System	The time service has started advertising as a time source.
+Microsoft-Windows-Time-Service	140	0	Event_140()			task_0	Warning	System	The time service has stopped advertising as a time source because the local machine is not an Active Directory Domain Controller.
+Microsoft-Windows-Time-Service	141	0	Event_141()			task_0	Warning	System	The time service has stopped advertising as a time source because there are no providers running.
+Microsoft-Windows-Time-Service	142	0	Event_142()			task_0	Warning	System	The time service has stopped advertising as a time source because the local clock is not synchronized.
+Microsoft-Windows-Time-Service	143	0	Event_143()			task_0	Informational	System	The time service has started advertising as a good time source.
+Microsoft-Windows-Time-Service	144	0	Event_144()			task_0	Warning	System	The time service has stopped advertising as a good time source.
+Microsoft-Windows-Time-Service	145	0	Event_145()			task_0	Warning	System	The time service has stopped advertising as a time source.
+Microsoft-Windows-Time-Service	146	0	Event_146(UInt32 ChainingCountRequests, UInt32 ChainLoggingRate, UInt32 ChainingCountSuccess, UInt32 ChainingCountFailure)			task_0	Informational	System	The RODC has received %1 requests in the previous %2 minutes. %3 have resulted in success, and %4 have resulted in failure.
+Microsoft-Windows-Time-Service	147	0	Event_147()			task_0	Always		The time sample was rejected because: Duplicate timestamps were received from this peer.
+Microsoft-Windows-Time-Service	148	0	Event_148()			task_0	Always		The time sample was rejected because: Message was received out-of-order.
+Microsoft-Windows-Time-Service	149	0	Event_149()			task_0	Always		The time sample was rejected because: The peer is not synchronized, or reachability has been lost in one, or both, directions. This may also indicate that the peer has incorrectly sent an NTP request instead of an NTP response.
+Microsoft-Windows-Time-Service	150	0	Event_150()			task_0	Always		The time sample was rejected because: Round-trip delay too large.
+Microsoft-Windows-Time-Service	151	0	Event_151()			task_0	Always		The time sample was rejected because: Packet not authenticated.
+Microsoft-Windows-Time-Service	152	0	Event_152()			task_0	Always		The time sample was rejected because: The peer is not synchronized, or it has been too long since the peer's last synchronization.
+Microsoft-Windows-Time-Service	153	0	Event_153()			task_0	Always		The time sample was rejected because: The peer's stratum is less than the host's stratum.
+Microsoft-Windows-Time-Service	154	0	Event_154()			task_0	Always		The time sample was rejected because: Packet contains unreasonable root delay or root dispersion values. This may be caused by poor network conditions.
+Microsoft-Windows-Time-Service	156	0	Event_156(UInt32 ClientRID, UnicodeString DomainPeer)			task_0	Warning	System	The RODC was unable to forward a time sync request from client RID %1 because the client's RID value is too large and the domain peer (%2) does not support the uplevel timesync authentication format.
+Microsoft-Windows-Time-Service	157	0	Event_157(UnicodeString ClientAddress)			task_0	Warning	System	The time provider NtpServer received a request from a client (%1) using a legacy protocol format. The request has been ignored per the RequireSecureTimeSyncRequests policy setting. By default, this message will be logged only once per day per unique client address.
+Microsoft-Windows-Time-Service	158	0	Event_158(UnicodeString TimeProvider)			task_0	Informational	System	The time provider '%1' has indicated that the current hardware and operating environment is not supported and has stopped. This behavior is expected for VMICTimeProvider on non-HyperV-guest environments. This may be the expected behavior for the current provider in the current operating environment as well.

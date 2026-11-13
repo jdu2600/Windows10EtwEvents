@@ -1,4 +1,4 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-LanGPA	14001	0	task_0(UInt32 PolicyType, UnicodeString PolicyName, UInt32 PolicyNamePlaceholder, UInt32 AutoConfigEnabled, UInt32 Profileapplied, UInt32 ReasonCode)			task_0	Informational		
-Microsoft-Windows-LanGPA	14002	0	task_014002()			task_0	Informational		
-Microsoft-Windows-LanGPA	14003	0	task_014003(UInt32 PolicyType, UnicodeString PolicyName, UnicodeString PolicyNamePlaceholder, UInt32 ReasonCode)			task_0	Informational		
+Microsoft-Windows-LanGPA	14001	0	Event_14001(UInt32 PolicyType, UnicodeString PolicyName, UInt32 PolicyNamePlaceholder, UInt32 AutoConfigEnabled, UInt32 Profileapplied, UInt32 ReasonCode)			task_0	Informational	Microsoft-Windows-Wired-AutoConfig/Operational	A %1 Wired Group Policy was applied to your computer.\r\n\r\nWired Group Policy Name: %2%3\r\nApplied settings:\r\n\tAutoConfig Enabled: %4\r\nWired Group Policy Summary\r\n\tProfile applied:   %5\r\n\tReason Code:   %6
+Microsoft-Windows-LanGPA	14002	0	Event_14002()			task_0	Informational	Microsoft-Windows-Wired-AutoConfig/Operational	Wired Group Policy has been removed from your computer.
+Microsoft-Windows-LanGPA	14003	0	Event_14003(UInt32 PolicyType, UnicodeString PolicyName, UnicodeString PolicyNamePlaceholder, UInt32 ReasonCode)			task_0	Informational	Microsoft-Windows-Wired-AutoConfig/Operational	A %1 Wired Group Policy couldn't be applied to your computer.\r\n\r\nWired Group Policy Name: %2%3\r\nReason Code: %4

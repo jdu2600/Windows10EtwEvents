@@ -100,8 +100,6 @@ Microsoft-IEFRAME	104	0	Frame_TravelBandCreateStart()	Start	primarynav	Frame_Tra
 Microsoft-IEFRAME	105	0	Frame_TravelBandCreateStop()	Stop	primarynav	Frame_TravelBandCreate	Always		
 Microsoft-IEFRAME	106	0	Frame_AddressBandCreateStart()	Start	primarynav	Frame_AddressBandCreate	Always		
 Microsoft-IEFRAME	107	0	Frame_AddressBandCreateStop()	Stop	primarynav	Frame_AddressBandCreate	Always		
-Microsoft-IEFRAME	108	0	Frame_SearchBandCreateStart()	Start	primarynav	Frame_SearchBandCreate	Always		
-Microsoft-IEFRAME	109	0	Frame_SearchBandCreateStop()	Stop	primarynav	Frame_SearchBandCreate	Always		
 Microsoft-IEFRAME	110	0	Frame_LoadFrameStateStart()	Start	primarynav	Frame_LoadFrameState	Always		
 Microsoft-IEFRAME	111	0	Frame_LoadFrameStateStop()	Stop	primarynav	Frame_LoadFrameState	Always		
 Microsoft-IEFRAME	112	0	Frame_Show()		primarynav	Frame_Show	Always		
@@ -254,16 +252,16 @@ Microsoft-IEFRAME	360	0	RehydrateTabStart()	Start	tabhydration	RehydrateTab	Alwa
 Microsoft-IEFRAME	361	0	RehydrateTabStop()	Stop	tabhydration	RehydrateTab	Always		
 Microsoft-IEFRAME	362	0	GetHalfTabDataStart()	Start	tabhydration	GetHalfTabData	Always		
 Microsoft-IEFRAME	363	0	GetHalfTabDataStop()	Stop	tabhydration	GetHalfTabData	Always		
-Microsoft-IEFRAME	386	0	InputPanelShowStart()	Start	immersive	InputPanelShow	Informational		
-Microsoft-IEFRAME	387	0	InputPanelShowStop()	Stop	immersive	InputPanelShow	Informational		
-Microsoft-IEFRAME	388	0	InputPanelHideStart()	Start	immersive	InputPanelHide	Informational		
-Microsoft-IEFRAME	389	0	InputPanelHideStop()	Stop	immersive	InputPanelHide	Informational		
-Microsoft-IEFRAME	391	0	InputPanelResizeStart()	Start	immersive	InputPanelResize	Informational		
-Microsoft-IEFRAME	392	0	InputPanelResizeStop()	Stop	immersive	InputPanelResize	Informational		
-Microsoft-IEFRAME	395	0	BrowserFrame_AddTab_WaitForActivationKindStart()	Start		BrowserFrame_AddTab_WaitForActivationKind	Informational		
-Microsoft-IEFRAME	396	0	BrowserFrame_AddTab_WaitForActivationKindStop()	Stop		BrowserFrame_AddTab_WaitForActivationKind	Informational		
-Microsoft-IEFRAME	397	0	Tab_ShellBrowser_OnBeforeUnload(UInt32 TabID)		primarynav	Tab_ShellBrowser_OnBeforeUnload	Informational		
-Microsoft-IEFRAME	398	0	Tab_ShellBrowser_OnUnload(UInt32 TabID)		primarynav	Tab_ShellBrowser_OnUnload	Informational		
+Microsoft-IEFRAME	386	0	InputPanelShowStart()	Start	immersive	InputPanelShow	Informational	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	387	0	InputPanelShowStop()	Stop	immersive	InputPanelShow	Informational	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	388	0	InputPanelHideStart()	Start	immersive	InputPanelHide	Informational	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	389	0	InputPanelHideStop()	Stop	immersive	InputPanelHide	Informational	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	391	0	InputPanelResizeStart()	Start	immersive	InputPanelResize	Informational	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	392	0	InputPanelResizeStop()	Stop	immersive	InputPanelResize	Informational	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	395	0	BrowserFrame_AddTab_WaitForActivationKindStart()	Start		BrowserFrame_AddTab_WaitForActivationKind	Informational	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	396	0	BrowserFrame_AddTab_WaitForActivationKindStop()	Stop		BrowserFrame_AddTab_WaitForActivationKind	Informational	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	397	0	Tab_ShellBrowser_OnBeforeUnload(UInt32 TabID)		primarynav	Tab_ShellBrowser_OnBeforeUnload	Informational	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	398	0	Tab_ShellBrowser_OnUnload(UInt32 TabID)		primarynav	Tab_ShellBrowser_OnUnload	Informational	Microsoft-IEFRAME/Diagnostic	
 Microsoft-IEFRAME	403	0	Browseui_HangUIStart()	Start	hang	Browseui_HangUI	Always		
 Microsoft-IEFRAME	404	0	Browseui_HangUIStop()	Stop	hang	Browseui_HangUI	Always		
 Microsoft-IEFRAME	405	0	Browseui_HangUI_CreateCoverWindow(UInt32 TabID, UInt32 HRESULT)		hang	Browseui_HangUI_CreateCoverWindow	Always		
@@ -290,8 +288,8 @@ Microsoft-IEFRAME	425	0	ImageStore_Activity_SingleImage(UInt32 PID, UnicodeStrin
 Microsoft-IEFRAME	426	0	ImageStore_Activity_ImageTotal(UInt32 PID, UnicodeString ActivityType, UnicodeString ImageKey, UInt32 TotalNumber)		imagestore	ImageStore_Activity_ImageTotal	Always		
 Microsoft-IEFRAME	427	0	Browseui_TabSuspension_Suspend(UInt32 PID, Boolean Suspending, UInt32 ResumeReason)		tabhydration	Browseui_TabSuspension_Suspend	Always		
 Microsoft-IEFRAME	428	0	Browseui_TabSuspension_Unuspend(UInt32 PID, Boolean Suspending, UInt32 ResumeReason)		tabhydration	Browseui_TabSuspension_Unuspend	Always		
-Microsoft-IEFRAME	429	0	Iso_Dependencies_AddDependency(UInt32 Target, UInt32 TargetPID, UInt32 Dependent, UInt32 DependentPID, UInt32 Flags, UInt32 Reason)		tabhydration	Iso_Dependencies_AddDependency	Always		
-Microsoft-IEFRAME	430	0	Iso_Dependencies_RemoveDependency(UInt32 Target, UInt32 TargetPID, UInt32 Dependent, UInt32 DependentPID, UInt32 Flags, UInt32 Reason)		tabhydration	Iso_Dependencies_RemoveDependency	Always		
+Microsoft-IEFRAME	429	0	Iso_Dependencies_AddDependency(UInt32 Target, UInt32 TargetPID, UInt32 Dependent, UInt32 DependentPID, UInt32 Flags)		tabhydration	Iso_Dependencies_AddDependency	Always		
+Microsoft-IEFRAME	430	0	Iso_Dependencies_RemoveDependency(UInt32 Target, UInt32 TargetPID, UInt32 Dependent, UInt32 DependentPID, UInt32 Flags)		tabhydration	Iso_Dependencies_RemoveDependency	Always		
 Microsoft-IEFRAME	431	0	DataModel_QueryEntry(UInt32 QueryID)		primarynav	DataModel_QueryEntry	Always		
 Microsoft-IEFRAME	432	0	Bing_Suggestions_ServiceRequest(UInt32 QueryID)		bingsuggestions	Bing_Suggestions_ServiceRequest	Always		
 Microsoft-IEFRAME	433	0	Bing_Suggestions_ServiceResponse(UInt32 QueryID)		bingsuggestions	Bing_Suggestions_ServiceResponse	Always		
@@ -349,7 +347,7 @@ Microsoft-IEFRAME	529	0	IntelliForms_Do_AutoStuffStop()	Stop	primarynav	IntelliF
 Microsoft-IEFRAME	532	0	DownloadWindow_Item_Added()		DownloadWindow	DownloadWindow_Item_Added	Always		
 Microsoft-IEFRAME	533	0	DownloadWindow_Items_Removed(UInt32 Uint32Val)		DownloadWindow	DownloadWindow_Items_Removed	Always		
 Microsoft-IEFRAME	534	0	Browseui_Prerender_Closing_Prerendered_Page(UnicodeString PrerenderURL)		mshtml	Browseui_Prerender_Closing_Prerendered_Page	Informational		
-Microsoft-IEFRAME	535	0	DominantImageClassifier(UInt32 Count, UnicodeString DominantImageUrl1, UnicodeString DominantImageUrl2, UnicodeString DominantImageUrl3, UnicodeString DominantImageUrl4)		DIC immersive	DominantImageClassifier	Informational		
+Microsoft-IEFRAME	535	0	DominantImageClassifier(UInt32 Count, UnicodeString DominantImageUrl1, UnicodeString DominantImageUrl2, UnicodeString DominantImageUrl3, UnicodeString DominantImageUrl4)		DIC immersive	DominantImageClassifier	Informational	Microsoft-IEFRAME/Diagnostic	
 Microsoft-IEFRAME	536	0	TravelLogScreenshotNav_OldTab_ReadyToClose()		TravelLogScreenshotNav	TravelLogScreenshotNav_OldTab_ReadyToClose	Always		
 Microsoft-IEFRAME	537	0	TravelLogScreenshotNav_OldTab_WantsToCancelSwitch()		TravelLogScreenshotNav	TravelLogScreenshotNav_OldTab_WantsToCancelSwitch	Always		
 Microsoft-IEFRAME	538	0	TravelLogScreenshotNav_OldTab_CancelingSwitch()		TravelLogScreenshotNav	TravelLogScreenshotNav_OldTab_CancelingSwitch	Always		
@@ -364,19 +362,19 @@ Microsoft-IEFRAME	546	0	TravelLogScreenshotNav_NewTab_ShowingAllScreenshotsOnSwi
 Microsoft-IEFRAME	547	0	Tab_BFCache_Suspend()		BFCache	Tab_BFCache_Suspend	Always		
 Microsoft-IEFRAME	550	0	LCIEDownloader_CreateIsoComponent(UInt32 ComponentType, UInt32 PID, UInt32 TID)		LCIEDownloader	LCIEDownloader_CreateIsoComponent	Always		
 Microsoft-IEFRAME	551	0	LCIEDownloader_CreateIsoComponent551(UInt32 ComponentType, UInt32 PID, UInt32 TID)		LCIEDownloader	LCIEDownloader_CreateIsoComponent	Always		
-Microsoft-IEFRAME	552	0	PinnedSites_OfferedImage(UnicodeString ImageUrl, UInt32 ImageType, UInt32 DIType, UInt32 DIConfidence, UInt32 TileSize)			PinnedSites_OfferedImage	Verbose		
-Microsoft-IEFRAME	553	0	PinnedSites_OfferedImagesComplete()			PinnedSites_OfferedImagesComplete	Verbose		
+Microsoft-IEFRAME	552	0	PinnedSites_OfferedImage(UnicodeString ImageUrl, UInt32 ImageType, UInt32 DIType, UInt32 DIConfidence, UInt32 TileSize)			PinnedSites_OfferedImage	Verbose	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	553	0	PinnedSites_OfferedImagesComplete()			PinnedSites_OfferedImagesComplete	Verbose	Microsoft-IEFRAME/Diagnostic	
 Microsoft-IEFRAME	554	0	TabRoaming_DeleteInvalidOrExpiredTabFile()		roaming	TabRoaming_DeleteInvalidOrExpiredTabFile	Always		
 Microsoft-IEFRAME	555	0	TabRoaming_KeepTabInDirtyList(GUID TabId)		roaming	TabRoaming_KeepTabInDirtyList	Always		
-Microsoft-IEFRAME	556	0	Browseui_PrepareVisibleAsyncStart(Boolean NotifyFrame, UInt32 Result)	Start		Browseui_PrepareVisibleAsync	Always		
-Microsoft-IEFRAME	557	0	Browseui_PrepareVisibleAsyncStop(Boolean NotifyFrame, UInt32 Result)	Stop		Browseui_PrepareVisibleAsync	Always		
-Microsoft-IEFRAME	558	0	Browseui_OnPrepareVisibleCompleteStart(Int32 TabID, Int32 SelectTabAsyncTabID, UInt32 SelectTabAsyncFlags, UInt32 Result)	Start		Browseui_OnPrepareVisibleComplete	Always		
-Microsoft-IEFRAME	559	0	Browseui_OnPrepareVisibleCompleteStop(Int32 TabID, Int32 SelectTabAsyncTabID, UInt32 SelectTabAsyncFlags, UInt32 Result)	Stop		Browseui_OnPrepareVisibleComplete	Always		
-Microsoft-IEFRAME	560	0	Browseui_SelectTabTimerCreated(Int32 SelectTabAsyncTabID, UInt32 SelectTabAsyncFlags)			Browseui_SelectTabTimerCreated	Always		
-Microsoft-IEFRAME	561	0	Browseui_SelectTabTimerTriggered()			Browseui_SelectTabTimerTriggered	Always		
-Microsoft-IEFRAME	562	0	Browseui_SelectTabTimerCancelled(Int32 SelectTabAsyncTabID, UInt32 SelectTabAsyncFlags)			Browseui_SelectTabTimerCancelled	Always		
-Microsoft-IEFRAME	563	0	Browseui_TabWindow_SetVisibleStart(Int32 TabID, Boolean NewVisibleState, Boolean CurrentVisibleState, Boolean IsTabSwitch, Boolean IsHung)	Start		Browseui_TabWindow_SetVisible	Always		
-Microsoft-IEFRAME	564	0	Browseui_TabWindow_SetVisibleStop(Int32 TabID, Boolean NewVisibleState, Boolean CurrentVisibleState, Boolean IsTabSwitch, Boolean IsHung)	Stop		Browseui_TabWindow_SetVisible	Always		
+Microsoft-IEFRAME	556	0	Browseui_PrepareVisibleAsyncStart(Boolean NotifyFrame, UInt32 Result)	Start		Browseui_PrepareVisibleAsync	Always	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	557	0	Browseui_PrepareVisibleAsyncStop(Boolean NotifyFrame, UInt32 Result)	Stop		Browseui_PrepareVisibleAsync	Always	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	558	0	Browseui_OnPrepareVisibleCompleteStart(Int32 TabID, Int32 SelectTabAsyncTabID, UInt32 SelectTabAsyncFlags, UInt32 Result)	Start		Browseui_OnPrepareVisibleComplete	Always	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	559	0	Browseui_OnPrepareVisibleCompleteStop(Int32 TabID, Int32 SelectTabAsyncTabID, UInt32 SelectTabAsyncFlags, UInt32 Result)	Stop		Browseui_OnPrepareVisibleComplete	Always	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	560	0	Browseui_SelectTabTimerCreated(Int32 SelectTabAsyncTabID, UInt32 SelectTabAsyncFlags)			Browseui_SelectTabTimerCreated	Always	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	561	0	Browseui_SelectTabTimerTriggered()			Browseui_SelectTabTimerTriggered	Always	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	562	0	Browseui_SelectTabTimerCancelled(Int32 SelectTabAsyncTabID, UInt32 SelectTabAsyncFlags)			Browseui_SelectTabTimerCancelled	Always	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	563	0	Browseui_TabWindow_SetVisibleStart(Int32 TabID, Boolean NewVisibleState, Boolean CurrentVisibleState, Boolean IsTabSwitch, Boolean IsHung)	Start		Browseui_TabWindow_SetVisible	Always	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	564	0	Browseui_TabWindow_SetVisibleStop(Int32 TabID, Boolean NewVisibleState, Boolean CurrentVisibleState, Boolean IsTabSwitch, Boolean IsHung)	Stop		Browseui_TabWindow_SetVisible	Always	Microsoft-IEFRAME/Diagnostic	
 Microsoft-IEFRAME	565	0	IdleManager_AddIdleTask(UInt64 ISO_HANDLE, UInt32 IDLEMANAGER_TASKTYPE, UInt32 TaskID, UInt32 MaxWaitingTime, UInt32 MaxBlockingTime, UInt32 IDLETASK_PRIORITY)			IdleManager_AddIdleTask	Always		
 Microsoft-IEFRAME	566	0	IdleManager_AddRunningTask(UInt64 ISO_HANDLE, UInt32 IDLEMANAGER_TASKTYPE, UInt32 TaskID, UInt32 MaxWaitingTime, UInt32 MaxBlockingTime, UInt32 IDLETASK_PRIORITY)			IdleManager_AddRunningTask	Always		
 Microsoft-IEFRAME	567	0	IdleManager_RemoveTask(UInt64 ISO_HANDLE, UInt32 IDLEMANAGER_TASKTYPE, UInt32 TaskID, UInt32 MaxWaitingTime, UInt32 MaxBlockingTime, UInt32 IDLETASK_PRIORITY)			IdleManager_RemoveTask	Always		
@@ -392,20 +390,20 @@ Microsoft-IEFRAME	580	0	IE_Wer_Report_HangStop(Int32 TabID, Int32 ProcessID, Poi
 Microsoft-IEFRAME	581	0	Tab_Terminate_Process(Int32 TabID, Int32 ProcessID, Pointer HWND)		hang	Tab_Terminate_Process	Always		
 Microsoft-IEFRAME	582	0	Browseui_Tabs_Activity_Show(Int32 TabID, Int32 TabVisibleIndex)		primarynav	Browseui_Tabs_Activity_Show	Always		
 Microsoft-IEFRAME	583	0	Browseui_Tabs_Activity_Hide(Int32 TabID, Int32 TabVisibleIndex)		primarynav	Browseui_Tabs_Activity_Hide	Always		
-Microsoft-IEFRAME	584	0	Browseui_PrepareResizeAsyncStart(UInt32 Result)	Start		Browseui_PrepareResizeAsync	Always		
-Microsoft-IEFRAME	585	0	Browseui_PrepareResizeAsyncStop(UInt32 Result)	Stop		Browseui_PrepareResizeAsync	Always		
-Microsoft-IEFRAME	586	0	Immersive_Travellog_NavigationStart_TimeOut()		TravelLogScreenshotNav	Immersive_Travellog_NavigationStart_TimeOut	Informational		
-Microsoft-IEFRAME	587	0	Immersive_Travellog_NavigationComplete_TimeOut()		TravelLogScreenshotNav	Immersive_Travellog_NavigationComplete_TimeOut	Informational		
-Microsoft-IEFRAME	588	0	Immersive_Travellog_ScrollComplete_TimeOut()		TravelLogScreenshotNav	Immersive_Travellog_ScrollComplete_TimeOut	Informational		
-Microsoft-IEFRAME	589	0	Immersive_Travellog_ScrollComplete_Fired(Pointer BindContext)		TravelLogScreenshotNav	Immersive_Travellog_ScrollComplete_Fired	Informational		
-Microsoft-IEFRAME	590	0	Immersive_Travellog_PageAvailable_Fired(Pointer BindContext)		TravelLogScreenshotNav	Immersive_Travellog_PageAvailable_Fired	Informational		
-Microsoft-IEFRAME	591	0	Immersive_Travellog_BeforeUnload_Fired()		TravelLogScreenshotNav	Immersive_Travellog_BeforeUnload_Fired	Informational		
-Microsoft-IEFRAME	592	0	Browseui_BringBrowserTabAlternateOwnerForwardStart(Int32 TabID, Boolean IsActive, Pointer hwndAlternateOwner, Boolean fDestroyingHangUI, Pointer hwndNext, Pointer hwndPrev)	Start		Browseui_BringBrowserTabAlternateOwnerForward	Always		
-Microsoft-IEFRAME	593	0	Browseui_BringBrowserTabAlternateOwnerForwardStop(Int32 TabID, Boolean IsActive, Pointer hwndAlternateOwner, Boolean fDestroyingHangUI, Pointer hwndNext, Pointer hwndPrev)	Stop		Browseui_BringBrowserTabAlternateOwnerForward	Always		
-Microsoft-IEFRAME	594	0	Browseui_BringBrowserTabAlternateOwnerForward_Hung(UInt32 TabID)			Browseui_BringBrowserTabAlternateOwnerForward_Hung	Informational		
-Microsoft-IEFRAME	597	0	Browseui_DestroyDetachedBrowserTabUIStart(Int32 TabID, Boolean IsActive)	Start		Browseui_DestroyDetachedBrowserTabUI	Always		
-Microsoft-IEFRAME	598	0	Browseui_DestroyDetachedBrowserTabUIStop(Int32 TabID, Boolean IsActive)	Stop		Browseui_DestroyDetachedBrowserTabUI	Always		
-Microsoft-IEFRAME	599	0	Browseui_HungTabHeartBeat_Timer_Invisible(Int32 TabID, Boolean IsActive)			Browseui_HungTabHeartBeat_Timer_Invisible	Informational		
+Microsoft-IEFRAME	584	0	Browseui_PrepareResizeAsyncStart(UInt32 Result)	Start		Browseui_PrepareResizeAsync	Always	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	585	0	Browseui_PrepareResizeAsyncStop(UInt32 Result)	Stop		Browseui_PrepareResizeAsync	Always	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	586	0	Immersive_Travellog_NavigationStart_TimeOut()		TravelLogScreenshotNav	Immersive_Travellog_NavigationStart_TimeOut	Informational	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	587	0	Immersive_Travellog_NavigationComplete_TimeOut()		TravelLogScreenshotNav	Immersive_Travellog_NavigationComplete_TimeOut	Informational	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	588	0	Immersive_Travellog_ScrollComplete_TimeOut()		TravelLogScreenshotNav	Immersive_Travellog_ScrollComplete_TimeOut	Informational	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	589	0	Immersive_Travellog_ScrollComplete_Fired(Pointer BindContext)		TravelLogScreenshotNav	Immersive_Travellog_ScrollComplete_Fired	Informational	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	590	0	Immersive_Travellog_PageAvailable_Fired(Pointer BindContext)		TravelLogScreenshotNav	Immersive_Travellog_PageAvailable_Fired	Informational	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	591	0	Immersive_Travellog_BeforeUnload_Fired()		TravelLogScreenshotNav	Immersive_Travellog_BeforeUnload_Fired	Informational	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	592	0	Browseui_BringBrowserTabAlternateOwnerForwardStart(Int32 TabID, Boolean IsActive, Pointer hwndAlternateOwner, Boolean fDestroyingHangUI, Pointer hwndNext, Pointer hwndPrev)	Start		Browseui_BringBrowserTabAlternateOwnerForward	Always	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	593	0	Browseui_BringBrowserTabAlternateOwnerForwardStop(Int32 TabID, Boolean IsActive, Pointer hwndAlternateOwner, Boolean fDestroyingHangUI, Pointer hwndNext, Pointer hwndPrev)	Stop		Browseui_BringBrowserTabAlternateOwnerForward	Always	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	594	0	Browseui_BringBrowserTabAlternateOwnerForward_Hung(UInt32 TabID)			Browseui_BringBrowserTabAlternateOwnerForward_Hung	Informational	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	597	0	Browseui_DestroyDetachedBrowserTabUIStart(Int32 TabID, Boolean IsActive)	Start		Browseui_DestroyDetachedBrowserTabUI	Always	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	598	0	Browseui_DestroyDetachedBrowserTabUIStop(Int32 TabID, Boolean IsActive)	Stop		Browseui_DestroyDetachedBrowserTabUI	Always	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	599	0	Browseui_HungTabHeartBeat_Timer_Invisible(Int32 TabID, Boolean IsActive)			Browseui_HungTabHeartBeat_Timer_Invisible	Informational	Microsoft-IEFRAME/Diagnostic	
 Microsoft-IEFRAME	600	0	TabRoaming_FindRoamedMachinesStart()	Start	roaming	TabRoaming_FindRoamedMachines	Always		
 Microsoft-IEFRAME	601	0	TabRoaming_FindRoamedMachinesStop()	Stop	roaming	TabRoaming_FindRoamedMachines	Always		
 Microsoft-IEFRAME	602	0	TabRoaming_LoadRoamedMachineStart(UnicodeString FileName)	Start	roaming	TabRoaming_LoadRoamedMachine	Always		
@@ -422,34 +420,34 @@ Microsoft-IEFRAME	612	0	Recovery_WriteInitialStoreStart(UnicodeString FileName)	
 Microsoft-IEFRAME	613	0	Recovery_WriteInitialStoreStop(UnicodeString FileName)	Stop	verbose	Recovery_WriteInitialStore	Always		
 Microsoft-IEFRAME	614	0	Recovery_ReadRecoveryStoreStart(UnicodeString FileName)	Start	verbose	Recovery_ReadRecoveryStore	Always		
 Microsoft-IEFRAME	615	0	Recovery_ReadRecoveryStoreStop(UnicodeString FileName)	Stop	verbose	Recovery_ReadRecoveryStore	Always		
-Microsoft-IEFRAME	616	0	Shdocvw_VirtualTab_RedirectUrlWithBindInfo()		primarynav	Shdocvw_VirtualTab_RedirectUrlWithBindInfo	Informational		
-Microsoft-IEFRAME	617	0	Shdocvw_VirtualTab_RedirectUrlWithBindInfo617()		primarynav	Shdocvw_VirtualTab_RedirectUrlWithBindInfo	Informational		
-Microsoft-IEFRAME	618	0	Shdocvw_VirtualTab_NavigateImmediateTab()		primarynav	Shdocvw_VirtualTab_NavigateImmediateTab	Informational		
-Microsoft-IEFRAME	619	0	Shdocvw_VirtualTab_NavigateImmediateTab619()		primarynav	Shdocvw_VirtualTab_NavigateImmediateTab	Informational		
-Microsoft-IEFRAME	620	0	Shdocvw_VirtualTab_NavigateDeferredNewTab()		primarynav	Shdocvw_VirtualTab_NavigateDeferredNewTab	Informational		
-Microsoft-IEFRAME	621	0	Shdocvw_VirtualTab_NavigateDeferredNewTab621()		primarynav	Shdocvw_VirtualTab_NavigateDeferredNewTab	Informational		
-Microsoft-IEFRAME	622	0	Shdocvw_VirtualTab_GetIWB2()		primarynav	Shdocvw_VirtualTab_GetIWB2	Informational		
-Microsoft-IEFRAME	623	0	Shdocvw_VirtualTab_GetIWB2623()		primarynav	Shdocvw_VirtualTab_GetIWB2	Informational		
-Microsoft-IEFRAME	624	0	Shdocvw_VirtualTab_NavigateTabManager()		primarynav	Shdocvw_VirtualTab_NavigateTabManager	Informational		
-Microsoft-IEFRAME	625	0	Shdocvw_VirtualTab_NavigateTabManager625()		primarynav	Shdocvw_VirtualTab_NavigateTabManager	Informational		
-Microsoft-IEFRAME	626	0	Shdocvw_VirtualTab_GetWebOCWindow()		primarynav	Shdocvw_VirtualTab_GetWebOCWindow	Informational		
-Microsoft-IEFRAME	627	0	Shdocvw_VirtualTab_GetWebOCWindow627()		primarynav	Shdocvw_VirtualTab_GetWebOCWindow	Informational		
-Microsoft-IEFRAME	628	0	Shdocvw_VirtualTab_NavigateInWebBrowser()		primarynav	Shdocvw_VirtualTab_NavigateInWebBrowser	Informational		
-Microsoft-IEFRAME	629	0	Shdocvw_VirtualTab_NavigateInWebBrowser629()		primarynav	Shdocvw_VirtualTab_NavigateInWebBrowser	Informational		
-Microsoft-IEFRAME	630	0	Shdocvw_VirtualTab_NavigateThreadProc()		primarynav	Shdocvw_VirtualTab_NavigateThreadProc	Informational		
-Microsoft-IEFRAME	631	0	Shdocvw_VirtualTab_NavigateThreadProc631()		primarynav	Shdocvw_VirtualTab_NavigateThreadProc	Informational		
-Microsoft-IEFRAME	632	0	Browseui_VirtualTab_PreNewFrameTabCreate()		primarynav	Browseui_VirtualTab_PreNewFrameTabCreate	Informational		
-Microsoft-IEFRAME	633	0	Browseui_VirtualTab_PreNewFrameTabCreate633()		primarynav	Browseui_VirtualTab_PreNewFrameTabCreate	Informational		
-Microsoft-IEFRAME	634	0	Browseui_VirtualTab_PostNewFrameTabCreate()		primarynav	Browseui_VirtualTab_PostNewFrameTabCreate	Informational		
-Microsoft-IEFRAME	635	0	Browseui_VirtualTab_PostNewFrameTabCreate635()		primarynav	Browseui_VirtualTab_PostNewFrameTabCreate	Informational		
-Microsoft-IEFRAME	636	0	Shdocvw_VirtualTab_NavigateThreadProc_NavigateEx2Call()		primarynav	Shdocvw_VirtualTab_NavigateThreadProc_NavigateEx2Call	Informational		
-Microsoft-IEFRAME	637	0	Shdocvw_VirtualTab_NavigateThreadProc_NavigateEx2Call637()		primarynav	Shdocvw_VirtualTab_NavigateThreadProc_NavigateEx2Call	Informational		
-Microsoft-IEFRAME	638	0	Shdocvw_VirtualTab_NavigateThreadProc_Navigate2Call()		primarynav	Shdocvw_VirtualTab_NavigateThreadProc_Navigate2Call	Informational		
-Microsoft-IEFRAME	639	0	Shdocvw_VirtualTab_NavigateThreadProc_Navigate2Call639()		primarynav	Shdocvw_VirtualTab_NavigateThreadProc_Navigate2Call	Informational		
-Microsoft-IEFRAME	640	0	Shdocvw_VirtualTab_NavigateInWebBrowser_Navigate2Call()		primarynav	Shdocvw_VirtualTab_NavigateInWebBrowser_Navigate2Call	Informational		
-Microsoft-IEFRAME	641	0	Shdocvw_VirtualTab_NavigateInWebBrowser_Navigate2Call641()		primarynav	Shdocvw_VirtualTab_NavigateInWebBrowser_Navigate2Call	Informational		
+Microsoft-IEFRAME	616	0	Shdocvw_VirtualTab_RedirectUrlWithBindInfo()		primarynav	Shdocvw_VirtualTab_RedirectUrlWithBindInfo	Informational	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	617	0	Shdocvw_VirtualTab_RedirectUrlWithBindInfo617()		primarynav	Shdocvw_VirtualTab_RedirectUrlWithBindInfo	Informational	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	618	0	Shdocvw_VirtualTab_NavigateImmediateTab()		primarynav	Shdocvw_VirtualTab_NavigateImmediateTab	Informational	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	619	0	Shdocvw_VirtualTab_NavigateImmediateTab619()		primarynav	Shdocvw_VirtualTab_NavigateImmediateTab	Informational	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	620	0	Shdocvw_VirtualTab_NavigateDeferredNewTab()		primarynav	Shdocvw_VirtualTab_NavigateDeferredNewTab	Informational	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	621	0	Shdocvw_VirtualTab_NavigateDeferredNewTab621()		primarynav	Shdocvw_VirtualTab_NavigateDeferredNewTab	Informational	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	622	0	Shdocvw_VirtualTab_GetIWB2()		primarynav	Shdocvw_VirtualTab_GetIWB2	Informational	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	623	0	Shdocvw_VirtualTab_GetIWB2623()		primarynav	Shdocvw_VirtualTab_GetIWB2	Informational	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	624	0	Shdocvw_VirtualTab_NavigateTabManager()		primarynav	Shdocvw_VirtualTab_NavigateTabManager	Informational	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	625	0	Shdocvw_VirtualTab_NavigateTabManager625()		primarynav	Shdocvw_VirtualTab_NavigateTabManager	Informational	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	626	0	Shdocvw_VirtualTab_GetWebOCWindow()		primarynav	Shdocvw_VirtualTab_GetWebOCWindow	Informational	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	627	0	Shdocvw_VirtualTab_GetWebOCWindow627()		primarynav	Shdocvw_VirtualTab_GetWebOCWindow	Informational	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	628	0	Shdocvw_VirtualTab_NavigateInWebBrowser()		primarynav	Shdocvw_VirtualTab_NavigateInWebBrowser	Informational	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	629	0	Shdocvw_VirtualTab_NavigateInWebBrowser629()		primarynav	Shdocvw_VirtualTab_NavigateInWebBrowser	Informational	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	630	0	Shdocvw_VirtualTab_NavigateThreadProc()		primarynav	Shdocvw_VirtualTab_NavigateThreadProc	Informational	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	631	0	Shdocvw_VirtualTab_NavigateThreadProc631()		primarynav	Shdocvw_VirtualTab_NavigateThreadProc	Informational	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	632	0	Browseui_VirtualTab_PreNewFrameTabCreate()		primarynav	Browseui_VirtualTab_PreNewFrameTabCreate	Informational	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	633	0	Browseui_VirtualTab_PreNewFrameTabCreate633()		primarynav	Browseui_VirtualTab_PreNewFrameTabCreate	Informational	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	634	0	Browseui_VirtualTab_PostNewFrameTabCreate()		primarynav	Browseui_VirtualTab_PostNewFrameTabCreate	Informational	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	635	0	Browseui_VirtualTab_PostNewFrameTabCreate635()		primarynav	Browseui_VirtualTab_PostNewFrameTabCreate	Informational	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	636	0	Shdocvw_VirtualTab_NavigateThreadProc_NavigateEx2Call()		primarynav	Shdocvw_VirtualTab_NavigateThreadProc_NavigateEx2Call	Informational	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	637	0	Shdocvw_VirtualTab_NavigateThreadProc_NavigateEx2Call637()		primarynav	Shdocvw_VirtualTab_NavigateThreadProc_NavigateEx2Call	Informational	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	638	0	Shdocvw_VirtualTab_NavigateThreadProc_Navigate2Call()		primarynav	Shdocvw_VirtualTab_NavigateThreadProc_Navigate2Call	Informational	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	639	0	Shdocvw_VirtualTab_NavigateThreadProc_Navigate2Call639()		primarynav	Shdocvw_VirtualTab_NavigateThreadProc_Navigate2Call	Informational	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	640	0	Shdocvw_VirtualTab_NavigateInWebBrowser_Navigate2Call()		primarynav	Shdocvw_VirtualTab_NavigateInWebBrowser_Navigate2Call	Informational	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	641	0	Shdocvw_VirtualTab_NavigateInWebBrowser_Navigate2Call641()		primarynav	Shdocvw_VirtualTab_NavigateInWebBrowser_Navigate2Call	Informational	Microsoft-IEFRAME/Diagnostic	
 Microsoft-IEFRAME	642	0	BrowseUI_CStorage(UInt32 SharedMemoryHandle, HexInt32 FailureReason)		mshtml	BrowseUI_CStorage	Informational		
-Microsoft-IEFRAME	643	0	CFaviconHolder_UpdateReal()		favicon	CFaviconHolder_UpdateReal	Informational		
+Microsoft-IEFRAME	643	0	CFaviconHolder_UpdateReal()		favicon	CFaviconHolder_UpdateReal	Informational	Microsoft-IEFRAME/Diagnostic	
 Microsoft-IEFRAME	644	0	History_Journal_Write_Command(Int32 CommandType, Int32 EventType)		HistoryJournal	History_Journal_Write_Command	Informational		
 Microsoft-IEFRAME	645	0	Browseui_TabSuspension_Check_Suspendable(UInt32 PID, Boolean FoundSuspendable, UInt32 FailureReason)		tabhydration	Browseui_TabSuspension_Check_Suspendable	Always		
 Microsoft-IEFRAME	647	0	Courier_FunctionalTest()		verbose	Courier_FunctionalTest	Always		
@@ -461,14 +459,13 @@ Microsoft-IEFRAME	652	0	Browseui_TabBand_Activity652(Int32 HiddenTabCookie)		HUX
 Microsoft-IEFRAME	653	0	Browseui_TabBand_Activity653(Int32 tabID)		HUX	Browseui_TabBand_Activity	Informational		
 Microsoft-IEFRAME	654	0	Browseui_TabBand_Activity654(Int32 tabID)		HUX	Browseui_TabBand_Activity	Informational		
 Microsoft-IEFRAME	655	0	Browseui_TabBand_Activity655(Int32 tabID)		HUX	Browseui_TabBand_Activity	Informational		
-Microsoft-IEFRAME	656	0	Device_Info_UtilStart(UnicodeString String)	Start	primarynav	Device_Info_Util	Informational		
-Microsoft-IEFRAME	657	0	Device_Info_UtilStop(UnicodeString String)	Stop	primarynav	Device_Info_Util	Informational		
-Microsoft-IEFRAME	658	0	HistoryJournalStart(UnicodeString String)	Start	primarynav	HistoryJournal	Informational		
-Microsoft-IEFRAME	659	0	HistoryJournalStop(UnicodeString String)	Stop	primarynav	HistoryJournal	Informational		
-Microsoft-IEFRAME	660	0	NewTabPage_SearchBox_ShowStart()	Start	primarynav	NewTabPage_SearchBox_Show	Informational		
-Microsoft-IEFRAME	661	0	NewTabPage_SearchBox_ShowStop()	Stop	primarynav	NewTabPage_SearchBox_Show	Informational		
-Microsoft-IEFRAME	662	0	NewTabPage_SearchBox_HideStart()	Start	primarynav	NewTabPage_SearchBox_Hide	Informational		
-Microsoft-IEFRAME	663	0	NewTabPage_SearchBox_HideStop()	Stop	primarynav	NewTabPage_SearchBox_Hide	Informational		
-Microsoft-IEFRAME	664	0	NewTabPage_SearchLogo_ShowStart()	Start	primarynav	NewTabPage_SearchLogo_Show	Informational		
-Microsoft-IEFRAME	665	0	NewTabPage_SearchLogo_ShowStop()	Stop	primarynav	NewTabPage_SearchLogo_Show	Informational		
-Microsoft-IEFRAME	666	0	WebStorage_Platform(UInt32 SharedMemoryHandle, HexInt32 FailureReason)		mshtml	WebStorage_Platform	Informational		
+Microsoft-IEFRAME	656	0	Device_Info_UtilStart(UnicodeString String)	Start	primarynav	Device_Info_Util	Informational	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	657	0	Device_Info_UtilStop(UnicodeString String)	Stop	primarynav	Device_Info_Util	Informational	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	658	0	HistoryJournalStart(UnicodeString String)	Start	primarynav	HistoryJournal	Informational	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	659	0	HistoryJournalStop(UnicodeString String)	Stop	primarynav	HistoryJournal	Informational	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	660	0	NewTabPage_SearchBox_ShowStart()	Start	primarynav	NewTabPage_SearchBox_Show	Informational	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	661	0	NewTabPage_SearchBox_ShowStop()	Stop	primarynav	NewTabPage_SearchBox_Show	Informational	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	662	0	NewTabPage_SearchBox_HideStart()	Start	primarynav	NewTabPage_SearchBox_Hide	Informational	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	663	0	NewTabPage_SearchBox_HideStop()	Stop	primarynav	NewTabPage_SearchBox_Hide	Informational	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	664	0	NewTabPage_SearchLogo_ShowStart()	Start	primarynav	NewTabPage_SearchLogo_Show	Informational	Microsoft-IEFRAME/Diagnostic	
+Microsoft-IEFRAME	665	0	NewTabPage_SearchLogo_ShowStop()	Stop	primarynav	NewTabPage_SearchLogo_Show	Informational	Microsoft-IEFRAME/Diagnostic	

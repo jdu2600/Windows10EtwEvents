@@ -1,6 +1,6 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-Spellchecking-Host	0	0	task_0(GUID clsid, UInt32 hresult)			task_0	Error		
-Microsoft-Windows-Spellchecking-Host	1	0	task_01(UnicodeString string, UInt32 hresult)			task_0	Error		
-Microsoft-Windows-Spellchecking-Host	2	0	task_02(UInt32 Wordlist, UnicodeString String, UInt32 Hresult)			task_0	Error		
-Microsoft-Windows-Spellchecking-Host	3	0	task_0Send(UInt32 Wordlist)	Send		task_0	Informational		
-Microsoft-Windows-Spellchecking-Host	4	0	task_0Receive(UInt32 Wordlist)	Receive		task_0	Informational		
+Microsoft-Windows-Spellchecking-Host	0	0	Event_0(GUID clsid, UInt32 hresult)			task_0	Error	Application	Failed instantiating third-party spellchecking provider: CLSID %1, HRESULT %2.
+Microsoft-Windows-Spellchecking-Host	1	0	Event_1(UnicodeString string, UInt32 hresult)			task_0	Error	Application	Failed instantiating third-party spellchecker: Language tag %1, HRESULT %2.
+Microsoft-Windows-Spellchecking-Host	2	0	Event_2(UInt32 Wordlist, UnicodeString String, UInt32 Hresult)			task_0	Error	Application	Failed initializing wordlist %1 in third-party spellchecker with Language tag %2, HRESULT %3. The spellchecker will remain available.
+Microsoft-Windows-Spellchecking-Host	3	0	Event_3_Send(UInt32 Wordlist)	Send		task_0	Informational	Microsoft-Windows-Spellchecking-Host/Analytic	Host started initializing third-party provider with wordlist %1.
+Microsoft-Windows-Spellchecking-Host	4	0	Event_4_Receive(UInt32 Wordlist)	Receive		task_0	Informational	Microsoft-Windows-Spellchecking-Host/Analytic	Host finished initializing third-party provider with wordlist %1.

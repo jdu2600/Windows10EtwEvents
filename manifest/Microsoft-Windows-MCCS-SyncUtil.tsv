@@ -1,20 +1,31 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-MCCS-SyncUtil	1	0	task_0(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		Error	task_0	Error		
-Microsoft-Windows-MCCS-SyncUtil	2	0	task_02(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		Warning	task_0	Warning		
-Microsoft-Windows-MCCS-SyncUtil	101	0	task_0101(HexInt32 Prop_Dword, AnsiString Prop_StringA_1, AnsiString Prop_StringA_2)		CommsService	task_0	Informational		
-Microsoft-Windows-MCCS-SyncUtil	104	0	task_0104(UnicodeString Prop_String1, UnicodeString Prop_String2, UnicodeString Prop_String3, AnsiString Prop_AnsiString)			task_0	Verbose		
-Microsoft-Windows-MCCS-SyncUtil	121	0	SPERF_TAG_LOAD_XMLDOMStart(UnicodeString P1_UnicodeString)	Start	Performance	SPERF_TAG_LOAD_XMLDOM	Informational		
-Microsoft-Windows-MCCS-SyncUtil	122	0	SPERF_TAG_LOAD_XMLDOMStop(UnicodeString P1_UnicodeString)	Stop	Performance	SPERF_TAG_LOAD_XMLDOM	Informational		
-Microsoft-Windows-MCCS-SyncUtil	202	0	task_0202(HexInt32 P1_HexInt32)		Warning	task_0	Warning		
-Microsoft-Windows-MCCS-SyncUtil	203	0	task_0203(UnicodeString P1_UnicodeString)		Warning	task_0	Warning		
-Microsoft-Windows-MCCS-SyncUtil	204	0	task_0204(UnicodeString P1_UnicodeString)		Warning	task_0	Warning		
-Microsoft-Windows-MCCS-SyncUtil	205	0	task_0205(UnicodeString P1_UnicodeString)		Warning	task_0	Warning		
-Microsoft-Windows-MCCS-SyncUtil	206	0	task_0206(Int32 P1_Int32)		Warning	task_0	Warning		
-Microsoft-Windows-MCCS-SyncUtil	301	0	task_0301()		Error	task_0	Error		
-Microsoft-Windows-MCCS-SyncUtil	600	0	task_0600()			task_0	Informational		
-Microsoft-Windows-MCCS-SyncUtil	601	0	task_0601()			task_0	Informational		
-Microsoft-Windows-MCCS-SyncUtil	800	0	task_0800(UnicodeString Prop_String1, FILETIME Prop_FileTime1)		Warning	task_0	Informational		
-Microsoft-Windows-MCCS-SyncUtil	802	0	task_0802(UnicodeString Prop_String1, FILETIME Prop_FileTime1)		Warning	task_0	Informational		
-Microsoft-Windows-MCCS-SyncUtil	803	0	task_0803(Int32 P1_Int32)		Error	task_0	Error		
-Microsoft-Windows-MCCS-SyncUtil	804	0	task_0804(HexInt32 Prop_HexInt32, UnicodeString Prop_String)		Error	task_0	Error		
-Microsoft-Windows-MCCS-SyncUtil	810	0	task_0810(HexInt32 P1_HexInt32)		StateTransition	task_0	Informational		
+Microsoft-Windows-MCCS-SyncUtil	1	0	Event_1(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		Error	task_0	Error		Error: %1 Location: %2 Line Number: %3
+Microsoft-Windows-MCCS-SyncUtil	2	0	Event_2(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		Warning keyword_200000000000	task_0	Warning		Error Propagated: %1 Location: %2 Line Number: %3
+Microsoft-Windows-MCCS-SyncUtil	101	0	Event_101(HexInt32 Prop_Dword, AnsiString Prop_StringA_1, AnsiString Prop_StringA_2)		CommsService keyword_200000000000	task_0	Informational		Commsync:[Ctrl] [%1] [%2] %3
+Microsoft-Windows-MCCS-SyncUtil	102	0	SPERF_TAG_UPDATE_TRANSPORTStart()	Start	Performance keyword_200000000000	SPERF_TAG_UPDATE_TRANSPORT	Informational		
+Microsoft-Windows-MCCS-SyncUtil	103	0	SPERF_TAG_UPDATE_TRANSPORTStop()	Stop	Performance keyword_200000000000	SPERF_TAG_UPDATE_TRANSPORT	Informational		
+Microsoft-Windows-MCCS-SyncUtil	104	0	Event_104(UnicodeString Prop_String1, UnicodeString Prop_String2, UnicodeString Prop_String3, AnsiString Prop_AnsiString)			task_0	Verbose		%1%2%3 %4
+Microsoft-Windows-MCCS-SyncUtil	121	0	SPERF_TAG_LOAD_XMLDOMStart(UnicodeString P1_UnicodeString)	Start	Performance keyword_200000000000	SPERF_TAG_LOAD_XMLDOM	Informational		SyncUtil: [Start Marker] [SPERF_TAG_LOAD_XMLDOM_START] Start loading xml [%1]
+Microsoft-Windows-MCCS-SyncUtil	122	0	SPERF_TAG_LOAD_XMLDOMStop(UnicodeString P1_UnicodeString)	Stop	Performance keyword_200000000000	SPERF_TAG_LOAD_XMLDOM	Informational		SyncUtil: [Stop Marker] [SPERF_TAG_SYNC_ENGINE_STOP] Done loading xml [%1]
+Microsoft-Windows-MCCS-SyncUtil	202	0	Event_202(HexInt32 P1_HexInt32)		Warning	task_0	Warning		SyncUtil: MXSML Error code=%1
+Microsoft-Windows-MCCS-SyncUtil	203	0	Event_203(UnicodeString P1_UnicodeString)		Warning keyword_200000000000	task_0	Warning		SyncUtil: MXSML Error reason=%1
+Microsoft-Windows-MCCS-SyncUtil	204	0	Event_204(UnicodeString P1_UnicodeString)		Warning keyword_200000000000	task_0	Warning		SyncUtil: MXSML Error url=%1
+Microsoft-Windows-MCCS-SyncUtil	205	0	Event_205(UnicodeString P1_UnicodeString)		Warning keyword_200000000000	task_0	Warning		SyncUtil: MXSML Error srcText=%1
+Microsoft-Windows-MCCS-SyncUtil	206	0	Event_206(Int32 P1_Int32)		Warning keyword_200000000000	task_0	Warning		SyncUtil: MXSML Error offset=%1
+Microsoft-Windows-MCCS-SyncUtil	301	0	Event_301()		Error keyword_400000000000	task_0	Error		SyncUtil: Account attempted to access SyncPersistentObjectManager when NULL
+Microsoft-Windows-MCCS-SyncUtil	400	0	Event_400(UnicodeString Prop_String1, UnicodeString Prop_String2, UInt32 Prop_UINT1, UInt32 Prop_UINT2, UInt32 Prop_UINT3, UInt32 Prop_UINT4)			task_0	Informational		Backup store %1 %2.  Poom Props: %3, Poom Named Props: %4, Mapi Props: %5, Folders: %6
+Microsoft-Windows-MCCS-SyncUtil	401	0	Event_401(UnicodeString Prop_String1, UnicodeString Prop_String2, Boolean Prop_Bool1, Boolean Prop_Bool2, Boolean Prop_Bool3)			task_0	Informational		Restored store %1 %2. Restored: %3, Store found: %4, RestoreAllInfo: %5
+Microsoft-Windows-MCCS-SyncUtil	402	0	Event_402(Boolean Prop_Bool)			task_0	Informational		Got HasFolderHierarchySynced state %1 for store
+Microsoft-Windows-MCCS-SyncUtil	403	0	Event_403(UnicodeString Prop_String1, UnicodeString Prop_String2, Boolean Prop_Bool)			task_0	Informational		Restore store (Network source: %1, Account ID: %2), forget: %3
+Microsoft-Windows-MCCS-SyncUtil	600	0	Event_600()			task_0	Informational		Dormant Hint: ACTIVE
+Microsoft-Windows-MCCS-SyncUtil	601	0	Event_601()			task_0	Informational		Dormant Hint: DORMANT
+Microsoft-Windows-MCCS-SyncUtil	750	0	Event_750(UInt32 Prop_UINT1, UInt32 Prop_UINT2, UInt32 Prop_UINT3)			task_0	Informational		Total AUTD accounts count changed (previous count: %1, new count: %2, AUTD limit: %3).
+Microsoft-Windows-MCCS-SyncUtil	751	0	Event_751(HexInt32 Prop_HEXINT1, HexInt32 Prop_HEXINT2, HexInt32 Prop_HEXINT3, HexInt32 Prop_HEXINT4, UInt32 Prop_UINT1)		Warning keyword_200000000000	task_0	Warning		Saving fallback schedule for account %1 (current schedule: %2, requested schedule %2, fallback schedule: %4, AUTD limit: %5).
+Microsoft-Windows-MCCS-SyncUtil	752	0	Event_752(HexInt32 Prop_HEXINT1, HexInt32 Prop_HEXINT2, HexInt32 Prop_HEXINT3, UInt32 Prop_UINT1)		Warning keyword_200000000000	task_0	Warning		Demoting schedule for account %1 (current schedule: %2, new schedule: %3, AUTD limit: %4).
+Microsoft-Windows-MCCS-SyncUtil	753	0	Event_753(HexInt32 Prop_HEXINT1, HexInt32 Prop_HEXINT2, HexInt32 Prop_HEXINT3)		Warning keyword_200000000000	task_0	Warning		Account %1 schedule changed from %2 to %3.
+Microsoft-Windows-MCCS-SyncUtil	800	0	Event_800(UnicodeString Prop_String1, FILETIME Prop_FileTime1)		Warning keyword_200000000000	task_0	Informational		Received OAuth token of type %1 expiring in %2seconds.
+Microsoft-Windows-MCCS-SyncUtil	801	0	Event_801(UnicodeString Prop_String1, FILETIME Prop_FileTime1)		Warning keyword_200000000000	task_0	Informational		Received OAuth token of type %1 expiring in %2seconds.
+Microsoft-Windows-MCCS-SyncUtil	802	0	Event_802(UnicodeString Prop_String1, FILETIME Prop_FileTime1)		Warning keyword_200000000000	task_0	Informational		Received OAuth token of type %1 expiring in %2seconds.
+Microsoft-Windows-MCCS-SyncUtil	803	0	Event_803(Int32 P1_Int32)		Error keyword_400000000000	task_0	Error		The SSO Token request failed with status %1
+Microsoft-Windows-MCCS-SyncUtil	804	0	Event_804(HexInt32 Prop_HexInt32, UnicodeString Prop_String)		Error keyword_400000000000	task_0	Error		The SSO request failed with a provider error (status: %1, message: %2)
+Microsoft-Windows-MCCS-SyncUtil	810	0	Event_810(HexInt32 P1_HexInt32)		StateTransition keyword_200000000000	task_0	Informational		Cred Vault: DeletePwd Called. Caller: UpdatePasswordForAccount, Partner %1

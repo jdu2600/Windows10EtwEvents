@@ -1,115 +1,100 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-NWiFi	10000	0	task_0(Pointer ContextHandle, GUID AdapterGuid, UInt32 Status, UInt32 ResetStatus)		Init	task_0	Informational		
-Microsoft-Windows-NWiFi	10001	0	task_010001(Pointer ContextHandle, GUID AdapterGuid, UInt32 Function, UInt32 Status, UInt32 Length)		Ioctls	task_0	Informational		
-Microsoft-Windows-NWiFi	10002	0	task_010002(Pointer ContextHandle, GUID AdapterGuid, UInt32 Status)		Ioctls	task_0	Warning		
-Microsoft-Windows-NWiFi	10003	0	task_010003(Pointer ContextHandle, GUID AdapterGuid, UInt32 Status)		Ioctls	task_0	Error		
-Microsoft-Windows-NWiFi	10004	0	task_010004(Pointer ContextHandle, GUID AdapterGuid, UInt32 AlgorithmId)		Ioctls	task_0	Error		
-Microsoft-Windows-NWiFi	10005	0	task_010005(Pointer ContextHandle, GUID AdapterGuid, UInt32 SSIDCount, UInt8 SSIDList)		Ioctls ut:Configuration	task_0	Informational		
-Microsoft-Windows-NWiFi	10006	0	task_010006(Pointer ContextHandle, GUID AdapterGuid, UInt32 Status)		Ioctls ut:Configuration	task_0	Error		
-Microsoft-Windows-NWiFi	10007	0	task_010007(Pointer ContextHandle, GUID AdapterGuid, UInt32 BSSType)		Ioctls ut:Configuration	task_0	Informational		
-Microsoft-Windows-NWiFi	10008	0	task_010008(Pointer ContextHandle, GUID AdapterGuid, UInt32 BSSIDCount, Binary BSSIDList)		Ioctls ut:Configuration	task_0	Informational		
-Microsoft-Windows-NWiFi	10009	0	task_010009(Pointer ContextHandle, GUID AdapterGuid, UInt32 AuthCount, UInt32 AuthAlgorithm)		Ioctls ut:Configuration	task_0	Informational		
-Microsoft-Windows-NWiFi	10010	0	task_010010(Pointer ContextHandle, GUID AdapterGuid, Boolean Value, UInt32 Status)		Ioctls ut:Configuration	task_0	Informational		
-Microsoft-Windows-NWiFi	10011	0	task_010011(Pointer ContextHandle, GUID AdapterGuid, Boolean Value, UInt32 Status)		Ioctls ut:Configuration	task_0	Informational		
-Microsoft-Windows-NWiFi	10012	0	task_010012(Pointer ContextHandle, GUID AdapterGuid)		RSNA LwtDiagnostic ut:ReceivePath ut:Authentication	task_0	Informational		
-Microsoft-Windows-NWiFi	10013	0	task_010013(Pointer ContextHandle, GUID AdapterGuid, UInt64 ExpectedCounter, UInt64 ReceivedCounter)		RSNA ut:ReceivePath ut:Authentication keyword_10000000000	task_0	Warning		
-Microsoft-Windows-NWiFi	10014	0	task_010014(Pointer ContextHandle, GUID AdapterGuid, UInt32 ExpectedVer, UInt32 ReceivedVer)		RSNA LwtDiagnostic ut:ReceivePath ut:Authentication	task_0	Warning		
-Microsoft-Windows-NWiFi	10015	0	task_010015(Pointer ContextHandle, GUID AdapterGuid, UInt32 FrameSequence, Binary SrcMAC, Binary DestMAC)		RSNA LwtDiagnostic ut:ReceivePath ut:Authentication	task_0	Informational		
-Microsoft-Windows-NWiFi	10016	0	task_010016(Pointer ContextHandle, GUID AdapterGuid, UInt32 FrameSequence, Binary SrcMAC, Binary DestMAC)		RSNA LwtDiagnostic ut:ReceivePath ut:Authentication	task_0	Informational		
-Microsoft-Windows-NWiFi	10017	0	task_010017(Pointer ContextHandle, GUID AdapterGuid, UInt32 FrameSequence, Binary SrcMAC, Binary DestMAC)		RSNA LwtDiagnostic ut:ReceivePath ut:Authentication	task_0	Informational		
-Microsoft-Windows-NWiFi	10018	0	task_010018(Pointer ContextHandle, GUID AdapterGuid, UInt32 FrameSequence, Binary SrcMAC, Binary DestMAC)		RSNA LwtDiagnostic ut:ReceivePath ut:Authentication	task_0	Informational		
-Microsoft-Windows-NWiFi	10019	0	task_010019(Pointer ContextHandle, GUID AdapterGuid, Binary SrcMAC, Binary DestMAC)		RSNA LwtDiagnostic ut:SendPath ut:Authentication	task_0	Informational		
-Microsoft-Windows-NWiFi	10020	0	task_010020(Pointer ContextHandle, GUID AdapterGuid)		RSNA LwtDiagnostic ut:ReceivePath ut:Authentication	task_0	Informational		
-Microsoft-Windows-NWiFi	10021	0	task_010021(Pointer ContextHandle, GUID AdapterGuid, Binary SrcMAC, Binary DestMAC)		RSNA LwtDiagnostic ut:SendPath ut:Authentication	task_0	Informational		
-Microsoft-Windows-NWiFi	10022	0	task_010022(Pointer ContextHandle, GUID AdapterGuid, UInt32 Status)		RSNA LwtDiagnostic ut:ReceivePath ut:Authentication	task_0	Error		
-Microsoft-Windows-NWiFi	10023	0	task_010023(Pointer ContextHandle, GUID AdapterGuid, UInt32 Status)		RSNA LwtDiagnostic ut:ReceivePath ut:Authentication keyword_10000000000	task_0	Error		
-Microsoft-Windows-NWiFi	10024	0	task_010024(Pointer ContextHandle, GUID AdapterGuid)		RSNA LwtDiagnostic ut:ReceivePath ut:Authentication	task_0	Informational		
-Microsoft-Windows-NWiFi	10025	0	task_010025(Pointer ContextHandle, GUID AdapterGuid, Binary SrcMAC, Binary DestMAC)		RSNA LwtDiagnostic ut:SendPath ut:Authentication	task_0	Informational		
-Microsoft-Windows-NWiFi	10026	0	task_010026(Pointer ContextHandle, GUID AdapterGuid, UInt32 Status)		RSNA LwtDiagnostic ut:Configuration	task_0	Error		
-Microsoft-Windows-NWiFi	10027	0	task_010027(UInt32 FrameSequence, Binary SrcMAC, Binary DestMAC, UInt32 Status)		AuthUpcall ut:ReceivePath ut:Authentication	task_0	Informational		
-Microsoft-Windows-NWiFi	10028	0	task_010028(Pointer ContextHandle, GUID AdapterGuid, Binary SrcMAC, Binary DestMAC)		IODisp ut:SendPath ut:Authentication	task_0	Informational		
-Microsoft-Windows-NWiFi	10029	0	task_010029(Pointer Adapter, UInt32 OID, UInt32 PowerState, Boolean bBlockOidsDueToLowPowerState)		NDISReq ut:Configuration	task_0	Error		
-Microsoft-Windows-NWiFi	10030	0	task_010030(Pointer Adapter, UInt32 OID, UInt32 Status)		NDISReq ut:Configuration	task_0	Error		
-Microsoft-Windows-NWiFi	10031	0	task_010031(Pointer Adapter, UInt32 OID, UInt32 Status)		NDISReq ut:Configuration	task_0	Informational		
-Microsoft-Windows-NWiFi	10032	0	task_010032(Pointer Adapter, UInt32 OID, UInt32 Status)		NDISReq ut:Configuration	task_0	Informational		
-Microsoft-Windows-NWiFi	10033	0	task_010033(Pointer ContextHandle, GUID AdapterGuid, Binary MAC)		TKIPSec LwtDiagnostic ut:Authentication	task_0	Informational		
-Microsoft-Windows-NWiFi	10034	0	task_010034(Pointer ContextHandle, GUID AdapterGuid, UInt8 EndPointType)		Ioctls ut:Authentication	task_0	Informational		
-Microsoft-Windows-NWiFi	10035	0	task_010035(Pointer ContextHandle, GUID AdapterGuid, Boolean Enabled)		Ioctls ut:Authentication	task_0	Informational		
-Microsoft-Windows-NWiFi	10036	0	task_010036(Pointer ContextHandle, GUID AdapterGuid, Boolean Enabled)		Ioctls ut:Authentication	task_0	Informational		
-Microsoft-Windows-NWiFi	10037	0	task_010037(Pointer ContextHandle, GUID AdapterGuid, UInt8 ResetType, Binary MAC, Boolean DefaultMIB)		Reset ut:Configuration	task_0	Informational		
-Microsoft-Windows-NWiFi	10038	0	task_010038(Pointer ContextHandle, GUID AdapterGuid, UInt8 ResetType, Binary MAC, Boolean DefaultMIB)		Reset ut:Configuration	task_0	Informational		
-Microsoft-Windows-NWiFi	10039	0	task_010039(Pointer ContextHandle, GUID AdapterGuid, UInt32 Status)		Reset ut:Configuration	task_0	Error		
-Microsoft-Windows-NWiFi	10040	0	task_0Start(Pointer ContextHandle, GUID AdapterGuid, Binary MAC)	Start	AssocMgr ut:L2ConnectPath	task_0	Informational		
-Microsoft-Windows-NWiFi	10041	0	task_0Stop(Pointer ContextHandle, GUID AdapterGuid, Binary MAC, UInt32 Status)	Stop	AssocMgr ut:L2ConnectPath	task_0	Informational		
-Microsoft-Windows-NWiFi	10042	0	task_010042(Pointer ContextHandle, GUID AdapterGuid, Binary MAC, UInt32 Reason)		AssocMgr ut:ClosePath	task_0	Informational		
-Microsoft-Windows-NWiFi	10043	0	task_010043(Pointer ContextHandle, GUID AdapterGuid)		AssocMgr	task_0	Informational		
-Microsoft-Windows-NWiFi	10044	0	task_010044(Pointer ContextHandle, GUID AdapterGuid, UInt32 SessionId)		AssocMgr	task_0	Informational		
-Microsoft-Windows-NWiFi	10045	0	task_010045(Pointer ContextHandle, GUID AdapterGuid, UInt32 SessionId, Binary MAC)		AssocMgr ut:Authentication	task_0	Warning		
-Microsoft-Windows-NWiFi	10046	0	task_010046(Pointer ContextHandle, GUID AdapterGuid, UInt32 SessionId, Binary MAC, Boolean Controlled, Boolean Authorized)		AssocMgr ut:Authentication	task_0	Informational		
-Microsoft-Windows-NWiFi	10047	0	task_010047(Pointer ContextHandle, GUID AdapterGuid, UInt32 SessionId, Binary MAC)		AssocMgr ut:Authentication	task_0	Informational		
-Microsoft-Windows-NWiFi	10048	0	task_010048(Pointer ContextHandle, GUID AdapterGuid, UInt32 Status)		AssocMgr ut:Configuration	task_0	Error		
-Microsoft-Windows-NWiFi	10049	0	task_010049(Pointer ContextHandle, GUID AdapterGuid, Pointer Irp)		AssocMgr ut:L2ConnectPath	task_0	Informational		
-Microsoft-Windows-NWiFi	10050	0	task_010050(Pointer ContextHandle, GUID AdapterGuid, UInt32 Status)		AssocMgr ut:L2ConnectPath	task_0	Informational		
-Microsoft-Windows-NWiFi	10051	0	task_010051(Pointer ContextHandle, GUID AdapterGuid, UInt32 PowerState)		AssocMgr ut:L2ConnectPath	task_0	Error		
-Microsoft-Windows-NWiFi	10052	0	task_010052(Pointer ContextHandle, GUID AdapterGuid, UInt32 PowerState)		AssocMgr ut:L2ConnectPath	task_0	Error		
-Microsoft-Windows-NWiFi	10053	0	task_010053(Pointer ContextHandle, GUID AdapterGuid, Pointer Irp)		AssocMgr ut:L2ConnectPath	task_0	Informational		
-Microsoft-Windows-NWiFi	10054	0	task_010054(Pointer ContextHandle, GUID AdapterGuid)		AssocMgr ut:ClosePath	task_0	Informational		
-Microsoft-Windows-NWiFi	10055	0	task_010055(Pointer ContextHandle, GUID AdapterGuid, UInt32 Status)		AssocMgr ut:ClosePath	task_0	Informational		
-Microsoft-Windows-NWiFi	10056	0	task_010056(Pointer ContextHandle, GUID AdapterGuid, UInt32 Status)		AssocMgr ut:ClosePath	task_0	Informational		
-Microsoft-Windows-NWiFi	10057	0	task_010057(Pointer ContextHandle, GUID AdapterGuid, UInt32 OldPowerState, UInt32 NewPowerState, Boolean Halting)		LWF ut:Configuration	task_0	Informational		
-Microsoft-Windows-NWiFi	10058	0	task_010058(Pointer ContextHandle, GUID AdapterGuid, UInt32 ConfiguredOpMode, UInt32 IMSupportedOpModes, UInt32 MiniPortSupportedOpModes)		LWF ut:Configuration	task_0	Error		
-Microsoft-Windows-NWiFi	10059	0	task_010059(Pointer ContextHandle, GUID AdapterGuid)		TKIPSec ut:Authentication	task_0	Informational		
-Microsoft-Windows-NWiFi	10060	0	task_010060(Binary Addr, UInt32 CipherAlgoId, UInt8 Direction, UInt32 Len)		ut:Authentication	task_0	Informational		
-Microsoft-Windows-NWiFi	10061	0	task_010061(UInt32 Index, UInt32 CipherAlgoId, UInt8 Direction, UInt32 Len)		ut:Authentication	task_0	Informational		
-Microsoft-Windows-NWiFi	10062	0	task_0Start10062(GUID AdapterGuid)	Start	AssocMgr ut:L2ConnectPath	task_0	Informational		
-Microsoft-Windows-NWiFi	10063	0	task_0Stop10063(GUID AdapterGuid, UInt32 Status)	Stop	AssocMgr ut:L2ConnectPath	task_0	Informational		
-Microsoft-Windows-NWiFi	10064	0	task_010064(Pointer ContextHandle, GUID AdapterGuid)		AssocMgr ut:ClosePath	task_0	Informational		
-Microsoft-Windows-NWiFi	10066	0	StartingdevicenetworkatIMdriverStart(GUID InterfaceGuid, Pointer ContextHandle, AnsiString MAC, AnsiString SSID)	Start	SOFTAP	StartingdevicenetworkatIMdriver	Informational		
-Microsoft-Windows-NWiFi	10067	0	StartingdevicenetworkatIMdriverStop(GUID InterfaceGuid, Pointer ContextHandle, AnsiString MAC, AnsiString SSID)	Stop	SOFTAP	StartingdevicenetworkatIMdriver	Informational		
-Microsoft-Windows-NWiFi	10068	0	StartingdevicenetworkatIMdriverStop10068(GUID InterfaceGuid, UInt32 ErrorCode, Pointer ContextHandle, AnsiString MAC, AnsiString SSID)	Stop	SOFTAP	StartingdevicenetworkatIMdriver	Error		
-Microsoft-Windows-NWiFi	10069	0	StoppingdevicenetworkatIMdriverStart(GUID InterfaceGuid, Pointer ContextHandle, AnsiString MAC, AnsiString SSID)	Start	SOFTAP	StoppingdevicenetworkatIMdriver	Informational		
-Microsoft-Windows-NWiFi	10070	0	StoppingdevicenetworkatIMdriverStop(GUID InterfaceGuid, Pointer ContextHandle, AnsiString MAC, AnsiString SSID)	Stop	SOFTAP	StoppingdevicenetworkatIMdriver	Informational		
-Microsoft-Windows-NWiFi	10071	0	StoppingdevicenetworkatIMdriverStop10071(GUID InterfaceGuid, UInt32 ErrorCode, Pointer ContextHandle, AnsiString MAC, AnsiString SSID)	Stop	SOFTAP	StoppingdevicenetworkatIMdriver	Informational		
-Microsoft-Windows-NWiFi	10072	0	task_010072(UInt32 PowerMgmtMode, Boolean PowerMgmtModeSupported, GUID AdapterGuid, Binary MAC, AnsiString SSID)		PowerMgmt	task_0	Informational		
-Microsoft-Windows-NWiFi	10073	0	EnterLowPowerState(GUID AdapterGuid, Boolean Halted, UInt32 NewPowerState)		SleepResume	EnterLowPowerState	Informational		
-Microsoft-Windows-NWiFi	10074	0	LeaveLowPowerState(GUID AdapterGuid)		SleepResume	LeaveLowPowerState	Informational		
-Microsoft-Windows-NWiFi	10075	0	task_010075(Pointer ContextHandle, GUID AdapterGuid, UInt32 Status)		AssocMgr	task_0	Informational		
-Microsoft-Windows-NWiFi	10076	0	task_010076(Pointer ContextHandle, GUID AdapterGuid, UInt32 Status)		AssocMgr	task_0	Informational		
-Microsoft-Windows-NWiFi	10077	0	task_010077(GUID AdapterGuid, Int32 TxUnicastCount, Int32 RxUnicastCount, Int32 TxBroadcastCount, Int32 RxBroadcastCount, Int32 TxMulticastCount, Int32 RxMulticastCount, UInt64 TimeDiffMs)		AssocMgr	task_0	Informational		
-Microsoft-Windows-NWiFi	10078	0	task_010078(GUID AdapterGuid, Int32 SessionId, Int32 Reason, Int32 StatusCode, Int32 SecurityEndpoint)		DisconnectedStandby	task_0	Informational		
-Microsoft-Windows-NWiFi	10079	0	task_010079(GUID AdapterGuid, Int32 DisconnectInStandby, Int32 EnforceDs)		DisconnectedStandby	task_0	Informational		
-Microsoft-Windows-NWiFi	10080	0	task_010080(GUID AdapterGuid, Int32 SessionId, Int32 Reason, Int32 StatusCode, Int32 SecurityEndpoint)		DisconnectedStandby	task_0	Informational		
-Microsoft-Windows-NWiFi	10081	0	task_010081(GUID AdapterGuid)		DisconnectedStandby	task_0	Informational		
-Microsoft-Windows-NWiFi	10082	0	task_010082(GUID AdapterGuid)		DisconnectedStandby	task_0	Informational		
-Microsoft-Windows-NWiFi	10083	0	task_010083(GUID AdapterGuid)		DisconnectedStandby	task_0	Informational		
-Microsoft-Windows-NWiFi	10084	0	task_010084(UnicodeString StatusAnnotation, UInt32 Status, UInt32 Context1)		AssocMgr ut:L2ConnectPath	task_0	Warning		
-Microsoft-Windows-NWiFi	10086	0	task_010086(UnicodeString BufferAnnotation, UInt32 BufferLength)		AssocMgr ut:L2ConnectPath	task_0	Warning		
-Microsoft-Windows-NWiFi	10087	0	task_010087(AnsiString LogLine)		AssocMgr ut:L2ConnectPath	task_0	Warning		
-Microsoft-Windows-NWiFi	10090	0	task_010090(UnicodeString StatusAnnotation, UInt32 Context1, UInt32 Context2)		AssocMgr ut:L2ConnectPath	task_0	Warning		
-Microsoft-Windows-NWiFi	10091	0	task_010091(Pointer pNwifiNbl, Pointer pNwifiNblContext, UInt32 Status, Pointer pTOS, Pointer pBOS)		NDISReq keyword_40000000000	task_0	Error		
-Microsoft-Windows-NWiFi	10092	0	task_010092(Pointer pNwifiNblContext, Pointer pOriginalNBL, Pointer pOriginalNblContext, UInt32 Status)		NDISReq keyword_40000000000	task_0	Error		
-Microsoft-Windows-NWiFi	20000	0	ConnecttosamenetworkonresumeStart(GUID InterfaceGuid)	Start		Connecttosamenetworkonresume	Informational		
-Microsoft-Windows-NWiFi	20001	0	ConnecttonetworkonresumeafterinterveningdisconnectStart(GUID InterfaceGuid)	Start		Connecttonetworkonresumeafterinterveningdisconnect	Informational		
-Microsoft-Windows-NWiFi	20002	0	ConnecttosamenetworkonresumeStop(GUID InterfaceGuid)	Stop		Connecttosamenetworkonresume	Informational		
-Microsoft-Windows-NWiFi	20003	0	ConnecttonetworkonresumeafterinterveningdisconnectStop(GUID InterfaceGuid)	Stop		Connecttonetworkonresumeafterinterveningdisconnect	Informational		
-Microsoft-Windows-NWiFi	20004	0	ConnecttosamenetworkonresumeStop20004(GUID InterfaceGuid)	Stop		Connecttosamenetworkonresume	Informational		
-Microsoft-Windows-NWiFi	20005	0	ConnecttonetworkonresumeafterinterveningdisconnectStop20005(GUID InterfaceGuid)	Stop		Connecttonetworkonresumeafterinterveningdisconnect	Informational		
-Microsoft-Windows-NWiFi	20006	0	ConnecttosamenetworkonresumeStart20006(GUID InterfaceGuid)	Start		Connecttosamenetworkonresume	Informational		
-Microsoft-Windows-NWiFi	20007	0	ConnecttonetworkonresumeafterinterveningdisconnectStart20007(GUID InterfaceGuid)	Start		Connecttonetworkonresumeafterinterveningdisconnect	Informational		
-Microsoft-Windows-NWiFi	20008	0	ConnecttonetworkonresumeafterinterveningdisconnectStop20008(GUID InterfaceGuid)	Stop		Connecttonetworkonresumeafterinterveningdisconnect	Informational		
-Microsoft-Windows-NWiFi	20009	0	ConnecttosamenetworkonresumeStop20009(GUID InterfaceGuid)	Stop		Connecttosamenetworkonresume	Informational		
-Microsoft-Windows-NWiFi	20010	0	ConnecttonetworkonresumeafterinterveningdisconnectStop20010(GUID InterfaceGuid)	Stop		Connecttonetworkonresumeafterinterveningdisconnect	Informational		
-Microsoft-Windows-NWiFi	20011	0	ConnecttosamenetworkonresumeStart20011(GUID InterfaceGuid)	Start		Connecttosamenetworkonresume	Informational		
-Microsoft-Windows-NWiFi	20012	0	ConnecttonetworkonresumeafterinterveningdisconnectStart20012(GUID InterfaceGuid)	Start		Connecttonetworkonresumeafterinterveningdisconnect	Informational		
-Microsoft-Windows-NWiFi	20013	0	ConnecttosamenetworkonresumeStop20013(GUID InterfaceGuid)	Stop		Connecttosamenetworkonresume	Informational		
-Microsoft-Windows-NWiFi	20014	0	ConnecttonetworkonresumeafterinterveningdisconnectStop20014(GUID InterfaceGuid)	Stop		Connecttonetworkonresumeafterinterveningdisconnect	Informational		
-Microsoft-Windows-NWiFi	20015	0	ConnecttonetworkonresumeafterinterveningdisconnectStop20015(GUID InterfaceGuid)	Stop		Connecttonetworkonresumeafterinterveningdisconnect	Informational		
-Microsoft-Windows-NWiFi	20016	0	ConnecttosamenetworkonresumeStart20016(GUID InterfaceGuid)	Start		Connecttosamenetworkonresume	Informational		
-Microsoft-Windows-NWiFi	20017	0	ConnecttosamenetworkonresumeStart20017(GUID InterfaceGuid)	Start		Connecttosamenetworkonresume	Informational		
-Microsoft-Windows-NWiFi	60001	0	task_060001(UInt32 ErrorCode, UInt32 Location, UInt32 Context)			task_0	Error		
-Microsoft-Windows-NWiFi	60002	0	task_060002(UInt32 WarningCode, UInt32 Location, UInt32 Context)			task_0	Warning		
-Microsoft-Windows-NWiFi	60003	0	task_060003(UInt8 NextState, UInt32 Context)		keyword_200000000000	task_0	Informational		
-Microsoft-Windows-NWiFi	60004	0	task_060004(UInt32 Context, UInt32 UpdateReasonCode)			task_0	Informational		
-Microsoft-Windows-NWiFi	60101	0	task_060101(UInt32 SourceAddress, UInt32 SourcePort, UInt32 DestinationAddress, UInt32 DestinationPort, UInt32 Protocol, UInt32 ReferenceContext)			task_0	Informational		
-Microsoft-Windows-NWiFi	60102	0	task_060102(Binary SourceAddress, UInt32 SourcePort, Binary DestinationAddress, UInt32 DestinationPort, UInt32 Protocol, UInt32 ReferenceContext)			task_0	Informational		
-Microsoft-Windows-NWiFi	60103	0	task_060103(GUID IfGuid, UInt32 IfIndex, UInt64 IfLuid, UInt32 ReferenceContext)			task_0	Informational		
+Microsoft-Windows-NWiFi	10000	0	Event_10000(Pointer ContextHandle, GUID AdapterGuid, UInt32 Status, UInt32 ResetStatus)		Init	task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	OID_DOT11_RESET_REQUEST Complete %3 ResetConfirmStatus=%4
+Microsoft-Windows-NWiFi	10001	0	Event_10001(Pointer ContextHandle, GUID AdapterGuid, UInt32 Function, UInt32 Status, UInt32 Length)		Ioctls	task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	IOCTL function=%3 Status=%4 Length=%5 bytes
+Microsoft-Windows-NWiFi	10002	0	Event_10002(Pointer ContextHandle, GUID AdapterGuid, UInt32 Status)		Ioctls	task_0	Warning	Microsoft-Windows-NWiFi/Diagnostic	Reject Scan Request: %3
+Microsoft-Windows-NWiFi	10003	0	Event_10003(Pointer ContextHandle, GUID AdapterGuid, UInt32 Status)		Ioctls	task_0	Error	Microsoft-Windows-NWiFi/Diagnostic	IOCTL_DOT11_WEP_DEFAULT_KEY_VALUE: There is no association
+Microsoft-Windows-NWiFi	10004	0	Event_10004(Pointer ContextHandle, GUID AdapterGuid, UInt32 AlgorithmId)		Ioctls Telemetry	task_0	Error	Microsoft-Windows-NWiFi/Diagnostic	Unsupported Mcast cipher algorithm %3
+Microsoft-Windows-NWiFi	10005	0	Event_10005(Pointer ContextHandle, GUID AdapterGuid, UInt32 SSIDCount, UInt8 SSIDList)		Ioctls ut:Configuration	task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	Desired SSID List %3 entries
+Microsoft-Windows-NWiFi	10006	0	Event_10006(Pointer ContextHandle, GUID AdapterGuid, UInt32 Status)		Ioctls Telemetry ut:Configuration	task_0	Error	Microsoft-Windows-NWiFi/Diagnostic	SetDesiredSSIDList failed, status = %3
+Microsoft-Windows-NWiFi	10007	0	Event_10007(Pointer ContextHandle, GUID AdapterGuid, UInt32 BSSType)		Ioctls ut:Configuration	task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	Set DesiredBSSType: %3
+Microsoft-Windows-NWiFi	10008	0	Event_10008(Pointer ContextHandle, GUID AdapterGuid, UInt32 BSSIDCount, Binary BSSIDList)		Ioctls ut:Configuration	task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	Desired BSSID List %3 entries
+Microsoft-Windows-NWiFi	10009	0	Event_10009(Pointer ContextHandle, GUID AdapterGuid, UInt32 AuthCount, UInt32 AuthAlgorithm)		Ioctls ut:Configuration	task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	Enabled AuthList %3 entries
+Microsoft-Windows-NWiFi	10010	0	Event_10010(Pointer ContextHandle, GUID AdapterGuid, Boolean Value, UInt32 Status)		Ioctls ut:Configuration	task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	Set ExcludeUnencrypted (%3): %4
+Microsoft-Windows-NWiFi	10011	0	Event_10011(Pointer ContextHandle, GUID AdapterGuid, Boolean Value, UInt32 Status)		Ioctls ut:Configuration	task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	Set HiddenNetworkEnabled (%3): %4
+Microsoft-Windows-NWiFi	10012	0	Event_10012(Pointer ContextHandle, GUID AdapterGuid)		RSNA LwtDiagnostic ut:ReceivePath ut:Authentication	task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	Drop cached M1: there is a pending 802.1x exchange
+Microsoft-Windows-NWiFi	10013	0	Event_10013(Pointer ContextHandle, GUID AdapterGuid, UInt64 ExpectedCounter, UInt64 ReceivedCounter)		RSNA ut:ReceivePath ut:Authentication keyword_10000000000	task_0	Warning	Microsoft-Windows-NWiFi/Diagnostic	Replay detected (our counter %3, received %4), dropping the packet
+Microsoft-Windows-NWiFi	10014	0	Event_10014(Pointer ContextHandle, GUID AdapterGuid, UInt32 ExpectedVer, UInt32 ReceivedVer)		RSNA LwtDiagnostic Telemetry ut:ReceivePath ut:Authentication	task_0	Warning	Microsoft-Windows-NWiFi/Diagnostic	Version number %3 not supported, Expecting %4
+Microsoft-Windows-NWiFi	10015	0	Event_10015(Pointer ContextHandle, GUID AdapterGuid, UInt32 FrameSequence, Binary SrcMAC, Binary DestMAC)		RSNA LwtDiagnostic ut:ReceivePath ut:Authentication	task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	Receive 1X packet G1: FrameSeq# %3: %4 ==> %5
+Microsoft-Windows-NWiFi	10016	0	Event_10016(Pointer ContextHandle, GUID AdapterGuid, UInt32 FrameSequence, Binary SrcMAC, Binary DestMAC)		RSNA LwtDiagnostic ut:ReceivePath ut:Authentication	task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	Receive 1X packet M1 (4 way handshake rekey - secure bit set): FrameSeq# %3: %4 ==> %5
+Microsoft-Windows-NWiFi	10017	0	Event_10017(Pointer ContextHandle, GUID AdapterGuid, UInt32 FrameSequence, Binary SrcMAC, Binary DestMAC)		RSNA LwtDiagnostic ut:ReceivePath ut:Authentication	task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	Receive 1X packet M1: FrameSeq# %3: %4 ==> %5
+Microsoft-Windows-NWiFi	10018	0	Event_10018(Pointer ContextHandle, GUID AdapterGuid, UInt32 FrameSequence, Binary SrcMAC, Binary DestMAC)		RSNA LwtDiagnostic ut:ReceivePath ut:Authentication	task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	Receive 1X packet M3: FrameSeq# %3: %4 ==> %5
+Microsoft-Windows-NWiFi	10019	0	Event_10019(Pointer ContextHandle, GUID AdapterGuid, Binary SrcMAC, Binary DestMAC)		RSNA LwtDiagnostic ut:SendPath ut:Authentication	task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	Send 1X packet G2: %3 ==> %4
+Microsoft-Windows-NWiFi	10020	0	Event_10020(Pointer ContextHandle, GUID AdapterGuid)		RSNA LwtDiagnostic ut:ReceivePath ut:Authentication	task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	Dot11ReceiveM1: aborted since the connection has changed
+Microsoft-Windows-NWiFi	10021	0	Event_10021(Pointer ContextHandle, GUID AdapterGuid, Binary SrcMAC, Binary DestMAC)		RSNA LwtDiagnostic ut:SendPath ut:Authentication	task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	Send 1X packet M2: %3 ==> %4
+Microsoft-Windows-NWiFi	10022	0	Event_10022(Pointer ContextHandle, GUID AdapterGuid, UInt32 Status)		RSNA LwtDiagnostic ut:ReceivePath ut:Authentication	task_0	Error	Microsoft-Windows-NWiFi/Diagnostic	Dot11ReceiveM1 failed with status %3
+Microsoft-Windows-NWiFi	10023	0	Event_10023(Pointer ContextHandle, GUID AdapterGuid, UInt32 Status)		RSNA LwtDiagnostic ut:ReceivePath ut:Authentication keyword_10000000000	task_0	Error	Microsoft-Windows-NWiFi/Diagnostic	Dot11ReceiveM3 failed with status %3
+Microsoft-Windows-NWiFi	10024	0	Event_10024(Pointer ContextHandle, GUID AdapterGuid)		RSNA LwtDiagnostic ut:ReceivePath ut:Authentication	task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	Dot11ReceiveM3: aborted since the connection has changed
+Microsoft-Windows-NWiFi	10025	0	Event_10025(Pointer ContextHandle, GUID AdapterGuid, Binary SrcMAC, Binary DestMAC)		RSNA LwtDiagnostic ut:SendPath ut:Authentication	task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	Send 1X packet M4: %3 ==> %4
+Microsoft-Windows-NWiFi	10026	0	Event_10026(Pointer ContextHandle, GUID AdapterGuid, UInt32 Status)		RSNA LwtDiagnostic ut:Configuration	task_0	Error	Microsoft-Windows-NWiFi/Diagnostic	Reject request of setting PMK since the caller is not current security endpoint
+Microsoft-Windows-NWiFi	10027	0	Event_10027(UInt32 FrameSequence, Binary SrcMAC, Binary DestMAC, UInt32 Status)		AuthUpcall ut:ReceivePath ut:Authentication	task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	Receive 1X packet: FrameSeq#%1: %2 ==> %3, Status %4
+Microsoft-Windows-NWiFi	10028	0	Event_10028(Pointer ContextHandle, GUID AdapterGuid, Binary SrcMAC, Binary DestMAC)		IODisp ut:SendPath ut:Authentication	task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	Send 1X packet: %3 ==> %4
+Microsoft-Windows-NWiFi	10029	0	Event_10029(Pointer Adapter, UInt32 OID, UInt32 PowerState)		NDISReq ut:Configuration	task_0	Error	Microsoft-Windows-NWiFi/Diagnostic	Abort OID request %2 (low power state): PowerState=%3
+Microsoft-Windows-NWiFi	10030	0	Event_10030(Pointer Adapter, UInt32 OID, UInt32 Status)		NDISReq ut:Configuration	task_0	Error	Microsoft-Windows-NWiFi/Diagnostic	QueryAdapterSync Error: %3 OID %2
+Microsoft-Windows-NWiFi	10031	0	Event_10031(Pointer Adapter, UInt32 OID, UInt32 Status)		NDISReq ut:Configuration	task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	RequestAdapterSync Error: %3 OID %2
+Microsoft-Windows-NWiFi	10032	0	Event_10032(Pointer Adapter, UInt32 OID, UInt32 Status)		NDISReq ut:Configuration	task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	CallAdapterSync Error: %3 OID %2
+Microsoft-Windows-NWiFi	10033	0	Event_10033(Pointer ContextHandle, GUID AdapterGuid, Binary MAC)		TKIPSec LwtDiagnostic ut:Authentication	task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	All MIC failure reports are sent. Notify miniport to disassociate from %3
+Microsoft-Windows-NWiFi	10034	0	Event_10034(Pointer ContextHandle, GUID AdapterGuid, UInt8 EndPointType)		Ioctls ut:Authentication	task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	Security endpoint type = %3
+Microsoft-Windows-NWiFi	10035	0	Event_10035(Pointer ContextHandle, GUID AdapterGuid, Boolean Enabled)		Ioctls ut:Authentication	task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	IHV Serialization Enabled: %3
+Microsoft-Windows-NWiFi	10036	0	Event_10036(Pointer ContextHandle, GUID AdapterGuid, Boolean Enabled)		Ioctls ut:Authentication	task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	Safe mode = %3
+Microsoft-Windows-NWiFi	10037	0	Event_10037(Pointer ContextHandle, GUID AdapterGuid, UInt8 ResetType, Binary MAC, Boolean DefaultMIB)		Reset ut:Configuration	task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	Reset %3 New MAC address %4 SetDefaultMIB=%5
+Microsoft-Windows-NWiFi	10038	0	Event_10038(Pointer ContextHandle, GUID AdapterGuid, UInt8 ResetType, Binary MAC, Boolean DefaultMIB)		Reset Telemetry ut:Configuration	task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	Reset %3 SetDefaultMIB=%5
+Microsoft-Windows-NWiFi	10039	0	Event_10039(Pointer ContextHandle, GUID AdapterGuid, UInt32 Status)		Reset ut:Configuration	task_0	Error	Microsoft-Windows-NWiFi/Diagnostic	Reject Reset Request: %3
+Microsoft-Windows-NWiFi	10040	0	Event_10040_Start(Pointer ContextHandle, GUID AdapterGuid, Binary MAC)	Start	AssocMgr Telemetry ut:L2ConnectPath	task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	Association Start: %3
+Microsoft-Windows-NWiFi	10041	0	Event_10041_Stop(Pointer ContextHandle, GUID AdapterGuid, Binary MAC, UInt32 Status)	Stop	AssocMgr Telemetry ut:L2ConnectPath	task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	Association Completion: %3 AssocStatus=%4
+Microsoft-Windows-NWiFi	10042	0	Event_10042(Pointer ContextHandle, GUID AdapterGuid, Binary MAC, UInt32 Reason)		AssocMgr Telemetry ut:ClosePath	task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	DisAssoc: %3 Reason: %4
+Microsoft-Windows-NWiFi	10043	0	Event_10043(Pointer ContextHandle, GUID AdapterGuid)		AssocMgr	task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	Defer roaming timer until system wakeup
+Microsoft-Windows-NWiFi	10044	0	Event_10044(Pointer ContextHandle, GUID AdapterGuid, UInt32 SessionId)		AssocMgr	task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	Mismatched session ID
+Microsoft-Windows-NWiFi	10045	0	Event_10045(Pointer ContextHandle, GUID AdapterGuid, UInt32 SessionId, Binary MAC)		AssocMgr ut:Authentication	task_0	Warning	Microsoft-Windows-NWiFi/Diagnostic	PortState: Auth Failed: %4
+Microsoft-Windows-NWiFi	10046	0	Event_10046(Pointer ContextHandle, GUID AdapterGuid, UInt32 SessionId, Binary MAC, Boolean Controlled, Boolean Authorized)		AssocMgr ut:Authentication	task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	SetPortState: %4: Controlled=%5 Authorized=%6
+Microsoft-Windows-NWiFi	10047	0	Event_10047(Pointer ContextHandle, GUID AdapterGuid, UInt32 SessionId, Binary MAC)		AssocMgr ut:Authentication	task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	Post Virtual PortDown Notification (MAC=%4) to Security Module
+Microsoft-Windows-NWiFi	10048	0	Event_10048(Pointer ContextHandle, GUID AdapterGuid, UInt32 Status)		AssocMgr ut:Configuration	task_0	Error	Microsoft-Windows-NWiFi/Diagnostic	Unable to set OID_DOT11_PRIVACY_EXEMPTION_LIST Status = %3
+Microsoft-Windows-NWiFi	10049	0	Event_10049(Pointer ContextHandle, GUID AdapterGuid, Pointer Irp)		AssocMgr ut:L2ConnectPath	task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	Cancel IOCTL_DOT11_CONNECT
+Microsoft-Windows-NWiFi	10050	0	Event_10050(Pointer ContextHandle, GUID AdapterGuid, UInt32 Status)		AssocMgr ut:L2ConnectPath	task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	OID_DOT11_CONNECT_REQUEST completes %3
+Microsoft-Windows-NWiFi	10051	0	Event_10051(Pointer ContextHandle, GUID AdapterGuid, UInt32 PowerState)		AssocMgr ut:L2ConnectPath	task_0	Error	Microsoft-Windows-NWiFi/Diagnostic	Fail Connect Request: Radio is off
+Microsoft-Windows-NWiFi	10052	0	Event_10052(Pointer ContextHandle, GUID AdapterGuid, UInt32 PowerState)		AssocMgr ut:L2ConnectPath	task_0	Error	Microsoft-Windows-NWiFi/Diagnostic	Fail Connect Request in low power state: %3
+Microsoft-Windows-NWiFi	10053	0	Event_10053(Pointer ContextHandle, GUID AdapterGuid, Pointer Irp)		AssocMgr ut:L2ConnectPath	task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	IOCTL_DOT11_CONNECT
+Microsoft-Windows-NWiFi	10054	0	Event_10054(Pointer ContextHandle, GUID AdapterGuid)		AssocMgr ut:ClosePath	task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	IOCTL_DOT11_DISCONNECT
+Microsoft-Windows-NWiFi	10055	0	Event_10055(Pointer ContextHandle, GUID AdapterGuid, UInt32 Status)		AssocMgr ut:ClosePath	task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	OID_DOT11_DISCONNECT_REQUEST Status = %3
+Microsoft-Windows-NWiFi	10056	0	Event_10056(Pointer ContextHandle, GUID AdapterGuid, UInt32 Status)		AssocMgr ut:ClosePath	task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	OID_DOT11_NIC_POWER_STATE Status = %3
+Microsoft-Windows-NWiFi	10057	0	Event_10057(Pointer ContextHandle, GUID AdapterGuid, UInt32 OldPowerState, UInt32 NewPowerState, Boolean Halting)		LWF ut:Configuration	task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	Old PowerState=%3, New PowerState=%4
+Microsoft-Windows-NWiFi	10058	0	Event_10058(Pointer ContextHandle, GUID AdapterGuid, UInt32 ConfiguredOpMode, UInt32 IMSupportedOpModes, UInt32 MiniPortSupportedOpModes)		LWF ut:Configuration	task_0	Error	Microsoft-Windows-NWiFi/Diagnostic	Change OpMode Failed: Capability is not supported (Configured = %3, IM supported = %4, MiniPort supported = %5)
+Microsoft-Windows-NWiFi	10059	0	Event_10059(Pointer ContextHandle, GUID AdapterGuid)		TKIPSec ut:Authentication	task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	Terminate the connection: too many TKIP-MIC countermeasures.
+Microsoft-Windows-NWiFi	10060	0	Event_10060(Binary Addr, UInt32 CipherAlgoId, UInt8 Direction, UInt32 Len)		ut:Authentication	task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	Pairwise Key (%1): Algo %2, Direction= %3, Len %4
+Microsoft-Windows-NWiFi	10061	0	Event_10061(UInt32 Index, UInt32 CipherAlgoId, UInt8 Direction, UInt32 Len)		ut:Authentication	task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	Default Key: Idx %1, Algo %2, Direction= %3, Len %4
+Microsoft-Windows-NWiFi	10062	0	Event_10062_Start(GUID AdapterGuid)	Start	AssocMgr ut:L2ConnectPath	task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	Connection Started
+Microsoft-Windows-NWiFi	10063	0	Event_10063_Stop(GUID AdapterGuid, UInt32 Status)	Stop	AssocMgr ut:L2ConnectPath	task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	Connection Completion Status=%2
+Microsoft-Windows-NWiFi	10064	0	Event_10064(Pointer ContextHandle, GUID AdapterGuid)		AssocMgr ut:ClosePath	task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	OID_DOT11_NIC_POWER_STATE Request
+Microsoft-Windows-NWiFi	10066	0	StartingdevicenetworkatIMdriverStart(GUID InterfaceGuid, Pointer ContextHandle, AnsiString MAC, AnsiString SSID)	Start	SOFTAP	StartingdevicenetworkatIMdriver	Informational	Microsoft-Windows-NWiFi/Diagnostic	802.11 IM driver has begun to start the device network, adapter guid = %1, Local MAC addr = %3, SSID = %4
+Microsoft-Windows-NWiFi	10067	0	StartingdevicenetworkatIMdriverStop(GUID InterfaceGuid, Pointer ContextHandle, AnsiString MAC, AnsiString SSID)	Stop	SOFTAP	StartingdevicenetworkatIMdriver	Informational	Microsoft-Windows-NWiFi/Diagnostic	802.11 IM driver has finished starting the device network, adapter guid = %1, Local MAC addr = %3, SSID = %4
+Microsoft-Windows-NWiFi	10068	0	StartingdevicenetworkatIMdriverStop10068(GUID InterfaceGuid, UInt32 ErrorCode, Pointer ContextHandle, AnsiString MAC, AnsiString SSID)	Stop	SOFTAP	StartingdevicenetworkatIMdriver	Error	Microsoft-Windows-NWiFi/Diagnostic	802.11 IM driver has failed to start the device network, error code = %2, adapter guid = %1, Local MAC addr = %4, SSID = %5
+Microsoft-Windows-NWiFi	10069	0	StoppingdevicenetworkatIMdriverStart(GUID InterfaceGuid, Pointer ContextHandle, AnsiString MAC, AnsiString SSID)	Start	SOFTAP	StoppingdevicenetworkatIMdriver	Informational	Microsoft-Windows-NWiFi/Diagnostic	802.11 IM driver has begun to stop the device network, adapter guid = %1, Local MAC addr = %3, SSID = %4
+Microsoft-Windows-NWiFi	10070	0	StoppingdevicenetworkatIMdriverStop(GUID InterfaceGuid, Pointer ContextHandle, AnsiString MAC, AnsiString SSID)	Stop	SOFTAP	StoppingdevicenetworkatIMdriver	Informational	Microsoft-Windows-NWiFi/Diagnostic	802.11 IM driver has finished stopping the device network, adapter guid = %1, Local MAC addr = %3, SSID = %4
+Microsoft-Windows-NWiFi	10071	0	StoppingdevicenetworkatIMdriverStop10071(GUID InterfaceGuid, UInt32 ErrorCode, Pointer ContextHandle, AnsiString MAC, AnsiString SSID)	Stop	SOFTAP	StoppingdevicenetworkatIMdriver	Informational	Microsoft-Windows-NWiFi/Diagnostic	802.11 IM driver has failed to stop the device network, error code = %2, adapter guid = %1, local MAC addr = %4, SSID = %5
+Microsoft-Windows-NWiFi	10072	0	Event_10072(UInt32 PowerMgmtMode, Boolean PowerMgmtModeSupported, GUID AdapterGuid, Binary MAC, AnsiString SSID)		PowerMgmt	task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	Results of querying power management mode: current power management mode = %1, power management mode supported by AP = %2, adapter guid = %3, AP MAC addr = %4, AP SSID = %5
+Microsoft-Windows-NWiFi	10073	0	EnterLowPowerState(GUID AdapterGuid, Boolean Halted)		SleepResume Telemetry	EnterLowPowerState	Informational	Microsoft-Windows-NWiFi/Diagnostic	Adapter going to sleep, adapter guid = %1, halted = %2
+Microsoft-Windows-NWiFi	10074	0	LeaveLowPowerState(GUID AdapterGuid)		SleepResume Telemetry	LeaveLowPowerState	Informational	Microsoft-Windows-NWiFi/Diagnostic	Adapter resumed from sleep, adapter guid = %1
+Microsoft-Windows-NWiFi	20000	0	ConnecttosamenetworkonresumeStart(GUID InterfaceGuid)	Start		Connecttosamenetworkonresume	Informational	Microsoft-Windows-NWiFi/Diagnostic	Resume from low power 1
+Microsoft-Windows-NWiFi	20001	0	ConnecttonetworkonresumeafterinterveningdisconnectStart(GUID InterfaceGuid)	Start		Connecttonetworkonresumeafterinterveningdisconnect	Informational	Microsoft-Windows-NWiFi/Diagnostic	Resume from low power 2
+Microsoft-Windows-NWiFi	20002	0	ConnecttosamenetworkonresumeStop(GUID InterfaceGuid)	Stop		Connecttosamenetworkonresume	Informational	Microsoft-Windows-NWiFi/Diagnostic	Port authorized 1
+Microsoft-Windows-NWiFi	20003	0	ConnecttonetworkonresumeafterinterveningdisconnectStop(GUID InterfaceGuid)	Stop		Connecttonetworkonresumeafterinterveningdisconnect	Informational	Microsoft-Windows-NWiFi/Diagnostic	Port authorized 2
+Microsoft-Windows-NWiFi	20004	0	ConnecttosamenetworkonresumeStop20004(GUID InterfaceGuid)	Stop		Connecttosamenetworkonresume	Informational	Microsoft-Windows-NWiFi/Diagnostic	Resume from low power (End trailing scenario) 1
+Microsoft-Windows-NWiFi	20005	0	ConnecttonetworkonresumeafterinterveningdisconnectStop20005(GUID InterfaceGuid)	Stop		Connecttonetworkonresumeafterinterveningdisconnect	Informational	Microsoft-Windows-NWiFi/Diagnostic	Resume from low power (End trailing scenario) 2
+Microsoft-Windows-NWiFi	20006	0	ConnecttosamenetworkonresumeStart20006(GUID InterfaceGuid)	Start		Connecttosamenetworkonresume	Informational	Microsoft-Windows-NWiFi/Diagnostic	Resume from low power 3
+Microsoft-Windows-NWiFi	20007	0	ConnecttonetworkonresumeafterinterveningdisconnectStart20007(GUID InterfaceGuid)	Start		Connecttonetworkonresumeafterinterveningdisconnect	Informational	Microsoft-Windows-NWiFi/Diagnostic	Resume from low power 4
+Microsoft-Windows-NWiFi	20008	0	ConnecttonetworkonresumeafterinterveningdisconnectStop20008(GUID InterfaceGuid)	Stop		Connecttonetworkonresumeafterinterveningdisconnect	Informational	Microsoft-Windows-NWiFi/Diagnostic	Port authorized 3
+Microsoft-Windows-NWiFi	20009	0	ConnecttosamenetworkonresumeStop20009(GUID InterfaceGuid)	Stop		Connecttosamenetworkonresume	Informational	Microsoft-Windows-NWiFi/Diagnostic	Resume from low power (End trailing scenario) 3
+Microsoft-Windows-NWiFi	20010	0	ConnecttonetworkonresumeafterinterveningdisconnectStop20010(GUID InterfaceGuid)	Stop		Connecttonetworkonresumeafterinterveningdisconnect	Informational	Microsoft-Windows-NWiFi/Diagnostic	Resume from low power (End trailing scenario) 4
+Microsoft-Windows-NWiFi	20011	0	ConnecttosamenetworkonresumeStart20011(GUID InterfaceGuid)	Start		Connecttosamenetworkonresume	Informational	Microsoft-Windows-NWiFi/Diagnostic	Resume from low power 5
+Microsoft-Windows-NWiFi	20012	0	ConnecttonetworkonresumeafterinterveningdisconnectStart20012(GUID InterfaceGuid)	Start		Connecttonetworkonresumeafterinterveningdisconnect	Informational	Microsoft-Windows-NWiFi/Diagnostic	Resume from low power 6
+Microsoft-Windows-NWiFi	20013	0	ConnecttosamenetworkonresumeStop20013(GUID InterfaceGuid)	Stop		Connecttosamenetworkonresume	Informational	Microsoft-Windows-NWiFi/Diagnostic	Resume from low power (End trailing scenario) 5
+Microsoft-Windows-NWiFi	20014	0	ConnecttonetworkonresumeafterinterveningdisconnectStop20014(GUID InterfaceGuid)	Stop		Connecttonetworkonresumeafterinterveningdisconnect	Informational	Microsoft-Windows-NWiFi/Diagnostic	Resume from low power (End trailing scenario) 6
+Microsoft-Windows-NWiFi	20015	0	ConnecttonetworkonresumeafterinterveningdisconnectStop20015(GUID InterfaceGuid)	Stop		Connecttonetworkonresumeafterinterveningdisconnect	Informational	Microsoft-Windows-NWiFi/Diagnostic	Port authorized 4
+Microsoft-Windows-NWiFi	20016	0	ConnecttosamenetworkonresumeStart20016(GUID InterfaceGuid)	Start		Connecttosamenetworkonresume	Informational	Microsoft-Windows-NWiFi/Diagnostic	Resume Reconnect to Same/Different netwkr scenario
+Microsoft-Windows-NWiFi	20017	0	ConnecttosamenetworkonresumeStart20017(GUID InterfaceGuid)	Start		Connecttosamenetworkonresume	Informational	Microsoft-Windows-NWiFi/Diagnostic	
+Microsoft-Windows-NWiFi	60001	0	Event_60001(UInt32 ErrorCode, UInt32 Location, UInt32 Context)			task_0	Error	Microsoft-Windows-NWiFi/Diagnostic	Error: %1 Location: %2 Context: %3
+Microsoft-Windows-NWiFi	60002	0	Event_60002(UInt32 WarningCode, UInt32 Location, UInt32 Context)			task_0	Warning	Microsoft-Windows-NWiFi/Diagnostic	Warning: %1 Location: %2 Context: %3
+Microsoft-Windows-NWiFi	60003	0	Event_60003(UInt8 NextState, UInt32 Context)		keyword_200000000000	task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	Transitioned to State: %1 Context: %2
+Microsoft-Windows-NWiFi	60004	0	Event_60004(UInt32 Context, UInt32 UpdateReasonCode)			task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	Updated Context: %1 Update Reason: %2
+Microsoft-Windows-NWiFi	60101	0	Event_60101(UInt32 SourceAddress, UInt32 SourcePort, UInt32 DestinationAddress, UInt32 DestinationPort, UInt32 Protocol, UInt32 ReferenceContext)			task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	SourceAddress: %1 SourcePort: %2 DestinationAddress: %3 DestinationPort: %4 Protocol: %5 ReferenceContext: %6
+Microsoft-Windows-NWiFi	60102	0	Event_60102(Binary SourceAddress, UInt32 SourcePort, Binary DestinationAddress, UInt32 DestinationPort, UInt32 Protocol, UInt32 ReferenceContext)			task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	SourceAddress: %1 SourcePort: %2 DestinationAddress: %3 DestinationPort: %4 Protocol: %5 ReferenceContext: %6
+Microsoft-Windows-NWiFi	60103	0	Event_60103(GUID IfGuid, UInt32 IfIndex, UInt64 IfLuid, UInt32 ReferenceContext)			task_0	Informational	Microsoft-Windows-NWiFi/Diagnostic	Interface Guid: %1 IfIndex: %2 Interface Luid: %3 ReferenceContext: %4

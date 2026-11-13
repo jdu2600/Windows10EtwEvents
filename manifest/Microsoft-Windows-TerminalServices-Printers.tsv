@@ -1,17 +1,17 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-TerminalServices-Printers	1100	0	task_0(UnicodeString Param1)			task_0	Error		
-Microsoft-Windows-TerminalServices-Printers	1102	0	task_01102(UnicodeString Param1, UnicodeString Param2)			task_0	Error		
-Microsoft-Windows-TerminalServices-Printers	1103	0	task_01103()			task_0	Error		
-Microsoft-Windows-TerminalServices-Printers	1105	0	task_01105(UnicodeString Param1)			task_0	Error		
-Microsoft-Windows-TerminalServices-Printers	1107	0	task_01107(UnicodeString Param1)			task_0	Error		
-Microsoft-Windows-TerminalServices-Printers	1108	0	task_01108(UnicodeString Param1)			task_0	Warning		
-Microsoft-Windows-TerminalServices-Printers	1109	0	task_01109(UnicodeString Param1)			task_0	Error		
-Microsoft-Windows-TerminalServices-Printers	1110	0	task_01110(UnicodeString Param1)			task_0	Error		
-Microsoft-Windows-TerminalServices-Printers	1111	0	task_01111(UnicodeString Param1, UnicodeString Param2)			task_0	Error		
-Microsoft-Windows-TerminalServices-Printers	1112	0	task_01112()			task_0	Error		
-Microsoft-Windows-TerminalServices-Printers	1113	0	task_01113()			task_0	Error		
-Microsoft-Windows-TerminalServices-Printers	1114	0	task_01114()			task_0	Warning		
-Microsoft-Windows-TerminalServices-Printers	1115	0	task_01115()			task_0	Error		
-Microsoft-Windows-TerminalServices-Printers	1116	0	task_01116(UnicodeString Param1)			task_0	Error		
-Microsoft-Windows-TerminalServices-Printers	1123	0	task_01123(UnicodeString Param1, UnicodeString Param2)			task_0	Error		
-Microsoft-Windows-TerminalServices-Printers	1124	0	task_01124(UnicodeString Param1, UnicodeString Param2)			task_0	Error		
+Microsoft-Windows-TerminalServices-Printers	1100	0	Event_1100(UnicodeString Param1)			task_0	Error	Microsoft-Windows-TerminalServices-Printers/Admin	TS RDPDR Device Redirection failed to initialize for a single user session %1.  Serial, Parallel, Printer, and File System Redirection will be disabled.  Look in the System event log for other related errors.
+Microsoft-Windows-TerminalServices-Printers	1102	0	Event_1102(UnicodeString Param1, UnicodeString Param2)			task_0	Error	Microsoft-Windows-TerminalServices-Printers/Admin	Driver %1 required for printer %2 is not installed on the server. Contact the administrator to install the driver before you log in again.
+Microsoft-Windows-TerminalServices-Printers	1103	0	Event_1103()			task_0	Error	Microsoft-Windows-TerminalServices-Printers/Admin	An internal communication error occurred.  Redirected printing will no longer function for a single user session.  Check the status of the Remote Desktop Device Redirector in the System folder of Device Manager.
+Microsoft-Windows-TerminalServices-Printers	1105	0	Event_1105(UnicodeString Param1)			task_0	Error	Microsoft-Windows-TerminalServices-Printers/Admin	Printer security information for the printer %1 could not be set.
+Microsoft-Windows-TerminalServices-Printers	1107	0	Event_1107(UnicodeString Param1)			task_0	Error	Microsoft-Windows-TerminalServices-Printers/Admin	The printer %1 could not be deleted.
+Microsoft-Windows-TerminalServices-Printers	1108	0	Event_1108(UnicodeString Param1)			task_0	Warning	Microsoft-Windows-TerminalServices-Printers/Admin	Configuration information for the %1 printer could not be restored.
+Microsoft-Windows-TerminalServices-Printers	1109	0	Event_1109(UnicodeString Param1)			task_0	Error	Microsoft-Windows-TerminalServices-Printers/Admin	The %1 printer could not be set as the default printer.
+Microsoft-Windows-TerminalServices-Printers	1110	0	Event_1110(UnicodeString Param1)			task_0	Error	Microsoft-Windows-TerminalServices-Printers/Admin	An error occurred during processing of %1. The file might be corrupted. Run Setup again to reinstall the file.
+Microsoft-Windows-TerminalServices-Printers	1111	0	Event_1111(UnicodeString Param1, UnicodeString Param2)			task_0	Error	Microsoft-Windows-TerminalServices-Printers/Admin	Driver %1 required for printer %2 is unknown. Contact the administrator to install the driver before you log in again.
+Microsoft-Windows-TerminalServices-Printers	1112	0	Event_1112()			task_0	Error	Microsoft-Windows-TerminalServices-Printers/Admin	Failed to register for user printing preferences change notification.  Open the Services snap-in and confirm that the Printer Spooler service is running
+Microsoft-Windows-TerminalServices-Printers	1113	0	Event_1113()			task_0	Error	Microsoft-Windows-TerminalServices-Printers/Admin	There is not enough memory to complete the operation. Save your work, close other programs, and then try again.
+Microsoft-Windows-TerminalServices-Printers	1114	0	Event_1114()			task_0	Warning	Microsoft-Windows-TerminalServices-Printers/Admin	Error communicating with the Spooler system service.  Open the Services snap-in and confirm that the Print Spooler service is running.
+Microsoft-Windows-TerminalServices-Printers	1115	0	Event_1115()			task_0	Error	Microsoft-Windows-TerminalServices-Printers/Admin	Unexpected internal error in TS RDP device redirection.  Contact technical support.
+Microsoft-Windows-TerminalServices-Printers	1116	0	Event_1116(UnicodeString Param1)			task_0	Error	Microsoft-Windows-TerminalServices-Printers/Admin	The printer %1 cannot be redirected by using Remote Desktop Easy Print. The client computer may not have a version of the Remote Desktop Connection client or Microsoft .NET Framework installed that supports this driver.
+Microsoft-Windows-TerminalServices-Printers	1123	0	Event_1123(UnicodeString Param1, UnicodeString Param2)			task_0	Error	Microsoft-Windows-TerminalServices-Printers/Admin	The Print Spooler failed to add the printer %1, port %2 because of a port error. The Print Spooler will not try again to add the printer.
+Microsoft-Windows-TerminalServices-Printers	1124	0	Event_1124(UnicodeString Param1, UnicodeString Param2)			task_0	Error	Microsoft-Windows-TerminalServices-Printers/Admin	The number of printers per session limit was reached. The following print queue was not created: \r\n\r\nPrinter = %1\r\nPort = %2

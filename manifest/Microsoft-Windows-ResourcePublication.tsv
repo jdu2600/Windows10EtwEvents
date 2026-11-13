@@ -1,11 +1,11 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-ResourcePublication	100	0	task_0(UnicodeString Argument)		core	task_0	Informational		
-Microsoft-Windows-ResourcePublication	101	0	task_0101(UnicodeString Argument)		core	task_0	Informational		
-Microsoft-Windows-ResourcePublication	102	0	task_0102(UnicodeString Argument)		core	task_0	Informational		
-Microsoft-Windows-ResourcePublication	103	0	task_0103(UnicodeString Argument)		core	task_0	Informational		
-Microsoft-Windows-ResourcePublication	104	0	task_0104(UnicodeString Argument)		core	task_0	Informational		
-Microsoft-Windows-ResourcePublication	1000	0	task_01000(UnicodeString Argument)		core	task_0	Error		
-Microsoft-Windows-ResourcePublication	1001	0	task_01001(UnicodeString Argument)		core	task_0	Error		
-Microsoft-Windows-ResourcePublication	1002	0	task_01002(UnicodeString Argument)		core	task_0	Error		
-Microsoft-Windows-ResourcePublication	1003	0	task_01003(UnicodeString Function, UInt32 HRESULT, UInt32 Line, AnsiString Filename)		core	task_0	Error		
-Microsoft-Windows-ResourcePublication	1004	0	task_01004(UnicodeString Argument)		core	task_0	Error		
+Microsoft-Windows-ResourcePublication	100	0	Event_100(UnicodeString Argument)		core	task_0	Informational	Microsoft-Windows-ResourcePublication/Tracing	Successfully published element %1.
+Microsoft-Windows-ResourcePublication	101	0	Event_101(UnicodeString Argument)		core	task_0	Informational	Microsoft-Windows-ResourcePublication/Tracing	Successfully removed element %1 from publication.
+Microsoft-Windows-ResourcePublication	102	0	Event_102(UnicodeString Argument)		core	task_0	Informational	Microsoft-Windows-ResourcePublication/Tracing	The service temporarily stopped publishing because of a power event.
+Microsoft-Windows-ResourcePublication	103	0	Event_103(UnicodeString Argument)		core	task_0	Informational	Microsoft-Windows-ResourcePublication/Tracing	The service stopped publishing because the default computer information has been removed.  The user has elected to opt out of publishing on this computer.
+Microsoft-Windows-ResourcePublication	104	0	Event_104(UnicodeString Argument)		core	task_0	Informational	Microsoft-Windows-ResourcePublication/Tracing	The service is publishing to the network.
+Microsoft-Windows-ResourcePublication	1000	0	Event_1000(UnicodeString Argument)		core	task_0	Error	System	Element %1 could not be published because the maximum number of 20 published elements has been reached. Reduce the number of published elements or remove %1 from publication.
+Microsoft-Windows-ResourcePublication	1001	0	Event_1001(UnicodeString Argument)		core	task_0	Error	System	The metadata of element %1 would cause the total published metadata to be more than 32k, which is the maximum allowable size for all published elements. Reduce the number of published elements, remove %1 from publication, or reduce the size of the metadata of element %1.
+Microsoft-Windows-ResourcePublication	1002	0	Event_1002(UnicodeString Argument)		core	task_0	Error	System	Element %1 failed to publish.  Ensure that both PKEY_PUBSVCS_METADATA and PKEY_PUBSVCS_TYPE are set properly on the function instance and there were no errors adding the function instance.
+Microsoft-Windows-ResourcePublication	1003	0	Event_1003(UnicodeString Function, UInt32 HRESULT, UInt32 Line, AnsiString Filename)		core	task_0	Error	Microsoft-Windows-ResourcePublication/Tracing	Error calling function %1.  The return value was %2.
+Microsoft-Windows-ResourcePublication	1004	0	Event_1004(UnicodeString Argument)		core	task_0	Error	System	The metadata of element %1 is too large.  The maximum allowed size is 2048 bytes.  Reduce the size of the metadata of element %1.

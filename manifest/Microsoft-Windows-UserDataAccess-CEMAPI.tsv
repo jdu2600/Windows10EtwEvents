@@ -1,6 +1,6 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-UserDataAccess-CEMAPI	1	0	task_0(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		Error	task_0	Error		
-Microsoft-Windows-UserDataAccess-CEMAPI	2	0	task_02(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		Warning	task_0	Warning		
+Microsoft-Windows-UserDataAccess-CEMAPI	1	0	Event_1(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		Error	task_0	Error		Error: %1 Location: %2 Line Number: %3
+Microsoft-Windows-UserDataAccess-CEMAPI	2	0	Event_2(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		Warning	task_0	Warning		Error Propagated: %1 Location: %2 Line Number: %3
 Microsoft-Windows-UserDataAccess-CEMAPI	3	0	Trace(Pointer Message)		debug	Trace	Verbose		
 Microsoft-Windows-UserDataAccess-CEMAPI	4011	0	FOLDER_EMPTYFOLDERStart()	Start	Performance	FOLDER_EMPTYFOLDER	Verbose		
 Microsoft-Windows-UserDataAccess-CEMAPI	4012	0	FOLDER_EMPTYFOLDERStop()	Stop	Performance	FOLDER_EMPTYFOLDER	Verbose		
@@ -136,7 +136,7 @@ Microsoft-Windows-UserDataAccess-CEMAPI	4612	0	CONVERSATIONID_CREATEHASHStart()	
 Microsoft-Windows-UserDataAccess-CEMAPI	4613	0	CONVERSATIONID_CREATEHASHStop()	Stop	Performance	CONVERSATIONID_CREATEHASH	Verbose		
 Microsoft-Windows-UserDataAccess-CEMAPI	4700	0	SHARECONTENTStart()	Start	Performance	SHARECONTENT	Verbose		
 Microsoft-Windows-UserDataAccess-CEMAPI	4701	0	SHARECONTENTStop()	Stop	Performance	SHARECONTENT	Verbose		
-Microsoft-Windows-UserDataAccess-CEMAPI	4800	0	task_04800()		CEMAPI	task_0	Verbose		
-Microsoft-Windows-UserDataAccess-CEMAPI	4801	0	task_04801()		CEMAPI	task_0	Informational		
-Microsoft-Windows-UserDataAccess-CEMAPI	4802	0	task_04802()		CEMAPI	task_0	Informational		
-Microsoft-Windows-UserDataAccess-CEMAPI	4803	0	task_04803(UInt32 Prop_Hex_UInt32)		CEMAPI Warning	task_0	Warning		
+Microsoft-Windows-UserDataAccess-CEMAPI	4800	0	Event_4800()		CEMAPI	task_0	Verbose		MAPI Context is being deleted
+Microsoft-Windows-UserDataAccess-CEMAPI	4801	0	Event_4801()		CEMAPI	task_0	Informational		MAPI Event is lost
+Microsoft-Windows-UserDataAccess-CEMAPI	4802	0	Event_4802()		CEMAPI	task_0	Informational		MAPI Event data error
+Microsoft-Windows-UserDataAccess-CEMAPI	4803	0	Event_4803(UInt32 Prop_Hex_UInt32)		CEMAPI Warning	task_0	Warning		Unknown prop tag seen in ConvertDatabasePropertyTagsToMapiTags: %1

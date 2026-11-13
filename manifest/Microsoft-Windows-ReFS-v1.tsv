@@ -1,20 +1,20 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-ReFS-v1	130	0	task_0(UInt16 VolumeIdLength, UnicodeString VolumeId, UnicodeString RepairDetail, UInt16 RepairDataLength, Binary RepairData)			task_0	Warning		
-Microsoft-Windows-ReFS-v1	131	0	task_0131(UInt16 VolumeIdLength, UnicodeString VolumeId, UnicodeString RepairDetail, UInt16 RepairDataLength, Binary RepairData)			task_0	Error		
-Microsoft-Windows-ReFS-v1	132	0	task_0132(UInt16 ObjectNameLength, UnicodeString ObjectName, HexInt32 FailureReason)			task_0	Warning		
-Microsoft-Windows-ReFS-v1	133	0	task_0133(UInt16 ObjectNameLength, UnicodeString ObjectName, HexInt32 FailureReason)			task_0	Error		
-Microsoft-Windows-ReFS-v1	134	0	task_0134(UInt16 VolumeIdLength, UnicodeString VolumeId, HexInt32 FailureReason)			task_0	Error		
-Microsoft-Windows-ReFS-v1	135	0	task_0135(UInt16 VolumeIdLength, UnicodeString VolumeId, HexInt32 FailureReason)			task_0	Error		
-Microsoft-Windows-ReFS-v1	136	0	task_0136(UInt16 VolumeIdLength, UnicodeString VolumeId, HexInt32 FailureReason)			task_0	Warning		
-Microsoft-Windows-ReFS-v1	237	0	task_0237(UInt32 SqmType, GUID SqmSessionGuid, UInt32 SqmID, UInt32 SqmDWORDDatapointValue)			task_0	Informational		
-Microsoft-Windows-ReFS-v1	238	0	task_0238(UInt32 SqmType, GUID SqmSessionGuid, UInt32 SqmID, UnicodeString SqmStringDatapointValue)			task_0	Informational		
-Microsoft-Windows-ReFS-v1	272	0	task_0272(UInt32 SqmType, GUID SqmSessionGuid, UInt32 SqmID, UInt32 SqmProcessHashValue, UInt32 SqmStreamRowLength, UInt16 SqmStreamRow)			task_0	Informational		
-Microsoft-Windows-ReFS-v1	273	0	task_0273(UInt32 SqmType, GUID SqmSessionGuid, UInt32 SqmID, UInt32 SqmProcessHashValue, UInt32 SqmStreamRowLength, UInt32 SqmStreamEntriesSize, Binary SqmStreamEntries, UInt32 SqmStreamFlags)			task_0	Informational		
-Microsoft-Windows-ReFS-v1	274	0	task_0274(UInt32 SqmType, GUID SqmSessionGuid, UInt32 SqmID, UInt64 SqmDWORD64DatapointValue)			task_0	Informational		
-Microsoft-Windows-ReFS-v1	513	0	task_0513(UInt16 ObjectNameLength, UnicodeString ObjectName, HexInt32 FailureReason)			task_0	Warning		
-Microsoft-Windows-ReFS-v1	514	0	task_0514(UInt16 ObjectNameLength, UnicodeString ObjectName, HexInt32 FailureReason)			task_0	Error		
-Microsoft-Windows-ReFS-v1	515	0	task_0515(UInt16 ObjectNameLength, UnicodeString ObjectName, HexInt32 FailureReason)			task_0	Warning		
-Microsoft-Windows-ReFS-v1	516	0	task_0516(UInt16 ObjectNameLength, UnicodeString ObjectName, HexInt32 FailureReason)			task_0	Error		
-Microsoft-Windows-ReFS-v1	519	0	task_0519(UInt16 ObjectNameLength, UnicodeString ObjectName, HexInt32 FailureReason)			task_0	Warning		
-Microsoft-Windows-ReFS-v1	520	0	task_0520(UInt16 ObjectNameLength, UnicodeString ObjectName, HexInt32 FailureReason)			task_0	Error		
-Microsoft-Windows-ReFS-v1	521	0	task_0521(UInt16 ObjectNameLength, UnicodeString ObjectName, HexInt32 FailureReason)			task_0	Warning		
+Microsoft-Windows-ReFS-v1	130	0	Event_130(UInt16 VolumeIdLength, UnicodeString VolumeId, UnicodeString RepairDetail, UInt16 RepairDataLength, Binary RepairData)			task_0	Warning	System	The file system structure on volume %2 has now been repaired.
+Microsoft-Windows-ReFS-v1	131	0	Event_131(UInt16 VolumeIdLength, UnicodeString VolumeId, UnicodeString RepairDetail, UInt16 RepairDataLength, Binary RepairData)			task_0	Error	System	The file system structure on volume %2 cannot be corrected.
+Microsoft-Windows-ReFS-v1	132	0	Event_132(UInt16 ObjectNameLength, UnicodeString ObjectName, HexInt32 FailureReason)			task_0	Warning	System	The file system detected a checksum error and was able to correct it. The name of the file or folder is "%2".
+Microsoft-Windows-ReFS-v1	133	0	Event_133(UInt16 ObjectNameLength, UnicodeString ObjectName, HexInt32 FailureReason)			task_0	Error	System	The file system detected a checksum error and was not able to correct it. The name of the file or folder is "%2".
+Microsoft-Windows-ReFS-v1	134	0	Event_134(UInt16 VolumeIdLength, UnicodeString VolumeId, HexInt32 FailureReason)			task_0	Error	System	The file system was unable to write metadata to the media backing volume %2. A write failed with status "%3" ReFS will take the volume offline. It may be mounted again automatically.
+Microsoft-Windows-ReFS-v1	135	0	Event_135(UInt16 VolumeIdLength, UnicodeString VolumeId, HexInt32 FailureReason)			task_0	Error	System	Volume %2 is formatted as ReFS but ReFS is unable to mount it; ReFS encountered status %3.
+Microsoft-Windows-ReFS-v1	136	0	Event_136(UInt16 VolumeIdLength, UnicodeString VolumeId, HexInt32 FailureReason)			task_0	Warning	System	Volume "%2" was mounted in an older version of Windows. Some features may be lost.
+Microsoft-Windows-ReFS-v1	237	0	Event_237(UInt32 SqmType, GUID SqmSessionGuid, UInt32 SqmID, UInt32 SqmDWORDDatapointValue)			task_0	Informational		
+Microsoft-Windows-ReFS-v1	238	0	Event_238(UInt32 SqmType, GUID SqmSessionGuid, UInt32 SqmID, UnicodeString SqmStringDatapointValue)			task_0	Informational		
+Microsoft-Windows-ReFS-v1	272	0	Event_272(UInt32 SqmType, GUID SqmSessionGuid, UInt32 SqmID, UInt32 SqmProcessHashValue, UInt32 SqmStreamRowLength, UInt16 SqmStreamRow)			task_0	Informational		
+Microsoft-Windows-ReFS-v1	273	0	Event_273(UInt32 SqmType, GUID SqmSessionGuid, UInt32 SqmID, UInt32 SqmProcessHashValue, UInt32 SqmStreamRowLength, UInt32 SqmStreamEntriesSize, Binary SqmStreamEntries, UInt32 SqmStreamFlags)			task_0	Informational		
+Microsoft-Windows-ReFS-v1	274	0	Event_274(UInt32 SqmType, GUID SqmSessionGuid, UInt32 SqmID, UInt64 SqmDWORD64DatapointValue)			task_0	Informational		
+Microsoft-Windows-ReFS-v1	513	0	Event_513(UInt16 ObjectNameLength, UnicodeString ObjectName, HexInt32 FailureReason)			task_0	Warning	System	The file system detected a corruption on a file. The file has been removed from the file system namespace. The name of the file is "%2".
+Microsoft-Windows-ReFS-v1	514	0	Event_514(UInt16 ObjectNameLength, UnicodeString ObjectName, HexInt32 FailureReason)			task_0	Error	System	The file system detected a corruption on a file. The file system may have failed to remove it from the file system namespace. The name of the file is "%2".
+Microsoft-Windows-ReFS-v1	515	0	Event_515(UInt16 ObjectNameLength, UnicodeString ObjectName, HexInt32 FailureReason)			task_0	Warning	System	The file system detected a corruption on a folder. Contents of the folder have been removed from the file system namespace. The name of the folder is "%2".
+Microsoft-Windows-ReFS-v1	516	0	Event_516(UInt16 ObjectNameLength, UnicodeString ObjectName, HexInt32 FailureReason)			task_0	Error	System	The file system detected a corruption on a folder. The file system may have failed to remove contents of the folder from the file system namespace. The name of the folder is "%2".
+Microsoft-Windows-ReFS-v1	519	0	Event_519(UInt16 ObjectNameLength, UnicodeString ObjectName, HexInt32 FailureReason)			task_0	Warning	System	The file system detected a corruption on file system metadata. The name of the stream is "%2".
+Microsoft-Windows-ReFS-v1	520	0	Event_520(UInt16 ObjectNameLength, UnicodeString ObjectName, HexInt32 FailureReason)			task_0	Error	System	The file system detected a corruption on file system metadata. The name of the stream is "%2".
+Microsoft-Windows-ReFS-v1	521	0	Event_521(UInt16 ObjectNameLength, UnicodeString ObjectName, HexInt32 FailureReason)			task_0	Warning	System	Volume "%2" detected a corruption on file system metadata. It will lose self-healing features.

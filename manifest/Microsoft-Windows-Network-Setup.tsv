@@ -1,25 +1,25 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-Network-Setup	100	0	RunserviceStart()	Start		Runservice	Informational		
-Microsoft-Windows-Network-Setup	101	0	Runservice()			Runservice	Informational		
-Microsoft-Windows-Network-Setup	102	0	Runservice102(Int32 Code)			Runservice	Error		
-Microsoft-Windows-Network-Setup	110	0	Runservice110()			Runservice	Informational		
-Microsoft-Windows-Network-Setup	111	0	Runservice111()			Runservice	Informational		
-Microsoft-Windows-Network-Setup	112	0	Runservice112()			Runservice	Informational		
-Microsoft-Windows-Network-Setup	113	0	RunserviceStop()	Stop		Runservice	Informational		
-Microsoft-Windows-Network-Setup	200	0	TransactionStart(GUID TransactionGuid, UInt32 EnvironmentType)	Start		Transaction	Informational		
-Microsoft-Windows-Network-Setup	201	0	TransactionStop(GUID TransactionGuid)	Stop		Transaction	Informational		
-Microsoft-Windows-Network-Setup	202	0	CalculatebindingsStart(GUID TransactionGuid)	Start		Calculatebindings	Informational		
-Microsoft-Windows-Network-Setup	203	0	CalculatebindingsStop(GUID TransactionGuid)	Stop		Calculatebindings	Informational		
-Microsoft-Windows-Network-Setup	204	0	CommitchangesStart(GUID TransactionGuid)	Start		Commitchanges	Informational		
-Microsoft-Windows-Network-Setup	205	0	CommitchangesStop(GUID TransactionGuid)	Stop		Commitchanges	Informational		
-Microsoft-Windows-Network-Setup	300	0	ExternalAPIStart(GUID TransactionGuid, UInt32 Api)	Start		ExternalAPI	Informational		
-Microsoft-Windows-Network-Setup	301	0	ExternalAPIStop(GUID TransactionGuid, UInt32 Api, Int32 Code)	Stop		ExternalAPI	Informational		
-Microsoft-Windows-Network-Setup	400	0	PlugincallbackStart(GUID TransactionGuid, UInt32 PluginId, UnicodeString PluginName, UInt32 Api)	Start		Plugincallback	Informational		
-Microsoft-Windows-Network-Setup	401	0	PlugincallbackStop(GUID TransactionGuid, UInt32 Output, Int32 Code)	Stop		Plugincallback	Informational		
-Microsoft-Windows-Network-Setup	500	0	OperationStart(GUID TransactionGuid, UInt32 OperationType, UInt32 ObjectType, GUID ObjectId, UInt16 PropertyBufferSize, Binary PropertyBuffer)	Start		Operation	Informational		
-Microsoft-Windows-Network-Setup	501	0	OperationStop(GUID TransactionGuid, Int32 Code)	Stop		Operation	Informational		
-Microsoft-Windows-Network-Setup	600	0	INetCfgAPIStart(UInt32 Api)	Start		INetCfgAPI	Informational		
-Microsoft-Windows-Network-Setup	601	0	INetCfgAPIStop(Int32 Code)	Stop		INetCfgAPI	Informational		
-Microsoft-Windows-Network-Setup	700	0	INetCfgNotifyObjectStart(GUID TransactionGuid, UnicodeString ComponentId, UInt32 Api, UInt32 Parameter1, UnicodeString Parameter2)	Start		INetCfgNotifyObject	Informational		
-Microsoft-Windows-Network-Setup	701	0	INetCfgNotifyObjectStop(Int32 Code)	Stop		INetCfgNotifyObject	Informational		
-Microsoft-Windows-Network-Setup	702	0	INetCfgNotifyObjectStop702(Int32 Code)	Stop		INetCfgNotifyObject	Warning		
+Microsoft-Windows-Network-Setup	100	0	RunserviceStart()	Start		Runservice	Informational	Microsoft-Windows-Network-Setup/Diagnostic	The Network Setup service is starting
+Microsoft-Windows-Network-Setup	101	0	Runservice()			Runservice	Informational	Microsoft-Windows-Network-Setup/Diagnostic	The Network Setup service has started
+Microsoft-Windows-Network-Setup	102	0	Runservice102(Int32 Code)			Runservice	Error	Microsoft-Windows-Network-Setup/Diagnostic	The Network Setup service failed to start with error %1
+Microsoft-Windows-Network-Setup	110	0	Runservice110()			Runservice	Informational	Microsoft-Windows-Network-Setup/Diagnostic	The Network Setup service will stop due to inactivity
+Microsoft-Windows-Network-Setup	111	0	Runservice111()			Runservice	Informational	Microsoft-Windows-Network-Setup/Diagnostic	The Network Setup service will stop due to a user request
+Microsoft-Windows-Network-Setup	112	0	Runservice112()			Runservice	Informational	Microsoft-Windows-Network-Setup/Diagnostic	The Network Setup service is stopping
+Microsoft-Windows-Network-Setup	113	0	RunserviceStop()	Stop		Runservice	Informational	Microsoft-Windows-Network-Setup/Diagnostic	The Network Setup service has stopped
+Microsoft-Windows-Network-Setup	200	0	TransactionStart(GUID TransactionGuid, UInt32 EnvironmentType)	Start		Transaction	Informational	Microsoft-Windows-Network-Setup/Diagnostic	A new transaction has started
+Microsoft-Windows-Network-Setup	201	0	TransactionStop(GUID TransactionGuid)	Stop		Transaction	Informational	Microsoft-Windows-Network-Setup/Diagnostic	A transaction has been closed
+Microsoft-Windows-Network-Setup	202	0	CalculatebindingsStart(GUID TransactionGuid)	Start		Calculatebindings	Informational	Microsoft-Windows-Network-Setup/Diagnostic	Network Setup has begun calculating new driver bindings
+Microsoft-Windows-Network-Setup	203	0	CalculatebindingsStop(GUID TransactionGuid)	Stop		Calculatebindings	Informational	Microsoft-Windows-Network-Setup/Diagnostic	Network Setup has finished calculating new driver bindings
+Microsoft-Windows-Network-Setup	204	0	CommitchangesStart(GUID TransactionGuid)	Start		Commitchanges	Informational	Microsoft-Windows-Network-Setup/Diagnostic	Network Setup has begun committing changes to the registry
+Microsoft-Windows-Network-Setup	205	0	CommitchangesStop(GUID TransactionGuid)	Stop		Commitchanges	Informational	Microsoft-Windows-Network-Setup/Diagnostic	Network Setup has finished committing changes to the registry
+Microsoft-Windows-Network-Setup	300	0	ExternalAPIStart(GUID TransactionGuid, UInt32 Api)	Start		ExternalAPI	Informational	Microsoft-Windows-Network-Setup/Diagnostic	Begin API %2 on transaction %1
+Microsoft-Windows-Network-Setup	301	0	ExternalAPIStop(GUID TransactionGuid, UInt32 Api, Int32 Code)	Stop		ExternalAPI	Informational	Microsoft-Windows-Network-Setup/Diagnostic	End API %2 on transaction %1
+Microsoft-Windows-Network-Setup	400	0	PlugincallbackStart(GUID TransactionGuid, UInt32 PluginId, UnicodeString PluginName, UInt32 Api)	Start		Plugincallback	Informational	Microsoft-Windows-Network-Setup/Diagnostic	Begin calling into plugin %3
+Microsoft-Windows-Network-Setup	401	0	PlugincallbackStop(GUID TransactionGuid, UInt32 Output, Int32 Code)	Stop		Plugincallback	Informational	Microsoft-Windows-Network-Setup/Diagnostic	End calling into plugin
+Microsoft-Windows-Network-Setup	500	0	OperationStart(GUID TransactionGuid, UInt32 OperationType, UInt32 ObjectType, GUID ObjectId, UInt16 PropertyBufferSize, Binary PropertyBuffer)	Start		Operation	Informational	Microsoft-Windows-Network-Setup/Diagnostic	Begin operation %2 on %3 in transaction %1: %4 on %5:%6
+Microsoft-Windows-Network-Setup	501	0	OperationStop(GUID TransactionGuid, Int32 Code)	Stop		Operation	Informational	Microsoft-Windows-Network-Setup/Diagnostic	Operation %1 ended with code %2
+Microsoft-Windows-Network-Setup	600	0	INetCfgAPIStart(UInt32 Api)	Start		INetCfgAPI	Informational	Microsoft-Windows-Network-Setup/Diagnostic	Begin API %1
+Microsoft-Windows-Network-Setup	601	0	INetCfgAPIStop(Int32 Code)	Stop		INetCfgAPI	Informational	Microsoft-Windows-Network-Setup/Diagnostic	End API with status code %1
+Microsoft-Windows-Network-Setup	700	0	INetCfgNotifyObjectStart(GUID TransactionGuid, UnicodeString ComponentId, UInt32 Api, UInt32 Parameter1, UnicodeString Parameter2)	Start		INetCfgNotifyObject	Informational	Microsoft-Windows-Network-Setup/Diagnostic	Invoking API %2 on Notify Object for %1
+Microsoft-Windows-Network-Setup	701	0	INetCfgNotifyObjectStop(Int32 Code)	Stop		INetCfgNotifyObject	Informational	Microsoft-Windows-Network-Setup/Diagnostic	The Notify Object returned with status: %1
+Microsoft-Windows-Network-Setup	702	0	INetCfgNotifyObjectStop702(Int32 Code)	Stop		INetCfgNotifyObject	Warning	Microsoft-Windows-Network-Setup/Diagnostic	An error occurred while invoking the Notify Object.  The call was aborted with status: %1.

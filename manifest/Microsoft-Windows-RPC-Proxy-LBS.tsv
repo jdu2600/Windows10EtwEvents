@@ -1,6 +1,6 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-RPC-Proxy-LBS	1	1	ArbitrationStart_V1(UnicodeString UserName)	Start		Arbitration	Informational		
-Microsoft-Windows-RPC-Proxy-LBS	2	1	task_0Stop_V1(UnicodeString ServerName, UInt32 Status)	Stop		task_0	Informational		
-Microsoft-Windows-RPC-Proxy-LBS	3	1	task_0Stop3_V1(UnicodeString UserName, UnicodeString ServerList)	Stop		task_0	Error		
-Microsoft-Windows-RPC-Proxy-LBS	4	1	task_0Start_V1(UnicodeString ServerName)	Start		task_0	Informational		
-Microsoft-Windows-RPC-Proxy-LBS	5	1	task_0Stop5_V1(UnicodeString ServerName)	Stop		task_0	Informational		
+Microsoft-Windows-RPC-Proxy-LBS	1	1	ArbitrationStart_V1(UnicodeString UserName)	Start		Arbitration	Informational	Microsoft-Windows-RPC-Proxy/Debug	RPC/HTTP Load Balancing started arbitration for user %1.
+Microsoft-Windows-RPC-Proxy-LBS	2	1	Event_2_Stop_V1(UnicodeString ServerName, UInt32 Status)	Stop		task_0	Informational	Microsoft-Windows-RPC-Proxy/Debug	RPC/HTTP Load Balancing ended arbitration with status %2 and will use server %1.
+Microsoft-Windows-RPC-Proxy-LBS	3	1	Event_3_Stop_V1(UnicodeString UserName, UnicodeString ServerList)	Stop		task_0	Error	Microsoft-Windows-RPC-Proxy/Debug	RPC/HTTP Load Balancing arbitration received conflicting results for user %1 from servers %2.
+Microsoft-Windows-RPC-Proxy-LBS	4	1	Event_4_Start_V1(UnicodeString ServerName)	Start		task_0	Informational	Microsoft-Windows-RPC-Proxy/Debug	RPC/HTTP Load Balancing added server %1 to the list of live servers.
+Microsoft-Windows-RPC-Proxy-LBS	5	1	Event_5_Stop_V1(UnicodeString ServerName)	Stop		task_0	Informational	Microsoft-Windows-RPC-Proxy/Debug	RPC/HTTP Load Balancing removed server %1 from the list of live servers.

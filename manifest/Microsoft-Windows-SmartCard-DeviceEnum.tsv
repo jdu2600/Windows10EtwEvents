@@ -1,7 +1,7 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-SmartCard-DeviceEnum	99	0	task_0(UnicodeString InstancePath, Int32 ErrorCode)			task_0	Error		
-Microsoft-Windows-SmartCard-DeviceEnum	100	0	task_0100(UnicodeString InstancePath, Int32 ErrorCode)			task_0	Error		
-Microsoft-Windows-SmartCard-DeviceEnum	101	0	task_0101(UnicodeString InstancePath, UInt32 SessionId)			task_0	Informational		
-Microsoft-Windows-SmartCard-DeviceEnum	102	0	task_0102(UnicodeString InstancePath, UInt32 SessionId)			task_0	Informational		
-Microsoft-Windows-SmartCard-DeviceEnum	103	0	task_0103()			task_0	Informational		
-Microsoft-Windows-SmartCard-DeviceEnum	104	0	task_0104()			task_0	Informational		
+Microsoft-Windows-SmartCard-DeviceEnum	99	0	Event_99(UnicodeString InstancePath, Int32 ErrorCode)			task_0	Error	Microsoft-Windows-SmartCard-DeviceEnum/Operational	Creation of node %1 failed with %2.
+Microsoft-Windows-SmartCard-DeviceEnum	100	0	Event_100(UnicodeString InstancePath, Int32 ErrorCode)			task_0	Error	Microsoft-Windows-SmartCard-DeviceEnum/Operational	Removal of node %1 failed with %2.
+Microsoft-Windows-SmartCard-DeviceEnum	101	0	Event_101(UnicodeString InstancePath, UInt32 SessionId)			task_0	Informational	Microsoft-Windows-SmartCard-DeviceEnum/Operational	Created node %1 on session %2.
+Microsoft-Windows-SmartCard-DeviceEnum	102	0	Event_102(UnicodeString InstancePath, UInt32 SessionId)			task_0	Informational	Microsoft-Windows-SmartCard-DeviceEnum/Operational	Removed node %1 on session %2.
+Microsoft-Windows-SmartCard-DeviceEnum	103	0	Event_103()			task_0	Informational	Microsoft-Windows-SmartCard-DeviceEnum/Operational	ScDeviceEnum service started.
+Microsoft-Windows-SmartCard-DeviceEnum	104	0	Event_104()			task_0	Informational	Microsoft-Windows-SmartCard-DeviceEnum/Operational	ScDeviceEnum service stopped.

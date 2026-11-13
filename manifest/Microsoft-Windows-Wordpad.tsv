@@ -1,0 +1,47 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Wordpad	1	0	Event_1()			task_0	Informational	Microsoft-Windows-Wordpad/Debug	Intializing current instance of the application
+Microsoft-Windows-Wordpad	2	0	Event_2()			task_0	Informational	Microsoft-Windows-Wordpad/Debug	Exiting current Instance of the application
+Microsoft-Windows-Wordpad	3	0	Event_3(UnicodeString StringParam)			task_0	Error	Microsoft-Windows-Wordpad/Debug	Failed to Initialize
+Microsoft-Windows-Wordpad	4	0	Event_4()			task_0	Error	Microsoft-Windows-Wordpad/Debug	OLE initialization failed
+Microsoft-Windows-Wordpad	5	0	Event_5()			task_0	Error	Microsoft-Windows-Wordpad/Debug	Failed to load msftedit.dll
+Microsoft-Windows-Wordpad	6	0	Event_6()			task_0	Informational	Microsoft-Windows-Wordpad/Debug	Wordpad is initialized as OLE Server
+Microsoft-Windows-Wordpad	7	0	Event_7(UnicodeString StringParam)			task_0	Error	Microsoft-Windows-Wordpad/Debug	Creation of Window:%1 failed
+Microsoft-Windows-Wordpad	8	0	Event_8(UnicodeString StringParam)			task_0	Error	Microsoft-Windows-Wordpad/Debug	Intent Load Failed: %1
+Microsoft-Windows-Wordpad	9	0	Event_9(UnicodeString StringParam)			task_0	Error	Microsoft-Windows-Wordpad/Debug	New Document Failed: %1
+Microsoft-Windows-Wordpad	10	0	Event_10()			task_0	Error	Microsoft-Windows-Wordpad/Debug	Create Font Indirect Failed
+Microsoft-Windows-Wordpad	11	0	Event_11(UInt32 HResultParam)			task_0	Error	Microsoft-Windows-Wordpad/Debug	Insert Picture Failed with HRESULT:%1.
+Microsoft-Windows-Wordpad	12	0	Event_12(UInt32 HResultParam, UnicodeString StringParam)			task_0	Error	Microsoft-Windows-Wordpad/Debug	Insert Picture Failed with HRESULT:%1 and Msg:%2.
+Microsoft-Windows-Wordpad	13	0	Event_13(UnicodeString StringParam)			task_0	Error	Microsoft-Windows-Wordpad/Debug	GDIPlus Error:%1.
+Microsoft-Windows-Wordpad	14	0	Wordpad_LaunchStart()	Start		Wordpad_Launch	Informational	Microsoft-Windows-Wordpad/Diagnostic	Wordpad Launch Start.
+Microsoft-Windows-Wordpad	15	0	Wordpad_LaunchStop()	Stop		Wordpad_Launch	Informational	Microsoft-Windows-Wordpad/Diagnostic	Wordpad Launch End.
+Microsoft-Windows-Wordpad	16	0	Wordpad_InsertPictureStart()	Start		Wordpad_InsertPicture	Informational	Microsoft-Windows-Wordpad/Diagnostic	Insert Picture Start.
+Microsoft-Windows-Wordpad	17	0	Wordpad_InsertPictureStop()	Stop		Wordpad_InsertPicture	Informational	Microsoft-Windows-Wordpad/Diagnostic	Insert Picture End.
+Microsoft-Windows-Wordpad	18	0	Wordpad_ResizePictureStart()	Start		Wordpad_ResizePicture	Informational	Microsoft-Windows-Wordpad/Diagnostic	Resize Picture Start.
+Microsoft-Windows-Wordpad	19	0	Wordpad_ResizePictureStop()	Stop		Wordpad_ResizePicture	Informational	Microsoft-Windows-Wordpad/Diagnostic	Resize Picture End.
+Microsoft-Windows-Wordpad	20	0	Event_20(UnicodeString StringParam)			task_0	Error	Microsoft-Windows-Wordpad/Admin	%1 failed since the system is low on memory.
+Microsoft-Windows-Wordpad	21	0	Event_21(UnicodeString StringParam, UInt32 HResultParam)			task_0	Error	Microsoft-Windows-Wordpad/Debug	Msg:%1 .HRESULT:%2
+Microsoft-Windows-Wordpad	22	0	Event_22(UnicodeString StringParam, UInt64 DWordParam)			task_0	Error	Microsoft-Windows-Wordpad/Debug	Msg:%1 .HRESULT:%2
+Microsoft-Windows-Wordpad	23	0	Wordpad_LivePreviewShowStart(Int32 LivePreviewType)	Start		Wordpad_LivePreviewShow	Informational	Microsoft-Windows-Wordpad/Diagnostic	Live Preview Show (Type: %1) Start.
+Microsoft-Windows-Wordpad	24	0	Wordpad_LivePreviewShowStop()	Stop		Wordpad_LivePreviewShow	Informational	Microsoft-Windows-Wordpad/Diagnostic	Live Preview Show End.
+Microsoft-Windows-Wordpad	25	0	Wordpad_LivePreviewCancelStart(Int32 LivePreviewType)	Start		Wordpad_LivePreviewCancel	Informational	Microsoft-Windows-Wordpad/Diagnostic	Live Preview Cancel (Type: %1) Start.
+Microsoft-Windows-Wordpad	26	0	Wordpad_LivePreviewCancelStop()	Stop		Wordpad_LivePreviewCancel	Informational	Microsoft-Windows-Wordpad/Diagnostic	Live Preview Cancel End.
+Microsoft-Windows-Wordpad	27	0	Wordpad_LivePreviewExecuteStart(Int32 LivePreviewType)	Start		Wordpad_LivePreviewExecute	Informational	Microsoft-Windows-Wordpad/Diagnostic	Live Preview Execute (Type: %1) Start.
+Microsoft-Windows-Wordpad	28	0	Wordpad_LivePreviewExecuteStop()	Stop		Wordpad_LivePreviewExecute	Informational	Microsoft-Windows-Wordpad/Diagnostic	Live Preview Execute End.
+Microsoft-Windows-Wordpad	29	0	Wordpad_FileOpenStart()	Start		Wordpad_FileOpen	Informational	Microsoft-Windows-Wordpad/Diagnostic	File Open Start.
+Microsoft-Windows-Wordpad	30	0	Wordpad_FileOpenStop()	Stop		Wordpad_FileOpen	Informational	Microsoft-Windows-Wordpad/Diagnostic	File Open End.
+Microsoft-Windows-Wordpad	31	0	Wordpad_FileSaveStart()	Start		Wordpad_FileSave	Informational	Microsoft-Windows-Wordpad/Diagnostic	File Save Start.
+Microsoft-Windows-Wordpad	32	0	Wordpad_FileSaveStop()	Stop		Wordpad_FileSave	Informational	Microsoft-Windows-Wordpad/Diagnostic	File Save End.
+Microsoft-Windows-Wordpad	33	0	Wordpad_ZoomStart()	Start		Wordpad_Zoom	Informational	Microsoft-Windows-Wordpad/Diagnostic	Zoom Start.
+Microsoft-Windows-Wordpad	34	0	Wordpad_ZoomStop()	Stop		Wordpad_Zoom	Informational	Microsoft-Windows-Wordpad/Diagnostic	Zoom End.
+Microsoft-Windows-Wordpad	35	0	Event_35(UnicodeString StringParam)			task_0	Error	Microsoft-Windows-Wordpad/Debug	ParseError:%1.
+Microsoft-Windows-Wordpad	36	0	Event_36(UnicodeString StringParam, UInt32 HResultParam)			task_0	Error	Microsoft-Windows-Wordpad/Debug	ParseError: HResult: %1, Error: %2.
+Microsoft-Windows-Wordpad	37	0	Event_37(UInt32 HResultParam)			task_0	Error	Microsoft-Windows-Wordpad/Debug	ParseError:%1.
+Microsoft-Windows-Wordpad	38	0	Event_38(UnicodeString StringParam)			task_0	Error	Microsoft-Windows-Wordpad/Debug	UnSupported Element:%1.
+Microsoft-Windows-Wordpad	39	0	Wordpad_Docx_Odt_SaveStart()	Start		Wordpad_Docx_Odt_Save	Informational	Microsoft-Windows-Wordpad/Diagnostic	Start reading TOM.
+Microsoft-Windows-Wordpad	40	0	Wordpad_Docx_Odt_SaveStop()	Stop		Wordpad_Docx_Odt_Save	Informational	Microsoft-Windows-Wordpad/Diagnostic	End reading TOM.
+Microsoft-Windows-Wordpad	41	0	Wordpad_Docx_Odt_SaveStart41()	Start		Wordpad_Docx_Odt_Save	Informational	Microsoft-Windows-Wordpad/Diagnostic	Start saving Ole or Picture.
+Microsoft-Windows-Wordpad	42	0	Wordpad_Docx_Odt_SaveStop42()	Stop		Wordpad_Docx_Odt_Save	Informational	Microsoft-Windows-Wordpad/Diagnostic	End saving Ole or Picture.
+Microsoft-Windows-Wordpad	43	0	Wordpad_Docx_Odt_ReadStart()	Start		Wordpad_Docx_Odt_Read	Informational	Microsoft-Windows-Wordpad/Diagnostic	Begin reading Ole or Picture.
+Microsoft-Windows-Wordpad	44	0	Wordpad_Docx_Odt_ReadStop()	Stop		Wordpad_Docx_Odt_Read	Informational	Microsoft-Windows-Wordpad/Diagnostic	End reading Ole or Picture.
+Microsoft-Windows-Wordpad	45	0	Event_45(UnicodeString StringParam)			task_0	Informational	Microsoft-Windows-Wordpad/Debug	Indexed Search String
+Microsoft-Windows-Wordpad	46	0	Event_46(UInt32 HResultParam)			task_0	Error	Microsoft-Windows-Wordpad/Admin	Wordpad Search Filter Encountered an error

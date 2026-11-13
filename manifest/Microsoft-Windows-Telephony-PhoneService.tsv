@@ -1,0 +1,159 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Telephony-PhoneService	1	0	Event_1(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		Error	task_0	Error		[ERROR] originated HRESULT=%1 [%2 @ %3]
+Microsoft-Windows-Telephony-PhoneService	2	0	Event_2(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		keyword_400000000000	task_0	Warning		[ERROR] propagated HRESULT=%1 [%2 @ %3]
+Microsoft-Windows-Telephony-PhoneService	10	0	Event_10(UnicodeString Prop_UnicodeString)		Debug	task_0	Informational		%1
+Microsoft-Windows-Telephony-PhoneService	100	0	Event_100()		keyword_800000000000	task_0	Informational		The Phone service is starting
+Microsoft-Windows-Telephony-PhoneService	101	0	Event_101()		keyword_800000000000	task_0	Informational		The Phone service has started
+Microsoft-Windows-Telephony-PhoneService	102	0	Event_102(Int32 Code)		keyword_800000000000	task_0	Informational		The Phone service failed to start with error %1
+Microsoft-Windows-Telephony-PhoneService	103	0	Event_103()		keyword_800000000000	task_0	Informational		The Phone service is stopping
+Microsoft-Windows-Telephony-PhoneService	104	0	Event_104()		keyword_800000000000	task_0	Informational		The Phone service has stopped
+Microsoft-Windows-Telephony-PhoneService	600	0	Event_600(UInt32 PhMsg, UInt32 SupSvc)		CONTROLLER	task_0	Informational		PH_MSG: %1 with supsvc code or SIM error: %2
+Microsoft-Windows-Telephony-PhoneService	601	0	Event_601(UInt32 Prop_HexInt32_1)		CONTROLLER	task_0	Informational		USSD Message: %1 suppressed due to emergency call
+Microsoft-Windows-Telephony-PhoneService	602	0	Event_602()		keyword_800000000000	task_0	Informational		PhoneService: Phone RPC server started. Setting PhoneApiReady.
+Microsoft-Windows-Telephony-PhoneService	603	0	Event_603()		keyword_800000000000	task_0	Informational		PhoneService: Stopping Phone RPC server.
+Microsoft-Windows-Telephony-PhoneService	700	0	Event_700(UInt32 HCall, UInt32 OldState, UInt32 NewState)		keyword_800000000000	task_0	Informational		CallState Change for callId: %1, from %2 to %3
+Microsoft-Windows-Telephony-PhoneService	702	0	Event_702(GUID Provider, UInt32 CallVerb, UInt64 RequestId, UInt32 HResult)		keyword_800000000000	task_0	Informational		Controller request to provider %1: verb %2 id: %3 hr: %4
+Microsoft-Windows-Telephony-PhoneService	703	0	Event_703(GUID Provider, UInt32 CallVerb, UInt64 RequestId, UInt32 HResult)		keyword_800000000000	task_0	Informational		Controller request result from provider %1: verb %2 id: %3 hr: %4
+Microsoft-Windows-Telephony-PhoneService	704	0	Event_704()		CONTROLLER	task_0	Informational		Dialing: Got call handle from provider
+Microsoft-Windows-Telephony-PhoneService	705	0	Event_705()		CONTROLLER	task_0	Error		Dialing: Failed due to existing outgoing call
+Microsoft-Windows-Telephony-PhoneService	706	0	Event_706(UnicodeString Prop_UnicodeString)		keyword_800000000000	task_0	Informational		Phone dialing %1
+Microsoft-Windows-Telephony-PhoneService	708	0	Event_708(UInt32 Prop_HexInt32_1)		CONTROLLER	task_0	Informational		Fake Call Added: %1
+Microsoft-Windows-Telephony-PhoneService	712	0	Event_712(UInt32 Prop_HexInt32_1, UInt32 Prop_HexInt32_2)		keyword_800000000000	task_0	Informational		Controller added call history record with Oid: %1 hr %2
+Microsoft-Windows-Telephony-PhoneService	713	0	Event_713()		CONTROLLER	task_0	Informational		Dialing rules start
+Microsoft-Windows-Telephony-PhoneService	714	0	Event_714(UInt32 Prop_HexInt32_1, UInt32 Prop_HexInt32_2)		CONTROLLER	task_0	Informational		Dialing rules end: modified by rule %1, rule processing time %2 ms.
+Microsoft-Windows-Telephony-PhoneService	715	0	Event_715()		Error	task_0	Error		Dialing: Failed because there are already two calls.
+Microsoft-Windows-Telephony-PhoneService	716	0	Event_716()		Error	task_0	Error		Dialing: Failed because the active call cannot be held.
+Microsoft-Windows-Telephony-PhoneService	717	0	Event_717(UInt32 Prop_HexInt32_1, UInt32 Prop_HexInt32_2)		CONTROLLER	task_0	Informational		Controller holding call %1 to accept call %2.
+Microsoft-Windows-Telephony-PhoneService	718	0	Event_718(UInt32 Prop_HexInt32_1, UInt32 Prop_HexInt32_2)		CONTROLLER	task_0	Informational		Controller dropping held call %1 to accept call %2.
+Microsoft-Windows-Telephony-PhoneService	719	0	Event_719(UInt32 Prop_HexInt32_1, UInt32 Prop_HexInt32_2)		CONTROLLER	task_0	Informational		Controller using DropAccept for incoming, dropping call %1 to accept %2.
+Microsoft-Windows-Telephony-PhoneService	720	0	Event_720(UInt32 AudioEndpoint)		keyword_800000000000	task_0	Informational		[CellularAudio] Setting audio endpoint to %1
+Microsoft-Windows-Telephony-PhoneService	721	0	Event_721(UInt32 AudioEndpoint)		keyword_800000000000	task_0	Informational		[CellularAudio] Notified of audio routing endpoint change to %1
+Microsoft-Windows-Telephony-PhoneService	722	0	Event_722(UInt32 BluetoothState)		keyword_800000000000	task_0	Informational		[CellularAudio] Notified of bluetooth state change to %1
+Microsoft-Windows-Telephony-PhoneService	723	0	Event_723(UInt32 Endpoint, UInt32 IsIncoming)		keyword_800000000000	task_0	Informational		[CellularAudio] Enabling phone call audio to endpoint %1; IsIncoming %2
+Microsoft-Windows-Telephony-PhoneService	724	0	Event_724()		keyword_800000000000	task_0	Informational		[CellularAudio] Disabling phone call audio
+Microsoft-Windows-Telephony-PhoneService	726	0	Event_726(UInt32 Prop_HexInt32_1)		Error	task_0	Error		Phone service failed to initialize UDM or CallHistoryItemWriter.  Call history entries will not be written.  HRESULT: %1
+Microsoft-Windows-Telephony-PhoneService	727	0	Event_727(UInt32 Prop_HexInt32_1)		Error	task_0	Error		Phone service failed to initialize External VVM manager.  VVM apps will not be able to control audio. HRESULT: %1
+Microsoft-Windows-Telephony-PhoneService	728	0	Event_728(UInt32 Prop_HexInt32_1)		Error	task_0	Error		Phone service failed to initialize POOM.  Caller ID information will not be available. HRESULT: %1
+Microsoft-Windows-Telephony-PhoneService	729	0	Event_729(UInt32 ToneType, UnicodeString ToneDigits, UInt32 OnTime, UInt32 OffTime)		keyword_800000000000	task_0	Informational		[CellularAudio] Tone Notification: %1, digits %2, on %3, off %4
+Microsoft-Windows-Telephony-PhoneService	730	0	Event_730(UInt64 RequestId, Int32 HResult)		CONTROLLER	task_0	Informational		Controller OnFinished called for requestId %1 hr: %2
+Microsoft-Windows-Telephony-PhoneService	731	0	Event_731(GUID LineId, UInt32 CallId, UInt32 Reason)		CONTROLLER	task_0	Informational		Rejected incoming call. Line id: %1 Call Id: %2 reason: %3
+Microsoft-Windows-Telephony-PhoneService	732	0	Event_732(UInt32 AudioType, UInt32 ExecutorIndex)		keyword_800000000000	task_0	Informational		[CellularAudio] Enabling cellular audio: %1 on executor %2
+Microsoft-Windows-Telephony-PhoneService	733	0	Event_733(UInt32 AudioType, UInt32 ExecutorIndex)		keyword_800000000000	task_0	Informational		[CellularAudio] Disabling cellular audio: %1 on executor %2
+Microsoft-Windows-Telephony-PhoneService	734	0	Event_734()		keyword_800000000000	task_0	Informational		VOIP audio count ref increased
+Microsoft-Windows-Telephony-PhoneService	735	0	Event_735()		keyword_800000000000	task_0	Informational		VOIP audio count ref Decreased
+Microsoft-Windows-Telephony-PhoneService	736	0	Event_736()		keyword_800000000000	task_0	Informational		VOIP muting audio
+Microsoft-Windows-Telephony-PhoneService	737	0	Event_737()		keyword_800000000000	task_0	Informational		VOIP unmuting audio
+Microsoft-Windows-Telephony-PhoneService	738	0	Event_738(GUID Prop_Guid, GUID Prop_Guid2)		keyword_800000000000	task_0	Informational		PhoneController - phone line added. id: %1, type: %2
+Microsoft-Windows-Telephony-PhoneService	739	0	Event_739(GUID Prop_Guid, UInt32 Prop_UInt32)		keyword_800000000000	task_0	Informational		PhoneController - phone line removed. id: %1
+Microsoft-Windows-Telephony-PhoneService	740	0	Event_740(GUID guid, UInt32 property, UnicodeString string)		keyword_800000000000	task_0	Informational		PhoneController - line property: %2 value: %3 for line ID:%1
+Microsoft-Windows-Telephony-PhoneService	741	0	Event_741(GUID guid, UInt32 property, Int32 int)		keyword_800000000000	task_0	Informational		PhoneController - line property: %2 value: %3 for line ID:%1
+Microsoft-Windows-Telephony-PhoneService	742	0	Event_742(UInt32 Prop_HexInt32_1)		keyword_800000000000	task_0	Informational		[CellularAudio] ExecutorIndex: %1 already initialized for audio
+Microsoft-Windows-Telephony-PhoneService	743	0	Event_743(UInt32 AudioType, UInt32 ExecutorIndex, Boolean Muted)		keyword_800000000000	task_0	Informational		[CellularAudio] Muting cellular TX audio: %1 on executor %2, muted: %3
+Microsoft-Windows-Telephony-PhoneService	744	0	Event_744(UInt32 AudioType, UInt32 ExecutorIndex, Boolean Muted)		keyword_800000000000	task_0	Informational		[CellularAudio] Muting cellular RX audio: %1 on executor %2, muted: %3
+Microsoft-Windows-Telephony-PhoneService	745	0	Event_745(GUID Prop_Guid)		keyword_800000000000	task_0	Informational		EndUpgradeOriginationCall invoked for upgrade guid %1
+Microsoft-Windows-Telephony-PhoneService	746	0	Event_746(GUID Prop_Guid)		keyword_800000000000	task_0	Informational		CancelUpgrade invoked for upgrade guid %1
+Microsoft-Windows-Telephony-PhoneService	747	0	Event_747(UInt32 ExecutorIndex, UInt32 AudioType, UInt32 Operation)		keyword_800000000000	task_0	Informational		[CellularAudio] Enabling cellular provider change, [executorIndex=%1][cellularAudioType=%2][operation=%3]
+Microsoft-Windows-Telephony-PhoneService	748	0	Event_748(UInt32 ExecutorIndex, UInt32 TargetAudioType, UInt32 Operation, UInt32 CurrentAudioType, Boolean isInHandover)		keyword_800000000000	task_0	Informational		[CellularAudio] Invalid cellular provider change attempted, [executorIndex=%1][targetAudioType=%2][operation=%3][currentAudioType=%4][isInHandover=%5]
+Microsoft-Windows-Telephony-PhoneService	749	0	Event_749(UInt32 executorIndex, UInt32 cellularAudioType, Boolean audioActive)		keyword_800000000000	task_0	Informational		[CellularAudio] Handover in progress, cellular audio type change not allowed [executorIndex=%1][cellularAudioType=%2][audioActive=%3]
+Microsoft-Windows-Telephony-PhoneService	750	0	Event_750(UInt32 CallToHold, UInt32 CallToUnhold)		keyword_800000000000	task_0	Informational		Phone call swap was ignored. Call to hold: %1. Call to unhold: %2.
+Microsoft-Windows-Telephony-PhoneService	751	0	Event_751(Boolean AllowSwap, UInt32 TimeSinceLast, UInt32 MinTime)		keyword_800000000000	task_0	Informational		Calculation for time between call swaps was completed. Allow swap is %1. Last successful swap was %2 ms ago. The device is configured to wait at least %3 ms in between swaps.
+Microsoft-Windows-Telephony-PhoneService	752	0	Event_752(GUID lineId, UInt32 homeMcc, UnicodeString eventSndBusy, UnicodeString eventSndRingback)		keyword_800000000000	task_0	Informational		CallProgress - Determined sound configuration according to country code, [LineId=%1][CountryCode=%2][EventSndBusy=%3][EventSndRingback=%4]
+Microsoft-Windows-Telephony-PhoneService	753	0	Event_753(UInt32 DisableExecutorIndex, UInt32 EnableExecutorIndex, UInt32 AudioType, Boolean audioActive)		keyword_800000000000	task_0	Informational		Disable and enable cellular audio. Disable Executor Index: %1, Enable Executor Index: %2, Cellular Audio Type: %3, Audio Active: %4
+Microsoft-Windows-Telephony-PhoneService	900	0	Event_900(UnicodeString Prop_UnicodeString)		keyword_800000000000	task_0	Informational		Event sound: %1
+Microsoft-Windows-Telephony-PhoneService	1008	0	CallerIdStart()	Start	Performance	CallerId	Verbose		
+Microsoft-Windows-Telephony-PhoneService	1009	0	CallerIdStop()	Stop	Performance	CallerId	Verbose		
+Microsoft-Windows-Telephony-PhoneService	1010	0	CallUpdateStop()	Stop	Performance	CallUpdate	Verbose		
+Microsoft-Windows-Telephony-PhoneService	1011	0	SetAudioRoutingStart()	Start	Performance	SetAudioRouting	Verbose		
+Microsoft-Windows-Telephony-PhoneService	1012	0	SetAudioRoutingStop()	Stop	Performance	SetAudioRouting	Verbose		
+Microsoft-Windows-Telephony-PhoneService	1015	0	MuteStateStop()	Stop	Performance	MuteState	Verbose		
+Microsoft-Windows-Telephony-PhoneService	1044	0	PlayDTMFStart()	Start	Performance PHONEUI	PlayDTMF	Verbose		
+Microsoft-Windows-Telephony-PhoneService	1045	0	PlayDTMFStop()	Stop	Performance PHONEUI	PlayDTMF	Verbose		
+Microsoft-Windows-Telephony-PhoneService	1046	0	StopEventSoundStart()	Start	Performance PHONEUI	StopEventSound	Verbose		
+Microsoft-Windows-Telephony-PhoneService	1047	0	StopEventSoundStop()	Stop	Performance PHONEUI	StopEventSound	Verbose		
+Microsoft-Windows-Telephony-PhoneService	1048	0	Event_1048(UnicodeString Prop_UnicodeString)		CONTROLLER	task_0	Informational		Emergency Number: received updated list %1
+Microsoft-Windows-Telephony-PhoneService	1049	0	Event_1049(UInt32 Prop_HexInt32_1)		keyword_800000000000	task_0	Informational		Emergency Number: Dial request for callid %1
+Microsoft-Windows-Telephony-PhoneService	1050	0	Event_1050()		CONTROLLER	task_0	Informational		Emergency Number list received null argument or empty list.
+Microsoft-Windows-Telephony-PhoneService	1051	0	Event_1051()		Error	task_0	Error		Dialing: Failed because the line attempt to dial is not free.
+Microsoft-Windows-Telephony-PhoneService	1052	0	Event_1052(UInt32 OperationId, AnsiString OperationContext, UInt32 OperationTimeout, UInt32 ElapsedTime)		Error	task_0	Error		OperationWatchdog: "%1" timed out.  Context: %2.  Timeout value: %3ms.  Still waiting after: %4ms.
+Microsoft-Windows-Telephony-PhoneService	1053	0	Event_1053(UInt32 OperationId, AnsiString OperationContext, UInt32 OperationActualTime)		Error	task_0	Error		OperationWatchdog: "%1" completed.  Context: %2.  Actual time: %3ms
+Microsoft-Windows-Telephony-PhoneService	1054	0	Event_1054(UInt32 Prop_HexInt32_1, UInt32 Prop_HexInt32_2)		keyword_800000000000	task_0	Informational		Async API context %1 completed with result %2
+Microsoft-Windows-Telephony-PhoneService	1055	0	Event_1055(UInt32 Prop_HexInt32_1)			task_0	Verbose		Phone service listener added: %1
+Microsoft-Windows-Telephony-PhoneService	1056	0	Event_1056(UInt32 Prop_HexInt32_1)			task_0	Verbose		Phone service listener removed: %1
+Microsoft-Windows-Telephony-PhoneService	1057	0	Event_1057(UInt32 Prop_HexInt32_1)		keyword_400000000000	task_0	Warning		Phone service listener lost notifications: %1
+Microsoft-Windows-Telephony-PhoneService	1058	0	Event_1058(UInt32 Prop_HexInt32_1)		keyword_800000000000	task_0	Informational		Phone service listener lost notifications: %1
+Microsoft-Windows-Telephony-PhoneService	1059	0	Event_1059(UInt32 Prop_HexInt32_1)		keyword_400000000000	task_0	Warning		Phone service listener rundown: %1
+Microsoft-Windows-Telephony-PhoneService	1060	0	Event_1060(UInt32 ChangeEvent, UInt32 Error)		CONTROLLER	task_0	Informational		Phone notification sent: %1 error: %2
+Microsoft-Windows-Telephony-PhoneService	1065	0	Event_1065(UInt32 CallId, UInt32 OldUpgradeState, UInt32 NewUpgradeState)		keyword_800000000000	task_0	Informational		Call Upgrade state for CallId: %1 Changed From: %2 To: %3
+Microsoft-Windows-Telephony-PhoneService	1066	0	Event_1066(UInt32 Prop_HexInt32_1)		keyword_800000000000	task_0	Informational		Data Connectivity State: %1
+Microsoft-Windows-Telephony-PhoneService	1069	0	Event_1069()		MISC	task_0	Informational		Non-seamless upgrade was cancelled by the user.
+Microsoft-Windows-Telephony-PhoneService	1070	0	Event_1070()		MISC	task_0	Informational		Seamless upgrade was cancelled by the user.
+Microsoft-Windows-Telephony-PhoneService	1071	0	Event_1071(UInt32 Prop_HexInt32_1)		Error	task_0	Error		Connection Manager Error. Connection Manager Result: %1.
+Microsoft-Windows-Telephony-PhoneService	1072	0	Event_1072(UInt32 Prop_HexInt32_1, GUID Prop_Guid1, GUID Prop_Guid2)		keyword_800000000000	task_0	Informational		Call Line Change for CallId: %1 from LineId: %2 to LineId: %3
+Microsoft-Windows-Telephony-PhoneService	1074	0	Event_1074(UnicodeString Prop_UnicodeString)		PhoneTile	task_0	Informational		PhoneTileManager: Creating secondary Phone Tile with id: %1
+Microsoft-Windows-Telephony-PhoneService	1075	0	Event_1075(GUID Prop_Guid)		PhoneTile	task_0	Informational		PhoneTileManager: Setting the primary Phone Tile to be assigned to PhoneLineId: %1
+Microsoft-Windows-Telephony-PhoneService	1076	0	Event_1076(UnicodeString Prop_UnicodeString)		PhoneTile	task_0	Informational		PhoneTileManager: Deleting Phone Tile with id: %1
+Microsoft-Windows-Telephony-PhoneService	1078	0	Event_1078(UnicodeString TileId, UnicodeString Title, UInt32 TileMode, UInt32 HasVoicemail, UInt32 MissedCallCount, UInt32 HasLargeContent)		PhoneTile	task_0	Informational		PhoneTile: Committed an update to the Phone Tile with tile id: %1. Title %2; Tile mode: %3; has voicemail: %4; missed call count: %5; has large content: %6
+Microsoft-Windows-Telephony-PhoneService	1080	0	Event_1080(GUID Prop_Guid)		PhoneTile	task_0	Informational		PhoneTileControllerSink: The PhoneLine (%1) has been removed.  Removing its tile and updating any remaining tiles as necessary.
+Microsoft-Windows-Telephony-PhoneService	1087	0	Event_1087(UInt32 Prop_BOOL)		PhoneTile	task_0	Informational		PhoneTileControllerSink: ShellReadyState changed to %1
+Microsoft-Windows-Telephony-PhoneService	1088	0	Event_1088(GUID LineId, UInt32 PhoneLineChangeKind, UInt32 PhoneLineProperties, UInt32 HResult)		keyword_800000000000	task_0	Informational		SystemEventTriggerControllerSink: LineChangedTrigger fired with: LineId %1: PhoneLineChangeKind %2: PhoneLineProperties: %3: hr: %4
+Microsoft-Windows-Telephony-PhoneService	1089	0	Event_1089(GUID LineId, UInt32 VoicemailCount, UnicodeString VoicemailMessageString, UInt32 HResult)		keyword_800000000000	task_0	Informational		SystemEventTriggerControllerSink: NewVoicemailMessageTrigger fired with: LineId %1: voicemailCount %2: VoicemailMessage: %3: hr: %4
+Microsoft-Windows-Telephony-PhoneService	1090	0	Event_1090(GUID RequestId, UnicodeString PhoneNumber, UInt32 HResult)		keyword_800000000000	task_0	Informational		SystemEventTriggerControllerSink: CallOriginDataRequestTrigger fired with: RequestId %1: PhoneNumber: %2: hr: %3
+Microsoft-Windows-Telephony-PhoneService	1091	0	Event_1091(UInt32 Prop_HexInt32_1)		keyword_800000000000	task_0	Informational		SystemEventTriggerControllerSink: CallHistoryChanged fired with: hr: %1
+Microsoft-Windows-Telephony-PhoneService	1092	0	Event_1092(UInt32 Prop_HexInt32_1)		keyword_800000000000	task_0	Informational		SystemEventTriggerControllerSink: AirplaneModeDisabledForEmergencyCall fired with: hr: %1
+Microsoft-Windows-Telephony-PhoneService	1093	0	Event_1093(UInt32 UdmCallItemEventType)		keyword_800000000000	task_0	Informational		SystemEventTriggerControllerSink: OnCallEvent called with: event: %1
+Microsoft-Windows-Telephony-PhoneService	1094	0	Event_1094(UInt32 Prop_HexInt32_1)		keyword_800000000000	task_0	Informational		SystemEventTriggerControllerSink: Attempted to advise to CallHistorySession with: hr: %1
+Microsoft-Windows-Telephony-PhoneService	1095	0	Event_1095()		keyword_800000000000	task_0	Verbose		IR94FeatureDisabled: Returning video capability sharing as disabled.
+Microsoft-Windows-Telephony-PhoneService	1096	0	Event_1096()		keyword_800000000000	task_0	Verbose		IR94FeatureDisabled: Returning device not video capable.
+Microsoft-Windows-Telephony-PhoneService	1097	0	Event_1097()		keyword_800000000000	task_0	Verbose		IR94FeatureDisabled: Returning video calling switch as not actionable.
+Microsoft-Windows-Telephony-PhoneService	1098	0	Event_1098(GUID LineId, UInt32 PhoneLineChangeKind, UInt32 PhoneLineProperties)		keyword_800000000000	task_0	Informational		SystemEventTriggerControllerSink: LineChangedTrigger suppressed [LineId=%1][PhoneLineChangeKind=%2][PhoneLineProperties=%3]
+Microsoft-Windows-Telephony-PhoneService	1099	0	Event_1099()		keyword_800000000000	task_0	Informational		SystemEventTriggerControllerSink: Received shell ready notification.
+Microsoft-Windows-Telephony-PhoneService	1100	0	Event_1100(Boolean existingInitialBootSequenceComplete, UInt32 cachedLineCount)		keyword_800000000000	task_0	Informational		SystemEventTriggerControllerSink: OnShellReady started [existingInitialBootSequenceComplete=%1][cachedLineCount=%2]
+Microsoft-Windows-Telephony-PhoneService	1101	0	Event_1101(GUID LineId, UInt32 PhoneLineChangeKind, UInt32 PhoneLineProperties)		keyword_800000000000	task_0	Informational		SystemEventTriggerControllerSink: OnShellReady triggering deferred notification [LineId=%1][PhoneLineChangeKind=%2][PhoneLineProperties=%3]
+Microsoft-Windows-Telephony-PhoneService	1201	0	Event_1201(UInt32 Prop_HexInt32_1)		keyword_800000000000	task_0	Informational		InteractiveUserNotificationSink: New Incoming Call State Changed [callId=%1].
+Microsoft-Windows-Telephony-PhoneService	1202	0	Event_1202(UInt32 Prop_HexInt32_1)		keyword_800000000000	task_0	Informational		InteractiveUserNotificationSink: Show Incoming Call Toast [callId=%1].
+Microsoft-Windows-Telephony-PhoneService	1501	0	Event_1501(UInt32 Prop_HexInt32_1)		DataCollection	task_0	Verbose		Call data collection item added for CallId: [%1]
+Microsoft-Windows-Telephony-PhoneService	1502	0	Event_1502(UInt32 Prop_HexInt32_1)		DataCollection	task_0	Verbose		Call data collection item removed for CallId: [%1]
+Microsoft-Windows-Telephony-PhoneService	1503	0	Event_1503(UInt32 Prop_HexInt32_1)		DataCollection	task_0	Verbose		Call data collection item dropped an idle call for CallId: [%1]
+Microsoft-Windows-Telephony-PhoneService	1504	0	Event_1504(UInt32 Prop_HexInt32_1)		keyword_800000000000	task_0	Informational		CallHistoryItemWriter: Call with id %1 is added.
+Microsoft-Windows-Telephony-PhoneService	1505	0	Event_1505(UInt32 Prop_HexInt32_1)		keyword_800000000000	task_0	Informational		CallHistoryItemWriter: Call with id %1 is updated.
+Microsoft-Windows-Telephony-PhoneService	1506	0	Event_1506(UnicodeString Prop_UnicodeString)		keyword_800000000000	task_0	Informational		CallAnnotationsLookupConnecting: Establishing RPC connection.  Endpoint: %1
+Microsoft-Windows-Telephony-PhoneService	1507	0	Event_1507(UnicodeString Prop_UnicodeString)		keyword_800000000000	task_0	Informational		CallAnnotationsLookup: Querying location.  Phone number: %1
+Microsoft-Windows-Telephony-PhoneService	1508	0	Event_1508(UnicodeString Prop_UnicodeString)		keyword_800000000000	task_0	Informational		CallAnnotationsLookup: Completed location query.  Location: %1
+Microsoft-Windows-Telephony-PhoneService	1509	0	Event_1509()		keyword_800000000000	task_0	Informational		CallAnnotationsLookup: RPC failure, clearing RPC connection.
+Microsoft-Windows-Telephony-PhoneService	1510	0	Event_1510(UInt32 CallId, UInt32 LookupState)		keyword_800000000000	task_0	Informational		CallAnnotationsManager: Call: %1 LookupState: %2
+Microsoft-Windows-Telephony-PhoneService	1511	0	Event_1511()		keyword_800000000000	task_0	Informational		Shutting down Phone service due to idle stop.
+Microsoft-Windows-Telephony-PhoneService	1512	0	Event_1512(UInt32 Prop_HexInt32_1, UInt32 Prop_HexInt32_2)		keyword_800000000000	task_0	Informational		Service Idle Callback received. Idle status: %1, Phone calls exist: %2
+Microsoft-Windows-Telephony-PhoneService	1513	0	Event_1513(UInt32 Executor, UInt32 CurrentState, UInt32 DesiredState)		keyword_800000000000	task_0	Informational		CallRecording VALID state change from '%2' to '%3' on executor %1
+Microsoft-Windows-Telephony-PhoneService	1514	0	Event_1514(UInt32 Executor, UInt32 CurrentState, UInt32 DesiredState)		keyword_800000000000	task_0	Error		CallRecording: INVALID state change from '%2' to '%3' on executor %1
+Microsoft-Windows-Telephony-PhoneService	1515	0	Event_1515(GUID LineId, UInt32 CallId, UInt32 ConferenceCallId)		keyword_800000000000	task_0	Informational		CallRecording: Recorded call is now idle.  Recording will end.  LineId:%1, CallId:%2, ConferenceCallId:%3
+Microsoft-Windows-Telephony-PhoneService	1516	0	Event_1516(GUID LineId, UInt32 CallId, UInt32 ConferenceCallId)		keyword_800000000000	task_0	Informational		CallRecording: Recorded call is now held.  Recording will pause and may finish.  LineId:%1, CallId:%2, ConferenceCallId:%3
+Microsoft-Windows-Telephony-PhoneService	1517	0	Event_1517(GUID LineId, UInt32 CallId, UInt32 ConferenceCallId)		keyword_800000000000	task_0	Informational		CallRecording: A call that is not being recorded is talking.  Recording will finish.  LineId:%1, CallId:%2, ConferenceCallId:%3
+Microsoft-Windows-Telephony-PhoneService	1518	0	Event_1518(UInt32 Prop_HexInt32_1, GUID Prop_Guid)		keyword_800000000000	task_0	Informational		CallRecording: Recorded call no longer exists.  Recording will finish.  LineId:%2, CallId:%1
+Microsoft-Windows-Telephony-PhoneService	1519	0	Event_1519(UnicodeString Prop_UnicodeString_1, UnicodeString Prop_UnicodeString_2)		keyword_800000000000	task_0	Informational		CallRecording: Preferred recording application changed.  Old Package Family Name: '%1', New Package Family Name: '%2'
+Microsoft-Windows-Telephony-PhoneService	1520	0	Event_1520(UInt32 Prop_HexInt32_1, UInt32 Prop_HexInt32_2)		keyword_800000000000	task_0	Informational		Call [callId=%1] marked as handover merged due to being conferenced with call [callState=%2] that ended with handover merged reason
+Microsoft-Windows-Telephony-PhoneService	1600	0	Event_1600(UnicodeString TelString)		keyword_800000000000	task_0	Informational		[RcsPresence] Request Capabilities: %1
+Microsoft-Windows-Telephony-PhoneService	1601	0	Event_1601(UInt32 ResponseCode, UnicodeString Reason)		keyword_800000000000	task_0	Informational		[RcsPresence] Received query response, [responseCode=%1][reason=%2]
+Microsoft-Windows-Telephony-PhoneService	1602	0	Event_1602(UInt32 Count)		keyword_800000000000	task_0	Informational		[RcsPresence] Received %1 capability tuple(s)
+Microsoft-Windows-Telephony-PhoneService	1603	0	Event_1603(UInt32 TupleIndex, UInt32 MediaType)		keyword_800000000000	task_0	Informational		[RcsPresence] Tuple %1, MediaType not video capable: %2
+Microsoft-Windows-Telephony-PhoneService	1604	0	Event_1604(UInt32 TupleIndex, UnicodeString ServiceIdentifier)		keyword_800000000000	task_0	Informational		[RcsPresence] Tuple %1, ServiceIdentifier not video capable: %2
+Microsoft-Windows-Telephony-PhoneService	1605	0	Event_1605(UInt32 TupleIndex)		keyword_800000000000	task_0	Informational		[RcsPresence] Tuple %1 is video capable.
+Microsoft-Windows-Telephony-PhoneService	1606	0	Event_1606(UnicodeString telUriString, UInt32 Capabilities)		keyword_800000000000	task_0	Informational		[RcsPresence] RcsPresenceCache hit, [TelUri string=%1][Capabilities returned=%2]
+Microsoft-Windows-Telephony-PhoneService	1607	0	Event_1607(UnicodeString telUriString, UInt32 Capabilities)		keyword_800000000000	task_0	Informational		[RcsPresence] Query suppressed due to capabilities sharing opt-in settings, [TelUri string=%1][Capabilities returned=%2]
+Microsoft-Windows-Telephony-PhoneService	1608	0	Event_1608(UnicodeString Prop_UnicodeString)			task_0	Verbose		Checking for device support of video calling. This service (%1) exists, thus video calling is supported.
+Microsoft-Windows-Telephony-PhoneService	1609	0	Event_1609(UInt32 Prop_UInt32_1, UnicodeString Prop_UnicodeString_1)			task_0	Verbose		Checking for device support of video calling. This service (%2) does NOT exist due to error code %1, thus a different service would have to exist for video calling to be supported.
+Microsoft-Windows-Telephony-PhoneService	1610	0	Event_1610(GUID lineId, UInt32 videoCallingSetting, Boolean cacheVideoCallingSetting, Boolean userRequest, Boolean TTYEnabled, Boolean cellularDataEnabled)		keyword_800000000000	task_0	Informational		PhoneController - Updating video calling settings, [lineId=%1][videoCallingSetting=%2][cacheVideoCallingSetting=%3][userRequest=%4][TTYEnabled=%5][cellularDataEnabled=%6]
+Microsoft-Windows-Telephony-PhoneService	1611	0	Event_1611(UInt32 AudioType, UInt32 ExecutorIndex)		keyword_800000000000	task_0	Informational		CallRecording: Deferred request to disable cellular audio: %1 on executor %2
+Microsoft-Windows-Telephony-PhoneService	1612	0	Event_1612(UInt32 AudioTypeBeingEnabled, UInt32 ExecutorIndex, UInt32 AudioTypeCancelled)		keyword_800000000000	task_0	Informational		CallRecording: Cancelled request to defer disabling of cellular audio: %3 due to enabling of: %1 on executor %2
+Microsoft-Windows-Telephony-PhoneService	1613	0	Event_1613(UInt32 AudioTypeBeingEnabled, UInt32 ExecutorIndex, UInt32 AudioTypeCancelled)		keyword_800000000000	task_0	Informational		CallRecording: An audio type change prevented deferring of audio disable.  New audio type: %1, Audio type being disabled: %3 on executor %2
+Microsoft-Windows-Telephony-PhoneService	1614	0	Event_1614(UInt32 AudioType, UInt32 ExecutorIndex)		keyword_800000000000	task_0	Informational		CallRecording: Performing deferred request to disable cellular audio: %1 on executor %2
+Microsoft-Windows-Telephony-PhoneService	1615	0	Event_1615()		keyword_800000000000	task_0	Informational		[RcsPresence] Received OnPublishRequested
+Microsoft-Windows-Telephony-PhoneService	1616	0	Event_1616()		keyword_800000000000	task_0	Informational		[RcsPresence] Suppressed publishing actual video capability as UCE capability sharing is disabled.
+Microsoft-Windows-Telephony-PhoneService	1617	0	Event_1617(Boolean isCapabilitySharingEnabled, Boolean previousValue)		keyword_800000000000	task_0	Informational		[RcsPresence] Video capability sharing settings update requested [isCapabilitySharingEnabled=%1][previousValue=%2].
+Microsoft-Windows-Telephony-PhoneService	1618	0	Event_1618(UInt32 Prop_UInt32_1)		keyword_800000000000	task_0	Informational		[RcsPresence] Cache initialized [cacheExpirationInSeconds=%1]
+Microsoft-Windows-Telephony-PhoneService	1619	0	Event_1619(UInt32 Capabilities)		keyword_800000000000	task_0	Informational		[RcsPresence] Publishing capabilities [%1]
+Microsoft-Windows-Telephony-PhoneService	1620	0	Event_1620()		keyword_800000000000	task_0	Informational		[RcsPresence] Initializing RCS presence service
+Microsoft-Windows-Telephony-PhoneService	1621	0	Event_1621(UInt32 rcsServiceStatus)		keyword_800000000000	task_0	Informational		[RcsPresence] RCS presence service status queried, [status=%1]
+Microsoft-Windows-Telephony-PhoneService	1622	0	Event_1622()		keyword_800000000000	task_0	Informational		[RcsPresence] Starting RCS presence service
+Microsoft-Windows-Telephony-PhoneService	1623	0	Event_1623(UInt32 ResponseCode, UnicodeString Reason)		keyword_800000000000	task_0	Informational		[RcsPresence] Received publish response, [responseCode=%1][reason=%2]
+Microsoft-Windows-Telephony-PhoneService	1624	0	Event_1624(Boolean updatedValue, Boolean previousValue)		keyword_800000000000	task_0	Informational		[RcsPresence] Received OnNetworkSupportVideoChanged, [updatedValue=%1][previousValue=%2]
+Microsoft-Windows-Telephony-PhoneService	1625	0	Event_1625(UInt32 updatedValue, UInt32 previousValue)		keyword_800000000000	task_0	Informational		[RcsPresence] Saved last published capabilities, [updatedValue=%1][previousValue=%2]

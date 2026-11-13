@@ -1,9 +1,9 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-EapMethods-RasChap	100	0	Authenticationsucceeded.(AnsiString Domain, AnsiString Username)			Authenticationsucceeded.	Informational		
-Microsoft-Windows-EapMethods-RasChap	101	0	Authenticationfailed.(AnsiString Domain, AnsiString Username, UInt32 int1)			Authenticationfailed.	Error		
-Microsoft-Windows-EapMethods-RasChap	102	0	Authenticationfailed.102(AnsiString Domain, AnsiString Username)			Authenticationfailed.	Error		
-Microsoft-Windows-EapMethods-RasChap	103	0	Authenticationfailed.103(AnsiString Domain, AnsiString Username)			Authenticationfailed.	Error		
-Microsoft-Windows-EapMethods-RasChap	104	0	Authenticationfailed.104(AnsiString Domain, AnsiString Username)			Authenticationfailed.	Error		
-Microsoft-Windows-EapMethods-RasChap	105	0	Authenticationfailed.105(AnsiString Domain, AnsiString Username)			Authenticationfailed.	Error		
-Microsoft-Windows-EapMethods-RasChap	106	0	Authenticationfailed.106(AnsiString Domain, AnsiString Username)			Authenticationfailed.	Error		
-Microsoft-Windows-EapMethods-RasChap	107	0	RasChapauthenticationinprogressevent(AnsiString Domain, AnsiString Username)			RasChapauthenticationinprogressevent	Informational		
+Microsoft-Windows-EapMethods-RasChap	100	0	Authenticationsucceeded.(AnsiString Domain, AnsiString Username)			Authenticationsucceeded.	Informational	Microsoft-Windows-EapMethods-RasChap/Operational	Authentication succeeded for user %1, in domain %2.
+Microsoft-Windows-EapMethods-RasChap	101	0	Authenticationfailed.(AnsiString Domain, AnsiString Username, UInt32 int1)			Authenticationfailed.	Error	Microsoft-Windows-EapMethods-RasChap/Operational	Authentication failed for user %1, in domain %2, with error %3.
+Microsoft-Windows-EapMethods-RasChap	102	0	Authenticationfailed.102(AnsiString Domain, AnsiString Username)			Authenticationfailed.	Error	Microsoft-Windows-EapMethods-RasChap/Operational	Authentication failed for user %1, in domain %2 because it was attempted outside permitted logon hours.
+Microsoft-Windows-EapMethods-RasChap	103	0	Authenticationfailed.103(AnsiString Domain, AnsiString Username)			Authenticationfailed.	Error	Microsoft-Windows-EapMethods-RasChap/Operational	Authentication failed for user %1, in domain %2 because the user account is disabled.
+Microsoft-Windows-EapMethods-RasChap	104	0	Authenticationfailed.104(AnsiString Domain, AnsiString Username)			Authenticationfailed.	Error	Microsoft-Windows-EapMethods-RasChap/Operational	Authentication failed for user %1, in domain %2 because the user's password has expired.
+Microsoft-Windows-EapMethods-RasChap	105	0	Authenticationfailed.105(AnsiString Domain, AnsiString Username)			Authenticationfailed.	Error	Microsoft-Windows-EapMethods-RasChap/Operational	Authentication failed for user %1, in domain %2 because the user does not have dial-in permission.
+Microsoft-Windows-EapMethods-RasChap	106	0	Authenticationfailed.106(AnsiString Domain, AnsiString Username)			Authenticationfailed.	Error	Microsoft-Windows-EapMethods-RasChap/Operational	The user's effort to change their password failed. Username: %1. Domain: %2
+Microsoft-Windows-EapMethods-RasChap	107	0	RasChapauthenticationinprogressevent(AnsiString Domain, AnsiString Username)			RasChapauthenticationinprogressevent	Informational	Microsoft-Windows-EapMethods-RasChap/Operational	Sending creds to server for Username: %1. Domain: %2

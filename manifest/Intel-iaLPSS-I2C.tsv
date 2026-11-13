@@ -1,30 +1,30 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Intel-iaLPSS-I2C	1001	1	EnumerationofSPBCxdriver_V1(Pointer FxDevice)			EnumerationofSPBCxdriver	Informational		
-Intel-iaLPSS-I2C	1002	1	EnumerationofSPBCxdriver1002_V1(Pointer FxDevice, Pointer VAddr, HexInt64 PAddr)			EnumerationofSPBCxdriver	Informational		
-Intel-iaLPSS-I2C	1003	1	EnumerationofSPBCxdriver1003_V1(UnicodeString FailReason, UInt32 Status, Pointer WDFDEVICE)			EnumerationofSPBCxdriver	Error		
-Intel-iaLPSS-I2C	1004	1	EnumerationofSPBCxdriver1004_V1(Pointer FxDevice, Pointer VAddr, HexInt64 PAddr)			EnumerationofSPBCxdriver	Informational		
-Intel-iaLPSS-I2C	1005	1	DevicePowerFlowStart_V1(Pointer FxDevice, Pointer VAddr, HexInt64 PAddr)	Start		DevicePowerFlow	Informational		
-Intel-iaLPSS-I2C	1006	1	DevicePowerFlowStop_V1(Pointer FxDevice, Pointer VAddr, HexInt64 PAddr)	Stop		DevicePowerFlow	Informational		
-Intel-iaLPSS-I2C	1007	1	DevicePowerFlowStart1007_V1(Pointer FxDevice, Pointer VAddr, HexInt64 PAddr)	Start		DevicePowerFlow	Informational		
-Intel-iaLPSS-I2C	1008	1	DevicePowerFlowStop1008_V1(Pointer FxDevice, Pointer VAddr, HexInt64 PAddr)	Stop		DevicePowerFlow	Informational		
-Intel-iaLPSS-I2C	1009	1	IOFlowsThroughSPBCxdriverStart_V1(Pointer pRequest, Pointer pDevice, Pointer pTarget, UnicodeString IOCTL, HexInt64 TargetI2CAddress, HexInt64 MMIO)	Start		IOFlowsThroughSPBCxdriver	Informational		
-Intel-iaLPSS-I2C	1010	1	IOFlowsThroughSPBCxdriverStop1010_V1(Pointer Request, UInt32 Status)	Stop		IOFlowsThroughSPBCxdriver	Informational		
-Intel-iaLPSS-I2C	1011	0	TasktoTrackInterruptRoutineStart(Pointer WDFDEVICE, HexInt64 MMIO)	Start		TasktoTrackInterruptRoutine	Informational		
-Intel-iaLPSS-I2C	1012	1	TasktoTrackInterruptRoutineStop_V1(Pointer WDFDEVICE, HexInt64 MMIO, HexInt64 Stat)	Stop		TasktoTrackInterruptRoutine	Informational		
-Intel-iaLPSS-I2C	1013	1	TasktotrackDPCStart_V1(Pointer WDFDEVICE, HexInt64 MMIO)	Start		TasktotrackDPC	Informational		
-Intel-iaLPSS-I2C	1014	1	TasktotrackDPCStop_V1(Pointer WDFDEVICE, HexInt64 MMIO)	Stop		TasktotrackDPC	Informational		
-Intel-iaLPSS-I2C	1015	1	task_0Start_V1()	Start		task_0	Informational		
-Intel-iaLPSS-I2C	1016	1	task_0Stop_V1()	Stop		task_0	Informational		
-Intel-iaLPSS-I2C	1017	1	EnumerationofSPBCxdriverStart_V1()	Start		EnumerationofSPBCxdriver	Informational		
-Intel-iaLPSS-I2C	1018	1	EnumerationofSPBCxdriverStop_V1()	Stop		EnumerationofSPBCxdriver	Informational		
-Intel-iaLPSS-I2C	1019	1	EnumerationofSPBCxdriverStart1019_V1()	Start		EnumerationofSPBCxdriver	Informational		
-Intel-iaLPSS-I2C	1020	1	EnumerationofSPBCxdriverStop1020_V1()	Stop		EnumerationofSPBCxdriver	Informational		
-Intel-iaLPSS-I2C	1021	1	EnumerationofSPBCxdriver1021_V1(Pointer TxDmaEnabler, Pointer RxDmaEnabler, Pointer WDFDevice, HexInt64 MMIO, UnicodeString Status)			EnumerationofSPBCxdriver	Informational		
-Intel-iaLPSS-I2C	1022	1	DevicePowerFlow_V1(UnicodeString MonitorState, UInt64 IdleTimeout, Pointer WDFDevice, HexInt64 MMIO)			DevicePowerFlow	Informational		
-Intel-iaLPSS-I2C	1023	1	IOFlowsThroughSPBCxdriver_V1(Pointer pRequest, Pointer pDevice, Pointer pTarget, UnicodeString IOCTL, HexInt64 TargetI2CAddress, HexInt64 MMIO)			IOFlowsThroughSPBCxdriver	Informational		
-Intel-iaLPSS-I2C	1024	1	IOFlowsThroughSPBCxdriverStart1024_V1()	Start		IOFlowsThroughSPBCxdriver	Informational		
-Intel-iaLPSS-I2C	1025	0	IOFlowsThroughSPBCxdriverStop()	Stop		IOFlowsThroughSPBCxdriver	Informational		
-Intel-iaLPSS-I2C	1026	1	TasktotrackDMATransactionsStart_V1(UnicodeString Direction, UInt64 NumMdls, UInt64 NumBytes, Pointer WDFDEVICE, HexInt64 MMIO)	Start		TasktotrackDMATransactions	Informational		
-Intel-iaLPSS-I2C	1027	1	TasktotrackDMATransactionsStop_V1(UnicodeString Direction, Pointer WDFDEVICE, HexInt64 MMIO, UInt32 DMAStatus, UInt64 NumBytes)	Stop		TasktotrackDMATransactions	Informational		
-Intel-iaLPSS-I2C	1029	1	IOFlowsThroughSPBCxdriver1029_V1(Pointer WDFDEVICE, HexInt64 MMIO)			IOFlowsThroughSPBCxdriver	Informational		
-Intel-iaLPSS-I2C	1030	1	task_0_V1()			task_0	Informational		
+Intel-iaLPSS-I2C	1001	1	EnumerationofSPBCxdriver_V1(Pointer FxDevice)			EnumerationofSPBCxdriver	Informational	Intel-iaLPSS-I2C/Analytic	Created WDFDEVICE %1
+Intel-iaLPSS-I2C	1002	1	EnumerationofSPBCxdriver1002_V1(Pointer FxDevice, Pointer VAddr, HexInt64 PAddr)			EnumerationofSPBCxdriver	Informational	Intel-iaLPSS-I2C/Analytic	WDFDEVICE %1 mapped to vAddr %2 (MMIO Addr %3)
+Intel-iaLPSS-I2C	1003	1	EnumerationofSPBCxdriver1003_V1(UnicodeString FailReason, UInt32 Status, Pointer WDFDEVICE)			EnumerationofSPBCxdriver	Error	System	%1. WDFDEVICE %3
+Intel-iaLPSS-I2C	1004	1	EnumerationofSPBCxdriver1004_V1(Pointer FxDevice, Pointer VAddr, HexInt64 PAddr)			EnumerationofSPBCxdriver	Informational	Intel-iaLPSS-I2C/Analytic	Resource for %1 Released
+Intel-iaLPSS-I2C	1005	1	DevicePowerFlowStart_V1(Pointer FxDevice, Pointer VAddr, HexInt64 PAddr)	Start		DevicePowerFlow	Informational	Intel-iaLPSS-I2C/Analytic	D0 Entrty Start for WDFDEVICE %1 (MMIO %3)
+Intel-iaLPSS-I2C	1006	1	DevicePowerFlowStop_V1(Pointer FxDevice, Pointer VAddr, HexInt64 PAddr)	Stop		DevicePowerFlow	Informational	Intel-iaLPSS-I2C/Analytic	D0 Entry End for WDFDEVICE %1 (MMIO %3)
+Intel-iaLPSS-I2C	1007	1	DevicePowerFlowStart1007_V1(Pointer FxDevice, Pointer VAddr, HexInt64 PAddr)	Start		DevicePowerFlow	Informational	Intel-iaLPSS-I2C/Analytic	D0 Exit Start for WDFDEVICE %1 (MMIO %3)
+Intel-iaLPSS-I2C	1008	1	DevicePowerFlowStop1008_V1(Pointer FxDevice, Pointer VAddr, HexInt64 PAddr)	Stop		DevicePowerFlow	Informational	Intel-iaLPSS-I2C/Analytic	D0 Exit End for WDFDEVICE %1 (MMIO %3)
+Intel-iaLPSS-I2C	1009	1	IOFlowsThroughSPBCxdriverStart_V1(Pointer pRequest, Pointer pDevice, Pointer pTarget, UnicodeString IOCTL, HexInt64 TargetI2CAddress, HexInt64 MMIO)	Start		IOFlowsThroughSPBCxdriver	Informational	Intel-iaLPSS-I2C/Analytic	SpbRequest %1 (Type %4) received. WDFDEVICE %2 (MMIO %6). Target %3 (Address %5)
+Intel-iaLPSS-I2C	1010	1	IOFlowsThroughSPBCxdriverStop1010_V1(Pointer Request, UInt32 Status)	Stop		IOFlowsThroughSPBCxdriver	Informational	Intel-iaLPSS-I2C/Analytic	SpbRequest %1 Completed Status %2
+Intel-iaLPSS-I2C	1011	0	TasktoTrackInterruptRoutineStart(Pointer WDFDEVICE, HexInt64 MMIO)	Start		TasktoTrackInterruptRoutine	Informational	Intel-iaLPSS-I2C/Analytic	ISR For WDFDEVICE %1 (MMIO %2) Begin
+Intel-iaLPSS-I2C	1012	1	TasktoTrackInterruptRoutineStop_V1(Pointer WDFDEVICE, HexInt64 MMIO, HexInt64 Stat)	Stop		TasktoTrackInterruptRoutine	Informational	Intel-iaLPSS-I2C/Analytic	ISR For WDFDEVICE %1 (MMIO %2) End Interrupt Status %3
+Intel-iaLPSS-I2C	1013	1	TasktotrackDPCStart_V1(Pointer WDFDEVICE, HexInt64 MMIO)	Start		TasktotrackDPC	Informational	Intel-iaLPSS-I2C/Analytic	DPC for WDFDEVICE %1 (MMIO %2) Start
+Intel-iaLPSS-I2C	1014	1	TasktotrackDPCStop_V1(Pointer WDFDEVICE, HexInt64 MMIO)	Stop		TasktotrackDPC	Informational	Intel-iaLPSS-I2C/Analytic	DPC for WDFDEVICE %1 (MMIO %2) End
+Intel-iaLPSS-I2C	1015	1	Event_1015_Start_V1()	Start		task_0	Informational	Intel-iaLPSS-I2C/Analytic	DriverEntry Start
+Intel-iaLPSS-I2C	1016	1	Event_1016_Stop_V1()	Stop		task_0	Informational	Intel-iaLPSS-I2C/Analytic	DriverEntry End
+Intel-iaLPSS-I2C	1017	1	EnumerationofSPBCxdriverStart_V1()	Start		EnumerationofSPBCxdriver	Informational	Intel-iaLPSS-I2C/Analytic	DeviceAdd Start
+Intel-iaLPSS-I2C	1018	1	EnumerationofSPBCxdriverStop_V1()	Stop		EnumerationofSPBCxdriver	Informational	Intel-iaLPSS-I2C/Analytic	DeviceAdd End
+Intel-iaLPSS-I2C	1019	1	EnumerationofSPBCxdriverStart1019_V1()	Start		EnumerationofSPBCxdriver	Informational	Intel-iaLPSS-I2C/Analytic	OnPrepareHardware Start
+Intel-iaLPSS-I2C	1020	1	EnumerationofSPBCxdriverStop1020_V1()	Stop		EnumerationofSPBCxdriver	Informational	Intel-iaLPSS-I2C/Analytic	OnPrepareHardware End
+Intel-iaLPSS-I2C	1021	1	EnumerationofSPBCxdriver1021_V1(Pointer TxDmaEnabler, Pointer RxDmaEnabler, Pointer WDFDevice, HexInt64 MMIO, UnicodeString Status)			EnumerationofSPBCxdriver	Informational	Intel-iaLPSS-I2C/Analytic	DMA Configurations %5 for WDFDEVICE %3 (MMIO %4)
+Intel-iaLPSS-I2C	1022	1	DevicePowerFlow_V1(UnicodeString MonitorState, UInt64 IdleTimeout, Pointer WDFDevice, HexInt64 MMIO)			DevicePowerFlow	Informational	Intel-iaLPSS-I2C/Analytic	Monitor State %1. Idle Timeout %2. WDFDEVICE %3 (MMIO %4)
+Intel-iaLPSS-I2C	1023	1	IOFlowsThroughSPBCxdriver_V1(Pointer pRequest, Pointer pDevice, Pointer pTarget, UnicodeString IOCTL, HexInt64 TargetI2CAddress, HexInt64 MMIO)			IOFlowsThroughSPBCxdriver	Informational	Intel-iaLPSS-I2C/Analytic	Cancel SpbRequest %1 received. WDFDEVICE %2 (MMIO %6). Target %3 %3 (Address %5)
+Intel-iaLPSS-I2C	1024	1	IOFlowsThroughSPBCxdriverStart1024_V1()	Start		IOFlowsThroughSPBCxdriver	Informational	Intel-iaLPSS-I2C/Analytic	Cancel Start
+Intel-iaLPSS-I2C	1025	0	IOFlowsThroughSPBCxdriverStop()	Stop		IOFlowsThroughSPBCxdriver	Informational	Intel-iaLPSS-I2C/Analytic	Cancel End
+Intel-iaLPSS-I2C	1026	1	TasktotrackDMATransactionsStart_V1(UnicodeString Direction, UInt64 NumMdls, UInt64 NumBytes, Pointer WDFDEVICE, HexInt64 MMIO)	Start		TasktotrackDMATransactions	Informational	Intel-iaLPSS-I2C/Analytic	DMA Txn Start. Direction %1 # of MDL %2 #bytes %3 WDFDEVICE %4 (MMIO %5)
+Intel-iaLPSS-I2C	1027	1	TasktotrackDMATransactionsStop_V1(UnicodeString Direction, Pointer WDFDEVICE, HexInt64 MMIO, UInt32 DMAStatus, UInt64 NumBytes)	Stop		TasktotrackDMATransactions	Informational	Intel-iaLPSS-I2C/Analytic	DMA Txn End. Direction %1 DmaStatus %4 #bytes %5 WDFDEVICE %2 (MMIO %3)
+Intel-iaLPSS-I2C	1029	1	IOFlowsThroughSPBCxdriver1029_V1(Pointer WDFDEVICE, HexInt64 MMIO)			IOFlowsThroughSPBCxdriver	Informational	Intel-iaLPSS-I2C/Analytic	Cancel Timer Expired WDFDEVICE %1 (MMIO %2)
+Intel-iaLPSS-I2C	1030	1	Event_1030_V1()			task_0	Informational	Intel-iaLPSS-I2C/Analytic	DriverUnloaded

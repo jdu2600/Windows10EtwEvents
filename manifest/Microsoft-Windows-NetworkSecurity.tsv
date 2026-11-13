@@ -1,9 +1,9 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-NetworkSecurity	801	0	task_0(UInt64 SaContextID, UInt32 Reason)			task_0	Verbose		
-Microsoft-Windows-NetworkSecurity	802	0	task_0802(UInt64 SaContextID, UInt32 Result)			task_0	Verbose		
-Microsoft-Windows-NetworkSecurity	803	0	task_0803(UInt64 SaContextID, UnicodeString LocalAddr, UnicodeString LocalMask, UInt16 LocalPort, UnicodeString RemoteAddress, UnicodeString RemoteMask, UInt16 RemotePort, UInt8 IPProtocol, UnicodeString LocalTunnelEndpt, UnicodeString RemoteTunnelEndpt)			task_0	Verbose		
-Microsoft-Windows-NetworkSecurity	804	0	task_0804(UInt64 SaContextID)			task_0	Verbose		
-Microsoft-Windows-NetworkSecurity	805	0	task_0805(UInt64 SaContextID, UInt32 SPI)			task_0	Verbose		
-Microsoft-Windows-NetworkSecurity	806	0	SaContextOperationStart()	Start		SaContextOperation	Verbose		
-Microsoft-Windows-NetworkSecurity	807	0	SaContextOperationStop()	Stop		SaContextOperation	Verbose		
-Microsoft-Windows-NetworkSecurity	808	0	SaContextOperation(UInt64 SaContextID)			SaContextOperation	Verbose		
+Microsoft-Windows-NetworkSecurity	801	0	Event_801(UInt64 SaContextID, UInt32 Reason)			task_0	Verbose	Microsoft-Windows-NetworkSecurity/Debug	SA Context %1 was created
+Microsoft-Windows-NetworkSecurity	802	0	Event_802(UInt64 SaContextID, UInt32 Result)			task_0	Verbose	Microsoft-Windows-NetworkSecurity/Debug	SA Context %1: Result=%2
+Microsoft-Windows-NetworkSecurity	803	0	Event_803(UInt64 SaContextID, UnicodeString LocalAddr, UnicodeString LocalMask, UInt16 LocalPort, UnicodeString RemoteAddress, UnicodeString RemoteMask, UInt16 RemotePort, UInt8 IPProtocol, UnicodeString LocalTunnelEndpt, UnicodeString RemoteTunnelEndpt)			task_0	Verbose	Microsoft-Windows-NetworkSecurity/Debug	SA Context %1:\nLocal Address: %2:%4\nRemote Address: %3:%5\nProtocol: %6
+Microsoft-Windows-NetworkSecurity	804	0	Event_804(UInt64 SaContextID)			task_0	Verbose	Microsoft-Windows-NetworkSecurity/Debug	SA Context %1 was deleted
+Microsoft-Windows-NetworkSecurity	805	0	Event_805(UInt64 SaContextID, UInt32 SPI)			task_0	Verbose	Microsoft-Windows-NetworkSecurity/Debug	SA Context %1: SPI=%2
+Microsoft-Windows-NetworkSecurity	806	0	SaContextOperationStart()	Start		SaContextOperation	Verbose	Microsoft-Windows-NetworkSecurity/Debug	----- BEGIN BFE_SA_CONTEXT processing -----
+Microsoft-Windows-NetworkSecurity	807	0	SaContextOperationStop()	Stop		SaContextOperation	Verbose	Microsoft-Windows-NetworkSecurity/Debug	----- END BFE_SA_CONTEXT processing -----
+Microsoft-Windows-NetworkSecurity	808	0	SaContextOperation(UInt64 SaContextID)			SaContextOperation	Verbose	Microsoft-Windows-NetworkSecurity/Debug	----- BFE SA CONTEXT ID: (%1) -----

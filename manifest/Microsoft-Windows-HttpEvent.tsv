@@ -1,27 +1,26 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-HttpEvent	15000	0	task_0PCODE_192pcode_192(UnicodeString DeviceObject, UnicodeString LogFile, UInt32 __binLength, Binary binary)	opcode_192		task_0	Always		
-Microsoft-Windows-HttpEvent	15001	0	task_0PCODE_192pcode_19215001(UnicodeString DeviceObject, UnicodeString SiteId, UInt32 __binLength, Binary binary)	opcode_192		task_0	Always		
-Microsoft-Windows-HttpEvent	15002	0	task_0PCODE_192pcode_19215002(UnicodeString DeviceObject, UnicodeString LogFile, UnicodeString SiteId, UInt32 __binLength, Binary binary)	opcode_192		task_0	Always		
-Microsoft-Windows-HttpEvent	15003	0	task_0PCODE_192pcode_19215003()	opcode_192		task_0	Always		
-Microsoft-Windows-HttpEvent	15004	0	task_0PCODE_192pcode_19215004(UnicodeString DeviceObject, UnicodeString LogFile, UInt32 __binLength, Binary binary)	opcode_192		task_0	Always		
-Microsoft-Windows-HttpEvent	15005	0	task_0PCODE_192pcode_19215005(UnicodeString DeviceObject, UnicodeString Address, UInt32 __binLength, Binary binary)	opcode_192		task_0	Always		
-Microsoft-Windows-HttpEvent	15006	0	task_0PCODE_192pcode_19215006(UnicodeString DeviceObject, UnicodeString Directory, UInt32 __binLength, Binary binary)	opcode_192		task_0	Always		
-Microsoft-Windows-HttpEvent	15007	0	task_0PCODE_64pcode_64(UnicodeString DeviceObject, UnicodeString Url)	opcode_64		task_0	Always		
-Microsoft-Windows-HttpEvent	15008	0	task_0PCODE_64pcode_6415008(UnicodeString DeviceObject, UnicodeString Url)	opcode_64		task_0	Always		
-Microsoft-Windows-HttpEvent	15009	0	task_0PCODE_192pcode_19215009()	opcode_192		task_0	Always		
-Microsoft-Windows-HttpEvent	15010	0	task_0PCODE_192pcode_19215010(UnicodeString DeviceObject, UnicodeString Url, UInt32 __binLength, Binary binary)	opcode_192		task_0	Always		
-Microsoft-Windows-HttpEvent	15011	0	task_0PCODE_192pcode_19215011()	opcode_192		task_0	Always		
-Microsoft-Windows-HttpEvent	15012	0	task_0PCODE_192pcode_19215012()	opcode_192		task_0	Always		
-Microsoft-Windows-HttpEvent	15013	0	task_0PCODE_192pcode_19215013()	opcode_192		task_0	Always		
-Microsoft-Windows-HttpEvent	15014	0	task_0PCODE_192pcode_19215014(UnicodeString DeviceObject, UnicodeString Address, UInt32 __binLength, Binary binary)	opcode_192		task_0	Always		
-Microsoft-Windows-HttpEvent	15015	0	task_0PCODE_64pcode_6415015()	opcode_64		task_0	Always		
-Microsoft-Windows-HttpEvent	15016	0	task_0PCODE_192pcode_19215016(UnicodeString DeviceObject, UnicodeString SecurityPackage, UInt32 __binLength, Binary binary)	opcode_192		task_0	Always		
-Microsoft-Windows-HttpEvent	15017	0	task_0PCODE_192pcode_19215017()	opcode_192		task_0	Always		
-Microsoft-Windows-HttpEvent	15018	0	task_0PCODE_192pcode_19215018(UnicodeString DeviceObject, UnicodeString LogFile, UInt32 __binLength, Binary binary)	opcode_192		task_0	Always		
-Microsoft-Windows-HttpEvent	15019	0	task_0PCODE_128pcode_128(UnicodeString DeviceObject, UnicodeString Host)	opcode_128		task_0	Always		
-Microsoft-Windows-HttpEvent	15020	0	task_0PCODE_128pcode_12815020(UnicodeString DeviceObject, UnicodeString Host)	opcode_128		task_0	Always		
-Microsoft-Windows-HttpEvent	15021	0	task_0PCODE_192pcode_19215021(UnicodeString DeviceObject, UnicodeString Endpoint, UInt32 __binLength, Binary binary)	opcode_192		task_0	Always		
-Microsoft-Windows-HttpEvent	15022	0	task_0PCODE_192pcode_19215022(UnicodeString DeviceObject, UnicodeString Status)	opcode_192		task_0	Always		
-Microsoft-Windows-HttpEvent	15300	0	task_0PCODE_128pcode_12815300(UnicodeString DeviceObject, UnicodeString Endpoint)	opcode_128		task_0	Always		
-Microsoft-Windows-HttpEvent	15301	0	task_0PCODE_128pcode_12815301(UnicodeString DeviceObject, UnicodeString Endpoint)	opcode_128		task_0	Always		
-Microsoft-Windows-HttpEvent	15302	0	task_0PCODE_128pcode_12815302(UnicodeString DeviceObject, UnicodeString Endpoint)	opcode_128		task_0	Always		
+Microsoft-Windows-HttpEvent	15000	0	Message_0xC0003A98(UnicodeString DeviceObject, UnicodeString LogFile, UInt32 __binLength, Binary binary)			task_0	Always		Unable to create log file %2. Make sure that the logging directory is correct and this computer has write access to that directory.
+Microsoft-Windows-HttpEvent	15001	0	Message_0xC0003A99(UnicodeString DeviceObject, UnicodeString SiteId, UInt32 __binLength, Binary binary)			task_0	Always		Unable to create the log file for site W3SVC%2. Make sure that the logging directory for the site is correct and this computer has write access to that directory.
+Microsoft-Windows-HttpEvent	15002	0	Message_0xC0003A9A(UnicodeString DeviceObject, UnicodeString LogFile, UnicodeString SiteId, UInt32 __binLength, Binary binary)			task_0	Always		Unable to write to the log file %2 for site W3SVC%3. Disk may be full. If this is a network path, make sure that network connectivity is not broken.
+Microsoft-Windows-HttpEvent	15003	0	Message_0xC0003A9B()			task_0	Always		Unable to create the centralized binary log file. Make sure that the logging directory is correct and this computer has write access to that directory.
+Microsoft-Windows-HttpEvent	15004	0	Message_0xC0003A9C(UnicodeString DeviceObject, UnicodeString LogFile, UInt32 __binLength, Binary binary)			task_0	Always		Unable to write to the centralized binary log file %2. Disk may be full. If this is a network path, make sure that network connectivity is not broken.
+Microsoft-Windows-HttpEvent	15005	0	Message_0xC0003A9D(UnicodeString DeviceObject, UnicodeString Address, UInt32 __binLength, Binary binary)			task_0	Always		Unable to bind to the underlying transport for %2. The IP Listen-Only list may contain a reference to an interface which may not exist on this machine.  The data field contains the error number.
+Microsoft-Windows-HttpEvent	15006	0	Message_0xC0003A9E(UnicodeString DeviceObject, UnicodeString Directory, UInt32 __binLength, Binary binary)			task_0	Always		Owner of the log file or directory %2 is invalid. This could be because another user has already created the log file or the directory.
+Microsoft-Windows-HttpEvent	15007	0	Message_0x40003A9F(UnicodeString DeviceObject, UnicodeString Url)			task_0	Always		Reservation for namespace identified by URL prefix %2 was successfully added.
+Microsoft-Windows-HttpEvent	15008	0	Message_0x40003AA0(UnicodeString DeviceObject, UnicodeString Url)			task_0	Always		Reservation for namespace identified by URL prefix %2 was successfully deleted.
+Microsoft-Windows-HttpEvent	15009	0	Message_0xC0003AA1()			task_0	Always		An error occurred while initializing namespace reservations.  The error status code is contained within the returned data.
+Microsoft-Windows-HttpEvent	15010	0	Message_0xC0003AA2(UnicodeString DeviceObject, UnicodeString Url, UInt32 __binLength, Binary binary)			task_0	Always		An error occured while initializing namespace reservation identified by URL prefix %2.  The error status code is contained within the returned data.
+Microsoft-Windows-HttpEvent	15011	0	Message_0xC0003AA3()			task_0	Always		Unable to create the error log file. Make sure that the error logging directory is correct.
+Microsoft-Windows-HttpEvent	15012	0	Message_0xC0003AA4()			task_0	Always		Unable to write to the error log file. Disk may be full. The data field contains the error number.
+Microsoft-Windows-HttpEvent	15013	0	Message_0xC0003AA5()			task_0	Always		Error logging configuration failed. The data field contains the error number.
+Microsoft-Windows-HttpEvent	15014	0	Message_0xC0003AA6(UnicodeString DeviceObject, UnicodeString Address, UInt32 __binLength, Binary binary)			task_0	Always		Unable to convert IP Listen-Only list entry %2.  The data field contains the error number.
+Microsoft-Windows-HttpEvent	15015	0	Message_0x40003AA7()			task_0	Always		Unable to convert all entries on IP Listen-Only list.  Driver will listen on all available interfaces.
+Microsoft-Windows-HttpEvent	15016	0	Message_0xC0003AA8(UnicodeString DeviceObject, UnicodeString SecurityPackage, UInt32 __binLength, Binary binary)			task_0	Always		Unable to initialize the security package %2 for server side authentication.  The data field contains the error number.
+Microsoft-Windows-HttpEvent	15017	0	Message_0xC0003AA9()			task_0	Always		Unable to create the centralized W3C log file. Make sure that the logging directory is correct and this computer has write access to that directory.
+Microsoft-Windows-HttpEvent	15018	0	Message_0xC0003AAA(UnicodeString DeviceObject, UnicodeString LogFile, UInt32 __binLength, Binary binary)			task_0	Always		Unable to write to the centralized W3C log file %2. Disk may be full. If this is a network path, make sure that network connectivity is not broken.
+Microsoft-Windows-HttpEvent	15019	0	Message_0x80003AAB(UnicodeString DeviceObject, UnicodeString Host)			task_0	Always		The host %2 has gone down as a result of the change in the IP Listen-Only list.
+Microsoft-Windows-HttpEvent	15020	0	Message_0x80003AAC(UnicodeString DeviceObject, UnicodeString Host)			task_0	Always		The host %2 has come up as a result of the change in the IP Listen-Only list.
+Microsoft-Windows-HttpEvent	15021	0	Message_0xC0003AAD(UnicodeString DeviceObject, UnicodeString Endpoint, UInt32 __binLength, Binary binary)			task_0	Always		An error occurred while using SSL configuration for endpoint %2.  The error status code is contained within the returned data.
+Microsoft-Windows-HttpEvent	15022	0	Message_0xC0003AAE(UnicodeString DeviceObject, UnicodeString Status)			task_0	Always		Http.sys failed to process a CPU hot-add event. Status: %2 .
+Microsoft-Windows-HttpEvent	15300	0	Message_0x80003BC4(UnicodeString DeviceObject, UnicodeString Endpoint)			task_0	Always		SSL Certificate Settings deleted for endpoint : %2 .
+Microsoft-Windows-HttpEvent	15301	0	Message_0x80003BC5(UnicodeString DeviceObject, UnicodeString Endpoint)			task_0	Always		SSL Certificate Settings created by an admin process for endpoint : %2 .

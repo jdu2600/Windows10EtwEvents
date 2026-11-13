@@ -1,111 +1,87 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-WorkFolders	0	0	task_0()			task_0	Informational		
-Microsoft-Windows-WorkFolders	1	0	task_01()			task_0	Informational		
-Microsoft-Windows-WorkFolders	2	0	task_02(UnicodeString LocalFolder, UnicodeString ServerURI, UnicodeString ServerPartnershipId)			task_0	Informational		
-Microsoft-Windows-WorkFolders	3	0	task_03(UnicodeString LocalFolder, UnicodeString ServerURI, UnicodeString ServerPartnershipId)			task_0	Informational		
-Microsoft-Windows-WorkFolders	4	0	task_04(UnicodeString LocalFolder, UnicodeString ServerURI, UnicodeString ServerPartnershipId)			task_0	Informational		
-Microsoft-Windows-WorkFolders	5	0	task_05(UnicodeString SyncUrl, Boolean AutoProvision, Int32 GhostingPolicy)			task_0	Informational		
-Microsoft-Windows-WorkFolders	6	0	task_06(UnicodeString DiscoveryUrl, UnicodeString ServerUrl, Int32 GhostingPolicy)			task_0	Informational		
-Microsoft-Windows-WorkFolders	7	0	task_07(UnicodeString PartnershipId, UnicodeString PartnershipType, UnicodeString DiscoveryUrl, UnicodeString ServerUrl, Int32 GhostingPolicy)			task_0	Informational		
-Microsoft-Windows-WorkFolders	8	0	task_08()			task_0	Informational		
-Microsoft-Windows-WorkFolders	9	0	task_09(UnicodeString DiscoveryUrl, UnicodeString ServerUrl, Boolean ConfiguredByPolicy, Int32 GhostingPolicy)			task_0	Informational		
-Microsoft-Windows-WorkFolders	10	0	task_010(UnicodeString HResultStr, Int32 HResult)			task_0	Error		
-Microsoft-Windows-WorkFolders	11	0	task_011(UnicodeString HResultStr, Int32 HResult)			task_0	Error		
-Microsoft-Windows-WorkFolders	12	0	task_012(UnicodeString HResultStr, Int32 HResult)			task_0	Error		
-Microsoft-Windows-WorkFolders	13	0	task_013(UnicodeString HResultStr, Int32 HResult)			task_0	Error		
-Microsoft-Windows-WorkFolders	14	0	task_014(UnicodeString HResultStr, Int32 HResult)			task_0	Error		
-Microsoft-Windows-WorkFolders	15	0	task_015(UnicodeString HResultStr, Int32 HResult)			task_0	Error		
-Microsoft-Windows-WorkFolders	16	0	task_016(UnicodeString DiscoveryURL, UnicodeString ServerURL)			task_0	Informational		
-Microsoft-Windows-WorkFolders	17	0	task_017(UnicodeString ServerURL, UnicodeString SyncTargetType, UnicodeString ServerPartnershipId)			task_0	Informational		
-Microsoft-Windows-WorkFolders	18	0	task_018(UnicodeString UserEmail, UnicodeString DiscoveryURL)			task_0	Informational		
-Microsoft-Windows-WorkFolders	19	0	task_019(UnicodeString ServerURL, UnicodeString SyncTargetType, UnicodeString ServerPartnershipId)			task_0	Error		
-Microsoft-Windows-WorkFolders	502	0	task_0502(UnicodeString LocalFolder, UnicodeString ServerURI, UnicodeString ServerPartnershipId, UnicodeString HResultStr, Int32 HResult)			task_0	Error		
-Microsoft-Windows-WorkFolders	503	0	task_0503(UnicodeString LocalFolder, UnicodeString ServerURI, UnicodeString ServerPartnershipId, UnicodeString HResultStr, Int32 HResult)			task_0	Error		
-Microsoft-Windows-WorkFolders	516	0	task_0516(UnicodeString DiscoveryURL, UnicodeString HResultStr, Int32 HResult)			task_0	Error		
-Microsoft-Windows-WorkFolders	517	0	task_0517(UnicodeString ServerURL, UnicodeString SyncTargetType, UnicodeString HResultStr, Int32 HResult)			task_0	Error		
-Microsoft-Windows-WorkFolders	518	0	task_0518(UnicodeString UserEmail, UnicodeString HResultStr, Int32 HResult)			task_0	Error		
-Microsoft-Windows-WorkFolders	1000	0	task_01000(UnicodeString Path, Int64 SizeMB)			task_0	Warning		
-Microsoft-Windows-WorkFolders	1001	0	task_01001(UnicodeString User, UnicodeString StsUri, UnicodeString HResultStr, Int32 HResult)			task_0	Error		
-Microsoft-Windows-WorkFolders	1002	0	task_01002(UnicodeString User, UnicodeString StsUri, UnicodeString HResultStr, Int32 HResult)			task_0	Warning		
-Microsoft-Windows-WorkFolders	1100	0	task_01100(UnicodeString FileName, GUID SyncId, UnicodeString HResultStr, Int32 HResult)			task_0	Informational		
-Microsoft-Windows-WorkFolders	1101	0	task_01101(UnicodeString FileName, GUID SyncId, UnicodeString HResultStr, Int32 HResult)			task_0	Warning		
-Microsoft-Windows-WorkFolders	1102	0	task_01102(UnicodeString FileName, GUID SyncId, UnicodeString HResultStr, Int32 HResult)			task_0	Informational		
-Microsoft-Windows-WorkFolders	1103	0	task_01103(UnicodeString FileName, GUID SyncId, UnicodeString HResultStr, Int32 HResult)			task_0	Warning		
-Microsoft-Windows-WorkFolders	1104	0	task_01104(UnicodeString SyncPartnershipId, UnicodeString HResultStr, Int32 HResult)			task_0	Informational		
-Microsoft-Windows-WorkFolders	1105	0	task_01105(UnicodeString SyncPartnershipId, UnicodeString HResultStr, Int32 HResult)			task_0	Warning		
-Microsoft-Windows-WorkFolders	1106	0	task_01106(UnicodeString SyncPartnershipId, UnicodeString HResultStr, Int32 HResult)			task_0	Informational		
-Microsoft-Windows-WorkFolders	1107	0	task_01107(UnicodeString SyncPartnershipId, UnicodeString HResultStr, Int32 HResult)			task_0	Warning		
-Microsoft-Windows-WorkFolders	2000	0	task_02000(UnicodeString LocalReplicaRoot)			task_0	Informational		
-Microsoft-Windows-WorkFolders	2001	0	task_02001(UnicodeString SessionUri)			task_0	Informational		
-Microsoft-Windows-WorkFolders	2002	0	task_02002(UnicodeString SessionUri)			task_0	Informational		
-Microsoft-Windows-WorkFolders	2003	0	task_02003(Int32 SuccessFileCount, Int64 SuccessDataSize, Int32 FailedFileCount, Int64 FailedDataSize, Int32 TotalBatchTime, Float Rate)			task_0	Informational		
-Microsoft-Windows-WorkFolders	2004	0	task_02004(Int32 SuccessFileCount, Int64 SuccessDataSize, Int32 FailedFileCount, Int64 FailedDataSize, Int32 TotalBatchTime, Float Rate)			task_0	Informational		
-Microsoft-Windows-WorkFolders	2005	0	task_02005(UnicodeString Uri, UnicodeString Verb, UnicodeString Headers, Int32 BodyLength, Int32 HttpResponse, UnicodeString ServerCodeStr, Int32 HResult)			task_0	Error		
-Microsoft-Windows-WorkFolders	2006	0	task_02006(GUID SyncId, UnicodeString HResultStr, Int32 HResult)			task_0	Informational		
-Microsoft-Windows-WorkFolders	2007	0	task_02007(UnicodeString Username)			task_0	Warning		
-Microsoft-Windows-WorkFolders	2008	0	task_02008(UnicodeString Username)			task_0	Error		
-Microsoft-Windows-WorkFolders	2009	0	task_02009(UnicodeString ItemName, GUID SyncGID, UnicodeString Action, UnicodeString HResultStr, Int32 HResult)			task_0	Informational		
-Microsoft-Windows-WorkFolders	2010	0	task_02010(UnicodeString ItemName, GUID SyncGID, UnicodeString Action, UnicodeString HResultStr, Int32 HResult)			task_0	Warning		
-Microsoft-Windows-WorkFolders	2011	0	task_02011(UnicodeString ItemName, GUID SyncGID, UnicodeString Action, UnicodeString HResultStr, Int32 HResult)			task_0	Informational		
-Microsoft-Windows-WorkFolders	2012	0	task_02012(UnicodeString ItemName, GUID SyncGID, UnicodeString Action, UnicodeString HResultStr, Int32 HResult)			task_0	Warning		
-Microsoft-Windows-WorkFolders	2013	0	task_02013(Boolean ConcurrencyConflict, UnicodeString SourceItemName, GUID SourceSyncGID, UnicodeString DestinationItemName, GUID DestinationSyncGID, UnicodeString DataWinner, UnicodeString NamespaceWinner, UnicodeString AttributesWinner, UnicodeString TieBreakerWinner)			task_0	Informational		
-Microsoft-Windows-WorkFolders	2014	0	task_02014(UnicodeString LocalReplicaRoot)			task_0	Informational		
-Microsoft-Windows-WorkFolders	2015	0	task_02015(UnicodeString LocalReplicaRoot, UnicodeString HResultStr, Int32 HResult)			task_0	Warning		
-Microsoft-Windows-WorkFolders	2016	0	task_02016(UnicodeString FileName)			task_0	Informational		
-Microsoft-Windows-WorkFolders	2017	0	task_02017(UnicodeString FileName, UnicodeString HResultStr, Int32 HResult)			task_0	Error		
-Microsoft-Windows-WorkFolders	2018	0	task_02018(UnicodeString FileName)			task_0	Informational		
-Microsoft-Windows-WorkFolders	2019	0	task_02019(UnicodeString FileName)			task_0	Informational		
-Microsoft-Windows-WorkFolders	2020	0	task_02020(UnicodeString FileName, UnicodeString HResultStr, Int32 HResult)			task_0	Error		
-Microsoft-Windows-WorkFolders	2021	0	task_02021(UnicodeString FileName)			task_0	Informational		
-Microsoft-Windows-WorkFolders	2022	0	task_02022(UnicodeString FileName, UnicodeString HResultStr, Int32 HResult)			task_0	Error		
-Microsoft-Windows-WorkFolders	2023	0	task_02023(UnicodeString FileName)			task_0	Informational		
-Microsoft-Windows-WorkFolders	2024	0	task_02024()			task_0	Informational		
-Microsoft-Windows-WorkFolders	2025	0	task_02025()			task_0	Informational		
-Microsoft-Windows-WorkFolders	2026	0	task_02026(UnicodeString FileName)			task_0	Informational		
-Microsoft-Windows-WorkFolders	2027	0	task_02027(UnicodeString FileName, UnicodeString HResultStr, Int32 HResult)			task_0	Error		
-Microsoft-Windows-WorkFolders	2100	0	task_02100(UnicodeString LocalReplicaRoot, UnicodeString HResultStr, Int32 HResult)			task_0	Error		
-Microsoft-Windows-WorkFolders	2101	0	task_02101(UnicodeString SyncPartnershipId)			task_0	Informational		
-Microsoft-Windows-WorkFolders	2102	0	task_02102(UnicodeString SyncPartnershipId)			task_0	Informational		
-Microsoft-Windows-WorkFolders	2103	0	task_02103(UnicodeString SyncPartnershipId)			task_0	Warning		
-Microsoft-Windows-WorkFolders	2104	0	task_02104(UnicodeString DatabasePath, UnicodeString HResultStr, Int32 HResult)			task_0	Error		
-Microsoft-Windows-WorkFolders	2105	0	task_02105(UnicodeString DatabasePath, UnicodeString HResultStr, Int32 HResult)			task_0	Error		
-Microsoft-Windows-WorkFolders	2106	0	task_02106(GUID LocalEpoch, GUID ServerEpoch)			task_0	Informational		
-Microsoft-Windows-WorkFolders	2107	0	task_02107(UnicodeString DatabasePath, UnicodeString HResultStr, Int32 HResult)			task_0	Informational		
-Microsoft-Windows-WorkFolders	2108	0	task_02108(UnicodeString LocalReplicaRoot)			task_0	Informational		
-Microsoft-Windows-WorkFolders	2109	0	task_02109(UnicodeString LocalReplicaRoot)			task_0	Informational		
-Microsoft-Windows-WorkFolders	2110	0	task_02110(UnicodeString LocalReplicaRoot, UnicodeString HResultStr, Int32 HResult)			task_0	Warning		
-Microsoft-Windows-WorkFolders	2111	0	task_02111(UnicodeString LocalReplicaRoot)			task_0	Informational		
-Microsoft-Windows-WorkFolders	2112	0	task_02112(UnicodeString LocalReplicaRoot, UnicodeString HResultStr, Int32 HResult)			task_0	Warning		
-Microsoft-Windows-WorkFolders	2113	0	task_02113(UnicodeString ItemName, GUID SyncGID, UnicodeString Action, UnicodeString HResultStr, Int32 HResult)			task_0	Warning		
-Microsoft-Windows-WorkFolders	2114	0	task_02114(UnicodeString ItemName, GUID SyncGID, UnicodeString Action, UnicodeString HResultStr, Int32 HResult)			task_0	Warning		
-Microsoft-Windows-WorkFolders	2115	0	task_02115(UnicodeString DatabasePath, UnicodeString HResultStr, Int32 HResult)			task_0	Error		
-Microsoft-Windows-WorkFolders	2116	0	task_02116(UnicodeString DatabasePath, UnicodeString HResultStr, Int32 HResult)			task_0	Error		
-Microsoft-Windows-WorkFolders	2117	0	task_02117(UnicodeString DatabasePath, UnicodeString HResultStr, Int32 HResult)			task_0	Error		
-Microsoft-Windows-WorkFolders	2118	0	task_02118(UnicodeString HResultStr, Int32 HResult)			task_0	Error		
-Microsoft-Windows-WorkFolders	2119	0	task_02119(UnicodeString DatabasePath, UnicodeString HResultStr, Int32 HResult)			task_0	Error		
-Microsoft-Windows-WorkFolders	2120	0	task_02120(UnicodeString DatabasePath, UnicodeString HResultStr, Int32 HResult)			task_0	Error		
-Microsoft-Windows-WorkFolders	8000	0	SyncPartnershipStart(UnicodeString LocalReplicaRoot)	Start	SyncPartnership	SyncPartnership	Informational		
-Microsoft-Windows-WorkFolders	8001	0	SyncPartnershipChangeUpdateStart(UnicodeString LocalReplicaRoot)	ChangeUpdateStart	SyncPartnership	SyncPartnership	Informational		
-Microsoft-Windows-WorkFolders	8002	0	SyncPartnershipDownloadStart(UnicodeString LocalReplicaRoot)	DownloadStart	SyncPartnership	SyncPartnership	Informational		
-Microsoft-Windows-WorkFolders	8003	0	SyncPartnershipUploadStart(UnicodeString LocalReplicaRoot)	UploadStart	SyncPartnership	SyncPartnership	Informational		
-Microsoft-Windows-WorkFolders	8004	0	SyncPartnershipStop(UnicodeString LocalReplicaRoot, Boolean FullEnumerationOccurred)	Stop	SyncPartnership	SyncPartnership	Informational		
-Microsoft-Windows-WorkFolders	8005	0	SyncPartnershipReconciliationStart(UnicodeString LocalReplicaRoot)	ReconciliationStart	SyncPartnership	SyncPartnership	Informational		
-Microsoft-Windows-WorkFolders	8006	0	SyncPartnershipReconciliationStop(UnicodeString LocalReplicaRoot)	ReconciliationStop	SyncPartnership	SyncPartnership	Informational		
-Microsoft-Windows-WorkFolders	8007	0	SyncPartnershipKnowledgeUploadStart(UnicodeString ServerPartnershipId)	KnowledgeUploadStart	SyncPartnership	SyncPartnership	Informational		
-Microsoft-Windows-WorkFolders	8008	0	SyncPartnershipDownloadTransferStart(UnicodeString ServerPartnershipId)	DownloadTransferStart	SyncPartnership	SyncPartnership	Informational		
-Microsoft-Windows-WorkFolders	8009	0	SyncPartnershipChangeBatchApplyStart(UnicodeString LocalReplicaRoot)	ChangeBatchApplyStart	SyncPartnership	SyncPartnership	Informational		
-Microsoft-Windows-WorkFolders	8010	0	SyncPartnershipKnowledgeDownloadStart(UnicodeString ServerPartnershipId)	KnowledgeDownloadStart	SyncPartnership	SyncPartnership	Informational		
-Microsoft-Windows-WorkFolders	8011	0	SyncPartnershipChangeBatchGenStart(UnicodeString LocalReplicaRoot)	ChangeBatchGenStart	SyncPartnership	SyncPartnership	Informational		
-Microsoft-Windows-WorkFolders	8012	0	SyncPartnershipUploadTransferStart(UnicodeString ServerPartnershipId)	UploadTransferStart	SyncPartnership	SyncPartnership	Informational		
-Microsoft-Windows-WorkFolders	8013	0	SyncPartnership()		SyncPartnership	SyncPartnership	Informational		
-Microsoft-Windows-WorkFolders	8014	0	SyncPartnership8014()		SyncPartnership	SyncPartnership	Informational		
-Microsoft-Windows-WorkFolders	8015	0	SyncPartnership8015(UnicodeString LocalReplicaRoot)		SyncPartnership	SyncPartnership	Informational		
-Microsoft-Windows-WorkFolders	8016	0	SyncPartnership8016(UnicodeString LocalReplicaRoot)		SyncPartnership	SyncPartnership	Informational		
-Microsoft-Windows-WorkFolders	8017	0	SyncPartnership8017()		SyncPartnership	SyncPartnership	Informational		
-Microsoft-Windows-WorkFolders	8018	0	SyncPartnership8018()		SyncPartnership	SyncPartnership	Informational		
-Microsoft-Windows-WorkFolders	8019	0	SyncPartnership8019(UnicodeString LocalReplicaRoot)		SyncPartnership	SyncPartnership	Informational		
-Microsoft-Windows-WorkFolders	8020	0	SyncPartnership8020(UnicodeString LocalReplicaRoot)		SyncPartnership	SyncPartnership	Informational		
-Microsoft-Windows-WorkFolders	9001	0	task_09001(UInt32 hc_stateid, UnicodeString Application)			task_0	Informational		
-Microsoft-Windows-WorkFolders	9002	0	task_09002(UInt32 hc_stateid, UnicodeString Application)			task_0	Informational		
-Microsoft-Windows-WorkFolders	9003	0	task_09003(UInt32 hc_stateid, UnicodeString Application)			task_0	Informational		
-Microsoft-Windows-WorkFolders	9004	0	task_09004(UInt32 hc_stateid, UnicodeString Application)			task_0	Informational		
+Microsoft-Windows-WorkFolders	0	0	Event_0()			task_0	Informational	Microsoft-Windows-WorkFolders/Operational	The Windows Work Folders service is running.
+Microsoft-Windows-WorkFolders	1	0	Event_1()			task_0	Informational	Microsoft-Windows-WorkFolders/Operational	The Windows Work Folders service is stopping.
+Microsoft-Windows-WorkFolders	2	0	Event_2(UnicodeString LocalFolder, UnicodeString ServerURI, UnicodeString ServerPartnershipId)			task_0	Informational	Microsoft-Windows-WorkFolders/Operational	A sync partnership was created between %1 and %2 (%3).
+Microsoft-Windows-WorkFolders	3	0	Event_3(UnicodeString LocalFolder, UnicodeString ServerURI, UnicodeString ServerPartnershipId)			task_0	Informational	Microsoft-Windows-WorkFolders/Operational	A sync partnership between %1 and %2 (%3) was deleted.
+Microsoft-Windows-WorkFolders	4	0	Event_4(UnicodeString LocalFolder, UnicodeString ServerURI, UnicodeString ServerPartnershipId)			task_0	Informational	Microsoft-Windows-WorkFolders/Operational	Resuming sync between %1 and %2 (%3).
+Microsoft-Windows-WorkFolders	5	0	Event_5(UnicodeString SyncUrl, Boolean AutoProvision)			task_0	Informational	Microsoft-Windows-WorkFolders/Operational	Attempting to apply the following Work Folders Group Policy configuration:\r\nWork Folders URL: %1\r\nForce automatic setup: %2
+Microsoft-Windows-WorkFolders	6	0	Event_6(UnicodeString DiscoveryUrl, UnicodeString ServerUrl)			task_0	Informational	Microsoft-Windows-WorkFolders/Operational	Attempting to remove the following Work Folders Group Policy configuration:\r\nDiscovery URL: %1 \r\nServer URL: %2
+Microsoft-Windows-WorkFolders	7	0	Event_7(UnicodeString PartnershipId, UnicodeString PartnershipType, UnicodeString DiscoveryUrl, UnicodeString ServerUrl)			task_0	Informational	Microsoft-Windows-WorkFolders/Operational	Configuring Work Folders through Group Policy with the following options:\r\nPartnership ID: %1\r\nPartnership type: %2\r\nDiscovery URL: %3\r\nServer URL: %4
+Microsoft-Windows-WorkFolders	8	0	Event_8()			task_0	Informational	Microsoft-Windows-WorkFolders/Operational	Configuration of Work Folders through Group Policy succeeded.
+Microsoft-Windows-WorkFolders	9	0	Event_9(UnicodeString DiscoveryUrl, UnicodeString ServerUrl, Boolean ConfiguredByPolicy)			task_0	Informational	Microsoft-Windows-WorkFolders/Operational	While applying Work Folders configuration through Group Policy, an existing Work Folders configuration was found. \r\nDiscovery URL: %1 \r\nServer URL: %2\r\nConfigured by policy: %3
+Microsoft-Windows-WorkFolders	10	0	Event_10(UnicodeString HResultStr, Int32 HResult)			task_0	Error	Microsoft-Windows-WorkFolders/Operational	Configuration of Work Folders through Group Policy failed. \r\nError: %1.
+Microsoft-Windows-WorkFolders	11	0	Event_11(UnicodeString HResultStr, Int32 HResult)			task_0	Error	Microsoft-Windows-WorkFolders/Operational	There was a problem removing the Work Folders configuration when applying Group Policy. \r\nError: %1
+Microsoft-Windows-WorkFolders	12	0	Event_12(UnicodeString HResultStr, Int32 HResult)			task_0	Error	Microsoft-Windows-WorkFolders/Operational	There was a problem communicating with the Windows Work Folders service. Confirm that this service is running. \r\nError: %1
+Microsoft-Windows-WorkFolders	13	0	Event_13(UnicodeString HResultStr, Int32 HResult)			task_0	Error	Microsoft-Windows-WorkFolders/Operational	There was a problem retrieving your Work Folders Group Policy configuration. \r\nError: %1
+Microsoft-Windows-WorkFolders	14	0	Event_14(UnicodeString HResultStr, Int32 HResult)			task_0	Error	Microsoft-Windows-WorkFolders/Operational	There was a problem retrieving your current Work Folders configuration. \r\nError: %1.
+Microsoft-Windows-WorkFolders	15	0	Event_15(UnicodeString HResultStr, Int32 HResult)			task_0	Error	Microsoft-Windows-WorkFolders/Operational	There was a problem comparing the existing Work Folders configuration to the configuration being applied by Group Policy. \r\nError: %1.
+Microsoft-Windows-WorkFolders	16	0	Event_16(UnicodeString DiscoveryURL, UnicodeString ServerURL)			task_0	Informational	Microsoft-Windows-WorkFolders/Operational	Server discovery on %1 found server %2.
+Microsoft-Windows-WorkFolders	17	0	Event_17(UnicodeString ServerURL, UnicodeString SyncTargetType, UnicodeString ServerPartnershipId)			task_0	Informational	Microsoft-Windows-WorkFolders/Operational	Sync Share discovery succeeded. Server URL: %1; Partnership type: %2; Server partnership id: %3
+Microsoft-Windows-WorkFolders	18	0	Event_18(UnicodeString UserEmail, UnicodeString DiscoveryURL)			task_0	Informational	Microsoft-Windows-WorkFolders/Operational	The discovery URL was found from the user's email address. User's email address: %1; Discovery URL %2
+Microsoft-Windows-WorkFolders	19	0	Event_19(UnicodeString ServerURL, UnicodeString SyncTargetType, UnicodeString ServerPartnershipId)			task_0	Error	Microsoft-Windows-WorkFolders/Operational	This PC is incompatible with the Work Folders server and must be upgraded. Please contact your administrator for instructions on upgrading your PC.
+Microsoft-Windows-WorkFolders	502	0	Event_502(UnicodeString LocalFolder, UnicodeString ServerURI, UnicodeString ServerPartnershipId, UnicodeString HResultStr, Int32 HResult)			task_0	Error	Microsoft-Windows-WorkFolders/Operational	A sync partnership between %1 and %2 (%3) failed to create with %4.
+Microsoft-Windows-WorkFolders	503	0	Event_503(UnicodeString LocalFolder, UnicodeString ServerURI, UnicodeString ServerPartnershipId, UnicodeString HResultStr, Int32 HResult)			task_0	Error	Microsoft-Windows-WorkFolders/Operational	A sync partnership between %1 and %2 (%3) failed to delete with %4.
+Microsoft-Windows-WorkFolders	516	0	Event_516(UnicodeString DiscoveryURL, UnicodeString HResultStr, Int32 HResult)			task_0	Error	Microsoft-Windows-WorkFolders/Operational	Server discovery on %1 failed with %2.
+Microsoft-Windows-WorkFolders	517	0	Event_517(UnicodeString ServerURL, UnicodeString SyncTargetType, UnicodeString HResultStr, Int32 HResult)			task_0	Error	Microsoft-Windows-WorkFolders/Operational	Sync Share discovery failed. Server URL: %1; Partnership type: %2; Error: %3
+Microsoft-Windows-WorkFolders	518	0	Event_518(UnicodeString UserEmail, UnicodeString HResultStr, Int32 HResult)			task_0	Error	Microsoft-Windows-WorkFolders/Operational	Searching for a discovery URL from the user's email address failed. User's email address: %1; Error: %2
+Microsoft-Windows-WorkFolders	1000	0	Event_1000(UnicodeString Path, Int64 SizeMB)			task_0	Warning	Microsoft-Windows-WorkFolders/Operational	Some files cannot be downloaded. Make sure the drive for %1 has at least %2 MB free.
+Microsoft-Windows-WorkFolders	1001	0	Event_1001(UnicodeString User, UnicodeString StsUri, UnicodeString HResultStr, Int32 HResult)			task_0	Error	Microsoft-Windows-WorkFolders/Operational	Failed to get an ADFS access token from the server. User: %1. ADFS URI: %2. Error: %3
+Microsoft-Windows-WorkFolders	1002	0	Event_1002(UnicodeString User, UnicodeString StsUri, UnicodeString HResultStr, Int32 HResult)			task_0	Warning	Microsoft-Windows-WorkFolders/Operational	Failed to get an ADFS refresh token from the server. User: %1. ADFS URI: %2. Error: %3
+Microsoft-Windows-WorkFolders	1100	0	Event_1100(UnicodeString FileName, GUID SyncId, UnicodeString HResultStr, Int32 HResult)			task_0	Informational	Microsoft-Windows-WorkFolders/Debug	Work Folders sucessfully uploaded a file. File name:%1; Sync ID: %2
+Microsoft-Windows-WorkFolders	1101	0	Event_1101(UnicodeString FileName, GUID SyncId, UnicodeString HResultStr, Int32 HResult)			task_0	Warning	Microsoft-Windows-WorkFolders/Debug	Work Folders failed to upload a file. File name:%1; Sync ID: %2; Error: %3
+Microsoft-Windows-WorkFolders	1102	0	Event_1102(UnicodeString FileName, GUID SyncId, UnicodeString HResultStr, Int32 HResult)			task_0	Informational	Microsoft-Windows-WorkFolders/Debug	Work Folders sucessfully downloaded a file. File name:%1; Sync ID: %2
+Microsoft-Windows-WorkFolders	1103	0	Event_1103(UnicodeString FileName, GUID SyncId, UnicodeString HResultStr, Int32 HResult)			task_0	Warning	Microsoft-Windows-WorkFolders/Debug	Work Folders failed to download a file. File name:%1; Sync ID: %2; Error: %3
+Microsoft-Windows-WorkFolders	1104	0	Event_1104(UnicodeString SyncPartnershipId, UnicodeString HResultStr, Int32 HResult)			task_0	Informational	Microsoft-Windows-WorkFolders/Debug	Work Folders sucessfully uploaded a change batch. Partnership ID:%1
+Microsoft-Windows-WorkFolders	1105	0	Event_1105(UnicodeString SyncPartnershipId, UnicodeString HResultStr, Int32 HResult)			task_0	Warning	Microsoft-Windows-WorkFolders/Debug	Work Folders failed to upload a change batch. Partnership ID:%1; Error: %2
+Microsoft-Windows-WorkFolders	1106	0	Event_1106(UnicodeString SyncPartnershipId, UnicodeString HResultStr, Int32 HResult)			task_0	Informational	Microsoft-Windows-WorkFolders/Debug	Work Folders sucessfully downloaded a change batch. Partnership ID:%1
+Microsoft-Windows-WorkFolders	1107	0	Event_1107(UnicodeString SyncPartnershipId, UnicodeString HResultStr, Int32 HResult)			task_0	Warning	Microsoft-Windows-WorkFolders/Debug	Work Folders failed to download a change batch. Partnership ID:%1; Error: %2
+Microsoft-Windows-WorkFolders	2000	0	Event_2000(UnicodeString LocalReplicaRoot)			task_0	Informational	Microsoft-Windows-WorkFolders/Debug	Work Folders couldn't detect changed files using the USN change journal, so it's scanning all files for changes. No action is required. Path: %1
+Microsoft-Windows-WorkFolders	2001	0	Event_2001(UnicodeString SessionUri)			task_0	Informational	Microsoft-Windows-WorkFolders/Debug	Sync started. URI: %1
+Microsoft-Windows-WorkFolders	2002	0	Event_2002(UnicodeString SessionUri)			task_0	Informational	Microsoft-Windows-WorkFolders/Debug	Sync completed.  URI: %1
+Microsoft-Windows-WorkFolders	2003	0	Event_2003(Int32 SuccessFileCount, Int64 SuccessDataSize, Int32 FailedFileCount, Int64 FailedDataSize, Int32 TotalBatchTime, Float Rate)			task_0	Informational	Microsoft-Windows-WorkFolders/Debug	Sync batch upload completed.\r\n\r\nUploaded %1 file(s) (%2 bytes).\r\nFailed %3 file(s) (%4 bytes).\r\nElapsed time: %5 seconds.\r\nRate: %6 KBps.
+Microsoft-Windows-WorkFolders	2004	0	Event_2004(Int32 SuccessFileCount, Int64 SuccessDataSize, Int32 FailedFileCount, Int64 FailedDataSize, Int32 TotalBatchTime, Float Rate)			task_0	Informational	Microsoft-Windows-WorkFolders/Debug	Sync batch download completed.\r\n\r\nDownloaded %1 file(s) (%2 bytes).\r\nFailed %3 file(s).\r\nElapsed time: %5 seconds.\r\nRate: %6 KBps.
+Microsoft-Windows-WorkFolders	2005	0	Event_2005(UnicodeString Uri, UnicodeString Verb, UnicodeString Headers, Int32 BodyLength, Int32 HttpResponse, UnicodeString ServerCodeStr, Int32 HResult)			task_0	Error	Microsoft-Windows-WorkFolders/Debug	HTTP request failure.\r\n\r\nURI: %1 \r\nVerb: %2 \r\nHeaders: %3 \r\nBody Length: %4 \r\nHTTP Response: %5 \r\nServer HRESULT: %6
+Microsoft-Windows-WorkFolders	2006	0	Event_2006(GUID SyncId, UnicodeString HResultStr, Int32 HResult)			task_0	Informational	Microsoft-Windows-WorkFolders/Debug	Work Folders skipped uploading a file because of an error. Sync ID: %1; Error: %2
+Microsoft-Windows-WorkFolders	2007	0	Event_2007(UnicodeString Username)			task_0	Warning	Microsoft-Windows-WorkFolders/Debug	Work Folders will skip downloading files because the user doesn't have enough free space on the drive where Work Folders is located. User: %1
+Microsoft-Windows-WorkFolders	2008	0	Event_2008(UnicodeString Username)			task_0	Error	Microsoft-Windows-WorkFolders/Debug	Couldn't authenticate the user. User: %1
+Microsoft-Windows-WorkFolders	2009	0	Event_2009(UnicodeString ItemName, GUID SyncGID, UnicodeString Action, UnicodeString HResultStr, Int32 HResult)			task_0	Informational	Microsoft-Windows-WorkFolders/Debug	Work Folders successfully synchronized an item. Item: %1; Sync ID: %2; Sync action: %3
+Microsoft-Windows-WorkFolders	2010	0	Event_2010(UnicodeString ItemName, GUID SyncGID, UnicodeString Action, UnicodeString HResultStr, Int32 HResult)			task_0	Warning	Microsoft-Windows-WorkFolders/Debug	Work Folders failed to synchronize an item. Item: %1; Sync ID: %2; Sync action: %3; Error code: %4
+Microsoft-Windows-WorkFolders	2011	0	Event_2011(UnicodeString ItemName, GUID SyncGID, UnicodeString Action, UnicodeString HResultStr, Int32 HResult)			task_0	Informational	Microsoft-Windows-WorkFolders/Debug	Work Folders successfully updated the current state of an item. Item: %1; Sync ID: %2; Update action: %3
+Microsoft-Windows-WorkFolders	2012	0	Event_2012(UnicodeString ItemName, GUID SyncGID, UnicodeString Action, UnicodeString HResultStr, Int32 HResult)			task_0	Warning	Microsoft-Windows-WorkFolders/Debug	Work Folders failed to update the current state of an item. Item: %1; Sync ID: %2; Update action: %3; Error code: %4
+Microsoft-Windows-WorkFolders	2013	0	Event_2013(Boolean ConcurrencyConflict, UnicodeString SourceItemName, GUID SourceSyncGID, UnicodeString DestinationItemName, GUID DestinationSyncGID, UnicodeString DataWinner, UnicodeString NamespaceWinner, UnicodeString AttributesWinner, UnicodeString TieBreakerWinner)			task_0	Informational	Microsoft-Windows-WorkFolders/Debug	Work Folders detected a conflict on an item and decided a conflict resolution. Concurrency conflict: %1; Source item name: %2; Source sync ID: %3; Destination item name: %4; Destination sync ID: %5; Data winner: %6; Namespace winner: %7; Attributes winner: %8; Tie breaker winner: %9
+Microsoft-Windows-WorkFolders	2014	0	Event_2014(UnicodeString LocalReplicaRoot)			task_0	Informational	Microsoft-Windows-WorkFolders/Debug	
+Microsoft-Windows-WorkFolders	2015	0	Event_2015(UnicodeString LocalReplicaRoot, UnicodeString HResultStr, Int32 HResult)			task_0	Warning	Microsoft-Windows-WorkFolders/Debug	
+Microsoft-Windows-WorkFolders	2100	0	Event_2100(UnicodeString LocalReplicaRoot, UnicodeString HResultStr, Int32 HResult)			task_0	Error	Microsoft-Windows-WorkFolders/Operational	Sync failed. Work Folders path: %1; Error: %2
+Microsoft-Windows-WorkFolders	2101	0	Event_2101(UnicodeString SyncPartnershipId)			task_0	Informational	Microsoft-Windows-WorkFolders/Operational	Work Folders suspended sync. Partnership: %1
+Microsoft-Windows-WorkFolders	2102	0	Event_2102(UnicodeString SyncPartnershipId)			task_0	Informational	Microsoft-Windows-WorkFolders/Operational	Work Folders resumed syncing. Partnership: %1
+Microsoft-Windows-WorkFolders	2103	0	Event_2103(UnicodeString SyncPartnershipId)			task_0	Warning	Microsoft-Windows-WorkFolders/Operational	Work Folders sync stopped because the Enterprise ID for this PC was remotely revoked by the issuing authority. Access to files in Work Folders is blocked on this PC. To resume syncing, in the Work Folders Control Panel, click Stop using Work Folders and then recreate the Work Folders synchronization partnership. Partnership: %1
+Microsoft-Windows-WorkFolders	2104	0	Event_2104(UnicodeString DatabasePath, UnicodeString HResultStr, Int32 HResult)			task_0	Error	Microsoft-Windows-WorkFolders/Operational	Work Folders detected a database corruption and recovered. Database path: %1
+Microsoft-Windows-WorkFolders	2105	0	Event_2105(UnicodeString DatabasePath, UnicodeString HResultStr, Int32 HResult)			task_0	Error	Microsoft-Windows-WorkFolders/Operational	Work Folders detected a database corruption and recovery failed. Database path: %1; Error: %2
+Microsoft-Windows-WorkFolders	2106	0	Event_2106(GUID LocalEpoch, GUID ServerEpoch)			task_0	Informational	Microsoft-Windows-WorkFolders/Operational	Work Folders detected that the server database has been recreated. Local epoch: %1; Server epoch: %2
+Microsoft-Windows-WorkFolders	2107	0	Event_2107(UnicodeString DatabasePath, UnicodeString HResultStr, Int32 HResult)			task_0	Informational	Microsoft-Windows-WorkFolders/Operational	Work Folders detected that an error occured that requires the database to be recreated. Database path: %1; Error code: %2
+Microsoft-Windows-WorkFolders	2108	0	Event_2108(UnicodeString LocalReplicaRoot)			task_0	Informational	Microsoft-Windows-WorkFolders/Operational	Work Folders synchronization metadata is stale. It will be automatically rebuild. Work Folders path: %1
+Microsoft-Windows-WorkFolders	2109	0	Event_2109(UnicodeString LocalReplicaRoot)			task_0	Informational	Microsoft-Windows-WorkFolders/Operational	The Work Folders synchronization metadata was created. Work Folders path: %1
+Microsoft-Windows-WorkFolders	2110	0	Event_2110(UnicodeString LocalReplicaRoot, UnicodeString HResultStr, Int32 HResult)			task_0	Warning	Microsoft-Windows-WorkFolders/Operational	The Work Folders synchronization metadata could not be created. Work Folders path: %1; Error: %2
+Microsoft-Windows-WorkFolders	2111	0	Event_2111(UnicodeString LocalReplicaRoot)			task_0	Informational	Microsoft-Windows-WorkFolders/Operational	The Work Folders synchronization metadata was deleted. Work Folders path: %1
+Microsoft-Windows-WorkFolders	2112	0	Event_2112(UnicodeString LocalReplicaRoot, UnicodeString HResultStr, Int32 HResult)			task_0	Warning	Microsoft-Windows-WorkFolders/Operational	The Work Folders synchronization metadata could not be deleted. Work Folders path: %1; Error: %2
+Microsoft-Windows-WorkFolders	2113	0	Event_2113(UnicodeString ItemName, GUID SyncGID, UnicodeString Action, UnicodeString HResultStr, Int32 HResult)			task_0	Warning	Microsoft-Windows-WorkFolders/Operational	Work Folders failed to update the current state of an item. Item: %1; Sync ID: %2; Update action: %3; Error code: %4
+Microsoft-Windows-WorkFolders	2114	0	Event_2114(UnicodeString ItemName, GUID SyncGID, UnicodeString Action, UnicodeString HResultStr, Int32 HResult)			task_0	Warning	Microsoft-Windows-WorkFolders/Operational	Work Folders failed to synchronize an item. Item: %1; Sync ID: %2; Sync action: %3; Error code: %4
+Microsoft-Windows-WorkFolders	2115	0	Event_2115(UnicodeString DatabasePath, UnicodeString HResultStr, Int32 HResult)			task_0	Error	Microsoft-Windows-WorkFolders/Operational	Work Folders detected a database version that is incompatible and recovered it. Database path: %1
+Microsoft-Windows-WorkFolders	2116	0	Event_2116(UnicodeString DatabasePath, UnicodeString HResultStr, Int32 HResult)			task_0	Error	Microsoft-Windows-WorkFolders/Operational	Work Folders detected a database version that is incompatible and recovery failed. Database path: %1; Error: %2
+Microsoft-Windows-WorkFolders	8000	0	SyncPartnershipStart(UnicodeString LocalReplicaRoot)	Start	SyncPartnership	SyncPartnership	Informational	Microsoft-Windows-WorkFolders/Analytic	Starting sync. Work Folders path: %1
+Microsoft-Windows-WorkFolders	8001	0	SyncPartnershipChangeUpdateStart(UnicodeString LocalReplicaRoot)	ChangeUpdateStart	SyncPartnership	SyncPartnership	Informational	Microsoft-Windows-WorkFolders/Analytic	Work Folders is looking for changed files. Work Folders path: %1
+Microsoft-Windows-WorkFolders	8002	0	SyncPartnershipDownloadStart(UnicodeString LocalReplicaRoot)	DownloadStart	SyncPartnership	SyncPartnership	Informational	Microsoft-Windows-WorkFolders/Analytic	Starting to download files. Work Folders path: %1
+Microsoft-Windows-WorkFolders	8003	0	SyncPartnershipUploadStart(UnicodeString LocalReplicaRoot)	UploadStart	SyncPartnership	SyncPartnership	Informational	Microsoft-Windows-WorkFolders/Analytic	Starting to upload files. Work Folders path: %1
+Microsoft-Windows-WorkFolders	8004	0	SyncPartnershipStop(UnicodeString LocalReplicaRoot, Boolean FullEnumerationOccurred)	Stop	SyncPartnership	SyncPartnership	Informational	Microsoft-Windows-WorkFolders/Analytic	Finished syncing. Work Folders path: %1
+Microsoft-Windows-WorkFolders	8005	0	SyncPartnershipReconciliationStart(UnicodeString LocalReplicaRoot)	ReconciliationStart	SyncPartnership	SyncPartnership	Informational	Microsoft-Windows-WorkFolders/Analytic	Starting reconciliation sync. Work Folders path: %1
+Microsoft-Windows-WorkFolders	8006	0	SyncPartnershipReconciliationStop(UnicodeString LocalReplicaRoot)	ReconciliationStop	SyncPartnership	SyncPartnership	Informational	Microsoft-Windows-WorkFolders/Analytic	Finished reconciliation sync. Work Folders path: %1
+Microsoft-Windows-WorkFolders	8007	0	SyncPartnershipKnowledgeUploadStart(UnicodeString ServerPartnershipId)	KnowledgeUploadStart	SyncPartnership	SyncPartnership	Informational	Microsoft-Windows-WorkFolders/Analytic	Starting sync knowledge upload. Server partnership id: %1
+Microsoft-Windows-WorkFolders	8008	0	SyncPartnershipDownloadTransferStart(UnicodeString ServerPartnershipId)	DownloadTransferStart	SyncPartnership	SyncPartnership	Informational	Microsoft-Windows-WorkFolders/Analytic	Starting data transfer for file download. Server partnership id: %1
+Microsoft-Windows-WorkFolders	8009	0	SyncPartnershipChangeBatchApplyStart(UnicodeString LocalReplicaRoot)	ChangeBatchApplyStart	SyncPartnership	SyncPartnership	Informational	Microsoft-Windows-WorkFolders/Analytic	Applying downloaded files. Work Folders path: %1
+Microsoft-Windows-WorkFolders	8010	0	SyncPartnershipKnowledgeDownloadStart(UnicodeString ServerPartnershipId)	KnowledgeDownloadStart	SyncPartnership	SyncPartnership	Informational	Microsoft-Windows-WorkFolders/Analytic	Starting sync knowledge download. Server partnership id: %1
+Microsoft-Windows-WorkFolders	8011	0	SyncPartnershipChangeBatchGenStart(UnicodeString LocalReplicaRoot)	ChangeBatchGenStart	SyncPartnership	SyncPartnership	Informational	Microsoft-Windows-WorkFolders/Analytic	Creating a change batch for upload. Work Folders path: %1
+Microsoft-Windows-WorkFolders	8012	0	SyncPartnershipUploadTransferStart(UnicodeString ServerPartnershipId)	UploadTransferStart	SyncPartnership	SyncPartnership	Informational	Microsoft-Windows-WorkFolders/Analytic	Starting data transfer for file upload. Server partnership id: %1
+Microsoft-Windows-WorkFolders	9001	0	Event_9001(UInt32 hc_stateid, UnicodeString Application)			task_0	Informational	Microsoft-Windows-WorkFolders/WHC	Credentials required for the user.
+Microsoft-Windows-WorkFolders	9002	0	Event_9002(UInt32 hc_stateid, UnicodeString Application)			task_0	Informational	Microsoft-Windows-WorkFolders/WHC	Work Folders detected a sync error. Check partnership status, network connectivity, and disk space.
+Microsoft-Windows-WorkFolders	9003	0	Event_9003(UInt32 hc_stateid, UnicodeString Application)			task_0	Informational	Microsoft-Windows-WorkFolders/WHC	Work Folders detected a file error. Check file sizes and types are supported.
+Microsoft-Windows-WorkFolders	9004	0	Event_9004(UInt32 hc_stateid, UnicodeString Application)			task_0	Informational	Microsoft-Windows-WorkFolders/WHC	Your PC doesn't comply with your organization's security policies.

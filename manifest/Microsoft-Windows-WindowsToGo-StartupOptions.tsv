@@ -1,4 +1,4 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-WindowsToGo-StartupOptions	8193	0	task_0(UInt32 State)			task_0	Informational		
-Microsoft-Windows-WindowsToGo-StartupOptions	8194	0	task_08194(UInt32 ErrorCode)			task_0	Error		
-Microsoft-Windows-WindowsToGo-StartupOptions	8195	0	task_08195()			task_0	Error		
+Microsoft-Windows-WindowsToGo-StartupOptions	8193	0	Event_8193(UInt32 State)			task_0	Informational	System	The Windows To Go startup options setting has been changed. Current setting: %1
+Microsoft-Windows-WindowsToGo-StartupOptions	8194	0	Event_8194(UInt32 ErrorCode)			task_0	Error	System	There was an error changing the Windows To Go startup options setting. Error: %1
+Microsoft-Windows-WindowsToGo-StartupOptions	8195	0	Event_8195()			task_0	Error	System	The Windows To Go startup options setting could not be changed because the PC has multiple internal bootable disks.

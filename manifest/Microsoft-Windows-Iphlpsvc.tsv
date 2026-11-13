@@ -1,19 +1,19 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-Iphlpsvc	4000	0	task_0()			task_0	Informational		
-Microsoft-Windows-Iphlpsvc	4001	0	task_04001(UInt32 ErrorCode, UInt32 TeredoReasonCode)			task_0	Error		
-Microsoft-Windows-Iphlpsvc	4002	0	task_04002(UnicodeString Interface, UInt32 ErrorCode)			task_0	Error		
-Microsoft-Windows-Iphlpsvc	4003	0	task_04003(UnicodeString ServerName, UInt32 ErrorCode)			task_0	Error		
-Microsoft-Windows-Iphlpsvc	4004	0	task_04004(UInt32 ErrorCode)			task_0	Error		
-Microsoft-Windows-Iphlpsvc	4005	0	task_04005()			task_0	Informational		
-Microsoft-Windows-Iphlpsvc	4100	0	task_04100(UnicodeString IsatapRouter, UInt32 ErrorCode)			task_0	Informational		
-Microsoft-Windows-Iphlpsvc	4200	0	task_04200(UInt32 ProtocolType, UnicodeString Interface, UnicodeString Address)			task_0	Informational		
-Microsoft-Windows-Iphlpsvc	4201	0	task_04201(UInt32 ProtocolType, UnicodeString Interface)			task_0	Informational		
-Microsoft-Windows-Iphlpsvc	4202	0	task_04202(UInt32 ProtocolType, UnicodeString Interface, UInt32 UpdateType, UInt32 ErrorCode)			task_0	Error		
-Microsoft-Windows-Iphlpsvc	4300	0	task_04300(UnicodeString ServerUrl)			task_0	Informational		
-Microsoft-Windows-Iphlpsvc	4301	0	task_04301()			task_0	Informational		
-Microsoft-Windows-Iphlpsvc	4302	0	task_04302(UInt32 ErrorCode, UInt32 IpHTTPSReasonCode)			task_0	Error		
-Microsoft-Windows-Iphlpsvc	4303	0	task_04303(UnicodeString ClientMachineName, UnicodeString TunnelSourceIP, UnicodeString RemoteIP)			task_0	Informational		
-Microsoft-Windows-Iphlpsvc	4304	0	task_04304(UnicodeString ClientMachineName, UnicodeString TunnelSourceIP, UnicodeString RemoteIP)			task_0	Informational		
-Microsoft-Windows-Iphlpsvc	4400	0	task_04400(UInt32 AddrLength, Binary ClientIP, UnicodeString QuestionName, UInt32 TranslatedIPv4Address)			task_0	Informational		
-Microsoft-Windows-Iphlpsvc	4500	0	task_04500(UnicodeString SiteName)			task_0	Informational		
-Microsoft-Windows-Iphlpsvc	4501	0	task_04501(UnicodeString SiteName)			task_0	Informational		
+Microsoft-Windows-Iphlpsvc	4000	0	Event_4000()			task_0	Informational	System	Teredo server has successfully started.
+Microsoft-Windows-Iphlpsvc	4001	0	Event_4001(UInt32 ErrorCode, UInt32 TeredoReasonCode)			task_0	Error	System	Teredo server has failed to start with the following error: %1.\r\nTeredo Reason Code: %2.
+Microsoft-Windows-Iphlpsvc	4002	0	Event_4002(UnicodeString Interface, UInt32 ErrorCode)			task_0	Error	System	Teredo server primary or secondary IPv4 address is invalid. Primary IPv4 address: %1. Error Code: %2.
+Microsoft-Windows-Iphlpsvc	4003	0	Event_4003(UnicodeString ServerName, UInt32 ErrorCode)			task_0	Error	System	Configured Teredo server name %1 is invalid. Error Code: %2.
+Microsoft-Windows-Iphlpsvc	4004	0	Event_4004(UInt32 ErrorCode)			task_0	Error	System	Teredo server initialization has failed with the following error code %1.
+Microsoft-Windows-Iphlpsvc	4005	0	Event_4005()			task_0	Informational	System	Teredo server has stopped.
+Microsoft-Windows-Iphlpsvc	4100	0	Event_4100(UnicodeString IsatapRouter, UInt32 ErrorCode)			task_0	Informational	System	ISATAP router address %1 was set with status %2.
+Microsoft-Windows-Iphlpsvc	4200	0	Event_4200(UInt32 ProtocolType, UnicodeString Interface, UnicodeString Address)			task_0	Informational	System	%1 interface %2 with address %3 has been brought up.
+Microsoft-Windows-Iphlpsvc	4201	0	Event_4201(UInt32 ProtocolType, UnicodeString Interface)			task_0	Informational	System	%1 interface %2 is no longer active.
+Microsoft-Windows-Iphlpsvc	4202	0	Event_4202(UInt32 ProtocolType, UnicodeString Interface, UInt32 UpdateType, UInt32 ErrorCode)			task_0	Error	System	Unable to update the IP address on %1 interface %2. Update Type: %3. Error Code: %4.
+Microsoft-Windows-Iphlpsvc	4300	0	Event_4300(UnicodeString ServerUrl)			task_0	Informational	System	IP-HTTPS server has successfully started using the server URL %1.
+Microsoft-Windows-Iphlpsvc	4301	0	Event_4301()			task_0	Informational	System	IP-HTTPS server has stopped.
+Microsoft-Windows-Iphlpsvc	4302	0	Event_4302(UInt32 ErrorCode, UInt32 IpHTTPSReasonCode)			task_0	Error	System	IP-HTTPS server has failed to start with the following error: %1. \r\n IP HTTPS reason code %2.
+Microsoft-Windows-Iphlpsvc	4303	0	Event_4303(UnicodeString ClientMachineName, UnicodeString TunnelSourceIP, UnicodeString RemoteIP)			task_0	Informational	Microsoft-Windows-Iphlpsvc/Operational	IP-HTTPS client %1 (%2) is associated with IP address %3.
+Microsoft-Windows-Iphlpsvc	4304	0	Event_4304(UnicodeString ClientMachineName, UnicodeString TunnelSourceIP, UnicodeString RemoteIP)			task_0	Informational	Microsoft-Windows-Iphlpsvc/Operational	IP-HTTPS client %1 (%2) is disassociated from IP address %3.
+Microsoft-Windows-Iphlpsvc	4400	0	Event_4400(UInt32 AddrLength, Binary ClientIP, UnicodeString QuestionName, UInt32 TranslatedIPv4Address)			task_0	Informational	Microsoft-Windows-Iphlpsvc/Operational	DNS64: No matching IPv6 prefix found for IPv4 address %4, received for name %3 queried by client %2.
+Microsoft-Windows-Iphlpsvc	4500	0	Event_4500(UnicodeString SiteName)			task_0	Informational	Microsoft-Windows-Iphlpsvc/Operational	DA MULTISITE: Configured DA site %1.
+Microsoft-Windows-Iphlpsvc	4501	0	Event_4501(UnicodeString SiteName)			task_0	Informational	Microsoft-Windows-Iphlpsvc/Operational	DA MULTISITE: Unconfigured DA site %1.

@@ -1,55 +1,54 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-Smartcard-Server	1	0	task_0(UnicodeString Message)			task_0	Always		
-Microsoft-Windows-Smartcard-Server	201	0	task_0201(UnicodeString Message)			task_0	Always		
-Microsoft-Windows-Smartcard-Server	202	0	task_0202()			task_0	Always		
-Microsoft-Windows-Smartcard-Server	203	0	task_0203()			task_0	Always		
-Microsoft-Windows-Smartcard-Server	204	0	task_0204(UnicodeString Message)			task_0	Always		
-Microsoft-Windows-Smartcard-Server	205	0	task_0205(UnicodeString Reader)			task_0	Always		
-Microsoft-Windows-Smartcard-Server	206	0	task_0206()			task_0	Always		
-Microsoft-Windows-Smartcard-Server	306	0	task_0306()			task_0	Always		
-Microsoft-Windows-Smartcard-Server	401	0	task_0401()			task_0	Always		
-Microsoft-Windows-Smartcard-Server	402	0	task_0402()			task_0	Always		
-Microsoft-Windows-Smartcard-Server	403	0	task_0403()			task_0	Always		
-Microsoft-Windows-Smartcard-Server	406	0	task_0406()			task_0	Always		
-Microsoft-Windows-Smartcard-Server	410	0	task_0410()			task_0	Always		
-Microsoft-Windows-Smartcard-Server	411	0	task_0411()			task_0	Always		
-Microsoft-Windows-Smartcard-Server	412	0	task_0412()			task_0	Always		
-Microsoft-Windows-Smartcard-Server	502	0	task_0502()			task_0	Always		
-Microsoft-Windows-Smartcard-Server	504	0	task_0504(UnicodeString Message)			task_0	Always		
-Microsoft-Windows-Smartcard-Server	506	0	task_0506(UnicodeString Message)			task_0	Always		
-Microsoft-Windows-Smartcard-Server	507	0	task_0507()			task_0	Always		
-Microsoft-Windows-Smartcard-Server	508	0	task_0508(UnicodeString Message)			task_0	Always		
-Microsoft-Windows-Smartcard-Server	509	0	task_0509(UnicodeString Message)			task_0	Always		
-Microsoft-Windows-Smartcard-Server	510	0	task_0510(UnicodeString Message)			task_0	Always		
-Microsoft-Windows-Smartcard-Server	511	0	task_0511(UnicodeString Message)			task_0	Always		
-Microsoft-Windows-Smartcard-Server	512	0	task_0512(UnicodeString Message)			task_0	Always		
-Microsoft-Windows-Smartcard-Server	513	0	task_0513(UnicodeString Message)			task_0	Always		
-Microsoft-Windows-Smartcard-Server	514	0	task_0514(UnicodeString Message, UnicodeString Reader)			task_0	Always		
-Microsoft-Windows-Smartcard-Server	515	0	task_0515(UnicodeString Message)			task_0	Always		
-Microsoft-Windows-Smartcard-Server	516	0	task_0516(UnicodeString Message)			task_0	Always		
-Microsoft-Windows-Smartcard-Server	517	0	task_0517(UnicodeString Message)			task_0	Always		
-Microsoft-Windows-Smartcard-Server	518	0	task_0518(UnicodeString Message)			task_0	Always		
-Microsoft-Windows-Smartcard-Server	521	0	task_0521(UnicodeString Message)			task_0	Always		
-Microsoft-Windows-Smartcard-Server	522	0	task_0522(UnicodeString Message)			task_0	Always		
-Microsoft-Windows-Smartcard-Server	523	0	task_0523(UnicodeString Message)			task_0	Always		
-Microsoft-Windows-Smartcard-Server	602	0	task_0602(UnicodeString Reader)			task_0	Always		
-Microsoft-Windows-Smartcard-Server	603	0	task_0603(UnicodeString Reader)			task_0	Always		
-Microsoft-Windows-Smartcard-Server	604	0	task_0604(UnicodeString Message)			task_0	Always		
-Microsoft-Windows-Smartcard-Server	605	0	task_0605(UnicodeString Message)			task_0	Always		
-Microsoft-Windows-Smartcard-Server	606	0	task_0606(UnicodeString Message)			task_0	Always		
-Microsoft-Windows-Smartcard-Server	607	0	task_0607(UnicodeString Message)			task_0	Always		
-Microsoft-Windows-Smartcard-Server	608	0	task_0608(UnicodeString Message)			task_0	Always		
-Microsoft-Windows-Smartcard-Server	609	0	task_0609(UnicodeString Message)			task_0	Always		
-Microsoft-Windows-Smartcard-Server	610	0	task_0610(UnicodeString Message, UnicodeString Reader, UnicodeString IOCTL, UnicodeString CommandHeader)			task_0	Always		
-Microsoft-Windows-Smartcard-Server	611	0	task_0611()			task_0	Always		
-Microsoft-Windows-Smartcard-Server	612	0	task_0612(UnicodeString Message)			task_0	Always		
-Microsoft-Windows-Smartcard-Server	615	0	task_0615(UnicodeString Message)			task_0	Always		
-Microsoft-Windows-Smartcard-Server	616	0	task_0616(UnicodeString Message, UnicodeString Reader)			task_0	Always		
-Microsoft-Windows-Smartcard-Server	617	0	task_0617(UnicodeString Reader)			task_0	Always		
-Microsoft-Windows-Smartcard-Server	618	0	task_0618(UnicodeString Message)			task_0	Always		
-Microsoft-Windows-Smartcard-Server	619	0	task_0619(UnicodeString Message, UnicodeString Reader, UnicodeString IOCTL, UnicodeString CommandHeader)			task_0	Always		
-Microsoft-Windows-Smartcard-Server	620	0	task_0620(UnicodeString Message, UnicodeString Reader, UnicodeString IOCTL, UnicodeString CommandHeader)			task_0	Always		
-Microsoft-Windows-Smartcard-Server	621	0	task_0621(UnicodeString Message)			task_0	Always		
-Microsoft-Windows-Smartcard-Server	622	0	task_0622(UnicodeString Message)			task_0	Always		
-Microsoft-Windows-Smartcard-Server	623	0	task_0623(UnicodeString Reader, UnicodeString Timeout, UnicodeString PID)			task_0	Always		
-Microsoft-Windows-Smartcard-Server	624	0	task_0624(UnicodeString Message)			task_0	Always		
+Microsoft-Windows-Smartcard-Server	1	0	Message_0x00000001(UnicodeString Message)			task_0	Always		%1
+Microsoft-Windows-Smartcard-Server	201	0	Message_0x000000C9(UnicodeString Message)			task_0	Always		Failed to initialize Server Application:  %1
+Microsoft-Windows-Smartcard-Server	202	0	Message_0x000000CA()			task_0	Always		Failed to initialize Server Application
+Microsoft-Windows-Smartcard-Server	203	0	Message_0x000000CB()			task_0	Always		Server Control has no memory for reader reference object
+Microsoft-Windows-Smartcard-Server	204	0	Message_0x000000CC(UnicodeString Message)			task_0	Always		Server Control failed to create shutdown event: %1
+Microsoft-Windows-Smartcard-Server	205	0	Message_0x000000CD(UnicodeString Reader)			task_0	Always		Reader object has duplicate name: %1
+Microsoft-Windows-Smartcard-Server	206	0	Message_0x000000CE()			task_0	Always		Failed to create global reader change event
+Microsoft-Windows-Smartcard-Server	306	0	Message_0x00000132()			task_0	Always		Command Dispatch sees reader in invalid state
+Microsoft-Windows-Smartcard-Server	401	0	Message_0x00000191()			task_0	Always		Reader shutdown exception from eject smart card command
+Microsoft-Windows-Smartcard-Server	402	0	Message_0x00000192()			task_0	Always		Reader disconnect encountered invalid availability status
+Microsoft-Windows-Smartcard-Server	403	0	Message_0x00000193()			task_0	Always		Reader disconnect encountered invalid availability status
+Microsoft-Windows-Smartcard-Server	406	0	Message_0x00000196()			task_0	Always		Reader object cannot Identify Device
+Microsoft-Windows-Smartcard-Server	410	0	Message_0x0000019A()			task_0	Always		Reader connect encountered invalid availability status
+Microsoft-Windows-Smartcard-Server	411	0	Message_0x0000019B()			task_0	Always		Reader disconnect encountered invalid availability status
+Microsoft-Windows-Smartcard-Server	412	0	Message_0x0000019C()			task_0	Always		Reader free encountered invalid availability status
+Microsoft-Windows-Smartcard-Server	502	0	Message_0x000001F6()			task_0	Always		Initialization of Service Status Critical Section failed
+Microsoft-Windows-Smartcard-Server	504	0	Message_0x000001F8(UnicodeString Message)			task_0	Always		Resource Manager cannot create shutdown event flag:  %1
+Microsoft-Windows-Smartcard-Server	506	0	Message_0x000001FA(UnicodeString Message)			task_0	Always		Smart Card Resource Manager failed to register service:  %1
+Microsoft-Windows-Smartcard-Server	507	0	Message_0x000001FB()			task_0	Always		No memory available for Service Status Critical Section
+Microsoft-Windows-Smartcard-Server	508	0	Message_0x000001FC(UnicodeString Message)			task_0	Always		Smart Card Resource Manager received unexpected exception from PnP event %1
+Microsoft-Windows-Smartcard-Server	509	0	Message_0x000001FD(UnicodeString Message)			task_0	Always		Smart Card Resource Manager received unexpected exception from PnP event %1
+Microsoft-Windows-Smartcard-Server	510	0	Message_0x000001FE(UnicodeString Message)			task_0	Always		Smart Card Resource Manager received NULL handle from PnP event %1
+Microsoft-Windows-Smartcard-Server	511	0	Message_0x000001FF(UnicodeString Message)			task_0	Always		Smart Card Resource Manager received unexpected exception from PnP event %1
+Microsoft-Windows-Smartcard-Server	512	0	Message_0x00000200(UnicodeString Message)			task_0	Always		Smart Card Resource Manager received NULL handle from PnP event %1
+Microsoft-Windows-Smartcard-Server	513	0	Message_0x00000201(UnicodeString Message)			task_0	Always		Smart Card Resource Manager received unexpected exception from PnP event %1
+Microsoft-Windows-Smartcard-Server	514	0	Message_0x00000202(UnicodeString Message, UnicodeString Reader)			task_0	Always		Smart Card Resource Manager failed to add reader %2: %1
+Microsoft-Windows-Smartcard-Server	515	0	Message_0x00000203(UnicodeString Message)			task_0	Always		Smart Card Resource Manager failed to declare state:  %1
+Microsoft-Windows-Smartcard-Server	516	0	Message_0x00000204(UnicodeString Message)			task_0	Always		Smart Card Resource Manager Failed to declare shutdown:  %1
+Microsoft-Windows-Smartcard-Server	517	0	Message_0x00000205(UnicodeString Message)			task_0	Always		Smart Card Resource Manager received unexpected exception attempting to add reader %1
+Microsoft-Windows-Smartcard-Server	518	0	Message_0x00000206(UnicodeString Message)			task_0	Always		Smart Card Resource Manager received unexpected exception from PnP event %1
+Microsoft-Windows-Smartcard-Server	521	0	Message_0x00000209(UnicodeString Message)			task_0	Always		Smart Card Resource Manager received NULL handle from PnP event %1
+Microsoft-Windows-Smartcard-Server	522	0	Message_0x0000020A(UnicodeString Message)			task_0	Always		Smart Card Resource Manager received unexpected exception from PnP event %1
+Microsoft-Windows-Smartcard-Server	523	0	Message_0x0000020B(UnicodeString Message)			task_0	Always		Smart Card Resource Manager received NULL handle from PnP event %1
+Microsoft-Windows-Smartcard-Server	602	0	Message_0x0000025A(UnicodeString Reader)			task_0	Always		WDM Reader driver initialization cannot open reader device:  %1
+Microsoft-Windows-Smartcard-Server	603	0	Message_0x0000025B(UnicodeString Reader)			task_0	Always		WDM Reader driver initialization has no memory available to control device %1
+Microsoft-Windows-Smartcard-Server	604	0	Message_0x0000025C(UnicodeString Message)			task_0	Always		Server control cannot set reader removal event:  %1
+Microsoft-Windows-Smartcard-Server	605	0	Message_0x0000025D(UnicodeString Message)			task_0	Always		Reader object failed to create overlapped event:  %1
+Microsoft-Windows-Smartcard-Server	606	0	Message_0x0000025E(UnicodeString Message)			task_0	Always		Reader object failed to create removal event:  %1
+Microsoft-Windows-Smartcard-Server	607	0	Message_0x0000025F(UnicodeString Message)			task_0	Always		Reader object failed to start monitor thread:  %1
+Microsoft-Windows-Smartcard-Server	608	0	Message_0x00000260(UnicodeString Message)			task_0	Always		Reader monitor failed to create power down timer: %1
+Microsoft-Windows-Smartcard-Server	609	0	Message_0x00000261(UnicodeString Message)			task_0	Always		Reader monitor failed to create overlapped event:  %1
+Microsoft-Windows-Smartcard-Server	610	0	Message_0x00000262(UnicodeString Message, UnicodeString Reader, UnicodeString IOCTL, UnicodeString CommandHeader)			task_0	Always		Smart Card Reader '%2' rejected IOCTL %3: %1  If this error persists, your smart card or reader may not be functioning correctly.\r\n\r\nCommand Header: %4
+Microsoft-Windows-Smartcard-Server	611	0	Message_0x00000263()			task_0	Always		Smart Card Reader initialization failed
+Microsoft-Windows-Smartcard-Server	612	0	Message_0x00000264(UnicodeString Message)			task_0	Always		Reader insertion monitor error retry threshold reached:  %1
+Microsoft-Windows-Smartcard-Server	615	0	Message_0x00000267(UnicodeString Message)			task_0	Always		Reader removal monitor error retry threshold reached:  %1
+Microsoft-Windows-Smartcard-Server	616	0	Message_0x00000268(UnicodeString Message, UnicodeString Reader)			task_0	Always		Reader monitor '%2' received uncaught error code:  %1
+Microsoft-Windows-Smartcard-Server	617	0	Message_0x00000269(UnicodeString Reader)			task_0	Always		Reader monitor '%1' exception -- exiting thread
+Microsoft-Windows-Smartcard-Server	618	0	Message_0x0000026A(UnicodeString Message)			task_0	Always		Smart Card Resource Manager encountered an unrecoverable internal error.
+Microsoft-Windows-Smartcard-Server	619	0	Message_0x0000026B(UnicodeString Message, UnicodeString Reader, UnicodeString IOCTL, UnicodeString CommandHeader)			task_0	Always		Smart Card Reader '%2' has not responded to IOCTL %3 in %1 seconds.  If this error persists, your smart card or reader may not be functioning correctly.\r\n\r\nCommand Header: %4
+Microsoft-Windows-Smartcard-Server	620	0	Message_0x0000026C(UnicodeString Message, UnicodeString Reader, UnicodeString IOCTL, UnicodeString CommandHeader)			task_0	Always		Smart Card Resource Manager was unable to cancel IOCTL %3 for reader '%2': %1  The reader may no longer be responding.  If this error persists, your smart card or reader may not be functioning correctly.\r\n\r\nCommand Header: %4
+Microsoft-Windows-Smartcard-Server	621	0	Message_0x0000026D(UnicodeString Message)			task_0	Always		Server Control failed to access start event: %1
+Microsoft-Windows-Smartcard-Server	622	0	Message_0x0000026E(UnicodeString Message)			task_0	Always		Server Control failed to access stop event: %1
+Microsoft-Windows-Smartcard-Server	623	0	Message_0x0000026F(UnicodeString Reader, UnicodeString Timeout, UnicodeString PID)			task_0	Always		The card in Smart Card Reader '%1' has been reset because an application held an exclusive transaction on the card for %2 seconds without activity.  If this error persists, the application may not be functioning correctly.\r\n\r\nProcess ID: %3

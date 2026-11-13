@@ -1,21 +1,21 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-Diagnosis-PCW	1	0	task_0(UInt32 Error, GUID ProviderGuid)		errors	task_0	Always		
-Microsoft-Windows-Diagnosis-PCW	2	0	task_02(UInt32 Error, GUID ProviderGuid, GUID CounterSetGuid)		errors	task_0	Always		
-Microsoft-Windows-Diagnosis-PCW	3	0	task_03(UInt32 Error, GUID CounterSetGuid, UnicodeString InstanceName, UInt32 InstanceId)		errors	task_0	Always		
-Microsoft-Windows-Diagnosis-PCW	4	0	task_04(GUID ProviderGuid, UInt32 CallbackReason, UnicodeString MachineName, UInt32 MachineNameSize)		callouts	task_0	Always		
-Microsoft-Windows-Diagnosis-PCW	5	0	task_05(UInt32 Status)		callouts	task_0	Always		
-Microsoft-Windows-Diagnosis-PCW	6	0	task_06(GUID ProviderGuid, UInt32 Size)		notifications	task_0	Always		
-Microsoft-Windows-Diagnosis-PCW	7	0	task_07(GUID ProviderGuid, UInt32 RequestCode)		notifications	task_0	Always		
-Microsoft-Windows-Diagnosis-PCW	8	0	task_08(GUID ProviderGuid, UInt32 Status, UInt32 Size)		notifications	task_0	Always		
-Microsoft-Windows-Diagnosis-PCW	9	0	task_09(UInt32 Status)		notifications	task_0	Always		
-Microsoft-Windows-Diagnosis-PCW	13	0	task_013(GUID ProviderGuid, UInt64 Id)		queries	task_0	Always		
-Microsoft-Windows-Diagnosis-PCW	16	0	task_016(UInt32 Error, GUID CounterSetGuid, UnicodeString InstanceName, UInt32 InstanceId, UInt32 CounterId)		errors	task_0	Always		
-Microsoft-Windows-Diagnosis-PCW	17	0	task_017(UInt32 Error, GUID ProviderGuid)		errors	task_0	Always		
-Microsoft-Windows-Diagnosis-PCW	18	0	task_018(UInt32 Error, GUID CounterSetGuid, UnicodeString InstanceName, UInt32 InstanceId)		errors	task_0	Always		
-Microsoft-Windows-Diagnosis-PCW	19	0	task_019(UInt32 Error, GUID CounterSetGuid, UnicodeString InstanceName, UInt32 InstanceId)		errors	task_0	Always		
-Microsoft-Windows-Diagnosis-PCW	20	0	task_020(UInt32 ErrorCode, UInt32 Phase)		errors	task_0	Always		
-Microsoft-Windows-Diagnosis-PCW	21	0	task_021(UInt32 ErrorCode, UInt16 CounterSetNameLength, UnicodeString CounterSetName)		errors	task_0	Always		
-Microsoft-Windows-Diagnosis-PCW	22	0	task_022(UInt32 ErrorCode, UInt16 CounterSetNameLength, UnicodeString CounterSetName, UInt16 InstanceNameLength, UnicodeString InstanceName)		errors	task_0	Always		
-Microsoft-Windows-Diagnosis-PCW	23	0	task_023(UInt32 ErrorCode, UInt16 CounterSetNameLength, UnicodeString CounterSetName, UInt16 InstanceNameLength, UnicodeString InstanceName)		errors	task_0	Always		
-Microsoft-Windows-Diagnosis-PCW	24	0	task_024(UInt32 ErrorCode, UInt32 FunctionIndex)		errors	task_0	Always		
-Microsoft-Windows-Diagnosis-PCW	25	0	task_025(GUID ProviderGuid, GUID CounterSetGuid)		errors	task_0	Always		
+Microsoft-Windows-Diagnosis-PCW	1	0	Event_1(UInt32 Error, GUID ProviderGuid)		errors	task_0	Always	Microsoft-Windows-Diagnosis-PCW/Operational	Provider %2 failed to register. Error: "%1"
+Microsoft-Windows-Diagnosis-PCW	2	0	Event_2(UInt32 Error, GUID ProviderGuid, GUID CounterSetGuid)		errors	task_0	Always	Microsoft-Windows-Diagnosis-PCW/Operational	Provider %2 failed to register counter set %3. Error: "%1"
+Microsoft-Windows-Diagnosis-PCW	3	0	Event_3(UInt32 Error, GUID CounterSetGuid, UnicodeString InstanceName, UInt32 InstanceId)		errors	task_0	Always	Microsoft-Windows-Diagnosis-PCW/Operational	Instance (%2, %3, %4) could not be created. Error: "%1"
+Microsoft-Windows-Diagnosis-PCW	4	0	Event_4(GUID ProviderGuid, UInt32 CallbackReason, UnicodeString MachineName, UInt32 MachineNameSize)		callouts	task_0	Always	Microsoft-Windows-Diagnosis-PCW/Analytic	About to call provider %1 callback with arguments (%2, %3, %4).
+Microsoft-Windows-Diagnosis-PCW	5	0	Event_5(UInt32 Status)		callouts	task_0	Always	Microsoft-Windows-Diagnosis-PCW/Analytic	Callback returned. Return value: "%1"
+Microsoft-Windows-Diagnosis-PCW	6	0	Event_6(GUID ProviderGuid, UInt32 Size)		notifications	task_0	Always	Microsoft-Windows-Diagnosis-PCW/Debug	Provider %1 received an invalid notification with size %2.
+Microsoft-Windows-Diagnosis-PCW	7	0	Event_7(GUID ProviderGuid, UInt32 RequestCode)		notifications	task_0	Always	Microsoft-Windows-Diagnosis-PCW/Debug	Provider %1 received notification: %2.
+Microsoft-Windows-Diagnosis-PCW	8	0	Event_8(GUID ProviderGuid, UInt32 Status, UInt32 Size)		notifications	task_0	Always	Microsoft-Windows-Diagnosis-PCW/Debug	Provider %1 notification handler has replied with size %3 and error code "%2".
+Microsoft-Windows-Diagnosis-PCW	9	0	Event_9(UInt32 Status)		notifications	task_0	Always	Microsoft-Windows-Diagnosis-PCW/Debug	Notification returning with status: "%1"
+Microsoft-Windows-Diagnosis-PCW	13	0	Event_13(GUID ProviderGuid, UInt64 Id)		queries	task_0	Always	Microsoft-Windows-Diagnosis-PCW/Analytic	Query of provider %1 with id %2 had data collected.
+Microsoft-Windows-Diagnosis-PCW	16	0	Event_16(UInt32 Error, GUID CounterSetGuid, UnicodeString InstanceName, UInt32 InstanceId, UInt32 CounterId)		errors	task_0	Always	Microsoft-Windows-Diagnosis-PCW/Operational	Counter %5 of instance (%2, %3, %4) could not be modified. Error: "%1"
+Microsoft-Windows-Diagnosis-PCW	17	0	Event_17(UInt32 Error, GUID ProviderGuid)		errors	task_0	Always	Microsoft-Windows-Diagnosis-PCW/Operational	Provider %2 failed to unregister. Error: "%1"
+Microsoft-Windows-Diagnosis-PCW	18	0	Event_18(UInt32 Error, GUID CounterSetGuid, UnicodeString InstanceName, UInt32 InstanceId)		errors	task_0	Always	Microsoft-Windows-Diagnosis-PCW/Operational	Instance (%2, %3, %4) could not be closed. Error: "%1"
+Microsoft-Windows-Diagnosis-PCW	19	0	Event_19(UInt32 Error, GUID CounterSetGuid, UnicodeString InstanceName, UInt32 InstanceId)		errors	task_0	Always	Microsoft-Windows-Diagnosis-PCW/Operational	Instance (%2, %3, %4) could not be queried. Error: "%1"
+Microsoft-Windows-Diagnosis-PCW	20	0	Event_20(UInt32 ErrorCode, UInt32 Phase)		errors	task_0	Always	Microsoft-Windows-Diagnosis-PCW/Operational	Unable to load pcw.sys, phase %2 failed. Error: "%1"
+Microsoft-Windows-Diagnosis-PCW	21	0	Event_21(UInt32 ErrorCode, UInt16 CounterSetNameLength, UnicodeString CounterSetName)		errors	task_0	Always	Microsoft-Windows-Diagnosis-PCW/Operational	Kernel-mode provider failed to register counter set %3. Error: "%1"
+Microsoft-Windows-Diagnosis-PCW	22	0	Event_22(UInt32 ErrorCode, UInt16 CounterSetNameLength, UnicodeString CounterSetName, UInt16 InstanceNameLength, UnicodeString InstanceName)		errors	task_0	Always	Microsoft-Windows-Diagnosis-PCW/Operational	Kernel-mode provider failed to create instance %5 of counter set %3. Error: "%1"
+Microsoft-Windows-Diagnosis-PCW	23	0	Event_23(UInt32 ErrorCode, UInt16 CounterSetNameLength, UnicodeString CounterSetName, UInt16 InstanceNameLength, UnicodeString InstanceName)		errors	task_0	Always	Microsoft-Windows-Diagnosis-PCW/Operational	Kernel-mode provider failed to add instance %5 of counter set %3. Error: "%1"
+Microsoft-Windows-Diagnosis-PCW	24	0	Event_24(UInt32 ErrorCode, UInt32 FunctionIndex)		errors	task_0	Always	Microsoft-Windows-Diagnosis-PCW/Analytic	PCW driver failed when executing ioctl function %2. Error: "%1"
+Microsoft-Windows-Diagnosis-PCW	25	0	Event_25(GUID ProviderGuid, GUID CounterSetGuid)		errors	task_0	Always	Microsoft-Windows-Diagnosis-PCW/Debug	PCW device missing during registration of counter set %2 of provider %1.

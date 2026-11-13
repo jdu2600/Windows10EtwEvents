@@ -1,11 +1,11 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-Forwarding	100	0	task_0(UnicodeString Id, UnicodeString Query)			task_0	Informational		
-Microsoft-Windows-Forwarding	101	0	task_0101(UnicodeString Id, UnicodeString Query, UnicodeString Status)			task_0	Warning		
-Microsoft-Windows-Forwarding	102	0	task_0102(UnicodeString Query, UInt32 ErrorCode)			task_0	Error		
-Microsoft-Windows-Forwarding	102	1	task_0102_V1(UnicodeString Id, UnicodeString Query, UInt32 ErrorCode)			task_0	Error		
-Microsoft-Windows-Forwarding	103	0	task_0103(UnicodeString Id)			task_0	Informational		
-Microsoft-Windows-Forwarding	104	0	task_0104(UnicodeString Id, UInt32 ErrorCode)			task_0	Warning		
-Microsoft-Windows-Forwarding	104	1	task_0104_V1(UnicodeString SubscriptionManagerAddress, UInt32 ErrorCode, UnicodeString ErrorMessage)			task_0	Informational		
-Microsoft-Windows-Forwarding	105	0	task_0105(UnicodeString SubscriptionManagerAddress, UInt32 ErrorCode, UnicodeString ErrorMessage)			task_0	Error		
-Microsoft-Windows-Forwarding	106	0	task_0106()			task_0	Informational		
-Microsoft-Windows-Forwarding	107	0	task_0107(UnicodeString PolicyDescription)			task_0	Error		
+Microsoft-Windows-Forwarding	100	0	Event_100(UnicodeString Id, UnicodeString Query)			task_0	Informational	Microsoft-Windows-Forwarding/Operational	The subscription %1 is created successfully.
+Microsoft-Windows-Forwarding	101	0	Event_101(UnicodeString Id, UnicodeString Query, UnicodeString Status)			task_0	Warning	Microsoft-Windows-Forwarding/Operational	The subscription %1 is created, but one or more channels in the query could not be read at this time.
+Microsoft-Windows-Forwarding	102	0	Event_102(UnicodeString Query, UInt32 ErrorCode)			task_0	Error	Microsoft-Windows-Forwarding/Operational	
+Microsoft-Windows-Forwarding	102	1	Event_102_V1(UnicodeString Id, UnicodeString Query, UInt32 ErrorCode)			task_0	Error	Microsoft-Windows-Forwarding/Operational	The subscription %1 can not be created. The error code is %3.
+Microsoft-Windows-Forwarding	103	0	Event_103(UnicodeString Id)			task_0	Informational	Microsoft-Windows-Forwarding/Operational	The subscription %1 is unsubscribed.
+Microsoft-Windows-Forwarding	104	0	Event_104(UnicodeString Id, UInt32 ErrorCode)			task_0	Warning	Microsoft-Windows-Forwarding/Operational	
+Microsoft-Windows-Forwarding	104	1	Event_104_V1(UnicodeString SubscriptionManagerAddress, UInt32 ErrorCode, UnicodeString ErrorMessage)			task_0	Informational	Microsoft-Windows-Forwarding/Operational	The forwarder has successfully connected to the subscription manager at address %1.
+Microsoft-Windows-Forwarding	105	0	Event_105(UnicodeString SubscriptionManagerAddress, UInt32 ErrorCode, UnicodeString ErrorMessage)			task_0	Error	Microsoft-Windows-Forwarding/Operational	The forwarder is having a problem communicating with subscription manager at address %1.  Error code is %2 and Error Message is %3.
+Microsoft-Windows-Forwarding	106	0	Event_106()			task_0	Informational	Microsoft-Windows-Forwarding/Operational	Subscription policy has changed.  Forwarder is adjusting its subscriptions according to the subscription manager(s) in the updated policy.
+Microsoft-Windows-Forwarding	107	0	Event_107(UnicodeString PolicyDescription)			task_0	Error	Microsoft-Windows-Forwarding/Operational	A subscription policy contains invalid configuration.  Description of policy is %1.

@@ -1,3 +1,4 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-StorageSpaces-SpaceManager	100	0	task_0(UInt32 Type, UInt32 Tag)			task_0	Informational		
-Microsoft-Windows-StorageSpaces-SpaceManager	101	0	task_0101(UInt32 Type, UInt32 Tag, UInt32 KernelModeStatus, UInt32 UserModeStatus)			task_0	Informational		
+Microsoft-Windows-StorageSpaces-SpaceManager	100	0	Event_100()			task_0	Informational	Microsoft-Windows-StorageSpaces-SpaceManager/Operational	The Storage Spaces driver has requested a repair operation.
+Microsoft-Windows-StorageSpaces-SpaceManager	101	0	Event_101()			task_0	Informational	Microsoft-Windows-StorageSpaces-SpaceManager/Operational	The repair was successfully queued.
+Microsoft-Windows-StorageSpaces-SpaceManager	102	0	Event_102(UInt32 status)			task_0	Informational	Microsoft-Windows-StorageSpaces-SpaceManager/Operational	The repair request failed with status %1.

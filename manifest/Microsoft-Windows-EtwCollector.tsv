@@ -1,0 +1,6 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-EtwCollector	1	1	Event_1_V1(UInt32 ProcessID, UInt32 StartReason)			task_0	Informational		Profiling for target (%1) has started.
+Microsoft-Windows-EtwCollector	2	0	Event_2(UInt32 ProcessID)			task_0	Informational		Profiling for target (%1) has stopped.
+Microsoft-Windows-EtwCollector	3	0	Event_3()			task_0	Informational		Profiling has gone from unpaused to paused state.
+Microsoft-Windows-EtwCollector	4	0	Event_4()			task_0	Informational		Profiling has gone from paused to unpaused state.
+Microsoft-Windows-EtwCollector	5	0	Event_5(UnicodeString Name, UnicodeString OSDescription, UInt32 Architecture)			task_0	Informational		Machine [Name: %1] [OS Description: %2] [Architecture: %3]

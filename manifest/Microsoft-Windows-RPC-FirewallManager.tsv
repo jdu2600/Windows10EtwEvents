@@ -1,4 +1,4 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-RPC-FirewallManager	2	0	task_0PCODE_128pcode_128(UnicodeString FilterKey, UnicodeString ErrorStatus)	opcode_128		task_0	Always		
-Microsoft-Windows-RPC-FirewallManager	3	0	task_0PCODE_128pcode_1283(UnicodeString FilterKey, UnicodeString ErrorStatus)	opcode_128		task_0	Always		
-Microsoft-Windows-RPC-FirewallManager	4	0	task_0PCODE_128pcode_1284(UnicodeString FilterKey, UnicodeString ErrorStatus)	opcode_128		task_0	Always		
+Microsoft-Windows-RPC-FirewallManager	2	0	Message_0x80000002(UnicodeString FilterKey, UnicodeString ErrorStatus)			task_0	Always		An attempt to retrieve firewall filter with key %1 has failed with error %2. \r\nRPC is not able to enforce this filter.
+Microsoft-Windows-RPC-FirewallManager	3	0	Message_0x80000003(UnicodeString FilterKey, UnicodeString ErrorStatus)			task_0	Always		An attempt to add firewall filter with key %1 has failed with error %2. \r\nRPC is not able to add this filter.
+Microsoft-Windows-RPC-FirewallManager	4	0	Message_0x80000004(UnicodeString FilterKey, UnicodeString ErrorStatus)			task_0	Always		An attempt to delete firewall filter with key %1 has failed with error %2. \r\nRPC is not able to remove this filter. \r\nUser Action Verify that the machine has sufficient memory.

@@ -1,6 +1,6 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-DeviceConfidence	1000	0	DisplayConsentPromptStart()	Start		DisplayConsentPrompt	Informational		
-Microsoft-Windows-DeviceConfidence	1001	0	DisplayConsentPromptStop()	Stop		DisplayConsentPrompt	Informational		
-Microsoft-Windows-DeviceConfidence	2000	0	task_0(UnicodeString packageSid, UnicodeString capabilityName)			task_0	Error		
-Microsoft-Windows-DeviceConfidence	2001	0	task_02001(UnicodeString packageSid, UInt32 error)			task_0	Error		
-Microsoft-Windows-DeviceConfidence	2002	0	task_02002(UnicodeString packageSid, UInt32 error)			task_0	Error		
+Microsoft-Windows-DeviceConfidence	1000	0	DisplayConsentPromptStart()	Start		DisplayConsentPrompt	Informational	Microsoft-Windows-DeviceConfidence/Analytic	
+Microsoft-Windows-DeviceConfidence	1001	0	DisplayConsentPromptStop()	Stop		DisplayConsentPrompt	Informational	Microsoft-Windows-DeviceConfidence/Analytic	
+Microsoft-Windows-DeviceConfidence	2000	0	Event_2000(UnicodeString packageSid, UnicodeString capabilityName)			task_0	Error	Microsoft-Windows-DeviceConfidence/Analytic	Failed getting active window for app package %1 and capability name %2
+Microsoft-Windows-DeviceConfidence	2001	0	Event_2001(UnicodeString packageSid, UInt32 error)			task_0	Error	Microsoft-Windows-DeviceConfidence/Analytic	Failed to show consent prompt for app package %1 with error %2
+Microsoft-Windows-DeviceConfidence	2002	0	Event_2002(UnicodeString packageSid, UInt32 error)			task_0	Error	Microsoft-Windows-DeviceConfidence/Analytic	Failed to create consent window for app package %1 with error %2

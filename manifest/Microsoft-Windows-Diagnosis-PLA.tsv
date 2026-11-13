@@ -1,49 +1,49 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-Diagnosis-PLA	1000	0	task_0(UnicodeString Name, UnicodeString User)			task_0	Informational		
-Microsoft-Windows-Diagnosis-PLA	1001	0	task_01001(UnicodeString Name, UnicodeString User)			task_0	Informational		
-Microsoft-Windows-Diagnosis-PLA	1002	0	task_01002(UnicodeString Name, UnicodeString User)			task_0	Informational		
-Microsoft-Windows-Diagnosis-PLA	1003	0	task_01003(UnicodeString Name, UnicodeString Key, UnicodeString User)			task_0	Informational		
-Microsoft-Windows-Diagnosis-PLA	1004	0	task_01004(UnicodeString Name, UnicodeString Key, UnicodeString User, UInt32 Error)			task_0	Error		
-Microsoft-Windows-Diagnosis-PLA	1005	0	task_01005(UnicodeString Name)			task_0	Informational		
-Microsoft-Windows-Diagnosis-PLA	1006	0	task_01006(UnicodeString Name, UInt32 Error)			task_0	Error		
-Microsoft-Windows-Diagnosis-PLA	1007	0	task_01007(UnicodeString Name, UnicodeString TaskName)			task_0	Informational		
-Microsoft-Windows-Diagnosis-PLA	1008	0	task_01008(UnicodeString Name, UnicodeString TaskName, UInt32 Error)			task_0	Error		
-Microsoft-Windows-Diagnosis-PLA	1009	0	task_01009(UInt32 Error)			task_0	Error		
-Microsoft-Windows-Diagnosis-PLA	1010	0	task_01010(UnicodeString Name, UnicodeString CounterName, UInt32 Error)			task_0	Error		
-Microsoft-Windows-Diagnosis-PLA	1011	0	task_01011(UnicodeString DataCollecotrSet, UnicodeString Name)			task_0	Informational		
-Microsoft-Windows-Diagnosis-PLA	1012	0	task_01012(UnicodeString Name)			task_0	Informational		
-Microsoft-Windows-Diagnosis-PLA	1013	0	task_01013(UnicodeString Name)			task_0	Informational		
-Microsoft-Windows-Diagnosis-PLA	1014	0	task_01014(UnicodeString DataCollecotrSet, UnicodeString Name, UInt32 Error)			task_0	Error		
-Microsoft-Windows-Diagnosis-PLA	1015	0	task_01015(UnicodeString DataCollecotrSet, UnicodeString Name, UInt32 Error)			task_0	Error		
-Microsoft-Windows-Diagnosis-PLA	1016	0	task_01016(UnicodeString DataCollecotrSet, UnicodeString Name, UInt32 Error)			task_0	Error		
-Microsoft-Windows-Diagnosis-PLA	1017	0	task_01017(UnicodeString ServerName, UnicodeString CabName, UInt32 Error)			task_0	Error		
-Microsoft-Windows-Diagnosis-PLA	2031	0	task_02031(UnicodeString Counter, UnicodeString Value, UnicodeString Operator, UnicodeString Threshold, UnicodeString Message)			task_0	Informational		
-Microsoft-Windows-Diagnosis-PLA	3000	0	task_03000(UnicodeString ReportFileName, UnicodeString Description)			task_0	Informational		
-Microsoft-Windows-Diagnosis-PLA	3001	0	task_03001(UnicodeString ReportFileName, UnicodeString Description)			task_0	Warning		
-Microsoft-Windows-Diagnosis-PLA	3002	0	task_03002(UnicodeString ReportFileName, UnicodeString Description)			task_0	Error		
-Microsoft-Windows-Diagnosis-PLA	5001	0	task_05001(UInt32 BuildNumber, AnsiString BuildType)		transaction	task_0	Always		
-Microsoft-Windows-Diagnosis-PLA	5002	0	task_05002(UInt32 BuildNumber, AnsiString BuildType)		transaction	task_0	Always		
-Microsoft-Windows-Diagnosis-PLA	5003	0	task_05003(UInt32 Reason, UInt32 Result)		transaction	task_0	Always		
-Microsoft-Windows-Diagnosis-PLA	5004	0	task_05004(UnicodeString Name, UnicodeString FileName)		transaction	task_0	Always		
-Microsoft-Windows-Diagnosis-PLA	5005	0	task_05005(UnicodeString Name, UInt32 SerialNumber)		transaction	task_0	Always		
-Microsoft-Windows-Diagnosis-PLA	5006	0	task_05006(UnicodeString Name)		transaction	task_0	Always		
-Microsoft-Windows-Diagnosis-PLA	5007	0	task_05007(UnicodeString Name)		transaction	task_0	Always		
-Microsoft-Windows-Diagnosis-PLA	5008	0	task_05008(UnicodeString Name, UInt32 SerialNumber)		transaction	task_0	Always		
-Microsoft-Windows-Diagnosis-PLA	5009	0	task_05009(UnicodeString Name, UInt32 Index)		transaction	task_0	Always		
-Microsoft-Windows-Diagnosis-PLA	5010	0	task_05010(UnicodeString Name)		transaction	task_0	Always		
-Microsoft-Windows-Diagnosis-PLA	5011	0	task_05011(UnicodeString Name, UnicodeString FileName)		transaction	task_0	Always		
-Microsoft-Windows-Diagnosis-PLA	5012	0	task_05012(UnicodeString Name)		transaction	task_0	Always		
-Microsoft-Windows-Diagnosis-PLA	5013	0	task_05013(UnicodeString Message, AnsiString FileName, UInt32 Line)		transaction	task_0	Always		
-Microsoft-Windows-Diagnosis-PLA	5014	0	task_05014(AnsiString FileName, UInt32 Line, Pointer Address, Pointer Size)		memory	task_0	Always		
-Microsoft-Windows-Diagnosis-PLA	5015	0	task_05015(AnsiString FileName, UInt32 Line, Pointer Address)		memory	task_0	Always		
-Microsoft-Windows-Diagnosis-PLA	5016	0	task_05016(AnsiString FileName, UInt32 Line, Pointer Address, Pointer Size)		memory	task_0	Always		
-Microsoft-Windows-Diagnosis-PLA	5017	0	task_05017(AnsiString FileName, UInt32 Line, Pointer Address)		memory	task_0	Always		
-Microsoft-Windows-Diagnosis-PLA	5018	0	task_05018(AnsiString FileName, UInt32 Line, Pointer Address, Pointer Size, Pointer OrigAddress)		memory	task_0	Always		
-Microsoft-Windows-Diagnosis-PLA	5019	0	task_05019(AnsiString FileName, UInt32 Line, Pointer Address, Pointer Size)		memory	task_0	Always		
-Microsoft-Windows-Diagnosis-PLA	5020	0	task_05020(AnsiString FileName, UInt32 Line, Pointer Address)		memory	task_0	Always		
-Microsoft-Windows-Diagnosis-PLA	5021	0	task_05021(AnsiString Name, Pointer Address)		object	task_0	Always		
-Microsoft-Windows-Diagnosis-PLA	5022	0	task_05022(AnsiString Name, Pointer Address)		object	task_0	Always		
-Microsoft-Windows-Diagnosis-PLA	5023	0	task_05023(AnsiString Name, Pointer Address, UInt32 RefCount)		object	task_0	Always		
-Microsoft-Windows-Diagnosis-PLA	5024	0	task_05024(AnsiString Name, Pointer Address, UInt32 RefCount)		object	task_0	Always		
-Microsoft-Windows-Diagnosis-PLA	5025	0	task_05025(AnsiString Name, Pointer Address, UInt32 RefCount)		object	task_0	Always		
-Microsoft-Windows-Diagnosis-PLA	5026	0	task_05026(UInt32 Error, AnsiString FileName, UInt32 Line, AnsiString Function, UnicodeString User)		errors	task_0	Always		
+Microsoft-Windows-Diagnosis-PLA	1000	0	Event_1000(UnicodeString Name, UnicodeString User)			task_0	Informational	Microsoft-Windows-Diagnosis-PLA/Operational	Data collector set %1 was created by %2.
+Microsoft-Windows-Diagnosis-PLA	1001	0	Event_1001(UnicodeString Name, UnicodeString User)			task_0	Informational	Microsoft-Windows-Diagnosis-PLA/Operational	Data collector set %1 was changed by %2.
+Microsoft-Windows-Diagnosis-PLA	1002	0	Event_1002(UnicodeString Name, UnicodeString User)			task_0	Informational	Microsoft-Windows-Diagnosis-PLA/Operational	Data collector set %1 was deleted by %2.
+Microsoft-Windows-Diagnosis-PLA	1003	0	Event_1003(UnicodeString Name, UnicodeString Key, UnicodeString User)			task_0	Informational	Microsoft-Windows-Diagnosis-PLA/Operational	Data collector set %1 started as %3.
+Microsoft-Windows-Diagnosis-PLA	1004	0	Event_1004(UnicodeString Name, UnicodeString Key, UnicodeString User, UInt32 Error)			task_0	Error	Microsoft-Windows-Diagnosis-PLA/Operational	Data collector set %1 failed to start as %3 with error code %4.
+Microsoft-Windows-Diagnosis-PLA	1005	0	Event_1005(UnicodeString Name)			task_0	Informational	Microsoft-Windows-Diagnosis-PLA/Operational	Data collector set %1 stopped.
+Microsoft-Windows-Diagnosis-PLA	1006	0	Event_1006(UnicodeString Name, UInt32 Error)			task_0	Error	Microsoft-Windows-Diagnosis-PLA/Operational	Data collector set %1 stopped because of error %2.
+Microsoft-Windows-Diagnosis-PLA	1007	0	Event_1007(UnicodeString Name, UnicodeString TaskName)			task_0	Informational	Microsoft-Windows-Diagnosis-PLA/Operational	Data collector set %1 launched task %2.
+Microsoft-Windows-Diagnosis-PLA	1008	0	Event_1008(UnicodeString Name, UnicodeString TaskName, UInt32 Error)			task_0	Error	Microsoft-Windows-Diagnosis-PLA/Operational	Data collector set %1 failed to launch task %2 with error code %3.
+Microsoft-Windows-Diagnosis-PLA	1009	0	Event_1009(UInt32 Error)			task_0	Error	Microsoft-Windows-Diagnosis-PLA/Operational	PLA upgrade failed with error code %1.
+Microsoft-Windows-Diagnosis-PLA	1010	0	Event_1010(UnicodeString Name, UnicodeString CounterName, UInt32 Error)			task_0	Error	Microsoft-Windows-Diagnosis-PLA/Operational	Counter %2 could not be added to collector %1, error code is %3.
+Microsoft-Windows-Diagnosis-PLA	1011	0	Event_1011(UnicodeString DataCollecotrSet, UnicodeString Name)			task_0	Informational	Microsoft-Windows-Diagnosis-PLA/Operational	Configuration data collector %1\%2 completed.
+Microsoft-Windows-Diagnosis-PLA	1012	0	Event_1012(UnicodeString Name)			task_0	Informational	Microsoft-Windows-Diagnosis-PLA/Operational	Data collector set %1 is compiling.
+Microsoft-Windows-Diagnosis-PLA	1013	0	Event_1013(UnicodeString Name)			task_0	Informational	Microsoft-Windows-Diagnosis-PLA/Operational	Data collector set %1 segmented.
+Microsoft-Windows-Diagnosis-PLA	1014	0	Event_1014(UnicodeString DataCollecotrSet, UnicodeString Name, UInt32 Error)			task_0	Error	Microsoft-Windows-Diagnosis-PLA/Operational	Alert Data Collector %2 in Data Collector Set %1 failed to start task, error code is %3.
+Microsoft-Windows-Diagnosis-PLA	1015	0	Event_1015(UnicodeString DataCollecotrSet, UnicodeString Name, UInt32 Error)			task_0	Error	Microsoft-Windows-Diagnosis-PLA/Operational	Alert Data Collector %2 in Data Collector Set %1 failed to start Data Collector Set, error code is %3.
+Microsoft-Windows-Diagnosis-PLA	1016	0	Event_1016(UnicodeString DataCollecotrSet, UnicodeString Name, UInt32 Error)			task_0	Error	Microsoft-Windows-Diagnosis-PLA/Operational	Alert Data Collector %2 in Data Collector Set %1 failed to write event log event, error code is %3.
+Microsoft-Windows-Diagnosis-PLA	1017	0	Event_1017(UnicodeString ServerName, UnicodeString CabName, UInt32 Error)			task_0	Error	Microsoft-Windows-Diagnosis-PLA/Operational	PLA failed to send cabinet file %2 to server %1, error code is %3.
+Microsoft-Windows-Diagnosis-PLA	2031	0	Event_2031(UnicodeString Counter, UnicodeString Value, UnicodeString Operator, UnicodeString Threshold, UnicodeString Message)			task_0	Informational	Microsoft-Windows-Diagnosis-PLA/Operational	%5
+Microsoft-Windows-Diagnosis-PLA	3000	0	Event_3000(UnicodeString ReportFileName, UnicodeString Description)			task_0	Informational	Microsoft-Windows-Diagnosis-PLA/Operational	%2
+Microsoft-Windows-Diagnosis-PLA	3001	0	Event_3001(UnicodeString ReportFileName, UnicodeString Description)			task_0	Warning	Microsoft-Windows-Diagnosis-PLA/Operational	%2
+Microsoft-Windows-Diagnosis-PLA	3002	0	Event_3002(UnicodeString ReportFileName, UnicodeString Description)			task_0	Error	Microsoft-Windows-Diagnosis-PLA/Operational	%2
+Microsoft-Windows-Diagnosis-PLA	5001	0	Event_5001(UInt32 BuildNumber, AnsiString BuildType)		transaction	task_0	Always	Microsoft-Windows-Diagnosis-PLA/Debug	
+Microsoft-Windows-Diagnosis-PLA	5002	0	Event_5002(UInt32 BuildNumber, AnsiString BuildType)		transaction	task_0	Always	Microsoft-Windows-Diagnosis-PLA/Debug	
+Microsoft-Windows-Diagnosis-PLA	5003	0	Event_5003(UInt32 Reason, UInt32 Result)		transaction	task_0	Always	Microsoft-Windows-Diagnosis-PLA/Debug	
+Microsoft-Windows-Diagnosis-PLA	5004	0	Event_5004(UnicodeString Name, UnicodeString FileName)		transaction	task_0	Always	Microsoft-Windows-Diagnosis-PLA/Debug	
+Microsoft-Windows-Diagnosis-PLA	5005	0	Event_5005(UnicodeString Name, UInt32 SerialNumber)		transaction	task_0	Always	Microsoft-Windows-Diagnosis-PLA/Debug	
+Microsoft-Windows-Diagnosis-PLA	5006	0	Event_5006(UnicodeString Name)		transaction	task_0	Always	Microsoft-Windows-Diagnosis-PLA/Debug	
+Microsoft-Windows-Diagnosis-PLA	5007	0	Event_5007(UnicodeString Name)		transaction	task_0	Always	Microsoft-Windows-Diagnosis-PLA/Debug	
+Microsoft-Windows-Diagnosis-PLA	5008	0	Event_5008(UnicodeString Name, UInt32 SerialNumber)		transaction	task_0	Always	Microsoft-Windows-Diagnosis-PLA/Debug	
+Microsoft-Windows-Diagnosis-PLA	5009	0	Event_5009(UnicodeString Name, UInt32 Index)		transaction	task_0	Always	Microsoft-Windows-Diagnosis-PLA/Debug	
+Microsoft-Windows-Diagnosis-PLA	5010	0	Event_5010(UnicodeString Name)		transaction	task_0	Always	Microsoft-Windows-Diagnosis-PLA/Debug	
+Microsoft-Windows-Diagnosis-PLA	5011	0	Event_5011(UnicodeString Name, UnicodeString FileName)		transaction	task_0	Always	Microsoft-Windows-Diagnosis-PLA/Debug	
+Microsoft-Windows-Diagnosis-PLA	5012	0	Event_5012(UnicodeString Name)		transaction	task_0	Always	Microsoft-Windows-Diagnosis-PLA/Debug	
+Microsoft-Windows-Diagnosis-PLA	5013	0	Event_5013(UnicodeString Message, AnsiString FileName, UInt32 Line)		transaction	task_0	Always	Microsoft-Windows-Diagnosis-PLA/Debug	
+Microsoft-Windows-Diagnosis-PLA	5014	0	Event_5014(AnsiString FileName, UInt32 Line, Pointer Address, Pointer Size)		memory	task_0	Always	Microsoft-Windows-Diagnosis-PLA/Debug	
+Microsoft-Windows-Diagnosis-PLA	5015	0	Event_5015(AnsiString FileName, UInt32 Line, Pointer Address)		memory	task_0	Always	Microsoft-Windows-Diagnosis-PLA/Debug	
+Microsoft-Windows-Diagnosis-PLA	5016	0	Event_5016(AnsiString FileName, UInt32 Line, Pointer Address, Pointer Size)		memory	task_0	Always	Microsoft-Windows-Diagnosis-PLA/Debug	
+Microsoft-Windows-Diagnosis-PLA	5017	0	Event_5017(AnsiString FileName, UInt32 Line, Pointer Address)		memory	task_0	Always	Microsoft-Windows-Diagnosis-PLA/Debug	
+Microsoft-Windows-Diagnosis-PLA	5018	0	Event_5018(AnsiString FileName, UInt32 Line, Pointer Address, Pointer Size, Pointer OrigAddress)		memory	task_0	Always	Microsoft-Windows-Diagnosis-PLA/Debug	
+Microsoft-Windows-Diagnosis-PLA	5019	0	Event_5019(AnsiString FileName, UInt32 Line, Pointer Address, Pointer Size)		memory	task_0	Always	Microsoft-Windows-Diagnosis-PLA/Debug	
+Microsoft-Windows-Diagnosis-PLA	5020	0	Event_5020(AnsiString FileName, UInt32 Line, Pointer Address)		memory	task_0	Always	Microsoft-Windows-Diagnosis-PLA/Debug	
+Microsoft-Windows-Diagnosis-PLA	5021	0	Event_5021(AnsiString Name, Pointer Address)		object	task_0	Always	Microsoft-Windows-Diagnosis-PLA/Debug	
+Microsoft-Windows-Diagnosis-PLA	5022	0	Event_5022(AnsiString Name, Pointer Address)		object	task_0	Always	Microsoft-Windows-Diagnosis-PLA/Debug	
+Microsoft-Windows-Diagnosis-PLA	5023	0	Event_5023(AnsiString Name, Pointer Address, UInt32 RefCount)		object	task_0	Always	Microsoft-Windows-Diagnosis-PLA/Debug	
+Microsoft-Windows-Diagnosis-PLA	5024	0	Event_5024(AnsiString Name, Pointer Address, UInt32 RefCount)		object	task_0	Always	Microsoft-Windows-Diagnosis-PLA/Debug	
+Microsoft-Windows-Diagnosis-PLA	5025	0	Event_5025(AnsiString Name, Pointer Address, UInt32 RefCount)		object	task_0	Always	Microsoft-Windows-Diagnosis-PLA/Debug	
+Microsoft-Windows-Diagnosis-PLA	5026	0	Event_5026(UInt32 Error, AnsiString FileName, UInt32 Line, AnsiString Function, UnicodeString User)		errors	task_0	Always	Microsoft-Windows-Diagnosis-PLA/Debug	

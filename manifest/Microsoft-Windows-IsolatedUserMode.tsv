@@ -1,6 +1,5 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-IsolatedUserMode	1	0	task_0(UInt64 TrustletIdentity, UInt32 NormalProcessId, UInt32 Status, UnicodeString ImageName)		keyword_400000000000	task_0	Informational		
-Microsoft-Windows-IsolatedUserMode	2	0	task_02(UInt64 TrustletIdentity, UInt32 NormalProcessId, UInt32 Status)		keyword_400000000000	task_0	Informational		
-Microsoft-Windows-IsolatedUserMode	3	0	task_03(UInt32 Status, UInt32 Flags)		keyword_400000000000	task_0	Informational		
-Microsoft-Windows-IsolatedUserMode	4	0	task_04(UInt64 TrustletIdentity, UInt32 NormalProcessId, UInt32 Status)		keyword_400000000000	task_0	Error		
-Microsoft-Windows-IsolatedUserMode	5	0	task_05(UInt64 TrustletIdentity, UInt32 NormalProcessId, UInt32 Status, UnicodeString ImageName)		keyword_400000000000	task_0	Informational		
+Microsoft-Windows-IsolatedUserMode	1	0	Event_1(UInt64 TrustletIdentity, UInt32 NormalProcessId, UInt32 Status, UnicodeString ImageName)		keyword_400000000000	task_0	Informational	System	Secure Trustlet %4 Id %1 and Pid %2 started with status %3.
+Microsoft-Windows-IsolatedUserMode	2	0	Event_2(UInt64 TrustletIdentity, UInt32 NormalProcessId, UInt32 Status)		keyword_400000000000	task_0	Informational	System	Secure Trustlet Id %1 and Pid %2 stopped with status %3.
+Microsoft-Windows-IsolatedUserMode	3	0	Event_3(UInt32 Status, UInt32 Flags)		keyword_400000000000	task_0	Informational	System	Secure Kernel started with status %1 and flags %2.
+Microsoft-Windows-IsolatedUserMode	4	0	Event_4(UInt64 TrustletIdentity, UInt32 NormalProcessId, UInt32 Status)		keyword_400000000000	task_0	Error	System	Secure Trustlet Id %1 and Pid %2 failed to start with status %3.

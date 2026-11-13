@@ -1,4 +1,4 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-MemoryDiagnostics-Schedule	1001	0	task_0(UnicodeString LaunchType, UnicodeString ScheduleType)			task_0	Informational		
-Microsoft-Windows-MemoryDiagnostics-Schedule	1002	0	task_01002(UnicodeString LaunchType, UnicodeString ScheduleType)			task_0	Informational		
-Microsoft-Windows-MemoryDiagnostics-Schedule	1003	0	task_01003(UnicodeString LaunchType, UnicodeString ScheduleType, UInt32 ErrorCode)			task_0	Informational		
+Microsoft-Windows-MemoryDiagnostics-Schedule	1001	0	Event_1001(UnicodeString LaunchType, UnicodeString ScheduleType)			task_0	Informational	System	The Windows Memory Diagnostic scheduled the testing of the computer's memory to run immediately
+Microsoft-Windows-MemoryDiagnostics-Schedule	1002	0	Event_1002(UnicodeString LaunchType, UnicodeString ScheduleType)			task_0	Informational	System	The Windows Memory Diagnostic scheduled the testing of the computer's memory to run the next time the computer starts
+Microsoft-Windows-MemoryDiagnostics-Schedule	1003	0	Event_1003(UnicodeString LaunchType, UnicodeString ScheduleType, UInt32 ErrorCode)			task_0	Informational	System	The Windows Memory Diagnostic could not schedule the testing of the computer's memory

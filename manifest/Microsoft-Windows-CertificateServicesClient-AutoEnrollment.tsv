@@ -1,9 +1,9 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-CertificateServicesClient-AutoEnrollment	1	0	task_0PCODE_64pcode_64(UnicodeString Context, UnicodeString StoreName, UnicodeString LdapStore, UnicodeString ErrorCode, UnicodeString ErrorMsg)	opcode_64		task_0	Always		
-Microsoft-Windows-CertificateServicesClient-AutoEnrollment	2	0	task_0PCODE_192pcode_192(UnicodeString Context)	opcode_192		task_0	Always		
-Microsoft-Windows-CertificateServicesClient-AutoEnrollment	3	0	task_0PCODE_192pcode_1923(UnicodeString Context)	opcode_192		task_0	Always		
-Microsoft-Windows-CertificateServicesClient-AutoEnrollment	4	0	task_0PCODE_192pcode_1924(UnicodeString Context)	opcode_192		task_0	Always		
-Microsoft-Windows-CertificateServicesClient-AutoEnrollment	5	0	task_0PCODE_192pcode_1925(UnicodeString Context)	opcode_192		task_0	Always		
-Microsoft-Windows-CertificateServicesClient-AutoEnrollment	6	0	task_0PCODE_64pcode_646(UnicodeString Context, UnicodeString ErrorCode, UnicodeString ErrorMsg)	opcode_64		task_0	Always		
-Microsoft-Windows-CertificateServicesClient-AutoEnrollment	15	0	task_0PCODE_128pcode_128(UnicodeString Context, UnicodeString ErrorCode, UnicodeString ErrorMsg)	opcode_128		task_0	Always		
-Microsoft-Windows-CertificateServicesClient-AutoEnrollment	64	0	task_0PCODE_128pcode_12864(UnicodeString Context, UnicodeString ObjId)	opcode_128		task_0	Always		
+Microsoft-Windows-CertificateServicesClient-AutoEnrollment	1	0	Message_0x40000001(UnicodeString Context, UnicodeString StoreName, UnicodeString LdapStore, UnicodeString ErrorCode, UnicodeString ErrorMsg)			task_0	Always		Automatic certificate enrollment for %1 failed to download certificates for %2 store from %3 (%4). %5
+Microsoft-Windows-CertificateServicesClient-AutoEnrollment	2	0	Message_0xC0000002(UnicodeString Context)			task_0	Always		Automatic certificate enrollment for %1 started.
+Microsoft-Windows-CertificateServicesClient-AutoEnrollment	3	0	Message_0xC0000003(UnicodeString Context)			task_0	Always		Automatic certificate enrollment for %1 completed.
+Microsoft-Windows-CertificateServicesClient-AutoEnrollment	4	0	Message_0xC0000004(UnicodeString Context)			task_0	Always		Automatic certificate enrollment for %1 invoked the enrollment API.
+Microsoft-Windows-CertificateServicesClient-AutoEnrollment	5	0	Message_0xC0000005(UnicodeString Context)			task_0	Always		Automatic certificate enrollment for %1 returned from the enrollment API.
+Microsoft-Windows-CertificateServicesClient-AutoEnrollment	6	0	Message_0x40000006(UnicodeString Context, UnicodeString ErrorCode, UnicodeString ErrorMsg)			task_0	Always		Automatic certificate enrollment for %1 failed (%2) %3.
+Microsoft-Windows-CertificateServicesClient-AutoEnrollment	15	0	Message_0x8000000F(UnicodeString Context, UnicodeString ErrorCode, UnicodeString ErrorMsg)			task_0	Always		Automatic certificate enrollment for %1 failed to contact the active directory (%2). %3 Enrollment will not be performed.
+Microsoft-Windows-CertificateServicesClient-AutoEnrollment	64	0	Message_0x80000040(UnicodeString Context, UnicodeString ObjId)			task_0	Always		Certificate for %1 with Thumbprint %2 is about to expire or already expired.

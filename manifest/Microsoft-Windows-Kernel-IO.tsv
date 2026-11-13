@@ -1,15 +1,4 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-Kernel-IO	1	0	VolumeMountStart(GUID VolumeGuid, UInt16 VolumeNameLength, UnicodeString VolumeName)	Start	VolumeMounts	VolumeMount	Informational		
-Microsoft-Windows-Kernel-IO	2	0	VolumeMountStop(GUID VolumeGuid, UInt16 VolumeNameLength, UnicodeString VolumeName)	Stop	VolumeMounts	VolumeMount	Informational		
-Microsoft-Windows-Kernel-IO	3	0	VolumeMountStop3(GUID VolumeGuid, UInt16 VolumeNameLength, UnicodeString VolumeName, HexInt32 Error)	Stop	VolumeMounts	VolumeMount	Warning		
-Microsoft-Windows-Kernel-IO	1205	0	task_0(UInt16 FilterNameLength, UnicodeString FilterName)			task_0	Error		
-Microsoft-Windows-Kernel-IO	1206	0	task_01206(UInt16 FilterNameLength, UnicodeString FilterName, UInt16 VolumeNameLength, UnicodeString VolumeName)			task_0	Error		
-Microsoft-Windows-Kernel-IO	1207	0	task_01207(UInt32 DumpEncryptionFailureReason)			task_0	Error		
-Microsoft-Windows-Kernel-IO	1212	0	task_01212(UInt16 NameLength, UnicodeString Name, HexInt32 Status)			task_0	Error		
-Microsoft-Windows-Kernel-IO	1213	0	task_01213(UInt16 FilterNameLength, UnicodeString FilterName, UInt16 VolumeNameLength, UnicodeString VolumeName)			task_0	Error		
-Microsoft-Windows-Kernel-IO	1300	0	LoadBootHotPatchesStart()	Start	HotPatch	LoadBootHotPatches	Informational		
-Microsoft-Windows-Kernel-IO	1301	0	LoadBootHotPatchesStop()	Stop	HotPatch	LoadBootHotPatches	Informational		
-Microsoft-Windows-Kernel-IO	1302	0	WheaInitializeStart(UInt32 Phase)	Start	BootPerf	WheaInitialize	Informational		
-Microsoft-Windows-Kernel-IO	1303	0	WheaInitializeStop()	Stop	BootPerf	WheaInitialize	Informational		
-Microsoft-Windows-Kernel-IO	1304	0	CrashDumpInitializeStart()	Start	BootPerf	CrashDumpInitialize	Informational		
-Microsoft-Windows-Kernel-IO	1305	0	CrashDumpInitializeStop(UInt32 Status)	Stop	BootPerf	CrashDumpInitialize	Informational		
+Microsoft-Windows-Kernel-IO	1	0	Event_1_Start(GUID VolumeGuid, UInt16 VolumeNameLength, UnicodeString VolumeName)	Start		task_0	Informational	Microsoft-Windows-Kernel-IO/Operational	Windows has started processing the volume mount request.\r\n\r\n           Volume GUID: %1\r\n           Volume Name: %3
+Microsoft-Windows-Kernel-IO	2	0	Event_2_Stop(GUID VolumeGuid, UInt16 VolumeNameLength, UnicodeString VolumeName)	Stop		task_0	Informational	Microsoft-Windows-Kernel-IO/Operational	The volume has been successfully mounted.\r\n\r\n           Volume GUID: %1\r\n           Volume Name: %3
+Microsoft-Windows-Kernel-IO	3	0	Event_3_Stop(GUID VolumeGuid, UInt16 VolumeNameLength, UnicodeString VolumeName, HexInt32 Error)	Stop		task_0	Warning	Microsoft-Windows-Kernel-IO/Operational	Windows failed to mount the volume.\r\n\r\n           Status: %4\r\n           Volume GUID: %1\r\n           Volume Name: %3

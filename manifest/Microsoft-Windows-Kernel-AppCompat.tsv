@@ -1,19 +1,16 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-Kernel-AppCompat	1	0	task_0(UInt16 ExecutablePathLength, UnicodeString ExecutablePath, UInt16 RegistryPathLength, UnicodeString RegistryPath)		RegWrpAccessDenied	task_0	Informational		
-Microsoft-Windows-Kernel-AppCompat	2	0	CompatCacheInitStart()	Start		CompatCacheInit	Informational		
-Microsoft-Windows-Kernel-AppCompat	3	0	CompatCacheInitStop(HexInt32 StatusCode)	Stop		CompatCacheInit	Informational		
-Microsoft-Windows-Kernel-AppCompat	4	0	CompatCacheUpdateStart()	Start		CompatCacheUpdate	Informational		
-Microsoft-Windows-Kernel-AppCompat	5	0	CompatCacheUpdateStop(HexInt32 StatusCode)	Stop		CompatCacheUpdate	Informational		
-Microsoft-Windows-Kernel-AppCompat	6	0	CompatCacheQueryStart()	Start		CompatCacheQuery	Informational		
-Microsoft-Windows-Kernel-AppCompat	7	0	CompatCacheQueryStop(HexInt32 StatusCode)	Stop		CompatCacheQuery	Informational		
-Microsoft-Windows-Kernel-AppCompat	8	0	CompatCdbQueryStart()	Start		CompatCdbQuery	Informational		
-Microsoft-Windows-Kernel-AppCompat	9	0	CompatCdbQueryStop(HexInt32 StatusCode)	Stop		CompatCdbQuery	Informational		
-Microsoft-Windows-Kernel-AppCompat	10	0	CompatMapQuirksStart()	Start		CompatMapQuirks	Informational		
-Microsoft-Windows-Kernel-AppCompat	11	0	CompatMapQuirksStop(HexInt32 StatusCode)	Stop		CompatMapQuirks	Informational		
-Microsoft-Windows-Kernel-AppCompat	12	0	CompatUserModeQueryStart()	Start		CompatUserModeQuery	Informational		
-Microsoft-Windows-Kernel-AppCompat	13	0	CompatUserModeQueryStop(HexInt32 StatusCode)	Stop		CompatUserModeQuery	Informational		
-Microsoft-Windows-Kernel-AppCompat	14	0	CompatSdbQueryStart()	Start		CompatSdbQuery	Informational		
-Microsoft-Windows-Kernel-AppCompat	15	0	CompatSdbQueryStop(HexInt32 StatusCode)	Stop		CompatSdbQuery	Informational		
-Microsoft-Windows-Kernel-AppCompat	16	0	CompatCacheQueryProcessStart()	Start		CompatCacheQueryProcess	Informational		
-Microsoft-Windows-Kernel-AppCompat	17	0	CompatCacheQueryProcessStop(HexInt32 StatusCode)	Stop		CompatCacheQueryProcess	Informational		
-Microsoft-Windows-Kernel-AppCompat	18	0	task_018(UInt16 KeyNameLength, UnicodeString KeyName, UInt16 ParentKeyNameLength, UnicodeString ParentKeyName)			task_0	Error		
+Microsoft-Windows-Kernel-AppCompat	1	0	Event_1(UInt16 ExecutablePathLength, UnicodeString ExecutablePath, UInt16 RegistryPathLength, UnicodeString RegistryPath)		RegWrpAccessDenied	task_0	Informational	Microsoft-Windows-Kernel-AppCompat/General	The executable %2 received an access denied error when trying to modify the registry key %4.
+Microsoft-Windows-Kernel-AppCompat	2	0	CompatCacheInitStart()	Start		CompatCacheInit	Informational	Microsoft-Windows-Kernel-AppCompat/Performance	
+Microsoft-Windows-Kernel-AppCompat	3	0	CompatCacheInitStop(HexInt32 StatusCode)	Stop		CompatCacheInit	Informational	Microsoft-Windows-Kernel-AppCompat/Performance	
+Microsoft-Windows-Kernel-AppCompat	4	0	CompatCacheUpdateStart()	Start		CompatCacheUpdate	Informational	Microsoft-Windows-Kernel-AppCompat/Performance	
+Microsoft-Windows-Kernel-AppCompat	5	0	CompatCacheUpdateStop(HexInt32 StatusCode)	Stop		CompatCacheUpdate	Informational	Microsoft-Windows-Kernel-AppCompat/Performance	
+Microsoft-Windows-Kernel-AppCompat	6	0	CompatCacheQueryStart()	Start		CompatCacheQuery	Informational	Microsoft-Windows-Kernel-AppCompat/Performance	
+Microsoft-Windows-Kernel-AppCompat	7	0	CompatCacheQueryStop(HexInt32 StatusCode)	Stop		CompatCacheQuery	Informational	Microsoft-Windows-Kernel-AppCompat/Performance	
+Microsoft-Windows-Kernel-AppCompat	8	0	CompatCdbQueryStart()	Start		CompatCdbQuery	Informational	Microsoft-Windows-Kernel-AppCompat/Performance	
+Microsoft-Windows-Kernel-AppCompat	9	0	CompatCdbQueryStop(HexInt32 StatusCode)	Stop		CompatCdbQuery	Informational	Microsoft-Windows-Kernel-AppCompat/Performance	
+Microsoft-Windows-Kernel-AppCompat	10	0	CompatMapQuirksStart()	Start		CompatMapQuirks	Informational	Microsoft-Windows-Kernel-AppCompat/Performance	
+Microsoft-Windows-Kernel-AppCompat	11	0	CompatMapQuirksStop(HexInt32 StatusCode)	Stop		CompatMapQuirks	Informational	Microsoft-Windows-Kernel-AppCompat/Performance	
+Microsoft-Windows-Kernel-AppCompat	12	0	CompatUserModeQueryStart()	Start		CompatUserModeQuery	Informational	Microsoft-Windows-Kernel-AppCompat/Performance	
+Microsoft-Windows-Kernel-AppCompat	13	0	CompatUserModeQueryStop(HexInt32 StatusCode)	Stop		CompatUserModeQuery	Informational	Microsoft-Windows-Kernel-AppCompat/Performance	
+Microsoft-Windows-Kernel-AppCompat	14	0	CompatSdbQueryStart()	Start		CompatSdbQuery	Informational	Microsoft-Windows-Kernel-AppCompat/Performance	
+Microsoft-Windows-Kernel-AppCompat	15	0	CompatSdbQueryStop(HexInt32 StatusCode)	Stop		CompatSdbQuery	Informational	Microsoft-Windows-Kernel-AppCompat/Performance	

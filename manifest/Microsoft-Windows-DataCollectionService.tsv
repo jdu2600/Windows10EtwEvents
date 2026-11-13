@@ -1,0 +1,28 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-DataCollectionService	10	0	Event_10(UInt32 dwTag, UInt32 dwError)		Error	task_0	Error		DCP: Tag:[%1], Error=[%2]
+Microsoft-Windows-DataCollectionService	11	0	Event_11(UInt32 dwTag, UInt32 hr)		Error	task_0	Error		DCP: Tag:[%1], hr=[%2]
+Microsoft-Windows-DataCollectionService	12	0	Event_12(UInt32 dwTag, UInt32 dwError)		Error	task_0	Warning		DCP: Tag:[%1], Error=[%2]
+Microsoft-Windows-DataCollectionService	13	0	Event_13(UInt32 dwTag, UInt32 hr)		Error	task_0	Warning		DCP: Tag:[%1], hr=[%2]
+Microsoft-Windows-DataCollectionService	14	0	Event_14(UInt32 dwTag)		Verbose	task_0	Informational		DCP: Tag:[%1]
+Microsoft-Windows-DataCollectionService	15	0	Event_15(UInt32 dwTag, UInt32 nInt)		Verbose	task_0	Informational		DCP: Tag:[%1], n=[%2]
+Microsoft-Windows-DataCollectionService	16	0	Event_16(UInt32 dwTag, UnicodeString strString)		Verbose	task_0	Informational		DCP: Tag:[%1], str=[%2]
+Microsoft-Windows-DataCollectionService	17	0	Event_17(UInt32 dwTag, UnicodeString strString, UInt32 nInt)		Verbose	task_0	Informational		DCP: Tag:[%1], str=[%2], n=[%3]
+Microsoft-Windows-DataCollectionService	18	0	Event_18(UInt32 dwTag, UnicodeString strString1, UnicodeString strString2)		Verbose	task_0	Informational		DCP: Tag:[%1], str1=[%2], str2=[%3]
+Microsoft-Windows-DataCollectionService	19	0	Event_19(UInt32 dwTag, UInt32 nInt, UnicodeString strString)		Error	task_0	Error		DCP: Tag:[%1], Error=[%2], str=[%3]
+Microsoft-Windows-DataCollectionService	20	0	Event_20(UInt32 dwTag, UInt32 nInt1, UInt32 nInt2)		Error	task_0	Error		DCP: Tag:[%1], Error=[%2], n=[%3]
+Microsoft-Windows-DataCollectionService	100	0	Event_100()		Verbose	task_0	Informational		Enter uploader thread
+Microsoft-Windows-DataCollectionService	101	0	Event_101()		Verbose	task_0	Informational		Exit uploader thread
+Microsoft-Windows-DataCollectionService	102	0	Event_102()		Verbose	task_0	Informational		Enter Drainer thread
+Microsoft-Windows-DataCollectionService	103	0	Event_103()		Verbose	task_0	Informational		Exit Drainer thread
+Microsoft-Windows-DataCollectionService	104	0	Event_104(UInt32 dwError, UInt8 bFailureReason)		Verbose	task_0	Informational		Upload session result. Error=%1, FailureReason=%2
+Microsoft-Windows-DataCollectionService	105	0	Event_105(UInt32 dwError, UnicodeString szServerName)		Verbose	task_0	Verbose		Uploader WinINet connect. Error=%1, ServerName=%2
+Microsoft-Windows-DataCollectionService	106	0	Event_106(UnicodeString szSettingName)		Error	task_0	Error		Invalid registry setting for %1
+Microsoft-Windows-DataCollectionService	120	0	CrowdsourcingService_PrepareUploadStart()	Start	Performance	CrowdsourcingService_PrepareUpload	Informational		CrowdsourcingService PrepareUpload Start
+Microsoft-Windows-DataCollectionService	121	0	CrowdsourcingService_PrepareUploadStop()	Stop	Performance	CrowdsourcingService_PrepareUpload	Informational		CrowdsourcingService PrepareUpload Stop
+Microsoft-Windows-DataCollectionService	130	0	CrowdsourcingService_UploadFilesStart(UInt8 bTriggerSource)	Start	Performance	CrowdsourcingService_UploadFiles	Informational		CrowdsourcingService UploadFiles Start. TriggerSource=%1
+Microsoft-Windows-DataCollectionService	131	0	CrowdsourcingService_UploadFilesStop(UInt32 dwNumFilesUploaded)	Stop	Performance	CrowdsourcingService_UploadFiles	Informational		CrowdsourcingService UploadFiles Stop. NumFilesUploaded=%1
+Microsoft-Windows-DataCollectionService	132	0	CrowdsourcingService_ReadDataFileStart(UnicodeString szHttpObjectNames, UnicodeString szFullpath)	Start	Performance	CrowdsourcingService_ReadDataFile	Verbose		CrowdsourcingService ReadDataFileStart Start. HttpObjectName=%1, FileFullpath=%2
+Microsoft-Windows-DataCollectionService	133	0	CrowdsourcingService_ReadDataFileStop(UInt32 dwError, UInt32 cbFileSize, UInt32 cbRead)	Stop	Performance	CrowdsourcingService_ReadDataFile	Verbose		CrowdsourcingService ReadDataFileStart Stop. Error=%1, FileSize=%2, BytesRead=%3
+Microsoft-Windows-DataCollectionService	134	0	CrowdsourcingService_PostDataFileStart(UnicodeString szHttpObjectName, UInt32 cchHeader, UInt32 cchBody, UnicodeString szHeaders)	Start	Performance	CrowdsourcingService_PostDataFile	Verbose		CrowdsourcingService PostDataFileStart Start. HttpObjectName=%1, HeaderLength=%2, BodyLength=%3, Headers=%4
+Microsoft-Windows-DataCollectionService	135	0	CrowdsourcingService_PostDataFileStop(UInt32 dwError, UInt32 dwHttpStatusCode)	Stop	Performance	CrowdsourcingService_PostDataFile	Verbose		CrowdsourcingService PostDataFileStop  Stop. Error=%1, HttpStatusCode=%2
+Microsoft-Windows-DataCollectionService	136	0	CrowdsourcingService_RecieveDataStart(GUID guidSessionId, UInt32 dwPayloadSize)	Start	Performance	CrowdsourcingService_RecieveData	Verbose		CrowdsourcingService Original SessionId=%1, PayloadSize=%2

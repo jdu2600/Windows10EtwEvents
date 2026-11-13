@@ -1,5 +1,3 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-NetJoin	4096	0	task_0(UnicodeString DomainName, UnicodeString ComputerName)			task_0	Informational		
-NetJoin	4097	0	task_04097(UnicodeString DomainName, UnicodeString ComputerName, UInt32 NetStatusCode)			task_0	Error		
-NetJoin	4100	0	task_04100(UnicodeString DomainName, UnicodeString ComputerName)			task_0	Informational		
-NetJoin	4101	0	task_04101(UnicodeString DomainName, UnicodeString ComputerName, UInt32 NetStatusCode)			task_0	Error		
+NetJoin	4096	0	Event_4096(UnicodeString DomainName, UnicodeString ComputerName)			task_0	Informational	System	The machine %2 successfully joined the domain %1.
+NetJoin	4097	0	Event_4097(UnicodeString DomainName, UnicodeString ComputerName, UInt32 NetStatusCode)			task_0	Error	System	The machine %2 attempted to join the domain %1 but failed. The error code was %3.

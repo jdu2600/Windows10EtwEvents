@@ -1,20 +1,20 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-FileHistory-Engine	1	0	UsnJournalScanStart()	Start		UsnJournalScan	Always		
-Microsoft-Windows-FileHistory-Engine	2	0	UsnJournalScanStop()	Stop		UsnJournalScan	Always		
-Microsoft-Windows-FileHistory-Engine	3	0	BackupOneFileStart(UnicodeString SourcePath, UnicodeString DestPath, Int64 Size)	Start		BackupOneFile	Always		
-Microsoft-Windows-FileHistory-Engine	4	0	BackupOneFileStop(UnicodeString SourcePath, UnicodeString DestPath, Int64 Size)	Stop		BackupOneFile	Always		
-Microsoft-Windows-FileHistory-Engine	5	0	BackupAllFilesStart()	Start		BackupAllFiles	Always		
-Microsoft-Windows-FileHistory-Engine	6	0	BackupAllFilesStop(Int64 TotalSize, UInt64 TotalFiles)	Stop		BackupAllFiles	Always		
-Microsoft-Windows-FileHistory-Engine	7	0	CatalogFlushStart()	Start		CatalogFlush	Always		
-Microsoft-Windows-FileHistory-Engine	8	0	CatalogFlushStop()	Stop		CatalogFlush	Always		
-Microsoft-Windows-FileHistory-Engine	9	0	BackupSizeQuotaChange(UInt64 OldQuota, UInt64 NewQuota)			BackupSizeQuotaChange	Always		
-Microsoft-Windows-FileHistory-Engine	10	0	UsnEventProcessingStart()	Start		UsnEventProcessing	Always		
-Microsoft-Windows-FileHistory-Engine	11	0	UsnEventProcessingStop()	Stop		UsnEventProcessing	Always		
-Microsoft-Windows-FileHistory-Engine	12	0	ScanAndBackupStart()	Start		ScanAndBackup	Always		
-Microsoft-Windows-FileHistory-Engine	13	0	ScanAndBackupStop()	Stop		ScanAndBackup	Always		
-Microsoft-Windows-FileHistory-Engine	100	0	task_0(UnicodeString Path)			task_0	Error		
-Microsoft-Windows-FileHistory-Engine	101	0	task_0101(UnicodeString Path)			task_0	Error		
-Microsoft-Windows-FileHistory-Engine	102	0	task_0102(UnicodeString Path, UInt32 Hr)			task_0	Error		
-Microsoft-Windows-FileHistory-Engine	103	0	task_0103(UnicodeString Path, UInt32 Hr)			task_0	Warning		
-Microsoft-Windows-FileHistory-Engine	104	0	task_0104(UnicodeString Path)			task_0	Warning		
-Microsoft-Windows-FileHistory-Engine	105	0	task_0105(UnicodeString Path)			task_0	Informational		
+Microsoft-Windows-FileHistory-Engine	1	0	UsnJournalScanStart()	Start		UsnJournalScan	Always	Microsoft-Windows-FileHistory-Engine/Debug	
+Microsoft-Windows-FileHistory-Engine	2	0	UsnJournalScanStop()	Stop		UsnJournalScan	Always	Microsoft-Windows-FileHistory-Engine/Debug	
+Microsoft-Windows-FileHistory-Engine	3	0	BackupOneFileStart(UnicodeString SourcePath, UnicodeString DestPath, Int64 Size)	Start		BackupOneFile	Always	Microsoft-Windows-FileHistory-Engine/Debug	
+Microsoft-Windows-FileHistory-Engine	4	0	BackupOneFileStop(UnicodeString SourcePath, UnicodeString DestPath, Int64 Size)	Stop		BackupOneFile	Always	Microsoft-Windows-FileHistory-Engine/Debug	
+Microsoft-Windows-FileHistory-Engine	5	0	BackupAllFilesStart()	Start		BackupAllFiles	Always	Microsoft-Windows-FileHistory-Engine/Debug	
+Microsoft-Windows-FileHistory-Engine	6	0	BackupAllFilesStop(Int64 TotalSize, UInt64 TotalFiles)	Stop		BackupAllFiles	Always	Microsoft-Windows-FileHistory-Engine/Debug	
+Microsoft-Windows-FileHistory-Engine	7	0	CatalogFlushStart()	Start		CatalogFlush	Always	Microsoft-Windows-FileHistory-Engine/Debug	
+Microsoft-Windows-FileHistory-Engine	8	0	CatalogFlushStop()	Stop		CatalogFlush	Always	Microsoft-Windows-FileHistory-Engine/Debug	
+Microsoft-Windows-FileHistory-Engine	9	0	BackupSizeQuotaChange(UInt64 OldQuota, UInt64 NewQuota)			BackupSizeQuotaChange	Always	Microsoft-Windows-FileHistory-Engine/Debug	
+Microsoft-Windows-FileHistory-Engine	10	0	UsnEventProcessingStart()	Start		UsnEventProcessing	Always	Microsoft-Windows-FileHistory-Engine/Debug	
+Microsoft-Windows-FileHistory-Engine	11	0	UsnEventProcessingStop()	Stop		UsnEventProcessing	Always	Microsoft-Windows-FileHistory-Engine/Debug	
+Microsoft-Windows-FileHistory-Engine	12	0	ScanAndBackupStart()	Start		ScanAndBackup	Always	Microsoft-Windows-FileHistory-Engine/Debug	
+Microsoft-Windows-FileHistory-Engine	13	0	ScanAndBackupStop()	Stop		ScanAndBackup	Always	Microsoft-Windows-FileHistory-Engine/Debug	
+Microsoft-Windows-FileHistory-Engine	100	0	Event_100(UnicodeString Path)			task_0	Error	Microsoft-Windows-FileHistory-Engine/BackupLog	File was not backed up due to its full path exceeding MAX_PATH limit or containing unsupported characters:\r\r%1\r\rIf you want it to be protected, try using different directory and file names.
+Microsoft-Windows-FileHistory-Engine	101	0	Event_101(UnicodeString Path)			task_0	Error	Microsoft-Windows-FileHistory-Engine/BackupLog	File/directory was not backed up due to being encrypted or insufficient permissions:\r\r%1\r\rIf you want it to be protected, remove encryption or ask your system administrator to give you access to this file/directory.
+Microsoft-Windows-FileHistory-Engine	102	0	Event_102(UnicodeString Path, UInt32 Hr)			task_0	Error	Microsoft-Windows-FileHistory-Engine/BackupLog	File was not backed up due to an error:\r\r%1\r\rWindows will not attempt to back up the file again, unless it is modified.
+Microsoft-Windows-FileHistory-Engine	103	0	Event_103(UnicodeString Path, UInt32 Hr)			task_0	Warning	Microsoft-Windows-FileHistory-Engine/BackupLog	File was not backed up due to an error:\r\r%1\r\rWindows will attempt to back up the file at a later time.
+Microsoft-Windows-FileHistory-Engine	104	0	Event_104(UnicodeString Path)			task_0	Warning	Microsoft-Windows-FileHistory-Engine/BackupLog	File was not backed up due to being open by an application:\r\r%1\r\rWindows will attempt to back up the file at a later time.
+Microsoft-Windows-FileHistory-Engine	105	0	Event_105(UnicodeString Path)			task_0	Informational	Microsoft-Windows-FileHistory-Engine/BackupLog	File was successfully backed up:\r\r%1

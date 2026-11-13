@@ -22,34 +22,34 @@ Microsoft-Windows-Superfetch	1019	1	PerfTrackNonPagedPoolFrag_V1(UInt32 Fragment
 Microsoft-Windows-Superfetch	1020	1	PerfTrackPagedPoolFrag_V1(UInt32 Fragmentation, UInt32 AllocPages, UInt32 CommitPages, UInt32 ActivePages)			PerfTrackPagedPoolFrag	Informational		
 Microsoft-Windows-Superfetch	1021	1	PerfTrackSessionPoolFrag_V1(UInt32 Fragmentation, UInt32 AllocPages, UInt32 CommitPages, UInt32 ActivePages)			PerfTrackSessionPoolFrag	Informational		
 Microsoft-Windows-Superfetch	1038	1	PerfTrackHandleCounts_V1(UInt32 Processes, UInt32 Handles, UInt32 Objects, UInt32 Threads)			PerfTrackHandleCounts	Informational		
-Microsoft-Windows-Superfetch	1039	1	PredictorQuery_V1(HexInt32 AppKey, UInt32 PredictionPurpose, Double Probability)		PfAp	PredictorQuery	Informational		
-Microsoft-Windows-Superfetch	1040	1	PrelaunchHeartBeatStart_V1()	Start	PfAp	PrelaunchHeartBeat	Informational		
-Microsoft-Windows-Superfetch	1041	2	PrelaunchHeartBeatStop_V2(HexInt32 Result)	Stop	PfAp	PrelaunchHeartBeat	Informational		
-Microsoft-Windows-Superfetch	1042	1	PrelaunchPredictorQuery_V1(HexInt32 AppKey, UnicodeString AUMID)		PfAp	PrelaunchPredictorQuery	Informational		
-Microsoft-Windows-Superfetch	1043	1	PrelaunchStart_V1(UInt32 Reason, UnicodeString AUMID)	Start	PfAp	Prelaunch	Informational		
-Microsoft-Windows-Superfetch	1044	1	PrelaunchStop_V1(HexInt32 HResult)	Stop	PfAp	Prelaunch	Informational		
-Microsoft-Windows-Superfetch	1045	1	PrelaunchEnqueue_V1(UInt32 Reason, UnicodeString AUMID)		PfAp	PrelaunchEnqueue	Informational		
-Microsoft-Windows-Superfetch	1046	1	PrelaunchDequeue_V1(UInt32 SecondsSpentInQueue, UnicodeString AUMID, UInt32 Reason, HexInt32 HRESULT)		PfAp	PrelaunchDequeue	Informational		
-Microsoft-Windows-Superfetch	1047	1	PrelaunchWorkerStart_V1()	Start	PfAp	PrelaunchWorker	Informational		
-Microsoft-Windows-Superfetch	1048	2	PrelaunchWorkerStop_V2(HexInt32 Result)	Stop	PfAp	PrelaunchWorker	Informational		
-Microsoft-Windows-Superfetch	1049	1	PrelaunchProcessCommand_V1(UInt32 CommandCode, UnicodeString AUMID)		PfAp	PrelaunchProcessCommand	Informational		
-Microsoft-Windows-Superfetch	1050	1	PrelaunchIdleCheck_V1(UInt32 CPUUtilization, UInt32 DiskUtilization, UInt32 GPUUtilization, UInt32 AvailableMemory, UInt32 ModifiedMemory, Boolean OkToPrelaunch)		PfAp	PrelaunchIdleCheck	Informational		
+Microsoft-Windows-Superfetch	1039	1	PredictorQuery_V1(HexInt32 AppKey, UInt32 PredictionPurpose, Double Probability)		PfAp	PredictorQuery	Informational	Microsoft-Windows-Superfetch/PfApLog	
+Microsoft-Windows-Superfetch	1040	1	PrelaunchHeartBeatStart_V1()	Start	PfAp	PrelaunchHeartBeat	Informational	Microsoft-Windows-Superfetch/PfApLog	
+Microsoft-Windows-Superfetch	1041	2	PrelaunchHeartBeatStop_V2(HexInt32 Result)	Stop	PfAp	PrelaunchHeartBeat	Informational	Microsoft-Windows-Superfetch/PfApLog	
+Microsoft-Windows-Superfetch	1042	1	PrelaunchPredictorQuery_V1(HexInt32 AppKey, UnicodeString AUMID)		PfAp	PrelaunchPredictorQuery	Informational	Microsoft-Windows-Superfetch/PfApLog	
+Microsoft-Windows-Superfetch	1043	1	PrelaunchStart_V1(UInt32 Reason, UnicodeString AUMID)	Start	PfAp	Prelaunch	Informational	Microsoft-Windows-Superfetch/PfApLog	
+Microsoft-Windows-Superfetch	1044	1	PrelaunchStop_V1(HexInt32 HResult)	Stop	PfAp	Prelaunch	Informational	Microsoft-Windows-Superfetch/PfApLog	
+Microsoft-Windows-Superfetch	1045	1	PrelaunchEnqueue_V1(UInt32 Reason, UnicodeString AUMID)		PfAp	PrelaunchEnqueue	Informational	Microsoft-Windows-Superfetch/PfApLog	
+Microsoft-Windows-Superfetch	1046	1	PrelaunchDequeue_V1(UInt32 SecondsSpentInQueue, UnicodeString AUMID, UInt32 Reason, HexInt32 HRESULT)		PfAp	PrelaunchDequeue	Informational	Microsoft-Windows-Superfetch/PfApLog	
+Microsoft-Windows-Superfetch	1047	1	PrelaunchWorkerStart_V1()	Start	PfAp	PrelaunchWorker	Informational	Microsoft-Windows-Superfetch/PfApLog	
+Microsoft-Windows-Superfetch	1048	2	PrelaunchWorkerStop_V2(HexInt32 Result)	Stop	PfAp	PrelaunchWorker	Informational	Microsoft-Windows-Superfetch/PfApLog	
+Microsoft-Windows-Superfetch	1049	1	PrelaunchProcessCommand_V1(UInt32 CommandCode, UnicodeString AUMID)		PfAp	PrelaunchProcessCommand	Informational	Microsoft-Windows-Superfetch/PfApLog	
+Microsoft-Windows-Superfetch	1050	1	PrelaunchIdleCheck_V1(UInt32 CPUUtilization, UInt32 DiskUtilization, UInt32 GPUUtilization, UInt32 AvailableMemory, UInt32 ModifiedMemory, Boolean OkToPrelaunch)		PfAp	PrelaunchIdleCheck	Informational	Microsoft-Windows-Superfetch/PfApLog	
 Microsoft-Windows-Superfetch	1051	0	PerfTrackModernWorkingSet(UInt32 PrivateWS, UInt32 TotalPrivate, UInt32 TotalWS, HexInt32 ProcessAgeMHiandAppStateLo, UnicodeString ProcessName)			PerfTrackModernWorkingSet	Informational		
-Microsoft-Windows-Superfetch	1052	1	PrefetchHeartBeatStart_V1(UInt8 BgTaskCountUnrestricted, UInt8 BgTaskCountACOnly)	Start	PfAp	PrefetchHeartBeat	Informational		
-Microsoft-Windows-Superfetch	1052	2	PrefetchHeartBeatStart_V2()	Start	PfAp	PrefetchHeartBeat	Informational		
-Microsoft-Windows-Superfetch	1053	2	PrefetchHeartBeatStop_V2(HexInt32 Result)	Stop	PfAp	PrefetchHeartBeat	Informational		
-Microsoft-Windows-Superfetch	1054	1	PrefetchPredictorQuery_V1(HexInt32 AppKey, UnicodeString FullPackageName, Boolean LongLookahead, Int16 BenefitScore)		PfAp	PrefetchPredictorQuery	Informational		
-Microsoft-Windows-Superfetch	1055	1	PrefetchScheduleTask_V1(HexInt32 AppKey, UnicodeString FullPackageName, UInt32 UsedConditions)		PfAp	PrefetchScheduleTask	Informational		
-Microsoft-Windows-Superfetch	1055	2	PrefetchScheduleTask_V2(HexInt32 AppKey, UnicodeString FullPackageName)		PfAp	PrefetchScheduleTask	Informational		
-Microsoft-Windows-Superfetch	1056	1	PostlaunchAppFail_V1(HexInt32 AppNameKey, UnicodeString AUMID, UInt8 NewFailCount, UInt32 LaunchResult, UInt8 Requeue, UInt32 AppStatus)		PfAp	PostlaunchAppFail	Informational		
-Microsoft-Windows-Superfetch	1057	1	AppSkip_V1(HexInt32 AppNameKey, UnicodeString AUMID, UInt32 AppSkipReason)		PfAp	AppSkip	Informational		
-Microsoft-Windows-Superfetch	1058	1	PrefetchBenefitReport_V1(HexInt32 AppKey, UnicodeString FullPackageName, UInt32 TimeFromPrefetchToSwitchInMS, Int16 NewBenefitScore, Int16 NewAggregateBenefitScore)		PfAp	PrefetchBenefitReport	Informational		
-Microsoft-Windows-Superfetch	1059	1	PrefetchIsCandidate_V1(HexInt32 AppKey, UnicodeString FullPackageName, UInt32 ReasonsNotToPrefetch)		PfAp	PrefetchIsCandidate	Informational		
-Microsoft-Windows-Superfetch	1060	1	PrefetchDecision_V1(HexInt32 AppKey, UnicodeString FullPackageName, Boolean ACPowered, Double Threshold, Double Probability)		PfAp	PrefetchDecision	Informational		
-Microsoft-Windows-Superfetch	1061	1	PrefetchStartCallback_V1(HexInt32 AppKey, UnicodeString FullPackageName, FILETIME PreviousPrefetchTime, UInt32 PrefetchCount)		PfAp	PrefetchStartCallback	Informational		
-Microsoft-Windows-Superfetch	1062	1	DeploymentCommand_V1(HexInt32 AppKey, UnicodeString AUMID, UInt32 Command, UInt32 AppType)		PfAp	DeploymentCommand	Informational		
-Microsoft-Windows-Superfetch	1063	1	FetchCommand_V1(HexInt32 AppKey, UnicodeString FullPackageName, UInt32 Command)		PfAp	FetchCommand	Informational		
-Microsoft-Windows-Superfetch	1064	1	AppUseCommand_V1(HexInt32 AppKey, UnicodeString FullPackageName, UInt32 PID)		PfAp	AppUseCommand	Informational		
-Microsoft-Windows-Superfetch	1065	1	PrelaunchAppCrash_V1(HexInt32 AppKey, UnicodeString AUMID)		PfAp	PrelaunchAppCrash	Informational		
+Microsoft-Windows-Superfetch	1052	1	PrefetchHeartBeatStart_V1(UInt8 BgTaskCountUnrestricted, UInt8 BgTaskCountACOnly)	Start	PfAp	PrefetchHeartBeat	Informational	Microsoft-Windows-Superfetch/PfApLog	
+Microsoft-Windows-Superfetch	1052	2	PrefetchHeartBeatStart_V2()	Start	PfAp	PrefetchHeartBeat	Informational	Microsoft-Windows-Superfetch/PfApLog	
+Microsoft-Windows-Superfetch	1053	2	PrefetchHeartBeatStop_V2(HexInt32 Result)	Stop	PfAp	PrefetchHeartBeat	Informational	Microsoft-Windows-Superfetch/PfApLog	
+Microsoft-Windows-Superfetch	1054	1	PrefetchPredictorQuery_V1(HexInt32 AppKey, UnicodeString FullPackageName, Boolean LongLookahead, Int16 BenefitScore)		PfAp	PrefetchPredictorQuery	Informational	Microsoft-Windows-Superfetch/PfApLog	
+Microsoft-Windows-Superfetch	1055	1	PrefetchScheduleTask_V1(HexInt32 AppKey, UnicodeString FullPackageName, UInt32 UsedConditions)		PfAp	PrefetchScheduleTask	Informational	Microsoft-Windows-Superfetch/PfApLog	
+Microsoft-Windows-Superfetch	1055	2	PrefetchScheduleTask_V2(HexInt32 AppKey, UnicodeString FullPackageName)		PfAp	PrefetchScheduleTask	Informational	Microsoft-Windows-Superfetch/PfApLog	
+Microsoft-Windows-Superfetch	1056	1	PostlaunchAppFail_V1(HexInt32 AppNameKey, UnicodeString AUMID, UInt8 NewFailCount, UInt32 LaunchResult, UInt8 Requeue, UInt32 AppStatus)		PfAp	PostlaunchAppFail	Informational	Microsoft-Windows-Superfetch/PfApLog	
+Microsoft-Windows-Superfetch	1057	1	AppSkip_V1(HexInt32 AppNameKey, UnicodeString AUMID, UInt32 AppSkipReason)		PfAp	AppSkip	Informational	Microsoft-Windows-Superfetch/PfApLog	
+Microsoft-Windows-Superfetch	1058	1	PrefetchBenefitReport_V1(HexInt32 AppKey, UnicodeString FullPackageName, UInt32 TimeFromPrefetchToSwitchInMS, Int16 NewBenefitScore, Int16 NewAggregateBenefitScore)		PfAp	PrefetchBenefitReport	Informational	Microsoft-Windows-Superfetch/PfApLog	
+Microsoft-Windows-Superfetch	1059	1	PrefetchIsCandidate_V1(HexInt32 AppKey, UnicodeString FullPackageName, UInt32 ReasonsNotToPrefetch)		PfAp	PrefetchIsCandidate	Informational	Microsoft-Windows-Superfetch/PfApLog	
+Microsoft-Windows-Superfetch	1060	1	PrefetchDecision_V1(HexInt32 AppKey, UnicodeString FullPackageName, Boolean ACPowered, Double Threshold, Double Probability)		PfAp	PrefetchDecision	Informational	Microsoft-Windows-Superfetch/PfApLog	
+Microsoft-Windows-Superfetch	1061	1	PrefetchStartCallback_V1(HexInt32 AppKey, UnicodeString FullPackageName, FILETIME PreviousPrefetchTime, UInt32 PrefetchCount)		PfAp	PrefetchStartCallback	Informational	Microsoft-Windows-Superfetch/PfApLog	
+Microsoft-Windows-Superfetch	1062	1	DeploymentCommand_V1(HexInt32 AppKey, UnicodeString AUMID, UInt32 Command, UInt32 AppType)		PfAp	DeploymentCommand	Informational	Microsoft-Windows-Superfetch/PfApLog	
+Microsoft-Windows-Superfetch	1063	1	FetchCommand_V1(HexInt32 AppKey, UnicodeString FullPackageName, UInt32 Command)		PfAp	FetchCommand	Informational	Microsoft-Windows-Superfetch/PfApLog	
+Microsoft-Windows-Superfetch	1064	1	AppUseCommand_V1(HexInt32 AppKey, UnicodeString FullPackageName, UInt32 PID)		PfAp	AppUseCommand	Informational	Microsoft-Windows-Superfetch/PfApLog	
+Microsoft-Windows-Superfetch	1065	1	PrelaunchAppCrash_V1(HexInt32 AppKey, UnicodeString AUMID)		PfAp	PrelaunchAppCrash	Informational	Microsoft-Windows-Superfetch/PfApLog	
 Microsoft-Windows-Superfetch	1066	1	PageCombiningStart_V1()	Start	Combine	PageCombining	Informational		
 Microsoft-Windows-Superfetch	1067	1	PageCombiningStop_V1(Pointer PagesCombined)	Stop	Combine	PageCombining	Informational		

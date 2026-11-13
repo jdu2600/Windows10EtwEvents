@@ -1,49 +1,13 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-TPM-WMI	513	0	task_0()			task_0	Informational		
-Microsoft-Windows-TPM-WMI	514	0	task_0514(HexInt32 ErrorCode)			task_0	Warning		
-Microsoft-Windows-TPM-WMI	515	0	task_0515()			task_0	Warning		
-Microsoft-Windows-TPM-WMI	516	0	task_0516()			task_0	Informational		
-Microsoft-Windows-TPM-WMI	517	0	task_0517(Int32 HResult)			task_0	Warning		
-Microsoft-Windows-TPM-WMI	518	0	task_0518(Int32 HResult)			task_0	Informational		
-Microsoft-Windows-TPM-WMI	519	0	task_0519(UnicodeString ClearReason)			task_0	Informational		
-Microsoft-Windows-TPM-WMI	769	0	task_0769(UInt32 OldOSManagedAuthLevel, UInt32 NewOSManagedAuthLevel)			task_0	Informational		
-Microsoft-Windows-TPM-WMI	1025	0	task_01025()			task_0	Informational		
-Microsoft-Windows-TPM-WMI	1026	0	task_01026(Int32 ErrorCode, HexInt32 StatusInformation)			task_0	Informational		
-Microsoft-Windows-TPM-WMI	1027	0	task_01027()			task_0	Informational		
-Microsoft-Windows-TPM-WMI	1028	0	task_01028()			task_0	Informational		
-Microsoft-Windows-TPM-WMI	1029	0	task_01029(HexInt32 ErrorCode)			task_0	Informational		
-Microsoft-Windows-TPM-WMI	1030	0	task_01030()			task_0	Informational		
-Microsoft-Windows-TPM-WMI	1031	0	task_01031(HexInt32 ErrorCode)			task_0	Informational		
-Microsoft-Windows-TPM-WMI	1032	0	task_01032()			task_0	Error		
-Microsoft-Windows-TPM-WMI	1033	0	task_01033(UnicodeString Path)			task_0	Error		
-Microsoft-Windows-TPM-WMI	1034	0	task_01034()			task_0	Informational		
-Microsoft-Windows-TPM-WMI	1035	0	task_01035()			task_0	Informational		
-Microsoft-Windows-TPM-WMI	1036	0	task_01036()			task_0	Informational		
-Microsoft-Windows-TPM-WMI	1037	0	task_01037()			task_0	Informational		
-Microsoft-Windows-TPM-WMI	1038	0	task_01038(UnicodeString Path)			task_0	Informational		
-Microsoft-Windows-TPM-WMI	1039	0	task_01039(UnicodeString Path)			task_0	Informational		
-Microsoft-Windows-TPM-WMI	1040	0	task_01040(UnicodeString Path)			task_0	Error		
-Microsoft-Windows-TPM-WMI	1041	0	task_01041(UnicodeString Json)			task_0	Informational		
-Microsoft-Windows-TPM-WMI	1042	0	task_01042()			task_0	Informational		
-Microsoft-Windows-TPM-WMI	1043	0	task_01043()			task_0	Informational		
-Microsoft-Windows-TPM-WMI	1044	0	task_01044()			task_0	Informational		
-Microsoft-Windows-TPM-WMI	1045	0	task_01045()			task_0	Informational		
-Microsoft-Windows-TPM-WMI	1281	0	task_01281()			task_0	Informational		
-Microsoft-Windows-TPM-WMI	1282	0	task_01282()			task_0	Informational		
-Microsoft-Windows-TPM-WMI	1283	0	task_01283()			task_0	Informational		
-Microsoft-Windows-TPM-WMI	1284	0	task_01284(UInt32 Millisecondstaken)			task_0	Informational		
-Microsoft-Windows-TPM-WMI	1285	0	task_01285(UInt32 Millisecondstaken, Int32 ErrorCode)			task_0	Informational		
-Microsoft-Windows-TPM-WMI	1537	0	task_01537(UnicodeString HealthAttestationServer)			task_0	Informational		
-Microsoft-Windows-TPM-WMI	1538	0	task_01538(UnicodeString HealthAttestationServer, Int32 HResult)			task_0	Warning		
-Microsoft-Windows-TPM-WMI	1539	0	task_01539(UnicodeString HealthAttestationServer, Int32 HTTPStatus, UnicodeString ServerResponse)			task_0	Warning		
-Microsoft-Windows-TPM-WMI	1793	0	task_01793()			task_0	Informational		
-Microsoft-Windows-TPM-WMI	1794	0	task_01794()			task_0	Error		
-Microsoft-Windows-TPM-WMI	1795	1	task_01795_V1(Int32 HResult)			task_0	Error		
-Microsoft-Windows-TPM-WMI	1795	2	task_01795_V2(Int32 HResult, Int32 UpdateType)			task_0	Error		
-Microsoft-Windows-TPM-WMI	1796	1	task_01796_V1(Int32 HResult)			task_0	Error		
-Microsoft-Windows-TPM-WMI	1796	2	task_01796_V2(Int32 HResult, Int32 UpdateType)			task_0	Error		
-Microsoft-Windows-TPM-WMI	1797	0	task_01797()			task_0	Error		
-Microsoft-Windows-TPM-WMI	1798	0	task_01798()			task_0	Error		
-Microsoft-Windows-TPM-WMI	1799	0	task_01799()			task_0	Informational		
-Microsoft-Windows-TPM-WMI	1800	1	task_01800_V1(Int32 RebootReason)			task_0	Warning		
-Microsoft-Windows-TPM-WMI	1800	2	task_01800_V2(Int32 UpdateType)			task_0	Warning		
+Microsoft-Windows-TPM-WMI	513	0	Event_513()			task_0	Informational	System	TPM Owner Authorization information was backed up successfully to Active Directory Domain Services.
+Microsoft-Windows-TPM-WMI	514	0	Event_514(HexInt32 ErrorCode)			task_0	Warning	System	Failed to backup TPM Owner Authorization information to Active Directory Domain Services.\r\nErrorcode: %1\r\nCheck that your computer is connected to the domain.  If your computer is connected to the domain, have your Domain Administrator check that the Active Directory schema is appropriate for backup of Windows 8 TPM Owner Authorization information and that the current Computer object has write permission to the TPM object.  Installations of Windows Server 2008 R2 or before need a schema extension in order to be ready for backup of Windows 8 TPM Owner Authorization information.  Consult online documentation for more information about setting up Active Directory Domain Services for TPM.
+Microsoft-Windows-TPM-WMI	769	0	Event_769(UInt32 OldOSManagedAuthLevel, UInt32 NewOSManagedAuthLevel)			task_0	Informational	System	TPM Owner Authorization configuration changed from '%1' to '%2'.
+Microsoft-Windows-TPM-WMI	1025	0	Event_1025()			task_0	Informational	System	The TPM was successfully provisioned and is now ready for use.
+Microsoft-Windows-TPM-WMI	1026	0	Event_1026(Int32 ErrorCode, HexInt32 StatusInformation)			task_0	Informational	System	The Trusted Platform Module (TPM) hardware on this computer cannot be provisioned for use automatically.  To set up the TPM interactively use the TPM management console (Start->tpm.msc) and use the action to make the TPM ready.\r\n\r\nError: %1\r\nAdditional Information: %2
+Microsoft-Windows-TPM-WMI	1027	0	Event_1027()			task_0	Informational	System	The Ownership of the Trusted Platform Module (TPM) hardware on this computer was successfully taken (TPM TakeOwnership command) by the system.
+Microsoft-Windows-TPM-WMI	1028	0	Event_1028()			task_0	Informational	System	The NGC key generation task was successfully triggered.
+Microsoft-Windows-TPM-WMI	1029	0	Event_1029(HexInt32 ErrorCode)			task_0	Informational	System	The triggering of the NGC key generation task failed.
+Microsoft-Windows-TPM-WMI	1030	0	Event_1030()			task_0	Informational	System	The NGC certificate enrollment task was successfully triggered.
+Microsoft-Windows-TPM-WMI	1031	0	Event_1031(HexInt32 ErrorCode)			task_0	Informational	System	The triggering of the NGC certificate enrollment task failed.
+Microsoft-Windows-TPM-WMI	1281	0	Event_1281()			task_0	Informational	System	This event triggers the TBS device identifier generation.
+Microsoft-Windows-TPM-WMI	1282	0	Event_1282()			task_0	Informational	System	The TBS device identifier has been generated.

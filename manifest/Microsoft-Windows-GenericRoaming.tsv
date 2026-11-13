@@ -1,6 +1,6 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-GenericRoaming	3	0	SettingHandlerTask(UnicodeString CollectionId, UnicodeString UnitId, Int32 HResultFailure)			SettingHandlerTask	Error		
-Microsoft-Windows-GenericRoaming	4	0	SettingHandlerTask4(UnicodeString CollectionId, UnicodeString UnitId, Int32 HResultFailure)			SettingHandlerTask	Error		
-Microsoft-Windows-GenericRoaming	5	0	SettingHandlerTask5(UnicodeString CollectionId, UnicodeString UnitId, Int32 HResultFailure)			SettingHandlerTask	Error		
-Microsoft-Windows-GenericRoaming	6	0	SettingHandlerTask6(UnicodeString CollectionId, Int32 HResultFailure)			SettingHandlerTask	Error		
-Microsoft-Windows-GenericRoaming	7	0	TriggerSyncTask(UnicodeString Username, Int32 HResultFailure)			TriggerSyncTask	Error		
+Microsoft-Windows-GenericRoaming	3	0	SettingHandlerTask(UnicodeString CollectionId, UnicodeString UnitId, Int32 HResultFailure)			SettingHandlerTask	Error	Microsoft-Windows-GenericRoaming/Admin	There was an error while applying setting unit %2 for roaming collection %1. %3
+Microsoft-Windows-GenericRoaming	4	0	SettingHandlerTask4(UnicodeString CollectionId, UnicodeString UnitId, Int32 HResultFailure)			SettingHandlerTask	Error	Microsoft-Windows-GenericRoaming/Admin	There was an error while getting setting unit %2 for roaming collection %1. %3
+Microsoft-Windows-GenericRoaming	5	0	SettingHandlerTask5(UnicodeString CollectionId, UnicodeString UnitId, Int32 HResultFailure)			SettingHandlerTask	Error	Microsoft-Windows-GenericRoaming/Admin	There was an error while removing setting unit %2 for roaming collection %1. %3
+Microsoft-Windows-GenericRoaming	6	0	SettingHandlerTask6(UnicodeString CollectionId, Int32 HResultFailure)			SettingHandlerTask	Error	Microsoft-Windows-GenericRoaming/Admin	There was an error while getting settings unit for roaming collection %1. %2
+Microsoft-Windows-GenericRoaming	7	0	TriggerSyncTask(UnicodeString Username, Int32 HResultFailure)			TriggerSyncTask	Error	Microsoft-Windows-GenericRoaming/Admin	There was an error while scheduling a retry sync task for user %1. %2

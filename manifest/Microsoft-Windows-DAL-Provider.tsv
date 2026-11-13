@@ -1,29 +1,29 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-DAL-Provider	1	0	task_0(UInt8 NetFn, UInt8 CommandID, UInt32 PacketSize, Binary PacketData, UInt32 SessionId, UInt32 SequenceNumber)			task_0	Informational		
-Microsoft-Windows-DAL-Provider	2	0	task_02(UInt8 NetFn, UInt8 CommandID, UInt32 PacketSize, Binary PacketData, UInt32 SessionId, UInt32 SequenceNumber)			task_0	Informational		
-Microsoft-Windows-DAL-Provider	3	0	task_03()			task_0	Informational		
-Microsoft-Windows-DAL-Provider	4	0	task_04()			task_0	Informational		
-Microsoft-Windows-DAL-Provider	5	0	task_05()			task_0	Informational		
-Microsoft-Windows-DAL-Provider	6	0	task_06()			task_0	Informational		
-Microsoft-Windows-DAL-Provider	7	0	task_07()			task_0	Informational		
-Microsoft-Windows-DAL-Provider	8	0	task_08()			task_0	Informational		
-Microsoft-Windows-DAL-Provider	9	0	task_09()			task_0	Informational		
-Microsoft-Windows-DAL-Provider	10	0	task_010()			task_0	Informational		
-Microsoft-Windows-DAL-Provider	11	0	task_011(Int32 MI_Result, UnicodeString Operation)			task_0	Informational		
-Microsoft-Windows-DAL-Provider	15	0	task_015(UInt8 id)			task_0	Informational		
-Microsoft-Windows-DAL-Provider	16	0	task_016(UInt8 id)			task_0	Informational		
-Microsoft-Windows-DAL-Provider	17	0	task_017(UnicodeString target, UInt16 protocol, UInt16 port, UInt16 authentication, Boolean usessl, Boolean skipcacheck, Boolean skipcncheck, Boolean skiprevocationcheck, UInt32 timeoutsec)			task_0	Informational		
-Microsoft-Windows-DAL-Provider	18	0	task_018()			task_0	Informational		
-Microsoft-Windows-DAL-Provider	19	0	task_019()			task_0	Informational		
-Microsoft-Windows-DAL-Provider	20	0	task_020()			task_0	Informational		
-Microsoft-Windows-DAL-Provider	21	0	task_021()			task_0	Informational		
-Microsoft-Windows-DAL-Provider	22	0	task_022()			task_0	Informational		
-Microsoft-Windows-DAL-Provider	23	0	task_023()			task_0	Informational		
-Microsoft-Windows-DAL-Provider	24	0	task_024()			task_0	Informational		
-Microsoft-Windows-DAL-Provider	25	0	task_025()			task_0	Informational		
-Microsoft-Windows-DAL-Provider	26	0	task_026()			task_0	Informational		
-Microsoft-Windows-DAL-Provider	27	0	task_027()			task_0	Informational		
-Microsoft-Windows-DAL-Provider	28	0	task_028()			task_0	Informational		
-Microsoft-Windows-DAL-Provider	29	0	task_029()			task_0	Informational		
-Microsoft-Windows-DAL-Provider	30	0	task_030(UInt8 NetFn, UInt8 CommandID, UInt32 PacketSize, Binary PacketData, UInt32 SessionId, UInt32 SequenceNumber)			task_0	Informational		
-Microsoft-Windows-DAL-Provider	31	0	task_031(UInt8 NetFn, UInt8 CommandID, UInt32 PacketSize, Binary PacketData, UInt32 SessionId, UInt32 SequenceNumber)			task_0	Informational		
+Microsoft-Windows-DAL-Provider	1	0	Event_1(UInt8 NetFn, UInt8 CommandID, UInt32 PacketSize, Binary PacketData, UInt32 SessionId, UInt32 SequenceNumber)			task_0	Informational	Microsoft-Windows-DAL-Provider/Analytic	The Unencrypted request data for IPMI request %1
+Microsoft-Windows-DAL-Provider	2	0	Event_2(UInt8 NetFn, UInt8 CommandID, UInt32 PacketSize, Binary PacketData, UInt32 SessionId, UInt32 SequenceNumber)			task_0	Informational	Microsoft-Windows-DAL-Provider/Analytic	The Decrypted response data for IPMI request %1
+Microsoft-Windows-DAL-Provider	3	0	Event_3()			task_0	Informational	Microsoft-Windows-DAL-Provider/Analytic	Starts enumeration of PCSVDevice
+Microsoft-Windows-DAL-Provider	4	0	Event_4()			task_0	Informational	Microsoft-Windows-DAL-Provider/Analytic	Stops enumeration of PCSVDevice
+Microsoft-Windows-DAL-Provider	5	0	Event_5()			task_0	Informational	Microsoft-Windows-DAL-Provider/Analytic	Starts getting instance of PCSVDevice
+Microsoft-Windows-DAL-Provider	6	0	Event_6()			task_0	Informational	Microsoft-Windows-DAL-Provider/Analytic	Stops getting instance of PCSVDevice
+Microsoft-Windows-DAL-Provider	7	0	Event_7()			task_0	Informational	Microsoft-Windows-DAL-Provider/Analytic	Start RequestStateChange
+Microsoft-Windows-DAL-Provider	8	0	Event_8()			task_0	Informational	Microsoft-Windows-DAL-Provider/Analytic	Stops RequestStateChange
+Microsoft-Windows-DAL-Provider	9	0	Event_9()			task_0	Informational	Microsoft-Windows-DAL-Provider/Analytic	Starts SetOneTimeBootSource
+Microsoft-Windows-DAL-Provider	10	0	Event_10()			task_0	Informational	Microsoft-Windows-DAL-Provider/Analytic	Stops SetOneTimeBootSource
+Microsoft-Windows-DAL-Provider	11	0	Event_11(Int32 MI_Result, UnicodeString Operation)			task_0	Informational	Microsoft-Windows-DAL-Provider/Operational	Result of PCSVDevice operation
+Microsoft-Windows-DAL-Provider	15	0	Event_15(UInt8 id)			task_0	Informational	Microsoft-Windows-DAL-Provider/Analytic	Information on IPMI Sent Data
+Microsoft-Windows-DAL-Provider	16	0	Event_16(UInt8 id)			task_0	Informational	Microsoft-Windows-DAL-Provider/Analytic	Information on IPMI Received Data
+Microsoft-Windows-DAL-Provider	17	0	Event_17(UnicodeString target, UInt16 protocol, UInt16 port, UInt16 authentication, Boolean usessl, Boolean skipcacheck, Boolean skipcncheck, Boolean skiprevocationcheck, UInt32 timeoutsec)			task_0	Informational	Microsoft-Windows-DAL-Provider/Operational	Get operations options
+Microsoft-Windows-DAL-Provider	18	0	Event_18()			task_0	Informational	Microsoft-Windows-DAL-Provider/Analytic	Starts ModifyPersistentBootConfigOrder
+Microsoft-Windows-DAL-Provider	19	0	Event_19()			task_0	Informational	Microsoft-Windows-DAL-Provider/Analytic	Stops ModifyPersistentBootConfigOrder
+Microsoft-Windows-DAL-Provider	20	0	Event_20()			task_0	Informational	Microsoft-Windows-DAL-Provider/Analytic	Starts ChangeBootConfiguration
+Microsoft-Windows-DAL-Provider	21	0	Event_21()			task_0	Informational	Microsoft-Windows-DAL-Provider/Analytic	Stops ChangeBootConfiguration
+Microsoft-Windows-DAL-Provider	22	0	Event_22()			task_0	Informational	Microsoft-Windows-DAL-Provider/Analytic	Starts ChangeNetworkConfiguration
+Microsoft-Windows-DAL-Provider	23	0	Event_23()			task_0	Informational	Microsoft-Windows-DAL-Provider/Analytic	Stops ChangeNetworkConfiguration
+Microsoft-Windows-DAL-Provider	24	0	Event_24()			task_0	Informational	Microsoft-Windows-DAL-Provider/Analytic	Starts ChangeUserPassword
+Microsoft-Windows-DAL-Provider	25	0	Event_25()			task_0	Informational	Microsoft-Windows-DAL-Provider/Analytic	Stops ChangeUserPassword
+Microsoft-Windows-DAL-Provider	26	0	Event_26()			task_0	Informational	Microsoft-Windows-DAL-Provider/Analytic	Starts getting PCSV device log
+Microsoft-Windows-DAL-Provider	27	0	Event_27()			task_0	Informational	Microsoft-Windows-DAL-Provider/Analytic	Stops getting PCSV device log
+Microsoft-Windows-DAL-Provider	28	0	Event_28()			task_0	Informational	Microsoft-Windows-DAL-Provider/Analytic	Starts clearing PCSV device log
+Microsoft-Windows-DAL-Provider	29	0	Event_29()			task_0	Informational	Microsoft-Windows-DAL-Provider/Analytic	Stops clearing PCSV device log
+Microsoft-Windows-DAL-Provider	30	0	Event_30(UInt8 NetFn, UInt8 CommandID, UInt32 PacketSize, Binary PacketData, UInt32 SessionId, UInt32 SequenceNumber)			task_0	Informational	Microsoft-Windows-DAL-Provider/Analytic	The request data for in-band IPMI request %1
+Microsoft-Windows-DAL-Provider	31	0	Event_31(UInt8 NetFn, UInt8 CommandID, UInt32 PacketSize, Binary PacketData, UInt32 SessionId, UInt32 SequenceNumber)			task_0	Informational	Microsoft-Windows-DAL-Provider/Analytic	The response data for in-band IPMI request %1

@@ -1,2 +1,2 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-Crypto-BCrypt	1	0	task_0(UnicodeString ProviderName, UnicodeString AlgorithmName, UInt32 dwFlags, HexInt32 Status, UInt32 OperationType)			task_0	Error		
+Microsoft-Windows-Crypto-BCrypt	1	0	Event_1(UnicodeString ProviderName, UnicodeString AlgorithmName, UInt32 dwFlags, HexInt32 Status, UInt32 OperationType)			task_0	Error	Microsoft-Windows-Crypto-BCRYPT/Analytic	Open Provider Failure. \r\n\r\n Cryptographic Parameters:\r\n \tProvider Name:\t%1\r\n \tAlgorithm Name:\t%2\r\n \tFlags:\t%3\r\n Failure Information:\r\n \tReturn Code:\t%4\r\n \tFailure Type:\t%5

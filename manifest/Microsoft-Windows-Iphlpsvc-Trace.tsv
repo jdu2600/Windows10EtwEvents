@@ -1,183 +1,176 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-Iphlpsvc-Trace	4051	0	task_0(UInt32 IpAddrLength, UInt32 ServiceType, UInt32 TeredoPacketType, Binary SourceIPAddress, Binary DestinationIPAddress)		teredo	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	4052	0	task_04052(UInt32 IpAddrLength, UInt32 ReceivedTeredoPacketType, Binary SourceIPAddress, UInt32 SentTeredoPacketType, Binary DestinationIPAddress)		teredo	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	4053	0	task_04053(UInt32 IpAddrLength, UInt32 ServiceType, UInt32 ReceivedTeredoPacketType, UInt32 MappedTeredoPacketType, Binary SourceIPAddress, Binary DestinationIPAddress, Binary TargetIPAddress)		teredo	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	4054	0	task_04054(UInt32 TeredoProtocolState, UInt32 BadorInvalidPacket)		teredo	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	4055	0	task_04055(UInt32 PreviousTeredoProtocolState, UInt32 CurrentTeredoProtocolState)		teredo	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	4056	0	task_04056(UInt32 TeredoPacketType)		teredo	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	4057	0	task_04057(UInt32 IpAddrV4Length, UInt32 IpAddrV6Length, Binary SourceIpv6Address, Binary DestinationIPv6Address, UInt32 SourceIPv4Address, UInt32 DestinationIPv4Address, UInt16 SourcePort, UInt16 DestinationPort)		teredo	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	4058	0	task_04058(UnicodeString Description)		teredo	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	4059	0	task_04059(UInt32 BadorInvalidPacket)		teredo	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	4060	0	task_04060(UInt32 SockAddrLength, UInt32 ServiceType, UInt32 MappingType, Binary SocketAddress)		teredo	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	4061	0	task_04061(UInt32 AddrLength, UnicodeString PrimaryorSecondary, Binary DestinationAddress)		teredo	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	4062	0	task_04062(UInt32 AddrLength, UInt32 ServiceType, UInt32 TeredoPacketType, Binary SourceIpv6Address)		teredo	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	4063	0	task_04063(UInt32 IpAddrLength, UInt32 ServiceType, UInt32 ReceivedTeredoPacketType, UInt32 MappedTeredoPacketType, Binary DestinationIPAddress)		teredo	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	4064	0	task_04064(UInt32 AddrLength, UInt32 ServiceType, UInt32 ReceivedTeredoPacketType, UInt32 MappedTeredoPacketType, Binary DestinationIPAddress)		teredo	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	4065	0	task_04065(UInt32 AddrLength, UnicodeString PrimaryorSecondary, Binary SocketAddress)		teredo	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	4066	0	task_04066(UInt32 AddrLength, UInt32 ServiceType, UInt32 TeredoPacketType, Binary SourceIpv6Address, Binary DestinationIPAddress, Binary TargetIPAddress)		teredo	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	4067	0	task_04067(UInt32 AddrLength, UInt32 ServiceType, UInt32 TeredoPacketType, Binary DestinationAddress)		teredo	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	4068	0	task_04068(UnicodeString Program)			task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	4069	0	task_04069(UnicodeString Program)			task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	4070	0	task_04070(UnicodeString Program)			task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	4071	0	task_04071(UnicodeString Program)			task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	4150	0	task_04150(UInt32 ProtocolType, UnicodeString Interface, UInt32 InterfaceState)		isatap sixto4	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	4151	0	task_04151(UInt32 AddrLength, UnicodeString Interface, UInt32 CurrentIPv4Address, UInt32 NewIPv4Address)		isatap	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	4152	0	task_04152()		isatap	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	4153	0	task_04153(UInt32 AddrLength, UInt32 ProtocolType, UInt32 DestinationIPv4Address, UnicodeString Interface, UInt32 SourceIPv4Address, UInt32 NextHopIPv4Address)		isatap sixto4	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	4154	0	task_04154(UInt32 AddrLength, UInt32 ProtocolType, UnicodeString InterfaceName, UInt32 RouterIPv4Address, UInt32 Reachable)		isatap	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	4155	0	task_04155(UInt32 AddrLength, UnicodeString InterfaceName, UnicodeString RouterName, UInt32 Resolved, UInt32 RouterIPv4Address)		isatap	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	4157	0	task_04157(UInt32 ProtocolType)		isatap sixto4	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	4158	0	task_04158(UInt32 ProtocolType)		isatap sixto4	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	4159	0	task_04159(UInt32 ProtocolType)		isatap sixto4	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	4160	0	task_04160(UInt32 ProtocolType)		isatap sixto4	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	4161	0	task_04161(UnicodeString InterfaceName)		isatap	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	4162	0	task_04162(UInt32 AddrLength, UInt32 ProtocolType, UInt32 AddedorDeleted, UInt32 IPv4Address, UnicodeString InterfaceName)		isatap sixto4	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	4163	0	task_04163(UInt32 AddrLength, Binary IPAddress, UInt64 PrefixLen, UnicodeString InterfaceAlias, UInt32 Metric, UInt32 PreferredLifetime, UInt32 ValidLifeTime, Boolean Publish)		sixto4	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	4164	0	task_04164(UnicodeString InterfaceAlias, Boolean IcsPrivateInterface, Boolean AdvertiseDefaultRoute, Boolean Advertises, Boolean Forwards, UInt64 Status)		sixto4	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	4165	0	task_04165(UInt32 NewRoutingState, UInt32 OldRoutingState)		sixto4	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	4166	0	task_04166(UnicodeString InterfaceAlias, UInt32 IPAddress)		sixto4	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	4167	0	task_04167(UInt32 ProtocolType, UInt32 CompartmentId, Boolean HaveGlobalIpv6Address, Boolean ICSEnabled, UInt64 GlobalIPv4AddressCount)		sixto4	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	4168	0	task_04168(UInt64 InterfaceIndex, UInt32 CompartmentId, UInt32 RoutingState)		sixto4	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	4169	0	task_04169(UInt32 AddrLength, UnicodeString InterfaceAlias, Binary IPAddress, UInt64 Lifetime, UInt64 PrefixConf, UInt64 SuffixConf)		isatap sixto4	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	4170	0	task_04170(UInt32 ProtocolCallback, UInt32 ProtocolType)		isatap sixto4 teredo	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	4171	0	task_04171(UInt32 TeredoReasonCode)		teredo	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	4172	0	task_04172(UInt32 TeredoReasonCode)		teredo	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	4173	0	task_04173(UInt32 WindowsErrorCode)		sixto4	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	4174	0	task_04174(UnicodeString IsatapRouter, UInt32 ErrorCode)		isatap	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	4175	0	task_04175(UInt32 NetworkType)		teredo	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	4176	0	task_04176(UInt32 SourceIPv4Address, UInt16 SourcePort, UInt16 UpperValue, UInt16 LowerValue, UInt16 PortPredicted)		teredo	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	4177	0	task_04177(UnicodeString Action)		teredoVerbose	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	4178	0	task_04178(UnicodeString Action)		teredoStart	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	4179	0	task_04179(UnicodeString Action)		teredoEnd	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	4180	0	task_04180(UnicodeString Action)		teredoFailures	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5000	0	task_05000(UnicodeString InterfaceName, UInt32 InterfaceType, UInt32 RegistryState, UInt32 CurrentState, UnicodeString URL, UInt32 AuthenticationMode)		iphttps	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5001	0	task_05001(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Error		
-Microsoft-Windows-Iphlpsvc-Trace	5002	0	task_05002(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Error		
-Microsoft-Windows-Iphlpsvc-Trace	5003	0	task_05003(UnicodeString InterfaceName, UnicodeString CertificateCN, UInt32 Preference)		iphttps	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5004	0	task_05004(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5005	0	task_05005(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5006	0	task_05006(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5007	0	task_05007(Pointer Object, AnsiString FileName, UInt32 LineNumber)		iphttps	task_0	Error		
-Microsoft-Windows-Iphlpsvc-Trace	5008	0	task_05008(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Error		
-Microsoft-Windows-Iphlpsvc-Trace	5009	0	task_05009(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5010	0	task_05010(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5011	0	task_05011(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5012	0	task_05012(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5013	0	task_05013(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5014	0	task_05014(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5015	0	task_05015(UInt32 InterfaceIndex, UnicodeString Address, Boolean Added, Boolean LimitedConnectivity)		iphttps	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5016	0	task_05016(UInt32 GlobalIpv6AddressCount, Boolean Ipv4Connectivity, Boolean Ipv6Connectivity, Boolean CorpConnectivity)		iphttps	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5017	0	task_05017(UInt32 InterfaceIndex, UnicodeString Address, Boolean Added, Boolean LimitedConnectivity)		iphttps	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5018	0	task_05018(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5019	0	task_05019(UInt32 DueTime)		iphttps	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5020	0	task_05020(UInt32 DueTime)		iphttps	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5021	0	task_05021(GUID NetworkGuid, Boolean Added)		iphttps	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5022	0	task_05022(UInt32 CurrentTeredoProtocolState)		iphttps	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5023	0	task_05023(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Error		
-Microsoft-Windows-Iphlpsvc-Trace	5024	0	task_05024(UInt32 PacketType, UnicodeString TargetAddress, UnicodeString Prefix, Boolean DefaultRouter)		iphttps	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5025	0	task_05025()		iphttps	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5026	0	task_05026(Pointer Object, AnsiString FileName, UInt32 LineNumber)		iphttps	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5027	0	task_05027(Pointer Object, AnsiString FileName, UInt32 LineNumber)		iphttps	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5028	0	task_05028(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5029	0	task_05029(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5030	0	task_05030(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5031	0	task_05031(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5032	0	task_05032(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5033	0	task_05033(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5034	0	task_05034(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5035	0	task_05035(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5036	0	task_05036(UnicodeString InterfaceName, UnicodeString Address)		iphttps	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5037	0	task_05037(UnicodeString InterfaceName, UnicodeString Address)		iphttps	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5038	0	task_05038(UnicodeString InterfaceName, UnicodeString Address)		iphttps	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5039	0	task_05039(UnicodeString InterfaceName, UnicodeString Address)		iphttps	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5040	0	task_05040(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5041	0	task_05041(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5042	0	task_05042(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5043	0	task_05043(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5044	0	task_05044(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5045	0	task_05045(UnicodeString InterfaceName, UnicodeString DestinationAddress)		iphttps	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5046	0	task_05046(UnicodeString InterfaceName, UnicodeString DestinationAddress)		iphttps	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5047	0	task_05047(Pointer Object, AnsiString FileName, UInt32 LineNumber)		iphttps	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5048	0	task_05048(Pointer Object, AnsiString FileName, UInt32 LineNumber)		iphttps	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5049	0	task_05049(Pointer Object, AnsiString FileName, UInt32 LineNumber)		iphttps	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5050	0	task_05050(Pointer Object, AnsiString FileName, UInt32 LineNumber)		iphttps	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5051	0	task_05051(Pointer Object, AnsiString FileName, UInt32 LineNumber)		iphttps	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5052	0	task_05052(Pointer Object, AnsiString FileName, UInt32 LineNumber)		iphttps	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5053	0	task_05053(Pointer Object, AnsiString FileName, UInt32 LineNumber)		iphttps	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5054	0	task_05054(Pointer Object, AnsiString FileName, UInt32 LineNumber)		iphttps	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5055	0	task_05055(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5061	0	task_05061(UInt32 WmiNotificationType, UnicodeString InterfaceName)		iphttps	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5062	0	task_05062()		iphttps	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5063	0	task_05063(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Error		
-Microsoft-Windows-Iphlpsvc-Trace	5064	0	task_05064(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5065	0	task_05065(UnicodeString InterfaceName, UInt32 ProxyAccessType, UnicodeString Proxy, UnicodeString ProxyBypass)		iphttps	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5066	0	task_05066(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5067	0	task_05067(Pointer ClientContext, UnicodeString TargetAddress)		iphttps	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5068	0	task_05068(Pointer Value)		iphttps	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5069	0	task_05069(UnicodeString Action)		iphttps	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5100	0	task_05100(UInt32 AddrLength, Binary ClientIP, UnicodeString QuestionName, UnicodeString QueryReceiveInterface, UnicodeString QuerySendInterface, UInt32 DnsStatus)		dns64	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5101	0	task_05101(UInt32 AddrLength, Binary ClientIP, UnicodeString QuestionName, UnicodeString QueryReceiveInterface, UnicodeString QuerySendInterface, UInt32 DnsStatus)		dns64	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5102	0	task_05102(UInt32 AddrLength, Binary ClientIP, UnicodeString QuestionName, UInt32 TranslatedIPv4Address)		dns64	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5103	0	task_05103()		dns64	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5104	0	task_05104(UInt32 AddrLength, Binary ClientIP, UnicodeString QuestionName, UInt32 IPv4Address, Binary IPv6Address)		dns64	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5105	0	task_05105(Pointer Object, UnicodeString Message, UInt32 Value)		dns64	task_0	Error		
-Microsoft-Windows-Iphlpsvc-Trace	5106	0	task_05106(Pointer Object, AnsiString FileName, UInt32 LineNumber)		dns64	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5107	0	task_05107(Pointer Object, AnsiString FileName, UInt32 LineNumber)		dns64	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5108	0	task_05108(Pointer Object, AnsiString FileName, UInt32 LineNumber)		dns64	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5109	0	task_05109(Pointer Object, AnsiString FileName, UInt32 LineNumber)		dns64	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5110	0	task_05110(Pointer Object, AnsiString FileName, UInt32 LineNumber)		dns64	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5111	0	task_05111(Pointer Object, AnsiString FileName, UInt32 LineNumber, Pointer Object2)		dns64	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5112	0	task_05112(Pointer Object, AnsiString FileName, UInt32 LineNumber)		dns64	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5113	0	task_05113(Pointer Object, AnsiString FileName, UInt32 LineNumber)		dns64	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5114	0	task_05114(Pointer Object, AnsiString FileName, UInt32 LineNumber)		dns64	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5115	0	task_05115(Pointer Object, UnicodeString Message, UInt32 Value)		dns64	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5116	0	task_05116(Pointer Object, UnicodeString Message, UInt32 Value)		dns64	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5117	0	task_05117(Pointer Object, UnicodeString Message, UInt32 Value)		dns64	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5118	0	task_05118(Pointer Object, UnicodeString Message, UInt32 Value)		dns64	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5119	0	task_05119(Pointer Object, UnicodeString Message, UInt32 Value)		dns64	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5120	0	task_05120(Pointer Object, UnicodeString Message, UInt32 Value)		dns64	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5121	0	task_05121(Pointer Object, UnicodeString Message, UInt32 Value)		dns64	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5122	0	task_05122(Pointer Object, UnicodeString Message, UInt32 Value)		dns64	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5123	0	task_05123(Pointer Object, UnicodeString Message, UInt32 Value)		dns64	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5124	0	task_05124(Pointer Object, UnicodeString Message, UInt32 Value)		dns64	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5125	0	task_05125(Pointer Object, UnicodeString Message, UInt32 Value)		dns64	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5126	0	task_05126(Pointer Object, UnicodeString Message, UInt32 Value)		dns64	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5127	0	task_05127(Pointer Object, UnicodeString Message, UInt32 Value)		dns64	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5128	0	task_05128(Pointer Object, UnicodeString Message, UInt32 Value)		dns64	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5129	0	task_05129(Pointer Object, UnicodeString Message, UInt32 Value)		dns64	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5130	0	task_05130(Pointer Object, UnicodeString Message, UInt32 Value)		dns64	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5131	0	task_05131(Pointer Object, UnicodeString Message, UInt32 Value)		dns64	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5132	0	task_05132(Pointer Object, UnicodeString Message, UInt32 Value)		dns64	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5133	0	task_05133(Pointer Object, UnicodeString Message, UInt32 Value)		dns64	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5401	0	task_05401(UnicodeString Reason, UInt32 Event)		PROXYMGR	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5402	0	task_05402(UnicodeString Reason, UInt32 Event)		PROXYMGR	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5403	0	task_05403(UnicodeString Action, UInt32 Status)		PROXYMGR	task_0	Error		
-Microsoft-Windows-Iphlpsvc-Trace	5404	0	task_05404(UnicodeString Action)		PROXYMGR	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5501	0	task_05501(UInt32 SiteSelectionMethod, UnicodeString SiteName, UnicodeString IphttpsProfileName, UInt32 TeredoServerIp, UInt32 AddrLength, Binary SiteIpv6Address, UnicodeString AdSiteName, UnicodeString CorporateRanges)		damultisite	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5502	0	task_05502(UnicodeString AdSiteName, UInt32 Status)		damultisite	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5503	0	task_05503(UInt32 AddrLength, Binary Prefix, UInt32 PrefixLength, UInt32 Status)		damultisite	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5504	0	task_05504(UnicodeString IphttpsProfileName, UInt32 Status)		damultisite	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5505	0	task_05505(UInt32 TeredoServerIp, UInt32 Status)		damultisite	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5506	0	task_05506(UnicodeString SiteName)		damultisite	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5508	0	task_05508(UnicodeString SortingSiteName, UInt32 SortingMetric, UInt32 AddressFamily, UnicodeString ProbingSiteName)		damultisite	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5509	0	task_05509(Pointer Object, UnicodeString Message, UInt32 Value)		damultisite	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5510	0	task_05510(UnicodeString Action)		damultisite	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5511	0	task_05511(Pointer Object, UnicodeString Message, UInt32 Value)		damultisite	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5512	0	task_05512(UInt32 AddrLength, Binary Prefix)		damultisite	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5513	0	task_05513(Pointer Object, UnicodeString Message, UInt32 Value)		damultisite	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5514	0	task_05514(UnicodeString SiteUrl, UInt64 Timestamp)		damultisite	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5515	0	task_05515(UnicodeString SiteUrl, UInt32 ErrorCode, UInt64 Timestamp)		damultisite	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5516	0	task_05516(UnicodeString Action)		damultisite	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5517	0	task_05517(UnicodeString SiteUrl, UInt32 ErrorCode, UInt32 HttpStatus, UInt64 Timestamp)		damultisite	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5518	0	task_05518(Pointer Object, UnicodeString Message, UInt32 Value)		damultisite	task_0	Verbose		
-Microsoft-Windows-Iphlpsvc-Trace	5519	0	task_05519(UnicodeString Action)		damultisite	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5550	0	task_05550(UnicodeString Action)		isatap	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5600	0	task_05600(UnicodeString Action)		sixto4	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5607	0	task_05607(UnicodeString SiteName, UInt64 Delay)		damultisite	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5650	0	task_05650(UnicodeString Action)		common	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5651	0	task_05651(UnicodeString Action)		common	task_0	Error		
-Microsoft-Windows-Iphlpsvc-Trace	5652	0	task_05652(UnicodeString Action)		functionentry	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5653	0	task_05653(UnicodeString Action)		servicefsm	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5654	0	task_05654(UnicodeString Action)		refcount	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5655	0	task_05655(UnicodeString Action)		portproxy	task_0	Informational		
-Microsoft-Windows-Iphlpsvc-Trace	5656	0	task_05656(UnicodeString Action)		clatmgr	task_0	Informational		
+Microsoft-Windows-Iphlpsvc-Trace	4051	0	Event_4051(UInt32 IpAddrLength, UInt32 ServiceType, UInt32 TeredoPacketType, Binary SourceIPAddress, Binary DestinationIPAddress)		teredo	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	Teredo %2: Forwarding %3 packet from %4 to %5.
+Microsoft-Windows-Iphlpsvc-Trace	4052	0	Event_4052(UInt32 IpAddrLength, UInt32 ReceivedTeredoPacketType, Binary SourceIPAddress, UInt32 SentTeredoPacketType, Binary DestinationIPAddress)		teredo	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	Teredo server: Received %2 from %3 , Sending %4 to %5.
+Microsoft-Windows-Iphlpsvc-Trace	4053	0	Event_4053(UInt32 IpAddrLength, UInt32 ServiceType, UInt32 ReceivedTeredoPacketType, UInt32 MappedTeredoPacketType, Binary SourceIPAddress, Binary DestinationIPAddress, Binary TargetIPAddress)		teredo	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	Teredo %2 received %3, Mapping to %4.\r\n source: %5, destination: %6, target: %7.
+Microsoft-Windows-Iphlpsvc-Trace	4054	0	Event_4054(UInt32 TeredoProtocolState, UInt32 BadorInvalidPacket)		teredo	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	Teredo client in state %1,received bad or invalid packet with %2.
+Microsoft-Windows-Iphlpsvc-Trace	4055	0	Event_4055(UInt32 PreviousTeredoProtocolState, UInt32 CurrentTeredoProtocolState)		teredo	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	Teredo client state change: Previous state %1, Current state %2.
+Microsoft-Windows-Iphlpsvc-Trace	4056	0	Event_4056(UInt32 TeredoPacketType)		teredo	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	Teredo client Sending %1 packet.
+Microsoft-Windows-Iphlpsvc-Trace	4057	0	Event_4057(UInt32 IpAddrV4Length, UInt32 IpAddrV6Length, Binary SourceIpv6Address, Binary DestinationIPv6Address, UInt32 SourceIPv4Address, UInt32 DestinationIPv4Address, UInt16 SourcePort, UInt16 DestinationPort)		teredo	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	Starting Teredo Offload with: \r\nLocalV6:%3 RemoteV6:%4 \r\nLocalV4:%5 RemoteV4:%6 \r\nLocalPort:%7 RemotePort:%8.
+Microsoft-Windows-Iphlpsvc-Trace	4058	0	Event_4058(UnicodeString Description)		teredo	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	%1
+Microsoft-Windows-Iphlpsvc-Trace	4059	0	Event_4059(UInt32 BadorInvalidPacket)		teredo	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	Teredo server received bad or invalid packet with %1.
+Microsoft-Windows-Iphlpsvc-Trace	4060	0	Event_4060(UInt32 SockAddrLength, UInt32 ServiceType, UInt32 MappingType, Binary SocketAddress)		teredo	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	%2 %3 mapping: %4.
+Microsoft-Windows-Iphlpsvc-Trace	4061	0	Event_4061(UInt32 AddrLength, UnicodeString PrimaryorSecondary, Binary DestinationAddress)		teredo	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	Teredo %2 transmitting packet to %3.
+Microsoft-Windows-Iphlpsvc-Trace	4062	0	Event_4062(UInt32 AddrLength, UInt32 ServiceType, UInt32 TeredoPacketType, Binary SourceIpv6Address)		teredo	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	Teredo %2 received %3 packet from %4.
+Microsoft-Windows-Iphlpsvc-Trace	4063	0	Event_4063(UInt32 IpAddrLength, UInt32 ServiceType, UInt32 ReceivedTeredoPacketType, UInt32 MappedTeredoPacketType, Binary DestinationIPAddress)		teredo	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	Teredo %2 received %3, sending %4 to %5.
+Microsoft-Windows-Iphlpsvc-Trace	4064	0	Event_4064(UInt32 AddrLength, UInt32 ServiceType, UInt32 ReceivedTeredoPacketType, UInt32 MappedTeredoPacketType, Binary DestinationIPAddress)		teredo	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	Teredo %2 received %3, sending %4 to %5.
+Microsoft-Windows-Iphlpsvc-Trace	4065	0	Event_4065(UInt32 AddrLength, UnicodeString PrimaryorSecondary, Binary SocketAddress)		teredo	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	Teredo %2 received packet from %3.
+Microsoft-Windows-Iphlpsvc-Trace	4066	0	Event_4066(UInt32 AddrLength, UInt32 ServiceType, UInt32 TeredoPacketType, Binary SourceIpv6Address, Binary DestinationIPAddress, Binary TargetIPAddress)		teredo	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	Teredo %2 received packet type %3;\r\n with source %4 destination %5 target %6.
+Microsoft-Windows-Iphlpsvc-Trace	4067	0	Event_4067(UInt32 AddrLength, UInt32 ServiceType, UInt32 TeredoPacketType, Binary DestinationAddress)		teredo	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	Teredo %2 transmitting %3 packet to %4.
+Microsoft-Windows-Iphlpsvc-Trace	4150	0	Event_4150(UInt32 ProtocolType, UnicodeString Interface, UInt32 InterfaceState)		isatap sixto4	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	%1 interface %2 %3.
+Microsoft-Windows-Iphlpsvc-Trace	4151	0	Event_4151(UInt32 AddrLength, UnicodeString Interface, UInt32 CurrentIPv4Address, UInt32 NewIPv4Address)		isatap	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	ISATAP link local address for interface %2 was %3, is %4.
+Microsoft-Windows-Iphlpsvc-Trace	4152	0	Event_4152()		isatap	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	ISATAP potential router interface list has changed.
+Microsoft-Windows-Iphlpsvc-Trace	4153	0	Event_4153(UInt32 AddrLength, UInt32 ProtocolType, UInt32 DestinationIPv4Address, UnicodeString Interface, UInt32 SourceIPv4Address, UInt32 NextHopIPv4Address)		isatap sixto4	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	%2: Found route to %3 from interface %4.\r\nSource = %5, Next Hop = %6.
+Microsoft-Windows-Iphlpsvc-Trace	4154	0	Event_4154(UInt32 AddrLength, UInt32 ProtocolType, UnicodeString InterfaceName, UInt32 RouterIPv4Address, UInt32 Reachable)		isatap	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Debug	%2: For %3, router %4 is %5.
+Microsoft-Windows-Iphlpsvc-Trace	4155	0	Event_4155(UInt32 AddrLength, UnicodeString InterfaceName, UnicodeString RouterName, UInt32 Resolved, UInt32 RouterIPv4Address)		isatap	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Debug	For %2, router name: %3, is %4. %5.
+Microsoft-Windows-Iphlpsvc-Trace	4157	0	Event_4157(UInt32 ProtocolType)		isatap sixto4	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	%1 protocol started.
+Microsoft-Windows-Iphlpsvc-Trace	4158	0	Event_4158(UInt32 ProtocolType)		isatap sixto4	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	%1 protocol stopped.
+Microsoft-Windows-Iphlpsvc-Trace	4159	0	Event_4159(UInt32 ProtocolType)		isatap sixto4	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	%1 protocol initialized.
+Microsoft-Windows-Iphlpsvc-Trace	4160	0	Event_4160(UInt32 ProtocolType)		isatap sixto4	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	%1 protocol uninitialized.
+Microsoft-Windows-Iphlpsvc-Trace	4161	0	Event_4161(UnicodeString InterfaceName)		isatap	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	ISATAP found interface %1 to reuse.
+Microsoft-Windows-Iphlpsvc-Trace	4162	0	Event_4162(UInt32 AddrLength, UInt32 ProtocolType, UInt32 AddedorDeleted, UInt32 IPv4Address, UnicodeString InterfaceName)		isatap sixto4	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	%2: interface %5 address %4 %3.
+Microsoft-Windows-Iphlpsvc-Trace	4163	0	Event_4163(UInt32 AddrLength, Binary IPAddress, UInt64 PrefixLen, UnicodeString InterfaceAlias, UInt32 Metric, UInt32 PreferredLifetime, UInt32 ValidLifeTime, Boolean Publish)		sixto4	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	6to4: Updating route %2/%3 interface %4 metric %5 lifetime %6/%7 publish %8.
+Microsoft-Windows-Iphlpsvc-Trace	4164	0	Event_4164(UnicodeString InterfaceAlias, Boolean IcsPrivateInterface, Boolean AdvertiseDefaultRoute, Boolean Advertises, Boolean Forwards, UInt64 Status)		sixto4	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	6to4: Configuring interface %1 with following parameters:\r\nICS PrivateInterface = %2 AdvertiseDefaultRoute = %3 Advertises = %4 Forwards = %5 NTStatus = %6.
+Microsoft-Windows-Iphlpsvc-Trace	4165	0	Event_4165(UInt32 NewRoutingState, UInt32 OldRoutingState)		sixto4	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	6to4: Routing State changed to %1 from %2.
+Microsoft-Windows-Iphlpsvc-Trace	4166	0	Event_4166(UnicodeString InterfaceAlias, UInt32 IPAddress)		sixto4	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	6to4: For interface %1, IPv4 address %2 was chosen for link layer address.
+Microsoft-Windows-Iphlpsvc-Trace	4167	0	Event_4167(UInt32 ProtocolType, UInt32 CompartmentId, Boolean HaveGlobalIpv6Address, Boolean ICSEnabled, UInt64 GlobalIPv4AddressCount)		sixto4	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	%1:Change notification for compartment %2, HaveGlobalIPv6Address = %3, ICS Enabled =  %4, GlobalIPv4AddressCount = %5.
+Microsoft-Windows-Iphlpsvc-Trace	4168	0	Event_4168(UInt64 InterfaceIndex, UInt32 CompartmentId, UInt32 RoutingState)		sixto4	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	6to4: Configuring interface %1 in compartment %2 with routing state %3.
+Microsoft-Windows-Iphlpsvc-Trace	4169	0	Event_4169(UInt32 AddrLength, UnicodeString InterfaceAlias, Binary IPAddress, UInt64 Lifetime, UInt64 PrefixConf, UInt64 SuffixConf)		isatap sixto4	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	Configuring interface %2 with address %3, lifetime %4, prefix %5 suffix %6.
+Microsoft-Windows-Iphlpsvc-Trace	4170	0	Event_4170(UInt32 ProtocolCallback, UInt32 ProtocolType)		isatap sixto4 teredo	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	%1 Callback for %2.
+Microsoft-Windows-Iphlpsvc-Trace	4171	0	Event_4171(UInt32 TeredoReasonCode)		teredo	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	Teredo Client failed to start due to the following reason: %1.
+Microsoft-Windows-Iphlpsvc-Trace	4172	0	Event_4172(UInt32 TeredoReasonCode)		teredo	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	Teredo Client stopped due to the following reason: %1.
+Microsoft-Windows-Iphlpsvc-Trace	4173	0	Event_4173(UInt32 WindowsErrorCode)		sixto4	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	6TO4 failed to start due to the following reason: %1.
+Microsoft-Windows-Iphlpsvc-Trace	4174	0	Event_4174(UnicodeString IsatapRouter, UInt32 ErrorCode)		isatap	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	ISATAP router address %1 was set with status %2.
+Microsoft-Windows-Iphlpsvc-Trace	4175	0	Event_4175(UInt32 NetworkType)		teredo	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	NLM found that the network is %1.
+Microsoft-Windows-Iphlpsvc-Trace	4176	0	Event_4176(UInt32 SourceIPv4Address, UInt16 SourcePort, UInt16 UpperValue, UInt16 LowerValue, UInt16 PortPredicted)		teredo	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	Port-Prediction complete with: V4Addr:%1 V4Port:%2 \r\nLowerValue:%3 UpperValue:%4 \r\nPortPredicted:%5.
+Microsoft-Windows-Iphlpsvc-Trace	4177	0	Event_4177(UnicodeString Action)		teredoVerbose	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	Teredo operation in action: %1.
+Microsoft-Windows-Iphlpsvc-Trace	4178	0	Event_4178(UnicodeString Action)		teredoStart	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	Teredo operation started: %1.
+Microsoft-Windows-Iphlpsvc-Trace	4179	0	Event_4179(UnicodeString Action)		teredoEnd	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	Teredo operation ended: %1.
+Microsoft-Windows-Iphlpsvc-Trace	4180	0	Event_4180(UnicodeString Action)		teredoFailures	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	Teredo operation failed: %1.
+Microsoft-Windows-Iphlpsvc-Trace	5000	0	Event_5000(UnicodeString InterfaceName, UInt32 InterfaceType, UInt32 RegistryState, UInt32 CurrentState, UnicodeString URL, UInt32 AuthenticationMode)		iphttps	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: InterfaceName:%1 InterfaceType:%2 RegistryState:%3 CurrentState:%4 URL:%5 AuthenticationMode:%6
+Microsoft-Windows-Iphlpsvc-Trace	5001	0	Event_5001(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Error	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: Interface %1 installation failed. Status = %2
+Microsoft-Windows-Iphlpsvc-Trace	5002	0	Event_5002(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Error	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: Interface %1 update link address. Status = %2
+Microsoft-Windows-Iphlpsvc-Trace	5003	0	Event_5003(UnicodeString InterfaceName, UnicodeString CertificateCN, UInt32 Preference)		iphttps	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: Client interface %1 configured to use certificate %2 with preference = %3
+Microsoft-Windows-Iphlpsvc-Trace	5004	0	Event_5004(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: Interface %1 cleanup complete
+Microsoft-Windows-Iphlpsvc-Trace	5005	0	Event_5005(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: Interface %1 firewall exception added. Status = %2
+Microsoft-Windows-Iphlpsvc-Trace	5006	0	Event_5006(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: Interface %1 performance counters added. Status = %2
+Microsoft-Windows-Iphlpsvc-Trace	5007	0	Event_5007(Pointer Object, AnsiString FileName, UInt32 LineNumber)		iphttps	task_0	Error	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: Interface %1 Memory allocation failed
+Microsoft-Windows-Iphlpsvc-Trace	5008	0	Event_5008(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Error	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: Interface %1 Tunnel device IO failed: %2
+Microsoft-Windows-Iphlpsvc-Trace	5009	0	Event_5009(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: Interface %1 reusing an previously installed interface
+Microsoft-Windows-Iphlpsvc-Trace	5010	0	Event_5010(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: Interface %1 deleted
+Microsoft-Windows-Iphlpsvc-Trace	5011	0	Event_5011(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: Interface %1 media connect indication: Status= %2
+Microsoft-Windows-Iphlpsvc-Trace	5012	0	Event_5012(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: Interface %1 media disconnect indication: Status= %2
+Microsoft-Windows-Iphlpsvc-Trace	5013	0	Event_5013(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: Interface %1 deactivated.
+Microsoft-Windows-Iphlpsvc-Trace	5014	0	Event_5014(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: Adapter %1 uninstalled as it does not have associated registry configuration.Status = %2
+Microsoft-Windows-Iphlpsvc-Trace	5015	0	Event_5015(UInt32 InterfaceIndex, UnicodeString Address, Boolean Added, Boolean LimitedConnectivity)		iphttps	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: V6 Address change callback. Address = %2 Added = %3 LimitedConnectivity = %4
+Microsoft-Windows-Iphlpsvc-Trace	5016	0	Event_5016(UInt32 GlobalIpv6AddressCount, Boolean Ipv4Connectivity, Boolean Ipv6Connectivity, Boolean CorpConnectivity)		iphttps	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: Global connectivity state change. GlobalAddressCount = %1 Ipv4Connectivity = %2 Ipv6Connectivity = %3 CorpConnectivity = %4
+Microsoft-Windows-Iphlpsvc-Trace	5017	0	Event_5017(UInt32 InterfaceIndex, UnicodeString Address, Boolean Added, Boolean LimitedConnectivity)		iphttps	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: Interface callback. Index = %1 Added = %3 LimitedConnectivity = %4
+Microsoft-Windows-Iphlpsvc-Trace	5018	0	Event_5018(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: Interface %1 activated.
+Microsoft-Windows-Iphlpsvc-Trace	5019	0	Event_5019(UInt32 DueTime)		iphttps	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: Corp connectivity timer started. Due time = %1 (100ns units).
+Microsoft-Windows-Iphlpsvc-Trace	5020	0	Event_5020(UInt32 DueTime)		iphttps	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: Corp connectivity timeout.
+Microsoft-Windows-Iphlpsvc-Trace	5021	0	Event_5021(GUID NetworkGuid, Boolean Added)		iphttps	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: Network change. Network GUID = %1 Added = %2
+Microsoft-Windows-Iphlpsvc-Trace	5022	0	Event_5022(UInt32 CurrentTeredoProtocolState)		iphttps	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: Teredo dormancy change. New State = %1
+Microsoft-Windows-Iphlpsvc-Trace	5023	0	Event_5023(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Error	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: Initialization failed. Status = %1
+Microsoft-Windows-Iphlpsvc-Trace	5024	0	Event_5024(UInt32 PacketType, UnicodeString TargetAddress, UnicodeString Prefix, Boolean DefaultRouter)		iphttps	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: ND Packet. Packet type = %1, Target Address = %2, Prefix = %3, Default Router = %4.
+Microsoft-Windows-Iphlpsvc-Trace	5025	0	Event_5025()		iphttps	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: Client interface is being shutdown.
+Microsoft-Windows-Iphlpsvc-Trace	5026	0	Event_5026(Pointer Object, AnsiString FileName, UInt32 LineNumber)		iphttps	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: Client IO Reference %1.
+Microsoft-Windows-Iphlpsvc-Trace	5027	0	Event_5027(Pointer Object, AnsiString FileName, UInt32 LineNumber)		iphttps	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: Client IO Dereference %1.
+Microsoft-Windows-Iphlpsvc-Trace	5028	0	Event_5028(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: %1 Client Send Http Request: Status = %2.
+Microsoft-Windows-Iphlpsvc-Trace	5029	0	Event_5029(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: %1 Client Send Receive Response: Status = %2.
+Microsoft-Windows-Iphlpsvc-Trace	5030	0	Event_5030(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: %1 Client Send Http Status Code = %2.
+Microsoft-Windows-Iphlpsvc-Trace	5031	0	Event_5031(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: %1 Client Receive Entity Completion Status = %2.
+Microsoft-Windows-Iphlpsvc-Trace	5032	0	Event_5032(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: %1 Client Send Entity Completion Status = %2.
+Microsoft-Windows-Iphlpsvc-Trace	5033	0	Event_5033(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: %1 Client Scheduling a reconnect after %2 seconds.
+Microsoft-Windows-Iphlpsvc-Trace	5034	0	Event_5034(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: %1 Client restarting.
+Microsoft-Windows-Iphlpsvc-Trace	5035	0	Event_5035(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: %1 Client restarting due to internet connectivity.
+Microsoft-Windows-Iphlpsvc-Trace	5036	0	Event_5036(UnicodeString InterfaceName, UnicodeString Address)		iphttps	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: %1 Adding Client address mapping for address %2.
+Microsoft-Windows-Iphlpsvc-Trace	5037	0	Event_5037(UnicodeString InterfaceName, UnicodeString Address)		iphttps	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: %1 Removing Client address mapping for address %2.
+Microsoft-Windows-Iphlpsvc-Trace	5038	0	Event_5038(UnicodeString InterfaceName, UnicodeString Address)		iphttps	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: %1 Adding Pending packet for address %2.
+Microsoft-Windows-Iphlpsvc-Trace	5039	0	Event_5039(UnicodeString InterfaceName, UnicodeString Address)		iphttps	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: %1 Removing Pending packet for address %2.
+Microsoft-Windows-Iphlpsvc-Trace	5040	0	Event_5040(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: %1 Receive client certificate completed. Status = %2.
+Microsoft-Windows-Iphlpsvc-Trace	5041	0	Event_5041(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: %1 Send HTTP response completed. Status = %2.
+Microsoft-Windows-Iphlpsvc-Trace	5042	0	Event_5042(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: %1 Receive request completed. Status = %2.
+Microsoft-Windows-Iphlpsvc-Trace	5043	0	Event_5043(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: %1 Receive entity completed. Status = %2.
+Microsoft-Windows-Iphlpsvc-Trace	5044	0	Event_5044(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: %1 Send entity completed. Status = %2.
+Microsoft-Windows-Iphlpsvc-Trace	5045	0	Event_5045(UnicodeString InterfaceName, UnicodeString DestinationAddress)		iphttps	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: %1 Dropped packet destined to %2 due to neighbor discovery timeout.
+Microsoft-Windows-Iphlpsvc-Trace	5046	0	Event_5046(UnicodeString InterfaceName, UnicodeString DestinationAddress)		iphttps	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: %1 Sending neighbor solicitation for %2.
+Microsoft-Windows-Iphlpsvc-Trace	5047	0	Event_5047(Pointer Object, AnsiString FileName, UInt32 LineNumber)		iphttps	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: IPHTTPS Interface Reference %1
+Microsoft-Windows-Iphlpsvc-Trace	5048	0	Event_5048(Pointer Object, AnsiString FileName, UInt32 LineNumber)		iphttps	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: IPHTTPS Interface Dereference %1
+Microsoft-Windows-Iphlpsvc-Trace	5049	0	Event_5049(Pointer Object, AnsiString FileName, UInt32 LineNumber)		iphttps	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: IPHTTPS Client Interface Reference %1
+Microsoft-Windows-Iphlpsvc-Trace	5050	0	Event_5050(Pointer Object, AnsiString FileName, UInt32 LineNumber)		iphttps	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: IPHTTPS Client Interface Dereference %1
+Microsoft-Windows-Iphlpsvc-Trace	5051	0	Event_5051(Pointer Object, AnsiString FileName, UInt32 LineNumber)		iphttps	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: IPHTTPS Server Interface Reference %1
+Microsoft-Windows-Iphlpsvc-Trace	5052	0	Event_5052(Pointer Object, AnsiString FileName, UInt32 LineNumber)		iphttps	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: IPHTTPS Server Interface Dereference %1
+Microsoft-Windows-Iphlpsvc-Trace	5053	0	Event_5053(Pointer Object, AnsiString FileName, UInt32 LineNumber)		iphttps	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: IPHTTPS Client Context Reference %1
+Microsoft-Windows-Iphlpsvc-Trace	5054	0	Event_5054(Pointer Object, AnsiString FileName, UInt32 LineNumber)		iphttps	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: IPHTTPS Client Context Dereference %1
+Microsoft-Windows-Iphlpsvc-Trace	5055	0	Event_5055(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: Interface %1 installation aborted. IPHTTPS is disabled by DisabledComponents registry
+Microsoft-Windows-Iphlpsvc-Trace	5061	0	Event_5061(UInt32 WmiNotificationType, UnicodeString InterfaceName)		iphttps	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: Received WMI notification (%1) for interface %2
+Microsoft-Windows-Iphlpsvc-Trace	5062	0	Event_5062()		iphttps	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: Received configuration change notification.
+Microsoft-Windows-Iphlpsvc-Trace	5063	0	Event_5063(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Error	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: %1 WinHTTP open failed with error code = %2.
+Microsoft-Windows-Iphlpsvc-Trace	5064	0	Event_5064(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: %1 failed to get proxy information; error code = %2.
+Microsoft-Windows-Iphlpsvc-Trace	5065	0	Event_5065(UnicodeString InterfaceName, UInt32 ProxyAccessType, UnicodeString Proxy, UnicodeString ProxyBypass)		iphttps	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: %1 proxy information: Access type = %2; proxy = %3; bypass = %4.
+Microsoft-Windows-Iphlpsvc-Trace	5066	0	Event_5066(UnicodeString InterfaceName, UInt32 StatusCode)		iphttps	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: Client interface %1 is being shutdown.
+Microsoft-Windows-Iphlpsvc-Trace	5067	0	Event_5067(Pointer ClientContext, UnicodeString TargetAddress)		iphttps	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	IPHTTPS: Sending Duplicate Address Detection Response to client (%1) for Target: %2
+Microsoft-Windows-Iphlpsvc-Trace	5100	0	Event_5100(UInt32 AddrLength, Binary ClientIP, UnicodeString QuestionName, UnicodeString QueryReceiveInterface, UnicodeString QuerySendInterface, UInt32 DnsStatus)		dns64	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	DNS64: Query of type A from client %2 for name %3, received on interface %4 and sent on interface %5, failed with code %6.
+Microsoft-Windows-Iphlpsvc-Trace	5101	0	Event_5101(UInt32 AddrLength, Binary ClientIP, UnicodeString QuestionName, UnicodeString QueryReceiveInterface, UnicodeString QuerySendInterface, UInt32 DnsStatus)		dns64	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	DNS64: Query of type AAAA from client %2 for name %3, received on interface %4 and sent on interface %5, failed with code %6.
+Microsoft-Windows-Iphlpsvc-Trace	5102	0	Event_5102(UInt32 AddrLength, Binary ClientIP, UnicodeString QuestionName, UInt32 TranslatedIPv4Address)		dns64	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	DNS64: No matching IPv6 prefix found for IPv4 address %4, received for name %3 queried by client %2.
+Microsoft-Windows-Iphlpsvc-Trace	5103	0	Event_5103()		dns64	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	DNS64: Configured A query latency value is too high.
+Microsoft-Windows-Iphlpsvc-Trace	5104	0	Event_5104(UInt32 AddrLength, Binary ClientIP, UnicodeString QuestionName, UInt32 IPv4Address, Binary IPv6Address)		dns64	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	DNS64: AAAA response %5 received after A response %4 to query for name %3 by client %2.
+Microsoft-Windows-Iphlpsvc-Trace	5105	0	Event_5105(Pointer Object, UnicodeString Message, UInt32 Value)		dns64	task_0	Error	Microsoft-Windows-Iphlpsvc/Trace	DNS64: DNS64 Module Init Failed with status %3
+Microsoft-Windows-Iphlpsvc-Trace	5106	0	Event_5106(Pointer Object, AnsiString FileName, UInt32 LineNumber)		dns64	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	DNS64: DNS64 Instance Create %1
+Microsoft-Windows-Iphlpsvc-Trace	5107	0	Event_5107(Pointer Object, AnsiString FileName, UInt32 LineNumber)		dns64	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	DNS64: DNS64 Instance Delete %1
+Microsoft-Windows-Iphlpsvc-Trace	5108	0	Event_5108(Pointer Object, AnsiString FileName, UInt32 LineNumber)		dns64	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	DNS64: DNS64 Instance Free %1
+Microsoft-Windows-Iphlpsvc-Trace	5109	0	Event_5109(Pointer Object, AnsiString FileName, UInt32 LineNumber)		dns64	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	DNS64: DNS64 Instance Reference %1
+Microsoft-Windows-Iphlpsvc-Trace	5110	0	Event_5110(Pointer Object, AnsiString FileName, UInt32 LineNumber)		dns64	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	DNS64: DNS64 Instance Dereference %1
+Microsoft-Windows-Iphlpsvc-Trace	5111	0	Event_5111(Pointer Object, AnsiString FileName, UInt32 LineNumber, Pointer Object2)		dns64	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	DNS64: DNS64 Request %1 Create, with instance %4
+Microsoft-Windows-Iphlpsvc-Trace	5112	0	Event_5112(Pointer Object, AnsiString FileName, UInt32 LineNumber)		dns64	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	DNS64: DNS64 Request %1 Free
+Microsoft-Windows-Iphlpsvc-Trace	5113	0	Event_5113(Pointer Object, AnsiString FileName, UInt32 LineNumber)		dns64	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	DNS64: DNS64 Request Reference %1
+Microsoft-Windows-Iphlpsvc-Trace	5114	0	Event_5114(Pointer Object, AnsiString FileName, UInt32 LineNumber)		dns64	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	DNS64: DNS64 Request Dereference %1
+Microsoft-Windows-Iphlpsvc-Trace	5115	0	Event_5115(Pointer Object, UnicodeString Message, UInt32 Value)		dns64	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	DNS64: DNS64 Request Processing - request %1 with query type %3 for name %2
+Microsoft-Windows-Iphlpsvc-Trace	5116	0	Event_5116(Pointer Object, UnicodeString Message, UInt32 Value)		dns64	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	DNS64: DNS64 Request Processing - request %1 completed with response code %3
+Microsoft-Windows-Iphlpsvc-Trace	5117	0	Event_5117(Pointer Object, UnicodeString Message, UInt32 Value)		dns64	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	DNS64: DNS64 Request Processing - request %1 cancelled
+Microsoft-Windows-Iphlpsvc-Trace	5118	0	Event_5118(Pointer Object, UnicodeString Message, UInt32 Value)		dns64	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	DNS64: DNS64 Request Processing - AAAA query issued for request %1, DnsQueryEx returned status %3
+Microsoft-Windows-Iphlpsvc-Trace	5119	0	Event_5119(Pointer Object, UnicodeString Message, UInt32 Value)		dns64	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	DNS64: DNS64 Request Processing - AAAA query issued for request %1 completed with status %3
+Microsoft-Windows-Iphlpsvc-Trace	5120	0	Event_5120(Pointer Object, UnicodeString Message, UInt32 Value)		dns64	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	DNS64: DNS64 Request Processing - AAAA query cancelled for request %1
+Microsoft-Windows-Iphlpsvc-Trace	5121	0	Event_5121(Pointer Object, UnicodeString Message, UInt32 Value)		dns64	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	DNS64: DNS64 Request Processing - A query issued for request %1, DnsQueryEx returned status %3
+Microsoft-Windows-Iphlpsvc-Trace	5122	0	Event_5122(Pointer Object, UnicodeString Message, UInt32 Value)		dns64	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	DNS64: DNS64 Request Processing - A query issued for request %1 completed with status %3
+Microsoft-Windows-Iphlpsvc-Trace	5123	0	Event_5123(Pointer Object, UnicodeString Message, UInt32 Value)		dns64	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	DNS64: DNS64 Request Processing - A query cancelled for request %1
+Microsoft-Windows-Iphlpsvc-Trace	5124	0	Event_5124(Pointer Object, UnicodeString Message, UInt32 Value)		dns64	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	DNS64: DNS64 Request Processing - A query timer started for request %1
+Microsoft-Windows-Iphlpsvc-Trace	5125	0	Event_5125(Pointer Object, UnicodeString Message, UInt32 Value)		dns64	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	DNS64: DNS64 Request Processing - A query timer fired for request %1 with reason %3
+Microsoft-Windows-Iphlpsvc-Trace	5126	0	Event_5126(Pointer Object, UnicodeString Message, UInt32 Value)		dns64	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	DNS64: DNS64 Request Processing - Forwarded query issued for request %1, DnsQueryEx returned status %3
+Microsoft-Windows-Iphlpsvc-Trace	5127	0	Event_5127(Pointer Object, UnicodeString Message, UInt32 Value)		dns64	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	DNS64: DNS64 Request Processing - Forwarded query issued for request %1 completed with status %3
+Microsoft-Windows-Iphlpsvc-Trace	5128	0	Event_5128(Pointer Object, UnicodeString Message, UInt32 Value)		dns64	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	DNS64: DNS64 Request Processing - Forwarded query cancelled for request %1
+Microsoft-Windows-Iphlpsvc-Trace	5129	0	Event_5129(Pointer Object, UnicodeString Message, UInt32 Value)		dns64	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	DNS64: DNS64 Request Processing - Processing locally PTR query matched configured suffixes for request %1
+Microsoft-Windows-Iphlpsvc-Trace	5130	0	Event_5130(Pointer Object, UnicodeString Message, UInt32 Value)		dns64	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	DNS64: DNS64 Request Processing - Copying records from AAAA query results for request %1, response code set to %3
+Microsoft-Windows-Iphlpsvc-Trace	5131	0	Event_5131(Pointer Object, UnicodeString Message, UInt32 Value)		dns64	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	DNS64: DNS64 Request Processing - Synthesizing records from A query results for request %1, response code set to %3
+Microsoft-Windows-Iphlpsvc-Trace	5132	0	Event_5132(Pointer Object, UnicodeString Message, UInt32 Value)		dns64	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	DNS64: DNS64 Request Processing - Merging records from A query results for request %1, response code set to %3
+Microsoft-Windows-Iphlpsvc-Trace	5133	0	Event_5133(Pointer Object, UnicodeString Message, UInt32 Value)		dns64	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	DNS64: DNS64 Request Processing - Copying records from AAAA query results to otherwise empty response for request %1, response code set to %3
+Microsoft-Windows-Iphlpsvc-Trace	5200	0	Event_5200(UnicodeString Action)		CPVerbose	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	Connectivity Platform operation in action: %1.
+Microsoft-Windows-Iphlpsvc-Trace	5201	0	Event_5201(UnicodeString Action)		CPStart	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	Connectivity Platform operation started: %1.
+Microsoft-Windows-Iphlpsvc-Trace	5202	0	Event_5202(UnicodeString Action)		CPEnd	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	Connectivity Platform operation ended: %1.
+Microsoft-Windows-Iphlpsvc-Trace	5203	0	Event_5203(UnicodeString Action)		CPFailures	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	Connectivity Platform operation failed: %1.
+Microsoft-Windows-Iphlpsvc-Trace	5300	0	Event_5300(UnicodeString Action)		HA	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	HA: %1 started.
+Microsoft-Windows-Iphlpsvc-Trace	5301	0	Event_5301(UnicodeString Action, UInt32 Status)		HA	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	HA: %1 failed with status %2.
+Microsoft-Windows-Iphlpsvc-Trace	5302	0	Event_5302(UInt32 Count)		HA	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	HA: HEP discovery succeeded, found %1 addresses.
+Microsoft-Windows-Iphlpsvc-Trace	5303	0	Event_5303(UInt32 Count)		HA	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	HA: Connection attempt failed, retrying %1 more times.
+Microsoft-Windows-Iphlpsvc-Trace	5304	0	Event_5304(GUID NetworkID)		HA	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	HA: Successfully connected to network %1.
+Microsoft-Windows-Iphlpsvc-Trace	5401	0	Event_5401(UnicodeString Reason, UInt32 Event)		PROXYMGR	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	PROXYMGR: %1: notifying providers of event: %2
+Microsoft-Windows-Iphlpsvc-Trace	5402	0	Event_5402(UnicodeString Reason, UInt32 Event)		PROXYMGR	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	PROXYMGR: %1: notifying clients of event: %2
+Microsoft-Windows-Iphlpsvc-Trace	5403	0	Event_5403(UnicodeString Action, UInt32 Status)		PROXYMGR	task_0	Error	Microsoft-Windows-Iphlpsvc/Trace	PROXYMGR: %1 failed with status %2
+Microsoft-Windows-Iphlpsvc-Trace	5404	0	Event_5404(UnicodeString Action)		PROXYMGR	task_0	Error	Microsoft-Windows-Iphlpsvc/Trace	PROXYMGR: %1
+Microsoft-Windows-Iphlpsvc-Trace	5501	0	Event_5501(UInt32 SiteSelectionMethod, UnicodeString SiteName, UnicodeString IphttpsProfileName, UInt32 TeredoServerIp, UInt32 AddrLength, Binary SiteIpv6Address, UnicodeString AdSiteName, UnicodeString CorporateRanges)		damultisite	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	DA MULTISITE: Configuring site %2 selected based on %1.
+Microsoft-Windows-Iphlpsvc-Trace	5502	0	Event_5502(UnicodeString AdSiteName, UInt32 Status)		damultisite	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	DA MULTISITE: Configured AD site name, status %2.
+Microsoft-Windows-Iphlpsvc-Trace	5503	0	Event_5503(UInt32 AddrLength, Binary Prefix, UInt32 PrefixLength, UInt32 Status)		damultisite	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	DA MULTISITE: Added a prefix to the prefix policy table, status %4
+Microsoft-Windows-Iphlpsvc-Trace	5504	0	Event_5504(UnicodeString IphttpsProfileName, UInt32 Status)		damultisite	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	DA MULTISITE: Configured IPHTTPS to use profile %1, status %2
+Microsoft-Windows-Iphlpsvc-Trace	5505	0	Event_5505(UInt32 TeredoServerIp, UInt32 Status)		damultisite	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	DA MULTISITE: Configured Teredo to use server %1, status %2
+Microsoft-Windows-Iphlpsvc-Trace	5506	0	Event_5506(UnicodeString SiteName)		damultisite	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	DA MULTISITE: Removed configuration for site %1.
+Microsoft-Windows-Iphlpsvc-Trace	5508	0	Event_5508(UnicodeString SortingSiteName, UInt32 SortingMetric, UInt32 AddressFamily, UnicodeString ProbingSiteName)		damultisite	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	DA MULTISITE: Site %4 is selected based on probing. Previously, TCP/IP sorting selected site %1 with metric %2 for address family %3.
+Microsoft-Windows-Iphlpsvc-Trace	5509	0	Event_5509(Pointer Object, UnicodeString Message, UInt32 Value)		damultisite	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	DA MULTISITE: Name resolution for multisite FQDN %2 started with error code %3.
+Microsoft-Windows-Iphlpsvc-Trace	5510	0	Event_5510(UnicodeString Action)		damultisite	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	DA MULTISITE: Name resolution for multisite FQDN %1 cancelled.
+Microsoft-Windows-Iphlpsvc-Trace	5511	0	Event_5511(Pointer Object, UnicodeString Message, UInt32 Value)		damultisite	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	DA MULTISITE: Name resolution for multisite FQDN %2 completed with error code %3.
+Microsoft-Windows-Iphlpsvc-Trace	5512	0	Event_5512(UInt32 AddrLength, Binary Prefix)		damultisite	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	DA MULTISITE: No potentially reachable site record found for the IP address %2 resolved for the multisite FQDN.
+Microsoft-Windows-Iphlpsvc-Trace	5513	0	Event_5513(Pointer Object, UnicodeString Message, UInt32 Value)		damultisite	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	DA MULTISITE: Site probing preparation finished with %3 site probes prepared.
+Microsoft-Windows-Iphlpsvc-Trace	5514	0	Event_5514(UnicodeString SiteUrl, UInt64 Timestamp)		damultisite	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	DA MULTISITE: Site probing prepared for URL %1 at timestamp %2.
+Microsoft-Windows-Iphlpsvc-Trace	5515	0	Event_5515(UnicodeString SiteUrl, UInt32 ErrorCode, UInt64 Timestamp)		damultisite	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	DA MULTISITE: Site probing started for URL %1 with error code %2 at timestamp %3.
+Microsoft-Windows-Iphlpsvc-Trace	5516	0	Event_5516(UnicodeString Action)		damultisite	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	DA MULTISITE: Site probing cancelled for URL %1.
+Microsoft-Windows-Iphlpsvc-Trace	5517	0	Event_5517(UnicodeString SiteUrl, UInt32 ErrorCode, UInt32 HttpStatus, UInt64 Timestamp)		damultisite	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	DA MULTISITE: Site probe for URL %1 completed with error code %2, HTTP status %3 at timestamp %4.
+Microsoft-Windows-Iphlpsvc-Trace	5518	0	Event_5518(Pointer Object, UnicodeString Message, UInt32 Value)		damultisite	task_0	Verbose	Microsoft-Windows-Iphlpsvc/Trace	DA MULTISITE: Timer expired in state %3.
+Microsoft-Windows-Iphlpsvc-Trace	5607	0	Event_5607(UnicodeString SiteName, UInt64 Delay)		damultisite	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	DA MULTISITE: Corporate connectivity has been indicated in %2 milliseconds or less after site %1 configuration.

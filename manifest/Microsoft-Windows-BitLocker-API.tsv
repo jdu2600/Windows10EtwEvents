@@ -1,199 +1,125 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-BitLocker-API	513	0	task_0(GUID ProtectorGUID, GUID VolumeGUID)			task_0	Informational		
-Microsoft-Windows-BitLocker-API	514	0	task_0514(GUID ProtectorGUID, HexInt32 ErrorCode, GUID VolumeGUID)			task_0	Warning		
-Microsoft-Windows-BitLocker-API	515	0	task_0515(GUID ProtectorGUID, GUID VolumeGUID)			task_0	Informational		
-Microsoft-Windows-BitLocker-API	516	0	task_0516(GUID ProtectorGUID, UnicodeString Thumbprint, GUID VolumeGUID)			task_0	Informational		
-Microsoft-Windows-BitLocker-API	517	0	task_0517(GUID ProtectorGUID, UnicodeString Thumbprint, GUID VolumeGUID)			task_0	Informational		
-Microsoft-Windows-BitLocker-API	518	0	task_0518(HexInt32 ErrorCode, UnicodeString Thumbprint, GUID VolumeGUID)			task_0	Warning		
-Microsoft-Windows-BitLocker-API	519	0	task_0519(HexInt32 ErrorCode, GUID VolumeGUID)			task_0	Error		
-Microsoft-Windows-BitLocker-API	520	0	task_0520(HexInt32 ErrorCode, GUID VolumeGUID)			task_0	Informational		
-Microsoft-Windows-BitLocker-API	521	0	task_0521(GUID VolumeGUID)			task_0	Error		
-Microsoft-Windows-BitLocker-API	522	0	task_0522(UnicodeString BootApplication, GUID VolumeGUID)			task_0	Error		
-Microsoft-Windows-BitLocker-API	523	0	task_0523(HexInt32 BCDSetting, UnicodeString BootApplication, GUID VolumeGUID)			task_0	Error		
-Microsoft-Windows-BitLocker-API	524	0	task_0524(GUID VolumeGUID)			task_0	Error		
-Microsoft-Windows-BitLocker-API	525	0	task_0525(GUID VolumeGUID)			task_0	Error		
-Microsoft-Windows-BitLocker-API	526	0	task_0526(GUID VolumeGUID)			task_0	Error		
-Microsoft-Windows-BitLocker-API	527	0	task_0527(GUID VolumeGUID)			task_0	Error		
-Microsoft-Windows-BitLocker-API	528	0	task_0528(GUID VolumeGUID)			task_0	Error		
-Microsoft-Windows-BitLocker-API	529	0	task_0529(GUID VolumeGUID)			task_0	Error		
-Microsoft-Windows-BitLocker-API	530	0	task_0530(GUID VolumeGUID)			task_0	Error		
-Microsoft-Windows-BitLocker-API	531	0	task_0531(GUID VolumeGUID)			task_0	Error		
-Microsoft-Windows-BitLocker-API	532	0	task_0532(GUID VolumeGUID)			task_0	Error		
-Microsoft-Windows-BitLocker-API	768	0	task_0768(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, UInt16 AlgorithmType)			task_0	Informational		
-Microsoft-Windows-BitLocker-API	769	0	task_0769(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, UInt16 AlgorithmType)			task_0	Informational		
-Microsoft-Windows-BitLocker-API	770	0	task_0770(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Warning		
-Microsoft-Windows-BitLocker-API	771	0	task_0771(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Warning		
-Microsoft-Windows-BitLocker-API	772	0	task_0772(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, UInt16 AlgorithmType)			task_0	Informational		
-Microsoft-Windows-BitLocker-API	773	0	task_0773(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Warning		
-Microsoft-Windows-BitLocker-API	774	0	task_0774(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Informational		
-Microsoft-Windows-BitLocker-API	775	0	task_0775(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, GUID ProtectorGUID, HexInt32 ProtectorType)			task_0	Informational		
-Microsoft-Windows-BitLocker-API	776	0	task_0776(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, GUID ProtectorGUID)			task_0	Informational		
-Microsoft-Windows-BitLocker-API	777	0	BitLockerPINModificationTask(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, GUID ProtectorGUID)			BitLockerPINModificationTask	Informational		
-Microsoft-Windows-BitLocker-API	778	0	task_0778(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Warning		
-Microsoft-Windows-BitLocker-API	779	0	task_0779(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Warning		
-Microsoft-Windows-BitLocker-API	780	0	task_0780(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Informational		
-Microsoft-Windows-BitLocker-API	781	0	task_0781(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Informational		
-Microsoft-Windows-BitLocker-API	782	0	task_0782(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, GUID ProtectorGUID, HexInt32 ProtectorType)			task_0	Informational		
-Microsoft-Windows-BitLocker-API	783	0	task_0783(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, GUID ProtectorGUID)			task_0	Informational		
-Microsoft-Windows-BitLocker-API	784	0	task_0784(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, GUID ProtectorGUID)			task_0	Informational		
-Microsoft-Windows-BitLocker-API	785	0	task_0785(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, GUID ProtectorGUID)			task_0	Error		
-Microsoft-Windows-BitLocker-API	786	0	task_0786(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Informational		
-Microsoft-Windows-BitLocker-API	787	0	task_0787(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Warning		
-Microsoft-Windows-BitLocker-API	788	0	task_0788(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Informational		
-Microsoft-Windows-BitLocker-API	789	0	BitLockerPINModificationTask789()			BitLockerPINModificationTask	Informational		
-Microsoft-Windows-BitLocker-API	790	0	BitLockerPINModificationTask790(Int32 ErrorCode)			BitLockerPINModificationTask	Error		
-Microsoft-Windows-BitLocker-API	791	0	BitLockerPINModificationTask791()			BitLockerPINModificationTask	Error		
-Microsoft-Windows-BitLocker-API	792	0	task_0792(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, Int32 ErrorCode)			task_0	Error		
-Microsoft-Windows-BitLocker-API	793	0	task_0793(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Warning		
-Microsoft-Windows-BitLocker-API	794	0	task_0794(Int32 ErrorCode)			task_0	Error		
-Microsoft-Windows-BitLocker-API	795	0	task_0795(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Informational		
-Microsoft-Windows-BitLocker-API	796	0	task_0796(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Informational		
-Microsoft-Windows-BitLocker-API	797	0	task_0797(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Warning		
-Microsoft-Windows-BitLocker-API	798	0	task_0798(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Warning		
-Microsoft-Windows-BitLocker-API	799	0	task_0799(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Warning		
-Microsoft-Windows-BitLocker-API	800	0	task_0800(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Warning		
-Microsoft-Windows-BitLocker-API	801	0	task_0801(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Warning		
-Microsoft-Windows-BitLocker-API	802	0	task_0802(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, Int32 ExpectedKeyLength, Int32 ActualKeyLength)			task_0	Warning		
-Microsoft-Windows-BitLocker-API	803	0	task_0803(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, Int32 ExpectedKeyLength, Int32 ActualKeyLength)			task_0	Warning		
-Microsoft-Windows-BitLocker-API	804	0	task_0804(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Error		
-Microsoft-Windows-BitLocker-API	805	0	task_0805(GUID IdentificationGUID, GUID ProtectorGUID, HexInt32 ProtectorType, SYSTEMTIME UnlockTime)			task_0	Informational		
-Microsoft-Windows-BitLocker-API	806	0	task_0806(GUID IdentificationGUID, SYSTEMTIME ResealTime)			task_0	Warning		
-Microsoft-Windows-BitLocker-API	807	0	task_0807(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Warning		
-Microsoft-Windows-BitLocker-API	808	0	task_0808(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Warning		
-Microsoft-Windows-BitLocker-API	809	0	task_0809()			task_0	Informational		
-Microsoft-Windows-BitLocker-API	810	0	task_0810()			task_0	Informational		
-Microsoft-Windows-BitLocker-API	811	0	task_0811(UnicodeString VariableName)			task_0	Informational		
-Microsoft-Windows-BitLocker-API	812	0	task_0812(UnicodeString VariableName, Int32 ErrorCode)			task_0	Warning		
-Microsoft-Windows-BitLocker-API	813	0	task_0813(UnicodeString VariableName)			task_0	Warning		
-Microsoft-Windows-BitLocker-API	814	0	task_0814()			task_0	Warning		
-Microsoft-Windows-BitLocker-API	815	0	task_0815()			task_0	Warning		
-Microsoft-Windows-BitLocker-API	816	0	task_0816()			task_0	Warning		
-Microsoft-Windows-BitLocker-API	817	0	task_0817(UInt32 PCRBitmap, UInt32 PCRBitmapSource, UInt32 PCRValuesSize, Binary PCRValues, UInt32 FilteredTcgLogSize, Binary FilteredTcgLog, UInt16 TpmSrkAesStrengthInBits)			task_0	Informational		
-Microsoft-Windows-BitLocker-API	818	0	task_0818(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, Int32 ErrorCode)			task_0	Warning		
-Microsoft-Windows-BitLocker-API	819	0	task_0819(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, Int32 ErrorCode)			task_0	Error		
-Microsoft-Windows-BitLocker-API	820	0	task_0820(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, Int32 ErrorCode)			task_0	Error		
-Microsoft-Windows-BitLocker-API	821	0	task_0821(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, Int32 ErrorCode)			task_0	Error		
-Microsoft-Windows-BitLocker-API	822	0	task_0822(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, Int32 ErrorCode)			task_0	Error		
-Microsoft-Windows-BitLocker-API	823	0	task_0823(GUID VolumeGUID)			task_0	Error		
-Microsoft-Windows-BitLocker-API	824	0	task_0824(GUID VolumeGUID)			task_0	Error		
-Microsoft-Windows-BitLocker-API	825	0	task_0825(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Informational		
-Microsoft-Windows-BitLocker-API	826	0	BitLockerPasswordModificationTask()			BitLockerPasswordModificationTask	Informational		
-Microsoft-Windows-BitLocker-API	827	0	BitLockerPasswordModificationTask827(Int32 ErrorCode)			BitLockerPasswordModificationTask	Error		
-Microsoft-Windows-BitLocker-API	828	0	task_0828(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, GUID ProtectorGUID)			task_0	Informational		
-Microsoft-Windows-BitLocker-API	829	0	task_0829(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, Int32 ErrorCode)			task_0	Error		
-Microsoft-Windows-BitLocker-API	830	0	task_0830()			task_0	Warning		
-Microsoft-Windows-BitLocker-API	831	0	task_0831(Int32 JsonErrorCode, UnicodeString LocalizedJsonError)			task_0	Error		
-Microsoft-Windows-BitLocker-API	832	0	task_0832(Int32 ErrorCode)			task_0	Warning		
-Microsoft-Windows-BitLocker-API	833	0	task_0833()			task_0	Warning		
-Microsoft-Windows-BitLocker-API	834	0	task_0834(UInt32 PCRBitmap, UInt32 PCRBitmapSource, UInt32 PCRValuesSize, Binary PCRValues, UInt32 FilteredTcgLogSize, Binary FilteredTcgLog, UInt16 TpmSrkAesStrengthInBits)			task_0	Informational		
-Microsoft-Windows-BitLocker-API	835	0	task_0835()			task_0	Warning		
-Microsoft-Windows-BitLocker-API	836	0	task_0836()			task_0	Warning		
-Microsoft-Windows-BitLocker-API	837	0	task_0837()			task_0	Warning		
-Microsoft-Windows-BitLocker-API	838	0	task_0838()			task_0	Warning		
-Microsoft-Windows-BitLocker-API	839	0	task_0839()			task_0	Warning		
-Microsoft-Windows-BitLocker-API	840	0	task_0840(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, UInt32 BinaryDataSize, Binary BinaryData)			task_0	Informational		
-Microsoft-Windows-BitLocker-API	841	0	task_0841(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, Int32 ErrorCode)			task_0	Warning		
-Microsoft-Windows-BitLocker-API	842	0	task_0842(Int32 ErrorCode)			task_0	Error		
-Microsoft-Windows-BitLocker-API	843	0	task_0843(GUID IdentificationGUID, SYSTEMTIME ResealTime)			task_0	Warning		
-Microsoft-Windows-BitLocker-API	844	0	task_0844(Int32 ErrorCode)			task_0	Error		
-Microsoft-Windows-BitLocker-API	845	0	task_0845(UnicodeString VolumeMountPoint, GUID ProtectorGUID, GUID TraceGUID)			task_0	Informational		
-Microsoft-Windows-BitLocker-API	846	0	task_0846(UnicodeString VolumeMountPoint, GUID TraceGUID, Int32 ErrorCode)			task_0	Error		
-Microsoft-Windows-BitLocker-API	847	0	task_0847(UnicodeString JsonRequestId, UnicodeString JsonTime, UnicodeString JsonErrorCode, UnicodeString JsonSubCode, UnicodeString JsonMessage)			task_0	Error		
-Microsoft-Windows-BitLocker-API	848	0	task_0848(Int32 ErrorCode)			task_0	Error		
-Microsoft-Windows-BitLocker-API	849	0	task_0849(Int32 ErrorCode)			task_0	Error		
-Microsoft-Windows-BitLocker-API	850	0	task_0850(Int32 ErrorCode)			task_0	Informational		
-Microsoft-Windows-BitLocker-API	851	0	task_0851(Int32 ErrorCode)			task_0	Error		
-Microsoft-Windows-BitLocker-API	852	0	task_0852(Int32 ErrorCode)			task_0	Error		
-Microsoft-Windows-BitLocker-API	853	0	task_0853(Int32 ErrorCode)			task_0	Error		
-Microsoft-Windows-BitLocker-API	854	0	task_0854(Int32 ErrorCode)			task_0	Error		
-Microsoft-Windows-BitLocker-API	855	0	task_0855()			task_0	Informational		
-Microsoft-Windows-BitLocker-API	856	0	task_0856(Int32 ErrorCode)			task_0	Error		
-Microsoft-Windows-BitLocker-API	857	0	task_0857()			task_0	Informational		
-Microsoft-Windows-BitLocker-API	858	0	task_0858(Int32 ErrorCode)			task_0	Error		
-Microsoft-Windows-BitLocker-API	859	0	task_0859(UnicodeString VolumeName, UnicodeString VolumeMountPoint, GUID ProtectorGUID, Int32 ErrorCode)			task_0	Error		
-Microsoft-Windows-BitLocker-API	860	0	task_0860(Int32 ErrorCode)			task_0	Error		
-Microsoft-Windows-BitLocker-API	861	0	task_0861(UnicodeString VolumeName, UnicodeString VolumeMountPoint, GUID ProtectorGUID, Int32 ErrorCode)			task_0	Error		
-Microsoft-Windows-BitLocker-API	862	0	task_0862(UnicodeString VolumeName, UnicodeString VolumeMountPoint, GUID ProtectorGUID, Int32 ErrorCode)			task_0	Error		
-Microsoft-Windows-BitLocker-API	863	0	task_0863(Int32 ErrorCode)			task_0	Error		
-Microsoft-Windows-BitLocker-API	864	0	task_0864()			task_0	Informational		
-Microsoft-Windows-BitLocker-API	865	0	task_0865(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, Int32 ErrorCode)			task_0	Error		
-Microsoft-Windows-BitLocker-API	866	0	task_0866(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, GUID ProtectorGUID, HexInt32 ProtectorType)			task_0	Informational		
-Microsoft-Windows-BitLocker-API	867	0	task_0867(UnicodeString VolumeMountPoint, UnicodeString ProtectorGUIDs, GUID TraceGUID)			task_0	Warning		
-Microsoft-Windows-BitLocker-API	868	0	task_0868(Int32 ErrorCode)			task_0	Warning		
-Microsoft-Windows-BitLocker-API	869	0	task_0869()			task_0	Informational		
-Microsoft-Windows-BitLocker-API	870	0	task_0870(UnicodeString VolumeName, UnicodeString VolumeMountPoint, GUID ProtectorGUID, Int32 ErrorCode)			task_0	Error		
-Microsoft-Windows-BitLocker-API	871	0	task_0871(Int32 ErrorCode)			task_0	Error		
-Microsoft-Windows-BitLocker-API	872	0	task_0872(GUID ProtectorGUID, UInt32 RequestType, UnicodeString VolumeName, Int32 ErrorCode)			task_0	Error		
-Microsoft-Windows-BitLocker-API	873	0	task_0873(Int32 ErrorCode, UInt32 HttpStatusCode, Boolean RetryRequest, Boolean DidSetRetryHint, UInt64 RetryHint)			task_0	Error		
-Microsoft-Windows-BitLocker-API	874	0	task_0874(Int32 ErrorCode, UInt32 HttpStatusCode, Boolean RetryRequest, Boolean DidSetRetryHint, UInt64 RetryHint)			task_0	Error		
-Microsoft-Windows-BitLocker-API	875	0	task_0875(Int32 ErrorCode, UInt32 HttpStatusCode, Boolean RetryRequest, Boolean DidSetRetryHint, UInt64 RetryHint)			task_0	Error		
-Microsoft-Windows-BitLocker-API	876	0	task_0876(Int32 ErrorCode)			task_0	Error		
-Microsoft-Windows-BitLocker-API	877	0	task_0877()			task_0	Warning		
-Microsoft-Windows-BitLocker-API	878	0	task_0878(Int32 ErrorCode)			task_0	Error		
-Microsoft-Windows-BitLocker-API	879	0	task_0879(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, Int32 ErrorCode)			task_0	Error		
-Microsoft-Windows-BitLocker-API	880	0	task_0880(Int32 ErrorCode)			task_0	Warning		
-Microsoft-Windows-BitLocker-API	881	0	task_0881()			task_0	Informational		
-Microsoft-Windows-BitLocker-API	882	0	task_0882()			task_0	Warning		
-Microsoft-Windows-BitLocker-API	883	0	task_0883(UInt32 SignatureDBType)			task_0	Warning		
-Microsoft-Windows-BitLocker-API	884	0	task_0884(UInt32 SignatureDBType)			task_0	Warning		
-Microsoft-Windows-BitLocker-API	885	0	task_0885(UInt32 SignatureDBType)			task_0	Warning		
-Microsoft-Windows-BitLocker-API	886	0	task_0886(Int32 ErrorCode, GUID IdentityGUID)			task_0	Warning		
-Microsoft-Windows-BitLocker-API	887	0	task_0887(GUID VolumeGUID)			task_0	Error		
-Microsoft-Windows-BitLocker-API	888	0	task_0888(GUID VolumeGUID)			task_0	Error		
-Microsoft-Windows-BitLocker-API	889	0	task_0889(UInt32 Pcr, UInt32 PostBootLockEventPCRBitmap)			task_0	Error		
-Microsoft-Windows-BitLocker-API	890	0	task_0890(UInt32 CountTpmBindings, UInt64 TpmBindingsTotalSizeTpmDatumsOnly, UInt64 TpmBindingsTotalSizeIncludingDigestDatums, UInt8 CensusData)			task_0	Informational		
-Microsoft-Windows-BitLocker-API	891	0	task_0891(Int32 ErrorCode, UInt64 USN, UInt32 Scenario, UnicodeString VolumeMountPoint)			task_0	Informational		
-Microsoft-Windows-BitLocker-API	892	0	task_0892(UInt32 PCRBitmap, UInt32 PCRBitmapSource, UInt32 PCRValuesSize, Binary PCRValues, AnsiString FilteredLog, UInt16 TpmSrkAesStrengthInBits, UInt32 ExcludedPcrsBitmap)			task_0	Informational		
-Microsoft-Windows-BitLocker-API	893	0	task_0893(UInt32 PCRBitmap, UInt32 PCRBitmapSource, UInt32 PCRValuesSize, Binary PCRValues, AnsiString FilteredLog, UInt16 TpmSrkAesStrengthInBits, UInt32 ExcludedPcrsBitmap)			task_0	Informational		
-Microsoft-Windows-BitLocker-API	896	0	task_0896(UInt32 ExcludedPcrsBitmap, UInt32 PcrProfile)			task_0	Warning		
-Microsoft-Windows-BitLocker-API	4096	0	task_04096(Int32 ErrorCode)			task_0	Error		
-Microsoft-Windows-BitLocker-API	4097	0	task_0Start()	Start		task_0	Informational		
-Microsoft-Windows-BitLocker-API	4098	0	task_0Stop()	Stop		task_0	Informational		
-Microsoft-Windows-BitLocker-API	4099	0	task_04099(Int32 ErrorCode)			task_0	Error		
-Microsoft-Windows-BitLocker-API	4100	0	task_0Start4100()	Start		task_0	Informational		
-Microsoft-Windows-BitLocker-API	4101	0	task_0Stop4101()	Stop		task_0	Informational		
-Microsoft-Windows-BitLocker-API	4102	0	task_04102(Int32 ErrorCode)			task_0	Error		
-Microsoft-Windows-BitLocker-API	4103	0	task_04103(Int32 ErrorCode)			task_0	Error		
-Microsoft-Windows-BitLocker-API	4104	0	task_0Start4104()	Start		task_0	Informational		
-Microsoft-Windows-BitLocker-API	4105	0	task_0Stop4105()	Stop		task_0	Informational		
-Microsoft-Windows-BitLocker-API	4106	0	task_04106(Int32 ErrorCode)			task_0	Error		
-Microsoft-Windows-BitLocker-API	4107	0	task_0Start4107()	Start		task_0	Informational		
-Microsoft-Windows-BitLocker-API	4108	0	task_0Stop4108()	Stop		task_0	Informational		
-Microsoft-Windows-BitLocker-API	4109	0	task_0Start4109()	Start		task_0	Informational		
-Microsoft-Windows-BitLocker-API	4110	0	task_0Stop4110()	Stop		task_0	Informational		
-Microsoft-Windows-BitLocker-API	4111	0	task_04111(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Warning		
-Microsoft-Windows-BitLocker-API	4112	0	task_04112(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Informational		
-Microsoft-Windows-BitLocker-API	4113	0	task_04113(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, Int32 ErrorCode)			task_0	Informational		
-Microsoft-Windows-BitLocker-API	4114	0	task_04114(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, Int32 ErrorCode)			task_0	Warning		
-Microsoft-Windows-BitLocker-API	4116	0	task_0Start4116(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)	Start		task_0	Informational		
-Microsoft-Windows-BitLocker-API	4117	0	task_0Stop4117(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)	Stop		task_0	Informational		
-Microsoft-Windows-BitLocker-API	4118	0	task_04118(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, Int32 ErrorCode)			task_0	Error		
-Microsoft-Windows-BitLocker-API	4119	0	task_04119()			task_0	Error		
-Microsoft-Windows-BitLocker-API	4120	0	task_04120()			task_0	Error		
-Microsoft-Windows-BitLocker-API	4121	0	task_04121()			task_0	Error		
-Microsoft-Windows-BitLocker-API	4122	0	task_04122(UnicodeString LocalizedText)			task_0	Informational		
-Microsoft-Windows-BitLocker-API	4123	0	task_04123(UnicodeString VolumeMountPoint, UnicodeString ProtectorGUIDs, GUID TraceGUID)			task_0	Informational		
-Microsoft-Windows-BitLocker-API	4124	0	task_04124()			task_0	Informational		
-Microsoft-Windows-BitLocker-API	4125	0	task_04125(HexInt32 Data)			task_0	Informational		
-Microsoft-Windows-BitLocker-API	4126	0	task_04126(HexInt32 Data1, HexInt32 Data2)			task_0	Informational		
-Microsoft-Windows-BitLocker-API	4127	0	task_04127(HexInt32 Data)			task_0	Informational		
-Microsoft-Windows-BitLocker-API	4128	0	task_04128(HexInt32 Data1, HexInt32 Data2)			task_0	Informational		
-Microsoft-Windows-BitLocker-API	4129	0	task_04129(UnicodeString HSTIImplID, HexInt32 Data1, HexInt32 Data2)			task_0	Informational		
-Microsoft-Windows-BitLocker-API	4130	0	task_04130(UnicodeString HSTIImplID, HexInt32 Data)			task_0	Informational		
-Microsoft-Windows-BitLocker-API	4131	0	task_04131(UnicodeString HSTIImplID, Boolean BoolData)			task_0	Informational		
-Microsoft-Windows-BitLocker-API	4132	0	task_04132(UnicodeString HSTIImplID, Boolean BoolData)			task_0	Error		
-Microsoft-Windows-BitLocker-API	4133	0	task_04133()			task_0	Error		
-Microsoft-Windows-BitLocker-API	4134	0	task_04134(UnicodeString HSTIImplID)			task_0	Warning		
-Microsoft-Windows-BitLocker-API	4135	0	task_04135(Boolean BoolData)			task_0	Informational		
-Microsoft-Windows-BitLocker-API	4136	0	task_04136(UInt32 SecFeatureIndex, UInt8 Data)			task_0	Error		
-Microsoft-Windows-BitLocker-API	4137	0	task_04137(UnicodeString HSTIImplID, UnicodeString ProviderErrorMsg)			task_0	Error		
-Microsoft-Windows-BitLocker-API	4138	0	task_04138(Int32 ErrorCode)			task_0	Informational		
-Microsoft-Windows-BitLocker-API	4139	0	task_04139(Int32 ErrorCode)			task_0	Error		
-Microsoft-Windows-BitLocker-API	4140	0	task_04140(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, Int32 ErrorCode)			task_0	Informational		
-Microsoft-Windows-BitLocker-API	4141	0	task_04141(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, Int32 ErrorCode)			task_0	Error		
-Microsoft-Windows-BitLocker-API	4142	0	task_04142(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, UInt32 BinaryDataSize, Binary BinaryData)			task_0	Informational		
-Microsoft-Windows-BitLocker-API	4143	0	task_04143(Int32 ErrorCode)			task_0	Error		
-Microsoft-Windows-BitLocker-API	4144	0	task_04144(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, UInt32 BinaryDataSize, Binary BinaryData)			task_0	Informational		
-Microsoft-Windows-BitLocker-API	4145	0	task_04145(Int32 ErrorCode)			task_0	Error		
-Microsoft-Windows-BitLocker-API	4146	0	task_04146(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Informational		
-Microsoft-Windows-BitLocker-API	4147	0	task_04147(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Informational		
+Microsoft-Windows-BitLocker-API	513	0	Event_513(GUID ProtectorGUID, GUID VolumeGUID)			task_0	Informational	System	BitLocker Drive Encryption recovery information was backed up successfully to Active Directory Domain Services.\r\nProtector GUID: %1\r\nVolume GUID: %2
+Microsoft-Windows-BitLocker-API	514	0	Event_514(GUID ProtectorGUID, HexInt32 ErrorCode, GUID VolumeGUID)			task_0	Warning	System	Failed to backup BitLocker Drive Encryption recovery information to Active Directory Domain Services.\r\nErrorcode: %2\r\nProtector GUID: %1\r\nVolume GUID: %3
+Microsoft-Windows-BitLocker-API	515	0	Event_515(GUID ProtectorGUID, GUID VolumeGUID)			task_0	Informational	System	BitLocker Drive Encryption recovery information for the specified protector is already present in Active Directory Domain Services.\r\nProtector GUID: %1\r\nVolume GUID: %2
+Microsoft-Windows-BitLocker-API	516	0	Event_516(GUID ProtectorGUID, UnicodeString Thumbprint, GUID VolumeGUID)			task_0	Informational	System	A BitLocker certificate data recovery agent was created, because it was missing on the volume or added to the list of data recovery agents.\r\nCertificate thumbprint: %2\r\nProtector GUID: %1\r\nVolume GUID: %3
+Microsoft-Windows-BitLocker-API	517	0	Event_517(GUID ProtectorGUID, UnicodeString Thumbprint, GUID VolumeGUID)			task_0	Informational	System	A BitLocker certificate data recovery agent was removed, because is no longer in the list of data recovery agents.\r\nCertificate thumbprint: %2\r\nProtector GUID: %1\r\nVolume GUID: %3
+Microsoft-Windows-BitLocker-API	518	0	Event_518(HexInt32 ErrorCode, UnicodeString Thumbprint, GUID VolumeGUID)			task_0	Warning	System	The attempt to create a data recovery agent protector on the BitLocker volume failed.\r\nErrorcode: %1\r\nCertificate thumbprint: %2\r\nVolume GUID: %3
+Microsoft-Windows-BitLocker-API	519	0	Event_519(HexInt32 ErrorCode, GUID VolumeGUID)			task_0	Error	System	The servicing of the data recovery agents on the volume failed.\r\nErrorcode: %1\r\nVolume GUID: %2
+Microsoft-Windows-BitLocker-API	520	0	Event_520(HexInt32 ErrorCode, GUID VolumeGUID)			task_0	Informational	System	The management of the data recovery agents failed on this drive because this feature of BitLocker Drive Encryption is not supported in this edition of the Windows operating system. \r\nErrorcode: %1\r\nVolume GUID: %2
+Microsoft-Windows-BitLocker-API	521	0	Event_521(GUID VolumeGUID)			task_0	Error	System	Bootmgr failed to obtain the BitLocker volume master key from the TPM because the PCRs did not match.
+Microsoft-Windows-BitLocker-API	522	0	Event_522(UnicodeString BootApplication, GUID VolumeGUID)			task_0	Error	System	Bootmgr determined that the following boot application has changed: %1
+Microsoft-Windows-BitLocker-API	523	0	Event_523(HexInt32 BCDSetting, UnicodeString BootApplication, GUID VolumeGUID)			task_0	Error	System	Bootmgr determined that the boot configuration data setting %1 has changed for the following boot application: %2
+Microsoft-Windows-BitLocker-API	524	0	Event_524(GUID VolumeGUID)			task_0	Error	System	Bootmgr determined that the authorization data for the SRK of the TPM is incompatible with BitLocker.
+Microsoft-Windows-BitLocker-API	525	0	Event_525(GUID VolumeGUID)			task_0	Error	System	Bootmgr determined that the TPM is disabled.
+Microsoft-Windows-BitLocker-API	526	0	Event_526(GUID VolumeGUID)			task_0	Error	System	Bootmgr determined that the TPM is not accessible.
+Microsoft-Windows-BitLocker-API	527	0	Event_527(GUID VolumeGUID)			task_0	Error	System	The partition size specified in the partition table is smaller than the size of the file system contained by that partition.  BitLocker TPM based keys cannot be used until the size of the partition calculated from the partition table is consistent with the size of the file system calculated from the bytes per sector and number of sectors fields in the boot sector.
+Microsoft-Windows-BitLocker-API	528	0	Event_528(GUID VolumeGUID)			task_0	Error	System	Boot debugging is enabled on Bootmgr so TPM based keys cannot be obtained.
+Microsoft-Windows-BitLocker-API	529	0	Event_529(GUID VolumeGUID)			task_0	Error	System	Bootmgr determined that driver signature enforcement has been disabled.
+Microsoft-Windows-BitLocker-API	530	0	Event_530(GUID VolumeGUID)			task_0	Error	System	Bootmgr determined that the device was locked out due to too many failed password attempts.
+Microsoft-Windows-BitLocker-API	531	0	Event_531(GUID VolumeGUID)			task_0	Error	System	Bootmgr determined that the device was locked out due to Device Lockout state validation failure.
+Microsoft-Windows-BitLocker-API	768	0	Event_768(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Informational	Microsoft-Windows-BitLocker/BitLocker Management	BitLocker encryption was started for volume %3.
+Microsoft-Windows-BitLocker-API	769	0	Event_769(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Informational	Microsoft-Windows-BitLocker/BitLocker Management	BitLocker encryption will occur for volume %3 when the computer is restarted.
+Microsoft-Windows-BitLocker-API	770	0	Event_770(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Warning	Microsoft-Windows-BitLocker/BitLocker Management	BitLocker decryption was started for volume %3.
+Microsoft-Windows-BitLocker-API	771	0	Event_771(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Warning	Microsoft-Windows-BitLocker/BitLocker Management	BitLocker encryption was stopped for volume %3.
+Microsoft-Windows-BitLocker-API	772	0	Event_772(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Informational	Microsoft-Windows-BitLocker/BitLocker Management	BitLocker encryption was restarted for volume %3.
+Microsoft-Windows-BitLocker-API	773	0	Event_773(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Warning	Microsoft-Windows-BitLocker/BitLocker Management	BitLocker was suspended for volume %3.
+Microsoft-Windows-BitLocker-API	774	0	Event_774(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Informational	Microsoft-Windows-BitLocker/BitLocker Management	BitLocker was resumed for volume %3.
+Microsoft-Windows-BitLocker-API	775	0	Event_775(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, GUID ProtectorGUID, HexInt32 ProtectorType)			task_0	Informational	Microsoft-Windows-BitLocker/BitLocker Management	A BitLocker key protector was created.\r\nProtector GUID: %4\r\nIdentification GUID: %1
+Microsoft-Windows-BitLocker-API	776	0	Event_776(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, GUID ProtectorGUID)			task_0	Informational	Microsoft-Windows-BitLocker/BitLocker Management	A BitLocker key protector was removed.\r\nProtector GUID: %4\r\nIdentification GUID: %1
+Microsoft-Windows-BitLocker-API	777	0	BitLockerPINModificationTask(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, GUID ProtectorGUID)			BitLockerPINModificationTask	Informational	Microsoft-Windows-BitLocker/BitLocker Management	The PIN was updated for the operating system volume.\r\nProtector GUID: %4\r\nIdentification GUID: %1
+Microsoft-Windows-BitLocker-API	778	0	Event_778(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Warning	Microsoft-Windows-BitLocker/BitLocker Management	The BitLocker volume %3 was reverted to an unprotected state.
+Microsoft-Windows-BitLocker-API	779	0	Event_779(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Warning	Microsoft-Windows-BitLocker/BitLocker Management	The BitLocker volume %3 was erased.
+Microsoft-Windows-BitLocker-API	780	0	Event_780(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Informational	Microsoft-Windows-BitLocker/BitLocker Management	The identification field was changed. \r\nIdentification GUID: %1
+Microsoft-Windows-BitLocker-API	781	0	Event_781(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Informational	Microsoft-Windows-BitLocker/BitLocker Management	The BitLocker protected volume %3 was locked. \r\nIdentification GUID: %1
+Microsoft-Windows-BitLocker-API	782	0	Event_782(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, GUID ProtectorGUID, HexInt32 ProtectorType)			task_0	Informational	Microsoft-Windows-BitLocker/BitLocker Management	The BitLocker protected volume %3 was unlocked.\r\nProtector GUID: %4\r\nIdentification GUID: %1
+Microsoft-Windows-BitLocker-API	783	0	Event_783(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, GUID ProtectorGUID)			task_0	Informational	Microsoft-Windows-BitLocker/BitLocker Management	BitLocker Drive Encryption recovery information for the specified protector is already present in Active Directory Domain Services.\r\nProtector GUID: %4\r\nIdentification GUID: %1
+Microsoft-Windows-BitLocker-API	784	0	Event_784(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, GUID ProtectorGUID)			task_0	Informational	Microsoft-Windows-BitLocker/BitLocker Management	BitLocker Drive Encryption recovery information was backed up successfully to Active Directory Domain Services.\r\nProtector GUID: %4\r\nIdentification GUID: %1
+Microsoft-Windows-BitLocker-API	785	0	Event_785(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, GUID ProtectorGUID)			task_0	Error	Microsoft-Windows-BitLocker/BitLocker Management	Failed to backup BitLocker Drive Encryption recovery information to Active Directory Domain Services.\r\nProtector GUID: %4\r\nIdentification GUID: %1
+Microsoft-Windows-BitLocker-API	786	0	Event_786(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Informational	Microsoft-Windows-BitLocker/BitLocker Management	BitLocker free space wiping was started for volume %3.
+Microsoft-Windows-BitLocker-API	787	0	Event_787(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Warning	Microsoft-Windows-BitLocker/BitLocker Management	BitLocker free space wiping was stopped for volume %3.
+Microsoft-Windows-BitLocker-API	788	0	Event_788(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Informational	Microsoft-Windows-BitLocker/BitLocker Management	BitLocker free space wiping was restarted for volume %3.
+Microsoft-Windows-BitLocker-API	789	0	BitLockerPINModificationTask789()			BitLockerPINModificationTask	Informational	Microsoft-Windows-BitLocker/BitLocker Management	The PIN was changed.
+Microsoft-Windows-BitLocker-API	790	0	BitLockerPINModificationTask790(Int32 ErrorCode)			BitLockerPINModificationTask	Error	Microsoft-Windows-BitLocker/BitLocker Management	A PIN change attempt failed.\r\nError message: %1
+Microsoft-Windows-BitLocker-API	791	0	BitLockerPINModificationTask791()			BitLockerPINModificationTask	Error	Microsoft-Windows-BitLocker/BitLocker Management	The BitLocker Service (BdeSvc) PIN and password change facility is locked out due to too many failed PIN or password change attempts.
+Microsoft-Windows-BitLocker-API	792	0	Event_792(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, Int32 ErrorCode)			task_0	Error	Microsoft-Windows-BitLocker/BitLocker Management	BitLocker encountered a failure to commit metadata changes for volume %3.
+Microsoft-Windows-BitLocker-API	793	0	Event_793(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Warning	Microsoft-Windows-BitLocker/BitLocker Management	BitLocker resealed boot settings to the TPM for volume %3.
+Microsoft-Windows-BitLocker-API	794	0	Event_794(Int32 ErrorCode)			task_0	Error	Microsoft-Windows-BitLocker/BitLocker Management	BitLocker failed to reseal boot settings to the TPM.\r\nError message: %1.
+Microsoft-Windows-BitLocker-API	795	0	Event_795(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Informational	Microsoft-Windows-BitLocker/BitLocker Management	BitLocker failed to initialize hardware encryption for volume %3 due to group policy.
+Microsoft-Windows-BitLocker-API	796	0	Event_796(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Informational	Microsoft-Windows-BitLocker/BitLocker Management	BitLocker Drive Encryption is using software-based encryption to protect volume %3.
+Microsoft-Windows-BitLocker-API	797	0	Event_797(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Warning	Microsoft-Windows-BitLocker/BitLocker Management	Group Policy settings prevented BitLocker Drive Encryption from reverting to BitLocker software-based encryption. Volume %3 is not protected by BitLocker.
+Microsoft-Windows-BitLocker-API	798	0	Event_798(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Warning	Microsoft-Windows-BitLocker/BitLocker Management	BitLocker failed to initialize hardware encryption for volume %3.\r\nDrive is not provisioned for use with BitLocker hardware encryption:\r\nHardware-based encryption is not activated on this drive.
+Microsoft-Windows-BitLocker-API	799	0	Event_799(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Warning	Microsoft-Windows-BitLocker/BitLocker Management	BitLocker failed to initialize hardware encryption for volume %3.\r\nDrive is not provisioned for use with BitLocker hardware encryption:\r\nThe hardware-based encryption of this drive does not allow BitLocker to cryptographically protect the drive's media encryption key.
+Microsoft-Windows-BitLocker-API	800	0	Event_800(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Warning	Microsoft-Windows-BitLocker/BitLocker Management	BitLocker failed to initialize hardware encryption for volume %3.\r\nDrive is not provisioned for use with BitLocker hardware encryption:\r\nHardware-based encryption is either not configured or has been configured improperly on this volume.
+Microsoft-Windows-BitLocker-API	801	0	Event_801(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Warning	Microsoft-Windows-BitLocker/BitLocker Management	BitLocker failed to initialize hardware encryption for volume %3.\r\nDrive is not provisioned for use with BitLocker hardware encryption:\r\nHardware-based encryption cannot be used with this drive because the hardware encryption method used by this drive does not comply with the Group Policy requirement for drive encryption.
+Microsoft-Windows-BitLocker-API	802	0	Event_802(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, Int32 ExpectedKeyLength, Int32 ActualKeyLength)			task_0	Warning	Microsoft-Windows-BitLocker/BitLocker Management	BitLocker failed to initialize hardware encryption for volume %3.\r\nDrive is not provisioned for use with BitLocker hardware encryption:\r\nThe key length, %5 bits, required to enable hardware-based encryption is below the minimum key length supported by the drive: %4.
+Microsoft-Windows-BitLocker-API	803	0	Event_803(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, Int32 ExpectedKeyLength, Int32 ActualKeyLength)			task_0	Warning	Microsoft-Windows-BitLocker/BitLocker Management	BitLocker failed to initialize hardware encryption for volume %3.\r\nDrive is not provisioned for use with BitLocker hardware encryption:\r\nThe key length, %5 bits, required to enable hardware-based encryption is above the maximum key length supported by the drive: %4.
+Microsoft-Windows-BitLocker-API	804	0	Event_804(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Error	Microsoft-Windows-BitLocker/BitLocker Management	The target drive (%3) cannot be managed by BitLocker because the drive's hardware encryption feature is already in use.
+Microsoft-Windows-BitLocker-API	805	0	Event_805(GUID IdentificationGUID, GUID ProtectorGUID, HexInt32 ProtectorType, SYSTEMTIME UnlockTime)			task_0	Informational	Microsoft-Windows-BitLocker/BitLocker Management	The BitLocker protected volume was unlocked in the Windows Recovery Environment.\r\nProtector GUID: %2\r\nIdentification GUID: %1\r\nUnlock time: %4
+Microsoft-Windows-BitLocker-API	806	0	Event_806(GUID IdentificationGUID, SYSTEMTIME ResealTime)			task_0	Warning	Microsoft-Windows-BitLocker/BitLocker Management	BitLocker resealed boot settings to the TPM in the Windows Recovery Environment.\r\nReseal time: %2
+Microsoft-Windows-BitLocker-API	807	0	Event_807(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Warning	Microsoft-Windows-BitLocker/BitLocker Management	BitLocker free space wiping was canceled for volume %3.
+Microsoft-Windows-BitLocker-API	808	0	Event_808(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Warning	Microsoft-Windows-BitLocker/BitLocker Management	BitLocker failed to initialize hardware encryption for volume %3.\r\nDrive is not provisioned for use with BitLocker hardware encryption:\r\nSID authority is not disabled on this drive.
+Microsoft-Windows-BitLocker-API	809	0	Event_809()			task_0	Informational	Microsoft-Windows-BitLocker/BitLocker Management	BitLocker cannot use Secure Boot for integrity because it is disabled in Group Policy.
+Microsoft-Windows-BitLocker-API	810	0	Event_810()			task_0	Informational	Microsoft-Windows-BitLocker/BitLocker Management	BitLocker cannot use Secure Boot for integrity because it is disabled.
+Microsoft-Windows-BitLocker-API	811	0	Event_811(UnicodeString VariableName)			task_0	Informational	Microsoft-Windows-BitLocker/BitLocker Management	BitLocker cannot use Secure Boot for integrity because the required UEFI variable '%1' is not present.
+Microsoft-Windows-BitLocker-API	812	0	Event_812(UnicodeString VariableName, Int32 ErrorCode)			task_0	Warning	Microsoft-Windows-BitLocker/BitLocker Management	BitLocker cannot use Secure Boot for integrity because the UEFI variable '%1' could not be read.\r\n\r\nError Message: %2
+Microsoft-Windows-BitLocker-API	813	0	Event_813(UnicodeString VariableName)			task_0	Warning	Microsoft-Windows-BitLocker/BitLocker Management	BitLocker cannot use Secure Boot for integrity because the expected TCG Log entry for variable '%1' is missing or invalid.
+Microsoft-Windows-BitLocker-API	814	0	Event_814()			task_0	Warning	Microsoft-Windows-BitLocker/BitLocker Management	BitLocker cannot use Secure Boot for integrity because the expected TCG Log entry for the OS Loader Authority is missing or invalid.
+Microsoft-Windows-BitLocker-API	815	0	Event_815()			task_0	Warning	Microsoft-Windows-BitLocker/BitLocker Management	BitLocker cannot use Secure Boot for integrity because the expected TCG Log separator entry is missing or invalid.
+Microsoft-Windows-BitLocker-API	816	0	Event_816()			task_0	Warning	Microsoft-Windows-BitLocker/BitLocker Management	BitLocker cannot use Secure Boot for integrity because the TCG Log for PCR [7] contains invalid entries.
+Microsoft-Windows-BitLocker-API	817	0	Event_817(UInt32 PCRBitmap, UInt32 PCRBitmapSource, UInt32 PCRValuesSize, Binary PCRValues, UInt32 FilteredTcgLogSize, Binary FilteredTcgLog)			task_0	Informational	Microsoft-Windows-BitLocker/BitLocker Management	BitLocker successfully sealed a key to the TPM.\r\n\r\nPCRs measured include [%1].\r\n\r\nThe source for these PCRs was: %2.
+Microsoft-Windows-BitLocker-API	818	0	Event_818(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, Int32 ErrorCode)			task_0	Warning	Microsoft-Windows-BitLocker/BitLocker Management	BitLocker encountered a failure attempting to configure network unlock for volume %3.
+Microsoft-Windows-BitLocker-API	819	0	Event_819(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, Int32 ErrorCode)			task_0	Error	Microsoft-Windows-BitLocker/BitLocker Management	The BitLocker service could not resume protection on the OS volume %3, due to the following error: Bootable media in the drive.
+Microsoft-Windows-BitLocker-API	820	0	Event_820(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, Int32 ErrorCode)			task_0	Error	Microsoft-Windows-BitLocker/BitLocker Management	The BitLocker service could not resume protection on the OS volume %3, due to the following error: TPM is locked out.
+Microsoft-Windows-BitLocker-API	821	0	Event_821(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, Int32 ErrorCode)			task_0	Error	Microsoft-Windows-BitLocker/BitLocker Management	The BitLocker service could not resume protection on the OS volume %3, due to the following error: Group policy conflict.
+Microsoft-Windows-BitLocker-API	822	0	Event_822(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, Int32 ErrorCode)			task_0	Error	Microsoft-Windows-BitLocker/BitLocker Management	The BitLocker service could not resume protection on the OS volume %3, due to the following error code: %4.
+Microsoft-Windows-BitLocker-API	823	0	Event_823(GUID VolumeGUID)			task_0	Error	System	Bootmgr failed to obtain the BitLocker volume master key from the TPM because Secure Boot was disabled.
+Microsoft-Windows-BitLocker-API	824	0	Event_824(GUID VolumeGUID)			task_0	Error	System	Bootmgr failed to obtain the BitLocker volume master key from the TPM because Secure Boot configuration changed unexpectedly.
+Microsoft-Windows-BitLocker-API	825	0	Event_825(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Informational	Microsoft-Windows-BitLocker/BitLocker Management	BitLocker failed to initialize hardware encryption for volume %3.\r\nThis PC's firmware is not capable of supporting hardware encryption.
+Microsoft-Windows-BitLocker-API	826	0	BitLockerPasswordModificationTask()			BitLockerPasswordModificationTask	Informational	Microsoft-Windows-BitLocker/BitLocker Management	The password was changed.
+Microsoft-Windows-BitLocker-API	827	0	BitLockerPasswordModificationTask827(Int32 ErrorCode)			BitLockerPasswordModificationTask	Error	Microsoft-Windows-BitLocker/BitLocker Management	A password change attempt failed.\r\nError message: %1
+Microsoft-Windows-BitLocker-API	828	0	Event_828(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, GUID ProtectorGUID)			task_0	Informational	Microsoft-Windows-BitLocker/BitLocker Management	BitLocker Drive Encryption recovery information for volume %3 was backed up successfully to your Microsoft account.\r\nProtector GUID: %4
+Microsoft-Windows-BitLocker-API	829	0	Event_829(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, Int32 ErrorCode)			task_0	Error	Microsoft-Windows-BitLocker/BitLocker Management	Failed to backup BitLocker Drive Encryption recovery information for volume %3 to your Microsoft account.\r\n\r\nError: %4
+Microsoft-Windows-BitLocker-API	830	0	Event_830()			task_0	Warning	Microsoft-Windows-BitLocker/BitLocker Management	The BitLocker Drive Encryption recovery information already exists in your Microsoft account.
+Microsoft-Windows-BitLocker-API	831	0	Event_831(Int32 JsonErrorCode, UnicodeString LocalizedJsonError)			task_0	Error	Microsoft-Windows-BitLocker/BitLocker Management	Failed to save BitLocker Drive Encryption recovery information to your Microsoft account due to an error.\r\n\r\nError Code: %1\r\nLocalized Error Message: %2
+Microsoft-Windows-BitLocker-API	832	0	Event_832(Int32 ErrorCode)			task_0	Warning	Microsoft-Windows-BitLocker/BitLocker Management	TCG Log parsing failure.\r\n\r\nError: %1.
+Microsoft-Windows-BitLocker-API	833	0	Event_833()			task_0	Warning	Microsoft-Windows-BitLocker/BitLocker Management	BitLocker detected that custom Secure Boot policy is installed, and will seal to this configuration. Sealing to a custom policy may reduce the integrity provided by Secure Boot.
+Microsoft-Windows-BitLocker-API	834	0	Event_834(UInt32 PCRBitmap, UInt32 PCRBitmapSource, UInt32 PCRValuesSize, Binary PCRValues, UInt32 FilteredTcgLogSize, Binary FilteredTcgLog)			task_0	Informational	Microsoft-Windows-BitLocker/BitLocker Management	BitLocker determined that the TCG log is invalid for use of Secure Boot. The filtered TCG log for PCR[7] is included in this event.
+Microsoft-Windows-BitLocker-API	835	0	Event_835()			task_0	Warning	Microsoft-Windows-BitLocker/BitLocker Management	BitLocker cannot use Secure Boot for integrity because the expected TCG Log entry for the OS Loader Authority has invalid structure.\r\n\r\nThe event is expected to be an EV_EFI_VARIABLE_AUTHORITY event. The event data must be formatted as an EFI_VARIABLE_DATA structure with VariableName set to EFI_IMAGE_SECURITY_DATABASEGUID and UnicodeName set to 'db'.
+Microsoft-Windows-BitLocker-API	836	0	Event_836()			task_0	Warning	Microsoft-Windows-BitLocker/BitLocker Management	BitLocker cannot use Secure Boot for integrity because the expected TCG Log entry for the OS Loader Authority is invalid.\r\n\r\nThe contents of the EFI_VARIABLE_DATA.VariableData field should be an EFI_SIGNATURE_DATA structure with SignatureOwner set to the GUID {77fa9abd-0359-4d32-bd60-28f4e78f784b} (Microsoft).
+Microsoft-Windows-BitLocker-API	837	0	Event_837()			task_0	Warning	Microsoft-Windows-BitLocker/BitLocker Management	BitLocker cannot use Secure Boot for integrity because the expected TCG Log entry for the OS Loader Authority is invalid.\r\n\r\nThe EFI_SIGNATURE_DATA structure contained in the OS authority event could not be found in the Secure Boot 'db' signature database.
+Microsoft-Windows-BitLocker-API	838	0	Event_838()			task_0	Warning	Microsoft-Windows-BitLocker/BitLocker Management	BitLocker cannot use Secure Boot for integrity because the signature of the boot loader could not be validated as a Windows signature chained to a trusted Microsoft root certificate.
+Microsoft-Windows-BitLocker-API	839	0	Event_839()			task_0	Warning	Microsoft-Windows-BitLocker/BitLocker Management	BitLocker cannot use Secure Boot for integrity because the TCG Log entry for the OS Loader Authority is invalid.\r\n\r\nThe signature contained in the EFI_SIGNATURE_DATA structure from the OS authority event could not be found in the verified certificate chain for the boot loader.
+Microsoft-Windows-BitLocker-API	840	0	Event_840(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, UInt32 BinaryDataSize, Binary BinaryData)			task_0	Informational	Microsoft-Windows-BitLocker/BitLocker Management	A trusted WIM file has been added for volume %3.\r\nThe SHA-256 hash of the WIM file is: %5
+Microsoft-Windows-BitLocker-API	841	0	Event_841(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, Int32 ErrorCode)			task_0	Warning	Microsoft-Windows-BitLocker/BitLocker Management	BitLocker was unable to update a key for volume %3 due to the following error: %4
+Microsoft-Windows-BitLocker-API	842	0	Event_842(Int32 ErrorCode)			task_0	Error	Microsoft-Windows-BitLocker/BitLocker Management	BitLocker was unable to reseal boot settings to the TPM in the Windows Recovery Environment.\r\n\r\nError: %1\r\n\r\nProtection has been temporarily suspended.
+Microsoft-Windows-BitLocker-API	843	0	Event_843(GUID IdentificationGUID, SYSTEMTIME ResealTime)			task_0	Warning	Microsoft-Windows-BitLocker/BitLocker Management	BitLocker was suspended from within the Windows Recovery Environment.\r\nSuspend time: %2
+Microsoft-Windows-BitLocker-API	844	0	Event_844(Int32 ErrorCode)			task_0	Error	Microsoft-Windows-BitLocker/BitLocker Management	BitLocker was unable to recover from device lock in the Windows Recovery Environment.\r\n\r\nError: %1\r\n\r\nProtection has been temporarily suspended.
+Microsoft-Windows-BitLocker-API	845	0	Event_845(UnicodeString VolumeMountPoint, GUID ProtectorGUID, GUID TraceGUID)			task_0	Informational	Microsoft-Windows-BitLocker/BitLocker Management	BitLocker Drive Encryption recovery information for volume %1 was backed up successfully to your Azure AD.\r\nProtector GUID: %2.\r\nTraceId: %3
+Microsoft-Windows-BitLocker-API	846	0	Event_846(UnicodeString VolumeMountPoint, GUID TraceGUID, Int32 ErrorCode)			task_0	Error	Microsoft-Windows-BitLocker/BitLocker Management	Failed to backup BitLocker Drive Encryption recovery information for volume %1 to your Azure AD.\r\nTraceId: %2\r\n\r\nError: %3
+Microsoft-Windows-BitLocker-API	847	0	Event_847(Int32 JsonErrorCode, UnicodeString LocalizedJsonError)			task_0	Error	Microsoft-Windows-BitLocker/BitLocker Management	Failed to save BitLocker Drive Encryption recovery information to your Azure AD due to an error.\r\n\r\nError Code: %1\r\nLocalized Error Message: %2
+Microsoft-Windows-BitLocker-API	4096	0	Event_4096(Int32 ErrorCode)			task_0	Error	Microsoft-Windows-BitLocker/BitLocker Management	Device Encryption could not be initialized.\r\n\r\nError: %1.
+Microsoft-Windows-BitLocker-API	4097	0	Event_4097_Start()	Start		task_0	Informational	Microsoft-Windows-BitLocker/Tracing	Device Encryption initialization start.
+Microsoft-Windows-BitLocker-API	4098	0	Event_4098_Stop()	Stop		task_0	Informational	Microsoft-Windows-BitLocker/Tracing	Device Encryption initialization stop.
+Microsoft-Windows-BitLocker-API	4099	0	Event_4099(Int32 ErrorCode)			task_0	Error	Microsoft-Windows-BitLocker/BitLocker Management	Device Encryption failed to process user logon event.\r\n\r\nError: %1.
+Microsoft-Windows-BitLocker-API	4100	0	Event_4100_Start()	Start		task_0	Informational	Microsoft-Windows-BitLocker/Tracing	Beginning Device Encryption user logon processing.
+Microsoft-Windows-BitLocker-API	4101	0	Event_4101_Stop()	Stop		task_0	Informational	Microsoft-Windows-BitLocker/Tracing	Ending Device Encryption user logon processing.
+Microsoft-Windows-BitLocker-API	4102	0	Event_4102(Int32 ErrorCode)			task_0	Error	Microsoft-Windows-BitLocker/BitLocker Management	BitLocker failed to recover after Device Lock.\r\nError message: %1.
+Microsoft-Windows-BitLocker-API	4103	0	Event_4103(Int32 ErrorCode)			task_0	Error	Microsoft-Windows-BitLocker/BitLocker Management	Failed to automatically enable Device Encryption.\r\n\r\nError Message: %1
+Microsoft-Windows-BitLocker-API	4104	0	Event_4104_Start()	Start		task_0	Informational	Microsoft-Windows-BitLocker/Tracing	Begin Enable Protection.
+Microsoft-Windows-BitLocker-API	4105	0	Event_4105_Stop()	Stop		task_0	Informational	Microsoft-Windows-BitLocker/Tracing	End Enable Protection.
+Microsoft-Windows-BitLocker-API	4106	0	Event_4106(Int32 ErrorCode)			task_0	Error	Microsoft-Windows-BitLocker/BitLocker Management	Failed to automatically back up recovery password to your Microsoft account.\r\n\r\nError Message: %1
+Microsoft-Windows-BitLocker-API	4107	0	Event_4107_Start()	Start		task_0	Informational	Microsoft-Windows-BitLocker/Tracing	Begin Recovery Password Backup.
+Microsoft-Windows-BitLocker-API	4108	0	Event_4108_Stop()	Stop		task_0	Informational	Microsoft-Windows-BitLocker/Tracing	End Recovery Password Backup.
+Microsoft-Windows-BitLocker-API	4109	0	Event_4109_Start()	Start		task_0	Informational	Microsoft-Windows-BitLocker/Tracing	Begin Query Protection Status.
+Microsoft-Windows-BitLocker-API	4110	0	Event_4110_Stop()	Stop		task_0	Informational	Microsoft-Windows-BitLocker/Tracing	End Query Protection Status.
+Microsoft-Windows-BitLocker-API	4111	0	Event_4111(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Warning	Microsoft-Windows-BitLocker/BitLocker Management	Device Lock recovery event initiated for volume %3.
+Microsoft-Windows-BitLocker-API	4112	0	Event_4112(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)			task_0	Informational	Microsoft-Windows-BitLocker/BitLocker Management	MaxPasswordRetry policy enforced with TPM-based hardening for volume %3.
+Microsoft-Windows-BitLocker-API	4113	0	Event_4113(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, Int32 ErrorCode)			task_0	Informational	Microsoft-Windows-BitLocker/BitLocker Management	MaxPasswordRetry policy enforced without hardware based hardening for volume %3.
+Microsoft-Windows-BitLocker-API	4114	0	Event_4114(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, Int32 ErrorCode)			task_0	Warning	Microsoft-Windows-BitLocker/BitLocker Management	Device Lock recovery event initiated due to protected state mismatch for volume %3.
+Microsoft-Windows-BitLocker-API	4116	0	Event_4116_Start(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)	Start		task_0	Informational	Microsoft-Windows-BitLocker/Tracing	Device Encryption initialization for volume %3 start.
+Microsoft-Windows-BitLocker-API	4117	0	Event_4117_Stop(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint)	Stop		task_0	Informational	Microsoft-Windows-BitLocker/Tracing	Device Encryption initialization for volume %3 stop.
+Microsoft-Windows-BitLocker-API	4118	0	Event_4118(GUID IdentificationGUID, UnicodeString VolumeName, UnicodeString VolumeMountPoint, Int32 ErrorCode)			task_0	Error	Microsoft-Windows-BitLocker/BitLocker Operational	Volume %3 could not be initialized for Device Encryption.\r\n\r\nError: %4.
+Microsoft-Windows-BitLocker-API	4119	0	Event_4119()			task_0	Error	Microsoft-Windows-BitLocker/BitLocker Operational	Windows RE is not correctly configured for device encryption. Make sure that Windows RE is enabled and is not installed on the OS drive.
+Microsoft-Windows-BitLocker-API	4120	0	Event_4120()			task_0	Error	Microsoft-Windows-BitLocker/BitLocker Operational	The TPM is not provisioned for device encryption. To set up the TPM use the TPM management console (Start->tpm.msc) and use the action to make the TPM ready.
+Microsoft-Windows-BitLocker-API	4121	0	Event_4121()			task_0	Error	Microsoft-Windows-BitLocker/BitLocker Operational	Sign in with a Microsoft account to finish provisioning device encryption.

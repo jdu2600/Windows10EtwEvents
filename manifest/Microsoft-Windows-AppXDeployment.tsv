@@ -1,91 +1,77 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-AppXDeployment	302	0	AppXDeployment.Task.Client.Deployment(UnicodeString ServiceName, HexInt32 ErrorCode)		AppXDeployment keyword_400000000000	AppXDeployment.Task.Client.Deployment	Error		
-Microsoft-Windows-AppXDeployment	303	0	AppXDeployment.Task.Client.Deployment303(UnicodeString ServiceName, HexInt32 ErrorCode)		AppXDeployment	AppXDeployment.Task.Client.Deployment	Warning		
-Microsoft-Windows-AppXDeployment	304	0	AppXDeployment.Task.Client.Deployment304(UInt32 RecoveryType)		AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational		
-Microsoft-Windows-AppXDeployment	305	0	AppXDeployment.Task.Client.Deployment305(HexInt32 ErrorCode)		AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational		
-Microsoft-Windows-AppXDeployment	306	0	AppXDeployment.Task.Client.Deployment306(UnicodeString PackageFullName)		AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational		
-Microsoft-Windows-AppXDeployment	307	0	AppXDeployment.Task.Client.Deployment307(HexInt32 ErrorCode, UnicodeString PackageFullName)		AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational		
-Microsoft-Windows-AppXDeployment	308	0	AppXDeployment.Task.Client.Deployment308()		AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational		
-Microsoft-Windows-AppXDeployment	309	0	AppXDeployment.Task.Client.Deployment309(HexInt32 ErrorCode)		AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational		
-Microsoft-Windows-AppXDeployment	310	0	AppXDeployment.Task.Client.Deployment310(UnicodeString PackageFullName, HexInt32 ErrorCode)		AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational		
-Microsoft-Windows-AppXDeployment	311	0	AppXDeployment.Task.Client.Deployment311(HexInt32 ErrorCode)		AppXDeployment	AppXDeployment.Task.Client.Deployment	Error		
-Microsoft-Windows-AppXDeployment	312	0	task_0(UnicodeString FileName, HexInt32 ErrorCode, UInt64 Size, UInt32 Offset, Pointer HeaderAddr, UnicodeString Section, UInt32 ProcessId)		APPMODEL_RUNTIME_DMR_KEYWORD	task_0	Error		
-Microsoft-Windows-AppXDeployment	313	0	task_0313(UnicodeString FileName, HexInt32 ErrorCode, UInt64 Size, Pointer HeaderAddr, UnicodeString Section, UInt32 ProcessId)		APPMODEL_RUNTIME_DMR_KEYWORD	task_0	Error		
-Microsoft-Windows-AppXDeployment	314	0	task_0314(UnicodeString FileName, HexInt32 ErrorCode, UInt64 Size, UInt32 Offset, Pointer HeaderAddr, UnicodeString Section, UInt32 ProcessId)		APPMODEL_RUNTIME_DMR_KEYWORD	task_0	Error		
-Microsoft-Windows-AppXDeployment	315	0	task_0315(UnicodeString FileName, HexInt32 ErrorCode, UInt64 Size, UInt32 Offset, Pointer HeaderAddr, UnicodeString Section, UInt32 ProcessId)		APPMODEL_RUNTIME_DMR_KEYWORD	task_0	Error		
-Microsoft-Windows-AppXDeployment	316	0	task_0316(UnicodeString FileName, HexInt32 ErrorCode, UInt32 ProcessId)		APPMODEL_RUNTIME_DMR_KEYWORD	task_0	Error		
-Microsoft-Windows-AppXDeployment	317	0	task_0317(UnicodeString FileName, Int32 ExceptionCode)		APPMODEL_RUNTIME_DMR_KEYWORD	task_0	Error		
-Microsoft-Windows-AppXDeployment	318	0	task_0318(UnicodeString FileName, Int32 ErrorCode, UInt64 Size, Pointer HeaderAddr, UnicodeString ApplicationUserModelId, UInt32 ProcessId)		APPMODEL_RUNTIME_DMR_KEYWORD	task_0	Error		
-Microsoft-Windows-AppXDeployment	319	0	task_0319(UnicodeString FileName, Int32 ErrorCode, UInt64 Size, Pointer HeaderAddr, UInt32 ProcessId)		APPMODEL_RUNTIME_DMR_KEYWORD	task_0	Error		
-Microsoft-Windows-AppXDeployment	320	0	AppXDeployment.Task.Client.Deployment320(UnicodeString PackageName, UnicodeString UserSid, HexInt32 ErrorCode)		AppXDeployment	AppXDeployment.Task.Client.Deployment	Error		
-Microsoft-Windows-AppXDeployment	321	0	AppXDeployment.Task.Client.Deployment321(UnicodeString PackageName, HexInt32 ErrorCode)		AppXDeployment	AppXDeployment.Task.Client.Deployment	Error		
-Microsoft-Windows-AppXDeployment	322	0	AppXDeployment.Task.Client.Deployment322(UnicodeString PackageName, HexInt32 ErrorCode)		AppXDeployment	AppXDeployment.Task.Client.Deployment	Error		
-Microsoft-Windows-AppXDeployment	324	0	task_0324(UnicodeString FileName, Int32 ErrorCode, UnicodeString Type, UInt32 ProcessId)		APPMODEL_RUNTIME_DMR_KEYWORD	task_0	Error		
-Microsoft-Windows-AppXDeployment	325	0	task_0325(UnicodeString PackageFamilyName)		AppXDeployment	task_0	Informational		
-Microsoft-Windows-AppXDeployment	326	0	task_0326(UnicodeString UserSid, Boolean IsSpecialUserProfile)		AppXDeployment	task_0	Verbose		
-Microsoft-Windows-AppXDeployment	327	0	task_0327(UnicodeString InstallPackageList, UnicodeString RemovePackageList)		AppXDeployment	task_0	Verbose		
-Microsoft-Windows-AppXDeployment	328	0	task_0328(HexInt32 ErrorCode)		AppXDeployment	task_0	Error		
-Microsoft-Windows-AppXDeployment	329	0	task_0329(UnicodeString UserSid, UnicodeString ProfilePath, HexInt32 ProfileType)		AppXDeployment	task_0	Verbose		
-Microsoft-Windows-AppXDeployment	330	0	task_0330(UnicodeString UserSid, UnicodeString ProfilePath, HexInt32 ProfileType)		AppXDeployment	task_0	Verbose		
-Microsoft-Windows-AppXDeployment	331	0	task_0331(UnicodeString UserSid, UnicodeString OutdatedPackages, UnicodeString UpToDatePackages)		AppXDeployment	task_0	Informational		
-Microsoft-Windows-AppXDeployment	1001	0	AppXDeployment.Task.Client.ServiceStartupStart()	Start	AppXDeployment	AppXDeployment.Task.Client.ServiceStartup	Informational		
-Microsoft-Windows-AppXDeployment	1002	0	AppXDeployment.Task.Client.ServiceStartup()		AppXDeployment	AppXDeployment.Task.Client.ServiceStartup	Informational		
-Microsoft-Windows-AppXDeployment	1003	0	AppXDeployment.Task.Client.ServiceStartupStop()	Stop	AppXDeployment	AppXDeployment.Task.Client.ServiceStartup	Informational		
-Microsoft-Windows-AppXDeployment	1004	0	AppXDeployment.Task.Client.AddPackageStart()	Start	AppXDeployment	AppXDeployment.Task.Client.AddPackage	Informational		
-Microsoft-Windows-AppXDeployment	1005	0	AppXDeployment.Task.Client.AddPackageStop()	Stop	AppXDeployment	AppXDeployment.Task.Client.AddPackage	Informational		
-Microsoft-Windows-AppXDeployment	1006	0	AppXDeployment.Task.Client.RemovePackageStart()	Start	AppXDeployment	AppXDeployment.Task.Client.RemovePackage	Informational		
-Microsoft-Windows-AppXDeployment	1007	0	AppXDeployment.Task.Client.RemovePackageStop()	Stop	AppXDeployment	AppXDeployment.Task.Client.RemovePackage	Informational		
-Microsoft-Windows-AppXDeployment	1008	0	AppXDeployment.Task.Client.DeploymentStart()	Start	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational		
-Microsoft-Windows-AppXDeployment	1009	0	AppXDeployment.Task.Client.DeploymentStop()	Stop	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational		
-Microsoft-Windows-AppXDeployment	1010	0	AppXDeployment.Task.Client.DeploymentStart1010()	Start	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational		
-Microsoft-Windows-AppXDeployment	1011	0	AppXDeployment.Task.Client.DeploymentStop1011()	Stop	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational		
-Microsoft-Windows-AppXDeployment	1012	0	AppXDeployment.Task.Client.DeploymentStart1012()	Start	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational		
-Microsoft-Windows-AppXDeployment	1013	0	AppXDeployment.Task.Client.DeploymentStop1013()	Stop	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational		
-Microsoft-Windows-AppXDeployment	1014	0	AppXDeployment.Task.Client.DeploymentStart1014()	Start	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational		
-Microsoft-Windows-AppXDeployment	1015	0	AppXDeployment.Task.Client.DeploymentStop1015()	Stop	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational		
-Microsoft-Windows-AppXDeployment	1016	0	AppXDeployment.Task.Client.DeploymentStart1016()	Start	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational		
-Microsoft-Windows-AppXDeployment	1017	0	AppXDeployment.Task.Client.DeploymentStop1017()	Stop	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational		
-Microsoft-Windows-AppXDeployment	1018	0	AppXDeployment.Task.Client.DeploymentStart1018()	Start	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational		
-Microsoft-Windows-AppXDeployment	1019	0	AppXDeployment.Task.Client.DeploymentStop1019()	Stop	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational		
-Microsoft-Windows-AppXDeployment	1020	0	AppXDeployment.Task.Client.EnumAPIStart()	Start	AppXDeployment	AppXDeployment.Task.Client.EnumAPI	Informational		
-Microsoft-Windows-AppXDeployment	1021	0	AppXDeployment.Task.Client.EnumAPIStop()	Stop	AppXDeployment	AppXDeployment.Task.Client.EnumAPI	Informational		
-Microsoft-Windows-AppXDeployment	1022	0	AppXDeployment.Task.Client.EnumAPIStart1022()	Start	AppXDeployment	AppXDeployment.Task.Client.EnumAPI	Informational		
-Microsoft-Windows-AppXDeployment	1023	0	AppXDeployment.Task.Client.EnumAPIStop1023()	Stop	AppXDeployment	AppXDeployment.Task.Client.EnumAPI	Informational		
-Microsoft-Windows-AppXDeployment	1024	0	AppXDeployment.Task.Client.EnumAPIStart1024()	Start	AppXDeployment	AppXDeployment.Task.Client.EnumAPI	Informational		
-Microsoft-Windows-AppXDeployment	1025	0	AppXDeployment.Task.Client.EnumAPIStop1025()	Stop	AppXDeployment	AppXDeployment.Task.Client.EnumAPI	Informational		
-Microsoft-Windows-AppXDeployment	1026	0	AppXDeployment.Task.Client.DeploymentStart1026()	Start	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational		
-Microsoft-Windows-AppXDeployment	1027	0	AppXDeployment.Task.Client.DeploymentStop1027()	Stop	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational		
-Microsoft-Windows-AppXDeployment	1028	0	AppXDeployment.Task.Client.DeploymentStart1028()	Start	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational		
-Microsoft-Windows-AppXDeployment	1029	0	AppXDeployment.Task.Client.DeploymentStop1029()	Stop	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational		
-Microsoft-Windows-AppXDeployment	1030	0	AppXDeployment.Task.Client.DeploymentStart1030()	Start	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational		
-Microsoft-Windows-AppXDeployment	1031	0	AppXDeployment.Task.Client.DeploymentStop1031()	Stop	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational		
-Microsoft-Windows-AppXDeployment	1032	0	AppXDeployment.Task.Client.DeploymentStart1032()	Start	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational		
-Microsoft-Windows-AppXDeployment	1033	0	AppXDeployment.Task.Client.DeploymentStop1033(HexInt32 ErrorCode)	Stop	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational		
-Microsoft-Windows-AppXDeployment	1034	0	AppXDeployment.Task.Client.EnumAPIStart1034()	Start	AppXDeployment	AppXDeployment.Task.Client.EnumAPI	Informational		
-Microsoft-Windows-AppXDeployment	1035	0	AppXDeployment.Task.Client.EnumAPIStop1035()	Stop	AppXDeployment	AppXDeployment.Task.Client.EnumAPI	Informational		
-Microsoft-Windows-AppXDeployment	1036	0	AppXDeployment.Task.Client.DeploymentStart1036()	Start	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational		
-Microsoft-Windows-AppXDeployment	1037	0	AppXDeployment.Task.Client.DeploymentStop1037()	Stop	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational		
-Microsoft-Windows-AppXDeployment	1038	0	AppXDeployment.Task.Client.DeploymentStart1038()	Start	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational		
-Microsoft-Windows-AppXDeployment	1039	0	AppXDeployment.Task.Client.DeploymentStop1039()	Stop	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational		
-Microsoft-Windows-AppXDeployment	1040	0	AppXDeployment.Task.Client.DeploymentStart1040()	Start	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational		
-Microsoft-Windows-AppXDeployment	1041	0	AppXDeployment.Task.Client.DeploymentStop1041()	Stop	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational		
-Microsoft-Windows-AppXDeployment	1042	0	AppXDeployment.Task.Client.DeploymentStart1042()	Start	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational		
-Microsoft-Windows-AppXDeployment	1043	0	AppXDeployment.Task.Client.DeploymentStop1043()	Stop	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational		
-Microsoft-Windows-AppXDeployment	1044	0	AppXDeployment.Task.Client.DeploymentStart1044()	Start	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational		
-Microsoft-Windows-AppXDeployment	1045	0	AppXDeployment.Task.Client.DeploymentStop1045()	Stop	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational		
-Microsoft-Windows-AppXDeployment	1046	0	AppXDeployment.Task.Client.DeploymentStart1046()	Start	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational		
-Microsoft-Windows-AppXDeployment	1047	0	AppXDeployment.Task.Client.DeploymentStop1047()	Stop	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational		
-Microsoft-Windows-AppXDeployment	1048	0	AppXDeployment.Task.Client.EnumAPIStart1048()	Start	AppXDeployment	AppXDeployment.Task.Client.EnumAPI	Informational		
-Microsoft-Windows-AppXDeployment	1049	0	AppXDeployment.Task.Client.EnumAPIStop1049()	Stop	AppXDeployment	AppXDeployment.Task.Client.EnumAPI	Informational		
-Microsoft-Windows-AppXDeployment	1050	0	AppXDeployment.Task.Client.EnumAPIStart1050()	Start	AppXDeployment	AppXDeployment.Task.Client.EnumAPI	Informational		
-Microsoft-Windows-AppXDeployment	1051	0	AppXDeployment.Task.Client.EnumAPIStop1051()	Stop	AppXDeployment	AppXDeployment.Task.Client.EnumAPI	Informational		
-Microsoft-Windows-AppXDeployment	1052	0	AppXDeployment.Task.Client.EnumAPIStart1052()	Start	AppXDeployment	AppXDeployment.Task.Client.EnumAPI	Informational		
-Microsoft-Windows-AppXDeployment	1053	0	AppXDeployment.Task.Client.EnumAPIStop1053()	Stop	AppXDeployment	AppXDeployment.Task.Client.EnumAPI	Informational		
-Microsoft-Windows-AppXDeployment	1054	0	AppXDeployment.Task.Client.EnumAPIStart1054()	Start	AppXDeployment	AppXDeployment.Task.Client.EnumAPI	Informational		
-Microsoft-Windows-AppXDeployment	1055	0	AppXDeployment.Task.Client.EnumAPIStop1055()	Stop	AppXDeployment	AppXDeployment.Task.Client.EnumAPI	Informational		
-Microsoft-Windows-AppXDeployment	1056	0	AppXDeployment.Task.Client.DeploymentStart1056()	Start	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational		
-Microsoft-Windows-AppXDeployment	1057	0	AppXDeployment.Task.Client.DeploymentStop1057()	Stop	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational		
-Microsoft-Windows-AppXDeployment	1058	0	AppXDeployment.Task.Client.DeploymentStart1058()	Start	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational		
-Microsoft-Windows-AppXDeployment	1059	0	AppXDeployment.Task.Client.DeploymentStop1059()	Stop	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational		
-Microsoft-Windows-AppXDeployment	1060	0	AppXDeployment.Task.Client.DeploymentStart1060()	Start	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational		
-Microsoft-Windows-AppXDeployment	1061	0	AppXDeployment.Task.Client.DeploymentStop1061()	Stop	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational		
+Microsoft-Windows-AppXDeployment	301	0	AppXDeployment.Task.Client.Deployment(UnicodeString FileName)		AppXDeployment keyword_400000000000	AppXDeployment.Task.Client.Deployment	Informational	Microsoft-Windows-AppXDeployment/Operational	The calling process is %1
+Microsoft-Windows-AppXDeployment	302	0	AppXDeployment.Task.Client.Deployment302(UnicodeString ServiceName, HexInt32 ErrorCode)		AppXDeployment keyword_400000000000	AppXDeployment.Task.Client.Deployment	Error	Microsoft-Windows-AppXDeployment/Operational	Failed to start system service: %1 with error: %2.
+Microsoft-Windows-AppXDeployment	303	0	AppXDeployment.Task.Client.Deployment303(UnicodeString ServiceName, HexInt32 ErrorCode)		AppXDeployment	AppXDeployment.Task.Client.Deployment	Warning	Microsoft-Windows-AppXDeployment/Operational	Failed to start system service: %1 with error: %2.
+Microsoft-Windows-AppXDeployment	304	0	AppXDeployment.Task.Client.Deployment304(UInt32 RecoveryType)		AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational	Microsoft-Windows-AppXDeployment/Operational	Starting recovery of package repository during a %1.
+Microsoft-Windows-AppXDeployment	305	0	AppXDeployment.Task.Client.Deployment305(HexInt32 ErrorCode)		AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational	Microsoft-Windows-AppXDeployment/Operational	Finished recovery of package repository with result code %1.
+Microsoft-Windows-AppXDeployment	306	0	AppXDeployment.Task.Client.Deployment306(UnicodeString PackageFullName)		AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational	Microsoft-Windows-AppXDeployment/Operational	Skipping recovery of package %1 because it is already installed.
+Microsoft-Windows-AppXDeployment	307	0	AppXDeployment.Task.Client.Deployment307(HexInt32 ErrorCode, UnicodeString PackageFullName)		AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational	Microsoft-Windows-AppXDeployment/Operational	Recovery has completed for package %2 with result code %1.
+Microsoft-Windows-AppXDeployment	308	0	AppXDeployment.Task.Client.Deployment308()		AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational	Microsoft-Windows-AppXDeployment/Operational	Starting staged package recovery.
+Microsoft-Windows-AppXDeployment	309	0	AppXDeployment.Task.Client.Deployment309(HexInt32 ErrorCode)		AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational	Microsoft-Windows-AppXDeployment/Operational	Finished staged package recovery with result code %1.
+Microsoft-Windows-AppXDeployment	310	0	AppXDeployment.Task.Client.Deployment310(UnicodeString PackageFullName, HexInt32 ErrorCode)		AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational	Microsoft-Windows-AppXDeployment/Operational	Skipping recovery of package %1 because of error %2.
+Microsoft-Windows-AppXDeployment	311	0	AppXDeployment.Task.Client.Deployment311(HexInt32 ErrorCode)		AppXDeployment	AppXDeployment.Task.Client.Deployment	Error	Microsoft-Windows-AppXDeployment/Operational	Failed to bind to the APPXSVC RPC server with error: %1.
+Microsoft-Windows-AppXDeployment	312	0	Event_312(UnicodeString FileName, HexInt32 ErrorCode, UInt64 Size, UInt32 Offset, Pointer HeaderAddr, UnicodeString Section, UInt32 ProcessId)		APPMODEL_RUNTIME_DMR_KEYWORD	task_0	Error	Microsoft-Windows-AppXDeployment/Operational	%2: Package runtime information %1 is corrupted (address=%5, size=%3, offset=%4, section=%6, processid=%7). Reinstall the package to fix this issue.
+Microsoft-Windows-AppXDeployment	313	0	Event_313(UnicodeString FileName, HexInt32 ErrorCode, UInt64 Size, Pointer HeaderAddr, UnicodeString Section, UInt32 ProcessId)		APPMODEL_RUNTIME_DMR_KEYWORD	task_0	Error	Microsoft-Windows-AppXDeployment/Operational	%2: Package runtime information %1 is missing expected data (address=%4, size=%3, section=%5, processid=%6). Reinstall the package to fix this issue.
+Microsoft-Windows-AppXDeployment	314	0	Event_314(UnicodeString FileName, HexInt32 ErrorCode, UInt64 Size, UInt32 Offset, Pointer HeaderAddr, UnicodeString Section, UInt32 ProcessId)		APPMODEL_RUNTIME_DMR_KEYWORD	task_0	Error	Microsoft-Windows-AppXDeployment/Operational	%2: Package runtime information %1 contains conflicting data (address=%5, size=%3, offset=%4, section=%6, processid=%7). Reinstall the package to fix this issue.
+Microsoft-Windows-AppXDeployment	315	0	Event_315(UnicodeString FileName, HexInt32 ErrorCode, UInt64 Size, UInt32 Offset, Pointer HeaderAddr, UnicodeString Section, UInt32 ProcessId)		APPMODEL_RUNTIME_DMR_KEYWORD	task_0	Error	Microsoft-Windows-AppXDeployment/Operational	%2: Package runtime information %1 contains unexpected data (address=%5, size=%3, offset=%4, section=%6, processid=%7). Reinstall the package to fix this issue.
+Microsoft-Windows-AppXDeployment	316	0	Event_316(UnicodeString FileName, HexInt32 ErrorCode, UInt32 ProcessId)		APPMODEL_RUNTIME_DMR_KEYWORD	task_0	Error	Microsoft-Windows-AppXDeployment/Operational	%2: Package runtime information %1 failed to load (processid=%3).
+Microsoft-Windows-AppXDeployment	317	0	Event_317(UnicodeString FileName, Int32 ExceptionCode)		APPMODEL_RUNTIME_DMR_KEYWORD	task_0	Error	Microsoft-Windows-AppXDeployment/Operational	Package runtime information %1 failed to load because exception %2 occurred.
+Microsoft-Windows-AppXDeployment	318	0	Event_318(UnicodeString FileName, Int32 ErrorCode, UInt64 Size, Pointer HeaderAddr, UnicodeString ApplicationUserModelId, UInt32 ProcessId)		APPMODEL_RUNTIME_DMR_KEYWORD	task_0	Error	Microsoft-Windows-AppXDeployment/Operational	%2: Package runtime information %1 is missing expected data (address=%4, size=%3, section=%5, processid=%6). Reinstall the package to fix this issue.
+Microsoft-Windows-AppXDeployment	319	0	Event_319(UnicodeString FileName, Int32 ErrorCode, UInt64 Size, Pointer HeaderAddr, UInt32 ProcessId)		APPMODEL_RUNTIME_DMR_KEYWORD	task_0	Error	Microsoft-Windows-AppXDeployment/Operational	%2: Application identity not accessible while loading package runtime information %1 (address=%4, size=%3, processid=%5).
+Microsoft-Windows-AppXDeployment	1001	0	AppXDeployment.Task.Client.ServiceStartupStart()	Start	AppXDeployment	AppXDeployment.Task.Client.ServiceStartup	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1002	0	AppXDeployment.Task.Client.ServiceStartup()		AppXDeployment	AppXDeployment.Task.Client.ServiceStartup	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1003	0	AppXDeployment.Task.Client.ServiceStartupStop()	Stop	AppXDeployment	AppXDeployment.Task.Client.ServiceStartup	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1004	0	AppXDeployment.Task.Client.AddPackageStart()	Start	AppXDeployment	AppXDeployment.Task.Client.AddPackage	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1005	0	AppXDeployment.Task.Client.AddPackageStop()	Stop	AppXDeployment	AppXDeployment.Task.Client.AddPackage	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1006	0	AppXDeployment.Task.Client.RemovePackageStart()	Start	AppXDeployment	AppXDeployment.Task.Client.RemovePackage	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1007	0	AppXDeployment.Task.Client.RemovePackageStop()	Stop	AppXDeployment	AppXDeployment.Task.Client.RemovePackage	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1008	0	AppXDeployment.Task.Client.DeploymentStart()	Start	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1009	0	AppXDeployment.Task.Client.DeploymentStop()	Stop	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1010	0	AppXDeployment.Task.Client.DeploymentStart1010()	Start	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1011	0	AppXDeployment.Task.Client.DeploymentStop1011()	Stop	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1012	0	AppXDeployment.Task.Client.DeploymentStart1012()	Start	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1013	0	AppXDeployment.Task.Client.DeploymentStop1013()	Stop	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1014	0	AppXDeployment.Task.Client.DeploymentStart1014()	Start	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1015	0	AppXDeployment.Task.Client.DeploymentStop1015()	Stop	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1016	0	AppXDeployment.Task.Client.DeploymentStart1016()	Start	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1017	0	AppXDeployment.Task.Client.DeploymentStop1017()	Stop	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1018	0	AppXDeployment.Task.Client.DeploymentStart1018()	Start	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1019	0	AppXDeployment.Task.Client.DeploymentStop1019()	Stop	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1020	0	AppXDeployment.Task.Client.EnumAPIStart()	Start	AppXDeployment	AppXDeployment.Task.Client.EnumAPI	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1021	0	AppXDeployment.Task.Client.EnumAPIStop()	Stop	AppXDeployment	AppXDeployment.Task.Client.EnumAPI	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1022	0	AppXDeployment.Task.Client.EnumAPIStart1022()	Start	AppXDeployment	AppXDeployment.Task.Client.EnumAPI	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1023	0	AppXDeployment.Task.Client.EnumAPIStop1023()	Stop	AppXDeployment	AppXDeployment.Task.Client.EnumAPI	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1024	0	AppXDeployment.Task.Client.EnumAPIStart1024()	Start	AppXDeployment	AppXDeployment.Task.Client.EnumAPI	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1025	0	AppXDeployment.Task.Client.EnumAPIStop1025()	Stop	AppXDeployment	AppXDeployment.Task.Client.EnumAPI	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1026	0	AppXDeployment.Task.Client.DeploymentStart1026()	Start	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1027	0	AppXDeployment.Task.Client.DeploymentStop1027()	Stop	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1028	0	AppXDeployment.Task.Client.DeploymentStart1028()	Start	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1029	0	AppXDeployment.Task.Client.DeploymentStop1029()	Stop	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1030	0	AppXDeployment.Task.Client.DeploymentStart1030()	Start	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1031	0	AppXDeployment.Task.Client.DeploymentStop1031()	Stop	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1032	0	AppXDeployment.Task.Client.DeploymentStart1032()	Start	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1033	0	AppXDeployment.Task.Client.DeploymentStop1033(HexInt32 ErrorCode)	Stop	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1034	0	AppXDeployment.Task.Client.EnumAPIStart1034()	Start	AppXDeployment	AppXDeployment.Task.Client.EnumAPI	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1035	0	AppXDeployment.Task.Client.EnumAPIStop1035()	Stop	AppXDeployment	AppXDeployment.Task.Client.EnumAPI	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1036	0	AppXDeployment.Task.Client.DeploymentStart1036()	Start	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1037	0	AppXDeployment.Task.Client.DeploymentStop1037()	Stop	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1038	0	AppXDeployment.Task.Client.DeploymentStart1038()	Start	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1039	0	AppXDeployment.Task.Client.DeploymentStop1039()	Stop	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1040	0	AppXDeployment.Task.Client.DeploymentStart1040()	Start	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1041	0	AppXDeployment.Task.Client.DeploymentStop1041()	Stop	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1042	0	AppXDeployment.Task.Client.DeploymentStart1042()	Start	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1043	0	AppXDeployment.Task.Client.DeploymentStop1043()	Stop	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1044	0	AppXDeployment.Task.Client.DeploymentStart1044()	Start	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1045	0	AppXDeployment.Task.Client.DeploymentStop1045()	Stop	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1046	0	AppXDeployment.Task.Client.DeploymentStart1046()	Start	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1047	0	AppXDeployment.Task.Client.DeploymentStop1047()	Stop	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1048	0	AppXDeployment.Task.Client.EnumAPIStart1048()	Start	AppXDeployment	AppXDeployment.Task.Client.EnumAPI	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1049	0	AppXDeployment.Task.Client.EnumAPIStop1049()	Stop	AppXDeployment	AppXDeployment.Task.Client.EnumAPI	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1050	0	AppXDeployment.Task.Client.EnumAPIStart1050()	Start	AppXDeployment	AppXDeployment.Task.Client.EnumAPI	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1051	0	AppXDeployment.Task.Client.EnumAPIStop1051()	Stop	AppXDeployment	AppXDeployment.Task.Client.EnumAPI	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1052	0	AppXDeployment.Task.Client.EnumAPIStart1052()	Start	AppXDeployment	AppXDeployment.Task.Client.EnumAPI	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1053	0	AppXDeployment.Task.Client.EnumAPIStop1053()	Stop	AppXDeployment	AppXDeployment.Task.Client.EnumAPI	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1054	0	AppXDeployment.Task.Client.EnumAPIStart1054()	Start	AppXDeployment	AppXDeployment.Task.Client.EnumAPI	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1055	0	AppXDeployment.Task.Client.EnumAPIStop1055()	Stop	AppXDeployment	AppXDeployment.Task.Client.EnumAPI	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1056	0	AppXDeployment.Task.Client.DeploymentStart1056()	Start	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	
+Microsoft-Windows-AppXDeployment	1057	0	AppXDeployment.Task.Client.DeploymentStop1057()	Stop	AppXDeployment	AppXDeployment.Task.Client.Deployment	Informational	Microsoft-Windows-AppXDeployment/Diagnostic	

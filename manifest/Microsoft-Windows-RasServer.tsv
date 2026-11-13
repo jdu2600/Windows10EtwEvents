@@ -1,24 +1,24 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-RasServer	50001	0	task_0()			task_0	Always		
-Microsoft-Windows-RasServer	50002	0	task_050002()			task_0	Always		
-Microsoft-Windows-RasServer	50003	0	task_050003()			task_0	Always		
-Microsoft-Windows-RasServer	50004	0	task_050004()			task_0	Always		
-Microsoft-Windows-RasServer	50005	0	task_050005()			task_0	Always		
-Microsoft-Windows-RasServer	50006	0	task_050006()			task_0	Always		
-Microsoft-Windows-RasServer	50007	0	task_050007()			task_0	Always		
-Microsoft-Windows-RasServer	50008	0	task_050008()			task_0	Always		
-Microsoft-Windows-RasServer	50009	0	task_050009()			task_0	Always		
-Microsoft-Windows-RasServer	50010	0	task_050010(UnicodeString param1, UnicodeString param2)			task_0	Always		
-Microsoft-Windows-RasServer	50011	0	task_050011()			task_0	Always		
-Microsoft-Windows-RasServer	50012	0	task_050012()			task_0	Always		
-Microsoft-Windows-RasServer	50013	0	task_050013()			task_0	Always		
-Microsoft-Windows-RasServer	50014	0	task_050014()			task_0	Always		
-Microsoft-Windows-RasServer	50015	0	task_050015()			task_0	Always		
-Microsoft-Windows-RasServer	50016	0	task_050016()			task_0	Always		
-Microsoft-Windows-RasServer	50017	0	task_050017()			task_0	Always		
-Microsoft-Windows-RasServer	50018	0	task_050018()			task_0	Always		
-Microsoft-Windows-RasServer	50019	0	task_050019()			task_0	Always		
-Microsoft-Windows-RasServer	50020	0	task_050020()			task_0	Always		
-Microsoft-Windows-RasServer	50021	0	task_050021()			task_0	Always		
-Microsoft-Windows-RasServer	50022	0	task_050022()			task_0	Always		
-Microsoft-Windows-RasServer	50099	0	task_050099()			task_0	Always		
+Microsoft-Windows-RasServer	50001	0	Message_0x0000C351()			task_0	Always		IPMGM was unable to initialize a critical section. The data is the exception code.
+Microsoft-Windows-RasServer	50002	0	Message_0x0000C352()			task_0	Always		IPMGM was unable to create a heap. The data is the error code.
+Microsoft-Windows-RasServer	50003	0	Message_0x0000C353()			task_0	Always		IPMGM was unable to allocate memory from its heap. The data is the error code.
+Microsoft-Windows-RasServer	50004	0	Message_0x0000C354()			task_0	Always		IPMGM received a start request when it was already running.
+Microsoft-Windows-RasServer	50005	0	Message_0x0000C355()			task_0	Always		IPMGM was unable to create a synchronization object. The data is the error code.
+Microsoft-Windows-RasServer	50006	0	Message_0x0000C356()			task_0	Always		IPMGM was unable to create an event. The data is the error code.
+Microsoft-Windows-RasServer	50007	0	Message_0x0000C357()			task_0	Always		IPMGM was unable to create a semaphore. The data is the error code.
+Microsoft-Windows-RasServer	50008	0	Message_0x0000C358()			task_0	Always		IPMGM has started successfully.
+Microsoft-Windows-RasServer	50009	0	Message_0x0000C359()			task_0	Always		IPMGM could not schedule a task to be executed. This may have been caused by a memory allocation failure. The data is the error code.
+Microsoft-Windows-RasServer	50010	0	Message_0x0000C35A(UnicodeString param1, UnicodeString param2)			task_0	Always		IPMGM could not find the protocol component (%1, %2)
+Microsoft-Windows-RasServer	50011	0	Message_0x0000C35B()			task_0	Always		Protocol component has already registered with IPMGM
+Microsoft-Windows-RasServer	50012	0	Message_0x0000C35C()			task_0	Always		IPMGM failed to register the protocol component. The data is in the error code.
+Microsoft-Windows-RasServer	50013	0	Message_0x0000C35D()			task_0	Always		The protocol component that is attempting to deregister is currently enabled on one or more interfaces.
+Microsoft-Windows-RasServer	50014	0	Message_0x0000C35E()			task_0	Always		This protocol component has already been enabled on this interface
+Microsoft-Windows-RasServer	50015	0	Message_0x0000C35F()			task_0	Always		Specified interface was not present in MGM.
+Microsoft-Windows-RasServer	50016	0	Message_0x0000C360()			task_0	Always		Another routing protocol component has already been enabled on this interface.  Only one routing protocol component may be  enabled on an interface at any time.
+Microsoft-Windows-RasServer	50017	0	Message_0x0000C361()			task_0	Always		IGMP is not enabled on this interface
+Microsoft-Windows-RasServer	50018	0	Message_0x0000C362()			task_0	Always		No routing protocol has been enabled on this interface
+Microsoft-Windows-RasServer	50019	0	Message_0x0000C363()			task_0	Always		The handle specified by the protocol component is not valid. This maybe because the protocol component is not registered with IPMGM
+Microsoft-Windows-RasServer	50020	0	Message_0x0000C364()			task_0	Always		Interface cannot be deleted because IGMP is still active on  this interface.
+Microsoft-Windows-RasServer	50021	0	Message_0x0000C365()			task_0	Always		Failed to set timer for forwarding entry.   The error code is in the data.
+Microsoft-Windows-RasServer	50022	0	Message_0x0000C366()			task_0	Always		Failed to register with RTM. The error code is in the data.
+Microsoft-Windows-RasServer	50099	0	Message_0x0000C3B3()			task_0	Always		IPMGM has stopped.

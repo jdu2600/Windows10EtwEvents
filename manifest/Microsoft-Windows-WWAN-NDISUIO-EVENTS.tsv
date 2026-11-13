@@ -1,7 +1,7 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-WWAN-NDISUIO-EVENTS	1001	0	task_0()			task_0	Informational		
-Microsoft-Windows-WWAN-NDISUIO-EVENTS	1002	0	task_01002()			task_0	Informational		
-Microsoft-Windows-WWAN-NDISUIO-EVENTS	1003	0	task_01003(GUID InterfaceGuid, UInt32 ErrorCode, UInt32 Location, UInt32 Context)			task_0	Error		
-Microsoft-Windows-WWAN-NDISUIO-EVENTS	1004	0	task_01004(GUID InterfaceGuid, UInt32 OIDorStatus, UInt32 RequestID, UInt32 Location, UInt32 Context)			task_0	Informational		
-Microsoft-Windows-WWAN-NDISUIO-EVENTS	1005	0	task_01005(GUID InterfaceGuid, UInt32 OIDorStatus, UInt32 RequestID, UInt32 Location, UInt32 Context)			task_0	Informational		
-Microsoft-Windows-WWAN-NDISUIO-EVENTS	1006	0	task_01006(GUID InterfaceGuid, UInt32 OIDorStatus, UInt32 BufferSize, UInt32 Location, UInt32 Context)			task_0	Informational		
+Microsoft-Windows-WWAN-NDISUIO-EVENTS	1001	0	Event_1001()			task_0	Informational	Microsoft-Windows-WWAN-NDISUIO-EVENTS/Diagnostic	WWAN NDISUIO Event: Loading of WWAN Component
+Microsoft-Windows-WWAN-NDISUIO-EVENTS	1002	0	Event_1002()			task_0	Informational	Microsoft-Windows-WWAN-NDISUIO-EVENTS/Diagnostic	WWAN NDISUIO Event: Unloading of WWAN Component
+Microsoft-Windows-WWAN-NDISUIO-EVENTS	1003	0	Event_1003(GUID InterfaceGuid, UInt32 ErrorCode, UInt32 Location, UInt32 Context)			task_0	Error	Microsoft-Windows-WWAN-NDISUIO-EVENTS/Diagnostic	WWAN NDISUIO Event: Error
+Microsoft-Windows-WWAN-NDISUIO-EVENTS	1004	0	Event_1004(GUID InterfaceGuid, UInt32 OIDorStatus, UInt32 RequestID, UInt32 Location, UInt32 Context)			task_0	Informational	Microsoft-Windows-WWAN-NDISUIO-EVENTS/Diagnostic	WWAN NDISUIO Event: OID request sent to the driver
+Microsoft-Windows-WWAN-NDISUIO-EVENTS	1005	0	Event_1005(GUID InterfaceGuid, UInt32 OIDorStatus, UInt32 RequestID, UInt32 Location, UInt32 Context)			task_0	Informational	Microsoft-Windows-WWAN-NDISUIO-EVENTS/Diagnostic	WWAN NDISUIO Event: OID request completed by the driver
+Microsoft-Windows-WWAN-NDISUIO-EVENTS	1006	0	Event_1006(GUID InterfaceGuid, UInt32 OIDorStatus, UInt32 BufferSize, UInt32 Location, UInt32 Context)			task_0	Informational	Microsoft-Windows-WWAN-NDISUIO-EVENTS/Diagnostic	WWAN NDISUIO Event: Unsolicited notification indicated by the driver

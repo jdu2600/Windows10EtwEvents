@@ -1,12 +1,11 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-WUSA	1	0	task_0(UnicodeString DebugMessage)			task_0	Always		
-Microsoft-Windows-WUSA	2	0	task_02(UnicodeString UpdateTitle, UnicodeString CommandLine)			task_0	Informational		
-Microsoft-Windows-WUSA	3	0	task_03(UnicodeString UpdateTitle, UInt32 ErrorCode, UnicodeString ErrorString, UnicodeString CommandLine)			task_0	Error		
-Microsoft-Windows-WUSA	4	0	task_04(UnicodeString UpdateTitle, UnicodeString CommandLine)			task_0	Warning		
-Microsoft-Windows-WUSA	5	0	task_05(UnicodeString UpdateTitle, UnicodeString CommandLine)			task_0	Informational		
-Microsoft-Windows-WUSA	6	0	task_06(UnicodeString CommandLine)			task_0	Error		
-Microsoft-Windows-WUSA	7	0	task_07(UnicodeString UpdateTitle, UnicodeString CommandLine)			task_0	Informational		
-Microsoft-Windows-WUSA	8	0	task_08(UnicodeString UpdateTitle, UInt32 ErrorCode, UnicodeString ErrorString, UnicodeString CommandLine)			task_0	Error		
-Microsoft-Windows-WUSA	9	0	task_09(UnicodeString UpdateTitle, UnicodeString CommandLine)			task_0	Warning		
-Microsoft-Windows-WUSA	10	0	task_010(UnicodeString UpdateTitle, UnicodeString CommandLine)			task_0	Informational		
-Microsoft-Windows-WUSA	11	0	task_011(UnicodeString CommandLine)			task_0	Error		
+Microsoft-Windows-WUSA	1	0	Event_1(UnicodeString DebugMessage)			task_0	Always	Microsoft-Windows-WUSA/Debug	%1
+Microsoft-Windows-WUSA	2	0	Event_2(UnicodeString UpdateTitle, UnicodeString CommandLine)			task_0	Informational	Setup	Windows update %1 was successfully installed. (Command line: "%2")
+Microsoft-Windows-WUSA	3	0	Event_3(UnicodeString UpdateTitle, UInt32 ErrorCode, UnicodeString ErrorString, UnicodeString CommandLine)			task_0	Error	Setup	Windows update %1 could not be installed because of error %2 "%3" (Command line: "%4")
+Microsoft-Windows-WUSA	4	0	Event_4(UnicodeString UpdateTitle, UnicodeString CommandLine)			task_0	Warning	Setup	Windows update %1 requires a computer restart to complete the installation. (Command line: "%2")
+Microsoft-Windows-WUSA	5	0	Event_5(UnicodeString UpdateTitle, UnicodeString CommandLine)			task_0	Informational	Setup	This computer will restart to complete the installation of Windows update %1 (Command line: "%2")
+Microsoft-Windows-WUSA	6	0	Event_6(UnicodeString CommandLine)			task_0	Error	Setup	The Windows Modules Installer must be updated before you can install this package (Command line: "%1")
+Microsoft-Windows-WUSA	7	0	Event_7(UnicodeString UpdateTitle, UnicodeString CommandLine)			task_0	Informational	Setup	Windows update %1 was successfully uninstalled. (Command line: "%2")
+Microsoft-Windows-WUSA	8	0	Event_8(UnicodeString UpdateTitle, UInt32 ErrorCode, UnicodeString ErrorString, UnicodeString CommandLine)			task_0	Error	Setup	Windows update %1 could not be uninstalled because of error %2 "%3" (Command line: "%4")
+Microsoft-Windows-WUSA	9	0	Event_9(UnicodeString UpdateTitle, UnicodeString CommandLine)			task_0	Warning	Setup	Windows update %1 requires a computer restart to finish uninstalling. (Command line: "%2")
+Microsoft-Windows-WUSA	10	0	Event_10(UnicodeString UpdateTitle, UnicodeString CommandLine)			task_0	Informational	Setup	This computer will restart to finish uninstalling Windows update %1 (Command line: "%2")

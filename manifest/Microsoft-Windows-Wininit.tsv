@@ -1,39 +1,29 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-Wininit	1	0	WaitForWinstationShutdownStart()	Start	PerfInstrumentation	WaitForWinstationShutdown	Informational		
-Microsoft-Windows-Wininit	2	0	WaitForWinstationShutdownStop()	Stop	PerfInstrumentation	WaitForWinstationShutdown	Informational		
-Microsoft-Windows-Wininit	3	0	PreShutdownNotificationStart()	Start	PerfInstrumentation	PreShutdownNotification	Informational		
-Microsoft-Windows-Wininit	4	0	PreShutdownNotificationStop()	Stop	PerfInstrumentation	PreShutdownNotification	Informational		
-Microsoft-Windows-Wininit	5	0	WaitForSystemProcessesStart()	Start	PerfInstrumentation	WaitForSystemProcesses	Informational		
-Microsoft-Windows-Wininit	6	0	WaitForSystemProcessesStop()	Stop	PerfInstrumentation	WaitForSystemProcesses	Informational		
-Microsoft-Windows-Wininit	7	0	ShutdownSystemRestoreStart()	Start	PerfInstrumentation	ShutdownSystemRestore	Informational		
-Microsoft-Windows-Wininit	8	0	ShutdownSystemRestoreStop()	Stop	PerfInstrumentation	ShutdownSystemRestore	Informational		
-Microsoft-Windows-Wininit	9	0	ShutdownWindowsStart(UInt32 Flags)	Start	PerfInstrumentation	ShutdownWindows	Informational		
-Microsoft-Windows-Wininit	10	0	ShutdownWindowsStop(UInt32 Win32Status)	Stop	PerfInstrumentation	ShutdownWindows	Informational		
-Microsoft-Windows-Wininit	11	0	task_0(UInt32 StringCount, UnicodeString String)			task_0	Warning		
-Microsoft-Windows-Wininit	12	0	task_012(UInt32 Level)			task_0	Informational		
-Microsoft-Windows-Wininit	13	0	task_013()			task_0	Informational		
-Microsoft-Windows-Wininit	14	0	task_014(UInt32 Config, UInt32 IsTestConfig, UInt32 IsAutoEnabled)			task_0	Informational		
-Microsoft-Windows-Wininit	15	0	task_015()			task_0	Warning		
-Microsoft-Windows-Wininit	16	0	task_016(UInt32 Level)			task_0	Error		
-Microsoft-Windows-Wininit	17	0	task_017(UInt32 Level)			task_0	Error		
-Microsoft-Windows-Wininit	18	0	task_018()			task_0	Informational		
-Microsoft-Windows-Wininit	19	0	task_019(Int32 HRESULT, Boolean NewLatchTimerNeeded, Boolean NewLatchTimerWaitingSystemUpdateCompletion, Boolean PreviousLatchTimerExistsButDisabled, Boolean PolicyFileExists)			task_0	Informational		
-Microsoft-Windows-Wininit	20	0	task_020(UInt32 win32Error, FILETIME ftStartTime, UInt64 ullDelay, FILETIME ftDueTime, UInt64 PolicyVersion)			task_0	Informational		
-Microsoft-Windows-Wininit	21	0	task_021(Int32 HRESULT, Boolean PreviousTimerPresent, FILETIME ftStartTime, UInt64 ullDelay, UInt64 PolicyVersion, Boolean fAttemptedRecoveryIncrementCounterSucceeded, Boolean fPreviousLatchTimerInvalid, Boolean fPolicyFileExists)			task_0	Informational		
-Microsoft-Windows-Wininit	22	0	task_022(Int32 HRESULT, UInt64 Counter, UInt64 PendingLKeyPkgId, UInt64 PendingPolicyVersion, Boolean CounterIncremented)			task_0	Informational		
-Microsoft-Windows-Wininit	23	0	task_023(Int32 HRESULT, Boolean NewTimerNeeded, Boolean NewTimerWaitingUpdateCompletion, Boolean PreviousTimerExistsButDisabled)			task_0	Informational		
-Microsoft-Windows-Wininit	24	0	task_024(UInt32 win32Error, FILETIME FileStartTime, UInt64 GracePeriod, FILETIME DueTime)			task_0	Informational		
-Microsoft-Windows-Wininit	25	0	task_025(Int32 HRESULT, Boolean PreviousTimerExists, FILETIME PreviousTimerStartTime, UInt64 GracePeriod, Boolean AttemptedRecoveryEnforcementSucceeded)			task_0	Informational		
-Microsoft-Windows-Wininit	26	0	task_026(Int32 HRESULT, Boolean BootStlEnforced, HexInt32 LocalStatus)			task_0	Informational		
-Microsoft-Windows-Wininit	51	0	NtShutdownSystem()		PerfInstrumentation	NtShutdownSystem	Informational		
-Microsoft-Windows-Wininit	53	0	SentLogoffRequest(UInt32 SessionId, UInt32 Flags)		PerfInstrumentation	SentLogoffRequest	Informational		
-Microsoft-Windows-Wininit	55	0	ReceivedShutdownRequest(UInt32 SessionId, UInt32 IsRemote, UInt32 GracePeriod, UInt32 Flags, UInt32 Reason, UnicodeString Message)		PerfInstrumentation	ReceivedShutdownRequest	Informational		
-Microsoft-Windows-Wininit	1001	0	task_0PCODE_64pcode_64()	opcode_64		task_0	Always		
-Microsoft-Windows-Wininit	1015	0	task_0PCODE_192pcode_192()	opcode_192		task_0	Always		
-Microsoft-Windows-Wininit	3002	0	task_0PCODE_192pcode_1923002()	opcode_192		task_0	Always		
-Microsoft-Windows-Wininit	3003	0	task_0PCODE_128pcode_128()	opcode_128		task_0	Always		
-Microsoft-Windows-Wininit	3004	0	task_0PCODE_128pcode_1283004()	opcode_128		task_0	Always		
-Microsoft-Windows-Wininit	3005	0	task_0PCODE_192pcode_1923005()	opcode_192		task_0	Always		
-Microsoft-Windows-Wininit	3006	0	task_0PCODE_192pcode_1923006()	opcode_192		task_0	Always		
-Microsoft-Windows-Wininit	6001	0	ShutdownDiagnosticsStart(UInt32 Flags)	Start	PerfInstrumentation PerfDiagnostics	ShutdownDiagnostics	Informational		
-Microsoft-Windows-Wininit	6002	1	PerfTrackFullShutdown_V1(UInt32 ShutdownFlags, UInt64 SystemShutdownDuration, UInt32 SkuHasLogoff)		PerfInstrumentation	PerfTrackFullShutdown	Informational		
+Microsoft-Windows-Wininit	1	0	WaitForWinstationShutdownStart()	Start	PerfInstrumentation	WaitForWinstationShutdown	Informational	Microsoft-Windows-Wininit/Diagnostic	
+Microsoft-Windows-Wininit	2	0	WaitForWinstationShutdownStop()	Stop	PerfInstrumentation	WaitForWinstationShutdown	Informational	Microsoft-Windows-Wininit/Diagnostic	
+Microsoft-Windows-Wininit	3	0	PreShutdownNotificationStart()	Start	PerfInstrumentation	PreShutdownNotification	Informational	Microsoft-Windows-Wininit/Diagnostic	
+Microsoft-Windows-Wininit	4	0	PreShutdownNotificationStop()	Stop	PerfInstrumentation	PreShutdownNotification	Informational	Microsoft-Windows-Wininit/Diagnostic	
+Microsoft-Windows-Wininit	5	0	WaitForSystemProcessesStart()	Start	PerfInstrumentation	WaitForSystemProcesses	Informational	Microsoft-Windows-Wininit/Diagnostic	
+Microsoft-Windows-Wininit	6	0	WaitForSystemProcessesStop()	Stop	PerfInstrumentation	WaitForSystemProcesses	Informational	Microsoft-Windows-Wininit/Diagnostic	
+Microsoft-Windows-Wininit	7	0	ShutdownSystemRestoreStart()	Start	PerfInstrumentation	ShutdownSystemRestore	Informational	Microsoft-Windows-Wininit/Diagnostic	
+Microsoft-Windows-Wininit	8	0	ShutdownSystemRestoreStop()	Stop	PerfInstrumentation	ShutdownSystemRestore	Informational	Microsoft-Windows-Wininit/Diagnostic	
+Microsoft-Windows-Wininit	9	0	ShutdownWindowsStart(UInt32 Flags)	Start	PerfInstrumentation	ShutdownWindows	Informational	Microsoft-Windows-Wininit/Diagnostic	
+Microsoft-Windows-Wininit	10	0	ShutdownWindowsStop(UInt32 Win32Status)	Stop	PerfInstrumentation	ShutdownWindows	Informational	Microsoft-Windows-Wininit/Diagnostic	
+Microsoft-Windows-Wininit	11	0	Event_11(UInt32 StringCount, UnicodeString String)			task_0	Warning	System	Custom dynamic link libraries are being loaded for every application. The system administrator should review the list of libraries to ensure they are related to trusted applications. Please visit http://support.microsoft.com/kb/197571 for more information.
+Microsoft-Windows-Wininit	12	0	Event_12(UInt32 Level)			task_0	Informational	System	LSASS.exe was started as a protected process with level: %1.
+Microsoft-Windows-Wininit	13	0	Event_13(UInt32 Level)			task_0	Informational	System	Credential Guard (LsaIso.exe) was started and will protect LSA credentials.
+Microsoft-Windows-Wininit	14	0	Event_14(UInt32 Config, UInt32 IsTestConfig)			task_0	Informational	System	Credential Guard (LsaIso.exe) configuration: %1, %2
+Microsoft-Windows-Wininit	15	0	Event_15(UInt32 Level)			task_0	Warning	System	Credential Guard (LsaIso.exe) is configured but the secure kernel is not running; continuing without Credential Guard.
+Microsoft-Windows-Wininit	16	0	Event_16(UInt32 Level)			task_0	Error	System	Credential Guard (LsaIso.exe) failed to launch: %1
+Microsoft-Windows-Wininit	17	0	Event_17(UInt32 Level)			task_0	Error	System	Error reading Credential Guard (LsaIso.exe) UEFI configuration: %1
+Microsoft-Windows-Wininit	51	0	NtShutdownSystem()		PerfInstrumentation	NtShutdownSystem	Informational	Microsoft-Windows-Wininit/Diagnostic	
+Microsoft-Windows-Wininit	53	0	SentLogoffRequest(UInt32 SessionId, UInt32 Flags)		PerfInstrumentation	SentLogoffRequest	Informational	Microsoft-Windows-Wininit/Diagnostic	
+Microsoft-Windows-Wininit	55	0	ReceivedShutdownRequest(UInt32 SessionId, UInt32 IsRemote, UInt32 GracePeriod, UInt32 Flags, UInt32 Reason, UnicodeString Message)		PerfInstrumentation	ReceivedShutdownRequest	Informational	Microsoft-Windows-Wininit/Diagnostic	
+Microsoft-Windows-Wininit	1001	0	Message_0x400003E9()			task_0	Always		%1
+Microsoft-Windows-Wininit	1015	0	Message_0xC00003F7()			task_0	Always		A critical system process, %1, failed with status code %2.  The machine must now be restarted.
+Microsoft-Windows-Wininit	3002	0	Message_0xC0000BBA()			task_0	Always		Windows start-up process has unexpectedly terminated.
+Microsoft-Windows-Wininit	3003	0	Message_0x80000BBB()			task_0	Always		Windows start-up process has failed to start the remote shutdown server.
+Microsoft-Windows-Wininit	3004	0	Message_0x80000BBC()			task_0	Always		Windows start-up process has failed to synchronize with the local security subsystem during setup.
+Microsoft-Windows-Wininit	3005	0	Message_0xC0000BBD()			task_0	Always		Windows start-up process has failed to terminate system processes.
+Microsoft-Windows-Wininit	6001	0	ShutdownDiagnosticsStart(UInt32 Flags)	Start	PerfInstrumentation PerfDiagnostics	ShutdownDiagnostics	Informational	Microsoft-Windows-Wininit/Diagnostic	
+Microsoft-Windows-Wininit	6002	0	PerfTrackFullShutdown(UInt32 ShutdownFlags, UInt64 UserSessionShutdownDuration, UInt64 SystemShutdownDuration, UInt64 FullShutdownDuration)		PerfInstrumentation	PerfTrackFullShutdown	Informational	Microsoft-Windows-Wininit/Diagnostic	

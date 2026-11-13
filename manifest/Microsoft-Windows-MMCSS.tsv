@@ -1,17 +1,15 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-MMCSS	1	1	Scheduler_Priority_Change_V1(UInt32 ProcessID, UInt32 ThreadID, UInt8 Priority, UInt32 TaskIndex)			Scheduler_Priority_Change	Informational		
-Microsoft-Windows-MMCSS	2	1	Scheduler_Wakeup_V1(UInt32 Reason)			Scheduler_Wakeup	Informational		
-Microsoft-Windows-MMCSS	3	1	Scheduler_Sleep_V1(UInt32 Reason, UInt32 Duration)			Scheduler_Sleep	Informational		
-Microsoft-Windows-MMCSS	5	1	Service_Start_V1()			Service_Start	Informational		
-Microsoft-Windows-MMCSS	6	1	Service_Stop_V1()			Service_Stop	Informational		
-Microsoft-Windows-MMCSS	7	1	Thread_Join_V1(UInt32 ThreadID, UInt8 MediumPriority, UInt8 LowPriority, UInt8 UberLowPriority, UnicodeString TaskName, UInt32 TaskIndex, UInt8 Category, UInt8 Flags)			Thread_Join	Informational		
-Microsoft-Windows-MMCSS	8	1	Thread_Leave_V1(UInt32 ThreadID, UInt8 OriginalBasePriority)			Thread_Leave	Informational		
-Microsoft-Windows-MMCSS	12	1	TaskIndex_Yield_V1(UInt32 TaskIndex, UInt32 Duration, UInt32 PreDuration)			TaskIndex_Yield	Informational		
-Microsoft-Windows-MMCSS	13	1	TaskIndex_YieldCancel_V1(UInt32 TaskIndex)			TaskIndex_YieldCancel	Informational		
-Microsoft-Windows-MMCSS	14	1	Set_MultimediaMode_V1(UInt32 TaskIndex, UInt32 ThreadTag)			Set_MultimediaMode	Informational		
-Microsoft-Windows-MMCSS	15	1	TaskIndex_DeadlineExpired_V1(UInt32 TaskIndex)			TaskIndex_DeadlineExpired	Informational		
-Microsoft-Windows-MMCSS	16	1	TurboEngaged_V1(UInt32 TurboEngaged)			TurboEngaged	Informational		
-Microsoft-Windows-MMCSS	17	1	ThreadBufferingStart_V1(UInt32 ThreadID)	Start		ThreadBuffering	Informational		
-Microsoft-Windows-MMCSS	18	1	ThreadBufferingStop_V1(UInt32 ThreadID)	Stop		ThreadBuffering	Informational		
-Microsoft-Windows-MMCSS	19	1	TaskIndex_PreDeadlineExpired_V1(UInt32 TaskIndex)			TaskIndex_PreDeadlineExpired	Informational		
-Microsoft-Windows-MMCSS	20	1	Thread_SetChars_V1(UInt32 TaskIndex, UnicodeString TaskName1, UnicodeString TaskName2)			Thread_SetChars	Informational		
+Microsoft-Windows-MMCSS	1	1	Scheduler_Priority_Change_V1(UInt32 ProcessID, UInt32 ThreadID, UInt8 Priority, UInt32 TaskIndex)			Scheduler_Priority_Change	Informational		Thread priority of (%1.%2) in task %4 has changed to %3.
+Microsoft-Windows-MMCSS	2	1	Scheduler_Wakeup_V1(UInt32 Reason)			Scheduler_Wakeup	Informational		Scheduler woke up for reason %1.
+Microsoft-Windows-MMCSS	3	1	Scheduler_Sleep_V1(UInt32 Reason, UInt32 Duration)			Scheduler_Sleep	Informational		Scheduler thread slept.
+Microsoft-Windows-MMCSS	5	1	Service_Start_V1()			Service_Start	Informational		MMCSS Service started.
+Microsoft-Windows-MMCSS	6	1	Service_Stop_V1()			Service_Stop	Informational		MMCSS Service stopped.
+Microsoft-Windows-MMCSS	7	1	Thread_Join_V1(UInt32 ThreadID, UInt8 MediumPriority, UInt8 LowPriority, UInt8 UberLowPriority, UnicodeString TaskName, UInt32 TaskIndex, UInt8 Category, UInt8 Flags)			Thread_Join	Informational		Thread joined MMCSS Task %5
+Microsoft-Windows-MMCSS	8	1	Thread_Leave_V1(UInt32 ThreadID, UInt8 OriginalBasePriority)			Thread_Leave	Informational		Thread left MMCSS
+Microsoft-Windows-MMCSS	12	1	TaskIndex_Yield_V1(UInt32 TaskIndex, UInt32 Duration)			TaskIndex_Yield	Informational		TaskIndex %1 yielded for %2 hectons
+Microsoft-Windows-MMCSS	13	1	TaskIndex_YieldCancel_V1(UInt32 TaskIndex)			TaskIndex_YieldCancel	Informational		TaskIndex %1 canceled a registered yield
+Microsoft-Windows-MMCSS	14	1	Set_MultimediaMode_V1(UInt32 TaskIndex, UInt32 ThreadTag)			Set_MultimediaMode	Informational		TaskIndex %1 sets multimedia mode to %2
+Microsoft-Windows-MMCSS	15	1	TaskIndex_DeadlineExpired_V1(UInt32 TaskIndex)			TaskIndex_DeadlineExpired	Informational		TaskIndex %1 deadline Expired
+Microsoft-Windows-MMCSS	16	1	TurboEngaged_V1(UInt32 TurboEngaged)			TurboEngaged	Informational		Notify Power Manger to engage turbo mode (%1)
+Microsoft-Windows-MMCSS	17	1	ThreadBufferingStart_V1(UInt32 ThreadID)	Start		ThreadBuffering	Informational		Thread Buffering Start (%1)
+Microsoft-Windows-MMCSS	18	1	ThreadBufferingStop_V1(UInt32 ThreadID)	Stop		ThreadBuffering	Informational		Thread Buffering Stop (%1)

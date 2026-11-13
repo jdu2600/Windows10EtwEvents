@@ -1,9 +1,9 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-WPD-MTPBT	100	0	task_0(UInt32 MTPBTPacketLength, Binary MTPBTPacketData)			task_0	Informational		
-Microsoft-Windows-WPD-MTPBT	101	0	task_0101(UInt32 MTPBTPacketLength, Binary MTPBTPacketData)			task_0	Informational		
-Microsoft-Windows-WPD-MTPBT	102	0	task_0102(UInt32 MTPBTPacketLength, Binary MTPBTPacketData)			task_0	Informational		
-Microsoft-Windows-WPD-MTPBT	103	0	task_0103(UInt32 MTPBTPacketLength, Binary MTPBTPacketData)			task_0	Informational		
-Microsoft-Windows-WPD-MTPBT	104	0	task_0104(UInt32 MTPBTPacketLength, UInt16 MTPBTPacketType, UInt16 MTPBTPacketSeqID)			task_0	Informational		
-Microsoft-Windows-WPD-MTPBT	105	0	task_0105(UInt32 MTPBTEventLength, Binary MTPBTEventData)			task_0	Informational		
-Microsoft-Windows-WPD-MTPBT	106	0	task_0106(UInt32 MTPBTPacketLength, UInt16 MTPBTPacketType, UInt16 MTPBTPacketSeqID)			task_0	Informational		
-Microsoft-Windows-WPD-MTPBT	107	0	task_0107(UInt32 MTPBTPacketLength, UInt16 MTPBTPacketType, UInt16 MTPBTPacketSeqID)			task_0	Informational		
+Microsoft-Windows-WPD-MTPBT	100	0	Event_100(UInt32 MTPBTPacketLength, Binary MTPBTPacketData)			task_0	Informational	Microsoft-Windows-WPD-MTPBT/Analytic	Write MTP BT Packet to data channel
+Microsoft-Windows-WPD-MTPBT	101	0	Event_101(UInt32 MTPBTPacketLength, Binary MTPBTPacketData)			task_0	Informational	Microsoft-Windows-WPD-MTPBT/Analytic	Write MTP BT Packet to event channel
+Microsoft-Windows-WPD-MTPBT	102	0	Event_102(UInt32 MTPBTPacketLength, Binary MTPBTPacketData)			task_0	Informational	Microsoft-Windows-WPD-MTPBT/Analytic	Read MTP BT Packet from data channel
+Microsoft-Windows-WPD-MTPBT	103	0	Event_103(UInt32 MTPBTPacketLength, Binary MTPBTPacketData)			task_0	Informational	Microsoft-Windows-WPD-MTPBT/Analytic	Read MTP BT Packet from event channel
+Microsoft-Windows-WPD-MTPBT	104	0	Event_104(UInt32 MTPBTPacketLength, UInt16 MTPBTPacketType, UInt16 MTPBTPacketSeqID)			task_0	Informational	Microsoft-Windows-WPD-MTPBT/Analytic	Read MTP BT Data Packet
+Microsoft-Windows-WPD-MTPBT	105	0	Event_105(UInt32 MTPBTEventLength, Binary MTPBTEventData)			task_0	Informational	Microsoft-Windows-WPD-MTPBT/Analytic	Received BT Device Event
+Microsoft-Windows-WPD-MTPBT	106	0	Event_106(UInt32 MTPBTPacketLength, UInt16 MTPBTPacketType, UInt16 MTPBTPacketSeqID)			task_0	Informational	Microsoft-Windows-WPD-MTPBT/Analytic	Received BT Unexpected header on data channel
+Microsoft-Windows-WPD-MTPBT	107	0	Event_107(UInt32 MTPBTPacketLength, UInt16 MTPBTPacketType, UInt16 MTPBTPacketSeqID)			task_0	Informational	Microsoft-Windows-WPD-MTPBT/Analytic	Received BT Unexpected header on event channel

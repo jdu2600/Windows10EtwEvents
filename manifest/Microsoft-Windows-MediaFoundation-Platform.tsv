@@ -1,50 +1,42 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-MediaFoundation-Platform	1	0	PluginManager(GUID clsid)			PluginManager	Warning		
-Microsoft-Windows-MediaFoundation-Platform	2	0	PluginManager2(GUID clsid)			PluginManager	Warning		
-Microsoft-Windows-MediaFoundation-Platform	3	0	PluginManager3(GUID clsid, Boolean Disabled)			PluginManager	Informational		
-Microsoft-Windows-MediaFoundation-Platform	4	0	PluginManager4(GUID clsid, Boolean Disabled)			PluginManager	Informational		
-Microsoft-Windows-MediaFoundation-Platform	5	0	PluginManager5(GUID clsid, UnicodeString Selector)			PluginManager	Informational		
-Microsoft-Windows-MediaFoundation-Platform	6	0	PluginManager6(GUID clsid, UnicodeString Selector)			PluginManager	Informational		
-Microsoft-Windows-MediaFoundation-Platform	7	0	PluginManager7(GUID clsid, UnicodeString Selector)			PluginManager	Informational		
-Microsoft-Windows-MediaFoundation-Platform	8	0	PluginManager8(GUID clsid, UnicodeString Selector)			PluginManager	Informational		
-Microsoft-Windows-MediaFoundation-Platform	9	0	PluginManager9(GUID clsid, UnicodeString Selector)			PluginManager	Informational		
-Microsoft-Windows-MediaFoundation-Platform	10	0	PluginManager10(UnicodeString Selector)			PluginManager	Informational		
-Microsoft-Windows-MediaFoundation-Platform	11	0	PluginManager11(GUID clsid, Boolean Disabled)			PluginManager	Informational		
-Microsoft-Windows-MediaFoundation-Platform	12	0	PluginManager12(GUID clsid, UnicodeString Selector)			PluginManager	Informational		
-Microsoft-Windows-MediaFoundation-Platform	13	0	PluginManager13(UnicodeString Selector)			PluginManager	Informational		
-Microsoft-Windows-MediaFoundation-Platform	14	0	PluginManager14(GUID clsid, Boolean Disabled)			PluginManager	Informational		
-Microsoft-Windows-MediaFoundation-Platform	15	0	PluginManager15(UnicodeString MFTName)			PluginManager	Informational		
-Microsoft-Windows-MediaFoundation-Platform	16	0	PluginManager16(UnicodeString MFTName)			PluginManager	Informational		
-Microsoft-Windows-MediaFoundation-Platform	17	0	PluginManager17(UnicodeString MFTName)			PluginManager	Informational		
-Microsoft-Windows-MediaFoundation-Platform	18	0	MF_MFT_Hardware_EnumerationStart(GUID Category)	Start		MF_MFT_Hardware_Enumeration	Informational		
-Microsoft-Windows-MediaFoundation-Platform	19	0	MF_MFT_Hardware_Enumeration(UnicodeString LinkName, UnicodeString FriendlyName)			MF_MFT_Hardware_Enumeration	Informational		
-Microsoft-Windows-MediaFoundation-Platform	20	0	MF_MFT_Hardware_EnumerationStop(GUID Category)	Stop		MF_MFT_Hardware_Enumeration	Informational		
-Microsoft-Windows-MediaFoundation-Platform	21	0	OptimizationFlagsStart(UInt32 dwType, UInt32 dwConfig)	Start		OptimizationFlags	Informational		
-Microsoft-Windows-MediaFoundation-Platform	100	0	MediaFoundationPlatformStart(HexInt32 hr)	Start		MediaFoundationPlatform	Informational		
-Microsoft-Windows-MediaFoundation-Platform	101	0	MediaFoundationPlatformShutdownStart()	Start		MediaFoundationPlatformShutdown	Informational		
-Microsoft-Windows-MediaFoundation-Platform	102	0	MediaFoundationPlatformShutdownStop(HexInt32 hr)	Stop		MediaFoundationPlatformShutdown	Informational		
-Microsoft-Windows-MediaFoundation-Platform	103	0	MediaFoundationGetConfigurationKey(Int32 Type, UnicodeString KeyName, Int32 lResult)			MediaFoundationGetConfigurationKey	Informational		
-Microsoft-Windows-MediaFoundation-Platform	104	0	MediaFoundationGetConfigurationValueDWORD(Int32 Type, UnicodeString KeyName, UnicodeString ValueName, Int32 lResult, Boolean QuerySize, UInt32 ValueDWORD)			MediaFoundationGetConfigurationValueDWORD	Informational		
-Microsoft-Windows-MediaFoundation-Platform	105	0	MediaFoundationGetConfigurationValueString(Int32 Type, UnicodeString KeyName, UnicodeString ValueName, Int32 lResult, Boolean QuerySize, UnicodeString ValueString)			MediaFoundationGetConfigurationValueString	Informational		
-Microsoft-Windows-MediaFoundation-Platform	200	0	MediaFoundationSourceResolverStart(Pointer Context, UnicodeString url, HexInt32 hr)	Start		MediaFoundationSourceResolver	Informational		
-Microsoft-Windows-MediaFoundation-Platform	201	0	MediaFoundationSourceResolverStart201(Pointer Context, UnicodeString clsid)	Start		MediaFoundationSourceResolver	Informational		
-Microsoft-Windows-MediaFoundation-Platform	202	0	MediaFoundationSourceResolver(Pointer Context, UnicodeString clsid)			MediaFoundationSourceResolver	Informational		
-Microsoft-Windows-MediaFoundation-Platform	203	0	MediaFoundationSourceResolver203(Pointer Context, HexInt32 hr)			MediaFoundationSourceResolver	Informational		
-Microsoft-Windows-MediaFoundation-Platform	204	0	MediaFoundationSourceResolver204(Pointer Context, HexInt32 hr)			MediaFoundationSourceResolver	Informational		
-Microsoft-Windows-MediaFoundation-Platform	205	0	MediaFoundationSourceResolverStop(Pointer Context, UnicodeString url, HexInt32 hr)	Stop		MediaFoundationSourceResolver	Informational		
-Microsoft-Windows-MediaFoundation-Platform	206	0	MediaFoundationTraceFailure(Pointer Context, Int32 Line, HexInt32 hr, AnsiString function)			MediaFoundationTraceFailure	Informational		
-Microsoft-Windows-MediaFoundation-Platform	207	0	MediaFoundationByteStreamOnInputStream_ReadStart(Pointer stream, Int64 offset, Int32 length, Pointer buffer)	Start		MediaFoundationByteStreamOnInputStream_Read	Verbose		
-Microsoft-Windows-MediaFoundation-Platform	208	0	MediaFoundationByteStreamOnInputStream_ReadStop(Pointer stream, Int32 length, Pointer buffer, HexInt32 hr)	Stop		MediaFoundationByteStreamOnInputStream_Read	Verbose		
-Microsoft-Windows-MediaFoundation-Platform	300	0	MediaFoundationMFTEnumStart(HexInt32 flags, GUID Category, GUID inputType, GUID inputSubtype, GUID outputType, GUID outputSubtype)	Start		MediaFoundationMFTEnum	Informational		
-Microsoft-Windows-MediaFoundation-Platform	301	0	MediaFoundationMFTEnum(UnicodeString clsid)			MediaFoundationMFTEnum	Informational		
-Microsoft-Windows-MediaFoundation-Platform	302	0	MediaFoundationMFTEnum302(UnicodeString string)			MediaFoundationMFTEnum	Informational		
-Microsoft-Windows-MediaFoundation-Platform	303	0	MediaFoundationMFTEnum303(UnicodeString string)			MediaFoundationMFTEnum	Informational		
-Microsoft-Windows-MediaFoundation-Platform	304	0	MediaFoundationMFTEnumStop(HexInt32 hr, UInt32 localMFTs, UInt32 softwareMFTs, UInt32 hardwareMFTs, UInt32 deviceRegHardwareMFTs, UInt32 packagedMFTs)	Stop		MediaFoundationMFTEnum	Informational		
-Microsoft-Windows-MediaFoundation-Platform	305	0	MediaFoundationMFTEnumStart305(HexInt32 flags, GUID Category, GUID inputType, GUID inputSubtype, GUID outputType, GUID outputSubtype, Boolean luidSet)	Start		MediaFoundationMFTEnum	Informational		
-Microsoft-Windows-MediaFoundation-Platform	306	0	MediaFoundationMFTEnumStop306(HexInt32 hr, UInt32 numMFTs, HexInt32 adapterVendorId, HexInt32 adapterDeviceId, HexInt32 adapterSubSysId, HexInt32 adapterRevision)	Stop		MediaFoundationMFTEnum	Informational		
-Microsoft-Windows-MediaFoundation-Platform	2500	0	MediaFoundationMFTEnumStart2500()	Start		MediaFoundationMFTEnum	Informational		
-Microsoft-Windows-MediaFoundation-Platform	2501	0	MediaFoundationMFTEnumStop2501(HexInt32 Merit, HexInt32 hr)	Stop		MediaFoundationMFTEnum	Informational		
-Microsoft-Windows-MediaFoundation-Platform	2502	0	MediaFoundationMFTEnum2502(HexInt32 hr)			MediaFoundationMFTEnum	Informational		
-Microsoft-Windows-MediaFoundation-Platform	2503	0	MediaFoundationMFTEnum2503(HexInt32 hr)			MediaFoundationMFTEnum	Informational		
-Microsoft-Windows-MediaFoundation-Platform	2504	0	MediaFoundationMFTEnum2504(HexInt32 hr)			MediaFoundationMFTEnum	Informational		
-Microsoft-Windows-MediaFoundation-Platform	2505	0	MediaFoundationMFTEnum2505(HexInt32 hr)			MediaFoundationMFTEnum	Informational		
+Microsoft-Windows-MediaFoundation-Platform	1	0	PluginManager(GUID clsid)			PluginManager	Warning	MediaFoundationPlatform	Attempt to use MFT clsid %1 marked as do not use.
+Microsoft-Windows-MediaFoundation-Platform	2	0	PluginManager2(GUID clsid)			PluginManager	Warning	MediaFoundationPlatform	Attempt to use Media Source clsid %1 marked as do not use.
+Microsoft-Windows-MediaFoundation-Platform	3	0	PluginManager3(GUID clsid, Boolean Disabled)			PluginManager	Informational	MediaFoundationPlatform	Mark MFT clsid %1 do not use = %2.
+Microsoft-Windows-MediaFoundation-Platform	4	0	PluginManager4(GUID clsid, Boolean Disabled)			PluginManager	Informational	MediaFoundationPlatform	Mark Media Source clsid %1 do not use = %2.
+Microsoft-Windows-MediaFoundation-Platform	5	0	PluginManager5(GUID clsid, UnicodeString Selector)			PluginManager	Informational	MediaFoundationPlatform	Choosing preferred MFT clsid %1 for subtype %2.
+Microsoft-Windows-MediaFoundation-Platform	6	0	PluginManager6(GUID clsid, UnicodeString Selector)			PluginManager	Informational	MediaFoundationPlatform	Registering preferred MFT clsid %1 for subtype %2.
+Microsoft-Windows-MediaFoundation-Platform	7	0	PluginManager7(GUID clsid, UnicodeString Selector)			PluginManager	Informational	MediaFoundationPlatform	Choosing preferred Media Source clsid %1 for %2.
+Microsoft-Windows-MediaFoundation-Platform	8	0	PluginManager8(GUID clsid, UnicodeString Selector)			PluginManager	Informational	MediaFoundationPlatform	Registering preferred Media Soure clsid %1 for %2.
+Microsoft-Windows-MediaFoundation-Platform	9	0	PluginManager9(GUID clsid, UnicodeString Selector)			PluginManager	Informational	MediaFoundationPlatform	Found preferred MFT clsid %1 for media subtype %2.
+Microsoft-Windows-MediaFoundation-Platform	10	0	PluginManager10(UnicodeString Selector)			PluginManager	Informational	MediaFoundationPlatform	Did not find preferred MFT for media subtype %1.
+Microsoft-Windows-MediaFoundation-Platform	11	0	PluginManager11(GUID clsid, Boolean Disabled)			PluginManager	Informational	MediaFoundationPlatform	Query MFT clsid %1 do not use: %2.
+Microsoft-Windows-MediaFoundation-Platform	12	0	PluginManager12(GUID clsid, UnicodeString Selector)			PluginManager	Informational	MediaFoundationPlatform	Found preferred Media Source clsid %1 for %2.
+Microsoft-Windows-MediaFoundation-Platform	13	0	PluginManager13(UnicodeString Selector)			PluginManager	Informational	MediaFoundationPlatform	Did not find preferred Media Source for %1.
+Microsoft-Windows-MediaFoundation-Platform	14	0	PluginManager14(GUID clsid, Boolean Disabled)			PluginManager	Informational	MediaFoundationPlatform	Query Media Source clsid %1 do not use: %2.
+Microsoft-Windows-MediaFoundation-Platform	15	0	PluginManager15(UnicodeString MFTName)			PluginManager	Informational	MediaFoundationPlatform	Registering local MFT(%1).
+Microsoft-Windows-MediaFoundation-Platform	16	0	PluginManager16(UnicodeString MFTName)			PluginManager	Informational	MediaFoundationPlatform	Unregistering local MFT(%1).
+Microsoft-Windows-MediaFoundation-Platform	17	0	PluginManager17(UnicodeString MFTName)			PluginManager	Informational	MediaFoundationPlatform	Enumerating local MFT(%1).
+Microsoft-Windows-MediaFoundation-Platform	18	0	MF_MFT_Hardware_EnumerationStart(GUID Category)	Start		MF_MFT_Hardware_Enumeration	Informational	MediaFoundationDeviceProxy	
+Microsoft-Windows-MediaFoundation-Platform	19	0	MF_MFT_Hardware_Enumeration(UnicodeString LinkName, UnicodeString FriendlyName)			MF_MFT_Hardware_Enumeration	Informational	MediaFoundationDeviceProxy	
+Microsoft-Windows-MediaFoundation-Platform	20	0	MF_MFT_Hardware_EnumerationStop(GUID Category)	Stop		MF_MFT_Hardware_Enumeration	Informational	MediaFoundationDeviceProxy	
+Microsoft-Windows-MediaFoundation-Platform	21	0	OptimizationFlagsStart(UInt32 dwType, UInt32 dwConfig)	Start		OptimizationFlags	Informational	MediaFoundationPlatform	Configuration: dwType = %1 dwConfig=%2
+Microsoft-Windows-MediaFoundation-Platform	100	0	MediaFoundationPlatformStart(HexInt32 hr)	Start		MediaFoundationPlatform	Informational	MediaFoundationPlatform	MFStartup returned %1
+Microsoft-Windows-MediaFoundation-Platform	101	0	MediaFoundationPlatform()			MediaFoundationPlatform	Informational	MediaFoundationPlatform	Start MFShutdown
+Microsoft-Windows-MediaFoundation-Platform	102	0	MediaFoundationPlatformStop(HexInt32 hr)	Stop		MediaFoundationPlatform	Informational	MediaFoundationPlatform	End MFShutdown - return code %1
+Microsoft-Windows-MediaFoundation-Platform	200	0	MediaFoundationSourceResolverStart(Pointer Context, UnicodeString url, HexInt32 hr)	Start		MediaFoundationSourceResolver	Informational	MediaFoundationPlatform	Source Resolver Context(%1) Resolve %2 flags %3
+Microsoft-Windows-MediaFoundation-Platform	201	0	MediaFoundationSourceResolverStart201(Pointer Context, UnicodeString clsid)	Start		MediaFoundationSourceResolver	Informational	MediaFoundationPlatform	Source Resolver Context(%1) Trying Scheme Handler %2
+Microsoft-Windows-MediaFoundation-Platform	202	0	MediaFoundationSourceResolver(Pointer Context, UnicodeString clsid)			MediaFoundationSourceResolver	Informational	MediaFoundationPlatform	Source Resolver Context(%1) Trying Byte Scheme Handler CLSID(%2)
+Microsoft-Windows-MediaFoundation-Platform	203	0	MediaFoundationSourceResolver203(Pointer Context, HexInt32 hr)			MediaFoundationSourceResolver	Informational	MediaFoundationPlatform	Source Resolver Context(%1) SchemeHandler Result %2
+Microsoft-Windows-MediaFoundation-Platform	204	0	MediaFoundationSourceResolver204(Pointer Context, HexInt32 hr)			MediaFoundationSourceResolver	Informational	MediaFoundationPlatform	Source Resolver Context(%1) Byte stream Handler Result %2
+Microsoft-Windows-MediaFoundation-Platform	205	0	MediaFoundationSourceResolverStop(Pointer Context, UnicodeString url, HexInt32 hr)	Stop		MediaFoundationSourceResolver	Informational	MediaFoundationPlatform	Source Resolver Context(%1) Resolving %2 returned %3
+Microsoft-Windows-MediaFoundation-Platform	300	0	MediaFoundationMFTEnumStart(HexInt32 flags, GUID Category, GUID inputType, GUID inputSubtype, GUID outputType, GUID outputSubtype)	Start		MediaFoundationMFTEnum	Informational	MediaFoundationPlatform	MFTEnumEx flags %1, category %2 for input type (%3,%4), output type (%5,%6)
+Microsoft-Windows-MediaFoundation-Platform	301	0	MediaFoundationMFTEnum(UnicodeString clsid)			MediaFoundationMFTEnum	Informational	MediaFoundationPlatform	Found matching software MFT %1
+Microsoft-Windows-MediaFoundation-Platform	302	0	MediaFoundationMFTEnum302(UnicodeString string)			MediaFoundationMFTEnum	Informational	MediaFoundationPlatform	Found Local MFT %1
+Microsoft-Windows-MediaFoundation-Platform	303	0	MediaFoundationMFTEnum303(UnicodeString string)			MediaFoundationMFTEnum	Informational	MediaFoundationPlatform	Found Hardware MFT %1
+Microsoft-Windows-MediaFoundation-Platform	304	0	MediaFoundationMFTEnumStop(HexInt32 hr, UInt32 localMFTs, UInt32 hardwareMFTs, UInt32 MFTs)	Stop		MediaFoundationMFTEnum	Informational	MediaFoundationPlatform	MFTEnumEx returned code %1, found %2 local MFTs, %3 hardware MFTs and %4 MFT CLSIDs
+Microsoft-Windows-MediaFoundation-Platform	2500	0	MediaFoundationMFTEnumStart2500()	Start		MediaFoundationMFTEnum	Informational	MediaFoundationPlatform	MFGetMFTMerit Enter
+Microsoft-Windows-MediaFoundation-Platform	2501	0	MediaFoundationMFTEnumStop2501(HexInt32 Merit, HexInt32 hr)	Stop		MediaFoundationMFTEnum	Informational	MediaFoundationPlatform	MFGetMFTMerit Leave Merit(%1) Return Code(%2)
+Microsoft-Windows-MediaFoundation-Platform	2502	0	MediaFoundationMFTEnum2502(HexInt32 hr)			MediaFoundationMFTEnum	Informational	MediaFoundationPlatform	MFGetMFTMerit:  StartInitialization returned %1
+Microsoft-Windows-MediaFoundation-Platform	2503	0	MediaFoundationMFTEnum2503(HexInt32 hr)			MediaFoundationMFTEnum	Informational	MediaFoundationPlatform	MFGetMFTMerit:  Validate Certificate returned %1
+Microsoft-Windows-MediaFoundation-Platform	2504	0	MediaFoundationMFTEnum2504(HexInt32 hr)			MediaFoundationMFTEnum	Informational	MediaFoundationPlatform	MFGetMFTMerit:  EndInitialization returned %1
+Microsoft-Windows-MediaFoundation-Platform	2505	0	MediaFoundationMFTEnum2505(HexInt32 hr)			MediaFoundationMFTEnum	Informational	MediaFoundationPlatform	MFGetMFTMerit:  GetInformation returned %1

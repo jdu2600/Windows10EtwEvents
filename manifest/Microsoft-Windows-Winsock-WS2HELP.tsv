@@ -1,6 +1,5 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-Winsock-WS2HELP	1	0	task_0(UnicodeString LSPName, UInt32 Catalog, AnsiString Installer, GUID GUID, UInt32 Category)			task_0	Always		
-Microsoft-Windows-Winsock-WS2HELP	2	0	task_02(UnicodeString LSPName, UInt32 Catalog, AnsiString Installer, GUID GUID, UInt32 Category)			task_0	Always		
-Microsoft-Windows-Winsock-WS2HELP	3	0	task_03(UnicodeString LSPName, UInt32 Catalog, AnsiString Installer, GUID GUID, UInt32 Category)			task_0	Always		
-Microsoft-Windows-Winsock-WS2HELP	4	0	task_04(UInt32 Catalog)			task_0	Always		
-Microsoft-Windows-Winsock-WS2HELP	5	0	task_05(UnicodeString BinaryName, GUID GUID)			task_0	Always		
+Microsoft-Windows-Winsock-WS2HELP	1	0	Event_1(UnicodeString LSPName, UInt32 Catalog, AnsiString Installer, GUID GUID, UInt32 Category)			task_0	Always	Microsoft-Windows-Winsock-WS2HELP/Operational	LSP %1 was installed in the %2-bit catalog by %3 (GUID=%4, Category ID=%5)
+Microsoft-Windows-Winsock-WS2HELP	2	0	Event_2(UnicodeString LSPName, UInt32 Catalog, AnsiString Installer, GUID GUID, UInt32 Category)			task_0	Always	Microsoft-Windows-Winsock-WS2HELP/Operational	LSP %1 was removed from the %2-bit catalog by %3 (GUID=%4, Category ID=%5)
+Microsoft-Windows-Winsock-WS2HELP	3	0	Event_3(UnicodeString LSPName, UInt32 Catalog, AnsiString Installer, GUID GUID, UInt32 Category)			task_0	Always	Microsoft-Windows-Winsock-WS2HELP/Operational	LSP %1 was disabled in the %2-bit catalog by %3 (GUID=%4, Category ID=%5)
+Microsoft-Windows-Winsock-WS2HELP	4	0	Event_4(UInt32 Catalog)			task_0	Always	Microsoft-Windows-Winsock-WS2HELP/Operational	The %1-bit catalog was reset by the administrator

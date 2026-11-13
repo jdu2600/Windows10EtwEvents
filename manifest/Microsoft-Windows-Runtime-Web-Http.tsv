@@ -1,49 +1,44 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-Runtime-Web-Http	1	0	HttpAsyncI/O(UnicodeString uri)			HttpAsyncI/O	Warning		
-Microsoft-Windows-Runtime-Web-Http	2	0	HttpAsyncI/O2(UnicodeString str1, UnicodeString str2)			HttpAsyncI/O	Warning		
-Microsoft-Windows-Runtime-Web-Http	3	0	HttpAsyncI/O3(UnicodeString str1, UnicodeString str2)			HttpAsyncI/O	Informational		
-Microsoft-Windows-Runtime-Web-Http	4	0	HttpAsyncI/O4(UnicodeString str1, UnicodeString str2)			HttpAsyncI/O	Informational		
-Microsoft-Windows-Runtime-Web-Http	5	0	HttpAsyncI/O5(UnicodeString uri)			HttpAsyncI/O	Informational		
-Microsoft-Windows-Runtime-Web-Http	6	0	HttpAsyncI/O6(UnicodeString uri, UInt32 port, UInt32 errorCode, UInt32 errorMessage)			HttpAsyncI/O	Error		
-Microsoft-Windows-Runtime-Web-Http	7	0	HttpAsyncI/O7(UnicodeString str1, UnicodeString str2, HexInt32 flags)			HttpAsyncI/O	Informational		
-Microsoft-Windows-Runtime-Web-Http	8	0	HttpAsyncI/O8(UnicodeString uri, UInt32 port, UInt32 errorCode, UInt32 errorMessage)			HttpAsyncI/O	Error		
-Microsoft-Windows-Runtime-Web-Http	9	0	HttpAsyncI/O9(Pointer obj1, Pointer obj2, UnicodeString uri)			HttpAsyncI/O	Informational		
-Microsoft-Windows-Runtime-Web-Http	10	0	HttpAsyncI/O10(Pointer obj, UInt32 length)			HttpAsyncI/O	Informational		
-Microsoft-Windows-Runtime-Web-Http	11	0	HttpAsyncI/O11(Pointer obj, UInt32 length)			HttpAsyncI/O	Informational		
-Microsoft-Windows-Runtime-Web-Http	12	0	HttpAsyncI/O12(Pointer obj)			HttpAsyncI/O	Informational		
-Microsoft-Windows-Runtime-Web-Http	13	0	HttpAsyncI/O13(Pointer obj)			HttpAsyncI/O	Informational		
-Microsoft-Windows-Runtime-Web-Http	14	0	HttpAsyncI/O14(Pointer obj, UInt32 length)			HttpAsyncI/O	Informational		
-Microsoft-Windows-Runtime-Web-Http	15	0	HttpAsyncI/O15(Pointer obj, UInt32 errorCode, UInt32 errorMessage)			HttpAsyncI/O	Error		
-Microsoft-Windows-Runtime-Web-Http	16	0	HttpAsyncI/O16(Pointer obj, UnicodeString statusDescription)			HttpAsyncI/O	Verbose		
-Microsoft-Windows-Runtime-Web-Http	17	0	HttpAsyncI/O17(Pointer obj)			HttpAsyncI/O	Informational		
-Microsoft-Windows-Runtime-Web-Http	18	0	HttpAsyncI/O18(Pointer obj, UInt32 statusCode, UnicodeString statusDescription)			HttpAsyncI/O	Informational		
-Microsoft-Windows-Runtime-Web-Http	19	0	HttpAsyncI/O19(Pointer obj, UnicodeString statusDescription)			HttpAsyncI/O	Verbose		
-Microsoft-Windows-Runtime-Web-Http	20	0	HttpAsyncI/O20(Pointer obj, UInt32 errorCode, UInt32 errorMessage)			HttpAsyncI/O	Error		
-Microsoft-Windows-Runtime-Web-Http	21	0	HttpAsyncI/O21(Pointer obj, UInt32 length, UInt32 limit)			HttpAsyncI/O	Informational		
-Microsoft-Windows-Runtime-Web-Http	22	0	HttpAsyncI/O22(Pointer obj)			HttpAsyncI/O	Informational		
-Microsoft-Windows-Runtime-Web-Http	23	0	HttpAsyncI/O23(Pointer obj, UnicodeString statusDescription)			HttpAsyncI/O	Informational		
-Microsoft-Windows-Runtime-Web-Http	24	0	HttpAsyncI/O24(Pointer obj)			HttpAsyncI/O	Informational		
-Microsoft-Windows-Runtime-Web-Http	25	0	HttpAsyncI/O25(UnicodeString statusDescription, UInt32 stage, UInt32 retries, UInt64 bytesSent, UInt64 totalBytesToSend, UInt64 bytesReceived, UInt64 totalBytesToReceive)			HttpAsyncI/O	Informational		
-Microsoft-Windows-Runtime-Web-Http	26	0	HttpAsyncI/O26(UnicodeString uri, UInt32 hresult, Int32 errorMessage)			HttpAsyncI/O	Error		
-Microsoft-Windows-Runtime-Web-Http	27	0	HttpAsyncI/O27(UInt32 asyncOperation, Pointer asyncObject, UnicodeString response, UInt32 hresult, Int32 errorMessage)			HttpAsyncI/O	Error		
-Microsoft-Windows-Runtime-Web-Http	28	0	HttpOperation(UInt32 asyncOperation, Pointer asyncObject)			HttpOperation	Informational		
-Microsoft-Windows-Runtime-Web-Http	29	0	HttpOperation29(UInt32 asyncOperation, Pointer asyncObject, UInt32 hresult, Int32 errorMessage)			HttpOperation	Error		
-Microsoft-Windows-Runtime-Web-Http	30	0	HttpOperation30(UInt32 asyncOperation, Pointer asyncObject)			HttpOperation	Informational		
-Microsoft-Windows-Runtime-Web-Http	31	0	HttpOperation31(UInt32 asyncOperation, Pointer asyncObject, UInt32 hresult, Int32 errorMessage)			HttpOperation	Error		
-Microsoft-Windows-Runtime-Web-Http	32	0	HttpOperation32(UInt32 asyncOperation, Pointer asyncObject)			HttpOperation	Informational		
-Microsoft-Windows-Runtime-Web-Http	33	0	HttpOperation33(UInt32 asyncOperation, Pointer asyncObject)			HttpOperation	Informational		
-Microsoft-Windows-Runtime-Web-Http	34	0	HttpOperation34(UInt32 asyncOperation, Pointer asyncObject)			HttpOperation	Informational		
-Microsoft-Windows-Runtime-Web-Http	35	0	HttpCct(UInt32 responseState, Int32 pendingReceiveOperations)			HttpCct	Informational		
-Microsoft-Windows-Runtime-Web-Http	36	0	HttpCct36()			HttpCct	Informational		
-Microsoft-Windows-Runtime-Web-Http	37	0	HttpCct37(UInt32 hresult, Int32 errorMessage)			HttpCct	Informational		
-Microsoft-Windows-Runtime-Web-Http	38	0	HttpCct38()			HttpCct	Informational		
-Microsoft-Windows-Runtime-Web-Http	39	0	HttpCct39(UInt32 hresult, Int32 errorMessage)			HttpCct	Informational		
-Microsoft-Windows-Runtime-Web-Http	40	0	HttpCct40(UInt32 pendingOperations)			HttpCct	Informational		
-Microsoft-Windows-Runtime-Web-Http	41	0	HttpCct41(UInt32 pendingOperations)			HttpCct	Informational		
-Microsoft-Windows-Runtime-Web-Http	42	0	HttpCct42(UInt32 responseState)			HttpCct	Informational		
-Microsoft-Windows-Runtime-Web-Http	43	0	HttpAsyncI/O43(Pointer obj)			HttpAsyncI/O	Informational		
-Microsoft-Windows-Runtime-Web-Http	44	0	HttpOperation44(UInt32 asyncOperation, Pointer asyncObject)			HttpOperation	Informational		
-Microsoft-Windows-Runtime-Web-Http	45	0	HttpOperation45(UInt32 asyncOperation, Pointer asyncObject)			HttpOperation	Informational		
-Microsoft-Windows-Runtime-Web-Http	46	0	HttpOperation46(UInt32 asyncOperation, Pointer asyncObject)			HttpOperation	Error		
-Microsoft-Windows-Runtime-Web-Http	47	0	HttpOperation47(UInt32 asyncOperation, Pointer asyncObject)			HttpOperation	Informational		
-Microsoft-Windows-Runtime-Web-Http	48	0	HttpAsyncI/O48()			HttpAsyncI/O	Warning		
+Microsoft-Windows-Runtime-Web-Http	1	0	HttpAsyncI/O(UnicodeString uri)			HttpAsyncI/O	Warning	Microsoft-Windows-Runtime-Web-Http/Tracing	Failed to parse URI '%1'.
+Microsoft-Windows-Runtime-Web-Http	2	0	HttpAsyncI/O2(UnicodeString str1, UnicodeString str2)			HttpAsyncI/O	Warning	Microsoft-Windows-Runtime-Web-Http/Tracing	Failed to create URI with base URI '%1' and relative URI '%2'.
+Microsoft-Windows-Runtime-Web-Http	3	0	HttpAsyncI/O3(UnicodeString str1, UnicodeString str2)			HttpAsyncI/O	Informational	Microsoft-Windows-Runtime-Web-Http/Tracing	Add HTTP header '%1: %2'.
+Microsoft-Windows-Runtime-Web-Http	4	0	HttpAsyncI/O4(UnicodeString str1, UnicodeString str2)			HttpAsyncI/O	Informational	Microsoft-Windows-Runtime-Web-Http/Tracing	Start to connect to '%1' with credential of '%2'.
+Microsoft-Windows-Runtime-Web-Http	5	0	HttpAsyncI/O5(UnicodeString uri)			HttpAsyncI/O	Informational	Microsoft-Windows-Runtime-Web-Http/Tracing	Start to connect to '%1' with default credential.
+Microsoft-Windows-Runtime-Web-Http	6	0	HttpAsyncI/O6(UnicodeString uri, UInt32 port, UInt32 errorCode, UInt32 errorMessage)			HttpAsyncI/O	Error	Microsoft-Windows-Runtime-Web-Http/Tracing	Failed to connect to '%1' at port %2. The last error is %3: %4
+Microsoft-Windows-Runtime-Web-Http	7	0	HttpAsyncI/O7(UnicodeString str1, UnicodeString str2, HexInt32 flags)			HttpAsyncI/O	Informational	Microsoft-Windows-Runtime-Web-Http/Tracing	Opening request to '%1' to '%2' with flags %3.
+Microsoft-Windows-Runtime-Web-Http	8	0	HttpAsyncI/O8(UnicodeString uri, UInt32 port, UInt32 errorCode, UInt32 errorMessage)			HttpAsyncI/O	Error	Microsoft-Windows-Runtime-Web-Http/Tracing	Failed to open request to '%1'. The last error is %2: %3
+Microsoft-Windows-Runtime-Web-Http	9	0	HttpAsyncI/O9(Pointer obj1, Pointer obj2, UnicodeString uri)			HttpAsyncI/O	Informational	Microsoft-Windows-Runtime-Web-Http/Tracing	Request context %1 has request handle %2 to '%3'.
+Microsoft-Windows-Runtime-Web-Http	10	0	HttpAsyncI/O10(Pointer obj, UInt32 length)			HttpAsyncI/O	Informational	Microsoft-Windows-Runtime-Web-Http/Tracing	Set HTTP send and receive timeout to %2ms on request handle %1.
+Microsoft-Windows-Runtime-Web-Http	11	0	HttpAsyncI/O11(Pointer obj, UInt32 length)			HttpAsyncI/O	Informational	Microsoft-Windows-Runtime-Web-Http/Tracing	Start to send to request handle %1 with content length %2.
+Microsoft-Windows-Runtime-Web-Http	12	0	HttpAsyncI/O12(Pointer obj)			HttpAsyncI/O	Informational	Microsoft-Windows-Runtime-Web-Http/Tracing	Request handle %1 completed synchronously.
+Microsoft-Windows-Runtime-Web-Http	13	0	HttpAsyncI/O13(Pointer obj)			HttpAsyncI/O	Informational	Microsoft-Windows-Runtime-Web-Http/Tracing	Request context %1 completed send asynchronously.
+Microsoft-Windows-Runtime-Web-Http	14	0	HttpAsyncI/O14(Pointer obj, UInt32 length)			HttpAsyncI/O	Informational	Microsoft-Windows-Runtime-Web-Http/Tracing	Writing %2 bytes to request handle %1.
+Microsoft-Windows-Runtime-Web-Http	15	0	HttpAsyncI/O15(Pointer obj, UInt32 errorCode, UInt32 errorMessage)			HttpAsyncI/O	Error	Microsoft-Windows-Runtime-Web-Http/Tracing	Failed to send entity body to request handle %1. The last error is %2: %3
+Microsoft-Windows-Runtime-Web-Http	16	0	HttpAsyncI/O16(Pointer obj, UnicodeString statusDescription)			HttpAsyncI/O	Verbose	Microsoft-Windows-Runtime-Web-Http/Tracing	Sent HTTP request at request handle %1: %2
+Microsoft-Windows-Runtime-Web-Http	17	0	HttpAsyncI/O17(Pointer obj)			HttpAsyncI/O	Informational	Microsoft-Windows-Runtime-Web-Http/Tracing	Start to receive response from request handle %1.
+Microsoft-Windows-Runtime-Web-Http	18	0	HttpAsyncI/O18(Pointer obj, UInt32 statusCode, UnicodeString statusDescription)			HttpAsyncI/O	Informational	Microsoft-Windows-Runtime-Web-Http/Tracing	Received HTTP response from request handle %1 with status code %2 and status description '%3'.
+Microsoft-Windows-Runtime-Web-Http	19	0	HttpAsyncI/O19(Pointer obj, UnicodeString statusDescription)			HttpAsyncI/O	Verbose	Microsoft-Windows-Runtime-Web-Http/Tracing	Receive HTTP response from request handle %1: %2
+Microsoft-Windows-Runtime-Web-Http	20	0	HttpAsyncI/O20(Pointer obj, UInt32 errorCode, UInt32 errorMessage)			HttpAsyncI/O	Error	Microsoft-Windows-Runtime-Web-Http/Tracing	Failed to receive HTTP response from request handle %1. The last error is %2: %3
+Microsoft-Windows-Runtime-Web-Http	21	0	HttpAsyncI/O21(Pointer obj, UInt32 length, UInt32 limit)			HttpAsyncI/O	Informational	Microsoft-Windows-Runtime-Web-Http/Tracing	Request context %1 received HTTP response of %2 bytes, which is over the %3 limit.
+Microsoft-Windows-Runtime-Web-Http	22	0	HttpAsyncI/O22(Pointer obj)			HttpAsyncI/O	Informational	Microsoft-Windows-Runtime-Web-Http/Tracing	Request context %1 resubmitting the request.
+Microsoft-Windows-Runtime-Web-Http	23	0	HttpAsyncI/O23(Pointer obj, UnicodeString statusDescription)			HttpAsyncI/O	Informational	Microsoft-Windows-Runtime-Web-Http/Tracing	Reusing the request handle %1 for server '%2'.
+Microsoft-Windows-Runtime-Web-Http	24	0	HttpAsyncI/O24(Pointer obj)			HttpAsyncI/O	Informational	Microsoft-Windows-Runtime-Web-Http/Tracing	Request context %1 was aborted.
+Microsoft-Windows-Runtime-Web-Http	25	0	HttpAsyncI/O25(UnicodeString statusDescription, UInt32 stage, UInt32 retries, UInt64 bytesSent, UInt64 totalBytesToSend, UInt64 bytesReceived, UInt64 totalBytesToReceive)			HttpAsyncI/O	Informational	Microsoft-Windows-Runtime-Web-Http/Tracing	Progress to '%1': %2 stage; %3 retries; %4 bytes sent; %5 total bytes to send; %6 bytes received; %7 total bytes to receive.
+Microsoft-Windows-Runtime-Web-Http	26	0	HttpAsyncI/O26(UnicodeString uri, UInt32 hresult, Int32 errorMessage)			HttpAsyncI/O	Error	Microsoft-Windows-Runtime-Web-Http/Tracing	HTTP request to '%1' completed. The error code is %2: %3
+Microsoft-Windows-Runtime-Web-Http	27	0	HttpAsyncI/O27(UInt32 asyncOperation, Pointer asyncObject, UnicodeString response, UInt32 hresult, Int32 errorMessage)			HttpAsyncI/O	Error	Microsoft-Windows-Runtime-Web-Http/Tracing	Async operation %1 at %2 failed to process HTTP response '%3'. The error code is %4: %5
+Microsoft-Windows-Runtime-Web-Http	28	0	HttpOperation(UInt32 asyncOperation, Pointer asyncObject)			HttpOperation	Informational	Microsoft-Windows-Runtime-Web-Http/Tracing	Async operation %1 at %2 started.
+Microsoft-Windows-Runtime-Web-Http	29	0	HttpOperation29(UInt32 asyncOperation, Pointer asyncObject, UInt32 hresult, Int32 errorMessage)			HttpOperation	Error	Microsoft-Windows-Runtime-Web-Http/Tracing	Async operation %1 at %2 failed to start. The error code is %3: %4
+Microsoft-Windows-Runtime-Web-Http	30	0	HttpOperation30(UInt32 asyncOperation, Pointer asyncObject)			HttpOperation	Informational	Microsoft-Windows-Runtime-Web-Http/Tracing	Async operation %1 at %2 completed successfully.
+Microsoft-Windows-Runtime-Web-Http	31	0	HttpOperation31(UInt32 asyncOperation, Pointer asyncObject, UInt32 hresult, Int32 errorMessage)			HttpOperation	Error	Microsoft-Windows-Runtime-Web-Http/Tracing	Async operation %1 at %2 failed with error code %3: %4
+Microsoft-Windows-Runtime-Web-Http	32	0	HttpOperation32(UInt32 asyncOperation, Pointer asyncObject)			HttpOperation	Informational	Microsoft-Windows-Runtime-Web-Http/Tracing	Async operation %1 at %2 was canceled.
+Microsoft-Windows-Runtime-Web-Http	33	0	HttpOperation33(UInt32 asyncOperation, Pointer asyncObject)			HttpOperation	Informational	Microsoft-Windows-Runtime-Web-Http/Tracing	Async operation %1 at %2 was closed.
+Microsoft-Windows-Runtime-Web-Http	34	0	HttpOperation34(UInt32 asyncOperation, Pointer asyncObject)			HttpOperation	Informational	Microsoft-Windows-Runtime-Web-Http/Tracing	Async operation %1 at %2 called progress delegate.
+Microsoft-Windows-Runtime-Web-Http	35	0	HttpCct(UInt32 responseState, Int32 pendingReceiveOperations)			HttpCct	Informational	Microsoft-Windows-Runtime-Web-Http/Tracing	CompleteDelivery loop with %1 response state; %2 pending receive operations.
+Microsoft-Windows-Runtime-Web-Http	36	0	HttpCct36()			HttpCct	Informational	Microsoft-Windows-Runtime-Web-Http/Tracing	CompleteDelivery enter.
+Microsoft-Windows-Runtime-Web-Http	37	0	HttpCct37(UInt32 hresult, Int32 errorMessage)			HttpCct	Informational	Microsoft-Windows-Runtime-Web-Http/Tracing	CompleteDelivery exit with %1: %2
+Microsoft-Windows-Runtime-Web-Http	38	0	HttpCct38()			HttpCct	Informational	Microsoft-Windows-Runtime-Web-Http/Tracing	Flush enter.
+Microsoft-Windows-Runtime-Web-Http	39	0	HttpCct39(UInt32 hresult, Int32 errorMessage)			HttpCct	Informational	Microsoft-Windows-Runtime-Web-Http/Tracing	Flush exit with %1: %2
+Microsoft-Windows-Runtime-Web-Http	40	0	HttpCct40(UInt32 pendingOperations)			HttpCct	Informational	Microsoft-Windows-Runtime-Web-Http/Tracing	Decrement pending receive operations to %1.
+Microsoft-Windows-Runtime-Web-Http	41	0	HttpCct41(UInt32 pendingOperations)			HttpCct	Informational	Microsoft-Windows-Runtime-Web-Http/Tracing	Increment pending receive operations to %1.
+Microsoft-Windows-Runtime-Web-Http	42	0	HttpCct42(UInt32 responseState)			HttpCct	Informational	Microsoft-Windows-Runtime-Web-Http/Tracing	Set response state to %1.
+Microsoft-Windows-Runtime-Web-Http	43	0	HttpAsyncI/O43(Pointer obj)			HttpAsyncI/O	Informational	Microsoft-Windows-Runtime-Web-Http/Tracing	Handle %1: HTTP/2 enabled.

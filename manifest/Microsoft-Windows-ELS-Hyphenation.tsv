@@ -1,12 +1,12 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-ELS-Hyphenation	1	0	task_0Start()	Start		task_0	Informational		
-Microsoft-Windows-ELS-Hyphenation	2	0	task_0Stop()	Stop		task_0	Informational		
-Microsoft-Windows-ELS-Hyphenation	3	0	task_0Start3()	Start		task_0	Informational		
-Microsoft-Windows-ELS-Hyphenation	4	0	task_0Stop4()	Stop		task_0	Informational		
-Microsoft-Windows-ELS-Hyphenation	5	0	task_0Start5()	Start		task_0	Informational		
-Microsoft-Windows-ELS-Hyphenation	6	0	task_0Stop6()	Stop		task_0	Informational		
-Microsoft-Windows-ELS-Hyphenation	7	0	task_0Start7()	Start		task_0	Informational		
-Microsoft-Windows-ELS-Hyphenation	8	0	task_0Stop8()	Stop		task_0	Informational		
-Microsoft-Windows-ELS-Hyphenation	9	0	task_0Start9()	Start		task_0	Informational		
-Microsoft-Windows-ELS-Hyphenation	10	0	task_0Stop10()	Stop		task_0	Informational		
-Microsoft-Windows-ELS-Hyphenation	11	0	task_0(UnicodeString String)			task_0	Warning		
+Microsoft-Windows-ELS-Hyphenation	1	0	Event_1_Start()	Start		task_0	Informational	Els_Hyphenation/Analytic	Start InitService
+Microsoft-Windows-ELS-Hyphenation	2	0	Event_2_Stop()	Stop		task_0	Informational	Els_Hyphenation/Analytic	Stop InitService
+Microsoft-Windows-ELS-Hyphenation	3	0	Event_3_Start()	Start		task_0	Informational	Els_Hyphenation/Analytic	Start RecognizeText
+Microsoft-Windows-ELS-Hyphenation	4	0	Event_4_Stop()	Stop		task_0	Informational	Els_Hyphenation/Analytic	Stop RecognizeText
+Microsoft-Windows-ELS-Hyphenation	5	0	Event_5_Start()	Start		task_0	Informational	Els_Hyphenation/Analytic	Start FreePropertyBag
+Microsoft-Windows-ELS-Hyphenation	6	0	Event_6_Stop()	Stop		task_0	Informational	Els_Hyphenation/Analytic	Stop FreePropertyBag
+Microsoft-Windows-ELS-Hyphenation	7	0	Event_7_Start()	Start		task_0	Informational	Els_Hyphenation/Analytic	Start FreeService
+Microsoft-Windows-ELS-Hyphenation	8	0	Event_8_Stop()	Stop		task_0	Informational	Els_Hyphenation/Analytic	Stop FreeService
+Microsoft-Windows-ELS-Hyphenation	9	0	Event_9_Start()	Start		task_0	Informational	Els_Hyphenation/Analytic	Start creating hyphenator
+Microsoft-Windows-ELS-Hyphenation	10	0	Event_10_Stop()	Stop		task_0	Informational	Els_Hyphenation/Analytic	Stop creating Hyphenator
+Microsoft-Windows-ELS-Hyphenation	11	0	Event_11(UnicodeString String)			task_0	Warning		Lexicon %1 not found. Using fallback hyphenator.

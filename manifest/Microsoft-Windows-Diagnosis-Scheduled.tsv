@@ -1,21 +1,21 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-Diagnosis-Scheduled	1	0	task_0()		notification	task_0	Critical		
-Microsoft-Windows-Diagnosis-Scheduled	2	0	task_02()		lifecycle	task_0	Informational		
-Microsoft-Windows-Diagnosis-Scheduled	3	0	task_03()		lifecycle	task_0	Informational		
-Microsoft-Windows-Diagnosis-Scheduled	4	0	task_04()		lifecycle	task_0	Informational		
-Microsoft-Windows-Diagnosis-Scheduled	5	0	task_05(UnicodeString PackagePath)		lifecycle	task_0	Informational		
-Microsoft-Windows-Diagnosis-Scheduled	6	0	task_06(UnicodeString PackageID)		lifecycle	task_0	Informational		
-Microsoft-Windows-Diagnosis-Scheduled	7	0	task_07(UnicodeString PackageID)		lifecycle	task_0	Informational		
-Microsoft-Windows-Diagnosis-Scheduled	8	0	task_08(UnicodeString PackageID, Int32 RootCauseCount)		lifecycle	task_0	Informational		
-Microsoft-Windows-Diagnosis-Scheduled	9	0	task_09(UnicodeString RootCauseID, UnicodeString RootCauseName, UnicodeString RootCauseDescription)		lifecycle	task_0	Informational		
-Microsoft-Windows-Diagnosis-Scheduled	10	0	task_010(UnicodeString RootCauseID, UnicodeString ResolutionID)		lifecycle	task_0	Informational		
-Microsoft-Windows-Diagnosis-Scheduled	11	0	task_011(UnicodeString RootCauseID, UnicodeString ResolutionID)		lifecycle	task_0	Informational		
-Microsoft-Windows-Diagnosis-Scheduled	12	0	task_012(UnicodeString RootCauseID)		lifecycle	task_0	Informational		
-Microsoft-Windows-Diagnosis-Scheduled	13	0	task_013(UnicodeString RootCauseID)		lifecycle	task_0	Informational		
-Microsoft-Windows-Diagnosis-Scheduled	14	0	task_014(UnicodeString RootCauseID)		lifecycle	task_0	Informational		
-Microsoft-Windows-Diagnosis-Scheduled	15	0	task_015(UnicodeString PackageID, UInt32 ErrorCode)		lifecycle	task_0	Informational		
-Microsoft-Windows-Diagnosis-Scheduled	96	0	task_096(UInt32 hc_stateid, UnicodeString Data1, UnicodeString Data2)		notification	task_0	Critical		
-Microsoft-Windows-Diagnosis-Scheduled	97	0	task_097(UInt32 hc_stateid)		notification	task_0	Critical		
-Microsoft-Windows-Diagnosis-Scheduled	98	0	task_098(UInt32 hc_stateid, UnicodeString Data1, UnicodeString Data2)		notification	task_0	Critical		
-Microsoft-Windows-Diagnosis-Scheduled	99	0	task_099(UInt32 hc_stateid)		notification	task_0	Critical		
-Microsoft-Windows-Diagnosis-Scheduled	100	0	task_0100(UInt32 hc_stateid)		notification	task_0	Critical		
+Microsoft-Windows-Diagnosis-Scheduled	1	0	Event_1()		notification	task_0	Critical	Microsoft-Windows-Diagnosis-Scheduled/Operational	The scheduled diagnostic task has detected a change in state for a check registered in Security and Maintenance.
+Microsoft-Windows-Diagnosis-Scheduled	2	0	Event_2()		lifecycle	task_0	Informational	Microsoft-Windows-Diagnosis-Scheduled/Operational	Scheduled diagnostics have started.
+Microsoft-Windows-Diagnosis-Scheduled	3	0	Event_3()		lifecycle	task_0	Informational	Microsoft-Windows-Diagnosis-Scheduled/Operational	Scheduled diagnostics have been completed.
+Microsoft-Windows-Diagnosis-Scheduled	4	0	Event_4()		lifecycle	task_0	Informational	Microsoft-Windows-Diagnosis-Scheduled/Operational	Scheduled diagnostics have been disabled.
+Microsoft-Windows-Diagnosis-Scheduled	5	0	Event_5(UnicodeString PackagePath)		lifecycle	task_0	Informational	Microsoft-Windows-Diagnosis-Scheduled/Operational	The scheduled diagnostic task has started initializing a diagnostic package.
+Microsoft-Windows-Diagnosis-Scheduled	6	0	Event_6(UnicodeString PackageID)		lifecycle	task_0	Informational	Microsoft-Windows-Diagnosis-Scheduled/Operational	The scheduled diagnostic task has completed initialization of a diagnostic package.
+Microsoft-Windows-Diagnosis-Scheduled	7	0	Event_7(UnicodeString PackageID)		lifecycle	task_0	Informational	Microsoft-Windows-Diagnosis-Scheduled/Operational	The scheduled diagnostic task has started troubleshooting a diagnostic package.
+Microsoft-Windows-Diagnosis-Scheduled	8	0	Event_8(UnicodeString PackageID, Int32 RootCauseCount)		lifecycle	task_0	Informational	Microsoft-Windows-Diagnosis-Scheduled/Operational	The scheduled diagnostic task has completed troubleshooting a diagnostic package.
+Microsoft-Windows-Diagnosis-Scheduled	9	0	Event_9(UnicodeString RootCauseID, UnicodeString RootCauseName, UnicodeString RootCauseDescription)		lifecycle	task_0	Informational	Microsoft-Windows-Diagnosis-Scheduled/Operational	The scheduled diagnostic task has detected a root cause.
+Microsoft-Windows-Diagnosis-Scheduled	10	0	Event_10(UnicodeString RootCauseID, UnicodeString ResolutionID)		lifecycle	task_0	Informational	Microsoft-Windows-Diagnosis-Scheduled/Operational	The scheduled diagnostic task has started resolving a detected root cause.
+Microsoft-Windows-Diagnosis-Scheduled	11	0	Event_11(UnicodeString RootCauseID, UnicodeString ResolutionID)		lifecycle	task_0	Informational	Microsoft-Windows-Diagnosis-Scheduled/Operational	The scheduled diagnostic task has completed resolving a detected root cause.
+Microsoft-Windows-Diagnosis-Scheduled	12	0	Event_12(UnicodeString RootCauseID)		lifecycle	task_0	Informational	Microsoft-Windows-Diagnosis-Scheduled/Operational	The scheduled diagnostic task has started verifying the fix applied for a detected root cause.
+Microsoft-Windows-Diagnosis-Scheduled	13	0	Event_13(UnicodeString RootCauseID)		lifecycle	task_0	Informational	Microsoft-Windows-Diagnosis-Scheduled/Operational	The scheduled diagnostic task has determined that the root cause no longer exists.
+Microsoft-Windows-Diagnosis-Scheduled	14	0	Event_14(UnicodeString RootCauseID)		lifecycle	task_0	Informational	Microsoft-Windows-Diagnosis-Scheduled/Operational	The scheduled diagnostic task has determined that the root cause continues to exist.
+Microsoft-Windows-Diagnosis-Scheduled	15	0	Event_15(UnicodeString PackageID, UInt32 ErrorCode)		lifecycle	task_0	Informational	Microsoft-Windows-Diagnosis-Scheduled/Operational	The scheduled diagnostic task has encountered an error.
+Microsoft-Windows-Diagnosis-Scheduled	96	0	Event_96(UInt32 hc_stateid, UnicodeString Data1, UnicodeString Data2)		notification	task_0	Critical	Microsoft-Windows-Diagnosis-Scheduled/Operational	TEST: One or more rootcauses were detected and a package wide notification was raised.
+Microsoft-Windows-Diagnosis-Scheduled	97	0	Event_97(UInt32 hc_stateid)		notification	task_0	Critical	Microsoft-Windows-Diagnosis-Scheduled/Operational	TEST: No rootcauses were detected and a package wide reset notification was raised.
+Microsoft-Windows-Diagnosis-Scheduled	98	0	Event_98(UInt32 hc_stateid, UnicodeString Data1, UnicodeString Data2)		notification	task_0	Critical	Microsoft-Windows-Diagnosis-Scheduled/Operational	TEST: A rootcause was detected and a rootcause wide notification was raised.
+Microsoft-Windows-Diagnosis-Scheduled	99	0	Event_99(UInt32 hc_stateid)		notification	task_0	Critical	Microsoft-Windows-Diagnosis-Scheduled/Operational	TEST: A root cause does not exist and a root cause reset notification was raised.
+Microsoft-Windows-Diagnosis-Scheduled	100	0	Event_100(UInt32 hc_stateid)		notification	task_0	Critical	Microsoft-Windows-Diagnosis-Scheduled/Operational	System maintenance detected issues requiring your attention. A notification was sent to Security and Maintenance.

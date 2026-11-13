@@ -1,17 +1,17 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-Diagnosis-AdvancedTaskManager	5016	0	task_0(AnsiString FileName, UInt32 Line, Pointer Address, Pointer Size)		memory	task_0	Always		
-Microsoft-Windows-Diagnosis-AdvancedTaskManager	5017	0	task_05017(AnsiString FileName, UInt32 Line, Pointer Address)		memory	task_0	Always		
-Microsoft-Windows-Diagnosis-AdvancedTaskManager	5018	0	task_05018(AnsiString FileName, UInt32 Line, Pointer Address, Pointer Size, Pointer OrigAddress)		memory	task_0	Always		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5016	0	Event_5016(AnsiString FileName, UInt32 Line, Pointer Address, Pointer Size)		memory	task_0	Always		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5017	0	Event_5017(AnsiString FileName, UInt32 Line, Pointer Address)		memory	task_0	Always		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5018	0	Event_5018(AnsiString FileName, UInt32 Line, Pointer Address, Pointer Size, Pointer OrigAddress)		memory	task_0	Always		
 Microsoft-Windows-Diagnosis-AdvancedTaskManager	5100	0	ListUpdate(UInt32 TableId, UInt32 ItemPos, UInt32 ItemState, UnicodeString ItemContent)	Update	list	ListUpdate	Informational		
 Microsoft-Windows-Diagnosis-AdvancedTaskManager	5101	0	ListUpdateInsert(UInt32 TableId, UInt32 ItemPos, UInt32 ItemState, UnicodeString ItemContent)	Insert	list	ListUpdate	Informational		
 Microsoft-Windows-Diagnosis-AdvancedTaskManager	5102	0	ListUpdateDelete(UInt32 TableId, UInt32 ItemPos, UInt32 ItemState, UnicodeString ItemContent)	Delete	list	ListUpdate	Informational		
-Microsoft-Windows-Diagnosis-AdvancedTaskManager	5103	0	task_05103(AnsiString FileName, AnsiString Function, UInt32 Line, UnicodeString ErrorText)		error	task_0	Error		
-Microsoft-Windows-Diagnosis-AdvancedTaskManager	5200	0	PerfTrack_TM8_LaunchStart()	Start		PerfTrack_TM8_Launch	Informational		
-Microsoft-Windows-Diagnosis-AdvancedTaskManager	5201	0	PerfTrack_TM8_LaunchStop()	Stop		PerfTrack_TM8_Launch	Informational		
-Microsoft-Windows-Diagnosis-AdvancedTaskManager	5202	0	PerfTrack_TM8_TabSwitchStart(UInt32 TabId)	Start		PerfTrack_TM8_TabSwitch	Informational		
-Microsoft-Windows-Diagnosis-AdvancedTaskManager	5203	0	PerfTrack_TM8_TabSwitchStop(UInt32 TabId)	Stop		PerfTrack_TM8_TabSwitch	Informational		
-Microsoft-Windows-Diagnosis-AdvancedTaskManager	5204	0	PerfTrack_TM8_KillProcessStart(UnicodeString ProcessOrPackageName, UnicodeString Version, UInt32 TimeDateStamp, UInt32 ProcessId)	Start		PerfTrack_TM8_KillProcess	Informational		
-Microsoft-Windows-Diagnosis-AdvancedTaskManager	5205	0	PerfTrack_TM8_KillProcessStop(UnicodeString ProcessOrPackageName, UnicodeString Version, UInt32 TimeDateStamp, UInt32 ProcessId)	Stop		PerfTrack_TM8_KillProcess	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5103	0	Event_5103(AnsiString FileName, AnsiString Function, UInt32 Line, UnicodeString ErrorText)		error	task_0	Error		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5200	0	PerfTrack_TM8_LaunchStart()	Start		PerfTrack_TM8_Launch	Informational	Microsoft-Windows-Diagnosis-AdvancedTaskManager/Analytic	
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5201	0	PerfTrack_TM8_LaunchStop()	Stop		PerfTrack_TM8_Launch	Informational	Microsoft-Windows-Diagnosis-AdvancedTaskManager/Analytic	
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5202	0	PerfTrack_TM8_TabSwitchStart(UInt32 TabId)	Start		PerfTrack_TM8_TabSwitch	Informational	Microsoft-Windows-Diagnosis-AdvancedTaskManager/Analytic	
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5203	0	PerfTrack_TM8_TabSwitchStop(UInt32 TabId)	Stop		PerfTrack_TM8_TabSwitch	Informational	Microsoft-Windows-Diagnosis-AdvancedTaskManager/Analytic	
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5204	0	PerfTrack_TM8_KillProcessStart(UnicodeString ProcessOrPackageName)	Start		PerfTrack_TM8_KillProcess	Informational	Microsoft-Windows-Diagnosis-AdvancedTaskManager/Analytic	
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	5205	0	PerfTrack_TM8_KillProcessStop(UnicodeString ProcessOrPackageName)	Stop		PerfTrack_TM8_KillProcess	Informational	Microsoft-Windows-Diagnosis-AdvancedTaskManager/Analytic	
 Microsoft-Windows-Diagnosis-AdvancedTaskManager	5301	0	TM8_Window_LaunchStart()	Start	ui	TM8_Window_Launch	Informational		
 Microsoft-Windows-Diagnosis-AdvancedTaskManager	5302	0	TM8_Window_LaunchStop()	Stop	ui	TM8_Window_Launch	Informational		
 Microsoft-Windows-Diagnosis-AdvancedTaskManager	5303	0	Monitor_SetupStart()	Start	ui	Monitor_Setup	Informational		
@@ -86,9 +86,9 @@ Microsoft-Windows-Diagnosis-AdvancedTaskManager	5658	0	DataMonitor_TrayIconInfo_
 Microsoft-Windows-Diagnosis-AdvancedTaskManager	5659	0	DataMonitor_UserInfo_UpdateStart()	Start	datamonitor	DataMonitor_UserInfo_Update	Informational		
 Microsoft-Windows-Diagnosis-AdvancedTaskManager	5660	0	DataMonitor_UserInfo_UpdateStop(UInt32 NewItems, UInt32 UpdatedItems)	Stop	datamonitor	DataMonitor_UserInfo_Update	Informational		
 Microsoft-Windows-Diagnosis-AdvancedTaskManager	6001	0	Actions_InvokeMenuStart()	Start	ui	Actions_InvokeMenu	Informational		
-Microsoft-Windows-Diagnosis-AdvancedTaskManager	6002	0	Actions_InvokeMenuStop(UInt64 ItemType, UInt32 MenuId)	Stop	ui	Actions_InvokeMenu	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	6002	0	Actions_InvokeMenuStop(UInt32 ItemType, UInt32 MenuId)	Stop	ui	Actions_InvokeMenu	Informational		
 Microsoft-Windows-Diagnosis-AdvancedTaskManager	6003	0	Actions_RightClickPopupStart()	Start	ui	Actions_RightClickPopup	Informational		
-Microsoft-Windows-Diagnosis-AdvancedTaskManager	6004	0	Actions_RightClickPopupStop(UInt64 ItemType)	Stop	ui	Actions_RightClickPopup	Informational		
+Microsoft-Windows-Diagnosis-AdvancedTaskManager	6004	0	Actions_RightClickPopupStop(UInt32 ItemType)	Stop	ui	Actions_RightClickPopup	Informational		
 Microsoft-Windows-Diagnosis-AdvancedTaskManager	6005	0	Actions_EndTask_ProcessStart(UInt32 ProcessId)	Start	ui	Actions_EndTask_Process	Informational		
 Microsoft-Windows-Diagnosis-AdvancedTaskManager	6006	0	Actions_EndTask_ProcessStop(UInt32 ProcessId)	Stop	ui	Actions_EndTask_Process	Informational		
 Microsoft-Windows-Diagnosis-AdvancedTaskManager	6007	0	Actions_EndTask_WindowStart(UInt32 WindowHandle)	Start	ui	Actions_EndTask_Window	Informational		

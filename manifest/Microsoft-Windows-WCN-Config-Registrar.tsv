@@ -1,11 +1,11 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-WCN-Config-Registrar	8000	0	task_0(GUID SessionGuid, GUID PeerUuid, UInt32 Trigger)			task_0	Informational		
-Microsoft-Windows-WCN-Config-Registrar	8001	0	task_08001(GUID SessionGuid)			task_0	Informational		
-Microsoft-Windows-WCN-Config-Registrar	8003	0	task_08003(GUID SessionGuid, GUID MessageGuid, UInt16 MessageBlobLength, Binary MessageBlob)			task_0	Informational		
-Microsoft-Windows-WCN-Config-Registrar	8004	0	task_08004(GUID SessionGuid, GUID MessageGuid, UInt16 MessageBlobLength, Binary MessageBlob)			task_0	Informational		
-Microsoft-Windows-WCN-Config-Registrar	8010	0	task_08010(GUID SessionGuid)			task_0	Informational		
-Microsoft-Windows-WCN-Config-Registrar	8011	0	task_08011(GUID SessionGuid, UInt32 ErrorCode)			task_0	Error		
-Microsoft-Windows-WCN-Config-Registrar	8020	0	task_08020(UnicodeString Transport, UnicodeString TransportSubType, GUID MessageGuid, UInt16 MessageBlobLength, Binary MessageBlob)			task_0	Informational		
-Microsoft-Windows-WCN-Config-Registrar	8021	0	task_08021(UnicodeString Transport, UnicodeString TransportSubType, GUID MessageGuid, UInt16 MessageBlobLength, Binary MessageBlob)			task_0	Informational		
-Microsoft-Windows-WCN-Config-Registrar	8030	0	task_08030(UnicodeString Transport, UInt16 MessageBlobLength, Binary MessageBlob)			task_0	Informational		
-Microsoft-Windows-WCN-Config-Registrar	8031	0	task_08031(UnicodeString Transport, UInt16 MessageBlobLength, Binary MessageBlob)			task_0	Informational		
+Microsoft-Windows-WCN-Config-Registrar	8000	0	Event_8000(GUID SessionGuid, GUID PeerUuid, UInt32 Trigger)			task_0	Informational	Microsoft-Windows-WCN-Config-Registrar/Diagnostic	WCN has started a new session.\r\nPeer UUID: %2\r\nConnect reason: %3\r\nSession GUID: %1
+Microsoft-Windows-WCN-Config-Registrar	8001	0	Event_8001(GUID SessionGuid)			task_0	Informational	Microsoft-Windows-WCN-Config-Registrar/Diagnostic	WCN has established a connection.\r\nSession GUID: %1
+Microsoft-Windows-WCN-Config-Registrar	8003	0	Event_8003(GUID SessionGuid, GUID MessageGuid, UInt16 MessageBlobLength, Binary MessageBlob)			task_0	Informational	Microsoft-Windows-WCN-Config-Registrar/Diagnostic	WCN is preparing to parse a message.\r\nSession GUID: %1\r\nMessage: %3
+Microsoft-Windows-WCN-Config-Registrar	8004	0	Event_8004(GUID SessionGuid, GUID MessageGuid, UInt16 MessageBlobLength, Binary MessageBlob)			task_0	Informational	Microsoft-Windows-WCN-Config-Registrar/Diagnostic	WCN has generated a message.\r\nSession GUID: %1\r\nMessage: %3
+Microsoft-Windows-WCN-Config-Registrar	8010	0	Event_8010(GUID SessionGuid)			task_0	Informational	Microsoft-Windows-WCN-Config-Registrar/Diagnostic	WCN has completed a session successfully.\r\nSession GUID: %1
+Microsoft-Windows-WCN-Config-Registrar	8011	0	Event_8011(GUID SessionGuid, UInt32 ErrorCode)			task_0	Error	Microsoft-Windows-WCN-Config-Registrar/Diagnostic	WCN failed to complete a session.\r\nSession GUID: %1\r\nError code: %2
+Microsoft-Windows-WCN-Config-Registrar	8020	0	Event_8020(UnicodeString Transport, UnicodeString TransportSubType, GUID MessageGuid, UInt16 MessageBlobLength, Binary MessageBlob)			task_0	Informational	Microsoft-Windows-WCN-Config-Registrar/Diagnostic	WCN received a message.\r\nTransport: %1\r\nMessage: %3
+Microsoft-Windows-WCN-Config-Registrar	8021	0	Event_8021(UnicodeString Transport, UnicodeString TransportSubType, GUID MessageGuid, UInt16 MessageBlobLength, Binary MessageBlob)			task_0	Informational	Microsoft-Windows-WCN-Config-Registrar/Diagnostic	WCN is sending a message.\r\nTransport: %1\r\nMessage: %3
+Microsoft-Windows-WCN-Config-Registrar	8030	0	Event_8030(UnicodeString Transport, UInt16 MessageBlobLength, Binary MessageBlob)			task_0	Informational	Microsoft-Windows-WCN-Config-Registrar/Diagnostic	WCN has changed its beacons on transport %1
+Microsoft-Windows-WCN-Config-Registrar	8031	0	Event_8031(UnicodeString Transport, UInt16 MessageBlobLength, Binary MessageBlob)			task_0	Informational	Microsoft-Windows-WCN-Config-Registrar/Diagnostic	WCN has changed its probe response on transport %1

@@ -1,6 +1,6 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-User32	1073	0	task_0PCODE_128pcode_128(UnicodeString param1, UnicodeString param2)	opcode_128		task_0	Warning		
-User32	1074	0	task_0PCODE_128pcode_1281074(UnicodeString param1, UnicodeString param2, UnicodeString param3, UnicodeString param4, UnicodeString param5, UnicodeString param6, UnicodeString param7)	opcode_128		task_0	Warning		
-User32	1075	0	task_0PCODE_128pcode_1281075(UnicodeString param1, UnicodeString param2)	opcode_128		task_0	Warning		
-User32	1076	0	task_0PCODE_128pcode_1281076(UnicodeString param1, UnicodeString param2, UnicodeString param3, UnicodeString param4, UnicodeString param5, UnicodeString param6)	opcode_128		task_0	Warning		
-User32	1077	0	task_0PCODE_128pcode_1281077(UnicodeString param1, UnicodeString param2)	opcode_128		task_0	Warning		
+User32	1073	0	Message_0x80000431(UnicodeString param1, UnicodeString param2)			task_0	Warning		The attempt by user %2 to restart/shutdown computer %1 failed
+User32	1074	0	Message_0x80000432(UnicodeString param1, UnicodeString param2, UnicodeString param3, UnicodeString param4, UnicodeString param5, UnicodeString param6, UnicodeString param7)			task_0	Warning		The process %1 has initiated the %5 of computer %2 on behalf of user %7 for the following reason: %3\r\n Reason Code: %4\r\n Shutdown Type: %5\r\n Comment: %6
+User32	1075	0	Message_0x80000433(UnicodeString param1, UnicodeString param2)			task_0	Warning		The last restart/shutdown request of computer %1 was aborted by user %2
+User32	1076	0	Message_0x80000434(UnicodeString param1, UnicodeString param2, UnicodeString param3, UnicodeString param4, UnicodeString param5, UnicodeString param6)			task_0	Warning		The reason supplied by user %6 for the last unexpected shutdown of this computer is: %1\r\n Reason Code: %2\r\n Problem ID: %3\r\n Bugcheck String: %4\r\n Comment: %5
+User32	1077	0	Message_0x80000435(UnicodeString param1, UnicodeString param2)			task_0	Warning		The attempt by user %2 to logoff computer %1 failed

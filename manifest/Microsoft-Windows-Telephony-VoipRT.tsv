@@ -1,0 +1,22 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Telephony-VoipRT	1	0	Event_1(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		Error	task_0	Error		[ERROR] originated HRESULT=%1 [%2 @ %3]
+Microsoft-Windows-Telephony-VoipRT	2	0	Event_2(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		keyword_400000000000	task_0	Warning		[ERROR] propagated HRESULT=%1 [%2 @ %3]
+Microsoft-Windows-Telephony-VoipRT	10	0	Event_10(UnicodeString Prop_UnicodeString)		Debug	task_0	Verbose		%1
+Microsoft-Windows-Telephony-VoipRT	100	0	Event_100()		VoipCallCoordinator	task_0	Informational		Opening VoIP RPC client
+Microsoft-Windows-Telephony-VoipRT	101	0	Event_101()		VoipCallCoordinator	task_0	Informational		Opened VoIP RPC client
+Microsoft-Windows-Telephony-VoipRT	102	0	Event_102(UInt32 Prop_HexInt32)		VoipCallCoordinator	task_0	Informational		New incoming VoIP call %1
+Microsoft-Windows-Telephony-VoipRT	103	0	Event_103(UInt32 Prop_HexInt32)		VoipCallCoordinator	task_0	Informational		New outgoing VoIP call %1
+Microsoft-Windows-Telephony-VoipRT	104	0	Event_104(UnicodeString Prop_UnicodeString_1, UnicodeString Prop_UnicodeString_2)		VoipCallCoordinator	task_0	Informational		Made DSS token %1 for file %2
+Microsoft-Windows-Telephony-VoipRT	105	0	Event_105(UInt32 Prop_HexInt32, GUID Prop_Guid)		VoipCallCoordinator	task_0	Informational		Outgoing Video call upgrade call: %1, Call upgrade Guid: %2
+Microsoft-Windows-Telephony-VoipRT	106	0	Event_106(UInt32 Prop_HexInt32)		VoipCallCoordinator	task_0	Informational		New incoming upgrade video call %1
+Microsoft-Windows-Telephony-VoipRT	120	0	Event_120(UInt32 Prop_HexInt32)		VoipPhoneCall	task_0	Informational		Invoking AcceptIncoming for VoIP call %1
+Microsoft-Windows-Telephony-VoipRT	121	0	Event_121(UInt32 Prop_HexInt32)		VoipPhoneCall	task_0	Informational		Invoking RejectIncoming for VoIP call %1
+Microsoft-Windows-Telephony-VoipRT	122	0	Event_122(UInt32 Prop_HexInt32)		VoipPhoneCall	task_0	Informational		Invoking Hold for VoIP call %1
+Microsoft-Windows-Telephony-VoipRT	123	0	Event_123(UInt32 Prop_HexInt32)		VoipPhoneCall	task_0	Informational		Invoking Unhold for VoIP call %1
+Microsoft-Windows-Telephony-VoipRT	124	0	Event_124(UInt32 Prop_HexInt32)		VoipPhoneCall	task_0	Informational		Invoking End for VoIP call %1
+Microsoft-Windows-Telephony-VoipRT	200	0	IncomingCallStart()	Start	Performance	IncomingCall	Verbose		
+Microsoft-Windows-Telephony-VoipRT	201	0	StartCallStart()	Start	Performance	StartCall	Verbose		
+Microsoft-Windows-Telephony-VoipRT	202	0	StartCallStop()	Stop	Performance	StartCall	Verbose		
+Microsoft-Windows-Telephony-VoipRT	203	0	EndCallStart()	Start	Performance	EndCall	Verbose		
+Microsoft-Windows-Telephony-VoipRT	206	0	ProcessMuteStateNotificationStart()	Start	Performance	ProcessMuteStateNotification	Verbose		
+Microsoft-Windows-Telephony-VoipRT	207	0	ProcessMuteStateNotificationStart207()	Start	Performance	ProcessMuteStateNotification	Verbose		

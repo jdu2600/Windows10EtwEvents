@@ -1,38 +1,38 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-DeviceUx	1	0	DeviceUx_DeviceCenter_StorageHandler_InitializeStart()	Start	DeviceUX	DeviceUx_DeviceCenter_StorageHandler_Initialize	Informational		
-Microsoft-Windows-DeviceUx	2	0	DeviceUx_DeviceCenter_StorageHandler_InitializeStop()	Stop	DeviceUX	DeviceUx_DeviceCenter_StorageHandler_Initialize	Informational		
-Microsoft-Windows-DeviceUx	3	0	DeviceUx_DeviceCenter_StorageHandler_CollectShellItemsStart()	Start	DeviceUX	DeviceUx_DeviceCenter_StorageHandler_CollectShellItems	Informational		
-Microsoft-Windows-DeviceUx	4	0	DeviceUx_DeviceCenter_StorageHandler_CollectShellItemsStop()	Stop	DeviceUX	DeviceUx_DeviceCenter_StorageHandler_CollectShellItems	Informational		
-Microsoft-Windows-DeviceUx	20	0	BWContextHandler_PopulatePropertiesStart()	Start	DeviceUX	BWContextHandler_PopulateProperties	Informational		
-Microsoft-Windows-DeviceUx	21	0	BWContextHandler_PopulatePropertiesStop()	Stop	DeviceUX	BWContextHandler_PopulateProperties	Informational		
-Microsoft-Windows-DeviceUx	22	0	BWContextHandler_RequeryFIStart()	Start	DeviceUX	BWContextHandler_RequeryFI	Informational		
-Microsoft-Windows-DeviceUx	23	0	BWContextHandler_RequeryFIStop()	Stop	DeviceUX	BWContextHandler_RequeryFI	Informational		
-Microsoft-Windows-DeviceUx	24	0	BWContextHandler_RemovePairingStandardStart()	Start	DeviceUX	BWContextHandler_RemovePairingStandard	Informational		
-Microsoft-Windows-DeviceUx	25	0	BWContextHandler_RemovePairingStandardStop()	Stop	DeviceUX	BWContextHandler_RemovePairingStandard	Informational		
-Microsoft-Windows-DeviceUx	26	0	BWContextHandler_RemovePairingElevatedStart()	Start	DeviceUX	BWContextHandler_RemovePairingElevated	Informational		
-Microsoft-Windows-DeviceUx	27	0	BWContextHandler_RemovePairingElevatedStop()	Stop	DeviceUX	BWContextHandler_RemovePairingElevated	Informational		
-Microsoft-Windows-DeviceUx	30	0	DevicePairing_WizardStart()	Start	DeviceUX_Performance	DevicePairing_Wizard	Informational		
-Microsoft-Windows-DeviceUx	31	0	DevicePairing_WizardStop()	Stop	DeviceUX_Performance	DevicePairing_Wizard	Informational		
-Microsoft-Windows-DeviceUx	32	0	DevicePairing_FirstDeviceDiscoveryStart()	Start	DeviceUX_Performance	DevicePairing_FirstDeviceDiscovery	Informational		
-Microsoft-Windows-DeviceUx	33	0	DevicePairing_FirstDeviceDiscoveryStop()	Stop	DeviceUX_Performance	DevicePairing_FirstDeviceDiscovery	Informational		
-Microsoft-Windows-DeviceUx	34	0	DevicePairing_DeviceDiscoveryStart()	Start	DeviceUX_Performance	DevicePairing_DeviceDiscovery	Informational		
-Microsoft-Windows-DeviceUx	35	0	DevicePairing_DeviceDiscoveryStop()	Stop	DeviceUX_Performance	DevicePairing_DeviceDiscovery	Informational		
-Microsoft-Windows-DeviceUx	50	0	DevicePairing_PairDeviceStart()	Start		DevicePairing_PairDevice	Informational		
-Microsoft-Windows-DeviceUx	51	0	DevicePairing_PairDeviceStop(UnicodeString String1, UInt32 Integer2)	Stop		DevicePairing_PairDevice	Informational		
-Microsoft-Windows-DeviceUx	52	0	DevicePairing_CeremonyDiscoverStart()	Start		DevicePairing_CeremonyDiscover	Informational		
-Microsoft-Windows-DeviceUx	53	0	DevicePairing_CeremonyDiscoverStop()	Stop		DevicePairing_CeremonyDiscover	Informational		
-Microsoft-Windows-DeviceUx	54	0	DevicePairing_PostPairingStart()	Start	DeviceUX	DevicePairing_PostPairing	Informational		
-Microsoft-Windows-DeviceUx	55	0	DevicePairing_PostPairingStop(UnicodeString String1, UInt32 Integer2)	Stop	DeviceUX	DevicePairing_PostPairing	Informational		
-Microsoft-Windows-DeviceUx	56	0	DevicePairing_RemovePairingStart()	Start		DevicePairing_RemovePairing	Informational		
-Microsoft-Windows-DeviceUx	57	0	DevicePairing_RemovePairingStop()	Stop		DevicePairing_RemovePairing	Informational		
-Microsoft-Windows-DeviceUx	80	0	DeviceCenter_FDQueryStart(UInt64 querycookie, UInt32 EnumerationTime, UInt32 CountOfItems)	Start		DeviceCenter_FDQuery	Informational		
-Microsoft-Windows-DeviceUx	81	0	DeviceCenter_FDQueryStop(UInt64 querycookie, UInt32 EnumerationTime, UInt32 CountOfItems)	Stop		DeviceCenter_FDQuery	Informational		
-Microsoft-Windows-DeviceUx	82	0	DeviceCenter_EndQueryStart(UInt64 querycookie)	Start		DeviceCenter_EndQuery	Informational		
-Microsoft-Windows-DeviceUx	83	0	DeviceCenter_EndQueryStop(UInt64 querycookie)	Stop		DeviceCenter_EndQuery	Informational		
-Microsoft-Windows-DeviceUx	84	0	DeviceEnumerationStart()	Start	DeviceUX_Performance	DeviceEnumeration	Informational		
-Microsoft-Windows-DeviceUx	85	0	DeviceEnumerationStop()	Stop	DeviceUX_Performance	DeviceEnumeration	Informational		
-Microsoft-Windows-DeviceUx	86	0	RemoveDeviceStart()	Start	DeviceUX_Performance	RemoveDevice	Informational		
-Microsoft-Windows-DeviceUx	87	0	RemoveDeviceStop()	Stop	DeviceUX_Performance	RemoveDevice	Informational		
-Microsoft-Windows-DeviceUx	88	0	RemoveDeviceStart88()	Start	DeviceUX_Performance	RemoveDevice	Informational		
-Microsoft-Windows-DeviceUx	89	0	RemoveDeviceStop89()	Stop	DeviceUX_Performance	RemoveDevice	Informational		
-Microsoft-Windows-DeviceUx	1001	0	BWContextHandler_UninstallError(HexInt32 ErrorCode)		DeviceUX	BWContextHandler_UninstallError	Warning		
+Microsoft-Windows-DeviceUx	1	0	DeviceUx_DeviceCenter_StorageHandler_InitializeStart()	Start	DeviceUX	DeviceUx_DeviceCenter_StorageHandler_Initialize	Informational	Microsoft-Windows-DeviceUx/Performance	BEGIN: DeviceDisplayObject Storage Context Menu Handler Initialization.
+Microsoft-Windows-DeviceUx	2	0	DeviceUx_DeviceCenter_StorageHandler_InitializeStop()	Stop	DeviceUX	DeviceUx_DeviceCenter_StorageHandler_Initialize	Informational	Microsoft-Windows-DeviceUx/Performance	END: DeviceDisplayObject Storage Context Menu Handler Initialization.
+Microsoft-Windows-DeviceUx	3	0	DeviceUx_DeviceCenter_StorageHandler_CollectShellItemsStart()	Start	DeviceUX	DeviceUx_DeviceCenter_StorageHandler_CollectShellItems	Informational	Microsoft-Windows-DeviceUx/Performance	BEGIN: DeviceDisplayObject Storage Context Menu Handler Collection.
+Microsoft-Windows-DeviceUx	4	0	DeviceUx_DeviceCenter_StorageHandler_CollectShellItemsStop()	Stop	DeviceUX	DeviceUx_DeviceCenter_StorageHandler_CollectShellItems	Informational	Microsoft-Windows-DeviceUx/Performance	END: DeviceDisplayObject Storage Context Menu Handler Collection.
+Microsoft-Windows-DeviceUx	20	0	BWContextHandler_PopulatePropertiesStart()	Start	DeviceUX	BWContextHandler_PopulateProperties	Informational	Microsoft-Windows-DeviceUx/Performance	Started collecting Add a device Wizard properties for page
+Microsoft-Windows-DeviceUx	21	0	BWContextHandler_PopulatePropertiesStop()	Stop	DeviceUX	BWContextHandler_PopulateProperties	Informational	Microsoft-Windows-DeviceUx/Performance	Finished collecting Add a device Wizard properties for page
+Microsoft-Windows-DeviceUx	22	0	BWContextHandler_RequeryFIStart()	Start	DeviceUX	BWContextHandler_RequeryFI	Informational	Microsoft-Windows-DeviceUx/Performance	Query provider for elevated instance
+Microsoft-Windows-DeviceUx	23	0	BWContextHandler_RequeryFIStop()	Stop	DeviceUX	BWContextHandler_RequeryFI	Informational	Microsoft-Windows-DeviceUx/Performance	Provider responded to instance query
+Microsoft-Windows-DeviceUx	24	0	BWContextHandler_RemovePairingStandardStart()	Start	DeviceUX	BWContextHandler_RemovePairingStandard	Informational	Microsoft-Windows-DeviceUx/Performance	E2E Standard remove pairing started
+Microsoft-Windows-DeviceUx	25	0	BWContextHandler_RemovePairingStandardStop()	Stop	DeviceUX	BWContextHandler_RemovePairingStandard	Informational	Microsoft-Windows-DeviceUx/Performance	E2E Standard remove pairing finished
+Microsoft-Windows-DeviceUx	26	0	BWContextHandler_RemovePairingElevatedStart()	Start	DeviceUX	BWContextHandler_RemovePairingElevated	Informational	Microsoft-Windows-DeviceUx/Performance	E2E Elevated remove pairing started
+Microsoft-Windows-DeviceUx	27	0	BWContextHandler_RemovePairingElevatedStop()	Stop	DeviceUX	BWContextHandler_RemovePairingElevated	Informational	Microsoft-Windows-DeviceUx/Performance	E2E Elevated remove pairing finished
+Microsoft-Windows-DeviceUx	30	0	DevicePairing_WizardStart()	Start	DeviceUX_Performance	DevicePairing_Wizard	Informational	Microsoft-Windows-DeviceUx/Performance	Add a device Wizard is being started
+Microsoft-Windows-DeviceUx	31	0	DevicePairing_WizardStop()	Stop	DeviceUX_Performance	DevicePairing_Wizard	Informational	Microsoft-Windows-DeviceUx/Performance	Add a device Wizard has started
+Microsoft-Windows-DeviceUx	32	0	DevicePairing_FirstDeviceDiscoveryStart()	Start	DeviceUX_Performance	DevicePairing_FirstDeviceDiscovery	Informational	Microsoft-Windows-DeviceUx/Performance	Device discovery has started
+Microsoft-Windows-DeviceUx	33	0	DevicePairing_FirstDeviceDiscoveryStop()	Stop	DeviceUX_Performance	DevicePairing_FirstDeviceDiscovery	Informational	Microsoft-Windows-DeviceUx/Performance	Device discovery has found the first device
+Microsoft-Windows-DeviceUx	34	0	DevicePairing_DeviceDiscoveryStart()	Start	DeviceUX_Performance	DevicePairing_DeviceDiscovery	Informational	Microsoft-Windows-DeviceUx/Performance	Device discovery has found a new device
+Microsoft-Windows-DeviceUx	35	0	DevicePairing_DeviceDiscoveryStop()	Stop	DeviceUX_Performance	DevicePairing_DeviceDiscovery	Informational	Microsoft-Windows-DeviceUx/Performance	Device discovery has updated a new device
+Microsoft-Windows-DeviceUx	50	0	DevicePairing_PairDeviceStart()	Start		DevicePairing_PairDevice	Informational	Microsoft-Windows-DeviceUx/Performance	Add a device Wizard Device pairing started
+Microsoft-Windows-DeviceUx	51	0	DevicePairing_PairDeviceStop(UnicodeString String1, UInt32 Integer2)	Stop		DevicePairing_PairDevice	Informational	Microsoft-Windows-DeviceUx/Performance	Add a device Wizard Device pairing finished. Transport is %1, result error is %2
+Microsoft-Windows-DeviceUx	52	0	DevicePairing_CeremonyDiscoverStart()	Start		DevicePairing_CeremonyDiscover	Informational	Microsoft-Windows-DeviceUx/Performance	Add a device Wizard Discovery ceremony started
+Microsoft-Windows-DeviceUx	53	0	DevicePairing_CeremonyDiscoverStop()	Stop		DevicePairing_CeremonyDiscover	Informational	Microsoft-Windows-DeviceUx/Performance	Add a device Wizard Discovery ceremony finished
+Microsoft-Windows-DeviceUx	54	0	DevicePairing_PostPairingStart()	Start	DeviceUX	DevicePairing_PostPairing	Informational	Microsoft-Windows-DeviceUx/Performance	Add a device Wizard Post pairing started
+Microsoft-Windows-DeviceUx	55	0	DevicePairing_PostPairingStop(UnicodeString String1, UInt32 Integer2)	Stop	DeviceUX	DevicePairing_PostPairing	Informational	Microsoft-Windows-DeviceUx/Performance	Add a device Wizard Post pairing finished. Transport is %1, result error is %2
+Microsoft-Windows-DeviceUx	56	0	DevicePairing_RemovePairingStart()	Start		DevicePairing_RemovePairing	Informational	Microsoft-Windows-DeviceUx/Performance	Add a device Wizard Remove pairing started
+Microsoft-Windows-DeviceUx	57	0	DevicePairing_RemovePairingStop()	Stop		DevicePairing_RemovePairing	Informational	Microsoft-Windows-DeviceUx/Performance	Add a device Wizard Remove pairing finished
+Microsoft-Windows-DeviceUx	80	0	DeviceCenter_FDQueryStart(UInt64 querycookie, UInt32 EnumerationTime, UInt32 CountOfItems)	Start		DeviceCenter_FDQuery	Informational	Microsoft-Windows-DeviceUx/Performance	FD query for display objects started
+Microsoft-Windows-DeviceUx	81	0	DeviceCenter_FDQueryStop(UInt64 querycookie, UInt32 EnumerationTime, UInt32 CountOfItems)	Stop		DeviceCenter_FDQuery	Informational	Microsoft-Windows-DeviceUx/Performance	FD query for display objects finished
+Microsoft-Windows-DeviceUx	82	0	DeviceCenter_EndQueryStart(UInt64 querycookie)	Start		DeviceCenter_EndQuery	Informational	Microsoft-Windows-DeviceUx/Performance	Cleanup of FD queries started
+Microsoft-Windows-DeviceUx	83	0	DeviceCenter_EndQueryStop(UInt64 querycookie)	Stop		DeviceCenter_EndQuery	Informational	Microsoft-Windows-DeviceUx/Performance	Cleanup of FD queries finished
+Microsoft-Windows-DeviceUx	84	0	DeviceEnumerationStart()	Start	DeviceUX_Performance	DeviceEnumeration	Informational	Microsoft-Windows-DeviceUx/Performance	DeviceItem Enumeration Started
+Microsoft-Windows-DeviceUx	85	0	DeviceEnumerationStop()	Stop	DeviceUX_Performance	DeviceEnumeration	Informational	Microsoft-Windows-DeviceUx/Performance	DeviceItem Enumeration Finished
+Microsoft-Windows-DeviceUx	86	0	RemoveDeviceStart()	Start	DeviceUX_Performance	RemoveDevice	Informational	Microsoft-Windows-DeviceUx/Performance	Stardard User Remove Device Started
+Microsoft-Windows-DeviceUx	87	0	RemoveDeviceStop()	Stop	DeviceUX_Performance	RemoveDevice	Informational	Microsoft-Windows-DeviceUx/Performance	Stardard User Remove Device Stopped
+Microsoft-Windows-DeviceUx	88	0	RemoveDeviceStart88()	Start	DeviceUX_Performance	RemoveDevice	Informational	Microsoft-Windows-DeviceUx/Performance	Admin User Remove Device Started
+Microsoft-Windows-DeviceUx	89	0	RemoveDeviceStop89()	Stop	DeviceUX_Performance	RemoveDevice	Informational	Microsoft-Windows-DeviceUx/Performance	Admin User Remove Device Stopped
+Microsoft-Windows-DeviceUx	1001	0	BWContextHandler_UninstallError(HexInt32 ErrorCode)		DeviceUX	BWContextHandler_UninstallError	Warning	Microsoft-Windows-DeviceUx/Informational	The uninstallation of this device failed with error code (HRESULT): %1

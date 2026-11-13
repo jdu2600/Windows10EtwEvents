@@ -1,33 +1,21 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-Subsys-SMSS	1	0	smss:ExecuteImageStart(UInt32 Flags, UInt16 ImageNameLength, UnicodeString ImageName)	Start	smss:Diagnostics	smss:ExecuteImage	Informational		
-Microsoft-Windows-Subsys-SMSS	2	0	smss:ExecuteImageStop(UInt32 ProcessId)	Stop	smss:Diagnostics	smss:ExecuteImage	Informational		
-Microsoft-Windows-Subsys-SMSS	3	0	smss:InitializeRegistryStart()	Start	smss:Diagnostics	smss:InitializeRegistry	Informational		
-Microsoft-Windows-Subsys-SMSS	4	0	smss:InitializeRegistryStop()	Stop	smss:Diagnostics	smss:InitializeRegistry	Informational		
-Microsoft-Windows-Subsys-SMSS	5	0	smss:SetupExecuteListStart()	Start	smss:Diagnostics	smss:SetupExecuteList	Informational		
-Microsoft-Windows-Subsys-SMSS	6	0	smss:SetupExecuteListStop()	Stop	smss:Diagnostics	smss:SetupExecuteList	Informational		
-Microsoft-Windows-Subsys-SMSS	7	0	smss:BootExecuteListStart()	Start	smss:Diagnostics	smss:BootExecuteList	Informational		
-Microsoft-Windows-Subsys-SMSS	8	0	smss:BootExecuteListStop()	Stop	smss:Diagnostics	smss:BootExecuteList	Informational		
-Microsoft-Windows-Subsys-SMSS	9	0	smss:ProcessFileRenamesStart()	Start	smss:Diagnostics	smss:ProcessFileRenames	Informational		
-Microsoft-Windows-Subsys-SMSS	10	0	smss:ProcessFileRenamesStop()	Stop	smss:Diagnostics	smss:ProcessFileRenames	Informational		
-Microsoft-Windows-Subsys-SMSS	11	0	smss:FileRename(UInt16 FromNameLength, UInt16 ToNameLength, UnicodeString FromName, UnicodeString ToName)		smss:Diagnostics	smss:FileRename	Verbose		
-Microsoft-Windows-Subsys-SMSS	12	0	task_0(UInt16 FileNameLength, UnicodeString FileName)			task_0	Error		
-Microsoft-Windows-Subsys-SMSS	13	0	task_013(UnicodeString CurrentRunLevel, UnicodeString TargetRunLevel)			task_0	Informational		
-Microsoft-Windows-Subsys-SMSS	14	0	task_014(UnicodeString CurrentRunLevel, UnicodeString TargetRunLevel)			task_0	Informational		
-Microsoft-Windows-Subsys-SMSS	15	0	task_015(UnicodeString CurrentRunLevel, UnicodeString TargetRunLevel, UnicodeString AgentName, UnicodeString Error)			task_0	Error		
-Microsoft-Windows-Subsys-SMSS	16	0	task_016(UnicodeString CurrentRunLevel, UnicodeString TargetRunLevel, UnicodeString AgentName, UnicodeString Error)			task_0	Warning		
-Microsoft-Windows-Subsys-SMSS	17	0	task_017()			task_0	Informational		
-Microsoft-Windows-Subsys-SMSS	18	0	task_018(UInt32 Status)			task_0	Informational		
-Microsoft-Windows-Subsys-SMSS	19	0	smss:BootExecuteNoPnpSyncListStart()	Start	smss:Diagnostics	smss:BootExecuteNoPnpSyncList	Informational		
-Microsoft-Windows-Subsys-SMSS	20	0	smss:BootExecuteNoPnpSyncListStop()	Stop	smss:Diagnostics	smss:BootExecuteNoPnpSyncList	Informational		
-Microsoft-Windows-Subsys-SMSS	21	0	smss:SerializeBootStart()	Start	smss:Diagnostics	smss:SerializeBoot	Informational		
-Microsoft-Windows-Subsys-SMSS	22	0	smss:SerializeBootStop(UInt32 Status)	Stop	smss:Diagnostics	smss:SerializeBoot	Informational		
-Microsoft-Windows-Subsys-SMSS	23	0	smss:LoadSubsystemStart(UInt32 SessionId, UInt16 ImageNameLength, UnicodeString ImageName)	Start	smss:Diagnostics	smss:LoadSubsystem	Informational		
-Microsoft-Windows-Subsys-SMSS	24	0	smss:LoadSubsystemStop(UInt32 Status)	Stop	smss:Diagnostics	smss:LoadSubsystem	Informational		
-Microsoft-Windows-Subsys-SMSS	25	0	smss:InitializeKnownDllsStart()	Start	smss:Diagnostics	smss:InitializeKnownDlls	Informational		
-Microsoft-Windows-Subsys-SMSS	26	0	smss:InitializeKnownDllsStop(UInt32 Status)	Stop	smss:Diagnostics	smss:InitializeKnownDlls	Informational		
-Microsoft-Windows-Subsys-SMSS	27	0	smss:PlatformExecuteListStart()	Start	smss:Diagnostics	smss:PlatformExecuteList	Informational		
-Microsoft-Windows-Subsys-SMSS	28	0	smss:PlatformExecuteListStop()	Stop	smss:Diagnostics	smss:PlatformExecuteList	Informational		
-Microsoft-Windows-Subsys-SMSS	29	0	smss:SetupExecuteNoPnpSyncListStart()	Start	smss:Diagnostics	smss:SetupExecuteNoPnpSyncList	Informational		
-Microsoft-Windows-Subsys-SMSS	30	0	smss:SetupExecuteNoPnpSyncListStop()	Stop	smss:Diagnostics	smss:SetupExecuteNoPnpSyncList	Informational		
-Microsoft-Windows-Subsys-SMSS	31	0	smss:RunSecureKernelTrustletsStart()	Start	smss:Diagnostics	smss:RunSecureKernelTrustlets	Informational		
-Microsoft-Windows-Subsys-SMSS	32	0	smss:RunSecureKernelTrustletsStop()	Stop	smss:Diagnostics	smss:RunSecureKernelTrustlets	Informational		
+Microsoft-Windows-Subsys-SMSS	1	0	smss:ExecuteImageStart(UInt32 Flags, UInt16 ImageNameLength, UnicodeString ImageName)	Start	smss:Diagnostics	smss:ExecuteImage	Informational	Microsoft-Windows-Subsys-SMSS/Operational	
+Microsoft-Windows-Subsys-SMSS	2	0	smss:ExecuteImageStop(UInt32 ProcessId)	Stop	smss:Diagnostics	smss:ExecuteImage	Informational	Microsoft-Windows-Subsys-SMSS/Operational	
+Microsoft-Windows-Subsys-SMSS	3	0	smss:InitializeRegistryStart()	Start	smss:Diagnostics	smss:InitializeRegistry	Informational	Microsoft-Windows-Subsys-SMSS/Operational	
+Microsoft-Windows-Subsys-SMSS	4	0	smss:InitializeRegistryStop()	Stop	smss:Diagnostics	smss:InitializeRegistry	Informational	Microsoft-Windows-Subsys-SMSS/Operational	
+Microsoft-Windows-Subsys-SMSS	5	0	smss:SetupExecuteListStart()	Start	smss:Diagnostics	smss:SetupExecuteList	Informational	Microsoft-Windows-Subsys-SMSS/Operational	
+Microsoft-Windows-Subsys-SMSS	6	0	smss:SetupExecuteListStop()	Stop	smss:Diagnostics	smss:SetupExecuteList	Informational	Microsoft-Windows-Subsys-SMSS/Operational	
+Microsoft-Windows-Subsys-SMSS	7	0	smss:BootExecuteListStart()	Start	smss:Diagnostics	smss:BootExecuteList	Informational	Microsoft-Windows-Subsys-SMSS/Operational	
+Microsoft-Windows-Subsys-SMSS	8	0	smss:BootExecuteListStop()	Stop	smss:Diagnostics	smss:BootExecuteList	Informational	Microsoft-Windows-Subsys-SMSS/Operational	
+Microsoft-Windows-Subsys-SMSS	9	0	smss:ProcessFileRenamesStart()	Start	smss:Diagnostics	smss:ProcessFileRenames	Informational	Microsoft-Windows-Subsys-SMSS/Operational	
+Microsoft-Windows-Subsys-SMSS	10	0	smss:ProcessFileRenamesStop()	Stop	smss:Diagnostics	smss:ProcessFileRenames	Informational	Microsoft-Windows-Subsys-SMSS/Operational	
+Microsoft-Windows-Subsys-SMSS	11	0	smss:FileRename(UInt16 FromNameLength, UInt16 ToNameLength, UnicodeString FromName, UnicodeString ToName)		smss:Diagnostics	smss:FileRename	Verbose	Microsoft-Windows-Subsys-SMSS/Operational	
+Microsoft-Windows-Subsys-SMSS	12	0	Event_12(UInt16 FileNameLength, UnicodeString FileName)			task_0	Error	System	The crash dump file could not be created due to a lack of free space on the destination drive. Increasing the amount of free space on the destination drive may help prevent this error.
+Microsoft-Windows-Subsys-SMSS	13	0	Event_13(UnicodeString CurrentRunLevel, UnicodeString TargetRunLevel)			task_0	Informational	System	A run level switch from the %1 level to the %2 level has started.
+Microsoft-Windows-Subsys-SMSS	14	0	Event_14(UnicodeString CurrentRunLevel, UnicodeString TargetRunLevel)			task_0	Informational	System	A run level switch from the %1 level to the %2 level has ended successfully.
+Microsoft-Windows-Subsys-SMSS	15	0	Event_15(UnicodeString CurrentRunLevel, UnicodeString TargetRunLevel, UnicodeString AgentName, UnicodeString Error)			task_0	Error	System	A run level switch from the %1 level to the %2 level was failed by \r\n%3 with the following error: \r\n\r\n%4\r\n\r\nFor more details, please refer to events logged by this agent.
+Microsoft-Windows-Subsys-SMSS	16	0	Event_16(UnicodeString CurrentRunLevel, UnicodeString TargetRunLevel, UnicodeString AgentName, UnicodeString Error)			task_0	Warning	System	A run level switch from the %1 level to the %2 level was succeeded by \r\n%3 with the following warning: \r\n\r\n%4\r\n\r\nFor more details, please refer to events logged by this agent.
+Microsoft-Windows-Subsys-SMSS	17	0	Event_17()			task_0	Informational	System	A platform binary was successfully executed.
+Microsoft-Windows-Subsys-SMSS	18	0	Event_18(UInt32 Status)			task_0	Informational	System	An attempt to execute a platform binary failed with error code %1.
+Microsoft-Windows-Subsys-SMSS	19	0	smss:BootExecuteNoPnpSyncListStart()	Start	smss:Diagnostics	smss:BootExecuteNoPnpSyncList	Informational	Microsoft-Windows-Subsys-SMSS/Operational	
+Microsoft-Windows-Subsys-SMSS	20	0	smss:BootExecuteNoPnpSyncListStop()	Stop	smss:Diagnostics	smss:BootExecuteNoPnpSyncList	Informational	Microsoft-Windows-Subsys-SMSS/Operational	

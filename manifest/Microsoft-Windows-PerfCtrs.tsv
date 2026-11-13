@@ -1,0 +1,75 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-PerfCtrs	1900	0	Message_0x4000076C()			task_0	Always		An extensible counter opened the Event Log for PERFCTRS.DLL
+Microsoft-Windows-PerfCtrs	1999	0	Message_0x400007CF()			task_0	Always		An extensible counter closed the Event Log for PERFCTRS.DLL
+Microsoft-Windows-PerfCtrs	2000	0	Message_0x400007D0()			task_0	Always		Entered the OpenTDIPerformanceData routine.
+Microsoft-Windows-PerfCtrs	2001	0	Message_0xC00007D1()			task_0	Always		Unable to open TDI device for RW access. Returning IO Status Block in Data.
+Microsoft-Windows-PerfCtrs	2002	0	Message_0xC00007D2()			task_0	Always		Opened TDI device for RW access.
+Microsoft-Windows-PerfCtrs	2003	0	Message_0xC00007D3()			task_0	Always		Unable to allocate memory for TDI Information block. Close one or more applications and retry.
+Microsoft-Windows-PerfCtrs	2004	0	Message_0xC00007D4()			task_0	Always		Error requesting data from Device IO Control. Returning IO Status Block.
+Microsoft-Windows-PerfCtrs	2005	0	Message_0xC00007D5()			task_0	Always		Unable to read data from the TDI device.
+Microsoft-Windows-PerfCtrs	2006	0	Message_0xC00007D6()			task_0	Always		Data received from Device IO Control. Returning IO Status Block.
+Microsoft-Windows-PerfCtrs	2007	0	Message_0xC00007D7()			task_0	Always		Unable to allocate memory for TDI Statistics block. Close one or more applications and retry.
+Microsoft-Windows-PerfCtrs	2099	0	Message_0x40000833()			task_0	Always		Successfully completed the TDIOpenPerformanceData routine.
+Microsoft-Windows-PerfCtrs	2100	0	Message_0x40000834()			task_0	Always		Entered the TDICollectPerformanceData routine.
+Microsoft-Windows-PerfCtrs	2101	0	Message_0x80000835()			task_0	Always		A Null TDI device handle was encountered in the Collect routine. The TDI file was probably not opened in the Open routine.
+Microsoft-Windows-PerfCtrs	2102	0	Message_0x40000836()			task_0	Always		The TDI Collection routine ignored a request for data from a foreign computer.
+Microsoft-Windows-PerfCtrs	2103	0	Message_0x40000837()			task_0	Always		The TDI Collection routine received a request for a counter object that it does not support.
+Microsoft-Windows-PerfCtrs	2104	0	Message_0xC0000838()			task_0	Always		The request for data from the TDI Device IO Control failed. Returning the IO Status Block.
+Microsoft-Windows-PerfCtrs	2105	0	Message_0x40000839()			task_0	Always		Successful data request from the TDI device.
+Microsoft-Windows-PerfCtrs	2106	0	Message_0xC000083A()			task_0	Always		The buffer passed to CollectTDIPerformanceData was too small to receive the data. No data was returned. The message data shows the available and the required buffer size.
+Microsoft-Windows-PerfCtrs	2107	0	Message_0xC000083B()			task_0	Always		The buffer passed was large enough for the counter data. The counters will now be loaded.
+Microsoft-Windows-PerfCtrs	2199	0	Message_0x40000897()			task_0	Always		The CollectTDIPerformanceData routine successfully completed.
+Microsoft-Windows-PerfCtrs	2200	0	Message_0x40000898()			task_0	Always		Entered the CloseTDIPerformanceData routine.
+Microsoft-Windows-PerfCtrs	2202	0	Message_0x4000089A()			task_0	Always		Successfully released the Provider Stats data block.
+Microsoft-Windows-PerfCtrs	2203	0	Message_0x8000089B()			task_0	Always		No SPX Devices are currently open or the NWLink SPX/SPXII service has not been started. SPX performance data cannot be collected.
+Microsoft-Windows-PerfCtrs	3000	0	Message_0x40000BB8()			task_0	Always		Entered the OpenNbtPerformanceData routine.
+Microsoft-Windows-PerfCtrs	3099	0	Message_0x40000C1B()			task_0	Always		The OpenNbtPerformanceData routine successfully completed.
+Microsoft-Windows-PerfCtrs	3100	0	Message_0x40000C1C()			task_0	Always		Entered the CollectNbtPerformanceData routine.
+Microsoft-Windows-PerfCtrs	3101	0	Message_0xC0000C1D()			task_0	Always		Unable to read IO control information from an NBT device. A network device using the NBT protocol could not be queried.
+Microsoft-Windows-PerfCtrs	3102	0	Message_0x40000C1E()			task_0	Always		Successfully read the NBT device IO Control information.
+Microsoft-Windows-PerfCtrs	3103	0	Message_0xC0000C1F()			task_0	Always		The data buffer passed to the collection routine was too small to receive the data from the NBT device. No data was returned to the caller. The bytes available and the bytes required are in the message data.
+Microsoft-Windows-PerfCtrs	3199	0	Message_0x40000C7F()			task_0	Always		The CollectNbtPerformanceData routine successfully completed.
+Microsoft-Windows-PerfCtrs	3200	0	Message_0x40000C80()			task_0	Always		Entered the CloseNbtPerformanceData routine.
+Microsoft-Windows-PerfCtrs	4000	0	Message_0x40000FA0()			task_0	Always		Entered the OpenTcpIpPerformanceData routine.
+Microsoft-Windows-PerfCtrs	4001	0	Message_0xC0000FA1()			task_0	Always		NBT Open failed. See NBT error message.
+Microsoft-Windows-PerfCtrs	4002	0	Message_0x40000FA2()			task_0	Always		NBT Open succeeded.
+Microsoft-Windows-PerfCtrs	4003	0	Message_0xC0000FA3()			task_0	Always		DSIS open failed. See DSIS error message
+Microsoft-Windows-PerfCtrs	4004	0	Message_0x40000FA4()			task_0	Always		DSIS Open succeeded.
+Microsoft-Windows-PerfCtrs	4005	0	Message_0xC0000FA5()			task_0	Always		Failed to load INETMIB1.DLL. Make sure the PATH environment variable contains the DLL. The WIN32 error number is returned in the data.
+Microsoft-Windows-PerfCtrs	4006	0	Message_0xC0000FA6()			task_0	Always		Unable to look up the address of the SnmpMgrStrToOid routine in the MGMTAPI.DLL library. The WIN32 error number is returned in the data.
+Microsoft-Windows-PerfCtrs	4007	0	Message_0xC0000FA7()			task_0	Always		Unable to look up the address of an SNMP Extension routine in the INETMIB1.DLL library. The WIN32 error number is returned in the data.
+Microsoft-Windows-PerfCtrs	4008	0	Message_0xC0000FA8()			task_0	Always		Unable to look up the ID of this object in MIB. Check that the MIB.BIN file is correct.
+Microsoft-Windows-PerfCtrs	4009	0	Message_0x40000FA9()			task_0	Always		Initialized the TCP data bindings array.
+Microsoft-Windows-PerfCtrs	4010	0	Message_0xC0000FAA()			task_0	Always		Unable to get the local computer name. The data in the data section contains the error code.
+Microsoft-Windows-PerfCtrs	4011	0	Message_0xC0000FAB()			task_0	Always		Unable to open the Snmp Mgr interface for the specified computer. The data contains the error code.
+Microsoft-Windows-PerfCtrs	4099	0	Message_0x40001003()			task_0	Always		The OpenTcpIpPerformanceData routine successfully completed.
+Microsoft-Windows-PerfCtrs	4100	0	Message_0x40001004()			task_0	Always		Entered the CollectTcpIpPerformanceData routine.
+Microsoft-Windows-PerfCtrs	4101	0	Message_0x40001005()			task_0	Always		Received a request for data from a DSIS foreign computer.
+Microsoft-Windows-PerfCtrs	4102	0	Message_0xC0001006()			task_0	Always		The CollectDsisPerformanceData routine returned an error.
+Microsoft-Windows-PerfCtrs	4103	0	Message_0x80001007()			task_0	Always		The foreign computer did not return any objects.
+Microsoft-Windows-PerfCtrs	4104	0	Message_0x40001008()			task_0	Always		Successfully retrieved information from the foreign computer.
+Microsoft-Windows-PerfCtrs	4105	0	Message_0xC0001009()			task_0	Always		The CollectNbtPerformanceData routine returned an error. The error status is in the data section.
+Microsoft-Windows-PerfCtrs	4106	0	Message_0x8000100A()			task_0	Always		The OpenTcpIpPerformanceData routine did not establish a SNMP Mgr Session.
+Microsoft-Windows-PerfCtrs	4107	0	Message_0xC000100B()			task_0	Always		Insufficient memory was available to allocate an SNMP request buffer.
+Microsoft-Windows-PerfCtrs	4108	0	Message_0xC000100C()			task_0	Always		The SnmpMgrRequest call requesting the TCP, IP, UDP and Interface Counters returned an error. The ErrorStatus and ErrorIndex values are shown in Data.
+Microsoft-Windows-PerfCtrs	4110	0	Message_0xC000100E()			task_0	Always		The SnmpMgrRequest call requesting ICMP Counters returned an error. The ErrorStatus and ErrorIndex values are shown in Data.
+Microsoft-Windows-PerfCtrs	4111	0	Message_0x4000100F()			task_0	Always		Processing NetInterface entries.
+Microsoft-Windows-PerfCtrs	4112	0	Message_0x80001010()			task_0	Always		The buffer is not large enough to store the Network Interface data. The returned data contains the available and required buffer size.
+Microsoft-Windows-PerfCtrs	4113	0	Message_0xC0001011()			task_0	Always		The SnmpGet (GETNEXT) request returned an error while processing the Net Interface instances. The ErrorStatus and ErrorIndex are shown in Data.
+Microsoft-Windows-PerfCtrs	4114	0	Message_0x40001012()			task_0	Always		Copying data from network requests to the Performance Monitor buffer.
+Microsoft-Windows-PerfCtrs	4116	0	Message_0x80001014()			task_0	Always		The buffer is not large enough to store the Network Protocol (IP, ICMP, TCP & UDP) data. The returned data contains the available and required buffer size.
+Microsoft-Windows-PerfCtrs	4119	0	Message_0x80001017()			task_0	Always		SNMP returned a NULL ICMP data buffer. This may be caused by a problem with the SNMP service.
+Microsoft-Windows-PerfCtrs	4120	0	Message_0x80001018()			task_0	Always		SNMP returned a NULL TCP data buffer. This may be caused by a problem with the SNMP service.
+Microsoft-Windows-PerfCtrs	4121	0	Message_0x80001019()			task_0	Always		SNMP returned a NULL buffer in response to a request for network performance information. This error may be caused by a problem with the SNMP service.
+Microsoft-Windows-PerfCtrs	4199	0	Message_0x40001067()			task_0	Always		The CollectTcpIpPerformanceData routine successfully completed.
+Microsoft-Windows-PerfCtrs	4200	0	Message_0x40001068()			task_0	Always		Entered the CloseTcpIpPerformanceData routine.
+Microsoft-Windows-PerfCtrs	4201	0	Message_0xC0001069()			task_0	Always		SNMP returned an error while trying to close the session.
+Microsoft-Windows-PerfCtrs	5300	0	Message_0x400014B4()			task_0	Always		Entered the OpenDhcpPerformanceData routine.
+Microsoft-Windows-PerfCtrs	5301	0	Message_0x400014B5()			task_0	Always		The OpenDhcpPerformanceData routine successfully completed.
+Microsoft-Windows-PerfCtrs	5302	0	Message_0x400014B6()			task_0	Always		The OpenDhcpPerformanceData routine failed.
+Microsoft-Windows-PerfCtrs	5303	0	Message_0x400014B7()			task_0	Always		Entered the CollectDhcpPerformanceData routine.
+Microsoft-Windows-PerfCtrs	5304	0	Message_0x400014B8()			task_0	Always		The CollectDhcpPerformance routine returned ERROR_MORE_DATA.
+Microsoft-Windows-PerfCtrs	5305	0	Message_0x400014B9()			task_0	Always		The CollectDhcpPerformance routine failed because a shared memory segment was not created.
+Microsoft-Windows-PerfCtrs	5306	0	Message_0x400014BA()			task_0	Always		The CollectDhcpPerformanceData routine completed successfully.
+Microsoft-Windows-PerfCtrs	5307	0	Message_0x400014BB()			task_0	Always		Called the CloseDhcpPerformanceData routine.
+Microsoft-Windows-PerfCtrs	5308	0	Message_0x800014BC()			task_0	Always		The performance counters for the DHCP service have not been installed. No DHCP performance data will be available.

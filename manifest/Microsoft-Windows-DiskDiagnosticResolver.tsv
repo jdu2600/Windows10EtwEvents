@@ -1,11 +1,11 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-DiskDiagnosticResolver	1	0	task_0()			task_0	Informational		
-Microsoft-Windows-DiskDiagnosticResolver	2	0	task_02()			task_0	Informational		
-Microsoft-Windows-DiskDiagnosticResolver	3	0	task_03()			task_0	Informational		
-Microsoft-Windows-DiskDiagnosticResolver	4	0	task_04()			task_0	Informational		
-Microsoft-Windows-DiskDiagnosticResolver	5	0	task_05()			task_0	Informational		
-Microsoft-Windows-DiskDiagnosticResolver	6	0	task_06()			task_0	Informational		
-Microsoft-Windows-DiskDiagnosticResolver	7	0	task_07(UInt32 ErrorCode)			task_0	Warning		
-Microsoft-Windows-DiskDiagnosticResolver	8	0	task_08()			task_0	Informational		
-Microsoft-Windows-DiskDiagnosticResolver	9	0	task_09()			task_0	Informational		
-Microsoft-Windows-DiskDiagnosticResolver	10	0	task_010()			task_0	Informational		
+Microsoft-Windows-DiskDiagnosticResolver	1	0	Event_1()			task_0	Informational	Microsoft-Windows-DiskDiagnosticResolver/Operational	Windows Disk Diagnostic Resolver started with administrative privileges.
+Microsoft-Windows-DiskDiagnosticResolver	2	0	Event_2()			task_0	Informational	Microsoft-Windows-DiskDiagnosticResolver/Operational	Windows Disk Diagnostic Resolver started without administrative privileges.
+Microsoft-Windows-DiskDiagnosticResolver	3	0	Event_3()			task_0	Informational	Microsoft-Windows-DiskDiagnosticResolver/Operational	Windows Disk Diagnostic is exiting silently because it is disabled by Group Policy.
+Microsoft-Windows-DiskDiagnosticResolver	4	0	Event_4()			task_0	Informational	Microsoft-Windows-DiskDiagnosticResolver/Operational	Windows Disk Diagnostic Resolver is exiting because the user requested suppression of any S.M.A.R.T. faults that were detected.
+Microsoft-Windows-DiskDiagnosticResolver	5	0	Event_5()			task_0	Informational	Microsoft-Windows-DiskDiagnosticResolver/Operational	Windows Disk Diagnostic Resolver is exiting because no S.M.A.R.T. faults were detected on this computer.
+Microsoft-Windows-DiskDiagnosticResolver	6	0	Event_6()			task_0	Informational	Microsoft-Windows-DiskDiagnosticResolver/Operational	Windows Disk Diagnostic Resolver was disabled successfully.
+Microsoft-Windows-DiskDiagnosticResolver	7	0	Event_7(UInt32 ErrorCode)			task_0	Warning	Microsoft-Windows-DiskDiagnosticResolver/Operational	Windows Disk Diagnostic Resolver could not be disabled.  The error code was %1.
+Microsoft-Windows-DiskDiagnosticResolver	8	0	Event_8()			task_0	Informational	Microsoft-Windows-DiskDiagnosticResolver/Operational	Windows Disk Diagnostic Resolver launched backup at the user's request.
+Microsoft-Windows-DiskDiagnosticResolver	9	0	Event_9()			task_0	Informational	Microsoft-Windows-DiskDiagnosticResolver/Operational	Windows Disk Diagnostic Resolver deleted stale entries from the S.M.A.R.T. fault cache.
+Microsoft-Windows-DiskDiagnosticResolver	10	0	Event_10()			task_0	Informational	Microsoft-Windows-DiskDiagnosticResolver/Operational	Windows Disk Diagnostic Resolver suppressed all active S.M.A.R.T. faults at the user's request.

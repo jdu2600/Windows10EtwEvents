@@ -48,6 +48,8 @@ Windows Kernel Trace	{01853a65-418f-4f36-aefc-dc0f1d2fd235}	32	3	SystemConfig_Mo
 Windows Kernel Trace	{01853a65-418f-4f36-aefc-dc0f1d2fd235}	33	2	SystemConfig_DeviceFamily_V2(UInt64 UAPInfo, UInt32 DeviceFamily, UInt32 DeviceForm)	DeviceFamily	System Configuration
 Windows Kernel Trace	{01853a65-418f-4f36-aefc-dc0f1d2fd235}	34	2	SystemConfig_FlightIds_V2(String UpdateId, String FlightIdList)	FlightIds	System Configuration
 Windows Kernel Trace	{01853a65-418f-4f36-aefc-dc0f1d2fd235}	35	2	SystemConfig_Processors_V2(UInt32 ProcessorIndex, UInt32 FeatureSet, UInt32 ProcessorSpeed, Char16 ProcessorName, Char16 VendorIdentifier, Char16 ProcessorIdentifier)	Processors	System Configuration
+Windows Kernel Trace	{01853a65-418f-4f36-aefc-dc0f1d2fd235}	36	2	SystemConfig_Virtualization Config Info_V2(UInt8 VbsEnabled, UInt8 HvciEnabled, UInt8 HyperVisorEnabled, UInt8 Reserved)	Virtualization Config Info	System Configuration
+Windows Kernel Trace	{01853a65-418f-4f36-aefc-dc0f1d2fd235}	37	2	SystemConfig_Boot Config Info_V2(UInt64 BootFlags, UInt32 FirmwareType, UInt8 SecureBootEnabled, UInt8 SecureBootCapable, UInt8 Reserved1, UInt8 Reserved2)	Boot Config Info	Boot Configuration
 Windows Kernel Trace	{0268a8b6-74fd-4302-9dd0-6e8f1795c0cf}	32	2	Pool_PoolAllocation_V2(UInt32 Type, UInt32 Tag, Object NumberOfBytes, UInt32 Entry)	PoolAllocation	Pool Allocation/Free Event
 Windows Kernel Trace	{0268a8b6-74fd-4302-9dd0-6e8f1795c0cf}	33	2	Pool_SessionPoolAllocation_V2(UInt32 Type, UInt32 Tag, Object NumberOfBytes, UInt32 Entry, UInt32 SessionId)	SessionPoolAllocation	Session Pool Allocation/Free Event
 Windows Kernel Trace	{0268a8b6-74fd-4302-9dd0-6e8f1795c0cf}	34	2	Pool_PoolFree_V2(UInt32 Type, UInt32 Tag, Object NumberOfBytes, UInt32 Entry)	PoolFree	Pool Allocation/Free Event
@@ -276,7 +278,9 @@ Windows Kernel Trace	{68fdd900-4a3e-11d1-84f4-0000f80464e3}	32	2	EventTrace_EndE
 Windows Kernel Trace	{68fdd900-4a3e-11d1-84f4-0000f80464e3}	64	2	EventTrace_DbgIdRSDS_V2(Object Guid, UInt32 Age, String PdbName)	DbgIdRSDS	DebugId
 Windows Kernel Trace	{68fdd900-4a3e-11d1-84f4-0000f80464e3}	66	2	EventTrace_BuildInfo_V2(String BuildString)	BuildInfo	Build Information
 Windows Kernel Trace	{68fdd900-4a3e-11d1-84f4-0000f80464e3}	67	2	EventTrace_ProviderBinaryPath_V2(UInt32 GuidCount, Object Guid, String BinaryPath)	ProviderBinaryPath	Provider Binary Path
-Windows Kernel Trace	{68fdd900-4a3e-11d1-84f4-0000f80464e3}	80	2	EventTrace_PartitionInfoExtension_V2(UInt16 EventVersion, UInt16 Reserved, UInt32 PartitionType, SInt64 QpcOffsetFromRoot, Object PartitionId, Object ParentId)	PartitionInfoExtension	Partition Info Extension
+Windows Kernel Trace	{68fdd900-4a3e-11d1-84f4-0000f80464e3}	80	0	EventTrace_PartitionInfoExtension(UInt16 EventVersion, UInt16 Reserved, UInt32 PartitionType, SInt64 QpcOffsetFromRoot, Object PartitionId, Object ParentId)	PartitionInfoExtension	Partition Info Extension
+Windows Kernel Trace	{68fdd900-4a3e-11d1-84f4-0000f80464e3}	80	2	EventTrace_PartitionInfoExtensionV2_V2(UInt16 EventVersion, UInt16 Reserved, UInt32 PartitionType, SInt64 QpcOffsetFromRoot, String PartitionId, String ParentId)	PartitionInfoExtensionV2	Partition Info Extension V2
+Windows Kernel Trace	{68fdd900-4a3e-11d1-84f4-0000f80464e3}	82	2	EventTrace_LastDroppedTimes_V2(UInt32 TimeStampCount, UInt32 Padding, UInt64 TimeStamp)	LastDroppedTimes	Last Dropped Event Times
 Windows Kernel Trace	{6a399ae0-4bc6-4de9-870b-3657f8947e7e}	32	0	LostEvent_RTLostEvent()	RTLostEvent	RT Lost Event
 Windows Kernel Trace	{6a399ae0-4bc6-4de9-870b-3657f8947e7e}	33	0	LostEvent_RTLostBuffer()	RTLostBuffer	RT Lost Event
 Windows Kernel Trace	{6a399ae0-4bc6-4de9-870b-3657f8947e7e}	34	0	LostEvent_RTLostFile()	RTLostFile	RT Lost Event

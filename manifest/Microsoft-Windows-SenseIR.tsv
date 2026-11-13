@@ -12,3 +12,4 @@ Microsoft-Windows-SenseIR	11	0	Event_11(UnicodeString ActionType, UnicodeString 
 Microsoft-Windows-SenseIR	12	0	Event_12(HexInt32 HRESULT)			task_0	Warning	Microsoft-Windows-SenseIR/Operational	Failed to deserialize actions, received invalid actions from AIRS server. Error code: %1
 Microsoft-Windows-SenseIR	13	0	Event_13(HexInt32 HRESULT)			task_0	Warning	Microsoft-Windows-SenseIR/Operational	Failed to execute AIRS request. Error code: %1
 Microsoft-Windows-SenseIR	14	0	Event_14(UnicodeString ActionType, UnicodeString ActionId)			task_0	Informational	Microsoft-Windows-SenseIR/Operational	Starting to upload results of action %1. Action ID: %2
+Microsoft-Windows-SenseIR	15	0	Event_15(UnicodeString ActionType, UnicodeString ActionId, UnicodeString ActionPhase, HexInt64 HRESULT)			task_0	Warning	Microsoft-Windows-SenseIR/Operational	Failure during action %1. Action ID: %2, Action phase: %3, error code: %4

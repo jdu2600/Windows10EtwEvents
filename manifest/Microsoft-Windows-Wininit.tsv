@@ -11,12 +11,12 @@ Microsoft-Windows-Wininit	9	0	ShutdownWindowsStart(UInt32 Flags)	Start	PerfInstr
 Microsoft-Windows-Wininit	10	0	ShutdownWindowsStop(UInt32 Win32Status)	Stop	PerfInstrumentation	ShutdownWindows	Informational	Microsoft-Windows-Wininit/Diagnostic	
 Microsoft-Windows-Wininit	11	0	Event_11(UInt32 StringCount, UnicodeString String)			task_0	Warning	System	Custom dynamic link libraries are being loaded for every application. The system administrator should review the list of libraries to ensure they are related to trusted applications. Please visit http://support.microsoft.com/kb/197571 for more information.
 Microsoft-Windows-Wininit	12	0	Event_12(UInt32 Level)			task_0	Informational	System	LSASS.exe was started as a protected process with level: %1.
-Microsoft-Windows-Wininit	13	0	Event_13(UInt32 Level)			task_0	Informational	System	Credential Guard was started and will protect LSA credentials.
+Microsoft-Windows-Wininit	13	0	Event_13()			task_0	Informational	System	Credential Guard was started and will protect LSA credentials.
 Microsoft-Windows-Wininit	14	0	Event_14(UInt32 Config, UInt32 IsTestConfig)			task_0	Informational	System	Credential Guard configuration: %1, %2
-Microsoft-Windows-Wininit	15	0	Event_15(UInt32 Level)			task_0	Warning	System	Credential Guard is configured but the secure kernel is not running; continuing without Credential Guard.
+Microsoft-Windows-Wininit	15	0	Event_15()			task_0	Warning	System	Credential Guard is configured but the secure kernel is not running; continuing without Credential Guard.
 Microsoft-Windows-Wininit	16	0	Event_16(UInt32 Level)			task_0	Error	System	LsaIso.exe, the host process for Credential Guard and Key Guard, failed to launch: %1
 Microsoft-Windows-Wininit	17	0	Event_17(UInt32 Level)			task_0	Error	System	Error reading Credential Guard (LsaIso.exe) UEFI configuration: %1
-Microsoft-Windows-Wininit	18	0	Event_18(UInt32 Level)			task_0	Informational	System	Key Guard was started and will protect VSM-isolated keys.
+Microsoft-Windows-Wininit	18	0	Event_18()			task_0	Informational	System	Key Guard was started and will protect VSM-isolated keys.
 Microsoft-Windows-Wininit	51	0	NtShutdownSystem()		PerfInstrumentation	NtShutdownSystem	Informational	Microsoft-Windows-Wininit/Diagnostic	
 Microsoft-Windows-Wininit	53	0	SentLogoffRequest(UInt32 SessionId, UInt32 Flags)		PerfInstrumentation	SentLogoffRequest	Informational	Microsoft-Windows-Wininit/Diagnostic	
 Microsoft-Windows-Wininit	55	0	ReceivedShutdownRequest(UInt32 SessionId, UInt32 IsRemote, UInt32 GracePeriod, UInt32 Flags, UInt32 Reason, UnicodeString Message)		PerfInstrumentation	ReceivedShutdownRequest	Informational	Microsoft-Windows-Wininit/Diagnostic	

@@ -1,21 +1,41 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
 Microsoft-Windows-PerfOS	1000	0	Message_0xC00003E8()			task_0	Always		Unable to open one of the Windows operating system performance counter objects. The first four bytes (DWORD) of the Data section contains the status code.
+Microsoft-Windows-PerfOS	1000	1	Event_1000_V1(UInt32 Win32Error)			task_0	Error	Application	Unable to open one of the Windows operating system performance counter objects. The first four bytes (DWORD) of the Data section contains the status code.
 Microsoft-Windows-PerfOS	1001	0	Message_0xC00003E9()			task_0	Always		Unable to collect operating system performance data because one of the system performance counter objects failed to open.
+Microsoft-Windows-PerfOS	1001	1	Event_1001_V1()			task_0	Error	Application	Unable to collect operating system performance data because one of the system performance counter objects failed to open.
 Microsoft-Windows-PerfOS	2000	0	Message_0x800007D0()			task_0	Always		Unable to collect Processor performance data. The first four bytes (DWORD) of the Data section contains the status code.
+Microsoft-Windows-PerfOS	2000	1	Event_2000_V1(UInt32 NTSTATUS)			task_0	Warning	Application	Unable to collect Processor performance data. The first four bytes (DWORD) of the Data section contains the status code.
 Microsoft-Windows-PerfOS	2001	0	Message_0x800007D1()			task_0	Always		Unable to collect Interrupt performance data. The first four bytes (DWORD) of the Data section contains the status code.
+Microsoft-Windows-PerfOS	2001	1	Event_2001_V1(UInt32 NTSTATUS)			task_0	Warning	Application	Unable to collect Interrupt performance data. The first four bytes (DWORD) of the Data section contains the status code.
+Microsoft-Windows-PerfOS	2002	0	Event_2002(UInt32 NTSTATUS)			task_0	Warning	Application	Unable to collect File Cache performance data. The first four bytes (DWORD) of the Data section contains the status code.
 Microsoft-Windows-PerfOS	2002	0	Message_0x800007D2()			task_0	Always		Unable to collect File Cache performance data. The first four bytes (DWORD) of the Data section contains the status code.
 Microsoft-Windows-PerfOS	2003	0	Message_0x800007D3()			task_0	Always		Unable to collect Process performance data. The first four bytes (DWORD) of the Data section contains the status code.
+Microsoft-Windows-PerfOS	2003	2	Event_2003_V2(UInt32 NTSTATUS)			task_0	Warning	Application	Unable to collect Process performance data. The first four bytes (DWORD) of the Data section contains the status code.
 Microsoft-Windows-PerfOS	2004	0	Message_0x800007D4()			task_0	Always		Unable to collect Thread performance data. The first four bytes (DWORD) of the Data section contains the status code.
+Microsoft-Windows-PerfOS	2004	1	Event_2004_V1(UInt32 NTSTATUS)			task_0	Warning	Application	Unable to collect Thread performance data. The first four bytes (DWORD) of the Data section contains the status code.
 Microsoft-Windows-PerfOS	2005	0	Message_0x800007D5()			task_0	Always		Unable to collect Event performance data. The first four bytes (DWORD) of the Data section contains the status code.
+Microsoft-Windows-PerfOS	2005	1	Event_2005_V1(UInt32 NTSTATUS)			task_0	Warning	Application	Unable to collect Event performance data. The first four bytes (DWORD) of the Data section contains the status code.
 Microsoft-Windows-PerfOS	2006	0	Message_0x800007D6()			task_0	Always		Unable to collect Semaphore performance data. The first four bytes (DWORD) of the Data section contains the status code.
-Microsoft-Windows-PerfOS	2007	0	Message_0x800007D7()			task_0	Always		Unable to collect Mutex performance data. The first four bytes (DWORD) of the Data section contains the status code.
+Microsoft-Windows-PerfOS	2006	1	Event_2006_V1(UInt32 NTSTATUS)			task_0	Warning	Application	Unable to collect Semaphore performance data. The first four bytes (DWORD) of the Data section contains the status code.
+Microsoft-Windows-PerfOS	2007	0	Message_0x800007D7()			task_0	Always		%%2007
 Microsoft-Windows-PerfOS	2008	0	Message_0x800007D8()			task_0	Always		Unable to collect Section performance data. The first four bytes (DWORD) of the Data section contains the status code.
+Microsoft-Windows-PerfOS	2008	1	Event_2008_V1(UInt32 NTSTATUS)			task_0	Warning	Application	Unable to collect Section performance data. The first four bytes (DWORD) of the Data section contains the status code.
 Microsoft-Windows-PerfOS	2009	0	Message_0xC00007D9()			task_0	Always		Unable to get system configuration information. The first four bytes (DWORD) of the Data section contains the status code.
+Microsoft-Windows-PerfOS	2009	1	Event_2009_V1(UInt32 NTSTATUS)			task_0	Error	Application	Unable to get system configuration information. The first four bytes (DWORD) of the Data section contains the status code.
 Microsoft-Windows-PerfOS	2010	0	Message_0x800007DA()			task_0	Always		Unable to collect System performance data. The first four bytes (DWORD) of the Data section contains the status code.
+Microsoft-Windows-PerfOS	2010	1	Event_2010_V1(UInt32 NTSTATUS)			task_0	Warning	Application	Unable to collect System performance data. The first four bytes (DWORD) of the Data section contains the status code.
 Microsoft-Windows-PerfOS	2011	0	Message_0x800007DB()			task_0	Always		Unable to collect System Pagefile performance data. The first four bytes (DWORD) of the Data section contains the status code.
+Microsoft-Windows-PerfOS	2011	1	Event_2011_V1(UInt32 NTSTATUS)			task_0	Warning	Application	Unable to collect System Pagefile performance data. The first four bytes (DWORD) of the Data section contains the status code.
 Microsoft-Windows-PerfOS	2012	0	Message_0x800007DC()			task_0	Always		Unable to collect System Process performance data. The first four bytes (DWORD) of the Data section contains the status code.
+Microsoft-Windows-PerfOS	2012	1	Event_2012_V1(UInt32 NTSTATUS)			task_0	Warning	Application	Unable to collect System Process performance data. The first four bytes (DWORD) of the Data section contains the status code.
 Microsoft-Windows-PerfOS	2013	0	Message_0x800007DD()			task_0	Always		Unable to collect System Exception performance data. The first four bytes (DWORD) of the Data section contains the status code.
+Microsoft-Windows-PerfOS	2013	1	Event_2013_V1(UInt32 NTSTATUS)			task_0	Warning	Application	Unable to collect System Exception performance data. The first four bytes (DWORD) of the Data section contains the status code.
 Microsoft-Windows-PerfOS	2014	0	Message_0x800007DE()			task_0	Always		Unable to collect Registry Quota performance data. The first four bytes (DWORD) of the Data section contains the status code.
+Microsoft-Windows-PerfOS	2014	1	Event_2014_V1(UInt32 NTSTATUS)			task_0	Warning	Application	Unable to collect Registry Quota performance data. The first four bytes (DWORD) of the Data section contains the status code.
 Microsoft-Windows-PerfOS	2015	0	Message_0x800007DF()			task_0	Always		Unable to collect System time information. The first four bytes (DWORD) of the Data section contains the status code.
+Microsoft-Windows-PerfOS	2015	1	Event_2015_V1(UInt32 NTSTATUS)			task_0	Warning	Application	Unable to collect System time information. The first four bytes (DWORD) of the Data section contains the status code.
 Microsoft-Windows-PerfOS	2016	0	Message_0x800007E0()			task_0	Always		Unable to collect System Processor Idle performance data. The first four bytes (DWORD) of the Data section contains the status code.
+Microsoft-Windows-PerfOS	2016	1	Event_2016_V1(UInt32 NTSTATUS)			task_0	Warning	Application	Unable to collect System Processor Idle performance data. The first four bytes (DWORD) of the Data section contains the status code.
 Microsoft-Windows-PerfOS	2017	0	Message_0x800007E1()			task_0	Always		Unable to collect NUMA physical memory utilization data. The first four bytes (DWORD) of the Data section contains the status code.
+Microsoft-Windows-PerfOS	2017	1	Event_2017_V1(UInt32 NTSTATUS)			task_0	Warning	Application	Unable to collect NUMA physical memory utilization data. The first four bytes (DWORD) of the Data section contains the status code.
+Microsoft-Windows-PerfOS	8199	1	Event_8199_V1(UInt32 NTSTATUS)			task_0	Warning	Application	Unable to collect Mutex performance data. The first four bytes (DWORD) of the Data section contains the status code.

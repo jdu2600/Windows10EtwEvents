@@ -1,7 +1,12 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
 Microsoft-Windows-PerfDisk	1000	0	Message_0x800003E8()			task_0	Always		Unable to open the Disk performance object. The first four bytes (DWORD) of the Data section of the event viewer contains the status code.
+Microsoft-Windows-PerfDisk	1000	1	Event_1000_V1(UInt32 NTSTATUS)			task_0	Error	Application	Unable to open the Disk performance object (Win32 error code %1).
 Microsoft-Windows-PerfDisk	1001	0	Message_0xC00003E9()			task_0	Always		The attempt to collect Disk Performance data failed because the DLL did not open successfully.
 Microsoft-Windows-PerfDisk	1002	0	Message_0xC00003EA()			task_0	Always		Unable to allocate a dynamic memory buffer.
+Microsoft-Windows-PerfDisk	1002	1	Event_1002_V1()			task_0	Warning	Application	Unable to allocate a dynamic memory buffer.
 Microsoft-Windows-PerfDisk	1003	0	Message_0xC00003EB()			task_0	Always		Only one thread at a time can call the performance data collection function. A second thread attempted to call the collection function while it was in use by another thread.
+Microsoft-Windows-PerfDisk	1003	1	Event_1003_V1()			task_0	Error	Application	Only one thread at a time can call the performance data collection function. A second thread attempted to call the collection function while it was in use by another thread.
 Microsoft-Windows-PerfDisk	2000	0	Message_0x800007D0()			task_0	Always		Unable to read the Logical Volume information. The first four bytes (DWORD) of the Data section of the event viewer contains the status code.
+Microsoft-Windows-PerfDisk	2000	1	Event_2000_V1(UInt32 Win32Error)			task_0	Warning	Application	Unable to read the Logical Volume information (Win32 error code %1).
 Microsoft-Windows-PerfDisk	2001	0	Message_0x800007D1()			task_0	Always		Unable to read performance data for the Disk performance counters.
+Microsoft-Windows-PerfDisk	2001	1	Event_2001_V1(UInt32 Win32Error)			task_0	Warning	Application	Unable to read performance data for the Disk performance counters (Win32 error code %1).

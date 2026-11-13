@@ -1,0 +1,17 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-WinQuic	1	0	Event_1(Pointer Connection, UInt32 IsServer)		ut:Connection	task_0	Informational		[conn][%1] Begin, IsServer=%2
+Microsoft-Windows-WinQuic	2	0	Event_2(Pointer Connection)		ut:Connection	task_0	Informational		[conn][%1] End
+Microsoft-Windows-WinQuic	3	0	Event_3(Pointer Connection)		ut:Connection	task_0	Informational		[conn][%1] Handshake complete
+Microsoft-Windows-WinQuic	4	0	Event_4(Pointer Connection, UInt32 State)		ut:Connection ut:Scheduling	task_0	Informational		[conn][%1] Scheduling: %2
+Microsoft-Windows-WinQuic	5	0	Event_5(Pointer Connection, UInt32 Type)		ut:Connection ut:Scheduling	task_0	Verbose		[conn][%1] Execute: %2
+Microsoft-Windows-WinQuic	6	0	Event_6(Pointer Connection, UInt32 Type)		ut:Connection ut:Scheduling	task_0	Verbose		[conn][%1] Execute: %2
+Microsoft-Windows-WinQuic	7	0	Event_7(Pointer Connection, UInt32 Type)		ut:Connection ut:Scheduling	task_0	Verbose		[conn][%1] Execute: %2
+Microsoft-Windows-WinQuic	100	0	Event_100(Pointer Stream, Pointer Connection, UInt64 ID)		ut:Stream	task_0	Informational		[strm][%1] Begin, Conn=%2 ID=%3
+Microsoft-Windows-WinQuic	101	0	Event_101(Pointer Stream)		ut:Stream	task_0	Informational		[strm][%1] End
+Microsoft-Windows-WinQuic	1000	0	Event_1000(Pointer Connection, UInt64 BytesSent, UInt32 BytesInFlight, UInt32 BytesInFlightMax, UInt32 CongestionWindow, UInt32 SlowStartThreshold, UInt32 IsInRecovery, UInt64 ConnectionFlowControl, UInt64 StreamFlowControl, UInt64 IdealBytes, UInt64 PostedBytes, UInt32 SmoothedRtt)		ut:Connection ut:DataFlow	task_0	Verbose		[conn][%1] FS: BytesSent=%2 InFlight=%3 InFlightMax=%4 CWnd=%5 SSThresh=%6 InRecov=%7 ConnFC=%8 StreamFC=%9 ISB=%10 PostedBytes=%11 SRtt=%12
+Microsoft-Windows-WinQuic	1001	0	Event_1001(Pointer Connection, AnsiString Reason)		ut:Connection ut:DataFlow	task_0	Informational		[conn][%1] BLOCKED: %2
+Microsoft-Windows-WinQuic	1002	0	Event_1002(Pointer Connection, AnsiString Reason)		ut:Connection ut:DataFlow	task_0	Informational		[conn][%1] UNBLOCKED: %2
+Microsoft-Windows-WinQuic	1003	0	Event_1003(Pointer Stream, AnsiString Reason)		ut:Stream ut:DataFlow	task_0	Informational		[strm][%1] BLOCKED: %2
+Microsoft-Windows-WinQuic	1004	0	Event_1004(Pointer Stream, AnsiString Reason)		ut:Stream ut:DataFlow	task_0	Informational		[strm][%1] UNBLOCKED: %2
+Microsoft-Windows-WinQuic	1005	0	Event_1005(Pointer Connection, UInt32 SlowStartThreshold, UInt32 K, UInt32 WindowMax, UInt32 WindowLastMax)		ut:Connection ut:DataFlow	task_0	Verbose		[conn][%1] CUBIC: SlowStartThreshold=%2 K=%3 WindowMax=%4 WindowLastMax=%5
+Microsoft-Windows-WinQuic	1006	0	Event_1006(Pointer Connection)		ut:Connection ut:DataFlow	task_0	Verbose		[conn][%1] Congestion Event

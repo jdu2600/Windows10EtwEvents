@@ -4,5 +4,9 @@ Microsoft-Windows-FeatureConfiguration	1002	0	FeatureConfigurationEvents1002(Uni
 Microsoft-Windows-FeatureConfiguration	1004	0	FeatureConfigurationEvents1004(Int32 ErrorCode)			FeatureConfigurationEvents	Error	Microsoft-Windows-FeatureConfiguration/Operational	Failed to backup applied feature overrides.\r\n\r\nFeature configurations may not be reset to their default state if the policy is removed.\r\n\r\nError: %1
 Microsoft-Windows-FeatureConfiguration	1005	0	FeatureConfigurationEventsOpCodeforsettingfeaturestate(UInt32 FeatureId, UInt32 FeatureState)	OpCodeforsettingfeaturestate		FeatureConfigurationEvents	Informational	Microsoft-Windows-FeatureConfiguration/Operational	Setting feature state by enterprise policies. \r\n\r\nFeature id:%1 \r\nState:%2
 Microsoft-Windows-FeatureConfiguration	1006	0	FeatureConfigurationEventsOpCodeforre_settingfeaturestate(UInt32 FeatureId)	OpCodeforre_settingfeaturestate		FeatureConfigurationEvents	Informational	Microsoft-Windows-FeatureConfiguration/Operational	Resetting feature %1 to its default state.
+Microsoft-Windows-FeatureConfiguration	1007	0	Event_1007(UInt32 FeatureId, UInt32 Kind)		AlwaysDisabled	task_0	Informational		
+Microsoft-Windows-FeatureConfiguration	1008	0	Event_1008(UInt32 FeatureId, UInt32 Kind)		DisabledByDefault	task_0	Informational		
+Microsoft-Windows-FeatureConfiguration	1009	0	Event_1009(UInt32 FeatureId, UInt32 Kind)		EnabledByDefault	task_0	Informational		
+Microsoft-Windows-FeatureConfiguration	1010	0	Event_1010(UInt32 FeatureId, UInt32 Kind)		AlwaysEnabled	task_0	Informational		
 Microsoft-Windows-FeatureConfiguration	5001	0	FeatureConfigurationEventsStart()	Start		FeatureConfigurationEvents	Informational	Microsoft-Windows-FeatureConfiguration/Analytic	Feature configuration started
 Microsoft-Windows-FeatureConfiguration	5002	0	FeatureConfigurationEventsStop()	Stop		FeatureConfigurationEvents	Informational	Microsoft-Windows-FeatureConfiguration/Analytic	Feature configuration completed

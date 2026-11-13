@@ -1,20 +1,38 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
 Microsoft-Windows-WER-SystemErrorReporting	1000	0	Message_0x400003E8(UnicodeString param1)			task_0	Always		The computer has rebooted from a bugcheck.  The bugcheck was: %1. A full dump was not saved.
+Microsoft-Windows-WER-SystemErrorReporting	1000	1	Event_1000_V1(UnicodeString param1)			task_0	Error	System	The computer has rebooted from a bugcheck.  The bugcheck was: %1. A full dump was not saved.
 Microsoft-Windows-WER-SystemErrorReporting	1001	0	Message_0x400003E9(UnicodeString param1, UnicodeString param2, UnicodeString param3)			task_0	Always		The computer has rebooted from a bugcheck.  The bugcheck was: %1. A dump was saved in: %2. Report Id: %3.
+Microsoft-Windows-WER-SystemErrorReporting	1001	1	Event_1001_V1(UnicodeString param1, UnicodeString param2, UnicodeString param3)			task_0	Error	System	The computer has rebooted from a bugcheck.  The bugcheck was: %1. A dump was saved in: %2. Report Id: %3.
 Microsoft-Windows-WER-SystemErrorReporting	1002	0	Message_0x400003EA()			task_0	Always		The system was unable to convert a saved dump to a minidump.
 Microsoft-Windows-WER-SystemErrorReporting	1003	0	Message_0x400003EB()			task_0	Always		Unable to read system shutdown configuration information from the registry.
+Microsoft-Windows-WER-SystemErrorReporting	1003	1	Event_1003_V1()			task_0	Error	System	Unable to read system shutdown configuration information from the registry.
 Microsoft-Windows-WER-SystemErrorReporting	1004	0	Message_0x400003EC()			task_0	Always		Unable to move dump file from the temporary location to the final location.
+Microsoft-Windows-WER-SystemErrorReporting	1004	1	Event_1004_V1()			task_0	Error	System	Unable to move dump file from the temporary location to the final location.
 Microsoft-Windows-WER-SystemErrorReporting	1005	0	Message_0x400003ED()			task_0	Always		Unable to produce a minidump file from the full dump file.
+Microsoft-Windows-WER-SystemErrorReporting	1005	1	Event_1005_V1()			task_0	Error	System	Unable to produce a minidump file from the full dump file.
 Microsoft-Windows-WER-SystemErrorReporting	1006	0	Message_0x400003EE()			task_0	Always		The computer has rebooted from a bugcheck.  A dump was not saved.
+Microsoft-Windows-WER-SystemErrorReporting	1006	1	Event_1006_V1()			task_0	Error	System	The computer has rebooted from a bugcheck.  A dump was not saved.
 Microsoft-Windows-WER-SystemErrorReporting	1007	0	Message_0x400003EF()			task_0	Always		Error reporting was unable to report the bugcheck.
 Microsoft-Windows-WER-SystemErrorReporting	1008	0	Message_0x400003F0()			task_0	Always		Error reporting was unable to report a dirty shutdown.
 Microsoft-Windows-WER-SystemErrorReporting	1009	0	Message_0x400003F1()			task_0	Always		Error reporting was unable to check the paging file for a crash dump.
+Microsoft-Windows-WER-SystemErrorReporting	1009	1	Event_1009_V1()			task_0	Error	System	Error reporting was unable to check the paging file for a crash dump.
 Microsoft-Windows-WER-SystemErrorReporting	1010	0	Message_0x400003F2()			task_0	Always		Error reporting was unable to check the paging file for a crash dump.
+Microsoft-Windows-WER-SystemErrorReporting	1010	1	Event_1010_V1()			task_0	Error	System	Error reporting was unable to check the paging file for a crash dump.
 Microsoft-Windows-WER-SystemErrorReporting	1011	0	Message_0x400003F3()			task_0	Always		Error reporting was unable to read the CrashControl settings.
+Microsoft-Windows-WER-SystemErrorReporting	1011	1	Event_1011_V1()			task_0	Error	System	Error reporting was unable to read the CrashControl settings.
 Microsoft-Windows-WER-SystemErrorReporting	1012	0	Message_0x400003F4()			task_0	Always		Error reporting was unable to create a crash dump file as a previous crash dump file already exists.
+Microsoft-Windows-WER-SystemErrorReporting	1012	1	Event_1012_V1()			task_0	Error	System	Error reporting was unable to create a crash dump file as a previous crash dump file already exists.
 Microsoft-Windows-WER-SystemErrorReporting	1013	0	Message_0x400003F5()			task_0	Always		Error reporting was unable to query volume information while creating a crash dump file.
+Microsoft-Windows-WER-SystemErrorReporting	1013	1	Event_1013_V1()			task_0	Error	System	Error reporting was unable to query volume information while creating a crash dump file.
 Microsoft-Windows-WER-SystemErrorReporting	1014	0	Message_0x400003F6()			task_0	Always		Error reporting ran out of memory while creating a crash dump file.
+Microsoft-Windows-WER-SystemErrorReporting	1014	1	Event_1014_V1()			task_0	Error	System	Error reporting ran out of memory while creating a crash dump file.
 Microsoft-Windows-WER-SystemErrorReporting	1015	0	Message_0x400003F7()			task_0	Always		Error reporting was unable to create a temporary file to hold the crash dump.
+Microsoft-Windows-WER-SystemErrorReporting	1015	1	Event_1015_V1()			task_0	Error	System	Error reporting was unable to create a temporary file to hold the crash dump.
 Microsoft-Windows-WER-SystemErrorReporting	1016	0	Message_0x400003F8()			task_0	Always		Error reporting ran out of disk space while creating a crash dump file.
+Microsoft-Windows-WER-SystemErrorReporting	1016	1	Event_1016_V1()			task_0	Error	System	Error reporting ran out of disk space while creating a crash dump file.
 Microsoft-Windows-WER-SystemErrorReporting	1017	0	Message_0x400003F9()			task_0	Always		Error reporting was unable to copy a crash dump from the paging file.
+Microsoft-Windows-WER-SystemErrorReporting	1017	1	Event_1017_V1()			task_0	Error	System	Error reporting was unable to copy a crash dump from the paging file.
 Microsoft-Windows-WER-SystemErrorReporting	1018	0	Message_0x400003FA(UnicodeString param1, UnicodeString param2)			task_0	Always		The dump file at location: %1 was deleted because the disk volume had less than %2 GB free space.
+Microsoft-Windows-WER-SystemErrorReporting	1018	1	Event_1018_V1(UnicodeString param1, UnicodeString param2)			task_0	Informational	System	The dump file at location: %1 was deleted because the disk volume had less than %2 GB free space.
+Microsoft-Windows-WER-SystemErrorReporting	1019	0	Message_0x400003FB(UnicodeString SuspectedDriver)			task_0	Always		The computer has rebooted from a bugcheck.  Potentially related driver: %1.
+Microsoft-Windows-WER-SystemErrorReporting	1019	1	Event_1019_V1(UnicodeString SuspectedDriver)			task_0	Error	System	The computer has rebooted from a bugcheck.  Possibly related driver: %1.

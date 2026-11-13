@@ -121,12 +121,15 @@ Microsoft-Windows-SENSE	126	0	Event_126(HexInt32 HRESULT)			task_0	Error	Microso
 Microsoft-Windows-SENSE	127	0	Event_127(HexInt32 HRESULT)			task_0	Error	Microsoft-Windows-SENSE/Operational	Windows Defender Advanced Threat Protection Dlp Processor executable failed to start. Failure code: %1
 Microsoft-Windows-SENSE	128	0	Event_128()			task_0	Informational	Microsoft-Windows-SENSE/Operational	Windows Defender Advanced Threat Protection Dlp Processor executable has started
 Microsoft-Windows-SENSE	129	0	Event_129()			task_0	Informational	Microsoft-Windows-SENSE/Operational	Windows Defender Advanced Threat Protection Dlp Processor executable has ended
-Microsoft-Windows-SENSE	130	0	Event_130(UnicodeString CommandType, UnicodeString PolicyHash, UInt64 TimeStamp)			task_0	Informational	Microsoft-Windows-SENSE/Operational	Received DLP policy type: %1. Policy Hash: %2
-Microsoft-Windows-SENSE	131	0	Event_131(UnicodeString CommandType, UnicodeString PolicyHash, UInt64 TimeStamp)			task_0	Informational	Microsoft-Windows-SENSE/Operational	Completed processing DLP policy type: %1. Policy Hash: %2
-Microsoft-Windows-SENSE	132	0	Event_132(UnicodeString CommandType, UnicodeString PolicyHash, UInt64 TimeStamp, HexInt32 HRESULT, UnicodeString ErrorMessage)			task_0	Error	Microsoft-Windows-SENSE/Operational	Failed to process DLP policy type: %1. Policy Hash: %2, Exception: %4 [%5]
-Microsoft-Windows-SENSE	133	0	Event_133(UnicodeString CommandType, UInt64 TimeStamp)			task_0	Informational	Microsoft-Windows-SENSE/Operational	Ignore DLP policy type: %1 due to Data Loss Prevention feature currently disabled.
+Microsoft-Windows-SENSE	130	0	Event_130(UnicodeString CommandType, UnicodeString PolicyHash, UInt64 TimeStamp)			task_0	Informational	Microsoft-Windows-SENSE/Operational	Received DLP policy type: %1. Policy Hash: %2, Timestamp: %3
+Microsoft-Windows-SENSE	131	0	Event_131(UnicodeString CommandType, UnicodeString PolicyHash, UInt64 TimeStamp)			task_0	Informational	Microsoft-Windows-SENSE/Operational	Completed processing DLP policy type: %1. Policy Hash: %2, Timestamp: %3
+Microsoft-Windows-SENSE	132	0	Event_132(UnicodeString CommandType, UnicodeString PolicyHash, UInt64 TimeStamp, HexInt32 HRESULT, UnicodeString ErrorMessage)			task_0	Error	Microsoft-Windows-SENSE/Operational	Failed to process DLP policy type: %1. Policy Hash: %2, Timestamp: %3. Exception: %4 [%5]
+Microsoft-Windows-SENSE	133	0	Event_133(UnicodeString CommandType, UInt64 TimeStamp)			task_0	Informational	Microsoft-Windows-SENSE/Operational	Ignore DLP policy type: %1 at %2 due to Data Loss Prevention feature currently disabled.
 Microsoft-Windows-SENSE	134	0	Event_134(UnicodeString BlobSha256)			task_0	Warning	Microsoft-Windows-SENSE/Operational	Offboarding blob is revoked via configuration. Blob Sha 256: %1.
 Microsoft-Windows-SENSE	135	0	Event_135(UnicodeString BlobEpoch, UnicodeString BlobSha256)			task_0	Error	Microsoft-Windows-SENSE/Operational	Offboarding is blocked for blob with Epoch: %1 , BlobSha256: %2.
+Microsoft-Windows-SENSE	136	0	Event_136(HexInt32 HRESULT)			task_0	Error	Microsoft-Windows-SENSE/Operational	Windows Defender Advanced Threat Protection Dlp Classification Host executable failed to start. Failure code: %1
+Microsoft-Windows-SENSE	137	0	Event_137()			task_0	Informational	Microsoft-Windows-SENSE/Operational	Windows Defender Advanced Threat Protection Dlp Classification Host executable has started
+Microsoft-Windows-SENSE	138	0	Event_138()			task_0	Informational	Microsoft-Windows-SENSE/Operational	Windows Defender Advanced Threat Protection Dlp Classification Host executable has ended
 Microsoft-Windows-SENSE	307	0	Event_307(HexInt32 HRESULT)			task_0	Error	Microsoft-Windows-SENSE/Operational	Failed to update driver permissions Failure code: %1
 Microsoft-Windows-SENSE	308	0	Event_308(UnicodeString Message1, HexInt32 HRESULT)			task_0	Error	Microsoft-Windows-SENSE/Operational	Failed to ACL on Folder %1 Failure code: %2
 Microsoft-Windows-SENSE	309	0	Event_309(UInt32 UInt1, UnicodeString Message1, UnicodeString providerName)			task_0	Error	Microsoft-Windows-SENSE/Operational	Windows Defender Advanced Threat Protection Network Detection and Response failed to subscribe to event id %1 of event log channel: %2, with provider: %3. Event data will not be collected until next reboot.
@@ -196,3 +199,7 @@ Microsoft-Windows-SENSE	1840	0	Event_1840(UInt32 requestedValue, UInt32 minimumA
 Microsoft-Windows-SENSE	1841	0	Event_1841(UnicodeString Message1, Boolean Boolean1)			task_0	Verbose	Microsoft-Windows-SENSE/Operational	CSP: Get AadDeviceId complete. Value: (%1), IsDefault: (%2).
 Microsoft-Windows-SENSE	1842	0	Event_1842(UnicodeString Message1, HexInt32 HRESULT)			task_0	Verbose	Microsoft-Windows-SENSE/Operational	CSP: Set AadDeviceId complete. Value: (%1), Result: (%2).
 Microsoft-Windows-SENSE	1843	0	Event_1843(UInt32 UInt1, UInt32 UInt2)			task_0	Error	Microsoft-Windows-SENSE/Operational	CSP: Set AadDeviceId exceeded allowed limit. Allowed: (%1), Actual: (%2).
+Microsoft-Windows-SENSE	2001	0	Event_2001(UnicodeString parameter)			task_0	Warning	Microsoft-Windows-SENSE/Operational	SenseCM: %1
+Microsoft-Windows-SENSE	2002	0	Event_2002(UnicodeString parameter)			task_0	Informational	Microsoft-Windows-SENSE/Operational	Info: %1
+Microsoft-Windows-SENSE	2003	0	Event_2003(UnicodeString parameter)			task_0	Warning	Microsoft-Windows-SENSE/Operational	Warning: %1
+Microsoft-Windows-SENSE	2004	0	Event_2004(UnicodeString parameter)			task_0	Error	Microsoft-Windows-SENSE/Operational	Error: %1

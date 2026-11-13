@@ -1,0 +1,14 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-I3C-HIDI3C	1000	0	HIDI3C_Enumeration(UnicodeString DeviceInstanceId, UInt32 Status)			HIDI3C_Enumeration	Informational		<ERROR_MUI_FILE_NOT_LOADED>
+Microsoft-Windows-I3C-HIDI3C	1001	0	HIDI3C_Enumeration1001(UnicodeString DeviceInstanceId, UInt32 Status)			HIDI3C_Enumeration	Error		<ERROR_MUI_FILE_NOT_LOADED>
+Microsoft-Windows-I3C-HIDI3C	1002	0	HIDI3C_Enumeration1002(UnicodeString DeviceInstanceId, UInt32 Status)			HIDI3C_Enumeration	Error		<ERROR_MUI_FILE_NOT_LOADED>
+Microsoft-Windows-I3C-HIDI3C	1011	0	HIDI3C_IOStart(UnicodeString DeviceInstanceId, Pointer IoTarget, Pointer IbiRequest)	Start	IBI	HIDI3C_IO	Verbose		<ERROR_MUI_FILE_NOT_LOADED>
+Microsoft-Windows-I3C-HIDI3C	1012	0	HIDI3C_IOIoI3cIbiReceived(UnicodeString DeviceInstanceId, Pointer IoTarget, Pointer IbiRequest)	IoI3cIbiReceived	IBI	HIDI3C_IO	Verbose		<ERROR_MUI_FILE_NOT_LOADED>
+Microsoft-Windows-I3C-HIDI3C	1013	0	HIDI3C_IOStop(UnicodeString DeviceInstanceId, Pointer IoTarget, Pointer IbiRequest)	Stop	IBI	HIDI3C_IO	Verbose		<ERROR_MUI_FILE_NOT_LOADED>
+Microsoft-Windows-I3C-HIDI3C	1020	0	HIDI3C_Command(UnicodeString DeviceInstanceId, UInt8 PowerState)			HIDI3C_Command	Informational		<ERROR_MUI_FILE_NOT_LOADED>
+Microsoft-Windows-I3C-HIDI3C	1022	0	HIDI3C_Command1022(UnicodeString DeviceInstanceId, UInt32 LikelyFailureReason, UInt8 PowerState, UInt32 Status)			HIDI3C_Command	Error		<ERROR_MUI_FILE_NOT_LOADED>
+Microsoft-Windows-I3C-HIDI3C	1031	0	HIDI3C_IOStart1031(UnicodeString DeviceInstanceId, Pointer IoTarget, Pointer ResetNotifRequest)	Start	ResetNotif	HIDI3C_IO	Verbose		<ERROR_MUI_FILE_NOT_LOADED>
+Microsoft-Windows-I3C-HIDI3C	1032	0	HIDI3C_IOIoI3cResetNotifReceived(UnicodeString DeviceInstanceId, Pointer IoTarget, Pointer ResetNotifRequest)	IoI3cResetNotifReceived	ResetNotif	HIDI3C_IO	Verbose		<ERROR_MUI_FILE_NOT_LOADED>
+Microsoft-Windows-I3C-HIDI3C	1033	0	HIDI3C_IOStop1033(UnicodeString DeviceInstanceId, Pointer IoTarget, Pointer ResetNotifRequest)	Stop	ResetNotif	HIDI3C_IO	Verbose		<ERROR_MUI_FILE_NOT_LOADED>
+Microsoft-Windows-I3C-HIDI3C	1040	0	HIDI3C_Assert(UnicodeString DeviceInstanceId, UInt64 ProvisionedId, UnicodeString AssertMessage)			HIDI3C_Assert	Error		<ERROR_MUI_FILE_NOT_LOADED>
+Microsoft-Windows-I3C-HIDI3C	1041	0	HIDI3C_Assert1041(UnicodeString DeviceInstanceId, UInt64 ProvisionedId, UnicodeString AssertMessage, UInt64 Arg1, UInt64 Arg2)			HIDI3C_Assert	Error		<ERROR_MUI_FILE_NOT_LOADED>

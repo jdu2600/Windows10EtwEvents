@@ -28,6 +28,7 @@ Microsoft-Windows-Wininit	26	0	Event_26(Int32 HRESULT, Boolean BootStlEnforced, 
 Microsoft-Windows-Wininit	51	0	NtShutdownSystem()		PerfInstrumentation	NtShutdownSystem	Informational	Microsoft-Windows-Wininit/Diagnostic	
 Microsoft-Windows-Wininit	53	0	SentLogoffRequest(UInt32 SessionId, UInt32 Flags)		PerfInstrumentation	SentLogoffRequest	Informational	Microsoft-Windows-Wininit/Diagnostic	
 Microsoft-Windows-Wininit	55	0	ReceivedShutdownRequest(UInt32 SessionId, UInt32 IsRemote, UInt32 GracePeriod, UInt32 Flags, UInt32 Reason, UnicodeString Message)		PerfInstrumentation	ReceivedShutdownRequest	Informational	Microsoft-Windows-Wininit/Diagnostic	
+Microsoft-Windows-Wininit	100	0	Event_100()			task_0	Informational	System	Hybrid shutdown has been overridden by a disk check request. The system will perform a full shutdown instead.
 Microsoft-Windows-Wininit	1001	0	Message_0x400003E9()			task_0	Always		%1
 Microsoft-Windows-Wininit	1015	0	Message_0xC00003F7()			task_0	Always		A critical system process, %1, failed with status code %2.  The machine must now be restarted.
 Microsoft-Windows-Wininit	3002	0	Message_0xC0000BBA()			task_0	Always		Windows start-up process has unexpectedly terminated.
@@ -35,5 +36,6 @@ Microsoft-Windows-Wininit	3003	0	Message_0x80000BBB()			task_0	Always		Windows s
 Microsoft-Windows-Wininit	3004	0	Message_0x80000BBC()			task_0	Always		Windows start-up process has failed to synchronize with the local security subsystem during setup.
 Microsoft-Windows-Wininit	3005	0	Message_0xC0000BBD()			task_0	Always		Windows start-up process has failed to terminate system processes.
 Microsoft-Windows-Wininit	3006	0	Message_0xC0000BBE()			task_0	Always		Windows shudown failed with error code %1 in phase: %2.
+Microsoft-Windows-Wininit	3007	0	Message_0xC0000BBF()			task_0	Always		Windows start-up process failed to launch the Secure Boot update worker, %1. Command line: %2.
 Microsoft-Windows-Wininit	6001	0	ShutdownDiagnosticsStart(UInt32 Flags)	Start	PerfInstrumentation PerfDiagnostics	ShutdownDiagnostics	Informational	Microsoft-Windows-Wininit/Diagnostic	
 Microsoft-Windows-Wininit	6002	1	PerfTrackFullShutdown_V1(UInt32 ShutdownFlags, UInt64 SystemShutdownDuration, UInt32 SkuHasLogoff)		PerfInstrumentation	PerfTrackFullShutdown	Informational	Microsoft-Windows-Wininit/Diagnostic	

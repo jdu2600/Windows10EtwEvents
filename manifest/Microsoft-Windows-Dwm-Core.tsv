@@ -332,3 +332,11 @@ Microsoft-Windows-Dwm-Core	478	0	FlipAwayFenceCreate(UInt64 fenceId, UInt64 disp
 Microsoft-Windows-Dwm-Core	479	0	FlipAwayFenceDestroy(UInt64 fenceId)		Composition	FlipAwayFenceDestroy	Informational	Microsoft-Windows-Dwm-Core/Diagnostic	
 Microsoft-Windows-Dwm-Core	480	0	IssuePlaneFlipAwaySignal(UInt32 planeIndex, UInt64 fenceId, UInt64 signalValue)		Composition	IssuePlaneFlipAwaySignal	Informational	Microsoft-Windows-Dwm-Core/Diagnostic	
 Microsoft-Windows-Dwm-Core	481	0	D2DBitmapFastCrossAdapterCopy(UInt32 UpdateLeft, UInt32 UpdateTop, UInt32 UpdateRight, UInt32 UpdateBottom, UInt64 sourceAdapterLuid, UInt64 destAdapterLuid)		Composition	D2DBitmapFastCrossAdapterCopy	Informational	Microsoft-Windows-Dwm-Core/Diagnostic	
+Microsoft-Windows-Dwm-Core	500	0	CURSOR_HARDWARE_VISIBLE(UInt64 adapterLuid, UInt32 vidPnSourceId)		Cursor	CURSOR_HARDWARE_VISIBLE	Verbose	Microsoft-Windows-Dwm-Core/Diagnostic	
+Microsoft-Windows-Dwm-Core	501	0	CURSOR_SOFTWARE_VISIBLE(UInt64 adapterLuid, UInt32 vidPnSourceId, UInt32 Reason)		Cursor	CURSOR_SOFTWARE_VISIBLE	Verbose	Microsoft-Windows-Dwm-Core/Diagnostic	
+Microsoft-Windows-Dwm-Core	502	0	CURSOR_HIDDEN(UInt64 adapterLuid, UInt32 vidPnSourceId)		Cursor	CURSOR_HIDDEN	Verbose	Microsoft-Windows-Dwm-Core/Diagnostic	
+Microsoft-Windows-Dwm-Core	503	0	CURSOR_MONITOR_TRACKED(UInt64 adapterLuid, UInt32 vidPnSourceId)		Cursor	CURSOR_MONITOR_TRACKED	Verbose	Microsoft-Windows-Dwm-Core/Diagnostic	
+Microsoft-Windows-Dwm-Core	504	0	CURSOR_MONITOR_UNTRACKED(UInt64 adapterLuid, UInt32 vidPnSourceId)		Cursor	CURSOR_MONITOR_UNTRACKED	Verbose	Microsoft-Windows-Dwm-Core/Diagnostic	
+Microsoft-Windows-Dwm-Core	505	0	CURSOR_SHAPE_CHANGED(UInt32 Width, UInt32 Height, Boolean IsColorMask, Boolean Cleared)		Cursor	CURSOR_SHAPE_CHANGED	Verbose	Microsoft-Windows-Dwm-Core/Diagnostic	
+Microsoft-Windows-Dwm-Core	506	0	CURSOR_SYNCHRONIZED_CHANGED(Boolean IsSynchronized)		Cursor	CURSOR_SYNCHRONIZED_CHANGED	Verbose	Microsoft-Windows-Dwm-Core/Diagnostic	
+Microsoft-Windows-Dwm-Core	507	0	CURSOR_DESKTOP_VISIBILITY_CHANGED(UInt64 adapterLuid, UInt32 vidPnSourceId, Boolean VisibleOnDesktop)		Cursor	CURSOR_DESKTOP_VISIBILITY_CHANGED	Verbose	Microsoft-Windows-Dwm-Core/Diagnostic	

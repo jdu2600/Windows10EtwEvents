@@ -319,7 +319,7 @@ Microsoft-Windows-Search-Core	317	0	Prioritization_Request(UInt64 RequestID, UIn
 Microsoft-Windows-Search-Core	318	0	Prioritization_Complete(UInt64 RequestID, UInt32 Priority, UInt32 Indexed, UInt32 OutstandingAdds, UInt32 OutstandingModifies)		IndexingItem Gatherer	Prioritization_Complete	Informational	Microsoft-Windows-Search-Core/Diagnostic	
 Microsoft-Windows-Search-Core	319	0	Prioritization_Statistics(UInt64 RequestID, UInt32 Priority, UInt32 Indexed, UInt32 OutstandingAdds, UInt32 OutstandingModifies)		IndexingItem Gatherer	Prioritization_Statistics	Informational	Microsoft-Windows-Search-Core/Diagnostic	
 Microsoft-Windows-Search-Core	320	0	JET_IO_Low_Priority_Change(UInt32 hr, Boolean Value)		Performance Service PropStorePI	JET_IO_Low_Priority_Change	Informational	Microsoft-Windows-Search-Core/Diagnostic	
-Microsoft-Windows-Search-Core	321	0	Gather_Transaction_Failure_Code(UInt32 Status, UnicodeString URL, UInt32 DocID, UInt32 hr)		IndexingItem Gatherer	Gather_Transaction_Failure_Code	Informational	Microsoft-Windows-Search-Core/Diagnostic	
+Microsoft-Windows-Search-Core	321	0	Gather_Transaction_Failure_Code(UInt32 Status, UnicodeString URL, UInt32 DocID, UInt32 hr, UInt32 Passes)		IndexingItem Gatherer	Gather_Transaction_Failure_Code	Informational	Microsoft-Windows-Search-Core/Diagnostic	
 Microsoft-Windows-Search-Core	322	0	ETWLogging(UnicodeString Info)		Indexing	ETWLogging	Informational	Microsoft-Windows-Search-Core/Diagnostic	
 Microsoft-Windows-Search-Core	323	0	ETWLoggingFailure(UInt32 Hr, UnicodeString Info)		Indexing	ETWLoggingFailure	Informational	Microsoft-Windows-Search-Core/Diagnostic	
 Microsoft-Windows-Search-Core	324	0	ETWLoggingItem(UInt32 DocID, UnicodeString URL, UnicodeString Info)		Indexing	ETWLoggingItem	Informational	Microsoft-Windows-Search-Core/Diagnostic	
@@ -369,3 +369,7 @@ Microsoft-Windows-Search-Core	367	0	ScopeChangeNotification_RegisterStart(Unicod
 Microsoft-Windows-Search-Core	368	0	ScopeChangeNotification_RegisterStop()	Stop		ScopeChangeNotification_Register	Informational	Microsoft-Windows-Search-Core/Diagnostic	
 Microsoft-Windows-Search-Core	369	0	ScopeChangeNotification_UnregisterStart(UnicodeString UserSid, UnicodeString PackageFamilyName, GUID EventId)	Start		ScopeChangeNotification_Unregister	Informational	Microsoft-Windows-Search-Core/Diagnostic	
 Microsoft-Windows-Search-Core	370	0	ScopeChangeNotification_UnregisterStop()	Stop		ScopeChangeNotification_Unregister	Informational	Microsoft-Windows-Search-Core/Diagnostic	
+Microsoft-Windows-Search-Core	371	0	Gather_CatalogCreator_CreateFailed(UInt32 hr, UnicodeString Message)		Service	Gather_CatalogCreator_CreateFailed	Error	Microsoft-Windows-Search-Core/Diagnostic	
+Microsoft-Windows-Search-Core	372	0	Gather_InitNew_Failed(UInt32 hr, UnicodeString Message)		Service	Gather_InitNew_Failed	Error	Microsoft-Windows-Search-Core/Diagnostic	
+Microsoft-Windows-Search-Core	373	0	Gather_InitializeNew_Failed(UInt32 hr, UnicodeString Message)		Service	Gather_InitializeNew_Failed	Error	Microsoft-Windows-Search-Core/Diagnostic	
+Microsoft-Windows-Search-Core	374	0	USN_Journal_Size_Scaled(UnicodeString Volume, UInt64 DiskCapacityBytes, UInt32 OriginalSizeBytes, UInt32 ScaledSizeBytes)		USN	USN_Journal_Size_Scaled	Informational	Microsoft-Windows-Search-Core/Diagnostic	

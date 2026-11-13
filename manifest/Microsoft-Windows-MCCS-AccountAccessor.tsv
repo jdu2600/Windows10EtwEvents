@@ -1,15 +1,12 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-MCCS-AccountAccessor	1	0	Event_1(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		Error keyword_200000000000	task_0	Error		Error: %1 Location: %2 Line Number: %3
+Microsoft-Windows-MCCS-AccountAccessor	1	0	Event_1(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		Error	task_0	Error		Error: %1 Location: %2 Line Number: %3
 Microsoft-Windows-MCCS-AccountAccessor	2	0	Event_2(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		Warning	task_0	Warning		Error Propagated: %1 Location: %2 Line Number: %3
 Microsoft-Windows-MCCS-AccountAccessor	100	0	SPERF_TAG_AA_LOADStart()	Start	Performance	SPERF_TAG_AA_LOAD	Informational		
 Microsoft-Windows-MCCS-AccountAccessor	101	0	SPERF_TAG_AA_LOADStop()	Stop	Performance	SPERF_TAG_AA_LOAD	Informational		
 Microsoft-Windows-MCCS-AccountAccessor	102	0	SPERF_TAG_AA_SAVEStart()	Start	Performance	SPERF_TAG_AA_SAVE	Informational		
 Microsoft-Windows-MCCS-AccountAccessor	103	0	SPERF_TAG_AA_SAVEStop()	Stop	Performance	SPERF_TAG_AA_SAVE	Informational		
-Microsoft-Windows-MCCS-AccountAccessor	104	0	SPERF_TAG_AA_PROCESSStart()	Start	Performance	SPERF_TAG_AA_PROCESS	Informational		
-Microsoft-Windows-MCCS-AccountAccessor	105	0	SPERF_TAG_AA_PROCESSStop()	Stop	Performance	SPERF_TAG_AA_PROCESS	Informational		
-Microsoft-Windows-MCCS-AccountAccessor	151	0	Event_151(HexInt32 P1_Dword, Boolean P2_Boolean)		StateTransition keyword_400000000000	task_0	Informational		Being called to delete account %1, Is remote: %2.
+Microsoft-Windows-MCCS-AccountAccessor	151	0	Event_151(HexInt32 P1_Dword, Boolean P2_Boolean)		StateTransition	task_0	Informational		Being called to delete account %1, Is remote: %2.
 Microsoft-Windows-MCCS-AccountAccessor	201	0	Event_201(HexInt32 P1_Dword)		Error	task_0	Error		Missing property %1 in PopImap account creation
 Microsoft-Windows-MCCS-AccountAccessor	202	0	Event_202(HexInt32 P1_Dword)		Error	task_0	Error		Should not delete property %1 in PopImap account modification
 Microsoft-Windows-MCCS-AccountAccessor	221	0	Event_221(HexInt32 P1_Dword)		StateTransition	task_0	Informational		PopImapAccountAccessor: Filling in default Dav info for account %1
-Microsoft-Windows-MCCS-AccountAccessor	401	0	Event_401()		StateTransition	task_0	Informational		Trying to handle postponed set of conversation sync when creating account
 Microsoft-Windows-MCCS-AccountAccessor	402	0	Event_402()		StateTransition	task_0	Informational		CreateDefaultWindowsLiveAccount called.

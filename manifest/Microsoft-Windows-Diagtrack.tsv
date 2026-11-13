@@ -14,9 +14,8 @@ Microsoft-Windows-Diagtrack	602	0	ScenarioManager_InvalidScenario(GUID ScenarioI
 Microsoft-Windows-Diagtrack	603	0	ScenarioManager_LoadingScenariosStart()		DiagTrackStatus	ScenarioManager_LoadingScenariosStart	Informational		
 Microsoft-Windows-Diagtrack	606	0	ScenarioManager_LoadingScenariosStop(UInt32 HRESULT)		DiagTrackStatus	ScenarioManager_LoadingScenariosStop	Informational		
 Microsoft-Windows-Diagtrack	700	0	DTSQMLogger_UploadScenario(GUID ScenarioId, GUID ScenarioInstanceId, UInt32 HRESULT)		DiagTrackStatus	DTSQMLogger_UploadScenario	Informational		
-Microsoft-Windows-Diagtrack	702	0	DTSQMLogger_SQMSingleInfoStreamRow(GUID ScenarioId, GUID ScenarioInstanceId, UInt32 SiteCode, UInt32 Severity, UInt32 ErrorValue, UnicodeString Message)		DiagTrackTrace	DTSQMLogger_SQMSingleInfoStreamRow	Informational		
 Microsoft-Windows-Diagtrack	752	0	AsimovUploader_AddEvent(AnsiString EventPayload)		DiagTrackStatus	AsimovUploader_AddEvent	Informational		
-Microsoft-Windows-Diagtrack	755	0	AsimovUploader_PersistEvent(UnicodeString EventPayload, Int16 EventLatency, Int16 EventPersistence)		DiagTrackStatus	AsimovUploader_PersistEvent	Informational		
+Microsoft-Windows-Diagtrack	755	1	AsimovUploader_PersistEvent_V1(UnicodeString EventPayload, Int16 EventLatency, Int16 EventPersistence, GUID GroupId, GUID ProviderId, UInt64 Categories, Boolean IsCore, UInt32 ProcessId)		DiagTrackStatus	AsimovUploader_PersistEvent	Informational		
 Microsoft-Windows-Diagtrack	756	0	AsimovUploader_UploadEventBuffer()		DiagTrackStatus	AsimovUploader_UploadEventBuffer	Informational		
 Microsoft-Windows-Diagtrack	757	0	AsimovUploader_NormalUploadSucceeded()		DiagTrackStatus	AsimovUploader_NormalUploadSucceeded	Informational		
 Microsoft-Windows-Diagtrack	758	0	AsimovUploader_RealtimeUploadSucceeded()		DiagTrackStatus	AsimovUploader_RealtimeUploadSucceeded	Informational		

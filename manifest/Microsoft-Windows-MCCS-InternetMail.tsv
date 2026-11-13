@@ -1,29 +1,29 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-MCCS-InternetMail	1	0	Event_1(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		Error keyword_400000000000	task_0	Error		Error: %1 Location: %2 Line Number: %3
+Microsoft-Windows-MCCS-InternetMail	1	0	Event_1(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		Error	task_0	Error		Error: %1 Location: %2 Line Number: %3
 Microsoft-Windows-MCCS-InternetMail	2	0	Event_2(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		Warning	task_0	Warning		Error Propagated: %1 Location: %2 Line Number: %3
-Microsoft-Windows-MCCS-InternetMail	101	0	Event_101(AnsiString Prop_String)		Error keyword_400000000000	task_0	Error		Invalid IMAP Server response: Server response = %1
-Microsoft-Windows-MCCS-InternetMail	102	0	Event_102(AnsiString Prop_String, AnsiString Prop_String2)		Warning keyword_200000000000	task_0	Warning		Error selecting folder: %1, Server response = %2
-Microsoft-Windows-MCCS-InternetMail	103	0	Event_103(AnsiString Prop_String, AnsiString Prop_String2)		Warning keyword_200000000000	task_0	Warning		%1 authentication failed with mechanism %2
-Microsoft-Windows-MCCS-InternetMail	104	0	Event_104(UInt32 Prop_Hex)		CommsService keyword_200000000000	task_0	Informational		Google: Force enable IMAP on the server side completed. Result %1
-Microsoft-Windows-MCCS-InternetMail	110	0	Event_110(UInt32 Prop_Hex)		CommsService keyword_200000000000	task_0	Informational		IMAP_IDLE: Execute Work invoked. Account Id = %1
-Microsoft-Windows-MCCS-InternetMail	111	0	Event_111(UInt32 Prop_Hex)		CommsService keyword_200000000000	task_0	Informational		IMAP_IDLE: Cancel requested. Account Id = %1
-Microsoft-Windows-MCCS-InternetMail	112	0	Event_112()		CommsService keyword_200000000000	task_0	Informational		IMAP_IDLE: IDLE command sent
-Microsoft-Windows-MCCS-InternetMail	113	0	Event_113()		CommsService keyword_200000000000	task_0	Informational		IMAP_IDLE: IDLE Entered. Waiting for server updates...
-Microsoft-Windows-MCCS-InternetMail	114	0	Event_114()		CommsService keyword_200000000000	task_0	Informational		IMAP_IDLE: DONE command sent
-Microsoft-Windows-MCCS-InternetMail	115	0	Event_115()		CommsService keyword_200000000000	task_0	Informational		IMAP_IDLE: IDLE terminated
-Microsoft-Windows-MCCS-InternetMail	116	0	Event_116(UInt32 Prop_Hex)		CommsService keyword_200000000000	task_0	Informational		IMAP_IDLE: IDLE terminated with error %1
-Microsoft-Windows-MCCS-InternetMail	117	0	Event_117()		CommsService keyword_200000000000	task_0	Informational		IMAP_IDLE: Execute Work returns
-Microsoft-Windows-MCCS-InternetMail	118	0	Event_118(UInt32 Prop_Uint)		CommsService keyword_200000000000	task_0	Informational		IMAP_IDLE: Server Update received. Type %1
-Microsoft-Windows-MCCS-InternetMail	119	0	Event_119(UInt32 Prop_Uint)		CommsService keyword_200000000000	task_0	Informational		IMAP_IDLE: Server Update received. EXISTS %1
-Microsoft-Windows-MCCS-InternetMail	120	0	Event_120(UInt32 Prop_Uint)		CommsService keyword_200000000000	task_0	Informational		IMAP_IDLE: Server Update received. EXPUNGE %1
-Microsoft-Windows-MCCS-InternetMail	121	0	Event_121(UInt32 Prop_Uint1, UInt32 Prop_Uint2)		CommsService keyword_200000000000	task_0	Informational		IMAP_IDLE: Server Update received. FLAG FETCH %1 Read? %2
-Microsoft-Windows-MCCS-InternetMail	122	0	Event_122()		CommsService keyword_200000000000	task_0	Informational		IMAP_IDLE: Server Update received. OK
-Microsoft-Windows-MCCS-InternetMail	123	0	Event_123()		CommsService keyword_200000000000	task_0	Informational		IMAP_IDLE: Server Update received. ERR / BAD
-Microsoft-Windows-MCCS-InternetMail	124	0	Event_124(UInt32 Prop_Uint)		CommsService keyword_200000000000	task_0	Informational		IMAP_IDLE: Processing Queued Updates. Count %1
-Microsoft-Windows-MCCS-InternetMail	125	0	Event_125()		CommsService keyword_200000000000	task_0	Informational		IMAP_IDLE: Syncing New Messages
-Microsoft-Windows-MCCS-InternetMail	126	0	Event_126()		CommsService keyword_200000000000	task_0	Informational		IMAP_IDLE: Processing Expunge
-Microsoft-Windows-MCCS-InternetMail	127	0	Event_127()		CommsService keyword_200000000000	task_0	Informational		IMAP_IDLE: Processing Flag updates
-Microsoft-Windows-MCCS-InternetMail	128	0	Event_128()		CommsService keyword_200000000000	task_0	Informational		IMAP_IDLE: Resetting sync handler object
+Microsoft-Windows-MCCS-InternetMail	101	0	Event_101(AnsiString Prop_String)		Error	task_0	Error		Invalid IMAP Server response: Server response = %1
+Microsoft-Windows-MCCS-InternetMail	102	0	Event_102(AnsiString Prop_String, AnsiString Prop_String2)		Warning	task_0	Warning		Error selecting folder: %1, Server response = %2
+Microsoft-Windows-MCCS-InternetMail	103	0	Event_103(AnsiString Prop_String, AnsiString Prop_String2)		Warning	task_0	Warning		%1 authentication failed with mechanism %2
+Microsoft-Windows-MCCS-InternetMail	104	0	Event_104(UInt32 Prop_Hex)		CommsService	task_0	Informational		Google: Force enable IMAP on the server side completed. Result %1
+Microsoft-Windows-MCCS-InternetMail	110	0	Event_110(UInt32 Prop_Hex)		CommsService	task_0	Informational		IMAP_IDLE: Execute Work invoked. Account Id = %1
+Microsoft-Windows-MCCS-InternetMail	111	0	Event_111(UInt32 Prop_Hex)		CommsService	task_0	Informational		IMAP_IDLE: Cancel requested. Account Id = %1
+Microsoft-Windows-MCCS-InternetMail	112	0	Event_112()		CommsService	task_0	Informational		IMAP_IDLE: IDLE command sent
+Microsoft-Windows-MCCS-InternetMail	113	0	Event_113()		CommsService	task_0	Informational		IMAP_IDLE: IDLE Entered. Waiting for server updates...
+Microsoft-Windows-MCCS-InternetMail	114	0	Event_114()		CommsService	task_0	Informational		IMAP_IDLE: DONE command sent
+Microsoft-Windows-MCCS-InternetMail	115	0	Event_115()		CommsService	task_0	Informational		IMAP_IDLE: IDLE terminated
+Microsoft-Windows-MCCS-InternetMail	116	0	Event_116(UInt32 Prop_Hex)		CommsService	task_0	Informational		IMAP_IDLE: IDLE terminated with error %1
+Microsoft-Windows-MCCS-InternetMail	117	0	Event_117()		CommsService	task_0	Informational		IMAP_IDLE: Execute Work returns
+Microsoft-Windows-MCCS-InternetMail	118	0	Event_118(UInt32 Prop_Uint)		CommsService	task_0	Informational		IMAP_IDLE: Server Update received. Type %1
+Microsoft-Windows-MCCS-InternetMail	119	0	Event_119(UInt32 Prop_Uint)		CommsService	task_0	Informational		IMAP_IDLE: Server Update received. EXISTS %1
+Microsoft-Windows-MCCS-InternetMail	120	0	Event_120(UInt32 Prop_Uint)		CommsService	task_0	Informational		IMAP_IDLE: Server Update received. EXPUNGE %1
+Microsoft-Windows-MCCS-InternetMail	121	0	Event_121(UInt32 Prop_Uint1, UInt32 Prop_Uint2)		CommsService	task_0	Informational		IMAP_IDLE: Server Update received. FLAG FETCH %1 Read? %2
+Microsoft-Windows-MCCS-InternetMail	122	0	Event_122()		CommsService	task_0	Informational		IMAP_IDLE: Server Update received. OK
+Microsoft-Windows-MCCS-InternetMail	123	0	Event_123()		CommsService	task_0	Informational		IMAP_IDLE: Server Update received. ERR / BAD
+Microsoft-Windows-MCCS-InternetMail	124	0	Event_124(UInt32 Prop_Uint)		CommsService	task_0	Informational		IMAP_IDLE: Processing Queued Updates. Count %1
+Microsoft-Windows-MCCS-InternetMail	125	0	Event_125()		CommsService	task_0	Informational		IMAP_IDLE: Syncing New Messages
+Microsoft-Windows-MCCS-InternetMail	126	0	Event_126()		CommsService	task_0	Informational		IMAP_IDLE: Processing Expunge
+Microsoft-Windows-MCCS-InternetMail	127	0	Event_127()		CommsService	task_0	Informational		IMAP_IDLE: Processing Flag updates
+Microsoft-Windows-MCCS-InternetMail	128	0	Event_128()		CommsService	task_0	Informational		IMAP_IDLE: Resetting sync handler object
 Microsoft-Windows-MCCS-InternetMail	200	0	PIPERF_TAG_SYNCSESSION_INITStart()	Start	Performance	PIPERF_TAG_SYNCSESSION_INIT	Informational		InternetMailProvider: [Start Marker] [Init] [PIPERF_TAG_SYNCSESSION_INIT_START] Init the sync session and establish connection etc
 Microsoft-Windows-MCCS-InternetMail	201	0	PIPERF_TAG_SYNCSESSION_INITStop()	Stop	Performance	PIPERF_TAG_SYNCSESSION_INIT	Informational		InternetMailProvider: [Stop Marker] [Init] [PIPERF_TAG_SYNCSESSION_INIT_STOP] Init the sync session and establish connection etc
 Microsoft-Windows-MCCS-InternetMail	202	0	PIPERF_TAG_SYNCSESSION_SMTPINITStart()	Start	Performance	PIPERF_TAG_SYNCSESSION_SMTPINIT	Informational		InternetMailProvider: [Start Marker] [SMTP_Init] [PIPERF_TAG_SYNCSESSION_SMTPINIT_START] Init the sync session and establish connection etc
@@ -34,22 +34,14 @@ Microsoft-Windows-MCCS-InternetMail	206	0	PIPERF_TAG_SYNCSESSION_FDSYNCStart()	S
 Microsoft-Windows-MCCS-InternetMail	207	0	PIPERF_TAG_SYNCSESSION_FDSYNCStop()	Stop	Performance	PIPERF_TAG_SYNCSESSION_FDSYNC	Informational		InternetMailProvider: [Stop Marker] [FdS] [PIPERF_TAG_SYNCSESSION_FDSYNC_STOP] Folder Synchronize
 Microsoft-Windows-MCCS-InternetMail	208	0	PIPERF_TAG_SYNCSESSION_FDSYNCWITHSERVERStart()	Start	Performance	PIPERF_TAG_SYNCSESSION_FDSYNCWITHSERVER	Informational		InternetMailProvider: [Start Marker] [FdSS] [PIPERF_TAG_SYNCSESSION_FDSYNCWITHSERVER_START] Sync folders with server
 Microsoft-Windows-MCCS-InternetMail	209	0	PIPERF_TAG_SYNCSESSION_FDSYNCWITHSERVERStop()	Stop	Performance	PIPERF_TAG_SYNCSESSION_FDSYNCWITHSERVER	Informational		InternetMailProvider: [Stop Marker] [FdSS] [PIPERF_TAG_SYNCSESSION_FDSYNCWITHSERVER_STOP] Sync folders with server
-Microsoft-Windows-MCCS-InternetMail	210	0	PIPERF_TAG_SYNCSESSION_FULLSYNCStart()	Start	Performance keyword_200000000000	PIPERF_TAG_SYNCSESSION_FULLSYNC	Informational		InternetMailProvider: [Start Marker] [FS] [PIPERF_TAG_SYNCSESSION_FULLSYNC_START] Full Synchronize
-Microsoft-Windows-MCCS-InternetMail	211	0	PIPERF_TAG_SYNCSESSION_FULLSYNCStop()	Stop	Performance keyword_200000000000	PIPERF_TAG_SYNCSESSION_FULLSYNC	Informational		InternetMailProvider: [Stop Marker] [FS] [PIPERF_TAG_SYNCSESSION_FULLSYNC_STOP] Full Synchronize
+Microsoft-Windows-MCCS-InternetMail	210	0	PIPERF_TAG_SYNCSESSION_FULLSYNCStart()	Start	Performance	PIPERF_TAG_SYNCSESSION_FULLSYNC	Informational		InternetMailProvider: [Start Marker] [FS] [PIPERF_TAG_SYNCSESSION_FULLSYNC_START] Full Synchronize
+Microsoft-Windows-MCCS-InternetMail	211	0	PIPERF_TAG_SYNCSESSION_FULLSYNCStop()	Stop	Performance	PIPERF_TAG_SYNCSESSION_FULLSYNC	Informational		InternetMailProvider: [Stop Marker] [FS] [PIPERF_TAG_SYNCSESSION_FULLSYNC_STOP] Full Synchronize
 Microsoft-Windows-MCCS-InternetMail	212	0	PIPERF_TAG_SYNCSESSION_CONNECTStart()	Start	Performance	PIPERF_TAG_SYNCSESSION_CONNECT	Informational		InternetMailProvider: [Start Marker] [C] [PIPERF_TAG_SYNCSESSION_CONNECT_START] Connect
 Microsoft-Windows-MCCS-InternetMail	213	0	PIPERF_TAG_SYNCSESSION_CONNECTStop()	Stop	Performance	PIPERF_TAG_SYNCSESSION_CONNECT	Informational		InternetMailProvider: [Stop Marker] [C] [PIPERF_TAG_SYNCSESSION_CONNECT_STOP] Connect
-Microsoft-Windows-MCCS-InternetMail	214	0	PIPERF_TAG_SYNCSESSION_CREATEFOLDERStart()	Start	Performance	PIPERF_TAG_SYNCSESSION_CREATEFOLDER	Informational		InternetMailProvider: [Start Marker] [St_CFld] [PIPERF_TAG_SYNCSESSION_CREATEFOLDER_START] Create folder
-Microsoft-Windows-MCCS-InternetMail	215	0	PIPERF_TAG_SYNCSESSION_CREATEFOLDERStop()	Stop	Performance	PIPERF_TAG_SYNCSESSION_CREATEFOLDER	Informational		InternetMailProvider: [Stop Marker] [St_CFld] [PIPERF_TAG_SYNCSESSION_CREATEFOLDER_STOP] Create folder
-Microsoft-Windows-MCCS-InternetMail	216	0	PIPERF_TAG_SYNCSESSION_RENAMEFOLDERStart()	Start	Performance	PIPERF_TAG_SYNCSESSION_RENAMEFOLDER	Informational		InternetMailProvider: [Start Marker] [St_RFld] [PIPERF_TAG_SYNCSESSION_RENAMEFOLDER_START] Rename folder
-Microsoft-Windows-MCCS-InternetMail	217	0	PIPERF_TAG_SYNCSESSION_RENAMEFOLDERStop()	Stop	Performance	PIPERF_TAG_SYNCSESSION_RENAMEFOLDER	Informational		InternetMailProvider: [Stop Marker] [St_RFld] [PIPERF_TAG_SYNCSESSION_RENAMEFOLDER_STOP] Rename folder
-Microsoft-Windows-MCCS-InternetMail	218	0	PIPERF_TAG_SYNCSESSION_DELETEFOLDERStart()	Start	Performance	PIPERF_TAG_SYNCSESSION_DELETEFOLDER	Informational		InternetMailProvider: [Start Marker] [St_DFld] [PIPERF_TAG_SYNCSESSION_DELETEFOLDER_START] Delete folder
-Microsoft-Windows-MCCS-InternetMail	219	0	PIPERF_TAG_SYNCSESSION_DELETEFOLDERStop()	Stop	Performance	PIPERF_TAG_SYNCSESSION_DELETEFOLDER	Informational		InternetMailProvider: [Stop Marker] [St_DFld] [PIPERF_TAG_SYNCSESSION_DELETEFOLDER_STOP] Delete folder
 Microsoft-Windows-MCCS-InternetMail	220	0	PIPERF_TAG_SYNCSESSION_FETCHMESSAGEStart()	Start	Performance	PIPERF_TAG_SYNCSESSION_FETCHMESSAGE	Informational		InternetMailProvider: [Start Marker] [St_FM] [PIPERF_TAG_SYNCSESSION_FETCHMESSAGE_START] fetch message
 Microsoft-Windows-MCCS-InternetMail	221	0	PIPERF_TAG_SYNCSESSION_FETCHMESSAGEStop()	Stop	Performance	PIPERF_TAG_SYNCSESSION_FETCHMESSAGE	Informational		InternetMailProvider: [Stop Marker] [St_FM] [PIPERF_TAG_SYNCSESSION_FETCHMESSAGE_STOP] fetch message
 Microsoft-Windows-MCCS-InternetMail	222	0	PIPERF_TAG_SYNCSESSION_POSTRECVStart()	Start	Performance	PIPERF_TAG_SYNCSESSION_POSTRECV	Informational		InternetMailProvider: [Start Marker] [St_PR] [PIPERF_TAG_SYNCSESSION_POSTRECV_START] post process received message
 Microsoft-Windows-MCCS-InternetMail	223	0	PIPERF_TAG_SYNCSESSION_POSTRECVStop()	Stop	Performance	PIPERF_TAG_SYNCSESSION_POSTRECV	Informational		InternetMailProvider: [Stop Marker] [St_PR] [PIPERF_TAG_SYNCSESSION_POSTRECV_STOP] post process received message
-Microsoft-Windows-MCCS-InternetMail	224	0	PIPERF_TAG_SYNCSESSION_IMAPTRACKERStart()	Start	Performance	PIPERF_TAG_SYNCSESSION_IMAPTRACKER	Informational		InternetMailProvider: [Start Marker] [St_T] [PIPERF_TAG_SYNCSESSION_IMAPTRACKER_START] Imap tracker message flag write
-Microsoft-Windows-MCCS-InternetMail	225	0	PIPERF_TAG_SYNCSESSION_IMAPTRACKERStop()	Stop	Performance	PIPERF_TAG_SYNCSESSION_IMAPTRACKER	Informational		InternetMailProvider: [Stop Marker] [St_T] [PIPERF_TAG_SYNCSESSION_IMAPTRACKER_STOP] Imap tracker message flag write
 Microsoft-Windows-MCCS-InternetMail	226	0	PIPERF_TAG_SYNCSESSION_FETCHFOLDERLISTStart()	Start	Performance	PIPERF_TAG_SYNCSESSION_FETCHFOLDERLIST	Informational		InternetMailProvider: [Start Marker] [FFL] [PIPERF_TAG_SYNCSESSION_FETCHFOLDERLIST_START] fetch folder list
 Microsoft-Windows-MCCS-InternetMail	227	0	PIPERF_TAG_SYNCSESSION_FETCHFOLDERLISTStop()	Stop	Performance	PIPERF_TAG_SYNCSESSION_FETCHFOLDERLIST	Informational		InternetMailProvider: [Stop Marker] [FFL] [PIPERF_TAG_SYNCSESSION_FETCHFOLDERLIST_STOP] fetch folder list
 Microsoft-Windows-MCCS-InternetMail	228	0	PIPERF_TAG_SYNCSESSION_SENDMESSAGEStart()	Start	Performance	PIPERF_TAG_SYNCSESSION_SENDMESSAGE	Informational		InternetMailProvider: [Start Marker] [SMTP_SM] [PIPERF_TAG_SYNCSESSION_SENDMESSAGE_START] send messages
@@ -64,29 +56,22 @@ Microsoft-Windows-MCCS-InternetMail	236	0	PIPERF_TAG_SOCKET_RECEIVEStart()	Start
 Microsoft-Windows-MCCS-InternetMail	237	0	PIPERF_TAG_SOCKET_RECEIVEStop()	Stop	Performance	PIPERF_TAG_SOCKET_RECEIVE	Informational		InternetMailProvider: [Stop Marker] [NW_R] [PIPERF_TAG_SOCKET_RECEIVE_STOP] socket recv
 Microsoft-Windows-MCCS-InternetMail	238	0	PIPERF_TAG_SOCKET_SENDStart()	Start	Performance	PIPERF_TAG_SOCKET_SEND	Informational		InternetMailProvider: [Start Marker] [NW_S] [PIPERF_TAG_SOCKET_SEND_START] socket send
 Microsoft-Windows-MCCS-InternetMail	239	0	PIPERF_TAG_SOCKET_SENDStop()	Stop	Performance	PIPERF_TAG_SOCKET_SEND	Informational		InternetMailProvider: [Stop Marker] [NW_S] [PIPERF_TAG_SOCKET_SEND_STOP] socket send
-Microsoft-Windows-MCCS-InternetMail	240	0	PIPERF_TAG_SOCKET_OPTIONSStart()	Start	Performance	PIPERF_TAG_SOCKET_OPTIONS	Informational		InternetMailProvider: [Start Marker] [NW_Opt] [PIPERF_TAG_SOCKET_OPTIONS_START] socket set options
-Microsoft-Windows-MCCS-InternetMail	241	0	PIPERF_TAG_SOCKET_OPTIONSStop()	Stop	Performance	PIPERF_TAG_SOCKET_OPTIONS	Informational		InternetMailProvider: [Stop Marker] [NW_Opt] [PIPERF_TAG_SOCKET_OPTIONS_STOP] socket set options
 Microsoft-Windows-MCCS-InternetMail	242	0	PIPERF_TAG_SOCKET_CLOSEStart()	Start	Performance	PIPERF_TAG_SOCKET_CLOSE	Informational		InternetMailProvider: [Start Marker] [NW_Clo] [PIPERF_TAG_SOCKET_CLOSE_START] socket close
 Microsoft-Windows-MCCS-InternetMail	243	0	PIPERF_TAG_SOCKET_CLOSEStop()	Stop	Performance	PIPERF_TAG_SOCKET_CLOSE	Informational		InternetMailProvider: [Stop Marker] [NW_Clo] [PIPERF_TAG_SOCKET_CLOSE_STOP] socket close
-Microsoft-Windows-MCCS-InternetMail	244	0	PIPERF_TAG_SOCKET_VERIFYCERTStart()	Start	Performance	PIPERF_TAG_SOCKET_VERIFYCERT	Informational		InternetMailProvider: [Start Marker] [NW_VC] [PIPERF_TAG_SOCKET_VERIFYCERT_START] socket verify certificate
-Microsoft-Windows-MCCS-InternetMail	245	0	PIPERF_TAG_SOCKET_VERIFYCERTStop()	Stop	Performance	PIPERF_TAG_SOCKET_VERIFYCERT	Informational		InternetMailProvider: [Stop Marker] [NW_VC] [PIPERF_TAG_SOCKET_VERIFYCERT_STOP] socket verify certificate
-Microsoft-Windows-MCCS-InternetMail	246	0	PIPERF_TAG_SOCKET_STORECERTStart()	Start	Performance	PIPERF_TAG_SOCKET_STORECERT	Informational		InternetMailProvider: [Start Marker] [NW_SC] [PIPERF_TAG_SOCKET_STORECERT_START] socket store certificate
-Microsoft-Windows-MCCS-InternetMail	247	0	PIPERF_TAG_SOCKET_STORECERTStop()	Stop	Performance	PIPERF_TAG_SOCKET_STORECERT	Informational		InternetMailProvider: [Stop Marker] [NW_SC] [PIPERF_TAG_SOCKET_STORECERT_STOP] socket store certificate
 Microsoft-Windows-MCCS-InternetMail	248	0	PIPERF_TAG_SOCKET_PERFORM_SSLHANDSHAKEStart()	Start	Performance	PIPERF_TAG_SOCKET_PERFORM_SSLHANDSHAKE	Informational		InternetMailProvider: [Start Marker] [NW_HS] [PIPERF_TAG_SOCKET_PERFORM_SSLHANDSHAKE_START] socket perform ssl handshake
 Microsoft-Windows-MCCS-InternetMail	249	0	PIPERF_TAG_SOCKET_PERFORM_SSLHANDSHAKEStop()	Stop	Performance	PIPERF_TAG_SOCKET_PERFORM_SSLHANDSHAKE	Informational		InternetMailProvider: [Stop Marker] [NW_HS] [PIPERF_TAG_SOCKET_PERFORM_SSLHANDSHAKE_STOP] socket perform ssl handshake
-Microsoft-Windows-MCCS-InternetMail	301	0	Event_301(Int32 P1_HResult, Int32 P2_UInt32, UInt32 P3_UInt32, UInt32 P4_UInt32)		Error keyword_200000000000	task_0	Error		Sync result: %1, engine index: %2 severity: %3 retry level: %4
-Microsoft-Windows-MCCS-InternetMail	311	0	Event_311()		Warning keyword_400000000000	task_0	Warning		InternetMail: Cancelling existing socket communication
+Microsoft-Windows-MCCS-InternetMail	311	0	Event_311()		Warning	task_0	Warning		InternetMail: Cancelling existing socket communication
 Microsoft-Windows-MCCS-InternetMail	401	0	Event_401(UnicodeString Prop_String, Boolean Prop_Boolean)		StateTransition	task_0	Informational		Account %1 ImapIdle set PDC:%2
 Microsoft-Windows-MCCS-InternetMail	402	0	Event_402(UnicodeString Prop_String, Boolean Prop_Boolean)		StateTransition	task_0	Informational		Account %1 ImapIdle set CCT, SUCCEEDED:%2
 Microsoft-Windows-MCCS-InternetMail	403	0	Event_403(UnicodeString Prop_String, Boolean Prop_Boolean)		StateTransition	task_0	Informational		Account %1 ImapIdle Unset CCT, CCT allocated:%2
-Microsoft-Windows-MCCS-InternetMail	451	0	Event_451(UInt32 Prop_Uint)		CommsService keyword_200000000000	task_0	Informational		IMAP folder validity updated to %1
-Microsoft-Windows-MCCS-InternetMail	461	0	Event_461(UInt32 Prop_Uint)		CommsService keyword_400000000000	task_0	Warning		IMAP Failed to fetch message with UID %1
-Microsoft-Windows-MCCS-InternetMail	462	0	Event_462(UInt32 Prop_Uint)		CommsService keyword_200000000000	task_0	Informational		IMAP Skip fetching message with UID %1
+Microsoft-Windows-MCCS-InternetMail	451	0	Event_451(UInt32 Prop_Uint)		CommsService	task_0	Informational		IMAP folder validity updated to %1
+Microsoft-Windows-MCCS-InternetMail	461	0	Event_461(UInt32 Prop_Uint)		CommsService	task_0	Warning		IMAP Failed to fetch message with UID %1
+Microsoft-Windows-MCCS-InternetMail	462	0	Event_462(UInt32 Prop_Uint)		CommsService	task_0	Informational		IMAP Skip fetching message with UID %1
 Microsoft-Windows-MCCS-InternetMail	470	0	Event_470(GUID Prop_Guid, UInt32 Prop_Dword_1, UInt32 Prop_Dword_2)		Warning	task_0	Warning		IMAP hdr fetch overflowed batch queue - catching up: acct=%1 max=%2 bytes=%3
 Microsoft-Windows-MCCS-InternetMail	471	0	Event_471(GUID Prop_Guid, UInt32 Prop_Dword_1, UInt32 Prop_Dword_2)		Warning	task_0	Informational		IMAP msg fetch overflowed batch queue - catching up: acct=%1 max=%2 msgs=%3
-Microsoft-Windows-MCCS-InternetMail	481	0	Event_481()		CommsService keyword_200000000000	task_0	Informational		Start AutoConfig
-Microsoft-Windows-MCCS-InternetMail	482	0	Event_482()		CommsService keyword_200000000000	task_0	Informational		Start AutoConfig OEM Provider
-Microsoft-Windows-MCCS-InternetMail	483	0	Event_483()		CommsService keyword_200000000000	task_0	Informational		Start AutoConfig Web Provider
-Microsoft-Windows-MCCS-InternetMail	484	0	Event_484()		CommsService keyword_200000000000	task_0	Informational		Cancel AutoConfig
-Microsoft-Windows-MCCS-InternetMail	485	0	Event_485(UInt32 Prop_Hex)		CommsService keyword_200000000000	task_0	Informational		AutoConfig Provider result: %1.
+Microsoft-Windows-MCCS-InternetMail	481	0	Event_481()		CommsService	task_0	Informational		Start AutoConfig
+Microsoft-Windows-MCCS-InternetMail	482	0	Event_482()		CommsService	task_0	Informational		Start AutoConfig OEM Provider
+Microsoft-Windows-MCCS-InternetMail	483	0	Event_483()		CommsService	task_0	Informational		Start AutoConfig Web Provider
+Microsoft-Windows-MCCS-InternetMail	484	0	Event_484()		CommsService	task_0	Informational		Cancel AutoConfig
+Microsoft-Windows-MCCS-InternetMail	485	0	Event_485(UInt32 Prop_Hex)		CommsService	task_0	Informational		AutoConfig Provider result: %1.
 Microsoft-Windows-MCCS-InternetMail	501	0	Event_501(GUID Prop_Guid, HexInt32 Prop_HexInt32)		CommsService	task_0	Informational		DavSyncProvider: Stop syncing InternetMail account %1 content type: %2.

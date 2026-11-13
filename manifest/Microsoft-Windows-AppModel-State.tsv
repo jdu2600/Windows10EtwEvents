@@ -18,6 +18,9 @@ Microsoft-Windows-AppModel-State	16	0	Event_16(UnicodeString PackageString, Unic
 Microsoft-Windows-AppModel-State	17	0	Event_17(UnicodeString PackageString, UnicodeString UserSid, Int32 Error)			task_0	Informational	Microsoft-Windows-AppModel-State/Debug	Need to update state locations of package %1 for user %2 because the schema version has changed. Error Code: %3
 Microsoft-Windows-AppModel-State	18	0	Event_18(UnicodeString InformationalString)			task_0	Informational	Microsoft-Windows-AppModel-State/Debug	Succeeded to fix state locations for package %1.
 Microsoft-Windows-AppModel-State	19	0	Event_19(UnicodeString ErrorString, Int32 Error)			task_0	Error	Microsoft-Windows-AppModel-State/Debug	Failure to fix state locations for package %1. Error Code: %2
+Microsoft-Windows-AppModel-State	20	0	Event_20(UnicodeString Operation, UnicodeString PackageFamily, Int32 OperationError)			task_0	Warning	Application	Triggered repair because operation %1 against package %2 hit error %3.
+Microsoft-Windows-AppModel-State	21	0	Event_21(UnicodeString Operation, UnicodeString PackageFamily, Int32 OperationError, Int32 RepairTriggerError)			task_0	Warning	Application	Repair for operation %1 against package %2 with error %3 returned Error Code: %4
+Microsoft-Windows-AppModel-State	22	0	Event_22(UnicodeString FolderPath, Int32 Error)			task_0	Warning	Application	Folder path %1 failed access check: Error Code: %2
 Microsoft-Windows-AppModel-State	50	0	AppModel.Task.State.WriteSettingStart()	Start	Structured	AppModel.Task.State.WriteSetting	Informational	Microsoft-Windows-AppModel-State/Diagnostic	
 Microsoft-Windows-AppModel-State	51	0	AppModel.Task.State.WriteSettingStop()	Stop	Structured	AppModel.Task.State.WriteSetting	Informational	Microsoft-Windows-AppModel-State/Diagnostic	
 Microsoft-Windows-AppModel-State	60	0	AppModel.Task.State.ReadSettingStart()	Start	Structured	AppModel.Task.State.ReadSetting	Informational	Microsoft-Windows-AppModel-State/Diagnostic	

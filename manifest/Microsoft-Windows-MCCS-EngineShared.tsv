@@ -1,40 +1,6 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-MCCS-EngineShared	1	0	Event_1(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		Error keyword_200000000000	task_0	Error		Error: HRESULT: %1 Location: %2 Line Number: %3
-Microsoft-Windows-MCCS-EngineShared	2	0	Event_2(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		Warning keyword_200000000000	task_0	Warning		Error Propagated: HRESULT: %1 Location: %2 Line Number: %3
-Microsoft-Windows-MCCS-EngineShared	3	0	Trace(Pointer Message)		Debug keyword_200000000000	Trace	Verbose		
-Microsoft-Windows-MCCS-EngineShared	1001	0	Event_1001(UInt32 Prop_UInt32)		Photos	task_0	Informational		MCCSEngineShared::Album is missing required field and will be skipped. Field:%1
-Microsoft-Windows-MCCS-EngineShared	1002	0	Event_1002(UInt32 Prop_UInt32)		Photos	task_0	Informational		MCCSEngineShared::Photo is missing required field and will be skipped. Field:%1
-Microsoft-Windows-MCCS-EngineShared	1003	0	Event_1003(UInt32 Prop_1_UInt32, UInt32 Prop_2_UInt32)		Feeds	task_0	Informational		MCCSEngineShared::Activity Attachment is missing required field and will be skipped. Attachment:%1, Field:%2
-Microsoft-Windows-MCCS-EngineShared	1004	0	Event_1004(UInt32 Prop_Hr_UInt32)		Photos Warning	task_0	Warning		MCCSEngineShared::Tag failed save to store HR:%1
-Microsoft-Windows-MCCS-EngineShared	1005	0	Event_1005(UInt32 Prop_1_UInt32, UInt32 Prop_2_UInt32)		Photos	task_0	Informational		MCCSEngineShared::Processed %1 tags, persisted %2 tags
-Microsoft-Windows-MCCS-EngineShared	1006	0	Event_1006(UnicodeString Prop_UnicodeString)		Feeds	task_0	Informational		MCCSEngineShared::SubscribeDevice target endpoint url has been updated to :%1
-Microsoft-Windows-MCCS-EngineShared	1007	0	Event_1007(UInt32 Prop_Hr_UInt32)		Error	task_0	Error		MCCSEngineShared::Failed to get Device Unique Id HR: %1
-Microsoft-Windows-MCCS-EngineShared	1008	0	Event_1008(UInt32 Prop_UInt32)		Photos	task_0	Informational		MCCSEngineShared::File upload: File size about to upload: %1
-Microsoft-Windows-MCCS-EngineShared	1050	0	Event_1050(UInt32 Prop_1_UInt32, UInt32 Prop_2_UInt32, UInt32 Prop_3_UInt32, UInt32 Prop_4_UInt32)		Feeds	task_0	Informational		Succesfully returned the unseen count as %1 for store %2-%3-%4
-Microsoft-Windows-MCCS-EngineShared	1051	0	Event_1051(UInt32 Prop_1_UInt32, UInt32 Prop_2_UInt32, UInt32 Prop_3_UInt32, UInt32 Prop_4_UInt32)		Feeds	task_0	Informational		Succesfully updated the unseen count to %1 for store %2-%3-%4
-Microsoft-Windows-MCCS-EngineShared	1052	0	Event_1052(UInt32 Prop_1_UInt32, UInt32 Prop_2_UInt32, UInt32 Prop_3_UInt32)		Feeds Warning	task_0	Warning		Failed to return an unseen count for store %1-%2-%3
-Microsoft-Windows-MCCS-EngineShared	1053	0	Event_1053(UInt32 Prop_1_UInt32, UInt32 Prop_2_UInt32, UInt32 Prop_3_UInt32, UInt32 Prop_4_UInt32)		Feeds Warning	task_0	Warning		Failed to update the unseen count to %1 for store %2-%3-%4
-Microsoft-Windows-MCCS-EngineShared	1054	0	Event_1054(UInt32 Prop_1_UInt32, FILETIME Prop_2_FILETIME, UnicodeString Prop_3_UnicodeString)		Feeds	task_0	Informational		Updated FeedWriter canFetchMore: %1, lastActivityTimeGMT: %2, endActivityRemoteId: %3
-Microsoft-Windows-MCCS-EngineShared	2000	0	Event_2000(UnicodeString Prop_UnicodeString, UInt32 Prop_Hr)		Connect keyword_200000000000	task_0	Informational		NPXOModel::PopulateUrls SourceId: %1 returned %2
-Microsoft-Windows-MCCS-EngineShared	2001	0	Event_2001(UInt32 Prop_Hr_UInt32)		Connect keyword_200000000000	task_0	Informational		UIXNPXO::PopulateUrls returned %1
-Microsoft-Windows-MCCS-EngineShared	2002	0	Event_2002(UInt32 Prop_1_UInt32, UInt32 Prop_2_UInt32)		Connect Warning keyword_200000000000	task_0	Warning		UIXNPXO::OnNavigateError dwStatusCode: %1, dwStatusSubCode: %2
-Microsoft-Windows-MCCS-EngineShared	2003	0	Event_2003(Boolean Prop_Boolean)		Connect keyword_200000000000	task_0	Informational		UIXNPXO::SetfCanNavigateBack whether we can navigate back: %1
-Microsoft-Windows-MCCS-EngineShared	2004	0	Event_2004(Boolean Prop_Boolean)		Connect keyword_200000000000	task_0	Informational		UIXNPXO::SetfStartWebConnectFlow whether to start WCF: %1
-Microsoft-Windows-MCCS-EngineShared	2005	0	Event_2005(Boolean Prop_Boolean)		Connect keyword_200000000000	task_0	Informational		UIXNPXO::OnFinishWebConnectFlow WCF has finished with result: %1
-Microsoft-Windows-MCCS-EngineShared	2006	0	Event_2006()		Connect keyword_200000000000	task_0	Informational		NPEventSink::NavigateRedirected found the urls to match
-Microsoft-Windows-MCCS-EngineShared	2007	0	Event_2007(UnicodeString Prop_UnicodeString)		Connect keyword_200000000000	task_0	Informational		NPEventSink::BeforeNavigate Url: %1
-Microsoft-Windows-MCCS-EngineShared	2008	0	Event_2008(UnicodeString Prop_UnicodeString)		Connect keyword_200000000000	task_0	Informational		NPEventSink::BeforeNavigateRefresh Url: %1
-Microsoft-Windows-MCCS-EngineShared	2009	0	Event_2009(UnicodeString Prop_UnicodeString)		Connect keyword_200000000000	task_0	Informational		NPEventSink::NavigateComplete Url: %1
-Microsoft-Windows-MCCS-EngineShared	2010	0	Event_2010(UnicodeString Prop_UnicodeString)		Connect keyword_200000000000	task_0	Informational		NPEventSink::DocumentComplete Url: %1
-Microsoft-Windows-MCCS-EngineShared	2011	0	Event_2011(UnicodeString Prop_1_UnicodeString, UnicodeString Prop_2_UnicodeString, UnicodeString Prop_3_UnicodeString)		Connect keyword_200000000000	task_0	Informational		NPEventSink::NavigateRedirected Original Url: %1 Redirected Url: %2 Finish Url: %3
-Microsoft-Windows-MCCS-EngineShared	2012	0	Event_2012(UnicodeString Prop_UnicodeString, UInt32 Prop_UInt32)		Connect Warning keyword_200000000000	task_0	Warning		NPEventSink::NavigateError Url: %1 StatusCode: %2
-Microsoft-Windows-MCCS-EngineShared	2013	0	Event_2013(UnicodeString Prop_UnicodeString)		Connect keyword_200000000000	task_0	Informational		NPEventSink::NewWindow Url: %1
-Microsoft-Windows-MCCS-EngineShared	2014	0	Event_2014(UnicodeString Prop_UnicodeString)		Connect keyword_200000000000	task_0	Informational		NPXOModel::Urls StartUrl: %1
-Microsoft-Windows-MCCS-EngineShared	2015	0	Event_2015(UnicodeString Prop_UnicodeString)		Connect keyword_200000000000	task_0	Informational		NPXOModel::Urls FinishUrl: %1
-Microsoft-Windows-MCCS-EngineShared	2017	0	Event_2017(UnicodeString Prop_UnicodeString)		Connect keyword_200000000000	task_0	Warning		NPXOUtils::Error Response: %1
-Microsoft-Windows-MCCS-EngineShared	2018	0	Event_2018(UInt32 Prop_UInt32)		Connect Warning keyword_200000000000	task_0	Warning		NPXOUtils::Error StatusSubCode: %1
-Microsoft-Windows-MCCS-EngineShared	2019	0	Event_2019()		Connect keyword_200000000000	task_0	Informational		UIXNPXO::PopulateUrls starting on dedicated thread
-Microsoft-Windows-MCCS-EngineShared	2020	0	Event_2020(UInt32 Prop_Hr_UInt32)		Connect keyword_200000000000	task_0	Informational		UIXNPXO::SpawnPopulateUrlsThread returned %1
-Microsoft-Windows-MCCS-EngineShared	3001	0	Event_3001(UnicodeString Prop_UnicodeString)		Debug keyword_200000000000	task_0	Informational		Mms Mime: Invalid phone number: %1
-Microsoft-Windows-MCCS-EngineShared	3002	0	SPERF_TAG_SHARED_MIME_LOOKUP_NAMEStart()	Start	Performance keyword_200000000000	SPERF_TAG_SHARED_MIME_LOOKUP_NAME	Informational		
-Microsoft-Windows-MCCS-EngineShared	3003	0	SPERF_TAG_SHARED_MIME_LOOKUP_NAMEStop()	Stop	Performance keyword_200000000000	SPERF_TAG_SHARED_MIME_LOOKUP_NAME	Informational		
+Microsoft-Windows-MCCS-EngineShared	1	0	Event_1(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		Error	task_0	Error		Error: HRESULT: %1 Location: %2 Line Number: %3
+Microsoft-Windows-MCCS-EngineShared	2	0	Event_2(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		Warning	task_0	Warning		Error Propagated: HRESULT: %1 Location: %2 Line Number: %3
+Microsoft-Windows-MCCS-EngineShared	3001	0	Event_3001(UnicodeString Prop_UnicodeString)		Debug	task_0	Informational		Mms Mime: Invalid phone number: %1
+Microsoft-Windows-MCCS-EngineShared	3002	0	SPERF_TAG_SHARED_MIME_LOOKUP_NAMEStart()	Start	Performance	SPERF_TAG_SHARED_MIME_LOOKUP_NAME	Informational		
+Microsoft-Windows-MCCS-EngineShared	3003	0	SPERF_TAG_SHARED_MIME_LOOKUP_NAMEStop()	Stop	Performance	SPERF_TAG_SHARED_MIME_LOOKUP_NAME	Informational		

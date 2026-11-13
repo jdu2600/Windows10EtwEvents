@@ -124,7 +124,7 @@ Microsoft-Windows-EFS	4391	0	Event_4391(UInt32 FileNumber, UInt32 LineNumber)			
 Microsoft-Windows-EFS	4392	0	Event_4392(UInt32 FileNumber, UInt32 LineNumber, HexInt32 ErrorCode)			task_0	Warning	Application	%1.%2: EFS service failed to subscribe for updates to an MDM policy. Index: %3.
 Microsoft-Windows-EFS	4393	0	Event_4393(UInt32 FileNumber, UInt32 LineNumber, HexInt32 ErrorCode)			task_0	Error	Application	%1.%2: Failed to initialize one or more synchronization objects. Error code: %3.
 Microsoft-Windows-EFS	4400	0	Event_4400(UInt32 FileNumber, UInt32 LineNumber, HexInt32 ErrorCode)			task_0	Error	Application	%1.%2: EFS service failed to process MDM policy updates. Error code: %3.
-Microsoft-Windows-EFS	4401	0	Event_4401(UInt32 FileNumber, UInt32 LineNumber, HexInt32 ErrorCode)			task_0	Error	Application	%1.%2: EFS service failed to provision a user for EDP. Error code: %3.
+Microsoft-Windows-EFS	4401	0	Event_4401(UInt32 FileNumber, UInt32 LineNumber, HexInt32 ErrorCode)			task_0	Error	Application	%1.%2: EFS service failed to provision a user for Windows Information Protection. Error code: %3.
 Microsoft-Windows-EFS	4402	0	Event_4402(UInt32 FileNumber, UInt32 LineNumber, HexInt32 ErrorCode)			task_0	Error	Application	%1.%2: EFS service failed to provision a user for DPL. Error code: %3.
 Microsoft-Windows-EFS	4403	0	Event_4403(UInt32 FileNumber, UInt32 LineNumber, HexInt32 ErrorCode)			task_0	Error	Application	%1.%2: EFS service failed to initialize file encryption queues. Error code: %3.
 Microsoft-Windows-EFS	4404	0	Event_4404(UInt32 FileNumber, UInt32 LineNumber, HexInt32 ErrorCode)			task_0	Error	Application	%1.%2: Recovery policy data is in an invalid format. Error code: %3.
@@ -141,6 +141,6 @@ Microsoft-Windows-EFS	4414	0	Event_4414(UInt32 FileNumber, UInt32 LineNumber, Un
 Microsoft-Windows-EFS	4415	0	Event_4415(UInt32 FileNumber, UInt32 LineNumber, UnicodeString Param1, UInt32 Param2)			task_0	Verbose	Microsoft-Windows-EFS/Debug	%1.%2: %3. Value: %4.
 Microsoft-Windows-EFS	4416	0	Event_4416(UInt32 FileNumber, UInt32 LineNumber, UnicodeString Param1, HexInt32 Param2)			task_0	Error	Microsoft-Windows-EFS/Debug	%1.%2: Complete: %3. Code: %4.
 Microsoft-Windows-EFS	4417	0	Event_4417(UInt32 FileNumber, UInt32 LineNumber, UnicodeString Param1, HexInt32 Param2)			task_0	Error	Microsoft-Windows-EFS/Debug	%1.%2: Leave: %3. Code: %4.
-Microsoft-Windows-EFS	4418	0	Event_4418(UInt32 FileNumber, UInt32 LineNumber, HexInt32 ErrorCode)			task_0	Error	Application	%1.%2: EFS service failed to provision RMS for EDP. Error code: %3.
+Microsoft-Windows-EFS	4418	0	Event_4418(UInt32 FileNumber, UInt32 LineNumber, HexInt32 ErrorCode)			task_0	Error	Application	%1.%2: EFS service failed to provision RMS for Windows Information Protection. Error code: %3.
 Microsoft-Windows-EFS	7000	0	Event_7000(UnicodeString Reason)			task_0	Error	Application	Machine role cannot be determined. %1
 Microsoft-Windows-EFS	7002	0	Event_7002(UnicodeString Reason)			task_0	Error	Application	Default group policy object cannot be created. %1

@@ -1,0 +1,5 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-CoreSystem-InitMachineConfig	1	0	Event_1(UInt64 evtErrorId, UInt16 evtHiveNameLength, UnicodeString evtHiveName, HexInt32 evtStatus, HexInt64 evtAdditionalInfo)			task_0	Error	System	An error with reference Id=%1 was encountered while processing the hive '%3'. The status was: %4.  The additional information was %5.
+Microsoft-Windows-CoreSystem-InitMachineConfig	2	0	Event_2(UInt16 evtHiveNameLength, UnicodeString evtHiveName)			task_0	Informational	System	Initial Machine Configuration processing of hive '%2' has completed.
+Microsoft-Windows-CoreSystem-InitMachineConfig	3	0	Event_3(HexInt32 evtStatus)			task_0	Warning	System	Initial Machine Configuration was unable to unload the IMC hive once processing was completed.  The status was %1.
+Microsoft-Windows-CoreSystem-InitMachineConfig	4	0	Event_4(HexInt32 evtStatus)			task_0	Warning	System	Initial Machine Configuration was unable to update the system BCD to prevent future execution.  The status was %1.

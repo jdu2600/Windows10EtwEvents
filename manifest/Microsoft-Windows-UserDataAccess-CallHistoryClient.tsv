@@ -3,5 +3,6 @@ Microsoft-Windows-UserDataAccess-CallHistoryClient	1	0	Event_1(Int32 P1_HResult,
 Microsoft-Windows-UserDataAccess-CallHistoryClient	2	0	Event_2(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		Warning	task_0	Warning		Error Propagated: %1 Location: %2 Line Number: %3
 Microsoft-Windows-UserDataAccess-CallHistoryClient	3	0	Event_3(Pointer ObjPtr, Int32 ObjType, Int32 ObjId, HexInt32 PropCode)		Error	task_0	Informational		Object {p:%1, type:%2, id:%3} property %4 not yet fetched
 Microsoft-Windows-UserDataAccess-CallHistoryClient	4	0	Event_4(HexInt32 RpcCode, Int32 OldCode)		Error	task_0	Error		Async RPC call failed with %1 (output value %2)
-Microsoft-Windows-UserDataAccess-CallHistoryClient	5	0	Event_5(UInt32 P1)		CommsDataModel	task_0	Informational		Start cancelling task. Remote: %1
-Microsoft-Windows-UserDataAccess-CallHistoryClient	6	0	Event_6(UInt32 P1)		CommsDataModel	task_0	Informational		Task Cancelled. Remote: %1
+Microsoft-Windows-UserDataAccess-CallHistoryClient	5	0	Event_5(UInt32 P1)		CommsDataModel keyword_400000000000	task_0	Informational		Start cancelling task. Remote: %1
+Microsoft-Windows-UserDataAccess-CallHistoryClient	6	0	Event_6(UInt32 P1)		CommsDataModel keyword_400000000000	task_0	Informational		Task Cancelled. Remote: %1
+Microsoft-Windows-UserDataAccess-CallHistoryClient	7	0	Event_7(UInt32 P1)		keyword_400000000000	task_0	Error		CallbackContext: %1

@@ -52,7 +52,9 @@ Microsoft-Windows-Security-SPP	1044	0	Message_0x80000414()			task_0	Always		The 
 Microsoft-Windows-Security-SPP	1056	0	Message_0x80000420()			task_0	Always		Some data has been reset. %1 [%2].
 Microsoft-Windows-Security-SPP	1057	0	Message_0x80000421()			task_0	Always		Unable to update Windows PID information in the registry: %1
 Microsoft-Windows-Security-SPP	1058	0	Message_0x80000422()			task_0	Always		Installation of the Proof of Purchase from the ACPI table failed. Error code:\r\n%1
+Microsoft-Windows-Security-SPP	1059	0	Message_0x80000423()			task_0	Always		Detected OS composition change triggered license re-evaluation.
 Microsoft-Windows-Security-SPP	1060	0	Message_0x40000424()			task_0	Always		Kernel policy cache has not been updated after Windows Right consumption. This is OK in certain situations.
+Microsoft-Windows-Security-SPP	1060	0	Message_0x80000424()			task_0	Always		Detected OEM product key change triggered license re-evaluation.
 Microsoft-Windows-Security-SPP	1061	0	Message_0x40000425()			task_0	Always		Edition changed from %1 to %2 after Windows Right consumption.
 Microsoft-Windows-Security-SPP	1062	0	Message_0xC0000426()			task_0	Always		Deposition of Confirmation ID failed. %1\r\nSku Id=%2
 Microsoft-Windows-Security-SPP	1066	0	Message_0x4000042A()			task_0	Always		Initialization status for service objects.\r\n%1
@@ -67,6 +69,10 @@ Microsoft-Windows-Security-SPP	1188	0	Message_0x800004A4()			task_0	Always		The 
 Microsoft-Windows-Security-SPP	1189	0	Message_0xC00004A5()			task_0	Always		Failed to read migration blob - encryption key not recognized.
 Microsoft-Windows-Security-SPP	1190	0	Message_0x800004A6()			task_0	Always		Unable to deposit chunk due to HWID mismatch.\r\nUri: %1
 Microsoft-Windows-Security-SPP	1191	0	Message_0x800004A7()			task_0	Always		Unable to deposit chunk due to Trusted Store being recreated.\r\nUri: %1
+Microsoft-Windows-Security-SPP	1192	0	Message_0x800004A8()			task_0	Always		Failed to gather PKEY information for backup product key.\r\nError: %1\r\nProduct key: %2
+Microsoft-Windows-Security-SPP	1193	0	Message_0x800004A9()			task_0	Always		Failed to gather PKEY information for OEM:DM product key.\r\nError: %1\r\nProduct key: %2
+Microsoft-Windows-Security-SPP	1194	0	Message_0x800004AA()			task_0	Always		Failed to gather target OS information for PID.\r\nError: %1\r\nPID: %2
+Microsoft-Windows-Security-SPP	1195	0	Message_0x800004AB()			task_0	Always		Failed to gather target OS information input key data.\r\nError: %1
 Microsoft-Windows-Security-SPP	8195	0	Message_0xC0002003()			task_0	Always		SLSetGenuineInformation in sppcomapi failed with the following error code:\r\n%1
 Microsoft-Windows-Security-SPP	8196	0	Message_0xC0002004()			task_0	Always		LoadLibrary call for loading Sppcommdlg.dll from SLUI.exe failed with error code:\r\n%1
 Microsoft-Windows-Security-SPP	8197	0	Message_0xC0002005()			task_0	Informational		SLUI.exe was launched with the following command-line parameters:\r\n%1

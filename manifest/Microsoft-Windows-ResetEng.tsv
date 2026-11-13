@@ -1,3 +1,4 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-ResetEng	4500	0	Event_4500()			task_0	Informational	System	The system has been successfully restored to original condition.
-Microsoft-Windows-ResetEng	4502	0	Event_4502()			task_0	Critical	System	Attempt to restore the system to original condition has failed. Changes to the system have been undone.
+Microsoft-Windows-ResetEng	4500	0	Event_4500()			task_0	Informational	System	The system has been successfully reset.
+Microsoft-Windows-ResetEng	4502	0	Event_4502()			task_0	Critical	System	Attempt to reset the system has failed. Changes to the system have been undone.
+Microsoft-Windows-ResetEng	4503	0	Event_4503()			task_0	Critical	System	Attempt to watch for errors while resetting the system has failed. Failures to reset the system may not be reported.

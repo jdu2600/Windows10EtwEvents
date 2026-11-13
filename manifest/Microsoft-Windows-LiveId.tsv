@@ -109,16 +109,10 @@ Microsoft-Windows-LiveId	6102	0	Event_6102(UnicodeString value)		WlidSvc Credent
 Microsoft-Windows-LiveId	6103	0	Event_6103(UnicodeString value)		WlidSvc Credentials	task_0	Informational		RemoveCachedAuthInfo Deleting item for target [%1] from CredMan.
 Microsoft-Windows-LiveId	6104	0	Event_6104(Int32 value)		WlidSvc Credentials	task_0	Informational		RemoveCachedAuthInfo ALL Deleting [%1] items from CredMan.
 Microsoft-Windows-LiveId	6105	0	Event_6105(Int32 value)		WlidSvc Credentials	task_0	Informational		RemovePersistedTokens Deleting item for target [%1] from CredMan.
-Microsoft-Windows-LiveId	6106	0	Event_6106(UnicodeString TargetName, Int32 ErrorCode)		Error WlidSvc Credentials	task_0	Critical		Attempting to delete for target [%1] from CredMan failed with %2.
-Microsoft-Windows-LiveId	6107	0	Event_6107(UnicodeString TargetName, Int32 ErrorCode)		Error WlidSvc Credentials	task_0	Error		Write to CredMan failed for target [%1] with %2.
-Microsoft-Windows-LiveId	6108	0	Event_6108(UnicodeString value)		WlidSvc Credentials	task_0	Informational		Writing Token for target [%1] to CredMan.
-Microsoft-Windows-LiveId	6109	0	Event_6109(UnicodeString TargetName, Int32 ErrorCode)		Error WlidSvc Credentials	task_0	Error		CredEnumerateW failed for target [%1] with %2.
-Microsoft-Windows-LiveId	6110	0	Event_6110(UnicodeString value)		WlidSvc Credentials	task_0	Informational		CredEnumerateW found no match for target [%1].
-Microsoft-Windows-LiveId	6111	0	Event_6111(UnicodeString value)		WlidSvc Credentials	task_0	Informational		DeleteStoredCredential Deleting item for target [%1] from CredMan.
-Microsoft-Windows-LiveId	6112	0	Event_6112(UnicodeString value1, AnsiString value2)		WlidSvc Credentials	task_0	Informational		CredMan activity skipped. Credential not changed for [WindowsLive:(token):name=%1;serviceuri=%2
-Microsoft-Windows-LiveId	6113	0	Event_6113(AnsiString FunctionName, UInt32 ErrorCode)		Error Operational WlidSvc RPC	task_0	Error	Microsoft-Windows-LiveId/Operational	RPC call to function %1 returned the following error code: %2.
-Microsoft-Windows-LiveId	6114	0	Event_6114(UInt32 RequestType, AnsiString cid, UInt32 ErrorCode, AnsiString MachineEnvironment)		Error Operational WlidSvc SOAP	task_0	Error	Microsoft-Windows-LiveId/Operational	SOAP Request of type %1 for user CID '%2' in %4 environment received the following error code from the Microsoft Account server: %3.
-Microsoft-Windows-LiveId	6115	0	Event_6115(AnsiString Value)		WlidSvc SOAP	task_0	Informational	Microsoft-Windows-LiveId/Operational	## SOAP Request: %1
+Microsoft-Windows-LiveId	6112	0	Event_6112(UnicodeString value1, AnsiString value2)		WlidSvc Credentials	task_0	Informational		
+Microsoft-Windows-LiveId	6113	0	Event_6113(AnsiString FunctionName, UInt32 ErrorCode)		Error Operational WlidSvc RPC	task_0	Error		
+Microsoft-Windows-LiveId	6114	0	Event_6114(UInt32 RequestType, AnsiString cid, UInt32 ErrorCode, AnsiString MachineEnvironment)		Error Operational WlidSvc SOAP	task_0	Error		
+Microsoft-Windows-LiveId	6115	0	Event_6115(AnsiString Value)		WlidSvc SOAP	task_0	Informational		
 Microsoft-Windows-LiveId	6116	0	Event_6116(AnsiString Value)		WlidSvc SOAP	task_0	Informational		
 Microsoft-Windows-LiveId	6117	0	Event_6117(AnsiString ResourceURI, SYSTEMTIME Created, SYSTEMTIME Expires, AnsiString TokenType, Int32 AuthRequired, Int32 RequestStatus, Boolean HasFlowUrl, Boolean HasAuthUrl, Boolean HasEndAuthUrl)		WlidSvc SOAP	task_0	Informational		
 Microsoft-Windows-LiveId	7000	0	Event_7000(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		Critical WlidModern	task_0	Critical		

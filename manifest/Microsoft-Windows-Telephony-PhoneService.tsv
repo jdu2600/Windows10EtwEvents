@@ -119,6 +119,7 @@ Microsoft-Windows-Telephony-PhoneService	1105	0	Event_1105(GUID Prop_Guid)		Stat
 Microsoft-Windows-Telephony-PhoneService	1201	0	Event_1201(UInt32 Prop_HexInt32_1)		StateTransition	task_0	Informational		InteractiveUserNotificationSink: New Incoming Call State Changed [callId=%1].
 Microsoft-Windows-Telephony-PhoneService	1202	0	Event_1202(UInt32 Prop_HexInt32_1)		StateTransition	task_0	Informational		InteractiveUserNotificationSink: Show Incoming Call Toast [callId=%1].
 Microsoft-Windows-Telephony-PhoneService	1203	0	Event_1203(UnicodeString Prop_UnicodeString)		MISC	task_0	Informational		Supplementary service code: %1 was converted from erase to deactivate command due override setting.
+Microsoft-Windows-Telephony-PhoneService	1204	0	Event_1204(UInt32 Prop_HexInt32_1)		StateTransition	task_0	Informational		InteractiveUserNotificationSink: Call belongs to Win32 app, skipping [callId=%1].
 Microsoft-Windows-Telephony-PhoneService	1501	0	Event_1501(UInt32 Prop_HexInt32_1)		DataCollection	task_0	Verbose		Call data collection item added for CallId: [%1]
 Microsoft-Windows-Telephony-PhoneService	1502	0	Event_1502(UInt32 Prop_HexInt32_1)		DataCollection	task_0	Verbose		Call data collection item removed for CallId: [%1]
 Microsoft-Windows-Telephony-PhoneService	1503	0	Event_1503(UInt32 Prop_HexInt32_1)		DataCollection	task_0	Verbose		Call data collection item dropped an idle call for CallId: [%1]
@@ -169,3 +170,10 @@ Microsoft-Windows-Telephony-PhoneService	1624	0	Event_1624(Boolean updatedValue,
 Microsoft-Windows-Telephony-PhoneService	1625	0	Event_1625(UInt32 updatedValue, UInt32 previousValue)		StateTransition	task_0	Informational		[RcsPresence] Saved last published capabilities, [updatedValue=%1][previousValue=%2]
 Microsoft-Windows-Telephony-PhoneService	1626	0	Event_1626(UInt32 reason, UInt32 networkType)		StateTransition	task_0	Informational		[RcsPresence] Publish capabilities requested, [reason=%1][networkType=%2]
 Microsoft-Windows-Telephony-PhoneService	1627	0	Event_1627(UInt32 Prop_AudioRoutingState)		StateTransition	task_0	Informational		Attempting audio routing {%1} as per settings.
+Microsoft-Windows-Telephony-PhoneService	1628	0	Event_1628(UInt32 callId, UInt32 supSvcCode)		StateTransition	task_0	Informational		Updating callInfo with remote party hold status [callId=%1][supSvcCode=%2]
+Microsoft-Windows-Telephony-PhoneService	1629	0	Event_1629(UInt32 value)		StateTransition	task_0	Informational		Caller ID privacy header set to: {%1}
+Microsoft-Windows-Telephony-PhoneService	1630	0	Event_1630(UnicodeString Prop_UnicodeString)		StateTransition	task_0	Informational		The prefix {%1} was dialed which is prohibited. The call failed.
+Microsoft-Windows-Telephony-PhoneService	1631	0	Event_1631()		StateTransition	task_0	Informational		A Wireless Priority Service call failed because of another active IMS call.
+Microsoft-Windows-Telephony-PhoneService	1632	0	Event_1632(GUID LineId, UInt32 CallId, UInt32 ConferenceCallId)		StateTransition	task_0	Informational		Adding call to conference [lineId=%1][callId=%2][conferenceId=%3]
+Microsoft-Windows-Telephony-PhoneService	1633	0	Event_1633(GUID LineId, UInt32 CallId, UInt32 ConferenceCallId)		StateTransition	task_0	Informational		Removing call from conference [lineId=%1][callId=%2][conferenceId=%3]
+Microsoft-Windows-Telephony-PhoneService	1634	0	Event_1634(UInt32 Prop_UInt32, Boolean Prop_Boolean)		StateTransition	task_0	Informational		Updating CallInfo confererence participant property [callId=%1][isParticipant=%2]

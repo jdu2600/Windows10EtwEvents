@@ -1,7 +1,6 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
 Microsoft-Windows-MCCS-NetworkHelper	1	0	Event_1(Int32 P1_HexInt32, AnsiString P2_String, UInt32 P3_UInt32)		Error	task_0	Error		Error: HRESULT: %1 Location: %2 Line Number: %3
 Microsoft-Windows-MCCS-NetworkHelper	2	0	Event_2(Int32 P1_HexInt32, AnsiString P2_String, UInt32 P3_UInt32)		Warning	task_0	Warning		Error Propagated: HRESULT: %1 Location: %2 Line Number: %3
-Microsoft-Windows-MCCS-NetworkHelper	3	0	Trace(Pointer Message)		Debug	Trace	Verbose		
 Microsoft-Windows-MCCS-NetworkHelper	101	0	Event_101(UInt32 P1_UInt32, UInt32 P2_UInt32)		Warning	task_0	Warning		NetworkHelper::HttpTransport: Callback error: Handle: %1 Error: %2
 Microsoft-Windows-MCCS-NetworkHelper	102	0	Event_102(UInt32 P1_UInt32, UInt32 P2_UInt32)		Warning	task_0	Warning		NetworkHelper::HttpTransport: Request Failure: Handle: %1 Error: %2
 Microsoft-Windows-MCCS-NetworkHelper	103	0	Event_103(UInt32 P1_UInt32, UInt32 P2_UInt32, UInt32 P3_UInt32)		Warning	task_0	Warning		NetworkHelper::HttpTransport: Wait Failed on Closing Handle: %1 Wait: %2 Error: %3
@@ -15,9 +14,34 @@ Microsoft-Windows-MCCS-NetworkHelper	111	0	Event_111(Int32 P1_UInt32, UnicodeStr
 Microsoft-Windows-MCCS-NetworkHelper	201	0	Event_201(Boolean P1_Boolean, Int32 P2_Int32)		Warning	task_0	Warning		Set PDC Active:%1, invalid CCT state:%2
 Microsoft-Windows-MCCS-NetworkHelper	202	0	Event_202(UnicodeString P1_String, Boolean P2_Boolean, UnicodeString P3_String, Pointer P4_Handle)		StateTransition	task_0	Informational		Triggering PDC for sender: %1, Activate: %2, Task: %3, ActivationHandle: %4
 Microsoft-Windows-MCCS-NetworkHelper	203	0	Event_203(UnicodeString P1_String)		StateTransition	task_0	Informational		Triggered CCT for sender %1
-Microsoft-Windows-MCCS-NetworkHelper	204	0	Event_204()		Warning	task_0	Warning		Inactivate PDC at the last minute.
 Microsoft-Windows-MCCS-NetworkHelper	205	0	Event_205()		Warning	task_0	Warning		CCT failed, possibly because of VPN.
 Microsoft-Windows-MCCS-NetworkHelper	206	0	Event_206(UnicodeString P1_String, Boolean P2_Boolean)		StateTransition	task_0	Informational		Released CCT for sender %1; Attained CCT %2
-Microsoft-Windows-MCCS-NetworkHelper	207	0	Event_207(Int32 P1_Int32)		Warning keyword_200000000000	task_0	Warning		Invalid CCT state: %1
+Microsoft-Windows-MCCS-NetworkHelper	207	0	Event_207(Int32 P1_Int32)		Warning	task_0	Warning		Invalid CCT state: %1
 Microsoft-Windows-MCCS-NetworkHelper	208	0	Event_208()		Warning	task_0	Warning		CCT failed, number of AOAC connection limitation reached.
 Microsoft-Windows-MCCS-NetworkHelper	209	0	Event_209(Pointer Message)		Warning	task_0	Warning		PDC not renewed due to lack of progress, allowing low power state. ActivationHandle: %1
+Microsoft-Windows-MCCS-NetworkHelper	4005	0	Event_4005(Pointer Prop_ptr, AnsiString Prop_ansi)		Debug	task_0	Verbose		Http: %1: WINHTTP_CALLBACK_STATUS_%2
+Microsoft-Windows-MCCS-NetworkHelper	4006	0	Event_4006(Pointer Prop_ptr, AnsiString Prop_ansi, Int32 Prop_int)		Debug	task_0	Verbose		Http: %1: WINHTTP_CALLBACK_STATUS_%2: Bytes received:%3
+Microsoft-Windows-MCCS-NetworkHelper	4007	0	Event_4007(Pointer Prop_ptr, AnsiString Prop_ansi, UInt32 Prop_hexint)		Debug	task_0	Verbose		Http: %1: WINHTTP_CALLBACK_STATUS_%2: Socket: %3
+Microsoft-Windows-MCCS-NetworkHelper	4008	0	Event_4008(Pointer Prop_ptr, AnsiString Prop_ansi, UInt32 Prop_uint)		Debug	task_0	Verbose		Http: %1: WINHTTP_CALLBACK_STATUS_%2: Status: %3
+Microsoft-Windows-MCCS-NetworkHelper	4009	0	Event_4009(Pointer Prop_ptr, AnsiString Prop_ansi, UnicodeString Prop_string)		Debug	task_0	Verbose		Http: %1: WINHTTP_CALLBACK_STATUS_%2: Info: %3
+Microsoft-Windows-MCCS-NetworkHelper	4010	0	Event_4010(Pointer Prop_ptr, UInt32 Prop_uint)		Debug	task_0	Verbose		Http: %1: Unknown status: %2
+Microsoft-Windows-MCCS-NetworkHelper	4020	0	Event_4020(Int32 P1_Int32)		Debug	task_0	Verbose		Http: Setting threshold to %1
+Microsoft-Windows-MCCS-NetworkHelper	4021	0	Event_4021(UnicodeString P1_String)		Debug	task_0	Verbose		Http: Attributing Http Session to ProductId = %1
+Microsoft-Windows-MCCS-NetworkHelper	4022	0	Event_4022(Int32 Prop_hr)		Debug	task_0	Verbose		Http: Set WINHTTP_OPTION_SECONDARY_APP_META_DATA failed. HRESULT = %1
+Microsoft-Windows-MCCS-NetworkHelper	4023	0	Event_4023(Pointer Message)		Debug	task_0	Verbose		Http: %1: WinHttpCloseHandle
+Microsoft-Windows-MCCS-NetworkHelper	4024	0	Event_4024()		Debug	task_0	Verbose		Http: WFSO timed out waiting on m_hHandleClosingEvent. Waiting again...
+Microsoft-Windows-MCCS-NetworkHelper	4025	0	Event_4025(UnicodeString Prop_string1, UnicodeString Prop_string2)		Debug	task_0	Verbose		Http: %1:%2
+Microsoft-Windows-MCCS-NetworkHelper	4030	0	Event_4030(Pointer Message)		Debug	task_0	Verbose		Http: %1: New request handle
+Microsoft-Windows-MCCS-NetworkHelper	4031	0	Event_4031()		Debug	task_0	Verbose		Http: Ignoring status update on failed request
+Microsoft-Windows-MCCS-NetworkHelper	4032	0	Event_4032(Int32 P1_Int32)		Debug	task_0	Verbose		Http: Total bytes received: %1
+Microsoft-Windows-MCCS-NetworkHelper	4033	0	Event_4033(Int32 Prop_int1, Int32 Prop_int2)		Debug	task_0	Verbose		Http: ResponseContentLength(%1) != ResponeBodyByteCount(%2)
+Microsoft-Windows-MCCS-NetworkHelper	4034	0	Event_4034(Int32 Prop_int1, Int32 Prop_int2)		Debug	task_0	Verbose		Http: Content size (%1) exceeded threshold (%2)
+Microsoft-Windows-MCCS-NetworkHelper	4040	0	Event_4040(Pointer Prop_ptr, AnsiString Prop_ansi, Int32 Prop_int)		Debug	task_0	Verbose		Http: %1: HTTP_QUERY_%2: %3
+Microsoft-Windows-MCCS-NetworkHelper	4041	0	Event_4041(Pointer Message)		Debug	task_0	Verbose		Http: %1: HTTP_QUERY_CONTENT_LENGTH is unknown
+Microsoft-Windows-MCCS-NetworkHelper	4042	0	Event_4042()		Debug	task_0	Verbose		Http: Disallowing WiFi requests based on test hook value
+Microsoft-Windows-MCCS-NetworkHelper	4043	0	Event_4043(Pointer Prop_ptr, AnsiString Prop_ansi, Int32 Prop_int)		Debug	task_0	Verbose		Http: %1: %2 %3 bytes
+Microsoft-Windows-MCCS-NetworkHelper	4044	0	Event_4044(Pointer Prop_ptr, AnsiString Prop_ansi, UInt32 Prop_uint)		Debug	task_0	Verbose		Http: %1: %2 failed synchronously: %3
+Microsoft-Windows-MCCS-NetworkHelper	4045	0	Event_4045(Pointer Prop_ptr, Int32 Prop_int)		Debug	task_0	Verbose		Http: %1: Total Body Bytes sent: %2
+Microsoft-Windows-MCCS-NetworkHelper	4050	0	Event_4050()		Debug	task_0	Verbose		Http: ContentLength not specified!
+Microsoft-Windows-MCCS-NetworkHelper	4051	0	Event_4051(UInt32 Prop_hexint)		Debug	task_0	Verbose		Http: HTTP Error: %1
+Microsoft-Windows-MCCS-NetworkHelper	4052	0	Event_4052(Int32 P1_Int32)		Debug	task_0	Verbose		Http: Content Lengtgh: %1

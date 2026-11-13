@@ -1,52 +1,73 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
 Microsoft-Windows-MCCS-AccountsHost	1	0	Event_1(Int32 P1_HexInt32, AnsiString P2_String, UInt32 P3_UInt32)		Error	task_0	Error		Error: HRESULT: %1 Location: %2 Line Number: %3
 Microsoft-Windows-MCCS-AccountsHost	2	0	Event_2(Int32 P1_HexInt32, AnsiString P2_String, UInt32 P3_UInt32)		Warning	task_0	Warning		Error Propagated: HRESULT: %1 Location: %2 Line Number: %3
-Microsoft-Windows-MCCS-AccountsHost	3	0	Trace(Pointer Message)		Debug	Trace	Verbose		
-Microsoft-Windows-MCCS-AccountsHost	1000	0	Event_1000()		RequestManager Warning	task_0	Warning		Request Manager exceeded maximum requests limit and will start rejecting older requests
-Microsoft-Windows-MCCS-AccountsHost	1001	0	Event_1001(UInt32 Prop_UInt32)		Error RequestManager	task_0	Error		Scheduling function (Step) failed with result %1
-Microsoft-Windows-MCCS-AccountsHost	1002	0	Event_1002(UInt32 Prop_UInt32_1, UInt32 Prop_UInt32_2, UInt32 Prop_UInt32_3)		RequestManager Warning	task_0	Warning		Authentication error (%1) detected for request [%2-%3]
-Microsoft-Windows-MCCS-AccountsHost	1004	0	Event_1004(UInt32 Prop_UInt32)		Error RequestManager	task_0	Error		RPC Registration failed with error code %1
-Microsoft-Windows-MCCS-AccountsHost	1006	0	Event_1006()		RequestManager StateTransition	task_0	Informational		Request Manager was initialized correctly
-Microsoft-Windows-MCCS-AccountsHost	1007	0	Event_1007(UInt32 Prop_UInt32_1, UInt32 Prop_UInt32_2, UInt32 Prop_UInt32_3)		RequestManager Warning	task_0	Warning		Request [%2-%3] failed with error code %1
-Microsoft-Windows-MCCS-AccountsHost	1008	0	Event_1008(UInt32 Prop_UInt32_1, UInt32 Prop_UInt32_2, UInt32 Prop_UInt32_3)		RequestManager Warning	task_0	Warning		Request [%2-%3] permanently failed with error code %1
-Microsoft-Windows-MCCS-AccountsHost	1009	0	Event_1009(UInt32 Prop_UInt32)		RequestManager Warning	task_0	Warning		Requests (#%1) are pending execution during shutdown
-Microsoft-Windows-MCCS-AccountsHost	1012	0	Event_1012()		Battery RequestManager StateTransition	task_0	Informational		Request Manager entered battery saving mode
-Microsoft-Windows-MCCS-AccountsHost	1013	0	Event_1013()		Battery RequestManager StateTransition	task_0	Informational		Request Manager recovered from battery saving mode
-Microsoft-Windows-MCCS-AccountsHost	1014	0	Event_1014()		RequestManager StateTransition	task_0	Informational		Request Manager entered low-memory mode
-Microsoft-Windows-MCCS-AccountsHost	1015	0	Event_1015()		RequestManager StateTransition	task_0	Informational		Request Manager recovered from low-memory mode
-Microsoft-Windows-MCCS-AccountsHost	1016	0	Event_1016()		RequestManager StateTransition	task_0	Informational		Request Manager entered no connectivity mode, suspending activity
-Microsoft-Windows-MCCS-AccountsHost	1017	0	Event_1017()		RequestManager StateTransition	task_0	Informational		Request Manager detected connection recovery, retrying
-Microsoft-Windows-MCCS-AccountsHost	1018	0	Event_1018()		Feeds RequestManager	task_0	Informational		Fetch more requested for feed which reached the end and can't fetch any more data
-Microsoft-Windows-MCCS-AccountsHost	1019	0	Event_1019()		Feeds RequestManager	task_0	Informational		Fetch more was requested for empty or new feed, normal feed fetch will be performed
-Microsoft-Windows-MCCS-AccountsHost	1020	0	Event_1020(UInt32 Prop_UInt32)		Photos RequestManager Warning	task_0	Warning		Failed to add the comment to the database after succesful post
-Microsoft-Windows-MCCS-AccountsHost	1021	0	Event_1021(UInt32 Prop_UInt32_1, UInt32 Prop_UInt32_2)		RequestManager	task_0	Verbose		Request Manager found matching request to cancel [%1-%2] (request is not executing)
-Microsoft-Windows-MCCS-AccountsHost	1022	0	Event_1022(UInt32 Prop_UInt32_1, UInt32 Prop_UInt32_2)		RequestManager	task_0	Informational		Request Manager found matching executing request to cancel [%1-%2], sending cancelation to provider
-Microsoft-Windows-MCCS-AccountsHost	1023	0	Event_1023(UInt32 Prop_UInt32_1, UInt32 Prop_UInt32_2)		RequestManager	task_0	Informational		Request [%1-%2] was canceled succesfully
-Microsoft-Windows-MCCS-AccountsHost	1028	0	Event_1028(UInt32 Prop_OLTIEMID0, UInt32 Prop_OLITEMID1, UInt32 Prop_OLITEMID2)		RequestManager	task_0	Informational		Upload file job to alubm (id: %1-%2-%3) has exceeded the maximum number of retry
-Microsoft-Windows-MCCS-AccountsHost	1029	0	Event_1029(UInt32 Prop_UInt32_1, UInt32 Prop_UInt32_2)		RequestManager	task_0	Informational		Request Manager queued request [%1-%2]
-Microsoft-Windows-MCCS-AccountsHost	1030	0	Event_1030(UInt32 Prop_UInt32_1, UInt32 Prop_UInt32_2)		RequestManager	task_0	Informational		Request Manager is executing request [%1-%2]
-Microsoft-Windows-MCCS-AccountsHost	1031	0	Event_1031(UInt32 Prop_UInt32_1, UInt32 Prop_UInt32_2)		RequestManager	task_0	Informational		Request Manager completed request [%1-%2] with success
-Microsoft-Windows-MCCS-AccountsHost	1034	0	Event_1034()		Feeds RequestManager	task_0	Verbose		Refresh requested for a feed that satisfies freshness requirement.
-Microsoft-Windows-MCCS-AccountsHost	1500	0	Comms_RequestManager_StepStart()	Start	Performance RequestManager	Comms_RequestManager_Step	Verbose		RM::[PERFMARKER] Single Step BEGIN
-Microsoft-Windows-MCCS-AccountsHost	1501	0	Comms_RequestManager_StepStop()	Stop	Performance RequestManager	Comms_RequestManager_Step	Verbose		RM::[PERFMARKER] Single Step END
-Microsoft-Windows-MCCS-AccountsHost	1502	0	Comms_RequestManager_ExecuteRequestStart(GUID Prop_ReqGuid, UInt32 Prop_Handle)	Start	Performance RequestManager	Comms_RequestManager_ExecuteRequest	Verbose		RM::[PERFMARKER] Execute request BEGIN (rmguid:%1)(handle:%2)
-Microsoft-Windows-MCCS-AccountsHost	1503	0	Comms_RequestManager_ExecuteRequestStop(GUID Prop_ReqGuid, UInt32 Prop_Handle)	Stop	Performance RequestManager	Comms_RequestManager_ExecuteRequest	Verbose		RM::[PERFMARKER] Execute request END (rmguid:%1)(handle:%2)
-Microsoft-Windows-MCCS-AccountsHost	2000	0	Event_2000(UnicodeString Prop_String, UInt32 Prop_UInt32)		Error SNAS keyword_400000000000	task_0	Error		Sending notification failed for endpoint %1 with error code %2
-Microsoft-Windows-MCCS-AccountsHost	2004	0	Event_2004()		SNAS StateTransition keyword_400000000000	task_0	Informational		SNAS Initialized successfully
-Microsoft-Windows-MCCS-AccountsHost	2005	0	Event_2005()		SNAS StateTransition keyword_400000000000	task_0	Informational		SNAS Uninitialized
-Microsoft-Windows-MCCS-AccountsHost	2051	0	Event_2051(UInt32 Prop_UInt32_1, UInt32 Prop_UInt32_2)		Error SNAS keyword_400000000000	task_0	Error		Provider [%1] failed to initialize with HR: %2
-Microsoft-Windows-MCCS-AccountsHost	2052	0	Event_2052(UInt32 Prop_UInt32_1, UInt32 Prop_UInt32_2)		Error SNAS keyword_400000000000	task_0	Error		Provider [%1] failed to late-initialize HR: %2
-Microsoft-Windows-MCCS-AccountsHost	2053	0	Event_2053(UInt32 Prop_UInt32_1, UInt32 Prop_UInt32_2)		Error SNAS keyword_400000000000	task_0	Error		Failed to CoCreate provider [%1], HR: %2
+Microsoft-Windows-MCCS-AccountsHost	2000	0	Event_2000(UnicodeString Prop_String, UInt32 Prop_UInt32)		Error SNAS	task_0	Error		Sending notification failed for endpoint %1 with error code %2
+Microsoft-Windows-MCCS-AccountsHost	2004	0	Event_2004()		SNAS StateTransition	task_0	Informational		SNAS Initialized successfully
+Microsoft-Windows-MCCS-AccountsHost	2005	0	Event_2005()		SNAS StateTransition	task_0	Informational		SNAS Uninitialized
+Microsoft-Windows-MCCS-AccountsHost	2051	0	Event_2051(UInt32 Prop_UInt32_1, UInt32 Prop_UInt32_2)		Error SNAS	task_0	Error		Provider [%1] failed to initialize with HR: %2
+Microsoft-Windows-MCCS-AccountsHost	2052	0	Event_2052(UInt32 Prop_UInt32_1, UInt32 Prop_UInt32_2)		Error SNAS	task_0	Error		Provider [%1] failed to late-initialize HR: %2
+Microsoft-Windows-MCCS-AccountsHost	2053	0	Event_2053(UInt32 Prop_UInt32_1, UInt32 Prop_UInt32_2)		Error SNAS	task_0	Error		Failed to CoCreate provider [%1], HR: %2
 Microsoft-Windows-MCCS-AccountsHost	2061	0	Event_2061(UnicodeString Prop_String, UInt32 Prop_UInt32)		SNAS	task_0	Informational		Job [%1] submitted with id %2
-Microsoft-Windows-MCCS-AccountsHost	5000	0	Event_5000()		SNService StateTransition keyword_400000000000	task_0	Informational		SNService - Service Started
-Microsoft-Windows-MCCS-AccountsHost	5001	0	Event_5001(UInt32 Prop_UInt32)		Error SNService keyword_400000000000	task_0	Error		SNService - Failed to Initialize
-Microsoft-Windows-MCCS-AccountsHost	5003	0	Event_5003(Int32 P1_HexInt32, AnsiString P2_String, UInt32 P3_UInt32)		Error SNService keyword_400000000000	task_0	Error		SNService - Critical error during SNService startup, HRESULT: %1 Location: %2 Line Number: %3
-Microsoft-Windows-MCCS-AccountsHost	5004	0	Event_5004(UInt32 Prop_UInt32)		Error SNService keyword_400000000000	task_0	Error		SNService - Request Manager Database failed to initialze, 0x%1
-Microsoft-Windows-MCCS-AccountsHost	5005	0	Event_5005()		SNService StateTransition keyword_400000000000	task_0	Informational		SNService - Service Stopped
-Microsoft-Windows-MCCS-AccountsHost	5006	0	Event_5006(UInt32 Prop_UInt32)		SNService StateTransition keyword_400000000000	task_0	Informational		SNService - Setting CPU rate cap to %1%%
+Microsoft-Windows-MCCS-AccountsHost	4010	0	Event_4010(UInt32 Prop_UInt32)		Debug	task_0	Verbose		SNASJob: Initializing SNAS job [%1]
+Microsoft-Windows-MCCS-AccountsHost	4011	0	Event_4011(UInt32 Prop_UInt32)		Debug	task_0	Verbose		SNASJob: Job [%1] matches the empty filter
+Microsoft-Windows-MCCS-AccountsHost	4012	0	Event_4012(UInt32 Prop_UInt32)		Debug	task_0	Verbose		SNASJob: Job [%1] matches the filter
+Microsoft-Windows-MCCS-AccountsHost	4013	0	Event_4013()		Debug	task_0	Verbose		Activity: Submission failed and will be rolled back
+Microsoft-Windows-MCCS-AccountsHost	4014	0	Event_4014(Int32 Int32)		Debug	task_0	Verbose		Activity: Remaining schedule executions %1
+Microsoft-Windows-MCCS-AccountsHost	4015	0	Event_4015(Int32 Int32)		Debug	task_0	Verbose		Activity: Remaining execution steps %1
+Microsoft-Windows-MCCS-AccountsHost	4016	0	Event_4016(Int32 Int32)		Debug	task_0	Verbose		Activity: Remaining delayed executions %1
+Microsoft-Windows-MCCS-AccountsHost	4017	0	Event_4017(UnicodeString Prop_String)		Debug	task_0	Verbose		Activity: Schedule was triggered for activity %1
+Microsoft-Windows-MCCS-AccountsHost	4018	0	Event_4018(UnicodeString Prop_String)		Debug	task_0	Verbose		Activity: Canceling pending requests submitted by job [%1]
+Microsoft-Windows-MCCS-AccountsHost	4019	0	Event_4019(Pointer Prop_ptr)		Debug	task_0	Verbose		Dispatcher: Subscribed for schedule %1
+Microsoft-Windows-MCCS-AccountsHost	4020	0	Event_4020()		Debug	task_0	Verbose		Dispatcher: Connectivity events already subscribed, ignoring request
+Microsoft-Windows-MCCS-AccountsHost	4021	0	Event_4021()		Debug	task_0	Verbose		Dispatcher: Starting connectivity events subscription
+Microsoft-Windows-MCCS-AccountsHost	4022	0	Event_4022()		Debug	task_0	Verbose		Dispatcher: Stoping connectivity events subscription
+Microsoft-Windows-MCCS-AccountsHost	4023	0	Event_4023(UInt32 Prop_UInt32)		Debug	task_0	Verbose		Dispatcher: Starting timer with frequency (%1)
+Microsoft-Windows-MCCS-AccountsHost	4024	0	Event_4024(UInt32 Prop_UInt32)		Debug	task_0	Verbose		Dispatcher: Stopping opportunistic timer (%1)
+Microsoft-Windows-MCCS-AccountsHost	4025	0	Event_4025(UInt32 Prop_uint, Int32 Prop_hr)		Debug	task_0	Verbose		JobList: Adding job [%1] failed, error %2
+Microsoft-Windows-MCCS-AccountsHost	4026	0	Event_4026(Int32 Prop_hr)		Debug	task_0	Verbose		JobList: Adding child activity failed, error %1
+Microsoft-Windows-MCCS-AccountsHost	4027	0	Event_4027(UnicodeString Prop_String)		Debug	task_0	Verbose		JobList: Removing job [%1] from the list of jobs
+Microsoft-Windows-MCCS-AccountsHost	4028	0	Event_4028(UnicodeString Prop_String)		Debug	task_0	Verbose		JobList: Job [%1] not found on the main list
+Microsoft-Windows-MCCS-AccountsHost	4029	0	Event_4029(UnicodeString Prop_String)		Debug	task_0	Verbose		JobList: Job [%1] not found in the job->wrapper index
+Microsoft-Windows-MCCS-AccountsHost	4030	0	Event_4030(UnicodeString Prop_String)		Debug	task_0	Verbose		Sched: Last request completed for job [%1]
+Microsoft-Windows-MCCS-AccountsHost	4031	0	Event_4031(UnicodeString Prop_String)		Debug	task_0	Verbose		Sched: Iterating over job [%1]
+Microsoft-Windows-MCCS-AccountsHost	4032	0	Event_4032(UnicodeString Prop_String)		Debug	task_0	Verbose		Sched: Activity [%1] seems rogue and will be removed from the queue
+Microsoft-Windows-MCCS-AccountsHost	4033	0	Event_4033(UnicodeString Prop_String)		Debug	task_0	Verbose		Sched: Call to AboutToExecute failed, activity can't execute
+Microsoft-Windows-MCCS-AccountsHost	4034	0	Event_4034(UnicodeString Prop_String)		Debug	task_0	Verbose		Sched: Executing activity [%1]
+Microsoft-Windows-MCCS-AccountsHost	4035	0	Event_4035()		Debug	task_0	Verbose		Sched: Activity can't execute at the moment as determined by calling AboutToExecute
+Microsoft-Windows-MCCS-AccountsHost	4036	0	Event_4036(UnicodeString Prop_String)		Debug	task_0	Verbose		Sched: Activity [%1] needs DB update, updating
+Microsoft-Windows-MCCS-AccountsHost	4037	0	Event_4037()		Debug	task_0	Verbose		Sched: Incoming message ready to be processed
+Microsoft-Windows-MCCS-AccountsHost	4038	0	Event_4038()		Debug	task_0	Verbose		Sched: Processing incoming message
+Microsoft-Windows-MCCS-AccountsHost	4039	0	Event_4039()		Debug	task_0	Verbose		Sched: Job scheduler state change to 'uninitializing', winding down the message queue
+Microsoft-Windows-MCCS-AccountsHost	4040	0	Event_4040()		Debug	task_0	Verbose		Sched: All pre-existing messages has been processed
+Microsoft-Windows-MCCS-AccountsHost	4041	0	Event_4041()		Debug	task_0	Verbose		Sched: Job scheduler state change to 'shutting down', canceling all the jobs
+Microsoft-Windows-MCCS-AccountsHost	4042	0	Event_4042()		Debug	task_0	Verbose		Sched: Waiting for jobs to stop executing
+Microsoft-Windows-MCCS-AccountsHost	4043	0	Event_4043()		Debug	task_0	Verbose		Sched: All jobs are deleted, final shutdown stage
+Microsoft-Windows-MCCS-AccountsHost	4044	0	Event_4044()		Debug	task_0	Verbose		Sched: Job scheduler not initialized, ignoring
+Microsoft-Windows-MCCS-AccountsHost	4045	0	Event_4045()		Debug	task_0	Verbose		Sched: Attempting to post message to scheduler while uninitializing
+Microsoft-Windows-MCCS-AccountsHost	4046	0	Event_4046()		Debug	task_0	Verbose		Sched: Ignoring request from canceled job
+Microsoft-Windows-MCCS-AccountsHost	4047	0	Event_4047(UnicodeString Prop_string, Int32 Prop_int)		Debug	task_0	Verbose		Sched: Request completed for job [%1], %2
+Microsoft-Windows-MCCS-AccountsHost	4048	0	Event_4048(UnicodeString Prop_String)		Debug	task_0	Verbose		Sched: Job [%1] matches the filter and will be canceled
+Microsoft-Windows-MCCS-AccountsHost	4049	0	Event_4049()		Debug	task_0	Verbose		Sched: Trailing message processed
+Microsoft-Windows-MCCS-AccountsHost	4050	0	Event_4050()		Debug	task_0	Verbose		Job: Removing persistent job from the registry
+Microsoft-Windows-MCCS-AccountsHost	4051	0	Event_4051()		Debug	task_0	Verbose		Job: Invalid job state persisted (executing). Restoring to idle
+Microsoft-Windows-MCCS-AccountsHost	4052	0	Event_4052(Pointer Prop_ptr, UInt32 Prop_unit)		Debug	task_0	Verbose		Sched: Schedule %1 advised with cookie %2
+Microsoft-Windows-MCCS-AccountsHost	4053	0	Event_4053(Pointer Prop_ptr)		Debug	task_0	Verbose		Sched: Unadvising schedule %1
+Microsoft-Windows-MCCS-AccountsHost	4054	0	Event_4054(Pointer Prop_ptr)		Debug	task_0	Verbose		Sched: Received call from schedule %1
+Microsoft-Windows-MCCS-AccountsHost	4055	0	Event_4055(AnsiString Prop_string)		Debug	task_0	Verbose		APHost: Calling CoFreeUnusedLibrariesEx
+Microsoft-Windows-MCCS-AccountsHost	4056	0	Event_4056(UInt32 Prop_UInt32)		Debug	task_0	Verbose		SNAS: Attempting to execute request with correlation id = %1
+Microsoft-Windows-MCCS-AccountsHost	4057	0	Event_4057(UInt32 Prop_UINT_1, UInt32 Prop_UINT_2)		Debug	task_0	Verbose		SNAS: SNAS instance invalid, actual %1
+Microsoft-Windows-MCCS-AccountsHost	4058	0	Event_4058()		Debug	task_0	Verbose		SNAS: Service was not initialized
+Microsoft-Windows-MCCS-AccountsHost	4059	0	Event_4059()		Debug	task_0	Verbose		SNAS: Unadvising all notifications
+Microsoft-Windows-MCCS-AccountsHost	4060	0	Event_4060()		Debug	task_0	Verbose		SNAS: Request group completed
+Microsoft-Windows-MCCS-AccountsHost	5000	0	Event_5000()		SNService StateTransition	task_0	Informational		SNService - Service Started
+Microsoft-Windows-MCCS-AccountsHost	5001	0	Event_5001(UInt32 Prop_UInt32)		Error SNService	task_0	Error		SNService - Failed to Initialize
+Microsoft-Windows-MCCS-AccountsHost	5003	0	Event_5003(Int32 P1_HexInt32, AnsiString P2_String, UInt32 P3_UInt32)		Error SNService	task_0	Error		SNService - Critical error during SNService startup, HRESULT: %1 Location: %2 Line Number: %3
+Microsoft-Windows-MCCS-AccountsHost	5004	0	Event_5004(UInt32 Prop_UInt32)		Error SNService	task_0	Error		SNService - Request Manager Database failed to initialze, 0x%1
+Microsoft-Windows-MCCS-AccountsHost	5005	0	Event_5005()		SNService StateTransition	task_0	Informational		SNService - Service Stopped
+Microsoft-Windows-MCCS-AccountsHost	5006	0	Event_5006(UInt32 Prop_UInt32)		SNService StateTransition	task_0	Informational		SNService - Setting CPU rate cap to %1%%
 Microsoft-Windows-MCCS-AccountsHost	7001	0	Event_7001(UnicodeString Prop_String)		JobDispatcher	task_0	Informational		Job [%1] completed execution and will not be rescheduled
 Microsoft-Windows-MCCS-AccountsHost	7002	0	Event_7002(UnicodeString Prop_String, UInt32 Prop_UInt32)		JobDispatcher Warning	task_0	Warning		Job [%1] failed, error [%2] and will remain inactive in the queue
-Microsoft-Windows-MCCS-AccountsHost	7003	0	Event_7003(UnicodeString Prop_String, UInt32 Prop_UInt32_1, UInt32 Prop_UInt32_2)		JobDispatcher	task_0	Informational		Job [%1] completed all requests for given state and will be rescheduled for execution, allowExecutionInSeconds [%2] onlyWhenConnectionChanged [%3]
+Microsoft-Windows-MCCS-AccountsHost	7003	0	Event_7003(UnicodeString Prop_String, UInt32 Prop_UInt32)		JobDispatcher	task_0	Informational		Job [%1] completed all requests for given state and will be rescheduled for execution, onlyWhenConnectionChanged [%2]
 Microsoft-Windows-MCCS-AccountsHost	7004	0	Event_7004()		JobDispatcher Warning	task_0	Warning		Job Dispatcher exceeded maximum number of jobs and will cancel oldest jobs in the queue
 Microsoft-Windows-MCCS-AccountsHost	7005	0	Event_7005(UnicodeString Prop_String)		JobDispatcher Warning	task_0	Warning		Job [%1] expired and will be removed from the queue
 Microsoft-Windows-MCCS-AccountsHost	7006	0	Event_7006(UnicodeString Prop_String, UInt32 Prop_UInt32)		JobDispatcher	task_0	Informational		Job [%1] SNJobType:[%2] Executing
@@ -59,7 +80,6 @@ Microsoft-Windows-MCCS-AccountsHost	7012	0	Event_7012(UnicodeString Prop_String)
 Microsoft-Windows-MCCS-AccountsHost	7013	0	Event_7013()		JobDispatcher	task_0	Informational		Job dispatcher received retry message from Connection Manager
 Microsoft-Windows-MCCS-AccountsHost	7014	0	Event_7014()		JobDispatcher	task_0	Informational		Job dispatcher received time based retry message and will retry failed jobs
 Microsoft-Windows-MCCS-AccountsHost	7015	0	Event_7015(UInt32 Prop_UInt32)		Error JobDispatcher	task_0	Error		Job dispatcher received time based retry message and will retry failed jobs, error %1
-Microsoft-Windows-MCCS-AccountsHost	7016	0	Event_7016()		JobDispatcher	task_0	Informational		Job dispatcher created new volume
 Microsoft-Windows-MCCS-AccountsHost	7022	0	Event_7022(Int32 P1_HexInt32, AnsiString P2_String, UInt32 P3_UInt32)		Error JobDispatcher	task_0	Error		Unexpected job dispatcher failure occured, HRESULT: %1 Location: %2 Line Number: %3
 Microsoft-Windows-MCCS-AccountsHost	7023	0	Event_7023(UInt32 Prop_UInt32)		Error JobDispatcher	task_0	Error		Failed to cancel job, hr = %1
 Microsoft-Windows-MCCS-AccountsHost	7024	0	Event_7024(UInt32 Prop_UInt32_1, UInt32 Prop_UInt32_2)		Error JobDispatcher	task_0	Error		Failed to add job %1 to the queue, hr = %2
@@ -74,17 +94,14 @@ Microsoft-Windows-MCCS-AccountsHost	7032	0	Event_7032(Pointer Prop_SubmissionID0
 Microsoft-Windows-MCCS-AccountsHost	7033	0	Event_7033(Pointer Prop_SubmissionID0, Pointer Prop_SubmissionID1)		JobDispatcher	task_0	Informational		Added request with handle [%1] to the submission list of activity with handle [%2]
 Microsoft-Windows-MCCS-AccountsHost	7034	0	Event_7034(Pointer Prop_SubmissionID0, Pointer Prop_SubmissionID1)		JobDispatcher	task_0	Informational		Removed submission with handle [%1] from the submission list of activity with handle [%2]
 Microsoft-Windows-MCCS-AccountsHost	7035	0	Event_7035(Pointer Prop_SubmissionID0, Pointer Prop_SubmissionID1)		JobDispatcher	task_0	Informational		Submission with handle [%1] completed but was not removed from submission list of activity with handle [%2]
-Microsoft-Windows-MCCS-AccountsHost	8500	0	Event_8500(UInt32 Prop_UInt32)		Room Warning	task_0	Warning		Setting Room background picture, deleting remote room picture (Step) failed with result %1
-Microsoft-Windows-MCCS-AccountsHost	8501	0	Event_8501(UInt32 Prop_UInt32)		Room Warning	task_0	Warning		Setting Room background picture, uploading room picture (Step) failed with result %1
-Microsoft-Windows-MCCS-AccountsHost	8502	0	Event_8502(UInt32 Prop_UInt32)		Room Warning	task_0	Warning		Download Room background picture, download room picture metadata (Step) failed with result %1
-Microsoft-Windows-MCCS-AccountsHost	8503	0	Event_8503(UInt32 Prop_UInt32)		Room Warning	task_0	Warning		Download Room background picture, download room picture binary (Step) failed with result %1
+Microsoft-Windows-MCCS-AccountsHost	7036	0	Event_7036(UnicodeString Prop_String)		JobDispatcher	task_0	Informational		Child activity with id [%1] is about to be removed but it's parent activity is null
 Microsoft-Windows-MCCS-AccountsHost	9001	0	Comms_APHost_InitProvidersStart()	Start	Performance	Comms_APHost_InitProviders	Informational		
 Microsoft-Windows-MCCS-AccountsHost	9002	0	Comms_APHost_InitProvidersStop()	Stop	Performance	Comms_APHost_InitProviders	Informational		
 Microsoft-Windows-MCCS-AccountsHost	9003	0	Comms_APHost_OnProvidersLoadedStart()	Start	Performance	Comms_APHost_OnProvidersLoaded	Informational		
 Microsoft-Windows-MCCS-AccountsHost	9004	0	Comms_APHost_OnProvidersLoadedStop()	Stop	Performance	Comms_APHost_OnProvidersLoaded	Informational		
 Microsoft-Windows-MCCS-AccountsHost	9005	0	Comms_APHost_UnInitProvidersStart()	Start	Performance	Comms_APHost_UnInitProviders	Informational		
 Microsoft-Windows-MCCS-AccountsHost	9006	0	Comms_APHost_UnInitProvidersStop()	Stop	Performance	Comms_APHost_UnInitProviders	Informational		
-Microsoft-Windows-MCCS-AccountsHost	9007	0	Comms_APHost_OnServiceStartingStart()	Start	Performance keyword_400000000000	Comms_APHost_OnServiceStarting	Informational		
-Microsoft-Windows-MCCS-AccountsHost	9008	0	Comms_APHost_OnServiceStartingStop()	Stop	Performance keyword_400000000000	Comms_APHost_OnServiceStarting	Informational		
+Microsoft-Windows-MCCS-AccountsHost	9007	0	Comms_APHost_OnServiceStartingStart()	Start	Performance	Comms_APHost_OnServiceStarting	Informational		
+Microsoft-Windows-MCCS-AccountsHost	9008	0	Comms_APHost_OnServiceStartingStop()	Stop	Performance	Comms_APHost_OnServiceStarting	Informational		
 Microsoft-Windows-MCCS-AccountsHost	9009	0	Comms_APHost_OnServiceStartedStart()	Start	Performance	Comms_APHost_OnServiceStarted	Informational		
 Microsoft-Windows-MCCS-AccountsHost	9010	0	Comms_APHost_OnServiceStartedStop()	Stop	Performance	Comms_APHost_OnServiceStarted	Informational		

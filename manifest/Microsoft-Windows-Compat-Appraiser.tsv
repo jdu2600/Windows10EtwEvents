@@ -1,4 +1,4 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-Compat-Appraiser	1	0	Event_1(UInt32 SourceLine, AnsiString SourceFile, AnsiString FunctionName, AnsiString Message)		Info	task_0	Informational	Microsoft-Windows-Compat-Appraiser/Analytic	<ERROR_EVT_MESSAGE_LOCALE_NOT_FOUND>
-Microsoft-Windows-Compat-Appraiser	2	0	Event_2(UInt32 SourceLine, AnsiString SourceFile, AnsiString FunctionName, UInt32 HResult, AnsiString Message)		Error	task_0	Error	Microsoft-Windows-Compat-Appraiser/Analytic	<ERROR_EVT_MESSAGE_LOCALE_NOT_FOUND>
-Microsoft-Windows-Compat-Appraiser	3	0	Event_3(AnsiString Message)			task_0	Informational	Microsoft-Windows-Compat-Appraiser/Operational	<ERROR_EVT_MESSAGE_LOCALE_NOT_FOUND>
+Microsoft-Windows-Compat-Appraiser	1	0	Event_1(UInt32 SourceLine, AnsiString SourceFile, AnsiString FunctionName, AnsiString Message)		Info	task_0	Informational	Microsoft-Windows-Compat-Appraiser/Analytic	Information from:\r\n%2:%1\r\n%3\r\n\r\n%4
+Microsoft-Windows-Compat-Appraiser	2	0	Event_2(UInt32 SourceLine, AnsiString SourceFile, AnsiString FunctionName, UInt32 HResult, AnsiString Message)		Error	task_0	Error	Microsoft-Windows-Compat-Appraiser/Analytic	Error %4 from:\r\n%2:%1\r\n%3\r\n\r\n%5
+Microsoft-Windows-Compat-Appraiser	3	0	Event_3(AnsiString Message)			task_0	Informational	Microsoft-Windows-Compat-Appraiser/Operational	%1

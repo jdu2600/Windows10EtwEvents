@@ -1,6 +1,6 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-Winlogon	1	0	AuthenticateUserStart()	Start	PerfInstrumentation keyword_200000000000	AuthenticateUser	Informational	Microsoft-Windows-Winlogon/Diagnostic	
-Microsoft-Windows-Winlogon	2	0	AuthenticateUserStop(UInt32 Win32Status)	Stop	PerfInstrumentation keyword_200000000000	AuthenticateUser	Informational	Microsoft-Windows-Winlogon/Diagnostic	
+Microsoft-Windows-Winlogon	1	0	AuthenticateUserStart()	Start	PerfInstrumentation keyword_200000000000	AuthenticateUser	Informational	Microsoft-Windows-Winlogon/Operational	Authentication started.
+Microsoft-Windows-Winlogon	2	0	AuthenticateUserStop(UInt32 Win32Status)	Stop	PerfInstrumentation keyword_200000000000	AuthenticateUser	Informational	Microsoft-Windows-Winlogon/Operational	Authentication stopped. Result %1
 Microsoft-Windows-Winlogon	3	0	UpdatePerUserSystemParametersStart(UInt32 Flags)	Start	PerfInstrumentation	UpdatePerUserSystemParameters	Informational	Microsoft-Windows-Winlogon/Diagnostic	
 Microsoft-Windows-Winlogon	4	0	UpdatePerUserSystemParametersStop(UInt32 Flags)	Stop	PerfInstrumentation	UpdatePerUserSystemParameters	Informational	Microsoft-Windows-Winlogon/Diagnostic	
 Microsoft-Windows-Winlogon	5	0	CheckWindowsLicenseStatusStart()	Start	PerfInstrumentation	CheckWindowsLicenseStatus	Informational	Microsoft-Windows-Winlogon/Diagnostic	
@@ -61,8 +61,8 @@ Microsoft-Windows-Winlogon	807	0	NotifySubscriberNotificationPended(UInt32 Event
 Microsoft-Windows-Winlogon	808	0	NotifySubscriberNotificationFailed(UInt32 Event, UnicodeString SubscriberName, UnicodeString Message)	NotificationFailed	PerfInstrumentation	NotifySubscriber	Informational	Microsoft-Windows-Winlogon/Diagnostic	
 Microsoft-Windows-Winlogon	809	0	ConnectToSubscriberStart(UnicodeString SubscriberName)	Start	PerfInstrumentation	ConnectToSubscriber	Informational	Microsoft-Windows-Winlogon/Diagnostic	
 Microsoft-Windows-Winlogon	810	0	ConnectToSubscriberStop(UnicodeString SubscriberName)	Stop	PerfInstrumentation	ConnectToSubscriber	Informational	Microsoft-Windows-Winlogon/Diagnostic	
-Microsoft-Windows-Winlogon	811	0	CallSubscriberStart(UInt32 Event, UnicodeString SubscriberName)	Start	PerfInstrumentation	CallSubscriber	Informational	Microsoft-Windows-Winlogon/Diagnostic	
-Microsoft-Windows-Winlogon	812	0	CallSubscriberStop(UInt32 Event, UnicodeString SubscriberName)	Stop	PerfInstrumentation	CallSubscriber	Informational	Microsoft-Windows-Winlogon/Diagnostic	
+Microsoft-Windows-Winlogon	811	0	CallSubscriberStart(UInt32 Event, UnicodeString SubscriberName)	Start	PerfInstrumentation	CallSubscriber	Informational	Microsoft-Windows-Winlogon/Operational	The winlogon notification subscriber <%2> began handling the notification event (%1).
+Microsoft-Windows-Winlogon	812	0	CallSubscriberStop(UInt32 Event, UnicodeString SubscriberName)	Stop	PerfInstrumentation	CallSubscriber	Informational	Microsoft-Windows-Winlogon/Operational	The winlogon notification subscriber <%2> finished handling the notification event (%1).
 Microsoft-Windows-Winlogon	1001	0	LogonHours(UInt32 ActionId, UInt32 TimeLeft)		NotificationEvents	LogonHours	Informational	Microsoft-Windows-Winlogon/Operational	Logon hours expiration warning.
 Microsoft-Windows-Winlogon	1002	0	Message_0x400003EA()			task_0	Always		The shell stopped unexpectedly and %1 was restarted.
 Microsoft-Windows-Winlogon	1101	0	EAS(SID UserSid, UnicodeString UserName, UnicodeString UserDomain)			EAS	Warning	Microsoft-Windows-Winlogon/Operational	The computer will be locked because the user has exceeded the maximum number of failed logon attempts allowed on this computer. A recovery key is required to unlock the device.\r\nUserSid: %1 \r\nUserName: %2 \r\nUserDomain: %3

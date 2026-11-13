@@ -1,6 +1,6 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
 Microsoft-Windows-Telephony-VoipRT	1	0	Event_1(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		Error	task_0	Error		[ERROR] originated HRESULT=%1 [%2 @ %3]
-Microsoft-Windows-Telephony-VoipRT	2	0	Event_2(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		keyword_400000000000	task_0	Warning		[ERROR] propagated HRESULT=%1 [%2 @ %3]
+Microsoft-Windows-Telephony-VoipRT	2	0	Event_2(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		Warning	task_0	Warning		[ERROR] propagated HRESULT=%1 [%2 @ %3]
 Microsoft-Windows-Telephony-VoipRT	10	0	Event_10(UnicodeString Prop_UnicodeString)		Debug	task_0	Verbose		%1
 Microsoft-Windows-Telephony-VoipRT	100	0	Event_100()		VoipCallCoordinator	task_0	Informational		Opening VoIP RPC client
 Microsoft-Windows-Telephony-VoipRT	101	0	Event_101()		VoipCallCoordinator	task_0	Informational		Opened VoIP RPC client

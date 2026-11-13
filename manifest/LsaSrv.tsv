@@ -20,6 +20,7 @@ LsaSrv	6040	0	Event_6040(UnicodeString Package, UnicodeString TargetName)			task
 LsaSrv	6144	0	Event_6144()			task_0	Informational	System	A secret object private to LSA was queried by a client. This object was returned in encrypted format for security reasons.
 LsaSrv	6145	0	Event_6145(UnicodeString MissingCAPDNs)			task_0	Critical	System	An error occurred while retrieving new Central Access Policies for this machine.\r\n\r\nCould not retrieve policies for the following DNs:\r\n%1
 LsaSrv	6146	0	Event_6146(UnicodeString Error, UnicodeString CAPEName, UnicodeString CAPEDesc)			task_0	Error	System	An error occurred while processing new Central Access Policies for this machine. Validation failed for the following Central Access Rule referenced by one or more of the Central Access Policies:\r\n\r\n\tError:\t\t%1\r\n\r\n\tName:\t\t%2\r\n\tDescription:\t%3
+LsaSrv	6147	0	Event_6147()			task_0	Warning	System	Credential Guard is configured to run, but is not licensed. Credential Guard was not started.
 LsaSrv	6182	0	Event_6182(HexInt64 TargetLogonId, UnicodeString AccountName, UnicodeString DomainName)			task_0	Warning	Microsoft-Windows-LSA/Diagnostic	LogonSession alive after interactive user logoff. Indicates a possible token leak in one of the services. \r\nLogon ID:%1\r\nAccount Name:%2\r\nDomain Name:%3
 LsaSrv	6225	0	LSALogonStart()	Start		LSALogon	Informational	Microsoft-Windows-LSA/Performance	
 LsaSrv	6226	0	LSALogonStop()	Stop		LSALogon	Informational	Microsoft-Windows-LSA/Performance	

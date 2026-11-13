@@ -42,3 +42,8 @@ Microsoft-Windows-Runtime-Web-Http	40	0	HttpCct40(UInt32 pendingOperations)			Ht
 Microsoft-Windows-Runtime-Web-Http	41	0	HttpCct41(UInt32 pendingOperations)			HttpCct	Informational	Microsoft-Windows-Runtime-Web-Http/Tracing	Increment pending receive operations to %1.
 Microsoft-Windows-Runtime-Web-Http	42	0	HttpCct42(UInt32 responseState)			HttpCct	Informational	Microsoft-Windows-Runtime-Web-Http/Tracing	Set response state to %1.
 Microsoft-Windows-Runtime-Web-Http	43	0	HttpAsyncI/O43(Pointer obj)			HttpAsyncI/O	Informational	Microsoft-Windows-Runtime-Web-Http/Tracing	Handle %1: HTTP/2 enabled.
+Microsoft-Windows-Runtime-Web-Http	44	0	HttpOperation44(UInt32 asyncOperation, Pointer asyncObject)			HttpOperation	Informational	Microsoft-Windows-Runtime-Web-Http/Tracing	Async operation %1 at %2 started server custom validation.
+Microsoft-Windows-Runtime-Web-Http	45	0	HttpOperation45(UInt32 asyncOperation, Pointer asyncObject)			HttpOperation	Informational	Microsoft-Windows-Runtime-Web-Http/Tracing	Async operation %1 at %2 waiting for completion of server custom validation.
+Microsoft-Windows-Runtime-Web-Http	46	0	HttpOperation46(UInt32 asyncOperation, Pointer asyncObject)			HttpOperation	Error	Microsoft-Windows-Runtime-Web-Http/Tracing	Async operation %1 at %2 failed server custom validation.
+Microsoft-Windows-Runtime-Web-Http	47	0	HttpOperation47(UInt32 asyncOperation, Pointer asyncObject)			HttpOperation	Informational	Microsoft-Windows-Runtime-Web-Http/Tracing	Async operation %1 at %2 successfully completed server custom validation.
+Microsoft-Windows-Runtime-Web-Http	48	0	HttpAsyncI/O48()			HttpAsyncI/O	Warning	Microsoft-Windows-Runtime-Web-Http/Tracing	A dialog cannot be displayed because the parent window handle cannot be determined.

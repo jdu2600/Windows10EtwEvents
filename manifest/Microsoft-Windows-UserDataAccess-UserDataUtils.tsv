@@ -3,13 +3,18 @@ Microsoft-Windows-UserDataAccess-UserDataUtils	1	0	Event_1(Int32 P1_HResult, Ans
 Microsoft-Windows-UserDataAccess-UserDataUtils	2	0	Event_2(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		Warning	task_0	Warning		Error Propagated: %1 Location: %2 Line Number: %3
 Microsoft-Windows-UserDataAccess-UserDataUtils	3	0	Trace(Pointer Message)		debug	Trace	Verbose		
 Microsoft-Windows-UserDataAccess-UserDataUtils	101	0	Event_101(UInt32 Prop_LINE_UInt32, UnicodeString Prop_Trace_UnicodeString)		Error	task_0	Error		Error: HRESULT: %1 Service: %2
-Microsoft-Windows-UserDataAccess-UserDataUtils	102	0	Event_102(UnicodeString Prop_Trace_UnicodeString)		ServiceBase	task_0	Informational		Service: %1 is starting up
+Microsoft-Windows-UserDataAccess-UserDataUtils	102	0	Event_102(UnicodeString Prop_Trace_UnicodeString)		ServiceBase keyword_400000000000	task_0	Informational		Service: %1 is starting up
 Microsoft-Windows-UserDataAccess-UserDataUtils	103	0	Event_103(UnicodeString Prop_Trace_UnicodeString)		ServiceBase	task_0	Informational		Service: %1 has entered the running state
-Microsoft-Windows-UserDataAccess-UserDataUtils	104	0	Event_104(UnicodeString Prop_Trace_UnicodeString)		ServiceBase	task_0	Informational		Service: %1 is shutting down
+Microsoft-Windows-UserDataAccess-UserDataUtils	104	0	Event_104(UnicodeString Prop_Trace_UnicodeString)		ServiceBase keyword_400000000000	task_0	Informational		Service: %1 is shutting down
 Microsoft-Windows-UserDataAccess-UserDataUtils	105	0	Event_105(UnicodeString P1_UnicodeString, UInt32 P1_UInt32)		ServiceBase	task_0	Informational		Service: %1 received control: %2
+Microsoft-Windows-UserDataAccess-UserDataUtils	106	0	Event_106(UnicodeString P1_UnicodeString, UInt32 P1_UInt32)		Error ServiceBase keyword_400000000000	task_0	Error		Error during OnStarting for %1: %2
+Microsoft-Windows-UserDataAccess-UserDataUtils	107	0	Event_107(UnicodeString P1_UnicodeString, UInt32 P1_UInt32)		Error ServiceBase keyword_400000000000	task_0	Error		Error during OnStarted for %1: %2
 Microsoft-Windows-UserDataAccess-UserDataUtils	301	0	Event_301(Int32 P1_HexInt32, UInt32 Prop_Handle, UInt32 Prop_Handle2)		Error	task_0	Error		CHSPinYinHelper Init failed: HRESULT: %1, CreateFile: %2, CreateFileMapping: %3
 Microsoft-Windows-UserDataAccess-UserDataUtils	401	0	Event_401(UnicodeString P1_UnicodeString)		Warning	task_0	Warning		Unknown photo type: %1. Default to be binary.
 Microsoft-Windows-UserDataAccess-UserDataUtils	402	0	Event_402(UnicodeString P1_UnicodeString)		Warning	task_0	Warning		Unknown photo binary encoding type: %1. Default to be base64.
 Microsoft-Windows-UserDataAccess-UserDataUtils	403	0	Event_403()		Warning	task_0	Warning		Cannot find photo type. Default to be binary.
 Microsoft-Windows-UserDataAccess-UserDataUtils	501	0	Event_501(Int32 P1_Int32)		Error keyword_400000000000	task_0	Error		JetInit failed with JET error: %1
 Microsoft-Windows-UserDataAccess-UserDataUtils	502	0	Event_502(Int32 P1_Int32)		Error keyword_400000000000	task_0	Error		JetAttachDatabase failed with JET error: %1
+Microsoft-Windows-UserDataAccess-UserDataUtils	600	0	Event_600(Int32 P1_Int32)		UserDataAccessUtils	task_0	Informational		GetBrokerEventIdForPackage: eventCount = %1
+Microsoft-Windows-UserDataAccess-UserDataUtils	601	0	Event_601(UnicodeString P1_UnicodeString, UnicodeString P2_UnicodeString)		UserDataAccessUtils	task_0	Informational		GetBrokerEventIdForPackage: pPackageFamilyName= %1, packageFamilyName = %2
+Microsoft-Windows-UserDataAccess-UserDataUtils	602	0	Event_602(Int32 P1_HexInt32, Int32 P2_HexInt32)		UserDataAccessUtils	task_0	Informational		GetBrokerEventIdForPackage: capabilities = %1, desiredCapabilities = %2

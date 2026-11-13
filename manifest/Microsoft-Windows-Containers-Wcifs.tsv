@@ -1,0 +1,5 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Containers-Wcifs	1	0	Event_1(HexInt32 NTStatus)			task_0	Error	Microsoft-Windows-Containers-Wcifs/Operational	WCIFS filter registratiion failed with error message: %1
+Microsoft-Windows-Containers-Wcifs	2	0	Event_2()			task_0	Informational	Microsoft-Windows-Containers-Wcifs/Operational	WCIFS filter registration succeeded
+Microsoft-Windows-Containers-Wcifs	3	0	Event_3(HexInt32 NTStatus, UInt16 VolumeNameLength, UnicodeString VolumeName)			task_0	Error	Microsoft-Windows-Containers-Wcifs/Operational	WCIFS filter failed to attach to volume '%3' with error message: %1
+Microsoft-Windows-Containers-Wcifs	4	0	Event_4()			task_0	Informational	Microsoft-Windows-Containers-Wcifs/Operational	WCIFS filter unload succeeded

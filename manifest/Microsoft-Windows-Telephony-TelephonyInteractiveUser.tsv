@@ -1,11 +1,12 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
 Microsoft-Windows-Telephony-TelephonyInteractiveUser	1	0	Event_1(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		Error	task_0	Error		[ERROR] originated HRESULT=%1 [%2 @ %3]
-Microsoft-Windows-Telephony-TelephonyInteractiveUser	2	0	Event_2(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		keyword_400000000000	task_0	Warning		[ERROR] propagated HRESULT=%1 [%2 @ %3]
+Microsoft-Windows-Telephony-TelephonyInteractiveUser	2	0	Event_2(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		Warning	task_0	Warning		[ERROR] propagated HRESULT=%1 [%2 @ %3]
 Microsoft-Windows-Telephony-TelephonyInteractiveUser	101	0	Event_101(UInt32 Prop_HexInt32_1)		MISC	task_0	Verbose		[Incoming Call Toast] Show, callId: %1
 Microsoft-Windows-Telephony-TelephonyInteractiveUser	102	0	Event_102(UInt32 Prop_HexInt32_1)		MISC	task_0	Verbose		[Incoming Call Toast] Hide, callId: %1
 Microsoft-Windows-Telephony-TelephonyInteractiveUser	103	0	Event_103(UnicodeString String)		MISC	task_0	Verbose		[Incoming Call Toast] Activated, arguments: %1
 Microsoft-Windows-Telephony-TelephonyInteractiveUser	104	0	Event_104(UnicodeString String1, UnicodeString String2, UnicodeString String3, UnicodeString String4)		MISC	task_0	Verbose		[Incoming Call Toast] Post, aumId: %1, tag: %2, group: %3, xml: %4
 Microsoft-Windows-Telephony-TelephonyInteractiveUser	105	0	Event_105(UnicodeString String1, UnicodeString String2, UnicodeString String3)		MISC	task_0	Verbose		[Incoming Call Toast] Remove, aumId: %1, tag: %2, group: %3
+Microsoft-Windows-Telephony-TelephonyInteractiveUser	106	0	Event_106(UInt32 Prop_HexInt32_1, UInt32 Prop_HexInt32_2)		MISC	task_0	Verbose		[Incoming Call Toast] Invoked, callId: %1, status: %2
 Microsoft-Windows-Telephony-TelephonyInteractiveUser	201	0	Event_201(UnicodeString String1, UnicodeString String2)		MISC	task_0	Verbose		[App Launcher] Handle Launch Async, aumId: %1, arguments: %2
 Microsoft-Windows-Telephony-TelephonyInteractiveUser	202	0	Event_202()		MISC	task_0	Verbose		[App Launcher] Activate Application
 Microsoft-Windows-Telephony-TelephonyInteractiveUser	203	0	Event_203()		MISC	task_0	Verbose		[App Launcher] Activate Application above lock

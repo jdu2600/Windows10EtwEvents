@@ -10,6 +10,9 @@ Microsoft-Windows-SettingSync-Azure	5008	0	Event_5008(UnicodeString UnitId, UInt
 Microsoft-Windows-SettingSync-Azure	5009	0	Event_5009(UnicodeString CollectionId, UInt32 HRESULT)			task_0	Error	Microsoft-Windows-SettingSync-Azure/Operational	SettingDataConverter failed to initialize - CollectionId: %1, HResult: %2
 Microsoft-Windows-SettingSync-Azure	5010	0	Event_5010(UnicodeString String, UInt32 UInt32, UInt32 HRESULT)			task_0	Error	Microsoft-Windows-SettingSync-Azure/Operational	Failed to register collection: %1, operation: %2, HRESULT: %3
 Microsoft-Windows-SettingSync-Azure	5011	0	Event_5011(UInt32 HRESULT)			task_0	Error	Microsoft-Windows-SettingSync-Azure/Operational	Initialize Azure WNS registrar failed, HRESULT: %1
+Microsoft-Windows-SettingSync-Azure	5012	0	Event_5012(UnicodeString Message)			task_0	Error	Microsoft-Windows-SettingSync-Azure/Operational	%1
+Microsoft-Windows-SettingSync-Azure	5013	0	Event_5013(UnicodeString Message)			task_0	Warning	Microsoft-Windows-SettingSync-Azure/Operational	%1
+Microsoft-Windows-SettingSync-Azure	5014	0	Event_5014(UnicodeString Message)			task_0	Informational	Microsoft-Windows-SettingSync-Azure/Operational	%1
 Microsoft-Windows-SettingSync-Azure	6001	0	Event_6001(UnicodeString ApiName, UnicodeString CollectionId, UInt32 ProviderOp, UInt64 Duration, UInt32 HRESULT, GUID CorrelationId)			task_0	Informational	Microsoft-Windows-SettingSync-Azure/Debug	%1 - Collection: %2, ProviderOp: %3, Duration: %4, HRESULT: %5, CorrelationId: %6
 Microsoft-Windows-SettingSync-Azure	6003	0	Event_6003(UInt32 Name0Data0, UInt32 Name0Data1, UInt32 HRESULT)			task_0	Informational	Microsoft-Windows-SettingSync-Azure/Debug	Call to initialize new Azure Settings WNF state name, New name: %1 %2, HRESULT: %3
 Microsoft-Windows-SettingSync-Azure	6004	0	Event_6004(UInt32 Name0Data0, UInt32 Name0Data1, UInt32 Name1Data0, UInt32 Name1Data1, UInt32 HRESULT)			task_0	Informational	Microsoft-Windows-SettingSync-Azure/Debug	Call to uninitialize old Azure Settings WNF state name, Old name: %1 %2, New Name: %3 %4, HRESULT: %5
@@ -20,3 +23,6 @@ Microsoft-Windows-SettingSync-Azure	6009	0	Event_6009(UInt32 HRESULT)			task_0	I
 Microsoft-Windows-SettingSync-Azure	6010	0	Event_6010(UInt32 HRESULT)			task_0	Informational	Microsoft-Windows-SettingSync-Azure/Debug	Unregister unneeded registrations, HRESULT: %1
 Microsoft-Windows-SettingSync-Azure	6011	0	Event_6011(UInt32 HRESULT)			task_0	Informational	Microsoft-Windows-SettingSync-Azure/Debug	Cancel registrations, HRESULT: %1
 Microsoft-Windows-SettingSync-Azure	6012	0	Event_6012(UInt32 HRESULT)			task_0	Informational	Microsoft-Windows-SettingSync-Azure/Debug	Download remote interest, HRESULT: %1
+Microsoft-Windows-SettingSync-Azure	6013	0	Event_6013(UnicodeString Message)			task_0	Error	Microsoft-Windows-SettingSync-Azure/Debug	%1
+Microsoft-Windows-SettingSync-Azure	6014	0	Event_6014(UnicodeString Message)			task_0	Warning	Microsoft-Windows-SettingSync-Azure/Debug	%1
+Microsoft-Windows-SettingSync-Azure	6015	0	Event_6015(UnicodeString Message)			task_0	Informational	Microsoft-Windows-SettingSync-Azure/Debug	%1

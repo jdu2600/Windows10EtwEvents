@@ -13,10 +13,11 @@ Microsoft-Windows-MCCS-NetworkHelper	109	0	Event_109(UInt32 P1_UInt32, UInt32 P2
 Microsoft-Windows-MCCS-NetworkHelper	110	0	Event_110(AnsiString P1_String, UInt32 P2_UInt32, UInt32 P3_UInt32)		Warning	task_0	Warning		NetworkHelper::HttpTransport: CmSetRequirement(%1) Failure: Handle: %2 Error: %3
 Microsoft-Windows-MCCS-NetworkHelper	111	0	Event_111(Int32 P1_UInt32, UnicodeString P2_String)		Error	task_0	Error		NetworkHelper::CrackUrl Failure. HR: %1 Url: %2
 Microsoft-Windows-MCCS-NetworkHelper	201	0	Event_201(Boolean P1_Boolean, Int32 P2_Int32)		Warning	task_0	Warning		Set PDC Active:%1, invalid CCT state:%2
-Microsoft-Windows-MCCS-NetworkHelper	202	0	Event_202(UnicodeString P1_String, Boolean P2_Boolean, Int32 P2_Int32)		StateTransition	task_0	Informational		Triggering PDC for sender %1, IsActive %2, ActivationCount %3
+Microsoft-Windows-MCCS-NetworkHelper	202	0	Event_202(UnicodeString P1_String, Boolean P2_Boolean, UnicodeString P3_String, Pointer P4_Handle)		StateTransition	task_0	Informational		Triggering PDC for sender: %1, Activate: %2, Task: %3, ActivationHandle: %4
 Microsoft-Windows-MCCS-NetworkHelper	203	0	Event_203(UnicodeString P1_String)		StateTransition	task_0	Informational		Triggered CCT for sender %1
 Microsoft-Windows-MCCS-NetworkHelper	204	0	Event_204()		Warning	task_0	Warning		Inactivate PDC at the last minute.
 Microsoft-Windows-MCCS-NetworkHelper	205	0	Event_205()		Warning	task_0	Warning		CCT failed, possibly because of VPN.
 Microsoft-Windows-MCCS-NetworkHelper	206	0	Event_206(UnicodeString P1_String, Boolean P2_Boolean)		StateTransition	task_0	Informational		Released CCT for sender %1; Attained CCT %2
 Microsoft-Windows-MCCS-NetworkHelper	207	0	Event_207(Int32 P1_Int32)		Warning keyword_200000000000	task_0	Warning		Invalid CCT state: %1
 Microsoft-Windows-MCCS-NetworkHelper	208	0	Event_208()		Warning	task_0	Warning		CCT failed, number of AOAC connection limitation reached.
+Microsoft-Windows-MCCS-NetworkHelper	209	0	Event_209(Pointer Message)		Warning	task_0	Warning		PDC not renewed due to lack of progress, allowing low power state. ActivationHandle: %1

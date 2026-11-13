@@ -42,6 +42,7 @@ Microsoft-Windows-MCCS-DavSyncProvider	138	0	Event_138(HexInt32 Prop_Id, Boolean
 Microsoft-Windows-MCCS-DavSyncProvider	161	0	Event_161()		CommsService	task_0	Informational		DavSyncProvider: Loading CardDav engine.
 Microsoft-Windows-MCCS-DavSyncProvider	162	0	Event_162()		CommsService	task_0	Informational		DavSyncProvider: Loading CalDav engine.
 Microsoft-Windows-MCCS-DavSyncProvider	166	0	Event_166()		CommsService	task_0	Informational		DavSyncProvider: Stopping Dav engines.
+Microsoft-Windows-MCCS-DavSyncProvider	168	0	Event_168(GUID Prop_Guid, HexInt32 Prop_HexInt32)		CommsService	task_0	Informational		DavSyncProvider: Stop syncing Dav account %1 content type: %2.
 Microsoft-Windows-MCCS-DavSyncProvider	171	0	Event_171(UnicodeString Prop_String)		CommsService	task_0	Informational		DavSyncProvider: Failed to fetch attachment, uri hash %1.
 Microsoft-Windows-MCCS-DavSyncProvider	172	0	Event_172(HexInt32 Prop_Id)		CommsService	task_0	Informational		DavSyncProvider: Delay uploading item (uri hash: %1) changes.
 Microsoft-Windows-MCCS-DavSyncProvider	201	0	SPERF_TAG_DAV_ATTACHMENT_FETCHINGStart()	Start	Performance	SPERF_TAG_DAV_ATTACHMENT_FETCHING	Informational		DavSyncProvider: [Start Marker] [DavSyncProvider_SPERF_TAG_DAV_ATTACHMENT_FETCHING_START] The attachment fetching

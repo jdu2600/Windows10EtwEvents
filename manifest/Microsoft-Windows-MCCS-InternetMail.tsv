@@ -75,14 +75,18 @@ Microsoft-Windows-MCCS-InternetMail	247	0	PIPERF_TAG_SOCKET_STORECERTStop()	Stop
 Microsoft-Windows-MCCS-InternetMail	248	0	PIPERF_TAG_SOCKET_PERFORM_SSLHANDSHAKEStart()	Start	Performance	PIPERF_TAG_SOCKET_PERFORM_SSLHANDSHAKE	Informational		InternetMailProvider: [Start Marker] [NW_HS] [PIPERF_TAG_SOCKET_PERFORM_SSLHANDSHAKE_START] socket perform ssl handshake
 Microsoft-Windows-MCCS-InternetMail	249	0	PIPERF_TAG_SOCKET_PERFORM_SSLHANDSHAKEStop()	Stop	Performance	PIPERF_TAG_SOCKET_PERFORM_SSLHANDSHAKE	Informational		InternetMailProvider: [Stop Marker] [NW_HS] [PIPERF_TAG_SOCKET_PERFORM_SSLHANDSHAKE_STOP] socket perform ssl handshake
 Microsoft-Windows-MCCS-InternetMail	301	0	Event_301(Int32 P1_HResult, Int32 P2_UInt32, UInt32 P3_UInt32, UInt32 P4_UInt32)		Error keyword_200000000000	task_0	Error		Sync result: %1, engine index: %2 severity: %3 retry level: %4
+Microsoft-Windows-MCCS-InternetMail	311	0	Event_311()		Warning keyword_400000000000	task_0	Warning		InternetMail: Cancelling existing socket communication
 Microsoft-Windows-MCCS-InternetMail	401	0	Event_401(UnicodeString Prop_String, Boolean Prop_Boolean)		StateTransition	task_0	Informational		Account %1 ImapIdle set PDC:%2
 Microsoft-Windows-MCCS-InternetMail	402	0	Event_402(UnicodeString Prop_String, Boolean Prop_Boolean)		StateTransition	task_0	Informational		Account %1 ImapIdle set CCT, SUCCEEDED:%2
 Microsoft-Windows-MCCS-InternetMail	403	0	Event_403(UnicodeString Prop_String, Boolean Prop_Boolean)		StateTransition	task_0	Informational		Account %1 ImapIdle Unset CCT, CCT allocated:%2
 Microsoft-Windows-MCCS-InternetMail	451	0	Event_451(UInt32 Prop_Uint)		CommsService keyword_200000000000	task_0	Informational		IMAP folder validity updated to %1
-Microsoft-Windows-MCCS-InternetMail	461	0	Event_461(UInt32 Prop_Uint)		CommsService keyword_200000000000	task_0	Informational		IMAP Failed to fetch message with UID %1
+Microsoft-Windows-MCCS-InternetMail	461	0	Event_461(UInt32 Prop_Uint)		CommsService keyword_400000000000	task_0	Warning		IMAP Failed to fetch message with UID %1
 Microsoft-Windows-MCCS-InternetMail	462	0	Event_462(UInt32 Prop_Uint)		CommsService keyword_200000000000	task_0	Informational		IMAP Skip fetching message with UID %1
+Microsoft-Windows-MCCS-InternetMail	470	0	Event_470(GUID Prop_Guid, UInt32 Prop_Dword_1, UInt32 Prop_Dword_2)		Warning	task_0	Warning		IMAP hdr fetch overflowed batch queue - catching up: acct=%1 max=%2 bytes=%3
+Microsoft-Windows-MCCS-InternetMail	471	0	Event_471(GUID Prop_Guid, UInt32 Prop_Dword_1, UInt32 Prop_Dword_2)		Warning	task_0	Informational		IMAP msg fetch overflowed batch queue - catching up: acct=%1 max=%2 msgs=%3
 Microsoft-Windows-MCCS-InternetMail	481	0	Event_481()		CommsService keyword_200000000000	task_0	Informational		Start AutoConfig
 Microsoft-Windows-MCCS-InternetMail	482	0	Event_482()		CommsService keyword_200000000000	task_0	Informational		Start AutoConfig OEM Provider
 Microsoft-Windows-MCCS-InternetMail	483	0	Event_483()		CommsService keyword_200000000000	task_0	Informational		Start AutoConfig Web Provider
 Microsoft-Windows-MCCS-InternetMail	484	0	Event_484()		CommsService keyword_200000000000	task_0	Informational		Cancel AutoConfig
 Microsoft-Windows-MCCS-InternetMail	485	0	Event_485(UInt32 Prop_Hex)		CommsService keyword_200000000000	task_0	Informational		AutoConfig Provider result: %1.
+Microsoft-Windows-MCCS-InternetMail	501	0	Event_501(GUID Prop_Guid, HexInt32 Prop_HexInt32)		CommsService	task_0	Informational		DavSyncProvider: Stop syncing InternetMail account %1 content type: %2.

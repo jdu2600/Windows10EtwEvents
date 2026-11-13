@@ -85,6 +85,8 @@ Microsoft-Windows-MCCS-SyncController	191	0	Event_191(UnicodeString P2_UnicodeSt
 Microsoft-Windows-MCCS-SyncController	192	0	Event_192(UnicodeString P2_UnicodeString)		CommsService keyword_200000000000	task_0	Error		Sync WNF event: %1
 Microsoft-Windows-MCCS-SyncController	193	0	Event_193(GUID P1_Guid, UnicodeString P2_UnicodeString)		CommsService keyword_200000000000	task_0	Informational		Sync WNF event: %1 - %2
 Microsoft-Windows-MCCS-SyncController	194	0	Event_194(GUID P1_Guid, UnicodeString P2_UnicodeString)		CommsService keyword_200000000000	task_0	Error		Sync WNF event: %1 - %2
+Microsoft-Windows-MCCS-SyncController	195	0	Event_195(UnicodeString P2_UnicodeString)		CommsService keyword_400000000000	task_0	Error		Sync WNF event %1 not found.
+Microsoft-Windows-MCCS-SyncController	196	0	Event_196(Boolean P1_Boolean)		CommsService keyword_400000000000	task_0	Warning		Notified golden account existence: %1.
 Microsoft-Windows-MCCS-SyncController	201	0	Event_201(UInt32 SyncMode, HexInt32 Prop_Dword_2)		StateTransition keyword_200000000000	task_0	Informational		Receive WNF event; current mode: %1, current value: %2
 Microsoft-Windows-MCCS-SyncController	401	0	SPERF_TAG_SYNC_INIT_PROVIDERStart()	Start	Performance keyword_400000000000	SPERF_TAG_SYNC_INIT_PROVIDER	Informational		
 Microsoft-Windows-MCCS-SyncController	402	0	SPERF_TAG_SYNC_INIT_PROVIDERStop()	Stop	Performance keyword_400000000000	SPERF_TAG_SYNC_INIT_PROVIDER	Informational		
@@ -141,6 +143,7 @@ Microsoft-Windows-MCCS-SyncController	541	0	Event_541(HexInt32 Prop_Dword_1)		St
 Microsoft-Windows-MCCS-SyncController	542	0	Event_542(HexInt32 Prop_Dword_1)		StateTransition keyword_200000000000	task_0	Informational		Started PurgeDeletedAccountWork for account %1.
 Microsoft-Windows-MCCS-SyncController	543	0	Event_543(HexInt32 Prop_Dword_1)		StateTransition keyword_200000000000	task_0	Informational		Finished PurgeDeletedAccountWork for account %1.
 Microsoft-Windows-MCCS-SyncController	544	0	Event_544(HexInt32 Prop_Dword_1, UInt32 EngineGuid)		CommsService keyword_200000000000	task_0	Informational		AccountSyncController: Adding new child sync controller with id %1 and engine id %2.
+Microsoft-Windows-MCCS-SyncController	545	0	Event_545(GUID P1_Guid, UInt32 P2_UInt)		StateTransition keyword_400000000000	task_0	Warning		Delete Account %1: Unknown Store Type %2.
 Microsoft-Windows-MCCS-SyncController	550	0	Event_550(HexInt32 Prop_Dword_1, UInt32 EngineGuid)		CommsService keyword_200000000000	task_0	Informational		AccountSyncController: Starting ScheduleManager work for account %1, engine %2.
 Microsoft-Windows-MCCS-SyncController	551	0	Event_551(HexInt32 Prop_Dword_0, UInt32 Prop_Dword_1, UInt32 Prop_Dword_2)		CommsService keyword_200000000000	task_0	Informational		Upgrading account %1 from version %2 to the current version %3.
 Microsoft-Windows-MCCS-SyncController	552	0	Event_552(HexInt32 Prop_Dword_0, UInt32 Prop_Dword_1, UInt32 Prop_Dword_2)		CommsService keyword_200000000000	task_0	Warning		Ignoring account %1 because its version (%2) doesn't match the current version (%3).

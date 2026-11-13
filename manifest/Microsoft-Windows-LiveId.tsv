@@ -1,16 +1,8 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-LiveId	1001	0	LiveSspOperationStart()	Start	Analytic keyword_400000000000	LiveSspOperation	Informational	Microsoft-Windows-LiveId/Analytic	LsaApLogonUserEx2_Start
-Microsoft-Windows-LiveId	1002	0	LiveSspOperationStop(HexInt32 Status)	Stop	Analytic keyword_400000000000	LiveSspOperation	Informational	Microsoft-Windows-LiveId/Analytic	LsaApLogonUserEx2_Stop.\r\nStatus: %1
-Microsoft-Windows-LiveId	1003	0	LiveSspOperationStart1003()	Start	Analytic keyword_400000000000	LiveSspOperation	Informational	Microsoft-Windows-LiveId/Analytic	SpOnProfileLoaded_Start
-Microsoft-Windows-LiveId	1004	0	LiveSspOperationStop1004(Boolean ServiceCalled, HexInt32 Status)	Stop	Analytic keyword_400000000000	LiveSspOperation	Informational	Microsoft-Windows-LiveId/Analytic	SpOnProfileLoaded_Stop.\r\nServiceCalled: %1\r\n\tStatus: %2
 Microsoft-Windows-LiveId	1005	0	IdentityProviderOperationStart()	Start	Analytic	IdentityProviderOperation	Informational	Microsoft-Windows-LiveId/Analytic	ConnectIdentity_Start
 Microsoft-Windows-LiveId	1006	0	IdentityProviderOperationStop(Int32 Result)	Stop	Analytic	IdentityProviderOperation	Informational	Microsoft-Windows-LiveId/Analytic	ConnectIdentity_Stop.\r\nStatus: %1
 Microsoft-Windows-LiveId	1007	0	IdentityProviderOperationStart1007()	Start	Analytic	IdentityProviderOperation	Informational	Microsoft-Windows-LiveId/Analytic	DisconnectIdentity_Start
 Microsoft-Windows-LiveId	1008	0	IdentityProviderOperationStop1008(Int32 Result)	Stop	Analytic	IdentityProviderOperation	Informational	Microsoft-Windows-LiveId/Analytic	DisconnectIdentity_Stop.\r\nStatus: %1
-Microsoft-Windows-LiveId	1009	0	LiveSspOperationStart1009()	Start	Analytic keyword_400000000000	LiveSspOperation	Informational	Microsoft-Windows-LiveId/Analytic	LiveDoCachedLogon_Start
-Microsoft-Windows-LiveId	1010	0	LiveSspOperationStop1010(Int32 Result)	Stop	Analytic keyword_400000000000	LiveSspOperation	Informational	Microsoft-Windows-LiveId/Analytic	LiveDoCachedLogon_Stop.\r\nStatus: %1
-Microsoft-Windows-LiveId	1011	0	LiveSspOperationStart1011()	Start	Analytic keyword_400000000000	LiveSspOperation	Informational	Microsoft-Windows-LiveId/Analytic	LiveAuthenticate_Start
-Microsoft-Windows-LiveId	1012	0	LiveSspOperationStop1012(HexInt32 Status)	Stop	Analytic keyword_400000000000	LiveSspOperation	Informational	Microsoft-Windows-LiveId/Analytic	LiveAuthenticate_Stop.\r\nStatus: %1
 Microsoft-Windows-LiveId	1013	0	WLIDServiceOperationStart()	Start	Analytic	WLIDServiceOperation	Informational	Microsoft-Windows-LiveId/Analytic	NetworkCall_Start
 Microsoft-Windows-LiveId	1014	0	WLIDServiceOperationStop(UInt32 NoOfTargets, UInt32 RequestType)	Stop	Analytic	WLIDServiceOperation	Informational	Microsoft-Windows-LiveId/Analytic	NetworkCall_Stop.\r\nNumber of Targets: %1\r\nRequestType: %2
 Microsoft-Windows-LiveId	1015	0	LiveIdModernAPIOperationStart()	Start	Analytic	LiveIdModernAPIOperation	Informational	Microsoft-Windows-LiveId/Analytic	DeviceAuth_Start
@@ -119,14 +111,14 @@ Microsoft-Windows-LiveId	6104	0	Event_6104(Int32 value)		WlidSvc Credentials	tas
 Microsoft-Windows-LiveId	6105	0	Event_6105(Int32 value)		WlidSvc Credentials	task_0	Informational		RemovePersistedTokens Deleting item for target [%1] from CredMan.
 Microsoft-Windows-LiveId	6106	0	Event_6106(UnicodeString TargetName, Int32 ErrorCode)		Error WlidSvc Credentials	task_0	Critical		Attempting to delete for target [%1] from CredMan failed with %2.
 Microsoft-Windows-LiveId	6107	0	Event_6107(UnicodeString TargetName, Int32 ErrorCode)		Error WlidSvc Credentials	task_0	Error		Write to CredMan failed for target [%1] with %2.
-Microsoft-Windows-LiveId	6108	0	Event_6108(UnicodeString value)		WlidSvc Credentials	task_0	Informational		
-Microsoft-Windows-LiveId	6109	0	Event_6109(UnicodeString TargetName, Int32 ErrorCode)		Error WlidSvc Credentials	task_0	Error		
-Microsoft-Windows-LiveId	6110	0	Event_6110(UnicodeString value)		WlidSvc Credentials	task_0	Informational		
-Microsoft-Windows-LiveId	6111	0	Event_6111(UnicodeString value)		WlidSvc Credentials	task_0	Informational		
-Microsoft-Windows-LiveId	6112	0	Event_6112(UnicodeString value1, AnsiString value2)		WlidSvc Credentials	task_0	Informational		
-Microsoft-Windows-LiveId	6113	0	Event_6113(AnsiString FunctionName, UInt32 ErrorCode)		Error Operational WlidSvc RPC	task_0	Error		
-Microsoft-Windows-LiveId	6114	0	Event_6114(UInt32 RequestType, AnsiString cid, UInt32 ErrorCode, AnsiString MachineEnvironment)		Error Operational WlidSvc SOAP	task_0	Error		
-Microsoft-Windows-LiveId	6115	0	Event_6115(AnsiString Value)		WlidSvc SOAP	task_0	Informational		
+Microsoft-Windows-LiveId	6108	0	Event_6108(UnicodeString value)		WlidSvc Credentials	task_0	Informational		Writing Token for target [%1] to CredMan.
+Microsoft-Windows-LiveId	6109	0	Event_6109(UnicodeString TargetName, Int32 ErrorCode)		Error WlidSvc Credentials	task_0	Error		CredEnumerateW failed for target [%1] with %2.
+Microsoft-Windows-LiveId	6110	0	Event_6110(UnicodeString value)		WlidSvc Credentials	task_0	Informational		CredEnumerateW found no match for target [%1].
+Microsoft-Windows-LiveId	6111	0	Event_6111(UnicodeString value)		WlidSvc Credentials	task_0	Informational		DeleteStoredCredential Deleting item for target [%1] from CredMan.
+Microsoft-Windows-LiveId	6112	0	Event_6112(UnicodeString value1, AnsiString value2)		WlidSvc Credentials	task_0	Informational		CredMan activity skipped. Credential not changed for [WindowsLive:(token):name=%1;serviceuri=%2
+Microsoft-Windows-LiveId	6113	0	Event_6113(AnsiString FunctionName, UInt32 ErrorCode)		Error Operational WlidSvc RPC	task_0	Error	Microsoft-Windows-LiveId/Operational	RPC call to function %1 returned the following error code: %2.
+Microsoft-Windows-LiveId	6114	0	Event_6114(UInt32 RequestType, AnsiString cid, UInt32 ErrorCode, AnsiString MachineEnvironment)		Error Operational WlidSvc SOAP	task_0	Error	Microsoft-Windows-LiveId/Operational	SOAP Request of type %1 for user CID '%2' in %4 environment received the following error code from the Microsoft Account server: %3.
+Microsoft-Windows-LiveId	6115	0	Event_6115(AnsiString Value)		WlidSvc SOAP	task_0	Informational	Microsoft-Windows-LiveId/Operational	## SOAP Request: %1
 Microsoft-Windows-LiveId	6116	0	Event_6116(AnsiString Value)		WlidSvc SOAP	task_0	Informational		
 Microsoft-Windows-LiveId	6117	0	Event_6117(AnsiString ResourceURI, SYSTEMTIME Created, SYSTEMTIME Expires, AnsiString TokenType, Int32 AuthRequired, Int32 RequestStatus, Boolean HasFlowUrl, Boolean HasAuthUrl, Boolean HasEndAuthUrl)		WlidSvc SOAP	task_0	Informational		
 Microsoft-Windows-LiveId	7000	0	Event_7000(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		Critical WlidModern	task_0	Critical		
@@ -186,18 +178,6 @@ Microsoft-Windows-LiveId	9013	0	Event_9013(AnsiString FileName, AnsiString Funct
 Microsoft-Windows-LiveId	9014	0	Event_9014(AnsiString FunctionName, Int32 ErrorCode)		Function Warning WlidProv	task_0	Warning		
 Microsoft-Windows-LiveId	9015	0	Event_9015(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		WlidProv	task_0	Verbose		
 Microsoft-Windows-LiveId	9016	0	Event_9016(AnsiString FileName, UInt32 LineNumber, AnsiString description)		WlidProv	task_0	Verbose		
-Microsoft-Windows-LiveId	9017	0	UserIdKeyManagerOperationStart()	Start	Analytic keyword_400000000000	UserIdKeyManagerOperation	Informational		
-Microsoft-Windows-LiveId	9018	0	UserIdKeyManagerOperationStop(Int32 Result)	Stop	Analytic keyword_400000000000	UserIdKeyManagerOperation	Informational		
-Microsoft-Windows-LiveId	9019	0	UserIdKeyManagerOperationStart9019()	Start	Analytic keyword_400000000000	UserIdKeyManagerOperation	Informational		
-Microsoft-Windows-LiveId	9020	0	UserIdKeyManagerOperationStop9020(Int32 Result)	Stop	Analytic keyword_400000000000	UserIdKeyManagerOperation	Informational		
-Microsoft-Windows-LiveId	9021	0	UserIdKeyManagerOperationStart9021()	Start	Analytic keyword_400000000000	UserIdKeyManagerOperation	Informational		
-Microsoft-Windows-LiveId	9022	0	UserIdKeyManagerOperationStop9022(Int32 Result)	Stop	Analytic keyword_400000000000	UserIdKeyManagerOperation	Informational		
-Microsoft-Windows-LiveId	9023	0	UserIdKeyManagerOperationStart9023()	Start	Analytic keyword_400000000000	UserIdKeyManagerOperation	Informational		
-Microsoft-Windows-LiveId	9024	0	UserIdKeyManagerOperationStop9024(Int32 Result)	Stop	Analytic keyword_400000000000	UserIdKeyManagerOperation	Informational		
-Microsoft-Windows-LiveId	9025	0	UserIdKeyManagerOperationStart9025()	Start	Analytic keyword_400000000000	UserIdKeyManagerOperation	Informational		
-Microsoft-Windows-LiveId	9026	0	UserIdKeyManagerOperationStop9026(Int32 Result)	Stop	Analytic keyword_400000000000	UserIdKeyManagerOperation	Informational		
-Microsoft-Windows-LiveId	9027	0	UserIdKeyManagerOperationStart9027()	Start	Analytic keyword_400000000000	UserIdKeyManagerOperation	Informational		
-Microsoft-Windows-LiveId	9028	0	UserIdKeyManagerOperationStop9028(Int32 Result)	Stop	Analytic keyword_400000000000	UserIdKeyManagerOperation	Informational		
 Microsoft-Windows-LiveId	9100	0	Event_9100(UnicodeString value)		WlidProv Credentials	task_0	Verbose		
 Microsoft-Windows-LiveId	10000	0	Event_10000(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		Critical WlidBho	task_0	Critical		
 Microsoft-Windows-LiveId	10001	0	Event_10001(AnsiString FileName, UInt32 LineNumber, UnicodeString description)		Error WlidBho	task_0	Error		

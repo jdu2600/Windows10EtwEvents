@@ -1,10 +1,10 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
 Microsoft-Windows-Telephony-PhoneOm	1	0	Event_1(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		Error	task_0	Error		[ERROR] originated HRESULT=%1 [%2 @ %3]
-Microsoft-Windows-Telephony-PhoneOm	2	0	Event_2(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		keyword_400000000000	task_0	Warning		[ERROR] propagated HRESULT=%1 [%2 @ %3]
+Microsoft-Windows-Telephony-PhoneOm	2	0	Event_2(Int32 P1_HResult, AnsiString P2_String, UInt32 P3_UInt32)		Warning	task_0	Warning		[ERROR] propagated HRESULT=%1 [%2 @ %3]
 Microsoft-Windows-Telephony-PhoneOm	5	0	Event_5(UnicodeString Prop_UnicodeString)		Debug	task_0	Informational		%1
-Microsoft-Windows-Telephony-PhoneOm	102	0	Event_102(Pointer P1_Ptr, UnicodeString P2_String)		keyword_800000000000	task_0	Informational		Phone listener endpoint added. Listener: %1 Endpoint: %2
+Microsoft-Windows-Telephony-PhoneOm	102	0	Event_102(Pointer P1_Ptr, UnicodeString P2_String)		StateTransition	task_0	Informational		Phone listener endpoint added. Listener: %1 Endpoint: %2
 Microsoft-Windows-Telephony-PhoneOm	103	0	Event_103(Pointer P1_Ptr)		PhoneOM	task_0	Informational		Phone listener add completed. Listener: %1
-Microsoft-Windows-Telephony-PhoneOm	104	0	Event_104(Pointer P1_Ptr, UnicodeString P2_String)		keyword_800000000000	task_0	Informational		Phone listener endpoint removed. Listener: %1 Endpoint: %2
+Microsoft-Windows-Telephony-PhoneOm	104	0	Event_104(Pointer P1_Ptr, UnicodeString P2_String)		StateTransition	task_0	Informational		Phone listener endpoint removed. Listener: %1 Endpoint: %2
 Microsoft-Windows-Telephony-PhoneOm	105	0	Event_105(Pointer P1_Ptr)		PhoneOM	task_0	Informational		Phone listener remove completed. Listener: %1
 Microsoft-Windows-Telephony-PhoneOm	106	0	Event_106()		PhoneOM	task_0	Informational		Phone client has called PhoneWaitForAPIReady.
 Microsoft-Windows-Telephony-PhoneOm	107	0	Event_107()		PhoneOM	task_0	Informational		PhoneWaitForAPIReady exiting successfully. The API should be ready to be used now.
@@ -27,15 +27,15 @@ Microsoft-Windows-Telephony-PhoneOm	215	0	SimSecUnlockPersoStop()	Stop	Performan
 Microsoft-Windows-Telephony-PhoneOm	216	0	SimSecChangePinStart()	Start	Performance	SimSecChangePin	Verbose		
 Microsoft-Windows-Telephony-PhoneOm	217	0	SimSecChangePinStop()	Stop	Performance	SimSecChangePin	Verbose		
 Microsoft-Windows-Telephony-PhoneOm	218	0	StartCallStart()	Start	Performance	StartCall	Verbose		
-Microsoft-Windows-Telephony-PhoneOm	219	0	Event_219(UInt32 P1_UInt32)		keyword_400000000000	task_0	Warning		PhoneOM.dll unloading, but Phone API initialize/uninitialize calls mismatched.  InitCount: %1
+Microsoft-Windows-Telephony-PhoneOm	219	0	Event_219(UInt32 P1_UInt32)		Warning	task_0	Warning		PhoneOM.dll unloading, but Phone API initialize/uninitialize calls mismatched.  InitCount: %1
 Microsoft-Windows-Telephony-PhoneOm	220	0	SimSecChangePin2Start()	Start	Performance	SimSecChangePin2	Verbose		
 Microsoft-Windows-Telephony-PhoneOm	221	0	SimSecChangePin2Stop()	Stop	Performance	SimSecChangePin2	Verbose		
 Microsoft-Windows-Telephony-PhoneOm	222	0	SimSecUnblockPin2Start()	Start	Performance	SimSecUnblockPin2	Verbose		
 Microsoft-Windows-Telephony-PhoneOm	223	0	SimSecUnblockPin2Stop()	Stop	Performance	SimSecUnblockPin2	Verbose		
-Microsoft-Windows-Telephony-PhoneOm	224	0	Event_224(Pointer Pointer)		keyword_800000000000	task_0	Informational		Phone listener added.  HPHONELISTENER: %1
-Microsoft-Windows-Telephony-PhoneOm	225	0	Event_225(Pointer Pointer)		keyword_800000000000	task_0	Informational		Phone listener removed.  HPHONELISTENER: %1
-Microsoft-Windows-Telephony-PhoneOm	226	0	Event_226(Pointer Pointer)		keyword_800000000000	task_0	Informational		Phone listener detected service restart.  HPHONELISTENER: %1
-Microsoft-Windows-Telephony-PhoneOm	227	0	Event_227(Pointer Pointer)		keyword_800000000000	task_0	Informational		Phone listener lost notification.  HPHONELISTENER: %1
+Microsoft-Windows-Telephony-PhoneOm	224	0	Event_224(Pointer Pointer)		StateTransition	task_0	Informational		Phone listener added.  HPHONELISTENER: %1
+Microsoft-Windows-Telephony-PhoneOm	225	0	Event_225(Pointer Pointer)		StateTransition	task_0	Informational		Phone listener removed.  HPHONELISTENER: %1
+Microsoft-Windows-Telephony-PhoneOm	226	0	Event_226(Pointer Pointer)		StateTransition	task_0	Informational		Phone listener detected service restart.  HPHONELISTENER: %1
+Microsoft-Windows-Telephony-PhoneOm	227	0	Event_227(Pointer Pointer)		StateTransition	task_0	Informational		Phone listener lost notification.  HPHONELISTENER: %1
 Microsoft-Windows-Telephony-PhoneOm	228	0	Event_228(Pointer Pointer, Int32 Result)		Error	task_0	Error		Phone listener failed to retrieve notification.  HPHONELISTENER: %1, result: %2
 Microsoft-Windows-Telephony-PhoneOm	229	0	Event_229(UInt32 Api)		PhoneOM	task_0	Informational		Phone Api: %1
 Microsoft-Windows-Telephony-PhoneOm	230	0	Event_230(UInt32 Api, UInt32 Call)		PhoneOM	task_0	Informational		Phone Api: %1, call %2

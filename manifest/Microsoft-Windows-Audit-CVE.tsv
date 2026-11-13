@@ -1,0 +1,3 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Audit-CVE	1	0	Event_1(UnicodeString CVEID, UnicodeString AdditionalDetails)			task_0	Warning	Application	Possible detection of CVE: %1\r\nAdditional Information: %2\r\n\r\nThis Event is generated when an attempt to exploit a known vulnerability (%1) is detected.\r\nThis Event is raised by a User mode process.
+Microsoft-Windows-Audit-CVE	2	0	Event_2(UnicodeString CVEID, UnicodeString AdditionalDetails)			task_0	Warning	System	Possible detection of CVE: %1\r\nAdditional Information: %2\r\n\r\nThis Event is generated when an attempt to exploit a known vulnerability (%1) is detected.\r\nThis Event is raised by a kernel mode driver.

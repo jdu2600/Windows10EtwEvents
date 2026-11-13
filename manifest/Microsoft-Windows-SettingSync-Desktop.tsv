@@ -1,0 +1,35 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-SettingSync-Desktop	5001	0	Event_5001(UnicodeString CollectionId, UInt32 Operation, UInt32 HRESULT)			task_0	Error	Microsoft-Windows-SettingSync/Operational	The system failed to request a sync for collection %1 (operation: %2, Result: %3).
+Microsoft-Windows-SettingSync-Desktop	5002	0	Event_5002(UnicodeString SettingUnitId, UnicodeString CollectionId, UnicodeString Operation, UInt32 HRESULT)			task_0	Warning	Microsoft-Windows-SettingSync/Operational	The setting unit %1 for collection %2 is invalid. (operation: %3, Result: %4).
+Microsoft-Windows-SettingSync-Desktop	5003	0	Event_5003(UnicodeString CollectionId, UInt32 HRESULT)			task_0	Error	Microsoft-Windows-SettingSync/Operational	Starting or stopping setting change publisher for %1 failed. (Result: %2)
+Microsoft-Windows-SettingSync-Desktop	5004	0	Event_5004(UnicodeString CollectionId, UInt32 HRESULT)			task_0	Error	Microsoft-Windows-SettingSync/Operational	Failed to create process "%1" (Result: %2).
+Microsoft-Windows-SettingSync-Desktop	5005	0	Event_5005(UnicodeString Message, UInt32 HRESULT)			task_0	Error	Microsoft-Windows-SettingSync/Operational	Starting the setting monitor SSO failed.  (Message: %1, Result: %2)
+Microsoft-Windows-SettingSync-Desktop	5006	0	Event_5006(UnicodeString Message, UInt32 HRESULT)			task_0	Error	Microsoft-Windows-SettingSync/Operational	Starting the WNF listener failed.  (Message: %1, Result: %2)
+Microsoft-Windows-SettingSync-Desktop	5007	0	Event_5007(UnicodeString Message)			task_0	Error	Microsoft-Windows-SettingSync/Operational	%1
+Microsoft-Windows-SettingSync-Desktop	5008	0	Event_5008(UnicodeString Message)			task_0	Warning	Microsoft-Windows-SettingSync/Operational	%1
+Microsoft-Windows-SettingSync-Desktop	5009	0	Event_5009(UnicodeString Message)			task_0	Informational	Microsoft-Windows-SettingSync/Operational	%1
+Microsoft-Windows-SettingSync-Desktop	6001	0	Event_6001(UnicodeString CollectionId)			task_0	Informational	Microsoft-Windows-SettingSync/Debug	The sync provider requested that %1 not upload now.  It will retry the upload later.
+Microsoft-Windows-SettingSync-Desktop	6002	0	Event_6002(UnicodeString CollectionId, UInt32 HRESULT)			task_0	Informational	Microsoft-Windows-SettingSync/Debug	Starting or stopping setting change publisher for %1 failed. (Result: %2)
+Microsoft-Windows-SettingSync-Desktop	6501	0	Event_6501(UnicodeString Message, UInt32 HRESULT)			task_0	Warning	Microsoft-Windows-SettingSync/Debug	Wnf event callback failure. State Name: %1. HRESULT: %2.
+Microsoft-Windows-SettingSync-Desktop	6502	0	Event_6502(UInt32 HRESULT)			task_0	Verbose	Microsoft-Windows-SettingSync/Debug	StartLayoutSync - Load layout data from stream. (HRESULT: %1)
+Microsoft-Windows-SettingSync-Desktop	6503	0	Event_6503(UInt32 HRESULT)			task_0	Error	Microsoft-Windows-SettingSync/Debug	PicturePasswordPicture image validation failed (HRESULT: %1)
+Microsoft-Windows-SettingSync-Desktop	6504	0	Event_6504()			task_0	Verbose	Microsoft-Windows-SettingSync/Debug	StartLayoutSync - GetUnit() is returning pending remote payload because system is in cloud priority mode.
+Microsoft-Windows-SettingSync-Desktop	6505	0	Event_6505()			task_0	Verbose	Microsoft-Windows-SettingSync/Debug	StartLayoutSync - No download happened during sync session. Switching back to normal mode from cloud priority mode.
+Microsoft-Windows-SettingSync-Desktop	6506	0	Event_6506()			task_0	Informational	Microsoft-Windows-SettingSync/Debug	Monitor SSO Started
+Microsoft-Windows-SettingSync-Desktop	6507	0	Event_6507()			task_0	Informational	Microsoft-Windows-SettingSync/Debug	Monitor SSO Status Changed
+Microsoft-Windows-SettingSync-Desktop	6508	0	Event_6508()			task_0	Informational	Microsoft-Windows-SettingSync/Debug	Monitor SSO Collection Status Changed
+Microsoft-Windows-SettingSync-Desktop	6509	0	Event_6509(UnicodeString Message)			task_0	Error	Microsoft-Windows-SettingSync/Debug	%1
+Microsoft-Windows-SettingSync-Desktop	6510	0	Event_6510(UnicodeString Message)			task_0	Warning	Microsoft-Windows-SettingSync/Debug	%1
+Microsoft-Windows-SettingSync-Desktop	6511	0	Event_6511(UnicodeString Message)			task_0	Verbose	Microsoft-Windows-SettingSync/Debug	%1
+Microsoft-Windows-SettingSync-Desktop	7001	0	Perf_SettingProfileHandler_OnLoadStart()	Start	RoamingSettings	Perf_SettingProfileHandler_OnLoad	Informational	Microsoft-Windows-SettingSync/Analytic	
+Microsoft-Windows-SettingSync-Desktop	7002	0	Perf_SettingProfileHandler_OnLoadStop()	Stop	RoamingSettings	Perf_SettingProfileHandler_OnLoad	Informational	Microsoft-Windows-SettingSync/Analytic	
+Microsoft-Windows-SettingSync-Desktop	7003	0	Perf_MouseSettingHandler_GetUnitStart()	Start	RoamingSettings	Perf_MouseSettingHandler_GetUnit	Informational	Microsoft-Windows-SettingSync/Analytic	
+Microsoft-Windows-SettingSync-Desktop	7004	0	Perf_MouseSettingHandler_GetUnitStop()	Stop	RoamingSettings	Perf_MouseSettingHandler_GetUnit	Informational	Microsoft-Windows-SettingSync/Analytic	
+Microsoft-Windows-SettingSync-Desktop	7005	0	Perf_MouseSettingHandler_ApplyUnitStart()	Start	RoamingSettings	Perf_MouseSettingHandler_ApplyUnit	Informational	Microsoft-Windows-SettingSync/Analytic	
+Microsoft-Windows-SettingSync-Desktop	7006	0	Perf_MouseSettingHandler_ApplyUnitStop()	Stop	RoamingSettings	Perf_MouseSettingHandler_ApplyUnit	Informational	Microsoft-Windows-SettingSync/Analytic	
+Microsoft-Windows-SettingSync-Desktop	7007	0	Perf_SyncRequestedByLocalSystemStop(UnicodeString CollectionId)	Stop	RoamingSettings	Perf_SyncRequestedByLocalSystem	Informational	Microsoft-Windows-SettingSync/Analytic	
+Microsoft-Windows-SettingSync-Desktop	7008	0	Perf_MicroImageCompressionStart(UInt32 Quality)	Start	RoamingSettings	Perf_MicroImageCompression	Informational	Microsoft-Windows-SettingSync/Analytic	
+Microsoft-Windows-SettingSync-Desktop	7009	0	Perf_MicroImageCompressionStop()	Stop	RoamingSettings	Perf_MicroImageCompression	Informational	Microsoft-Windows-SettingSync/Analytic	
+Microsoft-Windows-SettingSync-Desktop	7010	0	Perf_MicroImageScaleStart(UInt32 OrigSizeX, UInt32 OrigSizeY)	Start	RoamingSettings	Perf_MicroImageScale	Informational	Microsoft-Windows-SettingSync/Analytic	
+Microsoft-Windows-SettingSync-Desktop	7011	0	Perf_MicroImageCompressionStop7011()	Stop	RoamingSettings	Perf_MicroImageCompression	Informational	Microsoft-Windows-SettingSync/Analytic	
+Microsoft-Windows-SettingSync-Desktop	7012	0	Perf_BackupRequestedByLocalSystemStop(UnicodeString CollectionId)	Stop	RoamingSettings	Perf_BackupRequestedByLocalSystem	Informational	Microsoft-Windows-SettingSync/Analytic	

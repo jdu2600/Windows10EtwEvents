@@ -15,6 +15,8 @@ Microsoft-Windows-DeviceUpdateAgent	400	0	Event_400(UInt32 HRESULT)			task_0	Err
 Microsoft-Windows-DeviceUpdateAgent	500	0	Event_500(UInt32 HRESULT)			task_0	Error	Microsoft-Windows-DeviceUpdateAgent/Operational	Failed to clean up updates with error %1
 Microsoft-Windows-DeviceUpdateAgent	600	0	Event_600(UInt32 HRESULT)			task_0	Error	Microsoft-Windows-DeviceUpdateAgent/Operational	Failed to cancel updates with error %1
 Microsoft-Windows-DeviceUpdateAgent	601	0	Event_601(UInt32 HRESULT)			task_0	Informational	Microsoft-Windows-DeviceUpdateAgent/Operational	Updates were cancelled with reason %1
-Microsoft-Windows-DeviceUpdateAgent	700	0	Event_700(UInt32 HRESULT)			task_0	Error	Microsoft-Windows-DeviceUpdateAgent/Operational	
-Microsoft-Windows-DeviceUpdateAgent	800	0	Event_800(UInt32 HRESULT)			task_0	Error	Microsoft-Windows-DeviceUpdateAgent/Operational	
-Microsoft-Windows-DeviceUpdateAgent	900	0	Event_900(UInt32 HRESULT)			task_0	Error	Microsoft-Windows-DeviceUpdateAgent/Operational	
+Microsoft-Windows-DeviceUpdateAgent	700	0	Event_700(UInt32 HRESULT)			task_0	Error	Microsoft-Windows-DeviceUpdateAgent/Operational	Failed to merge updates with error %1
+Microsoft-Windows-DeviceUpdateAgent	800	0	Event_800(UInt32 HRESULT)			task_0	Error	Microsoft-Windows-DeviceUpdateAgent/Operational	Failed to get update result post reboot with error %1
+Microsoft-Windows-DeviceUpdateAgent	801	0	Event_801(UnicodeString Prop_ProductId, UnicodeString Prop_ProductVersion)			task_0	Informational	Microsoft-Windows-DeviceUpdateAgent/Operational	
+Microsoft-Windows-DeviceUpdateAgent	802	0	Event_802(UnicodeString Prop_ProductId, UnicodeString Prop_ProductVersion, UInt32 Prop_MissingUpdates, UInt32 Prop_MissingDrivers, UInt32 Prop_UnpublishedDrivers, UInt32 Prop_PublishedDrivers, UInt32 Prop_AnalysisErrorDrivers)			task_0	Error	Microsoft-Windows-DeviceUpdateAgent/Operational	
+Microsoft-Windows-DeviceUpdateAgent	900	0	Event_900(UInt32 HRESULT)			task_0	Error	Microsoft-Windows-DeviceUpdateAgent/Operational	Failed to perform post download operation with error %1

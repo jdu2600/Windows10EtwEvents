@@ -101,6 +101,10 @@ Microsoft-Windows-BitLocker-API	847	0	Event_847(Int32 JsonErrorCode, UnicodeStri
 Microsoft-Windows-BitLocker-API	848	0	Event_848(Int32 ErrorCode)			task_0	Error	Microsoft-Windows-BitLocker/BitLocker Management	Failed to update BCD store with the Recovery URL for OS volume.\r\n\r\nError: %1
 Microsoft-Windows-BitLocker-API	849	0	Event_849(Int32 ErrorCode)			task_0	Error	Microsoft-Windows-BitLocker/BitLocker Management	Failed to set the TPM dictionary attack parameters to the legacy behavior.\r\n\r\nError: %1.
 Microsoft-Windows-BitLocker-API	850	0	Event_850(Int32 ErrorCode)			task_0	Informational	Microsoft-Windows-BitLocker/BitLocker Management	Successfully set the TPM dictionary attack parameters to the legacy behavior.
+Microsoft-Windows-BitLocker-API	851	0	Event_851(Int32 ErrorCode)			task_0	Error	Microsoft-Windows-BitLocker/BitLocker Management	Failed to enable Silent Encryption. \r\n\r\nError: %1.
+Microsoft-Windows-BitLocker-API	852	0	Event_852(Int32 ErrorCode)			task_0	Error	Microsoft-Windows-BitLocker/BitLocker Management	Failed to enable Silent Encryption. Device is not AAD joined. \r\n\r\nError: %1.
+Microsoft-Windows-BitLocker-API	853	0	Event_853(Int32 ErrorCode)			task_0	Error	Microsoft-Windows-BitLocker/BitLocker Management	Failed to enable Silent Encryption. TPM is not available. \r\n\r\nError: %1.
+Microsoft-Windows-BitLocker-API	854	0	Event_854(Int32 ErrorCode)			task_0	Error	Microsoft-Windows-BitLocker/BitLocker Management	Failed to enable Silent Encryption. WinRe is not configured. \r\n\r\nError: %1.
 Microsoft-Windows-BitLocker-API	4096	0	Event_4096(Int32 ErrorCode)			task_0	Error	Microsoft-Windows-BitLocker/BitLocker Management	Device Encryption could not be initialized.\r\n\r\nError: %1.
 Microsoft-Windows-BitLocker-API	4097	0	Event_4097_Start()	Start		task_0	Informational	Microsoft-Windows-BitLocker/Tracing	Device Encryption initialization start.
 Microsoft-Windows-BitLocker-API	4098	0	Event_4098_Stop()	Stop		task_0	Informational	Microsoft-Windows-BitLocker/Tracing	Device Encryption initialization stop.

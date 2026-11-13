@@ -62,7 +62,7 @@ Microsoft-Windows-SENSE	68	0	Event_68(UnicodeString ServiceName, Int16 ActualSta
 Microsoft-Windows-SENSE	69	0	Event_69(UnicodeString parameter)			task_0	Warning	Microsoft-Windows-SENSE/Operational	The service is stopped. Service name: %1
 Microsoft-Windows-SENSE	70	0	Event_70(UInt32 UInt1)			task_0	Warning	Microsoft-Windows-SENSE/Operational	Policy update: Allow sample collection - %1
 Microsoft-Windows-SENSE	71	0	Event_71(UnicodeString parameter)			task_0	Informational	Microsoft-Windows-SENSE/Operational	Succeeded to run command: %1
-Microsoft-Windows-SENSE	72	0	Event_72(HexInt32 HRESULT)			task_0	Informational	Microsoft-Windows-SENSE/Operational	Tried to send first full machine profile report. Failure code: %1
+Microsoft-Windows-SENSE	72	0	Event_72(HexInt32 HRESULT)			task_0	Informational	Microsoft-Windows-SENSE/Operational	Tried to send first full machine profile report. Result code: %1
 Microsoft-Windows-SENSE	73	0	Event_73(HexInt64 platformBitMask)			task_0	Informational	Microsoft-Windows-SENSE/Operational	Sense starting for platform: %1
 Microsoft-Windows-SENSE	74	0	Event_74(UInt32 UInt1, UnicodeString Message1)			task_0	Warning		Device tag in registry exceeds length limit. Tag name: %2. Length limit: %1.
 Microsoft-Windows-SENSE	75	0	Event_75(UInt32 UInt1, UnicodeString Message1)			task_0	Warning	Microsoft-Windows-SENSE/Operational	Device tag name in registry exceeds length limit. Tag name: %2. Length limit: %1.
@@ -74,6 +74,8 @@ Microsoft-Windows-SENSE	80	0	Event_80(HexInt32 HRESULT)			task_0	Warning	Microso
 Microsoft-Windows-SENSE	81	0	Event_81(HexInt32 HRESULT)			task_0	Error	Microsoft-Windows-SENSE/Operational	Failed to create Windows Defender Advanced Threat Protection ETW autologger. Failure code: %1
 Microsoft-Windows-SENSE	82	0	Event_82(HexInt32 HRESULT)			task_0	Warning	Microsoft-Windows-SENSE/Operational	Failed to remove Windows Defender Advanced Threat Protection ETW autologger. Failure code: %1
 Microsoft-Windows-SENSE	83	0	Event_83(Int32 RealValue, Int32 quotaValue)			task_0	Warning	Microsoft-Windows-SENSE/Operational	Cyber event may be dropped because its size [%1 bytes] exceeded max size [%2 bytes] or close to it.
+Microsoft-Windows-SENSE	84	0	Event_84(Boolean forcePassiveMode, HexInt32 HRESULT)			task_0	Informational	Microsoft-Windows-SENSE/Operational	Set Windows Defender Antivirus running mode. Force passive mode: %1, result code: %2.
+Microsoft-Windows-SENSE	85	0	Event_85(HexInt32 HRESULT)			task_0	Warning	Microsoft-Windows-SENSE/Operational	Failed to trigger Windows Defender Advanced Threat Protection Incident Response executable. Failure code: %1
 Microsoft-Windows-SENSE	1800	0	Event_1800(UInt32 UInt1, UnicodeString Message1)			task_0	Verbose	Microsoft-Windows-SENSE/Operational	CSP: Get Node's Value. NodeId: (%1), TokenName: (%2).
 Microsoft-Windows-SENSE	1801	0	Event_1801(UInt32 UInt1, UnicodeString Message1, HexInt32 HRESULT)			task_0	Error	Microsoft-Windows-SENSE/Operational	CSP: Failed to Get Node's Value. NodeId: (%1), TokenName: (%2), Result: (%3).
 Microsoft-Windows-SENSE	1802	0	Event_1802(UInt32 UInt1, UnicodeString Message1, HexInt32 HRESULT)			task_0	Informational	Microsoft-Windows-SENSE/Operational	CSP: Get Node's Value complete. NodeId: (%1), TokenName: (%2), Result: (%3).

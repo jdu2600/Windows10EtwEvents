@@ -149,3 +149,13 @@ Microsoft-Windows-AAD	1227	0	AuthHelperStop1227(HexInt32 Status)	Stop	Analytic	A
 Microsoft-Windows-AAD	1228	0	AuthHelperStart1228()	Start	Analytic	AuthHelper	Informational	Microsoft-Windows-AAD/Analytic	GetSerializedAuthBuffer start
 Microsoft-Windows-AAD	1229	0	AuthHelperStop1229(HexInt32 Status)	Stop	Analytic	AuthHelper	Informational	Microsoft-Windows-AAD/Analytic	GetSerializedAuthBuffer stop.\r\nStatus: %1
 Microsoft-Windows-AAD	1230	0	AuthHelper(UnicodeString API, UInt32 Result)		Error Operational	AuthHelper	Error	Microsoft-Windows-AAD/Operational	AuthHelper call %1 returned error: %2
+Microsoft-Windows-AAD	1231	0	AadCloudAPPluginOperation1231(UnicodeString Response, Int32 Status)		Analytic	AadCloudAPPluginOperation	Informational	Microsoft-Windows-AAD/Analytic	AadCloudAPPlugin Resource infomation: %1.\r\nRequest status: %2
+Microsoft-Windows-AAD	1232	0	AadCloudAPPluginOperation1232(UnicodeString Response, Int32 Status)		Analytic	AadCloudAPPluginOperation	Informational	Microsoft-Windows-AAD/Analytic	AadCloudAPPlugin RBAC authorization code response: %1.\r\nRequest status: %2
+Microsoft-Windows-AAD	1233	0	AadCloudAPPluginOperation1233(UnicodeString value)		Analytic	AadCloudAPPluginOperation	Informational	Microsoft-Windows-AAD/Analytic	AadCloudAPPlugin User access control role: %1
+Microsoft-Windows-AAD	1234	0	AadCloudAPPluginOperation1234(UnicodeString value)		Analytic	AadCloudAPPluginOperation	Informational	Microsoft-Windows-AAD/Analytic	AadCloudAPPlugin using resource id from the Idtoken: %1
+Microsoft-Windows-AAD	1235	0	AadCloudAPPluginOperation1235(HexInt32 Status, UnicodeString CorrelationID)		Analytic	AadCloudAPPluginOperation	Informational	Microsoft-Windows-AAD/Analytic	RBAC Status: %1 Correlation ID: %2
+Microsoft-Windows-AAD	1236	0	AadCloudAPPluginOperation1236()		Analytic	AadCloudAPPluginOperation	Informational	Microsoft-Windows-AAD/Analytic	Failed to create the resource id
+Microsoft-Windows-AAD	1237	0	AadCloudAPPluginOperation1237()		Operational	AadCloudAPPluginOperation	Informational	Microsoft-Windows-AAD/Operational	Device is configured for RBAC authorization
+Microsoft-Windows-AAD	1238	0	AadCloudAPPluginOperation1238()		Analytic	AadCloudAPPluginOperation	Informational	Microsoft-Windows-AAD/Analytic	Not sending the client certificate as it is optional on the server
+Microsoft-Windows-AAD	1239	0	AadCloudAPPluginOperation1239()		Analytic	AadCloudAPPluginOperation	Informational	Microsoft-Windows-AAD/Analytic	Doing RBAC logon
+Microsoft-Windows-AAD	1240	0	AadCloudAPPluginOperation1240()		Analytic	AadCloudAPPluginOperation	Informational	Microsoft-Windows-AAD/Analytic	Skipping Rbac Logon because AadCloudAPPlugin is loaded as surrogate

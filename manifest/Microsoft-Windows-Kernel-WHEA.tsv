@@ -30,3 +30,4 @@ Microsoft-Windows-Kernel-WHEA	38	0	Event_38(UInt32 SqmType, GUID SqmSessionGuid,
 Microsoft-Windows-Kernel-WHEA	39	0	Event_39(UInt32 SqmType, GUID SqmSessionGuid, UInt32 SqmID, UnicodeString SqmStringDatapointValue)			task_0	Informational		
 Microsoft-Windows-Kernel-WHEA	40	0	Event_40(UInt32 SqmType, GUID SqmSessionGuid, UInt32 SqmID, UInt32 SqmStreamRowLength, Int16 SqmStreamRow)			task_0	Informational		
 Microsoft-Windows-Kernel-WHEA	41	0	Event_41(UInt32 ProcessId, UnicodeString ProcessName)		WheaError	task_0	Informational	Microsoft-Windows-Kernel-WHEA/Errors	A processs was terminated due to an uncorrected hardware error.\r\n Process ID: %1\r\n Image name: %2
+Microsoft-Windows-Kernel-WHEA	42	0	Event_42(UInt32 Type, UInt32 Owner, UInt32 Id, UInt32 Flags, UInt32 Length, Binary RawData)		WheaEventLog	task_0	Informational	Microsoft-Windows-Kernel-WHEA/Operational	WHEA event log entry

@@ -48,9 +48,9 @@ Microsoft-Windows-UserDataAccess-UserDataService	712	0	Event_712(Pointer handle)
 Microsoft-Windows-UserDataAccess-UserDataService	713	0	Event_713(UnicodeString RcsChatId, Boolean isGroup, UnicodeString TelString, Boolean isComposing)			task_0	Verbose		ComposingStatusChanged event: source [RCS], chat id [%1], is group [%2], teluri [%3], is composing [%4]
 Microsoft-Windows-UserDataAccess-UserDataService	714	0	Event_714(Pointer handle)		UserDataService StateTransition	task_0	Informational		RcsEndUserMessageEventSink %1: Advise to End User Messages
 Microsoft-Windows-UserDataAccess-UserDataService	715	0	Event_715(Pointer handle)		UserDataService StateTransition	task_0	Informational		RcsEndUserMessageEventSink %1: Unadvise from End User Messages
-Microsoft-Windows-UserDataAccess-UserDataService	716	0	Event_716(Pointer handle)		UserDataService StateTransition	task_0	Informational		ServiceStatusChangedEventSink %1: Advise to RCS
-Microsoft-Windows-UserDataAccess-UserDataService	717	0	Event_717(Pointer handle)		UserDataService StateTransition	task_0	Informational		ServiceStatusChangedEventSink %1: Unadvise from RCS
-Microsoft-Windows-UserDataAccess-UserDataService	718	0	Event_718(UInt32 serviceType, Boolean isSupported)			task_0	Verbose		ServiceStatusChanged event: service type [%1], is supported [%2]
+Microsoft-Windows-UserDataAccess-UserDataService	716	0	Event_716(Pointer handle)		UserDataService StateTransition	task_0	Informational		RcsServiceStatusChangedEventSink %1: Advise to RCS
+Microsoft-Windows-UserDataAccess-UserDataService	717	0	Event_717(Pointer handle)		UserDataService StateTransition	task_0	Informational		RcsServiceStatusChangedEventSink %1: Unadvise from RCS
+Microsoft-Windows-UserDataAccess-UserDataService	718	0	Event_718(UInt32 serviceType, Boolean isSupported)			task_0	Verbose		RcsServiceStatusChanged event: service type [%1], is supported [%2]
 Microsoft-Windows-UserDataAccess-UserDataService	719	0	Event_719(UnicodeString AppPackageFamilyName)		UserDataService	task_0	Warning		Default messaging app fall back to: %1
 Microsoft-Windows-UserDataAccess-UserDataService	720	0	Event_720()			task_0	Informational		Rcs service initialization started
 Microsoft-Windows-UserDataAccess-UserDataService	721	0	Event_721()			task_0	Verbose		Rcs service is not available
@@ -92,6 +92,10 @@ Microsoft-Windows-UserDataAccess-UserDataService	757	0	Event_757()		UserDataServ
 Microsoft-Windows-UserDataAccess-UserDataService	758	0	Event_758()		UserDataService	task_0	Warning		ChatAppManager::SetDefaultMessagingApp app already registered.
 Microsoft-Windows-UserDataAccess-UserDataService	759	0	Event_759(UnicodeString P1_UnicodeString)		UserDataService	task_0	Informational		ChatAppManager::_SetDefaultMessagingAppInRegistry().
 Microsoft-Windows-UserDataAccess-UserDataService	760	0	Event_760()		UserDataService	task_0	Warning		ChatAppManager::GetAllDefaultCapableMessagingApps(). - no default apps found
+Microsoft-Windows-UserDataAccess-UserDataService	761	0	Event_761()		UserDataService	task_0	Informational		Rcs service status adapter not available
+Microsoft-Windows-UserDataAccess-UserDataService	762	0	Event_762(Pointer handle)		UserDataService StateTransition	task_0	Informational		RcsTransportChangedEventSink %1: Advise to RCS
+Microsoft-Windows-UserDataAccess-UserDataService	763	0	Event_763(Pointer handle)		UserDataService StateTransition	task_0	Informational		RcsTransportChangedEventSink %1: Unadvise from RCS
+Microsoft-Windows-UserDataAccess-UserDataService	764	0	Event_764()			task_0	Verbose		RcsTransportChanged event
 Microsoft-Windows-UserDataAccess-UserDataService	800	0	Event_800()		UserDataService StateTransition	task_0	Informational		CallHistoryNotificationManager NotifyCallHistoryApps.
 Microsoft-Windows-UserDataAccess-UserDataService	1000	0	Udm_IntializedSecurityInfoStart()	Start	Performance	Udm_IntializedSecurityInfo	Verbose		
 Microsoft-Windows-UserDataAccess-UserDataService	1001	0	Udm_IntializedSecurityInfoStop()	Stop	Performance	Udm_IntializedSecurityInfo	Verbose		

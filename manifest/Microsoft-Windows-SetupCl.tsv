@@ -25,3 +25,5 @@ Microsoft-Windows-SetupCl	23	0	SetupCltaskStart23()	Start	keyPerformance	SetupCl
 Microsoft-Windows-SetupCl	24	0	SetupCltaskStop24()	Stop	keyPerformance	SetupCltask	Informational	Microsoft-Windows-SetupCl/Analytic	SetupCl has finished extending a partition.
 Microsoft-Windows-SetupCl	25	0	SetupCltask25(UnicodeString Path)		keyDiagnostic	SetupCltask	Informational	Microsoft-Windows-SetupCl/Analytic	SetupCl will extend the following partition: [%1].
 Microsoft-Windows-SetupCl	26	0	SetupCltask26(UInt32 SourceLine, AnsiString SourceFunction, AnsiString Message)		keyDiagnostic	SetupCltask	Warning	Microsoft-Windows-SetupCl/Analytic	%2@%1 : %3
+Microsoft-Windows-SetupCl	27	0	SetupCltaskStart27()	Start	keyPerformance	SetupCltask	Informational	Microsoft-Windows-SetupCl/Analytic	SetupCl has started executing upgrade hive updates.
+Microsoft-Windows-SetupCl	28	0	SetupCltaskStop28()	Stop	keyPerformance	SetupCltask	Informational	Microsoft-Windows-SetupCl/Analytic	SetupCl has finished executing upgrade hive updates.

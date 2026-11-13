@@ -160,3 +160,9 @@ Microsoft-Windows-AAD	1238	0	AadCloudAPPluginOperation1238()		Analytic	AadCloudA
 Microsoft-Windows-AAD	1239	0	AadCloudAPPluginOperation1239()		Analytic	AadCloudAPPluginOperation	Informational	Microsoft-Windows-AAD/Analytic	Doing RBAC logon
 Microsoft-Windows-AAD	1240	0	AadCloudAPPluginOperation1240()		Analytic	AadCloudAPPluginOperation	Informational	Microsoft-Windows-AAD/Analytic	Skipping Rbac Logon because AadCloudAPPlugin is loaded as surrogate
 Microsoft-Windows-AAD	1241	0	AadCloudAPPluginOperation1241(UnicodeString value)		Analytic Warning	AadCloudAPPluginOperation	Warning	Microsoft-Windows-AAD/Analytic	Tgt error: %1
+Microsoft-Windows-AAD	1242	0	AadCloudAPPluginOperation1242()		Analytic	AadCloudAPPluginOperation	Informational	Microsoft-Windows-AAD/Analytic	Added user to admins security group
+Microsoft-Windows-AAD	1243	0	AadCloudAPPluginOperation1243()		Analytic	AadCloudAPPluginOperation	Informational	Microsoft-Windows-AAD/Analytic	Removed user from admins security group
+Microsoft-Windows-AAD	1244	0	AadCloudAPPluginOperation1244(HexInt32 Status)		Operational	AadCloudAPPluginOperation	Warning	Microsoft-Windows-AAD/Operational	Security groups were not loaded. Error: %1
+Microsoft-Windows-AAD	1245	0	AadCloudAPPluginOperation1245(HexInt32 Status)		Operational	AadCloudAPPluginOperation	Warning	Microsoft-Windows-AAD/Operational	Security groups were not updated. Error: %1
+Microsoft-Windows-AAD	1246	0	AadCloudAPPluginOperation1246(UnicodeString value1, UnicodeString value2)		Analytic	AadCloudAPPluginOperation	Informational	Microsoft-Windows-AAD/Analytic	User sid: %1\r\nGroup sids:\r\n%2
+Microsoft-Windows-AAD	1247	0	AadCloudAPPluginOperation1247(Int32 value, UnicodeString Context, Int32 Result)		Operational	AadCloudAPPluginOperation	Informational	Microsoft-Windows-AAD/Operational	RunRecovery registry value (%1) successfully written.\r\nContext: %2\r\nReason: %3

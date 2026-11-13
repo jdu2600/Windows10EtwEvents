@@ -6,4 +6,4 @@ Microsoft-Windows-AppID	4004	0	Event_4004(UInt16 FilePathLength, UnicodeString F
 Microsoft-Windows-AppID	4005	0	Event_4005(HexInt32 Status)			task_0	Error	Microsoft-Windows-AppID/Operational	AppID certificate store verification failed. Status %1.
 Microsoft-Windows-AppID	4006	0	Event_4006()			task_0	Informational	Microsoft-Windows-AppID/Operational	AppID certificate store is verified.
 Microsoft-Windows-AppID	4007	0	Event_4007(HexInt32 Status)			task_0	Error	Microsoft-Windows-AppID/Operational	AppID encountered a failure from discache.sys. Status %1.
-Microsoft-Windows-AppID	4008	0	Event_4008(UInt16 CallingFunctionNameLength, UnicodeString CallingFunctionName, UInt16 FunctionCallNameLength, UnicodeString FunctionCallName, HexInt32 Status)			task_0	Error	Microsoft-Windows-AppID/Operational	
+Microsoft-Windows-AppID	4008	0	Event_4008(UInt16 CallingFunctionNameLength, UnicodeString CallingFunctionName, UInt16 FunctionCallNameLength, UnicodeString FunctionCallName, HexInt32 Status)			task_0	Error	Microsoft-Windows-AppID/Operational	Function call error: %2 called %4 which returned unsuccessfully (Error code: %5).

@@ -41,6 +41,7 @@ Microsoft-Windows-StartupRepair	1138	0	Event_1138(UnicodeString Info)			task_0	I
 Microsoft-Windows-StartupRepair	1139	0	Event_1139(UnicodeString Info)			task_0	Informational	System	The WIMBoot configuration file was corrupt.
 Microsoft-Windows-StartupRepair	1140	0	Event_1140(UnicodeString Info)			task_0	Informational	System	An in-progress package installation may be preventing Windows from starting.
 Microsoft-Windows-StartupRepair	1141	0	Event_1141(UnicodeString Info)			task_0	Informational	System	Last installed LCU may be preventing Windows from starting.
+Microsoft-Windows-StartupRepair	1142	0	Event_1142(UnicodeString Info)			task_0	Informational	System	An error is detected by Recovery plugin.
 Microsoft-Windows-StartupRepair	1201	0	Event_1201(UInt32 RepairStatus, UnicodeString Info)			task_0	Informational	System	Repaired the master boot record (MBR).
 Microsoft-Windows-StartupRepair	1202	0	Event_1202(UInt32 RepairStatus, UnicodeString Info)			task_0	Informational	System	Reconstructed the partition table.
 Microsoft-Windows-StartupRepair	1203	0	Event_1203(UInt32 RepairStatus, UnicodeString Info)			task_0	Informational	System	Restored the boot sector from backup files.
@@ -59,3 +60,5 @@ Microsoft-Windows-StartupRepair	1215	0	Event_1215(UInt32 RepairStatus, UnicodeSt
 Microsoft-Windows-StartupRepair	1216	0	Event_1216(UInt32 RepairStatus, UnicodeString Info)			task_0	Informational	System	Aborted all pending package installations.
 Microsoft-Windows-StartupRepair	1217	0	Event_1217(UInt32 RepairStatus, UnicodeString Info)			task_0	Informational	System	Uninstall latest LCU.
 Microsoft-Windows-StartupRepair	1218	0	Event_1218(UInt32 RepairStatus, UnicodeString Info)			task_0	Informational	System	Uninstall recently installed driver updates.
+Microsoft-Windows-StartupRepair	1219	0	Event_1219(UInt32 RepairStatus, UnicodeString Info)			task_0	Informational	System	Perform remediation from Recovery Plugins (local).
+Microsoft-Windows-StartupRepair	1220	0	Event_1220(UInt32 RepairStatus, UnicodeString Info)			task_0	Informational	System	Perform remediation from Recovery Plugins (cloud).

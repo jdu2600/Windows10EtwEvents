@@ -9,6 +9,9 @@ Microsoft-Windows-DeviceSetupManager	41	0	Event_41(UInt32 Prop_ServerSelection)	
 Microsoft-Windows-DeviceSetupManager	42	0	Event_42(UInt32 Prop_ServerSelection, HexInt32 HRESULT)			task_0	Error	Microsoft-Windows-DeviceSetupManager/Admin	%1 search failed with error %2.
 Microsoft-Windows-DeviceSetupManager	43	0	Event_43()			task_0	Informational	Microsoft-Windows-DeviceSetupManager/Admin	Driver update search is being cancelled.
 Microsoft-Windows-DeviceSetupManager	44	0	Event_44(UInt32 Prop_ServerSelection)			task_0	Informational	Microsoft-Windows-DeviceSetupManager/Admin	%1 search was cancelled.
+Microsoft-Windows-DeviceSetupManager	50	0	Event_50(UInt8 Prop_TaskEnablement)			task_0	Informational	Microsoft-Windows-DeviceSetupManager/Admin	Driver recovery on reboot task is %1.
+Microsoft-Windows-DeviceSetupManager	51	0	Event_51()			task_0	Informational	Microsoft-Windows-DeviceSetupManager/Admin	Driver recovery action is requested since it was queued for the next reboot.
+Microsoft-Windows-DeviceSetupManager	52	0	Event_52(UInt32 Prop_DriverRecoveryRequest)			task_0	Informational	Microsoft-Windows-DeviceSetupManager/Admin	Driver recovery request is received. Last trigger: %1.
 Microsoft-Windows-DeviceSetupManager	100	0	Event_100(UInt32 Prop_CoreServiceMode, Int64 Prop_Event_Window_Seconds)			task_0	Informational	Microsoft-Windows-DeviceSetupManager/Admin	DSM service started, mode is %1, last session (or boot) was %2 seconds ago.
 Microsoft-Windows-DeviceSetupManager	101	0	Event_101(Int64 Prop_UpTime_Seconds, Int64 Prop_WorkTime_MilliSeconds)			task_0	Informational	Microsoft-Windows-DeviceSetupManager/Admin	DSM Service is shutting down. Service uptime was %1 seconds, active worktime was %2 ms.
 Microsoft-Windows-DeviceSetupManager	102	0	Event_102()			task_0	Informational	Microsoft-Windows-DeviceSetupManager/Debug	DSM Service dll has loaded.

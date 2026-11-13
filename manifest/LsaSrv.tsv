@@ -40,6 +40,7 @@ LsaSrv	6163	0	Event_6163()			task_0	Informational	System	Credential Guard was st
 LsaSrv	6164	0	Event_6164()			task_0	Warning	System	Credential Guard is configured but the secure kernel is not running; continuing without Credential Guard.
 LsaSrv	6165	0	Event_6165(UInt32 CredGuardRunning, UInt32 VbsSecretValidity)			task_0	Warning	System	VBS bound machine secret is present but falling back to LSA bound secret.\r\nCredential Guard running status: %1\r\nVBS bound secret validity: %2
 LsaSrv	6166	0	Event_6166(UInt32 CredGuardRunning, UInt32 GroupPolicyStatus, UInt32 MachineSecretSource, UInt32 VbsSecretValidity)			task_0	Informational	System	Machine Identity Isolation status:\r\nCredential Guard running: %1\r\nGroup Policy: %2\r\nMachine secret source: %3\r\nVBS bound secret validity: %4
+LsaSrv	6167	0	Event_6167()			task_0	Error	System	There is a partial mismatch in the machine ID. This indicates that the ticket has either been manipulated or it belongs to a different boot session. Failing authentication.
 LsaSrv	6182	0	Event_6182(HexInt64 TargetLogonId, UnicodeString AccountName, UnicodeString DomainName)			task_0	Warning	Microsoft-Windows-LSA/Diagnostic	LogonSession alive after interactive user logoff. Indicates a possible token leak in one of the services. \r\nLogon ID:%1\r\nAccount Name:%2\r\nDomain Name:%3
 LsaSrv	6225	0	LSALogonStart()	Start		LSALogon	Informational	Microsoft-Windows-LSA/Performance	
 LsaSrv	6226	0	LSALogonStop()	Stop		LSALogon	Informational	Microsoft-Windows-LSA/Performance	

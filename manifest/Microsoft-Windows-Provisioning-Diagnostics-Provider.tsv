@@ -26,6 +26,10 @@ Microsoft-Windows-Provisioning-Diagnostics-Provider	69	0	Event_69(HexInt32 HRESU
 Microsoft-Windows-Provisioning-Diagnostics-Provider	70	0	Event_70(Int32 Int1)			task_0	Informational	Microsoft-Windows-Provisioning-Diagnostics-Provider/Admin	ApplyKnownPackages initiated, turn = %1
 Microsoft-Windows-Provisioning-Diagnostics-Provider	71	0	Event_71(Int32 Int1)			task_0	Informational	Microsoft-Windows-Provisioning-Diagnostics-Provider/Admin	ApplyKnownPackages succeeded, turn = %1
 Microsoft-Windows-Provisioning-Diagnostics-Provider	72	0	Event_72(Int32 Int1, HexInt32 HRESULT)			task_0	Error	Microsoft-Windows-Provisioning-Diagnostics-Provider/Admin	ApplyKnownPackages failed. turn = %1, HRESULT = %2
+Microsoft-Windows-Provisioning-Diagnostics-Provider	73	0	Event_73(HexInt32 HRESULT)			task_0	Error	Microsoft-Windows-Provisioning-Diagnostics-Provider/Admin	PublishDeviceProvisioningLogs failed. HRESULT = %1
+Microsoft-Windows-Provisioning-Diagnostics-Provider	74	0	Event_74()			task_0	Informational	Microsoft-Windows-Provisioning-Diagnostics-Provider/Admin	PublishDeviceProvisioningLogs succeeded.
+Microsoft-Windows-Provisioning-Diagnostics-Provider	75	0	Event_75(HexInt32 HRESULT)			task_0	Error	Microsoft-Windows-Provisioning-Diagnostics-Provider/Admin	CleanupOOBEProvisioningLogs failed. HRESULT = %1
+Microsoft-Windows-Provisioning-Diagnostics-Provider	76	0	Event_76()			task_0	Informational	Microsoft-Windows-Provisioning-Diagnostics-Provider/Admin	CleanupOOBEProvisioningLogs succeeded.
 Microsoft-Windows-Provisioning-Diagnostics-Provider	80	0	Event_80(UInt32 UInt1)			task_0	Informational	Microsoft-Windows-Provisioning-Diagnostics-Provider/Admin	GetLastProvisioningResultsAsync succeeded, resultCount = %1
 Microsoft-Windows-Provisioning-Diagnostics-Provider	81	0	Event_81(HexInt32 HRESULT)			task_0	Error	Microsoft-Windows-Provisioning-Diagnostics-Provider/Admin	GetLastProvisioningResultsAsync failed. HRESULT = %1
 Microsoft-Windows-Provisioning-Diagnostics-Provider	82	0	Event_82(UInt32 UInt1)			task_0	Informational	Microsoft-Windows-Provisioning-Diagnostics-Provider/Admin	GetLastProvisioningCommandResultsAsync succeeded, resultCount = %1

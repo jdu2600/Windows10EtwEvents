@@ -2,12 +2,12 @@ provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channe
 Microsoft-Windows-SenseIR	1	0	Event_1(UnicodeString ActionType, UnicodeString ActionId)			task_0	Informational	Microsoft-Windows-SenseIR/Operational	Starting action %1. Action ID: %2
 Microsoft-Windows-SenseIR	2	0	Event_2(UnicodeString ActionType, UnicodeString ActionId, HexInt64 HRESULT)			task_0	Warning	Microsoft-Windows-SenseIR/Operational	Failed to run action %1. Action ID: %2, error code: %3
 Microsoft-Windows-SenseIR	3	0	Event_3(UnicodeString ActionType, UnicodeString ActionId)			task_0	Informational	Microsoft-Windows-SenseIR/Operational	Succeeded to run action %1. Action ID: %2
-Microsoft-Windows-SenseIR	4	0	Event_4()			task_0	Informational	Microsoft-Windows-SenseIR/Operational	SenseIR executable started.
-Microsoft-Windows-SenseIR	5	0	Event_5(HexInt32 HRESULT)			task_0	Informational	Microsoft-Windows-SenseIR/Operational	SenseIR executable terminated. Exit code: %1
-Microsoft-Windows-SenseIR	7	0	Event_7(HexInt32 HRESULT)			task_0	Informational	Microsoft-Windows-SenseIR/Operational	SenseIR requested registration as an AIRS client. Result code: %1
+Microsoft-Windows-SenseIR	4	0	Event_4()			task_0	Informational	Microsoft-Windows-SenseIR/Operational	Windows Defender Advanced Threat Protection Incident Response executable started.
+Microsoft-Windows-SenseIR	5	0	Event_5(HexInt32 HRESULT)			task_0	Informational	Microsoft-Windows-SenseIR/Operational	Windows Defender Advanced Threat Protection Incident Response executable terminated. Exit code: %1
+Microsoft-Windows-SenseIR	7	0	Event_7(HexInt32 HRESULT)			task_0	Informational	Microsoft-Windows-SenseIR/Operational	Windows Defender Advanced Threat Protection Incident Response requested registration as an AIRS client. Result code: %1
 Microsoft-Windows-SenseIR	8	0	Event_8(HexInt32 HRESULT)			task_0	Warning	Microsoft-Windows-SenseIR/Operational	Encountered unexpected error while getting actions from AIRS server. Error code: %1
-Microsoft-Windows-SenseIR	9	0	Event_9(HexInt32 HRESULT)			task_0	Warning	Microsoft-Windows-SenseIR/Operational	Found the caller of SenseIR executable to be invalid. Terminating executable. Error code: %1
-Microsoft-Windows-SenseIR	10	0	Event_10(HexInt32 HRESULT)			task_0	Warning	Microsoft-Windows-SenseIR/Operational	Failed to deserialize SenseIR parameters. Error code: %1
+Microsoft-Windows-SenseIR	9	0	Event_9(HexInt32 HRESULT)			task_0	Warning	Microsoft-Windows-SenseIR/Operational	Found the caller of Windows Defender Advanced Threat Protection Incident Response executable to be invalid. Terminating executable. Error code: %1
+Microsoft-Windows-SenseIR	10	0	Event_10(HexInt32 HRESULT)			task_0	Warning	Microsoft-Windows-SenseIR/Operational	Failed to deserialize Windows Defender Advanced Threat Protection Incident Response parameters. Error code: %1
 Microsoft-Windows-SenseIR	11	0	Event_11(UnicodeString ActionType, UnicodeString ActionId, HexInt64 HRESULT)			task_0	Informational	Microsoft-Windows-SenseIR/Operational	Finished uploading results of action %1. Action ID: %2, upload result code: %3
 Microsoft-Windows-SenseIR	12	0	Event_12(HexInt32 HRESULT)			task_0	Warning	Microsoft-Windows-SenseIR/Operational	Failed to deserialize actions, received invalid actions from AIRS server. Error code: %1
 Microsoft-Windows-SenseIR	13	0	Event_13(HexInt32 HRESULT)			task_0	Warning	Microsoft-Windows-SenseIR/Operational	Failed to execute AIRS request. Error code: %1

@@ -24,16 +24,26 @@ Microsoft-Windows-TPM-WMI	1038	0	Event_1038(UnicodeString Path)			task_0	Informa
 Microsoft-Windows-TPM-WMI	1039	0	Event_1039(UnicodeString Path)			task_0	Informational	System	Pre-attestation health checks confirm that the device meets most attestation criteria, but failing is still possible.\r\n Please see %1 for detailed information on what checks were made.
 Microsoft-Windows-TPM-WMI	1040	0	Event_1040(UnicodeString Path)			task_0	Error	System	Pre-attestation health checks confirm a critical component has failed, and the device is not expected to pass attestation.\r\n Please see %1 for detailed information on what checks were made.
 Microsoft-Windows-TPM-WMI	1041	0	Event_1041(UnicodeString Json)			task_0	Informational	System	Pre-attestation health check detailed information: %1
+Microsoft-Windows-TPM-WMI	1042	0	Event_1042()			task_0	Informational	System	Secure Boot Dbx update to revoke older Boot Manager SVNs is applied successfully
+Microsoft-Windows-TPM-WMI	1043	0	Event_1043()			task_0	Informational	System	Secure Boot KEK update applied successfully
+Microsoft-Windows-TPM-WMI	1044	0	Event_1044()			task_0	Informational	System	Secure Boot DB update to install Microsoft Option ROM UEFI CA 2023 certificate applied successfully
+Microsoft-Windows-TPM-WMI	1045	0	Event_1045()			task_0	Informational	System	Secure Boot DB update to install Microsoft UEFI CA 2023 certificate applied successfully
 Microsoft-Windows-TPM-WMI	1281	0	Event_1281()			task_0	Informational	System	This event triggers the TBS device identifier generation.
 Microsoft-Windows-TPM-WMI	1282	0	Event_1282()			task_0	Informational	System	The TBS device identifier has been generated.
+Microsoft-Windows-TPM-WMI	1283	0	Event_1283()			task_0	Informational	System	EK Certificate tool started.
+Microsoft-Windows-TPM-WMI	1284	0	Event_1284(UInt32 Millisecondstaken)			task_0	Informational	System	EK Certificate tool succeeded in %1 milliseconds.
+Microsoft-Windows-TPM-WMI	1285	0	Event_1285(UInt32 Millisecondstaken, Int32 ErrorCode)			task_0	Informational	System	EK Certificate tool failed in %1 milliseconds with error %2.
 Microsoft-Windows-TPM-WMI	1537	0	Event_1537(UnicodeString HealthAttestationServer)			task_0	Informational	System	The Device Health Certificate was successfully provisioned from %1.
 Microsoft-Windows-TPM-WMI	1538	0	Event_1538(UnicodeString HealthAttestationServer, Int32 HResult)			task_0	Warning	System	The Device Health Certificate provisioning could not connect to %1. %2
 Microsoft-Windows-TPM-WMI	1539	0	Event_1539(UnicodeString HealthAttestationServer, Int32 HTTPStatus, UnicodeString ServerResponse)			task_0	Warning	System	The Device Health Certificate could not be provisioned from %1. HTTP status code %2: %3
 Microsoft-Windows-TPM-WMI	1793	0	Event_1793()			task_0	Informational	System	The Trusted Platform Module (TPM) hardware on this computer is scheduled to be cleared by the system.
 Microsoft-Windows-TPM-WMI	1794	0	Event_1794()			task_0	Error	System	The Trusted Platform Module (TPM) firmware on this PC has a known security problem. Please contact your PC manufacturer to find out if an update is available. For more information please go to https://go.microsoft.com/fwlink/?linkid=852572
-Microsoft-Windows-TPM-WMI	1795	0	Event_1795(Int32 HResult)			task_0	Error	System	The system firmware returned an error %1 when attempting to update a Secure Boot variable. For more information, please see https://go.microsoft.com/fwlink/?linkid=2169931
-Microsoft-Windows-TPM-WMI	1796	0	Event_1796(Int32 HResult)			task_0	Error	System	The Secure Boot update failed to update a Secure Boot variable with error %1. For more information, please see https://go.microsoft.com/fwlink/?linkid=2169931
-Microsoft-Windows-TPM-WMI	1797	0	Event_1797()			task_0	Error	System	The Secure Boot Dbx update failed to revoke Microsoft Windows Production PCA 2011 as the Windows UEFI CA 2023 certificate is not present in Db
-Microsoft-Windows-TPM-WMI	1798	0	Event_1798()			task_0	Error	System	The Secure Boot Dbx update failed to revoke Microsoft Windows Production PCA 2011 as boot manager is not signed with the Windows UEFI CA 2023 certificate
+Microsoft-Windows-TPM-WMI	1795	1	Event_1795_V1(Int32 HResult)			task_0	Error	System	The system firmware returned an error %1 when attempting to update a Secure Boot variable. For more information, please see https://go.microsoft.com/fwlink/?linkid=2169931
+Microsoft-Windows-TPM-WMI	1795	2	Event_1795_V2(Int32 HResult, Int32 UpdateType)			task_0	Error	System	The system firmware returned an error %1 when attempting to update a Secure Boot variable. For more information, please see https://go.microsoft.com/fwlink/?linkid=2169931
+Microsoft-Windows-TPM-WMI	1796	1	Event_1796_V1(Int32 HResult)			task_0	Error	System	The Secure Boot update failed to update a Secure Boot variable with error %1. For more information, please see https://go.microsoft.com/fwlink/?linkid=2169931
+Microsoft-Windows-TPM-WMI	1796	2	Event_1796_V2(Int32 HResult, Int32 UpdateType)			task_0	Error	System	The Secure Boot update failed to update a Secure Boot variable with error %1. For more information, please see https://go.microsoft.com/fwlink/?linkid=2169931
+Microsoft-Windows-TPM-WMI	1797	0	Event_1797()			task_0	Error	System	The Secure Boot update failed as the Windows UEFI CA 2023 certificate is not present in Db
+Microsoft-Windows-TPM-WMI	1798	0	Event_1798()			task_0	Error	System	The Secure Boot Dbx update failed as boot manager is not signed with the Windows UEFI CA 2023 certificate
 Microsoft-Windows-TPM-WMI	1799	0	Event_1799()			task_0	Informational	System	Boot Manager signed with Windows UEFI CA 2023 was installed successfully
-Microsoft-Windows-TPM-WMI	1800	0	Event_1800(Int32 RebootReason)			task_0	Warning	System	A reboot is required before installing the update. Reason: %1
+Microsoft-Windows-TPM-WMI	1800	1	Event_1800_V1(Int32 RebootReason)			task_0	Warning	System	A reboot is required before installing the Secure Boot update. Reason: %1
+Microsoft-Windows-TPM-WMI	1800	2	Event_1800_V2(Int32 UpdateType)			task_0	Warning	System	A reboot is required before installing the Secure Boot update. Reason: %1

@@ -1,0 +1,5 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Kernel-Prm	1	0	Event_1()			task_0	Informational	Microsoft-Windows-Kernel-PRM/Operational	PRM has been invoked.
+Microsoft-Windows-Kernel-Prm	2	0	Event_2(GUID ModuleGuid, UInt64 ModuleVersion, UInt64 NtStatus)			task_0	Error	Microsoft-Windows-Kernel-PRM/Operational	PRM module update failed. Module GUID %1, module version %2, status %3.
+Microsoft-Windows-Kernel-Prm	3	0	Event_3(GUID HandlerGuid, GUID ModuleGuid, UInt64 ModuleVersion, UInt64 InterfaceStatus, UInt64 HandlerStatus)			task_0	Error	Microsoft-Windows-Kernel-PRM/Operational	PRM invocation failed. Handler GUID %1, module GUID %2, module version %3, interface status %4, handler status %5.
+Microsoft-Windows-Kernel-Prm	4	0	Event_4(GUID HandlerGuid, GUID ModuleGuid, UInt64 ModuleVersion, UInt64 DurationInUs)			task_0	Error	Microsoft-Windows-Kernel-PRM/Operational	Excessive PRM handler runtime. Handler GUID %1, module GUID %2, module version %3, duration %4 us.

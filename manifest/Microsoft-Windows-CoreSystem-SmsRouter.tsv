@@ -1,7 +1,7 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
 Microsoft-Windows-CoreSystem-SmsRouter	100	0	SmsRouterStart()	Start	Performance	SmsRouter	Informational	Microsoft-Windows-CoreSystem-SmsRouter-Events/Operational	[SmsRouter] SmsRouter is started
 Microsoft-Windows-CoreSystem-SmsRouter	101	0	SmsRouterStop()	Stop	Performance	SmsRouter	Informational	Microsoft-Windows-CoreSystem-SmsRouter-Events/Operational	[SmsRouter] SmsRouter is stoped
-Microsoft-Windows-CoreSystem-SmsRouter	102	0	SmsRouter(AnsiString AnsiStringName, UInt32 LineNumber, Int32 HResultName, AnsiString Context)		Error	SmsRouter	Error	Microsoft-Windows-CoreSystem-SmsRouter-Events/Debug	[SmsRouter::%1:%2] Error %3: %4
+Microsoft-Windows-CoreSystem-SmsRouter	102	0	SmsRouter(AnsiString AnsiStringName, UInt32 LineNumber, Int32 HResultName, AnsiString Context)		Error	SmsRouter	Error	Microsoft-Windows-CoreSystem-SmsRouter-Events/Operational	[SmsRouter::%1:%2] Error %3: %4
 Microsoft-Windows-CoreSystem-SmsRouter	103	0	SmsRouter103(AnsiString AnsiStringName, UInt32 LineNumber, AnsiString Context)		Performance	SmsRouter	Informational	Microsoft-Windows-CoreSystem-SmsRouter-Events/Debug	[SmsRouter::%1:%2] %3
 Microsoft-Windows-CoreSystem-SmsRouter	200	0	SmsBrokerStart()	Start	Performance	SmsBroker	Informational	Microsoft-Windows-CoreSystem-SmsRouter-Events/Operational	[SmsRouter] SmsBroker is started
 Microsoft-Windows-CoreSystem-SmsRouter	201	0	SmsBrokerStop()	Stop	Performance	SmsBroker	Informational	Microsoft-Windows-CoreSystem-SmsRouter-Events/Operational	[SmsRouter] SmsBroker is stoped
@@ -11,7 +11,7 @@ Microsoft-Windows-CoreSystem-SmsRouter	303	0	Event_303()		Performance	task_0	Inf
 Microsoft-Windows-CoreSystem-SmsRouter	304	0	Event_304()		Performance	task_0	Informational	Microsoft-Windows-CoreSystem-SmsRouter-Events/Operational	The SMSRouter received a class zero message.
 Microsoft-Windows-CoreSystem-SmsRouter	1020	0	ProcessNotificationStart()	Start		ProcessNotification	Informational	Microsoft-Windows-CoreSystem-SmsRouter-Events/Operational	
 Microsoft-Windows-CoreSystem-SmsRouter	1021	0	ProcessNotificationStop()	Stop		ProcessNotification	Informational	Microsoft-Windows-CoreSystem-SmsRouter-Events/Operational	
-Microsoft-Windows-CoreSystem-SmsRouter	1022	0	Event_1022(UInt32 error, Int32 hresult)		Error	task_0	Error	Microsoft-Windows-CoreSystem-SmsRouter-Events/Debug	Error publishing background notification to system event broker.\r\nError is %1: %2
-Microsoft-Windows-CoreSystem-SmsRouter	1023	0	Event_1023(UInt32 error, Int32 hresult)		Error	task_0	Error	Microsoft-Windows-CoreSystem-SmsRouter-Events/Debug	No WNF state name found for this device.\r\nError is %1: %2
-Microsoft-Windows-CoreSystem-SmsRouter	1024	0	Event_1024(UInt32 error, Int32 hresult)		Error	task_0	Error	Microsoft-Windows-CoreSystem-SmsRouter-Events/Debug	Error getting network account details from device node.\r\nError is %1: %2
-Microsoft-Windows-CoreSystem-SmsRouter	1025	0	Event_1025(UInt32 error, Int32 hresult)		Error	task_0	Error	Microsoft-Windows-CoreSystem-SmsRouter-Events/Debug	Error - Could not decode SMS message.\r\nError is %1: %2
+Microsoft-Windows-CoreSystem-SmsRouter	1022	0	Event_1022(UInt32 error, Int32 hresult)		Error	task_0	Error	Microsoft-Windows-CoreSystem-SmsRouter-Events/Operational	Error publishing background notification to system event broker.\r\nError is %1: %2
+Microsoft-Windows-CoreSystem-SmsRouter	1023	0	Event_1023(UInt32 error, Int32 hresult)		Error	task_0	Error	Microsoft-Windows-CoreSystem-SmsRouter-Events/Operational	No WNF state name found for this device.\r\nError is %1: %2
+Microsoft-Windows-CoreSystem-SmsRouter	1024	0	Event_1024(UInt32 error, Int32 hresult)		Error	task_0	Error	Microsoft-Windows-CoreSystem-SmsRouter-Events/Operational	Error getting network account details from device node.\r\nError is %1: %2
+Microsoft-Windows-CoreSystem-SmsRouter	1025	0	Event_1025(UInt32 error, Int32 hresult)		Error	task_0	Error	Microsoft-Windows-CoreSystem-SmsRouter-Events/Operational	Error - Could not decode SMS message.\r\nError is %1: %2

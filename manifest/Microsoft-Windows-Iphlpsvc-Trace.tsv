@@ -16,6 +16,10 @@ Microsoft-Windows-Iphlpsvc-Trace	4064	0	Event_4064(UInt32 AddrLength, UInt32 Ser
 Microsoft-Windows-Iphlpsvc-Trace	4065	0	Event_4065(UInt32 AddrLength, UnicodeString PrimaryorSecondary, Binary SocketAddress)		teredo	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	Teredo %2 received packet from %3.
 Microsoft-Windows-Iphlpsvc-Trace	4066	0	Event_4066(UInt32 AddrLength, UInt32 ServiceType, UInt32 TeredoPacketType, Binary SourceIpv6Address, Binary DestinationIPAddress, Binary TargetIPAddress)		teredo	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	Teredo %2 received packet type %3;\r\n with source %4 destination %5 target %6.
 Microsoft-Windows-Iphlpsvc-Trace	4067	0	Event_4067(UInt32 AddrLength, UInt32 ServiceType, UInt32 TeredoPacketType, Binary DestinationAddress)		teredo	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	Teredo %2 transmitting %3 packet to %4.
+Microsoft-Windows-Iphlpsvc-Trace	4068	0	Event_4068(UnicodeString Program)			task_0	Informational	System	Teredo connectivity initiated by %1
+Microsoft-Windows-Iphlpsvc-Trace	4069	0	Event_4069(UnicodeString Program)			task_0	Informational	System	%1 using Teredo connectivity
+Microsoft-Windows-Iphlpsvc-Trace	4070	0	Event_4070(UnicodeString Program)			task_0	Informational	System	%1 no longer using Teredo connectivity
+Microsoft-Windows-Iphlpsvc-Trace	4071	0	Event_4071(UnicodeString Program)			task_0	Informational	System	Teredo connectivity ended by %1
 Microsoft-Windows-Iphlpsvc-Trace	4150	0	Event_4150(UInt32 ProtocolType, UnicodeString Interface, UInt32 InterfaceState)		isatap sixto4	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	%1 interface %2 %3.
 Microsoft-Windows-Iphlpsvc-Trace	4151	0	Event_4151(UInt32 AddrLength, UnicodeString Interface, UInt32 CurrentIPv4Address, UInt32 NewIPv4Address)		isatap	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	ISATAP link local address for interface %2 was %3, is %4.
 Microsoft-Windows-Iphlpsvc-Trace	4152	0	Event_4152()		isatap	task_0	Informational	Microsoft-Windows-Iphlpsvc/Trace	ISATAP potential router interface list has changed.

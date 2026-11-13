@@ -1,20 +1,38 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-PerfNet	1000	0	Message_0x800003E8()			task_0	Always		Unable to open the Network Services performance object. The first four bytes (DWORD) of the Data section contains the status code.
-Microsoft-Windows-PerfNet	1000	1	Event_1000_V1(UInt32 Win32Error)			task_0	Error	Application	Unable to open the Network Services performance object. The first four bytes (DWORD) of the Data section contains the status code.
-Microsoft-Windows-PerfNet	1001	0	Message_0xC00003E9()			task_0	Always		Unable to collect Network Services performance data. The DLL failed to load because it cannot successfully communicate with network service devices.
-Microsoft-Windows-PerfNet	1001	1	Event_1001_V1()			task_0	Error	Application	Unable to collect Network Services performance data. The DLL failed to load because it cannot successfully communicate with network service devices.
-Microsoft-Windows-PerfNet	2000	0	Message_0xC00007D0()			task_0	Always		Unable to collect Browser performance data because the NetApi32.DLL failed to load.  The first four bytes (DWORD) of the Data section contains the status code.
-Microsoft-Windows-PerfNet	2000	1	Event_2000_V1(UInt32 Win32Error)			task_0	Error	Application	Unable to collect Browser performance data because the NetApi32.DLL failed to load.  The first four bytes (DWORD) of the Data section contains the status code.
-Microsoft-Windows-PerfNet	2001	0	Message_0xC00007D1()			task_0	Always		Unable to collect Browser performance data because the Query function was not found in the NetApi32.DLL.  The first four bytes (DWORD) of the Data section contains the status code.
-Microsoft-Windows-PerfNet	2001	1	Event_2001_V1(UInt32 Win32Error)			task_0	Error	Application	Unable to collect Browser performance data because the Query function was not found in the NetApi32.DLL.  The first four bytes (DWORD) of the Data section contains the status code.
-Microsoft-Windows-PerfNet	2001	2	Event_2001_V2(UInt32 NTSTATUS)			task_0	Error	Application	Unable to collect Browser performance data because the Query function was not found in the NetApi32.DLL.  The first four bytes (DWORD) of the Data section contains the status code.
-Microsoft-Windows-PerfNet	2002	0	Message_0xC00007D2()			task_0	Always		Unable to open the Redirector service performance object. The first four bytes (DWORD) of the Data section contains the status code.
-Microsoft-Windows-PerfNet	2002	1	Event_2002_V1(UInt32 NTSTATUS)			task_0	Error	Application	Unable to open the Redirector service performance object. The first four bytes (DWORD) of the Data section contains the status code.
-Microsoft-Windows-PerfNet	2003	0	Message_0xC00007D3()			task_0	Always		Unable to read performance data for the Redirector service. The first four bytes (DWORD) of the Data section contains the status code.
-Microsoft-Windows-PerfNet	2003	1	Event_2003_V1(UInt32 NTSTATUS)			task_0	Error	Application	Unable to read performance data for the Redirector service. The first four bytes (DWORD) of the Data section contains the status code.
-Microsoft-Windows-PerfNet	2004	0	Message_0xC00007D4()			task_0	Always		Unable to open the Server service performance object. The first four bytes (DWORD) of the Data section contains the status code.
-Microsoft-Windows-PerfNet	2004	1	Event_2004_V1(UInt32 NTSTATUS)			task_0	Error	Application	Unable to open the Server service performance object. The first four bytes (DWORD) of the Data section contains the status code.
-Microsoft-Windows-PerfNet	2005	0	Message_0xC00007D5()			task_0	Always		Unable to read performance data for the Server service. The first four bytes (DWORD) of the Data section contains the status code, the second four bytes contains the IOSB.Status and the next four bytes contains the IOSB.Information.
-Microsoft-Windows-PerfNet	2005	1	Event_2005_V1(UInt32 NTSTATUS, UInt32 IOCompletionNTSTATUS)			task_0	Error	Application	Unable to read performance data for the Server service. The first four bytes (DWORD) of the Data section contains the status code, the second four bytes contains the IOSB.Status and the next four bytes contains the IOSB.Information.
-Microsoft-Windows-PerfNet	2006	0	Message_0xC00007D6()			task_0	Always		Unable to read Server Queue performance data from the Server service. The first four bytes (DWORD) of the Data section contains the status code, the second four bytes contains the IOSB.Status and the next four bytes contains the IOSB.Information.
-Microsoft-Windows-PerfNet	2006	1	Event_2006_V1(UInt32 NTSTATUS, UInt32 IOCompletionNTSTATUS)			task_0	Error	Application	Unable to read Server Queue performance data from the Server service. The first four bytes (DWORD) of the Data section contains the status code, the second four bytes contains the IOSB.Status and the next four bytes contains the IOSB.Information.
+Microsoft-Windows-PerfNet	1000	1	Event_1000_V1(UInt32 Win32Error)		Debug	task_0	Warning	Application	Unable to open the Network Services performance object. Error: %1
+Microsoft-Windows-PerfNet	1001	1	Event_1001_V1()		Debug	task_0	Warning	Application	Unable to collect Network Services performance data. The DLL failed to load because it cannot successfully communicate with network service devices.
+Microsoft-Windows-PerfNet	2000	1	Event_2000_V1(UInt32 Win32Error)		Debug	task_0	Warning	Application	Unable to collect Browser performance data because the NetApi32.DLL failed to load. Error: %1
+Microsoft-Windows-PerfNet	2001	1	Event_2001_V1(UInt32 Win32Error)		Debug	task_0	Warning	Application	Unable to collect Browser performance data because the Query function was not found in the NetApi32.DLL. Error: %1
+Microsoft-Windows-PerfNet	2001	2	Event_2001_V2(UInt32 NTSTATUS)		Debug	task_0	Warning	Application	Unable to collect Browser performance data because the Query function was not found in the NetApi32.DLL. Error: %1
+Microsoft-Windows-PerfNet	2002	1	Event_2002_V1(UInt32 NTSTATUS)		Debug	task_0	Warning	Application	Unable to open the Redirector service performance object. Error: %1
+Microsoft-Windows-PerfNet	2003	1	Event_2003_V1(UInt32 NTSTATUS)		Debug	task_0	Warning	Application	Unable to read performance data for the Redirector service. Error: %1
+Microsoft-Windows-PerfNet	2004	1	Event_2004_V1(UInt32 NTSTATUS)		Debug	task_0	Warning	Application	Unable to open the Server service performance object. Error: %1
+Microsoft-Windows-PerfNet	2005	1	Event_2005_V1(UInt32 NTSTATUS, UInt32 IOCompletionNTSTATUS)		Debug	task_0	Warning	Application	Unable to read performance data for the Server service. Error: %1
+Microsoft-Windows-PerfNet	2006	1	Event_2006_V1(UInt32 NTSTATUS, UInt32 IOCompletionNTSTATUS)		Debug	task_0	Warning	Application	Unable to read Server Queue performance data from the Server service. Error: %1
+Microsoft-Windows-PerfNet	2007	1	Event_2007_V1()		Debug	task_0	Warning	Application	Unable to allocate memory for TDI Statistics block. Close one or more applications and retry.
+Microsoft-Windows-PerfNet	3000	1	Event_3000_V1()		Debug	task_0	Verbose		Entered the OpenNbtPerformanceData routine.
+Microsoft-Windows-PerfNet	3099	1	Event_3099_V1()		Debug	task_0	Informational		The OpenNbtPerformanceData routine successfully completed.
+Microsoft-Windows-PerfNet	3100	1	Event_3100_V1(UnicodeString ValueName)		Debug	task_0	Verbose		Entered the CollectNbtPerformanceData routine.
+Microsoft-Windows-PerfNet	3101	1	Event_3101_V1()		Debug	task_0	Warning	Application	Unable to read IO control information from an NBT device. A network device using the NBT protocol could not be queried.
+Microsoft-Windows-PerfNet	3102	1	Event_3102_V1()		Debug	task_0	Verbose		Successfully read the NBT device IO Control information.
+Microsoft-Windows-PerfNet	3103	1	Event_3103_V1(UInt32 Available, UInt32 Required)		Debug	task_0	Warning		The data buffer passed to the collection routine was too small to receive the data from the NBT device. No data was returned to the caller. The bytes available and the bytes required are in the message data.
+Microsoft-Windows-PerfNet	3199	1	Event_3199_V1()		Debug	task_0	Informational		The CollectNbtPerformanceData routine successfully completed.
+Microsoft-Windows-PerfNet	3200	1	Event_3200_V1()		Debug	task_0	Verbose		Entered the CloseNbtPerformanceData routine.
+Microsoft-Windows-PerfNet	4000	1	Event_4000_V1()		Debug	task_0	Verbose		Entered the OpenTcpIpPerformanceData routine.
+Microsoft-Windows-PerfNet	4001	1	Event_4001_V1()		Debug	task_0	Error		NBT Open failed. See NBT error message.
+Microsoft-Windows-PerfNet	4002	1	Event_4002_V1()		Debug	task_0	Verbose		NBT Open succeeded.
+Microsoft-Windows-PerfNet	4010	1	Event_4010_V1(UInt32 Error)		Debug	task_0	Warning	Application	Unable to get the local computer name. The data in the data section contains the error code.
+Microsoft-Windows-PerfNet	4099	1	Event_4099_V1()		Debug	task_0	Informational		The OpenTcpIpPerformanceData routine successfully completed.
+Microsoft-Windows-PerfNet	4100	1	Event_4100_V1(UnicodeString ValueName)		Debug	task_0	Verbose		Entered the CollectTcpIpPerformanceData routine.
+Microsoft-Windows-PerfNet	4105	1	Event_4105_V1(UInt32 Status)		Debug	task_0	Informational		The CollectNbtPerformanceData routine returned an error. The error status is in the data section.
+Microsoft-Windows-PerfNet	4106	1	Event_4106_V1()		Debug	task_0	Warning		The OpenTcpIpPerformanceData routine did not establish a SNMP Mgr Session.
+Microsoft-Windows-PerfNet	4108	1	Event_4108_V1(UInt32 Status)		Debug	task_0	Error		The SnmpMgrRequest call requesting the TCP, IP, UDP and Interface Counters returned an error. The ErrorStatus and ErrorIndex values are shown in Data.
+Microsoft-Windows-PerfNet	4110	1	Event_4110_V1(UInt32 Status)		Debug	task_0	Error		The SnmpMgrRequest call requesting ICMP Counters returned an error. The ErrorStatus and ErrorIndex values are shown in Data.
+Microsoft-Windows-PerfNet	4111	1	Event_4111_V1()		Debug	task_0	Verbose		Processing NetInterface entries.
+Microsoft-Windows-PerfNet	4112	1	Event_4112_V1(UInt32 Available, UInt32 Required)		Debug	task_0	Warning		The buffer is not large enough to store the Network Interface data. The returned data contains the available and required buffer size.
+Microsoft-Windows-PerfNet	4113	1	Event_4113_V1(UInt32 Status)		Debug	task_0	Error		The SnmpGet (GETNEXT) request returned an error while processing the Net Interface instances. The ErrorStatus and ErrorIndex are shown in Data.
+Microsoft-Windows-PerfNet	4114	1	Event_4114_V1()		Debug	task_0	Verbose		Copying data from network requests to the Performance Monitor buffer.
+Microsoft-Windows-PerfNet	4116	1	Event_4116_V1(UInt32 Available, UInt32 Required)		Debug	task_0	Warning		The buffer is not large enough to store the Network Protocol (IP, ICMP, TCP & UDP) data. The returned data contains the available and required buffer size.
+Microsoft-Windows-PerfNet	4121	1	Event_4121_V1()		Debug	task_0	Warning	Application	SNMP returned a NULL buffer in response to a request for network performance information. This error may be caused by a problem with the SNMP service.
+Microsoft-Windows-PerfNet	4199	1	Event_4199_V1()		Debug	task_0	Informational		The CollectTcpIpPerformanceData routine successfully completed.
+Microsoft-Windows-PerfNet	4200	1	Event_4200_V1()		Debug	task_0	Verbose		Entered the CloseTcpIpPerformanceData routine.

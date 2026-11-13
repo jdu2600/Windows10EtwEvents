@@ -18,3 +18,16 @@ Microsoft-Windows-DVD	17	0	NavCreateFileStart(Pointer Object, UnicodeString File
 Microsoft-Windows-DVD	18	0	NavCreateFileStop(Pointer Object, Int32 hr)	Stop		NavCreateFile	Verbose	Navigator	Nav CreateFileStop hr=%1
 Microsoft-Windows-DVD	19	0	NavMutexLockStart(Pointer Object)	Start		NavMutexLock	Verbose	Navigator	Nav MutexLockStart lock=%1
 Microsoft-Windows-DVD	20	0	NavMutexLockStop(Pointer Object)	Stop		NavMutexLock	Verbose	Navigator	Nav MutexLockStop lock=%1
+Microsoft-Windows-DVD	21	0	NavSpinDownStart(UInt16 DriveLetter)	Start		NavSpinDown	Verbose	Navigator	Nav SpinDownStart drive %1
+Microsoft-Windows-DVD	22	0	NavSpinDownStop(UInt32 hr)	Stop		NavSpinDown	Verbose	Navigator	Nav SpinDownStop hr %1
+Microsoft-Windows-DVD	23	0	NavCheckRegionStart(Pointer Object, UInt32 CSSEnabled, UInt32 DiskRegionMask, UInt32 DecoderRegionMask, UInt32 SystemRegionMask)	Start		NavCheckRegion	Verbose	Navigator	Nav CheckRegionStart obj=%1 drive %2
+Microsoft-Windows-DVD	24	0	NavCheckRegionStop(Pointer Object, UInt32 hr)	Stop		NavCheckRegion	Verbose	Navigator	Nav CheckRegionStop obj=%1 hr %2
+Microsoft-Windows-DVD	25	0	NavNegotiateDiscKeyStart(Pointer Object)	Start		NavNegotiateDiscKey	Verbose	Navigator	Nav NegotiateDiscKeyStart obj=%1
+Microsoft-Windows-DVD	26	0	NavNegotiateDiscKeyStop(Pointer Object, UInt32 hr)	Stop		NavNegotiateDiscKey	Verbose	Navigator	Nav NegotiateDiscKeyStop obj=%1 hr %2
+Microsoft-Windows-DVD	27	0	NavSetCurrentLatency(Pointer Object, UInt32 old, UInt32 attempted, UInt32 new)			NavSetCurrentLatency	Verbose	Navigator	Nav SetCurrentLatency obj=%1 old %2 attempted %3 new %4
+Microsoft-Windows-DVD	28	0	NavNegotiateTitleKeyStart(Pointer Object, UInt32 FileSizeInBlocks, UInt32 FileOffsetHint, UInt32 IgnoreKeyFailures)	Start		NavNegotiateTitleKey	Verbose	Navigator	Nav NegotiateTitleKeyStart obj=%1 size %2 offset %3 ignoreerrors %4
+Microsoft-Windows-DVD	29	0	NavNegotiateTitleKeyStop(Pointer Object, UInt32 hr)	Stop		NavNegotiateTitleKey	Verbose	Navigator	Nav NegotiateTitleKeyStop obj=%1 hr %2
+Microsoft-Windows-DVD	30	0	NavNegotiateTitleKeyStreamStart(Pointer Object, UInt32 StreamID, UInt32 Sector)	Start		NavNegotiateTitleKeyStream	Verbose	Navigator	Nav NegotiateTitleKeyStreamStart obj=%1 stream %2 sector %3
+Microsoft-Windows-DVD	31	0	NavNegotiateTitleKeyStreamStop(Pointer Object, UInt32 StreamID, UInt32 hr)	Stop		NavNegotiateTitleKeyStream	Verbose	Navigator	Nav NegotiateTitleKeyStreamStop obj=%1 hr %2
+Microsoft-Windows-DVD	32	0	NavDriveIOCTLStart(Pointer Object, UInt32 Func, UInt32 In, UInt32 Out)	Start		NavDriveIOCTL	Verbose	Navigator	Nav DriveIOCTLStart obj=%1 func %2 in %3 out %4
+Microsoft-Windows-DVD	33	0	NavDriveIOCTLStop(Pointer Object, UInt32 hr, UInt32 actualLen)	Stop		NavDriveIOCTL	Verbose	Navigator	Nav DriveIOCTLStop obj=%1 hr %2

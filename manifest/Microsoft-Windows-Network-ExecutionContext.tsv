@@ -1,0 +1,3 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-Network-ExecutionContext	1	0	Task_SchedulingOpcode_Polling(GUID IfGuid, UnicodeString IfName, UInt32 TimeWarningInSec, UInt32 ExceededCount, UInt32 LastIntervalInSec)	Opcode_Polling	Keyword_ExceededLimit	Task_Scheduling	Warning		
+Microsoft-Windows-Network-ExecutionContext	2	0	Task_SchedulingOpcode_StateChange(GUID Identifier, UInt32 Reason, UInt32 PreviousState, UInt32 NewState, UInt32 TaskCounter, UInt64 IterationCounter, UInt64 WorkCounter, CountedUtf16String Name)	Opcode_StateChange	Keyword_Execution	Task_Scheduling	Informational		

@@ -1,0 +1,20 @@
+provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
+Microsoft-Windows-ZTraceMaps	1050	0	Event_1050(Int32 Error, AnsiString Function, Int32 Line)		Debug	task_0	Error	Microsoft-Windows-ZTraceMaps/Function	[Z!O] %2: originated: %1 (%3)
+Microsoft-Windows-ZTraceMaps	1051	0	Event_1051(Int32 Error, AnsiString Function, Pointer This, Int32 Line)		Debug	task_0	Error	Microsoft-Windows-ZTraceMaps/Function	[Z!O] %2@%3: originated: %1 (%4)
+Microsoft-Windows-ZTraceMaps	1052	0	Event_1052(Int32 Error, AnsiString Function, Int32 Line)		Debug	task_0	Error	Microsoft-Windows-ZTraceMaps/Function	[Z!P] %2: failed: %1 (%3)
+Microsoft-Windows-ZTraceMaps	1053	0	Event_1053(Int32 Error, AnsiString Function, Pointer This, Int32 Line)		Debug	task_0	Error	Microsoft-Windows-ZTraceMaps/Function	[Z!P] %2@%3: failed: %1 (%4)
+Microsoft-Windows-ZTraceMaps	1054	0	Event_1054(Int32 Error, AnsiString Function, Int32 Line)		Debug	task_0	Warning	Microsoft-Windows-ZTraceMaps/Function	%2: ignored: %1 (%3)
+Microsoft-Windows-ZTraceMaps	1055	0	Event_1055(Int32 Error, AnsiString Function, Pointer This, Int32 Line)		Debug	task_0	Warning	Microsoft-Windows-ZTraceMaps/Function	%2@%3: ignored: %1 (%4)
+Microsoft-Windows-ZTraceMaps	1061	0	Event_1061(AnsiString MyMessage)		Debug	task_0	Error	Microsoft-Windows-ZTraceMaps/Operational	[Z!E] %1
+Microsoft-Windows-ZTraceMaps	1062	0	Event_1062(AnsiString Function, AnsiString Message, Int32 Line)		Debug	task_0	Error	Microsoft-Windows-ZTraceMaps/Operational	[Z!E] %1: %2 (%3)
+Microsoft-Windows-ZTraceMaps	1063	0	Event_1063(AnsiString Function, AnsiString Message, Pointer This, Int32 Line)		Debug	task_0	Error	Microsoft-Windows-ZTraceMaps/Operational	[Z!E] %1@%3: %2 (%4)
+Microsoft-Windows-ZTraceMaps	1071	0	Event_1071(AnsiString MyMessage)		Debug	task_0	Warning	Microsoft-Windows-ZTraceMaps/Operational	[Z!W] %1
+Microsoft-Windows-ZTraceMaps	1072	0	Event_1072(AnsiString Function, AnsiString Message, Int32 Line)		Debug	task_0	Warning	Microsoft-Windows-ZTraceMaps/Operational	[Z!W] %1: %2 (%3)
+Microsoft-Windows-ZTraceMaps	1073	0	Event_1073(AnsiString Function, AnsiString Message, Pointer This, Int32 Line)		Debug	task_0	Warning	Microsoft-Windows-ZTraceMaps/Operational	[Z!W] %1@%3: %2 (%4)
+Microsoft-Windows-ZTraceMaps	1081	0	Event_1081(AnsiString MyMessage)		Debug	task_0	Informational	Microsoft-Windows-ZTraceMaps/Operational	%1
+Microsoft-Windows-ZTraceMaps	1082	0	Event_1082(AnsiString Function, AnsiString Message, Int32 Line)		Debug	task_0	Informational	Microsoft-Windows-ZTraceMaps/Operational	%1: %2 (%3)
+Microsoft-Windows-ZTraceMaps	1083	0	Event_1083(AnsiString Function, AnsiString Message, Pointer This, Int32 Line)		Debug	task_0	Informational	Microsoft-Windows-ZTraceMaps/Operational	%1@%3: %2 (%4)
+Microsoft-Windows-ZTraceMaps	1091	0	Event_1091(AnsiString MyMessage)		Debug	task_0	Verbose	Microsoft-Windows-ZTraceMaps/Operational	%1
+Microsoft-Windows-ZTraceMaps	1092	0	Event_1092(AnsiString Function, AnsiString Message, Int32 Line)		Debug	task_0	Verbose	Microsoft-Windows-ZTraceMaps/Operational	%1: %2 (%3)
+Microsoft-Windows-ZTraceMaps	1093	0	Event_1093(AnsiString Function, AnsiString Message, Pointer This, Int32 Line)		Debug	task_0	Verbose	Microsoft-Windows-ZTraceMaps/Operational	%1@%3: %2 (%4)
+Microsoft-Windows-ZTraceMaps	1100	0	Event_1100(AnsiString MyMessage)		Debug	task_0	Informational	Microsoft-Windows-ZTraceMaps/Operational	[ZZZ] %1

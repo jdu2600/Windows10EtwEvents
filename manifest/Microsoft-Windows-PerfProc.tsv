@@ -1,18 +1,9 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-PerfProc	1000	0	Message_0x800003E8()			task_0	Always		Unable to open the System process performance objects. The first four bytes (DWORD) of the Data section contains the status code.
-Microsoft-Windows-PerfProc	1001	0	Message_0xC00003E9()			task_0	Always		Unable to collect system process performance data because the DLL failed to load.
-Microsoft-Windows-PerfProc	1001	1	Event_1001_V1()			task_0	Error	Application	Unable to collect system process performance data because the DLL failed to load.
-Microsoft-Windows-PerfProc	2000	0	Message_0xC00007D0()			task_0	Always		The pixel format is invalid.
-Microsoft-Windows-PerfProc	2001	0	Message_0xC00007D1()			task_0	Always		Unable to collect process virtual memory information. The first four bytes (DWORD) of the Data section contains the status code.
-Microsoft-Windows-PerfProc	2001	1	Event_2001_V1(UInt32 Win32Error)			task_0	Error	Application	Unable to collect process virtual memory information. The first four bytes (DWORD) of the Data section contains the status code.
-Microsoft-Windows-PerfProc	2002	0	Message_0x800007D2()			task_0	Always		Unable to open the job object %1 for query access. The calling process may not have permission to open this job. The first four bytes (DWORD) of the Data section contains the status code.
-Microsoft-Windows-PerfProc	2002	1	Event_2002_V1(UnicodeString Message, UInt32 Win32Error)			task_0	Warning	Application	Unable to open the job object %1 for query access. The calling process may not have permission to open this job. The first four bytes (DWORD) of the Data section contains the status code.
-Microsoft-Windows-PerfProc	2003	0	Message_0x800007D3()			task_0	Always		Unable to query the job object %1 for its accounting info. The calling process may not have permission to query this job. The first four bytes (DWORD) of the Data section contains the status code.
-Microsoft-Windows-PerfProc	2003	1	Event_2003_V1(UnicodeString Message, UInt32 Win32Error)			task_0	Warning	Application	Unable to query the job object %1 for its accounting info. The calling process may not have permission to query this job. The first four bytes (DWORD) of the Data section contains the status code.
-Microsoft-Windows-PerfProc	2004	0	Message_0x800007D4()			task_0	Always		Unable to query the %1 object directory to look for job objects. The calling process may not have permission to perform this query. The first four bytes (DWORD) of the Data section contains the status code.
-Microsoft-Windows-PerfProc	2004	1	Event_2004_V1(UnicodeString Message, UInt32 Win32Error)			task_0	Warning	Application	Unable to query the %1 object directory to look for job objects. The calling process may not have permission to perform this query. The first four bytes (DWORD) of the Data section contains the status code.
-Microsoft-Windows-PerfProc	2005	0	Message_0x800007D5()			task_0	Always		Unable to query the job object %1 for its process IDs The calling process may not have permission to query this job. The first four bytes (DWORD) of the Data section contains the status code.
-Microsoft-Windows-PerfProc	2005	1	Event_2005_V1(UnicodeString Message, UInt32 Win32Error)			task_0	Warning	Application	Unable to query the job object %1 for its process IDs The calling process may not have permission to query this job. The first four bytes (DWORD) of the Data section contains the status code.
-Microsoft-Windows-PerfProc	2006	0	Message_0x800007D6()			task_0	Always		Unable to allocate memory for Job counters.
-Microsoft-Windows-PerfProc	2006	1	Event_2006_V1()			task_0	Error	Application	Unable to allocate memory for Job counters.
-Microsoft-Windows-PerfProc	8192	1	Event_8192_V1(UInt32 Win32Error)			task_0	Error	Application	Unable to collect system process performance information. The first four bytes (DWORD) of the Data section contains the status code.
+Microsoft-Windows-PerfProc	1001	1	Event_1001_V1()			task_0	Warning	Application	Unable to collect system process performance data because of an error during DLL initialization.
+Microsoft-Windows-PerfProc	2001	1	Event_2001_V1(UInt32 Win32Error)			task_0	Warning	Application	Unable to collect process virtual memory information. Error: %1
+Microsoft-Windows-PerfProc	2002	1	Event_2002_V1(UnicodeString Message, UInt32 Win32Error)			task_0	Warning	Application	Unable to open the job object %1 for query access. Error: %2
+Microsoft-Windows-PerfProc	2003	1	Event_2003_V1(UnicodeString Message, UInt32 Win32Error)			task_0	Warning	Application	Unable to query the job object %1 for its accounting info. Error: %2
+Microsoft-Windows-PerfProc	2004	1	Event_2004_V1(UnicodeString Message, UInt32 Win32Error)			task_0	Warning	Application	Unable to query the %1 object directory to look for job objects. Error: %2
+Microsoft-Windows-PerfProc	2005	1	Event_2005_V1(UnicodeString Message, UInt32 Win32Error)			task_0	Warning	Application	Unable to query the job object %1 for its process IDs. Error: %2
+Microsoft-Windows-PerfProc	2006	1	Event_2006_V1()			task_0	Warning	Application	Unable to allocate memory for Job counters.
+Microsoft-Windows-PerfProc	8192	1	Event_8192_V1(UInt32 Win32Error)			task_0	Warning	Application	Unable to collect system process performance information. Error: %1

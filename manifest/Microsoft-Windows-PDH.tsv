@@ -1,59 +1,5 @@
 provider	event_id	version	event(fields)	opcode	keywords	task	level	evtlog_channel	evtlog_message
-Microsoft-Windows-PDH	0	0	Message_0x00000000()			task_0	Always		The returned data is valid.
-Microsoft-Windows-PDH	1	0	Message_0x00000001()			task_0	Always		The returned data value is valid and different from the last sample.
-Microsoft-Windows-PDH	2000	0	Message_0x800007D0()			task_0	Always		Unable to connect to the specified computer or the computer is offline.
-Microsoft-Windows-PDH	2001	0	Message_0x800007D1()			task_0	Always		The specified instance is not present.
-Microsoft-Windows-PDH	2002	0	Message_0x800007D2()			task_0	Always		There is more data to return than will fit in the supplied buffer. Allocate a larger buffer and call the function again.
-Microsoft-Windows-PDH	2003	0	Message_0x800007D3()			task_0	Always		The data item has been added to the query, but has not been validated or accessed. No other status information about this data item is available.
-Microsoft-Windows-PDH	2004	0	Message_0x800007D4()			task_0	Always		Retry the selected operation.
-Microsoft-Windows-PDH	2005	0	Message_0x800007D5()			task_0	Always		No data to return.
-Microsoft-Windows-PDH	2006	0	Message_0x800007D6()			task_0	Always		A counter with a negative denominator value was detected.
-Microsoft-Windows-PDH	2007	0	Message_0x800007D7()			task_0	Always		A counter with a negative timebase value was detected.
-Microsoft-Windows-PDH	2008	0	Message_0x800007D8()			task_0	Always		A counter with a negative value was detected.
-Microsoft-Windows-PDH	2009	0	Message_0x800007D9()			task_0	Always		The user canceled the dialog box.
-Microsoft-Windows-PDH	2010	0	Message_0x800007DA()			task_0	Always		The end of the log file was reached.
-Microsoft-Windows-PDH	2011	0	Message_0x800007DB()			task_0	Always		Time-out while waiting for the asynchronous counter collection thread to end.
-Microsoft-Windows-PDH	2012	0	Message_0x800007DC()			task_0	Always		Cannot change the default real time data source. There are real time query sessions collecting counter data.
-Microsoft-Windows-PDH	3000	0	Message_0xC0000BB8()			task_0	Always		The specified object was not found on the computer.
-Microsoft-Windows-PDH	3001	0	Message_0xC0000BB9()			task_0	Always		The specified counter could not be found.
-Microsoft-Windows-PDH	3002	0	Message_0xC0000BBA()			task_0	Always		The returned data is not valid.
-Microsoft-Windows-PDH	3003	0	Message_0xC0000BBB()			task_0	Always		A PDH function could not allocate enough temporary memory to complete the operation. Close some applications or extend the pagefile and retry the  function.
-Microsoft-Windows-PDH	3004	0	Message_0xC0000BBC()			task_0	Always		The handle is not a valid PDH object.
-Microsoft-Windows-PDH	3005	0	Message_0xC0000BBD()			task_0	Always		A required argument is missing or not correct.
-Microsoft-Windows-PDH	3006	0	Message_0xC0000BBE()			task_0	Always		Unable to find the specified function.
-Microsoft-Windows-PDH	3007	0	Message_0xC0000BBF()			task_0	Always		No counter was specified.
-Microsoft-Windows-PDH	3008	0	Message_0xC0000BC0()			task_0	Always		Unable to parse the counter path. Check the format and syntax of the  specified path.
-Microsoft-Windows-PDH	3009	0	Message_0xC0000BC1()			task_0	Always		The buffer passed by the caller is not valid.
-Microsoft-Windows-PDH	3010	0	Message_0xC0000BC2()			task_0	Always		The requested data is larger than the given buffer. Unable to return the requested data.
-Microsoft-Windows-PDH	3011	0	Message_0xC0000BC3()			task_0	Always		Unable to connect to the requested computer.
-Microsoft-Windows-PDH	3012	0	Message_0xC0000BC4()			task_0	Always		The specified counter path could not be interpreted.
-Microsoft-Windows-PDH	3013	0	Message_0xC0000BC5()			task_0	Always		The instance name could not be read from the specified counter path.
-Microsoft-Windows-PDH	3014	0	Message_0xC0000BC6()			task_0	Always		The data is not valid.
-Microsoft-Windows-PDH	3015	0	Message_0xC0000BC7()			task_0	Always		The data block of the dialog box was missing or not valid.
-Microsoft-Windows-PDH	3016	0	Message_0xC0000BC8()			task_0	Always		Unable to read the counter and/or explain text from the specified computer.
-Microsoft-Windows-PDH	3017	0	Message_0xC0000BC9()			task_0	Always		Unable to create the specified log file.
-Microsoft-Windows-PDH	3018	0	Message_0xC0000BCA()			task_0	Always		Unable to open the specified log file.
-Microsoft-Windows-PDH	3019	0	Message_0xC0000BCB()			task_0	Always		The specified log file type has not been installed on this computer.
-Microsoft-Windows-PDH	3020	0	Message_0xC0000BCC()			task_0	Always		No more data is available.
-Microsoft-Windows-PDH	3021	0	Message_0xC0000BCD()			task_0	Always		The specified record was not found in the log file.
-Microsoft-Windows-PDH	3022	0	Message_0xC0000BCE()			task_0	Always		The specified data source is a log file.
-Microsoft-Windows-PDH	3023	0	Message_0xC0000BCF()			task_0	Always		The specified data source is the current activity.
-Microsoft-Windows-PDH	3024	0	Message_0xC0000BD0()			task_0	Always		The log file header could not be read.
-Microsoft-Windows-PDH	3025	0	Message_0xC0000BD1()			task_0	Always		Unable to find the specified file.
-Microsoft-Windows-PDH	3026	0	Message_0xC0000BD2()			task_0	Always		There is already a file with the specified file name.
-Microsoft-Windows-PDH	3027	0	Message_0xC0000BD3()			task_0	Always		The referenced function is not implemented.
-Microsoft-Windows-PDH	3028	0	Message_0xC0000BD4()			task_0	Always		Unable to find the specified string in the list of performance name and  explain text strings.
-Microsoft-Windows-PDH	3029	0	Message_0x80000BD5()			task_0	Always		Unable to map to the performance counter name data files. The data  will be read from the registry and stored locally.
-Microsoft-Windows-PDH	3030	0	Message_0xC0000BD6()			task_0	Always		The format of the specified log file is not recognized by the PDH DLL.
-Microsoft-Windows-PDH	3031	0	Message_0xC0000BD7()			task_0	Always		The specified Log Service command value is not recognized.
-Microsoft-Windows-PDH	3032	0	Message_0xC0000BD8()			task_0	Always		Unable to open or find the specified Query from the Log Service.
-Microsoft-Windows-PDH	3033	0	Message_0xC0000BD9()			task_0	Always		Unable to open the Performance Data Log Service key. This may be due to insufficient privilege or because the service has not been installed.
-Microsoft-Windows-PDH	3034	0	Message_0xC0000BDA()			task_0	Always		An error occurred while accessing the WBEM data store.
-Microsoft-Windows-PDH	3035	0	Message_0xC0000BDB()			task_0	Always		Unable to access the desired computer or service. Check the permissions and  authentication of the log service or the interactive user session against  those on the computer or service being monitored.
-Microsoft-Windows-PDH	3036	0	Message_0xC0000BDC()			task_0	Always		The maximum log file size specified is too small to log the selected counters. No data will be recorded in this log file. Specify a smaller set of counters to log or a larger file size and retry this call.
-Microsoft-Windows-PDH	3037	0	Message_0xC0000BDD()			task_0	Always		Cannot connect to ODBC DataSource Name.
-Microsoft-Windows-PDH	3038	0	Message_0xC0000BDE()			task_0	Always		The SQL database does not contain a valid set of tables for Performance Monitor; you need to use PdhCreateSQLTables. Use the ODBC Data Source Administrator to create a SQL Server system data source name to let Performance Monitor correctly create a database for counter logging.
-Microsoft-Windows-PDH	3039	0	Message_0xC0000BDF()			task_0	Always		No counters were found for this Performance Monitor SQL Log Set.
+Microsoft-Windows-PDH	1000	0	Event_1000(UnicodeString Message, UInt32 NativeError, UInt32 Line, AnsiString OdbcApi)		Debug	task_0	Error	Application	ODBC operation %4 failed (native error %2!S!): %1!S!
 Microsoft-Windows-PDH	3040	0	Message_0xC0000BE0()			task_0	Always		Call to SQLAllocStmt failed with %1.
 Microsoft-Windows-PDH	3041	0	Message_0xC0000BE1()			task_0	Always		Call to SQLAllocConnect failed with %1.
 Microsoft-Windows-PDH	3042	0	Message_0xC0000BE2()			task_0	Always		Call to SQLExecDirect failed with %1.
@@ -62,26 +8,3 @@ Microsoft-Windows-PDH	3044	0	Message_0xC0000BE4()			task_0	Always		Call to SQLRo
 Microsoft-Windows-PDH	3045	0	Message_0xC0000BE5()			task_0	Always		Call to SQLMoreResults failed with %1.
 Microsoft-Windows-PDH	3046	0	Message_0xC0000BE6()			task_0	Always		Call to SQLConnect failed with %1.
 Microsoft-Windows-PDH	3047	0	Message_0xC0000BE7()			task_0	Always		Call to SQLBindCol failed with %1.
-Microsoft-Windows-PDH	3048	0	Message_0xC0000BE8()			task_0	Always		Unable to connect to the WMI server on the requested computer.
-Microsoft-Windows-PDH	3049	0	Message_0xC0000BE9()			task_0	Always		Collection is already running.
-Microsoft-Windows-PDH	3050	0	Message_0xC0000BEA()			task_0	Always		The specified start time is after the end time.
-Microsoft-Windows-PDH	3051	0	Message_0xC0000BEB()			task_0	Always		Collection does not exist.
-Microsoft-Windows-PDH	3052	0	Message_0xC0000BEC()			task_0	Always		The specified end time has already passed.
-Microsoft-Windows-PDH	3053	0	Message_0xC0000BED()			task_0	Always		Collection did not start. Check the application event log for any errors.
-Microsoft-Windows-PDH	3054	0	Message_0xC0000BEE()			task_0	Always		Collection already exists.
-Microsoft-Windows-PDH	3055	0	Message_0xC0000BEF()			task_0	Always		There is a mismatch in the settings type.
-Microsoft-Windows-PDH	3056	0	Message_0xC0000BF0()			task_0	Always		The information specified does not resolve to a valid path name.
-Microsoft-Windows-PDH	3057	0	Message_0xC0000BF1()			task_0	Always		The Performance Logs & Alerts service did not respond.
-Microsoft-Windows-PDH	3058	0	Message_0xC0000BF2()			task_0	Always		The information passed is not valid.
-Microsoft-Windows-PDH	3059	0	Message_0x80000BF3()			task_0	Always		The information passed is not valid.
-Microsoft-Windows-PDH	3060	0	Message_0xC0000BF4()			task_0	Always		The name supplied is too long.
-Microsoft-Windows-PDH	3061	0	Message_0xC0000BF5()			task_0	Always		SQL log format is not correct. Correct format is "SQL:<DSN-name>!<LogSet-Name>".
-Microsoft-Windows-PDH	3062	0	Message_0xC0000BF6()			task_0	Always		The performance counter specified in the PdhAddCounter() call has already been added to the performance query. This counter is ignored.
-Microsoft-Windows-PDH	3063	0	Message_0xC0000BF7()			task_0	Always		Unable to read counter information and data from input binary log files.
-Microsoft-Windows-PDH	3064	0	Message_0xC0000BF8()			task_0	Always		At least one of the input binary log files contain fewer than two data samples.
-Microsoft-Windows-PDH	3065	0	Message_0xC0000BF9()			task_0	Always		The version of the operating system on the computer named %1 is more recent than that on the local computer. This operation is not available from the local computer.
-Microsoft-Windows-PDH	3066	0	Message_0xC0000BFA()			task_0	Always		%1 supports %2 or more recent versions. Check the operating system version on the computer named %3.
-Microsoft-Windows-PDH	3067	0	Message_0xC0000BFB()			task_0	Always		The file that you want to append to this file must contain data that is older than the data in this file.
-Microsoft-Windows-PDH	3068	0	Message_0xC0000BFC()			task_0	Always		Both files must have identical counters to append one file to the other.
-Microsoft-Windows-PDH	3069	0	Message_0xC0000BFD()			task_0	Always		Cannot alter CounterDetail table layout in SQL database.
-Microsoft-Windows-PDH	3070	0	Message_0xC0000BFE()			task_0	Always		A timeout occurred when collecting counter data. Retry later, or increase the value of the "CollectTime" registry value at HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVerison\PDH\CollectTimeout. Its unit is in seconds. The default value is 300 seconds.

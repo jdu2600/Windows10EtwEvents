@@ -5,3 +5,7 @@ Microsoft-Windows-Kernel-IO	3	0	VolumeMountStop3(GUID VolumeGuid, UInt16 VolumeN
 Microsoft-Windows-Kernel-IO	1205	0	Event_1205(UInt16 FilterNameLength, UnicodeString FilterName)			task_0	Error	System	Windows is configured to block legacy file system filters.\r\n\r\n           Filter name: %2
 Microsoft-Windows-Kernel-IO	1206	0	Event_1206(UInt16 FilterNameLength, UnicodeString FilterName, UInt16 VolumeNameLength, UnicodeString VolumeName)			task_0	Error	System	Legacy file system filters cannot attach to byte addressable volumes.\r\n\r\n           Filter name: %2\r\n           Volume name: %4
 Microsoft-Windows-Kernel-IO	1207	0	Event_1207(UInt32 DumpEncryptionFailureReason)			task_0	Error	System	Dumps are disabled on the machine since there was an error enabling dump encryption: %1.                  \r\nSee http://go.microsoft.com/fwlink/?LinkId=824149 for more information on dump encryption
+Microsoft-Windows-Kernel-IO	1300	0	LoadBootHotPatchesStart()	Start	HotPatch	LoadBootHotPatches	Informational		
+Microsoft-Windows-Kernel-IO	1301	0	LoadBootHotPatchesStop()	Stop	HotPatch	LoadBootHotPatches	Informational		
+Microsoft-Windows-Kernel-IO	1302	0	WheaInitializeStart(UInt32 Phase)	Start	BootPerf	WheaInitialize	Informational		
+Microsoft-Windows-Kernel-IO	1303	0	WheaInitializeStop()	Stop	BootPerf	WheaInitialize	Informational		
